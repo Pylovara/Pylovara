@@ -1,6 +1,8 @@
 #!/bin/bash
-# Pylovara Since 2025© https://github.com/Pylovara #
-# Modul-Skript – wird von main-install.sh aufgerufen
+#Pylovara Since 2025© https://github.com/Pylovara #
+echo "https://github.com/Pylovara/Hyprland-Module/"
+echo "  === Start 00-module.sh Autorepair ===     "
+
 # Setzt Netzwerk, Sound, Xorg & Broadcom-Fix wenn nötig.
 
 # 1. Netzwerktreiber & Basis setzen

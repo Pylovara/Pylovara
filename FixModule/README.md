@@ -1,6 +1,6 @@
 # Hyprland/Arch Linux Fix Modules
-# Pylovara Since 2025© https://github.com/Pylovara
-# https://github.com/Pylovara/Hyprland-Module/
+- Pylovara Since 2025© https://github.com/Pylovara
+- https://github.com/Pylovara/Hyprland-Module/
 
 This repository contains a set of Bash scripts designed to diagnose and fix common issues in Arch Linux systems, particularly those related to Hyprland, Xorg, networking, sound, and Broadcom Wi-Fi.
 

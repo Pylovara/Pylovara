@@ -97,23 +97,10 @@ This script acts as a universal repair tool:
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
-    ```
-
-2.  **Execute the main script:**
-
-    ```bash
-    sudo bash module.sh
-    ```
-
-    Alternatively, you can run individual scripts as needed:
-
-    ```bash
-    sudo bash netzwerk-fix.sh
-    sudo bash sound-fix.sh
-    sudo bash xorg-fix.sh
-    sudo bash repair-all.sh
+    git clone https://github.com/Pylovara/Hyprland-Module/FixModule.git
+    cd ~/Pylovara/Hyprland-Module/FixModule
+    chmod +x 00-module.sh
+    ./00-module.sh
     ```
 
 ## Important Notes

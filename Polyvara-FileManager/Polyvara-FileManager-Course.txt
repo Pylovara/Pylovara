@@ -12,4 +12,10 @@ Polyvara-FileManager :
  initial-boot.sh          wallust
  Monitor_Profiles         workspaces.conf
 
-- 
+- [~/.config/waybar]> ls
+ config            ModulesWorkspaces
+ configs           style
+ Modules           style.css
+ ModulesCustom     UserModules
+ ModulesGroups     wallust
+ ModulesVertical  

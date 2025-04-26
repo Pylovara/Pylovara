@@ -1,0 +1,16 @@
+
+--------------------------------------------------------------------------------------------
+1. chmod +x sh module erstellen , alle module müssen ausführbar sein
+- alle pfade müssen ab Polyvara-FileManager in ~/.config/hypr/ copiert werden
+- home/.zshrc brauch source pfad source ~/.config/hypr/Polyvara-FileManager
+b.s
+#!/bin/bash
+#Pylovara Since 2025© https://github.com/Pylovara #
+#https://github.com/Pylovara/Hyprland-Module/Polyvara-FileManager
+
+source ~/.config/hypr/Polyvara-FileManager/header.sh
+cd ~/.config || exit 1
+tree_output=true
+show_header
+
+--------------------------------------------------------------------------------------------

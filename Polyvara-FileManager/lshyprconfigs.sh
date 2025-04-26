@@ -3,6 +3,6 @@
 #https://github.com/Pylovara/Hyprland-Module/Polyvara-FileManager
 
 source ~/.config/hypr/Polyvara-FileManager/header.sh
-cd ~/.config/hypr/config || exit 1
+cd ~/.config/hypr/configs || exit 1
 tree_output=true
 show_header

@@ -1,0 +1,2 @@
+# Hyprland-Module
+Hyprland-Module

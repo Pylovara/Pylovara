@@ -1,24 +1,28 @@
 #!/bin/bash
 
-# Polyvara Update-Skript für alle Module im Hyprland-Module Ordner
+# Verzeichnisse definieren
+TARGET="$HOME/.config/hypr/Hyprland-Module/Polyvara-FileManager"
+SOURCE_DIR="$(dirname "$(realpath "$0")")/Polyvara-FileManager"
 
-HYPRLAND_MODULE_DIR="$HOME/.config/hypr/Hyprland-Module"
-
-if [ -d "$HYPRLAND_MODULE_DIR" ]; then
-    echo "Hyprland-Module Ordner gefunden. Aktualisiere Module..."
-    
-    # Für jedes Unterverzeichnis im Hyprland-Module Ordner, der als Git-Repository erkannt wird
-    for module in "$HYPRLAND_MODULE_DIR"/*/; do
-        if [ -d "$module/.git" ]; then
-            echo "Aktualisiere: $(basename "$module")..."
-            cd "$module" || exit 1
-            git pull
-            echo "✅ $(basename "$module") ist jetzt auf dem neuesten Stand."
-        else
-            echo "⚠️ Kein Git-Repository gefunden in: $(basename "$module")"
-        fi
-    done
-else
-    echo "❌ Hyprland-Module wurde nicht gefunden unter $HYPRLAND_MODULE_DIR"
-    echo "Bitte führe setup.sh erneut aus oder prüfe die Installation."
+# Prüfen, ob das Zielverzeichnis existiert
+if [ ! -d "$TARGET" ]; then
+  echo "⚠ Fehler: Zielverzeichnis existiert nicht. Bitte führe setup.sh zuerst aus."
+  exit 1
 fi
+
+# Warnung: Alle Dateien werden überschrieben
+echo "⚠ WARNUNG: Alle Dateien im Zielverzeichnis werden überschrieben!"
+
+# Dateien hart kopieren und alte Dateien ersetzen
+echo "🔄 Überschreibe Dateien im Polyvara-FileManager..."
+
+# Lösche alle bestehenden Dateien im Zielordner
+rm -rf "$TARGET/*"
+
+# Kopiere alle Dateien aus dem Quellordner ins Zielverzeichnis
+cp -r "$SOURCE_DIR/." "$TARGET/"
+
+# Setze Ausführungsberechtigungen für alle Skripte
+find "$TARGET" -name "*.sh" -exec chmod +x {} \;
+
+echo "✅ Polyvara-FileManager wurde erfolgreich aktualisiert und überschrieben!"

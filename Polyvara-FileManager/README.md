@@ -1,44 +1,51 @@
-Der Polyvara FileManager fungiert als eigenständiges , hochmodulares und 100% selbst erweiterbares Filesystem 
-das sich an den grundprinzipien einer Shell orientiert und daten explizit in einer baum struktur auslesen kann.
+# Polyvara FileManager
 
-Zur Info : ausführbare datennamen werden grundsätzlich mit einem s gesucht beispiel : s + vlc = ordner - svlc = ordnergesamt
+Der Polyvara FileManager ist ein eigenständiges, hochmodulares und vollständig selbst erweiterbares Dateisystem, das sich an den Grundprinzipien einer Shell orientiert und Daten explizit in einer Baumstruktur auslesen kann.
 
-das prinzip des MODULES beruht auf sichbare strukturen und ist in der kern funktion ein schnellsuch tool .....
+## Funktionsweise
 
-Der Polyvara File Manager wird im späteren verlauf mit einer Erweiterbaren datensuche ausgestattet die das suchen und ausführen
-kombiniert und sich etwas anders anfühlen wird als eine normale terminal eingabe , dies steht aber noch in der entwicklung und
-ist noch nicht vollständig bestimmt und befindet sich zurzeit noch nicht im Polyvara-FileManager ....
+Die Suche nach ausführbaren Dateinamen erfolgt nach einem bestimmten Muster:
 
-Dieses Modult wird ständig geupdatet , je nach dem was mir selbst in die finger gerät , ordner die noch nicht existieren 
-werden bei einer Issue gerne berücksichtig in der bearbeitung vorgezogen und vollständig omplenetiert 
+* `s + vlc`  sucht nach dem Ordner "vlc".
+* `-svlc` sucht nach dem gesamten Inhalt des Ordners "vlc".
 
-Die selbstständige update funktion existiert derzeit noch nicht vollständig daher sollte man Manual in das Repo schauen um 
-die neuesten erweiterungen zu bekommen ..... 
+Das Prinzip des MODULES basiert auf sichtbaren Strukturen und dient in seiner Kernfunktion als Schnellsuchwerkzeug.
 
+## Zukünftige Entwicklung
 
-wie wird es Implementiert nach dem runterladen ?
+Der Polyvara File Manager wird in Zukunft mit einer erweiterbaren Datensuchfunktion ausgestattet, die Suchen und Ausführen kombiniert. Diese Funktion wird sich von einer herkömmlichen Terminaleingabe unterscheiden. Die Entwicklung dieser Funktion ist jedoch noch nicht abgeschlossen und ist derzeit nicht im Polyvara-FileManager enthalten.
 
-zur zeit wurde noch kein script geschrieben das alle daten ausführbar macht und den Polyvara ordner in Hyprland in 
-den richtigen Ordner rein Läd ..... der Richtige Ordner zur zeit für Polyvara wäre der /home/User/.config/hypr/ ordner.
+## Updates
 
-Der Polyvara-FileManager ist so Konzipiert das er lediglich Gesourced werden muss , da wir zu anfang mit Hyprland und .zshrc
-arbeiten ist es also die .zshrc die sich auch im User Ordner befindet , wo auch die allgemeine .bashrc existiert 
+Dieses Modul wird regelmäßig aktualisiert, basierend auf meinen aktuellen Anforderungen. Fehlende Ordner werden bei einer Issue-Meldung priorisiert und zeitnah implementiert.
 
+Die automatische Update-Funktion ist derzeit noch nicht vollständig implementiert. Bitte überprüfen Sie das Repository regelmäßig manuell, um die neuesten Erweiterungen zu erhalten.
 
+## Implementierung
+
+### Installation
+
+Derzeit ist noch kein Skript vorhanden, das alle Daten ausführbar macht und den Polyvara-Ordner automatisch in den richtigen Hyprland-Ordner verschiebt. Der empfohlene Speicherort für den Polyvara-FileManager ist `/home/User/.config/hypr/`.
+
+### Integration
+
+Der Polyvara-FileManager ist für die Verwendung durch Sourcing konzipiert. In einer Hyprland-Umgebung mit zsh wird er typischerweise in die `.zshrc`-Datei im Benutzerverzeichnis integriert (dort, wo sich auch die `.bashrc` befindet).
+
+```bash
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-#Source Polyvara-FileManager :
-source ~/.config/hypr/Polyvara-FileManager/aliasloader.sh #<------ HerzStück
+# Source Polyvara-FileManager (Hauptdatei):
+source ~/.config/hypr/aliasloader.sh  # <------ Herzstück
 
 # Set-up icons for files/directories in terminal using lsd
 alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
-alias tree='tree -a -L 2' # <----- sudo pacman -S tree und das als alias setzen .
+alias tree='tree -a -L 2'  # <----- sudo pacman -S tree und das als alias setzen.
 
-# Polyvara-FileManager Colors (individualisierbar)
+# Polyvara-FileManager Farben (anpassbar)
 export LS_COLORS="\
 di=1;37:\
 fi=0;37:\
@@ -55,12 +62,3 @@ ex=1;97:\
 *.tar=0;37:\
 *.gz=0;37:\
 *.iso=0;37:"
-
-Weitere Informationen findet ihr zum Projekt im :
-
-- Arbeitsblatt.txt
-https://github.com/Pylovara/Hyprland-Module/blob/main/Polyvara-FileManager/arbeitsblatt.txt
-
-Vorhandene Implementierungen hier :
-- Polyvara-FileManager/Polyvara-FileManager-Course.txt
-https://github.com/Pylovara/Hyprland-Module/blob/main/Polyvara-FileManager/Polyvara-FileManager-Course.txt

@@ -6,8 +6,8 @@ Der Polyvara FileManager ist ein eigenständiges, hochmodulares und vollständig
 
 Die Suche nach ausführbaren Dateinamen erfolgt nach einem bestimmten Muster:
 
-* `s + vlc`  sucht nach dem Ordner "vlc".
-* `-svlc` sucht nach dem gesamten Inhalt des Ordners "vlc".
+* `p + vlc`  sucht nach dem Ordner "vlc". (p = polyvara)
+* `-pvlc` sucht nach dem gesamten Inhalt des Ordners "vlc".
 
 Das Prinzip des MODULES basiert auf sichtbaren Strukturen und dient in seiner Kernfunktion als Schnellsuchwerkzeug.
 

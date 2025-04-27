@@ -20,7 +20,8 @@ Das Prinzip des MODULES basiert auf sichtbaren Strukturen und dient in seiner Ke
 
 ## Zukünftige Entwicklung
 
-Der Polyvara File Manager wird in Zukunft mit einer erweiterbaren Datensuchfunktion ausgestattet, die Suchen und Ausführen kombiniert. Diese Funktion wird sich von einer herkömmlichen Terminaleingabe unterscheiden. Die Entwicklung dieser Funktion ist jedoch noch nicht abgeschlossen und ist derzeit nicht im Polyvara-FileManager enthalten.
+Der Polyvara File Manager wird in Zukunft mit einer erweiterbaren Datensuchfunktion ausgestattet, die Suchen und Ausführen kombiniert. Diese Funktion wird sich von einer herkömmlichen Terminaleingabe unterscheiden. Die Entwicklung dieser Funktion ist jedoch noch nicht abgeschlossen und ist derzeit nicht im Polyvara-FileManager enthalten.Es wird auch möglich sein log - debbuging - readme automatisch mit zu öffnen oder terminal scripts 
+zur aufzeichnung automatisch mit zu starten .
 
 ## Updates
 

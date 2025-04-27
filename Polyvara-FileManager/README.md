@@ -8,6 +8,7 @@ Die Suche nach ausführbaren Dateinamen erfolgt nach einem bestimmten Muster:
 
 * `p + vlc`  sucht nach dem Ordner "vlc". (p = polyvara)
 * `-pvlc` sucht nach dem gesamten Inhalt des Ordners "vlc".
+* dies gilt nur bei kritischen syntax problemen | desktop | kernel | ausführbare exe/rpm/tz/dmg/flat/snap etc..
 
 Das Prinzip des MODULES basiert auf sichtbaren Strukturen und dient in seiner Kernfunktion als Schnellsuchwerkzeug.
 

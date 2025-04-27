@@ -39,17 +39,12 @@ Derzeit ist noch kein Skript vorhanden, das alle Daten ausführbar macht und den
 Der Polyvara-FileManager ist für die Verwendung durch Sourcing konzipiert. In einer Hyprland-Umgebung mit zsh wird er typischerweise in die `.zshrc`-Datei im Benutzerverzeichnis integriert (dort, wo sich auch die `.bashrc` befindet).
 
 ```bash
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Source Polyvara-FileManager (Hauptdatei):
-source ~/.config/hypr/aliasloader.sh  # <------ Herzstück
+source ~/.config/hypr/Hyprland-Module/Polyvara-FileManager/aliasloader.sh  # <------ Herzstück
 
 # Set-up icons for files/directories in terminal using lsd
 alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
 alias tree='tree -a -L 2'  # <----- sudo pacman -S tree und das als alias setzen.
 
 # Polyvara-FileManager Farben (anpassbar)

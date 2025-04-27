@@ -32,13 +32,13 @@ if [ ! -d "$SOURCE_DIR" ]; then
   exit 1
 fi
 
-# Zielordner erstellen, falls noch nicht vorhanden
+# Ordner erstellen, falls noch nicht vorhanden
 sudo mkdir -p "$INSTALL_PATH"
 sudo chown -R "$USER:$USER" "$TARGET"
 
-# Ordner kopieren
-echo "📂 Kopiere den Polyvara-FileManager Ordner nach $INSTALL_PATH..."
-sudo cp -r "$SOURCE_DIR" "$INSTALL_PATH"
+# Ordnerinhalt kopieren
+echo "📂 Kopiere den Polyvara-FileManager Inhalt nach $INSTALL_PATH..."
+sudo cp -r "$SOURCE_DIR/"* "$INSTALL_PATH"
 
 # .sh-Skripte ausführbar machen
 echo "🔨 Setze Ausführungsberechtigungen für .sh-Skripte..."

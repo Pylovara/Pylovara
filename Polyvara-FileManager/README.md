@@ -2,6 +2,12 @@
 
 Der Polyvara FileManager ist ein eigenständiges, hochmodulares und vollständig selbst erweiterbares Dateisystem, das sich an den Grundprinzipien einer Shell orientiert und Daten explizit in einer Baumstruktur auslesen kann.
 
+automatisch aktualisierbares Mini-System :
+
+    Skripte hinzufügen → update_ls-scripts.sh drüberlaufen lassen → fertig.
+
+    Loader einbinden → sofort alles als Alias verfügbar.
+
 ## Funktionsweise
 
 Die Suche nach ausführbaren Dateinamen erfolgt nach einem bestimmten Muster:

@@ -23,15 +23,22 @@ if [ ! -d "$TARGET" ]; then
   exit 1
 fi
 
+# Quellordner (absolute Pfadangabe)
+SOURCE_DIR="$(dirname "$(realpath "$0")")/Polyvara-FileManager"
+
 # Prüfen, ob der Quellordner existiert
-if [ ! -d "$(pwd)/Polyvara-FileManager" ]; then
+if [ ! -d "$SOURCE_DIR" ]; then
   echo "⚠ Fehler: Quellordner Polyvara-FileManager nicht gefunden. Bitte führe das Skript aus dem Stammverzeichnis des Repositories aus."
   exit 1
 fi
 
+# Zielordner erstellen, falls noch nicht vorhanden
+sudo mkdir -p "$INSTALL_PATH"
+sudo chown -R "$USER:$USER" "$TARGET"
+
 # Ordner kopieren
 echo "📂 Kopiere den Polyvara-FileManager Ordner nach $INSTALL_PATH..."
-cp -r "$(pwd)/Polyvara-FileManager" "$INSTALL_PATH"
+sudo cp -r "$SOURCE_DIR" "$INSTALL_PATH"
 
 # .sh-Skripte ausführbar machen
 echo "🔨 Setze Ausführungsberechtigungen für .sh-Skripte..."

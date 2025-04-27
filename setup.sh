@@ -1,24 +1,18 @@
 #!/bin/bash
 
-echo "🚀 Starte Installation des Hyprland-Module Pakets..."
+echo "🚀 Starte Installation von Hyprland-Module..."
 
-# Zielverzeichnis definieren
-TARGET="$HOME/.config"
+# Zielverzeichnis
+TARGET="$HOME/.config/hypr"
 
-# Prüfen, ob wir im richtigen Verzeichnis sind
-if [ ! -d "./CleanUPModule" ] || [ ! -d "./FixModule" ] || [ ! -d "./Polyvara-FileManager" ]; then
-    echo "⚠ Fehler: Bitte setup.sh im Hyprland-Module-Ordner ausführen!"
+# Prüfen, ob das Zielverzeichnis existiert
+if [ ! -d "$TARGET" ]; then
+    echo "⚠ Fehler: Zielverzeichnis $TARGET existiert nicht. Bitte stelle sicher, dass Hyprland korrekt eingerichtet ist."
     exit 1
 fi
 
-# Ordnerliste
-MODULES=("CleanUPModule" "FixModule" "Polyvara-FileManager")
+# Ordner kopieren
+echo "📂 Kopiere kompletten Hyprland-Module Ordner nach $TARGET/Hyprland-Module..."
+cp -r "$(pwd)" "$TARGET/Hyprland-Module"
 
-# Module kopieren
-for module in "${MODULES[@]}"; do
-    echo "📂 Kopiere $module nach $TARGET/$module..."
-    mkdir -p "$TARGET/$module"
-    cp -r "$module/"* "$TARGET/$module/"
-done
-
-echo "✨ Installation abgeschlossen! Die Module befinden sich jetzt in deinem ~/.config Verzeichnis."
+echo "✨ Installation abgeschlossen! Das Modul befindet sich jetzt unter ~/.config/hypr/Hyprland-Module."

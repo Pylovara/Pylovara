@@ -2,9 +2,9 @@
 #Pylovara Since 2025© https://github.com/Pylovara #
 #https://github.com/Pylovara/Hyprland-Module/Polyvara-FileManager
 
-header_path="$HOME/.config/hypr/Polyvara-FileManager/header.sh"
+header_path="$HOME/.config/hypr/Hyprland-Module/Polyvara-FileManager/header.sh"
 
-for script in "$HOME/.config/hypr/Polyvara-FileManager"/ls*.sh; do
+for script in "$HOME/.config/hypr/Hyprland-Module/Polyvara-FileManager"/ls*.sh; do
   # Nicht den Header selbst bearbeiten
   [[ "$script" == *"header.sh" ]] && continue
 

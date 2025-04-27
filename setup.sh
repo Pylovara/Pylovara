@@ -3,7 +3,7 @@
 # Funktion zum Ausführen von Befehlen mit Passwortabfrage (wenn nötig)
 sudo_cmd() {
   if [[ $EUID -ne 0 ]]; then
-    echo "🔐 Benötige Root-Rechte, um '$1' auszuführen..."
+    echo "🔐 Benötige Root-Rechte, um '$*' auszuführen..."
     sudo "$@"
   else
     "$@"
@@ -17,43 +17,34 @@ TARGET="$HOME/.config/hypr"
 MODULE_DIR="Hyprland-Module/Polyvara-FileManager"
 INSTALL_PATH="$TARGET/$MODULE_DIR"
 
-# Prüfen, ob das Zielverzeichnis existiert
-if [ ! -d "$TARGET" ]; then
-  echo "⚠ Fehler: Zielverzeichnis $TARGET existiert nicht. Bitte stelle sicher, dass Hyprland korrekt eingerichtet ist."
-  exit 1
-fi
-
 # Quellordner (absolute Pfadangabe)
 SOURCE_DIR="$(dirname "$(realpath "$0")")/Polyvara-FileManager"
 
-# Prüfen, ob der Quellordner existiert
+# Vorprüfungen
+if [ ! -d "$TARGET" ]; then
+  echo "⚠️ Fehler: Zielverzeichnis $TARGET existiert nicht. Bitte stelle sicher, dass Hyprland korrekt installiert ist."
+  exit 1
+fi
+
 if [ ! -d "$SOURCE_DIR" ]; then
-  echo "⚠ Fehler: Quellordner Polyvara-FileManager nicht gefunden. Bitte führe das Skript aus dem Stammverzeichnis des Repositories aus."
+  echo "⚠️ Fehler: Quellordner Polyvara-FileManager nicht gefunden. Bitte führe dieses Script aus dem Root des Repos aus."
   exit 1
 fi
 
-# Ordner erstellen, falls noch nicht vorhanden
-sudo mkdir -p "$INSTALL_PATH"
-sudo chown -R "$USER:$USER" "$TARGET"
+# Installation
+echo "📂 Kopiere Polyvara-FileManager nach $INSTALL_PATH..."
+mkdir -p "$INSTALL_PATH"
+cp -r "$SOURCE_DIR/"* "$INSTALL_PATH/"
+chmod -R +x "$INSTALL_PATH/"*.sh
 
-# Ordnerinhalt kopieren
-echo "📂 Kopiere den Polyvara-FileManager Inhalt nach $INSTALL_PATH..."
-sudo cp -r "$SOURCE_DIR/"* "$INSTALL_PATH"
+# .zshrc Anpassen
+echo "⚙️  Bearbeite .zshrc..."
 
-# .sh-Skripte ausführbar machen
-echo "🔨 Setze Ausführungsberechtigungen für .sh-Skripte..."
-find "$INSTALL_PATH" -name "*.sh" -exec chmod +x {} \;
-
-# .zshrc Setup
-echo "⚙️  Konfiguriere .zshrc..."
-
-# Prüfen ob ~/.zshrc existiert
 if [ ! -f "$HOME/.zshrc" ]; then
-  echo "⚠ Fehler: Keine .zshrc gefunden. Dieses Setup ist nur für Systeme mit ZSH geeignet."
+  echo "⚠️ Keine .zshrc gefunden. Dieses Setup ist nur für ZSH gedacht."
   exit 1
 fi
 
-# Prüfen ob Polyvara-Loader schon eingebunden ist
 if ! grep -q "Polyvara-FileManager/aliasloader.sh" "$HOME/.zshrc"; then
   cat << 'EOF' >> "$HOME/.zshrc"
 
@@ -83,19 +74,23 @@ ex=1;97:\
 *.iso=0;37:"
 
 EOF
-  echo "✅ Polyvara-Einträge wurden in ~/.zshrc hinzugefügt."
+  echo "✅ Polyvara-Einträge in .zshrc hinzugefügt."
 else
-  echo "ℹ️ Polyvara-Einträge sind bereits in ~/.zshrc vorhanden. Überspringe."
+  echo "ℹ️ Polyvara-Einträge bereits vorhanden. Überspringe."
 fi
 
 # tree installieren
-echo "🌳 Installiere 'tree'..."
-sudo_cmd pacman -S --noconfirm tree
-if [ $? -eq 0 ]; then
-  echo "✅ 'tree' wurde erfolgreich installiert."
+echo "🌳 Installiere 'tree' falls nicht vorhanden..."
+if ! command -v tree &> /dev/null; then
+  sudo_cmd pacman -S --noconfirm tree
+  if [ $? -eq 0 ]; then
+    echo "✅ 'tree' erfolgreich installiert."
+  else
+    echo "❌ Fehler bei der Installation von 'tree'. Bitte manuell ausführen: sudo pacman -S tree"
+  fi
 else
-  echo "❌ Fehler bei der Installation von 'tree'. Bitte installiere es manuell: sudo pacman -S tree"
+  echo "✅ 'tree' ist bereits installiert."
 fi
 
-echo "✨ Installation von Polyvara-FileManager abgeschlossen!"
-echo "👉  Bitte starte dein Terminal neu oder führe 'source ~/.zshrc' aus, um die Änderungen zu aktivieren."
+echo "✨ Installation abgeschlossen!"
+echo "👉 Bitte Terminal neu starten oder 'source ~/.zshrc' ausführen."

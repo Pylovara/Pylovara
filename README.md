@@ -10,6 +10,7 @@ cd Hyprland-Module
 chmod +x setup.sh
 ./setup.sh
 
+------------------------------------------------------------------
 
 # Kompaktibel
 - https://github.com/hyprwm/Hyprland

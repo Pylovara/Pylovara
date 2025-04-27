@@ -38,3 +38,5 @@ Dadurch wird auch sichergestellt, dass es keine Forks geben kann, die sich am Or
 Das Repo wird keine Versionen haben, sondern nur den **Ist-Zustand** – ein nie vorbeigehender, unfertiger Zustand, der immer mehr ausgebaut wird. **Komplett Arch-Philosophie pur**.
 
 Das Repo ist damit ein **permanenter Rolling-Release**.
+
+zur info : Später wird es dann auch einen yay ansatz geben

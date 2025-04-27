@@ -9,7 +9,7 @@ git clone https://github.com/Pylovara/Hyprland-Module.git
 cd Hyprland-Module
 chmod +x setup.sh
 ./setup.sh
-
+``` 
 ------------------------------------------------------------------
 
 # Kompaktibel

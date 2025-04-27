@@ -8,10 +8,16 @@ url : https://github.com/Pylovara/Hyprland-Module/
 git clone https://github.com/Pylovara/Hyprland-Module.git
 cd Hyprland-Module
 chmod +x setup.sh
+chmod +x update.sh
 ./setup.sh
-``` 
-------------------------------------------------------------------
+```
 
+### Manual Updater
+```bash
+cd Hyprland-Module
+./update.sh
+```
+------------------------------------------------------------------
 # Kompaktibel
 - https://github.com/hyprwm/Hyprland
 - https://github.com/mylinuxforwork/hyprland-starter ohter https://www.ml4w.com/ 

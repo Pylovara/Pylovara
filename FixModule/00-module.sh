@@ -7,6 +7,7 @@ echo "  === Start 00-module.sh Autorepair ===     "
 
 # 1. Netzwerktreiber & Basis setzen
 echo "[1/6] Netzwerk-Fix wird gestartet..."
+chmod +x 01-netzwerk-fix.sh
 chmod +x 02-broadcom-fix.sh
 ./01-netzwerk-fix.sh
 

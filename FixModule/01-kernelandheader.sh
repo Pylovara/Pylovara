@@ -39,7 +39,7 @@ sudo dkms autoinstall
 echo ""
 echo "🎯 WICHTIG: Kernel oder Module wurden aktualisiert."
 echo "❗ Du musst jetzt neu starten, damit alle Treiber richtig geladen werden!"
-sleep 30
+sleep 240
 
 # Benutzer fragen, ob sofort rebootet werden soll
 read -p "🔁 Jetzt neu starten? (j/n): " antwort

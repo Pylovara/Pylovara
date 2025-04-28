@@ -29,7 +29,7 @@ amixer sset Master 80% unmute &>/dev/null || pactl set-sink-volume @DEFAULT_SINK
 # Testton abspielen
 echo "🔉 Führe Soundtest durch..."
 speaker-test -t wav -l 1 &>/dev/null &
-sleep 2
+sleep 3
 pkill speaker-test
 
 echo "✅ Sound-Modul abgeschlossen."

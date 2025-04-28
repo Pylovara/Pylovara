@@ -1,6 +1,8 @@
 #!/bin/bash
-#Pylovara Since 2025© https://github.com/Pylovara #
-#https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager
+#Absoluter Ordnerpfad:                                               #
+#Hyprland-Module/Pylovara-FileManager/KernModul/HeaderMaker.sh       #
+#Pylovara Since 2025© https://github.com/Pylovara                    #
+#https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager    #  
 
 # Farben definieren – übersichtlicher
 declare -A COLORS=(

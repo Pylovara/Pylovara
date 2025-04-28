@@ -5,13 +5,19 @@ url : https://github.com/Pylovara/Hyprland-Module/
 
 -----------------------------------------------------------------------------------
 
-# Next Update
+# Next Update in Work
 
 PolyvaraFileManager : wird mit einer eigenen erweiterten Suchfunktion ausgestattet .
 
-suche  Ordner     Datei      Fucntion
+suche   Ordner           Datei        Fucntion
 
-suche Download/- MeinPic.png open
+suche  Download/-     MeinPic.png      open  (Browser/youpicopner)
+suche  Musik/-       drumandbase.mp3   open  (vlc/youprimäre player)
+suche  Home/-          .zshrc          open  (nano/vim/neovim/etc)
+suche  Download/-     lesezeug.txt     open  (cat/pdf/office/ide/etc)
+
+extra :
+suche  Download/-        datei          cp    (linux command/all + to ~/dev/root/)
 
 die funktionen werden nicht nur einfach gehalten sondern werden als allgemein commands ausgeschmückt z.b : cat, cp , rm and all 
 die vereinfachten command werden auf logik aufgebaut für den allgemein gebrauch .
@@ -37,7 +43,7 @@ cd Hyprland-Module
 ./update.sh
 ```
 ------------------------------------------------------------------
-# Kompaktibel
+# Kompaktibel ArchArchitectur
 - https://github.com/hyprwm/Hyprland
 - https://github.com/mylinuxforwork/hyprland-starter ohter https://www.ml4w.com/ 
 - https://github.com/JaKooLit/Arch-Hyprland # but you must by .zshrc update .zshrc_backend the source codes copie in .zshrc make !! 

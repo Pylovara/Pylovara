@@ -1,6 +1,6 @@
 #!/bin/bash
-# 01-kernel-header-update.sh
-# Findet laufenden Kernel und aktualisiert nur Kernel + Header
+# 01-kernelandheader.sh
+# Aktualisiert Kernel & Header, rekonstruiert ALLE DKMS-Module sauber.
 
 set -e
 
@@ -8,7 +8,7 @@ echo "🔍 Erkenne laufenden Kernel..."
 KERNEL_VERSION=$(uname -r)
 echo "➡️  Laufender Kernel: $KERNEL_VERSION"
 
-# Kernel-Paket und Header ableiten
+# Kernel-Paket und Header bestimmen
 if [[ "$KERNEL_VERSION" == *"zen"* ]]; then
     KERNEL_PKG="linux-zen"
     HEADER_PKG="linux-zen-headers"
@@ -27,34 +27,47 @@ else
 fi
 
 echo "📦 Aktualisiere Kernel und Header: $KERNEL_PKG + $HEADER_PKG"
-
-# System und genutzten Kernel + Header aktualisieren
 sudo pacman -Syu --needed "$KERNEL_PKG" "$HEADER_PKG"
 
-echo "✅ Kernel und Header sollten nun aktuell sein."
+echo "✅ Kernel und Header aktualisiert."
 
-echo "🔄 Aktualisiere DKMS-Module (Treiber-Anpassungen)..."
-sudo dkms autoinstall
+# Jetzt ALLE DKMS-Module neu bauen (nicht nur einfach dkms autoinstall!)
+if [ -d /var/lib/dkms ]; then
+    echo "🔧 Neubaue ALLE installierten DKMS-Module..."
+    for module in /var/lib/dkms/*; do
+        if [ -d "$module" ]; then
+            modname=$(basename "$module")
+            echo "➡️  Baue $modname neu..."
+            sudo dkms install -m "$modname" -v $(ls "$module" | head -n 1) || {
+                echo "⚠️  Fehler beim DKMS-Rebuild für $modname"
+            }
+        fi
+    done
+else
+    echo "ℹ️ Keine DKMS-Module installiert."
+fi
 
 echo ""
-echo "🎯 WICHTIG: Kernel oder Module wurden aktualisiert."
-echo "❗ Du musst jetzt neu starten, damit alle Treiber richtig geladen werden!"
-sleep 240
+echo "🎯 Hinweis: Wenn Kernel oder Module aktualisiert wurden, ist ein Neustart notwendig!"
+sleep 3
 
-# Benutzer fragen, ob sofort rebootet werden soll
+# Benutzer fragen, ob neu gestartet werden soll
 read -p "🔁 Jetzt neu starten? (j/n): " antwort
 case "$antwort" in
     j|J)
-        echo "🔄 Starte neu..."
+        echo "🛠️  Marker setzen für Fortsetzung nach Reboot..."
+        touch /tmp/continue_after_reboot
+        sleep 3
+        echo "🔄 Neustart in 5 Sekunden..."
+        sleep 5
         sudo reboot
         ;;
     n|N)
-        echo "⚠️ Bitte denke daran, manuell neu zu starten bevor du weitermachst!"
+        echo "⚠️  Bitte denke daran, manuell neu zu starten bevor du weitermachst!"
         exit 0
         ;;
     *)
-        echo "❌ Ungültige Eingabe. Bitte manuell neu starten!"
+        echo "❌ Ungültige Eingabe. Manuell neustarten!"
         exit 1
         ;;
 esac
-

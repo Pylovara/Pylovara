@@ -7,13 +7,20 @@ Next Update in Work
 
 PolyvaraFileManager wird mit einer eigenen erweiterten Suchfunktion ausgestattet:
 Suche	Ordner	Datei	Funktion
+
 suche	Download/	MeinPic.png	open (Browser / youpicopener)
+
 suche	Musik/	drumandbase.mp3	open (VLC / Primärer Player)
+
 suche	Home/	.zshrc	open (nano / vim / neovim / etc.)
+
 suche	Download/	lesezeug.txt	open (cat / pdf / office / IDE / etc.)
 
+
 Extra Funktionen:
+
 Suche	Ordner	Datei	Funktion
+
 suche	Download/	datei	cp (Linux Command, z.B. cp nach ~/dev/root/)
 
 Die Funktionen werden nicht nur einfach gehalten, sondern als allgemeine Commands ausgeschmückt:
@@ -31,18 +38,18 @@ und so auf Kernel-Ebene zu integrieren.
     Fokus: Effizienz und Performance
 
 Installation
-
+bash ´´´ 
 git clone https://github.com/Pylovara/Hyprland-Module.git
 cd Hyprland-Module
 chmod +x setup.sh
 chmod +x update.sh
 ./setup.sh
-
+```
 Manual Updater
-
+bash´´´ 
 cd Hyprland-Module
 ./update.sh
-
+```
 Kompatible Architekturen / Umgebungen
 
     Hyprland

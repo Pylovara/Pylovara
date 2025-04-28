@@ -1,72 +1,89 @@
 #!/bin/bash
+# /02-NetzwerkUniversall.sh
 # Pylovara Since 2025© https://github.com/Pylovara
+# Universeller Netzwerk- und WLAN-Installer für ALLE Plattformen
+
+set -e
 
 echo "🔧 https://github.com/Pylovara/Hyprland-Module/"
 echo "=== Universeller WLAN & Netzwerk Reparatur Modus ==="
 
-# Grundlegende Tools sicherstellen
+# Tools sicherstellen
+echo "🔍 Installiere benötigte Basis-Tools..."
 sudo pacman -Sy --needed pciutils usbutils net-tools wireless_tools rfkill networkmanager
 
-# Prüfen auf blockierte Geräte (sehr häufige Fehlerquelle)
-echo "⚙️ Überprüfe RFKill..."
+# Entblocken aller Funkgeräte
+echo "⚙️ Entblocke alle Funkgeräte..."
 sudo rfkill unblock all
 
-# Geräte scannen
-echo "🔍 Suche PCI/USB Netzwerkkarten..."
-lspci | grep -Ei "network|wireless"
-lsusb | grep -Ei "network|wireless"
+# Geräteliste anzeigen
+echo "🔍 Scanne PCI- und USB-Geräte nach Netzwerkkarten..."
+lspci | grep -Ei "network|wireless" || echo "Keine PCI-Netzwerkkarten gefunden."
+lsusb | grep -Ei "network|wireless" || echo "Keine USB-Netzwerkkarten gefunden."
 
-# Broadcom spezifisch erkennen
+# Wichtige Kernel-Module in der Reihenfolge laden
+declare -a modules=("iwlwifi" "ath9k" "ath10k_pci" "rt2800pci" "rtw88_pci" "rtl8723de" "rtl8188eu" "brcmfmac" "b43" "asix" "ax88179_178a" "cdc_ether")
+
+echo "🔧 Versuche passende Kernel-Module zu laden..."
+for module in "${modules[@]}"; do
+    if sudo modprobe "$module" 2>/dev/null; then
+        echo "✅ Modul geladen: $module"
+    else
+        echo "❌ Modul nicht gefunden oder nicht geladen: $module"
+    fi
+done
+
+# Spezialfall: Broadcom - auf AUR Paket (broadcom-wl-dkms) setzen
 if lspci | grep -i broadcom | grep -iq "network"; then
-    echo "✅ Broadcom WLAN erkannt"
+    echo "🛰️ Broadcom WLAN erkannt."
     
-    # Kernel Header sichern
-    echo "🔧 Installiere DKMS & Kernel-Header (Zen oder Standard)"
-    sudo pacman -Sy --needed dkms linux-zen-headers || sudo pacman -Sy --needed linux-headers
-    
-    # Altes broadcom-wl Paket entfernen
-    if pacman -Qs broadcom-wl | grep -q installed; then
-        echo "⚠️ Entferne altes broadcom-wl Paket..."
-        sudo pacman -Rns --noconfirm broadcom-wl
+    # Prüfen ob DKMS-Variante installiert ist
+    if ! pacman -Qs broadcom-wl-dkms > /dev/null; then
+        echo "🛠️ Installiere broadcom-wl-dkms aus dem AUR..."
+        if ! command -v yay &>/dev/null; then
+            echo "❗ Fehler: yay nicht gefunden. Bitte yay installieren!"
+            exit 1
+        fi
+        yay -S --noconfirm broadcom-wl-dkms
     fi
 
-    # Prüfen ob yay vorhanden
-    if ! command -v yay &> /dev/null; then
-        echo "❌ Yay nicht gefunden. Bitte yay installieren!"
-        exit 1
-    fi
-
-    echo "✅ Installiere broadcom-wl-dkms aus dem AUR..."
-    yay -S --noconfirm broadcom-wl-dkms
-    echo "⚙️ Lade Modul wl..."
+    echo "🔃 Rebuild broadcom-wl mit DKMS..."
+    sudo dkms install broadcom-wl/$(dkms status broadcom-wl | awk '{print $2}')
+    
+    echo "🔧 Lade Modul wl..."
     sudo modprobe wl
-else
-    echo "ℹ️ Kein Broadcom erkannt. Suche allgemeine WLAN-Treiber..."
-    echo "Versuche generische Module zu laden: iwlwifi, ath9k, rt2800pci..."
-    sudo modprobe iwlwifi
-    sudo modprobe ath9k
-    sudo modprobe rt2800pci
+fi
+
+# Spezialfall: Realtek RTL8xxxu Chips (sehr oft in Laptops)
+if lsusb | grep -i "Realtek" | grep -iq "802.11"; then
+    echo "🛰️ Realtek USB WLAN erkannt."
+    
+    if ! pacman -Qs rtl8821cu-dkms-git > /dev/null; then
+        echo "🛠️ Installiere rtl8821cu-dkms-git (Realtek USB Treiber)..."
+        yay -S --noconfirm rtl8821cu-dkms-git
+    fi
+
+    echo "🔃 Rebuild Realtek USB WLAN Modul mit DKMS..."
+    sudo dkms install rtl8821cu/$(dkms status rtl8821cu | awk '{print $2}')
+    
+    sudo modprobe 8821cu
 fi
 
 # Netzwerkdienste neu starten
-if systemctl is-active --quiet NetworkManager; then
-    echo "🔁 Starte NetworkManager neu..."
-    sudo systemctl restart NetworkManager
-else
-    echo "⚠️ NetworkManager läuft nicht. Starte Dienst..."
-    sudo systemctl enable --now NetworkManager
-fi
+echo "🔁 (Re)Starte NetworkManager..."
+sudo systemctl enable --now NetworkManager
+sudo systemctl restart NetworkManager
 
-# Warten kurz, dann Geräte anzeigen
+# Warten und Netzwerke checken
 sleep 2
-echo "🔎 Aktuelle Netzwerkinterfaces:"
+echo "🔎 Überprüfe Netzwerkinterfaces:"
 ip link
 
 # Verbindungstest
 if ip link | grep -q "wlan"; then
-    echo "✅ WLAN-Interface erkannt. Reparatur erfolgreich!"
+    echo "✅ WLAN-Interface erkannt. Alles bereit!"
 else
-    echo "❌ Kein WLAN-Interface gefunden. Manuelles Eingreifen nötig."
+    echo "⚠️ Kein WLAN-Interface gefunden. Eventuell manuelle Nacharbeit nötig."
 fi
 
-echo "🎯 Reparatur abgeschlossen."
+echo "🎯 Netzwerk-Reparatur abgeschlossen."

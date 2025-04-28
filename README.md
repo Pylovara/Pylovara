@@ -38,7 +38,7 @@ Ausgelegt auf Wine / Portproton.ru / Waydroid / KVM / Flat / Docker / Native!
 
 ---
 
-# Installation
+# Installation FileManager Modul
 
 ```bash
 git clone https://github.com/Pylovara/Hyprland-Module.git
@@ -50,7 +50,7 @@ chmod +x update.sh
 
 ---
 
-# Manual Updater
+# Manual Updater Repo Updater AllInOne
 
 ```bash
 cd Hyprland-Module
@@ -59,7 +59,7 @@ cd Hyprland-Module
 
 ---
 
-# Kompaktibel ArchArchitectur
+# Kompaktibel ArchArchitectur 
 
 - https://github.com/hyprwm/Hyprland
 - https://github.com/mylinuxforwork/hyprland-starter (other: https://www.ml4w.com/)
@@ -85,7 +85,9 @@ Forks müssen viele manuelle Pfade umschreiben, um wirklich autark zu agieren.
 ---
 
 **Philosophie:**  
-Das Repo wird keine Versionen haben, sondern nur den **Ist-Zustand** – ein nie vorbeigehender, unfertiger Zustand, der immer mehr ausgebaut wird.  
+Das Repo wird keine Versionen haben, sondern nur den **Ist-Zustand** – 
+ein nie vorbeigehender, unfertiger Zustand, der immer mehr ausgebaut wird.  
+
 **Komplett Arch-Philosophie pur.**
 
 Das Repo ist damit ein **permanenter Rolling-Release**.

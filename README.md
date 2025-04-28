@@ -38,14 +38,23 @@ Ausgelegt auf Wine / Portproton.ru / Waydroid / KVM / Flat / Docker / Native!
 
 ---
 
-# Installation FileManager Modul
+# Download + Installation FileManager Modul
 
 ```bash
 git clone https://github.com/Pylovara/Hyprland-Module.git
 cd Hyprland-Module
 chmod +x setup.sh
-chmod +x update.sh
 ./setup.sh
+```
+
+---
+
+# FixModul - Repair AllInOne
+
+```bash
+cd Hyprland-Module/FixModule
+chmod +x 00-module.sh
+./00-module.sh
 ```
 
 ---
@@ -54,6 +63,7 @@ chmod +x update.sh
 
 ```bash
 cd Hyprland-Module
+chmod +x update.sh
 ./update.sh
 ```
 

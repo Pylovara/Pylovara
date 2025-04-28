@@ -59,16 +59,6 @@ chmod +x update.sh
 
 ---
 
-# Labor - FixModul - Repair AllInOne - Experiment
-Not Use !!!!!!!!!!! BetaTest !!!! NOT FINISH
-```bash
-cd Hyprland-Module/FixModule
-chmod +x 00-module.sh
-./00-module.shxxx
-```
-
-
-
 # Kompaktibel ArchArchitectur 
 
 - https://github.com/hyprwm/Hyprland

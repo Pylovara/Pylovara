@@ -44,7 +44,7 @@ cd Hyprland-Module
 # Kompaktibel ArchArchitectur
 - https://github.com/hyprwm/Hyprland
 - https://github.com/mylinuxforwork/hyprland-starter ohter https://www.ml4w.com/ 
-- https://github.com/JaKooLit/Arch-Hyprland  # but you must by .zshrc update .zshrc_backend the source codes copie in .zshrc make !! 
+- https://github.com/JaKooLit/Arch-Hyprland 
 ------------------------------------------------------------------
 Hardcore updater.sh !!!!!!!!!!!!!!!
 

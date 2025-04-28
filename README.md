@@ -90,7 +90,10 @@ ein nie vorbeigehender, unfertiger Zustand, der immer mehr ausgebaut wird.
 
 **Komplett Arch-Philosophie pur.**
 
-Das Repo ist damit ein **permanenter Rolling-Release**.
+Das Repo ist damit ein **permanenter Rolling-Release**ohne versions nummer.
+
+Versionen werden in User Hände gelegt die sich die Arbeit machen das Repo 
+irgendwo hochzuladen als Versionierung , hier selbst wird es das nicht geben.
 
 ---
 

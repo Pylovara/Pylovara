@@ -30,14 +30,14 @@ ziel : Pylovara-FileManager später mit einem verbessertem Terminal mit Framewor
 
 ### Installation 
 
-bash´´´
+bash
+´´´
 
 git clone https://github.com/Pylovara/Hyprland-Module.git
 cd Hyprland-Module
 chmod +x setup.sh
 chmod +x update.sh
 ./setup.sh
-
 ```
 
 

@@ -100,3 +100,10 @@ irgendwo hochzuladen als Versionierung , hier selbst wird es das nicht geben.
 Zur Info:  
 Später wird es dann auch einen `yay`-Ansatz geben!
 
+---
+
+Dummer Spruch :
+
+"Manchmal ist ein Update wie ein Ölwechsel – Pflicht, damit die Karre wieder rennt!" 🛠️🏎️
+- Arch haut Kernel-Updates raus wie andere Leute WhatsApp-Nachrichten...
+Rolling Release heißt hier echt: "Wart mal 'ne Woche nicht — und dein System ist Mittelalter!"

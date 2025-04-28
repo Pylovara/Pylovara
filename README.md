@@ -1,7 +1,10 @@
 # Hyprland-Module Beta Version
 Pylovara Since 2025©
 -
-GitHub: ´´´https://github.com/Pylovara/```
+GitHub: 
+bash´´´
+https://github.com/Pylovara/
+```
 Repo-URL: Hyprland-Module
 Next Update in Work
 

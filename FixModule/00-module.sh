@@ -10,7 +10,7 @@ chmod +x 03-sound-fix.sh
 chmod +x 04-xorg-fix.sh
 
 # 1. Kernel und Header Aktualisieren
-echo "[1/5] Netzwerk-Fix wird gestartet..."
+echo "[1/5] Kernel und Header Fix wird gestartet..."
 ./01-kernelandheader.sh
 
 # 2. Netzwerktreiber & Basis setzen

@@ -3,6 +3,25 @@
 #Pylovara Since 2025© https://github.com/Pylovara #
 url : https://github.com/Pylovara/Hyprland-Module/
 
+-----------------------------------------------------------------------------------
+
+# Next Update
+
+PolyvaraFileManager : wird mit einer eigenen erweiterten Suchfunktion ausgestattet .
+
+suche  Ordner     Datei      Fucntion
+
+suche Download/- MeinPic.png open
+
+die funktionen werden nicht nur einfach gehalten sondern werden als allgemein commands ausgeschmückt z.b : cat, cp , rm and all 
+die vereinfachten command werden auf logik aufgebaut für den allgemein gebrauch .
+
+ziel : Pylovara-FileManager später mit einem verbessertem Terminal mit Framework zu kombinieren und damit auf Kernel ebene einzuordnen.
+       Es wird damit verbunden einen eigenen verbesserten Linux-Zen Kernel geben der auf Effizienz ausgelegt sein wird .
+       Der Kommende Kernel wird sich Linux-plv nennen : ausgelegt auf Wine/Portproton.ru/Waydroid/KVM/Flat/Docker/Native !
+
+-------------------------------------------------------------------
+
 ### Installation 
 ```bash
 git clone https://github.com/Pylovara/Hyprland-Module.git

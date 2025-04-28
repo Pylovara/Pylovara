@@ -49,16 +49,6 @@ chmod +x setup.sh
 
 ---
 
-# FixModul - Repair AllInOne
-
-```bash
-cd Hyprland-Module/FixModule
-chmod +x 00-module.sh
-./00-module.sh
-```
-
----
-
 # Manual Updater Repo Updater AllInOne
 
 ```bash
@@ -68,6 +58,16 @@ chmod +x update.sh
 ```
 
 ---
+
+# Labor - FixModul - Repair AllInOne - Experiment
+Not Use !!!!!!!!!!! BetaTest !!!! NOT FINISH
+```bash
+cd Hyprland-Module/FixModule
+chmod +x 00-module.sh
+./00-module.shxxx
+```
+
+
 
 # Kompaktibel ArchArchitectur 
 

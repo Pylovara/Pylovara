@@ -1,67 +1,78 @@
-# Hyprland-Module Beta Version
+Hyprland-Module Beta Version
 
-#Pylovara Since 2025© https://github.com/Pylovara #
-url : https://github.com/Pylovara/Hyprland-Module/
+Pylovara Since 2025©
+GitHub: Pylovara
+Repo-URL: Hyprland-Module
+Next Update in Work
 
------------------------------------------------------------------------------------
+PolyvaraFileManager wird mit einer eigenen erweiterten Suchfunktion ausgestattet:
+Suche	Ordner	Datei	Funktion
+suche	Download/	MeinPic.png	open (Browser / youpicopener)
+suche	Musik/	drumandbase.mp3	open (VLC / Primärer Player)
+suche	Home/	.zshrc	open (nano / vim / neovim / etc.)
+suche	Download/	lesezeug.txt	open (cat / pdf / office / IDE / etc.)
 
-# Next Update in Work
+Extra Funktionen:
+Suche	Ordner	Datei	Funktion
+suche	Download/	datei	cp (Linux Command, z.B. cp nach ~/dev/root/)
 
-PolyvaraFileManager : wird mit einer eigenen erweiterten Suchfunktion ausgestattet .
+Die Funktionen werden nicht nur einfach gehalten, sondern als allgemeine Commands ausgeschmückt:
+z.B. cat, cp, rm und viele mehr.
+Die vereinfachten Commands basieren auf logischer Struktur für den allgemeinen Gebrauch.
 
-suche   Ordner           Datei        Fucntion
+Ziel:
+Den Pylovara-FileManager später mit einem verbesserten Terminal + Framework zu kombinieren,
+und so auf Kernel-Ebene zu integrieren.
 
-suche  Download/-     MeinPic.png      open  (Browser/youpicopner)
-suche  Musik/-       drumandbase.mp3   open  (vlc/youprimäre player)
-suche  Home/-          .zshrc          open  (nano/vim/neovim/etc)
-suche  Download/-     lesezeug.txt     open  (cat/pdf/office/ide/etc)
+    Geplanter Kernel-Name: Linux-plv
 
-extra :
-suche  Download/-        datei          cp    (linux command/all + to ~/dev/root/)
+    Ausgelegt auf: Wine / PortProton.ru / Waydroid / KVM / Flatpak / Docker / Native Apps
 
-die funktionen werden nicht nur einfach gehalten sondern werden als allgemein commands ausgeschmückt z.b : cat, cp , rm and all 
-die vereinfachten command werden auf logik aufgebaut für den allgemein gebrauch .
+    Fokus: Effizienz und Performance
 
-ziel : Pylovara-FileManager später mit einem verbessertem Terminal mit Framework zu kombinieren und damit auf Kernel ebene einzuordnen.
-       Es wird damit verbunden einen eigenen verbesserten Linux-Zen Kernel geben der auf Effizienz ausgelegt sein wird .
-       Der Kommende Kernel wird sich Linux-plv nennen : ausgelegt auf Wine/Portproton.ru/Waydroid/KVM/Flat/Docker/Native !
+Installation
 
--------------------------------------------------------------------
-
-### Installation 
-```bash
 git clone https://github.com/Pylovara/Hyprland-Module.git
 cd Hyprland-Module
 chmod +x setup.sh
 chmod +x update.sh
 ./setup.sh
-```
 
-### Manual Updater
-```bash
+Manual Updater
+
 cd Hyprland-Module
 ./update.sh
-```
-------------------------------------------------------------------
-# Kompaktibel ArchArchitectur
-- https://github.com/hyprwm/Hyprland
-- https://github.com/mylinuxforwork/hyprland-starter ohter https://www.ml4w.com/ 
-- https://github.com/JaKooLit/Arch-Hyprland # but you must by .zshrc update .zshrc_backend the source codes copie in .zshrc make !! 
-------------------------------------------------------------------
-Hardcore updater.sh !!!!!!!!!!!!!!!
 
-Aus folgendem Grund:
-Ich schreibe das Repo per Hand und arbeite direkt im Browser, daher gibt es keine Git-Ordner-Daten oder Commits lokal. Dadurch bekommt der heruntergeladene User keine Git-Ordner-Daten, und wenn der Ordner bereits vorhanden ist, gibt es nur Fehlermeldungen.
+Kompatible Architekturen / Umgebungen
 
-Aus diesem Grund wird der updater.sh **HARDCORE** alles überschreiben.
+    Hyprland
 
-Was auch sinnvoll ist, weil:
-Ich muss oft Daten umschreiben oder verbessern, und viele Dateien sind zwar da, aber im Code falsch. Um das mittelfristig komplett zu eliminieren, muss der Updater die Daten radikal überschreiben.
+    Hyprland-Starter ML4W (Website)
 
-Dadurch wird auch sichergestellt, dass es keine Forks geben kann, die sich am Original bedienen. Forks müssen viele manuelle Pfade umschreiben, um wirklich autark zu agieren.
+    JaKooLit Arch-Hyprland
+    (Achtung: .zshrc muss aktualisiert werden! Source-Codes aus .zshrc_backend manuell in .zshrc einfügen.)
 
-Das Repo wird keine Versionen haben, sondern nur den **Ist-Zustand** – ein nie vorbeigehender, unfertiger Zustand, der immer mehr ausgebaut wird. **Komplett Arch-Philosophie pur**.
+Hardcore updater.sh
 
-Das Repo ist damit ein **permanenter Rolling-Release**.
+Warum so extrem?
 
-zur info : Später wird es dann auch einen yay ansatz geben
+    Ich schreibe das Repo direkt im Browser – daher gibt es keine Git-Ordner oder lokale Commits.
+
+    Dadurch erhält der User beim Download keine Git-Daten, sondern nur den Ordnerinhalt.
+
+    Wenn der Ordner schon existiert, entstehen sonst Fehler.
+
+Deshalb überschreibt updater.sh radikal alles!
+Vorteile davon:
+
+    Alte/falsche Daten werden vollständig ersetzt.
+
+    Forks können sich nicht einfach am Original bedienen – sie müssen vieles manuell anpassen.
+
+    Keine klassischen Releases, sondern nur den aktuellen Zustand (Arch-Style).
+
+Kurz gesagt:
+👉 Dieses Repo ist ein permanenter Rolling-Release!
+
+    Hinweis:
+    Zukünftig wird es zusätzlich einen yay-Ansatz geben.

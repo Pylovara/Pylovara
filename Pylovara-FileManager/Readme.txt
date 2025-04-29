@@ -20,7 +20,7 @@ HeaderMaker.sh       | Erstellt den hübschen Header + optionalen Baum
 update_ls-scripts.sh | Baut Skripte sauber um und hängt Fehlerprüfungen an
 errorlog.sh          | Protokolliert jeden aufgetretenen Fehler + Status + Anzahl
 clean_logs.sh        | Automatische Log-Säuberung, sauber, robust, idiotensicher , 7 Tage .
-log_size_guard.sh    |	Löscht Logs automatisch, wenn sie >1,2MB groß werden.
+log_size_guard.sh    | Löscht Logs automatisch, wenn sie >1,2MB groß werden.
 Resultat             | Stabiles, modulares System. Kein wildes Durcheinander.
 
 Fazit 

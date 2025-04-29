@@ -8,7 +8,7 @@ URL: https://github.com/Pylovara/Hyprland-Module/
 
 # Next Update in Work for
 
-PylvaraFileManager: wird mit einer eigenen erweiterten Suchfunktion ausgestattet.
+PylovaraFileManager: wird mit einer eigenen erweiterten Suchfunktion ausgestattet (nicht im polyvara sondern pylovara.
 
 | suche | Ordner | Datei | Function |
 |:-----|:-------|:------|:---------|

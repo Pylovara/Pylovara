@@ -19,7 +19,10 @@ Was pylo können muss:
     einbindung .bashrc oder .zshrc and source 
 
     alias pylo="bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/ExtraSystem/pylo.sh"
+    alias pylohelp="bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/ExtraSystem/pylohelp.sh"
 
-Warum Keine Logg ? Deshalb :
+Warum  ? Deshalb :
 
 "Ein Admin erkennt man daran, dass sein Werkzeug weniger Fragen stellt als ein Praktikant."
+
+Für Dev Level zwecke gibts ein pylohelp logger

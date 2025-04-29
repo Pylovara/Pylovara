@@ -5,8 +5,20 @@
 URL: https://github.com/Pylovara/Hyprland-Module/
 
 ---
+# Next Update 
 
-# Next Update in Work for
+
+
+Kitty-freundliche vor dem umbau zu Killy für leichtgewichtiges Pylovara-Menüsystem :
+
+    whiptail - für grundlegende Menüs (Yes/No, Listen, Multi-Auswahl).
+
+    fzf      - für alles, was durchsucht/ausgewählt werden soll.
+
+    gum      - optional & Stylisch einbauen, läuft Gut auch in Standart Kitty .
+
+
+# Fast Fertig wird dann verfeinert :
 
 PylovaraFileManager: wird mit einer eigenen erweiterten Suchfunktion ausgestattet (nicht im polyvara sondern pylovara.
 

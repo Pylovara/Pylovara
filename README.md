@@ -6,22 +6,22 @@ URL: https://github.com/Pylovara/Hyprland-Module/
 
 ---
 
-# Next Update in Work
+# Next Update in Work for
 
-PolyvaraFileManager: wird mit einer eigenen erweiterten Suchfunktion ausgestattet.
+PylvaraFileManager: wird mit einer eigenen erweiterten Suchfunktion ausgestattet.
 
 | suche | Ordner | Datei | Function |
 |:-----|:-------|:------|:---------|
-| suche | Download/- | MeinPic.png | open (Browser/youpicopner) |
-| suche | Musik/- | drumandbase.mp3 | open (vlc/yourprimärer Player) |
-| suche | Home/- | .zshrc | open (nano/vim/neovim/etc) |
-| suche | Download/- | lesezeug.txt | open (cat/pdf/office/ide/etc) |
+| pylo | Download/- | MeinPic.png | shell |
+| pylo | Musik/- | drumandbase.mp3 | shell |
+| pylo | Home/- | .zshrc | shell |
+| pylo | Download/- | lesezeug.txt | shell |
 
 **extra:**
 
 | suche | Ordner | Datei | Funktion |
 |:-----|:-------|:------|:---------|
-| suche | Download/- | datei | cp (linux command/all + to ~/dev/root/) |
+| pylo | Download/- | datei | cp (linux command/all + to ~/dev/root/) |
 
 ---
 

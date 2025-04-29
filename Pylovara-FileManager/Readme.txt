@@ -1,6 +1,6 @@
 pakete :
 
-sudo pacman -S tree bc find crontab <--- nicht vergessen beim ./install.sh (vorsichtshalber)
+sudo pacman -S tree bc find crontab gum go newt dialog <--- nicht vergessen beim ./install.sh (vorsichtshalber)
 
 Weisheit : 
 "Erst denken, dann skripten — denn wer blind hackt, hackt doppelt!"

@@ -1,0 +1,27 @@
+NotizZettel
+
+# Erstelle ein modulares Grundgerüst
+mkdir -p ~/PFM-LaboFactory/SKELETT/{.config/{hypr,waybar,kitty,rofi},Dokumente,Skripte,Module,...}
+touch ~/PFM-LaboFactory/SKELETT/.config/hypr/lspHypr.sh
+
+#!/bin/bash
+# bootstrap.sh
+REPO="https://github.com/Pylovara/PFM-LaboFactory"
+DEST="$HOME"
+
+echo ">> Klone Grundstruktur von $REPO nach $DEST"
+git clone --depth=1 "$REPO" "$DEST/PFM-LaboFactory"
+
+echo ">> Richte Skelett ein..."
+cd "$DEST/PFM-LaboFactory/SKELETT" && cp -r . "$HOME"
+
+echo ">> Skelett erfolgreich gesetzt. Starte Pylovara-FM..."
+bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/start.sh
+
+3. Einen Modul-Installer definieren
+
+pfm install gamer
+pfm remove work
+pfm dual stream coder
+
+Bash-Mapping-Funktionen mit Datei-Aliasen oder JSON/YAML (später per PyLo verarbeitet).

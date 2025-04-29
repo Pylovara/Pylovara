@@ -1,10 +1,9 @@
 #!/bin/bash
-#Absoluter Ordnerpfad:                                               #
-#Hyprland-Module/Pylovara-FileManager/KernModul/HeaderMaker.sh       #
-#Pylovara Since 2025© https://github.com/Pylovara                    #
-#https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager    #  
+# Absoluter Pfad:
+# Hyprland-Module/Pylovara-FileManager/KernModul/HeaderMaker.sh
+# Ast/Tree Ausgabe das per source und show-header angehängt werden kann aber nicht muss
 
-# Farben definieren – übersichtlicher
+# Farben definieren
 declare -A COLORS=(
   [NC]="\e[0m"
   [YELLOW]="\e[38;5;226m"
@@ -17,10 +16,12 @@ declare -A COLORS=(
 RANDOM_COLOR="\e[38;5;$((196 + RANDOM % 35))m"
 
 show_header() {
+  command -v bc >/dev/null 2>&1 || { echo "Fehler: bc nicht installiert" >&2; return 1; }
+  command -v find >/dev/null 2>&1 || { echo "Fehler: find nicht installiert" >&2; return 1; }
+
   volume_raw=$(du -sh . | cut -f1)
   current_path=$(pwd)
 
-  # 📦 Farbwahl je nach Größe (lesbarer)
   case $volume_raw in
     *K)
       size_num=${volume_raw%K}; size_num=$(echo "$size_num" | sed 's/,/./')
@@ -36,19 +37,16 @@ show_header() {
     *) color="$WHITE" ;;
   esac
 
-  # 📂 Letzte Datei suchen
   last_file=$(find . -maxdepth 1 -type f -printf "%A@ %p\n" 2>/dev/null | sort -n | tail -1 | cut -d' ' -f2-)
   [ -z "$last_file" ] && last_file=$(find . -maxdepth 1 -type f -printf "%T@ %p\n" 2>/dev/null | sort -n | tail -1 | cut -d' ' -f2-)
   last_file=$(basename "$last_file")
   center_line=$(printf "%-60s" "last handling 📂|> $last_file")
 
-  # 📢 Ausgabe mit Farbschema
   echo -e "${color}╭──|Pylovara-FileManager|Rolling-Release|"
   echo -e "${color}| Volume: $volume_raw |Pfad: $current_path ${NC}"
   echo -e "${color}│ $center_line${NC}"
   echo -e "${color}╰──────────────────────────────────────────────────────────${NC}"
 
-  # 📁 Falls Baumstruktur erwünscht
   if [ "$tree_output" = true ]; then print_tree; fi
 }
 

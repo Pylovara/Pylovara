@@ -1,6 +1,7 @@
 #!/bin/bash
-#Pylovara Since 2025© https://github.com/Pylovara #
-#https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager
+# Pylovara Since 2025© https://github.com/Pylovara #
+# https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager
+# Bash-Array-Beta WorkFlow
 
 # Modulquelle
 source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/HeaderMaker.sh

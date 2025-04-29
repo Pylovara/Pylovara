@@ -9,12 +9,24 @@ Was pylo können muss:
     Jeder Ort im System möglich – inklusive /usr, /etc, /boot
     Rest bleibt UNIX: cat, nano, xdg-open, hexdump, alles !
 
-    Hyprland-Module/Pylovara-FileManager/
-    ├── ExtraSystem/
-    │   └── pylo.sh         ← das neue Tool
-    ├── Search/             ← aliasbasierte Übersicht (ls*.sh)
-    ├── KernModul/
-    │   └── HeaderMaker.sh  ← Baum/Anzeige
+    Hyprland-Module/
+    ├── Pylovara-FileManager/
+    │   ├── ExtraSystem/
+    │   │   ├── pylo.sh
+    │   │   ├── pylohelp.sh      ← debug version
+    │   ├── Logs/
+    │   │   └── pylohelp.log     ← alle Logs der Developer-Version
+
+        Normale Benutzung (ohne Loggen):
+
+        pylo /usr/include/- ares_version.h cat
+
+        Entwickler-Modus (mit Logging):
+
+        pylohelp /usr/include/- ares_version.h cat
+
+
+
 
     einbindung .bashrc oder .zshrc and source 
 

@@ -62,6 +62,8 @@ alias pylovara-reload='bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/
 source ~/.config/pylovara-env.sh
 
 
+trigger gesamt : pylovara-reload
+
 ###############################################################################################
 
 aliaslist.sh anschluss .... eingabewort : aliases-pylovara

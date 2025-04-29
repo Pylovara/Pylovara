@@ -1,21 +1,41 @@
 #!/bin/bash
 # Absoluter Pfad:
 # Hyprland-Module/Pylovara-FileManager/KernModul/clean_logs.sh
-# automatische Log-Säuberung, sauber, robust, idiotensicher 
+# automatische Log-Säuberung, sauber, robust, idiotensicher
 
-# Verzeichnis der Logs
 log_dir="$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/ErrorLogs"
-
-# Maximal erlaubte Tage, bevor gelöscht wird
 max_age_days=7
+
+# Farben (klassisch angepasst)
+NC='\033[0m'      # No Color
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+YELLOW='\033[0;33m'
+
+# Funktion für Statusausgabe
+status() {
+  if [ "$1" -eq 0 ]; then
+    echo -e "[${GREEN} OK ${NC}] $2"
+  else
+    echo -e "[${RED} FEHLER ${NC}] $2"
+  fi
+}
 
 # Prüfen ob das Log-Verzeichnis existiert
 if [ ! -d "$log_dir" ]; then
-  echo "[ WARNUNG ] Log-Verzeichnis existiert nicht: $log_dir" >&2
+  echo -e "[${YELLOW} WARNUNG ${NC}] Log-Verzeichnis existiert nicht: $log_dir"
   exit 0
 fi
 
-# Alte Logdateien löschen
-find "$log_dir" -type f -name "errorlog_*.log" -mtime +"$max_age_days" -print -delete
+# Alte Logdateien zählen
+logs_to_delete=$(find "$log_dir" -type f -name "errorlog_*.log" -mtime +"$max_age_days" | wc -l)
 
-echo "[ OK ] Alte Logs älter als $max_age_days Tage gelöscht."
+# Löschen
+if [ "$logs_to_delete" -gt 0 ]; then
+  find "$log_dir" -type f -name "errorlog_*.log" -mtime +"$max_age_days" -delete
+  status 0 "$logs_to_delete Log(s) älter als $max_age_days Tage gelöscht."
+else
+  status 0 "Keine alten Logs gefunden. Alles sauber."
+fi
+
+exit 0

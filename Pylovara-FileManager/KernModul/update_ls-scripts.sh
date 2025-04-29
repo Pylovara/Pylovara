@@ -4,9 +4,9 @@
 #Pylovara Since 2025© https://github.com/Pylovara                    #
 #https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager    #   
 
-header_path="$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/HeaderMaker.sh"
+header_path="$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/HeaderMaker.sh"
 
-for script in "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager"/ls*.sh; do
+for script in "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager"/Search/ls*.sh; do
   # Nicht den Header selbst bearbeiten
   [[ "$script" == *"HeaderMaker.sh" ]] && continue
 

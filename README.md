@@ -1,22 +1,18 @@
 # Hyprland-Module Beta Version
 
-# Pylovara Since 2025© https://github.com/Pylovara
-
+Pylovara Since 2025© 
 URL: https://github.com/Pylovara/Hyprland-Module/
 
 ---
 # Next Update 
 
-
-
-Kitty-freundliche vor dem umbau zu Killy für leichtgewichtiges Pylovara-Menüsystem :
+Kitty-freundliche für leichtgewichtiges Pylovara-Menüsystem :
 
     whiptail - für grundlegende Menüs (Yes/No, Listen, Multi-Auswahl).
 
     fzf      - für alles, was durchsucht/ausgewählt werden soll.
 
     gum      - optional & Stylisch einbauen, läuft Gut auch in Standart Kitty .
-
 
 # Fast Fertig wird dann verfeinert :
 
@@ -42,11 +38,9 @@ Die vereinfachten Commands werden auf Logik aufgebaut für den allgemeinen Gebra
 
 ---
 
-**Ziel:**  
-Pylovara-FileManager später mit einem verbesserten Terminal mit Framework zu kombinieren und damit auf Kernel-Ebene einzuordnen.  
+**Ziel(LongTime):**  
+Pylovara-FileManager später mit Framework zu kombinieren und damit auf Kernel-Ebene einzuordnen.  
 Es wird damit verbunden einen eigenen verbesserten Linux-Zen Kernel geben, der auf Effizienz ausgelegt sein wird.  
-Der kommende Kernel wird sich **Linux-plv** nennen:  
-Ausgelegt auf Wine / Portproton.ru / Waydroid / KVM / Flat / Docker / Native!
 
 ---
 
@@ -59,7 +53,7 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-# Kompaktibel ArchArchitectur 
+# Kompaktibel ArchArchitectur in ErstenSchritt
 
 - https://github.com/hyprwm/Hyprland
 - https://github.com/mylinuxforwork/hyprland-starter (other: https://www.ml4w.com/)

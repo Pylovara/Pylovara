@@ -1,5 +1,7 @@
 # Search/ ab $HOME/
 
+"Ein guter Sysadmin prüft nicht, ob der Weg schon da ist – er legt Karten, damit andere ihn finden."
+
 es werden im Search/ ordner für jeden ordner P-Ordner angelegt 
 um Später diese Ordner für alle Sprachen füttern zu können 
 

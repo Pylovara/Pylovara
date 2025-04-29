@@ -1,6 +1,6 @@
-Was pylo können muss:
+Was pylo macht:
 
-    Akzeptiere absolute oder relative Pfade (auch /usr/include/-)
+    Akzeptiert absolute oder relative Pfade (auch /usr/include/-)
     Ignoriere das /- – und speichere den Pfad fixiert
     Dateiname extrahieren
     Wenn da noch was kommt (Befehl) → übergebe Datei an das Programm

@@ -1,6 +1,6 @@
 pakete :
 
-sudo pacman -S tree bc find <--- nicht vergessen beim ./install.sh (vorsichtshalber)
+sudo pacman -S tree bc find crontab <--- nicht vergessen beim ./install.sh (vorsichtshalber)
 
 Weisheit : 
 "Erst denken, dann skripten — denn wer blind hackt, hackt doppelt!"
@@ -27,8 +27,14 @@ aliasloader.sh       | Lädt alle gültigen Skripte als Aliase
 HeaderMaker.sh       | Erstellt den hübschen Header + optionalen Baum
 update_ls-scripts.sh | Baut Skripte sauber um und hängt Fehlerprüfungen an
 errorlog.sh          | Protokolliert jeden aufgetretenen Fehler
+clean_logs.sh        | Automatische Log-Säuberung, sauber, robust, idiotensicher , 7 Tage .
 
 
+idee:
+JedenTag Reinigen
+
+crontab -e
+0 3 * * * /bin/bash $HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/clean_logs.sh >/dev/null 2>&1
 
 
 

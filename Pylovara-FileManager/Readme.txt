@@ -1,5 +1,6 @@
+pakete :
 
-
+sudo pacman -S tree bc find <--- nicht vergessen beim ./install.sh (vorsichtshalber)
 
 Weisheit : 
 "Erst denken, dann skripten — denn wer blind hackt, hackt doppelt!"

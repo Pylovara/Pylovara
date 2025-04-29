@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Funktion zum Ausführen von Befehlen mit Passwortabfrage (wenn nötig)
+# Funktion zum Ausführen mit Passwortabfrage (wenn nötig)
 sudo_cmd() {
   if [[ $EUID -ne 0 ]]; then
     echo "🔐 Benötige Root-Rechte, um '$*' auszuführen..."
@@ -10,7 +10,7 @@ sudo_cmd() {
   fi
 }
 
-echo "🚀 Starte Installation von Polyvara-FileManager..."
+echo "Starte Installation von Polyvara-FileManager Demo ..."
 
 # Zielverzeichnis
 TARGET="$HOME/.config/hypr"
@@ -92,5 +92,5 @@ else
   echo "✅ 'tree' ist bereits installiert."
 fi
 
-echo "✨ Installation abgeschlossen!"
+echo "Installation abgeschlossen!"
 echo "👉 Bitte Terminal neu starten oder 'source ~/.zshrc' ausführen."

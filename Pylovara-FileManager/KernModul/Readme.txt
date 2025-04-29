@@ -1,4 +1,5 @@
-
+Aliasloader.sh : „Wenn du einmal im Wald bist, schau in jede Hütte.“
+HeaderMaker.sh : „bring mir ein Blatt und ich male die MonaLisa"
 
 
 

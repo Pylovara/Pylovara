@@ -1,60 +1,33 @@
 #!/bin/bash
 # Absoluter Pfad:
-# Hyprland-Module/Pylovara-FileManager/KernModul/HeaderMaker.sh
+# Hyprland-Module/Pylovara-FileManager/KernModul/update_ls-scripts.sh
+# Errorlogs : Hyprland-Module/Pylovara-FileManager/KernModul/ErrorLogs
 
-# Farben definieren
-declare -A COLORS=(
-  [NC]="\e[0m"
-  [YELLOW]="\e[38;5;226m"
-  [RED]="\e[38;5;196m"
-  [PINK]="\e[38;5;201m"
-  [BLUE]="\e[38;5;93m"
-  [WHITE]="\e[38;5;15m"
-  [LIGHT]="\e[38;5;250m"
-)
-RANDOM_COLOR="\e[38;5;$((196 + RANDOM % 35))m"
+header_path="$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/HeaderMaker.sh"
+errorlog_script="$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/errorlog.sh"
 
-show_header() {
-  command -v bc >/dev/null 2>&1 || { echo "Fehler: bc nicht installiert" >&2; return 1; }
-  command -v find >/dev/null 2>&1 || { echo "Fehler: find nicht installiert" >&2; return 1; }
+mkdir -p "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/ErrorLogs"
 
-  volume_raw=$(du -sh . | cut -f1)
-  current_path=$(pwd)
+for script in "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/Search"/ls*.sh; do
+  [[ "$script" == *"HeaderMaker.sh" ]] && continue
 
-  case $volume_raw in
-    *K)
-      size_num=${volume_raw%K}; size_num=$(echo "$size_num" | sed 's/,/./')
-      if [ "$(echo "$size_num < 100" | bc)" -eq 1 ]; then
-        color="$RANDOM_COLOR"
-      else color="$YELLOW"; fi ;;
-    *M)
-      size_num=${volume_raw%M}; size_num=$(echo "$size_num" | sed 's/,/./')
-      if [ "$(echo "$size_num < 100" | bc)" -eq 1 ]; then
-        color="$RED"
-      else color="$PINK"; fi ;;
-    *G) color="$BLUE" ;;
-    *) color="$WHITE" ;;
-  esac
+  grep -q "show_header" "$script"
+  if [ $? -eq 0 ]; then
+    echo "[ INFO ] Überspringe: $(basename "$script") (bereits show_header enthalten)"
+    continue
+  fi
 
-  last_file=$(find . -maxdepth 1 -type f -printf "%A@ %p\n" 2>/dev/null | sort -n | tail -1 | cut -d' ' -f2-)
-  [ -z "$last_file" ] && last_file=$(find . -maxdepth 1 -type f -printf "%T@ %p\n" 2>/dev/null | sort -n | tail -1 | cut -d' ' -f2-)
-  last_file=$(basename "$last_file")
-  center_line=$(printf "%-60s" "last handling 📂|> $last_file")
+  temp=$(mktemp)
+  {
+    echo "#!/bin/bash"
+    echo "source \"$header_path\""
+    echo "cd \"$(dirname "$script")\" || { source \"$errorlog_script\" \"Fehler beim Wechsel in Verzeichnis\" \"$script\"; exit 1; }"
+    echo "tree_output=true"
+    echo "show_header || { source \"$errorlog_script\" \"Fehler beim Anzeigen des Headers\" \"$script\"; exit 1; }"
+  } > "$temp"
+  tail -n +2 "$script" >> "$temp"
+  mv "$temp" "$script"
+  chmod +x "$script"
 
-  echo -e "${color}╭──|Pylovara-FileManager|Rolling-Release|"
-  echo -e "${color}| Volume: $volume_raw |Pfad: $current_path ${NC}"
-  echo -e "${color}│ $center_line${NC}"
-  echo -e "${color}╰──────────────────────────────────────────────────────────${NC}"
-
-  if [ "$tree_output" = true ]; then print_tree; fi
-}
-
-print_tree() {
-  find . -maxdepth 2 -type d \( ! -name '.*' \) -printf "%P/\n" -o -type f -printf "  %P\n" \
-  | sed 's|^\./||' \
-  | awk '
-    BEGIN {FS="/"}
-    NF==1 {print "📄 " $0}
-    NF==2 && $2=="" {print "📁 " $1}
-    NF==2 && $2!="" {print "  └── 📄 " $2 " (" $1 ")"}'
-}
+  echo "[ OK ] Aktualisiert: $(basename "$script")"
+done

@@ -1,14 +1,14 @@
 #!/bin/bash
-#Absoluter Ordnerpfad:                                               #
-#Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh       #
-#Pylovara Since 2025© https://github.com/Pylovara                    #
-#https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager    #  
+# Absoluter Pfad:
+# Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh
+# Lädt alle ls*.sh Skripte als Aliase.
 
-# Lädt automatisch alle ls*.sh-Skripte als Aliase, 
-# z.B. ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/Search/lsupdate.sh → update
-
-for f in "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager"/Search/ls*.sh; do
+for f in "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/Search"/ls*.sh; do
   [ -e "$f" ] || continue
   name="$(basename "${f}" .sh | sed 's/^ls//')"
-  alias "${name}"="${f}"
+  if [[ -x "$f" ]]; then
+    alias "${name}"="${f}"
+  else
+    echo "[ WARNUNG ] Datei nicht ausführbar: $f" >&2
+  fi
 done

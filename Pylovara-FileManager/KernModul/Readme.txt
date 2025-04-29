@@ -14,9 +14,13 @@ HeaderMaker.sh : „bring mir ein Blatt und ich male die MonaLisa"
 
 
 
+Anschluss .... 
 
+zshrc:
+source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh
 
-
+bashrc:
+[[ -f ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh ]] && source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh
 
 
 #########################################################################################################################

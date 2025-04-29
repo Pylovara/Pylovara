@@ -7,14 +7,21 @@ HeaderMaker.sh : „bring mir ein Blatt und ich male die MonaLisa"
 
 
 
+###############################################################################################
+
+aliaslist.sh anschluss ....
+
+zshrc:
+alias aliases-pylovara="bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliaslist.sh"
 
 
+bashrc
+[[ -f  ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliaslist.sh ]] && source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliaslist.sh
 
 
+###############################################################################################
 
-
-
-Anschluss .... 
+aliasloader.sh Anschluss .... 
 
 zshrc:
 source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh
@@ -23,7 +30,7 @@ bashrc:
 [[ -f ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh ]] && source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh
 
 
-#########################################################################################################################
+###############################################################################################
 
 # Dev Level 
 

@@ -5,9 +5,9 @@
 #https://github.com/Pylovara/Hyprland-Module/Pylovara-FileManager    #  
 
 # Lädt automatisch alle ls*.sh-Skripte als Aliase, 
-# z.B. ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/lsupdate.sh → update
+# z.B. ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/Search/lsupdate.sh → update
 
-for f in "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager"/ls*.sh; do
+for f in "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager"/Search/ls*.sh; do
   [ -e "$f" ] || continue
   name="$(basename "${f}" .sh | sed 's/^ls//')"
   alias "${name}"="${f}"

@@ -9,10 +9,14 @@ Weisheit :
 Arbeitsverzeichnis (Root) ist:
 ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/
 
-    ExtraSearch → erstmal egal
-    ExtraSystem → erstmal egal
-    KernModul → da liegen die Grundfunktionen wie aliasloader.sh
-    Search → hier liegen die ls.sh*-Skripte, die der Benutzer später per Alias aufrufen kann
+    ExtraSearch → kernel ebene
+    ExtraSystem → pylo - allround
+    KernModul   → da liegen die Grundfunktionen wie aliasloader.sh
+    Search      → Alles ab Home , perma aktualisierungen
+    Logs        → polyhelp - debugg ablage
+    PFM         → extrem experimentiell
+    _backup     → sicherheitsbackup
+    FrameWorke  → Zukünftiges Tui-Gui-BlingBling
 
 Dateien KernModule   | Funktion
 aliasloader.sh       | Lädt alle gültigen Skripte als Aliase

@@ -22,6 +22,8 @@ aliaslist.sh
 
 oder ich machs so modular  :
 
+name : pylovara-tools.sh (oder RESET , wie auch immer) :
+
 #!/bin/bash
 # Pylovara Toolkit – aliasreset, aliasloader und aliaslist zentral ausführen
 

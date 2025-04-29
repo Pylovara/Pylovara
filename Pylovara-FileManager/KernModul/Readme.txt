@@ -9,7 +9,7 @@ HeaderMaker.sh : „bring mir ein Blatt und ich male die MonaLisa"
 
 ###############################################################################################
 
-aliaslist.sh anschluss ....
+aliaslist.sh anschluss .... eingabewort : aliases-pylovara
 
 zshrc:
 alias aliases-pylovara="bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliaslist.sh"

@@ -1,6 +1,6 @@
-Aliasloader.sh : „Wenn du einmal im Wald bist, schau in jede Hütte.“
-HeaderMaker.sh : „bring mir ein Blatt und ich male die MonaLisa"
-
+Aliasloader.sh  : „Wenn du einmal im Wald bist, schau in jede Hütte.“
+HeaderMaker.sh  : „bring mir ein Blatt und ich male die MonaLisa."
+pylovara-env.sh : „Ein CEO muss mehr können als nur Nasekratzen."
 
 
 
@@ -49,9 +49,17 @@ bash "$modul_dir/aliaslist.sh"
 echo -e "\n[✓] Pylovara-Werkzeuge abgeschlossen."
 
 
+- Neue Steuerzentrale z. B. ~/.config/pylovara-env.sh:
 
+# Quelle für Pylovara Tools
+source "$HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/pylovara-tools.sh"
 
+# Alias setzen (nur beim Bedarf)
+alias pylovara-reload='bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/pylovara-tools.sh'
 
+2. In die .zshrc nur noch:
+
+source ~/.config/pylovara-env.sh
 
 
 ###############################################################################################

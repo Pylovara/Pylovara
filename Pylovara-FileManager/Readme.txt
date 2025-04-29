@@ -14,24 +14,17 @@ Arbeitsverzeichnis (Root) ist:
     KernModul → da liegen die Grundfunktionen wie aliasloader.sh
     Search → hier liegen die ls.sh*-Skripte, die der Benutzer später per Alias aufrufen kann
 
-Fakt                 | Erklärung
-Alias                | Führt externes Skript aus, neues Environment.
-source in zshrc      | Hilft nur den Aliassen, nicht den Skripten selbst.
-source im Skript     | Unbedingt nötig, damit Funktionen wie show_header bekannt sind.
-update_ls-scripts.sh | Saubere Pflichtarbeit: überall source HeaderMaker.sh vorne rein, wenn fehlt.
-Resultat             | Stabiles, modulares System. Kein wildes Durcheinander.
-
-
 Dateien KernModule   | Funktion
 aliasloader.sh       | Lädt alle gültigen Skripte als Aliase
 HeaderMaker.sh       | Erstellt den hübschen Header + optionalen Baum
 update_ls-scripts.sh | Baut Skripte sauber um und hängt Fehlerprüfungen an
-errorlog.sh          | Protokolliert jeden aufgetretenen Fehler
+errorlog.sh          | Protokolliert jeden aufgetretenen Fehler + Status + Anzahl
 clean_logs.sh        | Automatische Log-Säuberung, sauber, robust, idiotensicher , 7 Tage .
+log_size_guard.sh    |	Löscht Logs automatisch, wenn sie >1,2MB groß werden.
+Resultat             | Stabiles, modulares System. Kein wildes Durcheinander.
 
 
-idee:
-JedenTag Reinigen
+JedenTag Reinigen (idee):
 
 crontab -e
 0 3 * * * /bin/bash $HOME/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/clean_logs.sh >/dev/null 2>&1

@@ -164,7 +164,7 @@ sudo rm -r ~/Hyprland-Module
 
 exit 1
 sleep 90000000000000000000000000000000000000000000000000000
-echo "Starte Installation von Pylovara-FileManager FullInstall pylo + p  ..."
+echo "Starte Installation von Pylovara-FileManager FullInstall pylo + p + .zshrc source and alias copie ..."
 
 # Zielverzeichnis
 TARGET="$HOME/.config/hypr"
@@ -199,17 +199,21 @@ if [ ! -f "$HOME/.zshrc" ]; then
   exit 1
 fi
 
-if ! grep -q "Polyvara-FileManager/aliasloader.sh" "$HOME/.zshrc"; then
+if ! grep -q "Pylovara-FileManager/KernModul/aliasloader.sh" "$HOME/.zshrc"; then
   cat << 'EOF' >> "$HOME/.zshrc"
 
-# Poylovara-FileManager Setup
+# Pylovara-FileManager - p
 source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh
 
-# Set-up icons for files/directories in terminal using lsd
+# Pylovara-FileManager - pylo
+alias pylo="bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/ExtraSystem/pylo.sh"
+alias pylohelp="bash ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/ExtraSystem/pylohelp.sh"
+
+# Pylovara-FileManager Set-up Prompt
 alias ls='lsd'
 alias tree='tree -a -L 2'
 
-# Pylovara-FileManager Farben
+# Pylovara-FileManager Colors
 export LS_COLORS="\
 di=1;37:\
 fi=0;37:\
@@ -218,12 +222,17 @@ ex=1;97:\
 *.sh=1;97:\
 *.py=1;97:\
 *.mp4=0;37:\
+*.mp3=0;37:\
+*.wave=0;37:\
 *.mkv=0;37:\
+*.mpeg=0;37:\
 *.png=0;37:\
 *.jpg=0;37:\
 *.jpeg=0;37:\
+*.rar=0;37:\
 *.zip=0;37:\
 *.tar=0;37:\
+*.appimage=0;37:\
 *.gz=0;37:\
 *.iso=0;37:"
 

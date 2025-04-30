@@ -1,10 +1,10 @@
 #!/bin/bash
 clear
 echo
-echo "   ██▓▒░        [SYSTEM BOOTLOADER HOOKED]         ░▒▓██"
+echo "   ██▓▒░        [SYSTEM BOOTLOADER HOOKED]        ░▒▓██"
 echo "   █▓▒░         /root/.nsa_backdoor/init           ░▒▓█"
 echo "   ▓▒░        Initializing deep system override...  ░▒▓"
-sleep 2
+sleep 3
 echo
 
 # Dramatischer Ladebalken-Style
@@ -25,28 +25,28 @@ echo ">>> sudo pacman -S Pornhub-Core"
 progress_bar 17
 sleep 0.5
 echo "[✓] Porno-Datenbank erfolgreich mit Ihrem DNS gekoppelt"
-sleep 1
+sleep 3
 
 echo
 echo ">>> sudo pacman -S Spyware-Agent"
 progress_bar 14
 sleep 0.5
 echo "[✓] Keylogger aktiv – Tastaturbewegung wird nun getrackt"
-sleep 1
+sleep 3
 
 echo
 echo ">>> sudo apt install selinux-alcatraz-mode"
 progress_bar 19
 sleep 0.5
 echo "[✓] SELinux nun im Alcatraz-Modus – kein Entkommen möglich"
-sleep 1
+sleep 3
 
 echo
 echo ">>> sudo pacman -S Windows11-Telemetry"
 progress_bar 13
 sleep 0.5
 echo "[✓] Cortana hat Zugriff auf dein Tagebuch"
-sleep 1
+sleep 3
 
 echo
 echo ">>> sudo yay -S ArchLinux-Endzeit-Paket"
@@ -54,108 +54,99 @@ progress_bar 20
 sleep 0.5
 echo "[✓] Paket enthält: Systemabsturz, Hoffnungslosigkeit, Snapd"
 
-sleep 2
+sleep 3
 echo
 echo ">>> echo 'Dein Arbeitsumfeld wurde erfolgreich versklavt.'"
-sleep 1
+sleep 3
 echo "    [ OK ] Rootkit vollständig im RAM verankert."
-sleep 1
+sleep 3
 echo "    [ OK ] GNOME mit KDE überschrieben. Zur Sicherheit."
-sleep 1
+sleep 2
 echo
 echo "███████████████████████████████████████████████████████"
 echo "█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█"
 echo "█░  😈  ALL SYSTEMS COMPROMISED – HAVE A NICE DAY 😈 ░█"
 echo "█░       Besuche: https://github.com/Pylovara        ░█"
 echo "███████████████████████████████████████████████████████"
+sleep 8
 clear
-sleep 6
-echo "#--------------------------------------------------------#" 
+sleep 4
+echo "#---------------------TimeForReadme----------------------#"
+sleep 2
 echo "#      https://github.com/Pylovara/Hyprland-Module/      #"
-echo "#      ┏┓  ┓┏  ┓   ┏┓  ┓┏  ┏┓  ┳┓  ┏┓                    #"       
+sleep 0.3
+echo "#      ┏┓  ┓┏  ┓   ┏┓  ┓┏  ┏┓  ┳┓  ┏┓                    #"
+sleep 0.1
 echo "#      ┃┃  ┗┫  ┃   ┃┃  ┃┃  ┣┫  ┣┫  ┣┫                    #"
+sleep 0.1
 echo "#      ┣┛  ┗┛  ┗┛  ┗┛  ┗┛  ┛┗  ┛┗  ┛┗                    #"
+sleep 4
 echo "#          ┏┓•┓  ┳┳┓                                     #"
+sleep 0.1
 echo "#          ┣ ┓┃┏┓┃┃┃┏┓┏┓┏┓┏┓┏┓┏┓   p & pylo              #"
+sleep 0.1
 echo "#          ┻ ┗┗┗ ┛ ┗┗┻┛┗┗┻┗┫┗ ┛     SHELL                #"
+sleep 0.1
 echo "#                          ┛                             #"
+sleep 4
 echo "#        ┳┓┏┓┏┳┓┏┓  ┏┓┏┓┏┓┏━   ┏  ╻                      #"
+sleep 0.1
 echo "#        ┣┫┣  ┃ ┣┫  ┏┛┃┫┏┛┗┓  ━┫━━┃━━━━━━━━━━━━━━━━━━    #"
+sleep 0.1
 echo "#        ┻┛┗┛ ┻ ┛┗  ┗━┗┛┗━┗┛   ┗  ╹Pylovara-FileManager  #"
-echo "#--------------------------------------------------------#"                                               
-sleep 6
-echo "#      Used in the Shell for commands options infos      #"
-echo "#              pylo         |           p                #"
-echo "#---------------------------|----------------------------#"
-echo "#           pylooptions     |        poptions            #"
-echo "#--------------------------------------------------------#" 
-sleep 6
-echo "#   >>>>>>>>>   Used prompt in the Shell   <<<<<<<<<<<<  #"
-echo "#   SHELL |                Beispiel                      #"
-echo "#---------|----------------------------------------------#"
-echo "#    p    | pdownloads pmusik phypr ptwitch puserscripts #"
-echo "#    p    | phyprland  pdokumente ptorbrowser ppictures  #"
-echo "#---------|----------------------------------------------#"
-echo "#   SHELL | pylo > Directory > Data > SHELL > (&& SHELL) #"
-echo "#---------|----------------------------------------------#"
-echo "#   pylo  | pylo Downloads/- Readme.md cat               #"
-echo "#   pylo  | pylo Musik/- data.mp3 vlc                    #"
-echo "#   pylo  | pylo Video/- MyVideo.mp4 mpv                 #"
-echo "#   pylo  | pylo Downloads/- Scripts.sh chmod +x         #"
-echo "#   pylo  | pylo Downloads/- WatEver.zip cp ~/home       #"
-sleep 12
+sleep 0.1
 echo "#--------------------------------------------------------#"
+sleep 10
+echo "#      Used in the Shell for commands options infos      #"
+sleep 6
+echo "#              pylo         |           p                #"
+sleep 0.2
+echo "#---------------------------|----------------------------#"
+sleep 0.1
+echo "#           pylooptions     |        poptions            #"
+sleep 0.1
+echo "#--------------------------------------------------------#"
+sleep 20
+echo "#   >>>>>>>>>   Used prompt in the Shell   <<<<<<<<<<<<  #"
+sleep 6
+echo "#   SHELL |                Beispiel                      #"
+sleep 0.2
+echo "#---------|----------------------------------------------#"
+sleep 0.2
+echo "#    p    | pdownloads pmusik phypr ptwitch puserscripts #"
+sleep 0.2
+echo "#    p    | phyprland  pdokumente ptorbrowser ppictures  #"
+sleep 0.2
+echo "#---------|----------------------------------------------#"
+sleep 20
+echo "#   SHELL | pylo > Directory > Data > SHELL > (&& SHELL) #"
+sleep 6
+echo "#---------|----------------------------------------------#"
+sleep 0.5
+echo "#   pylo  | pylo Downloads/- Readme.md cat               #"
+sleep 0.1
+echo "#   pylo  | pylo Musik/- data.mp3 vlc                    #"
+sleep 0.1
+echo "#   pylo  | pylo Video/- MyVideo.mp4 mpv                 #"
+sleep 0.1
+echo "#   pylo  | pylo Downloads/- Scripts.sh chmod +x         #"
+sleep 0.1
+echo "#   pylo  | pylo Downloads/- WatEver.zip cp ~/home       #"
+sleep 0.1
+echo "#--------------------------------------------------------#"
+sleep 25
 echo "#         Pylovara is from User for User Maket           #"
+sleep 6
 echo "#    Used Easy - Speed Navigations - Better Control      #"
+sleep 6
 echo "#-----------------------Install--------------------------#"
+sleep 8
 echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
-echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
-sleep 40000000000000
+echo "# Make sudo rm -r ~/Hyprland-Module for clean Remove     #"
+echo "#     ohter wait for used password maket alone remove    #"
+
+sleep 20
+
 # Funktion zum Ausführen mit Passwortabfrage (wenn nötig)
 sudo_cmd() {
   if [[ $EUID -ne 0 ]]; then
@@ -169,7 +160,7 @@ sudo_cmd() {
 sudo rm -r ~/Hyprland-Module
 
 exit 1
-
+sleep 40000000000000
 echo "Starte Installation von Pylovara-FileManager FullInstall pylo + p  ..."
 
 # Zielverzeichnis

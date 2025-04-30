@@ -49,8 +49,8 @@ Es wird damit verbunden einen eigenen verbesserten Linux-Zen Kernel geben, der a
 ```bash
 git clone https://github.com/Pylovara/Hyprland-Module.git
 cd Hyprland-Module
-chmod +x setup.sh
-./setup.sh
+chmod +x demosetup.sh
+./demosetup.sh
 ```
 
 # Kompaktibel ArchArchitectur in ErstenSchritt

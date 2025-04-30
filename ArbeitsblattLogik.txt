@@ -1,0 +1,23 @@
+Pylovara-FileManager-System/ 
+|
+|- P-Search/ ---- .p-notes	-------- Trigger- und Notizdateien für das p-Modul (z. B. für ptree)
+|- P-Module/ ---- .p-nodes	-------- Kernmodule von p (also Shell-Knoten mit Logik)
+|- P-Error/  ---- .p-logs	-------- Logausgaben aus p
+|- Pylo-Search/ - .pylo-notes ----- Alternative Suchdatenbank für Pylo-kompatible Shell-Kommandos
+|- Pylo.Module/ - .pylo-nodes ----- Module für pylo-Kommandos (play, open, copy, usw.)
+|- Pylo-Error/ -- .pylo -logs ----- Logausgaben aus pylo
+|- PLVA-Layouts - .pv-objekt	 ----- Visuelle Layoutdateien, z. B. für Kitty-GUI, Menüs, etc.
+|- Pylovara-DirectoryManager.pv-dir -	Steuerzentrale für Pfade, Konfiguration und zentrale Verwaltung Ordner 
+
+Pylovara-FileManager-System/
+│
+├─ P-Search/                → .p-notes: Trigger/Notizen für "p" (Tree/Navigator)
+├─ P-Module/                → .p-nodes: Kernmodule von "p" (Modul-Logik)
+├─ P-Error/                 → .p-logs: Logausgaben aus "p"
+│
+├─ Pylo-Search/             → .pylo-notes: Datenbank für alternative SHELL-Kommandos
+├─ Pylo.Module/             → .pylo-nodes: Kernmodule für pylo-Features
+├─ Pylo-Error/              → .pylo-logs: Logausgaben aus "pylo"
+│
+├─ PLVA-Layouts/            → .pv-objekt: GUI-Elemente & visuelle Layouts (Kitty etc.)
+└─ Pylovara-DirectoryManager.pv-dir/ → Zentrale für Pfade, Konfig, Routing, Shell-RC-Sourcing

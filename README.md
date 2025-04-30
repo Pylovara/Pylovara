@@ -4,6 +4,30 @@ Pylovara Since 2025©
 URL: https://github.com/Pylovara/Hyprland-Module/
 
 ---
+Good question. Technically... it doesn’t.
+But aesthetically – absolutely.
+
+The Pylovara installer is designed for people who live in the terminal. 
+People who compile in their sleep. People who consider /bin/bash a place of worship. 
+If that’s you, you deserve an installation process that feels like a good old BBS 
+prank meets Mr. Robot.
+
+This absurd "pre-install phase" is just a boot-sequence parody for entertainment. 
+No real spyware, porn databases, or Alcatraz-level SELinux settings are being 
+installed (unless you already did that yourself – in which case: we salute you).
+
+So relax, laugh, and enjoy the ride.
+Once the joke is over, the real setup begins – fast, functional, and exactly 
+what you'd expect from a FileManager built for terminal pros.
+
+the 6-2025 installer ist the install but not for release , you can but not more ^^.
+---
+
+
+
+# ArbeitsProzess
+
+---
 # Next Update 
 
 Kitty-freundliche für leichtgewichtiges Pylovara-Menüsystem :

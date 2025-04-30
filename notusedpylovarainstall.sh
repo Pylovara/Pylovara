@@ -108,7 +108,54 @@ echo "#--------------------------------------------------------#"
 echo "#         Pylovara is from User for User Maket           #"
 echo "#    Used Easy - Speed Navigations - Better Control      #"
 echo "#-----------------------Install--------------------------#"
-sleep 3
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
+echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"
+sleep 40000000000000
 # Funktion zum Ausführen mit Passwortabfrage (wenn nötig)
 sudo_cmd() {
   if [[ $EUID -ne 0 ]]; then

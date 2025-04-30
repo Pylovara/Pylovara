@@ -160,7 +160,7 @@ sudo_cmd() {
 sudo rm -r ~/Hyprland-Module
 
 exit 1
-sleep 40000000000000
+sleep 90000000000000000000000000000000000000000000000000000
 echo "Starte Installation von Pylovara-FileManager FullInstall pylo + p  ..."
 
 # Zielverzeichnis
@@ -169,7 +169,7 @@ MODULE_DIR="Hyprland-Module/Pylovara-FileManager"
 INSTALL_PATH="$TARGET/$MODULE_DIR"
 
 # Quellordner (absolute Pfadangabe)
-SOURCE_DIR="$(dirname "$(realpath "$0")")/Polyvara-FileManager"
+SOURCE_DIR="$(dirname "$(realpath "$0")")/Pylovara-FileManager"
 
 # Vorprüfungen
 if [ ! -d "$TARGET" ]; then
@@ -199,7 +199,7 @@ fi
 if ! grep -q "Polyvara-FileManager/aliasloader.sh" "$HOME/.zshrc"; then
   cat << 'EOF' >> "$HOME/.zshrc"
 
-# Polyvara-FileManager Setup
+# Poylovara-FileManager Setup
 source ~/.config/hypr/Hyprland-Module/Pylovara-FileManager/KernModul/aliasloader.sh
 
 # Set-up icons for files/directories in terminal using lsd

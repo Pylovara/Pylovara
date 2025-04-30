@@ -142,6 +142,12 @@ echo "#         Pylovara is from User for User Maket           #"
 sleep 6
 echo "#    Used Easy - Speed Navigations - Better Control      #"
 sleep 6
+echo "#    Used Easy - Speed Navigations - Better Control      #"
+sleep 0.5
+echo "#     Do yourself a favor and use a proper shell...      #"
+echo "#       My recommendation: Kitty or Alacritty.           #"
+echo "#        sudo pacman -S kitty other Alacritty            #"
+sleep 3
 echo "#-----------------------Install--------------------------#"
 sleep 8
 echo "# NOT USED FOR READY , COME LATER .... 6/2025 RELEASE    #"

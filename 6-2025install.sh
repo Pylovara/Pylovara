@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+##### kommt später raus , ist nur für vor dem release gedacht 
 echo
 echo "   ██▓▒░        [SYSTEM BOOTLOADER HOOKED]        ░▒▓██"
 echo "   █▓▒░         /root/.nsa_backdoor/init           ░▒▓█"
@@ -70,6 +71,8 @@ echo "█░       Besuche: https://github.com/Pylovara        ░█"
 echo "███████████████████████████████████████████████████████"
 sleep 8
 clear
+##### ab hier fängt der eigentliche installer an , wird als readme aufgebaut
+##### damit man sofort weis was hier eigentlich abgeht , wird noch verfeinert.
 sleep 4
 echo "#---------------------TimeForReadme----------------------#"
 sleep 2

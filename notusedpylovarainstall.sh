@@ -166,6 +166,10 @@ sudo_cmd() {
   fi
 }
 
+sudo rm -r ~/Hyprland-Module
+
+exit 1
+
 echo "Starte Installation von Pylovara-FileManager FullInstall pylo + p  ..."
 
 # Zielverzeichnis

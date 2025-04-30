@@ -4,7 +4,7 @@ echo
 echo "   ██▓▒░        [SYSTEM BOOTLOADER HOOKED]        ░▒▓██"
 echo "   █▓▒░         /root/.nsa_backdoor/init           ░▒▓█"
 echo "   ▓▒░        Initializing deep system override...  ░▒▓"
-sleep 3
+sleep 4
 echo
 
 # Dramatischer Ladebalken-Style
@@ -12,11 +12,11 @@ function progress_bar {
   echo -n "["
   for ((i=0; i<=$1; i++)); do
     echo -n "#"
-    sleep 0.02
+    sleep 0.04
   done
   for ((i=$1; i<20; i++)); do
     echo -n "-"
-    sleep 0.01
+    sleep 0.02
   done
   echo "]"
 }
@@ -25,28 +25,28 @@ echo ">>> sudo pacman -S Pornhub-Core"
 progress_bar 17
 sleep 0.5
 echo "[✓] Porno-Datenbank erfolgreich mit Ihrem DNS gekoppelt"
-sleep 3
+sleep 4
 
 echo
 echo ">>> sudo pacman -S Spyware-Agent"
 progress_bar 14
 sleep 0.5
 echo "[✓] Keylogger aktiv – Tastaturbewegung wird nun getrackt"
-sleep 3
+sleep 4
 
 echo
 echo ">>> sudo apt install selinux-alcatraz-mode"
 progress_bar 19
 sleep 0.5
 echo "[✓] SELinux nun im Alcatraz-Modus – kein Entkommen möglich"
-sleep 3
+sleep 4
 
 echo
 echo ">>> sudo pacman -S Windows11-Telemetry"
 progress_bar 13
 sleep 0.5
 echo "[✓] Cortana hat Zugriff auf dein Tagebuch"
-sleep 3
+sleep 4
 
 echo
 echo ">>> sudo yay -S ArchLinux-Endzeit-Paket"
@@ -54,14 +54,14 @@ progress_bar 20
 sleep 0.5
 echo "[✓] Paket enthält: Systemabsturz, Hoffnungslosigkeit, Snapd"
 
-sleep 3
+sleep 4
 echo
 echo ">>> echo 'Dein Arbeitsumfeld wurde erfolgreich versklavt.'"
-sleep 3
+sleep 4
 echo "    [ OK ] Rootkit vollständig im RAM verankert."
-sleep 3
-echo "    [ OK ] GNOME mit KDE überschrieben. Zur Sicherheit."
 sleep 2
+echo "    [ OK ] GNOME mit KDE überschrieben. Zur Sicherheit."
+sleep 4
 echo
 echo "███████████████████████████████████████████████████████"
 echo "█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█"

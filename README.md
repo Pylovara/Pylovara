@@ -59,7 +59,7 @@ je nach Richtung.
 
 ✅ Systemnah
 
-    Läuft direkt im Terminal, mit nativer Shell – keine unnötigen Layer, 
-    kein node.js, kein Python-Wirrwarr.
+Läuft direkt im Terminal, mit nativer Shell – keine unnötigen Layer, 
+kein node.js, kein Python-Wirrwarr.
 
-    Funktioniert sogar bei gebootetem Rettungssystem – ein klarer Vorteil.
+Funktioniert sogar bei gebootetem Rettungssystem – ein klarer Vorteil.

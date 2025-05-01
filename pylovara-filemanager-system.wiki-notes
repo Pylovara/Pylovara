@@ -68,30 +68,28 @@ Pylovara-FileManager-System/
 |-P-Error/  ---- .p-logs	-------- Logausgaben aus p
 |-Pylo-Search/ - .pylo-notes ----- Alternative Suchdatenbank für Pylo-kompatible Shell-Kommandos
 |
-|########### Pylo-Module ##############################
+|################# Pylo-Module ##########################
 ||-Pylo.Module/ - .pylo-nodes ----- 
 ||# .pylo-nodes: Kernmodule für pylo-Features
 ||
 ||-Pylo-Module/pylo.pylo-nodes
 ||# /Pylovara-FileManager-System/Pylo-Module/pylo.pylo-nodes
 ||# .pylo-nodes: Kernmodule für pylo-Features
+||# bsp : pylo Pylo-Module/- pylo.pylo-nodes nano
 ||# universal fixer & forwarder
-||# Wichtig : pylo path/- data.* SHELL (beispiele):
-||# pylo Pylo-Module/- pylo.pylo-nodes cat
-||# pylo Downloads/- Ambiente.mp3 vlc
-||# pylo Dokumente/- Buch.pdf WPS-Office
 ||
 ||-Pylo-Module/pylohelp.pylo-nodes
 ||# /Pylovara-FileManager-System/Pylo-Module/pylohelp.pylo-nodes
 ||# .pylo-nodes: Kernmodule für pylo-Features
 ||# Pylovara Universal fixer with Debug Logger
 ||
-||-Pylo-Module/pylooptions.txt
-||# Pylovara-FileManager-System/Pylo-Module/pylooptions.txt
+||-Pylo-Module/pylooptions.wiki-notes
+||# Pylovara-FileManager-System/Pylo-Module/pylooptions.wiki-notes
 ||# .pylo-nodes: Kernmodule für pylo-Features
 ||# Control - Steuerung - Navigation - Read
 ||
-||-Pylo-Module/Arbeitsblatt.txt
+||-Pylo-Module/pylo-module.wiki-notes
+||# Pylovara-FileManager-System/Pylo-Module/pylo-module.wiki-notes
 ||# Ast - Entwurf - Pylo-Module/ - .pylo-nodes
 |######################################################
 |

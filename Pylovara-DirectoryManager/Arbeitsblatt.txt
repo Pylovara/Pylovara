@@ -1,10 +1,11 @@
 |- Pylovara-DirectoryManager - Steuerzentrale für Pfade, Konfiguration und zentrale Verwaltung - Ordner - -notes nano-notes ( Mutter Kind Prinzip - fehlt die mutter gibts kein kind - Modular)
 |
+|- cli-hilfsausgabe.pv-conf       # Das kann das Herzstück für alles werden
 |- DirectoryCentrale.pv-dir       # Root-Index, PV-Routing, ENV-Loader
 |- Node-Central.pv-conf           # Liste & Steuerung aller aktiven *-nodes
 |- cli-hilfsausgabe.pv-conf       # Modularer CLI-Hilfeparser (--help usw.)
 |- P-Central.pv-conf              # Hauptsteuerung p-System
-|- pylo-Centra.pv-conf            # Hauptsteuerung pylo-System
+|- pylo-Central.pv-conf           # Hauptsteuerung pylo-System
 |- plva-layout.pv-conf            # Layoutzuordnung für TUI/GUIs
 |- PylovaraError.pv-conf          # Fehler-Handling-Regeln (z.B. bei Loggröße)
 

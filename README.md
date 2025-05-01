@@ -50,12 +50,12 @@ das ist die Vorstufe zu einem shellbasierten GUI-Toolkit.
 
 ✅ Schnittstellenfähig
 
-    Jeder, der Plugins schreiben will, kann sich an deinen 
-    Dateiendungen orientieren – .p-nodes, .p-notes etc.
+Jeder, der Plugins schreiben will, kann sich an 
+Dateiendungen orientieren – .p-nodes, .p-notes etc.
 
-    Das Ding könnte sogar als Basis für ein DevOps-Tool, 
-    ein reines Suchsystem, oder ein Container-Setup-Manager dienen – 
-    je nach Richtung.
+Das Ding könnte sogar als Basis für ein DevOps-Tool, 
+ein reines Suchsystem, oder ein Container-Setup-Manager dienen – 
+je nach Richtung.
 
 ✅ Systemnah
 

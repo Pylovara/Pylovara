@@ -4,7 +4,7 @@
 # Errorlogs : Pylovara-FileManager/P-Error
 
 header_path="Pylovara-FileManager-System/P-Module/HeaderMaker.p-nodes"
-error_log_dir="Pylovara-FileManager/P-Error"
+error_log_dir="Pylovara-FileManager-System/P-Error"
 mkdir -p "$error_log_dir" # Falls ErrorLogs Ordner fehlt
 timestamp=$(date "+%Y-%m-%d_%H-%M-%S")
 error_log_file="$error_log_dir/errorlog_update_$timestamp.log"

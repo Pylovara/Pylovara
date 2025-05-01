@@ -1,0 +1,15 @@
+#!/bin/bash
+# Absoluter Pfad:
+# Pylovara-FileManager-System/P-Search/aliasloader.p-nodes
+# load all lsp*.sh Skripte aus Unterordnern als Aliase.
+
+SEARCH_DIR="Pylovara-FileManager-Sytem/P-Search"
+
+find "$SEARCH_DIR" -type f -name 'lsp*.sh' | while read -r f; do
+  name="$(basename "$f" .sh | sed 's/^lsp//;s/.sh$//')"
+  if [[ -x "$f" ]]; then
+    alias "$name"="$f"
+  else
+    echo "[ WARNUNG ] Datei nicht ausführbar: $f" >&2
+  fi
+done

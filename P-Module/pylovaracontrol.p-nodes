@@ -1,0 +1,23 @@
+#!/bin/bash
+# Pylovara Toolkit – aliasreset, aliasloader und aliaslist zentral ausführen
+
+# Pfade (wenn nötig anpassen)
+modul_dir="Pylovara-FileManager-System/P-Module"
+
+echo "============================"
+echo " Pylovara Alias-Tool"
+echo "============================"
+
+# 1. Aliase entfernen
+echo -e "\n[1] Entferne alte Aliase:"
+bash "$modul_dir/aliasreset.p-nodes"
+
+# 2. Neue Aliase setzen
+echo -e "\n[2] Lade neue Aliase:"
+bash "$modul_dir/aliasloader.p-pnodes"
+
+# 3. Liste anzeigen
+echo -e "\n[3] Aktive Aliase:"
+bash "$modul_dir/p-nodes"
+
+echo -e "\n[✓] Pylovara-Werkzeuge abgeschlossen."

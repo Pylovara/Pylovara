@@ -29,6 +29,14 @@ Aus dem Unterordner werden einige abzweigungen folgen insbesondere Data und File
  es sinnfrei sein was anderes anzubieten weil es bei jedem funktioniert ..... ran an die arbeit 
 
 ############################################################################
+############################=-INWORK-=######################################
+
+- das *-node - *-notes system wird auf späterem verfeinertem boden Mutter
+- Komponenten darstellen .... danach wirds richtig finetuning 
+
+*-nano-nodes und *-nano-notes erweiterungs pack wird erst implementiert wenn Pylovara als eigenenständiges Terminal Hilfspacket und als Terminal Bassierter FileSystem mit modularen aber denoch fein einstellbaren Stellschrauben dank Modularer DNA Struktur.
+
+############################################################################
 
 Was das konkret heißt:
 

@@ -1,27 +1,31 @@
 #!/bin/bash
 # ##############################################################
-# ALIASLOADERWIKI - Prototyp-Suchmodul für Pylovara-Wiki-System
+# HeaderMakerWiki - Modul zur Kopfzeilenausgabe von .wiki-notes
 # Modulpfad   : Pylovara-FileManager-System/Wiki-Module/
-# Datei       : aliasloaderwiki.wiki-nodes
+# Datei       : HeaderMakerWiki.wiki-nodes
 # Typ         : .wiki-nodes
-# Zweck       : Durchsucht alle .wiki-notes nach Begriffen / Schlagwörtern
-# Bsp:        : alias pylovara='bash /pfad/zum/aliasloaderwiki.wiki-nodes'
-# Status      : Beta / Prototype
-# Parser-Modus: syswiki_search
+# Zweck       : Gibt strukturierte Kopfzeilen aus .wiki-notes-Dateien aus
+# Status      : Aktiv
+# Parser-Modus: show_headerwiki
+# Schlagworte : Header, Wiki, Struktur, Übersicht, Kopfzeile
 # ##############################################################
 
-SUCHBEGRIFF="$1"
-SUCHPFAD="${2:-$(pwd)}"
+DATEI="$1"
 
-echo "🔍 Starte SysWiki-Suche nach: '$SUCHBEGRIFF'"
-echo "📂 Suchpfad: $SUCHPFAD"
-echo "---------------------------------------------"
+if [[ -z "$DATEI" ]]; then
+    echo "❗ Bitte gib eine .wiki-notes Datei an."
+    echo "📌 Beispiel: ./HeaderMakerWiki.wiki-nodes P-Module/Modulname.wiki-notes"
+    exit 1
+fi
 
-find "$SUCHPFAD" -type f -name "*.wiki-notes" | while read -r datei; do
-    treffer=$(grep -i "$SUCHBEGRIFF" "$datei")
-    if [[ ! -z "$treffer" ]]; then
-        echo "📄 Datei: $datei"
-        echo "$treffer" | sed 's/^/   → /'
-        echo "---------------------------------------------"
-    fi
-done
+if [[ ! -f "$DATEI" ]]; then
+    echo "❌ Datei nicht gefunden: $DATEI"
+    exit 2
+fi
+
+HEADERENDE=$(grep -n "== Beschreibung ==" "$DATEI" | cut -d: -f1)
+HEADERENDE=$((HEADERENDE - 1))
+
+echo "📑 Header aus: $DATEI"
+echo "────────────────────────────────────────────"
+head -n "$HEADERENDE" "$DATEI"

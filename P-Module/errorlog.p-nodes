@@ -1,6 +1,8 @@
 #!/bin/bash
 # Absoluter Pfad:
-# Hyprland-Module/Pylovara-FileManager-System/P-Module/errorlog.p-nodes
+# Pylovara-FileManager-System/P-Module/errorlog.p-nodes
+# Error Logger - CleanSimpel - Port P-Error
+
 
 log_dir="Pylovara-FileManager-System/P-Error"
 timestamp=$(date +"%Y-%m-%d_%H%M")

@@ -1,8 +1,15 @@
+# Absoluter Pfad:
+# Pylovara-FileManager-System/ArbeitsblattLogik.txt
+# https://github.com/Pylovara/Pylovara-FileManager-System/
+# MAIN TREE - MAIN STAGE - MAIN WORK - MAIN INFOS 
+########################################################################
+FULL TREE :
+
 Pylovara-FileManager-System/ 
 |
 |- P-Search/ ---- .p-notes	-------- Trigger- und Notizdateien für das p-Modul (z. B. für ptree)
 |
-|-----------P-Module---------------
+|############### P-Module ################
 ||- P-Module/ ---- .p-nodes	-------- 
 ||#Kernmodule von p (also Shell-Knoten mit Logik)
 ||
@@ -38,15 +45,20 @@ Pylovara-FileManager-System/
 ||# Pylovara-FileManager-System/P-Module/update_ls-scripts.p-nodes
 ||# Errorlogs : Pylovara-FileManager/P-Error
 ||
+||-P-Module/show-help.p-nodes
+||# Pylovara-FileManager-System/P-Module/show_help.p-nodes
+||# Pylovara dynamic CLI-Hilfe aus cli-hilfsausgabe.pv.conf
+||# (nur [main]-Block, minimal parser, shell-only)
+||
 ||-P-Module/Arbeitsblatt.txt
 ||# Pylovara-FileManager-System/P-Module/Arbeitsblatt.txt
 ||# Ast - Entwurf - PModule/ - .p-nodes
-||---------------------------------
+|#########################################
 |
 |-P-Error/  ---- .p-logs	-------- Logausgaben aus p
 |-Pylo-Search/ - .pylo-notes ----- Alternative Suchdatenbank für Pylo-kompatible Shell-Kommandos
 |
-||----------Pylo-Module------------
+|########### Pylo-Module #################
 ||-Pylo.Module/ - .pylo-nodes ----- 
 ||# .pylo-nodes: Kernmodule für pylo-Features
 ||
@@ -67,12 +79,29 @@ Pylovara-FileManager-System/
 ||
 ||-Pylo-Module/Arbeitsblatt.txt
 ||# Ast - Entwurf - Pylo-Module/ - .pylo-nodes
-||---------------------------------
+|#########################################
 |
-|- Pylo-Error/ -- .pylo -logs ----- Logausgaben aus pylo
-|- PLVA-Layouts - .pv-objekt	 ----- Visuelle Layoutdateien, z. B. für Kitty-GUI, Menüs, etc.
-|- Pylovara-DirectoryManager.pv-dir - Steuerzentrale für Pfade, Konfiguration und zentrale Verwaltung Ordner 
+|-Pylo-Error/ -- .pylo -logs ----- Logausgaben aus pylo
+|-PLVA-Layouts - .pv-objekt	 ----- Visuelle Layoutdateien, z. B. für Kitty-GUI, Menüs, etc.
+|
+|######## Pylovara-DirectoryManager ########
+|############# Steuerzentrale ############## 
+||-cli-hilfsausgabe.pv.conf
+||# Pylovara-FileManager-System/Pylovara-DirectoryManager/cli-hilfsausgabe.pv.conf
+||# Herzstück für alles - Directory  
+||
+||-Arbeitsblatt.txt
+||# Pylovara-FileManager-System/Pylovara-DirectoryManager/Arbeitsblatt.txt
+||# Ast - Tree - Directory - Pylovara(.pv-conf)
+|#########################################
+|
 
+
+
+
+##########################################################################
+##########################################################################
+Mini Tree :
 Pylovara-FileManager-System/
 │
 ├─ P-Search/                → .p-notes: Trigger/Notizen für "p" (Tree/Navigator)

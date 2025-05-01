@@ -30,8 +30,8 @@ Aus dem Unterordner werden einige abzweigungen folgen insbesondere Data und File
 
 ############################################################################
 
-
 Was das konkret heißt:
+
 ✅ Portabel
 
 Jeder POSIX-kompatible Shell-Umgebung (Linux, BSD, sogar BusyBox, WSL…) 

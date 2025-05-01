@@ -24,6 +24,8 @@ Pylovara-FileManager-System/
 ||-P-Module/aliasloader.p-nodes
 ||# Pylovara-FileManager-System/P-Search/aliasloader.p-nodes
 ||# load all lsp*.sh Skripte aus Unterordnern als Aliase.
+||# Wichtig : p steuerung 
+||# pdownloads pp-f-s pmusik pcli pp-module pdev phypr pkde.org 
 ||
 ||-P-Module/clean_logs.p-nodes
 ||# Pylovara-FileManager-System/P-Module/clean_logs.p-nodes
@@ -49,6 +51,14 @@ Pylovara-FileManager-System/
 ||# Pylovara-FileManager-System/P-Module/show_help.p-nodes
 ||# Pylovara dynamic CLI-Hilfe aus cli-hilfsausgabe.pv.conf
 ||# (nur [main]-Block, minimal parser, shell-only)
+||# Wichtig:  show_help.p-nodes --help
+||# Pylovara – Modular CLI Help
+||#  --help       : Übersicht & Hilfe für alle Module anzeigen
+||#  --modules    : Alle aktiven Module und .p/.pylo/.nano-Nodes anzeigen
+||#  --dir        : Aktuelle Pfadzuweisungen aus pv-dir anzeigen
+||#  --info       : Systemstatus + Laufzeitumgebung
+||#  --reset      : Alle Aliase & Umgebungen auf Default zurücksetzen
+||
 ||
 ||-P-Module/Arbeitsblatt.txt
 ||# Pylovara-FileManager-System/P-Module/Arbeitsblatt.txt

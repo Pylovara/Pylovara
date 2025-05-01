@@ -8,6 +8,7 @@
 |- pylo-Central.pv-conf           # Hauptsteuerung pylo-System
 |- plva-layout.pv-conf            # Layoutzuordnung für TUI/GUIs
 |- PylovaraError.pv-conf          # Fehler-Handling-Regeln (z.B. bei Loggröße)
+├─ Pylovara-Wiki.pv-conf           # <<< NEU: Steuerung & Verlinkung deiner .wiki-notes/.wiki-nodes
 
 # Info 
 .pv-conf .pv-dir

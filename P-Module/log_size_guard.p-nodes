@@ -1,7 +1,7 @@
 #!/bin/bash
-# Pylovara-FileManager/P-Module/log_size_guard.p-nodes
-# Log größer als 1,2MB wird automatisch gelöscht
-# bei extremen Problemen puffer erhöhen !!!!
+# Pylovara-FileManager-System/P-Module/log_size_guard.p-nodes
+# Log größer als 1,2MB wird automatisch gelöscht 
+# bei extremen Problemen puffer erhöhen - Extrem please Buffer Higher !!!!
 
 log_dir="Pylovara-FileManager-System/P-Error"
 size_limit_kb=1228  # ca. 1,2MB

@@ -1,3 +1,35 @@
+|########## Pylovara-DirectoryManager ##################
+|############### Steuerzentrale ########################
+||-Pylovara-DirectoryManager/cli-hilfsausgabe.pv.conf
+||# Pylovara-FileManager-System/Pylovara-DirectoryManager/cli-hilfsausgabe.pv.conf
+||# Herzstück für alles - Directory  
+||
+||-Pylovara-DirectoryManager/Pylovara-Wiki.pv-conf
+||# Pylovara-Wiki.pv-conf (Mustervorlage)
+||# Zentrale Steuerdatei für alle internen .wiki-notes und .wiki-nodes
+||# Aufbau: <Modul/Pfad>:<Zugehörige Notizdatei>:<Optionaler Parser>  
+||
+||-pylovara-directorymanager.wiki-notes
+||# Pylovara-FileManager-System/Pylovara-DirectoryManager/pylovara-directorymanager.wiki-notes
+||# Ast - Tree - Directory - Pylovara(.pv-conf)
+||# Früher Arbeitsblatt.txt - jetzt wiki 
+|########################################################
+|
+
+
+
+
+
+
+
+
+
+
+###################################################################################
+###################################################################################
+
+Mini Tree Projekt Struktur :
+
 |- Pylovara-DirectoryManager - Steuerzentrale für Pfade, Konfiguration und zentrale Verwaltung - Ordner - -notes nano-notes ( Mutter Kind Prinzip - fehlt die mutter gibts kein kind - Modular)
 |
 |- cli-hilfsausgabe.pv-conf       # Das kann das Herzstück für alles werden
@@ -8,7 +40,7 @@
 |- pylo-Central.pv-conf           # Hauptsteuerung pylo-System
 |- plva-layout.pv-conf            # Layoutzuordnung für TUI/GUIs
 |- PylovaraError.pv-conf          # Fehler-Handling-Regeln (z.B. bei Loggröße)
-├─ Pylovara-Wiki.pv-conf           # <<< NEU: Steuerung & Verlinkung deiner .wiki-notes/.wiki-nodes
+├─ Pylovara-Wiki.pv-conf          # <<< NEU: Steuerung & Verlinkung deiner .wiki-notes/.wiki-nodes
 
 # Info 
 .pv-conf .pv-dir

@@ -1,0 +1,26 @@
+#!/bin/bash
+# ##############################################################
+# SYSWIKI - Pylovara Wiki-Suchsystem (alias: pylovara)
+# Modulpfad   : Pylovara-FileManager-System/Wiki-Module/
+# Datei       : aliasloaderwiki.wiki-nodes
+# Typ         : .wiki-nodes
+# Zweck       : Suche nach Schlagwörtern in *.wiki.notes Dateien
+# Status      : Aktiv
+# Parser-Modus: syswiki_search
+# ##############################################################
+
+SUCHBEGRIFF="${1:-pylovara}"
+SUCHPFAD="${2:-$(pwd)}"
+
+echo "🔍 Pylovara Wiki-Suche: '$SUCHBEGRIFF'"
+echo "📂 Durchsuche: $SUCHPFAD"
+echo "---------------------------------------------"
+
+find "$SUCHPFAD" -type f -name "*.wiki.notes" | while read -r datei; do
+    treffer=$(grep -i "$SUCHBEGRIFF" "$datei")
+    if [[ -n "$treffer" ]]; then
+        echo "📄 Datei: $datei"
+        echo "$treffer" | sed 's/^/   → /'
+        echo "---------------------------------------------"
+    fi
+done

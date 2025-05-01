@@ -1,23 +1,26 @@
-#############################################################
-# Modulpfad      : Pylovara-FileManager-System/P-Module/HeaderMaker.p-nodes
-# Wiki-Datei     : HeaderMaker.wiki-notes
-# Node-Typ       : .p-nodes
-# Zweck          : Ausgabe der Kopfstruktur von Trees
-# Zugehörigkeit  : [P-Module]
-# Status         : Aktiv
-# Parser-Modus   : show_header
-#############################################################
+#!/bin/bash
+# ##############################################################
+# ALIASLOADERWIKI - Prototyp-Suchmodul für Pylovara-Wiki-System
+# Modulpfad   : Pylovara-FileManager-System/Wiki-Module/
+# Datei       : aliasloaderwiki.wiki-nodes
+# Typ         : .wiki-nodes
+# Zweck       : Durchsucht alle .wiki-notes nach Begriffen / Schlagwörtern
+# Status      : Beta / Prototype
+# Parser-Modus: syswiki_search
+# ##############################################################
 
-== WIKI INFOS ==
-Name: HeaderMaker
-Modul: P-Module
-Pfad : P-Module/HeaderMaker.p-nodes
-Node : .p-nodes
+SUCHBEGRIFF="$1"
+SUCHPFAD="${2:-$(pwd)}"
 
-== Beschreibung ==
-Dieses Modul gibt Kopfzeilen von Tree-Nodes aus, um schnelle Übersichten
-über untergeordnete Elemente zu ermöglichen.
+echo "🔍 Starte SysWiki-Suche nach: '$SUCHBEGRIFF'"
+echo "📂 Suchpfad: $SUCHPFAD"
+echo "---------------------------------------------"
 
-== Verlinkungen ==
-↪ pv-dir/DirectoryCentrale
-↪ Log: P-Error/headermaker.log
+find "$SUCHPFAD" -type f -name "*.wiki-notes" | while read -r datei; do
+    treffer=$(grep -i "$SUCHBEGRIFF" "$datei")
+    if [[ ! -z "$treffer" ]]; then
+        echo "📄 Datei: $datei"
+        echo "$treffer" | sed 's/^/   → /'
+        echo "---------------------------------------------"
+    fi
+done

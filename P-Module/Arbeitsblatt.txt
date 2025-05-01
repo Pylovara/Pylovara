@@ -1,1 +1,13 @@
-
+P-Module/ ---- .p-nodes	-------- Kernmodule von p (also Shell-Knoten mit Logik)
+|
+|
+|  # Eingefügt - Implementiert - SchaltLogik
+|
+|-  HeaderMaker.p-nodes
+|-  aliaslist.p-nodes
+|-  aliasloader.p-nodes
+|-  clean_logs.p-nodes
+|-  errorlog.p-nodes
+|-  log_size_guard.p-nodes
+|-  pylovaracontrol.p-nodes
+|-  update_ls-scripts.p-nodes

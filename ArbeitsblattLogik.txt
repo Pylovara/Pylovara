@@ -1,7 +1,10 @@
 Pylovara-FileManager-System/ 
 |
 |- P-Search/ ---- .p-notes	-------- Trigger- und Notizdateien für das p-Modul (z. B. für ptree)
-|- P-Module/ ---- .p-nodes	-------- Kernmodule von p (also Shell-Knoten mit Logik)
+|
+|-----------P-Module---------------
+||- P-Module/ ---- .p-nodes	-------- 
+||#Kernmodule von p (also Shell-Knoten mit Logik)
 ||
 ||-P-Module/HeaderMaker.p-nodes
 ||# Pylovara-FileManager-System/P-Module/HeaderMaker.p-nodes
@@ -38,11 +41,34 @@ Pylovara-FileManager-System/
 ||-P-Module/Arbeitsblatt.txt
 ||# Pylovara-FileManager-System/P-Module/Arbeitsblatt.txt
 ||# Ast - Entwurf - PModule/ - .p-nodes
+||---------------------------------
 |
-|-P-Module/aliaslist.p-nodes
-|- P-Error/  ---- .p-logs	-------- Logausgaben aus p
-|- Pylo-Search/ - .pylo-notes ----- Alternative Suchdatenbank für Pylo-kompatible Shell-Kommandos
-|- Pylo.Module/ - .pylo-nodes ----- Module für pylo-Kommandos (play, open, copy, usw.)
+|-P-Error/  ---- .p-logs	-------- Logausgaben aus p
+|-Pylo-Search/ - .pylo-notes ----- Alternative Suchdatenbank für Pylo-kompatible Shell-Kommandos
+|
+||----------Pylo-Module------------
+||-Pylo.Module/ - .pylo-nodes ----- 
+||# .pylo-nodes: Kernmodule für pylo-Features
+||
+||-Pylo-Module/pylo.pylo-nodes
+||# /Pylovara-FileManager-System/Pylo-Module/pylo.pylo-nodes
+||# .pylo-nodes: Kernmodule für pylo-Features
+||# universal fixer & forwarder
+||
+||-Pylo-Module/pylohelp.pylo-nodes
+||# /Pylovara-FileManager-System/Pylo-Module/pylohelp.pylo-nodes
+||# .pylo-nodes: Kernmodule für pylo-Features
+||# Pylovara Universal fixer with Debug Logger
+||
+||-Pylo-Module/pylooptions.txt
+||# Pylovara-FileManager-System/Pylo-Module/pylooptions.txt
+||# .pylo-nodes: Kernmodule für pylo-Features
+||# Control - Steuerung - Navigation - Read
+||
+||-Pylo-Module/Arbeitsblatt.txt
+||# Ast - Entwurf - Pylo-Module/ - .pylo-nodes
+||---------------------------------
+|
 |- Pylo-Error/ -- .pylo -logs ----- Logausgaben aus pylo
 |- PLVA-Layouts - .pv-objekt	 ----- Visuelle Layoutdateien, z. B. für Kitty-GUI, Menüs, etc.
 |- Pylovara-DirectoryManager.pv-dir - Steuerzentrale für Pfade, Konfiguration und zentrale Verwaltung Ordner 

@@ -12,11 +12,12 @@
 SUCHBEGRIFF="${1:-pylovara}"
 SUCHPFAD="${2:-$(pwd)}"
 
-echo "🔍 Pylovara Wiki-Suche: '$SUCHBEGRIFF'"
-echo "📂 Durchsuche: $SUCHPFAD"
-echo "---------------------------------------------"
+echo "🔍 Pylovara Wiki-Suche nach: '$SUCHBEGRIFF'"
+echo "📁 Durchsuche Pfad: $SUCHPFAD"
+echo "============================================="
 
-find "$SUCHPFAD" -type f -name "*.wiki.notes" | while read -r datei; do
+# Finde alle relevanten *.wiki.notes Dateien
+find "$SUCHPFAD" -type f -name "*.wiki.notes" 2>/dev/null | while read -r datei; do
     treffer=$(grep -i "$SUCHBEGRIFF" "$datei")
     if [[ -n "$treffer" ]]; then
         echo "📄 Datei: $datei"

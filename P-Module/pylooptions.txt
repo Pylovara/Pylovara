@@ -1,0 +1,5 @@
+# Normale Benutzung (ohne Loggen):
+- pylo /usr/include/- ares_version.h SHELL | cat | rm &&
+
+# Entwickler-Modus (mit Logging):
+- pylohelp /usr/include/- ares_version.h SHELL | cat | rm &&

@@ -2,7 +2,7 @@
 |
 |-----------Pylovara-DirectoryManager-pv-dir-------------
 |
-|-DirectoryCentrale.p-conf
+|-DirectoryCentrale.pv-dir
 |
 |-P-Central.p-conf
 |
@@ -14,8 +14,11 @@
 |
 
 # Info 
-.p-conf update ... .p-conf 
+.p-conf .pv-dir
 
 werden verfasst und als zentrale Anweisung verstanden, 
 was hier drinnen steht, ist wie ein 
 Synthesizer Regler zu verstehen .
+
+.p-conf   # Regeln alle verzweigungen
+.p-pv-dir # Kombiniert .p-conf und regelt den output

@@ -1,0 +1,14 @@
+# Pylovara-Wiki.pv-conf (Mustervorlage)
+# Zentrale Steuerdatei für alle internen .wiki-notes und .wiki-nodes
+# Aufbau: <Modul/Pfad>:<Zugehörige Notizdatei>:<Optionaler Parser>  
+
+[P-Module]
+HeaderMakerWiki.p-nodes:P-Module/HeaderMaker.wiki-notes:show_wikiheader
+aliasloaderwiki.p-nodes:P-Module/aliasloader.wiki-notes:parse_aliases
+
+[Pylo-Module]
+pylo.pylo-nodes:Pylo-Module/pylo.wiki-notes:show_pylo
+pylohelp.pylo-nodes:Pylo-Module/pylohelp.wiki-notes:show_pylo_help
+
+[Pylovara-DirectoryManager]
+DirectoryCentrale.pv-dir:Pylovara-DirectoryManager/Directory.wiki-notes:dir_overview

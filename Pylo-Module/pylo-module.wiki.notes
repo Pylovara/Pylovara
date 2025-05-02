@@ -1,4 +1,3 @@
-#!/bin/bash
 |
 |################# Pylo-Module ##########################
 ||-Pylo.Module/ - .pylo-nodes ----- 
@@ -23,6 +22,15 @@
 ||-Pylo-Module/pylo-module.wiki-notes
 ||# Pylovara-FileManager-System/Pylo-Module/pylo-module.wiki-notes
 ||# Ast - Entwurf - Pylo-Module/ - .pylo-nodes
+||
+||-Pylo-Module/show-help.pylo-nodes
+||# Pylovara-FileManager-System/Pylo-Module/show-help.pylo-nodes
+||# Pylovara – Modular CLI Help
+||#  --help       : Übersicht & Hilfe für alle Module anzeigen
+||#  --modules    : Alle aktiven Module und .p/.pylo/.nano-Nodes anzeigen
+||#  --dir        : Aktuelle Pfadzuweisungen aus pv-dir anzeigen
+||#  --info       : Systemstatus + Laufzeitumgebung
+||#  --reset      : Alle Aliase & Umgebungen auf Default zurücksetzen
 |######################################################
 |
 

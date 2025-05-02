@@ -1,6 +1,9 @@
-############################################################################################
+##########################################################
 
-Pylovara-FileManager-System = Modular | SystemSteuerung | ZuckunftsTechnik | Rolling-Release
+Pylovara-FileManager-System = 
+Modular | SystemSteuerung | ZuckunftsTechnik | Rolling-Release
+
+##########################################################
 
 Daten Typen am beispiel * für andere kennungen :
 
@@ -24,6 +27,7 @@ Ergo :
  *.pylo-nodes
  *.pylo-notes
 
+##########################################################
 
 ----
 
@@ -43,7 +47,45 @@ NEXT STEP
  *.*-usb-nodes
  *.*-ubs-notes
 
-############################################################################################
+##########################################################
+
+FÜR PROFIS IN DIE BETA :
+
+- 1. Git-Clone im Home und Transfer in den Keller (/opt oder /Pylovara-Systemroot)
+
+- 1.1 In HOME klonen
+git clone https://github.com/Pylovara/Pylovara-FileManager-System.git
+
+- 1.2 Rootrechte für den Transfer vorbereiten
+sudo mkdir -p /Pylovara-FileManager-System
+
+- 1.3 Transfer: runter in den Keller (komplett)
+sudo mv Pylovara-FileManager-System /Pylovara-FileManager-System
+
+- 1.4 In den neuen Systempfad rein wechseln
+cd /Pylovara-FileManager-System
+
+- 2. Rechte setzen für alle ausführbaren Dateien und Notiz-Module
+
+- 2.1 Alle Skripte & .nodes/.notes/.conf rekursiv ausführbar machen
+sudo find . -type f \( \
+    -name "*.sh" -o \
+    -name "*.p-nodes" -o -name "*.p-notes" -o \
+    -name "*.pylo-nodes" -o -name "*.pylo-notes" -o \
+    -name "*.wiki-notes" -o -name "*.nano-nodes" -o \
+    -name "*.nano-notes" -o -name "*.pv-conf" -o -name "*.conf" \
+    \) -exec chmod +x {} \;
+
+
+- 3. Installer starten
+
+- 3.1 Ausführbar machen, falls noch nicht
+sudo chmod +x install.sh  # oder wie dein Installer heißt
+
+- 3.2 Installer starten
+sudo ./install.sh
+
+##########################################################
 
 
 Ich hab mich dazu entschieden das Pylovara kein $HOME Bastel Spielzeug werden 
@@ -66,8 +108,9 @@ Ich werde ein exaktes ebenbild für Hyprland User auf meine festplatte abspeiche
 es sinnfrei sein was anderes anzubieten weil es bei jedem funktioniert ..... ran an die arbeit 
 
 
+##########################################################
 
-############################=-INWORK-=######################################
+Vorbereitungen
 
 *.wiki.nodes - *.wiki.notes werden standartrisiert als direkter Projekt baum Überblick eingeführt,
 dadurch ermöglich es sich per direkt update funktion aus dem github repo die baustellenveränderungen
@@ -91,8 +134,10 @@ Pylovara wird auf längerer sicht das bessere system bieten das den besten filem
 - Selbt ArchUser werden auf längerer sicht in Pylovara-FileManager-System rein installieren
 - weil ihnen der umfang und die neue flexibilität schmackhafter scheint als Normal ....
 - das system wäre durch *.*-notes in der lage auf jeder treiber komponente einen manualen schalt steuer
-- einzustellen ..... 
-############################################################################
+- einzustellen .....
+
+ 
+##########################################################
 
 Was das konkret heißt:
 

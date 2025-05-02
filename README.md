@@ -1,8 +1,23 @@
-############################################################################################################
+#######################################################################################################
 
-Pyloavar-FileManager-System = Modular | SystemSteuerung | ZuckunftsTechnik | Rolling-Release
-         
-############################################################################################################
+Pylovara-FileManager-System = Modular | SystemSteuerung | ZuckunftsTechnik | Rolling-Release
+
+Daten Typen am beispiel * für andere kennungen :
+
+
+
+*.*-nodes             |
+*.*-notes             |
+*.*-conf              |
+*.*-pv.conf           |
+*.*-nano-nodes        |
+*.*-nano-notes        |
+*.*-micro-nodes       |
+*.*-micro-notes       |
+*.*-needles-input     |
+*.*-needles-output    |
+
+#######################################################################################################
 
 
 Ich hab mich dazu entschieden das Pylovara kein $HOME Bastel Spielzeug werden 

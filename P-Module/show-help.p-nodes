@@ -1,0 +1,76 @@
+#!/bin/bash
+# P-Module/show-help.p-nodes
+# Pylovara dynamic CLI-Hilfe aus cli-hilfsausgabe.pv.conf
+# Angepasst für Arch Linux, zsh, Hyprland, Kitty
+
+CONFIG="/Pylovara-FileManager-System/Pylovara-DirectoryManager/cli-hilfsausgabe.pv.conf"
+LOGDIR="/Pylovara-FileManager-System/P-Logs"
+LOGFILE="$LOGDIR/show-help.log"
+
+# Sicherstellen, dass Log-Verzeichnis existiert
+mkdir -p "$LOGDIR"
+
+# Funktion zum Parsen der INI-Datei
+parse_ini() {
+    local section="$1"
+    local key="$2"
+    if [[ -f "$CONFIG" ]]; then
+        awk -F' = ' "/\[$section\]/,/\[.*\]|^$/{if (\$1 == \"$key\") print \$2}" "$CONFIG" 2>>"$LOGFILE"
+    else
+        echo "[!] Konfigurationsdatei $CONFIG nicht gefunden" >&2
+        echo "[$(date '+%F %T')] [!] Konfigurationsdatei $CONFIG nicht gefunden" >>"$LOGFILE"
+        exit 1
+    fi
+}
+
+# Hauptlogik
+case "$1" in
+    --help)
+        echo "Pylovara Hilfe:"
+        echo "[$(date '+%F %T')] [INFO] Aufruf --help" >>"$LOGFILE"
+        parse_ini main --help
+        parse_ini main --modules
+        parse_ini main --dir
+        parse_ini main --info
+        parse_ini main --reset
+        parse_ini main --tutorial
+        ;;
+    --modules)
+        echo "Verfügbare Module:"
+        echo "[$(date '+%F %T')] [INFO] Aufruf --modules" >>"$LOGFILE"
+        parse_ini pylovara root_command
+        parse_ini p root
+        parse_ini pylo root
+        parse_ini nano root
+        parse_ini layout root
+        parse_ini wiki root
+        ;;
+    --dir)
+        echo "Pfadzuweisungen:"
+        echo "[$(date '+%F %T')] [INFO] Aufruf --dir" >>"$LOGFILE"
+        parse_ini main --dir
+        ;;
+    --info)
+        echo "Systemstatus:"
+        echo "[$(date '+%F %T')] [INFO] Aufruf --info" >>"$LOGFILE"
+        parse_ini main --info
+        ;;
+    --reset)
+        echo "Zurücksetzen der Umgebung..."
+        echo "[$(date '+%F %T')] [INFO] Aufruf --reset" >>"$LOGFILE"
+        parse_ini main --reset
+        ;;
+    --tutorial)
+        echo "Pylovara Tutorial:"
+        echo "[$(date '+%F %T')] [INFO] Aufruf --tutorial" >>"$LOGFILE"
+        echo "Beispiel 1: Navigiere zu Downloads"
+        echo "  p pdownloads"
+        echo "Beispiel 2: Öffne Musikdatei"
+        echo "  pylo Musik/song.mp3 vlc"
+        ;;
+    *)
+        echo "Unbekannte Option. Nutze --help für eine Übersicht."
+        echo "[$(date '+%F %T')] [ERROR] Unbekannte Option: $1" >>"$LOGFILE"
+        exit 1
+        ;;
+esac

@@ -21,7 +21,7 @@ Daten Typen am beispiel * für andere kennungen :
 
 
 Ich hab mich dazu entschieden das Pylovara kein $HOME Bastel Spielzeug werden 
-soll und das das projekt nur bei bestimmten voraussetzungen installierbar ist 
+soll und das das projekt eben nicht , nur bei bestimmten voraussetzungen installierbar bleibt
 
 Daher wird es Jetzt Komplett umgebaut und das Projekt Wird Umbenannt ....
 Aus den Hyprland-Module/ ordner wird Pylovara-FileManager-Sytem/

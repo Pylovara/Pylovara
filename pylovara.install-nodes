@@ -1,0 +1,144 @@
+#!/bin/bash
+LOGFILE="$HOME/.pylovara-install.log"
+echo "# Pylovara Install-Log – $(date)" > "$LOGFILE"
+sleep 4
+echo "#---------------------TimeForReadme----------------------#"
+sleep 2
+echo "#      https://github.com/Pylovara/Hyprland-Module/      #"
+sleep 0.3
+echo "#      ┏┓  ┓┏  ┓   ┏┓  ┓┏  ┏┓  ┳┓  ┏┓                    #"
+sleep 0.1
+echo "#      ┃┃  ┗┫  ┃   ┃┃  ┃┃  ┣┫  ┣┫  ┣┫                    #"
+sleep 0.1
+echo "#      ┣┛  ┗┛  ┗┛  ┗┛  ┗┛  ┛┗  ┛┗  ┛┗                    #"
+sleep 4
+echo "#          ┏┓•┓  ┳┳┓                                     #"
+sleep 0.1
+echo "#          ┣ ┓┃┏┓┃┃┃┏┓┏┓┏┓┏┓┏┓┏┓   p & pylo              #"
+sleep 0.1
+echo "#          ┻ ┗┗┗ ┛ ┗┗┻┛┗┗┻┗┫┗ ┛     SHELL                #"
+sleep 0.1
+echo "#                          ┛                             #"
+sleep 4
+echo "#        ┳┓┏┓┏┳┓┏┓  ┏┓┏┓┏┓┏━   ┏  ╻                      #"
+sleep 0.1
+echo "#        ┣┫┣  ┃ ┣┫  ┏┛┃┫┏┛┗┓  ━┫━━┃━━━━━━━━━━━━━━━━━━    #"
+sleep 0.1
+echo "#        ┻┛┗┛ ┻ ┛┗  ┗━┗┛┗━┗┛   ┗  ╹Pylovara-FileManager  #"
+sleep 0.1
+echo "#--------------------------------------------------------#"
+sleep 10
+echo "#      Used in the Shell for commands options infos      #"
+sleep 6
+echo "#              pylo         |           p                #"
+sleep 0.2
+echo "#---------------------------|----------------------------#"
+sleep 0.1
+echo "#           pylooptions     |        poptions            #"
+sleep 0.1
+echo "#--------------------------------------------------------#"
+sleep 20
+echo "#   >>>>>>>>>   Used prompt in the Shell   <<<<<<<<<<<<  #"
+sleep 6
+echo "#   SHELL |                Beispiel                      #"
+sleep 0.2
+echo "#---------|----------------------------------------------#"
+sleep 0.2
+echo "#    p    | pdownloads pmusik phypr ptwitch puserscripts #"
+sleep 0.2
+echo "#    p    | phyprland  pdokumente ptorbrowser ppictures  #"
+sleep 0.2
+echo "#---------|----------------------------------------------#"
+sleep 20
+echo "#   SHELL | pylo > Directory > Data > SHELL > (&& SHELL) #"
+sleep 6
+echo "#---------|----------------------------------------------#"
+sleep 0.5
+echo "#   pylo  | pylo Downloads/- Readme.md cat               #"
+sleep 0.1
+echo "#   pylo  | pylo Musik/- data.mp3 vlc                    #"
+sleep 0.1
+echo "#   pylo  | pylo Video/- MyVideo.mp4 mpv                 #"
+sleep 0.1
+echo "#   pylo  | pylo Downloads/- Scripts.sh chmod +x         #"
+sleep 0.1
+echo "#   pylo  | pylo Downloads/- WatEver.zip cp ~/home       #"
+sleep 0.1
+echo "#--------------------------------------------------------#"
+sleep 4
+echo "#    pylovara | searcht all*.wiki-notes ON               #"
+sleep 4
+echo "#    pylovara YouSearch(.wiki-notes)                     #"
+sleep 4
+echo "#---------|----------------------------------------------#"
+sleep 20
+echo "#   SHELL | pylo > Directory > Data > SHELL > (&& SHELL) #"
+sleep 6
+echo "#---------|----------------------------------------------#"
+sleep 0.5
+echo "#   pylo  | pylo Downloads/- Readme.md cat               #"
+sleep 0.1
+echo "#   pylo  | pylo Musik/- data.mp3 vlc                    #"
+sleep 0.1
+echo "#   pylo  | pylo Video/- MyVideo.mp4 mpv                 #"
+sleep 0.1
+echo "#   pylo  | pylo Downloads/- Scripts.sh chmod +x         #"
+sleep 0.1
+echo "#   pylo  | pylo Downloads/- WatEver.zip cp ~/home       #"
+sleep 0.1
+echo "#--------------------------------------------------------#"
+sleep 10
+echo "#         Pylovara is from User for User Maket           #"
+sleep 6
+echo "#    Used Easy - Speed Navigations - Better Control      #"
+sleep 6
+echo "#     Do yourself a favor and use a proper shell...      #"
+sleep 0.5
+echo "#       My recommendation: Kitty or Alacritty.           #"
+echo "#        sudo pacman -S kitty other Alacritty            #"
+echo "#--------------Sudo Install Prozess Ready ---------------#"
+echo "#--------------Joint to better System ;-) ---------------#"
+sleep 20
+
+echo "# ##############################################################"
+echo "# INSTALL-SCRIPT FOR ALL .NODES IN Pylovara-FileManager-System"
+echo "# Zweck : Macht alle .p-nodes, .pylo-nodes & .wiki-nodes systemweit ausführbar"
+echo "# Motto : from User, for User – Admin mit Ehre und Struktur!"
+echo "# ##############################################################"
+sleep 20
+echo "Ein gutes System erkennt man nicht an seinem Umfang, sondern an seinem Charakter."
+sleep 8
+echo "📦 Starte Installation aller .nodes-Dateien im Pylovara-System..."
+echo "------------------------------------------------------------"
+echo "Hinweis: Benötigt sudo-Rechte, falls Pfade systemweit verlinkt werden sollen."
+echo ""
+
+# Sudo Check Optional
+if [[ $EUID -ne 0 ]]; then
+    echo "Bitte als root oder mit sudo starten!" >&2
+    exit 1
+fi
+
+# Root des Systems (aktuell ausführen aus Hauptverzeichnis oder direkt anpassen)
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Zieltypen
+declare -a node_types=("p-nodes" "pylo-nodes" "wiki-nodes" "p-notes" "pylo-notes" "wiki-notes "nano-nodes" "nano-notes" "" "micro-control-nodes")
+
+# Durchsuche rekursiv das System
+for node_type in "${node_types[@]}"; do
+    echo "🔍 Suche nach *.$node_type Dateien..."
+    find "$BASE_DIR" -type f -name "*.${node_type}" | while read -r node_file; do
+        echo "🛠 Setze ausführbar: $node_file"
+        chmod +x "$node_file"
+    done
+done
+
+echo ""
+echo "✅ Alle relevanten Knoten wurden mit Ausführungsrechten versehen."
+echo "------------------------------------------------------------"
+echo "💡 Tipp: Füge 'pylovaracontrol.p-nodes' zu deinem Shell-Init hinzu für Schnellstart."
+echo ""
+echo "🎉 Pylovara ist jetzt bereit. Modular. Offen. Shellbasiert. Ehrlich."
+echo " » from User, for User «"
+echo ""

@@ -1,0 +1,28 @@
+# Der Fokus liegt auf Nano-Module/ 
+# *.nano-nodes als fein granulare, erweiterbare Einstellungen, die auf den „groben“ *.p-nodes, *.pylo-nodes und *.wiki-nodes aufbauen .
+
+# 1. Ziel des Skripts für Nano-Module
+
+# Das Skript show-help.nano-nodes soll die CLI-Hilfe für das nano-Modul bereitstellen, ähnlich wie die bisherigen Skripte für p, pylo und wiki. 
+# Es wird die [nano]-Sektion aus cli-hilfsausgabe.pv.conf parsen und die spezifischen Funktionen von *.nano-nodes unterstützen, nämlich:
+
+#    --run: Ausführen einer einzelnen Nano-Aktion (z. B. nano log_size_guard).
+#    --list: Auflisten verfügbarer Nano-Module.
+
+# Da *.nano-nodes laut der fein granularen Einstellungsmöglichkeiten ermöglicht : 
+# „groben“ Hauptnodes (*.p-nodes, *.pylo-nodes, *.wiki-nodes) 
+
+# 2. Rolle von *.nano-nodes
+
+# Analogie mit einem Synthesizer :
+
+#    Grobe Einstellungen (*.p-nodes, *.pylo-nodes, *.wiki-nodes): Diese sind wie die Hauptregler eines Synthesizers, 
+#    die das Gesamtbild steuern (z. B. Navigation mit p pdownloads, Dateioperationen mit pylo Musik/song.mp3 vlc, Suche mit wiki --search infowiki).
+#    Feine Einstellungen (*.nano-nodes): Diese sind wie die Feinregler, die spezifische, präzise Anpassungen ermöglichen 
+#    (z. B. Log-Verwaltung mit log_size_guard, Alias-Optimierung, oder zukünftige Hardware-Interaktionen wie *.audio-nodes).
+
+# Das Skript wird diese Philosophie widerspiegeln, indem es *.nano-nodes als präzise, erweiterbare Aktionen präsentiert, 
+# die die Hauptnodes ergänzen.
+
+# 3. Platzierung: Nano-Module/show-help.nano-nodes
+# Laut pylovara-filemanager-system.wiki-notes und DatenTypen.wiki-notes sind *.nano-nodes aktive, ausführbare Module, die in einem eigenen Verzeichnis (Nano-Module/) liegen. Da du den Ordner /Pylovara-FileManager-System/Nano-Module/ erstellt hast, gehört das Skript nach /Pylovara-FileManager-System/Nano-Module/show-help.nano-nodes. Es wird automatisch von SystemControl.pv-conf gesourced, da dieses Skript alle *.nano-nodes findet:

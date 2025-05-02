@@ -68,15 +68,15 @@ Aus dem Unterordner werden einige abzweigungen folgen insbesondere Data und File
 ############################################################################
 ############################=-INWORK-=######################################
 
-# *-nodes - *-notes system wird auf späterer sicht verfeinert , der  boden wird Mutter und Kind
-# Komponenten darstellen .... danach wirds richtig finetuning *.-nano - *.-micro - *.-needles
+*-nodes - *-notes system wird auf späterer sicht verfeinert , der  boden wird Mutter und Kind
+Komponenten darstellen .... danach wirds richtig finetuning *.-nano - *.-micro - *.-needles
 
-# *.wiki.nodes - *.wiki.notes werden standartrisiert als direkter Projekt baum Überblick eingeführt,
-# dadurch ermöglich es sich per direkt update funktion aus dem github repo die baustellenveränderungen
-# wie auch daten veränderungen anzeigt , innerhalb der shell . Gut ansteuerbar mit allen Vim User oder
-# nano wie cat user ..... der filemanager wird jedoch direkt mit dem repo verknüpft und alle updates
-# erfolgen über git an der quelle (rolling-release) . Das abstellen von repo updates wird in zuckunft
-# natürlich per note abstimmbar bleiben oder in der zentral Directory wo alle .pv-conf und .nonf rumliegen
+*.wiki.nodes - *.wiki.notes werden standartrisiert als direkter Projekt baum Überblick eingeführt,
+dadurch ermöglich es sich per direkt update funktion aus dem github repo die baustellenveränderungen
+wie auch daten veränderungen anzeigt , innerhalb der shell . Gut ansteuerbar mit allen Vim User oder
+nano wie cat user ..... der filemanager wird jedoch direkt mit dem repo verknüpft und alle updates
+erfolgen über git an der quelle (rolling-release) . Das abstellen von repo updates wird in zuckunft
+natürlich per note abstimmbar bleiben oder in der zentral Directory wo alle .pv-conf und .nonf rumliegen
 
 WICHTIGER Schritt : Einen installer vorbereiten der nach dem der installer ausgeführt wird per sudo rechten
 den gesamten ordner eins zu eins in das grundverzeichnis zero legt ..... von dort aus die ganzen datentypen 

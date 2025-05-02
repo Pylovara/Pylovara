@@ -1,7 +1,7 @@
 #!/bin/bash
 # Nano-Module/show-help.nano-nodes
 # Pylovara dynamic CLI-Hilfe für Nano-Modul aus cli-hilfsausgabe.pv.conf
-# Angepasst für Arch Linux ... first step
+# Angepasst für Arch Linux, zsh, Hyprland, Kitty
 
 CONFIG="/Pylovara-FileManager-System/Pylovara-DirectoryManager/cli-hilfsausgabe.pv.conf"
 LOGDIR="/Pylovara-FileManager-System/P-Logs"
@@ -49,6 +49,8 @@ case "$1" in
         echo "  nano --run log_size_guard"
         echo "Beispiel 2: Liste alle verfügbaren Nano-Module"
         echo "  nano --list"
+        echo "Beispiel 3: Optimiere Aliase (zukünftige Funktion)"
+        echo "  nano --run alias_optimizer"
         echo "Hinweis: *.nano-nodes sind feine Einstellungen, die auf Hauptnodes (p, pylo, wiki) aufbauen."
         ;;
     *)

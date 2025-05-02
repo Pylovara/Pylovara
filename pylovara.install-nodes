@@ -1,6 +1,4 @@
 #!/bin/bash
-LOGFILE="$HOME/.pylovara-install.log"
-echo "# Pylovara Install-Log – $(date)" > "$LOGFILE"
 sleep 4
 echo "#---------------------TimeForReadme----------------------#"
 sleep 2
@@ -108,17 +106,6 @@ echo "# ##############################################################"
 sleep 20
 echo "Ein gutes System erkennt man nicht an seinem Umfang, sondern an seinem Charakter."
 sleep 8
-echo "📦 Starte Installation aller .nodes-Dateien im Pylovara-System..."
-echo "------------------------------------------------------------"
-echo "Hinweis: Benötigt sudo-Rechte, falls Pfade systemweit verlinkt werden sollen."
-echo ""
-
-# Sudo Check Optional
-if [[ $EUID -ne 0 ]]; then
-    echo "Bitte als root oder mit sudo starten!" >&2
-    exit 1
-fi
-
 # Root des Systems (aktuell ausführen aus Hauptverzeichnis oder direkt anpassen)
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 

@@ -1,0 +1,64 @@
+##########################################################
+# Pylovara-FileManager-System – Modulstruktur Übersicht
+# Status: Rolling-Release | Modular | Rootbasiert | Zukunftsfähig
+# Diese Dateiendungen sind *konsequent durch das System auffindbar*.
+# Geplant als autarke Steuerinstanzen – entkoppelt von klassischen Unix-Konventionen
+##########################################################
+
+# =========================
+# 1. Kern-Modultypen (aktiv genutzt)
+# =========================
+
+*.p-nodes            # Hauptmodule für Shell-Funktionalität
+*.pylo-nodes         # Erweiterte Pylo-Logik-Module
+*.wiki-nodes         # Wiki-Funktion, Header-Systeme, Parser
+*.nano-nodes         # Mikro-Steuerungen, Einzelaktionen
+*.micro-nodes        # Ultra-Kompaktmodule (in Planung)
+*.pv-conf            # Primäre Konfigurationsscripte für das System
+*.conf               # Allgemeine Einstellungen
+*.notes              # Standard-Notizen (Meta oder Dokumentation)
+*.pylo-notes         # Spezifische Notizen zu Pylo-Modulen
+*.wiki.notes         # Wiki-Inhalte zu einzelnen Modulen
+*.nano-notes         # Mikro-Dokumentation oder Tipps
+*.micro-notes        # Zukünftige ultra-kompakte Meta-Infos
+*.needles-input      # Eingaberelevante Modultrigger (Zukunft)
+*.needles-output     # Ausgabesteuernde Kontrollscripte (Zukunft)
+
+# =========================
+# 2. Zukünftige Hardware-Interaktionsmodule (Reserviert)
+# =========================
+
+*.audio-nodes        # Audio-Devices, Pipes, Routing
+*.audio-notes        # Hinweise zur Audiosteuerung
+*.gpu-nodes          # GPU-basierte Steuerdateien
+*.gpu-notes          # Notizen zur GPU-Verwaltung
+*.cpu-nodes          # CPU-nahe Module oder Trigger
+*.cpu-notes          # Logs, Steuerinformationen zur CPU
+*.usb-nodes          # USB-Port-Bindung, Geräteinitialisierung
+*.usb-notes          # Notizen zur USB-Analyse oder Initialisierung
+*.mouse-nodes        # Zeiger- und Mauseinstellungen
+*.mouse-notes        # Kommentare zu Mouse-Handling
+*.camera-nodes       # Webcam- oder Bilderfassungs-Module
+*.camera-notes       # Infos zu Kamera/Video/Streams
+*.input-nodes        # Eingabequellen (Tastatur, MIDI etc.)
+*.input-notes        # Hinweise und Logs zu Eingabegeräten
+
+# =========================
+# 3. Verwendungshinweis
+# =========================
+
+# Diese Endungen sind vollständig frei wählbar innerhalb Pylovara,
+# da sie in keinem POSIX/Unix-Standard vorkommen und daher
+# *namensrechtlich wie funktional* systemweit kollisionsfrei nutzbar sind.
+#
+# Ziel ist eine **vollständige Sourcenavigation per Dateiendung**, z.B.:
+#
+#    find /Pylovara-FileManager-System -type f -name "*.pylo-nodes" -exec ...
+#
+# Damit wird das System langfristig **nicht von Verzeichnisstruktur,
+# sondern von Namensstruktur und Endung** steuerbar.
+
+##########################################################
+# Pylovara – Struktur für zukünftige Kellerarchitekturen
+# „Alles was modular ist, kann auch modular bleiben.“
+##########################################################

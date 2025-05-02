@@ -1,8 +1,40 @@
 #!/bin/bash
-#Pylovara Since 2025© https://github.com/Pylovara #
-#https://github.com/Pylovara/Pylovara-FileManager-Sytem
+# Pylovara - .p-notes Standard
+# Datei: p.gnupg.p-notes
+# Aufrufbar durch: pgnupg
+# Meta: Kategorie=Security, Tag=GPG, Modul=GnuPG, Autor=Bandino, Typ=Notiz+Startpunkt
 
+# ==== Header / Info ====
 source /Pylovara-FileManager-System/P-Module/HeaderMaker.p-nodes
-cd ~/.gnupg || exit 1
-tree_output=true
-show_header
+show_header "Pylovara: GnuPG Node"
+
+# ==== Informationen zum Modul ====
+echo "📁 Diese Node behandelt GnuPG-relevante Befehle & Speicherorte."
+echo "📂 Verzeichnis: ~/.gnupg"
+echo "🔐 Verschlüsselung, Signatur, Schlüsselpaar-Verwaltung"
+
+# ==== Grundbefehle (Kommentiert als Referenz) ====
+cat <<'EOF'
+
+🎯 BEFEHLE (ausführbar durch Copy-Paste oder interaktive später):
+
+  🔑 Schlüssel auflisten:
+      gpg --list-keys
+
+  🔄 Öffentlichen Schlüssel importieren:
+      gpg --import pubkey.asc
+
+  📤 Eigenen öffentlichen Schlüssel exportieren:
+      gpg --export -a "Benutzername" > pubkey.asc
+
+  🔐 GPG-Schlüssel erstellen (full):
+      gpg --full-generate-key
+
+  🧪 GPG-Agent neu starten:
+      gpgconf --kill gpg-agent && gpgconf --launch gpg-agent
+
+EOF
+
+# ==== Optional: Direktausführung (später via Menü integrierbar) ====
+# echo "GPG-Schlüssel anzeigen:"
+# gpg --list-keys

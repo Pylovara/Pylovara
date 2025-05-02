@@ -4,18 +4,22 @@ Pylovara-FileManager-System = Modular | SystemSteuerung | ZuckunftsTechnik | Rol
 
 Daten Typen am beispiel * für andere kennungen :
 
-
+---
 
 *.*-nodes             |
 *.*-notes             |
 *.*-conf              |
 *.*-pv.conf           |
+*.*-wiki-nodes        |
+*-*-wiki.notes        |
 *.*-nano-nodes        |
 *.*-nano-notes        |
 *.*-micro-nodes       |
 *.*-micro-notes       |
 *.*-needles-input     |
 *.*-needles-output    |
+
+---
 
 #######################################################################################################
 

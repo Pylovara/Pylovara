@@ -6,42 +6,42 @@ Daten Typen am beispiel * für andere kennungen :
 
 ----
 IN WORKING
-*.*-nodes             |
-*.*-notes             |
-*.*-conf              |
-*.*-pv.conf           |
-*.*-wiki-nodes        |
-*.*-wiki.notes        |
-*.*-nano-nodes        |
-*.*-nano-notes        |
-*.*-micro-nodes       |
-*.*-micro-notes       |
-*.*-needles-input     |
-*.*-needles-output    |
+ *.*-nodes             |
+ *.*-notes             |
+ *.*-conf              |
+ *.*-pv.conf           |
+ *.*-wiki-nodes        |
+ *.*-wiki.notes        |
+ *.*-nano-nodes        |
+ *.*-nano-notes        |
+ *.*-micro-nodes       |
+ *.*-micro-notes       |
+ *.*-needles-input     |
+ *.*-needles-output    |
 
-ps :
+Ergo :
 
-*.pylo-nodes
-*.pylo-notes
+ *.pylo-nodes
+ *.pylo-notes
 
 
 ----
 
 NEXT STEP 
-*.*-audio-nodes
-*.*-audio-notes
-*.*-gpu-nodes
-*.*-gpu-notes
-*.*-input-nodes
-*.*-input-notes
-*.*-camera-nodes
-*.*-camera-notes
-*.*-cpu-nodes
-*.*-cpu-notes
-*.*-mouse-nodes
-*.*-mouse-notes
-*.*-usb-nodes
-*.*-ubs-notes
+ *.*-audio-nodes
+ *.*-audio-notes
+ *.*-gpu-nodes
+ *.*-gpu-notes
+ *.*-input-nodes
+ *.*-input-notes
+ *.*-camera-nodes
+ *.*-camera-notes
+ *.*-cpu-nodes
+ *.*-cpu-notes
+ *.*-mouse-nodes
+ *.*-mouse-notes
+ *.*-usb-nodes
+ *.*-ubs-notes
 
 ############################################################################################
 
@@ -53,23 +53,21 @@ Daher wird es Jetzt Komplett umgebaut und das Projekt Wird Umbenannt ....
 Aus den Hyprland-Module/ ordner wird Pylovara-FileManager-Sytem/
 
 Aus dem Unterordner werden einige abzweigungen folgen insbesondere Data und File
- .confs um ein sauberes bild zu gewehrleisten . Auf c/c++ wird weitläufig verzichtet
- und andere hochsprachen werden grundsätzlich abgelehnt ......
+.confs um ein sauberes bild zu gewehrleisten . Auf c/c++ wird weitläufig verzichtet
+und andere hochsprachen werden grundsätzlich abgelehnt ......
 
- Pylovara soll So nah wie nur möglich am Blech bleiben damit es für alle und jeden funktionieren
- kann ....
- Vorteile das damit auch verschiedene packet Manager definiert werden können für abhängikeiten...
- Der umbau wird sich in grenzen halten , den das grundprinzip steht schon fest , die funktionen 
- bleiben gleich und können ausgebautwerden in späteren tagen sobald der laden einsatz bereit ist 
+Pylovara soll So nah wie nur möglich am Blech bleiben damit es für alle und jeden funktionieren
+kann ....
+Vorteile das damit auch verschiedene packet Manager definiert werden können für abhängikeiten...
+Der umbau wird sich in grenzen halten , den das grundprinzip steht schon fest , die funktionen 
+bleiben gleich und können ausgebautwerden in späteren tagen sobald der laden einsatz bereit ist 
 
- Ich werde ein exaktes ebenbild für Hyprland User auf meine festplatte abspeichern aber nach dem umbau wird
- es sinnfrei sein was anderes anzubieten weil es bei jedem funktioniert ..... ran an die arbeit 
+Ich werde ein exaktes ebenbild für Hyprland User auf meine festplatte abspeichern aber nach dem umbau wird
+es sinnfrei sein was anderes anzubieten weil es bei jedem funktioniert ..... ran an die arbeit 
 
-############################################################################
+
+
 ############################=-INWORK-=######################################
-
-*-nodes - *-notes system wird auf späterer sicht verfeinert , der  boden wird Mutter und Kind
-Komponenten darstellen .... danach wirds richtig finetuning *.-nano - *.-micro - *.-needles
 
 *.wiki.nodes - *.wiki.notes werden standartrisiert als direkter Projekt baum Überblick eingeführt,
 dadurch ermöglich es sich per direkt update funktion aus dem github repo die baustellenveränderungen

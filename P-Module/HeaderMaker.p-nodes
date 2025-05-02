@@ -42,7 +42,7 @@ show_header() {
   last_file=$(basename "$last_file")
   center_line=$(printf "%-60s" "last handling 📂|> $last_file")
 
-  echo -e "${color}╭──|Pylovara-FileManager|Rolling-Release|"
+  echo -e "${color}╭──|Pylovara-FileManager-System | Rolling-Release |"
   echo -e "${color}| Volume: $volume_raw |Pfad: $current_path ${NC}"
   echo -e "${color}│ $center_line${NC}"
   echo -e "${color}╰──────────────────────────────────────────────────────────${NC}"

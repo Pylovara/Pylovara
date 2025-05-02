@@ -1,13 +1,31 @@
-###############################################################################
+#################################################################################################################################################
 
-    ┳┓  •┓ ┓    ┓ ┏    ┓                                
-    ┣┫┓┏┓┃┏┫┏┓┏┓┃┃┃┏┓┏┓┃┏                               
-    ┻┛┗┻┗┗┗┻┗ ┛ ┗┻┛┗┻┛ ┛┗                               
-                                                    
-    ┏┓  ┓            ┏┓┳┓  ┓┏┓        ┓  ┳┓•            
-    ┃┃┓┏┃┏┓┓┏┏┓┏┓┏┓  ┃┃┃┃  ┃┫ ┏┓┏┓┏┓┏┓┃  ┃┃┓┏┓┏┓┏╋┏┓┏┓┓┏
-    ┣┛┗┫┗┗┛┗┛┗┻┛ ┗┻  ┗┛┛┗  ┛┗┛┗ ┛ ┛┗┗ ┗  ┻┛┗┛ ┗ ┗┗┗┛┛ ┗┫
-       ┛                                               ┛
+
+ ______           _________ _        ______   _______  _______             _______  _______  _        _______                            
+(  ___ \ |\     /|\__   __/( \      (  __  \ (  ____ \(  ____ )  |\     /|(  ___  )(  ____ )| \    /\(  ____ \                           
+| (   ) )| )   ( |   ) (   | (      | (  \  )| (    \/| (    )|  | )   ( || (   ) || (    )||  \  / /| (    \/                           
+| (__/ / | |   | |   | |   | |      | |   ) || (__    | (____)|  | | _ | || |   | || (____)||  (_/ / | (_____                            
+|  __ (  | |   | |   | |   | |      | |   | ||  __)   |     __)  | |( )| || |   | ||     __)|   _ (  (_____  )                           
+| (  \ \ | |   | |   | |   | |      | |   ) || (      | (\ (     | || || || |   | || (\ (   |  ( \ \       ) |                           
+| )___) )| (___) |___) (___| (____/\| (__/  )| (____/\| ) \ \__  | () () || (___) || ) \ \__|  /  \ \/\____) |                           
+|/_\___/ (_______)\_______/(_______/(______/ (_______/|/___\__/ _(_______)(_______)|/ _ \__/|_/    \/\_______)                           
+(  ____ )|\     /|( \      (  ___  )|\     /|(  ___  )(  ____ )(  ___  )    (  ___  )( (    /|                                           
+| (    )|( \   / )| (      | (   ) || )   ( || (   ) || (    )|| (   ) |    | (   ) ||  \  ( |                                           
+| (____)| \ (_) / | |      | |   | || |   | || (___) || (____)|| (___) |    | |   | ||   \ | |                                           
+|  _____)  \   /  | |      | |   | |( (   ) )|  ___  ||     __)|  ___  |    | |   | || (\ \) |                                           
+| (         ) (   | |      | |   | | \ \_/ / | (   ) || (\ (   | (   ) |    | |   | || | \   |                                           
+| )         | |   | (____/\| (___) |  \   /  | )   ( || ) \ \__| )   ( |    | (___) || )  \  |                                           
+|/        __\_/__ (_______/(_______) __\_/__ |/     \||/ __\__/|/_____\|__ _(_______)|/____)_)______ _________ _______  _______          
+| \    /\(  ____ \(  ____ )( (    /|(  ____ \( \        (  __  \ \__   __/(  ____ )(  ____ \(  ____ \\__   __/(  ___  )(  ____ )|\     /|
+|  \  / /| (    \/| (    )||  \  ( || (    \/| (        | (  \  )   ) (   | (    )|| (    \/| (    \/   ) (   | (   ) || (    )|( \   / )
+|  (_/ / | (__    | (____)||   \ | || (__    | |        | |   ) |   | |   | (____)|| (__    | |         | |   | |   | || (____)| \ (_) / 
+|   _ (  |  __)   |     __)| (\ \) ||  __)   | |        | |   | |   | |   |     __)|  __)   | |         | |   | |   | ||     __)  \   /  
+|  ( \ \ | (      | (\ (   | | \   || (      | |        | |   ) |   | |   | (\ (   | (      | |         | |   | |   | || (\ (      ) (   
+|  /  \ \| (____/\| ) \ \__| )  \  || (____/\| (____/\  | (__/  )___) (___| ) \ \__| (____/\| (____/\   | |   | (___) || ) \ \__   | |   
+|_/    \/(_______/|/   \__/|/    )_)(_______/(_______/  (______/ \_______/|/   \__/(_______/(_______/   )_(   (_______)|/   \__/   \_/   
+                                                                                                                                         
+#################################################################################################################################################
+
 
 Ich hab mich dazu entschieden das Pylovara kein $HOME Bastel Spielzeug werden 
 soll und das das projekt nur bei bestimmten voraussetzungen installierbar ist 
@@ -31,11 +49,32 @@ Aus dem Unterordner werden einige abzweigungen folgen insbesondere Data und File
 ############################################################################
 ############################=-INWORK-=######################################
 
-- das *-node - *-notes system wird auf späterem verfeinertem boden Mutter
-- Komponenten darstellen .... danach wirds richtig finetuning 
+# *-nodes - *-notes system wird auf späterer sicht verfeinert , der  boden wird Mutter und Kind
+# Komponenten darstellen .... danach wirds richtig finetuning *.-nano - *.-micro - *.-needles
 
-*-nano-nodes und *-nano-notes erweiterungs pack wird erst implementiert wenn Pylovara als eigenenständiges Terminal Hilfspacket und als Terminal Bassierter FileSystem mit modularen aber denoch fein einstellbaren Stellschrauben dank Modularer DNA Struktur.
+# *.wiki.nodes - *.wiki.notes werden standartrisiert als direkter Projekt baum Überblick eingeführt,
+# dadurch ermöglich es sich per direkt update funktion aus dem github repo die baustellenveränderungen
+# wie auch daten veränderungen anzeigt , innerhalb der shell . Gut ansteuerbar mit allen Vim User oder
+# nano wie cat user ..... der filemanager wird jedoch direkt mit dem repo verknüpft und alle updates
+# erfolgen über git an der quelle (rolling-release) . Das abstellen von repo updates wird in zuckunft
+# natürlich per note abstimmbar bleiben oder in der zentral Directory wo alle .pv-conf und .nonf rumliegen
 
+WICHTIGER Schritt : Einen installer vorbereiten der nach dem der installer ausgeführt wird per sudo rechten
+den gesamten ordner eins zu eins in das grundverzeichnis zero legt ..... von dort aus die ganzen datentypen 
+aktivieren und einen bind garantieren der von der zentral Directory aus ,direkt in die gerade benutze umgebung
+ob bash oder zsh , beides auf anhieb kompaktibel ....
+
+Da alles auf bash basieren wird sollten alle bash basierten betriebsystemen in der lage sein per tty zugriff 
+vor einem desktop schon per tty in der lage sein git zu installieren und das repo an zu zapfen git clone 
+
+Es sollte auch problemlos mit FreeBSD kompaktibel sein oder mit Windows oder Darwin(macOS) zu harmonieren ....
+Pylovara wird auf längerer sicht das bessere system bieten das den besten filemanager für ein gescheites 
+
+- Bios - Gnu -Darwin -NT -Unix -Linux bootloader setup .... portabel .... besser ....
+- Selbt ArchUser werden auf längerer sicht in Pylovara-FileManager-System rein installieren
+- weil ihnen der umfang und die neue flexibilität schmackhafter scheint als Normal ....
+- das system wäre durch *.*-notes in der lage auf jeder treiber komponente einen manualen schalt steuer
+- einzustellen ..... 
 ############################################################################
 
 Was das konkret heißt:

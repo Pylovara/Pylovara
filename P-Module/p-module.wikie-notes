@@ -1,17 +1,22 @@
 #!/bin/bash
-|- P-Module/ ---- .p-nodes	-------- Kernmodule von p (also Shell-Knoten mit Logik)
+|
+|############### P-Module #################
+||- P-Module/ ---- .p-nodes	-------- 
+||#Kernmodule von p (also Shell-Knoten mit Logik)
 ||
-||-P-Module/HeaderMaker.p-nodes 
+||-P-Module/HeaderMaker.p-nodes
 ||# Pylovara-FileManager-System/P-Module/HeaderMaker.p-nodes
 ||# Ast/Tree Ausgabe Only show-header Optional
 ||
 ||-P-Module/aliaslist.p-nodes
-||# Hyprland-Module/Pylovara-FileManager-System/P-Module/aliaslist.p-nodes
+||# Pylovara-FileManager-System/P-Module/aliaslist.p-nodes
 ||# Only Watching - P-Search - p-notes
 ||
 ||-P-Module/aliasloader.p-nodes
 ||# Pylovara-FileManager-System/P-Search/aliasloader.p-nodes
 ||# load all lsp*.sh Skripte aus Unterordnern als Aliase.
+||# Wichtig : p steuerung 
+||# pdownloads pp-f-s pmusik pcli pp-module pdev phypr pkde.org 
 ||
 ||-P-Module/clean_logs.p-nodes
 ||# Pylovara-FileManager-System/P-Module/clean_logs.p-nodes
@@ -33,13 +38,20 @@
 ||# Pylovara-FileManager-System/P-Module/update_ls-scripts.p-nodes
 ||# Errorlogs : Pylovara-FileManager/P-Error
 ||
-||-Pylo-Module/pylooptions.wiki-notes
-||# Pylovara-FileManager-System/Pylo-Module/pylooptions.wiki-notes
-||# .pylo-nodes: Kernmodule für pylo-Features
-||# Control - Steuerung - Navigation - Read
+||-P-Module/show-help.p-nodes
+||# Pylovara-FileManager-System/P-Module/show_help.p-nodes
+||# Pylovara dynamic CLI-Hilfe aus cli-hilfsausgabe.pv.conf
+||# (nur [main]-Block, minimal parser, shell-only)
+||# Wichtig:  show_help.p-nodes --help
+||# Pylovara – Modular CLI Help
+||#  --help       : Übersicht & Hilfe für alle Module anzeigen
+||#  --modules    : Alle aktiven Module und .p/.pylo/.nano-Nodes anzeigen
+||#  --dir        : Aktuelle Pfadzuweisungen aus pv-dir anzeigen
+||#  --info       : Systemstatus + Laufzeitumgebung
+||#  --reset      : Alle Aliase & Umgebungen auf Default zurücksetzen
 ||
-||-Pylo-Module/pylo-module.wiki-notes
-||# Pylovara-FileManager-System/Pylo-Module/pylo-module.wiki-notes
-||# Ast - Entwurf - Pylo-Module/ - .pylo-nodes
+||
+||-P-Module/p-module.wikie-notes
+||
 |######################################################
 |

@@ -1,16 +1,27 @@
+|
 |################### Wiki-Module ########################
+|####### .wiki.notes werden systemweit gesucht ##########
 |-Wiki-Module/
 ||
-||-Wiki-Module/wiki-module.wiki.notes  
-||# Frühres Arbeitsblatt 
+||-Wiki-Module/wiki-module.wiki.notes
+||# Pylovara-FileManager-System/Wiki-Module/wiki-module.wiki.notes
+||# Frühres Arbeitsblatt jetzt notes
 ||
-||-Wiki-Module/HeaderMakerWiki.wiki-nodes 
+||-Wiki-Module/HeaderMakerWiki.wiki-nodes
+||# Pylovara-FileManager-System/Wiki-Module/HeaderMakerWiki.wiki-nodes
 ||# Struktureller Reader - Name + Modultyp + .wiki-nodes 
 ||# HeaderMakerWiki bleibt dein cat/Template-Tool 
 ||# Ruft gezielt den Kopfbereich auf oder initialisiert neue .wiki.notes.
 ||
 ||-Wiki-Module/aliasloaderwiki.wiki-nodes
+||# Pylovara-FileManager-System/Wiki-Module/aliasloaderwiki.wiki-nodes
 ||# Systemweite semantische Suche
 ||# aliasloaderwiki (pylovara) ist dein Suchsystem 
 ||# für Begriffe, Tags, Themen – quer über alle Module.
-||# Update Option :pylovara mit Optionen wie --local, --module-only, --highlight usw. ausbauen.
+||# Update Option :pylovara mit Optionen wie --local, --module-only, --highlight usw. ausbauen
+||
+||-Wiki-Module/wikifilter.wiki-nodes
+||# Interaktive Textsuchhilfe für .wiki-notes Dateien
+||
+|#########################################################
+|

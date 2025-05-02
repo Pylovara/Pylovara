@@ -109,6 +109,37 @@ for node_type in "${node_types[@]}"; do
     done
 done
 
+INSTALL_DIR="/Pylovara-FileManager-System"
+REPO_DIR="$(pwd)"
+
+echo "[*] Starte Pylovara-Installation..."
+[ "$(id -u)" -ne 0 ] && echo "[!] Fehler: Root-Rechte benötigt (su oder sudo)." && exit 1
+
+# Backup bei bestehender Installation
+if [ -d "$INSTALL_DIR" ]; then
+    echo "[!] Bestehendes Pylovara-System gefunden. Backup wird erstellt..."
+    mv "$INSTALL_DIR" "${INSTALL_DIR}_backup_$(date +%s)"
+fi
+
+# Kopieren ins Root-System
+echo "[*] Installiere nach $INSTALL_DIR..."
+cp -r "$REPO_DIR/Pylovara-FileManager-System" "$INSTALL_DIR"
+
+# .bashrc / .zshrc Anbindung (optional)
+read -p "[?] .bashrc/.zshrc anpassen und Pylovara aktivieren? [Y/n] " CONFIRM
+CONFIRM=${CONFIRM,,}  # to lowercase
+if [[ "$CONFIRM" != "n" ]]; then
+    SRC_LINE="source $INSTALL_DIR/Pylovara-DirectoryManager/SystemControl.pv-conf"
+    for RC in "/root/.bashrc" "/root/.zshrc"; do
+        if [ -f "$RC" ]; then
+            grep -qxF "$SRC_LINE" "$RC" || echo "$SRC_LINE" >> "$RC"
+            echo "[*] $RC angepasst."
+        fi
+    done
+else
+    echo "[*] .bashrc/.zshrc wurden nicht geändert."
+fi
+
 echo ""
 echo "✅ Alle relevanten Knoten wurden mit Ausführungsrechten versehen."
 echo "------------------------------------------------------------"

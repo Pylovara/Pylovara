@@ -1,0 +1,34 @@
+#############################################
+## Einstieg ins Pylovara-Wiki-System
+## Datei: infowiki.wiki.notes
+## Ort  : ./Pylovara-FileManager-System/
+#############################################
+
+# Was ist das hier?
+
+Dies ist der Startpunkt für das integrierte Wiki-System von Pylovara.
+Alle Infos, Hinweise und Modulbeschreibungen liegen als `.wiki-notes`
+vor – lesbar direkt im Terminal über Pylovara.
+
+# Aufruf & Nutzung
+
+Beispiel:
+
+    pylovara infowiki
+
+Kein Dateiname nötig.
+Keine Endung nötig.
+Keine Sucherei.
+Das System findet die passende Notizdatei automatisch.
+
+# Prinzip
+
+Jede relevante Komponente in Pylovara hat eine eigene `.wiki-notes`.
+Diese sind einfach gehalten, aber strukturiert – wie alte Logbücher.
+Kein Markdown, kein Schnickschnack – pure Shell.
+
+# Warum so?
+
+Weil der Fokus auf **Klarheit**, **Schnelligkeit** und **Lesbarkeit** liegt.
+Die Infos sollen ohne Umwege im Terminal auftauchen – nicht im Browser.
+

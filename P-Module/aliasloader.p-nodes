@@ -4,8 +4,8 @@
 # load all p*.p-notes Skripte aus Unterordnern als Aliase.
 
 # Comment # for OFF
-SEARCH_DIR="Pylovara-FileManager-Sytem/P-Search"
-#SEARCH_DIR="Pylovara-FileManager-Sytem/"
+SEARCH_DIR="Pylovara-FileManager-System/P-Search"
+#SEARCH_DIR="Pylovara-FileManager-System/"
 
 # Bash
 find "$SEARCH_DIR" -type f -name 'p*.p-notes' | while read -r f; do

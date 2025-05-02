@@ -19,7 +19,14 @@ IN WORKING
 *.*-needles-input     |
 *.*-needles-output    |
 
+ps :
+
+*.pylo-nodes
+*.pylo-notes
+
+
 ----
+
 NEXT STEP 
 *.*-audio-nodes
 *.*-audio-notes

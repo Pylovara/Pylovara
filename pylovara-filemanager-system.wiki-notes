@@ -108,35 +108,6 @@ Pylovara-FileManager-System/
 ||
 ||-Pylovara-DirectoryManager/SystemControl.pv-conf
 ||# Alle Source daten vereint , hier spielt die musik 
-------
-IN WORK 
-# Pylovara-FileManager-System/Pylovara-DirectoryManager/SystemControl.pv-conf
-# Zentrale Bindestelle für alle Pylovara-Module
-# Wird direkt in .bashrc/.zshrc gesourced!
-
-base="/PylovarafileManager-System/Pylovara-DirectoryManager/"
-
-modul_dir="$base/Pylovara-FileManager-System"
-
-# Sicherheits-Check
-[ ! -d "$modul_dir" ] && echo "[!] Fehler: Pylovara-System fehlt unter $modul_dir" && return
-
-# Core-Loader
-source "$modul_dir/P-Module/aliasloader.p-nodes" 2>/dev/null
-source "$modul_dir/Pylo-Module/pylo.pylo-nodes" 2>/dev/null
-source "$modul_dir/Pylo-Module/pylohelp.pylo-nodes" 2>/dev/null
-source "$modul_dir/SysWiki/aliasloaderwiki.wiki-nodes" 2>/dev/null
-
-# Farben & Aliase
-alias pylo="bash $modul_dir/Pylo-Module/pylo.pylo-nodes"
-alias pylohelp="bash $modul_dir/Pylo-Module/pylohelp.pylo-nodes"
-alias ls='lsd'
-alias tree='tree -a -L 2'
-
-# Farben
-LS_COLORS="di=1;37:fi=0;37:ln=0;97:ex=1;97:*.sh=1;97:*.py=1;97:*.mp4=0;37:*.jpg=0;37:*.zip=0;37:*.tar=0;37"
-
-------
 ||
 ||-Pylovara-DirectoryManager/Pylovara-Wiki.pv-conf
 ||# Pylovara-Wiki.pv-conf (Mustervorlage)
@@ -147,9 +118,18 @@ LS_COLORS="di=1;37:fi=0;37:ln=0;97:ex=1;97:*.sh=1;97:*.py=1;97:*.mp4=0;37:*.jpg=
 ||# Pylovara-FileManager-System/Pylovara-DirectoryManager/pylovara-directorymanager.wiki-notes
 ||# Ast - Tree - Directory - Pylovara(.pv-conf)
 ||# Früher Arbeitsblatt.txt - jetzt wiki 
+||
+||-Pylovara-DirectoryManager/DatenTypen.wiki-notes
+||# Pylovara-FileManager-System – Modulstruktur Übersicht
+||# Status: Rolling-Release | Modular | Rootbasiert | Zukunftsfähig
+||# Diese Dateiendungen sind *konsequent durch das System auffindbar*.
+||# Geplant als autarke Steuerinstanzen – entkoppelt von klassischen Unix-Konventionen
 |########################################################
 |
+|
+|
 |################### Wiki-Module ########################
+|####### .wiki.notes werden systemweit gesucht ##########
 |-Wiki-Module/
 ||
 ||-Wiki-Module/wiki-module.wiki.notes
@@ -168,9 +148,14 @@ LS_COLORS="di=1;37:fi=0;37:ln=0;97:ex=1;97:*.sh=1;97:*.py=1;97:*.mp4=0;37:*.jpg=
 ||# aliasloaderwiki (pylovara) ist dein Suchsystem 
 ||# für Begriffe, Tags, Themen – quer über alle Module.
 ||# Update Option :pylovara mit Optionen wie --local, --module-only, --highlight usw. ausbauen
+||
+||-Wiki-Module/wikifilter.wiki-nodes
+||# Interaktive Textsuchhilfe für .wiki-notes Dateien
+||
 |#########################################################
 |
-|-
+|-pylovara.install-nodes
+|# Hauptverzeichnis - Prototyp - kern install
 
 
 
@@ -180,14 +165,23 @@ LS_COLORS="di=1;37:fi=0;37:ln=0;97:ex=1;97:*.sh=1;97:*.py=1;97:*.mp4=0;37:*.jpg=
 Mini Tree :
 Pylovara-FileManager-System/
 │
-├─ P-Search/                → .p-notes: Trigger/Notizen für "p" (Tree/Navigator)
-├─ P-Module/                → .p-nodes: Kernmodule von "p" (Modul-Logik)
-├─ P-Error/                 → .p-logs: Logausgaben aus "p"
+├─ Wiki-Module/               → .wiki.nodes suchmaschinenhilfe 
+│  
 │
-├─ Pylo-Search/             → .pylo-notes: Datenbank für alternative SHELL-Kommandos
-├─ Pylo.Module/             → .pylo-nodes: Kernmodule für pylo-Features
-├─ Pylo-Error/              → .pylo-logs: Logausgaben aus "pylo"
+├─ Pylovara-DirectoryManager/ →  Controllzentrum für binds aliases und sources
 │
+│
+├─ P-Search/                  → .p-notes: Trigger/Notizen für "p" (Tree/Navigator)
+├─ P-Module/                  → .p-nodes: Kernmodule von "p" (Modul-Logik)
+├─ P-Error/                   → .p-logs: Logausgaben aus "p"
+│
+├─ Pylo-Search/               → .pylo-notes: Datenbank für alternative SHELL-Kommandos
+├─ Pylo.Module/               → .pylo-nodes: Kernmodule für pylo-Features
+├─ Pylo-Error/                → .pylo-logs: Logausgaben aus "pylo"
+│
+├─ pylovara.install-nodes   → Installer
+│
+│  Hauptverzeichnis - Prototyp - kern install
 ├─ PLVA-Layouts/            → .pv-objekt: GUI-Elemente & visuelle Layouts (Kitty etc.)
 └─ Pylovara-DirectoryManager.pv-dir/ → Zentrale für Pfade, Konfig, Routing, Shell-RC-Sourcing
 

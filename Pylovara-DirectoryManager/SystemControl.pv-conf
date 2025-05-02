@@ -2,22 +2,31 @@
 # SystemControl.pv-conf
 # Zentrale Bindestelle für alle Pylovara-Module
 
-# Basispfad – Rootsystem
 BASE="/Pylovara-FileManager-System"
+LOGDIR="$BASE/P-Logs"
+LOGFILE="$LOGDIR/systemcontrol.log"
 
-# Nur Nodes sourcen, die ausführbar sind!
+mkdir -p "$LOGDIR" # falls nicht vorhanden
+
 echo "[Pylovara] Starte Modulbindung..."
+echo "[$(date '+%F %T')] --- Starte Modulbindung ---" >> "$LOGFILE"
 
 find "$BASE" -type f \( \
   -name "*.p-nodes" -o -name "*.pylo-nodes" -o \
   -name "*.wiki-nodes" -o -name "*.nano-nodes" \
   \) -executable -print0 | while IFS= read -r -d '' nodefile; do
     echo "[+] Source: $nodefile"
+    echo "[$(date '+%F %T')] [+] Source: $nodefile" >> "$LOGFILE"
     source "$nodefile"
 done
 
 # Optional: Bestimmte Konfigurationen gezielt nachladen
 CONF="$BASE/Pylovara-DirectoryManager/ProjektKonfig.pv-conf"
-[ -f "$CONF" ] && source "$CONF"
+if [ -f "$CONF" ]; then
+    echo "[+] Lade ProjektKonfig: $CONF"
+    echo "[$(date '+%F %T')] [+] Source: $CONF" >> "$LOGFILE"
+    source "$CONF"
+fi
 
 echo "[Pylovara] Modulbindung abgeschlossen."
+echo "[$(date '+%F %T')] --- Modulbindung abgeschlossen ---" >> "$LOGFILE"

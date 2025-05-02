@@ -1,29 +1,23 @@
 #!/bin/bash
-# Absoluter Pfad :
-# Pylovara-FileManager-System/Pylovara-DirectoryManager/SystemControl.pv-conf
+# SystemControl.pv-conf
 # Zentrale Bindestelle für alle Pylovara-Module
-# Wird direkt in .bashrc/.zshrc gesourced!
 
-base="$HOME/.pylovara"
+# Basispfad – Rootsystem
+BASE="/Pylovara-FileManager-System"
 
-modul_dir="$base/Pylovara-FileManager-System"
+# Nur Nodes sourcen, die ausführbar sind!
+echo "[Pylovara] Starte Modulbindung..."
 
-# Sicherheits-Check
-[ ! -d "$modul_dir" ] && echo "[!] Fehler: Pylovara-System fehlt unter $modul_dir" && return
+find "$BASE" -type f \( \
+  -name "*.p-nodes" -o -name "*.pylo-nodes" -o \
+  -name "*.wiki-nodes" -o -name "*.nano-nodes" \
+  \) -executable -print0 | while IFS= read -r -d '' nodefile; do
+    echo "[+] Source: $nodefile"
+    source "$nodefile"
+done
 
-# Core-Loader
-source "$modul_dir/P-Module/aliasloader.p-nodes" 2>/dev/null
-source "$modul_dir/Pylo-Module/pylo.pylo-nodes" 2>/dev/null
-source "$modul_dir/Pylo-Module/pylohelp.pylo-nodes" 2>/dev/null
-source "$modul_dir/SysWiki/aliasloaderwiki.wiki-nodes" 2>/dev/null
+# Optional: Bestimmte Konfigurationen gezielt nachladen
+CONF="$BASE/Pylovara-DirectoryManager/ProjektKonfig.pv-conf"
+[ -f "$CONF" ] && source "$CONF"
 
-# Farben & Aliase
-alias pylo="bash $modul_dir/Pylo-Module/pylo.pylo-nodes"
-alias pylohelp="bash $modul_dir/Pylo-Module/pylohelp.pylo-nodes"
-alias ls='lsd'
-alias tree='tree -a -L 2'
-
-# Farben
-export LS_COLORS="di=1;37:fi=0;37:ln=0;97:ex=1;97:*.sh=1;97:*.py=1;97:*.mp4=0;37:*.jpg=0;37:*.zip=0;37:*.tar=0;37"
-
-echo "[✓] Pylovara erfolgreich eingebunden."
+echo "[Pylovara] Modulbindung abgeschlossen."

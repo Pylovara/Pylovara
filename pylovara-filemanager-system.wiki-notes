@@ -157,7 +157,7 @@ Pylovara-FileManager-System/
 ||# Geplant als autarke Steuerinstanzen – entkoppelt von klassischen Unix-Konventionen
 |########################################################
 |
-|################# Nano-Module ##########################
+|################### Nano-Module ###########################
 |-Nano-Module/
 ||# *.Nano-nodes Sektion
 ||
@@ -170,6 +170,9 @@ Pylovara-FileManager-System/
 ||-Nano-Module/show-help.nano-nodes
 ||# Pylovara-FileManager-System/Wiki-Module/show-help.nano-nodes
 ||# Pylovara – Modular CLI Help
+||# Dokumentation der Nano-Module für fein granulare Einstellungen
+||# CLI-Hilfe für Nano-Module, parst [nano]-Sektion aus cli-hilfsausgabe.pv.conf 
+||# Unterstützt --run (z.B. nano --run log_size_guard) und --list
 ||#  --help       : Übersicht & Hilfe für alle Module anzeigen
 ||#  --modules    : Alle aktiven Module und .p/.pylo/.nano-Nodes anzeigen
 ||#  --dir        : Aktuelle Pfadzuweisungen aus pv-dir anzeigen

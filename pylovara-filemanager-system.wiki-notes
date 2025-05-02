@@ -8,12 +8,34 @@ FULL TREE :
 
 Pylovara-FileManager-System/ 
 |
-|- P-Search/ ---- .p-notes	-------- Trigger- und Notizdateien für das p-Modul (z. B. für ptree)
+|############### Pylo-Search ################
+|- Pylo-Search/ 
+|# ---- .p-notes	-------- Trigger- und Notizdateien für das p-Modul 
 |# All Directory per .p-notes = pdownloads puserscripts pp-search .....
 |# To Big libery for blank her , go to p-notes in =
 |# Pylovara-FileManager-System/P-Search/p-search.wiki-notes
+||
+||-Pylo-Search/pylo.pylo-nodes
+||# /Pylovara-FileManager-System/P-Module/pylo.p-nodes
+||# .p-nodes: Kernmodule von "p" (Modul-Logik)
+||# universal fixer & forwarder
+||
+||-Pylo-Search/pylohelp.pylo-nodes
+||# /Pylovara-FileManager-System/P-Module/pylohelp.p-nodes
+||# .p-nodes: Kernmodule von "p" (Modul-Logik)
+||# Pylovara Universal fixer with Debug Logger
+||
+||-Pylo-Search/pylooptions.wiki-notes
+||-Pylo-Search/pylo-search.wiki-notes
+|##########################################
 |
-|############### P-Module ################
+|-P-Search/
+|# ToBig Libery . geht to p-search.wiki.notes
+|# pdownloads pmusik pdev pall
+|
+|-P-Search/p-search.wiki.notes
+|
+|############### P-Module #################
 ||- P-Module/ ---- .p-nodes	-------- 
 ||#Kernmodule von p (also Shell-Knoten mit Logik)
 ||
@@ -65,12 +87,10 @@ Pylovara-FileManager-System/
 ||
 ||
 ||-P-Module/p-module.wikie-notes
-||# Pylovara-FileManager-System/P-Module/p-module.wikie-notes
-||# Ast - Entwurf - PModule/ - .p-nodes
+||
 |######################################################
 |
 |-P-Error/  ---- .p-logs	-------- Logausgaben aus p
-|-Pylo-Search/ - .pylo-notes ----- Alternative Suchdatenbank für Pylo-kompatible Shell-Kommandos
 |
 |################# Pylo-Module ##########################
 ||-Pylo.Module/ - .pylo-nodes ----- 

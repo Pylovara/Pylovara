@@ -1,12 +1,12 @@
 #!/bin/bash
 # Absoluter Pfad:
 # Pylovara-FileManager-System/P-Search/aliasloader.p-nodes
-# load all lsp*.sh Skripte aus Unterordnern als Aliase.
+# load all p*.p-notes Skripte aus Unterordnern als Aliase.
 
 SEARCH_DIR="Pylovara-FileManager-Sytem/P-Search"
 
-find "$SEARCH_DIR" -type f -name 'lsp*.sh' | while read -r f; do
-  name="$(basename "$f" .sh | sed 's/^lsp//;s/.sh$//')"
+find "$SEARCH_DIR" -type f -name 'p*.p-notes' | while read -r f; do
+  name="$(basename "$f" .sh | sed 's/^p//;s/.sh$//')"
   if [[ -x "$f" ]]; then
     alias "$name"="$f"
   else

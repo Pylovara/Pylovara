@@ -83,7 +83,7 @@ sudo find . -type f \( \
 sudo chmod +x install.sh  # oder wie dein Installer heißt
 
 - 3.2 Installer starten
-sudo ./install.sh
+sudo ./pylovara.installer-nodes
 
 ##########################################################
 

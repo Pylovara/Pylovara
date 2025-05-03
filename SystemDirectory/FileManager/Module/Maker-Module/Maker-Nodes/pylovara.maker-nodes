@@ -1,0 +1,55 @@
+#!/bin/bash
+
+clear
+echo "#############################################"
+echo "#    pylovara.maker-nodes   prototyp        #"
+echo "#############################################"
+echo ""
+echo "Was willst du erstellen?"
+echo "1 = *.*-nodes"
+echo "2 = *.*-nano-nodes"
+echo "3 = *.*-micro-nodes"
+echo "4 = *.needles"
+echo ""
+
+read -p "Deine Auswahl (1-4): " auswahl
+
+# Mapping der Auswahl
+case $auswahl in
+  1) typ="-nodes" ;;
+  2) typ="-nano-nodes" ;;
+  3) typ="-micro-nodes" ;;
+  4) typ=".needles" ;;
+  *) echo "Ungültige Auswahl. Abbruch."; exit 1 ;;
+esac
+
+echo ""
+read -p "Wie soll die Datei heißen (z.B. banane.affe): " basisname
+
+# Aufteilen am Punkt
+mainname="${basisname%%.*}"       # vor dem Punkt
+modulename="${basisname##*.}"     # nach dem Punkt
+
+# Endgültiger Dateiname
+dateiname="${basisname}${typ}"
+
+# Zielordner aus dem Modulnamen
+zielordner="Pylovara/SystemDirectory/FileManager/Module/${modulename}-Module"
+
+# Anlegen des Ordners (falls nicht vorhanden)
+mkdir -p "$zielordner"
+
+# Anlegen der Datei
+zielpfad="${zielordner}/${dateiname}"
+
+# Datei mit Template befüllen (rudimentär)
+echo "# ${dateiname}" > "$zielpfad"
+echo "# Erstellt mit dem Maker-Modul" >> "$zielpfad"
+echo "# Datum: $(date)" >> "$zielpfad"
+echo "" >> "$zielpfad"
+
+echo ""
+echo "🥡 Erfolgreich erstellt:"
+echo "Ordner:   $zielordner"
+echo "Datei:    $zielpfad"
+echo ""

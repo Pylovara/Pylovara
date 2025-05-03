@@ -1,0 +1,7 @@
+├─ Systemboot/
+   │  ├─ pylovara.install-nodes   # Hauptinstallationsskript
+   │  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
+   │  ├─ setup-aliases.boot-nodes # Einrichtung von Aliasen
+   │  └─ systemboot.wiki-notes    # Dokumentation der Boot-Funktionen
+
+# soll Pylovara grundsätzlich installierbar machen 

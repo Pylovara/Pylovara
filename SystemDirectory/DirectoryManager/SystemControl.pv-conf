@@ -29,3 +29,13 @@ for file_path in files_to_create:
     created_files.append(file_path)
 
 created_files
+
+# Source #
+# Wiki-Modul: wiki.wiki-nodes
+source /mnt/data/Pylovara/SystemDirectory/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes
+
+# Alias #
+alias helpme="bash /mnt/data/Pylovara/SystemDirectory/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
+
+
+

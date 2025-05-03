@@ -1,0 +1,11 @@
+   │  ├─ Wiki-Module/
+   │  │  ├─ Wiki-Nodes/          # Such- und Verwaltungsmodule (.wiki-nodes)
+   │  │  ├─ Wiki-Notes/          # Dokumentation (.wiki.notes) - extras
+   │  │  ├─ Wiki-Search/         # Suchskripte für Wiki-Module
+   │  │  └─ Wiki-Cache/          # Cache-Dateien für schnellere Suchen
+
+# .wiki-notes sind systemweit findbar und werden kurz gehalten .
+# für den AST wird ein wiki system eingeführt - extra .
+
+normale .wiki-notes werden per pylovara           - gesucht
+Ast Extras .ast-wiki-notes per pylovara extras    - gezeigt

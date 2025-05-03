@@ -7,3 +7,8 @@
 │  ├─ Micro-Nodes/          # Mikro-Module (*.*-micro-nodes)
 │  ├─ Micro-Notes/          # Libery (*.*-micro-notes) | Template Vorlagen
 │  └─ Micro-Errors/         # Logdateien (.micro-logs)
+
+
+# klare Trennung geschaffen zwischen:
+# .micro-notes → rein statisch, reine Vorlage, "Druckform", editierbar vor dem Einsatz
+# *.*-micro-nodes → operative Einheit, mit realer Logik, steuerbar/ausführbar

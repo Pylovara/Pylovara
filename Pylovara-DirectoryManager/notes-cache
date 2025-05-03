@@ -1,7 +1,0 @@
-CACHE_FILE="$BASE/Pylovara-DirectoryManager/nodes.cache"
-if [[ ! -f "$CACHE_FILE" || $(find "$BASE" -type f -newer "$CACHE_FILE" | wc -l) -gt 0 ]]; then
-    find "$BASE" -type f \( -name "*.p-nodes" -o -name "*.pylo-nodes" -o -name "*.wiki-nodes" -o -name "*.nano-nodes" \) -executable > "$CACHE_FILE"
-fi
-while IFS= read -r nodefile; do
-    source "$nodefile"
-done < "$CACHE_FILE"

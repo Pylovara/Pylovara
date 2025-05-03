@@ -1,1 +1,31 @@
+import os
 
+# Basisverzeichnis 
+base_dir = "/mnt/data/Pylovara/SystemDirectory"
+
+# Struktur der zu erstellenden Dateien mit Pfaden
+files_to_create = [
+    # AST-Hauptbaum
+    "/mnt/data/Pylovara/pylovara-ast.wiki-notes",
+
+    # P-Nodes und Wiki
+    f"{base_dir}/FileManager/P-Module/P-Nodes/p.p-nodes",
+    f"{base_dir}/FileManager/P-Module/P-Nodes/p-nodes.wiki-notes",
+
+    # Pylo-Nodes und Wiki
+    f"{base_dir}/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes",
+    f"{base_dir}/FileManager/Pylo-Module/Pylo-Nodes/pylo-nodes.wiki-notes",
+
+    # Noch nicht erledigt: SystemControl.pv-conf als Platzhalter anlegen
+    f"{base_dir}/DirectoryManager/SystemControl.pv-conf"
+]
+
+# Dateien erstellen, Verzeichnisse falls nötig anlegen
+created_files = []
+for file_path in files_to_create:
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, 'w') as f:
+        f.write("")  # Leere Datei
+    created_files.append(file_path)
+
+created_files

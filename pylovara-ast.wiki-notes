@@ -12,7 +12,7 @@
 │-DirectoryManager/
 │  ├─ cli-hilfsausgabe.pv.conf # Zentrale Konfigurationsdatei
 │  ├─ SystemControl.pv-conf    # Steuerung aller Module
-│  │  # Sourced Module |
+│  │  # Sourced Module | Alias | Hertzstück | kann später in bashrc oder zhs etc sourced werden
 │  ├─ Pylovara-Wiki.pv-conf    # Konfiguration für Wiki-Module
 │  ├─ pylovara-directorymanager.wiki-notes # Dokumentation der Steuerzentrale
 │  ├─ DatenTypen.wiki-notes    # Übersicht der Dateitypen
@@ -56,6 +56,8 @@
 │  └─ PLVA-Errors/          # Logdateien für Layout-Fehler
 ├─ Wiki-Module/
 │  ├─ Wiki-Nodes/           # Such- und Verwaltungsmodule (.wiki-nodes)
+│  │  ├─ wiki.wiki-nodes    # helpme <Suchbegriff> (.wiki-notes)
+│  │  └─ wiki.wiki-notes    # wiki-notes
 │  ├─ Wiki-Notes/           # Dokumentation (.wiki.notes) Lexikon
 │  ├─ Wiki-Search/          # Suchskripte für .ast-wiki-notes long Lexikon
 │  └─ Wiki-Cache/           # Cache-Dateien für schnellere Suchen

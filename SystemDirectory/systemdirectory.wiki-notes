@@ -12,7 +12,7 @@ Pylovara-System/
    │  ├─ Pylo-Module/
    │  │  ├─ Pylo-Nodes/          # Kernmodule (.pylo-nodes) für Pylo-Features
    │  │  ├─ Pylo-Notes/          # Notizdateien (.pylo-notes)
-   │  │  ├─ Pylo-Search/         # Suchskripte für Pylo-Module
+   │  │  ├─ Pylo-Search/         # Suchskripte für Pylo-Module - extras
    │  │  └─ Pylo-Errors/         # Logdateien (.pylo-logs)
    │  ├─ PLVA-Module/
    │  │  ├─ PLVA-Nodes/          # Layout-Module (.pv-objekt) für GUI-Integration
@@ -21,16 +21,16 @@ Pylovara-System/
    │  │  └─ PLVA-Errors/         # Logdateien für Layout-Fehler
    │  ├─ Wiki-Module/
    │  │  ├─ Wiki-Nodes/          # Such- und Verwaltungsmodule (.wiki-nodes)
-   │  │  ├─ Wiki-Notes/          # Dokumentation (.wiki.notes)
-   │  │  ├─ Wiki-Search/         # Suchskripte für Wiki-Module
+   │  │  ├─ Wiki-Notes/          # Dokumentation (.wiki.notes) Lexikon
+   │  │  ├─ Wiki-Search/         # Suchskripte für .ast-wiki-notes long Lexikon
    │  │  └─ Wiki-Cache/          # Cache-Dateien für schnellere Suchen
    │  ├─ Nano-Module/
    │  │  ├─ Nano-Nodes/          # Feingranulare Module (.nano-nodes)
    │  │  ├─ Nano-Notes/          # Dokumentation (.nano-notes)
    │  │  └─ Nano-Errors/         # Logdateien (.nano-logs)
    │  ├─ Micro-Module/
-   │  │  ├─ Micro-Nodes/         # Mikro-Module (.micro-nodes)
-   │  │  ├─ Micro-Notes/         # Dokumentation (.micro-notes)
+   │  │  ├─ Micro-Nodes/         # Mikro-Module (*.*-micro-nodes)
+   │  │  ├─ Micro-Notes/         # Dokumentation (*.*-micro-notes)
    │  │  └─ Micro-Errors/        # Logdateien (.micro-logs)
    │  └─ Needles-Module/
    │     ├─ Needles-Nodes/       # Hochspezialisierte Module (.needles)
@@ -48,6 +48,8 @@ Pylovara-System/
    │  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
    │  ├─ setup-aliases.boot-nodes # Einrichtung von Aliasen
    │  └─ systemboot.wiki-notes    # Dokumentation der Boot-Funktionen
+   │   
+   ├─ AI/                         # llm Spielplatz
    └─ P-Logs/                     # Zentrale Logs und Cache-Dateien
 
 

@@ -76,6 +76,44 @@ Die Bibliothek an `*.nodes` und `*.notes` wird erweitert, um zukünftige Anforde
 
 Pylovara-FileManager-System soll ein unverzichtbares Allzweckwerkzeug für Systemadministratoren, Entwickler und Enthusiasten werden. Es bietet eine intuitive, shellbasierte Schnittstelle, die Betriebssysteme wie eine Kletterpflanze durchdringt – flexibel, robust und zukunftssicher. Durch die enge Integration mit Git und die Unterstützung für neue Dateitypen wird Pylovara kontinuierlich wachsen und sich an die Bedürfnisse seiner Nutzer anpassen.
 
+## Genug gesagt hier funktionen :
+
+Das plyo helpme-System – Terminalhilfe aus dem Maschinenraum
+
+In guter alter Unix-Tradition bringt Pylovara sein eigenes integriertes Hilfe- und Assistenzsystem mit – das plyo helpme-System. Keine grafische Spielerei, kein überfrachteter Manpage-Wald. Stattdessen: eine schlanke, modular aufrufbare Terminalhilfe, direkt aus dem Pylovara-Stammbaum. Schnell, lokal, ohne Umwege.
+Was ist plyo helpme?
+
+Das plyo helpme-System ist eine zentrale Schnittstelle für Hilfe- und Unterstützungsfunktionen im Pylovara-FileManager-System. Es bedient sich derselben modularen Logik wie der Rest des Systems und greift auf *.wiki.notes-Dateien zurück, die inhaltlich sortiert, nummeriert und referenzierbar sind. Beispielhafte Aufrufe:
+
+pylovara helpme
+p helpme
+pylo helpme 01
+pylo helpme wiki
+
+Features
+
+    Soforthilfe zu Modulen und Funktionen
+    Zeigt kontextabhängige Informationen zu aktuellen oder benachbarten Modulen an. Ideal, um ohne Netz oder Browser sofort Zugriff auf relevante Inhalte zu bekommen.
+
+    Nummernbasierter Zugriff
+    Durch die Integration des lexikon.wiki-notes erhält jede .wiki.notes-Datei eine eindeutige Rufnummer. Der Befehl pylo helpme 03 ruft z. B. die dritte registrierte Datei auf.
+
+    Suchfunktion und Aliasauflösung
+    Unterstützung durch Suchmodule wie wikifilter.wiki-nodes oder aliasloaderwiki.wiki-nodes erlaubt die Suche nach Schlagwörtern, Befehlen oder Modultiteln – interaktiv mit fzf, gum oder klassisch via grep.
+
+    Shell-nativ & universell
+    Vollständig in Bash geschrieben – keine externen Abhängigkeiten. Damit läuft plyo helpme selbst in einer Notfallkonsole, Recovery-Umgebung oder per BusyBox.
+
+Ein Blick in die Zukunft
+
+Langfristig soll das helpme-System modular ausgebaut werden:
+
+    mit helpme.visual für TUI-Hilfemenüs (Whiptail/Dialog)
+
+    mit helpme.needle für kontextsensitive Nano-Hilfen
+
+    mit helpme.audio für akustische Rückmeldung in barrierefreien Systemen
+
 |#########################################################
 | Ende Readme.wiki-notes
 |#########################################################

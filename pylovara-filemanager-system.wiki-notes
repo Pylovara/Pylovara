@@ -225,36 +225,25 @@ Pylovara-FileManager-System/
 |
 |-pylovara.install-nodes
 |# Hauptverzeichnis - Prototyp - kern install
-##########################################################################
-##########################################################################
+|
+|-Systemboot/
+||-systemboot.wiki.notes
+|
+---
+geplant :
 
-
-
-
-
-
-Mini Tree :
 Pylovara-FileManager-System/
-│
-├─ Wiki-Module/               → .wiki.nodes suchmaschinenhilfe 
-│  
-│
-├─ Pylovara-DirectoryManager/ →  Controllzentrum für binds aliases und sources
-│
-│
-├─ P-Search/                  → .p-notes: Trigger/Notizen für "p" (Tree/Navigator)
-├─ P-Module/                  → .p-nodes: Kernmodule von "p" (Modul-Logik)
-├─ P-Error/                   → .p-logs: Logausgaben aus "p"
-│
-├─ Pylo-Search/               → .pylo-notes: Datenbank für alternative SHELL-Kommandos
-├─ Pylo.Module/               → .pylo-nodes: Kernmodule für pylo-Features
-├─ Pylo-Error/                → .pylo-logs: Logausgaben aus "pylo"
-│
-├─ pylovara.install-nodes   → Installer
-│
-│  Hauptverzeichnis - Prototyp - kern install
-├─ PLVA-Layouts/            → .pv-objekt: GUI-Elemente & visuelle Layouts (Kitty etc.)
-└─ Pylovara-DirectoryManager.pv-dir/ → Zentrale für Pfade, Konfig, Routing, Shell-RC-Sourcing
+└─ Systemboot/
+   ├─ pylovara.install-nodes        # Hauptinstallationsskript (bereits vorhanden)
+   ├─ systemboot-config.pv-conf     # Konfigurationsdatei für Zielsysteme
+   ├─ detect-system.boot-nodes      # Skript zur Erkennung der Zielumgebung
+   ├─ setup-aliases.boot-nodes      # Skript zum Einrichten von Aliasen nach Installation
+   ├─ systemboot.wiki-notes         # Dokumentation der Systemboot-Funktionen
+---
+
+
+##########################################################################
+##########################################################################
 
  Stärken der Struktur:
 

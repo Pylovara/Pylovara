@@ -15,8 +15,9 @@
 │  │  # Sourced Module | Alias | Hertzstück | kann später in bashrc oder zhs etc sourced werden
 │  ├─ Pylovara-Wiki.pv-conf    # Konfiguration für Wiki-Module
 │  ├─ pylovara-directorymanager.wiki-notes # Dokumentation der Steuerzentrale
-│  ├─ DatenTypen.wiki-notes    # Übersicht der Dateitypen
-│  └─ systemboot-config.pv-conf # Konfiguration für Systemboot
+│  ├─ DatenTypen.wiki-notes     # Übersicht der Dateitypen
+│  ├─ systemboot-config.pv-conf # Konfiguration für Systemboot
+│  └─ lexikon.wiki-notes        # Übersicht + Nummer | Anlaufstelle
 ├─ Systemboot/
 │  ├─ pylovara.install-nodes   # Hauptinstallationsskript
 │  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung

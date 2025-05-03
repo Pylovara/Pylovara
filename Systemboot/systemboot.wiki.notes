@@ -1,0 +1,24 @@
+|
+|-Systemboot/
+||-systemboot.wiki.notes
+|
+
+
+
+
+
+
+
+####################################################################################
+
+Das Systemboot/-Verzeichnis ist der zentrale Ankerpunkt für die Installation und 
+Initialisierung des Pylovara-FileManager-Systems. Es enthält Skripte und 
+Konfigurationsdateien, die die Installation auf verschiedenen Zielsystemen 
+(Linux, FreeBSD, macOS, etc.) ermöglichen und die Integration in die Shell-Umgebung 
+des Nutzers sicherstellen. Der Ordner dient als Steuerzentrale für den 
+Installationsprozess und passt das System an die spezifischen Anforderungen 
+der Zielumgebung an.
+
+Ziel :
+Initialisierung des Installierbaren Grundstock Mechanismus der 
+alles genau hier rein in seiner Struktur installiert 

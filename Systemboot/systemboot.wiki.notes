@@ -4,7 +4,17 @@
 |
 
 
+####################################################################################
 
+geplant :
+
+Pylovara-FileManager-System/
+└─ Systemboot/
+   ├─ pylovara.install-nodes        # Hauptinstallationsskript (bereits vorhanden)
+   ├─ systemboot-config.pv-conf     # Konfigurationsdatei für Zielsysteme
+   ├─ detect-system.boot-nodes      # Skript zur Erkennung der Zielumgebung
+   ├─ setup-aliases.boot-nodes      # Skript zum Einrichten von Aliasen nach Installation
+   ├─ systemboot.wiki-notes         # Dokumentation der Systemboot-Funktionen
 
 
 
@@ -22,3 +32,5 @@ der Zielumgebung an.
 Ziel :
 Initialisierung des Installierbaren Grundstock Mechanismus der 
 alles genau hier rein in seiner Struktur installiert 
+
+

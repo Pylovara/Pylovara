@@ -11,12 +11,39 @@
 # Stechender Schmerz !!!!!!!!!!!!!!!!!!!!!!!!
 
 
-# die *.needles-nodes werden in zuckunft dafür verwendet um vollzugriff 
+# die *.needles werden in zuckunft dafür verwendet um vollzugriff 
 # für cpu - gpu - treiber - rendering - audio sequenzen - maus input -
-# tastatur input ... usw gnadenlos zu verdrahten !!
+# tastatur input zu bekommen ... gnadenlos zu verdrahten , eigener zugangspunkt!!
 
 # das heißt in zuckunft 
 # egal welches system du fährst , pylovara-filemanager-system sollte dein anzapf 
-# werkzeug sein .  Mit *.needles-nodes kannst du den source bash direkt mit einer
-# festen darauf zugewissenen .*-nodes und zwischen beiden kann zusätzlich ein 
-# *.nano-nodes als zwischen controller dienen ..... 
+# werkzeug sein .  Mit *.needles kannst du den source bash direkt mit einer
+# festen darauf zugewissenen Ordner komponente Anzapfen : 
+# - zugang zum treiber ordner.
+
+# diese *needles zeigt den inhalt an und gibt sie direkt zu den *.nano-nodes 
+# weiter und münden dann in einer dafür angelegte *.control-nodes
+# *.control-nodes werden noch bestimmt und sind nicht implementiert 
+# der implementierungs vorgang fängt mit der arbeit von :
+
+# NEXT STEP in Work Prototyp Layout :
+#  *.*-audio-nodes
+#  *.*-audio-notes
+#  *.*-gpu-nodes
+#  *.*-gpu-notes
+#  *.*-input-nodes
+#  *.*-input-notes
+#  *.*-camera-nodes
+#  *.*-camera-notes
+#  *.*-cpu-nodes
+#  *.*-cpu-notes
+#  *.*-mouse-nodes
+#  *.*-mouse-notes
+#  *.*-usb-nodes
+#  *.*-ubs-notes
+
+# die *.needles werden nach dem jeweiligen 
+# komponenten treiber oder steuerungs element benannt
+# um eine nahtlose integration in die steuerungsheinheit des 
+# Pylovara-FileManager-System , zu gewährleisten
+

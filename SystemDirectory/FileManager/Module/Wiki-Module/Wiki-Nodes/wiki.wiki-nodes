@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Verzeichnis, in dem gesucht werden soll (root of Pylovara-System)
+BASE_DIR="/mnt/data/Pylovara"
+
+# lowercase name aus Parameter (z. B. helpme systemboot)
+SEARCH_NAME=$(echo "$1" | awk '{print tolower($0)}')
+
+# Suchlauf: alle .wiki-notes-Dateien finden
+FOUND_PATH=$(find "$BASE_DIR" -type f -iname "${SEARCH_NAME}.wiki-notes" 2>/dev/null | head -n 1)
+
+# Wenn Datei gefunden, anzeigen
+if [[ -n "$FOUND_PATH" ]]; then
+    cat "$FOUND_PATH"
+else
+    echo "[!] Keine passende .wiki-notes-Datei gefunden für: $SEARCH_NAME"
+fi

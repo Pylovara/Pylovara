@@ -1,0 +1,126 @@
+# Absoluter Pfad:
+# Pylovara/pylovara.ast-wiki-notes
+# https://github.com/Pylovara/Pylovara/
+# MAIN TREE - MAIN STAGE - MAIN WORK - MAIN INFOS 
+################################################################################
+
+
+
+
+|-Pylovara/SystemDirectory/
+│###############################################################################
+│-DirectoryManager/
+│  ├─ cli-hilfsausgabe.pv.conf # Zentrale Konfigurationsdatei
+│  ├─ SystemControl.pv-conf    # Steuerung aller Module
+│  │  # Sourced Module |
+│  ├─ Pylovara-Wiki.pv-conf    # Konfiguration für Wiki-Module
+│  ├─ pylovara-directorymanager.wiki-notes # Dokumentation der Steuerzentrale
+│  ├─ DatenTypen.wiki-notes    # Übersicht der Dateitypen
+│  └─ systemboot-config.pv-conf # Konfiguration für Systemboot
+├─ Systemboot/
+│  ├─ pylovara.install-nodes   # Hauptinstallationsskript
+│  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
+│  ├─ setup-aliases.boot-nodes # Einrichtung von Aliasen
+│  └─ systemboot.wiki-notes    # Dokumentation der Boot-Funktionen
+│############################################################################### 
+│WikiLexikon : systemdirectory.wiki.notes
+│# WikiSearch /~ Helpme systemdirectory
+│# Tree       /~ p DirectoryManager/   
+│# pylo DirectoryManager/- systemdirectory.wiki.notes cat
+│###############################################################################
+
+
+
+
+|-Pylovara/SystemDirectory/FileManager/
+|###############################################################################
+├─ Module/
+│  ├─ P-Module/
+│  ├─ P-Nodes/              # Kernmodule (.p-nodes) für Shell-Logik
+│  │  ├─ p.p-nodes          # p <Ordner> Tree suche 
+│  │  └─ p-nodes.wiki-notes # wiki-notes
+│  ├─ P-Notes/              # Notizdateien (.p-notes) für Dokumentation
+│  ├─ P-Search/             # Suchskripte für P-Module
+│  └─ P-Errors/             # Logdateien (.p-logs) für Fehlerprotokolle
+├─ Pylo-Module/ 
+│  ├─ Pylo-Nodes/           # Kernmodule (.pylo-nodes) für Pylo-Features
+│  │  ├─ pylo.pylo-nodes    # pylo <Ordner>/- DATA SHELL 
+│  │  └─ pylo-nodes.wiki-notes # wiki-notes
+│  ├─ Pylo-Notes/           # Notizdateien (.pylo-notes)
+│  ├─ Pylo-Search/          # Suchskripte für Pylo-Module - extras
+│  └─ Pylo-Errors/          # Logdateien (.pylo-logs)
+├─ PLVA-Module/
+│  ├─ PLVA-Nodes/           # Layout-Module (.pv-objekt) für GUI-Integration
+│  ├─ PLVA-Notes/           # Dokumentation für Layouts
+│  ├─ PLVA-Search/          # Suchskripte für Layouts
+│  └─ PLVA-Errors/          # Logdateien für Layout-Fehler
+├─ Wiki-Module/
+│  ├─ Wiki-Nodes/           # Such- und Verwaltungsmodule (.wiki-nodes)
+│  ├─ Wiki-Notes/           # Dokumentation (.wiki.notes) Lexikon
+│  ├─ Wiki-Search/          # Suchskripte für .ast-wiki-notes long Lexikon
+│  └─ Wiki-Cache/           # Cache-Dateien für schnellere Suchen
+├─ Nano-Module/
+│  ├─ Nano-Nodes/           # Feingranulare Module (.nano-nodes)
+│  ├─ Nano-Notes/           # Dokumentation (.nano-notes)
+│  └─ Nano-Errors/          # Logdateien (.nano-logs)
+├─ Micro-Module/
+│  ├─ Micro-Nodes/          # Mikro-Module (*.*-micro-nodes)
+│  ├─ Micro-Notes/          # Dokumentation (*.*-micro-notes)
+│  └─ Micro-Errors/         # Logdateien (.micro-logs)
+└─ Needles-Module/
+   ├─ Needles-Nodes/        # Hochspezialisierte Module (.needles)
+   ├─ Needles-Notes/        # Dokumentation (.needles-notes)
+   └─ Needles-Errors/       # Logdateien (.needles-logs)
+│###############################################################################
+│WikiLexikon : module.wiki.notes
+│# WikiSearch /~ Helpme module 
+│# Tree       /~ p FileManager/   
+│# pylo FileManager/- module.wiki.notes cat
+│###############################################################################
+
+
+
+
+|-Pylovara/SystemDirectory/
+│###############################################################################
+│-DirectoryManager/
+│  ├─ cli-hilfsausgabe.pv.conf # Zentrale Konfigurationsdatei
+│  ├─ SystemControl.pv-conf    # Steuerung aller Module
+│  ├─ Pylovara-Wiki.pv-conf    # Konfiguration für Wiki-Module
+│  ├─ pylovara-directorymanager.wiki-notes # Dokumentation der Steuerzentrale
+│  ├─ DatenTypen.wiki-notes    # Übersicht der Dateitypen
+│  └─ systemboot-config.pv-conf # Konfiguration für Systemboot
+│###############################################################################
+│WikiLexikon : directorymanager.wiki.notes
+│# WikiSearch /~ Helpme directorymanager 
+│# Tree       /~ p DirectoryManager/  
+│# pylo DirectoryManager/- directorymanager.wiki.notes cat
+│###############################################################################
+
+
+
+
+|-Pylovara/SystemDirectory/
+│###############################################################################
+├─ Systemboot/
+│  ├─ pylovara.install-nodes   # Hauptinstallationsskript
+│  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
+│  ├─ setup-aliases.boot-nodes # Einrichtung von Aliasen
+│  └─ systemboot.wiki-notes    # Dokumentation der Boot-Funktionen
+│   
+└─ P-Logs/                     # Zentrale Logs und Cache-Dateien
+│###############################################################################
+│WikiLexikon : systemboot.wiki.notes
+│# WikiSearch /~ Helpme systemboot 
+│# Tree       /~ p Systemboot/   
+│# pylo Systemboot/- systemboot.wiki.notes cat
+│###############################################################################
+
+
+
+
+|-Pylovara/SystemDirectory/
+│###############################################################################
+├─ AI/                             # llm Spielplatz
+├─ ROOT Partition/                 # Blumentopf - Satt - Betriebsystem
+│###############################################################################

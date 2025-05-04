@@ -1,5 +1,22 @@
-   │  ├─ Pylo-Module/
-   │  │  ├─ Pylo-Nodes/          # Kernmodule (.pylo-nodes) für Pylo-Features
-   │  │  ├─ Pylo-Notes/          # Notizdateien (.pylo-notes)
-   │  │  ├─ Pylo-Search/         # Suchskripte für Pylo-Module
-   │  │  └─ Pylo-Errors/         # Logdateien (.pylo-logs)
+241
+├─ Pylo-Module/
+242
+│  ├─ Pylo-Nodes/              # Kernmodule (.pylo-nodes) für Pylo-Features
+│  │  ├─ pylo.pylo-nodes       # pylo <Ordner>/- DATA SHELL 
+│  │  └─ pylo-nodes.wiki-notes # wiki-notes
+243
+│  ├─ Pylo-Notes/              # Notizdateien (.pylo-notes)
+│  │  └─ pylo-notes.wiki-notes # wiki-notes
+244
+│  ├─ Pylo-Search/             # Suchskripte für Pylo-Module - extras
+│  │  └─ pylo-search.wiki-notes# wiki-notes
+245
+│  └─ Pylo-Errors/             # Logdateien (.pylo-logs)
+│     └─ pylo-errors.wiki-notes# wiki-notes
+│###############################################################################
+│WikiLexikon : module.wiki.notes
+│# WikiSearch /~ Helpme module 
+│# WikiSearch /~ Helpme 220
+│# Tree       /~ p FileManager/   
+│# pylo FileManager/- module.wiki.notes cat
+│###############################################################################

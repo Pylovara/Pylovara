@@ -131,12 +131,15 @@
 │     └─ micro-errors.wiki-notes        # Info
 291
 ├─ Needles-Module/
+292
 │  ├─ Needles-Nodes/        # Hochspezialisierte Module (.needles)
 │  │  └─ micro-notes.wiki-notes        # Info
+293
 │  ├─ Needles-Notes/        # Dokumentation (.needles-notes)
 │  │  └─ micro-notes.wiki-notes        # Info
+294
 │  └─ Needles-Errors/       # Logdateien (.needles-logs)
-│     └─ micro-notes.wiki-notes        # Info
+│     └─ needles-errors.wiki-notes        # Info
 301
 └─ Maker-Module/
    ├─ Maker-Nodes/        # Bau Amt - gibt dir was -

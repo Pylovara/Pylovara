@@ -1,1 +1,6 @@
-IN WORK HERZSTÜCK
+# mcs.pv-conf – Kontrollzentrale für das MCS-Protokollsystem
+# Aktuell noch leer – wird später durch Subsysteme (Cache, Guard, ISA) erweitert
+
+# Beispiel: Spätere Konfigurationsladung
+# source ./MCS-Module/MCS-Nodes/daten-protocol.mcs-nodes
+

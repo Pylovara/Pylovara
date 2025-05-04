@@ -1,15 +1,16 @@
+
 Pylovara/SystemDirectory/DirectoryManager/
-├─ MCS-DNA/
-│  ├─ MCS-Module/
-│  │  ├─ MCS-ISA/                            # Binär Finder
-│  │  │  └─ isafinder.mcs-isa-nodes          # 
-│  │  ├─ MCS-Cache/                          # Speicher 
-│  │  │  └─ isafinder.mcs-cache-nodes        # isafinder cache
-│  │  ├─ MCS-GUARD/                          # Sicherheit Weiterleitung
-│  │  └─ MCS-Nodes/
-│  │     └─ daten-protocol.mcs-nodes          # control zentrum des datenverkehrst
-│  ├─ MCS-Notes/
-│  ├─ mcs.pv-conf                            # Noch Leer
-│  └─ mcs-dokumentation.wiki-notes
+└─ MCS-DNA/
+   ├─ MCS-Module/
+   │  ├─ MCS-ISA/
+   │  │  └─ isafinder.mcs-isa-nodes
+   │  ├─ MCS-Cache/
+   │  │  └─ isafinder.mcs-cache-nodes
+   │  ├─ MCS-GUARD/
+   │  └─ MCS-Nodes/
+   │     └─ daten-protocol.mcs-nodes       # ← Einstiegspunkt
+   ├─ MCS-Notes/
+   ├─ mcs.pv-conf                          # ← SystemControl für MCS
+   └─ mcs-dokumentation.wiki-notes
 
 # In Build , Subsystem for better Bash Crow

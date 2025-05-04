@@ -1,20 +1,21 @@
 220
 |-Pylovara/SystemDirectory/FileManager/
 |###############################################################################
+230
 ├─ Module/
-221
+231
 │  ├─ P-Module/
-222
+232
 │  ├─ P-Nodes/              # Kernmodule (.p-nodes) für Shell-Logik
 │  │  ├─ p.p-nodes          # p <Ordner> Tree suche 
 │  │  └─ p-nodes.wiki-notes # wiki-notes
-223
+233
 │  ├─ P-Notes/              # Notizdateien (.p-notes) für Dokumentation
-224
+234
 │  ├─ P-Search/             # Suchskripte für P-Module
-225
+235
 │  └─ P-Errors/             # Logdateien (.p-logs) für Fehlerprotokolle
-224
+234
 ├─ Pylo-Module/ 
 │  ├─ Pylo-Nodes/           # Kernmodule (.pylo-nodes) für Pylo-Features
 │  │  ├─ pylo.pylo-nodes    # pylo <Ordner>/- DATA SHELL 
@@ -22,13 +23,13 @@
 │  ├─ Pylo-Notes/           # Notizdateien (.pylo-notes)
 │  ├─ Pylo-Search/          # Suchskripte für Pylo-Module - extras
 │  └─ Pylo-Errors/          # Logdateien (.pylo-logs)
-225
+235
 ├─ PLVA-Module/
 │  ├─ PLVA-Nodes/           # Layout-Module (.pv-objekt) für GUI-Integration
 │  ├─ PLVA-Notes/           # Dokumentation für Layouts
 │  ├─ PLVA-Search/          # Suchskripte für Layouts
 │  └─ PLVA-Errors/          # Logdateien für Layout-Fehler
-227
+236
 ├─ Wiki-Module/
 │  ├─ Wiki-Nodes/           # Such- und Verwaltungsmodule (.wiki-nodes)
 │  │  ├─ wiki.wiki-nodes    # helpme <Suchbegriff> (.wiki-notes)
@@ -36,24 +37,24 @@
 │  ├─ Wiki-Notes/           # Dokumentation (.wiki.notes) Lexikon
 │  ├─ Wiki-Search/          # Suchskripte für .ast-wiki-notes long Lexikon
 │  └─ Wiki-Cache/           # Cache-Dateien für schnellere Suchen
-228
+237
 ├─ Nano-Module/
 │  ├─ Nano-Nodes/           # Feingranulare Module (.nano-nodes)
 │  ├─ Nano-Notes/           # Dokumentation (.nano-notes)
 │  └─ Nano-Errors/          # Logdateien (.nano-logs)
-229
+238
 ├─ Micro-Module/
 │  ├─ Micro-Nodes/                     # Mikro-Module (*.*-micro-nodes)
 │  │  ├─ needles-handler.micro-nodes   # Needles Handling for .micro-notes
 │  │  └─ micro-nodes.wiki-notes        # Info 
 │  ├─ Micro-Notes/                     # Libery (*.*-micro-notes) | Template Vorlagen
 │  └─ Micro-Errors/                    # Logdateien (.micro-logs)
-230
+239
 ├─ Needles-Module/
 │  ├─ Needles-Nodes/        # Hochspezialisierte Module (.needles)
 │  ├─ Needles-Notes/        # Dokumentation (.needles-notes)
 │  └─ Needles-Errors/       # Logdateien (.needles-logs)
-231
+240
 └─ Maker-Module/
    ├─ Maker-Nodes/        # Bau Amt - gibt dir was - 
    │  ├─ pylovara.maker.nodes # Protoyp Nodes Maker

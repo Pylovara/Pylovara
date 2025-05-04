@@ -1,2 +1,17 @@
 # Datensatz anzapfen - Verknüpfen - Datenweg 
 # .needles
+
+
+# konzept in work 
+
+Needles-Module/
+├─ Needles-Nodes/
+│  ├─ needles-handler.micro-nodes
+│  ├─ needles-control.nano-nodes (optional)
+│  └─ needles.nodes (optional)
+├─ Needles/
+│  ├─ netlink.needles
+│  ├─ gpu-init.needles
+│  └─ soundpulse.needles
+├─ Needle-Logs/
+│  └─ *.log

@@ -4,9 +4,11 @@
 # sync helpme micro-nodes
 
 ├─ Micro-Module/
-│  ├─ Micro-Nodes/          # Mikro-Module (*.*-micro-nodes)
-│  ├─ Micro-Notes/          # Libery (*.*-micro-notes) | Template Vorlagen
-│  └─ Micro-Errors/         # Logdateien (.micro-logs)
+│  ├─ Micro-Nodes/                     # Mikro-Module (*.*-micro-nodes)
+│  │  ├─ needles-handler.micro-nodes   # Needles Handling for .micro-notes
+│  │  └─ micro-nodes.wiki-notes        # Info 
+│  ├─ Micro-Notes/                     # Libery (*.*-micro-notes) | Template Vorlagen
+│  └─ Micro-Errors/                    # Logdateien (.micro-logs)
 
 
 # klare Trennung geschaffen zwischen:

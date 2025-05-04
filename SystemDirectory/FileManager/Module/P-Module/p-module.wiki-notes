@@ -1,12 +1,15 @@
 231
 │  ├─ P-Module/
 232
-│  ├─ P-Nodes/              # Kernmodule (.p-nodes) für Shell-Logik
-│  │  ├─ p.p-nodes          # p <Ordner> Tree suche 
-│  │  └─ p-nodes.wiki-notes # wiki-notes
+│  ├─ P-Nodes/                 # Kernmodule (.p-nodes) für Shell-Logik
+│  │  ├─ p.p-nodes             # p <Ordner> Tree suche 
+│  │  └─ p-nodes.wiki-notes    # wiki-notes
 233
-│  ├─ P-Notes/              # Notizdateien (.p-notes) für Dokumentation
+│  ├─ P-Notes/                 # Notizdateien (.p-notes) für Dokumentation
+│  │  └─ p-notes.wiki-notes    # wiki-notes
 234
-│  ├─ P-Search/             # Suchskripte für P-Module
+│  ├─ P-Search/                # Suchskripte für P-Module
+│  │  └─ p-search.wiki-notes   # wiki-notes
 235
-│  └─ P-Errors/             # Logdateien (.p-logs) für Fehlerprotokolle
+│  └─ P-Errors/                # Logdateien (.p-logs) für Fehlerprotokolle
+│     └─ p-errors.wiki-notes   # wiki-notes

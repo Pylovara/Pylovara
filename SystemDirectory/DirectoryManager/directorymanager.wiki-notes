@@ -1,6 +1,3 @@
-100
-|-Pylovara/SystemDirectory/
-│###############################################################################
 101
 │-DirectoryManager/
 │  ├─ cli-hilfsausgabe.pv.conf             # Zentrale Konfigurationsdatei
@@ -12,18 +9,7 @@
 │  ├─ systemboot-config.pv-conf            # Konfiguration für Systemboot
 102
 │  ├─ DatenTypen.wiki-notes                # Übersicht der Dateitypen
+103
 │  ├─ directorymanager.wiki-notes # Dokumentation der Steuerzentrale
-│  └─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
 104
-├─ Systemboot/
-│  ├─ pylovara.install-nodes   # Hauptinstallationsskript
-│  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
-│  ├─ setup-aliases.boot-nodes # Einrichtung von Aliasen
-│  └─ systemboot.wiki-notes    # Dokumentation der Boot-Funktionen
-│############################################################################### 
-│WikiLexikon : systemdirectory.wiki.notes
-│# WikiSearch /~ Helpme systemdirectory
-│# WikiSearch /~ Helpme 100
-│# Tree       /~ p DirectoryManager/   
-│# pylo DirectoryManager/- systemdirectory.wiki.notes cat
-│###############################################################################
+│  └─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle

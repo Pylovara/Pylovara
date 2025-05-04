@@ -104,9 +104,18 @@
 │     └─ wiki-cache.wiki-notes # wiki-notes
 271
 ├─ Nano-Module/
-│  ├─ Nano-Nodes/           # Feingranulare Module (.nano-nodes)
-│  ├─ Nano-Notes/           # Dokumentation (.nano-notes)
-│  └─ Nano-Errors/          # Logdateien (.nano-logs)
+272
+│  ├─ Nano-Nodes/              # Feingranulare Module (.nano-nodes)
+│  │  └─ nano-nodes.wiki-notes # wiki-notes
+273
+│  ├─ Nano-Notes/              # Dokumentation (.nano-notes)
+│  │  └─ nano-notes.wiki-notes # wiki-notes
+274
+│  ├─ Nano-Errors/             # Logdateien (.nano-logs)
+│  │  └─ nano-errors.wiki-notes# wiki-notes
+275
+│  └─ Nano-Cache/              # Cache für Alles
+│  │  └─ nano-errors.wiki-notes# wiki-notes
 281
 ├─ Micro-Module/
 │  ├─ Micro-Nodes/                     # Mikro-Module (*.*-micro-nodes)

@@ -1,3 +1,19 @@
+# WorkSpace und extra .core-wiki-notes
+
+
+SystemDirectory/
+├─ DirectoryManager/
+│  └─ ...
+├─ MCS-DNA/
+│  ├─ MCS-Module/
+│  │  ├─ MCS-ISA/
+│  │  ├─ MCS-Cache/
+│  │  ├─ MCS-GUARD/
+│  │  └─ MCS-Nodes/
+│  ├─ MCS-Notes/
+│  ├─ mcs.pv-conf
+│  └─ mcs-dokumentation.wiki-notes
+
 #### Maschinen Code Speech Datenloop Manager -MCSDM-
 - datenschleife
 - EB|RB 126731287 Code error vor der daten übertragung (ErrorBinär)

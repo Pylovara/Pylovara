@@ -1,35 +1,15 @@
-   │  ├─ Nano-Module/
-   │  │  ├─ Nano-Nodes/          # Feingranulare Module (.nano-nodes)
-   │  │  ├─ Nano-Notes/          # Dokumentation (.nano-notes)
-   │  │  └─ Nano-Errors/         # Logdateien (.nano-logs)
+271
+├─ Nano-Module/
+272
+│  ├─ Nano-Nodes/              # Feingranulare Module (.nano-nodes)
+│  │  └─ nano-nodes.wiki-notes # wiki-notes
+273
+│  ├─ Nano-Notes/              # Dokumentation (.nano-notes)
+│  │  └─ nano-notes.wiki-notes # wiki-notes
+274
+│  ├─ Nano-Errors/             # Logdateien (.nano-logs)
+│     └─ nano-errors.wiki-notes# wiki-notes
 
 # Werden als Kragen behandelt ... .*-nodes greifen direkt zu oder können
 # aufgaben aufteilen in logiken ... 
-# Dient Später z.b auch für Equilizer zwecke
-# über Bass.audio-nano-nodes
-
-# beispiel :
-
-# Anschluss.micro-nodes       - .needles
-# Volumen.audio-in-nodes      - .needles
-# Höhe.audio-in-nano-nodes    - .needles
-# Mittel.audio-in-nano-nodes  - .needles
-# Bass.audio-in-nano-nodes    - .needles
-
-# Anschluss.micro-nodes       -  .needles
-# Volumen.audio-out-nodes     -  .needles
-# Höhe.audio-out-nano-nodes   -  .needles
-# Mittel.audio-out-nano-nodes -  .needles
-# Bass.audio-out-nano-nodes   -  .needles
-
-# Anschluss.micro-nodes       -  .needles
-# Microphon.audio-in-nano-nodes  .needles
-# Höhe.audio-in-nano-nodes    -  .needles
-# Mittel.audio-in-nano-nodes  -  .needles
-# Bass.audio-in-nano-nodes    -  .needles
-
-# Anschluss.micro-nodes       -  .needles
-# Microphon.audio-out-nano-nodes .needles
-# Höhe.audio-out-nano-nodes   -  .needles
-# Mittel.audio-out-nano-nodes -  .needles
-# Bass.audio-out-nano-nodes   -  .needles
+# Dient Später z.b auch für Equilizer zwecke aller art 

@@ -9,16 +9,18 @@
 10 
 |-Pylovara/SystemDirectory/
 │###############################################################################
+11
 │-DirectoryManager/
-│  ├─ cli-hilfsausgabe.pv.conf # Zentrale Konfigurationsdatei
-│  ├─ SystemControl.pv-conf    # Steuerung aller Module
-│  │  # Sourced Module | Alias | Hertzstück | kann später in bashrc oder zhs etc sourced werden
-│  ├─ Pylovara-Wiki.pv-conf    # Konfiguration für Wiki-Module
+│  ├─ cli-hilfsausgabe.pv.conf             # Zentrale Konfigurationsdatei
+│  ├─ SystemControl.pv-conf                # Steuerung aller Module
+│  │  # Sourced Module | Alias | Herzstück | Control zu allen pv.conf 
+│  │  # kann später in bashrc oder zhs etc sourced werden
+│  ├─ Pylovara-Wiki.pv-conf                # Konfiguration für Wiki-Module
 │  ├─ pylovara-needles.pv-conf             # Konfiguration für Needles
 │  ├─ pylovara-directorymanager.wiki-notes # Dokumentation der Steuerzentrale
-│  ├─ DatenTypen.wiki-notes     # Übersicht der Dateitypen
-│  ├─ systemboot-config.pv-conf # Konfiguration für Systemboot
-│  └─ lexikon.wiki-notes        # Übersicht + Nummer | Anlaufstelle
+│  ├─ DatenTypen.wiki-notes                # Übersicht der Dateitypen
+│  ├─ systemboot-config.pv-conf            # Konfiguration für Systemboot
+│  └─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
 ├─ Systemboot/
 │  ├─ pylovara.install-nodes   # Hauptinstallationsskript
 │  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung

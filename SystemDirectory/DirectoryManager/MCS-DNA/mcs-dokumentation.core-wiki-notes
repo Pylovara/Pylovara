@@ -1,18 +1,18 @@
 # WorkSpace und extra .core-wiki-notes
 
-
-SystemDirectory/
-├─ DirectoryManager/
-│  └─ ...
-├─ MCS-DNA/
-│  ├─ MCS-Module/
-│  │  ├─ MCS-ISA/
-│  │  ├─ MCS-Cache/
-│  │  ├─ MCS-GUARD/
-│  │  └─ MCS-Nodes/
-│  ├─ MCS-Notes/
-│  ├─ mcs.pv-conf
-│  └─ mcs-dokumentation.wiki-notes
+Pylovara/SystemDirectory/DirectoryManager/
+└─ MCS-DNA/
+   ├─ MCS-Module/
+   │  ├─ MCS-ISA/
+   │  │  └─ isafinder.mcs-isa-nodes
+   │  ├─ MCS-Cache/
+   │  │  └─ isafinder.mcs-cache-nodes
+   │  ├─ MCS-GUARD/
+   │  └─ MCS-Nodes/
+   │     └─ daten-protocol.mcs-nodes       # ← Einstiegspunkt
+   ├─ MCS-Notes/
+   ├─ mcs.pv-conf                          # ← SystemControl für MCS
+   └─ mcs-dokumentation.wiki-notes
 
 #### Maschinen Code Speech Datenloop Manager -MCSDM-
 - datenschleife

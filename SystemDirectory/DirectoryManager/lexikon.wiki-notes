@@ -8,23 +8,15 @@
 #############################################################
 
 
-# Kapitel
-lex lexikon.wiki-notes                  # helpme lex    helpme lexikon      
-100 systemdirectory.wiki-notes          # AST | Übersicht | Speziel
-101 directorymanager.wiki-notes         # AST | Übersicht | Speziel
-110 systemboot.wiki-notes               # AST | Übersicht | Speziel
-220 filemanager.wiki-notes              # AST | Übersicht | Speziel
+# Nummer + AST Übersicht                # Rooling-Release Updates
+lex lexikon.wiki-notes                  # helpme lex | helpme lexikon      
+100 systemdirectory.wiki-notes          # AST | Übersicht | Spezial
+101 directorymanager.wiki-notes         # AST | Übersicht | Spezial
+110 systemboot.wiki-notes               # AST | Übersicht | Spezial
+220 filemanager.wiki-notes              # AST | Übersicht | Spezial
+230 module.wiki-notes                   # AST | Übersicht | Spezial
 
+# Nummer + Übersicht                    # Anlaufstelle | Einzelbedarf
 
-
-# Übersicht + Nummer                    # Anlaufstelle
-
-00 pylovara-ast.wiki-notes              # MAIN TREE - MAIN STAGE - MAIN WORK - MAIN INFOS
-01 systemboot.wiki.notes                # Zuckünftige Möglichkeiten ( Installer kommt später )
-02 p-nodes.wiki-notes                   # Funktion
-03 pylo-nodes.wiki-notes                # Funktion
-04 directorymanager.wiki.notes          # Ast
-05 systemdirectory.wiki.notes           # Info 
-06 module.wiki.notes                    # Ast
-07 pylovara-directorymanager.wiki-notes # Funktion | Info | Center 
-08 DatenTypen.wiki-notes                # Übersicht der Dateitypen
+102 DatenTypen.wiki-notes               # Daten Typen | Bedeutung | Nutzen
+103 lexikon.wiki-notes                  # helpme 103 | lex | lexikon

@@ -1,67 +1,7 @@
-# Dokumentation (.needles-notes)
+293
+│  ├─ Needles-Notes/        # Dokumentation (.needles-notes)
+│  │  └─ micro-notes.wiki-notes        # Info
 
 
-# Was ist eine *.*needles Datei?
 
-# Eine *.needles ist ein direkt adressierbares Treibermodul.
-# Sie stellt die Verbindung zwischen Shell-Steuerung (z. B. über pylovara) und einem konkreten Gerätetreiber dar – 
-# ohne Umwege über GUIs oder Daemons.
-
-# Jede .needles-Datei trägt exakt den Namen ihres Treibers – plus Funktionsbereich – und bekommt die Endung -*needles.
-# Aufbau eines .needles-Namens:
-
-# Syntax:
-
-# <treibername>.<komponentenname>-needles
-
- #Beispiel:
-
-# nvidia_GeForce_RTX.gpu-needles
-# intel_hd_audio.sound-needles
-# realtek_8139.network-needles
-
-# Ziel & Aufgabe:
-
-# Die *.needles fungieren als:
-
-#    🔌 Ersatz & Erweiterung der GUI-Steuerung von Herstellern
-
-#    🔍 Systematische Auflistung verfügbarer Treiberfunktionen (Modul-Liste, Flags, Settings)
-
-#    ⚙️ Steuerobjekt für Shell-Automation, etwa für:
-
-#       Power States / Overclocking
-#       Sound-Modulation
-#       Temperaturgrenzen
-#       Device Reset, Disable, Priorisierung
-
-# Sicherheitskonzept:
-# Weil needles teils Kernel-nahe Eingriffe ermöglichen, gelten klare Regeln:
-
-#    Ausführung nur mit Root-Rechten
-#    Jede Needle erzeugt ein Log in Needle-Logs/
-#    Zustimmung per Prompt für kritische Operationen (z. B. Overclock, Treibertausch)
-#    Optional: Checksum-Whitelist für erlaubte Treiberpakete
-
-# Integration mit micro-nodes:
-
-# Eine micro-node kann eine oder mehrere needles triggern oder steuern.
-# So entsteht ein Regelkreis aus:
-
-#    micro-node (z. B. sound.bass-micro-nodes)
-#    → ruft intel_hd_audio.sound-needles auf
-#    → führt gezielte Aktionen aus (per pactl/amixer oder sysctl)
-
-# Beispielhilfe für helpme needles
-# Was ist eine Needle?
-# Eine Needle ist ein ausführbares Shell-Modul, das direkt mit einem Gerätetreiber kommuniziert. Sie trägt den Namen des Treibers (z. B. nvidia_GeForce_RTX) und ist ansprechbar über `pylovara needle <name>`.
-# Zweck:
-# Needles erlauben die Kontrolle über Hardware wie Soundkarten, Grafikkarten, Netzwerke oder CPU-Funktionen – ohne GUI, direkt über die Shell.
-# Aufbau:
-# <treiber>.<komponente>-needles
-# Sicherheit:
-# Root nötig, alles wird geloggt, kritische Eingriffe nur mit Bestätigung.
-
-# Beispiel:
-# intel_hd_audio.sound-needles → regelt Volume, Input, Output direkt über pactl oder alsa
 

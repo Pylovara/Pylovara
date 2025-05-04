@@ -102,24 +102,24 @@
 265
 │  └─ Wiki-Cache/              # Cache-Dateien für schnellere Suchen
 │     └─ wiki-cache.wiki-notes # wiki-notes
-237
+271
 ├─ Nano-Module/
 │  ├─ Nano-Nodes/           # Feingranulare Module (.nano-nodes)
 │  ├─ Nano-Notes/           # Dokumentation (.nano-notes)
 │  └─ Nano-Errors/          # Logdateien (.nano-logs)
-238
+281
 ├─ Micro-Module/
 │  ├─ Micro-Nodes/                     # Mikro-Module (*.*-micro-nodes)
 │  │  ├─ needles-handler.micro-nodes   # Needles Handling for .micro-notes
 │  │  └─ micro-nodes.wiki-notes        # Info
 │  ├─ Micro-Notes/                     # Libery (*.*-micro-notes) | Template Vorlagen
 │  └─ Micro-Errors/                    # Logdateien (.micro-logs)
-239
+291
 ├─ Needles-Module/
 │  ├─ Needles-Nodes/        # Hochspezialisierte Module (.needles)
 │  ├─ Needles-Notes/        # Dokumentation (.needles-notes)
 │  └─ Needles-Errors/       # Logdateien (.needles-logs)
-240
+301
 └─ Maker-Module/
    ├─ Maker-Nodes/        # Bau Amt - gibt dir was -
    │  ├─ pylovara.maker.nodes # Protoyp Nodes Maker

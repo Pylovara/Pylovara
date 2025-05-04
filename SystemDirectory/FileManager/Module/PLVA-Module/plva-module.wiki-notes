@@ -1,5 +1,14 @@
-   │  ├─ PLVA-Module/
-   │  │  ├─ PLVA-Nodes/          # Layout-Module (.pv-objekt) für GUI-Integration
-   │  │  ├─ PLVA-Notes/          # Dokumentation für Layouts
-   │  │  ├─ PLVA-Search/         # Suchskripte für Layouts
-   │  │  └─ PLVA-Errors/         # Logdateien für Layout-Fehler
+251
+├─ PLVA-Module/
+252
+│  ├─ PLVA-Nodes/              # Layout-Module (.pv-objekt) für GUI-Integration
+│  │  └─ plva-nodes.wiki-notes
+253
+│  ├─ PLVA-Notes/              # Dokumentation für Layouts
+│  │  └─ plva-notes.wiki-notes
+254
+│  ├─ PLVA-Search/             # Suchskripte für Layouts
+│  │  └─ plva-search.wiki-notes
+255
+│  └─ PLVA-Errors/             # Logdateien für Layout-Fehler
+│     └─ plva-errors.wiki-notes

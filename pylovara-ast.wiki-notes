@@ -87,19 +87,19 @@
 255
 │  └─ PLVA-Errors/             # Logdateien für Layout-Fehler
 │     └─ plva-errors.wiki-notes# wiki-notes
-260
-├─ Wiki-Module/
 261
+├─ Wiki-Module/
+262
 │  ├─ Wiki-Nodes/              # Such- und Verwaltungsmodule (.wiki-nodes)
 │  │  ├─ wiki.wiki-nodes       # helpme <Suchbegriff> (.wiki-notes)
-│  │  └─ wiki.wiki-notes       # wiki-notes
-262
+│  │  └─ wiki-nodes.wiki-notes       # wiki-notes
+263
 │  ├─ Wiki-Notes/              # Dokumentation (.wiki.notes) Lexikon
 │  │  └─ wiki-notes.wiki-notes # wiki-notes
-263
+264
 │  ├─ Wiki-Search/             # Suchskripte für .ast-wiki-notes long Lexikon
 │  │  └─ wiki-search.wiki-notes# wiki-notes
-264
+265
 │  └─ Wiki-Cache/              # Cache-Dateien für schnellere Suchen
 │     └─ wiki-cache.wiki-notes # wiki-notes
 237

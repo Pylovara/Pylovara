@@ -1,16 +1,12 @@
-220
-|-Pylovara/SystemDirectory/FileManager/
-|###############################################################################
-├─ Module/
-221
+231
 │  ├─ P-Module/
-222
+232
 │  ├─ P-Nodes/              # Kernmodule (.p-nodes) für Shell-Logik
 │  │  ├─ p.p-nodes          # p <Ordner> Tree suche 
 │  │  └─ p-nodes.wiki-notes # wiki-notes
-223
+233
 │  ├─ P-Notes/              # Notizdateien (.p-notes) für Dokumentation
-224
+234
 │  ├─ P-Search/             # Suchskripte für P-Module
-225
+235
 │  └─ P-Errors/             # Logdateien (.p-logs) für Fehlerprotokolle

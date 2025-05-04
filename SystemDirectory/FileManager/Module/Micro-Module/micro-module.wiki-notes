@@ -1,8 +1,19 @@
-   │  ├─ Micro-Module/
-   │  │  ├─ Micro-Nodes/         # Mikro-Module (.micro-nodes)
-   │  │  ├─ Micro-Notes/         # Dokumentation (.micro-notes)
-   │  │  └─ Micro-Errors/        # Logdateien (.micro-logs)
+281
+├─ Micro-Module/
+282
+│  ├─ Micro-Nodes/                     # Mikro-Module (*.*-micro-nodes)
+│  │  └─ needles-handler.micro-nodes   # Needles Handling for .micro-notes
+│  │  ├─ micro-nodes.wiki-notes        # Info
+│  │  └─ micro--handler.wiki-notes     # Run
+283
+│  ├─ Micro-Notes/                     # Libery (*.*-micro-notes) | Template Vorlagen
+│  │  └─ micro-notes.wiki-notes        # Info
+284
+│  └─ Micro-Errors/                    # Logdateien (.micro-logs)
+│     └─ micro-errors.wiki-notes        # Info
+
 
    # *1.*2-micro-nodes
    # usb.mouse-micro-nodes    - allzweckwaffe für zugriffspunkte alle art
-   # wird meist als vorstufe zu einer nodes verwendet , zapft an , gibt weiter .
+   # wird meist als vorstufe oder nachgang zu einer *.*-nodes verwendet , zapft an 
+   # gibt weiter , *.*-needles sind direkt an der quelle.

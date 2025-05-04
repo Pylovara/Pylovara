@@ -73,12 +73,20 @@
 245
 │  └─ Pylo-Errors/             # Logdateien (.pylo-logs)
 │     └─ pylo-errors.wiki-notes# wiki-notes
-235
+251
 ├─ PLVA-Module/
+252
 │  ├─ PLVA-Nodes/              # Layout-Module (.pv-objekt) für GUI-Integration
+│  │  └─ plva-nodes.wiki-notes # Gui | Tui | System Grafik Sektion
+253
 │  ├─ PLVA-Notes/              # Dokumentation für Layouts
+│  │  └─ plva-notes.wiki-notes # Layout Ablagen | Vordefiniert
+254
 │  ├─ PLVA-Search/             # Suchskripte für Layouts
+│  │  └─ plva-search.wiki-notes# Interne In layout suchbegriffe
+255
 │  └─ PLVA-Errors/             # Logdateien für Layout-Fehler
+│     └─ plva-errors.wiki-notes# wiki-notes
 236
 ├─ Wiki-Module/
 │  ├─ Wiki-Nodes/           # Such- und Verwaltungsmodule (.wiki-nodes)

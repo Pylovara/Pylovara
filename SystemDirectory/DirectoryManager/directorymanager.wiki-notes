@@ -1,4 +1,7 @@
-11
+100
+|-Pylovara/SystemDirectory/
+│###############################################################################
+101
 │-DirectoryManager/
 │  ├─ cli-hilfsausgabe.pv.conf             # Zentrale Konfigurationsdatei
 │  ├─ SystemControl.pv-conf                # Steuerung aller Module
@@ -7,10 +10,11 @@
 │  ├─ Pylovara-Wiki.pv-conf                # Konfiguration für Wiki-Module
 │  ├─ pylovara-needles.pv-conf             # Konfiguration für Needles
 │  ├─ systemboot-config.pv-conf            # Konfiguration für Systemboot
-12
+102
 │  ├─ DatenTypen.wiki-notes                # Übersicht der Dateitypen
 │  ├─ directorymanager.wiki-notes # Dokumentation der Steuerzentrale
 │  └─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
+104
 ├─ Systemboot/
 │  ├─ pylovara.install-nodes   # Hauptinstallationsskript
 │  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
@@ -19,7 +23,7 @@
 │############################################################################### 
 │WikiLexikon : systemdirectory.wiki.notes
 │# WikiSearch /~ Helpme systemdirectory
-│# WikiSearch /~ Helpme 10
+│# WikiSearch /~ Helpme 100
 │# Tree       /~ p DirectoryManager/   
 │# pylo DirectoryManager/- systemdirectory.wiki.notes cat
 │###############################################################################

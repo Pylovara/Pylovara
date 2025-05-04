@@ -20,9 +20,8 @@
 │  ├─ systemboot-config.pv-conf            # Konfiguration für Systemboot
 102
 │  ├─ DatenTypen.wiki-notes                # Übersicht der Dateitypen
-103
 │  ├─ directorymanager.wiki-notes # Dokumentation der Steuerzentrale
-104
+103
 │  └─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
 110
 ├─ Systemboot/
@@ -47,29 +46,39 @@
 231
 │  ├─ P-Module/
 232
-│  ├─ P-Nodes/              # Kernmodule (.p-nodes) für Shell-Logik
-│  │  ├─ p.p-nodes          # p <Ordner> Tree suche 
-│  │  └─ p-nodes.wiki-notes # wiki-notes
+│  ├─ P-Nodes/                 # Kernmodule (.p-nodes) für Shell-Logik
+│  │  ├─ p.p-nodes             # p <Ordner> Tree suche 
+│  │  └─ p-nodes.wiki-notes    # wiki-notes
 233
-│  ├─ P-Notes/              # Notizdateien (.p-notes) für Dokumentation
+│  ├─ P-Notes/                 # Notizdateien (.p-notes) für Dokumentation
+│  │  └─ p-notes.wiki-notes    # wiki-notes
 234
-│  ├─ P-Search/             # Suchskripte für P-Module
+│  ├─ P-Search/                # Suchskripte für P-Module
+│  │  └─ p-search.wiki-notes   # wiki-notes
 235
-│  └─ P-Errors/             # Logdateien (.p-logs) für Fehlerprotokolle
-234
-├─ Pylo-Module/ 
-│  ├─ Pylo-Nodes/           # Kernmodule (.pylo-nodes) für Pylo-Features
-│  │  ├─ pylo.pylo-nodes    # pylo <Ordner>/- DATA SHELL 
+│  └─ P-Errors/                # Logdateien (.p-logs) für Fehlerprotokolle
+│     └─ p-errors.wiki-notes   # wiki-notes
+241
+├─ Pylo-Module/
+242
+│  ├─ Pylo-Nodes/              # Kernmodule (.pylo-nodes) für Pylo-Features
+│  │  ├─ pylo.pylo-nodes       # pylo <Ordner>/- DATA SHELL 
 │  │  └─ pylo-nodes.wiki-notes # wiki-notes
-│  ├─ Pylo-Notes/           # Notizdateien (.pylo-notes)
-│  ├─ Pylo-Search/          # Suchskripte für Pylo-Module - extras
-│  └─ Pylo-Errors/          # Logdateien (.pylo-logs)
+243
+│  ├─ Pylo-Notes/              # Notizdateien (.pylo-notes)
+│  │  └─ pylo-notes.wiki-notes # wiki-notes
+244
+│  ├─ Pylo-Search/             # Suchskripte für Pylo-Module - extras
+│  │  └─ pylo-search.wiki-notes# wiki-notes
+245
+│  └─ Pylo-Errors/             # Logdateien (.pylo-logs)
+│     └─ pylo-errors.wiki-notes# wiki-notes
 235
 ├─ PLVA-Module/
-│  ├─ PLVA-Nodes/           # Layout-Module (.pv-objekt) für GUI-Integration
-│  ├─ PLVA-Notes/           # Dokumentation für Layouts
-│  ├─ PLVA-Search/          # Suchskripte für Layouts
-│  └─ PLVA-Errors/          # Logdateien für Layout-Fehler
+│  ├─ PLVA-Nodes/              # Layout-Module (.pv-objekt) für GUI-Integration
+│  ├─ PLVA-Notes/              # Dokumentation für Layouts
+│  ├─ PLVA-Search/             # Suchskripte für Layouts
+│  └─ PLVA-Errors/             # Logdateien für Layout-Fehler
 236
 ├─ Wiki-Module/
 │  ├─ Wiki-Nodes/           # Such- und Verwaltungsmodule (.wiki-nodes)

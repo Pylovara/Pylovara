@@ -68,9 +68,11 @@
 │  ├─ Nano-Notes/           # Dokumentation (.nano-notes)
 │  └─ Nano-Errors/          # Logdateien (.nano-logs)
 ├─ Micro-Module/
-│  ├─ Micro-Nodes/          # Mikro-Module (*.*-micro-nodes)
-│  ├─ Micro-Notes/          # Libery (*.*-micro-notes) | Template Vorlagen
-│  └─ Micro-Errors/         # Logdateien (.micro-logs)
+│  ├─ Micro-Nodes/                     # Mikro-Module (*.*-micro-nodes)
+│  │  ├─ needles-handler.micro-nodes   # Needles Handling for .micro-notes
+│  │  └─ micro-nodes.wiki-notes        # Info 
+│  ├─ Micro-Notes/                     # Libery (*.*-micro-notes) | Template Vorlagen
+│  └─ Micro-Errors/                    # Logdateien (.micro-logs)
 ├─ Needles-Module/
 │  ├─ Needles-Nodes/        # Hochspezialisierte Module (.needles)
 │  ├─ Needles-Notes/        # Dokumentation (.needles-notes)

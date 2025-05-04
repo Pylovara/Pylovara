@@ -1,39 +1,16 @@
-   │  ├─ P-Module/
-   │  │  ├─ P-Nodes/             # Kernmodule (.p-nodes) für Shell-Logik
-   │  │  ├─ P-Notes/             # Notizdateien (.p-notes) für Dokumentation
-   │  │  ├─ P-Search/            # Suchskripte für P-Module
-   │  │  └─ P-Errors/            # Logdateien (.p-logs) für Fehlerprotokolle
-
-
-# nodes sind enweder eigenständige oder multiple knoten
-
-# Werden als Kragen behandelt ... .*-nodes greifen direkt zu oder können
-# aufgaben aufteilen in logiken ... 
-# Dient Später z.b auch für Equilizer zwecke
-# über Bass.audio-nano-nodes
-
-# beispiel :
-
-# Anschluss.micro-nodes       - .needles
-# Volumen.audio-in-nodes      - .needles
-# Höhe.audio-in-nano-nodes    - .needles
-# Mittel.audio-in-nano-nodes  - .needles
-# Bass.audio-in-nano-nodes    - .needles
-
-# Anschluss.micro-nodes       -  .needles
-# Volumen.audio-out-nodes     -  .needles
-# Höhe.audio-out-nano-nodes   -  .needles
-# Mittel.audio-out-nano-nodes -  .needles
-# Bass.audio-out-nano-nodes   -  .needles
-
-# Anschluss.micro-nodes       -  .needles
-# Microphon.audio-in-nano-nodes  .needles
-# Höhe.audio-in-nano-nodes    -  .needles
-# Mittel.audio-in-nano-nodes  -  .needles
-# Bass.audio-in-nano-nodes    -  .needles
-
-# Anschluss.micro-nodes       -  .needles
-# Microphon.audio-out-nano-nodes .needles
-# Höhe.audio-out-nano-nodes   -  .needles
-# Mittel.audio-out-nano-nodes -  .needles
-# Bass.audio-out-nano-nodes   -  .needles
+220
+|-Pylovara/SystemDirectory/FileManager/
+|###############################################################################
+├─ Module/
+221
+│  ├─ P-Module/
+222
+│  ├─ P-Nodes/              # Kernmodule (.p-nodes) für Shell-Logik
+│  │  ├─ p.p-nodes          # p <Ordner> Tree suche 
+│  │  └─ p-nodes.wiki-notes # wiki-notes
+223
+│  ├─ P-Notes/              # Notizdateien (.p-notes) für Dokumentation
+224
+│  ├─ P-Search/             # Suchskripte für P-Module
+225
+│  └─ P-Errors/             # Logdateien (.p-logs) für Fehlerprotokolle

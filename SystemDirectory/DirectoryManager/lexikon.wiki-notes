@@ -16,7 +16,19 @@ lex lexikon.wiki-notes                  # helpme lex | helpme lexikon
 220 filemanager.wiki-notes              # AST | Übersicht | Spezial
 230 module.wiki-notes                   # AST | Übersicht | Spezial
 
-# Nummer + Übersicht                    # Anlaufstelle | Einzelbedarf
-
+# DirectoryManager Übersicht
 102 DatenTypen.wiki-notes               # Daten Typen | Bedeutung | Nutzen
-103 lexikon.wiki-notes                  # helpme 103 | lex | lexikon
+103 lexikon.wiki-notes                  # helpme 103  | lex | lexikon
+
+
+# P-Module Übersicht
+232 p-nodes.wiki-notes                  # Funktion | Infos
+233 p-notes.wiki-notes                  # Extra Suche  | Infos
+234 p-search.wiki-notes                 # Extra Suche Binäre Begriffe
+235 p-errors.wiki-notes                 # Interne Error Logs
+
+# Pylo-Module Übersicht
+242 pylo-nodes.wiki-notes               # Funktion | Infos
+243 pylo-notes.wiki-notes               # Extra Suche  | Infos
+244 pylo-search.wiki-notes              # Extra Suche Binäre Begriffe
+245 pylo-errors.wiki-notes              # Interne Error Logs

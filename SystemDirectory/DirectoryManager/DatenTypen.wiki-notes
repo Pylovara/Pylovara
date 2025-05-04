@@ -1,1 +1,22 @@
+102
+│  ├─ DatenTypen.wiki-notes                # Übersicht der Dateitypen
 
+
+
+Mutter Logik        = *.*-nodes
+Tochter Logik       = *.*-nano-nodes
+Schaltung Zuordnung = *.*-micro-nodes
+Treiber Anker       = *.*-needles
+
+Speziel
+Wiki Bash           = helpme
+Wiki Logik          = wiki.wiki-nodes
+Wiki Notizen        = *.wiki-notes
+
+P Bash              = p <Ordnernamen>
+p Logik             = p.p-nodes
+p Notiz             = *.*-p-notes
+
+Pylo Bash           = pylo <Ordnernamen>/- Data SHELL
+Pylo Logik          = pylo.pylo-nodes
+Pylo Notizen        = *.*-pylo-notes

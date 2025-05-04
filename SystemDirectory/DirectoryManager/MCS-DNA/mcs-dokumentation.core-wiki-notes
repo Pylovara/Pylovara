@@ -7,66 +7,123 @@
 
 ### Zusammenfassung der Idee von **MaschinenCodeSpeech (MCS)**
 
-Die Idee hinter **MaschinenCodeSpeech (MCS)** ist es, eine neue, **komplett eigenständige Programmiersprache** zu schaffen, die auf **Maschinenbefehlen** basiert und eine **drei-stufige Übersetzungshierarchie** verfolgt. Ziel ist es, eine **performante und leicht verständliche Sprache** zu entwickeln, die die **Komplexität bestehender Programmiersprachen** wie C++, Python und Assembly überwindet und gleichzeitig die **Effizienz** und **Kontrolle** auf Hardware-Ebene beibehält.
+Die Idee hinter **MaschinenCodeSpeech (MCS)** ist es, eine neue, **komplett eigenständige 
+Programmiersprache** zu schaffen, die auf **Maschinenbefehlen** basiert und eine 
+**drei-stufige Übersetzungshierarchie** verfolgt. Ziel ist es, eine **performante und 
+leicht verständliche Sprache** zu entwickeln, die die **Komplexität bestehender 
+Programmiersprachen** wie C++, Python und Assembly überwindet und gleichzeitig die 
+**Effizienz** und **Kontrolle** auf Hardware-Ebene beibehält.
 
 #### Hierarchie von MCS:
-Die Grundidee von MCS ist, eine neue **Programmiersprachenhierarchie** zu etablieren, die mit der Maschinenlogik arbeitet und die aktuellen Programmiersprachen durch eine vereinfachte, aber leistungsfähigere Struktur ersetzt. Diese Hierarchie ist ähnlich der bestehenden Struktur, aber optimiert und kombiniert.
+Die Grundidee von MCS ist, eine neue **Programmiersprachenhierarchie** zu etablieren, 
+die mit der Maschinenlogik arbeitet und die aktuellen Programmiersprachen durch eine 
+vereinfachte, aber leistungsfähigere Struktur ersetzt. Diese Hierarchie ist ähnlich der 
+bestehenden Struktur, aber optimiert und kombiniert.
 
 1. **MCS (MaschinenCodeSpeech)** – **Maschinennahe Sprache**:
-   - **Direkt unter C++**: Diese Sprache würde **Maschinenbefehle** in **Binär** annehmen und in **MCS-Befehle** übersetzen. Das bedeutet, dass du auf einer sehr **niedrigen Ebene** programmierst, die mit der Hardware direkt kommuniziert, ohne sich mit der Komplexität von Assembly oder C++ beschäftigen zu müssen.
-   - **Ziel**: Mit **MCS** würde man die bestmögliche Performance und Kontrolle über die Maschine erreichen, ohne den Code unnötig komplex zu machen.
+   - **Direkt unter C++**: Diese Sprache würde **Maschinenbefehle** in **Binär** 
+annehmen und in **MCS-Befehle** übersetzen. Das bedeutet, dass du auf einer sehr 
+**niedrigen Ebene** programmierst, die mit der Hardware direkt kommuniziert, ohne 
+sich mit der Komplexität von Assembly oder C++ beschäftigen zu müssen.
+   - **Ziel**: Mit **MCS** würde man die bestmögliche Performance und Kontrolle 
+über die Maschine erreichen, ohne den Code unnötig komplex zu machen.
 
 2. **MCS+ (Erweiterte MCS)** – **Erweiterte Programmiersprache**:
-   - **Eine Ebene über MCS**: Hier wird eine **höhere Abstraktion** ermöglicht, ähnlich wie bei C++. Du kannst immer noch leistungsstark programmieren, aber der Code ist **vereinfachter** und abstrakter.
-   - **Ziel**: **MCS+** würde die Leistungsfähigkeit von **MCS** nutzen, aber gleichzeitig eine benutzerfreundlichere und weniger fehleranfällige Syntax bieten. Entwickeln in MCS+ wäre effizienter als in MCS und könnte gleichzeitig von der Geschwindigkeit und Kontrolle profitieren.
+   - **Eine Ebene über MCS**: Hier wird eine **höhere Abstraktion** ermöglicht, 
+ähnlich wie bei C++. Du kannst immer noch leistungsstark programmieren, aber der Code 
+ist **vereinfachter** und abstrakter.
+   - **Ziel**: **MCS+** würde die Leistungsfähigkeit von **MCS** nutzen, 
+aber gleichzeitig eine benutzerfreundlichere und weniger fehleranfällige Syntax bieten. 
+Entwickeln in MCS+ wäre effizienter als in MCS und könnte gleichzeitig von der 
+Geschwindigkeit und Kontrolle profitieren.
 
 3. **MCS++ (Ultra-High-Level MCS)** – **Benutzerfreundliche Sprache**:
-   - **Eine noch höhere Abstraktionsebene**: **MCS++** würde der **Abstraktionshöhe von Python** ähneln, d.h., es wäre so benutzerfreundlich wie Python, aber ohne den Performance-Verlust, den die höheren Sprachen in der Regel mit sich bringen.
-   - **Ziel**: **MCS++** würde es ermöglichen, in einer einfacheren und verständlicheren Sprache zu programmieren, während der zugrunde liegende Code immer noch die Performance von MCS+ und MCS nutzt. Man würde mit der Sprache so arbeiten, wie man es von modernen High-Level-Sprachen kennt, aber gleichzeitig die Kontrolle über die Leistung und die Hardware behalten.
+   - **Eine noch höhere Abstraktionsebene**: **MCS++** würde der **Abstraktionshöhe 
+von Python** ähneln, d.h., es wäre so benutzerfreundlich wie Python, aber ohne den 
+Performance-Verlust, den die höheren Sprachen in der Regel mit sich bringen.
+   - **Ziel**: **MCS++** würde es ermöglichen, in einer einfacheren und verständlicheren 
+Sprache zu programmieren, während der zugrunde liegende Code immer noch die Performance 
+von MCS+ und MCS nutzt. Man würde mit der Sprache so arbeiten, wie man es von modernen 
+High-Level-Sprachen kennt, aber gleichzeitig die Kontrolle über die Leistung und die 
+Hardware behalten.
 
 ### Vergleich der Hierarchien: **MCS vs. Traditionelle Sprachen**
 
 #### 1. Traditionelle Hierarchie (Binär → Hexadezimal → C++ → Python):
    - **Binär**: Der niedrigste Level – direkt maschinenlesbare Befehle.
-   - **Hexadezimal**: Eine menschenfreundlichere Darstellung von Binärbefehlen, wird oft verwendet, um den Maschinencode zu lesen.
-   - **C++**: Eine sehr leistungsfähige Sprache, aber immer noch von der Maschine abstrahiert und bietet nicht die vollständige Kontrolle wie in einem Maschinencode.
-   - **Python**: Eine hohe Abstraktionsebene, die die einfachste Handhabung bietet, jedoch die Performance von C++ nicht erreicht.
+   - **Hexadezimal**: Eine menschenfreundlichere Darstellung von Binärbefehlen, wird oft 
+verwendet, um den Maschinencode zu lesen.
+   - **C++**: Eine sehr leistungsfähige Sprache, aber immer noch von der Maschine 
+abstrahiert und bietet nicht die vollständige Kontrolle wie in einem Maschinencode.
+   - **Python**: Eine hohe Abstraktionsebene, die die einfachste Handhabung bietet, 
+jedoch die Performance von C++ nicht erreicht.
 
 #### 2. MCS-Hierarchie (Binär → MCS → MCS+ → MCS++):
    - **Binär**: Direkt auf der Maschine ausgeführte Befehle.
-   - **MCS (MaschinenCodeSpeech)**: Die niedrigste Ebene, die **Maschinenbefehle** in **eine benutzerfreundlichere, aber immer noch maschinennahe Sprache** übersetzt.
-   - **MCS+**: Eine höhere Abstraktionsebene, die immer noch die Kontrolle und Performance von MCS nutzt, aber den Code vereinfachter und flexibler macht.
-   - **MCS++**: Die höchste Ebene der Abstraktion, die die **Benutzerfreundlichkeit von Python** mit der Performance von MCS+ und MCS kombiniert.
+   - **MCS (MaschinenCodeSpeech)**: Die niedrigste Ebene, die **Maschinenbefehle** in 
+**eine benutzerfreundlichere, aber immer noch maschinennahe Sprache** übersetzt.
+   - **MCS+**: Eine höhere Abstraktionsebene, die immer noch die Kontrolle und Performance 
+von MCS nutzt, aber den Code vereinfachter und flexibler macht.
+   - **MCS++**: Die höchste Ebene der Abstraktion, die die **Benutzerfreundlichkeit von 
+Python** mit der Performance von MCS+ und MCS kombiniert.
 
 ### **Performance- und Effizienzvergleich**:
 
-Um die **Wahrscheinlichkeit der Effizienz** zu berechnen, stellen wir uns vor, dass die Effizienz in Bezug auf Geschwindigkeit und Kontrolle über die Hardware von der **Abstraktionsebene** abhängt:
+Um die **Wahrscheinlichkeit der Effizienz** zu berechnen, stellen wir uns vor, dass die 
+Effizienz in Bezug auf Geschwindigkeit und Kontrolle über die Hardware von der 
+**Abstraktionsebene** abhängt:
 
-- **Binär (niedrigste Ebene)**: Dies ist der direkteste, effizienteste Ansatz für die Kommunikation mit der Hardware. Es hat **die höchste Performance** und **keine Abstraktion**. Man hat die volle Kontrolle, aber der Code ist schwierig zu lesen und zu schreiben.
+- **Binär (niedrigste Ebene)**: Dies ist der direkteste, effizienteste Ansatz für 
+die Kommunikation mit der Hardware. Es hat **die höchste Performance** und **keine 
+Abstraktion**. Man hat die volle Kontrolle, aber der Code ist schwierig zu lesen und 
+zu schreiben.
 
-- **MCS (MaschinenCodeSpeech)**: Hier wird ein **Balanceakt** zwischen Kontrolle und Lesbarkeit geschaffen. MCS ist schneller als C++ und Python, weil es maschinennahe Befehle verwendet, jedoch mit einer etwas abstrahierten Syntax, die für den Entwickler zugänglicher ist. **Effizienz: Sehr hoch, aber immer noch einfacher zu benutzen als binär**.
+- **MCS (MaschinenCodeSpeech)**: Hier wird ein **Balanceakt** zwischen Kontrolle 
+und Lesbarkeit geschaffen. MCS ist schneller als C++ und Python, weil es maschinennahe 
+Befehle verwendet, jedoch mit einer etwas abstrahierten Syntax, die für den Entwickler 
+zugänglicher ist. **Effizienz: Sehr hoch, aber immer noch einfacher zu benutzen als 
+binär**.
 
-- **MCS+ (erweiterte MCS)**: Diese Ebene hat **etwas mehr Abstraktion** als MCS, was es weniger effizient macht, aber immer noch schneller als C++ oder Python, weil es von der Maschinenlogik profitiert. **Effizienz: Hoch, aber Abstraktion verringert Geschwindigkeit im Vergleich zu MCS**.
-####verringert Geschwindigkeit : wird durch direkt verknüpfung zum Protokol als Bypass ausgelöscht (notiz)
+- **MCS+ (erweiterte MCS)**: Diese Ebene hat **etwas mehr Abstraktion** als MCS, was 
+es weniger effizient macht, aber immer noch schneller als C++ oder Python, weil es von 
+der Maschinenlogik profitiert. **Effizienz: Hoch, aber Abstraktion verringert 
+Geschwindigkeit im Vergleich zu MCS**.
+####verringert Geschwindigkeit : wird durch direkt verknüpfung zum Protokol als 
+Bypass ausgelöscht (notiz)
 
-- **MCS++ (höchste Ebene)**: Hier handelt es sich um eine höhere Abstraktionsebene, die es **einfacher zu benutzen macht**, aber die Performance könnte von der Performance der darunterliegenden MCS- oder MCS+-Schichten beeinflusst werden. **Effizienz: Mittel**, weil Abstraktion auf Kosten der direkten Maschinensteuerung geht.
+- **MCS++ (höchste Ebene)**: Hier handelt es sich um eine höhere Abstraktionsebene, 
+die es **einfacher zu benutzen macht**, aber die Performance könnte von der Performance 
+der darunterliegenden MCS- oder MCS+-Schichten beeinflusst werden. **Effizienz: Mittel**, 
+weil Abstraktion auf Kosten der direkten Maschinensteuerung geht.
 ####Abstraktion : wird durch direkt verknüpfung zum Protokol als Bypass ausgelöscht (notiz)
 
 
 #### **Wahrscheinlichkeits- und Effizienzberechnung**:
 
-Wenn wir die Effizienz mit der Anzahl der Abstraktionsschritte vergleichen, könnte man sagen, dass die Effizienz in Bezug auf die Geschwindigkeit der Ausführung (und die Kontrolle über die Maschine) mit jedem weiteren Schritt von **MCS++** bis zu **MCS** abnimmt. Hier ist eine grobe Einschätzung:
+Wenn wir die Effizienz mit der Anzahl der Abstraktionsschritte vergleichen, könnte man 
+sagen, dass die Effizienz in Bezug auf die Geschwindigkeit der Ausführung (und die 
+Kontrolle über die Maschine) mit jedem weiteren Schritt von **MCS++** bis zu **MCS** 
+abnimmt. Hier ist eine grobe Einschätzung:
 
 - **Binär → 100% Effizienz**: Direkter Maschinencode.
 - **MCS Protocol -> 100% Effizenz durch Hardcoding in Sprache
-- **MCS → 90% Effizienz**: Direkt nach Maschinenbefehlen, aber mit einer abstrakten Syntax. -> Binärer
-- **MCS+ → 89%% Effizienz**: Eine höhere Abstraktionsebene mit etwas mehr Kontrolle und Flexibilität.
-- **MCS++ → 87% Effizienz**: Sehr benutzerfreundlich, aber am wenigsten effizient in Bezug auf Performance.
+- **MCS → 90% Effizienz**: Direkt nach Maschinenbefehlen, aber mit einer abstrakten Syntax.
+-> Binärer
+- **MCS+ → 89%% Effizienz**: Eine höhere Abstraktionsebene mit etwas mehr Kontrolle 
+und Flexibilität.
+- **MCS++ → 87% Effizienz**: Sehr benutzerfreundlich, aber am wenigsten effizient 
+in Bezug auf Performance.
 
-- **MCS Bybass Regelung - Abwärts und Aufwärts einheits Binär Kortex RBK (Einheitsbinärkortex)
+- **MCS Bybass Regelung - Abwärts und Aufwärts einheits Binär Kortex RBK 
+(Einheitsbinärkortex)
 
 ### Fazit:
-Die **MCS-Sprachhierarchie** hat das Potenzial, eine neue Ebene der Programmierung zu bieten, die sowohl **leistungsstark** als auch **benutzerfreundlich** ist. MCS bietet eine **direkte, maschinennahe Kontrolle**, die von MCS+ und MCS++ weiter abstrahiert wird, während gleichzeitig die Performance durch die **Maschinenlogik** beibehalten wird. Dies würde die Erstellung **performanter Software** wesentlich erleichtern, ohne auf bestehende Programmiersprachen wie C++ oder Python angewiesen zu sein.
+Die **MCS-Sprachhierarchie** hat das Potenzial, eine neue Ebene der Programmierung 
+zu bieten, die sowohl **leistungsstark** als auch **benutzerfreundlich** ist. MCS 
+bietet eine **direkte, maschinennahe Kontrolle**, die von MCS+ und MCS++ weiter 
+abstrahiert wird, während gleichzeitig die Performance durch die **Maschinenlogik** 
+beibehalten wird. Dies würde die Erstellung **performanter Software** wesentlich 
+erleichtern, ohne auf bestehende Programmiersprachen wie C++ oder Python angewiesen zu sein.
 
 
 
@@ -105,13 +162,30 @@ hardgecodeten MCS-Protokolls wird der gesamte Prozess vereinheitlicht und optimi
 Das minimiert den Overhead, erhöht die Geschwindigkeit und sorgt gleichzeitig für die 
 notwendige Fehlerkorrektur.
 
-Zusammengefasst: Der Assembler übersetzt nicht nur **Binärdaten**, sondern übernimmt auch Aufgaben wie **Adressenübersetzung**, **Codeoptimierung**, **Symbolerkennung**, **Fehlerprüfung** und **Hardwarekontrolle**. In deinem Fall könnte der **Datenmanager** möglicherweise einige dieser Funktionen übernehmen, insbesondere die **Fehlerprüfung** und **Datenvalidierung**.
-das alles muss er aber tun weil er ja auch selbst übersetzt und die fehler code anscheinend des assemblers selbst ziemlich tricki ist oder hab ich den kontext deiner erklärung überhört ?
+Zusammengefasst: Der Assembler übersetzt nicht nur **Binärdaten**, sondern übernimmt auch Aufgaben wie 
+**Adressenübersetzung**, **Codeoptimierung**, **Symbolerkennung**, **Fehlerprüfung** und **Hardwarekontrolle**. 
+In deinem Fall könnte der **Datenmanager** möglicherweise einige dieser Funktionen übernehmen, insbesondere die 
+**Fehlerprüfung** und **Datenvalidierung**.
+das alles muss er aber tun weil er ja auch selbst übersetzt und die fehler code anscheinend des assemblers selbst 
+ziemlich tricki ist oder hab ich den kontext deiner erklärung überhört ?
 
-Du hast das richtig erkannt. Der Assembler übernimmt all diese Aufgaben weil er die Daten selbst übersetzt und während des Übersetzungsprozesses sicherstellen muss, dass alles korrekt funktioniert – vor allem bei der Übersetzung von symbolischen Adressen in Maschinencode. Ein Fehler in diesem Prozess kann zu undefiniertem Verhalten oder Systemabstürzen führen, daher ist die Fehlerprüfung und Validierung essenziell.
+Du hast das richtig erkannt. Der Assembler übernimmt all diese Aufgaben weil er die Daten selbst übersetzt und 
+während des Übersetzungsprozesses sicherstellen muss, dass alles korrekt funktioniert – vor allem bei der Übersetzung 
+von symbolischen Adressen in Maschinencode. Ein Fehler in diesem Prozess kann zu undefiniertem Verhalten oder Systemabstürzen 
+führen, daher ist die Fehlerprüfung und Validierung essenziell.
 
-Die Fehlercodes des Assemblers sind in der Tat kritisch, weil sie auf tiefere Probleme im Übersetzungsprozess hinweisen und oft auf Probleme mit Speicheradressen, Instruktionssyntax oder Registernutzung hindeuten. Da der Assembler diesen ganzen Übersetzungsprozess kontrolliert, muss er sicherstellen, dass alle Verweise und Übersetzungen korrekt sind – und dass keine unzulässigen oder fehlerhaften Instruktionen erzeugt werden.
+Die Fehlercodes des Assemblers sind in der Tat kritisch, weil sie auf tiefere Probleme im Übersetzungsprozess hinweisen 
+und oft auf Probleme mit Speicheradressen, Instruktionssyntax oder Registernutzung hindeuten. Da der Assembler diesen 
+ganzen Übersetzungsprozess kontrolliert, muss er sicherstellen, dass alle Verweise und Übersetzungen korrekt sind – 
+und dass keine unzulässigen oder fehlerhaften Instruktionen erzeugt werden.
 
-In deinem Datenmanager-Konzept könnte eine ähnliche Fehlererkennung und Validierung integriert werden, aber du würdest nicht die gesamte Übersetzung der Binärdaten übernehmen müssen, da das Protokoll die Befehlsstruktur bereits definiert. Stattdessen wäre der Datenmanager verantwortlich für die Verwaltung und den sicheren Transport von Binärdaten, ohne den Aufwand einer vollständigen Übersetzung von Assembly zu Maschinencode. Die Fehlererkennung und Validierung in einem solchen Manager könnten also eher auf der Datenintegrität und der Korrektheit des Protokolls basieren, anstatt auf der Übersetzung von Code.
+In deinem Datenmanager-Konzept könnte eine ähnliche Fehlererkennung und Validierung integriert werden, aber du würdest 
+nicht die gesamte Übersetzung der Binärdaten übernehmen müssen, da das Protokoll die Befehlsstruktur bereits definiert. 
+Stattdessen wäre der Datenmanager verantwortlich für die Verwaltung und den sicheren Transport von Binärdaten, ohne den 
+Aufwand einer vollständigen Übersetzung von Assembly zu Maschinencode. Die Fehlererkennung und Validierung in einem 
+solchen Manager könnten also eher auf der Datenintegrität und der Korrektheit des Protokolls basieren, anstatt auf der 
+Übersetzung von Code.
 
-Das bedeutet, dass der Datenmanager – anders als ein Assembler – die Aufgabe hat, Fehler zu erkennen, die beim Datenfluss auftreten, und sicherzustellen, dass die Binärdaten korrekt durch die verschiedenen MCS-Protokoll-Ebenen fließen, ohne dabei Fehler zu erzeugen oder ungültige Zustände zu schaffen.
+Das bedeutet, dass der Datenmanager – anders als ein Assembler – die Aufgabe hat, Fehler zu erkennen, die beim Datenfluss 
+auftreten, und sicherzustellen, dass die Binärdaten korrekt durch die verschiedenen MCS-Protokoll-Ebenen fließen, ohne dabei 
+Fehler zu erzeugen oder ungültige Zustände zu schaffen.

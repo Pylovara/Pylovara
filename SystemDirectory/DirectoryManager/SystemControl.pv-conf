@@ -26,7 +26,7 @@ NEEDLE_HANDLER="$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes"
 [ -f "$NEEDLE_HANDLER" ] && source "$NEEDLE_HANDLER"
 
 # Wiki-Cache-Update
-# WIKI_CACHE_UPDATE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-update.sh"
+# WIKI_CACHE_UPDATE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-micro-nodes"
 # [ -f "$WIKI_CACHE_UPDATE" ] && bash "$WIKI_CACHE_UPDATE"
 
 ################################################################################

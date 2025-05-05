@@ -12,6 +12,10 @@ Wiki_DIR="/mnt/data/Pylovara/"
 ################################################################################
 # MODULE SOURCEN
 
+# Pylovara DNA Engines [MCS-CORE-ENGINE]
+source /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna
+source /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna-completion.core-bash-dna
+
 # Wiki-Modul
 source "$BASE_DIR/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
 

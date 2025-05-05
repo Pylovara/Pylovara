@@ -3,7 +3,20 @@
 | Modular | Systemsteuerung | Zukunftsorientiert | Rolling-Release
 |#########################################################
 
-# Entscheidung und Vision
+# Pylovara 2.0 - You System -
+
+Beta Install weg :
+git clone https://github.com/Pylovara/Pylovara.git
+cd Pylovara
+sudo bash pylovara.install-nodes
+
+# Neuer Stand
+
+Der Umbau ist Vollzogen , Pylovara liegt in der nächsten greifbaren Version vor , Stark verbessert , Stark erweitert , Stark Dokumentiert .
+Die Erweierungen lassen sich wären dem Betrieb rein Implementieren und Ausbauen ..... Ein Git clone auto updater bei sync wird noch erstellt,
+zur Zeit ist das Repo Manual Sync Pflichtig
+
+# Entscheidung und Vision am UmbauTag Pylovara 1.0
 
 Das Pylovara-FileManager-System wird umfassend überarbeitet, um eine effizientere, modularere und systemweite Integration zu ermöglichen. Ziel ist es, 
 ein robustes, Bash-basiertes Dateimanagementsystem zu schaffen, das als universelles Fundament für jedes POSIX-kompatible Betriebssystem dient – 

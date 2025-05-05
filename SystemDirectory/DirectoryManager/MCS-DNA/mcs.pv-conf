@@ -1,9 +1,12 @@
 # mcs.pv-conf – Kontrollzentrale für das MCS-Protokollsystem
-# Aktuell noch leer – wird später durch Subsysteme (Cache, Guard, ISA) erweitert
+# Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/mcs.pv-conf
+# Aktuell - DNA - DNA CMD INFOS - erweitert
 
 
 # DNA 
 source /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna
+[[ -f ~/.bash.d/dna.core-bash-dna ]] && source ~/.bash.d/dna.core-bash-dna
 
 # DNA Autovervollständiger [TAB]
 source /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna-completion.core-bash-dna
+[[ -f ~/.bash_completion.d/dna-completion.core-bash-dna ]] && source ~/.bash_completion.d/dna-completion.core-bash-dna

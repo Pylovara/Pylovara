@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# === Pylovara Full Installer ===
+# Ziel: SystemDirectory + Module Rootsystem-Install
+
+set -e
+
+echo "Pylovara Installer gestartet."
+echo "Rootrechte erforderlich."
+
+# Sicherstellen, dass sudo aktiv ist
+if [ "$EUID" -ne 0 ]; then
+  echo "Bitte mit sudo ausführen."
+  exit 1
+fi
+
+# Zielpfad
+INSTALL_DIR="/Pylovara"
+
+# Repository klonen
+echo "Klonen des Repositories..."
+git clone https://github.com/Pylovara/Pylovara.git "$INSTALL_DIR"
+
+# Rechte setzen
+echo "Setze Berechtigungen..."
+chmod -R 755 "$INSTALL_DIR"
+
+# Optional: .bashrc/.zshrc erweitern
+read -p "Möchtest du SystemControl.pv-conf automatisch in deine Shell einfügen? (j/n): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Jj]$ ]]; then
+  SHELL_RC="$HOME/.bashrc"
+  [[ "$SHELL" == */zsh ]] && SHELL_RC="$HOME/.zshrc"
+
+  echo "source $INSTALL_DIR/SystemDirectory/DirectoryManager/SystemControl.pv-conf" >> "$SHELL_RC"
+  echo "SystemControl.pv-conf wurde in $SHELL_RC eingebunden."
+  echo "Starte ein neues Terminal oder führe 'source $SHELL_RC' aus."
+else
+  echo "Du kannst die Datei manuell sourcen:"
+  echo "source $INSTALL_DIR/SystemDirectory/DirectoryManager/SystemControl.pv-conf"
+fi
+
+echo "Installation abgeschlossen."

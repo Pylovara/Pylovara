@@ -33,11 +33,14 @@ PYLO_NODE="$BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 [ -f "$PYLO_NODE" ] && source "$PYLO_NODE"
 
 # Needle-Handler
-NEEDLE_HANDLER="$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes"
-[ -f "$NEEDLE_HANDLER" ] && source "$NEEDLE_HANDLER"
+for node in "$BASE_DIR/FileManager/Module/Needles-Module/Needles-Nodes/"*.needles; do
+    [ -f "$node" ] && source "$node"
+done
+
+################################################################################
 
 # Wiki-Cache-Update
-#(Beta) Zum Akvieren WIKI_CACHE_UPDATE & [ -f "$WIKI-CACHE-UPDATE"] kommentieren für off :
+#(Beta) Zum Deaktivieren WIKI_CACHE_UPDATE & [ -f "$WIKI-CACHE-UPDATE"] auskommentieren
 WIKI_CACHE_UPDATE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-micro-nodes"
 [ -f "$WIKI_CACHE_UPDATE" ] && bash "$WIKI_CACHE_UPDATE"
 
@@ -59,11 +62,35 @@ alias pylo="bash $BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 # [ ! -d "$NEEDLE_LOG" ] && echo "[WARNUNG] Needles-Erros-Verzeichnis fehlt: $NEEDLE_LOG"
 
 ################################################################################
-# SystemControl.pv-conf MCS-DNA (Prototyp 1.0)
-source_all_dna() {
-    for file in Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/*.core-bash-dna; do
-        source "$file"
+
+################################################################################
+# Micro-Modul
+source_all_micro_nodes() {
+    for node in "$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes/"*.micro-nodes; do
+        [ -f "$node" ] && source "$node"
     done
 }
-SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH
+source_all_micro_nodes
+
+################################################################################
+# SystemControl.pv-conf MCS-DNA (Prototyp 2.0)
+source_all_dna() {
+    for file in "$CORE_DIR/MCS-BASH/"*.core-bash-dna; do
+        [ -f "$file" ] && source "$file"
+    done
+}
+
+################################################################################
+
+################################################################################
+# Debugging SystemControl.pv-conf MCS-DNA (Prototyp 2.0) (optional) deaktiviert
+#source_all_dna() {
+#    for file in "$CORE_DIR/MCS-BASH/"*.core-bash-dna; do
+#        [ -f "$file" ] && {
+#            echo "[DNA] Lade: $file"
+#            source "$file"
+#        }
+#    done
+#}
+
 ################################################################################

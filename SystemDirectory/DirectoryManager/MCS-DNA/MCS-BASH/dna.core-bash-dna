@@ -8,7 +8,6 @@
 DNA() {
     local cmd="$1"
     shift
-
     local dnafile="Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/${cmd}.core-bash-dna"
 
     if [[ -f "$dnafile" ]]; then

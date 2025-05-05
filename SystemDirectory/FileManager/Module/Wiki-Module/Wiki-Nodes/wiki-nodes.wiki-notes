@@ -11,56 +11,57 @@
 # eingabe : helpme 
 # search  : Name
 
-Erklärung des verbesserten Skripts prototyp 2.0 wiki-nodes.wiki-notes
+# Erklärung des verbesserten Skripts prototyp 2.0 wiki-nodes.wiki-notes
 
-    Basisstruktur:
-        Shebang und BASE_DIR: Bleibt unverändert, um Bash-Kompatibilität und die 
-        Root-Verzeichnisstruktur (/mnt/data/Pylovara) zu gewährleisten.
-        LEXIKON_FILE: Definiert den Pfad zu lexikon.wiki-notes, das als Referenz 
-        für ID-Mapping dient.
-        CACHE_FILE: Vorbereitet für zukünftige Cache-Integration (auskommentiert, 
-        um aktuelle Funktionalität nicht zu beeinträchtigen).
-    Fallback für helpme oder helpme 00:
-        Wenn kein Parameter (-z "$SEARCH_INPUT") oder 00 angegeben ist, wird 
-        lexikon.wiki-notes ausgegeben, da dies die zentrale Übersicht ist.
-        Prüft, ob die Lexikon-Datei existiert, um Fehler zu vermeiden.
-    ID-Suche (helpme <Nr>):
-        Prüft, ob die Eingabe eine Zahl ist ([[ "$SEARCH_INPUT" =~ ^[0-9]+$ ]]).
-        Sucht die ID in lexikon.wiki-notes (z. B. 100 systemdirectory.wiki-notes) 
-        und extrahiert den Dateinamen mit awk.
-        Sucht dann die Datei mit find im Verzeichnisbaum.
-        Gibt eine Fehlermeldung, wenn die ID nicht im Lexikon oder die Datei nicht 
-        gefunden wird.
-    Dateinamenssuche (helpme <dateiname>):
-        Wandelt die Eingabe in Kleinbuchstaben um (awk '{print tolower($0)}').
-        Führt eine case-insensitive Suche mit find -iname durch, wie im Originalskript.
-        Vorbereitet für Cache-Nutzung (auskommentiert), um spätere Optimierungen zu 
-        ermöglichen.
-    Fehlermeldungen:
-        Bei nicht gefundenen IDs oder Dateinamen wird eine klare Fehlermeldung ausgegeben, 
-        mit einem Hinweis auf helpme lex für die Übersicht.
-    Einhaltung der Anforderungen:
-        100 % Bash: Das Skript verwendet nur Bash-Befehle (grep, awk, find, cat), 
-        ohne externe Abhängigkeiten.
-        Modularität: Das Skript ist Teil des Wiki-Module-Ordners und wird über 
-        SystemControl.pv-conf gesourct (alias helpme="bash .../wiki.wiki-nodes"), was 
-        die Integration in .bashrc/.zshrc ermöglicht.
-        Synthesizer-Logiken: Die ID-Suche über lexikon.wiki-notes und die Dateinamenssuche 
-        sind eine robustere Suchlogik. Cache-Unterstützung ist vorbereitet, um die 
-        Performance zu verbessern.
-        Desktop-/Compositor-Unabhängigkeit: Als CLI-Skript ist es unabhängig von 
-        Desktop-Umgebungen und funktioniert in Terminals wie Kitty, Alacritty oder 
-        GNOME-Terminal.
-        Manuelle IDs: Die manuelle Zuweisung von IDs in lexikon.wiki-notes wird respektiert,
-        indem das Skript direkt auf dieses Mapping zugreift.
-    Beispielaufrufe:
-        helpme lex: Findet und zeigt lexikon.wiki-notes.
-        helpme 100: Findet 100 in lexikon.wiki-notes, mapped zu systemdirectory.wiki-notes,
-        und zeigt diese Datei.
-        helpme 00: Zeigt lexikon.wiki-notes als Fallback.
-        helpme: Zeigt lexikon.wiki-notes als Fallback.
-        helpme xyz: Gibt eine Fehlermeldung, wenn keine xyz.wiki-notes-Datei gefunden wird, 
-        mit Hinweis auf helpme lex.
+#    Basisstruktur:
+#        Shebang und BASE_DIR: Bleibt unverändert, um Bash-Kompatibilität und die 
+#        Root-Verzeichnisstruktur (/mnt/data/Pylovara) zu gewährleisten.
+#        LEXIKON_FILE: Definiert den Pfad zu lexikon.wiki-notes, das als Referenz 
+#        für ID-Mapping dient.
+#        CACHE_FILE: Vorbereitet für zukünftige Cache-Integration (auskommentiert, 
+#        um aktuelle Funktionalität nicht zu beeinträchtigen).
+#    Fallback für helpme oder helpme 00:
+#        Wenn kein Parameter (-z "$SEARCH_INPUT") oder 00 angegeben ist, wird 
+#        lexikon.wiki-notes ausgegeben, da dies die zentrale Übersicht ist.
+#        Prüft, ob die Lexikon-Datei existiert, um Fehler zu vermeiden.
+#   ID-Suche (helpme <Nr>):
+#        Prüft, ob die Eingabe eine Zahl ist ([[ "$SEARCH_INPUT" =~ ^[0-9]+$ ]]).
+#        Sucht die ID in lexikon.wiki-notes (z. B. 100 systemdirectory.wiki-notes) 
+#        und extrahiert den Dateinamen mit awk.
+#        Sucht dann die Datei mit find im Verzeichnisbaum.
+#        Gibt eine Fehlermeldung, wenn die ID nicht im Lexikon oder die Datei nicht 
+#        gefunden wird.
+#    Dateinamenssuche (helpme <dateiname>):
+#        Wandelt die Eingabe in Kleinbuchstaben um (awk '{print tolower($0)}').
+#        Führt eine case-insensitive Suche mit find -iname durch, wie im Originalskript.
+#        Vorbereitet für Cache-Nutzung (auskommentiert), um spätere Optimierungen zu 
+#        ermöglichen.
+#   Fehlermeldungen:
+#
+#   Bei nicht gefundenen IDs oder Dateinamen wird eine klare Fehlermeldung ausgegeben, 
+#        mit einem Hinweis auf helpme lex für die Übersicht.
+#    Einhaltung der Anforderungen:
+#        100 % Bash: Das Skript verwendet nur Bash-Befehle (grep, awk, find, cat), 
+#        ohne externe Abhängigkeiten.
+#        Modularität: Das Skript ist Teil des Wiki-Module-Ordners und wird über 
+#        SystemControl.pv-conf gesourct (alias helpme="bash .../wiki.wiki-nodes"), was 
+#        die Integration in .bashrc/.zshrc ermöglicht.
+#        Synthesizer-Logiken: Die ID-Suche über lexikon.wiki-notes und die Dateinamenssuche 
+#        sind eine robustere Suchlogik. Cache-Unterstützung ist vorbereitet, um die 
+#        Performance zu verbessern.
+#        Desktop-/Compositor-Unabhängigkeit: Als CLI-Skript ist es unabhängig von 
+#        Desktop-Umgebungen und funktioniert in Terminals wie Kitty, Alacritty oder 
+#        GNOME-Terminal.
+#        Manuelle IDs: Die manuelle Zuweisung von IDs in lexikon.wiki-notes wird respektiert,
+#        indem das Skript direkt auf dieses Mapping zugreift.
+#    Beispielaufrufe:
+#       helpme lex: Findet und zeigt lexikon.wiki-notes.
+#        helpme 100: Findet 100 in lexikon.wiki-notes, mapped zu systemdirectory.wiki-notes,
+#        und zeigt diese Datei.
+#        helpme 00: Zeigt lexikon.wiki-notes als Fallback.
+#        helpme: Zeigt lexikon.wiki-notes als Fallback.
+#        helpme xyz: Gibt eine Fehlermeldung, wenn keine xyz.wiki-notes-Datei gefunden wird, 
+#        mit Hinweis auf helpme lex.
 
 
 

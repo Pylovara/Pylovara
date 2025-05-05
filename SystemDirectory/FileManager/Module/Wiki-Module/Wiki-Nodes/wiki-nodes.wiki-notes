@@ -80,7 +80,7 @@ Erklärung des verbesserten Skripts prototyp 2.0 wiki-nodes.wiki-notes
 
 # Wenn Datei gefunden, anzeigen
 #if [[ -n "$FOUND_PATH" ]]; then
-    cat "$FOUND_PATH"
+#    cat "$FOUND_PATH"
 #else
 #    echo "[!] Keine passende .wiki-notes-Datei gefunden für: $SEARCH_NAME"
 #fi

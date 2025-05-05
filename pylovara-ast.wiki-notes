@@ -22,8 +22,25 @@
 │  ├─ DatenTypen.wiki-notes                # Übersicht der Dateitypen
 │  ├─ directorymanager.wiki-notes # Dokumentation der Steuerzentrale
 103
-│  └─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
-110
+│  ├─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
+104
+│  └─ MCS-DNA/
+│      ├─ MCS-Module/
+│      │  ├─ MCS-BASH/
+│      │  │  ├─ dna.core-bash-dna
+│      │  │  ├─ dna-completion.core-bash-dna
+│      │  │  └─ All dna<cmd> functionen | dna lex
+│      │  ├─ MCS-ISA/
+│      │  │  └─ isafinder.mcs-isa-nodes       # zuckunftsmusik|idee
+│      │  ├─ MCS-Cache/
+│      │  │  └─ isafinder.mcs-cache-nodes     # zuckunftsmusik|idee
+│      │  ├─ MCS-GUARD/
+│      │  └─ MCS-Nodes/
+│      ├─ MCS-Notes/
+│      ├─ mcs.pv-conf                          # Entwicklungsbreich Steuerung
+│      └─ mcs-dokumentation.wiki-notes
+│
+120
 ├─ Systemboot/
 │  ├─ pylovara.install-nodes   # Hauptinstallationsskript
 │  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
@@ -36,8 +53,6 @@
 │# Tree       /~ p DirectoryManager/
 │# pylo DirectoryManager/- systemdirectory.wiki.notes cat
 │###############################################################################
-
-
 220
 |-Pylovara/SystemDirectory/FileManager/
 |###############################################################################
@@ -155,48 +170,9 @@
 │# pylo FileManager/- module.wiki.notes cat
 │###############################################################################
 
-
-
-|-Pylovara/SystemDirectory/
-│###############################################################################
-│-DirectoryManager/
-│  ├─ cli-hilfsausgabe.pv.conf # Zentrale Konfigurationsdatei
-│  ├─ SystemControl.pv-conf    # Steuerung aller Module
-│  ├─ Pylovara-Wiki.pv-conf    # Konfiguration für Wiki-Module
-│  ├─ pylovara-directorymanager.wiki-notes # Dokumentation der Steuerzentrale
-│  ├─ DatenTypen.wiki-notes    # Übersicht der Dateitypen
-│  └─ systemboot-config.pv-conf # Konfiguration für Systemboot
-│###############################################################################
-│WikiLexikon : directorymanager.wiki.notes
-│# WikiSearch /~ Helpme directorymanager
-│# Tree       /~ p DirectoryManager/
-│# pylo DirectoryManager/- directorymanager.wiki.notes cat
-│###############################################################################
-
-
-
-
-|-Pylovara/SystemDirectory/
-│###############################################################################
-├─ Systemboot/
-│  ├─ pylovara.install-nodes   # Hauptinstallationsskript
-│  ├─ detect-system.boot-nodes # Erkennung der Zielumgebung
-│  ├─ setup-aliases.boot-nodes # Einrichtung von Aliasen
-│  └─ systemboot.wiki-notes    # Dokumentation der Boot-Funktionen
-│
-└─ P-Logs/                     # Zentrale Logs und Cache-Dateien
-│###############################################################################
-│WikiLexikon : systemboot.wiki.notes
-│# WikiSearch /~ Helpme systemboot
-│# Tree       /~ p Systemboot/
-│# pylo Systemboot/- systemboot.wiki.notes cat
-│###############################################################################
-
-
-
-
 |-Pylovara/SystemDirectory/
 │###############################################################################
 ├─ AI/                             # llm Spielplatz
 ├─ ROOT Partition/                 # Blumentopf - Satt - Betriebsystem
+└─ P-Logs/                     # Zentrale Logs und Cache-Dateien
 │###############################################################################

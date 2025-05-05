@@ -2,7 +2,7 @@
 │-DirectoryManager/
 │  ├─ cli-hilfsausgabe.pv.conf             # Zentrale Konfigurationsdatei
 │  ├─ SystemControl.pv-conf                # Steuerung aller Module
-│  │  # Sourced Module | Alias | Herzstück | Control zu allen pv.conf 
+│  │  # Sourced Module | Alias | Herzstück | Control zu allen pv.conf
 │  │  # kann später in bashrc oder zhs etc sourced werden
 │  ├─ Pylovara-Wiki.pv-conf                # Konfiguration für Wiki-Module
 │  ├─ pylovara-needles.pv-conf             # Konfiguration für Needles
@@ -11,4 +11,20 @@
 │  ├─ DatenTypen.wiki-notes                # Übersicht der Dateitypen
 │  ├─ directorymanager.wiki-notes # Dokumentation der Steuerzentrale
 103
-│  └─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
+│  ├─ lexikon.wiki-notes                   # Übersicht + Nummer | Anlaufstelle
+110
+│  └─ MCS-DNA/
+│      ├─ MCS-Module/
+│      │  ├─ MCS-BASH/
+│      │  │  ├─ dna.core-bash-dna
+│      │  │  ├─ dna-completion.core-bash-dna
+│      │  │  └─ All dna<cmd> functionen | dna lex
+│      │  ├─ MCS-ISA/
+│      │  │  └─ isafinder.mcs-isa-nodes       # zuckunftsmusik|idee
+│      │  ├─ MCS-Cache/
+│      │  │  └─ isafinder.mcs-cache-nodes     # zuckunftsmusik|idee
+│      │  ├─ MCS-GUARD/
+│      │  └─ MCS-Nodes/
+│      ├─ MCS-Notes/
+│      ├─ mcs.pv-conf                          # Entwicklungsbreich Steuerung
+│      └─ mcs-dokumentation.wiki-notes

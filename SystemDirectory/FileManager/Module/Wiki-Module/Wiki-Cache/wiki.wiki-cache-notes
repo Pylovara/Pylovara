@@ -1,2 +1,2 @@
-chmod u+w "$CACHE_FILE
+echo "chmod u+w "$CACHE_FILE"
 find "$BASE_DIR" -type f -name "*.wiki-notes" > "$CACHE_FILE"

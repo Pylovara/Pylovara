@@ -44,5 +44,5 @@ echo "[SystemControl] Verzeichnisstruktur geladen aus: $BASE_DIR"
 
 ################################################################################
 # INTEGRITÄTSPRÜFUNG (optional)
-NEEDLE_LOG="$BASE_DIR/FileManager/Module/Needle-Module/Needle-Logs"
-[ ! -d "$NEEDLE_LOG" ] && echo "[WARNUNG] Needle-Log-Verzeichnis fehlt: $NEEDLE_LOG"
+# NEEDLE_LOG="$BASE_DIR/SystemDirectory/FileManager/Module/Needles-Module/Needles-Errors"
+# [ ! -d "$NEEDLE_LOG" ] && echo "[WARNUNG] Needles-Erros-Verzeichnis fehlt: $NEEDLE_LOG"

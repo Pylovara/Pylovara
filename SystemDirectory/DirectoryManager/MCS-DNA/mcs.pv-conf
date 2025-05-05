@@ -1,11 +1,9 @@
 # mcs.pv-conf – Kontrollzentrale für das MCS-Protokollsystem
 # Aktuell noch leer – wird später durch Subsysteme (Cache, Guard, ISA) erweitert
 
-# Beispiel: Spätere Konfigurationsladung
-# source ./MCS-Module/MCS-Nodes/daten-protocol.mcs-nodes
 
+# DNA 
+source /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna
 
-# DNA ON = chmod +x
-source Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna
-
-
+# DNA Autovervollstäniger [TAB]
+source /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna-completion.core-bash-dna

@@ -1,12 +1,12 @@
 # MCS-BASH/ .core-bash-dna
 # dna lex - mcs-bash-lexikon.core-wiki-notes
 ########################################################
-# chmod +x            #   # Monitoring
-on  # dna on <file>   #   cpu  # Zeigt lscpu
-off # dna off <file>  #   hw   # Zeigt lshw (root nötig)
-                      #   pci  # Zeigt PCI-Bus
-                      #   usb  # Zeigt USB-Geräte
-                      #
+# chmod +x                 #   # Monitoring
+on       # dna on <file>   #   cpu  # Zeigt lscpu
+off      # dna off <file>  #   hw   # Zeigt lshw (root nötig)
+load     # wget <url>      #   pci  # Zeigt PCI-Bus
+ports    # netstat Combo   #   usb  # Zeigt USB-Geräte
+internet # ifconfig Less   #
 ########################################################
 
 

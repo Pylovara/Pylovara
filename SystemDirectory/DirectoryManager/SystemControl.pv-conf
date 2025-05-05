@@ -10,11 +10,17 @@ CORE_DIR="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
 # DateiTypen
 Wiki_DIR="/mnt/data/Pylovara/"
 ################################################################################
+
+################################################################################
+# DNA-Kernsystem laden (Funktion + Completion)
+DNA_CORE="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna"
+DNA_COMPLETION="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna-completion.core-bash-dna"
+
+[ -f "$DNA_CORE" ] && source "$DNA_CORE"
+[ -f "$DNA_COMPLETION" ] && source "$DNA_COMPLETION"
+################################################################################
+
 # MODULE SOURCEN
-
-# Pylovara DNA Engines [MCS-CORE-ENGINE] # < > 
-#source /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/mcs.pv-conf
-
 
 # Wiki-Modul
 source "$BASE_DIR/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"

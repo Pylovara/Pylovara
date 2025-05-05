@@ -7,8 +7,8 @@ BASE_DIR="/mnt/data/Pylovara"
 # Pfad zur Lexikon-Datei
 LEXIKON_FILE="$BASE_DIR/SystemDirectory/DirectoryManager/lexikon.wiki-notes"
 
-# Cache-Datei (für zukünftige Optimierung)
-# CACHE_FILE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki.wiki-cache-nodes"
+# Cache-Datei (für zukünftige Optimierung) Beta(Aus kommentieren # : 
+# CACHE_FILE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki.wiki-cache-notes"
 
 # Eingabe: Suchbegriff oder ID
 SEARCH_INPUT="$1"

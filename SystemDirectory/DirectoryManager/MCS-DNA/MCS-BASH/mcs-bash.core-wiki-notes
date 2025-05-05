@@ -1,1 +1,5 @@
 
+MCS-BASH/
+├─ dna.core-bash-dna         # Dispatcher (führt dna <kommando> aus)
+    ├─ on.core-bash-dna      # Implementiert dna on <file>
+    └─ off.core-bash-dna     # Implementiert dna off <file>

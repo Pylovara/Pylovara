@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Pylovara/SystemDirectory/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-update.sh
+# Skript zum Aktualisieren des Wiki-Cache
+
+BASE_DIR="/mnt/data/Pylovara"
+CACHE_FILE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki.wiki-cache-notes"
+
+# Sicherstellen, dass das Cache-Verzeichnis existiert
+CACHE_DIR=$(dirname "$CACHE_FILE")
+[ ! -d "$CACHE_DIR" ] && mkdir -p "$CACHE_DIR"
+
+# Cache generieren: Alle .wiki-notes-Dateien finden und speichern
+find "$BASE_DIR" -type f -name "*.wiki-notes" > "$CACHE_FILE" 2>/dev/null
+
+# Berechtigungen setzen
+chmod u+w "$CACHE_FILE"
+
+# Statusausgabe
+if [[ -f "$CACHE_FILE" ]]; then
+    echo "[Wiki-Cache] Cache erfolgreich aktualisiert: $CACHE_FILE"
+else
+    echo "[!] Fehler beim Erstellen des Cache: $CACHE_FILE"
+    exit 1
+fi

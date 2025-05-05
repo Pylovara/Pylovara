@@ -1,5 +1,9 @@
 
 MCS-BASH/
 ├─ dna.core-bash-dna         # Dispatcher (führt dna <kommando> aus)
+    ├─ cpu.core-bash-dna     # Zeigt CPU-Informationen (via lscpu)
+    ├─ hw.core-bash-dna      # Zeigt vollständige Hardware-Informationen (via lshw)
+    ├─ pci.core-bash-dna     # Zeigt PCI-Geräteinformationen (via lspci)
+    ├─ usb.core-bash-dna     # Zeigt USB-Geräteinformationen (via lsusb)
     ├─ on.core-bash-dna      # Implementiert dna on <file>
     └─ off.core-bash-dna     # Implementiert dna off <file>

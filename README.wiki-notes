@@ -5,11 +5,17 @@
 
 # Entscheidung und Vision
 
-Das Pylovara-FileManager-System wird umfassend überarbeitet, um eine effizientere, modularere und systemweite Integration zu ermöglichen. Ziel ist es, ein robustes, Bash-basiertes Dateimanagementsystem zu schaffen, das als universelles Fundament für jedes POSIX-kompatible Betriebssystem dient – sei es Arch Linux, Debian, openSUSE, FreeBSD, Windows NT (via WSL) oder Darwin (macOS). Der Kern des Systems ist eine flexible „Wurzel“-Struktur, die wie ein Blumentopf das Wachstum und die Interaktion mit Betriebssystemen ermöglicht, indem es direkt auf Shell-Ebene operiert.
+Das Pylovara-FileManager-System wird umfassend überarbeitet, um eine effizientere, modularere und systemweite Integration zu ermöglichen. Ziel ist es, 
+ein robustes, Bash-basiertes Dateimanagementsystem zu schaffen, das als universelles Fundament für jedes POSIX-kompatible Betriebssystem dient – 
+sei es Arch Linux, Debian, openSUSE, FreeBSD, Windows NT (via WSL) oder Darwin (macOS). Der Kern des Systems ist eine flexible „Wurzel“-Struktur, 
+die wie ein Blumentopf das Wachstum und die Interaktion mit Betriebssystemen ermöglicht, indem es direkt auf Shell-Ebene operiert.
 
 ## Warum diese Umstrukturierung?
 
-Die bisherigen Module nehmen zu viel Platz im Grundverzeichnis ein und erfordern ein optimiertes Design, um die Skalierbarkeit und Benutzerfreundlichkeit zu verbessern. Statt eines statischen Grundstocks wird ein dynamisches „Mutterordner“-Design eingeführt, das eine hochgradig anpassbare Bibliothek von Funktionen bereitstellt. Diese basiert auf einer Vielzahl von Dateitypen wie `*.wiki-nodes`, `*.wiki.notes`, `*.pylo-nodes`, `*.nano-nodes` und zukünftig `*.needles`, die zusammen einen modularen „Baum“ bilden. Dieses System soll:
+Die bisherigen Module nehmen zu viel Platz im Grundverzeichnis ein und erfordern ein optimiertes Design, um die Skalierbarkeit und Benutzerfreundlichkeit 
+zu verbessern. Statt eines statischen Grundstocks wird ein dynamisches „Mutterordner“-Design eingeführt, das eine hochgradig anpassbare Bibliothek 
+von Funktionen bereitstellt. Diese basiert auf einer Vielzahl von Dateitypen wie `*.wiki-nodes`, `*.wiki.notes`, `*.pylo-nodes`, `*.*-nano-nodes` und  
+`*.*-needles`, die zusammen einen modularen „Baum“ bilden. Dieses System soll:
 
 - **Vollständig integrierbar** sein, direkt auf Root-Ebene des Betriebssystems.
 - **Vorinstallierbar** auf jeder Partition, unabhängig von der Betriebssystemumgebung.
@@ -18,10 +24,17 @@ Die bisherigen Module nehmen zu viel Platz im Grundverzeichnis ein und erfordern
 
 ## Die „Wurzel“-Metapher
 
-Stellen Sie sich Pylovara als eine Kletterpflanze vor, deren Wurzeln tief in die Shell-Umgebung eines Betriebssystems greifen. Die „Früchte“ sind die Module (`*.nodes`, `*.notes`, etc.), die durch die zentrale Steuerung (`Pylovara-DirectoryManager`) wachsen und sich verzweigen. Diese Struktur ermöglicht:
+Stellen Sie sich Pylovara als eine Kletterpflanze vor, deren Wurzeln tief in die Shell-Umgebung eines Betriebssystems greifen. Die „Früchte“ sind die Module 
+(`*.*-nodes`, `*.*-notes`, etc.), die durch die zentrale Steuerung (`Pylovara-DirectoryManager`) wachsen und sich verzweigen. Diese Struktur ermöglicht:
 
-- **Systemweite Interaktion**: Pylovara agiert direkt über die Shell, ohne unnötige Abstraktionsschichten, und ist sogar in Rettungssystemen oder minimalen Umgebungen einsatzbereit.
-- **Modularität**: Neue Module (z. B. `*.audio-nodes`, `*.gpu-nodes`) können nahtlos hinzugefügt werden, um spezifische Hardware- oder Softwarekomponenten zu steuern.
+Spaß Erklärung
+Mutter     | Tochter/Töchter | Kind/Kinder | Eletriker       | Waffenschmied
+*.*-nodes  | *.*-nano-nodes  | *.*-Needles | *.*-micro-nodes | *.maker-nodes
+
+- **Systemweite Interaktion**: Pylovara agiert direkt über die Shell, ohne unnötige Abstraktionsschichten, und ist sogar in Rettungssystemen 
+oder minimalen Umgebungen einsatzbereit.
+- **Modularität**: Neue Module (z. B. `*.audio-nodes`, `*.gpu-nodes`) können nahtlos hinzugefügt werden, um spezifische Hardware- oder 
+Softwarekomponenten zu steuern.
 - **Portabilität**: Kompatibel mit jeder Bash-unterstützenden Umgebung, von Linux über BSD bis hin zu WSL oder macOS.
 
 Hier hört der Spaß aber nicht auf sondern fängt erst an !
@@ -44,25 +57,29 @@ Die einsatzgebiete sind unbegrenzt ....
 ## Neues Design und Funktionalität
 
 ### 1. Verbesserte Ordnerstruktur
-Um die Modularität zu maximieren, wird die Ordnerstruktur an Arch Linux-Prinzipien angelehnt, bleibt aber universell einsetzbar. Der neue „Mutterordner“ (`/Pylovara-FileManager-System`) dient als zentraler Knotenpunkt und enthält:
+Um die Modularität zu maximieren, wird die Ordnerstruktur an Arch Linux-Prinzipien angelehnt, bleibt aber universell einsetzbar. Der neue „Mutterordner“ 
+(`/Pylovara`) dient als zentraler Knotenpunkt und enthält:
 - **Module**: Unterverzeichnisse wie `Wiki-Module/`, `P-Monitoring/`, `P-Docs/`, die spezifische Aufgaben übernehmen.
 - **Konfigurationen**: `.pv-conf`-Dateien für systemweite Einstellungen.
 - **Logs und Cache**: Verzeichnis `P-Logs/` für Such-Caches und Protokolle.
 - **Steuerzentrale**: `Pylovara-DirectoryManager` als Bindeglied, das Module sourced und verwaltet.
 
 ### 2. Erweiterte Suchlogik
-Das System führt eine synthesizerartige Suchlogik ein, die `.wiki.notes`-Dateien nicht nur nach Dateinamen, sondern auch nach Inhalten, Schlagwörtern oder spezifischen Funktionen durchsucht. Module wie `aliasloaderwiki.wiki-nodes` und `wikifilter.wiki-nodes` ermöglichen:
+Das System führt eine synthesizerartige Suchlogik ein, die `.wiki.notes`-Dateien nicht nur nach Dateinamen, sondern auch nach Inhalten, Schlagwörtern 
+oder spezifischen Funktionen durchsucht. Module wie `aliasloaderwiki.wiki-nodes` und `wikifilter.wiki-nodes` ermöglichen:
 - **Systemweite Suche**: Durchsucht alle `.wiki.notes` im Verzeichnisbaum.
 - **Interaktive Filter**: Präzise, kontextbasierte Ergebnisse mit Tools wie `gum` oder `fzf`.
 - **Metadaten-Parsing**: Extrahiert Schlagworte, Status oder andere Metadaten aus Kopfzeilen.
 
 ### 3. Rolling-Release und Git-Integration
-Pylovara folgt einem Rolling-Release-Modell, bei dem Updates direkt über das Git-Repository (`https://github.com/Pylovara/Pylovara-FileManager-System`) bezogen werden. Ein Installer (`pylovara.installer-nodes`) kopiert das System in `/Pylovara-FileManager-System` und bindet es via `.bashrc` oder `.zshrc` ein. Optional kann ein GitHub-Wiki synchronisiert werden, um öffentliche Dokumentationen bereitzustellen.
+Pylovara folgt einem Rolling-Release-Modell, bei dem Updates direkt über das Git-Repository (`https://github.com/Pylovara/Pylovara`) bezogen werden. 
+Ein Installer (`pylovara.installer-nodes`) kopiert das System in `/Pylovara-FileManager-System` und bindet es via `.bashrc` oder `.zshrc` ein. 
+Optional kann ein GitHub-Wiki synchronisiert werden, um öffentliche Dokumentationen bereitzustellen.
 
 ### 4. Modulare Erweiterungen
-Die Bibliothek an `*.nodes` und `*.notes` wird erweitert, um zukünftige Anforderungen zu erfüllen:
-- **Bestehende Typen**: `*.wiki-nodes`, `*.wiki.notes`, `*.pylo-nodes`, `*.nano-nodes`.
-- **Neue Typen**: `*.audio-nodes`, `*.gpu-nodes`, `*.input-nodes`, etc., für hardware- oder funktionsspezifische Steuerung.
+Die Bibliothek an `*.*-nodes` und `*.*-notes` wird erweitert, um zukünftige Anforderungen zu erfüllen:
+- **Bestehende Typen**: `*.wiki-cache-nodes`, `*.wiki.nodes`, `*.wiki.notes`, `*.pylo-nodes`, `*.*-nano-nodes`.
+- **Neue Typen planung **: `*.audio-nodes`, `*.gpu-nodes`, `*.input-nodes`, etc., für hardware- oder funktionsspezifische Steuerung.
 - **Synthesizer-Logik**: Jeder Dateityp kann spezifische Aufgaben übernehmen (z. B. Konfiguration, Monitoring, Dokumentation) und ist über die Shell ansteuerbar.
 
 ## Vorteile von Pylovara
@@ -74,35 +91,45 @@ Die Bibliothek an `*.nodes` und `*.notes` wird erweitert, um zukünftige Anforde
 
 ## Ausblick
 
-Pylovara-FileManager-System soll ein unverzichtbares Allzweckwerkzeug für Systemadministratoren, Entwickler und Enthusiasten werden. Es bietet eine intuitive, shellbasierte Schnittstelle, die Betriebssysteme wie eine Kletterpflanze durchdringt – flexibel, robust und zukunftssicher. Durch die enge Integration mit Git und die Unterstützung für neue Dateitypen wird Pylovara kontinuierlich wachsen und sich an die Bedürfnisse seiner Nutzer anpassen.
+Pylovara-FileManager-System soll ein unverzichtbares Allzweckwerkzeug für Systemadministratoren, Entwickler und Enthusiasten werden. 
+Es bietet eine intuitive, shellbasierte Schnittstelle, die Betriebssysteme wie eine Kletterpflanze durchdringt – flexibel, robust und zukunftssicher.
+Durch die enge Integration mit Git und die Unterstützung für neue Dateitypen wird Pylovara kontinuierlich wachsen und sich an die Bedürfnisse seiner 
+Nutzer anpassen.
 
 ## Genug gesagt hier funktionen :
 
 Das plyo helpme-System – Terminalhilfe aus dem Maschinenraum
 
-In guter alter Unix-Tradition bringt Pylovara sein eigenes integriertes Hilfe- und Assistenzsystem mit – das plyo helpme-System. Keine grafische Spielerei, kein überfrachteter Manpage-Wald. Stattdessen: eine schlanke, modular aufrufbare Terminalhilfe, direkt aus dem Pylovara-Stammbaum. Schnell, lokal, ohne Umwege.
+In guter alter Unix-Tradition bringt Pylovara sein eigenes integriertes Hilfe- und Assistenzsystem mit – das plyo helpme-System. Keine grafische Spielerei, 
+kein überfrachteter Manpage-Wald. Stattdessen: eine schlanke, modular aufrufbare Terminalhilfe, direkt aus dem Pylovara-Stammbaum. Schnell, lokal, ohne Umwege.
 Was ist plyo helpme?
 
-Das plyo helpme-System ist eine zentrale Schnittstelle für Hilfe- und Unterstützungsfunktionen im Pylovara-FileManager-System. Es bedient sich derselben modularen Logik wie der Rest des Systems und greift auf *.wiki.notes-Dateien zurück, die inhaltlich sortiert, nummeriert und referenzierbar sind. Beispielhafte Aufrufe:
+Das plyo helpme-System ist eine zentrale Schnittstelle für Hilfe- und Unterstützungsfunktionen im Pylovara-FileManager-System. 
+Es bedient sich derselben modularen Logik wie der Rest des Systems und greift auf *.wiki.notes-Dateien zurück, die inhaltlich sortiert, nummeriert 
+und referenzierbar sind. Beispielhafte Aufrufe:
 
-pylovara helpme
-p helpme
-pylo helpme 01
-pylo helpme wiki
+Wiki -> helpme
+p Wiki-Module/ -> Ordnertree
+pylo Pylovara/- readme-wiki.notes cat
+helpme lex
 
 Features
 
     Soforthilfe zu Modulen und Funktionen
-    Zeigt kontextabhängige Informationen zu aktuellen oder benachbarten Modulen an. Ideal, um ohne Netz oder Browser sofort Zugriff auf relevante Inhalte zu bekommen.
+    Zeigt kontextabhängige Informationen zu aktuellen oder benachbarten Modulen an. 
+    Ideal, um ohne Netz oder Browser sofort Zugriff auf relevante Inhalte zu bekommen.
 
     Nummernbasierter Zugriff
-    Durch die Integration des lexikon.wiki-notes erhält jede .wiki.notes-Datei eine eindeutige Rufnummer. Der Befehl pylo helpme 03 ruft z. B. die dritte registrierte Datei auf.
+    Durch die Integration des lexikon.wiki-notes erhält jede .wiki.notes-Datei eine eindeutige Rufnummer. 
+    Der Befehl pylo helpme 03 ruft z. B. die dritte registrierte Datei auf.
 
     Suchfunktion und Aliasauflösung
-    Unterstützung durch Suchmodule wie wikifilter.wiki-nodes oder aliasloaderwiki.wiki-nodes erlaubt die Suche nach Schlagwörtern, Befehlen oder Modultiteln – interaktiv mit fzf, gum oder klassisch via grep.
+    Unterstützung durch Suchmodule wie wikifilter.wiki-nodes oder aliasloaderwiki.wiki-nodes erlaubt die Suche nach Schlagwörtern, 
+    Befehlen oder Modultiteln – interaktiv mit fzf, gum oder klassisch via grep.
 
     Shell-nativ & universell
-    Vollständig in Bash geschrieben – keine externen Abhängigkeiten. Damit läuft plyo helpme selbst in einer Notfallkonsole, Recovery-Umgebung oder per BusyBox.
+    Vollständig in Bash geschrieben – keine externen Abhängigkeiten. Damit läuft plyo helpme selbst in einer Notfallkonsole, 
+    Recovery-Umgebung oder per BusyBox.
 
 Ein Blick in die Zukunft
 

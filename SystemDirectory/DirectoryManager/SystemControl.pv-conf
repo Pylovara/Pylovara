@@ -25,6 +25,10 @@ PYLO_NODE="$BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 NEEDLE_HANDLER="$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes"
 [ -f "$NEEDLE_HANDLER" ] && source "$NEEDLE_HANDLER"
 
+# Wiki-Cache-Update
+# WIKI_CACHE_UPDATE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-update.sh"
+# [ -f "$WIKI_CACHE_UPDATE" ] && bash "$WIKI_CACHE_UPDATE"
+
 ################################################################################
 # SYSTEMALIASE
 alias helpme="bash $BASE_DIR/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"

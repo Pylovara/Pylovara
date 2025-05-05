@@ -1,6 +1,6 @@
 #!/bin/bash
 # dna.core-bash-dna
-# 🧬 DNA Engine – ersetzt klassische SHELL-Kommandos durch Enzym-Bindungen
+# DNA Engine – ersetzt klassische SHELL-Kommandos durch Enzym-Bindungen
 # Beispiel: DNA on <Zieldatei> → chmod +x <Zieldatei>
 
 # HEAD-Marker für spätere Parser-Bindungen
@@ -14,7 +14,7 @@ DNA() {
     case "$1" in
         on)
             if [[ -f "$2" ]]; then
-                echo "🧬 DNA aktiviert: chmod +x '$2'"
+                echo "DNA aktiviert: chmod +x '$2'"
                 chmod +x "$2"
             else
                 echo "❌ Datei '$2' nicht gefunden."

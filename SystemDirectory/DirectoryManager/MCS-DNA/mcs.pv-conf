@@ -4,3 +4,8 @@
 # Beispiel: Spätere Konfigurationsladung
 # source ./MCS-Module/MCS-Nodes/daten-protocol.mcs-nodes
 
+
+# DNA ON = chmod +x
+source Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna
+
+

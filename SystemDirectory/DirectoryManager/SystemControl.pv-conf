@@ -20,8 +20,7 @@ DNA_COMPLETION="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-
 [ -f "$DNA_COMPLETION" ] && source "$DNA_COMPLETION"
 ################################################################################
 
-# MODULE SOURCEN
-
+################################################################################
 # Wiki-Modul
 source "$BASE_DIR/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
 
@@ -38,9 +37,9 @@ NEEDLE_HANDLER="$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes"
 [ -f "$NEEDLE_HANDLER" ] && source "$NEEDLE_HANDLER"
 
 # Wiki-Cache-Update
-# (Beta) Zum Akvieren WIKI_CACHE_UPDATE & [ -f "$WIKI-CACHE-UPDATE"] auskommentieren :
-# WIKI_CACHE_UPDATE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-micro-nodes"
-# [ -f "$WIKI_CACHE_UPDATE" ] && bash "$WIKI_CACHE_UPDATE"
+#(Beta) Zum Akvieren WIKI_CACHE_UPDATE & [ -f "$WIKI-CACHE-UPDATE"] kommentieren für off :
+WIKI_CACHE_UPDATE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-micro-nodes"
+[ -f "$WIKI_CACHE_UPDATE" ] && bash "$WIKI_CACHE_UPDATE"
 
 ################################################################################
 # SYSTEMALIASE

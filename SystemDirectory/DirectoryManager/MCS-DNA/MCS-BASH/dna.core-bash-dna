@@ -1,0 +1,29 @@
+#!/bin/bash
+# dna.core-bash-dna
+# 🧬 DNA Engine – ersetzt klassische SHELL-Kommandos durch Enzym-Bindungen
+# Beispiel: DNA on <Zieldatei> → chmod +x <Zieldatei>
+
+# HEAD-Marker für spätere Parser-Bindungen
+# >>> DNA-HEAD-BEGIN
+# Funktion: DNA-Ersatz für Shellkommandos (chmod +x, cp, mv, etc.)
+# Status: aktivierbar durch Aufruf "dna"
+# Position: MCS-BASH/.core-bash-dna
+# >>> DNA-HEAD-END
+
+DNA() {
+    case "$1" in
+        on)
+            if [[ -f "$2" ]]; then
+                echo "🧬 DNA aktiviert: chmod +x '$2'"
+                chmod +x "$2"
+            else
+                echo "❌ Datei '$2' nicht gefunden."
+            fi
+            ;;
+        *)
+            echo "❔ Unbekannte DNA-Aktion: '$1'"
+            echo "Verfügbare DNA-Kommandos: on"
+            ;;
+    esac
+}
+export -f DNA

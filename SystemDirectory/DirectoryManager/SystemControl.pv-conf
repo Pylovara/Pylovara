@@ -6,7 +6,9 @@
 ################################################################################
 # BASISPFAD
 BASE_DIR="/mnt/data/Pylovara"
-
+CORE_DIR="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
+# DateiTypen
+Wiki_DIR="/mnt/data/Pylovara/"
 ################################################################################
 # MODULE SOURCEN
 
@@ -38,11 +40,21 @@ alias pylo="bash $BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 
 ################################################################################
 # DEBUG / STATUSAUSGABE (optional)
-echo "[SystemControl] Pylovara Steuerung geladen."
-echo "[SystemControl] Hauptmodule: Wiki, P, Pylo, Needles."
-echo "[SystemControl] Verzeichnisstruktur geladen aus: $BASE_DIR"
+# echo "[SystemControl] Pylovara Steuerung geladen."
+# echo "[SystemControl] Hauptmodule: Wiki, P, Pylo, Needles."
+# echo "[SystemControl] Verzeichnisstruktur geladen aus: $BASE_DIR"
 
 ################################################################################
 # INTEGRITÄTSPRÜFUNG (optional)
 # NEEDLE_LOG="$BASE_DIR/SystemDirectory/FileManager/Module/Needles-Module/Needles-Errors"
 # [ ! -d "$NEEDLE_LOG" ] && echo "[WARNUNG] Needles-Erros-Verzeichnis fehlt: $NEEDLE_LOG"
+
+################################################################################
+# SystemControl.pv-conf MCS-DNA (Prototyp 1.0)
+source_all_dna() {
+    for file in Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/*.core-bash-dna; do
+        source "$file"
+    done
+}
+SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH
+################################################################################

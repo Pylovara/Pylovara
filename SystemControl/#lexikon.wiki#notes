@@ -21,9 +21,9 @@ lexikon lexikon.wiki-notes        # helpme lexikon
 
 # Modul Übersicht
 010 nodes.wiki-notes                  # Mutter Konfig für *.*-nodes (aktivierbare Nodes)
-030 nano-nodes.wiki-notes             # Tochter - Feingranulare Steuerung von nano-Nodes
-040 micro-nodes.wiki-notes            # Kind - Ultra Feingranulare Steuerung - Optional
-050 logic.wiki-notes                  # Konfig für Templates / Micro-Module
-060 needles.wiki-notes                # Treibermodul-Steuerung | Zecke 
-070 dna.wiki-notes                    # Systemidentität & interne IDs | DNA <cmd>
-080 cache.wiki-notes                  # Zwischenablage für schnellzugriffe und mehr
+020 nano-nodes.wiki-notes             # Tochter - Feingranulare Steuerung von nano-Nodes
+030 micro-nodes.wiki-notes            # Kind - Ultra Feingranulare Steuerung - Optional
+040 logic.wiki-notes                  # Konfig für Templates / Micro-Module
+050 needles.wiki-notes                # Treibermodul-Steuerung | Zecke 
+060 dna.wiki-notes                    # Systemidentität & interne IDs | DNA <cmd>
+070 cache.wiki-notes                  # Zwischenablage für schnellzugriffe und mehr

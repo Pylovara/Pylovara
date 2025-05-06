@@ -1,0 +1,5 @@
+# list.core-dna
+DNA_EXEC() {
+    echo "🧬 Verfügbare DNA-Kommandos:"
+    ls Pylovara/SystemDirectory/FileManager/Basis-Module/Nodes/Shell*.core-dna | sed 's/.*\///;s/\.core-dna//'
+}

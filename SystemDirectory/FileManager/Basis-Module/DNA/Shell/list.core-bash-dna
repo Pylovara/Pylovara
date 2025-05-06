@@ -1,5 +1,0 @@
-# list.core-bash-dna
-DNA_EXEC() {
-    echo "🧬 Verfügbare DNA-Kommandos:"
-    ls Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/*.core-bash-dna | sed 's/.*\///;s/\.core-bash-dna//'
-}

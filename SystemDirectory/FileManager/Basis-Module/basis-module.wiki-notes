@@ -87,3 +87,19 @@
 
 #Cache = *.*-cache sind Schnellspeicher ablagen ..... wenn man sie verwenden möchte , brauch man 
         1.Einsatszweck 2.von welchem Datentyp 3. <Zweck>.<Datentyp>-cache
+
+
+Typ-Referenztabelle :
+
+# Übersicht aller Daten-Typen im Pylovara-System
+Typ         | Beschreibung                    | Beispieldatei
+------------|----------------------------------|-----------------------------
+*.*-notes   | Dokumentation & Wiki             | logic.sound-notes
+*.*-logic   | Logikmodule für Hardware         | rtx2060.gpu-logic
+*.*-nodes   | Hauptcontroller (Master-Regler)  | audio.master-nodes
+*.*-nano... | Feinsteuerung / Subschaltungen   | bass.tune-nano-nodes
+*.*-micro.. | Mikroregler (Low-Level Config)   | mic.input-gain.micro-nodes
+*.*-needles | Treiberverknüpfung & Zugriff     | nvidia.rtx3080.gpu-needles
+*.*-cache   | Kurzzeit-Zwischenspeicher        | tmp.vulkan-gpu.cache
+
+Modular - Erweiterbar - HeiligerGral

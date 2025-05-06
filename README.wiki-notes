@@ -10,6 +10,21 @@ git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara
 sudo bash pylovara.install-nodes
 
+Wichtig : Pylovara installiert sich ins MAIN verzeichnis , die SystemControl.pv.conf wird aber 
+noch nicht einwandfrei in eine bashrc eingebunden oder etwas das vergleichbar viel Kontrolle
+über ihre shell gibt ... demnach werden alle komponenten noch nicht ordnungsgemäßi geladen ...
+
+das pylovara System scheitert zur zeit an eine bash einbindung und deshlab müssen einzelne 
+komponenten extra gesourced werden ..... das verhindert zur zeit die nutzung durch den pylovara.install-nodes prozess 
+
+wer sich ein klein wenig auskennt kann die p pylo dna komponenten direkt in seine bashrc oder zshrc sourcen ......
+wer darauf angewiesen ist das es automatisch geht muss sich noch gedulden .....
+
+Das system Funktioniert , leider zur zeit nur bei Profis aber es funktioniert ..... 
+Mit den weiteren schritten werden bugfixed von nöten sein um diese kleinen aber wichtigen fehler
+aus Pylovara heraus zu arbeiten , erst dann werden weitere system komponenten verfeinert und einsatzbereit 
+zur verfügung stehen ...
+
 # Neuer Stand
 
 Der Umbau ist Vollzogen , Pylovara liegt in der nächsten greifbaren Version vor , Stark verbessert , Stark erweitert , Stark Dokumentiert .

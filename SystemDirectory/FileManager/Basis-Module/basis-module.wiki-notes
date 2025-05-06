@@ -1,0 +1,75 @@
+999
+
+# BauStelle NextUpdate INWORK
+
+# alle module die zu der basis gehören werden innerhalb des FileManager's
+# Noch Einheitlicher gemacht um den Überblick in Späteren Versionen
+# Zu Gewehrleisten .
+
+# Notes = *.*-notes werden als standart txt datei und lesbare Dateien verwendet
+       Info : *.*-notes können je nach aufgaben gebiet benannt werden .
+       benötigen sie eine wiki.txt oder andere textbasierten formaten ?
+       Dann greifen sie zu *.*-notes ....... 
+       >> Name Der Datei . Programm/Beschreibung-notes
+       Ergeben in einem beispielfall wie in Pylovara 
+       WikiLexikon  = lexikon.wiki-notes
+       LogicLexikon = lexikon.logic-notes
+       (P)Modul beschreibung ? = p.p-notes
+
+       *.*-notes sind grundsätzliche nachschlage und informations Notizen 
+       Die für alles einsatzbereit verwendet werden können . da man ein 
+       nachschlage werkzeug heutzutage als wiki bezeichnet , sind sie z.b
+       fest integriert in das handbuch lesikon als 
+        - <ordnername>.wiki-notes 
+        - <modulname>.wiki-notes 
+        vorzufinden .... dieses system garantiert höchste präzision im
+        handbuchbetrieb eines rooling releases und wird standarisiert
+        als direkt github repo updater mit eingefügt . wie im übrigen 
+        alles .......
+
+       
+
+# Logic = *.*-logic werden als logik ablageplatz verwendet um zukünftige logiken austauschbar machen zu können
+       Info : *.*-logic Module als optionen enthalten , welche logic verwendet werden soll
+       Sie brauchen eine Logik für ihre SoundKarte ? oder Frequenzen ? oder GrafikTweaks ? 
+       dann greifen sie zu *.*-logic Modulen , den diese haben vorgefertigte Logik schaltungen 
+       die sie garantiert für den jeweiligen zweck verwenden können , ohne eigene schreiben
+       zu müssen ... Das Arsenal an *.*-logic schaltungen ist noch am anfang recht Leer .
+       Wird aber mit späteren abdates massive gefüllt werden da die Logic immer auf der schaltung
+       basieren wird : ,,Welcher Bus wird gerade für die GPU verwendet ? ah Geforce-XT.gpu-logic
+       die logic benennung wird wie bei allen programm daten typen wie folgt aussehen 
+
+       (IdentifikationsName|Hauptname).(einsatzgebiet)-logic <<< --- sortierbar und einheitlich
+       
+
+# Nodes = *.*-nodes Module werden als zusammenführenden schaltkreis verstanden .
+       Eine Nodes ist Quasi die Mutter Schaltung die alle *.*nano-nodes oder *.*micro-nodes
+       in ihrem eigenen Settings pegel einstellt , wie ein Master Volume regler .....
+       Eine Nodes verändert nicht die Settings von nano-nodes oder micro-nodes , sondern 
+       nimmt diese daten und kann sie gesamt erhöhen oder die priorität der settings einstellen.
+       je nach dem was gefordert wird ... bei grafik tweaks wird eher auf Prozess Prioritäten
+       zurück laufen oder das ein Nerviger Input wie Rail-Tracings generell aus geschaltet werden 
+       kann , wenn es die unteren nodes nicht schon taten .... es verfeinert die einstellungs-
+       möglichkeiten erheblich ..... Nodes werden über das dann benutzte bash basierte Terminal
+       über das Pylovara SubSystem ins laufende System an richtige stelle mit den Daten gefüttert
+       und direkt ins subsystem gelegt ... Dadurch ensteht auf dauer eine art ,,entmachtung" der
+       propitären System Komponenten aller Varianten ..... 
+      
+# Nano-Nodes = *.*-nano-nodes werden zuckünftige - Präzisionswerzeuge
+       Info : Eine Nodes bekommt Input Daten aus den Nano-Nodes die sie dann Regeln kann 
+       Jede Nano-Node kann Spezialisiert behandelt werden so das ein Nano-Nodes Strang
+       eine bestimmte sache tut , z.b :
+       - Nur den Bass Optimieren und Signal an die Nodes weiterleiten 
+       - Oder alle Sound daten zusammen in eine *.*-nano-nodes bündeln 
+
+       Die einsatz gebiete sind daher sehr weit gefechert 
+
+#Micro-Nodes = *.*-micro-nodes können eine oder mehrere Settings Konfigurieren - Skalpellwerkzeuge
+        Info : diese daten von *.*-micro-nodes werden dann an nano-nodes per direkt verlinkung
+        gesendet . *.*-micro-nodes sind wie *.*-nano-nodes nur skalierbare zusatz werzeuge und
+        können weg gelassen werden , existieren aber um das Pylovara System auf dauer gegenüber
+        laufenden Betriebsystemen , einen Vorteil zu bieten der seines gleichen suchen wird 
+
+        
+#Cache = *.*-cache sind Schnellspeicher ablagen ..... wenn man sie verwenden möchte , brauch man 
+        1.Einsatszweck 2.von welchem Datentyp 3. <Zweck>.<Datentyp>-cache

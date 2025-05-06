@@ -2,31 +2,51 @@
 # Pylovara/pylovara-ast.wiki-notes
 # https://github.com/Pylovara/Pylovara/
 # MAIN TREE - ONWORK - WORK INFOS
-################################################################################
+#########################################################################################################
 
 /Pylovara/SystemControl/
-│###############################################################################
-├── control.pv-conf         # Zentrale Masterdatei – wird von Shell ge'source'd
-├── nodes.conf              # Config für nodes - Einzeln Aktivierbar 
-├── nano-nodes.conf         # Feingranulare Steuerung - Einzeln Aktivierbar 
-├── micro-nodes.conf        # Konfig für Templates - 
-├── needles.conf            # Treibermodul-Steuerung
-├── core-dna.conf           # Systemidentität & interne IDs
-├── download.conf           # Systemweite Paketlogik / Aliasbasierte Installersteuerung
-├── cache.conf              # Cache-Verhalten, Layer-Steuerung, Priorität
-├── lexikon.wiki-notes      # Hanbuch | helpme 00 | helpme lex | helpme lexikon
-└── control.wiki-notes      # Erläuterung aller Steuerdateien (Hilfsübersicht)
+│########################################################################################################
+├── control.pv-conf                          # Zentrale Masterdatei – wird von Shell ge'source'd
+├── nodes.conf                               # Config für nodes - Einzeln Aktivierbar 
+├── nano-nodes.conf                          # Feingranulare Steuerung - Einzeln Aktivierbar 
+├── micro-nodes.conf                         # Konfig für Templates - 
+├── needles.conf                             # Treibermodul-Steuerung
+├── core-dna.conf                            # Systemidentität & interne IDs
+├── download.conf                            # Systemweite Paketlogik / Aliasbasierte Installersteuerung
+├── cache.conf                               # Cache-Verhalten, Layer-Steuerung, Priorität
+├── lexikon.wiki-notes                       # Hanbuch | helpme 00 | helpme lex | helpme lexikon
+└── control.wiki-notes                       # Erläuterung aller Steuerdateien (Hilfsübersicht)
 
-|-Pylovara/SystemDirectory/
-│###############################################################################
-├─ AI/                      # llm Spielplatz
-├─ FileManager              # Zentrale Komponenten
-│   ├─
-│   ├─
-│   ├─
-│   ├─
-│   ├─
-│   └─
-├─ Pylovara-Logs            # Zentrale Logs und Cache-Dateien              
-└─ ROOT Partition/          # Blumentopf - Satt - Betriebsystem
-│###############################################################################
+|-Pylovara/SystemDirectory/                  # Info systemdirectory.wiki-notes
+│########################################################################################################
+├─ AI/                                       # INWORK llm Spielplatz
+├─ FileManager/                              # Info filemanager.wiki-notes
+│   ├─ Caches                                # ZwischenSpeicher u.a
+│   ├─ Basis-Module/                         # Alle Module
+│   │   ├─ DNA/                              # Info dna.wiki-notes | helpme dna
+│   │   │   └─ Shell/                        # DNA SHELL
+│   │   │     ├─ lex.core-dna                # Zeigt das DNA Lexikon | ~ dna lex
+│   │   │     ├─ list.core-dna               # List DNA-Kommandos | ~ dna list
+│   │   │     ├─ main-completion.core-dna    # Tab-Vervollständigung
+│   │   │     └─ main.core-dna               # Main.Schaltstelle für DNA-Kommandos
+│   │   ├─ Logic/                            # Info logic.wiki-notes | helpme logic
+│   │   │   └─ Shell/                        # CMD SHELL
+│   │   │     ├─ cpu.cmd-dna                 # Zeigt CPU-Informationen
+│   │   │     ├─ hw.cmd-dna                  # Zeigt Hardware-Informationen
+│   │   │     ├─ internet.cmd-dna            # Zeigt Netzwerkkonfiguration - Interfaces
+│   │   │     ├─ load.cmd-dna                # Lädt Datei aus dem Internet via wget
+│   │   │     ├─ off.cmd-dna                 # Entfernt +x von Datei(en)
+│   │   │     ├─ on.cmd-dna                  # Aktiviert chmod +x für Datei(en)
+│   │   │     ├─ pci.cmd-dna                 # Zeigt PCI-Geräteinformationen
+│   │   │     ├─ ports.cmd-dna               # Listet offene Ports und zugehörige Programme
+│   │   │     └─ usb.cmd-dna                 # Zeigt USB-Geräteinformationen
+│   │   ├─ Nodes/                            # Mutter  | zusammenführender Schaltkreis
+│   │   ├─ Nano/                             # Tochter | zukünftige Präzisionswerkzeuge
+│   │   ├─ Micro/                            # Kind    | Spezial Präzisionswerkzeuge
+│   │   ├─ Notes/                            # lesbare Dateien
+│   │   │   └─ Shell/                        # lesbare Dateien
+│   │   │     └─ lexikon.core-wiki-notes     # MAIN LEXIKON | helpme lex
+│   │   └─ basis-module.wiki-notes           # Info basis-module.wiki-notes 
+├─ Pylovara-Logs/                            # INWORK Zentrale Logs und Cache-Dateien              
+└─ ROOT Partition/                           # INWORK Blumentopf - Satt - Betriebsystem
+│########################################################################################################

@@ -14,7 +14,7 @@ DNA() {
         source "$dnafile"
         DNA_EXEC "$@"
     else
-        echo "❌ DNA-Kommando '$cmd' nicht gefunden."
+        echo "❌ DNA-Kommando '$cmd' not found | use dna lex | dna list"
     fi
 }
 export -f DNA

@@ -1,14 +1,14 @@
 #!/bin/bash
-# dna.core-bash-dna – Zentrale Schaltstelle für DNA-Kommandos
+# main.core-dna – Zentrale Schaltstelle für DNA-Kommandos
 
 # >>> DNA-HEAD-BEGIN
-# Dispatcher für .core-bash-dna Kommandos
+# Dispatcher für .cmd-dna Kommandos
 # >>> DNA-HEAD-END
 
 DNA() {
     local cmd="$1"
     shift
-    local dnafile="Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/${cmd}.core-bash-dna"
+    local dnafile="/Pylovara/SystemDirectory/FileManager/Basis-Module/Logic/Shell/${cmd}.cmd-dna"
 
     if [[ -f "$dnafile" ]]; then
         source "$dnafile"

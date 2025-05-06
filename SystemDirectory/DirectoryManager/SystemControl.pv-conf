@@ -4,16 +4,11 @@
 # ~ Quelle: /Pylovara/SystemDirectory/DirectoryManager/SystemControl.pv-conf
 
 ################################################################################
-# BASISPFAD Auskommentiert #
-#BASE_DIR="/Pylovara"
-#CORE_DIR="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
-# DateiTypen
-#Wiki_DIR="/Pylovara/"
-
 # BASISPFAD #Test#
 BASE_DIR="/Pylovara"
-CORE_DIR="$BASE_DIR/SystemDirectory/DirectoryManager/MCS-DNA"
-Wiki_DIR="$BASE_DIR"
+DirManager_DIR="/Pylovara/SystemDirectory/Directory"
+FileManager_DIR="/Pylovara/SystemDirectory/FileManager
+CORE_DIR="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
 
 ################################################################################
 
@@ -28,14 +23,14 @@ DNA_COMPLETION="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna-
 
 ################################################################################
 # Wiki-Modul
-source "$BASE_DIR/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
+source "$FileManager_DIR/Module/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
 
 # P-Modul
-P_NODE="$BASE_DIR/FileManager/P-Module/P-Nodes/p.p-nodes"
+P_NODE="$FileManager_DIR/Module/P-Module/P-Nodes/p.p-nodes"
 [ -f "$P_NODE" ] && source "$P_NODE"
 
 # Pylo-Modul
-PYLO_NODE="$BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
+PYLO_NODE="$FileManager_DIR/Module/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 [ -f "$PYLO_NODE" ] && source "$PYLO_NODE"
 
 # Needle-Handler
@@ -47,14 +42,14 @@ PYLO_NODE="$BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 
 # Wiki-Cache-Update
 #(Beta) Zum Deaktivieren WIKI_CACHE_UPDATE & [ -f "$WIKI-CACHE-UPDATE"] auskommentieren
-WIKI_CACHE_UPDATE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-micro-nodes"
+WIKI_CACHE_UPDATE="$FileManager_DIR/Module/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-micro-nodes"
 [ -f "$WIKI_CACHE_UPDATE" ] && bash "$WIKI_CACHE_UPDATE"
 
 ################################################################################
 # SYSTEMALIASE
-alias helpme="bash $BASE_DIR/FileManager/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
-alias p="bash $BASE_DIR/FileManager/P-Module/P-Nodes/p.p-nodes"
-alias pylo="bash $BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
+alias helpme="bash $FileManager_DIR/Module/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
+alias p="bash $FileManager_DIR/Module/P-Module/P-Nodes/p.p-nodes"
+alias pylo="bash $FileManager_DIR/Module/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 
 ################################################################################
 # DEBUG / STATUSAUSGABE (optional)
@@ -64,7 +59,7 @@ alias pylo="bash $BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 
 ################################################################################
 # INTEGRITÄTSPRÜFUNG (optional)
-# NEEDLE_LOG="$BASE_DIR/SystemDirectory/FileManager/Module/Needles-Module/Needles-Errors"
+# NEEDLE_LOG="$FileManager_DIR/Module/Needles-Module/Needles-Errors"
 # [ ! -d "$NEEDLE_LOG" ] && echo "[WARNUNG] Needles-Erros-Verzeichnis fehlt: $NEEDLE_LOG"
 
 ################################################################################
@@ -72,7 +67,7 @@ alias pylo="bash $BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 ################################################################################
 # Micro-Modul
 # source_all_micro_nodes() {
-#    for node in "$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes/"*.micro-nodes; do
+#    for node in "$FileManager_DIR/Module/Micro-Module/Micro-Nodes/"*.micro-nodes; do
 #        [ -f "$node" ] && source "$node"
 #    done
 #}

@@ -47,9 +47,10 @@ WIKI_CACHE_UPDATE="$Module_DIR/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-mi
 
 ################################################################################
 # SYSTEMALIASE
-alias helpme="bash $FileManager_DIR/Module/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
-alias p="bash $Module_DIR/P-Module/P-Nodes/p.p-nodes"
-alias pylo="bash $FileManager_DIR/Module/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
+alias helpme="$Module_DIR/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
+alias p="$Module_DIR/P-Module/P-Nodes/p.p-nodes"
+alias pylo="$Module_DIR/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
+alias dna="$CORE_DIR/MCS-BASH/dna.core-bash-dna"
 
 ################################################################################
 # DEBUG / STATUSAUSGABE (optional)

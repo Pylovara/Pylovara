@@ -1,5 +1,5 @@
 # dna-completion – Bash Tab-Vervollständigung für DNA-Kommandos
-# main.core-da sucht shell cmd .cmd-dna
+# main.core-dna sucht shell cmd .cmd-dna
 
 _dna_completions() {
     local cur

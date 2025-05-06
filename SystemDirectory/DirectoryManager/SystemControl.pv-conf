@@ -46,11 +46,20 @@ WIKI_CACHE_UPDATE="$Module_DIR/Wiki-Module/Wiki-Cache/wiki-cache-updater.wiki-mi
 [ -f "$WIKI_CACHE_UPDATE" ] && bash "$WIKI_CACHE_UPDATE"
 
 ################################################################################
-# SYSTEMALIASE
-alias helpme="$Module_DIR/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes"
-alias p="$Module_DIR/P-Module/P-Nodes/p.p-nodes"
-alias pylo="$Module_DIR/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
-alias dna="$CORE_DIR/MCS-BASH/dna.core-bash-dna"
+# SYSTEMALIASE Funktionen
+
+helpme() {
+    source "$Module_DIR/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes" "$@"
+}
+p() {
+    source "$Module_DIR/P-Module/P-Nodes/p.p-nodes" "$@"
+}
+pylo() {
+    source "$Module_DIR/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes" "$@"
+}
+dna() {
+    source "$CORE_DIR/MCS-BASH/dna.core-bash-dna" "$@"
+}
 
 ################################################################################
 # DEBUG / STATUSAUSGABE (optional)

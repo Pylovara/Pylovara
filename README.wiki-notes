@@ -11,8 +11,8 @@ cd Pylovara
 sudo bash pylovara.install-nodes
 
 Wichtig : Pylovara installiert sich ins MAIN verzeichnis , die SystemControl.pv.conf wird aber 
-noch nicht einwandfrei in eine bashrc eingebunden oder etwas das vergleichbar viel Kontrolle
-über ihre shell gibt ... demnach werden alle komponenten noch nicht ordnungsgemäßi geladen ...
+noch nicht einwandfrei in eine bashrc eingebunden oder etwas das vergleichbares das viel Kontrolle
+über ihre shell gibt ... demnach werden alle komponenten noch nicht ordnungsgemäß geladen ...
 
 das pylovara System scheitert zur zeit an eine bash einbindung und deshlab müssen einzelne 
 komponenten extra gesourced werden ..... das verhindert zur zeit die nutzung durch den pylovara.install-nodes prozess 

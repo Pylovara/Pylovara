@@ -2,9 +2,19 @@
 
 # BauStelle NextUpdate INWORK
 
-# alle module die zu der basis gehören werden innerhalb des FileManager's
+# Main Info
+# Kern FileSystem Operating Layer – eine Shell-gesteuerte Middleware, 
+# die Hardware, Dateien, Scripte und Wissenssysteme modular verbindet.
+# Mini-OS auf Kernel-Basis, steuerbar über Bash + eigene Subsysteme
+
+
+# Erklärung 
+# Alle module die zu der basis gehören werden innerhalb des FileManager's
 # Noch Einheitlicher gemacht um den Überblick in Späteren Versionen
 # Zu Gewehrleisten .
+
+
+# DatenTypen Modular 
 
 # Notes = *.*-notes werden als standart txt datei und lesbare Dateien verwendet
        Info : *.*-notes können je nach aufgaben gebiet benannt werden .
@@ -26,8 +36,6 @@
         handbuchbetrieb eines rooling releases und wird standarisiert
         als direkt github repo updater mit eingefügt . wie im übrigen 
         alles .......
-
-       
 
 # Logic = *.*-logic werden als logik ablageplatz verwendet um zukünftige logiken austauschbar machen zu können
        Info : *.*-logic Module als optionen enthalten , welche logic verwendet werden soll

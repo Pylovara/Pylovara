@@ -1,8 +1,5 @@
-
-## in work pv = pylovara = pv.conf = hauptzentrale 
-
-
-#/Pylovara/SystemControl/
+001
+/Pylovara/SystemControl/
 ├── control.pv-conf         # Zentrale Masterdatei – wird von Shell sourced
 ├── nodes.conf              # Konfig für .p-nodes (aktivierbare Nodes)
 ├── nano-nodes.conf         # Feingranulare Steuerung von nano-Nodes
@@ -13,6 +10,8 @@
 ├── cache.conf              # Cache-Verhalten, Layer-Steuerung, Priorität
 └── control.wiki-notes      # Erläuterung aller Steuerdateien (Hilfsübersicht)
 
-die *.*-notes selbst werden wohl keine conf brauchen da wiki.wiki-nodes eh 
-mit dem befehl helpme die wiki-notes durchsuchen .... kann aber später mal 
-in betracht gezogen werden , daher stehen sie aber hier nicht dabei 
+## in work pv = pylovara = pv.conf = hauptzentrale 
+
+# die *.*-notes selbst werden wohl keine conf brauchen da wiki.wiki-nodes eh 
+# mit dem befehl helpme die wiki-notes durchsuchen .... kann aber später mal 
+# in betracht gezogen werden , daher stehen sie aber hier nicht dabei 

@@ -4,11 +4,17 @@
 # ~ Quelle: /Pylovara/SystemDirectory/DirectoryManager/SystemControl.pv-conf
 
 ################################################################################
-# BASISPFAD
-BASE_DIR="/Pylovara"
-CORE_DIR="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
+# BASISPFAD Auskommentiert #
+#BASE_DIR="/Pylovara"
+#CORE_DIR="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
 # DateiTypen
-Wiki_DIR="/Pylovara/"
+#Wiki_DIR="/Pylovara/"
+
+# BASISPFAD #Test#
+BASE_DIR="/Pylovara"
+CORE_DIR="$BASE_DIR/SystemDirectory/DirectoryManager/MCS-DNA"
+Wiki_DIR="$BASE_DIR"
+
 ################################################################################
 
 ################################################################################

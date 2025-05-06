@@ -1,0 +1,39 @@
+# Prinzip :
+
+Mutter Knoten  
+*.*-nodes       # kann zu Nano oder direkt needles
+Tochter Knoten
+*.*-nano-nodes  # kann zu Micro oder direkt needles
+Kinder Knoten
+*.*-micro-nodes # muss zu needles
+Treiber Zecke
+*.*-needless    # Anschluss | Zecke | Gefäß
+
+
+# Beispiele :
+
+# Anschluss.audio-nodes        -  .nano-nodes
+# Volumen.audio-out-nano-nodes -  .needles oder .micro-nodes
+# Höhe.audio-out-micro-nodes   -  .needles
+# Mittel.audio-out-micro-nodes -  .needles
+# Bass.audio-out-micro-nodes   -  .needles
+
+# *.*-Nodes 
+Werden als Kragen behandelt die mehrere Nano-Nodes zusammen
+führen und dan im gesamten steuern , oder schalten ....
+
+Ganz einfaches Prinzip in Menschen Logik  :
+*.*-nodes
+Mutter          hat Kinder       
+
+*.*-logic
+Vater           hat Pläne
+
+*.*-nano-nodes
+Kinder          haben Babys 
+
+*.*-micro-nodes
+Babys           haben Spielzeug 
+
+*.*-needles
+Spielzeug muss Funktionieren

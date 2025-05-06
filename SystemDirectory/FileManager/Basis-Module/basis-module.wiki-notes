@@ -1,105 +1,105 @@
 999
 
-# BauStelle NextUpdate INWORK
+# Baustelle NextUpdate INWORK
 
 # Main Info
-# Kern FileSystem Operating Layer – eine Shell-gesteuerte Middleware, 
+# Kern-FileSystem Operating Layer – eine Shell-gesteuerte Middleware, 
 # die Hardware, Dateien, Scripte und Wissenssysteme modular verbindet.
 # Mini-OS auf Kernel-Basis, steuerbar über Bash + eigene Subsysteme
 
 
 # Erklärung 
-# Alle module die zu der basis gehören werden innerhalb des FileManager's
-# Noch Einheitlicher gemacht um den Überblick in Späteren Versionen
-# Zu Gewehrleisten .
+# Alle Module, die zur Basis gehören, werden innerhalb des FileManagers
+# noch einheitlicher gemacht, um den Überblick in späteren Versionen
+# zu gewährleisten.
 
 
-# DatenTypen Modular 
+# Datentypen Modular 
 
-# Notes = *.*-notes werden als standart txt datei und lesbare Dateien verwendet
-       Info : *.*-notes können je nach aufgaben gebiet benannt werden .
-       benötigen sie eine wiki.txt oder andere textbasierten formaten ?
-       Dann greifen sie zu *.*-notes ....... 
-       >> Name Der Datei . Programm/Beschreibung-notes
-       Ergeben in einem beispielfall wie in Pylovara 
+# Notes = *.*-notes werden als Standard-TXT-Dateien und lesbare Dateien verwendet.
+       Info: *.*-notes können je nach Aufgabengebiet benannt werden.
+       Benötigen Sie eine wiki.txt oder andere textbasierte Formate?
+       Dann greifen Sie zu *.*-notes ....... 
+       >> Name der Datei: Programm/Beschreibung-notes
+       Ergeben in einem Beispielfall wie in Pylovara:
        WikiLexikon  = lexikon.wiki-notes
        LogicLexikon = lexikon.logic-notes
-       (P)Modul beschreibung ? = p.p-notes
+       (P)Modulbeschreibung? = p.p-notes
 
-       *.*-notes sind grundsätzliche nachschlage und informations Notizen 
-       Die für alles einsatzbereit verwendet werden können . da man ein 
-       nachschlage werkzeug heutzutage als wiki bezeichnet , sind sie z.b
-       fest integriert in das handbuch lesikon als 
-        - <ordnername>.wiki-notes 
-        - <modulname>.wiki-notes 
-        vorzufinden .... dieses system garantiert höchste präzision im
-        handbuchbetrieb eines rooling releases und wird standarisiert
-        als direkt github repo updater mit eingefügt . wie im übrigen 
+       *.*-notes sind grundsätzliche Nachschlage- und Informationsnotizen, 
+       die für alle Einsatzgebiete verwendet werden können. Da man ein 
+       Nachschlagewerkzeug heutzutage als Wiki bezeichnet, sind sie z. B.
+       fest integriert in das Handbuch-Lexikon als  
+        - <Ordnername>.wiki-notes 
+        - <Modulname>.wiki-notes 
+        vorzufinden .... Dieses System garantiert höchste Präzision im
+        Handbuchbetrieb eines Rolling Releases und wird standardisiert
+        als direkter GitHub-Repo-Updater mit eingefügt – wie im Übrigen 
         alles .......
 
-# Logic = *.*-logic werden als logik ablageplatz verwendet um zukünftige logiken austauschbar machen zu können
-       Info : *.*-logic Module als optionen enthalten , welche logic verwendet werden soll
-       Sie brauchen eine Logik für ihre SoundKarte ? oder Frequenzen ? oder GrafikTweaks ? 
-       dann greifen sie zu *.*-logic Modulen , den diese haben vorgefertigte Logik schaltungen 
-       die sie garantiert für den jeweiligen zweck verwenden können , ohne eigene schreiben
-       zu müssen ... Das Arsenal an *.*-logic schaltungen ist noch am anfang recht Leer .
-       Wird aber mit späteren abdates massive gefüllt werden da die Logic immer auf der schaltung
-       basieren wird : ,,Welcher Bus wird gerade für die GPU verwendet ? ah Geforce-XT.gpu-logic
-       die logic benennung wird wie bei allen programm daten typen wie folgt aussehen 
+# Logic = *.*-logic werden als Logik-Ablageplatz verwendet, um zukünftige Logiken austauschbar machen zu können.
+       Info: *.*-logic-Module enthalten Optionen, welche Logik verwendet werden soll.
+       Sie brauchen eine Logik für Ihre Soundkarte? Oder Frequenzen? Oder Grafik-Tweaks? 
+       Dann greifen Sie zu *.*-logic-Modulen, denn diese haben vorgefertigte Logik-Schaltungen, 
+       die Sie garantiert für den jeweiligen Zweck verwenden können – ohne eigene schreiben 
+       zu müssen. Das Arsenal an *.*-logic-Schaltungen ist noch am Anfang recht leer,
+       wird aber mit späteren Updates massiv gefüllt werden, da die Logik immer auf der Schaltung
+       basieren wird: ,,Welcher Bus wird gerade für die GPU verwendet? Ah – Geforce-XT.gpu-logic"
+       Die Logik-Benennung wird wie bei allen Programmdatentypen wie folgt aussehen: 
 
-       (IdentifikationsName|Hauptname).(einsatzgebiet)-logic <<< --- sortierbar und einheitlich
+       (IdentifikationsName|Hauptname).(Einsatzgebiet)-logic <<< --- sortierbar und einheitlich
        
 
-# Nodes = *.*-nodes Module werden als zusammenführenden schaltkreis verstanden .
-       Eine Nodes ist Quasi die Mutter Schaltung die alle *.*nano-nodes oder *.*micro-nodes
-       in ihrem eigenen Settings pegel einstellt , wie ein Master Volume regler .....
-       Eine Nodes verändert nicht die Settings von nano-nodes oder micro-nodes , sondern 
-       nimmt diese daten und kann sie gesamt erhöhen oder die priorität der settings einstellen.
-       je nach dem was gefordert wird ... bei grafik tweaks wird eher auf Prozess Prioritäten
-       zurück laufen oder das ein Nerviger Input wie Rail-Tracings generell aus geschaltet werden 
-       kann , wenn es die unteren nodes nicht schon taten .... es verfeinert die einstellungs-
-       möglichkeiten erheblich ..... Nodes werden über das dann benutzte bash basierte Terminal
-       über das Pylovara SubSystem ins laufende System an richtige stelle mit den Daten gefüttert
-       und direkt ins subsystem gelegt ... Dadurch ensteht auf dauer eine art ,,entmachtung" der
-       propitären System Komponenten aller Varianten ..... 
+# Nodes = *.*-nodes-Module werden als zusammenführender Schaltkreis verstanden.
+       Eine Node ist quasi die Mutterschaltung, die alle *.*-nano-nodes oder *.*-micro-nodes
+       in ihrem eigenen Settings-Pegel einstellt – wie ein Master-Volume-Regler.
+       Eine Node verändert nicht die Settings von Nano- oder Micro-Nodes, sondern 
+       nimmt diese Daten und kann sie gesamt erhöhen oder die Priorität der Settings einstellen –
+       je nachdem, was gefordert wird. Bei Grafik-Tweaks wird eher auf Prozess-Prioritäten
+       zurückgegriffen oder ein nerviger Input wie Raytracing generell ausgeschaltet, 
+       wenn es die unteren Nodes nicht schon taten. Es verfeinert die Einstellungs-
+       möglichkeiten erheblich. Nodes werden über das dann benutzte bash-basierte Terminal
+       über das Pylovara-Subsystem ins laufende System an die richtige Stelle mit den Daten gefüttert
+       und direkt ins Subsystem gelegt. Dadurch entsteht auf Dauer eine Art ,,Entmachtung" der
+       proprietären Systemkomponenten aller Varianten. 
       
-# Nano = *.*-nano-nodes werden zuckünftige - Präzisionswerzeuge
-       Info : Eine Nodes bekommt Input Daten aus den Nano-Nodes die sie dann Regeln kann 
-       Jede Nano-Node kann Spezialisiert behandelt werden so das ein Nano-Nodes Strang
-       eine bestimmte sache tut , z.b :
-       - Nur den Bass Optimieren und Signal an die Nodes weiterleiten 
-       - Oder alle Sound daten zusammen in eine *.*-nano-nodes bündeln 
+# Nano = *.*-nano-nodes werden zukünftige Präzisionswerkzeuge.
+       Info: Eine Node bekommt Input-Daten aus den Nano-Nodes, die sie dann regeln kann.
+       Jede Nano-Node kann spezialisiert behandelt werden, sodass ein Nano-Nodes-Strang
+       eine bestimmte Sache tut, z. B.:
+       - nur den Bass optimieren und Signal an die Node weiterleiten,
+       - oder alle Sounddaten zusammen in eine *.*-nano-nodes bündeln. 
 
-       Die einsatz gebiete sind daher sehr weit gefechert 
+       Die Einsatzgebiete sind daher sehr weit gefächert.
 
-# Micro = *.*-micro-nodes können eine oder mehrere Settings Konfigurieren - Skalpellwerkzeuge
-        Info : diese daten von *.*-micro-nodes werden dann an nano-nodes per direkt verlinkung
-        gesendet . *.*-micro-nodes sind wie *.*-nano-nodes nur skalierbare zusatz werzeuge und
-        können weg gelassen werden , existieren aber um das Pylovara System auf dauer gegenüber
-        laufenden Betriebsystemen , einen Vorteil zu bieten der seines gleichen suchen wird 
-
-
-# Needles = *.*-needles dienen dazu exitierende daten packete in sich zu copieren um selbst 
-        die volle kontrolle über die treiber packete zu gewehrleisten . needles tun also nichts
-        anderes wie den treiber namen und die zugehörigkeit in sich einzuschreiben z.b :
-        <treibername>.<von was Hardware>-needles <-- treiber | anzapf nadeln die pylovara als
-        subsystem mitführen wird um immer mehr kontrolle über die bash auf das laufende system
-        zu bekommen ..... Goldwert für RettungsSysteme aber also Subsystem Feature schon eine
-        macht übernahme die ihres gleichen suchen wird .... Hast du Kontrolle über die Treiber
-        und weist wofür sie gebraucht werden ? brauchst du keine Treiber runterziehen und dich 
-        lediglich am datensatz bedienen um im extrem fall , dem main system die gpu kontrolle
-        zu entziehen und über pylovara verbesserte einstellung vornehmen zu können , das ist nur 
-        ein spaß den man damit anstellen werden kann/wird ... 
+# Micro = *.*-micro-nodes können eine oder mehrere Settings konfigurieren – Skalpellwerkzeuge.
+        Info: Diese Daten von *.*-micro-nodes werden dann an Nano-Nodes per Direktverlinkung
+        gesendet. *.*-micro-nodes sind wie *.*-nano-nodes nur skalierbare Zusatzwerkzeuge und
+        können weggelassen werden, existieren aber, um das Pylovara-System auf Dauer gegenüber
+        laufenden Betriebssystemen einen Vorteil zu bieten, der seinesgleichen suchen wird. 
 
 
+# Needles = *.*-needles dienen dazu, existierende Datenpakete in sich zu kopieren, um selbst 
+        die volle Kontrolle über die Treiberpakete zu gewährleisten. Needles tun also nichts
+        anderes, als den Treibernamen und die Zugehörigkeit in sich einzuschreiben, z. B.:
+        <Treibername>.<vonWasHardware>-needles <-- Treiber | Anzapf-Nadeln, die Pylovara als
+        Subsystem mitführen wird, um immer mehr Kontrolle über die Bash auf das laufende System
+        zu bekommen. Goldwert für Rettungssysteme – aber als Subsystem-Feature schon eine
+        Machtübernahme, die ihresgleichen suchen wird. Hast du Kontrolle über die Treiber
+        und weißt, wofür sie gebraucht werden? Brauchst du keine Treiber runterziehen und dich 
+        lediglich am Datensatz bedienen, um im Extremfall dem Main-System die GPU-Kontrolle
+        zu entziehen und über Pylovara verbesserte Einstellungen vornehmen zu können – das ist nur 
+        ein Spaß, den man damit anstellen kann/wird. 
 
-#Cache = *.*-cache sind Schnellspeicher ablagen ..... wenn man sie verwenden möchte , brauch man 
-        1.Einsatszweck 2.von welchem Datentyp 3. <Zweck>.<Datentyp>-cache
 
 
-Typ-Referenztabelle :
+# Cache = *.*-cache sind Schnellspeicher-Ablagen. Wenn man sie verwenden möchte, braucht man 
+        1. Einsatzzweck, 2. von welchem Datentyp, 3. <Zweck>.<Datentyp>-cache
 
-# Übersicht aller Daten-Typen im Pylovara-System
+
+Typ-Referenztabelle:
+
+# Übersicht aller Datentypen im Pylovara-System
 Typ         | Beschreibung                    | Beispieldatei
 ------------|----------------------------------|-----------------------------
 *.*-notes   | Dokumentation & Wiki             | logic.sound-notes
@@ -110,4 +110,4 @@ Typ         | Beschreibung                    | Beispieldatei
 *.*-needles | Treiberverknüpfung & Zugriff     | nvidia.rtx3080.gpu-needles
 *.*-cache   | Kurzzeit-Zwischenspeicher        | tmp.vulkan-gpu.cache
 
-Modular - Erweiterbar - HeiligerGral
+Modular – Erweiterbar – Heiliger Gral

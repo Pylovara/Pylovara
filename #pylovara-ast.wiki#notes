@@ -1,0 +1,32 @@
+# Absoluter Pfad:
+# Pylovara/pylovara-ast.wiki-notes
+# https://github.com/Pylovara/Pylovara/
+# MAIN TREE - ONWORK - WORK INFOS
+################################################################################
+
+/Pylovara/SystemControl/
+│###############################################################################
+├── control.pv-conf         # Zentrale Masterdatei – wird von Shell ge'source'd
+├── nodes.conf              # Config für nodes - Einzeln Aktivierbar 
+├── nano-nodes.conf         # Feingranulare Steuerung - Einzeln Aktivierbar 
+├── micro-nodes.conf        # Konfig für Templates - 
+├── needles.conf            # Treibermodul-Steuerung
+├── core-dna.conf           # Systemidentität & interne IDs
+├── download.conf           # Systemweite Paketlogik / Aliasbasierte Installersteuerung
+├── cache.conf              # Cache-Verhalten, Layer-Steuerung, Priorität
+├── lexikon.wiki-notes      # Hanbuch | helpme 00 | helpme lex | helpme lexikon
+└── control.wiki-notes      # Erläuterung aller Steuerdateien (Hilfsübersicht)
+
+|-Pylovara/SystemDirectory/
+│###############################################################################
+├─ AI/                      # llm Spielplatz
+├─ FileManager              # Zentrale Komponenten
+│   ├─
+│   ├─
+│   ├─
+│   ├─
+│   ├─
+│   └─
+├─ Pylovara-Logs            # Zentrale Logs und Cache-Dateien              
+└─ ROOT Partition/          # Blumentopf - Satt - Betriebsystem
+│###############################################################################

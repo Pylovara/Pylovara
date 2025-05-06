@@ -1,11 +1,12 @@
 # dna-completion – Bash Tab-Vervollständigung für DNA-Kommandos
+# main.core-da sucht shell cmd .cmd-dna
 
 _dna_completions() {
     local cur
     COMPREPLY=()
     cur="${COMP_WORDS[COMP_CWORD]}"
 
-    local cmds=$(cd /Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH && ls *.core-bash-dna 2>/dev/null | sed 's/.core-bash-dna$//')
+    local cmds=$(cd /Pylovara/SystemDirectory/FileManager/Basis-Module/Logic/Shell && ls *.cmd-dna 2>/dev/null | sed 's/.cmd-dna$//')
 
     COMPREPLY=( $(compgen -W "$cmds" -- "$cur") )
 }

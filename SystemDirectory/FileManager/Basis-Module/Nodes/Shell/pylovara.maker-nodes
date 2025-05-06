@@ -2,14 +2,14 @@
 
 clear
 echo "#############################################"
-echo "#    pylovara.maker-nodes   prototyp        #"
+echo "#  pylovara.maker-nodes   prototyp  1.1     #"
 echo "#############################################"
 echo ""
 echo "Was willst du erstellen?"
 echo "1 = *.*-nodes"
 echo "2 = *.*-nano-nodes"
 echo "3 = *.*-micro-nodes"
-echo "4 = *.needles"
+echo "4 = *.*-needles"
 echo ""
 
 read -p "Deine Auswahl (1-4): " auswahl
@@ -19,7 +19,7 @@ case $auswahl in
   1) typ="-nodes" ;;
   2) typ="-nano-nodes" ;;
   3) typ="-micro-nodes" ;;
-  4) typ=".needles" ;;
+  4) typ="-needles" ;;
   *) echo "Ungültige Auswahl. Abbruch."; exit 1 ;;
 esac
 
@@ -34,7 +34,7 @@ modulename="${basisname##*.}"     # nach dem Punkt
 dateiname="${basisname}${typ}"
 
 # Zielordner aus dem Modulnamen
-zielordner="Pylovara/SystemDirectory/FileManager/Module/${modulename}-Module"
+zielordner="Pylovara/SystemDirectory/FileManager/Basis-Module/${modulename}-Module"
 
 # Anlegen des Ordners (falls nicht vorhanden)
 mkdir -p "$zielordner"

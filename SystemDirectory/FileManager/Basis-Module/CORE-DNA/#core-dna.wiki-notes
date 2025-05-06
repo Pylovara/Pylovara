@@ -1,0 +1,47 @@
+├── core-dna.conf           # Systemidentität & interne IDs
+
+# Erklärung | core-dna.wiki-notes
+
+DNA wird ein Zentrales aufruf wie auch download werzeug das permanent
+erweitert , verbessert , ausgereizt ....
+Es soll schluss endlich so funktionieren 
+
+Normale Shell 
+1~ lscpu 
+2~ lsgpu
+3~ lsbk
+4~ top
+
+DNA Shell 
+
+1~ dna cpu
+2~ dna gpu
+3~ dna usb
+4~ dna task
+
+Es werden eigene eingaben für die dna shell gelegt , die ohne weiteres 
+in einer bestehenden shell benutzt werden können , ohne dabei die eigene
+shell zu tilt .... 
+
+dadurch werden dinge möglich wie 
+
+Normal Shell 
+
+1~ sudo pacman -Q firefox
+2~ sudo pacman -R firefox
+3~ sudo pacman -Ss firefox
+4~ sudo pacman -S firefox
+
+DNA Shell 
+
+1~ dna in firefox
+2~ dna trash firefox
+3~ dna store firefox
+4~ dna load firefox
+
+und das sind nur beispiele ..... das .core-dna system wird sich 
+in die shell dna einfügen und euch volle kontrolle über eine
+zweite eingabe geben , geplant sind alle bash basierten systeme
+aber angefangen wird mit linux .... 
+folgend freebsd - nt - darwin - android 
+

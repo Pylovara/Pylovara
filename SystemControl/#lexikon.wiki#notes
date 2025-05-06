@@ -9,18 +9,21 @@ Pylovara since 2025
 >>>>>     Info : 000 Normal 0000 Deep 00000 BigDeep     <<<<<
 
 # Nummer + AST Übersicht          # Rooling-Release Updates
-lex lexikon.wiki-notes            # helpme lex | helpme lexikon
-000 lexikon.wiki-notes             # helpme 00  | lex | lexikon
-999 basis-module.wiki-notes       # Daten Typen | Bedeutung | Nutzen
+lex lexikon.wiki-notes            # helpme lex 
+lexikon lexikon.wiki-notes        # helpme lexikon
+
 
 # Main Übersicht
-000 pylovara-ast.wiki-notes       # MAIN | AST | Übersicht 
-001 systemcontrol.wiki-notes      # MAIN | Schaltzentrale
-002 systemdirectory.wiki-notes    # MAIN | Übersicht 
+001 pylovara-ast.wiki-notes       # MAIN | AST | Übersicht 
+002 systemcontrol.wiki-notes      # MAIN | Schaltzentrale
+003 systemdirectory.wiki-notes    # MAIN | Übersicht 
+004 basis-module.wiki-notes       # Daten Typen | Bedeutung | Nutzen
 
 # Modul Übersicht
-010 nodes.wiki-notes                  # Konfig für .p-nodes (aktivierbare Nodes)
-020 nano-nodes.wiki-notes             # Feingranulare Steuerung von nano-Nodes
-030 micro-nodes.wiki-notes            # Konfig für Templates / Micro-Module
-040 needles.wiki-notes                # Treibermodul-Steuerung
-050 core-dna.wiki-notes               # Systemidentität & interne IDs
+010 nodes.wiki-notes                  # Mutter Konfig für *.*-nodes (aktivierbare Nodes)
+030 nano-nodes.wiki-notes             # Tochter - Feingranulare Steuerung von nano-Nodes
+040 micro-nodes.wiki-notes            # Kind - Ultra Feingranulare Steuerung - Optional
+050 logic.wiki-notes                  # Konfig für Templates / Micro-Module
+060 needles.wiki-notes                # Treibermodul-Steuerung | Zecke 
+070 dna.wiki-notes                    # Systemidentität & interne IDs | DNA <cmd>
+080 cache.wiki-notes                  # Zwischenablage für schnellzugriffe und mehr

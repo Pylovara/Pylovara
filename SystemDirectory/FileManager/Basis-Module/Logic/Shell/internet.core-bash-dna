@@ -1,0 +1,7 @@
+# internet.core-bash-dna
+# Zeigt Netzwerkkonfiguration und Interfaces via ifconfig
+
+DNA_EXEC() {
+    echo "🧬 DNA internet: Zeige Netzwerkinformationen (ifconfig)"
+    ifconfig | less
+}

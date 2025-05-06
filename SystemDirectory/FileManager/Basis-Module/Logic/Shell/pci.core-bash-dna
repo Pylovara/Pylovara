@@ -1,0 +1,7 @@
+# pci.core-bash-dna
+# Zeigt PCI-Geräteinformationen (via lspci)
+
+DNA_EXEC() {
+    echo "🧬 DNA pci: Zeige PCI-Geräte (lspci)"
+    lspci | less
+}

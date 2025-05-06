@@ -5,16 +5,16 @@
 
 ################################################################################
 # BASISPFAD
-BASE_DIR="/mnt/data/Pylovara"
-CORE_DIR="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
+BASE_DIR="/Pylovara"
+CORE_DIR="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA"
 # DateiTypen
-Wiki_DIR="/mnt/data/Pylovara/"
+Wiki_DIR="/Pylovara/"
 ################################################################################
 
 ################################################################################
 # DNA-Kernsystem laden (Funktion + Completion)
-DNA_CORE="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna"
-DNA_COMPLETION="/mnt/data/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna-completion.core-bash-dna"
+DNA_CORE="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna.core-bash-dna"
+DNA_COMPLETION="/Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/dna-completion.core-bash-dna"
 
 [ -f "$DNA_CORE" ] && source "$DNA_CORE"
 [ -f "$DNA_COMPLETION" ] && source "$DNA_COMPLETION"
@@ -33,9 +33,9 @@ PYLO_NODE="$BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 [ -f "$PYLO_NODE" ] && source "$PYLO_NODE"
 
 # Needle-Handler
-for node in "$BASE_DIR/FileManager/Module/Needles-Module/Needles-Nodes/"*.needles; do
-    [ -f "$node" ] && source "$node"
-done
+# for node in "$BASE_DIR/FileManager/Module/Needles-Module/Needles-Nodes/"*.needles; do
+#    [ -f "$node" ] && source "$node"
+# done
 
 ################################################################################
 
@@ -65,12 +65,12 @@ alias pylo="bash $BASE_DIR/FileManager/Pylo-Module/Pylo-Nodes/pylo.pylo-nodes"
 
 ################################################################################
 # Micro-Modul
-source_all_micro_nodes() {
-    for node in "$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes/"*.micro-nodes; do
-        [ -f "$node" ] && source "$node"
-    done
-}
-source_all_micro_nodes
+# source_all_micro_nodes() {
+#    for node in "$BASE_DIR/FileManager/Module/Micro-Module/Micro-Nodes/"*.micro-nodes; do
+#        [ -f "$node" ] && source "$node"
+#    done
+#}
+#source_all_micro_nodes
 
 ################################################################################
 # SystemControl.pv-conf MCS-DNA (Prototyp 2.0)

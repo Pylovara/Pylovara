@@ -1,0 +1,20 @@
+#!/bin/bash
+# dna.core-bash-dna – Zentrale Schaltstelle für DNA-Kommandos
+
+# >>> DNA-HEAD-BEGIN
+# Dispatcher für .core-bash-dna Kommandos
+# >>> DNA-HEAD-END
+
+DNA() {
+    local cmd="$1"
+    shift
+    local dnafile="Pylovara/SystemDirectory/DirectoryManager/MCS-DNA/MCS-BASH/${cmd}.core-bash-dna"
+
+    if [[ -f "$dnafile" ]]; then
+        source "$dnafile"
+        DNA_EXEC "$@"
+    else
+        echo "❌ DNA-Kommando '$cmd' nicht gefunden."
+    fi
+}
+export -f DNA

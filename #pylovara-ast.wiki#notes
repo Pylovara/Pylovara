@@ -1,59 +1,123 @@
+01 00
 # Absoluter Pfad:
 # Pylovara/pylovara-ast.wiki-notes
 # https://github.com/Pylovara/Pylovara/
 # MAIN TREE - ONWORK - WORK INFOS
 #########################################################################################################
 
+02 00
 /Pylovara/SystemControl/
 │########################################################################################################
-├── control.pv-conf                          # Zentrale Masterdatei – wird von Shell ge'source'd
-├── nodes.conf                               # Config für nodes - Einzeln Aktivierbar 
-├── nano-nodes.conf                          # Feingranulare Steuerung - Einzeln Aktivierbar 
-├── micro-nodes.conf                         # Konfig für Templates - 
-├── needles.conf                             # Treibermodul-Steuerung
-├── core-dna.conf                            # Systemidentität & interne IDs
-├── download.conf                            # Systemweite Paketlogik / Aliasbasierte Installersteuerung
-├── cache.conf                               # Cache-Verhalten, Layer-Steuerung, Priorität
-├── lexikon.wiki-notes                       # Hanbuch | helpme 00 | helpme lex | helpme lexikon
-└── control.wiki-notes                       # Erläuterung aller Steuerdateien (Hilfsübersicht)
+02 01
+├── control.pv-conf                        # Zentrale Masterdatei – wird von Shell ge'source'd
+02 02
+├── nodes.conf                             # Config für nodes - Einzeln Aktivierbar 
+02 03
+├── nano-nodes.conf                        # Feingranulare Steuerung - Einzeln Aktivierbar 
+02 04
+├── micro-nodes.conf                       # Konfig für Templates - 
+02 05
+├── needles.conf                           # Treibermodul-Steuerung
+02 06
+├── core-dna.conf                          # Systemidentität & interne IDs
+02 07
+├── download.conf                          # Systemweite Paketlogik / Aliasbasierte Installersteuerung
+02 08
+├── cache.conf                             # Cache-Verhalten, Layer-Steuerung, Priorität
+02 09
+├── lexikon.wiki-notes                     # Hanbuch | helpme 00 | helpme lex | helpme lexikon
+02 10
+└── control.wiki-notes                     # Erläuterung aller Steuerdateien (Hilfsübersicht)
 
-|-Pylovara/SystemDirectory/                  # Info systemdirectory.wiki-notes
+03 00
+|-Pylovara/SystemDirectory/                # Info systemdirectory.wiki-notes
 │########################################################################################################
-├─ AI/                                       # INWORK llm Spielplatz
-├─ FileManager/                              # Info filemanager.wiki-notes
-│   ├─ Caches                                # ZwischenSpeicher u.a
-│   ├─ Basis-Module/                         # Alle Module
-│   │   ├─ DNA/                              # Info dna.wiki-notes | helpme dna
-│   │   │   └─ Shell/                        # DNA SHELL
-│   │   │     ├─ lex.core-dna                # Zeigt das DNA Lexikon | ~ dna lex
-│   │   │     ├─ list.core-dna               # List DNA-Kommandos | ~ dna list
-│   │   │     ├─ main-completion.core-dna    # Tab-Vervollständigung
-│   │   │     └─ main.core-dna               # Main.Schaltstelle für DNA-Kommandos
-│   │   ├─ Logic/                            # Info logic.wiki-notes | helpme logic
-│   │   │   └─ Shell/                        # CMD SHELL
-│   │   │     ├─ cpu.cmd-dna                 # Zeigt CPU-Informationen
-│   │   │     ├─ hw.cmd-dna                  # Zeigt Hardware-Informationen
-│   │   │     ├─ internet.cmd-dna            # Zeigt Netzwerkkonfiguration - Interfaces
-│   │   │     ├─ load.cmd-dna                # Lädt Datei aus dem Internet via wget
-│   │   │     ├─ off.cmd-dna                 # Entfernt +x von Datei(en)
-│   │   │     ├─ on.cmd-dna                  # Aktiviert chmod +x für Datei(en)
-│   │   │     ├─ pci.cmd-dna                 # Zeigt PCI-Geräteinformationen
-│   │   │     ├─ ports.cmd-dna               # Listet offene Ports und zugehörige Programme
-│   │   │     └─ usb.cmd-dna                 # Zeigt USB-Geräteinformationen
-│   │   ├─ Nodes/                            # Mutter  | zusammenführender Schaltkreis
-│   │   ├─ Nano/                             # Tochter | zukünftige Präzisionswerkzeuge
-│   │   ├─ Micro/                            # Kind    | Spezial Präzisionswerkzeuge
-│   │   ├─ Notes/                            # lesbare Dateien
-│   │   │   └─ Shell/                        # lesbare Dateien
-│   │   │     └─ lexikon.core-wiki-notes     # MAIN DNA LEXIKON | dna lex
-│   │   ├─ Errors
-│   │   │  ├─ DNA
-│   │   │  ├─ Logic
-│   │   │  ├─ Nodes
-│   │   │  ├─ Nano
-│   │   │  ├─ Micro
-│   │   │  └─ Needles
-│   │   └─ basis-module.wiki-notes           # Info basis-module.wiki-notes 
-├─ Pylovara-Logs/                            # INWORK Zentrale Logs und Cache-Dateien              
-└─ ROOT Partition/                           # INWORK Blumentopf - Satt - Betriebsystem
+03 00
+├─ AI/                                  # INWORK llm Spielplatz
+04 00
+├─ FileManager/                         # Info filemanager.wiki-notes
+04 01 
+│  ├─ Caches/                           # ZwischenSpeicher u.a
+04 02 
+│  ├─ Basis-Module/                     # Alle Module
+04 02 01  
+│  │  ├─ DNA/                           # Info dna.wiki-notes | helpme dna
+04 02 01 01
+│  │  │  └─ Shell/                      # DNA SHELL
+04 02 01 02
+│  │  │  ├─ core-dna.wiki-notes fehlt
+04 02 01 03
+│  │  │  ├─ lex.core-dna                # Zeigt das DNA Lexikon | ~ dna lex
+04 02 01 04
+│  │  │  ├─ list.core-dna               # List DNA-Kommandos | ~ dna list
+04 02 01 05
+│  │  │  ├─main-completion.core-dna     # Tab-Vervollständigung
+04 02 01 06
+│  │  │  └─ main.core-dna               # Main.Schaltstelle für DNA-Kommandos
+04 02 02 
+│  │  ├─ Logic/                         # Info logic.wiki-notes | helpme logic
+04 02 02 01
+│  │  │  └─ Shell/                      # CMD SHELL
+04 02 02 02 
+│  │  │  ├─ dna-cmd.wiki-notes fehlt
+04 02 02 03 
+│  │  │  ├─ hw.cmd-dna                  # Zeigt Hardware-Informationen
+04 02 02 04 
+│  │  │  ├─ internet.cmd-dna            # Zeigt Netzwerkkonfiguration - Interfaces
+04 02 02 05 
+│  │  │  ├─ load.cmd-dna                # Lädt Datei aus dem Internet via wget
+04 02 02 06 
+│  │  │  ├─ off.cmd-dna                 # Entfernt +x von Datei(en)
+04 02 02 07 
+│  │  │  ├─ on.cmd-dna                  # Aktiviert chmod +x für Datei(en)
+04 02 02 08 
+│  │  │  ├─ pci.cmd-dna                 # Zeigt PCI-Geräteinformationen
+04 02 02 09
+│  │  │  ├─ ports.cmd-dna               # Listet offene Ports und zugehörige Programme
+04 02 02 10
+│  │  │  ├─ cpu.cmd-dna                 # Zeigt CPU-Informationen
+04 02 02 11
+│  │  │  └─ usb.cmd-dna                 # Zeigt USB-Geräteinformationen
+04 02 03 00
+│  │  ├─ Nodes/                         # Mutter  | zusammenführender Schaltkreis
+04 02 03 01 
+│  │  │  └─ nodes.wiki fehlt
+04 02 04 00
+│  │  ├─ Nano/                          # Tochter | zukünftige Präzisionswerkzeuge
+04 02 04 01 
+│  │  │  └─ nano.wiki fehlt
+04 02 05 00
+│  │  ├─ Micro/                         # Kind    | Spezial Präzisionswerkzeuge
+04 02 05 01
+│  │  │  └─ micro.wiki fehlt
+04 02 06 00
+│  │  ├─ Notes/                         # lesbare Dateien
+04 02 06 01 
+│  │  │  ├─ notes.wiki fehlt
+04 02 06 02 
+│  │  │  └─ Shell/                      # lesbare Dateien
+04 02 06 02 01
+│  │  │     └─ lexikon.core-wiki-notes  # MAIN DNA LEXIKON | dna lex
+04 02 07 00
+│  │  ├─ Errors
+04 02 07 01
+│  │  │  ├─ DNA
+04 02 07 02
+│  │  │  ├─ Logic
+04 02 07 03
+│  │  │  ├─ Nodes
+04 02 07 04
+│  │  │  ├─ Nano
+04 02 07 05
+│  │  │  ├─ Micro
+04 02 07 06
+│  │  │  ├─ Needles
+04 02 07 07
+│  │  │  └─ errors.wiki-notes
+04 02 08 00
+│     └─ basis-module.wiki-notes           # Info basis-module.wiki-notes 
+05  
+├─ Pylovara-Logs/                          # INWORK Zentrale Logs und Cache-Dateien              
+06
+└─ ROOT Partition/                         # INWORK Blumentopf - Satt - Betriebsystem
 │########################################################################################################

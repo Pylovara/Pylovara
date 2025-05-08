@@ -1,0 +1,20 @@
+# logic.core-ai.wiki-notes
+
+## Zweck
+Das `logic.core-ai-logic` dient als zentrales Logikmodul, um `.ai-logic`-Dateien zu laden und auszuführen.
+
+## Funktionen
+- Interpretiert `.ai-logic`-Module
+- Lädt Kontextinformationen
+- Führt Regeln aus
+- Unterstützt Modularität durch Sub-Logiken (`ai-repair.logic`, `ai-document.logic`, etc.)
+- Kann später um echte KI erweitert werden
+
+## Module
+- `ai-repair.logic`: Fehlererkennung und -behebung in `*.cmd-dna`
+- `ai-document.logic`: Generiert `.wiki-notes` aus vorhandenen Skripten
+- `ai-analyzer.logic`: Analysiert `*.cmd-dna` auf Systemabhängigkeiten
+
+## Beispiel
+```bash
+./logic.core-ai-logic ai-repair.logic ${CMD_DNA_PATH}/cpu.cmd-dna

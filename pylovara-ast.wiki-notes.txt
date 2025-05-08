@@ -1,0 +1,427 @@
+01 00
+# Absoluter Pfad:
+# Pylovara/pylovara-ast.wiki-notes
+# https://github.com/Pylovara/Pylovara/
+# MAIN TREE - ONWORK - WORK INFOS
+#########################################################################################################
+
+02 00
+/Pylovara/SystemControl/
+│########################################################################################################
+02 01
+├── control.pv-conf                        # Zentrale Masterdatei – wird von Shell ge'source'd
+02 02
+├── nodes.conf                             # Config für nodes - Einzeln Aktivierbar
+02 03
+├── nano-nodes.conf                        # Feingranulare Steuerung - Einzeln Aktivierbar
+02 04
+├── micro-nodes.conf                       # Konfig für Templates -
+02 05
+├── needles.conf                           # Treibermodul-Steuerung
+02 06
+├── core-dna.conf                          # Systemidentität & interne IDs
+02 07
+├── download.conf                          # Systemweite Paketlogik / Aliasbasierte Installersteuerung
+02 08
+├── cache.conf                             # Cache-Verhalten, Layer-Steuerung, Priorität
+02 09
+├── lexikon.wiki-notes                     # Hanbuch | helpme 00 | helpme lex | helpme lexikon
+02 10
+└── control.wiki-notes                     # Erläuterung aller Steuerdateien (Hilfsübersicht)
+
+
+03 00
+|-Pylovara/SystemDirectory/                # Info systemdirectory.wiki-notes
+│########################################################################################################
+03 00 Arbeitsbereich
+├─ AI/                                  # Hauptordner für KI
+
+
+03 01
+│  ├── mcp.core-pv-conf                 # Konfiguration des MCP-Systems
+
+# mcp.core-pv-conf - später in ~> Pylovara/SystemControl/
+# Konfiguration des MCP-Systems innerhalb von Pylovara
+
+# Basis-Pfade
+MCP_ROOT="${PYLOVARA_ROOT}/AI"
+WIKI_PATH="${PYLOVARA_ROOT}/FileManager/Basis-Module/Notes/Shell"
+CMD_DNA_PATH="${PYLOVARA_ROOT}/FileManager/Basis-Module/Logic/Shell"
+
+# Logikpfade
+LOGIC_PATH="${MCP_ROOT}/logic"
+AUTO_FIX_LOGIC="${LOGIC_PATH}/ai-repair.logic"
+
+# Cache-Einstellungen
+CACHE_PATH="${PYLOVARA_ROOT}/P-Logs/mcp-cache"
+MAX_CACHE_ENTRIES=50
+
+# Sicherheitseinstellungen
+ENABLE_SUDO=true
+SHELL_PROXY="mcp-shell-proxy"
+
+
+03 02
+│  ├── mcp-shell-proxy.shell-dna      # Proxy zwischen Shell und KI-Prozess
+
+#!/bin/bash
+# mcp-shell-proxy.shell-dna
+# MCP außerhalb der ordner struktur (fürs erste)
+
+while true; do
+    read -p "[MCP-Proxy] Eingabe: " CMD
+    case "$CMD" in
+        wiki-read)
+            read -p "Pfad zur .wiki-notes: " PATH
+            ${MCP_ROOT}/mcp-wiki-reader "${PATH}"
+            ;;
+        fix-cmd)
+            read -p "Pfad zu *.cmd-dna: " PATH
+            ${MCP_ROOT}/mcp-auto-fix.ai-logic "${PATH}"
+            ;;
+        exit)
+            break
+            ;;
+        *)
+            echo "Unbekannter Befehl: $CMD"
+            ;;
+    esac
+done
+
+
+03 03
+│  ├── mcp-wiki-reader.shell-dna       # Liest wiki-notes und stellt den Inhalt bereit.
+
+#!/bin/bash
+# mcp-wiki-reader.shell-dna
+
+WIKI_PATH="$1"
+
+if [ ! -f "$WIKI_PATH" ]; then
+    echo "Fehler: Datei nicht gefunden: $WIKI_PATH" >&2
+    exit 1
+fi
+
+cat "$WIKI_PATH"
+
+
+03 04
+│  ├── mcp-wiki-reader.wiki-notes       # Dokumentation des Readers
+
+# mcp-wiki-reader.wiki-notes
+
+## Zweck
+Liest `.wiki-notes`-Dateien und stellt den Inhalt bereit.
+
+## Aufruf
+```bash
+./mcp-wiki-reader ### später <pfad>
+## könnte neues anlegen
+## ./mcp-wiki-reader ${WIKI_PATH}/lexikon.core-wiki-notes
+
+
+03 05
+│  ├── mcp-auto-fix.ai-logic            # Analysiert *.cmd-dna + führt Fixes durch
+
+#!/bin/bash
+# mcp-auto-fix.ai-logic
+
+FILE="$1"
+
+if [ ! -f "$FILE" ]; then
+    echo "Fehler: Datei nicht gefunden: $FILE" >&2
+    exit 1
+fi
+
+# Prüfung auf häufige Fehler
+if grep -q "lscpu" "$FILE" && ! command -v lscpu &>/dev/null; then
+    echo "Warnung: 'lscpu' ist nicht installiert."
+    echo "Vorschlag: Paket 'util-linux' installieren."
+fi
+
+if grep -q "lspci" "$FILE" && ! command -v lspci &>/dev/null; then
+    echo "Warnung: 'lspci' ist nicht installiert."
+    echo "Vorschlag: Paket 'pciutils' installieren."
+fi
+
+# Syntaxprüfung
+if ! bash -n "$FILE"; then
+    echo "Syntaxfehler in Skript gefunden!"
+    echo "Versuche automatische Korrektur..."
+    sed -i 's/\<fi\>/fi/g' "$FILE"
+    echo "Korrektur abgeschlossen."
+fi
+
+
+03 06
+│  └── mcp.wiki-notes                   # Kommt später
+
+# Dokumentation des Gesamtsystems
+# mcp.wiki-notes
+
+## Zweck
+Das `mcp`-System dient als KI-Schnittstelle innerhalb von Pylovara.
+
+Es ermöglicht:
+- Lesen von `.wiki-notes`
+- Analyse von `*.cmd-dna`
+- Automatische Fehlerbehebung
+- Integration zukünftiger KI-Modelle
+
+## Module
+- `mcp.core-pv-conf` – Konfiguration - grobe skizze
+- `mcp-shell-proxy` – Terminal-Schnittstelle - unfertig
+- `mcp-wiki-reader` – `.wiki-notes`-Lesemodul - unfertig
+- `mcp-auto-fix.ai-logic` – Fehlererkennung und -behebung - unfertig
+
+
+03 07 00
+│  └─ Logic/                            # Experimentiel
+03 07 01
+│  │  ├─ ai-document.logic              # Sollte Dokumente generieren , wenns gut klappt
+
+#!/bin/bash
+# Sollte Dokumente generieren , wenns gut klappt ... test
+# ai-document.logic.ai-logic
+
+function ai_init() {
+    local CONTEXT="$1"
+    echo "[AI-LOGIC] Init: Dokumentationsmodus gestartet"
+    echo "[AI-LOGIC] Kontext: $CONTEXT"
+}
+
+function ai_run() {
+    local FILE="$1"
+
+    if [ ! -f "$FILE" ]; then
+        echo "Fehler: Datei nicht gefunden: $FILE" >&2
+        return 1
+    fi
+
+    local NOTE_NAME="${FILE##*/}"
+    NOTE_NAME="${NOTE_NAME%.*}.wiki-notes"
+
+    cat >"${PYLOVARA_ROOT}/FileManager/Basis-Module/Notes/Shell/${NOTE_NAME}" <<EOF
+# ${NOTE_NAME}
+
+## Beschreibung
+Automatisch generierte Dokumentation für:
+${FILE}
+
+## Inhalt
+EOF
+
+    head -n 20 "$FILE" >>"${PYLOVARA_ROOT}/FileManager/Basis-Module/Notes/Shell/${NOTE_NAME}"
+
+    echo "Dokumentation erstellt: ${NOTE_NAME}"
+}
+
+
+03 07 02
+│  │  ├─ ai-repair.logic.ai-logic       # Reperatur DNA Logic - Noch Linux
+
+#!/bin/bash
+# Reperatur DNA Logic - Noch Linux
+# ai-repair.logic.ai-logic
+
+function ai_init() {
+    local CONTEXT="$1"
+    echo "[AI-LOGIC] Init: Repair-Modus gestartet"
+    echo "[AI-LOGIC] Kontext: $CONTEXT"
+}
+
+function ai_run() {
+    local FILE="$1"
+
+    if [ ! -f "$FILE" ]; then
+        echo "Fehler: Datei nicht gefunden: $FILE" >&2
+        return 1
+    fi
+
+    # Prüfung auf häufige Fehler
+    if grep -q "lscpu" "$FILE" && ! command -v lscpu &>/dev/null; then
+        echo "Warnung: 'lscpu' ist nicht installiert."
+        echo "Vorschlag: Paket 'util-linux' installieren."
+    fi
+
+    if grep -q "lspci" "$FILE" && ! command -v lspci &>/dev/null; then
+        echo "Warnung: 'lspci' ist nicht installiert."
+        echo "Vorschlag: Paket 'pciutils' installieren."
+    fi
+
+    # Syntaxprüfung
+    if ! bash -n "$FILE"; then
+        echo "Syntaxfehler in Skript gefunden!"
+        echo "Versuche automatische Korrektur..."
+        sed -i 's/\<fi\>/fi/g' "$FILE"
+        echo "Korrektur abgeschlossen."
+    fi
+}
+
+
+03 07 03
+│  │  ├─ interpreter-ai-logic.shell-dna # Logik-Interpreter
+
+#!/bin/bash
+# Logik-Interpreter
+# interpreter-ai-logic.shell-dna
+
+LOGIC_ROOT="${PYLOVARA_ROOT}/AI/logic"
+MCP_CACHE="${PYLOVARA_ROOT}/P-Logs/mcp-cache"
+
+function run_ai_logic() {
+    local LOGIC_FILE="$1"
+    local CONTEXT="$2"
+
+    if [ ! -f "$LOGIC_FILE" ]; then
+        echo "Fehler: Logikdatei nicht gefunden: $LOGIC_FILE" >&2
+        return 1
+    fi
+
+    source "$LOGIC_FILE"
+
+    # Prüfen, ob eine init-Funktion existiert
+    if declare -f ai_init &>/dev/null; then
+        ai_init "$CONTEXT"
+    else
+        echo "Keine ai_init()-Funktion in $LOGIC_FILE"
+        return 1
+    fi
+
+    # Prüfen, ob eine run-Funktion existiert
+    if declare -f ai_run &>/dev/null; then
+        ai_run "$CONTEXT"
+    else
+        echo "Keine ai_run()-Funktion in $LOGIC_FILE"
+        return 1
+    fi
+}
+
+# Aufrufbeispiel:
+# ./logic.core-ai-logic ai-repair.logic cpu.cmd-dna
+if [[ "$0" == "${BASH_SOURCE[0]}" ]]; then
+    if [[ -z "$1" ]]; then
+        echo "Verwendung: $0 <logikdatei> [kontext]"
+        exit 1
+    fi
+
+    LOGIC_FILE="${LOGIC_ROOT}/$1"
+    CONTEXT="$2"
+
+    run_ai_logic "$LOGIC_FILE" "$CONTEXT"
+fi
+
+
+03 07 04
+│  │  └─ logic.core-ai.wiki-notes       # Laden - Ausführen - AI Dokument
+
+# logic.core-ai.wiki-notes
+
+## Zweck
+Das `logic.core-ai-logic` dient als zentrales Logikmodul, um `.ai-logic`-Dateien zu laden und auszuführen.
+
+## Funktionen
+- Interpretiert `.ai-logic`-Module
+- Lädt Kontextinformationen
+- Führt Regeln aus
+- Unterstützt Modularität durch Sub-Logiken (`ai-repair.logic`, `ai-document.logic`, etc.)
+- Kann später um echte KI erweitert werden
+
+## Module
+- `ai-repair.logic`: Fehlererkennung und -behebung in `*.cmd-dna`
+- `ai-document.logic`: Generiert `.wiki-notes` aus vorhandenen Skripten
+- `ai-analyzer.logic`: Analysiert `*.cmd-dna` auf Systemabhängigkeiten
+
+## Beispiel
+```bash
+./logic.core-ai-logic ai-repair.logic ${CMD_DNA_PATH}/cpu.cmd-dna
+
+
+###########################################################################################
+04 00
+├─ FileManager/                         # Info filemanager.wiki-notes
+04 01
+│  ├─ Caches/                           # ZwischenSpeicher u.a
+04 02
+│  ├─ Basis-Module/                     # Alle Module
+04 02 01
+│  │  ├─ DNA/                           # Info dna.wiki-notes | helpme dna
+04 02 01 01
+│  │  │  └─ Shell/                      # DNA SHELL
+04 02 01 02
+│  │  │  ├─ core-dna.wiki-notes fehlt
+04 02 01 03
+│  │  │  ├─ lex.core-dna                # Zeigt das DNA Lexikon | ~ dna lex
+04 02 01 04
+│  │  │  ├─ list.core-dna               # List DNA-Kommandos | ~ dna list
+04 02 01 05
+│  │  │  ├─main-completion.core-dna     # Tab-Vervollständigung
+04 02 01 06
+│  │  │  └─ main.core-dna               # Main.Schaltstelle für DNA-Kommandos
+04 02 02
+│  │  ├─ Logic/                         # Info logic.wiki-notes | helpme logic
+04 02 02 01
+│  │  │  └─ Shell/                      # CMD SHELL
+04 02 02 02
+│  │  │  ├─ dna-cmd.wiki-notes fehlt
+04 02 02 03
+│  │  │  ├─ hw.cmd-dna                  # Zeigt Hardware-Informationen
+04 02 02 04
+│  │  │  ├─ internet.cmd-dna            # Zeigt Netzwerkkonfiguration - Interfaces
+04 02 02 05
+│  │  │  ├─ load.cmd-dna                # Lädt Datei aus dem Internet via wget
+04 02 02 06
+│  │  │  ├─ off.cmd-dna                 # Entfernt +x von Datei(en)
+04 02 02 07
+│  │  │  ├─ on.cmd-dna                  # Aktiviert chmod +x für Datei(en)
+04 02 02 08
+│  │  │  ├─ pci.cmd-dna                 # Zeigt PCI-Geräteinformationen
+04 02 02 09
+│  │  │  ├─ ports.cmd-dna               # Listet offene Ports und zugehörige Programme
+04 02 02 10
+│  │  │  ├─ cpu.cmd-dna                 # Zeigt CPU-Informationen
+04 02 02 11
+│  │  │  └─ usb.cmd-dna                 # Zeigt USB-Geräteinformationen
+04 02 03 00
+│  │  ├─ Nodes/                         # Mutter  | zusammenführender Schaltkreis
+04 02 03 01
+│  │  │  └─ nodes.wiki fehlt
+04 02 04 00
+│  │  ├─ Nano/                          # Tochter | zukünftige Präzisionswerkzeuge
+04 02 04 01
+│  │  │  └─ nano.wiki fehlt
+04 02 05 00
+│  │  ├─ Micro/                         # Kind    | Spezial Präzisionswerkzeuge
+04 02 05 01
+│  │  │  └─ micro.wiki fehlt
+04 02 06 00
+│  │  ├─ Notes/                         # lesbare Dateien
+04 02 06 01
+│  │  │  ├─ notes.wiki fehlt
+04 02 06 02
+│  │  │  └─ Shell/                      # lesbare Dateien
+04 02 06 02 01
+│  │  │     └─ lexikon.core-wiki-notes  # MAIN DNA LEXIKON | dna lex
+04 02 07 00
+│  │  ├─ Errors
+04 02 07 01
+│  │  │  ├─ DNA                         # dna logs
+04 02 07 02
+│  │  │  ├─ Logic                       # logic logs
+04 02 07 03
+│  │  │  ├─ Nodes                       # nodes logs
+04 02 07 04
+│  │  │  ├─ Nano                        # nano logs
+04 02 07 05
+│  │  │  ├─ Micro                       # micro logs
+04 02 07 06
+│  │  │  ├─ Needles                     # needles los
+04 02 07 07
+│  │  │  └─ errors.wiki-notes           # Info - Erklärung
+04 02 08 00
+│     └─ basis-module.wiki-notes        # Info basis-module.wiki-notes
+05
+├─ Pylovara-Logs/                       # INWORK Zentrale Logs
+06
+└─ ROOT Partition/                      # INWORK Blumentopf - Satt - Betriebsystem
+│########################################################################################################

@@ -1,0 +1,90 @@
+00 main.wiki-nodes
+# Pylovara: Zentrale Wiki-Navigation
+# Dieses Modul dient der Navigation durch das terminalbasierte Hilfesystem (helpme)
+# Nummernstruktur: XX YY [ZZ]
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+00 01 | Hilfe & Einstieg
+# helpme 00 01
+Dies ist das zentrale Einstiegsmodul für Pylovara-Hilfe. Hier findest du eine Übersicht,
+wie du die `helpme`-Funktion nutzen kannst:
+
+→ helpme [nummer]
+   - `helpme 01 01` ruft einen bestimmten Bereich auf
+   - `helpme maker` ruft nach Namen
+   - `helpme` ohne Parameter zeigt diesen Gesamttext
+
+→ Standardstruktur:
+   - XX   = Hauptmodulnummer
+   - YY   = Untermodul
+   - ZZ   = ggf. Sub-Sektion (z.B. Fehlercodes, Templates)
+
+→ Beispiel:
+   - `helpme 02 01`  → zeigt Startinfos zum Maker-Modul
+   - `helpme 03 07 02` → spezifischer Subpunkt im nano-System
+
+→ Hinweis:
+   - `lexikon.wiki-notes` listet alle bekannten Nummern
+   - `pylovara-ast.wiki-notes` enthält AST-basierte Volltextstruktur
+   - beide können per `helpme lexikon` oder `helpme ast` aufgerufen werden
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+01 00 | Module: Allgemeine Übersicht
+# helpme 01 00
+Dies sind alle verfügbaren Hauptmodule des Pylovara-Systems:
+
+→ 02 = Maker-System
+→ 03 = Micro/Nano-Systeme
+→ 04 = Directory-Manager
+→ 05 = Object-Manager (pv-objekt)
+→ 06 = Needle-System (Treiber)
+→ 07 = Wiki/Notes-System
+→ 08 = Logging, Fehler, Protokollierung
+
+Nutze `helpme 02`, `helpme 03 01` etc. für Details.
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+02 00 | Modul: Maker
+# helpme 02 00
+Das Maker-Modul dient zur Erzeugung von *.*-nodes, *.*-nano-nodes etc.
+Weitere Unterpunkte:
+
+→ 02 01 | Node-Erstellung (Standard)
+→ 02 02 | Zielordner-Erkennung
+→ 02 03 | Namensregeln (Format: objekt.ziel-nodes)
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+03 00 | Modul: Micro/Nano-Systeme
+# helpme 03 00
+Strukturierte Hilfe zu .micro-nodes und .nano-notes:
+
+→ 03 01 | Micro-Nodes: Konzept
+→ 03 02 | Micro-Notes als Templates
+→ 03 03 | Fehlerstruktur in Micro-Logs
+→ 03 07 | Nano-Nodes: Besonderheiten
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+04 00 | Modul: Directory-System
+# helpme 04 00
+→ Steuerung über SystemDirectoryManager
+→ `pv-dir`, `pv-conf`, Source-System, etc.
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+07 00 | Modul: Wiki-System
+# helpme 07 00
+→ Aufbau .wiki-notes
+→ `main.wiki-nodes`, `lexikon.wiki-notes`
+→ Suchsystem `SysWiki`, `aliasloaderwiki`
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+lexikon | Rufnummernverzeichnis
+# helpme lexikon
+Listet alle bekannten .wiki-notes-Rufnummern samt Modulnamen.
+Ideal für schnellen Zugriff via Zahl statt Name.
+
+ast | AST-gestütztes Hilfesystem
+# helpme ast
+Parst den internen Hilfe-Tree systematisch – ähnlich einer Inhaltsangabe aller Module.
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EOF

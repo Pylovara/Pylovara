@@ -1,1 +1,17 @@
-kommt
+# Dokumentation des Gesamtsystems
+# mcp.wiki-notes
+
+## Zweck
+Das `mcp`-System dient als KI-Schnittstelle innerhalb von Pylovara.
+
+Es ermöglicht:
+- Lesen von `.wiki-notes`
+- Analyse von `*.cmd-dna`
+- Automatische Fehlerbehebung
+- Integration zukünftiger KI-Modelle
+
+## Module
+- `mcp.core-pv-conf` – Konfiguration - grobe skizze
+- `mcp-shell-proxy` – Terminal-Schnittstelle - unfertig
+- `mcp-wiki-reader` – `.wiki-notes`-Lesemodul - unfertig
+- `mcp-auto-fix.ai-logic` – Fehlererkennung und -behebung - unfertig

@@ -23,3 +23,12 @@ externe Abhängigkeiten, und nutzt nur Bash-Built-ins und Standard-Tools
 wie find, grep, sed.
 Arch Linux: Es ist für Arch optimiert (z. B. durch Nutzung von bash -n 
 für Syntaxprüfung) , passt in das Pylovara-Ökosystem.
+
+ki scan <pfad>
+ki repair <pfad>
+
+Im grunde sprechen wir hier nicht von einer ki sondern eher eine erweiterung
+die später in den dna gepflanzt wird , da es aber nützlich ist für fehler 
+, wird es erstmal hier rein geknallt ..... könnte mit cash ausgebaut werden 
+
+

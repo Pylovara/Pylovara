@@ -1,0 +1,48 @@
+#!/bin/bash
+# Logik-Interpreter
+# logic.core-ai-logic.shell-dna
+
+LOGIC_ROOT="${PYLOVARA_ROOT}/AI/logic"
+MCP_CACHE="${PYLOVARA_ROOT}/P-Logs/mcp-cache"
+
+function run_ai_logic() {
+    local LOGIC_FILE="$1"
+    local CONTEXT="$2"
+
+    if [ ! -f "$LOGIC_FILE" ]; then
+        echo "Fehler: Logikdatei nicht gefunden: $LOGIC_FILE" >&2
+        return 1
+    fi
+
+    source "$LOGIC_FILE"
+
+    # Prüfen, ob eine init-Funktion existiert
+    if declare -f ai_init &>/dev/null; then
+        ai_init "$CONTEXT"
+    else
+        echo "Keine ai_init()-Funktion in $LOGIC_FILE"
+        return 1
+    fi
+
+    # Prüfen, ob eine run-Funktion existiert
+    if declare -f ai_run &>/dev/null; then
+        ai_run "$CONTEXT"
+    else
+        echo "Keine ai_run()-Funktion in $LOGIC_FILE"
+        return 1
+    fi
+}
+
+# Aufrufbeispiel:
+# ./logic.core-ai-logic ai-repair.logic cpu.cmd-dna
+if [[ "$0" == "${BASH_SOURCE[0]}" ]]; then
+    if [[ -z "$1" ]]; then
+        echo "Verwendung: $0 <logikdatei> [kontext]"
+        exit 1
+    fi
+
+    LOGIC_FILE="${LOGIC_ROOT}/$1"
+    CONTEXT="$2"
+
+    run_ai_logic "$LOGIC_FILE" "$CONTEXT"
+fi

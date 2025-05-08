@@ -1,0 +1,27 @@
+#!/bin/bash
+# main.needles-handler-nodes
+# Lädt alle .needles und führt sie aus
+
+# Pfade aus control.pv-conf laden
+# source "${PYLOVARA_ROOT}/SystemControl/control.pv-conf"
+
+NEEDLE_DIR="${PYLOVARA_ROOT}/FileManager/Basis-Module/Needles/"
+NEEDLE_LOG="${PYLOVARA_ROOT}/SystemDirectory/FileManager/Basis-Module/Errors/Needles"
+
+mkdir -p "$NEEDLE_LOG"
+
+function run_needles() {
+    if [ ! -d "$NEEDLE_DIR" ]; then
+        echo "[ERROR] Needle-Verzeichnis nicht gefunden: $NEEDLE_DIR"
+        return 1
+    fi
+
+    for needle in "$NEEDLE_DIR"/*.*-needles; do
+        [[ -f "$needle" ]] || continue
+        echo "[INFO] Führe Needle aus: $(basename "$needle")"
+        bash "$needle" >> "${NEEDLE_LOG}/$(basename "$needle").log" 2>&1
+    done
+}
+
+echo "[INFO] Needle-Handler gestartet"
+run_needles

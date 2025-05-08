@@ -227,7 +227,7 @@ fi
 
 
 03 06
-│  └── mcp.wiki-notes                   # Kommt später
+│  └── mcp.wiki-notes                   # Info Wiki
 
 # Dokumentation des Gesamtsystems
 # mcp.wiki-notes
@@ -431,12 +431,35 @@ Das `logic.core-ai-logic` dient als zentrales Logikmodul, um `.ai-logic`-Dateien
 │  │  │  ├─main-completion.core-dna     # Tab-Vervollständigung
 04 02 01 06
 │  │  │  └─ main.core-dna               # Main.Schaltstelle für DNA-Kommandos
+
+#!/bin/bash
+# main.core-dna – Zentrale Schaltstelle für DNA-Kommandos
+
+# >>> DNA-HEAD-BEGIN
+# Dispatcher für .cmd-dna Kommandos
+# >>> DNA-HEAD-END
+
+DNA() {
+    local cmd="$1"
+    shift
+    local dnafile="/Pylovara/SystemDirectory/FileManager/Basis-Module/Logic/Shell/${cmd}.cmd-dna"
+
+    if [[ -f "$dnafile" ]]; then
+        source "$dnafile"
+        DNA_EXEC "$@"
+    else
+        echo "❌ DNA-Kommando '$cmd' not found | use dna lex | dna list"
+    fi
+}
+export -f DNA
+
+
 04 02 02
 │  │  ├─ Logic/                         # Info logic.wiki-notes | helpme logic
 04 02 02 01
 │  │  │  └─ Shell/                      # CMD SHELL
 04 02 02 02
-│  │  │  ├─ dna-cmd.wiki-notes fehlt
+│  │  │  ├─ dna-cmd.wiki-notes          # Unfertig aber kommt noch
 04 02 02 03
 │  │  │  ├─ hw.cmd-dna                  # Zeigt Hardware-Informationen
 04 02 02 04
@@ -631,6 +654,83 @@ run_needles
 
 
 04 02 03 05
+│  │  │  ├─ main.wiki-nodes             # helpme system (veraltet)
+
+#!/bin/bash
+# Veralteter Pfad :
+# Pylovara/SystemDirectory/FileManager/Module/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes
+# Prototyp 2.0 Beta helpme <number> 
+# Muss an Pylovara 3.0 angepasst werden 
+# Baum struktur hat sich verändert in der numerierung 
+# neue anforderung : *.wiki-notes = exakter name
+# neue anforderung : ast nummer system 00 00 00 00 00
+# muss für Lexikon ready sein um gezielt zu suchen
+
+# Verzeichnis, in dem gesucht werden soll (root of Pylovara-System)
+BASE_DIR="/Pylovara"
+
+# Pfad zur Lexikon-Datei
+LEXIKON_FILE="$BASE_DIR/SystemDirectory/DirectoryManager/lexikon.wiki-notes"
+
+# Cache-Datei (für zukünftige Optimierung) Beta (Aus kommentieren #) : 
+# CACHE_FILE="$BASE_DIR/FileManager/Wiki-Module/Wiki-Cache/wiki.wiki-cache-notes"
+
+# Eingabe: Suchbegriff oder ID
+SEARCH_INPUT="$1"
+
+# Fallback für leere Eingabe oder 'helpme 00'
+if [[ -z "$SEARCH_INPUT" || "$SEARCH_INPUT" == "00" ]]; then
+    if [[ -f "$LEXIKON_FILE" ]]; then
+        cat "$LEXIKON_FILE"
+        exit 0
+    else
+        echo "[!] Lexikon-Datei nicht gefunden: $LEXIKON_FILE"
+        exit 1
+    fi
+fi
+
+# Prüfen, ob die Eingabe eine numerische ID ist
+if [[ "$SEARCH_INPUT" =~ ^[0-9]+$ ]]; then
+    # Suche nach der ID in lexikon.wiki-notes
+    FOUND_ENTRY=$(grep "^$SEARCH_INPUT " "$LEXIKON_FILE" | awk '{print $2}' | head -n 1)
+    if [[ -n "$FOUND_ENTRY" ]]; then
+        # Suche nach der Datei im Verzeichnisbaum
+        FOUND_PATH=$(find "$BASE_DIR" -type f -name "$FOUND_ENTRY" 2>/dev/null | head -n 1)
+        if [[ -n "$FOUND_PATH" ]]; then
+            cat "$FOUND_PATH"
+            exit 0
+        else
+            echo "[!] Datei für ID $SEARCH_INPUT nicht gefunden: $FOUND_ENTRY"
+            exit 1
+        fi
+    else
+        echo "[!] Keine Datei für ID $SEARCH_INPUT in $LEXIKON_FILE gefunden."
+        echo "Versuchen Sie 'helpme lex' für eine Übersicht."
+        exit 1
+    fi
+else
+    # Normale Dateinamenssuche (case-insensitive)
+    SEARCH_NAME=$(echo "$SEARCH_INPUT" | awk '{print tolower($0)}')
+    # Zukünftig: Cache-Prüfung (optional)
+    # if [[ -f "$CACHE_FILE" ]]; then
+    #     FOUND_PATH=$(grep -i "$SEARCH_NAME.wiki-notes" "$CACHE_FILE" | head -n 1)
+    # fi
+    # Wenn kein Cache oder keine Treffer im Cache, normale Suche
+    if [[ -z "$FOUND_PATH" ]]; then
+        FOUND_PATH=$(find "$BASE_DIR" -type f -iname "${SEARCH_NAME}.wiki-notes" 2>/dev/null | head -n 1)
+    fi
+    if [[ -n "$FOUND_PATH" ]]; then
+        cat "$FOUND_PATH"
+        exit 0
+    else
+        echo "[!] Keine passende .wiki-notes-Datei gefunden für: $SEARCH_NAME"
+        echo "Versuchen Sie 'helpme lex' für eine Übersicht."
+        exit 1
+    fi
+fi
+
+
+04 02 03 06
 │  │  │  └─ modulliste.wiki.notes       # info wiki-notes
 
 # Modul Liste 

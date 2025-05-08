@@ -6,7 +6,7 @@ System Wiki - ON - helpme - The SubSystem On Subsystem -
 ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖    ▐▙▄▄▖▐▙▄▄▖▗▞▘▝▚▖▗▄█▄▖▐▌ ▐▌▝▚▄▞▘▐▌  ▐▌
 Pylovara since 2025
 ############## Das Wiki Handbuch fürs System ################
->>>>>     Info : 000 Normal 0000 Deep 00000 BigDeep     <<<<<
+>> Info Beispiel : 02 00 00 | Point 02 Artikel 00 More 00 <<
 
 # Nummer + AST Übersicht          # Rooling-Release Updates
 lex lexikon.wiki-notes            # helpme lex 
@@ -14,16 +14,9 @@ lexikon lexikon.wiki-notes        # helpme lexikon
 
 
 # Main Übersicht
-001 pylovara-ast.wiki-notes       # MAIN | AST | Übersicht 
-002 systemcontrol.wiki-notes      # MAIN | Schaltzentrale
-003 systemdirectory.wiki-notes    # MAIN | Übersicht 
-004 basis-module.wiki-notes       # Daten Typen | Bedeutung | Nutzen
+01 00 pylovara-ast.wiki-notes       # MAIN | AST | Übersicht 
+02 00 systemcontrol.wiki-notes      # MAIN | Schaltzentrale
+03 00 systemdirectory.wiki-notes    # MAIN | Übersicht 
 
-# Modul Übersicht
-010 nodes.wiki-notes                  # Mutter Konfig für *.*-nodes (aktivierbare Nodes)
-020 nano-nodes.wiki-notes             # Tochter - Feingranulare Steuerung von nano-Nodes
-030 micro-nodes.wiki-notes            # Kind - Ultra Feingranulare Steuerung - Optional
-040 logic.wiki-notes                  # Konfig für Templates / Micro-Module
-050 needles.wiki-notes                # Treibermodul-Steuerung | Zecke 
-060 dna.wiki-notes                    # Systemidentität & interne IDs | DNA <cmd>
-070 cache.wiki-notes                  # Zwischenablage für schnellzugriffe und mehr
+helpme ist für kurze zeit auser funktion 
+

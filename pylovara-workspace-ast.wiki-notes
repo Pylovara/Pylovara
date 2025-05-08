@@ -10,6 +10,79 @@
 │########################################################################################################
 02 01
 ├── control.pv-conf                        # Zentrale Masterdatei – wird von Shell ge'source'd
+
+# Control PV CONF - PYLOVARA CONFIG MAIN 
+# Alle Conf Sourcen - Komplette Kontrolle 
+# Quelle ~> /Pylovara/SystemControl/
+
+################################################################################
+
+# BASIC CONTROL
+MASTER_DIR"/Pylovara/SystemControl/"
+CONTROL_DIR="/Pylovara/"
+MODULE_DIR="/Pylovara/SystemDirectory/FileManager/Basis-Module/"
+
+################################################################################
+
+# Master-Input - control.pv-conf 
+
+source "$MASTER_DIR/nodes.conf"
+source "$MASTER_DIR/nano-nodes.conf"
+source "$MASTER_DIR/micro-nodes.conf"
+source "$MASTER_DIR/needles.conf"
+source "$MASTER_DIR/core-dna.conf"
+#source "$MASTER_DIR/download.conf"
+#source "$MASTER_DIR/cache.conf"
+#source "$MASTER_DIR/wiki.conf"
+source "$MASTER_DIR/logic.conf
+
+echo "[SystemControl] Alle .conf geladen aus: $MASTER_DIR"
+
+################################################################################
+
+# SYSTEMALIASE Funktionen
+
+helpme() {
+    source "MODULE_DIR/Nodes/main.wiki-nodes" "$@"
+}
+p() {
+    source "MODULE_DIR/Nodes/main.p-nodes" "$@"
+}
+pylo() {
+    source "MODULE_DIR/Nodes/main.pylo-nodes" "$@"
+}
+dna() {
+    source "MODULE_DIR/DNA/main.core-dna" "$@"
+}
+
+echo "[SystemControl] Alle Basic Module Einsatzbereit"
+
+################################################################################
+
+# SOURCE SEKTION Extras
+
+source
+
+source
+
+source
+
+# echo "[SystemControl] Extras Sourced Geladen"
+
+################################################################################
+
+# DEBUG / STATUSAUSGABE (optional)
+# echo "[SystemControl] "
+# echo "[SystemControl] "
+# echo "[SystemControl] "
+
+################################################################################
+
+# Settings - More - Beta
+
+################################################################################
+
+
 02 02
 ├── nodes.conf                             # Config für nodes - Einzeln Aktivierbar
 02 03
@@ -385,7 +458,193 @@ Das `logic.core-ai-logic` dient als zentrales Logikmodul, um `.ai-logic`-Dateien
 04 02 03 00
 │  │  ├─ Nodes/                         # Mutter  | zusammenführender Schaltkreis
 04 02 03 01
-│  │  │  └─ nodes.wiki fehlt
+│  │  │  ├─ main.p-nodes                # p <Ordner> | zeigt Main und unterordner an im tree
+
+#!/bin/bash
+# p - Systemweiter Ordner-Finder mit direkter Tree-Ausgabe
+
+# Eingabe prüfen
+if [ -z "$1" ]; then
+    echo "Nutzung: p <Ordnername>"
+    exit 1
+fi
+
+# Suchbegriff (Ordnername)
+TARGET="$1"
+
+# Systemweit nach erstem passenden Ordner suchen
+FIND_PATH=$(find / -type d -name "$TARGET" 2>/dev/null | head -n 1)
+
+# Wenn kein Ordner gefunden wurde
+if [ -z "$FIND_PATH" ]; then
+    echo "Ordner '$TARGET' nicht gefunden."
+    exit 2
+fi
+
+# Ausgabe: Tree-Struktur des Ordners
+echo "[+] Ordner gefunden: $FIND_PATH"
+echo
+tree "$FIND_PATH"
+
+
+04 02 03 02
+│  │  │  ├─ main.pylo-nodes             # pylo <Ordner>/- DATA SHELL | Systemunabhängige eingabe
+
+#!/bin/bash
+
+# Modul: pylo – Datei-Fixierer und Kommandoausführer
+
+# Eingabe prüfen: Muss mit /- enden (z.B. /usr/bin/-)
+if [[ -z "$1" || ! "$1" =~ /-$ ]]; then
+    echo "[ PYLO-ERROR ] Kein gültiger Ordner mit /- angegeben."
+    echo "Nutzung: pylo /Pfad/- Datei [Shellbefehl]"
+    exit 1
+fi
+
+# Fixierten Pfad extrahieren → "/usr/include/-" → "/usr/include"
+fixed_path="${1%/-}"
+shift  # Argumente verschieben
+
+# Prüfen ob Ordner existiert
+if [ ! -d "$fixed_path" ]; then
+    echo "[ PYLO-ERROR ] Ordner nicht gefunden: $fixed_path"
+    exit 2
+fi
+
+# Datei anfordern
+file="$1"
+shift
+
+if [ -z "$file" ]; then
+    echo "[ PYLO-INFO ] Nur Pfad fixiert: $fixed_path"
+    exit 0
+fi
+
+# Zusammensetzen: fixer Pfad + Datei
+full_path="$fixed_path/$file"
+
+# Prüfen ob Datei existiert
+if [ ! -f "$full_path" ]; then
+    echo "[ PYLO-ERROR ] Datei nicht gefunden: $full_path"
+    exit 3
+fi
+
+# Falls danach noch Befehle kommen → ausführen
+if [ $# -gt 0 ]; then
+    echo "[ PYLO-OK ] Führe aus: $* $full_path"
+    "$@" "$full_path"
+else
+    echo "[ PYLO-OK ] Datei gefunden: $full_path"
+fi
+
+
+04 02 03 03
+│  │  │  ├─ pylovara.maker-nodes        # Modulen Ersteller Prototyp
+
+#!/bin/bash
+
+clear
+echo "#############################################"
+echo "#  pylovara.maker-nodes   prototyp  1.1     #"
+echo "#############################################"
+echo ""
+echo "Was willst du erstellen?"
+echo "1 = *.*-nodes"
+echo "2 = *.*-nano-nodes"
+echo "3 = *.*-micro-nodes"
+echo "4 = *.*-needles"
+echo ""
+
+read -p "Deine Auswahl (1-4): " auswahl
+
+# Mapping der Auswahl
+case $auswahl in
+  1) typ="-nodes" ;;
+  2) typ="-nano-nodes" ;;
+  3) typ="-micro-nodes" ;;
+  4) typ="-needles" ;;
+  *) echo "Ungültige Auswahl. Abbruch."; exit 1 ;;
+esac
+
+echo ""
+read -p "Wie soll die Datei heißen (z.B. banane.affe): " basisname
+
+# Aufteilen am Punkt
+mainname="${basisname%%.*}"       # vor dem Punkt
+modulename="${basisname##*.}"     # nach dem Punkt
+
+# Endgültiger Dateiname
+dateiname="${basisname}${typ}"
+
+# Zielordner aus dem Modulnamen
+zielordner="Pylovara/SystemDirectory/FileManager/Basis-Module/${modulename}-Module"
+
+# Anlegen des Ordners (falls nicht vorhanden)
+mkdir -p "$zielordner"
+
+# Anlegen der Datei
+zielpfad="${zielordner}/${dateiname}"
+
+# Datei mit Template befüllen (rudimentär)
+echo "# ${dateiname}" > "$zielpfad"
+echo "# Erstellt mit dem Maker-Modul" >> "$zielpfad"
+echo "# Datum: $(date)" >> "$zielpfad"
+echo "" >> "$zielpfad"
+
+echo ""
+echo "🥡 Erfolgreich erstellt:"
+echo "Ordner:   $zielordner"
+echo "Datei:    $zielpfad"
+echo ""
+
+
+04 02 03 04
+│  │  │  ├─ main.needles-handler-nodes  # Prototyp 2.0
+
+#!/bin/bash
+# main.needles-handler-nodes
+# Lädt alle .needles und führt sie aus
+
+# Pfade aus control.pv-conf laden
+# source "${PYLOVARA_ROOT}/SystemControl/control.pv-conf"
+
+NEEDLE_DIR="${PYLOVARA_ROOT}/FileManager/Basis-Module/Needles/"
+NEEDLE_LOG="${PYLOVARA_ROOT}/SystemDirectory/FileManager/Basis-Module/Errors/Needles"
+
+mkdir -p "$NEEDLE_LOG"
+
+function run_needles() {
+    if [ ! -d "$NEEDLE_DIR" ]; then
+        echo "[ERROR] Needle-Verzeichnis nicht gefunden: $NEEDLE_DIR"
+        return 1
+    fi
+
+    for needle in "$NEEDLE_DIR"/*.*-needles; do
+        [[ -f "$needle" ]] || continue
+        echo "[INFO] Führe Needle aus: $(basename "$needle")"
+        bash "$needle" >> "${NEEDLE_LOG}/$(basename "$needle").log" 2>&1
+    done
+}
+
+echo "[INFO] Needle-Handler gestartet"
+run_needles
+
+
+04 02 03 05
+│  │  │  └─ modulliste.wiki.notes       # info wiki-notes
+
+# Modul Liste 
+
+# main.p-nodes
+# main.pylo-nodes
+# pylovara.maker-nodes
+
+
+# Problematische Module
+
+# needles-handler.micro-nodes <--- sowieso falscher ordner 
+
+
 04 02 04 00
 │  │  ├─ Nano/                          # Tochter | zukünftige Präzisionswerkzeuge
 04 02 04 01

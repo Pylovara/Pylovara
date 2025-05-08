@@ -3,47 +3,12 @@
 | Modular | Systemsteuerung | Zukunftsorientiert | Rolling-Release
 |#########################################################
 
-# Pylovara 2.0 - You System -
-
-Beta Install weg :
-git clone https://github.com/Pylovara/Pylovara.git
-cd Pylovara
-sudo bash pylovara.install-nodes
-
-Wichtig : Pylovara installiert sich ins MAIN verzeichnis , die SystemControl.pv.conf wird aber 
-noch nicht einwandfrei in eine bashrc eingebunden oder etwas das vergleichbares das viel Kontrolle
-über ihre shell gibt ... demnach werden alle komponenten noch nicht ordnungsgemäß geladen ...
-
-das pylovara System scheitert zur zeit an eine bash einbindung und deshlab müssen einzelne 
-komponenten extra gesourced werden ..... das verhindert zur zeit die nutzung durch den pylovara.install-nodes prozess 
-
-wer sich ein klein wenig auskennt kann die p pylo dna komponenten direkt in seine bashrc oder zshrc sourcen ......
-wer darauf angewiesen ist das es automatisch geht muss sich noch gedulden .....
-
-Das system Funktioniert , leider zur zeit nur bei Profis aber es funktioniert ..... 
-Mit den weiteren schritten werden bugfixed von nöten sein um diese kleinen aber wichtigen fehler
-aus Pylovara heraus zu arbeiten , erst dann werden weitere system komponenten verfeinert und einsatzbereit 
-zur verfügung stehen ...
-
-# Neuer Stand
-
-Der Umbau ist Vollzogen , Pylovara liegt in der nächsten greifbaren Version vor , Stark verbessert , Stark erweitert , Stark Dokumentiert .
-Die Erweierungen lassen sich wären dem Betrieb rein Implementieren und Ausbauen ..... Ein Git clone auto updater bei sync wird noch erstellt,
-zur Zeit ist das Repo Manual Sync Pflichtig
-
-# Entscheidung und Vision am UmbauTag Pylovara 1.0
-
-Das Pylovara-FileManager-System wird umfassend überarbeitet, um eine effizientere, modularere und systemweite Integration zu ermöglichen. Ziel ist es, 
-ein robustes, Bash-basiertes Dateimanagementsystem zu schaffen, das als universelles Fundament für jedes POSIX-kompatible Betriebssystem dient – 
-sei es Arch Linux, Debian, openSUSE, FreeBSD, Windows NT (via WSL) oder Darwin (macOS). Der Kern des Systems ist eine flexible „Wurzel“-Struktur, 
-die wie ein Blumentopf das Wachstum und die Interaktion mit Betriebssystemen ermöglicht, indem es direkt auf Shell-Ebene operiert.
-
-## Warum diese Umstrukturierung?
+# Pylovara Version 3.0 - Ein und Aushängen der neuen und alten struckturen 
 
 Die bisherigen Module nehmen zu viel Platz im Grundverzeichnis ein und erfordern ein optimiertes Design, um die Skalierbarkeit und Benutzerfreundlichkeit 
 zu verbessern. Statt eines statischen Grundstocks wird ein dynamisches „Mutterordner“-Design eingeführt, das eine hochgradig anpassbare Bibliothek 
-von Funktionen bereitstellt. Diese basiert auf einer Vielzahl von Dateitypen wie `*.wiki-nodes`, `*.wiki.notes`, `*.pylo-nodes`, `*.*-nano-nodes` und  
-`*.*-needles`, die zusammen einen modularen „Baum“ bilden. Dieses System soll:
+von Funktionen bereitstellt. Diese basiert auf einer Vielzahl von Dateitypen wie `*.*-nodes`, `*.*notes`, `*.*-nano-nodes`, `*.*-micro-nodes`,
+`*.*-logic` und `*.*-needles`, die zusammen einen modularen „Baum“ bilden. Dieses System soll:
 
 - **Vollständig integrierbar** sein, direkt auf Root-Ebene des Betriebssystems.
 - **Vorinstallierbar** auf jeder Partition, unabhängig von der Betriebssystemumgebung.
@@ -53,12 +18,13 @@ von Funktionen bereitstellt. Diese basiert auf einer Vielzahl von Dateitypen wie
 ## Die „Wurzel“-Metapher
 
 Stellen Sie sich Pylovara als eine Kletterpflanze vor, deren Wurzeln tief in die Shell-Umgebung eines Betriebssystems greifen. Die „Früchte“ sind die Module 
-(`*.*-nodes`, `*.*-notes`, etc.), die durch die zentrale Steuerung (`Pylovara-DirectoryManager`) wachsen und sich verzweigen. Diese Struktur ermöglicht:
+(`*.*-nodes`, `*.*-nano-nodes, *.*micro-nodes`, etc.), die durch die zentrale Steuerung (`SystemControl`) wachsen und sich verzweigen. 
 
 Spaß Erklärung
-Mutter     | Tochter/Töchter | Kind/Kinder | Eletriker       | Waffenschmied
-*.*-nodes  | *.*-nano-nodes  | *.*-Needles | *.*-micro-nodes | *.maker-nodes
+Mutter     | Tochter/Töchter | Kind/Kinder     | Eletriker    | LogikSchaltungen   | Waffenschmied  |
+*.*-nodes  | *.*-nano-nodes  | *.*-micro-nodes | *.*-needless |    *.*-logic       | *.maker-nodes  |
 
+Diese Struktur ermöglicht:
 - **Systemweite Interaktion**: Pylovara agiert direkt über die Shell, ohne unnötige Abstraktionsschichten, und ist sogar in Rettungssystemen 
 oder minimalen Umgebungen einsatzbereit.
 - **Modularität**: Neue Module (z. B. `*.audio-nodes`, `*.gpu-nodes`) können nahtlos hinzugefügt werden, um spezifische Hardware- oder 
@@ -87,22 +53,21 @@ Die einsatzgebiete sind unbegrenzt ....
 ### 1. Verbesserte Ordnerstruktur
 Um die Modularität zu maximieren, wird die Ordnerstruktur an Arch Linux-Prinzipien angelehnt, bleibt aber universell einsetzbar. Der neue „Mutterordner“ 
 (`/Pylovara`) dient als zentraler Knotenpunkt und enthält:
-- **Module**: Unterverzeichnisse wie `Wiki-Module/`, `P-Monitoring/`, `P-Docs/`, die spezifische Aufgaben übernehmen.
-- **Konfigurationen**: `.pv-conf`-Dateien für systemweite Einstellungen.
-- **Logs und Cache**: Verzeichnis `P-Logs/` für Such-Caches und Protokolle.
-- **Steuerzentrale**: `Pylovara-DirectoryManager` als Bindeglied, das Module sourced und verwaltet.
+- SystemDirectory/
+- SystemControl/
 
 ### 2. Erweiterte Suchlogik
 Das System führt eine synthesizerartige Suchlogik ein, die `.wiki.notes`-Dateien nicht nur nach Dateinamen, sondern auch nach Inhalten, Schlagwörtern 
 oder spezifischen Funktionen durchsucht. Module wie `aliasloaderwiki.wiki-nodes` und `wikifilter.wiki-nodes` ermöglichen:
 - **Systemweite Suche**: Durchsucht alle `.wiki.notes` im Verzeichnisbaum.
-- **Interaktive Filter**: Präzise, kontextbasierte Ergebnisse mit Tools wie `gum` oder `fzf`.
 - **Metadaten-Parsing**: Extrahiert Schlagworte, Status oder andere Metadaten aus Kopfzeilen.
 
 ### 3. Rolling-Release und Git-Integration
 Pylovara folgt einem Rolling-Release-Modell, bei dem Updates direkt über das Git-Repository (`https://github.com/Pylovara/Pylovara`) bezogen werden. 
 Ein Installer (`pylovara.installer-nodes`) kopiert das System in `/Pylovara-FileManager-System` und bindet es via `.bashrc` oder `.zshrc` ein. 
-Optional kann ein GitHub-Wiki synchronisiert werden, um öffentliche Dokumentationen bereitzustellen.
+Optional kann ein GitHub-Wiki synchronisiert werden, um öffentliche Dokumentationen bereitzustellen. 
+
+WARNUNG : Momentan nur für Profis geeignet ..... 
 
 ### 4. Modulare Erweiterungen
 Die Bibliothek an `*.*-nodes` und `*.*-notes` wird erweitert, um zukünftige Anforderungen zu erfüllen:
@@ -126,13 +91,13 @@ Nutzer anpassen.
 
 ## Genug gesagt hier funktionen :
 
-Das plyo helpme-System – Terminalhilfe aus dem Maschinenraum
+Das helpme System – Terminalhilfe aus dem Maschinenraum
 
 In guter alter Unix-Tradition bringt Pylovara sein eigenes integriertes Hilfe- und Assistenzsystem mit – das plyo helpme-System. Keine grafische Spielerei, 
 kein überfrachteter Manpage-Wald. Stattdessen: eine schlanke, modular aufrufbare Terminalhilfe, direkt aus dem Pylovara-Stammbaum. Schnell, lokal, ohne Umwege.
 Was ist plyo helpme?
 
-Das plyo helpme-System ist eine zentrale Schnittstelle für Hilfe- und Unterstützungsfunktionen im Pylovara-FileManager-System. 
+Das helpme-System ist eine zentrale Schnittstelle für Hilfe- und Unterstützungsfunktionen im Pylovara-FileManager-System. 
 Es bedient sich derselben modularen Logik wie der Rest des Systems und greift auf *.wiki.notes-Dateien zurück, die inhaltlich sortiert, nummeriert 
 und referenzierbar sind. Beispielhafte Aufrufe:
 
@@ -149,7 +114,7 @@ Features
 
     Nummernbasierter Zugriff
     Durch die Integration des lexikon.wiki-notes erhält jede .wiki.notes-Datei eine eindeutige Rufnummer. 
-    Der Befehl pylo helpme 03 ruft z. B. die dritte registrierte Datei auf.
+    Der Befehl helpme 03 00 ruft z. B. die dritte registrierte Datei auf.
 
     Suchfunktion und Aliasauflösung
     Unterstützung durch Suchmodule wie wikifilter.wiki-nodes oder aliasloaderwiki.wiki-nodes erlaubt die Suche nach Schlagwörtern, 
@@ -191,6 +156,6 @@ genau davon sprechen wir mein Freund ..
 
 
 |#########################################################
-| Ende Readme.wiki-notes
+| Ende Readme.wiki-notes 2025
 |#########################################################
 

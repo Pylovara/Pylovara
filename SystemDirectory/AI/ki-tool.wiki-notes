@@ -1,0 +1,25 @@
+Funktionen:
+
+ki scan <Pfad>: Durchsucht den angegebenen Ordner rekursiv nach 
+Bash-Skripten (.sh, .shell-dna, .cmd-dna, .nodes) und prüft Pfade, 
+Syntax und .conf-Einbindung.
+ki repair <Ordner> <Datei>: Führt die gleichen Prüfungen für eine 
+spezifische Datei durch und korrigiert Fehler.
+
+check_and_fix_paths: Korrigiert Pfade in source-Anweisungen relativ 
+zu PYLOVARA_ROOT.
+
+check_and_fix_syntax: Prüft Bash-Syntax und behebt einfache Fehler 
+(z. B. fehlendes fi).
+
+check_conf_sourcing: Überprüft, ob die Datei in .conf-Dateien oder 
+control.pv-conf gesourced wird.
+
+log_to_wiki: Protokolliert alle Aktionen in .wiki-notes-Dateien für 
+Transparenz und Nachvollziehbarkeit.
+
+Minimalistisch: Das Skript ist bewusst schlank gehalten, ohne 
+externe Abhängigkeiten, und nutzt nur Bash-Built-ins und Standard-Tools 
+wie find, grep, sed.
+Arch Linux: Es ist für Arch optimiert (z. B. durch Nutzung von bash -n 
+für Syntaxprüfung) , passt in das Pylovara-Ökosystem.

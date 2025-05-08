@@ -1,0 +1,10 @@
+# mcp-wiki-reader.wiki-notes
+
+## Zweck
+Liest `.wiki-notes`-Dateien und stellt den Inhalt bereit.
+
+## Aufruf
+```bash
+./mcp-wiki-reader ### später <pfad>
+## könnte neues anlegen 
+## ./mcp-wiki-reader ${WIKI_PATH}/lexikon.core-wiki-notes

@@ -1,0 +1,37 @@
+#!/bin/bash
+# Reperatur DNA Logic - Noch Linux
+# ai-repair.logic.ai-logic
+
+function ai_init() {
+    local CONTEXT="$1"
+    echo "[AI-LOGIC] Init: Repair-Modus gestartet"
+    echo "[AI-LOGIC] Kontext: $CONTEXT"
+}
+
+function ai_run() {
+    local FILE="$1"
+
+    if [ ! -f "$FILE" ]; then
+        echo "Fehler: Datei nicht gefunden: $FILE" >&2
+        return 1
+    fi
+
+    # Prüfung auf häufige Fehler
+    if grep -q "lscpu" "$FILE" && ! command -v lscpu &>/dev/null; then
+        echo "Warnung: 'lscpu' ist nicht installiert."
+        echo "Vorschlag: Paket 'util-linux' installieren."
+    fi
+
+    if grep -q "lspci" "$FILE" && ! command -v lspci &>/dev/null; then
+        echo "Warnung: 'lspci' ist nicht installiert."
+        echo "Vorschlag: Paket 'pciutils' installieren."
+    fi
+
+    # Syntaxprüfung
+    if ! bash -n "$FILE"; then
+        echo "Syntaxfehler in Skript gefunden!"
+        echo "Versuche automatische Korrektur..."
+        sed -i 's/\<fi\>/fi/g' "$FILE"
+        echo "Korrektur abgeschlossen."
+    fi
+}

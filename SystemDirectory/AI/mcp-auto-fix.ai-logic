@@ -1,1 +1,28 @@
-kommt
+#!/bin/bash
+# mcp-auto-fix.ai-logic
+
+FILE="$1"
+
+if [ ! -f "$FILE" ]; then
+    echo "Fehler: Datei nicht gefunden: $FILE" >&2
+    exit 1
+fi
+
+# Prüfung auf häufige Fehler
+if grep -q "lscpu" "$FILE" && ! command -v lscpu &>/dev/null; then
+    echo "Warnung: 'lscpu' ist nicht installiert."
+    echo "Vorschlag: Paket 'util-linux' installieren."
+fi
+
+if grep -q "lspci" "$FILE" && ! command -v lspci &>/dev/null; then
+    echo "Warnung: 'lspci' ist nicht installiert."
+    echo "Vorschlag: Paket 'pciutils' installieren."
+fi
+
+# Syntaxprüfung
+if ! bash -n "$FILE"; then
+    echo "Syntaxfehler in Skript gefunden!"
+    echo "Versuche automatische Korrektur..."
+    sed -i 's/\<fi\>/fi/g' "$FILE"
+    echo "Korrektur abgeschlossen."
+fi

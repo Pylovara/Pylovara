@@ -1,8 +1,12 @@
 #!/bin/bash
+# Veralteter Pfad :
 # Pylovara/SystemDirectory/FileManager/Module/Wiki-Module/Wiki-Nodes/wiki.wiki-nodes
 # Prototyp 2.0 Beta helpme <number> 
 # Muss an Pylovara 3.0 angepasst werden 
-# Baum struktur hat sich verändert in der nummerierung 
+# Baum struktur hat sich verändert in der numerierung 
+# neue anforderung : *.wiki-notes = exakter name
+# neue anforderung : ast nummer system 00 00 00 00 00
+# muss für Lexikon ready sein um gezielt zu suchen
 
 # Verzeichnis, in dem gesucht werden soll (root of Pylovara-System)
 BASE_DIR="/Pylovara"

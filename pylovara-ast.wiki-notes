@@ -33,7 +33,17 @@
 |-Pylovara/SystemDirectory/                # Info systemdirectory.wiki-notes
 │########################################################################################################
 03 00
-├─ AI/                                  # INWORK llm Spielplatz
+├─ AI/                                  # Hauptordner für KI
+03 01                       
+│  ├── mcp.core-pv-conf                 # MCP-Konfiguration
+03 02
+│  ├── mcp-shell-proxy                  # Proxy zwischen KI und Shell
+03 03
+│  ├── mcp-wiki-reader                  # Lesemodul für .wiki-notes
+03 04
+│  ├── mcp-auto-fix                     # Autoreparatur-Modul
+03 05
+│  └── mcp.wiki-notes                   # Noch nicht geschrieben
 04 00
 ├─ FileManager/                         # Info filemanager.wiki-notes
 04 01 

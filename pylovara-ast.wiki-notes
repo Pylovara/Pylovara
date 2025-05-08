@@ -102,8 +102,16 @@
 │  │  │  └─ usb.cmd-dna                 # Zeigt USB-Geräteinformationen
 04 02 03 00
 │  │  ├─ Nodes/                         # Mutter  | zusammenführender Schaltkreis
-04 02 03 01 
-│  │  │  └─ nodes.wiki fehlt
+04 02 03 01
+│  │  │  ├─ main.p-nodes                # p <Ordner> | zeigt Main und unterordner an im tree
+04 02 03 02
+│  │  │  ├─ main.pylo-nodes             # pylo <Ordner>/- DATA SHELL | Systemunabhängige eingabe
+04 02 03 03
+│  │  │  ├─ pylovara.maker-nodes        # Modulen Ersteller Prototyp
+04 02 03 04
+│  │  │  ├─ needles-handler.micro-nodes # Noch Problematisches Module und falscher Ordner
+04 02 03 05
+│  │  │  └─ modulliste.wiki.notes       # info wiki-notes
 04 02 04 00
 │  │  ├─ Nano/                          # Tochter | zukünftige Präzisionswerkzeuge
 04 02 04 01 

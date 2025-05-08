@@ -1,7 +1,0 @@
-# ports.core-bash-dna
-# Listet offene Ports und zugehörige Programme mit netstat
-
-DNA_EXEC() {
-    echo "🧬 DNA ports: Zeige belegte Ports (netstat -tulnpe)"
-    sudo netstat -tulnpe | less
-}

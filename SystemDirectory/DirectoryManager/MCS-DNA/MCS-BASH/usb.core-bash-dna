@@ -1,7 +1,0 @@
-# usb.core-bash-dna
-# Zeigt USB-Geräteinformationen (via lsusb)
-
-DNA_EXEC() {
-    echo "🧬 DNA usb: Zeige USB-Geräte (lsusb)"
-    lsusb | less
-}

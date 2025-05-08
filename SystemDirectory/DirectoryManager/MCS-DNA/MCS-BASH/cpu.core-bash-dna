@@ -1,7 +1,0 @@
-# cpu.core-bash-dna
-# Zeigt CPU-Informationen (via lscpu)
-
-DNA_EXEC() {
-    echo "🧬 DNA cpu: Zeige CPU-Infos (lscpu)"
-    lscpu | less
-}

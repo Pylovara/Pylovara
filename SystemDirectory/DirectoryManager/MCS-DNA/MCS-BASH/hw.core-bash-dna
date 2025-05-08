@@ -1,7 +1,0 @@
-# hw.core-bash-dna
-# Zeigt vollständige Hardware-Informationen (via lshw)
-
-DNA_EXEC() {
-    echo "🧬 DNA hw: Zeige Hardware-Infos (lshw)"
-    sudo lshw | less
-}

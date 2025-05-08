@@ -35,17 +35,27 @@
 03 00
 ├─ AI/                                  # Hauptordner für KI
 03 01
-│  ├── mcp.core-pv-conf                 # Konfiguration des MCP-Systems
+│  ├─ mcp.core-pv-conf                  # Konfiguration des MCP-Systems
 03 02
-│  ├── mcp-shell-proxy                  # Proxy zwischen Shell und KI-Prozess
+│  ├─ mcp-shell-proxy                   # Proxy zwischen Shell und KI-Prozess
 03 03
-│  ├── mcp-wiki-reader.wiki-notes       # Dokumentation des Readers
+│  ├─ mcp-wiki-reader.wiki-notes        # Dokumentation des Readers
 03 04
-│  ├── mcp-wiki-reader                  # Liest .wiki-notes aus dem AST
+│  ├─ mcp-wiki-reader                   # Liest .wiki-notes aus dem AST
 03 05
-│  ├── mcp-auto-fix.ai-logic            # Analysiert *.cmd-dna + führt Fixes durch
+│  ├─ mcp-auto-fix.ai-logic             # Analysiert *.cmd-dna + führt Fixes durch
 03 06
-│  └── mcp.wiki-notes                   # Kommt später            
+│  ├─ mcp.wiki-notes                    # Kommt später    
+03 07 00
+│  └─ Logic/                            # Experimentiel 
+03 07 01
+│  │  ├─ ai-document.logic              # Sollte Dokumente generieren , wenns gut klappt
+03 07 02
+│  │  ├─ ai-repair.logic.ai-logic       # Reperatur DNA Logic - Noch Linux
+03 07 03
+│  │  ├─ interpreter-ai-logic.shell-dna # Logik-Interpreter
+03 07 04
+│  │  └─ logic.core-ai.wiki-notes       # Laden - Ausführen - AI Dokument
 04 00
 ├─ FileManager/                         # Info filemanager.wiki-notes
 04 01 

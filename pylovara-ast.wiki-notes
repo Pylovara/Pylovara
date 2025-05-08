@@ -34,16 +34,18 @@
 │########################################################################################################
 03 00
 ├─ AI/                                  # Hauptordner für KI
-03 01                       
-│  ├── mcp.core-pv-conf                 # MCP-Konfiguration
+03 01
+│  ├── mcp.core-pv-conf                 # Konfiguration des MCP-Systems
 03 02
-│  ├── mcp-shell-proxy                  # Proxy zwischen KI und Shell
+│  ├── mcp-shell-proxy                  # Proxy zwischen Shell und KI-Prozess
 03 03
-│  ├── mcp-wiki-reader                  # Lesemodul für .wiki-notes
+│  ├── mcp-wiki-reader.wiki-notes       # Dokumentation des Readers
 03 04
-│  ├── mcp-auto-fix                     # Autoreparatur-Modul
+│  ├── mcp-wiki-reader                  # Liest .wiki-notes aus dem AST
 03 05
-│  └── mcp.wiki-notes                   # Noch nicht geschrieben
+│  ├── mcp-auto-fix.ai-logic            # Analysiert *.cmd-dna + führt Fixes durch
+03 06
+│  └── mcp.wiki-notes                   # Kommt später            
 04 00
 ├─ FileManager/                         # Info filemanager.wiki-notes
 04 01 
@@ -125,9 +127,9 @@
 04 02 07 07
 │  │  │  └─ errors.wiki-notes
 04 02 08 00
-│     └─ basis-module.wiki-notes           # Info basis-module.wiki-notes 
+│     └─ basis-module.wiki-notes        # Info basis-module.wiki-notes 
 05  
-├─ Pylovara-Logs/                          # INWORK Zentrale Logs und Cache-Dateien              
+├─ Pylovara-Logs/                       # INWORK Zentrale Logs und Cache-Dateien              
 06
-└─ ROOT Partition/                         # INWORK Blumentopf - Satt - Betriebsystem
+└─ ROOT Partition/                      # INWORK Blumentopf - Satt - Betriebsystem
 │########################################################################################################

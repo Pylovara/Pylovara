@@ -1,0 +1,18 @@
+#!/bin/bash
+# datatype.cmd-dna Prototyp
+# Abrufen von Datentypinformationen aus der datatype.conf
+
+DNA_EXEC() {
+    local ref_id="$1"
+    
+    if [[ -z "$ref_id" ]]; then
+        echo "❌ Kein Datentyp-Referenz angegeben! Bitte einen Datentyp wie 'license' angeben oder die datentypen.conf im SystemControl nachschauen"
+        return 1
+    fi
+
+    # Abrufen der Datentypinformationen über die Funktion get_datatype_info
+    get_datatype_info "$ref_id"
+}
+
+# Beispielaufruf der Funktion
+DNA_EXEC "$1"

@@ -1,6 +1,7 @@
 #!/bin/bash
-# datatype.cmd-dna Prototyp
-# Abrufen von Datentypinformationen aus der datatype.conf
+# datatype.cmd-dna Prototyp 1.1
+# dna modul <datatype>
+# <datatype> = Abrufen von Datentypinformationen aus der datatype.conf
 
 DNA_EXEC() {
     local ref_id="$1"

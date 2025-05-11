@@ -1,0 +1,27 @@
+SystemDirectory/
+  └── MCP-AI/
+      ├── mcp-ai.wiki-notes           # Dokumentation und Beschreibung
+      ├── mcp-ai.logic                # Logikmodul für AI-Kompatibilität
+      ├── mcp-ai.master-nodes         # Hauptcontroller für AI-Modelle
+      ├── mcp-ai.micro-nodes          # Mikroregler für spezifische AI-Tasks
+      ├── mcp-ai.cache                # Zwischenspeicher für AI-Daten
+      └── mcp-ai.needles              # Treiber und Zugriffspunkte
+
+- mcp-ai.logic: Enthält die Kernlogik für die Kommunikation mit verschiedenen AI-Modellen.
+- mcp-ai.master-nodes: Hauptcontroller für die Verwaltung und Steuerung der AI-Modelle.
+- mcp-ai.micro-nodes: Mikroregler für spezifische Aufgaben, z. B. Feinsteuerung von AI-Prozessen.
+- mcp-ai.cache: Temporäre Speicherung von Daten/Modellen während der Laufzeit.
+- mcp-ai.needles: Schnittstellen und Treiber für den Zugriff auf AI-Modelle.
+
+mcp-ai-notes
+Eine Übersicht, die alle Dateien beschreibt:
+
+mcp-ai.logic Enthält Bash-Skripte, die für die Kernlogik der AI-Integration zuständig sind.
+
+mcp-ai.master-nodes Ein Hauptcontroller-Skript, das die AI-Modelle steuert und mit ihnen kommuniziert.
+
+mcp-ai.micro-nodes Ein Skript zur Konfiguration von AI-Modell-Details und feingranularen Aufgaben.
+
+mcp-ai.cache Temporäre Zwischenspeicherung von AI-Daten und Modellen.
+
+mcp-ai.needles Schnittstellen und Treiber für die Anbindung von AI-Modellen an das Pylovara-System.

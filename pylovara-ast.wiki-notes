@@ -11,18 +11,18 @@ You Search Pure Ordner/ Trees ?
 Use p 
 p Pylovara/ 
 ###############################################
-
-[~/Pylovara]> tree
-.
-├── LICENSE
+└[~]> tree Pylovara 
+Pylovara
 ├── pylovara-ast.wiki-notes
 ├── pylovara.install-nodes
-├── pylovara-workspace-ast.wiki-notes
+├── Pylovara.license-notes
 ├── README.wiki-notes
+├── robots.txt
 ├── SystemControl
 │   ├── cache.conf
 │   ├── control.pv.conf
 │   ├── core-dna.conf
+│   ├── datatypes.conf
 │   ├── download.conf
 │   ├── lexikon.wiki-notes
 │   ├── micro-nodes.conf
@@ -32,21 +32,6 @@ p Pylovara/
 │   ├── systemcontrol.wiki-notes
 │   └── wiki.conf
 └── SystemDirectory
-    ├── AI
-    │   ├── ai.wiki-notes
-    │   ├── ki-tool.shell-dna
-    │   ├── ki-tool.wiki-notes
-    │   ├── Logic
-    │   │   ├── ai-document.logic
-    │   │   ├── ai-repair.logic.ai-logic
-    │   │   ├── interpreter-ai-logic.shell-dna
-    │   │   └── logic.core-ai.wiki-notes
-    │   ├── mcp-auto-fix.ai-logic
-    │   ├── mcp.core-pv-conf
-    │   ├── mcp-shell-proxy.shell-dna
-    │   ├── mcp.wiki-notes
-    │   ├── mcp-wiki-reader.shell-dna
-    │   └── mcp-wiki-reader.wiki-notes
     ├── FileManager
     │   ├── Basis-Module
     │   │   ├── basis-module.wiki-notes
@@ -77,6 +62,7 @@ p Pylovara/
     │   │   │   ├── #logic.wiki-notes
     │   │   │   └── Shell
     │   │   │       ├── cpu.cmd-dna
+    │   │   │       ├── datatype.cmd-dna
     │   │   │       ├── hw.cmd-dna
     │   │   │       ├── internet.cmd-dna
     │   │   │       ├── load.cmd-dna
@@ -93,10 +79,10 @@ p Pylovara/
     │   │   │   ├── nodes.wiki-notes
     │   │   │   └── Shell
     │   │   │       ├── helpme.wiki-nodes
+    │   │   │       ├── helpme-wiki-nodes.wiki-notes
     │   │   │       ├── main.needles-handler-nodes
     │   │   │       ├── main.p-nodes
     │   │   │       ├── main.pylo-nodes
-    │   │   │       ├── main.wiki-nodes
     │   │   │       ├── modulliste.wiki.notes
     │   │   │       └── pylovara.maker-nodes
     │   │   └── Notes
@@ -104,8 +90,18 @@ p Pylovara/
     │   │       └── Shell
     │   │           └── lexikon.core-wiki-notes
     │   └── filemanager.wiki-notes
+    ├── MCP-AI
+    │   ├── mcp-ai.cache
+    │   ├── mcp-ai.logic
+    │   ├── mcp-ai.master-nodes
+    │   ├── mcp-ai.micro-nodes
+    │   ├── mcp-ai.needles
+    │   ├── mcp-ai.wiki-notes
+    │   └── placeholder
     ├── Pylovara-Logs
     │   └── pylovara-logs.wiki-notes
+    ├── Pylovara-Parser
+    │   └── pylovara-parser.wiki-notes
     └── systemdirectory.wiki-notes
 
-26 directories, 68 files
+26 directories, 65 files

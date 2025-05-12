@@ -1,3 +1,41 @@
+# ==============================================================================
+# helpme.wiki-nodes  [Pylovara 3.1]
+# ==============================================================================
+# Ort   : Pylovara/SystemDirectory/FileManager/Basis-Module/Nodes/Shell/helpme.wiki-nodes
+# Zweck : Zentrales Hilfesystem mit AST-ID und *.wiki-notes Anbindung
+# Status: STABIL - AST kompatibel - KEIN Lexikon nötig
+# ------------------------------------------------------------------------------
+# Info:
+# - Erkennt *.wiki-notes über Dateiname oder @wiki-nr: Header
+# - Kein lexikon.wiki-notes mehr nötig!
+# ==============================================================================
+
+es wird über parser definiert 
+
+helpme <nr> 
+helpme <name>.wiki-notes
+
+die nummer wird durch 
+
+@wiki-nr innerhalb den wiki-notes geparset , was vielleicht ein eigenen cache voraussetz um performant zu parsen ..
+die namen werden weiterhin mit direkten namen eingaben gesucht ....
+
+es ist zwar kein lexikon von nöten aber das lexikon wird denoch als schnellsuch menü eingebetet , sobald ich ein vernümpftigen arbeits verlauf vom stapel trete 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # helpme.wiki-nodes.wiki-notes
 # Prototyp 3.0
 

@@ -7,7 +7,7 @@
 # Status: STABIL - AST kompatibel - KEIN Lexikon nötig
 # ------------------------------------------------------------------------------
 # Info:
-# - Erkennt *.wiki-notes über Dateiname oder @wiki-nr: Header
+# - Erkennt *.wiki-notes über Dateiname oder @wiki-nr: Header (egal wo!)
 # - Kein lexikon.wiki-notes mehr nötig!
 # ==============================================================================
 
@@ -17,9 +17,9 @@ BASE_DIR="/Pylovara"
 # ==== Eingabe ====
 INPUT="$1"
 
-# ==== Hilfsfunktion: @wiki-nr: aus Header extrahieren ====
+# ==== Hilfsfunktion: @wiki-nr: aus beliebiger Zeile extrahieren (auch mit #### etc) ====
 extract_wiki_nr() {
-    grep -i '^@wiki-nr:' "$1" | head -n 1 | awk -F':' '{gsub(/[[:space:]]*/, "", $2); print $2}'
+    grep -i '@wiki-nr:' "$1" | head -n 1 | sed -E 's/.*@wiki-nr:[[:space:]]*([^#[:space:]]+).*/\1/I'
 }
 
 # ==== Wenn keine Eingabe oder 00: alle verfügbaren anzeigen ====
@@ -29,14 +29,14 @@ if [[ -z "$INPUT" || "$INPUT" == "00" ]]; then
         nr=$(extract_wiki_nr "$file")
         name=$(basename "$file")
         if [[ -n "$nr" ]]; then
-            printf "%-6s -> %s\n" "$nr" "$name"
+            printf "%-10s -> %s\n" "$nr" "$name"
         fi
     done
     exit 0
 fi
 
 # ==== Fall 1: Nummern-Suche über Header (@wiki-nr:) ====
-if [[ "$INPUT" =~ ^[0-9]+$ ]]; then
+if [[ "$INPUT" =~ ^[0-9a-zA-Z]+$ ]]; then
     FOUND_PATH=$(find "$BASE_DIR" -type f -name "*.wiki-notes" | while read -r file; do
         nr=$(extract_wiki_nr "$file")
         [[ "$nr" == "$INPUT" ]] && echo "$file" && break

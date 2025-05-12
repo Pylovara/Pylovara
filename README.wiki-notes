@@ -7,28 +7,6 @@
 Workspace 
 ###################################################
 
-# Pylovara 4.0 - Jetzt wird mit IDE und AI Gekämpft 
-
-Um Pylovara jetzt voran zu bringen und 100% einsatzfähig werden Codium mit :
-
-# VSCodium erlaubt `code --install-extension` genauso wie VSCode
-codium --install-extension tomoki1207.pdf
-codium --install-extension streetsidesoftware.code-spell-checker
-codium --install-extension mads-hartmann.bash-ide-vscode
-codium --install-extension foxundermoon.shell-format
-codium --install-extension ms-azuretools.vscode-docker
-codium --install-extension ms-vscode.makefile-tools
-codium --install-extension PKief.material-icon-theme
-codium --install-extension eamodio.gitlens
-codium --install-extension yzhang.markdown-all-in-one
-
-damit der arbeitsplatz einigermaßen überschaubarer wird , den die weiteren entwicklungen werden
-jetzt erstmal hinter dem 100% debugging gestellt ,,basierend auf Archlinux Shell Umgebungen" 
-(fürs erste) . 
-###################################################
-Workspace ende 
-###################################################
-
 # Pylovara Version 3.0 - Ein und Aushängen der neuen und alten struckturen 
 
 Die bisherigen Module nehmen zu viel Platz im Grundverzeichnis ein und erfordern ein optimiertes Design, um die Skalierbarkeit und Benutzerfreundlichkeit 

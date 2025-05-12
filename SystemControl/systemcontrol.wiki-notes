@@ -1,23 +1,20 @@
-02 00
-/Pylovara/SystemControl/
-│########################################################################################################
-02 01
-├── control.pv-conf                        # Zentrale Masterdatei – wird von Shell ge'source'd
-02 02
-├── nodes.conf                             # Config für nodes - Einzeln Aktivierbar 
-02 03
-├── nano-nodes.conf                        # Feingranulare Steuerung - Einzeln Aktivierbar 
-02 04
-├── micro-nodes.conf                       # Konfig für Templates - 
-02 05
-├── needles.conf                           # Treibermodul-Steuerung
-02 06
-├── core-dna.conf                          # Systemidentität & interne IDs
-02 07
-├── download.conf                          # Systemweite Paketlogik / Aliasbasierte Installersteuerung
-02 08
-├── cache.conf                             # Cache-Verhalten, Layer-Steuerung, Priorität
-02 09
-├── lexikon.wiki-notes                     # Hanbuch | helpme 00 | helpme lex | helpme lexikon
-02 10
-└── control.wiki-notes                     # Erläuterung aller Steuerdateien (Hilfsübersicht)
+####################################################################################################
+@wiki-nr: 02 00 ####################################################################################
+####################################################################################################
+Info: Innerhalb des SystemControls werden alle daten gebündelt um Module nutzbar zu machen ,
+      sie werden Granuliert für jeden dateitype angelegt und allgemein über das MAIN DIR 
+      control.pv-conf gesourced und damit auch nutzbar weitergeleitet gemacht für bashrc oder zshrc
+####################################################################################################
+
+/Pylovara/SystemControl/ TREE
+│###################################################################################################
+├── control.pv-conf                   # Zentrale Masterdatei – wird von Shell ge'source'
+├── nodes.conf                        # Config für nodes - Einzeln Aktivierbar 
+├── nano-nodes.conf                   # Feingranulare Steuerung - Einzeln Aktivierbar 
+├── micro-nodes.conf                  # Konfig für Templates - 
+├── needles.conf                      # Treibermodul-Steuerung
+├── core-dna.conf                     # Systemidentität & interne IDs
+├── download.conf                     # Systemweite Paketlogik / Aliasbasierte Installersteuerung
+├── cache.conf                        # Cache-Verhalten, Layer-Steuerung, Priorität
+├── lexikon.wiki-notes                # Hanbuch | helpme 00 | helpme lex | helpme lexikon
+└── control.wiki-notes                # Erläuterung aller Steuerdateien (Hilfsübersicht)

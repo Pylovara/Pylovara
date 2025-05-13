@@ -31,19 +31,20 @@ Pylovara                                             # Root
     ├── FileManager                                  # 
     │   ├── Basis-Module                             # Modul Ordner
     │   │   ├── basis-module.wiki-notes              # Wiki Info
-    │   │   ├── Caches                               #
-    │   │   │   └── placeholder                      # Caches Für alles | Nur hier |
+    │   │   ├── Caches                               # Caches Für alles | Nur hier |
+    │   │   │   └── caches.wiki-notes                # Wiki Info
     │   │   ├── DNA                                  #
     │   │   │   ├── dna.wiki-notes                   # Wiki Info
     │   │   │   └── Shell                            # Pylovara System Shell Symbiose
     │   │   │       ├── lex.core-dna                 # dna lex logik
     │   │   │       ├── list.core-dna                # dna list logik
     │   │   │       ├── main-completion.core-dna     # dna autovervollständiger logik
-    │   │   │       └── main.core-dna                # dna trigger main logik
+    │   │   │       ├── main.core-dna                # dna trigger main logik   
+    │   │   │       └── dna.wiki-notes               # Wiki Info
     │   │   ├── Errors                               # Interne Fehler Logs | System |
+    │   │   │   ├── errors.wiki-notes                # Wiki Info
     │   │   │   ├── DNA                              #
     │   │   │   │   └── placeholder                  # DNA Log Space
-    │   │   │   ├── errors.wiki-notes                # Wiki Info
     │   │   │   ├── Logic                            #
     │   │   │   │   └── placeholder                  # Logic Log Space
     │   │   │   ├── Micro                            # 
@@ -68,8 +69,10 @@ Pylovara                                             # Root
     │   │   │       ├── ports.cmd-dna                # DNA Shell
     │   │   │       └── usb.cmd-dna                  # DNA Shell
     │   │   ├── Micro                                # Micro-Module (*.*-micro-nodes)
-    │   │   │   └── placeholder                      # Micro Nodes Platz
+    │   │   │   ├── micro-nodes.wiki-notes           # Wiki Info
+    │   │   │   └── placeholder                      # Micro Nodes Platz    
     │   │   ├── Nano                                 # Feingranulare Module (.nano-nodes)
+    │   │   │   ├── nano-nodes.wiki-notes            # Wiki Info
     │   │   │   └── placeholder                      # Nano Nodes Platz
     │   │   ├── Nodes                                # Nodes-Module (*.*-nodes) | Kernmodule 
     │   │   │   ├── nodes.wiki-notes                 # Wiki Info 
@@ -82,6 +85,7 @@ Pylovara                                             # Root
     │   │   │       ├── modulliste.wiki.notes        # Prototyp modulliste Wiki Info
     │   │   │       └── pylovara.maker-nodes         # Maker | Data | System
     │   │   ├── Needles                              # Hochspezialisierte Aufsaug Module (.needles)
+    │   │   │   ├── needles.wiki-notes               # Wiki Info
     │   │   │   └── placeholder                      # Needles Platz
     │   │   └── Notes                                # System Notes | Liegen auch überall |
     │   │       ├── placeholder                      #

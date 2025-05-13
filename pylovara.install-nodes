@@ -1,43 +1,154 @@
 #!/bin/bash
-
-# === Pylovara Full Installer ===
-# Ziel: SystemDirectory + Module Rootsystem-Install
+# pylovara.install-nodes
+# Pylovara Full Installer - Installiert Pylovara in /Pylovara/ und aktiviert es in der Shell
+# Version: 1.0 (2025-05-13)
 
 set -e
 
-echo "Pylovara Installer gestartet."
-echo "Rootrechte erforderlich."
+echo " PROTOTYP 1.1 - KANN BUGGY SEIN "
+echo "🧬 Pylovara Installer gestartet"
+echo "Rootrechte erforderlich"
 
-# Sicherstellen, dass sudo aktiv ist
-if [ "$EUID" -ne 0 ]; then
-  echo "Bitte mit sudo ausführen."
-  exit 1
+# Prüfen, ob Root-Rechte vorhanden sind
+if [[ "$EUID" -ne 0 ]]; then
+    echo "❌ Fehler: Bitte mit sudo ausführen" >&2
+    exit 1
 fi
 
 # Zielpfad
 INSTALL_DIR="/Pylovara"
 
-# Repository klonen
-echo "Klonen des Repositories..."
-git clone https://github.com/Pylovara/Pylovara.git "$INSTALL_DIR"
+# Abhängigkeiten (optional, für Arch Linux)
+DEPENDENCIES=(
+    "git: für Repository-Klonen (optional)"
+    "tree: für 'p' Kommando (main.p-nodes)"
+    "lshw: für 'dna hw' (hw.cmd-dna)"
+    "usbutils: für 'lsusb' (usb.cmd-dna)"
+    "pciutils: für 'lspci' (pci.cmd-dna)"
+    "net-tools: für 'ifconfig' und 'netstat' (internet.cmd-dna, ports.cmd-dna)"
+    "wget: für 'dna load' (load.cmd-dna)"
+)
 
-# Rechte setzen
-echo "Setze Berechtigungen..."
-chmod -R 755 "$INSTALL_DIR"
+echo "📋 Hinweis: Folgende Pakete werden für volle Funktionalität empfohlen (Arch Linux):"
+for dep in "${DEPENDENCIES[@]}"; do
+    pkg=${dep%%:*}
+    desc=${dep#*:}
+    if ! command -v "$pkg" >/dev/null 2>&1; then
+        echo "  - $pkg ($desc) -> Installiere mit 'pacman -S $pkg'"
+    else
+        echo "  - $pkg ($desc) -> Bereits installiert"
+    fi
+done
+echo "Drücke Enter, um fortzufahren, oder Strg+C, um abzubrechen"
+read -r
 
-# Optional: .bashrc/.zshrc erweitern
-read -p "Möchtest du SystemControl.pv-conf automatisch in deine Shell einfügen? (j/n): " -n 1 -r
-echo
-if [[ $REPLY =~ ^[Jj]$ ]]; then
-  SHELL_RC="$HOME/.bashrc"
-  [[ "$SHELL" == */zsh ]] && SHELL_RC="$HOME/.zshrc"
-
-  echo "source $INSTALL_DIR/SystemDirectory/DirectoryManager/SystemControl.pv-conf" >> "$SHELL_RC"
-  echo "SystemControl.pv-conf wurde in $SHELL_RC eingebunden."
-  echo "Starte ein neues Terminal oder führe 'source $SHELL_RC' aus."
-else
-  echo "Du kannst die Datei manuell sourcen:"
-  echo "source $INSTALL_DIR/SystemDirectory/DirectoryManager/SystemControl.pv-conf"
+# Prüfen, ob INSTALL_DIR bereits existiert
+if [[ -d "$INSTALL_DIR" ]]; then
+    echo "❌ Fehler: Verzeichnis '$INSTALL_DIR' existiert bereits" >&2
+    echo "Lösche es manuell mit 'rm -rf $INSTALL_DIR' oder wähle einen anderen Pfad" >&2
+    exit 2
 fi
 
-echo "Installation abgeschlossen."
+# Installation: Git oder lokales Kopieren
+echo "📥 Installiere Pylovara nach $INSTALL_DIR..."
+if command -v git >/dev/null 2>&1; then
+    git clone https://github.com/Pylovara/Pylovara.git "$INSTALL_DIR" || {
+        echo "❌ Fehler beim Klonen des Repositories" >&2
+        exit 3
+    }
+elif [[ -d "./Pylovara" ]]; then
+    echo "Git nicht verfügbar, kopiere lokal aus ./Pylovara..."
+    cp -r ./Pylovara "$INSTALL_DIR" || {
+        echo "❌ Fehler beim Kopieren der Dateien" >&2
+        exit 4
+    }
+else
+    echo "❌ Fehler: Weder 'git' verfügbar noch lokales './Pylovara' Verzeichnis gefunden" >&2
+    echo "Installiere 'git' oder stelle das Repository lokal bereit" >&2
+    exit 5
+fi
+
+# Dateityp-spezifische Berechtigungen basierend auf datatypes.conf
+echo "🔒 Setze Berechtigungen basierend auf datatypes.conf..."
+DATATYPES_CONF="$INSTALL_DIR/SystemControl/datatypes.conf"
+
+if [[ ! -f "$DATATYPES_CONF" ]]; then
+    echo "⚠️ Warnung: $DATATYPES_CONF nicht gefunden, setze Standardberechtigungen" >&2
+    find "$INSTALL_DIR" -type f -exec chmod 644 {} \;
+    find "$INSTALL_DIR" -type d -exec chmod 755 {} \;
+    find "$INSTALL_DIR" -type f \( -name "*.sh" -o -name "*.nodes" -o -name "*.dna" \) -exec chmod 755 {} \;
+else
+    # Dateitypen aus datatypes.conf extrahieren
+    while IFS=' = ' read -r key value; do
+        if [[ "$key" =~ ^\[(.*)\]$ ]]; then
+            current_section="${BASH_REMATCH[1]}"
+            format=""
+            continue
+        fi
+        if [[ "$key" == "format" && "$current_section" ]]; then
+            format="$value"
+            case "$format" in
+                # Ausführbare Dateien (755)
+                "*.cmd-dna"|"*.core-dna"|"*.nodes"|"*.maker-nodes"|"*.p-nodes"|"*.pylo-nodes")
+                    echo "Setze chmod 755 für $format"
+                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 755 {} \;
+                    ;;
+                # Konfigurationsdateien und Notizen (644)
+                "*.pv-conf"|"*.conf"|"*.wiki-notes"|"*.license-notes"|"*.notes"|"*.ai-wiki-notes")
+                    echo "Setze chmod 644 für $format"
+                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                    ;;
+                # Platzhalter und andere (644)
+                "placeholder"|"robots.txt")
+                    echo "Setze chmod 644 für $format"
+                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                    ;;
+                # Wildcard-Formate (z.B. *.*-errors, *.*-logic)
+                "*.*-errors"|"*.*-logic"|"*.*-micro-nodes"|"*.*-nano-nodes"|"*.*-needles")
+                    echo "Setze chmod 644 für $format"
+                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                    ;;
+                *)
+                    echo "⚠️ Unbekanntes Format: $format, setze chmod 644" >&2
+                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                    ;;
+            esac
+        fi
+    done < "$DATATYPES_CONF"
+    # Verzeichnisse auf 755 setzen
+    find "$INSTALL_DIR" -type d -exec chmod 755 {} \;
+fi
+
+# Shell-Integration
+echo "🔗 Integriere Pylovara in die Shell..."
+read -p "Soll /Pylovara/SystemControl/control.pv-conf automatisch in deine Shell eingebunden werden? (j/n): " -n 1 -r
+echo
+CONTROL_CONF="$INSTALL_DIR/SystemControl/control.pv-conf"
+
+if [[ $REPLY =~ ^[Jj]$ ]]; then
+    SHELL_RC="$HOME/.bashrc"
+    [[ "$SHELL" == */zsh ]] && SHELL_RC="$HOME/.zshrc"
+
+    if [[ ! -f "$SHELL_RC" ]]; then
+        echo "⚠️ Warnung: $SHELL_RC nicht gefunden, erstelle neue Datei" >&2
+        touch "$SHELL_RC"
+    fi
+
+    # Prüfen, ob control.pv-conf bereits gesourced wird
+    if ! grep -q "source $CONTROL_CONF" "$SHELL_RC"; then
+        echo "source $CONTROL_CONF" >> "$SHELL_RC"
+        echo "✅ $CONTROL_CONF wurde in $SHELL_RC eingebunden"
+        echo "Starte ein neues Terminal oder führe 'source $SHELL_RC' aus"
+    else
+        echo "ℹ️ $CONTROL_CONF ist bereits in $SHELL_RC eingebunden"
+    fi
+else
+    echo "ℹ️ Du kannst die Datei manuell sourcen:"
+    echo "source $CONTROL_CONF"
+fi
+
+# Abschluss
+echo "🎉 Installation abgeschlossen!"
+echo "Pylovara ist in $INSTALL_DIR installiert und bereit"
+echo "Teste das System mit: dna list"
+echo "Pylovara befindet sich in der Beta Test Phase"

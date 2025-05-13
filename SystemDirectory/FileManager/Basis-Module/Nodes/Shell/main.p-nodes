@@ -8,6 +8,12 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+# Prüfen, ob tree installiert ist
+if ! command -v tree >/dev/null 2>&1; then
+    echo "❌ Fehler: 'tree' ist nicht installiert. Bitte installiere es (z.B. 'pacman -S tree')" >&2
+    exit 3
+fi
+
 # Suchbegriff (Ordnername)
 TARGET="$1"
 

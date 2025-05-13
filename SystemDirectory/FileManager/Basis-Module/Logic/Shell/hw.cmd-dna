@@ -1,8 +1,23 @@
 #!/bin/bash
-# hw.core-bash-dna
+# hw.cmd-dna
 # Zeigt vollständige Hardware-Informationen (via lshw)
 
 DNA_EXEC() {
+    if ! command -v lshw >/dev/null 2>&1; then
+        echo "❌ Fehler: 'lshw' ist nicht installiert (z.B. 'pacman -S lshw')" >&2
+        return 1
+    fi
+    if ! command -v less >/dev/null 2>&1; then
+        echo "❌ Fehler: 'less' ist nicht installiert, verwende 'more' als Fallback" >&2
+        pager="more"
+    else
+        pager="less"
+    fi
     echo "🧬 DNA hw: Zeige Hardware-Infos (lshw)"
-    sudo lshw | less
+    if sudo -n lshw >/dev/null 2>&1; then
+        sudo lshw | $pager
+    else
+        echo "❌ Fehler: Root-Rechte erforderlich für 'lshw'" >&2
+        return 2
+    fi
 }

@@ -3,7 +3,31 @@
 @wiki_nr: logic ##############################################################################
 ##############################################################################################
 
-# Modul-Typ: *.*-logic
+4  Logik-Knoten
+    ➤ *.*-logic
+    ➥ Beinhaltet ausschließlich die Logik (IF/ELSE, Entscheidungen, Filter).
+    ➥ Wird von allen Node-Typen zur Funktionsausführung benötigt.
+    ➥ Kein aktiver Regler, reine Entscheidungsinstanz.
+
+╭────────────────────────────────────╮
+│  Reglerstruktur und Weitergabe     │
+╰────────────────────────────────────╯
+
+▸ Jede *.*-nodes kann als vollständiger Regler arbeiten oder granular aufspalten.
+▸ Nano- und Micro-Nodes dienen der feiner geteilten Weitergabe.
+▸ Die Logik kommt immer aus einem *.*-logic Modul – keine Regel ohne Logik.
+▸ Das Ziel jeder Node-Kette ist eine Needle → sie empfängt und führt aus.
+
+│############################################################################### 
+│WikiLexikon : logic.wiki-notes.wiki.notes
+│# WikiSearch /~ Helpme logic
+│# WikiSearch /~ Helpme 02 04
+│# Tree       /~ p Logic/   
+│# pylo Logic/- logic.wiki-notes cat
+│###############################################################################
+
+
+# Modul-Typ: *.*-logic EXTRA EXTRA 
 
 Logic-Module bilden das Gehirn hinter jedem Pylovara-Vorgang.
 Sie enthalten reine Entscheidungslogik, keine Steuerung selbst.
@@ -59,13 +83,6 @@ Sie entscheiden, aber regeln nicht.
 „Wer regeln will, soll *.*-nodes benutzen und granulieren mit den weiteren abstufungen “
 – alter Pylovara-Spruch
 
-│############################################################################### 
-│WikiLexikon : logic.wiki-notes.wiki.notes
-│# WikiSearch /~ Helpme logic
-│# WikiSearch /~ Helpme 02 04
-│# Tree       /~ p Logic/   
-│# pylo Logic/- logic.wiki-notes cat
-│###############################################################################
 
 
 

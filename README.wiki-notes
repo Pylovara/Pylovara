@@ -1,42 +1,134 @@
-|#########################################################
+```markdown
+|#################################################################
 | Pylovara-FileManager-System - Readme.wiki-notes
 | Modular | Systemsteuerung | Zukunftsorientiert | Rolling-Release
-|#########################################################
+|#################################################################
 
 ###################################################
-Workspace 
+Pylovara-System | Version 4.0 | Rootbasierter Aufbau
 ###################################################
 
-# Pylovara Version 3.0 - Ein und Aushängen der neuen und alten struckturen 
+# Was ist Pylovara?
 
-Die bisherigen Module nehmen zu viel Platz im Grundverzeichnis ein und erfordern ein optimiertes Design, um die Skalierbarkeit und Benutzerfreundlichkeit 
-zu verbessern. Statt eines statischen Grundstocks wird ein dynamisches „Mutterordner“-Design eingeführt, das eine hochgradig anpassbare Bibliothek 
-von Funktionen bereitstellt. Diese basiert auf einer Vielzahl von Dateitypen wie `*.*-nodes`, `*.*notes`, `*.*-nano-nodes`, `*.*-micro-nodes`,
-`*.*-logic` und `*.*-needles`, die zusammen einen modularen „Baum“ bilden. Dieses System soll:
+Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, das vollständig auf der Shell-Ebene arbeitet – 
+ohne GUI, ohne Umwege, ohne Bullshit. Es wird ausschließlich auf Root-Ebene installiert (`/Pylovara-FileManager-System`) und 
+meidet bewusst alle $HOME-Abhängigkeiten.
 
-- **Vollständig integrierbar** sein, direkt auf Root-Ebene des Betriebssystems.
-- **Vorinstallierbar** auf jeder Partition, unabhängig von der Betriebssystemumgebung.
-- **Flexibel und erweiterbar** durch eine synthesizerartige Logik, die systemweite Such- und Steuerungsfunktionen ermöglicht.
-- **100% Bash-basiert**, um maximale Kompatibilität mit POSIX-Shells zu gewährleisten, ohne Abhängigkeiten von Hochsprachen wie Python oder C++.
+Die komplette Logik basiert auf :
+`.nodes`, `.notes`, `.nano-nodes`, `.micro-nodes`, `.logic`, `.needles` und `.caches` strukturell festgelegten Ordnern. 
 
-WICHTIGE INFO : 
-Der AI/ bereich wird bald mit MCP gefüttert , das heißt das dieser bereich warscheinlich kein reines BASH werden wird ....... 
+Ziel: Ein universell anpassbares Steuerzentrum für das gesamte Betriebssystem, mit maximaler Kontrolle und Transparenz.
 
-## Die „Wurzel“-Metapher
+---
 
-Stellen Sie sich Pylovara als eine Kletterpflanze vor, deren Wurzeln tief in die Shell-Umgebung eines Betriebssystems greifen. Die „Früchte“ sind die Module 
-(`*.*-nodes`, `*.*-nano-nodes, *.*micro-nodes`, etc.), die durch die zentrale Steuerung (`SystemControl`) wachsen und sich verzweigen. 
+## Kernstruktur 
 
-Spaß Erklärung
-Mutter     | Tochter/Töchter | Kind/Kinder     | Eletriker    | LogikSchaltungen   | Waffenschmied  |
-*.*-nodes  | *.*-nano-nodes  | *.*-micro-nodes | *.*-needless |    *.*-logic       | *.maker-nodes  |
+Alle Module, Notes, Fehlerlogs, Konfigurationen und Helferlein leben unterhalb einer einheitlichen Stammstruktur:
 
-Diese Struktur ermöglicht:
-- **Systemweite Interaktion**: Pylovara agiert direkt über die Shell, ohne unnötige Abstraktionsschichten, und ist sogar in Rettungssystemen 
-oder minimalen Umgebungen einsatzbereit.
-- **Modularität**: Neue Module (z. B. `*.audio-nodes`, `*.gpu-nodes`) können nahtlos hinzugefügt werden, um spezifische Hardware- oder 
-Softwarekomponenten zu steuern.
-- **Portabilität**: Kompatibel mit jeder Bash-unterstützenden Umgebung, von Linux über BSD bis hin zu WSL oder macOS.
+---
+
+## Modularität bis ins Mark
+
+Jede Datei erfüllt eine klar definierte Funktion. Beispiele:
+
+| Dateityp           | Funktion                            |
+|--------------------|-------------------------------------|
+| `*.p-nodes`        | Hauptmodule, systemnahe Steuerung   |
+| `*.pylo-nodes`     | Zusatzmodule, benutzernahe Ebene    |
+| `*.*-nano-nodes`   | Mini-Funktionen für Spezialfälle    |
+| `*.*-micro-nodes`  | Mikrosteuerung (Low-Level)          |
+| `*.*-logic`        | Steuerlogik, Kombinatorik           |
+| `*.*-needles`      | Direkte Hardware-/Treiberanbindung  |
+| `*.*-wiki.notes`   | Dokumentation, Wiki, Hilfe, Nummern |
+| `*.maker-nodes`    | Automatische Node-Erstellung        |
+| `*.caches     `    | Cache für alles                     |
+
+Alle Nodes und Notes lassen sich miteinander kombinieren. Aus einem kleinen Set entsteht so ein Synthesizer-artiges Steuerungsnetzwerk.
+
+---
+
+## Die Maker-Philosophie
+
+Der eingebaute Maker erlaubt es, neue Nodes direkt per Terminalbefehl zu erstellen. Beispiel:
+
+```bash
+pylovara maker
+# Auswahl: *.*-nano-nodes
+# Name: ton.bass-nano-nodes
+# Ergebnis: ton-nano-Module/ton.bass-nano-nodes wird erstellt
+````
+
+Automatisch wird der passende Ordner erstellt und die Datei einsortiert. Kein Chaos, kein Wildwuchs – Ordnung muss sein.
+
+---
+
+## Hilfe? Helpme!
+
+Pylovara bringt sein eigenes Wiki-System mit:
+
+* `*.wiki.notes`: Jedes Modul hat eine eigene Hilfedatei.
+* `lexikon.wiki-notes`: Verzeichnis aller Wiki-Dateien mit Nummer.
+* `helpme 01 00` oder `helpme module` → direkt die passende Info.
+* `wikifilter` + `aliasloader` helfen bei Suche und Alias-Handling.
+* Läuft komplett Shell-nativ, sogar im BusyBox-Terminal.
+
+---
+
+## Rolling Release über Git
+
+Das ganze System wird über Git gepflegt:
+📦 [https://github.com/Pylovara/Pylovara](https://github.com/Pylovara/Pylovara)
+
+Installiert wird über: ( vorsicht experimentieller status , läuft noch nicht rund )
+
+```bash
+git clone https://github.com/Pylovara/Pylovara
+cd Pylovara
+bash pylovara.installer-nodes
+```
+
+Anschließend wird `SystemControl.pv-conf` in `.bashrc` oder `.zshrc` eingebunden. Ab dann ist das System immer verfügbar.
+
+---
+
+## Besonderheiten
+
+* **Systemnah**: Root-only, keine Userverzeichnisse.
+* **Kompatibel**: Arch, Debian, Alpine, sogar WSL oder Rescue-Shells.
+* **Erweiterbar**: Jeder Node-Typ kann ergänzt werden.
+* **Konfigurierbar**: Mit `.logic`-Dateien kann alles verknüpft werden.
+* **Sicherbar**: Volle Kontrolle durch zentralisierte Steuerung.
+
+---
+
+## Zukunft & MCP-Bereich
+
+Achtung: Der Bereich `AI/` wird bald mit MCP-Schnittstellen verknüpft. Dieser Teil wird später **nicht mehr vollständig in Bash** laufen – dort ist eine Hybridstruktur mit KI-Logik und Hardware-Feedback vorgesehen.
+
+---
+
+## Ausblick
+
+Pylovara ist kein Tool – es ist ein System.
+Ein Werkzeugkasten für Leute, die das Terminal verstehen und keine Lust auf 50 Klicks im GUI-Menü haben.
+Wer sich damit auskennt, kann sein Betriebssystem nicht nur steuern, sondern **neu formen**.
+
+Ziele:
+
+* Zentral-Terminal
+* Workspaces
+* Tilling
+* eigene „Registry“ durch `.nodes`
+* Skins statt Themes
+* GPU-/CPU-Tuning
+* und mehr…
+
+Hier fängt die Shell-Revolution erst an.
+
+---
+
+> "Was du nicht selbst in der Shell erschaffst, wird dir irgendwann vom GUI genommen." – alter Admin-Spruch
+
 
 Hier hört der Spaß aber nicht auf sondern fängt erst an !
 Pylovara-System wird in der lage sein sich in ein Betriebsystem rein zu integrieren und ihnen als Nutzer in späteren versionen zu erlauben,
@@ -73,8 +165,6 @@ oder spezifischen Funktionen durchsucht. Module wie `aliasloaderwiki.wiki-nodes`
 Pylovara folgt einem Rolling-Release-Modell, bei dem Updates direkt über das Git-Repository (`https://github.com/Pylovara/Pylovara`) bezogen werden. 
 Ein Installer (`pylovara.installer-nodes`) kopiert das System in `/Pylovara-FileManager-System` und bindet es via `.bashrc` oder `.zshrc` ein. 
 Optional kann ein GitHub-Wiki synchronisiert werden, um öffentliche Dokumentationen bereitzustellen. 
-
-WARNUNG : Momentan nur für Profis geeignet ..... 
 
 ### 4. Modulare Erweiterungen
 Die Bibliothek an `*.*-nodes` und `*.*-notes` wird erweitert, um zukünftige Anforderungen zu erfüllen:
@@ -131,15 +221,12 @@ Features
     Vollständig in Bash geschrieben – keine externen Abhängigkeiten. Damit läuft plyo helpme selbst in einer Notfallkonsole, 
     Recovery-Umgebung oder per BusyBox.
 
-Ein Blick in die Zukunft
+Ein Blick in die Zukunft :
 
 Langfristig soll das helpme-System modular ausgebaut werden:
-
-    mit helpme.visual für TUI-Hilfemenüs (Whiptail/Dialog)
-
-    mit helpme.needle für kontextsensitive Nano-Hilfen
-
-    mit helpme.audio für akustische Rückmeldung in barrierefreien Systemen
+    mit main.helpme-visual für TUI-Hilfemenüs (Whiptail/Dialog)
+    mit main.helpme-logic für kontextsensitive Nano-Hilfen
+    mit main.helpmeaudio-micro-nodes für akustische Rückmeldung in barrierefreien Systemen
 
 
 Die Wurzel-Metapher
@@ -165,4 +252,4 @@ genau davon sprechen wir mein Freund ..
 |#########################################################
 | Ende Readme.wiki-notes 2025
 |#########################################################
-
+```

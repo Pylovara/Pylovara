@@ -1,0 +1,71 @@
+##############################################################################################
+@wiki_nr: 02 04 ##############################################################################
+@wiki_nr: logic ##############################################################################
+##############################################################################################
+
+# Modul-Typ: *.*-logic
+
+Logic-Module bilden das Gehirn hinter jedem Pylovara-Vorgang.
+Sie enthalten reine Entscheidungslogik, keine Steuerung selbst.
+Sie sagen was passieren soll – nicht wie.
+
+Sie arbeiten NICHT als Regler, sondern geben nur die Logik weiter,
+die dann durch Nodes (Reglermodule) ausgeführt wird.
+Das gilt für Sound, Fenster, Rendering, Netzwerk – alles.
+
+- Die Logik steckt im Logic-Modul.
+- Die Steuerung läuft über Nodes.
+
+# Wie funktioniert das?
+
+- Needles erkennen Geräte oder Bedingungen
+- Logic-Module interpretieren das Ergebnis
+- Nodes (egal ob *.*-nodes, *.*-nano-nodes, *.*-micro-nodes) setzen es um
+- Gesamt *.*-nodes | Aspekte *.*-nano-nodes oder auch mit ulta granulat *.*-micro-nodes
+
+Beispiel:
+Needle:     „Nvidia-GPU erkannt“
+Logic:      „Nutze Vulkan statt OpenGL“
+Node:       `gpu.render-node` oder granuliert `gpu.settings.micro-node` führt es aus
+
+# Aufgaben der *.*-logic-Module:
+
+- Vermittlung zwischen Treiber-Needles und Ausführungs-Nodes
+- Definition von „Wenn A, dann B“-Beziehungen
+- Austauschbare Logikschalter für Systeme (Audio, GPU, Fenster, etc.)
+- Entkoppelte Steuerlogik – mehrere Nodes können dieselbe Logic referenzieren
+
+# Beispiele:
+audio.pipewire-logic        → sagt, welche Node bei PipeWire aktiv ist
+gpu.vulkan-logic            → sagt, ob Vulkan oder OpenGL aktiviert werden soll
+windowmanager.hypr-logic    → legt fest, welche Fenstersteuerung bei Hyprland greift
+input.keyboard-logic        → bestimmt das Mapping, setzt es aber nicht selbst
+
+# Typklassifikation
+
+| Typ              | Rolle                                                       | Beispiel                   |
+|------------------|-------------------------------------------------------------|----------------------------|
+| *.*-needles      | Erkennt Hardware oder Gegebenheiten                         | nvidia.gpu-needles         |
+| *.*-logic        | Legt Steuerlogik fest – keine Regelung, nur Weitergabe      | gpu.vulkan-logic           |
+| *.*-nodes        | Regler auf Makro-Ebene (zentrale Schalter, Hauptaktionen)   | audio.master-nodes         |
+| *.*-nano-nodes   | Teilfunktion eines Reglers (z. B. Pegel, Balance)           | bass.eq-nano-nodes         |
+| *.*-micro-nodes  | Mikrosteuerung auf Detailstufe                              | mic.pan.micro-nodes        |
+| *.*-notes        | Infodateien, technische Hinweise                            | gpu.opengl-notes           |
+
+# Wichtig:
+Logic-Module sind zentrale Komponenten – sie tun nichts direkt.
+Sie entscheiden, aber regeln nicht.
+
+„Wer regeln will, soll *.*-nodes benutzen und granulieren mit den weiteren abstufungen “
+– alter Pylovara-Spruch
+
+│############################################################################### 
+│WikiLexikon : logic.wiki-notes.wiki.notes
+│# WikiSearch /~ Helpme logic
+│# WikiSearch /~ Helpme 02 04
+│# Tree       /~ p Logic/   
+│# pylo Logic/- logic.wiki-notes cat
+│###############################################################################
+
+
+

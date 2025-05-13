@@ -1,39 +1,28 @@
-# Prinzip :
+##############################################################################################
+@wiki_nr: 02 01 ##############################################################################
+@wiki_nr: nodes ##############################################################################
+##############################################################################################
+             
+1 Mutter-Knoten
+    ➤ *.*-nodes
+    ➥ Eigenständiger Regel-Knoten.
+    ➥ Kann direkt Reglerfunktionen übernehmen.
+    ➥ Kann eigenständig auslösen ODER Tochter- & Kinder-Knoten besitzen.
+    ➥ Steuert wie ein Master-Regler in einer DAW: Nur das, was er bekommt.
 
-Mutter Knoten  
-*.*-nodes       # kann zu Nano oder direkt needles
-Tochter Knoten
-*.*-nano-nodes  # kann zu Micro oder direkt needles
-Kinder Knoten
-*.*-micro-nodes # muss zu needles
-Treiber Zecke
-*.*-needless    # Anschluss | Zecke | Gefäß
+╭────────────────────────────────────╮
+│  Reglerstruktur und Weitergabe     │
+╰────────────────────────────────────╯
 
+▸ Jede *.*-nodes kann als vollständiger Regler arbeiten oder granular aufspalten.
+▸ Nano- und Micro-Nodes dienen der feiner geteilten Weitergabe.
+▸ Die Logik kommt immer aus einem *.*-logic Modul – keine Regel ohne Logik.
+▸ Das Ziel jeder Node-Kette ist eine Needle → sie empfängt und führt aus.
 
-# Beispiele :
-
-# Anschluss.audio-nodes        -  .nano-nodes
-# Volumen.audio-out-nano-nodes -  .needles oder .micro-nodes
-# Höhe.audio-out-micro-nodes   -  .needles
-# Mittel.audio-out-micro-nodes -  .needles
-# Bass.audio-out-micro-nodes   -  .needles
-
-# *.*-Nodes 
-Werden als Kragen behandelt die mehrere Nano-Nodes zusammen
-führen und dan im gesamten steuern , oder schalten ....
-
-Ganz einfaches Prinzip in Menschen Logik  :
-*.*-nodes
-Mutter          hat Kinder       
-
-*.*-logic
-Vater           hat Pläne
-
-*.*-nano-nodes
-Kinder          haben Babys 
-
-*.*-micro-nodes
-Babys           haben Spielzeug 
-
-*.*-needles
-Spielzeug muss Funktionieren
+│############################################################################### 
+│WikiLexikon : nodes.wiki-notes
+│# WikiSearch /~ Helpme nodes
+│# WikiSearch /~ Helpme 02 01
+│# Tree       /~ p Basis-Module/   
+│# pylo Basis-Module/- nodes.wiki-notes cat
+│###############################################################################

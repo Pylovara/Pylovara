@@ -1,11 +1,10 @@
 #!/bin/bash
 # pylovara.install-nodes
 # Pylovara Full Installer - Installiert Pylovara in /Pylovara/ und aktiviert es in der Shell
-# Version: 1.0 (2025-05-13)
+# Version: 1.1 (2025-05-14)
 
 set -e
 
-echo " PROTOTYP 1.1 - KANN BUGGY SEIN "
 echo "🧬 Pylovara Installer gestartet"
 echo "Rootrechte erforderlich"
 
@@ -87,30 +86,41 @@ else
         fi
         if [[ "$key" == "format" && "$current_section" ]]; then
             format="$value"
+            # Wildcards in find-Befehlen korrekt verarbeiten
             case "$format" in
                 # Ausführbare Dateien (755)
-                "*.cmd-dna"|"*.core-dna"|"*.nodes"|"*.maker-nodes"|"*.p-nodes"|"*.pylo-nodes")
-                    echo "Setze chmod 755 für $format"
-                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 755 {} \;
+                ".cmd-dna"|".core-dna"|".nodes"|".maker-nodes"|".p-nodes"|".pylo-nodes")
+                    echo "Setze chmod 755 für *${format}"
+                    find "$INSTALL_DIR" -type f -name "*${format}" -exec chmod 755 {} \;
                     ;;
                 # Konfigurationsdateien und Notizen (644)
-                "*.pv-conf"|"*.conf"|"*.wiki-notes"|"*.license-notes"|"*.notes"|"*.ai-wiki-notes")
-                    echo "Setze chmod 644 für $format"
-                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                ".pv-conf"|".conf"|".wiki-notes"|".license-notes"|".notes"|".ai-wiki-notes"|".pylo-notes")
+                    echo "Setze chmod 644 für *${format}"
+                    find "$INSTALL_DIR" -type f -name "*${format}" -exec chmod 644 {} \;
+                    ;;
+                # Logik- und Fehlerdateien (644)
+                ".logic"|".dna-logic")
+                    echo "Setze chmod 644 für *${format}"
+                    find "$INSTALL_DIR" -type f -name "*${format}" -exec chmod 644 {} \;
+                    ;;
+                # Wildcard-Formate (644)
+                "*.*-errors"|".*-logic"|".*-notes"|".*-dna")
+                    echo "Setze chmod 644 für ${format}"
+                    find "$INSTALL_DIR" -type f -name "${format}" -exec chmod 644 {} \;
                     ;;
                 # Platzhalter und andere (644)
                 "placeholder"|"robots.txt")
-                    echo "Setze chmod 644 für $format"
-                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                    echo "Setze chmod 644 für ${format}"
+                    find "$INSTALL_DIR" -type f -name "${format}" -exec chmod 644 {} \;
                     ;;
-                # Wildcard-Formate (z.B. *.*-errors, *.*-logic)
-                "*.*-errors"|"*.*-logic"|"*.*-micro-nodes"|"*.*-nano-nodes"|"*.*-needles")
-                    echo "Setze chmod 644 für $format"
-                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                # Sonstige Module (644, bis definiert)
+                "*.*-micro-nodes"|".*-micro-nodes"|".*-nano-nodes"|".*-needles")
+                    echo "Setze chmod 644 für ${format}"
+                    find "$INSTALL_DIR" -type f -name "${format}" -exec chmod 644 {} \;
                     ;;
                 *)
-                    echo "⚠️ Unbekanntes Format: $format, setze chmod 644" >&2
-                    find "$INSTALL_DIR" -type f -name "$format" -exec chmod 644 {} \;
+                    echo "⚠️ Unbekanntes Format: ${format}, setze chmod 644" >&2
+                    find "$INSTALL_DIR" -type f -name "*${format}" -exec chmod 644 {} \;
                     ;;
             esac
         fi
@@ -119,19 +129,30 @@ else
     find "$INSTALL_DIR" -type d -exec chmod 755 {} \;
 fi
 
-# Shell-Integration
+# Shell-Integration für den aufrufenden Benutzer
 echo "🔗 Integriere Pylovara in die Shell..."
-read -p "Soll /Pylovara/SystemControl/control.pv-conf automatisch in deine Shell eingebunden werden? (j/n): " -n 1 -r
-echo
 CONTROL_CONF="$INSTALL_DIR/SystemControl/control.pv-conf"
 
-if [[ $REPLY =~ ^[Jj]$ ]]; then
-    SHELL_RC="$HOME/.bashrc"
-    [[ "$SHELL" == */zsh ]] && SHELL_RC="$HOME/.zshrc"
+# Home-Ordner des aufrufenden Benutzers ermitteln
+if [[ -n "$SUDO_USER" ]]; then
+    USER_HOME=$(getent passwd "$SUDO_USER" | cut -d: -f6)
+else
+    USER_HOME="$HOME"
+fi
 
+# Shell-Konfigurationsdatei basierend auf Shell
+SHELL_RC="$USER_HOME/.bashrc"
+if [[ -n "$ZSH_VERSION" || -f "$USER_HOME/.zshrc" ]]; then
+    SHELL_RC="$USER_HOME/.zshrc"
+fi
+
+read -p "Soll $CONTROL_CONF automatisch in deine Shell ($SHELL_RC) eingebunden werden? (j/n): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Jj]$ ]]; then
     if [[ ! -f "$SHELL_RC" ]]; then
         echo "⚠️ Warnung: $SHELL_RC nicht gefunden, erstelle neue Datei" >&2
         touch "$SHELL_RC"
+        chmod 644 "$SHELL_RC"
     fi
 
     # Prüfen, ob control.pv-conf bereits gesourced wird
@@ -151,4 +172,5 @@ fi
 echo "🎉 Installation abgeschlossen!"
 echo "Pylovara ist in $INSTALL_DIR installiert und bereit"
 echo "Teste das System mit: dna list"
-echo "Pylovara befindet sich in der Beta Test Phase"
+echo "Falls Pakete fehlen, installiere sie mit:"
+echo "sudo pacman -S tree lshw usbutils pciutils net-tools"

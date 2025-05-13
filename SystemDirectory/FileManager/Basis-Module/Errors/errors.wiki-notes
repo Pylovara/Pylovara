@@ -1,4 +1,34 @@
+##############################################################################################
+@wiki_nr: 06 00 ##############################################################################
+@wiki_nr: error ##############################################################################
+##############################################################################################
+
+    │   │   ├── Errors                               # Interne Fehler Logs | System |
+    │   │   │   ├── DNA                              #
+    │   │   │   │   └── placeholder                  # DNA Log Space
+    │   │   │   ├── errors.wiki-notes                # Wiki Info
+    │   │   │   ├── Logic                            #
+    │   │   │   │   └── placeholder                  # Logic Log Space
+    │   │   │   ├── Micro                            # 
+    │   │   │   │   └── Placeholder                  # Micro Log Space
+    │   │   │   ├── Nano                             # 
+    │   │   │   │   └── placeholder                  # Nano Log Space
+    │   │   │   ├── Needles                          # 
+    │   │   │   │   └── placeholder                  # Needles Log Space
+    │   │   │   └── Nodes                            #
+    │   │   │       └── placeholder                  # Nodes Log Space
+
 # Sammelplatz von internen Modul Errors 
 # Wurde zusammengelegt um fehler kompakte vor sich liegen zu haben
 # Das designe ist wesentlich übersichtlicher als die vorversion 
 # wo alle errors bei den jeweiligen nodes gelegen waren 
+
+│###############################################################################
+│WikiLexikon : errors.wiki-notes 
+│# WikiSearch /~ Helpme error 
+│# WikiSearch /~ Helpme 06 00
+│# Tree       /~ p Errors/   
+│# pylo Errors/- errors.wiki-notes  cat
+│###############################################################################
+
+

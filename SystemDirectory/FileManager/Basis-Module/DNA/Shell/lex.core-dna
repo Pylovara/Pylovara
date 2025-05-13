@@ -3,5 +3,5 @@
 # Zeigt das DNA Lexikon | ~ dna lex 
 
 DNA_EXEC() {
-    cat Pylovara/SystemDirectory/FileManager/Basis-Module/Notes/Shell/lexikon.core-wiki-notes | less
+    cat /Pylovara/SystemDirectory/FileManager/Basis-Module/Notes/Shell/lexikon.core-wiki-notes | less
 }

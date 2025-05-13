@@ -14,8 +14,8 @@ MODULE_DIR="/Pylovara/SystemDirectory/FileManager/Basis-Module/"
 # Master-Input - control.pv-conf 
 
 source "$MASTER_DIR/nodes.conf"
-source "$MASTER_DIR/nano-nodes.conf"
-source "$MASTER_DIR/micro-nodes.conf"
+#source "$MASTER_DIR/nano-nodes.conf"
+#source "$MASTER_DIR/micro-nodes.conf"
 #source "$MASTER_DIR/needles.conf"
 source "$MASTER_DIR/core-dna.conf"
 #source "$MASTER_DIR/download.conf"
@@ -91,17 +91,17 @@ get_datatype_info() {
 }
 
 # Master-Input - control.pv-conf 
-for conf in nodes.conf nano-nodes.conf micro-nodes.conf core-dna.conf logic.conf datatypes.conf; do
-    if [[ -f "$MASTER_DIR/$conf" ]]; then
-        source "$MASTER_DIR/$conf" || {
-            echo "❌ Fehler beim Laden von '$conf'" >&2
-            continue
-        }
-    else
-        echo "❌ Konfigurationsdatei '$conf' nicht gefunden" >&2
-    fi
-done
+#for conf in nodes.conf nano-nodes.conf micro-nodes.conf core-dna.conf logic.conf datatypes.conf; do
+#    if [[ -f "$MASTER_DIR/$conf" ]]; then
+#        source "$MASTER_DIR/$conf" || {
+#            echo "❌ Fehler beim Laden von '$conf'" >&2
+#            continue
+#        }
+#    else
+#        echo "❌ Konfigurationsdatei '$conf' nicht gefunden" >&2
+#    fi
+#done
 
-echo "[SystemControl] Alle .conf geladen aus: $MASTER_DIR"
+#echo "[SystemControl] Alle .conf geladen aus: $MASTER_DIR"
 
 ################################################################################

@@ -1,14 +1,20 @@
 #!/bin/bash
-# off.core-bash-dna
+# off.cmd-dna
 # Entfernt +x von Datei(en)
 
 DNA_EXEC() {
+    local errors=0
     for file in "$@"; do
         if [[ -f "$file" ]]; then
             echo "🧬 DNA off: chmod -x '$file'"
-            chmod -x "$file"
+            chmod -x "$file" || {
+                echo "❌ Fehler beim Entfernen von +x für '$file'" >&2
+                errors=$((errors + 1))
+            }
         else
-            echo "❌ Datei '$file' nicht gefunden."
+            echo "❌ Datei '$file' nicht gefunden" >&2
+            errors=$((errors + 1))
         fi
     done
+    return $errors
 }

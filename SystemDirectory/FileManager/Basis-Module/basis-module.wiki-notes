@@ -1,126 +1,118 @@
-999
+##############################################################################################
+@wiki_nr: 02 06 ##############################################################################
+@wiki_nr: module #############################################################################
+##############################################################################################
 
-# Baustelle NextUpdate INWORK
+Logic-Module bilden das Gehirn hinter jedem Pylovara-Vorgang.
+Sie enthalten reine Entscheidungslogik, keine Steuerung selbst.
+Sie sagen was passieren soll – nicht wie.
 
-# Main Info
-# Kern-FileSystem Operating Layer – eine Shell-gesteuerte Middleware, 
-# die Hardware, Dateien, Scripte und Wissenssysteme modular verbindet.
-# Mini-OS auf Kernel-Basis, steuerbar über Bash + eigene Subsysteme
+Sie arbeiten NICHT als Regler, sondern geben nur die Logik weiter,
+die dann durch Nodes (Reglermodule) ausgeführt wird.
+Das gilt für Sound, Fenster, Rendering, Netzwerk – alles.
 
+# Die Logik steckt im Logic-Modul.
+# Die Steuerung läuft über Nodes.
 
-# Erklärung 
-# Alle Module, die zur Basis gehören, werden innerhalb des FileManagers
-# noch einheitlicher gemacht, um den Überblick in späteren Versionen
-# zu gewährleisten.
+# Wie funktioniert das?
 
+- Needles erkennen Geräte oder Bedingungen
+- Logic-Module interpretieren das Ergebnis
+- Nodes (egal ob *.*-nodes, *.*-nano-nodes, *.*-micro-nodes) setzen es um
 
-# Datentypen Modular 
+Beispiel:
+Needle:     „Nvidia-GPU erkannt“
+Logic:      „Nutze Vulkan statt OpenGL“
+Node:       `gpu.render-node` oder `gpu.settings.micro-node` führt es aus
 
-# Notes = *.*-notes werden als Standard-TXT-Dateien und lesbare Dateien verwendet.
-       Info: *.*-notes können je nach Aufgabengebiet benannt werden.
-       Benötigen Sie eine wiki.txt oder andere textbasierte Formate?
-       Dann greifen Sie zu *.*-notes ....... 
-       >> Name der Datei: Programm/Beschreibung-notes
-       Ergeben in einem Beispielfall wie in Pylovara:
-       WikiLexikon  = lexikon.wiki-notes
-       LogicLexikon = lexikon.logic-notes
-       (P)Modulbeschreibung? = p.p-notes
+# Aufgaben der *.*-logic-Module:
 
-       *.*-notes sind grundsätzliche Nachschlage- und Informationsnotizen, 
-       die für alle Einsatzgebiete verwendet werden können. Da man ein 
-       Nachschlagewerkzeug heutzutage als Wiki bezeichnet, sind sie z. B.
-       fest integriert in das Handbuch-Lexikon als  
-        - <Ordnername>.wiki-notes 
-        - <Modulname>.wiki-notes 
-        vorzufinden .... Dieses System garantiert höchste Präzision im
-        Handbuchbetrieb eines Rolling Releases und wird standardisiert
-        als direkter GitHub-Repo-Updater mit eingefügt – wie im Übrigen 
-        alles .......
+- Vermittlung zwischen Treiber-Needles und Ausführungs-Nodes
+- Definition von „Wenn A, dann B“-Beziehungen
+- Austauschbare Logikschalter für Systeme (Audio, GPU, Fenster, etc.)
+- Entkoppelte Steuerlogik – mehrere Nodes können dieselbe Logic referenzieren
 
-# Logic = *.*-logic werden als Logik-Ablageplatz verwendet, um zukünftige Logiken austauschbar machen zu können.
-       Info: *.*-logic-Module enthalten Optionen, welche Logik verwendet werden soll.
-       Sie brauchen eine Logik für Ihre Soundkarte? Oder Frequenzen? Oder Grafik-Tweaks? 
-       Dann greifen Sie zu *.*-logic-Modulen, denn diese haben vorgefertigte Logik-Schaltungen, 
-       die Sie garantiert für den jeweiligen Zweck verwenden können – ohne eigene schreiben 
-       zu müssen. Das Arsenal an *.*-logic-Schaltungen ist noch am Anfang recht leer,
-       wird aber mit späteren Updates massiv gefüllt werden, da die Logik immer auf der Schaltung
-       basieren wird: ,,Welcher Bus wird gerade für die GPU verwendet? Ah – Geforce-XT.gpu-logic"
-       Die Logik-Benennung wird wie bei allen Programmdatentypen wie folgt aussehen: 
+# Beispiele:
+audio.pipewire-logic        → sagt, welche Node bei PipeWire aktiv ist
+gpu.vulkan-logic            → sagt, ob Vulkan oder OpenGL aktiviert werden soll
+windowmanager.hypr-logic    → legt fest, welche Fenstersteuerung bei Hyprland greift
+input.keyboard-logic        → bestimmt das Mapping, setzt es aber nicht selbst
 
-       (IdentifikationsName|Hauptname).(Einsatzgebiet)-logic <<< --- sortierbar und einheitlich
-       
+# Typklassifikation
 
-# Nodes = *.*-nodes-Module werden als zusammenführender Schaltkreis verstanden.
-       Eine Node ist quasi die Mutterschaltung, die alle *.*-nano-nodes oder *.*-micro-nodes
-       in ihrem eigenen Settings-Pegel einstellt – wie ein Master-Volume-Regler.
-       Eine Node verändert nicht die Settings von Nano- oder Micro-Nodes, sondern 
-       nimmt diese Daten und kann sie gesamt erhöhen oder die Priorität der Settings einstellen –
-       je nachdem, was gefordert wird. Bei Grafik-Tweaks wird eher auf Prozess-Prioritäten
-       zurückgegriffen oder ein nerviger Input wie Raytracing generell ausgeschaltet, 
-       wenn es die unteren Nodes nicht schon taten. Es verfeinert die Einstellungs-
-       möglichkeiten erheblich. Nodes werden über das dann benutzte bash-basierte Terminal
-       über das Pylovara-Subsystem ins laufende System an die richtige Stelle mit den Daten gefüttert
-       und direkt ins Subsystem gelegt. Dadurch entsteht auf Dauer eine Art ,,Entmachtung" der
-       proprietären Systemkomponenten aller Varianten. 
-      
-# Nano = *.*-nano-nodes werden zukünftige Präzisionswerkzeuge.
-       Info: Eine Node bekommt Input-Daten aus den Nano-Nodes, die sie dann regeln kann.
-       Jede Nano-Node kann spezialisiert behandelt werden, sodass ein Nano-Nodes-Strang
-       eine bestimmte Sache tut, z. B.:
-       - nur den Bass optimieren und Signal an die Node weiterleiten,
-       - oder alle Sounddaten zusammen in eine *.*-nano-nodes bündeln. 
+| Typ              | Rolle                                                       | Beispiel                   |
+|------------------|-------------------------------------------------------------|----------------------------|
+| *.*-needles      | Erkennt Hardware oder Gegebenheiten                         | nvidia.gpu-needles         |
+| *.*-logic        | Legt Steuerlogik fest – keine Regelung, nur Weitergabe      | gpu.vulkan-logic           |
+| *.*-nodes        | Regler auf Makro-Ebene (zentrale Schalter, Hauptaktionen)   | audio.master-nodes         |
+| *.*-nano-nodes   | Teilfunktion eines Reglers (z. B. Pegel, Balance)           | bass.eq-nano-nodes         |
+| *.*-micro-nodes  | Mikrosteuerung auf Detailstufe                              | mic.pan.micro-nodes        |
+| *.*-notes        | Infodateien, technische Hinweise                            | gpu.opengl-notes           |
 
-       Die Einsatzgebiete sind daher sehr weit gefächert.
+🔒 Wichtig:
+Logic-Module sind zentrale Komponenten – sie tun nichts direkt.
+Sie entscheiden, aber regeln nicht.
 
-# Micro = *.*-micro-nodes können eine oder mehrere Settings konfigurieren – Skalpellwerkzeuge.
-        Info: Diese Daten von *.*-micro-nodes werden dann an Nano-Nodes per Direktverlinkung
-        gesendet. *.*-micro-nodes sind wie *.*-nano-nodes nur skalierbare Zusatzwerkzeuge und
-        können weggelassen werden, existieren aber, um das Pylovara-System auf Dauer gegenüber
-        laufenden Betriebssystemen einen Vorteil zu bieten, der seinesgleichen suchen wird. 
+„Wer regeln will, soll *.*-nodes benutzen.“
+– alter Pylovara-Spruch
 
+# Wir erstellen die Datei nodes.wiki-notes.txt mit dem vom Nutzer beschriebenen Inhalt
 
-# Needles = *.*-needles dienen dazu, existierende Datenpakete in sich zu kopieren, um selbst 
-        die volle Kontrolle über die Treiberpakete zu gewährleisten. Needles tun also nichts
-        anderes, als den Treibernamen und die Zugehörigkeit in sich einzuschreiben, z. B.:
-        <Treibername>.<vonWasHardware>-needles <-- Treiber | Anzapf-Nadeln, die Pylovara als
-        Subsystem mitführen wird, um immer mehr Kontrolle über die Bash auf das laufende System
-        zu bekommen. Goldwert für Rettungssysteme – aber als Subsystem-Feature schon eine
-        Machtübernahme, die ihresgleichen suchen wird. Hast du Kontrolle über die Treiber
-        und weißt, wofür sie gebraucht werden? Brauchst du keine Treiber runterziehen und dich 
-        lediglich am Datensatz bedienen, um im Extremfall dem Main-System die GPU-Kontrolle
-        zu entziehen und über Pylovara verbesserte Einstellungen vornehmen zu können – das ist nur 
-        ein Spaß, den man damit anstellen kann/wird. 
+nodes_wiki_text = """
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁  nodes.wiki-notes – Knotenübersicht
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+Systematische Einordnung und Vererbungslogik der Knoten im Pylovara-System:
 
+╭────────────────────────────────────╮
+│  Knoten-Hierarchie                 │
+╰────────────────────────────────────╯
 
-# Cache = *.*-cache sind Schnellspeicher-Ablagen. Wenn man sie verwenden möchte, braucht man 
-        1. Einsatzzweck, 2. von welchem Datentyp, 3. <Zweck>.<Datentyp>-cache
+1  Mutter-Knoten
+    ➤ *.*-nodes
+    ➥ Eigenständiger Regel-Knoten.
+    ➥ Kann direkt Reglerfunktionen übernehmen.
+    ➥ Kann eigenständig auslösen ODER Tochter- & Kinder-Knoten besitzen.
+    ➥ Steuert wie ein Master-Regler in einer DAW: Nur das, was er bekommt.
 
+2  Tochter-Knoten
+    ➤ *.*-nano-nodes
+    ➥ Kann einzelne Aspekte gezielter ansprechen als Mutter-Knoten.
+    ➥ Kann Micro-Nodes oder direkt Needles nach sich ziehen.
+    ➥ Optional, granularer.
 
-Typ-Referenztabelle:
+3  Kinder-Knoten
+    ➤ *.*-micro-nodes
+    ➥ Muss immer an eine *.needles angeschlossen werden.
+    ➥ Maximal granulare Weitergabe, aber nicht allein lauffähig.
+    ➥ Dient zur Detailregelung, kein Standalone-Regler.
 
-# Übersicht aller Datentypen im Pylovara-System
-Typ         | Beschreibung                    | Beispieldatei
-------------|----------------------------------|-----------------------------
-*.*-notes   | Dokumentation & Wiki             | logic.sound-notes
-*.*-logic   | Logikmodule für Hardware         | rtx2060.gpu-logic
-*.*-nodes   | Hauptcontroller (Master-Regler)  | audio.master-nodes
-*.*-nano... | Feinsteuerung / Subschaltungen   | bass.tune-nano-nodes
-*.*-micro.. | Mikroregler (Low-Level Config)   | mic.input-gain.micro-nodes
-*.*-needles | Treiberverknüpfung & Zugriff     | nvidia.rtx3080.gpu-needles
-*.*-cache   | Kurzzeit-Zwischenspeicher        | tmp.vulkan-gpu.cache
+4  Logik-Knoten
+    ➤ *.*-logic
+    ➥ Beinhaltet ausschließlich die Logik (IF/ELSE, Entscheidungen, Filter).
+    ➥ Wird von allen Node-Typen zur Funktionsausführung benötigt.
+    ➥ Kein aktiver Regler, reine Entscheidungsinstanz.
 
-Modular – Erweiterbar – Heiliger Gral
+5  Treiber-Zecken
+    ➤ *.*-needles
+    ➥ Abschlussknoten bzw. Ziel der Ansteuerung.
+    ➥ Direkter Zugriff auf Treiber, Hardware, Prozesse.
+    ➥ Vergleichbar mit Anschlüssen oder Gefäßen: reines "Empfangsorgan".
 
+╭────────────────────────────────────╮
+│  Reglerstruktur und Weitergabe     │
+╰────────────────────────────────────╯
 
+▸ Jede *.*nodes kann als vollständiger Regler arbeiten oder granular aufspalten.
+▸ Nano- und Micro-Nodes dienen der feiner geteilten Weitergabe.
+▸ Die Logik kommt immer aus einem *.*logic Modul – keine Regel ohne Logik.
+▸ Das Ziel jeder Node-Kette ist eine Needle → sie empfängt und führt aus.
 
-# DNA - DNA<cmd> - AnalyseWerkzeug - Datentyp .shell-dna
-       Dieses Thema wird sehr umfangreich als Analysewerzeug ausgebaut 
-       dinge wie lscpu lsgput usw werden hier gebündelt über den dna manager
-       gehandhabt , genauso wie netzwerk - bus - oder spezial informationen 
-       der dna manager ist ein hilfswerzeug das erstmal die eingabe verkürzen soll
-       und einheitlich als DNA makieren , der Begriff DNA wird als Sehwerkzeug dienen
-
-
-
-
+│############################################################################### 
+│WikiLexikon : basis-module.wiki-notes
+│# WikiSearch /~ Helpme module
+│# WikiSearch /~ Helpme 02 06
+│# Tree       /~ p Basis-Module/   
+│# pylo Basis-Module/- basis-module.wiki-notes cat
+│###############################################################################

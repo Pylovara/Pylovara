@@ -1,8 +1,9 @@
 #!/bin/bash
+# pylovara.maker-nodes - Erstellt neue Pylovara-Module (Prototyp 1.1)
 
 clear
 echo "#############################################"
-echo "#  pylovara.maker-nodes   prototyp  1.1     #"
+echo "#  pylovara.maker-nodes   prototyp  1.2     #"
 echo "#############################################"
 echo ""
 echo "Was willst du erstellen?"
@@ -16,37 +17,57 @@ read -p "Deine Auswahl (1-4): " auswahl
 
 # Mapping der Auswahl
 case $auswahl in
-  1) typ="-nodes" ;;
-  2) typ="-nano-nodes" ;;
-  3) typ="-micro-nodes" ;;
-  4) typ="-needles" ;;
-  *) echo "Ungültige Auswahl. Abbruch."; exit 1 ;;
+    1) typ="-nodes" ;;
+    2) typ="-nano-nodes" ;;
+    3) typ="-micro-nodes" ;;
+    4) typ="-needles" ;;
+    *) echo "❌ Ungültige Auswahl. Abbruch." >&2; exit 1 ;;
 esac
 
 echo ""
 read -p "Wie soll die Datei heißen (z.B. banane.affe): " basisname
 
+# Validierung des Dateinamens
+if [[ -z "$basisname" || ! "$basisname" =~ ^[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+$ ]]; then
+    echo "❌ Ungültiger Dateiname. Verwende Format: name.modul (z.B. banane.affe)" >&2
+    exit 2
+fi
+
 # Aufteilen am Punkt
-mainname="${basisname%%.*}"       # vor dem Punkt
-modulename="${basisname##*.}"     # nach dem Punkt
+mainname="${basisname%%.*}"
+modulename="${basisname##*.}"
 
 # Endgültiger Dateiname
 dateiname="${basisname}${typ}"
 
 # Zielordner aus dem Modulnamen
-zielordner="Pylovara/SystemDirectory/FileManager/Basis-Module/${modulename}-Module"
+zielordner="/Pylovara/SystemDirectory/FileManager/Basis-Module/${modulename}-Module"
 
 # Anlegen des Ordners (falls nicht vorhanden)
-mkdir -p "$zielordner"
+mkdir -p "$zielordner" || {
+    echo "❌ Fehler beim Erstellen des Ordners: $zielordner" >&2
+    exit 3
+}
 
 # Anlegen der Datei
 zielpfad="${zielordner}/${dateiname}"
 
-# Datei mit Template befüllen (rudimentär)
-echo "# ${dateiname}" > "$zielpfad"
-echo "# Erstellt mit dem Maker-Modul" >> "$zielpfad"
-echo "# Datum: $(date)" >> "$zielpfad"
-echo "" >> "$zielpfad"
+# Prüfen, ob Datei bereits existiert
+if [[ -f "$zielpfad" ]]; then
+    echo "❌ Datei existiert bereits: $zielpfad" >&2
+    exit 4
+fi
+
+# Datei mit Template befüllen
+{
+    echo "# ${dateiname}"
+    echo "# Erstellt mit dem Maker-Modul"
+    echo "# Datum: $(date)"
+    echo ""
+} > "$zielpfad" || {
+    echo "❌ Fehler beim Erstellen der Datei: $zielpfad" >&2
+    exit 5
+}
 
 echo ""
 echo "🥡 Erfolgreich erstellt:"

@@ -1,5 +1,5 @@
 #!/bin/bash
-# datatype.cmd-dna Prototyp 1.2
+# datatype.cmd-dna Prototyp 1.3
 # dna modul <datatype>
 # <datatype> = Abrufen von Datentypinformationen aus der datatypes.conf
 
@@ -14,13 +14,13 @@ DNA_EXEC() {
 
     # Prüfen, ob get_datatype_info definiert ist
     if ! declare -f get_datatype_info >/dev/null; then
-        echo "❌ Fehler: Funktion 'get_datatype_info' nicht verfügbar. Prüfe control.pv.conf oder datatypes.conf" >&2
+        echo "❌ Fehler: Funktion 'get_datatype_info' nicht verfügbar. Prüfe control.pv-conf" >&2
         return 2
     fi
 
     # Abrufen der Datentypinformationen
     get_datatype_info "$ref_id" || {
-        echo "❌ Error: Keine Informationen für Datentyp '$ref_id' gefunden" >&2
+        echo "❌ Fehler: Keine Informationen für Datentyp '$ref_id' gefunden" >&2
         return 3
     }
 }

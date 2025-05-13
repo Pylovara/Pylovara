@@ -1,0 +1,66 @@
+##############################################################################################
+@wiki_nr: 02 10 ##############################################################################
+@wiki_nr: dna ################################################################################
+##############################################################################################
+
+
+# dna.wiki-notes – Grundstruktur der Pylovara DNA Shell
+
+# DNA SHELL – SYSTEMVERDRAHTUNG AUS DEM KELLER
+
+Die DNA-Shell ist das zentrale Steuerorgan innerhalb des Pylovara-Systems für systemnahe Befehle im Shell-Stil. Sie agiert als Dispatcher, Parser und Schnittstelle zu spezialisierten `.cmd-dna` Modulen.
+
+▶ Zentrale Datei: main.core-dna
+▶ Ort: Pylovara/SystemDirectory/FileManager/Basis-Module/DNA/Shell/
+
+# FUNKTIONSWEISE:
+
+1. Aufruf mit `dna <befehl>`
+2. Das Kommando `<befehl>` wird als Datei `<befehl>.cmd-dna` im `Logic/Shell/`-Verzeichnis gesucht.
+3. Existiert sie, wird sie `source`d und die darin enthaltene Funktion `DNA_EXEC` ausgeführt.
+4. Existiert sie nicht → Fehlerausgabe.
+
+# ZWECK:
+
+- Trennung von Shell-Kommandos nach DNA-Muster
+- Saubere Erweiterbarkeit durch `.cmd-dna` Files
+- Vollständige Kontrolle über Systemabfragen, Hardwarechecks, Off/On-Schalter etc.
+- Voll kompatibel mit Bash-Completion via `main-completion.core-dna`
+
+# VERZEICHNISSTRUKTUR:
+
+├── DNA/
+│   └── Shell/
+│       ├── main.core-dna          # Dispatcher
+│       ├── main-completion.core-dna
+│       ├── list.core-dna          # Listet verfügbare DNA-Kommandos
+│       └── lex.core-dna           # Optional: Glossar oder Analyse
+
+# BEISPIELE:
+
+- `dna cpu` → führt `cpu.cmd-dna` aus
+- `dna internet` → führt `internet.cmd-dna` aus
+- `dna list` → zeigt alle verfügbaren `.core-dna` Module
+
+# SYSTEMANBINDUNG:
+
+- Wird systemweit über Funktion `DNA()` exportiert
+- Muss per `source` in `.bashrc`, `.zshrc` oder System-Control geladen werden
+
+# BASH COMPLETION:
+
+- `.cmd-dna` Files werden automatisch erkannt
+- Tab-Vervollständigung via `main-completion.core-dna`
+
+# WICHTIG:
+
+- Nur was in `Logic/Shell/*.cmd-dna` liegt, ist DNA-fähig
+- DNA-Shell ist keine Wrapper-Shell – sie ist eine Befehlsschicht!
+
+│############################################################################### 
+│WikiLexikon : dna.wiki-notes
+│# WikiSearch /~ Helpme dna
+│# WikiSearch /~ Helpme 02 10
+│# Tree       /~ p DNA/   
+│# pylo DNA/- dna.wiki-notes cat
+│###############################################################################

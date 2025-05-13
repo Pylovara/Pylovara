@@ -1,19 +1,26 @@
 #!/bin/bash
-# datatype.cmd-dna Prototyp 1.1
+# datatype.cmd-dna Prototyp 1.2
 # dna modul <datatype>
-# <datatype> = Abrufen von Datentypinformationen aus der datatype.conf
+# <datatype> = Abrufen von Datentypinformationen aus der datatypes.conf
 
 DNA_EXEC() {
     local ref_id="$1"
     
     if [[ -z "$ref_id" ]]; then
-        echo "❌ Kein Datentyp-Referenz angegeben! Bitte einen Datentyp wie 'license' angeben oder die datentypen.conf im SystemControl nachschauen"
+        echo "❌ Fehler: Kein Datentyp-Referenz angegeben. Beispiel: 'dna datatype license'" >&2
+        echo "Verfügbare Datentypen in /Pylovara/SystemControl/datatypes.conf nachschauen" >&2
         return 1
     fi
 
-    # Abrufen der Datentypinformationen über die Funktion get_datatype_info
-    get_datatype_info "$ref_id"
-}
+    # Prüfen, ob get_datatype_info definiert ist
+    if ! declare -f get_datatype_info >/dev/null; then
+        echo "❌ Fehler: Funktion 'get_datatype_info' nicht verfügbar. Prüfe control.pv.conf oder datatypes.conf" >&2
+        return 2
+    fi
 
-# Beispielaufruf der Funktion
-DNA_EXEC "$1"
+    # Abrufen der Datentypinformationen
+    get_datatype_info "$ref_id" || {
+        echo "❌ Error: Keine Informationen für Datentyp '$ref_id' gefunden" >&2
+        return 3
+    }
+}

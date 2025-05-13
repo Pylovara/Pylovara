@@ -57,6 +57,26 @@ Die DNA-Shell ist das zentrale Steuerorgan innerhalb des Pylovara-Systems für s
 - Nur was in `Logic/Shell/*.cmd-dna` liegt, ist DNA-fähig
 - DNA-Shell ist keine Wrapper-Shell – sie ist eine Befehlsschicht!
 
+################################################################################
+
+# dna-cmd.wiki-notes – Modulaufbau für DNA Kommandos
+
+# DNA-CMD MODULE – DAS HERZ DER SHELL-DNA
+
+Ein `.cmd-dna` File ist eine Mini-Einheit zur Steuerung eines spezifischen Kommandos innerhalb der DNA Shell.
+
+# STRUKTUR EINES `.cmd-dna`:
+
+Jede Datei muss mindestens folgendes enthalten:
+
+```bash
+##!/bin/bash
+## <name>.cmd-dna – Modulbeschreibung
+
+#DNA_EXEC() {
+#    # Auszuführende Logik
+#}
+
 │############################################################################### 
 │WikiLexikon : dna.wiki-notes
 │# WikiSearch /~ Helpme dna

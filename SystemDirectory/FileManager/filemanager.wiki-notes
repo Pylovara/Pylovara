@@ -1,66 +1,69 @@
-220
-|-Pylovara/SystemDirectory/FileManager/
-|###############################################################################
-230
-├─ Module/
-231
-│  ├─ P-Module/
-232
-│  ├─ P-Nodes/              # Kernmodule (.p-nodes) für Shell-Logik
-│  │  ├─ p.p-nodes          # p <Ordner> Tree suche 
-│  │  └─ p-nodes.wiki-notes # wiki-notes
-233
-│  ├─ P-Notes/              # Notizdateien (.p-notes) für Dokumentation
-234
-│  ├─ P-Search/             # Suchskripte für P-Module
-235
-│  └─ P-Errors/             # Logdateien (.p-logs) für Fehlerprotokolle
-234
-├─ Pylo-Module/ 
-│  ├─ Pylo-Nodes/           # Kernmodule (.pylo-nodes) für Pylo-Features
-│  │  ├─ pylo.pylo-nodes    # pylo <Ordner>/- DATA SHELL 
-│  │  └─ pylo-nodes.wiki-notes # wiki-notes
-│  ├─ Pylo-Notes/           # Notizdateien (.pylo-notes)
-│  ├─ Pylo-Search/          # Suchskripte für Pylo-Module - extras
-│  └─ Pylo-Errors/          # Logdateien (.pylo-logs)
-235
-├─ PLVA-Module/
-│  ├─ PLVA-Nodes/           # Layout-Module (.pv-objekt) für GUI-Integration
-│  ├─ PLVA-Notes/           # Dokumentation für Layouts
-│  ├─ PLVA-Search/          # Suchskripte für Layouts
-│  └─ PLVA-Errors/          # Logdateien für Layout-Fehler
-236
-├─ Wiki-Module/
-│  ├─ Wiki-Nodes/           # Such- und Verwaltungsmodule (.wiki-nodes)
-│  │  ├─ wiki.wiki-nodes    # helpme <Suchbegriff> (.wiki-notes)
-│  │  └─ wiki.wiki-notes    # wiki-notes
-│  ├─ Wiki-Notes/           # Dokumentation (.wiki.notes) Lexikon
-│  ├─ Wiki-Search/          # Suchskripte für .ast-wiki-notes long Lexikon
-│  └─ Wiki-Cache/           # Cache-Dateien für schnellere Suchen
-237
-├─ Nano-Module/
-│  ├─ Nano-Nodes/           # Feingranulare Module (.nano-nodes)
-│  ├─ Nano-Notes/           # Dokumentation (.nano-notes)
-│  └─ Nano-Errors/          # Logdateien (.nano-logs)
-238
-├─ Micro-Module/
-│  ├─ Micro-Nodes/                     # Mikro-Module (*.*-micro-nodes)
-│  │  ├─ needles-handler.micro-nodes   # Needles Handling for .micro-notes
-│  │  └─ micro-nodes.wiki-notes        # Info 
-│  ├─ Micro-Notes/                     # Libery (*.*-micro-notes) | Template Vorlagen
-│  └─ Micro-Errors/                    # Logdateien (.micro-logs)
-239
-├─ Needles-Module/
-│  ├─ Needles-Nodes/        # Hochspezialisierte Module (.needles)
-│  ├─ Needles-Notes/        # Dokumentation (.needles-notes)
-│  └─ Needles-Errors/       # Logdateien (.needles-logs)
-240
-└─ Maker-Module/
-   ├─ Maker-Nodes/        # Bau Amt - gibt dir was - 
-   │  ├─ pylovara.maker.nodes # Protoyp Nodes Maker
-   │  └─ maker.wiki-notes     # zuckünftige erneuerungen
-   ├─ Maker-Notes/        # Layouts Vodruck geschichten | bash 
-   └─ Maker-Errors/       # Logdateien (pylovara.maker-nodes)
+##############################################################################################
+@wiki-nr: 02 00 ##############################################################################
+@wiki-nr: fm #################################################################################
+##############################################################################################
+
+
+    ├── FileManager                                  # File Manager
+    │   ├── Basis-Module                             # Modul Ordner
+    │   │   ├── basis-module.wiki-notes              # Wiki Info
+    │   │   ├── Caches                               #
+    │   │   │   └── placeholder                      # Caches Für alles | Nur hier |
+    │   │   ├── DNA                                  #
+    │   │   │   ├── dna.wiki-notes                   # Wiki Info
+    │   │   │   └── Shell                            # Pylovara System Shell Symbiose
+    │   │   │       ├── lex.core-dna                 # dna lex logik
+    │   │   │       ├── list.core-dna                # dna list logik
+    │   │   │       ├── main-completion.core-dna     # dna autovervollständiger logik
+    │   │   │       └── main.core-dna                # dna trigger main logik
+    │   │   ├── Errors                               # Interne Fehler Logs | System |
+    │   │   │   ├── DNA                              #
+    │   │   │   │   └── placeholder                  # DNA Log Space
+    │   │   │   ├── errors.wiki-notes                # Wiki Info
+    │   │   │   ├── Logic                            #
+    │   │   │   │   └── placeholder                  # Logic Log Space
+    │   │   │   ├── Micro                            # 
+    │   │   │   │   └── Placeholder                  # Micro Log Space
+    │   │   │   ├── Nano                             # 
+    │   │   │   │   └── placeholder                  # Nano Log Space
+    │   │   │   ├── Needles                          # 
+    │   │   │   │   └── placeholder                  # Needles Log Space
+    │   │   │   └── Nodes                            #
+    │   │   │       └── placeholder                  # Nodes Log Space
+    │   │   ├── Logic                                #
+    │   │   │   ├── logic.wiki-notes                 # Wiki Info 
+    │   │   │   └── Shell                            # Pylovara System Shell Symbiose
+    │   │   │       ├── cpu.cmd-dna                  # DNA Shell 
+    │   │   │       ├── datatype.cmd-dna             # DNA Shell
+    │   │   │       ├── hw.cmd-dna                   # DNA Shell
+    │   │   │       ├── internet.cmd-dna             # DNA Shell
+    │   │   │       ├── load.cmd-dna                 # DNA Shell
+    │   │   │       ├── off.cmd-dna                  # DNA Shell
+    │   │   │       ├── on.cmd-dna                   # DNA Shell
+    │   │   │       ├── pci.cmd-dna                  # DNA Shell
+    │   │   │       ├── ports.cmd-dna                # DNA Shell
+    │   │   │       └── usb.cmd-dna                  # DNA Shell
+    │   │   ├── Micro                                # Micro-Module (*.*-micro-nodes)
+    │   │   │   └── placeholder                      # Micro Nodes Platz
+    │   │   ├── Nano                                 # Feingranulare Module (.nano-nodes)
+    │   │   │   └── placeholder                      # Nano Nodes Platz
+    │   │   ├── Nodes                                # Nodes-Module (*.*-nodes) | Kernmodule 
+    │   │   │   ├── nodes.wiki-notes                 # Wiki Info 
+    │   │   │   └── Shell                            # Pylovara System Shell Symbiose
+    │   │   │       ├── helpme.wiki-nodes            # helpme <Suchbegriff> - ShellLogikNodes
+    │   │   │       ├── helpme-wiki.wiki-notes       # Wiki Info 
+    │   │   │       ├── main.needles-handler-nodes   # Zecke | Sauger | Nagler | Nadel | System
+    │   │   │       ├── main.p-nodes                 # p <Ordner> Shell - Shell LogikNodes
+    │   │   │       ├── main.pylo-nodes              # pylo <Ordner>/- Data Shell - LogikNodes
+    │   │   │       ├── modulliste.wiki.notes        # Prototyp modulliste Wiki Info
+    │   │   │       └── pylovara.maker-nodes         # Maker | Data | System
+    │   │   ├── Needles                              # Hochspezialisierte Aufsaug Module (.needles)
+    │   │   │   └── placeholder                      # Needles Platz
+    │   │   └── Notes                                # System Notes | Liegen auch überall |
+    │   │       ├── placeholder                      #
+    │   │       └── Shell                            # Pylovara System Shell Symbiose
+    │   │           └── lexikon.core-wiki-notes      # Zuckünftiges DNA CMD Lexikon
+    │   └── filemanager.wiki-notes                   # Wiki Info
 │###############################################################################
 │WikiLexikon : module.wiki.notes
 │# WikiSearch /~ Helpme module 

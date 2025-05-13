@@ -8,97 +8,99 @@
 # MAIN TREE - ONWORK - WORK INFOS        ##                 [Output]
 ##############################################################################################
 
-Pylovara                                             #
-├── pylovara-ast.wiki-notes                          #
-├── pylovara.install-nodes                           # 
-├── Pylovara.license-notes                           # 
-├── README.wiki-notes                                # 
-├── robots.txt                                       #
-├── SystemControl                                    #
-│   ├── cache.conf                                   #
-│   ├── control.pv.conf                              #
-│   ├── core-dna.conf                                #
-│   ├── datatypes.conf                               #
-│   ├── download.conf                                #
-│   ├── lexikon.wiki-notes                           #
-│   ├── micro-nodes.conf                             #
-│   ├── nano-nodes.conf                              #
-│   ├── needles.conf                                 #
-│   ├── nodes.conf                                   #
-│   ├── systemcontrol.wiki-notes                     #
-│   └── wiki.conf                                    #
+Pylovara                                             # Root
+├── pylovara-ast.wiki-notes                          # Pylovara AST | Main Alles aufgelistet
+├── pylovara.install-nodes                           # Test Installer
+├── Pylovara.license-notes                           # LICENSE !!
+├── README.wiki-notes                                # Allgemeines Schreiben
+├── robots.txt                                       # Für KI Agenten Tools n8n usw
+├── SystemControl                                    # Kontroll Zentrum für alle confs und Main pv-conf
+│   ├── cache.conf                                   # Cache Config 
+│   ├── control.pv.conf                              # System | Main | Zentrale
+│   ├── core-dna.conf                                # DNA ALL In One Config
+│   ├── datatypes.conf                               # DatenBestimmungen Config
+│   ├── download.conf                                # PacketManager Conf | Austauschbar
+│   ├── lexikon.wiki-notes                           # Lexikon Wiki Info
+│   ├── micro-nodes.conf                             # Micro Conf
+│   ├── nano-nodes.conf                              # Nano Conf
+│   ├── needles.conf                                 # Needles Conf
+│   ├── nodes.conf                                   # Nodes Conf
+│   ├── systemcontrol.wiki-notes                     # Wiki Info
+│   └── wiki.conf                                    # Wiki Conf
 └── SystemDirectory                                  #
-    ├── FileManager                                  #
-    │   ├── Basis-Module                             #
-    │   │   ├── basis-module.wiki-notes              #
+    ├── FileManager                                  # 
+    │   ├── Basis-Module                             # Modul Ordner
+    │   │   ├── basis-module.wiki-notes              # Wiki Info
     │   │   ├── Caches                               #
-    │   │   │   └── placeholder                      #
+    │   │   │   └── placeholder                      # Caches Für alles | Nur hier |
     │   │   ├── DNA                                  #
-    │   │   │   ├──  #dna.wiki-notes                 # 
-    │   │   │   └── Shell                            #
-    │   │   │       ├── lex.core-dna                 #
-    │   │   │       ├── list.core-dna                #
-    │   │   │       ├── main-completion.core-dna     #
-    │   │   │       └── main.core-dna                #
-    │   │   ├── Errors                               #
+    │   │   │   ├── dna.wiki-notes                   # Wiki Info
+    │   │   │   └── Shell                            # Pylovara System Shell Symbiose
+    │   │   │       ├── lex.core-dna                 # dna lex logik
+    │   │   │       ├── list.core-dna                # dna list logik
+    │   │   │       ├── main-completion.core-dna     # dna autovervollständiger logik
+    │   │   │       └── main.core-dna                # dna trigger main logik
+    │   │   ├── Errors                               # Interne Fehler Logs | System |
     │   │   │   ├── DNA                              #
-    │   │   │   │   └── placeholder                  #
-    │   │   │   ├── errors.wiki-notes                #
+    │   │   │   │   └── placeholder                  # DNA Log Space
+    │   │   │   ├── errors.wiki-notes                # Wiki Info
     │   │   │   ├── Logic                            #
-    │   │   │   │   └── placeholder                  #
-    │   │   │   ├── Micro                            #
-    │   │   │   │   └── Placeholder                  #
-    │   │   │   ├── Nano                             #
-    │   │   │   │   └── placeholder                  #
-    │   │   │   ├── Needles                          #
-    │   │   │   │   └── placeholder                  #
+    │   │   │   │   └── placeholder                  # Logic Log Space
+    │   │   │   ├── Micro                            # 
+    │   │   │   │   └── Placeholder                  # Micro Log Space
+    │   │   │   ├── Nano                             # 
+    │   │   │   │   └── placeholder                  # Nano Log Space
+    │   │   │   ├── Needles                          # 
+    │   │   │   │   └── placeholder                  # Needles Log Space
     │   │   │   └── Nodes                            #
-    │   │   │       └── placeholder                  #
+    │   │   │       └── placeholder                  # Nodes Log Space
     │   │   ├── Logic                                #
-    │   │   │   ├── #logic.wiki-notes                #
-    │   │   │   └── Shell                            #
-    │   │   │       ├── cpu.cmd-dna                  #
-    │   │   │       ├── datatype.cmd-dna             #
-    │   │   │       ├── hw.cmd-dna                   #
-    │   │   │       ├── internet.cmd-dna             #
-    │   │   │       ├── load.cmd-dna                 #
-    │   │   │       ├── off.cmd-dna                  #
-    │   │   │       ├── on.cmd-dna                   #
-    │   │   │       ├── pci.cmd-dna                  #
-    │   │   │       ├── ports.cmd-dna                #
-    │   │   │       └── usb.cmd-dna                  #
-    │   │   ├── Micro                                #
-    │   │   │   └── placeholder                      #
-    │   │   ├── Nano                                 #
-    │   │   │   └── placeholder                      #
-    │   │   ├── Nodes                                #
-    │   │   │   ├── nodes.wiki-notes                 #
-    │   │   │   └── Shell                            #
-    │   │   │       ├── helpme.wiki-nodes            #
-    │   │   │       ├── helpme-wiki.wiki-notes       #
-    │   │   │       ├── main.needles-handler-nodes   #
-    │   │   │       ├── main.p-nodes                 #
-    │   │   │       ├── main.pylo-nodes              #
-    │   │   │       ├── modulliste.wiki.notes        #
-    │   │   │       └── pylovara.maker-nodes         #
-    │   │   └── Notes                                #
+    │   │   │   ├── logic.wiki-notes                 # Wiki Info 
+    │   │   │   └── Shell                            # Pylovara System Shell Symbiose
+    │   │   │       ├── cpu.cmd-dna                  # DNA Shell 
+    │   │   │       ├── datatype.cmd-dna             # DNA Shell
+    │   │   │       ├── hw.cmd-dna                   # DNA Shell
+    │   │   │       ├── internet.cmd-dna             # DNA Shell
+    │   │   │       ├── load.cmd-dna                 # DNA Shell
+    │   │   │       ├── off.cmd-dna                  # DNA Shell
+    │   │   │       ├── on.cmd-dna                   # DNA Shell
+    │   │   │       ├── pci.cmd-dna                  # DNA Shell
+    │   │   │       ├── ports.cmd-dna                # DNA Shell
+    │   │   │       └── usb.cmd-dna                  # DNA Shell
+    │   │   ├── Micro                                # Micro-Module (*.*-micro-nodes)
+    │   │   │   └── placeholder                      # Micro Nodes Platz
+    │   │   ├── Nano                                 # Feingranulare Module (.nano-nodes)
+    │   │   │   └── placeholder                      # Nano Nodes Platz
+    │   │   ├── Nodes                                # Nodes-Module (*.*-nodes) | Kernmodule 
+    │   │   │   ├── nodes.wiki-notes                 # Wiki Info 
+    │   │   │   └── Shell                            # Pylovara System Shell Symbiose
+    │   │   │       ├── helpme.wiki-nodes            # helpme <Suchbegriff> - ShellLogikNodes
+    │   │   │       ├── helpme-wiki.wiki-notes       # Wiki Info 
+    │   │   │       ├── main.needles-handler-nodes   # Zecke | Sauger | Nagler | Nadel | System
+    │   │   │       ├── main.p-nodes                 # p <Ordner> Shell - Shell LogikNodes
+    │   │   │       ├── main.pylo-nodes              # pylo <Ordner>/- Data Shell - LogikNodes
+    │   │   │       ├── modulliste.wiki.notes        # Prototyp modulliste Wiki Info
+    │   │   │       └── pylovara.maker-nodes         # Maker | Data | System
+    │   │   ├── Needles                              # Hochspezialisierte Aufsaug Module (.needles)
+    │   │   │   └── placeholder                      # Needles Platz
+    │   │   └── Notes                                # System Notes | Liegen auch überall |
     │   │       ├── placeholder                      #
-    │   │       └── Shell                            #
-    │   │           └── lexikon.core-wiki-notes      #
-    │   └── filemanager.wiki-notes                   #
-    ├── MCP-AI                                       #
-    │   ├── mcp-ai.cache                             #
-    │   ├── mcp-ai.logic                             #
-    │   ├── mcp-ai.master-nodes                      #
-    │   ├── mcp-ai.micro-nodes                       #
-    │   ├── mcp-ai.needles                           #
-    │   ├── mcp-ai.wiki-notes                        #
-    │   └── placeholder                              #
-    ├── Pylovara-Logs                                #
-    │   └── pylovara-logs.wiki-notes                 #
-    ├── Pylovara-Parser                              #
-    │   └── pylovara-parser.wiki-notes               #
-    └── systemdirectory.wiki-notes                   #
+    │   │       └── Shell                            # Pylovara System Shell Symbiose
+    │   │           └── lexikon.core-wiki-notes      # Zuckünftiges DNA CMD Lexikon
+    │   └── filemanager.wiki-notes                   # Wiki Info
+    ├── MCP-AI                                       # MCP PlatzHalter
+    │   ├── mcp-ai.cache                             # MCP PlatzHalter
+    │   ├── mcp-ai.logic                             # MCP PlatzHalter
+    │   ├── mcp-ai.master-nodes                      # MCP PlatzHalter
+    │   ├── mcp-ai.micro-nodes                       # MCP PlatzHalter
+    │   ├── mcp-ai.needles                           # MCP PlatzHalter
+    │   ├── mcp-ai.wiki-notes                        # MCP PlatzHalter
+    │   └── placeholder                              # MCP PlatzHalter
+    ├── Pylovara-Logs                                # Fehler Daten vom Infizierten Fremd System
+    │   └── pylovara-logs.wiki-notes                 # Wiki Info
+    ├── Pylovara-Parser                              # Wenn Parser Notwendig werden 
+    │   └── pylovara-parser.wiki-notes               # Wiki Info Baustelle (wenn nötig)
+    └── systemdirectory.wiki-notes                   # Wiki Info 
 
 26 directories, 65 files
 

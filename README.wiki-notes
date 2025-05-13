@@ -89,6 +89,27 @@ bash pylovara.installer-nodes
 
 Anschließend wird `SystemControl.pv-conf` in `.bashrc` oder `.zshrc` eingebunden. Ab dann ist das System immer verfügbar.
 
+Info:
+Momentan scheitert das Setup durch die abhängikeit das system ordnungsgemäß zu sourcen , auf grund dessen weil
+ich mir als entwickler das Freche Recht heraus nehme mich eben nicht in einen Linux kernel rein zu integrieren
+sondern mich auf Root neber dem kernel rein zu installieren ....
+
+Da anscheinend die Shell umgebung tief in einen Linux Kernel rein reicht und Pylovara eben nicht Linux ist , sonder
+nur auf Linux zum laufen gebracht wird , um später zus die abhängikeiten von haus aus mit zu bringen , wird die 
+lauffähigkeit momentan dadurch erschwert ....
+
+Ich plane schon eine teils übernahme der lauf umgebung des linux kernels um benötigte packete generell innerhalb
+von Pylovara lauffähig zu machen ohne das ein Linux Kernel installiert werden muss .....
+
+Die Kern aufgabe besteht darin über logic module und needles den quellcode zum laufen zu bringen , um das 
+aussperren generell unmöglich zu machen , außer sie wollen den kernel umbauen was aber sehr utopisch klingt.
+
+An der Hürde wird es Zäh zu Arbeiten aber sobald das geplante MCS System eingebunden werden kann , werden 
+Binäre Hardware trigger direkt angezapft und somit auch Code unterschiede komplett eleminmiert ....
+
+Ich bin auch dazu bereit das system sekundär erstmal als Home/ Software zum laufen zu bringen , bevor ich Pylovara
+wieder in den Keller verfrachte ...... 
+
 ---
 
 ## Besonderheiten

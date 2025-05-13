@@ -1,0 +1,28 @@
+##############################################################################################
+@wiki_nr: 02 03 ##############################################################################
+@wiki_nr: micro ##############################################################################
+##############################################################################################
+
+3 Kinder-Knoten
+    ➤ *.*-micro-nodes
+    ➥ Muss immer an eine *.needles angeschlossen werden.
+    ➥ Maximal granulare Weitergabe, aber nicht allein lauffähig.
+    ➥ Dient zur Detailregelung, kein Standalone-Regler.
+
+╭────────────────────────────────────╮
+│  Reglerstruktur und Weitergabe     │
+╰────────────────────────────────────╯
+
+▸ Jede *.*-nodes kann als vollständiger Regler arbeiten oder granular aufspalten.
+▸ Nano- und Micro-Nodes dienen der feiner geteilten Weitergabe.
+▸ Die Logik kommt immer aus einem *.*-logic Modul – keine Regel ohne Logik.
+▸ Das Ziel jeder Node-Kette ist eine Needle → sie empfängt und führt aus.
+
+
+│############################################################################### 
+│WikiLexikon : micro-nodes.wiki-notes
+│# WikiSearch /~ Helpme micro
+│# WikiSearch /~ Helpme 02 03
+│# Tree       /~ p Micro/   
+│# pylo Micro/- micro-nodes.wiki-notes cat
+│###############################################################################

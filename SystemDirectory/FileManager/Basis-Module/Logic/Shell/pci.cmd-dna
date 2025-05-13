@@ -1,8 +1,12 @@
 #!/bin/bash
-# pci.core-bash-dna
-# Zeigt PCI-Geräteinformationen (via lspci)
+# pci.cmd-dna
+# Zeigt PCI-Geräglotze Informationen (via lspci)
 
 DNA_EXEC() {
+    if ! command -v lspci >/dev/null 2>&1; then
+        echo "❌ Fehler: 'lspci' ist nicht installiert (z.B. 'pacman -S pciutils')" >&2
+        return 1
+    fi
     echo "🧬 DNA pci: Zeige PCI-Geräte (lspci)"
     lspci | less
 }

@@ -1,18 +1,18 @@
 Struktur auf dem stick 
 
-/KI-Butler
+/Universal
 ├── bin/
-│   ├── ollama-linux-x64    # Für Linux
-│   ├── ollama-darwin-arm64  # Für macOS Apple Silicon
-│   ├── ollama-windows-x64.exe # Für Windows
-│   └── ki-butler.sh          # Dein Butler-Skript
+│   ├── ollama-linux-x64
+│   ├── ollama-darwin-arm64
+│   └── ollama-windows-amd64.exe
 ├── models/
-│   └── phi3-mini/            # Modelldaten (falls manuell genutzt)
+│   └── phi3-mini/
 ├── Pylovara/
-│   └── ...                   # Deine komplette Wissensbasis
+│   └── System/
+│       ├── Control/
+│       └── Directory/
+│   
 └── config/
-    └── env.sh                # Umgebungsvariablen für alle Systeme
-
-Drum herum Pylovara !!!
+    └── env.sh
 
 KI = Inteligente SHELL = Ansteuerbar durch jedes Terminal als WIRT

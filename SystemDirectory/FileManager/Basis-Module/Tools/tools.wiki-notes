@@ -9,3 +9,27 @@ Pylovara System Tool ON BOARD
     ollama
 
 
+
+
+spätere Butler Logik :
+
+case "$SYSTEM" in
+  Linux*)     OS="linux" ;;
+  Darwin*)    OS="darwin" ;;
+  CYGWIN*|MINGW32*|MINGW64*) OS="nt" ;;
+  FreeBSD*)   OS="bsd" ;;
+  *)          OS="unknown" ;;
+esac
+
+echo -e "${YELLOW}🧠 Butler gestartet auf $SYSTEM ($OS)${NC}"
+
+
+dann kann gesagt werden :
+
+if [ "$OS" == "darwin" ]; then
+  CMD="brew install $package"
+elif [ "$OS" == "nt" ]; then
+  CMD="winget install $package"
+else
+  CMD="sudo pacman -S $package"
+fi

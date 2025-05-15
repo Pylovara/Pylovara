@@ -16,3 +16,14 @@ Struktur auf dem stick
     └── env.sh
 
 KI = Inteligente SHELL = Ansteuerbar durch jedes Terminal als WIRT
+
+Struktur für / 
+
+/Pylovara/
+└── AI/
+    ├── ollama/               # enthält Ollama Binary + Modelle
+    ├── config/               # chi3:mini.conf + custom promptsystem
+    ├── sessions/             # temporäre Chatlogs, dumpbare Runs
+    ├── wiki-notes/           # ausgelagertes „Gedächtnis“
+    ├── logs/                 # AI-bezogene Logfiles
+    └── scripts/              # Helferskripte z.B. starter, sudo-wrapper, etc.

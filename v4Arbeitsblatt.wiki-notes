@@ -1,3 +1,95 @@
+KI Grundstock Angelegt , jetzt wird chi3:mini eingebaut
+und danach Pylovara drum herum gebaut .....
+der nächste Git patch wird ein --force push 
+
+version 4 Pylovara + AI Logik 
+
+┌[bandino@Pylovara] [/dev/pts/0] 
+└[/Pylovara]> tree
+.
+├── AI
+│   ├── config
+│   ├── logs
+│   ├── ollama
+│   │   ├── bin
+│   │   │   └── ollama
+│   │   ├── install_ollama_local.sh
+│   │   ├── lib
+│   │   │   └── ollama
+│   │   │       ├── cuda_v11
+│   │   │       │   ├── libcublasLt.so.11 -> libcublasLt.so.11.5.1.109
+│   │   │       │   ├── libcublasLt.so.11.5.1.109
+│   │   │       │   ├── libcublas.so.11 -> libcublas.so.11.5.1.109
+│   │   │       │   ├── libcublas.so.11.5.1.109
+│   │   │       │   ├── libcudart.so.11.0 -> libcudart.so.11.3.109
+│   │   │       │   ├── libcudart.so.11.3.109
+│   │   │       │   └── libggml-cuda.so
+│   │   │       ├── cuda_v12
+│   │   │       │   ├── libcublasLt.so.12 -> libcublasLt.so.12.8.4.1
+│   │   │       │   ├── libcublasLt.so.12.8.4.1
+│   │   │       │   ├── libcublas.so.12 -> libcublas.so.12.8.4.1
+│   │   │       │   ├── libcublas.so.12.8.4.1
+│   │   │       │   ├── libcudart.so.12 -> libcudart.so.12.8.90
+│   │   │       │   ├── libcudart.so.12.8.90
+│   │   │       │   └── libggml-cuda.so
+│   │   │       ├── libggml-base.so
+│   │   │       ├── libggml-cpu-alderlake.so
+│   │   │       ├── libggml-cpu-haswell.so
+│   │   │       ├── libggml-cpu-icelake.so
+│   │   │       ├── libggml-cpu-sandybridge.so
+│   │   │       ├── libggml-cpu-skylakex.so
+│   │   │       ├── libggml-cpu-sse42.so
+│   │   │       └── libggml-cpu-x64.so
+│   │   ├── logs
+│   │   ├── notes
+│   │   └── systemd
+│   │       └── ollama.service
+│   ├── scripts
+│   ├── sessions
+│   └── wiki-notes
+├── install.sh
+└── systemctl.wiki-notes
+
+16 directories, 27 files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Struktur auf dem stick 
 
 /Universal

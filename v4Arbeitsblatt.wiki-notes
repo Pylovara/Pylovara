@@ -4,12 +4,25 @@ der nächste Git patch wird ein --force push
 
 version 4 Pylovara + AI Logik 
 
-┌[bandino@Pylovara] [/dev/pts/0] 
-└[/Pylovara]> tree
-.
+- ollama portable
+- qwen3:0.6b <-- (gute wahl)
+- qwen3:1.7b <-- (kommt noch)
+- Pylovara aufbau um die AI (Wird vorbeireitet)
+
+
+Pylovara V4.0 - Hard --ForcePush kommt noch 
+
+danach läuft das komplette system von haus aus für 
+archlinux erstmal rund ..... sozusagen step one 
+
+#########################################################
+┌[bandino@Pylovara] [/dev/pts/1] 
+└[/]> tree Pylovara 
+Pylovara
 ├── AI
 │   ├── config
 │   ├── logs
+│   │   └── shellbot.log
 │   ├── ollama
 │   │   ├── bin
 │   │   │   └── ollama
@@ -41,18 +54,38 @@ version 4 Pylovara + AI Logik
 │   │   │       ├── libggml-cpu-sse42.so
 │   │   │       └── libggml-cpu-x64.so
 │   │   ├── logs
+│   │   ├── models
+│   │   │   ├── blobs
+│   │   │   │   ├── sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa
+│   │   │   │   ├── sha256-b0830f4ff6a0220cfd995455206353b0ed23c0aee865218b154b7a75087b4e55
+│   │   │   │   ├── sha256-cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb
+│   │   │   │   ├── sha256-d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12
+│   │   │   │   └── sha256-eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175
+│   │   │   └── manifests
+│   │   │       └── registry.ollama.ai
+│   │   │           └── library
+│   │   │               └── qwen3
+│   │   │                   └── 0.6b
 │   │   ├── notes
 │   │   └── systemd
 │   │       └── ollama.service
 │   ├── scripts
+│   │   └── shellbot.ai-nodes
 │   ├── sessions
 │   └── wiki-notes
+├── Control
+├── einbinden.wiki-notes
+├── Handbuch
+│   └── qwenrechte.wiki-notes
 ├── install.sh
+├── System
 └── systemctl.wiki-notes
 
-16 directories, 27 files
+25 directories, 37 files
+┌[bandino@Pylovara] [/dev/pts/1] 
+└[/]> 
 
-
+#####################################################
 
 
 

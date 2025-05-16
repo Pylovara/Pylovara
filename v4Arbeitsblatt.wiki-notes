@@ -80,144 +80,157 @@ Pylovara
 │   ├── cache.conf
 │   ├── control.pv-conf
 │   ├── control.pv-conf.save
+│   ├── datatypes.conf
 │   ├── dna.conf
 │   ├── download.conf
 │   ├── hardware.conf
 │   ├── logic.conf
 │   ├── micro.conf
 │   ├── nano.conf
+│   ├── needles.conf
 │   ├── nodes.conf
-│   └── shell.conf
+│   ├── shell.conf
+│   └── wiki.conf
 ├── Handbuch
 │   ├── control.wiki-notes
+│   ├── dna.wiki-notes
 │   ├── einbinden.wiki-notes
+│   ├── helpme-wiki-nodes.wiki-notes
 │   ├── lexikon.wiki-notes
 │   ├── module.wiki-notes
 │   ├── pylovara-ast.wiki-notes
+│   ├── qwen3überblick.wiki-notes
 │   ├── qwenrechte.wiki-notes
 │   └── systemctl.wiki-notes
 ├── install.sh
+├── ###pylovara.install-nodes
+├── Pylovara.license-notes
+├── README.wiki-notes
 └── System
     └── Module
         ├── Compositor
-        │   ├── Dna
-        │   ├── DnaCmd
+        │   ├── Cache
         │   ├── Logic
+        │   ├── Logs
         │   ├── Micro
         │   ├── Nano
         │   ├── Needles
-        │   ├── Nodes
-        │   └── Notes
+        │   └── Nodes
         ├── Cpu
-        │   ├── Dna
-        │   ├── DnaCmd
+        │   ├── Cache
         │   ├── Logic
+        │   ├── Logs
         │   ├── Micro
         │   ├── Nano
         │   ├── Needles
-        │   ├── Nodes
-        │   └── Notes
+        │   └── Nodes
         ├── Gpu
-        │   ├── Dna
-        │   ├── DnaCmd
+        │   ├── Cache
         │   ├── Logic
+        │   ├── Logs
         │   ├── Micro
         │   ├── Nano
         │   ├── Needles
-        │   ├── Nodes
-        │   └── Notes
+        │   └── Nodes
         ├── Keyboard
-        │   ├── Dna
-        │   ├── DnaCmd
+        │   ├── Cache
         │   ├── Logic
+        │   ├── Logs
         │   ├── Micro
         │   ├── Nano
         │   ├── Needles
-        │   ├── Nodes
-        │   └── Notes
+        │   └── Nodes
         ├── Mouse
-        │   ├── Dna
-        │   ├── DnaCmd
+        │   ├── Cache
         │   ├── Logic
+        │   ├── Logs
         │   ├── Micro
         │   ├── Nano
         │   ├── Needles
-        │   ├── Nodes
-        │   └── Notes
-        ├── Shell
+        │   └── Nodes
+        ├── Pylovara
+        │   ├── Cache
         │   ├── Dna
+        │   │   ├── pylovara.completion-dna
+        │   │   ├── pylovara.dna-dna
+        │   │   ├── #pylovara.lex-dna
+        │   │   └── pylovara.list-dna
         │   ├── DnaCmd
+        │   │   ├── cpu.dna-cmd
+        │   │   ├── datatype.dna-cmd
+        │   │   ├── hw.dna-cmd
+        │   │   ├── internet.dna-cmd
+        │   │   ├── load.dna-cmd
+        │   │   ├── off.dna-cmd
+        │   │   ├── on.dna-cmd
+        │   │   ├── pci.dna-cmd
+        │   │   ├── ports.dna-cmd
+        │   │   └── usb.dna-cmd
         │   ├── Logic
+        │   ├── Logs
         │   ├── Micro
         │   ├── Nano
         │   ├── Needles
-        │   ├── Nodes
-        │   └── Notes
+        │   └── Nodes
+        │       ├── pylovara.helpwiki-nodes
+        │       ├── pylovara.maker-nodes
+        │       ├── pylovara.p-nodes
+        │       └── pylovara.pylo-nodes
         └── Sound
-            ├── Dna
-            ├── DnaCMD
+            ├── Cache
             ├── Logic
+            ├── Logs
             ├── Micro
             ├── Nano
             ├── Needles
-            ├── Nodes
-            └── Notes
+            └── Nodes
 
-90 directories, 55 files
-
+85 directories, 82 files
 #####################################################
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Skizze - Idee - Nicht Existent
 Struktur auf dem stick 
 
 /Universal
-├── bin/
+├── bin
 │   ├── ollama-linux-x64
 │   ├── ollama-darwin-arm64
 │   └── ollama-windows-amd64.exe
-├── models/
-│   └── phi3-mini/
-├── Pylovara/
-│   └── System/
-│       ├── Control/
-│       └── Directory/
-│   
-└── config/
+├── AI
+│   ├── config
+│   ├── logs
+│   │   └── shellbot.log
+│   ├── ollama
+│   │   ├── bin
+│   │   │   └── ollama
+│   │   ├── install_ollama_local.sh
+│   │   ├── lib
+│   │   │   └── ollama
+│   │   ├── logs
+│   │   ├── models
+│   │   │   ├── blobs
+│   │   │   └── manifests
+│   │   │       └── registry.ollama.ai
+│   │   │           └── library
+│   │   │               └── qwen3
+│   │   │                   └── 0.6b
+│   │   ├── notes
+│   │   └── systemd
+│   ├── scripts
+│   │   └── shellbot.ai-nodes
+│   ├── sessions
+│   └── wiki-notes
+├── AICMD
+│   ├── qwen3:0.6b.ai-nodes
+│   └── qwen3_interpreter.ai-logic
+├── Control
+├── Handbuch
+├── install.sh
+├── ###pylovara.install-nodes
+├── Pylovara.license-notes
+├── README.wiki-notes
+├── System
+└── config
     └── env.sh
 
 KI = Inteligente SHELL = Ansteuerbar durch jedes Terminal als WIRT

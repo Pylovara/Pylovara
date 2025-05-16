@@ -15,7 +15,6 @@ Pylovara V4.0 - Hard --ForcePush kommt noch
 danach läuft das komplette system von haus aus für 
 archlinux erstmal rund ..... sozusagen step one 
 
-#########################################################
 ┌[bandino@Pylovara] [/dev/pts/1] 
 └[/]> tree Pylovara 
 Pylovara
@@ -73,17 +72,98 @@ Pylovara
 │   │   └── shellbot.ai-nodes
 │   ├── sessions
 │   └── wiki-notes
+├── AICMD
+│   ├── qwen3:0.6b.ai-nodes
+│   └── qwen3_interpreter.ai-logic
 ├── Control
-├── einbinden.wiki-notes
+│   ├── ai.conf
+│   ├── cache.conf
+│   ├── control.pv-conf
+│   ├── control.pv-conf.save
+│   ├── dna.conf
+│   ├── download.conf
+│   ├── hardware.conf
+│   ├── logic.conf
+│   ├── micro.conf
+│   ├── nano.conf
+│   ├── nodes.conf
+│   └── shell.conf
 ├── Handbuch
-│   └── qwenrechte.wiki-notes
+│   ├── control.wiki-notes
+│   ├── einbinden.wiki-notes
+│   ├── lexikon.wiki-notes
+│   ├── module.wiki-notes
+│   ├── pylovara-ast.wiki-notes
+│   ├── qwenrechte.wiki-notes
+│   └── systemctl.wiki-notes
 ├── install.sh
-├── System
-└── systemctl.wiki-notes
+└── System
+    └── Module
+        ├── Compositor
+        │   ├── Dna
+        │   ├── DnaCmd
+        │   ├── Logic
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   ├── Nodes
+        │   └── Notes
+        ├── Cpu
+        │   ├── Dna
+        │   ├── DnaCmd
+        │   ├── Logic
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   ├── Nodes
+        │   └── Notes
+        ├── Gpu
+        │   ├── Dna
+        │   ├── DnaCmd
+        │   ├── Logic
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   ├── Nodes
+        │   └── Notes
+        ├── Keyboard
+        │   ├── Dna
+        │   ├── DnaCmd
+        │   ├── Logic
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   ├── Nodes
+        │   └── Notes
+        ├── Mouse
+        │   ├── Dna
+        │   ├── DnaCmd
+        │   ├── Logic
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   ├── Nodes
+        │   └── Notes
+        ├── Shell
+        │   ├── Dna
+        │   ├── DnaCmd
+        │   ├── Logic
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   ├── Nodes
+        │   └── Notes
+        └── Sound
+            ├── Dna
+            ├── DnaCMD
+            ├── Logic
+            ├── Micro
+            ├── Nano
+            ├── Needles
+            ├── Nodes
+            └── Notes
 
-25 directories, 37 files
-┌[bandino@Pylovara] [/dev/pts/1] 
-└[/]> 
+90 directories, 55 files
 
 #####################################################
 

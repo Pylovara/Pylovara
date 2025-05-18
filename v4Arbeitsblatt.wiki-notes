@@ -41,9 +41,9 @@ Pylovara V4.0 - Hard --ForcePush kommt noch
 danach läuft das komplette system von haus aus für 
 archlinux erstmal rund ..... sozusagen step one 
 
-┌[bandino@Pylovara] [/dev/pts/1] 
-└[/]> tree Pylovara  
-Pylovara
+┌[bandino@Pylovara] [/dev/pts/0] 
+└[/Pylovara]> tree         
+.
 ├── AI
 │   ├── AIControl
 │   │   ├── AI-Einstellungen
@@ -52,7 +52,8 @@ Pylovara
 │   │   └── AI-Module
 │   │       ├── Cache
 │   │       ├── Logic
-│   │       │   └── phi4-mini.verhaltens-logic
+│   │       │   ├── ai-runner.verhaltens-logic
+│   │       │   └── wiki.reader-logic
 │   │       ├── Logs
 │   │       ├── Micro
 │   │       ├── Nano
@@ -226,7 +227,7 @@ Pylovara
             ├── Needles
             └── Nodes
 
-95 directories, 87 files
+95 directories, 88 files
 #####################################################
 
 Skizze - Idee - Nicht Existent

@@ -42,13 +42,31 @@ danach läuft das komplette system von haus aus für
 archlinux erstmal rund ..... sozusagen step one 
 
 ┌[bandino@Pylovara] [/dev/pts/0] 
-└[/Pylovara]> tree         
-.
+└[/]> tree Pylovara 
+Pylovara
 ├── AI
 │   ├── AIControl
 │   │   ├── AI-Einstellungen
 │   │   │   └── aicontrol.main-conf
-│   │   ├── AI-Handbücher
+│   │   ├── #AI-Handbücher 
+│   │   │   ├── _86_64.ai-wiki-notes
+│   │   │   ├── arm.ai-wiki-notes
+│   │   │   ├── bash.ai-wiki-notes
+│   │   │   ├── c++.ai-wiki-notes
+│   │   │   ├── c.ai-wiki-notes
+│   │   │   ├── CISC.ai-wiki-notes
+│   │   │   ├── EPIC.ai-wiki-notes
+│   │   │   ├── IA-16.ai-wiki-notes
+│   │   │   ├── IA-32.ai-wiki-notes
+│   │   │   ├── IA-64.ai-wiki-notes
+│   │   │   ├── isa.ai-wiki-notes
+│   │   │   ├── Mnemonics.ai-wiki-notes
+│   │   │   ├── Operanden.ai-wiki-notes
+│   │   │   ├── powershell.ai-wiki-notes
+│   │   │   ├── python.ai-wiki-notes
+│   │   │   ├── RISC.ai-wiki-notes
+│   │   │   ├── VLIW.ai-wiki-notes
+│   │   │   └── zshell.ai-wiki-notes
 │   │   └── AI-Module
 │   │       ├── Cache
 │   │       ├── Logic
@@ -166,6 +184,14 @@ archlinux erstmal rund ..... sozusagen step one
         │   ├── Nano
         │   ├── Needles
         │   └── Nodes
+        ├── DLL
+        │   ├── Cache
+        │   ├── Logic
+        │   ├── Logs
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   └── Nodes
         ├── Gpu
         │   ├── Cache
         │   ├── Logic
@@ -183,6 +209,14 @@ archlinux erstmal rund ..... sozusagen step one
         │   ├── Needles
         │   └── Nodes
         ├── Mouse
+        │   ├── Cache
+        │   ├── Logic
+        │   ├── Logs
+        │   ├── Micro
+        │   ├── Nano
+        │   ├── Needles
+        │   └── Nodes
+        ├── OpenGl
         │   ├── Cache
         │   ├── Logic
         │   ├── Logs
@@ -227,7 +261,7 @@ archlinux erstmal rund ..... sozusagen step one
             ├── Needles
             └── Nodes
 
-95 directories, 88 files
+111 directories, 106 files
 #####################################################
 
 Skizze - Idee - Nicht Existent

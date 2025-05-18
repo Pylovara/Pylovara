@@ -42,13 +42,13 @@ danach läuft das komplette system von haus aus für
 archlinux erstmal rund ..... sozusagen step one 
 
 ┌[bandino@Pylovara] [/dev/pts/0] 
-└[/]> tree Pylovara 
-Pylovara
+└[~/Pylovara]> tree         
+.
 ├── AI
 │   ├── AIControl
 │   │   ├── AI-Einstellungen
 │   │   │   └── aicontrol.main-conf
-│   │   ├── #AI-Handbücher 
+│   │   ├── #AI-Handbücher
 │   │   │   ├── _86_64.ai-wiki-notes
 │   │   │   ├── arm.ai-wiki-notes
 │   │   │   ├── bash.ai-wiki-notes
@@ -156,112 +156,125 @@ Pylovara
 │   ├── shell.conf
 │   └── wiki.conf
 ├── Handbuch
+│   ├── ai.wiki-notes
 │   ├── control.wiki-notes
-│   ├── dna.wiki-notes
-│   ├── einbinden.wiki-notes
-│   ├── helpme.wiki-notes
+│   ├── guide.wiki-notes
 │   ├── lexikon.wiki-notes
 │   ├── module.wiki-notes
 │   ├── pylovara-ast.wiki-notes
-│   └── systemctl.wiki-notes
+│   └── source-bridge-needles.wiki-notes
 ├── Pylovara.license-notes
 ├── README.wiki-notes
 └── System
-    └── Module
-        ├── Compositor
-        │   ├── Cache
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        ├── Cpu
-        │   ├── Cache
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        ├── DLL
-        │   ├── Cache
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        ├── Gpu
-        │   ├── Cache
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        ├── Keyboard
-        │   ├── Cache
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        ├── Mouse
-        │   ├── Cache
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        ├── OpenGl
-        │   ├── Cache
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        ├── Pylovara
-        │   ├── Cache
-        │   ├── Dna
-        │   │   ├── pylovara.completion-dna
-        │   │   ├── pylovara.dna-dna
-        │   │   ├── #pylovara.lex-dna
-        │   │   └── pylovara.list-dna
-        │   ├── DnaCmd
-        │   │   ├── cpu.dna-cmd
-        │   │   ├── datatype.dna-cmd
-        │   │   ├── hw.dna-cmd
-        │   │   ├── internet.dna-cmd
-        │   │   ├── load.dna-cmd
-        │   │   ├── off.dna-cmd
-        │   │   ├── on.dna-cmd
-        │   │   ├── pci.dna-cmd
-        │   │   ├── ports.dna-cmd
-        │   │   └── usb.dna-cmd
-        │   ├── Logic
-        │   ├── Logs
-        │   ├── Micro
-        │   ├── Nano
-        │   ├── Needles
-        │   └── Nodes
-        │       ├── pylovara.helpwiki-nodes
-        │       ├── pylovara.maker-nodes
-        │       ├── pylovara.p-nodes
-        │       └── pylovara.pylo-nodes
-        └── Sound
-            ├── Cache
-            ├── Logic
-            ├── Logs
-            ├── Micro
-            ├── Nano
-            ├── Needles
-            └── Nodes
+    ├── Module
+    │   ├── Compositor
+    │   │   ├── Cache
+    │   │   ├── Logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   └── Nodes
+    │   ├── Cpu
+    │   │   ├── Cache
+    │   │   ├── Logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   └── Nodes
+    │   ├── DLL
+    │   │   ├── Cache
+    │   │   ├── Logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   └── Nodes
+    │   ├── Gpu
+    │   │   ├── Cache
+    │   │   ├── Logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   └── Nodes
+    │   ├── Keyboard
+    │   │   ├── Cache
+    │   │   ├── Logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   └── Nodes
+    │   ├── Mouse
+    │   │   ├── Cache
+    │   │   ├── Logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   └── Nodes
+    │   ├── OpenGl
+    │   │   ├── Cache
+    │   │   ├── Logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   └── Nodes
+    │   ├── Pylovara
+    │   │   ├── Cache
+    │   │   ├── Dna
+    │   │   │   ├── pylovara.completion-dna
+    │   │   │   ├── pylovara.dna-dna
+    │   │   │   ├── #pylovara.lex-dna
+    │   │   │   └── pylovara.list-dna
+    │   │   ├── DnaCmd
+    │   │   │   ├── cpu.dna-cmd
+    │   │   │   ├── datatype.dna-cmd
+    │   │   │   ├── hw.dna-cmd
+    │   │   │   ├── internet.dna-cmd
+    │   │   │   ├── load.dna-cmd
+    │   │   │   ├── off.dna-cmd
+    │   │   │   ├── on.dna-cmd
+    │   │   │   ├── pci.dna-cmd
+    │   │   │   ├── ports.dna-cmd
+    │   │   │   └── usb.dna-cmd
+    │   │   ├── Logic
+    │   │   │   ├── pylovara.awk-logic
+    │   │   │   ├── pylovara.basename-logic
+    │   │   │   ├── pylovara.bc-logic
+    │   │   │   ├── pylovara.cut-logic
+    │   │   │   ├── pylovara.du-logic
+    │   │   │   ├── pylovara.find-logic
+    │   │   │   ├── pylovara.sed-logic
+    │   │   │   ├── pylovara.sort-logic
+    │   │   │   └── pylovara.tail-logic
+    │   │   ├── Logs
+    │   │   ├── Micro
+    │   │   ├── Nano
+    │   │   ├── Needles
+    │   │   │   └── pylovara.source-bridge-neeldes
+    │   │   └── Nodes
+    │   │       ├── pylovara.helpwikideluxe-nodes
+    │   │       ├── pylovara.helpwiki-nodes
+    │   │       ├── pylovara.maker-nodes
+    │   │       ├── pylovara.p-nodes
+    │   │       └── pylovara.pylo-nodes
+    │   └── Sound
+    │       ├── Cache
+    │       ├── Logic
+    │       ├── Logs
+    │       ├── Micro
+    │       ├── Nano
+    │       ├── Needles
+    │       └── Nodes
+    └── Pictures
+        └── Pylovara
+            └── Pylovara.jpg
 
-111 directories, 106 files
+113 directories, 117 files
 #####################################################
 
 Skizze - Idee - Nicht Existent

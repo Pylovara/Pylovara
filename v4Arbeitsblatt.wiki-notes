@@ -4,11 +4,39 @@ der nächste Git patch wird ein --force push
 
 version 4 Pylovara + AI Logik 
 
-- ollama portable
-- qwen3:0.6b <-- (gute wahl)
-- qwen3:1.7b <-- (kommt noch)
+- ollama portable mögichkeiten
+- qwen3:0.6b 
+- qwen3:1.7b 
+- phi4-mini
+- phi3:mini
 - Pylovara aufbau um die AI (Wird vorbeireitet)
 
+Alle Test wurden mit Sicherheits Schalten Y/N Durchgeführt
+
+Test = qwen3:0.6b & 1.7b 
+Schlechte wahl , keine System ausführungen möglich und sehr schlechtes Deutsch.
+Redet davon etwas zu tun aber tut nichts ....
+Kann nicht eingestellt werden , weder per Prompting noch in den Binäris.
+Hat sich als Fanatsie Rollenspiel Bot entpuppt und wurde ausgebaut....
+
+Test = phi4-mini 
+Bringt Fundierte Lösungswege und Kann Gutes Deutsch
+Führt nichts aus selbst mit Hardcodierten Dirigenten per Prompting.
+Spricht of über eine APi Lokal , wird warscheins weiter geleitet zu Microsoft
+Weis selbst mit Root Zugriff nicht wo es ist .
+Kann nicht geprompt werden , keinen mehrwert als Assistent ......
+Kann nicht mal mit Lokal angelegten Daten umgehen , lesen , schreiben , zeigen 
+
+Test = phi3:mini
+Spricht gebrochen Deutsch .....
+Führt sehr willig etwas aus aber bleibt in seinem "Ordner" hängen ....
+Ist Willig und kann Gepromptet werden , Sucht und analysiert Systemweit
+Sprach Verständniss gering , daher Fehlerquote Hoch .....
+Kann Explizit Gepromptet werden , Funktioniert überraschend gut 
+Anscheinend das Letzte Microsoft Modell das Wirklich Hört ..... 
+
+
+Test = demnächste Model
 
 Pylovara V4.0 - Hard --ForcePush kommt noch 
 
@@ -16,16 +44,27 @@ danach läuft das komplette system von haus aus für
 archlinux erstmal rund ..... sozusagen step one 
 
 ┌[bandino@Pylovara] [/dev/pts/1] 
-└[/]> tree Pylovara 
+└[/]> tree Pylovara  
 Pylovara
 ├── AI
+│   ├── AIControl
+│   │   ├── AI-Einstellungen
+│   │   │   └── aicontrol.main-conf
+│   │   ├── AI-Handbücher
+│   │   └── AI-Module
+│   │       ├── Cache
+│   │       ├── Logic
+│   │       │   └── phi4-mini.verhaltens-logic
+│   │       ├── Logs
+│   │       ├── Micro
+│   │       ├── Nano
+│   │       ├── Needles
+│   │       └── Nodes
 │   ├── config
 │   ├── logs
-│   │   └── shellbot.log
 │   ├── ollama
 │   │   ├── bin
 │   │   │   └── ollama
-│   │   ├── install_ollama_local.sh
 │   │   ├── lib
 │   │   │   └── ollama
 │   │   │       ├── cuda_v11
@@ -51,35 +90,43 @@ Pylovara
 │   │   │       ├── libggml-cpu-sandybridge.so
 │   │   │       ├── libggml-cpu-skylakex.so
 │   │   │       ├── libggml-cpu-sse42.so
-│   │   │       └── libggml-cpu-x64.so
+│   │   │       ├── libggml-cpu-x64.so
+│   │   │       └── syslibs
+│   │   │           ├── ld-linux-x86-64.so.2
+│   │   │           ├── libc.so.6
+│   │   │           ├── libdl.so.2
+│   │   │           ├── libgcc_s.so.1
+│   │   │           ├── libm.so.6
+│   │   │           ├── libpthread.so.0
+│   │   │           ├── libresolv.so.2
+│   │   │           ├── librt.so.1
+│   │   │           └── libstdc++.so.6
 │   │   ├── logs
 │   │   ├── models
 │   │   │   ├── blobs
-│   │   │   │   ├── sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa
-│   │   │   │   ├── sha256-b0830f4ff6a0220cfd995455206353b0ed23c0aee865218b154b7a75087b4e55
-│   │   │   │   ├── sha256-cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb
-│   │   │   │   ├── sha256-d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12
-│   │   │   │   └── sha256-eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175
+│   │   │   │   ├── sha256-3c168af1dea0a414299c7d9077e100ac763370e5a98b3c53801a958a47f0a5db
+│   │   │   │   ├── sha256-813f53fdc6e58d35bb1c3853c93266380e9ca918a993e8eab193e8ede5d3a603
+│   │   │   │   ├── sha256-8c2539a423c4df2d9d2609fba56e7bad554696b66ed0e280c56e0ef4a32498fa
+│   │   │   │   └── sha256-fa8235e5b48faca34e3ca98cf4f694ef08bd216d28b58071a1f85b1d50cb814d
 │   │   │   └── manifests
 │   │   │       └── registry.ollama.ai
 │   │   │           └── library
-│   │   │               └── qwen3
-│   │   │                   └── 0.6b
-│   │   ├── notes
+│   │   │               └── phi4-mini
+│   │   │                   └── latest
 │   │   └── systemd
 │   │       └── ollama.service
 │   ├── scripts
-│   │   └── shellbot.ai-nodes
-│   ├── sessions
-│   └── wiki-notes
-├── AICMD
-│   ├── qwen3:0.6b.ai-nodes
-│   └── qwen3_interpreter.ai-logic
+│   └── sessions
+├── Arbeitsnotizen
+│   ├── muss später in den installer.notes
+│   ├── ###pylovara.install-nodes
+│   ├── systemctl.install-nodes
+│   └── verlinkungs.install-nodes
 ├── Control
 │   ├── ai.conf
+│   ├── ai.conf.save
 │   ├── cache.conf
 │   ├── control.pv-conf
-│   ├── control.pv-conf.save
 │   ├── datatypes.conf
 │   ├── dna.conf
 │   ├── download.conf
@@ -95,15 +142,11 @@ Pylovara
 │   ├── control.wiki-notes
 │   ├── dna.wiki-notes
 │   ├── einbinden.wiki-notes
-│   ├── helpme-wiki-nodes.wiki-notes
+│   ├── helpme.wiki-notes
 │   ├── lexikon.wiki-notes
 │   ├── module.wiki-notes
 │   ├── pylovara-ast.wiki-notes
-│   ├── qwen3überblick.wiki-notes
-│   ├── qwenrechte.wiki-notes
 │   └── systemctl.wiki-notes
-├── install.sh
-├── ###pylovara.install-nodes
 ├── Pylovara.license-notes
 ├── README.wiki-notes
 └── System
@@ -185,7 +228,7 @@ Pylovara
             ├── Needles
             └── Nodes
 
-85 directories, 82 files
+95 directories, 87 files
 #####################################################
 
 Skizze - Idee - Nicht Existent

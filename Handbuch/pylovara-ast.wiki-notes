@@ -1,0 +1,384 @@
+##############################################################################################
+@wiki_nr: 01 ##############################################################################
+@wiki_nr: ast ################################################################################
+##############################################################################################
+[PV] Pylovara geladen ✓
+
+ ┌[bandino@Pylovara][03:38:01|Do Mai 22|3,5G]
+ │      ᴾʸˡᵒᵛᵃʳᵃ ᵛ⁰.⁶.⁰
+ │      ₚ    | 𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ   | ₕₑₗₚₘₑ ₗₑₓ    |
+ │      ₚᵧₗₒ | 𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀ | ₕₑₗₚₘₑₓ ₀₁₋₀₂ |
+ └[~]> $ p /Pylovara/
+🔍 Ordner gefunden: /Pylovara
+/Pylovara
+├── AI
+│   ├── AIControl
+│   │   ├── AI-Einstellungen
+│   │   │   └── aicontrol.main-conf
+│   │   ├── #AI-Handbücher
+│   │   │   ├── _86_64.ai-wiki-notes
+│   │   │   ├── arm.ai-wiki-notes
+│   │   │   ├── bash.ai-wiki-notes
+│   │   │   ├── c++.ai-wiki-notes
+│   │   │   ├── c.ai-wiki-notes
+│   │   │   ├── CISC.ai-wiki-notes
+│   │   │   ├── EPIC.ai-wiki-notes
+│   │   │   ├── IA-16.ai-wiki-notes
+│   │   │   ├── IA-32.ai-wiki-notes
+│   │   │   ├── IA-64.ai-wiki-notes
+│   │   │   ├── isa.ai-wiki-notes
+│   │   │   ├── Mnemonics.ai-wiki-notes
+│   │   │   ├── Operanden.ai-wiki-notes
+│   │   │   ├── powershell.ai-wiki-notes
+│   │   │   ├── python.ai-wiki-notes
+│   │   │   ├── RISC.ai-wiki-notes
+│   │   │   ├── VLIW.ai-wiki-notes
+│   │   │   └── zshell.ai-wiki-notes
+│   │   └── AI-Module
+│   │       ├── Cache
+│   │       ├── Logic
+│   │       │   ├── ai-runner.verhaltens-logic
+│   │       │   └── wiki.reader-logic
+│   │       ├── Logs
+│   │       ├── Micro
+│   │       ├── Nano
+│   │       ├── Needles
+│   │       └── Nodes
+│   ├── AIMS
+│   │   ├── AIMS.dna.core
+│   │   ├── Cache
+│   │   └── Core
+│   ├── logs
+│   ├── ollama
+│   │   ├── bin
+│   │   │   └── ollama
+│   │   ├── lib
+│   │   │   ├── cuda_v11
+│   │   │   │   ├── libcublasLt.so.11 -> libcublasLt.so.11.5.1.109
+│   │   │   │   ├── libcublasLt.so.11.5.1.109
+│   │   │   │   ├── libcublas.so.11 -> libcublas.so.11.5.1.109
+│   │   │   │   ├── libcublas.so.11.5.1.109
+│   │   │   │   ├── libcudart.so.11.0 -> libcudart.so.11.3.109
+│   │   │   │   ├── libcudart.so.11.3.109
+│   │   │   │   └── libggml-cuda.so
+│   │   │   ├── cuda_v12
+│   │   │   │   ├── libcublasLt.so.12 -> libcublasLt.so.12.8.4.1
+│   │   │   │   ├── libcublasLt.so.12.8.4.1
+│   │   │   │   ├── libcublas.so.12 -> libcublas.so.12.8.4.1
+│   │   │   │   ├── libcublas.so.12.8.4.1
+│   │   │   │   ├── libcudart.so.12 -> libcudart.so.12.8.90
+│   │   │   │   ├── libcudart.so.12.8.90
+│   │   │   │   └── libggml-cuda.so
+│   │   │   ├── libggml-base.so
+│   │   │   ├── libggml-cpu-alderlake.so
+│   │   │   ├── libggml-cpu-haswell.so
+│   │   │   ├── libggml-cpu-icelake.so
+│   │   │   ├── libggml-cpu-sandybridge.so
+│   │   │   ├── libggml-cpu-skylakex.so
+│   │   │   ├── libggml-cpu-sse42.so
+│   │   │   ├── libggml-cpu-x64.so
+│   │   │   ├── ollama
+│   │   │   └── syslibs
+│   │   │       ├── ld-linux-x86-64.so.2
+│   │   │       ├── libc.so.6
+│   │   │       ├── libdl.so.2
+│   │   │       ├── libgcc_s.so.1
+│   │   │       ├── libm.so.6
+│   │   │       ├── libpthread.so.0
+│   │   │       ├── libresolv.so.2
+│   │   │       ├── librt.so.1
+│   │   │       └── libstdc++.so.6
+│   │   ├── logs
+│   │   │   └── GitPlaceHolder.Struktur
+│   │   ├── models
+│   │   │   └── blobs
+│   │   └── systemd
+│   │       └── ollama.service
+│   └── sessions
+│       └── GitPlaceHolder.Struktur
+├── Arbeitsnotizen
+│   ├── muss später in den installer.notes
+│   ├── Nachladen-Wichtig-AI.wiki-notes
+│   ├── ###pylovara.install-nodes
+│   ├── systemctl.install-nodes
+│   └── verlinkungs.install-nodes
+├── Control
+│   ├── ai.conf
+│   ├── cache.conf
+│   ├── control.pv-conf
+│   ├── control.pv-conf.save
+│   ├── datatypes.conf
+│   ├── #dna.conf
+│   ├── download.conf
+│   ├── hardware.conf
+│   ├── logic.conf
+│   ├── micro.conf
+│   ├── nano.conf
+│   ├── needles.conf
+│   ├── nodes.conf
+│   ├── shell.conf
+│   └── wiki.conf
+├── Handbuch
+│   ├── ai.wiki-notes
+│   ├── control.wiki-notes
+│   ├── guide.wiki-notes
+│   ├── lexikon.wiki-notes
+│   ├── mcsdm.wiki-notes
+│   ├── module.wiki-notes
+│   ├── pylovara-ast.wiki-notes
+│   ├── shellconf.wiki-notes
+│   └── source-bridge-needles.wiki-notes
+├── Installer
+│   ├── pylovara.install-notes
+│   └── Shell.install-nodes
+├── Leere Datei
+├── Pylovara.license-notes
+├── README.wiki-notes
+├── System
+│   ├── Module
+│   │   ├── Compositor
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   ├── Cpu
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   ├── DLL
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   ├── Gpu
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   ├── Keyboard
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   ├── MCSDM
+│   │   │   ├── Cache
+│   │   │   ├── DEVTest
+│   │   │   │   └── MCSDM.test-run.dev
+│   │   │   ├── Logic
+│   │   │   │   ├── MCSDM.ghost.stream-handler-logic
+│   │   │   │   └── MCSDM.main-modul-core
+│   │   │   ├── Logs
+│   │   │   ├── Micro
+│   │   │   │   └── MCSDM.looptrap-micro
+│   │   │   ├── Nano
+│   │   │   │   ├── MCSDM.bin-header-nano
+│   │   │   │   └── MCSDM.blackhole-cleanup-nano
+│   │   │   ├── Needles
+│   │   │   │   └── MCSDM.validate-bin-needles
+│   │   │   └── Nodes
+│   │   │       ├── MCSDM.loop-nodes
+│   │   │       └── MCSDM.observer-nodes
+│   │   ├── Mouse
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   ├── OpenGl
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   ├── Pylovara
+│   │   │   ├── Cache
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Logic
+│   │   │   │   └── pylovara.ini-parser-logic
+│   │   │   ├── Logs
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Micro
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Nano
+│   │   │   │   └── GitPlaceHolder.Struktur
+│   │   │   ├── Needles
+│   │   │   │   ├── GitPlaceHolder.Struktur
+│   │   │   │   └── pylovara.source-bridge-neeldes
+│   │   │   └── Nodes
+│   │   │       └── GitPlaceHolder.Struktur
+│   │   └── Sound
+│   │       ├── Cache
+│   │       │   └── GitPlaceHolder.Struktur
+│   │       ├── Logic
+│   │       │   └── GitPlaceHolder.Struktur
+│   │       ├── Logs
+│   │       │   └── GitPlaceHolder.Struktur
+│   │       ├── Micro
+│   │       │   └── GitPlaceHolder.Struktur
+│   │       ├── Nano
+│   │       │   └── GitPlaceHolder.Struktur
+│   │       ├── Needles
+│   │       │   └── GitPlaceHolder.Struktur
+│   │       └── Nodes
+│   │           └── GitPlaceHolder.Struktur
+│   ├── Pictures
+│   │   └── Pylovara
+│   │       └── Pylovara.jpg
+│   └── Shell
+│       ├── AI
+│       ├── CMD
+│       │   ├── ai.dna-cmd
+│       │   ├── b.dna-cmd
+│       │   ├── cpu.dna-cmd
+│       │   ├── datatype.dna-cmd
+│       │   ├── Handbuch
+│       │   │   ├── 00-info.dna-notes
+│       │   │   ├── 01-shots.dna-notes
+│       │   │   └── 99-guide.dna-notes
+│       │   ├── hw.dna-cmd
+│       │   ├── internet.dna-cmd
+│       │   ├── lex.dna-cmd
+│       │   ├── lexi.dna-cmd
+│       │   ├── list.dna-cmd
+│       │   ├── load.dna-cmd
+│       │   ├── off.dna-cmd
+│       │   ├── on.dna-cmd
+│       │   ├── pci.dna-cmd
+│       │   ├── ports.dna-cmd
+│       │   ├── taski.dna-cmd
+│       │   └── usb.dna-cmd
+│       ├── DNA
+│       │   ├── dna.completion-dna
+│       │   ├── dna.shell-dna
+│       │   ├── dna.trigger-dna
+│       │   ├── helpme.cut-dna
+│       │   ├── helpmex.deluxe-dna
+│       │   ├── lex.help-dna
+│       │   ├── lexi.help-dna
+│       │   ├── p.tree-dna
+│       │   └── pylo.tool-dna
+│       ├── Layout
+│       │   ├── ansicolor.shell
+│       │   │   └── color.cmd-dna
+│       │   ├── pylovara+.shell-layout
+│       │   └── pylovara.shell-layout
+│       ├── Vara
+│       │   ├── awk.vara
+│       │   ├── basename.vara
+│       │   ├── bc.vara
+│       │   ├── cat.vara
+│       │   ├── curl.vara
+│       │   ├── cut.vara
+│       │   ├── df.vara
+│       │   ├── du.vara
+│       │   ├── echo.vara
+│       │   ├── fdisk.vara
+│       │   ├── find.vara
+│       │   ├── free.vara
+│       │   ├── git.vara
+│       │   ├── grep.vara
+│       │   ├── gzip.vara
+│       │   ├── head.vara
+│       │   ├── less.vara
+│       │   ├── lsblk.vara
+│       │   ├── lscpu.vara
+│       │   ├── lshw.vara
+│       │   ├── lspci.vara
+│       │   ├── lsusb.vara
+│       │   ├── ls.vara
+│       │   ├── nano.vara
+│       │   ├── ps.vara
+│       │   ├── sed.vara
+│       │   ├── sort.vara
+│       │   ├── tail.vara
+│       │   ├── tar.vara
+│       │   ├── top.vara
+│       │   ├── tree.vara
+│       │   ├── wc.vara
+│       │   └── xz.vara
+│       └── VaraLibs
+│           └── GitPlaceHolder.Struktur
+├── usr
+│   └── bin
+│       └── pylovara.wrapper-shell
+├── V6ArbeitsNotiz.wiki-notes
+└── watchdog.git-needles
+
+129 directories, 233 files
+
+│###############################################################################
+│# WikiLexikon : pylovara-ast.wiki-notes
+│# WikiSearch  : /~ helpme ast
+│# WikiSearch  : /~ helpme 01
+│# Tree        : /~ p Handbuch/
+│# Shell       : pylo Handbuch/- pylovara-ast.wiki-notes cat
+│###############################################################################

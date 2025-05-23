@@ -1,0 +1,12 @@
+#!/bin/bash
+# usb.dna-cmd
+# Zeigt USB-Geräteinformationen (via lsusb)
+
+DNA_EXEC() {
+    if ! command -v lsusb >/dev/null 2>&1; then
+        echo "❌ Fehler: 'lsusb' ist nicht installiert (z.B. 'pacman -S usbutils')" >&2
+        return 1
+    fi
+    echo "🧬 DNA usb: Zeige USB-Geräte (lsusb)"
+    lsusb | less
+}

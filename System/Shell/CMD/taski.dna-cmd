@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# taski.dna-cmd – Zeige Top 10 RAM-Prozesse + Kill-Funktion
+
+Vara_Dir="/Pylovara/System/Shell/Vara"
+
+DNA_EXEC() {
+    local action="$1"
+    local target="$2"
+
+    case "$action" in
+        kill)
+            if [[ -z "$target" ]]; then
+                echo "❌ Nutzung: dna taski kill <PID1> [PID2] ..."
+                return 1
+            fi
+
+            while [[ -n "$target" ]]; do
+                echo "🧬 Prozess $target wird beendet..."
+                sudo kill -9 "$target" && echo "✅ Prozess $target beendet." || echo "❌ Fehler: PID '$target' ungültig oder kein Zugriff."
+                shift
+                target="$1"
+            done
+            ;;
+
+        killall)
+            local proc="$target"
+            if [[ -z "$proc" ]]; then
+                echo "❌ Nutzung: dna taski killall <name>"
+                return 1
+            fi
+
+            echo "🧬 Töte alle '$proc'-Prozesse"
+            pids=$(ps aux | grep -i "$proc" | awk '{print $2}' | grep -v $$)
+
+            if [[ -z "$pids" ]]; then
+                echo "❌ Keine Prozesse gefunden für '$proc'"
+                return 2
+            fi
+
+            for pid in $pids; do
+                sudo kill -9 "$pid" && echo "✅ $pid beendet"
+            done
+            ;;
+
+        *)
+            echo "🧬 Prozessliste (Top 10 nach RAM)"
+            echo "----------------------------------------"
+            ps aux --sort=-%mem | head -n 11 | awk '{printf "%5s %6s %s\n", $2, $4, $11}'
+
+            echo ""
+            echo "🧬 Speicherauslastung"
+            echo "----------------------------------------"
+            free -h
+
+            echo ""
+            echo "💡 Tipps:"
+            echo "- dna taski kill <pid>        => Beendet einen spezifischen Prozess"
+            echo "- dna taski killall <name>   => Töte alle Prozesse dieses Namens"
+            ;;
+    esac
+}

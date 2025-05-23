@@ -1,0 +1,171 @@
+#############################################################
+@wiki-nr: 02   ############################################## #############################################################
+@wiki-nr: module   ##########################################
+#############################################################
+
+Logic dateien  bilden das Gehirn hinter jedem
+Pylovara-Vorgang.
+Sie enthalten reine Entscheidungslogik, keine Steuerung
+selbst.Sie sagen was passieren soll – nicht wie.
+
+Sie arbeiten NICHT als Regler, sondern geben nur die Logik
+weiter, die dann durch Nodes (Reglermodule) ausgeführt wird.
+Das gilt für Sound, Fenster, Rendering, Netzwerk – alles.
+
+# Die Logik steckt im Logic-Modul.
+# Die Steuerung läuft über Nodes.
+# Kann aber auch beides sein !!!
+
+# Wie funktioniert das?
+
+- Needles erkennen Geräte oder Bedingungen
+
+- Logic *.*-logic interpretieren das Ergebnis und können für
+  Nodes - Nano - Micro - Needles als Logic verwendet werden.
+
+- Micro *.*-micro granulierte einzel settings
+
+- Nano  *.*-nano  kann granulierte micro bündeln und grob
+  im gesamten steuern
+
+- Nodes *.*-nodes nehmen nano entgegegen und können durch
+  mehrere nano den bündel steuern oder einfach direkt , sie
+  setzen es um
+
+Beispiel:
+
+Needle:     „Nvidia-GPU erkannt“
+
+Logic:      „Nutze Vulkan statt OpenGL“
+
+Nodes:      `gpu.render-node` oder `gpu.settings-nano`
+            `gpu.finetuning-micro führt es aus in der
+             Synthesizer art
+
+# Aufgaben der *.*-logic :
+- Vermittlung zwischen Treiber-Needles und Ausführungs-Nodes
+- Definition von „Wenn A, dann B“-Beziehungen
+- Austauschbare Logikschalter für Systeme(Audio,GPU,Fenster,etc)
+- Entkoppelte Steuerlogik – mehrere Nodes können dieselbe Logic
+  referenzieren
+
+# Beispiele:
+
+sound.pipewire-logic
+→ sagt, welche Node bei PipeWire aktiv ist
+
+gpu.vulkan-logic
+→ sagt, ob Vulkan oder OpenGL aktiviert werden soll
+
+compositor.windowmanager-logic
+→ legt fest, welche Fenstersteuerung bei Hyprland greift
+
+keyboard.input-logic
+→ bestimmt das Mapping, setzt es aber nicht selbst
+
+# Typklassifikation
+
+|N| Typ       | Rolle
+|-|-----------|-----------------------------------------------
+|0|*.*-notes  |Infodateien, technische Hinweise
+|1|*.*-nodes  |Regler auf Makro-Ebene (zentrale Schalter)
+|2|*.*-nano   |Teilfunktion eines Reglers(z.B.Pegel,Balance)
+|3|*.*-micro  |Mikrosteuerung auf Detailstufe
+|4|*.*-logic  |Legt Steuerlogik fest–keine Regelung,Weitergabe
+|5|*.*-needles|Erkennt Hardware oder Gegebenheiten
+----------------------------
+| Beispiel                 |
+|--------------------------|
+| gpu.opengl-notes         |
+| sound.master-nodes       |
+| sound.bass-eq-nano       |
+| mic.pan-micro            |
+| gpu.vulkan-logic         |
+| gpu.nvidia-needles       |
+----------------------------
+🔒 Wichtig:
+Logic Module sind zentrale Komponenten – sie tun nichts direkt.
+Sie entscheiden, aber regeln nicht.
+
+Jede System Komponente wird als Modul benannt und unterhalb
+dessen Modul werden alle dateitypen eingeordnet,
+
+beispiel der namens gebung einer datei :
+
+Beispiel : 1.2-3 :
+
+1 - Modul      - Beispiel - Mouse
+2 - Aufgaben   - Beispiel - Einordnung
+3 - dateitypen - Beispiel - DateiType
+
+Endergebnis : mouse.input-needles
+
+#############################################################
+
+# Wir erstellen die Datei nodes.wiki-notes.txt mit dem vom
+# Nutzer beschriebenen Inhalt
+
+nodes_wiki_text = """
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁  nodes.wiki-notes – Knotenübersicht
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Systematische Einordnung und Vererbungslogik der Knoten im
+Pylovara-System:
+
+╭────────────────────────────────────╮
+│  Knoten-Hierarchie                 │
+╰────────────────────────────────────╯
+
+1  Mutter-Knoten
+➤ *.*-nodes
+➥ Eigenständiger Regel-Knoten.
+➥ Kann direkt Reglerfunktionen übernehmen.
+➥ Kann eigenständig auslösen ODER Tochter- & Kinder-Knoten
+  besitzen.
+➥ Steuert wie ein Master-Regler : Nur das, was er bekommt.
+
+2  Tochter-Knoten
+➤ *.*-nano
+➥ Kann einzelne Aspekte gezielter ansprechen als Mutter-Knoten.
+➥ Kann Micro-Nodes oder direkt Needles nach sich ziehen.
+➥ Optional, granularer.
+
+3  Kinder-Knoten
+➤ *.*-micro
+➥ Muss immer an eine *.*-needles angeschlossen werden.
+➥ Maximal granulare Weitergabe, aber nicht allein lauffähig.
+➥ Dient zur Detailregelung, kein Standalone-Regler.
+
+4  Logik-Knoten
+➤ *.*-logic
+➥ Beinhaltet die Logik(IF/ELSE, Entscheidungen,Filter).
+➥ Wird von allen Node-Typen zur Funktionsausführung benötigt.
+➥ Kein aktiver Regler, reine Entscheidungsinstanz.
+
+5  Treiber-Zecken
+➤ *.*-needles
+➥ Abschlussknoten bzw. Ziel der Ansteuerung.
+➥ Direkter Zugriff auf Treiber, Hardware, Prozesse.
+➥ Vergleichbar mit Anschlüssen oder Gefäßen: reines
+  "Empfangsorgan".
+
+╭────────────────────────────────────╮
+│  Reglerstruktur und Weitergabe     │
+╰────────────────────────────────────╯
+
+▸ Jede *.*-nodes kann als vollständiger Regler arbeiten oder
+  granular aufspalten.
+▸ Nano- und Micro-Nodes dienen der feiner geteilten Weitergabe.
+▸ Die Logik kommt immer aus einem *.*-logic Modul – keine Regel
+  ohne Logik.
+▸ Das Ziel jeder Node-Kette ist eine Needle → sie empfängt und
+  führt aus.
+
+#############################################################
+│# WikiLexikon : module.wiki-notes
+│# WikiSearch  : /~ helpme module
+│# WikiSearch  : /~ helpme 02
+│# Tree        : /~ p Handbuch/
+│# Shell       : pylo Handbuch/- module.wiki-notes cat
+#############################################################

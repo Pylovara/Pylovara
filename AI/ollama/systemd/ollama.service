@@ -1,0 +1,16 @@
+[Unit]
+Description=Ollama AI Service
+After=network.target
+
+[Service]
+ExecStart=/Pylovara/AI/ollama/bin/ollama serve
+WorkingDirectory=/Pylovara/AI/ollama
+Environment=OLLAMA_MODELS=/Pylovara/AI/ollama/models
+Environment=LD_LIBRARY_PATH=/Pylovara/AI/ollama/lib/ollama:$LD_LIBRARY_PATH
+Restart=on-failure
+
+# Her must you Use konto write 
+User=bandino
+
+[Install]
+WantedBy=multi-user.target

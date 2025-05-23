@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# dna.shell-dna – Benutzereingabe für DNA-CMDs
+
+if ! declare -f DNA > /dev/null; then
+    source "/Pylovara/System/Shell/DNA/dna.trigger-dna"
+fi
+
+if [[ -z "$1" ]]; then
+    echo "❌ Nutzung: dna <befehl>"
+    exit 1
+fi
+
+# Führe Befehl aus
+DNA "$@"

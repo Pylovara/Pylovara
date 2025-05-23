@@ -1,0 +1,30 @@
+#!/bin/bash
+# pylovara.shell-layout – Standart Pylovara Brand Layout
+
+Vara_Dir="/Pylovara/System/Shell/Vara --color=auto --exclude-"
+
+# Farbcodes definieren ANSI-Farbcodes im 256-Farben-Modus
+export PV_COLOR_RESET='\e[0m'
+export PV_COLOR_USER='\e[38;5;250m'    # User
+export PV_COLOR_HOST='\e[38;5;250m'    # Compputer
+export PV_COLOR_PV='\e[38;5;208m'      # Pylovara
+export PV_COLOR_TIME='\e[38;5;251m'    # Uhrzeit
+export PV_COLOR_PATH='\e[38;5;202m'    # Pfad
+export PV_COLOR_ROM='\e[38;5;254m'     # Datum
+export PV_COLOR_SYMBOL='\e[38;5;231m'  # Symbole
+
+# Funktion: Zeige Größe des aktuellen Verzeichnisses in G/M an
+function get_rom_usage() {
+    local rom=$($Vara_Dir/du.vara -sh . 2>/dev/null | $Vara_Dir/awk.vara '{print $1}')
+    echo "$rom"
+}
+
+# Dynamisches Prompt über PROMPT_COMMAND
+export PROMPT_COMMAND='
+    PV_CURRENT_DIR="${PWD/#$HOME/\~}"
+    PV_ROM=$(get_rom_usage)
+    export PS1="
+$PV_COLOR_SYMBOL ┌[$PV_COLOR_USER\\u$PV_COLOR_SYMBOL@$PV_COLOR_HOST\\h$PV_COLOR_SYMBOL][$PV_COLOR_TIME\\t$PV_COLOR_SYMBOL|$PV_COLOR_TIME\\d$PV_COLOR_SYMBOL|$PV_COLOR_ROM\$PV_ROM$PV_COLOR_SYMBOL]
+$PV_COLOR_SYMBOL │$PV_COLOR_PV ᴾʸˡᵒᵛᵃʳᵃ ᵛ⁰.⁵.¹
+$PV_COLOR_RESET $PV_COLOR_SYMBOL└[$PV_COLOR_PATH\$PV_CURRENT_DIR$PV_COLOR_SYMBOL]> \$ $PV_COLOR_RESET"
+'

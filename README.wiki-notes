@@ -1,0 +1,291 @@
+####################################################
+ Pylovara-System|Version 0.5.1|Rootbasierter Aufbau
+####################################################
+
+# Neu in v0.5.1
+
+callme
+
+to
+
+shell layouts (standart hilfe layout kann in der shell.conf geändert werden)
+
+update helpme lex
+
+Shell basierte Pylovara Dinge wurden verlegt :
+
+/Pylovara/System/Shell
+├── AI
+├── CMD <--- Zentralisierte Shell ausführungen
+│   ├── ai.dna-cmd
+│   ├── color.cmd-dna
+│   ├── cpu.dna-cmd
+│   ├── datatype.dna-cmd
+│   ├── go.dna-cmd
+│   ├── Handbuch <--- dna lex info | dna lexi 00-01
+│   │   ├── 00-info.dna-notes
+│   │   ├── 01-shots.dna-notes
+│   │   └── 99-guide.dna-notes
+│   ├── hw.dna-cmd
+│   ├── internet.dna-cmd
+│   ├── lex.dna-cmd
+│   ├── lexi.dna-cmd
+│   ├── list.dna-cmd
+│   ├── load.dna-cmd
+│   ├── off.dna-cmd
+│   ├── on.dna-cmd
+│   ├── pci.dna-cmd
+│   ├── ports.dna-cmd
+│   ├── taski.dna-cmd
+│   └── usb.dna-cmd
+├── DNA <--- Zentralisierte Shell Eingaben
+│   ├── dna.completion-dna
+│   ├── dna.shell-dna
+│   ├── dna.trigger-dna
+│   ├── helpme.cut-dna
+│   ├── helpmex.deluxe-dna
+│   ├── lex.help-dna
+│   ├── lexi.help-dna
+│   ├── p.tree-dna
+│   ├── pylo.tool-dna
+│   └── to.cd-dna
+├── Layout
+│   ├── pylovara+.shell-layout
+│   └── pylovara.shell-layout
+├── Vara <--- für zuckünftige unabhängigkeit
+│   ├── awk.vara
+│   ├── basename.vara
+│   ├── bc.vara
+│   ├── cat.vara
+│   ├── curl.vara
+│   ├── cut.vara
+│   ├── df.vara
+│   ├── du.vara
+│   ├── echo.vara
+│   ├── fdisk.vara
+│   ├── find.vara
+│   ├── free.vara
+│   ├── fzf.vara
+│   ├── git.vara
+│   ├── grep.vara
+│   ├── gzip.vara
+│   ├── head.vara
+│   ├── less.vara
+│   ├── lsblk.vara
+│   ├── lscpu.vara
+│   ├── lshw.vara
+│   ├── lspci.vara
+│   ├── lsusb.vara
+│   ├── ls.vara
+│   ├── nano.vara
+│   ├── nc.vara
+│   ├── ps.vara
+│   ├── sed.vara
+│   ├── sort.vara
+│   ├── tail.vara
+│   ├── tar.vara
+│   ├── top.vara
+│   ├── tree.vara
+│   ├── wc.vara
+│   └── xz.vara
+└── VaraLibs <--- libs übernahme vorbereitet
+    └── GitPlaceHolder.Struktur
+
+8 directories, 68 files
+
+
+############################# Was ist Pylovara? #####################################
+
+Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 
+das vollständig auf der Shell-Ebene arbeitet – 
+ohne GUI, ohne Umwege, ohne Bullshit. Es wird ausschließlich auf Root-Ebene 
+installiert (`/Pylovara/`) und meidet bewusst alle
+$HOME-Abhängigkeiten.
+
+Alle Module, Notes, Fehlerlogs, Konfigurationen und Helferlein leben 
+unterhalb einer einheitlichen Stammstruktur: Nodes - Nano - Micro - Needles
+
+Core Typen Für den Betrieb wiederum auf :
+-core -dna .dna-cmd .layouts die für den Shellbetrieb unerlässlich sind
+
+Controll Werzeuge sind :
+-conf daten die als Granulare Setting und Sourcing stelle dienen
+
+Herzstück :
+.pv-conf hier Spielen alle -conf Zusammen und werden direkt im Bash Kern Gesourced
+
+Pylovara komplett Übersicht :
+`.*-nodes`, `.*-notes`, `.*-nano`, `.*-micro`, `.*-logic`, `.*-needles`,
+`.core-dna`, `-core`, `.dna-cmd`, `.*-dna`, `.dna-notes`, `.vara`, `.varalibs`, `.layouts` und `.cache`,
+`-conf`, `.pv-conf`
+strukturell festgelegten DatenTypen.
+
+## Besonderheiten
+
+* **Systemnah**: Root-only, keine Userverzeichnisse.
+* **Kompatibel**: Arch, Debian, Alpine, sogar WSL oder Rescue-Shells.
+* **Erweiterbar**: Jeder Node-Typ kann ergänzt werden.
+* **Konfigurierbar**: Mit `.logic`-Dateien kann alles verknüpft werden.
+* **Sicherbar**: Volle Kontrolle durch zentralisierte Steuerung.
+
+
+## Zukunft & MCP-Bereich
+
+Achtung: Der Bereich `AI/` dient als Zentrales Herzstück für
+- MAIN AI
+- AIMS
+- AI Settings
+- AI Sourcing
+- AI Prompting
+- AI MCP Möglichkeiten
+
+und ist ein Modularer zusatz der Mit oder Ohne AI nutzbar ist !!!
+
+Aber Jetzt erstmal  zu Etwas Schnellem FastFood : 
+
+/Pylovara
+├── AI/ollama/                ← Deine KI, die denkt, sie ist am Steuer / libs sind manual zu ziehen - git ignore
+├── Control/                  ← Das Herz des Systems – Konfiguration als DNA
+├── Handbuch/                 ← Alles Wissen, direkt im Terminal
+└── System/
+    └── Module/
+        ├── Compositor        ← Fenstermanager? Nein. Wir entscheiden , ob du einen brauchst.
+        ├── Cpu               ← Frequenz? Temperatur? Wir sagen, was passiert.
+        ├── Gpu               ← Vulkan, OpenGL, Nvidia, AMD – wir steuern es allein.
+        ├── Keyboard/Mouse    ← Eingabegeräte? Wir wissen, wer du bist, bevor du klickst.
+        ├── Sound             ← PulseAudio, PipeWire? Wir wählen, was läuft.
+        ├── Pylovara          ← Kern zusätze für User spezielle dinge
+        └── OpenGl            ← Legacy oder notwendig? Wir entscheiden.
+
+
+Wer Brauch schon PDFs wenn es einfacher geht über integrierte Wiki-Notes 
+
+helpme 01      # Übersicht aller Module
+helpmex 04-02  # Wie du die KI austauschbar machst
+dna lex        # Übersicht aller Module
+dna lexi       # Zeile Ausschnitte
+p Handbuch     # Zeigt die gesamte Baumstruktur
+pylo Handbuch/- ai.wiki-notes cat
+
+
+Pylovara arbeitet nach dem Nodes-Logic-Needles Prinzip Oder wie ich es gerne nenne
+" Mutter Tochter Handwerker Prinzip " :
+
+*.*-Nodes
+Eltern Teil , steuert alles was in verbindung mit der Node steht und steuert Master
+
+*.*-Nano
+Tochter Teil , steuert alles was unterhalb der Nano steht
+
+*.*-Micro
+Baby Teil , Steuert alles was ab hier Granularer sein soll
+
+*.*-Neeldes
+Hanwerker , Dient als Treiber und Hardware schnittstelle
+
+----------------------
+
+*.*-Logic
+Wird nur mit der logik gefüttert was transport werden soll und wie
+
+*.*-Core (verfügbar ab 0.8.0)
+Führt alle verbindungen von Nodes samt unterbau zusammen
+
+*.*-core-magic (verfügbar ab 0.8.0)
+alle *.*-Core benötigten Frameworks u.a , einheitlich geregelt , anders wie bei Linux,Windows,MacOS,Android
+
+*.*-cache
+Schneller abrufbarer offner und lese wie schreibbarer zwischenspeicher
+
+*.wiki-notes
+Benutzer Handbuch über Elementare Funktionen
+
+*.dna-notes
+Benuter Handbuch für den dna Manager
+
+.dna-cmd
+Shell Befehle die Für .vara Pakete dienen und eigenständig sind , Combinierbare befehle usw
+
+*.*-dna
+Shell Hauptschlagader für Funktionen wie help / helpmex / dna lex / dna lexi / p / pylo
+
+-----------------------
+
+# Ausblick
+
+Pylovara ist kein Tool – es ist ein System.
+Ein Werkzeugkasten für Leute, die das Terminal verstehen und keine Lust auf 
+50 Klicks im GUI-Menü haben.
+Wer sich damit auskennt, kann sein Betriebssystem nicht nur steuern, 
+sondern **neu formen**.
+
+> "Was du nicht selbst in der Shell erschaffst, 
+    wird dir irgendwann vom GUI genommen."        – alter Admin-Spruch
+
+Hier hört der Spaß aber nicht auf sondern fängt erst an !
+Pylovara-System wird in der lage sein sich in ein Betriebsystem rein zu integrieren 
+und ihnen als Nutzer in späteren versionen zu erlauben,
+die oberfläche wie ein Skin zu wechseln .... Durch das Permanente von unten rein 
+bauen wird Pylovara-System die Installationswurzel des 
+Betriebsystems stück für stück übernehmen und ihnen den vollzugriff auf ein eigenes 
+Pylovara-System Umgebung geben .... 
+
+- Primäre ziele , Tilling , Workspaces , Zentral Terminal , Vollzugriff , Konfigurierbarkeit ... usw
+Stellen sie sich ein Windows vor das im kern noch Windows ist aber komplett anderes gesteuert wird oder
+ein ArchLinux das die Kontrolle an Pylovara abgibt...
+
+Ihnen geht die Registry auf den Keks ? ersetzen durch nodes nano combos und needles ....
+Der Sound ist ihnen zu ungenau steuerbar ? esretzen durch nodes nano micro and needles combos ...
+Die oberfläche passt nicht ? Ersetzen !
+Die GPu könnt mehr ? Finetuning 
+Sie wollen CPu Takten ? Easy 
+Mouse brauch mehr optionen oder andere logiken ? Machen ...
+Die einsatzgebiete sind unbegrenzt ....
+
+Neues Design und Funktionalität
+
+### 1. Verbesserte Ordnerstruktur
+Um die Modularität zu maximieren, wird die Ordnerstruktur an 
+Arch Linux-Prinzipien angelehnt, bleibt aber universell einsetzbar. 
+Der neue „Mutterordner“ 
+(`/Pylovara`) dient als zentraler Knotenpunkt und bietet unter "Module" 
+einen ast bau aller Datatypen die stück für stück vollumfänglich nutzbar 
+rein implementiert werden 
+
+- **Synthesizer-Logik**: Jeder Dateityp kann spezifische Aufgaben übernehmen 
+(z. B. Konfiguration, Monitoring, Dokumentation) und ist über die Shell ansteuerbar.
+
+
+- **Portabilität**: Funktioniert auf jedem Betriebssystem mit Bash-Unterstützung, 
+    inklusive minimaler Umgebungen wie BusyBox.
+- **Erweiterbarkeit**: Neue Module und Dateitypen können ohne Änderung der Kernstruktur 
+    hinzugefügt werden.
+- **Systemnähe**: Direkte Shell-Integration ohne Abhängigkeiten von Hochsprachen oder 
+    komplexen Frameworks.
+- **Flexibilität**: Anpassbar an verschiedene Desktop-Umgebungen (z. B. Kitty, Alacritty, GNOME, PowerShell)
+    und Compositors.
+
+Pylovara(-FileManager-System) soll ein unverzichtbares Allzweckwerkzeug für Systemadministratoren, 
+Entwickler und Enthusiasten werden. Es bietet eine intuitive, shellbasierte Schnittstelle, 
+die Betriebssysteme wie eine Kletterpflanze durchdringt – flexibel, robust und zukunftssicher.
+Durch die enge Integration mit Git und die Unterstützung für neue Dateitypen wird Pylovara 
+kontinuierlich wachsen und sich an die Bedürfnisse seiner Nutzer anpassen.
+
+Die Wurzel-Metapher
+
+Stellen Sie sich Pylovara als eine Kletterpflanze vor, deren Wurzeln tief in die Shell-Umgebung 
+eines Betriebssystems greifen. Die Früchte sind die Module, Nodes und Notes, die durch die zentrale 
+Steuerung – den Pylovara Directory Manager – wachsen und sich verzweigen. Diese Struktur ermöglicht:
+
+    Systemweite Interaktion. Pylovara agiert direkt über die Shell, ohne unnötige 
+    Abstraktionsschichten, und ist sogar in Rettungssystemen oder minimalen Umgebungen einsatzbereit. (Info *.vara | *.varalibs)
+
+    Modularität. Neue Module wie audio-nodes oder gpu-nodes können nahtlos hinzugefügt werden, 
+    um spezifische Hardware- oder Softwarekomponenten zu steuern.
+
+    Portabilität. Kompatibel mit jeder Bash-unterstützenden Umgebung – von Linux über BSD bis hin 
+    zu WSL oder macOS.
+
+Und jetzt mal unter uns Sysadminen – wenn Sie sich schon immer gefragt haben:
+Wollen Sie vielleicht ein Arch Linux mit sattem DLL-Support, gebaut auf einem macOS? Kein Thema, 
+genau davon sprechen wir mein Freund ..

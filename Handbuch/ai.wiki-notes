@@ -1,0 +1,83 @@
+#############################################################
+@wiki-nr: 04 ################################################
+#############################################################
+@wiki-nr: ai ################################################
+#############################################################
+
+=============================================================
+
+@wiki-zeilen-nr:-04-01
+=============================================================
+Quelle : ollama.service
+
+systemctl - Experimentiell !!!!
+
+# ON OFF Service ROOT
+systemctl stop/start/restart ollama.service
+
+# Not Root
+systemctl --user daemon-reload
+systemctl --user enable ollama.service
+systemctl --user start ollama.service
+
+# Logs debugging
+journalctl -u ollama.service
+
+# Zusatz :
+Wenn du ollama run qwen global nutzen willst, musst du entweder:
+
+    Den bin/ollama-Pfad temporär exportieren:
+
+export PATH="/Pylovara/AI/ollama/bin:$PATH"
+
+Oder eine Wrapper-Binary in /usr/local/bin ablegen:
+
+sudo ln -s /Pylovara/AI/ollama/bin/ollama /usr/local/bin/ollama
+
+Oder den Service als User-Service starten:
+
+systemctl --user start ollama
+
+=============================================================
+
+@wiki-zeilen-nr:-04-02
+=============================================================
+Quelle : ai-runner.verhaltens-logic
+Quelle : control.pv-conf
+
+Du Kannst Die AI Selbst Austauschen oder per :
+
+alias ki='/Pylovara/AI/AIControl/AI-Module/Logic/ai-runner.verhaltens-logic'
+alias ki2='/Pylovara/AI/ollama/bin/ollama run phi4-mini'
+
+Startet ... Mehr dazu demnächst
+
+============================================================
+
+@wiki-zeilen-nr:-04-03
+=============================================================
+
+#############################################################
+│# WikiLexikon : ai.wiki-notes
+│# WikiSearch  : /~ helpme ai
+│# WikiSearch  : /~ helpme 04
+│# Tree        : /~ p Handbuch/
+│# Shell       : pylo Handbuch/- ai.wiki-notes cat
+#############################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

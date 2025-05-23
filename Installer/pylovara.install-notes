@@ -1,0 +1,22 @@
+# Pylovara Installer Notes
+
+## 🛠 Installationsschritte
+
+1. Repo clonen:
+   git clone git@github.com:Pylovara/Pylovara.git /Pylovara
+
+2. Gehe ins Verzeichnis:
+   cd /Pylovara
+
+3. Setze wrapper-shell als Standard-Shell:
+   sudo cp /Pylovara/usr/bin/pylovara.wrapper-shell /usr/local/bin/
+   sudo chsh -s /usr/local/bin/pylovara.wrapper-shell $USER
+
+4. Rechte setzen (falls nötig):
+   sudo chmod +x /usr/local/bin/pylovara.wrapper-shell
+
+5. Optional: Trage Wrapper in /etc/shells ein:
+   echo "/usr/local/bin/pylovara.wrapper-shell" | sudo tee -a /etc/shells > /dev/null
+
+6. Terminal neu starten:
+   exec $SHELL

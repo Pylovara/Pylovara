@@ -1,0 +1,16 @@
+#!/bin/bash
+
+Vara_Dir="/Pylovara/System/Shell/Vara"
+
+DNA_EXEC() {
+    if [ -f "$Vara_Dir/lspci.vara" ]; then
+        echo "🧬 PCI-Info via Pylovara .vara"
+        ${Vara_Dir}/lspci.vara | ${Vara_Dir}/grep.vara -i vga
+    elif command -v lspci &> /dev/null; then
+        echo "🧬 PCI-Info via Systemtool"
+        lspci | grep -i vga
+    else
+        echo "❌ Fehler: lspci nicht gefunden"
+        echo "[Hinweis] Stelle sicher, dass 'lspci' installiert ist zur not zieh das paket runter und bennen es in *.vara um und lege es in /Pylovara/System/Shell/Vara rein wenn du Pylovara auf einem USB stick nutzt"
+    fi
+}

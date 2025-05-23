@@ -1,0 +1,16 @@
+#!/bin/bash
+# ports.dna-cmd
+# Listet offene Ports und zugehörige Programme
+
+DNA_EXEC() {
+    if command -v ss >/dev/null 2>&1; then
+        echo "🧬 DNA ports: Zeige belegte Ports (ss -tuln)"
+        ss -tuln | less
+    elif command -v netstat >/dev/null 2>&1; then
+        echo "🧬 DNA ports: Zeige belegte Ports (netstat -tulnpe)"
+        sudo netstat -tulnpe | less
+    else
+        echo "❌ Fehler: Weder 'ss' noch 'netstat' ist installiert (z.B. 'pacman -S net-tools' oder 'iproute2')" >&2
+        return 1
+    fi
+}

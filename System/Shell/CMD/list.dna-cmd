@@ -1,0 +1,19 @@
+
+dna() {
+    local cmd="$1"
+    shift
+
+    if [[ "$cmd" == "list" ]]; then
+        DNA_EXEC "$@"
+        return 0
+    fi
+
+    local dnafile="/Pylovara/System/Shell/CMD/${cmd}.dna-cmd"
+    if [[ -f "$dnafile" ]]; then
+        source "$dnafile"
+        DNA_EXEC "$@"
+    else
+        echo "❌ DNA-Kommando '$cmd' not found "
+    fi
+}
+

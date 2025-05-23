@@ -1,0 +1,4 @@
+#!/bin/bash
+DNA_EXEC() {
+    ki2 --prompt "Was kann ich tun? $*"
+}

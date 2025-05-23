@@ -1,0 +1,79 @@
+#!/bin/bash
+#
+# pylovara.source-bridge-needle.sh
+# Modul für Installer oder AI: Fügt auto source Eintrag für control.pv-conf ein
+# in das passende Shell-Profil.
+#
+# Benutzung: ./pylovara.source-bridge-needles [--check]
+#   --check: prüft nur, ob Eintrag bereits existiert
+
+CONFIG_FILE="/Pylovara/Control/control.pv-conf"
+BASH_PROFILE="/etc/profile"
+ZSH_PROFILE="/etc/zsh/zprofile"
+ZSH_RC="$HOME/.zshrc"
+
+SOURCE_LINE_BASH="if [ -f $CONFIG_FILE ]; then source $CONFIG_FILE; fi"
+SOURCE_LINE_ZSH="[[ -f $CONFIG_FILE ]] && source $CONFIG_FILE"
+
+# Prüfen, ob Eintrag schon in Datei existiert
+contains_source() {
+  local file="$1"
+  grep -Fxq "$2" "$file" 2>/dev/null
+}
+
+# Eintrag in Datei anhängen
+append_source() {
+  local file="$1"
+  local line="$2"
+  echo "$line" | sudo tee -a "$file" >/dev/null
+}
+
+# Hauptlogik
+main() {
+  local shell_name
+
+  # Erkennung der aktiven Shell via $SHELL
+  shell_name=$(basename "$SHELL")
+
+  # Für Check-Modus nur prüfen
+  if [[ "$1" == "--check" ]]; then
+    if [[ "$shell_name" == "zsh" ]]; then
+      contains_source "$ZSH_PROFILE" "$SOURCE_LINE_ZSH" && echo "ZSH Profile source line vorhanden"
+      contains_source "$ZSH_RC" "$SOURCE_LINE_ZSH" && echo "ZSH RC source line vorhanden"
+    else
+      contains_source "$BASH_PROFILE" "$SOURCE_LINE_BASH" && echo "Bash Profile source line vorhanden"
+    fi
+    return 0
+  fi
+
+  # Für ZSH
+  if [[ "$shell_name" == "zsh" ]]; then
+    echo "Erkannte Shell: zsh - füge source Einträge hinzu..."
+    if ! contains_source "$ZSH_PROFILE" "$SOURCE_LINE_ZSH"; then
+      echo "Eintrag in $ZSH_PROFILE fehlt, füge hinzu."
+      append_source "$ZSH_PROFILE" "$SOURCE_LINE_ZSH"
+    else
+      echo "Eintrag in $ZSH_PROFILE ist schon vorhanden."
+    fi
+    if ! contains_source "$ZSH_RC" "$SOURCE_LINE_ZSH"; then
+      echo "Eintrag in $ZSH_RC fehlt, füge hinzu."
+      append_source "$ZSH_RC" "$SOURCE_LINE_ZSH"
+    else
+      echo "Eintrag in $ZSH_RC ist schon vorhanden."
+    fi
+
+  # Für Bash und andere
+  else
+    echo "Erkannte Shell: $shell_name - füge source Eintrag in $BASH_PROFILE hinzu..."
+    if ! contains_source "$BASH_PROFILE" "$SOURCE_LINE_BASH"; then
+      echo "Eintrag in $BASH_PROFILE fehlt, füge hinzu."
+      append_source "$BASH_PROFILE" "$SOURCE_LINE_BASH"
+    else
+      echo "Eintrag in $BASH_PROFILE ist schon vorhanden."
+    fi
+  fi
+
+  echo "Fertig."
+}
+
+main "$@"

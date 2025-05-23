@@ -1,0 +1,62 @@
+
+1- Aliase
+2- Funktionen
+3- PATH-Erweiterungen
+4- Farben, Prompt, Highlighting
+5- Ersatz für Standardtools (z. B. `grep`, `find`, `pkill`, etc.)
+
+# Farbcodes
+export PV_COLOR_RESET='\e[0m'
+export PV_COLOR_CMD='\e[38;5;82m'  # Grün
+export PV_COLOR_ERROR='\e[38;5;196m'  # Rot
+export PV_COLOR_PATH='\e[38;5;214m'  # Gelb
+
+# PATH erweitern
+export PATH="$PV_DIR/System/Shell/Vara:$PATH"
+
+# Prompt setzen
+export PS1="\${PV_COLOR_PATH}[\u@\h \W]\\$\${PV_COLOR_RESET} "
+
+# Eigenes Grep mit Highlighting
+function grep() {
+    if [ -f "$PV_DIR/System/Shell/Vara/grep.pylovara" ]; then
+        "$PV_DIR/System/Shell/Vara/grep.pylovara" "$@"
+    else
+        command grep "$@"
+    fi
+}
+
+# Eigenes Find mit Filteroption
+function find() {
+    if [ -f "$PV_DIR/System/Shell/Vara/find.pylovara" ]; then
+        "$PV_DIR/System/Shell/Vara/find.pylovara" "$@"
+    else
+        command find "$@"
+    fi
+    }
+
+# Eigenes Tree mit modularem Output
+function tree() {
+    if [ -f "$PV_DIR/System/Shell/Vara/tree.pylovara" ]; then
+        "$PV_DIR/System/Shell/Vara/tree.pylovara" "$@"
+    else
+        command tree "$@"
+    fi
+}
+
+# Teste ob Befehl existiert und markiere ihn farbig
+function pv_check_cmd() {
+    if command -v "$1" >/dev/null 2>&1; then
+        echo -ne "$PV_COLOR_CMD"
+    else
+        echo -ne "$PV_COLOR_ERROR"
+    fi
+}
+
+
+# So Bestimmt Pylovara :
+
+> - Welche Befehle laufen
+> - Wie sie laufen
+> - Woher sie kommen
+> - Ob sie gefiltert, geändert oder gesteuert werden

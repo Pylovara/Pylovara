@@ -1,0 +1,66 @@
+#!/bin/bash
+# ==============================================================================
+# pylovara.helpwiki-nodes  [Pylovara 3.3]
+# ==============================================================================
+# Ort   : Pylovara/System/Module/Pylovara/Nodes/pylovara.helpwiki-nodes
+# Zweck : Zentrales Hilfesystem mit AST-ID und *.wiki-notes Anbindung
+# Status: STABIL - AST kompatibel - KEIN Lexikon nötig - Unabhängig
+# ==============================================================================
+
+Vara_Dir="/Pylovara/System/Shell/Vara"
+BASE_DIR="/Pylovara/Handbuch"
+INPUT="$1"
+
+extract_wiki_nr() {
+    $Vara_Dir/grep.vara -i '@wiki-nr:' "$1" | $Vara_Dir/head.vara -n 1 | $Vara_Dir/sed.vara -E 's/.*@wiki-nr:[[:space:]]*([^#[:space:]]+).*/\1/I'
+}
+
+if [[ -z "$INPUT" || "$INPUT" == "00" ]]; then
+    echo "[INFO] Übersicht aller verfügbaren *.wiki-notes mit Nummern:"
+    $Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.wiki-notes" | while read -r file; do
+        nr=$(extract_wiki_nr "$file")
+        name=$($Vara_Dir/basename.vara "$file")
+        if [[ -n "$nr" ]]; then
+            printf "%-10s -> %s\n" "$nr" "$name"
+        fi
+    done
+    echo "[INFO] Vorgang abgeschlossen. [ENTER] zum Beenden."
+    read
+    return
+fi
+
+# === Fall 1: Nummernsuche ===
+if [[ "$INPUT" =~ ^[0-9a-zA-Z_-]+$ ]]; then
+    FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.wiki-notes" | while read -r file; do
+        nr=$(extract_wiki_nr "$file")
+        [[ "$nr" == "$INPUT" ]] && echo "$file" && break
+    done)
+
+    if [[ -n "$FOUND_PATH" ]]; then
+        echo "[INFO] Datei mit @wiki-nr: $INPUT gefunden → $FOUND_PATH"
+        echo "----------------------------------------"
+        $Vara_Dir/cat.vara "$FOUND_PATH"
+    else
+        echo "[!] Keine .wiki-notes-Datei mit Nummer '$INPUT' gefunden."
+    fi
+    echo "[ENTER] zum Beenden."
+    read
+    return
+fi
+
+# === Fall 2: Dateinamen-Suche ===
+SEARCH_NAME=$(echo "$INPUT" | $Vara_Dir/awk.vara '{print tolower($0)}')
+FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -iname "${SEARCH_NAME}.wiki-notes" | $Vara_Dir/head.vara -n 1)
+
+if [[ -n "$FOUND_PATH" ]]; then
+    echo "[INFO] Datei '${SEARCH_NAME}.wiki-notes' gefunden → $FOUND_PATH"
+    echo "----------------------------------------"
+    $Vara_Dir/cat.vara "$FOUND_PATH"
+else
+    echo "[!] Keine passende .wiki-notes-Datei gefunden für: $SEARCH_NAME"
+fi
+
+echo "[ENTER] zum Beenden."
+read
+return
+

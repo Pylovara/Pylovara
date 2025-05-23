@@ -1,0 +1,31 @@
+#!/bin/bash
+# pylovara.p-nodes – Systemweiter Ordner-Finder mit tree-Ausgabe (minimal)
+
+Vara_Dir="/Pylovara/System/Shell/Vara"
+
+if [[ -z "$1" ]]; then
+    echo "❌ Nutzung: p <Ordnername oder Pfad>"
+    return 1 2>/dev/null || exit 1
+fi
+
+eval input="$1"
+input="${input%/}"
+
+# Wenn input absoluter Pfad und existiert → direkt nutzen
+if [[ "$input" == /* && -d "$input" ]]; then
+    found_path="$input"
+else
+    # Nur Name → systemweit suchen (ersten Treffer)
+    found_path=$($Vara_Dir/find.vara / -type d -name "$($Vara_Dir/basename.vara "$input")" 2>/dev/null | $Vara_Dir/head.vara -n 1)
+fi
+
+if [[ -z "$found_path" ]]; then
+    echo "❌ Ordner '$1' nicht gefunden."
+    return 2 2>/dev/null || exit 2
+fi
+
+echo "🔍 Ordner gefunden: $found_path"
+$Vara_Dir/tree.vara "$found_path" 2>/dev/null || echo "📂 (kein tree installiert oder lesbar)"
+
+return 0 2>/dev/null || exit 0
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# dna.trigger-dna – Der zentrale DNA-Dispatcher (einmalig)
+
+DNA() {
+    local cmd="$1"
+    shift
+
+    # Pfad zum .dna-cmd-Modul
+    local dnafile="/Pylovara/System/Shell/CMD/${cmd}.dna-cmd"
+
+    if [[ -f "$dnafile" ]]; then
+        source "$dnafile"
+        DNA_EXEC "$@"
+    else
+        echo "❌ Befehl '$cmd' unbekannt."
+        echo "[AI] fragen? Alternativ -> dna info dna lex"
+        ki2 --prompt "Welche möglichen Befehle könnten dem Nutzer vorschweben, wenn er '$cmd' eingegeben hat?"
+    fi
+}
+
+export -f DNA

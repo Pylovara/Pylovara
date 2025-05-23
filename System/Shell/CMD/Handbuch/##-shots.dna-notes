@@ -1,0 +1,66 @@
+@dna-zeilen-nr:-00-00
+
+Pylovara v0.5.1 news
+
+callme <bin>
+to - to / to ~
+to <Ordner>
+
+@dna-zeilen-nr:-00-01
+
+cpu = Full Info
+hw = Full Info
+pci = Full Info
+ports = Full Info
+usb = Full Info
+internet = Full
+
+@dna-zeilen-nr:-00-02
+
+on <data> = Ausführbar machen (im Odrner)
+off <data> = Deaktivieren (im Ordnerr)
+
+@dna-zeilen-nr:-00-03
+
+load <url> = datei ziehen (wget) | Zieht Pakete
+
+@dna-zeilen-nr:-00-04
+
+to /    root          | jump
+to ~    home          | jump
+to -    toggle        | letz directory
+
+to    → Home/         | ~
+to    → Download      | ~/Downloads
+to    → Dokumente/    | ~/Dokumente
+to    → Bilder/       | ~/Bilder
+to    → Schreibtisch/ | ~/Schreibtisch
+to    → .config/      | ~/.config
+to    → .cache/       | ~/.cache
+to    → yay/          | ~/.yay
+to    → paru/         | ~/.paru
+to    → flatpak/      | /var/lib/flatpak
+to    → snap/         | /snap
+to    → /usr
+to    → /var
+to    → /etc/         | /etc/pacman.d
+
+dna lex = übersicht      dna lexi <00-00> = KurzInfo
+
+@dna-zeilen-nr:-00-05
+
+taski = Schnell Prozess übersicht Top 10
+taski kill <pid> <pid> = schnell kill
+taski killall <prozess-name> = Killt alles damit
+
+dna lex = übersicht      dna lexi <nr> = KurzInfo
+
+@dna-zeilen-nr:-00-06
+
+callme <ausfürbare programme>
+callme Firefox
+callme Steam
+
+bringt dich zum direkten pfad für schnelles finden
+
+@dna-zeilen-nr:-00-07

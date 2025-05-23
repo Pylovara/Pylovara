@@ -1,0 +1,19 @@
+#!/bin/bash
+
+export PV_DIR="/Pylovara"
+
+# Lade zentrale Config
+if [ -f "$PV_DIR/Control/control.pv-conf" ]; then
+    source "$PV_DIR/Control/control.pv-conf"
+    
+    # Exportiere alle Funktionen
+    for func in helpme helpmex p pylo dna; do
+        if declare -f "$func" > /dev/null; then
+            export -f "$func"
+        fi
+    done
+fi
+
+# Starte Bash mit allen Definitionen
+exec /bin/bash "$@"
+

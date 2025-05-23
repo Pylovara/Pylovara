@@ -1,0 +1,4 @@
+sudo cp /Pylovara/AI/ollama/systemd/ollama.service /etc/systemd/system/
+sudo systemctl daemon-reexec
+sudo systemctl enable ollama --now
+sudo systemctl start ollama

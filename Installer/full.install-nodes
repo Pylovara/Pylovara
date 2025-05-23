@@ -20,7 +20,7 @@ mkdir -p /usr/local/bin/
 mkdir -p "$PV_DIR/usr/bin/"
 
 # 4. Kopiere den Wrapper nach /usr/local/bin/
-cp "$PV_DIR/usr/bin/pylovara.wrapper-shell" /usr/local/bin/ || {
+cp "/Pylovara/usr/bin/pylovara.wrapper-shell" /usr/local/bin/ || {
     echo "❌ Fehler beim Kopieren des Wrappers"
     exit 1
 }
@@ -29,8 +29,11 @@ chmod +x /usr/local/bin/pylovara.wrapper-shell || {
     echo "❌ Fehler beim Setzen der Rechte für den Wrapper"
     exit 1
 }
+# 5. Setze wrapper-shell als Standard-Shell(ZurSicherheit):
+   sudo cp /Pylovara/usr/bin/pylovara.wrapper-shell /usr/local/bin/
+   sudo chsh -s /usr/local/bin/pylovara.wrapper-shell $USER
 
-# 5. Trage Wrapper in /etc/shells ein (falls noch nicht vorhanden)
+# 6. Trage Wrapper in /etc/shells ein (falls noch nicht vorhanden)
 WRAPPER_SHELL="/usr/local/bin/pylovara.wrapper-shell"
 
 if ! grep -Fxq "$WRAPPER_SHELL" /etc/shells; then
@@ -40,31 +43,36 @@ else
     echo "[!] Wrapper bereits in /etc/shells registriert"
 fi
 
-# 6. Ändere die Standardshell für den aktuellen Nutzer
+# 7. Ändere die Standardshell für den aktuellen Nutzer
 CURRENT_USER=$(whoami)
 chsh -s /usr/local/bin/pylovara.wrapper-shell "$CURRENT_USER" || {
     echo "❌ Fehler beim Setzen der neuen Shell für $CURRENT_USER"
     exit 1
 }
 
-# 7. Optional: Füge source hinzu für Bash/Zsh-Nutzer
+# 8. Optional: Füge source hinzu für Bash/Zsh-Nutzer
 if [ -f /bin/bash ]; then
     BASHRC="$HOME/.bashrc"
-    if ! grep -q "source \$PV_DIR/Control/control.pv-conf" "$BASHRC"; then
+    if ! grep -q "source /Pylovara/Control/control.pv-conf" "$BASHRC"; then
         echo "[+] Füge source zu .bashrc hinzu"
-        echo "source \$PV_DIR/Control/control.pv-conf" >> "$BASHRC"
+        echo "source /Pylovara/Control/control.pv-conf" >> "$BASHRC"
     fi
 fi
 
 if [ -f /bin/zsh ]; then
     ZSHRC="$HOME/.zshrc"
-    if ! grep -q "source \$PV_DIR/Control/control.pv-conf" "$ZSHRC"; then
+    if ! grep -q "source /Pylovara/Control/control.pv-conf" "$ZSHRC"; then
         echo "[+] Füge source zu .zshrc hinzu"
-        echo "source \$PV_DIR/Control/control.pv-conf" >> "$ZSHRC"
+        echo "source /Pylovara/Control/control.pv-conf" >> "$ZSHRC"
     fi
 fi
 
-# 8. Fertig! Hinweis für Nutzer
+# 9. Rechte setzen (falls nötig):
+   sudo chmod +x /usr/local/bin/pylovara.wrapper-shell
+
+
+
+# 10. Fertig! Hinweis für Nutzer
 echo ""
 echo "✅ Installation abgeschlossen!"
 echo ""
@@ -74,5 +82,8 @@ echo ""
 echo "💡 ODER einfach neu anmelden – danach steht alles bereit."
 echo ""
 echo "🔍 Funktionen wie p, dna, helpme, ki sind ab jetzt global verfügbar."
-
+echo ""
+echo "Bei Fehler einfach /Pylovara/Control/control.pv-conf sourcen und bashrc oder zshrc oder weiter unten , dann läufts "
+echo ""
+echo "Bei Fehler Gern Issue senden auf Github"
 exit 0

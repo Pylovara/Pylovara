@@ -25,7 +25,7 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 ### alias Sektion
 
 alias ki='/Pylovara/AI/ollama/bin/ollama run phi4-mini'
-alias ollama='/Pylovara/AI/ollama/bin/ollama'
+alias ollama='/Pylovara/AI/ollama/bin/ollama Start ollama'
 #alias ki2='/Pylovara/AI/AIControl/AI-Module/Logic/ai-runner.verhaltens-logic'
 #alias send='/Pylovara/System/Shell/DNA/./pm.chat-dna'
 #alias chat='/Pylovara/System/Comm/./start.chat-nodes'

@@ -20,7 +20,7 @@ mkdir -p /usr/local/bin/
 mkdir -p "$PV_DIR/usr/bin/"
 
 # 4. Kopiere den Wrapper nach /usr/local/bin/
-cp "/Pylovara/usr/bin/pylovara.wrapper-shell" /usr/local/bin/ || {
+cp "$PV_DIR/usr/bin/pylovara.wrapper-shell" /usr/local/bin/ || {
     echo "❌ Fehler beim Kopieren des Wrappers"
     exit 1
 }
@@ -30,7 +30,7 @@ chmod +x /usr/local/bin/pylovara.wrapper-shell || {
     exit 1
 }
 # 5. Setze wrapper-shell als Standard-Shell(ZurSicherheit):
-   sudo cp /Pylovara/usr/bin/pylovara.wrapper-shell /usr/local/bin/
+   sudo cp $PV_DIR/usr/bin/pylovara.wrapper-shell /usr/local/bin/
    sudo chsh -s /usr/local/bin/pylovara.wrapper-shell $USER
 
 # 6. Trage Wrapper in /etc/shells ein (falls noch nicht vorhanden)

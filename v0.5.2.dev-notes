@@ -1,0 +1,24 @@
+
+todo liste 
+
+- heraus bekommen welches ai modell am besten auf low ram zu prompten 
+  ist und vollzugriff auf den pylovara ast bekommen kann.
+  Ai soll später Nodes - Nanos - Micros - Logic & Needless selbst 
+  definieren können und logisch mit module ast erstellen können.
+  Der User soll nur noch sagen müssen :
+  ,,brauch cpu zugriff" oder ,,brauch GPU zugriff" usw und die 
+  AI macht den Rest ...... 
+  daher brauch die Ai vollzugriff auf System und Pylovara Ast , mit
+  rücksprache und zustimmungs funktion inklusive zeigen was sie tut.
+
+- unordnung beseitigen , für v0.5.2 soll alles was noch unaufgeräumt
+  ist , sauber in die grundlogik fusionieren ....
+
+dann push 
+
+Nextstept v0.5.3 :
+
+- auto updater vorbereiten um direkte github updates zu gewehrleisten
+  um dem RR endgültig zum laufen zu bringen .....
+
+  dann push

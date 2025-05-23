@@ -1,89 +1,64 @@
 #!/bin/bash
 
-# installer.pylovara – Pylovara Installer Script
-# Führe aus: ./installer.pylovara
-# Wichtig: Muss mit root-Rechten laufen
+# 💡 Pylovara Root-Installer
+# führe aus mit: sudo ./installer.pylovara
 
-echo "🚀 Starte Pylovara Installation..."
+set -e
+PV_DIR="/Pylovara"
+REPO_URL="https://github.com/Pylovara/Pylovara.git"
+WRAPPER_NAME="pylovara.wrapper-shell"
+WRAPPER_PATH="/usr/local/bin/$WRAPPER_NAME"
 
-# 1. Prüfe Root-Rechte
-if [ "$EUID" -ne 0 ]; then 
-  echo "❌ Fehler: Dieses Skript benötigt Root-Rechte. Verwende 'sudo' oder melde dich als Root an."
+echo "📦 Starte Pylovara Setup..."
+
+# 1. Root-Prüfung
+if [ "$EUID" -ne 0 ]; then
+  echo "❌ Dieses Skript muss als root laufen (sudo)"
   exit 1
 fi
 
-# 2. Setze PV_DIR
-export PV_DIR="/Pylovara"
+# 2. Ordner vorbereiten
+if [ -d "$PV_DIR" ]; then
+  echo "🔁 Entferne alte Installation..."
+  rm -rf "$PV_DIR"
+fi
 
-# 3. Erstelle notwendige Ordner (falls noch nicht vorhanden)
-mkdir -p /usr/local/bin/
-mkdir -p "$PV_DIR/usr/bin/"
+echo "⬇️ Klone Repository..."
+git clone "$REPO_URL" "$PV_DIR"
 
-# 4. Kopiere den Wrapper nach /usr/local/bin/
-cp "$PV_DIR/usr/bin/pylovara.wrapper-shell" /usr/local/bin/ || {
-    echo "❌ Fehler beim Kopieren des Wrappers"
-    exit 1
-}
-
-chmod +x /usr/local/bin/pylovara.wrapper-shell || {
-    echo "❌ Fehler beim Setzen der Rechte für den Wrapper"
-    exit 1
-}
-# 5. Setze wrapper-shell als Standard-Shell(ZurSicherheit):
-   sudo cp $PV_DIR/usr/bin/pylovara.wrapper-shell /usr/local/bin/
-   sudo chsh -s /usr/local/bin/pylovara.wrapper-shell $USER
-
-# 6. Trage Wrapper in /etc/shells ein (falls noch nicht vorhanden)
-WRAPPER_SHELL="/usr/local/bin/pylovara.wrapper-shell"
-
-if ! grep -Fxq "$WRAPPER_SHELL" /etc/shells; then
-    echo "[+] Füge Wrapper zur /etc/shells hinzu"
-    echo "$WRAPPER_SHELL" >> /etc/shells
+# 3. Wrapper setzen
+if [ -f "$PV_DIR/usr/bin/$WRAPPER_NAME" ]; then
+  cp "$PV_DIR/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
+  chmod +x "$WRAPPER_PATH"
 else
-    echo "[!] Wrapper bereits in /etc/shells registriert"
+  echo "❌ Wrapper nicht gefunden: $PV_DIR/usr/bin/$WRAPPER_NAME"
+  exit 1
 fi
 
-# 7. Ändere die Standardshell für den aktuellen Nutzer
-CURRENT_USER=$(whoami)
-chsh -s /usr/local/bin/pylovara.wrapper-shell "$CURRENT_USER" || {
-    echo "❌ Fehler beim Setzen der neuen Shell für $CURRENT_USER"
-    exit 1
+# 4. In /etc/shells eintragen
+if ! grep -Fxq "$WRAPPER_PATH" /etc/shells; then
+  echo "$WRAPPER_PATH" >> /etc/shells
+fi
+
+# 5. Standard-Shell setzen für echten Nutzer
+REAL_USER=${SUDO_USER:-$(logname)}
+chsh -s "$WRAPPER_PATH" "$REAL_USER" || {
+  echo "⚠️ Fehler beim chsh – bitte manuell ausführen: chsh -s $WRAPPER_PATH"
 }
 
-# 8. Optional: Füge source hinzu für Bash/Zsh-Nutzer
-if [ -f /bin/bash ]; then
-    BASHRC="$HOME/.bashrc"
-    if ! grep -q "source /Pylovara/Control/control.pv-conf" "$BASHRC"; then
-        echo "[+] Füge source zu .bashrc hinzu"
-        echo "source /Pylovara/Control/control.pv-conf" >> "$BASHRC"
-    fi
+# 6. Optional .bashrc/.zshrc ergänzen
+USER_HOME=$(eval echo "~$REAL_USER")
+if [ -f "$USER_HOME/.bashrc" ]; then
+  grep -q "source $PV_DIR/Control/control.pv-conf" "$USER_HOME/.bashrc" || \
+    echo "source $PV_DIR/Control/control.pv-conf" >> "$USER_HOME/.bashrc"
 fi
 
-if [ -f /bin/zsh ]; then
-    ZSHRC="$HOME/.zshrc"
-    if ! grep -q "source /Pylovara/Control/control.pv-conf" "$ZSHRC"; then
-        echo "[+] Füge source zu .zshrc hinzu"
-        echo "source /Pylovara/Control/control.pv-conf" >> "$ZSHRC"
-    fi
+if [ -f "$USER_HOME/.zshrc" ]; then
+  grep -q "source $PV_DIR/Control/control.pv-conf" "$USER_HOME/.zshrc" || \
+    echo "source $PV_DIR/Control/control.pv-conf" >> "$USER_HOME/.zshrc"
 fi
 
-# 9. Rechte setzen (falls nötig):
-   sudo chmod +x /usr/local/bin/pylovara.wrapper-shell
-
-
-
-# 10. Fertig! Hinweis für Nutzer
 echo ""
-echo "✅ Installation abgeschlossen!"
-echo ""
-echo "🔄 Terminal neu starten:"
-echo "exec /usr/local/bin/pylovara.wrapper-shell"
-echo ""
-echo "💡 ODER einfach neu anmelden – danach steht alles bereit."
-echo ""
-echo "🔍 Funktionen wie p, dna, helpme, ki sind ab jetzt global verfügbar."
-echo ""
-echo "Bei Fehler einfach /Pylovara/Control/control.pv-conf sourcen und bashrc oder zshrc oder weiter unten , dann läufts "
-echo ""
-echo "Bei Fehler Gern Issue senden auf Github"
-exit 0
+echo "✅ Pylovara erfolgreich installiert."
+echo "🔄 Bitte neu anmelden oder Shell neu starten:"
+echo "exec $WRAPPER_PATH"

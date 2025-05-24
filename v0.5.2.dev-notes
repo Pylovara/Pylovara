@@ -1,6 +1,17 @@
 
 todo liste 
 
+- wechsel von phi4-mini auf tinyllama:1.1b
+  zwingend nötig um ein modell fest zu integrieren das finetuning mit pylovara und später
+  systemweiten zugriff zulässt , inklusive selbst definierten internet zugang um die wissenbank
+  lokal schlank aber über online datenbanken zu erweitern ....
+  ziel : lokale minimalistische AI die komplett auf das internet zugreifen kann und somit , alle
+  nachteile durch die größe per direkt abrufe ausgleichen kann .... 
+  somit kann über hooks auch mehr erreicht werden als ein riesen sprachmodell ohne zugriff zu 
+  integrieren und man kann alles AllInOne mitliefern ... (Maximale eigenständigkeit)
+  tinyllama wird somit zum Pylovara Butler der alles macht .....
+
+
 - heraus bekommen welches ai modell am besten auf low ram zu prompten 
   ist und vollzugriff auf den pylovara ast bekommen kann.
   Ai soll später Nodes - Nanos - Micros - Logic & Needless selbst 

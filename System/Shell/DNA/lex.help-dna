@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================================================
-# dna.help-dna  [Pylovara 0.3]
+# dna.help-dna  [Pylovara 0.4]
 # ==============================================================================
 # Ort   : /Pylovara/System/Shell/DNA/dna.help-dna
 # Zweck : Zentrales Hilfesystem - dna lex 00
@@ -9,7 +9,7 @@
 # ==============================================================================
 
 Vara_Dir="/Pylovara/System/Shell/Vara"
-BASE_DIR="/Pylovara/System/Shell/CMD/Handbuch"
+BASE_DIR="/Pylovara/Handbuch/DnaNotes"
 INPUT="$1"
 
 extract_dna_nr() {

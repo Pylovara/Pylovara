@@ -1,0 +1,195 @@
+#############################################################
+@wiki-nr: 03 ################################################
+#############################################################
+@wiki-nr: guide #############################################
+#############################################################
+
+=============================================================
+
+@wiki-zeilen-nr:-01-01
+=============================================================
+Quelle : helpme.cut-dna
+
+Es wird über parser definiert
+
+helpme <nr> 
+helpme <kürzel>
+
+Zweck :
+Zentrales Hilfesystem für `helpme`-Befehle.
+wiki-nr werden innerhalb der wiki-notes geparset
+kürzel werden ebenfalls innerhalb geparset
+
+Funktionen :
+- Sucht nach wiki-nr:  per ID oder Name
+- Benutzt lexikon.wiki-notes als Verzeichnis
+- Gibt direkte alles aus als Hilfe
+
+=============================================================
+
+@wiki-zeilen-nr:-01-02
+=============================================================
+Quelle : helpmex.deluxe-dna
+
+Zeigt nur die gewollte Zeile an
+
+helpmex 01-01
+helpmex 01-02
+
+Zweck :
+Zentrale Zeilen HilfSystem für `helpmex`-befehle
+wiki-zeile-nr werden raus gefiltert angezeigt
+
+Funktionen :
+- Unterstützt eigabe exakt zweistellig
+- Gibt nur den passenden Abschnitt aus
+- Anzeige inkl. Info Dateipfad + Fundstelle
+
+=============================================================
+
+@wiki-zeilen-nr:-01-03
+=============================================================
+Quelle : p.tree-dna
+
+Zeigt Systemweit Ordner/Unterordner im tree an
+
+p Download/
+p etc/
+p Handbuch/
+
+Zeck :
+Schnelles Zielgesetzte Ansicht
+
+Funktion :
+P fungiert als systemweiter Finder. Der Aufruf erfolgt
+denkbar einfach: P gefolgt von einem Ordnernamen.
+Das Ergebnis ist eine direkte, strukturierte Ausgabe des
+Inhalts in Baumform – ohne zusätzliche Optionen, ohne Umwege.
+Ziel ist es, schnellen, klaren Zugriff auf jede
+Verzeichnisstruktur zu ermöglichen – von der Wurzel bis zur
+letzten Datei. P arbeitet dabei universell. Jeder Pfad, der
+existiert, wird erkannt und als Tree-Ansicht dargestellt.
+Keine weitere Eingabe nötig. Keine Shell-Kommandos – nur
+Übersicht.
+
+=============================================================
+
+@wiki-zeilen-nr:-01-04
+=============================================================
+Quelle : pylo.tool-dna
+
+Eigenes Werzeug System Branding PylovaraStyle
+
+pylo Download/- Data.type Shell
+pylo /Pylovara/Control/- control.pc-conf cat
+
+Zweck :
+Umgebungs unabhängige eingabe
+
+Funktion :
+PYLO ergänzt diese Funktionalität. Während P zeigt, was da ist,
+kümmert sich PYLO um das, was getan werden soll. PYLO verwaltet
+Zugriffe, startet Operationen und bietet gezielte Interaktionen
+mit Dateien und Modulen. Die typische Eingabe folgt einer klaren
+Struktur:
+PYLO gefolgt von einem Modulnamen (Ordner), danach eine
+Zielressource (Datei), und schließlich der eigentliche Shell
+-Befehl. Auf diese Weise kann direkt und ohne Umwege eine Datei
+in einem bestimmten Modul bearbeitet, kopiert, gelöscht oder
+weiterverarbeitet werden.
+
+Das Besondere: PYLO wirkt nicht wie ein Fremdkörper im System.
+Es greift die Denkweise klassischer Shell-Tools auf, führt sie
+jedoch in strukturierte Bahnen. Die gewohnte Shell bleibt
+erhalten – cp, rm, chmod, nano, alles bleibt nutzbar. Nur mit
+klarerem Kontext und eingebettet in eine steuerbare, modulare
+Umgebung.
+
+Zusammen bilden P und PYLO die sogenannte Cell-Logik: eine
+steuerbare, jederzeit abrufbare Basisfunktion, die den Einstieg
+in das System erleichtert, statt ihn zu verkomplizieren. Diese
+Struktur legt den Grundstein für alle weiteren Systeme innerhalb
+von Pylovara – von den Mikro-Nodes, die Systemparameter steuern,
+bis hin zu den .wiki-notes, die Wissen direkt im Terminal
+verfügbar machen.
+
+Die Vision ist klar: Weniger Tipparbeit, weniger Ballast –
+dafür mehr Klarheit, Geschwindigkeit und Kontrolle.
+
+=============================================================
+
+@wiki-zeilen-nr:-01-05
+=============================================================
+Quelle : dna.trigger-dna
+
+System vereifachte eingabe per DNA
+
+Interaktive Hilfe
+dna lex info
+dna lexi 00-01
+dna 00
+
+beispiel eingaben
+dna cpu
+dna gpu
+dna on
+dna off
+dna taski
+
+Zweck :
+- Trennung von Shell-Kommandos nach DNA-Muster
+- Saubere Erweiterbarkeit durch `.cmd-dna` Files
+- Vollständige Kontrolle über Systemabfragen, Hardwarechecks,
+  Off/On-Schalter etc.
+- Voll kompatibel mit Bash-Completion
+
+Funktion :
+Die DNA-Shell ist das zentrale Steuerorgan innerhalb des
+Pylovara-Systems für systemnahe Befehle im Shell-Stil. Sie
+agiert als Dispatcher, Parser und Schnittstelle zu
+spezialisierten `.dna-cmd` Modulen.
+
+Beispiele:
+1. Aufruf mit `dna <befehl>`
+2. Das Kommando `<befehl>` wird als Datei `<befehl>.dna-cmd`
+im `DnaCmd/`-Verzeichnis gesucht.
+3. Existiert sie, wird sie `source`d und die darin enthaltene
+Funktion `DNA_EXEC` ausgeführt.
+4. Existiert sie nicht → Fehlerausgabe.
+
+=============================================================
+
+@wiki-zeilen-nr:-01-06
+=============================================================
+Quelle : navigator.conf
+
+ to , ist eine cd funktion mit verbesserten settings
+
+ to -  > Directory Toggle
+ to ~  > Home
+ to /  > Root Level
+ to home/ to Download/
+ to /Pylovara/ usw
+
+ Quasi Wie CD nur Modigiziert mit Ansicht Ohne Tree
+
+=============================================================
+
+@wiki-zeilen-nr:-01-07
+=============================================================
+Quelle : callme.conf
+
+ suche ausführbare dateien
+
+callme firefox
+callme Steam
+callme Chrome
+callme <Program>
+
+#############################################################
+│# WikiLexikon : guide.wiki-notes
+│# WikiSearch  : /~ helpme guide
+│# WikiSearch  : /~ helpme 03
+│# Tree        : /~ p Handbuch/
+│# Shell       : pylo Handbuch/- guide.wiki-notes cat
+#############################################################

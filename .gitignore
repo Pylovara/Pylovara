@@ -1,29 +1,3 @@
-# Ignoriere nur die großen Modelldaten, behalte aber die Ordnerstruktur
-/AI/ollama/models/blobs/
-/AI/ollama/models/manifests/
-
-# Optional: Log-Dateien
-/logs/
-/AI/ollama/logs/
-
-# Großdateien (falls vorhanden)
-*.so
-*.so.2
-*.so.6
-*.so.1
-*.so.0
-*.so.11
-*.so.11.0
-*.so.12
-*.so.12.8.90
-*.so.12.8.4.1
-*.so.11.3.109
-*.so.11.5.1.109
-
-# Ignoriere Arbeits Bereiche
-/AIMS/
-/Arbeitsnotizen/
-
 #Arbeitsbereich MCSDM
 MCSDM.test-run.dev
 MCSDM.ghost.stream-handler-logic
@@ -37,9 +11,10 @@ MCSDM.observer-nodes
 
 
 # Ignoriert Sonnstiges
-V6ArbeitsNotiz.wiki-notes
 watchdog.git-needles
-
+v0.5.1.final-notes
+v0.5.2.dev-notes
+v0.5.3.dev-notes
 # Installer
 # pylovara.install-notes
 # Shell-install-nodes

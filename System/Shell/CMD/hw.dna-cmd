@@ -1,25 +1,7 @@
-#!/bin/bash
 # hw.dna-cmd
 # Zeigt vollständige Hardware-Informationen (via lshw)
 
-Vara_Dir="/Pylovara/System/Shell/Vara"
 
 DNA_EXEC() {
-    if ! command -v ${Vara_Dir}/lshw.vara >/dev/null 2>&1; then
-        echo "❌ Fehler: 'lshw' ist nicht installiert (z.B. 'pacman -S lshw')" >&2
-        return 1
-    fi
-    if ! command -v ${Vara_Dir}less.vara >/dev/null 2>&1; then
-        echo "❌ Fehler: 'less' ist nicht installiert, verwende 'more' als Fallback" >&2
-        pager="more"
-    else
-        pager="less"
-    fi
-    echo "🧬 DNA hw: Zeige Hardware-Infos (lshw)"
-    if sudo -n ${Vara_Dir}lshw.vara >/dev/null 2>&1; then
-        sudo lshw | $pager
-    else
-        echo "❌ Fehler: Root-Rechte erforderlich für 'hw' dna hw sudo oder sudo lshw" >&2
-        return 2
-    fi
+/Pylovara/System/Shell/Vara/lshw.vara
 }

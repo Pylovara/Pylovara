@@ -1,14 +1,13 @@
-#!/bin/bash
 # ports.dna-cmd
 # Listet offene Ports und zugehörige Programme
 
 DNA_EXEC() {
     if command -v ss >/dev/null 2>&1; then
         echo "🧬 DNA ports: Zeige belegte Ports (ss -tuln)"
-        ss -tuln | less
+        ss -tuln | /Pylovara/System/Shell/Vara/less.vara
     elif command -v netstat >/dev/null 2>&1; then
         echo "🧬 DNA ports: Zeige belegte Ports (netstat -tulnpe)"
-        sudo netstat -tulnpe | less
+        sudo netstat -tulnpe | /Pylovara/System/Shell/Vara/less.vara
     else
         echo "❌ Fehler: Weder 'ss' noch 'netstat' ist installiert (z.B. 'pacman -S net-tools' oder 'iproute2')" >&2
         return 1

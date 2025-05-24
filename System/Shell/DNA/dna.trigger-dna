@@ -1,5 +1,7 @@
 #!/bin/bash
-
+export PV_COLOR_RESET='\e[0m'
+export PV_COLOR_CMD_SUCCESS='\e[38;5;82m'  # Grün
+export PV_COLOR_CMD_ERROR='\e[38;5;196m'   # Rot
 # dna.trigger-dna – Der zentrale DNA-Dispatcher (einmalig)
 
 DNA() {

@@ -1,0 +1,213 @@
+#######################################################################
+@wiki-nr: 80  #########################################################
+#######################################################################
+@modul: MCSDM #########################################################
+#######################################################################
+
+ArbeitsNotiz :
+
+ort: /Pylovara/System/Module/MCSDM
+beschreibung: Kontrollmodul zur Analyse, Validierung und Abwehr 
+von Binärdatenströmen im laufenden Betrieb.
+
+## Aufbau
+
+Struktur unterhalb von /MCSDM:
+- Logic/
+  - MCSDM.main-modul-core
+  - MCSDM.ghost.stream-handler-logic
+- Nano/
+  - MCSDM.bin-header-nano
+- Needles/
+  - MCSDM.validate-bin-needles
+- Nodes/
+  - MCSDM.loop-nodes
+- Logs/ (→ automatisch durch ghost.handler beschickt)
+
+---
+
+## Hauptmodul: `MCSDM.main-modul-core`
+
+```bash
+#!/bin/bash
+# /Pylovara/logic/MCSDM.core
+
+INPUT="$1"
+HEADER_OK=0
+
+source ../nano/bin-header.nano
+source ../needles/validate-bin.needle
+
+function mcsdm_init() {
+  echo "[MCSDM] Starte Datenflussprüfung..."
+  parse_header "$INPUT"
+  validate_header "$HEADER_CONTENT" && HEADER_OK=1
+
+  if [[ $HEADER_OK -eq 1 ]]; then
+    echo "[MCSDM] Header gültig. Übergabe an loop-node..."
+    bash ../nodes/MCSDM.loop-node "$INPUT"
+  else
+    echo "[MCSDM] Fehlerhafter Header. Weitergabe an Ghost-Stream-Handler..."
+    bash ../Logic/MCSDM.ghost.stream-handler-logic "$INPUT"
+  fi
+}
+mcsdm_init
+````
+
+---
+
+## Submodule:
+
+### ➤ `MCSDM.bin-header-nano`
+
+Extrahiert den Header (erster Teil bis `:`):
+
+```bash
+function parse_header() {
+  INPUT_DATA="$1"
+  HEADER_CONTENT=$(echo "$INPUT_DATA" | cut -d':' -f1)
+}
+```
+
+---
+
+### ➤ `MCSDM.validate-bin-needles`
+
+Validiert, ob Header mit `MCSDM:` beginnt:
+
+```bash
+function validate_header() {
+  local header="$1"
+  if [[ "$header" == MCSDM:* ]]; then
+    return 0
+  else
+    return 1
+  fi
+}
+```
+
+---
+
+### ➤ `MCSDM.loop-nodes`
+
+Loop-Modul bei gültigem Header:
+
+```bash
+echo "[LOOP-NODE] Binärstrom akzeptiert:"
+echo ">> $1"
+echo "[LOOP-NODE] Schleife abgeschlossen."
+```
+
+---
+
+### ➤ `MCSDM.ghost.stream-handler-logic`
+
+Neutralisiert unerkannte Pakete, loggt und schützt Systemlast:
+
+```bash
+GHOST_INPUT="$1"
+GHOST_HASH=$(echo "$GHOST_INPUT" | md5sum | cut -d' ' -f1)
+LOGFILE="../../Logs/ghost-stream-${GHOST_HASH}.log"
+
+echo "[GHOST-HANDLER] Unerkannter Binärstrom empfangen." | tee -a "$LOGFILE"
+echo ">> $GHOST_INPUT" | tee -a "$LOGFILE"
+echo "[GHOST-HANDLER] Paket neutralisiert & protokolliert."
+```
+
+---
+
+## Hinweise:
+
+* Erweiterbar um: Deep-Analyse, Blackhole-Cleanup, LoopTrap.
+* Protokollierung direkt unter `Logs/`
+* Ghost-Streams eindeutig per Hash identifizierbar
+
+#@status: aktiv
+#@next: Deep-Analyse-Modul? oder LoopTrap?
+
+```
+
+######################################################################
+
+Perfekt vorbereitet – wir ergänzen jetzt den `observer-node` Eintrag in den `mcsdm.wiki-notes`, damit die Logik und Rolle des Moduls vollständig dokumentiert ist.
+
+---
+
+### 📘 `/Pylovara/Handbuch/mcsdm.wiki-notes`
+
+#### 🧠 Modulübersicht: `MCSDM`
+
+Modulziel: Sicherer Umgang mit **Binärdatenströmen**, inklusive *Validierung*, *Beobachtung*, *Fehlerroutinen* und *Ressourcenschutz* durch gezielte Entlastung.
+
+---
+
+#### 🔁 Ablauf (MCSDM-Datenstrom-Logik)
+
+```
+        [INPUT]
+           ↓
+     ┌────────────┐
+     │ observer   │
+     └────────────┘
+           ↓
+     ┌────────────┐
+     │ parse_header │
+     └────────────┘
+           ↓
+     ┌────────────┐
+     │ validate_header │
+     └────────────┘
+        ↙          ↘
+  [gültig]       [ungültig]
+     ↓               ↓
+loop-nodes     looptrap-micro
+```
+
+---
+
+#### 📌 `observer-node`
+
+**Datei:** `/Pylovara/Nodes/MCSDM.observer-nodes`
+**Zweck:**
+
+* *Protokolliert* jeden eingehenden Binärstrom
+* Erstellt Hash-basierte Log-Dateien in `../Logs/`
+* Erkennt rudimentäre Marker wie:
+
+  * `MCSDM:`-Header
+  * Pfade (für potentielle Hardware-/Pfadzuordnungen)
+* Setzt Anker für spätere Annotation / Analyse
+
+**Besonderheit:**
+
+* Wird **immer** aufgerufen – vor Header-Prüfung.
+* Arbeitet passiv – verändert keine Datenflüsse.
+* Ermöglicht vollständige *Nachvollziehbarkeit* & *Fehleranalyse*.
+
+---
+
+#### 🛡️ `looptrap-micro`
+
+**Datei:** `/Pylovara/Micro/MCSDM.looptrap-micro`
+**Zweck:**
+
+* Isoliert Binärströme mit **fehlerhaftem oder fehlendem Header**
+* Speichert den Inhalt als `looptrap-cache-*.bin`
+* Dient als Schutzmaßnahme gegen:
+
+  * volatile Streams
+  * Speicherüberlastung
+  * mögliche Attack-Patterns
+
+---
+
+#### 🗑️ `blackhole-cleanup.nano`
+
+**Zweck:**
+
+* Zum gezielten Verwerfen irrelevanter Datenströme
+* Wird **nicht automatisch** ausgeführt, sondern gezielt aufgerufen
+
+---
+
+

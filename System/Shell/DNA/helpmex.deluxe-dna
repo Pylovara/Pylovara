@@ -8,7 +8,7 @@
 # ==============================================================================
 
 Vara_Dir="/Pylovara/System/Shell/Vara"
-HANDBUCH_DIR="/Pylovara/Handbuch"
+HANDBUCH_DIR="/Pylovara/Handbuch/WikiNotes"
 SUCHID="$1"
 
 if [[ -z "$SUCHID" ]]; then
@@ -30,7 +30,7 @@ while IFS= read -r file; do
         if ($0 ~ pattern) {
             show = 1;
             print "[helpmex] Abschnitt gefunden in: " FILENAME;
-            print "----------------------------------------";
+            print "-----------------------------------------------";
             print $0;
             next;
         }
@@ -39,7 +39,7 @@ while IFS= read -r file; do
             # Wenn neuer Marker kommt, Abschnitt beenden
             if ($0 ~ /^@wiki-zeilen-nr:/ && $0 !~ pattern) {
                 show = 0;
-                print "----------------------------------------";
+                print "-----------------------------------------------";
                 exit;
             }
             print $0;

@@ -1,7 +1,6 @@
 ### Control PV CONF - PYLOVARA CONFIG MAIN
 ### Alle Conf Sourcen - Komplette Kontrolle
 ### Quelle ~> /Pylovara/Control/
-
 ##############################################################################
 ### BASIC CONTROL
 
@@ -17,24 +16,13 @@ export PV_DIR="/Pylovara/"
 ##############################################################################
 ### Alle internen Bin-Pfade anhängen
 
-export PATH=/Pylovara/AI/ollama:$PATH
-export PATH="$PV_DIR/AI/ollama/bin:$PATH"
+
 
 ### (weitere folgen je nach Bedarf)
 ##############################################################################
 ### alias Sektion
 
-alias ki='/Pylovara/AI/ollama/bin/ollama run phi4-mini'
-alias ollama='/Pylovara/AI/ollama/bin/ollama start echo"Öffne ein zweites terminal beim ersten mal und gib ki enter ein und lass es erstmal laden"'
-#alias ki2='/Pylovara/AI/AIControl/AI-Module/Logic/ai-runner.verhaltens-logic'
-#alias send='/Pylovara/System/Shell/DNA/./pm.chat-dna'
-#alias chat='/Pylovara/System/Comm/./start.chat-nodes'
-
-##############################################################################
-### DatenTypen !!
-
-source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
-parse_conf "$MASTER_DIR/datatypes.conf"
+alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 
 ##############################################################################
 ### Master-Input - control.pv-conf
@@ -42,6 +30,10 @@ parse_conf "$MASTER_DIR/datatypes.conf"
 source "$MASTER_DIR/shell.conf"
 source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
+
+### DatenTypen !!
+source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
+parse_conf "$MASTER_DIR/datatypes.conf"
 
 ##############################################################################
 ### SYSTEMALIASE Sektion
@@ -64,9 +56,6 @@ if [ -f "$Shell_DIR/dna.trigger-dna" ]; then
     source "$Shell_DIR/dna.trigger-dna"
 fi
 
-# Setze 'dna' als Befehl
-alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
-
 ### Kommentar:  dna Kaputt | pylo bugt | p - helpme - helpmex funktioniert
 ##############################################################################
 ### Debug Sektion
@@ -77,11 +66,6 @@ alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 # cat /tmp/pv-control-debug.log
 
 ##############################################################################
-#alias go1='cd /Pylovara/AI'
-#alias go2='cd /Pylovara/System'
-#alias go3='cd /Pylovara/Control'
-
-##############################################################################
 ### aktivierungs Rückmeldung
 
-# echo "[SystemControl] Alle Basic Module Einsatzbereit"
+echo "[SystemControl] Aktiv"

@@ -1,0 +1,30 @@
+####################################################################################################
+@wiki-nr: 05 00 ####################################################################################
+@wiki_nr: control ##################################################################################
+####################################################################################################
+Info: Innerhalb des SystemControls werden alle daten gebündelt um Module nutzbar zu machen ,
+      sie werden Granuliert für jeden dateitype angelegt und allgemein über das MAIN DIR 
+      control.pv-conf gesourced und damit auch nutzbar weitergeleitet gemacht für bashrc oder zshrc
+####################################################################################################
+
+/Pylovara/Control/ TREE
+│###################################################################################################
+├── control.pv-conf # Zentrale Masterdatei–wird von Shell ge'source'
+├── nodes.conf      # Config für nodes-Einzeln Aktivierbar-Welches Netzwerk von Datentypen sie nutzt
+├── nano.conf       # Feingranulare Steuerung-Einzeln Aktivierbar-Netzwerk von Datentypen
+├── micro.conf      # Konfig für Templates-Einzeln Aktivierbar-Netzwerk von Datentypen
+├── needles.conf    # Treibermodul-Steuerung -Einzeln Aktivierbar-Netzwerk von Datentypen
+├── dna.conf        # Systemidentität & interne IDs-Spezielle Aufgaben
+├── download.conf   # Systemweite Paketlogik / Aliasbasierte Installersteuerung
+├── cache.conf      # Cache-Verhalten, Layer-Steuerung, Priorität
+├── shell.conf      # Shell Aliase
+├── hardware.conf   # Welche Treiber benutzt werden und welche Nodes Kettenbindung
+└── AI.conf         # AI Logic - Settings - Was sie ansteuert
+
+│###############################################################################
+│# WikiLexikon : control.wiki-notes
+│# WikiSearch  : /~ helpme control
+│# WikiSearch  : /~ helpme 05
+│# Tree        : /~ p Handbuch/
+│# Shell       : pylo Handbuch/- control.wiki-notes cat
+│###############################################################################

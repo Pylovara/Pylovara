@@ -8,7 +8,7 @@
 # ==============================================================================
 
 Vara_Dir="/Pylovara/System/Shell/Vara"
-HANDBUCH_DIR="/Pylovara/System/Shell/CMD/Handbuch/"
+HANDBUCH_DIR="/Pylovara/Handbuch/DnaNotes"
 SUCHID="$1"
 
 if [[ -z "$SUCHID" ]]; then

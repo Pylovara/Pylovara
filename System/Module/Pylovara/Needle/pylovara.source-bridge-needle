@@ -4,8 +4,10 @@
 # Modul für Installer oder AI: Fügt auto source Eintrag für control.pv-conf ein
 # in das passende Shell-Profil.
 #
-# Benutzung: ./pylovara.source-bridge-needles [--check]
+# Benutzung: ./pylovara.source-bridge-needle [--check]
 #   --check: prüft nur, ob Eintrag bereits existiert
+
+Vara_Dir="/Pylovara/System/Shell/Vara"
 
 CONFIG_FILE="/Pylovara/Control/control.pv-conf"
 BASH_PROFILE="/etc/profile"
@@ -18,7 +20,7 @@ SOURCE_LINE_ZSH="[[ -f $CONFIG_FILE ]] && source $CONFIG_FILE"
 # Prüfen, ob Eintrag schon in Datei existiert
 contains_source() {
   local file="$1"
-  grep -Fxq "$2" "$file" 2>/dev/null
+  $Vara_Dir/grep.vara -Fxq "$2" "$file" 2>/dev/null
 }
 
 # Eintrag in Datei anhängen
@@ -33,7 +35,7 @@ main() {
   local shell_name
 
   # Erkennung der aktiven Shell via $SHELL
-  shell_name=$(basename "$SHELL")
+  shell_name=$($Vara_Dir/basename.vara "$SHELL")
 
   # Für Check-Modus nur prüfen
   if [[ "$1" == "--check" ]]; then

@@ -1,18 +1,22 @@
 #####################################################################################
             Ⓟylovara-System|Version 0.5.2|Rootbasierter Aufbau
 #####################################################################################
-                                     Install
+                                    Install
 #####################################################################################
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Installer/
 sudo ./full.install-nodes
 #####################################################################################
-###                                  Neu                                          ###
+                                  Update Manual
+#####################################################################################
+/Pylovara/./pylovara.updater-needle
+#####################################################################################
+###                                Neu                                            ###
 ###                                                                               ###
-###                  Komplett Umbau - Entfernen von Ollama                        ###
+###                Komplett Umbau - Entfernen von Ollama                          ###
 ###                                                                               ###
-###             dafür =   ggml - mamba.cpp - whisper.cpp  unter Module            ###
-###                                                                               ###
+###          dafür =   ggml - mamba.cpp - whisper.cpp  unter Module               ###
+###                       - MCS Grund Logik -                                     ###
 ############################# Was ist Pylovara? #####################################
 
 Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 

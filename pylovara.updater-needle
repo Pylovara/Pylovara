@@ -17,7 +17,7 @@ echo "[$(date)] Updater gestartet..."
 # Aktuelles Verzeichnis wechseln
 cd "$MAIN_DIR" || { echo "Konnte nicht in $MAIN_DIR wechseln"; exit 1; }
 
-# Alle Dateien außer updater.sh löschen
+# Alle Dateien außer updater löschen
 echo "Lösche alte Dateien..."
 find . -mindepth 1 -not -name 'pylovara.updater.needle' -exec rm -rf {} + 2>/dev/null
 

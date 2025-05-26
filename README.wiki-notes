@@ -12,12 +12,17 @@ sudo ./full.install-core
 cd Pylovara/Installer/
 sudo ./pylovara.updater-needle
 #####################################################################################
-###                                Neu                                            ###
-###                                                                               ###
-###                Komplett Umbau - Entfernen von Ollama                          ###
-###                                                                               ###
-###          dafür =   ggml - mamba.cpp - whisper.cpp  unter Module               ###
-###                       - MCS Grund Logik -                                     ###
+###                                Neu
+###
+###                Komplett Umbau . entfernung von :
+###                      Ollama - ggml - whisper.cpp
+###            --------------------------------------------------
+###         Grund : Ungeordneter Bullshit, kommt so nicht ins system
+###                 den datenmüll können sich andere in ihre "workflows" bauen
+###
+###                   - MCS Grund Logik Definition Einbau -
+###                          angefangen mit der mouse
+###
 ############################# Was ist Pylovara? #####################################
 
 Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 
@@ -134,10 +139,10 @@ Pylovara-Typ	Rolle (Familie)	Dateitypen / Formate (Beispiel)	Plattform
 .cache, .tmp, .log, .bak, .lock, .swap, .db-wal, .pickle	Alle
 
 *.*-Neelde	Hardwarebindung
-.sys, .kext, .ko, .efi, .dll, .so, .dylib, .drv	Win, Linux, Mac
+.sys, .kext, .ko, .efi, .dll, .so, .dylib, .drv, .binärys Win, Linux, Mac
 
 <*von>.<*zu>-Logic	Verbindung / Transport
-.logic, .flow, .route, .map, .graph, .yaml, .dsl, .hook	Alle
+.logic, .flow, .route, .map, .graph, .yaml, .dsl, .hook	, Alle
 
 
                      Das Ist Alles was die Welt Brauch

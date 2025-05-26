@@ -1,5 +1,0 @@
-## @mcs: F1
-FUNC: mov eax, 0x3B
-HEX: B8 3B 00 00 00
-BIN: 10111000 00111011 00000000 00000000 00000000
-DESC: Load scan code for F1 (0x3B) into eax

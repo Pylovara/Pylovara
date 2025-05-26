@@ -1,5 +1,0 @@
-## @mcs: -
-FUNC: sub eax, ebx
-HEX: 29 D8
-BIN: 00101001 11011000
-DESC: Subtracts ebx from eax (eax ← eax - ebx)

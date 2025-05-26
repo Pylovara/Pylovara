@@ -1,5 +1,0 @@
-## @mcs: ^
-FUNC: mov eax, '^'
-HEX: B8 5E 00 00 00
-BIN: 10111000 01011110 00000000 00000000 00000000
-DESC: Moves ASCII value of '^' (0x5E) into eax

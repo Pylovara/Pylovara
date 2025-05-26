@@ -1,6 +1,0 @@
-## @mcs: V
-FUNC: mov eax, 'V'
-HEX: B8 56 00 00 00
-BIN: 10111000 01010110 00000000 00000000 00000000
-DESC: Moves ASCII value of 'V' (0x56) into eax
-

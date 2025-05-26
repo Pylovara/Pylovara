@@ -1,5 +1,0 @@
-## @mcs: F9
-FUNC: mov eax, 0x43
-HEX: B8 43 00 00 00
-BIN: 10111000 01000011 00000000 00000000 00000000
-DESC: Load scan code for F9 (0x43) into eax

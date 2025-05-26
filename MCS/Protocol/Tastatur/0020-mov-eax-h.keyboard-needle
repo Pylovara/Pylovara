@@ -1,5 +1,0 @@
-## @mcs: H
-FUNC: mov eax, 'H'
-HEX: B8 48 00 00 00
-BIN: 10111000 01001000 00000000 00000000 00000000
-DESC: Moves ASCII value of 'H' (0x48) into eax

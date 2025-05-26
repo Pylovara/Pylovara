@@ -1,5 +1,0 @@
-## @mcs: ALT
-FUNC: mov eax, 0x38
-HEX: B8 38 00 00 00
-BIN: 10111000 00111000 00000000 00000000 00000000
-DESC: Load scan code for Alt (0x38) into eax

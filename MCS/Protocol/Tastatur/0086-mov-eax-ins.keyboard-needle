@@ -1,5 +1,0 @@
-## @mcs: INS
-FUNC: mov eax, 0x52
-HEX: B8 52 00 00 00
-BIN: 10111000 01010010 00000000 00000000 00000000
-DESC: Load scan code for Insert (0x52) into eax

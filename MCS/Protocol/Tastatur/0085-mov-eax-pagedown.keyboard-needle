@@ -1,5 +1,0 @@
-## @mcs: PAGEDOWN
-FUNC: mov eax, 0x51
-HEX: B8 51 00 00 00
-BIN: 10111000 01010001 00000000 00000000 00000000
-DESC: Load scan code for Page Down (0x51) into eax

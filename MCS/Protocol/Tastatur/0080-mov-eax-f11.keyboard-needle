@@ -1,5 +1,0 @@
-## @mcs: F11
-FUNC: mov eax, 0x57
-HEX: B8 57 00 00 00
-BIN: 10111000 01010111 00000000 00000000 00000000
-DESC: Load scan code for F11 (0x57) into eax

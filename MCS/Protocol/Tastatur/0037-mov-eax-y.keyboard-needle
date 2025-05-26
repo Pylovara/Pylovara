@@ -1,5 +1,0 @@
-## @mcs: Y
-FUNC: mov eax, 'Y'
-HEX: B8 59 00 00 00
-BIN: 10111000 01011001 00000000 00000000 00000000
-DESC: Moves ASCII value of 'Y' (0x59) into eax

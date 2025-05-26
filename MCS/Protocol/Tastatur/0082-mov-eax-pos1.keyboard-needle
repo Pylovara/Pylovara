@@ -1,5 +1,0 @@
-## @mcs: POS1
-FUNC: mov eax, 0x47
-HEX: B8 47 00 00 00
-BIN: 10111000 01000111 00000000 00000000 00000000
-DESC: Load scan code for Home/POS1 (0x47) into eax

@@ -1,5 +1,0 @@
-## @mcs: CTRL
-FUNC: mov eax, 0x1D
-HEX: B8 1D 00 00 00
-BIN: 10111000 00011101 00000000 00000000 00000000
-DESC: Load scan code for Ctrl (0x1D) into eax

@@ -1,5 +1,0 @@
-## @mcs: CAPSLOCK
-FUNC: mov eax, 0x3A
-HEX: B8 3A 00 00 00
-BIN: 10111000 00111010 00000000 00000000 00000000
-DESC: Load scan code for Caps Lock (0x3A) into eax

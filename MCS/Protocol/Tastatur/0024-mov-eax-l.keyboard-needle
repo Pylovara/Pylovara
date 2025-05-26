@@ -1,5 +1,0 @@
-## @mcs: L
-FUNC: mov eax, 'L'
-HEX: B8 4C 00 00 00
-BIN: 10111000 01001100 00000000 00000000 00000000
-DESC: Moves ASCII value of 'L' (0x4C) into eax

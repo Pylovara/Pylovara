@@ -2,39 +2,35 @@
 @wiki_nr: 01 ##############################################################################
 @wiki_nr: ast ################################################################################
 ##############################################################################################
- ┌[bandino@DEV][16:11:13|Sa Mai 24|240M]
+  ┌[bandino@DEV][02:34:52|Mo Mai 26|241M]
  │ ᴾʸˡᵒᵛᵃʳᵃ ᵥ.₀.₅.₂
  │  𝒸ₐₗₗₘₑ  ₚ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
  │  ₜₒ     ₚᵧₗₒ  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
- └[/]> $ p Pylovara/
+ └[~]> $ p /Pylovara/
 🔍 Ordner gefunden: /Pylovara
 /Pylovara
 ├── Control
-│   ├── ai.conf
 │   ├── cache.conf
 │   ├── callme.conf
 │   ├── control.pv-conf
 │   ├── datatypes.conf
-│   ├── #dna.conf
 │   ├── download.conf
 │   ├── hardware.conf
 │   ├── navigator.conf
 │   └── shell.conf
-├── gg.pub
 ├── Handbuch
 │   ├── DnaNotes
 │   │   ├── 01-info.dna-notes
 │   │   ├── 99-guide.dna-notes
 │   │   └── ##-shots.dna-notes
 │   └── WikiNotes
-│       ├── ai.wiki-notes
 │       ├── control.wiki-notes
 │       ├── guide.wiki-notes
 │       ├── lexikon.wiki-notes
-│       ├── mcsdm.wiki-notes
+│       ├── mcs.wiki-notes
 │       ├── module.wiki-notes
 │       ├── pylovara-ast.wiki-notes
-│       ├── shellconf.wiki-notes
+│       ├── shell.wiki-notes
 │       └── source-bridge-needles.wiki-notes
 ├── Installer
 │   ├── full.install-nodes
@@ -42,6 +38,107 @@
 │   ├── nc.install-nodes
 │   ├── ollama-systemd.install-nodes
 │   └── paket.updater-nodes
+├── MCS
+│   ├── Cache
+│   │   ├── cache-binops.core
+│   │   ├── cache-keymap.core
+│   │   └── cache-mcs.core
+│   ├── Parser
+│   │   ├── mcs.datenmanager-logic
+│   │   └── mcs-protocol.parser-logic
+│   └── Protocol
+│       ├── 0001-add-eax-ebx.entry
+│       ├── 0002-sub-eax-ebx.entry
+│       ├── 0003-cmp-eax-ebx.entry
+│       ├── 0004-mov-eax-1.entry
+│       ├── 0005-mov-eax-2.entry
+│       ├── 0006-mov-eax-3.entry
+│       ├── 0007-mov-eax-4.entry
+│       ├── 0008-mov-eax-5.entry
+│       ├── 0009-mov-eax-6.entry
+│       ├── 0010-mov-eax-7.entry
+│       ├── 0011-mov-eax-8.entry
+│       ├── 0012-mov-eax-9.entry
+│       ├── 0013-mov-eax-a.entry
+│       ├── 0014-mov-eax-b.entry
+│       ├── 0015-mov-eax-c.entry
+│       ├── 0016-mov-eax-d.entry
+│       ├── 0017-mov-eax-e.entry
+│       ├── 0018-mov-eax-f.entry
+│       ├── 0019-mov-eax-g.entry
+│       ├── 0020-mov-eax-h.entry
+│       ├── 0021-mov-eax-i.entry
+│       ├── 0022-mov-eax-j.entry
+│       ├── 0023-mov-eax-k.entry
+│       ├── 0024-mov-eax-l.entry
+│       ├── 0025-mov-eax-m.entry
+│       ├── 0026-mov-eax-n.entry
+│       ├── 0027-mov-eax-o.entry
+│       ├── 0028-mov-eax-p.entry
+│       ├── 0029-mov-eax-q.entry
+│       ├── 0030-mov-eax-r.entry
+│       ├── 0031-mov-eax-s.entry
+│       ├── 0032-mov-eax-t.entry
+│       ├── 0033-mov-eax-u.entry
+│       ├── 0034-mov-eax-v.entry
+│       ├── 0035-mov-eax-w.entry
+│       ├── 0036-mov-eax-x.entry
+│       ├── 0037-mov-eax-y.entry
+│       ├── 0038-mov-eax-z.entry
+│       ├── 0039-mov-eax-0.entry
+│       ├── 0040-mov-eax-!.entry
+│       ├── 0041-mov-eax--quot.entry
+│       ├── 0042-mov-eax--sect.entry
+│       ├── 0043-mov-eax--dollar.entry
+│       ├── 0044-mov-eax--percent.entry
+│       ├── 0045-mov-eax--amp.entry
+│       ├── 0046-mov-eax--lparen.entry
+│       ├── 0047-mov-eax--rparen.entry
+│       ├── 0048-mov-eax--equal.entry
+│       ├── 0049-mov-eax--quest.entry
+│       ├── 0050-mov-eax--asterisk.entry
+│       ├── 0051-mov-eax--tilde.entry
+│       ├── 0052-mov-eax--hash.entry
+│       ├── 0053-mov-eax--apos.entry
+│       ├── 0054-mov-eax--colon.entry
+│       ├── 0055-mov-eax--semicolon.entry
+│       ├── 0056-mov-eax--comma.entry
+│       ├── 0057-mov-eax-..entry
+│       ├── 0058-mov-eax--underscore.entry
+│       ├── 0059-mov-eax--lt.entry
+│       ├── 0060-mov-eax--gt.entry
+│       ├── 0061-mov-eax--pipe.entry
+│       ├── 0062-mov-eax--caret.entry
+│       ├── 0063-mov-eax--backslash.entry
+│       ├── 0064-mov-eax--at.entry
+│       ├── 0065-mov-eax--euro.entry
+│       ├── 0066-mov-eax--lbrace.entry
+│       ├── 0067-mov-eax--rbrace.entry
+│       ├── 0068-mov-eax--lbracket.entry
+│       ├── 0069-mov-eax--rbracket.entry
+│       ├── 0070-mov-eax-f1.entry
+│       ├── 0071-mov-eax-f2.entry
+│       ├── 0072-mov-eax-f3.entry
+│       ├── 0073-mov-eax-f4.entry
+│       ├── 0074-mov-eax-f5.entry
+│       ├── 0075-mov-eax-f6.entry
+│       ├── 0076-mov-eax-f7.entry
+│       ├── 0077-mov-eax-f8.entry
+│       ├── 0078-mov-eax-f9.entry
+│       ├── 0079-mov-eax-f10.entry
+│       ├── 0080-mov-eax-f11.entry
+│       ├── 0081-mov-eax-f12.entry
+│       ├── 0082-mov-eax-pos1.entry
+│       ├── 0083-mov-eax-end.entry
+│       ├── 0084-mov-eax-pageup.entry
+│       ├── 0085-mov-eax-pagedown.entry
+│       ├── 0086-mov-eax-ins.entry
+│       ├── 0087-mov-eax-ctrl.entry
+│       ├── 0088-mov-eax-alt.entry
+│       ├── 0089-mov-eax-shift.entry
+│       ├── 0090-mov-eax-capslock.entry
+│       ├── 0091-mov-eax-numlock.entry
+│       └── 0092-mov-eax-altgr.entry
 ├── policy.security-alert
 ├── Pylovara.license-notes
 ├── README.wiki-notes
@@ -1622,7 +1719,7 @@
 ├── v0.5.2.dev-notes
 └── watchdog.git-needles
 
-193 directories, 1420 files
+197 directories, 1513 files
 
 │############################################################
 │# WikiLexikon : pylovara-ast.wiki-notes

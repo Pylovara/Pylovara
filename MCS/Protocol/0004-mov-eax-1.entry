@@ -1,0 +1,5 @@
+## @mcs: 1
+FUNC: mov eax, 1
+HEX: B8 01 00 00 00
+BIN: 10111000 00000001 00000000 00000000 00000000
+DESC: Moves immediate value 1 into eax

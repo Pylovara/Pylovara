@@ -1,0 +1,5 @@
+## @mcs: J
+FUNC: mov eax, 'J'
+HEX: B8 4A 00 00 00
+BIN: 10111000 01001010 00000000 00000000 00000000
+DESC: Moves ASCII value of 'J' (0x4A) into eax

@@ -1,0 +1,5 @@
+## @mcs: _
+FUNC: mov eax, '_'
+HEX: B8 5F 00 00 00
+BIN: 10111000 01011111 00000000 00000000 00000000
+DESC: Moves ASCII value of '_' (0x5F) into eax

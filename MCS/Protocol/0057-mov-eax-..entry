@@ -1,0 +1,5 @@
+## @mcs: .
+FUNC: mov eax, '.'
+HEX: B8 2E 00 00 00
+BIN: 10111000 00101110 00000000 00000000 00000000
+DESC: Moves ASCII value of '.' (0x2E) into eax

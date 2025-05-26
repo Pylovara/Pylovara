@@ -1,0 +1,5 @@
+## @mcs: |
+FUNC: mov eax, '|'
+HEX: B8 7C 00 00 00
+BIN: 10111000 01111100 00000000 00000000 00000000
+DESC: Moves ASCII value of '|' (0x7C) into eax

@@ -1,12 +1,109 @@
 #######################################################################
-@wiki-nr: 80  #########################################################
+@wiki-nr: 05  #########################################################
 #######################################################################
-@modul: MCSDM #########################################################
+@modul: MCS   #########################################################
 #######################################################################
 
+Dev Arbeitsbereich
+
+Zusammengefasst:
+
+    @mcs:-Header fungiert als symbolischer Marker und Direktlink zur Befehlssprache (z. B. +, mov, ctrl).
+
+    Inhalt jeder *.entry enthält:
+
+        ASM-Notation (FUNC)
+
+        Hexcode (HEX)
+
+        Binär (BIN)
+
+        Beschreibung (DESC)
+
+    Zahlen- und Steuerzeichen-Entries sind essenziell für Bitfluss-Steuerung & Sprachaufbau (z. B. für binäre Kombinatorik, direkte Eingabe, Kontrollsequenzen).
+
+
+
+!!!!!!!Nächster logischer Baustein (für mich):
+Ein Parser-Modul, das:
+
+    alle *.entry-Dateien einliest
+
+    anhand des @mcs:-Tags strukturiert
+
+    ein Cache-Objekt (oder Bash-Array / JSON / Flat-Table) aufbaut
+    → damit später z. B. ein Kommando wie + 1 0 als add eax, ebx → mov eax, 1 → mov eax, 0 ausgeführt und in eine Binärkette übertragen werden kann.
+
+Ziel: mcs.protocol.parser
+
+Ein Kernmodul, das:
+
+    @mcs:-Einträge in .entry-Dateien scannt
+
+    symbolisch sortiert & in Caches zerlegt
+
+    aufgeteilt wird in feste Cachebereiche, z. B.:
+
+        CACHE_BINOPS: nur 0 und 1 Einträge (für Bitlogik)
+
+        CACHE_NUM: 2–9 Einträge
+
+        CACHE_CTRL: Steuerzeichen / Meta-Instruktionen
+
+        CACHE_KEY: Tastatur-Mappings
+
+        CACHE_IO: CPU/RAM/Rendering
+
+        CACHE_MCS: Hauptprotokoll (add, mov, sub, …)
+
+        CACHE_MCS+: erweiterte Logik
+
+        CACHE_MCS++: kompositorische Binärcodes / Makros
+
+📂 Strukturvorschlag
+
+/Pylovara/MCS/
+├── Protocol/
+│   ├── 0000-zero.entry
+│   ├── 0001-add-eax-ebx.entry
+│   ├── 0002-one.entry
+│   ├── ...
+├── Parser/
+│   └── mcs.protocol.parser.sh
+└── Cache/
+    ├── cache_mcs.core
+    ├── cache_binops.core
+    ├── cache_keymap.core
+    └── ...
+
+⚙️ Verhalten mcs.protocol.parser.sh
+
+    Schrittweise Ablauf:
+
+        durchsucht /MCS/Protocol/*.entry
+
+        erkennt @mcs: in erster Zeile
+
+        sortiert nach Kontext (z. B. FUNC: add eax, ebx → CACHE_MCS)
+
+        schreibt das Ergebnis als Key:Value in Cache/*.core-Dateien
+
+🧠 Zielstruktur Cache-Einträge
+
+Beispiel: cache_mcs.core
+
+add_eax_ebx=00000001_11011000
+mov_eax_1=10111000_00000001
+sub_eax_ebx=00101000_11000011
+
+Nur Bash, keine Fremdsprache, später Umstieg auf eigene MCS+ Runtime/Lib. Ziel ist vollständige Entkopplung von Fremdlogik
+
+##################################
+
+### weitere schritte
 ArbeitsNotiz :
-
-ort: /Pylovara/System/Module/MCSDM
+(Noch auf der ignore liste)
+danach folgt MCSDM (Maschinen Code Speech DatenManager)
 beschreibung: Kontrollmodul zur Analyse, Validierung und Abwehr 
 von Binärdatenströmen im laufenden Betrieb.
 

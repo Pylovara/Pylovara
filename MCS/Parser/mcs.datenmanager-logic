@@ -1,0 +1,48 @@
+#!/bin/bash
+# mcs.datenmanager-logic.sh
+# Verantwortlich für Sammlung und Verwaltung von Binärdaten aus MCS-Protokoll-Einträgen
+
+PROTOCOL_DIR="../Protocol"
+§binärys=()  # Array für Binärdaten
+
+echo "[*] Starte MCSDM - Datenmanager..."
+
+for file in "$PROTOCOL_DIR"/*.entry; do
+  while IFS= read -r line; do
+    if [[ "$line" == *@mcs:* ]]; then
+      mcs_entry=$(echo "$line" | cut -d ':' -f2- | xargs)  # Eintrag nach @mcs:
+
+      # Hier weiter an mcs+ Verarbeitung übergeben
+      mcs_plus_parser "$mcs_entry" "$file"
+    fi
+  done < "$file"
+done
+
+# Beispiel Ausgabe (zum Test)
+echo "[*] Gesammelte Binär-Daten:"
+printf '%s\n' "${§binärys[@]}"
+
+exit 0
+
+
+# --- Funktionen ---
+
+mcs_plus_parser() {
+  local entry="$1"
+  local file="$2"
+
+  # Trennung auf '=' prüfen (für direkte Umsetzung)
+  if [[ "$entry" == *"="* ]]; then
+    local left="${entry%%=*}"
+    local right="${entry#*=}"
+    left=$(echo "$left" | xargs)
+    right=$(echo "$right" | xargs)
+
+    echo "[MCSDM] Direkte MCS+ Definition erkannt: '$left' = '$right' (aus $file)"
+
+    # Binärwerte oder Operationen zu §binärys hinzufügen
+    §binärys+=("$left=$right")
+  else
+    echo "[MCSDM] Unverarbeiteter @mcs Eintrag: '$entry' (aus $file)"
+  fi
+}

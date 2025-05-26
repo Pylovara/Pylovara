@@ -24,6 +24,7 @@ export PV_DIR="/Pylovara/"
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 
+alias mcs='cd /Pylovara/MCS/Protocol'
 ##############################################################################
 ### Master-Input - control.pv-conf
 
@@ -68,4 +69,4 @@ fi
 ##############################################################################
 ### aktivierungs Rückmeldung
 
-echo "[SystemControl] Aktiv"
+##echo "[SystemControl] Aktiv"

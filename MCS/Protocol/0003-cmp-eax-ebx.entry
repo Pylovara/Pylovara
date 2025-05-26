@@ -1,0 +1,5 @@
+## @mcs: =
+FUNC: cmp eax, ebx
+HEX: 39 D8
+BIN: 00111001 11011000
+DESC: Compares eax and ebx (sets flags, eax - ebx)

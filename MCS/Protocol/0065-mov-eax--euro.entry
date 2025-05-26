@@ -1,0 +1,5 @@
+## @mcs: €
+FUNC: mov eax, '€'
+HEX: B8 80 AC 00 00
+BIN: 10111000 10000000 10101100 00000000 00000000
+DESC: Moves UTF-8 2-byte sequence of '€' (0xE282AC truncated as 0xAC80) into eax (simplified handling)

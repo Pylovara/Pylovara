@@ -1,0 +1,43 @@
+#!/bin/bash
+# Prototyp 0.2 Updater
+
+# Root-Rechte prüfen
+if [ "$EUID" -ne 0 ]; then
+  echo "Bitte führe das Skript mit sudo aus: sudo ./pylovara.updater.needle"
+  exit 1
+fi
+
+# Pfade definieren
+REPO_URL="https://github.com/Pylovara/Pylovara.git "
+MAIN_DIR="/Pylovara"
+TEMP_DIR="/tmp/Pylovara_update"
+
+echo "[$(date)] Updater gestartet..."
+
+# Aktuelles Verzeichnis wechseln
+cd "$MAIN_DIR" || { echo "Konnte nicht in $MAIN_DIR wechseln"; exit 1; }
+
+# Alle Dateien außer updater.sh löschen
+echo "Lösche alte Dateien..."
+find . -mindepth 1 -not -name 'pylovara.updater.needle' -exec rm -rf {} + 2>/dev/null
+
+# Altes Temp-Verzeichnis entfernen
+rm -rf "$TEMP_DIR"
+
+# Repo klonen
+echo "Klone neueste Version von GitHub..."
+git clone "$REPO_URL" "$TEMP_DIR" || { echo "Git-Klonen fehlgeschlagen"; exit 1; }
+
+# Geänderte Rechte setzen für alle neuen Dateien
+chown -R root:root "$TEMP_DIR"
+chmod -R 755 "$TEMP_DIR"
+
+# Neue Dateien kopieren
+echo "Installiere neue Dateien..."
+cp -rf "$TEMP_DIR"/. "$MAIN_DIR/"
+
+# Temporäres Verzeichnis bereinigen
+rm -rf "$TEMP_DIR"
+
+echo "[$(date)] Update erfolgreich abgeschlossen!"
+echo "Bei Problemen das gesamte Repo neu ziehen und auf root den Pylovara Ordner löschen"

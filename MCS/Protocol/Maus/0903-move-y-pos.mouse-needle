@@ -1,0 +1,5 @@
+@mcs: maus
+FUNC: MOVE_Y_POS
+HEX: 0x04
+BIN: 00000100
+DESC: Bewegt Mauszeiger 1 Einheit nach oben (PS/2, Bit 2 im Bewegungsbyte)

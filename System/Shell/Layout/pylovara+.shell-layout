@@ -25,7 +25,7 @@ export PROMPT_COMMAND='
     PV_ROM=$(get_rom_usage)
     export PS1="
 $PV_COLOR_SYMBOL ┌[$PV_COLOR_USER\\u$PV_COLOR_SYMBOL@$PV_COLOR_HOST\\h$PV_COLOR_SYMBOL][$PV_COLOR_TIME\\t$PV_COLOR_SYMBOL|$PV_COLOR_TIME\\d$PV_COLOR_SYMBOL|$PV_COLOR_ROM\$PV_ROM$PV_COLOR_SYMBOL]
-$PV_COLOR_SYMBOL │$PV_COLOR_PV ᴾʸˡᵒᵛᵃʳᵃ ᵥ.₀.₅.₂
+$PV_COLOR_SYMBOL │$PV_COLOR_PV ᴾʸˡᵒᵛᵃʳᵃ ᵥ₀.₅.₃
 $PV_COLOR_SYMBOL │ $PV_COLOR_PV 𝒸ₐₗₗₘₑ $PV_COLOR_PV ₚ    $PV_COLOR_PV 𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ   $PV_COLOR_PV ₕₑₗₚₘₑ ₗₑₓ
 $PV_COLOR_SYMBOL │ $PV_COLOR_PV ₜₒ    $PV_COLOR_PV ₚᵧₗₒ $PV_COLOR_PV 𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀ $PV_COLOR_PV ₕₑₗₚₘₑₓ ₀₁₋₀₂
 $PV_COLOR_RESET $PV_COLOR_SYMBOL└[$PV_COLOR_PATH\$PV_CURRENT_DIR$PV_COLOR_SYMBOL]> \$ $PV_COLOR_RESET"

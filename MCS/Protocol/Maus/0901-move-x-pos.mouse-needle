@@ -1,0 +1,5 @@
+@mcs: maus
+FUNC: MOVE_X_POS
+HEX: 0x01
+BIN: 00000001
+DESC: Bewegt Mauszeiger 1 Einheit nach rechts (PS/2, Bit 0 im Bewegungsbyte)

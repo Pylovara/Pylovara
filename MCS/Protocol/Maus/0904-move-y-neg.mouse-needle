@@ -1,0 +1,5 @@
+@mcs: maus
+FUNC: MOVE_Y_NEG
+HEX: 0x08
+BIN: 00001000
+DESC: Bewegt Mauszeiger 1 Einheit nach unten (PS/2, Bit 3 im Bewegungsbyte)

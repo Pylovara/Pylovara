@@ -1410,7 +1410,8 @@
 ##
 ## Beschreibung:
 ## - Kopiert einen Wert vom Speicher bei `RSI` nach `RDI`
-## - Die Datenmenge ergibt sich aus dem Suffix (b = Byte, w = Word, ...)
+## - Die Datenmenge ergibt sich aus dem Suffix
+## (b = Byte, w = Word, ...)
 ##
 ## ------------------------
 ## 🧱 STOS – Store String
@@ -1419,7 +1420,9 @@
 ##   stosb / stosw / stosd / stosq
 ##
 ## Beschreibung:
-## - Speichert den Inhalt von `AL`/`AX`/`EAX`/`RAX` an die Adresse `RDI`
+## - Speichert den Inhalt von `AL`/`AX`/`EAX`/`RAX` an die Adresse
+## `RDI`
+##
 ## - Auch hier kann `REP` genutzt werden:
 ##
 ## Beispiel:
@@ -1432,10 +1435,13 @@
 ## ------------------------
 ##
 ## Diese Befehle sind wie Laufbänder:
-## - Du stellst Quelle, Ziel und Anzahl ein – der Rest läuft automatisch.
+## - Du stellst Quelle, Ziel und Anzahl ein – der Rest läuft
+## automatisch.
+##
 ## - REP gibt den Takt vor, MOVS/STOS führen aus.
 ##
-## Maschinen brauchen klare Anweisungen – aber sie übernehmen den Rhythmus.
+## Maschinen brauchen klare Anweisungen –
+## aber sie übernehmen den Rhythmus.
 ##
 ## ------------------------
 ## 🧩 Einsatz in Pylovara
@@ -1445,7 +1451,8 @@
 ## - LOGIC kann REP-Zyklen visuell darstellen
 ## - Perfekt für SYSTEMNAHE Initialisierungen im BINARCODE-Modus
 ##
-## Maschinen wiederholen nicht nur – sie perfektionieren durch Wiederholung.
+## Maschinen wiederholen nicht nur –
+## sie perfektionieren durch Wiederholung.
 ##
 ######### ENDE VON KAPITEL 1 - 10 (Instruction Set) #################
 #####################################################################
@@ -1526,3 +1533,142 @@
 #####################################################################
 #####################################################################
 #####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-03-01
+#####################################################################
+## Lektion 03-01: FLAGS – Maschinen mit Gefühlen
+##
+## Die FLAGS-Register sind das emotionale Zentrum der CPU:
+## Sie zeigen den Zustand des letzten Befehls an – ob ein Ergebnis
+## gleich Null war, ob ein Übertrag stattfand, ob ein Fehler auftrat.
+## Ohne FLAGS gäbe es keine Entscheidungen, keine Verzweigungen,
+## keine Reaktionen.
+##
+## ------------------------
+## ⚙ FLAGS im RFLAGS-Register
+## ------------------------
+##
+## Wichtige Flags:
+##
+## - ZF (Zero Flag): Wird gesetzt, wenn das Ergebnis Null ist.
+## - CF (Carry Flag): Übertrag bei Addition oder Ausleihe bei Subtraktion.
+## - SF (Sign Flag): Zeigt das Vorzeichen des Ergebnisses (1 = negativ).
+## - OF (Overflow Flag): Überlauf bei vorzeichenbehafteter Rechnung.
+## - PF (Parity Flag): Prüft gerade Anzahl gesetzter Bits.
+##
+## ------------------------
+## 🛠 Wirkung und Nutzung
+## ------------------------
+##
+## Flags werden implizit durch Befehle gesetzt und ausgelesen.
+## Es gibt keinen direkten MOV-Befehl für FLAGS.
+##
+## Flags steuern Sprungbefehle (Jxx), vergleichen Werte (CMP) und
+## ermöglichen logische Entscheidungen.
+##
+## ------------------------
+## 🔎 Maschinenbetrachtung
+## ------------------------
+##
+## Flags sind das „Gefühl“ der Maschine – intuitiv, schnell, unsichtbar.
+## Sie bilden die Grundlage für Kontrollfluss und Entscheidungsfindung.
+##
+## ------------------------
+## 🧩 Einsatz in Pylovara
+## ------------------------
+##
+## - LOGIC kann Flags als Statusbits auswerten.
+## - AIMS nutzt Flags für Feedback bei Entscheidungen.
+## - Nano-Module simulieren Flag-Status für Steuerbefehle.
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 03-02 – TEST & CMP – Prüfen und Vergleichen
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-03-02
+#####################################################################
+## Lektion 03-02: TEST & CMP – Prüfen und Vergleichen
+##
+## TEST und CMP sind die Maschinenwerkzeuge, um Werte zu prüfen und zu
+## vergleichen. Sie setzen Flags, ohne die Werte zu verändern.
+##
+## ------------------------
+## 🛠 TEST – Bitweise Prüfung
+## ------------------------
+##
+## Syntax:
+##   test <Operand1>, <Operand2>
+##
+## Wirkung:
+## - Führt eine bitweise UND-Verknüpfung der Operanden durch
+## - Setzt Flags (ZF, SF, PF) abhängig vom Ergebnis
+## - Verändert die Operanden nicht
+##
+## Beispiel:
+##   test eax, eax     ; prüft, ob eax null ist
+##
+## ------------------------
+## 🔍 CMP – Vergleich
+## ------------------------
+##
+## Syntax:
+##   cmp <Operand1>, <Operand2>
+##
+## Wirkung:
+## - Subtrahiert Operand2 von Operand1 (ohne Ergebnis zu speichern)
+## - Setzt Flags (ZF, CF, SF, OF) entsprechend des Ergebnisses
+##
+## Beispiel:
+##   cmp eax, 10       ; vergleicht eax mit 10
+##
+## ------------------------
+## 🔎 Maschinenbetrachtung
+## ------------------------
+##
+## TEST ist die bitweise Prüfung für Flag-Setzung – sehr schnell,
+## ohne Speicherzugriff.
+##
+## CMP vergleicht Werte für Entscheidungen, Sprünge und bedingte
+## Abläufe.
+##
+## ------------------------
+## 🧩 Einsatz in Pylovara
+## ------------------------
+##
+## - LOGIC nutzt TEST für Flag-Bit-Prüfungen
+## - CMP steuert bedingte Logiken im AIMS-Agenten
+## - Nano-Module simulieren logische Vergleiche
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 03-03 – abschluss
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-03-03-abschluss
+#####################################################################
+## Kapitelgruppe 03-03 – Flags & Maschinenzustände – Abschluss
+##
+## Überblick:
+## - Flags als Grundlage für alle Entscheidungs- und Kontrollbefehle
+## - Bedeutung von TEST & CMP als Basis für logische
+##   Maschinenentscheidungen
+##
+## - Verknüpfung mit Sprungbefehlen (Jxx) und Kontrollfluss
+##
+## Wichtig:
+## - Maschinenzustände sind essenziell für Programmsteuerung und
+##   Fehlererkennung
+## - Flags sind nicht nur Bitfelder, sondern das „Bewusstsein“ der
+##   Maschine
+##
+## Ausblick:
+## - Im nächsten Kapitelblock 04-XX widmen wir uns der
+## Speicherverwaltung und Zugriffssteuerung.
+##
+################### ENDE DER LEKTIONEN ##############################
+######################### Vorläufig #################################
+

@@ -1,0 +1,48 @@
+#!/bin/bash
+# playground.shell-layout – Farbiges Minimal-Prompt mit Dracula/Blood-Stil
+
+# ANSI-Farbcodes
+CSI='\033['
+RESET="${CSI}0m"
+BOLD="${CSI}1m"
+DIM="${CSI}2m"
+ITALIC="${CSI}3m"
+UNDERLINE="${CSI}4m"
+
+# Prompt-Farben (inspiriert von Dracula Theme)
+export PV_COLOR_BG="${CSI}48;5;0m"     # Hintergrund: Schwarz
+export PV_COLOR_FG="${CSI}38;5;253m"   # Text: Hellgrau
+export PV_COLOR_PATH="${CSI}38;5;39m"  # Pfad: Blau-Türkis
+export PV_COLOR_CMD_SUCCESS="${CSI}38;5;82m"  # Befehl Erfolg: Grün
+export PV_COLOR_CMD_ERROR="${CSI}38;5;196m"   # Befehl Fehler: Rot
+export PV_COLOR_PROMPT="${CSI}38;5;208m"      # Prompt-Symbol: Orangerot
+
+# Dynamische Variablen
+export LAST_COMMAND=""
+export PROMPT_COLOR="$PV_COLOR_CMD_SUCCESS"
+
+# Funktion: Setze Prompt-Farbe basierend auf letztem Befehl
+function set_prompt_color() {
+    local exit_code=$?
+    cmd=$(history 1 | sed 's/^ *[0-9]* *//' | sed 's/;.*//')
+    export LAST_COMMAND="$cmd"
+
+    if [ $exit_code -eq 0 ]; then
+        PROMPT_COLOR="$PV_COLOR_CMD_SUCCESS"
+    else
+        PROMPT_COLOR="$PV_COLOR_CMD_ERROR"
+    fi
+}
+
+# Update-Funktion für PS1
+function update_prompt() {
+    local path="${PV_COLOR_PATH}\w${RESET}"
+
+    export PS1="
+${PV_COLOR_PROMPT}┌─${PV_COLOR_FG}[${RESET}${PV_COLOR_PROMPT}ᴘʏʟᴏᴠᴀʀᴀ-sʏsᴛᴇᴍ${RESET}${PV_COLOR_FG}]
+${PV_COLOR_PROMPT}│ₛᵢₙ𝒸ₑ ₂₀₂₅
+${PV_COLOR_PROMPT}└─${PV_COLOR_FG}[${PV_COLOR_PROMPT}=>${RESET}${PV_COLOR_FG}]${RESET}"
+}
+
+# Haupt-PROMPT_COMMAND
+export PROMPT_COMMAND='set_prompt_color; update_prompt'

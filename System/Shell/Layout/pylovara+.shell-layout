@@ -30,3 +30,6 @@ $PV_COLOR_SYMBOL │ $PV_COLOR_PV 𝒸ₐₗₗₘₑ $PV_COLOR_PV ₚ    $PV_CO
 $PV_COLOR_SYMBOL │   $PV_COLOR_PV ₜₒ  $PV_COLOR_PV ₚᵧₗₒ $PV_COLOR_PV ₖₑᵣₙₑₗₓ ₀₁₋₀₁ $PV_COLOR_PV 𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀ $PV_COLOR_PV ₕₑₗₚₘₑₓ ₀₁₋₀₂
 $PV_COLOR_RESET $PV_COLOR_SYMBOL└[$PV_COLOR_PATH\$PV_CURRENT_DIR$PV_COLOR_SYMBOL]> \$ $PV_COLOR_RESET"
 '
+if [[ -r /usr/share/bash-completion/bash_completion ]]; then
+  . /usr/share/bash-completion/bash_completion
+fi

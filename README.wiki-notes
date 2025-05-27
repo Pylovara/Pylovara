@@ -16,6 +16,28 @@ sudo ./pylovara.updater-needle
 ###
 ###           kernel lex | kernelx 01-01 | Layout Optimierung
 ###
+###
+###### /Pylovara/Control/shell.conf ( Pylovara Shell Appearance Engine )
+###### brandt
+####source "/Pylovara/System/Shell/Layout/pylovara.shell-layout"
+### ┌[bandino@DEV][18:24:47|Di Mai 27]
+### │ ᴾʸˡᵒᵛᵃʳᵃ
+### └[~]> $
+###
+###### Hilfe Layout
+###source "/Pylovara/System/Shell/Layout/pylovara+.shell-layout"
+### ┌[bandino@DEV][18:26:22|Di Mai 27|5,7G]
+### │ ᴾʸˡᵒᵛᵃʳᵃ
+### │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
+### │    ₜₒ   ₚᵧₗₒ  ₖₑᵣₙₑₗₓ ₀₁₋₀₁  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
+### └[~]> $
+###
+###### Minimal
+###source "/Pylovara/System/Shell/Layout/pylovara++.shell-layout"
+### ┌─[ᴘʏʟᴏᴠᴀʀᴀ-sʏsᴛᴇᴍ]
+### │ₛᵢₙ𝒸ₑ ₂₀₂₅
+### └─[=>]
+###
 #####################################################################################
 ###
 ###                        kommt zurück bald zurück

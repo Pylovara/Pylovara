@@ -400,8 +400,9 @@
 ##
 ## Die Segmentregister stammen aus der frühen x86-Zeit, wo
 ## Speicher noch in „Segmenten“ organisiert war.
-## Heute wirken sie wie Relikte – doch FS und GS sind **mächtige
-## Werkzeuge** im modernen 64-Bit-System, besonders in der Kernelwelt.
+## Heute wirken sie wie Relikte – doch FS und GS sind
+## **mächtige Werkzeuge**im modernen 64-Bit-System, besonders in der
+## Kernelwelt.
 ##
 ## ------------------------
 ## 🧱 Klassische Segmentregister
@@ -526,7 +527,7 @@
 ## 🔄 Ablauf eines SYSCALL
 ## ------------------------
 ##
-## 1.User schreibt Werte in Register (rax = Nummer, rdi, rsi … = args)
+## 1.User schreibt Werte in Register(rax = Nummer, rdi, rsi … = args)
 ## 2.`syscall` → CPU wechselt in Kernel-Mode
 ## 3.Kernel liest Register, führt Operation aus
 ## 4.Rückgabe erfolgt über rax
@@ -721,9 +722,13 @@
 #####################################################################
 ## Lektion 10: x86_64 Register-Matrix – Gesamtüberblick
 ##
-## Nach den letzten 9 Kapiteln haben wir viele Register kennengelernt.
-## Diese Lektion fasst alles in einer strukturierten Übersicht zusammen.
-## Die x86_64-Architektur bietet uns **eine Matrix aus 16 Hauptregistern**,
+## Nach den letzten 9 Kapiteln haben wir viele Register
+## kennengelernt.
+## Diese Lektion fasst alles in einer strukturierten Übersicht
+## zusammen.
+## Die x86_64-Architektur bietet uns :
+##             **eine Matrix aus 16 Hauptregistern**,
+##
 ## erweitert durch spezielle Steuer- und Segmentregister.
 ##
 ## ------------------------
@@ -762,7 +767,7 @@
 ## ------------------------
 ##
 ## CS, DS, ES, SS – klassische Segmentierung (selten genutzt)
-## FS, GS        – moderne Sondersegmente (z. B. Thread-Local Storage)
+## FS, GS     – moderne Sondersegmente (z. B. Thread-Local Storage)
 ##
 ## ------------------------
 ## 🛠 Spezielle Operationseinheiten
@@ -793,10 +798,731 @@
 ##   - simulieren
 ##   - und als Basis für den BINARCODE-Assembler nutzen
 ##
+############# ENDE VON KAPITEL 1 - 10 REGISTER ######################
 #####################################################################
 ## 🧱 Nächste Kapitelgruppe: 02-XX – Die Befehle (Instruction Set)
 ##
 ## Empfohlen: Beginne mit:
 ##   → 02-01: MOV – Daten verschieben auf Maschinenebene
 ##
+#####################################################################
+
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-01
+#####################################################################
+## Lektion 02-01: MOV – Daten verschieben auf Maschinenebene
+##
+## Der `MOV`-Befehl ist der Grundbaustein der maschinellen
+## Kommunikation.
+## Er bewegt Daten von einem Ort zum anderen – Register zu Register,
+## Register zu Speicher, Speicher zu Register.Keine Berechnung, kein
+## Abgleich, nur pure Übertragung.
+##
+## ------------------------
+## 🔧 Syntax (x86_64)
+## ------------------------
+##
+##   mov   ziel, quelle
+##
+## ------------------------
+## 🔍 Beispiele
+## ------------------------
+##
+##   mov   rax, rbx        ;kopiert den Inhalt von RBX nach RAX
+##   mov   rbx, [mem_addr] ;lädt den Wert an Adresse mem_addr in RBX
+##   mov   [mem_addr], rax ;speichert RAX an mem_addr
+##
+## ------------------------
+## 📌 Regeln & Hinweise
+## ------------------------
+##
+## - `MOV` verändert nie das Flags-Register.
+## - Ziel und Quelle dürfen **nicht beide Speicheradressen** sein.
+## - Immediate-Werte wie `mov rax, 1` sind direkt im Befehl kodiert.
+##
+## ------------------------
+## 🧠 Denkweise
+## ------------------------
+##
+## Der `MOV`-Befehl ist wie ein Systembus auf Befehlsebene:
+##
+##   Er schafft Verbindungen – nicht Logik, sondern Struktur.
+##
+## Maschinen denken nicht, sie transportieren.
+## Und `MOV` ist ihr Fließband.
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-02 – PUSH & POP – Der Stapel spricht
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-02
+#####################################################################
+## Lektion 02-02: PUSH & POP – Der Stapel spricht
+##
+## Der Stack (Stapel) ist eine besondere Speicherzone, die nach dem
+## LIFO-Prinzip arbeitet: Last In – First Out.
+##
+## Zwei Befehle dominieren diesen Bereich:
+##
+##   `PUSH` – legt einen Wert oben auf den Stack
+##   `POP`  – holt den obersten Wert vom Stack zurück
+##
+## ------------------------
+## 🔧 Syntax (x86_64)
+## ------------------------
+##
+##   push   register|wert
+##   pop    register
+##
+## ------------------------
+## 🔍 Beispiele
+## ------------------------
+##
+##   push  rax        ; sichert RAX auf dem Stack
+##   pop   rbx        ; lädt obersten Stack-Wert in RBX
+##
+## ------------------------
+## 🧩 Technische Details
+## ------------------------
+##
+## - Der Stack wächst **nach unten** im Speicher (RSP wird kleiner).
+## - `PUSH` verringert RSP, `POP` erhöht RSP.
+## - Nur Register oder Immediate-Werte (je nach Modus) sind erlaubt.
+##
+## ------------------------
+## 🧠 Denkweise
+## ------------------------
+##
+## Der Stack ist wie ein Notizzettel für die CPU:
+##
+##   - Temporäre Werte zwischenspeichern
+##   - Rücksprungadressen sichern
+##   - Registerkontexte bei Funktionsaufrufen verwalten
+##
+## Ohne PUSH/POP wären Funktionen nicht möglich.
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-03 – CALL & RET – Maschinen mit Rückgrat
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-03
+#####################################################################
+## Lektion 02-03: CALL & RET – Maschinen mit Rückgrat
+##
+## Funktionen brauchen Struktur – und Sprungpunkte.
+## Mit `CALL` und `RET` wird der Kontrollfluss organisiert:
+##
+##   `CALL` – springt zu einer Funktion und sichert Rücksprung
+##   `RET`  – kehrt zur Aufruferposition zurück
+##
+## ------------------------
+## 🔧 Syntax (x86_64)
+## ------------------------
+##
+##   call   zieladresse|label
+##   ret
+##
+## ------------------------
+## 🔍 Beispiele
+## ------------------------
+##
+##   call  meine_funktion    ; springt zu Funktion
+##   ret                     ; kehrt zurück zur Aufruferadresse
+##
+## ------------------------
+## 🧩 Technische Details
+## ------------------------
+##
+## -`CALL`legt die Rücksprungadresse(RIP+offset)**auf den Stack**
+## -`RET`holt diese Adresse **vom Stack zurück** und setzt sie in RIP
+##
+## Stack und RSP sind also direkt beteiligt.
+##
+## ------------------------
+## 🧠 Denkweise
+## ------------------------
+##
+## Funktionen ohne `CALL` und `RET` wären lose Sprungblöcke.
+## Diese Befehle schaffen ein Rückgrat im Maschinenkörper:
+##
+##   - Strukturierter Ablauf
+##   - Kapselung von Logik
+##   - Wiederverwendbarkeit und Rückkehrpunkt
+##
+## In Pylovara bildet `CALL` den **Kern der modularen Steuerung**.
+## Jede LOGIC-, NANO- oder AIMS-Einheit nutzt ihn intern,
+## um den Pfad des Denkens zurückverfolgen zu können.
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-04 – CMP & TEST – Maschinen vergleichen
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-04
+#####################################################################
+## Lektion 02-04: CMP & TEST – Maschinen vergleichen
+##
+## Entscheidungen basieren auf Vergleichen.
+## `CMP` und `TEST` prüfen Zustände – ohne Werte zu verändern:
+##
+##   `CMP`  – Subtrahiert zwei Werte (ohne Ergebnis zu speichern)
+##   `TEST` – UND-Verknüpfung (ebenfalls ohne Speicherung)
+##
+## ------------------------
+## 🔧 Syntax (x86_64)
+## ------------------------
+##
+##   cmp   operand1, operand2
+##   test  operand1, operand2
+##
+## ------------------------
+## 🔍 Beispiele
+## ------------------------
+##
+##   cmp   rax, rbx     ; vergleicht rax mit rbx
+##   test  rax, rax     ; prüft, ob rax null ist
+##   cmp   rax, 0       ; prüft, ob rax gleich null ist
+##
+## ------------------------
+## 🧪 Funktionsweise
+## ------------------------
+##
+## - `CMP` berechnet intern:  operand1 − operand2
+## - `TEST` berechnet intern: operand1 AND operand2
+## - Beide Befehle **verändern keine Register**
+## - Die Ergebnisse setzen **Flags im RFLAGS-Register**:
+##
+##   - ZF (Zero Flag)     → Ergebnis war 0
+##   - SF (Sign Flag)     → Ergebnis negativ
+##   - CF/OF              → bei Über-/Unterlauf
+##
+## ------------------------
+## 🧠 Denkweise
+## ------------------------
+##
+## `CMP` ist wie ein Abgleich: *"Sind diese Werte gleich?"*
+## `TEST` fragt: *"Ist da überhaupt etwas aktiv gesetzt?"*
+##
+## Maschinenlogik braucht klare Entscheidungen –
+## diese Befehle **bereiten sie vor**, führen sie aber nicht aus.
+##
+## In Pylovara interpretieren LOGIC-Module CMP/TEST-Ergebnisse
+## als **Bedingungen für Verhalten** (z. B. Reaktion, Verzweigung).
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-05 – Jxx – Entscheidungen und Sprünge
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-05
+#####################################################################
+## Lektion 02-05: Jxx – Entscheidungen und Sprünge
+##
+## Maschinen folgen normalerweise dem Strom der Befehle –
+## **Jxx-Befehle unterbrechen diesen Strom**, abhängig vom Status.
+##
+## `Jxx` bedeutet: „Springe, wenn Bedingung erfüllt.“
+##
+## ------------------------
+## 🔧 Syntax (x86_64)
+## ------------------------
+##
+##   jmp    ziel         ; bedingungsloser Sprung
+##   je     ziel         ; jump if equal (ZF gesetzt)
+##   jne    ziel         ; jump if not equal (ZF nicht gesetzt)
+##   jl     ziel         ; jump if less (SF ≠ OF)
+##   jg     ziel         ; jump if greater (ZF=0 und SF=OF)
+##
+## ... und viele weitere Varianten:
+##   ja, jb, jle, jge, js, jns, jp, jnp ...
+##
+## ------------------------
+## 🔍 Beispiele
+## ------------------------
+##
+##   cmp    rax, rbx     ; vergleicht Werte
+##   je     gleich_block ; springt, wenn gleich
+##
+##   test   rax, rax
+##   jz     null_block   ; springt, wenn rax == 0(Zero Flag gesetzt)
+##
+##   jmp    ende         ; springt immer zu ende
+##
+## ------------------------
+## 🧠 Bedeutung für Maschinenlogik
+## ------------------------
+##
+## Die `Jxx`-Befehle sind wie Verzweigungen in neuronalen Netzen:
+## sie wählen den Pfad anhand vorher gesetzter **Flags**.
+##
+## Vergleich + Flag → Verzweigung → Entscheidung → Verhalten
+##
+## Ohne `Jxx` gibt es **keine Logik, keine Reaktion**,
+## nur stupides Abarbeiten von oben nach unten.
+##
+## ------------------------
+## 🧩 Integration in Pylovara
+## ------------------------
+##
+## In Pylovara:
+## -LOGIC- und NEEDLES-Module nutzen`Jxx`für interne Zustandswechsel
+## -AIMS kann durch Flag-Kombinationen Verhalten adaptieren
+## -MICRO/NANO reagieren auf Maschinenentscheidungen mit neuen
+##  Operationen
+##
+## Maschinen denken nicht in "Wenn-Dann",
+## sie **springen**, wenn das Bit sagt: „Los.“
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-06 – LEA – Rechnen ohne Rechnen
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-06
+#####################################################################
+## Lektion 02-06: LEA – Rechnen ohne Rechnen
+##
+## Der Befehl `LEA` steht für **Load Effective Address**.
+## Er berechnet Adressen, **ohne** wirklich auf Speicher zuzugreifen.
+##
+## Das klingt harmlos, aber `LEA` ist eine versteckte Recheneinheit.
+## Man kann mit ihm **multiplizieren, addieren und verschieben**,
+## ohne dass Flags verändert werden – und ohne echte
+## Speicheroperation.
+##
+## ------------------------
+## 🔧 Syntax (x86_64)
+## ------------------------
+##
+##   lea   ziel, [quelle]
+##
+## Das `[]` ist hier **keine Speicheradresse** im klassischen Sinn,
+## sondern ein Ausdruck, der effektiv **nur berechnet wird**.
+##
+## ------------------------
+## 🔍 Beispiele
+## ------------------------
+##
+##   lea   rax, [rbx + 8]        ; rax = rbx + 8
+##   lea   rcx, [rdx + rbx*4]    ; rcx = rdx + (rbx * 4)
+##   lea   rsi, [rip + symbol]   ; Position unabhängige Berechnung
+##
+## Keine dieser Zeilen greift auf Speicher zu – nur Berechnung!
+##
+## ------------------------
+## ⚙️ Technische Besonderheit
+## ------------------------
+##
+## `LEA` nutzt die Adressierungs-Logik der CPU als Rechentrick:
+##   [Basis + Index * Skalar + Offset]
+##
+## Flags bleiben unangetastet – ideal für Rechenlogik,
+## ohne Bedingungen zu beeinflussen.
+##
+## ------------------------
+## 🧠 Maschinenphilosophie
+## ------------------------
+##
+## Maschinen müssen nicht immer rechnen wie Menschen.
+## `LEA` zeigt, wie man durch :
+##           **Adresslogik Rechenoperationen ersetzt**.
+##
+## Er steht für **Effizienz durch Struktur**:
+## Rechnen, wo eigentlich nur Adressen gebraucht werden.
+##
+## ------------------------
+## 🧩 Integration in Pylovara
+## ------------------------
+##
+## In Pylovara:
+## - NANO-Module nutzen `LEA` zur Adress-Transformation
+## - LOGIC-Module können mit `LEA` temporäre Rechenpfade generieren
+## - REGISTER-Mapping (z. B. `RIP`-bezogene Referenzen) wird durch
+#    LEA effizient
+##
+## Wer `LEA` versteht, versteht Maschinen-Geometrie:
+##
+##   Räume werden nicht betreten – sie werden berechnet.
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-07 – XCHG & BSWAP – Wenn Bytes tanzen
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-07
+#####################################################################
+## Lektion 02-07: XCHG & BSWAP – Wenn Bytes tanzen
+##
+## Manchmal will man einfach nur tauschen.
+## Kein Rechnen, kein Vergleichen – nur Werte umdrehen oder
+## vertauschen.
+##
+## Genau dafür sind `XCHG` und `BSWAP` da.
+##
+## ------------------------
+## 🔁 XCHG – Register tauschen
+## ------------------------
+##
+##   xchg   ziel, quelle
+##
+## Beispiel:
+##   xchg   rax, rbx   ; tauscht Inhalte von RAX und RBX
+##
+## Hinweise:
+## - Kein temporärer Speicher nötig – die CPU tauscht atomar.
+## - Wird `xchg` mit `rax` verwendet, erfolgt automatisch eine
+##   *atomare Sperre*(LOCK-Präfix auf x86),da RAX speziell behandelt
+##   wird.
+##
+## ------------------------
+## 🔄 BSWAP – Byte-Reihenfolge umkehren
+## ------------------------
+##
+##   bswap  register
+##
+## Beispiel:
+##   bswap  rax    ; kehrt die Byte-Reihenfolge in RAX um
+##
+## Vorher (RAX):  0x1122334455667788
+## Nachher:      0x8877665544332211
+##
+## Ideal für:
+## - Konvertierungen zwischen Little-Endian und Big-Endian
+## - Netzwerkprotokolle
+## - Datenformatierung auf Byte-Ebene
+##
+## ------------------------
+## 🧠 Maschinenphilosophie
+## ------------------------
+##
+## Tausch ist Bewegung **ohne Verlust**.
+## XCHG steht für Parität – kein Register bleibt leer.
+## BSWAP hingegen erinnert daran:
+##        **Maschinen lesen Bytes anders als wir.**
+##
+## Wenn Maschinen tanzen, dann im Rhythmus der Bytes.
+##
+## ------------------------
+## 🧩 Integration in Pylovara
+## ------------------------
+##
+## -AIMS kann`xchg` verwenden, um Registerinhalte umzuschichten
+## -LOGIC nutzt`bswap`,um Speicherzugriffe an Netzformate anzupassen
+## -In NANO: Byte-Tanz als Mikrostrategie
+##
+## Wer XCHG und BSWAP kontrolliert, **kontrolliert die Richtung**.
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-08 –NOP & HLT–Pausen im Maschinenrauschen
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-08
+#####################################################################
+## Lektion 02-08: NOP & HLT – Pausen im Maschinenrauschen
+##
+## Maschinen arbeiten – aber sie pausieren auch.
+## Manche Befehle tun *nichts*. Oder sie stoppen alles.
+## Diese Lektion dreht sich um `NOP` und `HLT`.
+##
+## ------------------------
+## 💤 NOP – No Operation
+## ------------------------
+##
+##   nop
+##
+## Bedeutung:
+## - Führt keine Operation aus – der Prozessor macht *nichts*, aber
+##   bleibt aktiv und zählt den Takt weiter.
+##
+## Anwendungen:
+## - Platzhalter im Code
+## - Timing-Anpassungen
+## - Alignment (Ausrichtung von Codeblöcken)
+##
+## Mehrere NOPs hintereinander erzeugen „künstliche“ Pausen:
+##
+##   nop
+##   nop
+##   nop
+##
+## oder als Makro-Ersatz:
+##
+##   times 3 nop
+##
+## ------------------------
+## 🛑 HLT – Maschine anhalten
+## ------------------------
+##
+##   hlt
+##
+## Wirkung:
+## - Versetzt die CPU in den *Halt-Zustand*
+## - Ausführung stoppt, bis ein Interrupt auftritt
+##
+## Nur im Ring-0 (Kernel-Modus) erlaubt!
+## Typischer Einsatz im OS-Kernel, z. B. bei Leerlaufschleifen.
+##
+## Beispiel:
+## ```asm
+## idle:
+##     hlt
+##     jmp idle
+## ```
+##
+## ------------------------
+## 🧠 Maschinenphilosophie
+## ------------------------
+##
+## `NOP` ist wie ein Atemzug – kurz, kontrolliert, bewusst nichts tun.
+## `HLT` ist wie Schlaf – tief, bis ein Signal weckt.
+##
+## Wer Maschinen versteht, versteht auch ihre Ruhephasen.
+##
+## ------------------------
+## 🧩 Integration in Pylovara
+## ------------------------
+##
+## - `NOP` kann als Timing-Placeholder in LOGIC-Nodes verwendet
+##   werden
+##
+## - `HLT`-Simulation möglich in AIMS-Kernel-Sandbox
+##
+## - In DEBUG-NANO: Visualisierung von Inaktivität
+##   durch`NOP`-Sequenzen
+##
+## Ruhe ist ein Befehl. Und manchmal der wichtigste.
+##
+#####################################################################
+## Weiterführend:
+##  → Nächstes Kapitel: 02-09 – INT & SYSCALL – Tore zum Kernel
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-02-10
+#####################################################################
+## Lektion 02-10: REP & MOVS/STOS – Maschinen wiederholen
+##
+## Maschinen sind nicht kreativ – aber unermüdlich.
+## Die Wiederholung ist ihre Stärke. Dafür gibt es `REP`, `MOVS`, `STOS`.
+##
+## ------------------------
+## 🔁 REP – Repeat Prefix
+## ------------------------
+##
+##   rep   <Befehl>
+##
+## Wirkung:
+## - Wiederholt den folgenden String-Befehl, so oft wie in `RCX` angegeben
+## - Zählt mit jedem Durchlauf `RCX` herunter
+##
+## Beispiel:
+##   rep movsb     ; kopiert RCX Bytes von RSI nach RDI
+##
+## Hinweise:
+## - Nutzt `RSI` (Source Index) und `RDI` (Destination Index)
+## - Arbeitet byteweise (`movsb`) oder wortweise (`movsw`, `movsd`, `movsq`)
+##
+## ------------------------
+## 📦 MOVS – Move String
+## ------------------------
+##
+##   movsb / movsw / movsd / movsq
+##
+## Beschreibung:
+## - Kopiert einen Wert vom Speicher bei `RSI` nach `RDI`
+## - Die Datenmenge ergibt sich aus dem Suffix (b = Byte, w = Word, ...)
+##
+## ------------------------
+## 🧱 STOS – Store String
+## ------------------------
+##
+##   stosb / stosw / stosd / stosq
+##
+## Beschreibung:
+## - Speichert den Inhalt von `AL`/`AX`/`EAX`/`RAX` an die Adresse `RDI`
+## - Auch hier kann `REP` genutzt werden:
+##
+## Beispiel:
+##   mov rax, 0         ; zu schreibender Wert
+##   mov rcx, 1000      ; wie oft
+##   rep stosq          ; schreibt 1000 × 0 an Speicher bei RDI
+##
+## ------------------------
+## 🔎 Maschinenbetrachtung
+## ------------------------
+##
+## Diese Befehle sind wie Laufbänder:
+## - Du stellst Quelle, Ziel und Anzahl ein – der Rest läuft automatisch.
+## - REP gibt den Takt vor, MOVS/STOS führen aus.
+##
+## Maschinen brauchen klare Anweisungen – aber sie übernehmen den Rhythmus.
+##
+## ------------------------
+## 🧩 Einsatz in Pylovara
+## ------------------------
+##
+## - NANO-Module können Speicherbewegungen simulieren
+## - LOGIC kann REP-Zyklen visuell darstellen
+## - Perfekt für SYSTEMNAHE Initialisierungen im BINARCODE-Modus
+##
+## Maschinen wiederholen nicht nur – sie perfektionieren durch Wiederholung.
+##
+######### ENDE VON KAPITEL 1 - 10 (Instruction Set) #################
+#####################################################################
+## 🧱 Ende von Kapitelgruppe 02-XX – Die Befehle
+##
+## Nächste Gruppe: 03-XX – Flags und Maschinenzustände
+##
+## Empfohlen: Beginne mit:
+##   → 03-01: FLAGS – Maschinen mit Gefühlen
+#####################################################################
+
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
+#####################################################################
 #####################################################################

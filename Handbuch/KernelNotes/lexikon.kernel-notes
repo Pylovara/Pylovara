@@ -12,12 +12,12 @@
 #####################################################################
 ################### Kernel - Main Übersicht #########################
 
-lex  Lexikon               # Übersicht  | lexikon
-00   Fallback              # Übersicht  | Parser
-01   _86_64 Bit            # Übersicht  | Alles
+lex  Lexikon                  # Übersicht  | lexikon
+00   Fallback                 # Übersicht  | Parser
+01   _86_64 Bit               # Übersicht  | Alles
 
 #####################################################################
-########################## _86_64 ###################################
+######################## _86_64 Register ############################
 
 01-01 Register                #Lektion 1|Was Sind Register
 01-02 Rax,RBX,RCX,RDX,RDX     #Lektion 2|Die Arbeitstiere
@@ -31,11 +31,25 @@ lex  Lexikon               # Übersicht  | lexikon
 01-10 x86_64 Register-Matrix  #Lektion10|Gesamtüberblick
 
 #####################################################################
-################Die Befehle (Instruction Set) #######################
+############# _86_64 Die Befehle (Instruction Set) ##################
 
-02-01  MOV                    #Lektion11|Daten auf Maschinenebene
+02-01 MOV                    #Lektion11|Daten auf Maschinenebene
+02-02 PUSH & POP             #Lektion12|Der Stapel spricht
+02-03 CALL & RET             #Lektion13|Maschinen mit Rückgrat
+02-04 CMP & TEST             #Lektion14|Maschinen vergleichen
+02-05 Jxx                    #Lektion15|Entscheidungen und Sprünge
+02-06 LEA                    #Lektion16|Rechnen ohne Rechnen
+02-07 XCHG & BSWAP           #Lektion17|Wenn Bytes tanzen
+02-08 NOP & HLT              #Lektion18|Pausen im Maschinenrauschen
+02-09 INT & SYSCALL          #Lektion19|Tore zum Kernel
+02-10 REP & MOVS/STOS        #Lektion20|Maschinen wiederholen
 
 #####################################################################
+################### Flags und Maschinenzustände #####################
+
+03-01 FLAGS                  #Lektion21|Maschinen mit Gefühlen
+
 #####################################################################
 ######################## Info Zentrale ##############################
 #####################################################################
+

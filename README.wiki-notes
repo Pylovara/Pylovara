@@ -1,13 +1,13 @@
 #####################################################################################
-            Ⓟylovara-System|Version 0.5.2|Rootbasierter Aufbau
+                    Ⓟylovara-System |Rootbasierter Aufbau
 #####################################################################################
-                                    Install
+                                 Install
 #####################################################################################
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Installer/
 sudo ./full.install-core
 #####################################################################################
-                                  Update Manual
+                               Update Manual
 #####################################################################################
 cd Pylovara/Installer/
 sudo ./pylovara.updater-needle

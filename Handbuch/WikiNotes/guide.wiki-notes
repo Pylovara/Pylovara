@@ -9,16 +9,23 @@
 @wiki-zeilen-nr:-01-01
 =============================================================
 Quelle : helpme.cut-dna
+Quelle : kernel.cut-dna
 
 Es wird über parser definiert
 
 helpme <nr> 
 helpme <kürzel>
+---------------
+kernel <nr>
+kernel <kürzel>
+
 
 Zweck :
 Zentrales Hilfesystem für `helpme`-Befehle.
 wiki-nr werden innerhalb der wiki-notes geparset
 kürzel werden ebenfalls innerhalb geparset
+Das selbe gilt für kernel-notes , dient aber
+anders als die wiki-notes für Architecturen ...
 
 Funktionen :
 - Sucht nach wiki-nr:  per ID oder Name
@@ -30,15 +37,21 @@ Funktionen :
 @wiki-zeilen-nr:-01-02
 =============================================================
 Quelle : helpmex.deluxe-dna
+Quelle : kernelx.deluxe-dna
 
 Zeigt nur die gewollte Zeile an
 
 helpmex 01-01
 helpmex 01-02
+----------------
+kernelx 01-01
+kernelx 01-02
 
 Zweck :
 Zentrale Zeilen HilfSystem für `helpmex`-befehle
-wiki-zeile-nr werden raus gefiltert angezeigt
+wiki-zeile-nr werden raus gefiltert angezeigt.
+Das selbe gilt für kernel-notes und dient in dem
+Aspekt nur für Architecturen .
 
 Funktionen :
 - Unterstützt eigabe exakt zweistellig
@@ -185,6 +198,9 @@ callme firefox
 callme Steam
 callme Chrome
 callme <Program>
+
+wird später eingeglieder als
+callme.finder-dna(ausstehend)
 
 #############################################################
 │# WikiLexikon : guide.wiki-notes

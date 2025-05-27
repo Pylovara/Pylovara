@@ -3,25 +3,17 @@
 Die x86-64-Architektur verfügt über 16 allgemeine 64-Bit-Register:
 
     RAX: Akkumulator für arithmetische Operationen und Rückgabewerte von Funktionen.
-
     RBX: Basisregister, oft für Datenzugriffe verwendet.
-
     RCX: Zählerregister, häufig für Schleifen und Funktionsaufrufe genutzt.
-
     RDX: Datenregister, dient oft als zweites Argument oder für Multiplikation/Division.
-
     RSI: Quellindex für Datenkopien.
-
     RDI: Zielindex für Datenkopien.
-
     RBP: Basiszeiger für den aktuellen Stack-Frame.
-
     RSP: Stackzeiger, zeigt auf die Spitze des Stacks.
-
     R8–R15: Zusätzliche allgemeine Register.
     Brown University Computer Science
 
-📞 Aufrufkonventionen (Calling Conventions)
+Aufrufkonventionen (Calling Conventions)
 System V AMD64 ABI (Linux, macOS, BSD)
 
 Diese Konvention wird in Unix-ähnlichen Systemen verwendet:

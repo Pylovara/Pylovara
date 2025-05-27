@@ -7,9 +7,9 @@
 
 == Zweck ==
 
-Dieses Needle im Modul Pylovara sorgt dafür, dass die zentrale Konfigurationsdatei
+Dieses Core  Modul sorgt dafür, dass die zentrale Konfigurationsdatei
 `/Pylovara/Control/control.pv-conf` automatisch in die jeweilige Shell-Startdatei
-eingebunden wird.
+eingebunden wird.Sollte bei Massiven zsh sourcing probleme dann Helfen ...
 
 Dadurch steht die Konfiguration für Pylovara in Bash, Zsh oder anderen Shells bei jedem
 Terminalstart bereit.
@@ -22,12 +22,15 @@ Terminalstart bereit.
 * Überprüfung, ob der Eintrag bereits vorhanden ist (keine Doppelungen)
 * Falls noch nicht vorhanden: Anhängen der `source`-Zeile mit `sudo`-Rechten
 
-== Verwendung ==
 
 === Aufruf ===
 
 ```bash
-./pylovara.source-bridge-needles
+cd /Pylovara/System/Module/Pylovara/Core
+./pylovara.source-bridge-core
+
+FÜHRE DAS ABER NUR AUS WENN DER FULL INSTALLER IN /Pylovara/Install/ NICHT DAS GEWÜNSCHTE
+ERGEBNIS ERZIELT !!!!!!
 
 
 ####################################### MANUAL ################################################

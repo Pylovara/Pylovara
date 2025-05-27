@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# taschenrechner.max-logic – Vollständiger Logikblock
+
+color_out() {
+    local result="$1"
+    echo -e "\e[32mErgebnis: $result\e[0m"
+}
+
+modus="float"
+nachkommastellen=2
+zulassen_division="ja"
+zulassen_negative="ja"
+
+while true; do
+    echo -n "Rechnung eingeben (oder 'exit'): "
+    read input
+    [[ "$input" == "exit" ]] && break
+
+    if [[ "$input" == *"/"* ]] && [[ "$zulassen_division" != "ja" ]]; then
+        echo "Division ist deaktiviert."
+        continue
+    fi
+
+    if [[ "$input" =~ [-][0-9] ]] && [[ "$zulassen_negative" != "ja" ]]; then
+        echo "Negative Zahlen sind deaktiviert."
+        continue
+    fi
+
+    if [[ "$modus" == "int" ]]; then
+        result=$(( input ))
+    else
+        result=$(echo "scale=$nachkommastellen; $input" | bc -l)
+    fi
+
+    color_out "$result"
+done

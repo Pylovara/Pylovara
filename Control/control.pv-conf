@@ -45,6 +45,12 @@ helpme() {
 helpmex() {
     source "$Shell_DIR/helpmex.deluxe-dna" "$@"
 }
+kernel() {
+    source "$Shell_DIR/kernel.cut-dna" "$@"
+}
+kernelx() {
+    source "$Shell_DIR/kernelx.deluxe-dna" "$@"
+}
 p() {
     source "$Shell_DIR/p.tree-dna" "$@"
 }

@@ -1,0 +1,41 @@
+#####################################################################
+@kernel-nr: lex
+#####################################################################
+        - System Kernel - ON - kernel - The Learn Guide  -
+    ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖ ▗▖   ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▖ ▗▖ ▗▄▖ ▗▖  ▗▖
+    ▐▌ ▐▌  █  ▐▌▗▞▘  █   ▐▌   ▐▌    ▝▚▞▘   █  ▐▌▗▞▘▐▌ ▐▌▐▛▚▖▐▌
+    ▐▌ ▐▌  █  ▐▛▚▖   █   ▐▌   ▐▛▀▀▘  ▐▌    █  ▐▛▚▖ ▐▌ ▐▌▐▌ ▝▜▌
+    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖ ▐▙▄▄▖▐▙▄▄▖▗▞▘▝▚▖▗▄█▄▖▐▌ ▐▌▝▚▄▞▘▐▌  ▐▌
+                                              Pylovara since 2025
+#####################################################################
+################## Das Handbuch fürs Architecten ####################
+#####################################################################
+################### Kernel - Main Übersicht #########################
+
+lex  Lexikon               # Übersicht  | lexikon
+00   Fallback              # Übersicht  | Parser
+01   _86_64 Bit            # Übersicht  | Alles
+
+#####################################################################
+########################## _86_64 ###################################
+
+01-01 Register                #Lektion 1|Was Sind Register
+01-02 Rax,RBX,RCX,RDX,RDX     #Lektion 2|Die Arbeitstiere
+01-03 RSP, RBP                #Lektion 3|Der Stack und seine Wächter
+01-04 RIP                     #Lektion 4|RIP – Der Programmzähler
+01-05 FLAGS                   #Lektion 5|Das geheime Statusregister
+01-06 FS, GS                  #Lektion 6|Die verborgene Macht
+01-07 RFLAGS,                 #Lektion 7|System Calls im Detail
+01-08 Interrupts&Exceptions   #Lektion 8|Brüche in der Realität
+01-09 Paging,CR3              #Lektion 9|Speicherverwaltung
+01-10 x86_64 Register-Matrix  #Lektion10|Gesamtüberblick
+
+#####################################################################
+################Die Befehle (Instruction Set) #######################
+
+02-01  MOV                    #Lektion11|Daten auf Maschinenebene
+
+#####################################################################
+#####################################################################
+######################## Info Zentrale ##############################
+#####################################################################

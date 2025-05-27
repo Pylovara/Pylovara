@@ -1,0 +1,802 @@
+@kernel-nr: 01        (info: nutze kernel lex und kernelx 01-01)
+#####################################################################
+@kernel-zeilen-nr:-01-01
+#####################################################################
+## Lektion 1: Was sind Register? Und warum sie wichtig sind.
+##
+## Dieses Kapitel erklärt, wie und warum Prozessor-Register
+## in x86_64-Systemen aufgebaut sind. Wir fokussieren uns auf
+## die 16 Hauptregister, wie sie unter Linux, Windows, macOS
+## und anderen modernen 64-Bit-Betriebssystemen verwendet werden.
+##
+## ------------------------
+## 🧠 Was ist ein Register?
+## ------------------------
+##
+## Register sind ultrakurze Speicherplätze direkt im Prozessor.
+## Jede CPU hat davon eine feste Menge – sie sind die "Hände"
+## und "Taschen" des Prozessors, wenn er arbeitet:
+##
+##  - Werte merken
+##  - Zwischenstände speichern
+##  - Adressen halten
+##  - Rechenoperationen durchführen
+##
+## Je schneller der Zugriff, desto näher am "Kopf" – und Register
+## sind direkt im Kopf (also im Chip) drin.
+##
+## ------------------------
+## 📜 Woher kommt das Konzept?
+## ------------------------
+##
+## Früher (z. B. im 8086) hatte man 8 Basisregister:
+##  AX, BX, CX, DX, SI, DI, BP, SP
+##
+## Mit x86_64 (also 64-Bit-Erweiterung durch AMD) kam:
+##  - 8 weitere allgemeine Register: R8–R15
+##  - Alle Register wurden auf 64 Bit erweitert: z. B. AX → RAX
+##  - Der Präfix "R" zeigt 64-Bit an
+##
+## Heute haben wir also 16 allgemeine Register:
+##
+##   RAX, RBX, RCX, RDX
+##   RSI, RDI, RBP, RSP
+##   R8,  R9,  R10, R11
+##   R12, R13, R14, R15
+##
+## Dazu kommen Spezialregister (Flags, RIP, Segmentregister etc.),
+## aber diese behandeln wir später.
+##
+## ------------------------
+## 🔄 Wer benutzt das so?
+## ------------------------
+##
+## Die Architektur „x86_64“ (auch AMD64 genannt) ist Standard für:
+##
+##  - Linux-Systeme (Debian, Arch, Red Hat, etc.)
+##  - Windows (ab XP 64 Bit bis heute)
+##  - macOS (bis M1 – danach ARM64)
+##
+## Alle halten sich an diese 16 Register, wenn ein 64-Bit-Modus aktiv
+## ist.
+##
+## ------------------------
+## 🧩 Warum ist das wichtig für Pylovara?
+## ------------------------
+##
+## Wenn wir irgendwann direkten Maschinencode (MCS) bauen wollen,
+## müssen wir wissen, wie der Prozessor "denkt" – und der denkt
+## in Registern, nicht in Variablen.
+##
+## Register sind die **kleinste echte Sprache**, die der Prozessor
+## spricht.
+#####################################################################
+## Weiterführend:
+##  → 01-02: RAX und Familie
+##  → 01-03: Was macht RSP, RBP?
+##  → 01-04: Welche Rolle spielt RIP?
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-02
+#####################################################################
+## Lektion 2: RAX, RBX, RCX, RDX – die Hauptregister der CPU
+##
+## Diese vier Die Arbeitstiere (Register)stammen direkt aus
+## der Urzeit der x86-Architektur (8086) und haben überlebt
+## – weil sie universell einsetzbar sind und in fast jedem
+## Assembly-Code vorkommen.
+##
+## ------------------------
+## 🧱 Aufbau und Namenslogik
+## ------------------------
+##
+##  - AX → RAX  = Accumulator (Rechenregister)
+##  - BX → RBX  = Base (Grundwert / Zeiger)
+##  - CX → RCX  = Counter (Zählregister)
+##  - DX → RDX  = Data (I/O-Register, Zwischenablage)
+##
+## Der Wechsel auf 64-Bit bringt den Präfix „R“, also:
+##
+##   AX   →   EAX   →   RAX
+##   BX   →   EBX   →   RBX
+##   ...
+##
+## Diese Register lassen sich auch in Teilen ansprechen:
+##
+##   RAX = 64 Bit
+##   EAX = untere 32 Bit
+##   AX  = untere 16 Bit
+##   AL  = untere 8 Bit
+##
+## Beispiel:
+##   mov rax, 0x12345678
+##   → danach ist eax = 0x12345678
+##     ax  = 0x5678
+##     al  = 0x78
+##
+## ------------------------
+## 🛠 Was tun die Dinger?
+## ------------------------
+##
+## Diese Register haben keine „festen“ Aufgaben mehr,
+## können also frei verwendet werden – aber:
+##
+##  - **RAX** → Ergebnisregister (z. B. Rückgabewert bei Funktionen)
+##
+##  - **RBX** → beliebig nutzbar
+##
+##  - **RCX** → oft Zähler in Schleifen (LOOP, REP)
+##
+##  - **RDX** → oft für Division, oder für Funktionen mit
+##              2 Rückgabewerten
+##
+## ------------------------
+## 🔁 Beispiel in Maschinensprache
+## ------------------------
+##
+##   add rax, rbx   ; RAX = RAX + RBX
+##   loop:          ; RCX = Zähler
+##     dec rcx
+##     jnz loop     ; Springe zurück, solange RCX ≠ 0
+##
+## ------------------------
+## 🧩 Zusammenhang zu Pylovara
+## ------------------------
+##
+## Diese vier Register tauchen überall auf – im Kernelcode,
+## bei Systemcalls, in Bootloadern, bei BIOS/UEFI, beim Debugging.
+##
+## Deshalb: Wer Pylovara mit Systemnähe aufbaut, muss diese
+## vier gut kennen wie Familienmitglieder.
+##
+#####################################################################
+## Weiterführend:
+##  → 01-03: RSP, RBP – Der Stack und seine Wächter
+##  → 01-04: RIP – Der Programmzähler
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-03
+#####################################################################
+## Lektion 3: RSP, RBP – Der Stack und seine Wächter
+##
+## Zwei der wichtigsten Register im täglichen Systembetrieb sind
+## der **Stack Pointer (RSP)** und der **Base Pointer (RBP)**.
+## Ohne sie funktioniert kein Funktionsaufruf, kein Rücksprung,
+## kein lokaler Speicher – sie sind die Wirbelsäule jedes Programms.
+##
+## ------------------------
+## 🧱 Was ist der Stack?
+## ------------------------
+##
+## Der Stack ist ein Bereich im Arbeitsspeicher, der „von oben
+## nach unten“ wächst. Er speichert temporäre Daten wie:
+##
+##   - Rücksprungadressen bei Funktionsaufrufen
+##   - lokale Variablen innerhalb von Funktionen
+##   - gespeicherte Register (Push/Pop)
+##
+## ------------------------
+## 📍 Rolle von RSP
+## ------------------------
+##
+## RSP = Stack Pointer
+## → Zeigt **immer** auf das oberste Element des Stacks.
+## → Wird bei `push`, `pop`, `call`, `ret` automatisch verändert
+##
+## Wenn ein Wert auf den Stack kommt (`push`), wird RSP kleiner.
+## Wenn ein Wert heruntergenommen wird (`pop`), wird RSP größer.
+##
+##   push rax    ; RSP -= 8 → Wert liegt auf [RSP]
+##   pop rax     ; Wert von [RSP] → RAX, dann RSP += 8
+##
+## RSP verändert sich bei fast jedem Funktionsaufruf.
+##
+## ------------------------
+## 📌 Rolle von RBP
+## ------------------------
+##
+## RBP = Base Pointer
+## → Dient als **Referenzanker** innerhalb von Funktionen.
+##
+## Meist wird bei Funktionsbeginn gespeichert:
+##
+##   push rbp          ; alten Basiswert sichern
+##   mov rbp, rsp      ; RBP zeigt nun auf Stack-Basis der Funktion
+##
+## So kann man in der Funktion gezielt lokale Variablen
+## über relative Adressen wie `[rbp-0x10]` ansprechen.
+##
+## Am Ende wird RBP wiederhergestellt:
+##
+##   mov rsp, rbp
+##   pop rbp
+##   ret
+##
+## ------------------------
+## 🔐 Sicherheit und Debugging
+## ------------------------
+##
+## Der Stack ist kritisch für Sicherheit:
+##
+##   - Buffer Overflows zielen auf RBP/RSP und Rücksprungadressen
+##   - Debugger (wie GDB) zeigen mit RBP den Stack Frame
+##
+## Deshalb: wer den Stack versteht, versteht das Herz des Programms.
+##
+## ------------------------
+## 🧩 Zusammenhang zu Pylovara
+## ------------------------
+##
+## Stack-Kontrolle ist zentral, wenn wir:
+##
+##   - eigene Bootloader bauen
+##   - Speicherlecks analysieren
+##   - rekursive Abläufe in AIMS oder LOGIC nachbilden
+##
+## RSP/RBP gehören zu den heiligsten Registern – wir behandeln sie
+## mit Respekt und Präzision.
+##
+#####################################################################
+## Weiterführend:
+##  → 01-04: RIP – Der Programmzähler
+##  → 01-05: Flags – das geheime Statusregister
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-04
+#####################################################################
+## Lektion 4: RIP – Der Programmzähler
+##
+## Das **RIP-Register (Instruction Pointer)** zeigt **immer**
+## auf die **Adresse der nächsten auszuführenden Instruktion**.
+##
+## Ohne RIP gäbe es keinen Ablauf. Kein „Was kommt als Nächstes?“.
+## Kein Sprung, kein Call, kein Return. RIP ist der Taktgeber.
+##
+## ------------------------
+## 🔭 Was macht RIP?
+## ------------------------
+##
+## RIP enthält den Speicherort (Adresse) der nächsten Instruktion.
+##
+## Beispiele:
+##   0x4000f3: mov rax, 1
+##   0x4000f8: syscall
+##
+## Während `mov rax, 1` ausgeführt wird, zeigt RIP auf `0x4000f3`.
+## Nach der Ausführung springt RIP automatisch zu `0x4000f8`.
+##
+## ------------------------
+## ↪️ RIP bei Sprüngen und Aufrufen
+## ------------------------
+##
+## Befehle wie `jmp`, `call`, `ret`, `jne`, `loop` verändern RIP:
+##
+##   call foo      → RIP = Adresse von `foo`
+##   jmp label     → RIP = Adresse von `label`
+##   ret           → RIP = Wert vom Stack (Rücksprungadresse)
+##
+## Das bedeutet: Jedes Kontrollflusskonstrukt arbeitet mit RIP.
+##
+## ------------------------
+## 🧠 RIP & Assembler-Logik
+## ------------------------
+##
+## Moderne CPUs nutzen intern :
+##         **Pipelines** und **Speculative Execution**.
+##
+## RIP steuert diese Logik:
+##         „Welche Anweisung könnte als Nächstes kommen?“
+##
+## Deshalb ist RIP oft Ziel von:
+##
+##   - Buffer Overflow Angriffen
+##   - JIT-Manipulationen
+##   - Debugging Breakpoints
+##
+## ------------------------
+## 🧩 Zusammenhang zu Pylovara
+## ------------------------
+##
+## RIP ist wichtig, wenn du:
+##
+##   - Sprung-Logik in LOGIC-Dateien kontrollierst
+##   - eigene Ablaufsteuerung für AIMS entwirfst
+##   - Binärdaten direkt patchst
+##
+## Jeder gezielte Sprung oder Call basiert auf RIP.
+##
+## Du kannst dir RIP wie den Taktstock eines Dirigenten vorstellen:
+## Er zeigt, was als Nächstes kommt – und alles andere folgt.
+##
+#####################################################################
+## Weiterführend:
+##  → 01-05: Flags – das geheime Statusregister
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-05
+#####################################################################
+## Lektion 5: FLAGS – Das geheime Statusregister
+##
+## Das **FLAGS-Register** ist kein gewöhnliches Register.
+## Es enthält **einzelne Status-Bits**, die den Zustand des
+## letzten Befehls beschreiben – und darüber den Programmfluss
+## beeinflussen können.
+##
+## ------------------------
+## 🎯 Was speichert FLAGS?
+## ------------------------
+##
+## Jedes Bit steht für einen bestimmten Zustand:
+##
+##   - ZF (Zero Flag)     → Ergebnis war Null?
+##   - CF (Carry Flag)    → Übertrag beim Rechnen?
+##   - SF (Sign Flag)     → Ergebnis negativ?
+##   - OF (Overflow Flag) → Rechenüberlauf passiert?
+##
+## Beispiel:
+##   cmp rax, 5       ; vergleicht rax mit 5
+##   je  gleich       ; springt, wenn ZF = 1 (also gleich)
+##
+## Der CMP-Befehl setzt nur Flags – je/jne/jg/etc. reagieren darauf.
+##
+## ------------------------
+## ⏱️ FLAGS = Konditionsmaschine
+## ------------------------
+##
+## Flags dienen als Entscheidungsbasis für Kontrollstrukturen:
+##
+##   - if/else         → über je, jne, jg, jl etc.
+##   - Schleifen       → über loop, jcxz, jne
+##
+## Deshalb werden FLAGS nach **jeder Rechenoperation**
+## oder jedem Vergleich **automatisch angepasst**.
+##
+## ------------------------
+## 🔍 FLAGS lesen & setzen
+## ------------------------
+##
+##   - `lahf`   → lädt Flags in AH
+##   - `sahf`   → schreibt AH zurück in FLAGS
+##   - `pushf`  → speichert FLAGS auf Stack
+##   - `popf`   → stellt FLAGS vom Stack wieder her
+##
+## Du kannst Flags auch gezielt setzen:
+##
+##   stc     ; Set Carry
+##   clc     ; Clear Carry
+##   cmc     ; Complement Carry
+##
+## ------------------------
+## 🧩 Zusammenhang zu Pylovara
+## ------------------------
+##
+## FLAGS sind essenziell bei:
+##
+##   - Entscheidungs-LOGIC in AIMS
+##   - Low-Level-Fehleranalysen (Overflow, Zero Detection)
+##   - präzisem Debugging im Micro/Nano-Speicherraum
+##
+## Ohne Flags keine smarte Kontrolle – sie sind das geheime
+## Nervensystem jedes Programms.
+##
+#####################################################################
+## Weiterführend:
+##  → 01-06: Segmentregister – FS, GS und ihre verborgene Macht
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-06
+#####################################################################
+## Lektion 6: Segmentregister – FS, GS und die ihre verborgene Macht
+##
+## Die Segmentregister stammen aus der frühen x86-Zeit, wo
+## Speicher noch in „Segmenten“ organisiert war.
+## Heute wirken sie wie Relikte – doch FS und GS sind **mächtige
+## Werkzeuge** im modernen 64-Bit-System, besonders in der Kernelwelt.
+##
+## ------------------------
+## 🧱 Klassische Segmentregister
+## ------------------------
+##
+## In der Theorie gibt es 6 Stück:
+##
+##   - CS (Code Segment)
+##   - DS (Data Segment)
+##   - SS (Stack Segment)
+##   - ES, FS, GS (zusätzliche Segmente)
+##
+## In 64-Bit-Modus: CS, SS etc. werden meist ignoriert – außer FS/GS!
+##
+## ------------------------
+## 🚪 FS und GS – Türen in verborgene Räume
+## ------------------------
+##
+## FS und GS zeigen auf spezielle Speicherbereiche – z.B.:
+##
+##   - Thread-Local Storage (TLS)
+##   - Kernel-Datenstrukturen
+##
+## Unter Linux zeigt GS z. B. im Kernelmode oft auf die
+## `task_struct` eines Threads – so können Prozesse schnell
+## auf sich selbst zugreifen.
+##
+## In Usermode nutzt TLS meist FS:
+##
+##   mov rax, qword ptr fs:0x30    ; lese Thread-Info
+##
+## ------------------------
+## 🧠 Bedeutung für Pylovara / MCS
+## ------------------------
+##
+## FS/GS sind ideal für:
+##
+##   - isolierte Speicherbereiche je LOGIC/AGENT
+##   - Aufbau eines Micro-Scheduling-Systems
+##   - Stack-Frame-Erweiterung ohne Zugriffskonflikte
+##
+## Wer FS/GS kontrolliert, kann Mini-Realitäten für jeden
+## Prozess definieren – perfekt für das AIMS/MCS-Konzept.
+##
+## ------------------------
+## 🔐 Zugriff und Manipulation
+## ------------------------
+##
+## Nur mit besonderem Privileg darf man FS/GS ändern:
+##
+##   wrfsbase / wrgsbase (nur ab Haswell+)
+##
+## Früher ging das nur per Systemcall (z. B. `arch_prctl`)
+##
+##   syscall: ARCH_SET_FS / ARCH_GET_FS
+##
+## ------------------------
+## ⚙️ Beispiele
+## ------------------------
+##
+##   mov rax, gs:0x08     ; lade Daten relativ zu GS
+##   mov fs:0x10, rbx     ; schreibe rbx in TLS
+##
+## Diese relativen Offsets ermöglichen superschnellen Zugriff
+## ohne klassische Pointer-Verwaltung.
+##
+#####################################################################
+## Weiterführend:
+##  → 01-07: RFLAGS, SYSENTER & SYSCALL – System Calls im Detail
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-07
+#####################################################################
+## Lektion 7: RFLAGS, SYSENTER & SYSCALL – System Calls im Detail
+##
+## Systemaufrufe sind der heilige Übergang zwischen User-Mode
+## und Kernel-Mode. Ohne sie gäbe es keine Dateioperation,
+## kein Netzwerk, keinen Zugriff auf Geräte.
+##
+## Dafür zuständig: spezielle Instruktionen wie `syscall`,
+## `sysenter` – und das **RFLAGS-Register**, das Kontrollbits trägt.
+##
+## ------------------------
+## 🧠 RFLAGS – das Kontrollzentrum
+## ------------------------
+##
+## Das RFLAGS-Register enthält Statusbits, u. a.:
+##
+##   - CF (Carry Flag)
+##   - ZF (Zero Flag)
+##   - SF (Sign Flag)
+##   - IF (Interrupt Enable Flag)
+##
+## Beispiel:
+##
+##   cmp rax, rbx
+##   je gleich   ; springt, wenn Zero-Flag gesetzt (ZF=1)
+##
+## RFLAGS ist kritisch für Entscheidungen, Sprünge, Interrupts.
+##
+## ------------------------
+## 🚀 SYSENTER vs. SYSCALL
+## ------------------------
+##
+## Beides sind Instruktionen für schnelle Systemaufrufe:
+##
+##   - `sysenter`: älter, Intel, braucht vorher MSR-Setup
+##   - `syscall` : moderner, AMD64-Standard
+##
+## Beide sind schneller als klassische Software-Interrupts
+## (`int 0x80`), die früher genutzt wurden.
+##
+## Beispiel `syscall`-Nutzung (Linux x86_64 ABI):
+##
+##   mov rax, 60        ; syscall-nr für exit()
+##   xor rdi, rdi       ; rückgabewert = 0
+##   syscall            ; Kernel wird aufgerufen
+##
+## ------------------------
+## 🔄 Ablauf eines SYSCALL
+## ------------------------
+##
+## 1.User schreibt Werte in Register (rax = Nummer, rdi, rsi … = args)
+## 2.`syscall` → CPU wechselt in Kernel-Mode
+## 3.Kernel liest Register, führt Operation aus
+## 4.Rückgabe erfolgt über rax
+##
+## ------------------------
+## 🧩 Für Pylovara relevant
+## ------------------------
+##
+## Wer `syscall` versteht, kann:
+##
+##   - Minimalbetriebssysteme wie MCS realisieren
+##   - direkten Zugriff auf Kernel-Services ermöglichen
+##   - AIMS-Sensorik in Hardware-nahe Logik überführen
+##
+## RFLAGS wiederum erlaubt:
+##
+##   - Debug-Traps
+##   - bedingte Logik ohne Abfrage-Overhead
+##   - feinstufiges Verzweigen in LOGIC-Modulen
+##
+#####################################################################
+## Weiterführend:
+##  → 01-08: Interrupts & Exceptions – Brüche in der Realität
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-08
+#####################################################################
+## Lektion 8: Interrupts & Exceptions – Brüche in der Realität
+##
+## Kein System läuft perfekt. Manchmal bricht die Realität.
+## Genau dafür gibt es Interrupts und Exceptions – Reaktionen
+## auf plötzliche Ereignisse, intern oder extern ausgelöst.
+##
+## Diese Mechanismen unterbrechen den normalen Programmfluss
+## und übergeben die Kontrolle an spezialisierte Handler.
+##
+## ------------------------
+## ⚡ Interrupts (IRQ)
+## ------------------------
+##
+## Interrupts stammen meist von Hardware – z. B.:
+##
+##   - Tastaturanschläge
+##   - Netzwerkpakete
+##   - Timer-Signale (z. B. für Multitasking)
+##
+## Ablauf:
+##
+##   1. Gerät signalisiert Ereignis an CPU
+##   2. CPU speichert Zustand, springt zu Interrupt-Handler
+##   3. Nach Abarbeitung: Rückkehr an vorherige Stelle
+##
+## Beispiel (x86):
+##
+##   IRQ1 → Tastatur
+##   IRQ0 → PIT (Timer)
+##
+## ------------------------
+## 🚨 Exceptions
+## ------------------------
+##
+## Exceptions entstehen intern – etwa bei:
+##
+##   - Division durch Null
+##   - ungültigem Opcode
+##   - Zugriffsverletzungen (Page Fault)
+##
+## Beispiel:
+##
+##   div rcx     ; wenn rcx = 0 → #DE (Divide Error)
+##
+## Auch hier springt die CPU in einen speziellen Exception-Handler.
+##
+## ------------------------
+## 🧠 IDT – Interrupt Descriptor Table
+## ------------------------
+##
+## Die IDT ist eine spezielle Tabelle, die jedem Interrupt
+## und jeder Exception eine Adresse zuweist – wohin soll
+## der Prozessor springen, wenn ein bestimmtes Ereignis eintritt?
+##
+## Sie ist damit eine Art Notfall-Routing-Tabelle des Systems.
+##
+## ------------------------
+## 🧩 Bedeutung für Pylovara
+## ------------------------
+##
+## In einem System wie MCS mit reflexiven AIMS-Agenten sind
+## Interrupts der Schlüssel für:
+##
+##   - asynchrone Reaktion auf Zustände
+##   - Event-getriebene LOGIC-Strukturen
+##   - Hardware-nahe Fehlerbehandlung
+##
+## Exceptions dagegen:
+##
+##   - helfen beim Bau stabiler, selbstkorrigierender Module
+##   - sind essenziell für Debug-, Analyse- und Schutzmechanismen
+##
+## Wer Interrupts und Exceptions meistert, kann Systeme bauen,
+## die nicht nur reagieren – sondern vorausschauend leben.
+##
+#####################################################################
+## Weiterführend:
+##  → 01-09: Paging, CR3 & Speicherverwaltung
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-09
+#####################################################################
+## Lektion 9: Paging, CR3 & Speicherverwaltung
+##
+## Moderne Betriebssysteme arbeiten nicht direkt mit physischem
+## Speicher – sie nutzen ein Konzept namens **Paging**.
+## Damit entsteht ein virtueller Adressraum für Prozesse.
+##
+## Dieses System schützt Speicherbereiche, verhindert Kollisionen
+## und erlaubt effektives Multitasking.
+##
+## ------------------------
+## 📦 Virtuelle Seiten
+## ------------------------
+##
+## Speicher wird in Seiten (Pages) aufgeteilt – meist 4 KB groß.
+##
+## Virtuelle Adressen → durch Paging → Physikalische Adressen.
+##
+## Die CPU nutzt dafür mehrere Tabellenebenen:
+##
+##   - PML4 → PDPT → PD → PT → Page
+##
+## Das Ganze nennt sich **4-Level Paging** (bei x86_64).
+##
+## ------------------------
+## 🧭 CR3 – Der Pfadwechsler
+## ------------------------
+##
+## Das Register CR3 zeigt auf die **Page Map Level 4
+## (PML4)**-Tabelle.
+##
+## Jeder Prozess bekommt beim Start eine eigene PML4-Struktur.
+##
+## Wenn der Scheduler Prozesse wechselt, lädt er ein neues CR3:
+##
+##   mov cr3, rax    ; neuer virtueller Speicher-Kontext aktiv
+##
+## So entstehen isolierte Speicherwelten pro Task.
+##
+## ------------------------
+## 🔒 Schutzmechanismus
+## ------------------------
+##
+## Paging erlaubt gezielten Schutz:
+##
+##   - User-Space vs. Kernel-Space
+##   - Schreibschutz
+##   - Nur-Ausführbar-Bereiche (NX-Bit)
+##
+## Exceptions wie der **Page Fault (#PF)** melden Zugriffe auf
+## nicht existierende oder geschützte Seiten.
+##
+## ------------------------
+## 🧩 Zusammenhang zu Pylovara
+## ------------------------
+##
+## Paging ist Grundlage für:
+##
+##   - Kapselung von AIMS-Modulen
+##   - Simulierte Speicherstrukturen in LOGIC
+##   - Schutz virtueller Maschineninstanzen
+##
+## Wer Paging versteht, kann:
+##
+##   - Speicherkollisionen verhindern
+##   - gezielt Speicherbereiche manipulieren
+##   - eigene „Mini-Betriebssysteme“ sicher abbilden
+##
+## CR3 ist der Schlüssel zur Speicheridentität – wer ihn wechselt,
+## ändert das Weltbild des Prozessors.
+##
+#####################################################################
+## Weiterführend:
+##  → 01-10: x86_64 Register-Matrix – Gesamtüberblick
+##
+#####################################################################
+
+#####################################################################
+@kernel-zeilen-nr:-01-10
+#####################################################################
+## Lektion 10: x86_64 Register-Matrix – Gesamtüberblick
+##
+## Nach den letzten 9 Kapiteln haben wir viele Register kennengelernt.
+## Diese Lektion fasst alles in einer strukturierten Übersicht zusammen.
+## Die x86_64-Architektur bietet uns **eine Matrix aus 16 Hauptregistern**,
+## erweitert durch spezielle Steuer- und Segmentregister.
+##
+## ------------------------
+## 🧠 Allgemeine Register
+## ------------------------
+##
+## Diese 16 Register dienen der Datenverarbeitung:
+##
+##   RAX – Rechen-Accumulator
+##   RBX – Daten-Base
+##   RCX – Zähler (Loop, Shifts)
+##   RDX – Daten-Erweiterung (z.B. Division)
+##
+##   RSI – Source-Index (Strings, memcpy)
+##   RDI – Destination-Index
+##   RBP – Stack-Basis
+##   RSP – Stack-Pointer
+##
+##   R8  bis R15 – Erweiterte temporäre Register
+##
+## Sie alle können als 64, 32, 16 oder 8 Bit genutzt werden:
+##
+##   RAX = 64 Bit → EAX (32) → AX (16) → AL/AH (8)
+##
+## ------------------------
+## 🧭 Steuer- und Kontrollregister
+## ------------------------
+##
+##   RIP   – Instruction Pointer (aktuelle Ausführung)
+##   RFLAGS – Statusflags (Zero, Carry, Overflow, etc.)
+##   CR0–CR4 – Steuerung von Paging, Schutz, usw.
+##   CR3   – zeigt auf die PML4 → zentrale Paging-Einheit
+##
+## ------------------------
+## 🧩 Segmentregister
+## ------------------------
+##
+## CS, DS, ES, SS – klassische Segmentierung (selten genutzt)
+## FS, GS        – moderne Sondersegmente (z. B. Thread-Local Storage)
+##
+## ------------------------
+## 🛠 Spezielle Operationseinheiten
+## ------------------------
+##
+## SYSCALL / SYSENTER – direkter Übergang in Kernel-Modus
+## Exceptions / Interrupts – Signale für Fehler oder Geräte
+## MSRs (Model Specific Registers) – Maschinenweite Einstellungen
+##
+## ------------------------
+## 🧩 Zusammenhang zu Pylovara
+## ------------------------
+##
+## Diese Matrix ist wie das **Herzstück des Maschinenkörpers**:
+##
+##   - LOGIC nutzt die semantische Funktion der Register
+##   - AIMS kann Registerwerte als Feedback interpretieren
+##   - NANO- und MICRO-Module können bestimmte Register simulieren
+##
+## Wer jedes Register in dieser Matrix **versteht, benennt und
+## manipuliert**,
+##
+## kann die Maschine auf Bit-Ebene steuern.
+##
+## In Pylovara werden wir diese Matrix:
+##
+##   - visualisieren
+##   - simulieren
+##   - und als Basis für den BINARCODE-Assembler nutzen
+##
+#####################################################################
+## 🧱 Nächste Kapitelgruppe: 02-XX – Die Befehle (Instruction Set)
+##
+## Empfohlen: Beginne mit:
+##   → 02-01: MOV – Daten verschieben auf Maschinenebene
+##
+#####################################################################

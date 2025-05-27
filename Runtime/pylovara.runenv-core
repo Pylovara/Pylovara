@@ -1,0 +1,13 @@
+# Pylovara Autark-Modul: runenv.core
+
+base="/Pylovara/Runtime"
+
+mkdir -p "$base/Logs"
+mkdir -p "$base/Protokolle"
+
+# FIFO vorbereiten
+[[ -p "$base/Protokolle/main.pipe" ]] || mkfifo "$base/Protokolle/main.pipe"
+
+# Loop starten
+nohup bash "$base/pylovara.runenv.loop" >> "$base/Logs/stdout.log" 2>> "$base/Logs/stderr.log" &
+echo ">> [RUNENV] Laufende Umgebung gestartet."

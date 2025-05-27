@@ -1,0 +1,14 @@
+# Interner Kernprozess von runenv
+
+base="/Pylovara/Runtime"
+pipe="$base/Protokolle/main.pipe"
+
+echo ">> [RUNENV-LOOP] Starte zyklische Protokollverarbeitung..."
+
+while true; do
+  if read -r line < "$pipe"; then
+    echo ">> [PROTOKOLL] Eingabe erkannt: $line"
+    eval "$line" >> "$base/Logs/stdout.log" 2>> "$base/Logs/stderr.log"
+  fi
+  sleep 0.2
+done

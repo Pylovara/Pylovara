@@ -1,0 +1,21 @@
+#### Installations Setup
+
+Für einen vollständigen Installations Vorgang verwende bitte
+
+sudo ./full.install-core
+
+Möchtetest du vara pakete updaten unter archlinux , verwende bitte
+
+sudo ./paket.updater-core
+
+Möchtest du ein Pylovara System Update dann Verwende bitte
+
+sudo ./pylovara.updater-needle
+
+Möchtest du zucckünftig in das Pylovara Chat Netzwerk dann installiere bitte
+
+sudo ./nc.install-core
+
+Impressum wie Issues schaue in
+
+cat policy.security-alert

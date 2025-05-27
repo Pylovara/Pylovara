@@ -27,11 +27,11 @@ echo "⬇️ Klone Repository..."
 git clone "$REPO_URL" "$PV_DIR"
 
 # 3. Wrapper setzen
-if [ -f "$PV_DIR/usr/bin/$WRAPPER_NAME" ]; then
-  cp "$PV_DIR/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
+if [ -f "$PV_DIR/Setup/usr/bin/$WRAPPER_NAME" ]; then
+  cp "$PV_DIR/Setup/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
   chmod +x "$WRAPPER_PATH"
 else
-  echo "❌ Wrapper nicht gefunden: $PV_DIR/usr/bin/$WRAPPER_NAME"
+  echo "❌ Wrapper nicht gefunden: $PV_DIR/Setup/usr/bin/$WRAPPER_NAME"
   exit 1
 fi
 

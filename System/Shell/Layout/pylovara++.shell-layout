@@ -44,5 +44,9 @@ ${PV_COLOR_PROMPT}│ₛᵢₙ𝒸ₑ ₂₀₂₅
 ${PV_COLOR_PROMPT}└─${PV_COLOR_FG}[${PV_COLOR_PROMPT}=>${RESET}${PV_COLOR_FG}]${RESET}"
 }
 
+if [[ -r /usr/share/bash-completion/bash_completion ]]; then
+  . /usr/share/bash-completion/bash_completion
+fi
+
 # Haupt-PROMPT_COMMAND
 export PROMPT_COMMAND='set_prompt_color; update_prompt'

@@ -1,0 +1,48 @@
+
+Proteinsprache / MCS-Syntax
+Grundregeln der Lesereihenfolge
+& Auswertung
+──────────────────────────────────────────────
+
+# RICHTUNG / FLOW
+- Alle Proteinpakete »[...]« werden STANDARDMÄSSIG **von LINKS nach RECHTS** verarbeitet.
+- Eine Proteinkette im Block ¢|...|¢ wird ebenfalls **linear von LINKS nach RECHTS** durchlaufen.
+
+# BEFEHLE / ARGUMENTE
+- Innerhalb eines Proteins »[ 'Befehl' | Argumente | Zielangabe ]« wird:
+  - zuerst der Befehl verarbeitet,
+  - dann die Übergabewerte / Bedingungen,
+  - und zuletzt Zielinformationen oder Postaktionen.
+
+# AUSNAHMESTEUERUNG
+- Folgende Zeichen verändern den Ablauffluss:
+  - `>>` = Fork → Split rechtsläufig (von links ausgehend)
+  - `<<` = Fork → Split linksläufig (von rechts rückwirkend)
+  - `~~` = Merge → Vereinigt mehrere Proteinpakete, auch verzögert
+  - `::` = Parallel → Gleichzeitige Transport- oder Ausführungslogik
+
+# AUSGABEN / KOMMANDOS
+- `''` kennzeichnet einen Befehl
+- `""` markiert reine Ausgabetexte
+- `"Text"` innerhalb eines Proteins zählt als Print-Ausgabe und wird **nicht** interpretiert
+- `'Befehl'` wird als echter Befehl erkannt und vom Interpreter umgesetzt
+
+# ZIEL & OUTPUT
+- `$Ziel` = Dirigent/Empfänger, z.B. Kernel, API, Subsystem
+- `§Ziel` = Logischer Prozesspfad (RAM, TMP, Dev-Slot, virtuelle Einheit)
+
+# NICHT ERLAUBT:
+- Eine rückwärts gerichtete Interpretation OHNE expliziten Steuerbefehl (`<<`)
+- Vermischung von `"Text"` mit `'Befehl'` ohne Trenner `|`
+
+# STANDARDPATTERN (für einfache Prüfung):
+
+»['Starte'|{Pfad|/opt/test.sh}]«§Test01=$Local
+
+→ wird interpretiert als:
+1. Befehl: 'Starte'
+2. Argument: Pfad mit Wert
+3. Ausgabe: an Zielpfad §Test01
+4. Übergabe: an Dirigent $Local
+──────────────────────────────────────────────
+

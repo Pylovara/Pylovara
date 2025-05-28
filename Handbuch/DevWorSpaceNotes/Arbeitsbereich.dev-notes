@@ -1,0 +1,28 @@
+Um das Ganze für Parser/Bash zu vereinfachen, könnte jeder Block ein Meta-Typ-Header bekommen:
+
+#@MCS::PROTEIN
+¢| … |¢
+
+#@MCS::LABEL
+»[…«
+
+#@MCS::MERGE
+~~(1)::(2)::(3) => $TARGET
+
+
+Es ist jetzt bereit, Version 0.5 als formale Dokumentation zu übernehmen.
+Nächste Schritte wären:
+
+    erste Parsing-Beispiele aufbauen (shell-nah oder lua)
+
+    Syntax-Validierung
+
+    evtl. ein Editor-Template mit farbiger Trennung (z. B. für Kitty oder micro)
+
+    4. Forking: >>, <<, ::
+
+Top. Bitte aber auch:
+
+»[ Teilprozess | Daten ]« >> $Pfad1 :: $Pfad2 :: $Pfad3
+
+Klar: :: ist gleichzeitige Übergabe – was passiert, wenn § statt $ verwendet wird? Werden die Forks dann intern rekombiniert?

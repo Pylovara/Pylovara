@@ -28,3 +28,6 @@ $PV_COLOR_SYMBOL ┌[$PV_COLOR_USER\\u$PV_COLOR_SYMBOL@$PV_COLOR_HOST\\h$PV_COLO
 $PV_COLOR_SYMBOL │$PV_COLOR_PV ᴾʸˡᵒᵛᵃʳᵃ
 $PV_COLOR_RESET $PV_COLOR_SYMBOL└[$PV_COLOR_PATH\$PV_CURRENT_DIR$PV_COLOR_SYMBOL]> \$ $PV_COLOR_RESET"
 '
+if [[ -r /usr/share/bash-completion/bash_completion ]]; then
+  . /usr/share/bash-completion/bash_completion
+fi

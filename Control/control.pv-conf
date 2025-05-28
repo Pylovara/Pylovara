@@ -63,6 +63,15 @@ if [ -f "$Shell_DIR/dna.trigger-dna" ]; then
     source "$Shell_DIR/dna.trigger-dna"
 fi
 
+function record() {
+    source "$Shell_DIR/terminal.record-dna" "$@"
+    TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+    FILENAME="${TIMESTAMP}.terminal-note"
+    echo "🎬 Terminalaufzeichnung gestartet. Alles wird in '$FILENAME' gespeichert."
+    script -q -t 2>"/tmp/terminal-${TIMESTAMP}.timing" "$FILENAME"
+    echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
+}
+
 ### Kommentar:  dna Kaputt | pylo bugt | p - helpme - helpmex funktioniert
 ##############################################################################
 ### Debug Sektion

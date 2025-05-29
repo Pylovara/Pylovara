@@ -1,0 +1,37 @@
+Um das Ganze für Parser/Bash zu vereinfachen, könnte jeder Block ein Meta-Typ-Header bekommen:
+¶Konzept Logikformen / Pattern Review / schleifen Logik :
+
+¢|IP * ON »[<Befehl>|<Argument>]«+§Zielreferenz=$Dirigent
+    # »[<Befehl>|<Argument>]«:§Zielreferenz=$Dirigent|¢
+--------------------------------------------------------------------
+¶Konzept Direkt Logik wenn bekannt :
+
+¢|Microphon * OFF »['Zeige'|"Microphon  Aus"]«§Desktop=$Local|¢
+--------------------------------------------------------------------
+¶Konzept StrömungsValue Logik :
+
+¢| Device < {T|70}  »[¨70¨|'ON'|{Fan|Speed '75'}]« $/sys/devices/platform/applesmc.768/=$Local
+    # »[¨40¨|'ON'|{Fan|Speed '58'}]« $/sys/devices/platform/applesmc.768/=$Local|¢
+--------------------------------------------------------------------
+¶Konzept Speicher Ram/Tmp/Swap/Rom
+
+»['Lade'|{Pfad|/etc/pacman.conf}]«§TMP01=$Local
+--------------------------------------------------------------------
+¶Konzept Ausführung Vorgang :
+
+¢| IP ! ON »['Open’|{Pfad|/usr/bin/firefox}|'Connect'|{IP|https://127.0.0.1}]«§Desktop=$Local
+--------------------------------------------------------------------
+¶Konzept Idee zu automatisierten Nest Proteinen zu
+¶verschiedenen zwecken für dynmaische aufbauten :
+
+¢| * »[ ¢| 'Messung' | {Temp|50} «(1) ]« §SensorMod=$Local |¢
+                                   ¶Transportiert dünamische Tokens mit NR zuweisung
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Beispiel für eigene Logik aufbau Regeln :
+⍱DEFINE:¶ als Meta-Konzeptheader  
+⍱DEFINE:¢|...|¢ als Steuerblock  
+⍱DEFINE:»[A|B|C]« als Aktionsausdruck  
+⍱DEFINE:§XYZ=Ziel als Zielverknüpfung  
+⍱DEFINE:{A|B} als KeyVal-Mapping  
+⍱DEFINE:¨VAL¨ als Einzelwert

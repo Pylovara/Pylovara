@@ -1,0 +1,34 @@
+register_structures = [
+    {
+        'structure': '(Zahl)',
+        'description': 'Zahl-Zuweisung für Verarbeitung, ähnlich Muster_Dir, optional verwendbar zur Segmentierung und Transportlabelung.',
+        'example': '(1)',
+        'use_case': 'GPU-Daten, Soundchannel-Split, etc.',
+        'created': '2025-05-29',
+        'author': 'Thomas Zimmermann'
+    },
+    {
+        'structure': '{Typ|Wert}',
+        'description': 'Datenstruktur mit Typdefinition und Wertzuweisung.',
+        'example': '{Pfad|/etc/passwd}',
+        'use_case': 'Pfad-, Interface-, Zahlenübergabe oder Sensorwerte',
+        'created': '2025-05-29',
+        'author': 'Thomas Zimmermann'
+    },
+    {
+        'structure': '(Zahl){Typ|Wert}',
+        'description': 'Kombination aus Labelnummerierung und strukturierter Übergabe',
+        'example': '(3){Interface|wlan0}',
+        'use_case': 'Mehrkanal-Zuweisung wie bei Netzwerk-Adaptern, Audiozuweisungen etc.',
+        'created': '2025-05-29',
+        'author': 'Thomas Zimmermann'
+    },
+    {
+        'structure': '{Typ|Wert}{Typ|Wert}…',
+        'description': 'Verkettete Übergaben – mehrere Strukturen direkt nebeneinander, rekonstruiert durch Parser',
+        'example': '{Band|Frequenz}{Amp|Zahl}{Watt|Zahl}',
+        'use_case': 'Signalstapel, Sensor-Payload, etc.',
+        'created': '2025-05-29',
+        'author': 'Thomas Zimmermann'
+    }
+]

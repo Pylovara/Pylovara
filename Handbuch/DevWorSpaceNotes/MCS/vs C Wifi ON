@@ -1,0 +1,126 @@
+
+MCS vergleich 
+
+¢| Wifi ! ON 
+    »[ON|'Zeig'|"nmcli radio wifi on"]
+        # »['cmd'{WLAN|1}]« §Network =$nmcli
+        # »['…'|¨StatusNaricht¨|"Network Error , Überprüfe dein Wlan"]
+|¢
+
+VS
+
+wifi_on.c
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    int status = system("nmcli radio wifi on");
+    if (status != 0) {
+        fprintf(stderr, "Fehler beim Aktivieren von WLAN\n");
+        return 1;
+    }
+    return 0;
+}
+------------------------------------------------------------------
+
+¢| Abfrage * On
+    »['Spec'|(0){Pfad|/usr/bin/}|(1){Pfad|/usr/bin/networkmanager}|(3){Pfad|/usr/bin/dkms}]«
+    »['Bestätige'|¨wlan0¨|(0)(1)(2)(3)|]«
+    # »[¨wlan0¨|{>>(0)>>(1)>>(2)>>(3)}|"Wlan %s"]« §ESSID = $Interface
+    ## »['…'|'stder'|"Wlan Adapter nicht gefunden oder kein Zugriff"]
+|¢
+
+
+Vs (wobei wc.essid und der command iw_get_basic_config mir unklar waren)
+
+#include <iwlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    wireless_config wc;
+    int sock = iw_sockets_open();
+    if (iw_get_basic_config(sock, "wlan0", &wc) == 0) {
+        printf("Interface: %s\n", "wlan0");
+        printf("ESSID: %s\n", wc.essid);
+    } else {
+        fprintf(stderr, "WLAN Adapter nicht gefunden oder kein Zugriff\n");
+        return 1;
+    }
+    iw_sockets_close(sock);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Verstanden – du willst die Illusion des direkten Zugriffs in C entlarven. Denn C selbst weiß nichts von WLAN oder Netzwerkadaptern – er muss über Libs alles erst anfragen oder über system() an Shell-Kommandos abgeben. Wir machen die Simulation genau so, wie du willst.
+🧪 SIMULATION: C fragt aktiven WLAN-Adapter ab
+🔧 Was will C tun?
+
+    Aktive Netzwerk-Interfaces auflisten
+
+    Prüfen, ob WLAN aktiv ist
+
+    Ohne Shell-Trick (system()), sondern per C-interner Logik + Libs
+
+⚠️ C MUSS dafür:
+
+    Netlink benutzen oder
+
+    über libnl, glibc oder iwlib gehen → alles extern!
+    → Das zeigt: C kann es nicht ohne Libs.
+
+📄 Beispielcode (C, mit libiw = Wireless Tools)
+
+#include <iwlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    wireless_config wc;
+    int sock = iw_sockets_open();
+    if (iw_get_basic_config(sock, "wlan0", &wc) == 0) {
+        printf("Interface: %s\n", "wlan0");
+        printf("ESSID: %s\n", wc.essid);
+    } else {
+        fprintf(stderr, "WLAN Adapter nicht gefunden oder kein Zugriff\n");
+        return 1;
+    }
+    iw_sockets_close(sock);
+    return 0;
+}
+
+🧱 EXTERNE ABHÄNGIGKEITEN
+
+    libiw-dev (Linux Wireless Tools)
+
+    libc6 für Basis
+
+    keine Chance ohne diese → „direkt“ ist hier eine Lüge

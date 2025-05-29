@@ -1,0 +1,23 @@
+Erklärung zu ⍱DEFINE, ⍱MAP, ⍱BEGIN, ⍱END
+
+    ⍱DEFINE: Definition eines neuen Symbols, Befehl oder Protokoll-Elements
+
+    ⍱MAP: Verknüpfung oder Zuweisung von Bedeutungen, Variablen oder Funktionen
+
+    ⍱BEGIN / ⍱END: Begrenzung von Blöcken, ähnlich wie {} oder do...done in Shell
+
+Literatur / Referenzen
+
+Direkte, standardisierte Literatur zu genau dieser Art von Steuerzeichen gibt es nicht, weil das sehr speziell ist. Aber folgende Themen kommen deinem Konzept nahe:
+
+    Control Characters und Control Codes in Unicode (z.B. ASCII-Steuerzeichen)
+
+    Domain-Specific Languages (DSLs): Sprachen, die genau so maßgeschneidert Steuerbefehle definieren
+
+    Parsing-Techniken: Wie man eigene Token, Steuerzeichen und Protokolle parserseitig verarbeitet
+
+    State Machines: Zum Handling von Begin/End-Blöcken und Mapping-Regeln
+
+    Protocol Design: Etwa RFCs zu Netzwerkprotokollen, die oft eigene Steuersequenzen definieren
+
+    Es ist quasi deine eigene Domain-Specific Language (DSL) für Steuerlogik.

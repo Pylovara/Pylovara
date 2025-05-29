@@ -1,0 +1,111 @@
+Übersicht der x86-64-Register
+
+Die x86-64-Architektur verfügt über 16 allgemeine 64-Bit-Register:
+
+    RAX: Akkumulator für arithmetische Operationen und Rückgabewerte von Funktionen.
+    RBX: Basisregister, oft für Datenzugriffe verwendet.
+    RCX: Zählerregister, häufig für Schleifen und Funktionsaufrufe genutzt.
+    RDX: Datenregister, dient oft als zweites Argument oder für Multiplikation/Division.
+    RSI: Quellindex für Datenkopien.
+    RDI: Zielindex für Datenkopien.
+    RBP: Basiszeiger für den aktuellen Stack-Frame.
+    RSP: Stackzeiger, zeigt auf die Spitze des Stacks.
+    R8–R15: Zusätzliche allgemeine Register.
+    Brown University Computer Science
+
+Aufrufkonventionen (Calling Conventions)
+System V AMD64 ABI (Linux, macOS, BSD)
+
+Diese Konvention wird in Unix-ähnlichen Systemen verwendet:
+
+    Argumente: Die ersten sechs Ganzzahl- oder Zeigerargumente werden in den Registern %rdi, %rsi, %rdx, %rcx, %r8 und %r9 übergeben. Weitere Argumente werden auf den Stack gelegt.
+
+    Rückgabewerte: Ergebnisse werden in %rax zurückgegeben.
+
+    Callee-saved (nicht-volatile) Register: %rbx, %rbp, %r12–%r15 müssen vom aufgerufenen Funktion gesichert und wiederhergestellt werden.
+
+    Caller-saved (volatile) Register: %rax, %rcx, %rdx, %rsi, %rdi, %r8–%r11 können vom aufgerufenen Funktion überschrieben werden.
+    6.s081.scripts.mit.edu+5cs61.seas.harvard.edu+5Brown University Computer Science+5
+    Brown University Computer Science+1cs61.seas.harvard.edu+1
+
+Microsoft x64 Calling Convention (Windows)
+
+Diese Konvention wird in Windows-Systemen verwendet:
+
+    Argumente: Die ersten vier Ganzzahl- oder Zeigerargumente werden in den Registern RCX, RDX, R8 und R9 übergeben. Weitere Argumente werden auf den Stack gelegt.
+
+    Rückgabewerte: Ergebnisse werden in RAX zurückgegeben.
+
+    Callee-saved (nicht-volatile) Register: RBX, RBP, RDI, RSI, R12–R15 müssen vom aufgerufenen Funktion gesichert und wiederhergestellt werden.
+
+    Caller-saved (volatile) Register: RAX, RCX, RDX, R8–R11 können vom aufgerufenen Funktion überschrieben werden.
+    Brown University Computer Science+3Microsoft Learn+3ired.team+3
+    Microsoft Learn+2Reddit+2Wikipedia+2
+    Stack Overflow+1Wikipedia+1
+
+🔧 Systemaufrufe (Syscalls) unter Linux
+
+Bei direkten Systemaufrufen unter Linux werden die Argumente wie folgt in Registern übergeben:
+
+    Argumente: RDI, RSI, RDX, R10, R8, R9
+
+    Systemaufrufnummer: RAX
+
+    Rückgabewert: RAX
+    ired.team+2Reddit+2Wikipedia+2
+    Microsoft Learn+1aaronbloomfield.github.io+1
+
+Beachte, dass RCX und R11 durch den Systemaufruf zerstört werden können.
+
+
+
+
+Ein Betriebssystem braucht:
+
+    Zustandsverwaltung (Prozesse, Threads → Stackframes, PCB etc.)
+
+    Speicherverwaltung (Paging, MMU, virtuelle Adressen)
+
+    I/O-Steuerung (über Interrupts, Ports, MMIO)
+
+    Dateisystemlogik
+
+    Scheduler + Kernel-Trap-Handler
+
+    Kontextwechsel (→ genau hier werden Register gespeichert/restauriert!)
+
+Zusätzliche Register (nicht "allgemein")
+
+Neben den 16 GPRs gibt es noch viele weitere, aber spezialisierte Register:
+Kategorie	Beispiele
+Segmentregister	CS, DS, ES, FS, GS, SS
+Control Registers	CR0, CR2, CR3, CR4
+Flags Register	RFLAGS
+Instruction Pointer	RIP
+Debugregister	DR0–DR7
+Model-Specific Regs	IA32_* (z. B. IA32_SYSENTER_EIP)
+FPU/MMX/XMM/YMM	XMM0–XMM15, YMM0–YMM15
+Diese dienen der Architektursteuerung, FPU, SIMD, Exceptions, Paging usw.
+
+Klarstellung:
+Begriff	Was es ist	Wofür es da ist
+Register (z. B. RAX)	Kleine, extrem schnelle Speicherplätze	Datenverarbeitung in der CPU
+Assembler-Befehl	Instruktion wie mov, add, jmp etc.	Steuert, was die CPU tut
+Maschinencode	Binärcode wie 0x48 89 c8	Was die CPU tatsächlich ausführt
+C-Code	Höhere Abstraktion, z. B. int a = 5;	Wird vom Compiler in Assembler übersetzt
+
+Wie wird C zu Maschinencode?
+
+Beispiel:
+
+int a = 5;
+
+Wird von gcc oder clang kompiliert zu:
+
+mov     eax, 5
+
+Das wird dann zu Maschinencode (x86-64 Binary):
+
+b8 05 00 00 00
+
+Was bedeutet: „Schreibe 5 in das Register EAX (untere 32 Bit von RAX)“.

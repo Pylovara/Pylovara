@@ -1,0 +1,23 @@
+# /Pylovara/System/Shell/Security/pylowatchd.service
+[Unit]
+Description=Pylovara Rootbypass-Watcher (pylowatchd)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/Pylovara/System/Shell/Security/pylowatchd.sh
+Restart=always
+RestartSec=10
+Nice=19
+MemoryMax=50M
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=true
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+ProtectKernelModules=yes
+ReadWritePaths=/Pylovara/Logs/Security/
+
+[Install]
+WantedBy=multi-user.target

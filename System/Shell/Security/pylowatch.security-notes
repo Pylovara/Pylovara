@@ -1,3 +1,21 @@
 ### Start aufzeichnug ..... Kombiniert später mit selinux und extra packeten .. 
+
+
+
+ls /Pylovara/System/Shell/Security/
+# ["zeigt"]:
+# pylowatchd.sh
+# pylowatchd.service
+# (optional) pylowatchd.conf
+
+ aktivieren:
+
 chmod +x /Pylovara/System/Shell/Security/pylowatchd.sh
 sudo systemctl enable --now /Pylovara/System/Shell/Security/pylowatchd.service
+
+Und die Logs gehen sauber :
+
+/Pylovara/Logs/Security/log-00001.pvlog
+/Pylovara/Logs/Security/log-00002.pvlog
+
+später kommt noch ein url dublikat uploader hinzu , mehrere schichten von unzerstörbaren nachweisen 

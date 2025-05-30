@@ -1,0 +1,2 @@
+chmod +x /Pylovara/System/Shell/Security/pylowatchd.sh
+sudo systemctl enable --now /Pylovara/System/Shell/Security/pylowatchd.service

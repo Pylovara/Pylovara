@@ -878,9 +878,9 @@
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-01
+@kernel-zeilen-nr:-01-11
 #####################################################################
-## Lektion 02-01: MOV – Daten verschieben auf Maschinenebene
+## Lektion 01-11: MOV – Daten verschieben auf Maschinenebene
 ##
 ## Der `MOV`-Befehl ist der Grundbaustein der maschinellen
 ## Kommunikation.
@@ -923,13 +923,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 02-02 – PUSH & POP – Der Stapel spricht
+##  → Nächstes Kapitel: 01-12 – PUSH & POP – Der Stapel spricht
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-02
+@kernel-zeilen-nr:-01-12
 #####################################################################
-## Lektion 02-02: PUSH & POP – Der Stapel spricht
+## Lektion 01-12: PUSH & POP – Der Stapel spricht
 ##
 ## Der Stack (Stapel) ist eine besondere Speicherzone, die nach dem
 ## LIFO-Prinzip arbeitet: Last In – First Out.
@@ -975,13 +975,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 02-03 – CALL & RET – Maschinen mit Rückgrat
+##  → Nächstes Kapitel: 01-13 – CALL & RET – Maschinen mit Rückgrat
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-03
+@kernel-zeilen-nr:-01-13
 #####################################################################
-## Lektion 02-03: CALL & RET – Maschinen mit Rückgrat
+## Lektion 01-13: CALL & RET – Maschinen mit Rückgrat
 ##
 ## Funktionen brauchen Struktur – und Sprungpunkte.
 ## Mit `CALL` und `RET` wird der Kontrollfluss organisiert:
@@ -1029,13 +1029,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 02-04 – CMP & TEST – Maschinen vergleichen
+##  → Nächstes Kapitel: 01-14 – CMP & TEST – Maschinen vergleichen
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-04
+@kernel-zeilen-nr:-01-14
 #####################################################################
-## Lektion 02-04: CMP & TEST – Maschinen vergleichen
+## Lektion 01-14: CMP & TEST – Maschinen vergleichen
 ##
 ## Entscheidungen basieren auf Vergleichen.
 ## `CMP` und `TEST` prüfen Zustände – ohne Werte zu verändern:
@@ -1090,9 +1090,9 @@
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-05
+@kernel-zeilen-nr:-01-15
 #####################################################################
-## Lektion 02-05: Jxx – Entscheidungen und Sprünge
+## Lektion 01-15: Jxx – Entscheidungen und Sprünge
 ##
 ## Maschinen folgen normalerweise dem Strom der Befehle –
 ## **Jxx-Befehle unterbrechen diesen Strom**, abhängig vom Status.
@@ -1151,13 +1151,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 02-06 – LEA – Rechnen ohne Rechnen
+##  → Nächstes Kapitel: 01-16 – LEA – Rechnen ohne Rechnen
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-06
+@kernel-zeilen-nr:-01-16
 #####################################################################
-## Lektion 02-06: LEA – Rechnen ohne Rechnen
+## Lektion 01-16: LEA – Rechnen ohne Rechnen
 ##
 ## Der Befehl `LEA` steht für **Load Effective Address**.
 ## Er berechnet Adressen, **ohne** wirklich auf Speicher zuzugreifen.
@@ -1223,13 +1223,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 02-07 – XCHG & BSWAP – Wenn Bytes tanzen
+##  → Nächstes Kapitel: 01-17 – XCHG & BSWAP – Wenn Bytes tanzen
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-07
+@kernel-zeilen-nr:-01-17
 #####################################################################
-## Lektion 02-07: XCHG & BSWAP – Wenn Bytes tanzen
+## Lektion 01-17: XCHG & BSWAP – Wenn Bytes tanzen
 ##
 ## Manchmal will man einfach nur tauschen.
 ## Kein Rechnen, kein Vergleichen – nur Werte umdrehen oder
@@ -1292,13 +1292,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 02-08 –NOP & HLT–Pausen im Maschinenrauschen
+##  → Nächstes Kapitel: 01-18 –NOP & HLT–Pausen im Maschinenrauschen
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-08
+@kernel-zeilen-nr:-01-18
 #####################################################################
-## Lektion 02-08: NOP & HLT – Pausen im Maschinenrauschen
+## Lektion 01-18: NOP & HLT – Pausen im Maschinenrauschen
 ##
 ## Maschinen arbeiten – aber sie pausieren auch.
 ## Manche Befehle tun *nichts*. Oder sie stoppen alles.
@@ -1374,13 +1374,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 02-09 – INT & SYSCALL – Tore zum Kernel
+##  → Nächstes Kapitel: 01-19 – INT & SYSCALL – Tore zum Kernel
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-02-10
+@kernel-zeilen-nr:-01-19
 #####################################################################
-## Lektion 02-10: REP & MOVS/STOS – Maschinen wiederholen
+## Lektion 01-19: REP & MOVS/STOS – Maschinen wiederholen
 ##
 ## Maschinen sind nicht kreativ – aber unermüdlich.
 ## Die Wiederholung ist ihre Stärke. Dafür gibt es `REP`, `MOVS`, `STOS`.
@@ -1456,12 +1456,12 @@
 ##
 ######### ENDE VON KAPITEL 1 - 10 (Instruction Set) #################
 #####################################################################
-## 🧱 Ende von Kapitelgruppe 02-XX – Die Befehle
+## 🧱 Ende von Kapitelgruppe 01-01 – Die Befehle
 ##
-## Nächste Gruppe: 03-XX – Flags und Maschinenzustände
+## Nächste Gruppe: 01-20 – Flags und Maschinenzustände
 ##
 ## Empfohlen: Beginne mit:
-##   → 03-01: FLAGS – Maschinen mit Gefühlen
+##   → 01-20: FLAGS – Maschinen mit Gefühlen
 #####################################################################
 
 #####################################################################
@@ -1535,9 +1535,9 @@
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-03-01
+@kernel-zeilen-nr:-01-21
 #####################################################################
-## Lektion 03-01: FLAGS – Maschinen mit Gefühlen
+## Lektion 01-21: FLAGS – Maschinen mit Gefühlen
 ##
 ## Die FLAGS-Register sind das emotionale Zentrum der CPU:
 ## Sie zeigen den Zustand des letzten Befehls an – ob ein Ergebnis
@@ -1584,13 +1584,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 03-02 – TEST & CMP – Prüfen und Vergleichen
+##  → Nächstes Kapitel: 01-22 – TEST & CMP – Prüfen und Vergleichen
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-03-02
+@kernel-zeilen-nr:-01-22
 #####################################################################
-## Lektion 03-02: TEST & CMP – Prüfen und Vergleichen
+## Lektion 01-22: TEST & CMP – Prüfen und Vergleichen
 ##
 ## TEST und CMP sind die Maschinenwerkzeuge, um Werte zu prüfen und zu
 ## vergleichen. Sie setzen Flags, ohne die Werte zu verändern.
@@ -1644,13 +1644,13 @@
 ##
 #####################################################################
 ## Weiterführend:
-##  → Nächstes Kapitel: 03-03 – abschluss
+##  → Nächstes Kapitel: 01-23 – abschluss
 #####################################################################
 
 #####################################################################
-@kernel-zeilen-nr:-03-03-abschluss
+@kernel-zeilen-nr:-01-23-abschluss
 #####################################################################
-## Kapitelgruppe 03-03 – Flags & Maschinenzustände – Abschluss
+## Kapitelgruppe 01-23 – Flags & Maschinenzustände – Abschluss
 ##
 ## Überblick:
 ## - Flags als Grundlage für alle Entscheidungs- und Kontrollbefehle

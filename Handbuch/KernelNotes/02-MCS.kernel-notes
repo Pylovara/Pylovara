@@ -1,0 +1,138 @@
+@kernel-nr: 02        ¶ (info: nutze kernel lex und kernelx 02-01)
+¶####################################################################
+@kernel-zeilen-nr:-02-01
+¶####################################################################
+¶--------------------------------------------------------------------
+¶ ¢|  TransAktion Anfang/Vorgang/Start der Bedingung/eines bedingten Blocks
+¶ |¢  TransAktion Ende/Vorgang/Ende der Bedingung/eines bedingten Blocks
+¶ §|¢ Zielreferenz bindung
+¶
+¶ Nutzen = wird als Token/Credit transportiert
+¶
+@kernel-zeilen-nr:-02-02
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ »  Start einer Transaktion mit einer Aktion/eines , Zweiges/Proteins
+¶ «  Ende einer Transaktion mit einer Aktion/eines Zweiges/Proteins
+¶
+¶ Nutzen = Aufträge oder Erbenisse werden Verpackt weitergeleitet mit oder ohne weitere
+¶          berechnungen an §Zielrefferenz
+¶
+@kernel-zeilen-nr:-02-03
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ [   Start Proteinpacket
+¶ ]   Ende Proteinpacket
+¶
+¶ Nutzen = Aufträge verpacken, Protein Packete Verschicken , HandlungsKommando
+¶        , kann ohne aktionen als datensatz weitertransportiert werden ...
+¶
+@kernel-zeilen-nr:-02-04
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ § Zielreferenz Innere Zielreferenz / Prozess-ID / Hardware-Slot / Gerätepfad (in RAM,
+¶   Dev, CPU-Bereich)
+¶ $ Dirigent     Externe Übergabe/Output zu Dirigent-Einheit (lokale API, Kernelpfad,
+¶             Netzwerk, usw.)
+¶
+¶ Nutzen = Dirigenten übergeben fertige DatenAufträge/Proteine an Zielreferenz das
+¶wiederum gemerget,geforkt,gesplittet oder paralell im protein verarbeitet , ausgeführt
+¶werden kann .
+¶
+@kernel-zeilen-nr:-02-05
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ ""     Print , zeigt alles darin als ausgabe an
+¶ ''     Commando , Wird als Anweisung verstanden
+¶ ¨¨     Blanker Nenner , Das ist , Richtig , abgleich
+¶        Einfache eingaben ohne etwas
+¶
+@kernel-zeilen-nr:-02-06
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ - · + : Zusätzliche Rechen weitergaben
+¶
+¶ Nutzen = kann am ende eines zweiges mitgegeben werden «-/«+/«:/«·
+¶ für erweiterte schleifen logiken oder andere Argumente die noch mit
+¶ transportiert werden
+¶          sollen für den weiteren Vorgang als weitere Rechnung
+¶          oder merge wie teilungen
+¶
+@kernel-zeilen-nr:-02-07
+¶####################################################################
+¶-------------------------------------------------------------------
+¶  #  Oder/DasOderDas IF UND
+¶ ##  VorangAuswahl/DasOderDas Else UND
+¶ #=  Paralell , gleichzeitig , schneller als dsl
+¶
+¶ Nutzen = Kann Wahrheiten weitergeben mit mehrfach auswahl
+¶
+@kernel-zeilen-nr:-02-08
+¶####################################################################
+¶-------------------------------------------------------------------
+¶  |  Trennt Befehl von Argument oder Ausgabe oder Wörter , ersetzt "" ''
+¶ ||| Mehrfach mitgabe
+¶
+¶ Nutzen =  Könnte Ein befehl weitergeben oder mehrere
+¶           Kann Duale Codes plus Wörter Plus Frequenz
+¶           in eine [] Mitgeben wenn nötig
+¶           (Wörter plus Anders) , kann Merge
+¶           >>(Zahl) erweitert werden , auch (Nr) gebunden
+¶           möglich .
+¶
+@kernel-zeilen-nr:-02-09
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ (Zahl)  Zahl Zuweisung Für Verarbeitung vorgang ,
+¶ ähnlich eines Muster_Dirs , nur im Transport selbst
+¶
+¶ Nutzen = Optional , kann einzelne mehrfach Labels/Aktionen Aufteilen
+¶          Nützlich wen Protein weitergegeben für MicroSplittungen wie GPU - Sound
+¶          Datenbänker usw
+¶
+@kernel-zeilen-nr:-02-10
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ [{Band|Frequenz}]
+¶ [(Zahl){Was|angabe}]
+¶
+¶ Nutzen = {Was|Angabe} kann auch mit NR explizit weitergegegeb werden Beispiel
+¶          {(1)Band|Frequenz} Vs {Pfad|/etc/pacman.conf} ,
+¶          je nach packet lage für merges oder ohne .
+¶
+@kernel-zeilen-nr:-02-11
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ ~~ für Merge von mehreren Packets kann per () granuliert werden das genau
+¶ >> für Fork oder Splitting Links Nach Rechts
+¶ << für Fork oder Splitting Rechts Vor Links
+¶ ;; Für Paralell Transport
+¶
+@kernel-zeilen-nr:-02-12
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ *  Wenn/Kann
+¶ °  WennNicht/Muss
+¶ >  WennKleiner/Kann/Soll
+¶ <  WennGrößer/Kann/Soll
+¶ !  WennEindeutig/Sofort
+¶ …  WennFehler/Kann/Sicherheit
+¶ ^  TransaktionsFehler/Debugg
+¶
+¶  Nutzen : kan als kommand der weiteren funktion verstanden werden
+¶           und dient als packet deinition für automationen , schleifen , weitergaben
+¶           logiken .
+¶
+@kernel-zeilen-nr:-02-13
+¶####################################################################
+¶-------------------------------------------------------------------
+¶ ¶  Ersetzt # als Kommentar funktion
+¶-------------------------------------------------------------------
+@kernel-zeilen-nr:-02-14
+¶########################### Ende ###################################
+
+
+
+
+
+

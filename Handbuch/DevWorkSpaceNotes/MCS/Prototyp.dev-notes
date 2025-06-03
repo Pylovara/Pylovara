@@ -1,9 +1,10 @@
 
-Prototyp 0.8 (Eventuelles MCS/MCS+ language)
+Prototyp 0.9 (Eventuelles MCS/MCS+ language)
 
 --------------------------------------------------------------------
 ¢|  TransAktion Anfang/Vorgang/Start der Bedingung/eines bedingten Blocks
 |¢  TransAktion Ende/Vorgang/Ende der Bedingung/eines bedingten Blocks
+§|¢ Zielreferenz bindung
 
 Nutzen = wird als Token/Credit transportiert
 --------------------------------------------------------------------
@@ -73,21 +74,7 @@ Nutzen = Aufträge verpacken, Protein Packete Verschicken , HandlungsKommando
 --------------------------------------------------------------------
   ¶  Ersetzt # als Kommentar funktion
 --------------------------------------------------------------------
-¢|
-  »[func.name|main]«
-  »[declare|var|sock|int]«
-  »[call|iw_sockets_open|return:sock]«
-  »[call|iw_get_basic_config|args:sock,"wlan0",&wc|return:rc]«
-  »[cond.if|rc == 0]«
-    »[print|"Interface: wlan0"]«
-    »[print|wc.essid]«
-  »[cond.else]«
-    »[print_err|"WLAN Adapter nicht gefunden"]«
-    »[return|1]«
-  »[cond.fi]«
-  »[call|iw_sockets_close|args:sock]«
-  »[return|0]«
-|¢
+
 
 
 

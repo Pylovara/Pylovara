@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Modul: protein.packet-parser.sh
+# Zweck: Einzelne »[…]«-Proteinpackete erkennen, analysieren & zerlegen
+
+INPUT="$1"
+
+# Funktion zum Parsen eines Proteinpackets
+parse_proteinpacket() {
+    local packet="$1"
+    local clean="${packet#[}"
+    clean="${clean%]}"
+
+    IFS='|' read -ra parts <<< "$clean"
+
+    echo "┌── Protein-Paket Analyse ────────"
+    for entry in "${parts[@]}"; do
+        key="${entry%%:*}"
+        val="${entry#*:}"
+        printf "│ %12s : %s\n" "$key" "$val"
+    done
+    echo "└─────────────────────────────────"
+}
+
+# Extrahieren aller Proteinpackete aus Input
+extract_packets() {
+    local data="$1"
+    grep -oP '»\[\K[^\]]+(?=\]«)' <<< "$data" | while read -r raw; do
+        parse_proteinpacket "[$raw]"
+    done
+}
+
+# Test-Eingabe verarbeiten
+if [[ -n "$INPUT" && -f "$INPUT" ]]; then
+    extract_packets "$(cat "$INPUT")"
+else
+    echo "⚠ Keine Datei übergeben oder nicht vorhanden."
+    echo "🛈 Aufruf: ./protein.packet-parser.sh path/to/file"
+fi

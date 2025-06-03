@@ -2,36 +2,66 @@ Um das Ganze für Parser/Bash zu vereinfachen, könnte jeder Block ein Meta-Typ-
 ¶Konzept Logikformen / Pattern Review / schleifen Logik :
 
 ¢|IP * ON »[<Befehl>|<Argument>]«+§Zielreferenz=$Dirigent
-    # »[<Befehl>|<Argument>]«:§Zielreferenz=$Dirigent|¢
+    # »[<Befehl>|<Argument>|§Zielreferenz=$Dirigent]«:|¢
 --------------------------------------------------------------------
 ¶Konzept Direkt Logik wenn bekannt :
 
-¢|Microphon * OFF »['Zeige'|"Microphon  Aus"]«§Desktop=$Local|¢
+¢|Microphon * OFF »['Zeige'|"Microphon Aus"|§Desktop=$Local]«|¢
 --------------------------------------------------------------------
 ¶Konzept StrömungsValue Logik :
 
-¢| Device < {T|70}  »[¨70¨|'ON'|{Fan|Speed '75'}]« $/sys/devices/platform/applesmc.768/=$Local
-    # »[¨40¨|'ON'|{Fan|Speed '58'}]« $/sys/devices/platform/applesmc.768/=$Local|¢
+¢| Device < {T|70}  »[¨70¨|'ON'|{Fan|Speed '75'}|$/sys/devices/platform/applesmc.768/=$Local]«
+    # »[¨40¨|'ON'|{Fan|Speed '58'}|$/sys/devices/platform/applesmc.768/=$Local]«|¢
 --------------------------------------------------------------------
 ¶Konzept Speicher Ram/Tmp/Swap/Rom
 
-»['Lade'|{Pfad|/etc/pacman.conf}]«§TMP01=$Local
+»['Lade'|{Pfad|/etc/pacman.conf}|§TMP01=$Local]«
 --------------------------------------------------------------------
 ¶Konzept Ausführung Vorgang :
 
-¢| IP ! ON »['Open’|{Pfad|/usr/bin/firefox}|'Connect'|{IP|https://127.0.0.1}]«§Desktop=$Local
+¢| IP ! ON »['Open’|{Pfad|/usr/bin/firefox}|'Connect'|{IP|https://127.0.0.1}|§Desktop=$Local]«
 --------------------------------------------------------------------
 ¶Konzept Idee zu automatisierten Nest Proteinen zu
 ¶verschiedenen zwecken für dynmaische aufbauten :
 
-¢| * »[ ¢| 'Messung' | {Temp|50} «(1) ]« §SensorMod=$Local |¢
+¢| * »['Messung'|{Temp|50}|§SensorMod=$Local]«(1)|¢
                                    ¶Transportiert dünamische Tokens mit NR zuweisung
 --------------------------------------------------------------------
+Konzept für Transaktionen/ packet verwahltung :
+
+¢| §CPU623418
+    »['wlan0'|{WLan|127.0.0.1}|§WLanHost|=$Local]«+
+    »['Messung'|{Temp|50}(1)]«§SensorMod=$Local]«+
+    »['Watt’|{Volt|5.0A|§SensorMod=$Local]«
+|¢
+
+Konzept für Schleifen :
+
+¢| Device < {T|70}  »[¨70¨|'ON'|{Fan|Speed '75'}|$/sys/devices/platform/applesmc.768/=$Local]«
+    # »[¨40¨|'ON'|{Fan|Speed '58'}|$/sys/devices/platform/applesmc.768/=$Local]«|¢
+    # »[¨80¨|'ON'|{FanSpeed'60'}(2)|$/sys/devices/platform/applesmc.768/=$Local]«(2)
+    # »['Messung'|{Temp|50}|>>(2)|§SensorMod=$Local]«
+|¢
 --------------------------------------------------------------------
-Beispiel für eigene Logik aufbau Regeln :
-⍱DEFINE:¶ als Meta-Konzeptheader  
-⍱DEFINE:¢|...|¢ als Steuerblock  
-⍱DEFINE:»[A|B|C]« als Aktionsausdruck  
-⍱DEFINE:§XYZ=Ziel als Zielverknüpfung  
-⍱DEFINE:{A|B} als KeyVal-Mapping  
-⍱DEFINE:¨VAL¨ als Einzelwert
+Konzept gebündelter packete für schnelle gpu berechungen z.b :
+
+¢|
+  »[func.name|main]«
+  »[declare|var|sock|int]«
+  »[call|iw_sockets_open|return:sock]«
+  »[call|iw_get_basic_config|args:sock,"wlan0",&wc|return:rc]«
+  »[cond.if|rc == 0]«
+    »[print|"Interface: wlan0"]«
+    »[print|wc.essid]«
+  »[cond.else]«
+    »[print_err|"WLAN Adapter nicht gefunden"]«
+    »[return|1]«
+  »[cond.fi]«
+  »[call|iw_sockets_close|args:sock]«
+  »[return|0]«
+  §ZielReferenz $Dirigent
+|¢
+--------------------------------------------------------------------
+
+
+

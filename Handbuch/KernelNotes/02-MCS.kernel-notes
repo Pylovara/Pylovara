@@ -129,6 +129,54 @@
 ¶ ¶  Ersetzt # als Kommentar funktion
 ¶-------------------------------------------------------------------
 @kernel-zeilen-nr:-02-14
+¶
+¶  STRUKTURANALYSE Beispiele
+¶
+¶  ¢|
+¶    »['find'|pacman|{(1)}]«
+¶    »['sudo nano’|>>{(1)pacman.conf}|(2)'Druck']«
+¶    »['sudo cat'|>>(2)|"(3)"]«
+¶    »["(3)»[export /Pylovara/"]«
+¶    »['find and source'|{pfad|~/kitty}]
+¶  |¢
+¶
+¶ ZUORDNUNG KERNELMARKER:
+¶
+¶    Transaktionsrahmen
+¶    ¢| ... |¢
+¶    → Entspricht @kernel-zeilen-nr:-02-01
+¶    Definiert den Rahmen eines Vorgangsblocks oder
+¶    einer Bedingungseinheit.
+¶
+¶    Einzelne Schritte (mit » ... «)
+¶    → Entspricht @kernel-zeilen-nr:-02-02
+¶    Jeder »...«-Block stellt eine mikrotransaktionale
+¶    Operation dar, die als Proteinausführung gilt.
+¶
+¶    Verkettung mit (1), (2), (3)
+¶    → entspricht Proteinverkapselung aus @kernel-
+¶    zeilen-nr:-02-03
+¶    Diese Schritt-für-Schritt-Referenzierung bildet
+¶    ein Proteinpaket mit interner Verkapselung von
+¶    Ergebnissen.
+¶
+¶    Zielübergaben wie export /Pylovara/
+¶    → passt zu @kernel-zeilen-nr:-02-04
+¶    Zielreferenz-Logik wird erfüllt (z. B. §|¢, $
+¶    Dirigent, oder Pfadzuweisung).
+¶
+¶    Syntax wie "(3)", 'Druck', usw.
+¶    → Klar abgebildet über @kernel-zeilen-nr:-02-05
+¶
+¶        "..." als Print
+¶
+¶        '...' als Kommando
+¶
+¶        ¨¨ als reine Werte
+¶
+¶        {...} als Zielbindung oder Ausführungskontext
+¶
+¶
 ¶########################### Ende ###################################
 
 

@@ -12,38 +12,6 @@ sudo ./full.install-core
 cd Pylovara/Installer/
 sudo ./pylovara.updater-needle
 #####################################################################################
-###                                 Neu
-###
-###           kernel lex | kernelx 01-01 | Layout Optimierung
-###
-###
-###### /Pylovara/Control/shell.conf ( Pylovara Shell Appearance Engine )
-###### brandt
-####source "/Pylovara/System/Shell/Layout/pylovara.shell-layout"
-### ┌[bandino@DEV][18:24:47|Di Mai 27]
-### │ ᴾʸˡᵒᵛᵃʳᵃ
-### └[~]> $
-###
-###### Hilfe Layout
-###source "/Pylovara/System/Shell/Layout/pylovara+.shell-layout"
-### ┌[bandino@DEV][18:26:22|Di Mai 27|5,7G]
-### │ ᴾʸˡᵒᵛᵃʳᵃ
-### │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
-### │    ₜₒ   ₚᵧₗₒ  ₖₑᵣₙₑₗₓ ₀₁₋₀₁  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
-### └[~]> $
-###
-###### Minimal
-###source "/Pylovara/System/Shell/Layout/pylovara++.shell-layout"
-### ┌─[ᴘʏʟᴏᴠᴀʀᴀ-sʏsᴛᴇᴍ]
-### │ₛᵢₙ𝒸ₑ ₂₀₂₅
-### └─[=>]
-###
-#####################################################################################
-###
-###                        kommt zurück bald zurück
-###
-###                               ollama
-###
 ############################# Was ist Pylovara? #####################################
 
 Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 
@@ -52,8 +20,31 @@ ohne GUI, ohne Umwege, ohne Bullshit. Es wird ausschließlich auf Root-Ebene
 installiert (`/Pylovara/`) und meidet bewusst alle
 $HOME-Abhängigkeiten.
 
+Pylovara ist ein radikal neues, modular aufgebautes Datei- und Steuerungssystem,
+das vollständig in der Shell lebt – ohne GUI, ohne Umwege, ohne Bullshit.
+Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlage
+eines neuen Denkens im Umgang mit Betriebssystemen.
+
+ Kernprinzipien
+
+ Systemweit & Rootbasiert
+- Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
+- Keine Abhängigkeit von `$HOME`-Verzeichnissen
+- Funktioniert sogar in minimalen Umgebungen wie BusyBox oder Rettungssystemen
+
+ Shell-first Design
+- Komplett steuerbar über Terminal
+- Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
+- Ermöglicht tiefste Systemintegration ohne externe Frameworks
+
+ Modular & Erweiterbar
+- Struktur basiert auf *Core - Magic - Nodes - Nano - Micro - Needles - Logic*
+- Neue Module können ohne Kernänderung hinzugefügt werden
+- Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
+
 #####################################################################################
-### Wer Brauch schon PDFs
+
+ Wer Brauch schon PDFs
 
     helpme 01      # Übersicht aller Module
     helpmex 04-02  # Wie du die KI austauschbar machst
@@ -71,41 +62,9 @@ $HOME-Abhängigkeiten.
                          Hier Endet die Shell Information
 
 #####################################################################################
-################################## Zuckunftsmusik  ##################################
-#####################################################################################
-## 📄 README: Pylovara - Das System der Zukunft
 
-### 🧠 **Was ist Pylovara?**
-
-Pylovara ist ein radikal neues, modular aufgebautes Datei- und Steuerungssystem,
-das vollständig in der Shell lebt – ohne GUI, ohne Umwege, ohne Bullshit.
-Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlage
-eines neuen Denkens im Umgang mit Betriebssystemen.
-
----
-
-### 🚀 **Kernprinzipien**
-
-#### 1. **Systemweit & Rootbasiert**
-- Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
-- Keine Abhängigkeit von `$HOME`-Verzeichnissen
-- Funktioniert sogar in minimalen Umgebungen wie BusyBox oder Rettungssystemen
-
-#### 2. **Shell-first Design**
-- Komplett steuerbar über Terminal
-- Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
-- Ermöglicht tiefste Systemintegration ohne externe Frameworks
-
-#### 3. **Modular & Erweiterbar**
-- Struktur basiert auf *Core - Magic - Nodes - Nano - Micro - Needles - Logic*
-- Neue Module können ohne Kernänderung hinzugefügt werden
-- Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
-
----
-
-### 🧬 **Architektur**
-
-Pylovara organisiert sich in einem klaren Familienmodell:
+ Architektur
+        Pylovara organisiert sich in einem klaren Familienmodell:
 
 | Typ | Rolle |
 |-----|-------|
@@ -118,20 +77,19 @@ Pylovara organisiert sich in einem klaren Familienmodell:
 | `*.*-needle` | Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll) |
 | `<*von>.<*zu>-logic` | Verbindungslogik – Transport zwischen Schichten |
 
----
+#####################################################################################
 
-### 🛠️ **Funktionen**
+ Kernel & Handbuch
 
-#### 🔍 **Kernel & Handbuch**
 - `kernel lex`: Lexikon des Systems
 - `kernelx [nr]`: Detailierte Ansicht spezifischer Kernelabschnitte
 - `helpme`: Wiki-System zur Erläuterung aller Komponenten
 
-#### 💡 **Steuerung durch Symbole**
+#####################################################################################
 
-Pylovara verwendet ein symbolisches Transaktions- und Steuerungssystem:
+ Steuerung durch Symbole
+          Pylovara verwendet ein symbolisches Transaktions- und Steuerungssystem:
 
-```
 ¢|...|¢        : Transaktion Anfang / Ende
 »...«          : Aktion / Zweig / Protein
 [...]          : Proteinpacket
@@ -148,13 +106,11 @@ $Dirigent      : Externe Übergabe
 >> <<          : Fork/Splitting
 *(°<><>!)      : Bedingte Automation
 ¶              : Kommentar
-```
 
----
+#####################################################################################
 
-### Zukunftsvision
-
-kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
+ Zukunftsvision
+           kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
 
 - Tiling Window Management direkt aus der Shell
 - Ersatz für Registry, Konfigurationsdateien, GUI-Tools
@@ -167,41 +123,25 @@ Stellen Sie sich ein Windows vor, das intern noch Windows bleibt, aber komplett 
 gesteuert wird. Oder ein ArchLinux, das seine Kontrolle an Pylovara abgibt.
 Die Einsatzgebiete sind unbegrenzt.
 
----
+#####################################################################################
 
-### 🧪 **Installation & Update**
-
-```bash
-# Installation
-git clone https://github.com/Pylovara/Pylovara.git
-cd Pylovara/Installer/
-sudo ./full.install-core
-
-# Update
-cd Pylovara/Installer/
-sudo ./pylovara.updater-needle
-```
-
----
-
-### 🖥️ **Shell Layouts**
-
-Pylovara unterstützt verschiedene Prompt-Stile:
+ Shell Layouts
+           Pylovara unterstützt verschiedene Prompt-Stile:
 
 - **Standard**: `/Pylovara/System/Shell/Layout/pylovara.shell-layout`
 - **Hilfe**: `/Pylovara/System/Shell/Layout/pylovara+.shell-layout`
 - **Minimal**: `/Pylovara/System/Shell/Layout/pylovara++.shell-layout`
 
----
+#####################################################################################
 
-### 🌍 Philosophie
-
-> "Was du nicht selbst in der Shell erschaffst,
-      wird dir irgendwann vom GUI genommen."
+ Philosophie
+         "Was du nicht selbst in der Shell erschaffst,
+            wird dir irgendwann vom GUI genommen."
 
 Pylovara ist mehr als ein Tool – es ist eine Haltung. Eine Haltung gegenüber
 dem System,der Kontrolle, der Freiheit. Es gibt keine Abstraktionsebenen,
 mit oder ohne GUI-Maskottchen. Nur dich, deine Befehle und dein System.
+
 #####################################################################################
 ################################## Readme Ende ######################################
 #####################################################################################

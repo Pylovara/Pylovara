@@ -14,12 +14,6 @@ Shell_DIR="/Pylovara/System/Shell/DNA"
 export PV_DIR="/Pylovara/"
 
 ##############################################################################
-### Alle internen Bin-Pfade anhängen
-
-
-
-### (weitere folgen je nach Bedarf)
-##############################################################################
 ### alias Sektion
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
@@ -31,6 +25,7 @@ alias mcs='cd /Pylovara/MCS/Protocol'
 source "$MASTER_DIR/shell.conf"
 source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
+source "$Master_DIR/mcp.conf
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"

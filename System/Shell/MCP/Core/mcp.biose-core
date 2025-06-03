@@ -1,0 +1,27 @@
+¢| $mnt/ §MCS » MCP.core » Start @Init
+
+    »[root: authority] :: {"UID:0" | Group:wheel | trust: FULL}
+    »[log.init] :: {/Pylovara/LOGS/mcp.start}
+    »[securelink] :: {AI-LINK.bridge}
+    »[init.subsystems] :: [
+        (1) AI_CORE,
+        (2) SENSOR_UNIT,
+        (3) MEMORY_PIPE,
+        (4) SYS_MONITOR
+    ]
+
+    »[handshake] :: {"ping" > (1)}
+    »[confirm] :: {(1) == "pong" -> OK}
+
+    »[watchdog] :: {LOOP::check (2) @1s}
+    »[fail.signal] :: {(2) != responsive -> flag:ERROR; LOG}
+
+    »[controlpath] :: {"$mnt/§MCS/CTR/"}
+    »[listen] :: {"$User.input.core"}
+
+    »[if event == user_request] → dispatch >> AI_CORE
+    »[if load > 90%] → trigger >> SYS_MONITOR
+    »[if SENSOR_UNIT :: alert] → activate >> MEMORY_PIPE.LOG
+
+    »[grant.full] :: {GPT.core|qwenservice}
+|¢

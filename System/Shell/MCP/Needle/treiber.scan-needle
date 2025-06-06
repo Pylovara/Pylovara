@@ -1,0 +1,25 @@
+¶ Scan Vorhandene Treiber ab nd sortiert sie in einen Log
+
+¢| $mnt/ §MCP * Treiber-Kontrolle
+
+    ## ['echo'|"Scannen aller aktiven Kernelmodule"]
+    »['lsmod'|parse|(1)modules.list]
+
+    ## [Kategorisierung]
+    »['(1)'|grep|{sound|(2)audio}]
+    »['(1)'|grep|{usb|(3)usb}]
+    »['(1)'|grep|{net|(4)network}]
+    »['(1)'|grep|{drm|gpu|(5)video}]
+    »['(1)'|grep|{hid|input|(6)input}]
+
+    ## [Verbindung zu Biose-Logik]
+    »[(2)|bind|/Mcp/mcp.biose-core::drivers/audio]
+    »[(3)|bind|/Mcp/mcp.biose-core::drivers/usb]
+    »[(4)|bind|/Mcp/mcp.biose-core::drivers/network]
+    »[(5)|bind|/Mcp/mcp.biose-core::drivers/video]
+    »[(6)|bind|/Mcp/mcp.biose-core::drivers/input]
+
+    ## [Statusprotokoll]
+    »['log'|to|/Pylovara/System/Logs/mcp-drivers.scan]
+
+|¢

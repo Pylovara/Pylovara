@@ -1,0 +1,19 @@
+parse_mcs_line() {
+  local input="$1"
+  echo "== PARSE INPUT: $input"
+  echo "-----------------------------------"
+
+  # Schleife über jedes Symbol aus mcs_structures
+  while IFS= read -r symbol; do
+    [[ -z "$symbol" ]] && continue
+    # Teile Symbol und Beschreibung
+    local key=$(awk '{print $1}' <<< "$symbol")
+    local desc=$(cut -d' ' -f2- <<< "$symbol")
+
+    if grep -q "$key" <<< "$input"; then
+      echo "✔ Symbol '$key' erkannt → $desc"
+    fi
+  done <<< "$mcs_structures"
+
+  echo "-----------------------------------"
+}

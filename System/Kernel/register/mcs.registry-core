@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# mcs.REGISTER.core
+# Symbol- und Strukturregister für MCS Prototyp 1.5
+# Version: 1.5
+# Autor: pylovara.ai
+
+### Symbolische Strukturregister (Proton-/Proteintypen etc.)
+mcs_structures=$(cat <<EOF
+¢|      TransAktionsstart (Bedingung / Block / Vorgang)
+|¢      TransAktionsende
+»       Start Protein / Aktion
+«       Ende Protein / Aktion
+««+     Rechenweitergabe: Plus
+««-     Rechenweitergabe: Minus
+««·     Rechenweitergabe: Mal
+««:     Rechenweitergabe: Geteilt
+««%     Prozentrechnung (z. B. ««%50)
+[       Start Proteinpacket
+]       Ende Proteinpacket
+§       Zielreferenz
+$       Dirigent (lokale/remote Übergabe)
+""      Anzeige / Print
+''      Befehl
+¨¨      Nenner / Abgleich
+~~      Merge (mit () möglich)
+>>      Fork links → rechts
+<<      Fork rechts → links
+¶       IF
+¶¶      ELSE
+¶=      Parallelprozess
+;;      Paralleltransport
+|       Trenner für Befehl/Argumente
+|||     Mehrfachweitergabe
+(Zahl)  Nummerierte Label/Aktion
+{}      Protonstruktur (Band, Watt, IP, etc.)
+*       Wenn / Kann
+°       WennNicht / Muss
+>       WennKleiner
+<       WennGrößer
+!       WennEindeutig
+…       Fehler
+^       Transaktionsfehler / Debug
+ſ       Reste / Löschung
+#       Kommentar
+EOF
+)
+
+### Debug: Ausgabe aller registrierten Symbole
+[[ $1 == "--show" ]] && {
+  echo "== MCS STRUCTURES ==" && echo "$mcs_structures"
+  exit 0
+}
+
+# Parser und weitere Funktionen: → Step 2

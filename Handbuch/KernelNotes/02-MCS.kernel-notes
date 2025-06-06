@@ -1,186 +1,205 @@
 @kernel-nr: 02        ¶ (info: nutze kernel lex und kernelx 02-01)
-¶####################################################################
+####################################################################
 @kernel-zeilen-nr:-02-01
-¶####################################################################
-¶--------------------------------------------------------------------
-¶ ¢|  TransAktion Anfang/Vorgang/Start der Bedingung/eines bedingten Blocks
-¶ |¢  TransAktion Ende/Vorgang/Ende der Bedingung/eines bedingten Blocks
-¶ §|¢ Zielreferenz bindung
-¶
-¶ Nutzen = wird als Token/Credit transportiert
-¶
+####################################################################
+¢|  TransAktion Anfang/Vorgang/Start der Bedingung/eines bedingten Blocks
+|¢  TransAktion Ende/Vorgang/Ende der Bedingung/eines bedingten Blocks
+
+Nutzen = wird als Token/Credit transportiert , innerhalb .
+
 @kernel-zeilen-nr:-02-02
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ »  Start einer Transaktion mit einer Aktion/eines , Zweiges/Proteins
-¶ «  Ende einer Transaktion mit einer Aktion/eines Zweiges/Proteins
-¶
-¶ Nutzen = Aufträge oder Erbenisse werden Verpackt weitergeleitet mit oder ohne weitere
-¶          berechnungen an §Zielrefferenz
-¶
+####################################################################
+ »  Start einer Transaktion mit einer Aktion/eines , Zweiges/Proteins
+ «  Ende einer Transaktion mit einer Aktion/eines Zweiges/Proteins
+
+ Nutzen = Aufträge oder Erbenisse werden Verpackt weitergeleitet mit oder ohne weitere berechnungen an §Zielrefferenz
+
 @kernel-zeilen-nr:-02-03
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ [   Start Proteinpacket
-¶ ]   Ende Proteinpacket
-¶
-¶ Nutzen = Aufträge verpacken, Protein Packete Verschicken , HandlungsKommando
-¶        , kann ohne aktionen als datensatz weitertransportiert werden ...
-¶
+####################################################################
+ [   Start Proteinpacket
+ ]   Ende Proteinpacket
+
+ Nutzen = Aufträge verpacken, Protein Packete Verschicken , HandlungsKommando
+        , kann ohne aktionen als datensatz weitertransportiert werden ...
+
 @kernel-zeilen-nr:-02-04
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ § Zielreferenz Innere Zielreferenz / Prozess-ID / Hardware-Slot / Gerätepfad (in RAM,
-¶   Dev, CPU-Bereich)
-¶ $ Dirigent     Externe Übergabe/Output zu Dirigent-Einheit (lokale API, Kernelpfad,
-¶             Netzwerk, usw.)
-¶
-¶ Nutzen = Dirigenten übergeben fertige DatenAufträge/Proteine an Zielreferenz das
-¶wiederum gemerget,geforkt,gesplittet oder paralell im protein verarbeitet , ausgeführt
-¶werden kann .
-¶
+####################################################################
+ § Zielreferenz Innere Zielreferenz / Prozess-ID / Hardware-Slot /
+                Gerätepfad (in RAM,Dev, CPU-Bereich)
+ $ Dirigent     Externe Übergabe/Output zu Dirigent-Einheit
+                (lokale API, Kernelpfad,Netzwerk, usw.)
+
+ Nutzen = Dirigenten übergeben fertige DatenAufträge/Proteine an
+ Zielreferenz das wiederum gemerget,geforkt,gesplittet oder paralell
+ im protein verarbeitet , ausgeführt werden kann .
+
 @kernel-zeilen-nr:-02-05
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ ""     Print , zeigt alles darin als ausgabe an
-¶ ''     Commando , Wird als Anweisung verstanden
-¶ ¨¨     Blanker Nenner , Das ist , Richtig , abgleich
-¶        Einfache eingaben ohne etwas
-¶
+####################################################################
+ ""     Print , zeigt alles darin als ausgabe an
+ ''     Commando , Wird als Anweisung verstanden
+ ¨¨     Blanker Nenner , Das ist , Richtig , abgleich
+        Einfache eingaben ohne etwas
+
 @kernel-zeilen-nr:-02-06
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ - · + : Zusätzliche Rechen weitergaben
-¶
-¶ Nutzen = kann am ende eines zweiges mitgegeben werden «-/«+/«:/«·
-¶ für erweiterte schleifen logiken oder andere Argumente die noch mit
-¶ transportiert werden
-¶          sollen für den weiteren Vorgang als weitere Rechnung
-¶          oder merge wie teilungen
-¶
+####################################################################
+ - · + : Zusätzliche Rechen weitergaben
+
+ Nutzen = kann am ende eines zweiges mitgegeben werden «-/«+/«:/«·
+ für erweiterte schleifen logiken oder andere Argumente die noch mit
+ transportiert werden sollen für den weiteren Vorgang als weitere
+ Rechnung oder merge wie teilungen
+
 @kernel-zeilen-nr:-02-07
-¶####################################################################
-¶-------------------------------------------------------------------
-¶  #  Oder/DasOderDas IF UND
-¶ ##  VorangAuswahl/DasOderDas Else UND
-¶ #=  Paralell , gleichzeitig , schneller als dsl
-¶
-¶ Nutzen = Kann Wahrheiten weitergeben mit mehrfach auswahl
-¶
+####################################################################
+  ¶  IF
+ ¶¶  Else
+ ¶=  Paralell , gleichzeitig , schneller als dsl
+
+ Nutzen = Kann Wahrheiten weitergeben mit mehrfach auswahl
+
 @kernel-zeilen-nr:-02-08
-¶####################################################################
-¶-------------------------------------------------------------------
-¶  |  Trennt Befehl von Argument oder Ausgabe oder Wörter , ersetzt "" ''
-¶ ||| Mehrfach mitgabe
-¶
-¶ Nutzen =  Könnte Ein befehl weitergeben oder mehrere
-¶           Kann Duale Codes plus Wörter Plus Frequenz
-¶           in eine [] Mitgeben wenn nötig
-¶           (Wörter plus Anders) , kann Merge
-¶           >>(Zahl) erweitert werden , auch (Nr) gebunden
-¶           möglich .
-¶
+####################################################################
+  |  Trennt Befehl von Argument oder Ausgabe oder Wörter
+     , ersetzt "" '' , die einen andere verwendungszweck finden
+ ||| Mehrfach mitgabe
+
+ Nutzen =  Könnte Ein befehl weitergeben oder mehrere
+           Kann Duale Codes plus Wörter Plus Frequenz
+           in einem protein [] Mitgeben werden wenn nötig
+           (Wörter plus Anders) , kann Merge
+           >>(Zahl) erweitert werden , auch (Nr) gebunden werden .
+           | fungiert als prozess anfang wie ende der rechts anfangt und links endet , erkennnung , ausführung usw, smart .
+
 @kernel-zeilen-nr:-02-09
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ (Zahl)  Zahl Zuweisung Für Verarbeitung vorgang ,
-¶ ähnlich eines Muster_Dirs , nur im Transport selbst
-¶
-¶ Nutzen = Optional , kann einzelne mehrfach Labels/Aktionen Aufteilen
-¶          Nützlich wen Protein weitergegeben für MicroSplittungen wie GPU - Sound
-¶          Datenbänker usw
-¶
+####################################################################
+ (Zahl)  Zahl Zuweisung Für Verarbeitung vorgang ,
+ ähnlich eines Muster_Dirs , nur im Transport selbst
+
+ Nutzen = Optional , kann einzelne mehrfach Labels/Aktionen Aufteilen
+          Nützlich wen Protein weitergegeben für MicroSplittungen wie
+          GPU - Sound
+          Datenbänker usw
+
 @kernel-zeilen-nr:-02-10
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ [{Band|Frequenz}]
-¶ [(Zahl){Was|angabe}]
-¶
-¶ Nutzen = {Was|Angabe} kann auch mit NR explizit weitergegegeb werden Beispiel
-¶          {(1)Band|Frequenz} Vs {Pfad|/etc/pacman.conf} ,
-¶          je nach packet lage für merges oder ohne .
-¶
+####################################################################
+ {Band|Frequenz}{Amp|Zahl}{Watt|Zahl}{V|Spannung}{Temp|Zahl}
+ {Pfad|Adresse}{Ip|Adresse}{Interface|wlan0}{Transport|Packet}
+ {Cash|Größe}{Signed|Größe}{Unsigned|Größe}{Tracer|Zahl}
+
+ Nutzen = {Was|Angabe} kann mit NR explizit weitergegegeb
+          werden Beispiel {(1)Band|Frequenz} Vs
+          {Pfad|/etc/pacman.conf} , benennung -> {} Proton .
+          ein Proton innerhalb eines Proteins kann daten aller
+          Argument mit in die nächste verarbeitung oder
+          endverarbeitung führen .
+          Müsste nur ein vollständiges register haben um die namens
+          gebung zu definieren welches proton was trägt , kann
+          beliebig erweitert werden und auch berechnet .
+
 @kernel-zeilen-nr:-02-11
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ ~~ für Merge von mehreren Packets kann per () granuliert werden das genau
-¶ >> für Fork oder Splitting Links Nach Rechts
-¶ << für Fork oder Splitting Rechts Vor Links
-¶ ;; Für Paralell Transport
-¶
+####################################################################
+ ~~ für Merge von mehreren Packets kann per () granuliert werden das genau
+ >> für Fork oder Splitting Links Nach Rechts
+ << für Fork oder Splitting Rechts Vor Links
+ ;; Für Paralell Transport
+
 @kernel-zeilen-nr:-02-12
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ *  Wenn/Kann
-¶ °  WennNicht/Muss
-¶ >  WennKleiner/Kann/Soll
-¶ <  WennGrößer/Kann/Soll
-¶ !  WennEindeutig/Sofort
-¶ …  WennFehler/Kann/Sicherheit
-¶ ^  TransaktionsFehler/Debugg
-¶
-¶  Nutzen : kan als kommand der weiteren funktion verstanden werden
-¶           und dient als packet deinition für automationen , schleifen , weitergaben
-¶           logiken .
-¶
+####################################################################
+ *  Wenn/Kann
+ °  WennNicht/Muss
+ >  WennKleiner/Kann/Soll
+ <  WennGrößer/Kann/Soll
+ !  WennEindeutig/Sofort
+ …  WennFehler/Kann/Sicherheit
+ ^  TransaktionsFehler/Debugg
+
+  Nutzen : kan als kommand der weiteren funktion verstanden werden
+           und dient als packet deinition für automationen , schleifen , weitergaben
+          logiken .
+
 @kernel-zeilen-nr:-02-13
-¶####################################################################
-¶-------------------------------------------------------------------
-¶ ¶  Ersetzt # als Kommentar funktion
-¶-------------------------------------------------------------------
+####################################################################
+ # als Kommentar funktion
+
 @kernel-zeilen-nr:-02-14
-¶
-¶  STRUKTURANALYSE Beispiele
-¶
-¶  ¢|
-¶    »['find'|pacman|{(1)}]«
-¶    »['sudo nano’|>>{(1)pacman.conf}|(2)'Druck']«
-¶    »['sudo cat'|>>(2)|"(3)"]«
-¶    »["(3)»[export /Pylovara/"]«
-¶    »['find and source'|{pfad|~/kitty}]
-¶  |¢
-¶
-¶ ZUORDNUNG KERNELMARKER:
-¶
-¶    Transaktionsrahmen
-¶    ¢| ... |¢
-¶    → Entspricht @kernel-zeilen-nr:-02-01
-¶    Definiert den Rahmen eines Vorgangsblocks oder
-¶    einer Bedingungseinheit.
-¶
-¶    Einzelne Schritte (mit » ... «)
-¶    → Entspricht @kernel-zeilen-nr:-02-02
-¶    Jeder »...«-Block stellt eine mikrotransaktionale
-¶    Operation dar, die als Proteinausführung gilt.
-¶
-¶    Verkettung mit (1), (2), (3)
-¶    → entspricht Proteinverkapselung aus @kernel-
-¶    zeilen-nr:-02-03
-¶    Diese Schritt-für-Schritt-Referenzierung bildet
-¶    ein Proteinpaket mit interner Verkapselung von
-¶    Ergebnissen.
-¶
-¶    Zielübergaben wie export /Pylovara/
-¶    → passt zu @kernel-zeilen-nr:-02-04
-¶    Zielreferenz-Logik wird erfüllt (z. B. §|¢, $
-¶    Dirigent, oder Pfadzuweisung).
-¶
-¶    Syntax wie "(3)", 'Druck', usw.
-¶    → Klar abgebildet über @kernel-zeilen-nr:-02-05
-¶
-¶        "..." als Print
-¶
-¶        '...' als Kommando
-¶
-¶        ¨¨ als reine Werte
-¶
-¶        {...} als Zielbindung oder Ausführungskontext
-¶
-¶
-¶########################### Ende ###################################
+####################################################################
+  STRUKTURANALYSE Beispiele
+
+  ¢|
+    »['find'|pacman|{(1)}]«
+    »['sudo nano’|>>{(1)pacman.conf}|(2)'Druck']«
+    »['sudo cat'|>>(2)|"(3)"]«
+    »["(3)»[export /Pylovara/"]«
+    »['find and source'|{pfad|~/kitty}]
+  |¢
 
 
+MCS deckt vollständig ab:
+
+Klassischer C-Typ	Entsprechung im MCS-Protokoll	Kommentar
+short	               `{Cash	                 Größe}oder{Signed
+long	               `{Cash	                 Größe}oder{Signed
+char	               `{Tracer	                     8}oder{Signed
+float	               `{Amp	                  Zahl}+{Band
+unsigned int	       `{Unsigned	                32}`
+signed long long	   `{Signed	                   128}`
+Speicherpfade	       `{Pfad	             /irgendwo}`
+Interfaces/IP	       `{Ip	192.168                ...} {Interface
+
+🔹 Vorteil :
+
+    Jedes Datenpaket (Proton) ist mit semantischem Label {}
+    gekennzeichnet – ohne Typsystemabhängigkeit.
+
+    Rechenoperationen/Abzweigungen erfolgen symbolisch durch «», ¢|,
+    ¶, ;;, etc.
+
+    Verarbeitungstiefe (Fork/Merge) ist durch ~~, >>, <<, (Zahl)
+    steuerbar.
+
+    Kombinierbarkeit durch |||: komplexe Payloads lassen sich modular
+    aufbauen.
 
 
+🔹 Syntax wie "(3)", 'Druck', usw.
+        → Klar abgebildet über @kernel-zeilen-nr:-02-05
+
+        "..." als Print
+
+        '...' als Kommando
+
+        ¨¨ als reine Werte
+
+        {...} als Zielbindung oder Ausführungskontext
+
+
+🔹 Transaktionsrahmen
+    ¢| ... |¢
+    → Entspricht @kernel-zeilen-nr:-02-01
+    Definiert den Rahmen eines Vorgangsblocks oder
+    einer Bedingungseinheit.
+
+    Einzelne Schritte (mit » ... «)
+    → Entspricht @kernel-zeilen-nr:-02-02
+    Jeder »...«-Block stellt eine mikrotransaktionale
+    Operation dar, die als Proteinausführung gilt.
+
+    Verkettung mit (1), (2), (3)
+    → entspricht Proteinverkapselung aus @kernel-
+    zeilen-nr:-02-03
+    Diese Schritt-für-Schritt-Referenzierung bildet
+    ein Proteinpaket mit interner Verkapselung von
+    Ergebnissen.
+
+    Zielübergaben wie export /Pylovara/
+    → passt zu @kernel-zeilen-nr:-02-04
+    Zielreferenz-Logik wird erfüllt (z. B. §|¢, $
+    Dirigent, oder Pfadzuweisung).
+
+    Ziel innen (besser!):
+    »[{Watt|200}§MotorX]«
+    »[{Watt|200}|{Volt|12}§MotorX]«
+
+########################### Ende ###################################
 
 

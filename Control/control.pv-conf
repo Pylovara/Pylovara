@@ -25,7 +25,7 @@ alias mcs='cd /Pylovara/MCS/Protocol'
 source "$MASTER_DIR/shell.conf"
 source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
-source "$Master_DIR/mcp.conf
+# source "$Master_DIR/mcp.conf
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
@@ -77,6 +77,3 @@ function record() {
 # cat /tmp/pv-control-debug.log
 
 ##############################################################################
-### aktivierungs Rückmeldung
-
-##echo "[SystemControl] Aktiv"

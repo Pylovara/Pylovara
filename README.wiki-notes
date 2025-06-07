@@ -15,15 +15,38 @@ sudo ./pylovara.updater-needle
 ############################# Was ist Pylovara? #####################################
 
 Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 
-das vollständig auf der Shell-Ebene arbeitet – 
-ohne GUI, ohne Umwege, ohne Bullshit. Es wird ausschließlich auf Root-Ebene 
-installiert (`/Pylovara/`) und meidet bewusst alle
-$HOME-Abhängigkeiten.
+das vollständig auf der Shell-Ebene arbeitet – ohne GUI, ohne Umwege, ohne Bullshit. 
+Es wird ausschließlich auf Root-Ebene installiert (`/Pylovara/`) und meidet bewusst 
+alle $HOME-Abhängigkeiten.
 
-Pylovara ist ein radikal neues, modular aufgebautes Datei- und Steuerungssystem,
+Pylovara ist ein radikales neues, modular aufgebautes Datei- und Steuerungssystem,
 das vollständig in der Shell lebt – ohne GUI, ohne Umwege, ohne Bullshit.
 Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlage
 eines neuen Denkens im Umgang mit Betriebssystemen.
+
+Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus , auf 
+jedem System als SubSystem mit eigener Sprache (MCS) Intsallierbar zu sein , ganz
+gleich welche Shell du verwendest oder welches System , Pylovara wird eine für jetzige
+unbekannte MCS Sprache Sprechen die weit aus Performanter ist als reines C ! 
+
+Es kann sein das am anfang gewisse dinge nicht ganz round laufen , wie Updates oder 
+Rechte vergabe im Keller , einbindungen in deinen Sourced Kern , egal welcher Source
+Kern bei dir Aktiv ist , oder auch kleinere bucks mit dem Terminal selbst ......
+
+Was jedoch auf langer sicht für den Einzelnen herausgearbeitet wird , ist die 
+Vollständige Kontrolle seines Systemes  und es ist dabei egal ob RedHat , Arch ,
+OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android ..... Sie werden alle
+im Ring der Performantesten Computer Sprache Überhaupt unterworfen  und zwar MCS.
+
+Pylovara wird auch keinen Anspruch haben irgend ein Programm in den Alten vergorrenen
+Languale Sprachen zu schreiben , oder sogar viel Arbeit in die Übersetzungen zu legen,
+das ausrotten von explosions großen compiler die teils mit blackbox variablen arbeiten
+wie auch GCC , sind ein absolutes NOW GOW ......... und werden abgestoßen ..........
+
+Der Kompromiss um MCS zu Laufen zu bringen bis die Lauffähigkeit durch den aufbau der
+Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maßnahme .
+
+#####################################################################################
 
  Kernprinzipien
 
@@ -91,21 +114,24 @@ eines neuen Denkens im Umgang mit Betriebssystemen.
           Pylovara verwendet ein symbolisches Transaktions- und Steuerungssystem:
 
 ¢|...|¢        : Transaktion Anfang / Ende
-»...«          : Aktion / Zweig / Protein
+»...«          : Aktion / Zweig 
 [...]          : Proteinpacket
+{...}          : Protonpacket 
 §Ziel          : Zielreferenz
 $Dirigent      : Externe Übergabe
 ""             : Print-Ausgabe
 ''             : Befehl
 ¨¨             : Blanker Nenner
-#              : IF / ODER Logik
-#=             : Parallelverarbeitung
+¶              : IF / ODER Logik
+¶¶             : Else / Fehler 
+¶=             : Parallelverarbeitung
+««% +-·        : Weitere berechnungen
 |              : Trennung von Befehlen
 ;;             : Paralleltransport
 ~~             : Merge
 >> <<          : Fork/Splitting
-*(°<><>!)      : Bedingte Automation
-¶              : Kommentar
+*(°<>!         : Bedingte Automation
+#              : Kommentar
 
 #####################################################################################
 

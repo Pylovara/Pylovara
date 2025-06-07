@@ -1,15 +1,19 @@
+#############################################################
+@wiki-nr: 07 ################################################
+#############################################################
+@wiki-nr: 07-01 #############################################
+#############################################################
 
-MCS-Beispiel 01 – „Steam Launcher mit Display-Logik und Fehlerprotokoll“
+MCS-Beispiel 01 – 
+„Steam Launcher mit Display-Logik und Fehlerprotokoll“
 
 Ziel :
 Ein Programm (hier: **Steam**) wird gestartet.
-Dabei wird geprüft, ob ein Display im System (`eDip1`) im **Vollbildmodus** bereitsteht.
+Dabei wird geprüft, ob ein Display im System (`eDip1`) 
+im Vollbildmodus bereitsteht.
 Wenn nicht → Fehlerbehandlung und Protokoll.
 
----
-
-### 🧩 MCS-Code
-
+MCS-Code:
 ```mcs
 ¢| steam * exec
   »['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«
@@ -17,7 +21,7 @@ Wenn nicht → Fehlerbehandlung und Protokoll.
   ¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«
 |¢
 ```
-##########################################################################
+#############################################################
 Erklärung 
 
 `¢| steam * exec`
@@ -26,7 +30,8 @@ Erklärung
 * `steam`: Logischer Name der Operation.
 * `* exec`: Operationstyp → hier ein **ausführbarer Prozess** (exec).
 
-> → Signal: Starte ein logisches Modul namens „steam“, das etwas *ausführen* soll.
+> → Signal: Starte ein logisches Modul namens „steam“, 
+            das etwas *ausführen* soll.
 
 `»['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«`
 
@@ -34,18 +39,21 @@ Erklärung
 * `{pfad|...}`: Angabe des Speicherorts.
 * `"$Q"`: Placeholder für spätere Übergabeparameter oder leere Übergabe.
 
-> → Führt den Steam-Binary aus. `$Q` steht für optionalen, zur Laufzeit übergebbaren Input.
+> → Führt den Steam-Binary aus. `$Q` steht für optionalen, 
+    zur Laufzeit übergebbaren Input.
 
 `¶ »['eDip1'|fullscreen]«`
 
 * `¶`: **IF-Bedingung** – hier wird etwas geprüft.
-* `»['eDip1'|fullscreen]«`: Teste, ob das Display-Modul `eDip1` im **fullscreen-Modus** verfügbar ist.
+* `»['eDip1'|fullscreen]«`: Teste, ob das Display-Modul `eDip1` 
+    im fullscreen-Modus verfügbar ist.
 
 > → Prüft, ob Steam im Vollbildmodus auf dem Display `eDip1` laufen kann.
 
 `¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«`
 
-* `¶¶`: **ELSE-Zweig** – wird nur ausgeführt, wenn die vorherige `¶`-Bedingung fehlschlägt.
+* `¶¶`: ELSE-Zweig – wird nur ausgeführt, wenn die vorherige 
+*  `¶`  -Bedingung fehlschlägt.
 * `['ſ'|...]`: Aufruf des internen Service-Moduls `ſ` (z. B. „Systemflush“ oder „Systemlogik“).
 * `{cash|reset}`: Befehl, um einen Caching-Zustand zurückzusetzen.
 * `{log|~/$User/...}`: Pfad zur Protokolldatei für die Ausgabe.

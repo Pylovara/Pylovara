@@ -75,3 +75,50 @@ Modularer Nutzen
 - Maschinennah: Keine Runtime-Parser-Logik nötig
 - Einprägsam: Fast wie ein Mini-Assembler mit Klartext
 
+@wiki-nr: 07-02 #############################################
+
+Vergleich: Klassischer Python-Startpunkt vs. MCS-Mapping
+
+Python-Originalcode:
+
+```python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from speculum.main import main
+
+if __name__ == "__main__":
+    sys.argv[0] = re.sub(r"(-script\.pyw|\.exe)?$", "", sys.argv[0])
+    sys.exit(main())
+```
+
+*Dieser Code lädt `re`, `sys`, entfernt ggf. Windows/Script-Endungen und startet die `main()`-Routine der `speculum.main`-Datei.*
+
+
+MCS-Abbildung:
+
+```mcs
+¢| re sys * speculum.main
+    »['import'|re|sys]«
+    »['sys.argv'|0|$@argv0]«
+    ¶ »['regex.sub'|"-script\.pyw|\.exe)?$"|""|$@argv0|$@argv0]«
+    ¶ »['sys.exit'|main()]«
+|¢
+```
+
+Erklärung MCS-Logik:
+| Zeile              | Bedeutung                 |                                                      |                                  |
+| ------------------ | ------------------------- | ---------------------------------------------------- | -------------------------------- |
+| \`¢                | re sys \* speculum.main\` | Blockstart, nutzt `re`, `sys`, Ziel: `speculum.main` |                                  |
+| \`»\['import'      | re                        | sys]«\`                                              | lädt Module                      |
+| \`»\['sys.argv'    | 0                         | \$@argv0]«\`                                         | speichert `sys.argv[0]` temporär |
+| \`¶ »\['regex.sub' | "..."]«\`                 | entfernt Endungen wie `-script.pyw`, `.exe`          |                                  |
+| \`¶ »\['sys.exit'  | main()]«\`                | startet Main-Funktion & beendet Prozess              |                                  |
+
+
+Kommentar:
+Die MCS-Syntax bietet klare Modularität, lesbare semantische Blöcke 
+und eine trennbare Logikarchitektur, die sich später verschachteln, 
+ersetzen oder bedingt erweitern lässt – im Gegensatz zur linearen, 
+oft "unsichtbaren" Verkettung in Python.

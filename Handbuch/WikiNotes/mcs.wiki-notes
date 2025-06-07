@@ -1,0 +1,69 @@
+
+MCS-Beispiel 01 – „Steam Launcher mit Display-Logik und Fehlerprotokoll“
+
+Ziel :
+Ein Programm (hier: **Steam**) wird gestartet.
+Dabei wird geprüft, ob ein Display im System (`eDip1`) im **Vollbildmodus** bereitsteht.
+Wenn nicht → Fehlerbehandlung und Protokoll.
+
+---
+
+### 🧩 MCS-Code
+
+```mcs
+¢| steam * exec
+  »['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«
+  ¶ »['eDip1'|fullscreen]«
+  ¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«
+|¢
+```
+##########################################################################
+Erklärung 
+
+`¢| steam * exec`
+
+* `¢|`: Start einer MCS-Sektion (Container).
+* `steam`: Logischer Name der Operation.
+* `* exec`: Operationstyp → hier ein **ausführbarer Prozess** (exec).
+
+> → Signal: Starte ein logisches Modul namens „steam“, das etwas *ausführen* soll.
+
+`»['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«`
+
+* `»['exec'|...]«`: Hauptruf – startet den eigentlichen Prozess.
+* `{pfad|...}`: Angabe des Speicherorts.
+* `"$Q"`: Placeholder für spätere Übergabeparameter oder leere Übergabe.
+
+> → Führt den Steam-Binary aus. `$Q` steht für optionalen, zur Laufzeit übergebbaren Input.
+
+`¶ »['eDip1'|fullscreen]«`
+
+* `¶`: **IF-Bedingung** – hier wird etwas geprüft.
+* `»['eDip1'|fullscreen]«`: Teste, ob das Display-Modul `eDip1` im **fullscreen-Modus** verfügbar ist.
+
+> → Prüft, ob Steam im Vollbildmodus auf dem Display `eDip1` laufen kann.
+
+`¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«`
+
+* `¶¶`: **ELSE-Zweig** – wird nur ausgeführt, wenn die vorherige `¶`-Bedingung fehlschlägt.
+* `['ſ'|...]`: Aufruf des internen Service-Moduls `ſ` (z. B. „Systemflush“ oder „Systemlogik“).
+* `{cash|reset}`: Befehl, um einen Caching-Zustand zurückzusetzen.
+* `{log|~/$User/...}`: Pfad zur Protokolldatei für die Ausgabe.
+
+> → Falls kein Vollbild möglich: Reset-Caches und logge den Fehler.
+
+Struktur zusammengefasst
+| Symbol  | Bedeutung                        |     |                            |
+| ------- | -------------------------------- | --- | -------------------------- |
+| \`¢     | ...                              | ¢\` | Codeblock (Modulcontainer) |
+| `*`     | Art der Operation (exec, map...) |     |                            |
+| `»...«` | Ausführung / Prüfung / Logik     |     |                            |
+| `¶`     | IF-Zweig                         |     |                            |
+| `¶¶`    | ELSE-Zweig                       |     |                            |
+
+Modularer Nutzen
+- Erweiterbar: Weitere `¶`- oder `§`-Zweige möglich
+- Klarer Fehlerpfad: Saubere Trennung von Logik + Recovery
+- Maschinennah: Keine Runtime-Parser-Logik nötig
+- Einprägsam: Fast wie ein Mini-Assembler mit Klartext
+

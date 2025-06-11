@@ -1,26 +1,26 @@
-¶####################################################################
+####################################################################
 @kernel-nr: lex
-¶####################################################################
-¶       - System Kernel - ON - kernel - The Learn Guide  -
-¶   ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖ ▗▖   ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▖ ▗▖ ▗▄▖ ▗▖  ▗▖
-¶   ▐▌ ▐▌  █  ▐▌▗▞▘  █   ▐▌   ▐▌    ▝▚▞▘   █  ▐▌▗▞▘▐▌ ▐▌▐▛▚▖▐▌
-¶   ▐▌ ▐▌  █  ▐▛▚▖   █   ▐▌   ▐▛▀▀▘  ▐▌    █  ▐▛▚▖ ▐▌ ▐▌▐▌ ▝▜▌
-¶   ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖ ▐▙▄▄▖▐▙▄▄▖▗▞▘▝▚▖▗▄█▄▖▐▌ ▐▌▝▚▄▞▘▐▌  ▐▌
-¶
-¶
-¶                                              Pylovara since 2025
-¶####################################################################
-¶################ Das Handbuch fürs Architecten #####################
-¶####################################################################
-¶################# Kernel - Main Übersicht ##########################
+####################################################################
+       - System Kernel - ON - kernel - The Learn Guide  -
+   ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖ ▗▖   ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▖ ▗▖ ▗▄▖ ▗▖  ▗▖
+   ▐▌ ▐▌  █  ▐▌▗▞▘  █   ▐▌   ▐▌    ▝▚▞▘   █  ▐▌▗▞▘▐▌ ▐▌▐▛▚▖▐▌
+   ▐▌ ▐▌  █  ▐▛▚▖   █   ▐▌   ▐▛▀▀▘  ▐▌    █  ▐▛▚▖ ▐▌ ▐▌▐▌ ▝▜▌
+   ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖ ▐▙▄▄▖▐▙▄▄▖▗▞▘▝▚▖▗▄█▄▖▐▌ ▐▌▝▚▄▞▘▐▌  ▐▌
+
+
+                                              Pylovara since 2025
+####################################################################
+################ Das Handbuch fürs Architecten #####################
+####################################################################
+################# Kernel - Main Übersicht ##########################
 
 lex  Lexikon                  # Übersicht  | lexikon
 00   Fallback                 # Übersicht  | Parser
 01   _86_64 Bit               # Übersicht  | Alles
 02   MCS Beta                 # Guide      | MaschinenCodeSpeech
 
-¶####################################################################
-¶####################### _86_64 Register ############################
+####################################################################
+####################### _86_64 Register ############################
 
 01-01 Register                #Lektion 1|Was Sind Register
 01-02 Rax,RBX,RCX,RDX,RDX     #Lektion 2|Die Arbeitstiere
@@ -33,42 +33,42 @@ lex  Lexikon                  # Übersicht  | lexikon
 01-09 Paging,CR3              #Lektion 9|Speicherverwaltung
 01-10 x86_64 Register-Matrix  #Lektion10|Gesamtüberblick
 
-¶####################################################################
-¶############ _86_64 Die Befehle (Instruction Set) ##################
+####################################################################
+############ _86_64 Die Befehle (Instruction Set) ##################
 
-01-11 MOV                    ¶Lektion11|Daten auf Maschinenebene
-01-12 PUSH & POP             ¶Lektion12|Der Stapel spricht
-01-13 CALL & RET             ¶Lektion13|Maschinen mit Rückgrat
-01-14 CMP & TEST             ¶Lektion14|Maschinen vergleichen
-01-15 Jxx                    ¶Lektion15|Entscheidungen und Sprünge
-01-16 LEA                    ¶Lektion16|Rechnen ohne Rechnen
-01-17 XCHG & BSWAP           ¶Lektion17|Wenn Bytes tanzen
-01-18 NOP & HLT              ¶Lektion18|Pausen im Maschinenrauschen
-01-19 INT & SYSCALL          ¶Lektion19|Tore zum Kernel
-01-20 REP & MOVS/STOS        ¶Lektion20|Maschinen wiederholen
+01-11 MOV                    #Lektion11|Daten auf Maschinenebene
+01-12 PUSH & POP             #Lektion12|Der Stapel spricht
+01-13 CALL & RET             #Lektion13|Maschinen mit Rückgrat
+01-14 CMP & TEST             #Lektion14|Maschinen vergleichen
+01-15 Jxx                    #Lektion15|Entscheidungen und Sprünge
+01-16 LEA                    #Lektion16|Rechnen ohne Rechnen
+01-17 XCHG & BSWAP           #Lektion17|Wenn Bytes tanzen
+01-18 NOP & HLT              #Lektion18|Pausen im Maschinenrauschen
+01-19 INT & SYSCALL          #Lektion19|Tore zum Kernel
+01-20 REP & MOVS/STOS        #Lektion20|Maschinen wiederholen
 
-¶####################################################################
-¶################## Flags und Maschinenzustände #####################
+####################################################################
+################## Flags und Maschinenzustände #####################
 
-01-21 FLAGS                  ¶Lektion21|Maschinen mit Gefühlen
-01-22 TEST & CMP             ¶Lektion22|Prüfen und Vergleichen
-01-23 Abschluss              ¶Lektion23|Abschluss
+01-21 FLAGS                  #Lektion21|Maschinen mit Gefühlen
+01-22 TEST & CMP             #Lektion22|Prüfen und Vergleichen
+01-23 Abschluss              #Lektion23|Abschluss
 
 ¶####################################################################
 ¶############# Maschinen Code Spech Kernel Syntax ###################
 
-02-01 TransAktionen          ¶ wird als Token/Credit transportiert
-02-02 Aktionen               ¶ Kombinationen , Verpacket
-02-03 ProteinPackete         ¶ Aufträge verpacken
-02-04 §Referenz|$Local       ¶ Dirigenten übergeben
-02-05 Ausgabe Formate        ¶ Einordnungen
-02-06 Berechnungen           ¶ «<berechnungen> weitergaben
-02-07 IF Else &              ¶ C Syntax Logik verpackt in # , ## #=
-02-08 Trennbefehle           ¶ Syntax Logik für Verpackungen
-02-09 Merge Transporte       ¶ Optional , kann einzelne und mehrfach
-02-10 PacketDevinition       ¶ Elementare Transportfunktionen
-02-11 Forks Merges           ¶ Verwendung des Fork Merges Konzepts
-02-12 Automation, Zuweisung  ¶ Generelles Transaktionen Operatoren
+02-01 TransAktionen          # wird als Token/Credit transportiert
+02-02 Aktionen               # Kombinationen , Verpacket
+02-03 ProteinPackete         # Aufträge verpacken
+02-04 §Referenz|$Local       # Dirigenten übergeben
+02-05 Ausgabe Formate        # Einordnungen
+02-06 Berechnungen           # «<berechnungen> weitergaben
+02-07 IF Else &              # C Syntax Logik verpackt in # , ## #=
+02-08 Trennbefehle           # Syntax Logik für Verpackungen
+02-09 Merge Transporte       # Optional , kann einzelne und mehrfach
+02-10 PacketDevinition       # Elementare Transportfunktionen
+02-11 Forks Merges           # Verwendung des Fork Merges Konzepts
+02-12 Automation, Zuweisung  # Generelles Transaktionen Operatoren
 02-13 Kommentar funktion     ¶ Umstellung
 
 ¶####################################################################

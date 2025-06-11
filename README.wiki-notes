@@ -1,18 +1,18 @@
-#####################################################################################
+################################################################################
                     Ⓟylovara-System |Rootbasierter Aufbau
-#####################################################################################
+################################################################################
                                  Install
-#####################################################################################
+################################################################################
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Installer/
 sudo ./full.install-core
-#####################################################################################
+################################################################################
                                Update Manual
-#####################################################################################
+################################################################################
 cd Pylovara/Installer/
 sudo ./pylovara.updater-needle
-#####################################################################################
-############################# Was ist Pylovara? #####################################
+################################################################################
+############################# Was ist Pylovara? ################################
 
 Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 
 das vollständig auf der Shell-Ebene arbeitet – ohne GUI, ohne Umwege, ohne Bullshit. 
@@ -46,7 +46,7 @@ wie auch GCC , sind ein absolutes NOW GOW ......... und werden abgestoßen .....
 Der Kompromiss um MCS zu Laufen zu bringen bis die Lauffähigkeit durch den aufbau der
 Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maßnahme .
 
-#####################################################################################
+################################################################################
 
  Kernprinzipien
 
@@ -65,7 +65,7 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 - Neue Module können ohne Kernänderung hinzugefügt werden
 - Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
 
-#####################################################################################
+################################################################################
 
  Wer Brauch schon PDFs
 
@@ -84,7 +84,7 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 
                          Hier Endet die Shell Information
 
-#####################################################################################
+################################################################################
 
  Architektur
         Pylovara organisiert sich in einem klaren Familienmodell:
@@ -100,7 +100,7 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 | `*.*-needle` | Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll) |
 | `<*von>.<*zu>-logic` | Verbindungslogik – Transport zwischen Schichten |
 
-#####################################################################################
+################################################################################
 
  Kernel & Handbuch
 
@@ -108,7 +108,7 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 - `kernelx [nr]`: Detailierte Ansicht spezifischer Kernelabschnitte
 - `helpme`: Wiki-System zur Erläuterung aller Komponenten
 
-#####################################################################################
+################################################################################
 
  Steuerung durch Symbole
           Pylovara verwendet ein symbolisches Transaktions- und Steuerungssystem:
@@ -137,7 +137,7 @@ es ist weitaus mehr als nur eine Symbolische Syntaxy es ist die die grundlage
 von MCS Maschinen Code Speech oder auch Maschinen Code Sprache . Designed um
 C in der Performens auszurotten und die grundlage des Neuen System´s .
 
-#####################################################################################
+################################################################################
 
  Zukunftsvision
            kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
@@ -153,7 +153,7 @@ Stellen Sie sich ein Windows vor, das intern noch Windows bleibt, aber komplett 
 gesteuert wird. Oder ein ArchLinux, das seine Kontrolle an Pylovara abgibt.
 Die Einsatzgebiete sind unbegrenzt.
 
-#####################################################################################
+################################################################################
 
  Shell Layouts
            Pylovara unterstützt verschiedene Prompt-Stile:
@@ -162,7 +162,7 @@ Die Einsatzgebiete sind unbegrenzt.
 - **Hilfe**: `/Pylovara/System/Shell/Layout/pylovara+.shell-layout`
 - **Minimal**: `/Pylovara/System/Shell/Layout/pylovara++.shell-layout`
 
-#####################################################################################
+################################################################################
 
        Philosophie:
                "Was du nicht selbst in der Shell erschaffst,

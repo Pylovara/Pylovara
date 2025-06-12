@@ -1,0 +1,12 @@
+Notizen aus einem Gespräch mit Groke , stichpunkt assembly :
+
+Ist überhaupt irgendein Code vom Assembler schon bekannt, der 100% für irgendeine Taste funktioniert oder für irgendein Befehl, 
+wie zum Beispiel öffnet das Terminal oder sowas? Irgendwie was Brauchbares.
+
+Ja, es gibt bekannte Assembler-Codes für Tastatureingaben. 
+Zum Beispiel kann ein simpler Code in x86-Assembler eine Taste abfangen, indem er Interrupt thirteenh benutzt,
+das gibt dir den Scancode der Taste, sagen wir „E“. Für Terminal-Befehle wie „öffnen“ musst du schauen, 
+wie das Betriebssystem das handhabt; unter Linux könntest du Systemaufrufe wie open() nutzen, die der Assembler aufruft. 
+Das ist machbar, such mal nach x86-Interrupt-Routinen oder Systemcall-Docs. 
+  
+ notiz : Assembly logik lernen , am besten beim lernen auch gleich ein Assembly archiv im handbuch eröffnen

@@ -12,6 +12,11 @@ sudo ./full.install-core
 cd Pylovara/Installer/
 sudo ./pylovara.updater-needle
 ################################################################################
+Wenn du Root zugriff brauchst ersetze (UserName) vor und nach dem : mit deinem
+User namen , um vollzugriff im keller zu bekommen .
+
+sudo chown -R (UserName):(UserName) / <--- vorsicht , nutzt das nur mit echtem usernamen
+sudo chmod -R u+rwX /
 ############################# Was ist Pylovara? ################################
 
 Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 

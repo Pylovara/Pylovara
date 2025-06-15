@@ -2,12 +2,45 @@
 @wiki_nr: 01 ##############################################################################
 @wiki_nr: ast ################################################################################
 ##############################################################################################
-  ┌[bandino@DEV][13:42:37|Di Mai 27|35M]
+ ┌[bandino@Dev][01:44:25|Mo Jun 16]
  │ ᴾʸˡᵒᵛᵃʳᵃ
  │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
  │    ₜₒ   ₚᵧₗₒ  ₖₑᵣₙₑₗₓ ₀₁₋₀₁  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
  └[/Pylovara]> $ xtree
 .
+├── AI
+│   ├── AIControl
+│   │   ├── AI-Einstellungen
+│   │   │   └── aicontrol.main-conf
+│   │   ├── #AI-Handbücher
+│   │   │   ├── _86_64.ai-wiki-notes
+│   │   │   ├── arm.ai-wiki-notes
+│   │   │   ├── bash.ai-wiki-notes
+│   │   │   ├── c++.ai-wiki-notes
+│   │   │   ├── c.ai-wiki-notes
+│   │   │   ├── CISC.ai-wiki-notes
+│   │   │   ├── EPIC.ai-wiki-notes
+│   │   │   ├── IA-16.ai-wiki-notes
+│   │   │   ├── IA-32.ai-wiki-notes
+│   │   │   ├── IA-64.ai-wiki-notes
+│   │   │   ├── isa.ai-wiki-notes
+│   │   │   ├── Mnemonics.ai-wiki-notes
+│   │   │   ├── Operanden.ai-wiki-notes
+│   │   │   ├── powershell.ai-wiki-notes
+│   │   │   ├── python.ai-wiki-notes
+│   │   │   ├── RISC.ai-wiki-notes
+│   │   │   ├── VLIW.ai-wiki-notes
+│   │   │   └── zshell.ai-wiki-notes
+│   │   └── AI-Module
+│   │       └── Logic
+│   │           ├── ai-runner.verhaltens-logic
+│   │           └── wiki.reader-logic
+│   └── ollama
+│       ├── bin
+│       │   └── ollama
+│       └── systemd
+│           └── ollama.service
+├── Arbeitsblatt.dev-notes
 ├── Control
 │   ├── cache.conf
 │   ├── callme.conf
@@ -15,149 +48,207 @@
 │   ├── datatypes.conf
 │   ├── download.conf
 │   ├── hardware.conf
+│   ├── #mcp.conf
 │   ├── navigator.conf
 │   └── shell.conf
 ├── Handbuch
-│   ├── assembler
 │   ├── DnaNotes
 │   │   ├── 01-info.dna-notes
 │   │   ├── 99-guide.dna-notes
 │   │   └── ##-shots.dna-notes
 │   ├── KernelNotes
 │   │   ├── 01-8664.kernel-notes
+│   │   ├── 02-MCS.kernel-notes
+│   │   ├── 03-MCSSchuleMaterial.kernel-notes
 │   │   └── lexikon.kernel-notes
 │   └── WikiNotes
 │       ├── control.wiki-notes
 │       ├── guide.wiki-notes
 │       ├── lexikon.wiki-notes
+│       ├── mcs.wiki-notes
 │       ├── module.wiki-notes
 │       ├── pylovara-ast.wiki-notes
 │       ├── shell.wiki-notes
 │       └── source-bridge-needles.wiki-notes
-├── helpme.cut-dna
-├── helpmex.deluxe-dna
-├── Installer
+├── pushforce.needles
+├── Pylovara.license-notes
+├── README.wiki-notes
+├── Setup
 │   ├── full.install-core
 │   ├── info.install-notes
+│   ├── Integrationscheck.shellinstall-needle
 │   ├── nc.install-core
-│   └── paket.updater-core
-├── policy.security-alert
-├── Pylovara.license-notes
-├── pylovara.updater-needle
-├── README.wiki-notes
-├── Runtime <-- experimentiell , noch funktions los
-│   ├── Logs
-│   │   ├── stderr.log
-│   │   └── stdout.log
-│   ├── Protokolle
-│   │   └── main.pipe
-│   ├── pylovara.runenv-core
-│   └── pylovara.runenv.loop
-├── System
-│   ├── Module
-│   │   ├── Pylovara
-│   │   │   ├── Cache
-│   │   │   │   └── GitPlaceHolder.Struktur
-│   │   │   ├── Core
-│   │   │   │   ├── GitPlaceHolder.Struktur
-│   │   │   │   └── pylovara.source-bridge-core
-│   │   │   ├── Logic
-│   │   │   │   └── pylovara.ini-parser-logic
-│   │   │   ├── Logs
-│   │   │   │   └── GitPlaceHolder.Struktur
-│   │   │   ├── Magic
-│   │   │   │   └── GitPlaceHolder.Struktur
-│   │   │   ├── Micro
-│   │   │   │   └── GitPlaceHolder.Struktur
-│   │   │   ├── Nano
-│   │   │   │   └── GitPlaceHolder.Struktur
-│   │   │   ├── Needle
-│   │   │   │   └── GitPlaceHolder.Struktur
-│   │   │   └── Node
-│   │   │       └── GitPlaceHolder.Struktur
-│   │   └── Taschenrechner <-- unfertig
-│   │       ├── Core
-│   │       │   └── taschenrechner.core
-│   │       └── Logic
-│   │           └── taschenrechner.max-logic
-│   ├── Pictures
-│   │   └── Pylovara
-│   │       └── Pylovara.jpg
-│   └── Shell
-│       ├── CMD
-│       │   ├── color.cmd-dna
-│       │   ├── cpu.dna-cmd
-│       │   ├── datatype.dna-cmd
-│       │   ├── hw.dna-cmd
-│       │   ├── internet.dna-cmd
-│       │   ├── lex.dna-cmd
-│       │   ├── lexi.dna-cmd
-│       │   ├── load.dna-cmd
-│       │   ├── off.dna-cmd
-│       │   ├── on.dna-cmd
-│       │   ├── pci.dna-cmd
-│       │   ├── ports.dna-cmd
-│       │   ├── taski.dna-cmd
-│       │   └── usb.dna-cmd
-│       ├── DNA
-│       │   ├── dna.completion-dna
-│       │   ├── dna.shell-dna
-│       │   ├── dna.trigger-dna
-│       │   ├── helpme.cut-dna
-│       │   ├── helpmex.deluxe-dna
-│       │   ├── kernel.cut-dna
-│       │   ├── kernelx.deluxe-dna
-│       │   ├── lex.help-dna
-│       │   ├── lexi.help-dna
-│       │   ├── p.tree-dna
-│       │   ├── pylo.tool-dna
-│       │   └── to.cd-dna
-│       ├── Layout
-│       │   ├── pylovara+.shell-layout
-│       │   └── pylovara.shell-layout
-│       ├── Vara
-│       │   ├── awk.vara
-│       │   ├── basename.vara
-│       │   ├── bc.vara
-│       │   ├── cat.vara
-│       │   ├── curl.vara
-│       │   ├── cut.vara
-│       │   ├── df.vara
-│       │   ├── du.vara
-│       │   ├── echo.vara
-│       │   ├── fdisk.vara
-│       │   ├── find.vara
-│       │   ├── free.vara
-│       │   ├── fzf.vara
-│       │   ├── git.vara
-│       │   ├── grep.vara
-│       │   ├── gzip.vara
-│       │   ├── head.vara
-│       │   ├── less.vara
-│       │   ├── lsblk.vara
-│       │   ├── lscpu.vara
-│       │   ├── lshw.vara
-│       │   ├── lspci.vara
-│       │   ├── lsusb.vara
-│       │   ├── ls.vara
-│       │   ├── nano.vara
-│       │   ├── nc.vara
-│       │   ├── ps.vara
-│       │   ├── sed.vara
-│       │   ├── sort.vara
-│       │   ├── tail.vara
-│       │   ├── tar.vara
-│       │   ├── top.vara
-│       │   ├── tree.vara
-│       │   ├── wc.vara
-│       │   └── xz.vara
-│       └── VaraLibs
-│           └── GitPlaceHolder.Struktur
-└── usr
-    └── bin
-        └── pylovara.wrapper-shell
+│   ├── paket.updater-core
+│   ├── policy.security-alert
+│   ├── pylovara.updater-needle
+│   └── usr
+│       └── bin
+│           └── pylovara.wrapper-shell
+└── System
+    ├── Kernel
+    │   ├── parser
+    │   │   └── protein-packet.parser-needle
+    │   ├── Prototyp.dev-notes
+    │   ├── register
+    │   │   ├── mcs.parser-magic
+    │   │   ├── mcs.registry-core
+    │   │   ├── register.structures-magic
+    │   │   ├── register.symbols
+    │   │   ├── register.symbols-magic
+    │   │   └── semantics.REGISTER-core
+    │   └── Sprache
+    │       └── Symbole
+    │           ├── |¢.symbol
+    │           ├── ¢|.symbol
+    │           ├── $.symbol
+    │           ├── Placeholder
+    │           ├── !.symbol
+    │           ├── "".symbol
+    │           ├── #.symbol
+    │           ├── ''.symbol
+    │           ├── *.symbol
+    │           ├── +.symbol
+    │           ├── -.symbol
+    │           ├── :.symbol
+    │           ├── ;;.symbol
+    │           ├── <.symbol
+    │           ├── <<.symbol
+    │           ├── =.symbol
+    │           ├── >.symbol
+    │           ├── >>.symbol
+    │           ├── [.symbol
+    │           ├── ].symbol
+    │           ├── ^.symbol
+    │           ├── |.symbol
+    │           ├── |||.symbol
+    │           ├── ~~.symbol
+    │           ├── §.symbol
+    │           ├── ¨¨.symbol
+    │           ├── «.symbol
+    │           ├── °.symbol
+    │           ├── ¶.symbol
+    │           ├── ¶=.symbol
+    │           ├── ¶¶.symbol
+    │           ├── ·.symbol
+    │           ├── ».symbol
+    │           └── ….symbol
+    ├── Module
+    │   ├── Pylovara
+    │   │   ├── Cache
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Core
+    │   │   │   ├── GitPlaceHolder.Struktur
+    │   │   │   └── pylovara.source-bridge-core
+    │   │   ├── Logic
+    │   │   │   └── pylovara.ini-parser-logic
+    │   │   ├── Logs
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Magic
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Micro
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Nano
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Needle
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   └── Node
+    │   │       └── GitPlaceHolder.Struktur
+    │   └── Taschenrechner
+    │       ├── Core
+    │       │   └── taschenrechner.core
+    │       └── Logic
+    │           └── taschenrechner.max-logic
+    ├── Pictures
+    │   └── Pylovara
+    │       └── Pylovara.jpg
+    └── Shell
+        ├── CMD
+        │   ├── color.cmd-dna
+        │   ├── cpu.dna-cmd
+        │   ├── datatype.dna-cmd
+        │   ├── hw.dna-cmd
+        │   ├── internet.dna-cmd
+        │   ├── lex.dna-cmd
+        │   ├── lexi.dna-cmd
+        │   ├── load.dna-cmd
+        │   ├── off.dna-cmd
+        │   ├── on.dna-cmd
+        │   ├── pci.dna-cmd
+        │   ├── ports.dna-cmd
+        │   ├── taski.dna-cmd
+        │   └── usb.dna-cmd
+        ├── DNA
+        │   ├── dna.completion-dna
+        │   ├── dna.shell-dna
+        │   ├── dna.trigger-dna
+        │   ├── helpme.cut-dna
+        │   ├── helpmex.deluxe-dna
+        │   ├── kernel.cut-dna
+        │   ├── kernelx.deluxe-dna
+        │   ├── lex.help-dna
+        │   ├── lexi.help-dna
+        │   ├── p.tree-dna
+        │   ├── pylo.tool-dna
+        │   ├── terminal.record-dna
+        │   └── to.cd-dna
+        ├── Layout
+        │   ├── pylovara++.shell-layout
+        │   ├── pylovara+.shell-layout
+        │   └── pylovara.shell-layout
+        ├── MCP
+        │   ├── Core
+        │   │   └── mcp.biose-core
+        │   ├── Magic
+        │   │   └── check.live-magic
+        │   ├── Needle
+        │   │   └── treiber.scan-needle
+        │   └── Node
+        │       └── mcp.comand-node
+        ├── Security
+        │   ├── pylowatchdog.conf
+        │   ├── pylowatchd.sh
+        │   ├── pylowatch.security-notes
+        │   └── systemd-Service-Unit
+        ├── Vara
+        │   ├── awk.vara
+        │   ├── basename.vara
+        │   ├── bc.vara
+        │   ├── cat.vara
+        │   ├── curl.vara
+        │   ├── cut.vara
+        │   ├── df.vara
+        │   ├── du.vara
+        │   ├── echo.vara
+        │   ├── fdisk.vara
+        │   ├── find.vara
+        │   ├── free.vara
+        │   ├── fzf.vara
+        │   ├── git.vara
+        │   ├── grep.vara
+        │   ├── gzip.vara
+        │   ├── head.vara
+        │   ├── less.vara
+        │   ├── lsblk.vara
+        │   ├── lscpu.vara
+        │   ├── lshw.vara
+        │   ├── lspci.vara
+        │   ├── lsusb.vara
+        │   ├── ls.vara
+        │   ├── nano.vara
+        │   ├── nc.vara
+        │   ├── ps.vara
+        │   ├── sed.vara
+        │   ├── sort.vara
+        │   ├── tail.vara
+        │   ├── tar.vara
+        │   ├── top.vara
+        │   ├── tree.vara
+        │   ├── wc.vara
+        │   └── xz.vara
+        └── VaraLibs
+            └── GitPlaceHolder.Struktur
 
-35 directories, 114 files
+52 directories, 188 files
 
 │############################################################
 │# WikiLexikon : pylovara-ast.wiki-notes

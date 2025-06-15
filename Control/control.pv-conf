@@ -23,6 +23,8 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 ### alias Sektion
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
+
+### Startet Ollama
 alias ollama='/Pylovara/AI/ollama/bin/ollama start'
 
 ### Startet pull phi4-mini

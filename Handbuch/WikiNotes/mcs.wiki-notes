@@ -1,33 +1,31 @@
 #############################################################
-@wiki-nr: 07 ################################################
-#############################################################
-@wiki-nr: 07-01 #############################################
+@wiki-nr: 07     ############################################
 #############################################################
 
-MCS-Beispiel 01 – 
-„Steam Launcher mit Display-Logik und Fehlerprotokoll“
+ MCS-Beispiel 01 – 
+ „Steam Launcher mit Display-Logik und Fehlerprotokoll“
 
-Ziel :
-Ein Programm (hier: **Steam**) wird gestartet.
-Dabei wird geprüft, ob ein Display im System (`eDip1`) 
-im Vollbildmodus bereitsteht.
-Wenn nicht → Fehlerbehandlung und Protokoll.
+ Ziel :
+ Ein Programm (hier: **Steam**) wird gestartet.
+ Dabei wird geprüft, ob ein Display im System (`eDip1`) 
+ im Vollbildmodus bereitsteht.
+ Wenn nicht → Fehlerbehandlung und Protokoll.
 
-MCS-Code:
-```mcs
-¢| steam * exec
-  »['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«
-  ¶ »['eDip1'|fullscreen]«
-  ¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«
-|¢
-```
+ MCS-Code:
+ ```mcs
+ ¢| steam * exec
+   »['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«
+   ¶ »['eDip1'|fullscreen]«
+   ¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«
+ |¢
+ ```
 #############################################################
-Erklärung 
+ Erklärung 
 
-`¢| steam * exec`
+ `¢| steam * exec`
 
-* `¢|`: Start einer MCS-Sektion (Container).
-* `steam`: Logischer Name der Operation.
+ * `¢|`: Start einer MCS-Sektion (Container).
+ * `steam`: Logischer Name der Operation.
 * `* exec`: Operationstyp → hier ein **ausführbarer Prozess** (exec).
 
 > → Signal: Starte ein logisches Modul namens „steam“, 
@@ -74,8 +72,6 @@ Modularer Nutzen
 - Klarer Fehlerpfad: Saubere Trennung von Logik + Recovery
 - Maschinennah: Keine Runtime-Parser-Logik nötig
 - Einprägsam: Fast wie ein Mini-Assembler mit Klartext
-
-@wiki-nr: 07-02 #############################################
 
 Vergleich: Klassischer Python-Startpunkt vs. MCS-Mapping
 

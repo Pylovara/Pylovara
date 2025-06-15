@@ -14,6 +14,12 @@ Shell_DIR="/Pylovara/System/Shell/DNA"
 export PV_DIR="/Pylovara/"
 
 ##############################################################################
+### Alle internen Bin-Pfade ollama
+
+export PATH=/Pylovara/AI/ollama:$PATH
+export PATH="$PV_DIR/AI/ollama/bin:$PATH"
+
+##############################################################################
 ### alias Sektion
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
@@ -25,7 +31,6 @@ alias mcs='cd /Pylovara/MCS/Protocol'
 source "$MASTER_DIR/shell.conf"
 source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
-# source "$Master_DIR/mcp.conf
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
@@ -67,7 +72,7 @@ function record() {
     echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
 }
 
-### Kommentar:  dna Kaputt | pylo bugt | p - helpme - helpmex funktioniert
+### Kommentar: pylo bugt 2025-Juni-16
 ##############################################################################
 ### Debug Sektion
 

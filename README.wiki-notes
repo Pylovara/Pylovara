@@ -23,6 +23,16 @@ sudo ./full.install-core
 ################################################################################
 cd Pylovara/Installer/
 sudo ./pylovara.updater-needle
+
+!!!!!!!!!!!! = Es gibt Massive Probleme mit diesem updater weil Pylovara
+ein Keller Produkt ist , es wird Empfohlen bei Pylovara Updates den Keller
+Ordner zu löschen und im Home verzeichnis das alte git clone und dann frisch 
+aufzusetzen ... 
+
+Es wird sich um ein AUR Updater gekümmert , kann aber dauern ...
+Zur Not wird ein Server aufgesetzt , der Pylovara grundsätzlich updatet
+bei System Start
+
 ################################################################################
 ############################# Was ist Pylovara? ################################
 

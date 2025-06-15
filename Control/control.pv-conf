@@ -23,8 +23,12 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 ### alias Sektion
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
+alias ollama='/Pylovara/AI/ollama/bin/ollama start'
 
-alias mcs='cd /Pylovara/MCS/Protocol'
+### Startet pull phi4-mini
+alias phi='/Pylovara/AI/ollama/bin/ollama run phi4-mini'
+
+# alias mcs='cd /Pylovara/MCS/Protocol'
 ##############################################################################
 ### Master-Input - control.pv-conf
 

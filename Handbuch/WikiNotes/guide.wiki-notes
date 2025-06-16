@@ -18,6 +18,9 @@ helpme <kürzel>
 ---------------
 kernel <nr>
 kernel <kürzel>
+---------------------------
+dna lex = Lexikon
+dna lexi XX-XX = Ausschnitte
 
 
 Zweck :
@@ -148,6 +151,8 @@ dna gpu
 dna on
 dna off
 dna taski
+
+dna <cmd> = kurzbefehle
 
 Zweck :
 - Trennung von Shell-Kommandos nach DNA-Muster

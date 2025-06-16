@@ -1,0 +1,33 @@
+#####################################################################
+@wiki-nr: 08   ######################################################
+@wiki-nr: ai       ##################################################
+#####################################################################
+### Ai Starten 
+
+Öffne dein Terminal und gib für den Runtimer einfach : ollama 
+ein . nach dem der Runtimer im Terminal Läuft kannst du je nach
+Terminal einen Terminal Splitt machen oder das Terminal je nach
+Model auf ein anderen Workspace legen .
+
+danach öffnest du ein Zweites Terminal und gibst : qwen 
+ein , das öffnet dir qwen3:0.6b .
+
+
+
+Wer Kitty Nutzt kann dem weiter folgen :
+
+Gibt : ollama ein , dann drück ctrl + shift + enter für
+Terminal Splitt und im zweiten Fenster dein modell deiner wahl
+
+
+### Startet Ollama
+ollama
+
+### Startet mini modelle
+phi
+qwen
+deepseek
+gemma
+
+
+#####################################################################

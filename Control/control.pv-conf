@@ -27,8 +27,11 @@ alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 ### Startet Ollama
 alias ollama='/Pylovara/AI/ollama/bin/ollama start'
 
-### Startet pull phi4-mini
+### Startet mini modelle
 alias phi='/Pylovara/AI/ollama/bin/ollama run phi4-mini'
+alias qwen='/Pylovara/AI/ollama/bin/ollama run qwen3:0.6b'
+alias deepseek='/Pylovara/AI/ollama/bin/ollama run deepseek-r1:1.5b'
+alias gemma='/Pylovara/AI/ollama/bin/ollama run gemma3:1b'
 
 # alias mcs='cd /Pylovara/MCS/Protocol'
 ##############################################################################

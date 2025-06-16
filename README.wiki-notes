@@ -1,11 +1,9 @@
 ################################################################################
                     Ⓟylovara-System |Rootbasierter Aufbau
 
-Weitere Updates kommen nach einer kurzen Sommer Pause , Ollama wird zurück 
-implementiert und system wichtige dna befehle werden per shell unix ausgebaut.
-
-danach wird das Pylovara Chat System ausgebaut und schluss endlich wird dann
-die binär übersetzung für MCS vorbereitet ..
+Weitere Essentielle Updates kommen nach einer kurzen Sommer Pause , Ollama wird 
+zurück implementiert und system wichtige dna befehle werden per shell Unix 
+ausgebaut.
 
 Ich entschuldige mich für den 4 wochen update stop , es ist einfach zu warm
 und das wetter wechselt für meinen kreislauf zu schnell von heiß auf kalt .
@@ -24,14 +22,15 @@ sudo ./full.install-core
 cd Pylovara/Installer/
 sudo ./pylovara.updater-needle
 
-!!!!!!!!!!!! = Es gibt Massive Probleme mit diesem updater weil Pylovara
-ein Keller Produkt ist , es wird Empfohlen bei Pylovara Updates den Keller
-Ordner zu löschen und im Home verzeichnis das alte git clone und dann frisch 
-aufzusetzen ... 
+version 0.3 beta = 
 
-Es wird sich um ein AUR Updater gekümmert , kann aber dauern ...
-Zur Not wird ein Server aufgesetzt , der Pylovara grundsätzlich updatet
-bei System Start
+- sucht alte installationen /Pylovara/ ~/Pylovara
+- löscht sie rekursiv & sauber
+- klont das repo nach /tmp/pylovara-latest
+- kopiert das geklonte repo nach /Pylovara/
+- setzt rechte + wrapper (wie im original)
+- entfernt /tmp/pylovara-latest wieder
+- funktioniert nur mit sudo
 
 ################################################################################
 ############################# Was ist Pylovara? ################################

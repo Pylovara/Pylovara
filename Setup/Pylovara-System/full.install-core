@@ -27,11 +27,11 @@ echo "⬇️ Klone Repository..."
 git clone "$REPO_URL" "$PV_DIR"
 
 # 3. Wrapper setzen
-if [ -f "$PV_DIR/Setup/usr/bin/$WRAPPER_NAME" ]; then
-  cp "$PV_DIR/Setup/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
+if [ -f "$PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME" ]; then
+  cp "$PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
   chmod +x "$WRAPPER_PATH"
 else
-  echo "❌ Wrapper nicht gefunden: $PV_DIR/Setup/usr/bin/$WRAPPER_NAME"
+  echo "❌ Wrapper nicht gefunden: $PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME"
   exit 1
 fi
 
@@ -61,4 +61,4 @@ fi
 echo ""
 echo "✅ Pylovara erfolgreich installiert."
 echo "🔄 Bitte neu anmelden oder Shell neu starten:"
-echo "exec $WRAPPER_PATH"
+echo "exec $WRAPPER_PATH <- SystemBrigde"

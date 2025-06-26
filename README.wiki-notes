@@ -14,23 +14,23 @@ gesucht ... anlauf stelle : 49176/88218035 T.Zimmermann
                                  Install
 ################################################################################
 git clone https://github.com/Pylovara/Pylovara.git
-cd Pylovara/Setup/
+cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 ################################################################################
                                Update Manual
 ################################################################################
-cd Pylovara/Setup/
+cd Pylovara/Setup/Pylovara-System/
 sudo ./pylovara.updater-needle
 
-version 0.3 beta = 
+version 0.4 beta = 
 
 - sucht alte installationen /Pylovara/ ~/Pylovara
 - löscht sie rekursiv & sauber
 - klont das repo nach /tmp/pylovara-latest
 - kopiert das geklonte repo nach /Pylovara/
-- setzt rechte + wrapper (wie im original)
+- lässt wrapper außenvor weil schon gesetzt
 - entfernt /tmp/pylovara-latest wieder
-- funktioniert nur mit sudo
+- funktioniert nur mit = sudo ./pylovara.updater-needle
 
 ################################################################################
 ############################# Was ist Pylovara? ################################

@@ -6,6 +6,35 @@ sudo ./full.install-core
 
 ##############################################################
 
+Für einen Vernünftigen Desktop benutze den Empfohlenen Desktop 
+Ordner .
+
+Wenn Noch Nichts installiert ist :
+
+cd ~/Pylovara
+cd Setup
+cd Desktop-Empfohlen
+xtree
+
+Wenn Schon Installiert im Wurzelverzeichnis :
+
+cd /
+cd Pylovara/
+cd Setup
+cd Desktop-Empfohlen
+xtree
+
+Wichtig : Alle Derivate können im Linux Clean Install Prozess
+bequem aus dem Homeverzeichnis nach dem laden angesteuert werden.
+Man kann somit Pylovara Ziehen mit git clone und hat alles was 
+man braucht in einem Wisch .
+
+Es wird Emfohlen keine zsh zu nutzen sondern bei bash zu bleiben , 
+da Pylovara bugfrei über Bash Funktioniert und Bash durch Control/
+die Priorität oberhalb des Bash besitzt .
+
+##############################################################
+
 Möchtetest du vara pakete updaten unter archlinux , verwende bitte
 
 sudo ./paket.updater-core

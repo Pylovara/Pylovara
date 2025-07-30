@@ -1,0 +1,43 @@
+#!/bin/bash
+# SARBS X11 basiertes Tiling Window System 
+# made by Sergius https://github.com/Sergi-us/SARBS/tree/main
+
+echo "==========================================="
+echo "   SARBS - Slightly Advanced Rolling Backed System"
+echo "   X11-basiertes Tiling Window Management"
+echo "   Erstellt von Sergius (https://github.com/Sergi-us/SARBS)"
+echo "==========================================="
+echo "Diese Installation muss als root ausgeführt werden!"
+echo "Bitte stellen Sie sicher, dass Sie:"
+echo "  1. Auf einer frischen Arch-Linux-Installation sind"
+echo "  2. Als root angemeldet sind (z. B. per 'su' oder 'sudo su')"
+echo "==========================================="
+
+# Prüfen, ob Skript als root ausgeführt wird
+if [[ $EUID -ne 0 ]]; then
+    echo ""
+    echo "❌ Fehler: Dieses Skript muss als root ausgeführt werden."
+    echo "Bitte führen Sie 'su' aus, um root-Rechte zu erhalten."
+    echo "Beispiel: sudo su"
+    echo ""
+    exit 1
+fi
+
+echo ""
+echo "✅ Erfolg: Sie sind als root angemeldet."
+echo "Die Installation kann nun beginnen."
+echo ""
+read -p "Drücken Sie ENTER, um mit der Installation fortzufahren... (Strg+C zum Abbrechen)" 
+
+echo ""
+echo "🚀 Starte SARBS-Installation..."
+
+# Herunterladen und Ausführen des SARBS-Skripts
+curl -LO https://sarbs.xyz/sarbs.sh
+if [[ -f sarbs.sh ]]; then
+    chmod +x sarbs.sh
+    sh sarbs.sh
+else
+    echo "❌ Fehler: Herunterladen des SARBS-Skripts fehlgeschlagen."
+    exit 1
+fi

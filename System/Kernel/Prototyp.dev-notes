@@ -132,3 +132,22 @@ Reihenfolge wenn das angesprochene System oder Browser die daten für eine reibu
 3. Warp (das für die übersetzung für Performenstechnische aspekte direkt in die jeweiligen compositor bzw Compiler eingespeißt wird)
 
 --------------------------------------------------------------------
+
+
+arbeitsnotiz : 
+
+    ein Bash-Wrapper-Tool bauen:
+
+        nimmt .c-Datei,
+
+        compiliert mit gcc -S → .s (Assembly),
+
+        parst die Assembly grob,
+
+        ordnet C-Zeilen zu ASM-Blocks (so gut wie möglich),
+
+        speichert Mapping in .c2asm.map-Datei
+
+Optional später:
+
+    Automatischer Schritt: ASM → MCS-Syntax als Rohübersetzung

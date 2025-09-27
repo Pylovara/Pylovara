@@ -1,15 +1,13 @@
 ################################################################################
                     Ⓟylovara-System |Rootbasierter Aufbau
 
-Weitere Essentielle Updates kommen nach einer kurzen Sommer Pause , Ollama wird 
-zurück implementiert und system wichtige dna befehle werden per shell Unix 
-ausgebaut.
+Detaliertere infos zur aktuellen umsetzungsart wie auch der fokus
+werden hier weiter erklärt : Arbeitsblatt.dev-note
 
-Ich entschuldige mich für den 4 wochen update stop , es ist einfach zu warm
-und das wetter wechselt für meinen kreislauf zu schnell von heiß auf kalt .
 
 Mitarbeiter in sache binärübersetzung der MCS syntax werden Potenziel
-gesucht ... anlauf stelle : 49176/88218035 T.Zimmermann
+gesucht ... anlauf stelle : +49 176/88218035 T.Zimmermann
+
 ################################################################################
                                  Install
 ################################################################################
@@ -17,14 +15,15 @@ git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
-info : wenn linus tohrwald probleme macht dann gibt die befehle einzelnd ein 
+info : wenn linus tohrwald probleme macht dann gibt die befehle einzelnd ein
+
 ################################################################################
                                Update Manual
 ################################################################################
 cd Pylovara/Setup/Pylovara-System/
 sudo ./pylovara.updater-needle
 
-version 0.4 beta = 
+version 0.4 beta =
 
 - sucht alte installationen /Pylovara/ ~/Pylovara
 - löscht sie rekursiv & sauber
@@ -37,9 +36,9 @@ version 0.4 beta =
 ################################################################################
 ############################# Was ist Pylovara? ################################
 
-Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem, 
-das vollständig auf der Shell-Ebene arbeitet – ohne GUI, ohne Umwege, ohne Bullshit. 
-Es wird ausschließlich auf Root-Ebene installiert (`/Pylovara/`) und meidet bewusst 
+Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem,
+das vollständig auf der Shell-Ebene arbeitet – ohne GUI, ohne Umwege, ohne Bullshit.
+Es wird ausschließlich auf Root-Ebene installiert (`/Pylovara/`) und meidet bewusst
 alle $HOME-Abhängigkeiten.
 
 Pylovara ist ein radikales neues, modular aufgebautes Datei- und Steuerungssystem,
@@ -47,16 +46,16 @@ das vollständig in der Shell lebt – ohne GUI, ohne Umwege, ohne Bullshit.
 Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlage
 eines neuen Denkens im Umgang mit Betriebssystemen.
 
-Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus , auf 
+Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus , auf
 jedem System als SubSystem mit eigener Sprache (MCS) Intsallierbar zu sein , ganz
 gleich welche Shell du verwendest oder welches System , Pylovara wird eine für jetzige
-unbekannte MCS Sprache Sprechen die weit aus Performanter ist als reines C ! 
+unbekannte MCS Sprache Sprechen die weit aus Performanter ist als reines C !
 
-Es kann sein das am anfang gewisse dinge nicht ganz round laufen , wie Updates oder 
+Es kann sein das am anfang gewisse dinge nicht ganz round laufen , wie Updates oder
 Rechte vergabe im Keller , einbindungen in deinen Sourced Kern , egal welcher Source
 Kern bei dir Aktiv ist , oder auch kleinere bucks mit dem Terminal selbst ......
 
-Was jedoch auf langer sicht für den Einzelnen herausgearbeitet wird , ist die 
+Was jedoch auf langer sicht für den Einzelnen herausgearbeitet wird , ist die
 Vollständige Kontrolle seines Systemes  und es ist dabei egal ob RedHat , Arch ,
 OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android ..... Sie werden alle
 im Ring der Performantesten Computer Sprache Überhaupt unterworfen  und zwar MCS.
@@ -109,19 +108,47 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 
 ################################################################################
 
- Architektur
-        Pylovara organisiert sich in einem klaren Familienmodell:
 
-| Typ | Rolle |
-|-----|-------|
-| `*.core` | Großvater – Ausführender Teil |
-| `*.*-magic` | Großmutter – Umschalter, Konfigurationsbrücke |
-| `*.*-node` | Vater – Hauptcontroller |
-| `*.*-nano` | Mutter – Substrukturmanager |
-| `*.*-micro` | Tochter – Mikrosteuerung (z.B. HTML, JS, SQL) |
-| `*.*-cache` | Cache – Zwischenspeicher für Temp-Daten |
-| `*.*-needle` | Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll) |
-| `<*von>.<*zu>-logic` | Verbindungslogik – Transport zwischen Schichten |
+Version 0.7 (Architektur) / 1.9 (MCS)
+
+Dieses Dokument beschreibt die Architektur von Pylovara (Version 0.7) sowie das Konzept der
+MCS-Syntax (Version 1.9). Es dient als Snapshot der aktuellen Entwicklungsstufe und bildet die
+Grundlage für zukünftige Versionen.
+1. Architektur (Pylovara 0.7)
+Pylovara organisiert sich in einem klaren Familienmodell mit Vererbungsprinzip. Die wichtigsten
+Datentypen und Rollen sind wie folgt definiert:
+Typ Rolle Analogie Anwendungsbereich
+*.*-core Standard/Programme Großvater – Ausführender TeilNormale Anwendungslogik, Prozesse
+*.*-lcore Low-Level/Hardware Großvaters Geschwister Direkte Hardwaresteuerung, Assembly
+*.*-vcore Visuelles/Oberfläche Großvaters Geschwister Rendering, GUI-Design-Logik
+*.*-magic Umschalter Großmutter – KonfigurationsbrückeSelbstoptimierung, dynamische Konfiguration
+*.*-node Hauptcontroller Vater Zentrale Steuerung
+*.*-nano Substrukturmanager Mutter Verwaltung von Subsystemen
+*.*-micro Mikrosteuerung Tochter Feinsteuerung, HTML/JS/SQL
+*.*-cache Cache Cache Zwischenspeicher für Temp-Daten
+*.*-needle Hardwarebindung Kernelnahe Steuerung .sys, .ko, .dll
+Vererbungsprinzip
+Die Kettenbildungsmechanismen sind bei einem Vererbungsprinzip verwurzelt. Dabei greifen
+*.*-core und *.*-magic auf Substrukturen (nano, micro, cache, needle) zu. Dies schafft ein von oben
+nach unten vererbtes Datenmodell, das flexible Steuerung erlaubt.
+
+Beispielcode: Motorsteuerung
+
+¢| »['MotorA'|{Watt|200}|{Volt|12}]« = §MotorA ⊕ »[{Temp|25}§SensorX]«
+°WennNicht[{Temp|25}|{Valid|0-100}] ^TransaktionsFehler = §(1)Cooler ;; |¢
+
+2. MCS Syntax (Version 1.9)
+MCS (Maschinen Code Speech) definiert ein System aus Transaktionen, Proteinen, Protonen,
+Warps und Feeds. Es erlaubt parallele, systemnahe Steuerung mit Sicherheitschecks und direkter
+Assembly-Interaktion.
+
+
+Sicherheitscheck Beispiel (WLAN)
+
+¢| »[{Band|2.4G}§WLAN]« °WennNicht[{Band|2.4G}|{Valid|2.4G,5G}] ^TransaktionsFehler =
+§(1)Displey ¶= øC| #include int main() { wireless_config wconf; int sock =
+iw_sockets_open(); wconf.frequency = 2.4e9; iw_set_basic_config(sock, "wlan0", &wconf;);
+return 0; } ø = §gcc = §(1) |¢
 
 ################################################################################
 
@@ -137,16 +164,16 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
           Pylovara verwendet ein symbolisches Transaktions- und Steuerungssystem:
 
 ¢|...|¢        : Transaktion Anfang / Ende
-»...«          : Aktion / Zweig 
-[...]          : Proteinpacket
-{...}          : Protonpacket 
-§Ziel          : Zielreferenz
-$Dirigent      : Externe Übergabe
+»...«          : Aktion / Zweig
+[...]          : Proteinpacket Proteine
+{...}          : Protonpacket Protonen
+§Zielreferenz  : Zielreferenz extern
+$Dirigent      : Übergabe an (in und extern)
 ""             : Print-Ausgabe
 ''             : Befehl
 ¨¨             : Blanker Nenner
 ¶              : IF / ODER Logik
-¶¶             : Else / Fehler 
+¶¶             : Else / Fehler
 ¶=             : Parallelverarbeitung
 ««% +-·        : Weitere berechnungen
 |              : Trennung von Befehlen
@@ -154,10 +181,12 @@ $Dirigent      : Externe Übergabe
 ~~             : Merge
 >> <<          : Fork/Splitting
 *(°<>!         : Bedingte Automation
+⊕             : Sync-timer
+ø...ø          : Warp
 #              : Kommentar
 
-es ist weitaus mehr als nur eine Symbolische Syntaxy es ist die die grundlage
-von MCS Maschinen Code Speech oder auch Maschinen Code Sprache . Designed um
+es ist weitaus mehr als nur eine Symbolische Syntaxy es ist die grundlage
+von MCS Maschinen Code Speech oder auch Maschinen Code Sprache , Designed um
 C in der Performens auszurotten und die grundlage des Neuen System´s .
 
 ################################################################################

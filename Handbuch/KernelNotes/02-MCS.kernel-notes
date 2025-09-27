@@ -1,205 +1,309 @@
 @kernel-nr: 02        ¶ (info: nutze kernel lex und kernelx 02-01)
 ####################################################################
-@kernel-zeilen-nr:-02-01
-####################################################################
-¢|  TransAktion Anfang/Vorgang/Start der Bedingung/eines bedingten Blocks
-|¢  TransAktion Ende/Vorgang/Ende der Bedingung/eines bedingten Blocks
 
-Nutzen = wird als Token/Credit transportiert , innerhalb .
+1 . Einordnung Prototyp MCS (Maschinen Code Speech) Vers 1.7
 
-@kernel-zeilen-nr:-02-02
-####################################################################
- »  Start einer Transaktion mit einer Aktion/eines , Zweiges/Proteins
- «  Ende einer Transaktion mit einer Aktion/eines Zweiges/Proteins
+###############################################################
 
- Nutzen = Aufträge oder Erbenisse werden Verpackt weitergeleitet mit oder ohne weitere berechnungen an §Zielrefferenz
+¢| |¢ Transaktionen  :
 
-@kernel-zeilen-nr:-02-03
-####################################################################
- [   Start Proteinpacket
- ]   Ende Proteinpacket
+Sorgen für die InputSendung aller arten und sind Sende und Empfang in gebündelten Packete , ohne Transaktion läuft keine Mitteilung oder Wird Empfangen , hier bei ist es egal ob das anfang wie ende der transaktion in einer eigenen zeile stehen oder in der selben .
 
- Nutzen = Aufträge verpacken, Protein Packete Verschicken , HandlungsKommando
-        , kann ohne aktionen als datensatz weitertransportiert werden ...
+¢|  TransAktion Anfang/Vorgang/Start der Bedingung/bedingten Blocks
+|¢  TransAktion Ende/Vorgang/Ende der Bedingung/bedingten Blocks
 
-@kernel-zeilen-nr:-02-04
-####################################################################
- § Zielreferenz Innere Zielreferenz / Prozess-ID / Hardware-Slot /
-                Gerätepfad (in RAM,Dev, CPU-Bereich)
- $ Dirigent     Externe Übergabe/Output zu Dirigent-Einheit
-                (lokale API, Kernelpfad,Netzwerk, usw.)
+###############################################################
 
- Nutzen = Dirigenten übergeben fertige DatenAufträge/Proteine an
- Zielreferenz das wiederum gemerget,geforkt,gesplittet oder paralell
- im protein verarbeitet , ausgeführt werden kann .
+» « Aktionen :
 
-@kernel-zeilen-nr:-02-05
-####################################################################
+Aktionen Werden als aktive Proteine/Proton/Wrap oder Ergebnisse
+weitergegeben , wohingegend Proteine/Proton/Wrap ohne Aktionen
+Unverarbeitete Transaktionen sind die noch vollständig
+unverarbeitet verarbeitet werden können und somit gekennzeichnet
+als empfangene daten . Diese wiederum Können verknüpft werden
+durch Locale oder Externe Ziel Pfade $Diregent oder §ZielReferenz
+
+ »  Start einer Aktion/eines Zweiges/Proteine/Proton/Wrap
+ «  Ende einer Aktion/eines Zweiges/Proteine/Proton/Wrap
+
+###############################################################
+
+«« Argumente :
+
+Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
+wie mal oder geteilt , plus minus den wert mitgeben können , sie
+dienen als weitergabe für berechnungen oder angaben , je nach dem
+ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert oder angabe verstanden ;
+
+- · + : % Zusätzliche Rechen weitergaben(Aktionen)(mit oder ohne Wert)
+
+ ««-      Minus
+ ««+      Plus
+ ««·      Mal
+ ««:      Geteilt
+ ««%      Prozentbezogene Rechnung, z. B. für Anteile
+ ««%50   „Gib 50 % von X weiter“
+ ««%-     kann kombiniert werden , geteilt durch minus usw
+
+Wird typischerweise am Proteinpacket angehangen b.s ;
+
+¢| »['Lüfter'|{Watt|200}|««%50]« = §MotorA |¢
+
+###############################################################
+
+| Trennbefehle :
+
+Trennbefehle sollen innerhalb eine der Proteine/Protone/Warps die
+Operatoren/Argumente/Feed sauber Trennen wobei Operatoren/Argumente/
+Feeds immer vor eines DatenSatzen kommen , um von Links nach rechts
+gelesen eine saubere Struktur zu gewehrleisten. Trennbefehle können
+mehrfach innerhalb eines Proteine/Protone/Warps für Aufträge mit
+Operatoren/Argumente/Feed sorgen
+
+###############################################################
+
+ $ Zielreferenzen :
+
+ Innere Zielreferenz die angesteuert werden sollen , egal ob
+ Hardware oder Programme .
+
+ / $Prozess-ID
+ / $Hardware-Slot
+ / $Gerätepfad (in RAM, Dev, CPU-Bereich)
+ / $OrdnerPfad (zur Ausführbaren oder Laufenden Verknüpfung)
+ / $Compositoren
+ / $Compiler
+
+###############################################################
+
+ $ Dirigent :
+
+ Externe Übergabe
+
+ / §lokale API
+ / §Kernelpfad
+ / §Netzwerk
+ / §InternetAdresse
+ / §Email (Direkte Sendung z.b)
+ / §Imei (Geräate Upadets z.b)
+ / §BuildNr (Software Updates z.b)
+
+ usw , die möglichkeiten sind quasi unbegrenzt
+
+###############################################################
+
+ [ ] Proteine :
+
+Proteine können mehrere Aspekte abdecken in dem sie sogenannte
+Operatoren mit geben die innerhalb einer Trennung vorhanden sind :
+
  ""     Print , zeigt alles darin als ausgabe an
  ''     Commando , Wird als Anweisung verstanden
  ¨¨     Blanker Nenner , Das ist , Richtig , abgleich
         Einfache eingaben ohne etwas
 
-@kernel-zeilen-nr:-02-06
-####################################################################
- - · + : Zusätzliche Rechen weitergaben
+Sie werden in Print , Commando , Blanker Nenner oder Einfach ohne
+irgendwas in den Protein Zelle als Operatoren mit gegeben ,
+was auch schluss endlich auch nur in Proteinpackete mit Operatoren
+Enden kann oder als Combination mit Proton(en) oder Warps .
 
- Nutzen = kann am ende eines zweiges mitgegeben werden «-/«+/«:/«·
- für erweiterte schleifen logiken oder andere Argumente die noch mit
- transportiert werden sollen für den weiteren Vorgang als weitere
- Rechnung oder merge wie teilungen
+Beispiele :
 
-@kernel-zeilen-nr:-02-07
-####################################################################
-  ¶  IF
- ¶¶  Else
- ¶=  Paralell , gleichzeitig , schneller als dsl
+¢| »["Hallo"|'echo']« = §/usr/bin/kitty |¢
+¢| »["Hallo"|'echo']« = §kitty |¢
+¢| »["Hallo"|'echo']« = §5436 |¢
 
- Nutzen = Kann Wahrheiten weitergeben mit mehrfach auswahl
+###############################################################
 
-@kernel-zeilen-nr:-02-08
-####################################################################
-  |  Trennt Befehl von Argument oder Ausgabe oder Wörter
-     , ersetzt "" '' , die einen andere verwendungszweck finden
- ||| Mehrfach mitgabe
+ { } Proton(en) :
 
- Nutzen =  Könnte Ein befehl weitergeben oder mehrere
-           Kann Duale Codes plus Wörter Plus Frequenz
-           in einem protein [] Mitgeben werden wenn nötig
-           (Wörter plus Anders) , kann Merge
-           >>(Zahl) erweitert werden , auch (Nr) gebunden werden .
-           | fungiert als prozess anfang wie ende der rechts anfangt und links endet , erkennnung , ausführung usw, smart .
+Protonen können mit oder ohne Feed explizit weitergegeben werden
+und dienen für Hardware oder Feineren aufgaben die Proteine Ergänzen.
 
-@kernel-zeilen-nr:-02-09
-####################################################################
- (Zahl)  Zahl Zuweisung Für Verarbeitung vorgang ,
- ähnlich eines Muster_Dirs , nur im Transport selbst
+Beispiel Protein ohne Proton ;
+¢| »["Hallo"|'echo']« = §5436 |¢
+Beispiel Protein mit Proton ohne Hardware Aufgaben;
+¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
 
- Nutzen = Optional , kann einzelne mehrfach Labels/Aktionen Aufteilen
-          Nützlich wen Protein weitergegeben für MicroSplittungen wie
-          GPU - Sound
-          Datenbänker usw
+Ein Proton innerhalb eines Proteins kann daten aller Argument
+oder Wahrheiten mit in die nächste Verarbeitung oder
+Endverarbeitung geben oder führen .
 
-@kernel-zeilen-nr:-02-10
-####################################################################
+Beispiele der Proton packete ;
+
  {Band|Frequenz}{Amp|Zahl}{Watt|Zahl}{V|Spannung}{Temp|Zahl}
  {Pfad|Adresse}{Ip|Adresse}{Interface|wlan0}{Transport|Packet}
  {Cash|Größe}{Signed|Größe}{Unsigned|Größe}{Tracer|Zahl}
+ {Wait|ms|120}{Wait|s|2}{Wait-m|1}
 
- Nutzen = {Was|Angabe} kann mit NR explizit weitergegegeb
-          werden Beispiel {(1)Band|Frequenz} Vs
-          {Pfad|/etc/pacman.conf} , benennung -> {} Proton .
-          ein Proton innerhalb eines Proteins kann daten aller
-          Argument mit in die nächste verarbeitung oder
-          endverarbeitung führen .
-          Müsste nur ein vollständiges register haben um die namens
-          gebung zu definieren welches proton was trägt , kann
-          beliebig erweitert werden und auch berechnet .
+Notiz :
 
-@kernel-zeilen-nr:-02-11
-####################################################################
- ~~ für Merge von mehreren Packets kann per () granuliert werden das genau
+Müsste nur ein vollständiges register haben um die namens
+gebung zu definieren welches proton was trägt , kann
+beliebig erweitert werden und auch berechnet oder sogar
+später dem jeweiligen nutzer als eingabe software für die
+Configuration erstellt bzw geschrieben werden .
+
+###############################################################
+
+ ø ø Warp :
+
+Ein Warp wird dafür verwendet um explizite language's aller art
+mit transportiert zu werden.Der Warp wird entweder als einzel
+Transaktion mit Zielreferenz oder Dirigenten verschieckt als
+einzel Transaktionsauftrag Oder einer Protein Verarbeitungs Zelle
+beigefügt wenn es Performanter Transportiert werden kann , weil der
+warp die selben Elektronischen Nervenbahnen des Systems anspricht
+(Stichwort lastenverteilung)
+
+ein warp folgt der regel øLanguals|Codeø und kann außerhalb den
+selben effeckt wie die internet MCS sprache haben
+
+
+Gleicher Effeckt mit Verschiedenen Umsetzungen :
+
+
+/ Protein Pure
+
+¢| »["Hallo"|'echo']« = §5436 |¢
+
+/ Protein + Proton
+
+¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
+
+
+/ ølanguage|Codeø Warp alleine für Compositoren/Compiler
+
+¢| øC|
+#include <stdio.h>
+
+int main() {
+    printf("Hallo, Fenster!\n"); // Gibt "Hallo, Fenster!" auf der
+    Konsole aus
+    return 0; // Zeigt an, dass das Programm erfolgreich ausgeführt
+    wurde
+}
+ø = §gcc |¢
+
+###############################################################
+
+ (Zahl) Feed
+
+Feeds sind Rück oder Angaben wohin welche Merge Forke oder Parallele
+Transaktion wie Prozess gehen soll und wo er wieder andocken soll
+
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt , wodurch
+er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
+und dadurch seine andock station definiert ..
+
+Beispiel an einer Beispiel Transaktion ;
+
+Beispiel Code  Ohne Merge und Feed:
+
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}|««%50]« # Proteinpaket:MotorA,200W,12V mit %50
+= §Displey                              # der Werte an Display ausgeben
+  ¶=                                    # Paralleler Prozess
+    »[{Temp|25}§SensorX]«               # Temperatur von SensorX lesen
+    ««+10 = §Cooler                     # Temperatur +10 an Kühler senden
+  ;;                                    # Paralleler Transport ohne Eingabe
+    »[{Band|2.4G}§WLAN]«                # WLAN-Band auf 2.4G setzen
+|¢                                      # Transaktion beenden
+
+Interpretation: Dieser Code sendet Leistung/Volt an einen Motor,
+zeigt 50% der Werte auf einem Display, liest parallel die Temperatur
+eines Sensors, passt sie an und aktiviert einen Kühler, während
+das WLAN auf 2.4G gestellt wird. Das zeigt die Stärke von MCS
+in paralleler, systemnaher Steuerung.
+
+Beispiel mit Parallele und Feed (1);
+
+
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}|««%50]« # Proteinpaket:MotorA,200W,12V mit %50
+= §(1)Displey                              # der Werte an Display ausgeben
+  ¶=                                    # Paralleler Prozess
+    »[{Temp|25}§SensorX]«               # Temperatur von SensorX lesen
+    ««+10 = §Cooler                     # Temperatur +10 an Kühler senden
+  ;;                                    # Paralleler Transport ohne Eingabe
+    »[{Band|2.4G}§WLAN]«                # WLAN-Band auf 2.4G setzen
+=  §(1)
+|¢                                      # Transaktion beenden
+
+Hierbei diente Feed als Duplikator für den Visuellen Displeyoutput ,
+da feed immer mit der selben zahl , buchtstabe , code , symbole , im
+weiteren prozess oder Dirigent transaktionen sich gegenseitig findet ,
+wird immer das weitergegeben was gefeedet wurde , ganz gleich ob berechnet
+oder kalt hingeschrieben bzw programmiert .. so dient feed für viele zwecke
+außerhalb von ¶ ¶¶ ¶=;; usw ...
+
+###############################################################
+
+ Wahreiten :
+
+Wahrheiten weitergeben mit mehrfach Auswahl oder Transporte
+ermöglichen wären einem gui Fenster aufruf.Ermöglicht granulare
+paralell verarbeitungen wie hintergrund prozesse
+
+ ~~ für Merge von mehreren Packets kann per () granuliert werden das
+    genau
  >> für Fork oder Splitting Links Nach Rechts
  << für Fork oder Splitting Rechts Vor Links
- ;; Für Paralell Transport
+ ¶  IF
+ ¶¶ Else
+ ¶= Paralelle oder nebenprozesse die mit eingaben rücksprachen zu tun
+    haben , besonders hilfreich bei Gui designe
+ ;; Für Paralell Transport , ohne eingabe aufforderung
+ #  bleibt traditionell kommentar
+ =  gibt alles an § oder $ direkt als kennungswert mit
 
-@kernel-zeilen-nr:-02-12
-####################################################################
- *  Wenn/Kann
- °  WennNicht/Muss
- >  WennKleiner/Kann/Soll
- <  WennGrößer/Kann/Soll
- !  WennEindeutig/Sofort
- …  WennFehler/Kann/Sicherheit
- ^  TransaktionsFehler/Debugg
+ Operatoren :
 
-  Nutzen : kan als kommand der weiteren funktion verstanden werden
-           und dient als packet deinition für automationen , schleifen , weitergaben
-          logiken .
+Werden immer als Schlüssel element zuerst angegeben , wenn sie
+erfoderlich sind , gerade für Wahrheiten sehr Relevant
 
-@kernel-zeilen-nr:-02-13
-####################################################################
- # als Kommentar funktion
+  *  Wenn/Kann
+  °  WennNicht/Muss
+  >  WennKleiner/Kann/Soll
+  <  WennGrößer/Kann/Soll
+  !  WennEindeutig/Sofort
+  …  WennFehler/Kann/Sicherheit
+  ^  TransaktionsFehler/Debugg
+  ſ  DatenReste/Löschung
 
-@kernel-zeilen-nr:-02-14
-####################################################################
-  STRUKTURANALYSE Beispiele
+###############################################################
 
-  ¢|
-    »['find'|pacman|{(1)}]«
-    »['sudo nano’|>>{(1)pacman.conf}|(2)'Druck']«
-    »['sudo cat'|>>(2)|"(3)"]«
-    »["(3)»[export /Pylovara/"]«
-    »['find and source'|{pfad|~/kitty}]
-  |¢
+Reihenfolge wenn das angesprochene System oder Browser die daten
+für eine reibungslose Übersetzung benötigt ist : 3
 
+1. Transaktion Anfang
+2. Protein (das Proton mitliefern kann)
+3. Proton (das eigenständig hardware ansprechen kann)
+4. Warp (das für die übersetzung für Performenstechnische aspekte
+direkt in die jeweiligen compositor bzw Compiler eingespeißt wird)
+5. = Kennungswert
+6. Zielreferenz oder Dirigent
+7. Transaktion Ende
 
-MCS deckt vollständig ab:
-
-Klassischer C-Typ	Entsprechung im MCS-Protokoll	Kommentar
-short	               `{Cash	                 Größe}oder{Signed
-long	               `{Cash	                 Größe}oder{Signed
-char	               `{Tracer	                     8}oder{Signed
-float	               `{Amp	                  Zahl}+{Band
-unsigned int	       `{Unsigned	                32}`
-signed long long	   `{Signed	                   128}`
-Speicherpfade	       `{Pfad	             /irgendwo}`
-Interfaces/IP	       `{Ip	192.168                ...} {Interface
-
-🔹 Vorteil :
-
-    Jedes Datenpaket (Proton) ist mit semantischem Label {}
-    gekennzeichnet – ohne Typsystemabhängigkeit.
-
-    Rechenoperationen/Abzweigungen erfolgen symbolisch durch «», ¢|,
-    ¶, ;;, etc.
-
-    Verarbeitungstiefe (Fork/Merge) ist durch ~~, >>, <<, (Zahl)
-    steuerbar.
-
-    Kombinierbarkeit durch |||: komplexe Payloads lassen sich modular
-    aufbauen.
+###############################################################
 
 
-🔹 Syntax wie "(3)", 'Druck', usw.
-        → Klar abgebildet über @kernel-zeilen-nr:-02-05
-
-        "..." als Print
-
-        '...' als Kommando
-
-        ¨¨ als reine Werte
-
-        {...} als Zielbindung oder Ausführungskontext
 
 
-🔹 Transaktionsrahmen
-    ¢| ... |¢
-    → Entspricht @kernel-zeilen-nr:-02-01
-    Definiert den Rahmen eines Vorgangsblocks oder
-    einer Bedingungseinheit.
 
-    Einzelne Schritte (mit » ... «)
-    → Entspricht @kernel-zeilen-nr:-02-02
-    Jeder »...«-Block stellt eine mikrotransaktionale
-    Operation dar, die als Proteinausführung gilt.
 
-    Verkettung mit (1), (2), (3)
-    → entspricht Proteinverkapselung aus @kernel-
-    zeilen-nr:-02-03
-    Diese Schritt-für-Schritt-Referenzierung bildet
-    ein Proteinpaket mit interner Verkapselung von
-    Ergebnissen.
 
-    Zielübergaben wie export /Pylovara/
-    → passt zu @kernel-zeilen-nr:-02-04
-    Zielreferenz-Logik wird erfüllt (z. B. §|¢, $
-    Dirigent, oder Pfadzuweisung).
 
-    Ziel innen (besser!):
-    »[{Watt|200}§MotorX]«
-    »[{Watt|200}|{Volt|12}§MotorX]«
 
-########################### Ende ###################################
+
+
+
+
+
+
+
+
+
+
 
 

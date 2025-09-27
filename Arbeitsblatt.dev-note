@@ -1,0 +1,517 @@
+Architektur
+Pylovara organisiert sich in einem klaren Familienmodell:
+
+####################################################################
+####################################################################
+
+Datentyp Rollen Version 0.7
+
+*.*-core	Großvater – Ausführender Teil
+
+*.*-magic	Großmutter – Umschalter, Konfigurationsbrücke
+Die *.*-magic ist die Schicht, die Pylovara von einem starren System zu einem dynamischen,
+selbstoptimierenden Meta-Betriebssystem macht. Sie sorgt dafür,
+dass die richtigen Teile (die spezialisierten Cores) mit der richtigen Geschwindigkeit
+(die Logik-Takte) in der richtigen Konfiguration (der Cache-Abruf) arbeiten.
+
+*.*-node	Vater – Hauptcontroller
+*.*-nano	Mutter – Substrukturmanager
+*.*-micro	Tochter – Mikrosteuerung (z.B. HTML, JS, SQL)
+*.*-cache	Cache – Zwischenspeicher für Temp-Daten
+*.*-needle	Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll)
+
+<*von>.<*zu>-logic	Verbindungslogik – Transport zwischen Schichten
+Wobei man hier von Taktfrequenzmesser sprechen könnte die im cache zu mehreren wechselnden logic schaltungen angelegtwerden könnten .
+
+*.*-lcore  # Low-Level für Hardware-Sync
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}]«      # Haupt-Schleife: Motor starten
+= §MotorA                              # Ausführen
+⊕                                      # Neues Symbol: Ab hier parallele Einspeisung ⊕ Sync-timer
+»[{Temp|25}§SensorX]«                 # Parallele Daten: Temp lesen
+°WennNicht[{Temp|25}|{Valid|0-100}]    # Sync-Check in Logic-Schnipsel
+^TransaktionsFehler                    # Fehler, wenn nicht sync
+= §(1)Cooler                           # Einspeisen in Kühler
+;;                                     # Paralleler Transport
+|¢                                      # Transaktion beenden (Schleife läuft ein)
+
+Interpretation: Die Haupt-Schleife (MotorA) läuft sequentiell, ⊕ speist Temp-Daten parallel ein,
+validiert via *.*-logic (⊕ Sync-timer) und nutzt Cache für schnellen Wechsel (z. B. zu einer anderen Logic für 5G-WLAN).
+Der Feed §(1) synchronisiert Ausgaben.
+Cache-Nutzung: Speichere Logic-Varianten in *.*-cache:
+
+*.*-cache
+{Logic.MotorSync|Variant1: {Takt|100ms}, Variant2: {Takt|50ms}}
+
+
+Erweiterung der Pylovara-Architektur: Spezialisierte Core-Typen
+Durch das Splitting der Core-Daten wird die Einordnung (Typisierung) direkt im Dateinamen verankert.
+Dies erleichtert nicht nur dem MCS-Kernel die schnelle Verarbeitung, sondern unterstützt auch das Ziel der eigenen,
+angelegten Transaktionsketten für jede Kernfunktion:
+
+| Neuer Core-Typ | Rolle (Spezialisierung) |       Pylovara-Analogie.       | Anwendungsbereich |
+
+| *.*-core       | Standard/Programme      | Hauptausführung (Generell)     | Normale Anwendungslogik, übergeordnete Steuerung, Prozesse. |
+
+| *.*-lcore      | Low-Level/Hardware      | Kern-Großvater (Hardware-Nah)  | Direkte Steuerung von .-needle (Kernelnahe) und Protonen ({ }), Systeminitialisierung, MCS-Direktzugriff auf Assembly. |
+
+| *.*-vcore      | Visuelles/Oberfläche    | Benutzeroberfläche             | Compositing, Rendering, GUI-Design-Logik (besonders wichtig für ¶= und Wahrheiten zur parallelen GUI-Verarbeitung). |
+
+
+Vorteile dieser Spezialisierung
+ * Transparenz und Debugging:
+Man weiß sofort, welche Art von Anweisungen und Transaktionen eine Datei enthält.
+Ein Fehler in einer *.vcore betrifft die grafische Ausgabe; ein Fehler in einer *.lcore ist ein kritischer Hardware-Fehler.
+
+ * Transaktions-Priorisierung:
+Der MCS-Kernel kann *.*-lcore-Transaktionen automatisch eine höhere Priorität einräumen als *.*-core- oder *.*-vcore-Anweisungen.
+Dies ist essentiell für die Performance-Garantie.
+
+ * Bessere KI-Fütterung:
+Die AI kann anhand dieser spezialisierten Typen schneller lernen und entscheiden, welche *.core-Ketten für eine bestimmte Aufgabe
+(z.B. Virtualisierung oder Rendering) optimal kombiniert oder dynamisch generiert werden müssen.
+Dieser Schritt stärkt das gesamte Pylovara-Modell, indem die Kern-Funktionalität jetzt so granular
+typisiert ist wie die Schichten der Architektur selbst.
+
+
+VERERBUNGSPRINZIP :
+
+die kettenbildungen mechanismen sind bei einem veerbungsprinzip verwurzelt von oben herab
+
+bsp :
+
+*.*-core	Großvater – Ausführender Teil
+1
+*.*-lcore   GroßVaters Geschwister
+1-1
+*.*-vcore   GroßVaters Geschwister
+1.2
+*.*-magic	Großmutter – Umschalter, Konfigurationsbrücke
+2
+*.*-node	Vater – Hauptcontroller
+2-1
+*.*-nano	Mutter – Substrukturmanager
+2-2
+*.*-micro	Tochter – Mikrosteuerung (z.B. HTML, JS, SQL)
+2-3
+*.*-cache	Cache – Zwischenspeicher für Temp-Daten
+2-4
+*.*-needle	Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll)
+2-5
+dabei wird berücksichtig das 1 auf 2 und 2 auf 1 zugreifen kann , damit 2 auch subdaten starten kann wie 1-1 1-2.
+Dabei ist nur zu Verstehen vom kopf an fängt der datensatz an .....
+
+####################################################################
+####################################################################
+####################################################################
+####################################################################
+
+1 . Einordnung Prototyp MCS (Maschinen Code Speech) Vers 1.9
+
+###############################################################
+
+¢| |¢ Transaktionen  :
+
+Sorgen für die InputSendung aller arten und sind Sende und Empfang in gebündelten Packete , ohne Transaktion läuft
+keine Mitteilung oder Wird Empfangen , hier bei ist es egal ob das anfang wie ende der transaktion in einer eigenen
+zeile stehen oder in der selben .
+
+¢|  TransAktion Anfang/Vorgang/Start der Bedingung/bedingten Blocks
+|¢  TransAktion Ende/Vorgang/Ende der Bedingung/bedingten Blocks
+
+###############################################################
+
+» « Aktionen :
+
+Aktionen Werden als aktive Proteine/Proton/Wrap oder Ergebnisse
+weitergegeben , wohingegend Proteine/Proton/Wrap ohne Aktionen
+Unverarbeitete Transaktionen sind die noch vollständig
+unverarbeitet verarbeitet werden können und somit gekennzeichnet
+als empfangene daten . Diese wiederum Können verknüpft werden
+durch Locale oder Externe Ziel Pfade $Diregent oder §ZielReferenz
+
+»  Start einer Aktion/eines Zweiges/Proteine/Proton/Wrap
+«  Ende einer Aktion/eines Zweiges/Proteine/Proton/Wrap
+
+###############################################################
+
+«« Argumente :
+
+Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
+wie mal oder geteilt , plus minus den wert mitgeben können , sie
+dienen als weitergabe für berechnungen oder angaben , je nach dem
+ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert oder angabe verstanden ;
+
+· + : % Zusätzliche Rechen weitergaben(Aktionen)(mit oder ohne Wert)
+
+««-      Minus
+««+      Plus
+««·      Mal
+««:      Geteilt
+««%      Prozentbezogene Rechnung, z. B. für Anteile
+««%50   „Gib 50 % von X weiter“
+««%-     kann kombiniert werden , geteilt durch minus usw
+
+Wird typischerweise am Proteinpacket angehangen b.s ;
+
+¢| »['Lüfter'|{Watt|200}|««%50]« = §MotorA |¢
+
+###############################################################
+
+| Trennbefehle :
+
+Trennbefehle sollen innerhalb eine der Proteine/Protone/Warps die
+Operatoren/Argumente/Feed sauber Trennen wobei Operatoren/Argumente/
+Feeds immer vor eines DatenSatzen kommen , um von Links nach rechts
+gelesen eine saubere Struktur zu gewehrleisten. Trennbefehle können
+mehrfach innerhalb eines Proteine/Protone/Warps für Aufträge mit
+Operatoren/Argumente/Feed sorgen
+
+###############################################################
+
+$ Zielreferenzen :
+
+Innere Zielreferenz die angesteuert werden sollen , egal ob
+Hardware oder Programme .
+
+/ $Prozess-ID
+/ $Hardware-Slot
+/ $Gerätepfad (in RAM, Dev, CPU-Bereich)
+/ $OrdnerPfad (zur Ausführbaren oder Laufenden Verknüpfung)
+/ $Compositoren
+/ $Compiler
+
+###############################################################
+
+$ Dirigent :
+
+Externe Übergabe
+
+/ §lokale API
+/ §Kernelpfad
+/ §Netzwerk
+/ §InternetAdresse
+/ §Email (Direkte Sendung z.b)
+/ §Imei (Geräate Upadets z.b)
+/ §BuildNr (Software Updates z.b)
+
+usw , die möglichkeiten sind quasi unbegrenzt
+
+###############################################################
+
+[ ] Proteine :
+
+Proteine können mehrere Aspekte abdecken in dem sie sogenannte
+Operatoren mit geben die innerhalb einer Trennung vorhanden sind :
+
+""     Print , zeigt alles darin als ausgabe an
+''     Commando , Wird als Anweisung verstanden
+¨¨     Blanker Nenner , Das ist , Richtig , abgleich
+Einfache eingaben ohne etwas
+
+Sie werden in Print , Commando , Blanker Nenner oder Einfach ohne
+irgendwas in den Protein Zelle als Operatoren mit gegeben ,
+was auch schluss endlich auch nur in Proteinpackete mit Operatoren
+Enden kann oder als Combination mit Proton(en) oder Warps .
+
+Beispiele :
+
+¢| »["Hallo"|'echo']« = §/usr/bin/kitty |¢
+¢| »["Hallo"|'echo']« = §kitty |¢
+¢| »["Hallo"|'echo']« = §5436 |¢
+
+###############################################################
+
+{ } Proton(en) :
+
+Protonen können mit oder ohne Feed explizit weitergegeben werden
+und dienen für Hardware oder Feineren aufgaben die Proteine Ergänzen.
+
+Beispiel Protein ohne Proton ;
+¢| »["Hallo"|'echo']« = §5436 |¢
+Beispiel Protein mit Proton ohne Hardware Aufgaben;
+¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
+
+Ein Proton innerhalb eines Proteins kann daten aller Argument
+oder Wahrheiten mit in die nächste Verarbeitung oder
+Endverarbeitung geben oder führen .
+
+Beispiele der Proton packete ;
+
+{Band|Frequenz}{Amp|Zahl}{Watt|Zahl}{V|Spannung}{Temp|Zahl}
+{Pfad|Adresse}{Ip|Adresse}{Interface|wlan0}{Transport|Packet}
+{Cash|Größe}{Signed|Größe}{Unsigned|Größe}{Tracer|Zahl}
+{Wait|ms|120}{Wait|s|2}{Wait-m|1}
+
+Notiz :
+
+Müsste nur ein vollständiges register haben um die namens
+gebung zu definieren welches proton was trägt , kann
+beliebig erweitert werden und auch berechnet oder sogar
+später dem jeweiligen nutzer als eingabe software für die
+Configuration erstellt bzw geschrieben werden .
+
+###############################################################
+
+ø ø Warp : zusatzbeispiel wlan mit warp im anhang nr 01
+
+Ein Warp wird dafür verwendet um explizite language's aller art
+mit transportiert zu werden.Der Warp wird entweder als einzel
+Transaktion mit Zielreferenz oder Dirigenten verschieckt als
+einzel Transaktionsauftrag Oder einer Protein Verarbeitungs Zelle
+beigefügt wenn es Performanter Transportiert werden kann , weil der
+warp die selben Elektronischen Nervenbahnen des Systems anspricht
+(Stichwort lastenverteilung)
+
+ein warp folgt der regel øLanguals|Codeø und kann außerhalb den
+selben effeckt wie die internet MCS sprache haben
+
+Gleicher Effeckt mit Verschiedenen Umsetzungen :
+
+/ Protein Pure
+
+¢| »["Hallo"|'echo']« = §5436 |¢
+
+/ Protein + Proton
+
+¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
+
+/ ølanguage|Codeø Warp alleine für Compositoren/Compiler
+
+¢| øC|
+#include <stdio.h>
+
+int main() {
+printf("Hallo, Fenster!\n"); // Gibt "Hallo, Fenster!" auf der
+Konsole aus
+return 0; // Zeigt an, dass das Programm erfolgreich ausgeführt
+wurde
+}
+ø = §gcc |¢
+
+################### Warp Anhang ###########################
+Anhang NR 01
+
+MCS-Transaktion mit Warp für C
+
+¢|                                      # Transaktion starten
+øC|                                     # Warp für C-Code
+#include <stdio.h>
+#include <iwlib.h>
+
+int main() {
+    wireless_config wconf;
+    int sock = iw_sockets_open();
+    if (iw_get_basic_config(sock, "wlan0", &wconf) < 0) {
+        return 1;
+    }
+    wconf.frequency = 2.4e9; // 2.4 GHz
+    if (iw_set_basic_config(sock, "wlan0", &wconf) < 0) {
+        return 1;
+    }
+    return 0;
+}
+ø = §gcc |                              # Warp an Compiler (gcc) senden
+»[{Band|2.4G}§WLAN]«                   # Protein: WLAN-Band auf 2.4G setzen
+= §(1)Displey                          # Ergebnis (z. B. Erfolg/Fehler) an Display
+|¢                                      # Transaktion beenden
+
+Interpretation:
+
+Der C-Code wird in einen Warp (øC|...ø) eingebettet und an §gcc gesendet, was bedeutet,
+dass MCS den Code kompiliert (oder interpretiert) und in Assembly-Binaries übersetzt.
+Das Protein [{Band|2.4G}§WLAN] ist die MCS-native Repräsentation der Aktion,
+die direkt die Hardware (WLAN-Interface) anspricht, vermutlich über ein Kernel-Modul (*.needle).
+Der Feed §(1)Displey gibt das Ergebnis (z. B. Erfolg oder Fehler) an ein Display weiter, wie in deinem Beispiel.
+MCS sendet die Symbolik ([{Band|2.4G}§WLAN]) direkt an die Assembly,
+ohne Umrechnungsvariablen, was deinen Punkt über die direkte Assembly-Interaktion bestätigt.
+
+Vorschläge für die WLAN-Implementierung :
+
+øC|{Interface|wlan0}|{Action|set_band}|{Value|2.4G}|
+... C-Code ...
+ø = §gcc
+
+Warp-Standardisierung: Definiere ein Standard-Format für C-Warps, z. B. mit Metadaten,
+die MCS mitteilen, welche Zielreferenzen (§) oder Protonen ({}) angesprochen werden.
+mcs
+
+###############################################################
+
+(Zahl) Feed
+
+Feeds sind Rück oder Angaben wohin welche Merge Forke oder Parallele
+Transaktion wie Prozess gehen soll und wo er wieder andocken soll
+
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt , wodurch
+er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
+und dadurch seine andock station definiert ..
+
+Beispiel an einer Beispiel Transaktion ;
+
+Beispiel Code  Ohne Merge und Feed:
+
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}|««%50]« # Proteinpaket:MotorA,200W,12V mit %50
+= §Displey                              # der Werte an Display ausgeben
+¶=                                    # Paralleler Prozess
+»[{Temp|25}§SensorX]«               # Temperatur von SensorX lesen
+««+10 = §Cooler                     # Temperatur +10 an Kühler senden
+;;                                    # Paralleler Transport ohne Eingabe
+»[{Band|2.4G}§WLAN]«                # WLAN-Band auf 2.4G setzen
+|¢                                      # Transaktion beenden
+
+Interpretation: Dieser Code sendet Leistung/Volt an einen Motor,
+zeigt 50% der Werte auf einem Display, liest parallel die Temperatur
+eines Sensors, passt sie an und aktiviert einen Kühler, während
+das WLAN auf 2.4G gestellt wird. Das zeigt die Stärke von MCS
+in paralleler, systemnaher Steuerung.
+
+Beispiel mit Parallele und Feed (1);
+
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}|««%50]« # Proteinpaket:MotorA,200W,12V mit %50
+= §(1)Displey                              # der Werte an Display ausgeben
+¶=                                    # Paralleler Prozess
+»[{Temp|25}§SensorX]«               # Temperatur von SensorX lesen
+««+10 = §Cooler                     # Temperatur +10 an Kühler senden
+;;                                    # Paralleler Transport ohne Eingabe
+»[{Band|2.4G}§WLAN]«                # WLAN-Band auf 2.4G setzen
+=  §(1)
+|¢                                      # Transaktion beenden
+
+Hierbei diente Feed als Duplikator für den Visuellen Displeyoutput ,
+da feed immer mit der selben zahl , buchtstabe , code , symbole , im
+weiteren prozess oder Dirigent transaktionen sich gegenseitig findet ,
+wird immer das weitergegeben was gefeedet wurde , ganz gleich ob berechnet
+oder kalt hingeschrieben bzw programmiert .. so dient feed für viele zwecke
+außerhalb von ¶ ¶¶ ¶=;; usw ...
+
+###############################################################
+
+⊕ Sync-timer ;
+
+kann als erweiterter Paraleller Transport verstanden werden der dazudient :
+
+Laufende Prozesse die Fehlerhaft Arbeiten per Live Reperatur flexibel mit
+einem Sync-timer zu taggen und dadurch direkte Reperaturen oder Fineabstimmungen
+vorzunehmen .
+
+es dient dazu laufende takt geber also Runner selbst im Betrieb mit Laufenden Prozesse
+umzuschreiben und duzende *.*-synctimer anzulegen die essentiell anders takten und sich nathlos
+in den laufenden prozess als weiterführende transaktionsschleife , um den prozess weiterführen oder
+verändern zu können , am laufen halten
+
+sync-timer symbole in einem bestehenden code dienen als Einspeisung's moment und *.*-logic daten
+dienen als datensatz der eingespeißt werden soll oder als wechsel schicht , die wiederum auch als
+cache gehalten werden können .....
+###############################################################
+
+Wahreiten :
+
+Wahrheiten weitergeben mit mehrfach Auswahl oder Transporte
+ermöglichen wären einem gui Fenster aufruf.Ermöglicht granulare
+paralell verarbeitungen wie hintergrund prozesse
+
+~~ für Merge von mehreren Packets kann per () granuliert werden das
+genau
+
+> > für Fork oder Splitting Links Nach Rechts
+<< für Fork oder Splitting Rechts Vor Links
+¶  IF
+¶¶ Else
+¶= Paralelle oder nebenprozesse die mit eingaben rücksprachen zu tun
+haben , besonders hilfreich bei Gui designe
+;; Für Paralell Transport , ohne eingabe aufforderung
+
+# bleibt traditionell kommentar
+
+=  gibt alles an § oder $ direkt als kennungswert mit
+
+Operatoren :
+
+Werden immer als Schlüssel element zuerst angegeben , wenn sie
+erfoderlich sind , gerade für Wahrheiten sehr Relevant
+
+Wenn/Kann
+°  WennNicht/Muss
+
+> WennKleiner/Kann/Soll
+<  WennGrößer/Kann/Soll
+!  WennEindeutig/Sofort
+…  WennFehler/Kann/Sicherheit
+^  TransaktionsFehler/Debugg
+ſ  DatenReste/Löschung
+
+
+
+###############################################################
+
+Reihenfolge wenn das angesprochene System oder Browser die daten
+für eine reibungslose Übersetzung benötigt ist : 3
+
+1. Transaktion Anfang
+
+
+2. Protein (das Proton mitliefern kann)
+
+
+3. Proton (das eigenständig hardware ansprechen kann)
+
+
+4. Warp (das für die übersetzung für Performenstechnische aspekte
+direkt in die jeweiligen compositor bzw Compiler eingespeißt wird)
+
+
+5. = Kennungswert
+
+
+6. Zielreferenz oder Dirigent
+
+
+7. Transaktion Ende
+
+
+
+###############################################################
+
+SICHERHEITS Checks Laufen dann Grundsätzlich über MCS
+
+¢|                                      # Transaktion starten
+»[{Band|2.4G}§WLAN]«                   # Protein: WLAN-Band auf 2.4G setzen
+°WennNicht[{Band|2.4G}|{Valid|2.4G,5G}] # Sicherheitscheck: Nur 2.4G/5G erlaubt
+^TransaktionsFehler                    # Fehler bei ungültigem Band
+= §(1)Displey                          # Ergebnis an Display
+¶=                                     # Paralleler Prozess
+øC|                                    # Warp: C-Code für detaillierte Steuerung
+#include <iwlib.h>
+int main() {
+    wireless_config wconf;
+    int sock = iw_sockets_open();
+    wconf.frequency = 2.4e9;
+    iw_set_basic_config(sock, "wlan0", &wconf);
+    return 0;
+}
+ø = §gcc                               # Warp an gcc senden
+= §(1)                                 # Feed zurück an Display
+|¢                                      # Transaktion beenden
+Erklärung:
+
+Der Sicherheitscheck (°WennNicht) prüft, ob Band|2.4G gültig ist, und löst bei Fehler einen ^TransaktionsFehler aus.
+Der C-Warp wird kompiliert und in Assembly übersetzt, während das Protein [{Band|2.4G}§WLAN] direkt die Hardware anspricht.
+Der Feed §(1) synchronisiert Display-Ausgabe zwischen Protein und Warp.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

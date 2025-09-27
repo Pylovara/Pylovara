@@ -1,47 +1,50 @@
 #!/usr/bin/env bash
 # mcs.REGISTER.core
-# Symbol- und Strukturregister für MCS Prototyp 1.5
-# Version: 1.5
+# Symbol- und Strukturregister für MCS Prototyp 1.9
+# Version: 1.9
 # Autor: pylovara.ai
 
 ### Symbolische Strukturregister (Proton-/Proteintypen etc.)
 mcs_structures=$(cat <<EOF
-¢|      TransAktionsstart (Bedingung / Block / Vorgang)
-|¢      TransAktionsende
-»       Start Protein / Aktion
-«       Ende Protein / Aktion
-««+     Rechenweitergabe: Plus
-««-     Rechenweitergabe: Minus
-««·     Rechenweitergabe: Mal
-««:     Rechenweitergabe: Geteilt
-««%     Prozentrechnung (z. B. ««%50)
-[       Start Proteinpacket
-]       Ende Proteinpacket
-§       Zielreferenz
-$       Dirigent (lokale/remote Übergabe)
-""      Anzeige / Print
-''      Befehl
-¨¨      Nenner / Abgleich
-~~      Merge (mit () möglich)
->>      Fork links → rechts
-<<      Fork rechts → links
-¶       IF
-¶¶      ELSE
-¶=      Parallelprozess
-;;      Paralleltransport
-|       Trenner für Befehl/Argumente
-|||     Mehrfachweitergabe
-(Zahl)  Nummerierte Label/Aktion
-{}      Protonstruktur (Band, Watt, IP, etc.)
-*       Wenn / Kann
-°       WennNicht / Muss
->       WennKleiner
-<       WennGrößer
-!       WennEindeutig
-…       Fehler
-^       Transaktionsfehler / Debug
-ſ       Reste / Löschung
-#       Kommentar
+¢|      TransAktionsstart (Bedingung / Block / Vorgang) [cite: 43]
+|¢      TransAktionsende [cite: 43]
+»       Start Protein / Aktion [cite: 43]
+«       Ende Protein / Aktion [cite: 43]
+««+     Rechenweitergabe: Plus [cite: 43]
+««-     Rechenweitergabe: Minus [cite: 43]
+««·     Rechenweitergabe: Mal [cite: 43]
+««:     Rechenweitergabe: Geteilt [cite: 43]
+««%     Prozentrechnung (z. B. ««%50) [cite: 43]
+[       Start Proteinpacket [cite: 43]
+]       Ende Proteinpacket [cite: 43]
+{}      Protonstruktur (Band, Watt, IP, etc.) – Jetzt offiziell als Struktur
+§       Zielreferenz (Innere Prozess-ID / Hardware-Slot / *.*-lcore) [cite: 43]
+$       Dirigent (Externe Übergabe/Output: API, Netzwerk, Kernelpfad) [cite: 43]
+""      Anzeige / Print [cite: 43]
+''      Befehl [cite: 43]
+¨¨      Nenner / Abgleich [cite: 43]
+⊕      KI-Sync-Timer/Autorisierung: Einspeisungspunkt für LIVE.PATCH / Sub-Admin-Zugriff
+ø       Warp-Start: Start eines dynamisch injizierten Code-Blocks (z.B. øMCS|...)
+ø       Warp-Ende: Ende eines dynamisch injizierten Code-Blocks
+~~      Merge (mit () möglich) [cite: 43]
+>>      Fork links → rechts [cite: 43]
+<<      Fork rechts → links [cite: 43]
+¶       IF: Bedingter Zweig [cite: 43]
+¶¶      ELSE: Wird ausgeführt, wenn ¶ fehlschlägt [cite: 43]
+¶=      Parallelprozess (unabhängiger Lauf) [cite: 43]
+;;      Paralleltransport (simultane Weitergabe) [cite: 43]
+|       Trenner für Befehl/Argumente [cite: 43]
+|||     Mehrfachweitergabe [cite: 43]
+(Zahl)  Nummerierte Label/Aktion [cite: 43]
+* Wenn / Kann [cite: 43]
+°       WennNicht / Muss [cite: 43]
+>       WennKleiner [cite: 43]
+<       WennGrößer [cite: 43]
+!       WennEindeutig [cite: 43]
+…       Fehler [cite: 43]
+^       Transaktionsfehler / Debug [cite: 43]
+ſ       Reste / Löschung [cite: 43]
+#       Kommentar [cite: 43]
 EOF
 )
 

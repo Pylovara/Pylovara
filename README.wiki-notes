@@ -1,13 +1,11 @@
 ################################################################################
-                    Ⓟylovara-System |Rootbasierter Aufbau
+                             Pylovara-System
 
-Detaliertere infos zur aktuellen umsetzungsart wie auch der fokus
-werden hier weiter erklärt : Arbeitsblatt.dev-note
+                    MCS Syntax Aktualisierung auf Kernel Ebene
+                    MCS 1.9
+                    Datentyp Version 0.7
 
-
-Mitarbeiter in sache binärübersetzung der MCS syntax werden Potenziel
-gesucht ... anlauf stelle : +49 176/88218035 T.Zimmermann
-
+################################################################################
 ################################################################################
                                  Install
 ################################################################################
@@ -15,7 +13,7 @@ git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
-info : wenn linus tohrwald probleme macht dann gibt die befehle einzelnd ein
+info : bei Problemen Befehle einzelnd eingeben !
 
 ################################################################################
                                Update Manual
@@ -223,7 +221,17 @@ Die Einsatzgebiete sind unbegrenzt.
 Pylovara ist mehr als ein Tool – es ist eine Haltung. Eine Haltung gegenüber
 dem System,der Kontrolle, der Freiheit. Es gibt keine Abstraktionsebenen,
 mit oder ohne GUI-Maskottchen. Nur dich, deine Befehle und dein System.
+################################################################################
+                                Impressum Infos
 
+Detaliertere infos zur aktuellen umsetzungsart wie auch der fokus
+werden hier weiter erklärt : Arbeitsblatt.dev-note
+
+
+Mitarbeiter in sache binärübersetzung der MCS syntax werden Potenziel
+gesucht ... anlauf stelle : +49 176/88218035 T.Zimmermann
+
+################################################################################
 #####################################################################################
 ################################## Readme Ende ######################################
 #####################################################################################

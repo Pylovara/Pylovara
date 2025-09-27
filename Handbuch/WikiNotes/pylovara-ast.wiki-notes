@@ -2,12 +2,13 @@
 @wiki_nr: 01 ##############################################################################
 @wiki_nr: ast ################################################################################
 ##############################################################################################
- ┌[bandino@Dev][01:44:25|Mo Jun 16]
+ ┌[bandino@dev][05:01:47|Sa Sep 27]
  │ ᴾʸˡᵒᵛᵃʳᵃ
  │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
  │    ₜₒ   ₚᵧₗₒ  ₖₑᵣₙₑₗₓ ₀₁₋₀₁  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
- └[/Pylovara]> $ xtree
-.
+ └[/]> $ p Pylovara
+🔍 Ordner gefunden: /Pylovara
+/Pylovara
 ├── AI
 │   ├── AIControl
 │   │   ├── AI-Einstellungen
@@ -40,7 +41,7 @@
 │       │   └── ollama
 │       └── systemd
 │           └── ollama.service
-├── Arbeitsblatt.dev-notes
+├── Arbeitsblatt.dev-note
 ├── Control
 │   ├── cache.conf
 │   ├── callme.conf
@@ -54,7 +55,7 @@
 ├── Handbuch
 │   ├── DnaNotes
 │   │   ├── 01-info.dna-notes
-│   │   ├── 99-guide.dna-notes
+│   │   ├── 99-Linux.dna-notes
 │   │   └── ##-shots.dna-notes
 │   ├── KernelNotes
 │   │   ├── 01-8664.kernel-notes
@@ -62,6 +63,7 @@
 │   │   ├── 03-MCSSchuleMaterial.kernel-notes
 │   │   └── lexikon.kernel-notes
 │   └── WikiNotes
+│       ├── ai.wiki-notes
 │       ├── control.wiki-notes
 │       ├── guide.wiki-notes
 │       ├── lexikon.wiki-notes
@@ -70,30 +72,34 @@
 │       ├── pylovara-ast.wiki-notes
 │       ├── shell.wiki-notes
 │       └── source-bridge-needles.wiki-notes
-├── pushforce.needles
 ├── Pylovara.license-notes
 ├── README.wiki-notes
 ├── Setup
-│   ├── full.install-core
-│   ├── info.install-notes
-│   ├── Integrationscheck.shellinstall-needle
-│   ├── nc.install-core
-│   ├── paket.updater-core
-│   ├── policy.security-alert
-│   ├── pylovara.updater-needle
-│   └── usr
-│       └── bin
-│           └── pylovara.wrapper-shell
+│   ├── Desktop-Empfohlen
+│   │   ├── Arch-Hypland.fullinstall-core
+│   │   ├── Arch-SARBS.fullinstall-core
+│   │   ├── Debian-Hyprland.fullinstall-core
+│   │   ├── Fedora-Hyprland.fullinstall-core
+│   │   └── Ubuntu25.04-Hyprland.fullinstall-core
+│   └── Pylovara-System
+│       ├── full.install-core
+│       ├── info.install-notes
+│       ├── nc.install-core
+│       ├── paket.updater-core
+│       ├── policy.security-alert
+│       ├── pylovara.updater-needle
+│       └── usr
+│           └── bin
+│               └── pylovara.wrapper-shell
 └── System
     ├── Kernel
     │   ├── parser
-    │   │   └── protein-packet.parser-needle
+    │   │   └── protein-packet.parser-core
     │   ├── Prototyp.dev-notes
     │   ├── register
     │   │   ├── mcs.parser-magic
     │   │   ├── mcs.registry-core
     │   │   ├── register.structures-magic
-    │   │   ├── register.symbols
     │   │   ├── register.symbols-magic
     │   │   └── semantics.REGISTER-core
     │   └── Sprache
@@ -133,6 +139,8 @@
     │           ├── ».symbol
     │           └── ….symbol
     ├── Module
+    │   ├── MCS-Kernel
+    │   │   └── monitor.power-cycle.lcore
     │   ├── Pylovara
     │   │   ├── Cache
     │   │   │   └── GitPlaceHolder.Struktur
@@ -159,13 +167,19 @@
     │       └── Logic
     │           └── taschenrechner.max-logic
     ├── Pictures
+    │   ├── Hardware
+    │   │   ├── hardware.bmp
+    │   │   ├── Konzept.bmp
+    │   │   └── konzept brainmaschine.bmp
     │   └── Pylovara
+    │       ├── MCS-FolgeDiagram.png
     │       └── Pylovara.jpg
     └── Shell
         ├── CMD
         │   ├── color.cmd-dna
         │   ├── cpu.dna-cmd
         │   ├── datatype.dna-cmd
+        │   ├── fullinfo.dna-cmd
         │   ├── hw.dna-cmd
         │   ├── internet.dna-cmd
         │   ├── lex.dna-cmd
@@ -248,7 +262,7 @@
         └── VaraLibs
             └── GitPlaceHolder.Struktur
 
-52 directories, 188 files
+56 directories, 197 files
 
 │############################################################
 │# WikiLexikon : pylovara-ast.wiki-notes

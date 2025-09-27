@@ -1,0 +1,54 @@
+#@FILE /Pylovara/System/Module/monitor.power-cycle.lcore
+#@VERSION 1.9
+#@AUTHOR AI-Patch
+
+// Sektion 1: Brutal-C Funktions-Hooks (Gedächtnisrücklage §7465)
+// Diese Funktionen werden durch die MCS-Kette getriggert.
+#@CODE 0x07465
+#include <system/io/display.h>
+
+// Definiert den Low-Level-Hook für Monitor AUS
+void Sys.Monitor.ForceOff(string target_id) {
+    if (target_id.is_valid_dpms()) {
+        target_id.exec_low(COMMAND_DPMS_OFF);
+        return RESULT_SUCCESS;
+    }
+    return RESULT_ERROR_INVALID_TARGET;
+}
+
+// Definiert den Low-Level-Hook für Monitor AN
+void Sys.Monitor.ForceOn(string target_id) {
+    if (target_id.is_valid_dpms()) {
+        target_id.exec_low(COMMAND_DPMS_ON);
+        return RESULT_SUCCESS;
+    }
+    return RESULT_ERROR_INVALID_TARGET;
+}
+
+// Definiert einen blockierenden Mikro-Delay
+void Sys.Delay.Micro(int ms) {
+    thread.sleep_ms(ms);
+}
+#@END_CODE
+
+// Sektion 2: MCS 1.9 Transaktionskette
+// Die Logikkette, die beim Ausführen der Datei getriggert wird.
+#@ACTION
+// Start der Transaktion (¢|)
+// Definiert eine sequentielle Kette (*)
+¢| Test.Monitor.PoC * // Aktion 1: Monitor ausschalten
+    »[§{Command|Sys.Monitor.ForceOff}{Target|Display.01}]«
+
+    * // Sequenziell ausführen
+
+    // Aktion 2: Warte 2000ms (2 Sekunden)
+    »[{Command|Sys.Delay.Micro}{Value|2000}]«
+
+    * // Sequenziell ausführen
+
+    // Aktion 3: Monitor wieder einschalten
+    »[§{Command|Sys.Monitor.ForceOn}{Target|Display.01}]«
+
+|¢
+// Ende der Transaktion (|¢)
+#@END_ACTION

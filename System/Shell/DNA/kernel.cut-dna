@@ -1,4 +1,14 @@
 #!/bin/bash
+# kernel.cut-dna - MCS 1.9 Patch
+# ...
+if [[ "$1" == *.lcore ]]; then
+    echo ">> LCORE-Modul erkannt. Weiterleitung an MCS 1.9 Parser..."
+    # Führt das Modul direkt im Pylovara-Modus aus
+    # Annahme: Der Haupt-Pylovara-Wrapper kann MCS 1.9 verarbeiten
+    /usr/bin/pylovara --execute-lcore "$1"
+    exit 0
+fi
+
 # ==============================================================================
 # kernel.cut-dna [Pylovara 3.4]
 # ==============================================================================

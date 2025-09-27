@@ -23,6 +23,12 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 ### alias Sektion
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
+##############################################################################
+### Proof Of Conzept from MCS
+
+alias poc='/Pylovara/System/Module/MCS-Kernel/./monitor.power-cycle.lcore'
+
+### info : der Beweis das MCS funktioniert
 
 ### Startet Ollama
 alias ollama='/Pylovara/AI/ollama/bin/ollama start'

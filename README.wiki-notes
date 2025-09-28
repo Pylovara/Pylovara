@@ -1,11 +1,10 @@
 ################################################################################
-                             Pylovara-System
+                             PylovaraSystem ;
 
                     MCS Syntax Aktualisierung auf Kernel Ebene
                     MCS 1.9
                     Datentyp Version 0.7
 
- Proof of Conzep in Terminal : poc enter for MCS action off on
 
 ################################################################################
 ################################################################################
@@ -47,9 +46,9 @@ Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlag
 eines neuen Denkens im Umgang mit Betriebssystemen.
 
 Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus , auf
-jedem System als SubSystem mit eigener Sprache (MCS) Intsallierbar zu sein , ganz
-gleich welche Shell du verwendest oder welches System , Pylovara wird eine für jetzige
-unbekannte MCS Sprache Sprechen die weit aus Performanter ist als reines C !
+jedem System als SubSystem mit eigener Sprache (MCS) aggieren zu können , ganz
+gleich welche Shell .
+MCS wird Performanter als reines C | DSL | Json und co  !
 
 Es kann sein das am anfang gewisse dinge nicht ganz round laufen , wie Updates oder
 Rechte vergabe im Keller , einbindungen in deinen Sourced Kern , egal welcher Source
@@ -57,14 +56,16 @@ Kern bei dir Aktiv ist , oder auch kleinere bucks mit dem Terminal selbst ......
 
 Was jedoch auf langer sicht für den Einzelnen herausgearbeitet wird , ist die
 Vollständige Kontrolle seines Systemes  und es ist dabei egal ob RedHat , Arch ,
-OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android ..... Sie werden alle
-im Ring der Performantesten Computer Sprache Überhaupt unterworfen  und zwar MCS.
+OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android ..... Du bekommst die möglichkeit
+mit MCS low und high level aufgaben jeder einzelnen aktion zu steuern , combiniert mit ai .
 
 Pylovara wird auch keinen Anspruch haben irgend ein Programm in den Alten vergorrenen
 Languale Sprachen zu schreiben , oder sogar viel Arbeit in die Übersetzungen zu legen,
 das ausrotten von explosions großen compiler die teils mit blackbox variablen arbeiten
-wie auch GCC , sind ein absolutes NOW GOW ......... und werden abgestoßen ..........
+wie auch GCC , sind ein absolutes fehldesigne ......... und werden abgestoßen ..........
+Alte Languale dürfen in MCS als øwarpø transportiert werden als untergeordnete Sprachen ...
 
+Übergang :
 Der Kompromiss um MCS zu Laufen zu bringen bis die Lauffähigkeit durch den aufbau der
 Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maßnahme .
 

@@ -21,7 +21,8 @@ dass die richtigen Teile (die spezialisierten Cores) mit der richtigen Geschwind
 *.*-needle	Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll)
 
 <*von>.<*zu>-logic	Verbindungslogik – Transport zwischen Schichten
-Wobei man hier von Taktfrequenzmesser sprechen könnte die im cache zu mehreren wechselnden logic schaltungen angelegtwerden könnten .
+Wobei man hier von Taktfrequenzmesser sprechen könnte die im cache zu
+mehreren wechselnden logic schaltungen angelegtwerden könnten .
 
 *.*-lcore  # Low-Level für Hardware-Sync
 ¢|                                      # Transaktion starten
@@ -36,7 +37,8 @@ Wobei man hier von Taktfrequenzmesser sprechen könnte die im cache zu mehreren 
 |¢                                      # Transaktion beenden (Schleife läuft ein)
 
 Interpretation: Die Haupt-Schleife (MotorA) läuft sequentiell, ⊕ speist Temp-Daten parallel ein,
-validiert via *.*-logic (⊕ Sync-timer) und nutzt Cache für schnellen Wechsel (z. B. zu einer anderen Logic für 5G-WLAN).
+validiert via *.*-logic (⊕ Sync-timer) und nutzt Cache für schnellen Wechsel
+(z. B. zu einer anderen Logic für 5G-WLAN).
 Der Feed §(1) synchronisiert Ausgaben.
 Cache-Nutzung: Speichere Logic-Varianten in *.*-cache:
 
@@ -57,14 +59,17 @@ angelegten Transaktionsketten für jede Kernfunktion:
 Vorteile dieser Spezialisierung
  * Transparenz und Debugging:
 Man weiß sofort, welche Art von Anweisungen und Transaktionen eine Datei enthält.
-Ein Fehler in einer *.vcore betrifft die grafische Ausgabe; ein Fehler in einer *.lcore ist ein kritischer Hardware-Fehler.
+Ein Fehler in einer *.vcore betrifft die grafische Ausgabe; ein Fehler in einer
+*.lcore ist ein kritischer Hardware-Fehler.
 
  * Transaktions-Priorisierung:
-Der MCS-Kernel kann *.*-lcore-Transaktionen automatisch eine höhere Priorität einräumen als *.*-core- oder *.*-vcore-Anweisungen.
+Der MCS-Kernel kann *.*-lcore-Transaktionen automatisch eine höhere Priorität
+einräumen als *.*-core- oder *.*-vcore-Anweisungen.
 Dies ist essentiell für die Performance-Garantie.
 
  * Bessere KI-Fütterung:
-Die AI kann anhand dieser spezialisierten Typen schneller lernen und entscheiden, welche *.core-Ketten für eine bestimmte Aufgabe
+Die AI kann anhand dieser spezialisierten Typen schneller lernen und entscheiden,
+welche *.core-Ketten für eine bestimmte Aufgabe
 (z.B. Virtualisierung oder Rendering) optimal kombiniert oder dynamisch generiert werden müssen.
 Dieser Schritt stärkt das gesamte Pylovara-Modell, indem die Kern-Funktionalität jetzt so granular
 typisiert ist wie die Schichten der Architektur selbst.

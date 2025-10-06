@@ -274,7 +274,8 @@ und dienen für Hardware oder Feineren aufgaben die Proteine Ergänzen.
 Beispiel Protein ohne Proton ;
 ¢| »["Hallo"|'echo']« = §5436 |¢
 Beispiel Protein mit Proton ohne Hardware Aufgaben;
-¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
+¢| »['send'|"5436"|{Wait-s|3}|'creat'|þ5436.cache|'fileloadto'/Pylovara/]« = $kitty
+|¢
 
 Ein Proton innerhalb eines Proteins kann daten aller Argument
 oder Wahrheiten mit in die nächste Verarbeitung oder
@@ -368,9 +369,10 @@ Der C-Code wird in einen Warp (øC|...ø) eingebettet und an
 (oder interpretiert) und in Assembly-Binaries übersetzt.
 Das Protein [{Band|2.4G}§WLAN] ist die MCS-native Repräsentation
 der Aktion,die direkt die Hardware (WLAN-Interface) anspricht,
-vermutlich über ein Kernel-Modul (*.needle). Der Feed §(1)Displey
-gibt das Ergebnis (z. B. Erfolg oder Fehler) an ein Display weiter,
-wie in deinem Beispiel. MCS sendet die Symbolik ([{Band|2.4G}§WLAN])
+über ein Kernel-Modul (*.needle). Der Feed §(1)Displey
+gibt das Ergebnis (z. B. Erfolg oder Fehler)
+an ein Display weiter, wie im Beispiel.
+MCS sendet die Symbolik ([{Band|2.4G}§WLAN])
 direkt an die Assembly,ohne Umrechnungsvariablen, was den Punkt
 über die direkte Assembly-Interaktion bestätigt.
 
@@ -618,9 +620,9 @@ warp
     : 'ø' ID '|' .*? 'ø'
     ;
 
-// Feed = §(zahl)
+// Feed = (zahl)
 feed
-    : '=' '§' '(' NUMBER ')'
+    : '=' '()' '(' NUMBER ')'
     ;
 
 // Argumente «« + - * %
@@ -664,7 +666,7 @@ test code ;
 ¢|
   »['MotorA'|{Watt|200}|{Volt|12}]« = §(1)Displey
   ¶=
-  »[{Temp|25}§SensorX]«
+  »[{Temp|25}$SensorX]«
   ⊕
   øC|
     #include <stdio.h>
@@ -673,6 +675,8 @@ test code ;
 |¢
 
 Parser ausgabe verkürzt beispiel ;
+
+als MCS 2.1 eingeführte Muster von ¢|transaction|¢
 
 transaction
  ├─ protein

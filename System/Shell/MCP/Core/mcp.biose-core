@@ -23,5 +23,5 @@
     »[if load > 90%] → trigger >> SYS_MONITOR
     »[if SENSOR_UNIT :: alert] → activate >> MEMORY_PIPE.LOG
 
-    »[grant.full] :: {GPT.core|qwenservice}
+    »[grant.full] :: {GPT.core|service}
 |¢

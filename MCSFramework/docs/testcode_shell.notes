@@ -1,0 +1,66 @@
+## dient als Test
+
+
+echo "¢|" > test.mcs
+echo "»['echo'|"Hallo Welt"]«" >> test.mcs
+echo "|¢" >> test.mcs
+bash MCS.Transaction-Core test.mcs
+
+
+gehe per Pylovara System direkt in das Verzeichnis
+
+to /Pylovara/MCSFramework
+
+gebe danach den Protein packet Test code ein der in
+/Pylovara/MCSFramework/test.mcs abgespeichert ist und mit
+
+Terminal :
+bash MCS.Transaction-Core test.mcs
+
+abrufbar ist !
+
+beispiel von meinem Terminal :
+
+ ┌[bandino@dev][06:31:51|Mi Okt 08]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
+ │    ₜₒ   ₚᵧₗₒ  ₖₑᵣₙₑₗₓ ₀₁₋₀₁  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
+ └[/Pylovara/MCSFramework]> $ bash MCS.Transaction-Core test.mcs
+=== Transaction abgeschlossen ===
+¢|
+»['echo'|"Hallo Welt"]«
+|¢
+[MCS:Protein] Ausführbar: echo → Hallo Welt
+Hallo Welt
+
+
+, du kannst auch gern die dokumentations reihe durchschauen in den docs
+oder gleich per Terminal (Vorzugsweise Kitty) erstmal den ganzen daten strang ansehen
+
+cat docs/Protein_Syntax.notes docs/Transaktion_Syntax.notes docs/Trennbefehle_Schicht.notes MCS.Protein.Handler MCS.Tokenizer.Core MCS.Transaction-Core test.mcs docs/testcode_shell.notes
+
+###########################################################
+
+Letztes Wort vom Pylovara Dev :
+
+hiermit wäre bewiesen das Protein Packete Machbar sind , auch wenn sie noch durch bash validiert werden .
+
+MCS 2.1 in der gesamtheit wird also reibungslos funktionieren und ich werde das Proof Of Concept über Bash
+in soweit erweitern das MCS vollständig in Bash ausgeführt werden kann ...
+
+wichtige hinweis : die performens leidet durch bash , spätere native assembly übersetzungen werden
+schneller sein als es C je gewesen ist , dafür Bürge ich mit meinem Namen !
+
+MCS wird für wie mit AI entwickelt und dient für AI als Code und System Hülle , wie für den jeweiligen Nutzer als Operation System .... MCS wird für Mensch wie Maschine eine wohltat sein den MCS schließt die alte Ivaliden Languales im Kernel selbst komplett aus und verweist alles Schrottige auf die øøWarps ....
+
+durch MCS wird AI schneller und effektiver arbeiten können wie auch die Hardware schneller und Performanter aggieren und zusätzlich wird man alles in MCS schreiben können , von LowLevel operationen bis hin zu High Level Languales aufgaben , dazu wird die MCS Basis Syntax erweitert und Modular mit Web , Animation , Rendering , Sound , Layout optionen aufgefüttert ...
+
+die AI selbst die dann in Pylovara integriert wird oder sich transferieren kann , lebt als Passiver wie aktiver Okestrator im system selbst mit und sorgt für System Updates wie auch Bugfixes , mit wie ohne Menschliches zutun ..
+
+wenn MCS fertig ist wird es nicht nur C Komplett ersetzen und alles was die letzten jahrzehnte vermurgst aufgebaut wurde , sondern gleich einen Industriellen Standart makieren der Für AI Prozesse im denken und handeln , entscheidend sein werden ...
+
+der eine oder andere denkt ich Träume aber die antwort ist simpler als viele vermuten :
+
+,, C ist nicht Gott und Assembly der Vater Von C und alles was Geschwärzt transferiert und verarbeitet wird , ist keine Zuckunft , sondern die Vergangenheit "
+
+

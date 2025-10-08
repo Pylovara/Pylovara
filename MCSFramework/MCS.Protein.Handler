@@ -1,0 +1,204 @@
+#!/usr/bin/env bash
+# MCS Protein Handler v0.7 aktiv
+# Ruft passende Protein-Befehle auf
+
+handle_protein() {
+    local packet="$1"
+    local -a tokens=()
+
+    # Zuerst die äußeren »[ ... ]« entfernen
+    packet="${packet#»[}"
+    packet="${packet%]«}"
+
+    # Tokenizer anwenden (Trennung nach |)
+    tokenize_mcs "$packet" tokens
+
+    # Sicherheitscheck
+    if [[ ${#tokens[@]} -eq 0 ]]; then
+        echo "[MCS:Protein] Leeres Paket: $packet"
+        return
+    fi
+
+    # Command und Argumente sauber trimmen (robust gegen Mischzeichen)
+    local cmd="${tokens[0]}"
+    cmd="${cmd//\"/}"
+    cmd="${cmd//\'/}"
+    cmd="${cmd// /}"
+
+    local args=()
+    for i in "${tokens[@]:1}"; do
+        local clean="${i//\"/}"
+        clean="${clean//\'/}"
+        args+=("$clean")
+    done
+
+    # Kontrolle
+    echo "[MCS:Protein] Ausführbar: $cmd → ${args[*]}"
+
+    # Ausführen
+    if command -v "$cmd" >/dev/null 2>&1; then
+        "$cmd" "${args[@]}"
+    else
+        echo "[MCS:Protein] Unbekannter Befehl: $cmd"
+    fi
+}
+
+
+## Vorversionen Sektion ##
+
+# MCS Protein Handler v0.6 inaktiv
+# Ruft passende Protein-Befehle auf
+
+#handle_protein() {
+#    local packet="$1"
+#    local -a tokens=()
+
+#    # Zuerst die äußeren »[ ... ]« entfernen
+#    packet="${packet#»[}"
+#    packet="${packet%]«}"
+
+#    # Tokenizer anwenden (Trennung nach |)
+#    tokenize_mcs "$packet" tokens
+
+#    # Sicherheitscheck
+#    if [[ ${#tokens[@]} -eq 0 ]]; then
+#        echo "[MCS:Protein] Leeres Paket: $packet"
+#        return
+#    fi
+
+#    # Command und Argumente sauber trimmen
+#    local cmd="$(echo "${tokens[0]}" | sed -E "s/^['\"]?(.*?)['\"]?$/\1/")"
+#    local args=()
+#    for i in "${tokens[@]:1}"; do
+#        args+=("$(echo "$i" | sed -E "s/^['\"]?(.*?)['\"]?$/\1/")")
+#    done
+
+#    # Kontrolle
+#    echo "[MCS:Protein] Ausführbar: $cmd → ${args[*]}"
+
+#    # Ausführen
+#    if command -v "$cmd" >/dev/null 2>&1; then
+#        "$cmd" "${args[@]}"
+#    else
+#        echo "[MCS:Protein] Unbekannter Befehl: $cmd"
+#    fi
+#}
+
+
+## Vorversionen Sektion ##
+
+# MCS Protein Handler v0.5 inaktiv
+# Ruft passende Protein-Befehle auf
+
+#handle_protein() {
+#    local packet="$1"
+#    local -a tokens=()
+#
+#    # Tokenizer anwenden (Trennung nach |)
+#    tokenize_mcs "$packet" tokens
+#
+#    # Sicherheitscheck
+#    if [[ ${#tokens[@]} -eq 0 ]]; then
+#        echo "[MCS:Protein] Leeres Paket: $packet"
+#        return
+#    fi
+
+#    local cmd="$(echo "${tokens[0]}" | sed -E "s/^['\"]?(.*?)['\"]?$/\1/")"
+#    local args=("${tokens[@]:1}")
+
+#    # Ausgabe zur Kontrolle
+#    echo "[MCS:Protein] Ausführbar: $cmd → ${args[*]}"
+
+#    # Ausführen, falls Command existiert
+#    if command -v "$cmd" >/dev/null 2>&1; then
+#        "$cmd" "${args[@]}"
+#    else
+#        echo "[MCS:Protein] Unbekannter Befehl: $cmd"
+#    fi
+#}
+
+## Vorversionen Sektion ##
+
+# MCS Protein Handler v0.4 inaktiv
+# Ruft passende Protein-Befehle auf
+
+#handle_protein() {
+#    local packet="$1"
+#    local -a tokens=()
+#
+#    # Tokenizer anwenden (Trennung nach |)
+#    tokenize_mcs "$packet" tokens
+#
+#    # Sicherheitscheck
+#    if [[ ${#tokens[@]} -eq 0 ]]; then
+#        echo "[MCS:Protein] Leeres Paket: $packet"
+#        return
+#    fi
+
+#    local cmd="${tokens[0]}"
+#    local args=("${tokens[@]:1}")
+
+#    # Ausgabe zur Kontrolle
+#    echo "[MCS:Protein] Ausführbar: $cmd → ${args[*]}"
+#
+#    # Ausführen, falls Command existiert
+#    if command -v "$cmd" >/dev/null 2>&1; then
+#        "$cmd" "${args[@]}"
+#    else
+#        echo "[MCS:Protein] Unbekannter Befehl: $cmd"
+#    fi
+#}
+
+## Vorversionen Sektion ##
+
+# MCS Protein Handler v0.3 inaktiv
+# Ruft passende Protein-Befehle auf
+
+#handle_protein() {
+#    local packet="$1"
+#    # Angepasstes Regex für bereits extrahierte Inhalte
+#    if [[ "$packet" =~ \'([a-zA-Z0-9_-]+)\'\|\"?(.*?)\"?$ ]]; then
+#        local cmd="${BASH_REMATCH[1]}"
+#        local arg="${BASH_REMATCH[2]}"
+#        echo "[MCS:Protein] Ausführbar: $cmd → $arg"
+#        $cmd "$arg"
+#    else
+#        echo "[MCS:Protein] Nicht ausführbar oder unvollständig: $packet"
+#    fi
+#}
+
+## Vorversionen Sektion ##
+
+# MCS Protein Handler v0.2 inaktiv
+# Ruft passende Protein-Befehle auf
+
+#source /Pylovara/MCSFramework/MCS.Tokenizer.Core
+
+#handle_protein() {
+#    local packet="$1"
+#    local -a tokens=()
+#    tokenize_mcs "$packet" tokens
+#    execute_protein "${tokens[@]}"
+#}
+
+## Vorversionen Sektion ##
+
+# MCS Protein Handler v0.1 inaktiv
+# Ruft passende Protein-Befehle auf
+
+#handle_protein() {
+#    local packet="$1"
+#    if [[ "$packet" =~ \[\'([a-zA-Z0-9_-]+)\'\|\\"?(.*?)\\"?\] ]]; then
+#        local cmd="${BASH_REMATCH[1]}"
+#        local arg="${BASH_REMATCH[2]}"
+#
+#        case "$cmd" in
+#            send) echo "[Protein] send → $arg" ;;
+#            open) xdg-open "$arg" >/dev/null 2>&1 ;;
+#            echo) echo "$arg" ;;
+#            *) echo "[Protein] Unbekannter Befehl: $cmd ($arg)" ;;
+#        esac
+#    else
+#        echo "[Protein] Nicht ausführbar oder unvollständig: $packet"
+#    fi
+#}

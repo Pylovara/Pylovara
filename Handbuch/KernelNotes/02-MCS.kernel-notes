@@ -1,16 +1,22 @@
-@kernel-nr: 02        ¶ (info: nutze kernel lex und kernelx 02-01)
+@kernel-nr: 02        # (info: nutze kernel lex und kernelx 02-01)
 ####################################################################
 
-1 . Einordnung Prototyp MCS (Maschinen Code Speech) Vers 1.7
+ Einordnung Prototyp MCS (Maschinen Code Speech) Vers 2.2
+            Dev Arbeitsblatt für nächste version
 
 ###############################################################
 
 ¢| |¢ Transaktionen  :
 
-Sorgen für die InputSendung aller arten und sind Sende und Empfang in gebündelten Packete , ohne Transaktion läuft keine Mitteilung oder Wird Empfangen , hier bei ist es egal ob das anfang wie ende der transaktion in einer eigenen zeile stehen oder in der selben .
+Sorgen für die InputSendung aller arten und sind Sende und Empfang
+in gebündelten Packete , ohne Transaktion läuft
+keine Mitteilung oder Wird Empfangen ,
+hier bei ist es egal ob das anfang wie ende der transaktion in einer
+eigenen zeile stehen oder in der selben .
 
 ¢|  TransAktion Anfang/Vorgang/Start der Bedingung/bedingten Blocks
 |¢  TransAktion Ende/Vorgang/Ende der Bedingung/bedingten Blocks
+
 
 ###############################################################
 
@@ -47,7 +53,7 @@ ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert oder angabe vers
 
 Wird typischerweise am Proteinpacket angehangen b.s ;
 
-¢| »['Lüfter'|{Watt|200}|««%50]« = §MotorA |¢
+¢| »['Lüfter'|{Watt|200}|«««%50]« = §MotorA |¢
 
 ###############################################################
 
@@ -90,7 +96,40 @@ Operatoren/Argumente/Feed sorgen
 
  usw , die möglichkeiten sind quasi unbegrenzt
 
-###############################################################
+####################################################################
+
+þ Checksume :
+
+Checksumen werden dazu verwendet Protein / Proton / Warps etc.
+innerhalb der Transaktion zu Nummerieren bzw eine eindeutige
+nummer zuzuweisen , die auch buchstaben und sonderzeichen erfasst
+für erhöhte sicherheits individualitäten ...
+
+Diese þ Checksumen werden Speziell bei Warp transporte dazu
+verwendet das sie fest ab dem punkt wo sie aus der MCS Syntax
+herausgleiten und die nächste Transaktion zurück gesendet wird
+um sie wieder dann heraus zu schicken , mit der selben checksume
+ausgestattet um kollisionen zu vermeiden und die eigenheiten der
+jeweiligen hardware devices in ihrem takt mühelos zuweisen zu können
+und dabei blind checksumen ohne weiteres zurücksenden oder ausgeben
+kann , jede checksume kann dann mit Visuellen , sound oder
+eingaben prozessen wie monitoring etc , mühelos in ein daten packet
+geschnürt werden , wo einzelne
+¢|Transaktionen|¢ per þ combiniert dann einen datensatz von mehreren
+schichten ergeben können ...
+
+beispiel  :
+
+¢| »["Hallo"|'echo']«
+{Wait-s|3}
+ømisc {
+  swallow_regex = ^(kitty)$
+  term = kitty
+  open = kitty
+}ø  = §kitty þ1623512
+|¢
+
+####################################################################
 
  [ ] Proteine :
 
@@ -107,11 +146,28 @@ irgendwas in den Protein Zelle als Operatoren mit gegeben ,
 was auch schluss endlich auch nur in Proteinpackete mit Operatoren
 Enden kann oder als Combination mit Proton(en) oder Warps .
 
-Beispiele :
+Beispiele mit Zielreferenz :
 
-¢| »["Hallo"|'echo']« = §/usr/bin/kitty |¢
-¢| »["Hallo"|'echo']« = §kitty |¢
-¢| »["Hallo"|'echo']« = §5436 |¢
+¢| »['echo'|"Hallo"]« = §/usr/bin/kitty |¢
+¢| »['echo'|"Hallo"]« = §kitty |¢
+¢| »['echo'|"Hallo"]« = §5436 |¢
+
+Beispiele ohne Zielreferenz :
+
+¢| »['run'|'dir'|/usr/bin/kitty|'write'|echo Hallo MCS User<3|'Enter']« |¢
+¢| »['run'|'dir'|/usr/bin/kitty|'echo'|"Hallo MCS User<3"|']« |¢
+¢| »['run'|kitty|'write'|echo Hallo|'enter’]« |¢
+
+oder
+
+¢| »['run'|kitty|'read'|(1)|'write'|øecho -n "Bitte geben Sie Ihren Namen ein: (1) "ø|'write'|(1)|'enter’|'echo'|"Hallo (1)"]« |¢
+
+oder
+
+¢| »['echo'|"Hallo"]« = §kitty $url://127.2.123.45:2345 Þ45637 |¢
+¢| »['echo'|"Hallo"]« øBash|...øWarp = §kitty Þ45637 |¢
+
+die spätere schreibweise wird eine frage des geschmackes sein und weniger eine performens frage
 
 ###############################################################
 
@@ -142,7 +198,7 @@ Müsste nur ein vollständiges register haben um die namens
 gebung zu definieren welches proton was trägt , kann
 beliebig erweitert werden und auch berechnet oder sogar
 später dem jeweiligen nutzer als eingabe software für die
-Configuration erstellt bzw geschrieben werden .
+Configuration erstellt bzw geschrieben werden , dies benötigt nur ein eintrag ins proton.syntax-register .
 
 ###############################################################
 
@@ -163,7 +219,7 @@ selben effeckt wie die internet MCS sprache haben
 Gleicher Effeckt mit Verschiedenen Umsetzungen :
 
 
-/ Protein Pure
+/ Protein Pure + Zielreferenz angabe
 
 ¢| »["Hallo"|'echo']« = §5436 |¢
 
@@ -171,6 +227,8 @@ Gleicher Effeckt mit Verschiedenen Umsetzungen :
 
 ¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
 
+Verständniss Info zu Zielreferenz =
+die zielreferenz angabe kann in MCS als Nummer Getaggt werden , diese wiederum kann dann verwendet werden um das terminal anzusprechen statts den namen oder url mit bin/exec/ datei anzusteuern
 
 / ølanguage|Codeø Warp alleine für Compositoren/Compiler
 
@@ -184,6 +242,59 @@ int main() {
     wurde
 }
 ø = §gcc |¢
+
+
+####################### Warp Anhang ################################
+####################################################################
+Anhang NR 01
+
+MCS-Transaktion mit Warp für C
+
+¢|                                      # Transaktion starten
+øC|                                     # Warp für C-Code
+#include <stdio.h>
+#include <iwlib.h>
+
+int main() {
+    wireless_config wconf;
+    int sock = iw_sockets_open();
+    if (iw_get_basic_config(sock, "wlan0", &wconf) < 0) {
+        return 1;
+    }
+    wconf.frequency = 2.4e9; // 2.4 GHz
+    if (iw_set_basic_config(sock, "wlan0", &wconf) < 0) {
+        return 1;
+    }
+    return 0;
+}
+ø = §gcc |              # Warp an Compiler (gcc) senden
+»[{Band|2.4G}§WLAN]«    # Protein: WLAN-Band auf 2.4G setzen
+= §(1)Displey           # Ergebnis(z. B. Erfolg/Fehler)an Display
+|¢                       # Transaktion beenden
+
+Interpretation:
+
+Der C-Code wird in einen Warp (øC|...ø) eingebettet und an
+§gcc gesendet, was bedeutet,dass MCS den Code kompiliert
+(oder interpretiert) und in Assembly-Binaries übersetzt.
+Das Protein [{Band|2.4G}§WLAN] ist die MCS-native Repräsentation
+der Aktion,die direkt die Hardware (WLAN-Interface) anspricht,
+über ein Kernel-Modul (*.needle). Der Feed §(1)Displey
+gibt das Ergebnis (z. B. Erfolg oder Fehler)
+an ein Display weiter, wie im Beispiel.
+MCS sendet die Symbolik ([{Band|2.4G}§WLAN])
+direkt an die Assembly,ohne Umrechnungsvariablen, was den Punkt
+über die direkte Assembly-Interaktion bestätigt.
+
+Vorschläge für die WLAN-Implementierung :
+
+¢|{Interface|wlan0}|{Action|set_band}|{Value|2.4G}|
+ø... C-Code ...ø
+ø = §gcc
+|¢
+Warp-Standardisierung: Definiert ein Standard-Format für C-Warps,
+Metadaten,die MCS mitteilen, welche :
+Zielreferenzen (§) oder Protonen ({}) angesprochen werden.
 
 ###############################################################
 
@@ -235,15 +346,39 @@ da feed immer mit der selben zahl , buchtstabe , code , symbole , im
 weiteren prozess oder Dirigent transaktionen sich gegenseitig findet ,
 wird immer das weitergegeben was gefeedet wurde , ganz gleich ob berechnet
 oder kalt hingeschrieben bzw programmiert .. so dient feed für viele zwecke
-außerhalb von ¶ ¶¶ ¶=;; usw ...
+außerhalb von ¶ ¶¶ ¶=;;⊕ usw ...
 
-###############################################################
+####################################################################
+
+⊕ Sync-timer ;
+
+kann als erweiterter Paraleller Transport verstanden werden
+der dazudient :
+
+Laufende Prozesse die Fehlerhaft Arbeiten per Live Reperatur
+flexibel mit einem Sync-timer zu taggen und dadurch direkte
+Reperaturen oder Fineabstimmungen vorzunehmen .
+
+es dient dazu laufende takt geber also Runner selbst im Betrieb
+mit Laufenden Prozesse umzuschreiben und duzende *.*-synctimer
+anzulegen die essentiell anders takten und sich nathlos in den
+laufenden prozess als weiterführende transaktionsschleife ,
+um den prozess weiterführen oder verändern zu können , am laufen halten
+
+sync-timer symbole in einem bestehenden code dienen als Einspeisung's
+moment und *.*-logic daten dienen als datensatz der eingespeißt
+werden soll oder als wechsel schicht , die wiederum auch als
+cache gehalten werden können .....
+
+####################################################################
 
  Wahreiten :
 
 Wahrheiten weitergeben mit mehrfach Auswahl oder Transporte
-ermöglichen wären einem gui Fenster aufruf.Ermöglicht granulare
+ermöglichen wären einem gui Fenster aufruf.
+Ermöglicht granulare
 paralell verarbeitungen wie hintergrund prozesse
+Ermöglicht einheitliche benennungen von  logiken als kontent , in MCS - Wahrheiten - Genannt .
 
  ~~ für Merge von mehreren Packets kann per () granuliert werden das
     genau
@@ -274,20 +409,75 @@ erfoderlich sind , gerade für Wahrheiten sehr Relevant
 ###############################################################
 
 Reihenfolge wenn das angesprochene System oder Browser die daten
-für eine reibungslose Übersetzung benötigt ist : 3
+für eine reibungslose Übersetzung benötigt ist : 7
 
 1. Transaktion Anfang
 2. Protein (das Proton mitliefern kann)
 3. Proton (das eigenständig hardware ansprechen kann)
 4. Warp (das für die übersetzung für Performenstechnische aspekte
-direkt in die jeweiligen compositor bzw Compiler eingespeißt wird)
+direkt in die jeweiligen compositor bzw Compiler eingespeißt wird
+aber im späteren verlauf eigentlich nur für eine abwärts kompaktibilität
+ab C sorgen wird , damit alte OS systeme mühelos übersetzt werden können)
 5. = Kennungswert
 6. Zielreferenz oder Dirigent
 7. Transaktion Ende
 
 ###############################################################
 
+SICHERHEITS Checks Laufen dann Grundsätzlich über MCS
 
+¢|                                      # Transaktion starten
+»[{Band|2.4G}§WLAN]«                   # Protein: WLAN-Band auf 2.4G setzen
+°WennNicht[{Band|2.4G}|{Valid|2.4G,5G}] # Sicherheitscheck: Nur 2.4G/5G erlaubt
+^TransaktionsFehler                    # Fehler bei ungültigem Band
+= §(1)Displey                          # Ergebnis an Display
+¶=                                     # Paralleler Prozess
+øC|                                    # Warp: C-Code für detaillierte Steuerung
+#include <iwlib.h>
+int main() {
+    wireless_config wconf;
+    int sock = iw_sockets_open();
+    wconf.frequency = 2.4e9;
+    iw_set_basic_config(sock, "wlan0", &wconf);
+    return 0;
+}
+ø = §gcc                               # Warp an gcc senden
+= §(1)                                 # Feed zurück an Display
+|¢                                      # Transaktion beenden
+Erklärung:
+
+Der Sicherheitscheck (°WennNicht) prüft, ob Band|2.4G gültig ist,
+und löst bei Fehler einen ^TransaktionsFehler aus.
+Der C-Warp wird kompiliert und in Assembly übersetzt,
+während das Protein [{Band|2.4G}§WLAN] direkt die Hardware anspricht.
+Der Feed §(1) synchronisiert Display-Ausgabe zwischen Protein und Warp.
+
+###############################################################
+
+ ŧ Pulsing
+
+Pulsing wird der beginn von Echtzeit daten abgleiche , die später
+oder direkt in die AI einfließen werden .
+
+Ähnlich wie der sync-timer kann er im qoute anker ansätzen die als
+start und endpunkt dienen und nur im doppelten paar aktiviert sind ,
+weil der anfang eines Pulsing ist beim nächsten ŧ das ende des Pulsing.
+
+Das Pulsing wird wird warscheinlich in einer combination mit Sql datenbanken
+implementiert , das sql datenbänks vollständig in MCS geschrieben für einen
+vermerk mit verknüpfungen sorgen wird , das nicht nur für das direkte lesen
+wie auch dem direkten schreiben von info logs , daten etc dienen wird .
+
+Sondern warscheinlich aufgrund seiner funktion der ai später das lernen
+vom gesehenen bilder wie ton und schrift wie code im wesentlichen als
+gegestand für jegliche verwendungszwecke verwendet werden kann .
+
+stichwort : Wissensaufbau/Ausbau/Konsumieren
+
+####################################################################
+####################### ENDE VON MCS ###############################
+####################################################################
+####################################################################
 
 
 

@@ -47,8 +47,8 @@ direkt zu adressieren.
 ####################################################################
 
 Rechenoperationen:
-Operatoren wie ««-, ««+, ««% ermöglichen Berechnungen, die in 
-Proteinpaketen mittransportiert werden, z.B. für Prozentanteile oder 
+Operatoren wie ««-, ««+, ««% ermöglichen Berechnungen, die am ende eines protein packetes
+mittransportiert werden, z.B. für Prozentanteile oder
 Schleifenlogiken.
 
 ####################################################################
@@ -119,7 +119,7 @@ kann es Potenziell viele Blackbox Compiler ersetzten
 und kann auch dank der Symbolischen Syntax zu erheblichen 
 LernBooster neigen , da die Syntax gut durchdacht ist
 und einem Baukasten Prinzip ähnelt , Lernzeit in etwa 
-3 Monate mit Granularer Steuerung .
+6-12 Monate mit Granularer Steuerung .
 
 ####################################################################
 Beispiel Code :

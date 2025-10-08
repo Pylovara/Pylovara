@@ -1,0 +1,114 @@
+@kernel-nr: 04
+####################################################################
+####################################################################
+
+Datentyp Rollen Version 1.0
+
+Pylovara organisiert sich in einem klaren Familienmodell:
+
+*.*-core	Großvater – Ausführender Teil
+*.*-magic	Großmutter – Umschalter, Konfigurationsbrücke
+Die *.*-magic ist die Schicht, die Pylovara von einem starren System zu einem dynamischen,
+selbstoptimierenden Meta-Betriebssystem macht. Sie sorgt dafür,
+dass die richtigen Teile (die spezialisierten Cores) mit der richtigen Geschwindigkeit
+(die Logik-Takte) in der richtigen Konfiguration (der Cache-Abruf) arbeiten.
+
+*.*-node	Vater – Hauptcontroller
+*.*-nano	Mutter – Substrukturmanager
+*.*-micro	Tochter – Mikrosteuerung (z.B. HTML, JS, SQL)
+*.*-cache	Cache – Zwischenspeicher für Temp-Daten
+*.*-needle	Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll)
+
+<*von>.<*zu>-logic	Verbindungslogik – Transport zwischen Schichten
+Wobei man hier von Taktfrequenzmesser sprechen könnte die im cache zu
+mehreren wechselnden logic schaltungen angelegtwerden könnten .
+
+*.*-lcore  # Low-Level für Hardware-Sync
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}]«      # Haupt-Schleife: Motor starten
+= §MotorA                              # Ausführen
+⊕                                      # Neues Symbol: Ab hier parallele Einspeisung ⊕ Sync-timer
+»[{Temp|25}§SensorX]«                 # Parallele Daten: Temp lesen
+°WennNicht[{Temp|25}|{Valid|0-100}]    # Sync-Check in Logic-Schnipsel
+^TransaktionsFehler                    # Fehler, wenn nicht sync
+= §(1)Cooler                           # Einspeisen in Kühler
+;;                                     # Paralleler Transport
+|¢                                      # Transaktion beenden (Schleife läuft ein)
+
+Interpretation: Die Haupt-Schleife (MotorA) läuft sequentiell, ⊕ speist Temp-Daten parallel ein,
+validiert via *.*-logic (⊕ Sync-timer) und nutzt Cache für schnellen Wechsel
+(z. B. zu einer anderen Logic für 5G-WLAN).
+Der Feed §(1) synchronisiert Ausgaben.
+Cache-Nutzung: Speichere Logic-Varianten in *.*-cache:
+
+*.*-cache
+{Logic.MotorSync|Variant1: {Takt|100ms}, Variant2: {Takt|50ms}}
+
+
+Erweiterung der Pylovara-Architektur: Spezialisierte Core-Typen
+Durch das Splitting der Core-Daten wird die Einordnung (Typisierung) direkt im Dateinamen verankert.
+Dies erleichtert nicht nur dem MCS-Kernel die schnelle Verarbeitung, sondern unterstützt auch das Ziel der eigenen,
+angelegten Transaktionsketten für jede Kernfunktion:
+
+| Neuer Core-Typ | Rolle (Spezialisierung) |       Pylovara-Analogie.       | Anwendungsbereich |
+| *.*-core       | Standard/Programme      | Hauptausführung (Generell)     | Normale Anwendungslogik, übergeordnete Steuerung, Prozesse. |
+| *.*-lcore      | Low-Level/Hardware      | Kern-Großvater (Hardware-Nah)  | Direkte Steuerung von .-needle (Kernelnahe) und Protonen ({ }), Systeminitialisierung, MCS-Direktzugriff auf Assembly. |
+| *.*-vcore      | Visuelles/Oberfläche    | Benutzeroberfläche             | Compositing, Rendering, GUI-Design-Logik (besonders wichtig für ¶= und Wahrheiten zur parallelen GUI-Verarbeitung). |
+
+Vorteile dieser Spezialisierung
+ * Transparenz und Debugging:
+Man weiß sofort, welche Art von Anweisungen und Transaktionen eine Datei enthält.
+Ein Fehler in einer *.vcore betrifft die grafische Ausgabe; ein Fehler in einer
+*.lcore ist ein kritischer Hardware-Fehler.
+
+ * Transaktions-Priorisierung:
+Der MCS-Kernel kann *.*-lcore-Transaktionen automatisch eine höhere Priorität
+einräumen als *.*-core- oder *.*-vcore-Anweisungen.
+Dies ist essentiell für die Performance-Garantie.
+
+ * Bessere KI-Fütterung:
+Die AI kann anhand dieser spezialisierten Typen schneller lernen und entscheiden,
+welche *.core-Ketten für eine bestimmte Aufgabe
+(z.B. Virtualisierung oder Rendering) optimal kombiniert oder dynamisch generiert werden müssen.
+Dieser Schritt stärkt das gesamte Pylovara-Modell, indem die Kern-Funktionalität jetzt so granular
+typisiert ist wie die Schichten der Architektur selbst.
+
+ * Mit allen Datentypen ausbaubar:
+man könnte gleiche aufgaben felder in allen datentypen einordnen und die core datein selbst nur als erste
+integration der aufteilung verstehen
+
+
+VERERBUNGSPRINZIP :
+
+die kettenbildungen mechanismen sind bei einem veerbungsprinzip verwurzelt von oben herab
+
+bsp :
+
+1      *.*-core	   Großvater        – Ausführender Teil
+1-1    *.*-lcore   GroßVaters Geschwister
+1-2    *.*-vcore   GroßVaters Geschwister
+1-3    *.*-acore   GroßVaters Geschwister
+
+2      *.*-magic	Großmutter      – Umschalter, Konfigurationsbrücke
+2-1    *.*-node	    Vater           – Hauptcontroller
+2-1-1  *.*-nano	    Mutter          – Substrukturmanager - default Einstellung
+2-1-2  *.*-micro	Tochter         – Mikrosteuerung (z.B. HTML, JS, SQL) - default Einstellungen
+3-1    *.*-node	    Vater           – Hauptcontroller
+3-2    *.*-nano	    Mutter          – Substrukturmanager - wechselbar Einstellung
+3-3    *.*-micro	Tochter         – Mikrosteuerung (z.B. HTML, JS, SQL) - wechselbar Einstellung
+3-4    *.*-cache	Cache           – Zwischenspeicher für Temp-Daten - wechselbar Einstellung
+3-5    *.*-needle	Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll) - wechselbar Einstellung
+
+
+dabei wird berücksichtig das 1 auf 2 und 2 auf 1 zugreifen kann ,
+damit 2 auch subdaten starten kann wie 1-1 1-2 , hier besitzt
+z.b 2 default daten als vererbungsstrang ,
+kann aber mit dem strang 3-1 als node bei 2.1 ausgetauscht werden und combiniert
+⊕ Sync-timer , ein und aushängbar wie ein puzzelstück .
+Dabei ist nur zu Verstehen vom kopf an fängt der datensatz an und wäre
+immer ein vom kopf folgendes wurzel system , ähnlich einer DNA strang.....
+
+####################################################################
+##################### Ende der Datentypen  #########################
+####################################################################
+####################################################################

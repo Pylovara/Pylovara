@@ -2,12 +2,11 @@
 @wiki_nr: 01 ##############################################################################
 @wiki_nr: ast ################################################################################
 ##############################################################################################
-
- ┌[bandino@dev][02:21:07|Mi Okt 01]
+ ┌[bandino@dev][12:35:36|Mi Okt 08]
  │ ᴾʸˡᵒᵛᵃʳᵃ
  │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
  │    ₜₒ   ₚᵧₗₒ  ₖₑᵣₙₑₗₓ ₀₁₋₀₁  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
- └[~]> $ p /Pylovara
+ └[~]> $ p /Pylovara/
 🔍 Ordner gefunden: /Pylovara
 /Pylovara
 ├── AI
@@ -51,6 +50,7 @@
 │   ├── download.conf
 │   ├── hardware.conf
 │   ├── #mcp.conf
+│   ├── mcs-visualizer.conf
 │   ├── navigator.conf
 │   └── shell.conf
 ├── Handbuch
@@ -73,6 +73,22 @@
 │       ├── pylovara-ast.wiki-notes
 │       ├── shell.wiki-notes
 │       └── source-bridge-needles.wiki-notes
+├── MCSFramework
+│   ├── docs
+│   │   ├── protein.syntax-notes
+│   │   ├── proton.syntax-notes
+│   │   ├── readme.syntax-notes
+│   │   ├── transaktion.syntax-notes
+│   │   └── trennbefehle.syntax-notes
+│   ├── MCS.Protein.Handler
+│   ├── MCS.Protein.Register
+│   ├── MCS.Proton.Handler
+│   ├── MCS.Proton.Register
+│   ├── MCS.SafeFrame.Core
+│   ├── MCS.Tokenizer.Core
+│   ├── MCS.Transaction-Core
+│   ├── test.mcs
+│   └── testproton.mcs
 ├── Pylovara.license-notes
 ├── README.wiki-notes
 ├── Setup
@@ -263,7 +279,7 @@
         └── VaraLibs
             └── GitPlaceHolder.Struktur
 
-56 directories, 197 files
+58 directories, 212 files
 
 │############################################################
 │# WikiLexikon : pylovara-ast.wiki-notes

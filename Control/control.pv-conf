@@ -44,7 +44,9 @@ source "$MASTER_DIR/callme.conf"
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
 parse_conf "$MASTER_DIR/datatypes.conf"
-source "/Pylovara/MCSFramework/mcs-visualizer.conf"
+
+### MCS Syntax-Highlighting
+source "$MASTER_DIR/mcs-visualizer.conf"
 ##############################################################################
 ### SYSTEMALIASE Sektion
 

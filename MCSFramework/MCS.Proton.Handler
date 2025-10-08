@@ -1,0 +1,137 @@
+#!/usr/bin/env bash
+# Modul: MCS.Protein.Handler
+# Version: 0.4 Aktiv
+# Autor: pylovara.ai
+# Zweck: Erkennung und Ausführung von Proteinen innerhalb einer Transaktion
+# Neu : Register-Check für MCS.Proton.Register v0.1 in /Pylovara/MCSFramework/MCS.Proton.Register
+
+parse_proton() {
+    local token="$1"
+    [[ "$token" =~ ^\{(.*)\}$ ]] || return
+
+    local inner="${BASH_REMATCH[1]}"
+    IFS='|' read -r -a parts <<< "$inner"
+
+    local name="${parts[0]}"
+    local value="${parts[1]}"
+
+    echo "[MCS:Proton] erkannt → Name=$name | Wert=$value"
+
+    # NEU: Register-Abfrage (setzt voraus, dass PROTON_REG geladen wurde)
+    if [[ -z "${PROTON_REG[$name]}" ]]; then
+        echo "[MCS:Proton] Unbekannter Proton-Typ: $name"
+        return 1
+    fi
+    # ENDE NEU
+
+    case "$name" in
+        Wait-s)
+            echo "[MCS:Proton] Sleep ${value}s..."
+            sleep "$value"
+            ;;
+        Signed)
+            echo "[MCS:Proton] Signatur-ID: ${value}"
+            ;;
+    esac
+}
+
+
+
+
+## Vorversionen Sektion ##
+# Version: 0.3 inaktiv
+# Neu : Sauber isoliert, kein Eingriff in globale Arrays oder shift
+
+#parse_proton() {
+#    local token="$1"
+#    [[ "$token" =~ ^\{(.*)\}$ ]] || return
+
+#    local inner="${BASH_REMATCH[1]}"
+#    IFS='|' read -r -a parts <<< "$inner"
+
+#    local name="${parts[0]}"
+#    local value="${parts[1]}"
+
+#    echo "[MCS:Proton] erkannt → Name=$name | Wert=$value"
+
+#    case "$name" in
+#        Wait-s)
+#            echo "[MCS:Proton] Sleep ${value}s..."
+#            sleep "$value"
+#            ;;
+#        Signed)
+#            echo "[MCS:Proton] Signatur-ID: ${value}"
+#            ;;
+#    esac
+#}
+
+## Vorversionen Sektion ##
+# Version: 0.2 inaktiv
+
+#source ./MCS.Proton.Handler
+
+#handle_protein() {
+#    local cmd="$1"
+#    shift
+#    local args=("$@")
+
+#    echo "[MCS:Protein] erkannt → $cmd ${args[*]}"
+
+#    for arg in "${args[@]}"; do
+#        # Delegiere Proton-Erkennung
+#        parse_proton "$arg"
+#    done
+
+#    # Normale Protein-Logik bleibt
+#    case "$cmd" in
+#        echo|text)
+#            echo "${args[*]}"
+#            ;;
+#        send)
+#            echo "[MCS] Sendevorgang → ${args[*]}"
+#            ;;
+#        run)
+#            echo "[MCS] Starte Prozess → ${args[*]}"
+#            ;;
+#        *)
+#            echo "[MCS] Unbekanntes Protein: $cmd"
+#            ;;
+#    esac
+#}
+
+## Vorversionen Sektion ##
+# Version: 0.1 inaktiv
+
+#parse_proton() {
+#    local token="$1"
+
+#    # Nur Proton-Syntax {Name|Wert|...} verarbeiten
+#    if [[ "$token" =~ ^\{.*\}$ ]]; then
+#        local inner="${token#\{}"
+#        inner="${inner%\}}"
+
+#        IFS='|' read -r -a parts <<< "$inner"
+#        local name="${parts[0]}"
+#        local value="${parts[1]}"
+#        local extra="${parts[2]}"
+
+#        echo "[MCS:Proton] erkannt → Name: $name | Wert: $value | Extra: $extra"
+
+#        # Beispielreaktionen (später semantisch)
+#        case "$name" in
+#            Wait-s)
+#                echo "[MCS:Proton] Warte ${value}s..."
+#                sleep "${value}"
+#                ;;
+#            Signed)
+#                echo "[MCS:Proton] Signatur-ID: ${value}"
+#                ;;
+#            Encrypt)
+#                echo "[MCS:Proton] Verschlüsselungsmodus: ${value}"
+#                ;;
+#            *)
+#                echo "[MCS:Proton] Unbekannter Proton-Typ: ${name}"
+#                ;;
+#        esac
+#    fi
+#}

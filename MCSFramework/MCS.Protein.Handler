@@ -1,53 +1,127 @@
 #!/usr/bin/env bash
-# MCS Protein Handler v0.7 aktiv
-# Ruft passende Protein-Befehle auf
+# MCS Protein Handler v0.9 aktiv
+# Ruft passende Protein-Befehle auf (demonstrativ noch)
+# Neu : Register-Abfrage von MCS.Protein.Register in /Pylovara/MCSFramework/MCS.Protein.Register
 
-handle_protein() {
+handle_protein_packet() {
     local packet="$1"
     local -a tokens=()
-
-    # Zuerst die äußeren »[ ... ]« entfernen
-    packet="${packet#»[}"
-    packet="${packet%]«}"
-
-    # Tokenizer anwenden (Trennung nach |)
     tokenize_mcs "$packet" tokens
 
-    # Sicherheitscheck
-    if [[ ${#tokens[@]} -eq 0 ]]; then
-        echo "[MCS:Protein] Leeres Paket: $packet"
+    [[ ${#tokens[@]} -eq 0 ]] && {
+        echo "[MCS:Protein] Leeres Paket."
         return
+    }
+
+    local cmd="${tokens[0]//[\'\"]}"
+    local args=("${tokens[@]:1}")
+
+    # NEU: Register-Abfrage
+    if [[ -z "${PROTEIN_REG[$cmd]}" ]]; then
+        echo "[MCS] Fehler: Unbekannter Befehl '$cmd' (Nicht im Protein-Register)."
+        return 1
     fi
+    # ENDE NEU
 
-    # Command und Argumente sauber trimmen (robust gegen Mischzeichen)
-    local cmd="${tokens[0]}"
-    cmd="${cmd//\"/}"
-    cmd="${cmd//\'/}"
-    cmd="${cmd// /}"
+    echo "[MCS:Protein] erkannt → $cmd"
 
-    local args=()
-    for i in "${tokens[@]:1}"; do
-        local clean="${i//\"/}"
-        clean="${clean//\'/}"
-        args+=("$clean")
+    for arg in "${args[@]}"; do
+        if [[ "$arg" =~ ^\{.*\}$ ]]; then
+            parse_proton "$arg"
+        else
+            echo "[MCS:Protein] Argument: $arg"
+        fi
     done
 
-    # Kontrolle
-    echo "[MCS:Protein] Ausführbar: $cmd → ${args[*]}"
-
-    # Ausführen
-    if command -v "$cmd" >/dev/null 2>&1; then
-        "$cmd" "${args[@]}"
-    else
-        echo "[MCS:Protein] Unbekannter Befehl: $cmd"
-    fi
+    # Befehlsausführung (nur demonstrativ)
+    case "$cmd" in
+        echo) echo "${args[*]}" ;;
+        run)  echo "[MCS] Starte ${args[*]}" ;;
+        *)    echo "[MCS] Unbekannter Proteinbefehl: $cmd" ;;
+    esac
 }
 
+## Vorversionen Sektion ##
+# MCS Protein Handler v0.8 inaktiv
+# Ruft passende Protein-Befehle auf
+
+#handle_protein_packet() {
+#    local packet="$1"
+#    local -a tokens=()
+#    tokenize_mcs "$packet" tokens
+
+#    [[ ${#tokens[@]} -eq 0 ]] && {
+#        echo "[MCS:Protein] Leeres Paket."
+#        return
+#    }
+
+#    local cmd="${tokens[0]//[\'\"]}"
+#    local args=("${tokens[@]:1}")
+
+#    echo "[MCS:Protein] erkannt → $cmd"
+
+#    for arg in "${args[@]}"; do
+#        if [[ "$arg" =~ ^\{.*\}$ ]]; then
+#            parse_proton "$arg"
+#        else
+#            echo "[MCS:Protein] Argument: $arg"
+#        fi
+#    done
+
+#    # Befehlsausführung (nur demonstrativ)
+#    case "$cmd" in
+#        echo) echo "${args[*]}" ;;
+#        run)  echo "[MCS] Starte ${args[*]}" ;;
+#        *)    echo "[MCS] Unbekannter Proteinbefehl: $cmd" ;;
+#    esac
+#}
 
 ## Vorversionen Sektion ##
+# MCS Protein Handler v0.7 inaktiv
 
+#handle_protein() {
+#    local packet="$1"
+#    local -a tokens=()
+
+#    # Zuerst die äußeren »[ ... ]« entfernen
+#    packet="${packet#»[}"
+#    packet="${packet%]«}"
+
+#    # Tokenizer anwenden (Trennung nach |)
+#    tokenize_mcs "$packet" tokens
+
+#    # Sicherheitscheck
+#    if [[ ${#tokens[@]} -eq 0 ]]; then
+#        echo "[MCS:Protein] Leeres Paket: $packet"
+#        return
+#    fi
+
+#    # Command und Argumente sauber trimmen (robust gegen Mischzeichen)
+#    local cmd="${tokens[0]}"
+#    cmd="${cmd//\"/}"
+#    cmd="${cmd//\'/}"
+#    cmd="${cmd// /}"
+
+#    local args=()
+#    for i in "${tokens[@]:1}"; do
+#        local clean="${i//\"/}"
+#        clean="${clean//\'/}"
+#        args+=("$clean")
+#    done
+
+#    # Kontrolle
+#    echo "[MCS:Protein] Ausführbar: $cmd → ${args[*]}"
+#
+#    # Ausführen
+#    if command -v "$cmd" >/dev/null 2>&1; then
+#        "$cmd" "${args[@]}"
+#    else
+#        echo "[MCS:Protein] Unbekannter Befehl: $cmd"
+#    fi
+#}
+
+## Vorversionen Sektion ##
 # MCS Protein Handler v0.6 inaktiv
-# Ruft passende Protein-Befehle auf
 
 #handle_protein() {
 #    local packet="$1"
@@ -86,9 +160,7 @@ handle_protein() {
 
 
 ## Vorversionen Sektion ##
-
 # MCS Protein Handler v0.5 inaktiv
-# Ruft passende Protein-Befehle auf
 
 #handle_protein() {
 #    local packet="$1"
@@ -118,9 +190,7 @@ handle_protein() {
 #}
 
 ## Vorversionen Sektion ##
-
 # MCS Protein Handler v0.4 inaktiv
-# Ruft passende Protein-Befehle auf
 
 #handle_protein() {
 #    local packet="$1"
@@ -150,9 +220,7 @@ handle_protein() {
 #}
 
 ## Vorversionen Sektion ##
-
 # MCS Protein Handler v0.3 inaktiv
-# Ruft passende Protein-Befehle auf
 
 #handle_protein() {
 #    local packet="$1"
@@ -168,9 +236,7 @@ handle_protein() {
 #}
 
 ## Vorversionen Sektion ##
-
 # MCS Protein Handler v0.2 inaktiv
-# Ruft passende Protein-Befehle auf
 
 #source /Pylovara/MCSFramework/MCS.Tokenizer.Core
 

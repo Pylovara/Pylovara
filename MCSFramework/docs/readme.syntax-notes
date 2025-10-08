@@ -1,10 +1,16 @@
-## dient als Test
+@readme.syntax-notes: MCS 2.1
+@version: 0.2
+@doc: Dev Test Erklärung
+@ziel: Nachlesen , austesten
 
+Test Proof Of Cocept
 
-echo "¢|" > test.mcs
-echo "»['echo'|"Hallo Welt"]«" >> test.mcs
-echo "|¢" >> test.mcs
-bash MCS.Transaction-Core test.mcs
+## dient als Test (verständniss)
+
+# echo "¢|" > test.mcs
+# echo "»['echo'|"Hallo Welt"]«" >> test.mcs
+# echo "|¢" >> test.mcs
+# bash MCS.Transaction-Core test.mcs
 
 
 gehe per Pylovara System direkt in das Verzeichnis
@@ -34,11 +40,16 @@ beispiel von meinem Terminal :
 Hallo Welt
 
 
-, du kannst auch gern die dokumentations reihe durchschauen in den docs
-oder gleich per Terminal (Vorzugsweise Kitty) erstmal den ganzen daten strang ansehen
+, du kannst auch gern die dokumentations reihe durchschauen in den
+docs oder gleich per Terminal (Vorzugsweise Kitty) erstmal den ganzen
+daten strang ansehen .
 
-cat docs/Protein_Syntax.notes docs/Transaktion_Syntax.notes docs/Trennbefehle_Schicht.notes MCS.Protein.Handler MCS.Tokenizer.Core MCS.Transaction-Core test.mcs docs/testcode_shell.notes
+cat docs/protein.syntax-notes docs/transaktion.syntax-notes docs/trennbefehle.syntax-notes MCS.Protein.Handler MCS.Protein.Register MCS.Proton.Handler MCS.Proton.Register MCS.Tokenizer.Core MCS.Transaction-Core MCS.SafeFrame.Core test.mcs testproton.mcs
 
+# test packete
+
+bash MCS.Transaction-Core test.mcs
+bash MCS.Transaction-Core testproton.mcs
 ###########################################################
 
 Letztes Wort vom Pylovara Dev :

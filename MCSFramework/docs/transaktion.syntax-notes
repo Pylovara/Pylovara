@@ -1,4 +1,8 @@
-## Transaktions-Syntax 0.2 aus MCS 2.1 definiert
+@transaktion.syntax-notes: MCS 2.1
+@version: 0.2
+@doc: Transaktion Syntax für Maschinen Code Speech Framework
+@ziel: Definition des transaktionsmusters
+
 
 ¢| |¢ Transaktionen  :
 
@@ -6,6 +10,7 @@ Sorgt für die InputSendung aller arten und sind Sende und Empfang
 Packete , ohne Transaktion läuft keine Mitteilung oder Wird Empfangen ,
 hierbei ist es egal ob das anfang wie ende der transaktion in einer
 eigenen zeile stehen oder in der selben .
+
 
 ¢|  TransAktion Anfang/Vorgang/Start , der Bedingung/bedingten Blocks
 |¢  TransAktion Ende/Vorgang/Ende  , der Bedingung/bedingten Blocks
@@ -28,11 +33,11 @@ den start oder endpunkt der transaktion ...
 ¢| <- ist der start der TransAktion
 |¢ <- ist das ende der TransAktion
 
-der Trennbefehl selbst sollte wissen das der trennbefehl im transaktions muster kein Trennbefehl ist sondern
-lediglich den anfang und ende der transaktion selbst definiert , ein ¢ ohne | ist kein startpunkt und ein | oder ¢ ist kein endpunkt .
+der Trennbefehl selbst sollte wissen das der trennbefehl im transaktionsmuster
+kein Trennbefehl ist sondern lediglich den anfang und ende der transaktion selbst
+definiert , ein ¢ ohne | ist kein startpunkt und ein | ohne ¢ ist kein endpunkt .
 
 wichtiger hinweis für den trennbefehl handler MCS.Tokenizer.Core
 
 weitere Quelle für trennbefehle :
-Trennbefehle_Schicht.notes
-
+trennbefehle.syntax-notes

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# MCS.Proton.Register v0.1
+
+declare -A PROTON_REG
+PROTON_REG[Wait-s]="ACTION_SLEEP"
+PROTON_REG[Signed]="METADATA_ID"
+PROTON_REG[Temp]="SENSOR_READ"
+PROTON_REG[Band]="NETWORK_CONFIG"

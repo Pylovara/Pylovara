@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# Pylovara MCS Transaction Handler + Protein Interpreter (v0.5)
+# Pylovara MCS Transaction Handler + Protein Interpreter  (v0.7)
 
 TX_START="¢|"
 TX_END="|¢"
 TX_ACTIVE=0
 declare -a TX_CONTENT=()
 
+source /Pylovara/MCSFramework/MCS.SafeFrame.Core
 source /Pylovara/MCSFramework/MCS.Tokenizer.Core
 source /Pylovara/MCSFramework/MCS.Protein.Handler
 
@@ -25,10 +26,10 @@ process_transaction() {
     local lines=("$@")
     for line in "${lines[@]}"; do
         # Erkennung von ausführbaren Protein-Paketen: »[ ... ]«
-        if [[ "$line" =~ »\[(.*)\]\« ]]; then
-            local content="${BASH_REMATCH[1]}"
-            handle_protein "$content"
-        fi
+    if [[ "$line" =~ »\[(.*)\]\« ]]; then
+        local content="${BASH_REMATCH[1]}"
+        handle_protein_packet "$content"
+    fi
     done
 }
 
@@ -42,4 +43,51 @@ while IFS= read -r line; do
     fi
     [[ $TX_ACTIVE -eq 1 ]] && TX_CONTENT+=("$line")
 done < "${1:-/dev/stdin}"
+
+
+## Vorversionen Sektion ##
+# Pylovara MCS Transaction Handler + Protein Interpreter v0.6) inaktiv
+
+#TX_START="¢|"
+#TX_END="|¢"
+#TX_ACTIVE=0
+#declare -a TX_CONTENT=()
+
+#source /Pylovara/MCSFramework/MCS.SafeFrame.Core
+#source /Pylovara/MCSFramework/MCS.Tokenizer.Core
+#source /Pylovara/MCSFramework/MCS.Protein.Handler
+
+#start_transaction() {
+#    TX_ACTIVE=1
+#    TX_CONTENT=()
+#}
+#end_transaction() {
+#    TX_ACTIVE=0
+#    echo "=== Transaction abgeschlossen ==="
+#    printf "%s\n" "${TX_CONTENT[@]}"
+#    process_transaction "${TX_CONTENT[@]}"
+#    TX_CONTENT=()
+#}
+
+#process_transaction() {
+#    local lines=("$@")
+#    for line in "${lines[@]}"; do
+#        # Erkennung von ausführbaren Protein-Paketen: »[ ... ]«
+#        if [[ "$line" =~ »\[(.*)\]\« ]]; then
+#            local content="${BASH_REMATCH[1]}"
+#            handle_protein "$content"
+#        fi
+#    done
+#}
+
+## Zeilen-Scanner
+#while IFS= read -r line; do
+#    if [[ "$line" == "$TX_START"* ]]; then
+#        start_transaction; TX_CONTENT+=("$line"); continue
+#    fi
+#    if [[ "$line" == *"$TX_END" ]]; then
+#        TX_CONTENT+=("$line"); end_transaction; continue
+#    fi
+#    [[ $TX_ACTIVE -eq 1 ]] && TX_CONTENT+=("$line")
+#done < "${1:-/dev/stdin}"
 

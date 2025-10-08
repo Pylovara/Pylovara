@@ -1,4 +1,8 @@
-## Protein-Syntax 0.4 aus MCS 2.1 gesamt definiert
+@protein.syntax-notes: MCS 2.1
+@version: 0.4
+@doc: Protein Syntax für Maschinen Code Speech Framework
+@ziel: Definition der Protein`e
+
 
 [ ] Proteine :
 
@@ -10,15 +14,16 @@ Operatoren mitgeben die nach einem Trennbefehl vorhanden sind :
 ¨¨     Blanker Nenner , Das ist , Richtig , abgleich
        Einfache eingaben ohne etwas
 
-Sie werden in Print , Commando , Blanker Nenner den Protein Zelle als Operatoren mit gegeben ,
-was auch schluss endlich auch nur in Proteinpackete mit Operatoren
-Enden kann oder als Combination mit Proton(en) oder Warps .
+Sie werden in Print , Commando , Blanker Nenner den Protein Zelle
+als Operatoren mit gegeben , was auch schluss endlich auch nur in
+Proteinpackete mit Operatoren Enden kann oder als Combination mit
+Proton(en) oder Warps .
 
-# Protein Packete Definiert nicht ausführbar
+# Protein Packete Definiert (nicht ausführbar)
 
 []
 
-# Protein Packete Definiert ausführbar
+# Protein Packete Definiert (ausführbar)
 
 »[]«
 
@@ -29,7 +34,10 @@ Enden kann oder als Combination mit Proton(en) oder Warps .
 »['run'|Firefox|'open'|Search|'search'|"Pylovara Github"|'Enter']«
 »['sendordner'|/Pylovara/Hanbuch|'to'|~/Dokumente'|'bestätigen'|'text'|"bestätigen? y/n"|'eingabe']
 
-# Protein Command Liste :
+# was aktuell funktioniert :
+»['echo'|"Hallo Welt"]«
+
+# Protein Command Liste (zuckunft):
 
 'bestätigen'        = rückmeldung des Admins per internen passwort oder Yes/No bestätigungen
 

@@ -8,7 +8,10 @@ declare -a TX_CONTENT=()
 
 source /Pylovara/MCSFramework/MCS.SafeFrame.Core
 source /Pylovara/MCSFramework/MCS.Tokenizer.Core
+source /Pylovara/MCSFramework/MCS.Protein.Register
 source /Pylovara/MCSFramework/MCS.Protein.Handler
+source /Pylovara/MCSFramework/MCS.Proton.Register
+source /Pylovara/MCSFramework/MCS.Proton.Handler
 
 start_transaction() {
     TX_ACTIVE=1

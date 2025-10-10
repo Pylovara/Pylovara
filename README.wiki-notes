@@ -5,7 +5,8 @@
                     MCS 2.1 in /Hanbuch/Wiki mcs.wiki.notes verpackt
                     Datentyp Version 1.0
                     MCSFramework Proof of Concept über Bash
-
+                    'to' ausgabe untereinander geliedert
+                    Aktualisierung von wiki-notes
 
 ################################################################################
 ################################################################################
@@ -84,14 +85,14 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 - Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
 - Ermöglicht tiefste Systemintegration ohne externe Frameworks
 
- Modular & Erweiterbar
+ Modular & Erweiterbar (in der entwicklung)
 - Struktur basiert auf *Core - Magic - Nodes - Nano - Micro - Needles - Logic*
 - Neue Module können ohne Kernänderung hinzugefügt werden
 - Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
 
 ################################################################################
 
- Wer Brauch schon PDFs
+ Wer Brauch schon PDFs (wird immer wieder mal geupdatet)
 
     helpme 01      # Übersicht aller Module
     helpmex 04-02  # Wie du die KI austauschbar machst
@@ -113,10 +114,10 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 
 Version 0.7 (Architektur) / 1.9 (MCS)
 
-Dieses Dokument beschreibt die Architektur von Pylovara (Version 0.7) sowie das Konzept der
+Dieses Dokument beschreibt die Architektur von Pylovara (Version 2.5.0) sowie das Konzept der
 MCS-Syntax (Version 1.9). Es dient als Snapshot der aktuellen Entwicklungsstufe und bildet die
 Grundlage für zukünftige Versionen.
-1. Architektur (Pylovara 0.7)
+1. Architektur (Version 2.5.0)
 Pylovara organisiert sich in einem klaren Familienmodell mit Vererbungsprinzip. Die wichtigsten
 Datentypen und Rollen sind wie folgt definiert:
 Typ Rolle Analogie Anwendungsbereich
@@ -134,7 +135,7 @@ Die Kettenbildungsmechanismen sind bei einem Vererbungsprinzip verwurzelt. Dabei
 *.*-core und *.*-magic auf Substrukturen (nano, micro, cache, needle) zu. Dies schafft ein von oben
 nach unten vererbtes Datenmodell, das flexible Steuerung erlaubt.
 
-Beispielcode: Motorsteuerung
+Beispielcode: Motorsteuerung (Muster)
 
 ¢| »['MotorA'|{Watt|200}|{Volt|12}]« = §MotorA ⊕ »[{Temp|25}§SensorX]«
 °WennNicht[{Temp|25}|{Valid|0-100}] ^TransaktionsFehler = §(1)Cooler ;; |¢
@@ -229,7 +230,7 @@ mit oder ohne GUI-Maskottchen. Nur dich, deine Befehle und dein System.
                                 Impressum Infos
 
 Detaliertere infos zur aktuellen umsetzungsart wie auch der fokus
-werden hier weiter erklärt : Arbeitsblatt.dev-note
+werden hier weiter erklärt : Arbeitsblatt.dev-note , die ins Native führen sollen
 
 
 Mitarbeiter in sache binärübersetzung der MCS syntax werden Potenziel

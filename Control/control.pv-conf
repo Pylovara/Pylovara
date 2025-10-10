@@ -34,9 +34,10 @@ alias qwen='/Pylovara/AI/ollama/bin/ollama run qwen3:0.6b'
 alias deepseek='/Pylovara/AI/ollama/bin/ollama run deepseek-r1:1.5b'
 alias gemma='/Pylovara/AI/ollama/bin/ollama run gemma3:1b'
 
+### Info : Später wird ChatGPT als Kern verwendet
+
 ##############################################################################
 ### Master-Input - control.pv-conf
-
 source "$MASTER_DIR/shell.conf"
 source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
@@ -47,6 +48,10 @@ parse_conf "$MASTER_DIR/datatypes.conf"
 
 ### MCS Syntax-Highlighting
 source "$MASTER_DIR/mcs-visualizer.conf"
+
+### Hyprland Desktop
+source "/Pylovara/Control/desktop.conf"
+
 ##############################################################################
 ### SYSTEMALIASE Sektion
 

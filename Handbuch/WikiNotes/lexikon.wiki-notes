@@ -13,7 +13,7 @@
 
 lex  Lexikon                  # helpme     | lexikon
 00   Fallback                 # helpme     | Parser
-01   Ast                      # MAIN  AST  | Übersicht
+# 01   Ast                      # MAIN  AST  | Übersicht
 02   module                   # Erklärung  | FULL
 03   guide                    # Funktionen | Full
 04   control                  # Übersicht  | Kommentiert
@@ -22,17 +22,17 @@ lex  Lexikon                  # helpme     | lexikon
 07   MCS                      # Erklärungen| Beispiele
 08   AI			      # Start Info | Kontrolle
 
-#################### Info Module ###########################
+#################### Info Guide ###########################
 # Help Me Deluxe - helpmex
 
 # Guide :
-01-01 helpme                  # Full Ansicht
-01-02 helpmex                 # gewollte Zeilen
-01-03 p                       # Zielgesetzte Ansicht
-01-04 pylo                    # SysBranding (buggy)
-01-05 dna                     # SysBranding 
-01-06 to                      # SysBranding 
-01-07 callme                  # Ausführbares Suchen
+03-01 helpme                  # Full Ansicht
+03-02 helpmex                 # gewollte Zeilen
+03-03 p                       # Zielgesetzte Ansicht
+03-04 pylo                    # SysBranding (buggy)
+03-05 dna                     # SysBranding
+03-06 to                      # SysBranding
+03-07 callme                  # Ausführbares Suchen
 
 #################### Info Zentrale ##########################
 

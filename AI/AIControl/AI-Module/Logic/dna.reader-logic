@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# ──── wiki.reader-logic ───────────────────────────────────────────────
+# ──── dna.reader-logic ───────────────────────────────────────────────
 # TYPE: verhaltens-logic
-# NAME: wiki-reader
+# NAME: dna-reader
 # VERSION: 0.1
 # FOKUS: Durchsuchung & Anzeige von *.wiki-notes Dateien
 # ──────────────────────────────────────────────────────────────────────
 
-WIKI_DIR="/Pylovara/Handbuch/WikiNotes/"
+DNA_DIR="/Pylovara/Handbuch/DnaNotes/"
 
 prompt_user() {
   local answer
@@ -14,23 +14,23 @@ prompt_user() {
   [[ "$answer" == "y" ]]
 }
 
-search_wiki() {
-  echo "[*] Bitte gib ein Suchwort für die .wiki-notes ein:"
+search_dna() {
+  echo "[*] Bitte gib ein Suchwort für die .dna-notes ein:"
   read -rp ">> " query
-  echo "[*] Suche nach: $query in $WIKI_DIR ..."
+  echo "[*] Suche nach: $query in $DNA_DIR ..."
 
-  grep -rin --color=always "$query" "$WIKI_DIR"
+  grep -rin --color=always "$query" "$DNA_DIR"
 }
 
 show_filelist() {
-  echo "[*] Verfügbare .wiki-notes:"
-  find "$WIKI_DIR" -type f -name "*.wiki-notes"
+  echo "[*] Verfügbare .dna-notes:"
+  find "$DNA_DIR" -type f -name "*.dna-notes"
 }
 
 choose_file_to_view() {
   echo "[*] Datei anzeigen? (vollständiger Pfad eingeben)"
   read -rp ">> " file
-  if [[ -f "$file" && "$file" == *.wiki-notes ]]; then
+  if [[ -f "$file" && "$file" == *.dna-notes ]]; then
     if prompt_user ">> Datei anzeigen: $file?"; then
       less "$file"
     else
@@ -44,18 +44,18 @@ choose_file_to_view() {
 main_loop() {
   while true; do
     echo ""
-    echo "[wiki.reader] Optionen:"
-    echo "1) Suche in .wiki-notes"
-    echo "2) Liste der .wiki-notes anzeigen"
+    echo "[dna.reader] Optionen:"
+    echo "1) Suche in .dna-notes"
+    echo "2) Liste der .dna-notes anzeigen"
     echo "3) Datei ansehen"
     echo "4) Beenden"
     read -rp ">> Auswahl: " choice
 
     case "$choice" in
-      1) search_wiki ;;
+      1) search_dna ;;
       2) show_filelist ;;
       3) choose_file_to_view ;;
-      4) echo "[*] wiki.reader ENDE."; break ;;
+      4) echo "[*] dna.reader ENDE."; break ;;
       *) echo "[!] Ungültige Auswahl." ;;
     esac
   done

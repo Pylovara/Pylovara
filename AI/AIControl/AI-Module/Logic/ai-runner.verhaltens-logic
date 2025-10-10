@@ -2,7 +2,7 @@
 # ──── ai-runner.verhaltens-logic ────────────────────────────────────────────
 # TYPE: verhaltens-logic
 # NAME: ai-runner
-# VERSION: 0.1
+# VERSION: 0.2
 # MODE: Text <CMD> Shell <CMDQUIT> Text
 # ZWECK: Startet beliebiges KI-Modell und aktiviert Eingabe-Logik
  ────────────────────────────────────────────────────────────────────────────
@@ -11,8 +11,9 @@
 KI_MODEL="${1:-phi4-mini}"  # Standard = phi4-mini, aber über Argument überschreibbar
 
 AI_MODULES=(
-  "/Pylovara/AI/AIControl/Modules/Logic/wiki-reader-logic"
-  "/Pylovara/AI/AIControl/Modules/Logic/andere-module.sh"
+  "/Pylovara/AI/AIControl/AI-Module/Logic/wiki-reader-logic"
+  "/Pylovara/AI/AIControl/AI-Module/Logic/kernel-reader-logic"
+  "/Pylovara/AI/AIControl/AI-Module/Logic/dna-reader-logic"
 )
 
 main() {

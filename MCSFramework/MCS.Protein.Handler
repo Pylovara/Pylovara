@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# MCS Protein Handler v0.9 aktiv
+# MCS Protein Handler v1.0 aktiv
 # Ruft passende Protein-Befehle auf (demonstrativ noch)
 # Neu : Register-Abfrage von MCS.Protein.Register in /Pylovara/MCSFramework/MCS.Protein.Register
+# case neu : füge send hinzu &
+# þ-Integration: Generiere eine Checksum (z.B. md5sum "$target" | cut -d' ' -f1), häng 'þID' an Protonen: {Signed|þ$(md5sum ...)}. Das macht's trackbar/unhackbar.
 
 handle_protein_packet() {
     local packet="$1"
@@ -37,9 +39,62 @@ handle_protein_packet() {
     case "$cmd" in
         echo) echo "${args[*]}" ;;
         run)  echo "[MCS] Starte ${args[*]}" ;;
-        *)    echo "[MCS] Unbekannter Proteinbefehl: $cmd" ;;
+        send)
+    local target="${args[0]}"  # z.B. ~/Daten
+    local proton_args=("${args[@]:1}")  # Rest für Protonen
+    echo "[MCS:Protein] Sende $target..."
+    for proton in "${proton_args[@]}"; do
+        parse_proton "$proton"  # Delegiert Wait/Signed etc.
+    done
+    cp -r "$target" /some/destination  # Oder scp für remote, z.B. scp "$target" user@ip:/path
+    ;;
+    *)    echo "[MCS] Unbekannter Proteinbefehl: $cmd" ;;
     esac
 }
+
+## Vorversionen Sektion ##
+# MCS Protein Handler v0.9 inaktiv
+# Ruft passende Protein-Befehle auf (demonstrativ noch)
+# Neu : Register-Abfrage von MCS.Protein.Register in /Pylovara/MCSFramework/MCS.Protein.Register
+
+#handle_protein_packet() {
+#    local packet="$1"
+#    local -a tokens=()
+#    tokenize_mcs "$packet" tokens
+
+#    [[ ${#tokens[@]} -eq 0 ]] && {
+#        echo "[MCS:Protein] Leeres Paket."
+#        return
+#    }
+
+#    local cmd="${tokens[0]//[\'\"]}"
+#    local args=("${tokens[@]:1}")
+
+#    # NEU: Register-Abfrage
+#    if [[ -z "${PROTEIN_REG[$cmd]}" ]]; then
+#        echo "[MCS] Fehler: Unbekannter Befehl '$cmd' (Nicht im Protein-Register)."
+#        return 1
+#    fi
+#    # ENDE NEU
+
+#    echo "[MCS:Protein] erkannt → $cmd"
+
+#    for arg in "${args[@]}"; do
+#        if [[ "$arg" =~ ^\{.*\}$ ]]; then
+#            parse_proton "$arg"
+#        else
+#            echo "[MCS:Protein] Argument: $arg"
+#        fi
+#    done
+
+#    # Befehlsausführung (nur demonstrativ)
+#    case "$cmd" in
+#        echo) echo "${args[*]}" ;;
+#        run)  echo "[MCS] Starte ${args[*]}" ;;
+#        *)    echo "[MCS] Unbekannter Proteinbefehl: $cmd" ;;
+#    esac
+#}
+
 
 ## Vorversionen Sektion ##
 # MCS Protein Handler v0.8 inaktiv

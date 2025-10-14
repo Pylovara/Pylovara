@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # Modul: MCS.Protein.Handler
-# Version: 0.4 Aktiv
+# Version: 0.5 Aktiv
 # Autor: pylovara.ai
 # Zweck: Erkennung und Ausführung von Proteinen innerhalb einer Transaktion
 # Neu : Register-Check für MCS.Proton.Register v0.1 in /Pylovara/MCSFramework/MCS.Proton.Register
+# parsererweiterung : Verschachtelung (z.B. {Wait-s|2|{Extra|Val}}) , nutze rekursiven Call.
+
 
 parse_proton() {
     local token="$1"
@@ -22,6 +24,11 @@ parse_proton() {
         echo "[MCS:Proton] Unbekannter Proton-Typ: $name"
         return 1
     fi
+
+    if [[ "$value" =~ ^\{.*\}$ ]]; then
+        parse_proton "$value"  # Rekursion
+    fi
+
     # ENDE NEU
 
     case "$name" in
@@ -36,6 +43,41 @@ parse_proton() {
 }
 
 
+## Vorversionen Sektion ##
+# Version: 0.4 inAktiv
+# Autor: pylovara.ai
+# Zweck: Erkennung und Ausführung von Proteinen innerhalb einer Transaktion
+# Neu : Register-Check für MCS.Proton.Register v0.1 in /Pylovara/MCSFramework/MCS.Proton.Register
+
+#parse_proton() {
+#    local token="$1"
+#    [[ "$token" =~ ^\{(.*)\}$ ]] || return
+#
+#    local inner="${BASH_REMATCH[1]}"
+#    IFS='|' read -r -a parts <<< "$inner"
+#
+#    local name="${parts[0]}"
+#    local value="${parts[1]}"
+
+#    echo "[MCS:Proton] erkannt → Name=$name | Wert=$value"
+
+#    # NEU: Register-Abfrage (setzt voraus, dass PROTON_REG geladen wurde)
+#    if [[ -z "${PROTON_REG[$name]}" ]]; then
+#        echo "[MCS:Proton] Unbekannter Proton-Typ: $name"
+#        return 1
+#    fi
+#    # ENDE NEU
+
+#    case "$name" in
+#        Wait-s)
+#            echo "[MCS:Proton] Sleep ${value}s..."
+#            sleep "$value"
+#            ;;
+#        Signed)
+#            echo "[MCS:Proton] Signatur-ID: ${value}"
+#            ;;
+#    esac
+#}
 
 
 ## Vorversionen Sektion ##

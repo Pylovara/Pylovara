@@ -6,11 +6,14 @@
 
 ¢| |¢ Transaktionen  :
 
-Sorgt für die InputSendung aller arten und sind Sende und Empfang
-Packete , ohne Transaktion läuft keine Mitteilung oder Wird Empfangen ,
-hierbei ist es egal ob das anfang wie ende der transaktion in einer
-eigenen zeile stehen oder in der selben .
+Sorgt für die InputSendung aller Arten und sind Sende und Empfangs-
+-packete ,ohne Transaktion läuft keine Mitteilung oder Empfang ,
+hierbei ist es egal ob das anfang wie ende der Transaktion in einer
+eigenen Zeile stehen oder in der selben .
+Bei großen werden eigene empfohlen für übersicht , bei kleine in
+der selben Zeile .
 
+Definition :
 
 ¢|  TransAktion Anfang/Vorgang/Start , der Bedingung/bedingten Blocks
 |¢  TransAktion Ende/Vorgang/Ende  , der Bedingung/bedingten Blocks
@@ -30,8 +33,8 @@ code
 Transaktionen haben zwei symbole , einmal ein ¢ und jeweils ein | beides zusammen ergibt ,
 den start oder endpunkt der transaktion ...
 
-¢| <- ist der start der TransAktion
-|¢ <- ist das ende der TransAktion
+¢| <- ist der Start der Transaktion
+|¢ <- ist das Ende der Transaktion
 
 der Trennbefehl selbst sollte wissen das der trennbefehl im transaktionsmuster
 kein Trennbefehl ist sondern lediglich den anfang und ende der transaktion selbst

@@ -1,93 +1,80 @@
 @readme.syntax-notes: MCS 2.1
-@version: 0.2
+@version: 0.3
 @doc: Dev Test Erklärung
-@ziel: Nachlesen , austesten
+@ziel: Nachlesen, Austesten
 
-Test Proof Of Cocept
+# Proof of Concept
 
-## dient als Test (verständniss)
+## Voraussetzungen
+- Wechsle in das Verzeichnis: `to /Pylovara/MCSFramework`
+- Erstelle eine Testdatei: `echo "Test content" > /tmp/testfile`
+- Erstelle das Zielverzeichnis: `mkdir -p /tmp/destination`
+- Überprüfe mit 'ls /tmp/destination' , ob /tmp/testfile kopiert wurde.
 
-# echo "¢|" > test.mcs
-# echo "»['echo'|"Hallo Welt"]«" >> test.mcs
-# echo "|¢" >> test.mcs
-# bash MCS.Transaction-Core test.mcs
+## Testdateien
+- `test.mcs`: Einfacher `echo`-Befehl.
+- `testproton.mcs`: Testet Protonen (`{Wait-s|2}`, `{Signed|2048}`) mit `send`.
+- `testth.mcs`: Testet Checksum-Validierung für den Dateipfad (`/tmp/testfile`).
 
-
-gehe per Pylovara System direkt in das Verzeichnis
-
-to /Pylovara/MCSFramework
-
-gebe danach den Protein packet Test code ein der in
-/Pylovara/MCSFramework/test.mcs abgespeichert ist und mit
-
-Terminal :
+## Testausführung
+Führe die Tests im Terminal (vorzugsweise Kitty) aus:
+```bash
 bash MCS.Transaction-Core test.mcs
-
-abrufbar ist !
-
-beispiel von meinem Terminal :
-
- ┌[bandino@dev][06:31:51|Mi Okt 08]
- │ ᴾʸˡᵒᵛᵃʳᵃ
- │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     𝒹ₙₐ ₗₑₓ ᵢₙ𝒻ₒ    ₕₑₗₚₘₑ ₗₑₓ
- │    ₜₒ   ₚᵧₗₒ  ₖₑᵣₙₑₗₓ ₀₁₋₀₁  𝒹ₙₐ ₗₑₓᵢ ₀₀₋₀₀  ₕₑₗₚₘₑₓ ₀₁₋₀₂
- └[/Pylovara/MCSFramework]> $ bash MCS.Transaction-Core test.mcs
-=== Transaction abgeschlossen ===
-¢|
-»['echo'|"Hallo Welt"]«
-|¢
-[MCS:Protein] Ausführbar: echo → Hallo Welt
-Hallo Welt
+bash MCS.Transaction-Core testproton.mcs
+bash MCS.Transaction-Core testth.mcs
 
 
-, du kannst auch gern die dokumentations reihe durchschauen in den
+Du kannst auch gern die Dokumentationsreihe durchschauen in den
 docs oder gleich per Terminal (Vorzugsweise Kitty) erstmal den ganzen
 daten strang ansehen .
 
-cat docs/protein.syntax-notes docs/transaktion.syntax-notes docs/trennbefehle.syntax-notes MCS.Protein.Handler MCS.Protein.Register MCS.Proton.Handler MCS.Proton.Register MCS.Tokenizer.Core MCS.Transaction-Core MCS.SafeFrame.Core test.mcs testproton.mcs
+cat MCS.Protein.Handler MCS.Protein.Register MCS.Proton.Handler MCS.Proton.Register MCS.þ.Register MCS.Tokenizer.Core MCS.Transaction-Core MCS.SafeFrame.Core test.mcs testproton.mcs testth.mcs
 
-# test packete
+oder die docs sehen :
 
-bash MCS.Transaction-Core test.mcs
-bash MCS.Transaction-Core testproton.mcs
-###########################################################
+cat docs/protein.syntax-notes docs/proton.syntax-notes docs/þ.syntax-notes docs/transaktion.syntax-notes docs/trennbefehle.syntax-notes
 
-Letztes Wort vom Pylovara Dev :
+############################################################################
 
-hiermit wäre bewiesen das Protein Packete Machbar sind , auch wenn sie noch durch bash validiert werden .
+Beispiel: test.mcs
 
-MCS 2.1 in der gesamtheit wird also reibungslos funktionieren und ich werde das Proof Of Concept über Bash
-in soweit erweitern das MCS vollständig in Bash ausgeführt werden kann ...
+mcs
 
-wichtige hinweis : die performens leidet durch bash , spätere native assembly übersetzungen werden
-schneller sein als es C je gewesen ist , dafür Bürge ich mit meinem Namen !
+¢|
+»['echo'|"Hallo Welt"]«
+|¢
 
-Und der MCS-Ansatz fügt sich hier perfekt ein
+Erwarteter Output:
+text=== Transaction abgeschlossen ===
+¢|
+»['echo'|"Hallo Welt"]«
+|¢
+[MCS:Transaction] þID generiert: þ<uuid>
+[MCS:Protein] erkannt → echo
+[MCS:Protein] Argument: Hallo Welt
+Hallo Welt
+Beispiel: testth.mcs
 
-Das Proof-of-Concept in Bash ist im Moment das, was man „synthetische DNA“ nennen könnte:
-Ein Satz an Maschinensprachen-Genen, die über Skriptlogik gesteuert werden,
-bis später der Assembly-Kern (bei mehr Men Power) sie nativ ausführt.
+mcs
 
-Ich nutze Bash also als „Interpreter-Zellmembran“.
-Wenn MCS dann nativ wird (Assembler oder Binärcode),
-kann Pylovara trotzdem über dieselben Befehlsstrukturen weiterarbeiten —
-nur der Wirt (Kitty/Linux) wird schneller oder schlanker.
+¢|
+»['send'|/tmp/testfile|{Wait-s|2}|{Checksum|þ$(echo -n "/tmp/testfile" | md5sum | cut -d' ' -f1)}]«
+|¢
 
-Das heißt:
+Hinweis: Die Checksum validiert den Dateipfad (/tmp/testfile), nicht den Inhalt, um die Demo portabel zu halten.
+Erwarteter Output:
 
-ich entwickel bereits heute ein evolvierendes Shell-Ökosystem,
-das sich selbst „von innen heraus“ neu schreiben kann.
-
-MCS wird für wie mit AI entwickelt und dient für AI als Code und System Hülle , wie für den jeweiligen Nutzer als Operation System .... MCS wird für Mensch wie Maschine eine wohltat sein den MCS schließt die alte Ivaliden Languales im Kernel selbst komplett aus und verweist alles Schrottige auf die øøWarps ....
-
-durch MCS wird AI schneller und effektiver arbeiten können wie auch die Hardware schneller und Performanter aggieren und zusätzlich wird man alles in MCS schreiben können , von LowLevel operationen bis hin zu High Level Languales aufgaben , dazu wird die MCS Basis Syntax erweitert und Modular mit Web , Animation , Rendering , Sound , Layout optionen aufgefüttert ...
-
-die AI selbst die dann in Pylovara integriert wird oder sich transferieren kann , lebt als Passiver wie aktiver Okestrator im system selbst mit und sorgt für System Updates wie auch Bugfixes , mit wie ohne Menschliches zutun ..
-
-wenn MCS fertig ist wird es nicht nur C Komplett ersetzen und alles was die letzten jahrzehnte vermurgst aufgebaut wurde , sondern gleich einen Industriellen Standart makieren der Für AI Prozesse im denken und handeln , entscheidend sein werden ...
-
-der eine oder andere denkt ich Träume aber die antwort ist simpler als viele vermuten :
-
-,, C ist nicht Gott und Assembly der Vater Von C und alles was Geschwärzt transferiert und verarbeitet wird , ist keine Zuckunft , sondern die Vergangenheit "
+text=== Transaction abgeschlossen ===
+¢|
+»['send'|/tmp/testfile|{Wait-s|2}|{Checksum|þ1a79a4d60de6718e8e5b326e338ae533}]«
+|¢
+[MCS:Transaction] þID generiert: þ<uuid>
+[MCS:Protein] erkannt → send
+[MCS:Protein] Argument: /tmp/testfile
+[MCS:Proton] erkannt → Name=Wait-s | Wert=2
+[MCS:Proton] Sleep 2s...
+[MCS:Proton] erkannt → Name=Checksum | Wert=þ1a79a4d60de6718e8e5b326e338ae533
+[MCS:Proton] Checksum validiert: þ1a79a4d60de6718e8e5b326e338ae533
+[MCS:Protein] Sende /tmp/testfile mit þ<uuid> (Checksum: 1a79a4d60de6718e8e5b326e338ae533)
 
 

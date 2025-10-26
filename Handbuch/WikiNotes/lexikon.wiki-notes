@@ -13,14 +13,16 @@
 
 lex  Lexikon                  # helpme     | lexikon
 00   Fallback                 # helpme     | Parser
-# 01   Ast                      # MAIN  AST  | Übersicht
-02   module                   # Erklärung  | FULL
-03   guide                    # Funktionen | Full
-04   control                  # Übersicht  | Kommentiert
+# 01   Ast                    # MAIN  AST  | Übersicht
+02   Module                   # Erklärung  | FULL
+03   Pylovara Guide           # Funktionen | Full
+04   Control                  # Übersicht  | Kommentiert
 05   MCS                      # Im Aufbau  | DEV Level
 06   Shell                    # Infos      | System
 07   MCS                      # Erklärungen| Beispiele
-08   AI			      # Start Info | Kontrolle
+08   AI			                    # Start Info | Kontrolle
+09   MCS Guide                # Erklärungen| Übersicht
+10   Team Unity               # One Example Of Heart
 
 #################### Info Guide ###########################
 # Help Me Deluxe - helpmex

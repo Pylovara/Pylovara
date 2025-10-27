@@ -10,7 +10,7 @@ Proteine können mehrere Aspekte abdecken in dem sie sogenannte
 Operatoren mitgeben die nach einem Trennbefehl vorhanden sind :
 
 ""     Print , zeigt alles darin als ausgabe an
-''     Commando , Wird als Anweisung verstanden
+''     Command , Wird als Anweisung verstanden
 ¨¨     Blanker Nenner , Das ist , Richtig , abgleich
        Einfache eingaben ohne etwas
 
@@ -51,8 +51,8 @@ Proton(en) oder Warps .
 
 'to'                = nimmt im auftrag daten an und exportiert sie zum empfänger
 'toip'              = sendet angegebenes zur verbundenen ip adresse des empfängers
-'copieto'           = sendet als copie zu angabe
-'copie'             = copiert das was der erste Command in auftrag nimmt und 'to' bestimmt
+'copyto'            = sendet als copie zu angabe
+'copy'              = copiert das was der erste Command in auftrag nimmt und 'to' bestimmt
 
 'open'              = Öffnet alles was das system im Main Editor öffnen kann
 'run'               = Öffnet Programme oder in MCS geschriebene Programme

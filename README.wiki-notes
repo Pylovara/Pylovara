@@ -1,30 +1,14 @@
 ################################################################################
-                             PylovaraSystem updates ;
+################################## Install #####################################
 
-                    MCS Syntax Aktualisierung auf Kernel Ebene
-                    MCS 2.1 in /Hanbuch/Wiki mcs.wiki.notes verpackt
-                    Datentyp Version 1.0
-                    MCSFramework Proof of Concept über Bash
-                    'to' ausgabe untereinander geliedert
-                    Aktualisierung von wiki-notes
-
-                    MCSVerilog für FPGA Fähigkeit PoC Implementiert
-                    V27 Handbuch Aktualisiert
-                    kleinere Ordner anpassungen
-
-################################################################################
-################################################################################
-                                 Install
-################################################################################
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
 info : bei Problemen Befehle einzelnd eingeben !
+################################################################################
+############################### Update Manual ##################################
 
-################################################################################
-                               Update Manual
-################################################################################
 cd Pylovara/Setup/Pylovara-System/
 sudo ./pylovara.updater-needle
 
@@ -37,43 +21,62 @@ version 0.4 beta =
 - lässt wrapper außenvor weil schon gesetzt
 - entfernt /tmp/pylovara-latest wieder
 - funktioniert nur mit = sudo ./pylovara.updater-needle
+################################################################################
+################### PylovaraSystem updates vor kurzen ##########################
+
+  - MCS Syntax Aktualisierung auf Kernel Ebene
+  - MCS 2.1 in /Hanbuch/Wiki mcs.wiki.notes verpackt
+  - Datentyp Version 1.0
+  - MCSFramework Proof of Concept über Bash
+  - 'to' ausgabe untereinander geliedert
+  - Aktualisierung von wiki-notes
+  - MCSVerilog für FPGA Fähigkeit PoC Implementiert
+  - V27 Handbuch Aktualisiert
+  - kleinere Ordner anpassungen
+  - Aufbau vom MCS-Hyprland-Desktop DeVBeta
 
 ################################################################################
 ############################# Was ist Pylovara? ################################
 
-Pylovara ist ein modular aufgebautes, systemweites File- und Steuerungssystem,
-das vollständig auf der Shell-Ebene arbeitet – ohne GUI, ohne Umwege, ohne Bullshit.
-Es wird ausschließlich auf Root-Ebene installiert (`/Pylovara/`) und meidet bewusst
-alle $HOME-Abhängigkeiten.
+Pylovara ist ein radikales neues modular aufgebautes,
+systemweites File- und Steuerungssystem, das vollständig auf der Shell-Ebene
+arbeitet, es wird ausschließlich auf Root-Ebene installiert (`/Pylovara/`) .
 
-Pylovara ist ein radikales neues, modular aufgebautes Datei- und Steuerungssystem,
-das vollständig in der Shell lebt – ohne GUI, ohne Umwege, ohne Bullshit.
+              -- ohne GUI, ohne Umwege, ohne Bullshit --
+
 Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlage
 eines neuen Denkens im Umgang mit Betriebssystemen.
 
-Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus , auf
-jedem System als SubSystem mit eigener Sprache (MCS) aggieren zu können , ganz
-gleich welche Shell .
-MCS wird Performanter als reines C | DSL | Json und co  !
+Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus ,
+auf jedem System als SubSystem mit eigener Sprache (MCS) aggieren kann und wird
+den Amspruch haben eine AllINOne Sprache zu erschaffen die mit purer Argumentation
+zum absoluten Industry Standart wird .
 
-Es kann sein das am anfang gewisse dinge nicht ganz round laufen , wie Updates oder
+MCS wird den Anspruch haben Performanter als reines C | DSL | Json und co zu sein,
+sobald MCS Nativ mit der Hardware sprechen kann !
+
+Es kann sein das am Anfang gewisse dinge nicht ganz round laufen , wie Updates oder
 Rechte vergabe im Keller , einbindungen in deinen Sourced Kern , egal welcher Source
-Kern bei dir Aktiv ist , oder auch kleinere bucks mit dem Terminal selbst ......
+Kern bei dir Aktiv ist , oder auch kleinere bucks mit dem Terminal selbst (die ich im
+übrigen selbst auch sehe) ......
 
 Was jedoch auf langer sicht für den Einzelnen herausgearbeitet wird , ist die
 Vollständige Kontrolle seines Systemes  und es ist dabei egal ob RedHat , Arch ,
-OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android ..... Du bekommst die möglichkeit
-mit MCS low und high level aufgaben jeder einzelnen aktion zu steuern , combiniert mit ai .
+OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android .....
+Du bekommst die möglichkeit mit MCS low und high level aufgaben jeder einzelnen
+transaktion zu steuern , combiniert mit ai .
 
 Pylovara wird auch keinen Anspruch haben irgend ein Programm in den Alten vergorrenen
 Languale Sprachen zu schreiben , oder sogar viel Arbeit in die Übersetzungen zu legen,
-das ausrotten von explosions großen compiler die teils mit blackbox variablen arbeiten
-wie auch GCC , sind ein absolutes fehldesigne ......... und werden abgestoßen ..........
-Alte Languale dürfen in MCS als øwarpø transportiert werden als untergeordnete Sprachen ...
+das ausrotten von explosions großen Compiler die teils mit blackbox variablen arbeiten
+wie auch GCC , sind ein absolutes fehldesigne und werden abgestoßen ..........
+Alte Languale dürfen in MCS als øwarpø transportiert werden als untergeordnete veraltete
+ComputerSprache und wird somit abwärts und aufwärts-kompaktibel .......
 
 Übergang :
 Der Kompromiss um MCS zu Laufen zu bringen bis die Lauffähigkeit durch den aufbau der
-Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maßnahme .
+Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maßnahme
+und befindet sich gerade im Piraten Status und nutzt alles was dem ziel näher bringt.
 
 ################################################################################
 
@@ -81,11 +84,11 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
 
  Systemweit & Rootbasiert
 - Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
-- Keine Abhängigkeit von `$HOME`-Verzeichnissen
+- Keine Abhängigkeit von `$HOME`-Verzeichnissen bis auf den MCS-Hyprland-Desktop
 - Funktioniert sogar in minimalen Umgebungen wie BusyBox oder Rettungssystemen
 
  Shell-first Design
-- Komplett steuerbar über Terminal
+- Komplett steuerbar über Terminal , Exklusiv Monopol : Kitty
 - Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
 - Ermöglicht tiefste Systemintegration ohne externe Frameworks
 
@@ -106,69 +109,17 @@ Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maß
     dna lexi       # Zeile Ausschnitte
     p Handbuch     # Zeigt die gesamte Baumstruktur
     callme firefox # bin finder
+    cut mcs /*/*   # MCS Higlihgting
     pylo Handbuch/- ai.wiki-notes cat
 
-                > "Was du nicht selbst in der Shell erschaffst,
-                   wird dir irgendwann vom GUI genommen."       – alter Admin-Spruch
+        > "Was du nicht selbst in der Shell erschaffst,
+            wird dir irgendwann vom GUI genommen."  – alter Admin
 
-                         Hier Endet die Shell Information
-
+#################### Hier Endet die Shell Information ##########################
 ################################################################################
+################ MCS Steuerung|Programmieren durch Symbole #####################
 
-
-Version 0.7 (Architektur) / 1.9 (MCS)
-
-Dieses Dokument beschreibt die Architektur von Pylovara (Version 2.5.0) sowie das Konzept der
-MCS-Syntax (Version 1.9). Es dient als Snapshot der aktuellen Entwicklungsstufe und bildet die
-Grundlage für zukünftige Versionen.
-1. Architektur (Version 2.5.0)
-Pylovara organisiert sich in einem klaren Familienmodell mit Vererbungsprinzip. Die wichtigsten
-Datentypen und Rollen sind wie folgt definiert:
-Typ Rolle Analogie Anwendungsbereich
-*.*-core Standard/Programme Großvater – Ausführender TeilNormale Anwendungslogik, Prozesse
-*.*-lcore Low-Level/Hardware Großvaters Geschwister Direkte Hardwaresteuerung, Assembly
-*.*-vcore Visuelles/Oberfläche Großvaters Geschwister Rendering, GUI-Design-Logik
-*.*-magic Umschalter Großmutter – KonfigurationsbrückeSelbstoptimierung, dynamische Konfiguration
-*.*-node Hauptcontroller Vater Zentrale Steuerung
-*.*-nano Substrukturmanager Mutter Verwaltung von Subsystemen
-*.*-micro Mikrosteuerung Tochter Feinsteuerung, HTML/JS/SQL
-*.*-cache Cache Cache Zwischenspeicher für Temp-Daten
-*.*-needle Hardwarebindung Kernelnahe Steuerung .sys, .ko, .dll
-Vererbungsprinzip
-Die Kettenbildungsmechanismen sind bei einem Vererbungsprinzip verwurzelt. Dabei greifen
-*.*-core und *.*-magic auf Substrukturen (nano, micro, cache, needle) zu. Dies schafft ein von oben
-nach unten vererbtes Datenmodell, das flexible Steuerung erlaubt.
-
-Beispielcode: Motorsteuerung (Muster)
-
-¢| »['MotorA'|{Watt|200}|{Volt|12}]« = §MotorA ⊕ »[{Temp|25}§SensorX]«
-°WennNicht[{Temp|25}|{Valid|0-100}] ^TransaktionsFehler = §(1)Cooler ;; |¢
-
-2. MCS Syntax (Version 1.9)
-MCS (Maschinen Code Speech) definiert ein System aus Transaktionen, Proteinen, Protonen,
-Warps und Feeds. Es erlaubt parallele, systemnahe Steuerung mit Sicherheitschecks und direkter
-Assembly-Interaktion.
-
-
-Sicherheitscheck Beispiel (WLAN)
-
-¢| »[{Band|2.4G}§WLAN]« °WennNicht[{Band|2.4G}|{Valid|2.4G,5G}] ^TransaktionsFehler =
-§(1)Displey ¶= øC| #include int main() { wireless_config wconf; int sock =
-iw_sockets_open(); wconf.frequency = 2.4e9; iw_set_basic_config(sock, "wlan0", &wconf;);
-return 0; } ø = §gcc = §(1) |¢
-
-################################################################################
-
- Kernel & Handbuch
-
-- `kernel lex`: Lexikon des Systems
-- `kernelx [nr]`: Detailierte Ansicht spezifischer Kernelabschnitte
-- `helpme`: Wiki-System zur Erläuterung aller Komponenten
-
-################################################################################
-
- Steuerung durch Symbole
-          Pylovara verwendet ein symbolisches Transaktions- und Steuerungssystem:
+Pylovara verwendet ein symbolisches Transaktions- und Steuerungssystem:
 
 ¢|...|¢        : Transaktion Anfang / Ende
 »...«          : Aktion / Zweig
@@ -194,12 +145,14 @@ $Dirigent      : Übergabe an (in und extern)
 
 es ist weitaus mehr als nur eine Symbolische Syntaxy es ist die grundlage
 von MCS Maschinen Code Speech oder auch Maschinen Code Sprache , Designed um
-C in der Performens auszurotten und die grundlage des Neuen System´s .
+C in der Performens auszurotten und die grundlage des Neuen System´s das als
+Nativer Kernel geplant ist und jetzt erstmal , nach einigen Beweisen , für
+einen Userfreundlichen Desktop gepackt wird .
 
 ################################################################################
 
  Zukunftsvision
-           kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
+      kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
 
 - Tiling Window Management direkt aus der Shell
 - Ersatz für Registry, Konfigurationsdateien, GUI-Tools
@@ -208,18 +161,22 @@ C in der Performens auszurotten und die grundlage des Neuen System´s .
 - Nahtlose Integration in bestehende OS-Strukturen
 - AI-gestützte Codegenerierung & Debugging
 
-Stellen Sie sich ein Windows vor, das intern noch Windows bleibt, aber komplett neu
-gesteuert wird. Oder ein ArchLinux, das seine Kontrolle an Pylovara abgibt.
-Die Einsatzgebiete sind unbegrenzt.
+Stellt euch ein System vor das keine 10+ Studiengänge braucht um vollständig
+in einer Sprache von der software bis oberfläche , runter in die hardware low
+level aufgaben vollständig verstanden zu werden und das Schulisch so aufgearbeitet
+das selbst in einer Sonderschule MCS gelehrt werden könnte !
 
 ################################################################################
 
- Shell Layouts
+ Shell Layouts Prototypen Beta
            Pylovara unterstützt verschiedene Prompt-Stile:
 
 - **Standard**: `/Pylovara/System/Shell/Layout/pylovara.shell-layout`
 - **Hilfe**: `/Pylovara/System/Shell/Layout/pylovara+.shell-layout`
 - **Minimal**: `/Pylovara/System/Shell/Layout/pylovara++.shell-layout`
+
+Einstellbar in :
+p /Pylovara/Control/
 
 ################################################################################
                                 Impressum Infos
@@ -229,9 +186,10 @@ werden hier weiter erklärt : Arbeitsblatt.dev-note , die ins Native führen sol
 
 
 Mitarbeiter in sache binärübersetzung der MCS syntax werden Potenziel
-gesucht ... anlauf stelle : +49 176/88218035 T.Zimmermann
+gesucht ... anlauf stelle :
 
-################################################################################
-#####################################################################################
+Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
+Telefon :  +49 176/88218035
+Telegram : @iBandino
 ################################## Readme Ende ######################################
 #####################################################################################

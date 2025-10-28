@@ -7,6 +7,7 @@
 MASTER_DIR="/Pylovara/Control"
 CONTROL_DIR="/Pylovara"
 Shell_DIR="/Pylovara/System/Shell/DNA"
+MCS_DIR="/Pylovara/System/Desktop/wrapper"
 
 ##############################################################################
 ### Main Directory
@@ -23,6 +24,8 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 ### alias Sektion
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
+alias cat='cut|mcs_highlight'
+alias cut|mcs_highlight='cat mcs'
 
 ##############################################################################
 ### Startet Ollama
@@ -34,13 +37,18 @@ alias qwen='/Pylovara/AI/ollama/bin/ollama run qwen3:0.6b'
 alias deepseek='/Pylovara/AI/ollama/bin/ollama run deepseek-r1:1.5b'
 alias gemma='/Pylovara/AI/ollama/bin/ollama run gemma3:1b'
 
-### Info : Später wird ChatGPT als Kern verwendet
-
+###Info:Es wurden die kleinsten Modelle gewählt aus Universalengründen
+###Info:Später wird ChatGPT|Gemini|Grok|Claude|Qwen als Kern verwendet
+###Info:Kleinere Modelle sind universal einsetzbar zur zeit auf aller hardware
 ##############################################################################
 ### Master-Input - control.pv-conf
 source "$MASTER_DIR/shell.conf"
 source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
+#source "$MASTER_DIR/desktop.conf" #Info:Inaktiv , wird später aktualisiert !
+
+## Scharfstellung von MCS Beta !!!
+source "$MCS_DIR/aliase.wrapper-needles"
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
@@ -50,7 +58,7 @@ parse_conf "$MASTER_DIR/datatypes.conf"
 source "$MASTER_DIR/mcs-visualizer.conf"
 
 ### Hyprland Desktop
-source "/Pylovara/Control/desktop.conf"
+#source "/Pylovara/Control/desktop.conf"
 
 ##############################################################################
 ### SYSTEMALIASE Sektion
@@ -70,6 +78,7 @@ kernelx() {
 p() {
     source "$Shell_DIR/p.tree-dna" "$@"
 }
+### Kommentar: pylo bugt 2025-Juni-16
 pylo() {
     source "$Shell_DIR/pylo.tool-dna" "$@"
 }
@@ -88,7 +97,6 @@ function record() {
     echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
 }
 
-### Kommentar: pylo bugt 2025-Juni-16
 ##############################################################################
 ### Debug Sektion
 

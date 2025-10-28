@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# /Pylovara/System/Desktop/wrapper/aliase.wrapper-needles (Die Aktivierungsnadel)
+# Scharfstellung der Pylovara Bash-Umgebung und des MCS-Frameworks.
+#Diese Datei ist jetzt die zentrale MCS-Aktivierungsbrücke in die Bash-Umgebung:
+#Definition	Funktion	MCS-Status
+#Drei source Cores	Laden der gesamten MCS-Logik (Tokenizing, Registry, Protein Handler).	Aktiviert
+##alias »	Setzt den zentralen MCS-Eingabe-Punkt # » [-cmd|arg-] «
+#alias setup-desktop	Führt die autonome, dokumentierte Dotfile-Installation aus.	Orchestriert
+#alias term	Etabliert Kitty als das Monopol-Terminal von Pylovara.	Gesichert
+######################################################################################################
+
+# 1. CORE LADEN: Die Funktionen müssen global verfügbar sein
+# HIER MÜSSEN ALLE CORE-DATEIEN GE-SOURCED WERDEN:
+source /Pylovara/System/Desktop/Core/mcs-tokenizer.format-core
+source /Pylovara/System/Desktop/Protein/Register/mcs-protein.cmd-register
+source /Pylovara/System/Desktop/Protein/Handler/mcs-protein.container-handler
+
+# 2. DIE ALIAS DEFINITIONEN
+# Zentraler Alias: » ruft den Protein-Handler auf
+alias »='handle_protein_packet'
+
+# Shell-Aliase
+alias to='cd'
+
+# NEU: Desktop Setup Alias (Passt sich dem neuen Pfad an)
+alias setup-desktop='source /Pylovara/Setup/MCS-Hyprland-Dotfiles/mcs-hyprland.fullinstall-core'
+
+# Monopol Terminal Alias (Kitty)
+alias term='kitty' # Definiert das exklusive Terminal für die MCS-Shell

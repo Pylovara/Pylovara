@@ -1,3 +1,4 @@
+#######################################################################
 ***1. Brain Machine (Grafikeinheit & Zentrale Steuerung)*** 
 Beschreibung: 
 
@@ -9,8 +10,7 @@ Hintergrund und Vorteile des Verzichts auf eine GPU:
 
     Hohe Flexibilität:
     Im Gegensatz zu GPUs, die auf fixe Architekturen beschränkt sind, können die FPGAs der Brain Machine jederzeit neu programmiert werden. Dies ermöglicht die Anpassung an spezifische Anforderungen, sei es für Spiele, Simulationen oder KI-Modelle. 
-     
-
+#######################################################################
 Funktion der Brain Machine: 
 
     Grafikeinheit:
@@ -21,21 +21,22 @@ Funktion der Brain Machine:
 
     Zentrale Steuerung:
     Durch ihre Anbindung an die KI im System agiert die Brain Machine auch als intelligente Steuerungseinheit, die Workloads priorisiert, optimiert und an andere Module weiterleitet. 
-     
-
+#######################################################################
 Zusätzliche Vorteile: 
 
     Die modulare Architektur der Brain Machine ermöglicht es, zukünftige Anforderungen und Technologien durch einfache Updates zu integrieren.
     Sie reduziert die Abhängigkeit von proprietärer Hardware und bietet gleichzeitig eine plattformübergreifende Funktionalität.
-     
-
+#######################################################################
 Zusammenfassung: 
 
 Die Brain Machine ersetzt nicht nur die GPU, sondern hebt deren Funktion auf eine völlig neue Ebene. Sie ist eine leistungsfähige, anpassbare und nachhaltige Lösung, die sowohl für Gaming als auch für KI-Entwicklung optimiert ist. Durch den Verzicht auf traditionelle GPUs wird nicht nur der Energieverbrauch drastisch reduziert, sondern auch die Möglichkeit geschaffen, ein vollständig integriertes und flexibles System zu entwickeln. 
-
+#######################################################################
 Bilder Galerie : 
 
-dna pic /Pylovara/Handbuch/V26/images/bmc-hardware.bmp
-dna pic /Pylovara/Handbuch/V26/images/bmc-konzept.bmp
-dna pic /Pylovara/Handbuch/V26/images/konzept_brainmaschine.bmp
-dna pic /Pylovara/Handbuch/V26/images/BMC+NeuralenNetzwerk.png
+dna pic /Pylovara/Handbuch/V27/Images/bmc-hardware.bmp
+dna pic /Pylovara/Handbuch/V27/Images/bmc-konzept.bmp
+dna pic /Pylovara/Handbuch/V27/Images/konzept_brainmaschine.bmp
+dna pic /Pylovara/Handbuch/V27/Images/BMC+NeuralenNetzwerk.png
+
+und der rest to /Pylovara/Handbuch/V27/Images/
+#######################################################################

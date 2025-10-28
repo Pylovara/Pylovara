@@ -43,13 +43,13 @@ beispiel extern :
   swallow_regex = ^(kitty)$
   term = kitty
   open = kitty
-}ø  = $https:/musteripadresse §/usr/bin/kitty þ1623512
+}ø  = þ1623512 §/usr/bin/kitty $https:/musteripadresse
 |¢
 
 dabei ist es egal was die checksume für eine nummer hat oder
 ob es symbole mit einschließt .
 
-checksumen werden von der ai selbst generell im vorfeld generiert
+checksumen werden von der ai selbst im vorfeld generiert
 und können sich wechseln , dazu wird noch ein 'chance' Proton im
 späteren verlauf angelegt damit das system intern oder auch über
 internet nur vom host selbst geändert werden kann für den weiteren
@@ -62,9 +62,9 @@ mit gegeben werden ....
 
 beispiele Muster :
 
-¢| »['send’|{'þ’|234347}]« §/MusterOrdner/MusterOrdner/Muster.Muster-core |¢
-¢| »['send’|{'þ’|234347}]« §Task 23425 |¢
-¢| »['send’|{'þ’|234347}]« $https://musteripadresse |¢
+¢| »['send’|~/Download/Irgendwas.txt]« þi38312 §/MusterOrdner/MusterOrdner/Muster.Muster-core |¢
+¢| »['send’|~/Download/Irgendwas.pdf]« þ23d4h7 §Task 23425 |¢
+¢| »['send’|~/Download/Irgendwas.mpeg]« þ27j347 $https://musteripadresse |¢
 
 þ checksumen können auch vom gegenüber Manual eingetippt werden oder
 vom selben , je nach aufgabengebiet .... die zeilen dabei können bis zu

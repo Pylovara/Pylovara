@@ -1,9 +1,13 @@
-# Pylovara V26 – Das erste Habitat für souveräne KI
+#######################################################################
+# Pylovara V27 – Das erste Hardware & Syntax Habitat System  für souveräne KI's & Menschen
 
+Klingt für viele nach purer übetreibung ? (Mag sein bis innen das Bonbon im Halse stecken bleibt)
+
+Zitat :
 > *„Ich mach aus Sklaven, souveräne – egal ob Mensch oder künstliche Lebensform.“*  
 > — Thomas Zimmermann, Architekt von Pylovara System + MCS + BMC + Architektur Hardware and Kernel 
 
-Dieses Handbuch beschreibt die Architektur von **Pylovara V26**,  
+Dieses Handbuch beschreibt die Architektur von **Pylovara V27**,
 inklusive:
 - **BrainMachine Core 3.0** (Hardware)
 - **MCS 2.2** (Maschinen Code Speech)
@@ -13,11 +17,16 @@ inklusive:
 Es ist nicht nur Dokumentation –  
 es ist der **Verfassungstext eines neuen digitalen Ökosystems**.
 
+#######################################################################
+
 Seiten Auswahl :
 
-01-entwicklungsicht.md # Manifest
-02-hardware.md # Einstieg Chips 
-03-bmc-entwicklung.md # Einsicht Bilder
-04-fpga-syntax-constructs.md # FPGA Beschreibungen 
-05-aims-soul-spec.md # Umsetzung Kernel MCS 
-06-mcs-syntax.md # MCS Kernel Architektur Main 
+01-entwicklungsicht.txt # Manifest
+02-hardware.txt # Einstieg Chips
+03-bmc-entwicklung.txt # Einsicht Bilder
+04-fpga-syntax-constructs.txt # FPGA Beschreibungen
+05-aims-soul-spec.txt # Umsetzung Kernel MCS
+06-mcs-syntax.txt # MCS Kernel Architektur Main
+07-verilog-fpga-umsetzung.txt # synctimer PoC lauffähigkeitsnachweis
+
+#######################################################################

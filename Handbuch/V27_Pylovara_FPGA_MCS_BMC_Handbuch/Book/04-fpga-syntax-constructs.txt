@@ -1,4 +1,5 @@
-### **04-mcs-syntax-constructs.md**
+#######################################################################
+### **04-mcs-syntax-constructs.txt**
 ### **1. Elemente & Funktionen der BrainMachine (BMC)**
 
 > *„Keine Funktion, kein Chip, nur Kabelknotenpunkt = 0“*  
@@ -33,19 +34,19 @@
 | Brainmachine Output                         | BMOP          |
 
 ---
-
+#######################################################################
 #### **2. Prozessdaten & Input-Typen (InPuT Daten Aufteilung)**
 
 > *„Die Kennzeichen werden immer numerisch angegeben, wobei z. B. 
 > RD1-5 für alle Renderingdaten steht und RD1-3 oder RD4-5 für aufgesplittete Datensätze.“*
 
-| **Prozesskategorie**     |kürzel| **Beschreibung**                                                                 |
-|--------------------------|------|-------------------------------------------------------------------------|
-| **RD** = Rendering-Daten | RD   | 1=3D/2D, 2=Geometrie, 3=Texturen, 4=Shader, 5=Lichtberechnung           |
-| **PD** = Physik-Daten    | PD   | 1=AudioStream/Ereignisse, 2=Effekte, 3=Musik, 4=Umgebungsgeräusche      |
-| **ED** = Eingabe-Daten   | ED   | 1=Maus, 2=Tastatur, 3=Gamepad, 4=Bewegungskoordination, 5=Tastenanschlag|
-| **ND** = Netzwerk-Daten  | ND   | 1=Multiplexsynchronisation, 2=Latenzberechnung, 3=Serverpakete          |
-| **AD** = Animations-Daten| AD   | 1=Bewegung & Animation, 2=Charaktere, 3=Objekte, 4=Skelettinformation   |
-| **RTD** = Raytracing-Daten| RTD  | 1=Strahlenverfolgung, 2=Spiegelungen, 3=Schatten                       |
-| **KID** = K.I.-Daten     | KID  | 1=Gegnerverhalten, 2=Pfadsuche, 3=Entscheidungsprozesse                 |
-
+| **Prozesskategorie**      | **Beschreibung**
+|---------------------------|---
+| **RD** = Rendering-Daten  |1=3D/2D, 2=Geometrie, 3=Texturen, 4=Shader, 5=Lichtberechnung
+| **PD** = Physik-Daten     |1=AudioStream/Ereignisse, 2=Effekte, 3=Musik, 4=Umgebungsgeräusche
+| **ED** = Eingabe-Daten    |1=Maus, 2=Tastatur, 3=Gamepad, 4=Bewegungskoordination, 5=Tastenanschlag
+| **ND** = Netzwerk-Daten   |1=Multiplexsynchronisation, 2=Latenzberechnung, 3=Serverpakete
+| **AD** = Animations-Daten |1=Bewegung & Animation, 2=Charaktere, 3=Objekte, 4=Skelettinformation
+| **RTD** = Raytracing-Daten|1=Strahlenverfolgung, 2=Spiegelungen, 3=Schatten
+| **KID** = K.I.-Daten      |1=Gegnerverhalten, 2=Pfadsuche, 3=Entscheidungsprozesse
+#######################################################################

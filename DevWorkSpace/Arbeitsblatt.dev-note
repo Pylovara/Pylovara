@@ -98,7 +98,7 @@ bsp :
 3-2    *.*-nano	    Mutter          – Substrukturmanager - wechselbar Einstellung
 3-3    *.*-micro	Tochter         – Mikrosteuerung (z.B. HTML, JS, SQL) - wechselbar Einstellung
 3-4    *.*-cache	Cache           – Zwischenspeicher für Temp-Daten - wechselbar Einstellung
-3-5    *.*-needle	Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll) - wechselbar Einstellung
+3-5    *.*-needle	Hardwarebindung – Kernelnahe Steuerung (.sys, .ko, .dll .kernel .sprache) - wechselbar Einstellung
 
 
 dabei wird berücksichtig das 1 auf 2 und 2 auf 1 zugreifen kann ,
@@ -164,7 +164,7 @@ oder angabe verstanden ;
 
 Wird typischerweise am Proteinpacket angehangen b.s ;
 
-¢| »['Lüfter'|{Watt|200}|««%50]« = §MotorA |¢
+¢| »['Lüfter'|{'Watt'|¨200¨}]«««%50 = §MotorA |¢
 
 ####################################################################
 
@@ -274,7 +274,9 @@ und dienen für Hardware oder Feineren aufgaben die Proteine Ergänzen.
 Beispiel Protein ohne Proton ;
 ¢| »["Hallo"|'echo']« = §5436 |¢
 Beispiel Protein mit Proton ohne Hardware Aufgaben;
-¢| »['send'|"5436"|{Wait-s|3}|'creat'|þ5436.cache|'fileloadto'/Pylovara/]« = $kitty
+
+¢|
+»['send'|"5436"|{'wait-s'|'3'}|'creat'|þ5436.cache|'fileloadto'/Pylovara/]« = $kitty
 |¢
 
 Ein Proton innerhalb eines Proteins kann daten aller Argument
@@ -496,20 +498,6 @@ Wenn/Kann
 …  WennFehler/Kann/Sicherheit
 ^  TransaktionsFehler/Debugg
 ſ  DatenReste/Löschung
-
-####################################################################
-
-Reihenfolge wenn das angesprochene System oder Browser die daten
-für eine reibungslose Übersetzung benötigt ist : 3
-
-1. Transaktion Anfang
-2. Protein (das Proton mitliefern kann)
-3. Proton (das eigenständig hardware ansprechen kann)
-4. Warp (das für die übersetzung für Performenstechnische aspekte
-direkt in die jeweiligen compositor bzw Compiler eingespeißt wird)
-5. = Kennungswert
-6. Zielreferenz oder Dirigent
-7. Transaktion Ende
 
 ####################################################################
 

@@ -1,0 +1,108 @@
+@eingabe.syntax-notes: MCS 2.1
+@version: 2.9
+@doc: Eingaben Syntax für Maschinen Code Speech Framework
+@ziel: Definition der allgemeinen Eingaben
+
+#########################################################################
+####         Eingaben Für [Protein]|{Proton} - Packete               ####
+#########################################################################
+
+    Wichtig:
+
+    Allgemein zu allen eingaben sind anfang und ende
+    durch doppelseitigkeit gekennzeichnet !
+
+#########################################################################
+
+    " "  <- Print , zeigt alles darin als ausgabe an
+
+    Hier zu gibt es nicht viel zu sagen »['echo'|"Hello World"]
+    den Prints sind dinge die angezeigt werden oder hinheingeschrieben
+    oder verschickt werden .... hierzu den punkt blanker nenner lesen .
+
+#########################################################################
+
+    ' '  <- cmd kommando , Wird als Anweisung verstanden
+
+
+ »['exec'|'once'|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
+
+ cmd's sind von haus aus oder in MCS registrierte befehle , die Eingaben
+ kommandos genau wiederspiegelt , momentan primär bash/linuxkernel und
+ einige eigene befehle oder umgeänderte . Dies sorgt fürs erste für
+ portabel cmd's , die das jeweilige system oder compositor versteht
+
+#########################################################################
+
+
+    ¨ ¨  <- Blanker Nenner , Das ist zu machen , Dies ist Das
+
+
+        Die Eingabe Blanke Nenner Transport etwas mit das durch
+    die Eingabe Command/cmd , als Kommando mit gegeben wird.
+
+    Beispiel :
+
+    »['exec'|'once'|{,Terminal,|¨$terminal¨}]«
+
+    Wir (exec)execuden (once)einmal das Terminal und geben den
+    heinheimischen befehl dazu weiter $terminal als
+    Blanker nenner, nicht als cmd ans System
+
+    dadurch werden cmd befehle von bash exec/once als protein
+    register übernommen und zusätlich bei den Protonen {}
+    im proton register der taggnamen als Eingabe Notiz und dann
+    der eigentliche Blanke nenne so wie das system es kennt
+
+#########################################################################
+
+    , ,  <- Notiz , Was es ist , Tagging , So heißt es
+
+    Die Eingabe Notiz ist in Manchen Senarien mit viel Code eine
+    praktische angelegenheit und wird in MCS oft als Namengeber
+    eines Proton Angewendet um transportierte daten besser zu taggen
+
+
+#########################################################################
+
+       Einfache Eingaben ohne etwas
+
+Sie werden in Print , cmd Commando , Blanker Nenner , Notiz ,
+den Protein Zelle als Eingabefelder sprich Eingabe mit gegeben ,
+was auch schluss endlich auch nur in Proteinpackete
+als Combination mit Proton(en) oder Warps Mündet.
+
+#########################################################################
+
+# Protein Command Liste (zuckunftsmusik):
+
+'bestätigen' = rückmeldung Admin per passwort Yes/No bestätigungen
+
+'text'              = zeigt text an der im packet eingetragen wurde
+'echo'              = meldet irgendwas zurück
+
+'send'              = sendet alles was angebenen wird
+'sendto'            = sendet zu angegebenes verzeichnis oder ip adresse etc
+'sendurl'           = sendet url adresse speziell
+'sendordner'        = sendet lokale ordner inhalt , kann mehrere ordner senden
+
+'to'                = CallDirectory = zu ... zu dies ... zu das ...
+'toip'              = sendet angegebenes zur verbundenen ip adresse des empfängers
+'copyto'            = sendet als copie zu angabe
+'copy'              = copiert das was der erste Command in auftrag nimmt und 'to' bestimmt
+
+'open'              = Öffnet alles was das system im Main Editor öffnen kann
+'run'               = Öffnet Programme oder in MCS geschriebene Programme
+
+'search'            = sucht systemweit und zeigt alles was damit gefunden worden ist
+'searchordner'      = sucht nur die daten im angegebenen ordner
+'searchbrowser'     = sucht systemweiten über die url deines main browsers
+
+'remove'            = Der lösch verweis sollte generel gelten wenn nix dran hängt
+'removedublikate'   = Löscht gleichnahmige daten die in keinem prozess verwendet werden
+'removeall'         = Rekrusives Löschen der anhänge
+
+'pushout'           = Exportieren , rausholen , weitergeben
+'pushin'            = Importieren , reinholen , hineinziehen
+
+#########################################################################

@@ -24,8 +24,6 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 ### alias Sektion
 
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
-alias cat='cut|mcs_highlight'
-alias cut|mcs_highlight='cat mcs'
 
 ##############################################################################
 ### Startet Ollama
@@ -104,5 +102,12 @@ function record() {
 
 ### Prüfung
 # cat /tmp/pv-control-debug.log
+
+##############################################################################
+### DeV Sektion Experimentiell
+
+### alias: setup-desktop # experimentiell
+#alias cat='cut|mcs_highlight'
+#alias cut|mcs_highlight='cut'
 
 ##############################################################################

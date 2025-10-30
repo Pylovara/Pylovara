@@ -1,0 +1,93 @@
+@kernel-nr: 07
+####################################################################
+####       Eingaben Für [Protein] & {Proton} - Packete
+
+
+    Wichtig:
+
+    Allgemein zu allen Eingaben sind Anfang und Ende
+    durch doppelseitigkeit gekennzeichnet !
+
+Eingaben sind Eingabefelder die Spezialisiert für das Richtige
+Register für die Eingaben sorgen und somit Modular handelbar bleiben.
+
+MCS wird mit eigenen Standart Eingaben ausgeliefert deswegen können
+einheimische cmd verwendet werden aller art , sollten
+für Configs etc Proton /en dazu verwendet werden sie quasi
+umzukompilieren , was Im Pylovara Desktop Anwendung findet .
+
+--------------------------------------------------------------------
+
+
+    " "  <- Print , zeigt alles darin an als Ausgabe
+
+    Hier zu gibt es nicht viel zu sagen »['echo'|"Hello World"]
+    den Prints sind dinge die angezeigt werden oder hinheingeschrieben
+    oder verschickt werden .... hierzu den punkt blanker nenner lesen .
+
+--------------------------------------------------------------------
+
+
+    ' '  <- cmd kommando , Wird als Anweisung verstanden
+
+
+ »['exec'|'once'|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
+
+
+ Hinweis für Schüler :
+
+ cmd's sind von Haus aus im MCS register definiert, die die Eingaben
+ genau wiederspiegelt für MCS, wie oben angedeutet verschiecken wir
+ den bash befehl für linux im Proton .
+
+ Hierzu werden später updates erscheinen die einheimisch mcs cmd und
+ externe cmd Eingaben/Befehle trennen .
+
+ interne MCS CMD werden einen anderes Eingabenfeld bekommen oder
+ bei Verfügbarkeit des Namens für den CMD ins register mit aufgenommen
+ , was aktuell noch der fall ist .
+
+--------------------------------------------------------------------
+
+
+    ¨ ¨  <- Blankernenner , Das ist zu machen , Dies ist Das
+
+
+    Der Container Blankernenner Transport etwas mit das durch
+    die Eingabe Command/cmd , als Kommando mit gegeben wird.
+
+    Beispiel :
+
+    »['exec'|'once'|{'Terminal'|¨$terminal¨}]«
+
+    Wir (exec)execuden (once)einmal das Terminal und geben den
+    heinheimischen befehl dazu weiter $terminal als
+    Blankernenner, nicht als cmd ans System weiter zugeben .
+
+    Dadurch können wir im MCS_Hyprland linux interne befehle
+    nutzen da die bibliothek für MCS CMD Eingaben noch nicht
+    so weitreichend aufgebaut ist
+
+--------------------------------------------------------------------
+
+
+    , ,  <- Notiz , Was es ist , Tagging , So heißt es
+
+    Die Eingabe Notiz ist in Manchen Senarien mit viel Code eine
+    praktische angelegenheit und wird in MCS oft als Namengeber
+    eines Proton Angewendet um transportierte daten besser zu taggen
+
+
+######################################################################
+
+Sie werden in Print , cmd Commando , Blanker Nenner , Notiz ,
+den Protein Zelle als Eingabefelder sprich Eingabe mit gegeben ,
+was auch schluss endlich auch nur in Proteinpackete
+als Combination mit Proton(en) oder Warps Mündet durch die Felder .
+
+###################### Ende der Eingaben  ##########################
+####################################################################
+
+
+
+

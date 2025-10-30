@@ -32,4 +32,5 @@ for component_dir in "$PYLOVARA_SETUP_ROOT"/*; do
 done
 
 echo "✅ Pylovara Desktop Setup abgeschlossen. Konfigurationen bereitgestellt."
+echo "      Neustart/Reboot terminal:$ reboot"
 return 0 2>/dev/null || exit 0

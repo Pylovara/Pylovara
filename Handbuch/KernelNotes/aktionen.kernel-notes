@@ -1,0 +1,75 @@
+@kernel-nr: 06
+####################################################################
+## Aktionen :
+
+Aktionen Werden als anhang und ende bei Protein packeten weitergegeben,
+sie definieren innerhalb einer Transaktion ob ein ausführbares packet
+vorliegt das vor und danach den start und endpunkt des packets angibt
+
+--------------------------------------------------------------------
+# Definition Aktion Start :
+
+  »
+
+--------------------------------------------------------------------
+Definition Aktion Ende :
+
+
+  «
+
+--------------------------------------------------------------------
+# Definition  Aktion Anfang und Ende
+
+  » «
+
+--------------------------------------------------------------------
+# Erklärung
+
+  «  Ende einer Aktion/eines Zweiges/Protein
+  »  Start einer Aktion/eines Zweiges/Protein
+
+wenn unausführbare Protein packete gesendet oder empfangen werden
+sollen, für einen anderen prozess oder einer weitergabe oder späteren
+ausfürung, dann sorgen Aktionen für klare verhältnisse innerhalb der
+Transaktion /en.
+
+--------------------------------------------------------------------
+# Aktionen-anordnung  LowLevel Standart:
+
+¢|
+ »['cmd'|"print"]«
+|¢
+
+¢| »['cmd'|"print"]« |¢
+
+--------------------------------------------------------------------
+# Aktion Info:
+
+Eine Aktion wird niemals nur gestartet und nicht beendet,
+außer die Aktion wird für HighLevel Frameworks benötigt
+dann setzt das ende der aktion am letzten protein an , das den
+schluss dargestellt und diese Schlüsse aber immer ein eigenes
+aktion /s Ende und der anfang vom ersten protein ,
+gewährleistet flexibilität.
+
+# Aktionen-anordnung HighLevel :
+
+¢|
+ »['exec'|'once'|¨$terminal¨]
+   ¶ ['echo'|"hellowolrd"]«
+|¢
+
+¢|
+ »['exec'|'once'|¨$terminal¨]
+   ¶ ['echo'|"hellowolrd"]«
+   ° ¶¶ »['exit]«
+|¢
+
+info : ¶¶  Else | °  WennNicht  / Muss | ¶   IF
+
+Eine HighLevel Aktion gleicht im prinzip C ist
+aber auf MCS zugeschnitten da wir hier low wie high Level
+Combinieren .
+
+##################### Ende der Aktion /en  #########################
+####################################################################

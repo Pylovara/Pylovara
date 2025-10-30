@@ -1,0 +1,53 @@
+@kernel-nr: 03
+####################################################################
+## Protein /ne :
+
+Protein ist der Rahmen , der Rahmen für Eingaben|Operatoren|Proton .
+Sie dienen dank den cmd Eingaben als lovlevel Syntax und können in
+einfacher Form verwendet werden .
+
+Jedoch dienen sie als Grundstein und können bis komplexe frameworks
+verbaut werden , den alles baut auf Protein auf ...
+
+--------------------------------------------------------------------
+## Protein Packete Definiert (nicht ausführbar)
+
+       []
+
+--------------------------------------------------------------------
+## Protein Packete Definiert (ausführbar)
+
+       »[]«
+
+ausfürbar durch Aktion (siehe kernel 06)
+
+--------------------------------------------------------------------
+## HighLevel Workflow Definition Combiniertes Beispiel
+
+¢|
+»['*'|"*"]
+¶¶ ['*'|"*"]«
+|¢
+
+Ausführbares protein mit wenn kann regel ,
+       - assimiliertes element -
+aus C , da Nützlich für IF and Else regeln .
+
+--------------------------------------------------------------------
+# Protein Packet Layout LowLevel schulisches b.s :
+
+»['echo'|"Hallo Welt"]«
+»['sendurl'|¨https://github.com/Pylovara/Pylovara/¨]«
+»['pushout'|¨~/Home/testdatei.wiki-notes|'to'|¨~/Home/Dokumenten/¨]«
+»['run'|'Firefox'|'open'|'search'|¨Pylovara Github¨|'Enter']«
+
+# WorkAround leichter Ablauf :
+
+¢|
+»['sendordner'|¨/Pylovara/Hanbuch¨|'to'|¨~/Dokumente¨|'echo'|"bestätigen? y/n"|'eingabe: y']
+       ¶ ['y'|'pushout'|'to'|¨~/Dokumente¨|'echo'|"Verschoben in ~/Dokumente/"]«
+       ¶¶ ['n'|'exit']«
+|¢
+
+##################### Ende der Transaktion #########################
+####################################################################

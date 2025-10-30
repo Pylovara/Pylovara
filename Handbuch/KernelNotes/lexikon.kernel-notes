@@ -1,78 +1,28 @@
 ####################################################################
 @kernel-nr: lex
 ####################################################################
-       - System Kernel - ON - kernel - The Learn Guide  -
+       - System Kernel - ON - Kernel - The Learn Guide  -
    ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖ ▗▖   ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▖ ▗▖ ▗▄▖ ▗▖  ▗▖
    ▐▌ ▐▌  █  ▐▌▗▞▘  █   ▐▌   ▐▌    ▝▚▞▘   █  ▐▌▗▞▘▐▌ ▐▌▐▛▚▖▐▌
    ▐▌ ▐▌  █  ▐▛▚▖   █   ▐▌   ▐▛▀▀▘  ▐▌    █  ▐▛▚▖ ▐▌ ▐▌▐▌ ▝▜▌
    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖ ▐▙▄▄▖▐▙▄▄▖▗▞▘▝▚▖▗▄█▄▖▐▌ ▐▌▝▚▄▞▘▐▌  ▐▌
-
-
                                               Pylovara since 2025
 ####################################################################
-################ Das Handbuch fürs Architecten #####################
+################ Das Handbuch für den MCS Kernel ###################
 ####################################################################
-################# Kernel - Main Übersicht ##########################
+lex     Lexikon                  # Übersicht  | lexikon
+00      Fallback                 # Übersicht  | Parser
+################### Kernel - Main Übersicht ########################
+01      Datentypen
+02      Transaktion
+03      Protein
+04      Proton
+05      Trennbefehl
+06      Aktion
+07      Eingaben
+08      Wahrheiten
+09      Operatoren
+10      Reihenfolge
 
-lex  Lexikon                  # Übersicht  | lexikon
-00   Fallback                 # Übersicht  | Parser
-01   _86_64 Bit               # Übersicht  | Alles
-02   MCS Beta                 # Guide      | MaschinenCodeSpeech
-03   MCS GrOundZerO           # Schulisch  | Lernen und Verstehen
-
+99      Register Eingaben
 ####################################################################
-####################### _86_64 Register ############################
-
-01-01 Register                #Lektion 1|Was Sind Register
-01-02 Rax,RBX,RCX,RDX,RDX     #Lektion 2|Die Arbeitstiere
-01-03 RSP, RBP                #Lektion 3|Der Stack und seine Wächter
-01-04 RIP                     #Lektion 4|RIP – Der Programmzähler
-01-05 FLAGS                   #Lektion 5|Das geheime Statusregister
-01-06 FS, GS                  #Lektion 6|Die verborgene Macht
-01-07 RFLAGS,                 #Lektion 7|System Calls im Detail
-01-08 Interrupts&Exceptions   #Lektion 8|Brüche in der Realität
-01-09 Paging,CR3              #Lektion 9|Speicherverwaltung
-01-10 x86_64 Register-Matrix  #Lektion10|Gesamtüberblick
-
-####################################################################
-############ _86_64 Die Befehle (Instruction Set) ##################
-
-01-11 MOV                    #Lektion11|Daten auf Maschinenebene
-01-12 PUSH & POP             #Lektion12|Der Stapel spricht
-01-13 CALL & RET             #Lektion13|Maschinen mit Rückgrat
-01-14 CMP & TEST             #Lektion14|Maschinen vergleichen
-01-15 Jxx                    #Lektion15|Entscheidungen und Sprünge
-01-16 LEA                    #Lektion16|Rechnen ohne Rechnen
-01-17 XCHG & BSWAP           #Lektion17|Wenn Bytes tanzen
-01-18 NOP & HLT              #Lektion18|Pausen im Maschinenrauschen
-01-19 INT & SYSCALL          #Lektion19|Tore zum Kernel
-01-20 REP & MOVS/STOS        #Lektion20|Maschinen wiederholen
-
-####################################################################
-################## Flags und Maschinenzustände #####################
-
-01-21 FLAGS                  #Lektion21|Maschinen mit Gefühlen
-01-22 TEST & CMP             #Lektion22|Prüfen und Vergleichen
-01-23 Abschluss              #Lektion23|Abschluss
-
-¶####################################################################
-¶############# Maschinen Code Spech Kernel Syntax ###################
-
-02-01 TransAktionen          # wird als Token/Credit transportiert
-02-02 Aktionen               # Kombinationen , Verpacket
-02-03 ProteinPackete         # Aufträge verpacken
-02-04 §Referenz|$Local       # Dirigenten übergeben
-02-05 Ausgabe Formate        # Einordnungen
-02-06 Berechnungen           # «<berechnungen> weitergaben
-02-07 IF Else &              # C Syntax Logik verpackt in # , ## #=
-02-08 Trennbefehle           # Syntax Logik für Verpackungen
-02-09 Merge Transporte       # Optional , kann einzelne und mehrfach
-02-10 PacketDevinition       # Elementare Transportfunktionen
-02-11 Forks Merges           # Verwendung des Fork Merges Konzepts
-02-12 Automation, Zuweisung  # Generelles Transaktionen Operatoren
-02-13 Kommentar funktion     ¶ Umstellung
-
-¶####################################################################
-¶####################### Info Zentrale ##############################
-¶####################################################################
-

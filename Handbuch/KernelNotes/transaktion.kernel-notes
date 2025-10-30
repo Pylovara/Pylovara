@@ -1,0 +1,42 @@
+@kernel-nr: 02
+####################################################################
+## Transaktion /en  :
+
+Sorgen für den Prozessrahmen und lösen nur Daten darin aus,
+wenn sie vorhanden oder Ausführbar sind.(siehe Aktionen)
+Transaktionsrahmen werden dafür verwendet um ein Protein
+als Start/end-punkt anzuerkennen bzw den ganzen Prozess-inhalt.
+Proteine bekommen ihren Auslöser durch Aktionen und sind damit
+innerhalb der Transaktion ausführbar oder auch nicht , je nach
+Aktionen oder keine .
+
+
+# Definition :
+
+zwei symbole gepaart ergeben das symbole für transaktion anfang
+und zwei symbole gepaart ergeben das symbole für transaktion ende
+
+¢|  Transaktion Anfang/Vorgang/Start , der Bedingung/bedingten Blocks
+|¢  Transaktion Ende/Vorgang/Ende  , der Bedingung/bedingten Blocks
+
+# Transaktionsanordnungen :
+
+¢|
+code
+|¢
+
+¢|code|¢
+
+--------------------------------------------------------------------
+## Transaktions Info für Schüler | Studenten | IT Personal :
+
+Der Trennbefehl selbst sollte wissen das der Trennbefehl
+im Transaktionsmuster kein Trennbefehl ist sondern
+lediglich den Anfang und Ende der Transaktion selbst
+definiert , ein ¢ ohne | ist kein Startpunkt und
+ein | ohne ¢ ist kein Endpunkt .
+
+Eselsbrücke : beide Symbole ergeben eins !
+
+##################### Ende der Transaktion #########################
+####################################################################

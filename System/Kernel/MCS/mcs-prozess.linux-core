@@ -1,0 +1,177 @@
+#!/usr/bin/env python3
+
+# MCS Client-Handler (Grandfather - *.*-core)
+# Übersetzt MCS-Syntax in Hyprland-Konfiguration (.conf)
+# Erstellt: 2025-10-30
+
+import os
+
+# -------------------------------------------------------------
+# 1. Register der MCS-Module (Familienmitglieder/Vererbung)
+# -------------------------------------------------------------
+# Die Pfade stammen aus der neuen, konsolidierten Ordnerstruktur:
+BASE_DIR = "/Pylovara/System/Kernel/MCS"
+
+MODULES = {
+    # Handbuch / Regelwerk (wichtig für die KI-Fütterung)
+    "DATENTYPEN": "/Pylovara/Handbuch/KernelNotes/datentypen.kernel-notes",
+
+    # Register/Handler (Die Logik des Parsers)
+    "PROTEIN_HANDLER": os.path.join(BASE_DIR, "Protein/Handler/protein.handler-kernel"),
+    "PROTON_HANDLER": os.path.join(BASE_DIR, "Proton/Handler/proton.handler-kernel"),
+    "CMD_REGISTER": "/Pylovara/System/Register/mcs.cmd-register", # Muss noch in neue Struktur verschoben werden
+
+    # Werkzeuge (Die Low-Level Funktionen des Kernels)
+    "TRANSAKTION_WERKZEUG": os.path.join(BASE_DIR, "Werkzeug/Transaktion/transaktion.werkzeug-kernel"),
+    "EINGABEN_WERKZEUG": os.path.join(BASE_DIR, "Werkzeug/Eingaben/eingabe.werkzeug-kernel"),
+    # ... weitere Werkzeuge folgen
+
+    # Ziel und Quelle
+    "MCS_SOURCE_FILE": "/Pylovara/Setup/MCS-Hyprland-Dotfiles/hyprland.mcs-core", # Quelle, die zu übersetzen ist
+    "HYPRLAND_OUTPUT": "/Pylovara/Setup/MCS-Hyprland-Dotfiles/hypr/hyprland.conf" # Ziel
+}
+
+# -------------------------------------------------------------
+# 2. MCS-Kernel-Symbole (aus der MCS-Syntax)
+# -------------------------------------------------------------
+SYMBOLS = {
+    "TRANSAKTION_START": "¢|",
+    "TRANSAKTION_ENDE": "|¢",
+    "AKTION_START": "»[",
+    "AKTION_ENDE": "]«",
+    "BLANKER_NENNER": "¨¨",
+    "PARALLELITÄT": "¶=",
+    "PROT_TRENNER": "|",
+    "KEY_VALUE_TRENNER": "|",
+    "MOD_TRENNER": "$=,$",
+    "WEITERLEITUNG": "»" # Das öffnende Protein-Symbol
+}
+
+# -------------------------------------------------------------
+# 3. Kern-Logik (Der MCS-Hyprland Client-Compiler)
+# -------------------------------------------------------------
+
+def load_mcs_file(filepath):
+    """Lade die MCS-Quelldatei."""
+    try:
+        # Hier würden wir normalerweise die Datei laden und vorverarbeiten
+        print(f"[{SYMBOLS['WEITERLEITUNG']}] Lade MCS-Datei: {filepath}")
+        # Beispiel-Laden des Inhalts (Im realen MCS wäre das der MCS-Kernel-Reader)
+        with open(MODULES["MCS_SOURCE_FILE"], 'r') as f:
+            return f.read()
+    except FileNotFoundError:
+        print(f"[{SYMBOLS['TRANSAKTION_START']}] [FEHLER] Quelldatei nicht gefunden: {filepath}")
+        return ""
+
+def mcs_to_hyprland(mcs_content):
+    """Hauptfunktion: Übersetzt MCS-Syntax in Hyprland-Syntax."""
+
+    # Simuliere Tokenizer/Parser-Initialisierung
+    print(f"[{SYMBOLS['AKTION_START']}] Initialisiere Modular-Kernel-Handler...")
+    # (Im echten System würden hier die Funktionen aus den Kernel-Dateien geladen)
+
+    hyprland_conf = []
+
+    # Einfacher Zeilen-Parser für das PoC (später ersetzt durch den vollen MCS-Parser)
+    for line in mcs_content.splitlines():
+        line = line.strip()
+
+        # Ignoriere Kommentare und leere Zeilen
+        if not line or line.startswith('#'):
+            continue
+
+        # 1. Transaktions-Erkennung (MCS-Regel 02)
+        if line.startswith(SYMBOLS["TRANSAKTION_START"]):
+            hyprland_conf.append("\n# --- MCS-Transaktions-Start ---")
+        elif line.endswith(SYMBOLS["TRANSAKTION_ENDE"]):
+            hyprland_conf.append("# --- MCS-Transaktions-Ende ---\n")
+
+        # 2. Protein-Erkennung und Konvertierung (MCS-Regel 03)
+        elif line.startswith(SYMBOLS["AKTION_START"]) and line.endswith(SYMBOLS["AKTION_ENDE"]):
+            # Beispiel: »['bind'|{Mod|mainMod}|{Key|Return}|¨exec kitty¨]«
+
+            # Zerlege das Protein:
+            inner_content = line[len(SYMBOLS["AKTION_START"]):-len(SYMBOLS["AKTION_ENDE"])].strip()
+
+            # Finde die CMD (Aktion/Protein) und die Argumente
+            try:
+                cmd_part, *proton_parts = inner_content.split(SYMBOLS["PROT_TRENNER"], 1)
+
+                # CMD ist der erste Teil in einfachen Anführungszeichen:
+                cmd = cmd_part.strip().strip("''") # z.B. 'bind'
+
+                # Protonen-Logik
+                if proton_parts:
+                    # Der Rest ist der Protonen-Teil (Parameter/Werte)
+                    proton_data = proton_parts[0].strip()
+
+                    # Hier wird die magische MCS-Übersetzung aktiv:
+
+                    # 'exec' und 'bind' sind die Kern-Befehle für Hyprland
+                    if cmd == 'bind':
+                        # Erwarte: {Mod|mainMod}|{Key|Return}|¨exec kitty¨
+
+                        # Simpler Split der Protonen (wird durch mcs-proton.handler-kernel übernommen)
+                        protons = proton_data.split(SYMBOLS["PROT_TRENNER"])
+
+                        modifiers = ""
+                        key = ""
+                        command = ""
+
+                        for p in protons:
+                            # Entpacke die Key|Value Paare
+                            if p.startswith('{Key|') and p.endswith('}'):
+                                key = p.split('|')[1].strip('}')
+                            elif p.startswith('{Mod|') and p.endswith('}'):
+                                modifiers = p.split('|')[1].strip('}')
+                            elif p.startswith(SYMBOLS["BLANKER_NENNER"]) and p.endswith(SYMBOLS["BLANKER_NENNER"]):
+                                command = p.strip(SYMBOLS["BLANKER_NENNER"])
+
+                        if modifiers and key and command:
+                            hyprland_line = f'bind = {modifiers}, {key}, {command}'
+                            hyprland_conf.append(hyprland_line)
+                            continue # Nächste Zeile
+
+                    elif cmd == 'exec':
+                        # Erwarte: ¨exec rofi -show drun¨ oder ähnliches
+                        command = proton_data.strip(SYMBOLS["BLANKER_NENNER"])
+                        hyprland_line = f'exec = {command}'
+                        hyprland_conf.append(hyprland_line)
+                        continue # Nächste Zeile
+
+                    else:
+                        # Ungültige MCS-Aktion für Hyprland-PoC
+                        print(f"[{SYMBOLS['TRANSAKTION_START']}][WARN] Unbekannte Aktion im Hyprland-Kontext: {cmd}")
+
+            except ValueError:
+                # Syntaxfehler
+                print(f"[{SYMBOLS['TRANSAKTION_START']}][FEHLER] MCS Syntaxfehler in Zeile: {line}")
+
+    # 3. Exportiere die fertige Hyprland-Konfig
+    output_path = MODULES["HYPRLAND_OUTPUT"]
+    # Sicherstellen, dass der Zielordner existiert
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    # Schreibe die Konfigurationsdatei
+    with open(output_path, 'w') as f:
+        f.write("\n".join(hyprland_conf))
+
+    print(f"[{SYMBOLS['AKTION_ENDE']}] MCS-Transaktion abgeschlossen. Native Konfiguration erstellt: {output_path}")
+    print(f"[{SYMBOLS['AKTION_ENDE']}] Status: {len(hyprland_conf)} Zeilen Hyprland-Konfig generiert.")
+
+
+# -------------------------------------------------------------
+# 4. START des MCS-Kernels
+# -------------------------------------------------------------
+
+if __name__ == "__main__":
+    # Laden des Hyprland-Core-Datenpakets
+    mcs_data = load_mcs_file(MODULES["MCS_SOURCE_FILE"])
+
+    if mcs_data:
+        # Starte die Übersetzungstransaktion
+        mcs_to_hyprland(mcs_data)
+
+
+# Der nächste Schritt wird sein, die MCS-Quelldatei zu erstellen:
+# /Pylovara/Setup/MCS-Hyprland-Dotfiles/hyprland.mcs-core

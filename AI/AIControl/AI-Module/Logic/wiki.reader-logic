@@ -2,11 +2,14 @@
 # ──── wiki.reader-logic ───────────────────────────────────────────────
 # TYPE: verhaltens-logic
 # NAME: wiki-reader
-# VERSION: 0.1
+# VERSION: 0.2
 # FOKUS: Durchsuchung & Anzeige von *.wiki-notes Dateien
 # ──────────────────────────────────────────────────────────────────────
 
-WIKI_DIR="/Pylovara/Handbuch/WikiNotes/"
+# Aktiv Wissensdatenbank
+WIKI_DIR="/Pylovara/AI/AIControl/AI-Handbücher/86_64.kernel-notes"
+# Inaktiv Wissensdatenbank
+MCS_DIR="/Pylovara/Hanbuch/Kernel"
 
 prompt_user() {
   local answer

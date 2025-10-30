@@ -7,7 +7,7 @@
 MASTER_DIR="/Pylovara/Control"
 CONTROL_DIR="/Pylovara"
 Shell_DIR="/Pylovara/System/Shell/DNA"
-MCS_DIR="/Pylovara/System/Desktop/wrapper"
+MCS_DIR="/Pylovara/System/Kernel/MCS"
 
 ##############################################################################
 ### Main Directory
@@ -46,7 +46,7 @@ source "$MASTER_DIR/callme.conf"
 #source "$MASTER_DIR/desktop.conf" #Info:Inaktiv , wird später aktualisiert !
 
 ## Scharfstellung von MCS Beta !!!
-source "$MCS_DIR/aliase.wrapper-needles"
+source "$MCS_DIR/Wrapper/aliase.wrapper-needles"
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"

@@ -1,0 +1,42 @@
+@kernel-nr: 09
+####################################################################
+## Operatoren :
+
+Werden immer als Schlüsselelement angehangen , wenn sie
+erfoderlich sind , gerade für Wahrheiten sehr Relevant
+
+Wenn/Kann :
+
+°  WennNicht  / Muss
+>  WennKleiner /Kann/Soll
+<  WennGrößer /Kann/Soll
+!  WennEindeutig /Sofort
+…  WennFehler /Kann/Sicherheit
+^  TransaktionsFehler /Debugg
+ſ  DatenReste /Löschung
+
+--------------------------------------------------------------------
+
+⊕  Sync-timer (AI Spezialisierungsoperator für Laufende Prozesse)
+
+
+kann als erweiterter Paraleller Transport verstanden werden
+der dazudient :
+
+Laufende Prozesse die Fehlerhaft Arbeiten per Live Reperatur
+flexibel mit einem Sync-timer zu taggen und dadurch direkte
+Reperaturen oder Fineabstimmungen vorzunehmen .
+
+es dient dazu laufende takt geber also Runner selbst im Betrieb
+mit Laufenden Prozesse umzuschreiben und duzende *.*-synctimer
+anzulegen die essentiell anders takten und sich nathlos in den
+laufenden prozess als weiterführende transaktionsschleife ,
+um den prozess weiterführen oder verändern zu können,am laufen halten
+
+sync-timer symbole in einem bestehenden code dienen sie als
+Einspeisungspunkt moment/punkt und zu makieren die stelle die
+ersetzt werden soll/muss .
+
+
+##################### Ende der Operatoren  #########################
+####################################################################

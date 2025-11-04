@@ -1,0 +1,41 @@
+@kernel-nr: 15
+####################################################################
+## Argumente
+--------------------------------------------------------------------
+
+    Definition :
+
+    ««
+
+    Wichtiger Hinweis :
+
+    Sie werden zu Aktionen hinzu geschrieben !
+
+--------------------------------------------------------------------
+
+    «« Argumente :
+
+Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
+wie mal oder geteilt , plus minus den wert mitgeben können , sie
+dienen als weitergabe für berechnungen oder angaben , je nach dem
+ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert
+oder angabe verstanden ;
+
+· + : % Zusätzliche Rechen weitergaben(Aktionen)(mit oder ohne Wert)
+
+««-      Minus
+««+      Plus
+««·      Mal
+««:      Geteilt
+««%      Prozentbezogene Rechnung, z. B. für Anteile
+««%50   „Gib 50 % von X weiter“
+««%-     kann kombiniert werden , geteilt durch minus usw
+
+Wird typischerweise am Proteinpacket angehangen b.s ;
+
+¢| »[’Lüfter’|{’Watt’|¨200¨}]«««%50 = §MotorA |¢
+
+--------------------------------------------------------------------
+
+###################### Ende der Argumente ##########################
+####################################################################

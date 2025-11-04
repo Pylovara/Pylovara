@@ -1,0 +1,57 @@
+@kernel-nr: 10
+####################################################################
+
+    ()  Feeds Funktion
+
+    (Zahl) Feed /s
+
+Feeds sind Rück oder Angaben wohin welche Merge Forke oder Parallele
+Transaktion wie Prozess gehen soll und wo er wieder andockt .
+
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt , wodurch
+er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
+und dadurch seine andock station definiert ..
+
+Beispiel an einer Beispiel Transaktion ;
+
+Beispiel Code  Ohne Merge und Feed:
+
+¢|                                             # Transaktion starten
+»['MotorA'|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«««%50 # Proteinpaket:MotorA,200W,12V mit %50
+= §Displey                                     # der Werte an Display ausgeben
+¶=                                             # Paralleler Prozess
+»[{’Temp’|¨25¨}]«««+10                         # Temperatur von SensorX lesen
+= §SensorX §Cooler                             # Temperatur +10 an Kühler senden
+;;                                             # Paralleler Transport ohne Eingabe
+»[{’Band’|¨2.4G¨}]«                            # WLAN-Band auf 2.4G setzen
+§wlan                                          # Zielreferenz
+|¢                                             # Transaktion beenden
+
+Interpretation: Dieser Code sendet Leistung/Volt an einen Motor,
+zeigt 50% der Werte auf einem Display, liest parallel die Temperatur
+eines Sensors, passt sie an und aktiviert einen Kühler, während
+das WLAN auf 2.4G gestellt wird. Das zeigt die Stärke von MCS
+in paralleler, systemnaher Steuerung.
+
+Beispiel mit Parallele und Feed (1);
+
+¢|                                              # Transaktion starten
+»['MotorA'|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«««%50  # Proteinpaket:MotorA,200W,12V mit %50
+    = §(1)Displey                               # der Werte an Display ausgeben
+¶=                                              # Paralleler Prozess
+»[{Temp|25}]«««+10                              # Temperatur von SensorX lesen
+    = §SensorX §Cooler                          # Temperatur +10 an Kühler senden
+;;                                              # Paralleler Transport ohne Eingabe
+»[{Band|2.4G}]«                                 # WLAN-Band auf 2.4G setzen
+    =  §(1) §WLAN                               # Zielreferenz übernehmen
+|¢                                              # Transaktion beenden
+
+Hierbei diente Feed als Duplikator für den Visuellen Displeyoutput ,
+da feed immer mit der selben zahl , buchtstabe , code , symbole , im
+weiteren prozess oder Dirigent transaktionen sich gegenseitig findet ,
+wird immer das weitergegeben was gefeedet wurde , ganz gleich ob berechnet
+oder kalt hingeschrieben bzw programmiert .. so dient feed für viele zwecke
+außerhalb von ¶ ¶¶ ¶=;;⊕ usw Operatoren...
+
+######################## Ende der Feeds ############################
+####################################################################

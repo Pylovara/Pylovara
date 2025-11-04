@@ -5,38 +5,38 @@
 --------------------------------------------------------------------
 Die Eingabe definition ist zuckunftsmusik
 
-    <CMD>
+    ’CMD’
 
 --------------------------------------------------------------------
 
-<bestätigen> = rückmeldung Admin per passwort Yes/No bestätigungen
+’bestätigen’ = rückmeldung Admin per passwort Yes/No bestätigungen
 
-<text>              = zeigt text an der im packet eingetragen wurde
-<echo>              = meldet irgendwas zurück
+’text’              = zeigt text an der im packet eingetragen wurde
+’echo’              = meldet irgendwas zurück
 
-<send>              = sendet alles was angebenen wird
-<sendto>            = sendet zu angegebenes verzeichnis
-<sendurl>           = sendet url adresse speziell
-<sendordner>        = sendet lokale ordner inhalt
+’send’              = sendet alles was angebenen wird
+’sendto’            = sendet zu angegebenes verzeichnis
+’sendurl’           = sendet url adresse speziell
+’sendordner’        = sendet lokale ordner inhalt
 
-<to>                = CallDirectory = zu ... zu dies ... zu das ...
-<toip>              = geht zu angegebene verbundene ip adresse
-<copyto>            = sendet als copie zu angabe
-<copy>              = copiert
+’to’                = CallDirectory = zu ... zu dies ... zu das ...
+’toip’              = geht zu angegebene verbundene ip adresse
+’copyto’            = sendet als copie zu angabe
+’copy’              = copiert
 
-<open>              = Öffnet
-<run>               = Öffnet Programme
+’open’              = Öffnet
+’run’               = Öffnet Programme
 
-<search>            = sucht systemweit und zeigt alles
-<searchordner>      = sucht nur die daten im angegebenen ordner
-<searchbrowser>     = sucht systemweit
+’search’            = sucht systemweit und zeigt alles
+’searchordner’      = sucht nur die daten im angegebenen ordner
+’searchbrowser’     = sucht systemweit
 
-<remove>            = löschen
-<removedublikate>   = Löscht gleichnahmige Dublikate
-<removeall>         = Rekrusives Löschen der anhänge
+’remove’            = löschen
+’removedublikate’   = Löscht gleichnahmige Dublikate
+’removeall’         = Rekrusives Löschen der anhänge
 
-<pushout>           = Exportieren , rausholen , weitergeben
-<pushin>            = Importieren , reinholen , hineinziehen
+’pushout’           = Exportieren , rausholen , weitergeben
+’pushin’            = Importieren , reinholen , hineinziehen
 
 ###################### Ende des registers ##########################
 ####################################################################

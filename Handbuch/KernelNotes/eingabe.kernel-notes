@@ -18,7 +18,6 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
 --------------------------------------------------------------------
 
-
     " "  <- Print , zeigt alles darin an als Ausgabe
 
     Hier zu gibt es nicht viel zu sagen »['echo'|"Hello World"]
@@ -27,31 +26,24 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
 --------------------------------------------------------------------
 
-
-    ' '  <- cmd kommando , Wird als Anweisung verstanden
+    ' '  <- System Commands , Wird als Anweisung verstanden , System CMD
 
 
  »['exec'|'once'|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
 
 
- Hinweis für Schüler :
+--------------------------------------------------------------------
 
- cmd's sind von Haus aus im MCS register definiert, die die Eingaben
- genau wiederspiegelt für MCS, wie oben angedeutet verschiecken wir
- den bash befehl für linux im Proton .
+    ’ ’  <- MCS COMMANDS , Wird als Anweisung verstanden , MCS CMD
 
- Hierzu werden später updates erscheinen die einheimisch mcs cmd und
- externe cmd Eingaben/Befehle trennen .
+    Hinweis :
 
- interne MCS CMD werden einen anderes Eingabenfeld bekommen oder
- bei Verfügbarkeit des Namens für den CMD ins register mit aufgenommen
- , was aktuell noch der fall ist .
+    mcs cmd's sind von Haus aus im MCS register definiert, die die
+    Eingaben genau wiederspiegelt für MCS.
 
 --------------------------------------------------------------------
 
-
     ¨ ¨  <- Blankernenner , Das ist zu machen , Dies ist Das
-
 
     Der Container Blankernenner Transport etwas mit das durch
     die Eingabe Command/cmd , als Kommando mit gegeben wird.
@@ -70,7 +62,6 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
 --------------------------------------------------------------------
 
-
     , ,  <- Notiz , Was es ist , Tagging , So heißt es
 
     Die Eingabe Notiz ist in Manchen Senarien mit viel Code eine
@@ -80,14 +71,10 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
 ######################################################################
 
-Sie werden in Print , cmd Commando , Blanker Nenner , Notiz ,
+Sie werden in Print , System CMD , MCS CMD , Blanker Nenner , Notiz ,
 den Protein Zelle als Eingabefelder sprich Eingabe mit gegeben ,
 was auch schluss endlich auch nur in Proteinpackete
 als Combination mit Proton(en) oder Warps Mündet durch die Felder .
 
 ###################### Ende der Eingaben  ##########################
 ####################################################################
-
-
-
-

@@ -1,0 +1,57 @@
+@kernel-nr: 14
+####################################################################
+## Identifikation
+
+Identifikation /en werden dazu verwendet Protein / Proton / Warps etc.
+innerhalb der Transaktion zu Nummerieren bzw eine eindeutige
+nummer zuzuweisen , die auch buchstaben und sonderzeichen erfasst
+für erhöhte sicherheits individualitäten ...
+
+Diese þ Identifikation /en werden dazu verwendet Prozessketten
+oder Prozess Starts eindeutig zuzuweisen und , je nach Kritischen
+Aspekten mehrfach oder einzeln mit gegegeben werden und somit den
+gesamten Prozess Sichern ..
+
+--------------------------------------------------------------------
+
+    Definition .
+
+        þ
+
+--------------------------------------------------------------------
+
+    Beispiel  :
+
+¢|
+»['echo'|"Hallo"|{’Wait-s’|¨3¨}]«
+
+øCSS|
+    misc {
+  swallow_regex = ^(kitty)$
+  term = kitty
+  open = kitty
+    }ø
+    = §kitty þ1623512 # þ Optional
+|¢
+
+--------------------------------------------------------------------
+
+ þ Identifikationen können leicht generiert oder hoch komplex generiert
+ weiter gegeben werden , ähnlich von BlockChain , übernommene kernkomponente
+ von BlockChain .. Identifikationen können so sicher sein wie BlockChains , nur
+ ohne Mining ...
+
+ Der þ Generator wird so Konfiguriert das er HochleistungsComputer die
+ Stirn bieten kann und in Regelmäßigen abständen sich selbst aktualiesiert.
+
+ ¢|
+ »[’send'|’þ-generator’|¨(1)¨]«
+  =§prozess-id
+ |¢
+
+ So werden ungefähr die aktualisierungen von statten gehen ...
+
+--------------------------------------------------------------------
+
+################### Ende der Identifikation  #######################
+####################################################################

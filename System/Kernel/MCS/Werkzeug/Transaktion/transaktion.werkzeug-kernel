@@ -7,13 +7,7 @@ TX_END="!¢"
 TX_ACTIVE=0
 declare -a TX_CONTENT=()
 
-source /Pylovara/MCSFramework/MCS.SafeFrame.Core
-source /Pylovara/MCSFramework/MCS.Tokenizer.Core
-source /Pylovara/MCSFramework/MCS.Protein.Register
-source /Pylovara/MCSFramework/MCS.Protein.Handler
-source /Pylovara/MCSFramework/MCS.Proton.Register
-source /Pylovara/MCSFramework/MCS.Proton.Handler
-source /Pylovara/MCSFramework/MCS.þ.Register
+source /Pylovara/System/Kernel/MCS/mcs-prozess.linux-core
 
 start_transaction() {
     TX_ACTIVE=1

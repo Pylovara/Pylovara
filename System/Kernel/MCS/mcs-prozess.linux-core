@@ -107,7 +107,7 @@ void process_mcs_action(const std::string& inner_content, std::vector<std::strin
     }
 
     std::string cmd_name = mcs_clean_char(protein.substr(0, sep), '\''); // z.B. "exec"
-    std::string arg_section = mcs_trim(protein.substr(sep + 1));         // z.B. ¨source=...¨ oder {'Mod'...}
+    std::string arg_section = mcs_trim(protein.substr(sep + 1));          // z.B. ¨source=...¨ oder {'Mod'...}
 
     // Die verbleibenden Daten (Protonen & MCS-Befehl)
     std::string remaining_data = mcs_trim(clean_content.substr(prot_end + 1));
@@ -226,7 +226,7 @@ void mcs_to_hyprland(const std::string& mcs_content) {
             line.find(AKTION_ENDE) != std::string::npos) {
 
             size_t start = line.find(AKTION_START) + AKTION_START.length();
-        size_t end   = line.rfind(AKTION_ENDE);
+        size_t end    = line.rfind(AKTION_ENDE);
 
         if (end == std::string::npos || end < start) continue;
 

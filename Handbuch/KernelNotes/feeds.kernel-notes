@@ -16,7 +16,7 @@ Beispiel an einer Beispiel Transaktion ;
 
 Beispiel Code  Ohne Merge und Feed:
 
-¢|                                             # Transaktion starten
+¢!                                             # Transaktion starten
 »['MotorA'|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«««%50 # Proteinpaket:MotorA,200W,12V mit %50
 = §Displey                                     # der Werte an Display ausgeben
 ¶=                                             # Paralleler Prozess
@@ -25,7 +25,7 @@ Beispiel Code  Ohne Merge und Feed:
 ;;                                             # Paralleler Transport ohne Eingabe
 »[{’Band’|¨2.4G¨}]«                            # WLAN-Band auf 2.4G setzen
 §wlan                                          # Zielreferenz
-|¢                                             # Transaktion beenden
+!¢                                             # Transaktion beenden
 
 Interpretation: Dieser Code sendet Leistung/Volt an einen Motor,
 zeigt 50% der Werte auf einem Display, liest parallel die Temperatur
@@ -35,7 +35,7 @@ in paralleler, systemnaher Steuerung.
 
 Beispiel mit Parallele und Feed (1);
 
-¢|                                              # Transaktion starten
+¢!                                              # Transaktion starten
 »['MotorA'|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«««%50  # Proteinpaket:MotorA,200W,12V mit %50
     = §(1)Displey                               # der Werte an Display ausgeben
 ¶=                                              # Paralleler Prozess
@@ -44,7 +44,7 @@ Beispiel mit Parallele und Feed (1);
 ;;                                              # Paralleler Transport ohne Eingabe
 »[{Band|2.4G}]«                                 # WLAN-Band auf 2.4G setzen
     =  §(1) §WLAN                               # Zielreferenz übernehmen
-|¢                                              # Transaktion beenden
+!¢                                              # Transaktion beenden
 
 Hierbei diente Feed als Duplikator für den Visuellen Displeyoutput ,
 da feed immer mit der selben zahl , buchtstabe , code , symbole , im

@@ -12,7 +12,7 @@ Pylovara organisiert sich in einem klaren Familienmodell:
 *.*-cache   Cache      – Zwischenspeicher für Temp-Daten
 *.*-needles Hardwareb. – Kernelnahe Steuerung (.sys, .ko, .dll)
 --------------------------------------------------------------------
-*.*-kernel  MCS Kernel - Interne MCS Kernel Daten
+*.*-kernel  MCS Kernel - Interne MCS Kernel Daten - Framework
 --------------------------------------------------------------------
 ## Core Datensplittung
 

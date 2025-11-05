@@ -26,7 +26,8 @@ selben Compiler ansprechen
 
 Gleicher Effeckt mit Verschiedenen Umsetzungen :
 
-¢| øC|
+¢!
+ø,C,|
 #include <stdio.h>
 
 int main() {
@@ -35,7 +36,8 @@ Konsole aus
 return 0; // Zeigt an, dass das Programm erfolgreich ausgeführt
 wurde
 }
-ø = $gcc |¢
+ø = $gcc
+!¢
 
 / ølanguage|Codeø Warp (alleine für Compositoren/Compiler)
 
@@ -43,8 +45,8 @@ wurde
 
 MCS-Transaktion mit Warp für C
 
-¢|                                      # Transaktion starten
-øC|                                     # Warp für C-Code
+¢!                                      # Transaktion starten
+ø,C,|                                     # Warp + notiz für C-Code
 #include <stdio.h>
 #include <iwlib.h>
 
@@ -64,7 +66,7 @@ int main() {
     ;;                  # Paralelle Transport
 »[{Band|2.4G}§WLAN]«    # Protein: WLAN-Band auf 2.4G setzen
 = §(1)Displey           # Ergebnis(z. B. Erfolg/Fehler)an Display
-|¢                      # Transaktion beenden
+!¢                      # Transaktion beenden
 
 Interpretation:
 
@@ -84,11 +86,11 @@ direkt an die Assembly,ohne Umrechnungsvariablen, was den Punkt
 
 WLAN-Implementierungsmöglichkeit :
 
-¢|
+¢!
 »[{’Interface’|'wlan0'}|{’Action’|'set_band'}|{’Value’|'2.4G'}]«
 øC|C-Code..ø
 = §gcc
-|¢
+!¢
 
 Warp-Standardisierung: Definiert ein Standard-Format für C-Warps,
 Metadaten,die MCS mitteilen, welche :

@@ -62,6 +62,15 @@ namespace MCS_SYMBOLS {
     const std::string KOMMENTAR = "#";
 }
 
+//  namespace MCS {
+//    std::string trim(const std::string&);
+//    void log(const std::string&);
+//    std::string load_file(const std::string&);
+//    void translate_to_hyprland(const std::string&);
+}
+
+
+
 // -------------------------------------------------------------
 // 3. KERN-LOGIK (Die MCS-Hyprland Übersetzungs-Transaktion)
 // -------------------------------------------------------------

@@ -36,11 +36,11 @@ Transaktion /en.
 --------------------------------------------------------------------
 # Aktionen-anordnung  LowLevel Standart:
 
-¢|
+¢!
  »['cmd'|"print"]«
-|¢
+!¢
 
-¢| »['cmd'|"print"]« |¢
+¢! »['cmd'|"print"]« !¢
 
 --------------------------------------------------------------------
 # Aktion Info:
@@ -52,18 +52,18 @@ schluss dargestellt und diese Schlüsse aber immer ein eigenes
 aktion /s Ende und der anfang vom ersten protein ,
 gewährleistet flexibilität.
 
-# Aktionen-anordnung HighLevel :
+# Aktion/s-anordnung HighLevel mit low-leveloperationen  :
 
-¢|
+¢!
  »['exec'|'once'|¨$terminal¨]
    ¶ ['echo'|"hellowolrd"]«
-|¢
+!¢
 
-¢|
+¢!
  »['exec'|'once'|¨$terminal¨]
    ¶ ['echo'|"hellowolrd"]«
    ° ¶¶ »['exit]«
-|¢
+!¢
 
 info : ¶¶  Else | °  WennNicht  / Muss | ¶   IF
 

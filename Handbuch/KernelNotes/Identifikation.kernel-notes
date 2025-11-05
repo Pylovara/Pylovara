@@ -22,17 +22,17 @@ gesamten Prozess Sichern ..
 
     Beispiel  :
 
-¢|
+¢!
 »['echo'|"Hallo"|{’Wait-s’|¨3¨}]«
 
-øCSS|
+ø,CSS,|
     misc {
   swallow_regex = ^(kitty)$
   term = kitty
   open = kitty
     }ø
     = §kitty þ1623512 # þ Optional
-|¢
+!¢
 
 --------------------------------------------------------------------
 
@@ -44,10 +44,10 @@ gesamten Prozess Sichern ..
  Der þ Generator wird so Konfiguriert das er HochleistungsComputer die
  Stirn bieten kann und in Regelmäßigen abständen sich selbst aktualiesiert.
 
- ¢|
+ ¢!
  »[’send'|’þ-generator’|¨(1)¨]«
-  =§prozess-id
- |¢
+    =§prozess-id
+ !¢
 
  So werden ungefähr die aktualisierungen von statten gehen ...
 

@@ -11,20 +11,20 @@
 
 # 1. CORE LADEN: Die Funktionen müssen global verfügbar sein
 # HIER MÜSSEN ALLE CORE-DATEIEN GE-SOURCED WERDEN:
-source /Pylovara/System/Kernel/MCS/Security/safeframe.security-kernel
-source /Pylovara/System/Kernel/MCS/Security/tokenizer.security-kernel
-source /Pylovara/System/Kernel/MCS/Register/protein-cmd.register-kernel
-source /Pylovara/System/Kernel/MCS/Protein/Handler/protein.handler-kernel
+#source /Pylovara/System/Kernel/MCS/Security/safeframe.security-kernel
+#source /Pylovara/System/Kernel/MCS/Security/tokenizer.security-kernel
+#source /Pylovara/System/Kernel/MCS/Register/protein-cmd.register-kernel
+#source /Pylovara/System/Kernel/MCS/Protein/Handler/protein.handler-kernel
 
 # 2. DIE ALIAS DEFINITIONEN
 # Zentraler Alias: » ruft den Protein-Handler auf
-alias »='handle_protein_packet'
+#alias »='handle_protein_packet'
 
 # Shell-Aliase
-alias to='cd'
+#alias to='cd'
 
 # Desktop Setup Alias (Passt sich dem neuen Pfad an)
-alias setup-desktop='source /Pylovara/Setup/MCS-Hyprland-Dotfiles/mcs-hyprland.fullinstall-core'
+#alias setup-desktop='source /Pylovara/Setup/MCS-Hyprland-Dotfiles/mcs-hyprland.fullinstall-core'
 
 # Monopol Terminal Alias (Kitty)
-alias term='kitty' # Definiert das exklusive Terminal für die MCS-Shell
+#alias term='kitty' # Definiert das exklusive Terminal für die MCS-Shell

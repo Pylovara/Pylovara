@@ -2,8 +2,8 @@
 # Pylovara MCS Transaction Handler + Protein Interpreter (v0.9) Aktiv
 # Neu: þ-ID-Validierung für jede Transaktion
 
-TX_START="¢|"
-TX_END="|¢"
+TX_START="¢!"
+TX_END="!¢"
 TX_ACTIVE=0
 declare -a TX_CONTENT=()
 

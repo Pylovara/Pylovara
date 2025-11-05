@@ -5,25 +5,33 @@
 #include <map>
 #include <sstream>
 #include <algorithm>
+#include <functional>
 
 /**
  * mcs_process.linux-core - MCS-Client-Handler (C++ 17)
- * Grossvater - *.*-core: Übersetzt MCS-Syntax in Hyprland-Konfiguration
- * Erstellt: 2025-10-30 (Brutal-C-Syntax-Adaption)
+ * Großvater - *.*-core: Übersetzt MCS-Syntax in Hyprland-Konfiguration
+ * Erstellt: 2025-10-30 (Brutal-C-Syntax-Adaption, Stable Build)
+ * Version 0.2
+ * Architekt : Thomas Zimmermann
+ * debug und code bereinigung : GPT-3/-4/-5
  */
 
 // -------------------------------------------------------------
 // HILFSFUNKTIONEN (MCS-Kernel-Analogon zu String-Werkzeugen)
 // -------------------------------------------------------------
 
-// Funktion, um führende und nachfolgende Leerzeichen zu entfernen
 std::string mcs_trim(const std::string& str) {
     size_t first = str.find_first_not_of(" \t\n\r");
     if (std::string::npos == first) {
-        return str;
+        return "";
     }
     size_t last = str.find_last_not_of(" \t\n\r");
     return str.substr(first, (last - first + 1));
+}
+
+void mcs_log(const std::string& msg) {
+    std::ofstream log("/Pylovara/System/Logs/mcs-hyprland.log", std::ios::app);
+    log << msg << std::endl;
 }
 
 // -------------------------------------------------------------
@@ -35,25 +43,28 @@ const std::map<std::string, std::string> MCS_MODULES = {
 };
 
 // -------------------------------------------------------------
-// 2. MCS-KERNEL-SYMBOLE (Transaktions- und Aktions-Identifier)
+// 2. MCS-KERNEL-SYMBOLE – Syntax v2.6
 // -------------------------------------------------------------
 namespace MCS_SYMBOLS {
-    const std::string TRANSAKTION_START = "¢|";
-    const std::string TRANSAKTION_ENDE = "|¢";
-    const std::string AKTION_START = "»['"; // Geändert für sauberen Start
-    const std::string AKTION_ENDE = "]«";
-    const std::string BLANKER_NENNER = "¨"; // Einzelzeichen für einfacheren C++ Split
-    const std::string PROT_TRENNER = "|";
+    const std::string TRANSAKTION_START = "¢!";
+    const std::string TRANSAKTION_ENDE = "!¢";
+    const std::string AKTION_START = "»";
+    const std::string AKTION_ENDE = "«";
+    const std::string PROTEIN_ANFANG = "[";
+    const std::string PROTEIN_ENDE = "]";
+    const std::string PROTON_ANFANG = "{";
+    const std::string PROTON_ENDE = "}";
+    const std::string BLANKER_NENNER = "¨";  // Einfacher Separator
+    const std::string MCS_HYPR_CMD = "’";    // Hyprland-Kernel-Befehle
+    const std::string SYSTEM_CMD = "'";      // Systemweite Befehle
+    const std::string PRINT_NENNER = R"(")"; // Für Textausgaben
+    const std::string TRENNBEFEHL_NENNER = "|";
     const std::string KOMMENTAR = "#";
 }
 
 // -------------------------------------------------------------
 // 3. KERN-LOGIK (Die MCS-Hyprland Übersetzungs-Transaktion)
 // -------------------------------------------------------------
-
-/**
- * Führt die Übersetzungstransaktion von MCS nach Hyprland durch.
- */
 void mcs_to_hyprland(const std::string& mcs_content) {
     std::vector<std::string> hyprland_conf;
     std::stringstream mcs_stream(mcs_content);
@@ -64,136 +75,152 @@ void mcs_to_hyprland(const std::string& mcs_content) {
     while (std::getline(mcs_stream, line)) {
         line = mcs_trim(line);
 
-        // Ignoriere Kommentare und leere Zeilen (Kernel 08, 05)
-        if (line.empty() || line.rfind(MCS_SYMBOLS::KOMMENTAR, 0) == 0) {
+        // Kommentare & Leere Zeilen überspringen
+        if (line.empty() || line.rfind(MCS_SYMBOLS::KOMMENTAR, 0) == 0)
             continue;
-        }
 
-        // 1. Transaktions-Erkennung (MCS-Regel 02)
+        // 1. Transaktionsrahmen
         if (line.rfind(MCS_SYMBOLS::TRANSAKTION_START, 0) == 0) {
-            hyprland_conf.push_back("\n# --- MCS-Transaktions-Start ---");
+            hyprland_conf.push_back("\n# --- MCS-Transaktion-Start ---");
             continue;
         }
-        if (line.rfind(MCS_SYMBOLS::TRANSAKTION_ENDE) != std::string::npos && line.rfind(MCS_SYMBOLS::TRANSAKTION_ENDE) == line.length() - MCS_SYMBOLS::TRANSAKTION_ENDE.length()) {
-            hyprland_conf.push_back("# --- MCS-Transaktions-Ende ---\n");
+        if (line.find(MCS_SYMBOLS::TRANSAKTION_ENDE) != std::string::npos) {
+            hyprland_conf.push_back("# --- MCS-Transaktion-Ende ---\n");
             continue;
         }
 
-        // 2. Protein-Erkennung und Konvertierung (MCS-Regel 03, 06)
-        if (line.rfind(MCS_SYMBOLS::AKTION_START, 0) == 0 && line.rfind(MCS_SYMBOLS::AKTION_ENDE) != std::string::npos) {
+        // 2. Aktionen (Proteine) erkennen
+        if (line.rfind(MCS_SYMBOLS::AKTION_START, 0) == 0 && line.find(MCS_SYMBOLS::AKTION_ENDE) != std::string::npos) {
 
-            // Extrahieren des inneren Inhalts: line[»[' : ]«]
             size_t start = line.find(MCS_SYMBOLS::AKTION_START) + MCS_SYMBOLS::AKTION_START.length();
             size_t end = line.rfind(MCS_SYMBOLS::AKTION_ENDE);
-            if (end == std::string::npos || end < start) continue;
+            if (end == std::string::npos || end < start)
+                continue;
 
             std::string inner_content = mcs_trim(line.substr(start, end - start));
 
-            // CMD ist der erste Teil in einfachen Anführungszeichen:
+            // Befehl (CMD) extrahieren
             size_t cmd_end = inner_content.find('\'');
-            if (cmd_end == std::string::npos) continue;
+            if (cmd_end == std::string::npos)
+                continue;
 
-            std::string cmd = inner_content.substr(0, cmd_end); // z.B. 'bind'
+            std::string cmd = inner_content.substr(0, cmd_end);
             std::string proton_data = mcs_trim(inner_content.substr(cmd_end + 1));
 
-            // CMD-Konvertierung (Kern der MCS->Hyprland Übersetzung)
-
+            // -------------------------------------------------------------
+            // BIND-BEFEHL
+            // -------------------------------------------------------------
             if (cmd == "bind") {
-                // Erwartetes Format (MCS): key'|{Mod|mainMod}|{Key|Return}|¨exec kitty¨
-
-                // Wir suchen nach den Komponenten: {Mod|...}, {Key|...}, ¨...¨ (Blankernenner)
                 std::string modifiers, key, command;
 
-                // 1. Finden der Modifikatoren {Mod|...}
-                if (size_t mod_start = proton_data.find("{Mod|"); mod_start != std::string::npos) {
+                // Modifikatoren
+                size_t mod_start = proton_data.find("{Mod|");
+                if (mod_start != std::string::npos) {
                     size_t mod_end = proton_data.find('}', mod_start);
-                    if (mod_end != std::string::npos) {
+                    if (mod_end != std::string::npos && mod_end > mod_start + 5)
                         modifiers = proton_data.substr(mod_start + 5, mod_end - (mod_start + 5));
-                    }
                 }
 
-                // 2. Finden der Taste {Key|...}
-                if (size_t key_start = proton_data.find("{Key|"); key_start != std::string::npos) {
+                // Key
+                size_t key_start = proton_data.find("{Key|");
+                if (key_start != std::string::npos) {
                     size_t key_end = proton_data.find('}', key_start);
-                    if (key_end != std::string::npos) {
+                    if (key_end != std::string::npos && key_end > key_start + 5)
                         key = proton_data.substr(key_start + 5, key_end - (key_start + 5));
-                    }
                 }
 
-                // 3. Finden des Blanken Nenners ¨...¨ (Terminal-Befehl)
-                if (size_t cmd_start = proton_data.find(MCS_SYMBOLS::BLANKER_NENNER); cmd_start != std::string::npos) {
-                    size_t cmd_end = proton_data.find(MCS_SYMBOLS::BLANKER_NENNER, cmd_start + 1);
-                    if (cmd_end != std::string::npos) {
-                        command = proton_data.substr(cmd_start + 1, cmd_end - (cmd_start + 1));
-                    }
+                // Command: Reihenfolge nach Priorität (MCS, System, Blanker)
+                size_t pos, endpos;
+                if ((pos = proton_data.find(MCS_SYMBOLS::MCS_HYPR_CMD)) != std::string::npos) {
+                    endpos = proton_data.find(MCS_SYMBOLS::MCS_HYPR_CMD, pos + 1);
+                    if (endpos != std::string::npos)
+                        command = proton_data.substr(pos + 1, endpos - pos - 1);
+                }
+                else if ((pos = proton_data.find(MCS_SYMBOLS::SYSTEM_CMD)) != std::string::npos) {
+                    endpos = proton_data.find(MCS_SYMBOLS::SYSTEM_CMD, pos + 1);
+                    if (endpos != std::string::npos)
+                        command = proton_data.substr(pos + 1, endpos - pos - 1);
+                }
+                else if ((pos = proton_data.find(MCS_SYMBOLS::BLANKER_NENNER)) != std::string::npos) {
+                    endpos = proton_data.find(MCS_SYMBOLS::BLANKER_NENNER, pos + 1);
+                    if (endpos != std::string::npos)
+                        command = proton_data.substr(pos + 1, endpos - pos - 1);
                 }
 
-                // Generiere Hyprland-Syntax
                 if (!modifiers.empty() && !key.empty() && !command.empty()) {
                     hyprland_conf.push_back("bind = " + modifiers + ", " + key + ", exec, " + command);
                     continue;
+                } else {
+                    mcs_log("[¢!] WARN: Ungültiger bind-Befehl erkannt.");
                 }
+            }
 
-            } else if (cmd == "exec") {
-                 // Erwartetes Format (MCS): exec'|¨exec rofi -show drun¨
-                if (size_t cmd_start = proton_data.find(MCS_SYMBOLS::BLANKER_NENNER); cmd_start != std::string::npos) {
+            // -------------------------------------------------------------
+            // EXEC-BEFEHL
+            // -------------------------------------------------------------
+            else if (cmd == "exec") {
+                size_t cmd_start = proton_data.find(MCS_SYMBOLS::BLANKER_NENNER);
+                if (cmd_start != std::string::npos) {
                     size_t cmd_end = proton_data.find(MCS_SYMBOLS::BLANKER_NENNER, cmd_start + 1);
-                    if (cmd_end != std::string::npos) {
-                        std::string command = proton_data.substr(cmd_start + 1, cmd_end - (cmd_start + 1));
+                    if (cmd_end != std::string::npos && cmd_end > cmd_start + 1) {
+                        std::string command = proton_data.substr(cmd_start + 1, cmd_end - cmd_start - 1);
                         hyprland_conf.push_back("exec = " + command);
                         continue;
                     }
                 }
-            } else {
-                 // Warnung für Aktionen, die nicht direkt Hyprland-relevant sind (z.B. 'echo', 'send')
-                 std::cerr << "[¢|][WARN] Unbekannte MCS-Aktion im Hyprland-Kontext übersprungen: " << cmd << std::endl;
+            }
+
+            // -------------------------------------------------------------
+            // UNBEKANNTE AKTION
+            // -------------------------------------------------------------
+            else {
+                std::cerr << "[¢!] WARN: Unbekannte MCS-Aktion im Hyprland-Kontext übersprungen: " << cmd << std::endl;
+                mcs_log("[¢!] WARN: Unbekannte MCS-Aktion übersprungen: " + cmd);
             }
         }
     }
 
-    // 3. Exportiere die fertige Hyprland-Konfig
+    // -------------------------------------------------------------
+    // EXPORT
+    // -------------------------------------------------------------
     const std::string output_path = MCS_MODULES.at("HYPRLAND_OUTPUT");
     std::ofstream outfile(output_path);
 
     if (outfile.is_open()) {
-        for (const std::string& conf_line : hyprland_conf) {
+        for (const std::string& conf_line : hyprland_conf)
             outfile << conf_line << "\n";
-        }
         outfile.close();
-        std::cout << "[«] MCS-Transaktion abgeschlossen. Native Konfiguration erstellt: " << output_path << std::endl;
+
+        std::cout << "[«] MCS-Transaktion abgeschlossen. Native Konfiguration erstellt: "
+        << output_path << std::endl;
         std::cout << "[«] Status: " << hyprland_conf.size() << " Zeilen Hyprland-Konfig generiert." << std::endl;
     } else {
-        std::cerr << "[¢|][FEHLER] Konnte Hyprland-Ausgabedatei nicht öffnen: " << output_path << std::endl;
+        std::cerr << "[¢!] FEHLER: Konnte Hyprland-Ausgabedatei nicht öffnen: " << output_path << std::endl;
+        mcs_log("[¢!] FEHLER: Ausgabe konnte nicht geöffnet werden.");
     }
 }
 
-/**
- * Lade die MCS-Quelldatei (Grandfather-Core-Aufgabe).
- */
+// -------------------------------------------------------------
+// 4. LADEFUNKTION DES MCS-KERNELS
+// -------------------------------------------------------------
 std::string load_mcs_file(const std::string& filepath) {
     std::ifstream infile(filepath);
-    std::string content((std::istreambuf_iterator<char>(infile)), std::istreambuf_iterator<char>());
-
     if (!infile.is_open()) {
-        std::cerr << "[¢|][FEHLER] Quelldatei nicht gefunden: " << filepath << std::endl;
+        std::cerr << "[¢!] FEHLER: Quelldatei nicht gefunden: " << filepath << std::endl;
+        mcs_log("[¢!] FEHLER: Quelldatei nicht gefunden: " + filepath);
         return "";
     }
+    std::string content((std::istreambuf_iterator<char>(infile)), std::istreambuf_iterator<char>());
     std::cout << "[»] Lade MCS-Datei: " << filepath << std::endl;
     return content;
 }
 
 // -------------------------------------------------------------
-// 4. START DES MCS-KERNELS
+// 5. START DES MCS-KERNELS
 // -------------------------------------------------------------
-
 int main() {
-    // 1. Lade das MCS-Hyprland-Core-Datenpaket
     std::string mcs_data = load_mcs_file(MCS_MODULES.at("MCS_SOURCE_FILE"));
-
-    if (!mcs_data.empty()) {
-        // 2. Starte die Übersetzungstransaktion
+    if (!mcs_data.empty())
         mcs_to_hyprland(mcs_data);
-    }
-
     return 0;
 }

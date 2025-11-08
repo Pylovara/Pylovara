@@ -1,0 +1,298 @@
+import re
+import os
+import sys
+from datetime import datetime
+
+# --- 1. KERNEL KONFIGURATION (Pfad-Register) ---
+# Die Pfade dienen als PoC-Standard und sollten in einer produktiven Umgebung
+# dynamisch geladen werden.
+MCS_MODULES = {
+    "MCS_SOURCE_FILE": "hyprland.mcs-core",
+    "HYPRLAND_OUTPUT": "hypr/hyprland.conf",
+    "MCS_LOG_FILE":    "logs/mcs-hyprland.log"
+}
+
+def mcs_log(msg):
+    """Schreibt Log-Nachricht in die MCS-Log-Datei."""
+    try:
+        # Erstellt den 'logs' Ordner, falls nicht vorhanden
+        log_dir = os.path.dirname(MCS_MODULES["MCS_LOG_FILE"])
+        os.makedirs(log_dir, exist_ok=True)
+
+        with open(MCS_MODULES["MCS_LOG_FILE"], 'a') as f:
+            f.write(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}\n")
+    except Exception as e:
+        print(f"[CRIT] Konnte Log-Datei nicht schreiben: {e}", file=sys.stderr)
+
+# --- 2. MCS SYMBOLTABELLE (Kernel Syntax v2.7) ---
+class MCS_SYMBOLS:
+    """Definiert die Kernel-Syntax-Symbole für v2.7, inklusive Bash-Symbole."""
+    TRANSAKTION_START       = "¢!"
+    TRANSAKTION_ENDE        = "!¢"
+    AKTION_START            = "»"
+    AKTION_ENDE             = "«"
+    PROTEIN_ANFANG          = "["
+    PROTEIN_ENDE            = "]"
+    PROTON_ANFANG           = "{"
+    PROTON_ENDE             = "}"
+    BLANKER_NENNER_CMD_START= "¨"
+    BLANKER_NENNER_CMD_ENDE = "¨"
+    TRENNBEFEHL             = "|"
+    MCS_HYPR_CMD_START      = "’"
+    MCS_HYPR_CMD_END        = "’"
+    BASH_CMD_START          = "'" # Neu
+    BASH_CMD_ENDE           = "'" # Neu
+    KOMMENTAR               = "#"
+
+# --- 3. MCS → HYPRLAND TRANSLATOR ---
+
+def clean_and_split_protein(protein):
+    """Zerlegt den Protein-Inhalt in Kommando und Argumentsektion."""
+    protein = protein.strip().strip("'").strip('"')
+
+    parts = [p.strip().strip("'").strip('"') for p in protein.split(MCS_SYMBOLS.TRENNBEFEHL, 1)]
+
+    if len(parts) != 2:
+        mcs_log(f"WARN: Trennbefehl | fehlt im Protein: {protein}")
+        return None, None
+
+    return parts[0].lower(), parts[1]
+
+
+def process_mcs_action(inner_content, hyprland_conf):
+    """
+    Parsed den Inhalt zwischen » und « und konvertiert ihn in Hyprland-Syntax.
+    """
+    content = inner_content.strip()
+
+    # 1. Protein-Struktur finden: ['cmd'|...]
+    prot_match = re.search(r"\[(.*?)\]", content, re.DOTALL)
+    if not prot_match:
+        mcs_log(f"WARN: Protein-Struktur fehlt in Aktion: {content}")
+        return
+
+    protein_content = prot_match.group(1).strip()
+    cmd_name, arg_section = clean_and_split_protein(protein_content)
+
+    if not cmd_name:
+        return
+
+    # Die restlichen Daten nach dem Protein für BIND
+    remaining_data = content[prot_match.end():].strip()
+
+    # Argument Sektion sollte den Befehl im Blanker Nenner enthalten: ¨cmd¨
+    nenner_match = re.search(r"¨(.*?)¨", arg_section)
+    if not nenner_match:
+        mcs_log(f"WARN: Blanker Nenner (¨...¨) fehlt in Aktion '{cmd_name}': {arg_section}")
+        # Weiterverarbeiten, falls es sich um eine BIND-Aktion ohne Nenner handelt
+        if cmd_name not in ["bind"]:
+             return
+
+    hypr_command = nenner_match.group(1).strip() if nenner_match else ""
+
+    # -----------------------------------------------------
+    # EXEC BEFEHL (Nur für Hyprland-Befehle oder Source-Inferenz)
+    # -----------------------------------------------------
+    if cmd_name == "exec":
+        # Wenn der Befehl bereits mit einem Hyprland-Schlüsselwort beginnt, direkt übernehmen
+        if hypr_command.startswith("exec-once") or hypr_command.startswith("exec") or hypr_command.startswith("source"):
+            hyprland_conf.append(hypr_command)
+
+        # NEUE LOGIK: Source-Inferenz
+        elif hypr_command.endswith(".conf") or hypr_command.endswith(".sh") or "configs" in hypr_command.lower() or "userconfigs" in hypr_command.lower():
+            hyprland_conf.append(f"source = {hypr_command}")
+
+        else:
+            # Fallback für unklare Befehle, die nicht in die Source-Logik fallen
+            mcs_log(f"WARN: Unklare 'exec' Anweisung wird als 'exec-once' interpretiert: {hypr_command}")
+            hyprland_conf.append(f"exec-once = {hypr_command}")
+
+    # -----------------------------------------------------
+    # RUN BEFEHL (Wird immer zu Hyprland 'exec = ...' oder 'exec-once = ...')
+    # -----------------------------------------------------
+    elif cmd_name == "run":
+        # Der 'run' Befehl wird zum Standard 'exec'
+        hyprland_conf.append(f"exec = {hypr_command}")
+
+    # -----------------------------------------------------
+    # BIND BEFEHL
+    # -----------------------------------------------------
+    elif cmd_name == "bind":
+        # Nutzt Regex, um die komplexen Protonen und den MCS-Befehl zu extrahieren
+
+        mod_match = re.search(r"\{'Mod'\|\"(.*?)\"\}", remaining_data)
+        key_match = re.search(r"\{'Key'\|\"(.*?)\"\}", remaining_data)
+        cmd_match = re.search(r"’(.*?)’", remaining_data) # MCS_HYPR_CMD_START/ENDE
+
+        if mod_match and key_match and cmd_match:
+            modifiers = mod_match.group(1).strip()
+            key = key_match.group(1).strip()
+            command_and_arg = cmd_match.group(1).strip()
+
+            # Zerlege den Hyprland-Befehl: exec|alacritty (oder dispatch|...)
+            try:
+                command_type, command_val = command_and_arg.split(MCS_SYMBOLS.TRENNBEFEHL, 1)
+
+                # Generiere Hyprland-Syntax
+                hypr_line = f"bind = {modifiers}, {key}, {command_type.strip()}, {command_val.strip()}"
+                hyprland_conf.append(hypr_line)
+            except ValueError:
+                 mcs_log(f"WARN: Ungültiger Trennbefehl im Hyprland-CMD: {command_and_arg}")
+        else:
+            mcs_log(f"WARN: Ungültiger/unvollständiger bind-Befehl erkannt (fehlende Protonen/CMD): {remaining_data}")
+
+
+    # -----------------------------------------------------
+    # Unbekannte Aktion
+    # -----------------------------------------------------
+    else:
+        mcs_log(f"WARN: Unbekannte MCS-Aktion im Hyprland-Kontext: {cmd_name}")
+
+
+def mcs_to_hyprland_translator(mcs_content):
+    """Hauptübersetzer, der die MCS-Daten zeilenweise verarbeitet."""
+
+    hyprland_conf = []
+
+    print("[»] Initialisiere MCS Kernel Prozess (Python Core)...")
+    print("[»] Beginne Transkodierung: MCS-Kernel 2.7 -> Hyprland...")
+
+    for line in mcs_content.splitlines():
+        line = line.strip()
+
+        if not line or line.startswith(MCS_SYMBOLS.KOMMENTAR):
+            continue
+
+        # Transaktionsrahmen erkennen
+        if line.startswith(MCS_SYMBOLS.TRANSAKTION_START):
+            # Ersetzt durch Hyprland-Kommentar
+            hyprland_conf.append("\n# --- MCS-Transaktion-Start ---")
+            continue
+        if line.endswith(MCS_SYMBOLS.TRANSAKTION_ENDE):
+            hyprland_conf.append("# --- MCS-Transaktion-Ende ---\n")
+            continue
+
+        # Aktionrahmen erkennen und analysieren
+        if line.startswith(MCS_SYMBOLS.AKTION_START) and line.endswith(MCS_SYMBOLS.AKTION_ENDE):
+
+            start_index = len(MCS_SYMBOLS.AKTION_START)
+            end_index = len(line) - len(MCS_SYMBOLS.AKTION_ENDE)
+            inner_content = line[start_index:end_index]
+
+            process_mcs_action(inner_content, hyprland_conf)
+
+    # -------------------------------------------------------------
+    # HYPRLAND KONFIG EXPORTIEREN
+    # -------------------------------------------------------------
+    output_path = MCS_MODULES["HYPRLAND_OUTPUT"]
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    try:
+        with open(output_path, 'w') as outfile:
+            outfile.write("# Generated by Pylovara MCS Kernel 2.7 -> Python Core Handler\n")
+            outfile.write(f"# Output Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+            outfile.write('\n'.join(hyprland_conf) + '\n')
+
+        print(f"[«] MCS-Transaktion abgeschlossen. Ausgabe: {output_path}")
+        print(f"[«] Zeilen generiert: {len(hyprland_conf)}")
+    except Exception as e:
+        print(f"[¢!] FEHLER: Konnte Datei nicht öffnen → {output_path}. Grund: {e}", file=sys.stderr)
+
+
+def load_mcs_file(filepath):
+    """Lädt die MCS-Quelldatei."""
+    try:
+        with open(filepath, 'r') as infile:
+            content = infile.read()
+        print(f"[»] Lade MCS-Datei: {filepath}")
+        return content
+    except FileNotFoundError:
+        mcs_log(f"FEHLER: Quelldatei nicht gefunden: {filepath}")
+        print(f"[¢!] FEHLER: Quelldatei nicht gefunden: {filepath}", file=sys.stderr)
+        return ""
+
+# -------------------------------------------------------------
+# 4. KERNEL MAIN LOOP
+# -------------------------------------------------------------
+
+def main():
+    print("--------------------------------------------------------")
+    mcs_log("Kernel Start (Python PoC)")
+
+    # Simuliert die vollständige MCS-Datei mit der Source- und Keybinds-Logik
+    simulated_mcs_content = """
+# ---------------------------------------------------------
+# 💫 Pylovara MCS Kernel Syntax 2.7 → Hyprland PoC Beispiel
+# ---------------------------------------------------------
+
+¢!
+# Source initial-boot.sh
+»['exec'|¨$HOME/.config/hypr/initial-boot.sh¨]«
+!¢
+
+
+# ---------------------------------------------------------
+# Sourcing external config files
+# ---------------------------------------------------------
+
+¢!
+# Dies sollte zu 'source = ...' führen (Konfigurationspfad-Inferenz)
+»['exec'|¨$HOME/.config/hypr/configs¨]«
+»['exec'|¨$HOME/.config/hypr/configs/Keybinds.conf¨]«
+!¢
+
+
+# ---------------------------------------------------------
+# User Configuration Area
+# ---------------------------------------------------------
+
+¢!
+»['exec'|¨$HOME/.config/hypr/UserConfigs/Startup_Apps.conf¨]«
+»['exec'|¨$HOME/.config/hypr/UserConfigs/UserKeybinds.conf¨]«
+!¢
+
+
+# ---------------------------------------------------------
+# Ein Standard-Programm starten (mit der neuen 'run' Aktion)
+# ---------------------------------------------------------
+¢!
+»['run'|¨exec-once mako¨]«
+»['run'|¨waybar¨]«
+!¢
+
+
+# ---------------------------------------------------------
+# Beispiel für BIND-Aktion
+# ---------------------------------------------------------
+¢!
+# Bindung: Terminal starten
+»['bind'|¨NONE¨] {'Mod'|"ALT"} {'Key'|"return"} ’exec|alacritty’«
+
+# Bindung: Fenster schließen (killactive)
+»['bind'|¨NONE¨] {'Mod'|"ALT"} {'Key'|"q"} ’killactive|’«
+!¢
+
+
+# ---------------------------------------------------------
+# Ende der Datei / PoC 2.7
+# ---------------------------------------------------------
+"""
+    # Speichert die simulierte Datei, damit der Ladevorgang funktioniert
+    with open(MCS_MODULES["MCS_SOURCE_FILE"], 'w') as f:
+        f.write(simulated_mcs_content)
+
+
+    try:
+        mcs_data = load_mcs_file(MCS_MODULES["MCS_SOURCE_FILE"])
+        if mcs_data:
+            mcs_to_hyprland_translator(mcs_data)
+        else:
+            print("[¢!] Kein Input – Kernel beendet.")
+    except Exception as e:
+        print(f"[¢!] KERNEL FEHLER: Ein unerwarteter Fehler ist aufgetreten: {e}", file=sys.stderr)
+
+    print("--------------------------------------------------------")
+
+if __name__ == "__main__":
+    main()

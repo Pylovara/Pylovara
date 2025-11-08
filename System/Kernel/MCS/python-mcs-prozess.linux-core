@@ -4,18 +4,23 @@ import sys
 from datetime import datetime
 
 # --- 1. KERNEL KONFIGURATION (Pfad-Register) ---
-# Die Pfade dienen als PoC-Standard und sollten in einer produktiven Umgebung
-# dynamisch geladen werden.
+# WICHTIG: Diese Pfade definieren das Mapping von MCS-Quelle zu Hyprland-Ziel.
+# Sie müssen so angepasst werden, dass sie mit der Pylovara-Architektur übereinstimmen.
 MCS_MODULES = {
-    "MCS_SOURCE_FILE": "hyprland.mcs-core",
-    "HYPRLAND_OUTPUT": "hypr/hyprland.conf",
+    # Absolute Pfade müssen hier gesetzt werden.
+    # Dies ist die MCS-Quelldatei, die die Hyprland-Konfiguration definiert.
+    "MCS_SOURCE_FILE": "/Pylovara/Setup/MCS-Hyprland-Dotfiles/hyprland.mcs-core",
+
+    # Dies ist das generierte Ziel (die fertige Hyprland-Konfigurationsdatei).
+    "HYPRLAND_OUTPUT": os.path.expanduser("~/.config/hypr/hyprland.conf"),
+
+    # Pfad für das interne Logging des MCS-Kerns.
     "MCS_LOG_FILE":    "logs/mcs-hyprland.log"
 }
 
 def mcs_log(msg):
     """Schreibt Log-Nachricht in die MCS-Log-Datei."""
     try:
-        # Erstellt den 'logs' Ordner, falls nicht vorhanden
         log_dir = os.path.dirname(MCS_MODULES["MCS_LOG_FILE"])
         os.makedirs(log_dir, exist_ok=True)
 
@@ -26,7 +31,7 @@ def mcs_log(msg):
 
 # --- 2. MCS SYMBOLTABELLE (Kernel Syntax v2.7) ---
 class MCS_SYMBOLS:
-    """Definiert die Kernel-Syntax-Symbole für v2.7, inklusive Bash-Symbole."""
+    """Definiert die Kernel-Syntax-Symbole für v2.7."""
     TRANSAKTION_START       = "¢!"
     TRANSAKTION_ENDE        = "!¢"
     AKTION_START            = "»"
@@ -40,8 +45,6 @@ class MCS_SYMBOLS:
     TRENNBEFEHL             = "|"
     MCS_HYPR_CMD_START      = "’"
     MCS_HYPR_CMD_END        = "’"
-    BASH_CMD_START          = "'" # Neu
-    BASH_CMD_ENDE           = "'" # Neu
     KOMMENTAR               = "#"
 
 # --- 3. MCS → HYPRLAND TRANSLATOR ---
@@ -82,37 +85,37 @@ def process_mcs_action(inner_content, hyprland_conf):
 
     # Argument Sektion sollte den Befehl im Blanker Nenner enthalten: ¨cmd¨
     nenner_match = re.search(r"¨(.*?)¨", arg_section)
-    if not nenner_match:
-        mcs_log(f"WARN: Blanker Nenner (¨...¨) fehlt in Aktion '{cmd_name}': {arg_section}")
-        # Weiterverarbeiten, falls es sich um eine BIND-Aktion ohne Nenner handelt
-        if cmd_name not in ["bind"]:
-             return
-
     hypr_command = nenner_match.group(1).strip() if nenner_match else ""
 
     # -----------------------------------------------------
-    # EXEC BEFEHL (Nur für Hyprland-Befehle oder Source-Inferenz)
+    # EXEC & RUN BEFEHLE (Konvertierung zu Hyprland exec/source)
     # -----------------------------------------------------
-    if cmd_name == "exec":
-        # Wenn der Befehl bereits mit einem Hyprland-Schlüsselwort beginnt, direkt übernehmen
+    if cmd_name in ["exec", "run"]:
+        if not hypr_command:
+            mcs_log(f"WARN: Keine Befehlsdefinition (¨...¨) für '{cmd_name}' gefunden: {arg_section}")
+            return
+
+        # Hyprland-Befehle, die direkt übernommen werden
         if hypr_command.startswith("exec-once") or hypr_command.startswith("exec") or hypr_command.startswith("source"):
             hyprland_conf.append(hypr_command)
 
-        # NEUE LOGIK: Source-Inferenz
+        # Source-Inferenz: Wenn der Befehl wahrscheinlich eine externe Konfigurationsdatei ist
         elif hypr_command.endswith(".conf") or hypr_command.endswith(".sh") or "configs" in hypr_command.lower() or "userconfigs" in hypr_command.lower():
-            hyprland_conf.append(f"source = {hypr_command}")
+            # Source wird nur gesetzt, wenn es nicht bereits mit 'source' beginnt
+            if not hypr_command.startswith("source"):
+                 hyprland_conf.append(f"source = {hypr_command}")
+            else:
+                 hyprland_conf.append(hypr_command)
 
+        # Fallback auf Standard exec-once
         else:
-            # Fallback für unklare Befehle, die nicht in die Source-Logik fallen
-            mcs_log(f"WARN: Unklare 'exec' Anweisung wird als 'exec-once' interpretiert: {hypr_command}")
-            hyprland_conf.append(f"exec-once = {hypr_command}")
+            if cmd_name == "exec":
+                mcs_log(f"INFO: 'exec' Anweisung wird als 'exec-once' interpretiert: {hypr_command}")
+                hyprland_conf.append(f"exec-once = {hypr_command}")
+            elif cmd_name == "run":
+                 # 'run' ist eine direkte Ausführung und wird zu 'exec ='
+                hyprland_conf.append(f"exec = {hypr_command}")
 
-    # -----------------------------------------------------
-    # RUN BEFEHL (Wird immer zu Hyprland 'exec = ...' oder 'exec-once = ...')
-    # -----------------------------------------------------
-    elif cmd_name == "run":
-        # Der 'run' Befehl wird zum Standard 'exec'
-        hyprland_conf.append(f"exec = {hypr_command}")
 
     # -----------------------------------------------------
     # BIND BEFEHL
@@ -165,7 +168,6 @@ def mcs_to_hyprland_translator(mcs_content):
 
         # Transaktionsrahmen erkennen
         if line.startswith(MCS_SYMBOLS.TRANSAKTION_START):
-            # Ersetzt durch Hyprland-Kommentar
             hyprland_conf.append("\n# --- MCS-Transaktion-Start ---")
             continue
         if line.endswith(MCS_SYMBOLS.TRANSAKTION_ENDE):
@@ -186,6 +188,7 @@ def mcs_to_hyprland_translator(mcs_content):
     # -------------------------------------------------------------
     output_path = MCS_MODULES["HYPRLAND_OUTPUT"]
 
+    # Stelle sicher, dass der Zielordner existiert (z.B. ~/.config/hypr)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
     try:
@@ -218,73 +221,76 @@ def load_mcs_file(filepath):
 
 def main():
     print("--------------------------------------------------------")
-    mcs_log("Kernel Start (Python PoC)")
+    mcs_log("Kernel Start (Python PoC - Productive Path)")
 
-    # Simuliert die vollständige MCS-Datei mit der Source- und Keybinds-Logik
+    # Pfade aus MCS_MODULES übernehmen
+    mcs_source_file = MCS_MODULES["MCS_SOURCE_FILE"]
+    hyprland_output_file = MCS_MODULES["HYPRLAND_OUTPUT"]
+
+    # Nur für diesen PoC-Lauf: Simulierte MCS-Quelldatei am erwarteten Pfad erstellen
+    # In einer realen Umgebung müsste diese Datei bereits existieren.
     simulated_mcs_content = """
 # ---------------------------------------------------------
-# 💫 Pylovara MCS Kernel Syntax 2.7 → Hyprland PoC Beispiel
+# 💫 Pylovara MCS Kernel Syntax 2.7 → Hyprland Konfiguration
+# Die MCS-Quelle definiert die gesamte ~/.config/hypr/hyprland.conf
 # ---------------------------------------------------------
 
 ¢!
-# Source initial-boot.sh
-»['exec'|¨$HOME/.config/hypr/initial-boot.sh¨]«
+# System-Initialisierung (z.B. environment variables)
+»['exec'|¨source = $HOME/.config/hypr/config/variables.conf¨]«
 !¢
 
 
 # ---------------------------------------------------------
-# Sourcing external config files
+# Sourcing externer Konfigurationsdateien
 # ---------------------------------------------------------
-
 ¢!
-# Dies sollte zu 'source = ...' führen (Konfigurationspfad-Inferenz)
-»['exec'|¨$HOME/.config/hypr/configs¨]«
-»['exec'|¨$HOME/.config/hypr/configs/Keybinds.conf¨]«
+# Inferenz: MCS 'exec' mit .conf Endung wird zu Hyprland 'source ='
+»['exec'|¨$HOME/.config/hypr/configs/WindowRules.conf¨]«
+»['exec'|¨$HOME/.config/hypr/UserConfigs/Appearance.conf¨]«
 !¢
 
 
 # ---------------------------------------------------------
-# User Configuration Area
-# ---------------------------------------------------------
-
-¢!
-»['exec'|¨$HOME/.config/hypr/UserConfigs/Startup_Apps.conf¨]«
-»['exec'|¨$HOME/.config/hypr/UserConfigs/UserKeybinds.conf¨]«
-!¢
-
-
-# ---------------------------------------------------------
-# Ein Standard-Programm starten (mit der neuen 'run' Aktion)
+# Start von Diensten und Anwendungen (run = exec-once)
 # ---------------------------------------------------------
 ¢!
 »['run'|¨exec-once mako¨]«
-»['run'|¨waybar¨]«
+»['run'|¨exec-once waybar¨]«
+»['exec'|¨exec alacritty¨]« # Läuft hier als 'exec' (nicht exec-once)
 !¢
 
 
 # ---------------------------------------------------------
-# Beispiel für BIND-Aktion
+# Tastenkombinationen (BIND-Aktion)
 # ---------------------------------------------------------
 ¢!
-# Bindung: Terminal starten
+# Bindung: Terminal starten (Standard)
 »['bind'|¨NONE¨] {'Mod'|"ALT"} {'Key'|"return"} ’exec|alacritty’«
 
 # Bindung: Fenster schließen (killactive)
 »['bind'|¨NONE¨] {'Mod'|"ALT"} {'Key'|"q"} ’killactive|’«
+
+# Bindung: Arbeitsfläche 2 wechseln
+»['bind'|¨NONE¨] {'Mod'|"ALT"} {'Key'|"2"} ’workspace|2’«
+
+# Bindung: Fenster in Arbeitsfläche 3 verschieben
+»['bind'|¨NONE¨] {'Mod'|"ALT SHIFT"} {'Key'|"3"} ’movetoworkspace|3’«
 !¢
 
-
-# ---------------------------------------------------------
-# Ende der Datei / PoC 2.7
-# ---------------------------------------------------------
 """
-    # Speichert die simulierte Datei, damit der Ladevorgang funktioniert
-    with open(MCS_MODULES["MCS_SOURCE_FILE"], 'w') as f:
+
+    # Sicherstellen, dass der MCS-Quellpfad existiert (falls er außerhalb des aktuellen Verzeichnisses liegt)
+    os.makedirs(os.path.dirname(mcs_source_file), exist_ok=True)
+
+    # Simulierte Datei am konfigurierten Pfad erstellen
+    with open(mcs_source_file, 'w') as f:
         f.write(simulated_mcs_content)
+    print(f"[»] MCS-Quelldatei simuliert und erstellt unter: {mcs_source_file}")
 
 
     try:
-        mcs_data = load_mcs_file(MCS_MODULES["MCS_SOURCE_FILE"])
+        mcs_data = load_mcs_file(mcs_source_file)
         if mcs_data:
             mcs_to_hyprland_translator(mcs_data)
         else:

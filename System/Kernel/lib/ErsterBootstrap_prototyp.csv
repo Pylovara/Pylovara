@@ -1,0 +1,6 @@
+﻿Komponente,Status im v2.7-MVP (Minimal Viable Product),Begründung
+¢! / !¢,✅ Pflicht — Tokenisierung & Transaktionsrahmen,Ohne das geht gar nichts.
+°", "^", "§", "¶=", "»…«", "{…}", "ø…ø,✅ Pflicht — Kernoperatoren (02", "06", "11", "15),Notwendig für eine ausführbare Transaktion.
+*.*-core-Dateinamenkonvention,✅ Design-Only — Kein Code nötig,Der Kernel liest den Namen — er validiert ihn nicht. Wichtig für Tooling & Priorisierung (lcore > vcore).
+⊕ Sync-timer,⚠️ Marker nur — Keine Implementierung yet,Wird später als Scheduler-Hook eingehängt — aber erstmal nur ein Token", das erkannt wird."
+þ-Identifikation,⚪ Platzhalter-Logik — nicht ausführen", aber "parsen & speichern,Wie du sagst: „rein patchebar gestalten“. Der Lexer erkennt þ1623512", speichert es im AST als "string" (kein Hash, kein uint64!) — und der Interpreter "ignoriert es im MVP", behält es aber bei für spätere Updates."

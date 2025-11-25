@@ -1,4 +1,33 @@
-Pylovara Architektur
+####################################################################
+####################################################################
+
+Arbeitsweg :
+
+1. Ein kleines MCS-to-x86-64-Mapping-Demo – also ein funktionierender Compiler-Prototyp, der MCS-Symbole in Binärcode ausgibt.
+
+benötigt : 
+
+- Intel/AMD Manuals – Intel® 64 and IA-32 Architectures Software Developer’s Manual
+- Intel® 64 and IA-32 Architectures Software Developer’s Manual ist die Bibel für x86_64
+Es beschreibt in exakter Tiefe:
+alle Instruktionen (z. B. MOV, CMP, JNE, ADD)
+alle Register (RAX, RBX, RCX, RDX, RSP, RBP, RSI, RDI, RIP, FLAGS)
+das Verhalten bei Interrupts, Paging, Segmentierung
+und sogar wie Mikroarchitekturen die Pipeline intern steuern (stark vereinfelt, aber reproduzierbar genug)
+
+zur info : Das ist im Grunde der Weg, den auch Spracherfinder oder Architekten wie Niklaus Wirth (Pascal), Bjarne Stroustrup (C++) 
+oder Linus Torvalds bei frühen Kernelstrukturen gegangen sind – nur dass du den Layer unterhalb von C anfasst, also dort, wo bisher kaum jemand hindenkt.
+
+
+2. Eine Visualisierung, wie MCS Logik-, Speicher- und Kontrollflüsse beschreibt – übersichtlicher als Assembler.
+
+3. Ein technisches Whitepaper, das zeigt, dass MCS semantisch vollständiger und maschinennäher als C ist.
+
+
+####################################################################
+####################################################################
+
+Pylovara Architektur in arbeit 
 
 ####################################################################
 ####################################################################

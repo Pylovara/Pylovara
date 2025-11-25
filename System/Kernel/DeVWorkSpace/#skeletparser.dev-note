@@ -1,0 +1,161 @@
+#! / bin / bash
+# =================================================================
+# MCS 2.7 SYNTAX MAPPING & BASH PARSER SKELETON
+# ZWECK: Definiert die MCS-Symbole als BASH-Variablen zur
+#        Verwendung in einem MCS-zu-ASM-Translater-Skript.
+# ARCHITEKTUR: Erster Layer zur Generierung von x86-64 Opcodes.
+# =================================================================
+
+# -----------------------------------------------------------------
+# 1. MCS SYMBOL MAPPING (Definition der Lexik)
+#    Diese Codes werden als Konstanten im gesamten Pylovara-System verwendet.
+# -----------------------------------------------------------------
+
+# Transaktion (Prozess-Block)
+MCS00010="¢!"    # TRANSAKTION_START
+MCS00020="!¢"    # TRANSAKTION_ENDE
+
+# Aktion (Ausführbare Einheit)
+MCS00030="»"     # AKTION_START
+MCS00040="«"     # AKTION_ENDE
+
+# Proteine (Daten- und Kommando-Struktur)
+MCS00050="["     # PROTEIN_ANFANG
+MCS00060="]"     # PROTEIN_ENDE
+
+# Blanker Nenner (Payload-Kapselung)
+MCS00070="¨"     # BLANKER_NENNER_START
+MCS00080="¨"     # BLANKER_NENNER_ENDE
+
+# Trennbefehle / Sonstiges
+MCS00090="|"     # TRENNBEFEHL (Trennt Type|Content)
+MCS00100="#"     # KOMMENTAR
+
+# -----------------------------------------------------------------
+# 2. HILFSFUNKTIONEN FÜR DIE Opcodes-GENERIERUNG
+#    Diese Funktionen simulieren die spätere Codegen-Schicht.
+# -----------------------------------------------------------------
+
+# Die Funktion mcs_to_opcode würde später die MCS-Syntax in ASM umwandeln.
+# Für den BASH-Parser konzentrieren wir uns auf die Syntaxerkennung.
+
+# Beispiel: Funktion zur "Ausführung" einer Aktion (später ASM-Generierung)
+execute_action() {
+    local type="$1"
+    local content="$2"
+    local action_line="$3"
+
+    echo "[PARSER] Gefundene Aktion: $action_line"
+
+    case "$type" in
+        BASH_CMD)
+            echo "   -> [GENERIERUNG: BASH] ASM-Code für Shell-Aufruf generieren..."
+            # Hier würde der Aufruf an das NASM/YASM-Interface erfolgen
+            # generate_asm "$type" "$content" | write_to_opcode_buffer
+            ;;
+        HYPR_CMD)
+            echo "   -> [GENERIERUNG: HYPR] ASM-Code für IPC/Hyprland generieren..."
+            ;;
+        SYSTEM_CMD)
+            echo "   -> [GENERIERUNG: KERNEL] SYSTEM-Opcode für '$content' generieren..."
+            ;;
+        *)
+            echo "   -> [FEHLER] Unbekannter Aktionstyp '$type' - Ignoriert."
+            ;;
+    esac
+}
+
+# -----------------------------------------------------------------
+# 3. KERN-PARSER-LOGIK (MCS-Syntax-Erkennung)
+# -----------------------------------------------------------------
+
+# Funktion zum Extrahieren von Typ und Inhalt einer MCS-Aktion
+parse_mcs_action() {
+    local line="$1"
+    
+    # 1. Prüfen, ob es überhaupt eine Aktion ist
+    if [[ "$line" != *"${MCS00030}"* && "$line" != *"${MCS00040}"* ]]; then
+        return 1
+    fi
+
+    # 2. Den inneren Protein-Teil extrahieren: ['TYPE'|¨CONTENT¨]
+    #    Dies ist komplex in BASH. Wir verwenden Pattern Matching.
+    
+    # Muster: »['TYPE'|¨CONTENT¨]«
+    local pattern="${MCS00030}${MCS00050}'([[:alnum:]_]+)'${MCS00090}${MCS00070}(.*)${MCS00080}${MCS00060}${MCS00040}"
+
+    if [[ "$line" =~ $pattern ]]; then
+        local type="${BASH_REMATCH[1]}"
+        local content="${BASH_REMATCH[2]}"
+        
+        # Ausführung triggern (später: Opcodes generieren)
+        execute_action "$type" "$content" "$line"
+        return 0
+    else
+        echo "[PARSER_ERROR] Ungültige MCS-Aktion Syntax erkannt: $line"
+        return 1
+    fi
+}
+
+# Hauptfunktion: Liest die MCS-Datei
+read_mcs_file() {
+    local filename="$1"
+    if [ ! -f "$filename" ]; then
+        echo "[LOADER_ERROR] Datei nicht gefunden: $filename"
+        return 1
+    fi
+
+    echo "--- PYLOVARA MCS BASH PARSER START ---"
+    
+    local in_transaction=0
+    
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        # 1. Trimmen und Kommentare entfernen
+        local trimmed_line=$(echo "$line" | xargs)
+        if [[ "$trimmed_line" == "${MCS00100}"* ]] || [ -z "$trimmed_line" ]; then
+            continue
+        fi
+
+        # 2. Transaktions-Erkennung
+        if [[ "$trimmed_line" == "${MCS00010}"* ]]; then
+            in_transaction=1
+            echo "[LEX] Transaktion (Start)"
+            continue
+        elif [[ "$trimmed_line" == "${MCS00020}"* ]]; then
+            in_transaction=0
+            echo "[LEX] Transaktion (Ende)"
+            continue
+        fi
+        
+        # 3. Aktion innerhalb einer Transaktion parsen
+        if [ "$in_transaction" -eq 1 ] && [[ "$trimmed_line" == "${MCS00030}"* ]]; then
+            parse_mcs_action "$trimmed_line"
+        fi
+
+    done < "$filename"
+    
+    echo "--- PYLOVARA MCS BASH PARSER ENDE ---"
+}
+
+
+# -----------------------------------------------------------------
+# 4. DEMO-DATEI ERSTELLEN UND PARSEN
+# -----------------------------------------------------------------
+
+DEMO_MCS_FILE="demo_boot.mcs"
+
+# Erstellen einer Demodatei (wie im C++-Loader)
+cat > "$DEMO_MCS_FILE" << EOF
+# Beispiel MCS 2.7 Konfiguration
+${MCS00010} # Start Konfigurations-Transaktion
+${MCS00030}['BASH_CMD'|${MCS00070}cd /pylovara/cores/ && ./init${MCS00080}]${MCS00040}
+${MCS00030}['HYPR_CMD'|${MCS00070}exec notify-send "Pylovara Init OK"${MCS00080}]${MCS00040}
+${MCS00030}['SYSTEM_CMD'|${MCS00070}load_kernel_module, aio-vfs${MCS00080}]${MCS00040}
+${MCS00020} # Ende Konfigurations-Transaktion
+EOF
+
+echo "[SETUP_INFO] Demodatei '$DEMO_MCS_FILE' erstellt."
+read_mcs_file "$DEMO_MCS_FILE"
+
+# Beispiel für die direkte Nutzung der Symbole:
+# echo "Transaktion Start: ${MCS00010}"

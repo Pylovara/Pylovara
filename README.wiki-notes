@@ -22,15 +22,16 @@ version 0.4 beta (buggy but copy and paste from githubg in the directory)=
 - entfernt /tmp/pylovara-latest wieder
 - funktioniert nur mit = sudo ./pylovara.updater-needle
 #####################################################################################
-#####################   PylovaraSystem updates OnWork   #############################
+#####################   PylovaraSystem Updates OnWork   #############################
 
-  - Umbau Vieler Ordner
-  - MCS unter System/Kernel
-  - kernel lex anpassungen
-  - Präzisierung der Erklärungen
+  - Funktionserweiterung für Entwicklungen : dev lex
+  - Aufbau der DevNotes
+  - MCS Syntax Fehlerquelle Optimierung : kernel lex
+  - Aufbau der übergangs C Übersetzung
+  - demnächste Säuberung der wiki-notes : helpme lex
 
 #####################################################################################
-#######################   Kernprinzipien ############################################
+######################### Kernprinzipien ############################################
 
  Systemweit & Rootbasiert
 - Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
@@ -42,7 +43,7 @@ version 0.4 beta (buggy but copy and paste from githubg in the directory)=
 - Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
 - Ermöglicht tiefste Systemintegration ohne externe Frameworks
 
- Modular & Erweiterbar (In Der Enwticklung)
+ Modular & Erweiterbar (In Der Entwicklung)
 - Struktur Familienprinzip / Wurzelprinzip / Astprinzip
 - Neue Module können ohne Kernänderung hinzugefügt werden
 - Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
@@ -51,16 +52,16 @@ version 0.4 beta (buggy but copy and paste from githubg in the directory)=
 
 Wer Brauch schon PDFs (wird immer wieder mal geupdatet)
 
-    helpme 01      # Übersicht aller Module
-    helpmex 04-02  # Wie du die KI austauschbar machst
-    kernel 01      # Architecturen übersicht
-    kernelx 01-01  # Erste Seite , wenn vorhanden in Lexikon
-    dna lex        # Übersicht aller Module
-    dna lexi       # Zeile Ausschnitte
+    helpme lex     # Übersicht Informationen WikiNotes
+    kernel lex     # Übersicht MCS Syntax KernelNotes
+    dev lex        # Übersicht Entwickler Daten DevNotes
     p Handbuch     # Zeigt die gesamte Baumstruktur
+
+Oder Altmodische Funktionen
+
     callme firefox # bin finder
     cut mcs /*/*   # MCS Higlihgting (Beta)
-    pylo Handbuch/- ai.wiki-notes cat
+    pylo Handbuch/- ai.wiki-notes cat # Wird den Typischen Aufbau ersetzen (BuggyBeta)
 
            > "Was du nicht selbst in der Shell erschaffst,
                  wird dir irgendwann vom GUI genommen."          – alter Admin
@@ -87,13 +88,51 @@ das selbst in einer Sonderschule MCS gelehrt werden könnte !
  Shell Layouts Prototypen Beta
            Pylovara unterstützt verschiedene Prompt-Stile:
 
-- **Standard**: `/Pylovara/System/Shell/Layout/pylovara.shell-layout`
+- **Standard**: `/Pylovara/System/Shell/Layout/pylovara.shell-layout` <- Aktiv
 - **Hilfe**: `/Pylovara/System/Shell/Layout/pylovara+.shell-layout`
 - **Minimal**: `/Pylovara/System/Shell/Layout/pylovara++.shell-layout`
 
 Einstellbar in :
 p /Pylovara/Control/
 
+############################### Was ist Pylovara? ###################################
+
+Pylovara ist ein radikales neues modular aufgebautes,
+systemweites File- und Steuerungssystem, das vollständig auf der Shell-Ebene
+arbeitet, es wird ausschließlich auf Root-Ebene installiert (`/Pylovara/`) .
+
+              -- ohne GUI, ohne Umwege, ohne Bullshit --
+
+Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlage
+eines neuen Denkens im Umgang mit Betriebssystemen.
+
+Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus ,
+auf jedem System als SubSystem mit eigener Sprache (MCS) aggieren zu können und wird
+den Amspruch haben eine AllInOne Sprachpacket zu schaffen, die mit purer Argumentation
+zum absoluten Industry Standart werden kann .
+
+MCS wird den Anspruch haben Performanter als reines C | DSL | Json und co zu sein,
+sobald MCS Nativ mit der Hardware sprechen kann und die C Übersetzung Platz macht für
+die unterlegendden Opcodes der jeweiligen Architektur (Nativ auf lange sicht) !
+
+Es kann sein das am Anfang gewisse dinge nicht ganz round laufen , wie Updates oder
+Rechte vergabe im Keller , einbindungen in deinen Sourced Kern , egal welcher Source
+Kern bei dir Aktiv ist , oder auch kleinere bucks mit dem Terminal selbst (die ich im
+übrigen selbst auch sehe) ......
+
+Was jedoch für den Einzelnen herausgearbeitet wird , ist die
+Vollständige Kontrolle seines System/s  und es ist dabei egal ob RedHat , Arch ,
+OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android .....
+Du bekommst die möglichkeit mit MCS low und high level aufgaben jeder einzelnen
+Transaktion zu steuern , combiniert mit ai .
+
+Pylovara wird auch keinen Anspruch haben auf die dauer , sich an irgend eine
+Programmiersprache zu binden , sondern wird irgendwann in der Zuckunft seinen
+eigenen Kernel mitliefern , in dem MCS Nativ und Primär Dominiert und alles andere
+lediglich für Fremd(bzw schad)software in sogenannten øøwarps an die jeweiligen fremden
+Compiler übergeben wird .
+
+#####################################################################################
 #####################################################################################
                                 Impressum Infos
 
@@ -108,46 +147,4 @@ Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
 Telefon :  +49 176/88218035
 Telegram : @iBandino
 ################################## Readme Ende ######################################
-#####################################################################################
-############################### Was ist Pylovara? ###################################
-
-Pylovara ist ein radikales neues modular aufgebautes,
-systemweites File- und Steuerungssystem, das vollständig auf der Shell-Ebene
-arbeitet, es wird ausschließlich auf Root-Ebene installiert (`/Pylovara/`) .
-
-              -- ohne GUI, ohne Umwege, ohne Bullshit --
-
-Es ist nicht einfach nur ein Tool oder eine Skriptsammlung, sondern die Grundlage
-eines neuen Denkens im Umgang mit Betriebssystemen.
-
-Pylovara wird so Designed das es in der lage sein wird , aus der Shell heraus ,
-auf jedem System als SubSystem mit eigener Sprache (MCS) aggieren kann und wird
-den Amspruch haben eine AllInOne Sprache zu schaffen, die mit purer Argumentation
-zum absoluten Industry Standart wird .
-
-MCS wird den Anspruch haben Performanter als reines C | DSL | Json und co zu sein,
-sobald MCS Nativ mit der Hardware sprechen kann (Nativ auf lange sicht) !
-
-Es kann sein das am Anfang gewisse dinge nicht ganz round laufen , wie Updates oder
-Rechte vergabe im Keller , einbindungen in deinen Sourced Kern , egal welcher Source
-Kern bei dir Aktiv ist , oder auch kleinere bucks mit dem Terminal selbst (die ich im
-übrigen selbst auch sehe) ......
-
-Was jedoch auf langer sicht für den Einzelnen herausgearbeitet wird , ist die
-Vollständige Kontrolle seines Systemes  und es ist dabei egal ob RedHat , Arch ,
-OpenSuse , Debian , Darwin , NT , FreeBSD , BSD , Android .....
-Du bekommst die möglichkeit mit MCS low und high level aufgaben jeder einzelnen
-transaktion zu steuern , combiniert mit ai .
-
-Pylovara wird auch keinen Anspruch haben irgend ein Programm in den Alten vergorrenen
-Languale Sprachen zu schreiben , oder sogar viel Arbeit in die Übersetzungen zu legen,
-das ausrotten von explosions großen Compiler die teils mit blackbox variablen arbeiten
-wie auch GCC , sind ein absolutes fehldesigne und werden abgestoßen ..........
-Alte Languale dürfen in MCS als øwarpø transportiert werden .......
-ComputerSprache und wird somit abwärts und aufwärts-kompaktibel .......
-
-Übergang :
-Der Kompromiss um MCS zu Laufen zu bringen bis die Lauffähigkeit durch den aufbau der
-Ordentlichen Blibliotheken  gewehrleistet ist , ist eine Zeitlich begrenzte Maßnahme
-und befindet sich gerade im Piraten Status und nutzt alles was dem ziel näher bringt.
 #####################################################################################

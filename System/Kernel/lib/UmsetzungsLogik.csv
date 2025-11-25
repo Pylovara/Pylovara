@@ -1,0 +1,14 @@
+﻿MCS-Komponente (@kernel-nr),C-Datei (in /C_Bootstrap/core/),Aufgabe
+01 Datentypen,mcs_datatypes.c + .h,"Familien-Logik, "*.*-core-Interpretation (nur Metadaten)
+02 Transaktion,mcs_transaction.c + .h,¢!/!¢"-Validation, Rahmen-Check"
+03 Protein,mcs_protein.c + .h,[...]"-Parsing, Ausführbarkeits-Flag"
+04 Proton,mcs_proton.c + .h,{...}"-Extraktion, Einheitserkennung"
+05 Trennbefehl,(inline in Protein/Proton),`
+06 Aktion,mcs_action.c + .h,»...«"-Parsing, "« vs. «««-Entscheidung
+07 Eingaben,mcs_input.c + .h,""""", "'", "’", "¨", ""," → Token-Klassifikation
+08 Wahrheiten,mcs_truth.c + .h,¶", "¶¶", "¶=", ";;", ">->", "<-<
+09 Operatoren,(Teil von `mcs_action.c`),Erst bei ««« aktiviert — shared logic
+10 Feeds,mcs_feed.c + .h,(1)", "(A)", "§(1)Target
+13 Warp,mcs_warp.c + .h,`øLang
+14 þ-Identifikation,mcs_theta.c + .h,þ..." → store as string, ignore in MVP"
+15 Argumente,(Teil von `mcs_action.c`),«««%50 → parse to struct mcs_arg

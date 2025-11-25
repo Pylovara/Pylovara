@@ -2,10 +2,11 @@
 @kernel-nr: lex
 ####################################################################
        - System Kernel - ON - Kernel - The Learn Guide  -
-    ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖ ▗▖   ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▖ ▗▖ ▗▄▖ ▗▖  ▗▖
-    ▐▌ ▐▌  █  ▐▌▗▞▘  █   ▐▌   ▐▌    ▝▚▞▘   █  ▐▌▗▞▘▐▌ ▐▌▐▛▚▖▐▌
-    ▐▌ ▐▌  █  ▐▛▚▖   █   ▐▌   ▐▛▀▀▘  ▐▌    █  ▐▛▚▖ ▐▌ ▐▌▐▌ ▝▜▌
-    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖ ▐▙▄▄▖▐▙▄▄▖▗▞▘▝▚▖▗▄█▄▖▐▌ ▐▌▝▚▄▞▘▐▌  ▐▌
+  ▗▖ ▗▖▗▄▄▄▖▗▄▄▖ ▗▖  ▗▖▗▄▄▄▖▗▖       ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖
+  ▐▌▗▞▘▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌   ▐▌       ▐▌ ▐▌  █  ▐▌▗▞▘  █
+  ▐▛▚▖ ▐▛▀▀▘▐▛▀▚▖▐▌ ▝▜▌▐▛▀▀▘▐▌       ▐▌ ▐▌  █  ▐▛▚▖   █
+  ▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖▐▙▄▄▖    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖
+
                                               Pylovara since 2025
 ####################################################################
 ################ Das Handbuch für den MCS Kernel ###################
@@ -14,19 +15,19 @@ lex     Lexikon                  # Übersicht  | lexikon
 00      Fallback                 # Übersicht  | Parser
 ####################################################################
 # Maschinen Code Speech – Kernel Syntax Handbuch
-# Version: 2.7  |  Autor: Thomas Zimmermann
+# Version: 2.8  |  Autor: Thomas Zimmermann
 # Standort: /Pylovara/Handbuch/KernelNotes/
 # Zweck: Definition einer sprachbasierten Kernel-Architektur
-# Status: Vollständig | Kompatibel zu MCS 3.0 Framework
+# Status: Vollständig |
 ####################################################################
 
 Struktur:
   01 - Datentypen               10 - Feeds
-  02 - Transaktion -Neu         11 - Zielreferenz
+  02 - Transaktion              11 - Zielreferenz
   03 - Protein                  12 - Dirigent
   04 - Proton                   13 - Warp
   05 - Trennbefehl              14 - þ Identifikation
-  06 - Aktion -Debug            15 - Argumente -debug
+  06 - Aktion  -Debug           15 - Argumente  -Debug
   07 - Eingaben                 20 - Reihenfolge
   08 - Wahrheiten               99 - Register CMDs
   09 - Operatoren
@@ -36,4 +37,7 @@ Der MCS Kernel  definiert eine universelle Sprache, die sowohl vom
 menschlichen Geist als auch von Maschinen verstanden werden kann.
 Sie ermöglicht direkte Hardware-Kommunikation ohne
 Compiler-Abhängigkeit, dank semantischer Transaktionslogik.
+In der momentanen entwicklung wird sie für Entwickler auf C
+übersetzt und wird , sobald die arbeit abgeschlossen ist , später
+auf eine eigenen Untergebaute Architektur übersetzt .
 ####################################################################

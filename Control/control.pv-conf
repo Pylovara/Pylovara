@@ -59,7 +59,7 @@ source "$MASTER_DIR/mcs-visualizer.conf"
 #source "/Pylovara/Control/desktop.conf"
 
 ##############################################################################
-### SYSTEMALIASE Sektion
+### SYSTEMALIASE Sektion | wird bald ausgelagert
 
 helpme() {
     source "$Shell_DIR/helpme.cut-dna" "$@"
@@ -72,6 +72,12 @@ kernel() {
 }
 kernelx() {
     source "$Shell_DIR/kernelx.deluxe-dna" "$@"
+}
+dev() {
+    source "$Shell_DIR/dev.cut-dna" "$@"
+}
+devx() {
+    source "$Shell_DIR/devx.deluxe-dna" "$@"
 }
 p() {
     source "$Shell_DIR/p.tree-dna" "$@"

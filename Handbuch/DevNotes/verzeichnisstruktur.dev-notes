@@ -1,0 +1,38 @@
+####################################################################
+@dev-nr: 01
+####################################################################
+
+Erste versions-idee der anordnung : Skizze
+
+C_Bootstrap/
+├── CMakeLists.txt          ← Bauanleitung für `cmake`
+├── core/                   ← *alle* Implementierungen (nur `.c`, keine Logik in `.h`)
+│   ├── mcs_token.h         ← **nur Deklarationen** (kein Code!)
+│   ├── mcs_lexer.c         ← Tokenisierung: `¢!`,`»`,`«`,`«««`,`þ...`,etc.
+│   ├── mcs_parser.c        ← Orchester: ruft `mcs_action.c`, `mcs_warp.c`, … auf
+│   ├── mcs_transaction.c   ← Validierung: „Ist das ein gültiger Transaktionsrahmen?“
+│   ├── mcs_action.c        ← `»…«` + `«` vs. `«««%50`
+│   └── ...                 ← später: `mcs_warp.c`, `mcs_feed.c`, `mcs_theta.c`
+│
+├── include/                ← **Public API für Entwickler & IDEs**
+│   └── mcs.h               ← *ein* Header zum Einbinden:
+│                           ← `#include <mcs.h>` → alles sichtbar
+│
+└── main.c                  ← CLI-Tool: `./mcs-run datei.mcs`
+
+####################################################################
+
+Konkretisierte-version der anordnung : ausarbeitung
+
+/Pylovara/System/Kernel/Core
+├── CMakeLists.txt         ← Bauanleitung für cmake
+├── errologs               ← errorlogs - fehler berichte
+├── inlude                 ← Public API für Entwickler & IDEs
+│   └── mcs.h              ← Ein Header zum Einbinden : #include <mcs.h>` → alles sichtbar
+├── Lib                    ← Element Module
+│   └── ...                ← später: transaktion.c mcs_action.c mcs_warp.c , mcs_feed.c , (mcs_theta.c?)
+├── Logic                  ← Main Module
+│   └── mcs_token.h        ← Tokenisierung - Orchester - mcs_token.h - mcs_lexer.c mcs_parser.c
+└── main.c                 ← CLI-Tool: ./mcs-run datei.mcs
+
+####################################################################

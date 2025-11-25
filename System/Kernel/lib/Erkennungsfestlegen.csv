@@ -1,0 +1,18 @@
+﻿Token,Beispiel,Regel,Bemerkung
+TOK_TRANS_START,¢!,'¢' '!',atomar — kein ¢ allein
+TOK_TRANS_END,!¢,'!' '¢',atomar — kein ! allein
+TOK_ACTION_START,»,'»',immer paarig mit «
+TOK_ACTION_END,«,'«',
+TOK_ARG_MARK,««,'«' '«',→ zwei aufeinanderfolgende `«` → anders als `TOK_ACTION_END`!
+TOK_PROTEIN_OPEN,[,'[',
+TOK_PROTEIN_CLOSE,],']',
+TOK_PROTON_OPEN,{,'{',
+TOK_PROTON_CLOSE,},'}',
+TOK_SEP,`,`,`'
+TOK_WARP_START,ø,'ø',Start
+TOK_WARP_END,ø,'ø',"Ende — ja, "gleiches Zeichen → Lexer muss Kontext tracken („bin ich in einem Warp?“)
+TOK_THETA_ID,þdev", "þ1623512,"'þ' [alnum_.-]{1,64}",→ string", kein Typ"
+TOK_STR_DBL,"""Hallo""","'""' [^""]* '""'",Print
+TOK_STR_SGL,'exec',"""'"" [^']* ""'""",System-CMD
+TOK_STR_TICK,’Lüfter’,’ [^’]* ’,MCS-CMD (achten auf gerade Hochkommata! ASCII 0x2019)
+TOK_BLANKERNER,¨200¨,¨ [^¨]* ¨,Blankernenner (ASCII 0x00A8)

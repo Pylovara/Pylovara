@@ -17,6 +17,10 @@ Definition Aktion Ende :
 
   «
 
+  Wichtig : Aktion /s ende darf nur dann gelten wenn es Ein «
+  Symbol gibt , nicht bei 3 (ziehe kernel lex 15 argumente),
+  um fehlerquellen auszuschließen .
+
 --------------------------------------------------------------------
 # Definition  Aktion Anfang und Ende
 

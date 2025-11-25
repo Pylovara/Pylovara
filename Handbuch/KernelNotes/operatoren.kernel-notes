@@ -19,14 +19,14 @@ Wenn/Kann :
 
 SICHERHEITS Checks Laufen dann Grundsätzlich über MCS
 
-¢|                                 # Transaktion starten
-»[{’Band’|¨2.4G¨}]«                # Protein: WLAN-Band auf 2.4G setzen
-    = §WLAN                        # Wohin
-°WennNicht[{’Band’|¨2.4G¨}|{’Valid’|¨2.4G¨|¨5G¨}] # Sicherheitscheck:Nur 2.4G/5G erlaubt
-^TransaktionsFehler                # Fehler bei ungültigem Band
-    = §(1)Displey                  # Ergebnis an Display
-    ¶=                             # Paralleler Prozess
-    øC|                            # Warp: C-Code für detaillierte Steuerung
+¢|                                                      # Transaktion starten
+»[{’Band’|¨2.4G¨}]«                                     # Protein: WLAN-Band auf 2.4G setzen
+    = §WLAN                                             # Wohin
+°WennNicht »[{’Band’|¨2.4G¨}|{’Valid’|¨2.4G¨|¨5G¨}]«    # Sicherheitscheck:Nur 2.4G/5G erlaubt
+^TransaktionsFehler                                     # Fehler bei ungültigem Band
+    = §(1)Displey                                       # Ergebnis an Display
+    ¶=                                                  # Paralleler Prozess
+    øC|                                                 # Warp: C-Code für detaillierte Steuerung
     #include <iwlib.h>
     int main() {
         wireless_config wconf;

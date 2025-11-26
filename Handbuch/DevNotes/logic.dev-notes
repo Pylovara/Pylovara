@@ -1,0 +1,15 @@
+####################################################################
+@dev-nr: 10
+@dev-nr: logic
+####################################################################
+
+OnWork
+
+@dev-ref: mcs_token.h
+@status: v1.0 – Grundtoken definiert
+@depends: Keine
+@used-by: mcs_lexer.c, mcs_parser.c
+@spec-ref: kernel lex + 02,06,07,08,09,13,14,15
+@todo: U+2019 (’) vs ASCII ' — Encoding-Test einbauen
+
+####################################################################

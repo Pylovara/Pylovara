@@ -1,0 +1,69 @@
+####################################################################
+@dev-nr: 99
+@dev-nr: compilieren
+####################################################################
+
+Vorgang :
+
+Um über gcc irgendwas zu Compilieren wechselst du zu erst
+in das verzeichnis das die datei trägt
+
+cd /Pylovara/undsoweiter/dateiname
+
+und sprichst den gcc compiler an mit
+
+gcc
+
+dann benötigt gcc ein flag
+
+-o
+
+um den vorgang zu starten
+
+gesamter vorgang :
+
+cd /Pylovara/undsoweiter/dateiname gcc -o
+
+####################################################################
+
+test lab/ bereich :
+
+cd /Pylovara/System/Kernel/Core
+gcc -o Lab/test_action Lab/test_action.c
+./Lab/test_action
+
+dient gerade nur als test umgebung für ganz einfache MCS Logik
+und beweist das außerhalb des bash PoC und des Verilog PoC auch
+gcc und damit alle C compiler MCS ausführbar machen können und die
+
+frage zur antwort :
+
+Kann C die MCS Absicht in Struktur verwandeln?
+
+klare antwort :
+
+Ja !!
+
+ ┌[bandino@dev][18:13:36|Mi Nov 26]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $ cd /Pylovara/System/Kernel/Core
+gcc -o Lab/test_action Lab/test_action.c
+./Lab/test_action
+CMakeLists.txt
+errologs
+inlude
+IntLab
+Lab
+Lib
+Logic
+main.c
+✅ Aktion: cmd='echo', print='Hallo'
+
+ ┌[bandino@dev][18:13:36|Mi Nov 26]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $
+####################################################################
+
+
+
+

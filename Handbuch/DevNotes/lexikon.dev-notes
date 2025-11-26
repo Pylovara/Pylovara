@@ -13,11 +13,21 @@
 lex     Lexikon                  # Übersicht  | lexikon
 00      Fallback                 # Übersicht  | Parser
 ####################################################################
- C übersetzung für MCS
+ C übersetzung für MCS Hanbuch
 
- 01 - VerzeichnisStruktur        # Überblick  | Im Aufbau
-
+ 99 - Compilieren                # Erklärung  | Info
+ 01 - VerzeichnisStruktur        # Überblick  | Ast
+ 02 - Token                      # Data       | Info
+ 03 - lexer                      # Data       | Info
 
 ####################################################################
+ Relevante /Pylovara/System/Kernel/Core/ Verzeichnise :
 
+ Logic/        # MCS KernLogiken        |
+ Lib/          # FunktionsBibliothek    | Libery
+ Lab/          # TestDatei              | Versuche
+ IntLab/       # Integrationstests      | FinalerTest
+ errorlogs/    # Fehlerlogs             | Errors
+
+ TestAusführung : mcs-run ./test.mcs sucht relativ zum Aufrufort.
 ####################################################################

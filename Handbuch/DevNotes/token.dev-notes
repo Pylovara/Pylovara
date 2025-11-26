@@ -1,0 +1,24 @@
+####################################################################
+@dev-nr: 02
+@dev-nr: token
+####################################################################
+
+@dev-ref: mcs_token.h
+@status: v1.0 — Grundtoken-Set für MCS v2.7 MVP
+@spec-ref:
+  kernel lex (Struktur),
+  02-Transaktion (¢!, !¢),
+  06-Aktionen (», «, Hinweis: « allein = Aktion-Ende),
+  15-Argumente (««« = Operator-Marker, «« = ungültig),
+  07-Eingaben (", ', ’, ¨),
+  13-Warp (ø),
+  14-þ (þID),
+  08-Wahrheiten (¶, ¶¶, ¶=, ;;),
+  09-Operatoren (°, >, <, !, …)
+@encoding: UTF-8 erforderlich für ’ (U+2019), ¨ (U+00A8), ø (U+00F8)
+@todo:
+  - Später: TOK_OP_PLUS, TOK_OP_PERCENT etc. (wenn Argumente geparst werden)
+  - U+00A8 (¨) vs. ASCII `"` — sicherstellen, dass Input korrekt encoded ist
+@used-by: mcs_lexer.c, mcs_parser.c
+
+####################################################################

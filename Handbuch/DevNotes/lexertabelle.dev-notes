@@ -1,0 +1,155 @@
+/*
+ * MCS Lexer Token Definition (v2.9)
+ * Autor: Thomas Zimmermann (Basierend auf Kernel Notes)
+ * Zweck: Definition der Symbole und ihrer zugehörigen Token-Typen
+ *
+ * Diese Struktur dient als saubere, zeilengenaue Vorlage für die
+ * Initialisierung des MCS-Lexers in C.
+ */
+
+#ifndef MCS_LEXER_TOKENS_H
+#define MCS_LEXER_TOKENS_H
+
+// =================================================================
+// 1. Definition der Token-Typen (Enum)
+// =================================================================
+
+typedef enum {
+    TOK_UNKNOWN = 0, // Fallback für unbekannte oder nicht erkannte Zeichen
+    TOK_COMMENT,     // # (wird ignoriert)
+    TOK_ID,          // Variablen, CMDs, Zahlen, die keine expliziten Token sind (z.B. "echo", 1, A)
+    TOK_NUMBER,      // Numerischer Wert (z.B. 25, 3.14)
+    TOK_LITERAL,     // String-Inhalt innerhalb von Quotes
+
+    // 02: Transaktion
+    TOK_TRANS_START, // ¢!
+    TOK_TRANS_END,   // !¢
+
+    // 03: Aktion
+    TOK_ACTION_START, // »
+    TOK_ACTION_END,   // «
+
+    // 04: Protein
+    TOK_PROTEIN_OPEN,  // [
+    TOK_PROTEIN_CLOSE, // ]
+
+    // 05: Proton
+    TOK_PROTON_OPEN,  // {
+    TOK_PROTON_CLOSE, // }
+
+    // 06: Trennbefehl
+    TOK_SEP, // | (Trennzeichen innerhalb von Protein/Proton)
+
+    // 07: Eingaben (Quotes/Container)
+    TOK_STR_DBL_QUOTE,    // " (Print)
+    TOK_STR_SGL_QUOTE,    // ' (System Commands)
+    TOK_STR_TICK_QUOTE,   // ’ (MCS Commands)
+    TOK_BLANKERNER_QUOTE, // ¨ (Blankernenner)
+    // Die Notiz (,) ist wahrscheinlich ein TOK_LITERAL oder TOK_ID
+
+    // 08 & 09: Wahrheiten & Operatoren (Steuerung)
+    TOK_IF,                   // ¶ (Wenn/Kann)
+    TOK_ELSE,                 // ¶¶
+    TOK_PARALLEL_RUN,         // ¶=
+    TOK_PARALLEL_TRANSPORT,   // ;;
+    TOK_WHEN_NOT,             // ° (Wenn Nicht / Muss)
+    TOK_WHEN_GT,              // > (Wenn Größer)
+    TOK_WHEN_LT,              // < (Wenn Kleiner)
+    TOK_MUST,                 // ! (Wenn Eindeutig / Sofort)
+    TOK_ON_ERROR,             // … (Wenn Fehler / Sicherheit)
+    TOK_TRANS_ERROR,          // ^ (TransaktionsFehler / Debugg)
+    TOK_DATA_RESIDUE,         // ſ (DatenReste / Löschung)
+    TOK_SYNC_TIMER,           // ⊕ (AI Spezialisierung)
+
+    // 10: Feeds
+    TOK_FEED_OPEN,  // (
+    TOK_FEED_CLOSE, // )
+
+    // 11: Zielreferenz
+    TOK_TARGET_REF_PREFIX, // §
+
+    // 12: Dirigent
+    TOK_DIRIGENT_PREFIX, // $
+
+    // 13: Warp
+    TOK_WARP, // ø (Anfang/Ende des Warp-Codes)
+
+    // 14: Identifikation
+    TOK_THETA_ID_PREFIX, // þ
+
+    // 15: Argumente (Wichtiger Hinweis: muss nach TOK_ACTION_END erkannt werden!)
+    TOK_OP_MARK,        // ««« (Markiert den Start der Argumente)
+    TOK_ARG_MINUS,      // ««-
+    TOK_ARG_PLUS,       // ««+
+    TOK_ARG_MUL,        // ««· (Mal)
+    TOK_ARG_DIV,        // ««: (Geteilt)
+    TOK_ARG_PERCENT,    // ««%
+    // Argumente wie ««t3 oder ««r3 werden im Parser als TOK_ARG_ID behandelt.
+
+    TOK_EOF // End of File
+} MCS_TokenType;
+
+// =================================================================
+// 2. Definition der Symbole für den Lexer
+// =================================================================
+
+// Struktur für die Lexer-Tabelle
+typedef struct {
+    const char *symbol;
+    MCS_TokenType token_type;
+    int length; // Länge des Symbols, wichtig für Multi-Byte-Symbole
+} MCS_LexerEntry;
+
+// Wichtige Symbole der MCS-Syntax, sortiert nach Länge (längere zuerst)
+// Dies ist ESSENTIELL für einen Lexer, um "¶¶" vor "¶" zu erkennen.
+MCS_LexerEntry MCS_TOKEN_TABLE[] = {
+    // 6 Bytes: Argument-Start (Basis-Argumente und TOK_OP_MARK)
+    {"«««", TOK_OP_MARK, 6},      // 15: Start der Argumente/Ende der Aktion mit Argument
+    {"««-", TOK_ARG_MINUS, 6},    // 15: Argument: Minus
+    {"««+", TOK_ARG_PLUS, 6},     // 15: Argument: Plus
+    {"««·", TOK_ARG_MUL, 6},      // 15: Argument: Mal
+    {"««:", TOK_ARG_DIV, 6},      // 15: Argument: Geteilt
+    {"««%", TOK_ARG_PERCENT, 6},  // 15: Argument: Prozent
+
+    // 4 Bytes: Doppel-Byte-Symbole
+    {"¶¶", TOK_ELSE, 4},              // 08: Else
+    {"¶=", TOK_PARALLEL_RUN, 4},      // 08: Parallel Run
+    {";;", TOK_PARALLEL_TRANSPORT, 4},// 08: Parallel Transport
+
+    // 2 Bytes: Transaktion und Aktionen
+    {"¢!", TOK_TRANS_START, 2}, // 02: Transaktion Start
+    {"!¢", TOK_TRANS_END, 2},   // 02: Transaktion Ende
+    {"»", TOK_ACTION_START, 2}, // 03: Aktion Start
+    {"«", TOK_ACTION_END, 2},   // 03: Aktion Ende
+    {"…", TOK_ON_ERROR, 2},     // 09: Wenn Fehler
+    {"^", TOK_TRANS_ERROR, 2},  // 09: TransaktionsFehler
+    {"ſ", TOK_DATA_RESIDUE, 2}, // 09: DatenReste
+
+    // 1 Byte: Single-Byte-Symbole (ASCII & UTF-8)
+    {"[", TOK_PROTEIN_OPEN, 1},       // 04: Protein Open
+    {"]", TOK_PROTEIN_CLOSE, 1},      // 04: Protein Close
+    {"{", TOK_PROTON_OPEN, 1},        // 05: Proton Open
+    {"}", TOK_PROTON_CLOSE, 1},       // 05: Proton Close
+    {"|", TOK_SEP, 1},                // 06: Trennbefehl
+    {"\"", TOK_STR_DBL_QUOTE, 1},     // 07: Print Quote
+    {"'", TOK_STR_SGL_QUOTE, 1},      // 07: System Command Quote
+    {"’", TOK_STR_TICK_QUOTE, 2},     // 07: MCS Command Quote (UTF-8)
+    {"¨", TOK_BLANKERNER_QUOTE, 2},   // 07: Blankernenner Quote (UTF-8)
+    {"¶", TOK_IF, 2},                 // 08: IF (UTF-8)
+    {"°", TOK_WHEN_NOT, 2},           // 09: Wenn Nicht (UTF-8)
+    {">", TOK_WHEN_GT, 1},            // 09: Wenn Größer
+    {"<", TOK_WHEN_LT, 1},            // 09: Wenn Kleiner
+    {"!", TOK_MUST, 1},               // 09: Wenn Eindeutig
+    {"(", TOK_FEED_OPEN, 1},          // 10: Feed Open
+    {")", TOK_FEED_CLOSE, 1},         // 10: Feed Close
+    {"§", TOK_TARGET_REF_PREFIX, 2},  // 11: Zielreferenz (UTF-8)
+    {"$", TOK_DIRIGENT_PREFIX, 1},    // 12: Dirigent
+    {"ø", TOK_WARP, 2},               // 13: Warp (UTF-8)
+    {"þ", TOK_THETA_ID_PREFIX, 2},    // 14: Identifikation (UTF-8)
+    {"⊕", TOK_SYNC_TIMER, 3},         // 09: Sync-timer (UTF-8)
+    {"#", TOK_COMMENT, 1}             // Kommentar
+};
+
+#define MCS_TOKEN_TABLE_SIZE (sizeof(MCS_TOKEN_TABLE) / sizeof(MCS_LexerEntry))
+
+#endif // MCS_LEXER_TOKENS_H

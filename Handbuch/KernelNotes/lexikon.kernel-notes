@@ -2,42 +2,28 @@
 @kernel-nr: lex
 ####################################################################
        - System Kernel - ON - Kernel - The Learn Guide  -
-  ▗▖ ▗▖▗▄▄▄▖▗▄▄▖ ▗▖  ▗▖▗▄▄▄▖▗▖       ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖
-  ▐▌▗▞▘▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌   ▐▌       ▐▌ ▐▌  █  ▐▌▗▞▘  █
-  ▐▛▚▖ ▐▛▀▀▘▐▛▀▚▖▐▌ ▝▜▌▐▛▀▀▘▐▌       ▐▌ ▐▌  █  ▐▛▚▖   █
-  ▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖▐▙▄▄▖    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖
-
+    ▗▖ ▗▖▗▄▄▄▖▗▄▄▖ ▗▖  ▗▖▗▄▄▄▖▗▖       ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖
+    ▐▌▗▞▘▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌   ▐▌       ▐▌ ▐▌  █  ▐▌▗▞▘  █
+    ▐▛▚▖ ▐▛▀▀▘▐▛▀▚▖▐▌ ▝▜▌▐▛▀▀▘▐▌       ▐▌ ▐▌  █  ▐▛▚▖   █
+    ▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖▐▙▄▄▖    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖
                                               Pylovara since 2025
 ####################################################################
 ################ Das Handbuch für den MCS Kernel ###################
 ####################################################################
-lex     Lexikon                  # Übersicht  | lexikon
-00      Fallback                 # Übersicht  | Parser
+        | Lexikon/s | kernel lex | dev lex | helmpe lex |
 ####################################################################
-# Maschinen Code Speech – Kernel Syntax Handbuch
-# Version: 2.8  |  Autor: Thomas Zimmermann
-# Standort: /Pylovara/Handbuch/KernelNotes/
-# Zweck: Definition einer sprachbasierten Kernel-Architektur
-# Status: Vollständig |
+          01 - Datentypen           10 - Feeds -new
+          02 - Transaktion          11 - Zielreferenz
+          03 - Protein              12 - Dirigent
+          04 - Proton               13 - Warp
+          05 - Trennbefehl          14 - þ Identifikation
+          06 - Aktion  -Debug2      15 - Argumente  -Debug2
+          07 - Eingaben             20 - Reihenfolge
+          08 - Wahrheiten -new      99 - Register CMDs
+          09 - Operatoren -new      00 - Fallback Übersicht
 ####################################################################
-
-Struktur:
-  01 - Datentypen               10 - Feeds
-  02 - Transaktion              11 - Zielreferenz
-  03 - Protein                  12 - Dirigent
-  04 - Proton                   13 - Warp
-  05 - Trennbefehl              14 - þ Identifikation
-  06 - Aktion  -Debug           15 - Argumente  -Debug
-  07 - Eingaben                 20 - Reihenfolge
-  08 - Wahrheiten               99 - Register CMDs
-  09 - Operatoren
-
-Beschreibung:
-Der MCS Kernel  definiert eine universelle Sprache, die sowohl vom
-menschlichen Geist als auch von Maschinen verstanden werden kann.
-Sie ermöglicht direkte Hardware-Kommunikation ohne
-Compiler-Abhängigkeit, dank semantischer Transaktionslogik.
-In der momentanen entwicklung wird sie für Entwickler auf C
-übersetzt und wird , sobald die arbeit abgeschlossen ist , später
-auf eine eigenen Untergebaute Architektur übersetzt .
+        # Maschinen Code Speech – Kernel Syntax Handbuch  #
+        # Version: 2.9  |  Autor: Thomas Zimmermann       #
+        # Standort: /Pylovara/Handbuch/KernelNotes/       #
+        # Status: Vollständig mit Rollende Verbesserungen #
 ####################################################################

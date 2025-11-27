@@ -1,57 +1,92 @@
-@kernel-nr: 10
+@kernel-nr: 10  # Erklärung im Aufbau
 ####################################################################
+Erklärung:
 
-    ()  Feeds Funktion
-
-    (Zahl) Feed /s
-
-Feeds sind Rück oder Angaben wohin welche Merge Forke oder Parallele
-Transaktion wie Prozess gehen soll und wo er wieder andockt .
-
-Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt , wodurch
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
 er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
 und dadurch seine andock station definiert ..
 
-Beispiel an einer Beispiel Transaktion ;
+Feeds werden als Container betrachtet
 
-Beispiel Code  Ohne Merge und Feed:
+--------------------------------------------------------------------
+  Definition  Anfang :
 
-¢!                                             # Transaktion starten
-»['MotorA'|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«««%50 # Proteinpaket:MotorA,200W,12V mit %50
-= §Displey                                     # der Werte an Display ausgeben
-¶=                                             # Paralleler Prozess
-»[{’Temp’|¨25¨}]«««+10                         # Temperatur von SensorX lesen
-= §SensorX §Cooler                             # Temperatur +10 an Kühler senden
-;;                                             # Paralleler Transport ohne Eingabe
-»[{’Band’|¨2.4G¨}]«                            # WLAN-Band auf 2.4G setzen
-§wlan                                          # Zielreferenz
-!¢                                             # Transaktion beenden
+  (
 
-Interpretation: Dieser Code sendet Leistung/Volt an einen Motor,
-zeigt 50% der Werte auf einem Display, liest parallel die Temperatur
-eines Sensors, passt sie an und aktiviert einen Kühler, während
-das WLAN auf 2.4G gestellt wird. Das zeigt die Stärke von MCS
-in paralleler, systemnaher Steuerung.
+--------------------------------------------------------------------
+  Definition  Ende :
 
-Beispiel mit Parallele und Feed (1);
+  )
 
-¢!                                              # Transaktion starten
-»['MotorA'|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«««%50  # Proteinpaket:MotorA,200W,12V mit %50
-    = §(1)Displey                               # der Werte an Display ausgeben
-¶=                                              # Paralleler Prozess
-»[{Temp|25}]«««+10                              # Temperatur von SensorX lesen
-    = §SensorX §Cooler                          # Temperatur +10 an Kühler senden
-;;                                              # Paralleler Transport ohne Eingabe
-»[{Band|2.4G}]«                                 # WLAN-Band auf 2.4G setzen
-    =  §(1) §WLAN                               # Zielreferenz übernehmen
-!¢                                              # Transaktion beenden
+--------------------------------------------------------------------
+  Definition  Gesamt :
 
-Hierbei diente Feed als Duplikator für den Visuellen Displeyoutput ,
-da feed immer mit der selben zahl , buchtstabe , code , symbole , im
-weiteren prozess oder Dirigent transaktionen sich gegenseitig findet ,
-wird immer das weitergegeben was gefeedet wurde , ganz gleich ob berechnet
-oder kalt hingeschrieben bzw programmiert .. so dient feed für viele zwecke
-außerhalb von ¶ ¶¶ ¶=;;⊕ usw Operatoren...
+  ()
+
+--------------------------------------------------------------------
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
+er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
+und dadurch seine andock station definiert ..
+--------------------------------------------------------------------
+  Definition  mit einer musterbeispiel zahl Gesamt :
+
+  (1)
+
+--------------------------------------------------------------------
+Um den Feed Nutzbar zu machen häften wir jetzt den Feed mit der
+Beispiel Nummer 1 an ein element ein das wir transportieren möchten
+--------------------------------------------------------------------
+  Definition  mit einer musterbeispiel zahl Gesamt :
+
+  (1)
+
+--------------------------------------------------------------------
+Um den Feed Nutzbar zu machen heften wir jetzt den Feed mit der
+Beispiel Nummer 1 an ein element an, das wir transportieren möchten.
+--------------------------------------------------------------------
+  Definition  mit einer musterbeispiel zahl Gesamt :
+
+  (1)""
+
+--------------------------------------------------------------------
+Hier wurde der Feed mit der kennung 1 an eine Eingabe gebunden die
+sich Print nennt und dieser Print befehl ist leer ,
+er hat noch keinen inhalt aber wir brauchen den inhalt , also
+versuchen wir den inhalt zu bekommen .
+
+für das verständnisse suchen wir kurz regulär über das terminal :
+
+ ┌[bandino@dev][16:26:36|Do Nov 27]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[~]> $ pgrep firefox
+1142
+
+Das terminal gibt uns einen echo print aus und den nennwert nehmen
+wir für unseren feed aber wir können die zahl nicht einfach eins zu
+eins binden , wir benötigen hier zu (System abhängig) den jeweiligen
+shell befehl dafür der die zahl ausspuckt , in diesem fall Linux Bash.
+
+--------------------------------------------------------------------
+  Musterbeispiel  :
+
+  (1)"$(pgrep firefox)"
+
+--------------------------------------------------------------------
+um unsere pid id 1142 jetzt weiter zu verarbeiten da wir sie mit feed
+getraget haben , können wir jetzt damit arbeit um den code zu
+vervollständigen
+--------------------------------------------------------------------
+  Musterbeispiel  :
+
+  (1)"$(pgrep firefox)"
+¢!
+»['pgrep'|¨firefox¨|(1)¨$(pgrep firefox)¨]
+»['kill'|¨(1)¨]«««t1
+!¢
+--------------------------------------------------------------------
+wir transportieren einen blanken nenner mit Dollar , bekommen
+den pid der dann als kill 1142 getötet wird .
+
 
 ######################## Ende der Feeds ############################
 ####################################################################

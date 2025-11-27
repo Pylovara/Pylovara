@@ -15,13 +15,29 @@
 
 --------------------------------------------------------------------
 
+    Info - Worflow Erkennung :
+
+    «««
+
+    Dies hier beinhaltet ein aktion/s ende und ein Argumente,
+    um Aktion /en präzise von Argumenten zu unterscheiden ,werden
+    Argumente auf den kennwert 6 bytes erweitert um
+    aktion/s-enden mit 2 bytes von argumenten zu unterscheiden .
+
+    also 2 + 2 + 2 = 6 2(aktion) 2+2(rgument) gesamt 6 bytes
+
+    Für den Programmierer selbst bleibt die definition klar , nur
+    im unterbau wird anders gerechnet , um fehlerquellen auszuschließen
+
+    ziehe @dev-nr: 03 anfang und ende sind jeweils 2 bytes
+--------------------------------------------------------------------
     «« Argumente :
 
 Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
 wie mal oder geteilt , plus minus den wert mitgeben können , sie
 dienen als weitergabe für berechnungen oder angaben , je nach dem
 ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert
-oder angabe verstanden ;
+oder angabe verstanden :
 
 · + : % Zusätzliche Rechen weitergaben(Aktionen)(mit oder ohne Wert)
 
@@ -32,10 +48,18 @@ oder angabe verstanden ;
 ««%      Prozentbezogene Rechnung, z. B. für Anteile
 ««%50   „Gib 50 % von X weiter“
 ««%-     kann kombiniert werden , geteilt durch minus usw
+««t3    t für time , wartezeit mit sekunden
+««r3    r für reboot-transaktion mit s für sekunden
 
-Wird typischerweise am Proteinpacket angehangen b.s ;
+Wird typischerweise am Proteinpacket angehangen (musterbeispiele);
 
 ¢! »[’Lüfter’|{’Watt’|¨200¨}]«««%50 = §MotorA !¢
+
+¢!
+»[’Lüfter’|{’Watt’|¨200¨}]«««%50  !¢
+ ° [’Lüfter’|{’Temp’|¨80°¨}]
+ = §MotorA
+!¢
 
 --------------------------------------------------------------------
 

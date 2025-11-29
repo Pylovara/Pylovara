@@ -1,25 +1,89 @@
-#include "mcs_token.h"
+// mcs_lexer.c — v2.9-konform, UTF-8-sicher, GCC-ready
+// Autor: Thomas Zimmermann / Qwen — basierend auf kernel 02–15, MCS 2.9
+
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
+#include <ctype.h>
+#include "mcs_lexer.h"
 
-// UTF-8-Hilfsfunktion — bleibt so
-// 1. Strukturdefinition — MUSS vor allen Funktionen kommen, die `lex->pos` nutzen
+// 🔹 MUST be first: define the opaque struct
 struct mcs_lexer {
     const char* input;
     const char* pos;
     int line, column;
 };
 
-// 2. Jetzt dürfen Funktionen `lex->pos` verwenden
-static int utf8_match(mcs_lexer_t* lex, const char* pattern) {
-    const char* p = lex->pos;      // ← Jetzt bekannt!
-    const char* pat = pattern;
-    while (*pat && *p == *pat) {
-        p++; pat++;
+// 🔹 Token table (sorted by length, longest first)
+typedef struct {
+    const char* symbol;
+    int length;
+    mcs_token_type_t type;
+} LexerEntry;
+
+static const LexerEntry TOKEN_TABLE[] = {
+    // 6 Bytes
+    {"\xC2\xAB\xC2\xAB\xC2\xAB", 6, TOK_OP_MARK},       // «««
+    {"\xC2\xAB\xC2\xAB-", 5, TOK_ARG_MINUS},            // ««- (5: 2+2+1)
+    {"\xC2\xAB\xC2\xAB+", 5, TOK_ARG_PLUS},             // ««+
+    {"\xC2\xAB\xC2\xAB·", 5, TOK_ARG_MUL},              // ««·
+    {"\xC2\xAB\xC2\xAB:", 5, TOK_ARG_DIV},              // ««:
+    {"\xC2\xAB\xC2\xAB%", 5, TOK_ARG_PERCENT},          // ««%
+    // 4 Bytes
+    {"\xC2\xB6\xC2\xB6", 4, TOK_ELSE},                  // ¶¶
+    {"\xC2\xB6=", 3, TOK_PARALLEL_RUN},                 // ¶=
+    {";;", 2, TOK_PARALLEL_TRANSPORT},                  // ;;
+    // 3 Bytes
+    {"\xC2\xA2!", 3, TOK_TRANS_START},                  // ¢!
+    {"!\xC2\xA2", 3, TOK_TRANS_END},                    // !¢
+    // 2 Bytes
+    {"\xC2\xBB", 2, TOK_ACTION_START},                  // »
+    {"\xC2\xAB", 2, TOK_ACTION_END},                    // «
+    {"\xE2\x80\xA6", 3, TOK_ON_ERROR},                  // … (U+2026)
+    {"^", 1, TOK_TRANS_ERROR},                          // ^ (1 Byte!)
+    {"\xC5\xBF", 2, TOK_DATA_RESIDUE},                  // ſ (U+017F)
+    {"\xE2\x80\x99", 3, TOK_STR_TICK_QUOTE},            // ’ (U+2019)
+    {"\xC2\xA8", 2, TOK_BLANKERNER_QUOTE},              // ¨ (U+00A8)
+    {"\xC2\xB6", 2, TOK_IF},                            // ¶ (U+00B6)
+    {"\xC2\xB0", 2, TOK_WHEN_NOT},                      // ° (U+00B0)
+    {"\xC2\xA7", 2, TOK_TARGET_REF_PREFIX},             // § (U+00A7)
+    {"\xC3\xB8", 2, TOK_WARP},                          // ø (U+00F8)
+    {"\xC3\xBE", 2, TOK_THETA_ID_PREFIX},               // þ (U+00FE)
+    {"\xE2\x8A\x95", 3, TOK_SYNC_TIMER},                // ⊕ (U+2295)
+    // 1 Byte
+    {"[", 1, TOK_PROTEIN_OPEN}, {"]", 1, TOK_PROTEIN_CLOSE},
+    {"{", 1, TOK_PROTON_OPEN}, {"}", 1, TOK_PROTON_CLOSE},
+    {"|", 1, TOK_SEP},
+    {"\"", 1, TOK_STR_DBL_QUOTE}, {"'", 1, TOK_STR_SGL_QUOTE},
+    {">", 1, TOK_WHEN_GT}, {"<", 1, TOK_WHEN_LT}, {"!", 1, TOK_MUST},
+    {"(", 1, TOK_FEED_OPEN}, {")", 1, TOK_FEED_CLOSE},
+    {"$", 1, TOK_DIRIGENT_PREFIX}, {"#", 1, TOK_COMMENT}
+};
+#define TOKEN_TABLE_SIZE (sizeof(TOKEN_TABLE) / sizeof(LexerEntry))
+
+// ────────────────────────────────────────────────────────────────
+// Helper functions
+// ────────────────────────────────────────────────────────────────
+
+static void advance(mcs_lexer_t* lex, int n) {
+    for (int i = 0; i < n; i++) {
+        if (*lex->pos == '\n') {
+            lex->line++; lex->column = 1;
+        } else {
+            lex->column++;
+        }
+        lex->pos++;
     }
-    return *pat == '\0';
 }
+
+static void skip_whitespace(mcs_lexer_t* lex) {
+    while (*lex->pos && isspace((unsigned char)*lex->pos)) {
+        advance(lex, 1);
+    }
+}
+
+// ────────────────────────────────────────────────────────────────
+// Public API
+// ────────────────────────────────────────────────────────────────
 
 mcs_lexer_t* mcs_lexer_new(const char* input) {
     mcs_lexer_t* lex = malloc(sizeof(mcs_lexer_t));
@@ -35,219 +99,60 @@ void mcs_lexer_free(mcs_lexer_t* lex) {
     free(lex);
 }
 
-static void advance(mcs_lexer_t* lex, int n) {
-    for (int i = 0; i < n; i++) {
-        if (*lex->pos == '\n') {
-            lex->line++;
-            lex->column = 1;
-        } else {
-            lex->column++;
-        }
-        lex->pos++;
-    }
-}
-
-static void skip_whitespace(mcs_lexer_t* lex) {
-    while (*lex->pos == ' ' || *lex->pos == '\t') {
-        advance(lex, 1);
-    }
-}
-
-// 🔥 NEU: Alles ab hier auf utf8_match() — KEINE char-Literals mehr!
 mcs_token_t mcs_lexer_next(mcs_lexer_t* lex) {
+    mcs_token_t tok;
     skip_whitespace(lex);
-    mcs_token_t tok = {TOK_INVALID, lex->pos, 0, lex->line, lex->column};
+
+    tok.line = lex->line;
+    tok.column = lex->column;
+    tok.literal = lex->pos;
 
     if (*lex->pos == '\0') {
-        tok.type = TOK_EOF;
+        tok.token_type = TOK_EOF;
+        tok.length = 0;
         return tok;
     }
 
-    // 🔹 Transaktion: ¢! = \xC2\xA2! , !¢ = !\xC2\xA2
-    if (utf8_match(lex, "\xC2\xA2!")) {  // ¢!
-        tok.type = TOK_TRANS_START;
-        tok.length = 3;
-        advance(lex, 3);
-        return tok;
-    }
-    if (utf8_match(lex, "!\xC2\xA2")) {  // !¢
-        tok.type = TOK_TRANS_END;
-        tok.length = 3;
-        advance(lex, 3);
-        return tok;
+    // 🔥 Maximum-Munch: longest match first
+    for (size_t i = 0; i < TOKEN_TABLE_SIZE; i++) {
+        const LexerEntry* e = &TOKEN_TABLE[i];
+        if (memcmp(lex->pos, e->symbol, e->length) == 0) {
+            tok.token_type = e->type;
+            tok.length = e->length;
+
+            if (tok.token_type == TOK_COMMENT) {
+                while (*lex->pos && *lex->pos != '\n') lex->pos++;
+                return mcs_lexer_next(lex);
+            }
+
+            advance(lex, tok.length);
+            return tok;
+        }
     }
 
-    // 🔹 Aktion: » = \xC2\xBB , « = \xC2\xAB
-    if (utf8_match(lex, "\xC2\xBB")) {  // »
-        tok.type = TOK_ACTION_START;
-        tok.length = 2;
-        advance(lex, 2);
-        return tok;
-    }
-    if (utf8_match(lex, "\xC2\xAB")) {  // «
-        // Prüfe auf ««« = \xC2\xAB\xC2\xAB\xC2\xAB
-        if (utf8_match(lex, "\xC2\xAB\xC2\xAB\xC2\xAB")) {
-            tok.type = TOK_OP_MARK;
-            tok.length = 6;
-            advance(lex, 6);
-            return tok;
-        }
-        // Zwei « = \xC2\xAB\xC2\xAB → Fehler
-        if (utf8_match(lex, "\xC2\xAB\xC2\xAB")) {
-            fprintf(stderr, "[LEXER] E_SYNTAX_OP_INCOMPLETE: Expected third « at line %d, col %d\n", lex->line, lex->column);
-            tok.type = TOK_INVALID;
-            tok.length = 4;
-            advance(lex, 4);
-            return tok;
-        }
-        // Ein «
-        tok.type = TOK_ACTION_END;
-        tok.length = 2;
-        advance(lex, 2);
-        return tok;
-    }
-
-    // 🔹 Einzelzeichen (ASCII — sicher)
-    switch (*lex->pos) {
-        case '[': tok.type = TOK_PROTEIN_OPEN; tok.length = 1; advance(lex, 1); return tok;
-        case ']': tok.type = TOK_PROTEIN_CLOSE; tok.length = 1; advance(lex, 1); return tok;
-        case '{': tok.type = TOK_PROTON_OPEN; tok.length = 1; advance(lex, 1); return tok;
-        case '}': tok.type = TOK_PROTON_CLOSE; tok.length = 1; advance(lex, 1); return tok;
-        case '|': tok.type = TOK_SEP; tok.length = 1; advance(lex, 1); return tok;
-        case '>': tok.type = TOK_WHEN_LT; tok.length = 1; advance(lex, 1); return tok;
-        case '<': tok.type = TOK_WHEN_GT; tok.length = 1; advance(lex, 1); return tok;
-        case '!': {
-            // Achtung: '!¢' wurde schon oben gefangen — hier ist nur '!'-allein
-            if (utf8_match(lex, "!\xC2\xA2")) {
-                // Sollte nicht hier landen — aber sicher ist sicher
-                tok.type = TOK_TRANS_END;
-                tok.length = 3;
-                advance(lex, 3);
-            } else {
-                tok.type = TOK_MUST;
-                tok.length = 1;
-                advance(lex, 1);
+    // Fallback: ID (alphanum, _-.)
+    if (isalpha((unsigned char)*lex->pos) || *lex->pos == '_') {
+        tok.token_type = TOK_ID;
+        const char* start = lex->pos;
+        while (isalnum((unsigned char)*lex->pos) ||
+            *lex->pos == '_' || *lex->pos == '-' || *lex->pos == '.') {
+            lex->pos++;
             }
-            return tok;
-        }
-        case ';':
-            if (*(lex->pos + 1) == ';') {
-                tok.type = TOK_PAR_TRANSPORT;
-                tok.length = 2;
-                advance(lex, 2);
-                return tok;
-            }
-            break;
-        case '"': {
-            tok.type = TOK_STR_DBL;
-            const char* start = lex->pos;
-            advance(lex, 1);
-            while (*lex->pos && *lex->pos != '"') {
-                if (*lex->pos == '\\' && *(lex->pos+1)) advance(lex, 1);
-                advance(lex, 1);
-            }
-            if (*lex->pos == '"') advance(lex, 1);
             tok.length = (int)(lex->pos - start);
-            return tok;
-        }
-        case '\'': {
-            tok.type = TOK_STR_SGL;
-            const char* start = lex->pos;
-            advance(lex, 1);
-            while (*lex->pos && *lex->pos != '\'') advance(lex, 1);
-            if (*lex->pos == '\'') advance(lex, 1);
-            tok.length = (int)(lex->pos - start);
-            return tok;
-        }
+        return tok;
     }
 
-    // 🔹 Unicode-Symbole (rein per utf8_match)
-    if (utf8_match(lex, "\xC3\xB8")) {  // ø
-        tok.type = TOK_WARP_START;
-        tok.length = 2;
-        advance(lex, 2);
-        return tok;
-    }
-    if (utf8_match(lex, "\xC2\xB0")) {  // °
-        tok.type = TOK_WHEN_NOT;
-        tok.length = 2;
-        advance(lex, 2);
-        return tok;
-    }
-    if (utf8_match(lex, "\xE2\x80\xA6")) {  // …
-        tok.type = TOK_ON_ERROR;
-        tok.length = 3;
-        advance(lex, 3);
-        return tok;
-    }
-    if (utf8_match(lex, "\xC3\xBE")) {  // þ
-        tok.type = TOK_THETA_ID;
+    // Fallback: NUMBER
+    if (isdigit((unsigned char)*lex->pos)) {
+        tok.token_type = TOK_NUMBER;
         const char* start = lex->pos;
-        advance(lex, 2);
-        int len = 0;
-        while (len < 64 && (
-            (*lex->pos >= 'a' && *lex->pos <= 'z') ||
-            (*lex->pos >= 'A' && *lex->pos <= 'Z') ||
-            (*lex->pos >= '0' && *lex->pos <= '9') ||
-            *lex->pos == '_' || *lex->pos == '.' || *lex->pos == '-'
-        )) {
-            advance(lex, 1);
-            len++;
-        }
-        tok.length = (int)(lex->pos - start);
-        return tok;
-    }
-    if (utf8_match(lex, "\xC2\xB6")) {  // ¶
-        if (utf8_match(lex, "\xC2\xB6\xC2\xB6")) {  // ¶¶
-            tok.type = TOK_ELSE;
-            tok.length = 4;
-            advance(lex, 4);
-            return tok;
-        }
-        if (utf8_match(lex, "\xC2\xB6=")) {  // ¶=
-            tok.type = TOK_PARALLEL;
-            tok.length = 3;
-            advance(lex, 3);
-            return tok;
-        }
-        tok.type = TOK_IF;
-        tok.length = 2;
-        advance(lex, 2);
-        return tok;
-    }
-    // Unicode ’ (U+2019 = \xE2\x80\x99)
-    if (utf8_match(lex, "\xE2\x80\x99")) {
-        tok.type = TOK_STR_TICK;
-        const char* start = lex->pos;
-        advance(lex, 3);
-        while (*lex->pos) {
-            if (utf8_match(lex, "\xE2\x80\x99")) {
-                advance(lex, 3);
-                break;
-            }
-            advance(lex, 1);
-        }
-        tok.length = (int)(lex->pos - start);
-        return tok;
-    }
-    // Unicode ¨ (U+00A8 = \xC2\xA8)
-    if (utf8_match(lex, "\xC2\xA8")) {
-        tok.type = TOK_BLANKERNER;
-        const char* start = lex->pos;
-        advance(lex, 2);
-        while (*lex->pos) {
-            if (utf8_match(lex, "\xC2\xA8")) {
-                advance(lex, 2);
-                break;
-            }
-            advance(lex, 1);
-        }
+        while (isdigit((unsigned char)*lex->pos)) lex->pos++;
         tok.length = (int)(lex->pos - start);
         return tok;
     }
 
-    // Unbekanntes Zeichen
-    fprintf(stderr, "[LEXER] Unknown byte 0x%02X at line %d, col %d\n", (unsigned char)*lex->pos, lex->line, lex->column);
+    // Fallback: single char
+    tok.token_type = TOK_LITERAL;
     tok.length = 1;
     advance(lex, 1);
     return tok;

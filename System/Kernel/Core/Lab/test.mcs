@@ -1,3 +1,5 @@
-¢!
-»['echo'|"Hallo Welt"]«
-!¢
+Â¢!
+Â»['pgrep'|Â¨firefoxÂ¨|(1)Â¨$(pgrep firefox)Â¨]
+Â»['kill'|Â¨(1)Â¨]Â«Â«Â«t1
+Â»['echo'|"Firefox Gekillt"]Â«
+!Â¢

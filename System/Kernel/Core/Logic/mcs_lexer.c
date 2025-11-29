@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "mcs_lexer.h"
+#include "mcs_token.h"
 
 // 🔹 MUST be first: define the opaque struct
 struct mcs_lexer {

@@ -1,6 +1,6 @@
 // /Lab/test_action.c
-#include "../Logic/mcs_token.h"
-#include "../Logic/mcs_lexer.c"  // Ja — .c inkludieren für Test (nur hier!)
+#include "/Pylovara/System/Kernel/Logic/mcs_token.h"
+#include "/Pylovara/System/Kernel/Logic/mcs_lexer.c"  // Ja — .c inkludieren für Test (nur hier!)
 #include <stdio.h>
 
 typedef struct { char* cmd; char* print; } action_t;

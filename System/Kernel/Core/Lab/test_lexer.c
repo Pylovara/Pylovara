@@ -1,5 +1,5 @@
 // Lab/test_lexer.c — v2.9-konform, UTF-8-sicher, FEHLERFREI
-#include "../Logic/mcs_token.h"
+#include "mcs_token.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

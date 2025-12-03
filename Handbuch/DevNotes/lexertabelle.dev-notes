@@ -78,12 +78,14 @@ typedef enum {
     TOK_THETA_ID_PREFIX, // þ
 
     // 15: Argumente (Wichtiger Hinweis: muss nach TOK_ACTION_END erkannt werden!)
-    TOK_OP_MARK,        // ««« (Markiert den Start der Argumente)
-    TOK_ARG_MINUS,      // ««-
-    TOK_ARG_PLUS,       // ««+
-    TOK_ARG_MUL,        // ««· (Mal)
-    TOK_ARG_DIV,        // ««: (Geteilt)
-    TOK_ARG_PERCENT,    // ««%
+    - {"\xC2\xAB\xC2\xAB-", 3, TOK_ARG_ID},      // 3 Bytes
+    + {"\xC2\xAB-", 3, TOK_ARG_MINUS},           // «- → 2+1 = 3 Bytes
+    + {"\xC2\xAB+", 3, TOK_ARG_PLUS},            // «+ → 2+1 = 3 Bytes
+    + {"\xC2\xAB·", 3, TOK_ARG_MUL},             // «· → 2+1 = 3 Bytes
+    + {"\xC2\xAB:", 3, TOK_ARG_DIV},             // «: → 2+1 = 3 Bytes
+    + {"\xC2\xAB%", 3, TOK_ARG_PERCENT},         // «% → 2+1 = 3 Bytes
+    + {"\xC2\xABt", 3, TOK_ARG_TIME_PREFIX},     // «t (Prefix für «t3)
+    + {"\xC2\xABr", 3, TOK_ARG_REBOOT_PREFIX},   // «r → 2+1 = 3 Bytes
     // Argumente wie ««t3 oder ««r3 werden im Parser als TOK_ARG_ID behandelt.
 
     TOK_EOF // End of File

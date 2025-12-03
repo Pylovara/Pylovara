@@ -1,28 +1,25 @@
+// Lib/mcs_transaction.c — Basis-Transaktionsparser für MCS v2.9
+#include <stdlib.h>
 #include "mcs_transaction.h"
-#include <stdio.h>
 
-bool mcs_parse_transaction(mcs_lexer_t* lex, mcs_transaction_t* out) {
+int mcs_parse_transaction(mcs_lexer_t* lex, mcs_transaction_t* out) {
+    if (!lex || !out) return 0;
+
     mcs_token_t tok = mcs_lexer_next(lex);
 
-    // 1. Prüfe Transaktions-Start
-    if (tok.token_type != TOK_TRANS_START) {
-        fprintf(stderr, "[TRANS] Fehler: Erwartet ¢! bei Zeile %d\n", tok.line);
-        return false;
-    }
-    out->start = tok;
+    // ¢!
+    if (tok.token_type != TOK_TRANS_START) return 0;
+    out->trans_start = tok;
 
-    // 2. Lies beliebige Inhalte (Aktionen, Warp, etc.) — bis Transaktions-Ende
+    // Skip content until !¢ (für Minimal-Test: nur bis Ende suchen)
     while (1) {
         tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_EOF) return 0;
         if (tok.token_type == TOK_TRANS_END) {
-            out->end = tok;
-            out->is_valid = true;
-            return true;
+            out->trans_end = tok;
+            out->is_valid = 1;
+            return 1;
         }
-        if (tok.token_type == TOK_EOF) {
-            fprintf(stderr, "[TRANS] Fehler: Unvollständige Transaktion — !¢ fehlt\n");
-            return false;
-        }
-        // Sonst: Token ignorieren (wird später vom Parser verarbeitet)
+        // Sonst: ignorieren (später: Inhalts-Parser hier einbauen)
     }
 }

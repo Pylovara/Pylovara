@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/pylovara_kernel.dir/link.d CMakeFiles/pylovara_kernel.dir/main.c.o -o pylovara_kernel  libmcs_core.a

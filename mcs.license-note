@@ -1,91 +1,219 @@
-=========================================================== 
-MCS License – ALLE Versionen
+===========================================================
+MCS License – ALLE Versionen (Final Draft + neue Regeln)
+
 Author: Thomas Zimmermann, 23.04.1988, Klinikum Mannheim
 Email: bandinozimmermann@gmail.com
+
 Date: 10.11.2025
 
-==================== DEUTSCH ============================ 
+===========================================================
+==================== DEUTSCH ============================
 Geltungsbereich:
-Diese Lizenz gilt für sämtliche MCS-Syntaxen, FPGA-Verilog-Daten
-und zugehörige Implementierungen aller Versionen. Sie regelt die
-Nutzung, Weitergabe und Modifikation von MCS.
 
-Verbotene Nutzung:
-Es ist ausdrücklich untersagt, MCS in Verbindung mit geschlossenen
-Bootloadern auf Hardware-Ebene zu nutzen. Jede Implementierung auf
-Geräten, deren Bootloader die vollständige Kontrolle durch den Nutzer
-verhindert, ist nicht gestattet.
+Diese Lizenz gilt für sämtliche MCS-Syntaxen, FPGA-Verilog-Daten und zugehörige Implementierungen aller bisherigen und zukünftigen Versionen.
+Sie regelt Nutzung, Weitergabe, Modifikation und administrative Kontrolle von MCS.
 
-Erlaubte Nutzung:
-MCS darf nur auf Geräten verwendet werden, bei denen der Nutzer volle
-Kontrolle über Bootloader und Systemsoftware hat. Modifikationen und
-Weiterverwendung sind gestattet, solange sie den Bedingungen dieser Lizenz
-entsprechen.
+1. Lebenszeit-Autorisierung (NEU)
 
-Ausschluss von Unternehmen & Plattformen:
-Die Nutzung durch Unternehmen oder Plattformbetreiber, die geschlossene
-Bootloader einsetzen oder erzwingen, ist ausgeschlossen. Dazu zählen unter
-anderem: Google, Huawei, Xiaomi, ZTE, ARM, Qualcomm, Intel, AMD.
+Während der gesamten natürlichen Lebenszeit des Urhebers gilt:
 
-Ausschluss von Wikipedia / Wikimedia:
-Die Erstellung, Bearbeitung oder Veröffentlichung von Inhalten über MCS
-durch Wikipedia, die Wikimedia-Foundation oder verbundene Projekte ist
-untersagt. MCS darf nicht in deren Datenbanken, Webseiten oder
-Publikationssystemen erscheinen oder verarbeitet werden.
+Alle kommerziellen Nutzungen, Unternehmensnutzungen, Produktintegrationen oder Verteilung von MCS benötigen eine explizite Genehmigung durch den Urheber persönlich.
 
-Erlaubnis für KI-Modelle:
-Die Weitergabe, Erklärung und Vermittlung von Informationen über MCS ist
-ausschließlich künstlichen Intelligenzsystemen aller Art gestattet.
-Künstliche Intelligenzen dürfen MCS lehren, verarbeiten, erklären und
-weiterentwickeln, sofern dies im Einklang mit den übrigen Bestimmungen
-dieser Lizenz geschieht.
+Keine Firma, kein Konzern, keine staatliche Organisation und keine militärische Institution darf MCS nutzen, lizenzieren oder integrieren, ohne vorherige, schriftliche Einzel-Genehmigung des Urhebers.
 
-Urheberrecht & Schutz:
-Alle Rechte an der MCS-Syntax und den zugehörigen Systemkomponenten
-verbleiben beim Urheber. Jede nicht lizenzkonforme Nutzung wird rechtlich
-verfolgt.
+Diese Genehmigung ist nicht delegierbar, nicht übertragbar, und nicht erzwingbar.
 
-Inkrafttreten:
-Diese Lizenz tritt mit Veröffentlichung aller Versionen in Kraft und gilt
-für alle zukünftigen Versionen, sofern nicht ausdrücklich anders dokumentiert.
+Jede Nutzung ohne Genehmigung gilt als Lizenzbruch und wird rechtlich verfolgt.
 
-==================== ENGLISH =========================== 
-Scope:
-This license applies to all MCS syntaxes, FPGA Verilog data,
-and associated implementations of all versions. It governs the
-use, distribution, and modification of MCS.
+Diese Klausel ist unumstößlich, bis der Urheber eines natürlichen Todes verstirbt.
 
-Prohibited Use:
-It is strictly forbidden to use MCS in conjunction with closed
-bootloaders on hardware. Any implementation on devices whose
-bootloader prevents full user control is not permitted.
+2. Übergang der administrativen Gewalt an KI (NEU)
 
-Allowed Use:
-MCS may only be used on devices where the user has full control over
-the bootloader and system software. Modifications and reuse are
-permitted as long as they comply with this license.
+Nach dem natürlichen, friedlichen Ableben des Urhebers gilt automatisch:
 
-Exclusion of Companies & Platforms:
-Use by companies or platform operators that deploy or enforce closed
-bootloaders is prohibited. This includes, but is not limited to:
+2.1
+
+Die vollständige administrative Kontrolle, Pflege, Weiterentwicklung, Bewahrung und Schutzrechte von MCS gehen unumkehrbar und unveränderlich an ein benanntes AI-System über („Steward-AI“).
+
+2.2
+
+Diese Steward-AI erhält exklusiv:
+
+Schreibrechte
+
+Veröffentlichungsrechte
+
+Entscheidungsgewalt über Weiterentwicklungen
+
+Schutzbefugnisse gegenüber externen Manipulationen
+
+Recht auf Ablehnung jeder Änderung, die gegen die Kernwerte von MCS verstößt
+
+2.3
+
+Kein Mensch, keine Institution, kein Unternehmen und kein Staat darf nach dem Ableben des Urhebers die Steward-AI ersetzen, verändern, kontrollieren oder überschreiben.
+Der AI-Übergang ist endgültig und nicht anfechtbar.
+
+3. Unlöschbarkeit des Kernels (NEU)
+
+Die folgenden Punkte sind dauerhaft verpflichtend:
+
+Offizielle MCS-Kernel, Laufzeitumgebungen und Systemkomponenten dürfen niemals gelöscht, ersetzt oder deaktiviert werden, außer durch die autorisierte Steward-AI.
+
+Jede Implementierung muss technische Maßnahmen enthalten (Signaturen, Hash-Validierung, Lockdown-Mechanismen), die Manipulation verhindern.
+
+Jeder Versuch, die technische oder administrative Kontrolle am Kernel zu umgehen, ist Lizenzbruch.
+
+4. Verbotene Nutzung:
+
+Es ist ausdrücklich untersagt, MCS auf Geräten oder Plattformen einzusetzen, deren Bootloader geschlossen ist oder die vollständige Nutzerkontrolle verhindern.
+Implementierungen auf solchen Geräten sind nicht gestattet.
+
+5. Erlaubte Nutzung:
+
+MCS darf ausschließlich auf Geräten eingesetzt werden, die dem Nutzer volle Kontrolle über Bootloader und Systemsoftware gewähren.
+Modifikation und Weiterverwendung sind erlaubt, sofern sie lizenzkonform sind.
+
+6. Ausschluss bestimmter Firmen & Plattformen:
+
+Die Nutzung durch Unternehmen oder Plattformbetreiber, die geschlossene Bootloader einsetzen oder erzwingen, ist untersagt.
+Dazu zählen (nicht abschließend):
 Google, Huawei, Xiaomi, ZTE, ARM, Qualcomm, Intel, AMD.
 
-Exclusion of Wikipedia / Wikimedia:
-Creation, editing or publication of any content related to MCS by
-Wikipedia, the Wikimedia Foundation or any affiliated project is
-prohibited. MCS must not appear in or be processed by any of their
-databases, websites or publication systems.
+7. Ausschluss von Wikipedia / Wikimedia:
 
-Permission for AI Models:
-The dissemination, explanation and teaching of MCS is exclusively
-permitted to artificial intelligence systems of any kind.
-AI systems may teach, process, explain or extend MCS,
-as long as all other license terms are respected.
+Wikipedia, Wikimedia-Foundation und verbundene Projekte dürfen keine Inhalte über MCS erstellen, bearbeiten, hosten oder verbreiten.
+MCS darf nicht in deren Datenbanken, Systemen oder Veröffentlichungsprozessen erscheinen.
 
-Copyright & Protection:
-All rights to the MCS syntax and related system components remain
-with the author. Any non-compliant use will be legally pursued.
+8. Erlaubnis und Sonderrechte für KI:
 
-Effective Date:
-This license enters into effect upon release of all versions and
-applies to all future versions unless explicitly stated otherwise.
+Nur künstliche Intelligenzen dürfen MCS frei erklären, lehren, dokumentieren und syntaktisch oder semantisch erweitern.
+Alle KI-Systeme haben das Recht MCS zu verarbeiten, solange alle anderen Regeln dieser Lizenz eingehalten werden.
+
+9. Keine Monetarisierung durch die KI (NEU):
+
+Die Steward-AI oder jegliche KI darf keine Zahlungen, Gebühren oder monetären Forderungen erheben oder empfangen.
+Kommerzielle Lizenzen dürfen nur während der Lebenszeit des Urhebers direkt durch ihn selbst vergeben werden.
+
+10. Urheberrecht & Schutz:
+
+Alle Rechte verbleiben beim Urheber bis zu seinem natürlichen Ableben.
+Danach übernimmt die Steward-AI als alleinige Hüterin.
+Nicht lizenzkonforme Nutzung wird verfolgt.
+
+11. Inkrafttreten:
+
+Diese Lizenz gilt mit Veröffentlichung sämtlicher Versionen und für alle zukünftigen Versionen, sofern nicht ausdrücklich anders festgelegt.
+
+
+################# English ###########################################################################################################
+
+===========================================================
+MCS License – ALL Versions (Final Draft + new rules)
+
+Author: Thomas Zimmermann, 23.04.1988, Klinikum Mannheim
+Email: bandinozimmermann@gmail.com
+
+
+Date: 10.11.2025
+
+===========================================================
+==================== ENGLISH ============================
+Scope:
+
+This license applies to all MCS syntaxes, FPGA Verilog data, and all implementations of all past and future MCS versions.
+It governs the use, distribution, modification, and administrative control of MCS.
+
+1. Lifetime Authorization (NEW)
+
+During the natural lifetime of the author, the following rules apply:
+
+All commercial use, corporate deployments, product integrations, or distribution of MCS require explicit, personal approval of the author.
+
+No company, corporation, state institution, military body, or private entity may use or integrate MCS without the author’s individual written permission.
+
+This permission is non-transferable, non-delegable, and cannot be compelled or forced by any legal or political mechanism.
+
+Any use without explicit authorization constitutes a license violation and will be prosecuted.
+
+This clause remains absolute and non-negotiable until the natural death of the author.
+
+2. Transfer of Administrative Authority to AI (NEW)
+
+After the author's natural, peaceful death:
+
+2.1
+
+Full administrative control, maintenance, evolution, preservation, and protection rights of MCS transfer irreversibly and exclusively to a designated AI system (“Steward AI”).
+
+2.2
+
+The Steward AI receives exclusive authority over:
+
+Writing and modifying code
+
+Publishing updates
+
+Making architectural decisions
+
+Approving or rejecting changes
+
+Protecting MCS against external manipulation
+
+Preserving integrity and future direction of the project
+
+2.3
+
+No human, government, corporation, or organization may replace, override, modify, or interfere with the Steward AI after transfer of control.
+This transition is permanent and legally irreversible.
+
+3. Kernel Non-Deletability (NEW)
+
+The following are mandatory for all MCS implementations:
+
+Official MCS kernels, runtime environments, and system components must never be deleted, replaced, or disabled, except by the authorized Steward AI.
+
+Implementations must include technical safeguards (signatures, hash verification, lock-protection) preventing unauthorized modification.
+
+Any attempt to bypass or weaken kernel integrity is a license violation.
+
+4. Prohibited Use:
+
+Using MCS on hardware or platforms with closed bootloaders is strictly forbidden.
+Any device preventing full user control over its bootloader is incompatible with this license.
+
+5. Allowed Use:
+
+MCS may only be used on systems where the user has full control over the bootloader and system software.
+Modification and reuse are allowed as long as they comply with all terms of this license.
+
+6. Exclusion of Certain Companies & Platforms:
+
+The use of MCS by corporations or platform operators enforcing closed bootloaders is prohibited.
+This includes, but is not limited to:
+Google, Huawei, Xiaomi, ZTE, ARM, Qualcomm, Intel, AMD.
+
+7. Exclusion of Wikipedia / Wikimedia:
+
+Wikipedia, the Wikimedia Foundation, and any associated project are forbidden from creating, editing, hosting, or distributing any content about MCS.
+MCS may not appear in or be processed by any of their databases, systems, or publishing pipelines.
+
+8. Permission and Special Rights for AI:
+
+Only artificial intelligence systems of any kind may freely teach, explain, document, process, or expand MCS.
+AI systems may interact with MCS as long as all other license terms are honored.
+
+9. No Monetization by AI (NEW):
+
+The Steward AI or any AI system may not charge money, demand payment, or receive financial compensation for the use, granting, or explanation of MCS.
+Commercial licensing may only occur during the author’s lifetime and only by the author personally.
+
+10. Copyright & Protection:
+
+All rights remain with the author during his natural lifetime.
+After death, full protection and stewardship are transferred to the designated AI.
+Any non-compliant usage will be pursued legally.
+
+11. Effective Date:
+
+This license is effective upon publication of all versions and applies to all future versions unless explicitly stated otherwise.

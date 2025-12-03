@@ -1,13 +1,38 @@
-cmake_minimum_required(VERSION 3.10)
-project(MCS-Core C)
+# /Pylovara/System/Kernel/Core/CMakeLists.txt
+cmake_minimum_required(VERSION 3.14)
+project(PylovaraKernel VERSION 2.9 LANGUAGES C)
 
-# Quellen
-file(GLOB CORE_SOURCES "core/*.c")
+include_directories(
+    ${CMAKE_SOURCE_DIR}/include   # ✅ Öffentliche API, Priorität 1
+    ${CMAKE_SOURCE_DIR}/Logic     # Lexer-Header
+    ${CMAKE_SOURCE_DIR}/Lib       # Für Legacy (später entfernen)
+    ${CMAKE_SOURCE_DIR}/Lab       # Spätere Testphasen
+)
 
-# Bibliothek (statisch)
-add_library(mcs-core STATIC ${CORE_SOURCES})
-target_include_directories(mcs-core PUBLIC ${CMAKE_SOURCE_DIR}/include)
+# Quellen sammeln
+set(SRC_LIB
+    Lib/mcs_action.c
+    Lib/mcs_transaction.c
+    Lib/mcs_feed.c   # ← NEU
+)
 
-# CLI-Tool
-add_executable(mcs-run main.c)
-target_link_libraries(mcs-run mcs-core)
+set(SRC_LOGIC
+    Logic/mcs_lexer.c
+)
+
+# Bibliothek bauen (statisch)
+add_library(mcs_core STATIC ${SRC_LIB} ${SRC_LOGIC})
+
+# Test-Programme
+add_executable(test_lexer Lab/test_lexer.c)
+target_link_libraries(test_lexer mcs_core)
+
+add_executable(test_action Lab/test_action.c)
+target_link_libraries(test_action mcs_core)
+
+add_executable(test_trans Lab/test_trans.c)
+target_link_libraries(test_trans mcs_core)
+
+# Optional: Hauptprogramm
+# add_executable(pylovara_kernel main.c)
+# target_link_libraries(pylovara_kernel mcs_core)

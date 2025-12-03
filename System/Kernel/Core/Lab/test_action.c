@@ -1,41 +1,49 @@
-// /Lab/test_action.c
-#include "/Pylovara/System/Kernel/Logic/mcs_token.h"
-#include "/Pylovara/System/Kernel/Logic/mcs_lexer.c"  // Ja — .c inkludieren für Test (nur hier!)
+// Lab/test_action.c — MCS v2.9 Action-Test
 #include <stdio.h>
-
-typedef struct { char* cmd; char* print; } action_t;
-
-int parse_action(mcs_lexer_t* lex, action_t* out) {
-    if (mcs_lexer_next(lex).type != TOK_ACTION_START) return -1;
-    if (mcs_lexer_next(lex).type != TOK_PROTEIN_OPEN) return -1;
-
-    mcs_token_t tok = mcs_lexer_next(lex);
-    if (tok.type != TOK_STR_SGL) return -1;
-    out->cmd = strndup(tok.start + 1, tok.length - 2);
-
-    if (mcs_lexer_next(lex).type != TOK_SEP) return -1;
-
-    tok = mcs_lexer_next(lex);
-    if (tok.type != TOK_STR_DBL) return -1;
-    out->print = strndup(tok.start + 1, tok.length - 2);
-
-    if (mcs_lexer_next(lex).type != TOK_PROTEIN_CLOSE) return -1;
-    if (mcs_lexer_next(lex).type != TOK_ACTION_END) return -1;
-    return 0;
-}
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_action.h"
 
 int main() {
-    const char* code = "»['echo'|\"Hallo\"]«";
-    mcs_lexer_t* lex = mcs_lexer_new(code);
-    action_t act = {0};
-
-    if (parse_action(lex, &act) == 0) {
-        printf("✅ Aktion: cmd='%s', print='%s'\n", act.cmd, act.print);
-    } else {
-        printf("❌ Parse-Fehler\n");
+    // ✅ Korrekter Input (1x » am Anfang, 1x « nach Protein, dann «««t1)
+    const char input_bytes[] = {
+        0xC2, 0xBB,                    // »
+        0x5B,                          // [
+        0x27, 0x70, 0x67, 0x72, 0x65, 0x70, 0x27,  // 'pgrep'
+        0x7C,                          // |
+        0xC2, 0xA8, 0x66, 0x69, 0x72, 0x65, 0x66, 0x6F, 0x78, 0xC2, 0xA8,  // ¨firefox¨
+        0x7C,                          // |
+        0x28, 0x31, 0x29,              // (1)
+        0xC2, 0xA8, 0x24, 0x70, 0x67, 0x72, 0x65, 0x70, 0x20, 0x66, 0x69, 0x72, 0x65, 0x66, 0x6F, 0x78, 0xC2, 0xA8,  // ¨$pgrep firefox¨
+        0x5D,                          // ]
+        0xC2, 0xAB,                    // «
+        0xC2, 0xAB, 0xC2, 0xAB,        // «««
+        0x74, 0x31,                    // t1
+        0x00                           // \0
+    };
+    const char* input = (const char*)input_bytes;
+    mcs_action_t* a = mcs_parse_action(input);
+    if (!a) {
+        printf("❌ Parse error in »%s«\n", input);
+        return 1;
     }
 
-    free(act.cmd); free(act.print);
-    mcs_lexer_free(lex);
+    printf("✅ Action parsed:\n");
+    printf("   cmd            = %s\n", a->cmd ? a->cmd : "(null)");
+    printf("   arg1           = %s\n", a->arg1 ? a->arg1 : "(null)");
+    printf("   feed.id        = %d\n", a->feed.id);
+    printf("   blankernenner  = %s\n", a->blankernenner ? a->blankernenner : "(null)");
+    printf("   arg.type       = %d (%s)\n", a->arg.type,
+           (a->arg.type == ARG_TIME) ? "TIME" :
+           (a->arg.type == ARG_REBOOT) ? "REBOOT" :
+           (a->arg.type == ARG_PERCENT) ? "PERCENT" :
+           (a->arg.type == ARG_MINUS) ? "MINUS" : "OTHER");
+    printf("   arg.value      = %d\n", a->arg.value);
+
+    if (a->feed.id > 0 && a->blankernenner) {
+        printf("→ Feed #%d mit Blankernenner: %s\n", a->feed.id, a->blankernenner);
+    }
+
+    mcs_free_action(a);
     return 0;
 }

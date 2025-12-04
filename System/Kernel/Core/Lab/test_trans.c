@@ -4,20 +4,20 @@
 #include "mcs_transaction.h"
 
 int main() {
-    const char* input = "»['echo'|\"Hallo\"]«";
-    mcs_lexer_t* lex = mcs_lexer_new(input);
-    mcs_transaction_t trans = {0};
-
-    if (mcs_parse_transaction(lex, &trans) && trans.is_valid) {
-        printf("✅ Transaktion erkannt:\n"
-        "   Start: %.*s (Zeile %d)\n"
-        "   Ende:  %.*s (Zeile %d)\n",
-               trans.trans_start.length, trans.trans_start.literal, trans.trans_start.line,
-               trans.trans_end.length,   trans.trans_end.literal,   trans.trans_end.line);
-    } else {
-        printf("❌ Keine gültige Transaktion gefunden.\n");
-    }
-
-    mcs_lexer_free(lex);
+    const char input_bytes[] = {
+        0xC2, 0xA2, 0x21,          // ¢!
+        0x20,                      // space
+        0xC2, 0xBB,                // »
+        0x5B,                      // [
+        0x27, 0x65, 0x63, 0x68, 0x6F, 0x27,  // 'echo'
+        0x7C,                      // |
+        0x22, 0x48, 0x61, 0x6C, 0x6C, 0x6F, 0x22,  // "Hallo"
+        0x5D,                      // ]
+        0xC2, 0xAB,                // «
+        0x20,                      // space
+        0x21, 0xC2, 0xA2,         // !¢
+        0x00
+    };
+    mcs_lexer_t* lex = mcs_lexer_new((const char*)input_bytes);
     return 0;
 }

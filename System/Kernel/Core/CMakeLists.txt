@@ -12,8 +12,14 @@ include_directories(
 # Quellen sammeln
 set(SRC_LIB
     Lib/mcs_action.c
-    Lib/mcs_transaction.c
-    Lib/mcs_feed.c   # ← NEU
+    Lib/mcs_argument.c
+    Lib/mcs_feed.c
+    Lib/mcs_protein.c
+    Lib/mcs_proton.c
+    Lib/mcs_warp.c
+    Lib/mcs_wahrheiten.c
+    Lib/mcs_transaktion.c
+    Logic/mcs_lexer.c
 )
 
 set(SRC_LOGIC
@@ -36,3 +42,6 @@ target_link_libraries(test_trans mcs_core)
 # Optional: Hauptprogramm
 # add_executable(pylovara_kernel main.c)
 # target_link_libraries(pylovara_kernel mcs_core)
+
+
+

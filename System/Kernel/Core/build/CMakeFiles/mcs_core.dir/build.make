@@ -86,19 +86,19 @@ CMakeFiles/mcs_core.dir/Lib/mcs_action.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_action.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_action.c -o CMakeFiles/mcs_core.dir/Lib/mcs_action.c.s
 
-CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o: CMakeFiles/mcs_core.dir/flags.make
-CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_transaction.c
-CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o -MF CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o.d -o CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o -c /Pylovara/System/Kernel/Core/Lib/mcs_transaction.c
+CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o: CMakeFiles/mcs_core.dir/flags.make
+CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_argument.c
+CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o -MF CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o.d -o CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o -c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c
 
-CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/System/Kernel/Core/Lib/mcs_transaction.c > CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.i
+CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/System/Kernel/Core/Lib/mcs_argument.c > CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.i
 
-CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_transaction.c -o CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.s
+CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_argument.c -o CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.s
 
 CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o: CMakeFiles/mcs_core.dir/flags.make
 CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_feed.c
@@ -114,10 +114,80 @@ CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_feed.c -o CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.s
 
+CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o: CMakeFiles/mcs_core.dir/flags.make
+CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_protein.c
+CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o -MF CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o.d -o CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o -c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c
+
+CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/System/Kernel/Core/Lib/mcs_protein.c > CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.i
+
+CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_protein.c -o CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.s
+
+CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o: CMakeFiles/mcs_core.dir/flags.make
+CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_proton.c
+CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o -MF CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o.d -o CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o -c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c
+
+CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/System/Kernel/Core/Lib/mcs_proton.c > CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.i
+
+CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_proton.c -o CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.s
+
+CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o: CMakeFiles/mcs_core.dir/flags.make
+CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_warp.c
+CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o -MF CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o.d -o CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o -c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c
+
+CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/System/Kernel/Core/Lib/mcs_warp.c > CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.i
+
+CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_warp.c -o CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.s
+
+CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o: CMakeFiles/mcs_core.dir/flags.make
+CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c
+CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o -MF CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o.d -o CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o -c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c
+
+CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c > CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.i
+
+CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c -o CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.s
+
+CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o: CMakeFiles/mcs_core.dir/flags.make
+CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o: /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c
+CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o -MF CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o.d -o CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o -c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c
+
+CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c > CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.i
+
+CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c -o CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.s
+
 CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o: CMakeFiles/mcs_core.dir/flags.make
 CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o: /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c
 CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o: CMakeFiles/mcs_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o -MF CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o.d -o CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o -c /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c
 
 CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.i: cmake_force
@@ -131,20 +201,30 @@ CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.s: cmake_force
 # Object files for target mcs_core
 mcs_core_OBJECTS = \
 "CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o" \
-"CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o" \
+"CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o" \
 "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o" \
+"CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o" \
+"CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o" \
+"CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o" \
+"CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o" \
+"CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o" \
 "CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o"
 
 # External object files for target mcs_core
 mcs_core_EXTERNAL_OBJECTS =
 
 libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
-libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o
+libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
 libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+libmcs_core.a: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
 libmcs_core.a: CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
 libmcs_core.a: CMakeFiles/mcs_core.dir/build.make
 libmcs_core.a: CMakeFiles/mcs_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libmcs_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Pylovara/System/Kernel/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libmcs_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/mcs_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mcs_core.dir/link.txt --verbose=$(VERBOSE)
 

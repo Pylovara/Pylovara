@@ -1,5 +1,5 @@
-CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o: \
- /Pylovara/System/Kernel/Core/Lib/mcs_transaction.c \
+CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o: \
+ /Pylovara/System/Kernel/Core/Lib/mcs_argument.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -24,6 +24,8 @@ CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o: \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h \
- /Pylovara/System/Kernel/Core/Lib/mcs_transaction.h \
+ /usr/include/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/strings.h \
+ /Pylovara/System/Kernel/Core/include/mcs_argument.h \
  /Pylovara/System/Kernel/Core/Logic/mcs_token.h

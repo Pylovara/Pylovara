@@ -11,7 +11,7 @@ int mcs_parse_transaction(mcs_lexer_t* lex, mcs_transaction_t* out) {
     if (tok.token_type != TOK_TRANS_START) return 0;
     out->trans_start = tok;
 
-    // Skip content until !¢ (für Minimal-Test: nur bis Ende suchen)
+    // Skip content until !¢
     while (1) {
         tok = mcs_lexer_next(lex);
         if (tok.token_type == TOK_EOF) return 0;
@@ -20,6 +20,5 @@ int mcs_parse_transaction(mcs_lexer_t* lex, mcs_transaction_t* out) {
             out->is_valid = 1;
             return 1;
         }
-        // Sonst: ignorieren (später: Inhalts-Parser hier einbauen)
     }
 }

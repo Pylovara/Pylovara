@@ -9,8 +9,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Pylovara/System/Kernel/Core/Lib/mcs_action.c" "CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_argument.c" "CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_feed.c" "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o.d"
-  "/Pylovara/System/Kernel/Core/Lib/mcs_transaction.c" "CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_transaction.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_protein.c" "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_proton.c" "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c" "CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c" "CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_warp.c" "CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o.d"
   "/Pylovara/System/Kernel/Core/Logic/mcs_lexer.c" "CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o" "gcc" "CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o.d"
   )
 

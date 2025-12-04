@@ -1,10 +1,11 @@
-CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o: \
- /Pylovara/System/Kernel/Core/Lib/mcs_action.c /usr/include/stdc-predef.h \
- /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o: \
+ /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c \
+ /usr/include/stdc-predef.h /usr/include/stdlib.h \
+ /usr/include/bits/libc-header-start.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
@@ -23,10 +24,6 @@ CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o: \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/string.h \
- /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/strings.h /Pylovara/System/Kernel/Core/include/mcs_action.h \
- /Pylovara/System/Kernel/Core/Logic/mcs_token.h \
- /Pylovara/System/Kernel/Core/include/mcs_feed.h \
- /Pylovara/System/Kernel/Core/include/mcs_argument.h \
- /Pylovara/System/Kernel/Core/include/mcs_argument.h
+ /usr/include/bits/stdlib-float.h \
+ /Pylovara/System/Kernel/Core/Lib/mcs_transaction.h \
+ /Pylovara/System/Kernel/Core/Logic/mcs_token.h

@@ -24,22 +24,26 @@
     Argumente auf den kennwert 6 bytes erweitert um
     aktion/s-enden mit 2 bytes von argumenten zu unterscheiden .
 
-    also 2 + 2 + 2 = 6 2(aktion) 2+2(rgument) gesamt 6 bytes
+    also 2 + 2 + 2 = 6 2(aktion) 2+2(argument) gesamt 6 bytes
 
     Für den Programmierer selbst bleibt die definition klar , nur
     im unterbau wird anders gerechnet , um fehlerquellen auszuschließen
 
     ziehe @dev-nr: 03 anfang und ende sind jeweils 2 bytes
+
+    Da die 2 bytes vom aktion/s ende abgezogen werden,
+    müssen die argumente mit 4 bytes berechnet werden
+    und dann 4 + 1 byte weiter .
+
 --------------------------------------------------------------------
     «« Argumente :
 
-Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
-wie mal oder geteilt , plus minus den wert mitgeben können , sie
-dienen als weitergabe für berechnungen oder angaben , je nach dem
-ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert
-oder angabe verstanden :
+    Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
+    wie mal oder geteilt , plus minus den wert mitgeben können , sie
+    dienen als weitergabe für berechnungen oder angaben , je nach dem
+    ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert
+    oder angabe verstanden :
 
-· + : % Zusätzliche Rechen weitergaben(Aktionen)(mit oder ohne Wert)
 
 ««-      Minus
 ««+      Plus
@@ -47,19 +51,29 @@ oder angabe verstanden :
 ««:      Geteilt
 ««%      Prozentbezogene Rechnung, z. B. für Anteile
 ««%50   „Gib 50 % von X weiter“
-««%-     kann kombiniert werden , geteilt durch minus usw
 ««t3    t für time , wartezeit mit sekunden
 ««r3    r für reboot-transaktion mit s für sekunden
 
 Wird typischerweise am Proteinpacket angehangen (musterbeispiele);
 
-¢! »[’Lüfter’|{’Watt’|¨200¨}]«««%50 = §MotorA !¢
+¢! »[’Lüfter’|{’Watt’|¨200¨}]«««%50 = §MotorID !¢
+
+¢! »[’Lüfter’|{’Watt’|¨120¨}]«««%30 !¢
 
 ¢!
-»[’Lüfter’|{’Watt’|¨200¨}]«««%50  !¢
- ° [’Lüfter’|{’Temp’|¨80°¨}]
- = §MotorA
+    ¶ »[’Lüfter’|{’Temp’|¨80°¨}]
+    ¶¶ »[’Lüfter’|{’Watt’| ¨220¨}]«««%100
 !¢
+
+oder als worflow :
+
+¢!
+    »[’Lüfter’|{’Watt’|¨150¨}]«««%40  #grundeinstellung
+        ¶ »[’Lüfter’|{’Temp’|¨80°¨}]  #wenn
+        ¶¶ »[’Lüfter’|{’Watt’| ¨220¨}]«««%100 #kann
+!¢
+
+Daraus lassen sich ganze prozesse nachbilden
 
 --------------------------------------------------------------------
 

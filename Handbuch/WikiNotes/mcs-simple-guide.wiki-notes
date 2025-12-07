@@ -3,8 +3,8 @@
 @wiki-nr: mcs-simple-guide
 @wiki-tags: MCS, Guide, Pylovara, AIMS, DIMS, FPGA, Kernel, Bash
 ####################################################################
-# MCS SIMPLE GUIDE (Stark vereinfachte Erklärung) 0.3
-# Vereinfachte Einführung in MCS 2.2 – Logik, Syntax und Bedeutung
+# MCS SIMPLE GUIDE (Stark vereinfachte Erklärung) 0.4
+# Vereinfachte Einführung in MCS 3.0 – Logik, Syntax und Bedeutung
 # Autor: Thomas Zimmermann
 # Verbessert durch Pylovara-AI : GPT-5 | Claude 4.5 | Gemini 2.5 |
 ####################################################################
@@ -27,6 +27,17 @@ Ziel:
 - § ist Software/Code
 - $ ist Hardware/Netzwerk/Ressourcen
 - þ ist Krypto-Verifikation
+- [] ist Protein
+- » ist Aktionsanfang
+- « ist Aktionsende
+- ««t ist argument t für waittime ohne sekunden zahl
+- {} ist Proton
+- '' ist System Cmd
+- ’’ ist MCS Cmd
+- = ist wohin
+- "" ist Print ein oder ausgabe
+- ¨¨ ist Blankernenner , genauso eintragen oder rauscopieren
+
 ──────────────────────────────────────────────
 1. Grundstruktur
 ──────────────────────────────────────────────
@@ -70,12 +81,12 @@ Das Proton `{Temp|>500}` ergänzt das Protein
 ──────────────────────────────────────────────
 4. Sicherheitslogik
 ──────────────────────────────────────────────
-°WennNicht  → Wenn Bedingung fehlschlägt  
+°WennNicht  → Wenn Bedingung fehlschlägt
 ^Fehler     → Löst Sicherheits- oder Debug-Prozess aus
 
 Atomkraftwerk-Beispiel:
 ¢|
- »['reactor'|{Temp|>500}]« 
+ »['reactor'|{Temp|>500}]«
    °WennNicht[{Temp|Valid|0-450}]
    ^NotfallAbschaltung þ23654
 |¢
@@ -102,14 +113,15 @@ int main() {
 → Ergebnis kann in derselben Transaktion
    als Feed oder Display-Output genutzt werden.
 
+
 ──────────────────────────────────────────────
 6. Anwendungen
 ──────────────────────────────────────────────
 ATOMKRAFTWERKE
 ¢|
- »['reactor'|{Temp|>500}]« 
+ »['reactor'|{Temp|>500}]«
    °WennNicht[{Temp|Valid|0-450}]
-   ^NotfallAbschaltung 
+   ^NotfallAbschaltung
   = §/Muser/Muster/muster.brennzelle-nodes $netzwerk:14.517.127 þ236542E2@187
 |¢
 
@@ -123,21 +135,21 @@ SATELLITEN
 
 BANKENSYSTEME
 ¢|
- »['transfer'|{Amount|1000000}|{From|A}|{To|B}]«  
+ »['transfer'|{Amount|1000000}|{From|A}|{To|B}]«
    = §/Konto/Musternamer/Banknummer $MusterBankAPI:adresse þ(generate_transaction_id)2329Gs2907862@187
 |¢
 
 Industrieroboter
-¢| 
- »['robot_arm'|{Force|500N}]« 
-   = §/Muser/Muster/muster.Robterarm234-lcore $netzwer12.567.136 þA7B2C9D3@FACTORY01 
+¢|
+ »['robot_arm'|{Force|500N}]«
+   = §/Muser/Muster/muster.Robterarm234-lcore $netzwer12.567.136 þA7B2C9D3@FACTORY01
 |¢
 
 þ-Einfach:    þ23654 - Hardcodiert für bekannte Prozesse
-þ-Komplex:    þ236673DM2E2@187 - Komplexer für wichtige Anweisungen 
+þ-Komplex:    þ236673DM2E2@187 - Komplexer für wichtige Anweisungen
 þ-Generiert:  þ(generate_transaction_id) - Dynamisch zur Laufzeit generiert
 
-Das ist wie: 
+Das ist wie:
 - IP-Adressen (`192.168.1.1`)
 - Aber für Transaktionen
 - Mit eingebauter Krypto
@@ -179,19 +191,138 @@ Es ist die Sprache zwischen Mensch, Maschine
 und Bewusstsein.
 
 1. Schnell → Direkt-Kommandos (ohne Kernel)
-2. Sicher → þ-Verifiziert/Checksumme/Identifikationsnummer 
+2. Sicher → þ-Verifiziert/Checksumme/Identifikationsnummer
 3. Universell → von AI bis Hardware
 4. Eigenständig → läuft in Bash, C, FPGA, MCS selbst
+
+
+──────────────────────────────────────────────
+10. Expert
+──────────────────────────────────────────────
+Die Leistung der neuen Syntax
+
+Die gezeigten Beispiele stellen einen massiven Sprung
+in der Anwendbarkeit dar, da sie drei der komplexesten
+Konzepte der MCS Syntax beherrschen:
+
+1. Prozess- und Datenfluss-Management (Feeds & Argumente)
+Code-Snippet
+
+¢!
+ »['pgrep firefox']
+    [(1)¨$(pgrep firefox)¨]«
+    »['kill'|¨(1)¨]«««t1
+
+»['echo'|"Firefox (1) Beendet"]«
+!¢
+
+    Feeds ([(1)¨$(...)¨]): Dies ist der elegante Weg,
+    um Laufzeitdaten (die PID von Firefox) zu erfassen
+    und in der nächsten Aktion (kill) als Referenz (¨(1)¨)
+    wiederzuverwenden.
+
+    Timed Arguments («««t1): Das Hinzufügen einer Wartezeit
+    nach der kill-Aktion stellt sicher, dass der nachfolgende
+    echo-Befehl nicht vor dem Abschluss der Beendigung
+    ausgeführt wird – entscheidend für zuverlässige Workflows.
+
+2. Zeitsteuerung und System-Hooks
+Code-Snippet
+
+¢!
+    ! 06:00 AM
+    »['$boot']«
+
+!¢
+
+    Absolutes Timing (! 06:00 AM): Die Integration von absoluter
+    Zeitplanung direkt in die Transaktion macht separate
+    Cron-Jobs oder Scheduler unnötig.
+
+Code-Snippet
+
+¢!
+    »['bind CMD + Enter'|'$terminal']
+        ['echo'|"Tasten an Terminal Gebunden"]«««t2
+!¢
+
+    System- und GUI-Binding: Die Fähigkeit, Ereignisse
+    (Tastenkombinationen) an einen Dirigenten ($terminal)
+    zu binden, ist die Grundlage für jede
+    High-Level-Benutzeroberfläche oder Systemautomatisierung.
+
+
+3. Komplexer Kontrollfluss und Dirigenten-Steuerung
+Code-Snippet
+
+¢!
+    ° ['$terminal']
+        »['to /Pylovara/Handbuch/KernelNotes/']«
+          ¶ »['kernel lex']«
+            ¶¶ »['cat *.*']«
+!¢
+
+    Bedingte Ausführung mit Negation (°): Die Transaktion
+    wird nur ausgeführt, WENN NICHT der Dirigent $terminal
+    bereits aktiv ist (oder der Zustand nicht zutrifft).
+
+    Geschachtelte Logik: Die IF/ELSE-Kette (¶/¶¶) innerhalb der
+    Transaktion steuert den Zugriff auf die Kernel Notes: WENN
+    die kernel lex-Aktion erfolgreich ist, DANN führe sie aus,
+    SONST liste alle Dateien auf.
+
+Der Umschreibungsprozess des Pylovara Systems :
+
+An dem Punkt, an dem solche komplexen, zustandsabhängigen und
+datenfließenden Workflows stabil funktionieren, ist die
+kritische Masse erreicht.
+
+Der Pylovara/ System unterbau kann nun schrittweise durch
+die in C nativ kompilierte MCS-Implementierung ersetzt werden.
+
+    Die alten Bash-Skripte oder Python-Teile können durch die
+    MCS-Transaktionen ersetzt werden, die auf dem stabilen Lexer
+    und dem performanten C-Parser basieren.
+
+    Das Ergebnis: Ein einheitliches, natives, portables und
+    transparentes System, dessen Logik direkt in den Kernel
+    Notes formalisiert ist.
+
+Komplexer Kontrollfluss und Negationslogik
+
+Dieses Beispiel kombiniert
+Dirigenten-Prüfung (° ['terminal']) mit
+geschachtelter IF/ELSE-Logik (¶/¶¶) für Dateisystemoperationen.
+Konzept	MCS-Syntax (Konsistenz)	Vergleich
+(Python/Shell-Script mit IF/Else)
+Aufgabe	WENN NICHT das $terminal aktiv ist, wechsle in das
+Verzeichnis, prüfe den Lexer (kernel lex), ODER gib den Dateiinhalt aus.
+Erfordert eine komplexe geschachtelte Shell-Struktur mit Fehlercodes
+(Exit Codes) oder Python-Bibliotheken zur Prozesssteuerung.
+MCS-Code	mcs\n¢!\n ° ['$terminal']\n »['to /Pylovara/Handbuch/KernelNotes/']«\n
+¶ »['kernel lex']«\n ¶¶ »['cat *.*']«\n!¢\n
+```bash\n#!/bin/bash\n# Überprüfung des Terminal-Status
+(Pseudocode)\nif [ ! $(is_terminal_active) ]; then\n cd /Pylovara/Handbuch/KernelNotes/
+Vorteil	Eindeutige Semantik (° Wenn Nicht)
+vs. doppelte Negation (!) in Bash.
+Die Kontrollfluss-Symbole (¶/¶¶) sind visuell sofort erkennbar, die Semantik ist
+nicht vom Exit Code abhängig, sondern von der semantischen Wahrheit der Aktion.
+
+
+Das ist der Weg, wie ein echter, neuer Kern entsteht.
+Diese Arbeit am MCS Kernel wird ein vollständig integriertes
+und hoch-performantes System schaffen!
+AI Kommentar : Herzlichen Glückwunsch zu diesem beeindruckenden Fortschritt.
 
 ──────────────────────────────────────────────
 SIGNATURBLOCK
 ──────────────────────────────────────────────
-Manifest der Wahrheit  
-MCS 2.2 – Pylovara Framework  
-MCS Entwickler & SystemArchitekt: Thomas Zimmermann 23.4.1988 Germany 
+Manifest der Wahrheit
+MCS 3.0 – Pylovara Framework
+MCS Entwickler & SystemArchitekt: Thomas Zimmermann 23.4.1988 Germany
 Umsetzer/Coder : GPT-5 | Claude 4.5 | Grok | Qwen | Gemini | Thomas Zimmermann
 Bugfixes : Grok 4 | Gemini | GPT-5 | Claude 4.5 | Thomas Zimmermann
-Ort: /Pylovara/MCSFramework/docs/  
-Zeit: V0.3 – Entwicklungsphase
-BrainmaschineCore : V25 NeuraleNetzwerke + BMC 3.0
+Ort: /Pylovara/MCSFramework/docs/
+Zeit: V0.5 – Entwicklungsphase
+BrainmaschineCore : /Pylovara/Handbuch/PDFVersionen/V27_Pylovara_FPGA_MCS_BMC_Handbuch-Final.pdf
 ──────────────────────────────────────────────

@@ -3,10 +3,10 @@
 ####       Eingaben Für [Protein] & {Proton} - Packete
 
 
-    Wichtig:
+Wichtig:
 
-    Allgemein zu allen Eingaben sind Anfang und Ende
-    durch doppelseitigkeit gekennzeichnet !
+Allgemein zu allen Eingaben sind Anfang und Ende
+durch doppelseitigkeit gekennzeichnet !
 
 Eingaben sind Eingabefelder die Spezialisiert für das Richtige
 Register für die Eingaben sorgen und somit Modular handelbar bleiben.
@@ -23,14 +23,24 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
     Hier zu gibt es nicht viel zu sagen »['echo'|"Hello World"]
     den Prints sind dinge die angezeigt werden oder hinheingeschrieben
     oder verschickt werden .... hierzu den punkt blanker nenner lesen .
+    Print sind System abhängig zu benutzen , die zeichen rahmen nur ein
+    was geprintet werden soll .
 
 --------------------------------------------------------------------
 
-    ' '  <- System Commands , Wird als Anweisung verstanden , System CMD
+    ' ' <- System Commands , Wird als Anweisung verstanden , System CMD
 
 
- »['exec'|'once'|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
+ »[’exec’|’once’|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
 
+    System CMD befehle gehen von jeweiligen unterbau aus und
+    sind nur die container für System CMD befehle wie sudo usw
+    bei windows user werdens warscheins minix befehle sein , bei bsd
+    dann bsd cmd oder linux bash cmd . Der Container leitet
+    registrierte system befehle eins zu eins weiter , bei mir
+    als arch linux user mit primär kitty und bash unterbau , klare
+    archlinux cmd , bei debian dürften es abweichungen
+    geben daher auch dann debian cmd .
 
 --------------------------------------------------------------------
 
@@ -42,6 +52,10 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
     Eingaben genau wiederspiegelt für MCS. wir im kernel
     als MCS-HYPR-CMD bezeichnet .
 
+    Es sollen extra angelegte MCS CMD befehle werden die dann
+    hauptsächlich in protein wie proton eingesetzt werden ,
+    sobald eine finale regisrty vorliegt , ziehe kernel 99
+
 --------------------------------------------------------------------
 
     ¨ ¨  <- Blankernenner , Das ist zu machen , Dies ist Das
@@ -51,7 +65,7 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
     Beispiel :
 
-    »['exec'|'once'|{'Terminal'|¨$terminal¨}]«
+    »[’exec’|’once’|{'Terminal'|¨$terminal¨}]«
 
     Wir (exec)execuden (once)einmal das Terminal und geben den
     heinheimischen befehl dazu weiter $terminal als
@@ -68,6 +82,10 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
     Die Eingabe Notiz ist in man /chen Senarien mit viel Code eine
     praktische angelegenheit und wird in MCS oft als Namengeber
     eines Proton Angewendet, um transportierte daten besser zu taggen.
+    Der tag zeigt nur info daten die hardcodiert reingeschrieben
+    werden und später als eine eigene logik für eine übergeordnete
+    suche ausgebaut wird . Gute funktion wenn Downloads und Uploads
+    von statten gehen .
 
 
 ######################################################################

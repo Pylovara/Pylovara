@@ -1,6 +1,6 @@
 @kernel-nr: 01
 ####################################################################
-## Datentyp Rollen Version 1.1
+## Datentyp Rollen Version 1.2
 
 Pylovara organisiert sich in einem klaren Familienmodell:
 
@@ -85,12 +85,25 @@ Umschaltungsknoten genutzt werden Stichpunkt Modular.
 3-4    *.*-cache   Cache           – Temp-Daten
 3-5    *.*-needles Hardwarebindung - Anzapfen/Treiber/Übersetzen
 
+--------------------------------------------------------------------
+## Erklärungszusätze :
 
 dabei wird berücksichtig das 1 auf 2 und 2 auf 1 zugreifen kann ,
 damit 2 auch subdaten starten kann wie 1-1 1-2 , hier besitzt
 z.b 2 default daten als vererbungsstrang , kann aber mit dem
 strang 3-1 als node bei 2.1 ausgetauscht werden und combiniert
 
+Die *.*-core dateien können spezialisierte prozesse im pid task halten
+und können optimal als datenpacket aufgespaltet werden , wenn
+also ein audio stream nur audio verlangt für bluetooth boxen oder
+aux boxen etc , kann der core als *.*-acore designed werden mit anhang,
+das prinzip bleibt bei eingewurzelt also zusammenhängend ...
+
+das system kann dadurch für baugleiche cpus oder gpus oder ram
+platten oder soundkarten mit verschiednenen standart einstellungen
+gefüttert werden und das logischerweise gleich mit MCS Syntax für
+die System Datentypen , das übersetzung framework für jeden c compiler
+und include nutzung wird als *.*-kernel datentyp klassifiziert ......
 
 Durch den ⊕ Sync-timer wird das zu einem einhängbaren und
 aushängbaren Puzzelstück .

@@ -7,17 +7,25 @@ Wahrheiten weitergeben mit mehrfach Auswahl oder Transporte,
 ermöglicht gui Fenster aufrufe.
 Ermöglicht granulare paralell-verarbeitungen wie hintergrund prozesse
 
+
+--------------------------------------------------------------------
+## Werden gerade möglich :
+
+¶   IF/Wenn
+¶¶  Else/kann
+#   bleibt traditionell kommentar
+
+--------------------------------------------------------------------
+## Noch nicht möglich (für spätere updates)
+
 ~~ für Merge von mehreren Packets kann per () granuliert werden das
 genau
-
 >-> für Fork oder Splitting Links Nach Rechts
 <-< für Fork oder Splitting Rechts Vor Links
-¶   IF
-¶¶  Else
 ¶=  Paralelle oder nebenprozesse die mit eingaben rücksprachen zu tun
 haben , besonders hilfreich bei Gui designe
 ;;  Für Paralell Transport , ohne eingabe aufforderung
-#   bleibt traditionell kommentar
+
 
 --------------------------------------------------------------------
 ## zuckunft

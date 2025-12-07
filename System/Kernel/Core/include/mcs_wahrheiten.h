@@ -1,28 +1,22 @@
-// include/mcs_wahrheiten.h — @kernel 08 konform
-// include/mcs_wahrheiten.h — @kernel 08 konform, ZYKELFREI
-#ifndef MCS_WAHRHEITEN_H
-#define MCS_WAHRHEITEN_H
+// include/mcs_wahrheit.h — @kernel 08 konform, minimal, sicher
+#include <stddef.h>
+#include "mcs_wahrheiten.h"
 
-#include "mcs_token.h"   // ← nur das, was *wirklich* gebraucht wird
+int mcs_token_is_wahrheit(mcs_token_type_t tt) {
+    return tt == TOK_IF || tt == TOK_ELSE || tt == TOK_WHEN_NOT ||
+    tt == TOK_MUST || tt == TOK_ON_ERROR ||
+    tt == TOK_PARALLEL_RUN || tt == TOK_PARALLEL_TRANSPORT;
+}
 
-// Nur Token-basierte Typen — keine Strukturen!
-typedef enum {
-    WAHR_NONE = 0,
-    WAHR_IF,          // ¶
-    WAHR_ELSE,        // ¶¶
-    WAHR_PARALLEL_RUN, // ¶=
-    WAHR_PARALLEL_TRANSPORT, // ;;
-    WAHR_WHEN_NOT,    // °
-    WAHR_WHEN_GT,     // >
-    WAHR_WHEN_LT,     // <
-    WAHR_MUST,        // !
-    WAHR_ON_ERROR,    // …
-    WAHR_TRANS_ERROR, // ^
-    WAHR_DATA_RESIDUE // ſ
-} mcs_wahrheit_t;
-
-// Nur Funktionen, die *Tokens* prüfen — keine Strukturen!
-int mcs_is_wahrheit(mcs_token_type_t tt);
-mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt);
-
-#endif
+mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt) {
+    switch (tt) {
+        case TOK_IF: return WAHR_IF;
+        case TOK_ELSE: return WAHR_ELSE;
+        case TOK_WHEN_NOT: return WAHR_WHEN_NOT;
+        case TOK_MUST: return WAHR_MUST;
+        case TOK_ON_ERROR: return WAHR_ON_ERROR;
+        case TOK_PARALLEL_RUN: return WAHR_PARALLEL_RUN;
+        case TOK_PARALLEL_TRANSPORT: return WAHR_PARALLEL_TRANSPORT;
+        default: return WAHR_NONE;
+    }
+}

@@ -5,7 +5,7 @@
 --------------------------------------------------------------------
 Die Eingabe definition ist zuckunftsmusik
 
-    ’CMD’
+    ’CMD’ = erkennt den inneren tragenden mcs cmd befehl
 
 moment native c++ hyprctl integriert
 --------------------------------------------------------------------
@@ -13,6 +13,9 @@ moment native c++ hyprctl integriert
 ## Nicht implementiert weil noch nicht nötig
 
 ’bestätigen’ = rückmeldung Admin per passwort Yes/No bestätigungen
+
+’exec’              = Führt aus
+’once’              = anzahl der ausführungen , später nummeriert
 
 ’text’              = zeigt text an der im packet eingetragen wurde
 ’echo’              = meldet irgendwas zurück
@@ -40,6 +43,23 @@ moment native c++ hyprctl integriert
 
 ’pushout’           = Exportieren , rausholen , weitergeben
 ’pushin’            = Importieren , reinholen , hineinziehen
+
+
+## Proton MCS CMD Befehle
+
+’Name’
+’Einheit’
+’Typ’
+’Watt’
+’Wait-s’
+’Band’
+’Amp’
+’Watt’
+’Volt’
+’Temp’
+’eingabe’
+
+
 
 ###################### Ende des registers ##########################
 ####################################################################

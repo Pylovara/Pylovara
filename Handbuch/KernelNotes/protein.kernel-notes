@@ -22,10 +22,19 @@ verbaut werden , den alles baut auf Protein auf ...
 ausfürbar durch Aktion (siehe kernel 06)
 
 --------------------------------------------------------------------
+## Protein Packete Definiert zwei Protein /e in einer aktion
+
+        ¶»['*'|"*"]
+        ¶¶['*'|"*"]«
+
+ausfürbar durch Aktion (siehe kernel 06)
+
+--------------------------------------------------------------------
 ## HighLevel Workflow Definition Combiniertes Beispiel
 
 ¢|
-»['*'|"*"]
+»['*'|"*"]«
+¶»['*'|"*"]
 ¶¶ ['*'|"*"]«
 |¢
 
@@ -36,10 +45,13 @@ aus C , da Nützlich für IF and Else regeln .
 --------------------------------------------------------------------
 # Protein Packet Layout LowLevel schulisches b.s :
 
+System CMD :
 »['echo'|"Hallo Welt"]«
-»['sendurl'|¨https://github.com/Pylovara/Pylovara/¨]«
-»['pushout'|¨~/Home/testdatei.wiki-notes|'to'|¨~/Home/Dokumenten/¨]«
-»['run'|'Firefox'|'open'|'search'|¨Pylovara Github¨|'Enter']«
+
+Pylovara MCS CMD :
+»[’sendurl’|¨https://github.com/Pylovara/Pylovara/¨]«
+»[’pushout’|¨~/Home/testdatei.wiki-notes|'to'|¨~/Home/Dokumenten/¨]«
+»[’run’|’Firefox’|’open’|’search’|¨Pylovara Github¨|’Enter’]«
 
 # WorkAround leichter Ablauf :
 

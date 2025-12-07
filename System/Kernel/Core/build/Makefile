@@ -156,6 +156,19 @@ test_action/fast:
 .PHONY : test_action/fast
 
 #=============================================================================
+# Target rules for targets named test_if
+
+# Build rule for target.
+test_if: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_if
+.PHONY : test_if
+
+# fast build rule for target.
+test_if/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_if.dir/build.make CMakeFiles/test_if.dir/build
+.PHONY : test_if/fast
+
+#=============================================================================
 # Target rules for targets named test_trans
 
 # Build rule for target.
@@ -191,6 +204,30 @@ Lab/test_action.s: Lab/test_action.c.s
 Lab/test_action.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_action.dir/build.make CMakeFiles/test_action.dir/Lab/test_action.c.s
 .PHONY : Lab/test_action.c.s
+
+Lab/test_if.o: Lab/test_if.c.o
+.PHONY : Lab/test_if.o
+
+# target to build an object file
+Lab/test_if.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_if.dir/build.make CMakeFiles/test_if.dir/Lab/test_if.c.o
+.PHONY : Lab/test_if.c.o
+
+Lab/test_if.i: Lab/test_if.c.i
+.PHONY : Lab/test_if.i
+
+# target to preprocess a source file
+Lab/test_if.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_if.dir/build.make CMakeFiles/test_if.dir/Lab/test_if.c.i
+.PHONY : Lab/test_if.c.i
+
+Lab/test_if.s: Lab/test_if.c.s
+.PHONY : Lab/test_if.s
+
+# target to generate assembly for a file
+Lab/test_if.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_if.dir/build.make CMakeFiles/test_if.dir/Lab/test_if.c.s
+.PHONY : Lab/test_if.c.s
 
 Lab/test_lexer.o: Lab/test_lexer.c.o
 .PHONY : Lab/test_lexer.o
@@ -287,6 +324,30 @@ Lib/mcs_argument.s: Lib/mcs_argument.c.s
 Lib/mcs_argument.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.s
 .PHONY : Lib/mcs_argument.c.s
+
+Lib/mcs_eingaben.o: Lib/mcs_eingaben.c.o
+.PHONY : Lib/mcs_eingaben.o
+
+# target to build an object file
+Lib/mcs_eingaben.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+.PHONY : Lib/mcs_eingaben.c.o
+
+Lib/mcs_eingaben.i: Lib/mcs_eingaben.c.i
+.PHONY : Lib/mcs_eingaben.i
+
+# target to preprocess a source file
+Lib/mcs_eingaben.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.i
+.PHONY : Lib/mcs_eingaben.c.i
+
+Lib/mcs_eingaben.s: Lib/mcs_eingaben.c.s
+.PHONY : Lib/mcs_eingaben.s
+
+# target to generate assembly for a file
+Lib/mcs_eingaben.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.s
+.PHONY : Lib/mcs_eingaben.c.s
 
 Lib/mcs_feed.o: Lib/mcs_feed.c.o
 .PHONY : Lib/mcs_feed.o
@@ -466,11 +527,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... mcs_core"
 	@echo "... test_action"
+	@echo "... test_if"
 	@echo "... test_lexer"
 	@echo "... test_trans"
 	@echo "... Lab/test_action.o"
 	@echo "... Lab/test_action.i"
 	@echo "... Lab/test_action.s"
+	@echo "... Lab/test_if.o"
+	@echo "... Lab/test_if.i"
+	@echo "... Lab/test_if.s"
 	@echo "... Lab/test_lexer.o"
 	@echo "... Lab/test_lexer.i"
 	@echo "... Lab/test_lexer.s"
@@ -483,6 +548,9 @@ help:
 	@echo "... Lib/mcs_argument.o"
 	@echo "... Lib/mcs_argument.i"
 	@echo "... Lib/mcs_argument.s"
+	@echo "... Lib/mcs_eingaben.o"
+	@echo "... Lib/mcs_eingaben.i"
+	@echo "... Lib/mcs_eingaben.s"
 	@echo "... Lib/mcs_feed.o"
 	@echo "... Lib/mcs_feed.i"
 	@echo "... Lib/mcs_feed.s"

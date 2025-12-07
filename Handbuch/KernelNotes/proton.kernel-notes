@@ -3,12 +3,16 @@
 ## Proton(en) :
 
 Ist der Rahmen oder auch Container für Proton /en weitergaben,
-Sie combinieren cmd mit übersetzungs Sprachen in Protein /en zu
+Sie combinieren, Eingaben Container Trennbefehl und verpacken es zu
+einer lesbaren form , mit übersetzungs Sprachen in Protein /en zu
 Proton /en .
 
 Primär werden sie für die Hardwaresteuerung genutzt , sekundär
 als Fremdsprachenbefehlseingabe , da mcs sein eigenen Register
-hat , können in Proton /en auch Fremdeingaben platz finden .
+hat , können in Proton /en auch explizite MCS CMD eingabe container
+bei den Eingaben genutzt werden.
+
+Register hierzu noch im aufbau .
 
 --------------------------------------------------------------------
 ## Proton /en Definiert
@@ -21,7 +25,7 @@ hat , können in Proton /en auch Fremdeingaben platz finden .
 Werden wie Zusätze betrachtet , endweder für die hardware selbst
 oder also workarround für fremdsystem Befehle :
 
-»['exec'|'once'|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
+»[’exec’|’once’|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
 
 Proton /en können mit oder ohne Feeds explizit weitergegeben werden
 und dienen für Hardware oder feinere Aufgaben die Proteine Ergänzen.
@@ -34,7 +38,7 @@ Beispiel Protein ohne Proton ;
 Beispiel Protein mit Proton ohne Hardware Aufgaben ;
 
 ¢|
-»['echo'|"Hallo"|{'Wait-s'|¨3¨}]«
+»['echo'|"Hallo"|{’Wait-s’|¨3¨}]«
 |¢
 
 
@@ -43,22 +47,22 @@ oder Wahrheiten mit in die nächste Verarbeitung oder
 Endverarbeitung geben oder führen .
 
 -------------------------------------------------------------------
-## Struktur  :
+## Struktur für Spätere MCS Eingaben , ziehe kernel 07 :
 
-  {'Name’|¨Wert¨}
-  {'Name’|'Einheit'|¨Wert¨}
-  {'Name’|"Typ"|'Einheit'|¨Wert¨}
-  Optional: {'Name'|¨Wert1¨|¨Wert2¨|…}
+  {’Name’|¨Wert¨}
+  {’Name’|’Einheit’|¨Wert¨}
+  {’Name’|"Typ"|’Einheit’|¨Wert¨}
+  Optional: {’Name’|¨Wert1¨|¨Wert2¨|…}
 
   Example :
-  {'Temp'|¨25¨}
-  {'Watt'|¨200¨}
-  {'Wait-s'|¨3¨}
-  {'Band'|'eingabe'}
-  {'Amp'|'eingabe'}
-  {'Watt'|'eingabe'}
-  {'Volt'|'eingabe'}
-  {'Temp'|'eingabe'}
+  {’Temp’|¨25¨}
+  {’Watt’|¨200¨}
+  {’Wait-s’|¨3¨}
+  {’Band’|’eingabe’}
+  {’Amp’|’eingabe’}
+  {’Watt’|’eingabe’}
+  {’Volt’|’eingabe’}
+  {’Temp’|’eingabe’}
 
 --------------------------------------------------------------------
 ## Proton-Kategorien

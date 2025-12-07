@@ -1,10 +1,13 @@
+// Lab/test_if.c — v3.0-konform, fehlerfrei
 #include <stdio.h>
-#include "mcs_lexer.h"
-#include "mcs_wahrheit.h"
+#include "mcs_token.h"        // ← NICHT mcs_lexer.h!
+#include "mcs_wahrheiten.h"     // ← NICHT mcs_wahrheiten.h (kein -en!)
 
 int main() {
     const char input[] = "¶ ¶¶";
     mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return 1;
+
     mcs_token_t tok;
 
     tok = mcs_lexer_next(lex);

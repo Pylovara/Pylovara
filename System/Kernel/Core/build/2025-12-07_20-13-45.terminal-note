@@ -284,4 +284,89 @@ make: *** [Makefile:91: all] Fehler 2
 ]0;bandino@dev:/Pylovara/System/Kernel/Core/build[?2004h
 [38;5;231m ┌[[38;5;250mbandino[38;5;231m@[38;5;250mdev[38;5;231m][[38;5;251m21:52:03[38;5;231m|[38;5;251mSo Dez 07[38;5;231m]
 [38;5;231m │[38;5;208m ᴾʸˡᵒᵛᵃʳᵃ
-[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core/build[38;5;231m]> $ [0mcat [7m/Pylovara/System/Kernel/Core/Lab/test_if.c[27m/Pylovara/System/Kernel/Core/Lab/test_if.
+[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core/build[38;5;231m]> $ [0mcat [7m/Pylovara/System/Kernel/Core/Lab/test_if.c[27m/Pylovara/System/Kernel/Core/Lab/test_if.c
+[?2004l#include <stdio.h>
+#include "mcs_lexer.h"
+#include "mcs_wahrheit.h"
+
+int main() {
+    const char input[] = "¶ ¶¶";
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    mcs_token_t tok;
+
+    tok = mcs_lexer_next(lex);
+    printf("Token 1: %s\n",
+           mcs_token_is_wahrheit(tok.token_type) ? "WAHRHEIT (IF)" : "OTHER");
+
+    tok = mcs_lexer_next(lex);
+    printf("Token 2: %s\n",
+           mcs_token_is_wahrheit(tok.token_type) ? "WAHRHEIT (ELSE)" : "OTHER");
+
+    mcs_lexer_free(lex);
+    return 0;
+}
+]0;bandino@dev:/Pylovara/System/Kernel/Core/build[?2004h
+[38;5;231m ┌[[38;5;250mbandino[38;5;231m@[38;5;250mdev[38;5;231m][[38;5;251m21:52:12[38;5;231m|[38;5;251mSo Dez 07[38;5;231m]
+[38;5;231m │[38;5;208m ᴾʸˡᵒᵛᵃʳᵃ
+[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core/build[38;5;231m]> $ [0mto ..
+[?2004l'$'
+[0m[38;5;26mbuild[0m
+CMakeLists.txt
+[38;5;26merrologs[0m
+[38;5;26minclude[0m
+[38;5;26mIntLab[0m
+[38;5;26mLab[0m
+[38;5;26mLib[0m
+[38;5;26mLogic[0m
+main.c
+]0;bandino@dev:/Pylovara/System/Kernel/Core[?2004h
+[38;5;231m ┌[[38;5;250mbandino[38;5;231m@[38;5;250mdev[38;5;231m][[38;5;251m22:08:54[38;5;231m|[38;5;251mSo Dez 07[38;5;231m]
+[38;5;231m │[38;5;208m ᴾʸˡᵒᵛᵃʳᵃ
+[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core[38;5;231m]> $ [0m[7mcd build && make clean && make && ./test_if[27mcd build && make clean && make && ./test_if
+[?2004l2025-12-07_20-11-19.terminal-note
+2025-12-07_20-13-45.terminal-note
+CMakeCache.txt
+[0m[38;5;26mCMakeFiles[0m
+cmake_install.cmake
+libmcs_core.a
+Makefile
+[38;5;82mtest_action[0m
+[38;5;82mtest_lexer[0m
+[  5%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o[0m
+[ 31%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o[0m
+[ 57%] [1m[32mLinking C static library libmcs_core.a[0m
+[ 57%] Built target mcs_core
+[ 63%] [32mBuilding C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o[0m
+[ 68%] [1m[32mLinking C executable test_lexer[0m
+[ 68%] Built target test_lexer
+[ 73%] [32mBuilding C object CMakeFiles/test_action.dir/Lab/test_action.c.o[0m
+[ 78%] [1m[32mLinking C executable test_action[0m
+[ 78%] Built target test_action
+[ 84%] [32mBuilding C object CMakeFiles/test_if.dir/Lab/test_if.c.o[0m
+[01m[K/Pylovara/System/Kernel/Core/Lab/test_if.c:4:10:[m[K [01;31m[Kschwerwiegender Fehler: [m[Kmcs_wahrheit.h: Datei oder Verzeichnis nicht gefunden
+    4 | #include [01;31m[K"mcs_wahrheit.h"[m[K     // ← NICHT mcs_wahrheiten.h (kein -en!)
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+Kompilierung beendet.
+make[2]: *** [CMakeFiles/test_if.dir/build.make:79: CMakeFiles/test_if.dir/Lab/test_if.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/test_if.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+]0;bandino@dev:/Pylovara/System/Kernel/Core/build[?2004h
+[38;5;231m ┌[[38;5;250mbandino[38;5;231m@[38;5;250mdev[38;5;231m][[38;5;251m22:08:58[38;5;231m|[38;5;251mSo Dez 07[38;5;231m]
+[38;5;231m │[38;5;208m ᴾʸˡᵒᵛᵃʳᵃ
+[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core/build[38;5;231m]> $ [0mto ..
+[?2004l'$'
+[0m[38;5;26mbuild[0m
+CMakeLists.txt
+[38;5;26merrologs[0m
+[38;5;26minclude[0m
+[38;5;26mIntLab[0m
+[38;5;26mLab[0m
+[38;5;26mLib[0

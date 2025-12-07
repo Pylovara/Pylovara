@@ -3,7 +3,7 @@
 #define MCS_EINGABEN_H
 
 #include <stddef.h>
-
+#include "mcs_token.h"   // ← mcs_token_type_t
 // Gemäß @kernel 07: 5 Eingabetypen — klar getrennt, sicher, modular
 typedef enum {
     MCS_EINGABE_PRINT,       // "..." — Ausgabe (echo, notify-send, print)

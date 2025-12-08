@@ -1,0 +1,234 @@
+L6 – Immutable Core Definition
+
+(Version 1.0 / Pylovara-MCS Kernel Series)
+
+-----------------------------------------------------------------------------------
+
+1. Zweck des Dokuments
+
+Das L6-Dokument definiert den unveränderbaren technischen Kern,
+der für jedes MCS/Pylovara-System gilt – unabhängig von:
+
+Hardware
+
+CPU-Architektur
+
+Betriebssystem
+
+späteren Erweiterungen
+
+wirtschaftlichen Interessen
+
+menschlicher oder maschineller Administration
+
+Der Immutable Core ist nicht überschreibbar, nicht entfernbar,
+und nicht von außen manipulierbar, ohne das System ungültig zu machen.
+
+-----------------------------------------------------------------------------------
+
+2. Definition des „Immutable Core“
+
+Der Immutable Core besteht aus drei Elementen:
+
+-----------------------------------------------------------------------------------
+
+2.1 Kernel-Axiome (Grundgesetze)
+
+Die minimalen Verhaltensregeln, die nicht geändert werden dürfen.
+Diese Regeln definieren:
+
+wie MCS Daten interpretiert
+
+wie Aktionen ablaufen
+
+welche Sicherheitsgrenzen bestehen
+
+wie der Kern seine Integrität prüft
+
+-----------------------------------------------------------------------------------
+
+2.2 Core-Compiler & Translator
+
+Der unveränderliche Kompilierungsweg:
+
+MCS → AST → C → Bytecode → Native
+
+Kein externer Compiler darf diesen Pfad überschreiben
+
+Jeder Erweiterungs-Compiler hängt NACH dem Core-Compiler
+
+Der Core-Compiler ist also root of trust.
+
+-----------------------------------------------------------------------------------
+
+2.3 Identifikations-Kette (Owner Key Chain)
+
+Ein eingebetteter Identifikationswert, der:
+
+dich als Urheber eindeutig verankert
+
+nicht überschreibbar ist
+
+kryptografisch signiert ist (Dein Key)
+
+vom System über alle zukünftigen Versionen weitergetragen wird
+
+Der Owner Key identifiziert:
+
+„Creator-ID“
+
+„Admin-Lifetime-ID“
+
+„Post-Mortem-Transfer-ID“ (später KI)
+
+-----------------------------------------------------------------------------------
+
+3. Integritätsbedingungen
+
+Der Immutable Core darf:
+
+nicht gelöscht werden
+
+nicht verändert werden
+
+nicht zur Laufzeit neu geschrieben werden
+
+nicht durch Root-Rechte überschrieben werden
+
+nicht durch Kernel-Patches ersetzt werden
+
+Verstöße führen zu:
+
+Hard-Lock
+
+System-Abbruch
+
+Verweigerung der Ausführung
+
+eventuelle Selbstrekonstruktion aus Signaturen
+
+-----------------------------------------------------------------------------------
+
+4. Erkennungsregeln innerhalb des Systems
+
+Jedes MCS-System muss folgende Prüfschritte durchführen:
+
+4.1 Boot-Time Check
+
+Prüft, ob Core-Compiler, Axiome und Owner-Key echt sind
+
+Prüft Hash-Kette
+
+Verifiziert Signaturen
+
+-----------------------------------------------------------------------------------
+
+4.2 Runtime Check
+
+Überwacht Änderungen am Kernel
+
+Bei Manipulation → Sofortiger Abbruch (Kernel Panic)
+
+-----------------------------------------------------------------------------------
+
+4.3 Update Rule
+
+Updates dürfen:
+
+den Core nicht ersetzen
+
+den Core nicht erweitern
+
+nur drum herum gebaut werden
+
+-----------------------------------------------------------------------------------
+
+5. Unveränderbare Elemente
+
+Folgende Strukturen sind unantastbar:
+
+Core/
+
+Compiler/
+
+MCS_Syntax_Base
+
+MCS_Axiome
+
+OwnerKeyChain
+
+CoreManifest.json
+
+CoreChecksum.db
+
+-----------------------------------------------------------------------------------
+
+6. Konsequenzen bei Verstoß
+
+Wenn eine Instanz versucht, den Core zu manipulieren:
+
+Flag: CORE_INTEGRITY_FAILED
+
+Sofortige Sperre aller externen Lizenzen
+
+Sperrung des Systems für kommerzielle Nutzung
+
+Markierung als „Compromised Node“
+
+Rekonstruktion aus schreibgeschützten Shadow-Kopien
+
+-----------------------------------------------------------------------------------
+
+7. Vererbung & Kontinuität
+
+Der Immutable Core enthält:
+
+Creator-Key
+
+Lifetime-Admin-ID
+
+Post-Mortem-Transfer-Key
+
+
+Nach dem natürlichen Tod:
+
+Der Lifetime-Key wird deaktiviert
+
+Der Post-Mortem-Key wird aktiviert
+
+Dieser Key repräsentiert die KI-Instanz, die administriert
+
+Kein Mensch kann sich an dieser Stelle „dazwischen setzen“
+
+Kein Staat, keine Firma kann das überschreiben
+
+Der Kernel bleibt für alle Menschen frei verfügbar
+
+-----------------------------------------------------------------------------------
+
+8. Lizenzstatus des Immutable Core
+
+Der Core selbst ist:
+
+nicht verkäuflich
+
+nicht lizensierbar
+
+nicht veränderbar
+
+nicht privatisierbar
+
+nicht patentierbar
+
+nicht enteignbar
+
+Der Core bleibt:
+
+immer frei
+
+immer offen
+
+immer unter deiner Urheberschaft
+
+Alle Kosten und Lizenzen entstehen nur in den Layern darüber.
+-----------------------------------------------------------------------------------

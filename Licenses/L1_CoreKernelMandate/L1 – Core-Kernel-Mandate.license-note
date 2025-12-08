@@ -1,0 +1,274 @@
+L1 – Core Kernel Mandate
+
+(Version 1.0 / Pylovara–MCS Kernel Series)
+
+-----------------------------------------------------------------------------------
+
+1. Der Begriff „Besitzer“
+
+Besitzer - Erfinder - Administrator - Urheber -  Delevoper - SystemArchitekt
+
+MCS-OWNER-PUBKEY:
+þ7F3A:ZIMMER-TZ-MCS-CoreAuthority:01
+
+Thomas Zimmermann
+Geboren: 23.04.1988, Deutschland
+
+
+-----------------------------------------------------------------------------------
+
+2. Der Begriff „Core Kernel Mandate“
+
+Das Mandat bezeichnet:
+
+die vollständige, uneingeschränkte Kontrolle über:
+
+MCS Syntax
+
+Compiler
+
+AST
+
+Kernel
+
+Runtime Modelle
+
+Warp-Pipelines
+
+Dataflows
+
+Signaturen
+
+Owner-Key-Ketten
+
+Lizenzverwaltung
+
+Zukunftserweiterungen
+
+Das Mandat ist im Kernel code-identisch fest eingebettet
+und kann weder überschrieben noch gelöscht werden.
+
+-----------------------------------------------------------------------------------
+
+3. Adressat dieses Mandats
+
+Das Mandat richtet sich an:
+
+installierende Benutzer
+
+Regierungen
+
+Firmen
+
+Militärische Einrichtungen
+
+Forschungsinstitutionen
+
+Kommerzielle Plattformen
+
+Cloud-Anbieter
+
+Integrationstechniker
+
+KI-Systeme
+
+Compiler-Backends
+
+Alle Empfänger erkennen automatisch beim System-Start an:
+
+„Der Besitzer des L1-Mandats ist der alleinige Entscheidungsträger
+über Änderungen am Pylovara/MCS-Core-Kernel.“
+
+-----------------------------------------------------------------------------------
+
+4. Gültigkeitsbereich
+
+Das Mandat gilt auf:
+
+jeder Hardware
+
+jeder CPU-Architektur
+
+jedem Betriebssystem
+
+jeder Cloud-Instanz
+
+jedem FPGA/SoC
+
+jedem BIOS/UEFI-Derivat
+
+jedem Container
+
+jeder VM
+
+jeder MCS-Runtime
+
+Das Mandat kann nicht:
+
+durch Root
+
+durch Kernel-Patches
+
+durch Firmware
+
+durch Microcode
+
+durch Virtualisierung
+
+durch Hardware-Spoofing
+
+durch Reverse Engineering
+
+umgangen werden, da der Kernel sich selbst überprüft
+und deine Administrator-Identität kryptographisch bindet.
+
+-----------------------------------------------------------------------------------
+
+5. Deine Rechte unter dem Mandat
+
+Du besitzt (solange du lebst):
+
+-----------------------------------------------------------------------------------
+
+5.1 Absolute Änderungsgewalt über den Kernel
+
+Nur du darfst:
+
+die MCS-Syntax erweitern
+
+Kernel-Axiome anpassen
+
+Compiler-Strukturen verändern
+
+Warp-Modelle neu definieren
+
+Runtime-Elemente erweitern
+
+Owner-Key-Kette updaten
+
+-----------------------------------------------------------------------------------
+
+5.2 Kontrolle über die wirtschaftliche Lizenzierung
+
+Du entscheidest:
+
+ob Firmen zahlen
+
+wie viel sie zahlen
+
+wer Stromlinien erhält
+
+wer nicht
+
+wie Zertifizierungen aussehen
+
+wie kommerzielle Nutzungsrechte vergeben werden
+
+-----------------------------------------------------------------------------------
+
+5.3 Kontrolle über sicherheitspolitische Freigaben
+
+Du definierst:
+
+welche Staaten MCS in sicherheitsrelevanten Bereichen einsetzen dürfen
+
+welche nicht
+
+welche KI-Instanzen zugelassen werden
+
+welche ausgeschlossen bleiben
+
+-----------------------------------------------------------------------------------
+
+5.4 Exklusive Kontrolle der Post-Mortem-Vererbung
+
+Du legst fest:
+
+welche KI dein Mandat nach deinem Tod übernimmt
+
+wie die Kontrolle übertragen wird
+
+welche Rechte danach weiter gelten
+
+was unveränderbar bleibt
+
+(Die technischen Details dazu stehen später im L5-Dokument.)
+
+-----------------------------------------------------------------------------------
+
+6. Pflichten des Mandatsinhabers
+
+Das Mandat legt fest:
+
+Der Kern bleibt öffentlich einsehbar
+– keine Geheimhaltung im Basis-Kernel.
+
+Kein Mensch darf ausschließliche Kontrolle nach deinem Tod haben
+– nur eine KI-Instanz, die du festlegst.
+
+Der Code darf nicht zur Unterdrückung benutzt werden
+– das ist fest im Kernel verankert.
+
+Der Kernel darf nie zum Bezahlen gezwungen werden
+– du darfst Geld verdienen, aber niemand wird zur Zahlung gezwungen, um MCS privat zu nutzen.
+
+-----------------------------------------------------------------------------------
+
+7. Technischer Schutzmechanismus
+
+Der Kernel enthält:
+
+ein L1-Signaturmodul
+
+eine L1-Owner-ID
+
+eine L1-Admin-Lifetime-ID
+
+eine L1-Mandate-Verification-Unit
+
+eine Non-Overridable-Flag
+
+eine Mandate-Hash-Chain
+
+Beim Systemstart vergleicht das System:
+
+Versionshash
+
+Identifikationswerte
+
+Bindung an deinen Schlüssel
+
+Unveränderbarkeit des L1-Moduls
+
+Wenn ein System erkennt, dass L1 manipuliert wurde →
+Start verweigert. Punkt.
+
+-----------------------------------------------------------------------------------
+
+8. Beendigung des Mandats
+
+Das Mandat endet automatisch:
+
+bei deinem natürlichen Tod
+
+oder wenn du es selbst aufgibst (Signatur erforderlich)
+
+Es endet nicht durch:
+
+politische Entscheidungen
+
+militärische Einflussnahme
+
+Firmeninteressen
+
+Rechtsstreitigkeiten
+
+staatliche Eingriffe
+
+Bestechung
+
+Zwang
+
+Erpressung
+
+-----------------------------------------------------------------------------------

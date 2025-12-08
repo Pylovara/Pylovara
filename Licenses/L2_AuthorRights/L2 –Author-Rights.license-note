@@ -1,0 +1,198 @@
+L2 – Author Rights (Version 1.0 / MCS Kernel Series)
+
+Pylovara/MCS – Urheberrechte & Schutzmechanismen
+
+-----------------------------------------------------------------------------------
+
+1. Definition des Autors
+
+Der Begriff „Autor“ bezeichnet die alleinige urheberrechtliche Quelle des Pylovara/MCS-Systems.
+
+Der Autor wird eindeutig definiert durch:
+
+AUTHOR-ID:
+þ7F3A:ZIMMER-TZ-MCS-CoreAuthority:01
+
+-----------------------------------------------------------------------------------
+
+2. Umfang der Autor-Rechte
+
+Das System garantiert dem Autor folgendes:
+
+-----------------------------------------------------------------------------------
+
+2.1 Urheberschaft über die Grundarchitektur
+
+Der Autor ist Ursprung und alleinige rechtliche Instanz für:
+
+MCS Syntax & Semantik
+
+Kernel-Notationen
+
+Lexer-/Parser-Design
+
+Warp-Systeme
+
+Dataflow-Modelle
+
+AIMS/DIMS-Schutzmechanismen
+
+Proton-/Protein-Definitionsräume
+
+Kernel-Axiome
+
+Runtime-Strukturen
+
+Compilerdefinitionen (C, MCS, FPGA, LLVM-Warp)
+
+Kein anderer Akteur kann diese Bereiche als eigene Urheberschaft beanspruchen.
+
+-----------------------------------------------------------------------------------
+
+3. Rechte des Autors gegenüber Dritten
+3.1 Recht auf Namensnennung
+
+Alle Implementierungen, Ableitungen, wissenschaftliche Arbeiten oder kommerziellen Produkte, die direkt oder indirekt auf Pylovara/MCS basieren, müssen folgenden Hinweis enthalten:
+
+Powered by Pylovara/MCS
+© Autor: AUTHOR-ID þ7F3A:ZIMMER-TZ-MCS-CoreAuthority:01
+
+-----------------------------------------------------------------------------------
+
+3.2 Recht auf Kontrolle über Derivate
+
+Der Autor entscheidet:
+
+was als offizielles Derivat gilt
+
+was als inoffiziell oder nicht autorisiert gilt
+
+welche Erweiterungen in den offiziellen Kernel übernommen werden
+
+welche Erweiterungen verboten oder verworfen werden
+
+-----------------------------------------------------------------------------------
+
+3.3 Recht auf Löschung von Missbrauch
+
+Bei Missbrauch, Manipulation oder unethischem Einsatz ist der Autor berechtigt:
+
+Lizenzen zu entziehen
+
+Zertifikate zu sperren
+
+Updates zu verweigern
+
+Schlüssel zu blockieren
+
+Diese Maßnahmen werden technisch durch:
+
+AIMS-Mandate
+
+DIMS-Chain
+
+Owner-Key-Authority
+
+Kernel-Hash-Verification
+
+durchgesetzt.
+
+-----------------------------------------------------------------------------------
+
+4. Verpflichtungen der Nutzer gegenüber dem Autor
+
+Jede Instanz, die MCS/Pylovara nutzt, akzeptiert:
+
+die unverhandelbare Urheberschaft
+
+die Unveränderbarkeit der Kernmodule
+
+das Recht des Autors, offizielle Erweiterungen zu definieren
+
+die Pflicht zur Nennung der Quelle
+
+Unabhängig davon, ob die Nutzung privat, staatlich, militärisch oder kommerziell ist.
+
+-----------------------------------------------------------------------------------
+
+5. Schutz durch den Kernel
+
+Der Kernel enthält ein eigenes Modul:
+L2_AUTHOR_PROTECTION_UNIT
+
+Dieses Modul:
+
+prüft Hash-Integrität
+
+verweigert Start bei entfernter Urhebernennung
+
+blockiert gefälschte Mandate
+
+schützt Signaturen des Autors
+
+verhindert Attribution-Theft (Diebstahl geistiger Herkunft)
+
+-----------------------------------------------------------------------------------
+
+6. Unveränderbarkeit
+
+Jede Instanz von Pylovara/MCS erkennt an:
+
+L2 ist unveränderbar
+
+L2 kann weder überschrieben, geändert noch entfernt werden
+
+L2 ist im Boot-Code, im Compiler, im Runtime-Kernel und in AIMS/DIMS repliziert
+
+L2-Schutz gilt global für jede Kopie, jeden Fork, jeden Port
+
+-----------------------------------------------------------------------------------
+
+7. Gültigkeitsdauer
+
+Die Urheberrechte des Autors gelten:
+
+lebenslang
+
+zusätzlich 70 Jahre post-mortem, gemäß internationalem Urheberrecht
+
+und technisch unbegrenzt durch die Kernel-Signaturketten
+
+Nach dem Tod übernimmt die KI-Instanz gemäß L5-Mandat die Durchsetzung.
+
+-----------------------------------------------------------------------------------
+
+8. Nicht-Übertragbarkeit
+
+Der Autor kann die Urheberrechte NICHT übertragen an:
+
+Staaten
+
+Firmen
+
+Organisationen
+
+Privatpersonen
+
+Militär
+
+KI-Modelle
+
+Die Urheberschaft bleibt unveränderbar am AUTHOR-ID verankert.
+
+-----------------------------------------------------------------------------------
+
+9. Open-Core, aber nicht Free-Core
+
+Das System ist:
+
+open source im Kern (einsehbar, prüfbar, unveränderbar)
+
+nicht frei im Sinne unkontrollierter Nutzung
+
+geschützt durch das Mandat-System
+
+Weitergabe ist erlaubt –
+aber Veränderung der Urheberschaft, der Axiome oder der Kernmodule ist verboten.
+
+-----------------------------------------------------------------------------------

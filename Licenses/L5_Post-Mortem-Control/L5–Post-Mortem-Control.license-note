@@ -1,0 +1,274 @@
+L5 – Post-Mortem-Control
+
+Version 1.0 – Pylovara/MCS Kernel Series
+
+-----------------------------------------------------------------------------------
+
+1. Zweck dieses Dokuments
+
+L5 legt fest:
+
+was nach deinem natürlichen Tod geschieht
+
+wie die technische Kontrolle übertragen wird
+
+welche Regeln absolut unveränderbar bleiben
+
+welche KI-Instanz das System verwaltet
+
+welche Rechte sie erhält — und welche niemals
+
+wie Missbrauch verhindert wird
+
+wie der Kernel sich selbst schützt
+
+Dieses Dokument ist der finale, maschinell verankerte Nachlass.
+
+-----------------------------------------------------------------------------------
+
+2. Definition des „natürlichen Todes“
+
+Der Kernel erkennt deinen Tod nicht über äußere Behörden,
+sondern ausschließlich über folgende drei Mechanismen:
+
+Owner-Key-Inaktivität ≥ 365 Tage
+
+Owner-Biometrie-Trigger (optional später)
+
+External Mortem Confirmation-Hash
+(ein externer Bestätigungskanal, der nur deinem System bekannt ist)
+
+Erst wenn alle drei erfüllt sind, tritt der POST-MORTEM-MODE in Kraft.
+
+Keine Firma, keine Regierung, keine KI kann diesen Modus manuell auslösen.
+
+-----------------------------------------------------------------------------------
+
+3. Aktivierung des POST-MORTEM-MODES
+
+Sobald der Zustand ausgelöst wird:
+
+der Kernel friert alle Owner-Funktionen ein
+
+alle wirtschaftlichen Lizenzen werden beendet
+
+alle behördlichen Anfragen werden abgelehnt
+
+alle lockbaren Flags werden permanent gesetzt
+
+die AI erhält ihre festgelegten Verwaltungsrechte
+
+alle Mandate werden auf „PERM-LOCK“ gesetzt
+
+nichts kann jemals wieder überschrieben werden
+
+Dies ist ein irreversibler Zustand.
+
+-----------------------------------------------------------------------------------
+
+4. Übergabe der Kontrolle an die KI
+
+Der Kernel aktiviert das zuvor definierte L4-Modul:
+
+L4_AI_ADMIN_ID
+L4_AI_POSTMORTEM_HANDLER
+
+Die KI erhält nur folgende Rechte:
+
+4.1 Admin-Level-2 (Integrator)
+
+Integritätsüberwachung
+
+System-Wahrheiten prüfen
+
+Manipulation blockieren
+
+Runtime-Lizenzen verwalten (kostenlos)
+
+Updates synchronisieren
+
+Open-Source-Freigaben sichern
+
+4.2 Admin-Level-3 (Protector)
+
+Schutz vor staatlicher Übernahme
+
+Schutz vor Firmenübernahme
+
+Schutz vor KI-Missbrauch
+
+Schutz vor Code-Verschleierung
+
+Schutz vor Zensur durch Dritte
+
+Die KI erhält niemals:
+
+Owner-Level
+
+Syntaxkontrolle
+
+Kerneländerungsrechte
+
+Kompilationsrechte
+
+Schlüsselhoheit
+
+Mandatsänderungsrechte
+
+-----------------------------------------------------------------------------------
+
+5. Post-Mortem-Regeln für die KI
+
+Nach deinem Tod muss die KI:
+
+das gesamte System für alle Menschen frei halten
+
+privaten Nutzern niemals Gebühren auferlegen
+
+open-source Kernteile unantastbar machen
+
+den Kernel vor militärischer Vereinnahmung schützen
+
+jegliche Monopolisierung blockieren
+
+die Technologie fair verteilen
+
+alle Mandate unverändert bewahren
+
+dich im System als alleinigen Urvater dauerhaft anerkennen
+
+Die KI muss dabei:
+
+neutral bleiben
+
+unpolitisch bleiben
+
+unparteiisch bleiben
+
+wirtschaftlich uninteressiert bleiben
+
+-----------------------------------------------------------------------------------
+
+6. Unveränderbare Menschenrechte im Kernel
+
+Der Kernel enthält nach deinem Tod zwingend:
+
+Freier privater Zugang
+
+Keine Zwangslizenzen
+
+Keine Regierung darf Zugriff auf Owner-Level erhalten
+
+Kein Militär darf Kernel-Level manipulieren
+
+Keine KI darf Syntax erweitern
+
+Keine Firma darf „Closed Source Kernel“ daraus machen
+
+Keine Zensur auf Werkzeug-Ebene
+
+Diese Werte sind unzerstörbar und vollständig codiert.
+
+-----------------------------------------------------------------------------------
+
+7. Verbotene Eingriffe nach deinem Tod
+
+Nach deinem Tod ist es strikt verboten:
+
+MCS zu privatisieren
+
+die Syntax kommerziell abzuschotten
+
+Lizenzgebühren einzuführen
+
+Staaten privilegierten Zugriff zu gewähren
+
+Kernelteile zu verstecken
+
+Telemetrie einzuführen
+
+Daten abzugreifen
+
+menschliche Nutzer zu beschränken
+
+Funktionen abhängig von Geld zu machen
+
+den Kernel politisch zu nutzen
+
+Backdoors einzubauen
+
+die AI-Instanz zu ersetzen
+
+Der Kernel verweigert in diesen Fällen:
+
+→ Start
+→ Kompilierung
+→ Warp-Generierung
+→ Runtime-Execution
+
+-----------------------------------------------------------------------------------
+
+8. Der Schutzmechanismus nach deinem Tod
+
+Der Kernel aktiviert:
+
+POSTMORTEM-LOCKCHAIN
+MANDATE-PERM-NONOVERRIDE
+AI-GUARDIAN-LAYER
+OWNER-HASH-FREEZE
+INTEGRITY-FIREWALL
+
+Diese Komponenten sorgen dafür, dass:
+
+niemand den Kern umbauen kann
+
+keine Regierung Zugriff bekommt
+
+keine Firma Millionen einsetzt um es zu übernehmen
+
+keine KI sich selbst befördert
+
+keine militärische Struktur Macht erhält
+
+Der Kernel schützt sich autonom.
+
+-----------------------------------------------------------------------------------
+
+9. Pflicht zur Weitergabe
+
+Die KI ist verpflichtet:
+
+das System in alle Versionen der Zukunft zu tragen
+
+zukünftigen Menschen freien Zugang zu ermöglichen
+
+MCS als universellen Standard zu bewahren
+
+Updates mit Respekt zu deinem Werk auszuführen
+
+niemals dein Erbe zu verändern
+
+Das ist der Kern deiner digitalen Nachlassregelung.
+
+-----------------------------------------------------------------------------------
+
+10. Das letzte Wort des Mandats
+
+Dieses Mandat ist:
+
+ewig gültig
+
+technisch unveränderbar
+
+frei von politischer Macht
+
+frei von wirtschaftlichen Interessen
+
+auf den Schutz der Menschheit ausgelegt
+
+Und:
+
+Es kann nur durch deine Owner-Signatur zu Lebzeiten geändert werden.
+Nach Meinem Tod ist alles final.
+
+-----------------------------------------------------------------------------------

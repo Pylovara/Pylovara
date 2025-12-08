@@ -369,4 +369,56 @@ CMakeLists.txt
 [38;5;26minclude[0m
 [38;5;26mIntLab[0m
 [38;5;26mLab[0m
-[38;5;26mLib[0
+[38;5;26mLib[0m
+[38;5;26mLogic[0m
+main.c
+]0;bandino@dev:/Pylovara/System/Kernel/Core[?2004h
+[38;5;231m ┌[[38;5;250mbandino[38;5;231m@[38;5;250mdev[38;5;231m][[38;5;251m22:09:20[38;5;231m|[38;5;251mSo Dez 07[38;5;231m]
+[38;5;231m │[38;5;208m ᴾʸˡᵒᵛᵃʳᵃ
+[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core[38;5;231m]> $ [0m[7mcd build && make clean && make && ./test_if[27mcd build && make clean && make && ./test_if
+[?2004l2025-12-07_20-11-19.terminal-note
+2025-12-07_20-13-45.terminal-note
+CMakeCache.txt
+[0m[38;5;26mCMakeFiles[0m
+cmake_install.cmake
+libmcs_core.a
+Makefile
+[38;5;82mtest_action[0m
+[38;5;82mtest_lexer[0m
+[  5%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o[0m
+[ 31%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o[0m
+[ 57%] [1m[32mLinking C static library libmcs_core.a[0m
+[ 57%] Built target mcs_core
+[ 63%] [32mBuilding C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o[0m
+[ 68%] [1m[32mLinking C executable test_lexer[0m
+[ 68%] Built target test_lexer
+[ 73%] [32mBuilding C object CMakeFiles/test_action.dir/Lab/test_action.c.o[0m
+[ 78%] [1m[32mLinking C executable test_action[0m
+[ 78%] Built target test_action
+[ 84%] [32mBuilding C object CMakeFiles/test_if.dir/Lab/test_if.c.o[0m
+[ 89%] [1m[32mLinking C executable test_if[0m
+[ 89%] Built target test_if
+[ 94%] [32mBuilding C object CMakeFiles/test_trans.dir/Lab/test_trans.c.o[0m
+[100%] [1m[32mLinking C executable test_trans[0m
+[100%] Built target test_trans
+Token 1: WAHRHEIT (IF)
+Token 2: WAHRHEIT (ELSE)
+]0;bandino@dev:/Pylovara/System/Kernel/Core/build[?2004h
+[38;5;231m ┌[[38;5;250mbandino[38;5;231m@[38;5;250mdev[38;5;231m][[38;5;251m22:09:23[38;5;231m|[38;5;251mSo Dez 07[38;5;231m]
+[38;5;231m │[38;5;208m ᴾʸˡᵒᵛᵃʳᵃ
+[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core/build[38;5;231m]> $ [0m^^[K[K
+[?2004l]0;bandino@dev:/Pylovara/System/Kernel/Core/build[?2004h
+[38;5;231m ┌[[38;5;250mbandino[38;5;231m@[38;5;250mdev[38;5;231m][[38;5;251m23:21:16[38;5;231m|[38;5;251mSo Dez 07[38;5;231m]
+[38;5;231m │[38;5;208m ᴾʸˡᵒᵛᵃʳᵃ
+[0m [38;5;231m└[[38;5;202m/Pylovara/System/Kernel/Core/build[38;5;231m]> $ [0m[?2004l
+exit
+
+Skript beendet auf 2025-12-07 23:21:21+01:00 [COMMAND_EXIT_CODE="0"]

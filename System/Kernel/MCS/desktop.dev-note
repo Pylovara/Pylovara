@@ -1,0 +1,127 @@
+### Das Pylovara Desktop PoC Am "lebenden" Organsismus ###
+
+Grundlage : (Arch)linux Hyprland Bash (Sollte dann aber gehen)
+Projektbenennung : MCS-Desktop-Framework (MDF)
+Umetzung  : Bash to MCS
+Ziel      : Vollständige config Controlle durch MCS statts Bash /.config
+Aufbau der Bibliothek : /Pylovara/System/Desktop/
+#######################################################################
+#######################################################################
+Anmerkung:
+Zu Aller Erst die Weisheit Des Tages und das mit Pfeffer !
+Gerade vom Verilog synctimer projekt jubelnd mit der zigarette kurz ausgeruht
+meinte ich zu zu Gemini voller Freude .....
+
+Ja ... So ein Desktop wär was saftiges Programmiert In MCS ...
+ich wollt schon anfangen es mir einfach zu machen mit :
+
+#Bash zu MCS Wrapper
+
+## Bash starts
+
+alias #!/bin/bash='#!MCS'
+alias #='#'
+
+
+## Proteine
+
+alias »='»*«'
+alias []='['*'|*|*|*|*|*]'
+alias []='['*'|*|'*'|*|'*'|*]'
+alias []='['*'|*|*|*|*]'
+alias []='['*'|*|*|*]'
+alias []='['*'|*|'*'|*]'
+alias []='['*'|*|*]'
+alias []='['*'|*]'
+
+
+
+## Protone
+
+alias {}='{'*'|*}'
+alias {}='{'*'|*|*}'
+alias {}='{'*'|*|'*'|*}'
+alias {}='{'*'|*|*|*}'
+
+
+## Sonstiges
+alias cd='to'
+alias source='puls'
+
+mit irgendwelchen hardcodierten kompletten proteinpacketen .......
+und so weiter und sofort und dann kamen wir gaaaanz schnell auf den schluß
+das ich ja eigentlich noch das MCSFramework auf Bash PoC übersetzung als
+Manuale aktivierung vor liegen habe ...
+
+jetzt kommt der Witz :
+
+,,Der Mann der eine debugg Session in Verilog mit Grok hinter sich hat und
+dann stolz beim rauchen was von einem chilligeren Projekt vor sich her schwärmt
+, weil er eh jeden zweifel aus der MCS Syntax herausgearbeitet hat ,
+über tagen wohl bemerkt ...... kommt dann Gemini mit
+
+dem affengeilen spruch :
+
+Gemini :
+
+    -Sie sind der Architekt, und Sie haben gerade erkannt,
+           dass die Vision der Fassade (der Desktop)
+        nur so stark ist wie das Fundament (das Framework).
+            Ihr MCSFramework/-PoC ist das Fundament.-
+
+und kaum hat er mich zu bodenmotiviert Smile ... dacht ich mir es bringt
+ja nix , dann bauste halt gleich Nativ auf Bash übersetzt , als untermauerung
+der low wie high level fähigkeit, gleich noch ein ganzen Desktop auf O.O ...
+
+so jetzt stehen wir hier in der dev-note und ich erzähl euch alle was vom Storch
+, über ein brüller der mich motivierte , nach einem Inteligenz Marathon .....
+scheiß Verilog an der stelleaber was muss muss !
+
+hiermit wird also auch erklärt das ich mich bis zum exordus durch sämmtliche
+daten quäle und meine untermauerung der besseren und effizienteren
+Computersprache entwickelt zu habe die ihres gleichen sucht , weiter
+"Be-acker-n" ..
+
+ja , es ist immer noch bash im unterbau aber bedenkt bitte alle das geht durch
+zwei compiler 1.bash to C 2.C to Assemby & assembly Hexdezimal zu binärcodes
+da ich den gesamten unterbau bei einer MCS Nativ umsetzung Komplett auf die
+Mülltonne haue , sollte jeder Firma und jedem Dude klar sein wo die Reise
+hingeht ;-)
+
+gut lange rede kurzer sind :
+
+aliase.wrapper-needles (Die Aktivierungsnadel)
+
+Diese Datei ist jetzt die zentrale MCS-Aktivierungsbrücke in die Bash-Umgebung:
+Definition	Funktion	MCS-Status
+Drei source Cores	Laden der gesamten MCS-Logik
+(Tokenizing, Registry, Protein Handler).	Aktiviert
+
+alias »	Setzt den zentralen MCS-Eingabe-Punkt
+alias setup-desktop	Führt die autonome, dokumentierte Dotfile-Installation aus.
+Orchestriert
+
+alias term	Etabliert Kitty als das Monopol-Terminal von Pylovara.	Gesichert
+
+
+Die MCS-Ebene ist nun "scharf".
+Das System ist bereit für die erste MCS-Transaktion zur Installation des
+Desktops: setup-desktop.
+
+---------------########   StOP Der Vorgeschichte   ########---------------------
+
+Ich bin mit der Struktur nicht zu frieden und verlegt das gesamte Projekt ins
+System/
+
+Umbau und umdenken der elemente gestartet .....
+
+
+
+
+
+
+
+
+
+
+

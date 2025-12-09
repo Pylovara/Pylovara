@@ -24,6 +24,16 @@ CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o: \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h \
- /Pylovara/System/Kernel/Core/Lib/mcs_transaction.h \
- /Pylovara/System/Kernel/Core/Logic/mcs_token.h
+ /usr/include/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/strings.h \
+ /Pylovara/System/Kernel/Core/include/mcs_transaktion.h \
+ /Pylovara/System/Kernel/Core/Logic/mcs_token.h \
+ /Pylovara/System/Kernel/Core/include/mcs_protein.h \
+ /Pylovara/System/Kernel/Core/include/mcs_action.h \
+ /Pylovara/System/Kernel/Core/include/mcs_feed.h \
+ /Pylovara/System/Kernel/Core/include/mcs_argument.h \
+ /Pylovara/System/Kernel/Core/include/mcs_proton.h \
+ /Pylovara/System/Kernel/Core/include/mcs_warp.h \
+ /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h \
+ /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h

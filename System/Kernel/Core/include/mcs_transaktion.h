@@ -1,16 +1,26 @@
-// include/mcs_transaktion.h — v2.9 Transaktions-API
+// include/mcs_transaktion.h — v3.0, mit Wahrheiten-Unterstützung
 #ifndef MCS_TRANS_H
 #define MCS_TRANS_H
 
 #include "mcs_token.h"
+#include "mcs_protein.h"   // ← Protein kennt jetzt IF/ELSE
 
 typedef struct {
-    mcs_token_t trans_start;   // ¢! Token
-    mcs_token_t trans_end;     // !¢ Token
-    int is_valid;
-} mcs_transaction_t;
+    mcs_token_t trans_start;
+    mcs_token_t trans_end;
 
-// Public API
-int mcs_parse_transaction(mcs_lexer_t* lex, mcs_transaction_t* out);
+    // 🔹 NEU: Bedingungen auf Transaktionsebene
+    mcs_wahrheit_t wahrheit;      // z.B. WAHR_WHEN_NOT
+    mcs_protein_t* condition;      // z.B. ['$terminal']
+
+    // 🔹 Proteine in Reihenfolge — jetzt mit Verzweigungen!
+    mcs_protein_t** proteine;     // dynamisches Array
+    int protein_count;
+
+    int is_valid;
+} mcs_transaktion_t;
+
+mcs_transaktion_t* mcs_parse_transaktion(const char* input);
+void mcs_free_transaktion(mcs_transaktion_t* t);
 
 #endif

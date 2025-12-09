@@ -86,6 +86,26 @@ int mcs_run_action(mcs_action_t* a) {
             return system(cmd);
         }
     }
+    // Im Runner (später):
+    double timeout_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+    if (a->arg.type == ARG_TIME) {
+        usleep((useconds_t)(timeout_sec * 1e6));
+    }
 
+    // ✅ Jetzt: Argumente (gemäß @kernel 15: nach Aktion-Ende!)
+    mcs_parse_argument(lex, &a->arg);  // ← delegiert an mcs_argument.c
+
+    mcs_lexer_free(lex);
+    return a;
+
+    fail:
+    mcs_lexer_free(lex);
+    if (a) {
+        free(a->cmd);
+        free(a->arg1);
+        free(a->blankernenner);
+        free(a);
+    }
+    return NULL;
     return MCS_OK;
 }

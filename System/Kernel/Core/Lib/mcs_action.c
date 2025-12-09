@@ -1,4 +1,4 @@
-// Lib/mcs_action.c — FINAL v2.9.0
+// Lib/mcs_action.c — v3.0 Parser-only (Runner-Logik kommt später!)
 #include <stdlib.h>
 #include <string.h>
 #include "mcs_action.h"
@@ -11,7 +11,10 @@ mcs_action_t* mcs_parse_action(const char* input) {
     if (!lex) return NULL;
 
     mcs_action_t* a = calloc(1, sizeof(mcs_action_t));
-    if (!a) goto fail;
+    if (!a) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
 
     mcs_token_t tok;
 
@@ -64,8 +67,11 @@ mcs_action_t* mcs_parse_action(const char* input) {
     tok = mcs_lexer_next(lex);
     if (tok.token_type != TOK_ACTION_END) goto fail;
 
-    // ✅ Jetzt: Argumente (gemäß @kernel 15: nach Aktion-Ende!)
-    mcs_parse_argument(lex, &a->arg);  // ← delegiert an mcs_argument.c
+    // ✅ JETZT: Argumente *parsen* — aber NICHT auswerten!
+    mcs_parse_argument(lex, &a->arg);
+    if (!mcs_validate_argument(&a->arg)) {
+        goto fail;
+    }
 
     mcs_lexer_free(lex);
     return a;

@@ -1,50 +1,54 @@
-// main.c — Minimaler MCS Kernel-Runner (v2.9)
+// main.c — MCS v3.0 Runner (UTF-8-konform, sicher, modular)
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "mcs_token.h"
-#include "mcs_transaction.h"
+#include "mcs_transaktion.h"
+#include "mcs_runner.h"   // ← dein Runner-Header (wird unten definiert)
 
-int main(int argc, char** argv) {
-    printf("ᴾʸˡᵒᵛᵃʳᵃ Kernel v2.9 | MCS Core Online\n");
-    printf("» ready. type MCS code or 'exit' to quit.\n");
+void print_usage(const char* prog) {
+    fprintf(stderr, "Usage: %s <file.mcs>\n", prog);
+    exit(1);
+}
 
-    char line[1024];
-    while (1) {
-        printf("mcs> ");
-        if (!fgets(line, sizeof(line), stdin)) break;
+int main(int argc, char* argv[]) {
+    if (argc != 2) print_usage(argv[0]);
 
-        // Entferne Zeilenumbruch
-        line[strcspn(line, "\n")] = 0;
-        if (strcmp(line, "exit") == 0) break;
-
-        if (strlen(line) == 0) continue;
-
-        mcs_lexer_t* lex = mcs_lexer_new(line);
-        if (!lex) {
-            printf("🔥 Lexer init failed.\n");
-            continue;
-        }
-
-        mcs_token_t tok = mcs_lexer_next(lex);
-        if (tok.token_type == TOK_TRANS_START) {
-            mcs_transaction_t trans = {0};
-            if (mcs_parse_transaction(lex, &trans) && trans.is_valid) {
-                printf("✅ Transaktion: %.*s ... %.*s\n",
-                       trans.trans_start.length, trans.trans_start.literal,
-                       trans.trans_end.length, trans.trans_end.literal);
-            } else {
-                printf("❌ Ungültige Transaktion.\n");
-            }
-        } else if (tok.token_type == TOK_ACTION_START) {
-            printf("⚙️ Aktion erkannt — Parser erweitern?\n");
-        } else {
-            printf("🔍 Token: %d (%.*s)\n", tok.token_type, tok.length, tok.literal);
-        }
-
-        mcs_lexer_free(lex);
+    const char* filename = argv[1];
+    FILE* f = fopen(filename, "r");
+    if (!f) {
+        fprintf(stderr, "[ERROR] Cannot open '%s'\n", filename);
+        return 1;
     }
 
-    printf("👋 Kernel shutdown.\n");
-    return 0;
+    // Datei komplett einlesen
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    char* buf = malloc(size + 1);
+    if (!buf) { perror("malloc"); fclose(f); return 1; }
+    fread(buf, 1, size, f);
+    buf[size] = '\0';
+    fclose(f);
+
+    // Parsen
+    mcs_transaktion_t* t = mcs_parse_transaktion(buf);
+    if (!t || !t->is_valid) {
+        fprintf(stderr, "[PARSE ERROR] Invalid MCS syntax in '%s'\n", filename);
+        free(buf);
+        return 1;
+    }
+
+    // Ausführen
+    int result = mcs_run_transaktion(t);
+    if (result != MCS_OK) {
+        fprintf(stderr, "[RUNTIME ERROR] Code %d\n", result);
+    } else {
+        printf("✅ MCS executed successfully.\n");
+    }
+
+    // Aufräumen
+    mcs_free_transaktion(t);
+    free(buf);
+    return result;
 }

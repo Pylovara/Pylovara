@@ -19,7 +19,8 @@ set(SRC_LIB
     Lib/mcs_warp.c
     Lib/mcs_wahrheiten.c
     Lib/mcs_transaktion.c
-    Lib/mcs_eingaben.c   # ← NEU
+    Lib/mcs_eingaben.c
+    Lib/mcs_runner.c   # Neu war vergessen!
     Logic/mcs_lexer.c
 )
 
@@ -47,5 +48,7 @@ target_link_libraries(test_trans mcs_core)
 # add_executable(pylovara_kernel main.c)
 # target_link_libraries(pylovara_kernel mcs_core)
 
+add_executable(mcs main.c)
+target_link_libraries(mcs mcs_core)
 
 

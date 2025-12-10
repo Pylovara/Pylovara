@@ -181,6 +181,19 @@ test_trans/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trans.dir/build.make CMakeFiles/test_trans.dir/build
 .PHONY : test_trans/fast
 
+#=============================================================================
+# Target rules for targets named mcs
+
+# Build rule for target.
+mcs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mcs
+.PHONY : mcs
+
+# fast build rule for target.
+mcs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/build
+.PHONY : mcs/fast
+
 Lab/test_action.o: Lab/test_action.c.o
 .PHONY : Lab/test_action.o
 
@@ -421,6 +434,30 @@ Lib/mcs_proton.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.s
 .PHONY : Lib/mcs_proton.c.s
 
+Lib/mcs_runner.o: Lib/mcs_runner.c.o
+.PHONY : Lib/mcs_runner.o
+
+# target to build an object file
+Lib/mcs_runner.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+.PHONY : Lib/mcs_runner.c.o
+
+Lib/mcs_runner.i: Lib/mcs_runner.c.i
+.PHONY : Lib/mcs_runner.i
+
+# target to preprocess a source file
+Lib/mcs_runner.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.i
+.PHONY : Lib/mcs_runner.c.i
+
+Lib/mcs_runner.s: Lib/mcs_runner.c.s
+.PHONY : Lib/mcs_runner.s
+
+# target to generate assembly for a file
+Lib/mcs_runner.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.s
+.PHONY : Lib/mcs_runner.c.s
+
 Lib/mcs_transaktion.o: Lib/mcs_transaktion.c.o
 .PHONY : Lib/mcs_transaktion.o
 
@@ -517,6 +554,30 @@ Logic/mcs_lexer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.s
 .PHONY : Logic/mcs_lexer.c.s
 
+main.o: main.c.o
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/main.c.s
+.PHONY : main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -525,6 +586,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... mcs"
 	@echo "... mcs_core"
 	@echo "... test_action"
 	@echo "... test_if"
@@ -560,6 +622,9 @@ help:
 	@echo "... Lib/mcs_proton.o"
 	@echo "... Lib/mcs_proton.i"
 	@echo "... Lib/mcs_proton.s"
+	@echo "... Lib/mcs_runner.o"
+	@echo "... Lib/mcs_runner.i"
+	@echo "... Lib/mcs_runner.s"
 	@echo "... Lib/mcs_transaktion.o"
 	@echo "... Lib/mcs_transaktion.i"
 	@echo "... Lib/mcs_transaktion.s"
@@ -572,6 +637,9 @@ help:
 	@echo "... Logic/mcs_lexer.o"
 	@echo "... Logic/mcs_lexer.i"
 	@echo "... Logic/mcs_lexer.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

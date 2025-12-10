@@ -52,4 +52,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_action.dir/DependInfo.cmake"
   "CMakeFiles/test_if.dir/DependInfo.cmake"
   "CMakeFiles/test_trans.dir/DependInfo.cmake"
+  "CMakeFiles/mcs.dir/DependInfo.cmake"
   )

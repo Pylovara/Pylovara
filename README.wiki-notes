@@ -1,13 +1,12 @@
-#####################################################################################
-#################################### Install ########################################
+--------------------------------- Install -------------------------------------------
 
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
 info : bei Problemen Befehle einzelnd eingeben !
-#####################################################################################
-################################# Update Manual #####################################
+
+------------------------------- Update Manual ---------------------------------------
 
 cd Pylovara/Setup/Pylovara-System/
 sudo ./pylovara.updater-needle
@@ -22,18 +21,10 @@ version 0.4 beta (buggy but copy and paste from githubg in the directory)=
 - entfernt /tmp/pylovara-latest wieder
 - funktioniert nur mit = sudo ./pylovara.updater-needle
 
-#####################################################################################
-#####################   PylovaraSystem Updates OnWork   #############################
+info : wird bald ersetzt durch einen zeitlich gesteuerten update suchprogramm
+       das die manuale update geschichte beheben wird .
 
-  - Funktionserweiterung für Entwicklungen : dev lex
-  - Aufbau der DevNotes
-  - MCS Syntax Fehlerquelle Optimierung : kernel lex
-  - Aufbau der übergangs C Übersetzung
-  - demnächste Säuberung der wiki-notes : helpme lex
-  - Ausarbeitung Des C Compiler für MCS
-
-#####################################################################################
-######################### Kernprinzipien ############################################
+------------------------------ KernPrinzipien --------------------------------------
 
  Systemweit & Rootbasiert
 - Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
@@ -49,28 +40,26 @@ version 0.4 beta (buggy but copy and paste from githubg in the directory)=
 - Struktur Familienprinzip / Wurzelprinzip / Astprinzip
 - Neue Module können ohne Kernänderung hinzugefügt werden
 - Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
-#####################################################################################
-######################### All in One Books ##########################################
 
-Wer Brauch schon PDFs (wird immer wieder mal geupdatet)
+ Programmiersprache MCS Integration (In Der Entwicklung)
+- Prototypen Layout auf C für alle System
+- Ausbau der Symbolischen Syntax Ebene
+- Wird Später fast alles ersetzen an drittanbieter tools
+- Bekommt einen Modul Erweiterungs Manager
 
-    helpme lex     # Übersicht Informationen WikiNotes
-    kernel lex     # Übersicht MCS Syntax KernelNotes
-    dev lex        # Übersicht Entwickler Daten DevNotes
-    p /Pylovara/Handbuch/     # Zeigt die gesamte Baumstruktur
+---------------------------- ALL In One Books --------------------------------------
 
-Oder Altmodische Funktionen
 
-    callme firefox # bin finder
-    cut mcs /*/*   # MCS Higlihgting (Beta)
-    pylo Handbuch/- ai.wiki-notes cat # Wird den Typischen Aufbau ersetzen (BuggyBeta)
+    helpme lex      # Übersicht Informationen WikiNotes
+    kernel lex      # Übersicht von MCS Syntax Handbuch
+    dev lex         # Delevoper Notizen
 
            > "Was du nicht selbst in der Shell erschaffst,
                  wird dir irgendwann vom GUI genommen."          – alter Admin
 
-##################### Hier Endet die Shell Information ##############################
-#####################################################################################
- Zukunftsvision
+---------------------------- Zuckunftsplanung --------------------------------------
+
+Zukunftsvision
       kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
 
 - Tiling Window Management direkt aus der Shell
@@ -79,25 +68,36 @@ Oder Altmodische Funktionen
 - Portabler Skin-Wechsel der Oberfläche**
 - Nahtlose Integration in bestehende OS-Strukturen
 - AI-gestützte Codegenerierung & Debugging
+- Programmierbare Prozesse + Languales MCS
 
-Stellt euch ein System vor das keine 10+ Studiengänge braucht um vollständig
-in einer Sprache von der software bis oberfläche , runter in die hardware low
-level aufgaben vollständig verstanden zu werden und das Schulisch so aufgearbeitet
-das selbst in einer Sonderschule MCS gelehrt werden könnte !
+Ziel ist es ein ALL IN ONE Packet für Junge Leute zu erschaffen , das
+alle Hardware Freiheiten zulässt und die Branche Wirtschaft von GroßKonzernen
+Finanziell schon bei den Programmierer selbst ausbluten lässt .
 
-#####################################################################################
-#####################################################################################
-                                Impressum Infos
+Nicht nur þ Identifikations sicherheit bietet und ein echten Gesicherten
+Kernel hervorbringt .
 
-Detaliertere infos zur aktuellen umsetzungsart wie auch der fokus
-werden hier weiter erklärt : Arbeitsblatt.dev-note , die ins Native führen sollen
+AI Integration wird Naturell und Prinzipiell mit integriert und der
+Ollama runtimer ist dabei nur ein übergangspuzzelstück .
 
+----------------------------- Impressum Infos --------------------------------------
 
-Mitarbeiter in sache binärübersetzung der MCS syntax werden Potenziel
-gesucht ... anlauf stelle :
+Direkte Hilfe + Investoren Anlaufstelle :
 
 Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
 Telefon :  +49 176/88218035
 Telegram : @iBandino
-################################## Readme Ende ######################################
-#####################################################################################
+LinkedIn : https://www.linkedin.com/in/thomas-zimmermann-pylovara-system-mcs/
+
+Sprachkenntnisse : Deutsch 100% Englisch 40% SchweitzerDeutsch 98%
+
+Schriftlicher verkehrt kann in jeder Sprache Stattfinden
+
+Investoren Stichwort   : Finanzierung | Info | Geschäftstreffen
+Entwickler Stichwort   : Entwicklungsinteresse
+Lizenskäufte stichwort : License Buy
+
+Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen
+       auf den Prinzip ,, Mensch & Mensch ’’
+
+------------------------------------------------------------------------------------

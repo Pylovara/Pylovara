@@ -42,4 +42,5 @@ CMakeFiles/mcs.dir/main.c.o: /Pylovara/System/Kernel/Core/main.c \
  /Pylovara/System/Kernel/Core/include/mcs_warp.h \
  /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h \
  /Pylovara/System/Kernel/Core/include/mcs_runner.h \
- /Pylovara/System/Kernel/Core/include/mcs_transaktion.h
+ /Pylovara/System/Kernel/Core/include/mcs_transaktion.h \
+ /Pylovara/System/Kernel/Core/include/mcs_feed.h

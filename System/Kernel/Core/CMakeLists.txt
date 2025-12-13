@@ -20,7 +20,8 @@ set(SRC_LIB
     Lib/mcs_wahrheiten.c
     Lib/mcs_transaktion.c
     Lib/mcs_eingaben.c
-    Lib/mcs_runner.c   # Neu war vergessen!
+    Lib/mcs_runner.c
+    Lib/mcs_semantics.c   # ✅ FEHLT BISHER — JETZT HINZUFÜGEN!
     Logic/mcs_lexer.c
 )
 

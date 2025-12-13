@@ -35,7 +35,9 @@ CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o: \
  /Pylovara/System/Kernel/Core/include/mcs_proton.h \
  /Pylovara/System/Kernel/Core/include/mcs_warp.h \
  /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h \
- /Pylovara/System/Kernel/Core/include/mcs_feed.h /usr/include/stdio.h \
+ /Pylovara/System/Kernel/Core/include/mcs_feed.h \
+ /Pylovara/System/Kernel/Core/include/mcs_semantics.h \
+ /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \

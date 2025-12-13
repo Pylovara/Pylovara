@@ -458,6 +458,30 @@ Lib/mcs_runner.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.s
 .PHONY : Lib/mcs_runner.c.s
 
+Lib/mcs_semantics.o: Lib/mcs_semantics.c.o
+.PHONY : Lib/mcs_semantics.o
+
+# target to build an object file
+Lib/mcs_semantics.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+.PHONY : Lib/mcs_semantics.c.o
+
+Lib/mcs_semantics.i: Lib/mcs_semantics.c.i
+.PHONY : Lib/mcs_semantics.i
+
+# target to preprocess a source file
+Lib/mcs_semantics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.i
+.PHONY : Lib/mcs_semantics.c.i
+
+Lib/mcs_semantics.s: Lib/mcs_semantics.c.s
+.PHONY : Lib/mcs_semantics.s
+
+# target to generate assembly for a file
+Lib/mcs_semantics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.s
+.PHONY : Lib/mcs_semantics.c.s
+
 Lib/mcs_transaktion.o: Lib/mcs_transaktion.c.o
 .PHONY : Lib/mcs_transaktion.o
 
@@ -625,6 +649,9 @@ help:
 	@echo "... Lib/mcs_runner.o"
 	@echo "... Lib/mcs_runner.i"
 	@echo "... Lib/mcs_runner.s"
+	@echo "... Lib/mcs_semantics.o"
+	@echo "... Lib/mcs_semantics.i"
+	@echo "... Lib/mcs_semantics.s"
 	@echo "... Lib/mcs_transaktion.o"
 	@echo "... Lib/mcs_transaktion.i"
 	@echo "... Lib/mcs_transaktion.s"

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Pylovara/System/Kernel/Core/Lib/mcs_protein.c" "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_proton.c" "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_runner.c" "CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c" "CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c" "CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c" "CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_warp.c" "CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o.d"

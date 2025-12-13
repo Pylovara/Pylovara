@@ -13,6 +13,11 @@ typedef enum {
     MCS_EINGABE_NOTIZ        // ,... — Metadaten/Tagging (für Suche, Logs, AI)
 } mcs_eingabe_typ_t;
 
+// das hier MCS_EINGABE_SYSTEM_CMD ist eins zu eins das jeweilige
+// system mit der jeweiligen shell oder direkt system verbindungen
+// bei linux ist es meist bash zsh oder fisch etc , bei microsoft nt und powershell
+// und bei mac os glaub darvin
+
 // Container-Struktur — *kein Code-Ausführen hier*, nur Repräsentation
 typedef struct {
     mcs_eingabe_typ_t typ;

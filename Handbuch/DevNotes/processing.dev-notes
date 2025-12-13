@@ -1,0 +1,18 @@
+
+Eine 𝗖𝗣𝗨 (𝗖𝗲𝗻𝘁𝗿𝗮𝗹 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗨𝗻𝗶𝘁) arbeitet deterministisch (regelbasiert) und sequentiell.
+Sie führt komplexe Befehle Schritt für Schritt aus, ist somit perfekt für universelle
+Steuerfunktionen, aber langsam bei grundlegend parallel zu verarbeitenden Aufgaben.
+
+Die 𝗚𝗣𝗨 (𝗚𝗿𝗮𝗽𝗵𝗶𝗰𝘀 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗨𝗻𝗶𝘁) arbeitet auch deterministisch, aber grundsätzlich
+parallel. Sie führt tausende identische Operationen gleichzeitig aus, ideal für
+Matrixmultiplikation und KI-Training, aber ineffizient bei verzweigter Logik.
+
+Eine 𝗧𝗦𝗨 (𝗧𝗵𝗲𝗿𝗺𝗼𝗱𝘆𝗻𝗮𝗺𝗶𝗰 𝗦𝗮𝗺𝗽𝗹𝗶𝗻𝗴 𝗨𝗻𝗶𝘁) arbeitet probabilistisch (zufalls-/wahrscheinlichkeitsbasiert) und thermodynamisch. Sie nutzt physikalisches Rauschen
+zum direkten Sampling (Ziehen einer Zufallsstichprobe) aus Wahrscheinlichkeitsverteilungen.
+Sie ist ultra-energieeffizient für generative KI, aber ungeeignet für deterministische
+Präzisionsberechnungen.
+
+Eine 𝗤𝗣𝗨 (𝗤𝘂𝗮𝗻𝘁𝘂𝗺 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗨𝗻𝗶𝘁) arbeitet quantenmechanisch mit dem Konzept der
+'Superposition'. Sie testet durch Quantenüberlagerung viele Lösungen gleichzeitig,
+exponentiell schneller für spezielle Optimierungs- und Korrelationsprobleme. Sie ist aber
+extrem spezialisiert, empfindlich und für allgemeine Computing-Aufgaben (noch) unbrauchbar.

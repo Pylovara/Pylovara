@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o"
   "CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o.d"
+  "CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o"
+  "CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o"
   "CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o"

@@ -4,7 +4,8 @@
 #include <string.h>
 #include "mcs_token.h"
 #include "mcs_transaktion.h"
-#include "mcs_runner.h"   // ← dein Runner-Header (wird unten definiert)
+#include "mcs_runner.h"
+#include "mcs_feed.h"   // ← für mcs_feed_init()
 
 void print_usage(const char* prog) {
     fprintf(stderr, "Usage: %s <file.mcs>\n", prog);
@@ -12,6 +13,10 @@ void print_usage(const char* prog) {
 }
 
 int main(int argc, char* argv[]) {
+    // 🔹 1. RAM-Initialisierung — MUSS ZUERST!
+    mcs_feed_init();
+
+    // 🔹 2. Argument-Check
     if (argc != 2) print_usage(argv[0]);
 
     const char* filename = argv[1];
@@ -21,7 +26,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // Datei komplett einlesen
+    // 🔹 3. Datei einlesen
     fseek(f, 0, SEEK_END);
     long size = ftell(f);
     fseek(f, 0, SEEK_SET);
@@ -31,7 +36,7 @@ int main(int argc, char* argv[]) {
     buf[size] = '\0';
     fclose(f);
 
-    // Parsen
+    // 🔹 4. Parsen
     mcs_transaktion_t* t = mcs_parse_transaktion(buf);
     if (!t || !t->is_valid) {
         fprintf(stderr, "[PARSE ERROR] Invalid MCS syntax in '%s'\n", filename);
@@ -39,7 +44,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // Ausführen
+    // 🔹 5. Ausführen
     int result = mcs_run_transaktion(t);
     if (result != MCS_OK) {
         fprintf(stderr, "[RUNTIME ERROR] Code %d\n", result);
@@ -47,7 +52,7 @@ int main(int argc, char* argv[]) {
         printf("✅ MCS executed successfully.\n");
     }
 
-    // Aufräumen
+    // 🔹 6. Aufräumen
     mcs_free_transaktion(t);
     free(buf);
     return result;

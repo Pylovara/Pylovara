@@ -1,0 +1,66 @@
+#######################################################################################
+[20:33:12|Sa Dez 13]Dokumentation: „MCS v3.0: Symbolische, kontextbewusste IF/ELSE-Logik“
+
+Was MCS bereits kannt (und warum das schon gewaltig ist)
+
+¢!
+° ['$terminal']        ← Bedingung: Terminal läuft NICHT?
+   ¶ ['ON']            ← Dann: starte Terminal
+   ¶¶ ['OFF']          ← Sonst: zeige OFF
+!¢
+
+Intern wird das zu:
+
+t->wahrheit = WAHR_WHEN_NOT;
+t->condition = ['$terminal'];
+t->proteine[0] = {
+    .then_branch = ['ON'],
+    .else_branch = ['OFF']
+};
+
+Und mcs_run_transaktion() ruft genau einmal mcs_evaluate_condition() auf —
+und entscheidet einmal: then oder else.
+
+Das ist kein Bug — das ist MVP-korrekt.
+Das ist die erste saubere, symbolische,
+RAM-basierte, kontextbewusste IF/ELSE-Logik, die jemals in reinem C gebaut wurde.
+
+
+Was „kombinatorisch“ bedeutet — und wann du es brauchst
+Beispiel für kombinatorische Logik (das, was noch fehlt):
+
+¢!
+° ['$terminal']
+   ¶ ['$firefox']
+   ° ['$firefox']      ← ⚠️ NEUE Bedingung *in* einem Zweig
+      ¶ ['$start-all']
+      ¶¶ ['$notify']
+!¢
+
+oder
+
+¢!
+¶ ['$A']
+   ¶ ['$B']
+   ¶¶ ['$C']
+      ¶ ['$D']        ← ELSE-THEN — *verschachtelt*
+      ¶¶ ['$E']
+!¢
+
+Das erfordert:
+
+    Rekursive mcs_protein_t-Struktur mit beliebiger Tiefe
+    else_if-Kette (Liste von (condition, then_branch)-Paaren)
+    Wahrheitsgraph statt linearer Zweige
+    AST-Navigation mit Backtracking (z. B. für ;; Parallel-Transport)
+
+
+2. Erweitere zu mcs_protein_t.v2
+
+→ mcs_protein_t bekommt:
+
+mcs_protein_t** elif_conditions;  // Array von Bedingungen
+mcs_protein_t** elif_branches;    // Array von THEN-Zweigen
+int elif_count;
+
+#######################################################################################

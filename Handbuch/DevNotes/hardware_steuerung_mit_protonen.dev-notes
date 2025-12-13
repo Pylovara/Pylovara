@@ -9,3 +9,20 @@ Hardware-Steuerung mit Protonen
 !¢
 
 → Direktes Mapping auf Hardware — kein JSON-Parser-RCE, keine YAML-Bomb
+
+Die MCS System CMD für kennwerte wie
+
+MotorA
+MotorB
+MotorC
+
+Wat
+Volt
+AMP
+
+und so weiter , werden alle samt Target zu system relevanten abläufen
+
+Proton /en werden grundsätlich mit MCS CMD Eingabe feld benutzt , was andere
+nutzungen mit System CMD Eingabe nicht ausschließt ..
+
+

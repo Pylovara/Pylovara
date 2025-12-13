@@ -35,3 +35,13 @@ lex     Lexikon                  # Übersicht  | lexikon
 
  TestAusführung : mcs-run ./test.mcs sucht relativ zum Aufrufort.
 ####################################################################
+Extra Info :
+Was noch NICHT der Fall ist :
+
+– Keine native Übersetzung
+Der Code wird interpretiert / geroutet, nicht kompiliert in Ziel-ISA.
+
+– Operatoren sind diskret, nicht kombinatorisch
+¶ && ¶¶ / Negationsketten / Operator-Komposition
+→ dafür brauchst du eine Ebene mehr (AST-Logik oder Wahrheitsgraph).
+####################################################################

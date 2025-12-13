@@ -17,6 +17,7 @@ Wenn/Kann :
 
 Operatoren sind nach dem Wenn/Kann Muster angelegt
 
+
 --------------------------------------------------------------------
 
 SICHERHEITS Checks Laufen dann Grundsätzlich über MCS (musterbeispiel)
@@ -80,5 +81,37 @@ Der Feed §(1) synchronisiert Display-Ausgabe zwischen Protein und Warp.
     Einspeisungspunkt moment/punkt und zu makieren die stelle die
     ersetzt werden soll/muss .
 
+--------------------------------------------------------------------
+
+Ausdruck Erklärung Aus C (Zusatz erklärung):
+
+Ein Ausdruck (expresion) verknüpft Operanden mit hilfe eines Operators
+
+- Operand , ist der Wert (Variablen oder Literale) der Verknüpft werden
+  soll.
+- Operator , legt die Art der Verknüpfungen fest (z.b Addition mit +).
+
+Zuweisungs Arithmetische - Operatoren werden bei MCS verschoben
+in die argument /en , da sie in der form von C heraus in MCS selbst
+erstmal keinen sinn ergeben (standpunkt MCS 3.0)
+
+Vergleichs / Logische - Operatoren werden zu den MCS Wahrheiten
+hinzugefügt .
+
+In MCS werden Operatoren anders definiert , sie zählen zu :
+
+Wenn/Kann regeln
+Vergleichs regeln
+Wenn/eindeutig regeln
+
+und fehler wie debugg und DatenReste logiken
+
+
+Zuckünftige erweiterungen für Mathematische und Zuweisungen , werden
+höchst warscheinlich zu einer Symbolischen erweiterungslogik führen
+für speziell und explizit diesem einsatz gebiet ..
+
+BillGates hat mir das in C zu Stumpf dahin geknallt , daher wird es
+besser , in zuckunft anders implementiert
 ##################### Ende der Operatoren  #########################
 ####################################################################

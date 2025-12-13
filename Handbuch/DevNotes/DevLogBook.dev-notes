@@ -63,4 +63,10 @@ mcs_protein_t** elif_conditions;  // Array von Bedingungen
 mcs_protein_t** elif_branches;    // Array von THEN-Zweigen
 int elif_count;
 
+
+Was Momentan implementiert ist :
+
+linearen IF/ELSE/Negations-Workflows
+
+
 #######################################################################################

@@ -30,7 +30,7 @@ ausfürbar durch Aktion (siehe kernel 06)
 ausfürbar durch Aktion (siehe kernel 06)
 
 --------------------------------------------------------------------
-## HighLevel Workflow Definition Combiniertes Beispiel
+## HighLevel Workflow Definition Combiniertes Beispiel linear
 
 ¢|
 »['*'|"*"]«
@@ -40,7 +40,7 @@ ausfürbar durch Aktion (siehe kernel 06)
 
 Ausführbares protein mit wenn kann regel ,
        - assimiliertes element -
-aus C , da Nützlich für IF and Else regeln .
+aus C , da Nützlich für IF and Else regeln (siehe kernel lex 08)
 
 --------------------------------------------------------------------
 # Protein Packet Layout LowLevel schulisches b.s :
@@ -53,11 +53,11 @@ Pylovara MCS CMD :
 »[’pushout’|¨~/Home/testdatei.wiki-notes|'to'|¨~/Home/Dokumenten/¨]«
 »[’run’|’Firefox’|’open’|’search’|¨Pylovara Github¨|’Enter’]«
 
-# WorkAround leichter Ablauf :
+# WorkAround leichter Ablauf linear :
 
 ¢|
-»['sendordner'|¨/Pylovara/Hanbuch¨|'to'|¨~/Dokumente¨|'echo'|"bestätigen? y/n"|'eingabe: y']
-       ¶ ['y'|'pushout'|'to'|¨~/Dokumente¨|'echo'|"Verschoben in ~/Dokumente/"]«
+»[’sendordner’|¨/Pylovara/Hanbuch¨|'cd'|¨~/Dokumente¨|'echo'|"bestätigen? y/n"|'eingabe: y']
+       ¶ ['y'|’pushout’|'cd'|¨~/Dokumente¨|'echo'|"Verschoben in ~/Dokumente/"]«
        ¶¶ ['n'|'exit']«
 |¢
 

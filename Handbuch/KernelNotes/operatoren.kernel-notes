@@ -20,37 +20,6 @@ Operatoren sind nach dem Wenn/Kann Muster angelegt
 
 --------------------------------------------------------------------
 
-SICHERHEITS Checks Laufen dann Grundsätzlich über MCS (musterbeispiel)
-
-¢|                                                      # Transaktion starten
-»[{’Band’|¨2.4G¨}]«                                     # Protein: WLAN-Band auf 2.4G setzen
-    = §WLAN                                             # Wohin
-°WennNicht »[{’Band’|¨2.4G¨}|{’Valid’|¨2.4G¨|¨5G¨}]«    # Sicherheitscheck:Nur 2.4G/5G erlaubt
-^TransaktionsFehler                                     # Fehler bei ungültigem Band
-    = §(1)Displey                                       # Ergebnis an Display
-    ¶=                                                  # Paralleler Prozess
-    øC|                                                 # Warp: C-Code für detaillierte Steuerung
-    #include <iwlib.h>
-    int main() {
-        wireless_config wconf;
-        int sock = iw_sockets_open();
-        wconf.frequency = 2.4e9;
-        iw_set_basic_config(sock, "wlan0", &wconf);
-        return 0;
-    }ø = §gcc                      # Warp an gcc senden
-    = §(1)                         # Feed zurück an Display
-|¢                                 # Transaktion beenden
-
-Erklärung:
-
-Der Sicherheitscheck (°WennNicht) prüft, ob Band|2.4G gültig ist,
-und löst bei Fehler einen ^TransaktionsFehler aus.
-Der C-Warp wird kompiliert und in Assembly übersetzt,
-während das Protein [{’Band’|¨2.4G¨}] = §WLAN direkt die Hardware anspricht.
-Der Feed §(1) synchronisiert Display-Ausgabe zwischen Protein und Warp.
-
---------------------------------------------------------------------
-
   ⊕  Sync-timer (AI Spezialisierungsoperator für Laufende Prozesse)
 
 --------------------------------------------------------------------
@@ -104,8 +73,7 @@ Wenn/Kann regeln
 Vergleichs regeln
 Wenn/eindeutig regeln
 
-und fehler wie debugg und DatenReste logiken
-
+und fehler wie debugg und DatenReste logiken zu erklären
 
 Zuckünftige erweiterungen für Mathematische und Zuweisungen , werden
 höchst warscheinlich zu einer Symbolischen erweiterungslogik führen

@@ -1,6 +1,6 @@
 @kernel-nr: 03
 ####################################################################
-## Protein /ne :
+## Protein /e :
 
 Protein ist der Rahmen , der Rahmen für Eingaben|Operatoren|Proton .
 Sie dienen dank den cmd Eingaben als lovlevel Syntax und können in
@@ -53,7 +53,7 @@ Pylovara MCS CMD :
 »[’pushout’|¨~/Home/testdatei.wiki-notes|'to'|¨~/Home/Dokumenten/¨]«
 »[’run’|’Firefox’|’open’|’search’|¨Pylovara Github¨|’Enter’]«
 
-# WorkAround leichter Ablauf linear :
+# WorkAround leichter Ablauf (linear) :
 
 ¢|
 »[’sendordner’|¨/Pylovara/Hanbuch¨|'cd'|¨~/Dokumente¨|'echo'|"bestätigen? y/n"|'eingabe: y']

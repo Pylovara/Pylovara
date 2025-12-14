@@ -17,10 +17,15 @@ vorliegt das vor und danach den start und endpunkt des packets angibt
   «
 
 --------------------------------------------------------------------
+  Definition  Aktion Anfang und Ende
+
+  » «
+
+--------------------------------------------------------------------
   Info - Worflow Erkennung :
 
-  Ein Aktion start wie endpunkt wird in 2 bytes festgelegt , um
-  eindeutigkeiten gegenüber argumenten klar zu unterscheiden .
+  Ein Aktion/s-start wie Aktion/s-endpunkt wird mit 2 bytes festgelegt
+  , um eindeutigkeiten gegenüber argumenten klar zu unterscheiden .
 
   symbol « 2 Bytes
   symbol » 2 Bytes
@@ -28,11 +33,6 @@ vorliegt das vor und danach den start und endpunkt des packets angibt
   utf -8 standart tastatur !!!!!!
 
   ziehe : kernel 15 | dev 03
---------------------------------------------------------------------
-  Definition  Aktion Anfang und Ende
-
-  » «
-
 --------------------------------------------------------------------
   Erklärung
 
@@ -63,15 +63,15 @@ schluss dargestellt und diese Schlüsse aber immer ein eigenes
 aktion /s Ende und der anfang vom ersten protein ,
 gewährleistet flexibilität.
 
-# Aktion/s-anordnung HighLevel mit low-leveloperationen  :
+# Aktion/s-anordnung HighLevel mit low-leveloperationen  Linear :
 
 ¢!
- »['exec'|'once'|¨$terminal¨]
+ »[’exec’|’once’|¨$terminal¨]
    ¶ ['echo'|"helloworld"]«
 !¢
 
 ¢!
- »['exec'|'once'|¨$terminal¨]
+ »[’exec’|’once’|¨$terminal¨]
    ¶ ['echo'|"helloworld"]«
    ° ¶¶ »['exit']«
 !¢

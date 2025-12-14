@@ -1,18 +1,20 @@
 @kernel-nr: 04
 ####################################################################
-## Proton(en) :
+## Proton :
 
-Ist der Rahmen oder auch Container für Proton /en weitergaben,
-Sie combinieren, Eingaben Container Trennbefehl und verpacken es zu
-einer lesbaren form , mit übersetzungs Sprachen in Protein /en zu
-Proton /en .
+Ist der Rahmen oder auch Container für Proton/en , die genauso
+gefüllt werden können mit eingaben wie Protein /e (siehe kernel 03)
 
-Primär werden sie für die Hardwaresteuerung genutzt , sekundär
-als Fremdsprachenbefehlseingabe , da mcs sein eigenen Register
-hat , können in Proton /en auch explizite MCS CMD eingabe container
-bei den Eingaben genutzt werden.
+Proton/en können für verschiedene zwecke genutzt werden :
 
-Register hierzu noch im aufbau .
+- Um Hardwaresteuerungen mit zu geben
+- Um Das Energiemanagment zu steuern
+- UM CMD befehle weiter zu geben
+
+Grundsätzlich wird für Proton /en Das MCS CMD Register Geschrieben,
+das grundsätzlich Watt Volt AMP Band IP und andere späße mit sich
+bringt . Unter anderem werden auch Combinierbare system befehle in
+MCS CMD mitgeliefert .
 
 --------------------------------------------------------------------
 ## Proton /en Definiert
@@ -43,8 +45,8 @@ Beispiel Protein mit Proton ohne Hardware Aufgaben ;
 
 
 Ein Proton innerhalb eines Proteins kann Daten aller Argumente
-oder Wahrheiten mit in die nächste Verarbeitung oder
-Endverarbeitung geben oder führen .
+oder Wahrheiten mit in die nächste Verarbeitung oder Endverarbeitung
+geben oder führen .
 
 -------------------------------------------------------------------
 ## Struktur für Spätere MCS Eingaben , ziehe kernel 07 :
@@ -78,13 +80,13 @@ Endverarbeitung geben oder führen .
 --------------------------------------------------------------------
 ## Anwendung in Protein /en
 
-  »['MotorA'|{'Watt'|¨200¨}|{'Volt'|¨12¨}]«
+  »[’MotorA’|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«
   Protonen liefern Zusatzdaten, Proteine definieren die Aktion.
 
 Info : Cmd Eingaben werden im register definiert .
 
 --------------------------------------------------------------------
-## Entwicklungs Notiz - Noch nicht Implementiert
+## Entwicklungs Notiz - Noch nicht Implementiert !
 
 ##Proton-Metadaten
   Optional: jeder Proton kann ein Meta-Proton enthalten:

@@ -2,11 +2,14 @@
 ####################################################################
 ## Trennbefehl /e :
 
-Sie dienen als Zwischenraum von Eingaben|Operatoren|etc , um
-alles lesbar und geordnet zu halten . Trennbefehle werden nur
-innerhalb von Protein und oder Protonen verwendet und sind
-grundsätzlich einzeln zu benutzen , doppelte Trennzeichen werden
-nicht als einzelstück gesehen .
+Sie dienen als Zwischenraum und haben lediglich einen übersichts
+nutzen . Ohne Trennbefehle könnte MCS auch Laufen aber es würde
+unaufgeräumt aussehen . Ich selbst mag keine unaufgeräumten Codes
+und bekomme Pickel und ausschlag und deswegen wurden Trennbefehle
+eingebaut um alles lesbar und geordnet zu halten .
+Trennbefehle werden nur innerhalb von Protein /e u.o Protonen
+verwendet und sind grundsätzlich einzeln zu benutzen , doppelte
+Trennzeichen werden nicht als Einzelstück gesehen .
 
 --------------------------------------------------------------------
 # Definition :
@@ -31,6 +34,23 @@ Verständniss : Sternchen Makieren inhalt
 
 Das MCS-Framework wächst organisch, bleibt aber lesbar und kann als
 allrounder verwendet werden .
+
+Die Erklärung selbst hätte ich mir eigentlich sparen können aber da
+ich definitiv kein Code Chaos Dulde und von allem abstand halte das
+wie C/Python/Rust/Java wie scheisse aussieht und entweder zu
+Semantisch oder zu durchgeordert wie java class .....
+
+Wird hier alles erklärt , selbst sowas wie der Trennbefehl.
+
+Info :
+
+Trennbefehle | sind in vielen systemen anders gedeutet und daher
+muss drigend verstanden werden das ein trennbfehl oder zwei folgende
+innerhalb einer System CMD eingabe (siehe kernel lex 07) meist
+kurzschluss funktionen haben !!
+
+nutzt niemals ohne ahung in einem System CMD Eingabe container
+| oder || ohne zu wissen was es tut ....
 
 ###################### Ende der Eingaben  ##########################
 ####################################################################

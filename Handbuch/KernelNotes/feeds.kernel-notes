@@ -6,7 +6,35 @@ Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
 er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
 und dadurch seine andock station definiert ..
 
-Feeds werden als Container betrachtet
+Feeds werden als Container betrachtet und sind von den
+Unix-Pipes inspiriert , aber mit MCS-spezifischer Syntax.
+
+Feed/s Feedbacken nur eine einzige sache :
+
+  Gleiche Zahl oder Buchstabe im Code , sonnst nix ...
+
+Sie geben auch kein Feedback aus sondern sie warten
+auf den Input Feedback von ihren geschwister !
+
+Feed/s haben InputFeedback und nehmen den gleichen inhalt an ,
+wenn einer ihrer verbundenen gleichheißenden Feed/s was anderes
+rein schreiben , der erste der geändert wird überschreibt seinen
+inhalt immer mit den anderen ...
+
+Die Zahl oder Buchstabe im Feed selbst bleibt immer gleich
+nur der anhang copiert sich selbst und pastet zu den anderen
+
+habt ihr 3 mal (2) <--  feed/s verbaut , habt ihr 3 von sich
+copierende gefäße die den ersten input als initiator sehen und
+die anderen zwei den inhalt übernehmen
+
+Das ist Feed !!!
+
+Feed wartet auf Feedback seines zwillings oder dutzenschaften,
+um den inhalt der angekommen ist , in sich in sich überall gleich
+zu verteilen ...
+
+Dadurch enstehen Mächte WorkFlows
 
 --------------------------------------------------------------------
   Definition  Anfang :
@@ -31,6 +59,9 @@ und dadurch seine andock station definiert ..
   Definition  mit einer musterbeispiel zahl Gesamt :
 
   (1)
+  (8)
+  (H)
+  (3)
 
 --------------------------------------------------------------------
 Um den Feed Nutzbar zu machen häften wir jetzt den Feed mit der
@@ -38,15 +69,11 @@ Beispiel Nummer 1 an ein element ein das wir transportieren möchten
 --------------------------------------------------------------------
   Definition  mit einer musterbeispiel zahl Gesamt :
 
-  (1)
-
---------------------------------------------------------------------
-Um den Feed Nutzbar zu machen heften wir jetzt den Feed mit der
-Beispiel Nummer 1 an ein element an, das wir transportieren möchten.
---------------------------------------------------------------------
-  Definition  mit einer musterbeispiel zahl Gesamt :
-
   (1)""
+
+  Dieser Eingabe Print wurde mit Feed getaggt und wird durch alle
+  Feeds mit dem selben nenwert dupliziert bzw überall gleich
+  angezeigt .
 
 --------------------------------------------------------------------
 Hier wurde der Feed mit der kennung 1 an eine Eingabe gebunden die
@@ -76,17 +103,15 @@ um unsere pid id 1142 jetzt weiter zu verarbeiten da wir sie mit feed
 getraget haben , können wir jetzt damit arbeit um den code zu
 vervollständigen
 --------------------------------------------------------------------
-  Musterbeispiel  :
+  Musterbeispiel :
 
-  (1)"$(pgrep firefox)"
 ¢!
-»['pgrep'|¨firefox¨|(1)¨$(pgrep firefox)¨]
-»['kill'|¨(1)¨]«««t1
+»['pgrep'|¨firefox¨|(1)¨$(pgrep firefox)¨]«
+»['kill'|(1)¨¨]«««t1
 !¢
 --------------------------------------------------------------------
 wir transportieren einen blanken nenner mit Dollar , bekommen
-den pid der dann als kill 1142 getötet wird .
-
+den pid der dann als kill 1142 getötet wird zurück .
 
 ######################## Ende der Feeds ############################
 ####################################################################

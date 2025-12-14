@@ -1,0 +1,266 @@
+####################################################################
+@dev-nr: 08
+@dev-nr: tuidee
+####################################################################
+
+// Pylovara Kernel TUI v3
+// Ziel: Erstellung einer mehrspaltigen TUI mit sauberer Darstellung des aktuellen
+// Verzeichnisses im Eingabefeld und dynamischer Aktualisierung der Status-Floats.
+// Kompilierung: gcc pylovara_tui.c -o tui -lncurses
+
+#include <ncurses.h>
+#include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Globale Fenster-Pointer für die Hauptbereiche
+WINDOW *status_panel;
+WINDOW *main_wrapper_panel; // Der linke Wrapper für Pfad/Input
+WINDOW *input_field_panel;  // Das eigentliche Eingabefeld
+WINDOW *log_panel;
+WINDOW *config_panel;
+
+#define STATUS_HEIGHT 4
+#define INPUT_PROMPT_HEIGHT 2 // Höhe für den Prompt/Pfad
+#define INPUT_FIELD_HEIGHT 1 // Höhe für die eigentliche Eingabezeile
+
+// Aktuelles Verzeichnis, das im Prompt angezeigt wird
+char current_path[128] = "/Pylovara/System/Kernel/Core";
+
+/**
+ * @brief Initialisiert die ncurses-Umgebung und richtet die Fenster ein.
+ */
+void init_tui() {
+    initscr();
+    cbreak();               // Sofortige Eingabe
+    noecho();               // Keine automatische Ausgabe
+    keypad(stdscr, TRUE);   // Funktionstasten aktivieren
+    curs_set(1);            // Cursor sichtbar machen (für Eingabe)
+
+    if (has_colors()) {
+        start_color();
+        init_pair(1, COLOR_YELLOW, COLOR_BLACK); // Status Farbe
+        init_pair(2, COLOR_CYAN, COLOR_BLACK);   // Log Farbe
+        init_pair(3, COLOR_GREEN, COLOR_BLACK);  // Eingabe Farbe
+        init_pair(4, COLOR_WHITE, COLOR_BLACK);  // Standard Text
+    }
+
+    // Terminal-Größe abfragen
+    int max_y, max_x;
+    getmaxyx(stdscr, max_y, max_x);
+
+    // --- 1. Status-Panel (Oben, Volle Breite) ---
+    status_panel = newwin(STATUS_HEIGHT, max_x, 0, 0);
+    box(status_panel, 0, 0);
+    wattron(status_panel, COLOR_PAIR(1));
+    mvwprintw(status_panel, 1, 2, "Pylovara Kernel Status | ID: 7465");
+    wattroff(status_panel, COLOR_PAIR(1));
+
+    // --- Untere Spalten-Berechnung ---
+    int lower_y = STATUS_HEIGHT;
+    int lower_height = max_y - STATUS_HEIGHT;
+    int input_width = max_x / 4; // 25% Breite für Eingabe/Wrapper
+    int config_width = max_x / 5; // 20% Breite für Optionen
+    int log_width = max_x - input_width - config_width; // Restliche 55% für Log
+
+    // --- 2. Input-Wrapper Panel (Unten Links, enthält Pfad und Eingabefeld) ---
+    main_wrapper_panel = newwin(lower_height, input_width, lower_y, 0);
+    box(main_wrapper_panel, 0, 0);
+
+    // 2b. Das eigentliche Eingabefeld (unter dem Pfad im Wrapper)
+    // Position: 2 Zeilen unter dem Wrapper-Rand (1) + Prompt (1)
+    input_field_panel = newwin(INPUT_FIELD_HEIGHT, input_width - 2, lower_y + INPUT_PROMPT_HEIGHT, 1);
+    keypad(input_field_panel, TRUE); // Eingabe-Panel für Tasten vorbereiten
+
+    // --- 3. Log-Feed Panel (Unten Mitte) ---
+    log_panel = newwin(lower_height, log_width, lower_y, input_width);
+    box(log_panel, 0, 0);
+    scrollok(log_panel, TRUE);
+
+    // --- 4. Config/Option Panel (Unten Rechts) ---
+    config_panel = newwin(lower_height, config_width, lower_y, input_width + log_width);
+    box(config_panel, 0, 0);
+
+    // Initiales Zeichnen
+    wrefresh(status_panel);
+    wrefresh(main_wrapper_panel);
+    wrefresh(log_panel);
+    wrefresh(config_panel);
+}
+
+/**
+ * @brief Schließt ncurses und stellt das Terminal wieder her.
+ */
+void close_tui() {
+    delwin(status_panel);
+    delwin(input_field_panel);
+    delwin(main_wrapper_panel);
+    delwin(log_panel);
+    delwin(config_panel);
+    endwin();
+}
+
+/**
+ * @brief Aktualisiert den asynchronen Status-Bereich.
+ */
+void update_status(int trans_count, float cpu_load, float ram_usage, float watt_draw) {
+    time_t timer;
+    char buffer[26];
+    struct tm* tm_info;
+
+    time(&timer);
+    tm_info = localtime(&timer);
+    strftime(buffer, 26, "%H:%M:%S", tm_info);
+
+    // Inhalt der zweiten Zeile im Status-Bereich löschen
+    wmove(status_panel, 2, 1);
+    wclrtoeol(status_panel);
+
+    wattron(status_panel, COLOR_PAIR(1));
+    mvwprintw(status_panel, 2, 2, "Zeit: %s | CPU: %.2f%% | RAM: %.0f MB | Watt: %.1f W | Transaktionen: %d",
+              buffer, cpu_load, ram_usage, watt_draw, trans_count);
+    wattroff(status_panel, COLOR_PAIR(1));
+
+    wrefresh(status_panel);
+}
+
+/**
+ * @brief Aktualisiert den Config/Option-Bereich mit Status-Punkten.
+ */
+void update_config() {
+    wattron(config_panel, COLOR_PAIR(3));
+    mvwprintw(config_panel, 1, 2, "--- Konfiguration ---");
+    wattroff(config_panel, COLOR_PAIR(3));
+
+    wattron(config_panel, COLOR_PAIR(4)); // Standard-Text
+    mvwprintw(config_panel, 3, 2, "[ ] Async. Logging");
+    mvwprintw(config_panel, 4, 2, "[X] Feed Watchdog");
+    mvwprintw(config_panel, 5, 2, "[ ] Debug Mode");
+    wattroff(config_panel, COLOR_PAIR(4));
+
+    wrefresh(config_panel);
+}
+
+/**
+ * @brief Fügt eine Zeile zum Haupt-Log hinzu und scrollt.
+ */
+void add_to_log(const char* message) {
+    wattron(log_panel, COLOR_PAIR(2));
+    wprintw(log_panel, "\n[LOG] %s", message);
+    wattroff(log_panel, COLOR_PAIR(2));
+
+    wrefresh(log_panel);
+}
+
+/**
+ * @brief Zeichnet den Pfad-Prompt und liest eine MCS-Eingabe vom Benutzer.
+ */
+void handle_input() {
+    char input_buffer[256] = {0};
+
+    // --- 1. Prompt zeichnen (im Wrapper Panel) ---
+    wattron(main_wrapper_panel, COLOR_PAIR(3));
+    mvwprintw(main_wrapper_panel, 1, 2, "Verzeichnis:");
+    wattron(main_wrapper_panel, COLOR_PAIR(4));
+    // Zeigt den aktuellen Pfad an
+    mvwprintw(main_wrapper_panel, 2, 2, "%s>", current_path);
+    wattroff(main_wrapper_panel, COLOR_PAIR(4));
+    wattroff(main_wrapper_panel, COLOR_PAIR(3));
+    wrefresh(main_wrapper_panel);
+
+    // --- 2. Eingabefeld leeren und Cursor setzen ---
+    wmove(input_field_panel, 0, 0);
+    wclrtoeol(input_field_panel);
+    wattron(input_field_panel, COLOR_PAIR(3));
+    wprintw(input_field_panel, "$ ");
+    wattroff(input_field_panel, COLOR_PAIR(3));
+    wrefresh(input_field_panel);
+
+    // Cursor positionieren (wichtig für die Eingabe)
+    wmove(input_field_panel, 0, 2);
+
+    // --- 3. Eingabe abwarten ---
+    echo(); // Ausgabe der eingegebenen Zeichen temporär wieder aktivieren
+    wgetnstr(input_field_panel, input_buffer, sizeof(input_buffer) - 1);
+    noecho(); // Ausgabe wieder deaktivieren
+
+    // --- 4. Verarbeitung ---
+    if (strlen(input_buffer) > 0) {
+        if (strcmp(input_buffer, "exit") == 0) {
+            // Spezialfall: Globale Variable setzen, um die Hauptschleife zu beenden
+            add_to_log("Beende TUI auf Benutzerwunsch...");
+            // Setze eine globale Flagge (z.B. is_running = false), die hier simuliert wird
+            // durch einen logischen Fehler-Code im nächsten Schleifendurchlauf.
+            // Achtung: Ein realer Kernel würde hier sauber herunterfahren.
+            strcpy(current_path, "EXIT_SIGNAL");
+            return;
+        }
+
+        // Simuliere Pfadwechsel, wenn "cd" erkannt wird
+        if (strncmp(input_buffer, "cd ", 3) == 0) {
+            char new_path[128];
+            strncpy(new_path, input_buffer + 3, sizeof(new_path) - 1);
+            new_path[sizeof(new_path) - 1] = '\0';
+            snprintf(current_path, sizeof(current_path), "%s", new_path);
+            add_to_log("Verzeichnis gewechselt.");
+        } else {
+            char processed_msg[300];
+            snprintf(processed_msg, sizeof(processed_msg), ">>> MCS-Befehl empfangen: %s", input_buffer);
+            add_to_log(processed_msg);
+        }
+    }
+}
+
+
+// --- Haupt-Simulations-Logik ---
+int main() {
+    init_tui();
+
+    if (stdscr == NULL) {
+        fprintf(stderr, "Terminal-Initialisierung fehlgeschlagen.\n");
+        return 1;
+    }
+
+    add_to_log("MCS Kernel TUI gestartet.");
+    add_to_log("Pflege der Kernel Notes abgeschlossen: /Pylovara/Handbuch/KernelNotes/");
+    update_config(); // Config einmalig zeichnen
+
+    // Simulationsvariablen
+    int trans_count = 0;
+    float load = 0.0f;
+    float ram = 1024.0f;
+    float watt = 50.0f;
+
+    // Hauptschleife
+    int loop_counter = 0;
+
+    while (strcmp(current_path, "EXIT_SIGNAL") != 0) {
+        // --- 1. Status-Aktualisierung (Asynchroner Teil) ---
+        if (loop_counter % 10 == 0) { // Update ca. alle 5 Sekunden
+            trans_count = (rand() % 10);
+            load = 10.0f + (float)(rand() % 50); // 10% bis 60%
+            ram = 1000.0f + (float)(rand() % 2000); // 1-3 GB
+            watt = 50.0f + (float)(rand() % 100); // 50W bis 150W
+        }
+
+        // Log-Einträge simulieren
+        if (loop_counter % 6 == 0) {
+            char log_msg[64];
+            snprintf(log_msg, sizeof(log_msg), "Transaktion #%d gestartet.", trans_count);
+            add_to_log(log_msg);
+        }
+
+        update_status(trans_count, load, ram, watt);
+
+        // --- 2. Eingabe-Handling ---
+        handle_input();
+
+        // Kleiner Timeout für die Simulationsgeschwindigkeit
+        usleep(500000); // 0.5 Sekunden warten
+        loop_counter++;
+    }
+
+    close_tui();
+    return 0;
+}

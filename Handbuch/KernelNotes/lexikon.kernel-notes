@@ -6,23 +6,24 @@
     ▐▌▗▞▘▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌   ▐▌       ▐▌ ▐▌  █  ▐▌▗▞▘  █
     ▐▛▚▖ ▐▛▀▀▘▐▛▀▚▖▐▌ ▝▜▌▐▛▀▀▘▐▌       ▐▌ ▐▌  █  ▐▛▚▖   █
     ▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖▐▙▄▄▖    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖
-                                              Pylovara since 2025
-####################################################################
+                                                 Pylovara since 2025
 ################ Das Handbuch für den MCS Kernel ###################
 ####################################################################
-        | Lexikon/s | kernel lex | dev lex | helmpe lex |
+         | Lexikon/s | kernel lex | dev lex | helmpe lex |
 ####################################################################
+      | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |
+          -------------------------------------------------
           01 - Datentypen -new      10 + Feeds -new
           02 + Transaktion          11 - Zielreferenz
           03 + Protein -new         12 - Dirigent
           04 - Proton               13 - Warp
           05 + Trennbefehl          14 - þ Identifikation
           06 + Aktion               15 + Argumente
-          07 + Eingaben -fix        20 - Reihenfolge
-          08 + Wahrheiten -new      99 - Register CMDs -new
-          09 - Operatoren -new      00 - Fallback Übersicht
-
-        | - nicht freigeschaltet | + Freigeschaltet |
+          07 + Eingaben -fix        16 X Variable-Verknüpfungen
+          08 + Wahrheiten -new      20 - Reihenfolge
+          09 - Operatoren -new
+          -------------------------------------------------
+          99 - Register CMDs -new   00 - Fallback Übersicht
 ####################################################################
         # Maschinen Code Speech – Kernel Syntax Handbuch  #
         # Version: 3.0  |  Autor: Thomas Zimmermann       #

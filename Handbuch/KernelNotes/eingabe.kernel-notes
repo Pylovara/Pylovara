@@ -18,20 +18,28 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
 --------------------------------------------------------------------
 
-    " "  <- Print , zeigt alles darin an als Ausgabe
+    " "  <- Print , Druckt
 
-    Hier zu gibt es nicht viel zu sagen »['echo'|"Hello World"]
-    den Prints sind dinge die angezeigt werden oder hinheingeschrieben
-    oder verschickt werden .... hierzu den punkt blanker nenner lesen .
-    Print sind System abhängig zu benutzen , die zeichen rahmen nur ein
-    was geprintet werden soll .
+    Print Druckt was da steht
+
+    »['echo'|"Hallo"]«
+
+    oder komplexer :
+
+    ¶ »[(1)¨Hallo¨]« # wenn feed gespeichert
+    ¶¶ »['echo'|"(1)" # kann gespeichert daten in print dann mit echo drucken
+
+    wir fügen also dem System cmd echo etwas hinzu , in diesem falle
+    hallo .
+
+    Wichtig dabei zu verstehen : Print Druckt
 
 --------------------------------------------------------------------
 
     ' ' <- System Commands , Wird als Anweisung verstanden , System CMD
 
 
- »[’exec’|’once’|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
+ »[’exec once’|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
 
     System CMD befehle gehen von jeweiligen unterbau aus und
     sind nur die container für System CMD befehle wie sudo usw
@@ -41,6 +49,38 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
     als arch linux user mit primär kitty und bash unterbau , klare
     archlinux cmd , bei debian dürften es abweichungen
     geben daher auch dann debian cmd .
+
+    bei system cmd eingaben , werden sie zusammen geschrieben
+    und nie aufgeteilt , den das jeweilige os hat nun mal
+    seine eigenen cmd befehle die eben nur zusammen funktionieren
+
+    wenn aber folge befehle kommen dann können sie extra eingetragen
+    werden
+
+    Falsch :
+
+    »['sudo'|'pacman'|'-Syyu']«
+
+    Richtig :
+
+    »['sudo pacman -Syyu']«
+
+    das selbe gilt bei anderen aufgaben wir
+
+    Falsch
+
+    »['sudo'|'pacman'|'-R'|'kwriter']«
+
+    Richtig
+
+    »['sudo pacman -R kwriter']«
+
+    folgebefehle
+
+    »['sudo pacman -R kwriter']«
+    ¶= »['sudo pacman -S kwriter']«
+
+    den folgebefehl können wir als paralellen transportieren
 
 --------------------------------------------------------------------
 
@@ -65,7 +105,7 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
     Beispiel :
 
-    »[’exec’|’once’|{'Terminal'|¨$terminal¨}]«
+    »[’exec once’|{'Terminal'|¨$terminal¨}]«
 
     Wir (exec)execuden (once)einmal das Terminal und geben den
     heinheimischen befehl dazu weiter $terminal als

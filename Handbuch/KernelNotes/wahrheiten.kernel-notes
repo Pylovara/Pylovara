@@ -70,21 +70,18 @@ Zustand wird explizit über Feeds (siehe kernel lex 10)
 --------------------------------------------------------------------
 ## Werden gerade möglich :
 
-¶   IF/Wenn
-¶¶  Else/kann
-#   bleibt traditionell kommentar
+¶   IF/Wenn             — lineare Bedingung (WAHR_IF)
+¶¶  Else/kann           — alternativer Zweig (WAHR_ELSE)
+¶=  Parallel Run        — nebenläufiger Prozess, kein Warten (WAHR_PARALLEL_RUN)
+;;  Parallel Transport   — Feed-basierter Datenfluss, nicht-blockierend (WAHR_PARALLEL_TRANSPORT)
 
---------------------------------------------------------------------
-## Noch nicht möglich (für spätere updates)
+----------------------------------------------------------------
+## Nicht geplant aber für viel später vorgemerkt
 
 ~~ für Merge von mehreren Packets kann per () granuliert werden das
 genau
 >-> für Fork oder Splitting Links Nach Rechts
 <-< für Fork oder Splitting Rechts Vor Links
-¶=  Paralelle oder nebenprozesse die mit eingaben rücksprachen zu tun
-haben , besonders hilfreich bei Gui designe
-;;  Für Paralell Transport , ohne eingabe aufforderung
-
 
 --------------------------------------------------------------------
 

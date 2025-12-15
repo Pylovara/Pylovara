@@ -69,5 +69,25 @@ Prototyp Dev Level !!! Noch Kein kernelelement !!
 --------------------------------------------------------------------
     BauStelle BauStelle BauStelle BauStelle BauStelle BauStelle
 
+
+
+
+
+mcs aufbau muster
+
+¢|
+»['var'|x|=|10]« # Python-style, ohne Type
+»['var'|liste|=|[1,2,3,4,5]]«
+»['iterate'|liste|'as'|item]«
+  »['print'|item]«
+»['end']«
+
+so cirka würde der make prozess von variable-verknüpfungen aussehen können in mcs gegossen
+
+erst blank designed dann mcsmake , dann validiert nutzen
+
+    BauStelle BauStelle BauStelle BauStelle BauStelle BauStelle
+
+
 ############### Ende der Variable-Verknüpfung/en ###################
 ####################################################################

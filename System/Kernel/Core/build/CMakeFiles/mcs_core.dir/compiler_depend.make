@@ -332,6 +332,18 @@ CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o: /Pylovara/System/Kernel/Core/Lib/mcs
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
+  /usr/include/bits/sigaction.h \
+  /usr/include/bits/sigcontext.h \
+  /usr/include/bits/sigevent-consts.h \
+  /usr/include/bits/siginfo-arch.h \
+  /usr/include/bits/siginfo-consts.h \
+  /usr/include/bits/signal_ext.h \
+  /usr/include/bits/signum-arch.h \
+  /usr/include/bits/signum-generic.h \
+  /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
+  /usr/include/bits/sigthread.h \
+  /usr/include/bits/ss_flags.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
@@ -348,12 +360,20 @@ CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o: /Pylovara/System/Kernel/Core/Lib/mcs
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/idtype_t.h \
   /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sig_atomic_t.h \
+  /usr/include/bits/types/sigevent_t.h \
+  /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/sigval_t.h \
+  /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/time_t.h \
@@ -369,6 +389,7 @@ CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o: /Pylovara/System/Kernel/Core/Lib/mcs
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
@@ -377,6 +398,8 @@ CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o: /Pylovara/System/Kernel/Core/Lib/mcs
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
+  /usr/include/sys/ucontext.h \
+  /usr/include/sys/wait.h \
   /usr/include/unistd.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
@@ -571,7 +594,7 @@ CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o: /Pylovara/System/Kernel/Core/Logic/
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
 
-/usr/include/ctype.h:
+/Pylovara/System/Kernel/Core/Logic/mcs_lexer.c:
 
 /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c:
 
@@ -579,214 +602,260 @@ CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o: /Pylovara/System/Kernel/Core/Logic/
 
 /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c:
 
-/usr/include/unistd.h:
-
-/usr/include/bits/unistd_ext.h:
-
-/usr/include/bits/getopt_posix.h:
-
-/usr/include/bits/confname.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_semantics.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_runner.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_warp.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_protein.h:
-
-/Pylovara/System/Kernel/Core/Lib/mcs_protein.c:
-
-/Pylovara/System/Kernel/Core/include/mcs_transaktion.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/Pylovara/System/Kernel/Core/Lib/mcs_feed.c:
-
-/Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
-
-/usr/include/bits/pthread_stack_min.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/bits/posix2_lim.h:
-
-/usr/include/bits/mathcalls.h:
-
-/usr/include/bits/mathcalls-macros.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/bits/math-vector.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/local_lim.h:
-
-/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:
-
-/usr/include/linux/limits.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/bits/flt-eval-method.h:
-
-/usr/include/bits/getopt_core.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/limits.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_feed.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/Pylovara/System/Kernel/Core/Lib/mcs_action.c:
-
-/usr/include/bits/byteswap.h:
-
-/Pylovara/System/Kernel/Core/Logic/mcs_token.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_proton.h:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/bits/floatn.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_eingaben.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/strings.h:
-
-/Pylovara/System/Kernel/Core/Lib/mcs_warp.c:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_argument.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/Pylovara/System/Kernel/Core/Logic/mcs_lexer.c:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/Pylovara/System/Kernel/Core/include/mcs_action.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/stdlib.h:
-
-/Pylovara/System/Kernel/Core/Lib/mcs_proton.c:
-
-/usr/include/stdio.h:
-
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/include/endian.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/posix1_lim.h:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/include/features.h:
-
-/usr/include/bits/environments.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/math.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/sys/types.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
-
-/usr/include/bits/posix_opt.h:
+/Pylovara/System/Kernel/Core/Lib/mcs_argument.c:
 
 /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h:
 
-/Pylovara/System/Kernel/Core/Lib/mcs_argument.c:
+/usr/include/sys/types.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/wordsize.h:
+
+/Pylovara/System/Kernel/Core/Lib/mcs_warp.c:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/Pylovara/System/Kernel/Core/Lib/mcs_proton.c:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/bits/floatn-common.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_argument.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/types/sigval_t.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/alloca.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/types/__sigval_t.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/strings.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_eingaben.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+
+/usr/include/bits/siginfo-consts.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_proton.h:
+
+/Pylovara/System/Kernel/Core/Logic/mcs_token.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/Pylovara/System/Kernel/Core/Lib/mcs_action.c:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_action.h:
+
+/usr/include/bits/signum-generic.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/sigstksz.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/endian.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_feed.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/bits/siginfo-arch.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/linux/limits.h:
+
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/types/idtype_t.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/bits/pthread_stack_min.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
+
+/usr/include/stdlib.h:
+
+/Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/timesize.h:
+
+/Pylovara/System/Kernel/Core/Lib/mcs_feed.c:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_transaktion.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_protein.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_warp.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_runner.h:
+
+/Pylovara/System/Kernel/Core/include/mcs_semantics.h:
+
+/usr/include/bits/confname.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/signal_ext.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/bits/signum-arch.h:
+
+/usr/include/bits/sigevent-consts.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/types/stack_t.h:
+
+/usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/ss_flags.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/types/sig_atomic_t.h:
+
+/usr/include/bits/types/sigevent_t.h:
+
+/usr/include/bits/types/siginfo_t.h:
+
+/usr/include/bits/unistd_ext.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/sys/wait.h:
+
+/Pylovara/System/Kernel/Core/Lib/mcs_protein.c:
+
+/usr/include/unistd.h:

@@ -1,17 +1,35 @@
+# Info Zettel für mich MCS Tests
+
 skelett build test:
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
 
 feed speicher integrations test :
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs test.mcs
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
+
+echo test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs
+
+update test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs
 
 Semantic Test für Wahrheiten :
-cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/test_semantic_dispatcher.mcs
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
 
-paralell
-cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/test_parallel.mcs
+paralell :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs
+
+parallel mit argumenten zum warten :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
 
 
-# Datenbank:
-cat /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_warp.h main.c CMakeLists.txt test_semantic_dispatcher.mcs test_parallel.mcs
+
+# Datenbank: (ich bau noch einen abhängigkeits cat baum)
+cat /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_warp.h main.c CMakeLists.txt
+
+
+Test/s:
+
+cd /Pylovara/System/Kernel/Core/mcscodes/ && cat test_semantic_dispatcher.mcs test_parallel_wait.mcs test_parallel.mcs test1_update.mcs test1_echo.mcs test.mcs
+
 
 ###################################################################################

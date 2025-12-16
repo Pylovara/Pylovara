@@ -1,5 +1,4 @@
 // Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
-// info : linear gedacht
 #include "mcs_runner.h"
 #include "mcs_feed.h"
 #include "mcs_semantics.h"
@@ -8,6 +7,36 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/wait.h>
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+    long work = user + nice + system;
+    static long prev_total = 0, prev_work = 0;
+
+    if (prev_total > 0) {
+        long delta_total = total - prev_total;
+        long delta_work = work - prev_work;
+        if (delta_total > 0) {
+            ret = (int)(100 * delta_work / delta_total);
+        }
+    }
+    prev_total = total;
+    prev_work = work;
+        }
+
+        fclose(f);
+        return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
 
 int mcs_run_transaktion(mcs_transaktion_t* t) {
     if (!t || !t->is_valid) return MCS_ERR_SYNTAX;
@@ -99,10 +128,16 @@ int mcs_run_action(mcs_action_t* a) {
         return MCS_ERR_SYNTAX;
     }
 
+    // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+        double delay_sec = mcs_resolve_value(&a->arg, 0); // später: get_cpu_load()
+        sleep((unsigned int)delay_sec);
+    }
+
     printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
            a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
 
-    // 🔹 Blankernenner → Feed
+    // 🔹 2. Blankernenner → Feed setzen
     if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
         FILE* p = popen(a->blankernenner + 1, "r");
         if (p) {
@@ -116,12 +151,7 @@ int mcs_run_action(mcs_action_t* a) {
         }
     }
 
-    // 🔹 ARG_TIME
-    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
-        sleep((unsigned int)a->arg.value);
-    }
-
-    // 🔹 System-Command
+    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
     if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
         const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
         char cmd[256];

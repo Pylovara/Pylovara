@@ -1,0 +1,276 @@
+####################################################################
+@dev-nr: 09
+@dev-nr: parallellargument
+####################################################################
+
+Um Asyncronität erst gar nicht systemweit als flag einbauen zu müssen ,
+wird parallelität selbst immer mit sofort ausgeführt verstanden
+
+Stichpunkt :
+
+Asyncronität nicht als globales System-Flag,
+sondern als kontextuelle Entscheidung, gesteuert durch das Vorhandensein von Argumenten.
+
+das ding ist das mcs die parallelität durch argumente steuert
+, somit erspar ich mir viele debugg sessions für viele issues von
+geräte typen , den nicht jede cpu ist gut ....
+
+dabei denke ich an taiwan an den glas rollingen , wo immer
+viele bereiche kaputt sind und somit die chips eingeordnet werden
+
+
+deswegen gehe ich im runner so vor
+
+// 🔹 1. Warte, falls ARG_TIME gesetzt
+if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+    double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+    sleep((unsigned int)delay_sec);  // später: nanosleep() für ms
+}
+
+und dann erst
+
+// 🔹 2. Für ;;: Feed-Setzen
+if (/* ist ;; */ && a->blankernenner && a->feed.id > 0) {
+    mcs_feed_set_from_blankernenner(a->feed.id, a->blankernenner);
+}
+
+// 🔹 3. Für ¶=: Prozess starten
+if (/* ist ¶= */) {
+    pid_t pid = fork();
+    if (pid == 0) {
+        mcs_run_action_body(a);  // ohne erneuten sleep!
+        exit(0);
+    }
+}
+
+
+weil Der Timer ist Teil der Aktion, nicht des Dispatchers —
+- Keine logik-duplikation,
+- Kein race-condition,
+- Volle Kontrolle durch den Autor!
+
+
+das ding ist halt hinsichtlich
+- & in Bash → unsicher, Zombie-Prozesse, kein Timeout
+- async/await in JS → implizite Event-Loop, schwer debuggbar
+- Threads in C → Locks, Deadlocks, Race Conditions
+
+und
+
+««tN ist - deterministisch- vorhersagbar- Hardware-freundlich
+
+somit löse ich sofort im designe selbst die hardware probleme
+die enstehen können bei verscheidenen geräten , nicht jeder
+hat einen hochleistungsrechner mit über 8 kernen und im betrieb
+von os systemen muss mcs mit der restleistung arbeiten , ohne
+dabei gamer oder entwickler mit systemleistungen zu stressen
+
+ alter code abschnitt im /Pylovara/System/Kernel/Core/Lib/mcs_runner.c
+
+
+int mcs_run_protein(mcs_protein_t* p) {
+    if (!p) return MCS_ERR_SYNTAX;
+
+    if (p->wahrheit == WAHR_IF && p->then_branch) {
+        return mcs_run_protein(p->then_branch);
+    }
+    if (p->wahrheit == WAHR_ELSE && p->else_branch) {
+        return mcs_run_protein(p->else_branch);
+    }
+    if (p->action) {
+        return mcs_run_action(p->action);
+    }
+    return MCS_OK;
+}
+
+int mcs_run_action(mcs_action_t* a) {
+    if (!a || !a->cmd) {
+        fprintf(stderr, "[RUN] Action NULL\n");
+        return MCS_ERR_SYNTAX;
+    }
+
+    printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+           a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+    // 🔹 Blankernenner → Feed
+    if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+        FILE* p = popen(a->blankernenner + 1, "r");
+        if (p) {
+            char buf[64] = {0};
+            if (fgets(buf, sizeof(buf), p)) {
+                buf[strcspn(buf, "\n")] = 0;
+                mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+            }
+            pclose(p);
+        }
+    }
+
+
+
+neuer code abschnitt
+
+int mcs_run_action(mcs_action_t* a) {
+        if (!a || !a->cmd) {
+            fprintf(stderr, "[RUN] Action NULL\n");
+            return MCS_ERR_SYNTAX;
+        }
+
+        // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+        if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+            double delay_sec = mcs_resolve_value(&a->arg, 0); // später: get_cpu_load()
+            sleep((unsigned int)delay_sec);
+        }
+
+        printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+               a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+        // 🔹 2. Blankernenner → Feed setzen
+        if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+            FILE* p = popen(a->blankernenner + 1, "r");
+            if (p) {
+                char buf[64] = {0};
+                if (fgets(buf, sizeof(buf), p)) {
+                    buf[strcspn(buf, "\n")] = 0;
+                    mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                    printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+                }
+                pclose(p);
+            }
+        }
+
+        // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
+        if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+            const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+            char cmd[256];
+            if (a->blankernenner && feed_val) {
+                snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+            } else if (a->arg1) {
+                snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+            } else {
+                snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+            }
+            printf("[EXEC] %s\n", cmd);
+            return system(cmd);
+        }
+
+        return MCS_OK;
+    }
+
+änderung :
+
+- sleep() vor dem Rest → Argument wirkt vor der Aktion
+- mcs_resolve_value(&a->arg, 0) → später mit cpu-last erweitrbar
+- alles andere bleibt identish — sicher, debugbar, stabil.
+
+ich erhoffe mir dadurch minimalismus mit maximaler auswirkung
+
+und ich füge als hilfsoption oben im head des runner noch
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+        long work = user + nice + system;
+        static long prev_total = 0, prev_work = 0;
+
+        if (prev_total > 0) {
+            long delta_total = total - prev_total;
+            long delta_work = work - prev_work;
+            if (delta_total > 0) {
+                ret = (int)(100 * delta_work / delta_total);
+            }
+        }
+        prev_total = total;
+        prev_work = work;
+    }
+
+    fclose(f);
+    return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
+
+vorsichthalber für cpu problematiken , später auf fpga kein thema
+aber mit der heutigen alten technik , besser
+
+
+dann noch im action : double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+
+zu double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+
+
+macht die wartezeit adaptiv
+
+das problem ist nur ob das gerade sinn macht
+
+Sinn von get_cpu_load() → Adaptive Argumente
+
+double mcs_resolve_value(const mcs_argument_t* a, int system_load) {
+    if (a->unit == UNIT_PERCENT) {
+        double scale = 1.0 - (system_load / 200.0); // bei 90% Load → 55% erlaubt
+        return a->value * scale;
+    }
+    return a->value;
+}
+
+ich würde die option später in erwägung ziehen wenn sie relevanter wird
+
+und bis dahin
+
+double delay_sec = mcs_resolve_value(&a->arg, 0);  // ← neutrale Last (keine Skalierung)
+
+vorziehen
+
+
+im nachgang hab ich es doch implemntiert , nicht den cpu load aber alles andere (siehe Lib und Include ordner mit mcs_runner.c und h )
+
+kurz validieren lassen durch gpt 5.2 und Grok/i
+
+✅ ;; »[(1)¨date¨]«««t1
+
+mcs_run_action() mit ARG_TIME
+
+Wartezeit vor date-Ausführung
+✅ `¶= »['echo'
+
+...]«««t2`
+
+fork() + sleep(2) + echo
+✅ ¨(1)¨
+
+mcs_feed_get(1)
+
+Wert wird korrekt ersetzt
+✅ ° [...] ¶ [...] ¶¶ [...]
+
+mcs_run_transaktion() mit Bedingung
+
+Wenn/Nicht-Logik implementiert
+✅ NULL-Sicherheit
+
+if (p && p->action && p->then_branch)
+
+Kein Speicherzugriffsfehler mehr
+✅ UTF-8-Logik
+
+«««, ¶, °, ø, þ, ⊕
+
+Alle Symbole korrekt erkannt
+
+
+
+
+
+
+
+
+
+
+####################################################################

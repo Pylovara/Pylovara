@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Pylovara/System/Kernel/Core/Lib/mcs_argument.c" "CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c" "CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_feed.c" "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o.d"
+  "/Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c" "CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_protein.c" "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_proton.c" "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o.d"
   "/Pylovara/System/Kernel/Core/Lib/mcs_runner.c" "CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o" "gcc" "CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o.d"

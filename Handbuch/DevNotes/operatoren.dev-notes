@@ -91,7 +91,110 @@ in den kernel lex , verbessert zu erklären ...
 ####################################################################
 
 
+  Kein AST, kein Stack-Interpreter
+   ! Operatoren sind keine Funktionen, sondern semantische Marker in der Transaktionskette.
+
+  Operatoren binden an Proteine, nicht an Ausdrücke
+   Beispiel:
+
+   ° ['$sensor_temp']
+     ¶ ['alert'|'critical'|{’level’|¨90¨}]
+     ¶¶ ['cool'|{’fan’|¨100%¨}]
+
+   ! ° steht vor einem Protein → es wird nicht ausgeführt, sondern ausgewertet (via mcs_evaluate_condition)
+   ! Wenn MCS_FALSE → dann ¶ → Wenn MCS_TRUE , dann ¶¶
+
+   ^ und ſ sind passive Annotationen
+   - ^ → markiert Stelle, an der *bei Fehler* ein Recovery-Protein startet
+     → z. B. ^ ['$log_error'|¨"trans fail: $errno"¨]
+   - ſ → markiert Daten, die *nach Abschluss* gelöscht werden müssen
+     → z. B. ſ (42) → Feed (42) nach Transaktionsende mit mcs_feed_clear (42) bereinigen
+
+  < > erfordern zwei Operanden (Feed-basiert)
+   Syntax:
+
+   »['$get'|¨temp¨|(1)¨cat /sys/class/thermal/temp¨]«
+   < (1)(2)  # (1) < (2)? — (2) müsste vorher gesetzt sein, z. B. (2) = "80000"
+     ¶ ['$cool'|{’fan’|¨100%¨}]
+
+   ! Aber: Keine Inline-Arithmetik!
+   ! Stattdessen: mcs_evaluate_comparison(int id_a, int id_b, mcs_op_type_t op)
+
+mcs_operatoren.h skizze
 
 
+// include/mcs_operatoren.h
+#ifndef MCS_OPERATOREN_H
+#define MCS_OPERATOREN_H
+
+#include "mcs_protein.h"
+#include "mcs_feed.h"
+
+typedef enum {
+    MCS_OP_NONE = 0,
+    MCS_OP_WHEN_NOT,    // °
+    MCS_OP_WHEN_LT,     // <
+    MCS_OP_WHEN_GT,     // >
+    MCS_OP_TRANS_ERROR, // ^
+    MCS_OP_DATA_RESIDUE // ſ
+} mcs_op_type_t;
+
+// Semantischer Operator – *Marker*, kein ausführbarer Code
+typedef struct {
+    mcs_op_type_t type;
+    mcs_protein_t* condition;   // ['$sensor']
+    mcs_protein_t* on_true;     // ¶-Zweig
+    mcs_protein_t* on_false;    // ¶¶-Zweig
+    int feed_id_a;              // für <: linker Operand
+    int feed_id_b;              // für >: rechter Operand
+    int residue_feed_id;        // für ſ: Feed, der nach Transaktion gelöscht wird
+} mcs_operator_t;
+
+// Öffentliche API
+mcs_operator_t* mcs_parse_operator_from_protein(mcs_protein_t* p);
+int mcs_evaluate_operator(mcs_operator_t* op);
+void mcs_free_operator(mcs_operator_t* op);
+
+// Hilfsfunktionen
+int mcs_feed_compare(int id_a, int id_b, mcs_op_type_t op); // <, >
+mcs_truth_t mcs_evaluate_negation(mcs_protein_t* cond);      // °
+
+#endif // MCS_OPERATOREN_H
+
+
+
+mcs_operatoren.c — Kern-Ideen
+
+- mcs_parse_operator_from_protein
+  durchläuft ein Protein und extrahiert Operator-Marker -< baut mcs_operator_t auf
+  ! nutzt bereits existierende mcs_evaluate_condition aus mcs_semantics.c
+
+- mcs_evaluate_operator
+  - bei MCS_OP_WHEN_NOT: ruft mcs_evaluate_negation führt on_true / on_false aus
+  - bei MCS_OP_WHEN_LT/GT: ruft mcs_feed_compare -< führt Zweige aus
+  - bei MCS_OP_TRANS_ERROR: registriert Protein als Recovery-Handler (in Runner-Context)
+  -  be MCS_OP_DATA_RESIDUE: merkt sich residue_feed_id → mcs_feed_clear() im mcs_run_transaktion -Epilog
+
+- mcs_feed_compare
+  liest Feeds als Zahlen (atoi/atof), vergleicht  gibt 1/0
+
+Wichtig  ^ und ſ verändern keinen Kontrollfluss , sind Annotationen für Runner/Transaktionsmanager.
+
+---
+
+Integration mcs_runner.c (geplant)
+
+In mcs_run_transaktion:
+
+// Nach Ausführung aller Proteine:
+for (int i = 0; i < t->operator_count; i++) {
+    if (t->operators[i]->type == MCS_OP_DATA_RESIDUE) {
+        mcs_feed_clear(t->operators[i]->residue_feed_id);
+    }
+}
+// Bei Fehler:
+if (res < 0 && t->error_handler) {
+    mcs_run_protein(t->error_handler); // ^-Protein
+}
 
 

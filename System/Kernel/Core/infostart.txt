@@ -1,35 +1,73 @@
 # Info Zettel für mich MCS Tests
 
-skelett build test:
+#skelett build test:
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
 
-feed speicher integrations test :
+#feed speicher integrations test :
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
 
-echo test :
+#echo test :
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs
 
-update test :
+#update test :
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs
 
-Semantic Test für Wahrheiten :
+#Semantic Test für Wahrheiten :
 cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
 
-paralell :
+#paralell :
 cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs
 
-parallel mit argumenten zum warten :
+#parallel mit argumenten zum warten :
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
 
+#Operatoren logik :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
+
+-----------------------------------------------------------------------------------
+
+# Lab/ bereich
+cat /Pylovara/System/Kernel/Core/Lab/test_action.c /Pylovara/System/Kernel/Core/Lab/test_if.c /Pylovara/System/Kernel/Core/Lab/test_lexer.c /Pylovara/System/Kernel/Core/Lab/test_trans.c
+
+# Logic/ bereich
+cat /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/Logic/mcs_token.h
+
+# Lib/ könnte relevant sein
+cat /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_action.c
+
+# include/ bereich
+cat /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs.h
+
+# Core/ bereich
+cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt
 
 
 # Datenbank: (ich bau noch einen abhängigkeits cat baum)
-cat /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_warp.h main.c CMakeLists.txt
+cat /Pylovara/System/Kernel/Core/include/mcs.h /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_warp.h main.c CMakeLists.txt /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/include/mcs_operatoren.h
 
 
-Test/s:
+# Test MCS dateien:
 
-cd /Pylovara/System/Kernel/Core/mcscodes/ && cat test_semantic_dispatcher.mcs test_parallel_wait.mcs test_parallel.mcs test1_update.mcs test1_echo.mcs test.mcs
+cd /Pylovara/System/Kernel/Core/mcscodes/ && cat test_semantic_dispatcher.mcs test_parallel_wait.mcs test_parallel.mcs test1_update.mcs test1_echo.mcs test.mcs test_operatoren.mcs
+
+-----------------------------------------------------------------------------------
+
+# Manchmal brauchs ein cache reset damit ein build funktioniert , wegen reste
+
+cd /Pylovara/System/Kernel/Core/build
+rm -rf CMakeCache.txt CMakeFiles/ cmake_install.cmake *.a *.o mcs test_*
+make clean
+cmake ..
+make -j$(nproc)
 
 
 ###################################################################################
+
+# Lib/ könnte relevant sein
+cat /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_action.c
+
+# include/ bereich
+cat /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs.h
+
+# Core/ bereich
+cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt

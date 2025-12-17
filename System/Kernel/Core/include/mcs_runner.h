@@ -11,6 +11,7 @@
 #define MCS_ERR_SECURITY    -3
 #define MCS_ERR_TIMEOUT     -4
 #define MCS_ERR_FEED        -5
+#define MCS_ERR_SYSTEM      -6   // ← NEU für fork/exec-Fehler
 
 // Public API
 int mcs_run_transaktion(mcs_transaktion_t* t);

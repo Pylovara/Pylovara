@@ -1,6 +1,9 @@
-CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o: \
- /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c \
- /usr/include/stdc-predef.h /usr/include/stdlib.h \
+CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o: \
+ /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c \
+ /usr/include/stdc-predef.h \
+ /Pylovara/System/Kernel/Core/include/mcs_operatoren.h \
+ /Pylovara/System/Kernel/Core/include/mcs_protein.h \
+ /Pylovara/System/Kernel/Core/include/mcs_action.h /usr/include/stdlib.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
@@ -26,16 +29,25 @@ CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o: \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/strings.h \
- /Pylovara/System/Kernel/Core/include/mcs_transaktion.h \
- /Pylovara/System/Kernel/Core/Logic/mcs_token.h \
- /Pylovara/System/Kernel/Core/include/mcs_protein.h \
- /Pylovara/System/Kernel/Core/include/mcs_action.h \
+ /usr/include/strings.h /Pylovara/System/Kernel/Core/Logic/mcs_token.h \
  /Pylovara/System/Kernel/Core/include/mcs_feed.h \
  /Pylovara/System/Kernel/Core/include/mcs_argument.h \
  /Pylovara/System/Kernel/Core/include/mcs_proton.h \
  /Pylovara/System/Kernel/Core/include/mcs_warp.h \
  /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h \
- /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h \
- /Pylovara/System/Kernel/Core/include/mcs_operatoren.h \
- /Pylovara/System/Kernel/Core/include/mcs_semantics.h
+ /Pylovara/System/Kernel/Core/include/mcs_semantics.h \
+ /Pylovara/System/Kernel/Core/include/mcs_feed.h \
+ /Pylovara/System/Kernel/Core/include/mcs_semantics.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h

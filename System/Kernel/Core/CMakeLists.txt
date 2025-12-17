@@ -30,7 +30,22 @@ set(SRC_LOGIC
 )
 
 # Bibliothek bauen (statisch)
-add_library(mcs_core STATIC ${SRC_LIB} ${SRC_LOGIC})
+#add_library(mcs_core STATIC ${SRC_LIB} ${SRC_LOGIC})
+add_library(mcs_core STATIC
+    Lib/mcs_action.c
+    Lib/mcs_argument.c
+    Lib/mcs_feed.c
+    Lib/mcs_protein.c
+    Lib/mcs_proton.c
+    Lib/mcs_warp.c
+    Lib/mcs_wahrheiten.c
+    Lib/mcs_semantics.c
+    Lib/mcs_operatoren.c   # ← VOR mcs_transaktion.c verschoben
+    Lib/mcs_transaktion.c
+    Lib/mcs_eingaben.c
+    Lib/mcs_runner.c
+    Logic/mcs_lexer.c
+)
 
 # Test-Programme
 add_executable(test_lexer Lab/test_lexer.c)
@@ -51,5 +66,7 @@ target_link_libraries(test_trans mcs_core)
 
 add_executable(mcs main.c)
 target_link_libraries(mcs mcs_core)
+
+
 
 

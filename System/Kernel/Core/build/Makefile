@@ -386,6 +386,30 @@ Lib/mcs_feed.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.s
 .PHONY : Lib/mcs_feed.c.s
 
+Lib/mcs_operatoren.o: Lib/mcs_operatoren.c.o
+.PHONY : Lib/mcs_operatoren.o
+
+# target to build an object file
+Lib/mcs_operatoren.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+.PHONY : Lib/mcs_operatoren.c.o
+
+Lib/mcs_operatoren.i: Lib/mcs_operatoren.c.i
+.PHONY : Lib/mcs_operatoren.i
+
+# target to preprocess a source file
+Lib/mcs_operatoren.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.i
+.PHONY : Lib/mcs_operatoren.c.i
+
+Lib/mcs_operatoren.s: Lib/mcs_operatoren.c.s
+.PHONY : Lib/mcs_operatoren.s
+
+# target to generate assembly for a file
+Lib/mcs_operatoren.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.s
+.PHONY : Lib/mcs_operatoren.c.s
+
 Lib/mcs_protein.o: Lib/mcs_protein.c.o
 .PHONY : Lib/mcs_protein.o
 
@@ -640,6 +664,9 @@ help:
 	@echo "... Lib/mcs_feed.o"
 	@echo "... Lib/mcs_feed.i"
 	@echo "... Lib/mcs_feed.s"
+	@echo "... Lib/mcs_operatoren.o"
+	@echo "... Lib/mcs_operatoren.i"
+	@echo "... Lib/mcs_operatoren.s"
 	@echo "... Lib/mcs_protein.o"
 	@echo "... Lib/mcs_protein.i"
 	@echo "... Lib/mcs_protein.s"

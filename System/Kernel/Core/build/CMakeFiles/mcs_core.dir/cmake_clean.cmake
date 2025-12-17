@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o"
   "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o.d"
+  "CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o"
+  "CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o"
   "CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o"

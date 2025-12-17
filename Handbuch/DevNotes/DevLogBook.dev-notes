@@ -3559,7 +3559,6 @@ moment native c++ hyprctl integriert
 
 
 
-####################################################################
 #####################################################################################
 #####################################################################################
 #####################################################################################
@@ -3568,3 +3567,4996 @@ moment native c++ hyprctl integriert
 #####################################################################################
 #####################################################################################
 #####################################################################################
+#####################################################################################
+
+[15:16:09|Mi Dez 17]
+
+Heute sind die restlichen operand operatoren dran
+
+ ┌[bandino@dev][17:52:15|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $ # Info Zettel für mich MCS Tests         # Info Zettel für mich MCS Tests
+
+skelett build test:
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
+
+feed speicher integrations test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
+
+echo test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs
+
+update test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs
+
+Semantic Test für Wahrheiten :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
+
+paralell :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs
+
+parallel mit argumenten zum warten :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
+
+Operatoren logik :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
+bash: skelett: Kommando nicht gefunden
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+bash: feed: Kommando nicht gefunden
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+test :
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+bash: update: Kommando nicht gefunden
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+bash: Semantic: Kommando nicht gefunden
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+bash: paralell: Kommando nicht gefunden
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+bash: parallel: Kommando nicht gefunden
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+bash: Operatoren: Kommando nicht gefunden
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+In Datei, eingebunden von /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:7:
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:3: Fehler: abweichende Typen für »mcs_operator_t«; der bestehende Typ ist »struct <anonym>«
+   26 | } mcs_operator_t;
+      |   ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:26:1: Anmerkung: vorherige Deklaration von »mcs_operator_t« vom Typ »mcs_operator_t« {alias »struct mcs_operator«}
+   26 | } mcs_operator_t;
+      | ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_parse_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: Implizite Deklaration der Funktion »mcs_lexer_peek«; meinten Sie »mcs_lexer_next«? [-Wimplicit-function-declaration]
+   74 |             mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+      |                                  ^~~~~~~~~~~~~~
+      |                                  mcs_lexer_next
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:74:34: Fehler: ungültige Initialisierung
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:79:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   79 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:94:34: Fehler: ungültige Initialisierung
+   94 |             mcs_token_t branch = mcs_lexer_peek(lex);
+      |                                  ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:99:22: Fehler: unverträgliche Typen bei Zuweisung an Typ »mcs_token_t« von Typ »int«
+   99 |             branch = mcs_lexer_peek(lex);
+      |                      ^~~~~~~~~~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:118:47: Fehler: Zuweisung an »mcs_operator_t *« {alias »struct mcs_operator *«} von inkompatiblem Zeigertyp »mcs_operator_t *« [-Wincompatible-pointer-types]
+  118 |             t->operators[t->operator_count++] = op;
+      |                                               ^
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c: In Funktion »mcs_free_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c:144:39: Fehler: Übergabe des Arguments 1 von »mcs_operator_free« von inkompatiblem Zeigertyp [-Wincompatible-pointer-types]
+  144 |         mcs_operator_free(t->operators[i]);
+      |                           ~~~~~~~~~~~~^~~
+      |                                       |
+      |                                       mcs_operator_t * {alias struct mcs_operator *}
+/Pylovara/System/Kernel/Core/include/mcs_operatoren.h:30:40: Anmerkung: »mcs_operator_t *« erwartet, aber Argument hat Typ »mcs_operator_t *« {alias »struct mcs_operator *«}
+   30 | void mcs_operator_free(mcs_operator_t* op);
+      |                        ~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:205: CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+
+ ┌[bandino@dev][17:52:27|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ cat /Pylovara/System/Kernel/Core/include/mcs_operatoren.h
+// include/mcs_operatoren.h — v3.0: Operator-Semantik, linear, feed-basiert
+#ifndef MCS_OPERATOREN_H
+#define MCS_OPERATOREN_H
+
+#include "mcs_protein.h"
+#include "mcs_semantics.h"   // + DAMIT mcs_truth_t bekannt ist
+
+typedef enum {
+    MCS_OP_NONE = 0,
+    MCS_OP_WHEN_NOT,    // °
+    MCS_OP_WHEN_LT,     // <
+    MCS_OP_WHEN_GT,     // >
+    MCS_OP_TRANS_ERROR, // ^
+    MCS_OP_DATA_RESIDUE // ſ
+} mcs_op_type_t;
+
+typedef struct {
+    mcs_op_type_t type;
+    union {
+        struct { mcs_protein_t* cond; } not;
+        struct { int left_id; int right_id; } cmp;
+        int residue_id;
+    } data;
+    mcs_protein_t* then_branch;
+    mcs_protein_t* else_branch;
+} mcs_operator_t;
+
+// Public API — strikt linear, kein malloc im Header
+mcs_operator_t* mcs_operator_new(void);
+void mcs_operator_free(mcs_operator_t* op);
+
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type);
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p);
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b);
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id);
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb);
+
+// # minus mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op);
+
+#endif // MCS_OPERATOREN_H
+
+ ┌[bandino@dev][17:52:44|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $
+cd /Pylovara/System/Kernel/Core/mcscodes/ && cat test_semantic_dispatcher.mcs test_parallel_wait.mcs test_parallel.mcs test1_update.mcs test1_echo.mcs test.mcs test_operatoren.mcs
+test1_echo.mcs
+test1_update.mcs
+test.mcs
+test_operatoren.mcs
+test_parallel.mcs
+test_parallel_wait.mcs
+test_semantic_dispatcher.mcs
+¢!
+# Argument ° Wenn/Sofort | unausführbares protein terminal open |
+# Wahrheiten Logik ¶Wenn ¶¶Kann Linear mit unausführbaren Protein |
+° ['$terminal']
+   ¶ ['notify-send'|'OFFLINE'|'Terminal nicht aktiv']
+   ¶¶ ['notify-send'|'ONLINE'|'Terminal läuft']
+!¢
+¢!
+»['echo'|"1. Hauptprozess startet"]«
+    ;; »['exec'|'$date']«««t1
+    ¶= »['echo'|"2. Parallel-Prozess"]«««t2
+»['echo'|"3. Hauptprozess läuft weiter"]«
+»['echo'|"Feed 1: "|¨(1)¨]«
+!¢
+¢!
+# SystemCMD | Blankernenner | Parallel Transport & Verarbeutng | Argument ««t1 wait
+# Feed cache + Feed im Parallel prozessing
+»['echo'|"1. Hauptprozess startet"]«
+;; »['exec'|(1)'$date']«««t1
+¶= »['echo'|(2)"2. Parallel-Prozess"]«««t2
+»['echo'|"3. Hauptprozess läuft weiter"]«
+»['echo'|"Feed 1: "|¨(1)¨|¨(2)¨]«
+!¢
+¢!
+# SystemCMD | Wahrheit ¶/Wenn (Linear) | Aktions Verdrahtung
+»['sudo pacman -Syyu']
+    ¶ ['$terminal']«
+!¢
+
+
+¢!
+# SystemCMD | Print | Aktion | Transaktion
+    »['echo'|"test1.mcs wurde korrekt ausgeführt"]«
+!¢
+¢!
+# Feed transport | Blankernenner | SystemCMD | Argument ««t1 |
+»['pgrep'|¨firefox¨|(1)¨$pgrep firefox¨]«
+»['kill'|¨(1)¨]«««t1
+»['echo'|"Firefox (1) beendet"]«
+!¢
+¢!
+# Schwerste code bis lang
+° ['$terminal']
+  ¶ ['notify-send'|'OFFLINE']
+  ¶¶ ['notify-send'|'ONLINE']
+
+»['echo'|¨30¨|(1)]«
+»['echo'|¨25¨|(2)]«
+< (1)(2)
+  ¶ ['echo'|'WARN: 30 < 25? Nein!']
+  ¶¶ ['echo'|'OK: 30 ≥ 25']
+
+ſ (1)
+ſ (2)
+!¢
+
+ ┌[bandino@dev][17:52:58|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/mcscodes]> $
+# Datenbank: (ich bau noch einen abhängigkeits cat baum)
+cat /Pylovara/System/Kernel/Core/include/mcs.h /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_warp.h main.c CMakeLists.txt /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/Logic/mcs_token.h
+#ifndef MCS_H
+#define MCS_H
+
+// Public structs (opaque)
+typedef struct mcs_ast mcs_ast_t;
+
+// Public API
+mcs_ast_t*  mcs_parse_file(const char* path);
+mcs_ast_t*  mcs_parse_string(const char* src);
+int         mcs_run_ast(mcs_ast_t* ast);
+void        mcs_free_ast(mcs_ast_t* ast);
+
+// Fehlercodes (öffentlich)
+#define MCS_OK               0
+#define MCS_ERR_SYNTAX      -1
+#define MCS_ERR_IO          -2
+#define MCS_ERR_SECURITY    -3
+
+#endif
+// Lib/mcs_action.c — v3.0 Parser-only (Runner-Logik kommt später!)
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_action.h"
+#include "mcs_argument.h"
+
+mcs_action_t* mcs_parse_action(const char* input) {
+    if (!input) return NULL;
+
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return NULL;
+
+    mcs_action_t* a = calloc(1, sizeof(mcs_action_t));
+    if (!a) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
+
+    mcs_token_t tok;
+
+    // »
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ACTION_START) goto fail;
+
+    // [
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_PROTEIN_OPEN) goto fail;
+
+    // 'cmd'
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_STR_SGL_QUOTE) goto fail;
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ID) goto fail;
+    a->cmd = token_to_string(tok);
+
+    // |
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_SEP) goto fail;
+
+    // (1) — optional
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_FEED_OPEN) {
+        tok = mcs_lexer_next(lex);
+        a->feed.id = extract_number(tok);
+        a->feed.is_set = (a->feed.id > 0);
+        tok = mcs_lexer_next(lex); // )
+    }
+
+    // ¨...¨ oder "..." — arg1 / blankernenner
+    if (tok.token_type == TOK_BLANKERNER_QUOTE) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ID || tok.token_type == TOK_LITERAL) {
+            a->blankernenner = token_to_string(tok);
+        }
+    } else if (tok.token_type == TOK_STR_DBL_QUOTE) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ID || tok.token_type == TOK_NUMBER) {
+            a->arg1 = token_to_string(tok);
+        }
+    }
+
+    // ]
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_PROTEIN_CLOSE) goto fail;
+
+    // « — Aktion-Ende
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ACTION_END) goto fail;
+
+    // ✅ JETZT: Argumente *parsen* — aber NICHT auswerten!
+    mcs_parse_argument(lex, &a->arg);
+    if (!mcs_validate_argument(&a->arg)) {
+        goto fail;
+    }
+
+    mcs_lexer_free(lex);
+    return a;
+
+    fail:
+    mcs_lexer_free(lex);
+    if (a) {
+        free(a->cmd);
+        free(a->arg1);
+        free(a->blankernenner);
+        free(a);
+    }
+    return NULL;
+}
+
+void mcs_free_action(mcs_action_t* a) {
+    if (!a) return;
+    free(a->cmd);
+    free(a->arg1);
+    free(a->blankernenner);
+    free(a);
+}
+// Lib/mcs_argument.c — v3.0, mit Kontext und Sicherheitslimits
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <limits.h>   // Fehlte! Für INT_MIN, INT_MAX
+#include "mcs_argument.h"
+
+int mcs_parse_argument(mcs_lexer_t* lex, mcs_argument_t* out) {
+    if (!lex || !out) return 0;
+    *out = (mcs_argument_t){0};
+
+    mcs_token_t tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_OP_MARK) return 0;  // «««
+
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_ARG_MINUS)   { out->type = ARG_MINUS;   }
+    else if (tok.token_type == TOK_ARG_PLUS){ out->type = ARG_PLUS;    }
+    else if (tok.token_type == TOK_ARG_MUL) { out->type = ARG_MUL;     }
+    else if (tok.token_type == TOK_ARG_DIV) { out->type = ARG_DIV;     }
+    else if (tok.token_type == TOK_ARG_PERCENT){ out->type = ARG_PERCENT; out->unit = UNIT_PERCENT; }
+    else if (tok.token_type == TOK_ID && tok.length >= 2) {
+        const char* s = tok.literal;
+        if (s[0] == 't') {
+            out->type = ARG_TIME;
+            out->unit = UNIT_SECONDS;
+            out->value = atof(s + 1);
+        } else if (s[0] == 'r') {
+            out->type = ARG_REBOOT;
+            out->unit = UNIT_SECONDS;
+            out->value = atof(s + 1);
+        } else if (s[0] == '%') {
+            out->type = ARG_PERCENT;
+            out->unit = UNIT_PERCENT;
+            out->value = atof(s + 1);
+        }
+    }
+
+    // Sicherheitslimits
+    switch (out->type) {
+        case ARG_TIME: case ARG_REBOOT:
+            out->min_value = 0;
+            out->max_value = 86400;  // max 24h (später konfigurierbar)
+            break;
+        case ARG_PERCENT:
+            out->min_value = 0;
+            out->max_value = 100;
+            break;
+        default:
+            out->min_value = INT_MIN;
+            out->max_value = INT_MAX;
+    }
+
+    return mcs_validate_argument(out);
+}
+
+int mcs_validate_argument(const mcs_argument_t* a) {
+    if (!a) return 0;
+    if (a->value < a->min_value || a->value > a->max_value) return 0;
+    if (a->type == ARG_PERCENT && a->unit != UNIT_PERCENT) return 0;
+    if (a->type == ARG_TIME && a->unit != UNIT_SECONDS) return 0;
+    return 1;
+}
+
+// Context-Aware Value Resolution (z.B. bei hoher CPU-Last → %50 = 30%, nicht 50%)
+double mcs_resolve_value(const mcs_argument_t* a, int system_load) {
+    if (!a) return 0.0;
+    if (a->unit == UNIT_PERCENT) {
+        // Dynamische Skalierung: bei 90% Last → 50% = 30% erlaubt
+        double scale = 1.0 - (system_load / 200.0); // 0–100% Load → 1.0–0.5 Skalierung
+        return a->value * scale;
+    }
+    return a->value;
+}
+// Lib/mcs_feed.c — v3.0 RAM-gepuffert
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "mcs_feed.h"
+
+static mcs_feed_t feed_table[MCS_FEED_MAX] = {{0}};
+static int feed_is_initialized = 0;
+
+void mcs_feed_init(void) {
+    if (feed_is_initialized) return;
+    for (int i = 0; i < MCS_FEED_MAX; i++) {
+        feed_table[i].id = i;
+        feed_table[i].value = NULL;
+        feed_table[i].value_len = 0;
+        feed_table[i].is_set = 0;
+        feed_table[i].source = NULL;
+    }
+    feed_is_initialized = 1;
+    fprintf(stderr, "[FEED] RAM-Cache initialisiert (%d Einträge)\n", MCS_FEED_MAX);
+}
+
+int mcs_feed_set(int id, const char* value, const char* source) {
+    if (!feed_is_initialized) mcs_feed_init();
+    if (id < 0 || id >= MCS_FEED_MAX) return -1;
+
+    mcs_feed_t* f = &feed_table[id];
+    free(f->value);
+    f->value = value ? strdup(value) : NULL;
+    f->value_len = value ? strlen(value) : 0;
+    f->is_set = (value != NULL);
+    f->source = source ? strdup(source) : NULL;
+    return 0;
+}
+
+const char* mcs_feed_get(int id) {
+    if (!feed_is_initialized) return NULL;
+    if (id < 0 || id >= MCS_FEED_MAX) return NULL;
+    mcs_feed_t* f = &feed_table[id];
+    return f->is_set ? f->value : NULL;
+}
+
+void mcs_feed_clear(int id) {
+    if (!feed_is_initialized) return;
+    if (id < 0 || id >= MCS_FEED_MAX) return;
+    mcs_feed_t* f = &feed_table[id];
+    free(f->value);
+    free((void*)f->source);
+    f->value = NULL;
+    f->value_len = 0;
+    f->is_set = 0;
+    f->source = NULL;
+}
+
+void mcs_feed_reset_all(void) {
+    if (!feed_is_initialized) return;
+    for (int i = 0; i < MCS_FEED_MAX; i++) {
+        mcs_feed_clear(i);
+    }
+}
+
+void mcs_feed_dump(void) {
+    if (!feed_is_initialized) {
+        fprintf(stderr, "[FEED] Nicht initialisiert!\n");
+        return;
+    }
+    fprintf(stderr, "[FEED] Zustand:\n");
+    for (int i = 0; i < MCS_FEED_MAX; i++) {
+        if (feed_table[i].is_set) {
+            fprintf(stderr, "  (%d): '%s' ← '%s'\n",
+                    i, feed_table[i].value, feed_table[i].source);
+        }
+    }
+}
+// Lib/mcs_protein.c — v3.0 MVP: IF/ELSE container-basiert
+#include <stdlib.h>
+#include "mcs_protein.h"
+#include "mcs_wahrheiten.h"
+
+// 🔹 Forward-Deklaration für rekursive Nutzung
+static mcs_protein_t* mcs_parse_protein_from_lexer(mcs_lexer_t* lex);
+
+// 🔹 EINZIGE Implementierung von mcs_free_protein — KEINE DUPLIKATE!
+void mcs_free_protein(mcs_protein_t* p) {
+    if (!p) return;
+    if (p->action) mcs_free_action(p->action);
+    if (p->then_branch) mcs_free_protein(p->then_branch);
+    if (p->else_branch) mcs_free_protein(p->else_branch);
+    free(p);
+}
+
+mcs_protein_t* mcs_parse_protein(const char* input) {
+    if (!input) return NULL;
+
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return NULL;
+
+    mcs_protein_t* p = calloc(1, sizeof(mcs_protein_t));
+    if (!p) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
+
+    mcs_token_t tok = mcs_lexer_next(lex);
+
+    // 🔹 Fall 1: Wahrheit (IF/ELSE)
+    if (mcs_token_is_wahrheit(tok.token_type)) {
+        p->wahrheit = mcs_token_to_wahrheit(tok.token_type);
+
+        if (p->wahrheit == WAHR_IF) {
+            p->then_branch = mcs_parse_protein_from_lexer(lex);
+            // ELSE später mit Lookahead
+        }
+    }
+    // 🔹 Fall 2: Normale Aktion »[…]«
+    else if (tok.token_type == TOK_ACTION_START) {
+        mcs_lexer_free(lex);
+        p->action = mcs_parse_action(input);
+    } else {
+        mcs_lexer_free(lex);
+        free(p);
+        return NULL;
+    }
+
+    mcs_lexer_free(lex);
+    return p;
+}
+
+// 🔹 Helper — bleibt unten, nach der Hauptfunktion
+static mcs_protein_t* mcs_parse_protein_from_lexer(mcs_lexer_t* lex) {
+    mcs_token_t tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_ACTION_START) {
+        return calloc(1, sizeof(mcs_protein_t));
+    }
+    return NULL;
+}
+#include <stddef.h>
+#include "mcs_proton.h"
+mcs_proton_t* mcs_parse_proton(const char* input) { return NULL; }
+void mcs_free_proton(mcs_proton_t* p) { }
+#include <stddef.h>
+#include "mcs_warp.h"
+mcs_warp_t* mcs_parse_warp(const char* input) { return NULL; }
+void mcs_free_warp(mcs_warp_t* w) { }
+// Lib/mcs_wahrheiten.c — v3.0-konform, containerbasiert, fehlerfrei
+#include "mcs_wahrheiten.h"
+
+int mcs_token_is_wahrheit(mcs_token_type_t tt) {
+    return tt == TOK_IF || tt == TOK_ELSE ||
+    tt == TOK_WHEN_NOT || tt == TOK_MUST ||
+    tt == TOK_ON_ERROR || tt == TOK_PARALLEL_RUN ||
+    tt == TOK_PARALLEL_TRANSPORT;
+}
+
+mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt) {
+    switch (tt) {
+        case TOK_IF:                    return WAHR_IF;
+        case TOK_ELSE:                  return WAHR_ELSE;
+        case TOK_WHEN_NOT:              return WAHR_WHEN_NOT;
+        case TOK_MUST:                  return WAHR_MUST;
+        case TOK_ON_ERROR:              return WAHR_ON_ERROR;
+        case TOK_PARALLEL_RUN:          return WAHR_PARALLEL_RUN;
+        case TOK_PARALLEL_TRANSPORT:    return WAHR_PARALLEL_TRANSPORT;
+        default:                        return WAHR_NONE;
+    }
+}
+// Lib/mcs_semantics.c — Semantische Logik
+// Lib/mcs_semantics.c — v3.0: Wahrheits-Bewertung & Bedeutungszuordnung
+#include "mcs_semantics.h"
+#include "mcs_runner.h"   // für mcs_run_protein()
+#include <unistd.h>       // für system()
+
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w) {
+    switch (w) {
+        case WAHR_IF:          return SEMANTIC_IF;
+        case WAHR_ELSE:        return SEMANTIC_ELSE;
+        case WAHR_WHEN_NOT:    return SEMANTIC_WHEN_NOT;
+        case WAHR_MUST:        return SEMANTIC_MUST;
+        case WAHR_ON_ERROR:    return SEMANTIC_ON_ERROR;
+        case WAHR_PARALLEL_RUN:return SEMANTIC_PARALLEL;
+        case WAHR_PARALLEL_TRANSPORT: return SEMANTIC_PARALLEL_TRANSPORT;
+        default:               return SEMANTIC_NONE;
+    }
+}
+
+// Nur Bedingung *prüfen*, nicht ausführen → sichere Prüfung
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond) {
+    if (!cond || !cond->action || !cond->action->cmd) return MCS_FALSE;
+
+    // Beispiel: ['$terminal'] → prüfen, ob Prozess läuft
+    if (strcmp(cond->action->cmd, "$terminal") == 0) {
+        int r = system("pgrep -x kitty > /dev/null 2>&1 || pgrep -x alacritty > /dev/null 2>&1");
+        return (WIFEXITED(r) && WEXITSTATUS(r) == 0) ? MCS_TRUE : MCS_FALSE;
+    }
+    // Fallback: führe aus & schaue Exit-Code
+    int res = mcs_run_protein(cond);
+    if (res == MCS_OK) return MCS_TRUE;
+    if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+    return MCS_FALSE;
+}
+
+// Bedingung *ausführen* und Ergebnis liefern
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p) {
+    if (!p) return MCS_FALSE;
+    int res = mcs_run_protein(p);
+    return (res == MCS_OK) ? MCS_TRUE : (res < 0 ? MCS_ERROR : MCS_FALSE);
+}
+// Lib/mcs_transaktion.c — erweitert um Operator-Unterstützung (kernel 09)
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_transaktion.h"
+#include "mcs_wahrheiten.h"
+
+#include "mcs_operatoren.h"   // erst hier — wo die vollständige Def. nötig ist
+
+// 🔹 Forward-Deklaration
+static mcs_protein_t* mcs_parse_next_protein(mcs_lexer_t* lex);
+
+mcs_transaktion_t* mcs_parse_transaktion(const char* input) {
+    if (!input) return NULL;
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return NULL;
+
+    mcs_transaktion_t* t = calloc(1, sizeof(mcs_transaktion_t));
+    if (!t) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
+
+    mcs_token_t tok = mcs_lexer_next(lex);
+
+    // 🔹 Phase 1: Transaktions-Bedingung (z. B. ° ['$terminal'])
+    if (mcs_token_is_wahrheit(tok.token_type)) {
+        t->wahrheit = mcs_token_to_wahrheit(tok.token_type);
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ACTION_START) {
+            t->condition = mcs_parse_next_protein(lex);
+        }
+    }
+
+    // 🔹 ¢!
+    if (tok.token_type != TOK_TRANS_START) {
+        mcs_lexer_free(lex);
+        mcs_free_transaktion(t);
+        return NULL;
+    }
+    t->trans_start = tok;
+
+    // 🔹 Phase 2: Proteine & Operatoren parsen
+    while (1) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_TRANS_END) {
+            t->trans_end = tok;
+            t->is_valid = 1;
+            break;
+        }
+
+        // 🔹 Operator-Erkennung (kernel 09)
+        if (tok.token_type == TOK_WHEN_NOT ||
+            tok.token_type == TOK_WHEN_LT ||
+            tok.token_type == TOK_WHEN_GT ||
+            tok.token_type == TOK_TRANS_ERROR ||
+            tok.token_type == TOK_DATA_RESIDUE) {
+
+            mcs_operator_t* op = mcs_operator_new();
+        switch (tok.token_type) {
+            case TOK_WHEN_NOT:     mcs_operator_set_type(op, MCS_OP_WHEN_NOT); break;
+            case TOK_WHEN_LT:      mcs_operator_set_type(op, MCS_OP_WHEN_LT);  break;
+            case TOK_WHEN_GT:      mcs_operator_set_type(op, MCS_OP_WHEN_GT);  break;
+            case TOK_TRANS_ERROR:  mcs_operator_set_type(op, MCS_OP_TRANS_ERROR); break;
+            case TOK_DATA_RESIDUE: mcs_operator_set_type(op, MCS_OP_DATA_RESIDUE); break;
+            default: mcs_operator_free(op); continue;
+        }
+
+        mcs_token_t next = mcs_lexer_next(lex);
+
+        if (op->type == MCS_OP_WHEN_NOT && next.token_type == TOK_ACTION_START) {
+            mcs_protein_t* cond = mcs_parse_next_protein(lex);
+            mcs_operator_bind_condition(op, cond);
+            // Zweige: ¶ / ¶¶
+            mcs_token_t branch = mcs_lexer_peek(lex); // Peek, nicht Next!
+            if (branch.token_type == TOK_IF) {
+                mcs_lexer_next(lex); // konsumiere ¶
+                op->then_branch = mcs_parse_next_protein(lex);
+            }
+            branch = mcs_lexer_peek(lex);
+            if (branch.token_type == TOK_ELSE) {
+                mcs_lexer_next(lex); // konsumiere ¶¶
+                op->else_branch = mcs_parse_next_protein(lex);
+            }
+        }
+        else if ((op->type == MCS_OP_WHEN_LT || op->type == MCS_OP_WHEN_GT)
+            && next.token_type == TOK_FEED_OPEN) {
+            int id1 = extract_number(mcs_lexer_next(lex));
+        mcs_lexer_next(lex); // )
+        mcs_lexer_next(lex); // (
+            int id2 = extract_number(mcs_lexer_next(lex));
+            mcs_lexer_next(lex); // )
+            mcs_operator_bind_comparison(op, id1, id2);
+            // Zweige
+            mcs_token_t branch = mcs_lexer_peek(lex);
+            if (branch.token_type == TOK_IF) {
+                mcs_lexer_next(lex);
+                op->then_branch = mcs_parse_next_protein(lex);
+            }
+            branch = mcs_lexer_peek(lex);
+            if (branch.token_type == TOK_ELSE) {
+                mcs_lexer_next(lex);
+                op->else_branch = mcs_parse_next_protein(lex);
+            }
+            }
+            else if (op->type == MCS_OP_DATA_RESIDUE && next.token_type == TOK_FEED_OPEN) {
+                int id = extract_number(mcs_lexer_next(lex));
+                mcs_lexer_next(lex); // )
+                mcs_operator_bind_residue(op, id);
+            }
+            else if (op->type == MCS_OP_TRANS_ERROR && next.token_type == TOK_ACTION_START) {
+                t->error_handler = mcs_parse_next_protein(lex);
+                mcs_operator_free(op);
+                continue;
+            }
+
+            // Speichern
+            t->operators = realloc(t->operators, (t->operator_count + 1) * sizeof(mcs_operator_t*));
+            t->operators[t->operator_count++] = op;
+            continue;
+            }
+
+            // 🔹 Normales Protein
+            if (tok.token_type == TOK_ACTION_START) {
+                mcs_protein_t* p = mcs_parse_next_protein(lex);
+                if (p) {
+                    t->proteine = realloc(t->proteine, (t->protein_count + 1) * sizeof(mcs_protein_t*));
+                    t->proteine[t->protein_count++] = p;
+                }
+            }
+    }
+
+    mcs_lexer_free(lex);
+    return t;
+}
+
+void mcs_free_transaktion(mcs_transaktion_t* t) {
+    if (!t) return;
+    mcs_free_protein(t->condition);
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_free_protein(t->proteine[i]);
+    }
+    free(t->proteine);
+    for (int i = 0; i < t->operator_count; i++) {
+        mcs_operator_free(t->operators[i]);
+    }
+    mcs_free_protein(t->error_handler);
+    free(t->operators);
+    free(t);
+}
+
+// 🔹 Hilfsfunktion (vereinfacht — nutzt dein bestehendes mcs_parse_action)
+static mcs_protein_t* mcs_parse_next_protein(mcs_lexer_t* lex) {
+    // Rücksetzen des Lexers ist komplex → für MVP: leeres Protein
+    mcs_protein_t* p = calloc(1, sizeof(mcs_protein_t));
+    // In Zukunft: hier dein mcs_parse_action_from_lexer einbauen
+    return p;
+}
+// Lib/mcs_eingaben.c
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_eingaben.h"
+#include "mcs_token.h"
+
+int mcs_is_eingabe_quote(mcs_token_type_t tt) {
+    return tt == TOK_STR_DBL_QUOTE || tt == TOK_STR_SGL_QUOTE ||
+    tt == TOK_STR_TICK_QUOTE || tt == TOK_BLANKERNER_QUOTE;
+}
+
+mcs_eingabe_typ_t mcs_token_to_eingabe_typ(mcs_token_type_t tt) {
+    switch (tt) {
+        case TOK_STR_DBL_QUOTE:   return MCS_EINGABE_PRINT;
+        case TOK_STR_SGL_QUOTE:   return MCS_EINGABE_SYSTEM_CMD;
+        case TOK_STR_TICK_QUOTE:  return MCS_EINGABE_MCS_CMD;
+        case TOK_BLANKERNER_QUOTE:return MCS_EINGABE_BLANKERNER;
+        default:                  return MCS_EINGABE_NOTIZ;
+    }
+}
+
+// MVP: Nur Speicher allozieren, kein Parsing — später: Content extrahieren
+mcs_eingabe_t* mcs_parse_eingabe_from_token(mcs_token_type_t quote_typ, const char* start, int len) {
+    mcs_eingabe_t* e = calloc(1, sizeof(mcs_eingabe_t));
+    if (!e) return NULL;
+
+    e->typ = mcs_token_to_eingabe_typ(quote_typ);
+    e->laenge = len;
+    if (len > 0) {
+        e->inhalt = strndup(start, len);
+        e->quote_start = 0;
+        e->quote_end = len + 1; // Platzhalter
+    }
+    return e;
+}
+
+void mcs_free_eingabe(mcs_eingabe_t* e) {
+    if (!e) return;
+    free(e->inhalt);
+    free(e);
+}
+// Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
+// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (keine operator_count yet)
+#include "mcs_runner.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/wait.h>
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+    long work = user + nice + system;
+    static long prev_total = 0, prev_work = 0;
+
+    if (prev_total > 0) {
+        long delta_total = total - prev_total;
+        long delta_work = work - prev_work;
+        if (delta_total > 0) {
+            ret = (int)(100 * delta_work / delta_total);
+        }
+    }
+    prev_total = total;
+    prev_work = work;
+        }
+        fclose(f);
+        return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
+
+// Hilfsfunktion: Dynamische Prioritätsanpassung basierend auf CPU-Last
+static void adjust_for_cpu_load(void) {
+    int cpu_load = get_cpu_load();
+    if (cpu_load > 80) {
+        nice(5);  // Leicht niedrigere Priorität bei hoher Last
+    } else if (cpu_load < 20) {
+        nice(-2); // Leicht höhere Priorität bei Leerlauf
+    }
+}
+
+// 🔹 Hauptfunktion — stabil, fehleraggregierend, linear
+int mcs_run_transaktion(mcs_transaktion_t* t) {
+    if (!t || !t->is_valid) return MCS_ERR_SYNTAX;
+
+    // 🔹 Dynamische Anpassung *vor* Ausführung
+    adjust_for_cpu_load();
+
+    // 🔹 Gesamtergebnis – Fehler sammeln, nicht vorzeitig abbrechen
+    int res = MCS_OK;
+
+    // 🔹 1. Transaktions-Bedingung (z.B. ° ['$terminal'])
+    if (t->wahrheit != WAHR_NONE && t->condition) {
+        mcs_semantic_op_t op = mcs_wahrheit_to_semantic(t->wahrheit);
+        mcs_truth_t cond = mcs_evaluate_condition(t->condition);
+
+        if (op == SEMANTIC_WHEN_NOT) {  // °
+            if (cond == MCS_FALSE && t->then_branch) {
+                int r = mcs_run_protein(t->then_branch);
+                if (r < 0) res = r;
+            } else if (cond == MCS_TRUE && t->else_branch) {
+                int r = mcs_run_protein(t->else_branch);
+                if (r < 0) res = r;
+            }
+        }
+        // ⚠️ Hinweis: t->then_branch / else_branch existieren *noch nicht* in deinem mcs_transaktion.h
+        // → wir lassen das *für heute weg* und behalten dein altes Verhalten:
+        else {
+            // Fallback: wie in deinem Backup – nur erstes Protein prüfen
+            if (t->protein_count > 0 && t->proteine && t->proteine[0]) {
+                mcs_protein_t* p0 = t->proteine[0];
+                if (cond == MCS_FALSE && p0->then_branch) {
+                    int r = mcs_run_protein(p0->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p0->else_branch) {
+                    int r = mcs_run_protein(p0->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+    }
+
+    // 🔹 2. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_protein_t* p = t->proteine && i < t->protein_count ? t->proteine[i] : NULL;
+        if (!p) continue;
+
+        if (p->wahrheit != WAHR_NONE) {
+            mcs_semantic_op_t op = mcs_wahrheit_to_semantic(p->wahrheit);
+            switch (op) {
+                case SEMANTIC_IF:
+                    if (p->then_branch) {
+                        int r = mcs_run_protein(p->then_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_ELSE:
+                    if (p->else_branch) {
+                        int r = mcs_run_protein(p->else_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL_TRANSPORT:  // ;;
+                    if (p->action) {
+                        int r = mcs_run_action(p->action);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL:  // ¶=
+                    if (p->action) {
+                        pid_t pid = fork();
+                        if (pid == 0) {
+                            mcs_run_action(p->action);
+                            exit(0);
+                        } else if (pid > 0) {
+                            // Nicht blockieren – linear-first!
+                            printf("[PARALLEL] Gestartet: PID %d\n", (int)pid);
+                        } else {
+                            fprintf(stderr, "[ERROR] fork() fehlgeschlagen\n");
+                            res = MCS_ERR_SYSTEM;
+                        }
+                    }
+                    break;
+                default:
+                    int r = mcs_run_protein(p);
+                    if (r < 0) res = r;
+            }
+        } else {
+            int r = mcs_run_protein(p);
+            if (r < 0) res = r;
+        }
+    }
+
+    // 🔹 Epilog: Nur bekannte Schritte — *kein* operator_count / error_handler (noch nicht in struct)
+    // → später ergänzen, wenn `mcs_transaktion.h` erweitert ist
+
+    return res;
+}
+
+int mcs_run_protein(mcs_protein_t* p) {
+    if (!p) return MCS_ERR_SYNTAX;
+
+    if (p->wahrheit == WAHR_IF && p->then_branch) {
+        return mcs_run_protein(p->then_branch);
+    }
+    if (p->wahrheit == WAHR_ELSE && p->else_branch) {
+        return mcs_run_protein(p->else_branch);
+    }
+    if (p->action) {
+        return mcs_run_action(p->action);
+    }
+    return MCS_OK;
+}
+
+int mcs_run_action(mcs_action_t* a) {
+    if (!a || !a->cmd) {
+        fprintf(stderr, "[RUN] Action NULL\n");
+        return MCS_ERR_SYNTAX;
+    }
+
+    // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+        double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+        if (delay_sec > 0) {
+            usleep((useconds_t)(delay_sec * 1e6)); // präziser als sleep()
+        }
+    }
+
+    printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+           a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+    // 🔹 2. Blankernenner → Feed setzen
+    if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+        FILE* p = popen(a->blankernenner + 1, "r");
+        if (p) {
+            char buf[64] = {0};
+            if (fgets(buf, sizeof(buf), p)) {
+                buf[strcspn(buf, "\n")] = 0;
+                mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+            }
+            pclose(p);
+        }
+    }
+
+    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
+    if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+        const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+        char cmd[256];
+        if (a->blankernenner && feed_val) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+        } else if (a->arg1) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+        } else {
+            snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+        }
+        printf("[EXEC] %s\n", cmd);
+        return system(cmd);
+    }
+
+    return MCS_OK;
+}
+// mcs_lexer.c — v2.9-konform, UTF-8-sicher, GCC-ready
+// Autor: Thomas Zimmermann / Qwen — basierend auf kernel 02–15, MCS 2.9
+
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "mcs_token.h"
+
+// 🔹 MUST be first: define the opaque struct
+struct mcs_lexer {
+    const char* input;
+    const char* pos;
+    int line, column;
+};
+
+// 🔹 Token table (sorted by length, longest first)
+typedef struct {
+    const char* symbol;
+    int length;
+    mcs_token_type_t type;
+} LexerEntry;
+
+static const LexerEntry TOKEN_TABLE[] = {
+    // 6 Bytes — Argument-Start-Signal (gemäß @kernel 15)
+    {"\xC2\xAB\xC2\xAB\xC2\xAB", 6, TOK_OP_MARK},   // ««« → 3 × 0xC2 0xAB = 6 Bytes
+
+    // 5 Bytes — Argument-Operatoren (6 - 1 = 5: 2+2 Bytes «« + 1 Byte Operator)
+    {"\xC2\xAB\xC2\xAB-", 5, TOK_ARG_MINUS},        // ««-
+    {"\xC2\xAB\xC2\xAB+", 5, TOK_ARG_PLUS},         // ««+
+    {"\xC2\xAB\xC2\xAB·", 5, TOK_ARG_MUL},          // ««·
+    {"\xC2\xAB\xC2\xAB:", 5, TOK_ARG_DIV},          // ««:
+    {"\xC2\xAB\xC2\xAB%", 5, TOK_ARG_PERCENT},      // ««%
+
+    // 4 Bytes
+    {"\xC2\xB6\xC2\xB6", 4, TOK_ELSE},              // ¶¶
+
+    // 3 Bytes
+    {"\xC2\xB6=", 3, TOK_PARALLEL_RUN},             // ¶=
+    {"\xC2\xA2!", 3, TOK_TRANS_START},              // ¢!
+    {"!\xC2\xA2", 3, TOK_TRANS_END},                // !¢
+    {"\xE2\x80\xA6", 3, TOK_ON_ERROR},              // … (U+2026)
+    {"\xE2\x80\x99", 3, TOK_STR_TICK_QUOTE},        // ’ (U+2019)
+    {"\xE2\x8A\x95", 3, TOK_SYNC_TIMER},            // ⊕ (U+2295)
+
+    // 2 Bytes
+    {";;", 2, TOK_PARALLEL_TRANSPORT},              // ;;
+    {"\xC2\xBB", 2, TOK_ACTION_START},              // »
+    {"\xC2\xAB", 2, TOK_ACTION_END},                // «
+    {"\xC5\xBF", 2, TOK_DATA_RESIDUE},              // ſ (U+017F)
+    {"\xC2\xA8", 2, TOK_BLANKERNER_QUOTE},          // ¨ (U+00A8)
+    {"\xC2\xB6", 2, TOK_IF},                        // ¶ (U+00B6)
+    {"\xC2\xB0", 2, TOK_WHEN_NOT},                  // ° (U+00B0)
+    {"\xC2\xA7", 2, TOK_TARGET_REF_PREFIX},         // § (U+00A7)
+    {"\xC3\xB8", 2, TOK_WARP},                      // ø (U+00F8)
+    {"\xC3\xBE", 2, TOK_THETA_ID_PREFIX},           // þ (U+00FE)
+
+    // 1 Byte
+    {"[", 1, TOK_PROTEIN_OPEN},
+    {"]", 1, TOK_PROTEIN_CLOSE},
+    {"{", 1, TOK_PROTON_OPEN},
+    {"}", 1, TOK_PROTON_CLOSE},
+    {"|", 1, TOK_SEP},
+    {"\"", 1, TOK_STR_DBL_QUOTE},
+    {"'", 1, TOK_STR_SGL_QUOTE},
+    {">", 1, TOK_WHEN_GT},
+    {"<", 1, TOK_WHEN_LT},
+    {"!", 1, TOK_MUST},
+    {"(", 1, TOK_FEED_OPEN},
+    {")", 1, TOK_FEED_CLOSE},
+    {"$", 1, TOK_DIRIGENT_PREFIX},
+    {"^", 1, TOK_TRANS_ERROR},
+    {"#", 1, TOK_COMMENT}
+};
+#define TOKEN_TABLE_SIZE (sizeof(TOKEN_TABLE) / sizeof(LexerEntry))
+
+// ────────────────────────────────────────────────────────────────
+// Helper functions
+// ────────────────────────────────────────────────────────────────
+
+static void advance(mcs_lexer_t* lex, int n) {
+    for (int i = 0; i < n; i++) {
+        if (*lex->pos == '\n') {
+            lex->line++; lex->column = 1;
+        } else {
+            lex->column++;
+        }
+        lex->pos++;
+    }
+}
+
+static void skip_whitespace(mcs_lexer_t* lex) {
+    while (*lex->pos && isspace((unsigned char)*lex->pos)) {
+        advance(lex, 1);
+    }
+}
+
+// ────────────────────────────────────────────────────────────────
+// Public API
+// ────────────────────────────────────────────────────────────────
+
+mcs_lexer_t* mcs_lexer_new(const char* input) {
+    mcs_lexer_t* lex = malloc(sizeof(mcs_lexer_t));
+    if (!lex) return NULL;
+    lex->input = input;
+    lex->pos = input;
+    lex->line = 1;
+    lex->column = 1;
+    return lex;
+}
+
+void mcs_lexer_free(mcs_lexer_t* lex) {
+    free(lex);
+}
+
+mcs_token_t mcs_lexer_next(mcs_lexer_t* lex) {
+    mcs_token_t tok;
+    skip_whitespace(lex);
+
+    tok.line = lex->line;
+    tok.column = lex->column;
+    tok.literal = lex->pos;
+
+    if (*lex->pos == '\0') {
+        tok.token_type = TOK_EOF;
+        tok.length = 0;
+        return tok;
+    }
+
+    // 🔥 Maximum-Munch: longest match first
+    for (size_t i = 0; i < TOKEN_TABLE_SIZE; i++) {
+        const LexerEntry* e = &TOKEN_TABLE[i];
+        if (memcmp(lex->pos, e->symbol, e->length) == 0) {
+            tok.token_type = e->type;
+            tok.length = e->length;
+
+            if (tok.token_type == TOK_COMMENT) {
+                while (*lex->pos && *lex->pos != '\n') lex->pos++;
+                return mcs_lexer_next(lex);
+            }
+
+            advance(lex, tok.length);
+            return tok;
+        }
+    }
+
+    // Fallback: ID (alphanum, _-.)
+    if (isalpha((unsigned char)*lex->pos) || *lex->pos == '_') {
+        tok.token_type = TOK_ID;
+        const char* start = lex->pos;
+        while (isalnum((unsigned char)*lex->pos) ||
+            *lex->pos == '_' || *lex->pos == '-' || *lex->pos == '.') {
+            lex->pos++;
+            }
+            tok.length = (int)(lex->pos - start);
+        return tok;
+    }
+
+    // Fallback: NUMBER
+    if (isdigit((unsigned char)*lex->pos)) {
+        tok.token_type = TOK_NUMBER;
+        const char* start = lex->pos;
+        while (isdigit((unsigned char)*lex->pos)) lex->pos++;
+        tok.length = (int)(lex->pos - start);
+        return tok;
+    }
+
+    // Fallback: single char
+    tok.token_type = TOK_LITERAL;
+    tok.length = 1;
+    advance(lex, 1);
+    return tok;
+}
+// include/mcs_action.h — FINAL v3.0
+#ifndef MCS_ACTION_H
+#define MCS_ACTION_H
+
+#include <stdlib.h>   // ← für atoi()
+#include <string.h>   // ← für strndup()
+#include "mcs_token.h"
+#include "mcs_feed.h"
+#include "mcs_argument.h"
+
+typedef struct {
+    char* cmd;
+    char* arg1;
+    mcs_feed_t feed;
+    char* blankernenner;
+    mcs_argument_t arg;
+} mcs_action_t;
+
+mcs_action_t* mcs_parse_action(const char* input);
+void mcs_free_action(mcs_action_t* a);
+
+// Inline-Hilfen — jetzt mit korrektem Scope
+static inline char* token_to_string(mcs_token_t tok) {
+    return tok.length > 0 ? strndup(tok.literal, tok.length) : NULL;
+}
+static inline int extract_number(mcs_token_t tok) {
+    return (tok.token_type == TOK_NUMBER && tok.length > 0)
+    ? atoi(tok.literal) : 0;
+}
+
+#endif
+// include/mcs_argument.h — v3.0, mit Einheiten & Sicherheitskontext
+#ifndef MCS_ARGUMENT_H
+#define MCS_ARGUMENT_H
+
+#include "mcs_token.h"
+
+// Einheiten für zeitliche/quantitative Argumente
+typedef enum {
+    UNIT_NONE = 0,
+    UNIT_SECONDS,
+    UNIT_MILLISECONDS,
+    UNIT_PERCENT,
+    UNIT_ABSOLUTE    // z.B. PID, Thread-ID, Watt
+} mcs_unit_t;
+
+// Argument-Typen (gemäß @kernel 15, erweitert um Semantik)
+typedef enum {
+    ARG_NONE = 0,
+    ARG_MINUS,    // «««- → Subtraktion
+    ARG_PLUS,     // «««+ → Addition
+    ARG_MUL,      // «««· → Multiplikation
+    ARG_DIV,      // «««: → Division
+    ARG_PERCENT,  // «««%N → Prozent (0–100)
+    ARG_TIME,     // «««tN → Zeit (ms/s)
+    ARG_REBOOT,   // «««rN → Reboot-Verzögerung
+    ARG_KILL,     // «««kN → SIGKILL nach N Sekunden (später)
+    ARG_THROTTLE  // «««wN → Watt-Begrenzung (später)
+} mcs_arg_type_t;
+
+// Argument-Container mit Semantik
+typedef struct {
+    mcs_arg_type_t type;
+    mcs_unit_t     unit;
+    double         value;      // double für %0.5, 1.5s, etc.
+    int            min_value;  // Sicherheitslimit: z.B. ARG_TIME ≥ 0
+    int            max_value;  // z.B. ARG_PERCENT ≤ 100
+    const char*    context;    // z.B. "CPU", "NET", "STORAGE"
+} mcs_argument_t;
+
+// Public API
+int mcs_parse_argument(mcs_lexer_t* lex, mcs_argument_t* out);
+int mcs_validate_argument(const mcs_argument_t* a);
+double mcs_resolve_value(const mcs_argument_t* a, int system_load); // Context-Aware
+
+#endif
+// include/mcs_eingaben.h — MCS Eingabe-Container (v3.0, @kernel 07)
+#ifndef MCS_EINGABEN_H
+#define MCS_EINGABEN_H
+
+#include <stddef.h>
+#include "mcs_token.h"   // ← mcs_token_type_t
+// Gemäß @kernel 07: 5 Eingabetypen — klar getrennt, sicher, modular
+typedef enum {
+    MCS_EINGABE_PRINT,       // "..." — Ausgabe (echo, notify-send, print)
+    MCS_EINGABE_SYSTEM_CMD,  // '...' — System-Befehl (bash, sh, zsh, powershell)
+    MCS_EINGABE_MCS_CMD,     // ’...’ — MCS-eigene Befehle (später: register/kernel 99)
+    MCS_EINGABE_BLANKERNER,  // ¨...¨ — Transport-Container (Daten, nicht Code)
+    MCS_EINGABE_NOTIZ        // ,... — Metadaten/Tagging (für Suche, Logs, AI)
+} mcs_eingabe_typ_t;
+
+// das hier MCS_EINGABE_SYSTEM_CMD ist eins zu eins das jeweilige
+// system mit der jeweiligen shell oder direkt system verbindungen
+// bei linux ist es meist bash zsh oder fisch etc , bei microsoft nt und powershell
+// und bei mac os glaub darvin
+
+// Container-Struktur — *kein Code-Ausführen hier*, nur Repräsentation
+typedef struct {
+    mcs_eingabe_typ_t typ;
+    char* inhalt;          // z.B. "Hallo", "sudo pacman -Syyu", "$pgrep firefox"
+    size_t laenge;
+    int quote_start;       // Byte-Offset des öffnenden Quotes (z.B. ")
+    int quote_end;         // Byte-Offset des schließenden Quotes
+} mcs_eingabe_t;
+
+// Public API — parsing & cleanup
+mcs_eingabe_t* mcs_parse_eingabe_from_token(mcs_token_type_t quote_typ, const char* start, int len);
+void mcs_free_eingabe(mcs_eingabe_t* e);
+
+// Hilfsfunktionen — für Protein/Proton-Parser
+int mcs_is_eingabe_quote(mcs_token_type_t tt);
+mcs_eingabe_typ_t mcs_token_to_eingabe_typ(mcs_token_type_t tt);
+
+#endif // MCS_EINGABEN_H
+// include/mcs_feed.h — MCS Feed Registry (v2.9)
+// include/mcs_feed.h — v3.0 RAM-gepuffert, debugbar, sicher
+#ifndef MCS_FEED_H
+#define MCS_FEED_H
+
+#include <stddef.h>
+
+#define MCS_FEED_MAX 256
+
+typedef struct {
+    int id;
+    char* value;       // malloc'ed — RAM-basiert
+    size_t value_len;  // Länge — für Sicherheit
+    int is_set;
+    const char* source; // Debug: woher kam das? z.B. "$pgrep firefox"
+} mcs_feed_t;
+
+// RAM-Initialisierung — MUSS VOR ALLEM ANDEREN aufgerufen werden!
+void mcs_feed_init(void);
+
+// Public API — wie vorher, nur sicherer
+int  mcs_feed_set(int id, const char* value, const char* source);
+const char* mcs_feed_get(int id);
+void mcs_feed_clear(int id);
+void mcs_feed_reset_all(void);
+
+// Debug-Hilfe
+void mcs_feed_dump(void); // gibt alle Feeds aus
+
+#endif
+// include/mcs_protein.h
+#ifndef MCS_PROTEIN_H
+#define MCS_PROTEIN_H
+
+#include "mcs_action.h"
+#include "mcs_proton.h"
+#include "mcs_warp.h"
+#include "mcs_wahrheiten.h"
+
+// 🔹 Forward-Deklaration als typedef — NICHT struct mcs_protein
+typedef struct mcs_protein mcs_protein_t;
+
+struct mcs_protein {
+    mcs_action_t* action;
+    mcs_proton_t* proton;
+    mcs_warp_t*   warp;
+    mcs_wahrheit_t wahrheit;
+    mcs_protein_t* then_branch;   // ← jetzt vom selben Typ
+    mcs_protein_t* else_branch;   // ← jetzt vom selben Typ
+};
+
+// Public API
+mcs_protein_t* mcs_parse_protein(const char* input);
+void mcs_free_protein(mcs_protein_t* p);
+
+#endif
+// include/mcs_proton.h
+#ifndef MCS_PROTON_H
+#define MCS_PROTON_H
+
+typedef struct {
+    char* name;   // z.B. "Watt", "Temp", "Wait-s"
+    char* value;  // z.B. "200", "25", "3"
+} mcs_proton_field_t;
+
+typedef struct {
+    mcs_proton_field_t* fields;  // dynamisch
+    int field_count;
+} mcs_proton_t;
+
+mcs_proton_t* mcs_parse_proton(const char* input);
+void mcs_free_proton(mcs_proton_t* p);
+
+#endif
+// include/mcs_runner.h — v3.0 Runner-API
+#ifndef MCS_RUNNER_H
+#define MCS_RUNNER_H
+
+#include "mcs_transaktion.h"
+
+// Fehlercodes (erweiterbar)
+#define MCS_OK               0
+#define MCS_ERR_SYNTAX      -1
+#define MCS_ERR_IO          -2
+#define MCS_ERR_SECURITY    -3
+#define MCS_ERR_TIMEOUT     -4
+#define MCS_ERR_FEED        -5
+
+// Public API
+int mcs_run_transaktion(mcs_transaktion_t* t);
+int mcs_run_protein(mcs_protein_t* p);
+int mcs_run_action(mcs_action_t* a);
+
+#endif
+// include/mcs_transaktion.h — v3.0 + Operators (zyklusfrei!)
+#ifndef MCS_TRANS_H
+#define MCS_TRANS_H
+
+#include "mcs_token.h"
+#include "mcs_protein.h"
+
+// 🔹 Forward-Deklaration statt Include (bricht Zyklus!)
+struct mcs_operator;
+typedef struct mcs_operator mcs_operator_t;
+
+typedef struct {
+    mcs_token_t trans_start;
+    mcs_token_t trans_end;
+    mcs_wahrheit_t wahrheit;
+    mcs_protein_t* condition;
+
+    // 🔹 Operatoren (kernel 09) — nur Zeiger, keine Definition nötig
+    mcs_operator_t** operators;
+    int operator_count;
+    mcs_protein_t* error_handler; // für ^
+
+    mcs_protein_t** proteine;
+    int protein_count;
+    int is_valid;
+} mcs_transaktion_t;
+
+// Public API
+mcs_transaktion_t* mcs_parse_transaktion(const char* input);
+void mcs_free_transaktion(mcs_transaktion_t* t);
+
+#endif // MCS_TRANS_H
+
+
+// include/mcs_wahrheit.h — v3.0, *nur* Deklaration
+#ifndef MCS_WAHRHEIT_H
+#define MCS_WAHRHEIT_H
+
+#include "mcs_token.h"   // ← für mcs_token_type_t
+
+// 🔹 Enum muss *vor* Funktionsdeklaration kommen!
+typedef enum {
+    WAHR_NONE = 0,
+    WAHR_IF,          // ¶
+    WAHR_ELSE,        // ¶¶
+    WAHR_WHEN_NOT,    // °
+    WAHR_MUST,        // !
+    WAHR_ON_ERROR,    // …
+    WAHR_PARALLEL_RUN,      // ¶=
+    WAHR_PARALLEL_TRANSPORT // ;;
+} mcs_wahrheit_t;
+
+// 🔹 Nur Deklarationen — KEINE Implementierung!
+int mcs_token_is_wahrheit(mcs_token_type_t tt);
+mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt);
+
+#endif // MCS_WAHRHEIT_H
+// include/mcs_sematics.h - Wahrheitstabelle & Bedeutungslogik
+// include/mcs_semantics.h — v3.0 Semantik-Kern
+#ifndef MCS_SEMANTICS_H
+#define MCS_SEMANTICS_H
+
+#include "mcs_token.h"
+#include "mcs_protein.h"
+
+// Logische Wahrheitswerte (nicht BOOL — explizit klar)
+typedef enum {
+    MCS_FALSE = 0,
+    MCS_TRUE = 1,
+    MCS_ERROR = -1   // Fehler bei Auswertung (z.B. SIGKILL)
+} mcs_truth_t;
+
+// Semantische Bedeutung jeder Wahrheit
+typedef enum {
+    SEMANTIC_IF,          // ¶ — führe aus, WENN Bedingung TRUE
+    SEMANTIC_ELSE,        // ¶¶ — führe aus, WENN vorherige Bedingung FALSE
+    SEMANTIC_WHEN_NOT,    // ° — führe aus, WENN Bedingung FALSE
+    SEMANTIC_MUST,        // ! — Sofort, unbedingt (keine Bedingung, Timeout-gesteuert)
+    SEMANTIC_ON_ERROR,    // … — Nur bei vorherigem Fehler
+    SEMANTIC_PARALLEL,    // ¶= — Fork & Exec
+    SEMANTIC_PARALLEL_TRANSPORT, // ;; — Datenfluss ohne Blockieren
+    SEMANTIC_NONE
+} mcs_semantic_op_t;
+
+// Öffentliche API
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w);
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p);  // führt aus & gibt MCS_TRUE/FALSE zurück
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond); // Nur Bedingung prüfen, nicht ausführen
+
+#endif
+// include/mcs_warp.h
+#ifndef MCS_WARP_H
+#define MCS_WARP_H
+
+typedef enum {
+    WARP_C, WARP_CSS, WARP_JS, WARP_PY, WARP_ASM, WARP_UNKNOWN
+} mcs_warp_lang_t;
+
+typedef struct {
+    mcs_warp_lang_t lang;
+    char* code;        // z.B. "#include <stdio.h>..."
+    char* target;      // z.B. "$gcc", "§kitty"
+} mcs_warp_t;
+
+mcs_warp_t* mcs_parse_warp(const char* input);
+void mcs_free_warp(mcs_warp_t* w);
+
+#endif
+cat: main.c: Datei oder Verzeichnis nicht gefunden
+cat: CMakeLists.txt: Datei oder Verzeichnis nicht gefunden
+// Lib/mcs_operatoren.c — v3.0: Minimal, sicher, feed-basiert
+#include "mcs_operatoren.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+mcs_operator_t* mcs_operator_new(void) {
+    return calloc(1, sizeof(mcs_operator_t));
+}
+
+void mcs_operator_free(mcs_operator_t* op) {
+    if (!op) return;
+    if (op->type == MCS_OP_WHEN_NOT) {
+        mcs_free_protein(op->data.not.cond);
+    }
+    mcs_free_protein(op->then_branch);
+    mcs_free_protein(op->else_branch);
+    free(op);
+}
+
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type) {
+    if (!op) return 0;
+    op->type = type;
+    return 1;
+}
+
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p) {
+    if (!op || !p || op->type != MCS_OP_WHEN_NOT) return 0;
+    op->data.not.cond = p;
+    return 1;
+}
+
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b) {
+    if (!op || id_a < 0 || id_b < 0) return 0;
+    if (op->type != MCS_OP_WHEN_LT && op->type != MCS_OP_WHEN_GT) return 0;
+    op->data.cmp.left_id = id_a;
+    op->data.cmp.right_id = id_b;
+    return 1;
+}
+
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id) {
+    if (!op || feed_id < 0) return 0;
+    if (op->type != MCS_OP_DATA_RESIDUE) return 0;
+    op->data.residue_id = feed_id;
+    return 1;
+}
+
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb) {
+    if (!op) return 0;
+    op->then_branch = then;
+    op->else_branch = elseb;
+    return 1;
+}
+
+mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op) {
+    if (!op) return MCS_ERROR;
+
+    switch (op->type) {
+        case MCS_OP_WHEN_NOT: {
+            if (!op->data.not.cond) return MCS_ERROR;
+            mcs_truth_t cond = mcs_evaluate_condition(op->data.not.cond);
+            return (cond == MCS_FALSE) ? MCS_TRUE : (cond == MCS_TRUE ? MCS_FALSE : MCS_ERROR);
+        }
+
+        case MCS_OP_WHEN_LT:
+        case MCS_OP_WHEN_GT: {
+            const char* a_str = mcs_feed_get(op->data.cmp.left_id);
+            const char* b_str = mcs_feed_get(op->data.cmp.right_id);
+            if (!a_str || !b_str) return MCS_ERROR;
+
+            double a = atof(a_str);
+            double b = atof(b_str);
+
+            if (op->type == MCS_OP_WHEN_LT) return (a < b) ? MCS_TRUE : MCS_FALSE;
+            else                             return (a > b) ? MCS_TRUE : MCS_FALSE;
+        }
+
+        case MCS_OP_TRANS_ERROR:
+        case MCS_OP_DATA_RESIDUE:
+            return MCS_TRUE; // Annotationen → keine Auswertung nötig
+
+        default:
+            return MCS_ERROR;
+    }
+}
+// include/mcs_operatoren.h — v3.0: Operator-Semantik, linear, feed-basiert
+#ifndef MCS_OPERATOREN_H
+#define MCS_OPERATOREN_H
+
+#include "mcs_protein.h"
+#include "mcs_semantics.h"   // + DAMIT mcs_truth_t bekannt ist
+
+typedef enum {
+    MCS_OP_NONE = 0,
+    MCS_OP_WHEN_NOT,    // °
+    MCS_OP_WHEN_LT,     // <
+    MCS_OP_WHEN_GT,     // >
+    MCS_OP_TRANS_ERROR, // ^
+    MCS_OP_DATA_RESIDUE // ſ
+} mcs_op_type_t;
+
+typedef struct {
+    mcs_op_type_t type;
+    union {
+        struct { mcs_protein_t* cond; } not;
+        struct { int left_id; int right_id; } cmp;
+        int residue_id;
+    } data;
+    mcs_protein_t* then_branch;
+    mcs_protein_t* else_branch;
+} mcs_operator_t;
+
+// Public API — strikt linear, kein malloc im Header
+mcs_operator_t* mcs_operator_new(void);
+void mcs_operator_free(mcs_operator_t* op);
+
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type);
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p);
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b);
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id);
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb);
+
+// # minus mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op);
+
+#endif // MCS_OPERATOREN_H
+// mcs_lexer.h — v2.9 API
+#ifndef MCS_LEXER_H
+#define MCS_LEXER_H
+
+typedef enum {
+    TOK_UNKNOWN = 0,
+    TOK_COMMENT, TOK_ID, TOK_NUMBER, TOK_LITERAL,
+    TOK_TRANS_START, TOK_TRANS_END,
+    TOK_ACTION_START, TOK_ACTION_END,
+    TOK_PROTEIN_OPEN, TOK_PROTEIN_CLOSE,
+    TOK_PROTON_OPEN, TOK_PROTON_CLOSE,
+    TOK_SEP,
+    TOK_STR_DBL_QUOTE, TOK_STR_SGL_QUOTE,
+    TOK_STR_TICK_QUOTE, TOK_BLANKERNER_QUOTE,
+    TOK_IF, TOK_ELSE, TOK_PARALLEL_RUN, TOK_PARALLEL_TRANSPORT,
+    TOK_WHEN_NOT, TOK_WHEN_GT, TOK_WHEN_LT, TOK_MUST,
+    TOK_ON_ERROR, TOK_TRANS_ERROR, TOK_DATA_RESIDUE, TOK_SYNC_TIMER,
+    TOK_FEED_OPEN, TOK_FEED_CLOSE,
+    TOK_TARGET_REF_PREFIX, TOK_DIRIGENT_PREFIX,
+    TOK_WARP, TOK_THETA_ID_PREFIX,
+    TOK_OP_MARK, TOK_ARG_MINUS, TOK_ARG_PLUS,
+    TOK_ARG_MUL, TOK_ARG_DIV, TOK_ARG_PERCENT,
+    TOK_EOF
+} mcs_token_type_t;
+
+typedef struct {
+    mcs_token_type_t token_type;
+    const char* literal;
+    int length;
+    int line, column;
+} mcs_token_t;
+
+typedef struct mcs_lexer mcs_lexer_t;
+
+mcs_lexer_t* mcs_lexer_new(const char* input);
+void         mcs_lexer_free(mcs_lexer_t* lex);
+mcs_token_t  mcs_lexer_next(mcs_lexer_t* lex);
+
+#endif // MCS_LEXER_H
+
+ ┌[bandino@dev][17:53:11|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/mcscodes]> $
+
+
+HIER BRAUCHTE ICH EINE KURZE MENTALE PAUSE
+
+
+ ┌[bandino@dev][19:43:42|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $ # Info Zettel für mich MCS Tests         # Info Zettel für mich MCS Tests
+
+#skelett build test:
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
+
+#feed speicher integrations test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
+
+#echo test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs
+
+#update test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs
+
+#Semantic Test für Wahrheiten :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
+
+#paralell :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs
+
+#parallel mit argumenten zum warten :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
+
+#Operatoren logik :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+[ 58%] Linking C static library libmcs_core.a
+[ 58%] Built target mcs_core
+[ 62%] Building C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o
+[ 66%] Linking C executable test_lexer
+[ 66%] Built target test_lexer
+[ 70%] Building C object CMakeFiles/test_action.dir/Lab/test_action.c.o
+[ 75%] Linking C executable test_action
+[ 75%] Built target test_action
+[ 79%] Building C object CMakeFiles/test_if.dir/Lab/test_if.c.o
+[ 83%] Linking C executable test_if
+[ 83%] Built target test_if
+[ 87%] Building C object CMakeFiles/test_trans.dir/Lab/test_trans.c.o
+[ 91%] Linking C executable test_trans
+[ 91%] Built target test_trans
+[ 95%] Building C object CMakeFiles/mcs.dir/main.c.o
+[100%] Linking C executable mcs
+[100%] Built target mcs
+Token 1: WAHRHEIT (IF)
+Token 2: WAHRHEIT (ELSE)
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+libmcs_core.a
+Makefile
+mcs
+test_action
+test_if
+test_lexer
+test.mcs
+test_trans
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+[ 58%] Linking C static library libmcs_core.a
+[ 58%] Built target mcs_core
+[ 62%] Building C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o
+[ 66%] Linking C executable test_lexer
+[ 66%] Built target test_lexer
+[ 70%] Building C object CMakeFiles/test_action.dir/Lab/test_action.c.o
+[ 75%] Linking C executable test_action
+[ 75%] Built target test_action
+[ 79%] Building C object CMakeFiles/test_if.dir/Lab/test_if.c.o
+[ 83%] Linking C executable test_if
+[ 83%] Built target test_if
+[ 87%] Building C object CMakeFiles/test_trans.dir/Lab/test_trans.c.o
+[ 91%] Linking C executable test_trans
+[ 91%] Built target test_trans
+[ 95%] Building C object CMakeFiles/mcs.dir/main.c.o
+[100%] Linking C executable mcs
+[100%] Built target mcs
+[FEED] RAM-Cache initialisiert (256 Einträge)
+✅ MCS executed successfully.
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+libmcs_core.a
+Makefile
+mcs
+test_action
+test_if
+test_lexer
+test.mcs
+test_trans
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+[ 58%] Linking C static library libmcs_core.a
+[ 58%] Built target mcs_core
+[ 62%] Building C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o
+[ 66%] Linking C executable test_lexer
+[ 66%] Built target test_lexer
+[ 70%] Building C object CMakeFiles/test_action.dir/Lab/test_action.c.o
+[ 75%] Linking C executable test_action
+[ 75%] Built target test_action
+[ 79%] Building C object CMakeFiles/test_if.dir/Lab/test_if.c.o
+[ 83%] Linking C executable test_if
+[ 83%] Built target test_if
+[ 87%] Building C object CMakeFiles/test_trans.dir/Lab/test_trans.c.o
+[ 91%] Linking C executable test_trans
+[ 91%] Built target test_trans
+[ 95%] Building C object CMakeFiles/mcs.dir/main.c.o
+[100%] Linking C executable mcs
+[100%] Built target mcs
+[FEED] RAM-Cache initialisiert (256 Einträge)
+✅ MCS executed successfully.
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+libmcs_core.a
+Makefile
+mcs
+test_action
+test_if
+test_lexer
+test.mcs
+test_trans
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+[ 58%] Linking C static library libmcs_core.a
+[ 58%] Built target mcs_core
+[ 62%] Building C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o
+[ 66%] Linking C executable test_lexer
+[ 66%] Built target test_lexer
+[ 70%] Building C object CMakeFiles/test_action.dir/Lab/test_action.c.o
+[ 75%] Linking C executable test_action
+[ 75%] Built target test_action
+[ 79%] Building C object CMakeFiles/test_if.dir/Lab/test_if.c.o
+[ 83%] Linking C executable test_if
+[ 83%] Built target test_if
+[ 87%] Building C object CMakeFiles/test_trans.dir/Lab/test_trans.c.o
+[ 91%] Linking C executable test_trans
+[ 91%] Built target test_trans
+[ 95%] Building C object CMakeFiles/mcs.dir/main.c.o
+[100%] Linking C executable mcs
+[100%] Built target mcs
+[FEED] RAM-Cache initialisiert (256 Einträge)
+✅ MCS executed successfully.
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+libmcs_core.a
+Makefile
+mcs
+test_action
+test_if
+test_lexer
+test.mcs
+test_trans
+[ 58%] Built target mcs_core
+[ 66%] Built target test_lexer
+[ 75%] Built target test_action
+[ 83%] Built target test_if
+[ 91%] Built target test_trans
+[100%] Built target mcs
+[FEED] RAM-Cache initialisiert (256 Einträge)
+✅ MCS executed successfully.
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+libmcs_core.a
+Makefile
+mcs
+test_action
+test_if
+test_lexer
+test.mcs
+test_trans
+[ 58%] Built target mcs_core
+[ 66%] Built target test_lexer
+[ 75%] Built target test_action
+[ 83%] Built target test_if
+[ 91%] Built target test_trans
+[100%] Built target mcs
+[FEED] RAM-Cache initialisiert (256 Einträge)
+✅ MCS executed successfully.
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+libmcs_core.a
+Makefile
+mcs
+test_action
+test_if
+test_lexer
+test.mcs
+test_trans
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+[ 58%] Linking C static library libmcs_core.a
+[ 58%] Built target mcs_core
+[ 62%] Building C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o
+[ 66%] Linking C executable test_lexer
+[ 66%] Built target test_lexer
+[ 70%] Building C object CMakeFiles/test_action.dir/Lab/test_action.c.o
+[ 75%] Linking C executable test_action
+[ 75%] Built target test_action
+[ 79%] Building C object CMakeFiles/test_if.dir/Lab/test_if.c.o
+[ 83%] Linking C executable test_if
+[ 83%] Built target test_if
+[ 87%] Building C object CMakeFiles/test_trans.dir/Lab/test_trans.c.o
+[ 91%] Linking C executable test_trans
+[ 91%] Built target test_trans
+[ 95%] Building C object CMakeFiles/mcs.dir/main.c.o
+[100%] Linking C executable mcs
+[100%] Built target mcs
+[FEED] RAM-Cache initialisiert (256 Einträge)
+✅ MCS executed successfully.
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+libmcs_core.a
+Makefile
+mcs
+test_action
+test_if
+test_lexer
+test.mcs
+test_trans
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+[ 58%] Linking C static library libmcs_core.a
+[ 58%] Built target mcs_core
+[ 62%] Building C object CMakeFiles/test_lexer.dir/Lab/test_lexer.c.o
+[ 66%] Linking C executable test_lexer
+[ 66%] Built target test_lexer
+[ 70%] Building C object CMakeFiles/test_action.dir/Lab/test_action.c.o
+[ 75%] Linking C executable test_action
+[ 75%] Built target test_action
+[ 79%] Building C object CMakeFiles/test_if.dir/Lab/test_if.c.o
+[ 83%] Linking C executable test_if
+[ 83%] Built target test_if
+[ 87%] Building C object CMakeFiles/test_trans.dir/Lab/test_trans.c.o
+[ 91%] Linking C executable test_trans
+[ 91%] Built target test_trans
+[ 95%] Building C object CMakeFiles/mcs.dir/main.c.o
+[100%] Linking C executable mcs
+[100%] Built target mcs
+[FEED] RAM-Cache initialisiert (256 Einträge)
+✅ MCS executed successfully.
+
+ ┌[bandino@dev][19:45:43|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $ # Test MCS dateien:                      # Test MCS dateien:
+
+cd /Pylovara/System/Kernel/Core/mcscodes/ && cat test_semantic_dispatcher.mcs test_parallel_wait.mcs test_parallel.mcs test1_update.mcs test1_echo.mcs test.mcs test_operatoren.mcs
+test1_echo.mcs
+test1_update.mcs
+test.mcs
+test_operatoren.mcs
+test_parallel.mcs
+test_parallel_wait.mcs
+test_semantic_dispatcher.mcs
+¢!
+# Argument ° Wenn/Sofort | unausführbares protein terminal open |
+# Wahrheiten Logik ¶Wenn ¶¶Kann Linear mit unausführbaren Protein |
+° ['$terminal']
+   ¶ ['notify-send'|'OFFLINE'|'Terminal nicht aktiv']
+   ¶¶ ['notify-send'|'ONLINE'|'Terminal läuft']
+!¢
+¢!
+»['echo'|"1. Hauptprozess startet"]«
+    ;; »['exec'|'$date']«««t1
+    ¶= »['echo'|"2. Parallel-Prozess"]«««t2
+»['echo'|"3. Hauptprozess läuft weiter"]«
+»['echo'|"Feed 1: "|¨(1)¨]«
+!¢
+¢!
+# SystemCMD | Blankernenner | Parallel Transport & Verarbeutng | Argument ««t1 wait
+# Feed cache + Feed im Parallel prozessing
+»['echo'|"1. Hauptprozess startet"]«
+;; »['exec'|(1)'$date']«««t1
+¶= »['echo'|(2)"2. Parallel-Prozess"]«««t2
+»['echo'|"3. Hauptprozess läuft weiter"]«
+»['echo'|"Feed 1: "|¨(1)¨|¨(2)¨]«
+!¢
+¢!
+# SystemCMD | Wahrheit ¶/Wenn (Linear) | Aktions Verdrahtung
+»['sudo pacman -Syyu']
+    ¶ ['$terminal']«
+!¢
+
+
+¢!
+# SystemCMD | Print | Aktion | Transaktion
+    »['echo'|"test1.mcs wurde korrekt ausgeführt"]«
+!¢
+¢!
+# Feed transport | Blankernenner | SystemCMD | Argument ««t1 |
+»['pgrep'|¨firefox¨|(1)¨$pgrep firefox¨]«
+»['kill'|¨(1)¨]«««t1
+»['echo'|"Firefox (1) beendet"]«
+!¢
+¢!
+# Schwerste code bis lang
+° ['$terminal']
+  ¶ ['notify-send'|'OFFLINE']
+  ¶¶ ['notify-send'|'ONLINE']
+
+»['echo'|¨30¨|(1)]«
+»['echo'|¨25¨|(2)]«
+< (1)(2)
+  ¶ ['echo'|'WARN: 30 < 25? Nein!']
+  ¶¶ ['echo'|'OK: 30 ≥ 25']
+
+ſ (1)
+ſ (2)
+!¢
+
+ ┌[bandino@dev][19:49:47|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/mcscodes]> $
+
+
+
+und ab hier die roh daten , mit sogar schon dem freien weg für die operatoren , die implementierung zu ermöglichen hat zeit gekostet aber es funktioniert
+
+ ┌[bandino@dev][19:49:47|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/mcscodes]> $
+# Lab/ bereich
+cat /Pylovara/System/Kernel/Core/Lab/test_action.c /Pylovara/System/Kernel/Core/Lab/test_if.c /Pylovara/System/Kernel/Core/Lab/test_lexer.c /Pylovara/System/Kernel/Core/Lab/test_trans.c
+
+# Logic/ bereich
+cat /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/Logic/mcs_token.h
+
+# Lib/ könnte relevant sein
+cat /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_action.c
+
+# include/ bereich
+cat /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs.h
+
+# Core/ bereich
+cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt
+
+
+# Datenbank: (ich bau noch einen abhängigkeits cat baum)
+cat /Pylovara/System/Kernel/Core/include/mcs.h /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_warp.h main.c CMakeLists.txt /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/include/mcs_operatoren.h
+// Lab/test_action.c — FINAL
+#include <stdio.h>
+#include "mcs_action.h"
+
+int main() {
+    // Hex-literal — garantiert korrekt
+    const char input_bytes[] = {
+        0xC2, 0xBB,                    // »
+        0x5B,                          // [
+        0x27, 0x70, 0x67, 0x72, 0x65, 0x70, 0x27,  // 'pgrep'
+        0x7C,                          // |
+        0xC2, 0xA8, 0x66, 0x69, 0x72, 0x65, 0x66, 0x6F, 0x78, 0xC2, 0xA8,  // ¨firefox¨
+        0x7C,                          // |
+        0x28, 0x31, 0x29,              // (1)
+        0xC2, 0xA8, 0x24, 0x70, 0x67, 0x72, 0x65, 0x70, 0x20, 0x66, 0x69, 0x72, 0x65, 0x66, 0x6F, 0x78, 0xC2, 0xA8,  // ¨$pgrep firefox¨
+        0x5D,                          // ]
+        0xC2, 0xAB,                    // «
+        0xC2, 0xAB, 0xC2, 0xAB, 0x74, 0x31,  // «««t1
+        0x00
+    };
+    mcs_action_t* a = mcs_parse_action(input_bytes);
+    if (!a) {
+        printf("❌ Parse error\n");
+        return 1;
+    }
+
+    printf("✅ Action parsed:\n");
+    printf("   cmd            = %s\n", a->cmd ?: "(null)");
+    printf("   feed.id        = %d\n", a->feed.id);
+    printf("   blankernenner  = %s\n", a->blankernenner ?: "(null)");
+    printf("   arg.type       = %d (%s)\n", a->arg.type,
+           (a->arg.type == ARG_TIME) ? "TIME" : "OTHER");
+    printf("   arg.value      = %d\n", a->arg.value);
+
+    mcs_free_action(a);
+    return 0;
+}
+// Lab/test_if.c — v3.0-konform, fehlerfrei
+#include <stdio.h>
+#include "mcs_token.h"        // ← NICHT mcs_lexer.h!
+#include "mcs_wahrheiten.h"     // ← NICHT mcs_wahrheiten.h (kein -en!)
+
+int main() {
+    const char input[] = "¶ ¶¶";
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return 1;
+
+    mcs_token_t tok;
+
+    tok = mcs_lexer_next(lex);
+    printf("Token 1: %s\n",
+           mcs_token_is_wahrheit(tok.token_type) ? "WAHRHEIT (IF)" : "OTHER");
+
+    tok = mcs_lexer_next(lex);
+    printf("Token 2: %s\n",
+           mcs_token_is_wahrheit(tok.token_type) ? "WAHRHEIT (ELSE)" : "OTHER");
+
+    mcs_lexer_free(lex);
+    return 0;
+}
+// Lab/test_lexer.c — v2.9-konform, UTF-8-sicher, FEHLERFREI
+#include "mcs_token.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+const char* token_name(mcs_token_type_t t) {
+    switch (t) {
+        case TOK_TRANS_START: return "TOK_TRANS_START";
+        case TOK_TRANS_END: return "TOK_TRANS_END";
+        case TOK_ACTION_START: return "TOK_ACTION_START";
+        case TOK_ACTION_END: return "TOK_ACTION_END";
+        case TOK_OP_MARK: return "TOK_OP_MARK";
+        case TOK_FEED_OPEN: return "TOK_FEED_OPEN";
+        case TOK_FEED_CLOSE: return "TOK_FEED_CLOSE";
+        case TOK_BLANKERNER_QUOTE: return "TOK_BLANKERNER_QUOTE";
+        case TOK_STR_SGL_QUOTE: return "TOK_STR_SGL_QUOTE";
+        case TOK_ID: return "TOK_ID";
+        case TOK_NUMBER: return "TOK_NUMBER";
+        case TOK_COMMENT: return "TOK_COMMENT";
+        case TOK_EOF: return "TOK_EOF";
+        default: return "OTHER";
+    }
+}
+
+int main() {
+    // Lese Lab/test.mcs
+    const char* filename = "Lab/test.mcs";
+    FILE* f = fopen(filename, "r");
+    if (!f) {
+        fprintf(stderr, "[ERROR] Kann '%s' nicht öffnen.\n", filename);
+        return 1;
+    }
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    fseek(f, 0, SEEK_SET);
+
+    char* buf = malloc(size + 1);
+    if (!buf) {
+        perror("malloc");
+        fclose(f);
+        return 1;
+    }
+    fread(buf, 1, size, f);
+    buf[size] = '\0';
+    fclose(f);
+
+    printf("Tokens in %s:\n", filename);
+    mcs_lexer_t* lex = mcs_lexer_new(buf);  // ← deklariert VOR Schleife
+    if (!lex) {
+        fprintf(stderr, "[ERROR] Lexer-Init fehlgeschlagen.\n");
+        free(buf);
+        return 1;
+    }
+
+    mcs_token_t tok;  // ← deklariert VOR Schleife
+    while ((tok = mcs_lexer_next(lex)).token_type != TOK_EOF) {
+        // Sicherer Text-Extrakt (kein Absturz bei \0 im UTF-8)
+        char* text = malloc(tok.length + 1);
+        if (!text) break;
+        memcpy(text, tok.literal, tok.length);
+        text[tok.length] = '\0';
+
+        // Drucke lesbare Bytes
+        printf("  [%s] '", token_name(tok.token_type));
+        for (int i = 0; i < tok.length; i++) {
+            unsigned char c = (unsigned char)text[i];
+            if (c >= 32 && c < 127) {
+                putchar(c);
+            } else {
+                printf("\\x%02X", c);
+            }
+        }
+        printf("' (line %d, col %d)\n", tok.line, tok.column);
+
+        free(text);
+    }
+
+    mcs_lexer_free(lex);
+    free(buf);
+    printf("=== Lexing abgeschlossen ===\n");
+    return 0;
+}
+// Lab/test_trans.c
+#include <stdio.h>
+#include "mcs_token.h"
+#include "mcs_transaktion.h"
+
+int main() {
+    const char input_bytes[] = {
+        0xC2, 0xA2, 0x21,          // ¢!
+        0x20,                      // space
+        0xC2, 0xBB,                // »
+        0x5B,                      // [
+        0x27, 0x65, 0x63, 0x68, 0x6F, 0x27,  // 'echo'
+        0x7C,                      // |
+        0x22, 0x48, 0x61, 0x6C, 0x6C, 0x6F, 0x22,  // "Hallo"
+        0x5D,                      // ]
+        0xC2, 0xAB,                // «
+        0x20,                      // space
+        0x21, 0xC2, 0xA2,         // !¢
+        0x00
+    };
+    mcs_lexer_t* lex = mcs_lexer_new((const char*)input_bytes);
+    return 0;
+}
+// mcs_lexer.c — v2.9-konform, UTF-8-sicher, GCC-ready
+// Autor: Thomas Zimmermann / Qwen — basierend auf kernel 02–15, MCS 2.9
+
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "mcs_token.h"
+
+// 🔹 MUST be first: define the opaque struct
+struct mcs_lexer {
+    const char* input;
+    const char* pos;
+    int line, column;
+};
+
+// 🔹 Token table (sorted by length, longest first)
+typedef struct {
+    const char* symbol;
+    int length;
+    mcs_token_type_t type;
+} LexerEntry;
+
+static const LexerEntry TOKEN_TABLE[] = {
+    // 6 Bytes — Argument-Start-Signal (gemäß @kernel 15)
+    {"\xC2\xAB\xC2\xAB\xC2\xAB", 6, TOK_OP_MARK},   // ««« → 3 × 0xC2 0xAB = 6 Bytes
+
+    // 5 Bytes — Argument-Operatoren (6 - 1 = 5: 2+2 Bytes «« + 1 Byte Operator)
+    {"\xC2\xAB\xC2\xAB-", 5, TOK_ARG_MINUS},        // ««-
+    {"\xC2\xAB\xC2\xAB+", 5, TOK_ARG_PLUS},         // ««+
+    {"\xC2\xAB\xC2\xAB·", 5, TOK_ARG_MUL},          // ««·
+    {"\xC2\xAB\xC2\xAB:", 5, TOK_ARG_DIV},          // ««:
+    {"\xC2\xAB\xC2\xAB%", 5, TOK_ARG_PERCENT},      // ««%
+
+    // 4 Bytes
+    {"\xC2\xB6\xC2\xB6", 4, TOK_ELSE},              // ¶¶
+
+    // 3 Bytes
+    {"\xC2\xB6=", 3, TOK_PARALLEL_RUN},             // ¶=
+    {"\xC2\xA2!", 3, TOK_TRANS_START},              // ¢!
+    {"!\xC2\xA2", 3, TOK_TRANS_END},                // !¢
+    {"\xE2\x80\xA6", 3, TOK_ON_ERROR},              // … (U+2026)
+    {"\xE2\x80\x99", 3, TOK_STR_TICK_QUOTE},        // ’ (U+2019)
+    {"\xE2\x8A\x95", 3, TOK_SYNC_TIMER},            // ⊕ (U+2295)
+
+    // 2 Bytes
+    {";;", 2, TOK_PARALLEL_TRANSPORT},              // ;;
+    {"\xC2\xBB", 2, TOK_ACTION_START},              // »
+    {"\xC2\xAB", 2, TOK_ACTION_END},                // «
+    {"\xC5\xBF", 2, TOK_DATA_RESIDUE},              // ſ (U+017F)
+    {"\xC2\xA8", 2, TOK_BLANKERNER_QUOTE},          // ¨ (U+00A8)
+    {"\xC2\xB6", 2, TOK_IF},                        // ¶ (U+00B6)
+    {"\xC2\xB0", 2, TOK_WHEN_NOT},                  // ° (U+00B0)
+    {"\xC2\xA7", 2, TOK_TARGET_REF_PREFIX},         // § (U+00A7)
+    {"\xC3\xB8", 2, TOK_WARP},                      // ø (U+00F8)
+    {"\xC3\xBE", 2, TOK_THETA_ID_PREFIX},           // þ (U+00FE)
+
+    // 1 Byte
+    {"[", 1, TOK_PROTEIN_OPEN},
+    {"]", 1, TOK_PROTEIN_CLOSE},
+    {"{", 1, TOK_PROTON_OPEN},
+    {"}", 1, TOK_PROTON_CLOSE},
+    {"|", 1, TOK_SEP},
+    {"\"", 1, TOK_STR_DBL_QUOTE},
+    {"'", 1, TOK_STR_SGL_QUOTE},
+    {">", 1, TOK_WHEN_GT},
+    {"<", 1, TOK_WHEN_LT},
+    {"!", 1, TOK_MUST},
+    {"(", 1, TOK_FEED_OPEN},
+    {")", 1, TOK_FEED_CLOSE},
+    {"$", 1, TOK_DIRIGENT_PREFIX},
+    {"^", 1, TOK_TRANS_ERROR},
+    {"#", 1, TOK_COMMENT}
+};
+#define TOKEN_TABLE_SIZE (sizeof(TOKEN_TABLE) / sizeof(LexerEntry))
+
+// ────────────────────────────────────────────────────────────────
+// Helper functions
+// ────────────────────────────────────────────────────────────────
+
+static void advance(mcs_lexer_t* lex, int n) {
+    for (int i = 0; i < n; i++) {
+        if (*lex->pos == '\n') {
+            lex->line++; lex->column = 1;
+        } else {
+            lex->column++;
+        }
+        lex->pos++;
+    }
+}
+
+static void skip_whitespace(mcs_lexer_t* lex) {
+    while (*lex->pos && isspace((unsigned char)*lex->pos)) {
+        advance(lex, 1);
+    }
+}
+
+// ────────────────────────────────────────────────────────────────
+// Public API
+// ────────────────────────────────────────────────────────────────
+
+mcs_lexer_t* mcs_lexer_new(const char* input) {
+    mcs_lexer_t* lex = malloc(sizeof(mcs_lexer_t));
+    if (!lex) return NULL;
+    lex->input = input;
+    lex->pos = input;
+    lex->line = 1;
+    lex->column = 1;
+    return lex;
+}
+
+void mcs_lexer_free(mcs_lexer_t* lex) {
+    free(lex);
+}
+
+mcs_token_t mcs_lexer_next(mcs_lexer_t* lex) {
+    mcs_token_t tok;
+    skip_whitespace(lex);
+
+    tok.line = lex->line;
+    tok.column = lex->column;
+    tok.literal = lex->pos;
+
+    if (*lex->pos == '\0') {
+        tok.token_type = TOK_EOF;
+        tok.length = 0;
+        return tok;
+    }
+
+    // 🔥 Maximum-Munch: longest match first
+    for (size_t i = 0; i < TOKEN_TABLE_SIZE; i++) {
+        const LexerEntry* e = &TOKEN_TABLE[i];
+        if (memcmp(lex->pos, e->symbol, e->length) == 0) {
+            tok.token_type = e->type;
+            tok.length = e->length;
+
+            if (tok.token_type == TOK_COMMENT) {
+                while (*lex->pos && *lex->pos != '\n') lex->pos++;
+                return mcs_lexer_next(lex);
+            }
+
+            advance(lex, tok.length);
+            return tok;
+        }
+    }
+
+    // Fallback: ID (alphanum, _-.)
+    if (isalpha((unsigned char)*lex->pos) || *lex->pos == '_') {
+        tok.token_type = TOK_ID;
+        const char* start = lex->pos;
+        while (isalnum((unsigned char)*lex->pos) ||
+            *lex->pos == '_' || *lex->pos == '-' || *lex->pos == '.') {
+            lex->pos++;
+            }
+            tok.length = (int)(lex->pos - start);
+        return tok;
+    }
+
+    // Fallback: NUMBER
+    if (isdigit((unsigned char)*lex->pos)) {
+        tok.token_type = TOK_NUMBER;
+        const char* start = lex->pos;
+        while (isdigit((unsigned char)*lex->pos)) lex->pos++;
+        tok.length = (int)(lex->pos - start);
+        return tok;
+    }
+
+    // Fallback: single char
+    tok.token_type = TOK_LITERAL;
+    tok.length = 1;
+    advance(lex, 1);
+    return tok;
+}
+// mcs_lexer.h — v2.9 API
+#ifndef MCS_LEXER_H
+#define MCS_LEXER_H
+
+typedef enum {
+    TOK_UNKNOWN = 0,
+    TOK_COMMENT, TOK_ID, TOK_NUMBER, TOK_LITERAL,
+    TOK_TRANS_START, TOK_TRANS_END,
+    TOK_ACTION_START, TOK_ACTION_END,
+    TOK_PROTEIN_OPEN, TOK_PROTEIN_CLOSE,
+    TOK_PROTON_OPEN, TOK_PROTON_CLOSE,
+    TOK_SEP,
+    TOK_STR_DBL_QUOTE, TOK_STR_SGL_QUOTE,
+    TOK_STR_TICK_QUOTE, TOK_BLANKERNER_QUOTE,
+    TOK_IF, TOK_ELSE, TOK_PARALLEL_RUN, TOK_PARALLEL_TRANSPORT,
+    TOK_WHEN_NOT, TOK_WHEN_GT, TOK_WHEN_LT, TOK_MUST,
+    TOK_ON_ERROR, TOK_TRANS_ERROR, TOK_DATA_RESIDUE, TOK_SYNC_TIMER,
+    TOK_FEED_OPEN, TOK_FEED_CLOSE,
+    TOK_TARGET_REF_PREFIX, TOK_DIRIGENT_PREFIX,
+    TOK_WARP, TOK_THETA_ID_PREFIX,
+    TOK_OP_MARK, TOK_ARG_MINUS, TOK_ARG_PLUS,
+    TOK_ARG_MUL, TOK_ARG_DIV, TOK_ARG_PERCENT,
+    TOK_EOF
+} mcs_token_type_t;
+
+typedef struct {
+    mcs_token_type_t token_type;
+    const char* literal;
+    int length;
+    int line, column;
+} mcs_token_t;
+
+typedef struct mcs_lexer mcs_lexer_t;
+
+mcs_lexer_t* mcs_lexer_new(const char* input);
+void         mcs_lexer_free(mcs_lexer_t* lex);
+mcs_token_t  mcs_lexer_next(mcs_lexer_t* lex);
+
+#endif // MCS_LEXER_H
+// Lib/mcs_wahrheiten.c — v3.0-konform, containerbasiert, fehlerfrei
+#include "mcs_wahrheiten.h"
+
+int mcs_token_is_wahrheit(mcs_token_type_t tt) {
+    return tt == TOK_IF || tt == TOK_ELSE ||
+    tt == TOK_WHEN_NOT || tt == TOK_MUST ||
+    tt == TOK_ON_ERROR || tt == TOK_PARALLEL_RUN ||
+    tt == TOK_PARALLEL_TRANSPORT;
+}
+
+mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt) {
+    switch (tt) {
+        case TOK_IF:                    return WAHR_IF;
+        case TOK_ELSE:                  return WAHR_ELSE;
+        case TOK_WHEN_NOT:              return WAHR_WHEN_NOT;
+        case TOK_MUST:                  return WAHR_MUST;
+        case TOK_ON_ERROR:              return WAHR_ON_ERROR;
+        case TOK_PARALLEL_RUN:          return WAHR_PARALLEL_RUN;
+        case TOK_PARALLEL_TRANSPORT:    return WAHR_PARALLEL_TRANSPORT;
+        default:                        return WAHR_NONE;
+    }
+}
+// Lib/mcs_semantics.c — Semantische Logik
+// Lib/mcs_semantics.c — v3.0: Wahrheits-Bewertung & Bedeutungszuordnung
+#include "mcs_semantics.h"
+#include "mcs_runner.h"   // für mcs_run_protein()
+#include <unistd.h>       // für system()
+
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w) {
+    switch (w) {
+        case WAHR_IF:          return SEMANTIC_IF;
+        case WAHR_ELSE:        return SEMANTIC_ELSE;
+        case WAHR_WHEN_NOT:    return SEMANTIC_WHEN_NOT;
+        case WAHR_MUST:        return SEMANTIC_MUST;
+        case WAHR_ON_ERROR:    return SEMANTIC_ON_ERROR;
+        case WAHR_PARALLEL_RUN:return SEMANTIC_PARALLEL;
+        case WAHR_PARALLEL_TRANSPORT: return SEMANTIC_PARALLEL_TRANSPORT;
+        default:               return SEMANTIC_NONE;
+    }
+}
+
+// Nur Bedingung *prüfen*, nicht ausführen → sichere Prüfung
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond) {
+    if (!cond || !cond->action || !cond->action->cmd) return MCS_FALSE;
+
+    // Beispiel: ['$terminal'] → prüfen, ob Prozess läuft
+    if (strcmp(cond->action->cmd, "$terminal") == 0) {
+        int r = system("pgrep -x kitty > /dev/null 2>&1 || pgrep -x alacritty > /dev/null 2>&1");
+        return (WIFEXITED(r) && WEXITSTATUS(r) == 0) ? MCS_TRUE : MCS_FALSE;
+    }
+    // Fallback: führe aus & schaue Exit-Code
+    int res = mcs_run_protein(cond);
+    if (res == MCS_OK) return MCS_TRUE;
+    if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+    return MCS_FALSE;
+}
+
+// Bedingung *ausführen* und Ergebnis liefern
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p) {
+    if (!p) return MCS_FALSE;
+    int res = mcs_run_protein(p);
+    return (res == MCS_OK) ? MCS_TRUE : (res < 0 ? MCS_ERROR : MCS_FALSE);
+}
+// Lib/mcs_operatoren.c — v3.0: Minimal, sicher, feed-basiert
+#include "mcs_operatoren.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+mcs_operator_t* mcs_operator_new(void) {
+    return calloc(1, sizeof(mcs_operator_t));
+}
+
+void mcs_operator_free(mcs_operator_t* op) {
+    if (!op) return;
+    if (op->type == MCS_OP_WHEN_NOT) {
+        mcs_free_protein(op->data.not.cond);
+    }
+    mcs_free_protein(op->then_branch);
+    mcs_free_protein(op->else_branch);
+    free(op);
+}
+
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type) {
+    if (!op) return 0;
+    op->type = type;
+    return 1;
+}
+
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p) {
+    if (!op || !p || op->type != MCS_OP_WHEN_NOT) return 0;
+    op->data.not.cond = p;
+    return 1;
+}
+
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b) {
+    if (!op || id_a < 0 || id_b < 0) return 0;
+    if (op->type != MCS_OP_WHEN_LT && op->type != MCS_OP_WHEN_GT) return 0;
+    op->data.cmp.left_id = id_a;
+    op->data.cmp.right_id = id_b;
+    return 1;
+}
+
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id) {
+    if (!op || feed_id < 0) return 0;
+    if (op->type != MCS_OP_DATA_RESIDUE) return 0;
+    op->data.residue_id = feed_id;
+    return 1;
+}
+
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb) {
+    if (!op) return 0;
+    op->then_branch = then;
+    op->else_branch = elseb;
+    return 1;
+}
+
+mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op) {
+    if (!op) return MCS_ERROR;
+
+    switch (op->type) {
+        case MCS_OP_WHEN_NOT: {
+            if (!op->data.not.cond) return MCS_ERROR;
+            mcs_truth_t cond = mcs_evaluate_condition(op->data.not.cond);
+            return (cond == MCS_FALSE) ? MCS_TRUE : (cond == MCS_TRUE ? MCS_FALSE : MCS_ERROR);
+        }
+
+        case MCS_OP_WHEN_LT:
+        case MCS_OP_WHEN_GT: {
+            const char* a_str = mcs_feed_get(op->data.cmp.left_id);
+            const char* b_str = mcs_feed_get(op->data.cmp.right_id);
+            if (!a_str || !b_str) return MCS_ERROR;
+
+            double a = atof(a_str);
+            double b = atof(b_str);
+
+            if (op->type == MCS_OP_WHEN_LT) return (a < b) ? MCS_TRUE : MCS_FALSE;
+            else                             return (a > b) ? MCS_TRUE : MCS_FALSE;
+        }
+
+        case MCS_OP_TRANS_ERROR:
+        case MCS_OP_DATA_RESIDUE:
+            return MCS_TRUE; // Annotationen → keine Auswertung nötig
+
+        default:
+            return MCS_ERROR;
+    }
+}
+// Lib/mcs_argument.c — v3.0, mit Kontext und Sicherheitslimits
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <limits.h>   // Fehlte! Für INT_MIN, INT_MAX
+#include "mcs_argument.h"
+
+int mcs_parse_argument(mcs_lexer_t* lex, mcs_argument_t* out) {
+    if (!lex || !out) return 0;
+    *out = (mcs_argument_t){0};
+
+    mcs_token_t tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_OP_MARK) return 0;  // «««
+
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_ARG_MINUS)   { out->type = ARG_MINUS;   }
+    else if (tok.token_type == TOK_ARG_PLUS){ out->type = ARG_PLUS;    }
+    else if (tok.token_type == TOK_ARG_MUL) { out->type = ARG_MUL;     }
+    else if (tok.token_type == TOK_ARG_DIV) { out->type = ARG_DIV;     }
+    else if (tok.token_type == TOK_ARG_PERCENT){ out->type = ARG_PERCENT; out->unit = UNIT_PERCENT; }
+    else if (tok.token_type == TOK_ID && tok.length >= 2) {
+        const char* s = tok.literal;
+        if (s[0] == 't') {
+            out->type = ARG_TIME;
+            out->unit = UNIT_SECONDS;
+            out->value = atof(s + 1);
+        } else if (s[0] == 'r') {
+            out->type = ARG_REBOOT;
+            out->unit = UNIT_SECONDS;
+            out->value = atof(s + 1);
+        } else if (s[0] == '%') {
+            out->type = ARG_PERCENT;
+            out->unit = UNIT_PERCENT;
+            out->value = atof(s + 1);
+        }
+    }
+
+    // Sicherheitslimits
+    switch (out->type) {
+        case ARG_TIME: case ARG_REBOOT:
+            out->min_value = 0;
+            out->max_value = 86400;  // max 24h (später konfigurierbar)
+            break;
+        case ARG_PERCENT:
+            out->min_value = 0;
+            out->max_value = 100;
+            break;
+        default:
+            out->min_value = INT_MIN;
+            out->max_value = INT_MAX;
+    }
+
+    return mcs_validate_argument(out);
+}
+
+int mcs_validate_argument(const mcs_argument_t* a) {
+    if (!a) return 0;
+    if (a->value < a->min_value || a->value > a->max_value) return 0;
+    if (a->type == ARG_PERCENT && a->unit != UNIT_PERCENT) return 0;
+    if (a->type == ARG_TIME && a->unit != UNIT_SECONDS) return 0;
+    return 1;
+}
+
+// Context-Aware Value Resolution (z.B. bei hoher CPU-Last → %50 = 30%, nicht 50%)
+double mcs_resolve_value(const mcs_argument_t* a, int system_load) {
+    if (!a) return 0.0;
+    if (a->unit == UNIT_PERCENT) {
+        // Dynamische Skalierung: bei 90% Last → 50% = 30% erlaubt
+        double scale = 1.0 - (system_load / 200.0); // 0–100% Load → 1.0–0.5 Skalierung
+        return a->value * scale;
+    }
+    return a->value;
+}
+// Lib/mcs_action.c — v3.0 Parser-only (Runner-Logik kommt später!)
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_action.h"
+#include "mcs_argument.h"
+
+mcs_action_t* mcs_parse_action(const char* input) {
+    if (!input) return NULL;
+
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return NULL;
+
+    mcs_action_t* a = calloc(1, sizeof(mcs_action_t));
+    if (!a) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
+
+    mcs_token_t tok;
+
+    // »
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ACTION_START) goto fail;
+
+    // [
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_PROTEIN_OPEN) goto fail;
+
+    // 'cmd'
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_STR_SGL_QUOTE) goto fail;
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ID) goto fail;
+    a->cmd = token_to_string(tok);
+
+    // |
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_SEP) goto fail;
+
+    // (1) — optional
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_FEED_OPEN) {
+        tok = mcs_lexer_next(lex);
+        a->feed.id = extract_number(tok);
+        a->feed.is_set = (a->feed.id > 0);
+        tok = mcs_lexer_next(lex); // )
+    }
+
+    // ¨...¨ oder "..." — arg1 / blankernenner
+    if (tok.token_type == TOK_BLANKERNER_QUOTE) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ID || tok.token_type == TOK_LITERAL) {
+            a->blankernenner = token_to_string(tok);
+        }
+    } else if (tok.token_type == TOK_STR_DBL_QUOTE) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ID || tok.token_type == TOK_NUMBER) {
+            a->arg1 = token_to_string(tok);
+        }
+    }
+
+    // ]
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_PROTEIN_CLOSE) goto fail;
+
+    // « — Aktion-Ende
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ACTION_END) goto fail;
+
+    // ✅ JETZT: Argumente *parsen* — aber NICHT auswerten!
+    mcs_parse_argument(lex, &a->arg);
+    if (!mcs_validate_argument(&a->arg)) {
+        goto fail;
+    }
+
+    mcs_lexer_free(lex);
+    return a;
+
+    fail:
+    mcs_lexer_free(lex);
+    if (a) {
+        free(a->cmd);
+        free(a->arg1);
+        free(a->blankernenner);
+        free(a);
+    }
+    return NULL;
+}
+
+void mcs_free_action(mcs_action_t* a) {
+    if (!a) return;
+    free(a->cmd);
+    free(a->arg1);
+    free(a->blankernenner);
+    free(a);
+}
+// include/mcs_wahrheit.h — v3.0, *nur* Deklaration
+#ifndef MCS_WAHRHEIT_H
+#define MCS_WAHRHEIT_H
+
+#include "mcs_token.h"   // ← für mcs_token_type_t
+
+// 🔹 Enum muss *vor* Funktionsdeklaration kommen!
+typedef enum {
+    WAHR_NONE = 0,
+    WAHR_IF,          // ¶
+    WAHR_ELSE,        // ¶¶
+    WAHR_WHEN_NOT,    // °
+    WAHR_MUST,        // !
+    WAHR_ON_ERROR,    // …
+    WAHR_PARALLEL_RUN,      // ¶=
+    WAHR_PARALLEL_TRANSPORT // ;;
+} mcs_wahrheit_t;
+
+// 🔹 Nur Deklarationen — KEINE Implementierung!
+int mcs_token_is_wahrheit(mcs_token_type_t tt);
+mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt);
+
+#endif // MCS_WAHRHEIT_H
+// include/mcs_sematics.h - Wahrheitstabelle & Bedeutungslogik
+// include/mcs_semantics.h — v3.0 Semantik-Kern
+#ifndef MCS_SEMANTICS_H
+#define MCS_SEMANTICS_H
+
+#include "mcs_token.h"
+#include "mcs_protein.h"
+
+// Logische Wahrheitswerte (nicht BOOL — explizit klar)
+typedef enum {
+    MCS_FALSE = 0,
+    MCS_TRUE = 1,
+    MCS_ERROR = -1   // Fehler bei Auswertung (z.B. SIGKILL)
+} mcs_truth_t;
+
+// Semantische Bedeutung jeder Wahrheit
+typedef enum {
+    SEMANTIC_IF,          // ¶ — führe aus, WENN Bedingung TRUE
+    SEMANTIC_ELSE,        // ¶¶ — führe aus, WENN vorherige Bedingung FALSE
+    SEMANTIC_WHEN_NOT,    // ° — führe aus, WENN Bedingung FALSE
+    SEMANTIC_MUST,        // ! — Sofort, unbedingt (keine Bedingung, Timeout-gesteuert)
+    SEMANTIC_ON_ERROR,    // … — Nur bei vorherigem Fehler
+    SEMANTIC_PARALLEL,    // ¶= — Fork & Exec
+    SEMANTIC_PARALLEL_TRANSPORT, // ;; — Datenfluss ohne Blockieren
+    SEMANTIC_NONE
+} mcs_semantic_op_t;
+
+// Öffentliche API
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w);
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p);  // führt aus & gibt MCS_TRUE/FALSE zurück
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond); // Nur Bedingung prüfen, nicht ausführen
+
+#endif
+// include/mcs_runner.h — v3.0 Runner-API
+#ifndef MCS_RUNNER_H
+#define MCS_RUNNER_H
+
+#include "mcs_transaktion.h"
+
+// Fehlercodes (erweiterbar)
+#define MCS_OK               0
+#define MCS_ERR_SYNTAX      -1
+#define MCS_ERR_IO          -2
+#define MCS_ERR_SECURITY    -3
+#define MCS_ERR_TIMEOUT     -4
+#define MCS_ERR_FEED        -5
+#define MCS_ERR_SYSTEM      -6   // ← NEU für fork/exec-Fehler
+
+// Public API
+int mcs_run_transaktion(mcs_transaktion_t* t);
+int mcs_run_protein(mcs_protein_t* p);
+int mcs_run_action(mcs_action_t* a);
+
+#endif
+// include/mcs_operatoren.h — v3.0: Operator-Semantik, *named struct*, kompatibel mit Forward-Dekl.
+#ifndef MCS_OPERATOREN_H
+#define MCS_OPERATOREN_H
+
+#include "mcs_protein.h"
+#include "mcs_semantics.h"   // ← für mcs_truth_t
+
+typedef enum {
+    MCS_OP_NONE = 0,
+    MCS_OP_WHEN_NOT,    // °
+    MCS_OP_WHEN_LT,     // <
+    MCS_OP_WHEN_GT,     // >
+    MCS_OP_TRANS_ERROR, // ^
+    MCS_OP_DATA_RESIDUE // ſ
+} mcs_op_type_t;
+
+// 🔹 WICHTIG: Benannter struct — NICHT anonym!
+struct mcs_operator {
+    mcs_op_type_t type;
+    union {
+        struct { mcs_protein_t* cond; } not;
+        struct { int left_id; int right_id; } cmp;
+        int residue_id;
+    } data;
+    mcs_protein_t* then_branch;
+    mcs_protein_t* else_branch;
+};
+typedef struct mcs_operator mcs_operator_t;
+
+// Public API
+mcs_operator_t* mcs_operator_new(void);
+void mcs_operator_free(mcs_operator_t* op);
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type);
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p);
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b);
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id);
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb);
+
+mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op);
+
+#endif // MCS_OPERATOREN_H
+// include/mcs_argument.h — v3.0, mit Einheiten & Sicherheitskontext
+#ifndef MCS_ARGUMENT_H
+#define MCS_ARGUMENT_H
+
+#include "mcs_token.h"
+
+// Einheiten für zeitliche/quantitative Argumente
+typedef enum {
+    UNIT_NONE = 0,
+    UNIT_SECONDS,
+    UNIT_MILLISECONDS,
+    UNIT_PERCENT,
+    UNIT_ABSOLUTE    // z.B. PID, Thread-ID, Watt
+} mcs_unit_t;
+
+// Argument-Typen (gemäß @kernel 15, erweitert um Semantik)
+typedef enum {
+    ARG_NONE = 0,
+    ARG_MINUS,    // «««- → Subtraktion
+    ARG_PLUS,     // «««+ → Addition
+    ARG_MUL,      // «««· → Multiplikation
+    ARG_DIV,      // «««: → Division
+    ARG_PERCENT,  // «««%N → Prozent (0–100)
+    ARG_TIME,     // «««tN → Zeit (ms/s)
+    ARG_REBOOT,   // «««rN → Reboot-Verzögerung
+    ARG_KILL,     // «««kN → SIGKILL nach N Sekunden (später)
+    ARG_THROTTLE  // «««wN → Watt-Begrenzung (später)
+} mcs_arg_type_t;
+
+// Argument-Container mit Semantik
+typedef struct {
+    mcs_arg_type_t type;
+    mcs_unit_t     unit;
+    double         value;      // double für %0.5, 1.5s, etc.
+    int            min_value;  // Sicherheitslimit: z.B. ARG_TIME ≥ 0
+    int            max_value;  // z.B. ARG_PERCENT ≤ 100
+    const char*    context;    // z.B. "CPU", "NET", "STORAGE"
+} mcs_argument_t;
+
+// Public API
+int mcs_parse_argument(mcs_lexer_t* lex, mcs_argument_t* out);
+int mcs_validate_argument(const mcs_argument_t* a);
+double mcs_resolve_value(const mcs_argument_t* a, int system_load); // Context-Aware
+
+#endif
+// include/mcs_action.h — FINAL v3.0
+#ifndef MCS_ACTION_H
+#define MCS_ACTION_H
+
+#include <stdlib.h>   // ← für atoi()
+#include <string.h>   // ← für strndup()
+#include "mcs_token.h"
+#include "mcs_feed.h"
+#include "mcs_argument.h"
+
+typedef struct {
+    char* cmd;
+    char* arg1;
+    mcs_feed_t feed;
+    char* blankernenner;
+    mcs_argument_t arg;
+} mcs_action_t;
+
+mcs_action_t* mcs_parse_action(const char* input);
+void mcs_free_action(mcs_action_t* a);
+
+// Inline-Hilfen — jetzt mit korrektem Scope
+static inline char* token_to_string(mcs_token_t tok) {
+    return tok.length > 0 ? strndup(tok.literal, tok.length) : NULL;
+}
+static inline int extract_number(mcs_token_t tok) {
+    return (tok.token_type == TOK_NUMBER && tok.length > 0)
+    ? atoi(tok.literal) : 0;
+}
+
+#endif
+#ifndef MCS_H
+#define MCS_H
+
+// Public structs (opaque)
+typedef struct mcs_ast mcs_ast_t;
+
+// Public API
+mcs_ast_t*  mcs_parse_file(const char* path);
+mcs_ast_t*  mcs_parse_string(const char* src);
+int         mcs_run_ast(mcs_ast_t* ast);
+void        mcs_free_ast(mcs_ast_t* ast);
+
+// Fehlercodes (öffentlich)
+#define MCS_OK               0
+#define MCS_ERR_SYNTAX      -1
+#define MCS_ERR_IO          -2
+#define MCS_ERR_SECURITY    -3
+
+#endif
+// main.c — MCS v3.0 Runner (UTF-8-konform, sicher, modular)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_token.h"
+#include "mcs_transaktion.h"
+#include "mcs_runner.h"
+#include "mcs_feed.h"   // ← für mcs_feed_init()
+
+void print_usage(const char* prog) {
+    fprintf(stderr, "Usage: %s <file.mcs>\n", prog);
+    exit(1);
+}
+
+int main(int argc, char* argv[]) {
+    // 🔹 1. RAM-Initialisierung — MUSS ZUERST!
+    mcs_feed_init();
+
+    // 🔹 2. Argument-Check
+    if (argc != 2) print_usage(argv[0]);
+
+    const char* filename = argv[1];
+    FILE* f = fopen(filename, "r");
+    if (!f) {
+        fprintf(stderr, "[ERROR] Cannot open '%s'\n", filename);
+        return 1;
+    }
+
+    // 🔹 3. Datei einlesen
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    char* buf = malloc(size + 1);
+    if (!buf) { perror("malloc"); fclose(f); return 1; }
+    fread(buf, 1, size, f);
+    buf[size] = '\0';
+    fclose(f);
+
+    // 🔹 4. Parsen
+    mcs_transaktion_t* t = mcs_parse_transaktion(buf);
+    if (!t || !t->is_valid) {
+        fprintf(stderr, "[PARSE ERROR] Invalid MCS syntax in '%s'\n", filename);
+        free(buf);
+        return 1;
+    }
+
+    // 🔹 5. Ausführen
+    int result = mcs_run_transaktion(t);
+    if (result != MCS_OK) {
+        fprintf(stderr, "[RUNTIME ERROR] Code %d\n", result);
+    } else {
+        printf("✅ MCS executed successfully.\n");
+    }
+
+    // 🔹 6. Aufräumen
+    mcs_free_transaktion(t);
+    free(buf);
+    return result;
+}
+# /Pylovara/System/Kernel/Core/CMakeLists.txt
+cmake_minimum_required(VERSION 3.14)
+project(PylovaraKernel VERSION 2.9 LANGUAGES C)
+
+include_directories(
+    ${CMAKE_SOURCE_DIR}/include   # Öffentliche API, Priorität 1
+    ${CMAKE_SOURCE_DIR}/Logic     # Lexer-Header
+    ${CMAKE_SOURCE_DIR}/Lib       # Für Legacy (später entfernen)
+    ${CMAKE_SOURCE_DIR}/Lab       # Spätere Testphasen
+)
+
+# Quellen sammeln
+set(SRC_LIB
+    Lib/mcs_action.c
+    Lib/mcs_argument.c
+    Lib/mcs_feed.c
+    Lib/mcs_protein.c
+    Lib/mcs_proton.c
+    Lib/mcs_warp.c
+    Lib/mcs_wahrheiten.c
+    Lib/mcs_transaktion.c
+    Lib/mcs_eingaben.c
+    Lib/mcs_runner.c
+    Lib/mcs_semantics.c   # ✅ FEHLT BISHER — JETZT HINZUFÜGEN!
+    Logic/mcs_lexer.c
+)
+
+set(SRC_LOGIC
+    Logic/mcs_lexer.c
+)
+
+# Bibliothek bauen (statisch)
+#add_library(mcs_core STATIC ${SRC_LIB} ${SRC_LOGIC})
+add_library(mcs_core STATIC
+    Lib/mcs_action.c
+    Lib/mcs_argument.c
+    Lib/mcs_feed.c
+    Lib/mcs_protein.c
+    Lib/mcs_proton.c
+    Lib/mcs_warp.c
+    Lib/mcs_wahrheiten.c
+    Lib/mcs_semantics.c
+    Lib/mcs_operatoren.c   # ← VOR mcs_transaktion.c verschoben
+    Lib/mcs_transaktion.c
+    Lib/mcs_eingaben.c
+    Lib/mcs_runner.c
+    Logic/mcs_lexer.c
+)
+
+# Test-Programme
+add_executable(test_lexer Lab/test_lexer.c)
+target_link_libraries(test_lexer mcs_core)
+
+add_executable(test_action Lab/test_action.c)
+target_link_libraries(test_action mcs_core)
+
+add_executable(test_if Lab/test_if.c)
+target_link_libraries(test_if mcs_core)
+
+add_executable(test_trans Lab/test_trans.c)
+target_link_libraries(test_trans mcs_core)
+
+# Optional: Hauptprogramm
+# add_executable(pylovara_kernel main.c)
+# target_link_libraries(pylovara_kernel mcs_core)
+
+add_executable(mcs main.c)
+target_link_libraries(mcs mcs_core)
+
+
+
+
+#ifndef MCS_H
+#define MCS_H
+
+// Public structs (opaque)
+typedef struct mcs_ast mcs_ast_t;
+
+// Public API
+mcs_ast_t*  mcs_parse_file(const char* path);
+mcs_ast_t*  mcs_parse_string(const char* src);
+int         mcs_run_ast(mcs_ast_t* ast);
+void        mcs_free_ast(mcs_ast_t* ast);
+
+// Fehlercodes (öffentlich)
+#define MCS_OK               0
+#define MCS_ERR_SYNTAX      -1
+#define MCS_ERR_IO          -2
+#define MCS_ERR_SECURITY    -3
+
+#endif
+// Lib/mcs_action.c — v3.0 Parser-only (Runner-Logik kommt später!)
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_action.h"
+#include "mcs_argument.h"
+
+mcs_action_t* mcs_parse_action(const char* input) {
+    if (!input) return NULL;
+
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return NULL;
+
+    mcs_action_t* a = calloc(1, sizeof(mcs_action_t));
+    if (!a) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
+
+    mcs_token_t tok;
+
+    // »
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ACTION_START) goto fail;
+
+    // [
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_PROTEIN_OPEN) goto fail;
+
+    // 'cmd'
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_STR_SGL_QUOTE) goto fail;
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ID) goto fail;
+    a->cmd = token_to_string(tok);
+
+    // |
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_SEP) goto fail;
+
+    // (1) — optional
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_FEED_OPEN) {
+        tok = mcs_lexer_next(lex);
+        a->feed.id = extract_number(tok);
+        a->feed.is_set = (a->feed.id > 0);
+        tok = mcs_lexer_next(lex); // )
+    }
+
+    // ¨...¨ oder "..." — arg1 / blankernenner
+    if (tok.token_type == TOK_BLANKERNER_QUOTE) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ID || tok.token_type == TOK_LITERAL) {
+            a->blankernenner = token_to_string(tok);
+        }
+    } else if (tok.token_type == TOK_STR_DBL_QUOTE) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ID || tok.token_type == TOK_NUMBER) {
+            a->arg1 = token_to_string(tok);
+        }
+    }
+
+    // ]
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_PROTEIN_CLOSE) goto fail;
+
+    // « — Aktion-Ende
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_ACTION_END) goto fail;
+
+    // ✅ JETZT: Argumente *parsen* — aber NICHT auswerten!
+    mcs_parse_argument(lex, &a->arg);
+    if (!mcs_validate_argument(&a->arg)) {
+        goto fail;
+    }
+
+    mcs_lexer_free(lex);
+    return a;
+
+    fail:
+    mcs_lexer_free(lex);
+    if (a) {
+        free(a->cmd);
+        free(a->arg1);
+        free(a->blankernenner);
+        free(a);
+    }
+    return NULL;
+}
+
+void mcs_free_action(mcs_action_t* a) {
+    if (!a) return;
+    free(a->cmd);
+    free(a->arg1);
+    free(a->blankernenner);
+    free(a);
+}
+// Lib/mcs_argument.c — v3.0, mit Kontext und Sicherheitslimits
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <limits.h>   // Fehlte! Für INT_MIN, INT_MAX
+#include "mcs_argument.h"
+
+int mcs_parse_argument(mcs_lexer_t* lex, mcs_argument_t* out) {
+    if (!lex || !out) return 0;
+    *out = (mcs_argument_t){0};
+
+    mcs_token_t tok = mcs_lexer_next(lex);
+    if (tok.token_type != TOK_OP_MARK) return 0;  // «««
+
+    tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_ARG_MINUS)   { out->type = ARG_MINUS;   }
+    else if (tok.token_type == TOK_ARG_PLUS){ out->type = ARG_PLUS;    }
+    else if (tok.token_type == TOK_ARG_MUL) { out->type = ARG_MUL;     }
+    else if (tok.token_type == TOK_ARG_DIV) { out->type = ARG_DIV;     }
+    else if (tok.token_type == TOK_ARG_PERCENT){ out->type = ARG_PERCENT; out->unit = UNIT_PERCENT; }
+    else if (tok.token_type == TOK_ID && tok.length >= 2) {
+        const char* s = tok.literal;
+        if (s[0] == 't') {
+            out->type = ARG_TIME;
+            out->unit = UNIT_SECONDS;
+            out->value = atof(s + 1);
+        } else if (s[0] == 'r') {
+            out->type = ARG_REBOOT;
+            out->unit = UNIT_SECONDS;
+            out->value = atof(s + 1);
+        } else if (s[0] == '%') {
+            out->type = ARG_PERCENT;
+            out->unit = UNIT_PERCENT;
+            out->value = atof(s + 1);
+        }
+    }
+
+    // Sicherheitslimits
+    switch (out->type) {
+        case ARG_TIME: case ARG_REBOOT:
+            out->min_value = 0;
+            out->max_value = 86400;  // max 24h (später konfigurierbar)
+            break;
+        case ARG_PERCENT:
+            out->min_value = 0;
+            out->max_value = 100;
+            break;
+        default:
+            out->min_value = INT_MIN;
+            out->max_value = INT_MAX;
+    }
+
+    return mcs_validate_argument(out);
+}
+
+int mcs_validate_argument(const mcs_argument_t* a) {
+    if (!a) return 0;
+    if (a->value < a->min_value || a->value > a->max_value) return 0;
+    if (a->type == ARG_PERCENT && a->unit != UNIT_PERCENT) return 0;
+    if (a->type == ARG_TIME && a->unit != UNIT_SECONDS) return 0;
+    return 1;
+}
+
+// Context-Aware Value Resolution (z.B. bei hoher CPU-Last → %50 = 30%, nicht 50%)
+double mcs_resolve_value(const mcs_argument_t* a, int system_load) {
+    if (!a) return 0.0;
+    if (a->unit == UNIT_PERCENT) {
+        // Dynamische Skalierung: bei 90% Last → 50% = 30% erlaubt
+        double scale = 1.0 - (system_load / 200.0); // 0–100% Load → 1.0–0.5 Skalierung
+        return a->value * scale;
+    }
+    return a->value;
+}
+// Lib/mcs_feed.c — v3.0 RAM-gepuffert
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "mcs_feed.h"
+
+static mcs_feed_t feed_table[MCS_FEED_MAX] = {{0}};
+static int feed_is_initialized = 0;
+
+void mcs_feed_init(void) {
+    if (feed_is_initialized) return;
+    for (int i = 0; i < MCS_FEED_MAX; i++) {
+        feed_table[i].id = i;
+        feed_table[i].value = NULL;
+        feed_table[i].value_len = 0;
+        feed_table[i].is_set = 0;
+        feed_table[i].source = NULL;
+    }
+    feed_is_initialized = 1;
+    fprintf(stderr, "[FEED] RAM-Cache initialisiert (%d Einträge)\n", MCS_FEED_MAX);
+}
+
+int mcs_feed_set(int id, const char* value, const char* source) {
+    if (!feed_is_initialized) mcs_feed_init();
+    if (id < 0 || id >= MCS_FEED_MAX) return -1;
+
+    mcs_feed_t* f = &feed_table[id];
+    free(f->value);
+    f->value = value ? strdup(value) : NULL;
+    f->value_len = value ? strlen(value) : 0;
+    f->is_set = (value != NULL);
+    f->source = source ? strdup(source) : NULL;
+    return 0;
+}
+
+const char* mcs_feed_get(int id) {
+    if (!feed_is_initialized) return NULL;
+    if (id < 0 || id >= MCS_FEED_MAX) return NULL;
+    mcs_feed_t* f = &feed_table[id];
+    return f->is_set ? f->value : NULL;
+}
+
+void mcs_feed_clear(int id) {
+    if (!feed_is_initialized) return;
+    if (id < 0 || id >= MCS_FEED_MAX) return;
+    mcs_feed_t* f = &feed_table[id];
+    free(f->value);
+    free((void*)f->source);
+    f->value = NULL;
+    f->value_len = 0;
+    f->is_set = 0;
+    f->source = NULL;
+}
+
+void mcs_feed_reset_all(void) {
+    if (!feed_is_initialized) return;
+    for (int i = 0; i < MCS_FEED_MAX; i++) {
+        mcs_feed_clear(i);
+    }
+}
+
+void mcs_feed_dump(void) {
+    if (!feed_is_initialized) {
+        fprintf(stderr, "[FEED] Nicht initialisiert!\n");
+        return;
+    }
+    fprintf(stderr, "[FEED] Zustand:\n");
+    for (int i = 0; i < MCS_FEED_MAX; i++) {
+        if (feed_table[i].is_set) {
+            fprintf(stderr, "  (%d): '%s' ← '%s'\n",
+                    i, feed_table[i].value, feed_table[i].source);
+        }
+    }
+}
+// Lib/mcs_protein.c — v3.0 MVP: IF/ELSE container-basiert
+#include <stdlib.h>
+#include "mcs_protein.h"
+#include "mcs_wahrheiten.h"
+
+// 🔹 Forward-Deklaration für rekursive Nutzung
+static mcs_protein_t* mcs_parse_protein_from_lexer(mcs_lexer_t* lex);
+
+// 🔹 EINZIGE Implementierung von mcs_free_protein — KEINE DUPLIKATE!
+void mcs_free_protein(mcs_protein_t* p) {
+    if (!p) return;
+    if (p->action) mcs_free_action(p->action);
+    if (p->then_branch) mcs_free_protein(p->then_branch);
+    if (p->else_branch) mcs_free_protein(p->else_branch);
+    free(p);
+}
+
+mcs_protein_t* mcs_parse_protein(const char* input) {
+    if (!input) return NULL;
+
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return NULL;
+
+    mcs_protein_t* p = calloc(1, sizeof(mcs_protein_t));
+    if (!p) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
+
+    mcs_token_t tok = mcs_lexer_next(lex);
+
+    // 🔹 Fall 1: Wahrheit (IF/ELSE)
+    if (mcs_token_is_wahrheit(tok.token_type)) {
+        p->wahrheit = mcs_token_to_wahrheit(tok.token_type);
+
+        if (p->wahrheit == WAHR_IF) {
+            p->then_branch = mcs_parse_protein_from_lexer(lex);
+            // ELSE später mit Lookahead
+        }
+    }
+    // 🔹 Fall 2: Normale Aktion »[…]«
+    else if (tok.token_type == TOK_ACTION_START) {
+        mcs_lexer_free(lex);
+        p->action = mcs_parse_action(input);
+    } else {
+        mcs_lexer_free(lex);
+        free(p);
+        return NULL;
+    }
+
+    mcs_lexer_free(lex);
+    return p;
+}
+
+// 🔹 Helper — bleibt unten, nach der Hauptfunktion
+static mcs_protein_t* mcs_parse_protein_from_lexer(mcs_lexer_t* lex) {
+    mcs_token_t tok = mcs_lexer_next(lex);
+    if (tok.token_type == TOK_ACTION_START) {
+        return calloc(1, sizeof(mcs_protein_t));
+    }
+    return NULL;
+}
+#include <stddef.h>
+#include "mcs_proton.h"
+mcs_proton_t* mcs_parse_proton(const char* input) { return NULL; }
+void mcs_free_proton(mcs_proton_t* p) { }
+#include <stddef.h>
+#include "mcs_warp.h"
+mcs_warp_t* mcs_parse_warp(const char* input) { return NULL; }
+void mcs_free_warp(mcs_warp_t* w) { }
+// Lib/mcs_wahrheiten.c — v3.0-konform, containerbasiert, fehlerfrei
+#include "mcs_wahrheiten.h"
+
+int mcs_token_is_wahrheit(mcs_token_type_t tt) {
+    return tt == TOK_IF || tt == TOK_ELSE ||
+    tt == TOK_WHEN_NOT || tt == TOK_MUST ||
+    tt == TOK_ON_ERROR || tt == TOK_PARALLEL_RUN ||
+    tt == TOK_PARALLEL_TRANSPORT;
+}
+
+mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt) {
+    switch (tt) {
+        case TOK_IF:                    return WAHR_IF;
+        case TOK_ELSE:                  return WAHR_ELSE;
+        case TOK_WHEN_NOT:              return WAHR_WHEN_NOT;
+        case TOK_MUST:                  return WAHR_MUST;
+        case TOK_ON_ERROR:              return WAHR_ON_ERROR;
+        case TOK_PARALLEL_RUN:          return WAHR_PARALLEL_RUN;
+        case TOK_PARALLEL_TRANSPORT:    return WAHR_PARALLEL_TRANSPORT;
+        default:                        return WAHR_NONE;
+    }
+}
+// Lib/mcs_semantics.c — Semantische Logik
+// Lib/mcs_semantics.c — v3.0: Wahrheits-Bewertung & Bedeutungszuordnung
+#include "mcs_semantics.h"
+#include "mcs_runner.h"   // für mcs_run_protein()
+#include <unistd.h>       // für system()
+
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w) {
+    switch (w) {
+        case WAHR_IF:          return SEMANTIC_IF;
+        case WAHR_ELSE:        return SEMANTIC_ELSE;
+        case WAHR_WHEN_NOT:    return SEMANTIC_WHEN_NOT;
+        case WAHR_MUST:        return SEMANTIC_MUST;
+        case WAHR_ON_ERROR:    return SEMANTIC_ON_ERROR;
+        case WAHR_PARALLEL_RUN:return SEMANTIC_PARALLEL;
+        case WAHR_PARALLEL_TRANSPORT: return SEMANTIC_PARALLEL_TRANSPORT;
+        default:               return SEMANTIC_NONE;
+    }
+}
+
+// Nur Bedingung *prüfen*, nicht ausführen → sichere Prüfung
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond) {
+    if (!cond || !cond->action || !cond->action->cmd) return MCS_FALSE;
+
+    // Beispiel: ['$terminal'] → prüfen, ob Prozess läuft
+    if (strcmp(cond->action->cmd, "$terminal") == 0) {
+        int r = system("pgrep -x kitty > /dev/null 2>&1 || pgrep -x alacritty > /dev/null 2>&1");
+        return (WIFEXITED(r) && WEXITSTATUS(r) == 0) ? MCS_TRUE : MCS_FALSE;
+    }
+    // Fallback: führe aus & schaue Exit-Code
+    int res = mcs_run_protein(cond);
+    if (res == MCS_OK) return MCS_TRUE;
+    if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+    return MCS_FALSE;
+}
+
+// Bedingung *ausführen* und Ergebnis liefern
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p) {
+    if (!p) return MCS_FALSE;
+    int res = mcs_run_protein(p);
+    return (res == MCS_OK) ? MCS_TRUE : (res < 0 ? MCS_ERROR : MCS_FALSE);
+}
+// Lib/mcs_transaktion.c — erweitert um Operator-Unterstützung (kernel 09)
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_transaktion.h"
+#include "mcs_wahrheiten.h"
+
+#include "mcs_operatoren.h"   // erst hier — wo die vollständige Def. nötig ist
+
+// 🔹 Forward-Deklaration
+static mcs_protein_t* mcs_parse_next_protein(mcs_lexer_t* lex);
+
+mcs_transaktion_t* mcs_parse_transaktion(const char* input) {
+    if (!input) return NULL;
+    mcs_lexer_t* lex = mcs_lexer_new(input);
+    if (!lex) return NULL;
+
+    mcs_transaktion_t* t = calloc(1, sizeof(mcs_transaktion_t));
+    if (!t) {
+        mcs_lexer_free(lex);
+        return NULL;
+    }
+
+    mcs_token_t tok = mcs_lexer_next(lex);
+
+    // 🔹 Phase 1: Transaktions-Bedingung (z. B. ° ['$terminal'])
+    if (mcs_token_is_wahrheit(tok.token_type)) {
+        t->wahrheit = mcs_token_to_wahrheit(tok.token_type);
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_ACTION_START) {
+            t->condition = mcs_parse_next_protein(lex);
+        }
+    }
+
+    // 🔹 ¢!
+    if (tok.token_type != TOK_TRANS_START) {
+        mcs_lexer_free(lex);
+        mcs_free_transaktion(t);
+        return NULL;
+    }
+    t->trans_start = tok;
+
+    // 🔹 Phase 2: Proteine & Operatoren parsen
+    while (1) {
+        tok = mcs_lexer_next(lex);
+        if (tok.token_type == TOK_TRANS_END) {
+            t->trans_end = tok;
+            t->is_valid = 1;
+            break;
+        }
+
+        // 🔹 Operator-Erkennung (kernel 09)
+        if (tok.token_type == TOK_WHEN_NOT ||
+            tok.token_type == TOK_WHEN_LT ||
+            tok.token_type == TOK_WHEN_GT ||
+            tok.token_type == TOK_TRANS_ERROR ||
+            tok.token_type == TOK_DATA_RESIDUE) {
+
+            mcs_operator_t* op = mcs_operator_new();
+        switch (tok.token_type) {
+            case TOK_WHEN_NOT:     mcs_operator_set_type(op, MCS_OP_WHEN_NOT); break;
+            case TOK_WHEN_LT:      mcs_operator_set_type(op, MCS_OP_WHEN_LT);  break;
+            case TOK_WHEN_GT:      mcs_operator_set_type(op, MCS_OP_WHEN_GT);  break;
+            case TOK_TRANS_ERROR:  mcs_operator_set_type(op, MCS_OP_TRANS_ERROR); break;
+            case TOK_DATA_RESIDUE: mcs_operator_set_type(op, MCS_OP_DATA_RESIDUE); break;
+            default: mcs_operator_free(op); continue;
+        }
+
+        mcs_token_t next = mcs_lexer_next(lex);
+
+        if (op->type == MCS_OP_WHEN_NOT && next.token_type == TOK_ACTION_START) {
+            mcs_protein_t* cond = mcs_parse_next_protein(lex);
+            mcs_operator_bind_condition(op, cond);
+            // Zweige: ¶ / ¶¶
+            // - mcs_token_t branch = mcs_lexer_peek(lex); // ❌ Fehlt noch! // Peek, nicht Next! Kommt noch
+            //if (branch.token_type == TOK_IF) {
+            //    mcs_lexer_next(lex); // konsumiere ¶
+            //    op->then_branch = mcs_parse_next_protein(lex);
+            //}
+            //branch = mcs_lexer_peek(lex);
+            //if (branch.token_type == TOK_ELSE) {
+            //    mcs_lexer_next(lex); // konsumiere ¶¶
+            //    op->else_branch = mcs_parse_next_protein(lex);
+            // klammer entfernt für sauberes auskommentiern für später
+            // Zweige: vorerst leer — später mit Peek vervollständigen
+            op->then_branch = NULL;
+            op->else_branch = NULL;
+        }
+        else if ((op->type == MCS_OP_WHEN_LT || op->type == MCS_OP_WHEN_GT)
+            && next.token_type == TOK_FEED_OPEN) {
+            int id1 = extract_number(mcs_lexer_next(lex));
+        mcs_lexer_next(lex); // )
+        mcs_lexer_next(lex); // (
+            int id2 = extract_number(mcs_lexer_next(lex));
+            mcs_lexer_next(lex); // )
+            mcs_operator_bind_comparison(op, id1, id2);
+            // Zweige
+            //mcs_token_t branch = mcs_lexer_peek(lex);
+            //if (branch.token_type == TOK_IF) {
+            //    mcs_lexer_next(lex);
+            //    op->then_branch = mcs_parse_next_protein(lex);
+            // klammer fehlt fürs auskommentieren
+            //branch = mcs_lexer_peek(lex);
+            //if (branch.token_type == TOK_ELSE) {
+            //    mcs_lexer_next(lex);
+            //    op->else_branch = mcs_parse_next_protein(lex);
+            // klammer fehlt fürs auskommentieren
+            }
+            else if (op->type == MCS_OP_DATA_RESIDUE && next.token_type == TOK_FEED_OPEN) {
+                int id = extract_number(mcs_lexer_next(lex));
+                mcs_lexer_next(lex); // )
+                mcs_operator_bind_residue(op, id);
+            }
+            else if (op->type == MCS_OP_TRANS_ERROR && next.token_type == TOK_ACTION_START) {
+                t->error_handler = mcs_parse_next_protein(lex);
+                mcs_operator_free(op);
+                continue;
+            }
+
+            // Speichern
+            t->operators = realloc(t->operators, (t->operator_count + 1) * sizeof(mcs_operator_t*));
+            t->operators[t->operator_count++] = op;
+            continue;
+            }
+
+            // 🔹 Normales Protein
+            if (tok.token_type == TOK_ACTION_START) {
+                mcs_protein_t* p = mcs_parse_next_protein(lex);
+                if (p) {
+                    t->proteine = realloc(t->proteine, (t->protein_count + 1) * sizeof(mcs_protein_t*));
+                    t->proteine[t->protein_count++] = p;
+                }
+            }
+    }
+
+    mcs_lexer_free(lex);
+    return t;
+}
+
+void mcs_free_transaktion(mcs_transaktion_t* t) {
+    if (!t) return;
+    mcs_free_protein(t->condition);
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_free_protein(t->proteine[i]);
+    }
+    free(t->proteine);
+    for (int i = 0; i < t->operator_count; i++) {
+        mcs_operator_free(t->operators[i]);
+    }
+    mcs_free_protein(t->error_handler);
+    free(t->operators);
+    free(t);
+}
+
+// 🔹 Hilfsfunktion (vereinfacht — nutzt dein bestehendes mcs_parse_action)
+static mcs_protein_t* mcs_parse_next_protein(mcs_lexer_t* lex) {
+    // Rücksetzen des Lexers ist komplex → für MVP: leeres Protein
+    mcs_protein_t* p = calloc(1, sizeof(mcs_protein_t));
+    // In Zukunft: hier dein mcs_parse_action_from_lexer einbauen
+    return p;
+}
+// Lib/mcs_eingaben.c
+#include <stdlib.h>
+#include <string.h>
+#include "mcs_eingaben.h"
+#include "mcs_token.h"
+
+int mcs_is_eingabe_quote(mcs_token_type_t tt) {
+    return tt == TOK_STR_DBL_QUOTE || tt == TOK_STR_SGL_QUOTE ||
+    tt == TOK_STR_TICK_QUOTE || tt == TOK_BLANKERNER_QUOTE;
+}
+
+mcs_eingabe_typ_t mcs_token_to_eingabe_typ(mcs_token_type_t tt) {
+    switch (tt) {
+        case TOK_STR_DBL_QUOTE:   return MCS_EINGABE_PRINT;
+        case TOK_STR_SGL_QUOTE:   return MCS_EINGABE_SYSTEM_CMD;
+        case TOK_STR_TICK_QUOTE:  return MCS_EINGABE_MCS_CMD;
+        case TOK_BLANKERNER_QUOTE:return MCS_EINGABE_BLANKERNER;
+        default:                  return MCS_EINGABE_NOTIZ;
+    }
+}
+
+// MVP: Nur Speicher allozieren, kein Parsing — später: Content extrahieren
+mcs_eingabe_t* mcs_parse_eingabe_from_token(mcs_token_type_t quote_typ, const char* start, int len) {
+    mcs_eingabe_t* e = calloc(1, sizeof(mcs_eingabe_t));
+    if (!e) return NULL;
+
+    e->typ = mcs_token_to_eingabe_typ(quote_typ);
+    e->laenge = len;
+    if (len > 0) {
+        e->inhalt = strndup(start, len);
+        e->quote_start = 0;
+        e->quote_end = len + 1; // Platzhalter
+    }
+    return e;
+}
+
+void mcs_free_eingabe(mcs_eingabe_t* e) {
+    if (!e) return;
+    free(e->inhalt);
+    free(e);
+}
+// Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
+// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (keine operator_count yet)
+#include "mcs_runner.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/wait.h>
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+    long work = user + nice + system;
+    static long prev_total = 0, prev_work = 0;
+
+    if (prev_total > 0) {
+        long delta_total = total - prev_total;
+        long delta_work = work - prev_work;
+        if (delta_total > 0) {
+            ret = (int)(100 * delta_work / delta_total);
+        }
+    }
+    prev_total = total;
+    prev_work = work;
+        }
+        fclose(f);
+        return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
+
+// Hilfsfunktion: Dynamische Prioritätsanpassung basierend auf CPU-Last
+static void adjust_for_cpu_load(void) {
+    int cpu_load = get_cpu_load();
+    if (cpu_load > 80) {
+        nice(5);  // Leicht niedrigere Priorität bei hoher Last
+    } else if (cpu_load < 20) {
+        nice(-2); // Leicht höhere Priorität bei Leerlauf
+    }
+}
+
+// 🔹 Hauptfunktion — stabil, fehleraggregierend, linear
+int mcs_run_transaktion(mcs_transaktion_t* t) {
+    if (!t || !t->is_valid) return MCS_ERR_SYNTAX;
+
+    // 🔹 Dynamische Anpassung *vor* Ausführung
+    adjust_for_cpu_load();
+
+    // 🔹 Gesamtergebnis – Fehler sammeln, nicht vorzeitig abbrechen
+    int res = MCS_OK;
+
+    // 🔹 1. Transaktions-Bedingung (z.B. ° ['$terminal'])
+    if (t->wahrheit != WAHR_NONE && t->condition) {
+        mcs_semantic_op_t op = mcs_wahrheit_to_semantic(t->wahrheit);
+        mcs_truth_t cond = mcs_evaluate_condition(t->condition);
+
+        //if (op == SEMANTIC_WHEN_NOT) {  // °
+        //    if (cond == MCS_FALSE && t->then_branch) {
+        //        int r = mcs_run_protein(t->then_branch);
+        //        if (r < 0) res = r;
+        //    } else if (cond == MCS_TRUE && t->else_branch) {
+        //        int r = mcs_run_protein(t->else_branch);
+        //        if (r < 0) res = r;
+        //    }
+        // klammer entfernt für backupmuster
+        // dafür das hinzugefügt
+        if (op == SEMANTIC_WHEN_NOT) {  // °
+            // Fallback: nur erstes Protein als THEN, zweites als ELSE nutzen
+            if (t->protein_count >= 2) {
+                mcs_protein_t* p_if = t->proteine[0];     // ¶ = THEN
+                mcs_protein_t* p_else = t->proteine[1];   // ¶¶ = ELSE
+                if (cond == MCS_FALSE && p_if && p_if->wahrheit == WAHR_IF && p_if->then_branch) {
+                    int r = mcs_run_protein(p_if->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p_else && p_else->wahrheit == WAHR_ELSE && p_else->else_branch) {
+                    int r = mcs_run_protein(p_else->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+
+        // ⚠️ Hinweis: t->then_branch / else_branch existieren *noch nicht* in deinem mcs_transaktion.h
+        // → wir lassen das *für heute weg* und behalten dein altes Verhalten:
+        else {
+            // Fallback: wie in deinem Backup – nur erstes Protein prüfen
+            if (t->protein_count > 0 && t->proteine && t->proteine[0]) {
+                mcs_protein_t* p0 = t->proteine[0];
+                if (cond == MCS_FALSE && p0->then_branch) {
+                    int r = mcs_run_protein(p0->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p0->else_branch) {
+                    int r = mcs_run_protein(p0->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+    }
+
+    // 🔹 2. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_protein_t* p = t->proteine && i < t->protein_count ? t->proteine[i] : NULL;
+        if (!p) continue;
+
+        if (p->wahrheit != WAHR_NONE) {
+            mcs_semantic_op_t op = mcs_wahrheit_to_semantic(p->wahrheit);
+            switch (op) {
+                case SEMANTIC_IF:
+                    if (p->then_branch) {
+                        int r = mcs_run_protein(p->then_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_ELSE:
+                    if (p->else_branch) {
+                        int r = mcs_run_protein(p->else_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL_TRANSPORT:  // ;;
+                    if (p->action) {
+                        int r = mcs_run_action(p->action);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL:  // ¶=
+                    if (p->action) {
+                        pid_t pid = fork();
+                        if (pid == 0) {
+                            mcs_run_action(p->action);
+                            exit(0);
+                        } else if (pid > 0) {
+                            // Nicht blockieren – linear-first!
+                            printf("[PARALLEL] Gestartet: PID %d\n", (int)pid);
+                        } else {
+                            fprintf(stderr, "[ERROR] fork() fehlgeschlagen\n");
+                            res = MCS_ERR_SYSTEM;
+                        }
+                    }
+                    break;
+                default:
+                    int r = mcs_run_protein(p);
+                    if (r < 0) res = r;
+            }
+        } else {
+            int r = mcs_run_protein(p);
+            if (r < 0) res = r;
+        }
+    }
+
+    // 🔹 Epilog: Nur bekannte Schritte — *kein* operator_count / error_handler (noch nicht in struct)
+    // → später ergänzen, wenn `mcs_transaktion.h` erweitert ist
+
+    return res;
+}
+
+int mcs_run_protein(mcs_protein_t* p) {
+    if (!p) return MCS_ERR_SYNTAX;
+
+    if (p->wahrheit == WAHR_IF && p->then_branch) {
+        return mcs_run_protein(p->then_branch);
+    }
+    if (p->wahrheit == WAHR_ELSE && p->else_branch) {
+        return mcs_run_protein(p->else_branch);
+    }
+    if (p->action) {
+        return mcs_run_action(p->action);
+    }
+    return MCS_OK;
+}
+
+int mcs_run_action(mcs_action_t* a) {
+    if (!a || !a->cmd) {
+        fprintf(stderr, "[RUN] Action NULL\n");
+        return MCS_ERR_SYNTAX;
+    }
+
+    // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+        double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+        if (delay_sec > 0) {
+            usleep((useconds_t)(delay_sec * 1e6)); // präziser als sleep()
+        }
+    }
+
+    printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+           a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+    // 🔹 2. Blankernenner → Feed setzen
+    if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+        FILE* p = popen(a->blankernenner + 1, "r");
+        if (p) {
+            char buf[64] = {0};
+            if (fgets(buf, sizeof(buf), p)) {
+                buf[strcspn(buf, "\n")] = 0;
+                mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+            }
+            pclose(p);
+        }
+    }
+
+    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
+    if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+        const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+        char cmd[256];
+        if (a->blankernenner && feed_val) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+        } else if (a->arg1) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+        } else {
+            snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+        }
+        printf("[EXEC] %s\n", cmd);
+        return system(cmd);
+    }
+
+    return MCS_OK;
+}
+// include/mcs_action.h — FINAL v3.0
+#ifndef MCS_ACTION_H
+#define MCS_ACTION_H
+
+#include <stdlib.h>   // ← für atoi()
+#include <string.h>   // ← für strndup()
+#include "mcs_token.h"
+#include "mcs_feed.h"
+#include "mcs_argument.h"
+
+typedef struct {
+    char* cmd;
+    char* arg1;
+    mcs_feed_t feed;
+    char* blankernenner;
+    mcs_argument_t arg;
+} mcs_action_t;
+
+mcs_action_t* mcs_parse_action(const char* input);
+void mcs_free_action(mcs_action_t* a);
+
+// Inline-Hilfen — jetzt mit korrektem Scope
+static inline char* token_to_string(mcs_token_t tok) {
+    return tok.length > 0 ? strndup(tok.literal, tok.length) : NULL;
+}
+static inline int extract_number(mcs_token_t tok) {
+    return (tok.token_type == TOK_NUMBER && tok.length > 0)
+    ? atoi(tok.literal) : 0;
+}
+
+#endif
+// include/mcs_argument.h — v3.0, mit Einheiten & Sicherheitskontext
+#ifndef MCS_ARGUMENT_H
+#define MCS_ARGUMENT_H
+
+#include "mcs_token.h"
+
+// Einheiten für zeitliche/quantitative Argumente
+typedef enum {
+    UNIT_NONE = 0,
+    UNIT_SECONDS,
+    UNIT_MILLISECONDS,
+    UNIT_PERCENT,
+    UNIT_ABSOLUTE    // z.B. PID, Thread-ID, Watt
+} mcs_unit_t;
+
+// Argument-Typen (gemäß @kernel 15, erweitert um Semantik)
+typedef enum {
+    ARG_NONE = 0,
+    ARG_MINUS,    // «««- → Subtraktion
+    ARG_PLUS,     // «««+ → Addition
+    ARG_MUL,      // «««· → Multiplikation
+    ARG_DIV,      // «««: → Division
+    ARG_PERCENT,  // «««%N → Prozent (0–100)
+    ARG_TIME,     // «««tN → Zeit (ms/s)
+    ARG_REBOOT,   // «««rN → Reboot-Verzögerung
+    ARG_KILL,     // «««kN → SIGKILL nach N Sekunden (später)
+    ARG_THROTTLE  // «««wN → Watt-Begrenzung (später)
+} mcs_arg_type_t;
+
+// Argument-Container mit Semantik
+typedef struct {
+    mcs_arg_type_t type;
+    mcs_unit_t     unit;
+    double         value;      // double für %0.5, 1.5s, etc.
+    int            min_value;  // Sicherheitslimit: z.B. ARG_TIME ≥ 0
+    int            max_value;  // z.B. ARG_PERCENT ≤ 100
+    const char*    context;    // z.B. "CPU", "NET", "STORAGE"
+} mcs_argument_t;
+
+// Public API
+int mcs_parse_argument(mcs_lexer_t* lex, mcs_argument_t* out);
+int mcs_validate_argument(const mcs_argument_t* a);
+double mcs_resolve_value(const mcs_argument_t* a, int system_load); // Context-Aware
+
+#endif
+// include/mcs_eingaben.h — MCS Eingabe-Container (v3.0, @kernel 07)
+#ifndef MCS_EINGABEN_H
+#define MCS_EINGABEN_H
+
+#include <stddef.h>
+#include "mcs_token.h"   // ← mcs_token_type_t
+// Gemäß @kernel 07: 5 Eingabetypen — klar getrennt, sicher, modular
+typedef enum {
+    MCS_EINGABE_PRINT,       // "..." — Ausgabe (echo, notify-send, print)
+    MCS_EINGABE_SYSTEM_CMD,  // '...' — System-Befehl (bash, sh, zsh, powershell)
+    MCS_EINGABE_MCS_CMD,     // ’...’ — MCS-eigene Befehle (später: register/kernel 99)
+    MCS_EINGABE_BLANKERNER,  // ¨...¨ — Transport-Container (Daten, nicht Code)
+    MCS_EINGABE_NOTIZ        // ,... — Metadaten/Tagging (für Suche, Logs, AI)
+} mcs_eingabe_typ_t;
+
+// das hier MCS_EINGABE_SYSTEM_CMD ist eins zu eins das jeweilige
+// system mit der jeweiligen shell oder direkt system verbindungen
+// bei linux ist es meist bash zsh oder fisch etc , bei microsoft nt und powershell
+// und bei mac os glaub darvin
+
+// Container-Struktur — *kein Code-Ausführen hier*, nur Repräsentation
+typedef struct {
+    mcs_eingabe_typ_t typ;
+    char* inhalt;          // z.B. "Hallo", "sudo pacman -Syyu", "$pgrep firefox"
+    size_t laenge;
+    int quote_start;       // Byte-Offset des öffnenden Quotes (z.B. ")
+    int quote_end;         // Byte-Offset des schließenden Quotes
+} mcs_eingabe_t;
+
+// Public API — parsing & cleanup
+mcs_eingabe_t* mcs_parse_eingabe_from_token(mcs_token_type_t quote_typ, const char* start, int len);
+void mcs_free_eingabe(mcs_eingabe_t* e);
+
+// Hilfsfunktionen — für Protein/Proton-Parser
+int mcs_is_eingabe_quote(mcs_token_type_t tt);
+mcs_eingabe_typ_t mcs_token_to_eingabe_typ(mcs_token_type_t tt);
+
+#endif // MCS_EINGABEN_H
+// include/mcs_feed.h — MCS Feed Registry (v2.9)
+// include/mcs_feed.h — v3.0 RAM-gepuffert, debugbar, sicher
+#ifndef MCS_FEED_H
+#define MCS_FEED_H
+
+#include <stddef.h>
+
+#define MCS_FEED_MAX 256
+
+typedef struct {
+    int id;
+    char* value;       // malloc'ed — RAM-basiert
+    size_t value_len;  // Länge — für Sicherheit
+    int is_set;
+    const char* source; // Debug: woher kam das? z.B. "$pgrep firefox"
+} mcs_feed_t;
+
+// RAM-Initialisierung — MUSS VOR ALLEM ANDEREN aufgerufen werden!
+void mcs_feed_init(void);
+
+// Public API — wie vorher, nur sicherer
+int  mcs_feed_set(int id, const char* value, const char* source);
+const char* mcs_feed_get(int id);
+void mcs_feed_clear(int id);
+void mcs_feed_reset_all(void);
+
+// Debug-Hilfe
+void mcs_feed_dump(void); // gibt alle Feeds aus
+
+#endif
+// include/mcs_protein.h
+#ifndef MCS_PROTEIN_H
+#define MCS_PROTEIN_H
+
+#include "mcs_action.h"
+#include "mcs_proton.h"
+#include "mcs_warp.h"
+#include "mcs_wahrheiten.h"
+
+// 🔹 Forward-Deklaration als typedef — NICHT struct mcs_protein
+typedef struct mcs_protein mcs_protein_t;
+
+struct mcs_protein {
+    mcs_action_t* action;
+    mcs_proton_t* proton;
+    mcs_warp_t*   warp;
+    mcs_wahrheit_t wahrheit;
+    mcs_protein_t* then_branch;   // ← jetzt vom selben Typ
+    mcs_protein_t* else_branch;   // ← jetzt vom selben Typ
+};
+
+// Public API
+mcs_protein_t* mcs_parse_protein(const char* input);
+void mcs_free_protein(mcs_protein_t* p);
+
+#endif
+// include/mcs_proton.h
+#ifndef MCS_PROTON_H
+#define MCS_PROTON_H
+
+typedef struct {
+    char* name;   // z.B. "Watt", "Temp", "Wait-s"
+    char* value;  // z.B. "200", "25", "3"
+} mcs_proton_field_t;
+
+typedef struct {
+    mcs_proton_field_t* fields;  // dynamisch
+    int field_count;
+} mcs_proton_t;
+
+mcs_proton_t* mcs_parse_proton(const char* input);
+void mcs_free_proton(mcs_proton_t* p);
+
+#endif
+// include/mcs_runner.h — v3.0 Runner-API
+#ifndef MCS_RUNNER_H
+#define MCS_RUNNER_H
+
+#include "mcs_transaktion.h"
+
+// Fehlercodes (erweiterbar)
+#define MCS_OK               0
+#define MCS_ERR_SYNTAX      -1
+#define MCS_ERR_IO          -2
+#define MCS_ERR_SECURITY    -3
+#define MCS_ERR_TIMEOUT     -4
+#define MCS_ERR_FEED        -5
+#define MCS_ERR_SYSTEM      -6   // ← NEU für fork/exec-Fehler
+
+// Public API
+int mcs_run_transaktion(mcs_transaktion_t* t);
+int mcs_run_protein(mcs_protein_t* p);
+int mcs_run_action(mcs_action_t* a);
+
+#endif
+// include/mcs_transaktion.h — v3.0 + Operators (zyklusfrei!)
+#ifndef MCS_TRANS_H
+#define MCS_TRANS_H
+
+#include "mcs_token.h"
+#include "mcs_protein.h"
+
+// 🔹 Forward-Deklaration statt Include (bricht Zyklus!)
+struct mcs_operator;
+typedef struct mcs_operator mcs_operator_t;
+
+typedef struct {
+    mcs_token_t trans_start;
+    mcs_token_t trans_end;
+    mcs_wahrheit_t wahrheit;
+    mcs_protein_t* condition;
+
+    // 🔹 Operatoren (kernel 09) — nur Zeiger, keine Definition nötig
+    mcs_operator_t** operators;
+    int operator_count;
+    mcs_protein_t* error_handler; // für ^
+
+    mcs_protein_t** proteine;
+    int protein_count;
+    int is_valid;
+} mcs_transaktion_t;
+
+// Public API
+mcs_transaktion_t* mcs_parse_transaktion(const char* input);
+void mcs_free_transaktion(mcs_transaktion_t* t);
+
+#endif // MCS_TRANS_H
+
+
+// include/mcs_wahrheit.h — v3.0, *nur* Deklaration
+#ifndef MCS_WAHRHEIT_H
+#define MCS_WAHRHEIT_H
+
+#include "mcs_token.h"   // ← für mcs_token_type_t
+
+// 🔹 Enum muss *vor* Funktionsdeklaration kommen!
+typedef enum {
+    WAHR_NONE = 0,
+    WAHR_IF,          // ¶
+    WAHR_ELSE,        // ¶¶
+    WAHR_WHEN_NOT,    // °
+    WAHR_MUST,        // !
+    WAHR_ON_ERROR,    // …
+    WAHR_PARALLEL_RUN,      // ¶=
+    WAHR_PARALLEL_TRANSPORT // ;;
+} mcs_wahrheit_t;
+
+// 🔹 Nur Deklarationen — KEINE Implementierung!
+int mcs_token_is_wahrheit(mcs_token_type_t tt);
+mcs_wahrheit_t mcs_token_to_wahrheit(mcs_token_type_t tt);
+
+#endif // MCS_WAHRHEIT_H
+// include/mcs_sematics.h - Wahrheitstabelle & Bedeutungslogik
+// include/mcs_semantics.h — v3.0 Semantik-Kern
+#ifndef MCS_SEMANTICS_H
+#define MCS_SEMANTICS_H
+
+#include "mcs_token.h"
+#include "mcs_protein.h"
+
+// Logische Wahrheitswerte (nicht BOOL — explizit klar)
+typedef enum {
+    MCS_FALSE = 0,
+    MCS_TRUE = 1,
+    MCS_ERROR = -1   // Fehler bei Auswertung (z.B. SIGKILL)
+} mcs_truth_t;
+
+// Semantische Bedeutung jeder Wahrheit
+typedef enum {
+    SEMANTIC_IF,          // ¶ — führe aus, WENN Bedingung TRUE
+    SEMANTIC_ELSE,        // ¶¶ — führe aus, WENN vorherige Bedingung FALSE
+    SEMANTIC_WHEN_NOT,    // ° — führe aus, WENN Bedingung FALSE
+    SEMANTIC_MUST,        // ! — Sofort, unbedingt (keine Bedingung, Timeout-gesteuert)
+    SEMANTIC_ON_ERROR,    // … — Nur bei vorherigem Fehler
+    SEMANTIC_PARALLEL,    // ¶= — Fork & Exec
+    SEMANTIC_PARALLEL_TRANSPORT, // ;; — Datenfluss ohne Blockieren
+    SEMANTIC_NONE
+} mcs_semantic_op_t;
+
+// Öffentliche API
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w);
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p);  // führt aus & gibt MCS_TRUE/FALSE zurück
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond); // Nur Bedingung prüfen, nicht ausführen
+
+#endif
+// include/mcs_warp.h
+#ifndef MCS_WARP_H
+#define MCS_WARP_H
+
+typedef enum {
+    WARP_C, WARP_CSS, WARP_JS, WARP_PY, WARP_ASM, WARP_UNKNOWN
+} mcs_warp_lang_t;
+
+typedef struct {
+    mcs_warp_lang_t lang;
+    char* code;        // z.B. "#include <stdio.h>..."
+    char* target;      // z.B. "$gcc", "§kitty"
+} mcs_warp_t;
+
+mcs_warp_t* mcs_parse_warp(const char* input);
+void mcs_free_warp(mcs_warp_t* w);
+
+#endif
+cat: main.c: Datei oder Verzeichnis nicht gefunden
+cat: CMakeLists.txt: Datei oder Verzeichnis nicht gefunden
+// Lib/mcs_operatoren.c — v3.0: Minimal, sicher, feed-basiert
+#include "mcs_operatoren.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+mcs_operator_t* mcs_operator_new(void) {
+    return calloc(1, sizeof(mcs_operator_t));
+}
+
+void mcs_operator_free(mcs_operator_t* op) {
+    if (!op) return;
+    if (op->type == MCS_OP_WHEN_NOT) {
+        mcs_free_protein(op->data.not.cond);
+    }
+    mcs_free_protein(op->then_branch);
+    mcs_free_protein(op->else_branch);
+    free(op);
+}
+
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type) {
+    if (!op) return 0;
+    op->type = type;
+    return 1;
+}
+
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p) {
+    if (!op || !p || op->type != MCS_OP_WHEN_NOT) return 0;
+    op->data.not.cond = p;
+    return 1;
+}
+
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b) {
+    if (!op || id_a < 0 || id_b < 0) return 0;
+    if (op->type != MCS_OP_WHEN_LT && op->type != MCS_OP_WHEN_GT) return 0;
+    op->data.cmp.left_id = id_a;
+    op->data.cmp.right_id = id_b;
+    return 1;
+}
+
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id) {
+    if (!op || feed_id < 0) return 0;
+    if (op->type != MCS_OP_DATA_RESIDUE) return 0;
+    op->data.residue_id = feed_id;
+    return 1;
+}
+
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb) {
+    if (!op) return 0;
+    op->then_branch = then;
+    op->else_branch = elseb;
+    return 1;
+}
+
+mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op) {
+    if (!op) return MCS_ERROR;
+
+    switch (op->type) {
+        case MCS_OP_WHEN_NOT: {
+            if (!op->data.not.cond) return MCS_ERROR;
+            mcs_truth_t cond = mcs_evaluate_condition(op->data.not.cond);
+            return (cond == MCS_FALSE) ? MCS_TRUE : (cond == MCS_TRUE ? MCS_FALSE : MCS_ERROR);
+        }
+
+        case MCS_OP_WHEN_LT:
+        case MCS_OP_WHEN_GT: {
+            const char* a_str = mcs_feed_get(op->data.cmp.left_id);
+            const char* b_str = mcs_feed_get(op->data.cmp.right_id);
+            if (!a_str || !b_str) return MCS_ERROR;
+
+            double a = atof(a_str);
+            double b = atof(b_str);
+
+            if (op->type == MCS_OP_WHEN_LT) return (a < b) ? MCS_TRUE : MCS_FALSE;
+            else                             return (a > b) ? MCS_TRUE : MCS_FALSE;
+        }
+
+        case MCS_OP_TRANS_ERROR:
+        case MCS_OP_DATA_RESIDUE:
+            return MCS_TRUE; // Annotationen → keine Auswertung nötig
+
+        default:
+            return MCS_ERROR;
+    }
+}
+// include/mcs_operatoren.h — v3.0: Operator-Semantik, *named struct*, kompatibel mit Forward-Dekl.
+#ifndef MCS_OPERATOREN_H
+#define MCS_OPERATOREN_H
+
+#include "mcs_protein.h"
+#include "mcs_semantics.h"   // ← für mcs_truth_t
+
+typedef enum {
+    MCS_OP_NONE = 0,
+    MCS_OP_WHEN_NOT,    // °
+    MCS_OP_WHEN_LT,     // <
+    MCS_OP_WHEN_GT,     // >
+    MCS_OP_TRANS_ERROR, // ^
+    MCS_OP_DATA_RESIDUE // ſ
+} mcs_op_type_t;
+
+// 🔹 WICHTIG: Benannter struct — NICHT anonym!
+struct mcs_operator {
+    mcs_op_type_t type;
+    union {
+        struct { mcs_protein_t* cond; } not;
+        struct { int left_id; int right_id; } cmp;
+        int residue_id;
+    } data;
+    mcs_protein_t* then_branch;
+    mcs_protein_t* else_branch;
+};
+typedef struct mcs_operator mcs_operator_t;
+
+// Public API
+mcs_operator_t* mcs_operator_new(void);
+void mcs_operator_free(mcs_operator_t* op);
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type);
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p);
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b);
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id);
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb);
+
+mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op);
+
+#endif // MCS_OPERATOREN_H
+
+ ┌[bandino@dev][19:57:50|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/mcscodes]> $
+
+ plus baum vom abschnitt im system wo alles ensteht
+
+
+ ┌[bandino@dev][19:57:50|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/mcscodes]> $ p /Pylovara/System/Kernel/Core/
+🔍 Ordner gefunden: /Pylovara/System/Kernel/Core
+/Pylovara/System/Kernel/Core
+├── build
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   │   ├── 4.2.1
+│   │   │   ├── CMakeCCompiler.cmake
+│   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   ├── CMakeSystem.cmake
+│   │   │   └── CompilerIdC
+│   │   │       ├── a.out
+│   │   │       ├── CMakeCCompilerId.c
+│   │   │       └── tmp
+│   │   ├── cmake.check_cache
+│   │   ├── CMakeConfigureLog.yaml
+│   │   ├── CMakeDirectoryInformation.cmake
+│   │   ├── CMakeScratch
+│   │   ├── InstallScripts.json
+│   │   ├── Makefile2
+│   │   ├── Makefile.cmake
+│   │   ├── mcs_core.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── cmake_clean_target.cmake
+│   │   │   ├── compiler_depend.internal
+│   │   │   ├── compiler_depend.make
+│   │   │   ├── compiler_depend.ts
+│   │   │   ├── DependInfo.cmake
+│   │   │   ├── depend.make
+│   │   │   ├── flags.make
+│   │   │   ├── Lib
+│   │   │   │   ├── mcs_action.c.o
+│   │   │   │   ├── mcs_action.c.o.d
+│   │   │   │   ├── mcs_argument.c.o
+│   │   │   │   ├── mcs_argument.c.o.d
+│   │   │   │   ├── mcs_eingaben.c.o
+│   │   │   │   ├── mcs_eingaben.c.o.d
+│   │   │   │   ├── mcs_feed.c.o
+│   │   │   │   ├── mcs_feed.c.o.d
+│   │   │   │   ├── mcs_operatoren.c.o
+│   │   │   │   ├── mcs_operatoren.c.o.d
+│   │   │   │   ├── mcs_protein.c.o
+│   │   │   │   ├── mcs_protein.c.o.d
+│   │   │   │   ├── mcs_proton.c.o
+│   │   │   │   ├── mcs_proton.c.o.d
+│   │   │   │   ├── mcs_runner.c.o
+│   │   │   │   ├── mcs_runner.c.o.d
+│   │   │   │   ├── mcs_semantics.c.o
+│   │   │   │   ├── mcs_semantics.c.o.d
+│   │   │   │   ├── mcs_transaktion.c.o
+│   │   │   │   ├── mcs_transaktion.c.o.d
+│   │   │   │   ├── mcs_wahrheiten.c.o
+│   │   │   │   ├── mcs_wahrheiten.c.o.d
+│   │   │   │   ├── mcs_warp.c.o
+│   │   │   │   └── mcs_warp.c.o.d
+│   │   │   ├── link.txt
+│   │   │   ├── Logic
+│   │   │   │   ├── mcs_lexer.c.o
+│   │   │   │   └── mcs_lexer.c.o.d
+│   │   │   └── progress.make
+│   │   ├── mcs.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── compiler_depend.internal
+│   │   │   ├── compiler_depend.make
+│   │   │   ├── compiler_depend.ts
+│   │   │   ├── DependInfo.cmake
+│   │   │   ├── depend.make
+│   │   │   ├── flags.make
+│   │   │   ├── link.d
+│   │   │   ├── link.txt
+│   │   │   ├── main.c.o
+│   │   │   ├── main.c.o.d
+│   │   │   └── progress.make
+│   │   ├── pkgRedirects
+│   │   ├── progress.marks
+│   │   ├── TargetDirectories.txt
+│   │   ├── test_action.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── compiler_depend.internal
+│   │   │   ├── compiler_depend.make
+│   │   │   ├── compiler_depend.ts
+│   │   │   ├── DependInfo.cmake
+│   │   │   ├── depend.make
+│   │   │   ├── flags.make
+│   │   │   ├── Lab
+│   │   │   │   ├── test_action.c.o
+│   │   │   │   └── test_action.c.o.d
+│   │   │   ├── link.d
+│   │   │   ├── link.txt
+│   │   │   └── progress.make
+│   │   ├── test_if.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── compiler_depend.internal
+│   │   │   ├── compiler_depend.make
+│   │   │   ├── compiler_depend.ts
+│   │   │   ├── DependInfo.cmake
+│   │   │   ├── depend.make
+│   │   │   ├── flags.make
+│   │   │   ├── Lab
+│   │   │   │   ├── test_if.c.o
+│   │   │   │   └── test_if.c.o.d
+│   │   │   ├── link.d
+│   │   │   ├── link.txt
+│   │   │   └── progress.make
+│   │   ├── test_lexer.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── compiler_depend.internal
+│   │   │   ├── compiler_depend.make
+│   │   │   ├── compiler_depend.ts
+│   │   │   ├── DependInfo.cmake
+│   │   │   ├── depend.make
+│   │   │   ├── flags.make
+│   │   │   ├── Lab
+│   │   │   │   ├── test_lexer.c.o
+│   │   │   │   └── test_lexer.c.o.d
+│   │   │   ├── link.d
+│   │   │   ├── link.txt
+│   │   │   └── progress.make
+│   │   └── test_trans.dir
+│   │       ├── build.make
+│   │       ├── cmake_clean.cmake
+│   │       ├── compiler_depend.internal
+│   │       ├── compiler_depend.make
+│   │       ├── compiler_depend.ts
+│   │       ├── DependInfo.cmake
+│   │       ├── depend.make
+│   │       ├── flags.make
+│   │       ├── Lab
+│   │       │   ├── test_trans.c.o
+│   │       │   └── test_trans.c.o.d
+│   │       ├── link.d
+│   │       ├── link.txt
+│   │       └── progress.make
+│   ├── cmake_install.cmake
+│   ├── libmcs_core.a
+│   ├── Makefile
+│   ├── mcs
+│   ├── test_action
+│   ├── test_if
+│   ├── test_lexer
+│   ├── test.mcs
+│   └── test_trans
+├── CMakeLists.txt
+├── errologs
+│   ├── mcs_action.o
+│   ├── mcs_lexer.o
+│   └── mcs_transaction.o
+├── include
+│   ├── mcs_action.h
+│   ├── mcs_argument.h
+│   ├── mcs_eingaben.h
+│   ├── mcs_feed.h
+│   ├── mcs.h
+│   ├── mcs_operatoren.h
+│   ├── mcs_protein.h
+│   ├── mcs_proton.h
+│   ├── mcs_runner.h
+│   ├── mcs_semantics.h
+│   ├── mcs_transaktion.h
+│   ├── mcs_wahrheiten.h
+│   └── mcs_warp.h
+├── infostart.txt
+├── IntLab
+├── Lab
+│   ├── mcs-code.ideen.txt
+│   ├── test_action
+│   ├── test_action.c
+│   ├── test_if.c
+│   ├── test_lexer
+│   ├── test_lexer.c
+│   ├── test.mcs
+│   ├── test_mcs_strucktur.mcs
+│   ├── test_trans
+│   ├── test_trans.c
+│   └── test_trans.mcs
+├── Lib
+│   ├── mcs_action.c
+│   ├── mcs_argument.c
+│   ├── mcs_eingaben.c
+│   ├── mcs_feed.c
+│   ├── mcs_operatoren.c
+│   ├── mcs_protein.c
+│   ├── mcs_proton.c
+│   ├── mcs_runner.c
+│   ├── mcs_semantics.c
+│   ├── mcs_transaktion.c
+│   ├── mcs_wahrheiten.c
+│   └── mcs_warp.c
+├── Logic
+│   ├── mcs_lexer.c
+│   └── mcs_token.h
+├── main.c
+└── mcscodes
+    ├── test1_echo.mcs
+    ├── test1_update.mcs
+    ├── test.mcs
+    ├── test_operatoren.mcs
+    ├── test_parallel.mcs
+    ├── test_parallel_wait.mcs
+    └── test_semantic_dispatcher.mcs
+
+27 directories, 176 files
+
+ ┌[bandino@dev][19:59:20|Mi Dez 17]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/mcscodes]> $
+
+
+
+Der weg ist frei für operatoren , was ein stress aber eisenhart am
+ball geblieben !
+
+
+
+
+#####################################################################################
+#####################################################################################
+#####################################################################################
+#####################################################################################
+#####################################################################################
+#####################################################################################
+#####################################################################################
+#####################################################################################
+#####################################################################################
+
+
+

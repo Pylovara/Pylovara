@@ -1,0 +1,14 @@
+
+--------------------------------------------
+
+[ RAM ]
+  |
+  +-- byte 0 : läuft / läuft nicht
+
+
+In C Transportform**:
+c unsigned char RUN_FLAG = 1;
+
+--------------------------------------------
+
+das geht auch auf deutsch

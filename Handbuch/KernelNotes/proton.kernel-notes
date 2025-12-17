@@ -17,20 +17,25 @@ bringt . Unter anderem werden auch Combinierbare system befehle in
 MCS CMD mitgeliefert .
 
 --------------------------------------------------------------------
-## Proton /en Definiert
+## Proton /en Definition:
 
- {}
+ { # anfang
+ } # ende
+
+--------------------------------------------------------------------
+## Proton /en anordnungs Definition:
+
+ { }
 
 --------------------------------------------------------------------
 ## Proton /en
 
-Werden wie Zusätze betrachtet , endweder für die hardware selbst
-oder also workarround für fremdsystem Befehle :
+Werden wie Zusätze betrachtet , sie dienen hauptsächlich für
+hardware bezogene aufgaben wie energie steuerung oder analytische
+zwecke...
 
-»[’exec’|’once’|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
 
-Proton /en können mit oder ohne Feeds explizit weitergegeben werden
-und dienen für Hardware oder feinere Aufgaben die Proteine Ergänzen.
+
 
 --------------------------------------------------------------------
 
@@ -59,19 +64,28 @@ geben oder führen .
   Example :
   {’Temp’|¨25¨}
   {’Watt’|¨200¨}
-  {’Wait-s’|¨3¨}
   {’Band’|’eingabe’}
   {’Amp’|’eingabe’}
   {’Watt’|’eingabe’}
   {’Volt’|’eingabe’}
   {’Temp’|’eingabe’}
+  {’Pid’|’eingabe’}
+  {’Thread’|’eingabe’}
+  {’ID’|’eingabe’}
+  {’Lüfter’|’eingabe’}
+  {’Motor’|’eingabe’}
+  {’Cpu’|’eingabe’}
+  {’Gpu’|’eingabe’}
+  {’Bluetooth’|’eingabe’}
+  {’Usb’|’eingabe’}
+  {’Fequenz’|’eingabe’}
+  {’Log’|’datenname’} #  wird generell nur an einen festen log Ordner geschickt
 
 --------------------------------------------------------------------
 ## Proton-Kategorien
 
 - Primär Physikalische (Temp, Volt, Watt, Amp)
 - Sekundär Verschachtelte Prozessweitergaben aller art
-- Zeitbezogene (Wait-s, Wait-ms)
 - Kommunikationsbezogene (Interface, Transport)
 - Speicherbezogene (Cache, Signed, Unsigned)
 - Logische (Valid, State, Mode)

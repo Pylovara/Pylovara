@@ -22,12 +22,12 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
     Print Druckt was da steht
 
-    »['echo'|"Hallo"]«
+    »["Hallo"]«
 
     oder komplexer :
 
-    ¶ »[(1)¨Hallo¨]« # wenn feed gespeichert
-    ¶¶ »['echo'|"(1)" # kann gespeichert daten in print dann mit echo drucken
+    ¶ »[(1)¨Hallo¨]    # wenn feed speichert mit blankernenner
+    ¶¶ ['echo'|"(1)"]« # kann gespeichert daten in print mit echo drucken mit aktionsdraht
 
     wir fügen also dem System cmd echo etwas hinzu , in diesem falle
     hallo .
@@ -39,7 +39,7 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
     ' ' <- System Commands , Wird als Anweisung verstanden , System CMD
 
 
- »[’exec once’|{'Rofi'|¨sleep 1 && pkill rofi || rofi -show drun &¨}]«
+    »['rofi sleep 1 && pkill rofi || rofi -show drun']«
 
     System CMD befehle gehen von jeweiligen unterbau aus und
     sind nur die container für System CMD befehle wie sudo usw
@@ -69,16 +69,16 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
     Falsch
 
-    »['sudo'|'pacman'|'-R'|'kwriter']«
+    »['sudo'|'pacman'|'-R'|¨kwriter¨]«
 
     Richtig
 
-    »['sudo pacman -R kwriter']«
+    »['sudo pacman -R'|¨kwriter¨]«
 
-    folgebefehle
+    folge-befehle
 
-    »['sudo pacman -R kwriter']«
-    ¶= »['sudo pacman -S kwriter']«
+    »['sudo pacman -R'|¨kwriter¨]«
+    ¶= »['sudo pacman -S'|¨kwriter¨]«
 
     den folgebefehl können wir als paralellen transportieren
 
@@ -100,26 +100,23 @@ umzukompilieren , was Im Pylovara Desktop Anwendung findet .
 
     ¨ ¨  <- Blankernenner , Das ist zu machen , Dies ist Das
 
-    Der Container Blankernenner Transport etwas mit das durch
-    die Eingabe Command/cmd , als Kommando mit gegeben wird.
+    Der Container Blankernenner wird für system cmd/s oder mcs cmd/s
+    genutzt , er löst das ad-hoc problem und gibt etwas dazu .
+    wir können damit echo füllen oder cat oder cd .
 
-    Beispiel :
+    er kann auch ausgewertete dinge in sich mit feed (1)¨pgrep firefox¨
+    mit sich tragen also den pid 2353 (b.s nr) und dann per feed
+    weitergeben wenn feed im code mit der selben zahl existiert
 
-    »[’exec once’|{'Terminal'|¨$terminal¨}]«
+    der blankenenner löst hauptsächlich das ad-hoc problem und
+    existiert damit print bei/m ,,druck’’ bleiben kann
 
-    Wir (exec)execuden (once)einmal das Terminal und geben den
-    heinheimischen befehl dazu weiter $terminal als
-    Blankernenner, nicht als cmd ans System weiter zugeben .
-
-    Dadurch können wir im MCS_Hyprland linux interne befehle
-    nutzen da die bibliothek für MCS CMD Eingaben noch nicht
-    so weitreichend aufgebaut ist
 
 --------------------------------------------------------------------
 
     , ,  <- Notiz , Was es ist , Tagging , So heißt es
 
-    Die Eingabe Notiz ist in man /chen Senarien mit viel Code eine
+    Die Eingabe Notiz ist in man/chen Senarien mit viel Code eine
     praktische angelegenheit und wird in MCS oft als Namengeber
     eines Proton Angewendet, um transportierte daten besser zu taggen.
     Der tag zeigt nur info daten die hardcodiert reingeschrieben

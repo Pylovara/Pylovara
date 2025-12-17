@@ -14,12 +14,27 @@ verbaut werden , den alles baut auf Protein auf ...
 
        []
 
+ein nicht ausführbares protein kann in operatoren oder
+wahrheiten logiken wie auch parallele prozesse oft als
+referenz header gesehen werden oder transportiert einfach etwas
+das im weiteren prozess irgendwann ausgeführt werden muss oder
+nur als notiz dient .
+
+ kurzes beispiel für eine einfache automation :
+        ¢!
+        °['$terminal']
+         »['$terminal']
+          ¶»['cd'|¨/Pylovara/¨]
+          ¶¶['cat'|¨readme.wiki-notes¨]«
+        !¢
 --------------------------------------------------------------------
 ## Protein Packete Definiert (ausführbar)
 
        »[]«
 
 ausfürbar durch Aktion (siehe kernel 06)
+
+Ein ausführbares Protein wird verarbeitet bzw ausgeführt .
 
 --------------------------------------------------------------------
 ## Protein Packete Definiert zwei Protein /e in einer aktion
@@ -28,6 +43,18 @@ ausfürbar durch Aktion (siehe kernel 06)
         ¶¶['*'|"*"]«
 
 ausfürbar durch Aktion (siehe kernel 06)
+
+wir kombinieren die laufende aktion an eine wenn kann wahrheit
+
+wenn ¶»['*'|"*"] das ist dann kann ¶¶['*'|"*"]« das ausgeführt
+werden .
+
+wir erkennen das der aktion/s rahmen auf beide ausgedehnt ist !
+
+den wenn ¶»['*'|"*"] ausgeführt wird , kann ¶['*'|"*"]« das folgen.
+
+dazu benutzen wir die schleifen aktion die als draht rahmen für die
+logik dient zum ausführen
 
 --------------------------------------------------------------------
 ## HighLevel Workflow Definition Combiniertes Beispiel linear

@@ -22,6 +22,12 @@ vorliegt das vor und danach den start und endpunkt des packets angibt
   » «
 
 --------------------------------------------------------------------
+  Definition  Aktionsdraht Anfang und Ende
+
+  »
+    «
+
+--------------------------------------------------------------------
   Info - Worflow Erkennung :
 
   Ein Aktion/s-start wie Aktion/s-endpunkt wird mit 2 bytes festgelegt
@@ -48,10 +54,10 @@ Transaktion /en.
 # Aktionen-anordnung  LowLevel Standart:
 
 ¢!
- »['cmd'|"print"]«
+ »['cmd'|¨xxx¨]«
 !¢
 
-¢! »['cmd'|"print"]« !¢
+¢! »['cmd'|¨xxx¨]« !¢
 
 --------------------------------------------------------------------
 # Aktion Info:
@@ -64,19 +70,21 @@ aktion /s Ende und der anfang vom ersten protein ,
 gewährleistet flexibilität.
 
 # Aktion/s-anordnung HighLevel mit low-leveloperationen  Linear :
+# ( musterbeispiele)
+¢!
+ »['$terminal']
+  ¶ ['$terminal']
+   ¶¶ ['echo'|¨helloworld¨]«
+!¢
+
 
 ¢!
  »[’exec’|’once’|¨$terminal¨]
-   ¶ ['echo'|"helloworld"]«
+   ¶ ['echo'|¨helloworld¨]«
+   ° ¶¶ »['exit']« # negation exit mit eigene aktionsausführung
 !¢
 
-¢!
- »[’exec’|’once’|¨$terminal¨]
-   ¶ ['echo'|"helloworld"]«
-   ° ¶¶ »['exit']«
-!¢
-
-info : ¶¶  Else | °  WennNicht  / Muss | ¶   IF
+info : ¶¶  Else | °  WennNicht/Muss | ¶   IF
 
 Eine HighLevel Aktion gleicht im prinzip C ist
 aber auf MCS zugeschnitten und weit aus effecktiver und lesbarer.

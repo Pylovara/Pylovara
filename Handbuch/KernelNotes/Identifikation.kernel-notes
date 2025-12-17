@@ -24,24 +24,24 @@ in der taktrate aktualisierend , unknackbar für ein fremden .
 
 --------------------------------------------------------------------
 
-    Beispiel  :
+Beispiel mit 3 MCS MCS möglichen schreibweisen :
+
 
 ¢!
-»['echo'|"Hallo"|{’Wait-s’|¨3¨}]«
+»['echo'|"Hallo"]«««t1 # print druck in echo
     = þ1623512
 !¢
 
+¢!
+! ['$terminal']
+ ¶¶ »['echo Hallo']««t2 # Nur reine system cmd
+    = þ1623512
+!¢
 
 ¢!
-»['echo'|"Hallo"|{’Wait-s’|¨3¨}]«
-
-ø,CSS,|
-    misc {
-  swallow_regex = ^(kitty)$
-  term = kitty
-  open = kitty
-    }ø
-    = §kitty þ1623512 # þ Optional
+»['$terminal']«
+ ¶¶ »['echo'|¨Hallo¨]««t2 # per blankernenner in echo rein
+    = þ1623512
 !¢
 
 --------------------------------------------------------------------

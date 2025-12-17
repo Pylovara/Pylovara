@@ -19,19 +19,26 @@ mit Hardware.
 
 --------------------------------------------------------------------
 
- Definition Anfang und Ende :
+ Definition :
 
- ø ø
-
- ø Anfang und ø Ende
+ ø
 
 --------------------------------------------------------------------
 
- Grundgerüst :
+ Definition Anfang und Ende :
+
+
+ ø #Anfang
+
+ ø #Ende
+
+--------------------------------------------------------------------
+
+ Definition Grundgerüst :
 
  ø ,,   # Warp Beginn + Optionale Notiz
  Code   # Code im Originalen zustand
- ø = §  # Warp Ende + Adressierung + Zielreferenz
+ ø = §  # Warp Ende + Adressierung und oder Zielreferenz
 
  Genau so lassen sich Alle Codes Warpen
 
@@ -164,7 +171,7 @@ direkt an die Assembly,ohne Umrechnungsvariablen, was den Punkt
 über die direkte Assembly-Interaktion bestätigt.
 
 --------------------------------------------------------------------
-WLAN-Implementierungsmöglichkeit Muster:
+WLAN-Implementierungsmöglichkeit GROBES Muster:
 
 ¢!
 »[{’Interface’|'wlan0'}|{’Action’|'set_band'}|{’Value’|¨2.4G¨}]«

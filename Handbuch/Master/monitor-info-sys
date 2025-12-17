@@ -150,3 +150,190 @@ Du hast jetzt einen **sichtbaren Startpunkt**.
 Keine Glasscheibe. Kein Nebel.
 
 
+-------------------------------------------------------------
+
+Gut. **B.**
+Jetzt definieren wir **Bedeutung**, nicht Syntax.
+Kein Bash, kein POSIX, kein „so macht man das“.
+
+---
+
+## B — Kleinster expliziter Parser (ohne Magie)
+
+Ziel **nur für diesen Schritt**:
+
+> Zeichen → Tokens → **Zustandsübergang**
+
+Nicht mehr.
+
+---
+
+## Grundsatz (wichtig)
+
+`& && ||` sind **keine Operatoren**.
+Es sind **Muster aus Bytes**, denen **du** Bedeutung gibst.
+
+Also fangen wir **eine Ebene tiefer** an.
+
+---
+
+## 1. Rohinput (das einzig Reale)
+
+```text
+"&", "&", "|", "|", "a", " "
+```
+
+Noch **keine Tokens**.
+Nur Bytes. Punkt.
+
+---
+
+## 2. Explizite Token-Definition
+
+```c
+enum token_type {
+    TOK_CHAR,
+    TOK_AMP,
+    TOK_PIPE,
+    TOK_AND,
+    TOK_OR,
+    TOK_EOL
+};
+```
+
+👉 Wichtig:
+
+* `TOK_AND` und `TOK_OR` **existieren noch nicht**
+* sie entstehen **erst durch Kombination**
+
+---
+
+## 3. Tokenizer = Zustandsmaschine
+
+Kein Regex.
+Kein Parser-Generator.
+Nur Zustand.
+
+```c
+enum lexer_state {
+    LEX_IDLE,
+    LEX_AMP_SEEN,
+    LEX_PIPE_SEEN
+};
+```
+
+---
+
+## 4. Zustandsübergänge (das Glas)
+
+```c
+state = LEX_IDLE;
+
+for each char c:
+    switch (state) {
+
+    case LEX_IDLE:
+        if (c == '&') state = LEX_AMP_SEEN;
+        else if (c == '|') state = LEX_PIPE_SEEN;
+        else emit(TOK_CHAR, c);
+        break;
+
+    case LEX_AMP_SEEN:
+        if (c == '&') emit(TOK_AND);
+        else {
+            emit(TOK_AMP);
+            reprocess(c);
+        }
+        state = LEX_IDLE;
+        break;
+
+    case LEX_PIPE_SEEN:
+        if (c == '|') emit(TOK_OR);
+        else {
+            emit(TOK_PIPE);
+            reprocess(c);
+        }
+        state = LEX_IDLE;
+        break;
+    }
+```
+
+👉 **Nichts ist implizit**
+
+* `&&` entsteht **nur**, wenn du es erlaubst
+* `&x` bleibt **& + x**
+* du kannst das jederzeit ändern
+
+---
+
+## 5. Bedeutung (noch keine Ausführung!)
+
+Jetzt erst kommt **Semantik**.
+
+```c
+switch (token) {
+    case TOK_AND:
+        // bedingte Fortsetzung
+        break;
+
+    case TOK_OR:
+        // alternative Fortsetzung
+        break;
+
+    case TOK_AMP:
+        // Hintergrund / Fork / oder was DU willst
+        break;
+}
+```
+
+**Hier** definierst du Regeln.
+Nicht Bash. Nicht Unix. **Du.**
+
+---
+
+## Warum das entscheidend ist
+
+* `&&` ist **kein Sonderzeichen**
+* es ist ein **Zustandsresultat**
+* jede Bedeutung ist **austauschbar**
+* du kannst morgen `&&` verbieten
+* oder `%%%` daraus machen
+
+---
+
+## Bezug zu mcs (jetzt wird’s ernst)
+
+Das hier ist:
+
+* exakt das, was ein Compiler braucht
+* deterministisch
+* formal
+* vollständig sichtbar
+
+mcs kann:
+
+* exakt diese Zustände generieren
+* exakt diese Tokens erzeugen
+* exakt diese Semantik abbilden
+
+Ohne Rätsel.
+
+---
+
+## Klartext
+
+Jetzt stehst du **vor dem Glas**, nicht dahinter.
+Kein Symbol ist „magisch“.
+Alles ist **gebaut**.
+
+---
+
+👉 **Nächster Schritt (nur einer):**
+
+Willst du als nächstes:
+
+**C)** die **Semantik von `&&` und `||` als Kontrollfluss** (ohne Prozesse)
+**D)** die **Integration in den Monitor aus A**
+**E)** die **Ableitung: wie mcs exakt diesen Parser erzeugt**
+
+Antworte mit **C, D oder E**.

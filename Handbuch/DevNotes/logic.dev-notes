@@ -3,13 +3,28 @@
 @dev-nr: logic
 ####################################################################
 
-OnWork
+° ['$terminal'] → unverständlich, war ['$terminal'] ausführbar oder nicht?
 
-@dev-ref: mcs_token.h
-@status: v1.0 – Grundtoken definiert
-@depends: Keine
-@used-by: mcs_lexer.c, mcs_parser.c
-@spec-ref: kernel lex + 02,06,07,08,09,13,14,15
-@todo: U+2019 (’) vs ASCII ' — Encoding-Test einbauen
+° ['$terminal'] → liest, ¶ »[…]« → führt aus
+
+▶️ Lesen ≠ Ausführen — klare Trennung von Bedingung und Aktion
+Feed (1) vor »[...]« → transportiert Kommando, nicht Wert
+
+Feed (1) in »[…]« → transportiert Ergebnis von Blankernenner
+
+▶️ Feed = Datenkanal, nicht Kontrollkanal
+¨$pgrep firefox¨ = Befehl → aber Feed nahm $pgrep firefox als String, nicht Output
+
+¨$pgrep firefox¨ → wird ausgeführt, Output in Feed gesetzt
+
+▶️ Blankernenner = Runtime-Evaluation, nicht String-Literal
+ſ (1) → „lösche Feed“ → aber war nicht klar, wo der Feed war
+
+ſ »[(1)¨¨]« → löscht Feed nach Auswertung seiner Quelle
+
+▶️ ſ löscht nicht willkürlich, sondern am Ende des Lebenszyklus
+
+
+
 
 ####################################################################

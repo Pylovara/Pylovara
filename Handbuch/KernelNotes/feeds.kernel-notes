@@ -2,6 +2,8 @@
 ####################################################################
 Erklärung:
 
+Feed = Datenkanal, nicht Kontrollkanal
+
 Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
 er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
 und dadurch seine andock station definiert ..
@@ -33,6 +35,38 @@ Das ist Feed !!!
 Feed wartet auf Feedback seines zwillings oder dutzenschaften,
 um den inhalt der angekommen ist , in sich in sich überall gleich
 zu verteilen ...
+
+--------------------------------------------------------------------
+
+Unterbau Erklärung :
+
+
+Feed werden immer an den eingabe container gebunden :
+
+(1)"" <-- eingabe print
+(2)'' <-- eingabe OS System CMD
+(3)’’ <-- eingabe MCS System CMD
+(4),, <-- Notiz
+(5)¨¨ <-- Blanker nenner
+
+und nehmen den output un dtransportieren ihn
+
+wenn in feed schonwas steht , wird er an seine geschwister weiter
+geleitet .
+
+um nummer oder buchstaben chaos von duzenden Einser in allen
+MCS codes auszuschließen wird jeder feed mit einem cache
+ausgestattet und hat einen eigenen cache nummer speicher für
+genau diese eins
+
+(1) <-- die hier hat z.b 12319123
+(1) <-- die hier hat 098072
+
+somit wird der cache sicher transportiert und wird auch immer
+als genau den feed erkannt
+
+somit können 10 x (1) feed transporte mit der selben kenn nummer
+weiter gegeben werden und diese (1) wissen das sie zusammengehören
 
 Dadurch enstehen Mächte WorkFlows
 

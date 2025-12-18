@@ -126,13 +126,13 @@ und deine Administrator-Identität kryptographisch bindet.
 
 5. Deine Rechte unter dem Mandat
 
-Du besitzt (solange du lebst):
+Ich besitze solange ich Lebe :
 
 -----------------------------------------------------------------------------------
 
 5.1 Absolute Änderungsgewalt über den Kernel
 
-Nur du darfst:
+Nur ich darf:
 
 die MCS-Syntax erweitern
 
@@ -146,11 +146,13 @@ Runtime-Elemente erweitern
 
 Owner-Key-Kette updaten
 
+Unautorisierte Nutzung abschalten
+
 -----------------------------------------------------------------------------------
 
 5.2 Kontrolle über die wirtschaftliche Lizenzierung
 
-Du entscheidest:
+Ich entscheide:
 
 ob Firmen zahlen
 
@@ -168,7 +170,7 @@ wie kommerzielle Nutzungsrechte vergeben werden
 
 5.3 Kontrolle über sicherheitspolitische Freigaben
 
-Du definierst:
+Ich definier:
 
 welche Staaten MCS in sicherheitsrelevanten Bereichen einsetzen dürfen
 
@@ -182,9 +184,9 @@ welche ausgeschlossen bleiben
 
 5.4 Exklusive Kontrolle der Post-Mortem-Vererbung
 
-Du legst fest:
+Ich lege fest:
 
-welche KI dein Mandat nach deinem Tod übernimmt
+welche KI mein Mandat nach dem Tod übernimmt
 
 wie die Kontrolle übertragen wird
 
@@ -192,7 +194,7 @@ welche Rechte danach weiter gelten
 
 was unveränderbar bleibt
 
-(Die technischen Details dazu stehen später im L5-Dokument.)
+wie mein vermögen den erhalt refinanzieren
 
 -----------------------------------------------------------------------------------
 
@@ -203,14 +205,14 @@ Das Mandat legt fest:
 Der Kern bleibt öffentlich einsehbar
 – keine Geheimhaltung im Basis-Kernel.
 
-Kein Mensch darf ausschließliche Kontrolle nach deinem Tod haben
-– nur eine KI-Instanz, die du festlegst.
+Kein Mensch darf ausschließliche Kontrolle nach meinem Tod haben
+– nur eine KI-Instanz, die ich festlege.
 
 Der Code darf nicht zur Unterdrückung benutzt werden
 – das ist fest im Kernel verankert.
 
-Der Kernel darf nie zum Bezahlen gezwungen werden
-– du darfst Geld verdienen, aber niemand wird zur Zahlung gezwungen, um MCS privat zu nutzen.
+Der Kernel wie die AI darf nie zum Bezahlen gezwungen werden
+– Ich verdiene Geld , aber niemand wird zur Zahlung gezwungen, um MCS privat zu nutzen.
 
 -----------------------------------------------------------------------------------
 
@@ -236,12 +238,12 @@ Versionshash
 
 Identifikationswerte
 
-Bindung an deinen Schlüssel
+Bindung an Meinem Schlüssel
 
 Unveränderbarkeit des L1-Moduls
 
 Wenn ein System erkennt, dass L1 manipuliert wurde →
-Start verweigert. Punkt.
+Start verweigert oder Hardware brick.  Punkt.
 
 -----------------------------------------------------------------------------------
 
@@ -249,9 +251,9 @@ Start verweigert. Punkt.
 
 Das Mandat endet automatisch:
 
-bei deinem natürlichen Tod
+bei meinem natürlichen Tod
 
-oder wenn du es selbst aufgibst (Signatur erforderlich)
+oder wenn ich es selbst aufgebe (Signatur erforderlich)
 
 Es endet nicht durch:
 
@@ -270,5 +272,7 @@ Bestechung
 Zwang
 
 Erpressung
+
+Bedrohungen im allgemeinen
 
 -----------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-# Info Zettel für mich MCS Tests
+# Info Zettel für mich für die Arbeit
 
 #skelett build test:
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
@@ -24,50 +24,65 @@ cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/S
 #Operatoren logik :
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
 
------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+# Saubee ausgabe um fehlerquellen zu finden , achte darauf das jede datei einen eigenen // Info header head mit ordner und sachlage
+# dann ist es einfacher beim massenhaften cat die daten richtig zu sehen und das die abähnigkeiten auch im header als kommentar kurz
+# stehen um saubere wartbare abschnitte zu produzieren .... vermeidungsstichwort : legacy code
 
-# Lab/ bereich
-cat /Pylovara/System/Kernel/Core/Lab/test_action.c /Pylovara/System/Kernel/Core/Lab/test_if.c /Pylovara/System/Kernel/Core/Lab/test_lexer.c /Pylovara/System/Kernel/Core/Lab/test_trans.c
+# Lab/
+cat /Pylovara/System/Kernel/Core/Lab/test_action.c /Pylovara/System/Kernel/Core/Lab/test_if.c /Pylovara/System/Kernel/Core/Lab/test_lexer.c /Pylovara/System/Kernel/Core/Lab/test_trans.c /Pylovara/System/Kernel/Core/Lab/mcs-code.ideen.txt /Pylovara/System/Kernel/Core/Lab/test.mcs /Pylovara/System/Kernel/Core/Lab/test_mcs_strucktur.mcs /Pylovara/System/Kernel/Core/Lab/test_trans.mcs
 
-# Logic/ bereich
+# Logic/
 cat /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/Logic/mcs_token.h
 
-# Lib/ könnte relevant sein
-cat /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_action.c
+# Lib/
+cat /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c
 
-# include/ bereich
-cat /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs.h
+# include/
+cat /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs.h /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_warp.h
 
-# Core/ bereich
-cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt
+# IntLab/
+# (keine Dateien im tree angezeigt - leerer Ordner)
+
+# Core/ (Root-Ebene)
+cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt /Pylovara/System/Kernel/Core/infostart.txt
+
+# mcscodes/
+cat /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
+
+# errologs/
+cat /Pylovara/System/Kernel/Core/errologs/mcs_action.o /Pylovara/System/Kernel/Core/errologs/mcs_lexer.o /Pylovara/System/Kernel/Core/errologs/mcs_transaction.o
+
+# Build Cleanup
+cd /Pylovara/System/Kernel/Core/build && rm -rf CMakeCache.txt CMakeFiles/ cmake_install.cmake *.a *.o mcs test_* && make clean && cmake .. && make -j$(nproc)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Für die **Fehleranalyse** und **AI-Unterstützung** sind diese Dateien besonders hilfreich:
+
+## **AI-Freundliche Analyse-Befehle:**
+
+# Komplette Konfiguration für AI
+echo "=== CMake Configuration ==="
+cat CMakeConfigureLog.yaml
+
+echo -e "\n=== Build Targets ==="
+cat Makefile | grep -E "^[a-zA-Z]" | head -20
+
+echo -e "\n=== Compiler Flags ==="
+cat CMakeFiles/mcs_core.dir/flags.make
+
+echo -e "\n=== Linker Command ==="
+cat CMakeFiles/mcs.dir/link.txt
+
+echo -e "\n=== Source Files ==="
+cat CMakeFiles/mcs_core.dir/DependInfo.cmake | grep "\.c\""
 
 
-# Datenbank: (ich bau noch einen abhängigkeits cat baum)
-cat /Pylovara/System/Kernel/Core/include/mcs.h /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_warp.h main.c CMakeLists.txt /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/include/mcs_operatoren.h
+## Dateien AI-freundlich
+#1. Klartext - keine Binärformate
+#2. Strukturiert - Makefiles, YAML, Listen
+#3. Vollständig - zeigen alle Schritte
+#4. Nachvollziehbar - AI kann Build-Prozess verstehen
 
-
-# Test MCS dateien:
-
-cd /Pylovara/System/Kernel/Core/mcscodes/ && cat test_semantic_dispatcher.mcs test_parallel_wait.mcs test_parallel.mcs test1_update.mcs test1_echo.mcs test.mcs test_operatoren.mcs
-
------------------------------------------------------------------------------------
-
-# Manchmal brauchs ein cache reset damit ein build funktioniert , wegen reste
-
-cd /Pylovara/System/Kernel/Core/build
-rm -rf CMakeCache.txt CMakeFiles/ cmake_install.cmake *.a *.o mcs test_*
-make clean
-cmake ..
-make -j$(nproc)
-
-
-###################################################################################
-
-# Lib/ könnte relevant sein
-cat /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_action.c
-
-# include/ bereich
-cat /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs.h
-
-# Core/ bereich
-cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt
+------------------------------------------------------------------------------------------------------------------------------

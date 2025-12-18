@@ -22,10 +22,9 @@ nur als notiz dient .
 
  kurzes beispiel für eine einfache automation :
         ¢!
-        °['$terminal']
-         »['$terminal']
-          ¶»['cd'|¨/Pylovara/¨]
-          ¶¶['cat'|¨readme.wiki-notes¨]«
+        ° ['$terminal']
+          ¶ »['cd'|¨/Pylovara/¨]
+          ¶¶ ['cat'|¨readme.wiki-notes¨]«
         !¢
 --------------------------------------------------------------------
 ## Protein Packete Definiert (ausführbar)
@@ -39,8 +38,8 @@ Ein ausführbares Protein wird verarbeitet bzw ausgeführt .
 --------------------------------------------------------------------
 ## Protein Packete Definiert zwei Protein /e in einer aktion
 
-        ¶»['*'|"*"]
-        ¶¶['*'|"*"]«
+        ¶ »['*'|"*"]
+        ¶¶ ['*'|"*"]«
 
 ausfürbar durch Aktion (siehe kernel 06)
 
@@ -60,8 +59,8 @@ logik dient zum ausführen
 ## HighLevel Workflow Definition Combiniertes Beispiel linear
 
 ¢|
-»['*'|"*"]«
-¶»['*'|"*"]
+° ['*'|"*"]
+¶ »['*'|"*"]
 ¶¶ ['*'|"*"]«
 |¢
 
@@ -70,23 +69,6 @@ Ausführbares protein mit wenn kann regel ,
 aus C , da Nützlich für IF and Else regeln (siehe kernel lex 08)
 
 --------------------------------------------------------------------
-# Protein Packet Layout LowLevel schulisches b.s :
-
-System CMD :
-»['echo'|"Hallo Welt"]«
-
-Pylovara MCS CMD :
-»[’sendurl’|¨https://github.com/Pylovara/Pylovara/¨]«
-»[’pushout’|¨~/Home/testdatei.wiki-notes|'to'|¨~/Home/Dokumenten/¨]«
-»[’run’|’Firefox’|’open’|’search’|¨Pylovara Github¨|’Enter’]«
-
-# WorkAround leichter Ablauf (linear) :
-
-¢|
-»[’sendordner’|¨/Pylovara/Hanbuch¨|'cd'|¨~/Dokumente¨|'echo'|"bestätigen? y/n"|'eingabe: y']
-       ¶ ['y'|’pushout’|'cd'|¨~/Dokumente¨|'echo'|"Verschoben in ~/Dokumente/"]«
-       ¶¶ ['n'|'exit']«
-|¢
 
 ##################### Ende der Transaktion #########################
 ####################################################################

@@ -8,9 +8,9 @@ Pylovara/MCS – Kommerzielle Nutzung & Lizenzrecht
 
 L3 regelt alle finanziellen, kommerziellen und industriellen Nutzungen von:
 
-MCS Syntax & Sprache
+MCS Syntax & Sprache & Plus
 
-Pylovara Kernel & Runtime
+Pylovara Kernel & Runtime & MCS-System & MCS-Plus
 
 Compiler (C/MCS/LLVM/FPGA)
 
@@ -238,19 +238,37 @@ Runtime-Freischaltung
 
 Kostenfrei für:
 
+Kindergärten
+
 Schulen
 
 Universitäten
 
+Kliniken
+
+Feuerwehr
+
+Unprofitable ISP Anbieter
+
+Pflegeeinrichtungen
+
+Rettungsdienste
+
 gemeinnützige Organisationen
 
-NGOs
+Tierschutzorganisationen
+-egal ob Wasser , Luft oder Erde
 
 öffentliche Forschungsprojekte
 
 gemeinwohlorientierte Systeme
 
-Diese Instanzen benötigen einen Education- oder Community-Key.
+
+Diese Instanzen benötigen einen Education- oder Community-Key oder Öffentlichedienste-key.
+
+
+NGOs
+-werden keine zugänge gestattet !
 
 -----------------------------------------------------------------------------------
 
@@ -278,23 +296,23 @@ Audit-Units aktiviert lassen
 
 Automatisch ausgelöst durch Kernel-Schutz:
 
-Sperrung von Warp-Modulen
+1.Instanz:
+-Sperrung von Warp-Modulen
+-Deaktivierung kommerzieller Feeds
 
-Deaktivierung kommerzieller Feeds
+2.Instanz:
+-Blockierung von Runtime-Funktionen
+-Meldung an DIMS
 
-Blockierung von Runtime-Funktionen
-
-Meldung an DIMS
-
-rechtliche Verfahren gegen Urheberrechtsverletzung
-
-Verlust der Zertifizierungen
+3.Instanz:
+-rechtliche Verfahren gegen Urheberrechtsverletzung
+-Verlust der Zertifizierungen
 
 Nach 3 Verstößen:
 
 PERMANENT-L3-BLOCK
 
-Nur der Autor kann entsperren.
+Nur der Autor kann entsperren.Was nur passiert wenn Fehler vorliegt.
 
 -----------------------------------------------------------------------------------
 

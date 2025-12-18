@@ -8558,5 +8558,96 @@ ball geblieben !
 #####################################################################################
 #####################################################################################
 
+[21:00:58|Do Dez 18]
+
+Stand der Dinge :
+
+-mcs_transaktion.h erweitert mit operators[], operator_count, error_handler
+-mcs_operatoren.h/.c korrekt, named struct, mcs_truth_t bekannt
+-mcs_runner.c nutzt backup-muster: t->proteine[0]/[1], WAHR_IF/WAHR_ELSE, res-Aggregation
+-Build läuft durch — alle Tests grün
+-test_semantic_dispatcher.mcs funktioniert
+-test_operatoren.mcs wartet auf Operator-Logik
+
+heute wird der freigewordene weg um die restlichen operatoren sauber zu implementieren
+
+die if else wurde von den aktionen getrennt sauber und sind eigenständige wahrheiten
+
+jetzt geht es darum
+
+- t->protein_count >= 2
+- p_if = t->proteine[0], p_else = t->proteine[1]
+- WAHR_IF / WAHR_ELSE-Prüfung
+- res-Aggregation
+- Kein Zugriff auf nicht-existierende Felder
+
+
+
+Phase 1: mcs_runner.c — Operatoren-Auswertung aktivieren
+
+ich nutzen funktionierendes Backup-Muster, aber erweitere es um:
+
+    Zugriff auf t->operators[] (jetzt existiert das Feld!)
+    mcs_evaluate_operator() → liefert MCS_TRUE/MCS_FALSE
+    Zweig-Ausführung über op->then_branch/else_branch (jetzt korrekt gesetzt, sobald mcs_lexer_peek da ist → aber wir machen’s ohne Peek, MVP-first)
+
+ Dafür brauche ich kein mcs_lexer_peek — ich nutze den aktuellen Parser, der
+
+ then_branch = NULL setzt, und verwende stattdessen t->proteine[0], [1] weiter
+
+
+Phase 2: mcs_transaktion.c — Zweige richtig zuweisen (ohne Peek)
+
+ersetze das MVP-NULL durch sichere, sequenzielle Zuweisung:
+
+// In mcs_parse_transaktion():
+if (op->type == MCS_OP_WHEN_NOT && next.token_type == TOK_ACTION_START) {
+    mcs_protein_t* cond = mcs_parse_next_protein(lex);
+    mcs_operator_bind_condition(op, cond);
+    // Zweige: NÄCHSTES Protein = THEN, ÜBERNÄCHSTES = ELSE
+    if (t->protein_count >= 1) {
+        op->then_branch = t->proteine[t->protein_count - 1]; // letztes Protein = THEN
+    }
+    // ELSE kommt später — wir warten, bis es geparst ist
+}
+
+Das ist riskant bei mehreren Operatoren , wenns nicht klapp setze ich das auf die warte schlange und kümmere mich intensiv darum wenn alles implementiert ist !!
+
+test tag läuft jetzt
+
+WegFrei :
+-für die Operatoren.
+-mcs_lexer_peek() bauen — sauber, ohne Crash.
+- ſ (1) → mcs_feed_clear(1) automatisieren.
+
+
+danach : þ-Generator → unveränderliche Identität für jede KI.
+
+Phase 1 bleibt ohne then_branch/else_branch, stattdessen:
+
+// In mcs_run_transaktion():
+for (int i = 0; i < t->operator_count; i++) {
+    mcs_operator_t* op = t->operators[i];
+    if (op->type == MCS_OP_WHEN_NOT && t->protein_count >= 2) {
+        mcs_truth_t eval = mcs_evaluate_operator(op);
+        if (eval == MCS_TRUE) {
+            // Führe erstes Protein als THEN aus
+            if (t->proteine[0]) mcs_run_protein(t->proteine[0]);
+        } else if (eval == MCS_FALSE) {
+            // Führe zweites Protein als ELSE aus
+            if (t->proteine[1]) mcs_run_protein(t->proteine[1]);
+        }
+    } else if ((op->type == MCS_OP_WHEN_LT || op->type == MCS_OP_WHEN_GT)
+               && op->data.cmp.left_id >= 0 && op->data.cmp.right_id >= 0) {
+        mcs_truth_t eval = mcs_evaluate_operator(op);
+        if (eval == MCS_TRUE && t->protein_count >= 2) {
+            if (t->proteine[0]) mcs_run_protein(t->proteine[0]);
+        } else if (eval == MCS_FALSE && t->protein_count >= 2) {
+            if (t->proteine[1]) mcs_run_protein(t->proteine[1]);
+        }
+    } else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+        mcs_feed_clear(op->data.residue_id);  // ✅ sofort!
+    }
+}
 
 

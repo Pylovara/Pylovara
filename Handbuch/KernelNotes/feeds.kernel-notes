@@ -108,10 +108,30 @@ vervollständigen
 ¢!
 »['pgrep'|¨firefox¨|(1)¨$(pgrep firefox)¨]«
 »['kill'|(1)¨¨]«««t1
+ ¶ ['kill'|(1)¨¨]
+ ¶¶ »['notify-send'|"FireFox wurde beendet"]«
 !¢
---------------------------------------------------------------------
-wir transportieren einen blanken nenner mit Dollar , bekommen
+
+wir transportieren einen blanken nenner , bekommen
 den pid der dann als kill 1142 getötet wird zurück .
+--------------------------------------------------------------------
+  Musterbeispiel :
+
+¢!
+° ['$terminal']
+  ¶ »['notify-send'|"OFFLINE"]«
+  ¶¶ »['notify-send'|"ONLINE"]«
+
+»['echo'|(1)¨30¨]«
+»['echo'|(2)¨25¨]«
+
+< [(1)¨¨|(2)¨¨]
+  ¶ »['echo'|¨WARN:¨|(1)¨¨|¨< 25? Nein!¨]«
+  ¶¶ »['echo'|¨OK:¨|(2)¨¨|¨≥ 25¨]«
+
+ſ »[(1)¨¨]«
+ſ »[(2)¨¨]«
+!¢
 
 ######################## Ende der Feeds ############################
 ####################################################################

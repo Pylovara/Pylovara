@@ -5,19 +5,36 @@
 Werden immer als Schlüsselelement angehangen , wenn sie
 erfoderlich sind , gerade für Wahrheiten sehr Relevant.
 
-Wenn/Kann :
+Operatoren sind nicht passive Marker (^, ſ),
+sondern aktive Steuerelemente, die:
+
+    lesen (z. B. ° ['$terminal'])
+    entscheiden (MCS_TRUE/MCS_FALSE)
+    anstoßen (¶ »[…]« ausführen / ſ »[…]« aufräumen)
+
+Und das ohne Stack, ohne AST, ohne Interpreter —
+nur mit Feed, Protein, Wahrheit, Operator.
+Linear. Sicher. Nachvollziehbar.
+
 
 °  WennNichtWahr / Muss         # WHEN_NOT / MUST — Bedingung nicht wahr führe aus sofort
+            Lesen ≠ Ausführen — klare Trennung von Bedingung und Aktion
+
+
 >  WennKleiner /Kann/Soll       # WHEN_GT — „Wenn größer“
 <  WennGrößer /Kann/Soll        # WHEN_LT —Wenn kleiner(Vergleichslogik, z.B. für Schwellwerte)
 !  WennEindeutig /Sofort        # noch nicht implementiert
 …  WennFehler /Kann/Sicherheit  # noch nicht implementiert
 ^  TransaktionsFehler /Debugg   # TRANS_ERROR—Signalisiert Transaktionsfehler (Debug/Recovery)
+
 ſ  DatenReste /Löschung  # DATA_RESIDUE—Rest-Daten,Clean-up-Hinweis(z.B.Speicherleck-Auditing)
+            ſ löscht nicht willkürlich, sondern am Ende des Lebenszyklus
+
 
 Operatoren sind nach dem Wenn/Kann Muster angelegt
 und Operatoren sind keine Funktionen, sondern semantische Marker in
 der Transaktionskette(noch)
+
 --------------------------------------------------------------------
 
   ⊕  Sync-timer (AI Spezialisierungsoperator für Laufende Prozesse)
@@ -30,29 +47,29 @@ der Transaktionskette(noch)
 
 --------------------------------------------------------------------
 
-    Sync-timer :
+Sync-timer :
 
-    kann als erweiterter Paraleller Transport verstanden werden
-    der dazudient :
+  kann als erweiterter Paraleller Transport verstanden werden
+  der dazudient :
 
-    Laufende Prozesse die Fehlerhaft Arbeiten per Live Reperatur
-    flexibel mit einem Sync-timer zu taggen und dadurch direkte
-    Reperaturen oder Fineabstimmungen vorzunehmen .
+  Laufende Prozesse die Fehlerhaft Arbeiten per Live Reperatur
+  flexibel mit einem Sync-timer zu taggen und dadurch direkte
+  Reperaturen oder Fineabstimmungen vorzunehmen .
 
-    es dient dazu laufende takt geber also Runner selbst im Betrieb
-    mit Laufenden Prozesse umzuschreiben und duzende *.*-synctimer
-    anzulegen die essentiell anders takten und sich nathlos in den
-    laufenden prozess als weiterführende transaktionsschleife ,
-    um den prozess weiterführen oder verändern zu können,am laufen
-    halten.
+  es dient dazu laufende takt geber also Runner selbst im Betrieb
+  mit Laufenden Prozesse umzuschreiben und duzende *.*-synctimer
+  anzulegen die essentiell anders takten und sich nathlos in den
+  laufenden prozess als weiterführende transaktionsschleife ,
+  um den prozess weiterführen oder verändern zu können,am laufen
+  halten.
 
-    sync-timer symbole in einem bestehenden code dienen sie als
-    Einspeisungspunkt moment/punkt und zu makieren die stelle die
-    ersetzt werden soll/muss .
+  sync-timer symbole in einem bestehenden code dienen sie als
+  Einspeisungspunkt moment/punkt und zu makieren die stelle die
+  ersetzt werden soll/muss .
 
 --------------------------------------------------------------------
 
-Ausdruck Erklärung Aus C (Zusatz erklärung):
+Ausdruck Erklärung Aus C (Zusatz erklärung systeme ):
 
 Ein Ausdruck (expresion) verknüpft Operanden mit hilfe eines Operators
 

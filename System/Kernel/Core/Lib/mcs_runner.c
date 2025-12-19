@@ -1,8 +1,10 @@
 // Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
-// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (keine operator_count yet)
-#include "mcs_runner.h"
+// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (mit operator_count!)
+// Lib/mcs_runner.c — v3.0 FINAL: mit Operator-Integration
 #include "mcs_feed.h"
 #include "mcs_semantics.h"
+#include "mcs_operatoren.h"   // ✅ VOR mcs_runner.h — volle Definition
+#include "mcs_runner.h"       // ✅ NACH mcs_operatoren.h — damit MCS_ERR_SYSTEM bekannt ist
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -58,21 +60,49 @@ int mcs_run_transaktion(mcs_transaktion_t* t) {
     // 🔹 Gesamtergebnis – Fehler sammeln, nicht vorzeitig abbrechen
     int res = MCS_OK;
 
-    // 🔹 1. Transaktions-Bedingung (z.B. ° ['$terminal'])
+    // 🔹 1. Operatoren-Auswertung (kernel 09) — SAUBER, OHNE t->then_branch
+    if (t->operator_count > 0) {
+        for (int i = 0; i < t->operator_count; i++) {
+            mcs_operator_t* op = t->operators[i];
+            if (!op) continue;
+
+            mcs_truth_t eval = mcs_evaluate_operator(op);
+            if (eval == MCS_ERROR) {
+                res = MCS_ERR_SYNTAX;
+                continue;
+            }
+
+            // °, <, > → Zweige ausführen (immer Protein[0] = THEN, Protein[1] = ELSE)
+            if ((op->type == MCS_OP_WHEN_NOT ||
+                op->type == MCS_OP_WHEN_LT ||
+                op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+
+                if (eval == MCS_TRUE) {
+                    // THEN-Zweig: erstes Protein
+                    if (t->proteine[0]) {
+                        int r = mcs_run_protein(t->proteine[0]);
+                        if (r < 0) res = r;
+                    }
+                } else if (eval == MCS_FALSE) {
+                    // ELSE-Zweig: zweites Protein
+                    if (t->proteine[1]) {
+                        int r = mcs_run_protein(t->proteine[1]);
+                        if (r < 0) res = r;
+                    }
+                }
+                }
+                // ſ → sofort löschen (Lebenszyklus-Ende)
+                else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+                    mcs_feed_clear(op->data.residue_id);
+                }
+        }
+    }
+
+    // 🔹 2. Transaktions-Bedingung (z.B. ° ['$terminal']) — Fallback für alten Code
     if (t->wahrheit != WAHR_NONE && t->condition) {
         mcs_semantic_op_t op = mcs_wahrheit_to_semantic(t->wahrheit);
         mcs_truth_t cond = mcs_evaluate_condition(t->condition);
 
-        //if (op == SEMANTIC_WHEN_NOT) {  // °
-        //    if (cond == MCS_FALSE && t->then_branch) {
-        //        int r = mcs_run_protein(t->then_branch);
-        //        if (r < 0) res = r;
-        //    } else if (cond == MCS_TRUE && t->else_branch) {
-        //        int r = mcs_run_protein(t->else_branch);
-        //        if (r < 0) res = r;
-        //    }
-        // klammer entfernt für backupmuster
-        // dafür das hinzugefügt
         if (op == SEMANTIC_WHEN_NOT) {  // °
             // Fallback: nur erstes Protein als THEN, zweites als ELSE nutzen
             if (t->protein_count >= 2) {
@@ -86,12 +116,8 @@ int mcs_run_transaktion(mcs_transaktion_t* t) {
                     if (r < 0) res = r;
                 }
             }
-        }
-
-        // ⚠️ Hinweis: t->then_branch / else_branch existieren *noch nicht* in deinem mcs_transaktion.h
-        // → wir lassen das *für heute weg* und behalten dein altes Verhalten:
-        else {
-            // Fallback: wie in deinem Backup – nur erstes Protein prüfen
+        } else {
+            // Altes Backup-Verhalten
             if (t->protein_count > 0 && t->proteine && t->proteine[0]) {
                 mcs_protein_t* p0 = t->proteine[0];
                 if (cond == MCS_FALSE && p0->then_branch) {
@@ -105,9 +131,9 @@ int mcs_run_transaktion(mcs_transaktion_t* t) {
         }
     }
 
-    // 🔹 2. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
+    // 🔹 3. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
     for (int i = 0; i < t->protein_count; i++) {
-        mcs_protein_t* p = t->proteine && i < t->protein_count ? t->proteine[i] : NULL;
+        mcs_protein_t* p = (i < t->protein_count) ? t->proteine[i] : NULL;
         if (!p) continue;
 
         if (p->wahrheit != WAHR_NONE) {
@@ -138,7 +164,6 @@ int mcs_run_transaktion(mcs_transaktion_t* t) {
                             mcs_run_action(p->action);
                             exit(0);
                         } else if (pid > 0) {
-                            // Nicht blockieren – linear-first!
                             printf("[PARALLEL] Gestartet: PID %d\n", (int)pid);
                         } else {
                             fprintf(stderr, "[ERROR] fork() fehlgeschlagen\n");
@@ -156,8 +181,10 @@ int mcs_run_transaktion(mcs_transaktion_t* t) {
         }
     }
 
-    // 🔹 Epilog: Nur bekannte Schritte — *kein* operator_count / error_handler (noch nicht in struct)
-    // → später ergänzen, wenn `mcs_transaktion.h` erweitert ist
+    // 🔹 Epilog: Fehlerbehandlung — ^ als error_handler
+    if (res < 0 && t->error_handler) {
+        mcs_run_protein(t->error_handler);
+    }
 
     return res;
 }

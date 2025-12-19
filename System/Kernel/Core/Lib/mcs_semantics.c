@@ -27,10 +27,9 @@ mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond) {
         return (WIFEXITED(r) && WEXITSTATUS(r) == 0) ? MCS_TRUE : MCS_FALSE;
     }
     // Fallback: führe aus & schaue Exit-Code
-    int res = mcs_run_protein(cond);
-    if (res == MCS_OK) return MCS_TRUE;
+    int res = mcs_run_protein(cond);   // ✅ res deklarieren
     if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
-    return MCS_FALSE;
+    return MCS_FALSE;                  // sonst: Bedingung nicht erfüllt
 }
 
 // Bedingung *ausführen* und Ergebnis liefern

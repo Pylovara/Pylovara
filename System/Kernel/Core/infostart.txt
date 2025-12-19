@@ -24,6 +24,13 @@ cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/S
 #Operatoren logik :
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
 
+#Operatoren logik aber mcs code falsch , wird nur gemacht meiner seits um die operatoren logik zu implementieren , der code selbst ist falsch  :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test2_operatoren.mcs
+
+#oder fpr test2_operator.mcs
+cd /Pylovara/System/Kernel/Core/build
+make clean && cmake .. && make -j$(nproc) && ./mcs ../mcscodes/test_operatoren.mcs
+
 ------------------------------------------------------------------------------------------------------------------------------
 # Saubee ausgabe um fehlerquellen zu finden , achte darauf das jede datei einen eigenen // Info header head mit ordner und sachlage
 # dann ist es einfacher beim massenhaften cat die daten richtig zu sehen und das die abähnigkeiten auch im header als kommentar kurz
@@ -48,7 +55,7 @@ cat /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Co
 cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt /Pylovara/System/Kernel/Core/infostart.txt
 
 # mcscodes/
-cat /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
+cat /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs /Pylovara/System/Kernel/Core/mcscodes/test2_operatoren.mcs
 
 # errologs/
 cat /Pylovara/System/Kernel/Core/errologs/mcs_action.o /Pylovara/System/Kernel/Core/errologs/mcs_lexer.o /Pylovara/System/Kernel/Core/errologs/mcs_transaction.o
@@ -86,3 +93,9 @@ cat CMakeFiles/mcs_core.dir/DependInfo.cmake | grep "\.c\""
 #4. Nachvollziehbar - AI kann Build-Prozess verstehen
 
 ------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+

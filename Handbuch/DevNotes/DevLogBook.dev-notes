@@ -8650,4 +8650,2634 @@ for (int i = 0; i < t->operator_count; i++) {
     }
 }
 
+MVP: op->then_branch = t->proteine[t->protein_count - 2]
+→ op->else_branch = t->proteine[t->protein_count - 1]
+→ Erst danach kommen mcs_parse_next_protein() + mcs_lexer_peek
+🔹 3. mcs_feed.c — Klarheit bei Feed-Quellen
+
+→ mcs_feed_set(id, value, source) → source = action->blankernenner
+→ Damit ſ »[(1)¨¨]« weiß: Dieser Feed kommt aus diesem Blankernenner → lösche nach Auswertung
+
+
+#include "mcs_runner.h" enthält nun MCS_ERR_SYSTEM
+
+Kein Compiler-Fehler mehr
+- if (i < t->protein_count) ? t->proteine[i] : NULL;
+
+Sicherer Zugriff (vermeidet UB)
+- Operator-Auswertung vor Protein-Schleife
+
+ſ (1) löscht Feed vor Ausführung von Folge-Proteinen
+- mcs_feed_clear() direkt im Operator-Block
+
+Sofortige Bereinigung — kein Epilog nötig
+- error_handler am Ende genutzt (wenn res < 0)
+
+^ ist jetzt aktiv nutzbar
+
+Alter runner
+
+// Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
+// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (keine operator_count yet)
+#include "mcs_runner.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/wait.h>
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+    long work = user + nice + system;
+    static long prev_total = 0, prev_work = 0;
+
+    if (prev_total > 0) {
+        long delta_total = total - prev_total;
+        long delta_work = work - prev_work;
+        if (delta_total > 0) {
+            ret = (int)(100 * delta_work / delta_total);
+        }
+    }
+    prev_total = total;
+    prev_work = work;
+        }
+        fclose(f);
+        return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
+
+// Hilfsfunktion: Dynamische Prioritätsanpassung basierend auf CPU-Last
+static void adjust_for_cpu_load(void) {
+    int cpu_load = get_cpu_load();
+    if (cpu_load > 80) {
+        nice(5);  // Leicht niedrigere Priorität bei hoher Last
+    } else if (cpu_load < 20) {
+        nice(-2); // Leicht höhere Priorität bei Leerlauf
+    }
+}
+
+// 🔹 Hauptfunktion — stabil, fehleraggregierend, linear
+int mcs_run_transaktion(mcs_transaktion_t* t) {
+    if (!t || !t->is_valid) return MCS_ERR_SYNTAX;
+
+    // 🔹 Dynamische Anpassung *vor* Ausführung
+    adjust_for_cpu_load();
+
+    // 🔹 Gesamtergebnis – Fehler sammeln, nicht vorzeitig abbrechen
+    int res = MCS_OK;
+
+    // 🔹 1. Transaktions-Bedingung (z.B. ° ['$terminal'])
+    if (t->wahrheit != WAHR_NONE && t->condition) {
+        mcs_semantic_op_t op = mcs_wahrheit_to_semantic(t->wahrheit);
+        mcs_truth_t cond = mcs_evaluate_condition(t->condition);
+
+        //if (op == SEMANTIC_WHEN_NOT) {  // °
+        //    if (cond == MCS_FALSE && t->then_branch) {
+        //        int r = mcs_run_protein(t->then_branch);
+        //        if (r < 0) res = r;
+        //    } else if (cond == MCS_TRUE && t->else_branch) {
+        //        int r = mcs_run_protein(t->else_branch);
+        //        if (r < 0) res = r;
+        //    }
+        // klammer entfernt für backupmuster
+        // dafür das hinzugefügt
+        if (op == SEMANTIC_WHEN_NOT) {  // °
+            // Fallback: nur erstes Protein als THEN, zweites als ELSE nutzen
+            if (t->protein_count >= 2) {
+                mcs_protein_t* p_if = t->proteine[0];     // ¶ = THEN
+                mcs_protein_t* p_else = t->proteine[1];   // ¶¶ = ELSE
+                if (cond == MCS_FALSE && p_if && p_if->wahrheit == WAHR_IF && p_if->then_branch) {
+                    int r = mcs_run_protein(p_if->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p_else && p_else->wahrheit == WAHR_ELSE && p_else->else_branch) {
+                    int r = mcs_run_protein(p_else->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+
+        // ⚠️ Hinweis: t->then_branch / else_branch existieren *noch nicht* in deinem mcs_transaktion.h
+        // → wir lassen das *für heute weg* und behalten dein altes Verhalten:
+        else {
+            // Fallback: wie in deinem Backup – nur erstes Protein prüfen
+            if (t->protein_count > 0 && t->proteine && t->proteine[0]) {
+                mcs_protein_t* p0 = t->proteine[0];
+                if (cond == MCS_FALSE && p0->then_branch) {
+                    int r = mcs_run_protein(p0->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p0->else_branch) {
+                    int r = mcs_run_protein(p0->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+    }
+
+    // 🔹 2. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_protein_t* p = t->proteine && i < t->protein_count ? t->proteine[i] : NULL;
+        if (!p) continue;
+
+        if (p->wahrheit != WAHR_NONE) {
+            mcs_semantic_op_t op = mcs_wahrheit_to_semantic(p->wahrheit);
+            switch (op) {
+                case SEMANTIC_IF:
+                    if (p->then_branch) {
+                        int r = mcs_run_protein(p->then_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_ELSE:
+                    if (p->else_branch) {
+                        int r = mcs_run_protein(p->else_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL_TRANSPORT:  // ;;
+                    if (p->action) {
+                        int r = mcs_run_action(p->action);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL:  // ¶=
+                    if (p->action) {
+                        pid_t pid = fork();
+                        if (pid == 0) {
+                            mcs_run_action(p->action);
+                            exit(0);
+                        } else if (pid > 0) {
+                            // Nicht blockieren – linear-first!
+                            printf("[PARALLEL] Gestartet: PID %d\n", (int)pid);
+                        } else {
+                            fprintf(stderr, "[ERROR] fork() fehlgeschlagen\n");
+                            res = MCS_ERR_SYSTEM;
+                        }
+                    }
+                    break;
+                default:
+                    int r = mcs_run_protein(p);
+                    if (r < 0) res = r;
+            }
+        } else {
+            int r = mcs_run_protein(p);
+            if (r < 0) res = r;
+        }
+    }
+
+    // 🔹 Epilog: Nur bekannte Schritte — *kein* operator_count / error_handler (noch nicht in struct)
+    // → später ergänzen, wenn `mcs_transaktion.h` erweitert ist
+
+    return res;
+}
+
+int mcs_run_protein(mcs_protein_t* p) {
+    if (!p) return MCS_ERR_SYNTAX;
+
+    if (p->wahrheit == WAHR_IF && p->then_branch) {
+        return mcs_run_protein(p->then_branch);
+    }
+    if (p->wahrheit == WAHR_ELSE && p->else_branch) {
+        return mcs_run_protein(p->else_branch);
+    }
+    if (p->action) {
+        return mcs_run_action(p->action);
+    }
+    return MCS_OK;
+}
+
+int mcs_run_action(mcs_action_t* a) {
+    if (!a || !a->cmd) {
+        fprintf(stderr, "[RUN] Action NULL\n");
+        return MCS_ERR_SYNTAX;
+    }
+
+    // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+        double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+        if (delay_sec > 0) {
+            usleep((useconds_t)(delay_sec * 1e6)); // präziser als sleep()
+        }
+    }
+
+    printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+           a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+    // 🔹 2. Blankernenner → Feed setzen
+    if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+        FILE* p = popen(a->blankernenner + 1, "r");
+        if (p) {
+            char buf[64] = {0};
+            if (fgets(buf, sizeof(buf), p)) {
+                buf[strcspn(buf, "\n")] = 0;
+                mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+            }
+            pclose(p);
+        }
+    }
+
+    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
+    if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+        const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+        char cmd[256];
+        if (a->blankernenner && feed_val) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+        } else if (a->arg1) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+        } else {
+            snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+        }
+        printf("[EXEC] %s\n", cmd);
+        return system(cmd);
+    }
+
+    return MCS_OK;
+}
+
+
+neuer runner
+
+// Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
+// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (mit operator_count!)
+#include "mcs_runner.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/wait.h>
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+    long work = user + nice + system;
+    static long prev_total = 0, prev_work = 0;
+
+    if (prev_total > 0) {
+        long delta_total = total - prev_total;
+        long delta_work = work - prev_work;
+        if (delta_total > 0) {
+            ret = (int)(100 * delta_work / delta_total);
+        }
+    }
+    prev_total = total;
+    prev_work = work;
+        }
+        fclose(f);
+        return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
+
+// Hilfsfunktion: Dynamische Prioritätsanpassung basierend auf CPU-Last
+static void adjust_for_cpu_load(void) {
+    int cpu_load = get_cpu_load();
+    if (cpu_load > 80) {
+        nice(5);  // Leicht niedrigere Priorität bei hoher Last
+    } else if (cpu_load < 20) {
+        nice(-2); // Leicht höhere Priorität bei Leerlauf
+    }
+}
+
+// 🔹 Hauptfunktion — stabil, fehleraggregierend, linear
+int mcs_run_transaktion(mcs_transaktion_t* t) {
+    if (!t || !t->is_valid) return MCS_ERR_SYNTAX;
+
+    // 🔹 Dynamische Anpassung *vor* Ausführung
+    adjust_for_cpu_load();
+
+    // 🔹 Gesamtergebnis – Fehler sammeln, nicht vorzeitig abbrechen
+    int res = MCS_OK;
+
+    // 🔹 1. Operatoren-Auswertung (kernel 09) — SAUBER, OHNE t->then_branch
+    if (t->operator_count > 0) {
+        for (int i = 0; i < t->operator_count; i++) {
+            mcs_operator_t* op = t->operators[i];
+            if (!op) continue;
+
+            mcs_truth_t eval = mcs_evaluate_operator(op);
+            if (eval == MCS_ERROR) {
+                res = MCS_ERR_SYNTAX;
+                continue;
+            }
+
+            // °, <, > → Zweige ausführen (immer Protein[0] = THEN, Protein[1] = ELSE)
+            if ((op->type == MCS_OP_WHEN_NOT ||
+                op->type == MCS_OP_WHEN_LT ||
+                op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+
+                if (eval == MCS_TRUE) {
+                    // THEN-Zweig: erstes Protein
+                    if (t->proteine[0]) {
+                        int r = mcs_run_protein(t->proteine[0]);
+                        if (r < 0) res = r;
+                    }
+                } else if (eval == MCS_FALSE) {
+                    // ELSE-Zweig: zweites Protein
+                    if (t->proteine[1]) {
+                        int r = mcs_run_protein(t->proteine[1]);
+                        if (r < 0) res = r;
+                    }
+                }
+                }
+                // ſ → sofort löschen (Lebenszyklus-Ende)
+                else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+                    mcs_feed_clear(op->data.residue_id);
+                }
+        }
+    }
+
+    // 🔹 2. Transaktions-Bedingung (z.B. ° ['$terminal']) — Fallback für alten Code
+    if (t->wahrheit != WAHR_NONE && t->condition) {
+        mcs_semantic_op_t op = mcs_wahrheit_to_semantic(t->wahrheit);
+        mcs_truth_t cond = mcs_evaluate_condition(t->condition);
+
+        if (op == SEMANTIC_WHEN_NOT) {  // °
+            // Fallback: nur erstes Protein als THEN, zweites als ELSE nutzen
+            if (t->protein_count >= 2) {
+                mcs_protein_t* p_if = t->proteine[0];     // ¶ = THEN
+                mcs_protein_t* p_else = t->proteine[1];   // ¶¶ = ELSE
+                if (cond == MCS_FALSE && p_if && p_if->wahrheit == WAHR_IF && p_if->then_branch) {
+                    int r = mcs_run_protein(p_if->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p_else && p_else->wahrheit == WAHR_ELSE && p_else->else_branch) {
+                    int r = mcs_run_protein(p_else->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        } else {
+            // Altes Backup-Verhalten
+            if (t->protein_count > 0 && t->proteine && t->proteine[0]) {
+                mcs_protein_t* p0 = t->proteine[0];
+                if (cond == MCS_FALSE && p0->then_branch) {
+                    int r = mcs_run_protein(p0->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p0->else_branch) {
+                    int r = mcs_run_protein(p0->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+    }
+
+    // 🔹 3. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_protein_t* p = (i < t->protein_count) ? t->proteine[i] : NULL;
+        if (!p) continue;
+
+        if (p->wahrheit != WAHR_NONE) {
+            mcs_semantic_op_t op = mcs_wahrheit_to_semantic(p->wahrheit);
+            switch (op) {
+                case SEMANTIC_IF:
+                    if (p->then_branch) {
+                        int r = mcs_run_protein(p->then_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_ELSE:
+                    if (p->else_branch) {
+                        int r = mcs_run_protein(p->else_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL_TRANSPORT:  // ;;
+                    if (p->action) {
+                        int r = mcs_run_action(p->action);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL:  // ¶=
+                    if (p->action) {
+                        pid_t pid = fork();
+                        if (pid == 0) {
+                            mcs_run_action(p->action);
+                            exit(0);
+                        } else if (pid > 0) {
+                            printf("[PARALLEL] Gestartet: PID %d\n", (int)pid);
+                        } else {
+                            fprintf(stderr, "[ERROR] fork() fehlgeschlagen\n");
+                            res = MCS_ERR_SYSTEM;
+                        }
+                    }
+                    break;
+                default:
+                    int r = mcs_run_protein(p);
+                    if (r < 0) res = r;
+            }
+        } else {
+            int r = mcs_run_protein(p);
+            if (r < 0) res = r;
+        }
+    }
+
+    // 🔹 Epilog: Fehlerbehandlung — ^ als error_handler
+    if (res < 0 && t->error_handler) {
+        mcs_run_protein(t->error_handler);
+    }
+
+    return res;
+}
+
+int mcs_run_protein(mcs_protein_t* p) {
+    if (!p) return MCS_ERR_SYNTAX;
+
+    if (p->wahrheit == WAHR_IF && p->then_branch) {
+        return mcs_run_protein(p->then_branch);
+    }
+    if (p->wahrheit == WAHR_ELSE && p->else_branch) {
+        return mcs_run_protein(p->else_branch);
+    }
+    if (p->action) {
+        return mcs_run_action(p->action);
+    }
+    return MCS_OK;
+}
+
+int mcs_run_action(mcs_action_t* a) {
+    if (!a || !a->cmd) {
+        fprintf(stderr, "[RUN] Action NULL\n");
+        return MCS_ERR_SYNTAX;
+    }
+
+    // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+        double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+        if (delay_sec > 0) {
+            usleep((useconds_t)(delay_sec * 1e6)); // präziser als sleep()
+        }
+    }
+
+    printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+           a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+    // 🔹 2. Blankernenner → Feed setzen
+    if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+        FILE* p = popen(a->blankernenner + 1, "r");
+        if (p) {
+            char buf[64] = {0};
+            if (fgets(buf, sizeof(buf), p)) {
+                buf[strcspn(buf, "\n")] = 0;
+                mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+            }
+            pclose(p);
+        }
+    }
+
+    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
+    if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+        const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+        char cmd[256];
+        if (a->blankernenner && feed_val) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+        } else if (a->arg1) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+        } else {
+            snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+        }
+        printf("[EXEC] %s\n", cmd);
+        return system(cmd);
+    }
+
+    return MCS_OK;
+}
+
+
+ ┌[bandino@dev][01:01:15|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ cd /Pylovara/System/Kernel/Core/build    cd /Pylovara/System/Kernel/Core/build
+make clean && cmake .. && make -j$(nproc)
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Pylovara/System/Kernel/Core/build
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c: In Funktion »mcs_evaluate_condition«:
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c:31:16: Fehler: »MCS_OK« nicht deklariert (erste Verwendung in dieser Funktion)
+   31 |     if (res == MCS_OK) return MCS_TRUE;
+      |                ^~~~~~
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c:31:16: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c: In Funktion »mcs_evaluate_protein«:
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c:40:20: Fehler: »MCS_OK« nicht deklariert (erste Verwendung in dieser Funktion)
+   40 |     return (res == MCS_OK) ? MCS_TRUE : (res < 0 ? MCS_ERROR : MCS_FALSE);
+      |                    ^~~~~~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:177: CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o] Fehler 1
+make[2]: *** Es wird auf noch nicht beendete Prozesse gewartet …
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+
+ ┌[bandino@dev][01:22:37|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ cat /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c
+// Lib/mcs_semantics.c — Semantische Logik
+// Lib/mcs_semantics.c — v3.0: Wahrheits-Bewertung & Bedeutungszuordnung
+#include "mcs_semantics.h"
+#include "mcs_runner.h"   // für mcs_run_protein()
+#include <unistd.h>       // für system()
+
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w) {
+    switch (w) {
+        case WAHR_IF:          return SEMANTIC_IF;
+        case WAHR_ELSE:        return SEMANTIC_ELSE;
+        case WAHR_WHEN_NOT:    return SEMANTIC_WHEN_NOT;
+        case WAHR_MUST:        return SEMANTIC_MUST;
+        case WAHR_ON_ERROR:    return SEMANTIC_ON_ERROR;
+        case WAHR_PARALLEL_RUN:return SEMANTIC_PARALLEL;
+        case WAHR_PARALLEL_TRANSPORT: return SEMANTIC_PARALLEL_TRANSPORT;
+        default:               return SEMANTIC_NONE;
+    }
+}
+
+// Nur Bedingung *prüfen*, nicht ausführen → sichere Prüfung
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond) {
+    if (!cond || !cond->action || !cond->action->cmd) return MCS_FALSE;
+
+    // Beispiel: ['$terminal'] → prüfen, ob Prozess läuft
+    if (strcmp(cond->action->cmd, "$terminal") == 0) {
+        int r = system("pgrep -x kitty > /dev/null 2>&1 || pgrep -x alacritty > /dev/null 2>&1");
+        return (WIFEXITED(r) && WEXITSTATUS(r) == 0) ? MCS_TRUE : MCS_FALSE;
+    }
+    // Fallback: führe aus & schaue Exit-Code
+    int res = mcs_run_protein(cond);
+    if (res == MCS_OK) return MCS_TRUE;
+    if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+    return MCS_FALSE;
+}
+
+// Bedingung *ausführen* und Ergebnis liefern
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p) {
+    if (!p) return MCS_FALSE;
+    int res = mcs_run_protein(p);
+    return (res == MCS_OK) ? MCS_TRUE : (res < 0 ? MCS_ERROR : MCS_FALSE);
+}
+
+ ┌[bandino@dev][01:22:56|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $
+
+// include/mcs_runner.h — v3.0 Runner-API
+#ifndef MCS_RUNNER_H
+#define MCS_RUNNER_H
+
+#include "mcs_transaktion.h"
+
+// 🔹 Fehlercodes (öffentliche API — jetzt hier zentral, wie in mcs.h)
+#define MCS_OK               0
+#define MCS_ERR_SYNTAX      -1
+#define MCS_ERR_IO          -2
+#define MCS_ERR_SECURITY    -3
+#define MCS_ERR_TIMEOUT     -4
+#define MCS_ERR_FEED        -5
+#define MCS_ERR_SYSTEM      -6   // ← NEU — für fork/exec-Fehler
+
+// Public API
+int mcs_run_transaktion(mcs_transaktion_t* t);
+int mcs_run_protein(mcs_protein_t* p);
+int mcs_run_action(mcs_action_t* a);
+
+#endif
+
+info :
+
+Da mcs.h bisher nur Forward-Deklarationen für ein hypothetisches AST-Modell enthält —
+und aktuell kein AST genutzt (sondern lineare Protein-Transaktionen),
+kann man mcs.h vorerst leer lassen oder löschen , es schadet nicht .
+
+da hypotetisches prinzip ....
+
+
+Lib/mcs_semantics.c austausch
+
+if (res == MCS_OK) return MCS_TRUE;
+if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+return MCS_FALSE;
+
+altes muster
+
+neu aber auch optional :
+
+if (res >= 0) return MCS_TRUE;    // MCS_OK = 0 → alles ≥0 ist Erfolg
+if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+return MCS_FALSE;                  // sonst: Bedingung nicht erfüllt
+
+eingefügt , weil schadet nicht der fallback
+
+
+ ┌[bandino@dev][01:38:34|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[~]> $ cd /Pylovara/System/Kernel/Core/build    cd /Pylovara/System/Kernel/Core/build
+make clean && cmake .. && make -j$(nproc) && ./mcs ../mcscodes/test2_operatoren.mcs
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Pylovara/System/Kernel/Core/build
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c: In Funktion »mcs_evaluate_condition«:
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c:30:9: Fehler: »res« nicht deklariert (erste Verwendung in dieser Funktion)
+   30 |     if (res >= 0) return MCS_TRUE;    // MCS_OK = 0 → alles ≥0 ist Erfolg
+      |         ^~~
+/Pylovara/System/Kernel/Core/Lib/mcs_semantics.c:30:9: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:177: CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o] Fehler 1
+make[2]: *** Es wird auf noch nicht beendete Prozesse gewartet …
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+
+ ┌[bandino@dev][01:38:44|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ cat /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c
+// Lib/mcs_semantics.c — Semantische Logik
+// Lib/mcs_semantics.c — v3.0: Wahrheits-Bewertung & Bedeutungszuordnung
+#include "mcs_semantics.h"
+#include "mcs_runner.h"   // für mcs_run_protein()
+#include <unistd.h>       // für system()
+
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w) {
+    switch (w) {
+        case WAHR_IF:          return SEMANTIC_IF;
+        case WAHR_ELSE:        return SEMANTIC_ELSE;
+        case WAHR_WHEN_NOT:    return SEMANTIC_WHEN_NOT;
+        case WAHR_MUST:        return SEMANTIC_MUST;
+        case WAHR_ON_ERROR:    return SEMANTIC_ON_ERROR;
+        case WAHR_PARALLEL_RUN:return SEMANTIC_PARALLEL;
+        case WAHR_PARALLEL_TRANSPORT: return SEMANTIC_PARALLEL_TRANSPORT;
+        default:               return SEMANTIC_NONE;
+    }
+}
+
+// Nur Bedingung *prüfen*, nicht ausführen → sichere Prüfung
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond) {
+    if (!cond || !cond->action || !cond->action->cmd) return MCS_FALSE;
+
+    // Beispiel: ['$terminal'] → prüfen, ob Prozess läuft
+    if (strcmp(cond->action->cmd, "$terminal") == 0) {
+        int r = system("pgrep -x kitty > /dev/null 2>&1 || pgrep -x alacritty > /dev/null 2>&1");
+        return (WIFEXITED(r) && WEXITSTATUS(r) == 0) ? MCS_TRUE : MCS_FALSE;
+    }
+    // Fallback: führe aus & schaue Exit-Code
+    if (res >= 0) return MCS_TRUE;    // MCS_OK = 0 → alles ≥0 ist Erfolg
+    if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+    return MCS_FALSE;                  // sonst: Bedingung nicht erfüllt
+}
+
+// Bedingung *ausführen* und Ergebnis liefern
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p) {
+    if (!p) return MCS_FALSE;
+    int res = mcs_run_protein(p);
+    return (res == MCS_OK) ? MCS_TRUE : (res < 0 ? MCS_ERROR : MCS_FALSE);
+}
+
+fehlerhafter block if (res >= 0) return MCS_TRUE; weil :
+
+In mcs_runner.h sind die Fehlercodes definiert (MCS_OK, MCS_ERR_SYNTAX, …),
+und mcs_run_protein() liefert einen int, nicht mcs_truth_t.
+
+Aber in mcs_evaluate_condition() hatte ich den Aufruf vergessen — nur der Kommentar war da, nicht die Zeile:
+
+int res = mcs_run_protein(cond);
+
+wird also durch :
+
+int res = mcs_run_protein(cond);   // res deklariert
+
+ersetzt
+
+vollständiger Lib/semnatic.c code
+
+// Lib/mcs_semantics.c — Semantische Logik
+// Lib/mcs_semantics.c — v3.0: Wahrheits-Bewertung & Bedeutungszuordnung
+#include "mcs_semantics.h"
+#include "mcs_runner.h"   // für mcs_run_protein()
+#include <unistd.h>       // für system()
+
+mcs_semantic_op_t mcs_wahrheit_to_semantic(mcs_wahrheit_t w) {
+    switch (w) {
+        case WAHR_IF:          return SEMANTIC_IF;
+        case WAHR_ELSE:        return SEMANTIC_ELSE;
+        case WAHR_WHEN_NOT:    return SEMANTIC_WHEN_NOT;
+        case WAHR_MUST:        return SEMANTIC_MUST;
+        case WAHR_ON_ERROR:    return SEMANTIC_ON_ERROR;
+        case WAHR_PARALLEL_RUN:return SEMANTIC_PARALLEL;
+        case WAHR_PARALLEL_TRANSPORT: return SEMANTIC_PARALLEL_TRANSPORT;
+        default:               return SEMANTIC_NONE;
+    }
+}
+
+// Nur Bedingung *prüfen*, nicht ausführen → sichere Prüfung
+mcs_truth_t mcs_evaluate_condition(mcs_protein_t* cond) {
+    if (!cond || !cond->action || !cond->action->cmd) return MCS_FALSE;
+
+    // Beispiel: ['$terminal'] → prüfen, ob Prozess läuft
+    if (strcmp(cond->action->cmd, "$terminal") == 0) {
+        int r = system("pgrep -x kitty > /dev/null 2>&1 || pgrep -x alacritty > /dev/null 2>&1");
+        return (WIFEXITED(r) && WEXITSTATUS(r) == 0) ? MCS_TRUE : MCS_FALSE;
+    }
+    // Fallback: führe aus & schaue Exit-Code
+    int res = mcs_run_protein(cond);   // ✅ res deklarieren
+    if (res == MCS_ERR_SYNTAX) return MCS_ERROR;
+    return MCS_FALSE;                  // sonst: Bedingung nicht erfüllt
+}
+
+// Bedingung *ausführen* und Ergebnis liefern
+mcs_truth_t mcs_evaluate_protein(mcs_protein_t* p) {
+    if (!p) return MCS_FALSE;
+    int res = mcs_run_protein(p);
+    return (res == MCS_OK) ? MCS_TRUE : (res < 0 ? MCS_ERROR : MCS_FALSE);
+}
+
+
+
+ ┌[bandino@dev][01:58:13|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $ #oder fpr test2_operator.mcs             #oder fpr test2_operator.mcs
+cd /Pylovara/System/Kernel/Core/build
+make clean && cmake .. && make -j$(nproc) && ./mcs ../mcscodes/test_operatoren.mcs
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Pylovara/System/Kernel/Core/build
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[2]: *** Es wird auf noch nicht beendete Prozesse gewartet …
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+
+ ┌[bandino@dev][01:58:34|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ cat /Pylovara/System/Kernel/Core/Lib/mcs_runner.c
+// Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
+// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (mit operator_count!)
+#include "mcs_runner.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/wait.h>
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+    long work = user + nice + system;
+    static long prev_total = 0, prev_work = 0;
+
+    if (prev_total > 0) {
+        long delta_total = total - prev_total;
+        long delta_work = work - prev_work;
+        if (delta_total > 0) {
+            ret = (int)(100 * delta_work / delta_total);
+        }
+    }
+    prev_total = total;
+    prev_work = work;
+        }
+        fclose(f);
+        return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
+
+// Hilfsfunktion: Dynamische Prioritätsanpassung basierend auf CPU-Last
+static void adjust_for_cpu_load(void) {
+    int cpu_load = get_cpu_load();
+    if (cpu_load > 80) {
+        nice(5);  // Leicht niedrigere Priorität bei hoher Last
+    } else if (cpu_load < 20) {
+        nice(-2); // Leicht höhere Priorität bei Leerlauf
+    }
+}
+
+// 🔹 Hauptfunktion — stabil, fehleraggregierend, linear
+int mcs_run_transaktion(mcs_transaktion_t* t) {
+    if (!t || !t->is_valid) return MCS_ERR_SYNTAX;
+
+    // 🔹 Dynamische Anpassung *vor* Ausführung
+    adjust_for_cpu_load();
+
+    // 🔹 Gesamtergebnis – Fehler sammeln, nicht vorzeitig abbrechen
+    int res = MCS_OK;
+
+    // 🔹 1. Operatoren-Auswertung (kernel 09) — SAUBER, OHNE t->then_branch
+    if (t->operator_count > 0) {
+        for (int i = 0; i < t->operator_count; i++) {
+            mcs_operator_t* op = t->operators[i];
+            if (!op) continue;
+
+            mcs_truth_t eval = mcs_evaluate_operator(op);
+            if (eval == MCS_ERROR) {
+                res = MCS_ERR_SYNTAX;
+                continue;
+            }
+
+            // °, <, > → Zweige ausführen (immer Protein[0] = THEN, Protein[1] = ELSE)
+            if ((op->type == MCS_OP_WHEN_NOT ||
+                op->type == MCS_OP_WHEN_LT ||
+                op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+
+                if (eval == MCS_TRUE) {
+                    // THEN-Zweig: erstes Protein
+                    if (t->proteine[0]) {
+                        int r = mcs_run_protein(t->proteine[0]);
+                        if (r < 0) res = r;
+                    }
+                } else if (eval == MCS_FALSE) {
+                    // ELSE-Zweig: zweites Protein
+                    if (t->proteine[1]) {
+                        int r = mcs_run_protein(t->proteine[1]);
+                        if (r < 0) res = r;
+                    }
+                }
+                }
+                // ſ → sofort löschen (Lebenszyklus-Ende)
+                else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+                    mcs_feed_clear(op->data.residue_id);
+                }
+        }
+    }
+
+    // 🔹 2. Transaktions-Bedingung (z.B. ° ['$terminal']) — Fallback für alten Code
+    if (t->wahrheit != WAHR_NONE && t->condition) {
+        mcs_semantic_op_t op = mcs_wahrheit_to_semantic(t->wahrheit);
+        mcs_truth_t cond = mcs_evaluate_condition(t->condition);
+
+        if (op == SEMANTIC_WHEN_NOT) {  // °
+            // Fallback: nur erstes Protein als THEN, zweites als ELSE nutzen
+            if (t->protein_count >= 2) {
+                mcs_protein_t* p_if = t->proteine[0];     // ¶ = THEN
+                mcs_protein_t* p_else = t->proteine[1];   // ¶¶ = ELSE
+                if (cond == MCS_FALSE && p_if && p_if->wahrheit == WAHR_IF && p_if->then_branch) {
+                    int r = mcs_run_protein(p_if->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p_else && p_else->wahrheit == WAHR_ELSE && p_else->else_branch) {
+                    int r = mcs_run_protein(p_else->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        } else {
+            // Altes Backup-Verhalten
+            if (t->protein_count > 0 && t->proteine && t->proteine[0]) {
+                mcs_protein_t* p0 = t->proteine[0];
+                if (cond == MCS_FALSE && p0->then_branch) {
+                    int r = mcs_run_protein(p0->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p0->else_branch) {
+                    int r = mcs_run_protein(p0->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+    }
+
+    // 🔹 3. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_protein_t* p = (i < t->protein_count) ? t->proteine[i] : NULL;
+        if (!p) continue;
+
+        if (p->wahrheit != WAHR_NONE) {
+            mcs_semantic_op_t op = mcs_wahrheit_to_semantic(p->wahrheit);
+            switch (op) {
+                case SEMANTIC_IF:
+                    if (p->then_branch) {
+                        int r = mcs_run_protein(p->then_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_ELSE:
+                    if (p->else_branch) {
+                        int r = mcs_run_protein(p->else_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL_TRANSPORT:  // ;;
+                    if (p->action) {
+                        int r = mcs_run_action(p->action);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL:  // ¶=
+                    if (p->action) {
+                        pid_t pid = fork();
+                        if (pid == 0) {
+                            mcs_run_action(p->action);
+                            exit(0);
+                        } else if (pid > 0) {
+                            printf("[PARALLEL] Gestartet: PID %d\n", (int)pid);
+                        } else {
+                            fprintf(stderr, "[ERROR] fork() fehlgeschlagen\n");
+                            res = MCS_ERR_SYSTEM;
+                        }
+                    }
+                    break;
+                default:
+                    int r = mcs_run_protein(p);
+                    if (r < 0) res = r;
+            }
+        } else {
+            int r = mcs_run_protein(p);
+            if (r < 0) res = r;
+        }
+    }
+
+    // 🔹 Epilog: Fehlerbehandlung — ^ als error_handler
+    if (res < 0 && t->error_handler) {
+        mcs_run_protein(t->error_handler);
+    }
+
+    return res;
+}
+
+int mcs_run_protein(mcs_protein_t* p) {
+    if (!p) return MCS_ERR_SYNTAX;
+
+    if (p->wahrheit == WAHR_IF && p->then_branch) {
+        return mcs_run_protein(p->then_branch);
+    }
+    if (p->wahrheit == WAHR_ELSE && p->else_branch) {
+        return mcs_run_protein(p->else_branch);
+    }
+    if (p->action) {
+        return mcs_run_action(p->action);
+    }
+    return MCS_OK;
+}
+
+int mcs_run_action(mcs_action_t* a) {
+    if (!a || !a->cmd) {
+        fprintf(stderr, "[RUN] Action NULL\n");
+        return MCS_ERR_SYNTAX;
+    }
+
+    // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+        double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+        if (delay_sec > 0) {
+            usleep((useconds_t)(delay_sec * 1e6)); // präziser als sleep()
+        }
+    }
+
+    printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+           a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+    // 🔹 2. Blankernenner → Feed setzen
+    if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+        FILE* p = popen(a->blankernenner + 1, "r");
+        if (p) {
+            char buf[64] = {0};
+            if (fgets(buf, sizeof(buf), p)) {
+                buf[strcspn(buf, "\n")] = 0;
+                mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+            }
+            pclose(p);
+        }
+    }
+
+    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
+    if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+        const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+        char cmd[256];
+        if (a->blankernenner && feed_val) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+        } else if (a->arg1) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+        } else {
+            snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+        }
+        printf("[EXEC] %s\n", cmd);
+        return system(cmd);
+    }
+
+    return MCS_OK;
+}
+
+Fehler zieht sich jetzt durch die bank weg weil der evaluation verweis nicht passt ...
+
+ausgewertet durch KI für debugg :
+
+,, Der Compiler kennt weder mcs_operator_t, noch MCS_OP_WHEN_NOT, noch mcs_evaluate_operator()
+→ weil #include "mcs_operatoren.h" fehlt in mcs_runner.c
+→ und zwar vor der Nutzung.
+
+Aber:
+✅ Dein mcs_transaktion.h hat struct mcs_operator; → Forward-Deklaration
+✅ Dein mcs_runner.h inkludiert mcs_transaktion.h
+❌ Aber mcs_runner.c nutzt mcs_operator_t (vollständig!) → braucht volle Definition → also #include "mcs_operatoren.h"’’
+
+wird korrigiert :
+
+// Lib/mcs_runner.c — v3.0 FINAL: mit Operator-Integration (kernel 09)
+// 🔹 Vollständig korrigiert — inkl. #include "mcs_operatoren.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include "mcs_operatoren.h"   // ✅ NEU: volle Definition von mcs_operator_t
+#include "mcs_runner.h"       // ✅ NACH mcs_operatoren.h — MCS_ERR_SYSTEM bekannt
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/wait.h>
+
+// Hilfsfunktion: CPU-Last aus /proc/stat lesen (0–100)
+static int get_cpu_load(void) {
+    FILE* f = fopen("/proc/stat", "r");
+    if (!f) return 50; // Fallback
+
+    long user, nice, system, idle, iowait, irq, softirq;
+    char buf[256];
+    int ret = 0;
+
+    if (fgets(buf, sizeof(buf), f) && sscanf(buf, "cpu %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) == 7) {
+        long total = user + nice + system + idle + iowait + irq + softirq;
+        long work = user + nice + system;
+        static long prev_total = 0, prev_work = 0;
+
+        if (prev_total > 0) {
+            long delta_total = total - prev_total;
+            long delta_work = work - prev_work;
+            if (delta_total > 0) {
+                ret = (int)(100 * delta_work / delta_total);
+            }
+        }
+        prev_total = total;
+        prev_work = work;
+    }
+    fclose(f);
+    return ret < 0 ? 0 : (ret > 100 ? 100 : ret);
+}
+
+// Hilfsfunktion: Dynamische Prioritätsanpassung basierend auf CPU-Last
+static void adjust_for_cpu_load(void) {
+    int cpu_load = get_cpu_load();
+    if (cpu_load > 80) {
+        nice(5);  // Leicht niedrigere Priorität bei hoher Last
+    } else if (cpu_load < 20) {
+        nice(-2); // Leicht höhere Priorität bei Leerlauf
+    }
+}
+
+// 🔹 Hauptfunktion — stabil, fehleraggregierend, linear
+int mcs_run_transaktion(mcs_transaktion_t* t) {
+    if (!t || !t->is_valid) return MCS_ERR_SYNTAX;
+
+    // 🔹 Dynamische Anpassung *vor* Ausführung
+    adjust_for_cpu_load();
+
+    // 🔹 Gesamtergebnis – Fehler sammeln, nicht vorzeitig abbrechen
+    int res = MCS_OK;
+
+    // 🔹 1. Operatoren-Auswertung (kernel 09) — SAUBER, OHNE t->then_branch
+    if (t->operator_count > 0) {
+        for (int i = 0; i < t->operator_count; i++) {
+            mcs_operator_t* op = t->operators[i];
+            if (!op) continue;
+
+            mcs_truth_t eval = mcs_evaluate_operator(op);
+            if (eval == MCS_ERROR) {
+                res = MCS_ERR_SYNTAX;
+                continue;
+            }
+
+            // °, <, > → Zweige ausführen (immer Protein[0] = THEN, Protein[1] = ELSE)
+            if ((op->type == MCS_OP_WHEN_NOT ||
+                op->type == MCS_OP_WHEN_LT ||
+                op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+
+                if (eval == MCS_TRUE) {
+                    // THEN-Zweig: erstes Protein
+                    if (t->proteine[0]) {
+                        int r = mcs_run_protein(t->proteine[0]);
+                        if (r < 0) res = r;
+                    }
+                } else if (eval == MCS_FALSE) {
+                    // ELSE-Zweig: zweites Protein
+                    if (t->proteine[1]) {
+                        int r = mcs_run_protein(t->proteine[1]);
+                        if (r < 0) res = r;
+                    }
+                }
+            }
+            // ſ → sofort löschen (Lebenszyklus-Ende)
+            else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+                mcs_feed_clear(op->data.residue_id);
+            }
+        }
+    }
+
+    // 🔹 2. Transaktions-Bedingung (z.B. ° ['$terminal']) — Fallback für alten Code
+    if (t->wahrheit != WAHR_NONE && t->condition) {
+        mcs_semantic_op_t op = mcs_wahrheit_to_semantic(t->wahrheit);
+        mcs_truth_t cond = mcs_evaluate_condition(t->condition);
+
+        if (op == SEMANTIC_WHEN_NOT) {  // °
+            // Fallback: nur erstes Protein als THEN, zweites als ELSE nutzen
+            if (t->protein_count >= 2) {
+                mcs_protein_t* p_if = t->proteine[0];     // ¶ = THEN
+                mcs_protein_t* p_else = t->proteine[1];   // ¶¶ = ELSE
+                if (cond == MCS_FALSE && p_if && p_if->wahrheit == WAHR_IF && p_if->then_branch) {
+                    int r = mcs_run_protein(p_if->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p_else && p_else->wahrheit == WAHR_ELSE && p_else->else_branch) {
+                    int r = mcs_run_protein(p_else->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        } else {
+            // Altes Backup-Verhalten
+            if (t->protein_count > 0 && t->proteine && t->proteine[0]) {
+                mcs_protein_t* p0 = t->proteine[0];
+                if (cond == MCS_FALSE && p0->then_branch) {
+                    int r = mcs_run_protein(p0->then_branch);
+                    if (r < 0) res = r;
+                } else if (cond == MCS_TRUE && p0->else_branch) {
+                    int r = mcs_run_protein(p0->else_branch);
+                    if (r < 0) res = r;
+                }
+            }
+        }
+    }
+
+    // 🔹 3. Alle Proteine sequenziell ausführen — mit Wahrheits-Dispatch
+    for (int i = 0; i < t->protein_count; i++) {
+        mcs_protein_t* p = (i < t->protein_count) ? t->proteine[i] : NULL;
+        if (!p) continue;
+
+        if (p->wahrheit != WAHR_NONE) {
+            mcs_semantic_op_t op = mcs_wahrheit_to_semantic(p->wahrheit);
+            switch (op) {
+                case SEMANTIC_IF:
+                    if (p->then_branch) {
+                        int r = mcs_run_protein(p->then_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_ELSE:
+                    if (p->else_branch) {
+                        int r = mcs_run_protein(p->else_branch);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL_TRANSPORT:  // ;;
+                    if (p->action) {
+                        int r = mcs_run_action(p->action);
+                        if (r < 0) res = r;
+                    }
+                    break;
+                case SEMANTIC_PARALLEL:  // ¶=
+                    if (p->action) {
+                        pid_t pid = fork();
+                        if (pid == 0) {
+                            mcs_run_action(p->action);
+                            exit(0);
+                        } else if (pid > 0) {
+                            printf("[PARALLEL] Gestartet: PID %d\n", (int)pid);
+                        } else {
+                            fprintf(stderr, "[ERROR] fork() fehlgeschlagen\n");
+                            res = MCS_ERR_SYSTEM;
+                        }
+                    }
+                    break;
+                default:
+                    int r = mcs_run_protein(p);
+                    if (r < 0) res = r;
+            }
+        } else {
+            int r = mcs_run_protein(p);
+            if (r < 0) res = r;
+        }
+    }
+
+    // 🔹 Epilog: Fehlerbehandlung — ^ als error_handler
+    if (res < 0 && t->error_handler) {
+        mcs_run_protein(t->error_handler);
+    }
+
+    return res;
+}
+
+int mcs_run_protein(mcs_protein_t* p) {
+    if (!p) return MCS_ERR_SYNTAX;
+
+    if (p->wahrheit == WAHR_IF && p->then_branch) {
+        return mcs_run_protein(p->then_branch);
+    }
+    if (p->wahrheit == WAHR_ELSE && p->else_branch) {
+        return mcs_run_protein(p->else_branch);
+    }
+    if (p->action) {
+        return mcs_run_action(p->action);
+    }
+    return MCS_OK;
+}
+
+int mcs_run_action(mcs_action_t* a) {
+    if (!a || !a->cmd) {
+        fprintf(stderr, "[RUN] Action NULL\n");
+        return MCS_ERR_SYNTAX;
+    }
+
+    // 🔹 1. Wartezeit ausführen, falls ARG_TIME gesetzt
+    if (a->arg.type == ARG_TIME && a->arg.value > 0) {
+        double delay_sec = mcs_resolve_value(&a->arg, get_cpu_load());
+        if (delay_sec > 0) {
+            usleep((useconds_t)(delay_sec * 1e6)); // präziser als sleep()
+        }
+    }
+
+    printf("[RUN] cmd='%s', blank='%s', feed.id=%d, arg.type=%d, arg.value=%.2f\n",
+           a->cmd, a->blankernenner ?: "(null)", a->feed.id, a->arg.type, a->arg.value);
+
+    // 🔹 2. Blankernenner → Feed setzen
+    if (a->blankernenner && a->blankernenner[0] == '$' && a->feed.id > 0) {
+        FILE* p = popen(a->blankernenner + 1, "r");
+        if (p) {
+            char buf[64] = {0};
+            if (fgets(buf, sizeof(buf), p)) {
+                buf[strcspn(buf, "\n")] = 0;
+                mcs_feed_set(a->feed.id, buf, a->blankernenner);
+                printf("[FEED] (%d) = '%s'\n", a->feed.id, buf);
+            }
+            pclose(p);
+        }
+    }
+
+    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
+    if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+        const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+        char cmd[256];
+        if (a->blankernenner && feed_val) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+        } else if (a->arg1) {
+            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+        } else {
+            snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+        }
+        printf("[EXEC] %s\n", cmd);
+        return system(cmd);
+    }
+
+    return MCS_OK;
+}
+
+ ┌[bandino@dev][02:06:36|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[~]> $ cd /Pylovara/System/Kernel/Core/build    cd /Pylovara/System/Kernel/Core/build
+make clean && cmake .. && make -j$(nproc) && ./mcs ../mcscodes/test_operatoren.mcs
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Pylovara/System/Kernel/Core/build
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+[ 54%] Building C object CMakeFiles/mcs_core.dir/Logic/mcs_lexer.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[2]: *** Es wird auf noch nicht beendete Prozesse gewartet …
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+
+ ┌[bandino@dev][02:06:44|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $
+
+
+info , ich muss evalutation rekrusive raus patchen
+
+ ┌[bandino@dev][02:08:32|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $ cat infostart.txt
+# Info Zettel für mich für die Arbeit
+
+#skelett build test:
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
+
+#feed speicher integrations test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
+
+#echo test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs
+
+#update test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs
+
+#Semantic Test für Wahrheiten :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
+
+#paralell :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs
+
+#parallel mit argumenten zum warten :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
+
+#Operatoren logik :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
+
+#Operatoren logik aber mcs code falsch , wird nur gemacht meiner seits um die operatoren logik zu implementieren , der code selbst ist falsch  :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test2_operatoren.mcs
+
+#oder fpr test2_operator.mcs
+cd /Pylovara/System/Kernel/Core/build
+make clean && cmake .. && make -j$(nproc) && ./mcs ../mcscodes/test_operatoren.mcs
+
+------------------------------------------------------------------------------------------------------------------------------
+# Saubee ausgabe um fehlerquellen zu finden , achte darauf das jede datei einen eigenen // Info header head mit ordner und sachlage
+# dann ist es einfacher beim massenhaften cat die daten richtig zu sehen und das die abähnigkeiten auch im header als kommentar kurz
+# stehen um saubere wartbare abschnitte zu produzieren .... vermeidungsstichwort : legacy code
+
+# Lab/
+cat /Pylovara/System/Kernel/Core/Lab/test_action.c /Pylovara/System/Kernel/Core/Lab/test_if.c /Pylovara/System/Kernel/Core/Lab/test_lexer.c /Pylovara/System/Kernel/Core/Lab/test_trans.c /Pylovara/System/Kernel/Core/Lab/mcs-code.ideen.txt /Pylovara/System/Kernel/Core/Lab/test.mcs /Pylovara/System/Kernel/Core/Lab/test_mcs_strucktur.mcs /Pylovara/System/Kernel/Core/Lab/test_trans.mcs
+
+# Logic/
+cat /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/Logic/mcs_token.h
+
+# Lib/
+cat /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c
+
+# include/
+cat /Pylovara/System/Kernel/Core/include/mcs_action.h /Pylovara/System/Kernel/Core/include/mcs_argument.h /Pylovara/System/Kernel/Core/include/mcs_eingaben.h /Pylovara/System/Kernel/Core/include/mcs_feed.h /Pylovara/System/Kernel/Core/include/mcs.h /Pylovara/System/Kernel/Core/include/mcs_operatoren.h /Pylovara/System/Kernel/Core/include/mcs_protein.h /Pylovara/System/Kernel/Core/include/mcs_proton.h /Pylovara/System/Kernel/Core/include/mcs_runner.h /Pylovara/System/Kernel/Core/include/mcs_semantics.h /Pylovara/System/Kernel/Core/include/mcs_transaktion.h /Pylovara/System/Kernel/Core/include/mcs_wahrheiten.h /Pylovara/System/Kernel/Core/include/mcs_warp.h
+
+# IntLab/
+# (keine Dateien im tree angezeigt - leerer Ordner)
+
+# Core/ (Root-Ebene)
+cat /Pylovara/System/Kernel/Core/main.c /Pylovara/System/Kernel/Core/CMakeLists.txt /Pylovara/System/Kernel/Core/infostart.txt
+
+# mcscodes/
+cat /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs /Pylovara/System/Kernel/Core/mcscodes/test2_operatoren.mcs
+
+# errologs/
+cat /Pylovara/System/Kernel/Core/errologs/mcs_action.o /Pylovara/System/Kernel/Core/errologs/mcs_lexer.o /Pylovara/System/Kernel/Core/errologs/mcs_transaction.o
+
+# Build Cleanup
+cd /Pylovara/System/Kernel/Core/build && rm -rf CMakeCache.txt CMakeFiles/ cmake_install.cmake *.a *.o mcs test_* && make clean && cmake .. && make -j$(nproc)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Für die **Fehleranalyse** und **AI-Unterstützung** sind diese Dateien besonders hilfreich:
+
+## **AI-Freundliche Analyse-Befehle:**
+
+# Komplette Konfiguration für AI
+echo "=== CMake Configuration ==="
+cat CMakeConfigureLog.yaml
+
+echo -e "\n=== Build Targets ==="
+cat Makefile | grep -E "^[a-zA-Z]" | head -20
+
+echo -e "\n=== Compiler Flags ==="
+cat CMakeFiles/mcs_core.dir/flags.make
+
+echo -e "\n=== Linker Command ==="
+cat CMakeFiles/mcs.dir/link.txt
+
+echo -e "\n=== Source Files ==="
+cat CMakeFiles/mcs_core.dir/DependInfo.cmake | grep "\.c\""
+
+
+## Dateien AI-freundlich
+#1. Klartext - keine Binärformate
+#2. Strukturiert - Makefiles, YAML, Listen
+#3. Vollständig - zeigen alle Schritte
+#4. Nachvollziehbar - AI kann Build-Prozess verstehen
+
+------------------------------------------------------------------------------------------------------------------------------
+
+ ┌[bandino@dev][02:08:35|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core]> $ # Info Zettel für mich für die Arbeit    # Info Zettel für mich für die Arbeit
+
+#skelett build test:
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
+
+#feed speicher integrations test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
+
+#echo test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_echo.mcs
+
+#update test :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test1_update.mcs
+
+#Semantic Test für Wahrheiten :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
+
+#paralell :
+cd /Pylovara/System/Kernel/Core/build && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel.mcs
+
+#parallel mit argumenten zum warten :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
+
+#Operatoren logik :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
+
+#Operatoren logik aber mcs code falsch , wird nur gemacht meiner seits um die operatoren logik zu implementieren , der code selbst ist falsch  :
+cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test2_operatoren.mcs
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+test.mcs
+[  4%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o
+[  8%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o
+[ 12%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o
+[ 16%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_protein.c.o
+[ 20%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_proton.c.o
+[ 25%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_warp.c.o
+[ 29%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_wahrheiten.c.o
+[ 33%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_semantics.c.o
+[ 37%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_operatoren.c.o
+[ 41%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_transaktion.c.o
+[ 45%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o
+[ 50%] Building C object CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c: In Funktion »mcs_run_transaktion«:
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:67:32: Fehler: Implizite Deklaration der Funktion »mcs_evaluate_operator«; meinten Sie »mcs_evaluate_protein«? [-Wimplicit-function-declaration]
+   67 |             mcs_truth_t eval = mcs_evaluate_operator(op);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                mcs_evaluate_protein
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:20: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                    ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Fehler: »MCS_OP_WHEN_NOT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_NOT«?
+   74 |             if ((op->type == MCS_OP_WHEN_NOT ||
+      |                              ^~~~~~~~~~~~~~~
+      |                              TOK_WHEN_NOT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:74:30: Anmerkung: jeder nicht deklarierte Bezeichner wird nur einmal für jede Funktion, in der er vorkommt, gemeldet
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:75:29: Fehler: »MCS_OP_WHEN_LT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_LT«?
+   75 |                 op->type == MCS_OP_WHEN_LT ||
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_LT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:19: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                   ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:76:29: Fehler: »MCS_OP_WHEN_GT« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_WHEN_GT«?
+   76 |                 op->type == MCS_OP_WHEN_GT) && t->protein_count >= 2) {
+      |                             ^~~~~~~~~~~~~~
+      |                             TOK_WHEN_GT
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:28: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                            ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:38: Fehler: »MCS_OP_DATA_RESIDUE« nicht deklariert (erstmalige Verwendung in dieser Funktion); meinten Sie »TOK_DATA_RESIDUE«?
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+      |                                      TOK_DATA_RESIDUE
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:93:63: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   93 |                 else if (op->type == MCS_OP_DATA_RESIDUE && op->data.residue_id >= 0) {
+      |                                                               ^~
+/Pylovara/System/Kernel/Core/Lib/mcs_runner.c:94:38: Fehler: falsche Verwendung des unvollständigen typedef »mcs_operator_t« {alias »struct mcs_operator«}
+   94 |                     mcs_feed_clear(op->data.residue_id);
+      |                                      ^~
+make[2]: *** [CMakeFiles/mcs_core.dir/build.make:233: CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o] Fehler 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/mcs_core.dir/all] Fehler 2
+make: *** [Makefile:91: all] Fehler 2
+
+ ┌[bandino@dev][02:08:55|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ kernel lex
+[INFO] Datei mit @kernel-nr: lex gefunden → /Pylovara/Handbuch/KernelNotes/lexikon.kernel-notes
+----------------------------------------
+####################################################################
+@kernel-nr: lex
+####################################################################
+       - System Kernel - ON - Kernel - The Learn Guide  -
+    ▗▖ ▗▖▗▄▄▄▖▗▄▄▖ ▗▖  ▗▖▗▄▄▄▖▗▖       ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖
+    ▐▌▗▞▘▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌   ▐▌       ▐▌ ▐▌  █  ▐▌▗▞▘  █
+    ▐▛▚▖ ▐▛▀▀▘▐▛▀▚▖▐▌ ▝▜▌▐▛▀▀▘▐▌       ▐▌ ▐▌  █  ▐▛▚▖   █
+    ▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖▐▙▄▄▖    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖
+                                                 Pylovara since 2025
+################ Das Handbuch für den MCS Kernel ###################
+####################################################################
+         | Lexikon/s | kernel lex | dev lex | helmpe lex |
+####################################################################
+      | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |
+          -------------------------------------------------
+          01 - Datentypen -new      10 + Feeds -fix1
+          02 + Transaktion -clean   11 - Zielreferenz
+          03 + Protein -fix2        12 - Dirigent
+          04 - Proton               13 - Warp -fix
+          05 + Trennbefehl          14 - þ Identifikation
+          06 + Aktion -fix          15 + Argumente -fix
+          07 + Eingaben -fix3       16 X Variable-Verknüpfung
+          08 + Wahrheiten -fix3     20 - Reihenfolge
+          09 - Operatoren -fix2
+          -------------------------------------------------
+          99 - Register CMDs -new   00 - Fallback Übersicht
+####################################################################
+        # Maschinen Code Speech – Kernel Syntax Handbuch  #
+        # Version: 3.0 Freeze | Autor: Thomas Zimmermann  #
+        # Standort: /Pylovara/Handbuch/KernelNotes/       #
+        # Status: Vollständig mit Rollende Verbesserungen #
+####################################################################
+[ENTER] zum Beenden.
+
+
+ ┌[bandino@dev][02:10:34|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ kernel 10
+[INFO] Datei mit @kernel-nr: 10 gefunden → /Pylovara/Handbuch/KernelNotes/feeds.kernel-notes
+----------------------------------------
+@kernel-nr: 10  # Erklärung im Aufbau
+####################################################################
+Erklärung:
+
+Feed = Datenkanal, nicht Kontrollkanal
+
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
+er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
+und dadurch seine andock station definiert ..
+
+Feeds werden als Container betrachtet und sind von den
+Unix-Pipes inspiriert , aber mit MCS-spezifischer Syntax.
+
+Feed/s Feedbacken nur eine einzige sache :
+
+  Gleiche Zahl oder Buchstabe im Code , sonnst nix ...
+
+Sie geben auch kein Feedback aus sondern sie warten
+auf den Input Feedback von ihren geschwister !
+
+Feed/s haben InputFeedback und nehmen den gleichen inhalt an ,
+wenn einer ihrer verbundenen gleichheißenden Feed/s was anderes
+rein schreiben , der erste der geändert wird überschreibt seinen
+inhalt immer mit den anderen ...
+
+Die Zahl oder Buchstabe im Feed selbst bleibt immer gleich
+nur der anhang copiert sich selbst und pastet zu den anderen
+
+habt ihr 3 mal (2) <--  feed/s verbaut , habt ihr 3 von sich
+copierende gefäße die den ersten input als initiator sehen und
+die anderen zwei den inhalt übernehmen
+
+Das ist Feed !!!
+
+Feed wartet auf Feedback seines zwillings oder dutzenschaften,
+um den inhalt der angekommen ist , in sich in sich überall gleich
+zu verteilen ...
+
+--------------------------------------------------------------------
+
+Unterbau Erklärung :
+
+
+Feed werden immer an den eingabe container gebunden :
+
+(1)"" <-- eingabe print
+(2)'' <-- eingabe OS System CMD
+(3)’’ <-- eingabe MCS System CMD
+(4),, <-- Notiz
+(5)¨¨ <-- Blanker nenner
+
+und nehmen den output un dtransportieren ihn
+
+wenn in feed schonwas steht , wird er an seine geschwister weiter
+geleitet .
+
+um nummer oder buchstaben chaos von duzenden Einser in allen
+MCS codes auszuschließen wird jeder feed mit einem cache
+ausgestattet und hat einen eigenen cache nummer speicher für
+genau diese eins
+
+(1) <-- die hier hat z.b 12319123
+(1) <-- die hier hat 098072
+
+somit wird der cache sicher transportiert und wird auch immer
+als genau den feed erkannt
+
+somit können 10 x (1) feed transporte mit der selben kenn nummer
+weiter gegeben werden und diese (1) wissen das sie zusammengehören
+
+Dadurch enstehen Mächte WorkFlows
+
+--------------------------------------------------------------------
+  Definition  Anfang :
+
+  (
+
+--------------------------------------------------------------------
+  Definition  Ende :
+
+  )
+
+--------------------------------------------------------------------
+  Definition  Gesamt :
+
+  ()
+
+--------------------------------------------------------------------
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
+er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
+und dadurch seine andock station definiert ..
+--------------------------------------------------------------------
+  Definition  mit einer musterbeispiel zahl Gesamt :
+
+  (1)
+  (8)
+  (H)
+  (3)
+
+--------------------------------------------------------------------
+Um den Feed Nutzbar zu machen häften wir jetzt den Feed mit der
+Beispiel Nummer 1 an ein element ein das wir transportieren möchten
+--------------------------------------------------------------------
+  Definition  mit einer musterbeispiel zahl Gesamt :
+
+  (1)""
+
+  Dieser Eingabe Print wurde mit Feed getaggt und wird durch alle
+  Feeds mit dem selben nenwert dupliziert bzw überall gleich
+  angezeigt .
+
+--------------------------------------------------------------------
+Hier wurde der Feed mit der kennung 1 an eine Eingabe gebunden die
+sich Print nennt und dieser Print befehl ist leer ,
+er hat noch keinen inhalt aber wir brauchen den inhalt , also
+versuchen wir den inhalt zu bekommen .
+
+für das verständnisse suchen wir kurz regulär über das terminal :
+
+ ┌[bandino@dev][16:26:36|Do Nov 27]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[~]> $ pgrep firefox
+1142
+
+Das terminal gibt uns einen echo print aus und den nennwert nehmen
+wir für unseren feed aber wir können die zahl nicht einfach eins zu
+eins binden , wir benötigen hier zu (System abhängig) den jeweiligen
+shell befehl dafür der die zahl ausspuckt , in diesem fall Linux Bash.
+
+--------------------------------------------------------------------
+  Musterbeispiel  :
+
+  (1)"$(pgrep firefox)"
+
+--------------------------------------------------------------------
+um unsere pid id 1142 jetzt weiter zu verarbeiten da wir sie mit feed
+getraget haben , können wir jetzt damit arbeit um den code zu
+vervollständigen
+--------------------------------------------------------------------
+  Musterbeispiel :
+
+¢!
+»['pgrep'|¨firefox¨|(1)¨$(pgrep firefox)¨]«
+»['kill'|(1)¨¨]«««t1
+ ¶ ['kill'|(1)¨¨]
+ ¶¶ »['notify-send'|"FireFox wurde beendet"]«
+!¢
+
+wir transportieren einen blanken nenner , bekommen
+den pid der dann als kill 1142 getötet wird zurück .
+--------------------------------------------------------------------
+  Musterbeispiel :
+
+¢!
+° ['$terminal']
+  ¶ »['notify-send'|"OFFLINE"]«
+  ¶¶ »['notify-send'|"ONLINE"]«
+
+»['echo'|(1)¨30¨]«
+»['echo'|(2)¨25¨]«
+
+< [(1)¨¨|(2)¨¨]
+  ¶ »['echo'|¨WARN:¨|(1)¨¨|¨< 25? Nein!¨]«
+  ¶¶ »['echo'|¨OK:¨|(2)¨¨|¨≥ 25¨]«
+
+ſ »[(1)¨¨]«
+ſ »[(2)¨¨]«
+!¢
+
+######################## Ende der Feeds ############################
+####################################################################
+[ENTER] zum Beenden.
+
+
+ ┌[bandino@dev][02:10:45|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ kernel 07
+[INFO] Datei mit @kernel-nr: 07 gefunden → /Pylovara/Handbuch/KernelNotes/eingabe.kernel-notes
+----------------------------------------
+@kernel-nr: 07
+####################################################################
+####       Eingaben Für [Protein] & {Proton} - Packete
+
+
+Wichtig:
+
+Allgemein zu allen Eingaben sind Anfang und Ende
+durch doppelseitigkeit gekennzeichnet !
+
+Eingaben sind Eingabefelder die Spezialisiert für das Richtige
+Register für die Eingaben sorgen und somit Modular handelbar bleiben.
+
+MCS wird mit eigenen Standart Eingaben ausgeliefert deswegen können
+einheimische cmd verwendet werden aller art , sollten
+für Configs etc Proton /en dazu verwendet werden sie quasi
+umzukompilieren , was Im Pylovara Desktop Anwendung findet .
+
+--------------------------------------------------------------------
+
+    " "  <- Print , Druckt
+
+    Print Druckt was da steht und dient für direktes drucken
+    zum beispiel bei send-notify oder gui layouts ...
+    alles was nicht versteckt verarbeitet werden soll und
+    direkt visuell irgendwo angezeigt werden muss
+
+    unterscheidet sich vom blanken nenner weil der blanke nenner
+    eher im terminal oder für hintegrund rechen operationen dient.
+
+    über print kann die ausgabe direkt irgendwo hin transportiert
+    werden
+
+    beispiel :
+
+    ['notify-send'|"OFFLINE Terminal nicht aktiv"]
+
+    hier wird das interne OS System cmd notify-send genutzt
+    der dann an das gui verknüpft ist , und dort wird gedruckt
+    über den print .
+
+    das unterscheidet den print vom blanken nenner
+
+--------------------------------------------------------------------
+
+    ' ' <- OS System Commands , System CMD des jeweiligen os systems
+
+
+    »['rofi sleep 1 && pkill rofi || rofi -show drun']«
+
+    System CMD befehle gehen von jeweiligen unterbau aus und
+    sind nur die container für System CMD befehle wie sudo usw
+    bei windows user werdens warscheins minix befehle sein , bei bsd
+    dann bsd cmd oder linux bash cmd . Der Container leitet
+    registrierte system befehle eins zu eins weiter , bei mir
+    als arch linux user mit primär kitty und bash unterbau , klare
+    archlinux cmd , bei debian dürften es abweichungen
+    geben daher auch dann debian cmd .
+
+    bei system cmd eingaben , werden sie zusammen geschrieben
+    und nie aufgeteilt , den das jeweilige os hat nun mal
+    seine eigenen cmd befehle die eben nur zusammen funktionieren
+
+    wenn aber folge befehle kommen dann können sie extra eingetragen
+    werden
+
+    Falsch :
+
+    »['sudo'|'pacman'|'-Syyu']«
+
+    Richtig :
+
+    »['sudo pacman -Syyu']«
+
+    das selbe gilt bei anderen aufgaben wir
+
+    Falsch
+
+    »['sudo'|'pacman'|'-R'|¨kwriter¨]«
+
+    Richtig
+
+    »['sudo pacman -R'|¨kwriter¨]«
+
+    folge-befehle
+
+    »['sudo pacman -R'|¨kwriter¨]«
+    ¶= »['sudo pacman -S'|¨kwriter¨]«
+
+    den folgebefehl können wir als paralellen transportieren
+
+--------------------------------------------------------------------
+
+    ’ ’  <- MCS COMMANDS , Wird als Anweisung verstanden , MCS CMD
+
+    Hinweis :
+
+    mcs cmd's sind von Haus aus im MCS register definiert, die die
+    Eingaben genau wiederspiegelt für MCS. wir im kernel
+    als MCS-HYPR-CMD bezeichnet .
+
+    Es sollen extra angelegte MCS CMD befehle werden die dann
+    hauptsächlich in protein wie proton eingesetzt werden ,
+    sobald eine finale regisrty vorliegt , ziehe kernel 99
+
+    sind dann auch für MCS Kernel Syntax spezifische dinge gedacht
+    und haben nichts mit os system cmd eingabem zu tun
+--------------------------------------------------------------------
+
+    ¨ ¨  <- Blankernenner , ist was drinne oder soll was rein
+
+    Der Container Blankernenner wird für interne aufgaben verwendet
+    wo ausgaben nur im terminal statt finden oder als nicht sichtbare
+    weitergaben wo der user eventuell nicht sieht aber statt finden.
+
+    mit dem blanken nenner kann ausgabe transportiert werden
+    oder hardcodierte inhaklt weiter geleitet
+
+    das unterscheidet den blanken nenner vom print
+
+    Blankernenner = Runtime-Evaluation, nicht String-Literal
+
+--------------------------------------------------------------------
+
+    , ,  <- Notiz , Was es ist , Tagging , So heißt es
+
+    Die Eingabe Notiz ist in man/chen Senarien mit viel Code eine
+    praktische angelegenheit und wird in MCS oft als Namengeber
+    eines Proton Angewendet, um transportierte daten besser zu taggen.
+    Der tag zeigt nur info daten die hardcodiert reingeschrieben
+    werden und später als eine eigene logik für eine übergeordnete
+    suche ausgebaut wird . Gute funktion wenn Downloads und Uploads
+    von statten gehen .
+
+
+######################################################################
+
+Sie werden in Print , System CMD , MCS CMD , Blanker Nenner , Notiz ,
+den Protein Zelle als Eingabefelder sprich Eingabe mit gegeben ,
+was auch schluss endlich auch nur in Proteinpackete
+als Combination mit Proton(en) oder Warps Mündet durch die Felder .
+
+###################### Ende der Eingaben  ##########################
+####################################################################
+[ENTER] zum Beenden.
+
+
+ ┌[bandino@dev][02:13:09|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $
+
+
+lange rum gemacht aber der fehler gefunden :
+
+Fehler: Implizite Deklaration von mcs_evaluate_operator
+Fehler: MCS_OP_WHEN_NOT nicht deklariert
+Fehler: unvollständiger typedef mcs_operator_t
+
+passiert nur, wenn eine der folgenden Bedingungen erfüllt ist:
+
+    #include "mcs_operatoren.h" fehlt oder
+    mcs_operatoren.h enthält nicht die Definitionen
+    mcs_operatoren.c wurde nicht kompiliert
+    Header-Cache hält eine alte, anonyme Version von mcs_operator_t
+
+kurz prüfen ob vollständig MCS_OPERATOREN_H existiert
+
+ ┌[bandino@dev][02:17:23|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $ cat /Pylovara/System/Kernel/Core/include/cat /Pylovara/System/Kernel/Core/include/mcs_operatoren.h | grep -A 5 "MCS_OP_WHEN_NOT"
+    MCS_OP_WHEN_NOT,    // °
+    MCS_OP_WHEN_LT,     // <
+    MCS_OP_WHEN_GT,     // >
+    MCS_OP_TRANS_ERROR, // ^
+    MCS_OP_DATA_RESIDUE // ſ
+} mcs_op_type_t;
+
+ ┌[bandino@dev][02:17:25|Fr Dez 19]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/System/Kernel/Core/build]> $
+
+alter mcs_operatoren.c :
+
+// Lib/mcs_operatoren.c — v3.0: Minimal, sicher, feed-basiert
+#include "mcs_operatoren.h"
+#include "mcs_feed.h"
+#include "mcs_semantics.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+mcs_operator_t* mcs_operator_new(void) {
+    return calloc(1, sizeof(mcs_operator_t));
+}
+
+void mcs_operator_free(mcs_operator_t* op) {
+    if (!op) return;
+    if (op->type == MCS_OP_WHEN_NOT) {
+        mcs_free_protein(op->data.not.cond);
+    }
+    mcs_free_protein(op->then_branch);
+    mcs_free_protein(op->else_branch);
+    free(op);
+}
+
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type) {
+    if (!op) return 0;
+    op->type = type;
+    return 1;
+}
+
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p) {
+    if (!op || !p || op->type != MCS_OP_WHEN_NOT) return 0;
+    op->data.not.cond = p;
+    return 1;
+}
+
+int mcs_operator_bind_comparison(mcs_operator_t* op, int id_a, int id_b) {
+    if (!op || id_a < 0 || id_b < 0) return 0;
+    if (op->type != MCS_OP_WHEN_LT && op->type != MCS_OP_WHEN_GT) return 0;
+    op->data.cmp.left_id = id_a;
+    op->data.cmp.right_id = id_b;
+    return 1;
+}
+
+int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id) {
+    if (!op || feed_id < 0) return 0;
+    if (op->type != MCS_OP_DATA_RESIDUE) return 0;
+    op->data.residue_id = feed_id;
+    return 1;
+}
+
+int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb) {
+    if (!op) return 0;
+    op->then_branch = then;
+    op->else_branch = elseb;
+    return 1;
+}
+
+mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op) {
+    if (!op) return MCS_ERROR;
+
+    switch (op->type) {
+        case MCS_OP_WHEN_NOT: {
+            if (!op->data.not.cond) return MCS_ERROR;
+            mcs_truth_t cond = mcs_evaluate_condition(op->data.not.cond);
+            return (cond == MCS_FALSE) ? MCS_TRUE : (cond == MCS_TRUE ? MCS_FALSE : MCS_ERROR);
+        }
+
+        case MCS_OP_WHEN_LT:
+        case MCS_OP_WHEN_GT: {
+            const char* a_str = mcs_feed_get(op->data.cmp.left_id);
+            const char* b_str = mcs_feed_get(op->data.cmp.right_id);
+            if (!a_str || !b_str) return MCS_ERROR;
+
+            double a = atof(a_str);
+            double b = atof(b_str);
+
+            if (op->type == MCS_OP_WHEN_LT) return (a < b) ? MCS_TRUE : MCS_FALSE;
+            else                             return (a > b) ? MCS_TRUE : MCS_FALSE;
+        }
+
+        case MCS_OP_TRANS_ERROR:
+        case MCS_OP_DATA_RESIDUE:
+            return MCS_TRUE; // Annotationen → keine Auswertung nötig
+
+        default:
+            return MCS_ERROR;
+    }
+}
+
+neuer mcs_operatoren.c minimalistisch :
+
+// Lib/mcs_operatoren.c
+#include "mcs_operatoren.h"
+#include <stdlib.h>
+
+mcs_operator_t* mcs_operator_new(void) {
+    return calloc(1, sizeof(mcs_operator_t));
+}
+
+void mcs_operator_free(mcs_operator_t* op) {
+    if (!op) return;
+    free(op);
+}
+
+int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type) {
+    if (!op) return 0;
+    op->type = type;
+    return 1;
+}
+
+mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op) {
+    if (!op) return MCS_ERROR;
+    // Minimal-Implementierung: nur ſ und Fehler prüfen
+    if (op->type == MCS_OP_DATA_RESIDUE || op->type == MCS_OP_TRANS_ERROR) {
+        return MCS_TRUE;
+    }
+    return MCS_TRUE; // Platzhalter — später: Vergleiche, Bedingungen
+}
+
+
+!!!! es funktionieren beide !!!!!!!!!!!!!!!!!!!!
+
+also der alter weil feed logic vorhanden
 

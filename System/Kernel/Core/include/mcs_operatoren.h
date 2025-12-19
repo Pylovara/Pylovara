@@ -1,10 +1,11 @@
-// include/mcs_operatoren.h — v3.0: Operator-Semantik, *named struct*, kompatibel mit Forward-Dekl.
+// include/mcs_operatoren.h — v3.0: Operator-Semantik, NAMENHAFTER struct
 #ifndef MCS_OPERATOREN_H
 #define MCS_OPERATOREN_H
 
 #include "mcs_protein.h"
 #include "mcs_semantics.h"   // ← für mcs_truth_t
 
+// 🔹 Enum — muss MCS_OP_* enthalten
 typedef enum {
     MCS_OP_NONE = 0,
     MCS_OP_WHEN_NOT,    // °
@@ -14,7 +15,7 @@ typedef enum {
     MCS_OP_DATA_RESIDUE // ſ
 } mcs_op_type_t;
 
-// 🔹 WICHTIG: Benannter struct — NICHT anonym!
+// 🔹 STRUCT MIT NAME — muss struct mcs_operator heißen!
 struct mcs_operator {
     mcs_op_type_t type;
     union {
@@ -25,6 +26,7 @@ struct mcs_operator {
     mcs_protein_t* then_branch;
     mcs_protein_t* else_branch;
 };
+// 🔹 Typedef — muss mcs_operator_t heißen!
 typedef struct mcs_operator mcs_operator_t;
 
 // Public API

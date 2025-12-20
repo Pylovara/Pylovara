@@ -1,17 +1,12 @@
 ¢!
-# Operator Negation | ausführbare protein packete | unausfürbare für abgleich |feed transportin container |
-# ad-hoc fix dank sytem cmd echo plus blanker nenner da rein |
+# Datei test_operatoren.mcs
 ° ['$terminal']
-  ¶ »['notify-send'|"OFFLINE"]«
-  ¶¶ »['notify-send'|"ONLINE"]«
-
+  ¶ »['notify-send'|"ONLINE"]«
+  ¶¶ »['notify-send'|"OFFLINE"]«
 »['echo'|(1)¨30¨]«
 »['echo'|(2)¨25¨]«
-
 < [(1)¨¨|(2)¨¨]
-  ¶ »['echo'|¨WARN:¨|(1)¨¨|¨< 25? Nein!¨]«
-  ¶¶ »['echo'|¨OK:¨|(2)¨¨|¨≥ 25¨]«
-
-ſ »[(1)¨¨]«
-ſ »[(2)¨¨]«
+  ¶ »['echo'|'30 ≥ 25 → OK']«
+ſ »[’feed cache'|¨1¨]«
+ſ »[’feed cache'|¨2¨]«
 !¢

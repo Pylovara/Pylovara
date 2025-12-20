@@ -1,4 +1,4 @@
-// Lib/mcs_operatoren.c — v3.0: Minimal, sicher, feed-basiert
+// Lib/mcs_operatoren.c — FINAL v3.0: rein lesend, niemals ausführend
 #include "mcs_operatoren.h"
 #include "mcs_feed.h"
 #include "mcs_semantics.h"
@@ -12,11 +12,9 @@ mcs_operator_t* mcs_operator_new(void) {
 
 void mcs_operator_free(mcs_operator_t* op) {
     if (!op) return;
-    if (op->type == MCS_OP_WHEN_NOT) {
+    if (op->type == MCS_OP_WHEN_NOT && op->data.not.cond) {
         mcs_free_protein(op->data.not.cond);
     }
-    mcs_free_protein(op->then_branch);
-    mcs_free_protein(op->else_branch);
     free(op);
 }
 
@@ -26,9 +24,9 @@ int mcs_operator_set_type(mcs_operator_t* op, mcs_op_type_t type) {
     return 1;
 }
 
-int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* p) {
-    if (!op || !p || op->type != MCS_OP_WHEN_NOT) return 0;
-    op->data.not.cond = p;
+int mcs_operator_bind_condition(mcs_operator_t* op, mcs_protein_t* cond) {
+    if (!op || !cond || op->type != MCS_OP_WHEN_NOT) return 0;
+    op->data.not.cond = cond;
     return 1;
 }
 
@@ -47,22 +45,14 @@ int mcs_operator_bind_residue(mcs_operator_t* op, int feed_id) {
     return 1;
 }
 
-int mcs_operator_set_branches(mcs_operator_t* op, mcs_protein_t* then, mcs_protein_t* elseb) {
-    if (!op) return 0;
-    op->then_branch = then;
-    op->else_branch = elseb;
-    return 1;
-}
-
 mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op) {
     if (!op) return MCS_ERROR;
 
     switch (op->type) {
-        case MCS_OP_WHEN_NOT: {
+        case MCS_OP_WHEN_NOT:
             if (!op->data.not.cond) return MCS_ERROR;
-            mcs_truth_t cond = mcs_evaluate_condition(op->data.not.cond);
-            return (cond == MCS_FALSE) ? MCS_TRUE : (cond == MCS_TRUE ? MCS_FALSE : MCS_ERROR);
-        }
+            return mcs_evaluate_condition(op->data.not.cond) == MCS_FALSE
+            ? MCS_TRUE : MCS_FALSE;
 
         case MCS_OP_WHEN_LT:
         case MCS_OP_WHEN_GT: {
@@ -77,9 +67,9 @@ mcs_truth_t mcs_evaluate_operator(const mcs_operator_t* op) {
             else                             return (a > b) ? MCS_TRUE : MCS_FALSE;
         }
 
-        case MCS_OP_TRANS_ERROR:
         case MCS_OP_DATA_RESIDUE:
-            return MCS_TRUE; // Annotationen → keine Auswertung nötig
+        case MCS_OP_TRANS_ERROR:
+            return MCS_TRUE;
 
         default:
             return MCS_ERROR;

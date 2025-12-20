@@ -4,7 +4,11 @@
 
 #include "mcs_transaktion.h"
 
-// 🔹 Fehlercodes (öffentliche API — jetzt hier zentral, wie in mcs.h)
+// 🔹 Forward-Deklaration statt Include (bricht Zyklus!)
+struct mcs_operator;
+typedef struct mcs_operator mcs_operator_t;
+
+// 🔹 Fehlercodes (öffentliche API — jetzt hier zentral)
 #define MCS_OK               0
 #define MCS_ERR_SYNTAX      -1
 #define MCS_ERR_IO          -2

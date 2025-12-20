@@ -39,6 +39,7 @@ CMakeFiles/mcs_core.dir/Lib/mcs_runner.c.o: \
  /Pylovara/System/Kernel/Core/include/mcs_semantics.h \
  /Pylovara/System/Kernel/Core/include/mcs_runner.h \
  /Pylovara/System/Kernel/Core/include/mcs_transaktion.h \
+ /Pylovara/System/Kernel/Core/include/mcs_cmd_register.h \
  /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \

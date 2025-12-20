@@ -1,0 +1,172 @@
+@kernel-nr: 77 # LogikInfo - Geordnet
+@kernel-nr: ausführungslogik # MCS-System
+####################################################################
+
+Vorweg : MCS Logik Verbesserung gegenüber C
+
+  In C ist if (a < b) { do(); } ein monolithischer Ausdruck.
+  In MCS ist < [(1)¨¨|(2)""] ¶ »[do]« zerlegt in:
+    < → Operator: Vergleiche Feeds 1 & 2
+    [(1)¨¨|(2)""] → Operanden: Lesbare, debuggbare, cachebare Werte
+    ¶ »[do]« → Zweig: Nur ausführen, wenn Bedingung TRUE
+
+Monolithischer Ausdruck in Klaren Worten :
+In der klassischen C-Welt ist ein Ausdruck wie if(x = y)
+der absolute Albtraum, weil die Zuweisung (Seiteneffekt) und
+der Vergleich (Logik) im selben Atemzug passieren können.
+
+        Die MCS-Logik schiebt dem einen Riegel vor!
+         Wird auch bei MCS-Plus später übernommen
+--------------------------------------------------------------------
+## Operatoren, Proteine und Aktionen — Ausführungslogik
+
+### Grundprinzip
+
+In MCS sind **Operatoren**, **Proteine** und **Aktionen**
+bewusst getrennte Konzepte.
+Diese Trennung ist **keine Einschränkung**,
+sondern die Grundlage für stabile, erweiterbare Logik.
+
+--------------------------------------------------------------------
+
+### 1. Protein — Der Träger
+
+Ein **Protein** ist immer ein **Container**.
+
+* Es kann **Daten transportieren**
+* Es kann **Eingaben kapseln**
+* Es kann **Feeds setzen**
+* Es kann **verglichen oder weitergereicht** werden
+
+Ein Protein ist **nicht automatisch ausführbar**.
+
+
+[(1)¨30¨]
+
+
+Dieses Protein:
+
+* schreibt einen Wert in den Feed
+* besitzt **keine Ausführung**
+* dient als **Referenz, Operand oder Transportobjekt**
+
+--------------------------------------------------------------------
+
+### 2. Aktion — Der Ausführungsmarker
+
+Eine **Aktion** definiert **Ausführbarkeit**.
+
+»[(1)¨30¨]«
+
+
+Erst durch `» «` wird ein Protein:
+
+* verarbeitet
+* ausgeführt
+* als Befehl interpretiert
+
+**Ohne Aktion findet keine Ausführung statt.**
+
+Das gilt ausnahmslos.
+
+--------------------------------------------------------------------
+
+### 3. Operatoren — Lesen vor Handeln
+
+Operatoren  sind **Kontroll- und Bewertungsinstanzen**.
+
+Beispiele:
+
+* `<`  (Vergleich)
+* `°`  (Wenn Nicht / Muss)
+* `…`  (Fehlerbehandlung)
+
+Operatoren:
+
+* **lesen**
+* **vergleichen**
+* **bewerten**
+
+Sie **führen nicht automatisch aus**.
+
+--------------------------------------------------------------------
+
+### 4. Operator + Protein (ohne Aktion)
+
+
+< [(1)¨¨|(2)¨¨]
+
+
+Bedeutung:
+
+* Der Operator liest zwei Protein-Werte
+* Die Werte stammen aus Feeds oder Transport
+* Es findet **nur ein Vergleich** statt
+* **Keine Ausführung**, kein Befehl, kein Effekt
+
+Dies ist der **Default-Zustand** eines Operators.
+
+--------------------------------------------------------------------
+
+### 5. Operator + ausführbares Protein
+
+< »[(1)¨¨|(2)¨¨]«
+
+
+Bedeutung:
+
+* Der Operator bewertet die Bedingung
+* **Nur wenn die Bedingung erfüllt ist**, darf ausgeführt werden
+* Die Aktion `» «` erlaubt dem Operator, den Effekt freizugeben
+
+Der Operator entscheidet **nicht**, *was* ausgeführt wird,
+sondern **ob** es ausgeführt werden darf.
+
+--------------------------------------------------------------------
+
+### 6. Wahrheiten (IF / ELSE) als Ausführungsgatter
+
+Wahrheiten (`¶`, `¶¶`, `°`) arbeiten **auf Operator-Ebene**.
+
+Beispiel:
+
+
+< [(1)¨¨|(2)¨¨]
+  ¶ »['echo'|¨TREFFER¨]«
+
+
+Ablauf:
+
+1. Operator wertet
+2. Wahrheit prüft Ergebnis
+3. **Nur der Zweig mit Aktion wird ausgeführt**
+
+Ohne Aktion bleibt auch ein wahrer Zweig **wirkungslos**.
+
+--------------------------------------------------------------------
+
+### 7. Konsequenz für das Systemdesign
+
+* Operatoren **lesen immer**
+* Aktionen **führen nur aus, wenn erlaubt**
+* Proteine **transportieren und kapseln**
+
+Diese Trennung:
+
+* verhindert implizite Seiteneffekte
+* macht Logik nachvollziehbar
+* erlaubt komplexe Frameworks ohne Sonderregeln
+* unterscheidet MCS klar von klassischen C-Operator/Operand-Modellen
+
+--------------------------------------------------------------------
+
+### Merksatz :
+
+> Ein Operator entscheidet,
+> eine Aktion führt aus,
+> ein Protein trägt.
+
+--------------------------------------------------------------------
+
+################## Ende der Ausführungslogik  ######################
+####################################################################

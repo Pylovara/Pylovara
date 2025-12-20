@@ -1,5 +1,5 @@
-// mcs_lexer.c — v2.9-konform, UTF-8-sicher, GCC-ready
-// Autor: Thomas Zimmermann / Qwen — basierend auf kernel 02–15, MCS 2.9
+// mcs_lexer.c — v3.0-konform, UTF-8-sicher, GCC-ready
+// Autor: Thomas Zimmermann Qwen — basierend auf kernel 02–15, MCS 3.0
 
 #include <stdlib.h>
 #include <string.h>
@@ -123,6 +123,22 @@ mcs_token_t mcs_lexer_next(mcs_lexer_t* lex) {
     if (*lex->pos == '\0') {
         tok.token_type = TOK_EOF;
         tok.length = 0;
+        return tok;
+    }
+
+    // 🔹 mcs_lexer_peek(): Liefert nächsten Token, ohne den Lexer zu bewegen
+    mcs_token_t mcs_lexer_peek(mcs_lexer_t* lex) {
+        if (!lex) {
+            mcs_token_t err = {TOK_UNKNOWN, NULL, 0, -1, -1};
+            return err;
+        }
+        const char* saved_pos = lex->pos;
+        int saved_line = lex->line;
+        int saved_column = lex->column;
+        mcs_token_t tok = mcs_lexer_next(lex);
+        lex->pos = saved_pos;
+        lex->line = saved_line;
+        lex->column = saved_column;
         return tok;
     }
 

@@ -1,10 +1,11 @@
 // Lib/mcs_runner.c — v3.0 FINAL: mit Semantik-Integration, Parallel Run & Transport
-// 🔹 Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (mit operator_count!)
-// Lib/mcs_runner.c — v3.0 FINAL: mit Operator-Integration
+// Korrigiert & stabilisiert — kompatibel mit aktuellem Stand (mit operator_count!)
+// Lib/mcs_runner.c — v3.0 FINAL: mit Operator-Integration (kernel 09)
 #include "mcs_feed.h"
 #include "mcs_semantics.h"
-#include "mcs_operatoren.h"   // ✅ VOR mcs_runner.h — volle Definition
-#include "mcs_runner.h"       // ✅ NACH mcs_operatoren.h — damit MCS_ERR_SYSTEM bekannt ist
+#include "mcs_operatoren.h"   // VOR mcs_runner.h — volle Definition
+#include "mcs_runner.h"  // NACH mcs_operatoren.h — damit MCS_ERR_SYSTEM bekannt ist
+#include "mcs_cmd_register.h"   // ← DAMIT mcs_cmd_execute bekannt ist
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -234,21 +235,35 @@ int mcs_run_action(mcs_action_t* a) {
             pclose(p);
         }
     }
-
-    // 🔹 3. System-Command ausführen (nur für 'exec', 'run')
-    if (a->cmd && (strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
-        const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
-        char cmd[256];
-        if (a->blankernenner && feed_val) {
-            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
-        } else if (a->arg1) {
-            snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
-        } else {
-            snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+    // 🔹 3. MCS-CMD oder System-CMD ausführen
+    if (a->cmd) {
+        // ✅ MCS-CMD: 'feed cache' oder ’feed cache’ → aus Register
+        // Prüfe auf Anführungszeichen durch Lexer-Typ — aber hier vereinfacht:
+        if (a->cmd[0] == '\'') {  // ← nur ASCII-Apostroph: 'feed cache'
+            char* cmd_clean = strdup(a->cmd + 1);
+            if (cmd_clean) {
+                // Entferne schließendes '
+                char* last = strrchr(cmd_clean, '\'');
+                if (last) *last = '\0';
+                int err = mcs_cmd_execute(cmd_clean, a->blankernenner);
+                free(cmd_clean);
+                return (err == 0) ? MCS_OK : MCS_ERR_SYNTAX;
+            }
         }
-        printf("[EXEC] %s\n", cmd);
-        return system(cmd);
-    }
 
-    return MCS_OK;
+        // ❌ System-CMD: exec, run
+        if ((strcmp(a->cmd, "exec") == 0 || strcmp(a->cmd, "run") == 0)) {
+            const char* feed_val = a->feed.id > 0 ? mcs_feed_get(a->feed.id) : NULL;
+            char cmd[256];
+            if (a->blankernenner && feed_val) {
+                snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, feed_val);
+            } else if (a->arg1) {
+                snprintf(cmd, sizeof(cmd), "%s %s", a->cmd, a->arg1);
+            } else {
+                snprintf(cmd, sizeof(cmd), "%s", a->cmd);
+            }
+            printf("[EXEC] %s\n", cmd);
+            return system(cmd);
+        }
+    }
 }

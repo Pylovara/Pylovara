@@ -1,4 +1,4 @@
-// mcs_lexer.h — v2.9 API
+// mcs_lexer.h — v3.0 API
 #ifndef MCS_LEXER_H
 #define MCS_LEXER_H
 
@@ -35,5 +35,6 @@ typedef struct mcs_lexer mcs_lexer_t;
 mcs_lexer_t* mcs_lexer_new(const char* input);
 void         mcs_lexer_free(mcs_lexer_t* lex);
 mcs_token_t  mcs_lexer_next(mcs_lexer_t* lex);
+mcs_token_t mcs_lexer_peek(mcs_lexer_t* lex); // 🔹 NEU
 
 #endif // MCS_LEXER_H

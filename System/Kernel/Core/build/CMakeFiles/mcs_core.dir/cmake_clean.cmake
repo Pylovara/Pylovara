@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mcs_core.dir/Lib/mcs_action.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o"
   "CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.o.d"
+  "CMakeFiles/mcs_core.dir/Lib/mcs_cmd_register.c.o"
+  "CMakeFiles/mcs_core.dir/Lib/mcs_cmd_register.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o"
   "CMakeFiles/mcs_core.dir/Lib/mcs_eingaben.c.o.d"
   "CMakeFiles/mcs_core.dir/Lib/mcs_feed.c.o"

@@ -338,6 +338,30 @@ Lib/mcs_argument.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_argument.c.s
 .PHONY : Lib/mcs_argument.c.s
 
+Lib/mcs_cmd_register.o: Lib/mcs_cmd_register.c.o
+.PHONY : Lib/mcs_cmd_register.o
+
+# target to build an object file
+Lib/mcs_cmd_register.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_cmd_register.c.o
+.PHONY : Lib/mcs_cmd_register.c.o
+
+Lib/mcs_cmd_register.i: Lib/mcs_cmd_register.c.i
+.PHONY : Lib/mcs_cmd_register.i
+
+# target to preprocess a source file
+Lib/mcs_cmd_register.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_cmd_register.c.i
+.PHONY : Lib/mcs_cmd_register.c.i
+
+Lib/mcs_cmd_register.s: Lib/mcs_cmd_register.c.s
+.PHONY : Lib/mcs_cmd_register.s
+
+# target to generate assembly for a file
+Lib/mcs_cmd_register.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs_core.dir/build.make CMakeFiles/mcs_core.dir/Lib/mcs_cmd_register.c.s
+.PHONY : Lib/mcs_cmd_register.c.s
+
 Lib/mcs_eingaben.o: Lib/mcs_eingaben.c.o
 .PHONY : Lib/mcs_eingaben.o
 
@@ -658,6 +682,9 @@ help:
 	@echo "... Lib/mcs_argument.o"
 	@echo "... Lib/mcs_argument.i"
 	@echo "... Lib/mcs_argument.s"
+	@echo "... Lib/mcs_cmd_register.o"
+	@echo "... Lib/mcs_cmd_register.i"
+	@echo "... Lib/mcs_cmd_register.s"
 	@echo "... Lib/mcs_eingaben.o"
 	@echo "... Lib/mcs_eingaben.i"
 	@echo "... Lib/mcs_eingaben.s"

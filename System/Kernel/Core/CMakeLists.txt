@@ -21,7 +21,7 @@ set(SRC_LIB
     Lib/mcs_transaktion.c
     Lib/mcs_eingaben.c
     Lib/mcs_runner.c
-    Lib/mcs_semantics.c   # ✅ FEHLT BISHER — JETZT HINZUFÜGEN!
+    Lib/mcs_semantics.c
     Logic/mcs_lexer.c
 )
 
@@ -43,6 +43,7 @@ add_library(mcs_core STATIC
     Lib/mcs_operatoren.c   # ← VOR mcs_transaktion.c verschoben
     Lib/mcs_transaktion.c
     Lib/mcs_eingaben.c
+    Lib/mcs_cmd_register.c   # ← NEU — vor runner
     Lib/mcs_runner.c
     Logic/mcs_lexer.c
 )

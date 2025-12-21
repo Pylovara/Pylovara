@@ -1,10 +1,18 @@
 // Lib/mcs_transaktion.c — erweitert um Operator-Unterstützung (kernel 09)
 #include <stdlib.h>
 #include <string.h>
-#include "mcs_transaktion.h"
-#include "mcs_wahrheiten.h"
 
-#include "mcs_operatoren.h"   // erst hier — wo die vollständige Def. nötig ist
+// 🔹 ZUERST: Lexer — strikt vor allen anderen
+#include "mcs_lexer.h"
+
+// 🔹 DANN: Grundtypen — in dieser Reihenfolge
+#include "mcs_token.h"
+#include "mcs_wahrheiten.h"
+#include "mcs_action.h"
+#include "mcs_protein.h"
+#include "mcs_transaktion.h"
+#include "mcs_operatoren.h"
+
 
 // 🔹 Forward-Deklaration
 static mcs_protein_t* mcs_parse_next_protein(mcs_lexer_t* lex);
@@ -70,20 +78,17 @@ mcs_transaktion_t* mcs_parse_transaktion(const char* input) {
         if (op->type == MCS_OP_WHEN_NOT && next.token_type == TOK_ACTION_START) {
             mcs_protein_t* cond = mcs_parse_next_protein(lex);
             mcs_operator_bind_condition(op, cond);
-            // Zweige: ¶ / ¶¶
-            // - mcs_token_t branch = mcs_lexer_peek(lex); // ❌ Fehlt noch! // Peek, nicht Next! Kommt noch
-            //if (branch.token_type == TOK_IF) {
-            //    mcs_lexer_next(lex); // konsumiere ¶
-            //    op->then_branch = mcs_parse_next_protein(lex);
-            //}
-            //branch = mcs_lexer_peek(lex);
-            //if (branch.token_type == TOK_ELSE) {
-            //    mcs_lexer_next(lex); // konsumiere ¶¶
-            //    op->else_branch = mcs_parse_next_protein(lex);
-            // klammer entfernt für sauberes auskommentiern für später
-            // Zweige: vorerst leer — später mit Peek vervollständigen
-            op->then_branch = NULL;
-            op->else_branch = NULL;
+            // 🔹 Zweige: ¶ / ¶¶ — mit mcs_lexer_peek (kernel 77: Operator liest, Aktion führt aus)
+            mcs_token_t branch = mcs_lexer_peek(lex);
+            if (branch.token_type == TOK_IF) {
+                mcs_lexer_next(lex); // konsumiere ¶
+                op->then_branch = mcs_parse_next_protein(lex);
+            }
+            branch = mcs_lexer_peek(lex);
+            if (branch.token_type == TOK_ELSE) {
+                mcs_lexer_next(lex); // konsumiere ¶¶
+                op->else_branch = mcs_parse_next_protein(lex);
+            }
         }
         else if ((op->type == MCS_OP_WHEN_LT || op->type == MCS_OP_WHEN_GT)
             && next.token_type == TOK_FEED_OPEN) {
@@ -93,17 +98,17 @@ mcs_transaktion_t* mcs_parse_transaktion(const char* input) {
             int id2 = extract_number(mcs_lexer_next(lex));
             mcs_lexer_next(lex); // )
             mcs_operator_bind_comparison(op, id1, id2);
-            // Zweige
-            //mcs_token_t branch = mcs_lexer_peek(lex);
-            //if (branch.token_type == TOK_IF) {
-            //    mcs_lexer_next(lex);
-            //    op->then_branch = mcs_parse_next_protein(lex);
-            // klammer fehlt fürs auskommentieren
-            //branch = mcs_lexer_peek(lex);
-            //if (branch.token_type == TOK_ELSE) {
-            //    mcs_lexer_next(lex);
-            //    op->else_branch = mcs_parse_next_protein(lex);
-            // klammer fehlt fürs auskommentieren
+            // 🔹 Zweige: ¶ / ¶¶ — mit mcs_lexer_peek (kernel 77: Operator liest, Aktion führt aus)
+            mcs_token_t branch = mcs_lexer_peek(lex);
+            if (branch.token_type == TOK_IF) {
+                mcs_lexer_next(lex);
+                op->then_branch = mcs_parse_next_protein(lex);
+            }
+            branch = mcs_lexer_peek(lex);
+            if (branch.token_type == TOK_ELSE) {
+                mcs_lexer_next(lex);
+                op->else_branch = mcs_parse_next_protein(lex);
+            }
             }
             else if (op->type == MCS_OP_DATA_RESIDUE && next.token_type == TOK_FEED_OPEN) {
                 int id = extract_number(mcs_lexer_next(lex));
@@ -151,10 +156,29 @@ void mcs_free_transaktion(mcs_transaktion_t* t) {
     free(t);
 }
 
-// 🔹 Hilfsfunktion (vereinfacht — nutzt dein bestehendes mcs_parse_action)
+// 🔹 Hilfsfunktion — temporär echtes Parsing aktivieren
 static mcs_protein_t* mcs_parse_next_protein(mcs_lexer_t* lex) {
-    // Rücksetzen des Lexers ist komplex → für MVP: leeres Protein
-    mcs_protein_t* p = calloc(1, sizeof(mcs_protein_t));
-    // In Zukunft: hier dein mcs_parse_action_from_lexer einbauen
+    // 🔹 Wir sind *nach* » — also direkt vor dem Protein-Inhalt
+    // 🔹 Lies bis zum nächsten « — und parse das als String
+    const char* start = mcs_lexer_get_current_pos(lex);
+    int depth = 0;
+    const char* pos = start;
+    while (*pos) {
+        if (*pos == '[') depth++;
+        else if (*pos == ']') {
+            depth--;
+            if (depth == 0) {
+                pos++; // über ]
+                break;
+            }
+        } else if (*pos == '\xC2' && pos[1] == '\xAB') { // «
+            if (depth == 0) break;
+        }
+        pos++;
+    }
+    int len = (int)(pos - start);
+    char* substr = strndup(start, len);
+    mcs_protein_t* p = mcs_parse_protein(substr);
+    free(substr);
     return p;
 }

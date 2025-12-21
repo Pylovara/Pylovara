@@ -1,6 +1,8 @@
-// mcs_lexer.h — v3.0 API
-#ifndef MCS_LEXER_H
-#define MCS_LEXER_H
+// mcs_token.h — v3.0 API
+#ifndef MCS_TOKEN_H
+#define MCS_TOKEN_H
+//ausgewechselt #ifndef MCS_LEXER_H
+// ausgewechselt #define MCS_LEXER_H
 
 typedef enum {
     TOK_UNKNOWN = 0,
@@ -37,4 +39,4 @@ void         mcs_lexer_free(mcs_lexer_t* lex);
 mcs_token_t  mcs_lexer_next(mcs_lexer_t* lex);
 mcs_token_t mcs_lexer_peek(mcs_lexer_t* lex); // 🔹 NEU
 
-#endif // MCS_LEXER_H
+#endif // MCS_TOKEN_H damals  MCS_LEXER_H

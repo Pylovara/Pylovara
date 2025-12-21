@@ -1,74 +1,101 @@
 @kernel-nr: 03
 ####################################################################
-## Protein /e :
 
-Protein ist der Rahmen , der Rahmen für Eingaben|Operatoren|Proton .
-Sie dienen dank den cmd Eingaben als lovlevel Syntax und können in
-einfacher Form verwendet werden .
+ Erklärung:
 
-Jedoch dienen sie als Grundstein und können bis komplexe frameworks
-verbaut werden , den alles baut auf Protein auf ...
+ Protein = Träger
 
 --------------------------------------------------------------------
-## Protein Packete Definiert (nicht ausführbar)
 
-       []
+ Textliche Definition :
 
-ein nicht ausführbares protein kann in operatoren oder
-wahrheiten logiken wie auch parallele prozesse oft als
-referenz header gesehen werden oder transportiert einfach etwas
-das im weiteren prozess irgendwann ausgeführt werden muss oder
-nur als notiz dient .
 
- kurzes beispiel für eine einfache automation :
-        ¢!
-        ° ['$terminal']
-          ¶ »['cd'|¨/Pylovara/¨]
-          ¶¶ ['cat'|¨readme.wiki-notes¨]«
-        !¢
+ Protein ist der Rahmen , Sie dienen Als Träger Element
+ und beinhalten für Eingaben Trennbefehl und Proton
+ den Rahmen der Aufgaben .
+
+ Außerhalb eines Protein , werden Nur Transaktion - Wahrheiten
+ - Operatoren - Aktion - Argumente - Adressierung - Dirigenten
+ - Zielreferenzen geschrieben.
+
 --------------------------------------------------------------------
-## Protein Packete Definiert (ausführbar)
+
+ Definition Protein in Worten :
+
+ Eckige Klammern Auf Eingabe Eckige Klammern Zu
+ Eckige Klammern Auf Eingabe Trenbefehl Eingabe Eckige Klammern Zu
+ Eckige Klammern Auf Inhalt Eckige Klammern Zu
+
+--------------------------------------------------------------------
+
+ Definition Protein Symbol :
+
+ [ Protein Anfang/Auf
+ ] Protein Ende/Zu
+
+--------------------------------------------------------------------
+
+ Definition Protein : nicht ausführbar
+
+ []
+
+--------------------------------------------------------------------
+
+ Definition Protein : ausführbar
 
        »[]«
 
-ausfürbar durch Aktion (siehe kernel 06)
+--------------------------------------------------------------------
 
-Ein ausführbares Protein wird verarbeitet bzw ausgeführt .
+ Definition Protein : ausführbar + Argument
+
+       »[]«««t
 
 --------------------------------------------------------------------
-## Protein Packete Definiert zwei Protein /e in einer aktion
+
+ Definition Protein : ausführbar + Argument + Adressierung
+
+       »[]«««t =
+
+--------------------------------------------------------------------
+
+ Definition Protein : ausführbar + Argument + Adressierung
+ + Zielereferenz/Dirigent
+
+       »[]«««t = §/$
+
+--------------------------------------------------------------------
+
+ Verständniss Definition :
 
         ¶ »['*'|"*"]
         ¶¶ ['*'|"*"]«
 
-ausfürbar durch Aktion (siehe kernel 06)
+ ausfürbar durch Aktion (siehe kernel 06)
 
-wir kombinieren die laufende aktion an eine wenn kann wahrheit
+ wir kombinieren die laufende aktion an eine wenn kann wahrheit
 
-wenn ¶»['*'|"*"] das ist dann kann ¶¶['*'|"*"]« das ausgeführt
-werden .
+ wenn ¶»['*'|"*"] das ist dann kann ¶¶['*'|"*"]« das ausgeführt
+ werden .
 
-wir erkennen das der aktion/s rahmen auf beide ausgedehnt ist !
+ wir erkennen das der aktion/s rahmen auf beide ausgedehnt ist !
 
-den wenn ¶»['*'|"*"] ausgeführt wird , kann ¶['*'|"*"]« das folgen.
+ den wenn ¶»['*'|"*"] ausgeführt wird , kann ¶['*'|"*"]« das folgen.
 
-dazu benutzen wir die schleifen aktion die als draht rahmen für die
-logik dient zum ausführen
+ dazu benutzen wir die schleifen aktion die als draht rahmen für die
+ logik dient zum ausführen
 
---------------------------------------------------------------------
-## HighLevel Workflow Definition Combiniertes Beispiel linear
+ HighLevel Workflow werden Linear Angetrieben
 
 ¢|
 ° ['*'|"*"]
-¶ »['*'|"*"]
-¶¶ ['*'|"*"]«
+  ¶ »['*'|"*"]
+  ¶¶ ['*'|"*"]«
 |¢
 
-Ausführbares protein mit wenn kann regel ,
+Ausführbares protein mit Wahrheiten ,
        - assimiliertes element -
 aus C , da Nützlich für IF and Else regeln (siehe kernel lex 08)
 
---------------------------------------------------------------------
-
-##################### Ende der Transaktion #########################
+##################### Ende der Protein /e ##########################
 ####################################################################

@@ -1,7 +1,7 @@
 @kernel-nr: 13
 ####################################################################
 
-    ø ø     Warp  :
+    ø- -ø     Warp  :
 
 Ein Warp wird dafür verwendet um explizite language's aller art
 mit transportiert zu werden.Der Warp wird entweder als einzel
@@ -21,31 +21,31 @@ mit Hardware.
 
  Definition :
 
- ø
+ ø- -ø
 
 --------------------------------------------------------------------
 
  Definition Anfang und Ende :
 
 
- ø #Anfang
+ ø- #Anfang | zwei symbole
 
- ø #Ende
+ -ø #Ende | zwei symbole
 
 --------------------------------------------------------------------
 
  Definition Grundgerüst :
 
- ø ,,   # Warp Beginn + Optionale Notiz
- Code   # Code im Originalen zustand
- ø = §  # Warp Ende + Adressierung und oder Zielreferenz
+ ø- ,,   # Warp Beginn + Optionale Notiz
+ Code    # Code im Originalen zustand
+ -ø = §  # Warp Ende + Adressierung und oder Zielreferenz
 
  Genau so lassen sich Alle Codes Warpen
 
 --------------------------------------------------------------------
  Anbindungsbeispiele :
 
-ø ,gcc,
+ø- ,gcc,
  #include <stdio.h>
 
 int fibonacci(int n) {
@@ -65,10 +65,10 @@ int main() {
     printf("Fibonacci(%d) = %d\n", n, fibonacci(n));
     return 0;
 }
-ø = §gcc
+-ø = §gcc
 
 
-ø ,python,
+ø- ,python,
 def fibonacci(n):
     if n <= 1:
         return n
@@ -81,9 +81,9 @@ def fibonacci(n):
 if __name__ == "__main__":
     n = 10
     print(f"Fibonacci({n}) = {fibonacci(n)}")
-ø = §python
+-ø = §python
 
-ø ,java,
+ø- ,java,
 function fibonacci(n) {
     if (n <= 1) return n;
 
@@ -96,10 +96,10 @@ function fibonacci(n) {
 
 const n = 10;
 console.log(`Fibonacci(${n}) = ${fibonacci(n)}`);
-ø = §java
+-ø = §java
 
 
-ø ,rust,
+ø- ,rust,
 fn fibonacci(n: u32) -> u32 {
     if n <= 1 {
         return n;
@@ -119,10 +119,10 @@ fn main() {
     let n = 10;
     println!("Fibonacci({}) = {}", n, fibonacci(n));
 }
-ø = §rust
+-ø = §rust
 
 
- die layouts selbst sind durcgängig durchdacht .
+ die layouts selbst sind durchgängig durchdacht .
 
 --------------------------------------------------------------------
  Dev Notiz : Wenns zu Warp anfang und end Problemen kommen sollte
@@ -134,7 +134,7 @@ fn main() {
 MCS-Transaktion mit Warp für C (muster)
 
 ¢!                                        # Transaktion starten
-ø,C,                                      # Warp + notiz für C-Code
+ø- ,C,                                    # Warp + notiz für C-Code
 #include <stdio.h>
 #include <iwlib.h>
 
@@ -150,7 +150,7 @@ int main() {
     }
     return 0;
 }
-ø = §gcc                    # Warp an Compiler (gcc) senden
+-ø = §gcc                    # Warp an Compiler (gcc) senden
     ;;                      # Paralelle Transport
 »['sudo iw dev wlan0 set freq 2412 HT20']«  # Protein: WLAN-Band auf 2.4G setzen
 = §Displey                  # Ergebnis(z. B. Erfolg/Fehler)an Display
@@ -175,14 +175,18 @@ WLAN-Implementierungsmöglichkeit GROBES Muster:
 
 ¢!
 »[{’Interface’|'wlan0'}|{’Action’|'set_band'}|{’Value’|¨2.4G¨}]«
-øC
+ø- ,C,
 Code..
-ø = §gcc
+-ø = §gcc
 !¢
 
 Warp-Standardisierung: Definiert ein Standard-Format für C-Warps,
 Metadaten,die MCS mitteilen, welche :
 Zielreferenzen § oder Protonen {} angesprochen werden.
 --------------------------------------------------------------------
+
+Info : Warps Wurden hier definiert und können In anderen erklärungen
+Zur zeit vom eigentlichen Warp abweichen
+
 ######################## Ende des Warp #############################
 ####################################################################

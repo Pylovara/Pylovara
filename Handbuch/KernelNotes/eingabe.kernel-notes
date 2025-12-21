@@ -1,144 +1,180 @@
 @kernel-nr: 07
 ####################################################################
-####       Eingaben Für [Protein] & {Proton} - Packete
+Erklärung :
 
+    Eingaben werden Genutzt um Verschiedende Eingaben auf System
+    Ebene zu Vollziehen . Sie Trennen Sauber Aufgabebereiche und
+    Zuständigkeit und werden Regulär über Tastaturen eingegeben
+    , egal ob Touch , Physisch , Sprachlich , Gedanklich oder
+    Per KI . Eingabe ist die Kommunikationspipeline die seid
+    der Enstehung des Lebens selbst in Jeder Form , seid dem
+    Urknall und davor Existiert . Wir Nutzen Kommunikationspipeline/s
+    in Natürlicher Sprache miteinander und haben Eingabe Erfunden
+    die diese Wiederspiegeln .
 
-Wichtig:
+    System Technisch Sprechen wir von :
 
-Allgemein zu allen Eingaben sind Anfang und Ende
-durch doppelseitigkeit gekennzeichnet !
-
-Eingaben sind Eingabefelder die Spezialisiert für das Richtige
-Register für die Eingaben sorgen und somit Modular handelbar bleiben.
-
-MCS wird mit eigenen Standart Eingaben ausgeliefert deswegen können
-einheimische cmd verwendet werden aller art , sollten
-für Configs etc Proton /en dazu verwendet werden sie quasi
-umzukompilieren , was Im Pylovara Desktop Anwendung findet .
-
---------------------------------------------------------------------
-
-    " "  <- Print , Druckt
-
-    Print Druckt was da steht und dient für direktes drucken
-    zum beispiel bei send-notify oder gui layouts ...
-    alles was nicht versteckt verarbeitet werden soll und
-    direkt visuell irgendwo angezeigt werden muss
-
-    unterscheidet sich vom blanken nenner weil der blanke nenner
-    eher im terminal oder für hintegrund rechen operationen dient.
-
-    über print kann die ausgabe direkt irgendwo hin transportiert
-    werden
-
-    beispiel :
-
-    ['notify-send'|"OFFLINE Terminal nicht aktiv"]
-
-    hier wird das interne OS System cmd notify-send genutzt
-    der dann an das gui verknüpft ist , und dort wird gedruckt
-    über den print .
-
-    das unterscheidet den print vom blanken nenner
+    Mitteilung an die Elektronik
 
 --------------------------------------------------------------------
 
-    ' ' <- OS System Commands , System CMD des jeweiligen os systems
+ Definition : Ein und Ausgabe
 
+ Mitteilung
 
-    »['rofi sleep 1 && pkill rofi || rofi -show drun']«
+ Definition : Eingabe
 
-    System CMD befehle gehen von jeweiligen unterbau aus und
-    sind nur die container für System CMD befehle wie sudo usw
-    bei windows user werdens warscheins minix befehle sein , bei bsd
-    dann bsd cmd oder linux bash cmd . Der Container leitet
-    registrierte system befehle eins zu eins weiter , bei mir
-    als arch linux user mit primär kitty und bash unterbau , klare
-    archlinux cmd , bei debian dürften es abweichungen
-    geben daher auch dann debian cmd .
-
-    bei system cmd eingaben , werden sie zusammen geschrieben
-    und nie aufgeteilt , den das jeweilige os hat nun mal
-    seine eigenen cmd befehle die eben nur zusammen funktionieren
-
-    wenn aber folge befehle kommen dann können sie extra eingetragen
-    werden
-
-    Falsch :
-
-    »['sudo'|'pacman'|'-Syyu']«
-
-    Richtig :
-
-    »['sudo pacman -Syyu']«
-
-    das selbe gilt bei anderen aufgaben wir
-
-    Falsch
-
-    »['sudo'|'pacman'|'-R'|¨kwriter¨]«
-
-    Richtig
-
-    »['sudo pacman -R'|¨kwriter¨]«
-
-    folge-befehle
-
-    »['sudo pacman -R'|¨kwriter¨]«
-    ¶= »['sudo pacman -S'|¨kwriter¨]«
-
-    den folgebefehl können wir als paralellen transportieren
+ Eingabe Container
 
 --------------------------------------------------------------------
 
-    ’ ’  <- MCS COMMANDS , Wird als Anweisung verstanden , MCS CMD
+Definition Eingabe Print :
 
-    Hinweis :
+    Reiner Ausgabekanal
+    Keine Steuerung
+    Keine Interpretation
+    Keine Seiteneffekte
+    Reine Mitteilung Ein & Ausgabe
 
-    mcs cmd's sind von Haus aus im MCS register definiert, die die
-    Eingaben genau wiederspiegelt für MCS. wir im kernel
-    als MCS-HYPR-CMD bezeichnet .
 
-    Es sollen extra angelegte MCS CMD befehle werden die dann
-    hauptsächlich in protein wie proton eingesetzt werden ,
-    sobald eine finale regisrty vorliegt , ziehe kernel 99
+ Definition : Print
 
-    sind dann auch für MCS Kernel Syntax spezifische dinge gedacht
-    und haben nichts mit os system cmd eingabem zu tun
---------------------------------------------------------------------
+ ""
 
-    ¨ ¨  <- Blankernenner , ist was drinne oder soll was rein
+ Erklärung :
 
-    Der Container Blankernenner wird für interne aufgaben verwendet
-    wo ausgaben nur im terminal statt finden oder als nicht sichtbare
-    weitergaben wo der user eventuell nicht sieht aber statt finden.
+ "" Eingabe Print = Byte-Stream
 
-    mit dem blanken nenner kann ausgabe transportiert werden
-    oder hardcodierte inhaklt weiter geleitet
+ Sind Byte-Streams und entsprechen stdout ohne Unix-Implikationen
+ , sie tragen etwas (r)ein und sie tragen etwas (r)aus, egal ob
+ es ein wort ist oder undefinierbare wirrwahr .
 
-    das unterscheidet den blanken nenner vom print
-
-    Blankernenner = Runtime-Evaluation, nicht String-Literal
+ Sie Knüpfen direkt oder indirekt an UTF/ascII an und fungieren
+ als Postbote der etwas geschriebenes von a nach b bringt
 
 --------------------------------------------------------------------
 
-    , ,  <- Notiz , Was es ist , Tagging , So heißt es
+ Definition Eingabe System-Steuerung  :
 
-    Die Eingabe Notiz ist in man/chen Senarien mit viel Code eine
-    praktische angelegenheit und wird in MCS oft als Namengeber
-    eines Proton Angewendet, um transportierte daten besser zu taggen.
-    Der tag zeigt nur info daten die hardcodiert reingeschrieben
-    werden und später als eine eigene logik für eine übergeordnete
-    suche ausgebaut wird . Gute funktion wenn Downloads und Uploads
-    von statten gehen .
+    Steuerung
+    Syscalls
+    Systemaktion
+    SyscallKetten
+    LowLevel Koordination
+    Verlangt Systemaktion
+
+ Definition : System-Steuerung
+
+ ,,
+
+ Erklärung :
+
+ ,, Eingabe System-Steuerung = Syscalls
+
+ System-Steuerung sind die Lov Level Aufgaben
+ die Ein Kernel Integriert hat und ausgeweitet
+ sind mit zusatz befehlen und auch Bootloader
+ wie Uefi/Bios. Mit System-Steuerung bewegt man
+ Syscalls die Microsoft | Apple | Linux in ihren
+ jeweiligen Unterbauten abwandlungen von Minix
+ Systemen beigefügt haben oder abgekupfert oder
+ Stumpf übernommen .
+
+ Dinge wie : exec, read, write, fork, …)
+
+ Werden mit Der Eingabe System-Steuerung Koordiniert
+ und Dienen Nur für diesen Zweck .
 
 
-######################################################################
 
-Sie werden in Print , System CMD , MCS CMD , Blanker Nenner , Notiz ,
-den Protein Zelle als Eingabefelder sprich Eingabe mit gegeben ,
-was auch schluss endlich auch nur in Proteinpackete
-als Combination mit Proton(en) oder Warps Mündet durch die Felder .
+--------------------------------------------------------------------
+
+ Definition Eingabe MCS CMD  :
+
+    MaschinenCodeSpeechCommandos
+    Commando Line
+    Befehle Shell
+    Kernel System
+    Instruction Space
+    Hardware Managment
+    Kernel Managment
+    Kein C Transporter
+    MCS Registry Einträge
+    keine Bytesemantik
+
+ Definition : MCS CMD
+
+ ’’
+
+ Erklärung :
+
+ ’’ Eingabe MCS CMD = MCS Instruction
+
+ MCS CMD Sind Haus Eigene Steuerungs Befehle die Von LowLevel Bis
+ Shell Aufgaben Erledigen können . Genauso wie die Eingabe
+ System-Steuerung , ist MCS CMD Auf die Steuerung von Haus eigenen
+ Commands ausgelegt , nur besser (siehe kernel 99)
+
+--------------------------------------------------------------------
+
+ Definition Eingabe Shell CMD  :
+
+    OS Shell CMD
+    Interpreter-abhängig
+    kompatibler Altlast-Container
+    Unix Nutzbar ohne MCS zu Verseuchen
+    Symbiotische Seperation WIN/Darvin/Linux/BSD
+
+ Definition : Shell CMD
+
+ ''
+
+ Erklärung :
+
+ '' Eingabe Shell CMD = OS-bedingt
+
+ Nutzbar wenn unterbaute/s bzw Installierte/s Unix/Poesix/Linux/BSD
+ System Vorhanden.Nutzt das was das System kann und Nicht Mehr oder
+ Weniger.
+
+ Hierzu bitte bei Unix und deren Derivaten schauen, da Pylovara
+ System, keine Toten Vögel mit liefert .
+
+--------------------------------------------------------------------
+
+ Definition Eingabe Blankernenner :
+
+    AD-HoC Bugg Beseitigung
+    Transportiert -> Eingaben <-
+    Eingaben Auswahl
+    Nimmt Inhalt auf oder Gibt in an Eingaben weiter
+
+ Definition : Blankernenner
+
+ ¨¨
+ Erklärung :
+
+ ¨¨ Eingabe Blankernenner = Transport EingabenAuswahl
+
+ Der Blanker nenner transportiert Eingabennenner für eigentliche
+ Befehle.Wenn Linux sagt : sudo pacman -S <- dann ist das ein Shell
+ CMD ohne Auswahl die dann über Blankernenner Eingetragen wird
+
+ »['sudo pacman -S'|¨kwriter¨]«
+
+ Das Selbe gilt für alles was mit auswahl zu tun hat , Die Eingabe
+ Blankernenner dient dem AD-HoC Bugg Problems
+
+--------------------------------------------------------------------
+                        Flache Erklärung :
+--------------------------------------------------------------------
+
+Unix: „Du darfst das – also mach, was du willst.“
+
+MCS:„Du darfst das – aber nur in dieser Rolle, mit dieser Bedeutung.“
+
+Das ist ein fundamentaler Unterschied.
 
 ###################### Ende der Eingaben  ##########################
 ####################################################################
+baustelle

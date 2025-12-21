@@ -13,20 +13,21 @@
 ####################################################################
       | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |
           -------------------------------------------------
-          01 - Datentypen -new      10 + Feeds -fix1
-          02 + Transaktion -clean   11 - Zielreferenz
-          03 + Protein -fix2        12 - Dirigent
-          04 - Proton               13 - Warp -fix
-          05 + Trennbefehl -clean   14 - þ Identifikation
-          06 + Aktion -fix          15 + Argumente -fix
-          07 + Eingaben -fix3       16 X Variable-Verknüpfung
+          01 - Datentypen -new      11 - Zielreferenz
+          02 + Transaktion -clean   12 - Dirigent
+          03 + Protein -fix2        13 - Warp -fix
+          04 - Proton               14 - þ Identifikation
+          05 + Trennbefehl -clean   15 + Argumente -fix
+          06 + Aktion -fix          16 - SchaltVerknüpfungen
+          07 + Eingaben -fix3       17 - Adressierung
           08 + Wahrheiten -fix3     20 + Reihenfolge
-          09 + Operatoren -fix3     77 + Ausführungslogik
+          09 - Operatoren -fix3     77 + Ausführungslogik
+          10 + Feed -Finish
           -------------------------------------------------
-          99 - Register CMDs -new   00 - Fallback Übersicht
+          99 + Register CMDs -new   00 - Fallback Übersicht
 ####################################################################
         # Maschinen Code Speech – Kernel Syntax Handbuch  #
-        # Version: 3.0 Freeze | Autor: Thomas Zimmermann  #
+        # Version: 3.2 | Autor: Thomas Zimmermann         #
         # Standort: /Pylovara/Handbuch/KernelNotes/       #
         # Status: Vollständig mit Rollende Verbesserungen #
 ####################################################################

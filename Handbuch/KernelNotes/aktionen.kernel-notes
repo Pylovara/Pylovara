@@ -1,6 +1,6 @@
 @kernel-nr: 06
 ####################################################################
-## Aktionen :
+## Aktionen : Aktion = Ausführung
 
 Aktionen Werden als anhang und ende bei Protein packeten weitergegeben,
 sie definieren innerhalb einer Transaktion ob ein ausführbares packet
@@ -45,49 +45,29 @@ vorliegt das vor und danach den start und endpunkt des packets angibt
   «  Ende einer Aktion/eines Zweiges/Protein
   »  Start einer Aktion/eines Zweiges/Protein
 
-wenn unausführbare Protein packete gesendet oder empfangen werden
-sollen, für einen anderen prozess oder einer weitergabe oder späteren
-ausfürung, dann sorgen Aktionen für klare verhältnisse innerhalb der
-Transaktion /en.
+ wenn unausführbare Protein packete gesendet oder empfangen werden
+ sollen, für einen anderen prozess oder einer weitergabe oder späteren
+ ausfürung, dann sorgen Aktionen für klare verhältnisse innerhalb der
+ Transaktion /en.
 
 --------------------------------------------------------------------
-# Aktionen-anordnung  LowLevel Standart:
+ Aktionen-anordnung  LowLevel Standart:
 
-¢!
- »['cmd'|¨xxx¨]«
-!¢
+ ¢!
+  »['cmd'|¨xxx¨]«
+ !¢
 
-¢! »['cmd'|¨xxx¨]« !¢
+ ¢! »['cmd'|¨xxx¨]« !¢
 
 --------------------------------------------------------------------
-# Aktion Info:
+ Aktion Info:
 
-Eine Aktion wird niemals nur gestartet und nicht beendet,
-außer die Aktion wird für HighLevel Frameworks benötigt
-dann setzt das ende der aktion am letzten protein an , das den
-schluss dargestellt und diese Schlüsse aber immer ein eigenes
-aktion /s Ende und der anfang vom ersten protein ,
-gewährleistet flexibilität.
-
-# Aktion/s-anordnung HighLevel mit low-leveloperationen  Linear :
-# ( musterbeispiele)
-¢!
- »['$terminal']
-  ¶ ['$terminal']
-   ¶¶ ['echo'|¨helloworld¨]«
-!¢
-
-
-¢!
- »[’exec’|’once’|¨$terminal¨]
-   ¶ ['echo'|¨helloworld¨]«
-   ° ¶¶ »['exit']« # negation exit mit eigene aktionsausführung
-!¢
-
-info : ¶¶  Else | °  WennNicht/Muss | ¶   IF
-
-Eine HighLevel Aktion gleicht im prinzip C ist
-aber auf MCS zugeschnitten und weit aus effecktiver und lesbarer.
+ Eine Aktion wird niemals nur gestartet und nicht beendet,
+ außer die Aktion wird für HighLevel Frameworks benötigt
+ dann setzt das ende der aktion am letzten protein an , das den
+ schluss dargestellt und diese Schlüsse aber immer ein eigenes
+ aktion /s Ende und der anfang vom ersten protein ,
+ gewährleistet flexibilität.
 
 ##################### Ende der Aktion /en  #########################
 ####################################################################

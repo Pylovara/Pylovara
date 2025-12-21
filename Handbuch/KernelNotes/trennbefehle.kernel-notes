@@ -1,29 +1,42 @@
 @kernel-nr: 05
 ####################################################################
-## Trennbefehl /e :
 
-Sie dienen als Zwischenraum und haben lediglich einen übersichts
-nutzen . Ohne Trennbefehle könnte MCS auch Laufen aber es würde
-unaufgeräumt aussehen . Ich selbst mag keine unaufgeräumten Codes
-und bekomme Pickel und ausschlag und deswegen wurden Trennbefehle
-eingebaut um alles lesbar und geordnet zu halten .
-Trennbefehle werden nur innerhalb von Protein /e u.o Protonen
-verwendet und sind grundsätzlich einzeln zu benutzen , doppelte
-Trennzeichen werden nicht als Einzelstück gesehen .
+    !! Nutzt niemals Trennbefehle wie bei Shell CMD Eingaben !!
+
+Erklärung:
+
+ Trennbefehl = leerzeichen
+
+ Sie dienen als Zwischenraum und haben lediglich einen übersichts
+ nutzen . Ohne Trennbefehle könnte MCS auch Laufen aber es würde
+ unaufgeräumt aussehen . Ich selbst mag keine unaufgeräumten Codes
+ und bekomme Pickel und ausschlag und deswegen wurden Trennbefehle
+ eingebaut um alles lesbar und geordnet zu halten .
+ Trennbefehle werden nur innerhalb von Protein /e u.o Protonen
+ verwendet und sind grundsätzlich einzeln zu benutzen , doppelte
+ Trennzeichen werden nicht als Einzelstück gesehen .
 
 --------------------------------------------------------------------
-# Definition :
+
+ Textliche Definition :
+
+ Trennbefehl Symbol
+
+--------------------------------------------------------------------
+
+ Definition Symbol :
 
     |
 
 --------------------------------------------------------------------
-# Trennbefehl definition in Protein/Proton packeten :
+ Definition Trennbefehl in Protein/Proton :
 
 
-    [*|*]
+    [*|*] Protein
+    {*|*} Proton
 
 --------------------------------------------------------------------
-# Trennbefehl-anordnungen Protein /en & Proton /en :
+ Definition Trennbefehl Anordnungen Protein /en & Proton /en :
 
     [*|*|{*|*}]
 
@@ -45,12 +58,11 @@ Wird hier alles erklärt , selbst sowas wie der Trennbefehl.
 Info :
 
 Trennbefehle | sind in vielen systemen anders gedeutet und daher
-muss drigend verstanden werden das ein trennbfehl oder zwei folgende
-innerhalb einer System CMD eingabe (siehe kernel lex 07) meist
-kurzschluss funktionen haben !!
+muss drigend verstanden werden das ein Trennbfehl oder zwei
+folgende innerhalb einer System CMD eingabe (siehe kernel lex 07)
+meist kurzschluss funktionen haben !!
 
-nutzt niemals ohne ahung in einem System CMD Eingabe container
-| oder || ohne zu wissen was es tut ....
+!! Nutzt niemals Trennbefehle wie bei Shell CMD Eingaben !!
 
-###################### Ende der Eingaben  ##########################
+#################### Ende der Trennbefehl  #########################
 ####################################################################

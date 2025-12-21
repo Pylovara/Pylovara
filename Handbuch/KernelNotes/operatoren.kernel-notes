@@ -2,6 +2,8 @@
 ####################################################################
 ## Operatoren :
 
+Operator = Bewertung | Ausführung wenn Aktion drann
+
 Werden immer als Schlüsselelement angehangen , wenn sie
 erfoderlich sind , gerade für Wahrheiten sehr Relevant.
 
@@ -16,10 +18,16 @@ Und das ohne Stack, ohne AST, ohne Interpreter —
 nur mit Feed, Protein, Wahrheit, Operator.
 Linear. Sicher. Nachvollziehbar.
 
+ Dennoch gilt :
+ ,, Operatoren Steuern nur wenn der inhalt des Protein
+    auch ausführbar ist (siehe kernel 06 und kernel 77)’’
 
-°  WennNichtWahr / Muss         # WHEN_NOT / MUST — Bedingung nicht wahr führe aus sofort
-            Lesen ≠ Ausführen — klare Trennung von Bedingung und Aktion
-
+--------------------------------------------------------------------
+°  WennNichtWahr / Muss
+Wenn Nicht — also: führe aus, wenn Bedingung falsch
+- MCS_FALSE → THEN
+      Lesen ≠ Ausführen — klare Trennung von Bedingung und Aktion
+--------------------------------------------------------------------
 
 >  WennKleiner /Kann/Soll       # WHEN_GT — „Wenn größer“
 <  WennGrößer /Kann/Soll        # WHEN_LT —Wenn kleiner(Vergleichslogik, z.B. für Schwellwerte)
@@ -35,11 +43,11 @@ Operatoren sind nach dem Wenn/Kann Muster angelegt
 und Operatoren sind keine Funktionen, sondern semantische Marker in
 der Transaktionskette(noch)
 
+
 --------------------------------------------------------------------
 
   ⊕  Sync-timer (AI Spezialisierungsoperator für Laufende Prozesse)
 
---------------------------------------------------------------------
 
  Definition :
 

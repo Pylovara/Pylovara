@@ -1,0 +1,56 @@
+@kernel-nr: 16
+####################################################################
+## Schaltverknüpfung — Die Logik hinter der Linearität
+
+„Ein Operator entscheidet, eine Aktion führt aus, ein Protein trägt.“
+
+### Grundregel
+- Operatoren (`°`, `<`, `>`, `ſ`, `^`) sind **keine Auslöser**.
+- Sie **lesen**, **vergleichen**, **bewerten** — aber **führen nicht aus**.
+- Erst **Wahrheiten (`¶`, `¶¶`, `°`, `;;`, `¶=`)** schalten **Zweige frei**.
+- Und nur wenn ein Zweig ein **ausführbares Protein** (`»...«`) enthält, wird etwas getan.
+
+### Schalt-Muster (nur gültige Kombinationen)
+
+|Operator| Operand               | Zweig-Bedingung            |Ausführung?
+|--------|-----------------------|----------------------------|-------------
+| `°`    |[...](nicht ausführbar)| MCS_FALSE → ¶ wird frei    |nur wenn ¶ »...«
+| `<`    |[(1)¨¨|(2)¨¨]          | MCS_TRUE  → ¶ frei         |nur bei »...«
+| `<`    |[(1)¨¨|(2)¨¨]          | MCS_FALSE → ¶¶ frei        |nur bei »...«
+| `ſ`    | (1)                   | **immer** → Feed 1 löschen |sofort
+| `^`    | —                     | bei res < 0 → error_handler|falls gesetzt
+
+Wichtiger Hinweis fürs nutzen von feed cache mit nr löschungen :
+
+ſ [’feed cache’|¨1¨] # ! ſ über MCS CMD befehl ’feed cache’ nr 1 löschen
+
+--------------------------------------------------------------------
+
+### Verbotene Muster (sicher blockiert)
+- `° ['$terminal']` → **kein `¶`/`¶¶`** → keine Ausführung
+- `< [(1)¨¨|(2)¨¨]` → **kein `¶`/`¶¶`** → nur Vergleich, kein Effekt
+- `¶ ['echo'|...]` → **kein `»...«`** → kein Runner-Eintrag, keine Ausführung
+
+### Merksatz (für KI & Entwickler):
+> *„Ohne `»«` keine Tat —
+>  ohne `¶`/`¶¶` kein Tor —
+>  ohne Operator kein Richter.“*
+
+--------------------------------------------------------------------
+
+Schaltverküpfungen Visuell :
+
+Wahrheiten schalten Zweige frei
+
+unter einem protein [
+                    ° werden schaltungslogiken verknüpft
+
+
+an operatoren werden °
+                     ¶ werden wahrheiten verknüpft
+
+--------------------------------------------------------------------
+
+
+################# Ende der schaltVerknüpfung  ######################
+####################################################################

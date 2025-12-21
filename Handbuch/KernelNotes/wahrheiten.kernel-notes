@@ -1,50 +1,56 @@
 @kernel-nr: 08
 ####################################################################
 
-Wahreiten :
+ Erklärung :
 
-Wahrheiten sind Entscheidungslogiken , die aus dem Hause C
-Assimiliert wurden und linear übernommen wurden .
-
-Ohne Wahrheiten keine Schaltung , Ohne schaltung Keine Automation.
-
-Ermöglicht:
-- gui Fenster aufrufe.
-- granulare paralell-verarbeitungen
-- hintergrund prozesse
-
-das ist Einmalig auf der Welt , weil :
-
-weil es die erste lineare, symbolische, RAM-basierte Kontrolllogik
-ist und zwar nicht als Interpreter, sondern als nativ kompilierter
-Kernel-Teil.
-
-Dadurch werden dinge möglich wie :
-
-KI-Steuerung: <--(Wichtig für Die AI Kernel Integration)
-Ein LLM kann ° A ¶ B ¶¶ C direkt trainieren — ohne AST-Parsing,
-ohne Abstraktionsschicht.
-
-Hardware-Generierung: <---(Wichtig für BMC 3.0 FPGA GPU)
-Ein FPGA-Tool kann mcs_protein_t direkt in State-Machines
-übersetzen — ohne Stack, ohne Heap.
-
-Sicherheits-Garantie: Ein Auditor kann jede Entscheidung
-nachvollziehen — ° ['$terminal'] ist kein Code, sondern eine Aussage.
-
-Beispiel Skalierung durch Komposition:
-¢! ° ['$sensor'] ¶ ['$alert'] !¢
-¢! ° ['$alert'] ¶ ['$shutdown'] !¢
-¢! ° ['$shutdown'] ¶ ['$log'] !¢
+ Wahrheit = Auswahl | Schaltet
 
 --------------------------------------------------------------------
 
-Nutzunglogik :
+ Testliche Definition :
 
-linearen IF/ELSE/Negations-Workflows
+ Wahrheiten sind Entscheidungslogiken , die aus dem Hause C
+ Assimiliert wurden und linear übernommen wurden .
 
-Grund :
-mehr Kontrolle, mehr Sicherheit, mehr Analysierbarkeit
+ Ohne Wahrheiten keine Schaltung , Ohne schaltung Keine Automation.
+
+ Ermöglicht:
+ - gui Fenster aufrufe.
+ - granulare paralell-verarbeitungen
+ - hintergrund prozesse
+
+ das ist Einmalig auf der Welt , weil :
+
+ weil es die erste lineare, symbolische, RAM-basierte Kontrolllogik
+ ist und zwar nicht als Interpreter, sondern als nativ kompilierter
+ Kernel-Teil.
+
+ Dadurch werden dinge möglich wie :
+
+ KI-Steuerung: <--(Wichtig für Die AI Kernel Integration)
+ Ein LLM kann ° A ¶ B ¶¶ C direkt trainieren — ohne AST-Parsing,
+ ohne Abstraktionsschicht.
+
+ Hardware-Generierung: <---(Wichtig für BMC 3.0 FPGA GPU)
+ Ein FPGA-Tool kann mcs_protein_t direkt in State-Machines
+ übersetzen — ohne Stack, ohne Heap.
+
+ Sicherheits-Garantie: Ein Auditor kann jede Entscheidung
+ nachvollziehen — ° ['$terminal'] ist kein Code, sondern eine Aussage.
+
+ Beispiel Skalierung durch Komposition:
+ ¢! ° ['$sensor'] ¶ ['$alert'] !¢
+ ¢! ° ['$alert'] ¶ ['$shutdown'] !¢
+ ¢! ° ['$shutdown'] ¶ ['$log'] !¢
+
+--------------------------------------------------------------------
+
+ Nutzunglogik :
+
+ linearen IF/ELSE/Negations-Workflows
+
+ Grund :
+ mehr Kontrolle, mehr Sicherheit, mehr Analysierbarkeit
     - Linear-first Design
     - Feed-basierte Zustandsübergabe
     - Symbolische Semantik statt Code-Ausführung
@@ -53,53 +59,47 @@ mehr Kontrolle, mehr Sicherheit, mehr Analysierbarkeit
 
 --------------------------------------------------------------------
 
-MCS ist nicht darauf angewiesen, Rekursion in einem Protein zu haben,
-sondern nutzt Komposition auf Transaktionsebene:
 
-¢! ° ['$A'] ¶ ['$B'] ¶¶ ['$C'] !¢
-¢! ° ['$B'] ¶ ['$D'] ¶¶ ['$E'] !¢
-¢! ° ['$D'] ¶ ['$F'] ¶¶ ['$G'] !¢
+ MCS ist nicht darauf angewiesen, Rekursion in einem Protein zu haben,
+ sondern nutzt Komposition auf Transaktionsebene :
 
-- Jede Transaktion ist linear, sicher, beendet
-- Die Kette ist nicht-linear, zustandsbehaftet, komplex
+ ¢! ° ['$A'] ¶ ['$B'] ¶¶ ['$C'] !¢
+ ¢! ° ['$B'] ¶ ['$D'] ¶¶ ['$E'] !¢
+ ¢! ° ['$D'] ¶ ['$F'] ¶¶ ['$G'] !¢
 
-Aber:
-Zustand wird explizit über Feeds (siehe kernel lex 10)
-übertragen und nicht implizit im Stack!
+ - Jede Transaktion ist linear, sicher, beendet
+ - Die Kette ist nicht-linear, zustandsbehaftet, komplex
+
+ Aber:
+ Zustand wird explizit über Feeds (siehe kernel lex 10)
+ übertragen und nicht implizit im Stack!
+
 
 --------------------------------------------------------------------
-## Werden gerade möglich :
 
-¶   IF/Wenn             — lineare Bedingung (WAHR_IF)
-¶¶  Else/kann           — alternativer Zweig (WAHR_ELSE)
-¶=  Parallel Run        — nebenläufiger Prozess, kein Warten (WAHR_PARALLEL_RUN)
-;;  Parallel Transport   — Feed-basierter Datenfluss, nicht-blockierend (WAHR_PARALLEL_TRANSPORT)
+ Werden gerade möglich :
+
+ ¶   Wenn
+ Bedingung erfüllt → führe aus
+ — lineare Bedingung (WAHR_IF) MCS_TRUE → THEN
+
+
+ ¶¶  Else
+ Kann ausgeführt werden, wenn Bedingung nicht erfüllt
+ — alternativer Zweig (WAHR_ELSE) MCS_FALSE → ELSE
+
+
+ ¶=  Parallel Run        — nebenläufiger Prozess, kein Warten (WAHR_PARALLEL_RUN)
+ ;;  Parallel Transport   — Feed-basierter Datenfluss, nicht-blockierend (WAHR_PARALLEL_TRANSPORT)
 
 ----------------------------------------------------------------
-## Nicht geplant aber für viel später vorgemerkt
 
-~~ für Merge von mehreren Packets kann per () granuliert werden das
-genau
->-> für Fork oder Splitting Links Nach Rechts
-<-< für Fork oder Splitting Rechts Vor Links
+ Nicht geplant aber für später vorgemerkt
 
---------------------------------------------------------------------
-
-## Zuckunft | Adressierung (siehe : kernel Lex 11 | kernel lex 12)
-
-    =  Adressierung
-
-    Die Adressierung dient als direkten knoten punkt
-    für Zielreferenz-Dirigent-Identifikation um durch
-    das Adressierungs Symbol = alles anzuhängen für den
-    Transport und Verschlüsselung
-
-
-    ZusatzInfo :
-
-    wird aber  noch nicht im MCS Desktop verwendet in configs weil
-    unötig .
+ ~~ für Merge von mehreren Packets kann per () granuliert werden das
+    genau
+ >-> für Fork oder Splitting Links Nach Rechts
+ <-< für Fork oder Splitting Rechts Vor Links
 
 ##################### Ende der Warheiten   #########################
 ####################################################################
-

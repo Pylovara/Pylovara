@@ -80,5 +80,18 @@ int main() {
     mcs_lexer_free(lex);
     free(buf);
     printf("=== Lexing abgeschlossen ===\n");
+
+    // Füge am Ende von main() hinzu:
+    printf("\n--- Peek-Test ---\n");
+    mcs_lexer_t* lex2 = mcs_lexer_new("¶ ¶¶");
+    mcs_token_t t1 = mcs_lexer_next(lex2);     // ¶
+    mcs_token_t peek = mcs_lexer_peek(lex2);   // Vorausschau: ¶¶
+    mcs_token_t t2 = mcs_lexer_next(lex2);     // ¶¶
+    printf("next: %s, peek: %s, next: %s\n",
+           token_name(t1.token_type),
+           token_name(peek.token_type),
+           token_name(t2.token_type));
+    mcs_lexer_free(lex2);
+
     return 0;
 }

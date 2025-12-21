@@ -4,36 +4,28 @@
 cd /Pylovara/System/Kernel/Core/build && make clean && make && ./test_if
 
 #test.mcs :
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test.mcs
 
 #test_echo.mcs
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_echo.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test_echo.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_echo.mcs
 
 #test_wahrheiten.mcs
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_wahrheiten.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test_wahrheiten.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_wahrheiten.mcs
 
 
 #test_operatoren.mcs
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_operatoren.mcs
 
 #test_parallel_wait.mcs
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_parallel_wait.mcs
 
 #test_semantic_dispatcher.mcs
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_semantic_dispatcher.mcs
 
 #test_register.mcs
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_register.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test_register.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_register.mcs
 
 #test_ausführungslogik.mcs
-cd /Pylovara/System/Kernel/Core/build && make clean && make && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_ausführungslogik.mcs
 cd /Pylovara/System/Kernel/Core/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/System/Kernel/Core/mcscodes/test_ausführungslogik.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/System/Kernel/Core/mcscodes/test_ausführungslogik.mcs
 
 
@@ -47,7 +39,7 @@ cat /Pylovara/System/Kernel/Core/mcscodes/test.mcs /Pylovara/System/Kernel/Core/
 cat /Pylovara/System/Kernel/Core/Lab/test_action.c /Pylovara/System/Kernel/Core/Lab/test_if.c /Pylovara/System/Kernel/Core/Lab/test_lexer.c /Pylovara/System/Kernel/Core/Lab/test_trans.c /Pylovara/System/Kernel/Core/Lab/mcs-code.ideen.txt /Pylovara/System/Kernel/Core/Lab/test.mcs /Pylovara/System/Kernel/Core/Lab/test_mcs_strucktur.mcs /Pylovara/System/Kernel/Core/Lab/test_trans.mcs
 
 # Logic/
-cat /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/Logic/mcs_token.h
+cat /Pylovara/System/Kernel/Core/Logic/mcs_lexer.c /Pylovara/System/Kernel/Core/Logic/mcs_token.h /Pylovara/System/Kernel/Core/Logic/mcs_lexer.h
 
 # Lib/
 cat /Pylovara/System/Kernel/Core/Lib/mcs_action.c /Pylovara/System/Kernel/Core/Lib/mcs_argument.c /Pylovara/System/Kernel/Core/Lib/mcs_cmd_register.c /Pylovara/System/Kernel/Core/Lib/mcs_eingaben.c /Pylovara/System/Kernel/Core/Lib/mcs_feed.c /Pylovara/System/Kernel/Core/Lib/mcs_operatoren.c /Pylovara/System/Kernel/Core/Lib/mcs_protein.c /Pylovara/System/Kernel/Core/Lib/mcs_proton.c /Pylovara/System/Kernel/Core/Lib/mcs_runner.c /Pylovara/System/Kernel/Core/Lib/mcs_semantics.c /Pylovara/System/Kernel/Core/Lib/mcs_transaktion.c /Pylovara/System/Kernel/Core/Lib/mcs_wahrheiten.c /Pylovara/System/Kernel/Core/Lib/mcs_warp.c
@@ -66,6 +58,12 @@ cat /Pylovara/System/Kernel/Core/errologs/mcs_action.o /Pylovara/System/Kernel/C
 
 # IntLab/
 # (keine Dateien im tree angezeigt - leerer Ordner)
+
+# CleanBuild deluxe
+cd /Pylovara/System/Kernel/Core/build
+rm -rf *
+cmake ..
+make -j$(nproc)
 ------------------------------------------------------------------------------------------------------------------------------
 
 

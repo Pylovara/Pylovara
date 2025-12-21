@@ -1,171 +1,109 @@
-@kernel-nr: 10  # Erklärung im Aufbau
+@kernel-nr: 10
 ####################################################################
-Erklärung:
+ Erklärung:
 
-Feed = Datenkanal, nicht Kontrollkanal
+ Feed = Datenkanal, nicht Kontrollkanal
 
-Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
-er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
-und dadurch seine andock station definiert ..
+--------------------------------------------------------------------
+ Textliche Definition :
 
-Feeds werden als Container betrachtet und sind von den
-Unix-Pipes inspiriert , aber mit MCS-spezifischer Syntax.
+ Ein sogenannter Feed nimmt eine information und gibt sie weiter
+ an seine dutzenschaften . Die Zahl oder Buchstaben oder Kombination
+ von beiden ergeben die kennziffer des feeds , das im unterbau
+ gleichzeitig mit einem eindeutigen cache zugewissen wird .
 
-Feed/s Feedbacken nur eine einzige sache :
-
-  Gleiche Zahl oder Buchstabe im Code , sonnst nix ...
-
-Sie geben auch kein Feedback aus sondern sie warten
-auf den Input Feedback von ihren geschwister !
-
-Feed/s haben InputFeedback und nehmen den gleichen inhalt an ,
-wenn einer ihrer verbundenen gleichheißenden Feed/s was anderes
-rein schreiben , der erste der geändert wird überschreibt seinen
-inhalt immer mit den anderen ...
-
-Die Zahl oder Buchstabe im Feed selbst bleibt immer gleich
-nur der anhang copiert sich selbst und pastet zu den anderen
-
-habt ihr 3 mal (2) <--  feed/s verbaut , habt ihr 3 von sich
-copierende gefäße die den ersten input als initiator sehen und
-die anderen zwei den inhalt übernehmen
-
-Das ist Feed !!!
-
-Feed wartet auf Feedback seines zwillings oder dutzenschaften,
-um den inhalt der angekommen ist , in sich in sich überall gleich
-zu verteilen ...
+ der gespeichert inhalt wird dann an seine geschwister weiter
+ gegeben und aktualisiert sich nur vom Führenden Feed aus
 
 --------------------------------------------------------------------
 
-Unterbau Erklärung :
+ Definition Führender Feed in Worten :
 
-
-Feed werden immer an den eingabe container gebunden :
-
-(1)"" <-- eingabe print
-(2)'' <-- eingabe OS System CMD
-(3)’’ <-- eingabe MCS System CMD
-(4),, <-- Notiz
-(5)¨¨ <-- Blanker nenner
-
-und nehmen den output un dtransportieren ihn
-
-wenn in feed schonwas steht , wird er an seine geschwister weiter
-geleitet .
-
-um nummer oder buchstaben chaos von duzenden Einser in allen
-MCS codes auszuschließen wird jeder feed mit einem cache
-ausgestattet und hat einen eigenen cache nummer speicher für
-genau diese eins
-
-(1) <-- die hier hat z.b 12319123
-(1) <-- die hier hat 098072
-
-somit wird der cache sicher transportiert und wird auch immer
-als genau den feed erkannt
-
-somit können 10 x (1) feed transporte mit der selben kenn nummer
-weiter gegeben werden und diese (1) wissen das sie zusammengehören
-
-Dadurch enstehen Mächte WorkFlows
+ Klammer Auf Zahl/Buchstabe Klammer zu Eingabe
 
 --------------------------------------------------------------------
-  Definition  Anfang :
 
-  (
+ Definition Feed Symbol :
 
---------------------------------------------------------------------
-  Definition  Ende :
-
-  )
+  ( Klammer Auf
+  ) Klammer zu
 
 --------------------------------------------------------------------
-  Definition  Gesamt :
 
-  ()
+ Definition Feed Abkürzungen :
 
---------------------------------------------------------------------
-Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt, wodurch
-er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
-und dadurch seine andock station definiert ..
---------------------------------------------------------------------
-  Definition  mit einer musterbeispiel zahl Gesamt :
-
-  (1)
-  (8)
-  (H)
-  (3)
+ Führender Feed = FF
+ Tragender Feed = TF
 
 --------------------------------------------------------------------
-Um den Feed Nutzbar zu machen häften wir jetzt den Feed mit der
-Beispiel Nummer 1 an ein element ein das wir transportieren möchten
---------------------------------------------------------------------
-  Definition  mit einer musterbeispiel zahl Gesamt :
 
-  (1)""
+ Definition Führender Feed :
 
-  Dieser Eingabe Print wurde mit Feed getaggt und wird durch alle
-  Feeds mit dem selben nenwert dupliziert bzw überall gleich
-  angezeigt .
+ (1)"" <-- Führender Feed an Eingabe Print
+ (2)'' <-- Führender Feed an Eingabe System CMD
+ (3)’’ <-- Führender Feed an Eingabe MCS CMD
+ (4),, <-- Führender Feed an Eingabe Notiz
+ (5)¨¨ <-- Führender Feed an Eingabe Blankernenner
 
 --------------------------------------------------------------------
-Hier wurde der Feed mit der kennung 1 an eine Eingabe gebunden die
-sich Print nennt und dieser Print befehl ist leer ,
-er hat noch keinen inhalt aber wir brauchen den inhalt , also
-versuchen wir den inhalt zu bekommen .
 
-für das verständnisse suchen wir kurz regulär über das terminal :
+ Ein Führender Feed Speicher die Informationen Aus dem Eingaben
+ bereich und hält sie in seinem eigen angelegten cache als
+ information fest , der cache wieder liegt nur im Führenden
+ Feed .
+
+--------------------------------------------------------------------
+
+ Definition Tragender Feed in Worten :
+
+ Eingabe Anfang Klammer Auf Zahl/Buchstabe Klammer Zu Eingabe Ende
+
+--------------------------------------------------------------------
+
+ Definition Führender Feed :
+
+ "(1)" <-- Tragender Feed in Eingabe Print
+ '(2)' <-- Tragender Feed in Eingabe System CMD
+ ’(3)’ <-- Tragender Feed in Eingabe MCS CMD
+ ,(4), <-- Tragender Feed in Eingabe Notiz
+ ¨(5)¨ <-- Tragender Feed in Eingabe Blankernenner
+
+--------------------------------------------------------------------
+
+ Ein Tragender Feed ist ein Geschwisterteil vom Führenden Feed
+ und bezieht seine Information immer aus dessen cache .
+ Das Tragende Feed ist an die Cache nummer des Führenden Feed
+ geknüpft und hat selbst keine information , er syncronisiert
+ seinen Leeren inhalt mit dem inhalt vom Führenden Feed
+
+--------------------------------------------------------------------
+
+ Verständniss Definition :
+
+ für das verständnisse suchen wir kurz regulär über das terminal :
 
  ┌[bandino@dev][16:26:36|Do Nov 27]
  │ ᴾʸˡᵒᵛᵃʳᵃ
  └[~]> $ pgrep firefox
-1142
+  1142 <-- das hier ist = $(pgrep firefox)
 
-Das terminal gibt uns einen echo print aus und den nennwert nehmen
-wir für unseren feed aber wir können die zahl nicht einfach eins zu
-eins binden , wir benötigen hier zu (System abhängig) den jeweiligen
-shell befehl dafür der die zahl ausspuckt , in diesem fall Linux Bash.
-
---------------------------------------------------------------------
-  Musterbeispiel  :
+  Equivalent mit Führendem Feed
 
   (1)"$(pgrep firefox)"
 
+ um unsere pid id 1142 jetzt weiter zu verarbeiten da wir sie
+ mit Führender Feed NR Tragen, können wir jetzt damit Arbeit um
+ das Ergebnis in Allen Tragenden Feed/s Weiter zu Verabeiten
+
+ (Hier Wird ein Schöner Code Beispiel Benötigt)
+
 --------------------------------------------------------------------
-um unsere pid id 1142 jetzt weiter zu verarbeiten da wir sie mit feed
-getraget haben , können wir jetzt damit arbeit um den code zu
-vervollständigen
+
+ Definition Für Entwickler :
+
+ FF können auch Hardcodierte Zahlen Tragen
+
 --------------------------------------------------------------------
-  Musterbeispiel :
-
-¢!
-»['pgrep'|¨firefox¨|(1)¨$(pgrep firefox)¨]«
-»['kill'|(1)¨¨]«««t1
- ¶ ['kill'|(1)¨¨]
- ¶¶ »['notify-send'|"FireFox wurde beendet"]«
-!¢
-
-wir transportieren einen blanken nenner , bekommen
-den pid der dann als kill 1142 getötet wird zurück .
---------------------------------------------------------------------
-  Musterbeispiel :
-
-¢!
-° ['$terminal']
-  ¶ »['notify-send'|"OFFLINE"]«
-  ¶¶ »['notify-send'|"ONLINE"]«
-
-»['echo'|(1)¨30¨]«
-»['echo'|(2)¨25¨]«
-
-< [(1)¨¨|(2)¨¨]
-  ¶ »['echo'|¨WARN:¨|(1)¨¨|¨< 25? Nein!¨]«
-  ¶¶ »['echo'|¨OK:¨|(2)¨¨|¨≥ 25¨]«
-
-ſ »[(1)¨¨]«
-ſ »[(2)¨¨]«
-!¢
 
 ######################## Ende der Feeds ############################
 ####################################################################

@@ -167,6 +167,10 @@ Diese Trennung:
 > ein Protein trägt.
 
 --------------------------------------------------------------------
+Begriff   |             C-Welt         |            MCS-Welt
+Operator  | a+b, a=b, a<b Seiteneffekt |   °, <, ſ → reine Bewertung
+Operand   |     a, b → Speicheradresse | ['$terminal'],[(1)] lesbarer, debuggWert
+Ausführung|    implizit im Ausdruck    |       explizit durch »...«
 
 ################## Ende der Ausführungslogik  ######################
 ####################################################################

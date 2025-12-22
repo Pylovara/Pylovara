@@ -5,7 +5,7 @@
 Vorweg : MCS Logik Verbesserung gegenüber C
 
   In C ist if (a < b) { do(); } ein monolithischer Ausdruck.
-  In MCS ist < [(1)¨¨|(2)""] ¶ »[do]« zerlegt in:
+  In MCS ist < »[(1)""|(2)""] ¶ [,do,]« zerlegt in:
     < → Operator: Vergleiche Feeds 1 & 2
     [(1)¨¨|(2)""] → Operanden: Lesbare, debuggbare, cachebare Werte
     ¶ »[do]« → Zweig: Nur ausführen, wenn Bedingung TRUE
@@ -59,7 +59,7 @@ Eine **Aktion** definiert **Ausführbarkeit**.
 »[(1)¨30¨]«
 
 
-Erst durch `» «` wird ein Protein:
+Erst durch den `» «` wird ein Protein:
 
 * verarbeitet
 * ausgeführt
@@ -131,9 +131,9 @@ Wahrheiten (`¶`, `¶¶`, `°`) arbeiten **auf Operator-Ebene**.
 Beispiel:
 
 
-< [(1)¨¨|(2)¨¨]
-  ¶ »['echo'|¨TREFFER¨]«
-
+< »[(1)¨30¨|(2)¨40¨]
+  ¶ ['echo'|¨TREFFER¨]«
+  ¶¶ ['echo'|¨Kein Treffer¨]«
 
 Ablauf:
 
@@ -167,10 +167,37 @@ Diese Trennung:
 > ein Protein trägt.
 
 --------------------------------------------------------------------
-Begriff   |             C-Welt         |            MCS-Welt
+Begriff   |          C-Welt            |            MCS-Welt
 Operator  | a+b, a=b, a<b Seiteneffekt |   °, <, ſ → reine Bewertung
-Operand   |     a, b → Speicheradresse | ['$terminal'],[(1)] lesbarer, debuggWert
+Operand   |     a, b → Speicheradresse | [(1)'$terminal'],['(1)'] lesbarer, debuggWert
 Ausführung|    implizit im Ausdruck    |       explizit durch »...«
+
+--------------------------------------------------------------------
+
+Die MCS-Fehler-Kaskade ist im Grunde dein Immunsystem.
+8. Die Logik-Schutzschleuse (Fehler-Kaskade)
+
+In MCS gibt es keinen "Absturz", sondern nur einen kontrollierten
+Gatter-Abbruch. Die Ausführungslogik wird durch drei Schutzebenen
+(Sovereignty-Shields) abgesichert:
+Ebene Instanz   Auslöser Reaktion       Ziel        Weg
+1.    Physisch  Lexer/ſ  Syntax-Müll   ſ (Löschung) HardReset Register
+2.    Identität þ-Core   þ-Fehler      Blockade     $Router (Alarm)
+3.    Logik     Gatter/^ Unmöglichkeit ^ (Freeze)   AIMS (KI-Analyse)
+
+Der Gatter-Fluss in der Praxis:
+
+ - Syntax-Check: Bevor ein Operator überhaupt liest, säubert
+   ſ/Reset den Pfad. Ein fehlerhaftes Protein wird gar nicht
+   erst zum "Operand".
+
+ - þ-Check (§7465): Ein Operator vergleicht nur, wenn die Identität
+   steht. Ohne gültiges þ bleibt der Aktionsdraht » « tot.
+
+ - Logik-Check: Wenn der Operator ein Ergebnis liefert,
+   das die Wahrheit ¶ nicht verarbeiten kann, greift
+   ^ Fehlerbehandlung .
+
 
 ################## Ende der Ausführungslogik  ######################
 ####################################################################

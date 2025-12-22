@@ -2,23 +2,25 @@
 ####################################################################
  Erklärung:
 
- Feed = Datenkanal, nicht Kontrollkanal
+ Feed/s = Datenkanal, nicht Kontrollkanal
 
 --------------------------------------------------------------------
 
  Textliche Definition :
 
  Ein sogenannter Feed nimmt eine information und gibt sie weiter
- an seine dutzenschaften . Die Zahl oder Buchstaben oder Kombination
- von beiden ergeben die kennziffer des feeds , das im unterbau
- gleichzeitig mit einem eindeutigen cache zugewissen wird .
+ an seine Dutzenschaften .
 
- der gespeichert inhalt wird dann an seine geschwister weiter
- gegeben und aktualisiert sich nur vom Führenden Feed aus
+ Die Zahl oder Buchstaben oder Kombination
+ von beiden ergeben die Kennziffer des Feed/s, das im Unterbau
+ gleichzeitig mit einem eindeutigen Cache zugewissen wird .
+
+ Der gespeichert Inhalt wird dann an seine Geschwister weiter
+ gegeben und Aktualisiert sich nur vom Führenden Feed aus.
 
 --------------------------------------------------------------------
 
- Definition Führender Feed in Worten :
+ Definition Führende/r Feed in Worten :
 
  Klammer Auf Zahl/Buchstabe Klammer zu Eingabe
 
@@ -38,7 +40,7 @@
 
 --------------------------------------------------------------------
 
- Definition Führender Feed :
+ Definition Führende/r Feed :
 
  (1)"" <-- Führender Feed an Eingabe Print
  (2)'' <-- Führender Feed an Eingabe Shell CMD
@@ -55,13 +57,13 @@
 
 --------------------------------------------------------------------
 
- Definition Tragender Feed in Worten :
+ Definition Tragende/r Feed in Worten :
 
  Eingabe Anfang Klammer Auf Zahl/Buchstabe Klammer Zu Eingabe Ende
 
 --------------------------------------------------------------------
 
- Definition Tragender Feed :
+ Definition Tragende/r Feed :
 
  "(1)" <-- Tragender Feed in Eingabe Print
  '(2)' <-- Tragender Feed in Eingabe Shell CMD
@@ -71,7 +73,7 @@
 
 --------------------------------------------------------------------
 
- Ein Tragender Feed ist ein Geschwisterteil vom Führenden Feed
+ Ein Tragende/r Feed ist ein Geschwisterteil vom Führende Feed/s
  und bezieht seine Information immer aus dessen cache .
  Das Tragende Feed ist an die Cache nummer des Führenden Feed
  geknüpft und hat selbst keine information , er syncronisiert

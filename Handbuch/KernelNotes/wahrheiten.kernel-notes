@@ -14,18 +14,209 @@
 
  Ohne Wahrheiten keine Schaltung , Ohne schaltung Keine Automation.
 
- Wahrheiten können entweder eigene Aktion/en beinhalten um
- ausgewählt bzw ausgeführt zu werden
+ Wahrheiten führen Protein/e aus oder und mit Proton/en.
+
+ Hinweis:
 
  Die Trennung von Protein (Seite3) und Aktion (Seite 10),
  ist in mehreren Aspekten dringlich notwendig um
- Ausführungensverdrahtung
+ Ausführungensverdrahtung für Wahrheiten zu Realisieren.
+
+ Basierend auf Linear Verarbeitung, AI Freundlich wie FPGA
+ Tauglich und Fehlerabweisender !
+
+ Komposition statt Rekursion und das egal ob auf Normale
+ Architekturen oder Später FPGA mit BMC (BrainMaschineCore GPU)
 
 --------------------------------------------------------------------
 
- Hinweis Nutzunglogik :
+ Definition WennJaBedienung Symbol :
 
- lineare IF/ELSE/Negations-Workflows
+ ¶
+
+ --------------------
+
+ Definition WennJaBedienung in Worten :
+
+ Absatzzeichen (Pilcrow)
+
+ --------------------
+
+ Definition WennJaBedienung :
+
+ Dies Kann ausgeführt werden, wenn Bedingung erfüllt
+
+ --------------------
+
+ Definition RufName :
+
+ WennJaBedienung
+
+ --------------------
+
+ Erklärung :
+
+ WennJaBedienung Schalten ein Protein (und oder mit Proton) frei.
+
+
+ Später FPGA Bezogen :
+
+ AND-Gatter
+
+--------------------------------------------------------------------
+
+ Definition WennNichtBedienung Symbol :
+
+ ¶¶
+
+ --------------------
+
+ Definition WennNichtBedienung in Worten :
+
+ Absatzzeichen Absatzzeichen (Pilcrow Pilcrow)
+
+ --------------------
+
+ Definition WennNichtBedienung :
+
+ Dies Kann ausgeführt werden, wenn Bedingung nicht erfüllt
+
+ --------------------
+
+ Definition RufName :
+
+ WennNichtBedienung
+
+ --------------------
+
+ Erklärung :
+
+ WennNichtBedienung Schalten ein Protein (und oder mit) Proton frei.
+
+
+ Später FPGA Bezogen :
+
+ NOT-AND-Gatter
+
+--------------------------------------------------------------------
+
+ Definition ParallelProzess Symbol :
+
+ ¶=
+
+ --------------------
+
+ Definition ParallelProzess in Worten :
+
+ Absatzzeichen (Pilcrow) Istgleich
+
+ --------------------
+
+ Definition ParallelProzess :
+
+ Ausführung ohne Wartezeit, aktiver Prozess.
+
+ --------------------
+
+ Definition RufName :
+
+ Dies Führt Parallel einen Prozess aus
+
+ --------------------
+
+ Erklärung :
+
+ ParallelProzess Schalten für Protein (und oder mit Proton) frei,
+ nebenläufigen Prozess, kein Warten
+
+
+ Später FPGA Bezogen :
+
+ ALU/FPGA-Gatter
+
+--------------------------------------------------------------------
+
+ Definition ParallelTransport Symbol
+
+ ;;
+
+ --------------------
+
+ Definition ParallelTransport in Worten :
+
+ Strichpunkt Strichpunkt (Semikolon Semikolon)
+
+ --------------------
+
+ Definition ParallelTransport :
+
+ Ausführung ohne Wartezeit, Daten-Stream (Transferleistung).
+
+ --------------------
+
+ Definition RufName :
+
+ ParallelTransport
+
+ --------------------
+
+ Erklärung :
+
+ ParallelTransport für Protein (und oder mit Proton) frei
+ , kein Warten ohne Blockade
+
+
+ Später FPGA Bezogen :
+
+ DMA/Datentransfer
+
+--------------------------------------------------------------------
+
+ Definition MassenZusammenSetzung Symbol
+
+ ~~
+
+ --------------------
+
+ Definition MassenZusammenSetzung in Worten :
+
+ Strichpunkt Strichpunkt (Semikolon Semikolon)
+
+ --------------------
+
+ Definition MassenZusammenSetzung :
+
+ Setzt Protein/e als Logische zusammenhang zusammen, Kleberverbindung.
+ Fragmentierung und Rekombination.
+
+ --------------------
+
+ Definition RufName :
+
+ MassenZusammenSetzung
+
+ --------------------
+
+ Erklärung :
+
+ MassenZusammenSetzung für Protein (und oder mit Proton) zusammen,
+ kann unausfürbare Protein/e Verbinden.
+
+ Als logisches Bindemittel für komplexe Datenstrukturen zum beispiel
+ SVG Bilder die in einzelteilen übertragen werden, das vielen kleinen
+ Protein-Paketen besteht, ist ~~
+ der Kleber, der dem Kernel sagt ,,Behandle diese 100 Proteine als
+ eine einzige Masse, bis sie am Ziel sind.’’
+ StichPunkt : Bild, Audio, Video Generative verarbeitung oder
+ Transporte.
+
+--------------------------------------------------------------------
+
+ Hinweis Kurzerklärung :
+
+ Operatoren mit Nutzunglogik Wahrheiten :
+
+ lineare WennJaBedienung/WennNichtBedienung/Negations-Workflows
 
  Grund :
  mehr Kontrolle, mehr Sicherheit, mehr Analysierbarkeit
@@ -37,7 +228,7 @@
 
 --------------------------------------------------------------------
 
- Nutzungs Erklärung :
+ Hinweis Informationen :
 
  Ermöglicht:
  - gui Fenster aufrufe.
@@ -80,40 +271,20 @@
  - Die Kette ist nicht-linear, zustandsbehaftet, komplex
 
  Aber:
+
  Zustand wird explizit über Feeds (siehe kernel lex 10)
  übertragen und nicht implizit im Stack!
 
 --------------------------------------------------------------------
 
+ ZuckunftsUpgrades :
 
+ Nicht geplant aber für später vorgemerkt :
 
---------------------------------------------------------------------
-
- Werden gerade möglich :
-
- ¶   Wenn
- Bedingung erfüllt → führe aus
- — lineare Bedingung (WAHR_IF) MCS_TRUE → THEN
-
-
- ¶¶  Else
- Kann ausgeführt werden, wenn Bedingung nicht erfüllt
- — alternativer Zweig (WAHR_ELSE) MCS_FALSE → ELSE
-
-
- ¶=  Parallel Run        — nebenläufiger Prozess, kein Warten (WAHR_PARALLEL_RUN)
- ;;  Parallel Transport   — Feed-basierter Datenfluss, nicht-blockierend (WAHR_PARALLEL_TRANSPORT)
-
-----------------------------------------------------------------
-
- Nicht geplant aber für später vorgemerkt
-
- ~~ für Merge von mehreren Packets kann per () granuliert werden das
-    genau
  >-> für Fork oder Splitting Links Nach Rechts
  <-< für Fork oder Splitting Rechts Vor Links
 
---------------------------------------------------------------------
 
+--------------------------------------------------------------------
 ##################### Ende der Warheiten   #########################
 ####################################################################

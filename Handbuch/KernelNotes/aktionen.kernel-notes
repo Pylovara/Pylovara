@@ -23,20 +23,51 @@
   »
 
 --------------------------------------------------------------------
-  Definition Aktionsende :
+
+ Erklärung Aktionsanfang :
+
+ Beginn eines Prozesses , Prozess Start.
+
+--------------------------------------------------------------------
+ Definition Aktionsende :
 
   «
 
 --------------------------------------------------------------------
-  Definition Aktionsanfang und Aktionsende :
+
+ Erklärung Aktionsende :
+
+ Beendet den Aktionskreislauf.
+
+
+--------------------------------------------------------------------
+
+ Definition Aktionskreislauf :
 
   » «
 
 --------------------------------------------------------------------
-  Definition  Aktionsdraht :
+
+ Aktionskreislauf Erklärung :
+
+ Ein Geschlossener Aktionskreislauf führt Prozesse aus.
+
+--------------------------------------------------------------------
+
+ Definition  Aktionsdraht :
 
   »
     «
+    «
+
+--------------------------------------------------------------------
+
+ Aktionsdraht :
+
+ Ein Aktionsdraht kann als Entscheidungsschaltweg angesehen werden
+ und hat mehrere oder einen Aktionsende/n Ausgang ,
+ wird für Wahrheiten verwendet um operatoren Wahrheits
+ Prozesse oder Reine Ausführbare Proteine Zu steuern.
 
 --------------------------------------------------------------------
 
@@ -63,6 +94,19 @@
  Ausführungensverdrahtungen auf FPGA Basis möglich zu machen
  und löst somit das Jitter und Latenz Problem an dem Unix-Systeme
  seit 50 Jahren scheitern.
+
+--------------------------------------------------------------------
+
+ Hinweis Information :
+
+ Aktion/en & Aktionsdrähte werden als Signal-Routing verstanden.
+
+ Das System „springt“ nicht zu einer Adresse, der Strom
+ fließt einfach physisch durch das Gatter,
+ das der Operator geöffnet hat.
+
+--------------------------------------------------------------------
+
 
 ##################### Ende der Aktion /en  #########################
 ####################################################################

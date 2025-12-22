@@ -3,11 +3,17 @@
 
  Erklärung :
 
- Operator/en = Bewertung | Ausführung
+ Operator/en = Bewertung | Vergleich | Impulsgeber
 
 --------------------------------------------------------------------
 
  Textliche Definition :
+
+ Operatoren sind die rein lesenden Instanzen des Kernels.
+ Sie vergleichen Argumente (15) oder Feeds (10) und geben das
+ Ergebnis an die Wahrheiten (08) weiter.
+ Ein Operator führt niemals selbst eine Aktion aus.
+ Er ist das Auge, nicht die Hand.
 
  Operatoren brauchen Explizit die Aktionserlaubnis um nicht nur
  zu Bewerten sondern auch Auszuführen, sie benötigen
@@ -21,9 +27,9 @@
  Operatoren sind nicht passive Marker (^, ſ),
  sondern aktive Steuerelemente, die:
 
-    lesen (z. B. ° ['$terminal'])
-    entscheiden (MCS_TRUE/MCS_FALSE)
-    anstoßen (¶ »[…]« ausführen / ſ »[…]« aufräumen)
+ lesen (z. B. ° ['$terminal'])
+ entscheiden (MCS_TRUE/MCS_FALSE)
+ anstoßen (¶ »[…]« ausführen / ſ »[…]« aufräumen)
 
  Und das ohne Stack, ohne AST, ohne Interpreter —
  nur mit Feed, Protein, Wahrheit, Operator.
@@ -37,28 +43,22 @@
 
 --------------------------------------------------------------------
 
- Definition Symbole
+ Definition :
+ Symbole = SymbolInWorten = Nutzen
 
+  ſ      = langes s (historischer Buchstabe)
 
-  ſ = langes s (historischer Buchstabe)
+  ^      = Zirkumflex / Caret   = Fehlerbehandlung
 
-  þ = thorn (altenglischer / nordischer Buchstabe)
+  °      = Gradzeichen          = Inversion
 
-  ¶ = Absatzzeichen / Pilcrow
+  <      = kleiner-als-Zeichen  = Vergleicht zwei Feeds.
 
-  ; = Semikolon
+  >      = größer-als-Zeichen   = Vergleicht zwei Feeds
 
-  ^ = Zirkumflex / Caret
+  !      = Ausrufezeichen       = Prüft die thorn Signatur
 
-  ° = Gradzeichen
-
-  < = kleiner-als-Zeichen
-
-  > = größer-als-Zeichen
-
-  ! = Ausrufezeichen
-
- ...= Auslassungspunkte / Ellipse
+ ...     = Auslassungspunkte    = Prüft auf Identität von Proteinen
 
 --------------------------------------------------------------------
 
@@ -66,7 +66,7 @@
 --------------------------------------------------------------------
  <  WennGrößer /Kann/Soll
 --------------------------------------------------------------------
- !  WennEindeutig /Sofort
+ ŧ  WennEindeutig /Sofort
 --------------------------------------------------------------------
  …  WennFehler /Kann/Sicherheit
 --------------------------------------------------------------------
@@ -85,9 +85,10 @@
 
 --------------------------------------------------------------------
 
- °  WennNichtWahr / Muss
+ ° (Wenn Nicht / Inversion): Kehrt das Ergebnis einer Wahrheit um. Wichtig für "Muss"-Bedingungen.
 
- Wenn Nicht — also: führe aus, wenn Bedingung falsch
+ … (Fehler-Operator / On Error): Der Not-Aus-Sensor. Er reagiert, wenn eine Transaktion ungültig wird.
+
 
 --------------------------------------------------------------------
 

@@ -1,33 +1,39 @@
 ####################################################################
-@kernel-nr: lex
+@kernel-nr: lex  | Lexikon/s | kernel lex | helpme lex | 00 FallBack
 ####################################################################
-       - System Kernel - ON - Kernel - The Learn Guide  -
-    ▗▖ ▗▖▗▄▄▄▖▗▄▄▖ ▗▖  ▗▖▗▄▄▄▖▗▖       ▗▖ ▗▖▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖
-    ▐▌▗▞▘▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌   ▐▌       ▐▌ ▐▌  █  ▐▌▗▞▘  █
-    ▐▛▚▖ ▐▛▀▀▘▐▛▀▚▖▐▌ ▝▜▌▐▛▀▀▘▐▌       ▐▌ ▐▌  █  ▐▛▚▖   █
-    ▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖▐▙▄▄▖    ▐▙█▟▌▗▄█▄▖▐▌ ▐▌▗▄█▄▖
-                                                 Pylovara since 2025
-################ Das Handbuch für den MCS Kernel ###################
+#  .----------------.   .----------------.   .----------------.    #
+#  | .--------------. | | .--------------. | | .--------------. |  #
+#  | | ____    ____ | | | |     ______   | | | |    _______   | |  #
+#  | ||_   \  /   _|| | | |   .' ___  |  | | | |   /  ___  |  | |  #
+#  | |  |   \/   |  | | | |  / .'   \_|  | | | |  |  (__ \_|  | |  #
+#  | |  | |\  /| |  | | | | || |         | | | |   '.___`-.   | |  #
+#  | | _| |_\/_| |_ | | | |  \ `.___.'\  | | | |  |`\____) |  | |  #
+#  | ||_____||_____|| | | |   `._____.'  | | | |  |_______.'  | |  #
+#  | |  Maschinen   | | | |     Code     | | | |    Speech    | |  #
+#  | |    Master    | | | |    Control   | | | |    System    | |  #
+#  | '--------------' | | '--------------' | | '--------------' |  #
+#   '----------------'   '----------------'   '----------------'   #
+#   - Das Handbuch für den MCS Kernel | Pylovara since 2025 -      #
 ####################################################################
-             | Lexikon/s | kernel lex | helpme lex |
+#   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 ####################################################################
-      | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |
-          -------------------------------------------------
-          01 - Datentypen -new      11 - Zielreferenz
-          02 + Transaktion -clean   12 - Dirigent
-          03 + Protein -fix2        13 - Warp -fix
-          04 - Proton               14 - þ Identifikation
-          05 + Trennbefehl -clean   15 + Argumente -fix
-          06 + Aktion -fix          16 - SchaltVerknüpfungen
-          07 + Eingaben -fix3       17 - Adressierung
-          08 + Wahrheiten -fix3     20 + Reihenfolge
-          09 - Operatoren -fix3     77 + Ausführungslogik
-          10 + Feed -Finish
-          -------------------------------------------------
-          99 + Register CMDs -new   00 - Fallback Übersicht
+          01 X Datentypen -new      13 - Warp -fix
+          02 + Transaktion -clean   14 - þ Identifikation
+          03 + Protein -fix4        15 + Argumente -fix
+          04 - Proton -fix          16 - SchaltVerknüpfungen
+          05 + Trennbefehl -Final   17 - Adressierung -new
+          06 + Aktion -fix          18 X AI Synctimer
+          07 + Eingaben -fix4
+          08 + Wahrheiten -fix4     20 + Reihenfolge
+          09 - Operatoren -fix4     77 + Ausführungslogik
+          10 + Feed -Final2         88 - Dateitypen -fix
+          11 - Zielreferenz         99 + Register CMDs -new
+          12 - Dirigent
 ####################################################################
         # Maschinen Code Speech – Kernel Syntax Handbuch  #
-        # Version: 3.2 | Autor: Thomas Zimmermann         #
+        # Tastaturstandart: UTF -8 Deutscher Standart     #
+        # Version: 3.4 | Autor: Thomas Zimmermann         #
         # Standort: /Pylovara/Handbuch/KernelNotes/       #
-        # Status: Vollständig mit Rollende Verbesserungen #
+        # Licenses: /Pylovara/Licenses L0 - L6            #
+        # Status: Vollständige Rollende-Verbesserungen    #
 ####################################################################

@@ -1,4 +1,4 @@
-@kernel-nr: 08
+@kernel-nr: 08 | TeilBaustelle |
 ####################################################################
 
  Erklärung :
@@ -7,12 +7,37 @@
 
 --------------------------------------------------------------------
 
- Testliche Definition :
+ Textliche Definition :
 
  Wahrheiten sind Entscheidungslogiken , die aus dem Hause C
  Assimiliert wurden und linear übernommen wurden .
 
  Ohne Wahrheiten keine Schaltung , Ohne schaltung Keine Automation.
+
+ Wahrheiten können entweder eigene Aktion/en beinhalten um
+ ausgewählt bzw ausgeführt zu werden
+
+ Die Trennung von Protein (Seite3) und Aktion (Seite 10),
+ ist in mehreren Aspekten dringlich notwendig um
+ Ausführungensverdrahtung
+
+--------------------------------------------------------------------
+
+ Hinweis Nutzunglogik :
+
+ lineare IF/ELSE/Negations-Workflows
+
+ Grund :
+ mehr Kontrolle, mehr Sicherheit, mehr Analysierbarkeit
+    - Linear-first Design
+    - Feed-basierte Zustandsübergabe
+    - Symbolische Semantik statt Code-Ausführung
+    - Komposition über Rekursion
+    - Kernel-nativ, nicht interpretiert
+
+--------------------------------------------------------------------
+
+ Nutzungs Erklärung :
 
  Ermöglicht:
  - gui Fenster aufrufe.
@@ -21,7 +46,7 @@
 
  das ist Einmalig auf der Welt , weil :
 
- weil es die erste lineare, symbolische, RAM-basierte Kontrolllogik
+ es die erste lineare, symbolische, RAM-basierte Kontrolllogik
  ist und zwar nicht als Interpreter, sondern als nativ kompilierter
  Kernel-Teil.
 
@@ -43,22 +68,6 @@
  ¢! ° ['$alert'] ¶ ['$shutdown'] !¢
  ¢! ° ['$shutdown'] ¶ ['$log'] !¢
 
---------------------------------------------------------------------
-
- Nutzunglogik :
-
- linearen IF/ELSE/Negations-Workflows
-
- Grund :
- mehr Kontrolle, mehr Sicherheit, mehr Analysierbarkeit
-    - Linear-first Design
-    - Feed-basierte Zustandsübergabe
-    - Symbolische Semantik statt Code-Ausführung
-    - Komposition über Rekursion
-    - Kernel-nativ, nicht interpretiert
-
---------------------------------------------------------------------
-
 
  MCS ist nicht darauf angewiesen, Rekursion in einem Protein zu haben,
  sondern nutzt Komposition auf Transaktionsebene :
@@ -73,6 +82,9 @@
  Aber:
  Zustand wird explizit über Feeds (siehe kernel lex 10)
  übertragen und nicht implizit im Stack!
+
+--------------------------------------------------------------------
+
 
 
 --------------------------------------------------------------------
@@ -100,6 +112,8 @@
     genau
  >-> für Fork oder Splitting Links Nach Rechts
  <-< für Fork oder Splitting Rechts Vor Links
+
+--------------------------------------------------------------------
 
 ##################### Ende der Warheiten   #########################
 ####################################################################

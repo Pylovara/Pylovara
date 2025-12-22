@@ -1,73 +1,68 @@
 @kernel-nr: 06
 ####################################################################
-## Aktionen : Aktion = Ausführung
 
-Aktionen Werden als anhang und ende bei Protein packeten weitergegeben,
-sie definieren innerhalb einer Transaktion ob ein ausführbares packet
-vorliegt das vor und danach den start und endpunkt des packets angibt
+ Erklärung :
+
+ Aktion/en : Ausführung/en | Aktionserlaubnis | Aktionskreislauf
+
+ Aktionsdraht : Ausführungsverdrahtung/en | LogikSchaltkreis
 
 --------------------------------------------------------------------
-  Definition Aktion Start :
+
+ Textliche Definition :
+
+ Aktion/en werden bei Protein/en - Wahrheiten & Operatoren als
+ Explizite Ausführungserlaubnis genutzt.
+
+ Sie definieren ob Ausführbare Protein/e vorliegen oder nicht.
+
+--------------------------------------------------------------------
+
+  Definition Aktionsanfang :
 
   »
 
 --------------------------------------------------------------------
-  Definition Aktion Ende :
+  Definition Aktionsende :
 
   «
 
 --------------------------------------------------------------------
-  Definition  Aktion Anfang und Ende
+  Definition Aktionsanfang und Aktionsende :
 
   » «
 
 --------------------------------------------------------------------
-  Definition  Aktionsdraht Anfang und Ende
+  Definition  Aktionsdraht :
 
   »
     «
 
 --------------------------------------------------------------------
-  Info - Worflow Erkennung :
 
-  Ein Aktion/s-start wie Aktion/s-endpunkt wird mit 2 bytes festgelegt
-  , um eindeutigkeiten gegenüber argumenten klar zu unterscheiden .
+ Definition Aktion in Worten :
 
-  symbol « 2 Bytes
-  symbol » 2 Bytes
+ Guillemet rechts(deutsches Anführungszeichen, öffnend)Aktionsanfang
 
-  utf -8 standart tastatur !!!!!!
-
-  ziehe : kernel 15 | dev 03
---------------------------------------------------------------------
-  Erklärung
-
-  «  Ende einer Aktion/eines Zweiges/Protein
-  »  Start einer Aktion/eines Zweiges/Protein
-
- wenn unausführbare Protein packete gesendet oder empfangen werden
- sollen, für einen anderen prozess oder einer weitergabe oder späteren
- ausfürung, dann sorgen Aktionen für klare verhältnisse innerhalb der
- Transaktion /en.
+ Guillemet links(deutsches Anführungszeichen, schließend)Aktionsende
 
 --------------------------------------------------------------------
- Aktionen-anordnung  LowLevel Standart:
 
- ¢!
-  »['cmd'|¨xxx¨]«
- !¢
+ Verständniss Definition :
 
- ¢! »['cmd'|¨xxx¨]« !¢
+ Wahrheiten können entweder eigene Aktion/en beinhalten um
+ ausgewählt bzw ausgeführt zu werden oder mit einem Protein
+ fest verschaltet zu werden .
 
---------------------------------------------------------------------
- Aktion Info:
+ Verschaltungen benötigen immer pro Ausgang ein Aktionsende,
+ da jedes antionsende dann mit dem Aktionsstart einen Aktionsdraht
+ ergibt und somit der Aktionskreislauf sich schließt.
 
- Eine Aktion wird niemals nur gestartet und nicht beendet,
- außer die Aktion wird für HighLevel Frameworks benötigt
- dann setzt das ende der aktion am letzten protein an , das den
- schluss dargestellt und diese Schlüsse aber immer ein eigenes
- aktion /s Ende und der anfang vom ersten protein ,
- gewährleistet flexibilität.
+ Die Trennung von Protein (Seite3) und Aktion (Seite 06),
+ ist in mehreren Aspekten dringlich notwendig um fest 2 byte
+ Ausführungensverdrahtungen auf FPGA Basis möglich zu machen
+ und löst somit das Jitter und Latenz Problem an dem Unix-Systeme
+ seit 50 Jahren scheitern.
 
 ##################### Ende der Aktion /en  #########################
 ####################################################################

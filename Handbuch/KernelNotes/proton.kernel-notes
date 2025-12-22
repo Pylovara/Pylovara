@@ -1,60 +1,84 @@
-@kernel-nr: 04
+@kernel-nr: 04 # Prototype Bereich Unfertig
 ####################################################################
-## Proton :
 
-Ist der Rahmen oder auch Container für Proton/en , die genauso
-gefüllt werden können mit eingaben wie Protein /e (siehe kernel 03)
+ Erklärung:
 
-Proton/en können für verschiedene zwecke genutzt werden :
+ Proton = Träger
 
-- Um Hardwaresteuerungen mit zu geben
-- Um Das Energiemanagment zu steuern
-- UM CMD befehle weiter zu geben
+ Proton Mehrzahl = Proton/en
 
-Grundsätzlich wird für Proton /en Das MCS CMD Register Geschrieben,
-das grundsätzlich Watt Volt AMP Band IP und andere späße mit sich
-bringt . Unter anderem werden auch Combinierbare system befehle in
-MCS CMD mitgeliefert .
+ Proton = Energiemanagement
 
---------------------------------------------------------------------
-## Proton /en Definition:
-
- { # anfang
- } # ende
-
---------------------------------------------------------------------
-## Proton /en anordnungs Definition:
-
- { }
-
---------------------------------------------------------------------
-## Proton /en
-
-Werden wie Zusätze betrachtet , sie dienen hauptsächlich für
-hardware bezogene aufgaben wie energie steuerung oder analytische
-zwecke...
-
-
-
+ Proton = Optischer Versorgungsbetrieb
 
 --------------------------------------------------------------------
 
-Beispiel Protein ohne Proton ;
-¢| »['echo'|"Hallo"]« |¢
-
-Beispiel Protein mit Proton ohne Hardware Aufgaben ;
-
-¢|
-»['echo'|"Hallo"|{’Wait-s’|¨3¨}]«
-|¢
+ Textliche Definition :
 
 
-Ein Proton innerhalb eines Proteins kann Daten aller Argumente
-oder Wahrheiten mit in die nächste Verarbeitung oder Endverarbeitung
-geben oder führen .
+ Das Proton ist der Hardwaresteuerung Container der sich
+ hauptsächlich auf Das EnergieManagment Konsentriert und
+ wird dafür Verwendet Hardware komponente anzusprechen .
 
--------------------------------------------------------------------
-## Struktur für Spätere MCS Eingaben , ziehe kernel 07 :
+ Mit einem Proton lässt sich Strom in der kompletten gesamtheit
+ von Watt bis Temperatur steuern und kann auf UI auf bestimmte
+ Steuerungslogiken ausgeweitet angewandt werden.
+
+ Wärendessen sich Das Protein darauf Konsentriert abläufe durch Pfade
+ und Syscall auszuführen, werden Proton /en dazu genutzt auslöserlogiken
+ wie Die Energie-Steuerung oder Optische-Steuerung zu tragen.
+
+ Um Hardwaresteuerungen :
+ - Um Das Energiemanagment zu steuern
+
+ Oberflächen-Steuerung
+ - UM UI Control Steuerung zu Verknüpfen
+
+ Grundsätzlich wird für Proton /en Das MCS CMD Register im bereich
+ Hardwaresteuerung Genutzt.
+
+ (siehe kernel 99)
+
+--------------------------------------------------------------------
+
+ Definition Proton in Worten :
+
+ Geschweifte Klammern Auf Eingabe Geschweifte Klammern Zu
+
+ Geschweifte Klammern Auf Eingabe Trennbefehl Geschweifte Klammern Zu
+
+ Geschweifte Klammern Auf Inhalt Geschweifte Klammern Zu
+
+--------------------------------------------------------------------
+
+ Definition Protein Symbol :
+
+ { Proton Anfang/Auf
+ } Proton Ende/Zu
+
+--------------------------------------------------------------------
+
+ Definition Proton :
+
+ {}
+
+--------------------------------------------------------------------
+
+ Definition Verschachtelte Proton /en :
+
+ {{{{{{{}}}}}}}
+
+--------------------------------------------------------------------
+
+ Beispiel HardwareManagment MusterBeispiel:
+
+ {’CPU’{’Volt’|'*'{'Watt'|'*'{’Ampere’|'*'{’Widerstand’{’Frequenz’|’*’}}}}}}
+
+ (Diese Sektor Wird Noch Designed und Definiert)
+
+--------------------------------------------------------------------
+
+ Definitionen Hardwaresteuerung Unverschachtelt :
 
   {’Name’|¨Wert¨}
   {’Name’|’Einheit’|¨Wert¨}
@@ -79,34 +103,16 @@ geben oder führen .
   {’Bluetooth’|’eingabe’}
   {’Usb’|’eingabe’}
   {’Fequenz’|’eingabe’}
-  {’Log’|’datenname’} #  wird generell nur an einen festen log Ordner geschickt
 
 --------------------------------------------------------------------
-## Proton-Kategorien
+ Proton Anwendungsfälle
 
-- Primär Physikalische (Temp, Volt, Watt, Amp)
-- Sekundär Verschachtelte Prozessweitergaben aller art
-- Kommunikationsbezogene (Interface, Transport)
-- Speicherbezogene (Cache, Signed, Unsigned)
-- Logische (Valid, State, Mode)
-- Prozessbezogene (Pid, Thread, ID)
-
---------------------------------------------------------------------
-## Anwendung in Protein /en
-
-  »[’MotorA’|{’Watt’|¨200¨}|{’Volt’|¨12¨}]«
-  Protonen liefern Zusatzdaten, Proteine definieren die Aktion.
-
-Info : Cmd Eingaben werden im register definiert .
-
---------------------------------------------------------------------
-## Entwicklungs Notiz - Noch nicht Implementiert !
-
-##Proton-Metadaten
-  Optional: jeder Proton kann ein Meta-Proton enthalten:
-  {Meta|Checksum|þ235436}
-##Erweiterung Idee
-  Proton /en dürfen geschachtelt werden in Zuckunft : {*|*|{*|*}}
+ - Primär Physikalische (Temp, Volt, Watt, Amp)
+ - Sekundär Verschachtelte (Chip + EnergieManagment)
+ - Kommunikationsbezogene (Strom ,Interface, Transport)
+ - Speicherbezogene (Cache, Signed, Unsigned)
+ - Logische (Valid, State, Mode)
+ - Prozessbezogene (Pid, Thread, ID)
 
 ##################### Ende der Proton /en  #########################
 ####################################################################

@@ -1,26 +1,29 @@
 @kernel-nr: 05
 ####################################################################
 
-    !! Nutzt niemals Trennbefehle wie bei Shell CMD Eingaben !!
+ Erklärung :
 
-Erklärung:
+ Trennbefehl = Leerzeichen
 
- Trennbefehl = leerzeichen
+ Trennbefehl Mehrzahl = Trennbefehl/e
 
- Sie dienen als Zwischenraum und haben lediglich einen übersichts
- nutzen . Ohne Trennbefehle könnte MCS auch Laufen aber es würde
- unaufgeräumt aussehen . Ich selbst mag keine unaufgeräumten Codes
- und bekomme Pickel und ausschlag und deswegen wurden Trennbefehle
- eingebaut um alles lesbar und geordnet zu halten .
- Trennbefehle werden nur innerhalb von Protein /e u.o Protonen
- verwendet und sind grundsätzlich einzeln zu benutzen , doppelte
- Trennzeichen werden nicht als Einzelstück gesehen .
+ Trennbefehl = Optische Ordnung
+
+ Trennbefehl = Nutzt niemals Trennbefehle wie in Eingaben
 
 --------------------------------------------------------------------
 
- Textliche Definition :
+ Textliche Definition
 
- Trennbefehl Symbol
+ Sie dienen als Leerzeichen und Optischen Zwischenraum und werden
+ werden besonders für Eingaben Trennungen und Protein zu Proton
+ Trennungen genutzt.
+
+--------------------------------------------------------------------
+
+ Definition Trennbefehl in Worten :
+
+ Trennbefehl
 
 --------------------------------------------------------------------
 
@@ -40,29 +43,27 @@ Erklärung:
 
     [*|*|{*|*}]
 
-Verständniss : Sternchen Makieren inhalt
+ Verständniss : Sternchen Makieren inhalt
 
 --------------------------------------------------------------------
-# Hinweis für Interessierte :
+ Hinweis für Interessierte :
 
-Das MCS-Framework wächst organisch, bleibt aber lesbar und kann als
-allrounder verwendet werden .
+ Das MCS-Framework wächst organisch, bleibt aber lesbar und kann als
+ allrounder verwendet werden .
 
-Die Erklärung selbst hätte ich mir eigentlich sparen können aber da
-ich definitiv kein Code Chaos Dulde und von allem abstand halte das
-wie C/Python/Rust/Java wie scheisse aussieht und entweder zu
-Semantisch oder zu durchgeordert wie java class .....
+ Info :
 
-Wird hier alles erklärt , selbst sowas wie der Trennbefehl.
+ Trennbefehle | sind in vielen systemen anders gedeutet und daher
+ muss drigend verstanden werden das ein Trennbfehl oder zwei
+ folgende innerhalb einer System CMD eingabe (siehe kernel lex 07)
+ meist kurzschluss funktionen haben !!
 
-Info :
+--------------------------------------------------------------------
 
-Trennbefehle | sind in vielen systemen anders gedeutet und daher
-muss drigend verstanden werden das ein Trennbfehl oder zwei
-folgende innerhalb einer System CMD eingabe (siehe kernel lex 07)
-meist kurzschluss funktionen haben !!
+ Warnhinweis :
 
-!! Nutzt niemals Trennbefehle wie bei Shell CMD Eingaben !!
+ !! Nutzt niemals Trennbefehle wie bei System/Shell CMD Eingaben !!
+       !! Nicht nutzen wie bei Unix/Poesix/Minix/Shells !!
 
 #################### Ende der Trennbefehl  #########################
 ####################################################################

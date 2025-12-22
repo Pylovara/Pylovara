@@ -5,6 +5,7 @@
  Feed = Datenkanal, nicht Kontrollkanal
 
 --------------------------------------------------------------------
+
  Textliche Definition :
 
  Ein sogenannter Feed nimmt eine information und gibt sie weiter
@@ -40,9 +41,9 @@
  Definition Führender Feed :
 
  (1)"" <-- Führender Feed an Eingabe Print
- (2)'' <-- Führender Feed an Eingabe System CMD
+ (2)'' <-- Führender Feed an Eingabe Shell CMD
  (3)’’ <-- Führender Feed an Eingabe MCS CMD
- (4),, <-- Führender Feed an Eingabe Notiz
+ (4),, <-- Führender Feed an Eingabe System-Steuerung
  (5)¨¨ <-- Führender Feed an Eingabe Blankernenner
 
 --------------------------------------------------------------------
@@ -60,12 +61,12 @@
 
 --------------------------------------------------------------------
 
- Definition Führender Feed :
+ Definition Tragender Feed :
 
  "(1)" <-- Tragender Feed in Eingabe Print
- '(2)' <-- Tragender Feed in Eingabe System CMD
+ '(2)' <-- Tragender Feed in Eingabe Shell CMD
  ’(3)’ <-- Tragender Feed in Eingabe MCS CMD
- ,(4), <-- Tragender Feed in Eingabe Notiz
+ ,(4), <-- Tragender Feed in Eingabe System-Steuerung
  ¨(5)¨ <-- Tragender Feed in Eingabe Blankernenner
 
 --------------------------------------------------------------------
@@ -95,13 +96,13 @@
  mit Führender Feed NR Tragen, können wir jetzt damit Arbeit um
  das Ergebnis in Allen Tragenden Feed/s Weiter zu Verabeiten
 
- (Hier Wird ein Schöner Code Beispiel Benötigt)
+ (Hier Wird ein Schönes Code Beispiel Benötigt)
 
 --------------------------------------------------------------------
 
  Definition Für Entwickler :
 
- FF können auch Hardcodierte Zahlen Tragen
+ FF können auch Hardcodierte Eingaben Tragen
 
 --------------------------------------------------------------------
 

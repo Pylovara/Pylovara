@@ -5,14 +5,16 @@
 
  Protein = Träger
 
+ Protein Mehrzahl = Protein/e
+
 --------------------------------------------------------------------
 
  Textliche Definition :
 
 
- Protein ist der Rahmen , Sie dienen Als Träger Element
- und beinhalten für Eingaben Trennbefehl und Proton
- den Rahmen der Aufgaben .
+ Das Protein ist der Hauptdatenträger , es definieren den
+ bedienungsrahmen der gesamten Architektur und beinhalten für
+ Eingaben Trennbefehl/e und Proton/en den Rahmen der Aufgaben .
 
  Außerhalb eines Protein , werden Nur Transaktion - Wahrheiten
  - Operatoren - Aktion - Argumente - Adressierung - Dirigenten
@@ -23,7 +25,9 @@
  Definition Protein in Worten :
 
  Eckige Klammern Auf Eingabe Eckige Klammern Zu
+
  Eckige Klammern Auf Eingabe Trenbefehl Eingabe Eckige Klammern Zu
+
  Eckige Klammern Auf Inhalt Eckige Klammern Zu
 
 --------------------------------------------------------------------
@@ -66,26 +70,25 @@
 
 --------------------------------------------------------------------
 
- Verständniss Definition :
+ Definition Wahrheiten + Aktion:
+
+        ¶ »['*'|"*"]«
+        ¶¶ »['*'|"*"]«
+
+ ausfürbar durch Aktion (siehe kernel 06)
+
+--------------------------------------------------------------------
+
+
+ Verständniss Definition Wahrheiten + Aktionsdraht:
 
         ¶ »['*'|"*"]
         ¶¶ ['*'|"*"]«
 
  ausfürbar durch Aktion (siehe kernel 06)
 
- wir kombinieren die laufende aktion an eine wenn kann wahrheit
+--------------------------------------------------------------------
 
- wenn ¶»['*'|"*"] das ist dann kann ¶¶['*'|"*"]« das ausgeführt
- werden .
-
- wir erkennen das der aktion/s rahmen auf beide ausgedehnt ist !
-
- den wenn ¶»['*'|"*"] ausgeführt wird , kann ¶['*'|"*"]« das folgen.
-
- dazu benutzen wir die schleifen aktion die als draht rahmen für die
- logik dient zum ausführen
-
- HighLevel Workflow werden Linear Angetrieben
 
 ¢|
 ° ['*'|"*"]

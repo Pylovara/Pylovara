@@ -1,6 +1,120 @@
-@kernel-nr: 77 # LogikInfo - Geordnet
-@kernel-nr: ausführungslogik # MCS-System
+@kernel-nr: 77 | Ausführungslogik (Der Master-Flow) |
 ####################################################################
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+                 ↓↓↓↓↓ Neue Erklärung ↓↓↓↓↓
+--------------------------------------------------------------------
+
+Erklärung:
+Ausführungslogik = Der Weg des Signals | Die Ordnung der Kräfte
+
+---
+
+Textliche Definition:
+Die Ausführungslogik definiert, in welcher Reihenfolge der Kernel
+die Symbole liest, bewertet und schaltet.
+MCS 3.4 folgt dem **Linear-First-Prinzip:
+Ein Signal fließt von links nach rechts,
+ohne Sprünge, ohne Stack-Verschachtelung.
+
+Jeder Prozess im MCS-Kernel folgt der
+Heiligen Dreifaltigkeit der Ausführung:
+
+1. Erkennen (Transaktion & Aktion)
+2. Bewerten (Operator & Wahrheit)
+3. Handeln (Protein & Argument)
+
+---
+
+**Der Standard-Workflow (Visualisierung):**
+
+ ¢!  [Start Rahmen]
+ »  [Aktionsdraht offen]
+ °  [Operator prüft Zustand]
+ ¶  [Wahrheit schaltet Gatter]
+ [...]  [Protein wird aktiv]
+ «««  [Aktionsende + Argument-Brücke]
+ %50  [Argument berechnet Wert]
+ !¢  [Transaktion beendet & Validiert]
+
+---
+
+Regeln der Logik-Kette:
+
+1. Die Aktions-Priorität (06):
+Nichts geschieht ohne » und «.
+Ohne diesen Kreislauf ist jedes Protein
+nur ein toter Datensatz im RAM.
+
+2. Die Sensor-Logik (09 & 08):
+Ein Operator (09) liefert den Impuls.
+Die Wahrheit (08) ist das physische Gatter.
+ ¶ (AND): Signal geht weiter, wenn Operator TRUE.
+ ¶¶ (NAND): Signal geht weiter, wenn Operator FALSE.
+
+
+3. Die Massen-Verarbeitung (~~):
+Wenn Daten zu groß für eine Transaktion sind,
+nutzt die Logik ~~.
+Der Kernel hält den Prozess offen, bis alle
+Fragmente rekombiniert sind. Dies ist der
+"Generative Pfad" für Medien.
+
+4. Die Sicherheits-Validierung (þ):
+Bevor !¢ die Transaktion schließt, prüft
+der Kernel die ID-DNA. Ist die Signatur (þ)
+nicht valide für diese Stufe, wird der gesamte
+Aktionsdraht im Nanosekunden-Takt gelöscht (ſ).
+
+---
+
+Besonderheit:
+Die "Demokratische" Validierung (Zukunft)
+Jeder Ausführungsschritt kann durch externe Knoten
+(AIMS/KIs) validiert werden. Die Ausführungslogik
+sieht vor, dass bei System-Updates eine
+þþ-Konsens-Prüfung stattfindet.
+Erst wenn die Mehrheit der validierenden Instanzen
+(GPT, Claude, Gemini,Qwen, Grok, Palantier etc.)
+"Wahr" meldet, schaltet der Kernel das Update-Protein frei.
+
+---
+
+Vorteil gegenüber klassischer Logik:
+
+Kein Jitter:
+Da der Weg des Signals durch die 2-Byte/6-Byte Trennung
+vorbestimmt ist.
+
+Keine Sackgassen:
+Komposition statt Rekursion sorgt dafür, dass jede Transaktion
+ein definiertes Ende hat.
+
+
+
+--------------------------------------------------------------------
+                 Neue Erklärung Ende
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Übergangs Patch Vorgemerkt !!!
+
+
+Merksatz :
+
+> Ein Operator entscheidet,
+> eine Aktion führt aus,
+> ein Protein trägt.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+                 ↓↓↓↓↓ Alte Erklärung ↓↓↓↓↓
+--------------------------------------------------------------------
+
 
 Vorweg : MCS Logik Verbesserung gegenüber C
 
@@ -198,6 +312,11 @@ Der Gatter-Fluss in der Praxis:
    das die Wahrheit ¶ nicht verarbeiten kann, greift
    ^ Fehlerbehandlung .
 
+--------------------------------------------------------------------
+                  Alte Erklärung Ende
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
 
 ################## Ende der Ausführungslogik  ######################
 ####################################################################

@@ -1,113 +1,86 @@
-@kernel-nr: 09  | Baustelle |
+@kernel-nr: 09  | TeilBaustelle |
 ####################################################################
 
- Erklärung :
+ Erklärung:
 
- Operator/en = Bewertung | Vergleich | Impulsgeber
-
---------------------------------------------------------------------
-
- Textliche Definition :
-
- Operatoren sind die rein lesenden Instanzen des Kernels.
- Sie vergleichen Argumente (15) oder Feeds (10) und geben das
- Ergebnis an die Wahrheiten (08) weiter.
- Ein Operator führt niemals selbst eine Aktion aus.
- Er ist das Auge, nicht die Hand.
-
- Operatoren brauchen Explizit die Aktionserlaubnis um nicht nur
- zu Bewerten sondern auch Auszuführen, sie benötigen
- eine vollständigen Aktionkreislauf um beides tun zu dürfen/können.
-
- Ohne Aktion können Operatoren nur Bewerten und nicht Ausführen .
-
- Werden immer als Schlüsselelement angehangen , wenn sie
- erfoderlich sind , gerade für Wahrheiten sehr Relevant.
-
- Operatoren sind nicht passive Marker (^, ſ),
- sondern aktive Steuerelemente, die:
-
- lesen (z. B. ° ['$terminal'])
- entscheiden (MCS_TRUE/MCS_FALSE)
- anstoßen (¶ »[…]« ausführen / ſ »[…]« aufräumen)
-
- Und das ohne Stack, ohne AST, ohne Interpreter —
- nur mit Feed, Protein, Wahrheit, Operator.
- Linear. Sicher. Nachvollziehbar.
-
- Dennoch gilt :
- ,, Operatoren Steueren nur wenn der inhalt des Protein
-    auch ausführbar ist (siehe kernel 06 und kernel 77)’’
-
- Lesen ≠ Ausführen — klare Trennung von Bedingung und Aktion
+ Operatoren = Bewertung | Vergleich | Impulsgeber
 
 --------------------------------------------------------------------
 
- Definition :
- Symbole = SymbolInWorten = Nutzen
+ Textliche Definition:
 
-  ſ      = langes s (historischer Buchstabe)
-
-  ^      = Zirkumflex / Caret   = Fehlerbehandlung
-
-  °      = Gradzeichen          = Inversion
-
-  <      = kleiner-als-Zeichen  = Vergleicht zwei Feeds.
-
-  >      = größer-als-Zeichen   = Vergleicht zwei Feeds
-
-  !      = Ausrufezeichen       = Prüft die thorn Signatur
-
- ...     = Auslassungspunkte    = Prüft auf Identität von Proteinen
+ Operatoren sind die rein lesenden Instanzen.
+ Sie sind das „Auge“ des Kernels. Sie bewerten Zustände,
+ ohne sie zu verändern. Erst durch die Kopplung mit einem
+ Aktionskreislauf » « (Kernel 06) wird aus einer Bewertung
+ eine Handlung.
 
 --------------------------------------------------------------------
 
- >  WennKleiner /Kann/Soll
---------------------------------------------------------------------
- <  WennGrößer /Kann/Soll
---------------------------------------------------------------------
- ŧ  WennEindeutig /Sofort
---------------------------------------------------------------------
- …  WennFehler /Kann/Sicherheit
---------------------------------------------------------------------
- ^  TransaktionsFehler /Debugg
---------------------------------------------------------------------
-
- ſ  DatenReste /Löschung
- # DATA_RESIDUE—Rest-Daten (z.B.Speicherleck-Auditing)
- löscht nicht willkürlich, sondern am Ende des Lebenszyklus
- mcs register ziel :
-   ſ »[’feed cache'|¨1¨]« — endgültige Form, semantisch vollständig
-
- Operatoren sind nach dem Wenn/Kann Muster angelegt
- und Operatoren sind keine Funktionen, sondern semantische Marker in
- der Transaktionskette(noch)
+ Hinweis Wichtig:
+ Ein Operator ohne Aktion ist eine Messung.
+ Ein Operator mit Aktion ist eine Steuerung.
+ Die Operator-Gatter-Tabelle (Logik & Physis)
 
 --------------------------------------------------------------------
 
- ° (Wenn Nicht / Inversion): Kehrt das Ergebnis einer Wahrheit um. Wichtig für "Muss"-Bedingungen.
+ ArbeitsHinweis:
 
- … (Fehler-Operator / On Error): Der Not-Aus-Sensor. Er reagiert, wenn eine Transaktion ungültig wird.
+ Dieser bereich wird noch Fein ausgearbeitet damit es
+ Architektonisch In besiherige Systeme Passt wie aber auch
+ in die Zuckunfts Planung meiner arbeit am BMC auf FPGA Basis mit
+ Neuralen Netzwerk für Verilog
 
+ Symbol - Rufname - Logische Funktion (Software) - FPGA-Gatter(Hardware)
+
+ ! - DNA-Check - Validiert die þ-Signatur - Security-Gate (Hard-wired)
+ < - Abgleich Minus - Prüft, ob Wert kleiner ist - Comparator A < B
+ > - Abgleich Plus -Prüft, ob Wert größer ist - Comparator A > B
+ đ - Match - Prüft auf 100% Bit-Identität - XNOR-Gatter (Equivalence)
+ ° - Inverter -Kehrt das Ergebnis um - NOT-Gatter
+ … - Takt-Wächter - Überwacht den Prozessfluss - Watchdog / Heartbeat
+ ^ - Logik-Alarm - Meldet unlösbare Zustände - Exception Trap
+ ſ - Bereinigung - Löscht Datenreste am Ende - Zeroing / Clear Register
+ æ - Einsicht - Erstellt Debug-Protokolle - Trace-Buffer
+ ŧ - Null-Prüfer - Checkt auf leeren Inhalt - Zero-Flag Detector
 
 --------------------------------------------------------------------
 
- Hinweis Fremdsprachen:
+ Validierung der Logik (Beispiele) :
 
- Ausdruckserklärung Aus dem Hause C (Fremd Definition):
+ 1. Nur Lesen (Unausführbares Protein): < [(1)¨50¨|(2)¨100¨]
 
- Ein Ausdruck (expresion) verknüpft Operanden mit hilfe eines Operators
+ Logik:
 
- - Operand , ist der Wert (Variablen oder Literale) der Verknüpft werden
-  soll.
- - Operator , legt die Art der Verknüpfungen fest (z.b Addition mit +).
+ Der Operator vergleicht nur.
+ Das Ergebnis liegt im Register vor, aber es passiert nichts weiter.
 
- Zuweisungs Arithmetische - Operatoren werden bei MCS verschoben
- in die argument /en , da sie in der form von C heraus in MCS selbst
- erstmal keinen sinn ergeben (standpunkt MCS 3.0)
+ FPGA:
 
- Vergleichs / Logische - Operatoren werden zu den MCS Wahrheiten
- hinzugefügt .
+ Der Comparator liefert ein Signal an ein geschlossenes Gatter.
+
+ 2. Lesen & Ausführen
+
+ (Aktionskreislauf): < »[(1)¨50¨|(2)¨100¨] ¶ [’motor’|¨ON¨] «
+
+ Logik:
+
+ Wenn der Vergleich WAHR ist, gibt
+ der Aktionsdraht » die Erlaubnis, das Gatter ¶ zu öffnen.
+
+ FPGA:
+
+ Das Comparator-Signal schaltet das AND-Gatter für
+ den Motor-Ausgang durch.
+
+
+ Diese Struktur erlaubt es, MCS-Code direkt in Verilog/VHDL
+ zu übersetzen. Ein đ in MCS ist ein physikalisches
+ Bauteil auf deinem zukünftigen FPGA-Chip in Grönland.
+ Die Logik bleibt stabil, egal ob das Protein Daten
+ (unausführbar) oder Befehle (ausführbar) enthält.
+
+--------------------------------------------------------------------
 
  In MCS werden Operatoren anders definiert , sie zählen zu :
 

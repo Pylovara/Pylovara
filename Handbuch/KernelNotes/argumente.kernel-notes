@@ -1,4 +1,4 @@
-@kernel-nr: 15
+@kernel-nr: 15 | TEILBAUSTELLE |
 ####################################################################
 ## Argumente
 --------------------------------------------------------------------
@@ -45,36 +45,40 @@
     oder angabe verstanden :
 
 
-««-      Minus
-««+      Plus
-««·      Mal
-««:      Geteilt
-««%      Prozentbezogene Rechnung, z. B. für Anteile
-««%50   „Gib 50 % von X weiter“
-««t3    t für time , wartezeit mit sekunden
-««r3    r für reboot-transaktion mit s für sekunden
+ ««-      Minus
+ ««+      Plus
+ ««·      Mal
+ ««:      Geteilt
+ ««%      Prozentbezogene Rechnung, z. B. für Anteile
+ ««%50   „Gib 50 % von X weiter“
+ ««t3    t für time , wartezeit mit sekunden
+ ««r3    r für reboot-transaktion mit s für sekunden
 
-Wird typischerweise am Proteinpacket angehangen
-(musterbeispiele mit muster begriffen in mcs cmd und blankernenner);
+ Wird typischerweise am Proteinpacket angehangen
+ (musterbeispiele mit muster begriffen in mcs cmd und blankernenner);
 
-¢! »[’Lüfter’|{’Watt’|¨200¨}]«««%50 = §MotorID !¢
 
-¢! »[’Lüfter’|{’Watt’|¨120¨}]«««%30 !¢
+ (Code Baustelle , muss der Logik valide angepasst werden)
 
-¢!
-    ¶ »[’Lüfter’|{’Temp’|¨80°¨}]
+
+ ¢! »[’Lüfter’|{’Watt’|¨200¨}]«««%50 = §MotorID !¢
+
+ ¢! »[’Lüfter’|{’Watt’|¨120¨}]«««%30 !¢
+
+ ¢!
+    ¶ »[’Lüfter’|{’Temp’|¨80°¨}]«
     ¶¶ »[’Lüfter’|{’Watt’| ¨220¨}]«««%100
-!¢
+ !¢
 
-oder als worflow :
+ oder als worflow :
 
-¢!
+ ¢!
     »[’Lüfter’|{’Watt’|¨150¨}]«««%40  #grundeinstellung
-        ¶ »[’Lüfter’|{’Temp’|¨80°¨}]  #wenn
-        ¶¶ »[’Lüfter’|{’Watt’| ¨220¨}]«««%100 #kann
-!¢
+        ¶ »[’Lüfter’|{’Temp’|¨80°¨}]«
+        ¶¶ »[’Lüfter’|{’Watt’| ¨220¨}]«««%100
+ !¢
 
-Daraus lassen sich ganze prozesse nachbilden
+ Daraus lassen sich ganze prozesse nachbilden
 
 --------------------------------------------------------------------
 

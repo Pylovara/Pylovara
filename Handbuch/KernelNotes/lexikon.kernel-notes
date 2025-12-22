@@ -18,16 +18,16 @@
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 ####################################################################
           01 X Datentypen -new      13 - Warp -fix
-          02 + Transaktion -clean   14 - þ Identifikation
-          03 + Protein -fix4        15 + Argumente -fix
+          02 - Transaktion -clean   14 X þ Identifikation -fix2
+          03 - Protein -fix4        15 - Argumente -fix
           04 - Proton -fix          16 - SchaltVerknüpfungen
-          05 + Trennbefehl -Final   17 - Adressierung -new
-          06 + Aktion -fix          18 X AI Synctimer
-          07 + Eingaben -fix4
-          08 + Wahrheiten -fix4     20 + Reihenfolge
-          09 - Operatoren -fix4     77 + Ausführungslogik
-          10 + Feed -Final2         88 - Dateitypen -fix
-          11 - Zielreferenz         99 + Register CMDs -new
+          05 - Trennbefehl -fix2    17 - Adressierung -new
+          06 - Aktion -fix2         18 X AI Synctimer
+          07 - Eingaben -fix4
+          08 - Wahrheiten -fix4     20 - Reihenfolge
+          09 - Operatoren -fix4     77 X Ausführungslogik -fix2
+          10 - Feed -fix2           88 - Dateitypen -fix
+          11 - Zielreferenz         99 - Register CMDs -new
           12 - Dirigent
 ####################################################################
         # Maschinen Code Speech – Kernel Syntax Handbuch  #

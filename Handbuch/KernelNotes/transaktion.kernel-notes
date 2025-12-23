@@ -1,42 +1,62 @@
 @kernel-nr: 02
 ####################################################################
-## Transaktion /en  :
 
-Sorgen für den Prozessrahmen und lösen nur Daten darin aus,
-wenn sie vorhanden oder Ausführbar sind.(siehe Aktionen)
-Transaktionsrahmen werden dafür verwendet um ein Protein
-als Start/end-punkt anzuerkennen bzw den ganzen Prozess-inhalt.
-Proteine bekommen ihren Auslöser durch Aktionen und sind damit
-innerhalb der Transaktion ausführbar oder auch nicht , je nach
-Aktionen oder keine .
+ Erklärung:
+
+ Transaktion/s/en: Transaktionsrahmen | MCS-Runtimebedienung
 
 --------------------------------------------------------------------
-# Definition :
 
-zwei symbole gepaart ergeben das symbole für transaktion anfang
-und zwei symbole gepaart ergeben das symbole für transaktion ende
+ Textliche Definition:
 
-¢!  Transaktion Anfang/Vorgang/Start , der Bedingung/bedingten Blocks
-!¢  Transaktion Ende/Vorgang/Ende  , der Bedingung/bedingten Blocks
+ Sorgen für den Prozessrahmen und lösen nur Daten darin aus,
+ wenn sie vorhanden oder Ausführbar sind (siehe Kernel 07 Aktion).
 
-# Transaktionsanordnungen :
+ Transaktionsrahmen werden dafür verwendet um ein Protein
+ als Start/end-punkt anzuerkennen bzw den ganzen Prozess-inhalt.
 
-¢!
-code
-!¢
-
-¢! code !¢
+ Protein/e bekommen ihren Auslöser durch Aktion/en und sind damit
+ innerhalb der Transaktion ausführbar oder nicht , je nach
+ Aktionserlaubnis/Ausführungsverdrahtung oder keine.
 
 --------------------------------------------------------------------
-## Transaktions Info für Schüler | Studenten | IT Personal :
 
-Der Trennbefehl wurde geändert um Trennbefehl /e
-von transaktionen zu unterscheiden
-der Anfang und Ende der Transaktion selbst
-definiert , ein ¢ ohne ! ist kein Startpunkt und
-ein ! ohne ¢ ist kein Endpunkt .
+ Definition Transaktion Start:
 
-Eselsbrücke : beide Symbole ergeben eins !
+ ¢!
 
+--------------------------------------------------------------------
+
+ Definition Transaktion Ende:
+
+ !¢
+
+--------------------------------------------------------------------
+
+ Definition Transaktionsanordnung:
+
+ ¢!
+ code
+ !¢
+
+ ¢! code !¢
+
+--------------------------------------------------------------------
+
+ Definition Transaktion In Worten:
+
+ Cent-Zeichen Ausrufezeichen Ausrufezeichen Cent-Zeichen
+
+--------------------------------------------------------------------
+
+ Verständniss Definition
+
+ Zwei Symbole gepaart ergeben das Symbole für Transaktion Start
+ und zwei Symbole gepaart ergeben das Symbole für Transaktion Ende
+
+ Transaktion/s Start der Bedingung/bedingten Blocks
+ Transaktion/s Ende  der Bedingung/bedingten Blocks
+
+--------------------------------------------------------------------
 ##################### Ende der Transaktion #########################
 ####################################################################

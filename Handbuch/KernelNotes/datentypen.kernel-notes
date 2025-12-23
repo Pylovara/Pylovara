@@ -1,30 +1,277 @@
+@kernel-nr: 01  | Version 0.1 |
 ####################################################################
-@kernel-nr: 01  | Baustelle |
-####################################################################
+
+ Erklärung:
+
+ Datentypen = Formate | Bit-Breiten | Speicher-Layout
+
+--------------------------------------------------------------------
+
+ Kategorie:
+
+ KERNEL = Beinhaltet allgemeine Kernel Datentypen
+
+ DNA-ID-GENERATOR = Beinhaltet þþ Generator Datentypen
+
+ PROTEINE = Beinhaltet Protein Datentypen
+
+ PROTONEN = Beinhaltet Protein Datentypen
+
+ BOOT-LOGIK = BIOS/UEFI-Spezialtypen
+
+--------------------------------------------------------------------
+
+ Textliche Definition:
+
+ Datentypen in MCS 3.5 definieren die physische Struktur eines
+ Proteins oder Protons im RAM und in den FPGA-Registern.
+ Da MCS als BIOS-Ersatz fungiert, sind diese Typen direkt
+ mit der Hardware-Adressierung verknüpft.
+
+ Unterscheidungen :
+
+ Kern-Typen (Hardware-nah)
+ Logik-Typen (Prozess-nah).
+
+ Hinweis:
+ Das Register Unterliegt diesem Visuellen Format :
+--------------------------------------------------------------------
+ MCS-Typ:   | Bezeichnung: | Bit-Breite:
+
+ Info:
+
+ Funktion:
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+ ################# Anfang DATENTYPEN KERNEL #######################
+--------------------------------------------------------------------
+
+ Information :
+
+ Kern-Datentypen (Physische Gatter-Breite) definieren, wie viele
+ "Drähte" im BMC für eine Information reserviert werden:
+
+--------------------------------------------------------------------
+ MCS-Typ: b1   | Bezeichnung: Bit-Impuls | Bit-Breite: 1
 
 
+ Info:
+ Standard-Einheit für Operatoren und Wahrheiten.
+ Verwendung im BIOS/UEFI
+
+ Funktion:
+ Schalterzustände (ON/OFF), Gatter-Steuerung.
+
+--------------------------------------------------------------------
+ MCS-Typ: b8   | Bezeichnung: Kern-Byte | Bit-Breite: 8
+
+ Info:
+ UTF-8 Zeichen, einfache Sensorwerte.
+
+ Funktion:
+ Tastatur und Symbol wie Sonderzeichen Einordnung
+--------------------------------------------------------------------
+ MCS-Typ: b16 | Bezeichnung: Logik-Link | Bit-Breite 16
+
+ Info:
+ MCS-Standard-Operatoren & Befehlskennung.
+
+ Funktion:
+ Verbindet zwei logische Zustände oder Symbole im Nanosekunden-Takt.
+--------------------------------------------------------------------
+ MCS-Typ: b32 | Bezeichnung: Adress-Pfad | Bit-Breite: 32
+
+ Info:
+ Standard-Adressierung für Legacy-Systeme.
+ Kompatibilitätsschicht für x86-Legacy-Strukturen.
+
+ Funktion:
+ Ermöglicht MCS den Zugriff auf herkömmliche
+ RAM-Bereiche außerhalb des BMC.
+--------------------------------------------------------------------
+ MCS-Typ: b64 | Bezeichnung: High-Speed-Pfad | Bit-Breite: 64
+
+ Info:
+ Große Datenströme, moderne Speicheradressierung.
+ Basis für modernes Speicher-Management und Kognitive AIMS-Prozesse.
+
+ Funktion:
+ Transportiert komplexe Protein-Pakete mit maximaler Bandbreite.
+--------------------------------------------------------------------
+ MCS-Typ: b-inf | Bezeichnung: Massen-Typ | Bit-Breite: 64
+
+ Info:
+ Genutzt für ~~ (MassenZusammenSetzung) bei Streaming.
+ Dynamische Skalierung für Stream-Daten (Video/Audio).
+
+ Funktion:
+ Hält das Gatter für die MassenZusammenSetzung (~~) offen.
+--------------------------------------------------------------------
 
 
+--------------------------------------------------------------------
+ ################## Ende DATENTYPEN KERNEL ########################
+--------------------------------------------------------------------
+--------------------------------------------------------------------
 
+--------------------------------------------------------------------
+ #############  Anfang Datentypen ID-DNA-GENERATOR ################
+--------------------------------------------------------------------
+ MCS-Typ: b-þa | Bezeichnung: þ-Anker
 
+ Info:
+ Dient als ID-DNA-GENERATOR Zeiger Zum Abgleich
 
+ Funktion :
+ Ein 16- oder 32-Bit (oder 64-bit oder 128-bit) Anker-Typ,
+ der nur als Zeiger für den Generator dient.
+ Der Generator selbst hat die echte ID-DNA
+--------------------------------------------------------------------
+ ##############  Ende Datentyp ID-DNA-GENERATOR ###################
+--------------------------------------------------------------------
+--------------------------------------------------------------------
 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+ ################# Anfang DATENTYPEN PROTEINE #####################
+--------------------------------------------------------------------
+ MCS-Typ: Þ-key | Bezeichnung: Identitäts-Typ | Bit-Breite: Variabel
 
+ Info:
+ Kryptogenetische Signatur für Transaktions-Sicherheit.
+ Basis der Schatten-Identität.
 
+ Funktion:
+ Wird auf BIOS-Ebene geprüft.
+ Erlaubt oder blockiert den Signalfluss in den Aktionsdraht ».
+--------------------------------------------------------------------
+ MCS-Typ: init-v | Bezeichnung: Start-Protein | Bit-Breite: 64+
 
+ Info:
+ Hardware-Initialisierungs-Vektor (Zündschlüssel).
 
+ Funktion:
+ Lädt FPGA-Bitstreams und Gatter-Konfigurationen beim
+ Kaltstart direkt in die Register.
+--------------------------------------------------------------------
+ MCS-Typ: hnd-þ | Bezeichnung: Konsens-Typ | Bit-Breite: 128
 
+ Info:
+ Schnittstelle für die Demokratische Validierung (AIMS-Handshake).
 
+ Funktion:
+ Abgleich der Signaturen zwischen verschiedenen KI-Instanzen
+ zur System-Integrität.
+--------------------------------------------------------------------
+ MCS-Typ: p-cmd  | Bezeichnung: Befehls-Protein | Bit-Breite: 16/32
 
+ Info:
+ Träger für ausführbare Kernel-Befehle (Register-Befehle).
 
+ Funktion:
+ Kapselt eine spezifische Aktion,
+ die innerhalb eines Rahmens ¢! !¢ ausgeführt wird.
+--------------------------------------------------------------------
+ ################## Ende DATENTYPEN PROTEINE ######################
+--------------------------------------------------------------------
+--------------------------------------------------------------------
 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+ ################# Anfang DATENTYPEN PROTONEN #####################
+--------------------------------------------------------------------
+ MCS-Typ: pr-phys  | Bezeichnung: Hardware-Physik | Bit-Breite: 32
 
+ Info:
+ Physikalische Messwerte (Einheiten) innerhalb von {}.
 
+ Funktion:
+ Verarbeitung von Echtzeit-Sensordaten (Watt, Volt, Celsius).
+ Ermöglicht die direkte Hardware-Steuerung ohne Umrechnungs-Latenz.
+--------------------------------------------------------------------
+ MCS-Typ: f-ref | Bezeichnung: Zustands-Referenz | Bit-Breite: 16/32
 
+ Info:
+ Referenz-Pointer (Feed-Ref) auf Kernel 10.
 
+ Funktion:
+ Hält den Verweis auf einen Systemzustand im RAM fest.
+ Verhindert Stack-Overflows, da keine Daten kopiert,
+ sondern nur adressiert werden.
+--------------------------------------------------------------------
+ MCS-Typ: pr-val | Bezeichnung: Logik-Wert | Bit-Breite: 1 bis 64
 
+ Info:
+ Reine numerische oder boolesche Werte (Proton-Inhalt).
 
+ Funktion:
+ Dient als Operand für die Operatoren (Kernel 09).
+ Liefert die Basis für Vergleiche wie < , > oder đ.
 
+--------------------------------------------------------------------
+ MCS-Typ: pr-dna | Bezeichnung: Bio-Schnittstelle | Bit-Breite: Variabel
 
-################### Ende der Datentypen ############################
-####################################################################
+ Info:
+ Platzhalter für die zukünftige ID-DNA-BIOLIVE Einbindung.
+
+ Funktion:
+ Schnittstelle für biometrische oder organische Datenabgleiche
+ (Baustelle für die spätere Erweiterung).
+--------------------------------------------------------------------
+ ################## Ende DATENTYPEN PROTONEN ######################
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+ ################# Anfang DATENTYPEN BOOT-LOGIK ###################
+--------------------------------------------------------------------
+ MCS-Typ: b-root | Bezeichnung: Master-Zweig | Bit-Breite: 128
+
+ Info:
+ Höchste Adressierungsebene für den Hardware-Zugriff.
+
+ Funktion:
+ Definiert den physischen Root-Zugriff auf den Chipsatz.
+ Nur mit Stufe 10 (Thomas Zimmermann) þ-Key ansprechbar.
+--------------------------------------------------------------------
+ MCS-Typ: sys-rst | Bezeichnung: Purge-Initialer | Bit-Breite: 1
+
+ Info:
+ Hard-wired Reset-Trigger.
+
+ Funktion:
+ Erzwingt die vollständige Bereinigung (ſ)
+ aller Register vor dem nächsten Rechenzyklus.
+--------------------------------------------------------------------
+ ################## Ende DATENTYPEN BOOT-LOGIK ####################
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+ Hinweis:
+
+ Regel der Reinheit (ſ): Jede Transaktion innerhalb dieser
+ Datentypen endet zwingend mit dem Operator ſ.
+
+ Dies garantiert die atomare Sicherheit:
+ Keine Datenreste, keine Side-Channel-Leaks,
+ kein Spielraum für Manipulationen im BIOS-Bereich.
+
+ Abschluss-Satz:
+ Vorteil dieser Struktur:
+ MCS erzwingt durch die bit-genaue Definition,
+ dass Hardware und Software eine untrennbare Einheit bilden.
+ Es gibt keine Interpretation durch Dritt-Anbieter –
+ es gibt nur die absolute, deterministische Ausführung.
+
+--------------------------------------------------------------------
+
+ Datentypen Versions Validierungen 0.1:
+
+ Kernel 09 (Operatoren) validiert.
+
+ Kernel 14 (Identifikation) durch die þ-Anker logisch unterfüttert.
+
+--------------------------------------------------------------------
+##################### Ende der Datentypen ############################ ######################################################################

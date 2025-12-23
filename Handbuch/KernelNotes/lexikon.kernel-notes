@@ -17,8 +17,8 @@
 ####################################################################
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 ####################################################################
-          01 X Datentypen -new      13 - Warp -fix
-          02 - Transaktion -clean   14 X þ Identifikation -fix2
+          01 X Datentypen -fix1     13 - Warp -fix
+          02 - Transaktion -fix1    14 X þ Identifikation -fix2
           03 - Protein -fix4        15 - Argumente -fix
           04 - Proton -fix          16 - SchaltVerknüpfungen
           05 - Trennbefehl -fix2    17 - Adressierung -new
@@ -32,7 +32,7 @@
 ####################################################################
         # Maschinen Code Speech – Kernel Syntax Handbuch  #
         # Tastaturstandart: UTF -8 Deutscher Standart     #
-        # Version: 3.5 | Autor: Thomas Zimmermann         #
+        # Version: 3.6 | Autor: Thomas Zimmermann         #
         # Standort: /Pylovara/Handbuch/KernelNotes/       #
         # Licenses: /Pylovara/Licenses L0 - L6            #
         # Status: Vollständige Rollende-Verbesserungen    #

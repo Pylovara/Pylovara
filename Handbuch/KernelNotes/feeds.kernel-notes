@@ -1,12 +1,13 @@
 @kernel-nr: 10
 ####################################################################
+
  Erklärung:
 
  Feed/s = Datenkanal, nicht Kontrollkanal
 
 --------------------------------------------------------------------
 
- Textliche Definition :
+ Textliche Definition:
 
  Ein sogenannter Feed nimmt eine information und gibt sie weiter
  an seine Dutzenschaften .
@@ -26,21 +27,21 @@
 
 --------------------------------------------------------------------
 
- Definition Feed Symbol :
+ Definition Feed Symbol:
 
   ( Klammer Auf
   ) Klammer zu
 
 --------------------------------------------------------------------
 
- Definition Feed Abkürzungen :
+ Definition Feed Abkürzungen:
 
  Führender Feed = FF
  Tragender Feed = TF
 
 --------------------------------------------------------------------
 
- Definition Führende/r Feed :
+ Definition Führende/r Feed:
 
  (1)"" <-- Führender Feed an Eingabe Print
  (2)'' <-- Führender Feed an Eingabe Shell CMD
@@ -57,13 +58,13 @@
 
 --------------------------------------------------------------------
 
- Definition Tragende/r Feed in Worten :
+ Definition Tragende/r Feed in Worten:
 
  Eingabe Anfang Klammer Auf Zahl/Buchstabe Klammer Zu Eingabe Ende
 
 --------------------------------------------------------------------
 
- Definition Tragende/r Feed :
+ Definition Tragende/r Feed:
 
  "(1)" <-- Tragender Feed in Eingabe Print
  '(2)' <-- Tragender Feed in Eingabe Shell CMD
@@ -81,9 +82,9 @@
 
 --------------------------------------------------------------------
 
- Verständniss Definition :
+ Verständniss Definition:
 
- für das verständnisse suchen wir kurz regulär über das terminal :
+ für das verständnisse suchen wir kurz regulär über das terminal
 
  ┌[bandino@dev][16:26:36|Do Nov 27]
  │ ᴾʸˡᵒᵛᵃʳᵃ
@@ -102,7 +103,7 @@
 
 --------------------------------------------------------------------
 
- Definition Für Entwickler :
+ Definition Für Entwickler:
 
  FF können auch Hardcodierte Eingaben Tragen
 

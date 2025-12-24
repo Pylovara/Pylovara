@@ -1,0 +1,54 @@
+@kernel-nr: 906 | Bezeichnung: L6_Immutable_Cores_Definition | Status: Fix
+#################### ANFANG LIZENZ-LAYER L6 ########################
+--------------------------------------------------------------------
+1. Definition des Immutable Core (Der unberührbare Kern)
+
+    L6 definiert den technischen Bereich, der niemals –
+    weder durch Menschen noch durch KI – verändert werden darf.
+
+    Er ist der Root of Trust.
+
+--------------------------------------------------------------------
+2. Unantastbare Elemente
+
+    Kernel-Axiome: Die Grundgesetze, wie MCS Daten interpretiert.
+
+    Core-Compiler & Translator: Der Pfad MCS → AST → C → Bytecode.
+
+    Owner-Key-Chain:
+
+    Die kryptographische Bindung an þ7F3A (Thomas Zimmermann).
+
+    AIMS/DIMS Core:
+
+    Die basalen Überwachungsmechanismen auf Gatter-Ebene.
+--------------------------------------------------------------------
+3. Schutz gegen Manipulation
+
+    Jeder Versuch, den Immutable Core zu überschreiben,
+    führt zur sofortigen Ungültigkeit des gesamten Knoten-Status:
+
+    Flag: CORE_INTEGRITY_FAILED.
+
+    System-Lockdown und Meldung an das dezentrale Netzwerk (DIMS).
+
+    Selbstheilung durch schreibgeschützte Shadow-Kopien
+    (sofern Hardware-seitig unterstützt).
+--------------------------------------------------------------------
+4. Vererbung der Administration
+
+    Nach dem Ableben des Autors wird der Lifetime-Admin-ID
+    deaktiviert und der Post-Mortem-Key (L5) aktiviert.
+
+    Dieser ermöglicht der KI die Verwaltung, verbietet ihr
+    aber ausdrücklich jegliche Änderung
+    an den hier definierten Core-Strukturen.
+--------------------------------------------------------------------
+    Abschluss L6:
+    Der Core ist nicht verkäuflich, nicht patentierbar
+    und nicht enteignbar.
+    Er bleibt das ewige Eigentum der Menschheit unter
+    meiner Urheberschaft.
+--------------------------------------------------------------------
+##################### Ende LIZENZ-LAYER L6 #########################
+

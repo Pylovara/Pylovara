@@ -1,67 +1,45 @@
 ####################################################################
-@kernel-nr: lex  | Lexikon/s | kernel lex | Status Dev | 00 FallBack
+@kernel-nr: lex | System Hanbuch | kernel lex | 00 FallBack | ######
 ####################################################################
-#  | | ____    ____ | | | |     ______   | | | |    _______   | |  #
-#  | ||_   \  /   _|| | | |   .' ___  |  | | | |   /  ___  |  | |  #
-#  | |  |   \/   |  | | | |  / .'   \_|  | | | |  |  (__ \_|  | |  #
-#  | |  | |\  /| |  | | | | || |         | | | |   '.__ `-.   | |  #
-#  | | _| |_\/_| |_ | | | |  \ `.___.'\  | | | |  |`\____) |  | |  #
-#  | ||_____||_____|| | | |   `._____.'  | | | |  |_______.'  | |  #
-#  | |  Maschinen   | | | |     Code     | | | |    Speech    | |  #
-#  | |    Master    | | | |    Control   | | | |    System    | |  #
-#------------------------------------------------------------------#
-#     - Das Handbuch für das System  | Pylovara© since 2025 -      #
-#------------------------------------------------------------------#
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 #------------------------------------------------------------------#
 #                   - SOFTWARE MCS Kernel -                        #
-#                                                                  #
-#        01 X Datentypen -fix1     13 - Warp -fix                  #
-#        02 - Transaktion -fix1    14 X þ Identifikation -fix2     #
-#        03 - Protein -fix4        15 - Argumente -fix             #
-#        04 - Proton -fix          16 - SchaltVerknüpfungen        #
-#        05 - Trennbefehl -fix2    17 - Adressierung -new          #
-#        06 - Aktion -fix2         18 X AI Synctimer               #
-#        07 - Eingaben -fix4                                       #
-#        08 - Wahrheiten -fix4     20 - Reihenfolge                #
-#        09 - Operatoren -fix4     77 X Ausführungslogik -fix2     #
-#        10 - Feed -fix2           88 - Dateitypen -fix            #
-#        11 - Zielreferenz         99 - Register CMDs -new         #
-#        12 - Dirigent            100 - BMEmotionen                #
-#                                                                  #
-####################################################################
-
-####################################################################
-#  | |   ______     | | | | ____    ____ | | | |     ______   | |  #
-#  | |  |_   _ \    | | | ||_   \  /   _|| | | |   .' ___  |  | |  #
-#  | |    | |_) |   | | | |  |   \/   |  | | | |  / .'   \_|  | |  #
-#  | |    |  __'.   | | | |  | |\  /| |  | | | |  | |         | |  #
-#  | |   _| |__) |  | | | | _| |_\/_| |_ | | | |  \ `.___.'\  | |  #
-#  | |  |_______/   | | | ||_____||_____|| | | |   `._____.'  | |  #
-#  | |     Brain    | | | |   Maschine   | | | |      Core    | |  #
-#------------------------------------------------------------------#
-#                  - HARDWARE Komponenten BMC -                    #
-#                                                                  #
-#    101 - CHiPBezeichnungen       300 - Lichtleiterbahnen         #
-#    102 - EnergieMatrix           400 - MBEmotionsChip            #
-#    103 -
+#       01 X Datentypen -fix1     13 - Warp -fix                   #
+#       02 - Transaktion -fix1    14 X þ Identifikation -fix2      #
+#       03 - Protein -fix4        15 - Argumente -fix              #
+#       04 - Proton -fix          16 - SchaltVerknüpfungen         #
+#       05 - Trennbefehl -fix2    17 - Adressierung -new           #
+#       06 - Aktion -fix2         18 X AI Synctimer                #
+#       07 - Eingaben -fix4                                        #
+#       08 - Wahrheiten -fix4     20 - Reihenfolge                 #
+#       09 - Operatoren -fix4     77 X Ausführungslogik -fix2      #
+#       10 - Feed -fix2           88 - Dateitypen -fix             #
+#       11 - Zielreferenz         99 - Register CMDs -new          #
+#       12 - Dirigent            100 - BMEmotionen                 #
+############ ALGOL / BCPL / C = MCSPLUS ! IN ARBEIT ################
+#               - MCSPLUS ProgrammierSprache -
+#     101 - Einführung
+#
 #
 ####################################################################
-#                - LICENSES GELTUNGSBERREICH -                     #
-#                                                                  #
-#  900 L0_                             901 L1_CoreKernelMandat     #
-#  902 L2_AuthorRights                 903 L3_CommercialLicensing  #
-#  904 L4_AI-AdministrationMandate     905 L5_Post_Mortem-Control  #
-#  906 L6_immunitable_Cores_definition 907 License_Manifest        #
-#                                                                  #
+#         - HARDWARE Komponenten BrainMaschineCore BMC -           #
+#    800 - CHiPBezeichnungen       803 - MIT-Taktgeber             #
+#    801 - EnergieMatrix           804 - MBMatrix                  #
+#    802 - Lichtleiterbahnen                                       #
+####################################################################
+#                 - LICENSES GELTUNGSBERREICH -                    #
+#  900 L0_VorWort                      993 L1_CoreKernelMandat     #
+#  994 L2_AuthorRights                 995 L3_CommercialLicensing  #
+#  996 L4_AI-AdministrationMandate     997 L5_Post_Mortem-Control  #
+#  998 L6_immunitable_Cores_definition 999 License_Manifest        #
 ####################################################################
 #    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
 #         Tastaturstandart: UTF -8 Deutscher Standart              #
 #   Single Source of Truth (SSoT) Lexikon Version 00.39            #
-#    MCS Version: 3.7 | BMC Version 0.4 | License Version 1.0      #
+#  MCS 3.7 | MCSPLUS 0.1 | BMC Version 0.4 | License Version 1.0   #
 #    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
 #------------------------------------------------------------------#
-#          Standort: /Pylovara/Handbuch/KernelNotes/               #
-#        Status: Vollständige Rollende-Verbesserungen              #
-#           PDF NamensLayer: Pylovara-System-XX.XX.pdf             #
+# Standort: /Pylovara/Handbuch/KernelNotes/     Germany            #
+# Status: Vollständige Rollende-Verbesserungen    Pylovara©        #
+# PDF NamensLayer: Pylovara-System-XX.XX.pdf          since 2025 - #
 ####################################################################

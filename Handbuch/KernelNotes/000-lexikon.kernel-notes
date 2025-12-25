@@ -27,8 +27,10 @@
 #        09 - Operatoren -fix4     77 X Ausführungslogik -fix2     #
 #        10 - Feed -fix2           88 - Dateitypen -fix            #
 #        11 - Zielreferenz         99 - Register CMDs -new         #
-#        12 - Dirigent                                             #
+#        12 - Dirigent            100 - BMEmotionen                #
 #                                                                  #
+####################################################################
+
 ####################################################################
 #  | |   ______     | | | | ____    ____ | | | |     ______   | |  #
 #  | |  |_   _ \    | | | ||_   \  /   _|| | | |   .' ___  |  | |  #
@@ -38,10 +40,10 @@
 #  | |  |_______/   | | | ||_____||_____|| | | |   `._____.'  | |  #
 #  | |     Brain    | | | |   Maschine   | | | |      Core    | |  #
 #------------------------------------------------------------------#
-#                       - HARDWARE BMC -
-#
-#    101 - CHiPBezeichnungen       300 - Lichtleiterbahnen
-#    102 - CHiPKomponenten
+#                  - HARDWARE Komponenten BMC -                    #
+#                                                                  #
+#    101 - CHiPBezeichnungen       300 - Lichtleiterbahnen         #
+#    102 - EnergieMatrix           400 - MBEmotionsChip            #
 #    103 -
 #
 ####################################################################
@@ -55,10 +57,11 @@
 ####################################################################
 #    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
 #         Tastaturstandart: UTF -8 Deutscher Standart              #
-#   Single Source of Truth (SSoT) Lexikon Version 00.37
-#    MCS Version: 3.6 | BMC Version 0.1 | License Version 1.0      #
+#   Single Source of Truth (SSoT) Lexikon Version 00.39            #
+#    MCS Version: 3.7 | BMC Version 0.4 | License Version 1.0      #
 #    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
 #------------------------------------------------------------------#
 #          Standort: /Pylovara/Handbuch/KernelNotes/               #
 #        Status: Vollständige Rollende-Verbesserungen              #
+#           PDF NamensLayer: Pylovara-System-XX.XX.pdf             #
 ####################################################################

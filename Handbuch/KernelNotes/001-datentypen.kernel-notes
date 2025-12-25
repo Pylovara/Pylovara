@@ -1,4 +1,4 @@
-@kernel-nr: 01  | Version 0.1 |
+@kernel-nr: 01  | Bezeichnung: Datentypen | Version 0.2 |
 ####################################################################
 
  Erklärung:
@@ -274,4 +274,57 @@
  Kernel 14 (Identifikation) durch die þ-Anker logisch unterfüttert.
 
 --------------------------------------------------------------------
-##################### Ende der Datentypen ############################ ######################################################################
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+#########| Spezialisiert | NUR BMC | NUR Hardware |#################
+--------------------------------------------------------------------
+
+ Kategorie:
+
+ MIT-SYNC = BOOT-LOGIK / HARDWARE-SYNC
+
+--------------------------------------------------------------------
+ ################## Anfang Datentypen MIT-SYNC ####################
+--------------------------------------------------------------------
+ MCS-Typ: mit-t  | Bezeichnung: Impuls-Trigger | Bit-Breite: 1
+
+ Info:
+ Repräsentiert den binären Zustand des mechanischen MIT-Aktors.
+
+ Funktion:
+ Erkennt das Überschreiten der harten Druckschwelle
+ am Pinline-Eingang. Schaltet das System-Ereignis auf 1
+ (Ereignis-Start).
+--------------------------------------------------------------------
+ MCS-Typ: mit-ref | Bezeichnung: Zeit-Anker-Referenz | Bit-Breite: 64
+
+ Info:
+ Der absolute Zeitstempel, der bei jedem MIT-Impuls generiert wird.
+
+ Funktion:
+ Dient als globaler Nullpunkt für den AI Synctimer (Kernel 18).
+ Alle nachfolgenden Protein-Transaktionen werden relativ zu diesem
+ Anker getaktet.
+--------------------------------------------------------------------
+ MCS-Typ: mit-dmp | Bezeichnung: Dämpfungs-Vektor | Bit-Breite: 8
+
+ Info:
+ Überwachungswert für die Energieabsorption am Endpunkt.
+
+ Funktion:
+ Prüft, ob der Impuls nach dem Anschlag korrekt absorbiert
+ wurde (Ruhezustand-Validierung), um Resonanz oder
+ Nachschwingen auszuschließen.
+--------------------------------------------------------------------
+ ###################  Ende Datentyp MIT-SYNC ######################
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+ ################## Ende DATENTYPEN KERNEL ########################
+--------------------------------------------------------------------
+--------------------------------------------------------------------

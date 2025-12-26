@@ -1,31 +1,50 @@
 @kernel-nr: 13
 ####################################################################
 
-    ø- -ø     Warp  :
+ Erklärung:
 
-Ein Warp wird dafür verwendet um explizite language's aller art
-mit transportiert zu werden.Der Warp wird entweder als einzel
-Transaktion mit Zielreferenz oder Dirigenten verschickt als
-einzel Transaktionsauftrag Oder einer Protein Verarbeitungs Zelle
-beigefügt wenn es Performanter Transportiert werden kann , weil der
-warp die selben Elektronischen Nervenbahnen des Systems anspricht
-(Stichwort lastenverteilung)
-
-Direkte Assembly-Anbindung oder Compiler:
-Code in Warps (\øC|...ø) einzubetten und direkt an GCC zu senden,
-ist effizient für Low-Level-Steuerung.
-Das spart Overhead und ermöglicht nahezu Echtzeit-Interaktion
-mit Hardware.
+ Warp  = FremdsprachenTransport | Warpdraht
 
 --------------------------------------------------------------------
 
- Definition :
+ Erklärung:
 
- ø- -ø
+ Ein Warp wird dafür verwendet um Fremdsprachen zu Transporieren.
+ Man kann sie Direkt in Den jeweiligen Compiler Lenken und dadurch
+ eine Direkte Brücke Erreichen .
+
+ Der Warp ist eine Konsiquente Weiter gedachte art von Emulatoren,
+ nur das hier nichts emuliert wird sondern direkt zugespielt
+
+ Der Rücktransport wird je nach Adressierung mit Dirigenten oder
+ Zielreferenz getaggt und dieses Muster von Zuspielen wird als
+ späteres Warp Programm geschrieben, um die Datenpipeline zu
+ Ochestrieren.
+
+ (Stichwort lastenverteilung)
 
 --------------------------------------------------------------------
 
- Definition Anfang und Ende :
+ Definition Warp | Warpdraht:
+
+ Transport direkt eine Compiler Spezifische Sprache und kann
+ einzelnd in einer Transaktion Direkt gepusht/Verbunden werden.
+
+--------------------------------------------------------------------
+
+ Definition Warp Anfang sind 2 Symbole in Worte:
+
+ Durchgestrichenes O Minus
+
+--------------------------------------------------------------------
+
+ Definition Warp Ende sind 2 Symbole in Worte:
+
+ Minus Durchgestrichenes O
+
+--------------------------------------------------------------------
+
+ Definition Symbol Anfang und Ende :
 
 
  ø- #Anfang | zwei symbole
@@ -45,10 +64,10 @@ mit Hardware.
 --------------------------------------------------------------------
  Anbindungsbeispiele :
 
-ø- ,gcc,
+ ø- # C
  #include <stdio.h>
 
-int fibonacci(int n) {
+ int fibonacci(int n) {
     if (n <= 1) return n;
 
     int a = 0, b = 1, temp;
@@ -58,135 +77,15 @@ int fibonacci(int n) {
         b = temp;
     }
     return b;
-}
+ }
 
-int main() {
+ int main() {
     int n = 10;
     printf("Fibonacci(%d) = %d\n", n, fibonacci(n));
     return 0;
-}
--ø = §gcc
-
-
-ø- ,python,
-def fibonacci(n):
-    if n <= 1:
-        return n
-
-    a, b = 0, 1
-    for _ in range(2, n + 1):
-        a, b = b, a + b
-    return b
-
-if __name__ == "__main__":
-    n = 10
-    print(f"Fibonacci({n}) = {fibonacci(n)}")
--ø = §python
-
-ø- ,java,
-function fibonacci(n) {
-    if (n <= 1) return n;
-
-    let a = 0, b = 1;
-    for (let i = 2; i <= n; i++) {
-        [a, b] = [b, a + b];
-    }
-    return b;
-}
-
-const n = 10;
-console.log(`Fibonacci(${n}) = ${fibonacci(n)}`);
--ø = §java
-
-
-ø- ,rust,
-fn fibonacci(n: u32) -> u32 {
-    if n <= 1 {
-        return n;
-    }
-
-    let mut a = 0;
-    let mut b = 1;
-    for _ in 2..=n {
-        let temp = a + b;
-        a = b;
-        b = temp;
-    }
-    b
-}
-
-fn main() {
-    let n = 10;
-    println!("Fibonacci({}) = {}", n, fibonacci(n));
-}
--ø = §rust
-
-
- die layouts selbst sind durchgängig durchdacht .
+ }
+ -ø = §gcc
 
 --------------------------------------------------------------------
- Dev Notiz : Wenns zu Warp anfang und end Problemen kommen sollte
- Wir die Symbolik verbessert ø! !ø <- dann gilt das selbe wie bei
- Transaktion (siehe kernel lex 02)
---------------------------------------------------------------------
-
-
-MCS-Transaktion mit Warp für C (muster)
-
-¢!                                        # Transaktion starten
-ø- ,C,                                    # Warp + notiz für C-Code
-#include <stdio.h>
-#include <iwlib.h>
-
-int main() {
-    wireless_config wconf;
-    int sock = iw_sockets_open();
-    if (iw_get_basic_config(sock, "wlan0", &wconf) < 0) {
-        return 1;
-    }
-    wconf.frequency = 2.4e9; // 2.4 GHz
-    if (iw_set_basic_config(sock, "wlan0", &wconf) < 0) {
-        return 1;
-    }
-    return 0;
-}
--ø = §gcc                    # Warp an Compiler (gcc) senden
-    ;;                      # Paralelle Transport
-»['sudo iw dev wlan0 set freq 2412 HT20']«  # Protein: WLAN-Band auf 2.4G setzen
-= §Displey                  # Ergebnis(z. B. Erfolg/Fehler)an Display
-!¢                          # Transaktion beenden
-
-Interpretation:
-
-Der C-Code wird in einen Warp (øC|...ø) eingebettet und an
-§gcc gesendet, was bedeutet,dass MCS den Code kompiliert
-(oder interpretiert) und in Assembly-Binaries übersetzt.
-Das Protein [{Band|2.4G}§WLAN] ist die MCS-native Repräsentation
-der Aktion,die direkt die Hardware (WLAN-Interface) anspricht,
-über ein Kernel-Modul (*.needle). Der Feed §(1)Displey
-gibt das Ergebnis (z. B. Erfolg oder Fehler)
-an ein Display weiter, wie im Beispiel.
-MCS sendet die Symbolik ([{Band|2.4G}§WLAN])
-direkt an die Assembly,ohne Umrechnungsvariablen, was den Punkt
-über die direkte Assembly-Interaktion bestätigt.
-
---------------------------------------------------------------------
-WLAN-Implementierungsmöglichkeit GROBES Muster:
-
-¢!
-»[{’Interface’|'wlan0'}|{’Action’|'set_band'}|{’Value’|¨2.4G¨}]«
-ø- ,C,
-Code..
--ø = §gcc
-!¢
-
-Warp-Standardisierung: Definiert ein Standard-Format für C-Warps,
-Metadaten,die MCS mitteilen, welche :
-Zielreferenzen § oder Protonen {} angesprochen werden.
---------------------------------------------------------------------
-
-Info : Warps Wurden hier definiert und können In anderen erklärungen
-Zur zeit vom eigentlichen Warp abweichen
-
 ######################## Ende des Warp #############################
 ####################################################################

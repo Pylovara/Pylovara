@@ -1,35 +1,44 @@
 @kernel-nr: 20
 ####################################################################
-## Reihenfolge
 
-Reihenfolge wenn das angesprochene System oder Browser die Daten
-für eine reibungslose Übersetzung benötigt ist : 5
+ Reihenfolge
 
-1. Transaktion Anfang
-2. Aktion Anfang »
-3. Protein (das Proton mitliefern kann)
-+. Proton (das im protein mitgeführt wird)
-4. Aktion Ende «
-+. ø*code Warp optional
-+. = Kennungswert nur wenn datentransport
-+. §Zielreferenz oder $Dirigent | oder beides
-5. Transaktion Ende
+ Reihenfolge wenn das angesprochene System oder Browser die Daten
+ für eine reibungslose Übersetzung benötigt ist : 5
+
+ 1.  Transaktion Anfang
+ +.  WH+ADA+PI
+ +.  OT+2.AA+3.PI+PO4.AE+ADA+ADS+ZR+DI
+ +.  ø*code Warp optional
+ +.  =ADS + §Zielreferenz/$Dirigent
+ !+. þIDI
+ 5.  Transaktion Ende
+
+ !- þID-DNA-IDENTIFIKATION (siehe kernel 14)
 --------------------------------------------------------------------
-## Wichtig zu Verstehen :
 
-Proteine können mehrfach in einer Transaktion mitgebene werden
-, sie starten oder beenden mit der Transaktion , sondern mit
-den Aktionen Anfang » und Ende « , die Transaktion selbst Ist
-der prozess oder auch die Zelle die datenträgt ...
+ NUR FÜR DIE Reihenfolgen Übersicht:
 
-Warp (das für die übersetzung für Performenstechnische aspekte
-direkt in die jeweiligen compositor bzw Compiler eingespeißt wird)
-kann in einer eigenständigen zeile außerhalb des proteinpacketes
-angehangen werden , also zwischen 4 und 5 .
+ Operatoren = OT | Aktion Anfang = AA | Aktion Ende = AE
+ Aktionsdraht = ADA | Aktionsdraht Ende = ADE
+ Wahrheiten = WH | Protein = PI | Proton = PO
+ Adressierung = ADS | §Zielreferenz = ZR | Dirigent = DI
+ ID-DNA-IDENTIFIKATION = IDI | WARP = WP
 
-þ Identifikationen werden in der selben sparte wie §/$ gesetzt !
+--------------------------------------------------------------------
 
-Hinweis : Der Minimum Standart ist 1-2-3-4-5 = 5 (z.b bei configs)
+ Wichtig zu Verstehen :
+
+ Proteine:
+ können mehrfach in einer Transaktion mitgebene werden.
+ Sie starten oder beenden mit der Transaktion , sondern mit
+ den Aktionen Anfang » und Ende « , die Transaktion selbst Ist
+ der Prozess oder auch die Zelle die Daten tragen ...
+
+ þ Identifikationen werden Immer an die Adressierung g
+
+ Hinweis :
+ Der Minimum Standart ist 1-2-3-4-5 = 5 (z.b bei configs)
 
 ##################### Ende der Reihenfolge #########################
 ####################################################################

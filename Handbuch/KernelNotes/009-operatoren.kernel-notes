@@ -53,9 +53,10 @@
  Logik:
 
  Der Operator vergleicht nur.
- Das Ergebnis liegt im Register vor, aber es passiert nichts weiter.
+ Das Ergebnis liegt im Register vor, aber es passiert nichts weiter,
+ wenn kein Aktionskreislauf oder Aktionsdraht angeschlossen ist.
 
- FPGA:
+ Speziell für FPGA:
 
  Der Comparator liefert ein Signal an ein geschlossenes Gatter.
 

@@ -1,11 +1,11 @@
 @kernel-nr: 06
 ####################################################################
 
- Erklärung :
+ Erklärung:
 
- Aktion/en : Ausführung/en | Aktionserlaubnis | Aktionskreislauf
+ Aktion/en = Ausführung/en | Aktionserlaubnis | Aktionskreislauf
 
- Aktionsdraht : Ausführungsverdrahtung/en | LogikSchaltkreis
+ Aktionsdraht = Ausführungsverdrahtung/en | LogikSchaltkreis
 
 --------------------------------------------------------------------
 
@@ -50,7 +50,7 @@
 
  Aktionskreislauf Erklärung :
 
- Ein Geschlossener Aktionskreislauf führt Prozesse aus.
+ Ein Geschlossener Aktionskreislauf führt Prozesse für sich aus.
 
 --------------------------------------------------------------------
 
@@ -66,7 +66,7 @@
 
  Ein Aktionsdraht kann als Entscheidungsschaltweg angesehen werden
  und hat mehrere oder einen Aktionsende/n Ausgang ,
- wird für Wahrheiten verwendet um operatoren Wahrheits
+ wird für Wahrheiten verwendet um Operatoren Wahrheits
  Prozesse oder Reine Ausführbare Proteine Zu steuern.
 
 --------------------------------------------------------------------

@@ -41,25 +41,33 @@
 
  Definition Protein : nicht ausführbar
 
- []
+      []
 
 --------------------------------------------------------------------
 
  Definition Protein : ausführbar
 
-       »[]«
+      »[]«
 
 --------------------------------------------------------------------
 
  Definition Protein : ausführbar + Argument
 
-       »[]«««t
+      »[]«««t
 
 --------------------------------------------------------------------
 
  Definition Protein : ausführbar + Argument + Adressierung
 
        »[]«««t =
+
+
+ Info = Adressierungen werden wenn sie im gesammten Prozess
+        in der Transaktion den selben Dirigenten oder und
+        Zielreferenz hat an Punkt 5 angeschloßen (siehe kernel 20).
+        Wenn sie jedoch innerhalb des Prozesses in der Transaktion,
+        verschieden ausgänge haben müssen , werden sie daran
+        angeschloßen.
 
 --------------------------------------------------------------------
 
@@ -89,16 +97,14 @@
 
 --------------------------------------------------------------------
 
+ Ausführbares Protein mit Ausführbare Wahrheiten mit Aktionsdraht
 
-¢|
-° ['*'|"*"]
-  ¶ »['*'|"*"]
-  ¶¶ ['*'|"*"]«
-|¢
+ ¢|
+  ° »['*'|"*"]
+     ¶ ['*'|"*"]«
+     ¶¶ ['*'|"*"]«
+ |¢
 
-Ausführbares protein mit Wahrheiten ,
-       - assimiliertes element -
-aus C , da Nützlich für IF and Else regeln (siehe kernel lex 08)
 
 ##################### Ende der Protein /e ##########################
-####################################################################
+

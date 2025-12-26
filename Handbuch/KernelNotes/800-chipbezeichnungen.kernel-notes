@@ -92,6 +92,16 @@
  von Board geworfen und wird in der weiteren entwicklung keine Rolle
  mehr spielen , stattdessen bekommt DIMS ein Update und wird
  alleinig dafür verwendet .
+
+
+ Überlegungen :
+
+ Zynq:
+
+    1x MIT-Taktgeber (als Clock-Wizard-IP)
+    1x Protein-Handler (32-Bit-Register-File)
+    1x Proton-Handler (8-Bit-Timing-Unit)
+    1x þ-Key-Generator (als verschlossene Blackbox-IP)
 --------------------------------------------------------------------
 ################# Ende der Chipbezeichnungen #######################
 ####################################################################

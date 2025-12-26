@@ -4,28 +4,28 @@
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 #------------------------------------------------------------------#
 #                   - SOFTWARE MCS Kernel -                        #
-#       01 X Datentypen -fix1     13 - Warp -fix                   #
+#       01 X Datentypen -fix2     13 - Warp -fix                   #
 #       02 - Transaktion -fix1    14 X þ Identifikation -fix2      #
 #       03 - Protein -fix4        15 - Argumente -fix              #
 #       04 - Proton -fix          16 - SchaltVerknüpfungen         #
 #       05 - Trennbefehl -fix2    17 - Adressierung -new           #
 #       06 - Aktion -fix2         18 X AI Synctimer                #
-#       07 - Eingaben -fix4                                        #
+#       07 - Eingaben -fix4       19 - Boxis                                #
 #       08 - Wahrheiten -fix4     20 - Reihenfolge                 #
 #       09 - Operatoren -fix4     77 X Ausführungslogik -fix2      #
 #       10 - Feed -fix2           88 - Dateitypen -fix             #
 #       11 - Zielreferenz         99 - Register CMDs -new          #
 #       12 - Dirigent            100 - BMEmotionen                 #
-############ ALGOL / BCPL / C = MCSPLUS ! IN ARBEIT ################
-#               - MCSPLUS ProgrammierSprache -
-#     101 - Einführung
-#
+####################################################################
+#               - MCSPLUS ProgrammierSprache -                     #
+# 101 - Einführung                102 - Grundeinheit               #
+# 103 - Tagging und Rollenbindung
 #
 ####################################################################
-#         - HARDWARE Komponenten BrainMaschineCore BMC -           #
-#    800 - CHiPBezeichnungen       803 - MIT-Taktgeber             #
-#    801 - EnergieMatrix           804 - MBMatrix                  #
-#    802 - Lichtleiterbahnen                                       #
+#        - HARDWARE Komponenten BrainMaschineCore BMC -            #
+#     800 - CHiPBezeichnungen       803 - MIT-Taktgeber            #
+#     801 - EnergieMatrix           804 - MBMatrix                 #
+#     802 - Lichtleiterbahnen                                      #
 ####################################################################
 #                 - LICENSES GELTUNGSBERREICH -                    #
 #  900 L0_VorWort                      993 L1_CoreKernelMandat     #
@@ -35,11 +35,11 @@
 ####################################################################
 #    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
 #         Tastaturstandart: UTF -8 Deutscher Standart              #
-#   Single Source of Truth (SSoT) Lexikon Version 00.39            #
-#  MCS 3.7 | MCSPLUS 0.1 | BMC Version 0.4 | License Version 1.0   #
+#   Single Source of Truth (SSoT) Lexikon Version 00.41            #
+#  MCS 3.7 | MCSPLUS 0.2 | BMC Version 0.4 | License Version 1.0   #
 #    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
 #------------------------------------------------------------------#
 # Standort: /Pylovara/Handbuch/KernelNotes/     Germany            #
 # Status: Vollständige Rollende-Verbesserungen    Pylovara©        #
-# PDF NamensLayer: Pylovara-System-XX.XX.pdf          since 2025 - #
+# PDF NamensLayer: Pylovara-System-XX.XX.pdf          since 2025   #
 ####################################################################

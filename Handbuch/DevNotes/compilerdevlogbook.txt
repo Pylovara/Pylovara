@@ -232,3 +232,12 @@ ree/Pylovara/System/MCS-Plus]> $ t
  ┌[bandino@dev][20:17:27|Do Dez 25]
  │ ᴾʸˡᵒᵛᵃʳᵃ
  └[/Pylovara/System/MCS-Plus]> $
+
+
+ MCS-Plus trennt strikt zwischen:
+
+Darstellung (Text / Layout)
+
+Bedeutung (Tags / Parser-Logik)
+
+Ausführung (ALU)

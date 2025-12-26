@@ -3,9 +3,9 @@
 
  Erklärung :
 
- ID-DNA-IDENTIFIKATION = Verschlüsselung | Kryptogenetiver Schlüssel
+ ID-DNA-IDENTIFIKATION = Schatten-Identität | Schatten Schlüssel
 
- ID-DNA-GENERATOR  = Verschlüsselungsgenerator
+ ID-DNA-GENERATOR  = Kryptogenetiver Verschlüsselungsgenerator
 
  ID-DNA-BIOLIVE = Eindeuitg für jedes Elekt. oder Bio. Lebewesen
 
@@ -41,99 +41,54 @@
  Transaktion/en im Gesamten zu Verschlüssel .
 
  Sie Werden auch dazu Verwendet Verbindungen Zu Zertifizieren
- Oder SystemUpdates Individuell abzusichern.
+ Oder SystemUpdates Individuell abzusichern über den Schlüssel.
 
  Die ID-DNA-IDENTIFIKATION Schützt auf mehrere Sicherheitstsufen
 
  --------------------
-
- Stufe 1 : 2 Stellige Nummer
-
- Stufe 1 wird Hardgecodet von Dateityp zu DateiTyp beim erstellen
- des Programms mit in die Adressierung geschrieben , dies dient
- dazu das Programme später insicht verwoben sind und jeder externe
- eingriff arbeit bedeutet und Programmdiebstähle oder Plagiate
- erschwehren sollen.Das ist generell nicht nötig , wird aber
- vorausgesetzt um jeden eingriff später verbessert und vereinfacht
- vom mache des Programmes direkt zu identifizierten.
-
- Diese Stufe kann per Delevoper update des Programmes jedes mal
- geändert werden für jeden Dateityp Geschwisterteil , um
- Inkompaktibilität zu neuen Versionen erzeugen die Mühevoll
- von Hacker oder Ilegalen Programmveränderungen zu bewerkstelligen
- sind.Programme dürfen in sich immer funktionieren wenn der
- Macher das so möchte, Freeware bleibt Freeware aber Firmen
- die ihre Programme nur gegen geld anbieten werden damit massiver
- geschützt vor "mod programmen und des gleichen" .
-
- auch interne AI Prozesse werden damit verbessert im Laufenden
- Prozess vor Fremdeinwirkung Geschützt, wenn du abläufe nicht
- System Relevant sind.
-
+ Stufe 1
+ Kernel : USED
+ CONTROL-SOFTWARE
  --------------------
-
- Stufe 2 : 4 Stellig
-
- CONTROL-LIVE-SOFTWARE
-
+ Stufe 2
+ Kernel : USED
+ CONTROL-USER
  --------------------
-
- Stufe 3 : 6 Stellig
-
- CONTROL-DEVICE
-
+ Stufe 3
+ Kernel : USED
+ CONTROL-SCHOOL
  --------------------
-
- Stufe 4 : 8 Stellig
-
+ Stufe 4
+ Kernel : USED-PLUS
  CONTROL-ENTWICKLER
-
  --------------------
-
- Stufe 5 : 8 Stellig
-
+ Stufe 5
+ Kernel : USED-PLUS
  CONTROL-KONZERN
-
  --------------------
-
- Stufe 6 : 10 Stellig
-
+ Stufe 6
+ Kernel : USED-PLUS
  CONTROL-EMERGENCY
-
- --------------------
-
-
- Stufe 7 : 15 Stellig
-
  CONTROL-INFASTRUKTUR
-
- POLITIK-POLICE
-
  --------------------
-
-
- Stufe 8 : 20 Stellig
-
+ Stufe 7
+ Kernel : USED-PLUS-PLUS
+ CONTROL-POLICE
+ CONTROL-MILITÄRY
+ --------------------
+ Stufe 8
+ Kernel : USED-PLUS-PLUS
  CONTROL-NATION
-
- REGIERUNGS-CHEF
-
+ CONTROL-SECURITY
  --------------------
-
- Stufe 9 : 30 Stellig
-
- CONTROL-SECURTITY
-
- AI
-
+ Stufe 9
+ Kernel : MAIN
+ CONTROL-AI
  --------------------
-
- Stufe 10 : 40 Stellig
-
+ Stufe 10
+ Kernel : MAIN
  CONTROL-MASTER
-
  Thomas Zimmermann
-
  --------------------
 
  Erklärung :
@@ -153,7 +108,7 @@
 
 --------------------------------------------------------------------
 
- Definition Die ID-DNA-GENERATOR RufSymbol :
+ Definition Der ID-DNA-GENERATOR RufSymbol :
 
  þþ
 
@@ -186,15 +141,20 @@
 
  Hinweis :
 
- die Taktrate kann dann in m(minuten) ms(milisekunden) oder
- ns(nanosekunden) eingestellt werden ,
+ die Taktrate kann eingestellt werden ,
  sicherheitswesend hohe taktrate , konsumer markt geringer usw ..
 
  Bei Konsumer Software gibt es nur Hardgecodeter Inhalt.
- bei Aktuellen Anwednungen kann mit stufe 1 Kombiniert werden
+ bei Aktuellen Anwendungen kann mit stufe 1 Kombiniert werden
 
  TaschenRechner Logik mit der Gesamten UTF -8 Eingaben Logik
- von Buchstaben bis Sonderzeichen und Extra Zeichen .
+ von Buchstaben bis Sonderzeichen und Extra Zeichen.
+
+ Es wird auch in erwägung gezogen duzente Fremdartige Symbol
+ Zeichen in den Generator zu Implementieren um Jede Form Von
+ möglichen Strichabfolgen,kreisen,gekritzel bis hinzu zu Agyptisch
+ inspirierte zeichen mit einzubeziehen.Die erst eingabe bis der takt
+ den code Wechselt
 
  Das Einzige was nicht benutzt wird sind System Relevante Symbole
  die in MCS Benutzt werden.
@@ -218,6 +178,23 @@
  Der Anker ist für Außenstehende nur eine bedeutungslose Zahl,
  während die Mutation intern im Generator þþ stattfindet.
 
+
+ ONWORK HINWEIS :
+
+ Es wird auch in erwägung gezogen das Der Generator generelle
+ abtastraten hochfrequent zu jeder Nummer bekommt um zu verhindern
+ das versucht wird ein glied in der kette Auszutauschen in einfach
+ die Selbe Schatten-ID nimmt.
+
+ Gleichgepulste Sende Anfragen , schwach aber existent
+
+ Bei Sicherheitsverletzung vom einem NichtErsteller direkter
+ SystemPolicy Call.
+
+ Generator bekommt eine Kleine AI die sofort merkt
+ wenn der Generator angefasst wird.
+ Ebenfalls SystemSicherheitsCall bis hin zur Polizei und bei
+ Banken-MCS-Kernels Totaler RED-SEND-Alarm.
 --------------------------------------------------------------------
 
  Definition ID-DNA-GENERATOR Schatten-Identität :

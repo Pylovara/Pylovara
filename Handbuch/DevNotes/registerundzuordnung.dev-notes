@@ -1,0 +1,139 @@
+@dev-nr: 8 | Register und Zuordnungstabellen | MCSPLUS |
+####################################################################
+ Register und Zuordnungstabellen
+--------------------------------------------------------------------
+
+ 1. Zweck
+
+ Dieses Kapitel definiert die technische Grundlage, auf der
+ Tagging und Rollenbindung realisiert werden.
+
+ Register und Zuordnungstabellen sind die einzige Instanz,
+ in der Bedeutung persistent gespeichert wird.
+
+ Syntaxdateien enthalten keine Bedeutung.
+ Bedeutung liegt ausschließlich in Registern.
+
+ 2. Grundsatz
+
+ In MCSPLUS gilt:
+
+ Bedeutung liegt nicht im Text.
+ Bedeutung liegt nicht in der Struktur.
+ Bedeutung liegt nicht im Symbol.
+
+ Bedeutung liegt ausschließlich in expliziten Registern,
+ die vom MCS-Kernel verwaltet werden.
+
+ 3. Definition: Register
+
+ Ein Register ist eine kernelverwaltete Zuordnungseinheit.
+
+ Ein Register verknüpft:
+
+ - eine formale Kennung
+ - mit einer oder mehreren Rollen
+ - unter definierten Gültigkeitsbedingungen
+
+ Ein Register ist:
+
+ - nicht Teil des Quelltextes
+ - nicht veränderbar durch MCSPLUS
+ - versionskontrolliert
+ - prüfbar
+
+ 4. Arten von Registern
+
+ Das System unterscheidet mindestens folgende Registertypen:
+
+ - TAG-REGISTER
+ - ROLLEN-REGISTER
+ - BRÜCKEN-REGISTER
+ - AUSFÜHRUNGS-REGISTER
+
+ Diese Trennung ist verpflichtend.
+
+ 5. TAG-REGISTER
+
+ Das TAG-REGISTER ordnet formale Bezeichner einer Tag-ID zu.
+
+ Beispiel (konzeptionell):
+
+ - "RECHNER" → TAG_ID_0017
+ - "PLUS"    → TAG_ID_0042
+
+ Das TAG-REGISTER kennt keine Bedeutung.
+ Es kennt nur Identität.
+
+ 6. ROLLEN-REGISTER
+
+ Das ROLLEN-REGISTER ordnet Tag-IDs systemische Rollen zu.
+
+ Beispiel:
+
+ - TAG_ID_0042 → OPERATOR
+ - TAG_ID_0042 → ALU_FÄHIG
+
+ Eine Tag-ID kann mehrere Rollen besitzen.
+
+ Rollen können:
+
+ - erlaubt
+ - eingeschränkt
+ - verboten
+ sein.
+
+ 7. BRÜCKEN-REGISTER
+
+ Das BRÜCKEN-REGISTER definiert die Verbindung zwischen Rollen
+ und ausführenden Instanzen.
+
+ Beispiel:
+
+ - OPERATOR + ALU_FÄHIG → ALU_OPERATION_ADD
+
+ Hier findet die eigentliche „Übersetzung“ statt.
+
+ Die Brücke ist explizit.
+ Es gibt keine impliziten Zuordnungen.
+
+ 8. AUSFÜHRUNGS-REGISTER
+
+ Das AUSFÜHRUNGS-REGISTER kontrolliert, ob eine gebrückte Rolle
+ tatsächlich ausgeführt werden darf.
+
+ Kriterien können sein:
+
+ - gültiges Protein
+ - gültige Aktionserlaubnis
+ - Kontextfreigabe
+ - Sicherheitsstatus
+
+ Ohne Freigabe bleibt jede Struktur inert.
+
+ 9. Änderbarkeit und Evolution
+
+ Syntaxdateien können unverändert bleiben,
+ während Register aktualisiert werden.
+
+ Dadurch ist es möglich:
+
+ - neue Hardware zu unterstützen
+ - neue ALUs einzubinden
+ - neue Operatoren einzuführen
+ - alte Bedeutungen zu entziehen
+
+ ohne bestehende Programme zu brechen.
+
+ 10. Sicherheit
+
+ Da Register kernelverwaltet sind:
+
+ - kann kein Benutzercode Bedeutung erzeugen
+ - kann kein Wort sich selbst erhöhen
+ - kann keine Struktur heimlich ausführen
+
+ Bedeutung ist kontrolliert, nachvollziehbar und auditierbar.
+
+################ Ende Register und Zuordnungstabellen ################
+####################################################################

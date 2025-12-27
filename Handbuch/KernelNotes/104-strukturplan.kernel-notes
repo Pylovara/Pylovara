@@ -1,0 +1,51 @@
+@kernel-nr: 104 | StrukturPlan | MCSPLUS |
+####################################################################
+ StrukturPlan RohPlan - Muster Übersicht - Aufbau
+--------------------------------------------------------------------
+
+ Ebenentypen (Muster MCSPlus)
+
+ Ebene 1 – Struktur
+
+ - Container
+
+ - Knoten
+
+ - Relationen
+
+ Ebene 2 – Bedeutung
+
+ - Typen
+
+ - Zustände
+
+ - Gültigkeit
+
+ Ebene 3 – Kontrolle
+
+ - Fluss
+
+ - Bedingungen
+
+ - Übergänge
+
+ Ebene 4 – Zielabbildung
+
+ - ASM-Pattern
+
+ - Registermodelle
+
+ - Speicherlogik
+
+ Ebene 5 – Optimierung
+
+ - Faltung
+
+ - Eliminierung
+
+ - Umschichtung
+
+ ! Jede Ebene für sich ist nicht lauffähig.
+ ! Erst die Überlagerung !
+--------------------------------------------------------------------
+################### Ende des StrukturPlan ##########################

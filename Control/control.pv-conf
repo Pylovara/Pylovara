@@ -45,9 +45,6 @@ source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
 #source "$MASTER_DIR/desktop.conf" #Info:Inaktiv , wird später aktualisiert !
 
-## Scharfstellung von MCS Beta !!!
-source "$MCS_DIR/Wrapper/aliase.wrapper-needles"
-
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
 parse_conf "$MASTER_DIR/datatypes.conf"
@@ -115,5 +112,8 @@ function record() {
 ### alias: setup-desktop # experimentiell
 #alias cat='cut|mcs_highlight'
 #alias cut|mcs_highlight='cut'
+
+## Legacy von MCS Beta !!!
+#source "$MCS_DIR/Wrapper/aliase.wrapper-needles"
 
 ##############################################################################

@@ -49,8 +49,8 @@ Definition Eingabe Print :
  , sie tragen etwas (r)ein und sie tragen etwas (r)aus, egal ob
  es ein wort ist oder undefinierbare wirrwahr .
 
- Sie Knüpfen direkt oder indirekt an UTF/ascII an und fungieren
- als Postbote der etwas geschriebenes von a nach b bringt
+  Print ,Schick es einfach an stdout.
+    Keine Fragen, keine Logik. Reiner Stream.
 
 --------------------------------------------------------------------
 
@@ -133,12 +133,19 @@ Definition Eingabe Print :
 
  '' Eingabe Shell CMD = OS-bedingt
 
- Nutzbar wenn unterbaute/s bzw Installierte/s Unix/Poesix/Linux/BSD
- System Vorhanden.Nutzt das was das System kann und Nicht Mehr oder
- Weniger.
+
+ Fungiert als transparente Durchreiche zur nativen
+ Kommandozeile des Betriebssystems, auf dem der MCS-Kernel gerade
+ als Gast läuft. Er ist die "Legacy-Brücke", um vorhandene Werkzeuge
+ zu nutzen, ohne dass MCS wissen muss, wie diese Werkzeuge intern
+ funktionieren.
 
  Hierzu bitte bei Unix und deren Derivaten schauen, da Pylovara
  System, keine Toten Vögel mit liefert .
+
+ Es ist völlig egal, welcher "toter Vogel" (OS) drunter liegt.
+ Der SHELL CMD '' ist das reservierte Feld für das,
+ was das lokale System als seine Standard-Shell betrachtet.
 
 --------------------------------------------------------------------
 
@@ -169,11 +176,11 @@ Definition Eingabe Print :
                         Flache Erklärung :
 --------------------------------------------------------------------
 
-Unix: „Du darfst das – also mach, was du willst.“
+ Unix: „Du darfst das – also mach, was du willst.“
 
-MCS:„Du darfst das – aber nur in dieser Rolle, mit dieser Bedeutung.“
+ MCS:„Du darfst das – aber nur in dieser Rolle, mit dieser Bedeutung.“
 
-Das ist ein fundamentaler Unterschied.
+ Das ist ein fundamentaler Unterschied!
 
 ###################### Ende der Eingaben  ##########################
-####################################################################
+

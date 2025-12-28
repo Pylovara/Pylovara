@@ -1,60 +1,119 @@
-@kernel-nr: 06
+@kernel-nr: 06 | AKTION/EN | AKTIONSDRAHT | STATUS : VALIDE
 ####################################################################
 
- Erklärung:
+ NAME = AKTION | AKTIONSDRAHT
 
- Aktion/en = Ausführung/en | Aktionserlaubnis | Aktionskreislauf
+ BEGRIFFSDEFINTION = HAUPTVERDRAHTUNG
 
- Aktionsdraht = Ausführungsverdrahtung/en | LogikSchaltkreis
+ MERHZAHL = AKTIONEN | AKTION/S
 
---------------------------------------------------------------------
+ FUNKTION = START UND END BEDIENUNG
 
- Textliche Definition :
-
- Aktion/en werden bei Protein/en - Wahrheiten & Operatoren als
- Explizite Ausführungserlaubnis genutzt.
-
- Sie definieren ob Ausführbare Protein/e vorliegen oder nicht.
+ AUSFÜHRUNGSART = SIGNAL-ROUTING
 
 --------------------------------------------------------------------
 
-  Definition Aktionsanfang :
+ ERKLÄRUNG  =
 
-  »
+ AKTIONEN WERDEN IN EINEM TRANSAKTIONSRAHMEN INTERN ALS
+ AUSFÜHRUNGSERLAUBNIS GENUTZT UND SORGEN FÜR MEHR SICHERHEIT
+ IM ABLAUF ARBEITSPROZESSE.
 
---------------------------------------------------------------------
+ SIE KÖNNEN ALS EINZEL AKTIONSERLAUBNIS GENUTZTZ WERDEN, WENN
+ ES DAS PROTEIN VERLANGT ODER ALS AKTIONSVERDRAHTUNG FÜR
+ KONTEXT BEZOGENE WAHRHEITEN UND ODER OPERATOR(ISCHE) ERLAUBNISSE.
 
- Erklärung Aktionsanfang :
-
- Beginn eines Prozesses , Prozess Start.
-
---------------------------------------------------------------------
- Definition Aktionsende :
-
-  «
-
---------------------------------------------------------------------
-
- Erklärung Aktionsende :
-
- Beendet den Aktionskreislauf.
+ AKTIONEN WERDEN LÜCKENLOS AN PROTEINEN ANGESCHLOSSEN, EGAL
+ OB ANFANGSBEDIENUNG ODER ENDBEDIENUNG.
 
 
 --------------------------------------------------------------------
 
- Definition Aktionskreislauf :
-
-  » «
+ ↓ STANDARTLAYOUT ↓
 
 --------------------------------------------------------------------
 
- Aktionskreislauf Erklärung :
+ AKTION/S KLASSE =
 
- Ein Geschlossener Aktionskreislauf führt Prozesse für sich aus.
+ FUNKTION =
+
+ SYMBOLISCHE DEKLARATION =
+
+ SYMBOL IN WORTEN =
+
+ INFO =
 
 --------------------------------------------------------------------
 
- Definition  Aktionsdraht :
+####################################################################
+
+--------------------------------------------------------------------
+
+ AKTIONS KLASSE = AKTIONS-START
+
+ FUNKTION = ANFANGSBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = »
+
+ SYMBOL IN WORTEN =
+
+ GUILLEMENT RECHT | DEUTSCHES ANFÜHRUNGSZEICHEN ÖFFNEND
+
+ INFO = DEFINIERT DEN ANFANG DER AKTION
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ AKTIONS KLASSE = AKTIONS-ENDE | AKTIONS-ENDEN
+
+ FUNKTION = ENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = «
+
+ SYMBOL IN WORTEN =
+
+ GUILLEMENT LINKS | DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
+
+ INFO = DEFINIERT DAS ENDE DER AKTION UND KANN ALS GESCHLOSSENER
+        AKTIONSKREISLAUF VERSTANDEN WERDEN
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ AKTIONS UNTERKLASSE = AKTIONSDRAHT | AKTIONSVERDRAHTUNG
+
+ AKTIONS KLASSE = AKTIONSVERDRAHTUNGS-ENDE
+
+ FUNKTION = MEHRFACHENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = «
+
+ SYMBOL IN WORTEN =
+
+ GUILLEMENT LINKS | DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
+
+ INFO =
+
+ WIRD ALS AKTIONSVERDRAHTUNG VERSTANDEN FÜR EINEN
+ AKTIONS-START UM DEN ZUSAMMENHÄNGENDEN KONTEXT DES PROZESSE ZU
+ VERDRAHTEN UND SORGT FÜR EINEN AKTIONSKREISLAUF MIT MEHREREN
+ AKTIONS-ENDE.
+
+--------------------------------------------------------------------
+
+####################################################################
+
+ HINWEIS INFORMATION FÜR AKTIONEN OPTISCH =
+
+ » «
+
+ HINWEIS INFORMATION FÜR AKTIONSVERDRAHTUNG OPTISCH =
 
   »
     «
@@ -62,51 +121,5 @@
 
 --------------------------------------------------------------------
 
- Aktionsdraht :
+###################### ENDE DER AKTION/EN  #########################
 
- Ein Aktionsdraht kann als Entscheidungsschaltweg angesehen werden
- und hat mehrere oder einen Aktionsende/n Ausgang ,
- wird für Wahrheiten verwendet um Operatoren Wahrheits
- Prozesse oder Reine Ausführbare Proteine Zu steuern.
-
---------------------------------------------------------------------
-
- Definition Aktion in Worten :
-
- Guillemet rechts(deutsches Anführungszeichen, öffnend)Aktionsanfang
-
- Guillemet links(deutsches Anführungszeichen, schließend)Aktionsende
-
---------------------------------------------------------------------
-
- Verständniss Definition :
-
- Wahrheiten können entweder eigene Aktion/en beinhalten um
- ausgewählt bzw ausgeführt zu werden oder mit einem Protein
- fest verschaltet zu werden .
-
- Verschaltungen benötigen immer pro Ausgang ein Aktionsende,
- da jedes antionsende dann mit dem Aktionsstart einen Aktionsdraht
- ergibt und somit der Aktionskreislauf sich schließt.
-
- Die Trennung von Protein (Seite3) und Aktion (Seite 06),
- ist in mehreren Aspekten dringlich notwendig um fest 2 byte
- Ausführungensverdrahtungen auf FPGA Basis möglich zu machen
- und löst somit das Jitter und Latenz Problem an dem Unix-Systeme
- seit 50 Jahren scheitern.
-
---------------------------------------------------------------------
-
- Hinweis Information :
-
- Aktion/en & Aktionsdrähte werden als Signal-Routing verstanden.
-
- Das System „springt“ nicht zu einer Adresse, der Strom
- fließt einfach physisch durch das Gatter,
- das der Operator geöffnet hat.
-
---------------------------------------------------------------------
-
-
-##################### Ende der Aktion /en  #########################
-####################################################################

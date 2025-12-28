@@ -1,4 +1,4 @@
-@kernel-nr: 02 | TRANSAKTIONSRAHMEN | STATUS : VALIDE
+@kernel-nr: 02 | TRANSAKTIONSRAHMEN | STATUS : VAILDE
 ####################################################################
 
  NAME = TRANSAKTIONSRAHMEN
@@ -20,6 +20,8 @@
  SIE SIND IM RAHMEN MUSTER MIT ZWEI SYMBOLEN DEKLARIERT UND
  UND BESTIMMEN DEN VERARBEITUNGSRAHMEN.
 
+--------------------------------------------------------------------
+
  SYMBOLIK IN WORTEN =
 
  CENT-ZEICHEN AUSRUFEZEICHEN INHALT AUSRUFEZEICHEN CENT-ZEICHEN
@@ -34,6 +36,8 @@
 
   DIE ANORDNUNG KANN AM ANFANG UND ENDE PLAZIERT WERDEN ODER
   BEI KLEINEN PROZESSEN VORNE UND HINTEN.
+
+--------------------------------------------------------------------
 
   MUSTERBEISPIELE =
 
@@ -64,5 +68,6 @@
      oder CPU-Zyklen-Priorität mit.
 
 --------------------------------------------------------------------
+
 ################### ENDE DES TRANSAKTIONSRAHMEN ####################
 

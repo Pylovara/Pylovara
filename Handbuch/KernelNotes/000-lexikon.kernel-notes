@@ -3,6 +3,8 @@
 ####################################################################
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 #------------------------------------------------------------------#
+#        Das System befindet sich im Konsolidierungsmodus          #
+#------------------------------------------------------------------#
 #                   - SOFTWARE MCS Kernel -                        #
 #       01 X Datentypen -fix2     13 - Warp -fix                   #
 #       02 - Transaktion -fix1    14 X þ Identifikation -fix2      #
@@ -10,16 +12,17 @@
 #       04 - Proton -fix          16 - SchaltVerknüpfungen         #
 #       05 - Trennbefehl -fix2    17 - Adressierung -new           #
 #       06 - Aktion -fix2         18 X AI Synctimer                #
-#       07 - Eingaben -fix4       19 - Boxis                       #
-#       08 - Wahrheiten -fix4     20 - Reihenfolge                 #
-#       09 - Operatoren -fix4     77 X Ausführungslogik -fix2      #
-#       10 - Feed -fix2           88 - Dateitypen -fix             #
-#       11 - Zielreferenz         99 - Register CMDs -new          #
-#       12 - Dirigent            100 - BMEmotionen                 #
+#       07 - BOXIS -neukorrigiert 19 - Discovery Layer
+#       08 - Wahrheiten -fix4
+#       09 - Operatoren -fix4
+#       10 - Feed -fix2           77 X Ausführungslogik -fix2      #
+#       11 - Zielreferenz         88 - Dateitypen -fix             #
+#       12 - Dirigent             99 - Register CMDs -new          #
+#------------------------------------------------------------------#
 ####################################################################
 #               - MCSPLUS ProgrammierSprache -                     #
 #     101 - Einführung                102 - Grundeinheit           #
-#     103 - Tagging und Rollenbindung 104 - StrukturPlan
+#     103 - Tagging und Rollenbindung 104 - StrukturPlan           #
 #
 ####################################################################
 #   - HARDWARE Komponenten und Visionen BrainMaschineCore BMC -    #
@@ -35,8 +38,8 @@
 ####################################################################
 #    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
 #         Tastaturstandart: UTF -8 Deutscher Standart              #
-#   Single Source of Truth (SSoT) Lexikon Version 00.43            #
-#  MCS 3.8 | MCSPLUS 0.3 | BMC Version 0.4 | License Version 1.0   #
+#   Single Source of Truth (SSoT) Lexikon Version 00.44            #
+#  MCS 4.0 | MCSPLUS 0.3 | BMC Version 0.4 | License Version 1.0   #
 #    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
 #------------------------------------------------------------------#
 # Standort: /Pylovara/Handbuch/KernelNotes/     Germany            #

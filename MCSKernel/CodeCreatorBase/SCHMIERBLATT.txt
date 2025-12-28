@@ -1,0 +1,145 @@
+#### Schmierblatt
+
+###################### BOXI/S SCHALTPLÄNE ########################
+
+ Schaltlogik :
+
+ »[,sys_write (1)¨¨,]«
+  ¶ ['echo ¨(1)¨']«««t1
+  ;;»[’feed cache clear 1’]«««t4
+
+# Fertige ARGUMENTE | Reinheit | MCS CMD
+
+# MCS CMD FührenderFeed speicher löschen container 1
+»[’feed cache clear 1’]«
+-> Der MCS CMD befehl wird genutzt um das MCS Register
+   für den feedcache zu löschen
+-> Der Blankennenner wird genutzt, um den spezifischen
+   Sektor von Feed 1 physisch zu nullen (ALU_REINIGEN).
+
+# TIMING / Argument mit Couldownsekunden «« t
+»[...]«««t
+-> Das Argument gibt der Schaltung die Kennung für Zeitstempel
+   oder CPU-Zyklen-Priorität mit.
+
+# Reinheit / Löschung
+»[...]«««t
+-> Das Argument gibt der Schaltung die Kennung für Zeitstempel
+   oder CPU-Zyklen-Priorität mit.
+
+####################################################################
+ BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE
+
+
+ baustelle ..... ich muss den rechen weg finden für den +
+ output ... entwdere als parallel transport mit
+ argument Couldownsekunden oder über das feedsystem , wenn ich
+ das hinbekommen kann das system nicht nur als übergeordnetes
+ steuerungswerkzeug im lowlevel bereich dienen , nicht nur
+ per wahrheiten logische schaltungen zuilass , sondern auch
+ rechnungen ausführen ..... keine ahung wie man das nennen würde
+ aber das wäre der nächste meilenstein .
+
+
+# Rechnen / Argument mit ADDIEREN «« +  (unfertig)
+»[¨1¨]«
+ ¶ »[¨5¨]««+
+ ;; (hier muss ich irgendwie den output hinbekommen)
+-> Das Argument gibt der Schaltung die Kennung für Zeitstempel
+   oder CPU-Zyklen-Priorität mit.
+
+BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE
+####################################################################
+
+
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ gut okey ... wenn print druckt .... auf allen systemen , also nie was aufnimmt sondern lediglich irgendwas druckt
+
+
+
+dann sollte der Blankernenner ¨ in der lage sein etwas aufzunehmen , entwder als übergabe von einem prozess als nenn und kenn wert
+
+
+
+oder hardcodiert für einen geschriebenen ablauf eines programmes das eine abfolge beherbergt ....
+
+
+
+dann brauch ich quasi eine übergabe zu blanker nenner
+
+
+
+und das kann dann vom blanken nenner mit feed transportiert werden um es dann vielleicht im Print wiederzuspiegel , was der Tragende Feed Tut
+
+
+
+deswegen brauch ich entwweder einen sycall von jeweiligen system der dann dem führenden feed etwas rein gibt und das dann mit dem tragenden feed wohin eins zu eins transportieren kann
+
+
+
+also müsste es logisch sein das ich die syscalls oder shell cmd immer dazu verwende um einen führenden feed oder tragenden feed zu nutzen um etwas einzutragen oder zu transportieren
+
+
+
+feed bleibt dabei unverändert in der erklärung und auch in der cache logik ..
+
+
+
+wiederum habe ich jetzt die lösung gefunden für arbeits abläufe ...
+
+
+
+ich glaub dieser kleine schnippsel code zeigt klar was es werden sollte mit MCS .... ein übergeordnetes sycall werkzeug für alle bereiche jedes systems
+
+
+
+wenn das hier :
+
+
+
+»[,sys_write (1)¨¨,]«
+ ¶ »['echo ¨(1)¨']«
+
+
+
+valide zu erklären ist ab ich das system tragfähig gemacht ...
+
+
+
+die EINGABE System-Steuerung ruft den sycall des jeweilige systems an ,
+
+der dann in dem kleinen beispiel sys_write in den führenden feed mit blankernenner schreib
+
+
+
+ der WennKann/Muss-Soll operator wird dann aktiv und transportiert es in die EINGABE Shell CMD und gibt es per echo und Tragenden Feed in dem Blankennenner als transportierten output aus da die selbe zahl als feed immer eine weitergabe bedeutet und der blankenenner quasi nur der rahmen ist um den prozess von solchen aufgaben präzise zu präzisieren
+
+
+
+daraus kann ich dann die wahrheiten logik kombinieren wenn sie sein müssen , was aber auch heißt das wahrheiten kein header akt sein müssen sondern generel im prozess als weitere aufgabe genutzt werden kann ...
+
+
+
+die argumenten «« logik wieder spiegelt nur die rechen aufgaben ab oder mit andere kennen , timing funktionen oder auch den reset den ich bei ſ eingeordnet habe  .......
+
+
+
+
+
+ich glaube ich hab gerade die logik brücke durch definiert für MCS !
+
+
+
+das würde das gesamte system stüzen ohne brechnung der logik zu zu lassen !!!!  (ich copier mir den eigenen text kurz in mein editor , den hier steckt die lösung fürs system und die lösung für die umsetzung)
+
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+

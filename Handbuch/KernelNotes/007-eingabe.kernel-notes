@@ -1,186 +1,254 @@
-@kernel-nr: 07
+@kernel-nr: 07 | BOXI/S | STATUS : VALIDE
 ####################################################################
-Erklärung :
 
-    Eingaben werden Genutzt um Verschiedende Eingaben auf System
-    Ebene zu Vollziehen . Sie Trennen Sauber Aufgabebereiche und
-    Zuständigkeit und werden Regulär über Tastaturen eingegeben
-    , egal ob Touch , Physisch , Sprachlich , Gedanklich oder
-    Per KI . Eingabe ist die Kommunikationspipeline die seid
-    der Enstehung des Lebens selbst in Jeder Form , seid dem
-    Urknall und davor Existiert . Wir Nutzen Kommunikationspipeline/s
-    in Natürlicher Sprache miteinander und haben Eingabe Erfunden
-    die diese Wiederspiegeln .
+ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
 
-    System Technisch Sprechen wir von :
+    WELTWEITER URSPRUNG UND URHEBER WIE LICENSETRÄGER VON BOXI/S
 
-    Mitteilung an die Elektronik
+        DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT
 
 --------------------------------------------------------------------
 
- Definition : Ein und Ausgabe
+ NAME = BOXI
 
- Mitteilung
+ BEGRIFFSDEFINTION = EINGABEN
 
- Definition : Eingabe
+ MERHZAHL = BOXIS
 
- Eingabe Container
+ FUNKTION = TRANSPORTRAHMEN
 
---------------------------------------------------------------------
-
-Definition Eingabe Print :
-
-    Reiner Ausgabekanal
-    Keine Steuerung
-    Keine Interpretation
-    Keine Seiteneffekte
-    Reine Mitteilung Ein & Ausgabe
-
-
- Definition : Print
-
- ""
-
- Erklärung :
-
- "" Eingabe Print = Byte-Stream
-
- Sind Byte-Streams und entsprechen stdout ohne Unix-Implikationen
- , sie tragen etwas (r)ein und sie tragen etwas (r)aus, egal ob
- es ein wort ist oder undefinierbare wirrwahr .
-
-  Print ,Schick es einfach an stdout.
-    Keine Fragen, keine Logik. Reiner Stream.
+ AUSFÜHRUNGSART =
 
 --------------------------------------------------------------------
 
- Definition Eingabe System-Steuerung  :
+ ERKLÄRUNG BOXI/S =
 
-    Steuerung
-    Syscalls
-    Systemaktion
-    SyscallKetten
-    LowLevel Koordination
-    Verlangt Systemaktion
+ BEI BOXI/S HANDELT ES SICH UM EINGABEN DIE SYSTEM RELEVANTE SYCALLS
+ UND SHELLBEFEHLE TRANSPORTIEREN.
 
- Definition : System-Steuerung
+ OCHESTRIERT WERDEN BOXI/S ÜBER DAS PYLOVARA-SYSTEM UNTER DEN NAMEN
+ MCS MASCHINENCODESPEECH.
 
- ,,
+ BOXI/S WURDEN UNTER ANDEREM MIT CALLIS, MCS-CMD UND BLANKERNENNER
+ ERWEITERT UM DIE FUNKTIONALTITÄT AUF MASTER CONTROL STEUERUNGSLOGIK
+ NIVEAU HERAUF ZU STUFEN.
 
- Erklärung :
+ BOXIS DIENEN ALS PROTEIN ODER PROTON INHALT UM DAS ERWEITERTE
+ STEUERUNGSSYSTEM VON PYLOVARA-SYSTEM ALS GRUNDSÄTZLICHE LOGISTIK,
+ REALISIERBAR ZU MACHEN.
 
- ,, Eingabe System-Steuerung = Syscalls
+ DIESE FORM VON STEUERUNGSLOGIK WIRD VON PYLOVARA-SYSTEM UNTER
+ MCS MASCHINEN CODE SPEECH ALS INDUSTRIELLER ZUCKUNFTS STANDART
+ DEFINIERT UND LICENSIERT.
 
- System-Steuerung sind die Lov Level Aufgaben
- die Ein Kernel Integriert hat und ausgeweitet
- sind mit zusatz befehlen und auch Bootloader
- wie Uefi/Bios. Mit System-Steuerung bewegt man
- Syscalls die Microsoft | Apple | Linux in ihren
- jeweiligen Unterbauten abwandlungen von Minix
- Systemen beigefügt haben oder abgekupfert oder
- Stumpf übernommen .
-
- Dinge wie : exec, read, write, fork, …)
-
- Werden mit Der Eingabe System-Steuerung Koordiniert
- und Dienen Nur für diesen Zweck .
-
-
+ DIE WARTUNG UND WEITERENTWICKLUNG WIRD HIERBEI ALLEINIG VON
+ PYLOVARA-SYSTEM UNTER DEM ERFINDER UND UHRHEBER THOMAS
+ ZIMMERMANN BEWERKSTELLIGT.
 
 --------------------------------------------------------------------
 
- Definition Eingabe MCS CMD  :
-
-    MaschinenCodeSpeechCommandos
-    Commando Line
-    Befehle Shell
-    Kernel System
-    Instruction Space
-    Hardware Managment
-    Kernel Managment
-    Kein C Transporter
-    MCS Registry Einträge
-    keine Bytesemantik
-
- Definition : MCS CMD
-
- ’’
-
- Erklärung :
-
- ’’ Eingabe MCS CMD = MCS Instruction
-
- MCS CMD Sind Haus Eigene Steuerungs Befehle die Von LowLevel Bis
- Shell Aufgaben Erledigen können . Genauso wie die Eingabe
- System-Steuerung , ist MCS CMD Auf die Steuerung von Haus eigenen
- Commands ausgelegt , nur besser (siehe kernel 99)
+ ↓ STANDARTLAYOUT ↓
 
 --------------------------------------------------------------------
 
- Definition Eingabe Shell CMD  :
+ BOXI KLASSE =
 
-    OS Shell CMD
-    Interpreter-abhängig
-    kompatibler Altlast-Container
-    Unix Nutzbar ohne MCS zu Verseuchen
-    Symbiotische Seperation WIN/Darvin/Linux/BSD
+ FUNKTION =
 
- Definition : Shell CMD
+ SYMBOLISCHE DEKLARATION =
 
- ''
+ SYMBOL IN WORTEN =
 
- Erklärung :
+ INFO =
 
- '' Eingabe Shell CMD = OS-bedingt
+ * MUSTERBEISPIELE =
 
-
- Fungiert als transparente Durchreiche zur nativen
- Kommandozeile des Betriebssystems, auf dem der MCS-Kernel gerade
- als Gast läuft. Er ist die "Legacy-Brücke", um vorhandene Werkzeuge
- zu nutzen, ohne dass MCS wissen muss, wie diese Werkzeuge intern
- funktionieren.
-
- Hierzu bitte bei Unix und deren Derivaten schauen, da Pylovara
- System, keine Toten Vögel mit liefert .
-
- Es ist völlig egal, welcher "toter Vogel" (OS) drunter liegt.
- Der SHELL CMD '' ist das reservierte Feld für das,
- was das lokale System als seine Standard-Shell betrachtet.
+ EINSATZBEREICHE MUSTERBEISPIELE =
 
 --------------------------------------------------------------------
 
- Definition Eingabe Blankernenner :
-
-    AD-HoC Bugg Beseitigung
-    Transportiert -> Eingaben <-
-    Eingaben Auswahl
-    Nimmt Inhalt auf oder Gibt in an Eingaben weiter
-
- Definition : Blankernenner
-
- ¨¨
- Erklärung :
-
- ¨¨ Eingabe Blankernenner = Transport EingabenAuswahl
-
- Der Blanker nenner transportiert Eingabennenner für eigentliche
- Befehle.Wenn Linux sagt : sudo pacman -S <- dann ist das ein Shell
- CMD ohne Auswahl die dann über Blankernenner Eingetragen wird
-
- »['sudo pacman -S'|¨kwriter¨]«
-
- Das Selbe gilt für alles was mit auswahl zu tun hat , Die Eingabe
- Blankernenner dient dem AD-HoC Bugg Problems
+####################################################################
 
 --------------------------------------------------------------------
-                        Flache Erklärung :
+
+ BOXI KLASSE = CALLIS
+
+ FUNKTION = REINERAUSGABENKANAL FÜR PRINT
+
+ SYMBOLISCHE DEKLARATION = " "
+
+ SYMBOL IN WORTEN = ANFÜHRUNGSZEICHEN INHALT ANFÜHRUNGSZEICHEN
+
+ INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
+
+ CALLIS MUSTERBEISPIELE =
+
+ #Einfacher Text-Output
+ »["Hallo Welt"]«
+
+ #Feed-Output (Inhalt von Feed 1 drucken)
+ »["¨(1)¨"]«
+
+ #Kombinierter Output (Text + Feed)
+ »["Status: (1)¨¨"]«
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+ # LINUX (x86_64) - Direkter Syscall-Weg
+ # Nutzt sys_write (RAX 1) auf Dateideskriptor 1
+ ------------------------------------------------------------------
+ RAX: 1    | sys_write | System-Aufruf für Schreiben
+ RDI: 1    | stdout    | Ziel:Standard-Ausgabe (Dateideskriptor 1)
+ RSI: *    | buffer    | Zeiger auf den Text/Daten-Protein
+ RDX: *    | length    | Länge der Daten in Bytes
+------------------------------------------------------------------
+
+ # WINDOWS NT (Kernel-Level) - Native API
+ # Nutzt NtWriteFile auf den Console-Handle
+ ------------------------------------------------------------------
+ Befehl: NtWriteFile
+ Handle: StandardOutput  | Identifiziert den Konsolen-Puffer
+ Buffer: * | Zeiger auf Speicherbereich des Proteins
+ Length: * | Anzahl der zu schreibenden Bytes
+ ------------------------------------------------------------------
+
+ # MACOS / DARWIN (BSD-Layer)
+ # Nutzt den BSD-write Call (RAX 4)
+ ------------------------------------------------------------------
+ RAX: 4     | write        | System-Aufruf (Klasse 0x2000000)
+ RDI: 1     | stdout       | Dateideskriptor 1
+ RSI: *     | buffer       | Daten-Protein Ursprung
+ RDX: *     | length       | Byte-Zahl
+------------------------------------------------------------------
+
+####################################################################
+
 --------------------------------------------------------------------
 
- Unix: „Du darfst das – also mach, was du willst.“
+ BOXI KLASSE = CALL-CONTROL
 
- MCS:„Du darfst das – aber nur in dieser Rolle, mit dieser Bedeutung.“
+ FUNKTION = SYSTEMANRUFEN
 
- Das ist ein fundamentaler Unterschied!
+ SYMBOLISCHE DEKLARATION = , ,
 
-###################### Ende der Eingaben  ##########################
+ SYMBOL IN WORTEN = KOMMA INHALT KOMMA
+
+ INFO = RUFT DAS JEWEILIGE OPERATION SYSTEM AN
+
+ CALL-CONTROLL MUSTERBEISPIEL =
+
+ #LINUX SYSCALLS (x86_64)
+ #Schnittstelle: syscall
+ »[,sys_read,]«
+ »[,sys_write,]«
+ »[,sys_open,]«
+ »[,sys_fork,]«
+
+ #WINDOWS NT SYSCALLS (Kernel-Level)
+ #Schnittstelle: ntdll.dll (SSDT Index variiert je nach Build)
+ »[,NtReadFile,]«
+ »[,NtWriteFile,]«
+ »[,NtCreateProcess,]«
+ »[,NtTerminateTask,]«
+
+ #MACOS / DARWIN SYSCALLS (x86_64 / ARM)
+ #Schnittstelle: swi (ARM) / syscall (x86)
+ »[,read,]«
+ »[,write,]«
+ »[,open,]«
+ »[,kill,]«
+
+ EINSATZBEREICH MUSTERBEISPIEL =
+
+ #Register: RAX (ID), RDI, RSI, RDX, R10, R8, R9
+ ------------------------------------------------------------------
+ RAX: 0  | sys_read  | Liest Daten aus einem Dateideskriptor
+ RAX: 1  | sys_write | Schreibt Daten in einen Dateideskriptor
+ RAX: 2  | sys_open  | Öffnet eine Datei oder ein Verzeichnis
+ RAX: 57 | sys_fork  | Erzeugt ein Duplikat des aktuellen Prozesses
+ ------------------------------------------------------------------
+ #Hinweis: Namen sind die primäre Referenz
+ ------------------------------------------------------------------
+ RAX: * | NtReadFile  | Niedrigster Kernel-Lesebefehl für Handles
+ RAX: * | NtWriteFile | Niedrigster Kernel-Schreibbefehl für Handles
+ RAX: * | NtCreateProcess | Erzeugt nativen Prozessraum ohne Win32-Layer
+ RAX: * | NtTerminateTask | Beendet einen Thread oder Prozess sofort
+------------------------------------------------------------------
+ #Hinweis: BSD-Klasse startet oft bei 0x2000000
+ ------------------------------------------------------------------
+ RAX: 3  | read     | Entspricht dem BSD-Lesebefehl (64-Bit)
+ RAX: 4  | write    | Entspricht dem BSD-Schreibbefehl (64-Bit)
+ RAX: 5  | open     | Entspricht dem BSD-Öffnungsbefehl
+ RAX: 37 | kill     | Sendet Signale an PIDs zur Prozesssteuerung
+ ------------------------------------------------------------------
+
+ ####################################################################
+
+ --------------------------------------------------------------------
+
+ BOXI KLASSE = SHELL-CONTROL
+
+ FUNKTION = SYSTEM SHELL ANRUFEN
+
+ SYMBOLISCHE DEKLARATION = ' '
+
+ SYMBOL IN WORTEN = HOCHKOMMA INHALT HOCHKOMMA
+
+ INFO = NUTZT OS SHELL BEFEHLE
+
+ SHELL-CONTROL MUSTERBEISPIELE =
+
+ Reine SHELL-CONTROL :
+
+ # Shell CMD : Komplexes Beispiel mit Operatoren
+ »['cd /var/log && grep "error" syslog | head -20 > errors.txt && echo "Done" || echo "Failed"']«
+
+ # Komplexes Beispiel mit Operatoren
+ »['cd /var/log && grep "error" syslog | head -20 > errors.txt && echo "Done" || echo "Failed"']«
+
+ # ADB + Shell Kombination
+ »['adb devices | grep device && adb shell pm list packages | grep -i google']«
+
+ # PowerShell-ähnliche Pipeline in Bash
+ »['ps aux | awk '{print $1, $4}' | sort -k2 -rn | head -10']«
+
+ # Sichere Ausführung
+ »['[ -f file.txt ] && cat file.txt || echo "Datei nicht gefunden"']«
+
+ # Mit Fehlerbehandlung
+ »['command 2>&1 | tee output.log && echo "Success" || { echo "Error"; exit 1; }']«
+
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+ (erklärt sich von selbst)
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ BOXI KLASSE = MCS-CMD
+
+ FUNKTION = HAUSEIGENER KOMMANDO BEFEHELE
+
+ SYMBOLISCHE DEKLARATION = ~ ~
+
+ SYMBOL IN WORTEN = TILDE INHALT TILDE
+
+ INFO = STEUERT DAS EIGENE MCS-REGISTER AN
+
+ MCS-CMD MUSTERBEISPIELE =
+
+ »[~feed cache löschung 1~]«
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+ NUR MCS ELEMENTE WERDEN ANGESTEUERT, WIE ZUM BEISPIEL FEED/S.
+ MCS-CMD/S SIND MIT DEM HAUSEIGENEN MCS-REGISTER VERBUNDEN.
+
+--------------------------------------------------------------------
+
+###################### ENDE DER BOXI/S #############################
 

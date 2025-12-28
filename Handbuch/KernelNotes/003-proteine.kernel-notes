@@ -1,0 +1,98 @@
+@kernel-nr: 03 | PROTEIN/E | STATUS : VALIDE
+####################################################################
+
+ NAME = PROTEIN
+
+ BEGRIFFSDEFINTION = HAUPTDATENTRÄGER
+
+ MERHZAHL = PROTEINE
+
+ FUNKTION = TRANSPORTRAHMEN
+
+ AUSFÜHRUNGSART =
+
+--------------------------------------------------------------------
+
+ ERKLÄRUNG PROTEIN/E =
+
+ DAS PROTEIN IST DER HAUPTDATENTRÄGER DES PAYLOVARA-SYSTEMS UND
+ BRINGT DEN MCS KERNEL DURCH BOXIS UND TRENBEFEFEHLE ZUM LAUFEN.
+
+ SIE KÖNNEN ENTWEDER AUSFÜHRBAR SEIN ODER AUCH IN EINEM PROZESS
+ UNAUSFÜHRBAR AUFGEBAUT WERDEN DURCH DAS MCS-CMD DAS DIE COMMANDS
+ IM MCS-REGISTER TRÄGT.
+
+ AUẞERHALB EINES PROTEIN WERDEN STEUERWERKZEUGE BENUTZT UM DATEN
+ ZU KOORDINIEREN UND SCHALTKREISE FÜR BEARBEITUNGSLOGISTIKEN
+ DURCHZUFÜHREN.
+
+--------------------------------------------------------------------
+
+ ↓ STANDARTLAYOUT ↓
+
+--------------------------------------------------------------------
+
+ PROTEIN KLASSE =
+
+ FUNKTION =
+
+ SYMBOLISCHE DEKLARATION =
+
+ SYMBOL IN WORTEN =
+
+ INFO =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ PROTEIN KLASSE = PROTEIN-START
+
+ FUNKTION = ANFANGSBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = [
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER AUF
+
+ INFO = ANFANG DES PROTEIN
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ PROTEIN KLASSE = PROTEIN-ENDE
+
+ FUNKTION = ENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = ]
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
+
+ INFO = ENDE DES PROTEIN
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ PROTEIN KLASSE = GNAZLICHES-PROTEIN
+
+ FUNKTION =
+
+ STELLT EIN GANZES PROTEIN ZUR VERFÜGUNG DAS GEFÜLLT WERDEN KANN
+
+ SYMBOLISCHE DEKLARATION = [ ]
+
+ SYMBOLIK IN WORTEN = ECKIGEKLAMMER-AUF ECKIGEKLAMMER-ZU
+
+ INFO = STELLT NUR DIE RAHMENBEDIENUNG HER
+
+--------------------------------------------------------------------
+
+###################### ENDE DER PROTEIN/E ##########################
+

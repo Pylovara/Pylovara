@@ -1,4 +1,4 @@
-@kernel-nr: 04 | PROTONEN
+@kernel-nr: 04 | PROTONEN | STATUS :
 ####################################################################
 
  NAME = PROTON
@@ -15,60 +15,96 @@
 
  ERKLÄRUNG PROTON/EN =
 
+ UM HARDWARE KOMPONENTEN ZU VERSORGEN WERDEN AUTOMATIONS PROGRAMME
+ BENÖTIGT, DIE WIR DURCH DAS ANSPRECHEN VON AUTOMATIONS ABLÄUFE IN
+ MCS DATEITYPEN DEFINIEREN.
 
+ ÜBER PROTONEN STEUERN WIRD DIESE AUTOMATIONSGESCHRIEBENE HARDWARE
+ ABLAUFSTEUERUNGEN.
 
---------------------------------------------------------------------
+ PRIMÄR BEWERKSTELLIGEN PROTONEN DIE ANSTEUERUNG FÜR VERSCHIEDENE
+ ZUSTÄNDE UND WERDEN IN PROTEINE IM HAUPDATENTRÄGER AN DIE
+ JEWEILIGEN HARDWAREKOMPONENTEN GESCHICKT.
 
- Textliche Definition :
+ DADURCH ERREICHT DER MCS KERNEL EINEN EIGENEN MÖGLICHEN DRIVER
+ GESCHRIEBENEN ZUSTAND, DER GRUNDSÄTZLICH ALLES ANSTEUERN KANN.
 
-
- Das Proton ist der Hardwaresteuerung Container der sich
- hauptsächlich auf Das EnergieManagment Konsentriert und
- wird dafür Verwendet Hardware komponente anzusprechen .
-
- Mit einem Proton lässt sich Strom in der kompletten gesamtheit
- von Watt bis Temperatur steuern und kann auf UI auf bestimmte
- Steuerungslogiken ausgeweitet angewandt werden.
-
- Wärendessen sich Das Protein darauf Konsentriert abläufe durch Pfade
- und Syscall auszuführen, werden Proton /en dazu genutzt auslöserlogiken
- wie Die Energie-Steuerung oder Optische-Steuerung zu tragen.
-
- Um Hardwaresteuerungen :
- - Um Das Energiemanagment zu steuern
-
- Oberflächen-Steuerung
- - UM UI Control Steuerung zu Verknüpfen
-
- Grundsätzlich wird für Proton /en Das MCS CMD Register im bereich
- Hardwaresteuerung Genutzt.
-
- (siehe kernel 99)
+ PROTONEN NUTZEN HAUPTSÄCHLICH DIE BOXIS MCS-REGISTER FÜR DIESEN ZWECK.
 
 --------------------------------------------------------------------
 
- Definition Proton in Worten :
+--------------------------------------------------------------------
 
- Geschweifte Klammern Auf Eingabe Geschweifte Klammern Zu
-
- Geschweifte Klammern Auf Eingabe Trennbefehl Geschweifte Klammern Zu
-
- Geschweifte Klammern Auf Inhalt Geschweifte Klammern Zu
+ ↓ STANDARTLAYOUT ↓
 
 --------------------------------------------------------------------
 
- Definition Protein Symbol :
+ PROTON KLASSE =
 
- { Proton Anfang/Auf
- } Proton Ende/Zu
+ FUNKTION =
+
+ SYMBOLISCHE DEKLARATION =
+
+ SYMBOL IN WORTEN =
+
+ INFO =
 
 --------------------------------------------------------------------
 
- Definition Proton :
-
- {}
+####################################################################
 
 --------------------------------------------------------------------
+
+ PROTON KLASSE = PROTON-START
+
+ FUNKTION = ANFANGSBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = {
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF
+
+ INFO = ANFANG DES PROTON
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ PROTON KLASSE = PROTON-ENDE
+
+ FUNKTION = ENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = }
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER ZU
+
+ INFO = ENDE DES PROTON
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ PROTON KLASSE = GNAZLICHES-PROTON
+
+ FUNKTION =
+
+ STELLT EIN GANZES PROTON ZUR VERFÜGUNG DAS GEFÜLLT WERDEN KANN
+
+ SYMBOLISCHE DEKLARATION = { }
+
+ SYMBOLIK IN WORTEN = GESCHWEIFTEKLAMMER-AUF GESCHWEIFTEKLAMMER-ZU
+
+ INFO = STELLT NUR DIE RAHMENBEDIENUNG HER
+
+--------------------------------------------------------------------
+
+####################################################################
+
+ BAUUSTELLEN-ABSCHNITT-ANFANG
+
 
  Definition Verschachtelte Proton /en :
 
@@ -82,33 +118,6 @@
 
  (Diese Sektor Wird Noch Designed und Definiert)
 
---------------------------------------------------------------------
-
- Definitionen Hardwaresteuerung Unverschachtelt :
-
-  {’Name’|¨Wert¨}
-  {’Name’|’Einheit’|¨Wert¨}
-  {’Name’|"Typ"|’Einheit’|¨Wert¨}
-  Optional: {’Name’|¨Wert1¨|¨Wert2¨|…}
-
-  Example :
-  {’Temp’|¨25¨}
-  {’Watt’|¨200¨}
-  {’Band’|’eingabe’}
-  {’Amp’|’eingabe’}
-  {’Watt’|’eingabe’}
-  {’Volt’|’eingabe’}
-  {’Temp’|’eingabe’}
-  {’Pid’|’eingabe’}
-  {’Thread’|’eingabe’}
-  {’ID’|’eingabe’}
-  {’Lüfter’|’eingabe’}
-  {’Motor’|’eingabe’}
-  {’Cpu’|’eingabe’}
-  {’Gpu’|’eingabe’}
-  {’Bluetooth’|’eingabe’}
-  {’Usb’|’eingabe’}
-  {’Fequenz’|’eingabe’}
 
 --------------------------------------------------------------------
  Proton Anwendungsfälle
@@ -120,5 +129,10 @@
  - Logische (Valid, State, Mode)
  - Prozessbezogene (Pid, Thread, ID)
 
-##################### Ende der Proton /en  #########################
+ BAUUSTELLEN-ABSCHNITT-ENDE
+
+--------------------------------------------------------------------
+
 ####################################################################
+
+##################### ENDE DER PROTONEN  ###########################

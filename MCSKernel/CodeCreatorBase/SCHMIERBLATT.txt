@@ -140,6 +140,88 @@ das würde das gesamte system stüzen ohne brechnung der logik zu zu lassen !!!!
 
 
 
+--------------------------------------------------------------------
+
+ Definition Proton in Worten :
+
+ Geschweifte Klammern Auf Eingabe Geschweifte Klammern Zu
+
+ Geschweifte Klammern Auf Eingabe Trennbefehl Geschweifte Klammern Zu
+
+ Geschweifte Klammern Auf Inhalt Geschweifte Klammern Zu
+
+--------------------------------------------------------------------
+
+ Definition Protein Symbol :
+
+ { Proton Anfang/Auf
+ } Proton Ende/Zu
+
+--------------------------------------------------------------------
+
+ Definition Proton :
+
+ {}
+
+--------------------------------------------------------------------
+
+ Definition Verschachtelte Proton /en :
+
+ {{{{{{{}}}}}}}
+
+--------------------------------------------------------------------
+
+ Beispiel HardwareManagment MusterBeispiel:
+
+ {’CPU’{’Volt’|'*'{'Watt'|'*'{’Ampere’|'*'{’Widerstand’{’Frequenz’|’*’}}}}}}
+
+ (Diese Sektor Wird Noch Designed und Definiert)
+
+--------------------------------------------------------------------
+
+ Definitionen Hardwaresteuerung Unverschachtelt :
+
+  {’Name’|¨Wert¨}
+  {’Name’|’Einheit’|¨Wert¨}
+  {’Name’|"Typ"|’Einheit’|¨Wert¨}
+  Optional: {’Name’|¨Wert1¨|¨Wert2¨|…}
+
+  Example :
+  {’Temp’|¨25¨}
+  {’Watt’|¨200¨}
+  {’Band’|’eingabe’}
+  {’Amp’|’eingabe’}
+  {’Watt’|’eingabe’}
+  {’Volt’|’eingabe’}
+  {’Temp’|’eingabe’}
+  {’Pid’|’eingabe’}
+  {’Thread’|’eingabe’}
+  {’ID’|’eingabe’}
+  {’Lüfter’|’eingabe’}
+  {’Motor’|’eingabe’}
+  {’Cpu’|’eingabe’}
+  {’Gpu’|’eingabe’}
+  {’Bluetooth’|’eingabe’}
+  {’Usb’|’eingabe’}
+  {’Fequenz’|’eingabe’}
+
+--------------------------------------------------------------------
+ Proton Anwendungsfälle
+
+ - Primär Physikalische (Temp, Volt, Watt, Amp)
+ - Sekundär Verschachtelte (Chip + EnergieManagment)
+ - Kommunikationsbezogene (Strom ,Interface, Transport)
+ - Speicherbezogene (Cache, Signed, Unsigned)
+ - Logische (Valid, State, Mode)
+ - Prozessbezogene (Pid, Thread, ID)
+
+##################### Ende der Proton /en  #########################
+####################################################################
+
+
+
+
+
 
 
 

@@ -56,17 +56,32 @@
 
  ## Proton MCS CMD Befehle noch nicht implementiert !Baustelle !
 
- ’Name’
- ’Einheit’
- ’Typ’
- ’Watt’
- ’Band’
- ’Amp’
- ’Watt’
- ’Volt’
- ’Temp’
- ’clock’
- ’eingabe’
+
+ Definitionen Hardwaresteuerung Unverschachtelt :
+
+  {’Name’|¨Wert¨}
+  {’Name’|’Einheit’|¨Wert¨}
+  {’Name’|"Typ"|’Einheit’|¨Wert¨}
+  Optional: {’Name’|¨Wert1¨|¨Wert2¨|…}
+
+  Example :
+  {’Temp’|¨25¨}
+  {’Watt’|¨200¨}
+  {’Band’|’eingabe’}
+  {’Amp’|’eingabe’}
+  {’Watt’|’eingabe’}
+  {’Volt’|’eingabe’}
+  {’Temp’|’eingabe’}
+  {’Pid’|’eingabe’}
+  {’Thread’|’eingabe’}
+  {’ID’|’eingabe’}
+  {’Lüfter’|’eingabe’}
+  {’Motor’|’eingabe’}
+  {’Cpu’|’eingabe’}
+  {’Gpu’|’eingabe’}
+  {’Bluetooth’|’eingabe’}
+  {’Usb’|’eingabe’}
+  {’Fequenz’|’eingabe’}
 
 --------------------------------------------------------------------
  ## Hardware bezogene MCS CMD :

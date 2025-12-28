@@ -1,69 +1,73 @@
-@kernel-nr: 05
+@kernel-nr: 05 | TRENNBEFEHL/E | STATUS : VALIDE
 ####################################################################
 
- Erklärung :
+ NAME = TRENNBEFEHL
 
- Trennbefehl = Leerzeichen
+ BEGRIFFSDEFINTION = DATENTRÄGELEHRZEICHEN
 
- Trennbefehl Mehrzahl = Trennbefehl/e
+ MERHZAHL = TRENNBEFEHLE
 
- Trennbefehl = Optische Ordnung
+ FUNKTION = LEERAUMBESEITIGUNG
 
- Trennbefehl = Nutzt niemals Trennbefehle wie in Eingaben
-
---------------------------------------------------------------------
-
- Textliche Definition
-
- Sie dienen als Leerzeichen und Optischen Zwischenraum und werden
- werden besonders für Eingaben Trennungen und Protein zu Proton
- Trennungen genutzt.
+ AUSFÜHRUNGSART =
 
 --------------------------------------------------------------------
 
- Definition Trennbefehl in Worten :
+ ERKLÄRUNG TRENNBEFEHLE =
 
- Trennbefehl
+ DIENEN IN HAUPTDATENTRÄGE FÜR DIE OPTISCHE ORDNUNG UND WERDEN
+ NIEMALS WIE IN BOXIS GENUTZT.
+
+ SIE TRENNENBOXIS VONEINADER IN DER OPTISCHEN NATUR.
+
+ TRENNBEFELE WERDEN NUR NICHT AM PROTEIN-START UND PROTEIN-ENDE
+ GENUTZT DA DIE RAHMENBEDIENUNG SELBST AUSREICHT, DAS SELBE
+ GILT IN PROTONEN RAHMENBEDIENUNGEN
+--------------------------------------------------------------------
+
+ ↓ STANDARTLAYOUT ↓
 
 --------------------------------------------------------------------
 
- Definition Symbol :
+ PROTEIN KLASSE =
 
-    |
+ FUNKTION =
 
---------------------------------------------------------------------
- Definition Trennbefehl in Protein/Proton :
+ SYMBOLISCHE DEKLARATION =
 
+ SYMBOL IN WORTEN =
 
-    [*|*] Protein
-    {*|*} Proton
-
---------------------------------------------------------------------
- Definition Trennbefehl Anordnungen Protein /en & Proton /en :
-
-    [*|*|{*|*}]
-
- Verständniss : Sternchen Makieren inhalt
-
---------------------------------------------------------------------
- Hinweis für Interessierte :
-
- Das MCS-Framework wächst organisch, bleibt aber lesbar und kann als
- allrounder verwendet werden .
-
- Info :
-
- Trennbefehle | sind in vielen systemen anders gedeutet und daher
- muss drigend verstanden werden das ein Trennbfehl oder zwei
- folgende innerhalb einer System CMD eingabe (siehe kernel lex 07)
- meist kurzschluss funktionen haben !!
+ INFO =
 
 --------------------------------------------------------------------
 
- Warnhinweis :
+####################################################################
 
- !! Nutzt niemals Trennbefehle wie bei System/Shell CMD Eingaben !!
-       !! Nicht nutzen wie bei Unix/Poesix/Minix/Shells !!
+-------------------------------------------------------------------
+
+ TRENNBEFEHL KLASSE = TRENNBEFEHL
+
+ FUNKTION = LEERZEICHEN ZWISCHEN BOXIS
+
+ SYMBOLISCHE DEKLARATION = |
+
+ SYMBOL IN WORTEN = SENKRECHTER STRICH
+
+ INFO = WIRD ALS LEERZEICHEN GENUTZT IN PROTEINE WIE PROTONEN
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ WARNHINWEIS =
+
+ SENKRECHTE STRICHE WERDEN IN PYLOVARA-SYSTEM MCS NICHT WIE IN
+ ALTEN SYSTEMEN GENUTZT UND DÜRFEN UNTER KEINEM UMSTAND IN BOXIS
+ GENAUSO VERWENDET WERDEN
+
+--------------------------------------------------------------------
 
 #################### Ende der Trennbefehl  #########################
-####################################################################
+

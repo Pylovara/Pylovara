@@ -1,0 +1,62 @@
+@kernel-nr: 12 | ADRESSIERUNG | STATUS : BAUSTELLE
+####################################################################
+
+ Adressierung (siehe : kernel Lex 11 | kernel lex 12)
+
+    =  Adressierung
+
+    Die Adressierung dient als direkten knoten punkt
+    für Zielreferenz-Dirigent-Identifikation um durch
+    das Adressierungs Symbol = alles anzuhängen für den
+    Transport und Verschlüsselung
+
+
+    ZusatzInfo :
+
+    wird aber  noch nicht im MCS Desktop verwendet in configs weil
+    unötig .
+
+##################### Ende der Adressierung  #######################
+####################################################################
+
+
+####################################################################
+
+    §   Zielreferenzenz :
+
+    Innere Zielreferenz die angesteuert werden sollen , egal ob
+    Hardware oder Programme .
+
+    / $Prozess-ID
+    / $Hardware-Slot
+    / $Gerätepfad (in RAM, Dev, CPU-Bereich)
+    / $OrdnerPfad (zur Ausführbaren oder Laufenden Verknüpfung)
+    / $Compositoren
+    / $Compiler
+
+--------------------------------------------------------------------
+
+##################### Ende der Zielreferenz ########################
+####################################################################
+
+@kernel-nr: 12
+####################################################################
+
+    $   Dirigent :
+
+    Externe Übergabe
+
+    / §lokale API
+    / §Kernelpfad
+    / §Netzwerk
+    / §InternetAdresse
+    / §Email (Direkte Sendung z.b)
+    / §Imei (Geräate Upadets z.b)
+    / §BuildNr (Software Updates z.b)
+
+    usw , die möglichkeiten sind quasi unbegrenzt
+
+--------------------------------------------------------------------
+
+######################## Ende des Dirigent #########################
+####################################################################

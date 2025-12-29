@@ -1,6 +1,276 @@
 #### Schmierblatt
 
+
+
+--------------------------------------------------------------------
+
+ Definition WennJaBedienung Symbol :
+
+ ¶
+
+ --------------------
+
+ Definition WennJaBedienung in Worten :
+
+ Absatzzeichen (Pilcrow)
+
+ --------------------
+
+ Definition WennJaBedienung :
+
+ Dies Kann ausgeführt werden, wenn Bedingung erfüllt
+
+ --------------------
+
+ Definition RufName :
+
+ WennJaBedienung
+
+ --------------------
+
+ Erklärung :
+
+ WennJaBedienung Schalten ein Protein (und oder mit Proton) frei.
+
+
+ Später FPGA Bezogen :
+
+ AND-Gatter
+
+--------------------------------------------------------------------
+
+ Definition WennNichtBedienung Symbol :
+
+ ¶¶
+
+ --------------------
+
+ Definition WennNichtBedienung in Worten :
+
+ Absatzzeichen Absatzzeichen (Pilcrow Pilcrow)
+
+ --------------------
+
+ Definition WennNichtBedienung :
+
+ Dies Kann ausgeführt werden, wenn Bedingung nicht erfüllt
+
+ --------------------
+
+ Definition RufName :
+
+ WennNichtBedienung
+
+ --------------------
+
+ Erklärung :
+
+ WennNichtBedienung Schalten ein Protein (und oder mit) Proton frei.
+
+
+ Später FPGA Bezogen :
+
+ NOT-AND-Gatter
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+######## SCHMIERBLATT #########
+
+ C. OPERATOR|ISTZUSTAND
+ -· PLANAKANNWEITERGEHEN
+ -·· PLANBKANNWEITERGEHEN
+ -= AUSWERTUNG 1 2
+
+
+ R. OPERATOR|ISTZUSTAND|WASANDERES
+ ISTZUSTAND|WASANDERES
+ -·< KANNPARALLELLAUFEN AUSWERTUNG
+ -··< KANNPARALLELLAUFEN PLUS
+
+
+
+
+ H. TRANSPORT|ISTZUSTAND
+ -·> KANNPARALLELTRANSPORTIERTWERDEN
+ -··> KANNPARALLELTRANSPORTIERTWERDEN
+
+
+ ICH MUSS DEN ARGUEMNTEN.KERNEL-LEX DIE RECHNUNG ENTZIEHEN
+ UND JEDES RECHEN SYMBOL DIREKT DEM RECHNER GEBEN STATTS ABSTRAHIEREN
+ UND DIE SYMBOLE FÜR INNEINANDER KUPPLUNGEN VERWENDEN
+
+ DANN MUSS ICH plan-wenn-kann symbole
+ als grundlage für parallelprozesse übernehmen und das symbol
+ systemweit < für parallele verarbeitung verankern
+
+ bei transporte muss ich das symbol >
+ verankern die dann in der jeweiligen combination wie parallel
+ die proteinpackete nehmen
+
+ das heist wahrheiten sind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###################### BOXI/S SCHALTPLÄNE ########################
+
+
+######## SCHMIERBLATT #########
+
+ C. OPERATOR|ISTZUSTAND
+ -· PLANAKANNWEITERGEHEN
+ -·· PLANBKANNWEITERGEHEN
+ -=
+
+
+ R. OPERATOR|ISTZUSTAND|WASANDERES
+ ISTZUSTAND|WASANDERES
+ -: KANNPARALLELLAUFEN
+
+ H. TRANSPORT|ISTZUSTAND
+ -:: KANNPARALLELTRANSPORTIERTWERDEN
+
+######## SCHMIERBLATT #########
+
+
+
+
+Das bedeutet:
+
+BOXIs fließen
+
+Proteine tragen
+
+Protonen versorgen
+
+Wahrheiten entscheiden, ob ein Fluss:
+
+weiter darf
+
+gespiegelt wird
+
+parallelisiert wird
+
+transportiert wird
+
+blockiert wird
+
+ Topologische Kontrollgatter im linearen Datenstrom
+ Wahrheiten sind die Gatter, die den BOXI-Fluss bewerten
+ Wahrheiten sind Bewertungs-Gatter für Flüsse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  Schaltlogik :
 
@@ -220,8 +490,132 @@ das würde das gesamte system stüzen ohne brechnung der logik zu zu lassen !!!!
 
 
 
+du hast recht , wenn wir die alu selbst rechnen lassen dann brauch ich höchstens nur die wahrheiten klasse die dann die ergebnise von genau der rechnung heraus transportiert .... und diese kann ich mit den rechen symbolen verlinken als alu ausput und dann haben die eigentlichen rechnungs symbole gar keine rechnungs funktion sondern eigentlich nur die rückgabe vom eigentlichen ergebis ....... moment ...... ich muss aber irgendwo die rechnung zumindestens deklarieren mit dem symbol zum runter geben *grübel*
+
+das heißt ich kann die boxis erweitern und ihnen einen boxi bauen wo rechnungen mit den symbolen weiter gegegebn werden an den rechner selbst .... wenn unterhalb der alu plus minus mal adieren prozent rechnen verstanden wird dann müsste es die symbole ja von haus aus kennen dafür oder ?
+
+wenn ja brauch ich nur eine neue boxis wo ich expolizit ŁŁıııııııııııııııııııẞ§ΩÆÐªŊ‹›ı›››ıııııııııııııııı&Ł÷———××××××xX·…µ·ĸł««»»›Ł÷×××××××××× <--- ich habs gefunden
+
+neue boxi container × mit alt shit und komma
+
+
+also BOXI KLASS = KLUGSCHEIßER
+
+SYMBOL = ×
+
+und dann einfach »[×1+1×]«
+
+per wahrheiten dann ergebnis heraus holen
+
+-= ["2"]
+
+
+also dann
+»[×1+1×]«
+-= ["2"]
+
+dann per MCS-CMD register einen register eintrag machen für COPIE
+
+die if und else regel wieder zu den operatoren zurück bringen und raus aus den wahrheiten
+
+»[×1+1×]«
+ -= ["2"]
+    ¶ »[’COPIE WAHRHEITEN-ERGEBNIS TO’|¨¨]«
+
+dann dafür sorgen das dass wort TO den hinhalt aus WAHRHEITEN-ERGEBNIS in das nächste folge BOXI nach dem Trennbefehl übertragen wird
+
+»[×1+1×]«
+  -= ["2"]
+       ¶ »[’COPIE WAHRHEITEN-ERGEBNIS TO’|(AXY)¨2¨]«
+
+idealerweise vielleicht sogar mit einem feed wie bei mir im beispiel
+und von dort aus kann ich die zwei dann vom FÜHRENDEN FEED FF zu einem TRAGENDEN FEED TF überall mit nehmen wohin ich es auch will
+
+
+
+ich glaube ich hab ein schaltplan
+
+LAZERIMPULS + GLASFASER TECHNIK + LASER = UPDATE
 
 
 
 
 
+
+
+
+
+
+
+
+LASERTECHNIK + SVG
+
+
+Erinnere dich:
+######## SCHMIERBLATT #########
+
+ C. OPERATOR|ISTZUSTAND
+ -· PLANAKANNWEITERGEHEN
+ -·· PLANBKANNWEITERGEHEN
+ -= AUSWERTUNG 1 2
+ -=+ AUSWERTUNG ADDIEREN 1 und 1
+ -=- AUSWERTUNG SUBDRAHIERE 1 und 2
+ -=: AUSWERTUNG
+
+ R. OPERATOR|ISTZUSTAND|WASANDERES
+ ISTZUSTAND|WASANDERES
+ -=< KANNPARALLELLAUFEN AUSWERTUNG
+ -=+< KANNPARALLELLAUFEN PLUS
+ -=+-< KANNPARALLELLAUFEN MINUS
+ -=:< KANNPARALLELLAUFEN GETEILT
+ -=%< KANNPARALLELLAUFEN GETEILT
+
+
+
+ H. TRANSPORT|ISTZUSTAND
+ -·> KANNPARALLELTRANSPORTIERTWERDEN
+ -··> KANNPARALLELTRANSPORTIERTWERDEN
+
+
+ ICH MUSS DEN ARGUEMNTEN.KERNEL-LEX DIE RECHNUNG ENTZIEHEN
+ UND JEDES RECHEN SYMBOL DIREKT DEM RECHNER GEBEN STATTS ABSTRAHIEREN
+ UND DIE SYMBOLE FÜR INNEINANDER KUPPLUNGEN VERWENDEN
+
+ DANN MUSS ICH plan-wenn-kann symbole
+ als grundlage für parallelprozesse übernehmen und das symbol
+ systemweit < für parallele verarbeitung verankern
+
+ bei transporte muss ich das symbol >
+ verankern die dann in der jeweiligen combination wie parallel
+ die proteinpackete nehmen
+
+ das heist wahrheiten sind
+
+ -
+
+ weitergehen sind
+
+ ·
+ ··
+
+ auswertungen sind
+
+ =
+
+ und rechnungen sind
+
+ +
+ -
+ ·
+ :
+ %
+
+ und die reihenfolge verhindert das es zu kurzschlüssel oder verwechslungen kommen kann
+
+
+
+ ich glaube das ist viel stabiler und besser als alles was es je gegeben hat
+
+
+
+######## SCHMIERBLATT #########

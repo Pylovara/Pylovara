@@ -1,281 +1,181 @@
-@kernel-nr: 08 | TeilBaustelle |
+@kernel-nr: 08 | WAHRHEITEN | STATUS : VALIDE
 ####################################################################
 
- Erklärung :
+ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
 
- Wahrheit = Auswahl | Schaltet
+  WELTWEITER URSPRUNG UND URHEBER WIE LICENSETRÄGER VON WAHRHEITEN
 
---------------------------------------------------------------------
+         DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT
 
- Textliche Definition :
-
- Wahrheiten sind Entscheidungslogiken , die aus dem Hause C
- Assimiliert wurden und linear übernommen wurden .
-
- Ohne Wahrheiten keine Schaltung , Ohne schaltung Keine Automation.
-
- Wahrheiten führen Protein/e aus oder und mit Proton/en.
-
- Hinweis:
-
- Die Trennung von Protein (Seite3) und Aktion (Seite 10),
- ist in mehreren Aspekten dringlich notwendig um
- Ausführungensverdrahtung für Wahrheiten zu Realisieren.
-
- Basierend auf Linear Verarbeitung, AI Freundlich wie FPGA
- Tauglich und Fehlerabweisender !
-
- Komposition statt Rekursion und das egal ob auf Normale
- Architekturen oder Später FPGA mit BMC (BrainMaschineCore GPU)
+         PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
 
 --------------------------------------------------------------------
 
- Definition WennJaBedienung Symbol :
+ NAME = Wahrheit
 
- ¶
+ BEGRIFFSDEFINTION = Fluss-Gatter
 
- --------------------
+ MERHZAHL = Wahrheiten
 
- Definition WennJaBedienung in Worten :
+ FUNKTION = Schaltung
 
- Absatzzeichen (Pilcrow)
-
- --------------------
-
- Definition WennJaBedienung :
-
- Dies Kann ausgeführt werden, wenn Bedingung erfüllt
-
- --------------------
-
- Definition RufName :
-
- WennJaBedienung
-
- --------------------
-
- Erklärung :
-
- WennJaBedienung Schalten ein Protein (und oder mit Proton) frei.
-
-
- Später FPGA Bezogen :
-
- AND-Gatter
+ AUSFÜHRUNGSART =
 
 --------------------------------------------------------------------
 
- Definition WennNichtBedienung Symbol :
+ ERKLÄRUNG  =
 
- ¶¶
+ WAHRHEITEN SIND ENTSCHEIDUNGEN DIE LISTENARTIG GETROFFENWERDEN
+ KÖNNEN UND DURCH SYMBOLIK PRÄZISE AUS DER WAHRHEIT HERAUSGENOMMEN
+ WERDEN KÖNNEN WENN SIE GESCHALTEN SIND, SIE REPÄSENTIEREN DEN DANN
+ FOLGENDEN IST ZUSTAND.
 
- --------------------
+ SIE KÖNNEN DANN IN DIE PARALLELISIERUNG GESCHICKT WERDEN UM DEN
+ IST ZUSTAND WEITERZUTRAGEN IN DIE NÄCHSTE INSTANZ, DIE DANN AUS
+ DEN ERGEBNIS DESSEN WAS Z.B EIN OPERATOR ENTSCHIEDEN HAT, DAS
+ ERGEBNIS MIT NEHMEN UND WEITERVERARBEITEN KÖNNEN.
 
- Definition WennNichtBedienung in Worten :
+ WAHRHEITEN KÖNNEN AUF BESTEHENDER HARDWARE GENUTZT WERDEN ODER
+ AUCH IN ZUCKÜNFTIGEN CHIPS, EGAL OB PROGRAMMIERBAR ODER ACES.
 
- Absatzzeichen Absatzzeichen (Pilcrow Pilcrow)
+ SIE DIENEN ALS SCHALTUNGSWERZEUG UNTER DEM BEGRIFF WARHEITEN
 
- --------------------
+ NACH DEM PPRINZIP : DAS KANN WAHRSEIN ODER DAS KANN WAHRSEIN ODER
+ DAS KANN EINE PARALLEL WAHRHEIT SEIN.
 
- Definition WennNichtBedienung :
+ Die Wahrheiten sind die Gatter, die den BOXI-Fluss bewerten.
+ DIE WAHRHEITEN SIND WIE GATTER, DIE DEN BOXI-FLUSS BEWERTEN
+ ODER PER PARALLELISIERUNG PROTEINE COPIEREN KÖNNEN FÜR WEITER
+ VERARBEITEN VERARBEITUNGEN.
 
- Dies Kann ausgeführt werden, wenn Bedingung nicht erfüllt
+####################################################################
 
- --------------------
-
- Definition RufName :
-
- WennNichtBedienung
-
- --------------------
-
- Erklärung :
-
- WennNichtBedienung Schalten ein Protein (und oder mit) Proton frei.
-
-
- Später FPGA Bezogen :
-
- NOT-AND-Gatter
 
 --------------------------------------------------------------------
 
- Definition ParallelProzess Symbol :
-
- ¶=
-
- --------------------
-
- Definition ParallelProzess in Worten :
-
- Absatzzeichen (Pilcrow) Istgleich
-
- --------------------
-
- Definition ParallelProzess :
-
- Ausführung ohne Wartezeit, aktiver Prozess.
-
- --------------------
-
- Definition RufName :
-
- Dies Führt Parallel einen Prozess aus
-
- --------------------
-
- Erklärung :
-
- ParallelProzess Schalten für Protein (und oder mit Proton) frei,
- nebenläufigen Prozess, kein Warten
-
-
- Später FPGA Bezogen :
-
- ALU/FPGA-Gatter
+ ↓ STANDARTLAYOUT ↓
 
 --------------------------------------------------------------------
 
- Definition ParallelTransport Symbol
+ WAHRHEITEN KLASSE =
 
- ;;
+ FUNKTION =
 
- --------------------
+ SYMBOLISCHE DEKLARATION =
 
- Definition ParallelTransport in Worten :
+ SYMBOL IN WORTEN =
 
- Strichpunkt Strichpunkt (Semikolon Semikolon)
-
- --------------------
-
- Definition ParallelTransport :
-
- Ausführung ohne Wartezeit, Daten-Stream (Transferleistung).
-
- --------------------
-
- Definition RufName :
-
- ParallelTransport
-
- --------------------
-
- Erklärung :
-
- ParallelTransport für Protein (und oder mit Proton) frei
- , kein Warten ohne Blockade
-
-
- Später FPGA Bezogen :
-
- DMA/Datentransfer
+ INFO =
 
 --------------------------------------------------------------------
 
- Definition MassenZusammenSetzung Symbol
-
- ~~
-
- --------------------
-
- Definition MassenZusammenSetzung in Worten :
-
- Strichpunkt Strichpunkt (Semikolon Semikolon)
-
- --------------------
-
- Definition MassenZusammenSetzung :
-
- Setzt Protein/e als Logische zusammenhang zusammen, Kleberverbindung.
- Fragmentierung und Rekombination.
-
- --------------------
-
- Definition RufName :
-
- MassenZusammenSetzung
-
- --------------------
-
- Erklärung :
-
- MassenZusammenSetzung für Protein (und oder mit Proton) zusammen,
- kann unausfürbare Protein/e Verbinden.
-
- Als logisches Bindemittel für komplexe Datenstrukturen zum beispiel
- SVG Bilder die in einzelteilen übertragen werden, das vielen kleinen
- Protein-Paketen besteht, ist ~~
- der Kleber, der dem Kernel sagt ,,Behandle diese 100 Proteine als
- eine einzige Masse, bis sie am Ziel sind.’’
- StichPunkt : Bild, Audio, Video Generative verarbeitung oder
- Transporte.
+####################################################################
 
 --------------------------------------------------------------------
 
- Hinweis Kurzerklärung :
+ WAHRHEITEN HAUPT KLASSE = WARHEITEN
 
- Operatoren mit Nutzunglogik Wahrheiten :
+ FUNKTION = SCHALTUNG
 
- lineare WennJaBedienung/WennNichtBedienung/Negations-Workflows
+ SYMBOLISCHE DEKLARATION = –
 
- Grund :
- mehr Kontrolle, mehr Sicherheit, mehr Analysierbarkeit
-    - Linear-first Design
-    - Feed-basierte Zustandsübergabe
-    - Symbolische Semantik statt Code-Ausführung
-    - Komposition über Rekursion
-    - Kernel-nativ, nicht interpretiert
+ SYMBOL IN WORTEN = BINDESTRICH | VIERTELGEVIERTSTRICH
+
+ INFO = HIERMIT WERDEN UNTER KLASSE/N GETRIGGERT
 
 --------------------------------------------------------------------
 
- Hinweis Informationen :
-
- Ermöglicht:
- - gui Fenster aufrufe.
- - granulare paralell-verarbeitungen
- - hintergrund prozesse
-
- das ist Einmalig auf der Welt , weil :
-
- es die erste lineare, symbolische, RAM-basierte Kontrolllogik
- ist und zwar nicht als Interpreter, sondern als nativ kompilierter
- Kernel-Teil.
-
- Dadurch werden dinge möglich wie :
-
- KI-Steuerung: <--(Wichtig für Die AI Kernel Integration)
- Ein LLM kann ° A ¶ B ¶¶ C direkt trainieren — ohne AST-Parsing,
- ohne Abstraktionsschicht.
-
- Hardware-Generierung: <---(Wichtig für BMC 3.0 FPGA GPU)
- Ein FPGA-Tool kann mcs_protein_t direkt in State-Machines
- übersetzen — ohne Stack, ohne Heap.
-
- Sicherheits-Garantie: Ein Auditor kann jede Entscheidung
- nachvollziehen — ° ['$terminal'] ist kein Code, sondern eine Aussage.
-
- Beispiel Skalierung durch Komposition:
- ¢! ° ['$sensor'] ¶ ['$alert'] !¢
- ¢! ° ['$alert'] ¶ ['$shutdown'] !¢
- ¢! ° ['$shutdown'] ¶ ['$log'] !¢
-
-
- MCS ist nicht darauf angewiesen, Rekursion in einem Protein zu haben,
- sondern nutzt Komposition auf Transaktionsebene :
-
- ¢! ° ['$A'] ¶ ['$B'] ¶¶ ['$C'] !¢
- ¢! ° ['$B'] ¶ ['$D'] ¶¶ ['$E'] !¢
- ¢! ° ['$D'] ¶ ['$F'] ¶¶ ['$G'] !¢
-
- - Jede Transaktion ist linear, sicher, beendet
- - Die Kette ist nicht-linear, zustandsbehaftet, komplex
-
- Aber:
-
- Zustand wird explizit über Feeds (siehe kernel lex 10)
- übertragen und nicht implizit im Stack!
+####################################################################
 
 --------------------------------------------------------------------
+
+ WAHRHEITEN UNTER KLASSE OPTION = WAHRHEITEN-OPTION-A
+
+ FUNKTION = ERSTER AUSGANG
+
+ SYMBOLISCHE DEKLARATION = ·
+
+ SYMBOL IN WORTEN = MITTELPUNKT
+
+ INFO = ERSTER OPTIONS AUSWAHL
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ WAHRHEITEN UNTER KLASSE OPTION = WAHRHEITEN-OPTION-B
+
+ FUNKTION = ZWEITER AUSGANG
+
+ SYMBOLISCHE DEKLARATION = ··
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT
+
+ INFO = ZWEITE OPTIONS AUSWAHL
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ WAHRHEITEN UNTERKLASSE KLASSE = WAHRHEITEN-AUSWERTUNG
+
+ FUNKTION = AUSWERTUNG | ERGBENIS
+
+ SYMBOLISCHE DEKLARATION = =
+
+ SYMBOL IN WORTEN = ISTGLEICHZEICHEN
+
+ INFO = HOLT DIE RECHNUNG AUS DER ALU ALS ERGBIS
+
+ BEISPIEL =
+
+ »[×1+1×]«
+  -= ["2"]
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ WAHRHEITEN UNTERKLASSE = WAHRHEITEN-PARALLEL-PROZESS
+
+ FUNKTION = PARALLELL AUSFÜHRUNG | PROZESS
+
+ SYMBOLISCHE DEKLARATION = <
+
+ SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
+
+ INFO = PARALLELISIERT EIN PROZESS LISTE ODER PROTEIN DUPLIKAT
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ WAHRHEITEN UNTERKLASSE = WAHRHEITEN-PARALLEL-TRANSPORT
+
+ FUNKTION = PARALLEL TRANSPORT
+
+ SYMBOLISCHE DEKLARATION = GRÖẞER-ALS-ZEICHEN
+
+ SYMBOL IN WORTEN = >
+
+ INFO = TRANSPORTIERT PARALLEL IRGENDWAS
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+    BAUSTELLENBEREICH BAUSTELLENBEREICH BAUSTELLENBEREICH
+
 
  ZuckunftsUpgrades :
 
@@ -284,7 +184,8 @@
  >-> für Fork oder Splitting Links Nach Rechts
  <-< für Fork oder Splitting Rechts Vor Links
 
-
+    BAUSTELLENBEREICH BAUSTELLENBEREICH BAUSTELLENBEREICH
 --------------------------------------------------------------------
+
 ##################### Ende der Warheiten   #########################
-####################################################################
+

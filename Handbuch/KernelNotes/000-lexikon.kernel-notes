@@ -2,29 +2,28 @@
 @kernel-nr: lex | System Hanbuch | kernel lex | 00 FallBack | ######
 ####################################################################
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
-#------------------------------------------------------------------#
+####################################################################
 #        Das System befindet sich im Konsolidierungsmodus          #
 #           Die Seitenreihenfolge wird sich ändern                 #
-#------------------------------------------------------------------#
-#                   - SOFTWARE MCS Kernel -                        #
-#       01 X Datentypen -fix2     13 - Warp -fix                   #
-#       02 - Transaktion -fix1    14 X þ Identifikation -fix2      #
-#       03 - Protein -fix4        15 - Argumente -fix              #
-#       04 - Proton -fix          16 - SchaltVerknüpfungen         #
-#       05 - Trennbefehl -fix2    17 - Adressierung -new           #
-#       06 - Aktion -fix2         18 X AI Synctimer                #
-#       07 - BOXIS -neukorrigiert 19 - Discovery Layer
-#       08 - Wahrheiten -fix4
-#       09 - Operatoren -fix4
-#       10 - Feed -fix2           77 X Ausführungslogik -fix2      #
-#       11 - Zielreferenz         88 - Dateitypen -fix             #
-#       12 - Dirigent             99 - Register CMDs -new          #
-#------------------------------------------------------------------#
+####################################################################
+#            - MCS - MASCHINENCODESPEECH - Kernel -                #
+#      01 X Datentypen                14 X þ Identifikation
+#      02 - Transaktion               15 X SchaltVerknüpfungen
+#      03 - Protein                   16 X AI Synctimer
+#      04 - Proton                    17 X Discovery Layer
+#      05 - Trennbefehl
+#      06 - Aktion
+#      07 - BOXIS
+#      08 - Wahrheiten
+#      09 - Operatoren
+#      10 - Argumente
+#      11 - Feed                      77 X Ausführungslogik
+#      12 - Adressierung              88 - Dateitypen
+#      13 - Warp                      99 - MCS-CMD-REGISTER
 ####################################################################
 #               - MCSPLUS ProgrammierSprache -                     #
-#     101 - Einführung                102 - Grundeinheit           #
-#     103 - Tagging und Rollenbindung 104 - StrukturPlan           #
-#
+#     101 - Einführung               102 - Grundeinheit            #
+#     103 - Tagging & Rollenbindung  104 - StrukturPlan            #
 ####################################################################
 #   - HARDWARE Komponenten und Visionen BrainMaschineCore BMC -    #
 #     800 - CHiPBezeichnungen       803 - MIT-Taktgeber            #
@@ -39,8 +38,8 @@
 ####################################################################
 #    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
 #         Tastaturstandart: UTF -8 Deutscher Standart              #
-#   Single Source of Truth (SSoT) Lexikon Version 00.46            #
-#  MCS 4.0 | MCSPLUS 0.3 | BMC Version 0.4 | License Version 1.0   #
+#   Single Source of Truth (SSoT) Lexikon Version 00.47            #
+#  MCS 4.1 | MCSPLUS 0.3 | BMC Version 0.4 | License Version 1.0   #
 #    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
 #------------------------------------------------------------------#
 # Standort: /Pylovara/Handbuch/KernelNotes/     Germany            #

@@ -3,18 +3,18 @@
 ####################################################################
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 ####################################################################
-#        Das System befindet sich im Konsolidierungsmodus          #
-#           Die Seitenreihenfolge wird sich ändern                 #
+#     Das System befindet sich im Konsolidierungsmodus = 0         #
+#           Die Seitenreihenfolge hat sich geändert                #
 ####################################################################
 #            - MCS - MASCHINENCODESPEECH - Kernel -                #
 #      01 X Datentypen                14 X þ Identifikation
-#      02 - Transaktion               15 X SchaltVerknüpfungen
-#      03 - Protein                   16 X AI Synctimer
-#      04 - Proton                    17 X Discovery Layer
-#      05 - Trennbefehl
-#      06 - Aktion
-#      07 - BOXIS
-#      08 - Wahrheiten
+#      02 0 Transaktion               15 X SchaltVerknüpfungen
+#      03 0 Protein                   16 X AI Synctimer
+#      04 0 Proton                    17 X Discovery Layer
+#      05 0 Trennbefehl
+#      06 0 Aktion
+#      07 0 BOXIS
+#      08 0 Wahrheiten
 #      09 - Operatoren
 #      10 - Argumente
 #      11 - Feed                      77 X Ausführungslogik

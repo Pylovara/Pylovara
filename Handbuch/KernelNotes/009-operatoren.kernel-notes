@@ -1,99 +1,335 @@
-@kernel-nr: 09  | OPERATOR/EN | STATUR : BAUSTELLE
+@kernel-nr: 09 | SENTIATOR | STATUS : TEST
 ####################################################################
 
- Erklärung:
+         DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT
 
- Operatoren = Bewertung | Vergleich | Impulsgeber
-
---------------------------------------------------------------------
-
- Textliche Definition:
-
- Operatoren sind die rein lesenden Instanzen.
- Sie sind das „Auge“ des Kernels. Sie bewerten Zustände,
- ohne sie zu verändern. Erst durch die Kopplung mit einem
- Aktionskreislauf » « (Kernel 06) wird aus einer Bewertung
- eine Handlung.
+        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
 
 --------------------------------------------------------------------
 
- Hinweis Wichtig:
- Ein Operator ohne Aktion ist eine Messung.
- Ein Operator mit Aktion ist eine Steuerung.
- Die Operator-Gatter-Tabelle (Logik & Physis)
+ NAME = SENTIATOR
+
+ BEGRIFFSDEFINTION = BEWERTENDE SIGNALINSTANZ
+
+ MERHZAHL = SENTIATOREN
+
+ FUNKTION =
+
+ AUSFÜHRUNGSART =
 
 --------------------------------------------------------------------
 
- ArbeitsHinweis:
-
- Dieser bereich wird noch Fein ausgearbeitet damit es
- Architektonisch In besiherige Systeme Passt wie aber auch
- in die Zuckunfts Planung meiner arbeit am BMC auf FPGA Basis mit
- Neuralen Netzwerk für Verilog
-
- Symbol - Rufname - Logische Funktion (Software) - FPGA-Gatter(Hardware)
-
- ! - DNA-Check - Validiert die þ-Signatur - Security-Gate (Hard-wired)
- < - Abgleich Minus - Prüft, ob Wert kleiner ist - Comparator A < B
- > - Abgleich Plus -Prüft, ob Wert größer ist - Comparator A > B
- đ - Match - Prüft auf 100% Bit-Identität - XNOR-Gatter (Equivalence)
- ° - Inverter -Kehrt das Ergebnis um - NOT-Gatter
- … - Takt-Wächter - Überwacht den Prozessfluss - Watchdog / Heartbeat
- ^ - Logik-Alarm - Meldet unlösbare Zustände - Exception Trap
- ſ - Bereinigung - Löscht Datenreste am Ende - Zeroing / Clear Register
- æ - Einsicht - Erstellt Debug-Protokolle - Trace-Buffer
- ŧ - Null-Prüfer - Checkt auf leeren Inhalt - Zero-Flag Detector
+ ↓ STANDARTLAYOUT ↓
 
 --------------------------------------------------------------------
 
- Validierung der Logik (Beispiele) :
+ SENTIATOR KLASSE =
 
- 1. Nur Lesen (Unausführbares Protein): < [(1)¨50¨|(2)¨100¨]
+ FUNKTION =
 
- Logik:
+ SYMBOLISCHE DEKLARATION =
 
- Der Operator vergleicht nur.
- Das Ergebnis liegt im Register vor, aber es passiert nichts weiter,
- wenn kein Aktionskreislauf oder Aktionsdraht angeschlossen ist.
+ SYMBOL IN WORTEN =
 
- Speziell für FPGA:
+ INFO =
 
- Der Comparator liefert ein Signal an ein geschlossenes Gatter.
+ SENTIATOR MUSTERBEISPIELE =
 
- 2. Lesen & Ausführen
-
- (Aktionskreislauf): < »[(1)¨50¨|(2)¨100¨] ¶ [’motor’|¨ON¨] «
-
- Logik:
-
- Wenn der Vergleich WAHR ist, gibt
- der Aktionsdraht » die Erlaubnis, das Gatter ¶ zu öffnen.
-
- FPGA:
-
- Das Comparator-Signal schaltet das AND-Gatter für
- den Motor-Ausgang durch.
-
-
- Diese Struktur erlaubt es, MCS-Code direkt in Verilog/VHDL
- zu übersetzen. Ein đ in MCS ist ein physikalisches
- Bauteil auf deinem zukünftigen FPGA-Chip in Grönland.
- Die Logik bleibt stabil, egal ob das Protein Daten
- (unausführbar) oder Befehle (ausführbar) enthält.
+ EINSATZBEREICHE MUSTERBEISPIELE =
 
 --------------------------------------------------------------------
 
- In MCS werden Operatoren anders definiert , sie zählen zu :
-
- Wenn/Kann regeln
- Vergleichs regeln
- Wenn/eindeutig regeln
-
- und fehler wie debugg und DatenReste logiken zu erklären
-
- Zuckünftige erweiterungen für Mathematische und Zuweisungen, werden
- höchst warscheinlich zu einer Symbolischen erweiterungslogik führen
- für speziell und explizit diesem einsatzgebiet ..
-
-##################### Ende der Operatoren  #########################
 ####################################################################
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-KANN-IMPULS
+
+ FUNKTION = WENN DAS PASSIERT KANN - IMPULS
+
+ SYMBOLISCHE DEKLARATION = ¶
+
+ SYMBOL IN WORTEN = ABSATZ-ZEICHEN
+
+ INFO = WENN DAS PASSIERT , KANN FOLGENDES FOLGEN
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-NICHT-IMPULS
+
+ FUNKTION = WENN DAS NICHT PASSIERT - IMPULS
+
+ SYMBOLISCHE DEKLARATION = ¶¶
+
+ SYMBOL IN WORTEN = ABSATZ-ZEICHEN ABSATZ-ZEICHEN
+
+ INFO = WENN DAS NICHT PASSIERT , MUSS FOLGENDES FOLGEN
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-NEGATION-IMPULS
+
+ FUNKTION = NEGATION | INVERTER
+
+ SYMBOLISCHE DEKLARATION = °
+
+ SYMBOL IN WORTEN = GRAD-ZEICHEN
+
+ INFO = KEHRT WARNEHMUNG UM
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-MINDERWERT
+
+ FUNKTION = MINDERWERT
+
+ SYMBOLISCHE DEKLARATION = <
+
+ SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
+
+ INFO = PRÜFT AUF MINDERWERT | IST KLEINER
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-MEHRWERT-IMPULS
+
+ FUNKTION = MEHRWERT
+
+ SYMBOLISCHE DEKLARATION = >
+
+ SYMBOL IN WORTEN = GRÖẞER-ALS-ZEICHEN
+
+ INFO = PRÜFT AUF MEHRWERT | IST GRÖẞER
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-MATCH-IMPULS
+
+ FUNKTION = MATCH
+
+ SYMBOLISCHE DEKLARATION = !
+
+ SYMBOL IN WORTEN = AUSRUFEZEICHEN
+
+ INFO = BIT IDENTITÄT 100%
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-PULS-IMPULS
+
+ FUNKTION = PULS ÜBERWACHUNG
+
+ SYMBOLISCHE DEKLARATION = …
+
+ SYMBOL IN WORTEN = AUSLAGERUNGSPUNKT
+
+ INFO =
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-ALARM-IMPULS
+
+ FUNKTION = ALARM
+
+ SYMBOLISCHE DEKLARATION = ^
+
+ SYMBOL IN WORTEN = ZIRKUMFLEX
+
+ INFO = ERKENNT SYSTEM FEHLSCHLAG
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+###################################################################
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-REINHEIT-IMPULS
+
+ FUNKTION = REINHEIT | LÖSCHT
+
+ SYMBOLISCHE DEKLARATION = ſ
+
+ SYMBOL IN WORTEN = LANGES S
+
+ INFO = ERKENNT DATENMÜLL UND WÄSCHT SIE WEG | CLEAR
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-EINSICHT-IMPULS
+
+ FUNKTION = EINSICHT
+
+ SYMBOLISCHE DEKLARATION = æ
+
+ SYMBOL IN WORTEN = AE-LIGATUR
+
+ INFO = ERKENNT PROZESS-SPUR
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-BOXICHECK-IMPULS
+
+ FUNKTION = VAKUUM CHECK
+
+ SYMBOLISCHE DEKLARATION = ŧ
+
+ SYMBOL IN WORTEN = T MIT QUERSTRICH
+
+ INFO = PRÜFT AUF LEEREN BOXI
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-IDENTIFIKATIONSCHECK-IMPULS
+
+ FUNKTION = ID-DNA-IDENTIFIKATION CHECK | IDENTIFIKATIONSPRÜFUNG
+
+ SYMBOLISCHE DEKLARATION = ð
+
+ SYMBOL IN WORTEN = D MIT QUERSTRICH
+
+ INFO = VALLIDIERT DIE þ DNA
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+    BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE BASTELLE BAUSTELLE
+
+--------------------------------------------------------------------
+
+ SENTIATOR KLASSE = *-*-IMPULS
+
+ FUNKTION = AKTIONSKREISLAUF | AKTIONSDRAHT FREISCHALTUNG
+
+ SYMBOLISCHE DEKLARATION = oĸ
+
+ SYMBOL IN WORTEN = o und alt+k
+
+ INFO = SOLL DEN IMPULS FREIGEBEN ZUM SCHARFSTELLEN
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+    BAUSTELLE BAUSTELLE BAUSTELLE BAUSTELLE BASTELLE BAUSTELLE
+
+###################### ENDE DER SENTIATOREN ########################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,86 +1,128 @@
-@kernel-nr: 10 | ARGUMENTE | STATUS : BAUSTELLE
+@kernel-nr: 10 | ARGUMENT/E | STATUS : BAUSTELLE
 ####################################################################
-## Argumente
---------------------------------------------------------------------
 
-    Definition :
+ EIGENTUHM VON PYLOVARA-SYSTEM | DESIGNE THOMAS ZIMMERMANN STUFE 10
 
-    ««
+         DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
 
-    Wichtiger Hinweis :
-
-    Sie werden zu Aktionen hinzu geschrieben und müssen daher
-    erst wahrgenommen werden wenn 3 ««« symbole folgen um fehler
-    quellen auszuschließen !
+         PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
 
 --------------------------------------------------------------------
 
-    Info - Worflow Erkennung :
+ NAME = ARGUMENT
 
-    «««
+ BEGRIFFSDEFINTION =
 
-    Dies hier beinhaltet ein aktion/s ende und ein Argumente,
-    um Aktion /en präzise von Argumenten zu unterscheiden ,werden
-    Argumente auf den kennwert 6 bytes erweitert um
-    aktion/s-enden mit 2 bytes von argumenten zu unterscheiden .
+ MERHZAHL = ARGUMENTE
 
-    also 2 + 2 + 2 = 6 2(aktion) 2+2(argument) gesamt 6 bytes
+ FUNKTION =
 
-    Für den Programmierer selbst bleibt die definition klar , nur
-    im unterbau wird anders gerechnet , um fehlerquellen auszuschließen
-
-    ziehe @dev-nr: 03 anfang und ende sind jeweils 2 bytes
-
-    Da die 2 bytes vom aktion/s ende abgezogen werden,
-    müssen die argumente mit 4 bytes berechnet werden
-    und dann 4 + 1 byte weiter .
-
---------------------------------------------------------------------
-    «« Argumente :
-
-    Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
-    wie mal oder geteilt , plus minus den wert mitgeben können , sie
-    dienen als weitergabe für berechnungen oder angaben , je nach dem
-    ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert
-    oder angabe verstanden :
-
-
- ««-      Minus
- ««+      Plus
- ««·      Mal
- ««:      Geteilt
- ««%      Prozentbezogene Rechnung, z. B. für Anteile
- ««%50   „Gib 50 % von X weiter“
- ««t3    t für time , wartezeit mit sekunden
- ««r3    r für reboot-transaktion mit s für sekunden
-
- Wird typischerweise am Proteinpacket angehangen
- (musterbeispiele mit muster begriffen in mcs cmd und blankernenner);
-
-
- (Code Baustelle , muss der Logik valide angepasst werden)
-
-
- ¢! »[’Lüfter’|{’Watt’|¨200¨}]«««%50 = §MotorID !¢
-
- ¢! »[’Lüfter’|{’Watt’|¨120¨}]«««%30 !¢
-
- ¢!
-    ¶ »[’Lüfter’|{’Temp’|¨80°¨}]«
-    ¶¶ »[’Lüfter’|{’Watt’| ¨220¨}]«««%100
- !¢
-
- oder als worflow :
-
- ¢!
-    »[’Lüfter’|{’Watt’|¨150¨}]«««%40  #grundeinstellung
-        ¶ »[’Lüfter’|{’Temp’|¨80°¨}]«
-        ¶¶ »[’Lüfter’|{’Watt’| ¨220¨}]«««%100
- !¢
-
- Daraus lassen sich ganze prozesse nachbilden
+ AUSFÜHRUNGSART = SIGNAL-ROUTING
 
 --------------------------------------------------------------------
 
-###################### Ende der Argumente ##########################
+ ERKLÄRUNG  =
+
+ EIN ARGUMENT IST EIN PROTEIN AKTIONS ZUSATZ DER ARGUMENTE ZU EINEM
+ PROTEIN DAZU GIBT, DIE KEINE RECHENOPERATIONEN BESITZEN.
+
+--------------------------------------------------------------------
+
+ ↓ STANDARTLAYOUT ↓
+
+--------------------------------------------------------------------
+
+ ARGUMENT KLASSE =
+
+ FUNKTION =
+
+ SYMBOLISCHE DEKLARATION =
+
+ SYMBOL IN WORTEN =
+
+ INFO =
+
+--------------------------------------------------------------------
+
 ####################################################################
+
+--------------------------------------------------------------------
+
+ ARGUMENT KERN KLASSE = ARGUMENT-TRIGGER
+
+ FUNKTION = TRIGGER
+
+ SYMBOLISCHE DEKLARATION = ««
+
+ SYMBOL IN WORTEN = GUILLEMENT LINKS GUILLEMENT LINKS
+
+ INFO = TRIGGERT DIE FUNKTION ARGUMENTE
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-ZEIT
+
+ FUNKTION = ZEIT IN SEKUNDEN
+
+ SYMBOLISCHE DEKLARATION = T
+
+ SYMBOL IN WORTEN = T
+
+ INFO = LÖST DIE ARGUEMNTEN FUNKTION ZEIT AUS IN SEKUNDEN
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-EXIT
+
+ FUNKTION = BEENDET
+
+ SYMBOLISCHE DEKLARATION = E
+
+ SYMBOL IN WORTEN = E
+
+ INFO = BEENDET DIE VERARBEITUNG
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-BESTÄTIGUNG
+
+ FUNKTION = ADMINISTRATIVE BESTÄTIGUNGSANFRAGE
+
+ SYMBOLISCHE DEKLARATION = B
+
+ SYMBOL IN WORTEN = B
+
+ INFO = BESTÄTIGUNGSANFRAGE FÜR DEN WEITEREN PROZESS
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-BESTÄTIGUNG
+
+ FUNKTION = ADMINISTRATIVE BESTÄTIGUNGSANFRAGE
+
+ SYMBOLISCHE DEKLARATION = B
+
+ SYMBOL IN WORTEN = B
+
+ INFO = BESTÄTIGUNGSANFRAGE FÜR DEN WEITEREN PROZESS
+
+--------------------------------------------------------------------
+
+###################### ENDE DES ARGUMENT ##########################
+

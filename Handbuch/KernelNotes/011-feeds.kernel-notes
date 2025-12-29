@@ -1,68 +1,109 @@
 @kernel-nr: 11 | FEED/S | STATUS : TEILBAUSTELLE
 ####################################################################
 
- Erklärung:
 
- Feed/s = Datenkanal, nicht Kontrollkanal
+ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
 
---------------------------------------------------------------------
+         DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
 
- Textliche Definition:
-
- Ein sogenannter Feed nimmt eine information und gibt sie weiter
- an seine Dutzenschaften .
-
- Die Zahl oder Buchstaben oder Kombination
- von beiden ergeben die Kennziffer des Feed/s, das im Unterbau
- gleichzeitig mit einem eindeutigen Cache zugewissen wird .
-
- Der gespeichert Inhalt wird dann an seine Geschwister weiter
- gegeben und Aktualisiert sich nur vom Führenden Feed aus.
+         PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
 
 --------------------------------------------------------------------
 
- Definition Führende/r Feed in Worten :
+ NAME = FEED
 
- Klammer Auf Zahl/Buchstabe Klammer zu Eingabe
+ BEGRIFFSDEFINTION = SYNCRONISATIONSRAHMEN
 
---------------------------------------------------------------------
+ MERHZAHL = FEEDS
 
- Definition Feed Symbol:
+ FUNKTION = PUNKTUELLE TRANSPORTVERDRAHTUNG VON DATEN
+            DATENKANAL, NICHT KONTROLLKANAL
 
-  ( Klammer Auf
-  ) Klammer zu
-
---------------------------------------------------------------------
-
- Definition Feed Abkürzungen:
-
- Führender Feed = FF
- Tragender Feed = TF
+ AUSFÜHRUNGSART =
 
 --------------------------------------------------------------------
 
- Definition Führende/r Feed:
+ ERKLÄRUNG  =
 
- (1)"" <-- Führender Feed an Eingabe Print
- (2)'' <-- Führender Feed an Eingabe Shell CMD
- (3)’’ <-- Führender Feed an Eingabe MCS CMD
- (4),, <-- Führender Feed an Eingabe System-Steuerung
- (5)¨¨ <-- Führender Feed an Eingabe Blankernenner
+ EIN SOGENANNTER FEED LEGT EINEN CACHESPEICHER AN.
+
+ DIE GENUTZTE ZAHL ODER BUCHSTABE ODER EINE KOMBINATION VON BEIDEM,
+ ERGEBEN DIE KENNZIFFER DES FEEDS.
+
+ IM UNTERBAU WIRD FÜR JEDEN FEED EINEN EINDEUTIGEN CACHESPEICHER
+ ZUGEWISSEN DER ÜBER EINEN FÜHRENDEN FEED SICH MIT DEM TRAGENDEN
+ FEED DEN CACHE TEILT.
+
+ EIN SOGENANNTER FÜHRENDER FEED NIMMT EINE INFORMATION AUF UND
+ TEILT DIESEN MIT SEINEN TRAGENDEN FEEDS.
+
+ DER FÜHRENDE FEED WIRD IMMER LINKS VON EINEM BOXI PLAZIERT UND EIN
+ TRAGENDER FEED WIEDERUM INNERHALB EINER BOXI.
+
+ DER GESPEICHERTE INHALT WIRD DANN VOM FÜHRENDEN ZUM TRAGENDEN
+ FEED AKTUALISIERT.
+
+ FEEDS HABEN BEI DIESEM PROZESS IMMER DIE GLEICHE NUMMER UM IHRE
+ EINDEUTIGE ZUGEHÖRIGKEIT ZUEINANDER KLAR ZU DEKLARIEREN.
+
+ FEEDS KÖNNEN PRINZIPIELL JEDEN BOXI TRANSPORTRAHMEN ALS AUFNAHME
+ UND ABLAGE IHRES INHALT NUTZEN, JE NACH EINSATZ WUNSCH AUCH BOXI
+ ÜBERGREIFEND.
 
 --------------------------------------------------------------------
 
- Ein Führender Feed Speicher die Informationen Aus dem Eingaben
- bereich und hält sie in seinem eigen angelegten cache als
- information fest , der cache wieder liegt nur im Führenden
- Feed .
+ ↓ STANDARTLAYOUT ↓
 
 --------------------------------------------------------------------
 
- Definition Tragende/r Feed in Worten:
+ FEED KLASSE =
 
- Eingabe Anfang Klammer Auf Zahl/Buchstabe Klammer Zu Eingabe Ende
+ FUNKTION = CACHE GEBUNDER RAHMEN
+
+ SYMBOLISCHE DEKLARATION = ( )
+
+ SYMBOL IN WORTEN = KLAMMER AUF KLAMMER ZU
+
+ INFO =
 
 --------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ FEED KERN KLASSE = FEED-SYNCRAHMEN
+
+ FUNKTION = CACHE GEBUNDENER RAHMEN
+
+ SYMBOLISCHE DEKLARATION = ( )
+
+ SYMBOL IN WORTEN = KLAMMER AUF KLAMMER ZU
+
+ INFO = FEEDRAHMEN OHNE KENNZIFFER
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
+ DEFINTITION FEED ABKÜRZUNGEN =
+
+ FÜHRENDER FEED = FF
+ TRAGENDER FEED = TF
+
+ -------------------------------------------------------------------
+
+ DEFINITION FÜHRENDE/R FEED =
+
+ (1)" " <-- FÜHRENDER FEED AN BOXI CALLIS
+ (2)' ' <-- FÜHRENDER Feed AN BOXI SHELL-CONTROL
+ (3)~ ~ <-- FÜHRENDER Feed AN BOXI MCS-CMD
+ (4), , <-- FÜHRENDER Feed AN BOXI CALL-CONTROL
+ (5)¨ ¨ <-- FÜHRENDER Feed AN BOXI Blankernenner
+
+ -------------------------------------------------------------------
 
  Definition Tragende/r Feed:
 
@@ -72,42 +113,13 @@
  ,(4), <-- Tragender Feed in Eingabe System-Steuerung
  ¨(5)¨ <-- Tragender Feed in Eingabe Blankernenner
 
---------------------------------------------------------------------
-
- Ein Tragende/r Feed ist ein Geschwisterteil vom Führende Feed/s
- und bezieht seine Information immer aus dessen cache .
- Das Tragende Feed ist an die Cache nummer des Führenden Feed
- geknüpft und hat selbst keine information , er syncronisiert
- seinen Leeren inhalt mit dem inhalt vom Führenden Feed
-
---------------------------------------------------------------------
-
- Verständniss Definition:
-
- für das verständnisse suchen wir kurz regulär über das terminal
-
- ┌[bandino@dev][16:26:36|Do Nov 27]
- │ ᴾʸˡᵒᵛᵃʳᵃ
- └[~]> $ pgrep firefox
-  1142 <-- das hier ist = $(pgrep firefox)
-
-  Equivalent mit Führendem Feed
-
-  (1)"$(pgrep firefox)"
-
- um unsere pid id 1142 jetzt weiter zu verarbeiten da wir sie
- mit Führender Feed NR Tragen, können wir jetzt damit Arbeit um
- das Ergebnis in Allen Tragenden Feed/s Weiter zu Verabeiten
-
- (Hier Wird ein Schönes Code Beispiel Benötigt)
-
---------------------------------------------------------------------
+ -------------------------------------------------------------------
 
  Definition Für Entwickler:
 
  FF können auch Hardcodierte Eingaben Tragen
 
---------------------------------------------------------------------
+ -------------------------------------------------------------------
 
 ######################## Ende der Feeds ############################
 ####################################################################

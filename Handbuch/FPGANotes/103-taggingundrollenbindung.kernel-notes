@@ -1,0 +1,158 @@
+@kernel-nr: 103 | Tagging und Rollenbindung | MCSPLUS |
+####################################################################
+ Tagging und Rollenbindung
+--------------------------------------------------------------------
+
+ 1. Zweck
+
+ Dieses Kapitel definiert, wie formale Grundeinheiten Bedeutung
+ erhalten, ohne ihre formale Neutralität zu verlieren.
+
+ Tagging ist der einzige Mechanismus, durch den eine syntaktische
+ Struktur eine semantische Rolle erhält.
+
+ Ohne Tagging existiert in MCSPLUS keine Funktion, kein Operator,
+ keine Berechnung und keine Ausführung.
+
+ 2. Grundprinzip
+
+ MCSPLUS kennt keine reservierten Wörter.
+
+ Kein Begriff besitzt inhärente Bedeutung.
+
+ Bedeutung entsteht ausschließlich durch explizite Zuweisung
+ einer Rolle mittels Tagging.
+
+ Ein Wort ist zunächst nur eine Zeichenfolge.
+
+ Erst ein Tag macht daraus:
+
+ - eine Funktion
+ - einen Operator
+ - einen Eingang
+ - einen Ausgang
+ - eine Kontrollstruktur
+ - eine Brücke zur ALU
+ - eine Brücke zum MCS-Kernel
+
+ 3. Definition: Tag
+
+ Ein Tag ist eine explizite Rollenkennzeichnung, die einer
+ strukturellen Einheit oder einem ihrer Elemente zugewiesen wird.
+
+ Ein Tag:
+
+ - erzeugt Bedeutung
+ - erzeugt keine Ausführung
+ - erzeugt keine Aktion
+ - erzeugt keine Reihenfolge
+
+ Ein Tag ist keine Anweisung, sondern eine Zuordnung.
+
+ 4. Rollenbindung
+
+ Rollenbindung beschreibt die feste Kopplung eines getaggten
+ Elements an eine systemische Rolle.
+
+ Beispiele für Rollen:
+
+ - OPERATOR
+ - EINGANG
+ - AUSGANG
+ - RECHNER
+ - VERKNÜPFUNG
+ - ALU-BEFEHL
+ - KERNEL-BRÜCKE
+
+ Eine Rolle definiert:
+
+ - was ein Element ist
+ - nicht, was es tut
+
+ Das Verhalten entsteht erst durch nachgelagerte Systeme
+ (MCS-Kernel, ALU, Registerlogik).
+
+ 5. Zeitpunkt der Auswertung
+
+ Die Auswertung erfolgt strikt in dieser Reihenfolge:
+
+ 1. Lesen der formalen Struktur
+ 2. Erkennen der formalen Grundeinheiten
+ 3. Zuweisung von Tags
+ 4. Bindung an Rollen
+ 5. Weitergabe an ausführende Instanzen (z.B. ALU, Kernel)
+
+ Vor Schritt 3 existiert keine Bedeutung.
+
+ 6. Trennung von Form und Bedeutung
+
+ Form und Bedeutung sind strikt getrennt.
+
+ Die formale Grundeinheit:
+
+ - bleibt unverändert
+ - bleibt gültig
+ - bleibt neutral
+
+ Tagging kann geändert, erweitert oder entfernt werden,
+ ohne die Struktur selbst zu verändern.
+
+ Dadurch ist MCSPLUS:
+
+ - refaktorierbar
+ - architekturunabhängig
+ - versionsstabil
+ - rückwärtskompatibel
+
+ 7. Beziehung zur ALU
+
+ Die ALU kennt keine Wörter.
+
+ Die ALU kennt keine Tags.
+
+ Die ALU kennt nur:
+
+ - Eingänge
+ - Operation
+ - Ausgang
+
+ Die Zuordnung eines getaggten Operators zu einer ALU-Operation
+ erfolgt ausschließlich über eine explizite Brücke.
+
+ Die ALU ist ein rechnerisches Ausführungsmodul, kein
+ Bedeutungsinterpreten.
+
+ 8. Beziehung zum MCS-Kernel
+
+ Der MCS-Kernel ist die einzige Instanz, die:
+
+ - Tags autorisiert
+ - Rollen freigibt
+ - Proteine validiert
+ - Aktionen erlaubt
+
+ MCSPLUS erzeugt keine direkte Wirkung.
+
+ Jede Wirkung entsteht nur durch:
+
+ - gültiges Tagging
+ - gültige Rollenbindung
+ - gültige Kernelprüfung
+
+ 9. Sicherheit und Kontrolle
+
+ Ungestaggte Einheiten sind inert.
+
+ Falsch getaggte Einheiten sind ungültig.
+
+ Nicht autorisierte Rollenbindungen werden verworfen.
+
+ Dadurch ist MCSPLUS:
+
+ - deterministisch
+ - überprüfbar
+ - nicht missbrauchbar
+ - kernelkontrolliert
+
+################ Ende Tagging und Rollenbindung ####################
+####################################################################

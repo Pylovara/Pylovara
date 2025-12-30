@@ -1,0 +1,64 @@
+####################################################################
+@dev-notes | KERNEL-14 | IDENTIFIKATION (PROTOTYP) | C-READY
+####################################################################
+
+/*
+ * NAME: ID-DNA-IDENTIFIKATION
+ * BEGRIFFSDEFINITION: SCHATTEN-IDENTITÄT / ANKER
+ * FUNKTION: TRANSAKTIONS-VERIFIZIERUNG & SECURITY-PURGE
+ */
+
+/* * IDENTIFIKATIONS-RUFSYMBOL
+ * Das Symbol þ (Thorn) markiert den Sicherheits-Anker.
+ */
+#define MCS_DNA_MARKER  "þ"
+
+/* * SECURITY-STATUS (SCHALTZUSTÄNDE)
+ */
+#define MCS_SEC_GREEN   1  /* Schatten-Identität erkannt */
+#define MCS_SEC_REDFLAG 0  /* Validierung fehlgeschlagen -> PURGE */
+
+/* * STANDARTLAYOUT & STRUKTUREN
+ */
+
+typedef struct {
+    char shadow_id[16];     /* Der Schatten-Code (z.B. 3546) */
+    char *real_key;         /* Manueller Eintrag (z.B. 53b3jf9...) */
+    uint8_t security_level; /* Stufe 1-10 (Thomas = Stufe 10) */
+    uint8_t is_verified;    /* Status der Rahmen-Verifizierung */
+} mcs_dna_identity_t;
+
+/* * DER AUTOMATISCHE SECURITY-PURGE (ſ-REINHEIT)
+ * Wenn eine Redflag auftritt, wird dieser Block zwangsläufig
+ * über die BOXI-Klasse SHELL-CONTROL ausgeführt.
+ */
+
+#define MCS_PURGE_AND_LOG(id) \
+    "» [ 'mkdir -p ~/Dokumenten' ] « " \
+    "» [ 'mv current_task ~/Dokumenten/redflag-" #id ".redflag-notes' ] « " \
+    "» [ ~löschung~ ] ««« E"
+
+/* * PROTOTYP-STEUERUNG (LOGIK-MAPPING)
+ */
+
+// 1. SCAN-PHASE
+// Der Generator prüft innerhalb von ¢! !¢ auf das Symbol þ.
+// Existiert þ-ID, wird is_verified = MCS_SEC_GREEN.
+
+// 2. PROTOKOLL-PHASE (Manuell)
+// Hier wird später 3546 mit dem echten Long-Key verknüpft.
+
+// 3. HARD-STOP (Die Regel der Reinheit ſ)
+// Bei falscher Datenquelle greift ſ sofort:
+// - Aktionsdraht » wird physisch blockiert.
+// - Code wird als .redflag-notes isoliert.
+// - RAM-Sektor wird über MCS-CMD ~löschung~ genullt.
+
+/* * LOGIK-HINWEIS
+ * Die Identifikation ist eine eigene Instanz über den AKTIONEN.
+ * Sie verifiziert die QUELLE, während Aktionen den ABLAUF steuern.
+ */
+
+####################################################################
+@dev-notes | KERNEL-14 | ENDE DER IDENTIFIKATION
+####################################################################

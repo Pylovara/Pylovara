@@ -20,4 +20,31 @@ gitpush.needle
 binutils.installer-core
 pushforce.needles
 
-# 
+####################################################################
+# | GIT-SECURITY | KERNEL-PROTECTION | STATUS = PRIVAT STUFE 10
+####################################################################
+
+# Pylovara Hochsensibler Bereich (Handbuch & DevNotes)
+# Diese Regel verhindert das Tracken des kompletten DevNotes-Verzeichnisses
+/Pylovara/Handbuch/DevNotes/
+/Pylovara/Handbuch/Archiv/
+# Sicherheits-Zusatz: Verhindert das Tracken von Redflag-Berichten
+# Falls der PP-Generator Logs erstellt, werden diese hier abgefangen
+*.redflag-notes
+/Dokumenten/redflag-*.redflag-notes
+
+# Sicherheits-Zusatz: Verhindert das Tracken von temporären Cache-Dateien
+# basierend auf Kernel 88 (*.cache)
+*.cache
+/Pylovara/**/cache/
+
+# Ausschluss von verschlüsselten þ-Schatten-Referenzen
+# Falls lokale Key-Files für den Generator angelegt werden
+*.þ-key
+*.dna-shadow
+
+####################################################################
+# HINWEIS: Falls der Ordner bereits im Git-Index ist, muss er
+# einmalig manuell entfernt werden (lokal bleibt er erhalten):
+# Befehl: git rm -r --cached Pylovara/Handbuch/DevNotes/
+####################################################################

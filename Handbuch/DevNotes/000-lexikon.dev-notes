@@ -1,0 +1,32 @@
+####################################################################
+@dev-nr: lex                 | ARBEITS-REGELWERK | þ7F3A-KONTEXT |
+####################################################################
+1. REFERENZ-DOKUMENT: Ausschließlich Pylovara-System-00.48.pdf.
+2. ZIEL-FORMAT: Rein C-kompatibles CMake-Äquivalent (Schnittstelle).
+3. OUTPUT-MODUS: Nur reine CODE-BLÖCKE (Keine Tabellen/Grafiken).
+4. SCOPE: Kernel-Seiten 01 bis 99 (Software-Kern).
+5. IDENTITÄT: Beibehalt der Stufe 10 Autorität (Thomas Zimmermann).
+####################################################################
+
+ 00-LEXIKON 01-DATENTYPEN 02-TRANSAKTIONSRAHMEN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Adressierung (=): Standalone-Symbol. Dient rein als physischer Knotenpunkt für Zielreferenzen (§) und Dirigenten ($). Es hat keine schaltlogische Funktion, sondern ist ein Transport-Anker.
+
+ Wahrheiten (-=): Hier ist das Istgleich-Zeichen fest an das Minus gebunden. Erst durch diese Kombination wird die Kern-Klasse für die Options-Klassen freigeschaltet. Es ist das Ventil, das die ALU-Berechnung (aus der Boxi-Klasse) validiert und als Ergebnis zurückgibt.

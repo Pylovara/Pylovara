@@ -1,0 +1,50 @@
+####################################################################
+@dev-notes | KERNEL-05 | TRENNBEFEHL/E | C-READY-ÄQUIVALENT
+####################################################################
+
+/*
+ * NAME: TRENNBEFEHL
+ * BEGRIFFSDEFINITION: DATENTRÄGERLEERZEICHEN
+ * FUNKTION: LEERRAUMBESEITIGUNG / OPTISCHE ORDNUNG
+ */
+
+/* * TRENNBEFEHL-STRUKTUR
+ * Dienen in Hauptdatenträgern (Proteinen/Protonen) der optischen
+ * Trennung von Boxis. Sie besitzen keine logische Funktion wie
+ * innerhalb von Boxis, sondern fungieren als Strukturgeber.
+ */
+
+// Basissymbol für die Trennung
+#define MCS_SEP_CHAR  '|'  /* SENKRECHTER STRICH */
+
+/* * STANDARTLAYOUT & DEFINITIONEN (LOGIK-MAPPING)
+ */
+
+typedef struct {
+    char separator;         /* Symbol: | (Trenn-Impuls) */
+    char info[] = "SPACE";  /* Funktion: Leerzeichen-Ersatz */
+} mcs_separator_t;
+
+/* * ANWENDUNGSREGELN (PROZESS-LOGIK)
+ */
+
+// 1. POSITIONIERUNG
+// Trennbefehle werden ZWISCHEN Boxis genutzt.
+// Beispiel: [ BOXI_A | BOXI_B ]
+
+// 2. AUSNAHMEREGEL (REINHEIT)
+// Trennbefehle werden NICHT am Protein-Start '[' oder Protein-Ende ']'
+// genutzt, da die Rahmenbedienung selbst als Abgrenzung ausreicht.
+// Gleiches gilt für Protonen-Rahmen '{' '}'.
+
+/* * WARNHINWEIS (SYSTEM-INTEGRITÄT)
+ * Senkrechte Striche dürfen UNTER KEINEM UMSTAND innerhalb von Boxis
+ * in der gleichen Weise wie in alten Systemen (Pipes) genutzt werden.
+ * In MCS dienen sie rein der optischen Natur des Datenträgers.
+ */
+
+#define MCS_IS_SEPARATOR(c) ((c) == MCS_SEP_CHAR)
+
+####################################################################
+@dev-notes | KERNEL-05 | ENDE DER TRENNBEFEHLE
+####################################################################

@@ -1,0 +1,94 @@
+####################################################################
+@dev-notes | KERNEL-99 | MCS-CMD-REGISTER | C-READY-ÄQUIVALENT
+####################################################################
+
+/* * DEFINITION: MCS-REGISTER STEUERUNG
+ * AUFRUF ÜBER: » [ ~ CMD ~ ] «
+ */
+
+// feed cache
+// FUNKTION: Adressiert den Cache-Speicher eines spezifischen Feeds.
+// NUTZUNG: ~ feed cache [Nummer] ~
+// name register funktion ende
+
+// löschung (ſ-Register)
+// FUNKTION: Initiiert die physische Nullung eines Registers oder Sektors.
+// NUTZUNG: ~ löschung ~
+// name register funktion ende
+
+// bestätigen
+// FUNKTION: Erfordert eine administrative Rückmeldung (Admin-PW Yes/No).
+// NUTZUNG: ~ bestätigen ~
+// name register funktion ende
+
+// exec
+// FUNKTION: Führt einen spezifisch adressierten Prozess-String aus.
+// NUTZUNG: ~ exec ~
+// name register funktion ende
+
+// once
+// FUNKTION: Limitiert die Ausführung auf eine einmalige Transaktion.
+// NUTZUNG: ~ once ~
+// name register funktion ende
+
+// text / echo
+// FUNKTION: Gibt Packet-Inhalte oder Rückmeldungen an den Monitor aus.
+// NUTZUNG: ~ echo [Inhalt] ~
+// name register funktion ende
+
+// send / sendto / sendurl / sendordner
+// FUNKTION: Leitet Datenpakete an spezifische Verzeichnisse oder URLs.
+// NUTZUNG: ~ sendto [Pfad] ~
+// name register funktion ende
+
+// to / toip
+// FUNKTION: CallDirectory - Springt zu Verzeichnissen oder IP-Adressen.
+// NUTZUNG: ~ toip [IP-Adresse] ~
+// name register funktion ende
+
+// copyto
+// FUNKTION: Erstellt ein Duplikat der Daten am Zielort (Clone).
+// NUTZUNG: ~ copyto [Ziel] ~
+// name register funktion ende
+
+// moveall
+// FUNKTION: Verschiebt alle gleichnamigen Dublikate in einen Zielsektor.
+// NUTZUNG: ~ moveall ~
+// name register funktion ende
+
+// removeall
+// FUNKTION: Rekursives Löschen aller Anhänge und Verknüpfungen.
+// NUTZUNG: ~ removeall ~
+// name register funktion ende
+
+// pushout / pushin
+// FUNKTION: Exportiert oder Importiert Daten aus/in das MCS-System.
+// NUTZUNG: ~ pushout ~
+// name register funktion ende
+
+/* * HARDWARE-STEUERUNG (UNVERSCHACHTELT)
+ * Ermöglicht den direkten Zugriff auf physikalische Parameter.
+ */
+
+// Temp | Watt | Amp | Volt
+// FUNKTION: Direkte Abfrage oder Setzen von Hardware-Werten.
+// NUTZUNG: » [ ~ {’Temp’|¨25¨} ~ ] «
+// name register funktion ende
+
+// Lüfter | Motor | Cpu | Gpu | Bluetooth | Usb
+// FUNKTION: Interface-Aktivierung und Drehzahl/Last-Steuerung.
+// NUTZUNG: » [ ~ {’Lüfter’|’eingabe’} ~ ] «
+// name register funktion ende
+
+/* * SICHERHEITS-LOGIK (PP-GENERATOR ANBINDUNG)
+ * Generiert bei Fehlfunktion automatisch eine Log-Datei im Hintergrund.
+ */
+
+// redflag-notes-gen
+// FUNKTION: Erzeugt bei Security-Purge (ſ) eine Logdatei unter ~/Dokumenten.
+// NUTZUNG: Automatisch über BOXI-Klasse SHELL-CONTROL.
+// name register funktion ende
+
+####################################################################
+@dev-notes | KERNEL-99 | ENDE DES REGISTERS
+####################################################################

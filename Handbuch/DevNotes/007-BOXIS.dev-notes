@@ -1,0 +1,73 @@
+####################################################################
+@dev-notes | KERNEL-07 | BOXI/S | C-READY-ÄQUIVALENT
+####################################################################
+
+/*
+ * NAME: BOXI
+ * BEGRIFFSDEFINITION: EINGABENRAHMEN
+ * FUNKTION: TRANSPORTRAHMEN FÜR SYSCALLS UND BEFEHLE
+ */
+
+/* * BOXI-STRUKTUR
+ * Boxis transportieren systemrelevante Eingaben, Syscalls und Shellbefehle.
+ * Sie dienen als Inhalt für Proteine oder Protonen und ermöglichen
+ * eine Master-Control-Steuerungslogik.
+ */
+
+/* * DEFINITION DER BOXI-KLASSEN (LOGIK-MAPPING)
+ */
+
+// 1. STANDARD-BOXI (SYSCALLS / SHELL)
+// Darstellung: [ 'befehl' ]
+#define MCS_BOXI_OPEN  '\'' /* EINFACHES ANFÜHRUNGSZEICHEN OBEN */
+#define MCS_BOXI_CLOSE '\'' /* EINFACHES ANFÜHRUNGSZEICHEN OBEN */
+
+// 2. CALLIS (ERWEITERTE FUNKTIONEN)
+// Darstellung: [ ,befehl, ]
+#define MCS_CALLIS_MARKER ','
+
+// 3. BLANKER NENNER (PLATZHALTER / VARIABLE)
+// Darstellung: (1)¨wert¨
+#define MCS_BLANK_OPEN  '('
+#define MCS_BLANK_CLOSE ')'
+#define MCS_VAL_MARKER  "¨"
+
+// 4. ALU-RECHNER (MATHEMATISCHE OPERATIONEN)
+// Darstellung: × rechnung ×
+#define MCS_ALU_OPEN  "×"
+#define MCS_ALU_CLOSE "×"
+
+// 5. MCS-CMD (INTERNE REGISTER-BEFEHLE)
+// Darstellung: ~ befehl ~
+#define MCS_CMD_MARKER '~'
+
+/* * STANDARTLAYOUT & STRUKTUREN
+ */
+
+typedef struct {
+    char type_marker;       /* Marker für Klasse ( , | ~ | × ) */
+    char content[];         /* Der transportierte Befehl/Wert */
+} mcs_boxi_payload_t;
+
+/* * MUSTERBEISPIELE (PROZESS-LOGIK)
+ */
+
+// BEISPIEL: STANDARD-SHELL-AUFRUF
+// » [ 'ls -la' ] «
+
+// BEISPIEL: ALU-RECHNUNG ZU WAHRHEITEN-AUSWERTUNG
+// » [ × 1+1 × ] «  --= [ "2" ]
+// ¶ » [ 'COPIE RESULT TO' | (AXY)¨2¨ ] «
+
+// BEISPIEL: MCS-CMD (Hauseigene Kommandos)
+// » [ ~ feed cache loeschung 1 ~ ] «
+
+/* * LOGIK-HINWEIS
+ * Boxis sind die logistischen Einheiten. Sie führen selbst keine
+ * Entscheidung herbei, sondern liefern die Daten für die SENTIATOREN
+ * (Kernel 09), die dann über den Signalfluss im Aktionsdraht entscheiden.
+ */
+
+####################################################################
+@dev-notes | KERNEL-07 | ENDE DER BOXI/S
+####################################################################

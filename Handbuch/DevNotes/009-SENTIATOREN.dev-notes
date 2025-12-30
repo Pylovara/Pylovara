@@ -1,0 +1,60 @@
+####################################################################
+@dev-notes | KERNEL-09 | SENTIATOR/EN | C-READY-KONSOLIDIERT
+####################################################################
+
+/*
+ * NAME: SENTIATOR
+ * BEGRIFFSDEFINITION: BEWERTENDE SIGNALINSTANZ
+ * FUNKTION: LOGISCHE PRÜFUNG / GATTER-IMPULS
+ */
+
+/* * DEFINITION DER SENTIATOR-KLASSEN (GATTER-LOGIK)
+ */
+
+// 1. KANN-IMPULS (LOGISCHES WENN / TRIGGER)
+// Symbol: ¶ (Absatz-Zeichen)
+#define MCS_SENTI_IF      "¶"
+
+// 2. NICHT-IMPULS (LOGISCHE INVERSION)
+// Symbol: ¶¶ (Doppel-Absatz)
+#define MCS_SENTI_NOT     "¶¶"
+
+// 3. VAKUUM-CHECK (LEER-PRÜFUNG)
+// Symbol: ŧ (T mit Querstrich)
+#define MCS_SENTI_VACUUM  "ŧ"
+
+// 4. IDENTIFIKATIONSCHECK-IMPULS (DNA-PRÜFUNG)
+// Symbol: ð (D mit Querstrich)
+#define MCS_SENTI_DNA     "ð"
+
+// 5. REINHEIT-IMPULS (LÖSCHUNG / REGISTER-NULLUNG)
+// Symbol: ſ (Langes S)
+// Funktion: Erkennt Datenmüll und erzwingt physische Reinheit.
+#define MCS_SENTI_PURGE   "ſ"
+
+/* * STANDARTLAYOUT & STRUKTUREN
+ */
+
+typedef struct {
+    char symbol[4];         /* Gatter-Symbol: ¶ | ŧ | ð | ſ */
+    int (*eval_func)();     /* Hardware-Prüfroutine */
+    uint8_t gate_status;    /* Impuls-Status (Scharf/Unscharf) */
+} mcs_sentiator_gate_t;
+
+/* * ANWENDUNGS-LOGIK (MUSTER)
+ */
+
+// DNA-PRÜFUNG MIT ANSCHLIEẞENDER REINIGUNG
+// » [ ð þ-KEY ] ¶ [ 'EXECUTE' ] ſ [ ~löschung~ ] «
+// 1. Prüfe DNA (ð)
+// 2. Wenn OK (¶), führe Aktion aus
+// 3. Danach zwingende Reinheit (ſ) über MCS-CMD Register
+
+/* * LOGIK-HINWEIS
+ * Sentiatoren steuern den Energiefluss im Aktionsdraht.
+ * Ohne positiven Sentiator-Impuls bleibt der Draht « spannungsfrei.
+ */
+
+####################################################################
+@dev-notes | KERNEL-09 | ENDE DER SENTIATOREN
+####################################################################

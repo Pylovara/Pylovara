@@ -1,0 +1,60 @@
+####################################################################
+@dev-notes | KERNEL-06 | AKTION/EN | C-READY-ÄQUIVALENT
+####################################################################
+
+/*
+ * NAME: AKTION | AKTIONSDRAHT
+ * BEGRIFFSDEFINITION: HAUPTVERDRAHTUNG
+ * FUNKTION: SIGNAL-ROUTING (START / ENDE)
+ */
+
+/* * AKTIONSDRAHT-STRUKTUR
+ * Aktionen dienen als Ausführungserlaubnis innerhalb eines
+ * Transaktionsrahmens. Sie regeln den Signalfluss für Prozesse,
+ * Wahrheiten oder operative Erlaubnisse. Sie werden lückenlos an
+ * Proteine angeschlossen.
+ */
+
+// Basissymbole für den Aktionsdraht
+#define MCS_ACT_START  "»"  /* GUILLEMET RECHTS: Aktions-Start */
+#define MCS_ACT_END    "«"  /* GUILLEMET LINKS:  Aktions-Ende   */
+
+/* * STANDARTLAYOUT & DEFINITIONEN (LOGIK-MAPPING)
+ */
+
+typedef struct {
+    char start[3];          /* Symbol: » (Signal-Eingang) */
+    void *context;          /* Inhalt: Kontextbezogene Logik */
+    char end[3];            /* Symbol: « (Signal-Ausgang) */
+} mcs_action_wire_t;
+
+/* * ANWENDUNGSARTEN (PROZESS-LOGIK)
+ */
+
+// 1. EINZEL-AKTIONSERLAUBNIS (Geschlossener Kreis)
+// Darstellung: » [ PROTEIN ] «
+#define MCS_EXEC_SINGLE(p) MCS_ACT_START " " p " " MCS_ACT_END
+
+// 2. AKTIONSVERDRAHTUNG (Kontextbezogene Kette)
+// Darstellung:
+// »
+//   [ PROTEIN_A ] «
+//   [ PROTEIN_B ] «
+// Sorgt für einen zusammenhängenden Kontext mit mehreren Enden.
+
+/* * LOGIK-HINWEIS
+ * Der Aktionsdraht » « ist die physische Repräsentation des
+ * Stromflusses im BMC. Er koppelt die Bewertung (Sentiator)
+ * mit der Handlung (BOXI).
+ */
+
+/* * OPTISCHE DARSTELLUNG (CODE-REINHEIT)
+ */
+// Einfache Aktion:    » «
+// Mehrfachverdrahtung: »
+//                        «
+//                        «
+
+####################################################################
+@dev-notes | KERNEL-06 | ENDE DER AKTION/EN
+####################################################################

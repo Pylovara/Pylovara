@@ -1,0 +1,96 @@
+@kernel-nr: 104 | StrukturPlan | MCSPLUS |
+####################################################################
+ StrukturPlan RohPlan - Muster Übersicht - Aufbau
+--------------------------------------------------------------------
+
+ Ebenentypen (Muster MCSPlus)
+
+ Ebene 1 – Struktur
+
+ - Container
+
+ - Knoten
+
+ - Relationen
+
+ Ebene 2 – Bedeutung
+
+ - Typen
+
+ - Zustände
+
+ - Gültigkeit
+
+ Ebene 3 – Kontrolle
+
+ - Fluss
+
+ - Bedingungen
+
+ - Übergänge
+
+ Ebene 4 – Zielabbildung
+
+ - ASM-Pattern
+
+ - Registermodelle
+
+ - Speicherlogik
+
+ Ebene 5 – Optimierung
+
+ - Faltung
+
+ - Eliminierung
+
+ - Umschichtung
+
+ ! Jede Ebene für sich ist nicht lauffähig.
+ ! Erst die Überlagerung !
+
+--------------------------------------------------------------------
+
+ SVG + Layer-Logik = Compiler-IR
+
+ SVG ist kein Renderformat mehr, sondern:
+
+ strukturierter Graph
+
+ Layer-Metadaten
+
+ referenzierbare IDs
+
+ transformierbar
+
+ versionierbar
+
+ Ein SVG-Layer entspricht:
+
+ einem IR-Fragment mit Sichtbarkeit
+
+
+ Problem :
+
+ Ich Brauch besser hardware ......
+
+ Ich muss mir einen kopf machen wie ich in den jetzigen IST
+ zustand
+
+ Kostenlos :
+
+ FÜR Archlinux brauchbare fremdsoftware als arbeitswerkzeug nutzen
+ kann bis ich einen eigenen Editor Entwickeln kann ...
+
+ Problem ist , ich brauch erst den Compiler um in
+ MCS das Programm für Mich zu schreiben ...
+
+ Bestehende software ist momentan schrott ....
+
+ Ich brauch quasi ein Figma Modell mit Grafik Layerstufen
+ mit Canva und Transitoren Verkettungslogik
+
+ Wie immer kann ich mich nicht auf Unternehmen verlassen , die
+ wollen für deren schrott nur geld ..... ich muss es selber machen
+
+--------------------------------------------------------------------
+################### Ende des StrukturPlan ##########################

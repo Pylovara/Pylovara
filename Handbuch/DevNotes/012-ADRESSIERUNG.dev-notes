@@ -1,0 +1,69 @@
+####################################################################
+@dev-notes | KERNEL-12 | ADRESSIERUNG | C-READY-ÄQUIVALENT
+####################################################################
+
+/*
+ * NAME: ADRESSIERUNG (Knotenpunkt)
+ * BEGRIFFSDEFINITION: TRANSPORT-ANKER
+ * FUNKTION: VERKNÜPFUNG VON ZIELREFERENZ, DIRIGENT & IDENTIFIKATION
+ */
+
+/* * ADRESSIERUNGS-SYMBOL
+ * Das Symbol = dient als physischer Anker, um Daten an Ziele
+ * zu binden oder zu verschlüsseln.
+ * Unterschied: = (Adressierung) vs. -= (Wahrheits-Ergebnis).
+ */
+#define MCS_ADDR_NODE  '='
+
+/* * ZIELREFERENZ (§) - Innere Instanzen
+ * Steuerung von Hardware, Slots oder RAM-Bereichen.
+ */
+#define MCS_REF_INTERNAL '§'
+
+/* * DIRIGENT ($) - Externe Übergabe
+ * Schnittstellen nach außen (API, Netzwerk, Pfade).
+ */
+#define MCS_REF_EXTERNAL '$'
+
+/* * STRUKTUR & POSITIONIERUNG (LOGIK-MAPPING)
+ */
+
+typedef struct {
+    char node;              /* Symbol: =  */
+    char internal_ref;      /* Symbol: §  */
+    char external_ref;      /* Symbol: $  */
+    void *target_ptr;       /* Physischer Pfad / ID / Adresse */
+} mcs_address_logic_t;
+
+/* * ANWENDUNGS-LOGIK (POSITIONIERUNG IM RAHMEN)
+ * 1. Am Ende eines Protein-Prozesses innerhalb » «.
+ * 2. Unmittelbar vor dem Transaktionsrahmen-Ende !¢.
+ */
+
+// MUSTERBEISPIEL: ADRESSIERUNG AM PROZESS-ENDE
+// ¢!
+//   » [ 'cmd' ] « = §$Zielpfad
+// !¢
+
+/* * ADRESSIERUNGS-KATALOG (ZIELREFERENZ §)
+ */
+// / $Prozess-ID        -> Identifikation des laufenden Tasks
+// / $Hardware-Slot     -> Physischer Port am BMC
+// / $Gerätepfad        -> RAM / Dev / CPU-Bereich
+// / $Compositoren      -> Grafik/Logik-Zusammenführung
+
+/* * ADRESSIERUNGS-KATALOG (DIRIGENT $)
+ */
+// / §lokale API        -> Interne Schnittstelle
+// / §Netzwerk          -> IP / Mac-Adressierung
+// / §BuildNr           -> Software-Zustands-Update
+
+/* * LOGIK-HINWEIS
+ * Die Adressierung erfolgt erst, wenn die Kernfunktion (Sentiator/Wahrheit)
+ * den Datenstrom freigegeben hat. Das = hängt alles für den
+ * Transport und die Verschlüsselung an.
+ */
+
+####################################################################
+@dev-notes | KERNEL-12 | ENDE DER ADRESSIERUNG
+####################################################################

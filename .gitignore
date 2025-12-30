@@ -1,25 +1,3 @@
-#Arbeitsbereich MCS Übersetzung
-assembler
-Arbeitsblatt.dev-notes
-Arbeitsblatt.dev-notes
-
-# Ignoriert v0.5.1 - v0.6.0
-v0.5.1.final-notes
-v0.5.2.dev-notes
-v0.5.3.dev-notes
-v0.5.4.dev-notes
-v0.5.5.dev-notes
-v0.5.6.dev-notes
-#qv0.5.7.dev-notes
-#v0.5.8.dev-notes
-#v0.5.9.dev-notes
-#v0.6.0.dev-notes
-
-# Utilis
-gitpush.needle
-binutils.installer-core
-pushforce.needles
-
 ####################################################################
 # | GIT-SECURITY | KERNEL-PROTECTION | STATUS = BAUSTELLE STUFE 10
 ####################################################################
@@ -28,9 +6,14 @@ pushforce.needles
 # Diese Regel verhindert das Tracken des kompletten DevNotes-Verzeichnisses
 /Pylovara/Handbuch/DevNotes/
 /Pylovara/Handbuch/Archiv/
+/Pylovara/MCSKernel/
+/Pylovara/AI/
+/Pylovara/MCS-Plus/
 # Sicherheits-Zusatz: Verhindert das Tracken von Redflag-Berichten
 # Falls der PP-Generator Logs erstellt, werden diese hier abgefangen
 *.redflag-notes
+*.*-kernel
+*.*-mcsplus
 /Dokumenten/redflag-*.redflag-notes
 
 # Sicherheits-Zusatz: Verhindert das Tracken von temporären Cache-Dateien
@@ -43,8 +26,11 @@ pushforce.needles
 *.þ-key
 *.dna-shadow
 
+#REDPush
+/Pylovara/shredder.mcs-redpush
+
 ####################################################################
-# HINWEIS: Falls der Ordner bereits im Git-Index ist, muss er
-# einmalig manuell entfernt werden (lokal bleibt er erhalten):
+# HINWEIS: Falls der Ordner bereits im Git-Index ist:
 # Befehl: git rm -r --cached Pylovara/Handbuch/DevNotes/
+# Danach Spam Aktualisierung protokl /Pylovara/Shredder.redpush
 ####################################################################

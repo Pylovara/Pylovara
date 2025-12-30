@@ -13,6 +13,7 @@ Pylovara organisiert sich in einem klaren Familienmodell:
 *.*-needles Hardwareb. – Kernelnahe Steuerung (.sys, .ko, .dll)
 --------------------------------------------------------------------
 *.*-kernel  MCS Kernel - Interne MCS Kernel Daten - Framework
+*.redflag-notes LogDaten - Interne MCS Kernel Logs
 --------------------------------------------------------------------
 ## Core Datensplittung
 

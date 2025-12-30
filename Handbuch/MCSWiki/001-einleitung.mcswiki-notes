@@ -1,0 +1,169 @@
+# **MCS vs C – Vergleichsbibliothek**
+
+## **Abschnitt: Dateipfad setzen**
+
+### **In C:**
+```c
+string file_path = "/home/user/document.pdf";
+```
+**Was passiert:**
+Eine Variable vom Typ string wird im Programmspeicher angelegt und mit dem Pfad als Text initialisiert.
+
+**Shell-Anruf:** Nein – reine Programminterne Speicherverwaltung.
+
+**Syscall:** Nein.
+
+### **In MCS:**
+```mcs
+¢|
+»['path=/home/user/document.pdf']«
+= $OrdnerPfad
+¢|
+```
+**Was passiert:**
+Ein Shell-Befehl wird an die SHELL-CONTROL-BOXI übergeben.
+Der Pfad wird als Zielreferenz $OrdnerPfad gespeichert –
+nicht als Variable, sondern als transiente Referenz innerhalb der Transaktion.
+
+**Shell-Anruf:** Ja – SHELL-CONTROL-BOXI.
+
+**Syscall:** Nein (erst bei Nutzung).
+
+## **Abschnitt: Dateigröße abrufen**
+
+### **In C:**
+```c
+int file_size = get_file_size(file_path);
+```
+**Was passiert:**
+Funktion get_file_size() ruft intern den Syscall stat() auf.
+
+**Shell-Anruf:** Nein.
+
+**Syscall:** Ja – stat() über Libc.
+
+### **In MCS:**
+```mcs
+»[,sys_stat,{path|$OrdnerPfad}]«
+= $size
+```
+**Was passiert:**
+CALL-CONTROL-BOXI ruft direkt den Syscall sys_stat an. Pfad wird als Proton {path|...} übergeben.
+
+**Shell-Anruf:** Nein.
+
+**Syscall:** Ja – Direkter Syscall über BOXI.
+
+## **Abschnitt: Checksumme berechnen**
+
+### **In C:**
+```c
+string checksum = calculate_checksum(file_path);
+```
+**Was passiert:**
+Funktion öffnet Datei (open()), liest Blöcke (read()), berechnet Hash (z.B. SHA-256) im Speicher.
+
+**Shell-Anruf:** Nein.
+
+**Syscall:** Ja – open(), read(), close().
+
+### **In MCS:**
+```mcs
+»['sha256sum /home/user/document.pdf | cut -d" " -f1']«
+= $checksum
+```
+**Was passiert:**
+SHELL-CONTROL-BOXI ruft Shell-Befehl sha256sum auf. Pipe (|) und cut verarbeiten Ausgabe.
+
+**Shell-Anruf:** Ja – Komplette Shell-Pipeline.
+
+**Syscall:** Ja – Indirekt über Shell.
+
+## **Abschnitt: Größenprüfung (If-Abfrage)**
+
+### **In C:**
+```c
+if (file_size > 10 * 1024 * 1024) {
+```
+**Was passiert:**
+ALU-Operation im Prozessor – Vergleich zweier Integer-Werte.
+
+**Shell-Anruf:** Nein.
+
+**Syscall:** Nein.
+
+### **In MCS:**
+```mcs
+»[×$size > 10485760×]«
+= $is_large
+```
+**Was passiert:**
+ALU-RECHNER-BOXI führt Vergleich durch. Ergebnis (true/false) wird als Referenz $is_large gespeichert.
+
+**Shell-Anruf:** Nein.
+
+**Syscall:** Nein (reine CPU-Logik).
+
+## **Abschnitt: Datei komprimieren**
+
+### **In C:**
+```c
+compress_file(file_path);
+```
+**Was passiert:**
+Funktion ruft Kompressionsbibliothek (z.B. zlib) auf – oder startet externes Tool (fork() + exec()).
+
+**Shell-Anruf:** Meist nein (außer system()-Aufruf).
+
+**Syscall:** Ja – fork(), exec(), wait() wenn extern.
+
+### **In MCS:**
+```mcs
+»['gzip /home/user/document.pdf']«
+= $OrdnerPfad_zip
+```
+**Was passiert:**
+SHELL-CONTROL-BOXI startet gzip als externes Shell-Kommando.
+
+**Shell-Anruf:** Ja – Direkter Shell-Befehl.
+
+**Syscall:** Ja – Indirekt über Shell.
+
+## **Abschnitt: Upload (Netzwerk)**
+
+### **In C:**
+```c
+bool upload_ok = upload_file(file_path, server_url);
+```
+**Was passiert:**
+Funktion baut Socket (socket()), verbindet (connect()), sendet Daten (send()).
+
+**Shell-Anruf:** Nein.
+
+**Syscall:** Ja – socket(), connect(), send(), recv().
+
+### **In MCS:**
+```mcs
+»['curl -X POST -F "file=@$OrdnerPfad_zip.enc" https://server.com/upload']«
+= $upload_status
+```
+**Was passiert:**
+SHELL-CONTROL-BOXI startet curl als externes Tool.
+
+**Shell-Anruf:** Ja – Shell-Befehl mit Subprozess.
+
+**Syscall:** Ja – Indirekt über Shell.
+
+## **Zusammenfassung der MCS-Philosophie:**
+
+| Konzept in C | Entsprechung in MCS | BOXI-Klasse |
+|--------------|---------------------|-------------|
+| Variable | Zielreferenz ($...) | – |
+| Funktion | BOXI-Befehl | CALL-CONTROL / SHELL-CONTROL |
+| If-Abfrage | ALU-RECHNER + ¶ | ALU-RECHNER |
+| Syscall | Direkter BOXI-Aufruf | CALL-CONTROL |
+| Shell-Befehl | SHELL-CONTROL-BOXI | SHELL-CONTROL |
+| Ausgabe (printf) | CALLIS-BOXI | CALLIS |
+
+**MCS braucht keine C-Variablen, keine C-Funktionen, keine C-Bibliotheken.**
+Es arbeitet direkt auf Syscall- und Shell-Ebene – orchestriert durch BOXIS und gesteuert durch MCS-Transaktionen.

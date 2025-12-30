@@ -1,28 +1,83 @@
-@kernel-nr: 99
+@kernel-nr: 99 | MCS-CMD-REGISTER | Status = DESIGNE BAUSTELLE
 ####################################################################
-# Register Command Liste (zuckunftsmusik) Grundriss:
-# Wird dann zuckünftig Speziel als MCS CMD dann eingeführt
+ !!!! hier enstehend befehl wenn sie gebraucht werden !!!!
 --------------------------------------------------------------------
- Die Eingabe definition ist zuckunftsmusik
-
-    ’CMD’ = erkennt den inneren tragenden mcs cmd befehl
-
- moment native c++ hyprctl integriert
---------------------------------------------------------------------
-
- Implementierung/s Vorgang :
-
- feed cache  =
-
- sucht den feed cache den dann per nummer geholt wird
 
 --------------------------------------------------------------------
 
+ REGISTER SPEZIAL KLASSE = UND-DAS
 
- ſ Register
+ Symbole = ¬
 
- Löschung = Löschung
+ info :
 
+ verbindet den kontext bezogen auf die selbe sachen , beides
+ soll <?> darauf passierten
+
+--------------------------------------------------------------------
+
+  REGISTER SPEZIAL KLASSE = REGEL-DER-REINHEIT
+
+
+  ſ »[~COMMAND KLASSE~]«
+
+  lösch den gesamten TRANSAKTIONSRAHMEN nach beendingung
+
+--------------------------------------------------------------------
+
+ REGISTER COMMAND KLASSE = CMD-LÖSCHUNG
+
+ löschung =
+
+ der befehl alleine löscht alles in einer zeile
+
+ -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+ löschung transaktionsrahmen =
+
+ der befehl löscht alles in dem dadeityp
+
+ -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+ löschung protein =
+
+ löscht das protein
+
+ -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+  löschung proton =
+
+  löscht das proton im protein
+
+--------------------------------------------------------------------
+
+ REGISTER COMMAND KLASSE = CMD-TRANSFER
+
+ transfer boxi =
+
+ zieht letzten Boxi inhalt darüber raus und legt es rechts
+ in das selbe protein nach dem Trennbefehl
+
+--------------------------------------------------------------------
+
+  REGISTER COMMAND KLASSE = CMD-FEED
+
+  mach feed <NR> =
+
+  setzt ein führenden feed an das kommende BOXI
+
+ -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+  löschung führender feed <NR> =
+
+  Löscht FührenderFeed und damit auch auch sein Tragenden Feed
+
+ -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+  löschung feed cache <NR> =
+
+  sucht den feed cache der dann per nummer geholt wird und den
+  inhalt löscht/leert
 
 --------------------------------------------------------------------
 

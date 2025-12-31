@@ -1,60 +1,126 @@
-@kernel-nr: 12 | ADRESSIERUNG | STATUS : BAUSTELLE MERGE
+####################################################################
+@kernel-nr: 12 | ADRESSIERUNG | STATUS : VALIDE
 ####################################################################
 
- Adressierung (siehe : kernel Lex 11 | kernel lex 12)
+ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
 
-    =  Adressierung
+         DATUM = [AKTUELLES DATUM] | MARKENBRANDT
 
-    Die Adressierung dient als direkten knoten punkt
-    für Zielreferenz-Dirigent-Identifikation um durch
-    das Adressierungs Symbol = alles anzuhängen für den
-    Transport und Verschlüsselung
-
-
-    ZusatzInfo :
-
-    wird aber  noch nicht im MCS Desktop verwendet in configs weil
-    unötig .
-
-##################### Ende der Adressierung  #######################
-
-####################################################################
-
-    $   Zielreferenz :
-
-    Innere Zielreferenz die angesteuert werden sollen , egal ob
-    Hardware oder Programme .
-
-    / $Prozess-ID
-    / $Hardware-Slot
-    / $Gerätepfad (in RAM, Dev, CPU-Bereich)
-    / $OrdnerPfad (zur Ausführbaren oder Laufenden Verknüpfung)
-    / $Compositoren
-    / $Compiler
+         PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
 
 --------------------------------------------------------------------
 
-##################### Ende der Zielreferenz ########################
-
-@kernel-nr: 12
-####################################################################
-
-    §   Dirigent :
-
-    Externe Übergabe
-
-    / §lokale API
-    / §Kernelpfad
-    / §Netzwerk
-    / §InternetAdresse
-    / §Email (Direkte Sendung z.b)
-    / §Imei (Geräate Upadets z.b)
-    / §BuildNr (Software Updates z.b)
-
-    usw , die möglichkeiten sind quasi unbegrenzt
+ NAME = ADRESSIERUNG
+ BEGRIFFSDEFINITION = TRANSPORT- UND ZUORDNUNGSSYSTEM
+ FUNKTION = VERBINDET ZIELREFERENZEN MIT DIRIGENTEN
+ AUSFÜHRUNGSART = SYMBOLBASIERTE ZUORDNUNG
+ GÜLTIGKEITSBEREICH = SYSTEMWEIT
 
 --------------------------------------------------------------------
 
-######################## Ende des Dirigent #########################
+ ERKLÄRUNG ADRESSIERUNG:
+
+ DIE ADRESSIERUNG DIENT ALS DIREKTER KNOTENPUNKT ZUR
+ IDENTIFIKATION UND ZUORDNUNG VON ZIELREFERENZEN ($) UND
+ DIRIGENTEN (§).
+
+ SIE ERMÖGLICHT DEN TRANSPORT VON DATEN, BEFEHLEN UND
+ ZUSTÄNDEN DURCH DAS ADRESSIERUNGS-SYMBOL "=", WELCHES ALS
+ VERBINDUNGSOPERATOR DIENT.
+
+ ZUSATZINFO:
+ WIRD DERZEIT NOCH NICHT IM MCS-DESKTOP VERWENDET (IN CONFIGS),
+ DA IN EINFACHEN ANWENDUNGSFÄLLEN NICHT NOTWENDIG.
+
+--------------------------------------------------------------------
+
+ ↓ STANDARDLAYOUT ↓
+
+####################################################################
+
+ ADRESSIERUNGS-SYMBOL = =
+ FUNKTION = VERBINDUNGSOPERATOR
+ SYMBOL IN WORTEN = GLEICHZEICHEN
+ INFO = VERKNÜPFT PROTEINE/PROTONEN MIT ZIELREFERENZEN ODER DIRIGENTEN
+
+ BEISPIEL:
+ »['Befehl'|{Parameter|Wert}]« = $Zielreferenz
+ »['Daten'|{Format|JSON}]« = §Dirigent
+
+####################################################################
+
+ ZIELREFERENZ-SYMBOL = $
+ FUNKTION = INTERNE ZIELADRESSE
+ SYMBOL IN WORTEN = DOLLARZEICHEN
+ INFO = ADRESSIERT INTERNE SYSTEMRESSOURCEN
+
+ UNTERSTÜTZTE ZIELREFERENZEN:
+ / $Prozess-ID          = Laufende Prozesse
+ / $Hardware-Slot       = Hardware-Komponenten
+ / $Gerätepfad          = Pfade in RAM, Dev, CPU-Bereich
+ / $OrdnerPfad          = Verzeichnisse für Ausführbare/Laufende Links
+ / $Compositoren        = Grafik-/Video-Compositing-Engine
+ / $Compiler            = Compiler-Instanzen
+
+ BEISPIEL:
+ = $OrdnerPfad          # Sendet an Verzeichnis
+ = $Compiler            # Sendet an Compiler
+
+####################################################################
+
+ DIRIGENT-SYMBOL = §
+ FUNKTION = EXTERNE ZIELADRESSE
+ SYMBOL IN WORTEN = PARAGRAFZEICHEN
+ INFO = ADRESSIERT EXTERNE SYSTEME UND SCHNITTSTELLEN
+
+ UNTERSTÜTZTE DIRIGENTEN:
+ / §lokale-API          = Lokale Programmierschnittstellen
+ / §Kernelpfad          = Kernel-interne Pfade
+ / §Netzwerk            = Netzwerkverbindungen
+ / §InternetAdresse     = Internet-URLs und Domains
+ / §Email               = E-Mail-System (Direktversand)
+ / §Imei                = Geräte-Identifikation (Updates)
+ / §BuildNr             = Software-Build-Nummern (Updates)
+
+ BEISPIEL:
+ = §Netzwerk            # Sendet ins Netzwerk
+ = §Email               # Sendet als E-Mail
+
+####################################################################
+
+ VERWENDUNGSBEISPIELE:
+
+ # INTERNE ADRESSIERUNG
+ ¢|
+ »['compile'|{file|program.mcs}]« = $Compiler
+ »['execute'|$Compiler]« = $Prozess-ID
+ ¢|
+
+ # EXTERNE ADRESSIERUNG
+ ¢|
+ »['send'|{data|Sensorwerte}]« = §Netzwerk
+ »['update'|{version|2.7}]« = §BuildNr
+ ¢|
+
+ # KOMBINIERTE ADRESSIERUNG
+ ¢|
+ »['process'|{input|Daten}]« = $Compositoren
+ »['output'|$Compositoren]« = §InternetAdresse
+ ¢|
+
+####################################################################
+
+ HINWEISE:
+
+ 1. ADRESSIERUNG IST OPTIONAL – EINFACHE TRANSACTIONEN KÖNNEN
+    OHNE EXPLIZITE ADRESSIERUNG AUSKOMMEN.
+
+ 2. ZIELREFERENZEN ($) SIND SYSTEMINTERN, DIRIGENTEN (§) SIND
+    SYSTEMEXTERN.
+
+ 3. DIE ADRESSIERUNGSLOGIK ERMÖGLICHT EINE KLARE TRENNUNG
+    ZWISCHEN INTERNER VERARBEITUNG UND EXTERNER KOMMUNIKATION.
+
+ 4. BEI MEHRFACHADRESSE/IERUNG WERDEN DATEN PARALLEL GESENDET.
 
 #################### ENDE DER ADRESSIERUNG #########################

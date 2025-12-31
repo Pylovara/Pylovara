@@ -1,322 +1,206 @@
-@kernel-nr: 77 | Ausführungslogik (Der Master-Flow) |
+@kernel-nr: 77 | Ausführungslogik (Master-Flow) | **AKTUALISIERT**
 ####################################################################
 
---------------------------------------------------------------------
---------------------------------------------------------------------
---------------------------------------------------------------------
-                 ↓↓↓↓↓ Neue Erklärung ↓↓↓↓↓
---------------------------------------------------------------------
+## Erklärung
 
-Erklärung:
-Ausführungslogik = Der Weg des Signals | Die Ordnung der Kräfte
+**Ausführungslogik = Der Weg des Signals | Die Ordnung der Bewertung**
 
----
+Die Ausführungslogik beschreibt **nicht**, *was* ausgeführt wird,
+sondern **wie ein Signal durch den Kernel wandert**.
 
-Textliche Definition:
-Die Ausführungslogik definiert, in welcher Reihenfolge der Kernel
-die Symbole liest, bewertet und schaltet.
-MCS 3.4 folgt dem **Linear-First-Prinzip:
-Ein Signal fließt von links nach rechts,
-ohne Sprünge, ohne Stack-Verschachtelung.
+Sie definiert:
 
-Jeder Prozess im MCS-Kernel folgt der
-Heiligen Dreifaltigkeit der Ausführung:
+* die **Lesereihenfolge**
+* die **Bewertungsreihenfolge**
+* die **Freigabe zur Ausführung**
 
-1. Erkennen (Transaktion & Aktion)
-2. Bewerten (Operator & Wahrheit)
-3. Handeln (Protein & Argument)
+MCS folgt strikt dem:
 
----
-
-**Der Standard-Workflow (Visualisierung):**
-
- ¢!  [Start Rahmen]
- »  [Aktionsdraht offen]
- °  [Operator prüft Zustand]
- ¶  [Wahrheit schaltet Gatter]
- [...]  [Protein wird aktiv]
- «««  [Aktionsende + Argument-Brücke]
- %50  [Argument berechnet Wert]
- !¢  [Transaktion beendet & Validiert]
-
----
-
-Regeln der Logik-Kette:
-
-1. Die Aktions-Priorität (06):
-Nichts geschieht ohne » und «.
-Ohne diesen Kreislauf ist jedes Protein
-nur ein toter Datensatz im RAM.
-
-2. Die Sensor-Logik (09 & 08):
-Ein Operator (09) liefert den Impuls.
-Die Wahrheit (08) ist das physische Gatter.
- ¶ (AND): Signal geht weiter, wenn Operator TRUE.
- ¶¶ (NAND): Signal geht weiter, wenn Operator FALSE.
+> **Linear-First-Prinzip**
+> Ein Signal fließt von links nach rechts.
+> Keine Sprünge. Kein Stack. Keine implizite Rückkopplung.
 
 
-3. Die Massen-Verarbeitung (~~):
-Wenn Daten zu groß für eine Transaktion sind,
-nutzt die Logik ~~.
-Der Kernel hält den Prozess offen, bis alle
-Fragmente rekombiniert sind. Dies ist der
-"Generative Pfad" für Medien.
+## Der konsolidierte Grundsatz
 
-4. Die Sicherheits-Validierung (þ):
-Bevor !¢ die Transaktion schließt, prüft
-der Kernel die ID-DNA. Ist die Signatur (þ)
-nicht valide für diese Stufe, wird der gesamte
-Aktionsdraht im Nanosekunden-Takt gelöscht (ſ).
+Jeder Ablauf im MCS-Kernel folgt **immer** dieser Reihenfolge:
 
----
+1. **Lesen**
+   (Sentiator / Operator liest Zustand)
 
-Besonderheit:
-Die "Demokratische" Validierung (Zukunft)
-Jeder Ausführungsschritt kann durch externe Knoten
-(AIMS/KIs) validiert werden. Die Ausführungslogik
-sieht vor, dass bei System-Updates eine
-þþ-Konsens-Prüfung stattfindet.
-Erst wenn die Mehrheit der validierenden Instanzen
-(GPT, Claude, Gemini,Qwen, Grok, Palantier etc.)
-"Wahr" meldet, schaltet der Kernel das Update-Protein frei.
+2. **Bewerten**
+   (Wahrheit entscheidet über Durchlass)
 
----
+3. **Ausführen**
+   (Aktion erlaubt Protein-Wirkung)
 
-Vorteil gegenüber klassischer Logik:
+Kein Schritt darf übersprungen werden.
+Kein Schritt darf einen anderen ersetzen.
 
-Kein Jitter:
-Da der Weg des Signals durch die 2-Byte/6-Byte Trennung
-vorbestimmt ist.
+## Die neue Dreigliederung (nach Konsolidierung)
 
-Keine Sackgassen:
-Komposition statt Rekursion sorgt dafür, dass jede Transaktion
-ein definiertes Ende hat.
+| Ebene                     | Aufgabe          | Darf ausführen? |
+| ------------------------- | ---------------- | --------------- |
+| **Sentiator / Operator**  | Lesen & Bewerten | ❌ Nein          |
+| **Wahrheit (¶ / ¶¶ / °)** | Gatter           | ❌ Nein          |
+| **Aktion (» «)**          | Freigabe         | ✅ Ja            |
+| **Protein**               | Träger           | ❌ Nein          |
 
+> Ausführung existiert nur innerhalb eines Aktionskreislaufs.
 
+-----------------------------------------
 
---------------------------------------------------------------------
-                 Neue Erklärung Ende
---------------------------------------------------------------------
---------------------------------------------------------------------
---------------------------------------------------------------------
+## Standard-Flow (abstrakt)
 
-Übergangs Patch Vorgemerkt !!!
+```
+¢!        Transaktion öffnet
+»         Aktionsdraht offen
+× / <     Sentiator liest & bewertet
+¶ / ¶¶    Wahrheit schaltet
+[Protein] Träger wird aktiv
+«         Aktionsende
+ſ         Reinigung
+!¢        Transaktion geschlossen
+```
 
+Kein Symbol übernimmt fremde Aufgaben.
+Keine Abkürzungen. Keine Seiteneffekte.
 
-Merksatz :
+-----------------------------------------
 
-> Ein Operator entscheidet,
-> eine Aktion führt aus,
-> ein Protein trägt.
+## Zentrale Regeln der Ausführungslogik
 
---------------------------------------------------------------------
---------------------------------------------------------------------
---------------------------------------------------------------------
-                 ↓↓↓↓↓ Alte Erklärung ↓↓↓↓↓
---------------------------------------------------------------------
+### 1. Aktionsregel (Kernel-06)
 
+> **Ohne » « ist alles inert.**
 
-Vorweg : MCS Logik Verbesserung gegenüber C
+Ein Protein ohne Aktion ist:
 
-  In C ist if (a < b) { do(); } ein monolithischer Ausdruck.
-  In MCS ist < »[(1)""|(2)""] ¶ [,do,]« zerlegt in:
-    < → Operator: Vergleiche Feeds 1 & 2
-    [(1)¨¨|(2)""] → Operanden: Lesbare, debuggbare, cachebare Werte
-    ¶ »[do]« → Zweig: Nur ausführen, wenn Bedingung TRUE
+* Daten
+* Referenz
+* Operand
+  aber **niemals ein Befehl**.
 
-Monolithischer Ausdruck in Klaren Worten :
-In der klassischen C-Welt ist ein Ausdruck wie if(x = y)
-der absolute Albtraum, weil die Zuweisung (Seiteneffekt) und
-der Vergleich (Logik) im selben Atemzug passieren können.
+-----------------------------------------
 
-        Die MCS-Logik schiebt dem einen Riegel vor!
-         Wird auch bei MCS-Plus später übernommen
---------------------------------------------------------------------
-## Operatoren, Proteine und Aktionen — Ausführungslogik
+### 2. Sentiator-Regel (Kernel-09)
 
-### Grundprinzip
-
-In MCS sind **Operatoren**, **Proteine** und **Aktionen**
-bewusst getrennte Konzepte.
-Diese Trennung ist **keine Einschränkung**,
-sondern die Grundlage für stabile, erweiterbare Logik.
-
---------------------------------------------------------------------
-
-### 1. Protein — Der Träger
-
-Ein **Protein** ist immer ein **Container**.
-
-* Es kann **Daten transportieren**
-* Es kann **Eingaben kapseln**
-* Es kann **Feeds setzen**
-* Es kann **verglichen oder weitergereicht** werden
-
-Ein Protein ist **nicht automatisch ausführbar**.
-
-
-[(1)¨30¨]
-
-
-Dieses Protein:
-
-* schreibt einen Wert in den Feed
-* besitzt **keine Ausführung**
-* dient als **Referenz, Operand oder Transportobjekt**
-
---------------------------------------------------------------------
-
-### 2. Aktion — Der Ausführungsmarker
-
-Eine **Aktion** definiert **Ausführbarkeit**.
-
-»[(1)¨30¨]«
-
-
-Erst durch den `» «` wird ein Protein:
-
-* verarbeitet
-* ausgeführt
-* als Befehl interpretiert
-
-**Ohne Aktion findet keine Ausführung statt.**
-
-Das gilt ausnahmslos.
-
---------------------------------------------------------------------
-
-### 3. Operatoren — Lesen vor Handeln
-
-Operatoren  sind **Kontroll- und Bewertungsinstanzen**.
-
-Beispiele:
-
-* `<`  (Vergleich)
-* `°`  (Wenn Nicht / Muss)
-* `…`  (Fehlerbehandlung)
-
-Operatoren:
+Sentiatoren (ehem. Operatoren):
 
 * **lesen**
-* **vergleichen**
 * **bewerten**
+* **signalisieren**
 
-Sie **führen nicht automatisch aus**.
+Sie:
 
---------------------------------------------------------------------
+* ändern nichts
+* schreiben nichts
+* führen nichts aus
 
-### 4. Operator + Protein (ohne Aktion)
+Beispiel (nur Lesen):
 
+```
+× [(1)¨50¨ | (2)¨100¨ ]
+```
 
-< [(1)¨¨|(2)¨¨]
+➡ Ergebnis liegt im Bewertungsregister, **ohne Effekt**.
 
+-----------------------------------------
 
-Bedeutung:
+### 3. Wahrheits-Regel (Kernel-08)
 
-* Der Operator liest zwei Protein-Werte
-* Die Werte stammen aus Feeds oder Transport
-* Es findet **nur ein Vergleich** statt
-* **Keine Ausführung**, kein Befehl, kein Effekt
+Wahrheiten sind **Gatter**, keine Bedingungen.
 
-Dies ist der **Default-Zustand** eines Operators.
+* `¶`   = Durchlass bei TRUE
+* `¶¶` = Durchlass bei FALSE
+* `°`   = Invertierendes Gatter
 
---------------------------------------------------------------------
+Sie entscheiden **nur**, ob der Aktionsdraht offen bleibt.
 
-### 5. Operator + ausführbares Protein
+-----------------------------------------
 
-< »[(1)¨¨|(2)¨¨]«
+### 4. Aktion als einziges Tor zur Wirkung
 
-
-Bedeutung:
-
-* Der Operator bewertet die Bedingung
-* **Nur wenn die Bedingung erfüllt ist**, darf ausgeführt werden
-* Die Aktion `» «` erlaubt dem Operator, den Effekt freizugeben
-
-Der Operator entscheidet **nicht**, *was* ausgeführt wird,
-sondern **ob** es ausgeführt werden darf.
-
---------------------------------------------------------------------
-
-### 6. Wahrheiten (IF / ELSE) als Ausführungsgatter
-
-Wahrheiten (`¶`, `¶¶`, `°`) arbeiten **auf Operator-Ebene**.
-
-Beispiel:
-
-
-< »[(1)¨30¨|(2)¨40¨]
-  ¶ ['echo'|¨TREFFER¨]«
-  ¶¶ ['echo'|¨Kein Treffer¨]«
+```
+× »[(1)¨50¨|(2)¨100¨]«
+¶ ['run something']
+```
 
 Ablauf:
 
-1. Operator wertet
-2. Wahrheit prüft Ergebnis
-3. **Nur der Zweig mit Aktion wird ausgeführt**
+1. Sentiator bewertet
+2. Wahrheit entscheidet
+3. Aktion erlaubt Ausführung
 
-Ohne Aktion bleibt auch ein wahrer Zweig **wirkungslos**.
+> **Der Operator entscheidet nicht, *was* passiert –
+> sondern nur, *ob* es passieren darf.**
 
---------------------------------------------------------------------
+-----------------------------------------
 
-### 7. Konsequenz für das Systemdesign
+### 5. Feeds = Weg-Zeit (nicht Uhrzeit)
 
-* Operatoren **lesen immer**
-* Aktionen **führen nur aus, wenn erlaubt**
-* Proteine **transportieren und kapseln**
+Feeds existieren:
 
-Diese Trennung:
+* solange der Signalweg existiert
+* solange sie nicht gelöscht werden
+* unabhängig von Sekunden oder Ticks
 
-* verhindert implizite Seiteneffekte
-* macht Logik nachvollziehbar
-* erlaubt komplexe Frameworks ohne Sonderregeln
-* unterscheidet MCS klar von klassischen C-Operator/Operand-Modellen
+Zeit kann:
 
---------------------------------------------------------------------
+* als Argument
+* als Registerwert
+* als Schrittzähler
+  modelliert werden — **aber niemals implizit**.
 
-### Merksatz :
+-----------------------------------------
 
-> Ein Operator entscheidet,
-> eine Aktion führt aus,
-> ein Protein trägt.
+### 6. Massen- und Mehrweg-Logik (~~)
 
---------------------------------------------------------------------
-Begriff   |          C-Welt            |            MCS-Welt
-Operator  | a+b, a=b, a<b Seiteneffekt |   °, <, ſ → reine Bewertung
-Operand   |     a, b → Speicheradresse | [(1)'$terminal'],['(1)'] lesbarer, debuggWert
-Ausführung|    implizit im Ausdruck    |       explizit durch »...«
+`~~` hält einen Aktionspfad offen, bis:
 
---------------------------------------------------------------------
+* alle Fragmente gelesen
+* alle Bewertungen abgeschlossen
+* alle Träger rekombiniert sind
 
-Die MCS-Fehler-Kaskade ist im Grunde dein Immunsystem.
-8. Die Logik-Schutzschleuse (Fehler-Kaskade)
+Dies ist **kein Loop**, sondern ein **kompositorischer Sammelpfad**.
 
-In MCS gibt es keinen "Absturz", sondern nur einen kontrollierten
-Gatter-Abbruch. Die Ausführungslogik wird durch drei Schutzebenen
-(Sovereignty-Shields) abgesichert:
-Ebene Instanz   Auslöser Reaktion       Ziel        Weg
-1.    Physisch  Lexer/ſ  Syntax-Müll   ſ (Löschung) HardReset Register
-2.    Identität þ-Core   þ-Fehler      Blockade     $Router (Alarm)
-3.    Logik     Gatter/^ Unmöglichkeit ^ (Freeze)   AIMS (KI-Analyse)
+-----------------------------------------
 
-Der Gatter-Fluss in der Praxis:
+### 7. Sicherheits- und Reinheitsregel (ſ / þ)
 
- - Syntax-Check: Bevor ein Operator überhaupt liest, säubert
-   ſ/Reset den Pfad. Ein fehlerhaftes Protein wird gar nicht
-   erst zum "Operand".
+Bevor eine Transaktion schließt:
 
- - þ-Check (§7465): Ein Operator vergleicht nur, wenn die Identität
-   steht. Ohne gültiges þ bleibt der Aktionsdraht » « tot.
+1. **þ** prüft Identität & Stufe
+2. **ſ** löscht den gesamten Transaktionsrahmen
+3. Kein Zustand darf „lecken“
 
- - Logik-Check: Wenn der Operator ein Ergebnis liefert,
-   das die Wahrheit ¶ nicht verarbeiten kann, greift
-   ^ Fehlerbehandlung .
+> **Reinheit gilt für Prozesse, nicht für Wissen.**
 
---------------------------------------------------------------------
-                  Alte Erklärung Ende
---------------------------------------------------------------------
---------------------------------------------------------------------
---------------------------------------------------------------------
+-----------------------------------------
+
+## Fehler existieren nicht — nur blockierte Pfade
+
+MCS kennt keinen Absturz.
+
+Es gibt nur:
+
+| Ebene     | Auslöser | Reaktion   |
+| --------- | -------- | ---------- |
+| Physisch  | Syntax   | ſ (Reset)  |
+| Identität | þ-Fehler | Blockade   |
+| Logik     | Unlösbar | ^ (Freeze) |
+
+Ein blockierter Pfad ist **stabil**, nicht defekt.
+
+-----------------------------------------
+
+## Merksatz (bleibt, ist jetzt exakt)
+
+> Ein Sentiator entscheidet.
+> Eine Wahrheit schaltet.
+> Eine Aktion erlaubt.
+> Ein Protein trägt.
+
 
 ################## Ende der Ausführungslogik  ######################
-####################################################################
+

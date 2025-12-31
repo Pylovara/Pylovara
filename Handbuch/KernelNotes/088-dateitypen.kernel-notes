@@ -1,6 +1,61 @@
 @kernel-nr: 88
 ####################################################################
-## Datentyp Rollen Version 1.3
+
+## Erklärungszusätze :
+
+dabei wird berücksichtig das 1 auf 2 und 2 auf 1 zugreifen kann ,
+damit 2 auch sub-daten starten kann wie 1-1 1-2 , hier besitzt
+z.b 2 default daten als vererbungsstrang , kann aber mit dem
+strang 3-1 als node bei 2.1 ausgetauscht werden und combiniert
+
+Die *.*-core dateien können spezialisierte prozesse im pid task halten
+und können optimal als datenpacket aufgespaltet werden , wenn
+also ein audio stream nur audio verlangt für bluetooth boxen oder
+aux boxen etc , kann der core als *.*-acore designed werden mit anhang,
+das prinzip bleibt bei eingewurzelt also zusammenhängend ...
+
+das system kann dadurch für baugleiche cpus oder gpus oder ram
+platten oder soundkarten mit verschiednenen standart einstellungen
+gefüttert werden und das logischerweise gleich mit MCS Syntax für
+die System Datentypen , das übersetzung framework für jeden c compiler
+und include nutzung wird als *.*-kernel datentyp klassifiziert ......
+
+Durch den ⊕ Sync-timer wird das zu einem einhängbaren und
+aushängbaren Puzzelstück .
+Dabei ist nur zu Verstehen vom kopf an fängt der datensatz an
+und folgt immer ab dem kopf den Datenstrang.
+
+## VERERBUNGSPRINZIP :
+
+die Kettenbildungenmechanismen sind bei einem Veerbungsprinzip
+verwurzelt von oben herab und können mehrere Settings als
+Umschaltungsknoten IN SICH TRAGEN .
+
+0      *.*-kernel  Eigenständige Kernelschicht | unabhängig !
+
+1      *.*-core      GROSSVATERS    AUSWAHL         UMSCHALTKNOTEN/
+1-1    *.*-hcore      GROSSVATERS GESCHWISTER - HARDWARE
+1-2    *.*-vcore       GROSSVATERS GESCHWISTER - VISUELL
+1-3    *.*-acore        GROSSVATERS GESCHWISTER - AUDIO
+1-4    *.*-icore         GROSSVATERS GESCHWISTER - INPUT
+-
+2      *.*-magic   Großmutter      – Umchalter,Konfigbrücke
+2-1    *.*-node    Vater           – Hauptcontroller
+2-1-1  *.*-nano    Mutter          – Substrukturmanager default
+2-1-2  *.*-micro   Tochter         – Mikrosteuerung
+-
+3-1    *.*-node    Vater           – Hauptcontroller
+3-2    *.*-nano    Mutter          – Substrukturmanager wechselbar
+3-3    *.*-micro   Tochter         – Mikrosteuerung
+3-4    *.*-cache   Cache           – Temp-Daten
+3-5    *.*-needles Hardwarebindung - Anzapfen/Treiber/Übersetzen
+
+4      *.*-notes
+4-1    *.*-redflag
+4-2
+--------------------------------------------------------------------
+
+## Datentyp Rollen Version 1.4
 
 Pylovara organisiert sich in einem klaren Familienmodell:
 
@@ -63,53 +118,8 @@ der auch direkt von der AI im System Angesteuert werden kann und
 somit die Datenstränge in den *.*-core Prozess anpassen kann .
 
 --------------------------------------------------------------------
-## VERERBUNGSPRINZIP :
 
-die Kettenbildungenmechanismen sind bei einem Veerbungsprinzip
-verwurzelt von oben herab und können mehrere Settings als
-Umschaltungsknoten genutzt werden Stichpunkt Modular.
 
-0      *.*-kernel  Eigenständige Kernelschicht | unabhängig !
-1      *.*-core    Großvater       - Ausführbar/Run/
-1-1    *.*-lcore   Geschwister     - hardware
-1-2    *.*-vcore   Geschwister
-1-3    *.*-acore   Geschwister
--
-2      *.*-magic   Großmutter      – Umchalter,Konfigbrücke
-2-1    *.*-node    Vater           – Hauptcontroller
-2-1-1  *.*-nano    Mutter          – Substrukturmanager default
-2-1-2  *.*-micro   Tochter         – Mikrosteuerung
--
-3-1    *.*-node    Vater           – Hauptcontroller
-3-2    *.*-nano    Mutter          – Substrukturmanager wechselbar
-3-3    *.*-micro   Tochter         – Mikrosteuerung
-3-4    *.*-cache   Cache           – Temp-Daten
-3-5    *.*-needles Hardwarebindung - Anzapfen/Treiber/Übersetzen
-
---------------------------------------------------------------------
-## Erklärungszusätze :
-
-dabei wird berücksichtig das 1 auf 2 und 2 auf 1 zugreifen kann ,
-damit 2 auch subdaten starten kann wie 1-1 1-2 , hier besitzt
-z.b 2 default daten als vererbungsstrang , kann aber mit dem
-strang 3-1 als node bei 2.1 ausgetauscht werden und combiniert
-
-Die *.*-core dateien können spezialisierte prozesse im pid task halten
-und können optimal als datenpacket aufgespaltet werden , wenn
-also ein audio stream nur audio verlangt für bluetooth boxen oder
-aux boxen etc , kann der core als *.*-acore designed werden mit anhang,
-das prinzip bleibt bei eingewurzelt also zusammenhängend ...
-
-das system kann dadurch für baugleiche cpus oder gpus oder ram
-platten oder soundkarten mit verschiednenen standart einstellungen
-gefüttert werden und das logischerweise gleich mit MCS Syntax für
-die System Datentypen , das übersetzung framework für jeden c compiler
-und include nutzung wird als *.*-kernel datentyp klassifiziert ......
-
-Durch den ⊕ Sync-timer wird das zu einem einhängbaren und
-aushängbaren Puzzelstück .
-Dabei ist nur zu Verstehen vom kopf an fängt der datensatz an
-und folgt immer ab dem kopf den Datenstrang.
 
 ##################### Ende der Datentypen  #########################
 ####################################################################

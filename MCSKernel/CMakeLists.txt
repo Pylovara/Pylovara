@@ -1,73 +1,33 @@
-# /Pylovara/System/Kernel/Core/CMakeLists.txt
-cmake_minimum_required(VERSION 3.14)
-project(PylovaraKernel VERSION 2.9 LANGUAGES C)
+cmake_minimum_required(VERSION 3.10)
+project(PylovaraMCSKernel VERSION 4.5)
 
-include_directories(
-    ${CMAKE_SOURCE_DIR}/include   # Öffentliche API, Priorität 1
-    ${CMAKE_SOURCE_DIR}/Logic     # Lexer-Header
-    ${CMAKE_SOURCE_DIR}/Lib       # Für Legacy (später entfernen)
-    ${CMAKE_SOURCE_DIR}/Lab       # Spätere Testphasen
-)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED True)
+set(CMAKE_BUILD_TYPE Debug) # Für Tests
 
-# Quellen sammeln
-set(SRC_LIB
-    Lib/mcs_action.c
-    Lib/mcs_argument.c
-    Lib/mcs_feed.c
-    Lib/mcs_protein.c
-    Lib/mcs_proton.c
-    Lib/mcs_warp.c
-    Lib/mcs_wahrheiten.c
-    Lib/mcs_transaktion.c
-    Lib/mcs_eingaben.c
-    Lib/mcs_runner.c
-    Lib/mcs_semantics.c
-    Logic/mcs_lexer.c
-)
+# Dependencies (GTK4 für GUI)
+#find_package(PkgConfig REQUIRED)
+#pkg_check_modules(GTK4 REQUIRED gtk4)
 
-set(SRC_LOGIC
-    Logic/mcs_lexer.c
-)
+# Include-Dirs
+include_directories(include)
 
-# Bibliothek bauen (statisch)
-#add_library(mcs_core STATIC ${SRC_LIB} ${SRC_LOGIC})
-add_library(mcs_core STATIC
-    Lib/mcs_action.c
-    Lib/mcs_argument.c
-    Lib/mcs_feed.c
-    Lib/mcs_protein.c
-    Lib/mcs_proton.c
-    Lib/mcs_warp.c
-    Lib/mcs_wahrheiten.c
-    Lib/mcs_semantics.c
-    Lib/mcs_operatoren.c   # ← VOR mcs_transaktion.c verschoben
-    Lib/mcs_transaktion.c
-    Lib/mcs_eingaben.c
-    Lib/mcs_cmd_register.c   # ← NEU — vor runner
-    Lib/mcs_runner.c
-    Logic/mcs_lexer.c
-)
+# Sources aus Logic/Lib
+file(GLOB LOGIC_SRCS Logic/*.c)
+file(GLOB LIB_SRCS Lib/*.c)
 
-# Test-Programme
-add_executable(test_lexer Lab/test_lexer.c)
-target_link_libraries(test_lexer mcs_core)
+# Executable (mcs als Interpreter)
+add_executable(mcs main.c ${LOGIC_SRCS} ${LIB_SRCS})
 
-add_executable(test_action Lab/test_action.c)
-target_link_libraries(test_action mcs_core)
+# Link GTK4
+target_link_libraries(mcs PRIVATE ${GTK4_LIBRARIES})
 
-add_executable(test_if Lab/test_if.c)
-target_link_libraries(test_if mcs_core)
+# Install
+install(TARGETS mcs DESTINATION bin)
 
-add_executable(test_trans Lab/test_trans.c)
-target_link_libraries(test_trans mcs_core)
-
-# Optional: Hauptprogramm
-# add_executable(pylovara_kernel main.c)
-# target_link_libraries(pylovara_kernel mcs_core)
-
-add_executable(mcs main.c)
-target_link_libraries(mcs mcs_core)
-
-
-
-
+# Tests (aus mcscodes/)
+enable_testing()
+file(GLOB MCS_TESTS mcscodes/*.mcs)
+foreach(TEST_FILE ${MCS_TESTS})
+    add_test(NAME ${TEST_FILE} COMMAND mcs ${TEST_FILE})
+endforeach()

@@ -1,195 +1,154 @@
 @kernel-nr: 08 | WAHRHEITEN | STATUS : VALIDE
 ####################################################################
-
  EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
-
   WELTWEITER URSPRUNG UND URHEBER WIE LICENSETRÄGER VON WAHRHEITEN
-
          DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT
-
          PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
-
 --------------------------------------------------------------------
-
  NAME = WAHRHEIT
  BEGRIFFSDEFINITION = FLUSS-GATTER | SCHALTUNGS-LOGIK
  MERHZAHL = WAHRHEITEN
- FUNKTION = PARALLELE ENTSCHEIDUNGSSTRUKTUR
+ FUNKTION = PARALLELE ENTSCHEIDUNGSSTRUKTUR MIT PROGRESS-ANZEIGE
  AUSFÜHRUNGSART = LISTENORIENTIERTE GATTER-STEUERUNG
  GÜLTIGKEITSBEREICH = SYSTEMWEIT
-
 --------------------------------------------------------------------
-
  ERKLÄRUNG WAHRHEITEN:
-
  WAHRHEITEN SIND ENTSCHEIDUNGEN, DIE LISTENARTIG GETROFFEN WERDEN
  KÖNNEN. DURCH PRÄZISE SYMBOLIK KÖNNEN SIE AUS EINER AKTIVEN
  WAHRHEIT HERAUSGELÖST WERDEN UND REPRÄSENTIEREN DANN DEN
  FOLGEZUSTAND.
-
  SIE DIENEN ALS SCHALTUNGSWERKZEUGE, DIE DEN BOXI-FLUSS BEWERTEN
  ODER DURCH PARALLELISIERUNG PROTEINE DUPLIZIEREN KÖNNEN – FÜR
  WEITERE VERARBEITUNGSSCHRITTE.
-
  DAS PRINZIP: "DAS KANN WAHR SEIN ODER DAS KANN WAHR SEIN ODER
  DAS KANN EINE PARALLELE WAHRHEIT SEIN."
-
  WAHRHEITEN FUNKTIONIEREN AUF EXISTIERENDER HARDWARE WIE AUF
  ZUKÜNFTIGEN CHIPS – PROGRAMMIERBAR ODER ASIC.
-
+ NEU: INTEGRIERTER PROGRESS-OPERATOR (:) FÜR VISUELLE LADEBALKEN
+ IN OPTIONEN – DYNAMISCH GE STEUERT DURCH AI ODER FEEDS.
 ####################################################################
-
  ↓ STANDARDLAYOUT ↓
-
 ####################################################################
-
  WAHRHEITEN-HAUPTKLASSE = WAHRHEITEN-TRIGGER
  FUNKTION = SCHALTUNGSAUSLÖSER
  SYMBOLISCHE DEKLARATION = –
  SYMBOL IN WORTEN = BINDESTRICH | VIERTELGEVIERTSTRICH
  INFO = INITIIERT EINE WAHRHEITSENTSCHEIDUNG
-
  BEISPIEL:
    – »[×Bedingung×]«
-
 ####################################################################
-
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-A
  FUNKTION = ERSTER AUSGANG (PRIMÄRER PFAD)
- SYMBOLISCHE DEKLARATION = ·
- SYMBOL IN WORTEN = MITTELPUNKT
- INFO = ERSTE ENTSCHEIDUNGSOPTION
-
+ SYMBOLISCHE DEKLARATION = ·   (MIT PROGRESS: ·:)
+ SYMBOL IN WORTEN = MITTELPUNKT (MIT DOPPELPUNKT FÜR PROGRESS)
+ INFO = ERSTE ENTSCHEIDUNGSOPTION MIT OPTIONALEM LADEBALKEN
  BEISPIEL:
-   –· »[×1+1×]
-       -= [(1)"2"]«
-
+   –·: ###################### 70% Geladen »[×Aktion×]«
 ####################################################################
-
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-B
  FUNKTION = ZWEITER AUSGANG (ALTERNATIVER PFAD)
- SYMBOLISCHE DEKLARATION = ··
+ SYMBOLISCHE DEKLARATION = ··   (MIT PROGRESS: ··:)
  SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT
- INFO = ZWEITE ENTSCHEIDUNGSOPTION
-
+ INFO = ZWEITE ENTSCHEIDUNGSOPTION MIT OPTIONALEM LADEBALKEN
  BEISPIEL:
-   –·· »[×1+1×]
-        -= [(1)"2"]«
-
+   –··: ############### 50% Geladen »[×Aktion×]«
 ####################################################################
-
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-C
  FUNKTION = DRITTER AUSGANG (ZUSÄTZLICHER PFAD)
- SYMBOLISCHE DEKLARATION = ···
+ SYMBOLISCHE DEKLARATION = ···   (MIT PROGRESS: ···:)
  SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT
- INFO = DRITTE ENTSCHEIDUNGSOPTION
-
- BEISPIEL:
-   –··· »[×1+1×]
-         -= [(1)"2"]«
-
+ INFO = DRITTE ENTSCHEIDUNGSOPTION MIT OPTIONALEM LADEBALKEN
 ####################################################################
-
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-D
+ FUNKTION = VIERTER AUSGANG (ERWEITERTER PFAD)
+ SYMBOLISCHE DEKLARATION = ····   (MIT PROGRESS: ····:)
+ SYMBOL IN WORTEN = VIER MITTELPUNKTE
+ INFO = VIERTE ENTSCHEIDUNGSOPTION MIT OPTIONALEM LADEBALKEN
+####################################################################
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-E
+ FUNKTION = FÜNFTER AUSGANG (MAXIMALER PFAD)
+ SYMBOLISCHE DEKLARATION = ·····   (MIT PROGRESS: ·····:)
+ SYMBOL IN WORTEN = FÜNF MITTELPUNKTE
+ INFO = FÜNFTE ENTSCHEIDUNGSOPTION MIT OPTIONALEM LADEBALKEN
+####################################################################
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PROGRESS-OPERATOR
+ FUNKTION = VISUELLE FORTSCHRITTSANZEIGE
+ SYMBOLISCHE DEKLARATION = :
+ SYMBOL IN WORTEN = DOPPELPUNKT
+ INFO = HÄNGT AN OPTIONEN (–·: BIS –····:) FÜR DYNAMISCHEN LADEBALKEN.
+       BALKENDESIGN: # FÜR FORTSCHRITT, % ANZEIGE DURCH AI/FEED.
+ BEISPIEL:
+   –·: ############################### 100% Fertig »[~Aktion~]«
+####################################################################
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-AUSWERTUNG
  FUNKTION = ERGEBNISZUWESISUNG
  SYMBOLISCHE DEKLARATION = =
  SYMBOL IN WORTEN = GLEICHHEITSZEICHEN
  INFO = ÜBERFÜHRT ALU-RECHNUNGEN IN FEEDS
-
  BEISPIEL:
    »[×1+1×]
     -= [(1)"2"]«
-
 ####################################################################
-
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PARALLEL-PROZESS
  FUNKTION = PARALLELE AUSFÜHRUNG
  SYMBOLISCHE DEKLARATION = <
  SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
  INFO = INITIIERT PARALLELE PROZESSE ODER PROTEIN-DUPLIKATE
-
- BEISPIEL (EINFACH):
+ BEISPIEL:
    –< »[×1+1×]
        -= [(1)"2"]«
-
- BEISPIEL (MIT OPTION C):
-   –···< »[×1+1×]
-          -= [(1)"2"]«
-
 ####################################################################
-
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PARALLEL-TRANSPORT
  FUNKTION = PARALLELER DATENTRANSPORT
  SYMBOLISCHE DEKLARATION = >
  SYMBOL IN WORTEN = GRÖSSER-ALS-ZEICHEN
  INFO = TRANSPORTIERT DATEN PARALLEL
-
- BEISPIEL (EINFACH):
+ BEISPIEL:
    –> »[×1+1×]
        -= [(1)"2"]«
-
- BEISPIEL (MIT OPTION C):
-   –···> »[×1+1×]
-          -= [(1)"2"]«
-
 ####################################################################
-
  EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR):
-
-   »[PROTEIN-START]«                 # Linker Rand
-       –· »[OPTION-A-ACTION]«        # Eingerückt (1. Ebene)
-           -= [(NR)"WERT"]           # Weiter eingerückt
-       –·· »[OPTION-B-ACTION]«       # Selbe Ebene wie –·
-       –< »[PARALLEL-PROZESS]«       # Neue Wahrheit
-           –· »[PARALLEL-A]«         # Eingerückt darunter
-           –·· »[PARALLEL-B]«        # Selbe Ebene
-
-   »[NEUES-PROTEIN]«                 # Zurück zum linken Rand
-
+   »[PROTEIN-START]« # Linker Rand
+       –·: ############### 50% »[OPTION-A-ACTION]« # Mit Progress
+           -= [(NR)"WERT"]
+       –··: ######################## 80% »[OPTION-B-ACTION]«
+       –< »[PARALLEL-PROZESS]«
+           –·: ############################### 100% »[PARALLEL-A]«
+   »[NEUES-PROTEIN]«
 ####################################################################
-
  ANWENDUNGSBEISPIELE:
-
- # 1. GUI-MENÜ-STEUERUNG (IF/ELSE-ERSATZ)
+ # 1. GUI-MENÜ MIT PROGRESS (Ladebalken pro Punkt)
    –< »[×(MENU_LABEL) == "Quit"×]«
-       –· »[~quit_application~]«
+       –·: ############################### 100% »[~quit_application~]«
    –< »[×(MENU_LABEL) == "About"×]«
-       –· »[~show_about_dialog~]«
-   –> »[×(MENU_LABEL) != ""×]«       # DEFAULT (ELSE)
-       –· »["Unbekannter Menüpunkt"]«
-
- # 2. DATEIVERARBEITUNG (PARALLEL)
+       –··: ###################### 70% »[~show_about_dialog~]«
+   –< »[×(MENU_LABEL) == "Settings"×]«
+       –···: ############### 50% »[~open_settings~]«
+   –> »[×(MENU_LABEL) != ""×]«
+       –····: 0% »["Unbekannter Menüpunkt"]«
+ # 2. DATEIVERARBEITUNG MIT PROGRESS
    –< »[×feed cache 1 > 10485760×]«
-       –· »['gzip $FILE']«
-       –·· »[ -= (STATUS)"compressed" ]«
-
- # 3. HARDWARE-STEUERUNG (MULTI-OUTPUT)
-   –· »[{Temp|25}]«
-   –·· »[{Fan|80%}]«
-   –··· »[{LED|blue}]«
-
-
-
- # Das System ist in der Lage Native Gui Listen oder Ast Bäume
-   Aufzubauen, die Listen Klassen werden vollständig ausgebaut!
-
-   # Native GUI-Menü-Struktur in MCS
-–< »[×$selection == "File"×]«
-    –· »[~menu_item ~|"New"|{action|new_file}]«
-    –·· »[~menu_item ~|"Open"|{action|open_file}]«
-    –··· »[~menu_separator~]«
-    –···· »[~menu_item ~|"Exit"|{action|quit}]«
-
+       –·: ######################## 80% »['gzip $FILE']«
+       –··: ############################### 100% »[ -= (STATUS)"compressed" ]«
+ # 3. IDE-PROZESS (Loading)
+   –·: ############### 50% »[~load_project~]«
+   –··: ######################## 80% »[~compile_mcs~]«
+   –···: ############################### 100% »[~run_simulation~]«
 ####################################################################
-
  ZUKUNFTSERWEITERUNGEN (BAUSTELLE):
-
-   –<–>   = FORK ODER SPLITTING (LINKS → RECHTS)
-   –>–<   = FORK ODER SPLITTING (RECHTS → LINKS)
-
- DIESE SYMBOLE SIND FÜR KOMPLEXERE PARALLELISIERUNGS-
- MUSTER VORGEMERKT.
-
+   –<–> = FORK ODER SPLITTING (LINKS → RECHTS)
+   –>–< = FORK ODER SPLITTING (RECHTS → LINKS)
+   :::: = ANIMIERTER LADEBALKEN (PULSE-EFFEKT)
 ####################################################################
-
 ##################### ENDE DER WAHRHEITEN ##########################
+
+
+
+
+
+
+
+
+
+
+

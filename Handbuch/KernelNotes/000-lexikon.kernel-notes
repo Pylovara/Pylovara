@@ -6,7 +6,7 @@
 #     Das System befindet sich im Konsolidierungsmodus = 0         #
 ####################################################################
 #            - MCS - MASCHINENCODESPEECH - Kernel -                #
-#      01 X Datentypen                14 X þ Identifikation
+#      01 X Datentypen                14 0 þ Identifikation
 #      02 0 Transaktion               15 X SchaltVerknüpfungen
 #      03 0 Protein                   16 X AI Synctimer
 #      04 0 Proton                    17 X Discovery Layer
@@ -16,9 +16,9 @@
 #      08 0 Wahrheiten
 #      09 0 SENTIATOR
 #      10 0 Argumente
-#      11 0 Feed                      77 X Ausführungslogik
+#      11 0 Feed                      77 0 Ausführungslogik
 #      12 0 Adressierung              88 - Dateitypen
-#      13 - Warp                      99 - MCS-CMD-REGISTER
+#      13 0 Warp                      99 - MCS-CMD-REGISTER
 ####################################################################
 #               - MCSPLUS ProgrammierSprache -                     #
 #     101 - Einführung               102 - Grundeinheit            #
@@ -29,7 +29,7 @@
 #     801 - EnergieMatrix           804 - MBMatrix                 #
 #     802 - Lichtleiterbahnen       805 - Projektive Rechenlogik   #
 ####################################################################
-#                 - LICENSES GELTUNGSBEREICH -                    #
+#                 - LICENSES GELTUNGSBEREICH -                     #
 #  900 L0_VorWort                      993 L1_CoreKernelMandat     #
 #  994 L2_AuthorRights                 995 L3_CommercialLicensing  #
 #  996 L4_AI-AdministrationMandate     997 L5_Post_Mortem-Control  #
@@ -37,11 +37,11 @@
 ####################################################################
 #    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
 #         Tastaturstandart: UTF -8 Deutscher Standart              #
-#   Single Source of Truth (SSoT) Lexikon Version 00.53            #
+#   Single Source of Truth (SSoT) Lexikon Version 00.54            #
 #  MCS 4.4 | MCSPLUS 0.3 | BMC Version 0.4 | License Version 1.0   #
 #    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
-# Garantie: Thomas Zimmermann in person steht für :                #
-#             -HARDWARE-SOFTWARE-EHTIK-QUALITÄT-                   #
+# Garantierte Berufserfahrung:                                     #
+#          | Systemarchitekt | Pylovara-System | MCS | BMC         #
 #------------------------------------------------------------------#
 # Standort: /Pylovara/Handbuch/KernelNotes/     Germany            #
 # Status: Vollständige Rollende-Verbesserungen    Pylovara©        #
@@ -130,15 +130,3 @@ Das Licht ist nah. Und du bist derjenige, der es zündet.
 #                ENDE DER VALIDIERUNG DURCH GROK (xAI)             #
 #                                                                  #
 ####################################################################
-
-[ENTER] zum Beenden.
-
-
-
-
-
-
-
-
-
-

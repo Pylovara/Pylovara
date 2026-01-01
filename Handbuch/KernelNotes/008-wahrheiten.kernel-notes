@@ -7,195 +7,189 @@
 
          DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT
 
-         PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+         PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
 
 --------------------------------------------------------------------
 
- NAME = Wahrheit
-
- BEGRIFFSDEFINTION = Fluss-Gatter
-
- MERHZAHL = Wahrheiten
-
- FUNKTION = Schaltung
-
- AUSFÜHRUNGSART =
+ NAME = WAHRHEIT
+ BEGRIFFSDEFINITION = FLUSS-GATTER | SCHALTUNGS-LOGIK
+ MERHZAHL = WAHRHEITEN
+ FUNKTION = PARALLELE ENTSCHEIDUNGSSTRUKTUR
+ AUSFÜHRUNGSART = LISTENORIENTIERTE GATTER-STEUERUNG
+ GÜLTIGKEITSBEREICH = SYSTEMWEIT
 
 --------------------------------------------------------------------
 
- ERKLÄRUNG  =
+ ERKLÄRUNG WAHRHEITEN:
 
- WAHRHEITEN SIND ENTSCHEIDUNGEN DIE LISTENARTIG GETROFFENWERDEN
- KÖNNEN UND DURCH SYMBOLIK PRÄZISE AUS DER WAHRHEIT HERAUSGENOMMEN
- WERDEN KÖNNEN WENN SIE GESCHALTEN SIND, SIE REPÄSENTIEREN DEN DANN
- FOLGENDEN IST ZUSTAND.
+ WAHRHEITEN SIND ENTSCHEIDUNGEN, DIE LISTENARTIG GETROFFEN WERDEN
+ KÖNNEN. DURCH PRÄZISE SYMBOLIK KÖNNEN SIE AUS EINER AKTIVEN
+ WAHRHEIT HERAUSGELÖST WERDEN UND REPRÄSENTIEREN DANN DEN
+ FOLGEZUSTAND.
 
- SIE KÖNNEN DANN IN DIE PARALLELISIERUNG GESCHICKT WERDEN UM DEN
- IST ZUSTAND WEITERZUTRAGEN IN DIE NÄCHSTE INSTANZ, DIE DANN AUS
- DEN ERGEBNIS DESSEN WAS Z.B EIN OPERATOR ENTSCHIEDEN HAT, DAS
- ERGEBNIS MIT NEHMEN UND WEITERVERARBEITEN KÖNNEN.
+ SIE DIENEN ALS SCHALTUNGSWERKZEUGE, DIE DEN BOXI-FLUSS BEWERTEN
+ ODER DURCH PARALLELISIERUNG PROTEINE DUPLIZIEREN KÖNNEN – FÜR
+ WEITERE VERARBEITUNGSSCHRITTE.
 
- WAHRHEITEN KÖNNEN AUF BESTEHENDER HARDWARE GENUTZT WERDEN ODER
- AUCH IN ZUCKÜNFTIGEN CHIPS, EGAL OB PROGRAMMIERBAR ODER ACES.
+ DAS PRINZIP: "DAS KANN WAHR SEIN ODER DAS KANN WAHR SEIN ODER
+ DAS KANN EINE PARALLELE WAHRHEIT SEIN."
 
- SIE DIENEN ALS SCHALTUNGSWERZEUG UNTER DEM BEGRIFF WARHEITEN
-
- NACH DEM PPRINZIP : DAS KANN WAHRSEIN ODER DAS KANN WAHRSEIN ODER
- DAS KANN EINE PARALLEL WAHRHEIT SEIN.
-
- Die Wahrheiten sind die Gatter, die den BOXI-Fluss bewerten.
- DIE WAHRHEITEN SIND WIE GATTER, DIE DEN BOXI-FLUSS BEWERTEN
- ODER PER PARALLELISIERUNG PROTEINE COPIEREN KÖNNEN FÜR WEITER
- VERARBEITEN VERARBEITUNGEN.
+ WAHRHEITEN FUNKTIONIEREN AUF EXISTIERENDER HARDWARE WIE AUF
+ ZUKÜNFTIGEN CHIPS – PROGRAMMIERBAR ODER ASIC.
 
 ####################################################################
 
-
---------------------------------------------------------------------
-
- ↓ STANDARTLAYOUT ↓
-
---------------------------------------------------------------------
-
- WAHRHEITEN KLASSE =
-
- FUNKTION =
-
- SYMBOLISCHE DEKLARATION =
-
- SYMBOL IN WORTEN =
-
- INFO =
-
---------------------------------------------------------------------
+ ↓ STANDARDLAYOUT ↓
 
 ####################################################################
 
---------------------------------------------------------------------
-
- WAHRHEITEN HAUPT KLASSE = WARHEITEN
-
- FUNKTION = SCHALTUNG
-
+ WAHRHEITEN-HAUPTKLASSE = WAHRHEITEN-TRIGGER
+ FUNKTION = SCHALTUNGSAUSLÖSER
  SYMBOLISCHE DEKLARATION = –
-
  SYMBOL IN WORTEN = BINDESTRICH | VIERTELGEVIERTSTRICH
+ INFO = INITIIERT EINE WAHRHEITSENTSCHEIDUNG
 
- INFO = HIERMIT WERDEN UNTER KLASSE/N GETRIGGERT
-
---------------------------------------------------------------------
+ BEISPIEL:
+   – »[×Bedingung×]«
 
 ####################################################################
 
---------------------------------------------------------------------
-
- WAHRHEITEN UNTER KLASSE OPTION = WAHRHEITEN-OPTION-A
-
- FUNKTION = ERSTER AUSGANG
-
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-A
+ FUNKTION = ERSTER AUSGANG (PRIMÄRER PFAD)
  SYMBOLISCHE DEKLARATION = ·
-
  SYMBOL IN WORTEN = MITTELPUNKT
+ INFO = ERSTE ENTSCHEIDUNGSOPTION
 
- INFO = ERSTER OPTIONS AUSWAHL
-
---------------------------------------------------------------------
+ BEISPIEL:
+   –· »[×1+1×]
+       -= [(1)"2"]«
 
 ####################################################################
 
---------------------------------------------------------------------
-
- WAHRHEITEN UNTER KLASSE OPTION = WAHRHEITEN-OPTION-B
-
- FUNKTION = ZWEITER AUSGANG
-
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-B
+ FUNKTION = ZWEITER AUSGANG (ALTERNATIVER PFAD)
  SYMBOLISCHE DEKLARATION = ··
-
  SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT
+ INFO = ZWEITE ENTSCHEIDUNGSOPTION
 
- INFO = ZWEITE OPTIONS AUSWAHL
+ BEISPIEL:
+   –·· »[×1+1×]
+        -= [(1)"2"]«
 
---------------------------------------------------------------------
+####################################################################
 
-WAHRHEITEN UNTER KLASSE OPTION = WAHRHEITEN-OPTION-C
-
- FUNKTION = DRITTER AUSGANG
-
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-C
+ FUNKTION = DRITTER AUSGANG (ZUSÄTZLICHER PFAD)
  SYMBOLISCHE DEKLARATION = ···
-
  SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT
+ INFO = DRITTE ENTSCHEIDUNGSOPTION
 
- INFO = DRITTER AUSGANG AUSWAHL
+ BEISPIEL:
+   –··· »[×1+1×]
+         -= [(1)"2"]«
 
 ####################################################################
 
---------------------------------------------------------------------
-
- WAHRHEITEN UNTERKLASSE KLASSE = WAHRHEITEN-AUSWERTUNG
-
- FUNKTION = AUSWERTUNG | ERGBENIS
-
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-AUSWERTUNG
+ FUNKTION = ERGEBNISZUWESISUNG
  SYMBOLISCHE DEKLARATION = =
+ SYMBOL IN WORTEN = GLEICHHEITSZEICHEN
+ INFO = ÜBERFÜHRT ALU-RECHNUNGEN IN FEEDS
 
- SYMBOL IN WORTEN = ISTGLEICHZEICHEN
-
- INFO = HOLT DIE RECHNUNG AUS DER ALU ALS ERGBIS
-
- BEISPIEL =
-
- »[×1+1×]«
-  -= ["2"]
-
---------------------------------------------------------------------
+ BEISPIEL:
+   »[×1+1×]
+    -= [(1)"2"]«
 
 ####################################################################
 
---------------------------------------------------------------------
-
- WAHRHEITEN UNTERKLASSE = WAHRHEITEN-PARALLEL-PROZESS
-
- FUNKTION = PARALLELL AUSFÜHRUNG | PROZESS
-
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PARALLEL-PROZESS
+ FUNKTION = PARALLELE AUSFÜHRUNG
  SYMBOLISCHE DEKLARATION = <
-
  SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
+ INFO = INITIIERT PARALLELE PROZESSE ODER PROTEIN-DUPLIKATE
 
- INFO = PARALLELISIERT EIN PROZESS LISTE ODER PROTEIN DUPLIKAT
+ BEISPIEL (EINFACH):
+   –< »[×1+1×]
+       -= [(1)"2"]«
 
---------------------------------------------------------------------
-
-####################################################################
-
---------------------------------------------------------------------
-
- WAHRHEITEN UNTERKLASSE = WAHRHEITEN-PARALLEL-TRANSPORT
-
- FUNKTION = PARALLEL TRANSPORT
-
- SYMBOLISCHE DEKLARATION = GRÖẞER-ALS-ZEICHEN
-
- SYMBOL IN WORTEN = >
-
- INFO = TRANSPORTIERT PARALLEL IRGENDWAS
-
---------------------------------------------------------------------
+ BEISPIEL (MIT OPTION C):
+   –···< »[×1+1×]
+          -= [(1)"2"]«
 
 ####################################################################
 
---------------------------------------------------------------------
+ WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PARALLEL-TRANSPORT
+ FUNKTION = PARALLELER DATENTRANSPORT
+ SYMBOLISCHE DEKLARATION = >
+ SYMBOL IN WORTEN = GRÖSSER-ALS-ZEICHEN
+ INFO = TRANSPORTIERT DATEN PARALLEL
 
-    BAUSTELLENBEREICH BAUSTELLENBEREICH BAUSTELLENBEREICH
+ BEISPIEL (EINFACH):
+   –> »[×1+1×]
+       -= [(1)"2"]«
+
+ BEISPIEL (MIT OPTION C):
+   –···> »[×1+1×]
+          -= [(1)"2"]«
+
+####################################################################
+
+ EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR):
+
+   »[PROTEIN-START]«                 # Linker Rand
+       –· »[OPTION-A-ACTION]«        # Eingerückt (1. Ebene)
+           -= [(NR)"WERT"]           # Weiter eingerückt
+       –·· »[OPTION-B-ACTION]«       # Selbe Ebene wie –·
+       –< »[PARALLEL-PROZESS]«       # Neue Wahrheit
+           –· »[PARALLEL-A]«         # Eingerückt darunter
+           –·· »[PARALLEL-B]«        # Selbe Ebene
+
+   »[NEUES-PROTEIN]«                 # Zurück zum linken Rand
+
+####################################################################
+
+ ANWENDUNGSBEISPIELE:
+
+ # 1. GUI-MENÜ-STEUERUNG (IF/ELSE-ERSATZ)
+   –< »[×(MENU_LABEL) == "Quit"×]«
+       –· »[~quit_application~]«
+   –< »[×(MENU_LABEL) == "About"×]«
+       –· »[~show_about_dialog~]«
+   –> »[×(MENU_LABEL) != ""×]«       # DEFAULT (ELSE)
+       –· »["Unbekannter Menüpunkt"]«
+
+ # 2. DATEIVERARBEITUNG (PARALLEL)
+   –< »[×feed cache 1 > 10485760×]«
+       –· »['gzip $FILE']«
+       –·· »[ -= (STATUS)"compressed" ]«
+
+ # 3. HARDWARE-STEUERUNG (MULTI-OUTPUT)
+   –· »[{Temp|25}]«
+   –·· »[{Fan|80%}]«
+   –··· »[{LED|blue}]«
 
 
- ZuckunftsUpgrades :
 
- Nicht geplant aber für später vorgemerkt :
+ # Das System ist in der Lage Native Gui Listen oder Ast Bäume
+   Aufzubauen, die Listen Klassen werden vollständig ausgebaut!
 
- >-> für Fork oder Splitting Links Nach Rechts
- <-< für Fork oder Splitting Rechts Vor Links
+   # Native GUI-Menü-Struktur in MCS
+–< »[×$selection == "File"×]«
+    –· »[~menu_item ~|"New"|{action|new_file}]«
+    –·· »[~menu_item ~|"Open"|{action|open_file}]«
+    –··· »[~menu_separator~]«
+    –···· »[~menu_item ~|"Exit"|{action|quit}]«
 
-    BAUSTELLENBEREICH BAUSTELLENBEREICH BAUSTELLENBEREICH
---------------------------------------------------------------------
+####################################################################
 
-##################### Ende der Warheiten   #########################
+ ZUKUNFTSERWEITERUNGEN (BAUSTELLE):
 
+   –<–>   = FORK ODER SPLITTING (LINKS → RECHTS)
+   –>–<   = FORK ODER SPLITTING (RECHTS → LINKS)
+
+ DIESE SYMBOLE SIND FÜR KOMPLEXERE PARALLELISIERUNGS-
+ MUSTER VORGEMERKT.
+
+####################################################################
+
+##################### ENDE DER WAHRHEITEN ##########################

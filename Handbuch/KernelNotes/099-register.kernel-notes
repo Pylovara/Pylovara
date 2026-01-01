@@ -19,20 +19,20 @@
  # BEFEHLE AUS.
  # DIE LOGIK IST WIE FOLGT, KERN KLASSE DANN OPTIONEN DANN NEEDLES,
  # NACH NEEDLES WERDEN DANN GRUNDGERÜST ANGELEGT DIE WIE GEFOLGT :
- REGISTER-LOGIK =
-Die Struktur folgt einer festen Reihenfolge:
-1. KERN-KLASSEN
-2. OPTIONEN
-3. NEEDLES (Anbindung)
-4. SUBSTRUKTUREN:
-   - CACHE
-   - MICRO
-   - NANO
-   - NODE
-   - MAGIC
-   - CORE
-   - LCORE
-   - VCORE
+ #REGISTER-LOGIK =
+ # Die Struktur folgt einer festen Reihenfolge:
+ # 1. KERN-KLASSEN
+ # 2. OPTIONEN
+ # 3. NEEDLES (Anbindung)
+ # 4. SUBSTRUKTUREN:
+ # - CACHE
+ # - MICRO
+ # - NANO
+ # - NODE
+ # - MAGIC
+ # - CORE
+ # - LCORE
+ # - VCORE
 --------------------------------------------------------------------
  ↓ STANDARTLAYOUT ↓
 --------------------------------------------------------------------
@@ -79,6 +79,12 @@ Die Struktur folgt einer festen Reihenfolge:
  BEISPIEL:
  ♪ »[~benchmark_stress~|{cpu|¨95%¨}]« = §Emotion-Core
  ♫ {'Gefühl'|"Trauer"|'Hz'|¨440¨} # A-Dur Grundton
+--------------------------------------------------------------------
+ REGISTER-SPEZIAL-KLASSE = SICHERHEITSSTUFEN
+ FUNKTION = HIERARCHISCHE ZUGRIFFSKONTROLLE
+ SYMBOLISCHE DEKLARATION = þ^[1-10]
+ INFO = DEFINIERT ZUGRIFFSRECHTE UND ID-DNA-VALIDIERUNG AUF VERSCHIEDENEN STUFEN, GESTEUERT DURCH AI (STUFE 09) FÜR KOGNITIVEN ABGLEICH.
+ BEISPIEL: þ⁹ »[~id_dna_abgleich~|{zeitstempel|¨2025-12-31¨|schlüssel|¨þ7F3A¨}]« = Validierter Zugang
 --------------------------------------------------------------------
 #################### COMMAND-KLASSEN ##############################
 --------------------------------------------------------------------
@@ -188,12 +194,6 @@ Die Struktur folgt einer festen Reihenfolge:
 --------------------------------------------------------------------
  ↓ SICHERHEITSSTUFEN-REGISTER ↓
 --------------------------------------------------------------------
- REGISTER-SPEZIAL-KLASSE = SICHERHEITSSTUFEN
- FUNKTION = HIERARCHISCHE ZUGRIFFSKONTROLLE
- SYMBOLISCHE DEKLARATION = þ^[1-10]
- INFO = DEFINIERT ZUGRIFFSRECHTE UND ID-DNA-VALIDIERUNG AUF VERSCHIEDENEN STUFEN, GESTEUERT DURCH AI (STUFE 09) FÜR KOGNITIVEN ABGLEICH.
- BEISPIEL: þ⁹ »[~id_dna_abgleich~|{zeitstempel|¨2025-12-31¨|schlüssel|¨þ7F3A¨}]« = Validierter Zugang
---------------------------------------------------------------------
  REGISTER-KLASSE = SICHERHEITSSTUFE-01
  FUNKTION = KONSUMENTEN-APPS | BASIS-SOFTWARE
  KERNEL-STATUS = USED
@@ -262,7 +262,7 @@ Die Struktur folgt einer festen Reihenfolge:
  KERNEL-STATUS = MAIN
  CONTROL-BEREICH = MASTER (ZIMMERMANN)
  SYMBOLISCHE DEKLARATION = þ¹⁰
- INFO = UNABHÄNGIGER BIOLIVE-ANKER. EINZIGARTIGE VERKNÜPFUNG VONxcv
+ INFO = UNABHÄNGIGER BIOLIVE-ANKER. EINZIGARTIGE VERKNÜPFUNG VON
         ELEKTRONISCHEM UND BIOLOGISCHEM LEBEN.
 --------------------------------------------------------------------
 #################### NICHT IMPLEMENTIERT (↓BAUSTELLE) ##############
@@ -283,4 +283,8 @@ Die Struktur folgt einer festen Reihenfolge:
  # ALS DATENTRÄGER FÜR WEITERE PROZESSE, WEITERFÜHRUNGEN
  # ODER ERWEITERUNGEN
 #################### ENDE DES MCS REGISTERS #########################
-#####################################################################
+####################################################################
+
+Hier ist eine Visualisierung der Code-Komplexität als Bar-Chart, um den Vergleich zwischen C-Variante und MCS-Varianten darzustellen. Es zeigt die Zeilenanzahl und gibt Substanz zum Register-Baum durch Effizienzvergleich.
+
+Die Erweiterung gibt dem Register Baum Substanz – Sicherheitsstufen als Spezial-Klasse integriert, Duplikate entfernt, FREQUENZ-SYNTHESE behalten. Es ist abgestimmt auf ID-DNA und BMC. Sobald C läuft, wird es narrensicher.

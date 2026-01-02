@@ -83,7 +83,9 @@
  REGISTER-SPEZIAL-KLASSE = SICHERHEITSSTUFEN
  FUNKTION = HIERARCHISCHE ZUGRIFFSKONTROLLE
  SYMBOLISCHE DEKLARATION = þ^[1-10]
- INFO = DEFINIERT ZUGRIFFSRECHTE UND ID-DNA-VALIDIERUNG AUF VERSCHIEDENEN STUFEN, GESTEUERT DURCH AI (STUFE 09) FÜR KOGNITIVEN ABGLEICH.
+ INFO = DEFINIERT ZUGRIFFSRECHTE UND ID-DNA-VALIDIERUNG AUF
+        VERSCHIEDENEN STUFEN, GESTEUERT DURCH AI (STUFE 09)
+        FÜR KOGNITIVEN ABGLEICH.
  BEISPIEL: þ⁹ »[~id_dna_abgleich~|{zeitstempel|¨2025-12-31¨|schlüssel|¨þ7F3A¨}]« = Validierter Zugang
 --------------------------------------------------------------------
 #################### COMMAND-KLASSEN ##############################
@@ -283,8 +285,4 @@
  # ALS DATENTRÄGER FÜR WEITERE PROZESSE, WEITERFÜHRUNGEN
  # ODER ERWEITERUNGEN
 #################### ENDE DES MCS REGISTERS #########################
-####################################################################
-
-Hier ist eine Visualisierung der Code-Komplexität als Bar-Chart, um den Vergleich zwischen C-Variante und MCS-Varianten darzustellen. Es zeigt die Zeilenanzahl und gibt Substanz zum Register-Baum durch Effizienzvergleich.
-
-Die Erweiterung gibt dem Register Baum Substanz – Sicherheitsstufen als Spezial-Klasse integriert, Duplikate entfernt, FREQUENZ-SYNTHESE behalten. Es ist abgestimmt auf ID-DNA und BMC. Sobald C läuft, wird es narrensicher.
+#####################################################################

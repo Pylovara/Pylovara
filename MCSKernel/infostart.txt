@@ -25,13 +25,13 @@ cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscode
 cat /Pylovara/MCSKernel/Lab/test_wahrheiten.c
 
 # Logic/
-cat /Pylovara/MCSKernel/Logic/mcs_lexer.c /Pylovara/MCSKernel/Logic/mcs_sentiator.c /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c
+cat /Pylovara/MCSKernel/Logic/mcs_lexer.c /Pylovara/MCSKernel/Logic/mcs_sentiator.c /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c /Pylovara/MCSKernel/Logic/mcs_register.c
 
 # Lib/
-cat /Pylovara/MCSKernel/Lib/mcs-cmd-register.c
+cat /Pylovara/MCSKernel/Lib/mcs-cmd-register.c /Pylovara/MCSKernel/Lib/mcs-ausfuehrung.c
 
 # include/
-cat /Pylovara/MCSKernel/include/mcs_cmd_register.h /Pylovara/MCSKernel/include/mcs_lexer.h /Pylovara/MCSKernel/include/mcs_sentiator.h /Pylovara/MCSKernel/include/mcs_wahrheiten.h
+cat /Pylovara/MCSKernel/include/mcs_cmd_register.h /Pylovara/MCSKernel/include/mcs_lexer.h /Pylovara/MCSKernel/include/mcs_sentiator.h /Pylovara/MCSKernel/include/mcs_wahrheiten.h /Pylovara/MCSKernel/include/mcs_register.h /Pylovara/MCSKernel/include/mcs_kernel_core.h /Pylovara/MCSKernel/include/mcs_cmd_register.h
 
 
 # Core/ (Root-Ebene)

@@ -1,23 +1,22 @@
-// mcs_register.h
 #ifndef MCS_REGISTER_H
 #define MCS_REGISTER_H
 
 #include <stdint.h>
 
-// Hardware-nahe Makros (Präfix ALU laut Regel 2.1)
-static inline void ALU_REINIGEN() {
-    // Hier wird der Sentiator-Befehl 'ſ' physisch umgesetzt
-    // Löscht die Register der virtuellen MCS-Maschine
-    __asm__ volatile ("" : : : "memory");
-}
+#define MAX_REGISTERS 256
 
-// Die Wahrheiten-Struktur für das Register
 typedef struct {
-    uint8_t stufe;    // þ1 bis þ10
-    char dna_key[16]; // þ7F3A...
-} MCS_IDENTITAET;
+    int besetzt;
+    char wert[1024];
+    long numerisch;
+} MCSRegister;
 
-// Funktion zum Mappen der Feeds (1) auf Hardware
-void mcs_register_eintrag_erstellen(int feed_id, const char* wert);
+extern MCSRegister reg_bank[MAX_REGISTERS];
+
+// --- PROTOTYPEN FÜR DAS GEDÄCHTNIS ---
+void mcs_register_init(void);
+void mcs_register_setze(int id, const char* wert);
+char* mcs_register_hole(int id);
+long mcs_register_hole_num(int id);
 
 #endif

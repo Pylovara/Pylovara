@@ -184,6 +184,30 @@ mcs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/build
 .PHONY : mcs/fast
 
+Lib/mcs-ausfuehrung.o: Lib/mcs-ausfuehrung.c.o
+.PHONY : Lib/mcs-ausfuehrung.o
+
+# target to build an object file
+Lib/mcs-ausfuehrung.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o
+.PHONY : Lib/mcs-ausfuehrung.c.o
+
+Lib/mcs-ausfuehrung.i: Lib/mcs-ausfuehrung.c.i
+.PHONY : Lib/mcs-ausfuehrung.i
+
+# target to preprocess a source file
+Lib/mcs-ausfuehrung.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.i
+.PHONY : Lib/mcs-ausfuehrung.c.i
+
+Lib/mcs-ausfuehrung.s: Lib/mcs-ausfuehrung.c.s
+.PHONY : Lib/mcs-ausfuehrung.s
+
+# target to generate assembly for a file
+Lib/mcs-ausfuehrung.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.s
+.PHONY : Lib/mcs-ausfuehrung.c.s
+
 Lib/mcs-cmd-register.o: Lib/mcs-cmd-register.c.o
 .PHONY : Lib/mcs-cmd-register.o
 
@@ -208,6 +232,30 @@ Lib/mcs-cmd-register.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.s
 .PHONY : Lib/mcs-cmd-register.c.s
 
+Logic/mcs_alu_rechner.o: Logic/mcs_alu_rechner.c.o
+.PHONY : Logic/mcs_alu_rechner.o
+
+# target to build an object file
+Logic/mcs_alu_rechner.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o
+.PHONY : Logic/mcs_alu_rechner.c.o
+
+Logic/mcs_alu_rechner.i: Logic/mcs_alu_rechner.c.i
+.PHONY : Logic/mcs_alu_rechner.i
+
+# target to preprocess a source file
+Logic/mcs_alu_rechner.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.i
+.PHONY : Logic/mcs_alu_rechner.c.i
+
+Logic/mcs_alu_rechner.s: Logic/mcs_alu_rechner.c.s
+.PHONY : Logic/mcs_alu_rechner.s
+
+# target to generate assembly for a file
+Logic/mcs_alu_rechner.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.s
+.PHONY : Logic/mcs_alu_rechner.c.s
+
 Logic/mcs_lexer.o: Logic/mcs_lexer.c.o
 .PHONY : Logic/mcs_lexer.o
 
@@ -231,6 +279,30 @@ Logic/mcs_lexer.s: Logic/mcs_lexer.c.s
 Logic/mcs_lexer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_lexer.c.s
 .PHONY : Logic/mcs_lexer.c.s
+
+Logic/mcs_register.o: Logic/mcs_register.c.o
+.PHONY : Logic/mcs_register.o
+
+# target to build an object file
+Logic/mcs_register.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_register.c.o
+.PHONY : Logic/mcs_register.c.o
+
+Logic/mcs_register.i: Logic/mcs_register.c.i
+.PHONY : Logic/mcs_register.i
+
+# target to preprocess a source file
+Logic/mcs_register.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_register.c.i
+.PHONY : Logic/mcs_register.c.i
+
+Logic/mcs_register.s: Logic/mcs_register.c.s
+.PHONY : Logic/mcs_register.s
+
+# target to generate assembly for a file
+Logic/mcs_register.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_register.c.s
+.PHONY : Logic/mcs_register.c.s
 
 Logic/mcs_sentiator.o: Logic/mcs_sentiator.c.o
 .PHONY : Logic/mcs_sentiator.o
@@ -318,12 +390,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... mcs"
+	@echo "... Lib/mcs-ausfuehrung.o"
+	@echo "... Lib/mcs-ausfuehrung.i"
+	@echo "... Lib/mcs-ausfuehrung.s"
 	@echo "... Lib/mcs-cmd-register.o"
 	@echo "... Lib/mcs-cmd-register.i"
 	@echo "... Lib/mcs-cmd-register.s"
+	@echo "... Logic/mcs_alu_rechner.o"
+	@echo "... Logic/mcs_alu_rechner.i"
+	@echo "... Logic/mcs_alu_rechner.s"
 	@echo "... Logic/mcs_lexer.o"
 	@echo "... Logic/mcs_lexer.i"
 	@echo "... Logic/mcs_lexer.s"
+	@echo "... Logic/mcs_register.o"
+	@echo "... Logic/mcs_register.i"
+	@echo "... Logic/mcs_register.s"
 	@echo "... Logic/mcs_sentiator.o"
 	@echo "... Logic/mcs_sentiator.i"
 	@echo "... Logic/mcs_sentiator.s"

@@ -2,6 +2,11 @@
 
 #skelett build test:
 
+# 1. Test: Einfache Berechnungen (Mathe-Check)
+./mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs
+
+# 2. Test: Der GZIP-Rahmen (Speicher-Check)
+./mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs
 
 #test.mcs :
 cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs

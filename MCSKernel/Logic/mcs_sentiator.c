@@ -1,13 +1,15 @@
 #include "mcs_sentiator.h"
+#include "mcs_register.h"
+#include "mcs_wahrheiten.h"
+#include <stdio.h>
 
-int mcs_sentiator_kann(int condition) {
-    return condition; // ¶
-}
+// Prüft die Reinheit basierend auf dem letzten ALU-Takt
+int mcs_sentiator_entscheide(int typ) {
+    int wahrheit = mcs_check_bedingung_aus_alu();
 
-int mcs_sentiator_nicht(int condition) {
-    return !condition; // ¶¶
-}
-
-int mcs_sentiator_negation(int value) {
-    return -value; // °
+    if (typ == 1) { // ¶ (Kann/If)
+        return wahrheit;
+    } else {        // ¶¶ (Nicht/Else)
+        return !wahrheit;
+    }
 }

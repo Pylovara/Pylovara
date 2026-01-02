@@ -1,6 +1,6 @@
 @kernel-nr: 99 | MCS-CMD-REGISTER | Status = DESIGNE BAUSTELLE
 ################## KERN ############### OPTIONEN ###################
-# # ## SPEZIAL ######## MASTERCONTROL ##############################
+# # ## SPEZIAL ######## MASTERCONTROL ############# PYLOVARA #######
 ### ###### ############ ###### ###### ##############################
  REGISTER-TYP = MCS-CMD-REGISTER
  STATUS = DESIGN-BAUSTELLE
@@ -86,10 +86,11 @@
  INFO = DEFINIERT ZUGRIFFSRECHTE UND ID-DNA-VALIDIERUNG AUF
         VERSCHIEDENEN STUFEN, GESTEUERT DURCH AI (STUFE 09)
         FÜR KOGNITIVEN ABGLEICH.
- BEISPIEL: þ⁹ »[~id_dna_abgleich~|{zeitstempel|¨2025-12-31¨|schlüssel|¨þ7F3A¨}]« = Validierter Zugang
+ BEISPIEL:
+ þ⁹ »[~id_dna_abgleich~|{zeitstempel|¨2025-12-31¨|schlüssel|¨þ7F3A¨}]« = Validierter Zugang
 --------------------------------------------------------------------
 #################### COMMAND-KLASSEN ##############################
---------------------------------------------------------------------
+---------------------------------------------------------
  REGISTER-COMMAND-KLASSE = CMD-LÖSCHUNG
  FUNKTION = LÖSCHOPERATIONEN
  SYMBOLE = ~löschung~
@@ -283,6 +284,6 @@
  ## ZUKÜNFTIGE ERWEITERUNGEN:
  # BEFEHLE DIE PROTEINE AUFBAUEN KÖNNEN PLUS BOXIS
  # ALS DATENTRÄGER FÜR WEITERE PROZESSE, WEITERFÜHRUNGEN
- # ODER ERWEITERUNGEN
+ # ODER ERWEITERUNGEN DIENEN
+--------------------------------------------------------------------
 #################### ENDE DES MCS REGISTERS #########################
-#####################################################################

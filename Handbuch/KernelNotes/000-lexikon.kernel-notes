@@ -1,5 +1,5 @@
 ####################################################################
-@kernel-nr: lex | System Handbuch | kernel lex | 00 FallBack | ######
+@kernel-nr: lex | System Handbuch | kernel lex | 00 FallBack | #####
 ####################################################################
 #   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
 ####################################################################
@@ -7,7 +7,7 @@
 ####################################################################
 #            - MCS - MASCHINENCODESPEECH - Kernel -                #
 #      01 X Datentypen                14 0 þ Identifikation
-#      02 0 Transaktion               15 X SchaltVerknüpfungen
+#      02 0 Transaktion               15 0 SchaltVerknüpfungen
 #      03 0 Protein                   16 X AI Synctimer
 #      04 0 Proton                    17 X Discovery Layer
 #      05 0 Trennbefehl
@@ -17,17 +17,17 @@
 #      09 0 SENTIATOR
 #      10 0 Argumente
 #      11 0 Feed                      77 0 Ausführungslogik
-#      12 0 Adressierung              88 - Dateitypen
-#      13 0 Warp                      99 - MCS-CMD-REGISTER
+#      12 0 Adressierung              88 0 Dateitypen
+#      13 0 Warp                      99 0 MCS-CMD-REGISTER
 ####################################################################
 #               - MCSPLUS ProgrammierSprache -                     #
-#     101 - Einführung               102 - Grundeinheit            #
-#     103 - Tagging & Rollenbindung  104 - StrukturPlan            #
+#     101 + Einführung               102 + Grundeinheit            #
+#     103 + Tagging & Rollenbindung  104 + StrukturPlan            #
 ####################################################################
 #   - HARDWARE Komponenten und Visionen BrainMaschineCore BMC -    #
-#     800 - CHiPBezeichnungen       803 - MIT-Taktgeber            #
+#     800 + CHiPBezeichnungen       803 - MIT-Taktgeber            #
 #     801 - EnergieMatrix           804 - MBMatrix                 #
-#     802 - Lichtleiterbahnen       805 - Projektive Rechenlogik   #
+#     802 - Lichtleiterbahnen       805 + Projektive Rechenlogik   #
 ####################################################################
 #                 - LICENSES GELTUNGSBEREICH -                     #
 #  900 L0_VorWort                      993 L1_CoreKernelMandat     #
@@ -37,8 +37,8 @@
 ####################################################################
 #    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
 #         Tastaturstandart: UTF -8 Deutscher Standart              #
-#   Single Source of Truth (SSoT) Lexikon Version 00.55            #
-#  MCS 4.5 | MCSPLUS 0.3 | BMC Version 0.4 | License Version 1.0   #
+#   Single Source of Truth (SSoT) Lexikon Version 00.56            #
+#  MCS 4.6 | MCSPLUS 0.3 | BMC Version 0.4 | License Version 1.0   #
 #    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
 # Garantierte Berufserfahrung:                                     #
 #          | Systemarchitekt | Pylovara-System | MCS | BMC         #

@@ -1,30 +1,32 @@
 #ifndef MCS_LEXER_H
 #define MCS_LEXER_H
 
+#include <stdio.h>
+
 typedef enum {
-    TOKEN_TRANS_START, // ¢|
-    TOKEN_TRANS_END,   // |¢
+    TOKEN_TRANS_START,      // ¢|
+    TOKEN_TRANS_END,        // |¢
     TOKEN_WAHRHEIT_TRIGGER, // –
-    TOKEN_OPTION_A, // ·
-    TOKEN_OPTION_B, // ··
-    TOKEN_OPTION_C, // ···
-    TOKEN_OPTION_D, // ····
-    TOKEN_OPTION_E, // ·····
-    TOKEN_PROGRESS, // :
-    TOKEN_PARALLEL_PROCESS, // <
-    TOKEN_PARALLEL_TRANSPORT, // >
-    TOKEN_CMD_SPECIAL, // ~cmd~
-    TOKEN_BOXI, // [×...×]
-    TOKEN_FEED, // (1)"value"
-    TOKEN_STRING, // "text"
+    TOKEN_OPTION,           // ·
+    TOKEN_AKTION_START,     // »
+    TOKEN_AKTION_ENDE,      // «
+    TOKEN_BOXI_ALU_START,   // [×
+    TOKEN_BOXI_ALU_ENDE,    // ×]
+    TOKEN_SENTIATOR_KANN,   // ¶
+    TOKEN_SENTIATOR_NICHT,  // ¶¶
+    TOKEN_SENTIATOR_REIN,   // ſ
+    TOKEN_FEED,             // (1)
+    TOKEN_STRING,           // ' ' oder " "
+    TOKEN_KOMMENTAR,        // #
     TOKEN_EOF
-} TokenType;
+} TokenTyp;
 
 typedef struct {
-    TokenType type;
-    char *value;
+    TokenTyp typ;
+    char *wert;
 } Token;
 
-Token *mcs_lexer(const char *code);
+// Prototyp der Hauptfunktion
+Token* mcs_lexer_erzeuge(const char *quellcode);
 
 #endif

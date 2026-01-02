@@ -31,5 +31,16 @@
  SEITEN ANGESCHAUT HABEN .
 
 
+  EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR)GENERELL :
+   »[PROTEIN-START]« # Linker Rand
+       –·: ############### 50% »[OPTION-A-ACTION]« # Mit Progress
+           -= [(NR)"WERT"]
+       –··: ######################## 80% »[OPTION-B-ACTION]«
+       –< »[PARALLEL-PROZESS]«
+           –·: ############################### 100% »[PARALLEL-A]«
+   »[NEUES-PROTEIN]«
+
+--------------------------------------------------------------------
+
 ################# Ende der schaltVerknüpfung  ######################
 

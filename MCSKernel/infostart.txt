@@ -1,7 +1,7 @@
 # Entwickler Zettel Für Test/s /Pylovara/MCSKernel/infostart.txt
 
 #skelett build test:
-cd /Pylovara/MCSKernel/build && make clean && make && ./test_if
+
 
 #test.mcs :
 cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs
@@ -12,9 +12,11 @@ cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat
 #simpel
 cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs
 
+#mcs_berechnungen
+cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs
 
 #mcscodes/
-cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs
+cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs
 
 ------------------------------------------------------------------------------------------------------------------------------
 # Saubere Ausgabe um fehlerquellen zu finden

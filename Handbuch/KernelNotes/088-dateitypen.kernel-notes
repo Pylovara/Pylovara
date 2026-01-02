@@ -1,4 +1,4 @@
-@kernel-nr: 88
+@kernel-nr: 88 | DATEITYPEN | STATUS: SYSTEMRELEVANT
 ####################################################################
 
 ## Erklärungszusätze :
@@ -24,7 +24,7 @@ Durch den ⊕ Sync-timer wird das zu einem einhängbaren und
 aushängbaren Puzzelstück .
 Dabei ist nur zu Verstehen vom kopf an fängt der datensatz an
 und folgt immer ab dem kopf den Datenstrang.
-
+---------------------------------------------------------------------
 ## VERERBUNGSPRINZIP :
 
 die Kettenbildungenmechanismen sind bei einem Veerbungsprinzip
@@ -33,28 +33,27 @@ Umschaltungsknoten IN SICH TRAGEN .
 
 0      *.*-kernel  Eigenständige Kernelschicht | unabhängig !
 
-1      *.*-core      GROSSVATERS    AUSWAHL         UMSCHALTKNOTEN/
-1-1    *.*-hcore      GROSSVATERS GESCHWISTER - HARDWARE
-1-2    *.*-vcore       GROSSVATERS GESCHWISTER - VISUELL
-1-3    *.*-acore        GROSSVATERS GESCHWISTER - AUDIO
-1-4    *.*-icore         GROSSVATERS GESCHWISTER - INPUT
+1      *.*-core     GROSSVATERS    AUSWAHL    UMSCHALTKNOTEN/
+1-1     *.*-hcore     GROSSVATERS GESCHWISTER - HARDWARE
+1-2      *.*-vcore     GROSSVATERS GESCHWISTER - VISUELL
+1-3       *.*-acore     GROSSVATERS GESCHWISTER - AUDIO
+1-4        *.*-icore     GROSSVATERS GESCHWISTER - INPUT
 -
-2      *.*-magic   Großmutter      – Umchalter,Konfigbrücke
-2-1    *.*-node    Vater           – Hauptcontroller
-2-1-1  *.*-nano    Mutter          – Substrukturmanager default
-2-1-2  *.*-micro   Tochter         – Mikrosteuerung
+2      *.*-magic   Großmutter   – Umchalter,Konfigbrücke
+2-1     *.*-node    Vater       – Hauptcontroller
+2-1-1    *.*-nano    Mutter     – Substrukturmanager default
+2-1-2     *.*-micro   Tochter   – Mikrosteuerung
 -
-3-1    *.*-node    Vater           – Hauptcontroller
-3-2    *.*-nano    Mutter          – Substrukturmanager wechselbar
-3-3    *.*-micro   Tochter         – Mikrosteuerung
-3-4    *.*-cache   Cache           – Temp-Daten
-3-5    *.*-needles Hardwarebindung - Anzapfen/Treiber/Übersetzen
+3-1    *.*-node      Vater         – Hauptcontroller
+3-2     *.*-nano      Mutter        – Substrukturmanager wechselbar
+3-3      *.*-micro     Tochter       – Mikrosteuerung
+3-4       *.*-cache      Cache        – Temp-Daten
+3-5        *.*-needles Hardwarebindung - Anzapfen/Treiber/Übersetzen
 
 4      *.*-notes
-4-1    *.*-redflag
+4-1     *.*-redflag
 4-2
 --------------------------------------------------------------------
-
 ## Datentyp Rollen Version 1.4
 
 Pylovara organisiert sich in einem klaren Familienmodell:
@@ -119,7 +118,4 @@ somit die Datenstränge in den *.*-core Prozess anpassen kann .
 
 --------------------------------------------------------------------
 
-
-
 ##################### Ende der Datentypen  #########################
-####################################################################

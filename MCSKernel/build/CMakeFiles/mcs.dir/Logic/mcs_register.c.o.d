@@ -1,6 +1,8 @@
 CMakeFiles/mcs.dir/Logic/mcs_register.c.o: \
  /Pylovara/MCSKernel/Logic/mcs_register.c /usr/include/stdc-predef.h \
  /Pylovara/MCSKernel/include/mcs_register.h \
+ /Pylovara/MCSKernel/Logic/mcs_alu_prozessor.h \
+ /Pylovara/MCSKernel/include/mcs_kernel_core.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -10,9 +12,7 @@ CMakeFiles/mcs.dir/Logic/mcs_register.c.o: \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h \
- /Pylovara/MCSKernel/Logic/mcs_alu_prozessor.h \
- /Pylovara/MCSKernel/include/mcs_kernel_core.h /usr/include/stdio.h \
+ /usr/include/bits/stdint-least.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \

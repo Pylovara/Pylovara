@@ -53,7 +53,7 @@ cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscode
 cat /Pylovara/MCSKernel/Lab/test_wahrheiten.c
 
 # Logic/
-cat /Pylovara/MCSKernel/Logic/mcs_lexer.c /Pylovara/MCSKernel/Logic/mcs_sentiator.c /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c /Pylovara/MCSKernel/Logic/mcs_register.c /Pylovara/MCSKernel/Logic/mcs_alu_rechner.c /Pylovara/MCSKernel/Logic/mcs_kernel_core.c
+cat /Pylovara/MCSKernel/Logic/mcs_lexer.c /Pylovara/MCSKernel/Logic/mcs_sentiator.c /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c /Pylovara/MCSKernel/Logic/mcs_register.c /Pylovara/MCSKernel/Logic/mcs_alu_rechner.c /Pylovara/MCSKernel/Logic/mcs_kernel_core.c /Pylovara/MCSKernel/Logic/mcs_alu_prozessor.h
 
 # Lib/
 cat /Pylovara/MCSKernel/Lib/mcs-cmd-register.c /Pylovara/MCSKernel/Lib/mcs-ausfuehrung.c

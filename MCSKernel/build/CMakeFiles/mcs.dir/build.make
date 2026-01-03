@@ -100,10 +100,24 @@ CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/MCSKernel/Logic/mcs_alu_rechner.c -o CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.s
 
+CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o: CMakeFiles/mcs.dir/flags.make
+CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o: /Pylovara/MCSKernel/Logic/mcs_kernel_core.c
+CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o: CMakeFiles/mcs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o -MF CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o.d -o CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o -c /Pylovara/MCSKernel/Logic/mcs_kernel_core.c
+
+CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Pylovara/MCSKernel/Logic/mcs_kernel_core.c > CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.i
+
+CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Pylovara/MCSKernel/Logic/mcs_kernel_core.c -o CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.s
+
 CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o: CMakeFiles/mcs.dir/flags.make
 CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o: /Pylovara/MCSKernel/Logic/mcs_lexer.c
 CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o: CMakeFiles/mcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o -MF CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o.d -o CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o -c /Pylovara/MCSKernel/Logic/mcs_lexer.c
 
 CMakeFiles/mcs.dir/Logic/mcs_lexer.c.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/mcs.dir/Logic/mcs_lexer.c.s: cmake_force
 CMakeFiles/mcs.dir/Logic/mcs_register.c.o: CMakeFiles/mcs.dir/flags.make
 CMakeFiles/mcs.dir/Logic/mcs_register.c.o: /Pylovara/MCSKernel/Logic/mcs_register.c
 CMakeFiles/mcs.dir/Logic/mcs_register.c.o: CMakeFiles/mcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mcs.dir/Logic/mcs_register.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mcs.dir/Logic/mcs_register.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs.dir/Logic/mcs_register.c.o -MF CMakeFiles/mcs.dir/Logic/mcs_register.c.o.d -o CMakeFiles/mcs.dir/Logic/mcs_register.c.o -c /Pylovara/MCSKernel/Logic/mcs_register.c
 
 CMakeFiles/mcs.dir/Logic/mcs_register.c.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/mcs.dir/Logic/mcs_register.c.s: cmake_force
 CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o: CMakeFiles/mcs.dir/flags.make
 CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o: /Pylovara/MCSKernel/Logic/mcs_sentiator.c
 CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o: CMakeFiles/mcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o -MF CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o.d -o CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o -c /Pylovara/MCSKernel/Logic/mcs_sentiator.c
 
 CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.s: cmake_force
 CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o: CMakeFiles/mcs.dir/flags.make
 CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o: /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c
 CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o: CMakeFiles/mcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o -MF CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o.d -o CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.o -c /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c
 
 CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/mcs.dir/Logic/mcs_wahrheiten.c.s: cmake_force
 CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o: CMakeFiles/mcs.dir/flags.make
 CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o: /Pylovara/MCSKernel/Lib/mcs-ausfuehrung.c
 CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o: CMakeFiles/mcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o -MF CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o.d -o CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o -c /Pylovara/MCSKernel/Lib/mcs-ausfuehrung.c
 
 CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.s: cmake_force
 CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o: CMakeFiles/mcs.dir/flags.make
 CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o: /Pylovara/MCSKernel/Lib/mcs-cmd-register.c
 CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o: CMakeFiles/mcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o -MF CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o.d -o CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o -c /Pylovara/MCSKernel/Lib/mcs-cmd-register.c
 
 CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.i: cmake_force
@@ -188,6 +202,7 @@ CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.s: cmake_force
 mcs_OBJECTS = \
 "CMakeFiles/mcs.dir/main.c.o" \
 "CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o" \
+"CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o" \
 "CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o" \
 "CMakeFiles/mcs.dir/Logic/mcs_register.c.o" \
 "CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o" \
@@ -200,6 +215,7 @@ mcs_EXTERNAL_OBJECTS =
 
 mcs: CMakeFiles/mcs.dir/main.c.o
 mcs: CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o
+mcs: CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o
 mcs: CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o
 mcs: CMakeFiles/mcs.dir/Logic/mcs_register.c.o
 mcs: CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o
@@ -209,7 +225,7 @@ mcs: CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o
 mcs: CMakeFiles/mcs.dir/build.make
 mcs: CMakeFiles/mcs.dir/compiler_depend.ts
 mcs: CMakeFiles/mcs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable mcs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Pylovara/MCSKernel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable mcs"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mcs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

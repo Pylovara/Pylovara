@@ -4,11 +4,13 @@
 
 void mcs_prozess_validieren(Token *t) {
     // Ebene 1: Sentiator ſ prüft Reinheit
-    printf("ſ [REINHEITS_CHECK]: Validiere Transaktionsrahmen...\n");
+    if (t->typ == TOKEN_REINHEIT) {
+        printf("ſ [REINHEITS_CHECK]: Validiere Transaktionsrahmen...\n");
+    }
 
-    // Ebene 2: Wahrheit – entscheidet über den Fluss
-    if (t->typ == TOKEN_WAHRHEIT_TRIGGER) {
-        printf("– [GATTER_SCHALTUNG]: Wahrheit erkannt. Schalte Pfad frei.\n");
+    // Ebene 2: Fortschritt – (ehemals Wahrheit_Trigger) entscheidet über den Fluss
+    if (t->typ == TOKEN_FORTSCHRITT) {
+        printf("– [GATTER_SCHALTUNG]: Fortschritt erkannt. Schalte Pfad frei.\n");
     }
 }
 

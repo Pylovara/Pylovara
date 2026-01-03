@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Pylovara/MCSKernel/Lib/mcs-ausfuehrung.c" "CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o" "gcc" "CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o.d"
   "/Pylovara/MCSKernel/Lib/mcs-cmd-register.c" "CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o" "gcc" "CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o.d"
   "/Pylovara/MCSKernel/Logic/mcs_alu_rechner.c" "CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o" "gcc" "CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o.d"
+  "/Pylovara/MCSKernel/Logic/mcs_kernel_core.c" "CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o" "gcc" "CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o.d"
   "/Pylovara/MCSKernel/Logic/mcs_lexer.c" "CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o" "gcc" "CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o.d"
   "/Pylovara/MCSKernel/Logic/mcs_register.c" "CMakeFiles/mcs.dir/Logic/mcs_register.c.o" "gcc" "CMakeFiles/mcs.dir/Logic/mcs_register.c.o.d"
   "/Pylovara/MCSKernel/Logic/mcs_sentiator.c" "CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o" "gcc" "CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o.d"

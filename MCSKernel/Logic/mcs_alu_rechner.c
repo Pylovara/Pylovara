@@ -5,44 +5,55 @@
 #include <string.h>
 #include <ctype.h>
 
-long mcs_alu_berechne(const char* ausdruck) {
-    long ergebnis = 0;
-    char op = '+';
-    const char* p = ausdruck;
+long mcs_alu_berechne(const char *ausdruck) {
+    // 1. Spezialfall: Wahrheits-Keywords
+    if (strcmp(ausdruck, "true") == 0 || strcmp(ausdruck, "valid") == 0) return 1;
+    if (strcmp(ausdruck, "false") == 0 || strcmp(ausdruck, "error") == 0) return 0;
 
-    while (*p) {
-        // Ignoriere Whitespace und Boxi-Klammern
-        if (isspace(*p) || *p == '[' || *p == ']') { p++; continue; }
-
-        // UTF-8 Handling für '×' (Multi-Byte)
-        if ((unsigned char)*p == 0xC3 && (unsigned char)*(p+1) == 0x97) { p += 2; continue; }
-
-        long wert = 0;
-        if (*p == '(') { // Register (1)
-            int id = atoi(p + 1);
-            wert = mcs_register_hole_num(id);
-            while (*p && *p != ')') p++;
-            if (*p) p++;
-        } else if (isdigit(*p)) {
-            wert = strtol(p, (char**)&p, 10);
-        }
-
-        if (op == '+') ergebnis += wert;
-        else if (op == '-') ergebnis -= wert;
-        else if (op == '*') ergebnis *= wert;
-        else if (op == '/') if (wert != 0) ergebnis /= wert;
-
-        while (*p && isspace(*p)) p++;
-
-        // MCS-Syntax Mapper: '·' zu '*'
-        // Wenn ein Register (n) im Ausdruck vorkommt
-        if (*p == '(') {
-            char *endptr;
-            int reg_id = (int)strtol(p + 1, &endptr, 10);
-            wert = mcs_register_hole_num(reg_id); // Wert aus Register laden
-            p = endptr;
-            if (*p == ')') p++;
+    // 2. String-Logik (für Validierung)
+    if (strstr(ausdruck, " ! ")) {
+        char links[64], rechts[64];
+        if (sscanf(ausdruck, "%s ! %s", links, rechts) == 2) {
+            const char* val_links = (links[0] == '(') ? mcs_register_hole(atoi(&links[1])) : links;
+            // Entferne Anführungszeichen falls vorhanden
+            if (rechts[0] == '"') {
+                rechts[strlen(rechts)-1] = '\0';
+                return (strcmp(val_links, &rechts[1]) != 0);
+            }
+            return (strcmp(val_links, rechts) != 0);
         }
     }
-    return ergebnis;
+
+    // 3. Standard Mathematik (vorhandene Logik)
+    char *ptr;
+    long a = 0, b = 0;
+
+    // Einfache Register-Ersetzung für (n)
+    if (ausdruck[0] == '(') {
+        a = atol(mcs_register_hole(atoi(&ausdruck[1])));
+    } else {
+        a = strtol(ausdruck, &ptr, 10);
+    }
+
+    if (strstr(ausdruck, " > ")) {
+        ptr = strstr(ausdruck, " > ") + 3;
+        if (ptr[0] == '(') b = atol(mcs_register_hole(atoi(&ptr[1])));
+        else b = atol(ptr);
+        return a > b;
+    }
+
+    if (strstr(ausdruck, " < ")) {
+        ptr = strstr(ausdruck, " < ") + 3;
+        if (ptr[0] == '(') b = atol(mcs_register_hole(atoi(&ptr[1])));
+        else b = atol(ptr);
+        return a < b;
+    }
+
+    // Unterstützung für Multiplikation/Division (dein 10*1024*1024)
+    if (strstr(ausdruck, "*")) {
+        ptr = strstr(ausdruck, "*") + 1;
+        return a * atol(ptr);
+    }
+
+    return a;
 }

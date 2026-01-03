@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mcs.dir/Lib/mcs-cmd-register.c.o.d"
   "CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o"
   "CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o.d"
+  "CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o"
+  "CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o.d"
   "CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o"
   "CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o.d"
   "CMakeFiles/mcs.dir/Logic/mcs_register.c.o"

@@ -20,8 +20,20 @@ cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat
 #mcs_berechnungen
 cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs
 
+#mcs_beschreibenundvalidieren.mcs
+cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_beschreibenundvalidieren.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_beschreibenundvalidieren.mcs
+
+#mcs_grundlage_daemons_watchdogs_cron.mcs
+cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_grundlage_daemons_watchdogs_cron.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_grundlage_daemons_watchdogs_cron.mcs
+
+#mcs_hostserver_erreichbar.mcs
+cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_hostserver_erreichbar.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_hostserver_erreichbar.mcs
+
+#mcs_sebstheilung_restart.mcs
+cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_sebstheilung_restart.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_sebstheilung_restart.mcs
+
 #mcscodes/
-cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs
+cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs /Pylovara/MCSKernel/mcscodes/mcs_beschreibenundvalidieren.mcs /Pylovara/MCSKernel/mcscodes/mcs_grundlage_daemons_watchdogs_cron.mcs /Pylovara/MCSKernel/mcscodes/mcs_hostserver_erreichbar.mcs /Pylovara/MCSKernel/mcscodes/mcs_sebstheilung_restart.mcs
 
 ------------------------------------------------------------------------------------------------------------------------------
 # Saubere Ausgabe um fehlerquellen zu finden
@@ -30,13 +42,13 @@ cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscode
 cat /Pylovara/MCSKernel/Lab/test_wahrheiten.c
 
 # Logic/
-cat /Pylovara/MCSKernel/Logic/mcs_lexer.c /Pylovara/MCSKernel/Logic/mcs_sentiator.c /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c /Pylovara/MCSKernel/Logic/mcs_register.c
+cat /Pylovara/MCSKernel/Logic/mcs_lexer.c /Pylovara/MCSKernel/Logic/mcs_sentiator.c /Pylovara/MCSKernel/Logic/mcs_wahrheiten.c /Pylovara/MCSKernel/Logic/mcs_register.c /Pylovara/MCSKernel/Logic/mcs_alu_rechner.c /Pylovara/MCSKernel/Logic/mcs_kernel_core.c
 
 # Lib/
 cat /Pylovara/MCSKernel/Lib/mcs-cmd-register.c /Pylovara/MCSKernel/Lib/mcs-ausfuehrung.c
 
 # include/
-cat /Pylovara/MCSKernel/include/mcs_cmd_register.h /Pylovara/MCSKernel/include/mcs_lexer.h /Pylovara/MCSKernel/include/mcs_sentiator.h /Pylovara/MCSKernel/include/mcs_wahrheiten.h /Pylovara/MCSKernel/include/mcs_register.h /Pylovara/MCSKernel/include/mcs_kernel_core.h /Pylovara/MCSKernel/include/mcs_cmd_register.h
+cat /Pylovara/MCSKernel/include/mcs_cmd_register.h /Pylovara/MCSKernel/include/mcs_lexer.h /Pylovara/MCSKernel/include/mcs_sentiator.h /Pylovara/MCSKernel/include/mcs_wahrheiten.h /Pylovara/MCSKernel/include/mcs_register.h /Pylovara/MCSKernel/include/mcs_kernel_core.h /Pylovara/MCSKernel/include/mcs_cmd_register.h /Pylovara/MCSKernel/include/mcs_alu_rechner.h
 
 
 # Core/ (Root-Ebene)

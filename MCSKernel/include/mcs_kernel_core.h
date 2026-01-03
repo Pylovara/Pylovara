@@ -18,8 +18,11 @@ typedef enum {
     CMD_PURGE
 } MCS_Befehl;
 
-// Regel 2.1: Hardware-nahe Makros (Lichtkegel-Befehle)
+// Regel 2.1: Hardware-nahe Makros
 #define ALU_TAKT_SYNC() do { __asm__ volatile ("pause" ::: "memory"); } while(0)
 #define ALU_REINIGEN()  do { __asm__ volatile ("xor %%rax, %%rax" ::: "rax"); } while(0)
+
+// NEU: @kernel-nr: 07 - Schnittstelle für den Takt
+void mcs_kernel_takt(const char *quellcode);
 
 #endif

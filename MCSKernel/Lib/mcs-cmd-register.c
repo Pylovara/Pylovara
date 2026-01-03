@@ -16,7 +16,3 @@ void mcs_sicherheitsstufe_check(int stufe) {
 void mcs_transaktion_start() {
     printf("¢| TRANS AKTION START\n");
 }
-
-void mcs_regel_der_reinheit() {
-    printf("ſ PURGE ENDE\n");
-}

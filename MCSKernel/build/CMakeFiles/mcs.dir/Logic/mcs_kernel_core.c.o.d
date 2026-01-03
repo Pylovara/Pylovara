@@ -1,5 +1,5 @@
-CMakeFiles/mcs.dir/main.c.o: /Pylovara/MCSKernel/main.c \
- /usr/include/stdc-predef.h /Pylovara/MCSKernel/include/mcs_lexer.h \
+CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o: \
+ /Pylovara/MCSKernel/Logic/mcs_kernel_core.c /usr/include/stdc-predef.h \
  /Pylovara/MCSKernel/include/mcs_kernel_core.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
@@ -10,9 +10,9 @@ CMakeFiles/mcs.dir/main.c.o: /Pylovara/MCSKernel/main.c \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h \
- /Pylovara/MCSKernel/include/mcs_wahrheiten.h \
- /Pylovara/MCSKernel/include/mcs_cmd_register.h /usr/include/stdio.h \
+ /usr/include/bits/stdint-least.h /Pylovara/MCSKernel/include/mcs_lexer.h \
+ /Pylovara/MCSKernel/include/mcs_alu_rechner.h \
+ /Pylovara/MCSKernel/include/mcs_register.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
@@ -35,4 +35,6 @@ CMakeFiles/mcs.dir/main.c.o: /Pylovara/MCSKernel/main.c \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h
+ /usr/include/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/strings.h /usr/include/ctype.h

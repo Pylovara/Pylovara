@@ -1,25 +1,29 @@
 #ifndef MCS_LEXER_H
 #define MCS_LEXER_H
 
-#include <stdio.h>
-
 typedef enum {
-    TOKEN_TRANS_START,
-    TOKEN_TRANS_END,
-    TOKEN_WAHRHEIT_TRIGGER,
-    TOKEN_OPTION,
-    TOKEN_AKTION_START,
-    TOKEN_AKTION_ENDE,
-    TOKEN_BOXI_ALU_START,
-    TOKEN_BOXI_ALU_ENDE,
-    TOKEN_BOXI_ALU_INHALT,
-    TOKEN_SENTIATOR_REIN,
-    TOKEN_SENTIATOR_KANN,
-    TOKEN_SENTIATOR_NICHT,
-    TOKEN_FEED,
-    TOKEN_STRING,
-    TOKEN_ARGUMENT_KOMPLEX,
-    TOKEN_EOF
+    TOKEN_TRANS_START,   // ¢!
+    TOKEN_TRANS_ENDE,    // !¢
+    TOKEN_BOXI_ALU,      // ×...×
+    TOKEN_BOXI_CALLIS,   // "..."
+    TOKEN_BOXI_SHELL,    // '...'
+    TOKEN_BOXI_MCS_CMD,  // ~...~
+    TOKEN_BOXI_CALL_CONTROL, // ,...,
+    TOKEN_AKTION_START,  // »
+    TOKEN_AKTION_ENDE,    // «
+    TOKEN_SENTI_TRUE,    // ¶
+    TOKEN_SENTI_FALSE,   // ¶¶
+    TOKEN_SENTI_VAKUUM,  // ŧ
+    TOKEN_SENTI_MATCH,   // !
+    TOKEN_SENTI_NEGATION, // °
+    TOKEN_SENTI_MEHRWERT, // >>
+    TOKEN_SENTI_MINDERWERT, // <<
+    TOKEN_REINHEIT,      // ſ
+    TOKEN_FORTSCHRITT,   // –
+    TOKEN_REG_ID,        // (n)
+    TOKEN_BOXI_START,    // [
+    TOKEN_BOXI_ENDE,      // ]
+    TOKEN_EOF            // Ende der Datei
 } TokenType;
 
 typedef struct {
@@ -27,8 +31,6 @@ typedef struct {
     char *wert;
 } Token;
 
-// --- DIESE PROTOTYPEN SIND ESSENZIELL FÜR MAIN.C ---
 Token* mcs_lexer_erzeuge(const char *quellcode);
-void mcs_kernel_takt(const char *quellcode);
 
 #endif

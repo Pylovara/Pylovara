@@ -4,6 +4,7 @@ mcs: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/mcs.dir/main.c.o \
   CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o \
+  CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o \
   CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o \
   CMakeFiles/mcs.dir/Logic/mcs_register.c.o \
   CMakeFiles/mcs.dir/Logic/mcs_sentiator.c.o \
@@ -41,6 +42,8 @@ mcs: \
 CMakeFiles/mcs.dir/main.c.o:
 
 CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.o:
+
+CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o:
 
 CMakeFiles/mcs.dir/Logic/mcs_lexer.c.o:
 

@@ -22,19 +22,17 @@ char* mcs_datei_laden(const char *dateiname) {
 int main(int argc, char **argv) {
     if (argc < 2) {
         printf("PYLOVARA MCS KERNEL v4.6 - STATUS: BEREIT\n");
-        printf("Nutzung: ./mcs <datei.mcs>\n");
         return 1;
     }
 
     char *quellcode = mcs_datei_laden(argv[1]);
     if (!quellcode) {
-        printf("❌ Fehler: Datei %s konnte nicht im Lichtkegel erfasst werden.\n", argv[1]);
+        printf("❌ Fehler beim Laden von %s\n", argv[1]);
         return 1;
     }
 
-    printf("--- MCS KERNEL TAKT START ---\n");
+    // Der Kernel regelt seinen Takt jetzt komplett selbst über mcs_kernel_takt
     mcs_kernel_takt(quellcode);
-    printf("--- MCS KERNEL TAKT ENDE ---\n");
 
     free(quellcode);
     return 0;

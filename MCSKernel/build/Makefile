@@ -256,6 +256,30 @@ Logic/mcs_alu_rechner.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_alu_rechner.c.s
 .PHONY : Logic/mcs_alu_rechner.c.s
 
+Logic/mcs_kernel_core.o: Logic/mcs_kernel_core.c.o
+.PHONY : Logic/mcs_kernel_core.o
+
+# target to build an object file
+Logic/mcs_kernel_core.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.o
+.PHONY : Logic/mcs_kernel_core.c.o
+
+Logic/mcs_kernel_core.i: Logic/mcs_kernel_core.c.i
+.PHONY : Logic/mcs_kernel_core.i
+
+# target to preprocess a source file
+Logic/mcs_kernel_core.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.i
+.PHONY : Logic/mcs_kernel_core.c.i
+
+Logic/mcs_kernel_core.s: Logic/mcs_kernel_core.c.s
+.PHONY : Logic/mcs_kernel_core.s
+
+# target to generate assembly for a file
+Logic/mcs_kernel_core.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcs.dir/build.make CMakeFiles/mcs.dir/Logic/mcs_kernel_core.c.s
+.PHONY : Logic/mcs_kernel_core.c.s
+
 Logic/mcs_lexer.o: Logic/mcs_lexer.c.o
 .PHONY : Logic/mcs_lexer.o
 
@@ -399,6 +423,9 @@ help:
 	@echo "... Logic/mcs_alu_rechner.o"
 	@echo "... Logic/mcs_alu_rechner.i"
 	@echo "... Logic/mcs_alu_rechner.s"
+	@echo "... Logic/mcs_kernel_core.o"
+	@echo "... Logic/mcs_kernel_core.i"
+	@echo "... Logic/mcs_kernel_core.s"
 	@echo "... Logic/mcs_lexer.o"
 	@echo "... Logic/mcs_lexer.i"
 	@echo "... Logic/mcs_lexer.s"

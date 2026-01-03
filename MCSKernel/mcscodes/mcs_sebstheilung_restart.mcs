@@ -1,0 +1,8 @@
+¢!
+»['pgrep sshd']«
+ –·: 100% -= »[(1)"pid"]«
+
+¶¶ »[(1)"pid"]«
+    –·: 100% »['systemctl restart ssh']«
+    –··: 100% »['echo "sshd neu gestartet"']«
+!¢

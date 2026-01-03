@@ -11,6 +11,7 @@ CMakeFiles/mcs.dir/Lib/mcs-ausfuehrung.c.o: \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /Pylovara/MCSKernel/include/mcs_lexer.h \
+ /Pylovara/MCSKernel/Lib/../Logic/mcs_alu_prozessor.h \
  /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \

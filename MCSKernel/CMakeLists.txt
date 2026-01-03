@@ -11,6 +11,8 @@ set(CMAKE_BUILD_TYPE Debug) # Für Tests
 
 # Include-Dirs
 include_directories(include)
+include_directories(Logic)
+include_directories(Lib)
 
 # Sources aus Logic/Lib
 file(GLOB LOGIC_SRCS Logic/*.c)

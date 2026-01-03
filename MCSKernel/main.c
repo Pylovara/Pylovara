@@ -1,9 +1,12 @@
 #include "mcs_lexer.h"
 #include "mcs_kernel_core.h"
 #include "mcs_wahrheiten.h"
-#include "mcs_cmd_register.h"
+#include "mcs_register.h"    // <--- DAS HIER MUSS REIN (statt oder zusätzlich zu mcs_cmd_register.h)
 #include <stdio.h>
 #include <stdlib.h>
+
+// Manuelle Deklaration, falls der Header zickt
+//extern const char* mcs_register_hole(int reg_nr);
 
 // Hilfsfunktion zum Laden der .mcs Datei in den Speicher
 char* mcs_datei_laden(const char *dateiname) {
@@ -31,8 +34,19 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    // Der Kernel regelt seinen Takt jetzt komplett selbst über mcs_kernel_takt
+    // Kernel-Ausführung
     mcs_kernel_takt(quellcode);
+
+    // --- PROTEIN-ÜBERSICHT (Sicherheits-Variante) ---
+    const char *r1 = mcs_register_hole(1);
+    const char *r2 = mcs_register_hole(2);
+    const char *r3 = mcs_register_hole(3);
+
+    printf("\n--- PROTEIN-STATUS NACH TAKT-ENDE ---\n");
+    printf(" FF(1): %s\n", r1 ? r1 : "(leer)");
+    printf(" FF(2): %s\n", r2 ? r2 : "(leer)");
+    printf(" FF(3): %s\n", r3 ? r3 : "(leer)");
+    printf("--------------------------------------\n");
 
     free(quellcode);
     return 0;

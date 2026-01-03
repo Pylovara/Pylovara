@@ -1,12 +1,16 @@
 # Entwickler Zettel Für Test/s /Pylovara/MCSKernel/infostart.txt
 
-#skelett build test:
-
 # 1. Test: Einfache Berechnungen (Mathe-Check)
-./mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs
+cd /Pylovara/MCSKernel/build && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs
 
 # 2. Test: Der GZIP-Rahmen (Speicher-Check)
-./mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs
+cd /Pylovara/MCSKernel/build && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs
+
+# 3. alufix1
+cd /Pylovara/MCSKernel/build && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_alufix1.mcs
+
+# 4. alufix2
+cd /Pylovara/MCSKernel/build && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_alufix2.mcs
 
 #test.mcs :
 cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs
@@ -32,8 +36,15 @@ cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat
 #mcs_sebstheilung_restart.mcs
 cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_sebstheilung_restart.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_sebstheilung_restart.mcs
 
+#mcs_alufix1.mcs
+cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_alufix1.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_alufix1.mcs
+
+#mcs_alufix2.mcs
+cd /Pylovara/MCSKernel/build && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/mcscodes/mcs_alufix2.mcs && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/mcscodes/mcs_alufix2.mcs
+
+
 #mcscodes/
-cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs /Pylovara/MCSKernel/mcscodes/mcs_beschreibenundvalidieren.mcs /Pylovara/MCSKernel/mcscodes/mcs_grundlage_daemons_watchdogs_cron.mcs /Pylovara/MCSKernel/mcscodes/mcs_hostserver_erreichbar.mcs /Pylovara/MCSKernel/mcscodes/mcs_sebstheilung_restart.mcs
+cat /Pylovara/MCSKernel/mcscodes/test_wahrheiten.mcs /Pylovara/MCSKernel/mcscodes/mcs_simpel.mcs /Pylovara/MCSKernel/mcscodes/mcs_gzip.mcs /Pylovara/MCSKernel/mcscodes/mcs_berechnungen.mcs /Pylovara/MCSKernel/mcscodes/mcs_beschreibenundvalidieren.mcs /Pylovara/MCSKernel/mcscodes/mcs_grundlage_daemons_watchdogs_cron.mcs /Pylovara/MCSKernel/mcscodes/mcs_hostserver_erreichbar.mcs /Pylovara/MCSKernel/mcscodes/mcs_sebstheilung_restart.mcs /Pylovara/MCSKernel/mcscodes/mcs_alufix1.mcs
 
 ------------------------------------------------------------------------------------------------------------------------------
 # Saubere Ausgabe um fehlerquellen zu finden
@@ -49,7 +60,6 @@ cat /Pylovara/MCSKernel/Lib/mcs-cmd-register.c /Pylovara/MCSKernel/Lib/mcs-ausfu
 
 # include/
 cat /Pylovara/MCSKernel/include/mcs_cmd_register.h /Pylovara/MCSKernel/include/mcs_lexer.h /Pylovara/MCSKernel/include/mcs_sentiator.h /Pylovara/MCSKernel/include/mcs_wahrheiten.h /Pylovara/MCSKernel/include/mcs_register.h /Pylovara/MCSKernel/include/mcs_kernel_core.h /Pylovara/MCSKernel/include/mcs_cmd_register.h /Pylovara/MCSKernel/include/mcs_alu_rechner.h
-
 
 # Core/ (Root-Ebene)
 cat /Pylovara/MCSKernel/main.c /Pylovara/MCSKernel/CMakeLists.txt

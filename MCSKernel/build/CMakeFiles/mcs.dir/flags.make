@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Pylovara/MCSKernel/include
+C_INCLUDES = -I/Pylovara/MCSKernel/include -I/Pylovara/MCSKernel/Logic -I/Pylovara/MCSKernel/Lib
 
 C_FLAGS = -g -std=gnu11
 

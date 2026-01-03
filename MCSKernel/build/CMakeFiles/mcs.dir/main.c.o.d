@@ -12,7 +12,7 @@ CMakeFiles/mcs.dir/main.c.o: /Pylovara/MCSKernel/main.c \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
  /Pylovara/MCSKernel/include/mcs_wahrheiten.h \
- /Pylovara/MCSKernel/include/mcs_cmd_register.h /usr/include/stdio.h \
+ /Pylovara/MCSKernel/include/mcs_register.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \

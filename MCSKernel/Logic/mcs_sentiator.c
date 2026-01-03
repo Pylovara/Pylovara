@@ -38,4 +38,25 @@ int mcs_sentiator_entscheide(int typ, const char* optionaler_wert) {
         default:
             return 0;
     }
+    // OrdnerPfad: /Pylovara/MCSKernel/Logic/mcs_sentiator.c
+    // Name: AIMS-Handshake-Validierung
+
+    #include "mcs_register.h"
+
+    // @kernel-nr: 03 | MCS-Typ: hnd- | Konsens-Typ
+    // Funktion: Abgleich der Signaturen zur System-Integrität [cite: 211, 215]
+    int ALU_AIMS_HANDSHAKE(long protein_signatur) {
+        // Prüft, ob der Konsens (128-Bit Ebene simuliert) vorliegt [cite: 211]
+        if (protein_signatur != 0) {
+            printf("   [AIMS-HANDSHAKE]: Konsens validiert (þ10) [cite: 213, 251]\n");
+            return 1; // Signalfluss erlaubt
+        }
+        printf("   [ALARM]: Konsens-Fehler! Gatter gesperrt. \n");
+        return 0;
+    }
+    // Hier endet die Funktion ALU_AIMS_HANDSHAKE [cite: 58]
+
+
+
+
 }

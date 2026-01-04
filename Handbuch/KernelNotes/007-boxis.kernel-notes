@@ -256,6 +256,37 @@
 
 --------------------------------------------------------------------
 
+ BOXI KLASSE = BLANKERNENNER
+
+ FUNKTION = TRANSPORTIERT DATEN
+
+ SYMBOLISCHE DEKLARATION = ° °
+
+ SYMBOL IN WORTEN =
+
+ INFO = DIENT ZUR FEED TRANSPORTLOGIK
+
+ BLANKERNENNER MUSTERBEISPIELE =
+ Außerhalb einer Boxi (FF - Führender Feed): Fungiert als
+ Eingangs-Vektor. Er signalisiert dem Kernel: "Nimm das Ergebnis
+ der folgenden Operation und binde es an diesen Cache-Rahmen."
+
+ Innerhalb einer Boxi (TF - Tragender Feed): Fungiert als
+ Injektions-Vektor. Er signalisiert: "Rufe den Cache-Inhalt ab
+ und setze ihn an dieser Stelle punktuell ein."
+
+ BLANKERNENNER ° ° : Erlaubt es, Feeds auch dort zu transportieren,
+ wo keine Shell oder ALU benötigt wird, sondern rein die
+ Daten-Protein-Bewegung stattfindet.
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+--------------------------------------------------------------------
+
+####################################################################
+
+--------------------------------------------------------------------
+
  BOXI KLASSE = MCS-CMD
 
  FUNKTION = HAUSEIGENER KOMMANDO BEFEHLE

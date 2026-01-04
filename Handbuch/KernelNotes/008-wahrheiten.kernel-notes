@@ -4,7 +4,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  WELTWEITER URSPRUNG UND URHEBER WIE LICENSETRÄGER VON WAHRHEITEN
        DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT
        PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
-####################################################################
+--------------------------------------------------------------------
 
  NAME = WAHRHEIT
 
@@ -27,9 +27,10 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  ZUKÜNFTIGEN CHIPS – PROGRAMMIERBAR ODER ASIC.
  NEU: INTEGRIERTER PROGRESS-OPERATOR (:) FÜR VISUELLE LADEBALKEN
  IN OPTIONEN – DYNAMISCH GESTEUERT DURCH AI ODER FEEDS.
-####################################################################
+
+--------------------------------------------------------------------
  ↓ STANDARDLAYOUT ↓
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-HAUPTKLASSE = WAHRHEITEN-TRIGGER
  FUNKTION = SCHALTUNGS-AUSLÖSER
  SYMBOLISCHE-DEKLARATION = –
@@ -37,7 +38,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  INFO = INITIIERT EINE WAHRHEITS-ENTSCHEIDUNG
  BEISPIEL:
  – »[×BEDINGUNG×]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-A
  FUNKTION = ERSTER AUSGANG (PRIMÄRER PFAD)
  SYMBOLISCHE-DEKLARATION = · (MIT PROGRESS: ·:)
@@ -45,7 +46,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  INFO = ERSTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
  BEISPIEL:
  –·: ###################### 70% GELADEN »[×AKTION×]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-B
  FUNKTION = ZWEITER AUSGANG (ALTERNATIVER PFAD)
  SYMBOLISCHE-DEKLARATION = ·· (MIT PROGRESS: ··:)
@@ -53,7 +54,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  INFO = ZWEITE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
  BEISPIEL:
  –··: ############### 50% GELADEN »[×AKTION×]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-C
  FUNKTION = DRITTER AUSGANG (ZUSÄTZLICHER PFAD)
  SYMBOLISCHE-DEKLARATION = ··· (MIT PROGRESS: ···:)
@@ -61,7 +62,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  INFO = DRITTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
  BEISPIEL:
  –···: ############################### 100% FERTIG »[×AKTION×]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-D
  FUNKTION = VIERTER AUSGANG (ERWEITERTER PFAD)
  SYMBOLISCHE-DEKLARATION = ···· (MIT PROGRESS: ····:)
@@ -69,7 +70,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  INFO = VIERTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
  BEISPIEL:
  –····: ######################## 80% GELADEN »[×AKTION×]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-OPTION-E
  FUNKTION = FÜNFTER AUSGANG (MAXIMALER PFAD)
  SYMBOLISCHE-DEKLARATION = ····· (MIT PROGRESS: ·····:)
@@ -77,7 +78,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  INFO = FÜNFTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
  BEISPIEL:
  –·····: ############### 50% GELADEN »[×AKTION×]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PROGRESS-OPERATOR
  FUNKTION = VISUELLE FORTSCHRITTS-ANZEIGE
  SYMBOLISCHE-DEKLARATION = :
@@ -86,7 +87,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  BALKEN-DESIGN: # FÜR FORTSCHRITT, % ANZEIGE DURCH AI/FEED.
  BEISPIEL:
  –·: ############################### 100% FERTIG »[~AKTION~]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-AUSWERTUNG
  FUNKTION = ERGEBNIS-ZUWEISUNG
  SYMBOLISCHE-DEKLARATION = =
@@ -95,7 +96,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  BEISPIEL:
  »[×1+1×]
   -= [(1)"2"]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PARALLEL-PROZESS
  FUNKTION = PARALLELE AUSFÜHRUNG
  SYMBOLISCHE-DEKLARATION = <
@@ -104,7 +105,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  BEISPIEL:
  –< »[×1+1×]
      -= [(1)"2"]«
-####################################################################
+--------------------------------------------------------------------
  WAHRHEITEN-UNTERKLASSE = WAHRHEITEN-PARALLEL-TRANSPORT
  FUNKTION = PARALLELER DATEN-TRANSPORT
  SYMBOLISCHE-DEKLARATION = >
@@ -113,7 +114,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
  BEISPIEL:
  –> »[×1+1×]
      -= [(1)"2"]«
-####################################################################
+--------------------------------------------------------------------
  EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR):
        »[PROTEIN-START]« # Linker Rand
         –·: ############### 50% »[OPTION-A-ACTION]« # Mit Progress
@@ -122,7 +123,7 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
         –< »[PARALLEL-PROZESS]«
             –·: ############################### 100% »[PARALLEL-A]«
     »[NEUES-PROTEIN]«
-####################################################################
+--------------------------------------------------------------------
   ANWENDUNGSBEISPIELE:
   # 1. GUI-MENÜ MIT PROGRESS (Ladebalken pro Punkt)
     –< »[×(MENU_LABEL) == "Quit"×]«
@@ -141,10 +142,11 @@ EIGENTUHM VON PYLOVARA-SYSTEM | ERFINDER THOMAS ZIMMERMANN STUFE 10
     –·: ############### 50% »[~load_project~]«
     –··: ######################## 80% »[~compile_mcs~]«
     –···: ############################### 100% »[~run_simulation~]«
-####################################################################
+--------------------------------------------------------------------
  ZUKUNFTSERWEITERUNGEN (BAUSTELLE):
    –<–> = FORK ODER SPLITTING (LINKS → RECHTS)
    –>–< = FORK ODER SPLITTING (RECHTS → LINKS)
    :::: = ANIMIERTER LADEBALKEN (PULSE-EFFEKT)
-####################################################################
+--------------------------------------------------------------------
+
 ##################### ENDE DER WAHRHEITEN ##########################

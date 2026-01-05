@@ -1,0 +1,90 @@
+@kernel-nr: 06 | AKTION/EN | AKTIONSDRAHT | STATUS : VALIDE
+##################################################################################
+
+----------------------------------------------------------------------------------
+
+ NAME = AKTION | AKTIONSDRAHT
+
+ BEGRIFFSDEFINTION = HAUPTVERDRAHTUNG
+
+ MERHZAHL = AKTIONEN | AKTION/S
+
+ FUNKTION = START UND END BEDIENUNG
+
+ AUSFÜHRUNGSART = SIGNAL-ROUTING
+
+----------------------------------------------------------------------------------
+
+##################################################################################
+
+----------------------------------------------------------------------------------
+
+ AKTIONS KLASSE = AKTION-START
+
+ FUNKTION = ANFANG-BEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = »
+
+ SYMBOL IN WORTEN =
+
+ GUILLEMENT RECHT | DEUTSCHES ANFÜHRUNGSZEICHEN ÖFFNEND
+
+ INFO = DEFINIERT DEN ANFANG DER AKTION
+
+----------------------------------------------------------------------------------
+
+##################################################################################
+
+----------------------------------------------------------------------------------
+
+ AKTIONS KLASSE = AKTION-ENDE
+
+ FUNKTION = END-BEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = «
+
+ SYMBOL IN WORTEN =
+
+ GUILLEMENT LINKS | DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
+
+ INFO = DEFINIERT DAS ENDE DER AKTION UND KANN ALS GESCHLOSSENER
+        AKTIONSKREISLAUF VERSTANDEN WERDEN
+
+----------------------------------------------------------------------------------
+
+##################################################################################
+
+----------------------------------------------------------------------------------
+
+ AKTIONS UNTERKLASSE = AKTIONSDRAHT | AKTIONSVERDRAHTUNG
+
+ AKTIONS KLASSE = AKTIONSVERDRAHTUNGS-ENDE
+
+ FUNKTION = MEHRFACHENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = «
+
+ SYMBOL IN WORTEN =
+
+ GUILLEMENT LINKS | DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
+
+ INFO =
+
+ WIRD ALS AKTIONSVERDRAHTUNG VERSTANDEN FÜR EINEN
+ AKTIONS-START UM DEN ZUSAMMENHÄNGENDEN KONTEXT DES PROZESSE ZU
+ VERDRAHTEN UND SORGT FÜR EINEN AKTIONSKREISLAUF MIT MEHREREN
+ AKTIONS-ENDE.
+
+----------------------------------------------------------------------------------
+
+##################################################################################
+
+
+----------------------------------------------------------------------------------
+                DATUM = [08:50:23|Fr 25 Jun 2025] MARKENBRANDT
+               PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------------------
+
+############################ ENDE DER AKTIONEN ###################################
+
+

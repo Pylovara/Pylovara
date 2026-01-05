@@ -1,0 +1,60 @@
+@kernel-nr: 03 | PROTEIN/E | STATUS : VALIDE
+##################################################################################
+
+----------------------------------------------------------------------------------
+ NAME = PROTEIN
+
+ BEGRIFFSDEFINTION = HAUPTDATENTRÄGER
+
+ MERHZAHL = PROTEINE
+
+ INFO-ID = PROTEIN
+
+ FUNKTION = TRANSPORTRAHMEN
+
+ AUSFÜHRUNGSART =
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+ PROTEIN KERN KLASSE = PROTEIN-RAHMEN
+
+ FUNKTION = RAHMENBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = [ ]
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER AUF ECKIGE KLAMMER ZU
+
+ INFO = PROTEIN-RAHMEN
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+ PROTEIN KLASSE = PROTEIN-START
+
+ FUNKTION = ANFANGSBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = [
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER AUF
+
+ INFO = ANFANG DES PROTEIN
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+ PROTEIN KLASSE = PROTEIN-ENDE
+
+ FUNKTION = ENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = ]
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
+
+ INFO = ENDE DES PROTEIN
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+                DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT
+               PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------------------
+
+############################## ENDE DER PROTEIN/E ################################
+

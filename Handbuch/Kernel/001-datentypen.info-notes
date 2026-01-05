@@ -1,0 +1,272 @@
+##################################################################################
+ 001-datentypen.info-notes |
+##################################################################################
+@info-id: DATENTYPEN-DEV
+
+  ↓↓ DATENTYP LAYOUT ↓↓
+----------------------------------------------------------------------------------
+ MCS-TYP = | BEZEICHNUNG = | BIT-BREITE =
+
+ INFO-ID =
+
+ KURZ INFO =
+
+ FUNKTION =
+----------------------------------------------------------------------------------
+
+##################################################################################
+@info-id: datentypen
+
+----------------------------------------------------------------------------------
+
+ ERKLÄRUNG DATENTYPEN =
+
+ DATENTYPEN IN MCS DEFINIEREN DIE PHYSISCHE STRUKTUR DER KERNEL ZUORDNUNG.
+
+ KERN-TYPEN SIND HARDWARE-NAH
+ LOGIK-TYPEN SIND PROZESS-NAH.
+
+ Hinweis:
+
+ Regel der Reinheit (ſ): Jede Transaktion innerhalb dieser
+ Datentypen endet zwingend mit dem Operator ſ sobald der
+ TRANSAKTIONSRAHMEN Vollzogen ist.
+
+ Dies garantiert die atomare Sicherheit:
+ Keine Datenreste, keine Side-Channel-Leaks,
+ kein Spielraum für Manipulationen im BIOS-Bereich.
+
+ Abschluss-Satz:
+ Vorteil dieser Struktur:
+ MCS erzwingt durch die bit-genaue Definition,
+ dass Hardware und Software eine untrennbare Einheit bilden.
+ Es gibt keine Interpretation durch Dritt-Anbieter –
+ es gibt nur die absolute, deterministische Ausführung.
+
+
+
+
+----------------------------------------------------------------------------------
+
+##################################################################################
+@info-id: B1
+
+
+
+##################################################################################
+@info-id: B8
+
+
+
+##################################################################################
+@info-id: B16
+
+
+
+##################################################################################
+@info-id: B32
+
+
+
+##################################################################################
+@info-id: B64
+
+ INFORMATIONEN =
+
+ Basis für modernes Speicher-Management und Kognitive AIMS-Prozesse.
+
+
+
+##################################################################################
+@info-id: B-INF
+
+ INFORMATION =
+
+ Genutzt für ~~ (MassenZusammenSetzung) bei Streaming.
+ Dynamische Skalierung für Stream-Daten (Video/Audio).
+ Hält das Gatter für die MassenZusammenSetzung (~~) offen.
+
+##################################################################################
+@info-id: B-þA
+
+ INFORMATION =
+
+ Ein 16- oder 32-Bit (oder 64-bit oder 128-bit) Anker-Typ,
+ der nur als Zeiger für den Generator dient.
+ Der Generator selbst hat die echte ID-DNA
+
+##################################################################################
+@info-id: þ-KEY
+
+ INFORMATION =
+
+  Info:
+ Kryptogenetische Signatur für Transaktions-Sicherheit.
+ Basis der Schatten-Identität.
+
+ Funktion:
+ Wird auf BIOS-Ebene geprüft.
+ Erlaubt oder blockiert den Signalfluss in den Aktionsdraht ».
+
+##################################################################################
+@info-id: INIT-V
+
+ Info:
+ Hardware-Initialisierungs-Vektor (Zündschlüssel).
+
+ Funktion:
+ Lädt FPGA-Bitstreams und Gatter-Konfigurationen beim
+ Kaltstart direkt in die Register.
+
+
+##################################################################################
+@info-id: HND-CMD
+
+ INFORMATION =
+
+  Info:
+ Schnittstelle für die Demokratische Validierung (AIMS-Handshake).
+
+ Funktion:
+ Abgleich der Signaturen zwischen verschiedenen KI-Instanzen
+ zur System-Integrität.
+
+
+
+##################################################################################
+@info-id: P-CMD
+
+ INFORMATION =
+
+ Info:
+ Träger für ausführbare Kernel-Befehle (Register-Befehle).
+
+ Funktion:
+ Kapselt eine spezifische Aktion,
+ die innerhalb eines Rahmens ¢! !¢ ausgeführt wird.
+
+##################################################################################
+@info-id: PR-PHYS
+
+ INFORMATION =
+
+ Info:
+ Physikalische Messwerte (Einheiten) innerhalb von {}.
+
+ Funktion:
+ Verarbeitung von Echtzeit-Sensordaten (Watt, Volt, Celsius).
+ Ermöglicht die direkte Hardware-Steuerung ohne Umrechnungs-Latenz.
+
+
+##################################################################################
+@info-id: F-REF
+
+ INFORMATION =
+
+  Info:
+ Referenz-Pointer (Feed-Ref) auf Kernel 10.
+
+ Funktion:
+ Hält den Verweis auf einen Systemzustand im RAM fest.
+ Verhindert Stack-Overflows, da keine Daten kopiert,
+ sondern nur adressiert werden.
+
+
+
+##################################################################################
+@info-id: PR-VAL
+
+ INFORMATION =
+
+  Info:
+ Reine numerische oder boolesche Werte (Proton-Inhalt).
+
+ Funktion:
+ Dient als Operand für die Operatoren (Kernel 09).
+ Liefert die Basis für Vergleiche wie < , > oder đ.
+
+
+##################################################################################
+@info-id: PR-DNA
+
+ INFORMATION =
+
+ Info:
+ Platzhalter für die zukünftige ID-DNA-BIOLIVE Einbindung.
+
+ Funktion:
+ Schnittstelle für biometrische oder organische Datenabgleiche
+ (Baustelle für die spätere Erweiterung).
+
+
+##################################################################################
+@info-id: B-ROOT
+
+ INFOPRMATION =
+
+ Info:
+ Höchste Adressierungsebene für den Hardware-Zugriff.
+
+ Funktion:
+ Definiert den physischen Root-Zugriff auf den Chipsatz.
+ Nur mit Stufe 10 (Thomas Zimmermann) þ-Key ansprechbar.
+
+
+
+##################################################################################
+@info-id: SYS-RST
+
+
+ INFORMATION =
+
+ Info:
+ Hard-wired Reset-Trigger.
+
+ Funktion:
+ Erzwingt die vollständige Bereinigung (ſ)
+ aller Register vor dem nächsten Rechenzyklus.
+
+##################################################################################
+@info-id: DATENTYPEN-BMC
+
+
+| Spezialisiert | NUR BMC | NUR Hardware
+
+ANFANG DATENTYPEN MIT-SYNC
+
+ MCS-Typ: mit-t  | Bezeichnung: Impuls-Trigger | Bit-Breite: 1
+
+ Info:
+ Repräsentiert den binären Zustand des mechanischen MIT-Aktors.
+
+ Funktion:
+ Erkennt das Überschreiten der harten Druckschwelle
+ am Pinline-Eingang. Schaltet das System-Ereignis auf 1
+ (Ereignis-Start).
+
+
+ MCS-Typ: mit-ref | Bezeichnung: Zeit-Anker-Referenz | Bit-Breite: 64
+
+ Info:
+ Der absolute Zeitstempel, der bei jedem MIT-Impuls generiert wird.
+
+ Funktion:
+ Dient als globaler Nullpunkt für den AI Synctimer (Kernel 18).
+ Alle nachfolgenden Protein-Transaktionen werden relativ zu diesem
+ Anker getaktet.
+
+ MCS-Typ: mit-dmp | Bezeichnung: Dämpfungs-Vektor | Bit-Breite: 8
+
+ Info:
+ Überwachungswert für die Energieabsorption am Endpunkt.
+
+ Funktion:
+ Prüft, ob der Impuls nach dem Anschlag korrekt absorbiert
+ wurde (Ruhezustand-Validierung), um Resonanz oder
+ Nachschwingen auszuschließen.
+
+ ENDE DATENTYPEN MIT-SYNC
+
+
+
+##################################################################################

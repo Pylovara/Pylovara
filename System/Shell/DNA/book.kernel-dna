@@ -1,0 +1,47 @@
+#!/bin/bash
+# ==============================================================================
+# vara-bookmaker [Pylovara 3.5] - SSOT 00.55 Konform
+# ==============================================================================
+# Zweck : Dual-Ansteuerung von *.kernel-notes und *.info-notes
+# Trigger 1: @kernel-nr: (Hardware-Adresse)
+# Trigger 2: @abschnitt-klasse: (Logik-Erklärung)
+# ==============================================================================
+
+Vara_Dir="/Pylovara/System/Shell/Vara"
+BASE_DIR="/Pylovara/Handbuch/KernelNotes"
+INPUT="$1"
+
+# Funktion zur Extraktion der Hardware-Adresse
+extract_kernel_nr() {
+    grep -i '@kernel-nr:' "$1" | head -n 1 | sed -E 's/.*@kernel-nr:[[:space:]]*([^#[:space:]]+).*/\1/'
+}
+
+# Funktion zur Extraktion der Erklärungs-Klasse
+extract_abschnitt_klasse() {
+    grep -i '@abschnitt-klasse:' "$1" | head -n 1 | sed -E 's/.*@abschnitt-klasse:[[:space:]]*([^#[:space:]]+).*/\1/'
+}
+
+if [[ -z "$INPUT" ]]; then
+    echo "[!] Bitte @kernel-nr oder @abschnitt-klasse angeben."
+    exit 1
+fi
+
+echo "--- [PYLOVARA BOOKMAKER SCAN] ---"
+
+# Suche in beiden Dateitypen parallel
+find "$BASE_DIR" -type f \( -name "*.kernel-notes" -o -name "*.info-notes" \) | while read -r file; do
+
+    # 1. Check auf Hardware-Nummer (z.B. 01, 02, 11) [cite: 15, 18, 39]
+    nr=$(extract_kernel_nr "$file")
+
+    # 2. Check auf Erklärungs-Tag (z.B. transaktionsrahmen) [cite: 355]
+    klasse=$(extract_abschnitt_klasse "$file")
+
+    if [[ "$nr" == "$INPUT" || "$klasse" == "$INPUT" || $(basename "$file") == *"$INPUT"* ]]; then
+        echo ">> GEFUNDEN: $file"
+        echo ">> TYP: $([[ "$file" == *.kernel-notes ]] && echo "Trockene Daten" || echo "Zusatz-Info")"
+        echo "------------------------------------------------------------"
+        cat "$file"
+        echo -e "------------------------------------------------------------\n"
+    fi
+done

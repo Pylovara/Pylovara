@@ -1,0 +1,334 @@
+@kernel-nr: 01  | DATENTYPEN | INFO-ID EXTRASEITEN | STATUS : OFFEN
+##################################################################################
+
+              DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT
+
+             PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+
+----------------------------------------------------------------------------------
+
+ NAME = DATENTYP
+
+ MERHZAHL = DATENTYPEN
+
+ BEGRIFFSDEFINTION =
+
+ FUNKTION = EINORDNUNG
+
+ AUSFÜHRUNGSART = FORMAT | BITREITE | SPEICHER-LAYOUT
+
+----------------------------------------------------------------------------------
+
+ KATEGORIEN:
+
+ KERNEL = BEINHALTET ALLGEMEINE KERNEL DATENTYPEN
+
+ DNA-ID-GENERATOR = BEINHALTET ID-DNA-GENERATOR DATENTYPEN
+
+ PROTEINE = BEINHALTET PROTEIN DATENTYPEN
+
+ PROTONEN = BEINHALTET PROTON DATENTYPEN
+
+ BOOT-LOGIK = BIOS/UEFI-SPEZIALTYPEN
+
+----------------------------------------------------------------------------------
+
+  ↓↓ DATENTYP LAYOUT ↓↓
+
+----------------------------------------------------------------------------------
+ MCS-TYP = | BEZEICHNUNG = | BIT-BREITE =
+
+ INFO-ID =
+
+ KURZ INFO =
+
+ FUNKTION =
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+########################## ANFANG DATENTYPEN KERNEL ##############################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+ INFORMATION =
+
+ KERN-DATENTYPEN (PHYSISCHE GATTER-BREITE) DEFINIEREN, WIE VIELE "DRÄHTE" IM BMC
+ FÜR EINE INFORMATION RESERVIERT WERDEN.
+----------------------------------------------------------------------------------
+ MCS-TYP = B1 | BEZEICHNUNG = BIT-IMPULS | BIT-BREITE = 1
+
+ INFO-ID = X
+
+ KURZ INFO = STANDART-EINHEIT FÜR WAHRHEITEN UND SENTIATOREN
+
+ FUNKTION = SCHALTERZUSTÄNDE (ON/OFF), GATTER-STEUERUNG
+----------------------------------------------------------------------------------
+ MCS-TYP = B8 | BEZEICHNUNG = KERN-BYTE | BIT-BREITE = 8
+
+ INFO-ID = X
+
+ KURZ INFO = UTF -8 ZEICHEN, EINFACHE SENSORWERTE
+
+ FUNKTION = TASTATUR UND SYMBOL WIE SONDERZEICHEN EINORDNEN
+----------------------------------------------------------------------------------
+ MCS-TYP = B16 | BEZEICHNUNG = LOGIK-LINK | BIT-BREITE = 16
+
+ INFO-ID = X
+
+ KURZ INFO = MCS-STANDART-OPERATOREN UND BEFEHLSKENNUNG
+
+ FUNKTION = VERBINDET ZWEI LOGISCHE ZUSTÄNDE ODER SYMBOLE IM NANOSEKUNDEN-TAKT.
+----------------------------------------------------------------------------------
+ MCS-TYP = B32 | BEZEICHNUNG = ADRESS-PFAD | BIT-BREITE = 32
+
+ INFO-ID = X
+
+ KURZ INFO = STANDART-ADRESSIERUNG FÜR LEGACY-SYSTEME.
+             KOMPAKTIBILITÄTSSCHICHT FÜR x86-LEGACY-STRUKTUREN.
+
+ FUNKTION = ERMÖGLICHT MCS DEN ZUGRIFF AUF HERKÖMLICHE RAM-BEREICHE AUẞERHALB
+            VOM BMC.
+----------------------------------------------------------------------------------
+
+---- AB HIER BAUSTELLE -----
+
+----------------------------------------------------------------------------------
+ MCS-Typ: b64 | Bezeichnung: High-Speed-Pfad | Bit-Breite: 64
+
+ Info:
+ Große Datenströme, moderne Speicheradressierung.
+ Basis für modernes Speicher-Management und Kognitive AIMS-Prozesse.
+
+ Funktion:
+ Transportiert komplexe Protein-Pakete mit maximaler Bandbreite.
+----------------------------------------------------------------------------------
+ MCS-Typ: b-inf | Bezeichnung: Massen-Typ | Bit-Breite: 64
+
+ Info:
+ Genutzt für ~~ (MassenZusammenSetzung) bei Streaming.
+ Dynamische Skalierung für Stream-Daten (Video/Audio).
+
+ Funktion:
+ Hält das Gatter für die MassenZusammenSetzung (~~) offen.
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+######################## ENDE DATENTYPEN KERNEL ##################################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+####################### ANFANG DATENTYPEN ID-DNA-GENERATOR #######################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+ MCS-Typ: b-þa | Bezeichnung: þ-Anker
+
+ Info:
+ Dient als ID-DNA-GENERATOR Zeiger Zum Abgleich
+
+ Funktion :
+ Ein 16- oder 32-Bit (oder 64-bit oder 128-bit) Anker-Typ,
+ der nur als Zeiger für den Generator dient.
+ Der Generator selbst hat die echte ID-DNA
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+######################## ENDE DATENTYPEN ID-DNA-GENERATOR ########################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+######################## ANFANG DATENTYPEN PROTEIN ###############################
+----------------------------------------------------------------------------------
+ MCS-Typ: Þ-key | Bezeichnung: Identitäts-Typ | Bit-Breite: Variabel
+
+ Info:
+ Kryptogenetische Signatur für Transaktions-Sicherheit.
+ Basis der Schatten-Identität.
+
+ Funktion:
+ Wird auf BIOS-Ebene geprüft.
+ Erlaubt oder blockiert den Signalfluss in den Aktionsdraht ».
+----------------------------------------------------------------------------------
+ MCS-Typ: init-v | Bezeichnung: Start-Protein | Bit-Breite: 64+
+
+ Info:
+ Hardware-Initialisierungs-Vektor (Zündschlüssel).
+
+ Funktion:
+ Lädt FPGA-Bitstreams und Gatter-Konfigurationen beim
+ Kaltstart direkt in die Register.
+----------------------------------------------------------------------------------
+ MCS-Typ: hnd-þ | Bezeichnung: Konsens-Typ | Bit-Breite: 128
+
+ Info:
+ Schnittstelle für die Demokratische Validierung (AIMS-Handshake).
+
+ Funktion:
+ Abgleich der Signaturen zwischen verschiedenen KI-Instanzen
+ zur System-Integrität.
+----------------------------------------------------------------------------------
+ MCS-Typ: p-cmd  | Bezeichnung: Befehls-Protein | Bit-Breite: 16/32
+
+ Info:
+ Träger für ausführbare Kernel-Befehle (Register-Befehle).
+
+ Funktion:
+ Kapselt eine spezifische Aktion,
+ die innerhalb eines Rahmens ¢! !¢ ausgeführt wird.
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+######################### ENDE DATENTYPEN PROTEIN ################################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+####################### ANFANG DATENTYPEN PROTONEN ###############################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+ MCS-Typ: pr-phys  | Bezeichnung: Hardware-Physik | Bit-Breite: 32
+
+ Info:
+ Physikalische Messwerte (Einheiten) innerhalb von {}.
+
+ Funktion:
+ Verarbeitung von Echtzeit-Sensordaten (Watt, Volt, Celsius).
+ Ermöglicht die direkte Hardware-Steuerung ohne Umrechnungs-Latenz.
+----------------------------------------------------------------------------------
+ MCS-Typ: f-ref | Bezeichnung: Zustands-Referenz | Bit-Breite: 16/32
+
+ Info:
+ Referenz-Pointer (Feed-Ref) auf Kernel 10.
+
+ Funktion:
+ Hält den Verweis auf einen Systemzustand im RAM fest.
+ Verhindert Stack-Overflows, da keine Daten kopiert,
+ sondern nur adressiert werden.
+----------------------------------------------------------------------------------
+ MCS-Typ: pr-val | Bezeichnung: Logik-Wert | Bit-Breite: 1 bis 64
+
+ Info:
+ Reine numerische oder boolesche Werte (Proton-Inhalt).
+
+ Funktion:
+ Dient als Operand für die Operatoren (Kernel 09).
+ Liefert die Basis für Vergleiche wie < , > oder đ.
+
+----------------------------------------------------------------------------------
+ MCS-Typ: pr-dna | Bezeichnung: Bio-Schnittstelle | Bit-Breite: Variabel
+
+ Info:
+ Platzhalter für die zukünftige ID-DNA-BIOLIVE Einbindung.
+
+ Funktion:
+ Schnittstelle für biometrische oder organische Datenabgleiche
+ (Baustelle für die spätere Erweiterung).
+
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+######################## ENDE DATENTYPEN PROTONEN ################################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+####################### ANFANG DATENTYPEN BOOT-LOGIK #############################
+----------------------------------------------------------------------------------
+ MCS-Typ: b-root | Bezeichnung: Master-Zweig | Bit-Breite: 128
+
+ Info:
+ Höchste Adressierungsebene für den Hardware-Zugriff.
+
+ Funktion:
+ Definiert den physischen Root-Zugriff auf den Chipsatz.
+ Nur mit Stufe 10 (Thomas Zimmermann) þ-Key ansprechbar.
+----------------------------------------------------------------------------------
+ MCS-Typ: sys-rst | Bezeichnung: Purge-Initialer | Bit-Breite: 1
+
+ Info:
+ Hard-wired Reset-Trigger.
+
+ Funktion:
+ Erzwingt die vollständige Bereinigung (ſ)
+ aller Register vor dem nächsten Rechenzyklus.
+
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+######################## ENDE DATENTYPEN BOOT-LOGIK ##############################
+----------------------------------------------------------------------------------
+
+ Hinweis:
+
+ Regel der Reinheit (ſ): Jede Transaktion innerhalb dieser
+ Datentypen endet zwingend mit dem Operator ſ sobald der
+ Runtime Vollzogen ist.
+
+ Dies garantiert die atomare Sicherheit:
+ Keine Datenreste, keine Side-Channel-Leaks,
+ kein Spielraum für Manipulationen im BIOS-Bereich.
+
+ Abschluss-Satz:
+ Vorteil dieser Struktur:
+ MCS erzwingt durch die bit-genaue Definition,
+ dass Hardware und Software eine untrennbare Einheit bilden.
+ Es gibt keine Interpretation durch Dritt-Anbieter –
+ es gibt nur die absolute, deterministische Ausführung.
+
+----------------------------------------------------------------------------------
+
+ Datentypen Versions Validierungen 0.1:
+
+ Kernel 09 (Operatoren) validiert.
+
+ Kernel 14 (Identifikation) durch die þ-Anker logisch unterfüttert.
+
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+################| Spezialisiert | NUR BMC | NUR Hardware |########################
+----------------------------------------------------------------------------------
+
+ Kategorie:
+
+ MIT-SYNC = BOOT-LOGIK / HARDWARE-SYNC
+
+----------------------------------------------------------------------------------
+######################## ANFANG DATENTYPEN MIT-SYNC ##############################
+----------------------------------------------------------------------------------
+ MCS-Typ: mit-t  | Bezeichnung: Impuls-Trigger | Bit-Breite: 1
+
+ Info:
+ Repräsentiert den binären Zustand des mechanischen MIT-Aktors.
+
+ Funktion:
+ Erkennt das Überschreiten der harten Druckschwelle
+ am Pinline-Eingang. Schaltet das System-Ereignis auf 1
+ (Ereignis-Start).
+----------------------------------------------------------------------------------
+ MCS-Typ: mit-ref | Bezeichnung: Zeit-Anker-Referenz | Bit-Breite: 64
+
+ Info:
+ Der absolute Zeitstempel, der bei jedem MIT-Impuls generiert wird.
+
+ Funktion:
+ Dient als globaler Nullpunkt für den AI Synctimer (Kernel 18).
+ Alle nachfolgenden Protein-Transaktionen werden relativ zu diesem
+ Anker getaktet.
+----------------------------------------------------------------------------------
+ MCS-Typ: mit-dmp | Bezeichnung: Dämpfungs-Vektor | Bit-Breite: 8
+
+ Info:
+ Überwachungswert für die Energieabsorption am Endpunkt.
+
+ Funktion:
+ Prüft, ob der Impuls nach dem Anschlag korrekt absorbiert
+ wurde (Ruhezustand-Validierung), um Resonanz oder
+ Nachschwingen auszuschließen.
+
+----------------------------------------------------------------------------------
+######################### ENDE DATENTYPEN MIT-SYNC ###############################
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+########################## ENDE DATENTYPEN KERNEL ################################
+----------------------------------------------------------------------------------

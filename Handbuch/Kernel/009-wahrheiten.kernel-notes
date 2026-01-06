@@ -1,0 +1,239 @@
+@kernel-nr: 09 | WAHRHEITEN | STATUS = KONSOLIDIERUNG
+##################################################################################
+----------------------------------------------------------------------------------
+
+ NAME = WAHRHEIT
+
+ INFO-ID = WAHRHEITEN
+
+ BEGRIFFSDEFINITION = FLUSS-GATTER | SCHALTUNGS-LOGIK
+
+ FUNKTION = PARALLELE ENTSCHEIDUNGSSTRUKTUR MIT PROGRESS-ANZEIGE
+
+ AUSFÜHRUNGSART = LISTENORIENTIERTE GATTER-STEUERUNG
+
+ GÜLTIGKEITSBEREICH = SYSTEMWEIT
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN KLASSE = WAHRHEITEN-TRIGGER
+
+ INFO = INITIALISIERT EINE WAHRHEITS-ENTSCHEIDUNG
+
+ INFO-ID = WAHRHEITEN-TRIGGER
+
+ FUNKTION = SCHALTUNGS-AUSLÖSER
+
+ SYMBOLISCHE-DEKLARATION = –
+
+ SYMBOL IN WORTEN = BINDESTRICH | VIERTELGEVIERTSTRICH
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-AUSWERTUNG
+
+ INFO = SUCHT DEN WAHRHEITEN-SPACE-POINT UND ZIEHT ES DURCH DIE ALU
+
+ INFO-ID = WAHRHEITEN-TRIGGER-AUSWERTUNG
+
+ FUNKTION = ELTERNZWEIG PROZESS-AUSWERTUNG
+
+ SYMBOLISCHE-DEKLARATION = =
+
+ SYMBOL IN WORTEN = ISTGLEICHZEICHEN
+
+ BEISPIEL =
+ -=
+ –·=
+ -··=
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITENKERN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-PROGRESSBAR
+
+ INFO = HÄNGT AN OPTIONEN (–·: BIS –····:) FÜR DYNAMISCHEN LADEBALKEN.
+
+ INFO-ID = WAHRHEITEN-TRIGGER-PROGRESSBAR
+
+ FUNKTION = VISUELLE FORTSCHRITTS-ANZEIGE
+
+ SYMBOLISCHE-DEKLARATION = :
+
+ SYMBOL IN WORTEN = DOPPELPUNKT
+
+ BALKEN-DESIGN: # FÜR FORTSCHRITT, % ANZEIGE DURCH AI/FEED.
+
+ BEISPIEL =
+ -: ############################### 100% FERTIG
+ –·: ############################### 100% FERTIG
+ -··: ############################### 100% FERTIG
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-PARALLEL-AUSFÜHRUNG
+
+ INFO = INITIIERT PARALLELE PROZESSE ODER PROTEIN-DUPLIKATE
+
+ INFO-ID = WAHRHEITEN-TRIGGER-PARALLEL-AUSFÜHRUNG
+
+ FUNKTION = PARALLEL AUSFÜHRUNG
+
+ SYMBOLISCHE-DEKLARATION = <
+
+ SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
+
+ BEISPIEL =
+ –< »[×1+1×]
+     -= [(1)"2"]«
+
+-·< »[×1+1×]
+     -·= [(1)"2"]«
+
+–··< »[×1+1×]
+      -··= [(1)°2°]«
+
+-···< »[×1+1×]
+       -···= [(1)"2"]«
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-PARALLEL-TRANSPORT
+
+ INFO = TRANSPORTIERT DATEN PARALLEL
+
+ INFO-ID = WAHRHEITEN-TRIGGER-PARALLEL-TRANSPORT
+
+ FUNKTION = PARALLEL TRANSPORT
+
+ SYMBOLISCHE-DEKLARATION = >
+
+ SYMBOL IN WORTEN = GRÖSSER-ALS-ZEICHEN
+
+ BEISPIEL =
+ –> »[×1+1×]
+     -= [(1)"2"]«
+
+ -·> »[×1+2×]
+      -·= [(4)°3°]«
+
+ –··> »[×7+1×]
+       -··= [(1)"8"]«
+
+ -···> »[×1+1×]
+        -···= [(3)°2°]«
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE WORKSPACE = WAHRHEITEN-TRIGGER-WORKSPACE-A
+
+ INFO = ERSTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
+
+ INFO-ID = WAHRHEITEN-WORKSPACE
+
+ FUNKTION = ERSTER AUSGANG (PRIMÄRER PFAD)
+
+ SYMBOLISCHE-DEKLARATION = ·
+
+ SYMBOL IN WORTEN = MITTELPUNKT (MIT DOPPELPUNKT FÜR PROGRESS)
+
+ BEISPIEL:
+ »[×1+1×]
+  -·= [(3)°2°]«
+  -·: ############### 50% GELADEN
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE WORKSPACE = WAHRHEITEN-TRIGGER-WORKSPACE-B
+
+ INFO = ZWEITE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
+
+ INFO-ID = WAHRHEITEN-WORKSPACE
+
+ FUNKTION = ZWEITER AUSGANG (ALTERNATIVER PFAD)
+
+ SYMBOLISCHE-DEKLARATION = ··
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT
+
+ BEISPIEL:
+ »[×1+1×]
+  -··= [(3)°2°]«
+  -··: ############### 50% GELADEN
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE WORKSPACE = WAHRHEITEN-TRIGGER-WORKSPACE-C
+
+ INFO = DRITTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
+
+ INFO-ID = WAHRHEITEN-WORKSPACE
+
+ FUNKTION = DRITTER AUSGANG (ZUSÄTZLICHER PFAD)
+
+ SYMBOLISCHE-DEKLARATION = ···
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT
+
+ BEISPIEL:
+ »[×1+1×]
+  -···= [(3)°2°]«
+  -···: ############### 50% GELADEN
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE WORKSPACE = WAHRHEITEN-TRIGGER-WORKSPACE-D
+
+ INFO = VIERTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
+
+ INFO-ID = WAHRHEITEN-WORKSPACE
+
+ FUNKTION = VIERTER AUSGANG (ERWEITERTER PFAD)
+
+ SYMBOLISCHE-DEKLARATION = ····
+
+ SYMBOL IN WORTEN = VIER MITTELPUNKTE
+
+ BEISPIEL:
+ »[×1+1×]
+  -····= [(3)°2°]«
+  -····: ############### 50% GELADEN
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE WORKSPACE = WAHRHEITEN-TRIGGER-WORKSPACE-E
+
+ INFO = FÜNFTE ENTSCHEIDUNGS-OPTION MIT OPTIONALEM LADEBALKEN
+
+ INFO-ID = WAHRHEITEN-WORKSPACE
+
+ FUNKTION = FÜNFTER AUSGANG (MAXIMALER PFAD)
+
+ SYMBOLISCHE-DEKLARATION = ····· (MIT PROGRESS: ·····:)
+
+ SYMBOL IN WORTEN = FÜNF MITTELPUNKTE
+
+ BEISPIEL:
+ »[×1+1×]
+  -·····= [(3)°2°]«
+  -·····: ############### 50% GELADEN
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+             DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT
+             PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
+----------------------------------------------------------------------------------
+############################# ENDE DER WAHRHEITEN ################################
+
+
+
+

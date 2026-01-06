@@ -1,8 +1,9 @@
 @kernel-nr: 02 | TRANSAKTIONSRAHMEN | STATUS : VAILDE
 ##################################################################################
-
 ----------------------------------------------------------------------------------
  NAME = TRANSAKTIONSRAHMEN
+
+ INFO-ID = TRANSAKTIONSRAHMEN
 
  BEGRIFFSDEFINITION = MCS-RUNTIMEBEDIENUNG
 
@@ -10,8 +11,6 @@
 
  AUSFÜHRUNGSART =
 ----------------------------------------------------------------------------------
-
- ↓ STANDARTLAYOUT ↓ INFO-ID = TRANSAKTIONSRAHMEN
 ----------------------------------------------------------------------------------
  TRANSAKTIONSKLASSE = MCS-RUNTIME-ANFANGSBEDIENUNG
 
@@ -21,7 +20,7 @@
 
  SYMBOL IN WORTEN = CENT-ZEICHEN AUSRUFEZEICHEN
 
- INFO = INPUT IN
+ INFO = INPUT
 ----------------------------------------------------------------------------------
  TRANSAKTIONSKLASSE = MCS-RUNTIME-ENDBEDIENUNG
 
@@ -31,13 +30,11 @@
 
  SYMBOL IN WORTEN = AUSRUFEZEICHEN CENT-ZEICHEN
 
- INFO = INPUT OUT
+ INFO = OUTPUT
 ----------------------------------------------------------------------------------
-
 ----------------------------------------------------------------------------------
                 DATUM = [03:10:53|So 12 Jul 2025] MARKENBRANDT
                PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
 ----------------------------------------------------------------------------------
-
 ######################### ENDE DES TRANSAKTIONSRAHMEN ############################
 

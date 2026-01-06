@@ -1,0 +1,127 @@
+@kernel-nr: 16 | MCS-CMD-REGISTER | STATUS : VALIDE KONSOLIDIERT
+##################################################################################
+
+----------------------------------------------------------------------------------
+
+ NAME = MCS-CMD
+
+ INFO-ID = MCS-CMD
+
+ FUNKTION = BEFEHLSREGISTERSTRIGGER MCS-CMD
+
+ SYMBOLISCHE DEKLARATION = ~ ~
+
+ SYMBOL IN WORTEN = TILDE TILDE
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN KLASSE = MCS-CMD-UND-AUSFÜHREN
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = ¬
+
+ FUNKTION = VERBINDET ZWEI MCS-CMD BEFEHLE
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN KLASSE = MCS-CMD-REGISTER
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = master list
+
+ FUNKTION = register auflistung
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN UNTERKLASSE = MCS-CMD-REGISTER-SYSTEMCTL-START
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = master control start <prozess|programm>
+
+ FUNKTION = MCS-CMD REGISTER TRIGGER
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN UNTERKLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STOP
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = master control stop <prozess|programm>
+
+ FUNKTION = MCS-CMD REGISTER TRIGGER
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN UNTERKLASSE = MCS-CMD-REGISTER-SYSTEMCTL-NEUSTART
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = master control neustart <prozess|programm>
+
+ FUNKTION = MCS-CMD REGISTER TRIGGER
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN UNTERKLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STATUS
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = master control status <prozess|programm>
+
+ FUNKTION = MCS-CMD REGISTER TRIGGER
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN UNTERKLASSE = MCS-CMD-REGISTER-SYSTEMCTL-AKTIVIEREN
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = master control aktivieren <prozess|programm>
+
+ FUNKTION = MCS-CMD REGISTER TRIGGER
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MCS-CMD KERN UNTERKLASSE = MCS-CMD-REGISTER-SYSTEMCTL-BERICHT-ANZEIGEN
+
+ INFO-ID = MCS-CMD
+
+ BEFEHLSZEILEN EINGABE = master control bericht <prozess|programm>
+
+ FUNKTION = MCS-CMD REGISTER TRIGGER
+
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+                DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT
+                PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
+----------------------------------------------------------------------------------
+########################## ENDE DES MCS-CMD-REGISTERS ############################

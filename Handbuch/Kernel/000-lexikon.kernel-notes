@@ -1,5 +1,5 @@
 ##################################################################################
-@kernel-nr: lex | System Handbuch | kernel lex | kernel NR | info NR | Pylovara© #
+@kernel-nr: lex | System Handbuch | KERNEL LEX | KERNEL NR | INFO NM | Pylovara© #
 ##################################################################################
 # Hinweis |— nicht freigeschaltet|+ Freigeschaltet|X BauStelle|0 Konsolidierung ##
 ##################################################################################
@@ -10,15 +10,10 @@
 #      05    · + · 0    TRENNBEFEHL   |    06    · + · 0    AKTIONEN             #
 #      07    · + · 0    BOXIS         |    08    · + · 0    MASTER-CONTROL       #
 #      09    · + · 0    WAHRHEITEN    |    10    · + · 0    SENTIATOREN          #
-#      11    · + · 0    ARGUMENTE     |    12    · + · 0    FEEDS
-#--------------------------------------------------------------------------------#
-#    wird gerade mit Konsolidiert , steht nur als info für mich dabei
-#
-#      0X MCS MASTER-CONTROL = OPERATOREN
-#      08 0 Wahrheiten = Analoge oder Parallele Verarbeitungszweige
-#      09 0 SENTIATOR = Entscheidungsmechanismus für wahrheiten
-#      10 0 Argumente = ««t1 ««s1 usw takt oder zeit berücksichtigungen
-#      11 0 Feed = duplikationsmechanismus von host zu empfänger (mehrfachausgang)
+#      11    · + · 0    ARGUMENTE     |    12    · + · 0    FEEDS                #
+#      13    · + · 0    WARPS         |    14    · + · 0    ADRESSIERUNG         #
+#      15    · + · 0    CMD-REGISTER  |    16    · + · 0    DATEITYPEN           #
+
 ##################################################################################
 #      *.kernel-notes → trockene, nummerierte Hauptdaten (Lexikon / Index)       #
 #          *.info-notes → ausführliche, semantische Erklärungen                  #

@@ -1,58 +1,206 @@
-@kernel-nr: 08 | MASTER-CONTROL | STATUS = KONSOLIDIERUNG
+@kernel-nr: 08 | MASTER-CONTROL | STATUS = BAUSTELLE
 ##################################################################################
 
 ----------------------------------------------------------------------------------
 
- MASTER-CONTROL KERN KLASSE =
+ MASTER KERN KLASSE = MASTER
 
- INFO =
-
- INFO-ID = MASTER-CONTROL
-
- FUNKTION =
-
- SYMBOLISCHE DEKLARATION =
-
- SYMBOL IN WORTEN =
-
-----------------------------------------------------------------------------------
-
-----------------------------------------------------------------------------------
-
- MASTER-CONTROL KERN KLASSE =
-
- INFO =
+ INFO = DATEITYP TRIGGER
 
  INFO-ID = MASTER-CONTROL
 
- FUNKTION =
+ FUNKTION = MASTER CONTROLLE ZU ALLEM
 
- SYMBOLISCHE DEKLARATION =
+ SYMBOLISCHE DEKLARATION = MASTER
 
- SYMBOL IN WORTEN =
-
-----------------------------------------------------------------------------------
+ SYMBOL IN WORTEN = MASTER
 
 ----------------------------------------------------------------------------------
 
- MASTER-CONTROL KERN KLASSE =
+----------------------------------------------------------------------------------
 
- INFO =
+ MASTER KERN OBERKLASSE = MASTER-CONTROL
+
+ INFO = ÖFFNET DIE MASTER-CONTROL EINSTELLUNGSOPTIONEN
 
  INFO-ID = MASTER-CONTROL
 
- FUNKTION =
+ FUNKTION = DATEITYPENVERWALUNG
 
- SYMBOLISCHE DEKLARATION =
+ SYMBOLISCHE DEKLARATION = MASTER-CONTROL
 
- SYMBOL IN WORTEN =
+ SYMBOL IN WORTEN = MASTER VIERTELSTRICHHORIZONTAL CONTROL
 
 ----------------------------------------------------------------------------------
 
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-KERNEL
+
+ INFO = ANSTEUERUNG ZUR RUNTIME KERNEL
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = PROZESSAUSFÜHRUNGSEBENE RUNTIME
+
+ SYMBOLISCHE DEKLARATION = -kernel
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL KERNEL
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-MAGIC
+
+ INFO = ANSTEUERUNG ZUM KOORDINATIONS PROGRAMM
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = VERDINDET DEN DATEIÜBERGREIFENDEN FAMILIENPRIZIP ZUSAMMENHANG
+
+ SYMBOLISCHE DEKLARATION = -magic
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL magic
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-MICRO
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE MICRO
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -micro
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL micro
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-NANO
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -nano
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL nano
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-NODES
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE NODES
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -nodes
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL nodes
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-CORE
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE CORE - MAIN CORE
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -core
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL core
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-LCORE
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE LCORE -LOWLEVELCORE
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -lcore
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL lcore
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-VCORE
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE VCORE - VISUELLERCORE
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -vcore
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL vcore
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-FCORE
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE FCORE - FREQUENZCORE
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -fcore
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL fcore
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-NOTES
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE NOTES - NOTIZEN
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -notes
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL notes
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ MASTER KERN UNTERKLASSE = MASTER-CONTROL-REDFLAG
+
+ INFO = ANSTEUERUNG ZUM DATEIFILE REDFLAG - LOGS-NOTIZEN
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = DATEIFILE-RAHMEN
+
+ SYMBOLISCHE DEKLARATION = -redflag
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL redflag
+
+----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
              DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT
 
             PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
 ----------------------------------------------------------------------------------
-
 ######################### ENDE VON MASTER-CONTROL ################################

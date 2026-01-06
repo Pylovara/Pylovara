@@ -1,0 +1,82 @@
+##################################################################################
+ 013-warps.info-notes |
+##################################################################################
+@info-id: WARPS-DEV
+
+
+----------------------------------------------------------------------------------
+ ↓ STANDARTLAYOUT ↓
+----------------------------------------------------------------------------------
+
+ WARP KERN KLASSE = WARP
+
+ FUNKTION = CACHE GEBUNDER RAHMEN
+
+ SYMBOLISCHE DEKLARATION = Ø- -Ø
+
+ SYMBOL IN WORTEN =
+ Durchgestrichenes O Minus  Minus Durchgestrichenes O
+
+ INFO = WARPDRAHT
+
+----------------------------------------------------------------------------------
+
+##################################################################################
+@info-id: WARPS
+
+----------------------------------------------------------------------------------
+
+ ERKLÄRUNG =
+
+ EIN WARP WIRD DAFÜR VERWENDET UM FREMDSPRACHEN ZU TRANSPORTIEREN.
+
+ MAN KANN SIE DIREKT IN DEN JEWEILIGEN COMPILER LENKEN UND DADURCH
+ EINE DIREKTE BRÜCKE ERSCHAFFEN.
+
+ DER WARP IST EINE KONSIQUENTE WEITER GEDACHTE ART VON EMULATOREN,
+ NUR DAS HIER NICHTS EMULIERT WIRD SONDERN DIREKT ZUGESPIELT
+
+ DER RÜCKTRANSPORT WIRD JE NACH ADRESSIERUNG MIT DIRIGENTEN ODER
+ ZIELREFERENZEN GETAGGT UND DIESES MUSTER VON ZUSPIELUNGEN WIRD
+ ALS WARP-TRANSPORT BESCHRIEBEN UND OCHESTRIERT DIE DATENPIPELINE
+ EIGENTSÄNDIG, FÜR DIE FLEXIBILITÄT.
+
+----------------------------------------------------------------------------------
+
+ Definition Grundgerüst :
+
+ ø- ,,   # Warp Beginn + Optionale Notiz
+ Code    # Code im Originalen zustand
+ -ø = §  # Warp Ende + Adressierung und oder Zielreferenz
+
+ Genau so lassen sich Alle Codes Warpen
+
+----------------------------------------------------------------------------------
+ Anbindungsbeispiele :
+
+ ø- # C
+ #include <stdio.h>
+
+ int fibonacci(int n) {
+    if (n <= 1) return n;
+
+    int a = 0, b = 1, temp;
+    for (int i = 2; i <= n; i++) {
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return b;
+ }
+
+ int main() {
+    int n = 10;
+    printf("Fibonacci(%d) = %d\n", n, fibonacci(n));
+    return 0;
+ }
+ -ø = §gcc
+
+----------------------------------------------------------------------------------
+
+##################################################################################
+@info-id: WARPS-BASTELLE

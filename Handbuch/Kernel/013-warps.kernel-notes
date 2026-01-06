@@ -1,0 +1,70 @@
+@kernel-nr: 13 | WARPS | STATUS : VALIDE KONSOLIDIERT
+##################################################################################
+
+----------------------------------------------------------------------------------
+
+ NAME = WARPS
+
+ INFO-ID = WARPS
+
+ BEGRIFFSDEFINTION = DIREKTE ORIGINALE COMPILER BINDUNG
+
+ FUNKTION = DIREKTE ORIGINALE COMPILER BINDUNG TARNSPORTRAHMEN
+
+ AUSFÜHRUNGSART =
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WARP KERN KLASSE = WARPS
+
+ INFO-ID = WARPS
+
+ FUNKTION = DIREKTE ORIGINALE COMPILER BINDUNG TARNSPORTRAHMEN
+
+ SYMBOLISCHE DEKLARATION = øĸ ĸø
+
+ SYMBOL IN WORTEN = KLAMMER AUF ĸ ĸ KLAMMER ZU
+
+ INFO = TRANSPORTRAHMENBEDINUNG FÜR FREMDCOMPILER
+        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ FEED KERN UNTERKLASSE = WARPS-START
+
+ INFO-ID = WARPS
+
+ FUNKTION = DIREKTE ORIGINALE COMPILER START TARNSPORTRAHMEN BINDUNG
+
+ SYMBOLISCHE DEKLARATION = øĸ
+
+ SYMBOL IN WORTEN = KLAMMER AUF ĸ
+
+ INFO = TRANSPORTRAHMENBEDINUNGS-START FÜR FREMDCOMPILER
+        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ WARP KERN UNTERKLASSE = WARPS-ENDE
+
+ INFO-ID = WARPS
+
+ FUNKTION = DIREKTE ORIGINALE COMPILER ENDE TARNSPORTRAHMEN BINDUNG
+
+ SYMBOLISCHE DEKLARATION = ĸø
+
+ SYMBOL IN WORTEN = ĸ KLAMMER ZU
+
+ INFO = TRANSPORTRAHMENBEDINUNGS-ENDE FÜR FREMDCOMPILER
+        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+         DATUM = [02:00:44|FR 02 JAN 2026] MARKENBRANDT
+
+         PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------------------
+############################### ENDE DER WARPS ###################################
+

@@ -5,12 +5,12 @@
 ##################################################################################
 #      NR    Hinweis    SeitenName    |    NR    Hinweis    SeitenName           #
 #                                                                                #
-#      01    · - X 0    DATENTYPEN    |    02    · - X 0    TRANSAKTIONSRAHMEN   #
-#      03    · - X 0    PROTEIN/E     |    04    · - X 0    PROTONEN            #
-#      05    · - X 0    TRENNBEFEHL   |    06    · - X 0    AKTIONEN             #
-#      07    · - X 0    BOXIS         |    08    · - X 0    MASTER-CONTROL       #
-#      09    · - X 0    WAHRHEITEN    |    10    · - X 0    SENTIATOREN          #
-#
+#      01    · + X 0    DATENTYPEN    |    02    · + · 0    TRANSAKTIONSRAHMEN   #
+#      03    · + · 0    PROTEIN       |    04    · + · 0    PROTONEN             #
+#      05    · + · 0    TRENNBEFEHL   |    06    · + · 0    AKTIONEN             #
+#      07    · + · 0    BOXIS         |    08    · + · 0    MASTER-CONTROL       #
+#      09    · + · 0    WAHRHEITEN    |    10    · + · 0    SENTIATOREN          #
+#      11    · + · 0    ARGUMENTE     |    12    · + · 0    FEEDS
 #--------------------------------------------------------------------------------#
 #    wird gerade mit Konsolidiert , steht nur als info für mich dabei
 #
@@ -31,7 +31,8 @@
 #
 #
 ##################################################################################
-#       SYSTEM = PYLOVARA-SYSYTEM   KERNEL = MCS 4.7 MASTER-CONTROL-SYSTEM       #
+#       SYSTEM = PNS PYLOVARA-NETZWERK-SYSTEM                                    #
+#       KERNEL = MCS 4.8 MASTER-CONTROL-SYSTEM                                   #
 #       TASTATURSTANDART = UTF -8 DEUTSCHER STANDART                             #
 #       HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                             #
 #       BRAINMASCHINECORE = BMC 0.7 BRAIN-MASCHINE-CORE                          #

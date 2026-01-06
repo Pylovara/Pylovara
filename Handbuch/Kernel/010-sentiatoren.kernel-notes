@@ -1,0 +1,81 @@
+@kernel-nr: 09 | SENTIATOREN | STATUS : TEST
+##################################################################################
+----------------------------------------------------------------------------------
+
+ NAME = SENTIATOREN
+
+ INFO-ID = SENTIATOREN
+
+ BEGRIFFSDEFINTION = BEWERTENDE SIGNALINSTANZ EINES PROTEIN.
+
+ FUNKTION = FLUẞENTSCHEIDUNG
+
+ AUSFÜHRUNGSART = SIGNALINSTANZ SCHALTUNGSLOGIK
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ SENTIATOR KERN KLASSE = SENTIATOR-KANN-IMPULS
+
+ FUNKTION = WENN DAS PASSIERT KANN - IMPULS
+
+ SYMBOLISCHE DEKLARATION = ¶
+
+ SYMBOL IN WORTEN = ABSATZ-ZEICHEN
+
+ INFO = WENN DAS PASSIERT , KANN FOLGENDES FOLGEN.
+        WIRD NIEMALS ALS HEADER BENUTZT SONDERN,
+        ALS ENTSCHEIDUNGSLOGIK
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+ COMPILER =
+ Der Sentiator muss den "Zustand der Reinheit" prüfen.
+ Wenn ¶ gerufen wird, muss er prüfen: Ist FF(X) == 1?.
+ Wenn ja, öffne die Schleuse.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ SENTIATOR KERN KLASSE = SENTIATOR-NICHT-IMPULS
+
+ FUNKTION = WENN DAS NICHT PASSIERT - IMPULS
+
+ SYMBOLISCHE DEKLARATION = ¶¶
+
+ SYMBOL IN WORTEN = ABSATZ-ZEICHEN ABSATZ-ZEICHEN
+
+ INFO = WENN DAS NICHT PASSIERT , MUSS FOLGENDES FOLGEN.
+        WIRD NIEMALS ALS HEADER BENUTZT SONDERN,
+        ALS ENTSCHEIDUNGSLOGIK
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ SENTIATOR KERN SPEZIAL KLASSE = SENTIATOR-REINHEIT-IMPULS
+
+ FUNKTION = REGEL DER REINHEIT | LÖSCHT
+
+ SYMBOLISCHE DEKLARATION = ſ
+
+ SYMBOL IN WORTEN = LANGES S
+
+ INFO = DIE REGEL DER REINHEIT ERKENNT DATENMÜLL
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+               DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT
+
+               PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------------------
+######################### ENDE DER SENTIATOREN ###################################

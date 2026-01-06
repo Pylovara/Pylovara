@@ -1,0 +1,86 @@
+@kernel-nr: 10 | ARGUMENTE | STATUS : BAUSTELLE
+##################################################################################
+----------------------------------------------------------------------------------
+
+ NAME = ARGUMENTE
+
+ INFO-ID = ARGUMENTE
+
+ BEGRIFFSDEFINTION = HINWEISROUTING
+
+ FUNKTION = VERARBEITUNGSZUSATZINFORMATIONSLOGIK
+
+ AUSFÜHRUNGSART = SIGNAL-ROUTING
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ ARGUMENT KERN KLASSE = ARGUMENT-TRIGGER
+
+ FUNKTION = TRIGGER
+
+ SYMBOLISCHE DEKLARATION = ««
+
+ SYMBOL IN WORTEN = GUILLEMENT LINKS GUILLEMENT LINKS
+
+ INFO = TRIGGERT DIE FUNKTION ARGUMENTE
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-ZEIT
+
+ FUNKTION = ZEIT IN SEKUNDEN
+
+ SYMBOLISCHE DEKLARATION = T
+
+ SYMBOL IN WORTEN = T
+
+ INFO = LÖST DIE ARGUEMNTEN FUNKTION ZEIT AUS IN SEKUNDEN
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-EXIT
+
+ FUNKTION = BEENDET
+
+ SYMBOLISCHE DEKLARATION = E
+
+ SYMBOL IN WORTEN = E
+
+ INFO = BEENDET DIE VERARBEITUNG
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-BESTÄTIGUNG
+
+ FUNKTION = ADMINISTRATIVE BESTÄTIGUNGSANFRAGE
+
+ SYMBOLISCHE DEKLARATION = B
+
+ SYMBOL IN WORTEN = B
+
+ INFO = BESTÄTIGUNGSANFRAGE FÜR DEN WEITEREN PROZESS
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+ ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-BESTÄTIGUNG
+
+ FUNKTION = ADMINISTRATIVE BESTÄTIGUNGSANFRAGE
+
+ SYMBOLISCHE DEKLARATION = B
+
+ SYMBOL IN WORTEN = B
+
+ INFO = BESTÄTIGUNGSANFRAGE FÜR DEN WEITEREN PROZESS
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+              DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
+
+              PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------------------
+####################### ENDE DER ARGUMENTE #######################################

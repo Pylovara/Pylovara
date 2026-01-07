@@ -1,12 +1,10 @@
-##################################################################################
+######################################################################
  008-master-control.info-notes |
-##################################################################################
+######################################################################
 @info-id: MASTER-CONTROL-DEV
-
-
+----------------------------------------------------------------------
  ↓ STANDARTLAYOUT ↓
-
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
  MASTER-CONTROL KERN KLASSE =
 
@@ -19,17 +17,12 @@
  SYMBOLISCHE DEKLARATION =
 
  SYMBOL IN WORTEN =
-
-----------------------------------------------------------------------------------
-
+----------------------------------------------------------------------
  MASTER-CONTROL MUSTERBEISPIELE =
-
-----------------------------------------------------------------------------------
-
-##################################################################################
+----------------------------------------------------------------------
+######################################################################
 @info-id: MASTER-CONTROL
-
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------
 ## VERERBUNGSPRINZIP :
 
 die Kettenbildungenmechanismen sind bei einem Veerbungsprinzip
@@ -58,7 +51,8 @@ Umschaltungsknoten IN SICH TRAGEN .
 4      *.*-notes
 4-1     *.*-redflag
 4-2
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 
 dabei wird berücksichtig das 1 auf 2 und 2 auf 1 zugreifen kann ,
 damit 2 auch sub-daten starten kann wie 1-1 1-2 , hier besitzt
@@ -82,7 +76,8 @@ aushängbaren Puzzelstück .
 Dabei ist nur zu Verstehen vom kopf an fängt der datensatz an
 und folgt immer ab dem kopf den Datenstrang.
 
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 
 ## Datentyp Rollen Version 1.4
 
@@ -95,10 +90,11 @@ Pylovara organisiert sich in einem klaren Familienmodell:
 *.*-micro   Tochter    – Mikrosteuerung (z.B. HTML, JS, SQL)
 *.*-cache   Cache      – Zwischenspeicher für Temp-Daten
 *.*-needles Hardwareb. – Kernelnahe Steuerung (.sys, .ko, .dll)
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------
 *.*-kernel  MCS Kernel - Interne MCS Kernel Daten - Framework
 *.redflag-notes LogDaten - Interne MCS Kernel Logs
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 ## Core Datensplittung
 
 Durch das Splitting der Core-Daten wird die Einordnung (Typisierung)
@@ -132,7 +128,8 @@ dynamisch generiert werden müssen. Dieser Schritt stärkt das gesamte
 Pylovara-Modell, indem die Kern-Funktionalität jetzt so granular
 typisiert ist wie die Schichten der Architektur selbst.
 
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 ## Die *.*-magic Datentypen
 
 ist die Schicht, die Pylovara von einem starren System zu
@@ -146,7 +143,6 @@ Diese Daten werden immer einen Integrierten Sync-timer beinhalten
 der auch direkt von der AI im System Angesteuert werden kann und
 somit die Datenstränge in den *.*-core Prozess anpassen kann .
 
-----------------------------------------------------------------------------------
-
-##################################################################################
+----------------------------------------------------------------------
+######################################################################
 @info-id: MASTER-CONTROL-BAUSTELLE

@@ -1,42 +1,50 @@
-﻿##################################################################################
-@kernel-nr: lex | System Handbuch | KERNEL LEX | KERNEL NR | INFO NM | Pylovara© #
-##################################################################################
-# Hinweis |— nicht freigeschaltet|+ Freigeschaltet|X BauStelle|0 Konsolidierung ##
-##################################################################################
-#      NR    Hinweis    SeitenName    |    NR    Hinweis    SeitenName           #
-#                                                                                #
-#      01    · + X 0    DATENTYPEN    |    02    · + · 0    TRANSAKTIONSRAHMEN   #
-#      03    · + · 0    PROTEIN       |    04    · + · 0    PROTONEN             #
-#      05    · + · 0    TRENNBEFEHL   |    06    · + · 0    AKTIONEN             #
-#      07    · + · 0    BOXIS         |    08    · + · 0    MASTER-CONTROL       #
-#      09    · + · 0    WAHRHEITEN    |    10    · + · 0    SENTIATOREN          #
-#      11    · + · 0    ARGUMENTE     |    12    · + · 0    FEEDS                #
-#      13    · + · 0    WARPS         |    14    · + · 0    ADRESSIERUNG         #
-#      15    · + · 0    CMD-REGISTER  |    16    · + · 0    DATEITYPEN           #
-#                                                                                #
-##################################################################################
-#      *.kernel-notes → trockene, nummerierte Hauptdaten (Lexikon / Index)       #
-#          *.info-notes → ausführliche, semantische Erklärungen                  #
-##################################################################################
-#  NR    Hinweis    SeitenName         |    NR    Hinweis    SeitenName          #
-#                                                                                #
-#  50    · - X ·   CHIP-PROGRAMTECHNIK |    51    · - X ·    ENERGIE-MATRIX      #
-#  52    · - X ·   LICHLEITERBAHNEN    |    53    · - X ·    MBMATRIX            #
-#  54    · - X ·   PROJEKTIVE RECHENLOGIK                                        #
-##################################################################################
-#      NR    Hinweis    SeitenName    |    NR    Hinweis    SeitenName           #
-##################################################################################
-#       SYSTEM = PNS PYLOVARA-NETZWERK-SYSTEM                                    #
-#       KERNEL = MCS 4.8 MASTER-CONTROL-SYSTEM                                   #
-#       TASTATURSTANDART = UTF -8 DEUTSCHER STANDART                             #
-#       HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                             #
-#       BRAINMASCHINECORE = BMC 3.0 BRAIN-MASCHINE-CORE                          #
-#       LIZENSEN = LV 1.0 LIZENSVERSION                                          #
-#       SINGEL SOURCE OF TRUTH = SSoT Lexikon Version 00.58                      #
-##################################################################################
-#       Autor: ID-DNA-THOMAS-ZIMMERMANN-STUFE10-þ7F3A 23.04.1988 since 2025      #
-#       Standort: /Pylovara/Handbuch/Kernel/                                     #
-#       Status: Vollständige Rollende-Verbesserungen                             #
-#       PDF NamensLayer: PYLOVARA-SYSTEM-SSoT-XX.XX.pdf                          #
-#       Garantierte Berufserfahrung: |Systemarchitekt|Pylovara-System|MCS|BMC|   #
-##################################################################################
+﻿######################################################################
+@kernel-nr: lex | System Handbuch | KERNEL LEX | KERNEL NR | INFO NM #
+######################################################################
+# —nicht freigeschaltet +Freigeschaltet XBauStelle 0Konsolidierung  ##
+######################################################################
+# NR  Hinweis  SeitenName  | NR  Hinweis  SeitenName                 #
+#                                                                    #
+# 01  · + X 0  DATENTYPEN  | 02  · + · 0  TRANSAKTIONSRAHMEN         #
+# 03  · + · 0  PROTEIN     | 04  · + · 0  PROTONEN                   #
+# 05  · + · 0  TRENNBEFEHL | 06  · + · 0  AKTIONEN                   #
+# 07  · + · 0  BOXIS       | 08  · + · 0  MASTER-CONTROL             #
+# 09  · + · 0  WAHRHEITEN  | 10  · + · 0  SENTIATOREN                #
+# 11  · + · 0  ARGUMENTE   | 12  · + · 0  FEEDS                      #
+# 13  · + · 0  WARPS       | 14  · + · 0  ADRESSIERUNG               #
+# 15  · + · 0  CMD-REGISTER| 16  · + · 0  DATEITYPEN                 #
+#                                                                    #
+######################################################################
+# *.kernel-notes → trockene, nummerierte Hauptdaten (Lexikon / Index)#
+# *.info-notes → ausführliche, semantische Erklärungen               #
+######################################################################
+# NR  Hinweis  SeitenName              ###############################
+# 50  · - X ·  CHIP-PROGRAMTECHNIK     #                             #
+# 51  · - X ·  ENERGIE-MATRIX          #   ##### ####  #### #####    #
+# 52  · - X ·  LICHLEITERBAHNEN        #   ##    #  ## #    # * #    #
+# 53  · - X ·  MBMATRIX                #   ####  ####  #  # #####    #
+# 54  · - X ·  PROJEKTIVE RECHENLOGIK  #   ##    ##    #### #   #    #
+######################################################################
+# NR   SeitenName                        #############################
+# 993   L1_CoreKernelMandat              #                       #####
+# 994   L2_AuthorRights                  #  ###   MCS|BMC          ###
+# 995   L3_CommercialLicensing           #  ###  Pylovara-System©   ##
+# 996   L4_AI_AdministrationMandate      #  ###          Since 2025 ##
+# 997   L5_Post_Mortem-Control           #  ##########             ###
+# 998   L6_Immutable_Cores_Definition    #                       #####
+# 999   LICENSE-MAIFEST                  #############################
+######################################################################
+# SYSTEM = PNS PYLOVARA-NETZWERK-SYSTEM                              #
+# KERNEL = MCS 4.8 MASTER-CONTROL-SYSTEM                             #
+# TASTATURSTANDART = UTF -8 DEUTSCHER STANDART                       #
+# HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                       #
+# BRAINMASCHINECORE = BMC 3.0 BRAIN-MASCHINE-CORE                    #
+# LIZENSEN = LV 1.0 LIZENSVERSION                                    #
+# SINGEL SOURCE OF TRUTH = SSoT Lexikon Version 00.58                #
+######################################################################
+# Autor: ID-DNA-THOMAS-ZIMMERMANN-STUFE10-þ7F3A since 2025           #
+# Standort: /Pylovara/Handbuch/Kernel/                               #
+# Status: Vollständige Rollende-Verbesserungen                       #
+# PDF NamensLayer: PYLOVARA-SYSTEM-SSoT-XX.XX.pdf                    #
+# Garantierte Berufserfahrung:Systemarchitekt|Pylovara-System|       #
+######################################################################

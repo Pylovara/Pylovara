@@ -1,0 +1,25 @@
+#### CMake
+
+cd /Pylovara/MCSKernel
+make clean
+make
+make run
+
+
+make clean && make && make run /Pylovara/MCSKernel/testcodes/./test.zweig-core
+
+
+cd /Pylovara/MCSKernel/ && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/testcodes/test.zweig-core && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/testcodes/test.zweig-core
+
+#### testcode mcs
+cat /Pylovara/MCSKernel/testcodes/test.zweig-core
+
+
+--------------------------------------------------------------------------------
+## Saubere Ordner Daten
+
+## src /
+cat /Pylovara/MCSKernel/Core/mcs_01_datentypen.c /Pylovara/MCSKernel/src/mcs_02_transaktionsrahmen.c /Pylovara/MCSKernel/src/mcs_03_protein.c /Pylovara/MCSKernel/src/mcs_04_proton.c /Pylovara/MCSKernel/src/mcs_05_trennbefehl.c /Pylovara/MCSKernel/src/mcs_06_aktion.c /Pylovara/MCSKernel/src/mcs_07_boxis.c /Pylovara/MCSKernel/src/mcs_08_master-control.c /Pylovara/MCSKernel/src/mcs_09_wahrheiten.c /Pylovara/MCSKernel/src/mcs_10_sentiator.c /Pylovara/MCSKernel/src/mcs_11_argumente.c /Pylovara/MCSKernel/src/mcs_12_feed.c /Pylovara/MCSKernel/src/mcs_13_warp.c /Pylovara/MCSKernel/src/mcs_14_adressierung.c /Pylovara/MCSKernel/src/mcs_15_mcs-cmd-register.c /Pylovara/MCSKernel/src/mcs_16_dateitypen-register.c
+
+# MCSKErnel/
+cat /Pylovara/MCSKernel/main.c /Pylovara/MCSKernel/Makefile

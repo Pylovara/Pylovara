@@ -1,50 +1,51 @@
-####################################################################
-@kernel-nr: lex | System Handbuch | kernel lex | 00 FallBack | #####
-####################################################################
-#   | - nicht freigeschaltet | + Freigeschaltet | X BauStelle |    #
-####################################################################
-#     Das System befindet sich im Konsolidierungsmodus = 0         #
-####################################################################
-#            - MCS - MASCHINENCODESPEECH - Kernel -                #
-#      01 X Datentypen                14 0 þ Identifikation
-#      02 0 Transaktion               15 0 SchaltVerknüpfungen
-#      03 0 Protein                   16 X AI Synctimer
-#      04 0 Proton                    17 X Discovery Layer
-#      05 0 Trennbefehl
-#      06 0 Aktion
-#      07 0 BOXIS
-#      08 0 Wahrheiten
-#      09 0 SENTIATOR
-#      09a - OPERATOREN
-#      10 0 Argumente
-#      11 0 Feed                      77 0 Ausführungslogik
-#      12 0 Adressierung              88 0 Dateitypen
-#      13 0 Warp                      99 0 MCS-CMD-REGISTER
-####################################################################
-#               - MCSPLUS ProgrammierSprache -                     #
-#     101 + Einführung               102 + Grundeinheit            #
-#     103 + Tagging & Rollenbindung  104 + StrukturPlan            #
-####################################################################
-#   - HARDWARE Komponenten und Visionen BrainMaschineCore BMC -    #
-#     800 + CHiPBezeichnungen       803 - MIT-Taktgeber            #
-#     801 - EnergieMatrix           804 - MBMatrix                 #
-#     802 - Lichtleiterbahnen       805 + Projektive Rechenlogik   #
-####################################################################
-#                 - LICENSES GELTUNGSBEREICH -                     #
-#  900 L0_VorWort                      993 L1_CoreKernelMandat     #
-#  994 L2_AuthorRights                 995 L3_CommercialLicensing  #
-#  996 L4_AI-AdministrationMandate     997 L5_Post_Mortem-Control  #
-#  998 L6_immunitable_Cores_definition 999 License_Manifest        #
-####################################################################
-#    System | SOFTWARE MCS KERNEL | HARDWARE BrainMaschineCore     #
-#         Tastaturstandart: UTF -8 Deutscher Standart              #
-#   Single Source of Truth (SSoT) Lexikon Version 00.57            #
-#  MCS 4.7 | MCSPLUS 0.4 | BMC Version 0.7 | License Version 1.0   #
-#    Autor: Thomas Zimmermann 23.04.1988 (Stufe 10) (þ7F3A)        #
-# Garantierte Berufserfahrung:                                     #
-#          | Systemarchitekt | Pylovara-System | MCS | BMC         #
-#------------------------------------------------------------------#
-# Standort: /Pylovara/Handbuch/KernelNotes/     Germany            #
-# Status: Vollständige Rollende-Verbesserungen    Pylovara©        #
-# PDF NamensLayer: Pylovara-System-XX.XX.pdf          since 2025   #
-####################################################################
+﻿######################################################################
+@kernel-nr: lex | System Handbuch | KERNEL LEX | KERNEL NR | INFO NM #
+######################################################################
+# —nicht freigeschaltet +Freigeschaltet XBauStelle 0Konsolidierung  ##
+######################################################################
+# NR  Hinweis  SeitenName  | NR  Hinweis  SeitenName                 #
+#                                                                    #
+# 01  · + · 0  DATENTYPEN  | 02  · + · 0  TRANSAKTIONSRAHMEN         #
+# 03  · + · 0  PROTEIN     | 04  · + · 0  PROTONEN                   #
+# 05  · + · 0  TRENNBEFEHL | 06  · + · 0  AKTIONEN                   #
+# 07  · + · 0  BOXIS       | 08  · + · 0  MASTER-CONTROL             #
+# 09  · + · 0  WAHRHEITEN  | 10  · + · 0  SENTIATOREN                #
+# 11  · + · 0  ARGUMENTE   | 12  · + · 0  FEEDS                      #
+# 13  · + · 0  WARPS       | 14  · + · 0  ADRESSIERUNG               #
+# 15  · + · 0  CMD-REGISTER| 16  · + · 0  DATEITYPEN                 #
+#                                                                    #
+######################################################################
+# Hanbuch Navigations ################################################
+# kernel lex      |*.kernel-notes → trockene, nummerierte Hauptdaten #
+# info WAHRHEITEN |*.info-notes→ausführliche,semantische Erklärungen #
+######################################################################
+# NR  Hinweis  SeitenName                ##### ## ## #### ### ### ####
+# 50  · - X ·  CHIP-PROGRAMTECHNIK       ### ################ ###### #
+# 51  · - X ·  ENERGIE-MATRIX            #  ####  #### #### #####    #
+# 52  · - X ·  LICHLEITERBAHNEN          #  #     #  # #    #   #   ##
+# 53  · - X ·  MBMATRIX                  #  ###   ###  #  # ## ##   ##
+# 54  · - X ·  PROJEKTIVE RECHENLOGIK    #  #     #    #### #   #  # #
+###########################################    #     #            ## #
+# NR   SeitenName                        #####  ##### #####      ## ##
+# 993   L1_CoreKernelMandat              ## ###            # # #  ## #
+# 994   L2_AuthorRights                  ####  MCS | BMC           # #
+# 995   L3_CommercialLicensing           # ##   Pylovara-System©    ##
+# 996   L4_AI_AdministrationMandate      #######         Since 2025 ##
+# 997   L5_Post_Mortem-Control           ##############            ###
+# 998   L6_Immutable_Cores_Definition    ####  #######################
+# 999   LICENSE-MAIFEST                  ###########  ######  ##### ##
+######################################################################
+# SYSTEM = PNS PYLOVARA-NETZWERK-SYSTEM                              #
+# KERNEL = MCS 5.0 MASTER-CONTROL-SYSTEM                             #
+# TASTATURSTANDART = UTF -8 DEUTSCHER STANDART                       #
+# HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                       #
+# BRAINMASCHINECORE = BMC 3.0 BRAIN-MASCHINE-CORE                    #
+# LIZENSEN = LV 1.0 LIZENSVERSION                                    #
+# SINGEL SOURCE OF TRUTH = SSoT Lexikon Version 00.59                #
+######################################################################
+# Autor: ID-DNA-THOMAS-ZIMMERMANN-STUFE10-þ7F3A since 2025           #
+# Standort: /Pylovara/Handbuch/Kernel/                               #
+# Status: Vollständige Rollende-Verbesserungen                       #
+# PDF NamensLayer: PYLOVARA-SYSTEM-SSoT-XX.XX.pdf                    #
+# Garantierte Berufserfahrung:Systemarchitekt|Pylovara-System|       #
+######################################################################

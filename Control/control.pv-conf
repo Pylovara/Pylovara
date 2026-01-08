@@ -73,8 +73,8 @@ kernelx() {
 dev() {
     source "$Shell_DIR/dev.cut-dna" "$@"
 }
-devx() {
-    source "$Shell_DIR/devx.deluxe-dna" "$@"
+info() {
+    source "$Shell_DIR/info.kernel-dna" "$@"
 }
 p() {
     source "$Shell_DIR/p.tree-dna" "$@"

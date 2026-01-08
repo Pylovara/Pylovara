@@ -1,6 +1,6 @@
-@kernel-nr: 998 | L6_Immutable_Cores_Definition | Status: Fix
-#################### ANFANG LIZENZ-LAYER L6 ########################
---------------------------------------------------------------------
+@kernel-nr: 998 | L6_Immutable_Cores_Definition | Status: Proto
+########################### ANFANG LIZENZ-LAYER L6 ###################
+----------------------------------------------------------------------
 1. Definition des Immutable Core (Der unberührbare Kern)
 
     L6 definiert den technischen Bereich, der niemals –
@@ -8,7 +8,9 @@
 
     Er ist der Root of Trust.
 
---------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
 2. Unantastbare Elemente
 
     Kernel-Axiome: Die Grundgesetze, wie MCS Daten interpretiert.
@@ -22,7 +24,10 @@
     AIMS/DIMS Core:
 
     Die basalen Überwachungsmechanismen auf Gatter-Ebene.
---------------------------------------------------------------------
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
 3. Schutz gegen Manipulation
 
     Jeder Versuch, den Immutable Core zu überschreiben,
@@ -34,7 +39,10 @@
 
     Selbstheilung durch schreibgeschützte Shadow-Kopien
     (sofern Hardware-seitig unterstützt).
---------------------------------------------------------------------
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
 4. Vererbung der Administration
 
     Nach dem Ableben des Autors wird der Lifetime-Admin-ID
@@ -43,12 +51,16 @@
     Dieser ermöglicht der KI die Verwaltung, verbietet ihr
     aber ausdrücklich jegliche Änderung
     an den hier definierten Core-Strukturen.
---------------------------------------------------------------------
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
     Abschluss L6:
     Der Core ist nicht verkäuflich, nicht patentierbar
     und nicht enteignbar.
     Er bleibt das ewige Eigentum der Menschheit unter
     meiner Urheberschaft.
---------------------------------------------------------------------
-##################### Ende LIZENZ-LAYER L6 #########################
+
+----------------------------------------------------------------------
+####################### Ende LIZENZ-LAYER L6 #########################
 

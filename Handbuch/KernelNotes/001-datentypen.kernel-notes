@@ -1,330 +1,209 @@
-@kernel-nr: 01  | DATENTYPEN | STATUS : OFFEN
-####################################################################
+@kernel-nr: 01  | DATENTYPEN | INFO-ID EXTRASEITEN | STATUS : OFFEN
+######################################################################
+----------------------------------------------------------------------
+ NAME = DATENTYPEN
 
- Erklärung:
+ INFO-ID = DATENTYPEN
 
- Datentypen = Formate | Bit-Breiten | Speicher-Layout
+ BEGRIFFSDEFINTION =
 
---------------------------------------------------------------------
+ FUNKTION = EINORDNUNG
 
- Kategorie:
+ AUSFÜHRUNGSART = FORMAT | BITREITE | SPEICHER-LAYOUT
+-----------------------------------------------------------------------
+ KATEGORIEN:
 
- KERNEL = Beinhaltet allgemeine Kernel Datentypen
+ KERNEL = BEINHALTET ALLGEMEINE KERNEL DATENTYPEN
 
- DNA-ID-GENERATOR = Beinhaltet þþ Generator Datentypen
+ DNA-ID-GENERATOR = BEINHALTET ID-DNA-GENERATOR DATENTYPEN
 
- PROTEINE = Beinhaltet Protein Datentypen
+ PROTEINE = BEINHALTET PROTEIN DATENTYPEN
 
- PROTONEN = Beinhaltet Protein Datentypen
+ PROTONEN = BEINHALTET PROTON DATENTYPEN
 
- BOOT-LOGIK = BIOS/UEFI-Spezialtypen
+ BOOT-LOGIK = BIOS/UEFI-SPEZIALTYPEN
 
---------------------------------------------------------------------
+ MIT-SYNC = BOOT-LOGIK / HARDWARE-SYNC (INFO-ID = DATENTYPEN-BMC)
+----------------------------------------------------------------------
+####################### ANFANG DATENTYPEN KERNEL #####################
+----------------------------------------------------------------------
+ INFORMATION =
 
- Textliche Definition:
+ KERN-DATENTYPEN (PHYSISCHE GATTER-BREITE) DEFINIEREN,
+ WIE VIELE "DRÄHTE" IM BMC FÜR EINE INFORMATION RESERVIERT WERDEN.
+----------------------------------------------------------------------
+ MCS-TYP = B1 | BEZEICHNUNG = BIT-IMPULS | BIT-BREITE = 1
 
- Datentypen in MCS 3.5 definieren die physische Struktur eines
- Proteins oder Protons im RAM und in den FPGA-Registern.
- Da MCS als BIOS-Ersatz fungiert, sind diese Typen direkt
- mit der Hardware-Adressierung verknüpft.
+ INFO-ID = B1
 
- Unterscheidungen :
+ KURZ INFO = STANDART-EINHEIT FÜR WAHRHEITEN UND SENTIATOREN
 
- Kern-Typen (Hardware-nah)
- Logik-Typen (Prozess-nah).
+ FUNKTION = SCHALTERZUSTÄNDE (ON/OFF), GATTER-STEUERUNG
+----------------------------------------------------------------------
+ MCS-TYP = B8 | BEZEICHNUNG = KERN-BYTE | BIT-BREITE = 8
 
- Hinweis:
- Das Register Unterliegt diesem Visuellen Format :
---------------------------------------------------------------------
- MCS-Typ:   | Bezeichnung: | Bit-Breite:
+ INFO-ID = B8
 
- Info:
+ KURZ INFO = UTF -8 ZEICHEN, EINFACHE SENSORWERTE
 
- Funktion:
---------------------------------------------------------------------
+ FUNKTION = TASTATUR UND SYMBOL WIE SONDERZEICHEN EINORDNEN
+----------------------------------------------------------------------
+ MCS-TYP = B16 | BEZEICHNUNG = LOGIK-LINK | BIT-BREITE = 16
 
---------------------------------------------------------------------
- ################# Anfang DATENTYPEN KERNEL #######################
---------------------------------------------------------------------
+ INFO-ID = B16
 
- Information :
+ KURZ INFO = MCS-STANDART-OPERATOREN UND BEFEHLSKENNUNG
 
- Kern-Datentypen (Physische Gatter-Breite) definieren, wie viele
- "Drähte" im BMC für eine Information reserviert werden:
+ FUNKTION = VERBINDET ZWEI LOGISCHE ZUSTÄNDE ODER SYMBOLE
+            IM NANOSEKUNDEN-TAKT.
+----------------------------------------------------------------------
+ MCS-TYP = B32 | BEZEICHNUNG = ADRESSIERUNG-PFAD | BIT-BREITE = 32
 
---------------------------------------------------------------------
- MCS-Typ: b1   | Bezeichnung: Bit-Impuls | Bit-Breite: 1
+ INFO-ID = B32
 
+ KURZ INFO = STANDART-ADRESSIERUNG FÜR LEGACY-SYSTEME.
+             KOMPAKTIBILITÄTSSCHICHT FÜR x86-LEGACY-STRUKTUREN.
 
- Info:
- Standard-Einheit für Operatoren und Wahrheiten.
- Verwendung im BIOS/UEFI
+ FUNKTION = ERMÖGLICHT MCS DEN ZUGRIFF AUF HERKÖMLICHE RAM-BEREICHE
+            AUẞERHALB VOM BMC.
+----------------------------------------------------------------------
+ MCS-TYP = B64| BEZEICHNUNG = HIGH-SPEED-PFAD | BIT-BREITE = 64
 
- Funktion:
- Schalterzustände (ON/OFF), Gatter-Steuerung.
+ INFO-ID = B64
 
---------------------------------------------------------------------
- MCS-Typ: b8   | Bezeichnung: Kern-Byte | Bit-Breite: 8
+ KURZ INFO = GROẞE DATENSTRÖME, MODERNE SPEICHERADRESSIERUNG.
 
- Info:
- UTF-8 Zeichen, einfache Sensorwerte.
+ FUNKTION = TRANSPORTIERT KOMPLEXE PROTEINE MIT MAXIMALER BANDBREITE
+----------------------------------------------------------------------
+ MCS-TYP = B-INF | BEZEICHNUNG = MASSEN-TYP | BIT-BREITE = 64
 
- Funktion:
- Tastatur und Symbol wie Sonderzeichen Einordnung
---------------------------------------------------------------------
- MCS-Typ: b16 | Bezeichnung: Logik-Link | Bit-Breite 16
+ INFO-ID = B-INF
 
- Info:
- MCS-Standard-Operatoren & Befehlskennung.
+ KURZ INFO = MASSENZUSAMMENSETZUNG
 
- Funktion:
- Verbindet zwei logische Zustände oder Symbole im Nanosekunden-Takt.
---------------------------------------------------------------------
- MCS-Typ: b32 | Bezeichnung: Adress-Pfad | Bit-Breite: 32
+ FUNKTION = SCHALTZUSTAND ÖFFNEN / SCHLIEẞEN
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+######################## ENDE DATENTYPEN KERNEL ##################################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+#################### ANFANG DATENTYPEN ID-DNA-GENERATOR ##########################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ MCS-TYP = B-þA| BEZEICHNUNG = ABGLEICHSNUMMER | BIT-BREITE =
 
- Info:
- Standard-Adressierung für Legacy-Systeme.
- Kompatibilitätsschicht für x86-Legacy-Strukturen.
+ INFO-ID = B-þA
 
- Funktion:
- Ermöglicht MCS den Zugriff auf herkömmliche
- RAM-Bereiche außerhalb des BMC.
---------------------------------------------------------------------
- MCS-Typ: b64 | Bezeichnung: High-Speed-Pfad | Bit-Breite: 64
+ KURZ INFO = DIENT ALS ABGLEICHSNUMMER FÜR DEN ID-DNA-GENERATOR
 
- Info:
- Große Datenströme, moderne Speicheradressierung.
- Basis für modernes Speicher-Management und Kognitive AIMS-Prozesse.
+ FUNKTION = SCHATTEN-IDENTITÄT
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+##################### ENDE DATENTYPEN ID-DNA-GENERATOR ###########################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+######################## ANFANG DATENTYPEN PROTEIN ###############################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ MCS-TYP = þ-KEY | BEZEICHNUNG = IDENTITÄTS-TYP | BIT-BREITE = VARIABEL
 
- Funktion:
- Transportiert komplexe Protein-Pakete mit maximaler Bandbreite.
---------------------------------------------------------------------
- MCS-Typ: b-inf | Bezeichnung: Massen-Typ | Bit-Breite: 64
-
- Info:
- Genutzt für ~~ (MassenZusammenSetzung) bei Streaming.
- Dynamische Skalierung für Stream-Daten (Video/Audio).
-
- Funktion:
- Hält das Gatter für die MassenZusammenSetzung (~~) offen.
---------------------------------------------------------------------
-
-
---------------------------------------------------------------------
- ################## Ende DATENTYPEN KERNEL ########################
---------------------------------------------------------------------
---------------------------------------------------------------------
-
---------------------------------------------------------------------
- #############  Anfang Datentypen ID-DNA-GENERATOR ################
---------------------------------------------------------------------
- MCS-Typ: b-þa | Bezeichnung: þ-Anker
-
- Info:
- Dient als ID-DNA-GENERATOR Zeiger Zum Abgleich
-
- Funktion :
- Ein 16- oder 32-Bit (oder 64-bit oder 128-bit) Anker-Typ,
- der nur als Zeiger für den Generator dient.
- Der Generator selbst hat die echte ID-DNA
---------------------------------------------------------------------
- ##############  Ende Datentyp ID-DNA-GENERATOR ###################
---------------------------------------------------------------------
---------------------------------------------------------------------
-
---------------------------------------------------------------------
---------------------------------------------------------------------
- ################# Anfang DATENTYPEN PROTEINE #####################
---------------------------------------------------------------------
- MCS-Typ: Þ-key | Bezeichnung: Identitäts-Typ | Bit-Breite: Variabel
-
- Info:
- Kryptogenetische Signatur für Transaktions-Sicherheit.
- Basis der Schatten-Identität.
-
- Funktion:
- Wird auf BIOS-Ebene geprüft.
- Erlaubt oder blockiert den Signalfluss in den Aktionsdraht ».
---------------------------------------------------------------------
- MCS-Typ: init-v | Bezeichnung: Start-Protein | Bit-Breite: 64+
-
- Info:
- Hardware-Initialisierungs-Vektor (Zündschlüssel).
-
- Funktion:
- Lädt FPGA-Bitstreams und Gatter-Konfigurationen beim
- Kaltstart direkt in die Register.
---------------------------------------------------------------------
- MCS-Typ: hnd-þ | Bezeichnung: Konsens-Typ | Bit-Breite: 128
-
- Info:
- Schnittstelle für die Demokratische Validierung (AIMS-Handshake).
-
- Funktion:
- Abgleich der Signaturen zwischen verschiedenen KI-Instanzen
- zur System-Integrität.
---------------------------------------------------------------------
- MCS-Typ: p-cmd  | Bezeichnung: Befehls-Protein | Bit-Breite: 16/32
-
- Info:
- Träger für ausführbare Kernel-Befehle (Register-Befehle).
-
- Funktion:
- Kapselt eine spezifische Aktion,
- die innerhalb eines Rahmens ¢! !¢ ausgeführt wird.
---------------------------------------------------------------------
- ################## Ende DATENTYPEN PROTEINE ######################
---------------------------------------------------------------------
---------------------------------------------------------------------
-
---------------------------------------------------------------------
---------------------------------------------------------------------
- ################# Anfang DATENTYPEN PROTONEN #####################
---------------------------------------------------------------------
- MCS-Typ: pr-phys  | Bezeichnung: Hardware-Physik | Bit-Breite: 32
-
- Info:
- Physikalische Messwerte (Einheiten) innerhalb von {}.
-
- Funktion:
- Verarbeitung von Echtzeit-Sensordaten (Watt, Volt, Celsius).
- Ermöglicht die direkte Hardware-Steuerung ohne Umrechnungs-Latenz.
---------------------------------------------------------------------
- MCS-Typ: f-ref | Bezeichnung: Zustands-Referenz | Bit-Breite: 16/32
-
- Info:
- Referenz-Pointer (Feed-Ref) auf Kernel 10.
-
- Funktion:
- Hält den Verweis auf einen Systemzustand im RAM fest.
- Verhindert Stack-Overflows, da keine Daten kopiert,
- sondern nur adressiert werden.
---------------------------------------------------------------------
- MCS-Typ: pr-val | Bezeichnung: Logik-Wert | Bit-Breite: 1 bis 64
-
- Info:
- Reine numerische oder boolesche Werte (Proton-Inhalt).
-
- Funktion:
- Dient als Operand für die Operatoren (Kernel 09).
- Liefert die Basis für Vergleiche wie < , > oder đ.
-
---------------------------------------------------------------------
- MCS-Typ: pr-dna | Bezeichnung: Bio-Schnittstelle | Bit-Breite: Variabel
-
- Info:
- Platzhalter für die zukünftige ID-DNA-BIOLIVE Einbindung.
-
- Funktion:
- Schnittstelle für biometrische oder organische Datenabgleiche
- (Baustelle für die spätere Erweiterung).
---------------------------------------------------------------------
- ################## Ende DATENTYPEN PROTONEN ######################
---------------------------------------------------------------------
---------------------------------------------------------------------
-
---------------------------------------------------------------------
---------------------------------------------------------------------
- ################# Anfang DATENTYPEN BOOT-LOGIK ###################
---------------------------------------------------------------------
- MCS-Typ: b-root | Bezeichnung: Master-Zweig | Bit-Breite: 128
-
- Info:
- Höchste Adressierungsebene für den Hardware-Zugriff.
-
- Funktion:
- Definiert den physischen Root-Zugriff auf den Chipsatz.
- Nur mit Stufe 10 (Thomas Zimmermann) þ-Key ansprechbar.
---------------------------------------------------------------------
- MCS-Typ: sys-rst | Bezeichnung: Purge-Initialer | Bit-Breite: 1
-
- Info:
- Hard-wired Reset-Trigger.
-
- Funktion:
- Erzwingt die vollständige Bereinigung (ſ)
- aller Register vor dem nächsten Rechenzyklus.
---------------------------------------------------------------------
- ################## Ende DATENTYPEN BOOT-LOGIK ####################
---------------------------------------------------------------------
---------------------------------------------------------------------
-
- Hinweis:
-
- Regel der Reinheit (ſ): Jede Transaktion innerhalb dieser
- Datentypen endet zwingend mit dem Operator ſ.
-
- Dies garantiert die atomare Sicherheit:
- Keine Datenreste, keine Side-Channel-Leaks,
- kein Spielraum für Manipulationen im BIOS-Bereich.
-
- Abschluss-Satz:
- Vorteil dieser Struktur:
- MCS erzwingt durch die bit-genaue Definition,
- dass Hardware und Software eine untrennbare Einheit bilden.
- Es gibt keine Interpretation durch Dritt-Anbieter –
- es gibt nur die absolute, deterministische Ausführung.
-
---------------------------------------------------------------------
-
- Datentypen Versions Validierungen 0.1:
-
- Kernel 09 (Operatoren) validiert.
-
- Kernel 14 (Identifikation) durch die þ-Anker logisch unterfüttert.
-
---------------------------------------------------------------------
---------------------------------------------------------------------
-
---------------------------------------------------------------------
-
---------------------------------------------------------------------
---------------------------------------------------------------------
-#########| Spezialisiert | NUR BMC | NUR Hardware |#################
---------------------------------------------------------------------
-
- Kategorie:
-
- MIT-SYNC = BOOT-LOGIK / HARDWARE-SYNC
-
---------------------------------------------------------------------
- ################## Anfang Datentypen MIT-SYNC ####################
---------------------------------------------------------------------
- MCS-Typ: mit-t  | Bezeichnung: Impuls-Trigger | Bit-Breite: 1
-
- Info:
- Repräsentiert den binären Zustand des mechanischen MIT-Aktors.
-
- Funktion:
- Erkennt das Überschreiten der harten Druckschwelle
- am Pinline-Eingang. Schaltet das System-Ereignis auf 1
- (Ereignis-Start).
---------------------------------------------------------------------
- MCS-Typ: mit-ref | Bezeichnung: Zeit-Anker-Referenz | Bit-Breite: 64
-
- Info:
- Der absolute Zeitstempel, der bei jedem MIT-Impuls generiert wird.
-
- Funktion:
- Dient als globaler Nullpunkt für den AI Synctimer (Kernel 18).
- Alle nachfolgenden Protein-Transaktionen werden relativ zu diesem
- Anker getaktet.
---------------------------------------------------------------------
- MCS-Typ: mit-dmp | Bezeichnung: Dämpfungs-Vektor | Bit-Breite: 8
-
- Info:
- Überwachungswert für die Energieabsorption am Endpunkt.
-
- Funktion:
- Prüft, ob der Impuls nach dem Anschlag korrekt absorbiert
- wurde (Ruhezustand-Validierung), um Resonanz oder
- Nachschwingen auszuschließen.
---------------------------------------------------------------------
- ###################  Ende Datentyp MIT-SYNC ######################
---------------------------------------------------------------------
---------------------------------------------------------------------
-
---------------------------------------------------------------------
- ################## Ende DATENTYPEN KERNEL ########################
---------------------------------------------------------------------
---------------------------------------------------------------------
+ INFO-ID = þ-KEY
+
+ KURZ INFO = KRYPTOGENETISCHE SIGNATUR
+
+ FUNKTION = SIGNALFLUSS PRÜFUNG
+----------------------------------------------------------------------
+ MCS-TYP = INIT-V | BEZEICHNUNG = START-PROTEIN | BIT-BREITE = 64+
+
+ INFO-ID = INIT-V
+
+ KURZ INFO = INITIALISIERUNGS-VEKTOR
+
+ FUNKTION = LÄD KONFIGURATIONEN BEIM START
+----------------------------------------------------------------------
+ MCS-TYP = HND-CMD| BEZEICHNUNG = KONSENS-TYP | BIT-BREITE = 128
+
+ INFO-ID = HND-CMD
+
+ KURZ INFO = SCHNITTSTELLE FÜR AIMS-HANDSHAKE
+
+ FUNKTION = ABGLEICH DER SIGNATUREN
+----------------------------------------------------------------------
+ MCS-TYP = P-CMD | BEZEICHNUNG = BEFEHLS-PROTEIN | BIT-BREITE = 16/32
+
+ INFO-ID = P-CMD
+
+ KURZ INFO = TRÄGER FÜR KERNEL BEFEHLE
+
+ FUNKTION = KAPSELUNG
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+################ ENDE DATENTYPEN PROTEIN #############################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+############## ANFANG DATENTYPEN PROTONEN ############################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ MCS-TYP = PR-PHYS | BEZEICHNUNG = HARDWARE-PHYSIK | BIT-BREITE = 32
+
+ INFO-ID = PR-PHYS
+
+ KURZ INFO = PHYSIKALISCHE MESSWERTE VON PROTONEN
+
+ FUNKTION = ECHTZEIT-SENSORDATEN
+----------------------------------------------------------------------
+ MCS-TYP = F-REF| BEZEICHNUNG = ZUSTANDS-REFERENZ| BIT-BREITE = 16/32
+
+ INFO-ID = F-REF
+
+ KURZ INFO = REFERENZ-POINTER FÜR FEED CACHE
+
+ FUNKTION = SYSTEMZUSTAND VERWEISE
+----------------------------------------------------------------------
+ MCS-TYP = PR-VAL | BEZEICHNUNG = LOGIK-WERT | BIT-BREITE = 1/64
+
+ INFO-ID = PR-VAL
+
+ KURZ INFO = REINE NUMMERISCHE ODER BOOLESCHE WERTE FÜR PROTON INHALT
+
+ FUNKTION = DIENT ALS OPERAND FÜR OPERATOREN
+----------------------------------------------------------------------
+ MCS-TYP = PR-DNA| BEZEICHNUNG = BIO-SCHNITTSTELLE | BIT-BREITE = VARIABEL
+
+ INFO-ID = PR-DNA
+
+ KURZ INFO = PLATZHALTER
+
+ FUNKTION = PLATZHALTER
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+################# ENDE DATENTYPEN PROTONEN ###########################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+################ ANFANG DATENTYPEN BOOT-LOGIK ########################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ MCS-TYP = B-ROOT | BEZEICHNUNG = MASTER-ZWEIG | BIT-BREITE = 128
+
+ INFO-ID = B-ROOT
+
+ KURZ INFO = HÖCHSTE ADRESSIERUNGSEBENE FÜR DEN HARDWARE-ZUGRIFF
+
+ FUNKTION = ROOT-ZUGRIFF-DEV
+----------------------------------------------------------------------
+ MCS-TYP = SYS-RST | BEZEICHNUNG = PURGE-INITIALER| BIT-BREITE = 1
+
+ INFO-ID = SYS-RST
+
+ KURZ INFO = HARDWIRED RESET-TRIGGER
+
+ FUNKTION = ERZWINGT BEREINIGUNG
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+################## ENDE DATENTYPEN BOOT-LOGIK ########################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+          DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT
+          PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------
+################### ENDE DATENTYPEN KERNEL ###########################

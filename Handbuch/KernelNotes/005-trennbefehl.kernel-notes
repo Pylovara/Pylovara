@@ -1,51 +1,20 @@
-@kernel-nr: 05 | TRENNBEFEHL/E | STATUS : VALIDE
-####################################################################
+@kernel-nr: 05 | TRENNBEFEHL | STATUS : VALIDE
+#######################################################################
 
  NAME = TRENNBEFEHL
 
- BEGRIFFSDEFINTION = DATENTRÄGELEHRZEICHEN
+ INFO-ID = TRENNBEFEHL
 
- MERHZAHL = TRENNBEFEHLE
+ BEGRIFFSDEFINTION = DATENTRÄGELEHRZEICHEN
 
  FUNKTION = LEERAUMBESEITIGUNG
 
- AUSFÜHRUNGSART =
+ AUSFÜHRUNGSART = LEERZEICHEN FÜR PROTEIN CONTAINER
 
---------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 
- ERKLÄRUNG TRENNBEFEHLE =
-
- DIENEN IN HAUPTDATENTRÄGE FÜR DIE OPTISCHE ORDNUNG UND WERDEN
- NIEMALS WIE IN BOXIS GENUTZT.
-
- SIE TRENNENBOXIS VONEINADER IN DER OPTISCHEN NATUR.
-
- TRENNBEFELE WERDEN NUR NICHT AM PROTEIN-START UND PROTEIN-ENDE
- GENUTZT DA DIE RAHMENBEDIENUNG SELBST AUSREICHT, DAS SELBE
- GILT IN PROTONEN RAHMENBEDIENUNGEN
---------------------------------------------------------------------
-
- ↓ STANDARTLAYOUT ↓
-
---------------------------------------------------------------------
-
- PROTEIN KLASSE =
-
- FUNKTION =
-
- SYMBOLISCHE DEKLARATION =
-
- SYMBOL IN WORTEN =
-
- INFO =
-
---------------------------------------------------------------------
-
-####################################################################
-
--------------------------------------------------------------------
-
- TRENNBEFEHL KLASSE = TRENNBEFEHL
+ TRENNBEFEHL KERN KLASSE = TRENNBEFEHL
 
  FUNKTION = LEERZEICHEN ZWISCHEN BOXIS
 
@@ -55,11 +24,8 @@
 
  INFO = WIRD ALS LEERZEICHEN GENUTZT IN PROTEINE WIE PROTONEN
 
---------------------------------------------------------------------
-
-####################################################################
-
---------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 
  WARNHINWEIS =
 
@@ -67,7 +33,10 @@
  ALTEN SYSTEMEN GENUTZT UND DÜRFEN UNTER KEINEM UMSTAND IN BOXIS
  GENAUSO VERWENDET WERDEN
 
---------------------------------------------------------------------
-
-#################### Ende der Trennbefehl  #########################
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+            DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT
+            PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------
+###################### ENDE DES TRENNBEFEHL  #########################
 

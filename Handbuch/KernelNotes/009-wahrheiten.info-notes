@@ -101,7 +101,167 @@ NICHT ANGEPASST , ALTE INFOS
 ######################################################################
 @info-id: WAHRHEITEN-BAUSTELLE
 ----------------------------------------------------------------------
+----------------------------------------------------------------------
 
+C Variante :
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <errno.h>
+
+// Funktion zur Dateigrößenabfrage
+long get_file_size(const char *path) {
+    struct stat st;
+    if (stat(path, &st) == -1) {
+        perror("stat failed");
+        return -1;
+    }
+    return st.st_size;
+}
+
+// Funktion zur Komprimierung (mit gzip)
+int compress_file(const char *path) {
+    char command[512];
+    snprintf(command, sizeof(command), "gzip -f \"%s\"", path);
+    int ret = system(command);
+    return (ret == 0) ? 0 : -1;
+}
+
+// Hauptfunktion
+int main() {
+    const char *original_path = "/home/user/document.pdf";
+    char *file_path = strdup(original_path);
+
+    if (!file_path) {
+        fprintf(stderr, "Speicherallokation fehlgeschlagen\n");
+        return 1;
+    }
+
+    // 1. Dateigröße ermitteln
+    long file_size = get_file_size(file_path);
+    if (file_size < 0) {
+        free(file_path);
+        return 1;
+    }
+
+    // 2. Berechnung 10 MB in Bytes
+    const long ten_mb = 10 * 1024 * 1024;  // 10 * 1024 * 1024
+
+    // 3. If-Bedingung + Komprimierung
+    if (file_size > ten_mb) {
+        printf("Datei ist größer als 10 MB (%ld Bytes), komprimiere...\n", file_size);
+
+        // Komprimieren
+        if (compress_file(file_path) == 0) {
+            // Neuen Pfad erstellen
+            char *new_path = malloc(strlen(file_path) + 5); // +4 für ".gz" + null
+            if (!new_path) {
+                free(file_path);
+                fprintf(stderr, "Speicherallokation fehlgeschlagen\n");
+                return 1;
+            }
+            sprintf(new_path, "%s.gz", file_path);
+
+            free(file_path);
+            file_path = new_path;
+
+            printf("Datei komprimiert. Neuer Pfad: %s\n", file_path);
+        } else {
+            fprintf(stderr, "Komprimierung fehlgeschlagen\n");
+        }
+    } else {
+        printf("Datei ist kleiner als 10 MB (%ld Bytes), keine Komprimierung nötig.\n", file_size);
+    }
+
+    // Aufräumen
+    free(file_path);
+    return 0;
+}
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+
+¢|
+»[×10·1024·1024×]«
+ -= »["10485760"]«
+
+»[~transfer box ¬ mach feed 1 ~|(1)"10485760"]«
+»[×$file_size > (1)×]«
+ -= »["is_large"]«
+¶ »["is_large"]
+   ['gzip "$file_path"']«
+   -= »["compress_ok"]«
+       ¶ »["compress_ok"]
+     ['file_path="${file_path}.gz"']«
+     -= »["new_path"]«
+»[~transfer box ¬ mach feed 2 ~|(2)"${file_path}.gz"]«
+ ¶¶ »["is_large"]
+     ["Datei ist klein, keine Komprimierung nötig."]«
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+¢|
+MCS zweite variante=
+
+¢|
+# 1. 10 MB in Bytes berechnen (ALU-RECHNER)
+»[×10·1024·1024×]«
+ -= »["10485760"]«
+
+# 2. Ergebnis in Feed 1 speichern (CMD-FEED)
+»[~transfer box ¬ mach feed 1 ~|(1)"10485760"]«
+
+# 3. Dateigröße mit Feed 1 vergleichen (SENTIATOR-MEHRWERT)
+»[×$file_size > (1)×]«
+ -= »["is_large"]«
+
+# 4. Wenn größer (SENTIATOR-KANN-IMPULS)
+     ¶ »["is_large"]
+     # 4a. Komprimieren (SHELL-CONTROL)
+        ['gzip "$file_path"']«
+        -= »["compress_ok"]«
+
+            ¶ »["compress_ok"]
+            # 4b. Pfad erweitern (SHELL-CONTROL)
+               ['file_path="${file_path}.gz"']«
+               -= »["new_path"]«
+
+# 4c. Neuen Pfad in Feed 2 speichern
+»[~transfer box ¬ mach feed 2 ~|(2)"${file_path}.gz"]«
+# 5. Wenn nicht größer (SENTIATOR-NICHT-IMPULS)
+ ¶¶ »["is_large"]
+     ["Datei ist klein, keine Komprimierung nötig."]«
+¢|
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+In C müsste der Prozessor:
+
+Variable A laden.
+
+Variable B laden.
+
+Subtrahieren.
+
+Flags prüfen (Zero-Flag, Carry-Flag).
+
+Einen Sprungbefehl (JMP) ausführen.
+
+Im Pylovara-Modell:
+
+Spannung an Gatter 1 (15).
+
+Spannung an Gatter 2 (10).
+
+Physikalischer Durchschlag am Komparator-Gatter (3).
+
+Lichtsignal (Warp) passiert das Gatter.
 
 ----------------------------------------------------------------------
 ######################################################################

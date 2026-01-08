@@ -1,6 +1,7 @@
-@kernel-nr: 993 | L1_CoreKernelMandat | Status: Fix
-#################### ANFANG LIZENZ-LAYER L1 ########################
---------------------------------------------------------------------
+@kernel-nr: 993 | L1_CoreKernelMandat | Status: Proto
+############################ ANFANG LIZENZ-LAYER L1 ##################
+----------------------------------------------------------------------
+
 1. Der Besitzanspruch (Identity) Das Mandat ist untrennbar mit
    der physischen Existenz und der digitalen Signatur des
    Urhebers verbunden:
@@ -8,7 +9,10 @@
     MCS-OWNER-ID: (Stufe 10)
 
     Inhaber: Thomas Zimmermann (geb. 23.04.1988, Deutschland)
---------------------------------------------------------------------
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
 2. Schutzbereich Hardware (BrainMaschineCore) Das Mandat
    erstreckt sich explizit auf die Eigenentwicklungen der
    FPGA-Architektur:
@@ -32,7 +36,10 @@
     Lichtleiterbahnen:
 
     Die Gesamte Technische Umsetzung in meiner Form.
---------------------------------------------------------------------
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
 3. Kern-Mandate
 
     Unveränderbarkeit:
@@ -52,7 +59,10 @@
     Ich behalte mir vor, jede Hardware, die MCS für unmenschliche
     Zwecke oder zur Unterdrückung missbraucht, technisch zu
     isolieren oder unbrauchbar zu machen (Hardware-Brick).
---------------------------------------------------------------------
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
 4. Technischer Schutzmechanismus Beim Systemstart (Kaltstart/init-v)
    erzwingt der Kernel den Abgleich:
 
@@ -62,10 +72,14 @@
 
     Bei Manipulation: Sofortiger Stopp des Signalflusses
     in den Aktionsdraht ».
---------------------------------------------------------------------
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
    Abschluss L1:
 
     Das Mandat ist im Binärcode code-identisch eingebettet.
     Es existiert keine administrative Ebene oberhalb des Urhebers.
---------------------------------------------------------------------
-##################### Ende LIZENZ-LAYER L1 #########################
+
+----------------------------------------------------------------------
+####################### Ende LIZENZ-LAYER L1 #########################

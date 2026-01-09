@@ -12,6 +12,7 @@
 #include "include/mcs_08_master-control.h"
 #include "include/mcs_01_datentypen.h"
 #include "include/mcs_17_parser.h"
+
 // Globale Instanz
 mcs_master_control_t MC_Global = {0};
 
@@ -77,8 +78,8 @@ int main(void) {
     printf("\n=== PYLOVARA MCS KERNEL LEBT ===\n");
     printf("=== Herzschlag stabil – 8-Takt synchron ===\n");
     printf("Nächste Phase: Parser für ¢! ... !¢ Transaktionen\n");
-    printf("\nLade und führe test.zweig-core aus...\n");
-    mcs_parser_execute_file("testcodes/test.zweig-core");
+    printf("\nLade und führe test.datei-lcore aus...\n");
+    mcs_parser_execute_file("testcodes/test.datei-lcore");
 
     if (MC_Global.magic_grossmutter) {
         free(MC_Global.magic_grossmutter);

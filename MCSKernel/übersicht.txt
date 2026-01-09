@@ -5,15 +5,12 @@ make clean
 make
 make run
 
+#### Tests
+make clean
+make
+./pylovara_kernel testcodes/test.datei-lcore && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore
 
-make clean && make && make run /Pylovara/MCSKernel/testcodes/./test.zweig-core
-
-
-cd /Pylovara/MCSKernel/ && make clean && make && echo "--- CODE ---" && cat /Pylovara/MCSKernel/testcodes/test.zweig-core && echo "--- OUTPUT ---" && ./mcs /Pylovara/MCSKernel/testcodes/test.zweig-core
-
-#### testcode mcs
-cat /Pylovara/MCSKernel/testcodes/test.zweig-core
-
+/Pylovara/MCSKernel/testcodes/test.datei-lcore
 
 --------------------------------------------------------------------------------
 ## Saubere Ordner Daten

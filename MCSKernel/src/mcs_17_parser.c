@@ -1,7 +1,7 @@
 // =============================================================================
 // src/mcs_17_parser.c
 // Pylovara MCS Kernel – Modul 17: Parser (Implementierung)
-// Stand: 08. Januar 2026
+// Stand: 09. Januar 2026 – SSoT 00.58 konform
 // =============================================================================
 
 #include "mcs_17_parser.h"
@@ -15,35 +15,35 @@
 static int variables[10] = {0};
 static int var_count = 0;
 
-// Hilfsfunktion: Ersetze °(n)° durch aktuellen Wert (UTF-8 safe)
+// Hilfsfunktion: Ersetze °(n)° durch aktuellen Wert (UTF-8 safe, keine Warnungen)
 static void replace_vars(char* line) {
     char buffer[512];
-    char* pos = line;
+    const unsigned char* upos = (const unsigned char*)line;
     char* out = buffer;
 
-    while (*pos) {
-        if (*pos == 0xC2 && *(pos+1) == 0xB0) { // UTF-8 für °
-            pos += 2;
-            if (*pos == '(') {
-                pos++;
+    while (*upos) {
+        if (*upos == 0xC2 && *(upos+1) == 0xB0) { // UTF-8 für °
+            upos += 2;
+            if (*upos == '(') {
+                upos++;
                 int idx;
-                char* end = strchr(pos, ')');
-                if (end && sscanf(pos, "%d", &idx) == 1 && idx < var_count) {
+                const char* end = strchr((const char*)upos, ')');
+                if (end && sscanf((const char*)upos, "%d", &idx) == 1 && idx < var_count) {
                     out += sprintf(out, "%d", variables[idx]);
-                    pos = end + 1;
-                    if (*pos == 0xC2 && *(pos+1) == 0xB0) pos += 2; // schließendes °
+                    upos = (const unsigned char*)end + 1;
+                    if (*upos == 0xC2 && *(upos+1) == 0xB0) upos += 2;
                 } else {
                     *out++ = 0xC2;
                     *out++ = 0xB0;
-                    *out++ = *pos++;
+                    *out++ = *upos++;
                 }
             } else {
                 *out++ = 0xC2;
                 *out++ = 0xB0;
-                *out++ = *pos++;
+                *out++ = *upos++;
             }
         } else {
-            *out++ = *pos++;
+            *out++ = *upos++;
         }
     }
     *out = '\0';
@@ -66,9 +66,11 @@ static void store_value_from_echo(const char* cmd) {
 static bool evaluate_comparison(const char* cmd) {
     int v1, v2;
     if (sscanf(cmd, "[×°(%d)° > °(%d)°×]", &v1, &v2) == 2) {
-        bool result = (v1 < var_count && v2 < var_count) ? (variables[v1] > variables[v2]) : false;
-        printf("[VERGLEICH] v%d (%d) > v%d (%d) = %s\n", v1, variables[v1], v2, variables[v2], result ? "WAHR" : "FALSCH");
-        return result;
+        if (v1 < var_count && v2 < var_count) {
+            bool result = variables[v1] > variables[v2];
+            printf("[VERGLEICH] v%d (%d) > v%d (%d) = %s\n", v1, variables[v1], v2, variables[v2], result ? "WAHR" : "FALSCH");
+            return result;
+        }
     }
     return false;
 }
@@ -80,12 +82,11 @@ int mcs_parser_execute_file(const char* filename) {
         return -1;
     }
 
-    printf("[PARSER] Führe '%s' aus\n", filename);
+    printf("[PARSER] Führe '%s' aus – SSoT 00.58 konform\n", filename);
 
     char line[512];
     int in_transaction = 0;
     bool condition_true = false;
-    int condition_level = 0;
     var_count = 0;
 
     while (fgets(line, sizeof(line), file)) {
@@ -107,31 +108,10 @@ int mcs_parser_execute_file(const char* filename) {
 
         if (!in_transaction) continue;
 
-        // Bedingung ¶
-        if (strncmp(line, "¶", 3) == 0) { // UTF-8 ¶ ist 3 Bytes
-            condition_level++;
-            char* cmd = line + 3;
-            while (isspace(*cmd)) cmd++;
-            condition_true = evaluate_comparison(cmd);
-            continue;
-        }
-
-        // Bedingung ¶¶ (else)
-        if (strncmp(line, "¶¶", 6) == 0) { // UTF-8 ¶¶ sind 6 Bytes
-            if (condition_level == 1 && !condition_true) {
-                char* cmd = line + 6;
-                while (isspace(*cmd)) cmd++;
-                replace_vars(cmd);
-                printf("%s\n", cmd);
-            }
-            condition_level--;
-            continue;
-        }
-
         // Befehl »
-        if (strncmp(line, "»", 3) == 0) { // UTF-8 » ist 3 Bytes
+        if (strncmp(line, "»", 3) == 0) {
             char* cmd = line + 3;
-            while (isspace(*cmd)) cmd++;
+            while (*cmd == ' ') cmd++;
 
             if (strstr(cmd, "['echo") != NULL) {
                 store_value_from_echo(cmd);
@@ -139,6 +119,59 @@ int mcs_parser_execute_file(const char* filename) {
                 if (sscanf(cmd, "['echo %255[^']]", content) == 1) {
                     replace_vars(content);
                     printf("%s\n", content);
+                }
+            }
+        }
+
+        // Workspace-Zuweisungen
+        if (strstr(line, "-·=") != NULL) {
+            int idx;
+            if (sscanf(line, "-·= [( %d )°°]", &idx) == 1) {
+                printf("[WORKSPACE A] v%d reserviert\n", idx);
+            }
+        }
+        if (strstr(line, "-··=") != NULL) {
+            int idx;
+            if (sscanf(line, "-··= [( %d )°°]", &idx) == 1) {
+                printf("[WORKSPACE B] v%d reserviert\n", idx);
+            }
+        }
+        if (strstr(line, "-···=") != NULL) {
+            int idx;
+            if (sscanf(line, "-···= [( %d )°°]", &idx) == 1) {
+                printf("[WORKSPACE C] v%d reserviert\n", idx);
+            }
+        }
+
+        // SENTIATOR-KANN-IMPULS (¶)
+        if (strncmp(line, "    ¶", 6) == 0) {
+            char* cmd = line + 6;
+            while (*cmd == ' ') cmd++;
+            condition_true = evaluate_comparison(cmd);
+        }
+
+        // Parallel-Transport bei WAHR
+        if (strstr(line, "-····>") != NULL) {
+            if (condition_true) {
+                char* cmd = strstr(line, "»");
+                if (cmd) {
+                    cmd += 3;
+                    while (*cmd == ' ') cmd++;
+                    replace_vars(cmd);
+                    printf("%s\n", cmd);
+                }
+            }
+        }
+
+        // Parallel-Transport bei FALSCH
+        if (strstr(line, "-·····>") != NULL) {
+            if (!condition_true) {
+                char* cmd = strstr(line, "»");
+                if (cmd) {
+                    cmd += 3;
+                    while (*cmd == ' ') cmd++;
+                    replace_vars(cmd);
+                    printf("%s\n", cmd);
                 }
             }
         }

@@ -75,9 +75,8 @@ int main(void) {
 
     printf("\n64 Zyklen in Echtzeit abgeschlossen – System reagiert sofort.\n");
 
-    printf("\n=== PYLOVARA MCS KERNEL LEBT ===\n");
+    printf("\n=== PYLOVARA MCS KERNEL ON ===\n");
     printf("=== Herzschlag stabil – 8-Takt synchron ===\n");
-    printf("Nächste Phase: Parser für ¢! ... !¢ Transaktionen\n");
     printf("\nLade und führe test.datei-lcore aus...\n");
     mcs_parser_execute_file("testcodes/test.datei-lcore");
 

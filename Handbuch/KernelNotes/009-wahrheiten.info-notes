@@ -186,21 +186,21 @@ int main() {
 
 
 ¢|
-»[×10·1024·1024×]«
- -= »["10485760"]«
+-· »[×10·1024·1024×]«
+    -·= »["10485760"]«
 
-»[~transfer box ¬ mach feed 1 ~|(1)"10485760"]«
-»[×$file_size > (1)×]«
- -= »["is_large"]«
-¶ »["is_large"]
-   ['gzip "$file_path"']«
-   -= »["compress_ok"]«
-       ¶ »["compress_ok"]
-     ['file_path="${file_path}.gz"']«
-     -= »["new_path"]«
+-· »[~transfer box ¬ mach feed 1 ~|(1)"10485760"]«
+-· »[×$file_size > (1)×]«
+    -··= »["is_large"]«
+¶ -·· »["is_large"]
+   -·· ['gzip "$file_path"']«
+   -··= »["compress_ok"]«
+         ¶ -·· »["compress_ok"]
+           -·· ['file_path="${file_path}.gz"']«
+           -··= »["new_path"]«
 »[~transfer box ¬ mach feed 2 ~|(2)"${file_path}.gz"]«
- ¶¶ »["is_large"]
-     ["Datei ist klein, keine Komprimierung nötig."]«
+ ¶¶ -· »["is_large"]
+    -· ["Datei ist klein, keine Komprimierung nötig."]«
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -211,31 +211,31 @@ MCS zweite variante=
 ¢|
 # 1. 10 MB in Bytes berechnen (ALU-RECHNER)
 »[×10·1024·1024×]«
- -= »["10485760"]«
+ -·= »[(1)"10485760"]«
 
 # 2. Ergebnis in Feed 1 speichern (CMD-FEED)
-»[~transfer box ¬ mach feed 1 ~|(1)"10485760"]«
+»[~transfer letzte boxis ¬ mach feed 1~|"(1)10485760"]«
 
 # 3. Dateigröße mit Feed 1 vergleichen (SENTIATOR-MEHRWERT)
 »[×$file_size > (1)×]«
- -= »["is_large"]«
+ -··= »["is_large"]«
 
 # 4. Wenn größer (SENTIATOR-KANN-IMPULS)
-     ¶ »["is_large"]
+     ¶ -·· »["is_large"]
      # 4a. Komprimieren (SHELL-CONTROL)
-        ['gzip "$file_path"']«
-        -= »["compress_ok"]«
+           -·· ['gzip "$file_path"']«
+           -·· »["compress_ok"]«
 
             ¶ »["compress_ok"]
             # 4b. Pfad erweitern (SHELL-CONTROL)
                ['file_path="${file_path}.gz"']«
-               -= »["new_path"]«
+               -···= »["new_path"]«
 
 # 4c. Neuen Pfad in Feed 2 speichern
-»[~transfer box ¬ mach feed 2 ~|(2)"${file_path}.gz"]«
+»[~transfer boxis ¬ mach feed 2~|(2)"${file_path}.gz"]«
 # 5. Wenn nicht größer (SENTIATOR-NICHT-IMPULS)
- ¶¶ »["is_large"]
-     ["Datei ist klein, keine Komprimierung nötig."]«
+ ¶¶ -··> »["is_large"]«««t5
+    -··> »["Datei ist klein, keine Komprimierung nötig."]«««t6
 ¢|
 
 ----------------------------------------------------------------------

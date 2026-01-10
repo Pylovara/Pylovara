@@ -1,12 +1,12 @@
 ¢!
-»['echo 15']
+»[×1+1×]
  -·= [(1)°°]«
-»['echo 10']
+»[×2+2×]
  -··= [(2)°°]«
 »[×°(1)° > °(2)°×]
  -···= [(3)°°]«
-       ¶ »[°(3)°]«
-          -····> »['echo "JA! ALU kann Feed-Zahlen vergleichen: °(3)°"']«
-       ¶¶ »[°(3)°]«
-           -·····> »['echo "Nope, immer noch kaputt"']«
+       ¶ »[°(3)°]
+          -····> ['echo "JA! ALU kann Feed-Zahlen vergleichen: °(3)°"']«
+       ¶¶ »[°(3)°]
+           -·····> ['echo "Nope, immer noch kaputt"']«
 !¢

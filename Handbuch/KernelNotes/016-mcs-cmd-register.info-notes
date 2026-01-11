@@ -60,6 +60,12 @@
  # - LCORE
  # - VCORE
 
+
+ Register-Mapping:
+ Die Befehle master control <cmd>
+ müssen direkt auf die Kernel-Funktionen
+ für Prozess-Management gemappt werden.
+
 ----------------------------------------------------------------------
 ######################################################################
 @info-id: MCS-CMD-REGISTER-BAUSTELLE

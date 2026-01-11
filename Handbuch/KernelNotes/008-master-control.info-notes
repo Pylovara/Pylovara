@@ -76,6 +76,11 @@ aushängbaren Puzzelstück .
 Dabei ist nur zu Verstehen vom kopf an fängt der datensatz an
 und folgt immer ab dem kopf den Datenstrang.
 
+
+Dateityp-Erkennung:
+Der Parser muss beim Starten einer Datei prüfen:
+Ist es ein lcore? Wenn ja, aktiviere den Needle-Modus.
+
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
   VISUALISIERUNG: TREIBER-EINRASTUNG (HARDWARE-NODE-MAPPING)

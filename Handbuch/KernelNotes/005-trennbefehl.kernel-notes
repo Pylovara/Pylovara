@@ -26,6 +26,36 @@
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
+ PROTEIN KERN UNTERKLASSE = TRENNBEFEHL-NEXT
+
+ FUNKTION = CONTAINERISIERT MEHRERE BOXIS IN EINEM PROTEIN
+
+ SYMBOLISCHE DEKLARATION = | |
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
+
+ INFO = ENDE DES PROTEIN
+
+ BEISPIEL =
+
+ »['echo HALLO'|'echo HALLO 2'|'echo HALLO 3']«
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTEIN KERN UNTERKLASSE = TRENNBEFEHL-NEXT-NEXT
+
+ FUNKTION = CONTAINERISIERT MEHRERE BOXIS IN EINEM PROTEIN
+
+ SYMBOLISCHE DEKLARATION = | | |
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
+
+ INFO = ENDE DES PROTEIN
+
+ BEISPIEL =
+
+ »['echo HALLO'|'echo HALLO 2'|'echo HALLO 3'|'echo HALLO 4']«
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 
  WARNHINWEIS =
 

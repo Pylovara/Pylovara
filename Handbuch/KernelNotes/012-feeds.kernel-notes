@@ -26,7 +26,7 @@
 
  INFO-ID = FEEDS
 
- FUNKTION = CACHE GEBUNDER RAHMEN
+ FUNKTION = GESAMMTHEITLICHER CACHE GEBUNDENER NUMMERIERTE RAHMEN
 
  SYMBOLISCHE DEKLARATION = ( )
 
@@ -36,6 +36,37 @@
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
+
+ FEED KERN KLASSE = FEEDS-FÜHREND
+
+ INFO = ZENTRALISTISCHEVERBREITUNGSSYNCRONISATION INSTANZ
+
+ FUNKTION = CACHE GEBUNDENER RAHMEN
+
+ SYMBOLISCHE DEKLARATION = ( )°°
+
+ SYMBOL IN WORTEN = KLAMMER AUF KLAMMER ZU BOXIS
+
+ INFO = FEEDRAHMEN FÜR ELTERNTEILE
+        IN DER BOXIS KLASSE = BOXIS-BLANKERNENNER
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ FEED KERN KLASSE = FEEDS-TRAGEND
+
+ INFO = DUPLIKATIONSSYNCRONISATIONSVERARBEITUNG INSTANZ
+
+ FUNKTION = CACHE GEBUNDENER RAHMEN VOM FEEDS-FÜHREND
+
+ SYMBOLISCHE DEKLARATION = °( )°
+
+ SYMBOL IN WORTEN = BOXIS-START KLAMMER AUF NR/BN KLAMMER ZU BOXIS-ENDE
+
+ INFO = FEEDRAHMEN TRANSPORTRAHMEN FÜR GESCHWISTER -
+        IN DER BOXIS KLASSE = BOXIS-BLANKERNENNER
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
  FEED KERN UNTERKLASSE KLASSE = FEEDS-START
 
@@ -65,36 +96,7 @@
  INFO = RAHMENBEDIENUNG ENDE FÜR NUMMERISCHE ABLAGEN
 
 ----------------------------------------------------------------------
-----------------------------------------------------------------------
 
- FEED KERN OBERKLASSE = FEEDS-FÜHREND
-
- INFO = ZENTRALISTISCHEVERBREITUNGSSYNCRONISATION INSTANZ
-
- FUNKTION = CACHE GEBUNDENER RAHMEN
-
- SYMBOLISCHE DEKLARATION = ( )°°
-
- SYMBOL IN WORTEN = KLAMMER AUF KLAMMER ZU BOXIS
-
- INFO = FEEDRAHMEN FÜR ELTERNTEILE
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- FEED KERN OBERKLASSE = FEEDS-TRAGEND
-
- INFO = DUPLIKATIONSSYNCRONISATIONSVERARBEITUNG INSTANZ
-
- FUNKTION = CACHE GEBUNDENER RAHMEN VOM FEEDS-FÜHREND
-
- SYMBOLISCHE DEKLARATION = °( )°
-
- SYMBOL IN WORTEN = BOXIS-START KLAMMER AUF NR/BN KLAMMER ZU BOXIS-ENDE
-
- INFO = FEEDRAHMEN TRANSPORTRAHMEN FÜR GESCHWISTER -
-
-----------------------------------------------------------------------
 ----------------------------------------------------------------------
         DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
         PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT

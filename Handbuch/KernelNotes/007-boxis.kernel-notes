@@ -10,12 +10,12 @@
 
  FUNKTION =  TRANSPORTNEUTRALER TRÄGER FÜR INTENTIONALE OPERATIONEN
 
- AUSFÜHRUNGSART =
+ AUSFÜHRUNGSART = KERN OBER KLASSE
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- BOXI KLASSE = CALLIS
+ BOXI KERN KLASSE = BOXIS-CALLIS
 
  INFO-ID = BOXIS-CALLIS
 
@@ -26,10 +26,11 @@
  SYMBOL IN WORTEN = ANFÜHRUNGSZEICHEN INHALT ANFÜHRUNGSZEICHEN
 
  INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
+
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- BOXI KLASSE = CALL-CONTROL
+ BOXI KERN KLASSE = BOXIS-CALL-CONTROL
 
  INFO-ID = BOXIS-CALL-CONTROL
 
@@ -44,7 +45,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- BOXI KLASSE = SHELL-CONTROL
+ BOXI KERN KLASSE = BOXIS-SHELL-CONTROL
 
  INFO-ID = BOXIS-SHELL-CONTROL
 
@@ -58,7 +59,6 @@
 
  SHELL-CONTROL MUSTERBEISPIELE =
 
-
  EINSATZBEREICHE MUSTERBEISPIELE =
 
  (erklärt sich von selbst)
@@ -66,9 +66,9 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- BOXI KLASSE = ALU-RECHNER
+ BOXI KERN KLASSE = BOXIS-ALU-RECHNER
 
- INFO-ID = BOXIS-ALU
+ INFO-ID = BOXIS-ALU-RECHNER
 
  FUNKTION = GIBT RECHNUNG ZUR ALU
 
@@ -79,11 +79,32 @@
  INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZUR
         ZU WAHRHEITEN-AUSWERTUNG
 
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ BOXI KLASSE = BOXIS-MCS-CMD
+
+ FUNKTION = HAUSEIGENER KOMMANDO BEFEHLE
+
+ SYMBOLISCHE DEKLARATION = ~ ~
+
+ SYMBOL IN WORTEN = TILDE INHALT TILDE
+
+ INFO = STEUERT DAS EIGENE MCS-CMD-REGISTER AN
+
+ MCS-CMD MUSTERBEISPIELE =
+
+ »[~feed cache löschung 1~]«
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+ NUR MCS ELEMENTE WERDEN ANGESTEUERT, WIE ZUM BEISPIEL FEED/S.
+ MCS-CMD/S SIND MIT DEM HAUSEIGENEN MCS-REGISTER VERBUNDEN.
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
-BOXI KLASSE = BLANKERNENNER
+ BOXI KERN KLASSE = BOXIS-BLANKERNENNER
 
  FUNKTION = TRANSPORTIERT DATEN
 
@@ -108,30 +129,8 @@ BOXI KLASSE = BLANKERNENNER
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
-
- BOXI KLASSE = MCS-CMD
-
- FUNKTION = HAUSEIGENER KOMMANDO BEFEHLE
-
- SYMBOLISCHE DEKLARATION = ~ ~
-
- SYMBOL IN WORTEN = TILDE INHALT TILDE
-
- INFO = STEUERT DAS EIGENE MCS-CMD-REGISTER AN
-
- MCS-CMD MUSTERBEISPIELE =
-
- »[~feed cache löschung 1~]«
- »[~’COPIE WAHRHEITEN-ERGEBNIS TO’~|(1)""]«
-
- EINSATZBEREICHE MUSTERBEISPIELE =
-
- NUR MCS ELEMENTE WERDEN ANGESTEUERT, WIE ZUM BEISPIEL FEED/S.
- MCS-CMD/S SIND MIT DEM HAUSEIGENEN MCS-REGISTER VERBUNDEN.
-
+      DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT
+      PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
 ----------------------------------------------------------------------
-     DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT
-     PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-######################## ENDE DER BOXIS ##############################
+########################### ENDE DER BOXIS ###########################
 

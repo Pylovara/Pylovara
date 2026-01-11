@@ -28,9 +28,9 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-ZEIT
+ ARGUMENT UNTERKLASSE = ARGUMENT-TRIGGER-ZEIT
 
- FUNKTION = ZEIT IN SEKUNDEN
+ FUNKTION = SEKUNDEN ZEIT IN SEKUNDEN
 
  SYMBOLISCHE DEKLARATION = T
 
@@ -41,9 +41,22 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-EXIT
+ ARGUMENT UNTERKLASSE = ARGUMENT-TRIGGER-TAKTSCHLÄGE
 
- FUNKTION = BEENDET
+ FUNKTION = ZÄHLT DIE TAKTE RUNTER
+
+ SYMBOLISCHE DEKLARATION = TS
+
+ SYMBOL IN WORTEN = TS
+
+ INFO = ZÄHLT DIE TAKTE RUNTER FÜR DEN WEITEREN PROZESS
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ ARGUMENT UNTERKLASSE = ARGUMENT-TRIGGER-EXIT
+
+ FUNKTION = BEENDET NACH DEM PROZESS
 
  SYMBOLISCHE DEKLARATION = E
 
@@ -54,7 +67,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- ARGUMENT OPTIONS KLASSE = ARGUMENT-TRIGGER-BESTÄTIGUNG
+ ARGUMENT UNTERKLASSE = ARGUMENT-TRIGGER-BESTÄTIGUNG
 
  FUNKTION = ADMINISTRATIVE BESTÄTIGUNGSANFRAGE
 

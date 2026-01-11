@@ -27,10 +27,6 @@
         WIRD NIEMALS ALS HEADER BENUTZT SONDERN,
         ALS ENTSCHEIDUNGSLOGIK
 
- SENTIATOR MUSTERBEISPIELE =
-
- EINSATZBEREICHE MUSTERBEISPIELE =
-
  COMPILER =
  Der Sentiator muss den "Zustand der Reinheit" prüfen.
  Wenn ¶ gerufen wird, muss er prüfen: Ist FF(X) == 1?.
@@ -51,10 +47,6 @@
         WIRD NIEMALS ALS HEADER BENUTZT SONDERN,
         ALS ENTSCHEIDUNGSLOGIK
 
- SENTIATOR MUSTERBEISPIELE =
-
- EINSATZBEREICHE MUSTERBEISPIELE =
-
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
@@ -66,11 +58,9 @@
 
  SYMBOL IN WORTEN = LANGES S
 
- INFO = DIE REGEL DER REINHEIT ERKENNT DATENMÜLL
-
- SENTIATOR MUSTERBEISPIELE =
-
- EINSATZBEREICHE MUSTERBEISPIELE =
+ INFO = DIE REGEL DER REINHEIT ERKENNT DATENMÜLL.
+        NACH FERTIGEN PROZESS KETTEN KANN SIE ALS
+        DIREKTE BEREINIGUNGS ADRESSIERUNG GENUTZT WERDEN
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

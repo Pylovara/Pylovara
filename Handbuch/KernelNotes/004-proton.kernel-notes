@@ -1,4 +1,4 @@
-@kernel-nr: 04 | PROTONEN | STATUS : TEILBAUSTELLE
+@kernel-nr: 04 | PROTONEN | STATUS : VALIDE
 ######################################################################
 ----------------------------------------------------------------------
  NAME = PROTONEN
@@ -12,29 +12,7 @@
  AUSFÜHRUNGSART =
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- PROTON KLASSE = PROTON-START
-
- FUNKTION = ANFANGSBEDIENUNG
-
- SYMBOLISCHE DEKLARATION = {
-
- SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF
-
- INFO = ANFANG DES PROTON
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- PROTON KLASSE = PROTON-ENDE
-
- FUNKTION = ENDBEDIENUNG
-
- SYMBOLISCHE DEKLARATION = }
-
- SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER ZU
-
- INFO = ENDE DES PROTON
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- PROTON KLASSE = GNAZLICHES-PROTON
+ PROTON KERN KLASSE = PROTON
 
  FUNKTION = RAHMENBEDIENUNG
 
@@ -47,6 +25,28 @@
  INFO = STELLT NUR DIE RAHMENBEDIENUNG HER
 
  INFO-ID = PROTONEN-BAUSTELLE
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTON KERN UNTERKLASSE = PROTON-START
+
+ FUNKTION = ANFANGSBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = {
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF
+
+ INFO = ANFANG DES PROTON
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTON KERN UNTERKLASSE = PROTON-ENDE
+
+ FUNKTION = ENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = }
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER ZU
+
+ INFO = ENDE DES PROTON
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
             DATUM = [03:20:23|Fr 25 Jun 2025] MARKENBRANDT

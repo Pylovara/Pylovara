@@ -59,37 +59,38 @@
 
 ----------------------------------------------------------------------
 ######################################################################
-@info-id: WAHRHEITEN-WORKSPACE
+@info-id: WAHRHEITEN-BAUSTELLE
 ----------------------------------------------------------------------
 NICHT ANGEPASST , ALTE INFOS
 ----------------------------------------------------
  EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR):
        »[PROTEIN-START]« # Linker Rand
         –·: ############### 50% »[OPTION-A-AKTION]« # Mit Progress
-            -= [(NR)"WERT"]
+            -·= [(NR)"WERT"]
                –··: ######################## 80% »[OPTION-B-AKTION]«
-        –< »[PARALLEL-PROZESS]«
-            –·: ############################### 100% »[PARALLEL-A]«
+        –··< »[PARALLEL-PROZESS]«
+            –··: ############################### 100% »[PARALLEL-A]«
     »[NEUES-PROTEIN]«
 ----------------------------------------------------
   ANWENDUNGSBEISPIELE:
   # 1. GUI-MENÜ MIT PROGRESS (Ladebalken pro Punkt)
-    –< »[×(MENU_LABEL) == "Quit"×]«
+    –·¤< »[×(MENU_LABEL) == "Quit"×]«
         –·: ############################### 100% »[~BEENDE PROGRAMM~]«
-    –< »[×(MENU_LABEL) == "About"×]«
+    –·¤< »[×(MENU_LABEL) == "About"×]«
         –··: ###################### 70% »[~show_about_dialog~]«
-    –< »[×(MENU_LABEL) == "Settings"×]«
+    –·¤< »[×(MENU_LABEL) == "Settings"×]«
         –···: ############### 50% »[~ÖFFNE SETTINGS~]«
-    –> »[×(MENU_LABEL) != ""×]«
+    –·¤> »[×(MENU_LABEL) != ""×]«
         –····: 0% »["Unbekannter Menüpunkt"]«
   # 2. DATEIVERARBEITUNG MIT PROGRESS
-    –·< »[×feed cache 1 > 10485760×]«
-         –·: ######################## 80% »['gzip $FILE']«
-         –··: ############################### 100% »[ -= (STATUS)"compressed" ]«
+    –·¤< »[×feed cache 1 > 10485760×]«
+         –·¤: ######################## 80% »['gzip $FILE']«
+         –··¤: ############################### 100%
+             -··¤: »['echo Compression Vollendet']«
   # 3. IDE-PROZESS (Loading)
-    –·: ############### 50% »[~load_project~]«
-    –··: ######################## 80% »[~compile_mcs~]«
-    –···: ############################### 100% »[~run_simulation~]«
+    –·¤: ############### 50% »[~load_project~]«
+    –··¤: ######################## 80% »[~compile_mcs~]«
+    –···¤: ############################### 100% »[~run_simulation~]«
 ----------------------------------------------------
  ZUKUNFTSERWEITERUNGEN (BAUSTELLE):
    –<–> = FORK ODER SPLITTING (LINKS → RECHTS)
@@ -98,8 +99,6 @@ NICHT ANGEPASST , ALTE INFOS
 ----------------------------------------------------
 NICHT ANGEPASST , ALTE INFOS
 ----------------------------------------------------------------------
-######################################################################
-@info-id: WAHRHEITEN-BAUSTELLE
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
@@ -187,20 +186,20 @@ int main() {
 
 ¢|
 -· »[×10·1024·1024×]«
-    -·= »["10485760"]«
+    -·¤= »["10485760"]«
 
 -· »[~transfer box ¬ mach feed 1 ~|(1)"10485760"]«
--· »[×$file_size > (1)×]«
-    -··= »["is_large"]«
-¶ -·· »["is_large"]
-   -·· ['gzip "$file_path"']«
-   -··= »["compress_ok"]«
-         ¶ -·· »["compress_ok"]
-           -·· ['file_path="${file_path}.gz"']«
-           -··= »["new_path"]«
-»[~transfer box ¬ mach feed 2 ~|(2)"${file_path}.gz"]«
- ¶¶ -· »["is_large"]
-    -· ["Datei ist klein, keine Komprimierung nötig."]«
+-· »[×$file_size > (1)×]
+    -··¤= ["is_large"]«
+    ¶ -·· »["is_large"]
+           -· ['gzip "$file_path"']«
+    -··¤= »["compress_ok"]«
+           ¶ -·· »["compress_ok"]
+                  -·· ['file_path="${file_path}.gz"']«
+                      -··¤= »["new_path"]
+-·· »[~transfer box ¬ mach feed 2 ~|(2)"${file_path}.gz"]«
+     ¶¶ -·· »["is_large"]
+             -· ["Datei ist klein, keine Komprimierung nötig."]«
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

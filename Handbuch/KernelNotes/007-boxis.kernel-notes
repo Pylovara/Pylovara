@@ -68,6 +68,8 @@
 
  BOXI KLASSE = ALU-RECHNER
 
+ INFO-ID = BOXIS-ALU
+
  FUNKTION = GIBT RECHNUNG ZUR ALU
 
  SYMBOLISCHE DEKLARATION = × ×
@@ -77,18 +79,6 @@
  INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZUR
         ZU WAHRHEITEN-AUSWERTUNG
 
- ALU-RECHNER MUSTERBEISPIELE =
-
- »[×1+1×]«
- »[×3·1×]«
- »[×1÷1×]«
- »[×1—1×]«
-
- EINSATZBEREICHE MUSTERBEISPIELE =
-
- »[×1+1×]«
-  -= ["2"]
-       ¶ »[’COPIE WAHRHEITEN-ERGEBNIS TO’|(AXY)¨2¨]«
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

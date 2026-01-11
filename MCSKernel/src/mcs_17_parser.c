@@ -1,7 +1,7 @@
 // =============================================================================
 // src/mcs_17_parser.c
-// Pylovara MCS Kernel – Modul 17: Ausführungs-Parser (Transaktionsrahmen)
-// Stand: 10. Januar 2026 – SSoT 00.58 (Transaktionsrahmen aktiv)
+// Pylovara MCS Kernel – Modul 17: Ausführungs-Parser (volle Kette)
+// Stand: 10. Januar 2026 – SSoT 00.58 vollständig + Ausführung
 // =============================================================================
 
 #include "mcs_17_parser.h"
@@ -20,8 +20,8 @@ static int last_alu_result = 0;
 // Transaktionsrahmen-Status
 static bool in_transaction = false;
 
-// Debug-Flag (kann später ausgeschaltet werden)
-static bool debug_mode = true;
+// Sentiator-Bedingung
+static bool condition_true = false;
 
 // Hilfsfunktion: Ersetze °(n)° durch Feed-Wert (UTF-8 safe)
 static void replace_feed_vars(char* line) {
@@ -36,14 +36,14 @@ static void replace_feed_vars(char* line) {
                 upos++;
                 int idx;
                 const char* end = strchr((const char*)upos, ')');
-                if (end && sscanf((const char*)upos, "%d", &idx) == 1 && idx < feed_count) {
-                    out += sprintf(out, "%d", feeds[idx]);
-                    upos = (const unsigned char*)end + 1;
-                    if (*upos == 0xC2 && *(upos+1) == 0xB0) upos += 2;
-                } else {
-                    *out++ = 0xC2; *out++ = 0xB0;
-                    *out++ = *upos++;
-                }
+            if (end && sscanf((const char*)upos, "%d", &idx) == 1 && idx < feed_count) {
+                out += sprintf(out, "%d", feeds[idx]);
+                upos = (const unsigned char*)end + 1;
+                if (*upos == 0xC2 && *(upos+1) == 0xB0) upos += 2;
+            } else {
+                *out++ = 0xC2; *out++ = 0xB0;
+                *out++ = *upos++;
+            }
             } else {
                 *out++ = 0xC2; *out++ = 0xB0;
                 *out++ = *upos++;
@@ -56,7 +56,7 @@ static void replace_feed_vars(char* line) {
     strcpy(line, buffer);
 }
 
-// ALU-Berechnung [×a op b×] oder [×°(i)° op °(j)°×]
+// ALU-Berechnung aus [×a op b×] oder [×°(i)° op °(j)°×]
 static void execute_alu(const char* cmd) {
     int a, b;
     char op;
@@ -89,7 +89,7 @@ static void execute_alu(const char* cmd) {
 static void store_in_feed(int idx) {
     if (idx < 10) {
         feeds[idx] = last_alu_result;
-        printf("[FF] Feed %d = %d (Führender Feed)\n", idx, last_alu_result);
+        printf("[FF] Feed %d = %d gespeichert\n", idx, last_alu_result);
         if (idx >= feed_count) feed_count = idx + 1;
     }
 }
@@ -101,38 +101,118 @@ int mcs_parser_execute_file(const char* filename) {
         return -1;
     }
 
-    printf("[TRANS-RAHMEN] Parser gestartet – SSoT 00.58 (Transaktionsrahmen aktiv)\n");
+    printf("[PARSER] Führe '%s' aus – SSoT 00.58 vollständig\n", filename);
 
     char line[512];
-    bool in_transaction = false;  // Wichtig: false am Anfang!
+    bool in_transaction = false;
+    feed_count = 0;
+    last_alu_result = 0;
 
     while (fgets(line, sizeof(line), file)) {
         line[strcspn(line, "\n\r")] = 0;
 
         if (strlen(line) == 0) continue;
 
-        // Transaktionsrahmen – START (¢!)
+        // Transaktionsrahmen – START / ENDE
         if (strstr(line, "¢!")) {
             in_transaction = true;
-            printf("[TRANS] ANFANGSBEDIENUNG –¢! – Rahmen geöffnet\n");
+            feed_count = 0;
+            last_alu_result = 0;
+            printf("[TRANS] Start\n");
             continue;
         }
-
-        // Transaktionsrahmen – ENDE (!¢)
         if (strstr(line, "!¢")) {
             in_transaction = false;
-            printf("[TRANS] ENDBEDIENUNG !¢ – Rahmen geschlossen\n");
+            printf("[TRANS] Ende\n");
             continue;
         }
 
-        // **Streng**: Nur innerhalb des Rahmens wird etwas gemacht
         if (!in_transaction) continue;
 
-        // Hier kommt die volle Ausführungslogik rein (Boxis, ALU, Feeds, Sentiatoren)
-        // Für den Moment: nur Debug, damit wir sehen, dass der Rahmen hält
-        printf("[DEBUG] Inhalt innerhalb Rahmen: %s\n", line);
+        // Boxis-Ausführung: Inhalt zwischen » und «
+        if (strncmp(line, "»", 3) == 0) {
+            char* start = line + 3;
+            char* end = strstr(start, "«");
+            if (end) {
+                *end = '\0';
 
-        // Später hier: Boxis-Ausführung, ALU-Rechnung, Workspace-Speicherung usw.
+                char content[512];
+                strncpy(content, start, sizeof(content) - 1);
+                content[sizeof(content) - 1] = '\0';
+
+                // 1. CALLIS – "Text"
+                if (content[0] == '"' && content[strlen(content)-1] == '"') {
+                    content[strlen(content)-1] = '\0';
+                    printf("%s\n", content + 1);
+                }
+
+                // 2. ALU-RECHNER – [×...×]
+                else if (strstr(content, "[×") != NULL && strstr(content, "×]") != NULL) {
+                    execute_alu(content);
+                }
+
+                *end = '«';
+            } else {
+                printf("[BOXIS] Unvollständige Boxi: %s\n", line);
+            }
+        }
+
+        // Workspace-Zuweisungen (ALU-Ergebnis speichern)
+        if (strstr(line, "-·=") != NULL) {
+            int idx;
+            if (sscanf(line, "-·= [( %d )°°]", &idx) == 1) {
+                store_in_feed(idx);
+            }
+        }
+        if (strstr(line, "-··=") != NULL) {
+            int idx;
+            if (sscanf(line, "-··= [( %d )°°]", &idx) == 1) {
+                store_in_feed(idx);
+            }
+        }
+        if (strstr(line, "-···=") != NULL) {
+            int idx;
+            if (sscanf(line, "-···= [( %d )°°]", &idx) == 1) {
+                store_in_feed(idx);
+            }
+        }
+
+        // Sentiator-Kann-Impuls (¶)
+        if (strncmp(line, "    ¶", 6) == 0) {
+            char* cmd = line + 6;
+            while (*cmd == ' ') cmd++;
+            int v1;
+            if (sscanf(cmd, "[°(%d)°]", &v1) == 1 && v1 < feed_count) {
+                condition_true = feeds[v1] != 0;
+                printf("[SENTIATOR] FF(%d) = %d → %s\n", v1, feeds[v1], condition_true ? "WAHR" : "FALSCH");
+            }
+        }
+
+        // Parallel-Transport bei WAHR
+        if (strstr(line, "-····>") != NULL) {
+            if (condition_true) {
+                char* cmd = strstr(line, "»");
+                if (cmd) {
+                    cmd += 3;
+                    while (*cmd == ' ') cmd++;
+                    replace_feed_vars(cmd);
+                    printf("%s\n", cmd);
+                }
+            }
+        }
+
+        // Parallel-Transport bei FALSCH
+        if (strstr(line, "-·····>") != NULL) {
+            if (!condition_true) {
+                char* cmd = strstr(line, "»");
+                if (cmd) {
+                    cmd += 3;
+                    while (*cmd == ' ') cmd++;
+                    replace_feed_vars(cmd);
+                    printf("%s\n", cmd);
+                }
+            }
+        }
     }
 
     fclose(file);

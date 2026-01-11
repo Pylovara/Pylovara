@@ -1,4 +1,4 @@
-@kernel-nr: 09 | WAHRHEITEN | STATUS = KONSOLIDIERD
+@kernel-nr: 09 | WAHRHEITEN | STATUS = OFFEN
 ######################################################################
 ----------------------------------------------------------------------
 
@@ -35,12 +35,42 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-AUSWERTUNG
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-OPTIONEN
+
+ INFO = INITIALISIERT EINE WAHRHEITS OPTION
+
+ INFO-ID = WAHRHEITEN-TRIGGER-OPTIONEN
+
+ FUNKTION = SCHALTUNGS-AUSLÖSER
+
+ SYMBOLISCHE-DEKLARATION = ¤
+
+ SYMBOL IN WORTEN =
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-WORKSPACE
+
+ INFO = INITIALISIERT EINEN WORKSPACE
+
+ INFO-ID = WAHRHEITEN-TRIGGER-WORKSPACE
+
+ FUNKTION = SCHALTUNGS-AUSLÖSER
+
+ SYMBOLISCHE-DEKLARATION = ·
+
+ SYMBOL IN WORTEN =
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-OPTIONEN-AUSWERTUNG
 
  INFO = SUCHT DEN WAHRHEITEN-SPACE-POINT UND ZIEHT
         ES DURCH DIE ALU
 
- INFO-ID = WAHRHEITEN-TRIGGER-AUSWERTUNG
+ INFO-ID = WAHRHEITEN-TRIGGER-OPTIONEN-AUSWERTUNG
 
  FUNKTION = ELTERNZWEIG PROZESS-AUSWERTUNG
 
@@ -48,19 +78,19 @@
 
  SYMBOL IN WORTEN = ISTGLEICHZEICHEN
 
- BEISPIEL =
- -=
- –·=
- -··=
+ BEISPIELE =
+
+ -· »[×1+1×]
+     -·¤= [(1)°°]
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- WAHRHEITENKERN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-PROGRESSBAR
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-OPTIONEN-PROGRESSBAR
 
- INFO = HÄNGT AN OPTIONEN (–·: BIS –····:) FÜR DYNAMISCHEN LADEBALKEN.
+ INFO = HÄNGT AN OPTIONEN (–·¤: BIS –····¤:) FÜR DYNAMISCHEN LADEBALKEN.
 
- INFO-ID = WAHRHEITEN-TRIGGER-PROGRESSBAR
+ INFO-ID = WAHRHEITEN-TRIGGER-OPTIONEN-PROGRESSBAR
 
  FUNKTION = VISUELLE FORTSCHRITTS-ANZEIGE
 
@@ -71,65 +101,67 @@
  BALKEN-DESIGN: # FÜR FORTSCHRITT, % ANZEIGE DURCH AI/FEED.
 
  BEISPIEL =
- -: ############################### 100% FERTIG
- –·: ############################### 100% FERTIG
- -··: ############################### 100% FERTIG
+
+  -· »[×1+1×]
+      -·¤: ############## 50% FERTIG
+      -·¤= [(1)°°]
+      –·¤: ############################### 100% FERTIG
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-PARALLEL-AUSFÜHRUNG
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-OPTIONEN-PARALLEL-AUSFÜHRUNG
 
  INFO = INITIIERT PARALLELE PROZESSE ODER PROTEIN-DUPLIKATE
 
- INFO-ID = WAHRHEITEN-TRIGGER-PARALLEL-AUSFÜHRUNG
+ INFO-ID = WAHRHEITEN-TRIGGER-OPTIONEN-PARALLEL-AUSFÜHRUNG
 
  FUNKTION = PARALLEL AUSFÜHRUNG
 
- SYMBOLISCHE-DEKLARATION = <
+ SYMBOLISCHE-DEKLARATION = ‹
 
  SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
 
  BEISPIEL =
- –< »[×1+1×]
-     -= [(1)"2"]«
+ –·¤‹ »[×1+1×]
+       -·¤= [(1)"2"]«
 
--·< »[×1+1×]
-     -·= [(1)"2"]«
+ -··¤‹ »[×1+1×]
+        -··¤= [(1)"2"]«
 
-–··< »[×1+1×]
-      -··= [(1)°2°]«
+ –···¤‹ »[×1+1×]
+         -···¤= [(1)°2°]«
 
--···< »[×1+1×]
-       -···= [(1)"2"]«
+ -····¤‹ »[×1+1×]
+          -····¤= [(1)"2"]«
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-PARALLEL-TRANSPORT
+ WAHRHEITEN KERN UNTERKLASSE = WAHRHEITEN-TRIGGER-OPTIONEN-PARALLEL-TRANSPORT
 
  INFO = TRANSPORTIERT DATEN PARALLEL
 
- INFO-ID = WAHRHEITEN-TRIGGER-PARALLEL-TRANSPORT
+ INFO-ID = WAHRHEITEN-TRIGGER-OPTIONEN-PARALLEL-TRANSPORT
 
  FUNKTION = PARALLEL TRANSPORT
 
- SYMBOLISCHE-DEKLARATION = >
+ SYMBOLISCHE-DEKLARATION = ›
 
  SYMBOL IN WORTEN = GRÖSSER-ALS-ZEICHEN
 
  BEISPIEL =
- –> »[×1+1×]
-     -= [(1)"2"]«
+ –·¤› »[×1+1×]
+       -·¤= [(1)"2"]«
 
- -·> »[×1+2×]
-      -·= [(4)°3°]«
+ -··¤› »[×1+2×]
+        -··¤= [(4)°3°]«
 
- –··> »[×7+1×]
-       -··= [(1)"8"]«
+ –···¤› »[×7+1×]
+         -···¤= [(1)"8"]«
 
- -···> »[×1+1×]
-        -···= [(3)°2°]«
+ -····¤› »[×1+1×]
+          -····¤= [(3)°2°]«
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -148,8 +180,8 @@
 
  BEISPIEL:
  »[×1+1×]
-  -·= [(3)°2°]«
-  -·: ############### 50% GELADEN
+  -·¤= [(3)°2°]«
+  -·¤: ############### 50% GELADEN
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -168,8 +200,8 @@
 
  BEISPIEL:
  »[×1+1×]
-  -··= [(3)°2°]«
-  -··: ############### 50% GELADEN
+  -··¤= [(3)°2°]«
+  -··¤: ############### 50% GELADEN
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -188,8 +220,8 @@
 
  BEISPIEL:
  »[×1+1×]
-  -···= [(3)°2°]«
-  -···: ############### 50% GELADEN
+  -···¤= [(3)°2°]«
+  -···¤: ############### 50% GELADEN
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -208,8 +240,8 @@
 
  BEISPIEL:
  »[×1+1×]
-  -····= [(3)°2°]«
-  -····: ############### 50% GELADEN
+  -····¤= [(3)°2°]«
+  -····¤: ############### 50% GELADEN
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -228,8 +260,8 @@
 
  BEISPIEL:
  »[×1+1×]
-  -·····= [(3)°2°]«
-  -·····: ############### 50% GELADEN
+  -·····¤= [(3)°2°]«
+  -·····¤: ############### 50% GELADEN
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

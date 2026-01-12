@@ -1,7 +1,7 @@
 // =============================================================================
 // src/mcs_17_parser.c
 // Pylovara MCS Kernel – Modul 17: Ausführungs-Parser (volle Kette)
-// Stand: 10. Januar 2026 – SSoT 00.58 vollständig + Ausführung
+// Stand: 12. Januar 2026 – SSoT 00.58 vollständig + echte Ausführung
 // =============================================================================
 
 #include "mcs_17_parser.h"
@@ -136,24 +136,22 @@ int mcs_parser_execute_file(const char* filename) {
             if (end) {
                 *end = '\0';
 
-                char content[512];
-                strncpy(content, start, sizeof(content) - 1);
-                content[sizeof(content) - 1] = '\0';
+                // Trimmen + äußere × entfernen, wenn vorhanden
+                char* inner = start;
+                while (*inner == ' ') inner++;  // Leerzeichen links trimmen
 
-                // 1. CALLIS – "Text"
-                if (content[0] == '"' && content[strlen(content)-1] == '"') {
-                    content[strlen(content)-1] = '\0';
-                    printf("%s\n", content + 1);
+                // Wenn es mit [× beginnt und mit ×] endet → ALU-Inhalt
+                if (strncmp(inner, "[×", 2) == 0) {
+                    inner += 2;  // [× entfernen
+                    char* alu_end = strstr(inner, "×]");
+                    if (alu_end) {
+                        *alu_end = '\0';  // ×] abschneiden
+                        execute_alu(inner);  // Jetzt nur noch "1+1" oder "°(0)° > °(1)°"
+                    }
                 }
-
-                // 2. ALU-RECHNER – [×...×]
-                else if (strstr(content, "[×") != NULL && strstr(content, "×]") != NULL) {
-                    execute_alu(content);
-                }
+                // Andere Boxi-Typen hier später (CALLIS, SHELL, etc.)
 
                 *end = '«';
-            } else {
-                printf("[BOXIS] Unvollständige Boxi: %s\n", line);
             }
         }
 

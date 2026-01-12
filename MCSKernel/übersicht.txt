@@ -5,12 +5,17 @@ make clean
 make
 make run
 
-#### Tests
-make clean
-make
+#### Tests wahrheiten feed
 ./pylovara_kernel testcodes/test.datei-lcore &&
 echo "------ MCS CODE ------" &&
 cat /Pylovara/MCSKernel/testcodes/test.datei-lcore
+
+#### test wahrheiten feed alu
+./pylovara_kernel testcodes/test.datei-lcore &&
+echo "------ MCS CODE ------" &&
+cat /Pylovara/MCSKernel/testcodes/test.datei-lcore
+
+
 
 --------------------------------------------------------------------------------
 ## Saubere Ordner Daten

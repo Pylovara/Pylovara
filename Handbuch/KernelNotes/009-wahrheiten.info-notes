@@ -59,6 +59,49 @@
 
 ----------------------------------------------------------------------
 ######################################################################
+@info-id: WAHRHEITEN-TRIGGER-WORKSPACE
+----------------------------------------------------------------------
+
+ EIN WORKSPACE
+
+ (–·¤, –··¤, …) IS KEIN EINFACHER SPEICHERORT, SONDERN EIN
+ BEARBEITUNGS-KONTEX FÜR EIN PROTEIN.
+
+ INNERHALB EINES WORKSPACE KANN EIN CONTAINER-PROTEIN STEHEN :
+
+ → ['BOXI-1'|"BOXI-2"|,BOXI-3,]
+
+ DIE PROTEIN LOGIK IST EIN STAPEL PRINZIP VON BOXIS DIE FÜR
+ EIN PROZESSRAHMEN GEBRAUCHT WERDEN KÖNNEN.
+
+ DER MCS PARSER VERARBEITET SAUBER GETRENNT UND SEQUENZIELL/PARALLEL
+ FORK ¤‹
+ MERGE ¤›
+ SORTIERUNG ¤↑ ¤↓
+
+
+ Beispiel aus deiner Vision (angepasst):
+ »['echo "------ MCS CODE ------" && cat test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
+ -·¤↑ »[boxi1] [boxi2] [boxi3]«  # Fork + aufsteigende Sortierung
+     -·¤= [(1)°°]«               # Zuweisung in Fork
+     ¶ -· ['echo Fork OK']«
+ -··¤↓ »[boxi1] [boxi2] [boxi3]« # Zweiter Fork + absteigende Sortierung
+     -··¤= [(2)°°]«
+     ¶ -·· ['echo Fork OK']«
+ -···› »[°(1)° + °(2)°]«         # Merge aus beiden Forks
+     ¶ -··· ['echo Merge erfolgreich']«
+     ¶¶ -··· ['echo Merge fehlgeschlagen']«
+
+ DA ES ABSOLUT PARALLEL UND SYNCRONISIERBAR ÜBER DEN 8 TAKRT
+ HERZSCHLAG IST.
+
+----------------------------------------------------------------------
+######################################################################
+
+
+
+
+
 @info-id: WAHRHEITEN-BAUSTELLE
 ----------------------------------------------------------------------
 NICHT ANGEPASST , ALTE INFOS

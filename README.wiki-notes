@@ -1,7 +1,3 @@
---------------------------------UpdatePause -----------------------------------------
-
-                      Pause : 20/22.12.2025 - 02.01.2026
-
 --------------------------------- VorWort -------------------------------------------
                          - Ich bau nicht irgendwas —
                             Ich hab den ersten :
@@ -31,7 +27,7 @@ git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
-info : Hier wird mit Arch + Bash + Kitty First gearbeitet,
+ info : Hier wird mit Arch + Bash + Kitty First gearbeitet,
           bei Problemen auf andere Derivate Befehle einzelnd eingeben !
 
           Funktioniert auch über Homebrew oder WSL , Primär Linux-Zen Bash
@@ -41,94 +37,99 @@ info : Hier wird mit Arch + Bash + Kitty First gearbeitet,
 cd Pylovara/Setup/Pylovara-System/
 sudo ./pylovara.updater-needle
 
-version 0.4 beta (buggy but copy and paste from githubg in the directory)=
+ version 0.4 beta (buggy but copy and paste from githubg in the directory)=
 
-- sucht alte installationen /Pylovara/ ~/Pylovara
-- löscht sie rekursiv & sauber
-- klont das repo nach /tmp/pylovara-latest
-- kopiert das geklonte repo nach /Pylovara/
-- lässt wrapper außenvor weil schon gesetzt
-- entfernt /tmp/pylovara-latest wieder
-- funktioniert nur mit = sudo ./pylovara.updater-needle
+ - sucht alte installationen /Pylovara/ ~/Pylovara
+ - löscht sie rekursiv & sauber
+ - klont das repo nach /tmp/pylovara-latest
+ - kopiert das geklonte repo nach /Pylovara/
+ - lässt wrapper außenvor weil schon gesetzt
+ - entfernt /tmp/pylovara-latest wieder
+ - funktioniert nur mit = sudo ./pylovara.updater-needle
+ - einführung der wahrheiten logistik
 
-info : wird bald ersetzt durch einen zeitlich gesteuerten update suchprogramm
+ info : wird bald ersetzt durch einen zeitlich gesteuerten update suchprogramm
        das die manuale update geschichte beheben wird .
 
 ------------------------------ KernPrinzipien --------------------------------------
 
  Systemweit & Rootbasiert
-- Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
-- Keine Abhängigkeit von `$HOME`-Verzeichnissen bis auf den MCS-Hyprland-Desktop
-- Funktioniert sogar in minimalen Umgebungen wie BusyBox oder Rettungssystemen
+ - Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
+ - Keine Abhängigkeit von `$HOME`-Verzeichnissen bis auf den MCS-Hyprland-Desktop
+ - Funktioniert sogar in minimalen Umgebungen wie BusyBox oder Rettungssystemen
 
  Shell-first Design
-- Komplett steuerbar über Terminal , Exklusiv Monopol : Kitty
-- Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
-- Ermöglicht tiefste Systemintegration ohne externe Frameworks
+ - Komplett steuerbar über Terminal , Exklusiv Monopol : Kitty
+ - Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
+ - Ermöglicht tiefste Systemintegration ohne externe Frameworks
 
  Modular & Erweiterbar (In Der Entwicklung)
-- Struktur Familienprinzip / Wurzelprinzip / Astprinzip
-- Neue Module können ohne Kernänderung hinzugefügt werden
-- Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
+ - Struktur Familienprinzip / Wurzelprinzip / Astprinzip
+ - Neue Module können ohne Kernänderung hinzugefügt werden
+ - Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
 
  Programmiersprache MCS Integration (In Der Entwicklung)
-- Prototypen Layout auf C für alle System
-- Ausbau der Symbolischen Syntax Ebene
-- Wird Später fast alles ersetzen an drittanbieter tools
-- Bekommt einen Modul Erweiterungs Manager
+ - Prototypen Layout auf C für alle System
+ - Ausbau der Symbolischen Syntax Ebene
+ - Wird Später fast alles ersetzen an drittanbieter tools
+ - Bekommt einen Modul Erweiterungs Manager
 
 ---------------------------- ALL In One Books --------------------------------------
 
 
     helpme lex      # Übersicht Informationen WikiNotes
     kernel lex      # Übersicht von MCS Syntax Handbuch
+    info <NAME>     # Semantik exakt per NAME aus der INFO-ID =
     dev lex         # Delevoper Notizen
 
            > "Was du nicht selbst in der Shell erschaffst,
                  wird dir irgendwann vom GUI genommen."          – alter Admin
 
+           >”und wenn ich die System frage nicht selbst aufbauen kann,
+             dann hat das system keine existenzberechtigung”     - DeV Spruch
+
 ---------------------------- Zuckunftsplanung --------------------------------------
 
-Zukunftsvision
+ Zukunftsvision
       kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
 
-- Tiling Window Management direkt aus der Shell
-- Ersatz für Registry, Konfigurationsdateien, GUI-Tools
-- GPU/CPU Sound/Audio Mikrosteuerung**
-- Portabler Skin-Wechsel der Oberfläche**
-- Nahtlose Integration in bestehende OS-Strukturen
-- AI-gestützte Codegenerierung & Debugging
-- Programmierbare Prozesse + Languale MCS
+ - Tiling Window Management direkt aus der Shell
+ - Ersatz für Registry, Konfigurationsdateien, GUI-Tools
+ - GPU/CPU Sound/Audio Mikrosteuerung**
+ - Portabler Skin-Wechsel der Oberfläche**
+ - Nahtlose Integration in bestehende OS-Strukturen
+ - AI-gestützte Codegenerierung & Debugging
+ - Programmierbare Prozesse + Languale MCS
 
-Ziel ist es ein ALL IN ONE Packet für Junge Leute zu erschaffen , das
-alle Hardware Freiheiten zulässt und die Branchen-wirtschaft von GroßKonzernen
-Finanziell bei den Programmierer selbst ausbluten lässt .
+ Ziel ist es ein ALL IN ONE Packet für Junge Leute zu erschaffen , das
+ alle Hardware Freiheiten zulässt und die Branchen-wirtschaft von GroßKonzernen
+ Finanziell bei den Programmierer selbst ausbluten lässt .
 
-Nicht nur þ Identifikations sicherheiten bietet und ein echten Gesicherten
-Kernel hervorbringt , sondern auch ein Moralisch vertrettbares ÖkoSystem
-hervor bringt auf dauer .
+ Nicht nur þ Identifikations sicherheiten bietet und ein echten Gesicherten
+ Kernel hervorbringt , sondern auch ein Moralisch vertrettbares ÖkoSystem
+ hervor bringt auf dauer .
 
-AI Integration wird Naturell und Prinzipiell mit integriert und der
-Ollama runtimer ist dabei nur ein übergangspuzzelstück .
+ AI Integration wird Naturell und Prinzipiell mit integriert und der
+ Ollama runtimer ist dabei nur ein übergangspuzzelstück .
 
 ----------------------------- Impressum Infos --------------------------------------
 
-Direkte Hilfe + Investoren Anlaufstelle :
+ Direkte Hilfe + Investoren Anlaufstelle :
 
-Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
-Telefon :  +49 176/88218035
-Telegram : @iBandino
-LinkedIn : https://www.linkedin.com/in/thomas-zimmermann-pylovara-system-mcs/
+ Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
+ Telefon :  +49 176/88218035
+ Telegram : @iBandino
+ LinkedIn : https://www.linkedin.com/in/thomas-zimmermann-pylovara-system-mcs/
 
-Sprachkenntnisse : Deutsch 100% Englisch 40% SchweitzerDeutsch 98%
+ Sprachkenntnisse : Deutsch 100% Englisch 40% SchweitzerDeutsch 98%
 
-Schriftlicher verkehrt kann in jeder Sprache Stattfinden
+ Schriftlicher verkehrt kann in jeder Sprache Stattfinden
 
-Investoren Stichwort   : Finanzierung | Info | Geschäftstreffen
-Entwickler Stichwort   : Entwicklungsinteresse
-Lizenskäufte stichwort : License Buy
+ Investoren Stichwort   : Finanzierung | Info | Geschäftstreffen
+ Entwickler Stichwort   : Entwicklungsinteresse
+ Lizenskäufte stichwort : License Buy
 
-Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen
+ Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen
        auf den Prinzip ,, Mensch & Mensch ’’
 
 ------------------------------------------------------------------------------------

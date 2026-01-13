@@ -182,7 +182,10 @@
 
  »['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
 
-  -·¤↑ »['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'] ['cd /Pylovara/MCSKernel'] ['./pylovara_kernel testcodes/test.datei-lcore']«
+  -·¤↑ »['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']
+        ['cd /Pylovara/MCSKernel']
+        ['./pylovara_kernel testcodes/test.datei-lcore']«
+
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
@@ -202,7 +205,10 @@
 
  »['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
 
-  -·¤↑ »['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'] ['cd /Pylovara/MCSKernel'] ['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
+  -·¤↓ »['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']
+        ['cd /Pylovara/MCSKernel']
+        ['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
+
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 

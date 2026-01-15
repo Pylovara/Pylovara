@@ -1,4 +1,4 @@
-@kernel-nr: 14 | ADRESSIERUNG | STATUS : VALIDE KONSOLIDIERT
+@kernel-nr: 14 | ADRESSIERUNG | STATUS : STABIL
 ######################################################################
 ----------------------------------------------------------------------
 
@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- ADRESSIERUNG KERN KLASSE = ADRESSIERUNG
+ ADRESSIERUNG KERN KLASSE = ADRESSIERUNG-TRIGGER
 
  INFO-ID = ADRESSIERUNG
 
@@ -29,12 +29,12 @@
 
  SYMBOL IN WORTEN = UMGEKEHRTES AUSRUFEZEICHEN
 
- INFO =
+ INFO = AKTIVIERT DIE ADRESSIERUNG
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- ADRESSIERUNG KERN UNTERKLASSE = ADRESSIERUNG-ZIELREFERENZ
+ ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-ZIELREFERENZ
 
  INFO-ID = ADRESSIERUNG
 
@@ -49,7 +49,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- ADRESSIERUNG KERN UNTERKLASSE = ADRESSIERUNG-DIRIGENT
+ ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-DIRIGENT
 
  INFO-ID = ADRESSIERUNG
 
@@ -64,7 +64,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- ADRESSIERUNG KERN UNTERKLASSE = ADRESSIERUNG-ID-DNA
+ ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-ID-DNA
 
  INFO-ID = ADRESSIERUNG
 

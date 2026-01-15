@@ -17,7 +17,37 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN OBERKLASSE = MASTER-CONTROL
+ MASTER-OPTION KLASSE = MASTER-OPTION
+
+ INFO = AUSWAHL TRIGGER
+
+ INFO-ID = MASTER-OPTION
+
+ FUNKTION = OPTIONALER NATUR, FEINEREN CONTROLLE
+
+ SYMBOLISCHE DEKLARATION = MASTER-OPTION
+
+ SYMBOL IN WORTEN = MASTER VIERTELSTRICHHORIZONTAL OPTION
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ MASTER-OPTION KLASSE = MASTER-OPTION-DATEITYP
+
+ INFO = DATEITYP TRIGGER
+
+ INFO-ID = MASTER-OPTION
+
+ FUNKTION = OPTIONEN ZUR FEINEREN CONTROLLE
+
+ SYMBOLISCHE DEKLARATION = MASTER-OPTION
+
+ SYMBOL IN WORTEN = MASTER VIERTELSTRICHHORIZONTAL OPTION
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ MASTER CONTROL KLASSE = MASTER-CONTROL
 
  INFO = ÖFFNET DIE MASTER-CONTROL EINSTELLUNGSOPTIONEN
 
@@ -32,7 +62,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-KERNEL
+ MASTER-CONTROL KLASSE = MASTER-CONTROL-KERNEL
 
  INFO = ANSTEUERUNG ZUR RUNTIME KERNEL
 
@@ -47,11 +77,26 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-MAGIC
+ MASTER-CONTROL KLASSE = MASTER-CONTROL-TASKMANAGER
+
+ INFO = RUNTIME PROZESSÜBERWACHUNGSEBENE
+
+ INFO-ID = MASTER-CONTROL
+
+ FUNKTION = RUNTIME PROZESSÜBERWACHUNGSEBENE
+
+ SYMBOLISCHE DEKLARATION = MASTER-CONTROL-TASKMANAGER
+
+ SYMBOL IN WORTEN = VIERTELSTRICHHORIZONTAL KERNEL
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-MAGIC
 
  INFO = ANSTEUERUNG ZUM KOORDINATIONS PROGRAMM
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = VERDINDET DEN DATEIÜBERGREIFENDEN FAMILIENPRIZIP ZUSAMMENHANG
 
@@ -62,11 +107,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-MICRO
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-MICRO
 
  INFO = ANSTEUERUNG ZUM DATEIFILE MICRO
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -77,11 +122,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-NANO
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-NANO
 
  INFO = ANSTEUERUNG ZUM DATEIFILE
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -92,11 +137,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-NODES
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-NODES
 
  INFO = ANSTEUERUNG ZUM DATEIFILE NODES
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -107,11 +152,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-CORE
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-CORE
 
  INFO = ANSTEUERUNG ZUM DATEIFILE CORE - MAIN CORE
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -122,11 +167,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-LCORE
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-LCORE
 
  INFO = ANSTEUERUNG ZUM DATEIFILE LCORE -LOWLEVELCORE
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -137,11 +182,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-VCORE
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-VCORE
 
  INFO = ANSTEUERUNG ZUM DATEIFILE VCORE - VISUELLERCORE
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -152,11 +197,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-FCORE
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-FCORE
 
  INFO = ANSTEUERUNG ZUM DATEIFILE FCORE - FREQUENZCORE
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -167,11 +212,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-NOTES
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-NOTES
 
  INFO = ANSTEUERUNG ZUM DATEIFILE NOTES - NOTIZEN
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 
@@ -182,11 +227,11 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MASTER KERN UNTERKLASSE = MASTER-CONTROL-REDFLAG
+ MASTER-OPTION-DATEITYP KLASSE = MASTER-OPTION-DATEITYP-REDFLAG
 
  INFO = ANSTEUERUNG ZUM DATEIFILE REDFLAG - LOGS-NOTIZEN
 
- INFO-ID = MASTER-CONTROL
+ INFO-ID = MASTER-OPTION-DATEITYP
 
  FUNKTION = DATEIFILE-RAHMEN
 

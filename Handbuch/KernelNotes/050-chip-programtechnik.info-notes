@@ -4,15 +4,87 @@
 @info-id: CHIP-PROGRAMTECHNIK-DEV
 ----------------------------------------------------------------------
 
+----------------------------------------------------------------------
 
+
+ Chipbezeichnungen =
+
+ Name | Beschreibung | Funktion | Komponenten | Spezialisierung
+
+----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
 ######################################################################
 @info-id: CHIP-PROGRAMTECHNIK
 ----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ Bezeichnung:
+
+ AI = AI/s - AGI/s - Darüber
+
+ Model = Größe
+
+ KognitivebotAutomation = KBA
+
+ Chip = Komponenten Zusammenstellung
+
+ ROM = Read-Only Memory | SGE = Schreibgeschützte Erinnerungen
+
+ RAM = Random Access Memory | DZS = Direktzugriffsspeicher
+
+ SD = Schreibgeschützterdirektzugriffsspeicher
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ Komponenten:
+
+ CRR = Chip(auswahlmöglich) Ram Rom
+
+ RAMROM = RR
+
+ CACHEROM = CR
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ KERN-ROM-RAM-HARDWARE = HAUPT Artificial Intelligence
+
+ AI Model: MAXIMUM
+
+ Trainiert auf: MAXIMUM
+
+ Beschreibung:
+
+ MAXIMUM
+
+ Funktion:
+
+ MAXIMUM
+
+ Komponenten : CRR
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ Hinweis:
+
+ Der CRS wurde aufgrund von fehlerhaften denkensmuster meinerseits
+ von Board geworfen und wird in der weiteren entwicklung keine Rolle
+ mehr spielen , stattdessen bekommt DIMS ein Update und wird
+ alleinig dafür verwendet .
 
 
+ Überlegungen :
 
+ Zynq:
+
+    1x MIT-Taktgeber (als Clock-Wizard-IP)
+    1x Protein-Handler (32-Bit-Register-File)
+    1x Proton-Handler (8-Bit-Timing-Unit)
+    1x þ-Key-Generator (als verschlossene Blackbox-IP)
+----------------------------------------------------------------------
 ----------------------------------------------------------------------
 ######################################################################
 @info-id: CHIP-PROGRAMTECHNIK-BAUSTELLE

@@ -4,8 +4,27 @@
 @info-id: TRANSAKTIONSRAHMEN-DEV
 ----------------------------------------------------------------------
 
+----------------------------------------------------------------------
+ TRANSAKTIONSKLASSE = MCS-RUNTIME-ANFANGSBEDIENUNG
 
+ FUNKTION = KOMPLETTER DATENSATZ AN PROTEINE SYSTEMWEIT ALLEM
 
+ SYMBOLISCHE DEKLARATION = ¢!
+
+ SYMBOL IN WORTEN = CENT-ZEICHEN AUSRUFEZEICHEN
+
+ INFO = INPUT
+----------------------------------------------------------------------
+ TRANSAKTIONSKLASSE = MCS-RUNTIME-ENDBEDIENUNG
+
+ FUNKTION = KOMPLETTER DATENSATZ AN PROTEINE SYSTEMWEIT ALLEM
+
+ SYMBOLISCHE DEKLARATION = !¢
+
+ SYMBOL IN WORTEN = AUSRUFEZEICHEN CENT-ZEICHEN
+
+ INFO = OUTPUT
+----------------------------------------------------------------------
 
 
 ----------------------------------------------------------------------

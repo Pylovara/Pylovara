@@ -2,48 +2,9 @@
 ######################################################################
 ----------------------------------------------------------------------
 
-
- Chipbezeichnungen =
-
- Name | Beschreibung | Funktion | Komponenten | Spezialisierung
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- Bezeichnung:
-
- AI = AI/s - AGI/s - Darüber
-
- Model = Größe
-
- KognitivebotAutomation = KBA
-
- Chip = Komponenten Zusammenstellung
-
- ROM = Read-Only Memory | SGE = Schreibgeschützte Erinnerungen
-
- RAM = Random Access Memory | DZS = Direktzugriffsspeicher
-
- SD = Schreibgeschützterdirektzugriffsspeicher
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- Komponenten:
-
- CRR = Chip(auswahlmöglich) Ram Rom
-
- RAMROM = RR
-
- CACHEROM = CR
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-                   ↓ Gesamte Chip Architektur ↓
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
  DIMS = Diversifiziertes Input Managment Service
+
+ INFO-ID = CHIP-PROGRAMTECHNIK
 
  Beschreibung:
 
@@ -71,6 +32,8 @@
 
  AIMS = Artificial Intelligence Managment Service
 
+ INFO-ID = CHIP-PROGRAMTECHNIK
+
  AI Model: 1½b bis 2b (Individuell auch 3-7b)
 
  Trainiert auf: Datentypen | MCS Syntax
@@ -89,44 +52,6 @@
 
  Komponenten : CRR
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- KERN-ROM-RAM-HARDWARE = HAUPT Artificial Intelligence
-
- AI Model: MAXIMUM
-
- Trainiert auf: MAXIMUM
-
- Beschreibung:
-
- MAXIMUM
-
- Funktion:
-
- MAXIMUM
-
- Komponenten : CRR
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- Hinweis:
-
- Der CRS wurde aufgrund von fehlerhaften denkensmuster meinerseits
- von Board geworfen und wird in der weiteren entwicklung keine Rolle
- mehr spielen , stattdessen bekommt DIMS ein Update und wird
- alleinig dafür verwendet .
-
-
- Überlegungen :
-
- Zynq:
-
-    1x MIT-Taktgeber (als Clock-Wizard-IP)
-    1x Protein-Handler (32-Bit-Register-File)
-    1x Proton-Handler (8-Bit-Timing-Unit)
-    1x þ-Key-Generator (als verschlossene Blackbox-IP)
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
                 DATUM = [08:50:23|Fr 25 Okt 2024] MARKENBRANDT

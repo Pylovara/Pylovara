@@ -1,8 +1,8 @@
-@kernel-nr: 06 | AKTIONEN  | AKTIONSDRAHT | STATUS : VALIDE
+@kernel-nr: 06 | AKTIONSDRAHT | AKTIONEN | STATUS : VALIDE FINETUNING
 ######################################################################
 ----------------------------------------------------------------------
 
- NAME = AKTIONEN | AKTIONSDRAHT
+ NAME = AKTIONSDRAHT | AKTIONEN
 
  INFO-ID = AKTIONEN
 
@@ -15,7 +15,31 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- AKTIONS KLASSE = AKTION-START
+ AKTIONS KERN KLASSE = AKTIONSDRAHT
+
+ INFO-ID = AKTIONEN
+
+ BEGRIFFSDEFINTION = HAUPTVERDRAHTUNG
+
+ SYMBOLISCHE DEKLARATION BEISPIEL=    » «
+                                        «
+                                        «
+                                        «
+                                        «
+
+ FUNKTION = START UND END BEDIENUNGEN
+
+ AUSFÜHRUNGSART = SIGNAL-ROUTING
+
+ INFO = WIRD ALS AKTIONSVERDRAHTUNG VERSTANDEN FÜR EINEN
+        AKTIONS-START UM DEN ZUSAMMENHÄNGENDEN KONTEXT DES PROZESSE
+        ZU VERDRAHTEN UND SORGT FÜR EINEN AKTIONSKREISLAUF MIT
+        MEHREREN AKTIONS-ENDE.
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ AKTIONSDRAHT KLASSE = AKTIONSDRAHT-AKTION-START
 
  FUNKTION = ANFANG-BEDIENUNG
 
@@ -25,12 +49,17 @@
 
  GUILLEMENT RECHT | DEUTSCHES ANFÜHRUNGSZEICHEN ÖFFNEND
 
- INFO = DEFINIERT DEN ANFANG DER AKTION
+ INFO = DEFINIERT DEN ANFANG DER AKTION , DA AKTIONSVERDRAHTUNGEN
+        EIN START AUSHALTEN MUSS , MUSS DER AKTION-START AUSLÖSER
+        SICH ERST AUFLÖSEN WENN DER PROZESS DURCH IST , DEN ANDERE
+        WAHRHEITEN ZWEIGE KÖNNTEN MEHR INPUT BEINHALTEN MIT AKTIONS
+        ENDEN. GRUNDSÄTZLICH GILT : DER AKTIONSDRAHT-AKTION-START
+        BLEIBT BIS DER PROZESS BEENDET IST.
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- AKTIONS KLASSE = AKTION-ENDE
+ AKTIONSDRAHT KLASSE = AKTIONSDRAHT-AKTION-ENDE
 
  FUNKTION = END-BEDIENUNG
 
@@ -41,29 +70,10 @@
  GUILLEMENT LINKS | DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
 
  INFO = DEFINIERT DAS ENDE DER AKTION UND KANN ALS GESCHLOSSENER
-        AKTIONSKREISLAUF VERSTANDEN WERDEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- AKTIONS UNTERKLASSE = AKTIONSDRAHT | AKTIONSVERDRAHTUNG
-
- AKTIONS KLASSE = AKTIONSVERDRAHTUNGS-ENDE
-
- FUNKTION = MEHRFACHENDBEDIENUNG
-
- SYMBOLISCHE DEKLARATION = «
-
- SYMBOL IN WORTEN =
-
- GUILLEMENT LINKS | DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
-
- INFO =
-
- WIRD ALS AKTIONSVERDRAHTUNG VERSTANDEN FÜR EINEN
- AKTIONS-START UM DEN ZUSAMMENHÄNGENDEN KONTEXT DES PROZESSE ZU
- VERDRAHTEN UND SORGT FÜR EINEN AKTIONSKREISLAUF MIT MEHREREN
- AKTIONS-ENDE.
+        AKTIONSKREISLAUF VERSTANDEN WERDEN.
+        ER LÖSCHT SICH IM GESAMTEN BEARBEITUNGSSTRANG SELBST,
+        WENN ER BEARBEITET WURDE.
+        UNTERSCHEIDET SICH ZUM START
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

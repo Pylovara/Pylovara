@@ -1,4 +1,4 @@
-@kernel-nr: 16 | MCS-CMD-REGISTER | STATUS : VALIDE KONSOLIDIERT
+@kernel-nr: 16 | MCS-CMD-REGISTER | STATUS : VALIDE ABER IM FEINTUNING
 ######################################################################
 ----------------------------------------------------------------------
 
@@ -43,7 +43,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MCS-CMD KERN UNTERKLASSE = MCS-CMD-REGISTER
+ MCS-CMD OPTION KLASSE = MCS-CMD-REGISTER
 
  INFO-ID = MCS-CMD
 
@@ -56,7 +56,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MCS-CMD-REGISTER KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-START
+ MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-START
 
  INFO-ID = MCS-CMD
 
@@ -69,7 +69,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MCS-CMD-REGISTER KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STOP
+ MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STOP
 
  INFO-ID = MCS-CMD
 
@@ -82,7 +82,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MCS-CMD-REGISTER KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-NEUSTART
+ MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-NEUSTART
 
  INFO-ID = MCS-CMD
 
@@ -95,7 +95,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MCS-CMD-REGISTER KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STATUS
+ MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STATUS
 
  INFO-ID = MCS-CMD
 
@@ -108,7 +108,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MCS-CMD-REGISTER KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-AKTIVIEREN
+ MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-AKTIVIEREN
 
  INFO-ID = MCS-CMD
 
@@ -121,7 +121,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- MCS-CMD-REGISTER KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-BERICHT-ANZEIGEN
+ MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-BERICHT-ANZEIGEN
 
  INFO-ID = MCS-CMD
 

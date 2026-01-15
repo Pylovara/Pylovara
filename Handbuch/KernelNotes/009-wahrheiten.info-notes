@@ -97,23 +97,89 @@
 
 ----------------------------------------------------------------------
 ######################################################################
+@info-id: WAHRHEITEN-TRIGGER-OPTIONEN
+----------------------------------------------------------------------
+
+  OPTIONEN ¤ KÖNNEN FÜR JEDEN WORKSPACE GESCHALTEN WERDEN ODER
+  ETWAS OPTIONAL AUF EIN WORKSPACE WEITERGELEITET.
+
+  ----------------------------------------------------
+  EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR):
+       »[PROTEIN-START]« # Linker Rand
+        –·¤: ############### 50% »[OPTION-A-AKTION]« # Mit Progress
+        -·¤= [(NR)"WERT"]
+        –··: ######################## 80% »[OPTION-B-AKTION]«
+        –··¤< »[PARALLEL-PROZESS]«
+        –··¤: ############################### 100% »[PARALLEL-A]«
+    »[NEUES-PROTEIN]«
+
+ MOMENTAN BIETEN DIE PARALLEL RICHTUNGS ANGABEN IN FORM VON
+ -· # DIREKT OUTPUT
+ -·¤ # OPTION AUSWAHL VON ADDEN LÖSCHEN ODER PARALLEL MITVERARBEITEN USW
+ -·¤= # OPTIONALE ALU AUSGABE WENN VERLANGT , DIREKT FÜR DEN WORKSPACE
+
+
+ ANWENDUNGSBEISPIELE:
+
+  # 1. GUI-MENÜ MIT PROGRESS (Ladebalken pro Punkt)
+    –·¤< »[×(MENU_LABEL) == "Quit"×]«
+        –·: ############################### 100% »[~BEENDE PROGRAMM~]«
+    –·¤< »[×(MENU_LABEL) == "About"×]«
+        –··: ###################### 70% »[~show_about_dialog~]«
+    –·¤< »[×(MENU_LABEL) == "Settings"×]«
+        –···: ############### 50% »[~ÖFFNE SETTINGS~]«
+    –·¤> »[×(MENU_LABEL) != ""×]«
+        –····: 0% »["Unbekannter Menüpunkt"]«
+
+  # 2. DATEIVERARBEITUNG MIT PROGRESS
+    –·¤< »[×feed cache 1 > 10485760×]«
+         –·¤: ######################## 80% »['gzip $FILE']«
+         –··¤: ############################### 100%
+             -··¤: »['echo Compression Vollendet']«
+
+  # 3. IDE-PROZESS (Loading)
+    –·¤: ############### 50% »[~load_project~]«
+    –··¤: ######################## 80% »[~compile_mcs~]«
+    –···¤: ############################### 100% »[~run_simulation~]«
+
+  # 4. SORTIERUNGSFUNKTION AUFSTEIGEND :
+    -·¤↑ »[' '|" "|~ ~]«
+         -·¤1 »[' ']«
+         -·¤2 »[" "]«
+         -·¤3 »[~ ~]«
+
+ # 5. SORTIERUNGSFUNKTION ABSTEIGEND :
+    -·¤↓ »[' '|" "|~ ~]«
+         -·¤3 »[~ ~]«
+         -·¤2 »[" "]«
+         -·¤1 »[' ']«
 
 
 
+ Trigger-Symbol	Funktion im Workspace	Physikalische Entsprechung
+ -· Direkt Output
+
+ Ungefilterter Signalfluss zum Standard-Feed.
+ -·¤ Optionale Auswahl
+
+ Gatter-Weiche für parallele Mitverarbeitung.
+
+ -·¤= ALU Ausgabe
+
+ Arithmetisch-logische Einheit liefert direktes Resultat.
+
+ -·¤< Injektions-Trigger  Signal wird in einen Unterprozess eingesteuert.
+
+ -·¤↑ / ↓ Sortier-Vektor   Steuerung der Priorität in der Ausführungskette
+                          (Auf-/Absteigend).
+
+----------------------------------------------------------------------
+######################################################################
 
 
 @info-id: WAHRHEITEN-BAUSTELLE
 ----------------------------------------------------------------------
-NICHT ANGEPASST , ALTE INFOS
-----------------------------------------------------
- EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR):
-       »[PROTEIN-START]« # Linker Rand
-        –·: ############### 50% »[OPTION-A-AKTION]« # Mit Progress
-            -·= [(NR)"WERT"]
-               –··: ######################## 80% »[OPTION-B-AKTION]«
-        –··< »[PARALLEL-PROZESS]«
-            –··: ############################### 100% »[PARALLEL-A]«
-    »[NEUES-PROTEIN]«
+
 ----------------------------------------------------
   ANWENDUNGSBEISPIELE:
   # 1. GUI-MENÜ MIT PROGRESS (Ladebalken pro Punkt)

@@ -10,7 +10,7 @@
 
  FUNKTION = CACHE GEBUNDER RAHMEN
 
- SYMBOLISCHE DEKLARATION = Ø- -Ø
+ SYMBOLISCHE DEKLARATION = Øĸ ĸØ
 
  SYMBOL IN WORTEN =
  Durchgestrichenes O Minus  Minus Durchgestrichenes O
@@ -42,9 +42,9 @@
 
  Definition Grundgerüst :
 
- ø- ,,   # Warp Beginn + Optionale Notiz
+ øĸ ,,   # Warp Beginn + Optionale Notiz
  Code    # Code im Originalen zustand
- -ø = §  # Warp Ende + Adressierung und oder Zielreferenz
+ ĸø = §  # Warp Ende + Adressierung und oder Zielreferenz
 
  Genau so lassen sich Alle Codes Warpen
 
@@ -53,7 +53,7 @@
 
  Anbindungsbeispiele :
 
- ø- # C
+ øĸ # C
  #include <stdio.h>
 
  int fibonacci(int n) {
@@ -73,7 +73,7 @@
     printf("Fibonacci(%d) = %d\n", n, fibonacci(n));
     return 0;
  }
- -ø = §gcc
+ ĸø = §gcc
 
 ----------------------------------------------------------------------
 ######################################################################

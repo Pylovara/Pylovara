@@ -1,7 +1,7 @@
 // =============================================================================
 // src/mcs_17_parser.c
-// Pylovara MCS Kernel – Modul 17: Ausführungs-Parser (volle Kette)
-// Stand: 12. Januar 2026 – SSoT 00.58 vollständig + echte Ausführung
+// Pylovara MCS Kernel – Modul 17: Ausführungs-Parser (korrekte Extraktion + volle Kette)
+// Stand: 15. Januar 2026 – SSoT 00.62 vollständig + echte Ausführung
 // =============================================================================
 
 #include "mcs_17_parser.h"
@@ -14,7 +14,7 @@
 static int feeds[10] = {0};
 static int feed_count = 0;
 
-// Letztes ALU-Ergebnis
+// Letztes ALU-Ergebnis (führender Feed Cache)
 static int last_alu_result = 0;
 
 // Transaktionsrahmen-Status
@@ -56,14 +56,17 @@ static void replace_feed_vars(char* line) {
     strcpy(line, buffer);
 }
 
-// ALU-Berechnung aus [×a op b×] oder [×°(i)° op °(j)°×]
+// ALU-Berechnung aus "a op b" oder "°(i)° op °(j)°" (Leerzeichen optional)
 static void execute_alu(const char* cmd) {
     int a, b;
     char op;
     int va, vb;
 
-    // Direkte Zahlen
-    if (sscanf(cmd, "[×%d %c %d×]", &a, &op, &b) == 3) {
+    printf("[ALU-DEBUG] Eingehender Befehl: '%s'\n", cmd); // ← zum Debuggen
+
+    // Direkte Zahlen (mit oder ohne Leerzeichen)
+    if (sscanf(cmd, "%d%c%d", &a, &op, &b) == 3 ||
+        sscanf(cmd, "%d %c %d", &a, &op, &b) == 3) {
         switch (op) {
             case '+': last_alu_result = a + b; break;
             case '-': last_alu_result = a - b; break;
@@ -73,19 +76,23 @@ static void execute_alu(const char* cmd) {
             default: last_alu_result = 0; break;
         }
         printf("[ALU] %d %c %d = %d\n", a, op, b, last_alu_result);
-        return;
-    }
-
-    // Feed-Vergleich
-    if (sscanf(cmd, "[×°(%d)° > °(%d)°×]", &va, &vb) == 2) {
-        if (va < feed_count && vb < feed_count) {
-            last_alu_result = feeds[va] > feeds[vb] ? 1 : 0;
-            printf("[ALU] FF(%d)=%d > FF(%d)=%d → %d\n", va, feeds[va], vb, feeds[vb], last_alu_result);
+    return;
         }
-    }
+
+        // Feed-Vergleich
+        if (sscanf(cmd, "°(%d)°>%d°", &va, &vb) == 2 || // ohne Leerzeichen
+            sscanf(cmd, "°(%d)° > °(%d)°", &va, &vb) == 2) {
+            if (va < feed_count && vb < feed_count) {
+                last_alu_result = feeds[va] > feeds[vb] ? 1 : 0;
+                printf("[ALU] FF(%d)=%d > FF(%d)=%d → %d\n", va, feeds[va], vb, feeds[vb], last_alu_result);
+            }
+            return;
+            }
+
+            printf("[ALU] Parse-Fehler: '%s'\n", cmd);
 }
 
-// Speichere ALU-Ergebnis in Feed (Führender Feed)
+// Speichere ALU-Ergebnis in Feed (Führender Feed Cache)
 static void store_in_feed(int idx) {
     if (idx < 10) {
         feeds[idx] = last_alu_result;
@@ -101,7 +108,7 @@ int mcs_parser_execute_file(const char* filename) {
         return -1;
     }
 
-    printf("[PARSER] Führe '%s' aus – SSoT 00.58 vollständig\n", filename);
+    printf("[PARSER] Führe '%s' aus – SSoT 00.62 vollständig\n", filename);
 
     char line[512];
     bool in_transaction = false;
@@ -136,48 +143,53 @@ int mcs_parser_execute_file(const char* filename) {
             if (end) {
                 *end = '\0';
 
-                // Trimmen + äußere × entfernen, wenn vorhanden
+                // Leerzeichen trimmen
                 char* inner = start;
-                while (*inner == ' ') inner++;  // Leerzeichen links trimmen
+                while (*inner == ' ') inner++;
 
-                // Wenn es mit [× beginnt und mit ×] endet → ALU-Inhalt
+                // ALU-Box: [× … ×] → inneren Inhalt extrahieren
                 if (strncmp(inner, "[×", 2) == 0) {
-                    inner += 2;  // [× entfernen
+                    inner += 2; // [× entfernen
                     char* alu_end = strstr(inner, "×]");
                     if (alu_end) {
-                        *alu_end = '\0';  // ×] abschneiden
-                        execute_alu(inner);  // Jetzt nur noch "1+1" oder "°(0)° > °(1)°"
+                        *alu_end = '\0'; // ×] abschneiden
+                        execute_alu(inner); // Jetzt nur noch "1+1" oder "°(0)° > °(1)°"
+                    } else {
+                        printf("[ALU] Ungültiges Ende in Box: %s\n", inner);
                     }
                 }
-                // Andere Boxi-Typen hier später (CALLIS, SHELL, etc.)
+
+                // Hier später CALLIS ("..."), SHELL ('...'), etc. hinzufügen
 
                 *end = '«';
+            } else {
+                printf("[BOXIS] Unvollständige Boxi: %s\n", line);
             }
         }
 
-        // Workspace-Zuweisungen (ALU-Ergebnis speichern)
-        if (strstr(line, "-·=") != NULL) {
+        // Workspace-Zuweisungen (aktuelles ALU-Ergebnis speichern)
+        if (strstr(line, "-·¤=") != NULL) {
             int idx;
-            if (sscanf(line, "-·= [( %d )°°]", &idx) == 1) {
+            if (sscanf(line, "-·¤= [( %d )°°]", &idx) == 1) {
                 store_in_feed(idx);
             }
         }
-        if (strstr(line, "-··=") != NULL) {
+        if (strstr(line, "-··¤=") != NULL) {
             int idx;
-            if (sscanf(line, "-··= [( %d )°°]", &idx) == 1) {
+            if (sscanf(line, "-··¤= [( %d )°°]", &idx) == 1) {
                 store_in_feed(idx);
             }
         }
-        if (strstr(line, "-···=") != NULL) {
+        if (strstr(line, "-···¤=") != NULL) {
             int idx;
-            if (sscanf(line, "-···= [( %d )°°]", &idx) == 1) {
+            if (sscanf(line, "-···¤= [( %d )°°]", &idx) == 1) {
                 store_in_feed(idx);
             }
         }
 
         // Sentiator-Kann-Impuls (¶)
-        if (strncmp(line, "    ¶", 6) == 0) {
-            char* cmd = line + 6;
+        if (strncmp(line, "        ¶", 8) == 0) {
+            char* cmd = line + 8;
             while (*cmd == ' ') cmd++;
             int v1;
             if (sscanf(cmd, "[°(%d)°]", &v1) == 1 && v1 < feed_count) {
@@ -187,7 +199,7 @@ int mcs_parser_execute_file(const char* filename) {
         }
 
         // Parallel-Transport bei WAHR
-        if (strstr(line, "-····>") != NULL) {
+        if (strstr(line, "-···>") != NULL) {
             if (condition_true) {
                 char* cmd = strstr(line, "»");
                 if (cmd) {
@@ -200,7 +212,7 @@ int mcs_parser_execute_file(const char* filename) {
         }
 
         // Parallel-Transport bei FALSCH
-        if (strstr(line, "-·····>") != NULL) {
+        if (strstr(line, "-····>") != NULL) {
             if (!condition_true) {
                 char* cmd = strstr(line, "»");
                 if (cmd) {

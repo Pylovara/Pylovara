@@ -11,9 +11,9 @@ echo "------ MCS CODE ------" &&
 cat /Pylovara/MCSKernel/testcodes/test.datei-lcore
 
 #### test wahrheiten feed alu
-./pylovara_kernel testcodes/test.datei-lcore &&
+./pylovara_kernel testcodes/test-wahrheiten.datei-lcore &&
 echo "------ MCS CODE ------" &&
-cat /Pylovara/MCSKernel/testcodes/test.datei-lcore
+cat /Pylovara/MCSKernel/testcodes/test-wahrheiten.datei-lcore
 
 
 

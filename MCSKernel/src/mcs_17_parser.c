@@ -56,40 +56,46 @@ static void replace_feed_vars(char* line) {
     strcpy(line, buffer);
 }
 
-// ALU-Berechnung aus "a op b" oder "°(i)° op °(j)°" (Leerzeichen optional)
+// ALU-Berechnung aus "a op b" oder "°(i)° op °(j)°" (mit/ohne Leerzeichen)
 static void execute_alu(const char* cmd) {
     int a, b;
     char op;
     int va, vb;
 
-    printf("[ALU-DEBUG] Eingehender Befehl: '%s'\n", cmd); // ← zum Debuggen
+    // Debug-Ausgabe – zeigt genau, was reinkommt
+    printf("[ALU-DEBUG] Roh-Eingang: '%s'\n", cmd);
 
-    // Direkte Zahlen (mit oder ohne Leerzeichen)
-    if (sscanf(cmd, "%d%c%d", &a, &op, &b) == 3 ||
-        sscanf(cmd, "%d %c %d", &a, &op, &b) == 3) {
-        switch (op) {
-            case '+': last_alu_result = a + b; break;
-            case '-': last_alu_result = a - b; break;
-            case '*': last_alu_result = a * b; break;
-            case '/': last_alu_result = b != 0 ? a / b : 0; break;
-            case '>': last_alu_result = a > b ? 1 : 0; break;
-            default: last_alu_result = 0; break;
-        }
-        printf("[ALU] %d %c %d = %d\n", a, op, b, last_alu_result);
-    return;
-        }
-
-        // Feed-Vergleich
-        if (sscanf(cmd, "°(%d)°>%d°", &va, &vb) == 2 || // ohne Leerzeichen
-            sscanf(cmd, "°(%d)° > °(%d)°", &va, &vb) == 2) {
-            if (va < feed_count && vb < feed_count) {
-                last_alu_result = feeds[va] > feeds[vb] ? 1 : 0;
-                printf("[ALU] FF(%d)=%d > FF(%d)=%d → %d\n", va, feeds[va], vb, feeds[vb], last_alu_result);
+    // Direkte Zahlen – mit oder ohne Leerzeichen
+    if (sscanf(cmd, "%d%c%d", &a, &op, &b) == 3 ||  // ohne Leerzeichen
+        sscanf(cmd, "%d %c %d", &a, &op, &b) == 3) { // mit Leerzeichen
+            switch (op) {
+                case '+': last_alu_result = a + b; break;
+                case '-': last_alu_result = a - b; break;
+                case '*': last_alu_result = a * b; break;
+                case '/': last_alu_result = b != 0 ? a / b : 0; break;
+                case '>': last_alu_result = a > b ? 1 : 0; break;
+                default: last_alu_result = 0; break;
             }
+            printf("[ALU] %d %c %d = %d\n", a, op, b, last_alu_result);
+            printf("[ALU] Ergebnis im Cache: %d\n", last_alu_result);
             return;
+        }
+
+        // Feed-Vergleich – mit oder ohne Leerzeichen
+        if (sscanf(cmd, "°(%d)°%c°(%d)°", &va, &op, &vb) == 3 ||  // ohne Leerzeichen
+            sscanf(cmd, "°(%d)° %c °(%d)°", &va, &op, &vb) == 3) { // mit Leerzeichen
+                if (va < feed_count && vb < feed_count) {
+                    switch (op) {
+                        case '>': last_alu_result = feeds[va] > feeds[vb] ? 1 : 0; break;
+                        default: last_alu_result = 0; break;
+                    }
+                    printf("[ALU] FF(%d)=%d %c FF(%d)=%d → %d\n", va, feeds[va], op, vb, feeds[vb], last_alu_result);
+                    printf("[ALU] Ergebnis im Cache: %d\n", last_alu_result);
+                }
+                return;
             }
 
-            printf("[ALU] Parse-Fehler: '%s'\n", cmd);
+            printf("[ALU] Parse-Fehler: '%s' nicht erkannt\n", cmd);
 }
 
 // Speichere ALU-Ergebnis in Feed (Führender Feed Cache)

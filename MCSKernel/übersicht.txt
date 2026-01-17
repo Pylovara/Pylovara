@@ -10,12 +10,16 @@ make run
 echo "------ MCS CODE ------" &&
 cat /Pylovara/MCSKernel/testcodes/test.datei-lcore
 
-#### test wahrheiten feed alu
+#### Test wahrheiten feed alu
 ./pylovara_kernel testcodes/test-wahrheiten.datei-lcore &&
 echo "------ MCS CODE ------" &&
 cat /Pylovara/MCSKernel/testcodes/test-wahrheiten.datei-lcore
 
 
+#### Test allgemein.datei-core
+./pylovara_kernel testcodes/allgemein.datei-core &&
+echo "------ MCS CODE ------" &&
+cat /Pylovara/MCSKernel/testcodes/allgemein.datei-core
 
 --------------------------------------------------------------------------------
 ## Saubere Ordner Daten
@@ -30,7 +34,7 @@ cat /Pylovara/MCSKernel/Core/mcs_01_datentypen.c /Pylovara/MCSKernel/src/mcs_02_
 cat /Pylovara/MCSKernel/main.c /Pylovara/MCSKernel/Makefile
 
 ## testcodes/
-cat /Pylovara/MCSKernel/testcodes/test.datei-lcore
+cat /Pylovara/MCSKernel/testcodes/test.datei-lcore /Pylovara/MCSKernel/testcodes/test-wahrheiten.datei-lcore /Pylovara/MCSKernel/testcodes/allgemein.datei-core
 
 --------------------------------------------------------------------------------
 

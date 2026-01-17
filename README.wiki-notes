@@ -3,7 +3,7 @@
                             Ich hab den ersten :
 
                      symbolisch reinen, linear-sicheren,
-               parallel-kompatiblen MCS-Kernel der Welt gebaut
+               parallel-kompatiblen MCS-Kernel der Welt
                                     und zwar
   -vollständig in C, ohne Interpreter, ohne Abstraktionsschicht, ohne Kompromisse.-
 
@@ -21,6 +21,17 @@
       ,,Um Einen Besseren Kernel Zu Bauen ist ProzessManagment Wichtiger
              Als unkontrolliert irgendwas zu bauen und ein Handbuch ist
                Wichtiger Als der Folgende Code , den nur so Baut man sauber ’’
+
+                  Für die Volle Validierung Arbeite ich nach dem
+                           Prinzip Triangulation:
+
+               SSoT (Text) → normativ, menschlich, erklärend
+               SVG (Graphik) → topologisch, visuell, fehlerentdeckend
+               SQL-ähnlich → formal, prüfbar, maschinenlesbar
+
+            Wenn alle drei instanzen dasselbe sagen, ist das System stichfest
+            für jeglichen einsatz .
+
 --------------------------------- Install -------------------------------------------
 
 git clone https://github.com/Pylovara/Pylovara.git

@@ -26,7 +26,7 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 
 ##############################################################################
-### Startet Ollama
+### Startet Ollama <---- bald unötig , wird ersetzt
 alias ollama='/Pylovara/AI/ollama/bin/ollama start'
 
 ### Startet mini modelle
@@ -90,7 +90,7 @@ function record() {
     source "$Shell_DIR/terminal.record-dna" "$@"
     TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
     FILENAME="${TIMESTAMP}.terminal-note"
-    echo "🎬 Terminalaufzeichnung gestartet. Alles wird in '$FILENAME' gespeichert."
+    echo "🎬 Terminalaufzeichnung gestartet. Alles wird in '$FILENAME' gespeichert und Stop per exit befehl"
     script -q -t 2>"/tmp/terminal-${TIMESTAMP}.timing" "$FILENAME"
     echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
 }

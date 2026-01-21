@@ -10,7 +10,7 @@
 
  FUNKTION =  TRANSPORTNEUTRALER TRÄGER FÜR INTENTIONALE OPERATIONEN
 
- AUSFÜHRUNGSART = KERN OBER KLASSE
+ AUSFÜHRUNGSART = KERN KLASSE
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -40,7 +40,8 @@
 
  SYMBOL IN WORTEN = KOMMA INHALT KOMMA
 
- INFO = RUFT DAS JEWEILIGE OPERATION SYSTEM AN
+ INFO = RUFT DAS JEWEILIGE OPERATION SYSTEM AN DAS
+        UNTERHALB DES PYLOVARA KERNELS INSTALLIERT IST
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -55,13 +56,8 @@
 
  SYMBOL IN WORTEN = HOCHKOMMA INHALT HOCHKOMMA
 
- INFO = NUTZT OS SHELL BEFEHLE
-
- SHELL-CONTROL MUSTERBEISPIELE =
-
- EINSATZBEREICHE MUSTERBEISPIELE =
-
- (erklärt sich von selbst)
+ INFO = NUTZT OS SHELL FÜR OS SHELL EINGABEN
+        EGAL WELCHE SHELL AKTIV IST.
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -78,6 +74,14 @@
 
  INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZUR
         ZU WAHRHEITEN-AUSWERTUNG
+
+ Wichtiger Hinweis =
+
+ C schafft keine leerzeichenlose zahlen und C kann das nicht sauber
+ trennen. Aus dem grund heraus wird in der C compilierten Kernel
+ version nur der BOXIS-ALU-RECHNER inhalt vom Boxis rand getrennt
+
+ BEISPIEL = |× zahl rechenheiten zahl ×|
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -125,7 +129,10 @@
 
  BLANKERNENNER ° ° : Erlaubt es, Feeds auch dort zu transportieren,
  wo keine Shell oder ALU benötigt wird, sondern rein die
- Daten-Protein-Bewegung stattfindet.
+ Daten-Protein-Bewegung stattfindet und übeträgt oder transportiert
+ den inhalt. Gepaart mit FF Führenden Feeds ergibt das mit den
+ Tragenden Feeds TF eine datenübetragung in einen anderen workspace
+ von wahrheiten oder sonnst wohin
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

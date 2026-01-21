@@ -1,0 +1,40 @@
+vorlage :
+
+
+mcs_ai/
+├── core/
+│   ├── state.py        # interner Zustand
+│   ├── synapse.py      # Übergangsregeln
+│   ├── evaluator.py    # Bewertung
+│   └── loop.py         # Hauptzyklus
+│
+├── source/
+│   ├── input/          # eingehende Source
+│   ├── output/         # vom System erzeugte Source
+│   └── active.list    # was aktuell gesourct wird
+│
+├── config.py           # Nullpunkt-Konfiguration
+└── main.py             # Startpunkt
+
+
+umgesetzt bis her
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||
+MASTER-CONTROL-SYSTEM/
+|›  BIOS/
+|   |› SCHALTERKASTEN   # INTERNER ZUSTAND
+|   |› SYNAPSE          # ÜBERGANGSREGEL
+|   |› EVALUATOR        # BEWERTUNG
+|   |› loop             # KOGNITIVER KERN
+|
+|›
+|
+|
+|
+|
+|›
+|›  MAIN                # STARTPUNKT
+|
+||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+

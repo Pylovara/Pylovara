@@ -27,7 +27,11 @@ VERBOSE = True
 # ZUSTANDSLOGIK
 class Zustand:
     def __init__(self):
-        self.values = {}   # statt werte
+        self.values = {
+            "core_stability": 5.0,     # Startwert nahe dem Optimum (10)
+            "energy_reserve": 3.0,
+            "mutation_pressure": 1.0
+        }
         self.alter = 0
 
     def update(self, key, delta):   # statt aktualisieren

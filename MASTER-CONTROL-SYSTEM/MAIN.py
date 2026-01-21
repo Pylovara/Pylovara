@@ -2,7 +2,7 @@
 # MAIN – Startpunkt
 # ==============================
 
-from core.loop import CognitiveLoop
+from BIOS.LOOP.loop import CognitiveLoop
 
 loop = CognitiveLoop()
 

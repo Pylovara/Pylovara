@@ -2,10 +2,10 @@
 # LOOP – Lesen → Bewerten → Schreiben
 # ==============================
 
-from BIOS.SCHALTERKASTEN.SCHALTERKASTEN import Zustand
-from BIOS.SYNAPSE.SYNAPSE import Synapse
-from BIOS.EVALUATOR.EVALUATOR import Evaluator
-import BIOS.SCHALTERKASTEN.SCHALTERKASTEN as config
+from BIOS.SCHALTERKASTEN.SCHALTERKASTEN.py import Zustand
+from BIOS.SYNAPSE.SYNAPSE.py import Synapse
+from BIOS.EVALUATOR.EVALUATOR.py import Evaluator
+import BIOS.SCHALTERKASTEN.SCHALTERKASTEN.py as config
 
 class Zustand:
     def __init__(self):

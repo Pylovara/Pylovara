@@ -1,0 +1,181 @@
+## PROTIKULIERUNGS SCHICHT ALS NACHVOLLZIEHABRER STRANG - LANGE DATEI
+
+ ┌[bandino@dev][19:39:05|Mi Jan 21]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[~]> $ to /Pylovara/MASTER-CONTROL-SYSTEM
+BIOS
+DEVBOOK
+LAYOUTS
+MAIN.py
+überblick.info-notes
+
+ ┌[bandino@dev][19:39:16|Mi Jan 21]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/MASTER-CONTROL-SYSTEM]> $ tree
+.
+├── BIOS
+│   ├── EVALUATOR
+│   │   ├── EVALUATOR.py
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── LOOP
+│   │   ├── __init__.py
+│   │   └── LOOP.py
+│   ├── SCHALTERKASTEN
+│   │   ├── __init__.py
+│   │   └── SCHALTERKASTEN.py
+│   └── SYNAPSE
+│       ├── __init__.py
+│       └── SYNAPSE.py
+├── DEVBOOK
+│   └── STRUKTUR.info-notes
+├── LAYOUTS
+│   ├── DATEI_STRUKTUR
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── NAMENSSCHEMA
+│   │   └── __init__.py
+│   ├── ORDNER_STRUKTUR
+│   │   └── __init__.py
+│   ├── SYMMETRIE
+│   │   └── __init__.py
+│   └── TIEFE
+│       └── __init__.py
+├── MAIN.py
+└── überblick.info-notes
+
+13 directories, 18 files
+
+ ┌[bandino@dev][19:39:19|Mi Jan 21]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/MASTER-CONTROL-SYSTEM]> $ cat cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/EVALUATOR/EVALUATOR.py
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/LOOP/LOOP.py
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SCHALTERKASTEN/SCHALTERKASTEN.py
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SYNAPSE/SYNAPSE.py
+cat /Pylovara/MASTER-CONTROL-SYSTEM/MAIN.py
+cat: cat: Datei oder Verzeichnis nicht gefunden
+# ==============================
+# EVALUATOR – Bewertung
+# ==============================
+
+class Evaluator:
+    def score(self, state):
+        """
+        Primitive Bewertung:
+        - Stabilität
+        - Nicht-Explosion
+        - Nicht-Leere
+        """
+        if not state.values:
+            return -1.0
+
+        total = sum(abs(v) for v in state.values.values())
+
+        # Bevorzuge mittlere Ordnung
+        return -abs(total - 10.0)
+# ==============================
+# LOOP – Lesen → Bewerten → Schreiben
+# ==============================
+
+from BIOS.SCHALTERKASTEN.SCHALTERKASTEN.py import Zustand
+from BIOS.SYNAPSE.SYNAPSE.py import Synapse
+from BIOS.EVALUATOR.EVALUATOR.py import Evaluator
+import BIOS.SCHALTERKASTEN.SCHALTERKASTEN.py as config
+
+class Zustand:
+    def __init__(self):
+        self.werte = {}
+        self.alter = 0
+
+    def aktualisieren(self, schluessel, delta):
+        self.werte[schluessel] = self.werte.get(schluessel, 0.0) + delta
+
+    def abschwaechen(self, rate):
+        for k in self.werte:
+            self.werte[k] *= (1.0 - rate)
+
+    def abbild(self):
+        return dict(self.werte)
+# ==============================
+# K.K.I.S NULLPUNKT KONFIGURATION
+# ==============================
+
+# IDENTITÄT
+KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "SHIVABAAL"
+KKIS_VERSION = "0.0.1"
+
+
+# Pfade
+SOURCE_INPUT_DIR  = "source/input"
+SOURCE_OUTPUT_DIR = "source/output"
+ACTIVE_SOURCE_LIST = "source/active.list"
+
+# Lernparameter (primitive!)
+STATE_DECAY = 0.01        # Vergessen
+STATE_GAIN  = 0.05        # Verstärkung
+MUTATION_RATE = 0.02      # Variation
+
+# Sicherheitsgrenzen
+MAX_STATE_SIZE = 10_000
+ALLOW_SELF_MODIFICATION = False
+
+# Logging
+VERBOSE = True
+# ==============================
+# SYNAPSE – Übergangsregeln
+# ==============================
+
+import random
+
+class Synapse:
+    def __init__(self, mutation_rate):
+        self.mutation_rate = mutation_rate
+
+    def apply(self, state):
+        """
+        Primitive Regel:
+        - wähle einen Zustand
+        - verändere ihn leicht
+        """
+        if not state.values:
+            return
+
+        key = random.choice(list(state.values.keys()))
+        delta = random.uniform(-1.0, 1.0)
+
+        # Mutation
+        if random.random() < self.mutation_rate:
+            delta *= random.uniform(1.5, 3.0)
+
+        state.update(key, delta)
+# ==============================
+# MAIN – Startpunkt
+# ==============================
+
+from BIOS.LOOP.loop import CognitiveLoop
+
+loop = CognitiveLoop()
+
+for i in range(1000):
+    score = loop.step()
+    print(f"[{i}] score={score}")
+
+ ┌[bandino@dev][19:39:38|Mi Jan 21]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[/Pylovara/MASTER-CONTROL-SYSTEM]> $
+
+Was ist jetzt korrekt (wichtig!)
+
+Deine Ordner- und Modulstruktur ist exakt so, wie man sie haben will:
+
+BIOS als Paket
+
+Jede Domäne eigener Unterordner
+
+__init__.py überall dort, wo importiert wird
+
+.py nur da, wo Python-Code lebt
+
+LAYOUTS sauber vorbereitet, aber noch leer → perfekt
+
+Daran rütteln wir nicht mehr.

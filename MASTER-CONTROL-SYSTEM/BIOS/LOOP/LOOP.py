@@ -2,7 +2,7 @@
 # @mcs-nr: LOOP | KOGNITIVER KERN | INFO-ID = COGNITIVE-LOOP-00.2
 # =============================================================================
 # NAME         = CognitiveLoop – Hauptzyklus: Alterung → Mutation → Bewertung
-# VERSION      = 0.0.2
+# VERSION      = 0.0.3
 # AUTOR        = Thomas Zimmermann Stufe 10
 # STAND         = 2026-01-21
 # STATUS       = FREIGESCHALTET FÜR PERSISTENZ-TEST
@@ -69,7 +69,11 @@ class CognitiveLoop:
         # =========================================================================
         # 1. Alterung (Decay)
         self.zustand.alter += 1
-        self.zustand.abschwaechen(config.STATE_DECAY)
+
+        # + Bewertung VOR Decay (damit wir den aktuellen Score für Boost nutzen)
+        temp_score = self.evaluator.score(self.zustand)
+
+        self.zustand.abschwaechen(config.STATE_DECAY_BASE, temp_score)
 
         # 2. Übergang / Mutation
         self.synapse.apply(self.zustand)

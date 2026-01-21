@@ -100,7 +100,7 @@ Zusätzliche Kategorien / Begriffe aus Lex / Handbuch (nur öffentlich):
 - LICHTLEITERMATRIX
 - PROJEKTIVE RECHENLOGIK
 ##########################################################################
-@kernel-nr: 1003 | SCORE-ANALYSE NACH SSoT-63-KEYWORD-BONUS | INFO-ID = PHASE-20260122-0004
+@mcs-nr: 1003 | SCORE-ANALYSE NACH SSoT-63-KEYWORD-BONUS | INFO-ID = PHASE-20260122-0004
 NAME         = SCORE-ANALYSE NACH ECHTER KEYWORD-ERWEITERUNG
 VERSION      = 0.0.5
 STAND        = 2026-01-22 00:04
@@ -125,4 +125,29 @@ NEGATIV      =
 FAZIT        = Der echte SSoT-63-Bonus hat die **positive Phase verlängert** und den Drift **verlangsamt**.
                Das System zeigt jetzt klar: **MCS-Struktur = höhere Stabilität**.
                Nächstes Ziel: Drift komplett bremsen → mehr Dynamik in Bonus-Regeln + Decay anpassen.
+##########################################################################
+@kmcs-nr: 1004 | SCORE-ANALYSE NACH DYNAMISCHEM DECAY | INFO-ID = PHASE-20260122-0028
+NAME         = SCORE-ANALYSE NACH DYNAMISCHEM SELBSTSCHUTZ
+VERSION      = 0.0.6
+STAND        = 2026-01-22 00:28
+
+KURZ-INFO    = Zweiter Lauf (Alter=1000): Start bei -7.65 → schnelle Erholung bis -3.5
+               → längere neutrale Phase um -4 bis -6
+               → Decay-Boost triggert bei tiefen Scores → Drift wird gebremst
+               Max: -3.38 (sehr viel besser als vorherige -9/-10)
+               Min: -8.24 (aber nur kurz, dann Erholung)
+
+POSITIV      =
+  - Sofortige Erholung von -7.65 auf -3.5 in wenigen Steps
+  - Lange Phasen um -4 bis -6 → kein permanenter Keller mehr
+  - Decay-Boost wirkt: bei tiefen Scores (<-7) wird Alterung beschleunigt → Werte schrumpfen → Score steigt wieder
+  - Persistenz + dynamischer Schutz = echter Organismus-Effekt
+
+NEGATIV      =
+  - Immer noch gelegentliche Dips bis -8 (Mutation kann kurz übertreiben)
+  - Nach 400+ Steps wieder Drift-Tendenz → Boost allein reicht noch nicht ganz
+
+FAZIT        = Der dynamische Decay hat den **Drift gebrochen** – das System erholt sich jetzt aktiv.
+               Es zeigt echte **Selbstregulation** (wie ein Organismus, der bei Stress schneller altert, um stabil zu bleiben).
+               Nächstes Ziel: Mutation noch feiner abstimmen + mehr stabile MCS-Keywords erzeugen lassen.
 ##########################################################################

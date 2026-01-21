@@ -1,20 +1,21 @@
 --------------------------------- VorWort -------------------------------------------
                          - Ich bau nicht irgendwas —
-                            Ich hab den ersten :
+                            Ich bau den ersten :
 
                      symbolisch reinen, linear-sicheren,
                   parallel-kompatiblen MCS-Kernel der Welt
-
 --------------------------------- Install -------------------------------------------
 
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
- info : Hier wird mit Arch + Bash + Kitty First gearbeitet,
-          bei Problemen auf andere Derivate Befehle einzelnd eingeben !
-
-          Funktioniert auch über Homebrew oder WSL , Primär Linux-Zen Bash
+ info :
+ Hier wird mit Arch + Bash + Kitty First gearbeitet,
+ bei Problemen auf andere Derivate Befehle einzelnd eingeben .
+ Funktioniert auch über Homebrew oder WSL , Primär Linux-Zen + Bash
+ Besonderheit ist ihr könnt pylovara ab linuxkernel install direkt im tty
+ als vollwertigen desktop installieren mit hyprland ....
 
 ------------------------------- Update Manual ---------------------------------------
 
@@ -32,69 +33,11 @@ sudo ./pylovara.updater-needle
  - funktioniert nur mit = sudo ./pylovara.updater-needle
  - einführung der wahrheiten logistik
 
- info : wird bald ersetzt durch einen zeitlich gesteuerten update suchprogramm
-       das die manuale update geschichte beheben wird .
-
------------------------------- KernPrinzipien --------------------------------------
-
- Systemweit & Rootbasiert
- - Installation erfolgt ausschließlich auf Root-Ebene (`/Pylovara/`)
- - Keine Abhängigkeit von `$HOME`-Verzeichnissen bis auf den MCS-Hyprland-Desktop
- - Funktioniert sogar in minimalen Umgebungen wie BusyBox oder Rettungssystemen
-
- Shell-first Design
- - Komplett steuerbar über Terminal , Exklusiv Monopol : Kitty
- - Direkte Integration in Bash, Zsh, Fish und PowerShell (via WSL)
- - Ermöglicht tiefste Systemintegration ohne externe Frameworks
-
- Modular & Erweiterbar (In Der Entwicklung)
- - Struktur Familienprinzip / Wurzelprinzip / Astprinzip
- - Neue Module können ohne Kernänderung hinzugefügt werden
- - Unterstützt dynamische Datentypen, Hardware-Integration und AI-Komponenten
-
- Programmiersprache MCS Integration (In Der Entwicklung)
- - Prototypen Layout auf C für alle System
- - Ausbau der Symbolischen Syntax Ebene
- - Wird Später fast alles ersetzen an drittanbieter tools
- - Bekommt einen Modul Erweiterungs Manager
-
----------------------------- ALL In One Books --------------------------------------
-
-
-    helpme lex      # Übersicht Informationen WikiNotes
-    kernel lex      # Übersicht von MCS Syntax Handbuch
-    info <NAME>     # Semantik exakt per NAME aus der INFO-ID =
-    dev lex         # Delevoper Notizen
-
-           > "Was du nicht selbst in der Shell erschaffst,
-                 wird dir irgendwann vom GUI genommen."          – alter Admin
-
-           >”und wenn ich die System frage nicht selbst aufbauen kann,
-             dann hat das system keine existenzberechtigung”     - DeV Spruch
-
----------------------------- Zuckunftsplanung --------------------------------------
-
- Zukunftsvision
-      kontinuierlich weiterentwickeln–vom Werkzeug zum kompletten System:
-
- - Tiling Window Management direkt aus der Shell
- - Ersatz für Registry, Konfigurationsdateien, GUI-Tools
- - GPU/CPU Sound/Audio Mikrosteuerung**
- - Portabler Skin-Wechsel der Oberfläche**
- - Nahtlose Integration in bestehende OS-Strukturen
- - AI-gestützte Codegenerierung & Debugging
- - Programmierbare Prozesse + Languale MCS
-
- Ziel ist es ein ALL IN ONE Packet für Junge Leute zu erschaffen , das
- alle Hardware Freiheiten zulässt und die Branchen-wirtschaft von GroßKonzernen
- Finanziell bei den Programmierer selbst ausbluten lässt .
-
- Nicht nur þ Identifikations sicherheiten bietet und ein echten Gesicherten
- Kernel hervorbringt , sondern auch ein Moralisch vertrettbares ÖkoSystem
- hervor bringt auf dauer .
-
- AI Integration wird Naturell und Prinzipiell mit integriert und der
- Ollama runtimer ist dabei nur ein übergangspuzzelstück .
+ info : (wenns nicht klappt):(
+       - einfach zip laden
+       - entpacken
+       - /Pylovara/ ordner ersetzen im Root
+       - fertig
 
 ----------------------------- Impressum Infos --------------------------------------
 
@@ -109,8 +52,8 @@ sudo ./pylovara.updater-needle
 
  Schriftlicher verkehrt kann in jeder Sprache Stattfinden
 
- Investoren Stichwort   : Finanzierung | Info | Geschäftstreffen
- Entwickler Stichwort   : Entwicklungsinteresse
+ Investoren Stichwort   : Finanzierung | Pylovara-System Info | Geschäftstreffen
+ Entwickler Stichwort   : Entwicklungsinteresse | lehrgang
  Lizenskäufte stichwort : License Buy
 
  Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen

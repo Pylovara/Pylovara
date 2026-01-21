@@ -49,9 +49,6 @@ source "$MASTER_DIR/callme.conf"
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
 parse_conf "$MASTER_DIR/datatypes.conf"
 
-### MCS Syntax-Highlighting
-source "$MASTER_DIR/mcs-visualizer.conf"
-
 ### Hyprland Desktop
 #source "/Pylovara/Control/desktop.conf"
 
@@ -115,5 +112,8 @@ function record() {
 
 ## Legacy von MCS Beta !!!
 #source "$MCS_DIR/Wrapper/aliase.wrapper-needles"
+
+### MCS Syntax-Highlighting
+#source "$MASTER_DIR/mcs-visualizer.conf"
 
 ##############################################################################

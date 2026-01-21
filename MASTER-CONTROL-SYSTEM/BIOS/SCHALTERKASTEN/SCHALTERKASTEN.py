@@ -23,3 +23,21 @@ ALLOW_SELF_MODIFICATION = False
 
 # Logging
 VERBOSE = True
+
+# ZUSTANDSLOGIK
+class Zustand:
+    def __init__(self):
+        self.values = {}   # statt werte
+        self.alter = 0
+
+    def update(self, key, delta):   # statt aktualisieren
+        self.values[key] = self.values.get(key, 0.0) + delta
+
+    def abschwaechen(self, rate):
+        for k in self.values:
+            self.values[k] *= (1.0 - rate)
+
+    def abbild(self):
+        return dict(self.values)
+
+

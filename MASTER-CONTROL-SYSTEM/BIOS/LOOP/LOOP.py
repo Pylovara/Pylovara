@@ -2,22 +2,27 @@
 # LOOP – Lesen → Bewerten → Schreiben
 # ==============================
 
-from BIOS.SCHALTERKASTEN.SCHALTERKASTEN.py import Zustand
-from BIOS.SYNAPSE.SYNAPSE.py import Synapse
-from BIOS.EVALUATOR.EVALUATOR.py import Evaluator
-import BIOS.SCHALTERKASTEN.SCHALTERKASTEN.py as config
+from BIOS.SCHALTERKASTEN.SCHALTERKASTEN import Zustand
+from BIOS.SYNAPSE.SYNAPSE import Synapse
+from BIOS.EVALUATOR.EVALUATOR import Evaluator
+import BIOS.SCHALTERKASTEN.SCHALTERKASTEN as config
 
-class Zustand:
+
+class CognitiveLoop:
     def __init__(self):
-        self.werte = {}
-        self.alter = 0
+        self.zustand = Zustand()
+        self.synapse = Synapse(config.MUTATION_RATE)
+        self.evaluator = Evaluator()
 
-    def aktualisieren(self, schluessel, delta):
-        self.werte[schluessel] = self.werte.get(schluessel, 0.0) + delta
+    def step(self):
+        # Alterung
+        self.zustand.alter += 1
+        self.zustand.abschwaechen(config.STATE_DECAY)
 
-    def abschwaechen(self, rate):
-        for k in self.werte:
-            self.werte[k] *= (1.0 - rate)
+        # Übergang
+        self.synapse.apply(self.zustand)
 
-    def abbild(self):
-        return dict(self.werte)
+        # Bewertung
+        score = self.evaluator.score(self.zustand)
+
+        return score

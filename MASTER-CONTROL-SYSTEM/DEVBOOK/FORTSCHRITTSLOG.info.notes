@@ -50,3 +50,79 @@ FAZIT        = Das System hat jetzt **Lebensphasen**:
                Das ist genau das, was ein Nullpunkt-System zeigen soll –
                bevor wir es zügeln.
 ##########################################################################
+@mcs-nr: 1002 | SCORE-PHASEN-ANALYSE | INFO-ID = PHASE-BEOBACHTUNG-20260121-2346
+NAME         = Phasen-Analyse nach Persistenz-Einführung
+VERSION      = 0.0.3
+STAND        = 2026-01-21 23:46
+
+KURZ-INFO    = Erster Lauf: Geburt → Peak (+3.4) → Drift (-9)
+               Zweiter Lauf: Fortsetzung bei Alter=1000
+               → Start bei -8 → leichter Rückgang, aber stabiler als vorher
+
+POSITIV      =
+  - Persistenz 100% funktional (Laden/Speichern klappt)
+  - Phasen sichtbar: Aufbau → Stabil → Alterung
+  - Bonus wirkt stark (core_pulse + Key-Anzahl 4–10 → +3er Phase)
+  - Kein sofortiger Kollaps mehr
+
+NEGATIV      =
+  - Drift nach unten bleibt dominant (Mutation + Decay überwiegen langfristig)
+  - Nach hohem Alter startet Score tief → Decay zu stark oder Bonus zu schwach
+
+NÄCHSTES ZIEL = Drift stoppen → mehr positive Phasen
+                → mehr MCS-Keywords belohnen
+                → Evaluator erweitern (mehr Bonus-Felder)
+                → Mutation noch sanfter oder Decay dynamisch machen
+##########################################################################
+@mcs-nr: LEX-EXTRACT | MCS-TYPEN AUS SSoT 00.63 | INFO-ID = OFFIZIELLE-KEYWORDS-63
+STATUS       = NUR BIS VERSION 00.63 – KEINE NEUEN ERFINDUNGEN
+QUELLE       = PYLOVARA-SYSTEM-SSoT-00-63.pdf (öffentliche Teile)
+
+MCS-TYPEN & BEZEICHNUNGEN (exakt so wie im Dokument):
+- B1     | BIT-IMPULS          | BIT-BREITE = 1     | SCHALTERZUSTÄNDE (ON/OFF), GATTER-STEUERUNG
+- B8     | KERN-BYTE           | BIT-BREITE = 8     | UTF-8 ZEICHEN, EINFACHE SENSORWERTE
+- B16    | LOGIK-LINK          | BIT-BREITE = 16    | MCS-STANDART-OPERATOREN UND BEFEHLSKENNUNG
+- B32    | ADRESSIERUNG-PFAD   | BIT-BREITE = 32    | STANDART-ADRESSIERUNG FÜR LEGACY-SYSTEME
+- B64    | HIGH-SPEED-PFAD     | BIT-BREITE = 64    | GROSSE DATENSTRÖME, MODERNE SPEICHERADRESSIERUNG
+- B-INF  | MASSEN-TYP          | BIT-BREITE = 64    | MASSENZUSAMMENSETZUNG, SCHALTZUSTAND ÖFFNEN/SCHLIESSEN
+- B-pA   | ABGLEICHSNUMMER     | BIT-BREITE = ?     | SCHATTEN-IDENTITÄT (ID-DNA-GENERATOR)
+- p-KEY  | IDENTITÄTS-TYP      | VARIABEL           | KRYPTOGENETISCHE SIGNATUR, SIGNALFLUSS PRÜFUNG
+- INIT-V | START-PROTEIN       | 64+                | START-PROTEIN
+
+Zusätzliche Kategorien / Begriffe aus Lex / Handbuch (nur öffentlich):
+- PROTEINE
+- PROTONEN
+- BOOT-LOGIK
+- MIT-SYNC
+- DNA-ID-GENERATOR
+- KERNEL
+- ENERGIE-PROGRAMMTECHNIK
+- LICHTLEITERMATRIX
+- PROJEKTIVE RECHENLOGIK
+##########################################################################
+@kernel-nr: 1003 | SCORE-ANALYSE NACH SSoT-63-KEYWORD-BONUS | INFO-ID = PHASE-20260122-0004
+NAME         = SCORE-ANALYSE NACH ECHTER KEYWORD-ERWEITERUNG
+VERSION      = 0.0.5
+STAND        = 2026-01-22 00:04
+
+KURZ-INFO    = Erster Lauf: Start bei +4.77 → Peak +5.29 → längere positive Phase
+               → dann Drift ab ~70 in -3 bis -8, aber deutlich weniger extrem
+               Max: +5.29
+               Min: -8.85 (später)
+               Tendenz: deutlich mehr Zeit im positiven / neutralen Bereich
+                        Bonus für echte Typen (B1, INIT-V etc.) wirkt stark
+
+POSITIV      =
+  - Erste 14 Steps stark positiv (bis +5.29) → Initialzustand + MCS-Bonus greifen sehr gut
+  - Längere Phasen um -3 bis -5 (statt sofort -8/-9) → echte Typen stabilisieren
+  - Nach Drift immer wieder Rückkehr in -4/-5 Bereich → kein permanenter Kollaps
+  - Persistenz lädt sauber (zweiter Lauf startet bei -8.2 → fortgesetzter Zustand)
+
+NEGATIV      =
+  - Ab ~70 immer noch Drift nach unten (Mutation + Decay dominieren langfristig)
+  - Ab ~500 oft -6 bis -8 → total_abs wächst oder Keys werden zu viele/zu extrem
+
+FAZIT        = Der echte SSoT-63-Bonus hat die **positive Phase verlängert** und den Drift **verlangsamt**.
+               Das System zeigt jetzt klar: **MCS-Struktur = höhere Stabilität**.
+               Nächstes Ziel: Drift komplett bremsen → mehr Dynamik in Bonus-Regeln + Decay anpassen.
+##########################################################################

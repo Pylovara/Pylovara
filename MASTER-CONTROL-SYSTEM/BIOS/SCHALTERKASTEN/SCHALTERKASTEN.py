@@ -1,9 +1,9 @@
 # =============================================================================
-# @kernel-nr: CONFIG | BIOS/SCHALTERKASTEN | INFO-ID = KKIS-NULLPUNKT-KONFIG
+# @mcs-nr: CONFIG | BIOS/SCHALTERKASTEN | INFO-ID = KKIS-NULLPUNKT-KONFIG
 # =============================================================================
 # NAME         = KKIS NULLPUNKT KONFIGURATION
 # VERSION      = 0.0.2
-# AUTOR        = Bandino Der Henker
+# AUTOR        = Thomas Zimmermann Stufe 10
 # STAND         = 2026-01-21
 # STATUS       = FREIGESCHALTET FÜR TEST
 # =============================================================================

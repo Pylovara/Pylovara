@@ -1,5 +1,5 @@
 # =============================================================================
-# @kernel-nr: SYNAPSE | ÜBERGANGSREGELN | INFO-ID = SYNAPSE-REGELN
+# @mcs-nr: SYNAPSE | ÜBERGANGSREGELN | INFO-ID = SYNAPSE-REGELN
 # =============================================================================
 # NAME     = SYNAPSE – Übergangsregeln
 # FUNKTION = Mutation + Birth-Logik

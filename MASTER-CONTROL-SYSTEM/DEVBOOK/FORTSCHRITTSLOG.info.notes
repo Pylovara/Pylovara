@@ -1,0 +1,52 @@
+##########################################################################
+@mcs-nr:999 | STATUS : BEWEGUNG | INFO-ID = FORTSCHRITT-20260121
+
+NAME     = STAND DER DINGE
+INFO-ID  = FORTSCHRITT-20260121
+
+KURZ-INFO = Der Loop lebt jetzt – Scores bewegen sich
+            zwischen -0.01 und -11
+            Mutation + Decay + Evaluator greifen
+            Aber Tendenz nach unten (Explosion der Werte)
+
+PROBLEM  = Score driftet zu stark negativ
+           → Mutation zu wild
+           → Decay zu schwach
+           → Evaluator bestraft zu hart ohne genug Bonus
+
+ZIEL     = Scores stabilisieren (mehr oft um -2 bis +1)
+           → Mutation zügeln
+           → Decay verstärken
+           → Evaluator mit Bonus für gute Keys
+
+##########################################################################
+@mcs-nr: 1001 | SCORE-ANALYSE | INFO-ID = SCORE-BEOBACHTUNG-20260121-2312
+NAME         = SCORE-ANALYSE NACH LAYOUT-TAUSCH
+VERSION      = 0.0.2
+STAND        = 2026-01-21 23:12
+
+KURZ-INFO    = Scores starten bei +0.98 und steigen bis +3.26
+               → dann Drift nach unten
+               Max: +3.267
+               Min: -10.09 (später)
+               Tendenz: anfangs stark positiv → dann negativ, aber
+               nicht mehr so extrem wie -11
+               Bonus wirkt: core_pulse und Key-Anzahl 4–10 werden
+               belohnt → daher die +3er Phase
+
+POSITIV      =
+  - Erste 9 Steps positiv (bis +3.26)
+    → Initialzustand + Bonus greifen perfekt
+  - Immer wieder Rückkehr in -3 bis -5 Bereich
+    → Stabilisierungsphasen sichtbar
+  - Kein sofortiger Kollaps mehr wie vorher (-11 permanent)
+
+NEGATIV      =
+  - Ab Step ~30 Drift nach unten (Mutation + Decay überwiegen)
+  - Ab ~200 oft -7 bis -9 → total_abs wird zu groß oder Keys zu viele
+
+FAZIT        = Das System hat jetzt **Lebensphasen**:
+               Geburt → Aufbau → Peak → Alterung/Drift → Rückkehr
+               Das ist genau das, was ein Nullpunkt-System zeigen soll –
+               bevor wir es zügeln.
+##########################################################################

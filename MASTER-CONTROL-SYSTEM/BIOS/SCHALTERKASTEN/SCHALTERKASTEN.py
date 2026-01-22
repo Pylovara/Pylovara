@@ -32,10 +32,10 @@ class Zustand:
         # Initialwerte – wie START-PROTEIN (INIT-V)
         self.values = {
             "core_pulse":       5.0,    # Kern-Schlag – soll um 5 bleiben
-            "energy_flow":      3.5,
+            "energy_flow":      3.8,
             "stability_factor": 2.0,
-            "mutation_load":    1.2,
-            "noise_level":      0.8
+            "mutation_load":    1.3,
+            "noise_level":      0.7
         }
         self.alter = 0
 

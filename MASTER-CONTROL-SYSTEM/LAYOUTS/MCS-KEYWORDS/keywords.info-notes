@@ -100,9 +100,9 @@ BOXIS-BLANKERNENNER KLASSE = BOXIS-BLANKERNENNER-ENDPUNKT
 SYMBOLISCHE DEKLARATION =   °
 
 
-==================================
+#==================================
 ## 008-master-control.kernel-notes # GROẞ DAHER ALS LETZTES
-==================================
+#==================================
 
 
 # 009-wahrheit.kernel-notes
@@ -266,9 +266,6 @@ TRANSAKTIONSRAHMEN-STARTPUNKT = ¢!
 
 !¢ = TRANSAKTIONSRAHMEN-ENDPUNKT
 TRANSAKTIONSRAHMEN-ENDPUNKT = !¢
-
-–·¤: = BEDINGUNGS-TRIGGER
-BEDINGUNGS-TRIGGER = –·¤:
 
 = = BEDINGUNGS-AUSWERTUNG
 BEDINGUNGS-AUSWERTUNG = =

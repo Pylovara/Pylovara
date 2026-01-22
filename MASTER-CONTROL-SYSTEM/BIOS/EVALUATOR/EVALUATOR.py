@@ -1,8 +1,8 @@
 # =============================================================================
-# @mcs-nr: EVALUATOR | BEWERTUNG | INFO-ID = LAYOUT-SCORER-00.4
+# @mcs-nr: EVALUATOR | BEWERTUNG | INFO-ID = LAYOUT-SCORER-00.5
 # =============================================================================
 # NAME         = Evaluator – MCS-00.63 Layout-Bewertung
-# VERSION      = 0.0.4
+# VERSION      = 0.0.5
 # AUTOR        = Thomas Zimmermann Stufe 10
 # STAND         = 2026-01-21
 # STATUS       = FREIGESCHALTET FÜR ECHTE SSoT 00.63 KEYWORDS

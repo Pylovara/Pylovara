@@ -1,4 +1,4 @@
-@kernel-nr: 02 | TRANSAKTIONSRAHMEN | STATUS : VAILDE
+@kernel-nr: 02 | TRANSAKTIONSRAHMEN | STATUS = KONSOLIDIERT
 ######################################################################
 ----------------------------------------------------------------------
  NAME = TRANSAKTIONSRAHMEN
@@ -12,7 +12,7 @@
  AUSFÜHRUNGSART =
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- TRANSAKTIONSKLASSE = MCS-RUNTIME-ANFANGSBEDIENUNG
+ TRANSAKTIONSRAHMEN KERN KLASSE = TRANSAKTIONSRAHMEN
 
  FUNKTION = KOMPLETTER DATENSATZ AN PROTEINE SYSTEMWEIT ALLEM
 
@@ -22,9 +22,20 @@
 
  INFO = INPUT
 ----------------------------------------------------------------------
- TRANSAKTIONSKLASSE = MCS-RUNTIME-ENDBEDIENUNG
+----------------------------------------------------------------------
+ TRANSAKTIONSKLASSE KLASSE = TRANSAKTIONSRAHMEN-STARTPUNKT
 
- FUNKTION = KOMPLETTER DATENSATZ AN PROTEINE SYSTEMWEIT ALLEM
+ FUNKTION = KOMPLETTER DATENSATZ ANFANG
+
+ SYMBOLISCHE DEKLARATION = ¢!
+
+ SYMBOL IN WORTEN = CENT-ZEICHEN AUSRUFEZEICHEN
+
+ INFO = INPUT
+----------------------------------------------------------------------
+ TRANSAKTIONSRAHMEN-START-BEDIENUNG KLASSE = TRANSAKTIONSRAHMEN-ENDPUNKT
+
+ FUNKTION = KOMPLETTER DATENSATZ ENDE
 
  SYMBOLISCHE DEKLARATION = !¢
 

@@ -1,11 +1,11 @@
-@kernel-nr: 03 | PROTEINE | STATUS : VALIDE
+@kernel-nr: 03 | PROTEIN | STATUS = KONSOLIDIERT
 ######################################################################
 ----------------------------------------------------------------------
- NAME = PROTEINE
+ NAME = PROTEIN
 
  BEGRIFFSDEFINTION = HAUPTDATENTRÄGER
 
- INFO-ID = PROTEINE
+ INFO-ID = PROTEIN
 
  FUNKTION = TRANSPORTRAHMEN
 
@@ -23,7 +23,7 @@
  INFO = PROTEIN-RAHMEN
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-PROTEIN-START
+ PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-STARTPUNKT
 
  FUNKTION = ANFANGSBEDIENUNG
 
@@ -34,7 +34,7 @@
  INFO = ANFANG DES PROTEIN
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-PROTEIN-ENDE
+ PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-ENDPUNKT
 
  FUNKTION = ENDBEDIENUNG
 

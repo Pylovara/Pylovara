@@ -1,10 +1,10 @@
-@kernel-nr: 06 | AKTIONSDRAHT | AKTIONEN | STATUS : VALIDE FINETUNING
+@kernel-nr: 06 | AKTIONSDRAHT | STATUS = KONSOLIDIERT
 ######################################################################
 ----------------------------------------------------------------------
 
- NAME = AKTIONSDRAHT | AKTIONEN
+ NAME = AKTIONSDRAHT
 
- INFO-ID = AKTIONEN
+ INFO-ID = AKTIONSDRAHT
 
  BEGRIFFSDEFINTION = HAUPTVERDRAHTUNG
 
@@ -15,17 +15,15 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- AKTIONS KERN KLASSE = AKTIONSDRAHT
+ AKTIONSDRAHT KERN KLASSE = AKTIONSDRAHT
 
- INFO-ID = AKTIONEN
+ INFO-ID = AKTIONSDRAHT
 
  BEGRIFFSDEFINTION = HAUPTVERDRAHTUNG
 
- SYMBOLISCHE DEKLARATION BEISPIEL=    » «
-                                        «
-                                        «
-                                        «
-                                        «
+ SYMBOLISCHE DEKLARATION BEISPIEL = » «
+                                      «
+                                      «
 
  FUNKTION = START UND END BEDIENUNGEN
 
@@ -39,7 +37,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- AKTIONSDRAHT KLASSE = AKTIONSDRAHT-AKTION-START
+ AKTIONSDRAHT KLASSE = AKTIONSDRAHT-STARTPUNKT
 
  FUNKTION = ANFANG-BEDIENUNG
 
@@ -59,7 +57,7 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- AKTIONSDRAHT KLASSE = AKTIONSDRAHT-AKTION-ENDE
+ AKTIONSDRAHT KLASSE = AKTIONSDRAHT-ENDPUNKT
 
  FUNKTION = END-BEDIENUNG
 

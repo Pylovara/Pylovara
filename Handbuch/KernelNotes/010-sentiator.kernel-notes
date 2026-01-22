@@ -1,0 +1,106 @@
+@kernel-nr: 10 | SENTIATOR | STATUS = KONSOLIDIERT
+######################################################################
+----------------------------------------------------------------------
+
+ NAME = SENTIATOR
+
+ INFO-ID = SENTIATOR
+
+ BEGRIFFSDEFINTION = BEWERTENDE SIGNALINSTANZ EINES PROTEIN.
+
+ FUNKTION = FLUẞENTSCHEIDUNG
+
+ AUSFÜHRUNGSART = SIGNALINSTANZ SCHALTUNGSLOGIK
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ SENTIATOR KERN KLASSE = SENTIATOR
+
+ INFO = INITIALISIERT SENTIATOR
+
+ INFO-ID = SENTIATOR
+
+ FUNKTION = FLUẞENTSCHEIDUNG
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-WENN-KANN
+
+ FUNKTION = PROZESS ÖFFNER
+
+ SYMBOLISCHE DEKLARATION = ¶
+
+ SYMBOL IN WORTEN = ABSATZ-ZEICHEN
+
+ INFO = WENN DAS PASSIERT KANN FOLGENDES PASSIEREN
+        WIRD NIEMALS ALS HEADER BENUTZT SONDERN,
+        ALS ENTSCHEIDUNGSLOGIK.
+
+ COMPILER =
+ Der Sentiator muss den "Zustand der Reinheit" prüfen.
+ Wenn ¶ gerufen wird, muss er prüfen: Ist FF(X) == 1?.
+ Wenn ja, öffne die Schleuse.
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ SENTIATOR-WENN-KANN KLASSE = SENTIATOR-WENN-KANN-IMPULS
+
+ FUNKTION = ÖFFNUNGSIMPULS
+
+ INFO = WENN DAS PASSIERT , KANN FOLGENDES FOLGEN - IMPULS
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-NICHT
+
+ FUNKTION = PROZESS ÖFFNER
+
+ SYMBOLISCHE DEKLARATION = ¶¶
+
+ SYMBOL IN WORTEN = ABSATZ-ZEICHEN ABSATZ-ZEICHEN
+
+ INFO = WENN DAS NICHT PASSIERT , MUSS FOLGENDES FOLGEN.
+        WIRD NIEMALS ALS HEADER BENUTZT SONDERN,
+        ALS ENTSCHEIDUNGSLOGIK
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ SENTIATOR-NICHT KLASSE = SENTIATOR-NICHT-IMPULS
+
+ FUNKTION = ÖFFNUNGSIMPULS
+
+ INFO = WENN DAS NICHT PASSIERT , MUSS FOLGENDES FOLGEN - IMPULS
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ SENTIATOR KLASSE = SENTIATOR-LOOP
+
+ FUNKTION = REPLAY DER AUSFÜHRUNG
+
+ SYMBOLISCHE DEKLARATION = Ω
+
+ SYMBOL IN WORTEN = OMEGA-ZEICHEN
+
+ INFO = ERSTELLT EINEN LOOP DER DURCH ARGUMENTE GESTEUERT BEENDET
+        WERDEN KANN.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ SENTIATOR-LOOP KLASSE = SENTIATOR-LOOP-IMPULS
+
+ FUNKTION = ÖFFNUNGSIMPULS
+
+ INFO = WENN DAS AUSGEFÜHRT WERDEN SOLL , KANN LOOP STARTEN
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+       DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT
+       PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------
+#################### ENDE DER SENTIATOREN ############################

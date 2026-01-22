@@ -1,10 +1,10 @@
-@kernel-nr: 13 | WARPS | STATUS : VALIDE KONSOLIDIERT
+@kernel-nr: 13 | WARP | STATUS = KONSOLIDIERT
 ######################################################################
 ----------------------------------------------------------------------
 
- NAME = WARPS
+ NAME = WARP
 
- INFO-ID = WARPS
+ INFO-ID = WARP
 
  BEGRIFFSDEFINTION = DIREKTE ORIGINALE COMPILER BINDUNG
 
@@ -15,9 +15,9 @@
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- WARP KERN KLASSE = WARPS
+ WARP KERN KLASSE = WARP
 
- INFO-ID = WARPS
+ INFO-ID = WARP
 
  FUNKTION = DIREKTE ORIGINALE COMPILER BINDUNG TARNSPORTRAHMEN
 
@@ -27,13 +27,15 @@
 
  INFO = TRANSPORTRAHMENBEDINUNG FÜR FREMDCOMPILER
         PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
+        KANN AUCH FÜR GRAFIK RENDERER ODER SOUND 
+        GENUTZT WERDEN.
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- FEED KERN UNTERKLASSE = WARPS-START
+ WARP KLASSE = WARP-STARTPUNKT
 
- INFO-ID = WARPS
+ INFO-ID = WARP
 
  FUNKTION = DIREKTE ORIGINALE COMPILER START TARNSPORTRAHMEN BINDUNG
 
@@ -43,12 +45,13 @@
 
  INFO = TRANSPORTRAHMENBEDINUNGS-START FÜR FREMDCOMPILER
         PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
+        
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
- WARP KERN UNTERKLASSE = WARPS-ENDE
+ WARP KLASSE = WARP-ENDPUNKT
 
- INFO-ID = WARPS
+ INFO-ID = WARP
 
  FUNKTION = DIREKTE ORIGINALE COMPILER ENDE TARNSPORTRAHMEN BINDUNG
 

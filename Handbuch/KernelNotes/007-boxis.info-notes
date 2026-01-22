@@ -111,10 +111,10 @@ Reine SHELL-CONTROL :
  RDX: *     | length       | Byte-Zahl
 ----------------------------------------------------------------------
 ######################################################################
-@info-id: BOXIS-CALL-CONTROL
+@info-id: BOXIS-SYSCALL
 ----------------------------------------------------------------------
 
- CALL-CONTROLL MUSTERBEISPIEL =
+ BOXIS-SYSCALL MUSTERBEISPIEL =
 
  #LINUX SYSCALLS (x86_64)
  #Schnittstelle: syscall

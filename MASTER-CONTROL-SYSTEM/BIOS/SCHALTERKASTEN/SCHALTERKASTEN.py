@@ -15,9 +15,9 @@ KKIS_VERSION = "0.0.3"
 # Lernparameter – MCS-Style: kleine Werte = Kontrolle
 # =============================================================================
 STATE_DECAY_BASE     = 0.03      # Basis-Decay (wie vorher)
-STATE_GAIN           = 0.05      # Verstärkung – bleibt
-MUTATION_RATE        = 0.02      # Mutationswahrscheinlichkeit
-MAX_STATE_SIZE       = 10000     # Sicherheitsgrenze
+STATE_GAIN           = 0.09      # Verstärkung – bleibt
+MUTATION_RATE        = 305.02      # Mutationswahrscheinlichkeit
+MAX_STATE_SIZE       = 10000     # Sicherheitsgrenze 10000
 ALLOW_SELF_MOD       = False     # Noch nicht erlaubt
 
 # Dynamischer Decay – schützt vor zu tiefem Score

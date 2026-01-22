@@ -19,7 +19,8 @@ class Synapse:
             "PROTEINE", "PROTONEN", "BOOT-LOGIK", "MIT-SYNC", "BOXIS", "WAHRHEITEN",
             "ARGUMENTE", "SENTIATOREN", "FEEDS", "MCS-CMD-REGISTER", "IDENTIFIKATION",
             "DATENTYPEN", "kernel lex", "DATEITYPEN", "/Pylovara/Handbuch/KernelNotes/",
-            "Thomas Zimmermann", "ID-DNA-THOMAS-ZIMMERMANN-ÞÞZRB68"
+            "Thomas Zimmermann", "ID-DNA-THOMAS-ZIMMERMANN-ÞÞZRB68","[", "}",
+            "]", "¶", "{", "|", "¤", "↓", "↑", "!", "°", "Ø"
         ]
 
     def apply(self, state):
@@ -37,8 +38,8 @@ class Synapse:
         if random.random() < self.mutation_rate:
             delta *= random.uniform(1.05, 1.35)     # sehr milde Mutation
             # 20% Chance, ein neues echtes Keyword hinzuzufügen (max 18 Keys)
-            if random.random() < 0.20 and len(state.values) < 18:
+            if random.random() < 0.25 and len(state.values) < 18:
                 new_key = random.choice(self.preferred_keys)
                 if new_key not in state.values:
-                    state.values[new_key] = random.uniform(1.0, 5.0)
+                    state.values[new_key] = random.uniform(1.0, 6.0)
         state.update(key, delta)

@@ -1,7 +1,7 @@
-@kernel-nr: 04 | PROTONEN | STATUS : VALIDE
+@kernel-nr: 04 | PROTONEN | STATUS = KONSOLIDIERT
 ######################################################################
 ----------------------------------------------------------------------
- NAME = PROTONEN
+ NAME = PROTON
 
  INFO-ID = PROTONEN
 
@@ -27,7 +27,7 @@
  INFO-ID = PROTONEN-BAUSTELLE
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- PROTON KERN UNTERKLASSE = PROTON-START
+ PROTON KLASSE = PROTON-STARTPUNKT
 
  FUNKTION = ANFANGSBEDIENUNG
 
@@ -38,7 +38,7 @@
  INFO = ANFANG DES PROTON
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- PROTON KERN UNTERKLASSE = PROTON-ENDE
+ PROTON KLASSE = PROTON-ENDPUNKT
 
  FUNKTION = ENDBEDIENUNG
 

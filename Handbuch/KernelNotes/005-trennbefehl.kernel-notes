@@ -1,4 +1,4 @@
-@kernel-nr: 05 | TRENNBEFEHL | STATUS : VALIDE
+@kernel-nr: 05 | TRENNBEFEHL | STATUS = KONSOLIDIERT
 #######################################################################
 
  NAME = TRENNBEFEHL
@@ -26,7 +26,7 @@
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- PROTEIN KERN UNTERKLASSE = TRENNBEFEHL-NEXT
+ TRENNBEFEHL KLASSE = TRENNBEFEHL-NEXT
 
  FUNKTION = CONTAINERISIERT MEHRERE BOXIS IN EINEM PROTEIN
 
@@ -41,7 +41,7 @@
  »['echo HALLO'|'echo HALLO 2'|'echo HALLO 3']«
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
- PROTEIN KERN UNTERKLASSE = TRENNBEFEHL-NEXT-NEXT
+ TRENNBEFEHL KLASSE = TRENNBEFEHL-NEXT-NEXT
 
  FUNKTION = CONTAINERISIERT MEHRERE BOXIS IN EINEM PROTEIN
 

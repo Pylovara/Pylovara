@@ -1,13 +1,20 @@
 ## Übersichtskarte Dev
 -----------------------------------------------------------------------
-cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/EVALUATOR/EVALUATOR.py
-cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/LOOP/LOOP.py
-cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SCHALTERKASTEN/SCHALTERKASTEN.py
-cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SYNAPSE/SYNAPSE.py
-cat /Pylovara/MASTER-CONTROL-SYSTEM/MAIN.py
-cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/keywords.info-notes
-cat /Pylovara/MASTER-CONTROL-SYSTEM/DEVBOOK/FORTSCHRITTSLOG.info.notes
------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/EVALUATOR/EVALUATOR.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/LOOP/LOOP.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SCHALTERKASTEN/SCHALTERKASTEN.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SYNAPSE/SYNAPSE.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/MAIN.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/keywords.info-notes && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/DEVBOOK/FORTSCHRITTSLOG.info.notes && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/priorities.info-notes && echo ------------------------------------------------------------------------
+
+
+
+
+
+
+
 /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/ORDNER_STRUKTUR/
 /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/DATEI_STRUKTUR/
 /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/NAMENSCHEMA/

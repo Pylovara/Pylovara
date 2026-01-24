@@ -1,0 +1,55 @@
+@kernel-nr: 04 | PROTON | STATUS = KONSOLIDIERT
+######################################################################
+----------------------------------------------------------------------
+ NAME = PROTON
+
+ INFO-ID = PROTONEN
+
+ BEGRIFFSDEFINITION = VERSORGUNGSDATENTRÄGER
+
+ FUNKTION = HARDWARESTEUERUNG | HARDWAREVERSORGUNG
+
+ MASTER = MASTER-PROTON
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTON KERN KLASSE = PROTON
+
+ FUNKTION = RAHMENBEDIENUNG
+
+ STELLT EIN GANZES PROTON ZUR VERFÜGUNG DAS GEFÜLLT WERDEN KANN
+
+ SYMBOLISCHE DEKLARATION = { }
+
+ SYMBOLIK IN WORTEN = GESCHWEIFTEKLAMMER-AUF GESCHWEIFTEKLAMMER-ZU
+
+ INFO = STELLT NUR DIE RAHMENBEDIENUNG HER
+
+ INFO-ID = PROTONEN-BAUSTELLE
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTON KLASSE = PROTON-STARTPUNKT
+
+ FUNKTION = ANFANGSBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = {
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF
+
+ INFO = ANFANG DES PROTON
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTON KLASSE = PROTON-ENDPUNKT
+
+ FUNKTION = ENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = }
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER ZU
+
+ INFO = ENDE DES PROTON
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+            DATUM = [03:20:23|Fr 25 Jun 2025] MARKENBRANDT
+            PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------
+###################### ENDE DER PROTONEN  ############################

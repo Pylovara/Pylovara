@@ -1,0 +1,68 @@
+######################################################################
+ 004-PROTON.INFO-NOTES |
+######################################################################
+@info-id: PROTONEN-DEV
+----------------------------------------------------------------------
+ ↓ STANDARTLAYOUT ↓
+----------------------------------------------------------------------
+ PROTON KLASSE =
+
+ FUNKTION =
+
+ SYMBOLISCHE DEKLARATION =
+
+ SYMBOL IN WORTEN =
+
+ INFO =
+----------------------------------------------------------------------
+######################################################################
+@info-id: PROTONEN
+----------------------------------------------------------------------
+ ERKLÄRUNG PROTON/EN =
+
+ UM HARDWARE KOMPONENTEN ZU VERSORGEN WERDEN AUTOMATIONS PROGRAMME
+ BENÖTIGT, DIE WIR DURCH DAS ANSPRECHEN VON AUTOMATIONS ABLÄUFE IN
+ MCS DATEITYPEN DEFINIEREN.
+
+ ÜBER PROTONEN STEUERN WIRD DIESE AUTOMATIONSGESCHRIEBENE HARDWARE
+ ABLAUFSTEUERUNGEN.
+
+ PRIMÄR BEWERKSTELLIGEN PROTONEN DIE ANSTEUERUNG FÜR VERSCHIEDENE
+ ZUSTÄNDE UND WERDEN IN PROTEINE IM HAUPDATENTRÄGER AN DIE
+ JEWEILIGEN HARDWAREKOMPONENTEN GESCHICKT.
+
+ DADURCH ERREICHT DER MCS KERNEL EINEN EIGENEN MÖGLICHEN DRIVER
+ GESCHRIEBENEN ZUSTAND, DER GRUNDSÄTZLICH ALLES ANSTEUERN KANN.
+
+ PROTONEN NUTZEN HAUPTSÄCHLICH DIE BOXIS MCS-REGISTER FÜR DIESEN ZWECK.
+----------------------------------------------------------------------
+######################################################################
+@info-id: PROTONEN-BAUSTELLEN
+----------------------------------------------------------------------
+ BAUUSTELLEN-ABSCHNITT-ANFANG
+
+
+ Definition Verschachtelte Proton /en :
+
+ {{{{{{{}}}}}}}
+----------------------------------------------------------------------
+ Beispiel HardwareManagment MusterBeispiel:
+
+ {’CPU’{’Volt’|'*'{'Watt'|'*'{’Ampere’|'*'{’Widerstand’{’Frequenz’|’*’}}}}}}
+
+ (Diese Sektor Wird Noch Designed und Definiert)
+
+
+----------------------------------------------------------------------
+ Proton Anwendungsfälle
+
+ - Primär Physikalische (Temp, Volt, Watt, Amp)
+ - Sekundär Verschachtelte (Chip + EnergieManagment)
+ - Kommunikationsbezogene (Strom ,Interface, Transport)
+ - Speicherbezogene (Cache, Signed, Unsigned)
+ - Logische (Valid, State, Mode)
+ - Prozessbezogene (Pid, Thread, ID)
+
+ BAUSTELLEN-ABSCHNITT-ENDE
+----------------------------------------------------------------------
+######################################################################

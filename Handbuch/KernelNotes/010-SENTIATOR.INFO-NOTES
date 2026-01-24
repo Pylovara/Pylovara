@@ -1,0 +1,50 @@
+######################################################################
+ 010-SENTIATOR.INFO-NOTES |
+######################################################################
+@info-id: SENTIATOR-DEV
+----------------------------------------------------------------------
+ ↓ STANDARTLAYOUT ↓
+----------------------------------------------------------------------
+ SENTIATOR KLASSE =
+
+ FUNKTION =
+
+ SYMBOLISCHE DEKLARATION =
+
+ SYMBOL IN WORTEN =
+
+ INFO =
+
+ SENTIATOR MUSTERBEISPIELE =
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+----------------------------------------------------------------------
+######################################################################
+@info-id: SENTIATOR
+----------------------------------------------------------------------
+
+ ERKLÄRUNG SENTIATOR/EN =
+
+ SENTIATOR/EN SIND BEWERTENDE SIGNALINSTANZEN, DIE DEN AKTUELLEN
+ WAHRHEITS- ODER FEED-ZUSTAND PRÜFT.
+
+ NACH DER PRÜFUNG EINEN IMPULS FÜR ODER GEGEN DIE AUSFÜHRUNG
+ DES UNMITTELBAREN FOLGE CODES ENTSCHEIDET
+
+ EIN SENTIATOR FÜHRT KEINEN EIGENEN CODEFLUSS EIN,
+ SONDERN ÖFFNET ODER BLOCKIERT AUSSCHLIEẞLICH DEN NACHFOLGENDEN
+ AUSFÜHRUNGSRAUM INNERHALB EINER AKTIKEN WAHRHEIT.
+
+ Gatter-Schaltung:
+ Bei ¶ wird nicht nur ein Bool geprüft,
+ sondern der physikalische Status des lcore-nodes.
+
+----------------------------------------------------------------------
+######################################################################
+@info-id: SENTIATOR-BAUSTELLE
+----------------------------------------------------------------------
+
+ DER PLATZ IST LEER
+
+----------------------------------------------------------------------
+######################################################################

@@ -1,0 +1,89 @@
+######################################################################
+¢!
+$ »[,002-TRANSAKTIONSRAHMEN-INFO-NOTES,]««
+   ¶ -· »[~ ÖFFNEN ~]«
+!¢
+######################################################################
+@info-id: TRANSAKTIONSRAHMEN-DEV
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ TRANSAKTIONSKLASSE = MCS-RUNTIME-ANFANGSBEDIENUNG
+
+ FUNKTION = KOMPLETTER DATENSATZ AN PROTEINE SYSTEMWEIT ALLEM
+
+ SYMBOLISCHE DEKLARATION = ¢!
+
+ SYMBOL IN WORTEN = CENT-ZEICHEN AUSRUFEZEICHEN
+
+ INFO = INPUT
+----------------------------------------------------------------------
+ TRANSAKTIONSKLASSE = MCS-RUNTIME-ENDBEDIENUNG
+
+ FUNKTION = KOMPLETTER DATENSATZ AN PROTEINE SYSTEMWEIT ALLEM
+
+ SYMBOLISCHE DEKLARATION = !¢
+
+ SYMBOL IN WORTEN = AUSRUFEZEICHEN CENT-ZEICHEN
+
+ INFO = OUTPUT
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+######################################################################
+@info-id: TRANSAKTIONSRAHMEN
+----------------------------------------------------------------------
+ ERKLÄRUNG TRANSAKTIONSRAHMEN =
+
+ DIE TRANSAKTIONSRAHMEN MCS-RUNTIMEBEDIENUNG SORGEN FÜR DEN
+ PROZESSRAHMEN UND LÖSEN DIE BEDIENUNG AUS, DAS AUSFÜHRBARE
+ ODER UNAUSFÜHRBARE PROTEIN/E GELESEN WERDEN DÜRFEN.
+
+ SIE SIND IM RAHMEN MUSTER MIT ZWEI SYMBOLEN DEKLARIERT UND
+ UND BESTIMMEN DEN VERARBEITUNGSRAHMEN.
+
+ SYMBOLIK IN WORTEN =
+
+ CENT-ZEICHEN AUSRUFEZEICHEN INHALT AUSRUFEZEICHEN CENT-ZEICHEN
+
+ SYMBOLRAHMEN UNTERSCHIEDE IN WORTEN =
+
+ CENT-ZEICHEN AUSRUFEZEICHEN = TRANSAKTIONSRAHMEN-START
+
+ AUSRUFEZEICHEN CENT-ZEICHEN = TRANSAKTIONSRAHMEN-ENDE
+
+ INFO =
+
+  DIE ANORDNUNG KANN AM ANFANG UND ENDE PLAZIERT WERDEN ODER
+  BEI KLEINEN PROZESSEN VORNE UND HINTEN.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+  MUSTERBEISPIELE =
+
+ ¢! # TRANSAKTION-ANFANG
+    »[,sys_write (1)¨¨,]
+     ¶ ['echo ¨(1)¨']«««t1
+     ;;»[’feed cache clear 1’]«««t5
+ !¢ # TRANSAKTION ENDE
+
+
+  EINSATZBEREICHE MUSTERBEISPIELE =
+
+  #Argumente | Reinheit | MCS CMD
+  # MCS CMD FührenderFeed speicher löschen container 1
+  »[’feed cache clear 1’]«
+  #-> Der MCS CMD befehl wird genutzt um das MCS Register
+  #   für den feedcache zu löschen
+  #-> Der Blankennenner wird genutzt, um den spezifischen
+  #   Sektor von Feed 1 physisch zu nullen (ALU_REINIGEN).
+
+  # TIMING / Argument mit Couldownsekunden «« t
+  »[...]«««t
+  -> Das Argument gibt der Schaltung die Kennung für Zeitstempel
+     oder CPU-Zyklen-Priorität mit.
+
+  # Reinheit / Löschung
+  »[...]«««t
+  -> Das Argument gibt der Schaltung die Kennung für Zeitstempel
+     oder CPU-Zyklen-Priorität mit.
+
+----------------------------------------------------------------------
+######################################################################

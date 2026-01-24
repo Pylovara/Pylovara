@@ -1,0 +1,51 @@
+@kernel-nr: 02 | TRANSAKTIONSRAHMEN | STATUS = KONSOLIDIERT
+######################################################################
+----------------------------------------------------------------------
+ NAME Ð TRANSAKTIONSRAHMEN
+
+ INFO-ID = TRANSAKTIONSRAHMEN
+
+ BEGRIFFSDEFINITION = MCS-RUNTIMEBEDIENUNG
+
+ FUNKTION = EINDEUTIGE MCS DAZUGEHÖRIGKEIT
+
+ MASTER = MASTER-TRANSAKTIONSRAHMEN
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ TRANSAKTIONSRAHMEN KERN KLASSE = TRANSAKTIONSRAHMEN
+
+ FUNKTION = KOMPLETTER DATENSATZ AN PROTEINE SYSTEMWEIT ALLEM
+
+ SYMBOLISCHE DEKLARATION = ¢!
+
+ SYMBOL IN WORTEN = CENT-ZEICHEN AUSRUFEZEICHEN
+
+ INFO = INPUT
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ TRANSAKTIONSKLASSE KLASSE = TRANSAKTIONSRAHMEN-STARTPUNKT
+
+ FUNKTION = KOMPLETTER DATENSATZ ANFANG
+
+ SYMBOLISCHE DEKLARATION = ¢!
+
+ SYMBOL IN WORTEN = CENT-ZEICHEN AUSRUFEZEICHEN
+
+ INFO = INPUT
+----------------------------------------------------------------------
+ TRANSAKTIONSRAHMEN-START-BEDIENUNG KLASSE = TRANSAKTIONSRAHMEN-ENDPUNKT
+
+ FUNKTION = KOMPLETTER DATENSATZ ENDE
+
+ SYMBOLISCHE DEKLARATION = !¢
+
+ SYMBOL IN WORTEN = AUSRUFEZEICHEN CENT-ZEICHEN
+
+ INFO = OUTPUT
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+            DATUM = [03:10:53|So 12 Jul 2025] MARKENBRANDT
+            PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------
+################## ENDE DES TRANSAKTIONSRAHMEN #######################
+

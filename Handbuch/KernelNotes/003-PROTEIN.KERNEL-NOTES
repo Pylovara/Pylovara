@@ -1,0 +1,51 @@
+@kernel-nr: 03 | PROTEIN | STATUS = KONSOLIDIERT
+######################################################################
+----------------------------------------------------------------------
+ NAME = PROTEIN
+
+ BEGRIFFSDEFINTION = HAUPTDATENTRÄGER
+
+ INFO-ID = PROTEIN
+
+ FUNKTION = SYSTEM TRANSPORTRAHMEN
+
+ MASTER = MASTER-PROTEIN
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTEIN KERN KLASSE = PROTEIN-RAHMEN
+
+ FUNKTION = RAHMENBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = [ ]
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER AUF ECKIGE KLAMMER ZU
+
+ INFO = PROTEIN-RAHMEN
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-STARTPUNKT
+
+ FUNKTION = ANFANGSBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = [
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER AUF
+
+ INFO = ANFANG DES PROTEIN
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-ENDPUNKT
+
+ FUNKTION = ENDBEDIENUNG
+
+ SYMBOLISCHE DEKLARATION = ]
+
+ SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
+
+ INFO = ENDE DES PROTEIN
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+        DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT
+        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+----------------------------------------------------------------------
+######################## ENDE DER PROTEIN/E ##########################

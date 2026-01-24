@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# info_extractor.sh - Extrahiert spezifischen @info-id: Abschnitt aus *.info-notes
+# info_extractor.sh - Extrahiert spezifischen @info-id: Abschnitt aus *.INFO-NOTES
 # ==============================================================================
 # Aufruf: info <SUCH_ID>   z.B. info PROTEINE   oder   info MASTER-CONTROL
 # ==============================================================================
@@ -16,7 +16,7 @@ fi
 
 FOUND=0
 
-# Durchsuche alle *.info-notes Dateien
+# Durchsuche alle *.INFO-NOTES Dateien
 while IFS= read -r file; do
     # Awk-Programm: Extrahiere den passenden Abschnitt
     TREFFER=$(awk -v id="$SUCHID" '
@@ -50,9 +50,8 @@ while IFS= read -r file; do
         FOUND=1
         break  # Erster Treffer reicht
     fi
-done < <(find "$HANDBUCH_DIR" -type f -name "*.info-notes" 2>/dev/null)
+done < <(find "$HANDBUCH_DIR" -type f -name "*.INFO-NOTES" 2>/dev/null)
 
 if [[ $FOUND -eq 0 ]]; then
     echo "[!] Kein Abschnitt zu '@info-id: $SUCHID' gefunden."
 fi
-

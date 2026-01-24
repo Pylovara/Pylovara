@@ -1,42 +1,37 @@
-@kernel-nr: 07 | BOXIS | STATUS = KONSOLIDIERT
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 07 # BOXIS | STATUS = KONSOLIDIERT
+### ==== ##### == # === ## STARTPUNKT BOXIS ### === # == ##### === ###
 
- NAME = BOXIS
+ NAME Ð BOXIS
 
  INFO-ID = BOXIS
-
- BEGRIFFSDEFINITION = EINGABENRAHMEN
-
- FUNKTION =  TRANSPORTNEUTRALER TRÄGER FÜR INTENTIONALE OPERATIONEN
 
  MASTER = MASTER-BOXIS
 
+ BEGRIFFSDEFINITION = SINGEL ODER PARALLELE INTERNATIONALE SYSTEM OPERATIONEN
+
+ FUNKTION =  TRANSPORTNEUTRALER TRÄGER FÜR INTENTIONALE OPERATIONEN
+
  AUSFÜHRUNGSART = KERN KLASSE
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS KERN KLASSE = BOXIS
 
- INFO-ID = BOXIS
+ INFO = HIER WERDEN INTERNATIONALE SYSTEM OPERATIONEN AUFGETEILT
 
- BEGRIFFSDEFINTION = HAUPTVERDRAHTUNG
+ BEGRIFFSDEFINTION = SINGEL ODER PARALLELE SYSTEM OPERATIONEN
 
  FUNKTION = RAHMEN START/END-BEDINUNGEN
 
  AUSFÜHRUNGSART = SIGNAL-ROUTING
 
- INFO = CONTAINER DIE FÜR DEN DIREKTEN TRANSPORT
-        KONSIPIERT WURDEN. SIE VEREINEN MULTI DUAL JEDE
-        SYSTEM ANRUF EBENE BIS HIN ZU HAUS EIGENEN 
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS KLASSE = BOXIS-CALLIS
 
  INFO-ID = BOXIS-CALLIS
+
+ INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
 
  FUNKTION = REINERAUSGABENKANAL FÜR PRINT
 
@@ -44,14 +39,11 @@
 
  SYMBOL IN WORTEN = ANFÜHRUNGSZEICHEN INHALT ANFÜHRUNGSZEICHEN
 
- INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-CALLIS KLASSE = BOXIS-CALLIS-STARTPUNKT
 
- INFO-ID = BOXIS-CALLIS
+ INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
 
  FUNKTION = REINERAUSGABENKANAL FÜR PRINT
 
@@ -59,14 +51,11 @@
 
  SYMBOL IN WORTEN = ANFÜHRUNGSZEICHEN INHALT ANFÜHRUNGSZEICHEN
 
- INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-CALLIS KLASSE = BOXIS-CALLIS-ENDPUNKT
 
- INFO-ID = BOXIS-CALLIS
+ INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
 
  FUNKTION = REINERAUSGABENKANAL FÜR PRINT
 
@@ -74,14 +63,13 @@
 
  SYMBOL IN WORTEN = ANFÜHRUNGSZEICHEN INHALT ANFÜHRUNGSZEICHEN
 
- INFO = DATENFLUSS ZUM STANDART-AUSGABENKANAL STDOUT / FD 1
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS KLASSE = BOXIS-SYSCALL
 
  INFO-ID = BOXIS-SYSCALL
+
+ INFO = RUFT DAS JEWEILIGE OS AN
 
  FUNKTION = SYSTEMANRUFEN
 
@@ -89,14 +77,11 @@
 
  SYMBOL IN WORTEN = KOMMA INHALT KOMMA
 
- INFO = RUFT DAS JEWEILIGE OS AN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-SYSCALL KLASSE = BOXIS-SYSCALL-STARTPUNKT
 
- INFO-ID = BOXIS-SYSCALL
+ INFO = RUFT DAS JEWEILIGE OS AN
 
  FUNKTION = SYSTEMANRUFEN
 
@@ -104,14 +89,11 @@
 
  SYMBOL IN WORTEN = KOMMA INHALT KOMMA
 
- INFO = RUFT DAS JEWEILIGE OS AN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-SYSCALL KLASSE = BOXIS-SYSCALL-ENDPUNKT
 
- INFO-ID = BOXIS-SYSCALL
+ INFO = RUFT DAS JEWEILIGE OS AN
 
  FUNKTION = SYSTEMANRUFEN
 
@@ -119,14 +101,13 @@
 
  SYMBOL IN WORTEN = KOMMA INHALT KOMMA
 
- INFO = RUFT DAS JEWEILIGE OS AN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS KLASSE = BOXIS-SHELL-CONTROL
 
  INFO-ID = BOXIS-SHELL-CONTROL
+
+ INFO = NUTZT OS SHELL FÜR OS SHELL EINGABEN
 
  FUNKTION = SYSTEM SHELL ANRUFEN
 
@@ -134,15 +115,11 @@
 
  SYMBOL IN WORTEN = HOCHKOMMA INHALT HOCHKOMMA
 
- INFO = NUTZT OS SHELL FÜR OS SHELL EINGABEN
-        EGAL WELCHE SHELL AKTIV IST.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-SHELL-CONTROL KLASSE = BOXIS-SHELL-CONTROL-STARTPUNKT
 
- INFO-ID = BOXIS-SHELL-CONTROL
+ INFO = NUTZT OS SHELL FÜR OS SHELL EINGABEN
 
  FUNKTION = SYSTEM SHELL ANRUFEN
 
@@ -150,15 +127,11 @@
 
  SYMBOL IN WORTEN = HOCHKOMMA INHALT HOCHKOMMA
 
- INFO = NUTZT OS SHELL FÜR OS SHELL EINGABEN
-        EGAL WELCHE SHELL AKTIV IST.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-SHELL-CONTROL KLASSE = BOXIS-SHELL-CONTROL-ENDPUNKT
 
- INFO-ID = BOXIS-SHELL-CONTROL
+ INFO = NUTZT OS SHELL FÜR OS SHELL EINGABEN
 
  FUNKTION = SYSTEM SHELL ANRUFEN
 
@@ -166,15 +139,13 @@
 
  SYMBOL IN WORTEN = HOCHKOMMA INHALT HOCHKOMMA
 
- INFO = NUTZT OS SHELL FÜR OS SHELL EINGABEN
-        EGAL WELCHE SHELL AKTIV IST.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS KLASSE = BOXIS-ALU-RECHNER
 
  INFO-ID = BOXIS-ALU-RECHNER
+
+ INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZURUECK
 
  FUNKTION = GIBT RECHNUNG ZUR ALU
 
@@ -182,23 +153,11 @@
 
  SYMBOL IN WORTEN =
 
- INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZUR
-        ZU WAHRHEITEN-AUSWERTUNG
-
- Wichtiger Hinweis =
-
- C schafft keine leerzeichenlose zahlen und C kann das nicht sauber
- trennen. Aus dem grund heraus wird in der C compilierten Kernel
- version nur der BOXIS-ALU-RECHNER inhalt vom Boxis rand getrennt
-
- BEISPIEL = |× zahl rechenheiten zahl ×|
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-ALU-RECHNER KLASSE = BOXIS-ALU-RECHNER-STARTPUNKT
 
- INFO-ID = BOXIS-ALU-RECHNER
+ INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZURUECK
 
  FUNKTION = GIBT RECHNUNG ZUR ALU
 
@@ -206,15 +165,11 @@
 
  SYMBOL IN WORTEN =
 
- INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZUR
-        ZU WAHRHEITEN-AUSWERTUNG
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-ALU-RECHNER KLASSE = BOXIS-ALU-RECHNER-ENDPUNKT
 
- INFO-ID = BOXIS-ALU-RECHNER
+ INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZURUECK
 
  FUNKTION = GIBT RECHNUNG ZUR ALU
 
@@ -222,35 +177,29 @@
 
  SYMBOL IN WORTEN =
 
- INFO = GIBT RECHNUNG ZUR ALU UND GIBT DAS ERGEBNIS ZUR
-        ZU WAHRHEITEN-AUSWERTUNG
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+ BOXIS KLASSE = BOXIS-MCS-CMD
 
- BOXIS KLASSE = BOXIS-MCS-CMD-REGISTER
+ INFO-ID = BOXIS-MCS-CMD
 
- FUNKTION = HAUSEIGENER KOMMANDO BEFEHLE
+ INFO = STEUERT DAS EIGENE MCS-CMD REGISTER AN
+
+ FUNKTION = HAUSEIGENER KOMMANDO BEFEHLE AUS DEM REGISTER
 
  SYMBOLISCHE DEKLARATION = ~ ~
 
  SYMBOL IN WORTEN = TILDE INHALT TILDE
 
- INFO = STEUERT DAS EIGENE MCS-CMD-REGISTER AN
-
  MCS-CMD MUSTERBEISPIELE =
 
  »[~feed cache löschung 1~]«
 
- EINSATZBEREICHE MUSTERBEISPIELE =
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- NUR MCS ELEMENTE WERDEN ANGESTEUERT, WIE ZUM BEISPIEL FEED/S.
- MCS-CMD/S SIND MIT DEM HAUSEIGENEN MCS-REGISTER VERBUNDEN.
+ BOXIS-MCS-CMD KLASSE = BOXIS-MCS-CMD-STARTPUNKT
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- BOXIS-MCS-CMD-REGISTERKLASSE = BOXIS-MCS-CMD-REGISTER-STARTPUNKT
+ INFO = STEUERT DAS EIGENE MCS-CMD REGISTER AN
 
  FUNKTION = HAUSEIGENER KOMMANDO BEFEHLE
 
@@ -258,12 +207,11 @@
 
  SYMBOL IN WORTEN = TILDE INHALT TILDE
 
- INFO = STEUERT DAS EIGENE MCS-CMD-REGISTER AN
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+ BOXIS-MCS-CMD KLASSE = BOXIS-MCS-CMD-ENDPUNKT
 
- BOXIS-MCS-CMD-REGISTER KLASSE = BOXIS-MCS-CMD-REGISTER-ENDPUNKT
+ INFO = STEUERT DAS EIGENE MCS-CMD REGISTER AN
 
  FUNKTION = HAUSEIGENER KOMMANDO BEFEHLE
 
@@ -271,12 +219,13 @@
 
  SYMBOL IN WORTEN = TILDE INHALT TILDE
 
- INFO = STEUERT DAS EIGENE MCS-CMD-REGISTER AN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXI KLASSE = BOXIS-BLANKERNENNER
+
+ INFO-ID = BOXIS-BLANKERNENNER
+
+ INFO = DIENT ZUR ZWISCHENSPEICHERUNG , BEI ÜBERLAGERUNGEN
 
  FUNKTION = TRANSPORTIERT DATEN
 
@@ -284,13 +233,11 @@
 
  SYMBOL IN WORTEN =
 
- INFO = DIENT ZUR ZWISCHENSPEICHERUNG , BEI CPU ODER GPU
-        ÜBERLADUNGEN . KANN ALS VAAKUM GESEHEN WERDEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-BLANKERNENNER KLASSE = BOXIS-BLANKERNENNER-STARTPUNKT
+
+ INFO = DIENT ZUR ZWISCHENSPEICHERUNG , BEI ÜBERLAGERUNGEN
 
  FUNKTION = TRANSPORTIERT DATEN
 
@@ -298,12 +245,11 @@
 
  SYMBOL IN WORTEN =
 
- INFO = DIENT ZUR FEED TRANSPORTLOGIK
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BOXIS-BLANKERNENNER KLASSE = BOXIS-BLANKERNENNER-ENDPUNKT
+
+ INFO = DIENT ZUR ZWISCHENSPEICHERUNG , BEI ÜBERLAGERUNGEN
 
  FUNKTION = TRANSPORTIERT DATEN
 
@@ -311,11 +257,7 @@
 
  SYMBOL IN WORTEN =
 
- INFO = DIENT ZUR FEED TRANSPORTLOGIK
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-      DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT
-      PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-########################### ENDE DER BOXIS ###########################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ### ENDPUNKT BOXIS  ### === # == ##### === ###

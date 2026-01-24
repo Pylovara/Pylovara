@@ -1,24 +1,22 @@
 @kernel-nr: 09 | WAHRHEIT | STATUS = KONSOLIDIERT
-######################################################################
-----------------------------------------------------------------------
+### ==== ##### == # === # STARTPUNKT WAHRHEIT # === # == ##### === ###
 
- NAME = WAHRHEIT
+ NAME Ð WAHRHEIT
 
  INFO-ID = WAHRHEIT
+
+ MASTER = MASTER-WAHRHEITEN
 
  BEGRIFFSDEFINITION = FLUSS-GATTER | SCHALTUNGS-LOGIK
 
  FUNKTION = PARALLELE ENTSCHEIDUNGSSTRUKTUR
-
- MASTER = MASTER-WAHRHEITEN
 
  AUSFÜHRUNGSART = LISTENORIENTIERTE
                   GATTER-STEUERUNG
 
  GÜLTIGKEITSBEREICH = SYSTEMWEIT
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT KERN KLASSE = WAHRHEIT
 
@@ -28,8 +26,7 @@
 
  FUNKTION = SCHALTUNGS-AUSLÖSER
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT KERN KLASSE = WAHRHEIT-TRIGGER-WORKSPACE
 
@@ -44,8 +41,7 @@
  SYMBOL IN WORTEN = BINDESTRICH
                     VIERTELGEVIERTSTRICH
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-A
 
@@ -64,8 +60,7 @@
   -· »['sudo pacman -Syyu']«
   -· »[,reboot,]«««ſ
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-B
 
@@ -79,8 +74,7 @@
 
  SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-C
 
@@ -94,8 +88,7 @@
 
  SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-D
 
@@ -109,8 +102,7 @@
 
  SYMBOL IN WORTEN = MITTELPUNKTE MITTELPUNKTE MITTELPUNKTE MITTELPUNKT
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-E
 
@@ -124,8 +116,7 @@
 
  SYMBOL IN WORTEN = MITTELPUNKTE MITTELPUNKTE MITTELPUNKTE MITTELPUNKT MITTELPUNKTE 
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN
 
@@ -139,9 +130,7 @@
 
  SYMBOL IN WORTEN =
 
-----------------------------------------------------------------------
-
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN-AUSWERTUNG
 
@@ -162,8 +151,7 @@
  -· »[×1+1×]
      -·¤= [(1)°°]
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN-PROZESS
 
@@ -201,8 +189,7 @@
 
   -·¤: »[']:: Installation fortsetzen? [J/n]']« 
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN-PARALLEL-AUSFÜHRUNG
 
@@ -229,8 +216,7 @@
  -····¤‹ »[×1+1×]
           -····¤= [(1)"2"]«
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN-PARALLEL-TRANSPORT
 
@@ -257,8 +243,7 @@
  -····¤› »[×1+1×]
           -····¤= [(3)°2°]«
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN-AUFSTEIGEND-SORTIEREN
 
@@ -280,8 +265,7 @@
         ['cd /Pylovara/MCSKernel']
         ['./pylovara_kernel testcodes/test.datei-lcore']«
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN KLASSE = WAHRHEIT-TRIGGER-WORKSPACE-OPTIONEN-ABSTEIGEND-SORTIEREN
 
@@ -303,9 +287,7 @@
         ['cd /Pylovara/MCSKernel']
         ['echo "------ MCS CODE ------" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-     DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT
-     PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
-----------------------------------------------------------------------
-###################### ENDE DER WAHRHEITEN ###########################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
+### ==== ##### == # === ## ENDPUNKT WAHRHEIT ## === # == ##### === ###

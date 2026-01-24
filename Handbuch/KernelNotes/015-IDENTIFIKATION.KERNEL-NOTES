@@ -1,25 +1,25 @@
-@kernel-nr: 15 | IDENTIFIKATION | STATUS : VALIDE KONSOLIDIERT
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 15 # IDENTIFIKATION | STATUS : VALIDE KONSOLIDIERT
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-NAME = IDENTIFIKATION
+ NAME Ð IDENTIFIKATION
 
-INFO-ID = IDENTIFIKATION
+ INFO-ID = IDENTIFIKATION
 
-FUNKTION = TRIGGERT DEN GÜLTIGKEITSABGLEICH
+ MASTER = MASTER-IDENTIFIKATION
 
-MASTER = MASTER-IDENTIFIKATION
+ FUNKTION = TRIGGERT DEN GÜLTIGKEITSABGLEICH
 
-BEGRIFFSDEFINITION = FESTSTELLENDE SIGNALINSTANZ
+ BEGRIFFSDEFINITION = FESTSTELLENDE SIGNALINSTANZ
 
-AUSFÜHRUNGSART = SYMBOLBASIERTE VALIDIERUNG
+ AUSFÜHRUNGSART = SYMBOLBASIERTE VALIDIERUNG
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  IDENTIFIKATION KERN KLASSE = IDENTIFIKATION
 
- INFO-ID = IDENTIFIKATION
+ INFO = TRIGGERT DIE IDENTIFIKATIONSAUSWAHL
+        BASIS-IDENTIFIKATION FÜR TRANSAKTIONEN.
+        FUNGIERT ALS ANKER OHNE MATHEMATISCHE RELATION ZUM ECHTWERT.
 
  FUNKTION = IDENTIFIKATIONSTRIGGER | AI KOPPELBAR | ANSCHLUSS
 
@@ -27,16 +27,11 @@ AUSFÜHRUNGSART = SYMBOLBASIERTE VALIDIERUNG
 
  SYMBOL IN WORTEN = THORN (NORDISCHER BUCHSTABE)
 
- INFO = TRIGGERT DIE IDENTIFIKATIONSAUSWAHL
-        BASIS-IDENTIFIKATION FÜR TRANSAKTIONEN.
-        FUNGIERT ALS ANKER OHNE MATHEMATISCHE RELATION ZUM ECHTWERT.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  IDENTIFIKATION KLASSE = IDENTIFIKATION-ID-DNA
 
- INFO-ID = IDENTIFIKATION
+ INFO = TRIGGERT DIE IDENTITÄTSKLASSE NAME NACHNAME STUFE NUMMER
 
  FUNKTION = IDENTIFIKATIONSTRIGGER ZU ID-DNA
 
@@ -44,14 +39,12 @@ AUSFÜHRUNGSART = SYMBOLBASIERTE VALIDIERUNG
 
  SYMBOL IN WORTEN = THORN THORN (NORDISCHER BUCHSTABE)
 
- INFO = TRIGGERT DIE IDENTITÄTSKLASSE NAME NACHNAME STUFE NUMMER
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  IDENTIFIKATION KLASSE = IDENTIFIKATION-ID-DNA-BIOLIVE
 
- INFO-ID = IDENTIFIKATION
+ INFO = WIRD SPÄTER MIT BIOLOGISCHEN BLUTBILDDATEN GEKOPPELT UND
+        BISDORTHIN MIT EXTERNER ZWEIFACH AUTHENTIFIKATIONEN VERSEHEN
 
  FUNKTION = IDENTIFIKATIONSTRIGGER ZU ID-DNA-BIOLIVE
 
@@ -59,12 +52,7 @@ AUSFÜHRUNGSART = SYMBOLBASIERTE VALIDIERUNG
 
  SYMBOL IN WORTEN = THORN THORN THORN (NORDISCHER BUCHSTABE)
 
- INFO = WIRD SPÄTER MIT BIOLOGISCHEN BLUTBILDDATEN GEKOPPELT UND
-        BISDORTHIN MIT EXTERNER ZWEIFACH AUTHENTIFIKATIONEN VERSEHEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [09:50:23 | So 29 Dez 2025] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
-----------------------------------------------------------------------
-################### ENDE DER IDENTIFIKATION ##########################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [09:50:23 | So 29 Dez 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
+### ==== ##### == # === ENDPUNKT IDENTIFIKATION === # == ##### === ###

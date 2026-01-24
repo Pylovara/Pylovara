@@ -1,32 +1,29 @@
-@kernel-nr: 11 | ARGUMENT | STATUS = KONSOLIDIERT
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 11 # ARGUMENT | STATUS = KONSOLIDIERT
+### ==== ##### == # === # STARTPUNKT ARGUMENT # === # == ##### === ###
 
- NAME = ARGUMENT
+ NAME Ð ARGUMENT
 
  INFO-ID = ARGUMENT
+
+ MASTER = MASTER-ARGUMENT
 
  BEGRIFFSDEFINTION = HINWEISROUTING
 
  FUNKTION = VERARBEITUNGSZUSATZINFORMATIONSLOGIK
 
- MASTER = MASTER-ARGUMENT
-
  AUSFÜHRUNGSART = SIGNAL-ROUTING
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT KERN KLASSE = ARGUMENT
 
- INFO = INITIALISIERT ARGUMENT/E
-
  INFO-ID = ARGUMENT
+
+ INFO = INITIALISIERT ARGUMENT/E
 
  FUNKTION = FLUẞENTSCHEIDUNG
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT KLASSE = ARGUMENT-TRIGGER
 
@@ -40,12 +37,11 @@
 
  INFO = TRIGGERT DIE FUNKTION ARGUMENTE
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT-TRIGGER KLASSE = ARGUMENT-TRIGGER-ZEIT
 
- INFO-ID = ARGUMENT-TRIGGER
+ INFO = LÖST DIE ARGUEMNTEN FUNKTION ZEIT AUS IN SEKUNDEN
 
  FUNKTION = SEKUNDEN ZEIT IN SEKUNDEN
 
@@ -53,25 +49,21 @@
 
  SYMBOL IN WORTEN = T
 
- INFO = LÖST DIE ARGUEMNTEN FUNKTION ZEIT AUS IN SEKUNDEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT-TRIGGER-ZEIT KLASSE = ARGUMENT-TRIGGER-ZEIT-ANZAHL
 
  INFO-ID = ARGUMENT-TRIGGER-KLASSE-ANZAHL
 
- FUNKTION = ZÄHLT DIE SEKUNDEN RUNTER
-
  INFO = ZÄHLT DIE SEKUNDEN RUNTER FÜR DEN WEITEREN PROZESS
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+ FUNKTION = ZÄHLT DIE SEKUNDEN RUNTER
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT-TRIGGER KLASSE = ARGUMENT-TRIGGER-TAKTSCHLÄGE
 
- INFO-ID = ARGUMENT-TRIGGER
+ INFO = ZÄHLT DIE TAKTE RUNTER FÜR DEN WEITEREN PROZESS
 
  FUNKTION = ZÄHLT DIE TAKTE RUNTER
 
@@ -79,10 +71,7 @@
 
  SYMBOL IN WORTEN = TS
 
- INFO = ZÄHLT DIE TAKTE RUNTER FÜR DEN WEITEREN PROZESS
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT-TRIGGER-TAKTSCHLÄGE KLASSE = ARGUMENT-TRIGGER-TAKTSCHLÄGE-ANZAHL
 
@@ -92,12 +81,11 @@
 
  INFO = ZÄHLT DIE TAKTE RUNTER FÜR DEN WEITEREN PROZESS
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT-TRIGGER KLASSE = ARGUMENT-TRIGGER-EXIT
 
- INFO-ID = ARGUMENT-TRIGGER
+ INFO = BEENDET DIE VERARBEITUNG
 
  FUNKTION = BEENDET NACH DEM PROZESS
 
@@ -105,14 +93,11 @@
 
  SYMBOL IN WORTEN = E
 
- INFO = BEENDET DIE VERARBEITUNG
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT-TRIGGER KLASSE = ARGUMENT-TRIGGER-BESTÄTIGUNG
 
- INFO-ID = ARGUMENT-TRIGGER
+ INFO = BESTÄTIGUNGSANFRAGE FÜR DEN WEITEREN PROZESS
 
  FUNKTION = ADMINISTRATIVE BESTÄTIGUNGSANFRAGE
 
@@ -120,14 +105,13 @@
 
  SYMBOL IN WORTEN = B
 
- INFO = BESTÄTIGUNGSANFRAGE FÜR DEN WEITEREN PROZESS
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ARGUMENT-TRIGGER KLASSE = ARGUMENT-TRIGGER-REGEL-DER-REINHEIT
 
- INFO-ID = ARGUMENT-TRIGGER
+ INFO = DIE REGEL DER REINHEIT ENTSORGT DATENMÜLL.
+        NACH FERTIGEN PROZESS KETTEN KANN SIE ALS
+        DIREKTE BEREINIGUNGS ARGUMENT/EN ADRESSIERUNG GENUTZT WERDEN
 
  FUNKTION = REGEL DER REINHEIT | LÖSCHT
 
@@ -135,15 +119,8 @@
 
  SYMBOL IN WORTEN = LANGES S
 
- INFO = DIE REGEL DER REINHEIT ENTSORGT DATENMÜLL.
-        NACH FERTIGEN PROZESS KETTEN KANN SIE ALS
-        DIREKTE BEREINIGUNGS ARGUMENT/EN ADRESSIERUNG GENUTZT WERDEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
-
-        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-################## ENDE DER ARGUMENTE ################################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ## ENDPUNKT ARGUMENT ## === # == ##### === ###
 

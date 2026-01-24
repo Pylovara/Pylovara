@@ -1,29 +1,25 @@
-@kernel-nr: 14 | ADRESSIERUNG | STATUS : AUSBAU STABIL
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 14 # ADRESSIERUNG | STATUS : AUSBAU STABIL
+### ==== ##### == # === STARTPUNKT ADRESSIERUNG === # == ##### === ###
 
- NAME = ADRESSIERUNG
-
- INFO = INTERNE ODER EXTERNE DATENPFADE WIE ADRESSIERUNG
+ NAME Ð ADRESSIERUNG
 
  INFO-ID = ADRESSIERUNG
+
+ MASTER = MASTER-ADRESSIERUNG
 
  BEGRIFFSDEFINITION = TRANSPORT- UND ZUORDNUNGSSYSTEM
 
  FUNKTION = NETZWERK ADRESSIERUNG
 
- MASTER = MASTER-ADRESSIERUNG
-
  AUSFÜHRUNGSART = SYMBOLBASIERTE ZUORDNUNG
 
  GÜLTIGKEITSBEREICH = SYSTEMWEITE ADRESSIERUNG
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ADRESSIERUNG KERN KLASSE = ADRESSIERUNG-TRIGGER
 
- INFO-ID = ADRESSIERUNG
+ INFO = INTERNE ODER EXTERNE DATENPFADE ADRESSIERUNG
 
  FUNKTION = ADRESSIERUNGSTRIGGER
 
@@ -33,12 +29,11 @@
 
  INFO = AKTIVIERT DIE ADRESSIERUNG
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-ZIELREFERENZ
 
- INFO-ID = ADRESSIERUNG
+ INFO = ADRESSIERT EXTERNE SYSTEME UND SCHNITTSTELLEN
 
  FUNKTION = ADRESSIERUNGSTRIGGER ZIELREFERENZ
 
@@ -46,14 +41,11 @@
 
  SYMBOL IN WORTEN = PAGRAPHEN SYMBOLE
 
- INFO = ADRESSIERT EXTERNE SYSTEME UND SCHNITTSTELLEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-DIRIGENT
 
- INFO-ID = ADRESSIERUNG
+ INFO = ADRESSIERT INTERNE SYSTEMRESSOURCEN
 
  FUNKTION = ADRESSIERUNGSTRIGGER DIRIGENT
 
@@ -63,14 +55,11 @@
 
  SYMBOL IN WORTEN = DOLLAR SYMBOLE
 
- INFO = ADRESSIERT INTERNE SYSTEMRESSOURCEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-LANGZEITSPEICHER
 
- INFO-ID = ADRESSIERUNG
+ INFO = ZIEHT JEDE INFO AUS DEM SYSTEM SSOT AB (SPÄTER BOOTSTRIP)
 
  FUNKTION = INTERNE SYSTEM LANGZEITSPEICHER ADRESSIERUNG
 
@@ -78,14 +67,12 @@
 
  SYMBOL IN WORTEN = 
 
- INFO = ZIEHT JEDE INFO AUS DEM SYSTEM SSOT AB (SPÄTER BOOTSTRIP)
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-ID-DNA
 
- INFO-ID = ADRESSIERUNG
+ INFO = DAMIT SCHATTEN-IDENTITÄTEN MIT ADRESSIERT WERDEN KÖNNEN UND
+        SOMIT DATEIEN INSICHT VOM KOPF AB AKTUALISIERT VERSCHLÜSSELN.
 
  FUNKTION = ADRESSIERUNGSTRIGGER FÜR SCHATTEN-IDENTITÄT ID-DNA
 
@@ -93,15 +80,12 @@
 
  SYMBOL IN WORTEN = THORN SYMBOLE
 
- INFO = DAMIT SCHATTEN-IDENTITÄTEN MIT ADRESSIERT WERDEN KÖNNEN UND
-        SOMIT DATEIEN INSICHT VOM KOPF AB AKTUALISIERT VERSCHLÜSSELN.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  ADRESSIERUNG-TRIGGER KLASSE = ADRESSIERUNG-TRIGGER-ID-DNA-BIOLIVE
 
- INFO-ID = ADRESSIERUNG
+ INFO = DAMIT SCHATTEN-IDENTITÄTEN MIT ADRESSIERT WERDEN KÖNNEN UND
+        SOMIT DATEIEN INSICHT VOM KOPF AB AKTUALISIERT VERSCHLÜSSELN.
 
  FUNKTION = ADRESSIERUNGSTRIGGER FÜR SCHATTEN-IDENTITÄT ID-DNA
 
@@ -109,12 +93,7 @@
 
  SYMBOL IN WORTEN = THORN SYMBOLE
 
- INFO = DAMIT SCHATTEN-IDENTITÄTEN MIT ADRESSIERT WERDEN KÖNNEN UND
-        SOMIT DATEIEN INSICHT VOM KOPF AB AKTUALISIERT VERSCHLÜSSELN.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [16:23:17|SO 04 JAN 2026] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-###################### ENDE DER ADRESSIERUNG #########################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [16:23:17|SO 04 JAN 2026] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ENDPUNKT ADRESSIERUNG # === # == ##### === ###

@@ -1,12 +1,11 @@
-@kernel-nr: 12 | FEED | STATUS = KONSOLIDIERUNG
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 12 # FEED | STATUS = KONSOLIDIERUNG
+### ==== ##### == # === ### STARTPUNKT FEED ### === # == ##### === ###
 
  NAME = FEED
 
- INFO = GENERALISIERUNGSBEGRIFF
-
  INFO-ID = FEED
+
+ MASTER = MASTER-FEED
 
  FÜHRENDER FEED = FF
 
@@ -17,14 +16,11 @@
  FUNKTION = PUNKTUELLE TRANSPORTVERDRAHTUNG VON DATEN DATENKANAL, NICHT
             KONTROLLKANAL
 
- MASTER = MASTER-FEED
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  FEED KERN KLASSE = FEED
 
- INFO-ID = FEED
+ INFO = DUPLIKATIONSMECHANISMUS VON HOST BIS EMPFÄNGER | MEHRFACH
 
  FUNKTION = GESAMMTHEITLICHER CACHE GEBUNDENER NUMMERIERTE RAHMEN
 
@@ -32,14 +28,11 @@
 
  SYMBOL IN WORTEN = KLAMMER AUF KLAMMER ZU
 
- INFO = DUPLIKATIONSMECHANISMUS VON HOST BIS EMPFÄNGER | MEHRFACH
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  FEED KLASSE = FEED-STARTPUNKT
 
- INFO-ID = FEED
+ INFO = RAHMENBEDIENUN ANFANG FÜR NUMMERISCHE ABLAGEN
 
  FUNKTION = START DES CONTAINERRAHMENS 
 
@@ -47,23 +40,19 @@
 
  SYMBOL IN WORTEN = KLAMMER AUF
 
- INFO = RAHMENBEDIENUN ANFANG FÜR NUMMERISCHE ABLAGEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  FEED-STARTPUNKT KLASSE = FEED-STARTPUNKT-ZAHL
 
- FUNKTION = BINDET FEED AN EINE NUMMER
-
  INFO = BINDET DIE NUMMER AM FEED
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+ FUNKTION = BINDET FEED AN EINE NUMMER
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  FEED KLASSE = FEED-ENDPUNKT
 
- INFO-ID = FEED
+ INFO = RAHMENBEDIENUNG ENDE FÜR NUMMERISCHE ABLAGEN
 
  FUNKTION = ENDE DES CONTAINERRAHMENS
 
@@ -71,24 +60,21 @@
 
  SYMBOL IN WORTEN = KLAMMER ZU
 
- INFO = RAHMENBEDIENUNG ENDE FÜR NUMMERISCHE ABLAGEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  FEED-ENDPUNKT KLASSE = FEED-ZAHL-ENDPUNKT
 
- FUNKTION = SCHALTET GEBUNDENE FEED MIT NUMMER AKTIV
-
  INFO = BINDET DIE NUMMER AM FEED
 
-----------------------------------------------------------------------
+ FUNKTION = SCHALTET GEBUNDENE FEED MIT NUMMER AKTIV
 
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  FEED KLASSE = FEED-FÜHREND
 
- INFO = AKTIVIERT CASH SPEICHER FÜR TF AKTIV
+ INFO = AKTIVIERT CASH SPEICHER FÜR TF AKTIV.
+        FEEDRAHMEN FÜR ELTERNTEILE,
+        KANN IN ALLEN BOXIS VERWENDET WERDEN.
 
  FUNKTION = AKTIVIERT CASH GEBUNDENER FF RAHMEN
 
@@ -96,15 +82,13 @@
 
  SYMBOL IN WORTEN = KLAMMER AUF KLAMMER ZU Plusminus-Zeichen Plusminus-Zeichen
 
- INFO = FEEDRAHMEN FÜR ELTERNTEILE.
-        KANN IN ALLEN BOXIS VERWENDET WERDEN.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  FEED KLASSE = FEED-TRAGEND
 
  INFO = AKTIVIERT CASH VOM FF RAHMEN SYNCRONISIERT DAS GLEICHE PASSIV
+        FEEDRAHMEN TRANSPORTRAHMEN FÜR GESCHWISTER.
+        KANN IN ALLEN BOXIS VERWENDET WERDEN.
 
  FUNKTION = CACHE GEBUNDENER RAHMEN VOM FEEDS-FÜHREND
 
@@ -112,12 +96,7 @@
 
  SYMBOL IN WORTEN = Plusminus-Zeichen Plusminus-Zeichen KLAMMER AUF KLAMMER ZU
 
- INFO = FEEDRAHMEN TRANSPORTRAHMEN FÜR GESCHWISTER.
-        KANN IN ALLEN BOXIS VERWENDET WERDEN.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-######################## Ende der Feeds ##############################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ###  ENDPUNKT FEED  ### === # == ##### === ###

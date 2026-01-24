@@ -1,10 +1,11 @@
-@kernel-nr: 16 | MCS-CMD | STATUS : TEST
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 16 # MCS-CMD | STATUS : TEST
+### ==== ##### == # === # STARTPUNKT MCS-CMD ## === # == ##### === ###
 
  NAME = MCS-CMD
 
  INFO-ID = MCS-CMD
+
+ MASTER = MASTER-MCS-CMD
 
  FUNKTION = REGISTER
 
@@ -12,128 +13,99 @@
 
  SYMBOL IN WORTEN = TILDE TILDE
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD KERN KLASSE = MCS-CMD
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = BOXIS-MCS-CMD
 
  FUNKTION = MCS-COMMANDOS AUSFÜHREN
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD KERN KLASSE = MCS-CMD-UND-AUSFÜHREN
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = ¬
 
  FUNKTION = VERBINDET ZWEI MCS-CMD BEFEHLE
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD OPTION KLASSE = MCS-CMD-REGISTER
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = REGISTER
 
  FUNKTION = MCS-CMD REGISTER TRIGGER
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-START
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = master control start <prozess|programm>
 
  FUNKTION = MCS-CMD REGISTER TRIGGER
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STOP
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = master control stop <prozess|programm>
 
  FUNKTION = MCS-CMD REGISTER TRIGGER
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-NEUSTART
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = master control neustart <prozess|programm>
 
  FUNKTION = MCS-CMD REGISTER TRIGGER
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-STATUS
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = master control status <prozess|programm>
 
  FUNKTION = MCS-CMD REGISTER TRIGGER
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-AKTIVIEREN
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = master control aktivieren <prozess|programm>
 
  FUNKTION = MCS-CMD REGISTER TRIGGER
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD-REGISTER OPTION KLASSE = MCS-CMD-REGISTER-SYSTEMCTL-BERICHT-ANZEIGEN
 
- INFO-ID = MCS-CMD
+ INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
 
  BEFEHLSZEILEN EINGABE = master control bericht <prozess|programm>
 
  FUNKTION = MCS-CMD REGISTER TRIGGER
 
- INFO = MCS-CMD BEFEHLSREGISTER FÜR BOXIS MCS-CMD
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
-----------------------------------------------------------------------
-#################### ENDE DES MCS-CMD-REGISTERS ######################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
+### ==== ##### == # === ## ENDPUNKT MCS-CMD ### === # == ##### === ###

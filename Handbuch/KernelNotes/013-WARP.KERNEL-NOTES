@@ -1,73 +1,58 @@
-@kernel-nr: 13 | WARP | STATUS = KONSOLIDIERT
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 13 # WARP | STATUS = KONSOLIDIERT
+### ==== ##### == # === ### STARTPUNKT WARP ### === # == ##### === ###
 
- NAME = WARP
+ NAME Ð WARP
 
  INFO-ID = WARP
-
- BEGRIFFSDEFINITION = DIREKTE ORIGINALE COMPILER BINDUNG
-
- FUNKTION = DIREKTE ORIGINALE COMPILER BINDUNG TARNSPORTRAHMEN
 
  MASTER = MASTER-WARP
 
- AUSFÜHRUNGSART =
+ BEGRIFFSDEFINITION = DIREKTE ORIGINALE COMPILER BINDUNG
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+ FUNKTION = LEGACY TRANSPORTRAHMEN
+
+ AUSFÜHRUNGSART = 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP KERN KLASSE = WARP
 
- INFO-ID = WARP
+ INFO = DIREKTE ORIGINALE COMPILER BINDUNG TRANSPORTRAHMEN
 
- FUNKTION = DIREKTE ORIGINALE COMPILER BINDUNG TARNSPORTRAHMEN
+ FUNKTION = LEGACY TRANSPORTRAHMEN 
 
  SYMBOLISCHE DEKLARATION = øĸ ĸø
 
  SYMBOL IN WORTEN = KLAMMER AUF ĸ ĸ KLAMMER ZU
 
- INFO = TRANSPORTRAHMENBEDINUNG FÜR FREMDCOMPILER
-        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
-        KANN AUCH FÜR GRAFIK RENDERER ODER SOUND 
-        GENUTZT WERDEN.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP KLASSE = WARP-STARTPUNKT
 
- INFO-ID = WARP
+ INFO = TRANSPORTRAHMENBEDINUNGS-START FÜR FREMDCOMPILER
+        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
 
- FUNKTION = DIREKTE ORIGINALE COMPILER START TARNSPORTRAHMEN BINDUNG
+ FUNKTION = LEGACY TRANSPORTRAHMEN STARPUNKT
 
  SYMBOLISCHE DEKLARATION = øĸ
 
  SYMBOL IN WORTEN = KLAMMER AUF ĸ
-
- INFO = TRANSPORTRAHMENBEDINUNGS-START FÜR FREMDCOMPILER
-        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
-        
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+   
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP KLASSE = WARP-ENDPUNKT
 
- INFO-ID = WARP
+ INFO = TRANSPORTRAHMENBEDINUNGS-ENDE FÜR FREMDCOMPILER
+        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
 
- FUNKTION = DIREKTE ORIGINALE COMPILER ENDE TARNSPORTRAHMEN BINDUNG
+ FUNKTION = LEGACY TRANSPORTRAHMEN ENDPUNKT
 
  SYMBOLISCHE DEKLARATION = ĸø
 
  SYMBOL IN WORTEN = ĸ KLAMMER ZU
 
- INFO = TRANSPORTRAHMENBEDINUNGS-ENDE FÜR FREMDCOMPILER
-        PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-         DATUM = [02:00:44|FR 02 JAN 2026] MARKENBRANDT
-         PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-######################### ENDE DER WARPS #############################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [02:00:44|FR 02 JAN 2026] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ###  ENDPUNKT WARP  ### === # == ##### === ###
 

@@ -1,82 +1,65 @@
-@kernel-nr: 05 | TRENNBEFEHL | STATUS = KONSOLIDIERT
-#######################################################################
+@kernel-nr: 05 # TRENNBEFEHL | STATUS = KONSOLIDIERT
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+# SENKRECHTE STRICHE WERDEN IN PYLOVARA-SYSTEM MCS NICHT WIE IN
+# ALTEN SYSTEMEN GENUTZT UND DÜRFEN UNTER KEINEM UMSTAND IN BOXIS
+# GENAUSO VERWENDET WERDEN!
+### ==== ##### == # ===  STARTPUNKT TRENNBEFEHL === # == ##### === ###
 
- NAME = TRENNBEFEHL
+ NAME Ð TRENNBEFEHL
 
  INFO-ID = TRENNBEFEHL
 
- BEGRIFFSDEFINITION = DATENTRÄGELEHRZEICHEN
-
- FUNKTION = TRENNUNG VON BOXIS IN EINEM PROTEIN ODER PROTON
-
  MASTER = MASTER-TRENNBEFEHL
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+ BEGRIFFSDEFINITION = CONTAINERMODULATIONSSECUNDÄRES-DATENTRÄGER-TRENNUNGSMODUL
+
+ FUNKTION = CONTAINERISIERUNGSTRENNUNG
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  TRENNBEFEHL KERN KLASSE = TRENNBEFEHL
 
- FUNKTION = LEERZEICHEN ZWISCHEN BOXIS
+ INFO = CONTAINERISIERUNGSTRENNUNG VON BOXIS ZU BOXIS
+
+ FUNKTION = CONTAINERISIERUNGSTRENNUNG
 
  SYMBOLISCHE DEKLARATION = |
 
  SYMBOL IN WORTEN = SENKRECHTER STRICH
 
- INFO = WIRD ALS LEERZEICHEN GENUTZT IN PROTEINE WIE PROTONEN
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
  TRENNBEFEHL KLASSE = TRENNBEFEHL-NEXT
 
- FUNKTION = CONTAINERISIERT MEHRERE BOXIS IN EINEM PROTEIN
+ INFO = CONTAINERISIERUNGSTRENNUNG VON 3 BOXIS
+
+ FUNKTION = CONTAINERISIERUNGSTRENNUNG
 
  SYMBOLISCHE DEKLARATION = | |
 
- SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
+ SYMBOL IN WORTEN = SENKRECHTER STRICH SENKRECHTER STRICH
 
- INFO = ENDE DES PROTEIN
-
- BEISPIEL =
-
+ BEISPIEL = 
+ 
  »['echo HALLO'|'echo HALLO 2'|'echo HALLO 3']«
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
  TRENNBEFEHL KLASSE = TRENNBEFEHL-NEXT-NEXT
 
- FUNKTION = CONTAINERISIERT MEHRERE BOXIS IN EINEM PROTEIN
+ INFO = CONTAINERISIERUNGSTRENNUNG VON 4 BOXIS
+
+ FUNKTION = CONTAINERISIERUNGSTRENNUNG
 
  SYMBOLISCHE DEKLARATION = | | |
 
- SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
-
- INFO = ENDE DES PROTEIN
+ SYMBOL IN WORTEN = SENKRECHTER STRICH SENKRECHTER STRICH SENKRECHTER STRICH
 
  BEISPIEL =
 
  »['echo HALLO'|'echo HALLO 2'|'echo HALLO 3'|'echo HALLO 4']«
-----------------------------------------------------------------------
-----------------------------------------------------------------------
 
- WICHTIGER HINWEIS
-
-
- LEERZEICHEN INNERHALB EINES PROTEINS SORGEN FÜR CONTAINERBASIERTE
- BOXI WEITERGABEN VERTEILUNG DAS STARK MIT DEM WAHRHEITEN
- SYSTEM GEKOPPELT IST
-
- Leerzeichen innerhalb eines Proteins
- → containerisiert mehrere Boxis (Box-für-Box)
-
- WARNHINWEIS =
-
- SENKRECHTE STRICHE WERDEN IN PYLOVARA-SYSTEM MCS NICHT WIE IN
- ALTEN SYSTEMEN GENUTZT UND DÜRFEN UNTER KEINEM UMSTAND IN BOXIS
- GENAUSO VERWENDET WERDEN
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-            DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT
-            PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-###################### ENDE DES TRENNBEFEHL  #########################
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === # ENDPUNKT TRENNBEFEHL  === # == ##### === ###

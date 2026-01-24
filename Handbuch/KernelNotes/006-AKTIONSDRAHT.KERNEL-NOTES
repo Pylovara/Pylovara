@@ -1,25 +1,25 @@
-@kernel-nr: 06 | AKTIONSDRAHT | STATUS = KONSOLIDIERT
-######################################################################
-----------------------------------------------------------------------
+@kernel-nr: 06 # AKTIONSDRAHT | STATUS = KONSOLIDIERT
+### ==== ##### == # === STARTPUNKT AKTIONSDRAHT === # == ##### === ###
 
- NAME = AKTIONSDRAHT
+ NAME Ð AKTIONSDRAHT
 
  INFO-ID = AKTIONSDRAHT
+
+ MASTER = MASTER-AKTIONSDRAHT
 
  BEGRIFFSDEFINITION = HAUPTVERDRAHTUNG
 
  FUNKTION = START UND VERDRAHTUNG DER ENDPUNKT BEDIENUNGEN
 
- MASTER = MASTER-AKTIONSDRAHT
-
  AUSFÜHRUNGSART = SIGNAL-ROUTING
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  AKTIONSDRAHT KERN KLASSE = AKTIONSDRAHT
 
- INFO-ID = AKTIONSDRAHT
+ INFO = KOORDINIERT PROZESSSTRUKTURFLUSS
+
+ FUNKTION = START UND END BEDIENUNGEN
 
  BEGRIFFSDEFINTION = HAUPTVERDRAHTUNG
 
@@ -27,58 +27,31 @@
                                       «
                                       «
 
- FUNKTION = START UND END BEDIENUNGEN
-
- AUSFÜHRUNGSART = SIGNAL-ROUTING
-
- INFO = WIRD ALS AKTIONSVERDRAHTUNG VERSTANDEN FÜR EINEN PROZESSE.
-        DIE VERDRAHTUNG WIRD DAFÜR SORGENN DAS FÜR EINEN 
-        AKTIONSDRAHT-STARTPUNKT MIT MEHREREN AKTIONSRAHT-ENDPUNKT.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  AKTIONSDRAHT KLASSE = AKTIONSDRAHT-STARTPUNKT
+
+ INFO = KOORDINIERT DEN STARPUNKT ZUSAMMENHAENGENDEN PROZESSFLUSS
 
  FUNKTION = ANFANG-BEDIENUNG
 
  SYMBOLISCHE DEKLARATION = »
 
- SYMBOL IN WORTEN =
+ SYMBOL IN WORTEN = DEUTSCHES ANFÜHRUNGSZEICHEN ÖFFNEND
 
- GUILLEMENT RECHT | DEUTSCHES ANFÜHRUNGSZEICHEN ÖFFNEND
-
- INFO = DEFINIERT DEN ANFANG DER AKTION , DA AKTIONSVERDRAHTUNGEN
-        EIN START AUSHALTEN MUSS , MUSS DER AKTION-START AUSLÖSER
-        SICH ERST AUFLÖSEN WENN DER PROZESS DURCH IST , DEN ANDERE
-        WAHRHEITEN ZWEIGE KÖNNTEN MEHR INPUT BEINHALTEN MIT AKTIONS
-        ENDEN. GRUNDSÄTZLICH GILT : DER AKTIONSDRAHT-AKTION-START
-        BLEIBT BIS DER PROZESS BEENDET IST.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  AKTIONSDRAHT KLASSE = AKTIONSDRAHT-ENDPUNKT
+
+ INFO = KOORDINIERT DEN ENDPUNKT ZUSAMMENHAENGENDER PROZESSFLUESSE
 
  FUNKTION = END-BEDIENUNG
 
  SYMBOLISCHE DEKLARATION = «
 
- SYMBOL IN WORTEN =
+ SYMBOL IN WORTEN = DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
 
- GUILLEMENT LINKS | DEUTSCHES ANFÜHRUNGSZEICHEN SCHLIEẞEND
-
- INFO = DEFINIERT DAS ENDE DER AKTION UND KANN ALS GESCHLOSSENER
-        AKTIONSKREISLAUF VERSTANDEN WERDEN.
-        ER LÖSCHT SICH IM GESAMTEN BEARBEITUNGSSTRANG SELBST,
-        WENN ER BEARBEITET WURDE.
-        UNTERSCHEIDET SICH ZUM START
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [08:50:23|Fr 25 Jun 2025] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-####################### ENDE DER AKTIONEN ############################
-
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [08:50:23|Fr 25 Jun 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ### =============== ### === # == ##### === ###

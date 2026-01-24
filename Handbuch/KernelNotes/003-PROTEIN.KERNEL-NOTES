@@ -1,18 +1,21 @@
-@kernel-nr: 03 | PROTEIN | STATUS = KONSOLIDIERT
-######################################################################
-----------------------------------------------------------------------
- NAME = PROTEIN
+@kernel-nr: 03 # PROTEIN | STATUS = KONSOLIDIERT
+### ==== ##### == # === ## STARTPUNKT PROTEIN ## === # == ##### === ###
 
- BEGRIFFSDEFINTION = HAUPTDATENTRÄGER
+ NAME Ð PROTEIN
 
  INFO-ID = PROTEIN
 
+ MASTER = MASTER-PROTEIN
+
+ BEGRIFFSDEFINTION = HAUPTDATENTRÄGER
+
  FUNKTION = SYSTEM TRANSPORTRAHMEN
 
- MASTER = MASTER-PROTEIN
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
  PROTEIN KERN KLASSE = PROTEIN-RAHMEN
+
+ INFO = PROTEIN-RAHMEN
 
  FUNKTION = RAHMENBEDIENUNG
 
@@ -20,10 +23,11 @@
 
  SYMBOL IN WORTEN = ECKIGE KLAMMER AUF ECKIGE KLAMMER ZU
 
- INFO = PROTEIN-RAHMEN
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
  PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-STARTPUNKT
+
+ INFO = STARTPUNKT DES PROTEIN
 
  FUNKTION = ANFANGSBEDIENUNG
 
@@ -31,10 +35,11 @@
 
  SYMBOL IN WORTEN = ECKIGE KLAMMER AUF
 
- INFO = ANFANG DES PROTEIN
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
  PROTEIN-RAHMEN KLASSE = PROTEIN-RAHMEN-ENDPUNKT
+
+ INFO = ENDPUNKT DES PROTEIN
 
  FUNKTION = ENDBEDIENUNG
 
@@ -42,10 +47,7 @@
 
  SYMBOL IN WORTEN = ECKIGE KLAMMER ZU
 
- INFO = ENDE DES PROTEIN
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-######################## ENDE DER PROTEIN/E ##########################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ## ENDPUNKT PROTEIN ### === # == ##### === ###

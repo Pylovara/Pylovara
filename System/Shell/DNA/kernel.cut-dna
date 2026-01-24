@@ -12,7 +12,7 @@ fi
 # kernel.cut-dna [Pylovara 3.4]
 # ==============================================================================
 # Ort   : Pylovara/System/Shell/Dna/kernel.cut-dna
-# Zweck : Zentrales Hilfesystem mit AST-ID und *.kernel-notes Anbindung
+# Zweck : Zentrales Hilfesystem mit AST-ID und *.KERNEL-NOTES Anbindung
 # Status: STABIL - AST kompatibel - KEIN Lexikon nötig - Unabhängig
 # ==============================================================================
 
@@ -25,8 +25,8 @@ extract_kernel_nr() {
 }
 
 if [[ -z "$INPUT" || "$INPUT" == "00" ]]; then
-    echo "[INFO] Übersicht aller verfügbaren *.kernel-notes mit Nummern:"
-    $Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.kernel-notes" | while read -r file; do
+    echo "[INFO] Übersicht aller verfügbaren *.KERNEL-NOTES mit Nummern:"
+    $Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.KERNEL-NOTES" | while read -r file; do
         nr=$(extract_kernel_nr "$file")
         name=$($Vara_Dir/basename.vara "$file")
         if [[ -n "$nr" ]]; then
@@ -40,7 +40,7 @@ fi
 
 # === Fall 1: Nummernsuche ===
 if [[ "$INPUT" =~ ^[0-9a-zA-Z_-]+$ ]]; then
-    FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.kernel-notes" | while read -r file; do
+    FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.KERNEL-NOTES" | while read -r file; do
         nr=$(extract_kernel_nr "$file")
         [[ "$nr" == "$INPUT" ]] && echo "$file" && break
     done)
@@ -50,7 +50,7 @@ if [[ "$INPUT" =~ ^[0-9a-zA-Z_-]+$ ]]; then
         echo "----------------------------------------"
         $Vara_Dir/cat.vara "$FOUND_PATH"
     else
-        echo "[!] Keine .kernel-notes-Datei mit Nummer '$INPUT' gefunden."
+        echo "[!] Keine .KERNEL-NOTES-DATEI mit Nummer '$INPUT' gefunden."
     fi
     echo "[ENTER] zum Beenden."
     read
@@ -59,14 +59,14 @@ fi
 
 # === Fall 2: Dateinamen-Suche ===
 SEARCH_NAME=$(echo "$INPUT" | $Vara_Dir/awk.vara '{print tolower($0)}')
-FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -iname "${SEARCH_NAME}.kernel-notes" | $Vara_Dir/head.vara -n 1)
+FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -iname "${SEARCH_NAME}.KERNEL-NOTES" | $Vara_Dir/head.vara -n 1)
 
 if [[ -n "$FOUND_PATH" ]]; then
-    echo "[INFO] Datei '${SEARCH_NAME}.kernel-notes' gefunden → $FOUND_PATH"
+    echo "[INFO] Datei '${SEARCH_NAME}.KERNEL-NOTES' gefunden → $FOUND_PATH"
     echo "----------------------------------------"
     $Vara_Dir/cat.vara "$FOUND_PATH"
 else
-    echo "[!] Keine passende .kernel-notes-Datei gefunden für: $SEARCH_NAME"
+    echo "[!] Keine passende .KERNEL-NOTES-DATEI gefunden für: $SEARCH_NAME"
 fi
 
 echo "[ENTER] zum Beenden."

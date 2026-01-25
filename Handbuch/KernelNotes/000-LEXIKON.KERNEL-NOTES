@@ -1,10 +1,8 @@
-﻿######################################################################
-@kernel-nr: lex | System Handbuch | KERNEL LEX | KERNEL NR | INFO NM #
-######################################################################
-# —nicht freigeschaltet +Freigeschaltet XBauStelle 0Konsolidierung  ##
-######################################################################
-# NR  Hinweis  INFO-ID        | NR  Hinweis  INFO-ID                 #
-#                                                                    #
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # # # # ## ## # #       #
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+#  —nicht freigeschaltet +Freigeschaltet XBauStelle 0Konsolidierung  #
+### ==== Ð ID-DNA-SYSTEM-LEXIKON ¡$ /Pylovara/Handbuch/KernelNotes/ ##
+#   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #                                                                   #
 #   01  · + 0  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
 #   03  · + 0  PROTEIN        | 04  · + 0    PROTON                  #
 #   05  · + 0  TRENNBEFEHL    | 06  · + 0    AKTIONSDRAHT            #
@@ -14,28 +12,25 @@
 #   13  · + 0  WARPS          | 14  · + 0    ADRESSIERUNG            #
 #   15  · + 0  IDENTIFIKATION | 16  · - X    MCS-CMD                 #
 #   17  · - X  DATEITYPEN     |                                      #
-#                                                                    #
-######################################################################
-# Hanbuch Navigations ################################################
-# kernel lex      |*.kernel-notes → trockene, nummerierte Hauptdaten #
-# info WAHRHEITEN |*.info-notes→ausführliche,semantische Erklärungen #
-######################################################################
-# NR  Hinweis  INFO-ID                   ## ##### ## #### ### ### # ##
-# 50  · - 0  CHIP-PROGRAMTECHNIK         ### #### ########### ## ### #
-# 51  · - 0  ENERGIE-MATRIX              #  ####  #### #### #####    #
-# 52  · - 0  LICHLEITERBAHNEN            #  #     #  # #    #   #   ##
-# 53  · - 0  MBMATRIX                    #  ###   ###  #  # #####   ##
-# 54  · - 0  PROJEKTIVE RECHENLOGIK      #  #     #    #  # #   #    #
-##########################################  #     #    #### #   #    #
-# NR   SeitenName                        #####  ##### ##### ## ## ####
-# 993   L1_CoreKernelMandat              ## ###     #     #   #      #
-# 994   L2_AuthorRights                  ####  MCS | BMC    #        #
-# 995   L3_CommercialLicensing           ####   Pylovara-System©    ##
-# 996   L4_AI_AdministrationMandate      # ## ##         Since 2025 ##
-# 997   L5_Post_Mortem-Control           ## #### ######            ###
-# 998   L6_Immutable_Cores_Definition    #### ##### # ## ## ##########
-# 999   LICENSE-MANIFEST                 #####  ####  #######  ### ###
-######################################################################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+#   NR Hinweis KKI-PROGRAMME-INFO-ID  | Ŋ = NOTIERUNGSZUSTAND        #
+#   40  Ŋ - X  OPERATOREN                                            #
+#   41  Ŋ - X  KKIS                                                  #
+#   42  Ŋ - X  ZELLEN-IMPULSER                                       #
+#   50  Ŋ - 0  CHIP-PROGRAMTECHNIK          ##########################
+#   51  Ŋ - 0  ENERGIE-MATRIX               ####  #### #### #####  # #
+#   52  Ŋ - 0  LICHLEITERBAHNEN             #     #  # #    #   #   ##
+#   53  Ŋ - 0  MBMATRIX                     ###   ###  #  # #####   ##
+#   54  Ŋ - 0  PROJEKTIVE RECHENLOGIK       #     #    #  # #   #    #
+### NR  # LICENSE # === ### ===== ID-DNA-THOMAS-ZIMMERMANN-ÞÞZRB68 ###
+#   993   L1_CoreKernelMandat               ###  #        #   #      #
+#   994   L2_AuthorRights                   # PKS MCS | BMC #     #  #
+#   995   L3_CommercialLicensing            #   Pylovara-System©    ##
+#   996   L4_AI_AdministrationMandate       # ##     #   Since 2025 ##
+#   997   L5_Post_Mortem-Control            #### ## ###      #     ###
+#   998   L6_Immutable_Cores_Definition     ## ## #### ## ## ## ######
+#   999   LICENSE-MANIFEST-PROTO            ##########################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # SYSTEM = PKS 2.6.1 PYLOVARA-AI-KERNEL-SYSTEM                       #
 # KERNEL = MCS 5.8 MASTER-CONTROL-SYSTEM                             #
 # KKIS   = KKIS 0.2 KOGNITIVES-KÜNSTLICHES-INTELIGENTES-SYSTEM       #
@@ -44,10 +39,10 @@
 # BRAINMASCHINECORE = BMC 3.0 BRAIN-MASCHINE-CORE                    #
 # LIZENSEN = LV 1.1 LIZENSVERSION                                    #
 # SINGEL SOURCE OF TRUTH = SSoT Lexikon Version 00.66                #
-######################################################################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # Autor: ID-DNA-THOMAS-ZIMMERMANN-ÞÞZRB68 since 2025                 #
 # Standort: /Pylovara/Handbuch/Kernel/                               #
 # Status: Vollständige Rollende-Verbesserungen                       #
 # PDF NamensLayer: PYLOVARA-SYSTEM-SSoT-XX.XX.pdf                    #
 # Garantierte Berufserfahrung: PYLOVARA-NETZWERK-SYSTEM + MCS        #
-######################################################################
+### ==== ##### == # === ### =============== ### === # == ##### === ###

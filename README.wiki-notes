@@ -1,62 +1,60 @@
---------------------------------- VorWort -------------------------------------------
+### ==== ##### == # === ### === VORWWORT == ### === # == ##### === ###
+
                          - Ich bau nicht irgendwas —
                             Ich bau den ersten :
 
                      symbolisch reinen, linear-sicheren,
                   parallel-kompatiblen MCS-Kernel der Welt
---------------------------------- Install -------------------------------------------
+
+### ==== ##### == # === # INSTALLATIONS PROZESS === # == ##### === ###
 
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
- info :
- Hier wird mit Arch + Bash + Kitty First gearbeitet,
- bei Problemen auf andere Derivate Befehle einzelnd eingeben .
- Funktioniert auch über Homebrew oder WSL , Primär Linux-Zen + Bash
- Besonderheit ist ihr könnt pylovara ab linuxkernel install direkt im tty
- als vollwertigen desktop installieren mit hyprland ....
-
-------------------------------- Update Manual ---------------------------------------
+### ==== ##### == # == INSTALLATIONSINFORMATION === # == ##### === ###
+# Hier wird mit Arch + Bash + Kitty First gearbeitet,
+# bei Problemen auf andere Derivate Befehle einzelnd eingeben .
+# Funktioniert auch über Homebrew oder WSL , Primär Linux-Zen + Bash
+# Besonderheit ist ihr könnt pylovara ab linuxkernel install direkt im tty
+# als vollwertigen desktop installieren mit hyprland ....
+### ==== ##### == # === ### = UPDATE MANUAL ### === # == ##### === ###
 
 cd Pylovara/Setup/Pylovara-System/
 sudo ./pylovara.updater-needle
 
- version 0.4 beta (buggy but copy and paste from githubg in the directory)=
+### ==== ##### == # === # UPDATE INFORMATION ## === # == ##### === ###
+# - sucht alte installationen /Pylovara/ ~/Pylovara
+# - löscht sie rekursiv & sauber
+# - klont das repo nach /tmp/pylovara-latest
+# - kopiert das geklonte repo nach /Pylovara/
+# - lässt wrapper außenvor weil schon gesetzt
+# - entfernt /tmp/pylovara-latest wieder
+# - funktioniert nur mit = sudo ./pylovara.updater-needle
+# - einführung der wahrheiten logistik
+# wenns nicht klappt =
+#       - einfach zip laden
+#       - entpacken
+#       - /Pylovara/ ordner ersetzen im Root
+#       - fertig
+### ==== ##### == # ===  IMPRESUM INFORMATION # === # == ##### === ###
+# Direkte Hilfe + Investoren Anlaufstelle :
+#
+# Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
+# Telefon :  +49 176/88218035
+# Telegram : @iBandino
+# LinkedIn : https://www.linkedin.com/in/thomas-zimmermann-pylovara-system-mcs/
+#
+# Sprachkenntnisse : Deutsch 100% Englisch 40% SchweitzerDeutsch 98%
+#
+# Schriftlicher verkehrt kann in jeder Sprache Stattfinden
+#
+# Investoren Stichwort   : Finanzierung | Geschäfts-treffen/gespräch
+# Entwickler Stichwort   : Entwicklungsinteresse | lehrgang
+# Lizenskäufte Stichwort : License Buy
+#
+# Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen
+#       auf den Prinzip ,, Mensch & Mensch ’’
+#
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- - sucht alte installationen /Pylovara/ ~/Pylovara
- - löscht sie rekursiv & sauber
- - klont das repo nach /tmp/pylovara-latest
- - kopiert das geklonte repo nach /Pylovara/
- - lässt wrapper außenvor weil schon gesetzt
- - entfernt /tmp/pylovara-latest wieder
- - funktioniert nur mit = sudo ./pylovara.updater-needle
- - einführung der wahrheiten logistik
-
- info : (wenns nicht klappt):(
-       - einfach zip laden
-       - entpacken
-       - /Pylovara/ ordner ersetzen im Root
-       - fertig
-
------------------------------ Impressum Infos --------------------------------------
-
- Direkte Hilfe + Investoren Anlaufstelle :
-
- Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
- Telefon :  +49 176/88218035
- Telegram : @iBandino
- LinkedIn : https://www.linkedin.com/in/thomas-zimmermann-pylovara-system-mcs/
-
- Sprachkenntnisse : Deutsch 100% Englisch 40% SchweitzerDeutsch 98%
-
- Schriftlicher verkehrt kann in jeder Sprache Stattfinden
-
- Investoren Stichwort   : Finanzierung | Pylovara-System Info | Geschäftstreffen
- Entwickler Stichwort   : Entwicklungsinteresse | lehrgang
- Lizenskäufte stichwort : License Buy
-
- Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen
-       auf den Prinzip ,, Mensch & Mensch ’’
-
-------------------------------------------------------------------------------------

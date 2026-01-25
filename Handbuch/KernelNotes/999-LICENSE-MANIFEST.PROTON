@@ -1,8 +1,8 @@
-@kernel-nr: 999 | LICENSES-MANIFEST-PROTO | Status: Prototyp
+@kernel-nr: 999 | LICENSES-MANIFEST-PROTO | Status: PROTOTYP
 ####################### ANFANG LICENSES-MANIFEST-PROTO ###########################
 ----------------------------------------------------------------------
 Pylovara MCS BMC – License Manifest (Prototype Version)
-Version: 0.5-PROTO
+Version: 0.6-PROTO
 Status: Pre-Final / Under Owner Control
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -91,8 +91,12 @@ Status: Pre-Final / Under Owner Control
 5. Änderungshoheit
    Nur der Owner mit folgender Signatur darf Änderungen ausführen:
 
-   OWNER-MASTER-SIGNATURE:
-   ID-DNA-THOMAS-ZIMMERMANN-þþZRB68
+   OWNER-MASTER-SIGNATURE KERN KLASSE = OWS
+
+   OWS KLASSE = OWS-ID-DNA
+
+   OWNER-MASTER-SIGNATURE-IDENTIFIKATION =
+   OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68
 
    OWNER-MASTER-SIGANTUR GITHUB ADMINISTRATOR KERNEL UPDATE:
    https://github.com/Pylovara/Pylovara

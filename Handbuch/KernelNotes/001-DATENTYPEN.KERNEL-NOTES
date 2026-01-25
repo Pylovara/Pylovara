@@ -1,209 +1,288 @@
-@kernel-nr: 01  | DATENTYPEN | STATUS = BAUSTELLE 
+@kernel-nr: 01  | DATENTYPEN | STATUS = Ŋ 
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-----------------------------------------------------------------------
- NAME = DATENTYPEN
+### ==== ##### == # === # DATENTYPENKATEGORIEN  === # == ##### === ###
+# KERNEL = BEINHALTET ALLGEMEINE KERNEL DATENTYPEN
+# DNA-ID-GENERATOR = BEINHALTET ID-DNA-GENERATOR DATENTYPEN
+# PROTEIN = BEINHALTET PROTEIN DATENTYPEN
+# PROTON = BEINHALTET PROTON DATENTYPEN
+# BOOT-LOGIK = BIOS/UEFI-SPEZIALTYPEN
+# MIT-SYNC = BOOT-LOGIK / HARDWARE-SYNC (INFO-ID = DATENTYPEN-BMC)
+### ==== ##### == # ===  STARTPUNKT DATENTYPEN  === # == ##### === ###
+
+ NAME Ð DATENTYPEN
 
  INFO-ID = DATENTYPEN
+
+ MASTER = MASTER-DATENTYPEN
 
  BEGRIFFSDEFINTION = SYSTEM DATENTYPEN
 
  FUNKTION = EINORDNUNG
 
  AUSFÜHRUNGSART = FORMAT | BITREITE | SPEICHER-LAYOUT
------------------------------------------------------------------------
- KATEGORIEN:
 
- KERNEL = BEINHALTET ALLGEMEINE KERNEL DATENTYPEN
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- DNA-ID-GENERATOR = BEINHALTET ID-DNA-GENERATOR DATENTYPEN
+ DATENTYPEN KERN KLASSE = DATENTYPEN
 
- PROTEINE = BEINHALTET PROTEIN DATENTYPEN
+ INFO = PHYSISCHE GATTER-BREITE
 
- PROTONEN = BEINHALTET PROTON DATENTYPEN
+ FUNKTION = AUSLÖSER
 
- BOOT-LOGIK = BIOS/UEFI-SPEZIALTYPEN
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MIT-SYNC = BOOT-LOGIK / HARDWARE-SYNC (INFO-ID = DATENTYPEN-BMC)
-----------------------------------------------------------------------
-####################### ANFANG DATENTYPEN KERNEL #####################
-----------------------------------------------------------------------
- INFORMATION =
+ MCS-TYP = B1
 
- KERN-DATENTYPEN (PHYSISCHE GATTER-BREITE) DEFINIEREN,
- WIE VIELE "DRÄHTE" IM BMC FÜR EINE INFORMATION RESERVIERT WERDEN.
-----------------------------------------------------------------------
- MCS-TYP = B1 | BEZEICHNUNG = BIT-IMPULS | BIT-BREITE = 1
+ DATENTYPENKATEGORIEN = KERNEL
 
- INFO-ID = B1
-
- KURZ INFO = STANDART-EINHEIT FÜR WAHRHEITEN UND SENTIATOREN
+ INFO = STANDART-EINHEIT FÜR WAHRHEITEN UND SENTIATOREN
 
  FUNKTION = SCHALTERZUSTÄNDE (ON/OFF), GATTER-STEUERUNG
-----------------------------------------------------------------------
- MCS-TYP = B8 | BEZEICHNUNG = KERN-BYTE | BIT-BREITE = 8
 
- INFO-ID = B8
+ BEZEICHNUNG = BIT-IMPULS
 
- KURZ INFO = UTF -8 ZEICHEN, EINFACHE SENSORWERTE
+ BIT-BREITE = 1
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = B8
+
+ DATENTYPENKATEGORIEN = KERNEL
+
+ INFO = UTF -8 ZEICHEN, EINFACHE SENSORWERTE
 
  FUNKTION = TASTATUR UND SYMBOL WIE SONDERZEICHEN EINORDNEN
-----------------------------------------------------------------------
- MCS-TYP = B16 | BEZEICHNUNG = LOGIK-LINK | BIT-BREITE = 16
 
- INFO-ID = B16
+ BEZEICHNUNG = KERN-BYTE
 
- KURZ INFO = MCS-STANDART-OPERATOREN UND BEFEHLSKENNUNG
+ BIT-BREITE = 8
 
- FUNKTION = VERBINDET ZWEI LOGISCHE ZUSTÄNDE ODER SYMBOLE
-            IM NANOSEKUNDEN-TAKT.
-----------------------------------------------------------------------
- MCS-TYP = B32 | BEZEICHNUNG = ADRESSIERUNG-PFAD | BIT-BREITE = 32
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- INFO-ID = B32
+ MCS-TYP = B16
 
- KURZ INFO = STANDART-ADRESSIERUNG FÜR LEGACY-SYSTEME.
-             KOMPAKTIBILITÄTSSCHICHT FÜR x86-LEGACY-STRUKTUREN.
+ DATENTYPENKATEGORIEN = KERNEL
+
+ INFO = MCS-STANDART-OPERATOREN UND BEFEHLSKENNUNG
+
+ FUNKTION = VERBINDET ZWEI LOGISCHE ZUSTÄNDE IM NANOSEKUNDEN-TAKT.
+
+ BEZEICHNUNG =  LOGIK-LINK
+
+ BIT-BREITE = 16
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = B32
+
+ DATENTYPENKATEGORIEN = KERNEL
+
+ INFO = STANDART-ADRESSIERUNG FÜR LEGACY-SYSTEME.
+        KOMPAKTIBILITÄTSSCHICHT FÜR x86-LEGACY-STRUKTUREN.
 
  FUNKTION = ERMÖGLICHT MCS DEN ZUGRIFF AUF HERKÖMLICHE RAM-BEREICHE
-            AUẞERHALB VOM BMC.
-----------------------------------------------------------------------
- MCS-TYP = B64| BEZEICHNUNG = HIGH-SPEED-PFAD | BIT-BREITE = 64
 
- INFO-ID = B64
+ BEZEICHNUNG = ADRESSIERUNG-PFAD
 
- KURZ INFO = GROẞE DATENSTRÖME, MODERNE SPEICHERADRESSIERUNG.
+ BIT-BREITE = 32
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = B64
+
+ DATENTYPENKATEGORIEN = KERNEL
+
+ INFO = GROẞE DATENSTRÖME, MODERNE SPEICHERADRESSIERUNG.
 
  FUNKTION = TRANSPORTIERT KOMPLEXE PROTEINE MIT MAXIMALER BANDBREITE
-----------------------------------------------------------------------
- MCS-TYP = B-INF | BEZEICHNUNG = MASSEN-TYP | BIT-BREITE = 64
 
- INFO-ID = B-INF
+ BEZEICHNUNG = HIGH-SPEE-PFAD
 
- KURZ INFO = MASSENZUSAMMENSETZUNG
+ BIT-BREITE = 64
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = B-INF
+
+ DATENTYPENKATEGORIEN = KERNEL
+
+ INFO = MASSENZUSAMMENSETZUNG
 
  FUNKTION = SCHALTZUSTAND ÖFFNEN / SCHLIEẞEN
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-######################## ENDE DATENTYPEN KERNEL ##################################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-#################### ANFANG DATENTYPEN ID-DNA-GENERATOR ##########################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- MCS-TYP = B-þA| BEZEICHNUNG = ABGLEICHSNUMMER | BIT-BREITE =
 
- INFO-ID = B-þA
+ BEZEICHNUNG = MASSENTYP
 
- KURZ INFO = DIENT ALS ABGLEICHSNUMMER FÜR DEN ID-DNA-GENERATOR
+ BIT-BREITE = 64
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = B-þA
+
+ DATENTYPENKATEGORIEN = ID-DNA-GENERATOR
+
+ INFO = DIENT ALS ABGLEICHSNUMMER FÜR DEN ID-DNA-GENERATOR
 
  FUNKTION = SCHATTEN-IDENTITÄT
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-##################### ENDE DATENTYPEN ID-DNA-GENERATOR ###########################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-######################## ANFANG DATENTYPEN PROTEIN ###############################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- MCS-TYP = þ-KEY | BEZEICHNUNG = IDENTITÄTS-TYP | BIT-BREITE = VARIABEL
 
- INFO-ID = þ-KEY
+ BEZEICHNUNG = ABGLEICHSNUMMER
 
- KURZ INFO = KRYPTOGENETISCHE SIGNATUR
+ BIT-BREITE = VARIABLE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = þ-KEY
+
+ DATENTYPENKATEGORIEN = PROTEIN
+
+ INFO = KRYPTOGENETISCHE SIGNATUR
 
  FUNKTION = SIGNALFLUSS PRÜFUNG
-----------------------------------------------------------------------
- MCS-TYP = INIT-V | BEZEICHNUNG = START-PROTEIN | BIT-BREITE = 64+
 
- INFO-ID = INIT-V
+ BEZEICHNUNG = IDENTITÄTS-TYP
 
- KURZ INFO = INITIALISIERUNGS-VEKTOR
+ BIT-BREITE = VARIABLE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = INIT-V
+
+ DATENTYPENKATEGORIEN = PROTEIN
+
+ INFO = INITIALISIERUNGS-VEKTOR
 
  FUNKTION = LÄD KONFIGURATIONEN BEIM START
-----------------------------------------------------------------------
- MCS-TYP = HND-CMD| BEZEICHNUNG = KONSENS-TYP | BIT-BREITE = 128
 
- INFO-ID = HND-CMD
+ BEZEICHNUNG = PROTEIN-STARTPUNKT
 
- KURZ INFO = SCHNITTSTELLE FÜR AIMS-HANDSHAKE
+ BIT-BREITE = 64+
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = KKIS-CMD
+
+ DATENTYPENKATEGORIEN = PROTEIN
+
+ INFO = SCHNITTSTELLE FÜR KKIS-HANDSHAKE
 
  FUNKTION = ABGLEICH DER SIGNATUREN
-----------------------------------------------------------------------
- MCS-TYP = P-CMD | BEZEICHNUNG = BEFEHLS-PROTEIN | BIT-BREITE = 16/32
 
- INFO-ID = P-CMD
+ BEZEICHNUNG = KONSENS-TYP
 
- KURZ INFO = TRÄGER FÜR KERNEL BEFEHLE
+ BIT-BREITE = 128
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = P-CMD
+
+ DATENTYPENKATEGORIEN = PROTEIN
+
+ INFO = TRÄGER FÜR KERNEL BEFEHLE
 
  FUNKTION = KAPSELUNG
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-################ ENDE DATENTYPEN PROTEIN #############################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-############## ANFANG DATENTYPEN PROTONEN ############################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- MCS-TYP = PR-PHYS | BEZEICHNUNG = HARDWARE-PHYSIK | BIT-BREITE = 32
 
- INFO-ID = PR-PHYS
+ BEZEICHNUNG = BEFEHLS-PROTEIN
 
- KURZ INFO = PHYSIKALISCHE MESSWERTE VON PROTONEN
+ BIT-BREITE = 16/32
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = PR-PHYS
+
+ DATENTYPENKATEGORIEN = PROTON
+
+ INFO = PHYSIKALISCHE MESSWERTE VON PROTON/EN
 
  FUNKTION = ECHTZEIT-SENSORDATEN
-----------------------------------------------------------------------
- MCS-TYP = F-REF| BEZEICHNUNG = ZUSTANDS-REFERENZ| BIT-BREITE = 16/32
 
- INFO-ID = F-REF
+ BEZEICHNUNG = HARDWARE-PHYSIK
 
- KURZ INFO = REFERENZ-POINTER FÜR FEED CACHE
+ BIT-BREITE = 32
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = F-REF
+
+ DATENTYPENKATEGORIEN = PROTON
+
+ INFO = REFERENZ-POINTER FÜR FEED CACHE
 
  FUNKTION = SYSTEMZUSTAND VERWEISE
-----------------------------------------------------------------------
- MCS-TYP = PR-VAL | BEZEICHNUNG = LOGIK-WERT | BIT-BREITE = 1/64
 
- INFO-ID = PR-VAL
+ BEZEICHNUNG = ZUSTANDS-REFERENZ
 
- KURZ INFO = REINE NUMMERISCHE ODER BOOLESCHE WERTE FÜR PROTON INHALT
+ BIT-BREITE = 16/32
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = PR-VAL
+
+ DATENTYPENKATEGORIEN = PROTON
+
+ INFO = REINE NUMMERISCHE ODER BOOLESCHE WERTE FÜR PROTON INHALT
 
  FUNKTION = DIENT ALS OPERAND FÜR OPERATOREN
-----------------------------------------------------------------------
- MCS-TYP = PR-DNA| BEZEICHNUNG = BIO-SCHNITTSTELLE | BIT-BREITE = VARIABEL
 
- INFO-ID = PR-DNA
+ BEZEICHNUNG = LOGIK-WERT
 
- KURZ INFO = PLATZHALTER
+ BIT-BREITE = 1/64
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = PR-DNA
+
+ DATENTYPENKATEGORIEN = PROTON
+
+ INFO = PLATZHALTER
 
  FUNKTION = PLATZHALTER
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-################# ENDE DATENTYPEN PROTONEN ###########################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-################ ANFANG DATENTYPEN BOOT-LOGIK ########################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- MCS-TYP = B-ROOT | BEZEICHNUNG = MASTER-ZWEIG | BIT-BREITE = 128
 
- INFO-ID = B-ROOT
+ BEZEICHNUNG = BIO-SCHNITTSTELLE
 
- KURZ INFO = HÖCHSTE ADRESSIERUNGSEBENE FÜR DEN HARDWARE-ZUGRIFF
+ BIT-BREITE = VARIABEL
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = 
+
+ DATENTYPENKATEGORIEN = PROTON
+
+ INFO = PLATZHALTER
+
+ FUNKTION = PLATZHALTER
+
+ BEZEICHNUNG = PLATZHALTER
+
+ BIT-BREITE = PLATZHALTER
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = B-ROOT
+
+ DATENTYPENKATEGORIEN = BOOT-LOGIK
+
+ INFO = HÖCHSTE ADRESSIERUNGSEBENE FÜR DEN HARDWARE-ZUGRIFF
 
  FUNKTION = ROOT-ZUGRIFF-DEV
-----------------------------------------------------------------------
- MCS-TYP = SYS-RST | BEZEICHNUNG = PURGE-INITIALER| BIT-BREITE = 1
 
- INFO-ID = SYS-RST
+ BEZEICHNUNG = MASTER-ZWEIG
 
- KURZ INFO = HARDWIRED RESET-TRIGGER
+ BIT-BREITE = 128
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MCS-TYP = SYS-RST
+
+ DATENTYPENKATEGORIEN = BOOT-LOGIK
+
+ INFO = HARDWIRED RESET-TRIGGER
 
  FUNKTION = ERZWINGT BEREINIGUNG
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-################## ENDE DATENTYPEN BOOT-LOGIK ########################
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-          DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT
-          PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-################### ENDE DATENTYPEN KERNEL ###########################
+
+ BEZEICHNUNG = PURGE-INITIALER
+
+ BIT-BREITE = 1
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === # ENDPUNKT DATENTYPEN # === # == ##### === ###

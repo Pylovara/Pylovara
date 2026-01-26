@@ -1,23 +1,32 @@
-######################################################################
- 004-PROTON.INFO-NOTES |
-######################################################################
+ 004-PROTON.INFO-NOTES
+#====================================================================#
 @info-id: PROTON-DEV
-----------------------------------------------------------------------
- ↓ STANDARTLAYOUT ↓
-----------------------------------------------------------------------
- PROTON KLASSE =
+#====================================================================#
 
- FUNKTION =
+ Definition Verschachtelte Proton /en :
 
- SYMBOLISCHE DEKLARATION =
+ {{{{{{{}}}}}}}
 
- SYMBOL IN WORTEN =
 
- INFO =
-----------------------------------------------------------------------
-######################################################################
+ Beispiel HardwareManagment MusterBeispiel:
+
+ {’CPU’{’Volt’|'*'{'Watt'|'*'{’Ampere’|'*'{’Widerstand’{’Frequenz’|’*’}}}}}}
+
+ (Diese Sektor Wird Noch Designed und Definiert)
+
+ Proton Anwendungsfälle
+
+ - Primär Physikalische (Temp, Volt, Watt, Amp)
+ - Sekundär Verschachtelte (Chip + EnergieManagment)
+ - Kommunikationsbezogene (Strom ,Interface, Transport)
+ - Speicherbezogene (Cache, Signed, Unsigned)
+ - Logische (Valid, State, Mode)
+ - Prozessbezogene (Pid, Thread, ID)
+
+#====================================================================#
 @info-id: PROTON
-----------------------------------------------------------------------
+#====================================================================#
+
  ERKLÄRUNG PROTON/EN =
 
  UM HARDWARE KOMPONENTEN ZU VERSORGEN WERDEN AUTOMATIONS PROGRAMME
@@ -35,34 +44,5 @@
  GESCHRIEBENEN ZUSTAND, DER GRUNDSÄTZLICH ALLES ANSTEUERN KANN.
 
  PROTONEN NUTZEN HAUPTSÄCHLICH DIE BOXIS MCS-REGISTER FÜR DIESEN ZWECK.
-----------------------------------------------------------------------
-######################################################################
-@info-id: PROTON-BAUSTELLEN
-----------------------------------------------------------------------
- BAUUSTELLEN-ABSCHNITT-ANFANG
 
-
- Definition Verschachtelte Proton /en :
-
- {{{{{{{}}}}}}}
-----------------------------------------------------------------------
- Beispiel HardwareManagment MusterBeispiel:
-
- {’CPU’{’Volt’|'*'{'Watt'|'*'{’Ampere’|'*'{’Widerstand’{’Frequenz’|’*’}}}}}}
-
- (Diese Sektor Wird Noch Designed und Definiert)
-
-
-----------------------------------------------------------------------
- Proton Anwendungsfälle
-
- - Primär Physikalische (Temp, Volt, Watt, Amp)
- - Sekundär Verschachtelte (Chip + EnergieManagment)
- - Kommunikationsbezogene (Strom ,Interface, Transport)
- - Speicherbezogene (Cache, Signed, Unsigned)
- - Logische (Valid, State, Mode)
- - Prozessbezogene (Pid, Thread, ID)
-
- BAUSTELLEN-ABSCHNITT-ENDE
-----------------------------------------------------------------------
-######################################################################
+#====================================================================#

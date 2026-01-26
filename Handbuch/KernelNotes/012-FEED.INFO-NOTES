@@ -1,88 +1,49 @@
-##################################################################################
- 012-FEED.INFO-NOTES |
-##################################################################################
+ 012-FEED.INFO-NOTES
+#====================================================================#
 @info-id: FEED-DEV
-----------------------------------------------------------------------------------
+#====================================================================#
 
- ↓ STANDARTLAYOUT ↓
+ DIESER BEREICH IST LEER
 
-----------------------------------------------------------------------------------
-
- FEED KERN KLASSE =
-
- INFO-ID = FEEDS
-
- FUNKTION = CACHE GEBUNDER RAHMEN
-
- SYMBOLISCHE DEKLARATION = ( )
-
- SYMBOL IN WORTEN = KLAMMER AUF KLAMMER ZU
-
- INFO =
-
-----------------------------------------------------------------------
-######################################################################
+#====================================================================#
 @info-id: FEED
-----------------------------------------------------------------------
+#====================================================================#
 
  ERKLÄRUNG  =
 
- EIN SOGENANNTER FEED LEGT EINEN CACHESPEICHER AN.
+ EIN SOGENANNTER FEED IST EINE TRAGENDE HÜLLE MIT EINER NUMMER.
+
+ ES HAT EINEN IN-PUT UND OUT-PUT KANAL, DIE DURCH ZWEI WEITERE
+
+ DEFINITIONEN DEFINIERT WERDEN.
 
  DIE GENUTZTE ZAHL ODER BUCHSTABE ODER EINE KOMBINATION VON BEIDEM,
  ERGEBEN DIE KENNZIFFER DES FEEDS.
 
  IM UNTERBAU WIRD FÜR JEDEN FEED EINEN EINDEUTIGEN CACHESPEICHER
- ZUGEWISSEN DER ÜBER EINEN FÜHRENDEN FEED SICH MIT DEM TRAGENDEN
- FEED DEN CACHE TEILT.
+ ZUGEWISSEN DER ÜBER EINEN FÜHRENDEN FEED GEHALTEN WIRD UND VON
+ EINEM TRAGENDEN FEED GENOMMEN WIRD.
 
- EIN SOGENANNTER FÜHRENDER FEED NIMMT EINE INFORMATION AUF UND
- TEILT DIESEN MIT SEINEN TRAGENDEN FEEDS.
+ EIN FÜHRENDER FEED KANN MEHRERE GESCHWISTER HABEN ABER NIEMALS
+ UMGEKEHRT.
 
- DER FÜHRENDE FEED WIRD IMMER LINKS VON EINEM BOXI PLAZIERT UND EIN
- TRAGENDER FEED WIEDERUM INNERHALB EINER BOXI.
-
- DER GESPEICHERTE INHALT WIRD DANN VOM FÜHRENDEN ZUM TRAGENDEN
- FEED AKTUALISIERT.
+ DER GESPEICHERTE INHALT VON FÜHRENDEN FEEDWIRD DANN VOM  TRAGENDEN
+ FEED AKTUALISIERT/ENTGEGENGENOMMEN.
 
  FEEDS HABEN BEI DIESEM PROZESS IMMER DIE GLEICHE NUMMER UM IHRE
- EINDEUTIGE ZUGEHÖRIGKEIT ZUEINANDER KLAR ZU DEKLARIEREN.
+ EINDEUTIGE ZUGEHÖRIGKEIT ZUEINANDER KLAR ZU DEKLARIEREN ÜBER DIE
+ KENNZIFFER IM FEED SELBST.
 
- FEEDS KÖNNEN PRINZIPIELL JEDEN BOXI TRANSPORTRAHMEN ALS AUFNAHME
- UND ABLAGE IHRES INHALT NUTZEN, JE NACH EINSATZ WUNSCH AUCH BOXI
- ÜBERGREIFEND.
-
- duplikationsmechanismus von host zu empfänger (mehrfachausgang)
-
-----------------------------------------------------------------------
- DEFINTITION FEED ABKÜRZUNGEN =
-----------------------------------------------------------------------
+ FEED IST EIN DUPLIKATIONSMECHANISMUS DER VON EINEM ALPHA AUS
+ DIE BETAS FÜTTERT
 
  DEFINITION FÜHRENDE/R FEED =
 
- (1)" " <-- FÜHRENDER FEED AN BOXI CALLIS
- (2)' ' <-- FÜHRENDER Feed AN BOXI SHELL-CONTROL
- (3)~ ~ <-- FÜHRENDER Feed AN BOXI MCS-CMD
- (4), , <-- FÜHRENDER Feed AN BOXI CALL-CONTROL
- (5)¨ ¨ <-- FÜHRENDER Feed AN BOXI BLANKERNENNER
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- Definition Tragende/r Feed:
-
- "(1)" <-- Tragender FEED IN BOXI CALLIS
- '(2)' <-- Tragender Feed IN BOXI SHELL-CONTROL
- ’(3)’ <-- Tragender Feed IN BOXI SHELL-CONTROL
- ,(4), <-- Tragender Feed IN BOXI CALL-CONTROL
- ¨(5)¨ <-- Tragender Feed IN BOXI BLANKERNENNER
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
-######################################################################
-@info-id: FEED-BAUSTELLE
-----------------------------------------------------------------------
+ (1)±INHALT± <-- FÜHRENDER FEED
 
 
-----------------------------------------------------------------------
-######################################################################
+ DEFINITION TRAGENDER FEED =
+
+ ±INHALT±(1) <-- Tragender FEED
+
+#====================================================================#

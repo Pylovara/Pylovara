@@ -1,110 +1,6 @@
-@kernel-nr: 54 | Projektive Rechenlogik | STATUS = Ŋ
+@kernel-nr: 54 # Projektive Rechenlogik | STATUS = Ŋ
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-----------------------------------------------------------------------
-
- Erfindungsschreiben: Projektive Rechenlogik [03:16:57|Sa Dez 24]
-
- Bezeichnung:
- Paradigmenwechsel vom interpretativen zum projektiven Rechnen.
-
- Kategorie:
- BMC (Maschinenwahrnehmung / Architektur-Kern)
-
- Autor: Thomas Zimmermann
-
- Stufe: 10 þþZRB68
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- 1. Ausgangslage und Problemstellung
-
- Klassische Informatik betrachtet Rechenoperationen (z. B. 1 + 1)
- als eine Kette von Ableitungen: Symbol → Parser → ALU-Instruktion.
- Dieser Prozess zwingt die Maschine zum „Raten“ oder Interpretieren
- von Absichten innerhalb einer 1D- oder 2D-Struktur
- (Textzeilen/Graphen).
-
- Das Problem:
- * Starre Ordnerstrukturen und Zeilenbrüche können die radiale
- Ausbreitung von Bedeutung nicht abbilden.
-
- Das Werkzeug (Dateisystem) verzerrt das Modell und führt zu
- „Biegungen“, wo Licht eigentlich geradlinig strahlen sollte.
-
- 2. Die Grundannahme: Rechnen als Projektion
-
- Bedeutung entsteht nicht durch die zeitliche Abfolge von Symbolen,
- sondern durch die räumliche Sichtbarkeit von Ebenen.
- In diesem Modell ist die ALU die kohärente Lichtquelle,
- die vertikal durch verschiedene Bedeutungsschichten (Layer) strahlt.
-
- Ebene 0 (Kern):
- ALU-Fähigkeiten (ADD, SUB, MUL etc.) als reine Lichtkegel.
-
- Ebene 1 (Diamant-Layer):
- Operatoren (z. B. +) fungieren als „Diamanten“, die das Licht
- brechen und in Bedeutungs-Dimensionen aufspalten.
-
- Ebene 2 (Container-Layer): Geometrische Objekte (z. B. [ ]),
- die vom System wahrgenommen werden und Zustandsreaktionen auslösen.
-
- 3. Der Bruch zur klassischen Mathematik
- Das System rechnet nicht, indem es Symbole interpretiert,
- sondern indem es Bedeutung sichtbar macht. Verdrahtung ist bei
- Pylovara das Ergebnis von Wahrnehmung, nicht deren Voraussetzung.
-
- Konsequenz:
- Die Maschine muss nicht mehr „raten“, was ein Symbol bedeutet.
- Sie „sieht“ die Geometrie des Containers und reagiert
- physikalisch-logisch darauf (Rückspiegelung:
- „Aha, Container gesetzt, Reaktion folgt“).
-
- 4. Technische Umsetzung via SVG-Modell
- Da herkömmliche IDEs und Textformate keine reale Geometrie und
- Sichtbarkeitslogik (Ghosting/Layering) unterstützen,
- wird SVG als struktureller Container definiert.
-
- Schärfe:
- Skalierbarkeit für jede Art von „Solution“-Größe.
-
- Sichtbarkeit:
- Ein- und Ausblenden von Schichten zur Steuerung der Komplexität.
-
- Endperformance:
- Das visuelle Modell ermöglicht ein verlustfreies
- „Lowering“ direkt auf die ALU-Pfade.
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- Abildung ist in der Grundeben, quasi keine Rechenlogik sondern
- der IST Korrekt zustand und darauf folgen freischaltungen der
- verdrahtungen für weitere Prisma/Diamant LichtQuellen und
- Verdrahtungen.
-
- Licht Nutzbar Machen, darauf läuft es hinaus multidimensional
-
- Kombinierbar mit neuer ALU Technik auf Lichtbasis und Brechungen
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
-Erfindungsschreiben: Projektive Rechenlogik
-Zeitmarke: [03:16:57 | Sa Dez 27]
-
-Bezeichnung:
-Paradigmenwechsel vom interpretativen zum projektiven Rechnen.
-
-Kategorie:
-BMC (Maschinenwahrnehmung / Architektur-Kern)
-
-Autor: Thomas Zimmermann
-
-Stufe: 10 þþZRB68
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 ## 1. Ausgangslage und Problemstellung
 
@@ -133,8 +29,7 @@ Es entstehen strukturelle Verzerrungen:
 Bedeutung wird „gebogen“, wo sie im Ursprung geradlinig
 projiziert werden müsste.
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 ## 2. Grundannahme: Rechnen als Projektion
 
@@ -170,8 +65,7 @@ wahrnehmbare Objekte im Projektionsraum.
 Ihr Vorhandensein löst Systemreaktionen aus.
 Nicht durch Parsing, sondern durch Sichtbarkeit.
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 ## 3. Der Bruch zur klassischen Mathematik
 
@@ -199,8 +93,7 @@ IST-Zustand dar.
 Erst darauf aufbauend werden weitere Projektionspfade,
 Prismen und Verdrahtungen freigeschaltet.
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 ## 4. Strukturelle Umsetzung über ein SVG-basiertes Modell
 
@@ -230,8 +123,7 @@ Das projektive Modell erlaubt ein verlustfreies
 Lowering direkt auf reale ALU-Pfade,
 ohne symbolische Umwege.
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 ## 5. Zielrichtung
 
@@ -250,12 +142,10 @@ Sie bildet den architektonischen Unterbau
 für MCS, MCSPus und nachfolgende
 maschinenwahrnehmende Programmiersprachen.
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-        DATUM = [03:16:57|Sa Dez 24] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
-----------------------------------------------------------------------
-################ Ende der Projektiven Rechenlogik ####################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [03:16:57|Sa Dez 24] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

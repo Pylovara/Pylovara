@@ -1,16 +1,22 @@
-@kernel-nr: 17 | STATUS = DEV LEVEL ROLLING-RELEASE
+@kernel-nr: 17 # DATEITYPEN | STATUS = Ŋ
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-----------------------------------------------------------------------
+### ==== ##### == # === # DATEITYPENKATEGORIEN  === # == ##### === ###
+#
+#   NOCH LEERER BEREICH
+#
+### ==== ##### == # === STARTPUNKT DATEITYPEN # === # == ##### === ###
 
-NAME = DATEITYPEN
+NAME Ð DATEITYPEN
 
 INFO-ID = DATEITYPEN
 
-BEGRIFFSDEFINITION = SYSTEMISCHE DATENTRÄGER-TYPOLOGIE
-
-FUNKTION = STRUKTURIERT UND TRANSPORTIERT SYSTEMZUSTÄNDE VON HARDWARE BIS GUI
+DATEITYPEN-FLUSSMODELL = SIGNAL-HIERARCHIE
 
 MASTER = MASTER-DATEITYPEN
+
+BEGRIFFSDEFINITION = SYSTEMISCHE DATENTRÄGER-TYPOLOGIE
+
+FUNKTION = BESCHREIBT DEN PHYSIKALISCHEN AKTIONSWEG UNABHÄNGIG VON ORGANISATION
 
 AUSFÜHRUNGSART = BINÄR | TEXT | HYBRID | ENCRYPTED
 
@@ -18,14 +24,9 @@ BIT-BREITE = 128 (STANDARD) | 256 (SICHERHEIT) | 64 (LEGACY)
 
 SPEICHERLAYOUT = HEX-OFFSET-BASIERT MIT MAGIC-HEADER "PYLO"
 
-KATEGORIE = KERNEL | HARDWARE | STEURUNG | RENDERING | CACHE
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN KERN KLASSE = DATEITYPEN
-
-INFO-ID = DATEITYPEN
 
 DATEITYP-VERSIONEN-LAYOUT = *-*.*-*
 BEDEUTUNG = <MODUL>-<VERSION>.<ZIEL>-<ORGANISATOR>
@@ -33,61 +34,52 @@ BEISPIEL = GPU-X-2026.system-needle
 
 DATEITYP-VERSIONEN-LAYOUT = *.*-
 BEDEUTUNG = <NAME>.<ZIEL>-<ORGANISATOR>
-BEISPIEL = kernel.system-core
+BEISPIEL = kernel.SYSTEM-CORE
 
 FUNKTION = DEFINITION ALLER SYSTEMDATEITYPEN NACH PYLOVARA-STANDARD
 INFO = JEDER DATEITYP TRÄGT EINE MAGIC-NUMMER UND EINE OWNER-SIGNATUR (Þ7F3A)
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN KERN KLASSEN = DATEITYPEN-MASTER-CONTROL
 
-INFO-ID = DATEITYPEN
-
 DATEITYP-VERSIONEN-LAYOUT = *-*.*-*
 BEDEUTUNG = <MODUL>-<VERSION>.<ZIEL>-<DATEITYPEN-KERNEL>
-BEISPIEL = pylovara-00-63.system-kernel
+BEISPIEL = pylovara-00-63.SYSTEM-KERNEL
 
 DATEITYP-VERSIONEN-LAYOUT = *.*-
 BEDEUTUNG = <NAME>.<ZIEL>-<ORGANISATOR>
-BEISPIEL = pylovara.system-kernel
+BEISPIEL = pylovara.SYSTEM-KERNEL
 
 FUNKTION = VERBINDET DATEITYPEN MIT MASTER-CONTROL-STEUERUNG
 INFO = ERMÖGLICHT MASTER-CONTROL-DIREKTZUGRIFF AUF DATEITYPEN-VALIDIERUNG
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN KERN KLASSE = DATEITYPEN-ORGANISATOR
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0001 (ORGANISATOR-METATYP)
 SYMBOLISCHE ERKENNUNG = -ORGANISATOR-
 BEFEHLSZEILEN-EINGABE = master control dateityp list <organisator>
 FUNKTION = ÜBERGEORDNETE KATEGORISIERUNG ALLER DATEITYPEN
 INFO = FRÜHER "MAGIC" – JETZT SYSTEMATISCHER ORGANISATOR
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-ORGANISATOR SECURE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0002 (IDENTIFIKATIONS-METATYP)
 SYMBOLISCHE ERKENNUNG = -IDENT-
 BEFEHLSZEILEN-EINGABE = MASTER control verify identity <dateityp>
 FUNKTION = SICHERHEITS- UND IDENTITÄTSVALIDIERUNG VON DATEITYPEN
-INFO = PRÜFT OWNER-SIGNATUR (Þ7F3A) UND BLOCKT UNAUTORISIERTE MODIFIKATIONEN
+INFO = PRÜFT OWNER-SIGNATUR (þþ) UND BLOCKT UNAUTORISIERTE MODIFIKATIONEN
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-NEEDLES
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0100
-SYMBOLISCHE ERKENNUNG = -needles
+SYMBOLISCHE ERKENNUNG = -NEEDLE
 BEFEHLSZEILEN-EINGABE = »[~find needle for "GPU-X-2026"~]«
 FUNKTION = HARDWARE-NAHE STEUERDATEIEN (.SYS, .KO, .DLL)
 INFO = DIRECT HARDWARE-BINDUNG – KERNELNÄCHSTE EBENE
@@ -96,122 +88,105 @@ SPEICHERLAYOUT:
   0x04–0x05: 0x0100
   0x06–0x07: NEEDLE-ID
   0x08–0x0F: TIMESTAMP
-  0x10–0x1F: OWNER-SIGNATUR (Þ7F3A)
+  0x10–0x1F: OWNER-SIGNATUR (þþ)
   0x20–0xFF: HARDWARE-PARAMETER
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-MICROS
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0200
-SYMBOLISCHE ERKENNUNG = -micros
+SYMBOLISCHE ERKENNUNG = -MICRO
 BEFEHLSZEILEN-EINGABE = »[~micro control html render~]«
 FUNKTION = MIKROSTEUERUNG (HTML, JS, SQL, KLEINE SKRIPTE)
 INFO = TOCHTER-EBENE – FEINSTEUREUNG VON NANOS
-BEISPIEL = webapp.gui-micro
+BEISPIEL = webapp.GUI-MICRO
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-NANOS
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0300
-SYMBOLISCHE ERKENNUNG = -nanos
+SYMBOLISCHE ERKENNUNG = -NANO
 BEFEHLSZEILEN-EINGABE = »[~nano manage cache~]«
 FUNKTION = SUBSTRUKTUR-MANAGEMENT (CACHE, TEMP-DATEN)
 INFO = MUTTER-EBENE – VERWALTET MEHRERE MICROS
-BEISPIEL = temp.cache-nano
+BEISPIEL = temp.CACHE-NANO
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-NODES
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0400
-SYMBOLISCHE ERKENNUNG = -nodes
+SYMBOLISCHE ERKENNUNG = -NODE
 BEFEHLSZEILEN-EINGABE = »[~node decide route~]«
 FUNKTION = HAUPTCONTROLLER – ENTSCHEIDUNGSPUNKT IM NETZWERK
 INFO = VATER-EBENE – STEURT NANOS UND MICROS
-BEISPIEL = router.network-node
+BEISPIEL = router.NETWORK-NODE
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0500
-SYMBOLISCHE ERKENNUNG = -core
-BEFEHLSZEILEN-EINGABE = »[~core execute main~]«
+SYMBOLISCHE ERKENNUNG = -CORE
+BEFEHLSZEILEN-EINGABE = »[~CORE EXEXUTE PROGRAMM~]«
 FUNKTION = AUSFÜHRENDER TEIL – PROGRAMMLOGIK, PROZESSE
 INFO = GROßVATER-EBENE – ÜBERGEORDNETE STEUERUNG
-BEISPIEL = kernel.system-core
+BEISPIEL = kernel.SYSTEM-CORE
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE-L
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0501
-SYMBOLISCHE ERKENNUNG = -lcore
+SYMBOLISCHE ERKENNUNG = -LCORE
 BEFEHLSZEILEN-EINGABE = »[~lcore direct hardware~]«
 FUNKTION = LOW-LEVEL CORE – DIREKTE HARDWARE-STEUERUNG
 INFO = KRITISCHE EBENE – FEHLER HIER SIND HARDWARE-FEHLER
-BEISPIEL = driver.gpu-lcore
+BEISPIEL = driver.GPU-LCORE
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE-V
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0502
-SYMBOLISCHE ERKENNUNG = -vcore
-BEFEHLSZEILEN-EINGABE = »[~vcore render frame~]«
+SYMBOLISCHE ERKENNUNG = -VCORE
+BEFEHLSZEILEN-EINGABE = »[~VCORE RENDER FRAMES~]«
 FUNKTION = VISUELLER CORE – RENDERING, GUI, COMPOSITING
 INFO = GRAFIK- UND OBERFLÄCHENEBENE
-BEISPIEL = ui.desktop-vcore
+BEISPIEL = ui.DESKTOP-VCORE
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE-F
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0503
-SYMBOLISCHE ERKENNUNG = -fcore
+SYMBOLISCHE ERKENNUNG = -FCORE
 BEFEHLSZEILEN-EINGABE = »[~fcore set frequency~]«
 FUNKTION = FREQUENZ-CORE – TIMING, TAKTUNG, SYNCHRONISATION
 INFO = ZEITKRITISCHE EBENE – TAKTGEBER FÜR SYSTEM
-BEISPIEL = timer.system-fcore
+BEISPIEL = timer.SYSTEM-FCORE
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE KLASSE = DATEITYPEN-IDENTIFIKATION-ORGANISATOR-CORE-M
 
-INFO-ID = DATEITYPEN
 TYP-KENNUNG = 0x0504
-SYMBOLISCHE ERKENNUNG = -mcore
+SYMBOLISCHE ERKENNUNG = -MCORE
 BEFEHLSZEILEN-EINGABE = »[~mcore manage memory~]«
 FUNKTION = MEMORY-CORE – SPEICHERVERWALTUNG, ALLOKATION
 INFO = SPEICHER- UND RESSOURCENMANAGEMENT
-BEISPIEL = alloc.system-mcore
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-VALIDIERUNGSPROTOKOLL (SYSTEMWEIT):
-1. MAGIC-NUMBER "PYLO" PRÜFEN (0x00–0x03)
-2. TYP-KENNUNG VERGLEICHEN (0x04–0x05)
-3. OWNER-SIGNATUR (Þ7F3A) VERIFIZIEREN (0x10–0x1F)
-4. CRC32 PRÜFSUMME (ENDE DER DATEI) VALIDIEREN
-5. AIMS/DIMS-INTEGRITÄTSSCAN DURCHFÜHREN
-----------------------------------------------------------------------
-        DATUM = [17:30:00|FR 16 JAN 2026] MARKENBRANDT
-        PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUKUNFT
-----------------------------------------------------------------------
-####################### ENDE DER DATEITYPEN ##########################
+BEISPIEL = alloc.SYSTEM-MCORE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# VALIDIERUNGSPROTOKOLL (SYSTEMWEIT):
+# 1. MAGIC-NUMBER "PYLO" PRÜFEN (0x00–0x03)
+# 2. TYP-KENNUNG VERGLEICHEN (0x04–0x05)
+# 3. OWNER-SIGNATUR (þþ) VERIFIZIEREN (0x10–0x1F)
+# 4. CRC32 PRÜFSUMME (ENDE DER DATEI) VALIDIEREN
+# 5. KKIS-INTEGRITÄTSSCAN DURCHFÜHREN
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [17:30:00|FR 16 JAN 2026] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUKUNFT
+### ==== ##### == # === ENDPUNKT DATEITYPEN ### === # == ##### === ###

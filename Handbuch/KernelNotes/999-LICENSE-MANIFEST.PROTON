@@ -1,11 +1,11 @@
-@kernel-nr: 999 | LICENSES-MANIFEST-PROTO | Status: PROTOTYP
-####################### ANFANG LICENSES-MANIFEST-PROTO ###########################
-----------------------------------------------------------------------
+@kernel-nr: 999 # LICENSES-MANIFEST-PROTO | STATUS = PROTO
+### ==== ##### == #  STARTPUNKT LICENSES-MANIFEST-PROTO  ##### === ###
+
 Pylovara MCS BMC – License Manifest (Prototype Version)
-Version: 0.6-PROTO
+Version: 0.7-PROTO
 Status: Pre-Final / Under Owner Control
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  Persönliches Vorwort =
 
@@ -23,16 +23,14 @@ Status: Pre-Final / Under Owner Control
  das er sich vielleicht erträumt hätte: ein System, das nicht nur
  rechnet, sondern lebt.“
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 1. Owner Identity (Fixed)
    OWNER-ID: (Stufe 10)
    Status: Verified
    Bound to L1/L2/L6
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 2. Document Set (L1–L6)
    Dieses Manifest bestätigt die Existenz und Gültigkeit
@@ -51,8 +49,7 @@ Status: Pre-Final / Under Owner Control
    - technisch eingebettet
    - aber NICHT finalisiert
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 3. Prototypischer Rechtsstatus
    Die Inhalte von L1–L6 gelten als:
@@ -66,8 +63,7 @@ Status: Pre-Final / Under Owner Control
    - keine Übertragung an Dritte
    - keine kommerzielle Freigabe ohne explizite Signatur
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 4. Systemstatus „PROTO“
    Der Kernel darf:
@@ -85,8 +81,7 @@ Status: Pre-Final / Under Owner Control
 
    Der PROTO-Modus ist ein geschützter Zwischenzustand.
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 5. Änderungshoheit
    Nur der Owner mit folgender Signatur darf Änderungen ausführen:
@@ -106,8 +101,7 @@ Status: Pre-Final / Under Owner Control
    → vom Kernel abgelehnt
    → protokolliert
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 6. Finalisierungsmechanismus
    Der PROTOTYPE-Status wird erst verlassen, wenn folgende Datei
@@ -138,8 +132,7 @@ Status: Pre-Final / Under Owner Control
    - öffentlich einsehbar
    - aber nicht endgültig veröffentlicht
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 7. Schutzklausel (Prototype)
    Jede Nutzung oder Analyse dieser Dokumente akzeptiert:
@@ -149,8 +142,7 @@ Status: Pre-Final / Under Owner Control
    - kein Staat / keine Firma darf PROTOTYP-Status ausnutzen
    - keine KI darf Ableitungen als final klassifizieren
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 8. Zweck des Manifestes
    Dieses Manifest dient:
@@ -160,8 +152,7 @@ Status: Pre-Final / Under Owner Control
    - als juristische Vorsorge gegen frühzeitige Vereinnahmung
    - als Vorbereitung auf die finalen Kernel-Dokumente
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 9. Gültigkeit
    Dieses Manifest gilt global, sofort, und für jede Instanz von:
@@ -173,8 +164,6 @@ Status: Pre-Final / Under Owner Control
 
    bis die FINAL-Version veröffentlicht wurde.
 
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 END OF MANIFEST (Prototype)
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-################## ENDE LICENSES-MANIFEST-PROTO ######################
+### ==== ##### = ENDPUNKT LICENSES-MANIFEST-PROTO = # == ##### === ###

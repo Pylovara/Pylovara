@@ -1,6 +1,6 @@
 @kernel-nr: 51 # Statische Energie-Matrix | STATUS = Ŋ
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  Materialien:
 
@@ -51,9 +51,17 @@
     Carbon nutzt, wird die Energie des Schlags fast perfekt
     entlang der Fasern geleitet.
 
-    Vorteil: Es hat fast keine Wärmeausdehnung. Dein Takt bleibt
+    Vorteil: Es hat fast keine Wärmeausdehnung. Takt bleibt
     also im Sommer wie im Winter auf die Nanosekunde gleich.
 
 ----------------------------------------------------------------------
-#################### Ende der MIT-Taktgeber ##########################
-
+SB | Name                  | Bedeutung                     | Verbraucht Byte? | Kontext-Beispiel
+---|-----------------------|-------------------------------|------------------|---------------------
+»  | Aktionsdraht-Start    | Impuls-Trigger / Nerven-Start | Ja (normal) / Nein (persistent) | »['exec ...']
+«  | Aktionsdraht-Ende     | Abschluss / Synapse           | Ja               | ...«««T1
+¤  | Wahrheit-Schaltstelle | Nach-Entscheidungs-Hub        | Nein             | -·¤= / -··¤›
+¶  | Sentiator-wenn-kann   | Bedingungsöffner              | Nein             | ¶ -· [...]
+·  | Workspace A           | Primärer Pfad                 | Nein             | -·
+±  | Feed führend/tragend  | Daten-Cache-Bindung           | Nein             | ( )± ±
+ſ  | Regel der Reinheit    | Cleanup / Purge               | Nein             | ſ -· [~PROZESS BEENDEN~]
+### ==== ##### == # === ### =============== ### === # == ##### === ###

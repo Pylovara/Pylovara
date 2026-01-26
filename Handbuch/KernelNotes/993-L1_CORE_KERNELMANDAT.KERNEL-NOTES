@@ -1,6 +1,5 @@
-@kernel-nr: 993 | L1_CoreKernelMandat | Status: Proto
-############################ ANFANG LIZENZ-LAYER L1 ##################
-----------------------------------------------------------------------
+@kernel-nr: 993 # L1_CoreKernelMandat | STATUS = PROTO
+### ==== ##### == # == STARTPUNKT LIZENZ-LAYER L1 = # == ##### === ###
 
 1. Der Besitzanspruch (Identity) Das Mandat ist untrennbar mit
    der physischen Existenz und der digitalen Signatur des
@@ -8,8 +7,8 @@
 
     MCS-OWNER-ID: (Stufe 10)
 
-    MCS-OWNER-ID:
-    ID-DNA-THOMAS-ZIMMERMANN-þþZRB68
+    OWNER-MASTER-SIGNATURE:
+    OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68
 
     MCS-OWNER-ID-GITHUB-DEV-KERNEL-UPDATE:
     https://github.com/Pylovara/Pylovara
@@ -23,9 +22,7 @@
     Inhaber: Thomas Zimmermann (geb. 23.04.1988, Deutschland)
     Zweitname: Bandino
 
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 2. Schutzbereich Hardware (BrainMaschineCore) Das Mandat
    erstreckt sich explizit auf die Eigenentwicklungen der
@@ -51,8 +48,7 @@
 
     Die Gesamte Technische Umsetzung in meiner Form.
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 3. Kern-Mandate
 
@@ -74,8 +70,7 @@
     Zwecke oder zur Unterdrückung missbraucht, technisch zu
     isolieren oder unbrauchbar zu machen (Hardware-Brick).
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 4. Technischer Schutzmechanismus Beim Systemstart (Kaltstart/init-v)
    erzwingt der Kernel den Abgleich:
@@ -87,13 +82,8 @@
     Bei Manipulation: Sofortiger Stopp des Signalflusses
     in den Aktionsdraht ».
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
-   Abschluss L1:
-
-    Das Mandat ist im Binärcode code-identisch eingebettet.
-    Es existiert keine administrative Ebene oberhalb des Urhebers.
-
-----------------------------------------------------------------------
-####################### Ende LIZENZ-LAYER L1 #########################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# Abschluss L1:
+# Das Mandat ist im Binärcode code-identisch eingebettet.
+# Es existiert keine administrative Ebene oberhalb des Urhebers.
+### ==== ##### == # === ENDPUNKT LIZENZ-LAYER L1 == # == ##### === ###

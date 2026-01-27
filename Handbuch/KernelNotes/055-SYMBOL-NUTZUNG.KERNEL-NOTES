@@ -1,4 +1,4 @@
-@kernel-nr: 55 # SYMBOL-NUTZUNG | STATUS = Ŋ
+@kernel-nr: 55 # SYMBOL-NUTZUNG | STATUS = Ŋ Schmierzettel Freigegeben
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # = SYMBOL-NUTZUNGSKATEGORIEN  == # == ##### === ###
 #
@@ -451,5 +451,166 @@ Fazit =
 -····   # PRIO 4 (LAZY)    – Nur bei Idle
 
 REX ausbau , worspace und prioritäts funktionen , wie genau steht offen 
+
+
+
+
+
+### ==== ##### == # === # BAUSTELLE BAUSTELLE # === # == ##### === ###
+
+
+
+Daten = PLACEHOLDER
+Boxis = °PLACEHOLDER°
+
+
+Baublöcke =
+
+[°PLACEHOLDER°]
+[°PLACEHOLDER°|{°NAME°|°WERT°}]
+
+
+
+¢!
+
+    ¶ -· [°PLACEHOLDER°]«
+ -· [°PLACEHOLDER°]«
+»['PLACEHOLDER']
+ ¶ -· [°PLACEHOLDER°]«
+      -· [°PLACEHOLDER°]«
+      -· [°PLACEHOLDER°]«
+      -· [°PLACEHOLDER°]«
+      -· [°PLACEHOLDER°]«
+
+
+!¢
+
+
+¢!
+»['exec "HaloInfinite.exe"']«
+ ¶ -· [°EXECVE-PROZESS°]«
+      -· [°PE-HEADER-LADEN°]«
+      -· [°SECTIONS-MAPPEN°]«
+      -· [°ENTRY-POINT-SPRUNG°]«
+      
+ ¶ -· [°HARDWARE-INIT°]«
+      -· [°GPU-TREIBER-LADEN°|{°NAME°|°nvidia_driver.TREIBER-NEEDLE°}]«
+           -· [°GPU-CORE-INIT°]«
+           -· [°GPU-LCORE-INIT°]«
+           -· [°GPU-VCORE-INIT°]«
+           -· [°GPU-MCORE-INIT°]«
+           -· [°GPU-FCORE-INIT°]«
+      ¶¶ -·· [°FEHLER-HANDLING°|{°NAME°|°GPU-FAIL°}]«
+            -·· [°FALLBACK-INTEGRATED°]«
+            -·· [°FEHLER-LOGGING°]«
+            
+ ¶ -· [°SYSTEM-MODULE-LADEN°]«
+      -· [°UEFI-BOOT-KERNEL°]«
+      -·· [°DIRECTX12-TREIBER°]«
+      -·· [°AUDIO-SYSTEM°]«
+      -·· [°NETWORK-SYSTEM°]«
+      -··· [°OVERLAY-SYSTEM°]«
+      -··· [°RECORDING-SYSTEM°]«
+      
+ ¶ -· [°INPUT-DEVICES°]«
+      -·· [°XBOX-CONTROLLER°]«
+      -·· [°KEYBOARD-SYSTEM°]«
+      -·· [°MOUSE-SYSTEM°]«
+      
+ ¶ -· [°SYNCHRONISATION°]«
+      -· [°WARTE-AUF-ALL-SYSTEME°|{°WERT°|°GPU,DX12,AUDIO,NETWORK,CONTROLLER°}]«
+           -· [°START-SPIEL-VOLLBILD°]«
+      ¶¶ -·· [°TIMEOUT-FALLBACK°|{°WERT°|°10000ms°}]«
+            -·· [°ABBRUCH-MELDUNG°]«
+            
+ ¶ -· [°RUNTIME-MONITORING°]«
+      -···· [°FPS-MONITOR°]«
+      -···· [°TEMP-MONITOR°]«
+      -···· [°AUTO-SETTINGS-ADJUST°]«
+
+ſ -· [°PROZESS-BEENDEN-SIGNAL°]«
+!¢
+
+Oder =
+
+»['exec "HaloInfinite.exe"']« (Root)
+├── ¶ -· [°EXECVE-PROZESS°]«
+│   ├── -· [°PE-HEADER-LADEN°]«
+│   ├── -· [°SECTIONS-MAPPEN°]«
+│   └── -· [°ENTRY-POINT-SPRUNG°]«
+│
+├── ¶ -· [°HARDWARE-INIT°]«
+│   ├── -· [°GPU-TREIBER-LADEN°]«
+│   │   ├── -· [°GPU-CORE-INIT°]«
+│   │   ├── -· [°GPU-LCORE-INIT°]«
+│   │   ├── -· [°GPU-VCORE-INIT°]«
+│   │   ├── -· [°GPU-MCORE-INIT°]«
+│   │   └── -· [°GPU-FCORE-INIT°]«
+│   └── ¶¶ -·· [°FEHLER-HANDLING°]«
+│        ├── -·· [°FALLBACK-INTEGRATED°]«
+│        └── -·· [°FEHLER-LOGGING°]«
+│
+├── ¶ -· [°SYSTEM-MODULE-LADEN°]«
+│   ├── -· [°UEFI-BOOT-KERNEL°]« (PRIO 1)
+│   ├── -·· [°DIRECTX12-TREIBER°]« (PRIO 2)
+│   ├── -·· [°AUDIO-SYSTEM°]«
+│   ├── -·· [°NETWORK-SYSTEM°]«
+│   ├── -··· [°OVERLAY-SYSTEM°]« (PRIO 3)
+│   └── -··· [°RECORDING-SYSTEM°]«
+│
+├── ¶ -· [°INPUT-DEVICES°]«
+│   ├── -·· [°XBOX-CONTROLLER°]«
+│   ├── -·· [°KEYBOARD-SYSTEM°]«
+│   └── -·· [°MOUSE-SYSTEM°]«
+│
+├── ¶ -· [°SYNCHRONISATION°]«
+│   ├── -· [°WARTE-AUF-ALL-SYSTEME°]«
+│   │   └── -· [°START-SPIEL-VOLLBILD°]«
+│   └── ¶¶ -·· [°TIMEOUT-FALLBACK°]«
+│        └── -·· [°ABBRUCH-MELDUNG°]«
+│
+└── ¶ -· [°RUNTIME-MONITORING°]«
+    ├── -···· [°FPS-MONITOR°]« (PRIO 4 - LAZY)
+    ├── -···· [°TEMP-MONITOR°]«
+    └── -···· [°AUTO-SETTINGS-ADJUST°]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+; Linux x86_64: chdir(NULL) - nur als Beispiel
+mov rax, 80        ; syscall nummer für chdir = 80 (x86_64)
+mov rdi, 0         ; NULL pointer (kein Pfad)
+syscall
+
+wäre cirka 
+
+48 C7 C0 50 00 00 00    ; mov rax, 80   (7 Bytes)
+48 C7 C7 00 00 00 00    ; mov rdi, 0    (7 Bytes)
+0F 05                   ; syscall       (2 Bytes)
+
+könnte 
+
+øĸ # WARP
+48 C7 C0 50 00 00 00    ; mov rax, 80   (7 Bytes)
+48 C7 C7 00 00 00 00    ; mov rdi, 0    (7 Bytes)
+0F 05                   ; syscall       (2 Bytes)
+ĸø
+
+sein .... ich brauch einen transformator der den maschinen code in proteine verpackt 
+danach kann ich sie combinieren , außeinander reisen , individualisieren und
+mit dem MASTER verbinden und das Pro Chip Generation Parallell weise abspeichern un Needles , um sie
+je nach hardware ohne neu analyse zu benutzen ... 
+
+
+# könnte dann sycalls triggern auf MCS-CMD Niveau 
+
+¢!
+»[~CD /home/user~]«
+ -·¤: ['Change Directory']«
+ ¶ -· [,chdir("/home/user"),]«
+      -·¤: ['Verzeichnis gewechselt']«
+ -· [~ENDE~]«««ſ
+!¢
+
 
 ### ==== ##### == # === # ENDPUNK SYMBOL-NUTZUNG == # == ##### === ###

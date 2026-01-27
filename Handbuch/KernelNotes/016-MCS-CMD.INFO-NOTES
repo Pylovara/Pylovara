@@ -1,45 +1,18 @@
-##################################################################################
- 016-MCS-CMD.INFO-NOTES |
-##################################################################################
+ 016-MCS-CMD.INFO-NOTES 
+#====================================================================#
 @info-id: MCS-CMD-DEV
-----------------------------------------------------------------------
- ↓ STANDARTLAYOUT ↓
-----------------------------------------------------------------------
- MCS-KERN-KLASSE = KERN
- FUNKTION = OPTION
- SYMBOLISCHE DEKLARATION = CMD
- SYMBOL IN WORTEN = COMMAND
- INFO = BASIS-BEFEHLSKLASSE FÜR ALLE MCS-OPERATIONEN
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- MCS-KERN-KLASSE = KERN-SPEZIAL
- FUNKTION = SPEZIALOPERATIONEN
- SYMBOLISCHE DEKLARATION = ~CMD~
- SYMBOL IN WORTEN = TILDE-COMMAND-TILDE
- INFO = SPEZIELLE SYSTEMBEFEHLE MIT ERWEITERTER FUNKTIONALITÄT
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- MCS-KERN-KLASSE = KERN-OPTIONEN
- FUNKTION = OPTIONSVERWALTUNG
- SYMBOLISCHE DEKLARATION = CMD O
- SYMBOL IN WORTEN = COMMAND OPTION
- INFO = VERWALTET SYSTEMOPTIONEN UND KONFIGURATIONEN
-----------------------------------------------------------------------
-----------------------------------------------------------------------
- MCS-KERN-KLASSE = SYSTEM
- FUNKTION = SYSTEMSTEUERUNG
- SYMBOLISCHE DEKLARATION = SYS
- SYMBOL IN WORTEN = SYSTEM
- INFO = KERNEL- UND SYSTEMWEITE OPERATIONEN
-----------------------------------------------------------------------
-######################################################################
+#====================================================================#
+
+ DIESER BEREICH IST LEER
+
+#====================================================================#
 @info-id: MCS-CMD
 
  DAS VOLLSTÄNDIGE ANTRIGGERBARE BEFEHLSREGISTER AUS DEM HAUSE PYLOVARA
 
-######################################################################
+#====================================================================#
 @info-id: MCS-CMD-BASTELLE
-----------------------------------------------------------------------
+#====================================================================#
 
  # ERKLÄRUNG REGISTER-TYP
  # HIER STEHEN ALLE VERFÜGBAREN MCS-CMD BEFEHLE DIE AKTUELL
@@ -71,9 +44,6 @@
  müssen direkt auf die Kernel-Funktionen
  für Prozess-Management gemappt werden.
 
-----------------------------------------------------------------------
-######################################################################
-@info-id: MCS-CMD-REGISTER-BAUSTELLE
 ----------------------------------------------------------------------
  REGISTER-SPEZIAL-KLASSE = UND-DAS
  SYMBOLE = ¬
@@ -299,7 +269,7 @@
  # ALS DATENTRÄGER FÜR WEITERE PROZESSE, WEITERFÜHRUNGEN
  # ODER ERWEITERUNGEN DIENEN
 ----------------------------------------------------------------------
-######################################################################
+#====================================================================#
 
 
 

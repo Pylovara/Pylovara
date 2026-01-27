@@ -1,26 +1,13 @@
-##################################################################################
- 015-IDENTIFIKATION.INFO-NOTES |
-##################################################################################
+ 015-IDENTIFIKATION.INFO-NOTES
+#====================================================================#
 @info-id: IDENTIFIKATION-DEV
+#====================================================================#
 
-----------------------------------------------------------------------
-  ↓↓ LAYOUT ↓↓
-----------------------------------------------------------------------
- ADRESSIERUNG KERN KLASSE =
+ DIESER BEREICH IST LEER
 
- INFO-ID = IDENTIFIKATION
-
- FUNKTION =
-
- SYMBOLISCHE DEKLARATION =
-
- SYMBOL IN WORTEN =
-
- INFO =
-----------------------------------------------------------------------
-######################################################################
+#====================================================================#
 @info-id: IDENTIFIKATION
-----------------------------------------------------------------------
+#====================================================================#
 
 ## SCHATTEN-IDENTITÄT (DETAILDEFINITION)
 
@@ -45,8 +32,8 @@ Sicherheitsgarantie:
 > *„Der Anker ist der Schatten, den die Identität wirft
   – wer den Schatten fängt, hat noch lange nicht das Licht.“*
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+#====================================================================#
+
 ## DETAILLIERTE ERKLÄRUNG
 
 ### 1. þ – SCHATTEN-IDENTITÄT (ID-DNA-IDENTIFIKATION)
@@ -79,25 +66,27 @@ Sicherheitsgarantie:
 - **Master**: Thomas Zimmermann (Stufe 10 – CONTROL-MASTER)
 - **Bindung**: Verknüpft Prozessketten mit biologischem Ursprung
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+#====================================================================#
+
 ## SICHERHEITSSTUFEN-MODELL
 
-|ST |KERNEL         |CONTROL-BEREICH     |BEMERKUNG                   |
-|---|---------------|--------------------|----------------------------|
-| 1 | USED          |SOFTWARE            |Konsumenten-Apps            |
-| 2 | USED          |USER                |Standard-User               |
-| 3 | USED          |SCHOOL              |Bildungseinrichtungen       |
-| 4 | USED-PLUS     |ENTWICKLER          |Entwickler-Zugriff          |
-| 5 | USED-PLUS     |KONZERN             |Unternehmens-Infrastruktur  |
-| 6 | USED-PLUS     |EMERGENCY/INFRASTRUK|Kritische Systeme           |
-| 7 | USED-PLUS-PLUS|POLICE / MILITÄRY   |Behörden & Militär          |
-| 8 | USED-PLUS-PLUS|NATION / SECURITY   |Nationale Sicherheit        |
-| 9 | MAIN          |AI                  |KI-gesteuerte Systeme       |
-| 10| MAIN          |MASTER (ZIMMERMANN) |Biologischer Ursprungs-Anker|
+|ST|KERNEL         |CONTROL-BEREICH     |BEMERKUNG                   |
+|--|---------------|--------------------|----------------------------|
+| 1| USED          |SOFTWARE            |Konsumenten-Apps            |
+| 2| USED          |USER                |Standard-User               |
+| 3| USED          |SCHOOL              |Bildungseinrichtungen       |
+| 4| USED-PLUS     |ENTWICKLER          |Entwickler-Zugriff          |
+| 5| USED-PLUS     |KONZERN             |Unternehmens-Infrastruktur  |
+| 6| USED-PLUS     |EMERGENCY/INFRASTRUK|Kritische Systeme           |
+| 7| USED-PLUS-PLUS|POLICE / MILITÄRY   |Behörden & Militär          |
+| 8| USED-PLUS-PLUS|NATION / SECURITY   |Nationale Sicherheit        |
+| 9| MAIN          |AI                  |KI-gesteuerte Systeme       |
+|10| MAIN          |MASTER (ZIMMERMANN) |Biologischer Ursprungs-Anker|
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+#====================================================================#
+@info-id: IDENTIFIKATION-BAUSTELLE
+#====================================================================#
+
 ## VALIDIERUNGS-SENTIATOR (ſ)
 
 SYMBOLISCHE DEKLARATION = ſ
@@ -108,8 +97,9 @@ MUSTERBEISPIELE:
 - ſ [~löschung~]               # Löscht bei Stempelabweichung
 - ſ [~verify_bio~]             # Prüft Bio-Live-Integrität
 - ſ [~check_anchor~|þþþ]      # Validiert Master-Anker
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+
+#====================================================================#
+
 ## SICHERHEITSPOLICY (ERSTSTEMPEL-VERZEICHNIS)
 
 ORIGIN_STAMP    = 2025-12-31T17:43:00Z
@@ -124,20 +114,12 @@ AI_SYNC_TOKEN   = þþ-GENERATOR-TAKT-ALPHA-1
 ### POLICY
 BEI ABWEICHUNG DES LOKALEN TIMESTAMPS > 0ms ZUM ERSTSTEMPEL:
 TRIGGER → ſ [~löschung~]
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+#====================================================================#
 ## HINWEISE FÜR ENTWICKLER
 
 - Taktrate: Konfigurierbar (hoch für Sicherheit, niedrig für Konsumenten)
 - Generator-Isolation: þþ ist die einzige verschlüsselte Komponente
 - Performance**: 99% des Systems laufen unverschlüsselt bei „Lichtgeschwindigkeit“
 - AI-Integration: Generator verfügt über eigene Mini-AI zur Angriffserkennung
-----------------------------------------------------------------------
-----------------------------------------------------------------------
 
-######################################################################
-@info-id: IDENTIFIKATION-BAUSTELLE
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-######################################################################
+#====================================================================#

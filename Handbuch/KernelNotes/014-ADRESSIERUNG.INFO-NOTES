@@ -1,26 +1,15 @@
-######################################################################
- 014-ADRESSIERUNG.INFO-NOTES |
-######################################################################
+ 014-ADRESSIERUNG.INFO-NOTES
+#====================================================================#
 @info-id: ADRESSIERUNG-DEV
-----------------------------------------------------------------------
- ↓ STANDARDLAYOUT ↓
-----------------------------------------------------------------------
+#====================================================================#
 
- ADRESSIERUNGS-SYMBOL = =
- FUNKTION = VERBINDUNGSOPERATOR
- SYMBOL IN WORTEN = GLEICHZEICHEN
- INFO = VERKNÜPFT PROTEINE/PROTONEN MIT ZIELREFERENZEN ODER DIRIGENTEN
+ DIESER BEREICH IST LEER
 
- BEISPIEL:
- »['Befehl'|{Parameter|Wert}]« = $Zielreferenz
- »['Daten'|{Format|JSON}]« = §Dirigent
-
-----------------------------------------------------------------------
-######################################################################
+#====================================================================#
 @info-id: ADRESSIERUNG
-----------------------------------------------------------------------
+#====================================================================#
 
-ERKLÄRUNG ADRESSIERUNG:
+ ERKLÄRUNG =
 
  DIE ADRESSIERUNG DIENT ALS DIREKTER KNOTENPUNKT ZUR
  IDENTIFIKATION UND ZUORDNUNG VON ZIELREFERENZEN ($) UND
@@ -61,31 +50,7 @@ ERKLÄRUNG ADRESSIERUNG:
  = §Netzwerk            # Sendet ins Netzwerk
  = §Email               # Sendet als E-Mail
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-
- VERWENDUNGSBEISPIELE:
-
- # INTERNE ADRESSIERUNG
- ¢|
- »['compile'|{file|program.mcs}]« = $Compiler
- »['execute'|$Compiler]« = $Prozess-ID
- ¢|
-
- # EXTERNE ADRESSIERUNG
- ¢|
- »['send'|{data|Sensorwerte}]« = §Netzwerk
- »['update'|{version|2.7}]« = §BuildNr
- ¢|
-
- # KOMBINIERTE ADRESSIERUNG
- ¢|
- »['process'|{input|Daten}]« = $Compositoren
- »['output'|$Compositoren]« = §InternetAdresse
- ¢|
-
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+#====================================================================#
 
  HINWEISE:
 
@@ -99,13 +64,5 @@ ERKLÄRUNG ADRESSIERUNG:
     ZWISCHEN INTERNER VERARBEITUNG UND EXTERNER KOMMUNIKATION.
 
  4. BEI MEHRFACHADRESSE/IERUNG WERDEN DATEN PARALLEL GESENDET.
-----------------------------------------------------------------------
 
-######################################################################
-@info-id: ADRESSIERUNG-BAUSTELLE
-
-----------------------------------------------------------------------
-
-
-----------------------------------------------------------------------
-######################################################################
+#====================================================================#

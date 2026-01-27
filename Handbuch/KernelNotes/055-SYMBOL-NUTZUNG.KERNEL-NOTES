@@ -79,6 +79,124 @@
 
 !¢
 
+
+¢!
+# ======================================================
+# SYSTEM-SCHALTUNG: SPIELSTART "Halo Infinite" (Windows)
+# Zeigt Hardware-Initialisierung, Treiber-Loading,
+# und parallele Resource-Loading mit Prioritäten
+# ======================================================
+
+»['exec "C:\Games\HaloInfinite\halo.exe"']«
+ -·¤: ['Spielstart initialisiert']«
+
+# ================== PHASE 1: BINARY LOAD & VALIDATION ==================
+¶ -· ['execve("./halo.exe", argv, env)']«
+    # ELF/EXE Loading Pipeline
+    –·¤: ['Lädt PE/EXE Header']«
+         »[~CHECK SIGNATURE "MZ"~]«
+          ¶ »[× VALIDE ×]«
+               -·¤= »["(FF:EXE-VALID)±TRUE±"]«
+          ¶¶ »[× INVALIDE ×]«
+               -· »[~ABBRUCH "Invalid EXE"~]«
+
+    -·¤: ['Mapped Sections in RAM']«
+         »[~VIRTUAL-ALLOC BASE=0x140000000 SIZE=0x2000000~]«
+         -·¤= »["(FF:EXE-BASE)±0x140000000±"]«
+         -··¤= »["(FF:EXE-SIZE)±0x2000000±"]«
+
+    -·¤: ['Springt in Entry Point']«
+         »[~JUMP-TO ±FF:EXE-BASE± + 0x1000~]«
+         -·¤: ['Entry Point erreicht']«
+
+# ================== PHASE 2: HARDWARE-INITIALISIERUNG ==================
+¶ -·[~RUN-GPU~]«
+    # GPU-Treiber Loading mit Priority-Stufen
+    ¶ –··¤› »['exec /Pylovara/System/Module/nvidia_driver.TREIBER-NEEDLE']«
+             # GPU-CORE Initialisierungskette (sequentiell mit Timeouts)
+             ¶ -·· [~run ast nvidia.GPU-CORE~]«««Ω
+                   ¶ -·· [~run nvidia.GPU-LCORE~]«««T100
+                         ¶ -·· [~run nvidia.GPU-VCORE~]«««T150
+                               ¶ -·· [~run nvidia.GPU-MCORE~]«««T200
+                                     ¶ -·· [~run nvidia.GPU-FCORE~]«««T250
+                                           -··¤= »["(TF:GPU-READY)±TRUE±"]«
+                                           »['GPU initialisiert: RTX 4090']«
+
+    # Fallback bei Fehler
+    ¶¶ -·· »[~MACH DATEITYPE-FLAG ERROR~]«
+           ¶ -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLERBERICHTE/GPU_FAIL.log~]«
+                 -··¤= »["(TF:GPU-FAIL)±TRUE±"]«
+                 ¶ »[~FALLBACK-TO INTEGRATED~]«
+                      -·· »['exec /Pylovara/System/Module/intel_uhd.TREIBER-NEEDLE']«
+
+# ================== PHASE 3: SYSTEM-MODULE PARALLEL ==================
+# Hochprioritäre Module (PRIO 1: -·)
+-· »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+     ¶ -·· ['run /SPI/Runtime Service']«««Ω
+           -·¤= »["(TF:UEFI-READY)±TRUE±"]«
+
+-· »['exec /Pylovara/System/Module/directx12.treiber-needle']«
+     ¶ -·· ['dx12.init']«
+           -·¤= »["(TF:DX12-READY)±TRUE±"]«
+           ¶ »[× BIND-TO ±TF:GPU-READY± ×]«
+                -· »['dx12.bind_gpu']«
+
+# Mittelprioritäre Module (PRIO 2: -··)
+-·· »['exec /Pylovara/System/Module/audio.system-kernel']«
+      -··¤= »["(TF:AUDIO-READY)±TRUE±"]«
+
+-·· »['exec /Pylovara/System/Module/network.system-kernel']«
+      ¶ »[~CONNECT-TO "xbox-live"~]«
+           -··¤= »["(TF:NETWORK-READY)±TRUE±"]«
+
+# Niedrigprioritäre Module (PRIO 3: -···)
+-··· »['exec /Pylovara/System/Module/overlay.system-kernel']«  # Discord/GameBar
+       -···¤= »["(TF:OVERLAY-READY)±TRUE±"]«
+
+-··· »['exec /Pylovara/System/Module/recording.system-kernel']« # ShadowPlay
+       -···¤= »["(TF:RECORDING-READY)±TRUE±"]«
+
+# ================== PHASE 4: INPUT DEVICES ==================
+# Parallele Input-Initialisierung
+-· »['exec /Pylovara/System/Module/xbox-controller.treiber-needle']«
+     ¶ -·· ['controller.vibration_init']«
+           -·¤= »["(TF:CONTROLLER-READY)±TRUE±"]«
+
+-·· »['exec /Pylovara/System/Module/keyboard.system-kernel']«
+      -··¤= »["(TF:KEYBOARD-READY)±TRUE±"]«
+
+-·· »['exec /Pylovara/System/Module/mouse.system-kernel']«
+      ¶ »[× DPI = 1600 ×]«
+           -··¤= »["(TF:MOUSE-READY)±TRUE±"]«
+
+# ================== PHASE 5: SYNCHRONISATION ==================
+»['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
+ ¶ -· »[~SYNC MATRIX~]«
+      # Warte auf alle TF-READY Feeds
+      ¶ »[× ALL(
+            ±TF:GPU-READY±,
+            ±TF:DX12-READY±, 
+            ±TF:AUDIO-READY±,
+            ±TF:NETWORK-READY±,
+            ±TF:CONTROLLER-READY±
+          ) == TRUE ×]«
+           -· »['echo "Alle Systeme bereit"]'«
+           -· »['exec "C:\Games\HaloInfinite\halo.exe" --fullscreen']«
+      ¶¶ »[× TIMEOUT 10000 ×]«  # 10 Sekunden Timeout
+           -· »[~ABBRUCH "Initialisierung timeout"]'«
+
+# ================== PHASE 6: RUNTIME MONITORING ==================
+# Hintergrund-Monitoring (LAZY PRIO: -····)
+-···· »[~MONITOR FPS~]«
+        ¶ »[× FPS < 60 ×]«
+             -···· »[~ADJUST SETTINGS~]«
+        ¶¶ »[× TEMP > 85 ×]«
+             -···· »[~THROTTLE GPU~]«
+
+ſ -· [~PROZESS BEENDEN~]«  # Nur für Steuerprozess, Spiel läuft weiter
+!¢
+
+
 ¢!
 
 »[~MASTER-HARDWARE-ENUMERATION-CPU~]

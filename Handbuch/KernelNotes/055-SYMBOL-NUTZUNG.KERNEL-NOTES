@@ -1,4 +1,4 @@
-@kernel-nr: 18 # SYMBOL-NUTZUNG | STATUS = Ŋ
+@kernel-nr: 55 # SYMBOL-NUTZUNG | STATUS = Ŋ
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # = SYMBOL-NUTZUNGSKATEGORIEN  == # == ##### === ###
 #
@@ -8,42 +8,77 @@
 
 ### ==== ##### == # === ### PROTOTYP SCHALTUNGEN == # == ##### === ###
 
-¢!
-»['exec <SPIEL>']
-    »[~run intelarc~]«
-     -· »[~prozess gpu-core~]
-         ¶ -· [~run ast intelarc.gpu-core~]«««T1
-              ¶ -· [~run intelarc.gpu-lcore~]«T2
-                   ¶ -· [~run intelarc.gpu-vcore~]«T3
-                        ¶ -· [~run intelarc.gpu-mcore~]«T4
-                             ¶ -· [~run intelarc.gpu-fcore~]«T5
-     ¶¶ -· »[~debugging log to /Pylovara/~]«
 
-     –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
-            ¶ -·· »['run /SPI/Runtime Service']
-     –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
-            ¶ -·· »['']
-     –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
-            ¶ -·· »['']
-     -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
-            ¶ -·· »['']
+
+¢!
+#spickzettel
+»['exec <SPIEL>']
+ ¶ -· ['execve("./wolf3d", argv, env)']
+      –·¤: lädt ELF / EXE
+      -·¤: prüft Header
+      -·¤: mapped Sections
+      -·¤: springt in _start
+
+ ¶ -·[~RUN-GPU~]«
+     ¶ –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.TREIBER-NEEDLE']«
+              ¶ -·· [~run ast intelarc.GPU-CORE~]«««Ω
+                    ¶ -·· [~run intelarc.GPU-LCORE~]«««T1
+                          ¶ -·· [~run intelarc.GPU-VCORE~]«««T2
+                                ¶ -·· [~run intelarc.GPU-MCORE~]«««T3
+                                      ¶ -·· [~run intelarc.GPU-FCORE~]«««T4
+     ¶¶ -·· »[~MACH DATEITYPE-FLAG~]
+            ¶ -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLERBERICHTE~]«
+
+ # STARTET AUF ['exec <SPIEL>']
+ –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+        ¶ -·· ['run /SPI/Runtime Service']«««Ω
+ –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
+        ¶ -·· ['']«««Ω
+        ¶ -·· ['']«
+ –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
+        ¶ -·· ['']«
+ –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
+        ¶ -·· ['']«
+ –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
+        ¶ -·· ['']«
+ –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
+        ¶ -·· ['']«
+ –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
+        ¶ -·· ['']«
+ –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
+        ¶ -·· ['']«
+ –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
+        ¶ -·· ['']«
+ -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
+            ¶ -·· ['']«
 
 »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
- ¶ -· »[~syncronisiere 8taktryhtmus~]«
+ ¶ -· »[~SYNC MATRIX~]«
+
+!¢
+
+¢!
+»[~MASTER-HARDWARE-ENUMERATION-CPU~]
+ ¶ –· [°RESET VECTOR°]
+
+»[~MASTER-HARDWARE-ENUMERATION-RAM~]
+ ¶ –· [°ALLOCATE PHYSICAL MEMORY MAP°]
+ ¶ –· [°LOAD KERNEL IMAGE @ RAM_OFFSET°]
+      ¶ -· [entry_point]
+           ¶ -· [early ASM init]
+           ¶ -· [start_kernel()]
+                ¶ -· [Ħsetup_arch()Ħ] 
+                ¶ -· [setup_memory()]
+                ¶ -· [setup_interrupts()]
+                ¶ -· [setup_timer()]
+                ¶ -· [setup_scheduler()]
+                ¶ -· [setup_syscall_table()]
+
+»[~MASTER-HARDWARE-ENUMERATION-PCI~]
+ ¶ –· [PROBE BUS]
+
+»[~MASTER-HARDWARE-ENUMERATION-GPU~]
+ ¶ –· [DETECTED → DRIVER BIND LATER]
 
 !¢
 

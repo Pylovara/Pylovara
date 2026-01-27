@@ -6,10 +6,9 @@
 #
 ### ==== ##### == # === # STARTPUNK SYMBOL-NUTZUNG  # == ##### === ###
 
+### ==== ##### == # === ### PROTOTYP SCHALTUNGEN == # == ##### === ###
 
 ¢!
-# Beispiel Schaltung
-
 »['exec <SPIEL>']
     »[~run intelarc~]«
      -· »[~prozess gpu-core~]
@@ -54,25 +53,10 @@
 »['record']
  -·¤: ['echo Terminal Aufzeichnung gestartet']«
 »['to /Pylovara/Handbuch/KernelNotes/]
- ¶ -· »[~mach datei -flag~|"8taktidee"
-       ¶ -· »[~send in~]«
-             ¶ -· ['/Pylovara/Handbuch/KernelNotes/']«
-                  ſ -· [~PROZESS BEENDEN~]«
-!¢
-
-¢!
-# Beispiel Schaltung
-
-»[× 1 + 1 ×]
- -·¤= [(1)°°]«
-»[× 2 + 2 ×]
- -··¤= [(2)°°]«
-»[×°(1)° > °(2)°×]
- -···¤= [(3)°°]«
-        ¶ »[°(3)°]
-           -···> ['echo "ALU kann Feed-Zahlen vergleichen: von °(1)° und °(2)° dann °(3)° berechnen"']«
-        ¶¶ »[°(3)°]
-            -···> ['echo "Nope,kann nicht °(1)° und °(2)° auf °(3)° berechnen"']«
+ ¶ -· [~MACH DATEI ¬ -FLAG~|"8taktidee"]«
+      ¶ -· »[~SENDE-ZU~]«
+            ¶ -· ['/Pylovara/Handbuch/KernelNotes/']«
+                 ſ -· [~PROZESS BEENDEN~]«
 !¢
 
 
@@ -106,5 +90,49 @@
                                       ſ -· [~PROZESS BEENDEN~]«
 !¢
 
+### ==== ##### == # = NEUERE BEISPIEL SCHALTUNGEN = # == ##### === ###
+
+¢|
+# 1. 10 MB in Bytes berechnen (ALU-RECHNER)
+»[× 10 · 1024 · 1024 ×]«
+ -·¤= »["(1)±10485760±"]«
+
+# 2. Ergebnis in Feed 1 speichern (CMD-FEED)
+»[~TRANSFER BOXIS ¬ MACH TF 1~|"±10485760±(1)"]«
+
+# 3. Dateigröße mit Feed 1 vergleichen (SENTIATOR-MEHRWERT)
+»[× $file_size > ±WERT±(1) ×]«
+ -··¤= »["is_large"]«
+
+# 4. Wenn größer (SENTIATOR-KANN-IMPULS)
+     ¶ -·· »["is_large"]
+     # 4a. Komprimieren (SHELL-CONTROL)
+           -·· ['gzip "$file_path"']«
+           -·· »["compress_ok"]«
+
+            ¶ »["compress_ok"]
+            # 4b. Pfad erweitern (SHELL-CONTROL)
+               ['file_path="${file_path}.gz"']«
+               -···¤= »["new_path"]«
+
+# 4c. Neuen Pfad in Feed 2 speichern
+»[~TRANSFER BOXIS ¬ MACH FF 2~|"(2)±${file_path}.gz±"]«
+# 5. Wenn nicht größer (SENTIATOR-NICHT-IMPULS)
+ ¶¶ -··> »["is_large"]«««t5
+    -··> »["Datei ist klein, keine Komprimierung nötig."]«««t6
+¢|
+
+¢!
+»[× 1 + 1 ×]
+ -·¤= [°(1)±WERT±°]«
+»[× 2 + 2 ×]
+ -··¤= [°(2)±WERT±°]«
+»[× ±WERT±(1) > ±WERT±(n) ×]
+ -···¤= [°(3)±WERT±°]« 
+        ¶ »[°±WERT±(n)°]
+           -···> ['echo "ALU kann Feed-Zahlen vergleichen: von ±WERT±(1) und ±WERT±(2) dann ±WERT±(3) berechnen"']«
+        ¶¶ »[°±WERT±(n)°]
+            -···> ['echo "Nope,kann nicht ±WERT±(1) und ±WERT±(2) auf ±WERT±(3) berechnen"']«
+!¢
 
 ### ==== ##### == # === # ENDPUNK SYMBOL-NUTZUNG == # == ##### === ###

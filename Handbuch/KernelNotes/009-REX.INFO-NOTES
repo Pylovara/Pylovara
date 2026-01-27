@@ -1,24 +1,52 @@
- 009-WAHRHEIT.INFO-NOTES
+ 009-REX.INFO-NOTES
 #====================================================================#
-@info-id: WAHRHEIT-DEV
+@info-id: REX-DEV
 #====================================================================#
 
- DIESER BEREICH IST LEER
+¢|
+# 1. 10 MB in Bytes berechnen (ALU-RECHNER)
+»[× 10 · 1024 · 1024 ×]«
+ -·¤= »["(1)±10485760±"]«
+
+# 2. Ergebnis in Feed 1 speichern (CMD-FEED)
+»[~TRANSFER BOXIS ¬ MACH TF 1~|"±10485760±(1)"]«
+
+# 3. Dateigröße mit Feed 1 vergleichen (SENTIATOR-MEHRWERT)
+»[× $file_size > ±WERT±(1) ×]«
+ -··¤= »["is_large"]«
+
+# 4. Wenn größer (SENTIATOR-KANN-IMPULS)
+     ¶ -·· »["is_large"]
+     # 4a. Komprimieren (SHELL-CONTROL)
+           -·· ['gzip "$file_path"']«
+           -·· »["compress_ok"]«
+
+            ¶ »["compress_ok"]
+            # 4b. Pfad erweitern (SHELL-CONTROL)
+               ['file_path="${file_path}.gz"']«
+               -···¤= »["new_path"]«
+
+# 4c. Neuen Pfad in Feed 2 speichern
+»[~TRANSFER BOXIS ¬ MACH FF 2~|"(2)±${file_path}.gz±"]«
+# 5. Wenn nicht größer (SENTIATOR-NICHT-IMPULS)
+ ¶¶ -··> »["is_large"]«««t5
+    -··> »["Datei ist klein, keine Komprimierung nötig."]«««t6
+¢|
 
 #====================================================================#
-@info-id: WAHRHEIT
+@info-id: REX
 #====================================================================#
 
  ERKLÄRUNG =
 
- WAHRHEIT/EN SIND PARALLELE-ANALOGE VERARBEITUNGSZWEIGE DIE TEIL
+ REX SIND PARALLELE-ANALOGE VERARBEITUNGSZWEIGE DIE TEIL
  PROZESSE VOM HAUPT PROZESS ÜBERNIMMT, VERARBEITET, ZURÜCKGIBT,
  ZUENDEFÜHRT.
 
- MIT WAHRHEIT/EN KANN MAN MEHRERE AUSGÄNGE ODER MEHRERE ENDENDE MIT
+ MIT REX KANN MAN MEHRERE AUSGÄNGE ODER MEHRERE ENDENDE MIT
  ZEITGESTEUERTE NEBENPROZESSE LEITEN.
 
- NACH DEM MAN DEN WAHRHEIT/EN TRIGGER AKTIVIERT HAT , KANN MAN PRO
+ NACH DEM MAN DEN REX TRIGGER AKTIVIERT HAT , KANN MAN PRO
  NEBENPROZESS UND HAUPT PROZESS , PUNKTUELLE WORKSPACE-RUNNER
  AUSLÖSEN.
 
@@ -29,7 +57,7 @@
  MIT DEM
  ENTSCHEIDUNGSMECHANISMUS VON SENTIATOREN ZUSAMMENARBEITEN KANN.
 
- WAHRHEIT ÖFFNEN ZWEIGE FÜR WEITERE VERARBEITUNGSLOGIKEN.
+ REX ÖFFNEN ZWEIGE FÜR WEITERE VERARBEITUNGSLOGIKEN.
  SIE DIENEN ALS SCHALTUNGSWERKZEUGE, DIE DEN BOXI-FLUSS AUF MEHRERE
  EBENEN ODER DURCH PARALLELISIERUNG PROTEINE DUPLIZIEREN
  KÖNNEN – FÜR WEITERE VERARBEITUNGSSCHRITTE.
@@ -37,7 +65,7 @@
  DAS PRINZIP: "DAS KANN WAHR SEIN ODER DAS KANN WAHR SEIN ODER
  DAS KANN EINE PARALLELE WAHRHEIT SEIN."
 
- WAHRHEIT/EN FUNKTIONIEREN AUF EXISTIERENDER HARDWARE WIE AUF
+ REX FUNKTIONIEREN AUF EXISTIERENDER HARDWARE WIE AUF
  ZUKÜNFTIGEN CHIPS – PROGRAMMIERBAR ODER ASIC.
 
  NEU: INTEGRIERTER PROGRESS-OPERATOR (:) FÜR VISUELLE LADEBALKEN
@@ -45,7 +73,7 @@
 
 ----------------------------------------------------------------------
 ######################################################################
-@info-id: WAHRHEIT-TRIGGER-WORKSPACE
+@info-id: REX-TRIGGER-WORKSPACE
 ----------------------------------------------------------------------
 
  EIN WORKSPACE
@@ -83,7 +111,7 @@
 
 ----------------------------------------------------------------------
 ######################################################################
-@info-id: WAHRHEIT-TRIGGER-OPTIONEN
+@info-id: REX-TRIGGER-OPTIONEN
 ----------------------------------------------------------------------
 
   OPTIONEN ¤ KÖNNEN FÜR JEDEN WORKSPACE GESCHALTEN WERDEN ODER
@@ -161,9 +189,7 @@
 
 ----------------------------------------------------------------------
 ######################################################################
-
-
-@info-id: WAHRHEIT-BAUSTELLE
+@info-id: REX-BAUSTELLE
 ----------------------------------------------------------------------
 
 ----------------------------------------------------
@@ -299,38 +325,6 @@ int main() {
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
-¢|
-MCS zweite variante=
-
-¢|
-# 1. 10 MB in Bytes berechnen (ALU-RECHNER)
-»[×10·1024·1024×]«
- -·= »[(1)"10485760"]«
-
-# 2. Ergebnis in Feed 1 speichern (CMD-FEED)
-»[~transfer letzte boxis ¬ mach feed 1~|"(1)10485760"]«
-
-# 3. Dateigröße mit Feed 1 vergleichen (SENTIATOR-MEHRWERT)
-»[×$file_size > (1)×]«
- -··= »["is_large"]«
-
-# 4. Wenn größer (SENTIATOR-KANN-IMPULS)
-     ¶ -·· »["is_large"]
-     # 4a. Komprimieren (SHELL-CONTROL)
-           -·· ['gzip "$file_path"']«
-           -·· »["compress_ok"]«
-
-            ¶ »["compress_ok"]
-            # 4b. Pfad erweitern (SHELL-CONTROL)
-               ['file_path="${file_path}.gz"']«
-               -···= »["new_path"]«
-
-# 4c. Neuen Pfad in Feed 2 speichern
-»[~transfer boxis ¬ mach feed 2~|(2)"${file_path}.gz"]«
-# 5. Wenn nicht größer (SENTIATOR-NICHT-IMPULS)
- ¶¶ -··> »["is_large"]«««t5
-    -··> »["Datei ist klein, keine Komprimierung nötig."]«««t6
-¢|
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -359,4 +353,3 @@ Lichtsignal (Warp) passiert das Gatter.
 
 ----------------------------------------------------------------------
 ######################################################################
-

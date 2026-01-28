@@ -3,7 +3,31 @@
 @info-id: DATENTYPEN-DEV
 #====================================================================#
 
- DIESER BEREICH IST LEER
+ # ============================================
+ # MCS-KERNEL PRIMITIVES – Version 0
+ # Alles, was das System braucht, um sich selbst zu starten
+ # ============================================
+
+ ### 1. DATENTYPEN (nur die essentiellen)
+ MCS-TYP = B1      # Bit – Schalterzustand
+ MCS-TYP = B8      # Byte – Zeichen
+ MCS-TYP = B64     # Wort – Adressierung/ALU
+
+ ### 2. BOXIS (nur 5 Grundoperationen)
+ »[× … ×]«         # ALU – rechnet
+ »["…"]«           # CALLIS – gibt aus
+ »['…']«           # SHELL – ruft Host
+ »[~…~]«           # MCS-CMD – intern
+ »[,…,]«           # SYSCALL – extern
+
+ ### 3. KONTROLLSTRUKTUREN (nur 3)
+ ¢! … !¢           # Transaktionsrahmen – atomare Einheit
+ ¶ … ¶¶            # Sentiator – Entscheidung
+ -· … -·· … -···   # REX – parallele Workspaces
+
+ ### 4. DATENFLUSS (nur 2)
+ ±WERT±(n)         # FEED – globale Bindung
+ ſ                 # Reinheitsregel – Cleanup
 
 #====================================================================#
 @info-id: DATENTYPEN

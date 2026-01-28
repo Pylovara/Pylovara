@@ -1,6 +1,6 @@
 ﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # # # # ## ## # #       #
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-#  —nicht freigeschaltet +Freigeschaltet XBauStelle 0Konsolidierung  #
+# X NICHT AKTIV | + AKTIV | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND #
 ### ==== Ð ID-DNA-SYSTEM-LEXIKON  $ /Pylovara/Handbuch/KernelNotes/ ##
 #   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
 #   01  Ŋ + ·  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
@@ -14,7 +14,7 @@
 #   17  Ŋ - X  DATEITYPEN     | 18  Ŋ - ·                            #
 #   19  · · ·  XXX            | 20  · · ·                            #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-#   NR Hinweis KKI-PROGRAMME-INFO-ID  | Ŋ = NOTIERUNGSZUSTAND        #
+#   NR Hinweis KKI-PROGRAMME-INFO-ID                                 #
 #   40  Ŋ - X  SUPER OPERATOREN                                      #
 #   41  Ŋ - X  KKIS                                                  #
 #   42  Ŋ - X  ZELLEN-IMPULSER                                       #

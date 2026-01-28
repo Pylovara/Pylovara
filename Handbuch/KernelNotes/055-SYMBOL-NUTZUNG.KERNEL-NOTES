@@ -28,6 +28,30 @@
 #
 ### ==== ##### == # =============================== # == ##### === ###
 
+
+skizze id-abgleich
+
+
+# Beispiel: Firma "TechCorp" kauft MCS-Lizenz
+»[~REGISTER FIRMA "TechCorp"~]«
+ ¬·¤: ['echo Firmenregistrierung startet']«
+
+# 1. NAVIGATOR interpretiert Symbole
+§ Đ "NAVIGATION: Firmen-Anchor erstellen"
+
+# 2. MASTER definiert die Komponente
+»[~MASTER-IDENTIFIKATION CREATE~]«
+ ¶ ¬· [°FIRMEN-ANCHOR°|{°NAME°|°TechCorp°}]«
+
+# 3. IDENTIFIKATION generiert Live-ID
+»[~þþ GENERATE FOR "TechCorp"~]«
+ ¬··¤= »["(FF:FIRMA-ID)±þþ-TECHCORP-2026-XXXX±"]«
+
+# 4. L3-Lizenz bindet ID
+»[~L3_BIND TO ±FF:FIRMA-ID±~]«
+ ¬·¤: [~VALIDIERT~]«
+
+
 ### ==== ##### == # === ### PROTOTYP SCHALTUNGEN == # == ##### === ###
 
 ¢!

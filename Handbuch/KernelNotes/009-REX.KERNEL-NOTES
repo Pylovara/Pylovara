@@ -169,26 +169,10 @@
 
  BEISPIEL =
 
- »['sudo pacman -Syyu']
-  -·¤: [sudo] Passwort für bandino: 
- :: Paketdatenbanken werden synchronisiert …
- core                                                122,0 KiB   592 KiB/s 00:00 [----------------------------------------------] 100%
- extra                                                 7,9 MiB  4,41 MiB/s 00:02 [----------------------------------------------] 100%
- multilib                                            126,9 KiB   486 KiB/s 00:00 [----------------------------------------------] 100%
- :: Vollständige Systemaktualisierung wird gestartet …
- Abhängigkeiten werden aufgelöst …
- Nach in Konflikt stehenden Paketen wird gesucht …
-
- Paket (2)              Alte Version  Neue Version  Netto-Veränderung  Größe des Downloads
-
- extra/lilv             0.26.2-2      0.26.2-3               0,00 MiB             0,08 MiB
- extra/python-markdown  3.10.0-2      3.10.1-1               0,00 MiB             0,19 MiB
-
- Gesamtgröße des Downloads:             0,27 MiB
- Gesamtgröße der installierten Pakete:  1,39 MiB
- Größendifferenz der Aktualisierung:    0,00 MiB
-
-  -·¤: »[']:: Installation fortsetzen? [J/n]']« 
+  -·¤: »[':: Installation fortsetzen? [J/n]']«
+        ¶ -· »['j']«
+              ¶ -· »['ENTER']«
+              ¶¶ -· »['exit']«««ſ
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -205,6 +189,7 @@
  SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
 
  BEISPIEL =
+
  –·¤‹ »[× 1 + 1 ×]
        -·¤= ["(1)±2±"]«
 
@@ -232,6 +217,7 @@
  SYMBOL IN WORTEN = GRÖSSER-ALS-ZEICHEN
 
  BEISPIEL =
+
  –·¤› »[× 1 + 1 ×]
        -·¤= ["(1)±2±"]«
 

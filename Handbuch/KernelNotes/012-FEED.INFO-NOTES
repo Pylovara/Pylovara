@@ -37,6 +37,8 @@
  FEED IST EIN DUPLIKATIONSMECHANISMUS DER VON EINEM ALPHA AUS
  DIE BETAS FÜTTERT
 
+#====================================================================#
+
  DEFINITION FÜHRENDE/R FEED =
 
  (1)±INHALT± <-- FÜHRENDER FEED
@@ -45,5 +47,13 @@
  DEFINITION TRAGENDER FEED =
 
  ±INHALT±(1) <-- Tragender FEED
+
+
+»[~SCHREIB-FF-1 ¬ KOPIERE-GPU-STATUS~]« # Aktiver Schreib-Trigger (MCS-CMD)
+ -· »[°(1)±STATUS±]«                    # Bindung: Wert wird in FF 1 geschrieben
+
+»[~LESEN-TF-1 ¬ SYNC-VON-FF~]«          # Optionaler Sync-Trigger
+ -· »[°±STATUS±(1)°]«                   # Bindung: liest aus FF 1
+
 
 #====================================================================#

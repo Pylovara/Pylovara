@@ -49,7 +49,7 @@
                                 ¶ -·· [~run intelarc.GPU-MCORE~]«««T3
                                       ¶ -·· [~run intelarc.GPU-FCORE~]«««T4
      ¶¶ -·· »[~MACH DATEITYPE-FLAG~]
-            ¶ -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLERBERICHTE~]«
+             ¶ -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLERBERICHTE~]«
 
  # STARTET AUF ['exec <SPIEL>']
  –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
@@ -486,52 +486,7 @@ Baublöcke =
 
 !¢
 
-
-¢!
-»['exec "HaloInfinite.exe"']«
- ¶ -· [°EXECVE-PROZESS°]«
-      -· [°PE-HEADER-LADEN°]«
-      -· [°SECTIONS-MAPPEN°]«
-      -· [°ENTRY-POINT-SPRUNG°]«
-      
- ¶ -· [°HARDWARE-INIT°]«
-      -· [°GPU-TREIBER-LADEN°|{°NAME°|°nvidia_driver.TREIBER-NEEDLE°}]«
-           -· [°GPU-CORE-INIT°]«
-           -· [°GPU-LCORE-INIT°]«
-           -· [°GPU-VCORE-INIT°]«
-           -· [°GPU-MCORE-INIT°]«
-           -· [°GPU-FCORE-INIT°]«
-      ¶¶ -·· [°FEHLER-HANDLING°|{°NAME°|°GPU-FAIL°}]«
-            -·· [°FALLBACK-INTEGRATED°]«
-            -·· [°FEHLER-LOGGING°]«
-            
- ¶ -· [°SYSTEM-MODULE-LADEN°]«
-      -· [°UEFI-BOOT-KERNEL°]«
-      -·· [°DIRECTX12-TREIBER°]«
-      -·· [°AUDIO-SYSTEM°]«
-      -·· [°NETWORK-SYSTEM°]«
-      -··· [°OVERLAY-SYSTEM°]«
-      -··· [°RECORDING-SYSTEM°]«
-      
- ¶ -· [°INPUT-DEVICES°]«
-      -·· [°XBOX-CONTROLLER°]«
-      -·· [°KEYBOARD-SYSTEM°]«
-      -·· [°MOUSE-SYSTEM°]«
-      
- ¶ -· [°SYNCHRONISATION°]«
-      -· [°WARTE-AUF-ALL-SYSTEME°|{°WERT°|°GPU,DX12,AUDIO,NETWORK,CONTROLLER°}]«
-           -· [°START-SPIEL-VOLLBILD°]«
-      ¶¶ -·· [°TIMEOUT-FALLBACK°|{°WERT°|°10000ms°}]«
-            -·· [°ABBRUCH-MELDUNG°]«
-            
- ¶ -· [°RUNTIME-MONITORING°]«
-      -···· [°FPS-MONITOR°]«
-      -···· [°TEMP-MONITOR°]«
-      -···· [°AUTO-SETTINGS-ADJUST°]«
-
-ſ -· [°PROZESS-BEENDEN-SIGNAL°]«
-!¢
-
+2
 Oder =
 
 »['exec "HaloInfinite.exe"']« (Root)
@@ -615,161 +570,138 @@ je nach hardware ohne neu analyse zu benutzen ...
 
 
 
+########################======================###################################
+########################======================###################################
+########################======================###################################
 
+¢!   # Transaktionsrahmen – kompletter Game-Start-Prozess "Halo Infinite"
 
+  »[~MASTER-CONTROL INIT LEVEL=10~]«                        # Spalte 2 – Master-Trigger
+   -·¤= ["(MASTER:PHASE)±GAME-LAUNCH-SEQUENCE±"]«           # Spalte 4 – Zuweisung mit FF
 
+  # ────────────────────────────────────────────────────────────────
+  # PHASE 0: EXE BINARY VALIDATION & MANUELLER LOW-LEVEL LOAD
+  # ────────────────────────────────────────────────────────────────
+  »['exec "C:\Games\HaloInfinite\HaloInfinite.exe"']«       # Spalte 2 – Shell-Trigger
+   -·¤: ["EXE-PFAD-GELOCKT"]«                               # Spalte 4
 
-¢!   # Transaktionsrahmen – kompletter Game-Start-Prozess "Halo Infinite" (Windows-ähnlich, aber MCS-pur)
+  ¶ -· [~MANUAL-PE-LOAD~]«                                  # Spalte 2 – Sentiatior + REX
+    # Sub-Workspace A: Header-Prüfung
 
-# MASTER-OVERALL-TRIGGER
-»[~MASTER-CONTROL INIT LEVEL=10~]«
- -·¤= ["(MASTER:PHASE)±GAME-LAUNCH-SEQUENCE±"]«
+      »[~READ PE-HEADER FROM DISK~|"C:\Games\HaloInfinite\HaloInfinite.exe"]«  # Spalte 6
+       -·¤= ["(FF:PE-RAW-HEADER)±...±"]«                    # Spalte 8 – Führender Feed: Header-Daten
+      »[~CHECK MZ SIGNATURE~]«                              # Spalte 6
+       ¶ »[× MZ-MAGIC == 0x5A4D ×]«                         # Spalte 8
+            -·¤= ["(TF:PE-DOS-VALID)±TRUE±(FF:PE-RAW-HEADER)"]«  # Spalte 10 – Tragender Feed synchronisiert
+       ¶¶ »[~ABBRUCH "KEIN MZ HEADER – KEIN PE!"~]«         # Spalte 8
+            -· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLER/PE_INVALID_MZ.log~]«««ſ  # Spalte 10 – Reinheit + Abbruch
+      »[~LOCATE PE-HEADER OFFSET~]«                         # Spalte 6
+       -·¤= ["(FF:PE-OFFSET)±±(FF:PE-RAW-HEADER+0x3C)±"]«   # Spalte 8 – Führender Feed: Offset
+      »[~CHECK PE SIGNATURE "PE\0\0"~]«                     # Spalte 6
+       ¶ »[× PE-MAGIC == 0x00004550 ×]«                     # Spalte 8
+            -·¤= ["(TF:PE-VALID)±TRUE±(FF:PE-OFFSET)"]«      # Spalte 10 – Tragender Feed: Validierung
 
-# ────────────────────────────────────────────────────────────────
-# PHASE 0: EXE BINARY VALIDATION & MANUELLER LOW-LEVEL LOAD
-# (wie ein primitiver PE-Loader in C – aber in MCS-Syntax)
-# ────────────────────────────────────────────────────────────────
-»['exec "C:\Games\HaloInfinite\HaloInfinite.exe"']«   # Shell-Trigger zum Start
- -·¤: ["EXE-PFAD-GELOCKT"]«
+    # Sub-Workspace B: Sections mappen
+    -··                                                     # Spalte 4
+      »[~PARSE OPTIONAL HEADER~]«                           # Spalte 6
+       -··¤= ["(FF:IMAGE-BASE)±0x140000000±"]«              # Spalte 8 – Führender Feed: Image-Base
+       -··¤= ["(FF:ENTRY-RVA)±±(FF:OPTIONAL+16)±"]«         # Spalte 8 – Führender Feed: Entry-RVA
+      »[~ALLOC VIRTUAL MEMORY~|BASE=±(FF:IMAGE-BASE)± SIZE=±(FF:SIZE-OF-IMAGE)±]«  # Spalte 6
+       -··¤= ["(TF:BASE-ALLOC)±SUCCESS±(FF:IMAGE-BASE)"]«   # Spalte 8 – Tragender Feed: Allokation
+      »[~FOR EACH SECTION HEADER~]«                         # Spalte 6
+       -··                                                  # Spalte 8
+         ¶ »[~SECTION RVA + BASE VALID?~]«                  # Spalte 10
+              »[~MAP SECTION TO VA~|VA=±(FF:IMAGE-BASE)± + ±SECTION-RVA± RAW=±SECTION-RAW-OFFSET± SIZE=±SECTION-VIRTUAL-SIZE±]«  # Spalte 12
+               -··¤= ["(TF:SECTION-MAPPED)±TRUE±(FF:IMAGE-BASE)"]«  # Spalte 14 – Tragender Feed: Mapping-Status
+         ¶¶ »[~RELOCATE IF NEEDED~]«                       # Spalte 10
+              -·· »[~APPLY BASE RELOCS~]«                   # Spalte 12
+              -··¤= ["(TF:RELOCS-APPLIED)±TRUE±(FF:IMAGE-BASE)"]«  # Spalte 14
 
-¶ -· [~MANUAL-PE-LOAD~]«   # Sentiatior: Nur wenn wir low-level wollen
-   # Sub-Workspace A: Header-Prüfung
-   -·
-     »[~READ PE-HEADER FROM DISK~|"C:\Games\HaloInfinite\HaloInfinite.exe"]«
-      -·¤= ["(FF:PE-RAW-HEADER)±...±"]«
+    # Sub-Workspace C: IAT patchen
+    -···                                                    # Spalte 4
+      »[~PARSE IMPORT DIRECTORY~]«                          # Spalte 6
+       -···¤= ["(FF:IAT-RVA)±...±"]«                        # Spalte 8 – Führender Feed: IAT-RVA
+      »[~RESOLVE DLLs & FUNCTIONS~]«                        # Spalte 6
+       -···                                                 # Spalte 8
+         »[~LOADKERNEL32~]«                                 # Spalte 10
+          -···¤= ["(TF:KERNEL32-LOADED)±TRUE±(FF:IAT-RVA)"]«  # Spalte 12 – Tragender Feed: Load-Status
+      »[~PATCH IAT IN MEMORY~]«                             # Spalte 6
+       -···¤= ["(TF:IAT-PATCHED)±TRUE±(FF:IAT-RVA)"]«       # Spalte 8 – Tragender Feed: Patch-Status
 
-     »[~CHECK MZ SIGNATURE~]«
-      ¶ »[× MZ-MAGIC == 0x5A4D ×]«   # DOS-Header check
-           -·¤= ["(FF:PE-DOS-VALID)±TRUE±"]«
-      ¶¶ »[~ABBRUCH "KEIN MZ HEADER – KEIN PE!"~]«
-           -· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLER/PE_INVALID_MZ.log~]«
-           ſ   # Sofort-Reinheit bei Fatal
+    # Jump to Entry Point
+    »[~JUMP-TO ±(FF:IMAGE-BASE)± + ±(FF:ENTRY-RVA)± ~]«     # Spalte 6 – Nutzt führende Feeds
+     -·¤: ["(TF:EXE-ENTRY-REACHED)±TRUE±(FF:IMAGE-BASE)"]«   # Spalte 8 – Tragender Feed: Entry-Status
 
-     »[~LOCATE PE-HEADER OFFSET~]«
-      -·¤= ["(FF:PE-OFFSET)±±(FF:PE-RAW-HEADER+0x3C)±"]«
+  # ────────────────────────────────────────────────────────────────
+  # PHASE 1: GPU-NEEDLE-CHAIN
+  # ────────────────────────────────────────────────────────────────
+  ¶ -· [~RUN-GPU-NEEDLE-CHAIN~]«««Ω                         # Spalte 2 – Sentiatior + REX + Loop
+    –··¤› »['exec /Pylovara/System/Module/nvidia_driver.TREIBER-NEEDLE']«  # Spalte 4
+           ¶ -·· [~INIT nvidia.GPU-CORE~]«««Ω              # Spalte 6
+                 -··¤= ["(FF:GPU-CORE)±ACTIVE±"]«           # Spalte 8 – Führender Feed: Core-Status
+           ¶ -·· [~INIT nvidia.GPU-LCORE~]«««T120          # Spalte 6
+                 -··¤= ["(TF:GPU-LCORE)±READY±(FF:GPU-CORE)"]«  # Spalte 8 – Tragender Feed
+           ¶ -·· [~INIT nvidia.GPU-VCORE~]«««T180          # Spalte 6
+                 -··¤= ["(TF:GPU-VCORE)±READY±(FF:GPU-CORE)"]«  # Spalte 8
+           ¶ -·· [~INIT nvidia.GPU-MCORE~]«««T240          # Spalte 6
+                 -··¤= ["(TF:GPU-MCORE)±READY±(FF:GPU-CORE)"]«  # Spalte 8
+           ¶ -·· [~INIT nvidia.GPU-FCORE~]«««T300          # Spalte 6
+                 -··¤= ["(TF:GPU-FCORE)±READY±(FF:GPU-CORE)"]«  # Spalte 8
+                 »[~PROTON STATUS~|"{GPU:MODEL|RTX4090|STATUS|FULLY_LOADED}"]«  # Spalte 8
 
-     »[~CHECK PE SIGNATURE "PE\0\0"~]«
-      ¶ »[× PE-MAGIC == 0x00004550 ×]«
-           -·¤= ["(FF:PE-VALID)±TRUE±"]«
-      ¶¶ »[~ABBRUCH "KEIN PE SIGNATURE!"~]«
+           # Fallback-Kette
+           ¶¶ -·· »[~GPU-INIT-FAILED~]«                    # Spalte 6
+                   -·· »[~MACH DATEITYPE-FLAG ERROR~]«     # Spalte 8
+                   -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLER/GPU_CHAIN_FAIL.log~]«  # Spalte 8
+                   -·· »[~FALLBACK-TO INTEL UHD~]«         # Spalte 8
+                        »['exec /Pylovara/System/Module/intel_uhd.TREIBER-NEEDLE']«  # Spalte 10
+                        »[~PROTON STATUS~|"{GPU:MODEL|UHD770|STATUS|FALLBACK}"]«  # Spalte 10
 
-   # Sub-Workspace B: Sections mappen (virtuelle Adressen!)
-   -··
-     »[~PARSE OPTIONAL HEADER~]«
-      -··¤= ["(FF:IMAGE-BASE)±0x140000000±"]«   # Typisch für 64-bit EXE
-      -··¤= ["(FF:ENTRY-RVA)±±(FF:OPTIONAL+16)±"]«   # AddressOfEntryPoint RVA
+  # ────────────────────────────────────────────────────────────────
+  # PHASE 2–5: PARALLELE SYSTEM-MODULE
+  # ────────────────────────────────────────────────────────────────
+  »['exec /Pylovara/System/Module/directx12.treiber-needle']«  # Spalte 2
+   -·¤= ["(TF:DX12-READY)±TRUE±(FF:GPU-FCORE)"]«            # Spalte 4 – Tragender Feed bindet an GPU-Status
+   ¶ »[~BIND-TO ±TF:GPU-FCORE± ~]«                          # Spalte 4
 
-     »[~ALLOC VIRTUAL MEMORY~|BASE=±(FF:IMAGE-BASE)± SIZE=±(FF:SIZE-OF-IMAGE)±]«
-      -··¤= ["(FF:BASE-ALLOC)±SUCCESS±"]«
+  »['exec /Pylovara/System/Module/audio.system-kernel']«   # Spalte 2
+   -··¤= ["(TF:AUDIO-READY)±TRUE±"]«                       # Spalte 4
 
-     # Schleife über Sections (vereinfacht dargestellt)
-     »[~FOR EACH SECTION HEADER~]«
-      -··
-        ¶ »[~SECTION RVA + BASE VALID?~]«
-             »[~MAP SECTION TO VA~|VA=±(FF:IMAGE-BASE)± + ±SECTION-RVA±
-                               RAW=±SECTION-RAW-OFFSET±
-                               SIZE=±SECTION-VIRTUAL-SIZE±]«
-             -··¤= ["(TF:SECTION-MAPPED)±TRUE±"]«
+  »['exec /Pylovara/System/Module/network.system-kernel']« # Spalte 2
+   -·· »[~CONNECT-TO "xbox-live.net"~]«                    # Spalte 4
+        -··¤= ["(TF:NETWORK-READY)±TRUE±"]«                # Spalte 6
 
-        ¶¶ »[~RELOCATE IF NEEDED~]«
-             -·· »[~APPLY BASE RELOCS~]«
-             -··¤= ["(TF:RELOCS-APPLIED)±TRUE±"]«
+  »['exec /Pylovara/System/Module/overlay.system-kernel']« # Spalte 2
+   -···¤= ["(TF:OVERLAY-READY)±TRUE±"]«                    # Spalte 4
 
-   # Sub-Workspace C: IAT patchen (dynamisches Linking simuliert)
-   -···
-     »[~PARSE IMPORT DIRECTORY~]«
-      -···¤= ["(FF:IAT-RVA)±...±"]«
+  »[~MONITOR RUNTIME~]«««Ω                                 # Spalte 2 – Background-Loop
+   ¶ »[× FPS < 55 ×]«                                      # Spalte 4
+        -···· »[~PROTON ADJUST~|"{GPU:THROTTLE|DOWN|FPS_LOW}"]«  # Spalte 8
+   ¶ »[× GPU-TEMP > 84 ×]«                                 # Spalte 4
+        -···· »[~PROTON THROTTLE~|"{GPU:CLOCK|REDUCE|OVERHEAT}"]«  # Spalte 8
+        -···· »[~FEHLERBERICHT-ZU ¬ /Pylovara/MONITOR/THERMAL.log~]«  # Spalte 8
 
-     »[~RESOLVE DLLs & FUNCTIONS~]«
-      -···
-        »[~LOADKERNEL32~]«   # Beispiel – in echt mehr
-         -···¤= ["(TF:KERNEL32-LOADED)±TRUE±"]«
+  # ────────────────────────────────────────────────────────────────
+  # PHASE FINAL: MATRIX-SYNC
+  # ────────────────────────────────────────────────────────────────
+  »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«  # Spalte 2
+   ¶ -· »[~SYNC MATRIX~]«                                   # Spalte 4
+        ¶ »[× ALL(±TF:EXE-ENTRY-REACHED±, ±TF:GPU-FCORE±, ±TF:DX12-READY±, ±TF:AUDIO-READY±, ±TF:NETWORK-READY±) == TRUE ×]«  # Spalte 6
+             -· »['echo "[MATRIX] ALLE SYSTEME BEREIT – LAUNCH!"]'«  # Spalte 8
+             -· »[~PROTON STATUS~|"{GAME:STATE|RUNNING|Halo Infinite}"]«  # Spalte 8
+             -· »['exec "C:\Games\HaloInfinite\HaloInfinite.exe" --fullscreen --dx12']«  # Spalte 8
+        ¶¶ »[× TIMEOUT 15000 TAKTE ×]«                     # Spalte 6
+             -· »[~ABBRUCH "MATRIX-SYNC TIMEOUT – HARD FAIL"]'«  # Spalte 8
+             -· »[~PROTON STATUS~|"{GAME:STATE|FAILED|INIT_TIMEOUT}"]«  # Spalte 8
+             ſ                                           # Spalte 8 – Reinheit
 
-     »[~PATCH IAT IN MEMORY~]«
-      -···¤= ["(TF:IAT-PATCHED)±TRUE±"]«
+  -· [~PROZESS STEUERUNG BEENDEN – SPIEL LÄUFT WEITER~]«««ſ  # Spalte 2 – finale Reinheit
 
-   # Jump to real Entry Point
-   »[~JUMP-TO ±(FF:IMAGE-BASE)± + ±(FF:ENTRY-RVA)± ~]«
-    -·¤: ["(MASTER:EXE-ENTRY-REACHED)±TRUE±"]«
+!¢   # Transaktions-Ende
 
-# ────────────────────────────────────────────────────────────────
-# PHASE 1: GPU-NEEDLE-CHAIN (parallele Cores mit Ω-Dauerlauf pro Core)
-# ────────────────────────────────────────────────────────────────
-¶ -· [~RUN-GPU-NEEDLE-CHAIN~]«««Ω   # Aktionsdraht mit Dauer-Loop!
-   # Hochpriorität – nVidia RTX 4090 Pipeline
-   –··¤› »['exec /Pylovara/System/Module/nvidia_driver.TREIBER-NEEDLE']«
-          ¶ -·· [~INIT nvidia.GPU-CORE~]«««Ω   # Dauer-Loop Core
-                -··¤= ["(TF:GPU-CORE)±ACTIVE±"]«
-          ¶ -·· [~INIT nvidia.GPU-LCORE~]«««T120   # Timeout 120 Takte
-                -··¤= ["(TF:GPU-LCORE)±READY±"]«
-          ¶ -·· [~INIT nvidia.GPU-VCORE~]«««T180
-                -··¤= ["(TF:GPU-VCORE)±READY±"]«
-          ¶ -·· [~INIT nvidia.GPU-MCORE~]«««T240
-                -··¤= ["(TF:GPU-MCORE)±READY±"]«
-          ¶ -·· [~INIT nvidia.GPU-FCORE~]«««T300
-                -··¤= ["(TF:GPU-FCORE)±READY±"]«
-                »[~PROTON STATUS~|"{GPU:MODEL|RTX4090|STATUS|FULLY_LOADED}"]«
-
-   # Fallback-Kette bei GPU-Fehler
-   ¶¶ -·· »[~GPU-INIT-FAILED~]«
-         -·· »[~MACH DATEITYPE-FLAG ERROR~]«
-         -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLER/GPU_CHAIN_FAIL.log~]«
-         -·· »[~FALLBACK-TO INTEL UHD~]«
-              »['exec /Pylovara/System/Module/intel_uhd.TREIBER-NEEDLE']«
-              »[~PROTON STATUS~|"{GPU:MODEL|UHD770|STATUS|FALLBACK}"]«
-
-# ────────────────────────────────────────────────────────────────
-# PHASE 2–5: PARALLELE SYSTEM-MODULE (Prioritäts-Workspaces)
-# ────────────────────────────────────────────────────────────────
--·   # Prio 1 – kritisch
-  »['exec /Pylovara/System/Module/directx12.treiber-needle']«
-   -·¤= ["(TF:DX12-READY)±TRUE±"]«
-   ¶ »[~BIND-TO ±TF:GPU-FCORE± ~]«
-
--··  # Prio 2 – wichtig
-  »['exec /Pylovara/System/Module/audio.system-kernel']«
-   -··¤= ["(TF:AUDIO-READY)±TRUE±"]«
-  »['exec /Pylovara/System/Module/network.system-kernel']«
-   -·· »[~CONNECT-TO "xbox-live.net"~]«
-        -··¤= ["(TF:NETWORK-READY)±TRUE±"]«
-
--··· # Prio 3 – nice-to-have
-  »['exec /Pylovara/System/Module/overlay.system-kernel']«
-   -···¤= ["(TF:OVERLAY-READY)±TRUE±"]«   # Discord / GameBar
-
--···· # Background-Monitoring (ewig laufend)
-  »[~MONITOR RUNTIME~]«««Ω
-    ¶ »[× FPS < 55 ×]«
-         -···· »[~PROTON ADJUST~|"{GPU:THROTTLE|DOWN|FPS_LOW}"]«
-    ¶ »[× GPU-TEMP > 84 ×]«
-         -···· »[~PROTON THROTTLE~|"{GPU:CLOCK|REDUCE|OVERHEAT}"]«
-         -···· »[~FEHLERBERICHT-ZU ¬ /Pylovara/MONITOR/THERMAL.log~]«
-
-# ────────────────────────────────────────────────────────────────
-# PHASE FINAL: MATRIX-SYNC – Warte auf ALLE kritischen Feeds
-# ────────────────────────────────────────────────────────────────
-»['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
- ¶ -· »[~SYNC MATRIX~]«
-      ¶ »[× ALL(
-            ±TF:EXE-ENTRY-REACHED±,
-            ±TF:GPU-FCORE±,
-            ±TF:DX12-READY±,
-            ±TF:AUDIO-READY±,
-            ±TF:NETWORK-READY±
-          ) == TRUE ×]«
-           -· »['echo "[MATRIX] ALLE SYSTEME BEREIT – LAUNCH!"]'«
-           -· »[~PROTON STATUS~|"{GAME:STATE|RUNNING|Halo Infinite}"]«
-           -· »['exec "C:\Games\HaloInfinite\HaloInfinite.exe" --fullscreen --dx12']«
-
-      ¶¶ »[× TIMEOUT 15000 TAKTE ×]«   # 15 Sekunden hartes Limit
-           -· »[~ABBRUCH "MATRIX-SYNC TIMEOUT – HARD FAIL"]'«
-           -· »[~PROTON STATUS~|"{GAME:STATE|FAILED|INIT_TIMEOUT}"]«
-           ſ   # Reinheit + Exit des Steuer-Proteins
-
-# Letzte Reinheit für den gesamten Steuerprozess
-ſ -· [~PROZESS STEUERUNG BEENDEN – SPIEL LÄUFT WEITER~]«
-
-!¢   # Transaktions-Ende – Atomare Einheit abgeschlossen
+########################======================###################################
+########################======================###################################
+########################======================###################################
 
 
 ¢!
@@ -781,34 +713,34 @@ je nach hardware ohne neu analyse zu benutzen ...
 
 »["manuelles Binary-Loading"]«
  -·¤= »["LOAD-MODE: MANUAL"]«
-      ¶ -· »[~READ BINARY FROM DISK~]«
-      ¶ -· »[~VALIDATE HEADER & STRUCTURE~]«
-      ¶ -· »[~CONTROLLED ENTRY PREP~]«
+       ¶ -· »[~READ BINARY FROM DISK~]«
+       ¶ -· »[~VALIDATE HEADER & STRUCTURE~]«
+       ¶ -· »[~CONTROLLED ENTRY PREP~]«
 
 »["explizite Speicherabbildung"]«
  -·¤= »["MEMORY-MODE: EXPLICIT"]«
-      ¶ -· »[~MAP SECTIONS → VIRTUAL ADDRESS SPACE~]«
-      ¶ -· »[~NO IMPLICIT ALLOCATIONS~]«
-      ¶ -· »[~RELOCATION UNDER CONTROL~]«
+       ¶ -· »[~MAP SECTIONS → VIRTUAL ADDRESS SPACE~]«
+       ¶ -· »[~NO IMPLICIT ALLOCATIONS~]«
+       ¶ -· »[~RELOCATION UNDER CONTROL~]«
 
 »["deterministische Initialisierung von Hardware-Pipelines"]«
  -·¤= »["INIT-MODE: DETERMINISTIC"]«
-      ¶ -· »[~INIT GPU-CORE SEQUENCE~]«
-      ¶ -· »[~TIME-BOUNDED CORE BRING-UP~]«
-      ¶ -· »[~STATE FEEDBACK REQUIRED~]«
+       ¶ -· »[~INIT GPU-CORE SEQUENCE~]«
+       ¶ -· »[~TIME-BOUNDED CORE BRING-UP~]«
+       ¶ -· »[~STATE FEEDBACK REQUIRED~]«
 
 »["priorisierte Parallelität"]«
  -·¤= »["EXEC-MODE: PRIORITY-PARALLEL"]«
-      ¶ -· »[~DISPATCH PRIO-1 WORKSPACES~]«
-      ¶ -·· »[~DISPATCH PRIO-2 WORKSPACES~]«
-      ¶ -··· »[~BACKGROUND TASKS~]«
+       ¶ -· »[~DISPATCH PRIO-1 WORKSPACES~]«
+       ¶ -·· »[~DISPATCH PRIO-2 WORKSPACES~]«
+       ¶ -··· »[~BACKGROUND TASKS~]«
 
 »["harte Synchronisationsbarrieren"]«
  -·¤= »["SYNC-MODE: EXPLICIT"]«
-      ¶ -· »[~SYNC MATRIX~]«
-           ¶ »[× ALL(REQUIRED-FEEDS) == TRUE ×]«
+       ¶ -· »[~SYNC MATRIX~]«
+             ¶ »[× ALL(REQUIRED-FEEDS) == TRUE ×]«
                 -· »["SYSTEM STATE: CONSISTENT"]«
-           ¶¶ »[~BLOCK EXECUTION~]«
+             ¶¶ »[~BLOCK EXECUTION~]«
 
 ſ -· [~PRINT-PROTEIN ENDE~]«
 

@@ -112,78 +112,33 @@
 @info-id: REX-TRIGGER-OPTIONEN
 #====================================================================#
 
-  OPTIONEN ¤ KÖNNEN FÜR JEDEN WORKSPACE GESCHALTEN WERDEN ODER
-  ETWAS OPTIONAL AUF EIN WORKSPACE WEITERGELEITET.
+¢!
+ # REX-TRIGGER-WORKSPACE-OPTIONEN-PROZESS
 
-  ----------------------------------------------------
-  EINRÜCKUNGSLOGIK (VISUELLE STRUKTUR):
-       »[PROTEIN-START]« # Linker Rand
-        –·¤: ############### 50% »[OPTION-A-AKTION]« # Mit Progress
-        -·¤= [(NR)"WERT"]
-        –··: ######################## 80% »[OPTION-B-AKTION]«
-        –··¤< »[PARALLEL-PROZESS]«
-        –··¤: ############################### 100% »[PARALLEL-A]«
-    »[NEUES-PROTEIN]«
+ »['sudo pacman -Syyu']
+  -·¤: [sudo] Passwort für bandino: 
+ :: Paketdatenbanken werden synchronisiert …
+ core                                                122,0 KiB   592 KiB/s 00:00 [----------------------------------------------] 100%
+ extra                                                 7,9 MiB  4,41 MiB/s 00:02 [----------------------------------------------] 100%
+ multilib                                            126,9 KiB   486 KiB/s 00:00 [----------------------------------------------] 100%
+ :: Vollständige Systemaktualisierung wird gestartet …
+ Abhängigkeiten werden aufgelöst …
+ Nach in Konflikt stehenden Paketen wird gesucht …
 
- MOMENTAN BIETEN DIE PARALLEL RICHTUNGS ANGABEN IN FORM VON
- -· # DIREKT OUTPUT
- -·¤ # OPTION AUSWAHL VON ADDEN LÖSCHEN ODER PARALLEL MITVERARBEITEN USW
- -·¤= # OPTIONALE ALU AUSGABE WENN VERLANGT , DIREKT FÜR DEN WORKSPACE
+ Paket (2)              Alte Version  Neue Version  Netto-Veränderung  Größe des Downloads
 
+ extra/lilv             0.26.2-2      0.26.2-3               0,00 MiB             0,08 MiB
+ extra/python-markdown  3.10.0-2      3.10.1-1               0,00 MiB             0,19 MiB
 
- ANWENDUNGSBEISPIELE:
+ Gesamtgröße des Downloads:             0,27 MiB
+ Gesamtgröße der installierten Pakete:  1,39 MiB
+ Größendifferenz der Aktualisierung:    0,00 MiB
 
-  # 1. GUI-MENÜ MIT PROGRESS (Ladebalken pro Punkt)
-    –·¤< »[×(MENU_LABEL) == "Quit"×]«
-        –·: ############################### 100% »[~BEENDE PROGRAMM~]«
-    –·¤< »[×(MENU_LABEL) == "About"×]«
-        –··: ###################### 70% »[~show_about_dialog~]«
-    –·¤< »[×(MENU_LABEL) == "Settings"×]«
-        –···: ############### 50% »[~ÖFFNE SETTINGS~]«
-    –·¤> »[×(MENU_LABEL) != ""×]«
-        –····: 0% »["Unbekannter Menüpunkt"]«
-
-  # 2. DATEIVERARBEITUNG MIT PROGRESS
-    –·¤< »[×feed cache 1 > 10485760×]«
-         –·¤: ######################## 80% »['gzip $FILE']«
-         –··¤: ############################### 100%
-             -··¤: »['echo Compression Vollendet']«
-
-  # 3. IDE-PROZESS (Loading)
-    –·¤: ############### 50% »[~load_project~]«
-    –··¤: ######################## 80% »[~compile_mcs~]«
-    –···¤: ############################### 100% »[~run_simulation~]«
-
-  # 4. SORTIERUNGSFUNKTION AUFSTEIGEND :
-    -·¤↑ »[' '|" "|~ ~]«
-         -·¤1 »[' ']«
-         -·¤2 »[" "]«
-         -·¤3 »[~ ~]«
-
- # 5. SORTIERUNGSFUNKTION ABSTEIGEND :
-    -·¤↓ »[' '|" "|~ ~]«
-         -·¤3 »[~ ~]«
-         -·¤2 »[" "]«
-         -·¤1 »[' ']«
-
-
-
- Trigger-Symbol	Funktion im Workspace	Physikalische Entsprechung
- -· Direkt Output
-
- Ungefilterter Signalfluss zum Standard-Feed.
- -·¤ Optionale Auswahl
-
- Gatter-Weiche für parallele Mitverarbeitung.
-
- -·¤= ALU Ausgabe
-
- Arithmetisch-logische Einheit liefert direktes Resultat.
-
- -·¤< Injektions-Trigger  Signal wird in einen Unterprozess eingesteuert.
-
- -·¤↑ / ↓ Sortier-Vektor   Steuerung der Priorität in der Ausführungskette
-                          (Auf-/Absteigend).
+  -·¤: »[':: Installation fortsetzen? [J/n]']«
+        ¶ -· »['j']«
+              ¶ -· »['ENTER']«
+              ¶¶ -· »['exit']«««ſ
+!¢
 
 #====================================================================#
 @info-id: REX-BAUSTELLE

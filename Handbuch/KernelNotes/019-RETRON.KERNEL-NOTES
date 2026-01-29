@@ -2,7 +2,111 @@
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == #  STARTPUNKT RETRON ==== ### === # == ##### === ###
 
+ NAME Ð RETRON
 
+ INFO-ID § RETRON
+
+ MASTER § MASTER-RETRON
+
+ BEGRIFFSDEFINITION = REGULATIONSORGANISATOR VON RUNTIMES
+
+ FUNKTION = REGULIERT UND PRIORISIERT WIRKUNG
+
+ AUSFÜHRUNGSART = SYMBOL IN WORTEN = GRADZEICHEN
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ RETRON KERN KLASSE § RETRON
+
+ INFO = RETRON-STUFEN BLOCKIEREN KEINE ARGUMENTE, RETRON REGULIERT SIE
+
+ FUNKTION = REGULIERUNG UND PRIORISIERUNG
+
+ AUSFÜHRUNGSART = 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ RETRON KLASSE § RETRON-STUFE
+
+ INFO = RETRON GEWICHTUNGSSTUFE
+
+ FUNKTION = STUFEN AUSLÖSER
+
+ SYMBOLISCHE DEKLARATION § Ŧ
+
+ SYMBOL IN WORTEN =
+
+ AUSFÜHRUNGSART = HANDLING
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ RETRON-STUFE KLASSE § RETRON-STUFE-NULL
+
+ INFO = 
+
+ FUNKTION = 
+
+ SYMBOLISCHE DEKLARATION § °
+
+ SYMBOL IN WORTEN = GRADZEICHEN
+
+ RETRON-STUFE = NULL
+ 
+ BEDEUTUNG = KEINE GEWICHTUNG
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ RETRON-STUFE KLASSE § RETRON-STUFE-EINS
+
+ INFO = 
+
+ FUNKTION = 
+
+ SYMBOLISCHE DEKLARATION § 
+
+ SYMBOL IN WORTEN = 
+
+ RETRON-STUFE = ¹
+
+ BEREICH = LOKAL
+
+ WIRKUNG = ARGUMENT- / FEED-GEWICHTUNG
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ RETRON-STUFE KLASSE § RETRON-STUFE-ZWEI
+
+ INFO = 
+
+ FUNKTION = 
+
+ SYMBOLISCHE DEKLARATION § 
+
+ SYMBOL IN WORTEN = 
+
+ RETRON-STUFE = ²
+
+ BEREICH = KONTEXTUELL
+
+ WIRKUNG = NAVIGATOR- / KNOTENPUNKT-GEWICHTUNG
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ RETRON-STUFE KLASSE § RETRON-STUFE-DREI
+
+ INFO = 
+
+ FUNKTION = 
+
+ SYMBOLISCHE DEKLARATION § 
+
+ SYMBOL IN WORTEN = 
+
+ RETRON-STUFE = ³
+
+ BEREICH = SYSTEMISCH
+
+ WIRKUNG = ORDNUNGS- / REGELGEWICHTUNG
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DATUM = [02:50:12|Do Jan 29] MARKENBRANDT

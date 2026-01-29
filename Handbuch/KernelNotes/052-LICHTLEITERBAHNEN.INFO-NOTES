@@ -82,10 +82,10 @@
     Die Logik wartet nicht auf die Welle, sondern der AI Synctimer
     (Kernel 18) synchronisiert die Pulse.
 
- Warum ab MCS 3.6 den Unterschied macht
+ Warum ab MCS 8.1 den Unterschied macht
 
  Ein System wie das von TSMC versucht, Licht hardwareseitig zu
- bändigen. Ab MCS 3.6 bändigt das Licht softwareseitig.
+ bändigen. Ab MCS 8.1 bändigt das Licht softwareseitig.
 
  Deterministik: Durch die Regel der Reinheit (ſ) wird jede
  Licht-Transaktion erst validiert, wenn der Puls-Satz vollständig

@@ -1,0 +1,47 @@
+PYLOVARA/MCS SYSTEM
+
+
+KKIS
+├── HARDWARE-ABSTRACTION (Proton-Layer)
+│   ├── Lichtpuls-Mess-Logik
+│   ├── FPGA-Impulsmesser
+│   ├── Lichtleiterbahnen
+│   └── Statische Energie-Matrix
+├── BIOMIMETIC-CORE (Protein-Layer)
+│   ├── Protein [..] – Hauptdatenträger
+│   ├── Proton {...} – Hardwaresteuerung
+│   ├── Feed (..) – Synchronisation
+│   └── ID-DNA – Identitätskette
+├── EXECUTION-ENVIRONMENT (Boxis-Layer)
+│   ├── BOXIS-ABI (Ħ..Ħ) – OS-Bindung
+│   ├── BOXIS-SYSCALL (,…,) – Systemaufrufe
+│   ├── BOXIS-SHELL ('…') – Shell-Integration
+│   ├── BOXIS-ALU (×…×) – Rechenoperationen
+│   └── BOXIS-MCS-CMD (~…~) – MCS-Befehle
+├── DECISION-LOGIC (REX/SENTIATOR)
+│   ├── REX – parallele Entscheidungsgatter
+│   │   ├── Workspace-Auswahl (·)
+│   │   ├── Optionen (¤) → = : ‹ › ↑ ↓
+│   │   └── Trigger (¬)
+│   └── SENTIATOR – bewertende Instanz
+│       ├── WENN-KANN (¶)
+│       └── WENN-NICHT (¶¶)
+├── VALIDATION-ORCHESTRATION
+│   ├── VATRON – Validierungsorchestrator
+│   └── RETRON – Regulationsgewichte (¹ ² ³)
+├── COGNITIVE-LAYER (KKIS)
+│   ├── KKIS-RETRON
+│   ├── KKIS-VATRON
+│   ├── KKIS-NAVIGATOR
+│   └── KKIS-SENTIATOR
+├── NAVIGATION-MATRIX
+│   ├── NAVIGATOR-KNOTENPUNKT (-)
+│   ├── NAVIGATOR-DIRIGENT (§)
+│   └── NAVIGATOR-SCHATTENIDENTITÄT (ID-DNA)
+└── LICENZ-LAYERS (L1-L6)
+    ├── L1: Core Kernel Mandate
+    ├── L2: Author Rights
+    ├── L3: Commercial Licensing
+    ├── L4: AI Administration
+    ├── L5: Post-Mortem Control
+    └── L6: Immutable Core

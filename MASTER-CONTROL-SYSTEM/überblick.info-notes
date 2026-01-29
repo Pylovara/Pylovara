@@ -21,3 +21,42 @@ cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/priorities.info-notes &
 /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/SYMETRIE/
 /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/TIEFE/
 -----------------------------------------------------------------------
+
+
+##Spielzeug 2
+Kompletter Datenfluss in 12 Stufen:
+Hardware → Photonische Impulse
+Proton → Hardware-Datenkapselung
+Protein → Transportrahmen mit Feed-Sync
+Boxis → Ausführungsumgebung-Dispatch
+REX → Parallele Entscheidungslogik
+SENTIATOR → Bewertungs- und Wenn-Kann-Logik
+VATRON → Validierungsorchestration
+RETRON → Gewichtung und Priorisierung
+ARGUMENT → Zusatzlogik (Zeit, Takt, Bestätigung)
+MBMATRIX → Emotions- und Kontextbewertung
+KKIS → Kognitive KI-Verarbeitung
+NAVIGATOR → Finales Routing und Speicherung
+Alle Entscheidungspunkte:
+Welcher Boxis-Typ?
+Welche REX-Option?
+SENTIATOR: WENN oder WENN-NICHT?
+VATRON: Welche Validierungsstufe?
+RETRON: Welche Gewichtungsstufe?
+ARGUMENT: Welcher Argument-Typ?
+NAVIGATOR: Welches Navigationsziel?
+WARP: Legacy-Kompatibilität benötigt?
+LICENSE: Alle Lizenzschichten validiert?
+Fehlerbehandlung für jede Stufe:
+Hardware-Fehler → Recovery oder kritischer Fail
+Validierungsfehler → Retry oder Abbruch
+Lizenzverletzung → System-Lockdown
+User-Abbruch → Prozessbeendigung
+
+Besondere Flüsse:
+Ω-Loop → Rekursive Prüfschleife bei ARGUMENT
+Feed-Sync → FF → TF Synchronisation
+Emotionslayer → Valenz-Bewertung vor KI
+KKIS-Konsens → Mehrere KI-Module bilden Konsens
+WARP → Legacy-Kompatibilität als optionaler Pfad
+-----------------------------------------------------------------------

@@ -3,42 +3,42 @@
 # X NICHT AKTIV | + AKTIV | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND #
 ### ==== Ð ID-DNA-SYSTEM-LEXIKON  $ /Pylovara/Handbuch/KernelNotes/ ##
 #   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
-#   01  Ŋ + ·  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
+#   01  Ŋ + ·  DATENTYPEN     | 02  · + ·    TRANSAKTIONSRAHMEN      #
 #   03  · + ·  PROTEIN        | 04  · + ·    PROTON                  #
 #   05  · + ·  TRENNBEFEHL    | 06  · + ·    AKTIONSDRAHT            #
 #   07  · + ·  BOXIS          | 08  Ŋ + ·    MASTER                  #
-#   09  Ŋ - X  REX            | 10  Ŋ - X    SENTIATOR               #
-#   11  · - X  ARGUMENT       | 12  · + 0    FEED                    #
-#   13  · + ·  WARP           | 14  Ŋ + X    NAVIGATOR               #
-#   15  · + ·  IDENTIFIKATION | 16  Ŋ + X    MCS-CMD                 #
-#   17  Ŋ - X  DATEITYPEN     | 18  Ŋ - ·                            #
-#   19  · · ·  XXX            | 20  · · ·                            #
+#   09  Ŋ · X  REX            | 10  Ŋ · X    SENTIATOR               #
+#   11  · · X  ARGUMENT       | 12  · + ·    FEED                    #
+#   13  · + ·  WARP           | 14  Ŋ · ·    NAVIGATOR               #
+#   15  · + ·  IDENTIFIKATION | 16  Ŋ · ·    MCS-CMD                 #
+#   17  Ŋ · X  DATEITYPEN     | 18  · · ·                            #
+#   19  · · ·  XXX            | 20  · · X    MATRIX                  #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 #   NR Hinweis KKI-PROGRAMME-INFO-ID                                 #
-#   40  Ŋ - X  SUPER OPERATOREN                                      #
-#   41  Ŋ - X  KKIS                                                  #
-#   42  Ŋ - X  ZELLEN-IMPULSER                                       #
-#   50  · - ·  CHIP-PROGRAMTECHNIK          ##########################
-#   51  · - ·  ENERGIE-MATRIX               # ### #### #### #####   ##
-#   52  · - ·  LICHLEITERBAHNEN             # #   #  # #    #   #   ##
-#   53  Ŋ - ·  MBMATRIX                     # ##  ###  #  # ## ##  ###
-#   54  · - ·  PROJEKTIVE RECHENLOGIK       # #   #    #### #   #    #
-#   55  Ŋ - ·  SYMBOL-NUTZUNG               #                        #
+#   40  Ŋ · X  SUPER OPERATOREN                                      #
+#   41  Ŋ · X  KKIS                                                  #
+#   42  Ŋ · X  ZELLEN-IMPULSER                                       #
+#   50  · · X  CHIP-PROGRAMTECHNIK          ##########################
+#   51  · · X  ENERGIE-MATRIX               # ### #### #### #####   ##
+#   52  · · X  LICHLEITERBAHNEN             # #   #  # #    #   #   ##
+#   53  Ŋ · X  MBMATRIX                     # ##  ###  #  # ## ##  ###
+#   54  · · X  PROJEKTIVE RECHENLOGIK       # #   #    #### #   #    #
+#   55  Ŋ · X  SYMBOL-NUTZUNG               #                        #
 ### NR  # LICENSE # === ### ===== ID-DNA-THOMAS-ZIMMERMANN-ÞÞZRB68 # #
 #   993   L1_COREKERNELMANDAT               ###  #        #      #   #
 #   994   L2_AUTHORRIGHTS                   # PKS | MCS | BMC #   #  #
-#   995   L3_COMMERCIALLICENSING            #   Pylovara-System©    ##
+#   995   L3_COMMERCIALLICENSING            #   Pylovara—System©    ##
 #   996   L4_AI_ADMINISTRATIONSMANDATE      ####  #  #   Since 2025 ##
 #   997   L5_Post_Mortem-Control            ## #### ##       #  #  ###
 #   998   L6_Immutable_Cores_Definition     ##### # ##### ##### ## ###
-#   999   LICENSE-MANIFEST-PROTO            ##### #### #### ######## #
+#   999   LICENSE—MANIFEST.PROTO            ##### #### #### ######## #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# SYSTEM = PNS 2.6.1 PYLOVARA-NETZWERK-SYSTEM                        #
-# KERNEL = MCS 6.1 MASTER-CONTROL-SYSTEM                             #
-# KKIS   = KKIS 0.2 KOGNITIVES-KÜNSTLICHES-INTELIGENTES-SYSTEM       #
+# SYSTEM = PNS 2.6.1 PYLOVARA—NETZWERK—SYSTEM                        #
+# KERNEL = MCS 6.1 MASTER—CONTROL—SYSTEM                             #
+# KKIS   = KKIS 0.2 KOGNITIVES—KÜNSTLICHES—INTELIGENTES—SYSTEM       #
 # TASTATURSTANDART = UTF -8 DEUTSCHER STANDART                       #
 # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                       #
-# BRAINMASCHINECORE = BMC 3.0 BRAIN-MASCHINE-CORE                    #
+# BRAINMASCHINECORE = BMC 3.0 BRAIN—MASCHINE—CORE                    #
 # LIZENSEN = LV 0.7 LIZENSVERTRAG                                    #
 # SINGEL SOURCE OF TRUTH § SSoT Lexikon Version 00.69                #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

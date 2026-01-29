@@ -1,0 +1,15 @@
+@kernel-nr: 21 # HERZSCHLAG | STATUS = Ŋ
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ### 8TAKT-HERZSCHLAG ## === # == ##### === ###
+
+TAKT-PHASE,INTERVALL (ms),FUNKTION IM AKTIONSDRAHT,LOGIK-STATUS
+P0 (Start),"0,000",INITIAL-IMPULS: Master-Clock triggert ID-DNA Check.,¬§ (Dirigent)
+P1,"125,000",BYTE-FEED 1: Erster Datensatz fließt in den Draht.,¬· (Aktion)
+P2,"250,000",VAL-CHECK: VATRON prüft die erste Schwingung.,VATRON
+P3,"375,000",BYTE-FEED 2: Zweiter Datensatz (Überlagerung).,¬·· (Aktion)
+P4 (Mid),"500,000",REX-REFLEX: Halbzeit-Auswertung durch Modul 09.,REX
+P5,"625,000",BYTE-FEED 3: Dritter Datensatz (Resonanz-Korrektur).,¬··· (Aktion)
+P6,"750,000",RETRON-SYNC: Rückwärts-Abgleich der Endpunkte.,RETRON
+P7 (End),"875,000",CRC-FINALE: Abschlussvalidierung vor dem nächsten Schlag.,Ŋ (Vollzug)
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###

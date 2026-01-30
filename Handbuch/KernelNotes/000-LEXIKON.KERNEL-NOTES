@@ -3,16 +3,16 @@
 # X NICHT AKTIV | + AKTIV | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND #
 ### ==== Ð ID-DNA-SYSTEM-LEXIKON  $ /Pylovara/Handbuch/KernelNotes/ ##
 #   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
-#   01  Ŋ + X  DATENTYPEN     | 02  · + X    TRANSAKTIONSRAHMEN      #
+#   01  Ŋ - X  DATENTYPEN     | 02  · + ·    TRANSAKTIONSRAHMEN      #
 #   03  · + X  PROTEIN        | 04  · + X    PROTON                  #
 #   05  · + X  TRENNBEFEHL    | 06  · + X    AKTIONSDRAHT            #
 #   07  · + X  BOXIS          | 08  Ŋ + ·    MASTER                  #
 #   09  Ŋ · X  REX            | 10  Ŋ · X    SENTIATOR               #
 #   11  · · 0  ARGUMENT       | 12  · + X    FEED                    #
-#   13  · + X  WARP           | 14  Ŋ · ·    NAVIGATOR               #
+#   13  · + X  WARP           | 14  Ŋ + 0    NAVIGATOR               #
 #   15  · + X  IDENTIFIKATION | 16  Ŋ · X    MCS-CMD                 #
 #   17  Ŋ · X  DATEITYPEN     | 18  · · X    VATRON                  #
-#   19  · · X  RETRON         | 20  · · X    MATRIX                  #
+#   19  · · X  RETRON         | 20  · - X    MATRIX                  #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 #   NR Hinweis KKI-PROGRAMME-INFO-ID                                 #
 #   40  Ŋ · X  SUPER OPERATOREN                                      #
@@ -21,17 +21,17 @@
 #   50  · · X  CHIP-PROGRAMTECHNIK          ##########################
 #   51  · · X  ENERGIE-MATRIX               # ### #### #### #####   ##
 #   52  · · X  LICHLEITERBAHNEN             # #   #  # #    #   #   ##
-#   53  Ŋ · X  MBMATRIX                     # ##  ###  #  # ## ##  ###
+#   53  Ŋ · X  MBMATRIX                     # ##  ###  #  # ## ##    #
 #   54  · · X  PROJEKTIVE RECHENLOGIK       # #   #    #### #   #    #
-#   55  Ŋ · X  SYMBOL-NUTZUNG               #                        #
+#   55  Ŋ - X  SYMBOL-NUTZUNG               #                        #
 ### NR  # LICENSE # === ### ===== ID-DNA-THOMAS-ZIMMERMANN-ÞÞZRB68 # #
-#   993   L1_COREKERNELMANDAT               ###  #        #      #   #
+#   993   L1_COREKERNELMANDAT               ###  #   #    #      #   #
 #   994   L2_AUTHORRIGHTS                   # PKS | MCS | BMC #   #  #
 #   995   L3_COMMERCIALLICENSING            #   Pylovara—System©    ##
 #   996   L4_AI_ADMINISTRATIONSMANDATE      ####  #  #   Since 2025 ##
-#   997   L5_Post_Mortem-Control            ## #### ##       #  #  ###
-#   998   L6_Immutable_Cores_Definition     ##### # ##### ##### ## ###
-#   999   LICENSE—MANIFEST.PROTO            ##### #### #### ######## #
+#   997   L5_Post_Mortem-Control            ## #### ##   #   #  #  ###
+#   998   L6_Immutable_Cores_Definition     ##### # # ### ## ## ## ###
+#   999   LICENSE—MANIFEST.PROTO            ##### #### #### ## ## ## #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # SYSTEM = PNS 2.6.1 PYLOVARA—NETZWERK—SYSTEM                        #
 # KERNEL = MCS 6.2 MASTER—CONTROL—SYSTEM                             #
@@ -40,7 +40,7 @@
 # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                       #
 # BRAINMASCHINECORE = BMC 3.0 BRAIN—MASCHINE—CORE                    #
 # LIZENSEN = LV 0.7 LIZENSVERTRAG                                    #
-# SINGEL SOURCE OF TRUTH § SSoT Lexikon Version 00.70.2              #
+# SINGEL SOURCE OF TRUTH § SSoT Lexikon Version 00.70                #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # Autor: OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68 since 2025             #
 # Standort: /Pylovara/Handbuch/Kernel/                               #

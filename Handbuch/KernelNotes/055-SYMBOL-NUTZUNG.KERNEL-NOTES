@@ -781,45 +781,6 @@ je nach hardware ohne neu analyse zu benutzen ...
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -836,6 +797,23 @@ je nach hardware ohne neu analyse zu benutzen ...
 
             ¶ ¬·["       "]«
                                      ¬·["       "]«
+
+¢!
+Ŧ¹ »["Soma"]«
+    ¶ ¬·["(1)±FEED-EMPFANG±"]«
+        ¶ ¬·["INTEGRATION"]«
+            ¶ ¬·["SCHWELLENPRÜFUNG"]«
+                ¶ [× FEUER ×]«
+                  # Emotions-Lookup
+                  »[~EMOTION-LOOKUP KEY="Ehrfurcht"~]«
+                   -·¤= »["(EMOTION-PROTEIN)±{¥emotion¥:'Ehrfurcht',¥physiologisch¥:{Gänsehaut|Rücken},...}±"]«
+                  
+                  # Biochemische Effekte anwenden
+                  »[× APPLY-BIOCHEM ±EMOTION-PROTEIN.physiologisch± ×]«
+                   -·¤= »["(BODY-STATE)±Gänsehaut|Rücken±"]«
+
+########
+
                                   ¬· [~EMOTION-SAMPLE~]«
                              ¶ ¬· [(1)±FEED-KONTEXT±]«
                         ¶ ¬· [ENERGIE-MATRIX-QUERY]«

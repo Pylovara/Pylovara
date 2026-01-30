@@ -43,14 +43,6 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- SENTIATOR-WENN-KANN KLASSE = SENTIATOR-WENN-KANN-IMPULS
-
- INFO = WENN DAS PASSIERT , KANN FOLGENDES FOLGEN - IMPULS
-
- FUNKTION = ÖFFNUNGSIMPULS
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
  SENTIATOR KLASSE = SENTIATOR-WENN-NICHT
 
  INFO = WENN DAS NICHT PASSIERT , MUSS FOLGENDES FOLGEN.
@@ -65,9 +57,9 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- SENTIATOR-NICHT KLASSE = SENTIATOR-NICHT-IMPULS
+ SENTIATOR AUSFÜHRKLASSE = SENTIATOR-KLASSE-IMPULS
 
- INFO = WENN DAS NICHT PASSIERT , MUSS FOLGENDES FOLGEN - IMPULS
+ INFO = ÖFFNET DEN KLASSEN IMPULS
 
  FUNKTION = ÖFFNUNGSIMPULS
 

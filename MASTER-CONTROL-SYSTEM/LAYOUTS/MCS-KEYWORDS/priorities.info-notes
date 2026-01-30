@@ -1,20 +1,38 @@
 # =============================================================================
-# PAARUNGS-BONUS – Belohnung für korrekte Symbol-Paare (Formen-Steckspiel)
-# VERSION: 0.0.2
-# AUTOR: Thomas Zimmermann Stufe 10
+# PAARUNGS-BONUS – Belohnung für korrekte Symbol-Paare 
+# VERSION: 0.0.2 FORM SPIEL
+# AUTOR: Thomas Zimmermann Stufe 10 MASTER
 # STAND: 2026-01-30
-# STATUS: FREIGESCHALTET FÜR KINDER-LERNEN
+# STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - ShivaBaal
 # =============================================================================
 # Format = 
-# START_SYMBOL  | END_SYMBOL | BONUS_WENN_BEIDE | MALUS_NUR_START | MALUS_NUR_END | BEGRÜNDUNG
+# SYMBOL MATCHES| PUNKTE KASTEN     | WAS ES BEDEUTET
 # =============================================================================
-¢!…             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-STARTPUNKT KOMPLETT 50%
-…!¢             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-ENDPUNKT KOMPLETT 50%
-¢!…!¢           | 4.0 | -0.6 | -0.9 | TRANSAKTIONSRAHMEN 100% KOMPLETT! GUT MEIN JUNGE<3
+Ð               | 1.0 | -0.8 | -0.8 | NAVIGATOR-LANGZEITSPEICHER
+$               | 1.0 | -0.8 | -0.8 | NAVIGATOR-ZIELREFERENZ
+§               | 1.0 | -0.8 | -0.8 | NAVIGATOR-DIRIGENT
+=               | 1.0 | -0.8 | -0.8 | NAVIGATOR-INFORMATION
+…               | 1.0 | -0.8 | -0.8 | NAVIGATOR-INHALT
+RAUTE-SYMBOLE   | 1.0 | -0.8 | -0.8 | NAVIGATOR-KOMMENTAR
 # =============================================================================
-…«              | 2.0 | -0.8 | -1.0 | Aktions-Rahmen komplett (großes Klick!)
-»…              | 2.0 | -0.8 | -1.0 | Aktions-Rahmen komplett (großes Klick!)
-»…«             | 4.1 | -0.6 | -0.9 | TRANSAKTIONSRAHMEN 100% KOMPLETT MEIN JUNGE<3
+¢!              | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-STARTPUNKT
+!¢              | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-ENDPUNKT
+»               | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-STARTPUNKT
+«               | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-ENDPUNKT
+[               | 1.0 | -0.8 | -0.8 | PROTEIN-SOFTWARERAHMEN-STARTPUNKT
+]               | 1.0 | -0.8 | -0.8 | PROTEIN-SOFTWARERAHMEN-ENDPUNKT
+{               | 1.0 | -0.8 | -0.8 | PROTON-HARDWARERAHMEN-STARTPUNKT
+}               | 1.0 | -0.8 | -0.8 | PROTON-HARDWARERAHMEN-ENDPUNKT
+««              | 1.0 | -0.8 | -0.8 | 
+
+# =============================================================================
+¢!…             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-STARTPUNKT
+…!¢             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-ENDPUNKT
+¢!…!¢           | 4.0 | -0.6 | -0.9 | TRANSAKTIONSRAHMEN
+# =============================================================================
+…«              | 2.0 | -0.8 | -1.0 | 
+»…              | 2.0 | -0.8 | -1.0 | 
+»…«             | 4.1 | -0.6 | -0.9 | 
 # =============================================================================
 […              | 2.0 | -0.8 | -1.0 | 
 …]              | 2.0 | -0.8 | -1.0 |
@@ -25,8 +43,11 @@
 {…}             | 4.1 | -0.6 | -0.9 |
 # =============================================================================
 
-
-
+(…              | 3.5 | -1.2 | -1.2 |
+…)              | 3.5 | -1.2 | -1.2 |  
+(…)             | 3.5 | -1.2 | -1.2 |
+(…)±…±          | 3.5 | -1.2 | -1.2 | 
+±…±(…)          | 3.5 | -1.2 | -1.2 | 
 
 # =============================================================================
 …««             | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-
@@ -46,8 +67,7 @@
 […]             | 4.0 | -1.5 | -1.5 | Protein-Rahmen komplett
 {…}             | 4.0 | -1.5 | -1.5 | Proton-Rahmen komplett
 (…)             | 3.5 | -1.2 | -1.2 | Feed-Rahmen komplett
-(…)±…±          | 3.5 | -1.2 | -1.2 | Feed-Rahmen komplett
-±…±(…)          | 3.5 | -1.2 | -1.2 | Feed-Rahmen komplett
+
 –·¤ =           | 5.0 | -2.0 | -2.0 | Bedingungs-Struktur komplett (Logik-Klick!)
 ¶  ¶            | 3.0 | -1.0 | -1.0 | Sentiator-Doppel (kann auch allein gut sein)
 þ  þþ þþþ       | 4.0 | -1.5 | -1.5 | Identifikations-Erweiterung

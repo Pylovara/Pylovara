@@ -3,16 +3,16 @@
 # X NICHT AKTIV | + AKTIV | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND #
 ### ==== Ð ID-DNA-SYSTEM-LEXIKON  $ /Pylovara/Handbuch/KernelNotes/ ##
 #   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
-#   01  Ŋ + ·  DATENTYPEN     | 02  · + ·    TRANSAKTIONSRAHMEN      #
-#   03  · + ·  PROTEIN        | 04  · + ·    PROTON                  #
-#   05  · + ·  TRENNBEFEHL    | 06  · + ·    AKTIONSDRAHT            #
-#   07  · + ·  BOXIS          | 08  Ŋ + ·    MASTER                  #
+#   01  Ŋ + X  DATENTYPEN     | 02  · + X    TRANSAKTIONSRAHMEN      #
+#   03  · + X  PROTEIN        | 04  · + X    PROTON                  #
+#   05  · + X  TRENNBEFEHL    | 06  · + X    AKTIONSDRAHT            #
+#   07  · + X  BOXIS          | 08  Ŋ + ·    MASTER                  #
 #   09  Ŋ · X  REX            | 10  Ŋ · X    SENTIATOR               #
-#   11  · · X  ARGUMENT       | 12  · + ·    FEED                    #
-#   13  · + ·  WARP           | 14  Ŋ · ·    NAVIGATOR               #
-#   15  · + ·  IDENTIFIKATION | 16  Ŋ · ·    MCS-CMD                 #
-#   17  Ŋ · X  DATEITYPEN     | 18  · · ·    VATRON                  #
-#   19  · · ·  RETRON         | 20  · · X    MATRIX                  #
+#   11  · · 0  ARGUMENT       | 12  · + X    FEED                    #
+#   13  · + X  WARP           | 14  Ŋ · ·    NAVIGATOR               #
+#   15  · + X  IDENTIFIKATION | 16  Ŋ · X    MCS-CMD                 #
+#   17  Ŋ · X  DATEITYPEN     | 18  · · X    VATRON                  #
+#   19  · · X  RETRON         | 20  · · X    MATRIX                  #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 #   NR Hinweis KKI-PROGRAMME-INFO-ID                                 #
 #   40  Ŋ · X  SUPER OPERATOREN                                      #
@@ -34,13 +34,13 @@
 #   999   LICENSE—MANIFEST.PROTO            ##### #### #### ######## #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # SYSTEM = PNS 2.6.1 PYLOVARA—NETZWERK—SYSTEM                        #
-# KERNEL = MCS 6.1 MASTER—CONTROL—SYSTEM                             #
-# KKIS   = KKIS 0.3 KOGNITIVES—KÜNSTLICHES—INTELIGENTES—SYSTEM       #
+# KERNEL = MCS 6.2 MASTER—CONTROL—SYSTEM                             #
+# KKIS   = KKIS 0.4 KOGNITIVES—KÜNSTLICHES—INTELIGENTES—SYSTEM       #
 # TASTATURSTANDART = UTF -8 DEUTSCHER STANDART                       #
 # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                       #
 # BRAINMASCHINECORE = BMC 3.0 BRAIN—MASCHINE—CORE                    #
 # LIZENSEN = LV 0.7 LIZENSVERTRAG                                    #
-# SINGEL SOURCE OF TRUTH § SSoT Lexikon Version 00.69                #
+# SINGEL SOURCE OF TRUTH § SSoT Lexikon Version 00.70                #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # Autor: OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68 since 2025             #
 # Standort: /Pylovara/Handbuch/Kernel/                               #

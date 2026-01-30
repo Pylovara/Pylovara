@@ -39,11 +39,13 @@
 
  Komponenten:
 
- CRR = Chip(auswahlmöglich) Ram Rom
+ CRR = Chip<AUSWAHLMÖGLICHKEIT> RAM ROM
 
  RAMROM = RR
 
  CACHEROM = CR
+
+ PYLOVARA = LANGZEITSPEICHER Ð + BLANKERNENNER
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -64,16 +66,10 @@
 
  Komponenten : CRR
 
+ PYLOVARA = LANGZEITSPEICHER Ð + BLANKERNENNER
+
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
-
- Hinweis:
-
- Der CRS wurde aufgrund von fehlerhaften denkensmuster meinerseits
- von Board geworfen und wird in der weiteren entwicklung keine Rolle
- mehr spielen , stattdessen bekommt DIMS ein Update und wird
- alleinig dafür verwendet .
-
 
  Überlegungen :
 

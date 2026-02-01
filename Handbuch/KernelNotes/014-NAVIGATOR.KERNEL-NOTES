@@ -16,9 +16,9 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- NAVIGATOR KERN KLASSE § NAVIGATOR
+ NAVIGATOR KERNKLASSE § NAVIGATOR
 
- INFO = NAVIGATOR TRIGGER 
+ INFO = NAVIGATOR AUSLÖSER 
 
  BEGRIFFSDEFINTION = NAVIGATION
 
@@ -54,7 +54,7 @@
 
  FUNKTION = HAUPT MODUL
 
- SCHRIFTLICHE DEKLARATION § KLASSE
+ SCHRIFTLICHE DEKLARATION § HAUPTKLASSE
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -64,7 +64,7 @@
 
  FUNKTION = SEKTOR MODUL
 
- SCHRIFTLICHE DEKLARATION § KLASSE
+ SCHRIFTLICHE DEKLARATION § UNTERKLASSE
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -88,7 +88,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- NAVIGATOR AUSLÖSERKLASSE § AUSFÜHRKLASSE
+ NAVIGATOR AUSLÖSERKLASSE § AUSFÜHRUNGSKLASSE
 
  INFO = DEFINIERT WERKZEUG NUTZUNG
 
@@ -100,9 +100,9 @@
 
  NAVIGATOR AUSLÖSERKLASSE § LINKERKLASSE
 
- INFO = info fehlt
+ INFO = ERMÖGLICHT KONTEXTWECHSEL OHNE KONTROLL VERLUST
 
- FUNKTION = funktion fehlt
+ FUNKTION = MASTER VATRON RETRON MATRIX
 
  SCHRIFTLICHE DEKLARATION § LINKERKLASSE
 
@@ -228,4 +228,4 @@
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DATUM = [11:30:00|Di 27 JAN 2026] MARKENBRANDT
 # PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUKUNFT
-### ==== ##### == # === ### ENDPUNKT MATRIX ### === # == ##### === ###
+### ==== ##### == # === # ENDPUNKT NAVIGATOR ## === # == ##### === ###

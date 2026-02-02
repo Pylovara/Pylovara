@@ -5,8 +5,8 @@
 #   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
 #   01  · - X  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
 #   03  · + 0  PROTEIN        | 04  · + 0    PROTON                  #
-#   05  · - 0  TRENNBEFEHL    | 06  · - 0    AKTIONSDRAHT            #
-#   07  · - 0  BOXIS          | 08  Ŋ + 0    MASTER                  #
+#   05  · + 0  TRENNBEFEHL    | 06  · + 0    AKTIONSDRAHT            #
+#   07  · + 0  BOXIS          | 08  Ŋ + 0    MASTER                  #
 #   09  · - 0  REX            | 10  · - 0    SENTIATOR               #
 #   11  · - 0  ARGUMENT       | 12  · - 0    FEED                    #
 #   13  · - 0  WARP           | 14  Ŋ + 0    NAVIGATOR               #
@@ -31,7 +31,7 @@
 #   996   L4_AI_ADMINISTRATIONSMANDATE      ####  #  #   Since 2025 ##
 #   997   L5_Post_Mortem-Control            ## # ## ##   #   #  #   ##
 #   998   L6_Immutable_Cores_Definition     ##### ### # # ##### ## ###
-#   999   LICENSE—MANIFEST.PROTO            ## ## #### #### ## ## ## #
+#   999   LICENSE—MANIFEST.PROTO            ## ## #### ####  # ## ## #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # SYSTEM = PNS 2.6.1 PYLOVARA—NETZWERK—SYSTEM                        #
 # KERNEL = MCS 6.3 MASTER—CONTROL—SYSTEM                             #

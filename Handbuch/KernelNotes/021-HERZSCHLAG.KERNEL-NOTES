@@ -1,4 +1,4 @@
-@kernel-nr: 21 # HERZSCHLAG | STATUS = Ŋ
+@kernel-nr: 21 # HERZSCHLAG | STATUS = Ŋ X
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # === ### 8TAKT-HERZSCHLAG ## === # == ##### === ###
 
@@ -11,5 +11,34 @@ P4 (Mid),"500,000",REX-REFLEX: Halbzeit-Auswertung durch Modul 09.,REX
 P5,"625,000",BYTE-FEED 3: Dritter Datensatz (Resonanz-Korrektur).,¬··· (Aktion)
 P6,"750,000",RETRON-SYNC: Rückwärts-Abgleich der Endpunkte.,RETRON
 P7 (End),"875,000",CRC-FINALE: Abschlussvalidierung vor dem nächsten Schlag.,Ŋ (Vollzug)
+
+
+Der Aktionsdraht-Startpunkt (») ist nicht isoliert,
+sondern tief im 8-Takt-Herzschlag (kernel-nr: 21) abgebildet.
+
+Jeder Takt erneuert den Impuls physikalisch → Energie-Erhaltung durch den MIT-Taktgeber
+(kein Verbrauch, kein Decay).
+
+Prisma/Linsen-Ansatz als Lösung:
+Prisma: Licht (Top-Layer) wird gebrochen → automatische Pfadwahl
+(z. B. 450 nm = Core-Init, 650 nm = Parallel-Fork).
+
+Gravierte Linsen: Im Photonik-Layer eingraviert → spezifischer "Platz im Licht"
+→ Impuls wird rein optisch an den richtigen Knoten geleitet.
+Vorteil: Keine zusätzliche Elektronik, keine Schaltverluste
+→ pure Erneuerung durch Reflexion/Transmission.
+
+Kurze Tabelle: Aktionsdraht-Startpunkt im 8-Takt-Zyklus (Beispiel-Mapping)
+
+TaktPhysikalischer Puls (MIT)Aktionsdraht-Start
+(»)Prisma/Linsen-EffektFunktion / Erneuerung0Nano-Impuls Init» Persistent-ResetBrechung
+Init-KanalStartpunkt wird neu geladen1Erster Schlag» ErneuerungPrisma → Blau (450 nm)Trigger
+für DATENTYPEN/PROTEIN2Zweiter Schlag» BranchingLinsen-Gravur → GrünFork zu REX/BOXIS3Dritter
+Schlag» EvalPrisma → GelbSentiator-Entscheidung (¶/¶¶)4Vierter Schlag» Parallel ‹Linsen
+→ RotParallele Ausführung (REX-Workspaces)5Fünfter Schlag» Merge ›Prisma → ViolettFeed-Sync
+(±±)6Sechster Schlag» Cleanup (ſ)Linsen → IR (unsichtbar)Regel der Reinheit7Siebter Schlag»
+Persistent LoopPrisma → Full-SpectrumVollständige Erneuerung → nächster Zyklus
+→ Energie-Erhaltung: Der » "verbraucht" keinen Impuls – er reflektiert/transmittiert ihn
+durch Prisma/Linsen → selbsttragend.
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

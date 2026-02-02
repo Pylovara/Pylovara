@@ -18,7 +18,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KERN KLASSE = KKIS
+ KKIS-KERNKLASSE = KKIS
 
  INFO = INZSTANZ
 
@@ -28,7 +28,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-AUSLÖSERKLASSE
+ KKIS-HAUPTKLASSE = KKIK-KLASSE-AUSLÖSER
 
  INFO = INZSTANZ
 
@@ -38,7 +38,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-RETRON
+ KKIS-HAUPTKLASSE-UNTERKLASSE = KKIK-KLASSE-KKIH-KLASSE-RETRON
 
  INFO = INZSTANZ
 
@@ -48,7 +48,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-VATRON
+ KKIS-HAUPTKLASSE-UNTERKLASSE = KKIK-KLASSE-KKIH-KLASSE-VATRON
 
  INFO = INZSTANZ
 
@@ -58,7 +58,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-NAVIGATOR
+ KKIS-HAUPTKLASSE-UNTERKLASSE = KKIK-KLASSE-KKIH-KLASSE-NAVIGATOR
 
  INFO = INZSTANZ
 
@@ -68,7 +68,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-SENTIATOR
+ KKIS-HAUPTKLASSE-UNTERKLASSE = KKIK-KLASSE-KKIH-KLASSE-SENTIATOR
 
  INFO = INZSTANZ
 
@@ -78,7 +78,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-WARP
+ KKIS-HAUPTKLASSE-UNTERKLASSE = KKIK-KLASSE-KKIH-KLASSE-WARP
 
  INFO = INZSTANZ
 
@@ -88,7 +88,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-DATEITYPEN
+ KKIS-HAUPTKLASSE-UNTERKLASSE = KKIK-KLASSE-KKIH-KLASSE-DATEITYPEN
 
  INFO = INZSTANZ
 
@@ -98,7 +98,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- KKIS KLASSE = KKIS-SENTIATOR
+ KKIS-HAUPTKLASSE-UNTERKLASSE = KKIS-SENTIATOR
 
  INFO = INZSTANZ
 

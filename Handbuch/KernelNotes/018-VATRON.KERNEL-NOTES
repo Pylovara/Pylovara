@@ -16,7 +16,17 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON KERN KLASSE § VATRON
+ VATRON-KERNKLASSE § VATRON
+
+ INFO = VATRON BLOCKIERT NICHT DIREKT, SONDERN ENTSCHEIDET GÜLTIGKEIT
+
+ FUNKTION = VALIDIERUNG UND FREIGABE
+
+ AUSFÜHRUNGSART = ORCHESTRIEREND
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ VATRON-HAUPTKLASSE § VATK-KLASSE-AUSLÖSER
 
  INFO = VATRON BLOCKIERT NICHT DIREKT, SONDERN ENTSCHEIDET GÜLTIGKEIT
 
@@ -29,7 +39,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON KLASSE § VATRON-PASSIV
+ VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-PASSIV
 
  INFO = DURCHREICHENDE PASSIVE HALTUNG
 
@@ -41,7 +51,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON KLASSE § VATRON-PRÜFEND
+ VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-PRÜFEND
 
  INFO = PRÜFT PASSIV AUF VALIENZ
 
@@ -53,7 +63,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON KLASSE § VATRON-VERWORFEN
+ VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-VERWORFEN
 
  INFO = BLOCKT BEI UNGÜLTIGKEIT
 
@@ -65,7 +75,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON KLASSE § VATRON-BESTÄTIGT
+ VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-BESTÄTIGT
 
  INFO = GEHT ZUR LAUFZEIT
 

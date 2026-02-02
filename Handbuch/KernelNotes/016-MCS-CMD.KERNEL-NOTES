@@ -22,7 +22,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE § MCS-CMD-UND-AUSFÜHREN-SEQUENZIELL
+ MCS-CMD-HAUPTKLASSE § MCCK-KLASSE-UND-AUSFÜHREN-SEQUENZIELL
 
  INFO = BEFEHLSVERKNÜPFUNG | DETERMINISTISCHE REIHENFOLGE
 
@@ -32,7 +32,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE § MCS-CMD-KNOTENPUNKT
+ MCS-CMD-HAUPTKLASSE § MCCK-KLASSE-KNOTENPUNKT
 
  INFO = VERBINDET BEFEHLE
 
@@ -42,7 +42,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE § MCS-CMD-UND-AUSFÜHREN-PARALELL
+ MCS-CMD-HAUPTKLASSE § MCCK-KLASSE-UND-AUSFÜHREN-PARALELL
 
  INFO = BEFEHLSVERKNÜPFUNG | PARALELLER RAUM
 
@@ -52,7 +52,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE § MCS-CMD-SYSTEMCONTROL
+ MCS-CMD-HAUPTKLASSE § MCCK-KLASSE-SYSTEMCONTROL
 
  INFO = SYSTEM CONTROL OPTIONEN
 
@@ -82,7 +82,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCS-CMD-SYSTEMCONTROL-NEUSTART
+ MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCK-KLASSE-MCCH-KLASSE-MCCU-KLASSE-NEUSTART
 
  INFO = NEUSTART VON <PROZESS|PROGRAMM>
 
@@ -241,9 +241,6 @@
  FUNKTION = <DATEITYPEN> ERZEUGUNG
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
 # DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT
 # PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
 ### ==== ##### == # === ## ENDPUNKT MCS-CMD ### === # == ##### === ###

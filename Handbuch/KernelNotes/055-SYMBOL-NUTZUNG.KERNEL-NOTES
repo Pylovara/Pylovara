@@ -905,9 +905,20 @@ je nach hardware ohne neu analyse zu benutzen ...
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
-
-
-
-
+# PYLOVARA-BOOTROM – erster MCS-Code nach Reset
+¢!
+Ŧ⁴ ¬·["BOOT-SEQUENZ"]«
+     ¶ ¬·»[~ENUMERATE-CPU~]«
+          ¬·¤: »["(FF:CPU-CORES)±8±"]«
+    
+     ¶ ¬· »[~ENUMERATE-RAM~]«
+           ¬·¤: »["(FF:RAM-SIZE)±16GB±"]«
+    
+     ¶ ¬· »[~ENUMERATE-GPU~]«
+           ¬·¤: »["(FF:GPU-MODEL)±RTX4090±"]«
+    
+     ¶ ¬· »[~LOAD-KERNEL "/pylovara/mcs/core.mcs"~]«
+ſ
+!¢
 
 ### ==== ##### == # === # ENDPUNK SYMBOL-NUTZUNG == # == ##### === ###

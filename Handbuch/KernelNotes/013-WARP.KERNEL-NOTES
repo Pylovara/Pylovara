@@ -1,9 +1,9 @@
-@kernel-nr: 13 # WARP | STATUS = KONSOLIDIERT
-#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+@kernel-nr: 13 # WARP | STATUS = 0
+# LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID> #
 ### ==== ##### == # === ### == WARP HINWEIS ### === # == ##### === ###
-#  WARP HÄLT ORIGINALE-COMPILER-REALITÄT STABIL, (Dialekt-Adapter)
-#  WÄHREND PYLOVARA SICH WEITERENTWICKELT.
-#  HEIẞT =
+# WARP HÄLT ORIGINALE-COMPILER-REALITÄT STABIL, (Dialekt-Adapter)
+# WÄHREND PYLOVARA SICH WEITERENTWICKELT.
+# HEIẞT =
 # - ALTE ABI-ERWARTUNGEN BLEIBEN GÜLTIG
 # - ALTE COMPILER-DENKMUSTER BLEIBEN INTAKT
 # - ALTE TOOLCHAINS MÜSSEN NICHT MODERNISIERT WERDEN
@@ -27,7 +27,7 @@
 
  INFO = DIREKTE ORIGINALE COMPILER BINDUNG TRANSPORTRAHMEN
 
- FUNKTION = LEGACY TRANSPORTRAHMEN 
+ FUNKTION = LEGACY TRANSPORTRAHMEN
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -37,7 +37,7 @@
 
  INFO = DIREKTE ORIGINALE COMPILER BINDUNG TRANSPORTRAHMEN
 
- FUNKTION = LEGACY TRANSPORTRAHMEN 
+ FUNKTION = LEGACY TRANSPORTRAHMEN
 
  SYMBOLISCHE DEKLARATION § øĸ ĸø
 
@@ -55,110 +55,301 @@
  SYMBOLISCHE DEKLARATION § øĸ
 
  SYMBOL IN WORTEN = KLAMMER AUF ĸø
-   
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-C
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Direkte Bindung an C-Compiler-ABI und Toolchain (gcc/clang)
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Stabile Legacy-Übertragung von C-Code und Binaries
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-PYTHON
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Bindung an CPython- oder PyPy-ABI und Interpreter-Umgebung
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Stabile Ausführung und Bridging von Python-Code
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-RUST
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Direkte Integration der Rust-ABI und Cargo-Toolchain
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Legacy-kompatible Übertragung von Rust-Binaries
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-JSON
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Bindung an JSON-Parsing- und Serialisierungs-Bibliotheken
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Stabile Datenübertragung im JSON-Format
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-XML
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Integration von XML-Parsern und DOM/SAX-Interfaces
 
- FUNKTION = DAUERBINDUNG
-  
+ FUNKTION = Legacy-kompatible XML-Datenübertragung
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-YAML
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Bindung an YAML-Parser und Konfigurations-Deserialisierung
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Stabile Übertragung von YAML-Konfigurationen
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-SQL
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Direkte Anbindung an SQL-Dialekte und Datenbank-ABIs
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Legacy-Übertragung von SQL-Abfragen und Schemata
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-APP
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Bindung an Anwendungs-Frameworks und Runtime-Umgebungen
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Stabile Ausführung von Applikations-Binaries
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-ASM
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Direkte Integration von Assembler- und Maschinencode-ABIs
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Legacy-Übertragung von Low-Level-Code
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-GCC
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Vollständige GCC-Toolchain- und ABI-Kompatibilität
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Stabile Bindung an GCC-generierte Binaries
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-CLANG
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Clang/LLVM-Toolchain- und ABI-Kompatibilität
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Legacy-Übertragung von Clang-kompiliertem Code
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-HTML5
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Bindung an HTML5/CSS3/JS Runtime und Browser-ABIs
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Stabile Übertragung von Web-Content
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  WARP-LEGACY-MODULKLASSE § WARO-JAVASCRIPT
 
- INFO = WIRD FÜR C COMPILER DAUERVERBINDUNGEN GENOMMEN
+ INFO = Direkte Integration von JS-Engines (V8, SpiderMonkey, JSC)
 
- FUNKTION = DAUERBINDUNG
+ FUNKTION = Legacy-Ausführung von JavaScript-Code
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-MACOS
+
+ INFO = Darwin/xnu-basierte macOS-ABI und Frameworks (Foundation, Core)
+
+ FUNKTION = Stabile Bindung an macOS-spezifischen Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-OBJC
+
+ INFO = Objective-C Runtime und Messaging-ABI
+
+ FUNKTION = Legacy-Übertragung von Objective-C-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-SWIFT
+
+ INFO = Swift-ABI und Runtime (Swift 5+ ABI-Stabilität)
+
+ FUNKTION = Stabile Bindung an Swift-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-METAL
+
+ INFO = Metal-Grafik-API und Shader-ABI
+
+ FUNKTION = Legacy-Übertragung von Metal-basierten Grafik-Workloads
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-COREAUDIO
+
+ INFO = CoreAudio / CoreMIDI-Frameworks und Audio-ABI
+
+ FUNKTION = Stabile Bindung an macOS-Audio/MIDI
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-APPKIT
+
+ INFO = AppKit / SwiftUI-UI-Frameworks und macOS-UI-ABI
+
+ FUNKTION = Legacy-Übertragung von macOS-UI-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-WIN32
+
+ INFO = Klassische Win32/WinAPI und 32/64-Bit-ABI
+
+ FUNKTION = Stabile Bindung an Windows-Native-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-WIN64
+
+ INFO = Win64-Erweiterung und moderne Windows-ABI
+
+ FUNKTION = Legacy-Übertragung von 64-Bit-Windows-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-DOTNET
+
+ INFO = .NET CLR / Core Runtime und Managed-Code-ABI
+
+ FUNKTION = Stabile Ausführung von .NET-Anwendungen
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-UWP
+
+ INFO = Universal Windows Platform und UWP-ABI
+
+ FUNKTION = Legacy-Bindung an UWP-Apps
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-DIRECTX
+
+ INFO = DirectX 11/12 Grafik- und Compute-ABI
+
+ FUNKTION = Stabile Übertragung von DirectX-Workloads
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-WINRT
+
+ INFO = Windows Runtime und COM-basierte WinRT-ABI
+
+ FUNKTION = Legacy-Übertragung von WinRT-Komponenten
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-MSBUILD
+
+ INFO = MSBuild und Visual Studio Build-ABI
+
+ FUNKTION = Stabile Bindung an Microsoft-Build-Systeme
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-JAVA
+
+ INFO = JVM-ABI und Java Runtime Environment
+
+ FUNKTION = Legacy-Ausführung von Java-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-GO
+
+ INFO = Go-Runtime und Go-ABI
+
+ FUNKTION = Stabile Bindung an Go-Programme
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-RUBY
+
+ INFO = MRI/YJIT Ruby-Interpreter und ABI
+
+ FUNKTION = Legacy-Übertragung von Ruby-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-PHP
+
+ INFO = Zend Engine und PHP-ABI
+
+ FUNKTION = Stabile Ausführung von PHP-Skripten
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-LUA
+
+ INFO = LuaJIT / Lua 5.4 Runtime und ABI
+
+ FUNKTION = Legacy-Bindung an Lua-Code
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-WASM
+
+ INFO = WebAssembly-Runtime und WASM-ABI
+
+ FUNKTION = Stabile Übertragung von WebAssembly-Modulen
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-DOCKER
+
+ INFO = OCI/Container-ABI und Docker-Runtime
+
+ FUNKTION = Legacy-Übertragung von Container-Images
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-ELF
+
+ INFO = ELF-Executable-Format (Linux/BSD)
+
+ FUNKTION = Stabile Bindung an ELF-Binaries
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-PE
+
+ INFO = PE/COFF-Executable-Format (Windows)
+
+ FUNKTION = Legacy-Übertragung von Windows-PE-Dateien
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-MACH-O
+
+ INFO = Mach-O-Executable-Format (macOS/iOS)
+
+ FUNKTION = Stabile Bindung an Mach-O-Binaries
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ WARP-LEGACY-MODULKLASSE § WARO-FATBIN
+
+ INFO = Universal Binaries (Apple Silicon + Intel)
+
+ FUNKTION = Legacy-Übertragung von Fat-Binaries
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -169,9 +360,9 @@
 
  FUNKTION = LEGACY TRANSPORTRAHMEN ENDPUNKT
 
- SYMBOLISCHE DEKLARATION §    ĸø
+ SYMBOLISCHE DEKLARATION § ĸø
 
- SYMBOL IN WORTEN = ĸø 
+ SYMBOL IN WORTEN = ĸø
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -186,10 +377,10 @@
 
  SYMBOL IN WORTEN = DOLLAR
 
-### ==== ##### == # === ###  ENDPUNKT WARP  ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # ABSOLUTER SCHALTKREIS = WARU-START-MASU-<ELEMENT>-WARAN-ENDE
 # RELATIVER SCHALTKREIS = WARK-MASK-WARK
-### ==== ##### == # === ###  ENDPUNKT WARP  ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DATUM = [02:00:44|FR 02 JAN 2026] MARKENBRANDT
-# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUCKUNFT
+# PYLOVARA-SYSTEM INDUSTRIE STANDART DER ZUKUNFT
 ### ==== ##### == # === ###  ENDPUNKT WARP  ### === # == ##### === ###

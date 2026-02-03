@@ -6,7 +6,7 @@
  DIESER BEREICH IST LEER
 
 #====================================================================#
-@info-id: WARPS
+@info-id: WARP
 #====================================================================#
 
  ERKLÄRUNG =
@@ -59,5 +59,32 @@
     return 0;
  }
  ĸø = §gcc
+
+#====================================================================#
+
+ mögliche einsatzgebiete 16-bit DOS-Spiele auf ARM-Mac:
+
+pylovara
+¢!»[øĸ 'C:\DOOM\DOOM.EXE' ĸø]«!¢
+# WARP erkennt DOS-Binary
+# Legt Pylovara-Dateityp .legacy-dos-exe an  
+# BOXIS orchestriert DOSBox-Integration
+# Kernel-Checks: TRUE (weil Pylovara-kontrolliert)
+2. Win32-Treiber auf Linux-Kernel:
+
+pylovara
+¢!»[{øĸ 'nvidia_old.sys' ĸø}]«!¢
+# WARP kapselt Windows-Treiber
+# Pylovara-Dateityp .legacy-win-driver
+# Übersetzungsschicht zu Linux-Kernel-API
+# Vollständige Hardware-Kontrolle durch Pylovara
+3. COBOL-Batch auf Kubernetes:
+
+pylovara
+¢!»[øĸ 'banking_1978.cob' | 'cobc -x' | './banking' ĸø]«!¢
+# COBOL-Compiler in WARP-Kapsel
+# Output wird Pylovara-Prozess
+# In Kubernetes-Pod orchestriert
+# Legacy wird Cloud-Native
 
 #====================================================================#

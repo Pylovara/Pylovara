@@ -377,13 +377,20 @@
 
  SYMBOL IN WORTEN = DOLLAR
 
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### === INFOBOX === ### === # == ##### === ###
 # [Fremder Legacy-Code] 
 #    → [WARP-Zeitkapsel (øĸ ... ĸø)] 
 #        → [BOXIS-Orchestrierung] 
 #            → [Native Pylovara-Dateitypen] 
 #                → [MCS-Kernel-Checks = TRUE]
+#
+#      Legacy-Binary → WARP-Kapsel → PYLOVARA-DATEITYP
+#       ↓
+#      Eingepasst in die Hierarchie:
+#      - .exe → .pylo-legacy-NEEDLE
+#      - .dll → .pylo-legacy-MICRO  
+#      - .sys → .pylo-legacy-LCORE
+#      - .ko  → .pylo-legacy-LCORE
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # ABSOLUTER SCHALTKREIS = WARU-START-MASU-<ELEMENT>-WARAN-ENDE
 # RELATIVER SCHALTKREIS = WARK-MASK-WARK

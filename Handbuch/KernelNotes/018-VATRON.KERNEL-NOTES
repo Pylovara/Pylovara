@@ -6,7 +6,7 @@
 
  INFO-ID § VATRON
 
- MASTER § MASTER-VATRON
+ MASTER § MASU-VATRON
 
  BEGRIFFSDEFINITION = VALIDIERUNORCHESTRATOR | GRENZKONTROLLE
 
@@ -16,7 +16,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-KERNKLASSE § VATRON
+ VATRON-KERNKLASSE § VATK
 
  INFO = VATRON BLOCKIERT NICHT DIREKT, SONDERN ENTSCHEIDET GÜLTIGKEIT
 
@@ -26,7 +26,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-HAUPTKLASSE § VATK-KLASSE-AUSLÖSER
+ VATRON-HAUPTKLASSE § VATU-VALIDA
 
  INFO = VATRON BLOCKIERT NICHT DIREKT, SONDERN ENTSCHEIDET GÜLTIGKEIT
 
@@ -39,7 +39,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-PASSIV
+ VATRON-HAUPTKLASSE-UNTERKLASSE § VATU-PASSIV
 
  INFO = DURCHREICHENDE PASSIVE HALTUNG
 
@@ -51,7 +51,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-PRÜFEND
+ VATRON-HAUPTKLASSE-UNTERKLASSE § VATU-PRÜFEND
 
  INFO = PRÜFT PASSIV AUF VALIENZ
 
@@ -63,7 +63,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-VERWORFEN
+ VATRON-HAUPTKLASSE-UNTERKLASSE § VATU-VERWORFEN
 
  INFO = BLOCKT BEI UNGÜLTIGKEIT
 
@@ -75,7 +75,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-AUSLÖSER-UNTERKLASSE § VATK-KLASSE-VATH-KLASSE-VATU-KLASSE-BESTÄTIGT
+ VATRON-HAUPTKLASSE-UNTERKLASSE § VATU-BESTÄTIGT
 
  INFO = GEHT ZUR LAUFZEIT
 
@@ -85,6 +85,9 @@
 
  WIRKUNG = LAUFZEIT
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# ABSOLUTER SCHALTKREIS =
+# RELATIVER SCHALTKREIS =
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DATUM = [02:50:12|Do Jan 29] MARKENBRANDT
 # PYLOVARA-SYSTEM = INDUSTRIE STANDART DER ZUCKUNFT

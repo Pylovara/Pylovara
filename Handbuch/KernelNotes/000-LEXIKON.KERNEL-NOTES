@@ -1,6 +1,7 @@
 ﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # # # # ## ## # #  #    #
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-# X NICHT AKTIV | + AKTIV | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND #
+#   · KEIN EINTRAG | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND        #
+#          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                   #
 ### ==== Ð ID-DNA-SYSTEM-LEXIKON  $ /Pylovara/Handbuch/KernelNotes/ ##
 #   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
 #   01  · - X  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
@@ -12,12 +13,10 @@
 #   13  · + 0  WARP           | 14  Ŋ + 0    NAVIGATOR               #
 #   15  · + 0  IDENTIFIKATION | 16  · + 0    MCS-CMD                 #
 #   17  · + 0  DATEITYPEN     | 18  · - 0    VATRON                  #
-#   19  · - 0  RETRON         | 20  · - 0    MATRIX                  #
-#   21 · · ·   HERZSCHLAGT    | 22 
+#   19  · - 0  RETRON         | 20  Ŋ - X    MATRIX                  #
+#   21  Ŋ - X  HERZSCHLAGT    | 22  Ŋ - X    KKIS                    #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 #   NR Hinweis KKI-PROGRAMME-INFO-ID                                 #
-#   40  · · X  SUPER OPERATOREN                                      #
-#   41  Ŋ - 0  KKIS                                                  #
 #   42  · · X  ZELLEN-IMPULSER                                       #
 #   50  · · X  CHIP-PROGRAMTECHNIK          ##########################
 #   51  · · X  ENERGIE-MATRIX               # ### #### #### #####   ##
@@ -31,7 +30,7 @@
 #   995   L3_COMMERCIALLICENSING            #   Pylovara—System©    ##
 #   996   L4_AI_ADMINISTRATIONSMANDATE      # ##  #  #   Since 2025 ##
 #   997   L5_Post_Mortem-Control            ## # ## ##   #   #  #   ##
-#   998   L6_Immutable_Cores_Definition     ##### ### # # ##### ## ###
+#   998   L6_Immutable_Cores_Definition     ### # ### # # ## ## ## ###
 #   999   LICENSE—MANIFEST.PROTO            ## ## #### ####  # ## ## #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # SYSTEM = PNS 2.6.1 PYLOVARA—NETZWERK—SYSTEM                        #

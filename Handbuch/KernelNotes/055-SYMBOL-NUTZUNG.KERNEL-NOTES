@@ -73,7 +73,7 @@ skizze id-abgleich
                                 ¶ -·· [~run intelarc.GPU-MCORE~]«««T3
                                       ¶ -·· [~run intelarc.GPU-FCORE~]«««T4
      ¶¶ -·· »[~MACH DATEITYPE-FLAG~]
-             ¶ -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLERBERICHTE~]«
+             ¶ -·· »[~FEHLERBERICHT-ZU & /Pylovara/FEHLERBERICHTE~]«
 
  # STARTET AUF ['exec <SPIEL>']
  –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
@@ -113,26 +113,26 @@ skizze id-abgleich
 # ======================================================
 
 »['exec "C:\Games\HaloInfinite\halo.exe"']«
- -·¤: ['Spielstart initialisiert']«
+ ¬·¤: ['Spielstart initialisiert']«
 
 # ================== PHASE 1: BINARY LOAD & VALIDATION ==================
-¶ -· ['execve("./halo.exe", argv, env)']«
+¶ ¬· ['execve("./halo.exe", argv, env)']«
      # ELF/EXE Loading Pipeline
-     –·¤: ['Lädt PE/EXE Header']«
+     ¬·¤: ['Lädt PE/EXE Header']«
          »[~CHECK SIGNATURE "MZ"~]«
           ¶ »[× VALIDE ×]«
-               -·¤= »["(FF:EXE-VALID)±TRUE±"]«
+             ¬·¤= »["(FF:EXE-VALID)±TRUE±"]«
           ¶¶ »[× INVALIDE ×]«
-              -· »[~ABBRUCH "Invalid EXE"~]«
+              ¬· »[~ABBRUCH "Invalid EXE"~]«
 
-    -·¤: ['Mapped Sections in RAM']«
+     ¬·¤: ['Mapped Sections in RAM']«
          »[~VIRTUAL-ALLOC BASE=0x140000000 SIZE=0x2000000~]«
          -·¤= »["(FF:EXE-BASE)±0x140000000±"]«
          -··¤= »["(FF:EXE-SIZE)±0x2000000±"]«
 
-    -·¤: ['Springt in Entry Point']«
-         »[~JUMP-TO ±FF:EXE-BASE± + 0x1000~]«
-         -·¤: ['Entry Point erreicht']«
+     ¬·¤: ['Springt in Entry Point']«
+          ¶ ¬· »[~JUMP-TO ±FF:EXE-BASE± + 0x1000~]«
+                ¶ ¬·¤: ['Entry Point erreicht']«
 
 # ================== PHASE 2: HARDWARE-INITIALISIERUNG ==================
 ¶ -·[~RUN-GPU~]«

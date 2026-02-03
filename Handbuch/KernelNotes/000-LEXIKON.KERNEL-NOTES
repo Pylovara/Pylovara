@@ -1,10 +1,10 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # # # # ## ## # #  #    #
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # # # # ## ## # #  # ## #
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 #   · KEIN EINTRAG | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND        #
 #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                   #
 ### ==== Ð ID-DNA-SYSTEM-LEXIKON  $ /Pylovara/Handbuch/KernelNotes/ ##
 #   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
-#   01  · - ·  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
+#   01  · - X  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
 #   03  · + 0  PROTEIN        | 04  · + 0    PROTON                  #
 #   05  · + 0  TRENNBEFEHL    | 06  · + 0    AKTIONSDRAHT            #
 #   07  · + 0  BOXIS          | 08  Ŋ + 0    MASTER                  #
@@ -29,8 +29,8 @@
 #   994   L2_AUTHORRIGHTS                   # PKS | MCS | BMC #   #  #
 #   995   L3_COMMERCIALLICENSING            #   Pylovara—System©     #
 #   996   L4_AI_ADMINISTRATIONSMANDATE      # ##  #  #   Since 2025 ##
-#   997   L5_Post_Mortem-Control            ## # ## #    #   #  #   ##
-#   998   L6_Immutable_Cores_Definition     # # # ### # # ## ## ## ###
+#   997   L5_POST_MORTEM-CONTROL            ## # ## #    #   #  #   ##
+#   998   L6_IMMUTABLE_CORES_DEFINITION     # # # ### # # ## ## ## ###
 #   999   LICENSE—MANIFEST.PROTO            ## ## #### ####  # ## ## #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # SYSTEM = PNS 2.6.1 PYLOVARA—NETZWERK—SYSTEM                        #
@@ -42,9 +42,9 @@
 # LIZENSEN = LV 0.7 LIZENSVERTRAG                                    #
 # SINGEL SOURCE OF TRUTH § SSoT Lexikon Version 00.72                #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# Autor: OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68 since 2025             #
-# Standort: /Pylovara/Handbuch/Kernel/                               #
-# STATUS = Vollständige Rollende-Verbesserungen                      #
+# AUTOR = OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68 since 2025            #
+# STANDORT = /Pylovara/Handbuch/Kernel/                              #
+# STATUS = VOLLSTÄNDIGE ROLLENDE-VERBESSERUNGEN                      #
 # PDF NAMENSLAYER = PYLOVARA-SYSTEM-SSoT-XX.XX.pdf                   #
 # GARANTIERTE BERUFSERFAHRUNG = PYLOVARA-NETZWERK-SYSTEM             #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

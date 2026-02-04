@@ -11,58 +11,42 @@
 
  ERKLÄRUNG =
 
- DIE ADRESSIERUNG DIENT ALS DIREKTER KNOTENPUNKT ZUR
- IDENTIFIKATION UND ZUORDNUNG VON ZIELREFERENZEN ($) UND
- DIRIGENTEN (§).
+  DER NAVIGATOR NAVIGIERT DAS SYSTEM , 
+  WEIS WO WELCHE OPTION AUFHÖRT.
 
- SIE ERMÖGLICHT DEN TRANSPORT VON DATEN, BEFEHLEN UND
- ZUSTÄNDEN DURCH DAS ADRESSIERUNGS-SYMBOL "=", WELCHES ALS
- VERBINDUNGSOPERATOR DIENT.
+  DAS MASTER HAT DIE VERSCHACHTELUNG, DER NAVIGATOR GROBE
+  NAVIGATIONS RICHTLINIEN , WAS WAS IST. 
 
- ZUSATZINFO:
- WIRD DERZEIT NOCH NICHT IM MCS-DESKTOP VERWENDET (IN CONFIGS),
- DA IN EINFACHEN ANWENDUNGSFÄLLEN NICHT NOTWENDIG.
+  BEIDES ZUSAMMEN ERGEBEN DIE SCHALTUNG , WOBEI ALLE KOMPONENTEN 
+  FÜR SICH SELBST VERSCHALTET SIND.
 
+  DER NAVIGATOR DIENT ALS EIGENE EBENE UM SPÄTERE GUI SCHNISTELLEN
+  ÜBER  MICRO BIS NODE BIS VCORE DATEITYPEN EINORDNEN ZU KÖNNEN  
 
- UNTERSTÜTZTE ZIELREFERENZEN:
- / $Prozess-ID          = Laufende Prozesse
- / $Hardware-Slot       = Hardware-Komponenten
- / $Gerätepfad          = Pfade in RAM, Dev, CPU-Bereich
- / $OrdnerPfad          = Verzeichnisse für Ausführbare/Laufende Links
- / $Compositoren        = Grafik-/Video-Compositing-Engine
- / $Compiler            = Compiler-Instanzen
-
- BEISPIEL:
- = $OrdnerPfad          # Sendet an Verzeichnis
- = $Compiler            # Sendet an Compiler
+  ZUSATZINFO:
+  WIRD DERZEIT NOCH NICHT IM MCS-DESKTOP VERWENDET (IN CONFIGS),
+  DA IN EINFACHEN ANWENDUNGSFÄLLEN NICHT NOTWENDIG.
 
 
- UNTERSTÜTZTE DIRIGENTEN:
- / §lokale-API          = Lokale Programmierschnittstellen
- / §Kernelpfad          = Kernel-interne Pfade
- / §Netzwerk            = Netzwerkverbindungen
- / §InternetAdresse     = Internet-URLs und Domains
- / §Email               = E-Mail-System (Direktversand)
- / §Imei                = Geräte-Identifikation (Updates)
- / §BuildNr             = Software-Build-Nummern (Updates)
+  UNTERSTÜTZTE ZIELREFERENZEN:
+  / $Prozess-ID          = Laufende Prozesse
+  / $Hardware-Slot       = Hardware-Komponenten
+  / $Gerätepfad          = Pfade in RAM, Dev, CPU-Bereich
+  / $OrdnerPfad          = Verzeichnisse für Ausführbare/Laufende Links
+  / $Compositoren        = Grafik-/Video-Compositing-Engine
+  / $Compiler            = Compiler-Instanzen
+  / $Kernelpfad          = Kernel-interne Pfade
+  / $Netzwerk            = Netzwerkverbindungen
+  / $URL                 = Internet-URLs und Domains
+  / $Email               = E-Mail-System (Direktversand)
+  / $Imei                = Geräte-Identifikation (Updates)
+  / $BuildNr             = Software-Build-Nummern (Updates)
 
- BEISPIEL:
- = §Netzwerk            # Sendet ins Netzwerk
- = §Email               # Sendet als E-Mail
-
-#====================================================================#
-
- HINWEISE:
-
- 1. ADRESSIERUNG IST OPTIONAL – EINFACHE TRANSACTIONEN KÖNNEN
-    OHNE EXPLIZITE ADRESSIERUNG AUSKOMMEN.
-
- 2. ZIELREFERENZEN ($) SIND SYSTEMINTERN, DIRIGENTEN (§) SIND
-    SYSTEMEXTERN.
-
- 3. DIE ADRESSIERUNGSLOGIK ERMÖGLICHT EINE KLARE TRENNUNG
-    ZWISCHEN INTERNER VERARBEITUNG UND EXTERNER KOMMUNIKATION.
-
- 4. BEI MEHRFACHADRESSE/IERUNG WERDEN DATEN PARALLEL GESENDET.
+  BEISPIEL:
+  = $OrdnerPfad          # Sendet an Verzeichnis
+  = $Compiler            # Sendet an Compiler
+  = $Netzwerk            # Sendet ins Netzwerk
+  = $Email               # Sendet als E-Mail
+  = $URL                 # FÄHRT IN DIE SEITE
 
 #====================================================================#

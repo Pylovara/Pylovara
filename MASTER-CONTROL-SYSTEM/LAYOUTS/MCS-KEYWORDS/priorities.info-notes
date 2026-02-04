@@ -6,27 +6,62 @@
 # STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - KKIS NAME = ShiVa
 # =============================================================================
 # Format = 
-# SYMBOL MATCHES| PUNKTE KASTEN     | WAS ES BEDEUTET
-# MASTER ======================================================================
-DATEK             | 0.0 | 0.0 | 0.1 | DATENTYPEN
-TRANK             | 0.0 | 0.0 | 0.1 | TRANSAKTIONSRAHMEN
-POIK              | 0.0 | 0.0 | 0.1 | PROTEIN
-POOK              | 0.0 | 0.0 | 0.1 | PROTON
-TRENK             | 0.0 | 0.0 | 0.1 | TRENNBEFEHL
-BOXK              | 0.0 | 0.0 | 0.1 | BOXIS
-MASK              | 0.0 | 0.0 | 0.1 | MASTER
-REXK              | 0.0 | 0.0 | 0.1 | REX
-ARGK              | 0.0 | 0.0 | 0.1 | ARGUMENT
-FEEK              | 0.0 | 0.0 | 0.1 | FEED
-WARK              | 0.0 | 0.0 | 0.1 | WARP
-NAVK              | 0.0 | 0.0 | 0.1 | NAVIGATOR
-IDENK             | 0.0 | 0.0 | 0.1 | IDENTIFIKATION
-MCCK              | 0.0 | 0.0 | 0.1 | MCS-CMD
-DATIK             | 0.0 | 0.0 | 0.1 | DATEITYPEN
-VATK              | 0.0 | 0.0 | 0.1 | VATRON
-RETK              | 0.0 | 0.0 | 0.1 | RETRON
-MATK              | 0.0 | 0.0 | 0.1 | MATRIX
-KKIK              | 0.0 | 0.0 | 0.1 | KKIS
+# SYMBOL MATCHES  | PUNKTE KASTEN   | WAS ES BEDEUTET
+# MASTER REGISTER KLASSEN ALPHABE =============================================
+#
+## DEUTUNGSRAUM =
+*                 | 0.2 | 0.0 | 0.1 | SEHE ETWAS
+*|                | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR
+*|*               | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DANACH
+MASK              | 0.2 | 0.0 | 0.1 | SEHE ETWAS
+MASK|             | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR
+MASK|MASK         | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DANACH
+#
+## KLASSENRAUM =
+K                 | 0.2 | 0.0 | 0.1 | KERNKLASSE
+H                 | 0.2 | 0.0 | 0.1 | HAUPTKLASSE
+U                 | 0.2 | 0.0 | 0.1 | UNTERKLASSE
+O                 | 0.2 | 0.0 | 0.1 | OPTIONSKLASSE
+AU                | 0.2 | 0.0 | 0.1 | AUSFÜHRERKLASSE
+WERK              | 0.2 | 0.0 | 0.1 | WERKZEUGKLASSE
+AN                | 0.2 | 0.0 | 0.1 | ANKERKLASSE
+WERT              | 0.2 | 0.0 | 0.1 | WERTLASSE
+L                 | 0.2 | 0.0 | 0.1 | LINKERKLASSE
+AUS               | 0.2 | 0.0 | 0.1 | AUSLÖSERKLASSE
+## DEUTUNGSKLASSENRAUM =
+*|K               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH K = KERNKLASSE
+*|H               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH H = HAUPTKLASSE
+*|U               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH U = UNTERKLASSE
+*|O               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH O = OPTIONSKLASSE
+*|AU              | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AU = AUSFÜHRERKLASSE
+*|WERK            | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH WERK = WERKZEUGKLASSE
+*|AN              | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AN = ANKERKLASSE
+*|WERT            | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH WERT = WERTKLASSE
+*|AUS             | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AUS = AUSLÖSERKLASSE
+## SCHALTUNGSRAUM =
+K|H|U|AN          | 5.0 | -1.0 | -1.0 | PERFEKTE KLASSEN-HIERARCHIE
+BOXK|BOXH|BOXAN   | 8.0 | -1.2 | -1.2 | CONTAINER-INTEGRITÄT-BONUS
+POIK|POIH|POIAN   | 8.0 | -1.2 | -1.2 | SOFTWARE-STRUKTUR-BONUS
+# MASTER SCORE TREIBER ========================================================
+DATEK             | 0.2 | 0.0 | 0.1 | DATENTYPEN-KERNKLASSE
+TRANK             | 0.2 | 0.0 | 0.1 | TRANSAKTIONSRAHMEN-KERNKLASSE
+POIK              | 0.2 | 0.0 | 0.1 | PROTEIN-KERNKLASSE
+POOK              | 0.2 | 0.0 | 0.1 | PROTON-KERNKLASSE
+TRENK             | 0.2 | 0.0 | 0.1 | TRENNBEFEHL-KERNKLASSE
+BOXK              | 0.2 | 0.0 | 0.1 | BOXIS-KERNKLASSE
+MASK              | 0.2 | 0.0 | 0.1 | MASTER-KERNKLASSE
+REXK              | 0.2 | 0.0 | 0.1 | REX-KERNKLASSE
+ARGK              | 0.2 | 0.0 | 0.1 | ARGUMENT-KERNKLASSE
+FEEK              | 0.2 | 0.0 | 0.1 | FEED-KERNKLASSE
+WARK              | 0.2 | 0.0 | 0.1 | WARP-KERNKLASSE
+NAVK              | 0.2 | 0.0 | 0.1 | NAVIGATOR-KERNKLASSE
+IDENK             | 0.2 | 0.0 | 0.1 | IDENTIFIKATION-KERNKLASSE
+MCCK              | 0.2 | 0.0 | 0.1 | MCS-CMD-KERNKLASSE
+DATIK             | 0.2 | 0.0 | 0.1 | DATEITYPEN-KERNKLASSE
+VATK              | 0.2 | 0.0 | 0.1 | VATRON-KERNKLASSE
+RETK              | 0.2 | 0.0 | 0.1 | RETRON-KERNKLASSE
+MATK              | 0.2 | 0.0 | 0.1 | MATRIX-KERNKLASSE
+KKIK              | 0.2 | 0.0 | 0.1 | KKIS-KERNKLASSE
 # NAVIGATOR ===================================================================
 Ð                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-LANGZEITSPEICHER
 $                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-ZIELREFERENZ
@@ -35,70 +70,67 @@ $                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-ZIELREFERENZ
 …                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-INHALT
 RAUTE-SYMBOLE      | 0.6 | -0.2 | -0.3 | NAVIGATOR-KOMMENTAR
 # MCS-PROGRAMIER-ELEMENTE =====================================================
-¢!                 | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-TRANU-START
-!¢                 | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
-»                  | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-AKTU-START
-«                  | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-AKTAN-ENDE
-[                  | 1.0 | -0.8 | -0.8 | PROTEIN-SOFT-POIU-START
-]                  | 1.0 | -0.8 | -0.8 | PROTEIN-SOFT-POIAN-ENDE
-{                  | 1.0 | -0.8 | -0.8 | PROTON-HARD-POOU-START
-}                  | 1.0 | -0.8 | -0.8 | PROTON-HARD-POOAN-ENDE
-(                  | 1.0 | -0.8 | -0.8 | FEED-FEEWERK-START
-)                  | 1.0 | -0.8 | -0.8 | FEED-FEEWERK-ENDE
-««                 | 1.0 | -0.8 | -0.8 | ARGUMENT-ARGH-OPTION
-<EINGABE>          | 1.0 | -0.8 | -0.8 | ARGUMENT-ARGWERT-<EINGABE>
+¢!                 | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANU-START
+!¢                 | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
+»                  | 1.3 | -0.3 | -0.7 | AKTIONSDRAHT-AKTU-START
+«                  | 1.3 | -0.3 | -0.7 | AKTIONSDRAHT-AKTAN-ENDE
+[                  | 1.3 | -0.3 | -0.7 | PROTEIN-SOFT-POIU-START
+]                  | 1.3 | -0.3 | -0.7 | PROTEIN-SOFT-POIAN-ENDE
+{                  | 1.3 | -0.3 | -0.7 | PROTON-HARD-POOU-START
+}                  | 1.3 | -0.3 | -0.7 | PROTON-HARD-POOAN-ENDE
+(                  | 1.3 | -0.3 | -0.7 | FEED-FEEWERK-START
+)                  | 1.3 | -0.3 | -0.7 | FEED-FEEWERK-ENDE
+««                 | 1.3 | -0.3 | -0.7 | ARGUMENT-ARGH-OPTION
+<EINGABE>          | 1.3 | -0.3 | -0.7 | ARGUMENT-ARGWERT-<EINGABE>
 # TRANSAKTIONSRAHMEN ==========================================================
-¢!MASK             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-TRANU-START
-MASK!¢             | 2.2 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
+¢!MASK             | 2.0 | -0.5 | -1.0 | TRANSAKTIONSRAHMEN-TRANU-START
+MASK!¢             | 2.2 | -0.5 | -1.0 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
 ¢!MASK!¢           |10.0 | -0.6 | -0.9 | TRANSAKTIONSRAHMEN-TRANH-RUN
 # AKTIONSDRAHT ================================================================
-»MASK              | 2.0 | -0.8 | -1.0 | AKTIONSDRAHT-AKTU-START
-MASK«              | 2.2 | -0.8 | -1.0 | AKTIONSDRAHT-AKTAN-ENDE
+»MASK              | 2.0 | -0.5 | -1.0 | AKTIONSDRAHT-AKTU-START
+MASK«              | 2.2 | -0.5 | -1.0 | AKTIONSDRAHT-AKTAN-ENDE
 »MASK«             |10.0 | -0.6 | -0.9 | AKTIONSDRAHT-AKTH-IMPULS
 # PROTEIN =====================================================================
-[MASK              | 2.0 | -0.8 | -1.0 | PROTEIN-POIU-START 
-MASK]              | 2.2 | -0.8 | -1.0 | PROTEIN-POIAN-ENDE
-[MASK]             |10.0 | -0.8 | -1.0 | PROTEIN-POIH-SOFT 
+[MASK              | 2.0 | -0.5 | -1.0 | PROTEIN-POIU-START 
+MASK]              | 2.2 | -0.5 | -1.0 | PROTEIN-POIAN-ENDE
+[MASK]             |10.0 | -0.6 | -0.9 | PROTEIN-POIH-SOFT 
 # PROTON ======================================================================
-{MASK              | 2.0 | -0.8 | -1.0 | PROTON-POOU-START
-MASK}              | 2.2 | -0.8 | -1.0 | PROTON-POOAN-ENDE
+{MASK              | 2.0 | -0.5 | -1.0 | PROTON-POOU-START
+MASK}              | 2.2 | -0.5 | -1.0 | PROTON-POOAN-ENDE
 {MASK}             |10.0 | -0.6 | -0.9 | PROTON-POOH-HARD
 # FEED-LVL-1 ==================================================================
-(MASK              | 2.0 | -0.8 | -1.0 | FEED-FEEWERK-START
-MASK)              | 2.2 | -0.8 | -1.0 | FEED-FEEWERK-ENDE
-(MASK)             |10.0 | -1.2 | -1.2 | FEED-FEEH-SYNC
+(MASK              | 2.0 | -0.5 | -1.0 | FEED-FEEWERK-START
+MASK)              | 2.2 | -0.5 | -1.0 | FEED-FEEWERK-ENDE
+(MASK)             |10.0 | -0.6 | -0.9 | FEED-FEEH-SYNC
 # FEED-LVL-2 ==================================================================
-±MASK              | 2.0 | -0.8 | -1.0 | FEED-FFEWERK-START
-MASK±              | 2.2 | -0.8 | -1.0 | FEED-FFEWERK-ENDE
-±MASK±             |10.0 | -0.6 | -0.9 | FEED-FFEH-ÜBERGABE
-(MASK)±MASK±       |20.0 | -2.2 | -3.2 | FÜHRENDER-FEED-FFEH-SYNC
-±MASK±(MASK)       |20.0 | -2.2 | -3.2 | TRAGENDER-FEED-TFEH-SYNC
+±MASK              | 2.0 | -0.5 | -1.0 | FEED-FFEWERK-START
+MASK±              | 2.2 | -0.5 | -1.0 | FEED-FFEWERK-ENDE
+±MASK±             |10.0 | -0.6 | -1.9 | FEED-FFEH-ÜBERGABE
+(MASK)±MASK±       |20.0 | -0.7 | -1.2 | FÜHRENDER-FEED-FFEH-SYNC
+±MASK±(MASK)       |20.0 | -0.7 | -1.2 | TRAGENDER-FEED-TFEH-SYNC
 # ARGUMENT-LVL-1 ==============================================================
-MASK««             | 3.0 | -0.8 | -1.0 | ARGUMENT-ARGH-OPTION
-««Ω                | 3.7 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-LOOP
-««N                | 3.6 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGWERK-NANOSEKUNDEN
-««S                | 3.5 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGWERK-SEKUNDEN
-««T                | 3.6 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGWERK-TAKTSCHLÄGE
-««E                | 3.7 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-EXIT
-««B                | 3.7 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-BESTÄTIGUNG
-««ſ                | 3.8 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-REGEL-DER-REINHEIT
+MASK««             | 3.0 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION
+««Ω                | 3.7 | -0.5 | -1.0 | ARGUMENT-OPTION-ARGAN-LOOP
+««N                | 3.6 | -0.5 | -1.0 | ARGUMENT-OPTION-ARGWERK-NANOSEKUNDEN
+««S                | 3.5 | -0.5 | -1.0 | ARGUMENT-OPTION-ARGWERK-SEKUNDEN
+««T                | 3.6 | -0.5 | -1.0 | ARGUMENT-OPTION-ARGWERK-TAKTSCHLÄGE
+««E                | 3.7 | -0.5 | -1.0 | ARGUMENT-OPTION-ARGAN-EXIT
+««B                | 3.7 | -0.5 | -1.0 | ARGUMENT-OPTION-ARGAN-BESTÄTIGUNG
+««ſ                | 3.8 | -0.5 | -1.0 | ARGUMENT-OPTION-ARGAN-REGEL-DER-REINHEIT
 # ARGUMENT-LVL-2 ==============================================================
-»MASK«««Ω          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
-»MASK«««N-<EINGABE>|18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK-<EINGABE>
-»MASK«««S-<EINGABE>|18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK-<EINGABE>
-»MASK«««T-<EINGABE>|18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK-<EINGABE>
-»MASK«««E          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
-»MASK«««B          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
-»MASK«««ſ          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
+»MASK«««Ω          |18.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
+»MASK«««N-<EINGABE>|18.2 | -2.2 | -2.2 | AKTK-MASK-AKTK-<EINGABE>
+»MASK«««S-<EINGABE>|18.2 | -2.2 | -2.2 | AKTK-MASK-AKTK-<EINGABE>
+»MASK«««T-<EINGABE>|18.2 | -2.2 | -2.2 | AKTK-MASK-AKTK-<EINGABE>
+»MASK«««E          |18.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
+»MASK«««B          |18.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
+»MASK«««ſ          |18.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
 # BOXIS-LVL-1 =================================================================
-[ĦMASKĦ]          | 15.0 | -1.0 | -1.2 | ABI-PROTEIN-KAPSEL (HARDCORE-COMBO)
-['MASK']          | 12.0 | -0.8 | -1.0 | SHELL-PROTEIN-KAPSEL
-[×MASK×]          | 15.0 | -1.0 | -1.2 | ALU-RECHEN-KAPSEL (MATHE-BONUS)
-[¥MASK¥]          | 10.0 | -0.5 | -0.5 | RAM-CACHE-KAPSEL
-# =============================================================================
-
-
-
+[ĦMASKĦ]          | 15.0 | -4.0 | -3.0 | ABI-PROTEIN-KAPSEL (HARDCORE-COMBO)
+['MASK']          | 15.0 | -4.0 | -3.0 | SHELL-PROTEIN-KAPSEL
+[×MASK×]          | 15.0 | -4.0 | -3.0 | ALU-RECHEN-KAPSEL (MATHE-BONUS)
+[¥MASK¥]          | 15.0 | -4.0 | -3.0 | RAM-CACHE-KAPSEL
+# KLASSEN-KETTEN-BONUS (SEQUENZ-TREIBER) =======================================
 #–·¤ =           | 5.0 | -2.0 | -2.0 | Bedingungs-Struktur komplett (Logik-Klick!)
 #¶  ¶            | 3.0 | -1.0 | -1.0 | Sentiator-Doppel (kann auch allein gut sein)
 #þ  þþ þþþ       | 4.0 | -1.5 | -1.5 | Identifikations-Erweiterung

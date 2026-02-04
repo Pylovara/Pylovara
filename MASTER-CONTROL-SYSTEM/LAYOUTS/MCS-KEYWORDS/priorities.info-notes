@@ -1,6 +1,6 @@
 # =============================================================================
 # PAARUNGS-BONUS – Belohnung für korrekte Symbol-Paare 
-# VERSION: 0.0.5 FORM-SPIEL MIT ARCADESPIELAUTOMAT TRANSFORMATION
+# VERSION: 0.0.6 FORM-SPIEL MIT ARCADESPIELAUTOMAT TRANSFORMATION
 # AUTOR: Thomas Zimmermann Stufe 10 MASTER
 # STAND: 2026-02-04
 # STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - KKIS NAME = ShiVa
@@ -86,26 +86,31 @@ RAUTE-SYMBOLE     | 0.8 | -0.2 | -0.3 | NAVIGATOR-KOMMENTAR
 # MCS-PROGRAMIER-ELEMENTE =====================================================
 ¢!                | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANU-START
 !¢                | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
-»                 | 1.3 | -0.3 | -0.7 | AKTIONSDRAHT-AKTU-START
-«                 | 1.3 | -0.3 | -0.7 | AKTIONSDRAHT-AKTAN-ENDE
-[                 | 1.3 | -0.3 | -0.7 | PROTEIN-SOFT-POIU-START
-]                 | 1.3 | -0.3 | -0.7 | PROTEIN-SOFT-POIAN-ENDE
+»                 | 1.4 | -0.3 | -0.7 | AKTIONSDRAHT-AKTU-START
+«                 | 1.4 | -0.3 | -0.7 | AKTIONSDRAHT-AKTAN-ENDE
+[                 | 1.5 | -0.3 | -0.7 | PROTEIN-SOFT-POIU-START
+]                 | 1.5 | -0.3 | -0.7 | PROTEIN-SOFT-POIAN-ENDE
 {                 | 1.3 | -0.3 | -0.7 | PROTON-HARD-POOU-START
 }                 | 1.3 | -0.3 | -0.7 | PROTON-HARD-POOAN-ENDE
 (                 | 1.3 | -0.3 | -0.7 | FEED-FEEWERK-START
 )                 | 1.3 | -0.3 | -0.7 | FEED-FEEWERK-ENDE
 ««                | 1.3 | -0.3 | -0.7 | ARGUMENT-ARGH-OPTION
 <EINGABE>         | 1.3 | -0.3 | -0.7 | EINGABE
-¶                 | 1.3 | -0.3 | -0.7 | SENTIATOR-SENTAN-WENN-KANN
-¶¶                | 1.3 | -0.3 | -0.7 | SENTIATOR-SENTAN-WENN-NICHT
-ſ                 | 1.3 | -0.3 | -0.7 | SENTIATOR-SENTAN-REGEL-DER-REINHEIT
-¬                 | 1.3 | -0.3 | -0.7 | REX-REXH-SPACECREATOR
-·                 | 1.3 | -0.3 | -0.7 | REX-REXU-WORKSPACE-1
-··                | 1.3 | -0.3 | -0.7 | REX-REXU-WORKSPACE-2
-···               | 1.3 | -0.3 | -0.7 | REX-REXU-WORKSPACE-3
-····              | 1.3 | -0.3 | -0.7 | REX-REXU-WORKSPACE-4
-·····             | 1.3 | -0.3 | -0.7 | REX-REXU-WORKSPACE-5
-······            | 1.3 | -0.3 | -0.7 | REX-REXU-WORKSPACE-6
+Ŧ                 | 1.4 | -0.3 | -0.7 | RETRON-RETH-REGULAR
+Ŧ°                | 1.4 | -0.3 | -0.7 | RETRON-RETU-STUFE-NULL
+Ŧ¹                | 1.4 | -0.3 | -0.7 | RETRON-RETU-STUFE-EINS
+Ŧ²                | 1.4 | -0.3 | -0.7 | RETRON-RETU-STUFE-ZWEI
+Ŧ³                | 1.4 | -0.3 | -0.7 | RETRON-RETU-STUFE-DREI
+¶                 | 1.5 | -0.3 | -0.7 | SENTIATOR-SENTAN-WENN-KANN
+¶¶                | 1.5 | -0.3 | -0.7 | SENTIATOR-SENTAN-WENN-NICHT
+ſ                 | 1.5 | -0.3 | -0.7 | SENTIATOR-SENTAN-REGEL-DER-REINHEIT
+¬                 | 2.0 | +0.2 | +0.5 | REX-REXH-SPACECREATOR
+·                 | 1.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-1
+··                | 1.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-2
+···               | 1.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-3
+····              | 1.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-4
+·····             | 1.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-5
+······            | 1.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-6
 ¤                 | 1.3 | -0.3 | -0.7 | REX-REXO-KORDI
 :                 | 1.3 | -0.3 | -0.7 | REX-REXAN-PROZESS 
 =                 | 1.3 | -0.3 | -0.7 | REX-REXAN-AUSWERTUNG
@@ -167,12 +172,29 @@ MASK|««            | 3.0 | -0.5 | -1.0 | ARGH-OPTION
 »MASK«««ſ          |16.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
 # »[~MASK~]«««N-<EINGABE>
 # BOXIS-LVL-1 =================================================================
-[ĦMASKĦ]          | 10.0 | -1.0 | -3.0 | ABI-PROTEIN-KAPSEL (HARDCORE-COMBO)
-['MASK']          | 10.0 | -1.0 | -3.0 | SHELL-PROTEIN-KAPSEL
-[×MASK×]          | 10.0 | -1.0 | -3.0 | ALU-RECHEN-KAPSEL (MATHE-BONUS)
-[¥MASK¥]          | 10.0 | -1.0 | -3.0 | RAM-CACHE-KAPSEL
+ĦMASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-ABI-START
+MASKĦ              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-ABI-ENDE
+ĦMASKĦ             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-ABI
+,MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-SYSCALL-START
+MASK,              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-SYSCALL-ENDE
+,MASK,             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-SYSCALL
+'MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-SHELL-CONTROL-START
+MASK'              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-SHELL-CONTROL-ENDE
+'MASK'             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-SHELL-CONTROL
+"MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-CALLIS-START
+MASK"              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-CALLIS-ENDE
+"MASK"             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-CALLIS
+× MASK             | 2.4 | -0.3 | -1.0 | BOXIS-BOXU-ALU-START
+MASK ×             | 2.4 | -0.3 | -1.0 | BOXIS-BOXAN-ALU-ENDE
+× MASK ×           |12.0 | -0.5 | -1.8 | BOXIS-BOXH-ALU
+~MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-MCS-CMD-START
+MASK~              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-MCS-CMD-ENDE
+~MASK~             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-MCS-CMD
+¥MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-BLANKERNENNER-START
+MASK¥              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-BLANKERNENNER-ENDE
+¥MASK¥             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-BLANKERNENNER
 # KLASSEN-KETTEN-BONUS (SEQUENZ-TREIBER) =======================================
-¬ · ¬· []       | 5.0 | -2.0 | -2.0 | Bedingungs-Struktur komplett (Logik-Klick!)
-¶  ¶¶ ſ         | 3.0 | -1.0 | -1.0 | Sentiator-Doppel (kann auch allein gut sein)
-þ  þþ þþþ       | 4.0 | -1.5 | -1.5 | Identifikations-Erweiterung
-Ŧ° Ŧ¹ Ŧ² Ŧ³     | 4.0 | -1.3 | -1.5 | RETRON REGULATIONSORGANISATOR
+¬ · ¬· []«       |50.0 | -2.0 | -0.5 | Bedingungs-Struktur komplett (Logik-Klick!)
+¶ ¶¶ ſ           |50.0 | -2.0 | -0.5 | Sentiator-Doppel (kann auch allein gut sein)
+þ þþ þþþ         |50.0 | -2.0 | -0.5 | Identifikations-Erweiterung
+Ŧ° Ŧ¹ Ŧ² Ŧ³      |50.0 | -2.0 | -0.5 | RETRON REGULATIONSORGANISATOR

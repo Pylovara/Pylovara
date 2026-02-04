@@ -17,10 +17,12 @@ class Synapse:
         self.preferred_keys = [
             "B1", "B8", "B16", "B32", "B64", "B-INF", "Þ", "INIT-V",
             "PROTEIN", "PROTON", "BOOT-LOGIK", "MIT-SYNC", "BOXIS", "REX",
-            "ARGUMENT", "SENTIATOREN", "FEEDS", "MCS-CMD-REGISTER", "IDENTIFIKATION",
+            "ARGUMENT", "SENTIATOREN", "FEEDS", "MCS-CMD", "IDENTIFIKATION",
             "DATENTYPEN", "kernel lex", "DATEITYPEN", "/Pylovara/Handbuch/KernelNotes/",
             "Thomas Zimmermann", "ID-DNA", "THOMAS-ZIMMERMANN", "ÞÞZRB68","[", "}",
-            "]", "¶", "{", "|", "¤", "↓", "↑", "!", "°", "Ø", "¥", "Ŧ", "$", "§" 
+            "]", "¶", "{", "|", "¤", "↓", "↑", "!", "°", "Ø", "¥", "Ŧ", "$", "§", "MASK", 
+            "TRANK", "POIK", "POOK", "REXK", "SENTK", "ARGK", "RETK", "MCCK", "DIK", "DAK"
+            "FEEK", "WARK", "NAVK", "IDENK", "VATK", "HERZK", "KKIK", "MCCK", "ShiVara"
         ]
 
     def apply(self, state):

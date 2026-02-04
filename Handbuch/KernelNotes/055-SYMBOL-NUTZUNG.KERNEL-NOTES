@@ -1,109 +1,54 @@
 @kernel-nr: 55 # SYMBOL-NUTZUNG | STATUS = Ŋ Schmierzettel Freigegeben
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-### ==== ##### == # = SYMBOL-NUTZUNGSKATEGORIEN  == # == ##### === ###
-#
-# A) RAHMEN-SYMBOLE:
-#    ¢! … !¢   – Transaktionsrahmen
-#    » … «     – Aktionsdraht-Container
-#    [ ]       – Protein-Rahmen
-#    { }       – Proton-Rahmen
-#
-# B) STEUER-SYMBOLE:
-#    ¶         – SENTIATOR-WENN-KANN
-#    ¶¶        – SENTIATOR-NICHT
-#    -·        – REX-WORKSPACE-A
-#    -··       – REX-WORKSPACE-B
-#
-# C) DATEN-SYMBOLE:
-#    ±WERT±(n) – FEED-Bindung
-#    °(n)°     – BLANKERNENNER (Zwischenspeicher)
-#    (n)       – FEED-Container
-#
-# D) OPERATIONS-SYMBOLE:
-#    × … ×     – ALU-RECHNER
-#    ' … '     – SHELL-CONTROL
-#    " … "     – CALLIS (STDOUT)
-#    , … ,     – SYSCALL
-#    ~ … ~     – MCS-CMD
-#
-### ==== ##### == # =============================== # == ##### === ###
-
-
-skizze id-abgleich
-
-
-# Beispiel: Firma "TechCorp" kauft MCS-Lizenz
-»[~REGISTER FIRMA "TechCorp"~]«
- ¬·¤: ['echo Firmenregistrierung startet']«
-
-# 1. NAVIGATOR interpretiert Symbole
-§ Đ "NAVIGATION: Firmen-Anchor erstellen"
-
-# 2. MASTER definiert die Komponente
-»[~MASTER-IDENTIFIKATION CREATE~]«
- ¶ ¬· [°FIRMEN-ANCHOR°|{°NAME°|°TechCorp°}]«
-
-# 3. IDENTIFIKATION generiert Live-ID
-»[~þþ GENERATE FOR "TechCorp"~]«
- ¬··¤= »["(FF:FIRMA-ID)±þþ-TECHCORP-2026-XXXX±"]«
-
-# 4. L3-Lizenz bindet ID
-»[~L3_BIND TO ±FF:FIRMA-ID±~]«
- ¬·¤: [~VALIDIERT~]«
-
-
-### ==== ##### == # === ### PROTOTYP SCHALTUNGEN == # == ##### === ###
+### ==== ##### == # = SYMBOL-NUTZUNGSBAUKASTEN   == # == ##### === ###
 
 ¢!
-
 # Muster (Nervenzellensynaptik aufbau)
-
 »['exec <SPIEL>']
- ¶ -· ['execve("./wolf3d", argv, env)']
-      –·¤: lädt ELF / EXE
-      -·¤: prüft Header
-      -·¤: mapped Sections
-      -·¤: springt in _start
+ ¶ ¬· ['execve("./wolf3d", argv, env)']
+      ¬·¤: lädt ELF / EXE
+      ¬·¤: prüft Header
+      ¬·¤: mapped Sections
+      ¬·¤: springt in _start
 
- ¶ -·[~RUN-GPU~]«
-     ¶ –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.TREIBER-NEEDLE']«
-              ¶ -·· [~run ast intelarc.GPU-CORE~]«««Ω
-                    ¶ -·· [~run intelarc.GPU-LCORE~]«««T1
-                          ¶ -·· [~run intelarc.GPU-VCORE~]«««T2
-                                ¶ -·· [~run intelarc.GPU-MCORE~]«««T3
-                                      ¶ -·· [~run intelarc.GPU-FCORE~]«««T4
-     ¶¶ -·· »[~MACH DATEITYPE-FLAG~]
-             ¶ -·· »[~FEHLERBERICHT-ZU & /Pylovara/FEHLERBERICHTE~]«
+ ¶ ¬·[~RUN-GPU~]«
+     ¶ ¬··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.TREIBER-NEEDLE']«
+              ¶ ¬·· [~run ast intelarc.GPU-CORE~]«««Ω
+                    ¶ ¬·· [~run intelarc.GPU-LCORE~]«««T1
+                          ¶ ¬·· [~run intelarc.GPU-VCORE~]«««T2
+                                ¶ ¬·· [~run intelarc.GPU-MCORE~]«««T3
+                                      ¶ ¬·· [~run intelarc.GPU-FCORE~]«««T4
+     ¶¶ ¬·· »[~MACH DATEITYPE-FLAG~]
+             ¶ ¬·· »[~FEHLERBERICHT-ZU & /Pylovara/FEHLERBERICHTE~]«
 
  # STARTET AUF ['exec <SPIEL>']
- –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
-        ¶ -·· ['run /SPI/Runtime Service']«««Ω
- –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
-        ¶ -·· ['']«
-        ¶ -·· ['']«
- –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
-        ¶ -·· ['']«
- –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
-        ¶ -·· ['']«
- –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
-        ¶ -·· ['']«
- –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
-        ¶ -·· ['']«
- –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
-        ¶ -·· ['']«
- –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
-        ¶ -·· ['']«
- –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
-        ¶ -·· ['']«
- -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
-            ¶ -·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+        ¶ ¬·· ['run /SPI/Runtime Service']«««Ω
+ ¬··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
+        ¶ ¬·· ['']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
+        ¶ ¬·· ['']«
+ ¬··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
+            ¶ ¬·· ['']«
 
 »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
- ¶ -· »[~SYNC MATRIX~]«
-       ¶ –··· »['echo Sync startet , reste werden beseitigt'«««ſ
+ ¶ ¬· »[~SYNC MATRIX~]«
+       ¶ ¬··· »['echo Sync startet , reste werden beseitigt'«««ſ
 
 !¢
-
 
 ¢!
 # ======================================================
@@ -127,76 +72,76 @@ skizze id-abgleich
 
      ¬·¤: ['Mapped Sections in RAM']«
          »[~VIRTUAL-ALLOC BASE=0x140000000 SIZE=0x2000000~]«
-         -·¤= »["(FF:EXE-BASE)±0x140000000±"]«
-         -··¤= »["(FF:EXE-SIZE)±0x2000000±"]«
+         ¬·¤= »["(FF:EXE-BASE)±0x140000000±"]«
+         ¬··¤= »["(FF:EXE-SIZE)±0x2000000±"]«
 
      ¬·¤: ['Springt in Entry Point']«
           ¶ ¬· »[~JUMP-TO ±FF:EXE-BASE± + 0x1000~]«
                 ¶ ¬·¤: ['Entry Point erreicht']«
 
 # ================== PHASE 2: HARDWARE-INITIALISIERUNG ==================
-¶ -·[~RUN-GPU~]«
+¶ ¬·[~RUN-GPU~]«
     # GPU-Treiber Loading mit Priority-Stufen
-    ¶ –··¤› »['exec /Pylovara/System/Module/nvidia_driver.TREIBER-NEEDLE']«
+    ¶ ¬··¤› »['exec /Pylovara/System/Module/nvidia_driver.TREIBER-NEEDLE']«
              # GPU-CORE Initialisierungskette (sequentiell mit Timeouts)
-             ¶ -·· [~run ast nvidia.GPU-CORE~]«««Ω
-                   ¶ -·· [~run nvidia.GPU-LCORE~]«««T100
-                         ¶ -·· [~run nvidia.GPU-VCORE~]«««T150
-                               ¶ -·· [~run nvidia.GPU-MCORE~]«««T200
-                                     ¶ -·· [~run nvidia.GPU-FCORE~]«««T250
-                                           -··¤= »["(TF:GPU-READY)±TRUE±"]«
+             ¶ ¬·· [~run ast nvidia.GPU-CORE~]«««Ω
+                   ¶ ¬·· [~run nvidia.GPU-LCORE~]«««T100
+                         ¶ ¬·· [~run nvidia.GPU-VCORE~]«««T150
+                               ¶ ¬·· [~run nvidia.GPU-MCORE~]«««T200
+                                     ¶ ¬·· [~run nvidia.GPU-FCORE~]«««T250
+                                           ¬··¤= »["(TF:GPU-READY)±TRUE±"]«
                                            »['GPU initialisiert: RTX 4090']«
 
     # Fallback bei Fehler
-    ¶¶ -·· »[~MACH DATEITYPE-FLAG ERROR~]«
-           ¶ -·· »[~FEHLERBERICHT-ZU ¬ /Pylovara/FEHLERBERICHTE/GPU_FAIL.log~]«
-                 -··¤= »["(TF:GPU-FAIL)±TRUE±"]«
+    ¶¶ ¬·· »[~MACH DATEITYPE-FLAG ERROR~]«
+           ¶ ¬·· »[~FEHLERBERICHT-ZU & /Pylovara/FEHLERBERICHTE/GPU_FAIL.log~]«
+                 ¬··¤= »["(TF:GPU-FAIL)±TRUE±"]«
                  ¶ »[~FALLBACK-TO INTEGRATED~]«
-                      -·· »['exec /Pylovara/System/Module/intel_uhd.TREIBER-NEEDLE']«
+                      ¬·· »['exec /Pylovara/System/Module/intel_uhd.TREIBER-NEEDLE']«
 
 # ================== PHASE 3: SYSTEM-MODULE PARALLEL ==================
 # Hochprioritäre Module (PRIO 1: -·)
--· »['exec /Pylovara/System/Module/uefi.boot-kernel']«
-     ¶ -·· ['run /SPI/Runtime Service']«««Ω
-           -·¤= »["(TF:UEFI-READY)±TRUE±"]«
+¬· »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+     ¶ ¬·· ['run /SPI/Runtime Service']«««Ω
+           ¬·¤= »["(TF:UEFI-READY)±TRUE±"]«
 
--· »['exec /Pylovara/System/Module/directx12.treiber-needle']«
-     ¶ -·· ['dx12.init']«
-           -·¤= »["(TF:DX12-READY)±TRUE±"]«
+¬· »['exec /Pylovara/System/Module/directx12.treiber-needle']«
+     ¶ ¬·· ['dx12.init']«
+           ¬·¤= »["(TF:DX12-READY)±TRUE±"]«
            ¶ »[× BIND-TO ±TF:GPU-READY± ×]«
-                -· »['dx12.bind_gpu']«
+                ¬· »['dx12.bind_gpu']«
 
 # Mittelprioritäre Module (PRIO 2: -··)
--·· »['exec /Pylovara/System/Module/audio.system-kernel']«
-      -··¤= »["(TF:AUDIO-READY)±TRUE±"]«
+¬·· »['exec /Pylovara/System/Module/audio.system-kernel']«
+      ¬··¤= »["(TF:AUDIO-READY)±TRUE±"]«
 
--·· »['exec /Pylovara/System/Module/network.system-kernel']«
+¬·· »['exec /Pylovara/System/Module/network.system-kernel']«
       ¶ »[~CONNECT-TO "xbox-live"~]«
-           -··¤= »["(TF:NETWORK-READY)±TRUE±"]«
+           ¬··¤= »["(TF:NETWORK-READY)±TRUE±"]«
 
 # Niedrigprioritäre Module (PRIO 3: -···)
--··· »['exec /Pylovara/System/Module/overlay.system-kernel']«  # Discord/GameBar
-       -···¤= »["(TF:OVERLAY-READY)±TRUE±"]«
+¬·· »['exec /Pylovara/System/Module/overlay.system-kernel']«  # Discord/GameBar
+       ¬···¤= »["(TF:OVERLAY-READY)±TRUE±"]«
 
--··· »['exec /Pylovara/System/Module/recording.system-kernel']« # ShadowPlay
-       -···¤= »["(TF:RECORDING-READY)±TRUE±"]«
+¬··· »['exec /Pylovara/System/Module/recording.system-kernel']« # ShadowPlay
+       ¬···¤= »["(TF:RECORDING-READY)±TRUE±"]«
 
 # ================== PHASE 4: INPUT DEVICES ==================
 # Parallele Input-Initialisierung
--· »['exec /Pylovara/System/Module/xbox-controller.treiber-needle']«
-     ¶ -·· ['controller.vibration_init']«
-           -·¤= »["(TF:CONTROLLER-READY)±TRUE±"]«
+¬· »['exec /Pylovara/System/Module/xbox-controller.treiber-needle']«
+     ¶ ¬·· ['controller.vibration_init']«
+           ¬·¤= »["(TF:CONTROLLER-READY)±TRUE±"]«
 
--·· »['exec /Pylovara/System/Module/keyboard.system-kernel']«
-      -··¤= »["(TF:KEYBOARD-READY)±TRUE±"]«
+¬·· »['exec /Pylovara/System/Module/keyboard.system-kernel']«
+      ¬··¤= »["(TF:KEYBOARD-READY)±TRUE±"]«
 
--·· »['exec /Pylovara/System/Module/mouse.system-kernel']«
+¬·· »['exec /Pylovara/System/Module/mouse.system-kernel']«
       ¶ »[× DPI = 1600 ×]«
-           -··¤= »["(TF:MOUSE-READY)±TRUE±"]«
+           ¬··¤= »["(TF:MOUSE-READY)±TRUE±"]«
 
 # ================== PHASE 5: SYNCHRONISATION ==================
 »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
- ¶ -· »[~SYNC MATRIX~]«
+ ¶ ¬· »[~SYNC MATRIX~]«
       # Warte auf alle TF-READY Feeds
       ¶ »[× ALL(
             ±TF:GPU-READY±,
@@ -205,91 +150,85 @@ skizze id-abgleich
             ±TF:NETWORK-READY±,
             ±TF:CONTROLLER-READY±
           ) == TRUE ×]«
-           -· »['echo "Alle Systeme bereit"]'«
-           -· »['exec "C:\Games\HaloInfinite\halo.exe" --fullscreen']«
+           ¬· »['echo "Alle Systeme bereit"]'«
+           ¬· »['exec "C:\Games\HaloInfinite\halo.exe" --fullscreen']«
       ¶¶ »[× TIMEOUT 10000 ×]«  # 10 Sekunden Timeout
-           -· »[~ABBRUCH "Initialisierung timeout"]'«
+           ¬· »[~ABBRUCH "Initialisierung timeout"]'«
 
 # ================== PHASE 6: RUNTIME MONITORING ==================
-# Hintergrund-Monitoring (LAZY PRIO: -····)
--···· »[~MONITOR FPS~]«
+# Hintergrund-Monitoring (LAZY PRIO: ¬····)
+¬···· »[~MONITOR FPS~]«
         ¶ »[× FPS < 60 ×]«
-             -···· »[~ADJUST SETTINGS~]«
+             ¬···· »[~ADJUST SETTINGS~]«
         ¶¶ »[× TEMP > 85 ×]«
-             -···· »[~THROTTLE GPU~]«
+             ¬···· »[~THROTTLE GPU~]«
 
-ſ -· [~PROZESS BEENDEN~]«  # Nur für Steuerprozess, Spiel läuft weiter
+ſ ¬· [~PROZESS BEENDEN~]«  # Nur für Steuerprozess, Spiel läuft weiter
 !¢
 
-
 ¢!
-
 »[~MASTER-HARDWARE-ENUMERATION-CPU~]
- ¶ –· [°RESET VECTOR°]
+ ¶ ¬· [°RESET VECTOR°]
 
 »[~MASTER-HARDWARE-ENUMERATION-RAM~]
- ¶ –· [°ALLOCATE PHYSICAL MEMORY MAP°]
- ¶ –· [°LOAD KERNEL IMAGE @ RAM_OFFSET°]
-      ¶ -· [entry_point]
-           ¶ -· [early ASM init]
-           ¶ -· [start_kernel()]
-                ¶ -· [Ħsetup_arch()Ħ] 
-                ¶ -· [setup_memory()]
-                ¶ -· [setup_interrupts()]
-                ¶ -· [setup_timer()]
-                ¶ -· [setup_scheduler()]
-                ¶ -· [setup_syscall_table()]
+ ¶ ¬· [°ALLOCATE PHYSICAL MEMORY MAP°]
+ ¶ ¬· [°LOAD KERNEL IMAGE @ RAM_OFFSET°]
+      ¶ ¬· [entry_point]
+           ¶ ¬· [early ASM init]
+           ¶ ¬· [start_kernel()]
+                ¶ ¬· [Ħsetup_arch()Ħ] 
+                ¶ ¬· [setup_memory()]
+                ¶ ¬· [setup_interrupts()]
+                ¶ ¬· [setup_timer()]
+                ¶ ¬· [setup_scheduler()]
+                ¶ ¬· [setup_syscall_table()]
 
 »[~MASTER-HARDWARE-ENUMERATION-PCI~]
- ¶ –· [PROBE BUS]
+ ¶ ¬· [PROBE BUS]
 
 »[~MASTER-HARDWARE-ENUMERATION-GPU~]
- ¶ –· [DETECTED → DRIVER BIND LATER]
+ ¶ ¬· [DETECTED → DRIVER BIND LATER]
 
 !¢
 
 ¢!
 # Beispiel Schaltung
-
 »['record']
- -·¤: ['echo Terminal Aufzeichnung gestartet']«
+ ¬·¤: ['echo Terminal Aufzeichnung gestartet']«
 »['to /Pylovara/Handbuch/KernelNotes/]
- ¶ -· [~MACH DATEI ¬ -FLAG~|"8taktidee"]«
-      ¶ -· »[~SENDE-ZU~]«
-            ¶ -· ['/Pylovara/Handbuch/KernelNotes/']«
-                 ſ -· [~PROZESS BEENDEN~]«
+ ¶ ¬· [~MACH DATEI & -FLAG~|"8taktidee"]«
+      ¶ ¬· »[~SENDE-ZU~]«
+            ¶ ¬· ['/Pylovara/Handbuch/KernelNotes/']«
+                 ſ ¬· [~PROZESS BEENDEN~]«
 !¢
 
 
 ¢!
 # Beispiel Schaltung
-
 »[× 1 + 1 ×|× 2 + 2 ×]«   # Container-Protein mit 2 Boxis
- -·¤‹ »[× °(0)° + °(1)° ×] # Fork in Workspace A mit Sortierung ¤‹
-       -·¤= [(3)°°]«       # Zuweisung im Fork
-            ¶ -· »['echo Fork A OK']«
- -··¤› »[× °(0) °*° (1)° ×] # Fork in Workspace B mit anderer Sortierung
-        -··¤= [(4)°°]«
-              ¶ -·· ['echo Fork B OK']«
- -···› »[ °(3)° + °(4)°]      # Merge aus A und B
-         ¶ -··· ['echo Merge erfolgreich']«
+ ¬·¤‹ »[× °(0)° + °(1)° ×] # Fork in Workspace A mit Sortierung ¤‹
+       ¬·¤= [(3)°°]«       # Zuweisung im Fork
+            ¶ ¬· »['echo Fork A OK']«
+ ¬··¤› »[× °(0) °*° (1)° ×] # Fork in Workspace B mit anderer Sortierung
+        ¬··¤= [(4)°°]«
+              ¶ ¬·· ['echo Fork B OK']«
+ ¬···› »[ °(3)° + °(4)°]      # Merge aus A und B
+        ¶ ¬··· ['echo Merge erfolgreich']«
 
 !¢
 
-
 ¢!
 # Beispiel Schaltung
-
 »['record']
- -·¤: ['echo Terminal Aufzeichnung gestartet']«
+ ¬·¤: ['echo Terminal Aufzeichnung gestartet']«
 »['to /Pylovara/Handbuch/KernelNotes/]
-      ¶ -· ['cat *-*.kernel-notes']«
-           ¶ -· ['exit']«
-                –·¤: ['echo Terminal Aufzeichnung beendet']«
-                     ¶ -· »[~KKI ANALYSE~]~]«««T300
-                           ¶ -· »[~send in~]«
-                                 ¶ -· ['/Pylovara/Handbuch/KernelNotes/']«
-                                      ſ -· [~PROZESS BEENDEN~]«
+      ¶ ¬· ['cat *-*.kernel-notes']«
+           ¶ ¬· ['exit']«
+                ¬·¤: ['echo Terminal Aufzeichnung beendet']«
+                     ¶ ¬· »[~KKI ANALYSE~]~]«««T300
+                           ¶ ¬· »[~send in~]«
+                                 ¶ ¬· ['/Pylovara/Handbuch/KernelNotes/']«
+                                      ſ ¬· [~PROZESS BEENDEN~]«
 !¢
 
 ### ==== ##### == # = NEUERE BEISPIEL SCHALTUNGEN = # == ##### === ###
@@ -297,46 +236,32 @@ skizze id-abgleich
 ¢|
 # 1. 10 MB in Bytes berechnen (ALU-RECHNER)
 »[× 10 · 1024 · 1024 ×]«
- -·¤= »["(1)±10485760±"]«
+ ¬·¤= »["(1)±10485760±"]«
 
 # 2. Ergebnis in Feed 1 speichern (CMD-FEED)
 »[~TRANSFER BOXIS ¬ MACH TF 1~|"±10485760±(1)"]«
 
 # 3. Dateigröße mit Feed 1 vergleichen (SENTIATOR-MEHRWERT)
 »[× $file_size > ±WERT±(1) ×]«
- -··¤= »["is_large"]«
+ ¬··¤= »["is_large"]«
 
 # 4. Wenn größer (SENTIATOR-KANN-IMPULS)
-     ¶ -·· »["is_large"]
+     ¶ ¬·· »["is_large"]
      # 4a. Komprimieren (SHELL-CONTROL)
-           -·· ['gzip "$file_path"']«
-           -·· »["compress_ok"]«
+           ¬·· ['gzip "$file_path"']«
+           ¬·· »["compress_ok"]«
 
             ¶ »["compress_ok"]
             # 4b. Pfad erweitern (SHELL-CONTROL)
                ['file_path="${file_path}.gz"']«
-               -···¤= »["new_path"]«
+               ¬···¤= »["new_path"]«
 
 # 4c. Neuen Pfad in Feed 2 speichern
 »[~TRANSFER BOXIS ¬ MACH FF 2~|"(2)±${file_path}.gz±"]«
 # 5. Wenn nicht größer (SENTIATOR-NICHT-IMPULS)
- ¶¶ -··> »["is_large"]«««t5
-    -··> »["Datei ist klein, keine Komprimierung nötig."]«««t6
+ ¶¶ ¬··> »["is_large"]«««t5
+    ¬··> »["Datei ist klein, keine Komprimierung nötig."]«««t6
 ¢|
-
-¢!
-»[× 1 + 1 ×]
- -·¤= [°(1)±WERT±°]«
-»[× 2 + 2 ×]
- -··¤= [°(2)±WERT±°]«
-»[× ±WERT±(1) > ±WERT±(n) ×]
- -···¤= [°(3)±WERT±°]« 
-        ¶ »[°±WERT±(n)°]
-           -···> ['echo "ALU kann Feed-Zahlen vergleichen: von ±WERT±(1) und ±WERT±(2) dann ±WERT±(3) berechnen"']«
-        ¶¶ »[°±WERT±(n)°]
-            -···> ['echo "Nope,kann nicht ±WERT±(1) und ±WERT±(2) auf ±WERT±(3) berechnen"']«
-!¢
-
 
 ¢!
 # ============================================
@@ -349,14 +274,14 @@ skizze id-abgleich
 
 # 1. Eingabe-Parameter als PROTEIN entgegennehmen
 »[~CAESAR SHIFT 3 TEXT HalloWelt~]«
- -·¤: ['Parameter empfangen']«
+ ¬·¤: ['Parameter empfangen']«
 
 # 2. SHIFT und TEXT in FEED 1 und 2 ablegen
 »[~EXTRACT SHIFT~|"3"]«
- -··¤= »["(1)±3±"]«        # FEED 1 = Shift
+ ¬··¤= »["(1)±3±"]«        # FEED 1 = Shift
 
 »[~EXTRACT TEXT~|"HalloWelt"]«
- -···¤= »["(2)±HalloWelt±"]« # FEED 2 = Text
+ ¬···¤= »["(2)±HalloWelt±"]« # FEED 2 = Text
 
 # 3. Verarbeitungsschleife initialisieren (REX-WORKSPACE)
 »[× 0 = i ×]«              # Zähler i = 0
@@ -369,24 +294,24 @@ skizze id-abgleich
     
     # 3b. Großbuchstabe?
     »[× ch >= 'A' AND ch <= 'Z' ×]«
-     -·¤= »["(3)±true±"]«
+     ¬·¤= »["(3)±true±"]«
         »[× ch = ch - 'A' + shift ×]«
         »[× ch = ch % 26 ×]«
         »[× ch = ch + 'A' ×]«
         »[× text[i] = ch ×]«
         »['echo Großbuchstabe verschoben']«
     
-    ¶¶ »[× ch >= 'a' AND ch <= 'z' ×]«  # SENTIATOR-NICHT für Kleinbuchstaben
-        -··¤= »["(4)±true±"]«
-        »[× ch = ch - 'a' + shift ×]«
-        »[× ch = ch % 26 ×]«
-        »[× ch = ch + 'a' ×]«
-        »[× text[i] = ch ×]«
-        »['echo Kleinbuchstabe verschoben']«
+    ¶¶ ¬·»[× ch >= 'a' AND ch <= 'z' ×]«  # SENTIATOR-NICHT für Kleinbuchstaben
+          ¬··¤= »["(4)±true±"]«
+         »[× ch = ch - 'a' + shift ×]«
+         »[× ch = ch % 26 ×]«
+         »[× ch = ch + 'a' ×]«
+         »[× text[i] = ch ×]«
+         »['echo Kleinbuchstabe verschoben']«
     
     # 3c. i erhöhen
     »[× i = i + 1 ×]«
-    -···¤: ['Schleife Iteration']«
+     ¬···¤: ['Schleife Iteration']«
 
 # 4. Ergebnis zurück in FEED 3
 »[~STORE RESULT~|"±text±(3)"]«
@@ -396,209 +321,13 @@ skizze id-abgleich
 »["±WERT±(3)"]«
 
 # 6. Cleanup (Regel der Reinheit)
-ſ -· [~PROZESS BEENDEN~]«
+ſ ¬· [~PROZESS BEENDEN~]«
 
 !¢
-
-
-¢!
-# MCS-CAESAR-PARALLEL: Mehrere Texte gleichzeitig
-»[~BATCH SHIFT 5 TEXTS Hello Foo Bar Test~]«
-
-# Verteilen auf Workspaces
--· »[~EXTRACT TEXT 1~]«
-    -·¤= »["(1)±Hello±"]«
-    ¶ »[× ENCRYPT(±WERT±(1), 5) ×]«
-       -·¤= »["(10)±Mjqqt±"]«
-
--·· »[~EXTRACT TEXT 2~]«
-     -··¤= »["(2)±Foo±"]«
-     ¶ »[× ENCRYPT(±WERT±(2), 5) ×]«
-        -··¤= »["(20)±Ktt±"]«
-
--··· »[~EXTRACT TEXT 3~]«
-      -···¤= »["(3)±Bar±"]«
-      ¶ »[× ENCRYPT(±WERT±(3), 5) ×]«
-         -···¤= »["(30)±Gfw±"]«
-
-# Sammeln der Ergebnisse (FEED-Synchronisation)
-»[× ±WERT±(10) + ±WERT±(20) + ±WERT±(30) = results ×]«
-»["Batch-Ergebnisse: ±WERT±(results)"]«
-
-ſ -· [~CLEAN-ALL~]«
-!¢
-
-
-¢!
-»[~CAESAR 3 Hallo~]«
- -·¤= »["(1)±3±"]«
- -··¤= »["(2)±Hallo±"]«
-»[× i=0; i<LEN(°(2)°); i++ ×]«
- –· »[× ch = °(2)°[i] ×]«
-     ¶ »[× ch BETWEEN 'A' 'Z' ×]«
-       »[× ch = MOD(ADD(SUB(ch,'A'),°(1)°),26) + 'A' ×]«
-       »[× °(2)°[i] = ch ×]«
-
-     ¶¶ »[× ch BETWEEN 'a' 'z' ×]«
-        »[× ch = MOD(ADD(SUB(ch,'a'),°(1)°),26) + 'a' ×]«
-        »[× °(2)°[i] = ch ×]«
-»["Ergebnis: °(2)°"]
- -· [~ENDE~]«««ſ
-!¢
-
-¢!
-# Low-Level Caesar (Byte-Manipulation)
-»[~B-ROOT-ZUGRIFF TEXT-SPEICHER~]«
- -·¤: ['Direct Memory Access aktiv']«
- –·· »[~PR-PHYS LESEN ADDR LEN~]«
- –·· »[× Byte-Weise-Verschiebung MIT ±SHIFT± ×]«
- –·· »[~PR-PHYS SCHREIBEN ADDR~]«
- -· [~SPEICHER-FREIGEBEN~]«««ſ
-!¢
-
-¢!
-»[~CAESAR 13 Geheimtext~]«
-¶ »[~KKIS-ANALYSE SICHERHEIT~]«
-   -·¤= »["(1)±SCHWACH±"]«  # KKIS erkennt Caesar als unsicher
-         –· »['Warnung: Caesar bietet keine echte Sicherheit']«
-»["Trotzdem verschlüsselt: ±ERGEBNIS±"]«
- -· [~ENDE~]«««ſ
-!¢
-
-
-dev notiz =
-
-Workspace priorität in den Workspace mit einfügen , verschweißen ... = 
-
--·      # PRIO 1 (HOCH)    – Echtzeit, Hardware-nah
--··     # PRIO 2 (MITTEL)  – Standard-Berechnung  
--···    # PRIO 3 (NIEDRIG) – Hintergrund, Batch
--····   # PRIO 4 (LAZY)    – Nur bei Idle
-
-REX ausbau , worspace und prioritäts funktionen , wie genau steht offen 
-
-
-
-
-
-### ==== ##### == # === # BAUSTELLE BAUSTELLE # === # == ##### === ###
-
-
-
-Daten = PLACEHOLDER
-Boxis = °PLACEHOLDER°
-
-
-Baublöcke =
-
-[°PLACEHOLDER°]
-[°PLACEHOLDER°|{°NAME°|°WERT°}]
-
-
-
-¢!
-
-    ¶ -· [°PLACEHOLDER°]«
- -· [°PLACEHOLDER°]«
-»['PLACEHOLDER']
- ¶ -· [°PLACEHOLDER°]«
-      -· [°PLACEHOLDER°]«
-      -· [°PLACEHOLDER°]«
-      -· [°PLACEHOLDER°]«
-      -· [°PLACEHOLDER°]«
-
-
-!¢
-
-2
-Oder =
-
-»['exec "HaloInfinite.exe"']« (Root)
-├── ¶ -· [°EXECVE-PROZESS°]«
-│   ├── -· [°PE-HEADER-LADEN°]«
-│   ├── -· [°SECTIONS-MAPPEN°]«
-│   └── -· [°ENTRY-POINT-SPRUNG°]«
-│
-├── ¶ -· [°HARDWARE-INIT°]«
-│   ├── -· [°GPU-TREIBER-LADEN°]«
-│   │   ├── -· [°GPU-CORE-INIT°]«
-│   │   ├── -· [°GPU-LCORE-INIT°]«
-│   │   ├── -· [°GPU-VCORE-INIT°]«
-│   │   ├── -· [°GPU-MCORE-INIT°]«
-│   │   └── -· [°GPU-FCORE-INIT°]«
-│   └── ¶¶ -·· [°FEHLER-HANDLING°]«
-│        ├── -·· [°FALLBACK-INTEGRATED°]«
-│        └── -·· [°FEHLER-LOGGING°]«
-│
-├── ¶ -· [°SYSTEM-MODULE-LADEN°]«
-│   ├── -· [°UEFI-BOOT-KERNEL°]« (PRIO 1)
-│   ├── -·· [°DIRECTX12-TREIBER°]« (PRIO 2)
-│   ├── -·· [°AUDIO-SYSTEM°]«
-│   ├── -·· [°NETWORK-SYSTEM°]«
-│   ├── -··· [°OVERLAY-SYSTEM°]« (PRIO 3)
-│   └── -··· [°RECORDING-SYSTEM°]«
-│
-├── ¶ -· [°INPUT-DEVICES°]«
-│   ├── -·· [°XBOX-CONTROLLER°]«
-│   ├── -·· [°KEYBOARD-SYSTEM°]«
-│   └── -·· [°MOUSE-SYSTEM°]«
-│
-├── ¶ -· [°SYNCHRONISATION°]«
-│   ├── -· [°WARTE-AUF-ALL-SYSTEME°]«
-│   │   └── -· [°START-SPIEL-VOLLBILD°]«
-│   └── ¶¶ -·· [°TIMEOUT-FALLBACK°]«
-│        └── -·· [°ABBRUCH-MELDUNG°]«
-│
-└── ¶ -· [°RUNTIME-MONITORING°]«
-    ├── -···· [°FPS-MONITOR°]« (PRIO 4 - LAZY)
-    ├── -···· [°TEMP-MONITOR°]«
-    └── -···· [°AUTO-SETTINGS-ADJUST°]«
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-; Linux x86_64: chdir(NULL) - nur als Beispiel
-mov rax, 80        ; syscall nummer für chdir = 80 (x86_64)
-mov rdi, 0         ; NULL pointer (kein Pfad)
-syscall
-
-wäre cirka 
-
-48 C7 C0 50 00 00 00    ; mov rax, 80   (7 Bytes)
-48 C7 C7 00 00 00 00    ; mov rdi, 0    (7 Bytes)
-0F 05                   ; syscall       (2 Bytes)
-
-könnte 
-
-øĸ # WARP
-48 C7 C0 50 00 00 00    ; mov rax, 80   (7 Bytes)
-48 C7 C7 00 00 00 00    ; mov rdi, 0    (7 Bytes)
-0F 05                   ; syscall       (2 Bytes)
-ĸø
-
-sein .... ich brauch einen transformator der den maschinen code in proteine verpackt 
-danach kann ich sie combinieren , außeinander reisen , individualisieren und
-mit dem MASTER verbinden und das Pro Chip Generation Parallell weise abspeichern un Needles , um sie
-je nach hardware ohne neu analyse zu benutzen ... 
-
-
-# könnte dann sycalls triggern auf MCS-CMD Niveau 
-
-¢!
-»[~CD /home/user~]«
- -·¤: ['Change Directory']«
- ¶ -· [,chdir("/home/user"),]«
-      -·¤: ['Verzeichnis gewechselt']«
- -· [~ENDE~]«««ſ
-!¢
-
-
 
 ########################======================###################################
-########################======================###################################
-########################======================###################################
 
-¢!   # Transaktionsrahmen – kompletter Game-Start-Prozess "Halo Infinite"
+¢!   # Transaktionsrahmen – kompletter Game-Start-Prozess "Halo Infinite".proto
 
   »[~MASTER-CONTROL INIT LEVEL=10~]«                        # Spalte 2 – Master-Trigger
    -·¤= ["(MASTER:PHASE)±GAME-LAUNCH-SEQUENCE±"]«           # Spalte 4 – Zuweisung mit FF
@@ -788,17 +517,6 @@ je nach hardware ohne neu analyse zu benutzen ...
 
 ¢!
 
-                            ¬·["       "]«
-                       ¶¶ ¬·["       "]«
-                     ¬·["       "]«
-            ¶¶ ¬·["       "]«
-
-            ¶ ¬·["       "]«
-
-            ¶ ¬·["       "]«
-                                     ¬·["       "]«
-
-¢!
 Ŧ¹ »["Soma"]«
     ¶ ¬·["(1)±FEED-EMPFANG±"]«
         ¶ ¬·["INTEGRATION"]«

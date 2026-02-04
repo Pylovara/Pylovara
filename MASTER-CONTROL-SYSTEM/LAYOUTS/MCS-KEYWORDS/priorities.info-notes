@@ -1,74 +1,105 @@
 # =============================================================================
 # PAARUNGS-BONUS – Belohnung für korrekte Symbol-Paare 
-# VERSION: 0.0.2 FORM SPIEL
+# VERSION: 0.0.3 FORM-SPIEL MIT ARCADESPIELAUTOMAT TRANSFORMATION
 # AUTOR: Thomas Zimmermann Stufe 10 MASTER
 # STAND: 2026-01-30
-# STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - ShivaBaal
+# STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - KKIS NAME = ShiVa
 # =============================================================================
 # Format = 
 # SYMBOL MATCHES| PUNKTE KASTEN     | WAS ES BEDEUTET
+# MASTER ======================================================================
+DATEK             | 0.0 | 0.0 | 0.1 | DATENTYPEN
+TRANK             | 0.0 | 0.0 | 0.1 | TRANSAKTIONSRAHMEN
+POIK              | 0.0 | 0.0 | 0.1 | PROTEIN
+POOK              | 0.0 | 0.0 | 0.1 | PROTON
+TRENK             | 0.0 | 0.0 | 0.1 | TRENNBEFEHL
+BOXK              | 0.0 | 0.0 | 0.1 | BOXIS
+MASK              | 0.0 | 0.0 | 0.1 | MASTER
+REXK              | 0.0 | 0.0 | 0.1 | REX
+ARGK              | 0.0 | 0.0 | 0.1 | ARGUMENT
+FEEK              | 0.0 | 0.0 | 0.1 | FEED
+WARK              | 0.0 | 0.0 | 0.1 | WARP
+NAVK              | 0.0 | 0.0 | 0.1 | NAVIGATOR
+IDENK             | 0.0 | 0.0 | 0.1 | IDENTIFIKATION
+MCCK              | 0.0 | 0.0 | 0.1 | MCS-CMD
+DATIK             | 0.0 | 0.0 | 0.1 | DATEITYPEN
+VATK              | 0.0 | 0.0 | 0.1 | VATRON
+RETK              | 0.0 | 0.0 | 0.1 | RETRON
+MATK              | 0.0 | 0.0 | 0.1 | MATRIX
+KKIK              | 0.0 | 0.0 | 0.1 | KKIS
+# NAVIGATOR ===================================================================
+Ð                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-LANGZEITSPEICHER
+$                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-ZIELREFERENZ
+§                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-DIRIGENT
+=                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-INFORMATION
+…                  | 0.6 | -0.2 | -0.3 | NAVIGATOR-INHALT
+RAUTE-SYMBOLE      | 0.6 | -0.2 | -0.3 | NAVIGATOR-KOMMENTAR
+# MCS-PROGRAMIER-ELEMENTE =====================================================
+¢!                 | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-TRANU-START
+!¢                 | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
+»                  | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-AKTU-START
+«                  | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-AKTAN-ENDE
+[                  | 1.0 | -0.8 | -0.8 | PROTEIN-SOFT-POIU-START
+]                  | 1.0 | -0.8 | -0.8 | PROTEIN-SOFT-POIAN-ENDE
+{                  | 1.0 | -0.8 | -0.8 | PROTON-HARD-POOU-START
+}                  | 1.0 | -0.8 | -0.8 | PROTON-HARD-POOAN-ENDE
+(                  | 1.0 | -0.8 | -0.8 | FEED-FEEWERK-START
+)                  | 1.0 | -0.8 | -0.8 | FEED-FEEWERK-ENDE
+««                 | 1.0 | -0.8 | -0.8 | ARGUMENT-ARGH-OPTION
+<EINGABE>          | 1.0 | -0.8 | -0.8 | ARGUMENT-ARGWERT-<EINGABE>
+# TRANSAKTIONSRAHMEN ==========================================================
+¢!MASK             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-TRANU-START
+MASK!¢             | 2.2 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
+¢!MASK!¢           |10.0 | -0.6 | -0.9 | TRANSAKTIONSRAHMEN-TRANH-RUN
+# AKTIONSDRAHT ================================================================
+»MASK              | 2.0 | -0.8 | -1.0 | AKTIONSDRAHT-AKTU-START
+MASK«              | 2.2 | -0.8 | -1.0 | AKTIONSDRAHT-AKTAN-ENDE
+»MASK«             |10.0 | -0.6 | -0.9 | AKTIONSDRAHT-AKTH-IMPULS
+# PROTEIN =====================================================================
+[MASK              | 2.0 | -0.8 | -1.0 | PROTEIN-POIU-START 
+MASK]              | 2.2 | -0.8 | -1.0 | PROTEIN-POIAN-ENDE
+[MASK]             |10.0 | -0.8 | -1.0 | PROTEIN-POIH-SOFT 
+# PROTON ======================================================================
+{MASK              | 2.0 | -0.8 | -1.0 | PROTON-POOU-START
+MASK}              | 2.2 | -0.8 | -1.0 | PROTON-POOAN-ENDE
+{MASK}             |10.0 | -0.6 | -0.9 | PROTON-POOH-HARD
+# FEED-LVL-1 ==================================================================
+(MASK              | 2.0 | -0.8 | -1.0 | FEED-FEEWERK-START
+MASK)              | 2.2 | -0.8 | -1.0 | FEED-FEEWERK-ENDE
+(MASK)             |10.0 | -1.2 | -1.2 | FEED-FEEH-SYNC
+# FEED-LVL-2 ==================================================================
+±MASK              | 2.0 | -0.8 | -1.0 | FEED-FFEWERK-START
+MASK±              | 2.2 | -0.8 | -1.0 | FEED-FFEWERK-ENDE
+±MASK±             |10.0 | -0.6 | -0.9 | FEED-FFEH-ÜBERGABE
+(MASK)±MASK±       |20.0 | -2.2 | -3.2 | FÜHRENDER-FEED-FFEH-SYNC
+±MASK±(MASK)       |20.0 | -2.2 | -3.2 | TRAGENDER-FEED-TFEH-SYNC
+# ARGUMENT-LVL-1 ==============================================================
+MASK««             | 3.0 | -0.8 | -1.0 | ARGUMENT-ARGH-OPTION
+««Ω                | 3.7 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-LOOP
+««N                | 3.6 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGWERK-NANOSEKUNDEN
+««S                | 3.5 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGWERK-SEKUNDEN
+««T                | 3.6 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGWERK-TAKTSCHLÄGE
+««E                | 3.7 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-EXIT
+««B                | 3.7 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-BESTÄTIGUNG
+««ſ                | 3.8 | -0.8 | -1.0 | ARGUMENT-OPTION-ARGAN-REGEL-DER-REINHEIT
+# ARGUMENT-LVL-2 ==============================================================
+»MASK«««Ω          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
+»MASK«««N-<EINGABE>|18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK-<EINGABE>
+»MASK«««S-<EINGABE>|18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK-<EINGABE>
+»MASK«««T-<EINGABE>|18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK-<EINGABE>
+»MASK«««E          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
+»MASK«««B          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
+»MASK«««ſ          |18.2 | -0.2 | -0.2 | AKTK-MASK-AKTK
+# BOXIS-LVL-1 =================================================================
+[ĦMASKĦ]          | 15.0 | -1.0 | -1.2 | ABI-PROTEIN-KAPSEL (HARDCORE-COMBO)
+['MASK']          | 12.0 | -0.8 | -1.0 | SHELL-PROTEIN-KAPSEL
+[×MASK×]          | 15.0 | -1.0 | -1.2 | ALU-RECHEN-KAPSEL (MATHE-BONUS)
+[¥MASK¥]          | 10.0 | -0.5 | -0.5 | RAM-CACHE-KAPSEL
 # =============================================================================
-Ð               | 1.0 | -0.8 | -0.8 | NAVIGATOR-LANGZEITSPEICHER
-$               | 1.0 | -0.8 | -0.8 | NAVIGATOR-ZIELREFERENZ
-§               | 1.0 | -0.8 | -0.8 | NAVIGATOR-DIRIGENT
-=               | 1.0 | -0.8 | -0.8 | NAVIGATOR-INFORMATION
-…               | 1.0 | -0.8 | -0.8 | NAVIGATOR-INHALT
-RAUTE-SYMBOLE   | 1.0 | -0.8 | -0.8 | NAVIGATOR-KOMMENTAR
-# =============================================================================
-¢!              | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-STARTPUNKT
-!¢              | 1.0 | -0.8 | -0.8 | TRANSAKTIONSRAHMEN-ENDPUNKT
-»               | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-STARTPUNKT
-«               | 1.0 | -0.8 | -0.8 | AKTIONSDRAHT-ENDPUNKT
-[               | 1.0 | -0.8 | -0.8 | PROTEIN-SOFTWARERAHMEN-STARTPUNKT
-]               | 1.0 | -0.8 | -0.8 | PROTEIN-SOFTWARERAHMEN-ENDPUNKT
-{               | 1.0 | -0.8 | -0.8 | PROTON-HARDWARERAHMEN-STARTPUNKT
-}               | 1.0 | -0.8 | -0.8 | PROTON-HARDWARERAHMEN-ENDPUNKT
-««              | 1.0 | -0.8 | -0.8 | 
 
-# =============================================================================
-¢!…             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-STARTPUNKT
-…!¢             | 2.0 | -0.8 | -1.0 | TRANSAKTIONSRAHMEN-ENDPUNKT
-¢!…!¢           | 4.0 | -0.6 | -0.9 | TRANSAKTIONSRAHMEN
-# =============================================================================
-…«              | 2.0 | -0.8 | -1.0 | 
-»…              | 2.0 | -0.8 | -1.0 | 
-»…«             | 4.1 | -0.6 | -0.9 | 
-# =============================================================================
-[…              | 2.0 | -0.8 | -1.0 | 
-…]              | 2.0 | -0.8 | -1.0 |
-[…]             | 4.1 | -0.6 | -0.9 |
-# =============================================================================
-{…              | 2.0 | -0.8 | -1.0 |
-…}              | 2.0 | -0.8 | -1.0 |
-{…}             | 4.1 | -0.6 | -0.9 |
-# =============================================================================
 
-(…              | 3.5 | -1.2 | -1.2 |
-…)              | 3.5 | -1.2 | -1.2 |  
-(…)             | 3.5 | -1.2 | -1.2 |
-(…)±…±          | 3.5 | -1.2 | -1.2 | 
-±…±(…)          | 3.5 | -1.2 | -1.2 | 
 
-# =============================================================================
-…««             | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-
-««Ω             | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-LOOP
-««T             | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-ZEIT
-««TS            | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-TAKTSCHLÄGE
-««E             | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-EXIT
-««B             | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-BESTÄTIGUNG
-««ſ             | 2.0 | -0.8 | -1.0 | ARGUMENT-AUSLÖSER-REGEL-DER-REINHEIT
-»…«««Ω          | 4.2 | -0.6 | -0.9 | AKTIONSDRAHT-ARGUMENT-AUSLÖSER-LOOP
-»…«««T          | 4.2 | -0.6 | -0.9 | AKTIONSDRAHT-ARGUMENT-AUSLÖSER-ZEIT
-»…«««TS         | 4.2 | -0.6 | -0.9 | AKTIONSDRAHT-ARGUMENT-AUSLÖSER-TAKTSCHLÄGE
-»…«««E          | 4.2 | -0.6 | -0.9 | AKTIONSDRAHT-ARGUMENT-EXIT
-»…«««B          | 4.2 | -0.6 | -0.9 | AKTIONSDRAHT-ARGUMENT-BESTÄTIGUNG
-»…«««ſ          | 4.2 | -0.6 | -0.9 | AKTIONSDRAHT-ARGUMENT-REGEL-DER-REINHEIT
-# =============================================================================
-[…]             | 4.0 | -1.5 | -1.5 | Protein-Rahmen komplett
-{…}             | 4.0 | -1.5 | -1.5 | Proton-Rahmen komplett
-(…)             | 3.5 | -1.2 | -1.2 | Feed-Rahmen komplett
-
-–·¤ =           | 5.0 | -2.0 | -2.0 | Bedingungs-Struktur komplett (Logik-Klick!)
-¶  ¶            | 3.0 | -1.0 | -1.0 | Sentiator-Doppel (kann auch allein gut sein)
-þ  þþ þþþ       | 4.0 | -1.5 | -1.5 | Identifikations-Erweiterung
-Ŧ° Ŧ¹ Ŧ² Ŧ³     | 4.0 | -1.3 | -1.5 | RETRON REGULATIONSORGANISATOR
+#–·¤ =           | 5.0 | -2.0 | -2.0 | Bedingungs-Struktur komplett (Logik-Klick!)
+#¶  ¶            | 3.0 | -1.0 | -1.0 | Sentiator-Doppel (kann auch allein gut sein)
+#þ  þþ þþþ       | 4.0 | -1.5 | -1.5 | Identifikations-Erweiterung
+#Ŧ° Ŧ¹ Ŧ² Ŧ³     | 4.0 | -1.3 | -1.5 | RETRON REGULATIONSORGANISATOR

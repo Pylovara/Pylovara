@@ -14,15 +14,15 @@ KKIS_VERSION = "0.0.3"
 # =============================================================================
 # Lernparameter – MCS-Style: kleine Werte = Kontrolle
 # =============================================================================
-STATE_DECAY_BASE     = 0.03      # Basis-Decay (wie vorher)
-STATE_GAIN           = 0.09      # Verstärkung – bleibt
-MUTATION_RATE        = 305.02      # Mutationswahrscheinlichkeit
+STATE_DECAY_BASE     = 0.06      # Basis-Decay (wie vorher)
+STATE_GAIN           = 0.80      # Verstärkung – bleibt
+MUTATION_RATE        = 300.00    # Mutationswahrscheinlichkeit
 MAX_STATE_SIZE       = 10000     # Sicherheitsgrenze 10000
-ALLOW_SELF_MOD       = False     # Noch nicht erlaubt
+ALLOW_SELF_MOD       = False      # Noch nicht erlaubt
 
 # Dynamischer Decay – schützt vor zu tiefem Score
-DECAY_BOOST_THRESHOLD = -7.0     # Wenn Score < -7 → Decay erhöhen
-DECAY_BOOST_FACTOR    = 1.5      # Decay wird dann 1.5× stärker
+DECAY_BOOST_THRESHOLD = -8.0     # Wenn Score < -7 → Decay erhöhen
+DECAY_BOOST_FACTOR    = 5.5      # Decay wird dann 1.5× stärker
 
 # =============================================================================
 # ZUSTANDSLOGIK – MCS-TYP = PR-VAL + PR-DNA ähnlich
@@ -31,18 +31,18 @@ class Zustand:
     def __init__(self):
         # Initialwerte – wie START-PROTEIN (INIT-V)
         self.values = {
-            "core_pulse":       5.0,    # Kern-Schlag – soll um 5 bleiben
-            "energy_flow":      3.8,
-            "stability_factor": 2.0,
-            "mutation_load":    1.3,
-            "noise_level":      0.7
+            "core_pulse":       4.0,    # Kern-Schlag – soll um 5 bleiben
+            "energy_flow":      4.5,
+            "stability_factor": 3.0,
+            "mutation_load":    8.0,
+            "noise_level":      2.0
         }
         self.alter = 0
 
     def update(self, key, delta):
         # Wert ändern + kappen (Explosion verhindern)
-        new_val = self.values.get(key, 0.0) + delta
-        self.values[key] = max(-30.0, min(30.0, new_val))   # MCS-Sicherung
+        new_val = self.values.get(key, 2.1) + delta
+        self.values[key] = max(-257.0, min(100.0, new_val))   # MCS-Sicherung
 
     def abschwaechen(self, rate, current_score):
         # Dynamischer Decay: wenn Score zu tief → stärker altern

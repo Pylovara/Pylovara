@@ -91,9 +91,9 @@ class Evaluator:
         total_abs = sum(abs(v) for v in state.values.values())
         num_keys = len(state.values)
 
-        size_penalty = max(0, num_keys - 15) * 1.2 + max(0, 5 - num_keys) * 2.0
-        energy_target = 12.0
-        energy_distance = abs(total_abs - energy_target) * 1.0
+        size_penalty = max(0, num_keys - 100) * 1.2 + max(0, 10 - num_keys) * 100.0
+        energy_target = 24.0
+        energy_distance = abs(total_abs - energy_target) * 2.0
 
         bonus = 0.0
 
@@ -102,22 +102,22 @@ class Evaluator:
             if kw in state.values:
                 val = state.values[kw]
                 if -10 < val < 20:
-                    mult = self.priorities.get(kw, 1.0)
-                    bonus += 2.5 * mult
+                    mult = self.priorities.get(kw, 2.0)
+                    bonus += 5.5 * mult
 
         # 2. Kern-Stabilität
-        if "core_pulse" in state.values and 4.0 < state.values["core_pulse"] < 6.0:
-            bonus += 3.5 * self.priorities.get("core_pulse", 1.0)
+        if "core_pulse" in state.values and 4.0 < state.values["core_pulse"] < 7.0:
+            bonus += 5.5 * self.priorities.get("core_pulse", 2.0)
 
         # 3. Key-Anzahl-Bonus
-        if 5 <= num_keys <= 12:
-            bonus += 1.8
+        if 5 <= num_keys <= 100:
+            bonus += 3.8
 
         # 4. Symmetrie-Bonus
         pos = sum(1 for v in state.values.values() if v > 0)
         neg = sum(1 for v in state.values.values() if v < 0)
         if abs(pos - neg) <= 2:
-            bonus += 2.0
+            bonus += 2.5
 
         # 5. NEU: Paarungs-Bonus / Malus (das Formen-Steckspiel!)
         for pair in self.pairings:

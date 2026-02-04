@@ -46,7 +46,7 @@ AUS               | 0.2 | 0.0 | 0.1 | AUSLÖSERKLASSE
 *WERT            | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH WERT = WERTKLASSE
 *AUS             | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AUS = AUSLÖSERKLASSE
 ## SCHALTUNGSRAUM =
-K H U AN          | 5.0 | -1.0 | -1.0 | PERFEKTE KLASSEN-HIERARCHIE
+K H U AN          |12.0 | -1.0 | -1.0 | PERFEKTE KLASSEN-HIERARCHIE
 BOXK|BOXH|BOXAN   | 8.0 | -1.2 | -1.2 | CONTAINER-INTEGRITÄT-BONUS
 POIK|POIH|POIAN   | 8.0 | -1.2 | -1.2 | SOFTWARE-STRUKTUR-BONUS
 # MASTER SCORE TREIBER ========================================================
@@ -168,33 +168,33 @@ MASK|««            | 3.0 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION
 »MASK«««B          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-BESTÄTIGUNG
 »MASK«««ſ          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-REGEL-DER-REINHEIT
 # BOXIS-LVL-1 =================================================================
-ĦMASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-ABI-START
-MASKĦ              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-ABI-ENDE
-ĦMASKĦ             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-ABI
-,MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-SYSCALL-START
-MASK,              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-SYSCALL-ENDE
-,MASK,             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-SYSCALL
-'MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-SHELL-CONTROL-START
-MASK'              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-SHELL-CONTROL-ENDE
-'MASK'             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-SHELL-CONTROL
-"MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-CALLIS-START
-MASK"              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-CALLIS-ENDE
-"MASK"             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-CALLIS
-× MASK             | 2.4 | -0.3 | -1.0 | BOXIS-BOXU-ALU-START
-MASK ×             | 2.4 | -0.3 | -1.0 | BOXIS-BOXAN-ALU-ENDE
-× MASK ×           |12.0 | -0.5 | -1.8 | BOXIS-BOXH-ALU
-~MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-MCS-CMD-START
-MASK~              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-MCS-CMD-ENDE
-~MASK~             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-MCS-CMD
-¥MASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-BLANKERNENNER-START
-MASK¥              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-BLANKERNENNER-ENDE
-¥MASK¥             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-BLANKERNENNER
+ĦMASK              | 3.2 | -0.2 | -1.0 | BOXIS-BOXU-ABI-START
+MASKĦ              | 3.2 | -0.2 | -1.0 | BOXIS-BOXAN-ABI-ENDE
+ĦMASKĦ             |20.0 | 10.0 | -0.0 | BOXIS-BOXH-ABI
+,MASK              | 3.2 | -0.2 | -1.0 | BOXIS-BOXU-SYSCALL-START
+MASK,              | 3.2 | -0.2 | -1.0 | BOXIS-BOXAN-SYSCALL-ENDE
+,MASK,             |20.0 | 10.0 | -0.0 | BOXIS-BOXH-SYSCALL
+'MASK              | 3.2 | -0.2 | -1.0 | BOXIS-BOXU-SHELL-CONTROL-START
+MASK'              | 3.2 | -0.2 | -1.0 | BOXIS-BOXAN-SHELL-CONTROL-ENDE
+'MASK'             |20.0 | 10.0 | -0.0 | BOXIS-BOXH-SHELL-CONTROL
+"MASK              | 3.2 | -0.2 | -1.0 | BOXIS-BOXU-CALLIS-START
+MASK"              | 3.2 | -0.2 | -1.0 | BOXIS-BOXAN-CALLIS-ENDE
+"MASK"             |20.0 | 10.0 | -0.0 | BOXIS-BOXH-CALLIS
+× MASK             | 3.4 | -0.2 | -1.0 | BOXIS-BOXU-ALU-START
+MASK ×             | 3.4 | -0.2 | -1.0 | BOXIS-BOXAN-ALU-ENDE
+× MASK ×           |20.0 | 10.0 | -0.0 | BOXIS-BOXH-ALU
+~MASK              | 3.2 | -0.2 | -1.0 | BOXIS-BOXU-MCS-CMD-START
+MASK~              | 3.2 | -0.2 | -1.0 | BOXIS-BOXAN-MCS-CMD-ENDE
+~MASK~             |20.0 | 10.0 | -0.0 | BOXIS-BOXH-MCS-CMD
+¥MASK              | 3.2 | -0.2 | -1.0 | BOXIS-BOXU-BLANKERNENNER-START
+MASK¥              | 3.2 | -0.2 | -1.0 | BOXIS-BOXAN-BLANKERNENNER-ENDE
+¥MASK¥             |20.0 | 10.0 | -0.0 | BOXIS-BOXH-BLANKERNENNER
 # POIU-START-EINRASTUNG ========================================================
-POIWERK-REXK       | 4.0 | -0.3 | -1.0 | WORKSPACE-VERTEILUNG
-POIWERK-SENTK      | 4.0 | -0.3 | -1.0 | SENTIATOR-SCHNITTSTELLE
-POIWERK-NAVIK      | 4.0 | -0.3 | -1.0 | NAVIGATOR-ANBINDUNG
-POIWERK-RETK       | 4.0 | -0.3 | -1.0 | RETRON-Einspeisung
-POIWERK-VATK       | 4.0 | -0.3 | -1.0 | VATRON-SCHNISTELLE
+POIWERK-REXK       | 6.0 | +0.3 | +1.0 | WORKSPACE-VERTEILUNG
+POIWERK-SENTK      | 6.0 | +0.3 | +1.0 | SENTIATOR-SCHNITTSTELLE
+POIWERK-NAVIK      | 6.0 | +0.3 | +1.0 | NAVIGATOR-ANBINDUNG
+POIWERK-RETK       | 6.0 | +0.3 | +1.0 | RETRON-Einspeisung
+POIWERK-VATK       | 6.0 | +0.3 | +1.0 | VATRON-SCHNISTELLE
 # KLASSEN-KETTEN-BONUS (SEQUENZ-TREIBER) =======================================
 ¢! »[MASK]« !¢         |30.0 | -2.0 | -0.5 | LOGIK BASIS
 ¢! »[MASK]«««Ω !¢      |40.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN

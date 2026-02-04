@@ -8,21 +8,21 @@
 # STATUS       = FREIGESCHALTET FÜR DYNAMISCHEN SELBSTSCHUTZ
 # =============================================================================
 
-KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "SHIVA"
-KKIS_VERSION = "0.0.4"
+KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "ShiVara"
+KKIS_VERSION = "0.0.6"
 
 # =============================================================================
 # Lernparameter – MCS-Style: kleine Werte = Kontrolle
 # =============================================================================
-STATE_DECAY_BASE     = 0.09      # Basis-Decay (wie vorher)
-STATE_GAIN           = 0.25      # Verstärkung – bleibt
-MUTATION_RATE        = 700.00    # Mutationswahrscheinlichkeit
+STATE_DECAY_BASE     = 0.06      # Basis-Decay (wie vorher)
+STATE_GAIN           = 0.15      # Verstärkung – bleibt
+MUTATION_RATE        = 300.00    # Mutationswahrscheinlichkeit
 MAX_STATE_SIZE       = 10000     # Sicherheitsgrenze 10000
 ALLOW_SELF_MOD       = False      # Noch nicht erlaubt
 
 # Dynamischer Decay – schützt vor zu tiefem Score
 DECAY_BOOST_THRESHOLD = -9.0     # Wenn Score < -7 → Decay erhöhen
-DECAY_BOOST_FACTOR    = 20.0      # Decay wird dann 1.5× stärker
+DECAY_BOOST_FACTOR    = 25.0      # Decay wird dann 1.5× stärker
 
 # =============================================================================
 # ZUSTANDSLOGIK – MCS-TYP = PR-VAL + PR-DNA ähnlich
@@ -42,7 +42,7 @@ class Zustand:
     def update(self, key, delta):
         # Wert ändern + kappen (Explosion verhindern)
         new_val = self.values.get(key, 2.1) + delta
-        self.values[key] = max(-257.0, min(100.0, new_val))   # MCS-Sicherung
+        self.values[key] = max(-600.0, min(200.0, new_val))   # MCS-Sicherung
 
     def abschwaechen(self, rate, current_score):
         # Dynamischer Decay: wenn Score zu tief → stärker altern
@@ -52,7 +52,7 @@ class Zustand:
             # print(f"[DECAY-BOOST] Score {current_score:.2f} < {DECAY_BOOST_THRESHOLD} → Decay ×{DECAY_BOOST_FACTOR}")
 
         for k in self.values:
-            self.values[k] *= (1.0 - effective_rate)
+            self.values[k] *= (1.2 - effective_rate)
 
     def abbild(self):
         # Snapshot für Speichern

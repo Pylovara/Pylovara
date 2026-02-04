@@ -91,9 +91,9 @@ class Evaluator:
         total_abs = sum(abs(v) for v in state.values.values())
         num_keys = len(state.values)
 
-        size_penalty = max(0, num_keys - 200) * 1.2 + max(0, 10 - num_keys) * 200.0
-        energy_target = 1.0
-        energy_distance = abs(total_abs - energy_target) * 1.0
+        size_penalty = max(0, num_keys - 200) * 50.5 + max(0, 1 - num_keys) * 100.0
+        energy_target = 0.5
+        energy_distance = abs(total_abs - energy_target) * 0.5
 
         bonus = 0.0
 
@@ -101,34 +101,34 @@ class Evaluator:
         for kw in self.keywords:
             if kw in state.values:
                 val = state.values[kw]
-                if -10 < val < 20:
-                    mult = self.priorities.get(kw, 2.0)
-                    bonus += 5.5 * mult
+                if -2 < val < 5:
+                    mult = self.priorities.get(kw, 80.0)
+                    bonus += 2.0 * mult
 
         # 2. Kern-Stabilität
-        if "core_pulse" in state.values and 4.0 < state.values["core_pulse"] < 7.0:
-            bonus += 5.5 * self.priorities.get("core_pulse", 2.0)
+        if "core_pulse" in state.values and 4.0 < state.values["core_pulse"] < 8.0:
+            bonus += 8.5 * self.priorities.get("core_pulse", 2.0)
 
         # 3. Key-Anzahl-Bonus
-        if 5 <= num_keys <= 100:
-            bonus += 3.8
+        if 5 <= num_keys <= 800:
+            bonus += 2.8
 
         # 4. Symmetrie-Bonus
-        pos = sum(1 for v in state.values.values() if v > 0)
-        neg = sum(1 for v in state.values.values() if v < 0)
-        if abs(pos - neg) <= 2:
-            bonus += 2.5
+        pos = sum(1 for v in state.values.values() if v > 2)
+        neg = sum(1 for v in state.values.values() if v < 3)
+        if abs(pos - neg) <= 4:
+            bonus += 6.0
 
-        # 5. NEU: Paarungs-Bonus / Malus (das Formen-Steckspiel!)
+        # 5. NEU# : Paarungs-Bonus / (das Formen-Steckspiel-ARCADEAUTOMAT!)
         for pair in self.pairings:
             has_start = pair['start'] in state.values
             has_end = pair['end'] in state.values
             if has_start and has_end:
                 bonus += pair['both']
             elif has_start:
-                bonus += pair['only_start']  # Malus
+                bonus += pair['only_start']  
             elif has_end:
-                bonus += pair['only_end']    # Malus
+                bonus += pair['only_end']    
 
         score = - (energy_distance + size_penalty) + bonus
         return score

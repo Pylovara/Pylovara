@@ -1,6 +1,6 @@
 # =============================================================================
 # PAARUNGS-BONUS – Belohnung für korrekte Symbol-Paare 
-# VERSION: 0.0.8 FORM-SPIEL MIT LEVEL ARCADESPIELAUTOMAT TRANSFORMATION
+# VERSION: 0.0.9 FORM-SPIEL MIT LEVEL ARCADESPIELAUTOMAT TRANSFORMATION
 # AUTOR: THOMAS-ZIMMERMANN-STUFE10-þþZRB68
 # STAND: 2026-02-04
 # STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - KKIS NAME = ShiVa
@@ -76,13 +76,20 @@ $                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-ZIELREFERENZ
 =                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-INFORMATION
 …                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-MASK
 RAUTE-SYMBOLE     | 0.8 | -0.2 | -0.3 | NAVIGATOR-KOMMENTAR
+# DATENPIPLINE VERTRÄGE =======================================================
+[                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-REXK
+[                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-SENTK
+[                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-NAVIK
+[                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-RETK
+[                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-VATK
+[                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK>-<ELEMENT>-POIAN-DATENPIPLINE
 # MCS-PROGRAMIER-ELEMENTE =====================================================
 ¢!                | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANU-START
 !¢                | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
 »                 | 1.4 | -0.3 | -0.7 | AKTIONSDRAHT-AKTU-START
 «                 | 1.4 | -0.3 | -0.7 | AKTIONSDRAHT-AKTAN-ENDE
 [                 | 1.5 | -0.3 | -0.7 | PROTEIN-SOFT-POIU-START
-]                 | 1.5 | -0.3 | -0.7 | PROTEIN-SOFT-POIAN-ENDE
+]                 | 1.5 | -0.3 | -0.7 | PROTEIN-SOFT-POIU-START-POIAN-ENDE
 {                 | 1.3 | -0.3 | -0.7 | PROTON-HARD-POOU-START
 }                 | 1.3 | -0.3 | -0.7 | PROTON-HARD-POOAN-ENDE
 (                 | 1.3 | -0.3 | -0.7 | FEED-FEEWERK-START

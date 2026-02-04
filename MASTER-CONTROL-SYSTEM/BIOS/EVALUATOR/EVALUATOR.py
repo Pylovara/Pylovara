@@ -91,9 +91,9 @@ class Evaluator:
         total_abs = sum(abs(v) for v in state.values.values())
         num_keys = len(state.values)
 
-        size_penalty = max(0, num_keys - 100) * 1.2 + max(0, 10 - num_keys) * 100.0
-        energy_target = 24.0
-        energy_distance = abs(total_abs - energy_target) * 2.0
+        size_penalty = max(0, num_keys - 200) * 1.2 + max(0, 10 - num_keys) * 200.0
+        energy_target = 1.0
+        energy_distance = abs(total_abs - energy_target) * 1.0
 
         bonus = 0.0
 

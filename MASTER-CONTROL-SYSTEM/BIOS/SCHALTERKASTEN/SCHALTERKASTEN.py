@@ -8,21 +8,21 @@
 # STATUS       = FREIGESCHALTET FÜR DYNAMISCHEN SELBSTSCHUTZ
 # =============================================================================
 
-KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "SHIVABAAL"
-KKIS_VERSION = "0.0.3"
+KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "SHIVA"
+KKIS_VERSION = "0.0.4"
 
 # =============================================================================
 # Lernparameter – MCS-Style: kleine Werte = Kontrolle
 # =============================================================================
-STATE_DECAY_BASE     = 0.06      # Basis-Decay (wie vorher)
-STATE_GAIN           = 0.80      # Verstärkung – bleibt
-MUTATION_RATE        = 300.00    # Mutationswahrscheinlichkeit
+STATE_DECAY_BASE     = 0.09      # Basis-Decay (wie vorher)
+STATE_GAIN           = 0.25      # Verstärkung – bleibt
+MUTATION_RATE        = 700.00    # Mutationswahrscheinlichkeit
 MAX_STATE_SIZE       = 10000     # Sicherheitsgrenze 10000
 ALLOW_SELF_MOD       = False      # Noch nicht erlaubt
 
 # Dynamischer Decay – schützt vor zu tiefem Score
-DECAY_BOOST_THRESHOLD = -8.0     # Wenn Score < -7 → Decay erhöhen
-DECAY_BOOST_FACTOR    = 5.5      # Decay wird dann 1.5× stärker
+DECAY_BOOST_THRESHOLD = -9.0     # Wenn Score < -7 → Decay erhöhen
+DECAY_BOOST_FACTOR    = 20.0      # Decay wird dann 1.5× stärker
 
 # =============================================================================
 # ZUSTANDSLOGIK – MCS-TYP = PR-VAL + PR-DNA ähnlich

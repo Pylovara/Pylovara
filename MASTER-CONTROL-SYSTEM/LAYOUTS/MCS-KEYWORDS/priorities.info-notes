@@ -8,7 +8,6 @@
 # Format = 
 # SYMBOL MATCHES  | PUNKTE KASTEN   | WAS ES BEDEUTET
 # MASTER REGISTER KLASSEN ALPHABET =============================================
-#
 ## DEUTUNGSRAUM =
 *                 | 0.2 | 0.0 | 0.1 | SEHE ETWAS
 *|<LEER>          | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DAHINTER IST ETWAS LEER
@@ -24,7 +23,6 @@ MASK|MASK         | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND MASTER KR
 MASK-<LEER>       | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND LEERE DANACH
 <LEER>-MASK       | 0.2 | 0.0 | 0.1 | SEHE LEERE DAVOR UND MASTER KERNKLASSE DANACH 
 MASK-MASK         | 0.2 | 0.0 | 0.1 | SEHE MASK MASTER KRENKLASSE DAVOR WIE MASTER KRENKLASSE DANACH
-#
 ## KLASSENRAUM =
 MASTER            | 0.2 | 0.0 | 0.1 | MASTER
 K                 | 0.2 | 0.0 | 0.1 | KERNKLASSE
@@ -37,7 +35,6 @@ AN                | 0.2 | 0.0 | 0.1 | ANKERKLASSE
 WERT              | 0.2 | 0.0 | 0.1 | WERTLASSE
 L                 | 0.2 | 0.0 | 0.1 | LINKERKLASSE
 AUS               | 0.2 | 0.0 | 0.1 | AUSLÖSERKLASSE
-#
 ## DEUTUNGSKLASSENRAUM =
 *|K               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH K = KERNKLASSE
 *|H               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH H = HAUPTKLASSE
@@ -48,12 +45,10 @@ AUS               | 0.2 | 0.0 | 0.1 | AUSLÖSERKLASSE
 *|AN              | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AN = ANKERKLASSE
 *|WERT            | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH WERT = WERTKLASSE
 *|AUS             | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AUS = AUSLÖSERKLASSE
-#
 ## SCHALTUNGSRAUM =
 K|H|U|AN          | 5.0 | -1.0 | -1.0 | PERFEKTE KLASSEN-HIERARCHIE
 BOXK|BOXH|BOXAN   | 8.0 | -1.2 | -1.2 | CONTAINER-INTEGRITÄT-BONUS
 POIK|POIH|POIAN   | 8.0 | -1.2 | -1.2 | SOFTWARE-STRUKTUR-BONUS
-#
 # MASTER SCORE TREIBER ========================================================
 DATEK             | 0.8 | 0.0 | 0.1 | DATENTYPEN-KERNKLASSE
 TRANK             | 0.8 | 0.0 | 0.1 | TRANSAKTIONSRAHMEN-KERNKLASSE
@@ -183,11 +178,12 @@ MASK~              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-MCS-CMD-ENDE
 MASK¥              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-BLANKERNENNER-ENDE
 ¥MASK¥             |10.0 | -0.6 | -1.9 | BOXIS-BOXH-BLANKERNENNER
 # KLASSEN-KETTEN-BONUS (SEQUENZ-TREIBER) =======================================
-¬ · ¬· []«       |50.0 | -2.0 | -0.5 | Bedingungs-Struktur komplett (Logik-Klick!)
-¶ ¶¶ ſ           |50.0 | -2.0 | -0.5 | Sentiator-Doppel (kann auch allein gut sein)
-þ þþ þþþ         |50.0 | -2.0 | -0.5 | Identifikations-Erweiterung
-Ŧ° Ŧ¹ Ŧ² Ŧ³      |50.0 | -2.0 | -0.5 | RETRON REGULATIONSORGANISATOR
-
-
-
-
+¢! »[MASK]« !¢         |30.0 | -2.0 | -0.5 | LOGIK BASIS
+¢! »[MASK]«««Ω !¢      |40.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN
+¢! »[BOXH]« !¢         |30.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN
+¢! »[BOXH|BOXH]« !¢    |50.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN
+¢! øĸ WARK ĸø !¢       |40.0 | -2.0 | -0.5 | LOGIK LEGACY WARP
+þ þþ þþþ               |50.0 | -2.0 | -0.5 | IDENTIFIKATIONS ID STUFEN
+Ŧ° Ŧ¹ Ŧ² Ŧ³            |50.0 | -2.0 | -0.5 | RETRON REGULATIONSORGANISATOR STUFEN
+¶ ¶¶                   |50.0 | -2.0 | -0.5 | SENTIATOREN REFLEXE
+# =============================================================================

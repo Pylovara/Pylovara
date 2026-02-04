@@ -1,6 +1,6 @@
 # =============================================================================
 # PAARUNGS-BONUS – Belohnung für korrekte Symbol-Paare 
-# VERSION: 0.0.9 FORM-SPIEL MIT LEVEL ARCADESPIELAUTOMAT TRANSFORMATION
+# VERSION: 0.1.0 FORM-SPIEL MIT LEVEL ARCADE SPIELAUTOMAT Deluxé 
 # AUTOR: THOMAS-ZIMMERMANN-STUFE10-þþZRB68
 # STAND: 2026-02-04
 # STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - KKIS NAME = ShiVa
@@ -75,8 +75,13 @@ $                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-ZIELREFERENZ
 §                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-DIRIGENT
 =                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-INFORMATION
 …                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-MASK
+-                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-NAVU-KNOTENPUNKT
+IDENH-ID          | 0.8 | -0.2 | -0.3 | NAVIGATOR-IDENTIFIKATION
+ID-DNA            | 0.8 | -0.2 | -0.3 | NAVIGATOR-NAVU-NAVU-SCHATTENIDENTITÄT
+$                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-NAVU-NAVU-ZIELREFERENZ
+MASK              | 0.8 | -0.2 | -0.3 | NAVIGATOR-NAVU-MASK
 RAUTE-SYMBOLE     | 0.8 | -0.2 | -0.3 | NAVIGATOR-KOMMENTAR
-# DATENPIPLINE VERTRÄGE =======================================================
+# PIPLINE VERTRÄGE ============================================================
 [                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-REXK
 [                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-SENTK
 [                 | 3.5 | -0.3 | -0.7 | PROTEIN-SOFT-START-POIWERK-NAVIK

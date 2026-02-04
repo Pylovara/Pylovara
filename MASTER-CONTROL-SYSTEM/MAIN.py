@@ -8,8 +8,8 @@
 
 from BIOS.LOOP.LOOP import CognitiveLoop
 
-loop = CognitiveLoop()
+LOOP = CognitiveLoop()
 
 for i in range(1000):
-    score = loop.step()
-    print(f"[{i}] score={score}")
+    score = LOOP.step()
+    print(f"[{i}] SCORE={score}")

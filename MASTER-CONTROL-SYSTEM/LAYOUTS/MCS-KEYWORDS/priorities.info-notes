@@ -1,7 +1,7 @@
 # =============================================================================
 # PAARUNGS-BONUS – Belohnung für korrekte Symbol-Paare 
-# VERSION: 0.0.6 FORM-SPIEL MIT ARCADESPIELAUTOMAT TRANSFORMATION
-# AUTOR: Thomas Zimmermann Stufe 10 MASTER
+# VERSION: 0.0.8 FORM-SPIEL MIT LEVEL ARCADESPIELAUTOMAT TRANSFORMATION
+# AUTOR: THOMAS-ZIMMERMANN-STUFE10-þþZRB68
 # STAND: 2026-02-04
 # STATUS: FREIGESCHALTET FÜR KINDER-LERNEN - KKIS NAME = ShiVa
 # =============================================================================
@@ -11,19 +11,19 @@
 #
 ## DEUTUNGSRAUM =
 *                 | 0.2 | 0.0 | 0.1 | SEHE ETWAS
-*|                | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR
- |*               | 0.2 | 0.0 | 0.1 | SEHE DAVOR NICHTS ABER SEHE ETWAS DANACH
+*|<LEER>          | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DAHINTER IST ETWAS LEER
+<LEER>|*          | 0.2 | 0.0 | 0.1 | SEHE DAVOR NUR LEER ABER SEHE ETWAS DANACH
 *|*               | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND SEHE ETWAS DANACH
-MASK              | 0.2 | 0.0 | 0.1 | SEHE ETWAS
-MASK|             | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR 
-    |MASK         | 0.2 | 0.0 | 0.1 | SEHE DAVOR NICHTS ABER SEHE ETWAS DANACH
-MASK|MASK         | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DANACH
-*-                | 0.2 | 0.0 | 0.1 | SEHE ETWAS DANACH
- -*               | 0.2 | 0.0 | 0.1 | SEHE DAVOR NICHTS ABER SEHE ETWAS DANACH
+MASK              | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE
+MASK|<LEER>       | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND DAHINTER IST ETWAS LEER
+<LEER>|MASK       | 0.2 | 0.0 | 0.1 | SEHE DAVOR NUR LEER ABER SEHE MASTER KRENKLASSE DANACH
+MASK|MASK         | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND MASTER KRENKLASSE DANACH
+*-<LEER>          | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DAHINTER IST LEER
+<LEER>-*          | 0.2 | 0.0 | 0.1 | SEHE DAVOR NUR LEER ABER SEHE ETWAS DANACH
 *-*               | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND SEHE ETWAS DANACH
-MASK-             | 0.2 | 0.0 | 0.1 | SEHE MASK DAVOR UND KNOTENPUNKT
--MASK             | 0.2 | 0.0 | 0.1 | SEHE KNOTENPUNKT UND MASK DANACH 
-MASK-MASK         | 0.2 | 0.0 | 0.1 | SEHE MASK DAVOR WIE KNOTENPUNKT UND MASK DANACH
+MASK-<LEER>       | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND LEERE DANACH
+<LEER>-MASK       | 0.2 | 0.0 | 0.1 | SEHE LEERE DAVOR UND MASTER KERNKLASSE DANACH 
+MASK-MASK         | 0.2 | 0.0 | 0.1 | SEHE MASK MASTER KRENKLASSE DAVOR WIE MASTER KRENKLASSE DANACH
 #
 ## KLASSENRAUM =
 MASTER            | 0.2 | 0.0 | 0.1 | MASTER
@@ -74,7 +74,6 @@ VATK              | 0.8 | 0.0 | 0.1 | VATRON-KERNKLASSE
 RETK              | 0.8 | 0.0 | 0.1 | RETRON-KERNKLASSE
 MATK              | 0.8 | 0.0 | 0.1 | MATRIX-KERNKLASSE
 KKIK              | 0.8 | 0.0 | 0.1 | KKIS-KERNKLASSE
-#
 # NAVIGATOR ===================================================================
 Ð                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-LANGZEITSPEICHER
 $                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-ZIELREFERENZ
@@ -82,7 +81,6 @@ $                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-ZIELREFERENZ
 =                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-INFORMATION
 …                 | 0.8 | -0.2 | -0.3 | NAVIGATOR-MASK
 RAUTE-SYMBOLE     | 0.8 | -0.2 | -0.3 | NAVIGATOR-KOMMENTAR
-#
 # MCS-PROGRAMIER-ELEMENTE =====================================================
 ¢!                | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANU-START
 !¢                | 1.3 | -0.3 | -0.7 | TRANSAKTIONSRAHMEN-TRANAN-ENDE
@@ -119,58 +117,49 @@ RAUTE-SYMBOLE     | 0.8 | -0.2 | -0.3 | NAVIGATOR-KOMMENTAR
 ↑                 | 1.3 | -0.3 | -0.7 | REX-REXAN-AUFSTEIGENDSORTIEREN
 ↓                 | 1.3 | -0.3 | -0.7 | REX-REXAN-ABSTEIGENDSORTIEREN
 <MASK>            | 1.3 | -0.3 | -0.7 | MASK
-#
 # TRANSAKTIONSRAHMEN ==========================================================
-¢!MASK             | 2.0 | -0.5 | -1.0 | TRANU-START
-MASK!¢             | 2.2 | -0.5 | -1.0 | TRANAN-ENDE
-¢!MASK!¢           |10.0 | -0.6 | -0.9 | TRANH-RUN
-#
+¢!MASK             | 2.0 | -0.5 | -1.0 | TRANSAKTIONSRAHMENTRANU-START
+MASK!¢             | 2.2 | -0.5 | -1.0 | TRANSAKTIONSRAHMENTRANU-TRANAN-ENDE
+¢!MASK!¢           |10.0 | -0.6 | -0.9 | TRANSAKTIONSRAHMENTRANU-TRANH-RUN
 # AKTIONSDRAHT ================================================================
-»MASK              | 2.0 | -0.5 | -1.0 | AKTU-START
-MASK«              | 2.2 | -0.5 | -1.0 | AKTAN-ENDE
-»MASK«             |10.0 | -0.6 | -0.9 | AKTH-IMPULS
-#
+»MASK              | 2.0 | -0.5 | -1.0 | AKTIONSDRAHT-AKTU-START
+MASK«              | 2.2 | -0.5 | -1.0 | AKTIONSDRAHT-AKTAN-ENDE
+»MASK«             |10.0 | -0.6 | -0.9 | AKTIONSDRAHT-AKTH-IMPULS
 # PROTEIN =====================================================================
-[MASK              | 2.0 | -0.5 | -1.0 | POIU-START 
-MASK]              | 2.2 | -0.5 | -1.0 | POIAN-ENDE
-[MASK]             |10.0 | -0.6 | -0.9 | POIH-SOFT 
-#
+[MASK              | 2.0 | -0.5 | -1.0 | PROTEIN-POIU-START 
+MASK]              | 2.2 | -0.5 | -1.0 | PROTEIN-POIAN-ENDE
+[MASK]             |10.0 | -0.6 | -0.9 | PROTEIN-POIH-SOFT 
 # PROTON ======================================================================
-{MASK              | 2.0 | -0.5 | -1.0 | POOU-START
-MASK}              | 2.2 | -0.5 | -1.0 | POOAN-ENDE
-{MASK}             |10.0 | -0.6 | -0.9 | POOH-HARD
-#
+{MASK              | 2.0 | -0.5 | -1.0 | PROTON-POOU-START
+MASK}              | 2.2 | -0.5 | -1.0 | PROTON-POOAN-ENDE
+{MASK}             |10.0 | -0.6 | -0.9 | PROTON-POOH-HARD
 # FEED-LVL-1 ==================================================================
-(MASK              | 2.0 | -0.5 | -1.0 | FEEWERK-START
-MASK)              | 2.2 | -0.5 | -1.0 | FEEWERK-ENDE
-(MASK)             |10.0 | -0.6 | -0.9 | FEEH-SYNC
-#
+(MASK              | 2.0 | -0.5 | -1.0 | FEED-FEEWERK-START
+MASK)              | 2.2 | -0.5 | -1.0 | FEED-FEEWERK-ENDE
+(MASK)             |10.0 | -0.6 | -0.9 | FEED-FEEH-SYNC
 # FEED-LVL-2 ==================================================================
-±MASK              | 2.0 | -0.5 | -1.0 | FFEWERK-START
-MASK±              | 2.2 | -0.5 | -1.0 | FFEWERK-ENDE
-±MASK±             |10.0 | -0.6 | -1.9 | FFEH-ÜBERGABE
-(MASK)±MASK±       |20.0 | -0.7 | -1.2 | FEEH-SYNC-FFEH-SYNC
-±MASK±(MASK)       |20.0 | -0.7 | -1.2 | TFEH-SYNC-FEEH-SYNC
-# »[~MCC-START~]«««Ω
+±MASK              | 2.0 | -0.5 | -1.0 | FEED-FFEWERK-START
+MASK±              | 2.2 | -0.5 | -1.0 | FEED-FFEWERK-ENDE
+±MASK±             |10.0 | -0.6 | -1.9 | FEED-FFEH-ÜBERGABE
+(MASK)±MASK±       |20.0 | -0.7 | -1.2 | FEED-FEEH-SYNC-FFEH-SYNC
+±MASK±(MASK)       |20.0 | -0.7 | -1.2 | FEED-TFEH-SYNC-FEEH-SYNC
 # ARGUMENT-LVL-1 ==============================================================
-MASK|««            | 3.0 | -0.5 | -1.0 | ARGH-OPTION
-««Ω                | 3.7 | -0.5 | -1.0 | ARGH-OPTION-ARGAN-LOOP
-««N                | 3.6 | -0.5 | -1.0 | ARGH-OPTION-ARGWERK-NANOSEKUNDEN
-««S                | 3.5 | -0.5 | -1.0 | ARGH-OPTION-ARGWERK-SEKUNDEN
-««T                | 3.6 | -0.5 | -1.0 | ARGH-OPTION-ARGWERK-TAKTSCHLÄGE
-««E                | 3.7 | -0.5 | -1.0 | ARGH-OPTION-ARGAN-EXIT
-««B                | 3.7 | -0.5 | -1.0 | ARGH-OPTION-ARGAN-BESTÄTIGUNG
-««ſ                | 3.8 | -0.5 | -1.0 | ARGH-OPTION-ARGAN-REGEL-DER-REINHEIT
-# »[~MCC-START~]«««N-<EINGABE>
+MASK|««            | 3.0 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION
+««Ω                | 3.7 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-LOOP
+««N                | 3.6 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGWERK-NANOSEKUNDEN
+««S                | 3.5 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGWERK-SEKUNDEN
+««T                | 3.6 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGWERK-TAKTSCHLÄGE
+««E                | 3.7 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-EXIT
+««B                | 3.7 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-BESTÄTIGUNG
+««ſ                | 3.8 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-REGEL-DER-REINHEIT
 # ARGUMENT-LVL-2 ==============================================================
-»MASK«««Ω          |16.2 | -1.2 | -1.2 | AKTU-START-MASK-AKTAN-ENDE
-»MASK«««N-<EINGABE>|16.2 | -2.2 | -2.2 | AKTK-MASK-AKTK-<EINGABE>
-»MASK«««S-<EINGABE>|16.2 | -2.2 | -2.2 | AKTK-MASK-AKTK-<EINGABE>
-»MASK«««T-<EINGABE>|16.2 | -2.2 | -2.2 | AKTK-MASK-AKTK-<EINGABE>
-»MASK«««E          |16.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
-»MASK«««B          |16.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
-»MASK«««ſ          |16.2 | -1.2 | -1.2 | AKTK-MASK-AKTK
-# »[~MASK~]«««N-<EINGABE>
+»MASK«««Ω          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-ARGAN-LOOP
+»MASK«««N-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
+»MASK«««S-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
+»MASK«««T-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
+»MASK«««E          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-EXIT
+»MASK«««B          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-BESTÄTIGUNG
+»MASK«««ſ          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-REGEL-DER-REINHEIT
 # BOXIS-LVL-1 =================================================================
 ĦMASK              | 2.2 | -0.4 | -1.0 | BOXIS-BOXU-ABI-START
 MASKĦ              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-ABI-ENDE
@@ -198,3 +187,7 @@ MASK¥              | 2.2 | -0.4 | -1.0 | BOXIS-BOXAN-BLANKERNENNER-ENDE
 ¶ ¶¶ ſ           |50.0 | -2.0 | -0.5 | Sentiator-Doppel (kann auch allein gut sein)
 þ þþ þþþ         |50.0 | -2.0 | -0.5 | Identifikations-Erweiterung
 Ŧ° Ŧ¹ Ŧ² Ŧ³      |50.0 | -2.0 | -0.5 | RETRON REGULATIONSORGANISATOR
+
+
+
+

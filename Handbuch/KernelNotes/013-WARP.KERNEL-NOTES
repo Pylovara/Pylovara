@@ -58,7 +58,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-C
+ WARP-LEGACY-START-MODULKLASSE § WARO-C
 
  INFO = Direkte Bindung an C-Compiler-ABI und Toolchain (gcc/clang)
 
@@ -66,7 +66,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-PYTHON
+ WARP-LEGACY-START-MODULKLASSE § WARO-PYTHON
 
  INFO = Bindung an CPython- oder PyPy-ABI und Interpreter-Umgebung
 
@@ -74,7 +74,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-RUST
+ WARP-LEGACY-START-MODULKLASSE § WARO-RUST
 
  INFO = Direkte Integration der Rust-ABI und Cargo-Toolchain
 
@@ -82,7 +82,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-JSON
+ WARP-LEGACY-START-MODULKLASSE § WARO-JSON
 
  INFO = Bindung an JSON-Parsing- und Serialisierungs-Bibliotheken
 
@@ -90,7 +90,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-XML
+ WARP-LEGACY-START-MODULKLASSE § WARO-XML
 
  INFO = Integration von XML-Parsern und DOM/SAX-Interfaces
 
@@ -98,7 +98,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-YAML
+ WARP-LEGACY-START-MODULKLASSE § WARO-YAML
 
  INFO = Bindung an YAML-Parser und Konfigurations-Deserialisierung
 
@@ -106,7 +106,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-SQL
+ WARP-LEGACY-START-MODULKLASSE § WARO-SQL
 
  INFO = Direkte Anbindung an SQL-Dialekte und Datenbank-ABIs
 
@@ -114,7 +114,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-APP
+ WARP-LEGACY-START-MODULKLASSE § WARO-APP
 
  INFO = Bindung an Anwendungs-Frameworks und Runtime-Umgebungen
 
@@ -122,7 +122,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-ASM
+ WARP-LEGACY-START-MODULKLASSE § WARO-ASM
 
  INFO = Direkte Integration von Assembler- und Maschinencode-ABIs
 
@@ -130,7 +130,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-GCC
+ WARP-LEGACY-START-MODULKLASSE § WARO-GCC
 
  INFO = Vollständige GCC-Toolchain- und ABI-Kompatibilität
 
@@ -138,7 +138,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-CLANG
+ WARP-LEGACY-START-MODULKLASSE § WARO-CLANG
 
  INFO = Clang/LLVM-Toolchain- und ABI-Kompatibilität
 
@@ -146,7 +146,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-HTML5
+ WARP-LEGACY-START-MODULKLASSE § WARO-HTML5
 
  INFO = Bindung an HTML5/CSS3/JS Runtime und Browser-ABIs
 
@@ -154,14 +154,14 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-JAVASCRIPT
+ WARP-LEGACY-START-MODULKLASSE § WARO-JAVASCRIPT
 
  INFO = Direkte Integration von JS-Engines (V8, SpiderMonkey, JSC)
 
  FUNKTION = Legacy-Ausführung von JavaScript-Code
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-MACOS
+ WARP-LEGACY-START-MODULKLASSE § WARO-MACOS
 
  INFO = Darwin/xnu-basierte macOS-ABI und Frameworks (Foundation, Core)
 
@@ -169,7 +169,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-OBJC
+ WARP-LEGACY-START-MODULKLASSE § WARO-OBJC
 
  INFO = Objective-C Runtime und Messaging-ABI
 
@@ -177,7 +177,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-SWIFT
+ WARP-LEGACY-START-MODULKLASSE § WARO-SWIFT
 
  INFO = Swift-ABI und Runtime (Swift 5+ ABI-Stabilität)
 
@@ -185,7 +185,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-METAL
+ WARP-LEGACY-START-MODULKLASSE § WARO-METAL
 
  INFO = Metal-Grafik-API und Shader-ABI
 
@@ -193,7 +193,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-COREAUDIO
+ WARP-LEGACY-START-MODULKLASSE § WARO-COREAUDIO
 
  INFO = CoreAudio / CoreMIDI-Frameworks und Audio-ABI
 
@@ -201,7 +201,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-APPKIT
+ WARP-LEGACY-START-MODULKLASSE § WARO-APPKIT
 
  INFO = AppKit / SwiftUI-UI-Frameworks und macOS-UI-ABI
 
@@ -209,7 +209,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-WIN32
+ WARP-LEGACY-START-MODULKLASSE § WARO-WIN32
 
  INFO = Klassische Win32/WinAPI und 32/64-Bit-ABI
 
@@ -217,7 +217,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-WIN64
+ WARP-LEGACY-START-MODULKLASSE § WARO-WIN64
 
  INFO = Win64-Erweiterung und moderne Windows-ABI
 
@@ -225,7 +225,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-DOTNET
+ WARP-LEGACY-START-MODULKLASSE § WARO-DOTNET
 
  INFO = .NET CLR / Core Runtime und Managed-Code-ABI
 
@@ -233,7 +233,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-UWP
+ WARP-LEGACY-START-MODULKLASSE § WARO-UWP
 
  INFO = Universal Windows Platform und UWP-ABI
 
@@ -241,7 +241,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-DIRECTX
+ WARP-LEGACY-START-MODULKLASSE § WARO-DIRECTX
 
  INFO = DirectX 11/12 Grafik- und Compute-ABI
 
@@ -249,7 +249,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-WINRT
+ WARP-LEGACY-START-MODULKLASSE § WARO-WINRT
 
  INFO = Windows Runtime und COM-basierte WinRT-ABI
 
@@ -257,7 +257,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-MSBUILD
+ WARP-LEGACY-START-MODULKLASSE § WARO-MSBUILD
 
  INFO = MSBuild und Visual Studio Build-ABI
 
@@ -265,7 +265,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-JAVA
+ WARP-LEGACY-START-MODULKLASSE § WARO-JAVA
 
  INFO = JVM-ABI und Java Runtime Environment
 
@@ -273,7 +273,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-GO
+ WARP-LEGACY-START-MODULKLASSE § WARO-GO
 
  INFO = Go-Runtime und Go-ABI
 
@@ -281,7 +281,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-RUBY
+ WARP-LEGACY-START-MODULKLASSE § WARO-RUBY
 
  INFO = MRI/YJIT Ruby-Interpreter und ABI
 
@@ -289,7 +289,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-PHP
+ WARP-LEGACY-START-MODULKLASSE § WARO-PHP
 
  INFO = Zend Engine und PHP-ABI
 
@@ -297,7 +297,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-LUA
+ WARP-LEGACY-START-MODULKLASSE § WARO-LUA
 
  INFO = LuaJIT / Lua 5.4 Runtime und ABI
 
@@ -305,7 +305,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-WASM
+ WARP-LEGACY-START-MODULKLASSE § WARO-WASM
 
  INFO = WebAssembly-Runtime und WASM-ABI
 
@@ -313,7 +313,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-DOCKER
+ WARP-LEGACY-START-MODULKLASSE § WARO-DOCKER
 
  INFO = OCI/Container-ABI und Docker-Runtime
 
@@ -321,7 +321,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-ELF
+ WARP-LEGACY-START-MODULKLASSE § WARO-ELF
 
  INFO = ELF-Executable-Format (Linux/BSD)
 
@@ -329,7 +329,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-PE
+ WARP-LEGACY-START-MODULKLASSE § WARO-PE
 
  INFO = PE/COFF-Executable-Format (Windows)
 
@@ -337,7 +337,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-MACH-O
+ WARP-LEGACY-START-MODULKLASSE § WARO-MACH-O
 
  INFO = Mach-O-Executable-Format (macOS/iOS)
 
@@ -345,7 +345,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-MODULKLASSE § WARO-FATBIN
+ WARP-LEGACY-START-MODULKLASSE § WARO-FATBIN
 
  INFO = Universal Binaries (Apple Silicon + Intel)
 
@@ -353,7 +353,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-UNTERKLASSE-MODULKLASSE-ANKERKLASSE § WARAN-ENDE
+ WARP-LEGACY-START-MODULKLASSE-ANKERKLASSE § WARAN-ENDE
 
  INFO = TRANSPORTRAHMENBEDINUNGS-ENDE FÜR FREMDCOMPILER
         PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
@@ -366,7 +366,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- WARP-LEGACY-UNTERKLASSE-MODULKLASSE-ANKERKLASSE-LINKERKLASSE § WARL-NAVU-DIRIGENT
+ WARP-LEGACY-START-UNTERKLASSE-MODULKLASSE-ANKERKLASSE-LINKERKLASSE § WARL-NAVU-DIRIGENT
 
  INFO = TRANSPORTRAHMENBEDINUNGS-ENDE FÜR FREMDCOMPILER
         PROGRAMMIERSPRACHENADRESSIERUNGSRAHMEN.
@@ -392,7 +392,7 @@
 #      - .sys → .pylo-legacy-LCORE
 #      - .ko  → .pylo-legacy-LCORE
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# ABSOLUTER SCHALTKREIS = WARU-START-MASU-<ELEMENT>-WARAN-ENDE
+# ABSOLUTER SCHALTKREIS = WARH-LEGACY-WARU-START-WARM-<ELEMENT>-WARAN-ENDE
 # RELATIVER SCHALTKREIS = WARK-MASK-WARK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DATUM = [02:00:44|FR 02 JAN 2026] MARKENBRANDT

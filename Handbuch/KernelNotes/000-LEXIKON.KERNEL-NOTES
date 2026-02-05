@@ -1,9 +1,9 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # # # # ## ## # #  # ## #
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # ### # ## ## # #  # ## #
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 #   · KEIN EINTRAG | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND        #
 #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                   #
 ### ==== Ð ID-DNA-SYSTEM-LEXIKON  $ /Pylovara/Handbuch/KernelNotes/ ##
-#   NR Hinweis INFO-ID MCS    | NR  Hinweis  INFO-ID MCS             #
+#   NR HINWEIS INFO-ID MCS    | NR  HINWEIS  INFO-ID MCS             #
 #   01  · - X  DATENTYPEN     | 02  · + 0    TRANSAKTIONSRAHMEN      #
 #   03  · + 0  PROTEIN        | 04  · + 0    PROTON                  #
 #   05  · + 0  TRENNBEFEHL    | 06  · + 0    AKTIONSDRAHT            #
@@ -16,7 +16,10 @@
 #   19  · + 0  RETRON         | 20  · - X    MATRIX                  #
 #   21  Ŋ - X  HERZSCHLAG     | 22  · + 0    KKIS                    #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-#   NR Hinweis KKI-PROGRAMME-INFO-ID                                 #
+#   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG            #   
+#   30  · · ·  ABSOLULATOR    | 31  · · ·                            #
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+#   NR HINWEIS KKI-PROGRAMME-INFO-ID                                 #
 #   42  · · ·  ZELLEN-IMPULSER                                       #
 #   50  · · ·  CHIP-PROGRAMTECHNIK          ##########################
 #   51  · · ·  ENERGIE-MATRIX               # ### #### #### #####   ##

@@ -40,7 +40,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-HAUPTKLASSE-STUFE-UNTERKLASSE § RETU-STUFE-NULL
+ RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-NULL
 
  INFO = LEERLAUF
 
@@ -56,7 +56,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-HAUPTKLASSE-STUFE-UNTERKLASSE § RETU-STUFE-EINS
+ RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-EINS
 
  INFO = REGULATIONSGEWICHTUNG
 
@@ -74,7 +74,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-HAUPTKLASSE-STUFE-UNTERKLASSE § RETU-STUFE-ZWEI
+ RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-ZWEI
 
  INFO = REGULATIONSGEWICHTUNG
 
@@ -92,7 +92,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-HAUPTKLASSE-STUFE-UNTERKLASSE § RETU-STUFE-DREI
+ RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-DREI
 
  INFO = REGULATIONSGEWICHTUNG
 
@@ -109,8 +109,8 @@
  WIRKUNG = ORDNUNGS- / REGELGEWICHTUNG
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# ABSOLUTER SCHALTKREIS = RETK-RETH-REGULAR-STUFE-UNTERKLASSE-<ELEMENT>
-# RELATIVER SCHALTKREIS = RETK
+# ABSOLUTER SCHALTKREIS = RETK-RETH-REGULAR-RETU-<STUFE-NUMMER>
+# RELATIVER SCHALTKREIS = RETK 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DATUM = [02:50:12|Do Jan 29] MARKENBRANDT
 # PYLOVARA-SYSTEM = INDUSTRIE STANDART DER ZUCKUNFT

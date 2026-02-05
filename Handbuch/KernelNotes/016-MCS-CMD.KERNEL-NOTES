@@ -62,7 +62,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-START
+ MCS-CMD-SYSTEMCONTROL-UNTERKLASSE § MCCU-START
 
  INFO = STARTET EIN <PROZESS|PROGRAMM>
 
@@ -72,7 +72,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-STOP
+ MCS-CMD-SYSTEMCONTROL-UNTERKLASSE § MCCU-STOP
 
  INFO = STOPT EIN <PROZESS|PROGRAMM>
 
@@ -82,7 +82,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-NEUSTART
+ MCS-CMD-SYSTEMCONTROL-UNTERKLASSE § MCCU-NEUSTART
 
  INFO = NEUSTART VON <PROZESS|PROGRAMM>
 
@@ -92,7 +92,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-STATUS
+ MCS-CMD-SYSTEMCONTROL-UNTERKLASSE § MCCU-STATUS
 
  INFO = STATUSMELDUNG VON <PROZESS|PROGRAMM>
 
@@ -102,7 +102,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-AKTIVIEREN
+ MCS-CMD-SYSTEMCONTROL-UNTERKLASSE § MCCU-AKTIVIEREN
 
  INFO = AKTIVIERT AUSFÜHRUNGSBERECHTIGUNG VON MCS PROGRAMME
 
@@ -112,7 +112,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-DEAKTIVIEREN
+ MCS-CMD-SYSTEMCONTROL-UNTERKLASSE § MCCU-DEAKTIVIEREN
 
  INFO = DEAKTIVIERT AUSFÜHRUNGSBERECHTIGUNG VON MCS PROGRAMME
 
@@ -122,7 +122,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-BERICHT-ANZEIGEN
+ MCS-CMD-SYSTEMCONTROL-UNTERKLASSE § MCCU-BERICHT-ANZEIGEN
 
  INFO = ZEIGT LAUFENDEN <PROZESS|PROGRAMM> BERICHT AN 
 
@@ -142,7 +142,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-CORE
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-CORE
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -152,7 +152,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-LCORE
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-LCORE
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -162,7 +162,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-VCORE
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-VCORE
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -172,7 +172,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-FCORE
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-FCORE
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -182,7 +182,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-MCORE
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-MCORE
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -192,7 +192,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-NODE
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-NODE
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -202,7 +202,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-NANO
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-NANO
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -212,7 +212,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-MICRO
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-MICRO
 
  INFO = ERZEUGT DATEITYPEN
 
@@ -222,7 +222,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE-UNTERKLASSE § MCCU-NEEDLE
+ MCS-CMD-DATEITYPEN-UNTERKLASSE § MCCU-NEEDLE
 
  INFO = ERZEUGT DATEITYPEN
 

@@ -46,3 +46,32 @@ MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE
 AKTAN-ENDE
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ Anordnung Noch Offen
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# [MODUL 01]: TRANSAKTIONS-SCHALTUNG (HÜLLE)
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-TRANSAKTIONSRAHMEN
+SCHALTKETTE:  TRANK-TRANU-START-MASK-TRANAN-ENDE
+BEDINGUNG:    ¢! MASK !¢
+
+# -----------------------------------------------------------------
+
+# [MODUL 02]: AKTIONS-INITIIERUNG (IMPULS)
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTU-START
+SCHALTKETTE:  AKTK-AKTU-START
+
+# -----------------------------------------------------------------
+
+# [MODUL 03]: PROTEIN-KERN (LOGIK-BAUSTEIN)
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-PROTEIN-KOMPLETT
+SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-POIWERK-<MASU>-BOXK-BOXH-<ELEMENT>BOXAN-ENDE-POIAN-<ELEMENT>-ENDE
+BEDINGUNG:    [BOXH]
+
+# -----------------------------------------------------------------
+
+# [MODUL 04]: AKTIONS-ABSCHLUSS (DURCHGANG)
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE
+SCHALTKETTE:  AKTAN-ENDE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###

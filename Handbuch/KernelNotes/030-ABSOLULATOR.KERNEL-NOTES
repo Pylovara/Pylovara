@@ -1,5 +1,5 @@
 @kernel-nr: 30 ABSOLULATOR | STATUS = DEV LEVEL ROLLING-RELEASE
-# TYP: ABSOLUTE PYLOVARA BAUSTEINSCHALTUNG
+# TYP: ABSOLUTER PYLOVARA BAUSTEINSCHALTUNGSKREIS
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 NAME           Ð ABSOLULATOR
 INFO-ID        = ABSOLULATOR
@@ -7,71 +7,44 @@ MASTER         = MASK
 BEGRIFFSDEF    = (SYSTEM-SCHALTUNG)
 FUNKTION       = DEFINITION ABSOLUTER SCHALTKREISE
 AUSFÜHRUNGSART = ABSOLUTERSCHALTKREIS
+### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###
+| MODUL-ID   | FUNKTION            | BEDINGUNG     | SCHALT-STATUS |
+|------------|---------------------|---------------|---------------|
+| M-01       | TRANS-RAHMEN (MASK) | ¢! MASK !¢    | BEREIT        |
+| M-02       | AKT-IMPULS (START)  | »             | AKTIV         |
+| M-03       | PROTEIN-LOGIK       | [BOXH]        | KONFIGURIERT  |
+| M-04       | AKT-ABSCHLUSS       | «             | BEREIT        |
+| M-05       | ARG-ZUGANG (OPT)    | «««           | TESTFLÄCHE    |
+| M-05-01    | ARG-WERTEINGABE     | «««<EL><WERT> | TESTFLÄCHE    |
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-# SCHALTAUSLÖSER 
-MCCH-PROGRAMMIERUNG-MCCU-TRANSAKTIONSRAHMEN § TRANSK
-
-# DIE ABSOLUTE SCHALTKETTE:
-TRANK-TRANU-START-MASK-TRANAN-ENDE
-
-# PHYSIKALISCHE RAHMENBEDINGUNG:
-¢! MASK !¢
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-# SCHALTAUSLÖSER 
-MCCH-PROGRAMMIERUNG-MCCU-AKTU-START
-
-# DIE ABSOLUTE SCHALTKETTE:
-AKTK-AKTU-START
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-# SCHALTAUSLÖSER
-MCCH-PROGRAMMIERUNG-MCCU-PROTEIN-KOMPLETT
-
-# DIE ABSOLUTE SCHALTKETTE:
-POIK-POIH-SOFT-POIU-START-POIWERK-<MASU>-BOXK-BOXH-<ELEMENT>BOXAN-ENDE-POIAN-<ELEMENT>-ENDE
-
-# PHYSIKALISCHE RAHMENBEDINGUNG:
-[BOXH]
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-# SCHALTAUSLÖSER 
-MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE
-
-# DIE ABSOLUTE SCHALTKETTE:
-AKTAN-ENDE
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
- Anordnung Noch Offen
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # [MODUL 01]: TRANSAKTIONS-SCHALTUNG (HÜLLE)
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-TRANSAKTIONSRAHMEN
 SCHALTKETTE:  TRANK-TRANU-START-MASK-TRANAN-ENDE
 BEDINGUNG:    ¢! MASK !¢
-
-# -----------------------------------------------------------------
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # [MODUL 02]: AKTIONS-INITIIERUNG (IMPULS)
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTU-START
 SCHALTKETTE:  AKTK-AKTU-START
-
-# -----------------------------------------------------------------
-
+BEDINGUNG:           »
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # [MODUL 03]: PROTEIN-KERN (LOGIK-BAUSTEIN)
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-PROTEIN-KOMPLETT
-SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-POIWERK-<MASU>-BOXK-BOXH-<ELEMENT>BOXAN-ENDE-POIAN-<ELEMENT>-ENDE
+SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-POIWERK-<MASU>-BOXK-BOXH-<ELEMENT>BOXAN-ENDE-POIAN-ENDE
 BEDINGUNG:    [BOXH]
-
-# -----------------------------------------------------------------
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # [MODUL 04]: AKTIONS-ABSCHLUSS (DURCHGANG)
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE
-SCHALTKETTE:  AKTAN-ENDE
-
+SCHALTKETTE:  POIAN-ENDE-AKTK-AKTAN-ENDE
+BEDINGUNG:        «
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# [MODUL 05]: ARGUMENT-ZUGANG (DURCHGANG)
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION
+SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
+BEDINGUNG:        «««
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# [MODUL 05-01]: ARGUMENT-ZUGANG (DURCHGANG)
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION-<EL>-ARGWERT-<WERT>
+SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
+BEDINGUNG:        «««<EL><WERT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

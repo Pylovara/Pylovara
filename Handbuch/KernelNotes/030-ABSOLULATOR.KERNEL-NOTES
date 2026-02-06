@@ -8,34 +8,34 @@ BEGRIFFSDEF    = (SYSTEM-SCHALTUNG)
 FUNKTION       = DEFINITION BAUSTEINSCHALTUNGSKREIS 
 AUSFÜHRUNGSART = ABSOLUTERSCHALTKREIS
 ### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###
-#| MODUL-ID   | FUNKTION                | TRIGGER / BEDINGUNG     | STATUS |
-#|------------|-------------------------|-------------------------|--------|
-#| M-01       | TRANS-KOMPLETT          | ¢! MASK !¢              | OK     |
-#| M-01-01    | TRANS-START             | ¢! MASK                 | OK     |
-#| M-01-02    | TRANS-ENDE              | ¢! MASK !¢              | OK     |
-#| M-02       | AKT-IMPULS              | »                       | OK     |
-#| M-03       | PROTEIN-KERN            | [BOXH]                  | OK     |
-#| M-03-01    | PIPE-VERT (REXK)        | ¬                       | BETA   |
-#| M-03-02    | PIPE-VERT (SENTK)       | ¶ / ¶¶ / ſ              | BETA   |
-#| M-04       | AKT-ABSCHLUSS           | «                       | OK     |
-#| M-05       | ARG-ZUGANG              | «««                     | TEST   |
-#| M-05-01    | ARG-WERTEINGABE         | «««<EL><WERT>           | TEST   |
+#| MODUL-ID   | FUNKTION           | TRIGGER / BEDINGUNG    | STATUS |
+#|------------|--------------------|------------------------|--------|
+#| M-01       | TRANS-KOMPLETT     | ¢! MASK !¢             | OK     |
+#| M-01-01    | TRANS-START        | ¢! MASK                | OK     |
+#| M-01-02    | TRANS-ENDE         | ¢! MASK !¢             | OK     |
+#| M-02       | AKT-IMPULS         | »                      | OK     |
+#| M-03       | PROTEIN-KERN       | [BOXH]                 | OK     |
+#| M-03-01    | PIPE-VERT (REXK)   | ¬                      | BETA   |
+#| M-03-02    | PIPE-VERT (SENTK)  | ¶ / ¶¶ / ſ             | BETA   |
+#| M-04       | AKT-ABSCHLUSS      | «                      | OK     |
+#| M-05       | ARG-ZUGANG         | «««                    | TEST   |
+#| M-05-01    | ARG-WERTEINGABE    | «««<EL><WERT>          | TEST   |
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DevNot : Das ist ein vollwertiger Schaltregisterkern nach Aufbau .
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # [MODUL 01]: TRANSAKTIONS-SCHALTUNG (HÜLLE)
-# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-TRANSAKTIONSRAHMEN
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-TRANH-RUN
 SCHALTKETTE:  TRANK-TRANU-START-MASK-TRANAN-ENDE
 BEDINGUNG:  ¢! MASK !¢
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# [MODUL 01-01]: TRANSAKTIONSRAHMEN START BEDINGUNG
+# [MODUL 01-01]: TRANSAKTIONSRAHMEN START
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-TRANU-START
-SCHALTKETTE:  TRANK-TRANU-START-<MASK>
-BEDINGUNG:  ¢! MASK
+SCHALTKETTE:  TRANK-TRANH-RUN-TRANU-START-<MASK>
+BEDINGUNG:  ¢! MASK 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# [MODUL 01-02]: TRANSAKTIONSRAHMEN ENDE 
+# [MODUL 01-02]: TRANSAKTIONSRAHMEN ENDE
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-TRANAN-ENDE
-SCHALTKETTE:  TRANK-TRANU-START-<MASK>-TRANAN-ENDE
+SCHALTKETTE:  TRANK-TRANH-RUN-TRANU-START-<MASK>-TRANAN-ENDE
 BEDINGUNG:  ¢! MASK !¢
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # [MODUL 02]: AKTIONS-INITIIERUNG (IMPULS)
@@ -139,6 +139,12 @@ BEDINGUNG:       ¤
 SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-AUSWERTUNG
 BEDINGUNG:       ¤
     START:       ¤=
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# [MODUL 06-01-03-01]: REXO-KORDI-
+# AUSLÖSER: MCC-PROGRAMMIERUNS-MCCU-REXO-KORDI-REXAN-AUSWERTUNG-ALU
+SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-AUSWERTUNG-BOXH-ALU
+BEDINGUNG:       =
+    START:       »[BOXH-ALU]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # [MODUL 06-01-04]: REX-REXU-WORKSPACE-<NR>-REXO-KORDI
 # AUSLÖSER: MCC-PROGRAMMIERUNS-MCCU-REXO-KORDI-REXAN-PARALLEL-AUSFÜHRUNG

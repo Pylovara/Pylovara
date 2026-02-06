@@ -34,7 +34,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- TRANSAKTIONSRAHMEN-HAUPTKLASSE-UNTERKLASSE § TRANU-START
+ TRANSAKTIONSRAHMEN-RUN-UNTERKLASSE § TRANU-START
 
  INFO = STARTPUNKT BEDINGUNG
 
@@ -46,7 +46,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- TRANSAKTIONSRAHMEN-HAUPTKLASSE-ANKERKLASSE § TRANAN-ENDE
+ TRANSAKTIONSRAHMEN-RUN-ANKERKLASSE § TRANAN-ENDE
 
  INFO = ENDPUNKT BEDINGUNG
 
@@ -57,7 +57,7 @@
  SYMBOL IN WORTEN = AUSRUFEZEICHEN CENT-ZEICHEN
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# ABSOLUTER SCHALTKREIS = TRANU-START-MASU-<ELEMENT>-TRANAN-ENDE
+# ABSOLUTER SCHALTKREIS = TRANU-START-MASK-TRANAN-ENDE
 # RELATIVER SCHALTKREIS = TRANK-MASK-TRANK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DATUM = [03:10:53|So 12 Jul 2025] MARKENBRANDT

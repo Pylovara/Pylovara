@@ -10,7 +10,11 @@ nicht die mcs-cmd befehle vergessen um boxis zu boxis zu porten .... zwischenzul
 vermerk
 es wäre auch keine schlechte angelegenheit wenn ich schon ein protocol schreiben würde
 
+Die Maschinencodes (also die eigentlichen Byte-Sequenzen wie B8 2A 00 00 00 für mov rax, 42) sollten nicht jedes Mal neu generiert oder interpretiert werden.
+Sie sollten einmalig im ROM (oder in einem unveränderlichen Speicherbereich) hardcodiert liegen.
+Bei Bedarf lädt der Kernel (oder ein Loader) nur die benötigten Teile in den RAM – idealerweise in einen dedizierten, geschützten Bereich (z. B. .text-ähnlich, read+execute only).
 
+Das ist exakt der Weg, wie echte Mikrocontroller-Firmware, BIOS/UEFI, Bootloader und viele eingebettete Systeme arbeiten – und das ist auch der Weg, wie du den Overhead komplett eliminieren kannst, den Compiler und Assembler sonst mitbringen.
 
 
 ### ==== ##### == # BOXH-INSTRUCTION (ISA-Ebene) == # == ##### === ###
@@ -181,21 +185,3 @@ Eselsbrücke: "Oda ODER Olaf = Einer reicht"
 xor = Xor der Exklusive
 Job: Entweder-oder, aber nicht beide
 Eselsbrücke: "XOR = eXklusiv ODER - nur EINER darf"
-
-
-
-
-
-
-
-Die Maschinencodes (also die eigentlichen Byte-Sequenzen wie B8 2A 00 00 00 für mov rax, 42) sollten nicht jedes Mal neu generiert oder interpretiert werden.
-Sie sollten einmalig im ROM (oder in einem unveränderlichen Speicherbereich) hardcodiert liegen.
-Bei Bedarf lädt der Kernel (oder ein Loader) nur die benötigten Teile in den RAM – idealerweise in einen dedizierten, geschützten Bereich (z. B. .text-ähnlich, read+execute only).
-
-Das ist exakt der Weg, wie echte Mikrocontroller-Firmware, BIOS/UEFI, Bootloader und viele eingebettete Systeme arbeiten – und das ist auch der Weg, wie du den Overhead komplett eliminieren kannst, den Compiler und Assembler sonst mitbringen.
-
-
-
-
-
-

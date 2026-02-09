@@ -199,22 +199,48 @@ BEDINGUNG:       [
     START:       Ð <NAME>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 04 # AKTIONSDRAHT-ABSCHLUSS 
-# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE
 SCHALTKETTE:  POIAN-ENDE-AKTK-AKTAN-ENDE
-BEDINGUNG:       «
+BEDINGUNG:                ]
+    START:                 «
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 05 # ARGUMENT-ZUGANG
-# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION
 SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
-BEDINGUNG:        ««
+BEDINGUNG:                 ««
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 05-01 # ARGUMENT-DIREKT OPERATION
-# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION-<EL>
-SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
-BEDINGUNG:        ««<EL>
+SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-<EL>
+BEDINGUNG:                 ««<EL>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 05-02 # ARGUMENT-VERKETTETE OPERATION
-# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION-<EL>-ARGWERT-<WERT>
-SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
-BEDINGUNG:        ««<EL><WERT>
+SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGH-OPTION-<EL>-ARGWERT-<WERT>
+BEDINGUNG:                 ««<EL><WERT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-01 # FEED SEGMENT
+SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:       [ (NR)± <WERT> ± ] 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-01-01 # FÜHRENDER FEED SYNC
+SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:         (NR)  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-01-02 # FÜHRENDER FEED ÜBERGABE
+SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FFEH-ÜBERGABE-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:             ± <WERT> ±
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-02 # FEED SEGMENT
+SCHALTKETTE:  AKTK-POIK-TFEH-SYNC-POIK-AKTAN-ENDE
+BEDINGUNG:       [ ± WERT ±( … ) ]  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-02-01 # FEED SEGMENT
+SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FFEH-ÜBERGABE-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:         ± WERT ±  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-02-02 # FEED SEGMENT
+SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:                 ( … )  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# DATUM = [12:02:44|FR 08 FEB 2026] MARKENBRANDT
+# PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
+### ==== ##### == # === ###  ENDPUNKT FEED  ### === # == ##### === ###

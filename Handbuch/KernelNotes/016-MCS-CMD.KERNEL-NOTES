@@ -10,6 +10,8 @@
 
  FUNKTION = BOXIS-MCS-CMD REGISTER KOMMANDOS
 
+ BEGRIFFSDEFINITION = BEFEHLSREGISTER FÜR BOXIS-MCS-CMD
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  MCS-CMD-KERNKLASSE § MCCK
@@ -42,13 +44,13 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MCS-CMD-HAUPTKLASSE § MCCH-UND-AUSFÜHREN-PARALELL
+ MCS-CMD-HAUPTKLASSE § MCCH-UND-AUSFÜHREN-PARALLEL
 
- INFO = BEFEHLSVERKNÜPFUNG | PARALELLER RAUM
+ INFO = BEFEHLSVERKNÜPFUNG | PARALLELER RAUM
 
  BOXIS-MCS-CMD EINGABE § &&
 
- FUNKTION = MCS-CMD VERBINDUNG PARALELL 
+ FUNKTION = MCS-CMD VERBINDUNG PARALLEL 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -58,7 +60,7 @@
 
  BOXIS-MCS-CMD EINGABE § REGISTER-LISTE
 
- FUNKTION = MCS-CMD REGISTE LISTE BEFEHLSZEILEN EINGABE
+ FUNKTION = MCS-CMD REGISTER LISTE BEFEHLSZEILEN EINGABE
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

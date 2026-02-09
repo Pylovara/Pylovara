@@ -11,14 +11,14 @@ AUSFÜHRUNGSART = ABSOLUTERSCHALTKREIS
 | MODUL-ID          | FUNKTION                | SIGNAL-PFAD         | STATUS |
 |-------------------|-------------------------|---------------------|--------|
 | M-01 / 01-01 / 02 | TRANS-HÜLLE & START     | ¢! MASK !¢          | SCHARF |
-| M-02              | AKTIONS-IMPULS          | » [                 | SCHARF |
+| M-02 - M-02-05    | AKTIONS-IMPULSE         | » [ / »[BOXK]« / ...| SCHARF |
 | M-03              | PROTEIN-LOGIK-KERN      | [BOXH]              | SCHARF |
 | M-03-01-(01-06)   | REX-WORKSPACES 1-6      | ¬· bis ¬······      | SCHARF |
 | M-03-01-NR-(01-07)| KORDI-PROZESS-STEUERUNG | ·¤ / ¤: / ¤= / ¤↑↓  | SCHARF |
 | M-03-01-NR-03-01  | ALU-RECHENEINHEIT       | »[BOXH-ALU]«        | SCHARF |
 | M-03-02 / 03-03   | SENTK / NAVIK PIPELINES | ¶ / ſ / $ / § / Ð   | SCHARF |
-| M-04              | AKTIONS-ABSCHLUSS       | «                   | SCHARF |
-| M-05 / 05-01      | ARGUMENT-EINGABE        | ««« <EL><WERT>      | SCHARF |
+| M-04              | AKTIONSDRAHT-ABSCHLUSS  | «                   | SCHARF |
+| M-05 - 05-02      | ARGUMENT-STEUERUNG      | «« <EL><WERT>       | SCHARF |
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ##  PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT>    ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -183,32 +183,37 @@ MODULATOR § MODUL 03-02-05 # SENTIATOR-REGEL-DER-REINHEIT
 BEDINGUNG:       [
     START:       ſ »[BOXK]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR § MODUL 03-03-1 # NAVIGATOR EINRASTPUNKT
+MODULATOR § MODUL 03-03-1 # NAVIGATOR ADRESSIERUNGS REFERENZ EINRASTPUNKT
 SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVIK
 BEDINGUNG:       [
-    START:       $
+    START:       $ <ADRESSE>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR § MODUL 03-03-2 # NAVIGATOR EINRASTPUNKT
+MODULATOR § MODUL 03-03-2 # NAVIGATOR ZIELREFERENZ EINRASTPUNKT
 SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVIK
 BEDINGUNG:       [
-    START:       § MASK
+    START:       § <MASK>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR § MODUL 03-03-3 # NAVIGATOR EINRASTPUNKT
+MODULATOR § MODUL 03-03-3 # NAVIGATOR QUELLE LANGZEITSPEICHERREFERENZEINRASTPUNKT
 SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVIK
 BEDINGUNG:       [
-    START:       Ð MASK
+    START:       Ð <NAME>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR § MODUL 04 # AKTIONS-ABSCHLUSS (DURCHGANG)
+MODULATOR § MODUL 04 # AKTIONSDRAHT-ABSCHLUSS 
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE
 SCHALTKETTE:  POIAN-ENDE-AKTK-AKTAN-ENDE
 BEDINGUNG:       «
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR § MODUL 05 # ARGUMENT-ZUGANG (DURCHGANG)
+MODULATOR § MODUL 05 # ARGUMENT-ZUGANG
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION
 SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
 BEDINGUNG:        ««
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR § MODUL 05-01 # ARGUMENT-ZUGANG (DURCHGANG)
+MODULATOR § MODUL 05-01 # ARGUMENT-DIREKT OPERATION
+# AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION-<EL>
+SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
+BEDINGUNG:        ««<EL>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 05-02 # ARGUMENT-VERKETTETE OPERATION
 # AUSLÖSER: MCCH-PROGRAMMIERUNG-MCCU-AKTAN-ENDE-ARGH-OPTION-<EL>-ARGWERT-<WERT>
 SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
 BEDINGUNG:        ««<EL><WERT>

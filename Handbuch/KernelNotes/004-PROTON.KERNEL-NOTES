@@ -1,12 +1,12 @@
-@kernel-nr: 04 # PROTON | STATUS = 0
+@kernel-nr: 04 # PROTON | STATUS = ·
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # === ## STARTPUNKT PROTON ### === # == ##### === ###
 
- NAME Ð PROTON
+NAME Ð PROTON
 
  INFO-ID § PROTON
 
- MASTER § MASU-PROTON
+MASTER § MASU-PROTON
 
  BEGRIFFSDEFINITION = VERSORGUNGSDATENTRÄGER
 
@@ -14,7 +14,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- PROTON-KERNKLASSE § POOK
+PROTON-KERNKLASSE § POOK
 
  INFO = STELLT DIE HARDWARE VERSORGUNG SICHER
 
@@ -22,44 +22,44 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- PROTON-HAUPTKLASSE § POOH-HARD
+PROTON-HAUPTKLASSE § POOH-HARD
 
  INFO = STELLT DIE HARDWAREVERSORGUNG SICHER
 
  FUNKTION = VERSORGUNGSRAHMEN
 
- SYMBOLISCHE DEKLARATION § {…}
+SYMBOLISCHE DEKLARATION § {…}
 
  SYMBOLIK IN WORTEN = GESCHWEIFTEKLAMMER-AUF GESCHWEIFTEKLAMMER-ZU
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- PROTON-HARD-UNTERKLASSE § POOU-START
+PROTON-HARD-UNTERKLASSE § POOU-START
 
  INFO = ÖFFNET DIE HARDWAREVERSORGUNG 
 
  FUNKTION = VERSORGUNGSRAHMEN START BEDINGUNG
 
- SYMBOLISCHE DEKLARATION § {
+SYMBOLISCHE DEKLARATION § {
 
  SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- PROTON-HARD-ANKERKLASSE § POOAN-ENDE
+PROTON-HARD-ANKERKLASSE § POOAN-ENDE
 
  INFO = SCHLIEẞT DIE HARDWAREVERSORGUNG 
 
  FUNKTION = VERSORGUNGSRAHMEN ENDE DER BEDINGUNG
 
- SYMBOLISCHE DEKLARATION §   }
+SYMBOLISCHE DEKLARATION §   }
 
  SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER ZU
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-# ABSOLUTER SCHALTKREIS = POOU-START-MASU-<ELEMENT>-POOAN-ENDE
-# RELATIVER SCHALTKREIS = POOK-MASK-POOK
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-# DATUM = [03:20:23|Fr 25 Jun 2025] MARKENBRANDT
-# PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
+### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
+ # ABSOLUTER SCHALTKREIS = POOU-START-MASU-<ELEMENT>-POOAN-ENDE     #
+ # RELATIVER SCHALTKREIS = POOK-MASK-POOK                           #
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ # DATUM = [03:20:23|Fr 25 Jun 2025] MARKENBRANDT                   #
+ # PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT                   #
 ### ==== ##### == # === ### ENDPUNKT PROTON ### === # == ##### === ###

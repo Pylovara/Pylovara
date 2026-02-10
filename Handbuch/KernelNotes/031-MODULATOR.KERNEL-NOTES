@@ -1,30 +1,38 @@
-@kernel-nr: 31 # MODULATOR | STATUS = DEV LEVEL ROLLING-RELEASE
+@kernel-nr: 31 # SCHABLONATOR | STATUS = DEV LEVEL ROLLING-RELEASE
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === STARTPUNKT SCHABLONATOR === # == ##### === ###
 
- NAME = MODULATOR
+NAME Ð SCHABLONATOR
 
- INFO-ID = MODULATOR
+ INFO-ID = SCHABLONATOR
 
- MASTER = MASU-MODULATOR
+MASTER § MASU-SCHABLONATOR
 
- BEGRIFFSDEFINITION = MODULATOR
-
- FUNKTION = MODULATIONSSCHABLONEN ERZEUGEN
-
- AUSFÜHRUNGSART = SYMBOL IN WORTEN = MODULATOR
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
- MODULATOR-KERNKLASSE § MODK
-
- INFO = MODULATOR
+ BEGRIFFSDEFINITION = SCHABLONATOR
 
  FUNKTION = MODULATIONSSCHABLONEN ERZEUGEN
 
+ AUSFÜHRUNGSART = SYMBOL IN WORTEN = SCHABLONATOR
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MODULATOR-HAUPTKLASSE § MODH-MODULATOR
+SCHABLONATOR-KERNKLASSE § MODK
+
+ INFO = SCHABLONATOR
+
+ FUNKTION = MODULATIONSSCHABLONEN ERZEUGEN
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-HAUPTKLASSE § MODH-SCHABLONATOR
+
+ INFO = SCHABLONATOR
+
+ FUNKTION = SCHABLONEN
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-HAUPTKLASSE § SBH-DRUCK
 
  INFO = MODULATOR
 
@@ -32,15 +40,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- MODULATOR-HAUPTKLASSE § MODH-SCHABLONATOR
-
- INFO = MODULATOR
-
- FUNKTION = MODULATION
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
- SCHABLONATOR-UNTERKLASSE § MODU-BOXK
+SCHABLONATOR-UNTERKLASSE § SBU-BOXK
 
 »[BOXK]«
  ¬· »[BOXH]«
@@ -53,8 +53,7 @@
  ¬· »[BOXWERT]«
  ¬· »[BOXL]«
 
-
- SCHABLONATOR-UNTERKLASSE § MODU-RETK-BOXK
+SCHABLONATOR-UNTERKLASSE § SBU-RETK-BOXK
 
 Ŧ¹ »[BOXK]«
     ¬· »[BOXH]«
@@ -69,7 +68,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- SCHABLONATOR-UNTERKLASSE § MODU-BOXK-POOK
+SCHABLONATOR-UNTERKLASSE § SBU-BOXK-POOK
 
 »[BOXK|{POOK}]«
  ¬· »[BOXH|{POOH}]«
@@ -82,7 +81,7 @@
  ¬· »[BOXWERT|{POOWERT}]«
  ¬· »[BOXL|{POOL}]«
 
- SCHABLONATOR-UNTERKLASSE § MODU-RETK-BOXK-POOK
+SCHABLONATOR-UNTERKLASSE § SBU-RETK-BOXK-POOK
 
 Ŧ¹ »[BOXK|{POOK}]«
     ¬· »[BOXH|{POOH}]«
@@ -96,11 +95,11 @@
     ¬· »[BOXL|{POOL}]«
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-
-
-
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
+ # ABSOLUTER SCHALTKREIS =                                          #
+ # RELATIVER SCHALTKREIS =                                          #
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ #  DATUM = [01:xx:xx|Di 09 Feb 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ENDPUNKT SCHABLONATOR # === # == ##### === ###

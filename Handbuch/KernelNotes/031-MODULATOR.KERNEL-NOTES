@@ -1,0 +1,106 @@
+@kernel-nr: 31 # MODULATOR | STATUS = DEV LEVEL ROLLING-RELEASE
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ NAME = MODULATOR
+
+ INFO-ID = MODULATOR
+
+ MASTER = MASU-MODULATOR
+
+ BEGRIFFSDEFINITION = MODULATOR
+
+ FUNKTION = MODULATIONSSCHABLONEN ERZEUGEN
+
+ AUSFÜHRUNGSART = SYMBOL IN WORTEN = MODULATOR
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MODULATOR-KERNKLASSE § MODK
+
+ INFO = MODULATOR
+
+ FUNKTION = MODULATIONSSCHABLONEN ERZEUGEN
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MODULATOR-HAUPTKLASSE § MODH-MODULATOR
+
+ INFO = MODULATOR
+
+ FUNKTION = MODULATION
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ MODULATOR-HAUPTKLASSE § MODH-SCHABLONATOR
+
+ INFO = MODULATOR
+
+ FUNKTION = MODULATION
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ SCHABLONATOR-UNTERKLASSE § MODU-BOXK
+
+»[BOXK]«
+ ¬· »[BOXH]«
+ ¬· »[BOXU]«
+ ¬· »[BOXO]«
+ ¬· »[BOXM]«
+ ¬· »[BOXWERK]«
+ ¬· »[BOXAU]«
+ ¬· »[BOXAN]«
+ ¬· »[BOXWERT]«
+ ¬· »[BOXL]«
+
+
+ SCHABLONATOR-UNTERKLASSE § MODU-RETK-BOXK
+
+Ŧ¹ »[BOXK]«
+    ¬· »[BOXH]«
+    ¬· »[BOXU]«
+    ¬· »[BOXO]«
+    ¬· »[BOXM]«
+    ¬· »[BOXWERK]«
+    ¬· »[BOXAU]«
+    ¬· »[BOXAN]«
+    ¬· »[BOXWERT]«
+    ¬· »[BOXL]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ SCHABLONATOR-UNTERKLASSE § MODU-BOXK-POOK
+
+»[BOXK|{POOK}]«
+ ¬· »[BOXH|{POOH}]«
+ ¬· »[BOXU|{POOU}]«
+ ¬· »[BOXO|{POOO}]«
+ ¬· »[BOXM|{POOM}]«
+ ¬· »[BOXWERK|{POOWERK}]«
+ ¬· »[BOXAU|{POOAU}]«
+ ¬· »[BOXAN|{POOAN}]«
+ ¬· »[BOXWERT|{POOWERT}]«
+ ¬· »[BOXL|{POOL}]«
+
+ SCHABLONATOR-UNTERKLASSE § MODU-RETK-BOXK-POOK
+
+Ŧ¹ »[BOXK|{POOK}]«
+    ¬· »[BOXH|{POOH}]«
+    ¬· »[BOXU|{POOU}]«
+    ¬· »[BOXO|{POOO}]«
+    ¬· »[BOXM|{POOM}]«
+    ¬· »[BOXWERK|{POOWERK}]«
+    ¬· »[BOXAU|{POOAU}]«
+    ¬· »[BOXAN|{POOAN}]«
+    ¬· »[BOXWERT|{POOWERT}]«
+    ¬· »[BOXL|{POOL}]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###

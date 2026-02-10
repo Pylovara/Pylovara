@@ -8,20 +8,11 @@ BEGRIFFSDEF    = (SYSTEM-SCHALTUNG)
 FUNKTION       = DEFINITION BAUSTEINSCHALTUNGSKREIS BSK
 AUSFÜHRUNGSART = ABSOLUTERSCHALTKREIS
 ### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###
-| MODUL-ID          | FUNKTION                | SIGNAL-PFAD         | STATUS |
-|-------------------|-------------------------|---------------------|--------|
-| M-01 / 01-01 / 02 | TRANS-HÜLLE & START     | ¢! MASK !¢          | SCHARF |
-| M-02 - M-02-05    | AKTIONS-IMPULSE         | » [ / »[BOXK]« / ...| SCHARF |
-| M-03              | PROTEIN-LOGIK-KERN      | [BOXH]              | SCHARF |
-| M-03-01-(01-06)   | REX-WORKSPACES 1-6      | ¬· bis ¬······      | SCHARF |
-| M-03-01-NR-(01-07)| KORDI-PROZESS-STEUERUNG | ·¤ / ¤: / ¤= / ¤↑↓  | SCHARF |
-| M-03-01-NR-03-01  | ALU-RECHENEINHEIT       | »[BOXH-ALU]«        | SCHARF |
-| M-03-02 / 03-03   | SENTK / NAVIK PIPELINES | ¶ / ſ / $ / § / Ð   | SCHARF |
-| M-04              | AKTIONSDRAHT-ABSCHLUSS  | «                   | SCHARF |
-| M-05 - 05-02      | ARGUMENT-STEUERUNG      | «« <EL><WERT>       | SCHARF |
-| M-06-01 - 06-02-02| FEED SYNC (FF / TF)     | (NR) / ± <WERT> ±   | SCHARF |
+
+ NOCH LEER 
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-##  PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT>    ##
+## PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT> #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DevNot : Das ist ein vollwertiger Schaltregisterkern nach Aufbau .
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -48,6 +39,7 @@ MODULATOR § MODUL 02-01 # PROTEIN START
 SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START
 BEDINGUNG:      »
     START:      »[
+    START: Ŧ
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 02-02 # BOXIS KERNKLASSEN ANSTEUERUNG
 SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXKK-POIAN-ENDE
@@ -60,10 +52,13 @@ BEDINGUNG:      »[
     START:      »[BOXK|BOXK]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 02-04 # BOXIS ZUORDNUNG OHNE WIE MIT TRENNBEFEHL TRENK
-SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENO-1-BOXK-POIAN-ENDE
+SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENO-<NR>-BOXK-POIAN-ENDE
 BEDINGUNG:      »[BOXK]
     START:      »[BOXK]«
     START:      »[BOXK|BOXK]«
+    START:      »[BOXK|BOXK|BOXK]«
+    START:      »[BOXK|BOXK|BOXK|BOXK]«
+    START:      »[BOXK|BOXK|BOXK|BOXK|BOXK]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 02-04-01 # BOXIS KERNKLASSEN BAUEN
 SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-BOXH->ELEMENT>BOXAN-<ELEMENT>-POIAN-ENDE
@@ -79,16 +74,19 @@ BEDINGUNG:      BOXH-<ELEMENT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 02-04-02 # BOXIS TRENNBEFEHL 
 SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENK-TRENH-SPALT-TRENU-START-TRENO-<NR>-BOXK-POIAN-ENDE
-BEDINGUNG:      »[BOXKBOXK]«
+BEDINGUNG:      »[BOXH-<ELEMENT>]«
     START:      »[BOXK|BOXK]«
     START:      »[BOXK|BOXK|BOXK]« 
     START:      »[BOXK|BOXK|BOXK|BOXK]« 
     START:      »[BOXK|BOXK|BOXK|BOXK|BOXK]« 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR § MODUL 02-05 # 
-SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENO-1-POOK-POIAN-ENDE
-BEDINGUNG:      »[
-    START:      »[BOXK|POOK]
+MODULATOR § MODUL 02-05 # PROTON INTEGRATION
+SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENK-TRENH-SPALT-TRENU-START-TRENO-<NR>-POOK-POOH-<ELEMENT>-POIAN-ENDE
+BEDINGUNG:      »[BOXH-<ELEMENT>|POOH-<ELEMENT>]
+    START:      »[BOXK|{POOK}]«
+    START:      »[BOXK|BOXK|{POOK}]«
+    START:      »[BOXK|BOXK|BOXK|{POOK}]«
+    START:      »[BOXK|BOXK|BOXK|{POOK}|{POOK}]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR § MODUL 03 # PROTEIN-KERN (LOGIK-BAUSTEIN)
 SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-POIWERK-<ELEMENT>-BOXK-BOXH-<ELEMENT>BOXAN-ENDE-POIAN-ENDE-AKTAN-ENDE
@@ -260,6 +258,6 @@ MODULATOR § MODUL 06-02-02 # FEED SEGMENT
 SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
 BEDINGUNG:                 ( … )  
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# DATUM = [12:02:44|FR 08 FEB 2026] MARKENBRANDT
+# DATUM = [01:09:43|DI 10 FEB 2026] MARKENBRANDT
 # PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

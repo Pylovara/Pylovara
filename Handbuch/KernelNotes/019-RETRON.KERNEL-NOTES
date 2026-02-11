@@ -1,12 +1,12 @@
-@kernel-nr: 19 # RETRON | STATUS = X
+@kernel-nr: 19 # RETRON | STATUS = ·
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-### ==== ##### == #  STARTPUNKT RETRON ==== ### === # == ##### === ###
+### ==== ##### == # === ## STARTPUNKT RETRON ## === # == ##### === ###
 
- NAME Ð RETRON
+NAME Ð RETRON
 
  INFO-ID § RETRON
 
- MASTER § MASU-RETRON
+MASTER § MASU-RETRON
 
  BEGRIFFSDEFINITION = REGULATIONSORGANISATOR | SCHWERKRAFTGEWICHTUNG
 
@@ -16,7 +16,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-KERNKLASSE § RETK
+RETRON-KERNKLASSE § RETK
 
  INFO = RETRON-STUFEN BLOCKIEREN KEINE ARGUMENTE, RETRON REGULIERT SIE
 
@@ -26,13 +26,13 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-HAUPTKLASSE § RETH-REGULAR
+RETRON-HAUPTKLASSE § RETH-REGULAR
 
  INFO = RETRON-STUFEN BLOCKIEREN KEINE ARGUMENTE, RETRON REGULIERT SIE
 
  FUNKTION = REGULIERUNG UND PRIORISIERUNG
 
- SYMBOLISCHE DEKLARATION § Ŧ
+SYMBOLISCHE DEKLARATION § Ŧ
 
  SYMBOL IN WORTEN = SYMBOLNAME FEHLT NOCH
 
@@ -40,13 +40,13 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-NULL
+RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-NULL
 
  INFO = LEERLAUF
 
  FUNKTION = LEERLAUF
 
- SYMBOLISCHE DEKLARATION § °
+SYMBOLISCHE DEKLARATION § °
 
  SYMBOL IN WORTEN = GRADZEICHEN
 
@@ -56,13 +56,13 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-EINS
+RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-EINS
 
  INFO = REGULATIONSGEWICHTUNG
 
  FUNKTION = PRIO 1
 
- SYMBOLISCHE DEKLARATION § ¹
+SYMBOLISCHE DEKLARATION § ¹
 
  SYMBOL IN WORTEN = KLEINE EINS
 
@@ -74,13 +74,13 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-ZWEI
+RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-ZWEI
 
  INFO = REGULATIONSGEWICHTUNG
 
  FUNKTION = PRIO 2
 
- SYMBOLISCHE DEKLARATION § ²
+SYMBOLISCHE DEKLARATION § ²
 
  SYMBOL IN WORTEN = KLEINE ZWEI
 
@@ -92,7 +92,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-DREI
+RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-DREI
 
  INFO = REGULATIONSGEWICHTUNG
 
@@ -100,7 +100,7 @@
 
  SYMBOLISCHE DEKLARATION § ³
 
- SYMBOL IN WORTEN = KLEINE DREI
+SYMBOL IN WORTEN = KLEINE DREI
 
  RETRON-STUFE = 3
 
@@ -108,10 +108,10 @@
 
  WIRKUNG = ORDNUNGS- / REGELGEWICHTUNG
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-# ABSOLUTER SCHALTKREIS = RETK-RETH-REGULAR-RETU-<STUFE-NUMMER>
-# RELATIVER SCHALTKREIS = RETK 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-# DATUM = [02:50:12|Do Jan 29] MARKENBRANDT
-# PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT
-### ==== ##### == # = ENDPUNKT RETRON ===== ### === # == ##### === ###
+### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
+ # ABSOLUTER SCHALTKREIS = RETK-RETH-REGULAR-RETU-<STUFE-NUMMER>    #
+ # RELATIVER SCHALTKREIS = RETK POIK                                #
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ # DATUM = [02:50:12|Do Jan 29] MARKENBRANDT
+ # PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT
+### ==== ##### == # === ### ENDPUNKT RETRON ### === # == ##### === ###

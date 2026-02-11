@@ -1,12 +1,11 @@
-@kernel-nr: 18 # VATRON | STATUS = X
+@kernel-nr: 18 # VATRON | STATUS = ·
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-### ==== ##### == #  STARTPUNKT VATRON ==== ### === # == ##### === ###
-
- NAME Ð VATRON
+### ==== ##### == # === ## STARTPUNKT VATRON ## === # == ##### === ###
+NAME Ð VATRON
 
  INFO-ID § VATRON
 
- MASTER § MASU-VATRON
+MASTER § MASU-VATRON
 
  BEGRIFFSDEFINITION = VALIDIERUNGSORCHESTRATOR | GRENZKONTROLLE
 
@@ -16,7 +15,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-KERNKLASSE § VATK
+VATRON-KERNKLASSE § VATK
 
  INFO = VATRON BLOCKIERT NICHT DIREKT, SONDERN ENTSCHEIDET GÜLTIGKEIT
 
@@ -26,7 +25,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-HAUPTKLASSE § VATU-VALIDA
+VATRON-HAUPTKLASSE § VATU-VALIDA
 
  INFO = VATRON BLOCKIERT NICHT DIREKT, SONDERN ENTSCHEIDET GÜLTIGKEIT
 
@@ -39,7 +38,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-VALIDA-UNTERKLASSE § VATU-PASSIV
+VATRON-VALIDA-UNTERKLASSE § VATU-PASSIV
 
  INFO = DURCHREICHENDE PASSIVE HALTUNG
 
@@ -51,7 +50,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-VALIDA-UNTERKLASSE § VATU-PRÜFEND
+VATRON-VALIDA-UNTERKLASSE § VATU-PRÜFEND
 
  INFO = PRÜFT PASSIV AUF VALIENZ
 
@@ -63,7 +62,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-VALIDA-UNTERKLASSE § VATU-VERWORFEN
+VATRON-VALIDA-UNTERKLASSE § VATU-VERWORFEN
 
  INFO = BLOCKT BEI UNGÜLTIGKEIT
 
@@ -75,7 +74,7 @@
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- VATRON-VALIDA-UNTERKLASSE § VATU-BESTÄTIGT
+VATRON-VALIDA-UNTERKLASSE § VATU-BESTÄTIGT
 
  INFO = GEHT ZUR LAUFZEIT
 
@@ -85,10 +84,10 @@
 
  WIRKUNG = LAUFZEIT
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-# ABSOLUTER SCHALTKREIS = VATU-VALIDA-VATU-<ELEMENT>
-# RELATIVER SCHALTKREIS = VATK-MASK-VATK
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-# DATUM = [02:50:12|Do Jan 29] MARKENBRANDT
-# PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT
-### ==== ##### == # = ENDPUNKT VATRON ===== ### === # == ##### === ###
+### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
+ # ABSOLUTER SCHALTKREIS = VATU-VALIDA-VATU-<ELEMENT>               #
+ # RELATIVER SCHALTKREIS = VATK-MASK-VATK                           #
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ # DATUM = [02:50:12|Do Jan 29] MARKENBRANDT                        #
+ # PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                 #
+### ==== ##### == # === ### ENDPUNKT VATRON ### === # == ##### === ###

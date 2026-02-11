@@ -1,5 +1,9 @@
 @kernel-nr: 21 # HERZSCHLAG | STATUS = Ŋ X
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ # DER 8TAKT HERZSCHLAG DIENT ZUR VERBINDUNG DER SOFTWARE MIT 
+ # DER HARDWARE SYNCRONISATION.
+ # JITTER USW WIE CLOCK CREW ETC
 ### ==== ##### == # === ### 8TAKT-HERZSCHLAG ## === # == ##### === ###
 
 TAKT-PHASE,INTERVALL (ms),FUNKTION IM AKTIONSDRAHT,LOGIK-STATUS
@@ -11,7 +15,6 @@ P4 (Mid),"500,000",REX-REFLEX: Halbzeit-Auswertung durch Modul 09.,REX
 P5,"625,000",BYTE-FEED 3: Dritter Datensatz (Resonanz-Korrektur).,¬··· (Aktion)
 P6,"750,000",RETRON-SYNC: Rückwärts-Abgleich der Endpunkte.,RETRON
 P7 (End),"875,000",CRC-FINALE: Abschlussvalidierung vor dem nächsten Schlag.,Ŋ (Vollzug)
-
 
 Der Aktionsdraht-Startpunkt (») ist nicht isoliert,
 sondern tief im 8-Takt-Herzschlag (kernel-nr: 21) abgebildet IN ZUKUNFT.
@@ -58,4 +61,10 @@ PYLO-COIN = STERBEN BEI UNGENUTZTER DAUER
 VARA-COIN = HALTEN BIS 10 JAHRE  
 PYLOVARA-COIN STERBEN NIE, STERBEN ABER BEIM VERBRAUCH.
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
+ # ABSOLUTER SCHALTKREIS = POIU-START-MASU-<ELEMENT>-POIAN-ENDE     #
+ # RELATIVER SCHALTKREIS = POIK-MASK-POIK                           #
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ # DATUM = [02:10:53|Mi 01 Okt 2025] MARKENBRANDT                   #
+ # PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT                   #
+### ==== ##### == # === ## ENDPUNKT PROTEIN ### === # == ##### === ###

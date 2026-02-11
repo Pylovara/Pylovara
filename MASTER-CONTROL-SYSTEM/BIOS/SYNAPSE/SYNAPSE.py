@@ -22,7 +22,9 @@ class Synapse:
             "Thomas Zimmermann", "ID-DNA", "THOMAS-ZIMMERMANN", "ÞÞZRB68","[", "}",
             "]", "¶", "{", "|", "¤", "↓", "↑", "!", "°", "Ø", "¥", "Ŧ", "$", "§", "MASK", 
             "TRANK", "POIK", "POOK", "REXK", "SENTK", "ARGK", "RETK", "MCCK", "DIK", "DAK"
-            "FEEK", "WARK", "NAVK", "IDENK", "VATK", "HERZK", "KKIK", "MCCK", "ShiVara"
+            "FEEK", "WARK", "NAVK", "IDENK", "VATK", "HERZK", "KKIK", "MCCK", "ShiVara",
+            "/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/priorities.info-notes"
+
         ]
 
     def apply(self, state):

@@ -4,7 +4,7 @@
  #    PROGRAMM|KLASSEKÜRZEL-ELEMENT = **-<ELEMENT> *-*-<ELEMENT>    #
 ### ==== #####  STARTPUNKT BAUSTEINSCHALTUNGSKREISLAUF   ##### === ###
 
- NAME Ð BAUSTEINSCHALTUNGSKREISLAUF
+NAME Ð BAUSTEINSCHALTUNGSKREISLAUF
  
  INFO = PYLOVARA BAUSTEINSCHALTUNGSKREISLAUF 
 
@@ -115,8 +115,9 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
  RELATIVER BSK = TRANK-AKTK-POIK-BOXK-POIK-AKTK-TRANK
 
 ### Semantische Beschreibung 
- "Starte einen Transaktionslauf, initiiere einen Aktionimpuls, öffne ein Protein, 
- aktiviere die Shell-Control-Funktion, schließe das Protein und beende den Transaktionsrahmen."
+ "Starte einen Transaktionslauf, initiiere einen Aktionimpuls, 
+ öffne ein Protein, aktiviere die Shell-Control-Funktion, 
+ schließe das Protein und beende den Transaktionsrahmen."
 
 ### Visuelle Darstellung ZEILENVERZERRT =
 
@@ -126,4 +127,7 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
                      ]« ← AKTAN-ENDE = Protein schließt
  !¢                     ← TRANU-ENDE = Transaktionsrahmen endet
 
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ # DATUM = [06:31:54|Mi Feb 11] MARKENBRANDT                        #
+ # PYLOVARA-SYSTEM INDUSTRIE STANDARD DER ZUKUNFT                   #
 ### ==== ##### = ENDPUNKT  BAUSTEINSCHALTUNGSKREISLAUF = ##### === ###

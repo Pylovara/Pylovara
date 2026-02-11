@@ -4,7 +4,7 @@
  #    PROGRAMM|KLASSEKÜRZEL-ELEMENT = **-<ELEMENT> *-*-<ELEMENT>    #
 ### ==== #####  STARTPUNKT BAUSTEINSCHALTUNGSKREISLAUF   ##### === ###
 
-NAME Ð BAUSTEINSCHALTUNGSKREISLAUF
+NAME Ð BAUSTEINSCHALTUNGSKREISLAUF 
  
  INFO = PYLOVARA BAUSTEINSCHALTUNGSKREISLAUF 
 
@@ -102,7 +102,7 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
  | Quantencomputer    | Qubit-Verschränkungen, Quantengatter     |
  | Funkübertragung    | Modulierte Wellen, Frequenzmuster        |
 
-### Native BSK logik =
+### Native BSK logik = 
 
  ABSOLUTER BSK = TRANH-RUN-TRANU-START-AKTK-AKTH-START-POIK-POIH-START-BOXH-SHELL-CONTROL-POIAN-ENDE-TRANU-ENDE
 
@@ -126,6 +126,28 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
        'Shell-Befehl'   ← BOXH-SHELL-CONTROL = OS-SHELL WIRD aktiv
                      ]« ← AKTAN-ENDE = Protein schließt
  !¢                     ← TRANU-ENDE = Transaktionsrahmen endet
+
+### Was der BSK Leistet = 
+
+ Der BSK ist nicht nur eine Namenskonvention, 
+ sondern ein universelles Schaltungsmodell, 
+ das:
+ - Begriffe in Kürzel übersetzt (Dateitypen → DI)
+ - Klassen in Suffixe gliedert (Hauptklasse → H)
+ - Logik in Ketten abbildet (DIH-DATEITYPEN)
+ - Ketten in Hardware materialisiert (digital / photonisch / analog)
+ = Damit wird MCS unabhängig vom Medium:
+ „Ob FPGA, Lichtleiter, Quantenregister oder 
+ klassische CPU – die gleiche BSK-Kette bleibt gültig.“
+
+### NERD DATEN 
+
+ | Aspekt      | Vorher (klassisch )    | Jetzt (BSK)                            |
+ |-------------|------------------------|----------------------------------------|
+ |Abstraktion  |Sprache AST IR Maschine | Begriff → Kürzel → Schaltung           |
+ |Portabilität |Compiler pro ISA nötig  | Eine BSK-Kette für alle Medien         |
+ |Lesbarkeit   |if (x > y) { … }        | TRANH-RUN-AKTK-POIK-BOXH-SHELL-CONTROL |
+ |Hardware-Nähe|Nachträglich Optimiert  | Schaltung ist der Code                 |
 
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  # DATUM = [06:31:54|Mi Feb 11] MARKENBRANDT                        #

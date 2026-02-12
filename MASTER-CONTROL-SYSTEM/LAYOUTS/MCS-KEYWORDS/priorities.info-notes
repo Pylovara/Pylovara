@@ -50,25 +50,25 @@ K H U AN          |12.0 | -1.0 | -1.0 | PERFEKTE KLASSEN-HIERARCHIE
 BOXK|BOXH|BOXAN   | 8.0 | -1.2 | -1.2 | CONTAINER-INTEGRITÄT-BONUS
 POIK|POIH|POIAN   | 8.0 | -1.2 | -1.2 | SOFTWARE-STRUKTUR-BONUS
 # MASTER SCORE TREIBER ========================================================
-DAK               | 0.8 | 0.0 | 0.1 | DATENTYPEN-KERNKLASSE
-TRANK             | 0.8 | 0.0 | 0.1 | TRANSAKTIONSRAHMEN-KERNKLASSE
-POIK              | 0.8 | 0.0 | 0.1 | PROTEIN-KERNKLASSE
-POOK              | 0.8 | 0.0 | 0.1 | PROTON-KERNKLASSE
-TRENK             | 0.8 | 0.0 | 0.1 | TRENNBEFEHL-KERNKLASSE
-BOXK              | 0.8 | 0.0 | 0.1 | BOXIS-KERNKLASSE
-MASK              | 0.8 | 0.0 | 0.1 | MASTER-KERNKLASSE
-REXK              | 0.8 | 0.0 | 0.1 | REX-KERNKLASSE
-ARGK              | 0.8 | 0.0 | 0.1 | ARGUMENT-KERNKLASSE
-FEEK              | 0.8 | 0.0 | 0.1 | FEED-KERNKLASSE
-WARK              | 0.8 | 0.0 | 0.1 | WARP-KERNKLASSE
-NAVK              | 0.8 | 0.0 | 0.1 | NAVIGATOR-KERNKLASSE
-IDENK             | 0.8 | 0.0 | 0.1 | IDENTIFIKATION-KERNKLASSE
-MCCK              | 0.8 | 0.0 | 0.1 | MCS-CMD-KERNKLASSE
-DIK               | 0.8 | 0.0 | 0.1 | DATEITYPEN-KERNKLASSE
-VATK              | 0.8 | 0.0 | 0.1 | VATRON-KERNKLASSE
-RETK              | 0.8 | 0.0 | 0.1 | RETRON-KERNKLASSE
-MATK              | 0.8 | 0.0 | 0.1 | MATRIX-KERNKLASSE
-KKIK              | 0.8 | 0.0 | 0.1 | KKIS-KERNKLASSE
+DAK               | 2.8 | 0.0 | 0.1 | DATENTYPEN-KERNKLASSE
+TRANK             | 2.8 | 0.0 | 0.1 | TRANSAKTIONSRAHMEN-KERNKLASSE
+POIK              | 2.8 | 0.0 | 0.1 | PROTEIN-KERNKLASSE
+POOK              | 2.8 | 0.0 | 0.1 | PROTON-KERNKLASSE
+TRENK             | 2.8 | 0.0 | 0.1 | TRENNBEFEHL-KERNKLASSE
+BOXK              | 2.8 | 0.0 | 0.1 | BOXIS-KERNKLASSE
+MASK              | 2.8 | 0.0 | 0.1 | MASTER-KERNKLASSE
+REXK              | 2.8 | 0.0 | 0.1 | REX-KERNKLASSE
+ARGK              | 2.8 | 0.0 | 0.1 | ARGUMENT-KERNKLASSE
+FEEK              | 2.8 | 0.0 | 0.1 | FEED-KERNKLASSE
+WARK              | 2.8 | 0.0 | 0.1 | WARP-KERNKLASSE
+NAVK              | 2.8 | 0.0 | 0.1 | NAVIGATOR-KERNKLASSE
+IDENK             | 2.8 | 0.0 | 0.1 | IDENTIFIKATION-KERNKLASSE
+MCCK              | 2.8 | 0.0 | 0.1 | MCS-CMD-KERNKLASSE
+DIK               | 2.8 | 0.0 | 0.1 | DATEITYPEN-KERNKLASSE
+VATK              | 2.8 | 0.0 | 0.1 | VATRON-KERNKLASSE
+RETK              | 2.8 | 0.0 | 0.1 | RETRON-KERNKLASSE
+MATK              | 2.8 | 0.0 | 0.1 | MATRIX-KERNKLASSE
+KKIK              | 2.8 | 0.0 | 0.1 | KKIS-KERNKLASSE
 # NAVIGATOR ===================================================================
 Ð                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-LANGZEITSPEICHER
 $                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-ZIELREFERENZ
@@ -133,26 +133,26 @@ MASK!¢             | 2.2 | -0.5 | -1.0 | TRANSAKTIONSRAHMENTRANU-TRANAN-ENDE
 MASK«              | 2.2 | -0.5 | -1.0 | AKTIONSDRAHT-AKTAN-ENDE
 »MASK«             |10.0 | -0.6 | -0.9 | AKTIONSDRAHT-AKTH-IMPULS
 # PROTEIN =====================================================================
-[MASK              | 2.0 | -0.5 | -1.0 | PROTEIN-POIU-START 
-MASK]              | 2.2 | -0.5 | -1.0 | PROTEIN-POIAN-ENDE
-[MASK]             |10.0 | -0.6 | -0.9 | PROTEIN-POIH-SOFT 
+[BOXK            | 2.0 | -0.5 | -1.0 | PROTEIN-POIU-START 
+BOXK]            | 2.2 | -0.5 | -1.0 | PROTEIN-POIAN-ENDE
+[BOXK]           |10.0 | -0.6 | -0.9 | PROTEIN-POIH-SOFT 
 # PROTON ======================================================================
-{MASK              | 2.0 | -0.5 | -1.0 | PROTON-POOU-START
-MASK}              | 2.2 | -0.5 | -1.0 | PROTON-POOAN-ENDE
-{MASK}             |10.0 | -0.6 | -0.9 | PROTON-POOH-HARD
+{BOXK            | 2.0 | -0.5 | -1.0 | PROTON-POOU-START
+BOXK}            | 2.2 | -0.5 | -1.0 | PROTON-POOAN-ENDE
+{BOXK}           |10.0 | -0.6 | -0.9 | PROTON-POOH-HARD
 # FEED-LVL-1 ==================================================================
-(MASK              | 2.0 | -0.5 | -1.0 | FEED-FEEWERK-START
-MASK)              | 2.2 | -0.5 | -1.0 | FEED-FEEWERK-ENDE
-(MASK)             |10.0 | -0.6 | -0.9 | FEED-FEEH-SYNC
+(NR              | 2.0 | -0.5 | -1.0 | FEED-FEEWERK-START
+NR)              | 2.2 | -0.5 | -1.0 | FEED-FEEWERK-ENDE
+(NR)             |10.0 | -0.6 | -0.9 | FEED-FEEH-SYNC
 # FEED-LVL-2 ==================================================================
-±MASK              | 2.0 | -0.5 | -1.0 | FEED-FFEWERK-START
-MASK±              | 2.2 | -0.5 | -1.0 | FEED-FFEWERK-ENDE
-±MASK±             |10.0 | -0.6 | -1.9 | FEED-FFEH-ÜBERGABE
-(MASK)±MASK±       |20.0 | -0.7 | -1.2 | FEED-FEEH-SYNC-FFEH-SYNC
-±MASK±(MASK)       |20.0 | -0.7 | -1.2 | FEED-TFEH-SYNC-FEEH-SYNC
+±WERT            | 5.0 | -0.5 | -1.0 | FEED-FFEWERK-START
+WERT±            | 5.2 | -0.5 | -1.0 | FEED-FFEWERK-ENDE
+±WERT±           |10.0 | -0.6 | -1.9 | FEED-FFEH-ÜBERGABE
+(NR)±WERT±       |20.0 | -0.7 | -1.2 | FEED-FEEH-SYNC-FFEH-SYNC
+±WERT±(NR)       |20.0 | -0.7 | -1.2 | FEED-TFEH-SYNC-FEEH-SYNC
 # ARGUMENT-LVL-1 ==============================================================
-MASK|««            | 3.0 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION
-««Ω                | 3.7 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-LOOP
+««                 | 3.0 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION
+««Ω                | 4.7 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-LOOP
 ««N                | 3.6 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGWERK-NANOSEKUNDEN
 ««S                | 3.5 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGWERK-SEKUNDEN
 ««T                | 3.6 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGWERK-TAKTSCHLÄGE
@@ -160,13 +160,13 @@ MASK|««            | 3.0 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION
 ««B                | 3.7 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-BESTÄTIGUNG
 ««ſ                | 3.8 | -0.5 | -1.0 | ARGUMENT-ARGH-OPTION-ARGAN-REGEL-DER-REINHEIT
 # ARGUMENT-LVL-2 ==============================================================
-»MASK«««Ω          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-ARGAN-LOOP
-»MASK«««N-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
-»MASK«««S-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
-»MASK«««T-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
-»MASK«««E          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-EXIT
-»MASK«««B          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-BESTÄTIGUNG
-»MASK«««ſ          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-REGEL-DER-REINHEIT
+»POIK«««Ω          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-ARGAN-LOOP
+»POIK«««N-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
+»POIK«««S-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
+»POIK«««T-<EINGABE>|16.2 | -2.2 | -2.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-<EINGABE>
+»POIK«««E          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-EXIT
+»POIK«««B          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-BESTÄTIGUNG
+»POIK«««ſ          |16.2 | -1.2 | -1.2 | ARGUMENT-AKTK-MASK-AKTK-ARGH-OPTION-REGEL-DER-REINHEIT
 # BOXIS-LVL-1 =================================================================
 ĦMASK              | 3.2 | -0.2 | -1.0 | BOXIS-BOXU-ABI-START
 MASKĦ              | 3.2 | -0.2 | -1.0 | BOXIS-BOXAN-ABI-ENDE
@@ -196,12 +196,12 @@ POIWERK-NAVIK      | 6.0 | +0.3 | +1.0 | NAVIGATOR-ANBINDUNG
 POIWERK-RETK       | 6.0 | +0.3 | +1.0 | RETRON-Einspeisung
 POIWERK-VATK       | 6.0 | +0.3 | +1.0 | VATRON-SCHNISTELLE
 # KLASSEN-KETTEN-BONUS (SEQUENZ-TREIBER) =======================================
-¢! »[MASK]« !¢         |30.0 | -2.0 | -0.5 | LOGIK BASIS
-¢! »[MASK]«««Ω !¢      |40.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN
+¢! »[BOXK]« !¢         |30.0 | -2.0 | -0.5 | LOGIK BASIS
+¢! »[BOXK]«««Ω !¢      |40.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN
 ¢! »[BOXH]« !¢         |30.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN
 ¢! »[BOXH|BOXH]« !¢    |50.0 | -2.0 | -0.5 | LOGIK FORTGESCHRITTEN
 ¢! øĸ WARK ĸø !¢       |40.0 | -2.0 | -0.5 | LOGIK LEGACY WARP
-þ þþ þþþ               |50.0 | -2.0 | -0.5 | IDENTIFIKATIONS ID STUFEN
-Ŧ° Ŧ¹ Ŧ² Ŧ³            |50.0 | -2.0 | -0.5 | RETRON REGULATIONSORGANISATOR STUFEN
+þ þþ þþþ þþþþ          |90.0 | -2.0 | -0.5 | IDENTIFIKATIONS ID STUFEN
+Ŧ° Ŧ¹ Ŧ² Ŧ³            |60.0 | -2.0 | -0.5 | RETRON REGULATIONSORGANISATOR STUFEN
 ¶ ¶¶                   |50.0 | -2.0 | -0.5 | SENTIATOREN REFLEXE
 # =============================================================================

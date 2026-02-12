@@ -9,7 +9,7 @@ PID_FILE = "training.pid"
 LOG_FILE = "training.log"
 PYTHON_CMD = "python3"
 SCRIPT_TO_RUN = "MAIN.py"
-INTERVAL = 3
+INTERVAL = 1
 
 def start():
     if os.path.exists(PID_FILE):

@@ -1,4 +1,4 @@
-@kernel-nr: 800 # BAUSTEINSCHALTUNGSKREISLAUF | BAULOGIK = BSK
+@kernel-nr: 800 # BAUSTEINSCHALTUNGSKREISLAUF | STATUS = ·
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
  #    PROGRAMM|KLASSEKÜRZEL-ELEMENT = **-<ELEMENT> *-*-<ELEMENT>    #
@@ -32,7 +32,7 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
 
 @info-id: BSK-LERNINFOS ### =============== ### === # == ##### === ###
 
- LERNMATERIAL FÜR ALLE =
+### LERNMATERIAL FÜR ALLE =
 
  Wie der BSK dies umsetzt:
  Morphisches Prinzip	BSK-Umsetzung--
@@ -58,7 +58,7 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
  | Hauptklasse       | H      | DIH                      |
  | Unterklasse       | U      | DIU                      |
  | Optionsklasse     | O      | DIO                      |
- | Werkzeugklasse    | W      | DIW                      |
+ | Werkzeugklasse    | WERK   | DIWERK                   |
  | Wertklasse        | WERT   | DIWERT                   |
  | Ankerklasse       | AN     | DIAN                     |
 
@@ -77,10 +77,10 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
  
  2. Kompakte Schaltbeschreibung  
     Statt: "Starte den Transaktionsrahmen, initiiere Aktion, öffne Protein, aktiviere Shell-Control" 
-    BSK: `TRANH-RUN-TRANU-START-AKTK-AKTH-START-POIK-POIH-START-BOXH-SHELL-CONTROL`
+    BSK = TRANH-RUN-TRANU-START-AKTK-AKTH-START-POIK-POIH-START-BOXH-SHELL-CONTROL
 
  3. Hardware-unabhängige Logik  
-    Die gleiche BSK-Kette `TRAN-AKT-POI-BOX` kann später in:
+    Die gleiche BSK-Kette TRAN-AKT-POI-BOX kann später in:
     - Digitalchips als Gatter-Logik
     - Photonische Chips als Lichtpfade
     - Analogschaltungen als Spannungsverläufe
@@ -109,15 +109,15 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
  Entwickler Oberflächennutzung in MCS ODER SCHALTUNGSKERNEL =
 
  ¢!
- »['echo leeres shell boxi']«
+ »['echo muster naricht']«
  !¢
 
  RELATIVER BSK = TRANK-AKTK-POIK-BOXK-POIK-AKTK-TRANK
 
 ### Semantische Beschreibung 
  "Starte einen Transaktionslauf, initiiere einen Aktionimpuls, 
- öffne ein Protein, aktiviere die Shell-Control-Funktion, 
- schließe das Protein und beende den Transaktionsrahmen."
+  öffne ein Protein, aktiviere die Shell-Control-Funktion, 
+  schließe das Protein und beende den Transaktionsrahmen."
 
 ### Visuelle Darstellung ZEILENVERZERRT =
 
@@ -137,14 +137,14 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
  - Logik in Ketten abbildet (DIH-DATEITYPEN)
  - Ketten in Hardware materialisiert (digital / photonisch / analog)
  = Damit wird MCS unabhängig vom Medium:
- „Ob FPGA, Lichtleiter, Quantenregister oder 
- klassische CPU – die gleiche BSK-Kette bleibt gültig.“
+   „Ob FPGA, Lichtleiter, Quantenregister oder 
+    klassische CPU – die gleiche BSK-Kette bleibt gültig.“
 
 ### NERD DATEN 
 
  | Aspekt      | Vorher (klassisch )    | Jetzt (BSK)                            |
  |-------------|------------------------|----------------------------------------|
- |Abstraktion  |Sprache AST IR Maschine | Begriff → Kürzel → Schaltung           |
+ |Abstraktion  |Sprache AST IR Maschine | BegriffKürzel=Schaltung                |
  |Portabilität |Compiler pro ISA nötig  | Eine BSK-Kette für alle Medien         |
  |Lesbarkeit   |if (x > y) { … }        | TRANH-RUN-AKTK-POIK-BOXH-SHELL-CONTROL |
  |Hardware-Nähe|Nachträglich Optimiert  | Schaltung ist der Code                 |

@@ -109,7 +109,7 @@ SYMBOLISCHE DEKLARATION §
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-PROTEIN-SOFT-START-<WERKZEUGKLASSE>-ANKERKLASSE § POIAN-IMPULS
+PROTEIN-SOFT-START-WERKZEUGKLASSE-ANKERKLASSE § POIAN-IMPULS
 
  INFO = ENDPUNKT DES PROTEIN MIT VERTEILUNGS-SCHNITTSTELLE
 
@@ -142,7 +142,7 @@ SYMBOLISCHE DEKLARATION §   ]
  # - POIWERK-VATK  = Vatron-Schnittstelle
 ### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
  # ABSOLUTER BSK = POIU-START-BOXK-POIAN-ENDE                       #
- # ABSOLUTER BSK = POIU-START-POIWERK-<ELEMENT>-POIAN-IMPULS        #
+ # RELATIVER BSK = POIU-START-POIWERK-<ELEMENT>-POIAN-IMPULS        #
  # RELATIVER BSK = POIK-MASK-POIK                                   #
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT                  #

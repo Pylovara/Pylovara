@@ -32,17 +32,18 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
 
 @info-id: BSK-LERNINFOS ### =============== ### === # == ##### === ###
 
-### LERNMATERIAL FÜR ALLE =
+### LERNMATERIAL FÜR ALLE = 
 
  Wie der BSK dies umsetzt:
  Morphisches Prinzip	BSK-Umsetzung--
 
-### Das ist eine klassische zweiseitige Grammatik:
+### DAS IST EINE KLASSISCHE ZWEISEITGE GRAMATIK = 
 
  Mensch liest nested → symbolisch schön
  Maschine führt linear + vertikal strukturiert aus (BSK)
 
-### Schaltungsebene 
+### Schaltungsebene = 
+
  Hier werden Kürzel und Schaltketten gebildet – 
  wie DI für Dateitypen oder TRAN für Transaktionsrahmen.  
  Diese Ebene ist für maschinelle Verarbeitung und hardwarenahe 
@@ -54,7 +55,7 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
   - Ersten beiden charakteristischen Buchstaben identifizieren: D und I 
   - Kürzel bilden: DI
 
-### Klassenhierarchie 
+### Klassenhierarchie = 
  Schritt 2 = Jeder Begriff erhält eine standardisierte Klassenstruktur.
 
  | Klassenstufe      | Kürzel | Beispiel bei Dateitypen |
@@ -70,7 +71,7 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
  Merke =  Die Kernklasse (K) wird nie weiter benannt – sie ist der Ausgangspunkt.  
           Ab Hauptklasse (H) wird es operational interessant.
 
-### Warum diese Kürzel überhaupt wichtig sind ? 
+### WARUM DIESE KÜRZEL ÜBERHAUT WICHTIG SIND ? = 
 
  Drei entscheidende Vorteile:
 
@@ -91,7 +92,7 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
     - Analogschaltungen als Spannungsverläufe
       umgesetzt werden.
 
-### Was man sich merken sollte 
+### WAS SOLLTE MAN SICH MERKEN = 
 
  1. Begriffe werden zu Kürzeln (Dateitypen → DI)
  2. Klassen werden zu Suffixen (Hauptklasse → H)
@@ -119,12 +120,12 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
 
  RELATIVER BSK = TRANK-AKTK-POIK-BOXK-POIK-AKTK-TRANK
 
-### Semantische Beschreibung 
+### SEMANTISCHE BESCHREIBUNG = 
  "Starte einen Transaktionslauf, initiiere einen Aktionimpuls, 
   öffne ein Protein, aktiviere die Shell-Control-Funktion, 
   schließe das Protein und beende den Transaktionsrahmen."
 
-### Visuelle Darstellung ZEILENVERZERRT =
+### VISUELL  ZEILENVERZERRT = 
 
  ¢!                     ← TRANU-START = Transaktionsrahmen startet
      »[                 ← AKTU-START = Aktion und Protein starten
@@ -132,27 +133,23 @@ BAUSTEINSCHALTUNGSKREISLAUF LOGIK ERKLÄRUNG =
                      ]« ← AKTAN-ENDE = Protein schließt
  !¢                     ← TRANU-ENDE = Transaktionsrahmen endet
 
-------------------------------------------------------------------
+ ------------------------------------------------------------------
 
 
-BSK UNTERBAU =
+ BSK UNTERBAU =
 
-TRANK-RETRON-1-AKTH-START-POIH-START-POIWERK-REXK-BOXH-PRINT-POIH-ENDE-AKTAN-ENDE
-                    │
-                    └─ REXK-AKTH-START-POIH-START-POIWERK-REXK-BOXH-PRINT-POIH-ENDE-AKTAN-ENDE-TRANK-ENDE
+ TRANK-RETRON-1-AKTH-START-POIH-START-BOXH-PRINT-POIH-ENDE-AKTAN-ENDE
+                     │
+                     └─ POIWERK-REXK-AKTH-START-POIH-START-BOXH-PRINT-POIH-ENDE-AKTAN-ENDE-TRANK-ENDE
 
-MCS OBERBAU =
+ MCS OBERBAU =
 
-¢!
-¥¹ »["Muster Print Naricht"]«
-    ¬· »["Muster Print Naricht"]«
-!¢
+ ¢!
+ ¥¹ »["Muster Print Naricht"]«
+     ¬· »["Muster Print Naricht"]«
+ !¢
 
-
-
-
-
-### Was der BSK Leistet = 
+### WAS DER BSK LEISTET = 
 
  Der BSK ist nicht nur eine Namenskonvention, 
  sondern ein universelles Schaltungsmodell, 
@@ -167,7 +164,7 @@ MCS OBERBAU =
    Der BSK als universelles Bindeglied zwischen :
    Begriff → Kürzel → Klasse → Kette → physischer Schaltung
 
-### NERD DATEN 
+### NERD DATEN = 
 
  | Aspekt      | Vorher (klassisch )    | Jetzt (BSK)                            |
  |-------------|------------------------|----------------------------------------|

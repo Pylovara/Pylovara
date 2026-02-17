@@ -142,8 +142,8 @@ SYMBOLISCHE DEKLARATION §   ]
  # - POIWERK-VATK  = Vatron-Schnittstelle
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK = POIU-START-BOXU-<ELEMENT>-<INHALT>-BOXU-<ELEMENT>-POIAN-ENDE 
- # SBSK = 
- # RBSK = POIU-START-POIWERK-<ELEMENT>-POIAN-ENDE                   #
+ # VBSK = POIU-START-POIWERK-<ELEMENT>-MASK-POIAN-ENDE              #
+ # RBSK = POIK-POIWERK-<ELEMENT>-MASK-POIK
  # RBSK = POIK-MASK-POIK                                            #
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT                  #

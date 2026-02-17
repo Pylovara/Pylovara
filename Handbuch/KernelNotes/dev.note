@@ -98,6 +98,45 @@ nutzen und im besten falle token aus dem symbol selbst generieren . die frage mu
 
 vielleicht wäre eine assimilierung aus irgend einem token tabellen system möglich . 
 
+Feste Delimiter
+CONTAINER_START  ::= "»["
+CONTAINER_END    ::= "]«"
+
+END_PROCESS      ::= "ſ"
+
+LOOP             ::= "Ω"
+TIMEOUT          ::= "T" NUMBER
+
+FEED_MARK        ::= "±"
+
+Feste Delimiter
+CONTAINER_START  ::= "»["
+CONTAINER_END    ::= "]«"
+
+END_PROCESS      ::= "ſ"
+
+LOOP             ::= "Ω"
+TIMEOUT          ::= "T" NUMBER
+
+FEED_MARK        ::= "±"
+
+damit stellt sich die frage ob ich es links bsk .... rechts syntax technisch aufbauen tue 
+
+also quasi so 
+
+TRANH-START      ::= ¢!
+TRANH-END        ::= !¢
+POIH-START       ::= [
+POIH-END         ::= ]
+
+
+USW ...... dann stellt sich die frage ob ich das istgleich gegen den dirigenten austausche 
+
+
+also so 
+
+POOH-START      §  {
+
 
 
 

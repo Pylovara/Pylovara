@@ -141,12 +141,7 @@ SYMBOLISCHE DEKLARATION §   ]
  # - POIWERK-RETK  = Retron-Einspeisung (Ŧ-Regulation)
  # - POIWERK-VATK  = Vatron-Schnittstelle
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-
-
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = POIU-START-BOXK-POIAN-ENDE                       #
+ # SCHABLONEN BSK = POIU-START-BOXH-<ELEMENT>-POIAN-ENDE            #                                                #
  # RELATIVER BSK = POIU-START-POIWERK-<ELEMENT>-POIAN-IMPULS        #
  # RELATIVER BSK = POIK-MASK-POIK                                   #
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###

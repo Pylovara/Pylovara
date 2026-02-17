@@ -288,11 +288,9 @@ SYMBOLISCHE-DEKLARATION § ↓
         ['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = REXH-SPACECREATOR-WORKSPACE-<NR>-REXO-KORDI-<ANKERKLASSE>                                #
- # RELATIVER BSK = REXK-<MASK>-REXK                                 #
+ # SBSK = POIU-START-POIWERK-<ELEMENT>-REXH-SPACECREATOR-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ # VBSK = POIWERK-<ELEMENT>-REXH-SPACECREATOR
+ # RBSK = POIK-REXK                                               
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

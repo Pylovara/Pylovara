@@ -139,9 +139,78 @@ POOH-START      §  {
 
 
 
+dann stellt sich die frage ,, wie ersetze ich den BNF ? 
+
+Programm
+PROGRAM ::= { STATEMENT }
+
+🔹 Statement
+STATEMENT ::= CONTAINER_BLOCK
+            | CONTROL_BLOCK
+            | ASSIGNMENT
+            | WORKSPACE_BLOCK
+            | PROCESS_END
+
+dazu brauch ich noch ein assimilierungs ersatz 
+
+dann container block 
+
+Container
+CONTAINER_BLOCK ::= CONTAINER_START CONTENT CONTAINER_END
+
+könnte so bleiben bis auf unterstrich und istgleich , ausgetauscht durch knotenpunkt und dirigent
+
+dann komm ich zu 
+
+Workspace-Ebene
+WORKSPACE_BLOCK ::= WORKSPACE STATEMENT
+
+
+Beispiel:
+
+¬· »['exec xyz']«
+
+und 
+
+Workspace-Ebene
+WORKSPACE_BLOCK ::= WORKSPACE STATEMENT
+
+
+Beispiel:
+
+¬· »['exec xyz']«
+
+
+und 
+
+Sentiator (If / Else)
+CONTROL_BLOCK ::= SENT_TRUE STATEMENT
+                | SENT_FALSE STATEMENT
+
+
+Assignment
+ASSIGNMENT ::= WORKSPACE ASSIGN_OPERATOR CONTAINER_BLOCK
+
+ASSIGN_OPERATOR ::= ASSIGN_EVENT
+                  | ASSIGN_VALUE
 
 
 
+das ganze wäre dann 
+
+Tokenliste
+
+10 Produktionsregeln
+
+3 gültige Minimalbeispiele
+
+.... und das sollte ich aufteilen in 
+
+BSK-Produktionsregeln
+
+Schablonator-tokennizer
+
+und Modulatoren verbinder zwischen BSK-Syntax-MCCK
 
 
 

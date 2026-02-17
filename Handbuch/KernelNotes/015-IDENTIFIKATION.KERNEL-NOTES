@@ -36,7 +36,7 @@ IDENTIFIKATION-HAUPTKLASSE § IDH-ID
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-IDENTIFIKATION-ID-UNTERKLASSE § IDH-ID-DNA-þ<SID>
+ID-UNTERKLASSE § IDU-DNA-þ<SID>
 
  INFO = TRIGGERT DIE IDENTIFIKATIONSAUSWAHL
         BASIS-IDENTIFIKATION FÜR TRANSAKTIONEN.
@@ -50,7 +50,7 @@ SYMBOLISCHE DEKLARATION § þ<SID>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-IDENTIFIKATION-ID-UNTERKLASSE § IDH-ID-DNA-þþ<SID>
+ID-UNTERKLASSE § IDU-DNA-þþ<SID>
 
  INFO = TRIGGERT DIE IDENTITÄTSKLASSE 
 
@@ -62,7 +62,7 @@ SYMBOLISCHE DEKLARATION § þþ<SID>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-IDENTIFIKATION-ID-UNTERKLASSE § IDH-ID-DNA-<VORNAME-NACHNAME>-<þþSID>
+ID-UNTERKLASSE § IDU-DNA-<VORNAME-NACHNAME>-þþ<SID>
 
  INFO = TRIGGERT DIE IDENTITÄTSKLASSE NAME NACHNAME 
 
@@ -74,7 +74,7 @@ SYMBOLISCHE DEKLARATION § þþ<SID>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-IDENTIFIKATION-ID-UNTERKLASSE § IDH-ID-DNA-þþþ<SID>-<LIVE-DATA-FEED> 
+ID-UNTERKLASSE § IDU-DNA-<LIVE-DATA-FEED>-þþþ<SID>- 
 
  INFO = WIRD SPÄTER MIT BIOLOGISCHEN BLUTBILDDATEN GEKOPPELT UND
         BIS DORT HIN MIT EXTERNER ZWEIFACH AUTHENTIFIKATIONEN VERSEHEN
@@ -87,7 +87,7 @@ SYMBOLISCHE DEKLARATION § þþþ<SID>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-IDENTIFIKATION-ID-UNTERKLASSE § IDH-ID-DNA-<VORNAME-NACHNAME>-þþþþ<SID>
+ID-UNTERKLASSE § IDU-DNA-<VORNAME-NACHNAME>-þþþþ<SID>
 
  INFO = TRIGGERT DIE IDENTIFIKATION ZU LICENSE RECHTEN UND KUNDEN 
 
@@ -99,7 +99,7 @@ SYMBOLISCHE DEKLARATION § þþþþ<SID>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-IDENTIFIKATION-ID-UNTERKLASSE § IDH-ID-DNA-<ELEMENT>-þþþþ<SID>
+ID-UNTERKLASSE § IDU-DNA-<KATEGORIE>-þþþþ<SID>
 
  INFO = DIENT FÜR DIE LIZENZVERGABE VON MCS
 
@@ -111,21 +111,21 @@ SYMBOLISCHE DEKLARATION § þþþþ<SID>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-IDENTIFIKATION-ID-DNA-ANKERKLASSE § IDAN-ENDE
+ID-DNA-ANKERKLASSE § IDAN-ENDE
 
  INFO = ANKERT NACH AUSWAHL 
 
  FUNKTION = IDENTIFIKATIONSTRIGGER FINISHER
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = IDH-ID-<UNTERKLASSE>-<þ|þþþþ>-<SID>-IDAN-ENDE    #
- # ABSOLUTER BSK = IDH-ID-DNA-<VORNAME-NACHNAME>-þþþþ<SID>-IDAN-ENDE#
- # ABSOLUTER BSK = IDH-ID-DNA-<ELEMENT>-þþþþ<SID>-IDAN-ENDE         #
- # ABSOLUTER BSK = IDH-ID-DNA-þþþ<SID>-<LIVE-DATA-FEED>-IDAN-ENDE   #
- # RELATIVER BSK = IDK-IDH-<ELEMENT>-IDK                            #
+ # SBSK = IDH-ID-IDU-DNA-þ<SID>
+ # SBSK = IDH-ID-IDU-DNA-þþ<SID>
+ # SBSK = IDH-ID-IDU-DNA-<VORNAME-NACHNAME>-þþ<SID>
+ # SBSK = IDH-ID-IDU-DNA<LIVE-DATA-FEED>-þþþ<SID>-
+ # SBSK = IDH-ID-IDU-DNA-<VORNAME-NACHNAME>-þþþþ<SID>
+ # SBSK = IDH-ID-IDU-DNA-<KATEGORIE>-þþþþ<SID>
+ # VBSK = ID-IDU-DNA-<ELEMENT>-IDAN-ENDE
+ # RBSK = IDK-VATK-KKIK
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [09:50:23 | So 29 Dez 2025] MARKENBRANDT                #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

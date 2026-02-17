@@ -278,12 +278,10 @@ NAVIGATOR-ANKERKLASSE § NAVAN-ENDE
  FUNKTION = SCHLIEẞT DIE SUCHE
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = NAVK-NAVH-START-NAVU-<ELEMENT>-NAVAN-ENDE        #
- # ABSOLUTER BSK = NAVK-NAVH-START-NAVAUS-<ELEMENT>-NAVAN-ENDE      #
- # RELATIVER BSK = MASK-NAVK-MASK                                   #
+ # SBSK = NAVH-START-NAVU-<ELEMENT>-NAVAN-ENDE
+ # SBSK = NAVH-START-NAVAUS-<ELEMENT>-NAVAN-ENDE
+ # VBSK = GIBTS NICHT
+ # RBSK = NAVK-MASK
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [11:30:00|Di 27 JAN 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

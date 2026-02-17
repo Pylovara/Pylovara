@@ -255,12 +255,12 @@ BOXIS-MCS-CMD EINGABE § TRANU-START
  FUNKTION = TRANSAKTIONSRAHMEN START
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = BOXU-MCS-CMD-START-MCCU-<ELEMENT>-BOXAN-MCS-CMD-ENDE                                #
- # RELATIVER BSK = BOXK-MCCK-BOXK                                #
+ # SBSK = baustelle morgen
+ # RBSK = baustelle morgen
+### ==== ##### == # === ### =  merkzettel = ### === # == ##### === ###
+ # BOXU-MCS-CMD-START-MCCU-<ELEMENT>-BOXAN-MCS-CMD-ENDE                                #
+ # BOXK-MCCK-BOXK                          
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
- #  DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT                  #
+ #  DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT                #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
 ### ==== ##### == # === ## ENDPUNKT MCS-CMD ### === # == ##### === ###

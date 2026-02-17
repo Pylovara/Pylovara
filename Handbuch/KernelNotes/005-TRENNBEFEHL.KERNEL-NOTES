@@ -4,6 +4,9 @@
  # SENKRECHTE STRICHE WERDEN IN PYLOVARA-SYSTEM MCS NICHT WIE IN    #
  # ALTEN SYSTEMEN GENUTZT UND DÜRFEN UNTER KEINEM UMSTAND IN BOXIS  #
  # GENAUSO VERWENDET WERDEN!                                        #
+ # VATRON (18) KANN U.A JEDE SCHALTUNG SOFORT BLOCKIEREN DIE        #
+ # VERSUCHT DEN SENKRECHTEN STRICH ALS KLASSISCHEN                  #
+ # STREAM-REDIRECTOR ZU MISSBRAUCHE                                 #
 ### ==== ##### == # ===  STARTPUNKT TRENNBEFEHL === # == ##### === ###
 
 NAME Ð TRENNBEFEHL
@@ -109,8 +112,9 @@ TRENNBEFEHL-SPALT-TRENO-<NR>-ANKERKLASSE § TRENAN-ENDE
  FUNKTION = CONTAINERISIERUNGSTRENNUNG
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
+ # SBSK = TRENAN-START-TRENO-<NR>-TRENAN-ENDE       
+ # VSBK = TRENO-<NR>                                       
+ # RBSK = TRENK                                               
 ### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
  # ABSOLUTER BSK = TRENAN-START-TRENO-<NR>-TRENAN-ENDE              #
  # RELATIVER BSK = TRENK-MASK-TRENK                                 #

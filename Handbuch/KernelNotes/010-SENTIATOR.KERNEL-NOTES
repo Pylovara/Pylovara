@@ -79,11 +79,9 @@ SENTIATOR-HAUPTKLASSE-ANKERKLASSE-AUSFÜHRKLASSE = SENTAU-ENDE
  FUNKTION = ÖFFNUNGSIMPULS
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = SENTH-FLEX-SENTAN-<ELEMENT>-SENTAU-ENDE          #
- # RELATIVER BSK = SENTK-MASK-SENTK                                 #
+ # SBSK = POIU-START-POIWERK-<ELEMENT>-SENTH-FLEX-SENTAN-<ELEMENT>-SENTAU-ENDE
+ # VBSK = POIWERK-<ELEMENT>-SENTH-FLEX-SENTAN-<ELEMENT>-SENTAU-ENDE-SENTAU-ENDE-REXK
+ # RBSK = POIK-SENTK-REXK
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

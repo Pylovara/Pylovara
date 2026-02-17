@@ -1228,11 +1228,9 @@ INAKTIV =
  SCHABLONATOR-LINKERKLASSE § SBL-<ELEMENT>
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = TRANU-START-MASU-<ELEMENT>-TRANAN-ENDE           #
- # RELATIVER BSK = TRANK-MASK-TRANK                                 #
+ # SBSK = TRANU-START-MASU-<ELEMENT>-TRANAN-ENDE
+ # VBSK = TRANK-MASU-<ELEMENT>-TRANK
+ # RBSK = TRANK-MASK-TRANK
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

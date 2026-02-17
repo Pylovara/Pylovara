@@ -57,8 +57,10 @@ SYMBOLISCHE DEKLARATION §   }
  SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER ZU
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK =                                                           #
- # RBSK =                                                           #
+ # SBSK = POIU-START-BOXU-<ELEMENT>-<INHALT>-BOXU-<ELEMENT>-TRENO-1-POOU-START-<INHALT>-POOU-ENDE-POIAN-ENDE 
+ # VBSK = POIU-START-POIWERK-<ELEMENT>-BOXK-TRENK-POOK-POIAN-ENDE   #
+ # RBSK = POIK-POIWERK-<ELEMENT>-BOXK-POIK
+ # RBSK = POIK-BOXK-POIK                                            #
 ### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
  # ABSOLUTER BSK = POOU-START-BOXK-POOAN-ENDE                       #
  # RELATIVER BSK = POOK-<MASK>-POOK                                   #

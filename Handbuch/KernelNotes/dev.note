@@ -17,3 +17,101 @@ Der Schablonator:
 schreibt Kernel-Ketten
 
 Wenn das sauber getrennt ist, dann ist das System architektonisch stabil.
+
+
+formales Mapping-Dokument
+
+Beispiel:
+
+¶  →  SENTH-FLEX
+¶¶ →  SENTH-NOFLEX
+»[ ... ]« → PROTEIN-START ... PROTEIN-ENDE
+±x± → FEED-BIND(x)
+Ω → LOOP-ANCHOR
+
+
+formales Mapping-Dokument
+
+Beispiel:
+
+¶  →  SENTH-FLEX
+¶¶ →  SENTH-NOFLEX
+»[ ... ]« → PROTEIN-START ... PROTEIN-ENDE
+±x± → FEED-BIND(x)
+Ω → LOOP-ANCHOR
+
+Regel:
+Jede symbolische Struktur muss auf:
+
+<START>-<KERN>-<OPTION>-<ANKER>
+
+reduzierbar sein.....
+
+Layer 1 ist:
+
+Symbol → BSK
+
+Layer 2 ist:
+
+BSK → visuelles Feedback
+
+Er braucht:
+
+formale Grammatik
+
+feste Mapping-Tabelle
+
+deterministische Ausgabe
+
+
+Er braucht:
+
+formale Grammatik
+
+feste Mapping-Tabelle
+
+deterministische Ausgabe
+
+# ======================================================
+
+schluss endlich werde ich warscheinliche eine verhasste token liste erstellen müssen 
+
+TOKEN_CONTAINER_START = "»["
+TOKEN_CONTAINER_END   = "]«"
+
+TOKEN_SENT_TRUE  = "¶"
+TOKEN_SENT_FALSE = "¶¶"
+
+TOKEN_WORKSPACE  = "¬" + "."+
+TOKEN_ASSIGN     = "¤="
+TOKEN_EVENT      = "¤:"
+TOKEN_FORK_RIGHT = "¤›"
+TOKEN_FORK_LEFT  = "¤‹"
+
+TOKEN_FEED       = "±"
+TOKEN_LOOP       = "Ω"
+TOKEN_TIMEOUT    = "T" + NUMBER
+TOKEN_END        = "ſ"
+
+usw ..... aber die token bindung muss nativ sein , keine alten programmiersprachen 
+nutzen und im besten falle token aus dem symbol selbst generieren . die frage muss ich noch klären ..
+
+vielleicht wäre eine assimilierung aus irgend einem token tabellen system möglich . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

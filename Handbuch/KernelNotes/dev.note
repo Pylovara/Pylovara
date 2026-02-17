@@ -1,0 +1,19 @@
+Der entscheidende Unterschied
+
+Ein normaler Assembler:
+
+nimmt Mnemonics
+
+erzeugt OpCodes
+
+schreibt Register
+
+Der Schablonator:
+
+    nimmt Symbolblöcke (»[ ]«, ¶, ±, Ω, ¬· …)
+
+    erzeugt absolute BSK-Pfade
+
+schreibt Kernel-Ketten
+
+Wenn das sauber getrennt ist, dann ist das System architektonisch stabil.

@@ -1,4 +1,4 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### ### ## # # # # ## ## # #  # ####
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON  ### # # ## # # # # #  ## # #  # ####
  #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>  #
  #   · KEIN EINTRAG | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
@@ -9,9 +9,9 @@
  #   05  · + 0  TRENNBEFEHL    | 06  · + 0   AKTIONSDRAHT           #
  #   07  · + 0  BOXIS          | 08  · + 0   MASTER                 #
  #   09  · + 0  REX            | 10  · + 0   SENTIATOR              #
- #   11  · + 0  ARGUMENT       | 12  · + X   FEED                   #
+ #   11  · + 0  ARGUMENT       | 12  · + 0   FEED                   #
  #   13  · + 0  WARP           | 14  · + 0   NAVIGATOR              #
- #   15  · + 0  IDENTIFIKATION | 16  · + 0   MCS-CMD                #
+ #   15  · - X  IDENTIFIKATION | 16  · + 0   MCS-CMD                #
  #   17  · + 0  DATEITYPEN     | 18  · + 0   VATRON                 #
  #   19  · + 0  RETRON         | 20  · - X   MATRIX                 #
  #   21  Ŋ - X  HERZSCHLAG     | 22  Ŋ + 0   KKIS                   #
@@ -23,12 +23,12 @@
  #   800  BSK   BAUSTEINSCHALTUNGSKREISLAUF                         #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
  #   993   L1_COREKERNELMANDAT               ##  #   #  #   #  # #  #
- #   994   L2_AUTHORRIGHTS                   # ### # #   #   # #  # #
+ #   994   L2_AUTHORRIGHTS                   # # # # #   #   # #  # #
  #   995   L3_COMMERCIALLICENSING            # # Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      #   #    # ## # # #   ##
  #   997   L5_POST_MORTEM-CONTROL            # #    # # ##   #   #  #
- #   998   L6_IMMUTABLE_CORES_DEFINITION     ##           #     # # #
- #   999   LICENSE—MANIFEST.PROTO            ## ##   #  ##  ## #  # #
+ #   998   L6_IMMUTABLE_CORES_DEFINITION     ##   #  #    #     # # #
+ #   999   LICENSE—MANIFEST.PROTO            #  ##   #  ##  ## #  # #
 ### ==== ##### == # === ### VERSIONSDATEN = ### === # == ##### === ###
  # SYSTEM = PNS 2.6.1 PYLOVARA—NETZWERK—SYSTEM                      #
  # KERNEL = MCS 6.8 MASCHINEN-CODE-SPEECH | MASTER—CONTROL—SYSTEM   #

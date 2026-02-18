@@ -28,10 +28,10 @@ MASTER § MASU-SCHABLONATOR
  POIAN-IMPULS                §   ]
  POOU-START                  §   {
  POOAN-ENDE                  §   }
- TRENO-1                     §   |
- TRENO-2                     §   | |
- TRENO-3                     §   | | |
- TRENO-4                     §   | | | |
+ TRENO-1                     §   BOXH|BOXH
+ TRENO-2                     §   BOXH|BOXH|BOXH
+ TRENO-3                     §   BOXH|BOXH|BOXH|BOXH
+ TRENO-4                     §   BOXH|BOXH|BOXH|BOXH|BOXH
  AKTU-START                  §   »
  AKTAN-ENDE                  §   «
  BOXH-ABI                    §   Ħ <OS-ABI> Ħ
@@ -89,8 +89,36 @@ MASTER § MASU-SCHABLONATOR
  FEEH-WERTRÄGER              §   ± WERT ±
  FEEWERK-WERTRÄGER-START     §   ±
  FEEWERK-WERTRÄGER-ENDE      §   ±
+ WARH-LEGACY                 §   øĸ <LEGACY> ĸø
+ WARU-START                  §   øĸ
+ WARAN-ENDE                  §   ĸø
+ NAVAUS-PYLOVARA             §   KLASSENSTEUERUNG
+ NAVAUS-KERNKLASSE           §   KERNKLASSE
+ NAVAUS-HAUPTKLASSE          §   HAUPTKLASSE
+ NAVAUS-OPTIONKLASSE         §   OPTIONKLASSE
+ NAVAUS-UNTERKLASSE          §   UNTERKLASSE
+ NAVAUS-MODULKLASSE          §   MODULKLASSE
+ NAVAUS-WERKZEUGKLASSE       §   WERKZEUGKLASSE
+ NAVAUS-AUSFÜHRUNGSKLASSE    §   AUSFÜHRUNGSKLASSE
+ NAVAUS-ANKERKLASSE          §   ANKERKLASSE
+ NAVAUS-WERTKLASSE           §   WERTKLASSE
+ NAVAUS-LINKERKLASSE         §   LINKERKLASSE
+ # NAVAUS-NUMMERKLASSE         §   NUMMERKLASSE ############## VOREINTRAGEN
+ NAVU-KNOTENPUNKT            §   -
+ NAVU-DIRIGENT               §   §
+ NAVU-INFORMATION            §   ¡
+ NAVU-KOMMENTAR              §   #
+ NAVU-LANGZEITSPEICHER       §   Ð
+ NAVU-SCHATTENIDENTITÄT      §   <SID>
+ NAVU-ZIELREFERENZ           §   $
+########################################
+## IDENTIFIKATION NACH UMBAU EINFÜGEN ##
+########################################
 
  
+
+
+
 
 
 

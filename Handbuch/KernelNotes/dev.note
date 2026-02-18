@@ -141,8 +141,6 @@ also so
 
 POOH-START      §  {
 
-
-
 dann stellt sich die frage ,, wie ersetze ich den BNF ? 
 
 Programm
@@ -241,9 +239,38 @@ Namensideen =
 
  - GENERATIVERMASCHINENCODEKNOTENPUNKTCOMBINATOR = GMKC 
 
+ Du tippst:                ¶ »[ 'apt update' ]«
+                              ↓
+SCHABLONATOR:                 ↓   (kennt Tabelle)
+                              ↓
+BSK-Kette:        POIU-START-POIWERK-SENTK-SENTH-FLEX-...
+                              ↓
+ABSOLULATOR:                  ↓   (kennt BSK-Strukturen)
+                              ↓
+Absolute Schaltung:  AKTU-START-POIK-BOXH-SHELL-CONTROL-...
+                              ↓
+COMPILER / GENERATOR:         ↓   (kennt Hardware) # ISA BRÜCKE NATIV
+                              ↓
+Maschinencode:       0110101010101  (hex: 0x6A 0x3F ...) <--- GMKC
+                              ↓
+CPU führt aus:                ↓
+                    »apt update« läuft
 
+#########################################################################
 
             Assembler	                 Schablonator
 Input	Mnemonics (MOV, ADD)	     Symbole (»[, ¶, ±, Ω)
 Output	OpCodes	                      Absolute BSK-Pfade
 Ziel	Maschine steuern	            Kernel bauen
+
+Der Schablonator
+Input	¶ »[ 'apt update' ]«
+Output	POIU-START-POIWERK-SENTK-SENTH-FLEX-SENTAN-WENN-KANN-SENTAU-IMPULS-BOXH-SHELL-CONTROL-POIAN-ENDE
+
+Nur:
+Symbol rein → BSK raus.
+
+########################################
+Links: BSK (was die Maschine sieht)
+Rechts: Syntax (was der Mensch sieht)
+#########################################################################

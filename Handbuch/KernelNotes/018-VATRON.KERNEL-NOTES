@@ -193,12 +193,10 @@ VATRON-VALIDA-<WERKZEUGKLASSE>-<OPTIONSKLASSE>-ANKERKLASSE § VAAN-IMPULS
  BEDEUTUNG = LAUFZEIT EINRASTEN
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = VATWERK-<ELEMENT>-VATO-<ELEMENT>-VAAN-IMPULS     #
- # RELATIVER BSK = VATK-MASK-VATK                                   #
+ # SBSK = VATWERK-<ELEMENT>-VATO-<ELEMENT>-VAAN-IMPULS-ABSK
+ # VBSK = POIWERK-<ELEMENT>-VATO-<ELEMENT>-VAAN-IMPULS-ABSK
+ # RBSK = VATK-ABSK
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
- #  DATUM = [08:48:22|Do 12 Feb 2025] MARKENBRANDT                       #
+ #  DATUM = [08:48:22|Do 12 Feb 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
 ### ==== ##### == # === ### ENDPUNKT VATRON ### === # == ##### === ###

@@ -18,34 +18,44 @@ MASTER § MASU-SCHABLONATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- TRANU-START                §   ¢!
- TRANAN-ENDE                §   !¢
- POIU-START                 §   [
- POIAN-ENDE                 §   ]
- POIWERK-VATK               §   ]
- POIWERK-RETK               §   Ŧ
- POIWERK-NAVK               §   NAVK
- POIAN-IMPULS               §   ]
- POOU-START                 §   {
- POOAN-ENDE                 §   }
- TRENO-1                    §   |
- TRENO-2                    §   | |
- TRENO-3                    §   | | |
- TRENO-4                    §   | | | |
- AKTU-START                 §   »
- AKTAN-ENDE                 §   «
- BOXU-ABI-START             §   Ħ
- BOXAN-ABI-ENDE             §   Ħ
- BOXU-SYSCALL-START         §   ,
- BOXAN-SYSCALL-ENDE         §   ,
- BOXU-SHELL-CONTROL-START   §   '
- BOXAN-SHELL-CONTROL-ENDE   §   '
+ TRANU-START                 §   ¢!
+ TRANAN-ENDE                 §   !¢
+ POIU-START                  §   [
+ POIAN-ENDE                  §   ]
+ POIWERK-VATK                §   ]
+ POIWERK-RETK                §   Ŧ
+ POIWERK-NAVK                §   NAVK
+ POIAN-IMPULS                §   ]
+ POOU-START                  §   {
+ POOAN-ENDE                  §   }
+ TRENO-1                     §   |
+ TRENO-2                     §   | |
+ TRENO-3                     §   | | |
+ TRENO-4                     §   | | | |
+ AKTU-START                  §   »
+ AKTAN-ENDE                  §   «
+ BOXH-ABI                    §   Ħ <OS-ABI> Ħ
+ BOXU-ABI-START              §   Ħ
+ BOXAN-ABI-ENDE              §   Ħ
+ BOXH-SYSCALL                §   , <SYSCALL> ,
+ BOXU-SYSCALL-START          §   ,
+ BOXAN-SYSCALL-ENDE          §   ,
+ BOXH-SHELL-CONTROL          §   ' <OS-SHELL> '
+ BOXU-SHELL-CONTROL-START    §   '
+ BOXAN-SHELL-CONTROL-ENDE    §   '
+ BOXH-CALLIS                 §   " <PRINT> "
+ BOXU-CALLIS-START           §   "
+ BOXAN-CALLIS-ENDE           §   "
+ BOXH-ALU                    §   × <ALU> ×
  BOXU-ALU-START              §   ×
  BOXAN-ALU-ENDE              §   ×
+ BOXH-MCS-CMD                §   ~ <MCS-CMD> ~
  BOXU-MCS-CMD-START          §   ~
  BOXAN-MCS-CMD-ENDE          §   ~
+ BOXH-BLANKERNENNER          §   ¥ <BLANKERNENNER> ¥
  BOXU-BLANKERNENNER-START    §   ¥
  BOXAN-BLANKERNENNER-ENDE    §   ¥
+ BOXH-MASCHINENCODE          §   º <MASCHINENCODE> º
  BOXU-MASCHINENCODE-START    §   º
  BOXAN-MASCHINENCODE-ENDE    §   º
  REXU-SPACECREATOR           §   ¬
@@ -76,7 +86,10 @@ MASTER § MASU-SCHABLONATOR
  FEEH-ZAHLTRÄGER             §   (<NR>)
  FEEWERK-ZAHLTRÄGER-START    §   (
  FEEWERK-ZAHLTRÄGER-ENDE     §   )
- 
+ FEEH-WERTRÄGER              §   ± WERT ±
+ FEEWERK-WERTRÄGER-START     §   ±
+ FEEWERK-WERTRÄGER-ENDE      §   ±
+
  
 
 

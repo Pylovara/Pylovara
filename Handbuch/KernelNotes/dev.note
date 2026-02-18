@@ -251,3 +251,36 @@ Maschinencode
 Links: BSK (was die Maschine sieht)
 Rechts: Syntax (was der Mensch sieht)
 #########################################################################
+
+
+ABSK =
+AKTU-START-POIU-START-BOXU-SHELL-CONTROL-START-<INHALT>-BOXAN-SHELL-CONTROL-ENDE-POIAN-ENDE-AKTAN-ENDE
+
+MCS Syntax = 
+
+»['echo Hallo Welt']«
+
+oder powershell =
+
+»['Write-Output "Hallo Welt"']
+
+
+oder system unabhängig = 
+
+»[× system("echo Hallo Welt") ×]«
+
+aber dann halt mit BOXIH-ALU
+
+oder ganz pervers = 
+
+»[
+    'echo Windows Befehl'
+    |
+    'ls -la'
+    |
+    'echo "Hallo BSD"'
+    |
+    'Write-Output "Hallo PowerShell"'
+]«
+
+eine datei , vie systeme , ein zweck 

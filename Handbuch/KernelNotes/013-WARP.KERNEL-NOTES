@@ -6,6 +6,7 @@
  # - ALTE ABI-ERWARTUNGEN BLEIBEN GÜLTIG                            #
  # - ALTE COMPILER-DENKMUSTER BLEIBEN INTAKT                        #
  # - ALTE TOOLCHAINS MÜSSEN NICHT MODERNISIERT WERDEN               #
+ # - PAKT LEGACY ZU ORIGINAL COMPILER/COMPOSITOREN/DRIVERBACKEND    #
 ### ==== ##### == # === ### STARTPUNKT WARP ### === # == ##### === ###
 
 NAME Ð WARP
@@ -158,6 +159,7 @@ WARP-LEGACY-START-MODULKLASSE § WARO-JAVASCRIPT
  INFO = Direkte Integration von JS-Engines (V8, SpiderMonkey, JSC)
 
  FUNKTION = Legacy-Ausführung von JavaScript-Code
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 WARP-LEGACY-START-MODULKLASSE § WARO-MACOS

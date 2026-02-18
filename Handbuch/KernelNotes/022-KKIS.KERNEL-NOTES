@@ -270,11 +270,9 @@ KKIS-ZUGRIFF-UNTERKLASSE = KKIU-LICENSE
  AUSFÜHRUNGSART = KOGNITIV
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER BSK = KKIH-ZUGRIFF-KKIU-<ELEMENT>              #
- # RELATIVER BSK = KKIK-MASU-<ELEMENT>                      #
+ # SBSK = KKIH-ZUGRIFF-KKIU-<ELEMENT>
+ # VBSK = KKIU-<ELEMENT-MASU-<ELEMENT>
+ # RBSK = KKIK-MASU-<ELEMENT>
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [00:26:28|Mo Jan 26] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

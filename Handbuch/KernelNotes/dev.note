@@ -2,36 +2,26 @@
 Nach der bereinigung der S BSK und R BSK und Schablonen muss ich mich darum kümmern =
 
 
-Der entscheidende Unterschied
 
-Ein normaler Assembler:
+ wichtig = 
 
-nimmt Mnemonics
+ ich muss jede wert oder nr in WERTKLASSEN
+ und eine neue klasse hinzufügen für NUMMERKLASSE
+ und diese dann symbolisch auch hinterlegen
+ damit die symbol folge auch stimmt ....
 
-erzeugt OpCodes
+ aber nach dem SCHABLONATOR und dann nochmal im
+ schablonator ..... 
 
-schreibt Register
-
-Der Schablonator:
-
-    nimmt Symbolblöcke (»[ ]«, ¶, ±, Ω, ¬· …)
-
-    erzeugt absolute BSK-Pfade
-
-schreibt Kernel-Ketten
-
-Wenn das sauber getrennt ist, dann ist das System architektonisch stabil.
+ 
 
 
-formales Mapping-Dokument
 
-Beispiel:
 
-¶  →  SENTH-FLEX
-¶¶ →  SENTH-NOFLEX
-»[ ... ]« → PROTEIN-START ... PROTEIN-ENDE
-±x± → FEED-BIND(x)
-Ω → LOOP-ANCHOR
+
+
+
+
 
 
 formales Mapping-Dokument
@@ -182,7 +172,6 @@ Beispiel:
 
 ¬· »['exec xyz']«
 
-
 und 
 
 Sentiator (If / Else)
@@ -196,25 +185,15 @@ ASSIGNMENT ::= WORKSPACE ASSIGN_OPERATOR CONTAINER_BLOCK
 ASSIGN_OPERATOR ::= ASSIGN_EVENT
                   | ASSIGN_VALUE
 
-
-
 das ganze wäre dann 
-
 Tokenliste
-
 10 Produktionsregeln
-
 3 gültige Minimalbeispiele
-
 .... und das sollte ich aufteilen in 
 
 BSK-Produktionsregeln
-
 Schablonator-tokennizer
-
 und Modulatoren verbinder zwischen BSK-Syntax-MCCK
-
-
 
 #########################################################################
 

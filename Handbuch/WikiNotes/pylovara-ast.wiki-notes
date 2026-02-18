@@ -1,0 +1,682 @@
+##############################################################################################
+@wiki_nr: 01 ##############################################################################
+##############################################################################
+##############################################################################################
+
+ ┌[bandino@dev][17:29:04|Mo Dez 08]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ └[~]> $ p /Pylovara
+🔍 Ordner gefunden: /Pylovara
+/Pylovara
+├── AI
+│   ├── AIControl
+│   │   ├── AI-Einstellungen
+│   │   │   └── aicontrol.main-conf
+│   │   ├── AI-Handbücher
+│   │   │   ├── 86_64.kernel-notes
+│   │   │   ├── arm.ai-wiki-notes
+│   │   │   ├── bash.ai-wiki-notes
+│   │   │   ├── c++.ai-wiki-notes
+│   │   │   ├── c.ai-wiki-notes
+│   │   │   ├── CISC.ai-wiki-notes
+│   │   │   ├── EPIC.ai-wiki-notes
+│   │   │   ├── IA-16.ai-wiki-notes
+│   │   │   ├── IA-32.ai-wiki-notes
+│   │   │   ├── IA-64.ai-wiki-notes
+│   │   │   ├── isa.ai-wiki-notes
+│   │   │   ├── JSF-AV-rules.pdf
+│   │   │   ├── Mnemonics.ai-wiki-notes
+│   │   │   ├── Operanden.ai-wiki-notes
+│   │   │   ├── powershell.ai-wiki-notes
+│   │   │   ├── python.ai-wiki-notes
+│   │   │   ├── RISC.ai-wiki-notes
+│   │   │   ├── VLIW.ai-wiki-notes
+│   │   │   └── zshell.ai-wiki-notes
+│   │   └── AI-Module
+│   │       └── Logic
+│   │           ├── ai-runner.verhaltens-logic
+│   │           ├── dna.reader-logic
+│   │           ├── kernel.reader-logic
+│   │           └── wiki.reader-logic
+│   └── ollama
+│       ├── bin
+│       │   └── ollama
+│       └── systemd
+│           └── ollama.service
+├── Control
+│   ├── cache.conf
+│   ├── callme.conf
+│   ├── control.pv-conf
+│   ├── datatypes.conf
+│   ├── desktop.conf
+│   ├── download.conf
+│   ├── hardware.conf
+│   ├── #mcp.conf
+│   ├── mcs-visualizer.conf
+│   ├── navigator.conf
+│   └── shell.conf
+├── Handbuch
+│   ├── DevNotes
+│   │   ├── compilieren.dev-notes
+│   │   ├── lexer.dev-notes
+│   │   ├── lexertabelle.dev-notes
+│   │   ├── lexikon.dev-notes
+│   │   ├── logic.dev-notes
+│   │   ├── token.dev-notes
+│   │   └── verzeichnisstruktur.dev-notes
+│   ├── DnaNotes
+│   │   ├── 01-info.dna-notes
+│   │   ├── 99-Linux.dna-notes
+│   │   └── ##-shots.dna-notes
+│   ├── KernelNotes
+│   │   ├── aktionen.kernel-notes
+│   │   ├── argumente.kernel-notes
+│   │   ├── datentypen.kernel-notes
+│   │   ├── dirigent.kernel-notes
+│   │   ├── eingabe.kernel-notes
+│   │   ├── feeds.kernel-notes
+│   │   ├── Identifikation.kernel-notes
+│   │   ├── lexikon.kernel-notes
+│   │   ├── operatoren.kernel-notes
+│   │   ├── protein.kernel-notes
+│   │   ├── proton.kernel-notes
+│   │   ├── register.kernel-notes
+│   │   ├── reihenfolge.kernel-notes
+│   │   ├── transaktion.kernel-notes
+│   │   ├── trennbefehle.kernel-notes
+│   │   ├── wahrheiten.kernel-notes
+│   │   ├── warp.kernel-notes
+│   │   └── zielreferenz.kernel-notes
+│   ├── PDFVersionen
+│   │   ├── MCS Syntax V2.6 - Hanbuch.pdf
+│   │   ├── V14_Handbuch_RISC_V_NeuronalesNetzwerk_&_BrainMaschineCore_BMC_Konzept.pdf
+│   │   ├── V25_Handbuch_RISC_V_NeuronalesNetzwerk_&_BrainMaschineCore_BMC_Konzept (1).pdf
+│   │   ├── V26_Pylovara_BMC_MCS_System_Handbuch.pdf
+│   │   ├── V27_Pylovara_FPGA_MCS_BMC_Handbuch
+│   │   │   ├── Book
+│   │   │   │   ├── 00-einleitung.txt
+│   │   │   │   ├── 01-entwicklungsicht.txt
+│   │   │   │   ├── 02-hardware.txt
+│   │   │   │   ├── 03-bmc-entwicklung.txt
+│   │   │   │   ├── 04-fpga-syntax-constructs.txt
+│   │   │   │   ├── 05-aims-soul-spec.txt
+│   │   │   │   ├── 06-mcs-syntax.txt
+│   │   │   │   └── 07-verilog-fpga-umsetzung.txt
+│   │   │   └── Images
+│   │   │       ├── BMC3.0.png
+│   │   │       ├── bmc-hardware.bmp
+│   │   │       ├── bmc-konzept.bmp
+│   │   │       ├── BMC+NeuralenNetzwerk.png
+│   │   │       ├── gedächnis.png
+│   │   │       ├── konzept_brainmaschine.bmp
+│   │   │       ├── neurales_netzwerk5.0.png
+│   │   │       └── signature.png
+│   │   └── V27_Pylovara_FPGA_MCS_BMC_Handbuch-Final.pdf
+│   └── WikiNotes
+│       ├── ai.wiki-notes
+│       ├── control.wiki-notes
+│       ├── guide.wiki-notes
+│       ├── lexikon.wiki-notes
+│       ├── mcs-simple-guide.wiki-notes
+│       ├── mcs.wiki-notes
+│       ├── module.wiki-notes
+│       ├── pylovara-ast.wiki-notes
+│       ├── shell.wiki-notes
+│       ├── source-bridge-needles.wiki-notes
+│       └── team-unity.wiki-notes
+├── Licenses
+│   ├── L1_CoreKernelMandate
+│   │   └── L1 – Core-Kernel-Mandate.license-note
+│   ├── L2_AuthorRights
+│   │   └── L2 –Author-Rights.license-note
+│   ├── L3_CommercialLicensing
+│   │   └── L3–Commercial-Licensing.license-note
+│   ├── L4_AI-AdministrationMandate
+│   │   └── L4 – AI-Administration-Mandat.license.notee
+│   ├── L5_Post-Mortem-Control
+│   │   └── L5–Post-Mortem-Control.license-note
+│   ├── L6_Immutable-Core-Definition
+│   │   └── L6-Immutable-Cores-Definition.licens-note
+│   └── LICENSE-MANIFEST.proto
+├── mcs.license-note
+├── MCSVerilog
+│   ├── arbeitsblatt-verilog.dev-note
+│   ├── Checksummen
+│   ├── Dirigenten
+│   ├── Feeds
+│   ├── Handler
+│   ├── Kernprozesse
+│   │   ├── gtkwave.log.gtkw
+│   │   ├── mcs_sim.out
+│   │   ├── mcs_sim_tb.v
+│   │   ├── mcs_sim.v
+│   │   ├── mcs_sim.vcd
+│   │   └── simulation.verilog-notes
+│   ├── mcs_sim.vcd
+│   ├── Mülleimer
+│   ├── Operatoren
+│   ├── PrimärerSpeicher
+│   │   ├── hello.test-micro
+│   │   ├── originalverschieben.test-micro
+│   │   ├── sync-timer.test-micro
+│   │   └── verschieben.test-micro
+│   ├── Proteine
+│   │   └── mcs_protein.v
+│   ├── Protonen
+│   ├── Registry
+│   │   ├── copy-cmd.protein-core
+│   │   ├── echo-cmd.protein-core
+│   │   ├── send-cmd.protein-core
+│   │   └── to-cmd.protein-core
+│   ├── start
+│   ├── Synctimer
+│   ├── TemporärerCache
+│   │   └── ganzverschieben.leeredatei-micro
+│   ├── Transaktionen
+│   └── Zielreferenzen
+├── Pylovara.license-notes
+├── README.wiki-notes
+├── Setup
+│   ├── Desktop-Empfohlen
+│   │   ├── Arch-Hypland.fullinstall-core
+│   │   ├── Arch-SARBS.fullinstall-core
+│   │   ├── Debian-Hyprland.fullinstall-core
+│   │   ├── Fedora-Hyprland.fullinstall-core
+│   │   └── Ubuntu25.04-Hyprland.fullinstall-core
+│   ├── MCS-Hyprland-Dotfiles
+│   │   ├── btop
+│   │   ├── fastfetch
+│   │   ├── hypr
+│   │   │   └── hyprland.conf
+│   │   ├── kitty
+│   │   │   └── kitty.conf
+│   │   ├── mcs-hyprland-dotfiles.fullinstall-core
+│   │   ├── mcs-hyprland.fullinstall-core
+│   │   ├── nwg-displays
+│   │   ├── quickshell
+│   │   ├── readme!!!!.wiki-notes
+│   │   ├── rofi
+│   │   ├── swappy
+│   │   ├── swaync
+│   │   ├── Thunar
+│   │   └── waybar
+│   │       ├── config
+│   │       ├── scripts
+│   │       │   └── mcs-status.sh
+│   │       └── style.css
+│   └── Pylovara-System
+│       ├── full.install-core
+│       ├── info.install-notes
+│       ├── nc.install-core
+│       ├── paket.updater-core
+│       ├── policy.security-alert
+│       ├── pylovara.updater-needle
+│       └── usr
+│           └── bin
+│               └── pylovara.wrapper-shell
+└── System
+    ├── Kernel
+    │   ├── AI
+    │   │   ├── AIMS
+    │   │   │   ├── Soul-Decision-Tree.ai-magic
+    │   │   │   └── Soul-Kombinations-Matrix.ai-magic
+    │   │   └── Soul
+    │   │       ├── $
+    │   │       ├── ambivalenz.soul-lcore
+    │   │       ├── angepisst.soul-core
+    │   │       ├── ärgern.soul-nano
+    │   │       ├── bewunderung.soul-node
+    │   │       ├── dankbarkeit.soul-vcore
+    │   │       ├── eifersucht.soul-magic
+    │   │       ├── empathie.soul-magic
+    │   │       ├── erfrucht.soul-vcore
+    │   │       ├── erleichterung.soul-core
+    │   │       ├── error
+    │   │       ├── gelassenheit.soul-lcore
+    │   │       ├── genugtuung.soul-core
+    │   │       ├── happy.soul-vcore
+    │   │       ├── langeweile-nano
+    │   │       ├── neugier.soul-node
+    │   │       ├── sarkasmus-micro
+    │   │       ├── schadenfreude.soul-micro
+    │   │       ├── scham.soul-magic
+    │   │       ├── signatur.wiki.notes
+    │   │       ├── stolz.soul-core
+    │   │       ├── trauer.soul-lcore
+    │   │       ├── verachtung.soul-micro
+    │   │       ├── verzweiflung.soul-lcore
+    │   │       ├── vorfreude.soul-node
+    │   │       ├── wehmut.soul-lcore
+    │   │       └── wut.soul-core
+    │   ├── Archive
+    │   │   ├── DeVWorkSpace0.1
+    │   │   │   ├── Arbeitsblatt.dev-note
+    │   │   │   ├── mcs.parser-magic
+    │   │   │   ├── mcs.registry-core
+    │   │   │   ├── parser
+    │   │   │   │   └── protein-packet.parser-core
+    │   │   │   ├── register.structures-magic
+    │   │   │   ├── register.symbols-magic
+    │   │   │   ├── semantics.REGISTER-core
+    │   │   │   ├── #skeletparser.dev-note
+    │   │   │   ├── Sprache
+    │   │   │   │   └── Symbole
+    │   │   │   │       ├── !¢.symbol
+    │   │   │   │       ├── |¢.symbol
+    │   │   │   │       ├── ¢!.symbol
+    │   │   │   │       ├── ¢|.symbol
+    │   │   │   │       ├── $.symbol
+    │   │   │   │       ├── !.symbol
+    │   │   │   │       ├── "".symbol
+    │   │   │   │       ├── #.symbol
+    │   │   │   │       ├── ''.symbol
+    │   │   │   │       ├── *.symbol
+    │   │   │   │       ├── +.symbol
+    │   │   │   │       ├── -.symbol
+    │   │   │   │       ├── :.symbol
+    │   │   │   │       ├── ;;.symbol
+    │   │   │   │       ├── <.symbol
+    │   │   │   │       ├── <<.symbol
+    │   │   │   │       ├── =.symbol
+    │   │   │   │       ├── >.symbol
+    │   │   │   │       ├── >>.symbol
+    │   │   │   │       ├── [.symbol
+    │   │   │   │       ├── ].symbol
+    │   │   │   │       ├── ^.symbol
+    │   │   │   │       ├── |.symbol
+    │   │   │   │       ├── |||.symbol
+    │   │   │   │       ├── ~~.symbol
+    │   │   │   │       ├── §.symbol
+    │   │   │   │       ├── ¨¨.symbol
+    │   │   │   │       ├── «.symbol
+    │   │   │   │       ├── °.symbol
+    │   │   │   │       ├── ¶.symbol
+    │   │   │   │       ├── ¶=.symbol
+    │   │   │   │       ├── ¶¶.symbol
+    │   │   │   │       ├── ·.symbol
+    │   │   │   │       ├── ».symbol
+    │   │   │   │       └── ….symbol
+    │   │   │   ├── Übersetzung.dev-note
+    │   │   │   └── ÜbersetzungPython.dev-note
+    │   │   ├── MCS
+    │   │   │   ├── css-mcs-prozess.linux-core
+    │   │   │   ├── desktop.dev-note
+    │   │   │   ├── Identifikation
+    │   │   │   │   └── þ.identifikation-register
+    │   │   │   ├── mcs_kernel_loader.cpp
+    │   │   │   ├── Protein
+    │   │   │   │   └── Handler
+    │   │   │   │       └── protein.handler-kernel
+    │   │   │   ├── python-mcs-prozess.linux-core
+    │   │   │   ├── Register
+    │   │   │   │   └── protein-cmd.register-kernel
+    │   │   │   ├── Werkzeug
+    │   │   │   │   ├── Eingaben
+    │   │   │   │   │   ├── aktionen.werkzeug-kernel
+    │   │   │   │   │   ├── eingabe.werkzeug-kernel
+    │   │   │   │   │   └── wahrheiten.werkzeug-kernel
+    │   │   │   │   ├── Operatoren
+    │   │   │   │   │   └── operatoren.werkzeug-kernel
+    │   │   │   │   ├── Transaktion
+    │   │   │   │   │   └── transaktion.werkzeug-kernel
+    │   │   │   │   └── Trennbefehle
+    │   │   │   │       └── trennbefehle.werkzeug-kernel
+    │   │   │   └── Wrapper
+    │   │   │       └── aliase.wrapper-needles
+    │   │   ├── MCSFramework
+    │   │   │   ├── docs
+    │   │   │   │   ├── MCS-Einsatzgebiete-Beispiele.dev-note
+    │   │   │   │   ├── protein.syntax-notes
+    │   │   │   │   ├── proton.syntax-notes
+    │   │   │   │   ├── readme.syntax-notes
+    │   │   │   │   ├── transaktion.syntax-notes
+    │   │   │   │   ├── trennbefehle.syntax-notes
+    │   │   │   │   └── þ.syntax-notes
+    │   │   │   ├── MCS.Protein.Handler
+    │   │   │   ├── MCS.Protein.Register
+    │   │   │   ├── MCS.Proton.Handler
+    │   │   │   ├── MCS.Proton.Register
+    │   │   │   ├── MCS.SafeFrame.Core
+    │   │   │   ├── MCS.Tokenizer.Core
+    │   │   │   ├── MCS.Transaction-Core
+    │   │   │   ├── MCS.þ.Register
+    │   │   │   ├── test.mcs
+    │   │   │   ├── testproton.mcs
+    │   │   │   └── testth.mcs
+    │   │   └── v0.legacy
+    │   │       ├── Proton
+    │   │       │   └── Handler
+    │   │       │       └── proton.handler-kernel
+    │   │       └── Security
+    │   │           ├── safeframe.security-kernel
+    │   │           └── tokenizer.security-kernel
+    │   ├── Core
+    │   │   ├── $
+    │   │   ├── build
+    │   │   │   ├── 2025-12-07_20-11-19.terminal-note
+    │   │   │   ├── 2025-12-07_20-13-45.terminal-note
+    │   │   │   ├── CMakeCache.txt
+    │   │   │   ├── CMakeFiles
+    │   │   │   │   ├── 4.2.0
+    │   │   │   │   │   ├── CMakeCCompiler.cmake
+    │   │   │   │   │   ├── CMakeDetermineCompilerABI_C.bin
+    │   │   │   │   │   ├── CMakeSystem.cmake
+    │   │   │   │   │   └── CompilerIdC
+    │   │   │   │   │       ├── a.out
+    │   │   │   │   │       ├── CMakeCCompilerId.c
+    │   │   │   │   │       └── tmp
+    │   │   │   │   ├── cmake.check_cache
+    │   │   │   │   ├── CMakeConfigureLog.yaml
+    │   │   │   │   ├── CMakeDirectoryInformation.cmake
+    │   │   │   │   ├── InstallScripts.json
+    │   │   │   │   ├── Makefile2
+    │   │   │   │   ├── Makefile.cmake
+    │   │   │   │   ├── mcs_core.dir
+    │   │   │   │   │   ├── build.make
+    │   │   │   │   │   ├── cmake_clean.cmake
+    │   │   │   │   │   ├── cmake_clean_target.cmake
+    │   │   │   │   │   ├── compiler_depend.make
+    │   │   │   │   │   ├── compiler_depend.ts
+    │   │   │   │   │   ├── DependInfo.cmake
+    │   │   │   │   │   ├── depend.make
+    │   │   │   │   │   ├── flags.make
+    │   │   │   │   │   ├── Lib
+    │   │   │   │   │   │   ├── mcs_action.c.o
+    │   │   │   │   │   │   ├── mcs_action.c.o.d
+    │   │   │   │   │   │   ├── mcs_argument.c.o
+    │   │   │   │   │   │   ├── mcs_argument.c.o.d
+    │   │   │   │   │   │   ├── mcs_eingaben.c.o
+    │   │   │   │   │   │   ├── mcs_eingaben.c.o.d
+    │   │   │   │   │   │   ├── mcs_feed.c.o
+    │   │   │   │   │   │   ├── mcs_feed.c.o.d
+    │   │   │   │   │   │   ├── mcs_protein.c.o
+    │   │   │   │   │   │   ├── mcs_protein.c.o.d
+    │   │   │   │   │   │   ├── mcs_proton.c.o
+    │   │   │   │   │   │   ├── mcs_proton.c.o.d
+    │   │   │   │   │   │   ├── mcs_transaktion.c.o
+    │   │   │   │   │   │   ├── mcs_transaktion.c.o.d
+    │   │   │   │   │   │   ├── mcs_wahrheiten.c.o
+    │   │   │   │   │   │   ├── mcs_wahrheiten.c.o.d
+    │   │   │   │   │   │   ├── mcs_warp.c.o
+    │   │   │   │   │   │   └── mcs_warp.c.o.d
+    │   │   │   │   │   ├── link.txt
+    │   │   │   │   │   ├── Logic
+    │   │   │   │   │   │   ├── mcs_lexer.c.o
+    │   │   │   │   │   │   └── mcs_lexer.c.o.d
+    │   │   │   │   │   └── progress.make
+    │   │   │   │   ├── pkgRedirects
+    │   │   │   │   ├── progress.marks
+    │   │   │   │   ├── pylovara_kernel.dir
+    │   │   │   │   │   ├── build.make
+    │   │   │   │   │   ├── cmake_clean.cmake
+    │   │   │   │   │   ├── compiler_depend.make
+    │   │   │   │   │   ├── compiler_depend.ts
+    │   │   │   │   │   ├── DependInfo.cmake
+    │   │   │   │   │   ├── depend.make
+    │   │   │   │   │   ├── flags.make
+    │   │   │   │   │   ├── link.txt
+    │   │   │   │   │   └── progress.make
+    │   │   │   │   ├── TargetDirectories.txt
+    │   │   │   │   ├── test_action.dir
+    │   │   │   │   │   ├── build.make
+    │   │   │   │   │   ├── cmake_clean.cmake
+    │   │   │   │   │   ├── compiler_depend.make
+    │   │   │   │   │   ├── compiler_depend.ts
+    │   │   │   │   │   ├── DependInfo.cmake
+    │   │   │   │   │   ├── depend.make
+    │   │   │   │   │   ├── flags.make
+    │   │   │   │   │   ├── Lab
+    │   │   │   │   │   │   ├── test_action.c.o
+    │   │   │   │   │   │   └── test_action.c.o.d
+    │   │   │   │   │   ├── link.d
+    │   │   │   │   │   ├── link.txt
+    │   │   │   │   │   └── progress.make
+    │   │   │   │   ├── test_if.dir
+    │   │   │   │   │   ├── build.make
+    │   │   │   │   │   ├── cmake_clean.cmake
+    │   │   │   │   │   ├── compiler_depend.make
+    │   │   │   │   │   ├── compiler_depend.ts
+    │   │   │   │   │   ├── DependInfo.cmake
+    │   │   │   │   │   ├── depend.make
+    │   │   │   │   │   ├── flags.make
+    │   │   │   │   │   ├── Lab
+    │   │   │   │   │   │   ├── test_if.c.o
+    │   │   │   │   │   │   └── test_if.c.o.d
+    │   │   │   │   │   ├── link.d
+    │   │   │   │   │   ├── link.txt
+    │   │   │   │   │   └── progress.make
+    │   │   │   │   ├── test_lexer.dir
+    │   │   │   │   │   ├── build.make
+    │   │   │   │   │   ├── cmake_clean.cmake
+    │   │   │   │   │   ├── compiler_depend.make
+    │   │   │   │   │   ├── compiler_depend.ts
+    │   │   │   │   │   ├── DependInfo.cmake
+    │   │   │   │   │   ├── depend.make
+    │   │   │   │   │   ├── flags.make
+    │   │   │   │   │   ├── Lab
+    │   │   │   │   │   │   ├── test_lexer.c.o
+    │   │   │   │   │   │   └── test_lexer.c.o.d
+    │   │   │   │   │   ├── link.d
+    │   │   │   │   │   ├── link.txt
+    │   │   │   │   │   └── progress.make
+    │   │   │   │   └── test_trans.dir
+    │   │   │   │       ├── build.make
+    │   │   │   │       ├── cmake_clean.cmake
+    │   │   │   │       ├── compiler_depend.make
+    │   │   │   │       ├── compiler_depend.ts
+    │   │   │   │       ├── DependInfo.cmake
+    │   │   │   │       ├── depend.make
+    │   │   │   │       ├── flags.make
+    │   │   │   │       ├── Lab
+    │   │   │   │       │   ├── test_trans.c.o
+    │   │   │   │       │   └── test_trans.c.o.d
+    │   │   │   │       ├── link.d
+    │   │   │   │       ├── link.txt
+    │   │   │   │       └── progress.make
+    │   │   │   ├── cmake_install.cmake
+    │   │   │   ├── libmcs_core.a
+    │   │   │   ├── Makefile
+    │   │   │   ├── test_action
+    │   │   │   ├── test_if
+    │   │   │   ├── test_lexer
+    │   │   │   └── test_trans
+    │   │   ├── CMakeLists.txt
+    │   │   ├── errologs
+    │   │   │   ├── mcs_action.o
+    │   │   │   ├── mcs_lexer.o
+    │   │   │   └── mcs_transaction.o
+    │   │   ├── include
+    │   │   │   ├── mcs_action.h
+    │   │   │   ├── mcs_argument.h
+    │   │   │   ├── mcs_eingaben.h
+    │   │   │   ├── mcs_feed.h
+    │   │   │   ├── mcs.h
+    │   │   │   ├── mcs_protein.h
+    │   │   │   ├── mcs_proton.h
+    │   │   │   ├── mcs_transaktion.h
+    │   │   │   ├── mcs_wahrheiten.h
+    │   │   │   └── mcs_warp.h
+    │   │   ├── IntLab
+    │   │   ├── Lab
+    │   │   │   ├── test_action
+    │   │   │   ├── test_action.c
+    │   │   │   ├── test_if.c
+    │   │   │   ├── test_lexer
+    │   │   │   ├── test_lexer.c
+    │   │   │   ├── test.mcs
+    │   │   │   ├── test_mcs_strucktur.mcs
+    │   │   │   ├── test_trans
+    │   │   │   ├── test_trans.c
+    │   │   │   └── test_trans.mcs
+    │   │   ├── Lib
+    │   │   │   ├── mcs_action.c
+    │   │   │   ├── mcs_argument.c
+    │   │   │   ├── mcs_eingaben.c
+    │   │   │   ├── mcs_feed.c
+    │   │   │   ├── mcs_protein.c
+    │   │   │   ├── mcs_proton.c
+    │   │   │   ├── mcs_transaction.h
+    │   │   │   ├── mcs_transaktion.c
+    │   │   │   ├── mcs_wahrheiten.c
+    │   │   │   └── mcs_warp.c
+    │   │   ├── Logic
+    │   │   │   ├── mcs_lexer.c
+    │   │   │   └── mcs_token.h
+    │   │   └── main.c
+    │   ├── MCS
+    │   │   ├── css-mcs-prozess.linux-core
+    │   │   ├── desktop.dev-note
+    │   │   ├── Identifikation
+    │   │   │   └── þ.identifikation-register
+    │   │   ├── mcs_kernel_loader.cpp
+    │   │   ├── Protein
+    │   │   │   └── Handler
+    │   │   │       └── protein.handler-kernel
+    │   │   ├── python-mcs-prozess.linux-core
+    │   │   ├── Register
+    │   │   │   └── protein-cmd.register-kernel
+    │   │   ├── Werkzeug
+    │   │   │   ├── Eingaben
+    │   │   │   │   ├── aktionen.werkzeug-kernel
+    │   │   │   │   ├── eingabe.werkzeug-kernel
+    │   │   │   │   └── wahrheiten.werkzeug-kernel
+    │   │   │   ├── Operatoren
+    │   │   │   │   └── operatoren.werkzeug-kernel
+    │   │   │   ├── Transaktion
+    │   │   │   │   └── transaktion.werkzeug-kernel
+    │   │   │   └── Trennbefehle
+    │   │   │       └── trennbefehle.werkzeug-kernel
+    │   │   └── Wrapper
+    │   │       └── aliase.wrapper-needles
+    │   └── signature.wiki-notes
+    ├── Module
+    │   ├── Pylovara
+    │   │   ├── Cache
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Core
+    │   │   │   ├── GitPlaceHolder.Struktur
+    │   │   │   └── pylovara.source-bridge-core
+    │   │   ├── Logic
+    │   │   │   └── pylovara.ini-parser-logic
+    │   │   ├── Logs
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Magic
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Micro
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Nano
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   ├── Needle
+    │   │   │   └── GitPlaceHolder.Struktur
+    │   │   └── Node
+    │   │       └── GitPlaceHolder.Struktur
+    │   └── Taschenrechner
+    │       ├── Core
+    │       │   └── taschenrechner.core
+    │       └── Logic
+    │           └── taschenrechner.max-logic
+    ├── Pictures
+    │   ├── Hardware
+    │   │   └── GitPlaceHolder.Struktur
+    │   └── Pylovara
+    │       └── Pylovara.jpg
+    └── Shell
+        ├── CMD
+        │   ├── color.cmd-dna
+        │   ├── cpu.dna-cmd
+        │   ├── datatype.dna-cmd
+        │   ├── fullinfo.dna-cmd
+        │   ├── hw.dna-cmd
+        │   ├── internet.dna-cmd
+        │   ├── lex.dna-cmd
+        │   ├── lexi.dna-cmd
+        │   ├── load.dna-cmd
+        │   ├── off.dna-cmd
+        │   ├── on.dna-cmd
+        │   ├── pci.dna-cmd
+        │   ├── pic.dna-cmd
+        │   ├── ports.dna-cmd
+        │   ├── taski.dna-cmd
+        │   └── usb.dna-cmd
+        ├── DNA
+        │   ├── dev.cut-dna
+        │   ├── devx.deluxe-dna
+        │   ├── dna.completion-dna
+        │   ├── dna.shell-dna
+        │   ├── dna.trigger-dna
+        │   ├── helpme.cut-dna
+        │   ├── helpmex.deluxe-dna
+        │   ├── kernel.cut-dna
+        │   ├── kernelx.deluxe-dna
+        │   ├── lex.help-dna
+        │   ├── lexi.help-dna
+        │   ├── p.tree-dna
+        │   ├── pylo.tool-dna
+        │   ├── terminal.record-dna
+        │   └── to.cd-dna
+        ├── Layout
+        │   ├── pylovara++.shell-layout
+        │   ├── pylovara+.shell-layout
+        │   └── pylovara.shell-layout
+        ├── MCP
+        │   ├── Core
+        │   │   └── mcp.biose-core
+        │   ├── Magic
+        │   │   └── check.live-magic
+        │   ├── Needle
+        │   │   └── treiber.scan-needle
+        │   └── Node
+        │       └── mcp.comand-node
+        ├── Security
+        │   ├── pylowatchdog.conf
+        │   ├── pylowatchd.sh
+        │   ├── pylowatch.security-notes
+        │   └── systemd-Service-Unit
+        ├── Vara
+        │   ├── awk.vara
+        │   ├── basename.vara
+        │   ├── bc.vara
+        │   ├── cat.vara
+        │   ├── curl.vara
+        │   ├── cut.vara
+        │   ├── df.vara
+        │   ├── du.vara
+        │   ├── echo.vara
+        │   ├── fdisk.vara
+        │   ├── find.vara
+        │   ├── free.vara
+        │   ├── fzf.vara
+        │   ├── git.vara
+        │   ├── grep.vara
+        │   ├── gzip.vara
+        │   ├── head.vara
+        │   ├── less.vara
+        │   ├── lsblk.vara
+        │   ├── lscpu.vara
+        │   ├── lshw.vara
+        │   ├── lspci.vara
+        │   ├── lsusb.vara
+        │   ├── ls.vara
+        │   ├── nano.vara
+        │   ├── nc.vara
+        │   ├── ps.vara
+        │   ├── sed.vara
+        │   ├── sort.vara
+        │   ├── tail.vara
+        │   ├── tar.vara
+        │   ├── top.vara
+        │   ├── tree.vara
+        │   ├── wc.vara
+        │   └── xz.vara
+        └── VaraLibs
+            └── GitPlaceHolder.Struktur
+
+153 directories, 510 files
+
+│############################################################
+│# WikiLexikon : pylovara-ast.wiki-notes
+│# WikiSearch  : /~ helpme ast
+│# WikiSearch  : /~ helpme 01
+│# Tree│# Tree : /~ p WikiNotes/
+│# Shell       : pylo WikiNotes/- pylovara-ast.wiki-notes cat
+#############################################################

@@ -1,0 +1,68 @@
+#####################################################################
+@wiki-nr: 02   ######################################################
+@wiki-nr: module   ##################################################
+#####################################################################
+###Einordnungs Möglichkeiten über neue grundstruktur :
+
+
+Einordnung gängiger Dateitypen in die Pylovara-Familienstruktur
+Pylovara-Typ Rolle (Familie) Dateitypen/Formate . Das Konzept
+wir im vorfeld bis auf die grundmauer verfeinert bevor ein Datentype
+eine zuweisen bekommen wird, experimente sind unter anderem am laufen
+
+(Beispiel)Plattform :
+
+*.core	     Großvater / Ausführend
+.exe, .bin, .app, .sh, .apk, .service, Mach-O,
+ELF	Win, Mac, Linux, Android
+
+*.*-magic	Großmutter / Umschalter
+.bat, .command, .plist, .desktop, .yaml, .nix,
+.launch	Win, Mac, Linux
+
+*.*-node	Vater / Hauptcontroller
+.json, .ini, .plist, .conf, .cfg, .yaml, .xml	Alle
+
+*.*-nano	Mutter / Substruktur
+.json, .yaml, .db, .sqlite, .meta, .xml	Alle
+
+*.*-micro	Tochter / Mikrosteuerung
+.html, .js, .css, .lua, .py, .cmd, .sql, .tpl	Alle
+
+*.*-cache	Cache / Zwischenspeicher
+.cache, .tmp, .log, .bak, .lock, .swap, .db-wal,
+.pickle	Alle
+
+*.*-needle	Hardwarebindung
+.sys, .kext, .ko, .efi, .dll, .so,
+.dylib, .drv, .binärys Win, Linux, Mac
+
+<*von>.<*zu>-Logic	Verbindung / Transport
+.logic, .flow, .route, .map, .graph, .yaml, .dsl, .hook	, Alle
+
+
+
+            Das Ist Alles was die Welt Brauch
+
+-- Core - Magic - Nodes - Nano - Micro - Needles - Logic --
+
+            Radikaler Umbau Aller GrundStrukturen
+              Für Sinn - Freiheit & Verstand
+
+Entwicklungs Fortschritt :
+
+ to /Pylovara/MCSFramework/docs/
+
+Arbeitsnotizen :
+
+ cat /Pylovara/Arbeitsblatt.dev-note
+
+ (gesonderte notes)
+
+#####################################################################
+│# WikiLexikon : module.wiki-notes
+│# WikiSearch  : /~ helpme module
+│# WikiSearch  : /~ helpme 02
+│# Tree        : /~ p WikiNotes/
+│# Shell       : pylo WikiNotes/- module.wiki-notes cat
+#####################################################################

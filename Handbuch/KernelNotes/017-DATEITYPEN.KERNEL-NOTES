@@ -196,11 +196,8 @@ DATEITYPEN-ORGANISATOR-CORE-AUSFÜHRUNGSKLASSE § DIAU-SYSTEM-COIN
  # 4. CRC32 PRÜFSUMME (ENDE DER DATEI) VALIDIEREN                   #
  # 5. KKIS-INTEGRITÄTSSCAN DURCHFÜHREN                              #
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SCHABLONEN BSK =                                                 #
- # RELATIVER BSK  =                                                 #
-### ==== ##### == # === ### = SCHALTKREIS = ### === # == ##### === ###
- # ABSOLUTER SCHALTKREIS =
- # RELATIVER SCHALTKREIS = MASK-DIK-MASK
+ # SBSK = LEER
+ # RBSK = MASK-DIK
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [17:30:00|FR 16 JAN 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

@@ -1,0 +1,19 @@
+TRANSACTION_START
+    IDENTIFY 2
+    SOMA "Data-Processor"
+    
+    # Extrahiere Eingabe und weise Feed zu
+    EXTRACT "INPUT_VAL" "Raw_Data_0xAF"
+    FEED_ASSIGN 1 "±INPUT_VAL±"
+    
+    PULSE_START
+        ALU [ ADD FEED_READ 1 256 ]
+        SAY "Value shifted and assigned"
+    PULSE_END
+    
+    # Transfer zu Matrix
+    PROTEIN "Result-Payload"
+    TRANSFER "MATRIX-SYNC" "±WERT±(1)"
+    
+    VALIDATE "data_transfer_ok"
+TRANSACTION_END

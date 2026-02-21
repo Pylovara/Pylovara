@@ -1,0 +1,23 @@
+TRANSACTION_START
+    BOOT_SEQUENZ
+    
+    PULSE_START
+        INTERNAL "ENUMERATE-CPU"
+        FORK RIGHT
+        SAY "8 CORES DETECTED"
+    PULSE_END
+    
+    PULSE_START
+        INTERNAL "ENUMERATE-GPU"
+        FORK RIGHT
+        SAY "RTX 4090 DETECTED"
+    PULSE_END
+    
+    SYNAPSE 1
+    PULSE_START
+        INTERNAL "LOAD-KERNEL /pylovara/mcs/core.mcs"
+        TERMINATE LOOP
+    PULSE_END
+    
+    VALIDATE "boot_complete"
+TRANSACTION_END

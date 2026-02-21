@@ -1,0 +1,17 @@
+TRANSACTION_START
+    IDENTIFY 3
+    
+    # Prozesssteuerung
+    PROZESS_START "SHIVA-CORE"
+    SHOW_REPORT "SHIVA-CORE"
+    
+    PULSE_START
+        # Dateisystem-Logik
+        ERZEUGE_CORE
+        ERZEUGE_NEEDLE
+        PROGRAMMIERUNG
+        SAY "Systemerzeugung abgeschlossen"
+    PULSE_END
+    
+    VALIDATE "cmds_execution_complete"
+TRANSACTION_END

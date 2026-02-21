@@ -1,0 +1,18 @@
+TRANSACTION_START
+    HEARTBEAT "SOMA-SYNC"
+    SYNC_8TAKT
+    
+    PULSE_START
+        SOMA "Soma-1"
+        FEUER
+    PULSE_END
+    
+    WAIT 1000
+    
+    PULSE_START
+        SOMA "Soma-2"
+        FEUER
+    PULSE_END
+    
+    VALIDATE "multi_soma_sync_complete"
+TRANSACTION_END

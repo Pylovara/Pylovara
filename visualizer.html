@@ -273,6 +273,7 @@
 
         <div id="code-display">
             <div class="code-line" id="line-1"></div>
+            <div class="code-line" id="line-2" style="margin-top: 5px; opacity: 0; transition: opacity 0.5s;"></div>
             <div class="bsk-chain-container" id="bsk-cont">
                 <div id="bsk-base"></div>
                 <div class="bsk-chain-fill" id="bsk-fill"></div>
@@ -294,13 +295,18 @@
 
         const mcsCommands = [
             { text: "Ŧ°", color: "var(--main-blue)" },
-            { text: "»['echo", color: "var(--main-green)" },
-            { text: "sudo", color: "var(--main-red)" },
+            { text: "»['sudo", color: "var(--main-red)" },
             { text: "pacman", color: "var(--main-yellow)" },
             { text: "-Syyu']«", color: "var(--main-green)" }
         ];
 
+        const line2Commands = [
+            { text: "¬·¤:", color: "var(--main-blue)" },
+            { text: "[Updatesimulation]", color: "var(--main-white)" }
+        ];
+
         const line1 = document.getElementById('line-1');
+        const line2 = document.getElementById('line-2');
         const grid = document.getElementById('gate-grid');
         const bskCont = document.getElementById('bsk-cont');
         const bskBase = document.getElementById('bsk-base');
@@ -320,7 +326,7 @@
             gates.push(g);
         }
 
-        // Symbole in Line 1 einfügen
+        // Line 1 Befehle
         mcsCommands.forEach(cmd => {
             const span = document.createElement('span');
             span.className = 'symbol';
@@ -329,18 +335,43 @@
             line1.appendChild(span);
         });
 
-        async function startVisualizer() {
-            const symbolsLine1 = line1.querySelectorAll('.symbol');
+        // Line 2 Befehle (vorbereiten)
+        line2Commands.forEach(cmd => {
+            const span = document.createElement('span');
+            span.className = 'symbol';
+            span.textContent = cmd.text;
+            span.style.color = cmd.color;
+            line2.appendChild(span);
+        });
 
-            // Phase 1: Shell Befehl Analyse
+        async function startVisualizer() {
+            // Reset
+            line2.style.opacity = '0';
+            bskCont.style.display = 'none';
+            percCounter.style.display = 'none';
+
+            const symbolsLine1 = line1.querySelectorAll('.symbol');
+            const symbolsLine2 = line2.querySelectorAll('.symbol');
+
+            // Phase 1: Line 1 Analyse
             for (let i = 0; i < symbolsLine1.length; i++) {
                 symbolsLine1.forEach(s => s.classList.remove('active'));
                 symbolsLine1[i].classList.add('active');
                 await animateGrid(symbolsLine1[i].textContent.includes('pacman') ? 'alu' : 'pulse', 8);
                 await sleep(400);
             }
+            symbolsLine1.forEach(s => s.classList.remove('active'));
 
-            // Phase 2: BSK-Chain Loading
+            // Phase 2: Line 2 erscheint
+            line2.style.opacity = '1';
+            for (let i = 0; i < symbolsLine2.length; i++) {
+                symbolsLine2[i].classList.add('active');
+                await animateGrid('pulse', 6);
+                await sleep(400);
+                symbolsLine2[i].classList.remove('active');
+            }
+
+            // Phase 3: BSK-Chain Loading
             bskCont.style.display = 'block';
             percCounter.style.display = 'block';
 

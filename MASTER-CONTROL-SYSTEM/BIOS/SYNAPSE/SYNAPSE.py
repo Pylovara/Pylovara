@@ -9,6 +9,7 @@
 # =============================================================================
 
 import random
+import BIOS.SCHALTERKASTEN.SCHALTERKASTEN as config
 
 class Synapse:
     def __init__(self, mutation_rate):
@@ -21,11 +22,14 @@ class Synapse:
             "DATENTYPEN", "kernel lex", "DATEITYPEN", "/Pylovara/Handbuch/KernelNotes/",
             "Thomas Zimmermann", "ID-DNA", "THOMAS-ZIMMERMANN", "ÞÞZRB68","[", "}",
             "]", "¶", "{", "|", "¤", "↓", "↑", "!", "°", "Ø", "¥", "Ŧ", "$", "§", "MASK", 
-            "TRANK", "POIK", "POOK", "REXK", "SENTK", "ARGK", "RETK", "MCCK", "DIK", "DAK"
+            "TRANK", "POIK", "POOK", "REXK", "SENTK", "ARGK", "RETK", "MCCK", "DIK", "DAK",
             "FEEK", "WARK", "NAVK", "IDENK", "VATK", "HERZK", "KKIK", "MCCK", "ShiVara",
             "/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/priorities.info-notes"
-
         ]
+
+        # Integration der registrierten Lernprogramme
+        if hasattr(config, "LERNPROGRAMM_PFADE"):
+            self.preferred_keys.extend(config.LERNPROGRAMM_PFADE)
 
     def apply(self, state):
         if not state.values:

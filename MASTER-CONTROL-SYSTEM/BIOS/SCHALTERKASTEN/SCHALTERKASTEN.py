@@ -9,7 +9,7 @@
 # =============================================================================
 
 KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "ShiVara"
-KKIS_VERSION = "0.0.6"
+KKIS_VERSION = "0.0.8"
 
 # =============================================================================
 # Lernparameter – MCS-Style: kleine Werte = Kontrolle
@@ -17,12 +17,19 @@ KKIS_VERSION = "0.0.6"
 STATE_DECAY_BASE     = 0.06      # Basis-Decay (wie vorher)
 STATE_GAIN           = 0.15      # Verstärkung – bleibt
 MUTATION_RATE        = 300.00    # Mutationswahrscheinlichkeit
-MAX_STATE_SIZE       = 10000     # Sicherheitsgrenze 10000
-ALLOW_SELF_MOD       = False      # Noch nicht erlaubt
+MAX_STATE_SIZE       = 1000     # Sicherheitsgrenze 10000
+ALLOW_SELF_MOD       = False     # Noch nicht erlaubt
 
 # Dynamischer Decay – schützt vor zu tiefem Score
 DECAY_BOOST_THRESHOLD = -9.0     # Wenn Score < -7 → Decay erhöhen
 DECAY_BOOST_FACTOR    = 25.0      # Decay wird dann 1.5× stärker
+
+# =============================================================================
+# LERNPROGRAMME – MCS-REGISTRIERUNG
+# =============================================================================
+LERNPROGRAMM_PFADE = [
+    "/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/mcs-abc.lernprogramm"
+]
 
 # =============================================================================
 # ZUSTANDSLOGIK – MCS-TYP = PR-VAL + PR-DNA ähnlich
@@ -31,17 +38,17 @@ class Zustand:
     def __init__(self):
         # Initialwerte – wie START-PROTEIN (INIT-V)
         self.values = {
-            "core_pulse":       4.0,    # Kern-Schlag – soll um 5 bleiben
+            "core_pulse":       4.2,    # Kern-Schlag – soll um 5 bleiben
             "energy_flow":      4.5,
             "stability_factor": 3.0,
-            "mutation_load":    8.0,
-            "noise_level":      2.0
+            "mutation_load":    9.2,
+            "noise_level":      3.0
         }
         self.alter = 0
 
     def update(self, key, delta):
         # Wert ändern + kappen (Explosion verhindern)
-        new_val = self.values.get(key, 2.1) + delta
+        new_val = self.values.get(key, 2.3) + delta
         self.values[key] = max(-600.0, min(200.0, new_val))   # MCS-Sicherung
 
     def abschwaechen(self, rate, current_score):
@@ -52,7 +59,7 @@ class Zustand:
             # print(f"[DECAY-BOOST] Score {current_score:.2f} < {DECAY_BOOST_THRESHOLD} → Decay ×{DECAY_BOOST_FACTOR}")
 
         for k in self.values:
-            self.values[k] *= (1.2 - effective_rate)
+            self.values[k] *= (1.1 - effective_rate)
 
     def abbild(self):
         # Snapshot für Speichern

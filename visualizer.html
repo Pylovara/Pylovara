@@ -105,11 +105,12 @@
             padding: 25px;
             margin: 20px 0;
             text-align: left;
-            min-height: 120px;
+            min-height: 160px;
             border-left: 4px solid var(--main-yellow);
             display: flex;
             flex-direction: column;
             gap: 15px;
+            overflow: hidden;
         }
 
         .code-line {
@@ -119,6 +120,37 @@
             gap: 12px;
             align-items: center;
             flex-wrap: wrap;
+        }
+
+        .bsk-chain-container {
+            margin-top: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: rgba(0, 210, 255, 0.15);
+            position: relative;
+            display: none;
+            word-break: break-all;
+            border: 1px solid rgba(0, 210, 255, 0.1);
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.4);
+            letter-spacing: 1px;
+            box-shadow: inset 0 0 10px rgba(0, 210, 255, 0.05);
+        }
+
+        .bsk-chain-fill {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            color: var(--main-green);
+            word-break: break-all;
+            pointer-events: none;
+            text-shadow: 0 0 12px var(--main-green);
+            clip-path: inset(0 100% 0 0);
+            /* Gestartet bei 0% sichtbarkeit */
+            transition: none;
         }
 
         .symbol {
@@ -132,29 +164,15 @@
             filter: brightness(1.5);
         }
 
-        .progress-container {
-            width: 100%;
-            height: 20px;
-            background: rgba(0, 255, 65, 0.05);
-            border: 1px solid rgba(0, 255, 65, 0.3);
-            border-radius: 3px;
-            overflow: hidden;
-            margin-top: 5px;
-            display: none;
-        }
-
-        .progress-bar {
-            height: 100%;
-            width: 0%;
-            background: linear-gradient(90deg, var(--main-green), var(--main-blue));
-            box-shadow: 0 0 10px var(--main-green);
-            transition: width 0.1s linear;
-        }
-
-        .percentage {
+        .percentage-counter {
             font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9rem;
-            margin-left: 10px;
+            color: var(--main-yellow);
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 15px;
+            display: none;
+            text-shadow: 0 0 15px rgba(255, 234, 0, 0.5);
+            text-align: right;
         }
 
         .gate-grid {
@@ -255,21 +273,25 @@
 
         <div id="code-display">
             <div class="code-line" id="line-1"></div>
-            <div class="code-line" id="line-2"></div>
-            <div class="progress-container" id="prog-cont">
-                <div class="progress-bar" id="prog-bar"></div>
+            <div class="bsk-chain-container" id="bsk-cont">
+                <div id="bsk-base"></div>
+                <div class="bsk-chain-fill" id="bsk-fill"></div>
             </div>
-            <div id="perc-display" class="percentage" style="display:none; text-align: right;">0%</div>
+            <div class="percentage-counter" id="perc-counter">0%</div>
         </div>
 
         <div class="gate-grid" id="gate-grid"></div>
 
         <div id="controls">
             <button onclick="startVisualizer()">SCHALT-IMPULS AUSLÖSEN</button>
+            <button onclick="sealGlitch()" style="border-color: var(--main-white); color: var(--main-white);">GLITCH
+                VERSIEGELN</button>
         </div>
     </div>
 
     <script>
+        const bskText = "SBSK = VATK-VATH-VALIDA-AKTU-START-POIU-START-POIWERK-REXH-SPACECREATOR-REXU-WORKSPACE-1-REXO-KORDI-REXAN-PROZESS-BOXU-SHELL-CONTROL-START-sudo pacman -Syyu-BOXAN-SHELL-CONTROL-ENDE-POIAN-ENDE-AKTAN-ENDE";
+
         const mcsCommands = [
             { text: "Ŧ°", color: "var(--main-blue)" },
             { text: "»['echo", color: "var(--main-green)" },
@@ -278,18 +300,17 @@
             { text: "-Syyu']«", color: "var(--main-green)" }
         ];
 
-        const secondLine = [
-            { text: "-·¤:", color: "var(--main-blue)" },
-            { text: "SYNC_COMPLETE", color: "var(--main-green)" }
-        ];
-
         const line1 = document.getElementById('line-1');
-        const line2 = document.getElementById('line-2');
         const grid = document.getElementById('gate-grid');
-        const progCont = document.getElementById('prog-cont');
-        const progBar = document.getElementById('prog-bar');
-        const percDisp = document.getElementById('perc-display');
+        const bskCont = document.getElementById('bsk-cont');
+        const bskBase = document.getElementById('bsk-base');
+        const bskFill = document.getElementById('bsk-fill');
+        const percCounter = document.getElementById('perc-counter');
         const gates = [];
+
+        // BSK Text initialisieren
+        bskBase.textContent = bskText;
+        bskFill.textContent = bskText;
 
         // Grid initialisieren (25x8)
         for (let i = 0; i < 200; i++) {
@@ -319,28 +340,20 @@
                 await sleep(400);
             }
 
-            // Phase 2: Progress Bar (100% Sync)
-            line2.innerHTML = '';
-            secondLine.forEach(cmd => {
-                const span = document.createElement('span');
-                span.className = 'symbol';
-                span.textContent = cmd.text;
-                span.style.color = cmd.color;
-                line2.appendChild(span);
-            });
+            // Phase 2: BSK-Chain Loading
+            bskCont.style.display = 'block';
+            percCounter.style.display = 'block';
 
-            progCont.style.display = 'block';
-            percDisp.style.display = 'block';
+            for (let p = 0; p <= 100; p++) {
+                bskFill.style.clipPath = `inset(0 ${100 - p}% 0 0)`;
+                percCounter.textContent = p + '%';
 
-            for (let p = 0; p <= 100; p += 2) {
-                progBar.style.width = p + '%';
-                percDisp.textContent = '|||||||||||||||||||||||||||| ' + p + '%';
-                if (p % 10 === 0) await animateGrid('pulse', 5);
-                await sleep(30);
+                if (p % 5 === 0) await animateGrid('pulse', 4);
+                await sleep(50);
             }
 
-            percDisp.style.color = 'var(--main-green)';
-            percDisp.style.fontWeight = 'bold';
+            percCounter.style.color = 'var(--main-green)';
+            bskFill.style.textShadow = '0 0 20px var(--main-green)';
 
             // Finale Gatter-Kaskade
             await animateGrid('id', 50);
@@ -379,7 +392,29 @@
                 drops[i]++;
             }
         }
-        setInterval(drawMatrix, 40);
+        async function sealGlitch() {
+            // Glitch Effekt am Header stoppen
+            const h1 = document.querySelector('h1');
+            h1.classList.remove('glitch');
+            h1.style.color = 'var(--main-green)';
+            h1.textContent = "MCS SYSTEM VERSIEGELT";
+
+            // Matrix Hintergrunnd beruhigen
+            clearInterval(matrixInterval);
+            ctx.fillStyle = "black";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            document.getElementById('status-bar').innerHTML = "<span>STATUS: SEALED | INTEGRITY: 100%</span><span>ENCRYPTION: AES-BSK-STATIC</span>";
+
+            // UI Panel fixieren
+            const panel = document.querySelector('.ui-panel');
+            panel.style.boxShadow = "0 0 50px rgba(0, 255, 65, 0.5)";
+            panel.style.border = "2px solid var(--main-green)";
+
+            alert("SYSTEM VERSIEGELT. Die Gatter sind stabil.");
+        }
+
+        const matrixInterval = setInterval(drawMatrix, 40);
 
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;

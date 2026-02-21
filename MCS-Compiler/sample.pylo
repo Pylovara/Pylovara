@@ -1,9 +1,0 @@
-TRANSACTION_START
-    PULSE_START
-        ALU [ ADD R1 R2 ]
-    PULSE_END
-    
-    IF [ R1 > 10 ]
-        BOXIS_CALL [ "Threshold Reached" ]
-    END_IF
-TRANSACTION_END

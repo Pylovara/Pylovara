@@ -23,20 +23,20 @@
 ¢! # Start der vertikalen Kette im transaktionsrahmen 
 
 © »[POIK-SOMA-MOTHER]                     # Start der vertikalen Kette validiert durch VATRON § ©
-   Ŧ1 § »[CONTEXT-ID: þþþþ]                # Bio-Live ID als Nervenstrang
+   Ŧ1 § »[CONTEXT-ID: þþþþ]«                # Bio-Live ID als Nervenstrang
 
    # --- 1. VERTIKALE EBENE (SOMA-KNOTEN 01) ---
-   Ŧ2 ¬·· » [BOXH-ALU | × CALCULATE ×]        # Die erste Rechenoperation
-            ſ »[VERIFY-SOMA-01]                 # Vatron-Prüfung über den sentiator regel der reinheit 
+   Ŧ2 ¬·· »[BOXH-ALU | × CALCULATE ×]«        # Die erste Rechenoperation
+           ſ »[VERIFY-SOMA-01]«                # Vatron-Prüfung über den sentiator regel der reinheit 
 
    # --- 2. VERTIKALE EBENE (SOMA-KNOTEN 02) ---
-   Ŧ2 ¬··· » [BOXH-FEED | (SOMA-01)± DATA ±]  # Übergabe ohne Kopier-Overhead
-              § »[SYNC-TO-NEEDLE]                # Synchronisation auf Hardware-Ebene
+   Ŧ2 ¬··· »[BOXH-FEED | (SOMA-01)± DATA ±]«  # Übergabe ohne Kopier-Overhead
+            § »[SYNC-TO-NEEDLE]«               # Synchronisation auf Hardware-Ebene
 
    # --- 3. VERTIKALE EBENE (SOMA-KNOTEN 03) ---
-   Ŧ2 ¬···· » [BOXH-PRINT | "RESULT-SOMA"]    # Visualisierung im Schablonator
-               ¶ ¬· »[OUTPUT-SUCCESS]            # Reflex bei Erfolg
-               ¶¶ ¬· »[SOMA-RESET]               # Reflex bei Fehlfunktion (Zerstörung)
+   Ŧ2 ¬···· »[BOXH-PRINT | "RESULT-SOMA"]«    # Visualisierung im Schablonator
+             ¶ ¬· »[OUTPUT-SUCCESS]«            # Reflex bei Erfolg
+             ¶¶ ¬· »[SOMA-RESET]«               # Reflex bei Fehlfunktion (Zerstörung)
 
 !¢ # Abschluss der Soma-Transaktion
 

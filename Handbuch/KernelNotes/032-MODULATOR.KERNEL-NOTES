@@ -55,13 +55,27 @@ GENERIERE ® <ELEMENT>-<GENERAL>-<ELEMENT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# 
+# KONTROLLE ÜBER TRANSAKTIONSRAHMEN (TRANSAKTIONS-LAYER)
 
+MCS-CMD ~ GENERIERE-TRANH-START
 
+ MODULATOR ® MODUL 01-01
 
+BEDINGUNG = <TRANH-START>-<MASK>
 
+ GENERIERE ® ¢! <MASK>
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# KONTROLLE ÜBER TRANSAKTIONSRAHMEN (TRANSAKTIONS-LAYER)
+
+MCS-CMD ~ GENERIERE-TRANAN-ENDE
+
+ MODULATOR ® MODUL 01-02 
+
+BEDINGUNG = <TRANH-START>-<MASK>-<TRANAN-ENDE>
+
+ GENERIERE ® ¢! <MASK> ¢!
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

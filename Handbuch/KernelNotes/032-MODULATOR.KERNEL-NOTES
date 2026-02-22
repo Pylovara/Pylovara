@@ -77,6 +77,31 @@ BEDINGUNG = <POIU-START>-<ELEMENT>-<INHALT>-<ELEMENT>-<POIU-ENDE>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# KONTROLLE FÜR FREMD-OS-ABI (LAYER-ASSIMILIERUNG)
+
+MCS-CMD ~ GENERIERE-BOXH-OS-ABI
+
+BEDINGUNG = BOXH-BOXU-OS-ABI-START-<OS-ABI>-BOXAN-OS-ABI-ENDE
+
+ MODULATOR § MODUL 02-02 
+ MODULATOR § MODUL 02-03
+ MODULATOR § MODUL 02-04
+ MODULATOR § MODUL 02-04-02
+ MODULATOR § MODUL 02-05
+ MODULATOR § MODUL 03
+
+BEDINGUNG =  Ħ <OS-ABI> Ħ
+
+ GENERIERE ® Ħ <LINUX-OS-ABI> Ħ 
+ GENERIERE ® Ħ <WIN-OS-ABI> Ħ
+ GENERIERE ® Ħ <MAC-OS-ABI> Ħ
+ GENERIERE ® Ħ <BSD-OS-ABI> Ħ
+ GENERIERE ® Ħ <SOLARIS-OS-ABI> Ħ
+ GENERIERE ® Ħ <ANDROID-OS-ABI> Ħ
+ GENERIERE ® Ħ <IOS-OS-ABI> Ħ 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 # KONTROLLE FÜR FREMD-SYSCALLS (LAYER-ASSIMILIERUNG)
 
 MCS-CMD ~ GENERIERE-BOXH-SYSCALL
@@ -163,7 +188,7 @@ BEDINGUNG =  × <ALU> ×
 
  GENERIERE ® × <ALU> × 
 
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

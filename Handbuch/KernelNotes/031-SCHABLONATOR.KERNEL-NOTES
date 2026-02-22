@@ -73,10 +73,10 @@ SCHABLONEN =
  TRENO-4                        §   BOXH|BOXH|BOXH|BOXH|BOXH
  AKTU-START                     §   »
  AKTAN-ENDE                     §   «
- BOXH-ABI                       §   Ħ <OS-TYP> Ħ
+ BOXH-ABI                       §   Ħ <OS-ABI> Ħ
  BOXU-ABI-START                 §   Ħ
  BOXAN-ABI-ENDE                 §   Ħ
- BOXH-SYSCALL                   §   , <SYSCALL> ,
+ BOXH-SYSCALL                   §   , <OS-TYP> ,
  BOXU-SYSCALL-START             §   ,
  BOXAN-SYSCALL-ENDE             §   ,
  BOXH-SHELL-CONTROL             §   ' <OS-SHELL> '

@@ -73,7 +73,7 @@ SCHABLONEN =
  TRENO-4                        §   BOXH|BOXH|BOXH|BOXH|BOXH
  AKTU-START                     §   »
  AKTAN-ENDE                     §   «
- BOXH-ABI                       §   Ħ <OS-ABI> Ħ
+ BOXH-ABI                       §   Ħ <OS-TYP> Ħ
  BOXU-ABI-START                 §   Ħ
  BOXAN-ABI-ENDE                 §   Ħ
  BOXH-SYSCALL                   §   , <SYSCALL> ,
@@ -82,9 +82,9 @@ SCHABLONEN =
  BOXH-SHELL-CONTROL             §   ' <OS-SHELL> '
  BOXU-SHELL-CONTROL-START       §   '
  BOXAN-SHELL-CONTROL-ENDE       §   '
- BOXH-CALLIS                    §   " <PRINT> "
- BOXU-CALLIS-START              §   "
- BOXAN-CALLIS-ENDE              §   "
+ BOXH-PRINT                     §   " <PRINT> "
+ BOXU-PRINT-START               §   "
+ BOXAN-PRINT-ENDE               §   "
  BOXH-ALU                       §   × <ALU> ×
  BOXU-ALU-START                 §   ×
  BOXAN-ALU-ENDE                 §   ×

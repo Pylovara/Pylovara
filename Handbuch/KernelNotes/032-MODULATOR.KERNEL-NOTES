@@ -25,3 +25,40 @@ MASTER § MASU-MODULATOR
  FUNKTION = 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+BEFEHLSZEILEN ANSTEUERUNG § BOXH-MCCK-MCCH-MCS-CMD
+
+BEDIENUNG = ~ <MCS-CMD> ~
+
+GENERIERE ® ~ <MCS-CMD> ~
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+BEFEHLSZEILEN ANSTEUERUNG § BOXH-MCCH-<ELEMENT>-MCCU-MCS-CMD
+
+BEDIENUNG = <ELEMENT> <MCS-CMD> <ELEMENT>
+
+GENERIERE ® <ELEMENT> <MCS-CMD> <ELEMENT>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+BEFEHLSZEILEN ANSTEUERUNG § BOXH-BOXU-<ELEMENT>-<INHALT>-BOXAN-<ELEMENT>
+
+BEDIENUNG = <ELEMENT> <INHALT> <ELEMENT>
+
+GENERIERE ® <ELEMENT> <INHALT> <ELEMENT>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE FÜR FREMD-SYSCALLS (LAYER-ASSIMILIERUNG)
+BEFEHLSZEILEN ANSTEUERUNG § BOXH-BOXU-SYSCALL-<OS-TYP>-<INHALT>-BOXAN-SYSCALL
+
+# GENERIERE® , <LINUX-SYSCALL> , 
+# GENERIERE® , <WIN-SYSCALL> , 
+
+INFO = MODULIERT FREMDE SYSCALLS IN DEN REINEN PYLOVARA-AKTIONSDRATH
+
+
+
+
+

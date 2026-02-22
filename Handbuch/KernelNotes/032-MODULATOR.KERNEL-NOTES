@@ -79,6 +79,18 @@ BEDINGUNG = <TRANH-START>-<MASK>-<TRANAN-ENDE>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# KONTROLLE ÜBER PROTEIN-SCHALTUNG (ZELLEN-SCHALTUNG)
+
+MCS-CMD ~ GENERIERE-PROTEIN-START
+
+ MODULATOR ® MODUL 02-01
+
+BEDINGUNG = <PROTEIN-START>-<MASK>
+
+ GENERIERE ® »[<MASK>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 # KONTROLLE ÜBER BOXIS AUSWAHL (LAYER-AUSWAHL)
 
 MCS-CMD ~ GENERIERE-BOXH-AUSWAHL

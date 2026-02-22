@@ -57,11 +57,33 @@ SCHABLONEN =
  MODULATOR-KERNKLASSE           §   MOK
  SCHABLONATOR-KERNKLASSE        §   SBK
 
+ 
+ NAVAUS-PYLOVARA                §   KLASSENSTEUERUNG
+ NAVAUS-KERNKLASSE              §   KERNKLASSE
+ NAVAUS-HAUPTKLASSE             §   HAUPTKLASSE
+ NAVAUS-OPTIONKLASSE            §   OPTIONKLASSE
+ NAVAUS-UNTERKLASSE             §   UNTERKLASSE
+ NAVAUS-MODULKLASSE             §   MODULKLASSE
+ NAVAUS-WERKZEUGKLASSE          §   WERKZEUGKLASSE
+ NAVAUS-AUSFÜHRUNGSKLASSE       §   AUSFÜHRUNGSKLASSE
+ NAVAUS-ANKERKLASSE             §   ANKERKLASSE
+ NAVAUS-WERTKLASSE              §   WERTKLASSE
+ NAVAUS-LINKERKLASSE            §   LINKERKLASSE
+ NAVAUS-NUMMERKLASSE            §   NUMMERKLASSE ############################### VOREINTRAG
+ NAVU-KNOTENPUNKT               §   -
+ NAVU-DIRIGENT                  §   §
+ NAVU-INFORMATION               §   ¡
+ NAVU-KOMMENTAR                 §   #
+ NAVU-LANGZEITSPEICHER          §   Ð
+ NAVU-SCHATTENIDENTITÄT         §   <SID>
+ NAVU-ZIELREFERENZ              §   $
+ VATRON-KERNKLASSE              §   ©
+
+
  TRANU-START                    §   ¢!
  TRANAN-ENDE                    §   !¢
  POIU-START                     §   [
  POIAN-ENDE                     §   ]
- POIWERK-VATK                   §   ©
  POIWERK-RETK                   §   Ŧ
  POIWERK-NAVK                   §   NAVK
  POIAN-IMPULS                   §   ]
@@ -73,6 +95,7 @@ SCHABLONEN =
  TRENO-4                        §   BOXH|BOXH|BOXH|BOXH|BOXH
  AKTU-START                     §   »
  AKTAN-ENDE                     §   «
+
  BOXH-ABI                       §   Ħ <OS-ABI> Ħ
  BOXU-ABI-START                 §   Ħ
  BOXAN-ABI-ENDE                 §   Ħ
@@ -112,6 +135,7 @@ SCHABLONEN =
  REXAN-AUFSTEIGENDSORTIEREN     §   ↑
  REXAN-ABSTEIGENDSORTIEREN      §   ↓
  SENTAN-REGEL-DER-REINHEIT      §   ſ
+ 
  ARGH-OPTION                    §   ««
  ARGAN-LOOP                     §   ««Ω
  ARGAN-EXIT                     §   ««E
@@ -120,6 +144,7 @@ SCHABLONEN =
  ARGWERK-NANOSEKUNDEN           §   ««N
  ARGWERK-SEKUNDEN               §   ««S
  ARGWERK-TAKTSCHLÄGE            §   ««T
+
  FFEH-SYNC                      §   (<NR>)± WERT ±
  TFEH-SYNC                      §   ± WERT ±(<NR>)
  FEEH-ZAHLTRÄGER                §   (<NR>)
@@ -128,34 +153,18 @@ SCHABLONEN =
  FEEH-WERTRÄGER                 §   ± WERT ±
  FEEWERK-WERTRÄGER-START        §   ±
  FEEWERK-WERTRÄGER-ENDE         §   ±
+
  WARH-LEGACY                    §   øĸ »["LEGACY"]« ĸø
  WARU-START                     §   øĸ
  WARAN-ENDE                     §   ĸø
- NAVAUS-PYLOVARA                §   KLASSENSTEUERUNG
- NAVAUS-KERNKLASSE              §   KERNKLASSE
- NAVAUS-HAUPTKLASSE             §   HAUPTKLASSE
- NAVAUS-OPTIONKLASSE            §   OPTIONKLASSE
- NAVAUS-UNTERKLASSE             §   UNTERKLASSE
- NAVAUS-MODULKLASSE             §   MODULKLASSE
- NAVAUS-WERKZEUGKLASSE          §   WERKZEUGKLASSE
- NAVAUS-AUSFÜHRUNGSKLASSE       §   AUSFÜHRUNGSKLASSE
- NAVAUS-ANKERKLASSE             §   ANKERKLASSE
- NAVAUS-WERTKLASSE              §   WERTKLASSE
- NAVAUS-LINKERKLASSE            §   LINKERKLASSE
- NAVAUS-NUMMERKLASSE            §   NUMMERKLASSE ############################### VOREINTRAG
- NAVU-KNOTENPUNKT               §   -
- NAVU-DIRIGENT                  §   §
- NAVU-INFORMATION               §   ¡
- NAVU-KOMMENTAR                 §   #
- NAVU-LANGZEITSPEICHER          §   Ð
- NAVU-SCHATTENIDENTITÄT         §   <SID>
- NAVU-ZIELREFERENZ              §   $
+ 
  IDU-DNA-TRANSAKTIONSRAHMEN     §   þ
  IDU-DNA-DIENST                 §   þþ
  IDU-DNA-FIRMA                  §   þþþ
  IDU-DNA-INFASTRUKTUR           §   þþþ
  IDU-DNA-BILDUNGSBEREICH        §   þþþ
  IDU-DNA-BIOLIVE                §   þþþþ
+
  MCCH-UND-AUSFÜHREN-SEQUENZIELL §   &
  MCCH-KLASSE-KNOTENPUNKT        §   -
  MCCH-UND-AUSFÜHREN-PARALLEL    §   &&

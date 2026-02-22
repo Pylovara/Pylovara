@@ -127,9 +127,24 @@ BEDINGUNG =  ' <OS-SHELL> '
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# KONTROLLE FÜR DIREKTE PRINT (LAYER-ASSIMILIERUNG)
 
+MCS-CMD ~ GENERIERE-BOXH-PRINT-CONTROL
 
+BEDINGUNG = BOXH-BOXU-PRINT-<PRINT>-BOXAN-PRINT
 
+ MODULATOR § MODUL 02-02 
+ MODULATOR § MODUL 02-03
+ MODULATOR § MODUL 02-04
+ MODULATOR § MODUL 02-04-02
+ MODULATOR § MODUL 02-05
+ MODULATOR § MODUL 03
+
+BEDINGUNG =  " <PRINT> "
+
+ GENERIERE ® " <PRINT> " 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

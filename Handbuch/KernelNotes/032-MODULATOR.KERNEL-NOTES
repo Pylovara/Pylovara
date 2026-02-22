@@ -47,15 +47,25 @@ GENERIERE ® ~ <MCS-CMD> ~
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-BEFEHLSZEILEN ANSTEUERUNG § BOXH-MCCH-<ELEMENT>-MCCU-MCS-CMD
+BEFEHLSZEILEN ANSTEUERUNG § BOXH-MCCH-<ELEMENT>-<GENERAL>-BOXAN-<ELEMENT>
 
-BEDIENUNG = <ELEMENT>-<MCS-CMD>-<ELEMENT>
+BEDIENUNG = <ELEMENT>-<GENERAL>-<ELEMENT>
 
-GENERIERE ® <ELEMENT>-<MCS-CMD>-<ELEMENT>
+GENERIERE ® <ELEMENT>-<GENERAL>-<ELEMENT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-BEFEHLSZEILEN ANSTEUERUNG § BOXH-BOXU-<ELEMENT>-<INHALT>-BOXAN-<ELEMENT>
+# 
+
+
+
+
+
+
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER BOXIS AUSWAHL (LAYER-AUSWAHL)
 
 MCS-CMD ~ GENERIERE-BOXH-AUSWAHL
 
@@ -255,4 +265,4 @@ BEDINGUNG =  º <MASCHINENCODE> º
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [10:59:06|So Feb 22 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-### ==== ##### == # === # ENDPUNKT NAVIGATOR ## === # == ##### === ###
+### ==== ##### == # === # ENDPUNKT MODULATOR ## === # == ##### === ###

@@ -305,6 +305,25 @@ BEDINGUNG:                  ««<ARGUMENT><WERT>
 MODULATOR ® MODUL 06-01 # FEED SEGMENT
  SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
 BEDINGUNG:      »[ (<NR>)± <WERT> ± ] 
+
+MODULATOR ® MODUL 06-01-01 # ZAHLTRÄGER PLAZIERUNG
+ SCHALTKETTE:  AKTK-POIK-FEEH-ZAHLTRÄGER-POIK-AKTAN-ENDE
+BEDINGUNG:      »[ (<NR>)
+    START:      »[ (<NR>)           ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-02 # FEED SEGMENT
  SCHALTKETTE:  AKTK-POIK-TFEH-SYNC-POIK-AKTAN-ENDE
@@ -312,9 +331,9 @@ BEDINGUNG:       [ ± WERT ±(<NR>) ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-03 # ZAHLTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTK-POIK-FEEH-ZAHLTRÄGER-POIK-AKTAN-ENDE
-BEDINGUNG:         (<NR>)
-    START:       [ (<NR>)           ]
-    START:       [           (<NR>) ] 
+BEDINGUNG:       »[ (<NR>)
+    START:       »[ (<NR>)           ]
+    START:       »[           (<NR>) ] 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-04 # WERTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTK-POIK-FEEH-WERTRÄGER-POIK-AKTAN-ENDE

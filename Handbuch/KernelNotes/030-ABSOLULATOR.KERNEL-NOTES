@@ -305,11 +305,11 @@ BEDINGUNG:       [ (<NR>)± <WERT> ± ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-01-01 # FÜHRENDER FEED SYNC
  SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
-BEDINGUNG:         (<NR>)  
+BEDINGUNG:       [ (<NR>)           ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-01-02 # FÜHRENDER FEED ÜBERGABE
  SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FFEH-ÜBERGABE-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
-BEDINGUNG:             ± <WERT> ±
+BEDINGUNG:       [       ± <WERT> ± ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-02 # FEED SEGMENT
  SCHALTKETTE:  AKTK-POIK-TFEH-SYNC-POIK-AKTAN-ENDE
@@ -317,11 +317,11 @@ BEDINGUNG:       [ ± WERT ±(<NR>) ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-02-01 # FEED SEGMENT
  SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FFEH-ÜBERGABE-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
-BEDINGUNG:         ± WERT ±  
+BEDINGUNG:       [ ± WERT ±       ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-02-02 # FEED SEGMENT
  SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
-BEDINGUNG:                 (<NR>)  
+BEDINGUNG:       [         (<NR>) ] 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07 # TRANSAKTIONSRAHMEN ID VALIDIERUNG IM DATEITYPE
  SCHALTKETTE: IDK-IDH-IDU-DNA-TRANSAKTIONSRAHMEN-IDAN-ENDE 

@@ -30,7 +30,7 @@ MASTER         § MASU-ABSOLULATOR
  FUNKTION = SCHALTET KETTEN EIN UND AUS
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 01 # TRANSAKTIONS-SCHALTUNG (HÜLLE)
+MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE)
  # RAHMENBEDINGUNG FÜR TRANSAKTIONSRAHMEN
  # LEGT DIE BEDINGUNG FEST IN DATEITYPEN FÜR MCS ZUGELASSENEN CODE
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -44,21 +44,37 @@ MODULATOR ® MODUL 01-02 # TRANSAKTIONSRAHMEN ENDE MINIMAL BEDINGUNG
 BEDINGUNG:  <TRANK>-<MASK>-<TRANK>
     START:  ¢! <MASK> !¢
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 02 # AKTIONS-INITIIERUNG (IMPULS)
+MODULATOR ® MODUL 02 # AKTIONDRAHT 
+ # STELLT AKTIONDRAHT START WIE END BEDINGUNG HER
+ # RAHMEN UND VERARBEITUNGSRAHMEN FÜR BOXIS MIT ODER OHNE PROTON
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 02-01 # AKTIONS-INITIIERUNG (IMPULS)
  SCHALTKETTE:  AKTK-AKTU-START
 BEDINGUNG:      <AKTK>
     START:      »
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 02-01 # PROTEIN START
+MODULATOR ® MODUL 02-02 # 
  SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START
 BEDINGUNG:      <AKTK>-<POIK>
     START:      »[
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 02-01-01 # PROTEIN ENDE
+MODULATOR ® MODUL 02-03 # 
  SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-<BOXK>-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      »
     START:      »[<BOXK>]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
+
 MODULATOR ® MODUL 02-02 # BOXIS KERNKLASSEN ANSTEUERUNG
  SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      <BOXK>

@@ -329,14 +329,10 @@ MODULATOR ® MODUL 06-02-02 # ZAHLTRÄGER PLAZIERUNG
 BEDIENUNG:      »[ ± <WERT> ±(<NR>) ]
     START:      »[ ± <WERT> ±(<NR>) ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-#MODULATOR ® MODUL 06-XX # FEED SEGMENT
-# SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
-#BEDINGUNG:
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07 # TRANSAKTIONSRAHMEN ID VALIDIERUNG IM DATEITYPE
  SCHALTKETTE: IDK-IDH-IDU-DNA-TRANSAKTIONSRAHMEN-IDAN-ENDE 
 BEDINGUNG: þ
-    START: P<SID>
+    START: þ<SID>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07-01 # BASIS-ID / DIENST 
  SCHALTKETTE: IDK-IDH-IDU-DNA-DIENST-IDAN-ENDE 

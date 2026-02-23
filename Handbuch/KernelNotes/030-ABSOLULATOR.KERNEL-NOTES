@@ -36,12 +36,13 @@ BEDINGUNG:  ¢! MASK !¢
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 01-01 # TRANSAKTIONSRAHMEN START MINIMAL BEDINGUNG
  SCHALTKETTE:  TRANK-TRANH-RUN-TRANU-START-MASK
-BEDINGUNG:  ¢! MASK 
+BEDINGUNG:  ¢! 
+    START:  ¢! <MASK>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 01-02 # TRANSAKTIONSRAHMEN ENDE MINIMAL BEDINGUNG
  SCHALTKETTE:  TRANK-TRANH-RUN-TRANU-START-MASK-TRANAN-ENDE
-BEDINGUNG:  ¢! MASK !¢
-    START:  ¢! MASK !¢
+BEDINGUNG:  ¢! <MASK> !¢
+    START:  ¢! <MASK> !¢
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 02 # AKTIONS-INITIIERUNG (IMPULS)
  SCHALTKETTE:  AKTK-AKTU-START
@@ -56,12 +57,15 @@ BEDINGUNG:      »
 MODULATOR ® MODUL 02-01-01 # PROTEIN ENDE
  SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-<MASK>-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      »
-    START:      »[<MASK>]«
+    START:      »[<BOXK>]«
+    START:      »[<BOXK|POOK>]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 02-02 # BOXIS KERNKLASSEN ANSTEUERUNG
  SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      »[
     START:      »[BOXK]
+    START:      »[POOK]
+    START:      »[BOXK|POOK]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 02-03 # MEHRERE BOXIS
  SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENO-1-BOXK-POIAN-ENDE

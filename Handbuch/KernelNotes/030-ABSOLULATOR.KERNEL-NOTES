@@ -310,13 +310,13 @@ MODULATOR ® MODUL 06-02 # FEED SEGMENT
  SCHALTKETTE:  AKTK-POIK-TFEH-SYNC-POIK-AKTAN-ENDE
 BEDINGUNG:       [ ± WERT ±(<NR>) ]  
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 06-02 # ZAHLTRÄGER PLAZIERUNG
+MODULATOR ® MODUL 06-03 # ZAHLTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTK-POIK-FEEH-ZAHLTRÄGER-POIK-AKTAN-ENDE
 BEDINGUNG:         (<NR>)
     START:       [ (<NR>)           ]
-    START.       [           (<NR>) ] 
+    START:       [           (<NR>) ] 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 06-03 # WERTRÄGER PLAZIERUNG
+MODULATOR ® MODUL 06-04 # WERTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTK-POIK-FEEH-WERTRÄGER-POIK-AKTAN-ENDE
 BEDIENUNG:         ± <WERT> ±
     START:       [ ± <WERT> ±       ]

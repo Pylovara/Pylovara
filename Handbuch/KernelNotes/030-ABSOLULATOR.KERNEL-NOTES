@@ -303,28 +303,19 @@ BEDINGUNG:                  ««<ARGUMENT><WERT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-01 # FEED SEGMENT
- SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+ SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      »[ (<NR>)± <WERT> ± ] 
-
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-01-01 # ZAHLTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-<NR>-BOXH-<ELEMENT>-POIAN-ENDE
-BEDINGUNG:      »[ (<NR>)
+BEDINGUNG:      »[ (<NR>)           ]
     START:      »[ (<NR>)           ]
-
-
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-01-02 # WERTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-<NR>-POIK-AKTAN-ENDE
-BEDIENUNG:      »[ (<NR>)           ]
-
+BEDIENUNG:      »[ (<NR>)± <WERT> ± ]
     START:      »[ (<NR>)± <WERT> ± ]
-
-
-
-
-
-
-
-
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 #### ==== ##### == # === ### =============== ### === # == ##### === ###

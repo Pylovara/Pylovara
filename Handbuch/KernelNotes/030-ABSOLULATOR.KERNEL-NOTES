@@ -280,24 +280,24 @@ BEDINGUNG:                ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05 # ARGUMENT-ZUGANG
  SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
-BEDINGUNG:                 ««
-    START:                 ««
+BEDINGUNG:                  ««
+    START:                  ««
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05-01 # ARGUMENT-DIREKT OPERATION
  SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGH-ARGWERT-<ARGUMENT>
-BEDINGUNG:                 ««<ARGUMENT>
-    START:                 ««B
-    START:                 ««E
-    START:                 ««N
-    START:                 ««S
-    START:                 ««T
+BEDINGUNG:                  ««<ARGUMENT>
+    START:                  ««B
+    START:                  ««E
+    START:                  ««N
+    START:                  ««S
+    START:                  ««T
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05-01-01 # ARGUMENT-DIREKT-ANKER 
  SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGH-ARGWERT-<ARGUMENT>
-BEDINGUNG:                 ««<ARGUMENT><WERT>
-    START:                 ««N<WERT>
-    START:                 ««S<WERT>
-    START:                 ««T<WERT>  
+BEDINGUNG:                  ««<ARGUMENT><WERT>
+    START:                  ««N<WERT>
+    START:                  ««S<WERT>
+    START:                  ««T<WERT>  
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-01 # FEED SEGMENT
  SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE

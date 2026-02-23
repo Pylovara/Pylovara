@@ -299,6 +299,9 @@ BEDINGUNG:                  ««<ARGUMENT><WERT>
     START:                  ««S<WERT>
     START:                  ««T<WERT>  
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-01 # FEED SEGMENT
  SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
 BEDINGUNG:      »[ (<NR>)± <WERT> ± ] 
@@ -311,7 +314,7 @@ MODULATOR ® MODUL 06-02 # ZAHLTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTK-POIK-FEEH-ZAHLTRÄGER-POIK-AKTAN-ENDE
 BEDINGUNG:         (<NR>)
     START:       [ (<NR>)           ]
-    START.       [         (<NR>) ] 
+    START.       [           (<NR>) ] 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-03 # WERTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTK-POIK-FEEH-WERTRÄGER-POIK-AKTAN-ENDE
@@ -322,6 +325,9 @@ BEDIENUNG:         ± <WERT> ±
 #MODULATOR ® MODUL 06-XX # FEED SEGMENT
 # SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
 #BEDINGUNG:
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07 # TRANSAKTIONSRAHMEN ID VALIDIERUNG IM DATEITYPE
  SCHALTKETTE: IDK-IDH-IDU-DNA-TRANSAKTIONSRAHMEN-IDAN-ENDE 

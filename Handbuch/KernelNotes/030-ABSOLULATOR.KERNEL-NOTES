@@ -302,7 +302,7 @@ BEDINGUNG:                  ««<ARGUMENT><WERT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 06-01 # FEED SEGMENT
+MODULATOR ® MODUL 06-01 # FF FÜHRENDEN FEED BAUEN
  SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      »[ (<NR>)± <WERT> ± ] 
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -316,12 +316,17 @@ MODULATOR ® MODUL 06-01-02 # WERTRÄGER PLAZIERUNG
 BEDIENUNG:      »[ (<NR>)± <WERT> ± ]
     START:      »[ (<NR>)± <WERT> ± ]
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-#### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 06-02 # FEED SEGMENT
+MODULATOR ® MODUL 06-02 # TF TRAGENDEN FEED BAUEN 
  SCHALTKETTE:  AKTK-POIK-TFEH-SYNC-POIK-AKTAN-ENDE
-BEDINGUNG:       [ ± WERT ±(<NR>) ]  
+BEDINGUNG:      »[ ± WERT ±(<NR>) ]  
+
+
+
+
+
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-03 # ZAHLTRÄGER PLAZIERUNG
  SCHALTKETTE:  AKTK-POIK-FEEH-ZAHLTRÄGER-POIK-AKTAN-ENDE

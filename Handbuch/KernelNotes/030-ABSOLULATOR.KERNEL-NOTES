@@ -380,36 +380,57 @@ MODULATOR ® MODUL 06-01 # FEED
  # ELTERNTEIL GIBT GESCHWISTER DEN CACHE SYNCRON WEITER INNERHALB DES TRANAKTIONSRAHMEN
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-02 # FF FÜHRENDEN FEED BAUEN
- SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
+ ABSK = AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      »[ (<NR>)± <WERT> ± ]«
     START:      »[ (<NR>)± <WERT> ± ]«
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-02-01 # ZAHLTRÄGER PLAZIERUNG
- SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEH-ZAHLTRÄGER-BOXH-<ELEMENT>-POIAN-ENDE
+ ABSK = AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEH-ZAHLTRÄGER-BOXH-<ELEMENT>-POIAN-ENDE
 BEDINGUNG:      »[ (<NR>)           ]
     START:      »[ (<NR>)           ]
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-02-02 # WERTRÄGER PLAZIERUNG
- SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEH-ZAHLTRÄGER-FEEH-WERTRÄGER-POIAN-ENDE
+ ABSK = AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEH-ZAHLTRÄGER-FEEH-WERTRÄGER-POIAN-ENDE
 BEDIENUNG:      »[ (<NR>)± <WERT> ± ]
     START:      »[ (<NR>)± <WERT> ± ]
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-03 # TF TRAGENDEN FEED BAUEN 
- SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-TFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
+ ABSK = AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEK-TFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
 BEDINGUNG:      »[ ± <WERT> ±(<NR>) ]«
     START:      »[ ± <WERT> ±(<NR>) ]«
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-03-01 # WERTRÄGER PLAZIERUNG
- SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEH-WERTRÄGER-POIAN-ENDE
+ ABSK = AKTU-START-POIU-START-BOXH-<ELEMENT>-FEEH-WERTRÄGER-POIAN-ENDE
 BEDIENUNG:      »[ ± <WERT> ±       ]
     START:      »[ ± <WERT> ±       ]
 #### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06-03-02 # ZAHLTRÄGER PLAZIERUNG
- SCHALTKETTE:  AKTU-START-POIU-START-BOXH-<ELEMENT>-<NR>-FEEH-WERTRÄGER-FEEH-ZAHLTRÄGER-POIAN-ENDE
+ ABSK = AKTU-START-POIU-START-BOXH-<ELEMENT>-<NR>-FEEH-WERTRÄGER-FEEH-ZAHLTRÄGER-POIAN-ENDE
 BEDIENUNG:      »[ ± <WERT> ±(<NR>) ]
     START:      »[ ± <WERT> ±(<NR>) ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 07    # RETRON 
+ # RETRON REGULIERT/PRIORISIERT DIE AUSLASTUNG 
+ # DIESE WERTEN TYPISCHERWEISE NACH DEM ERSTEN PROTEIN IM POIWERK ANGELEGT
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 07-01  # RETRON REGULAR
+ ABSK = POIWERK-RETK-RETH-REGULAR
+BEDINGUNG:  <REGULAR>
+    START:  Ŧ
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 07-01  # RETRON REGULAR
+ ABSK = POIWERK-RETK-RETH-REGULAR
+BEDINGUNG:  <REGULAR>
+    START:  Ŧ
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 08 # VATRON 
+ SCHALTKETTE:  VATK-VATH-VALIDA
+BEDINGUNG:  ©
+    START:  ©
 
 
 
@@ -446,16 +467,7 @@ MODULATOR ® MODUL 07-05 # BIOLIVE AUTHENTIFIKATION
  SCHALTKETTE: IDK-IDH-IDU-DNA-BIOLIVE-IDAN-ENDE
 BEDINGUNG: þþþþ<LIVE-DATA-FEED> 
     START: þþþþ<LIVE-DATA-FEED>
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 08 # RETRON 
- SCHALTKETTE:  RETK-RETH-REGULAR
-BEDINGUNG:  Ŧ
-    START:  Ŧ
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 08 # VATRON 
- SCHALTKETTE:  VATK-VATH-VALIDA
-BEDINGUNG:  ©
-    START:  ©
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

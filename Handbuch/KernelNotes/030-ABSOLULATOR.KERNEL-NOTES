@@ -273,7 +273,7 @@ BEDINGUNG: <POIWERK-NAVK>-<NAVU-DIRIGENT-ADRESSIERUNG>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07-03 # QUELLEN LANGZEITSPEICHERREFERENZEINRASTPUNKT
  ABSK = POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVK-NAVH-PYLOVARA-NAVU-LANGZEITSPEICHER-NAME
-BEDINGUNG: <POIWERK-NAVK>-<NAVU-LANGZEITSPEICHER-NAME>
+BEDINGUNG: <LANGZEITSPEICHER-NAME>
     START: Ð <NAME>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07-04 # SETZT BSK KETTEN KNOTENPUNKT VERKNÜPFUNG
@@ -283,31 +283,30 @@ BEDINGUNG: <KNOTENPUNKT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07-05 # ZEIGT INFO-ID INFORMATIONEN
  ABSK = POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVK-NAVU-INFORMATION
-BEDINGUNG: <POIWERK-NAVK>-<NAVU-INFORMATION>
+BEDINGUNG: <INFORMATION>
     START: ¡
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07-05 # KOMMENTARSPALTEN DEKLARATION
  ABSK = NAVK-NAVH-PYLOVARA-NAVU-KOMMENTAR
 BEDINGUNG: <KOMMENTAR>
     START: #
-
-#MODULATOR ® MODUL 0x-0x # WERTANGABE WERTKLASSE
-#MODULATOR ® MODUL 0x-0x # NUMMERANGABE NUMMERKLASSE
-#MODULATOR ® MODUL 0x-0x # VERKNÜPFUNG LINKKLASSE
-
-
-
-
-
-
-
-#############
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 07-06 # ABGLEICHSANKER FÜR SCHATTENIDENTITÄT ZUR AUTH
+ ABSK = NAVK-NAVH-PYLOVARA-NAVU-SCHATTENIDENTITÄT
+BEDINGUNG: <SCHATTENIDENTITÄT>
+    START: <SID>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
 MODULATOR ® MODUL 04 # AKTIONSDRAHT-ABSCHLUSS IMPULS FÜR PROTEINE
  SCHALTKETTE:  POIAN-ENDE-AKTK-AKTAN-ENDE
-BEDINGUNG:                ]
-    START:                 «
+BEDINGUNG: <POIK>-<AKTK>
+    START: ]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05 # ARGUMENT-ZUGANG
  SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
@@ -434,6 +433,11 @@ MODULATOR ® MODUL 09-04 # MCORE-GENETIK (MODUL-SYNTHESE)
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+######################################################
+#MODULATOR ® MODUL 0x-0x # WERTANGABE WERTKLASSE     #
+#MODULATOR ® MODUL 0x-0x # NUMMERANGABE NUMMERKLASSE #
+#MODULATOR ® MODUL 0x-0x # VERKNÜPFUNG LINKKLASSE    #
+######################################################
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK = NOCH LEER
  # VBSK = NOCH LEER

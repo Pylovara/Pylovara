@@ -296,14 +296,6 @@ MODULATOR ® MODUL 07-06 # ABGLEICHSANKER FÜR SCHATTENIDENTITÄT ZUR AUTH
 BEDINGUNG: <SCHATTENIDENTITÄT>
     START: <SID>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-
-
-
-
-
 MODULATOR ® MODUL 08    # ARGUMENTE
  # ZUSÄTZLICHE AKTIONSDRAHT EINDPUNKT EINRAST ARGUMENT FUNKTION
  # SORGT ZEITLICHE ODER BESTÄTIGENDE AUFGABEN VON PROTEIN 
@@ -314,21 +306,53 @@ BEDINGUNG: <POIE>-<AKTE>
     START: ]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05 # ARGUMENT-ZUGANG
- SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
-BEDINGUNG:                  ««
-    START:                  ««
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
+BEDINGUNG: <POIE>-<AKTE>-<ARGO>
+    START: ]«««
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05-01 # DAUERSCHLEIFE
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGAN-LOOP
+BEDINGUNG: <POIE>-<AKTE>-<ARGH-OPTION>-<ARGAN-LOOP>
+    START: ]«««Ω
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05-02 # BEENDET NACH EINMALIGER AUSFÜHRUNG EXPLIZIT
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGAN-EXIT
+BEDINGUNG: <POIE>-<AKTE>-<ARGH-OPTION>-<ARGAN-EXIT>
+    START: ]«««E
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05-03 # FRÄGT NACH ADMIN ZUSTIMMUNG
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGAN-BESTÄTIGUNG
+BEDINGUNG: <POIE>-<AKTE>-<ARGH-OPTION>-<ARGAN-BESTÄTIGUNG>
+    START: ]«««B
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05-04 # LÖSCHT NACH AUSFÜHRUNG SOFORT
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGAN-REGEL-DER-REINHEIT
+BEDINGUNG: <POIE>-<AKTE>-<ARGH-OPTION>-<ARGAN-REGEL-DER-REINHEIT>
+    START: ]«««ſ
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
 MODULATOR ® MODUL 05-01 # ARGUMENT-DIREKT OPERATION
- SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGH-ARGWERT-<ARGUMENT>
-BEDINGUNG:                  ««<ARGUMENT>
-    START:                  ««B
-    START:                  ««E
-    START:                  ««N
-    START:                  ««S
-    START:                  ««T
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGAN-LOOP
+BEDINGUNG: <POIE>-<AKTE>-<ARGH-OPTION>-<ARGAN-LOOP>
+    START: ]«««Ω
+
+MODULATOR ® MODUL 05-01 # ARGUMENT-DIREKT OPERATION
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGAN-LOOP
+BEDINGUNG: <POIE>-<AKTE>-<ARGH-OPTION>-<ARGAN-LOOP>
+    START: ]«««Ω
+
+    START: ««B
+    START: ««E
+    START: ««N
+    START: ««S
+    START: ««T
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05-01-01 # ARGUMENT-DIREKT-ANKER 
- SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGH-ARGWERT-<ARGUMENT>-<WERT>
+ ABSK = AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGAN-LOOP-ARGWERT-WERT
 BEDINGUNG:                  ««<ARGUMENT><WERT>
     START:                  ««N<WERT>
     START:                  ««S<WERT>

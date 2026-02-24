@@ -443,49 +443,54 @@ MODULATOR ® MODUL 08 # VATRON
  # REGELT ID NUMMER ZERTIFIKATE VOM ERNEUERUNGSZUGRIFFSPUNKT
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 08-01 # VATRON VALIDA
- SCHALTKETTE:  VATK-VATH-VALIDA
+ ABSK = VATK-VATH-VALIDA
 BEDINGUNG:  <VALIDA>
     START:  ©
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-
-
-
-MODULATOR ® MODUL 07 # TRANSAKTIONSRAHMEN ID VALIDIERUNG IM DATEITYPE
- SCHALTKETTE: IDK-IDH-IDU-DNA-TRANSAKTIONSRAHMEN-IDAN-ENDE 
-BEDINGUNG: þ
+MODULATOR ® MODUL 09    # IDENTIFIKATION 
+ # REGELT GÜLTIGKEIT DER IDENTIFIKATION DER PROGRAMM ZUGRIFFE 
+ # REGELT KONTEN ID FÜR DIE SCHATTENIDENTITÄT (SID)
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-01 # TRANSAKTIONSRAHMEN ID VALIDIERUNG IM DATEITYPE
+ ABSK = IDK-IDH-IDU-DNA-TRANSAKTIONSRAHMEN-IDAN-ENDE 
+BEDINGUNG: <TRANSAKTIONSRAHMEN>
     START: þ<SID>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 07-01 # BASIS-ID / DIENST 
- SCHALTKETTE: IDK-IDH-IDU-DNA-DIENST-IDAN-ENDE 
-BEDINGUNG: þþ 
+MODULATOR ® MODUL 09-02 # BASIS-ID / DIENST 
+ ABSK = IDK-IDH-IDU-DNA-DIENST-IDAN-ENDE 
+BEDINGUNG: <DIENST> 
     START: þþ<SID>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 07-02 # FIRMEN KENNUNG 
- SCHALTKETTE: IDK-IDH-IDU-DNA-FIRMA-IDAN-ENDE 
-BEDINGUNG: þþþ
+MODULATOR ® MODUL 09-02 # FIRMEN KENNUNG 
+ ABSK = IDK-IDH-IDU-DNA-FIRMA-IDAN-ENDE 
+BEDINGUNG: <FIRMA>
     START: þþþ<SID>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 07-03 # INFASTRUKTUR 
- SCHALTKETTE: IDK-IDH-IDU-DNA-FIRMA-IDAN-ENDE 
-BEDINGUNG: þþþ
+MODULATOR ® MODUL 09-03 # INFASTRUKTUR 
+ ABSK = IDK-IDH-IDU-DNA-INFASTRUKTUR-IDAN-ENDE 
+BEDINGUNG: <INFASTRUKTUR>
     START: þþþ<SID>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 07-04 # BILDUNGSWESEN 
- SCHALTKETTE: IDK-IDH-IDU-DNA-BILDUNGSBEREICH-IDAN-ENDE
-BEDINGUNG: þþþ
+MODULATOR ® MODUL 09-04 # BILDUNGSWESEN 
+ ABSK = IDK-IDH-IDU-DNA-BILDUNGSBEREICH-IDAN-ENDE
+BEDINGUNG: <BILDUNGSBEREICH>
     START: þþþ<SID>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 07-05 # BIOLIVE AUTHENTIFIKATION 
- SCHALTKETTE: IDK-IDH-IDU-DNA-BIOLIVE-IDAN-ENDE
-BEDINGUNG: þþþþ<LIVE-DATA-FEED> 
+MODULATOR ® MODUL 09-05 # BIOLIVE AUTHENTIFIKATION 
+ ABSK = IDK-IDH-IDU-DNA-BIOLIVE-IDAN-ENDE
+BEDINGUNG: <BIOLIVE> 
     START: þþþþ<LIVE-DATA-FEED>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 09 # DATEITYPEN-GENETIK (AIMS-REFLEX-STEUERUNG)
 # DEFINIERT DIE AUTONOME AKTIVIERUNG VON HARDWARE-STRUKTUREN 

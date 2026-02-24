@@ -438,15 +438,15 @@ MODULATOR ® MODUL 07-01-03  # RETRON REGULAR STUFE DREI , HOCHLEISTUNG LEISTUNG
 BEDINGUNG:  <REGULAR>-<STUFE-DREI>
     START:  Ŧ³
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 08 # VATRON 
+ # REGELT DIE KONTROLLE DER ABSK KETTEN WÄREND DEM BETRIEB
+ # REGELT ID NUMMER ZERTIFIKATE VOM ERNEUERUNGSZUGRIFFSPUNKT
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 08-01 # VATRON VALIDA
  SCHALTKETTE:  VATK-VATH-VALIDA
-BEDINGUNG:  ©
+BEDINGUNG:  <VALIDA>
     START:  ©
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

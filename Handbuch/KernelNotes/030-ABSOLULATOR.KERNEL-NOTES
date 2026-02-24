@@ -4,6 +4,7 @@
  #      DER PYLOVARA BAUSTEINSCHALTUNGSKREISLAUF = BSK              #
  #      DER ABSOLUTEBAUSTEINSCHALTUNGSKREISLAUF  = ABSK             #
  #   DEVONOTE = DAS WIRD EIN VOLLWERTIGES SCHALTREGISTERKERN        #
+ # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1 (META-EBENE)     #
 ### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###                                                      #
  # PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT> #
 ### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
@@ -492,6 +493,7 @@ BEDINGUNG: <BIOLIVE>
 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 09 # DATEITYPEN-GENETIK (AIMS-REFLEX-STEUERUNG)
 # DEFINIERT DIE AUTONOME AKTIVIERUNG VON HARDWARE-STRUKTUREN 
 # BASIEREND AUF DEM DATEITYP-ERKENNUNGS-MUSTER.
@@ -521,13 +523,15 @@ MODULATOR ® MODUL 09-04 # MCORE-GENETIK (MODUL-SYNTHESE)
  INFO:       ERZEUGT DIE SYNCHRONISATION ZWISCHEN ABSOLULATOR UND MODULATOR
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 ######################################################
 #MODULATOR ® MODUL 0x-0x # WERTANGABE WERTKLASSE     #
 #MODULATOR ® MODUL 0x-0x # NUMMERANGABE NUMMERKLASSE #
 #MODULATOR ® MODUL 0x-0x # VERKNÜPFUNG LINKKLASSE    #
 ######################################################
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK = NOCH LEER
  # VBSK = NOCH LEER

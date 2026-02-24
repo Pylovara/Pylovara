@@ -4,6 +4,33 @@ info-id: ABSOLULATOR-DEV
 #====================================================================#
 
  ABSOLUTER BAUSTEINSCHALTUNGSKREISLAUF = ABSK
+ Schaltarchitektur-Definition :
+ - feste Start-/Endanker
+ - deterministische Start-Trigger
+ - klar getrennte Modulklassen
+ - vollständige ABSK-Ketten
+ - Argument-Postfix-System
+ - Priorisierung (RETRON)
+ - Validierung (VATRON)
+ - Identitätslayer
+ - Container-Spaltung
+ - Feed-System (Sync-Logik) 
+
+ Fehlendes Element :
+ - DATEITYPEN
+ - bindung an maschinencode
+
+ der absolulator ist momentan eine art 
+ deterministische Micro-Operation-Engine
+ 
+ der MODULATOR wird das binde glied
+
+ das heißt mir fehlen noch 
+ Bitencoding
+ Registerdefinition # wobei .....
+ Speicherarchitektur # beiläufig
+ Interruptmodell # neu definieren
+ Pipeline-Definition 
 
 #====================================================================#
 @info-id: ABSOLULATOR

@@ -418,10 +418,25 @@ MODULATOR ® MODUL 07-01  # RETRON REGULAR
 BEDINGUNG:  <REGULAR>
     START:  Ŧ
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 07-01  # RETRON REGULAR
- ABSK = POIWERK-RETK-RETH-REGULAR
-BEDINGUNG:  <REGULAR>
-    START:  Ŧ
+MODULATOR ® MODUL 07-01-01  # RETRON REGULAR STUFE NULL , LEERLAUF/NACHRÜCKEND
+ ABSK = POIWERK-RETK-RETH-REGULAR-RETU-STUFE-NULL
+BEDINGUNG:  <REGULAR>-<STUFE-NULL>
+    START:  Ŧ°
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 07-01-02  # RETRON REGULAR STUFE EINS , WENIGER LEISTUNG
+ ABSK = POIWERK-RETK-RETH-REGULAR-RETU-STUFE-EINS
+BEDINGUNG:  <REGULAR>-<STUFE-EINS>
+    START:  Ŧ¹
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 07-01-03  # RETRON REGULAR STUFE ZWEI , NORMALE LEISTUNG
+ ABSK = POIWERK-RETK-RETH-REGULAR-RETU-STUFE-ZWEI
+BEDINGUNG:  <REGULAR>-<STUFE-ZWEI>
+    START:  Ŧ²
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 07-01-03  # RETRON REGULAR STUFE DREI , HOCHLEISTUNG LEISTUNG
+ ABSK = POIWERK-RETK-RETH-REGULAR-RETU-STUFE-DREI
+BEDINGUNG:  <REGULAR>-<STUFE-DREI>
+    START:  Ŧ³
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 

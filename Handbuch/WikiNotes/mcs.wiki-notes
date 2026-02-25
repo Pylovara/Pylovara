@@ -1,0 +1,651 @@
+#############################################################
+@wiki-nr: 07     ############################################
+#############################################################
+
+ MCS-Beispiel 01 – 
+ „Steam Launcher mit Display-Logik und Fehlerprotokoll“
+
+ Ziel :
+ Ein Programm (hier: **Steam**) wird gestartet.
+ Dabei wird geprüft, ob ein Display im System (`eDip1`) 
+ im Vollbildmodus bereitsteht.
+ Wenn nicht → Fehlerbehandlung und Protokoll.
+
+ MCS-Code:
+ ```mcs
+ ¢| steam * exec
+   »['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«
+   ¶ »['eDip1'|fullscreen]«
+   ¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«
+ |¢
+ ```
+#############################################################
+ Erklärung 
+
+ `¢| steam * exec`
+
+ * `¢|`: Start einer MCS-Sektion (Container).
+ * `steam`: Logischer Name der Operation.
+* `* exec`: Operationstyp → hier ein **ausführbarer Prozess** (exec).
+
+> → Signal: Starte ein logisches Modul namens „steam“, 
+            das etwas *ausführen* soll.
+
+`»['exec'|{pfad|/usr/lib/steam/steam}|"$Q"]«`
+
+* `»['exec'|...]«`: Hauptruf – startet den eigentlichen Prozess.
+* `{pfad|...}`: Angabe des Speicherorts.
+* `"$Q"`: Placeholder für spätere Übergabeparameter oder leere Übergabe.
+
+> → Führt den Steam-Binary aus. `$Q` steht für optionalen, 
+    zur Laufzeit übergebbaren Input.
+
+`¶ »['eDip1'|fullscreen]«`
+
+* `¶`: **IF-Bedingung** – hier wird etwas geprüft.
+* `»['eDip1'|fullscreen]«`: Teste, ob das Display-Modul `eDip1` 
+    im fullscreen-Modus verfügbar ist.
+
+> → Prüft, ob Steam im Vollbildmodus auf dem Display `eDip1` laufen kann.
+
+`¶¶ »['ſ'|{cash|reset}|{log|~/$User/SteamReportPylovara.notes}]«`
+
+* `¶¶`: ELSE-Zweig – wird nur ausgeführt, wenn die vorherige 
+*  `¶`  -Bedingung fehlschlägt.
+* `['ſ'|...]`: Aufruf des internen Service-Moduls `ſ` (z. B. „Systemflush“ oder „Systemlogik“).
+* `{cash|reset}`: Befehl, um einen Caching-Zustand zurückzusetzen.
+* `{log|~/$User/...}`: Pfad zur Protokolldatei für die Ausgabe.
+
+> → Falls kein Vollbild möglich: Reset-Caches und logge den Fehler.
+
+Struktur zusammengefasst
+| Symbol  | Bedeutung                        |     |                            |
+| ------- | -------------------------------- | --- | -------------------------- |
+| \`¢     | ...                              | ¢\` | Codeblock (Modulcontainer) |
+| `*`     | Art der Operation (exec, map...) |     |                            |
+| `»...«` | Ausführung / Prüfung / Logik     |     |                            |
+| `¶`     | IF-Zweig                         |     |                            |
+| `¶¶`    | ELSE-Zweig                       |     |                            |
+
+Modularer Nutzen
+- Erweiterbar: Weitere `¶`- oder `§`-Zweige möglich
+- Klarer Fehlerpfad: Saubere Trennung von Logik + Recovery
+- Maschinennah: Keine Runtime-Parser-Logik nötig
+- Einprägsam: Fast wie ein Mini-Assembler mit Klartext
+
+Vergleich: Klassischer Python-Startpunkt vs. MCS-Mapping
+
+Python-Originalcode:
+
+```python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from speculum.main import main
+
+if __name__ == "__main__":
+    sys.argv[0] = re.sub(r"(-script\.pyw|\.exe)?$", "", sys.argv[0])
+    sys.exit(main())
+```
+
+*Dieser Code lädt `re`, `sys`, entfernt ggf. Windows/Script-Endungen und startet die `main()`-Routine der `speculum.main`-Datei.*
+
+
+MCS-Abbildung:
+
+```mcs
+¢| re sys * speculum.main
+    »['import'|re|sys]«
+    »['sys.argv'|0|$@argv0]«
+    ¶ »['regex.sub'|"-script\.pyw|\.exe)?$"|""|$@argv0|$@argv0]«
+    ¶ »['sys.exit'|main()]«
+|¢
+```
+
+Erklärung MCS-Logik:
+| Zeile              | Bedeutung                 |                                                      |                                  |
+| ------------------ | ------------------------- | ---------------------------------------------------- | -------------------------------- |
+| \`¢                | re sys \* speculum.main\` | Blockstart, nutzt `re`, `sys`, Ziel: `speculum.main` |                                  |
+| \`»\['import'      | re                        | sys]«\`                                              | lädt Module                      |
+| \`»\['sys.argv'    | 0                         | \$@argv0]«\`                                         | speichert `sys.argv[0]` temporär |
+| \`¶ »\['regex.sub' | "..."]«\`                 | entfernt Endungen wie `-script.pyw`, `.exe`          |                                  |
+| \`¶ »\['sys.exit'  | main()]«\`                | startet Main-Funktion & beendet Prozess              |                                  |
+
+
+Kommentar:
+Die MCS-Syntax bietet klare Modularität, lesbare semantische Blöcke 
+und eine trennbare Logikarchitektur, die sich später verschachteln, 
+ersetzen oder bedingt erweitern lässt – im Gegensatz zur linearen, 
+oft "unsichtbaren" Verkettung in Python.
+
+@wiki-nr: 07-02 #############################################
+
+## 🧬 MCS als Brücken-Kernel – Der universelle Prozesseinstieg
+
+Was ist MCS?
+> **MCS** steht für Machine Code Speech – ein universelles, 
+semantisches Steuersystem, das als Brückenkern (Bridge Kernel) 
+zwischen Mensch und Maschine agiert.
+Dabei ersetzt es klassische Shells, Skriptsprachen und sogar 
+Low-Level-Kontrollsysteme, indem es alle Anweisungen in 
+klar strukturierter, modularer Sprache ausdrückt – 
+die sogenannte MCS-Syntax.
+
+---
+
+Wieso „Brücken-Kernel“?
+* MCS dockt sich unterhalb der Shell an (wie ein Kernel-Sidecar).
+* Es kann direkt mit Systemprozessen kommunizieren, egal ob:
+
+  * 🐧 Linux (`/bin/sh`, `bash`, `dash`, `zsh`)
+  * 🍎 macOS (`zsh`, `osascript`, etc.)
+  * 🪟 Windows (`powershell`, `cmd`, `wsl`, etc.)
+
+---
+
+### 🧠 **Grundidee: Eine Sprache für alle Systeme**
+
+```mcs
+¢| bash powershell C * native
+  »['compile'|{codeblock}|{arch|x86_64}]«
+  ¶ »['run'|{pfad|/home/user/test.sh}]«
+  ¶¶ »['catch'|{log|~/errors.mcsnote}]«
+|¢
+```
+
+Diese Blockstruktur kann:
+* Ein Shell-Skript ausführen,
+* In C kompilieren,
+* Einen Fehler abfangen,
+* Und das mit einer Syntax – auf jedem OS.
+
+Beispiel: Starte ein universelles Setup
+
+```mcs
+¢| system * installer
+  »['scanOS'|{fallback|Linux}]«
+  ¶ »['if'|{OS|Windows}|»['use'|powershell]«]«
+  ¶ »['if'|{OS|Linux}|»['use'|bash]«]«
+  ¶¶ »['exec'|{pfad|~/Pylovara/start-node.sh}]«
+|¢
+```
+
+Ergebnis:
+* Prüft automatisch das Betriebssystem
+* Lädt den passenden Interpreter
+* Startet den Einstiegspunkt in Pylovara
+
+Das macht MCS besonders:
+| Merkmal              | Nutzen                                                          |
+| -------------------- | --------------------------------------------------------------- |
+| 🧩 Modular           | Jeder Befehl kann einzeln ersetzt, geprüft, rekombiniert werden |
+| 🧠 Lesbar            | Auch für Einsteiger verständlich                                |
+| 🧬 System-agnostisch | Mac, Linux, Windows – eine Sprache                              |
+| 🪢 Shell-frei        | Kein `#!/bin/bash` oder `.sh` nötig – MCS übernimmt             |
+| 🔐 Sicher            | Kein Wildwuchs durch unklare Skriptpfade oder Abhängigkeiten    |
+
+Wie funktioniert das technisch?
+> MCS läuft **innerhalb Pylovara** als Subsystem, aber behandelt Shells wie Treiber.
+> Es nutzt Parser und Wrapper, um Systemcalls umzuleiten. Das heißt:
+>
+> `run` in MCS ≠ direktes `execve`, sondern eine abstrahierte, kontrollierte Weitergabe
+> MCS kann Fehler isoliert loggen oder Weiterleitungen dynamisch umbauen
+> Jeder Block ist serialisierbar, prüfbar, wiederverwendbar
+
+
+Integration ins System:
+> Sobald MCS installiert ist (z. B. `/usr/lib/pylovara/mcs.bridge`), 
+  kannst du deine Shell ignorieren – oder 
+  MCS als dein neues Interface verwenden:
+
+```bash
+mcs run /etc/init.d/networking restart
+```
+
+… wird automatisch durch den passenden Interpreter geroutet und verarbeitet.
+
+
+Beispiel : MCS-Startsequenz sieht dann so aus wie:
+
+```mcs
+¢| init * bootloader
+  »['check'|{user|root}]«
+  ¶ »['load'|{module|network.core}]«
+  ¶ »['ping'|8.8.8.8|timeout=5]«
+  ¶¶ »['log'|{result|~/bootinit.log}]«
+|¢
+```
+####################################################################
+
+¢| |¢ Transaktionen  :
+
+Sorgen für die InputSendung aller arten und sind Sende und Empfang
+in gebündelten Packete , ohne Transaktion läuft
+keine Mitteilung oder Wird Empfangen ,
+hier bei ist es egal ob das anfang wie ende der transaktion in einer
+eigenen zeile stehen oder in der selben .
+
+¢|  TransAktion Anfang/Vorgang/Start der Bedingung/bedingten Blocks
+|¢  TransAktion Ende/Vorgang/Ende der Bedingung/bedingten Blocks
+
+####################################################################
+
+» « Aktionen :
+
+Aktionen Werden als aktive Proteine/Proton/Wrap oder Ergebnisse
+weitergegeben , wohingegend Proteine/Proton/Wrap ohne Aktionen
+Unverarbeitete Transaktionen sind die noch vollständig
+unverarbeitet verarbeitet werden können und somit gekennzeichnet
+als empfangene daten . Diese wiederum Können verknüpft werden
+durch Locale oder Externe Ziel Pfade $Diregent oder §ZielReferenz
+
+»  Start einer Aktion/eines Zweiges/Proteine/Proton/Wrap
+«  Ende einer Aktion/eines Zweiges/Proteine/Proton/Wrap
+
+###############################################################
+
+«« Argumente :
+
+Argumente sind Essenzielle Berechnungsweitergaben die in Prozent
+wie mal oder geteilt , plus minus den wert mitgeben können , sie
+dienen als weitergabe für berechnungen oder angaben , je nach dem
+ob Aktionen mit gegeben werden . Aktionen werden als Rechenwert
+oder angabe verstanden ;
+
+· + : % Zusätzliche Rechen weitergaben(Aktionen)(mit oder ohne Wert)
+
+««-      Minus
+««+      Plus
+««·      Mal
+««:      Geteilt
+««%      Prozentbezogene Rechnung, z. B. für Anteile
+««%50   „Gib 50 % von X weiter“
+««%-     kann kombiniert werden , geteilt durch minus usw
+
+Wird typischerweise am Proteinpacket angehangen b.s ;
+
+¢| »['Lüfter'|{Watt|200}|««%50]« = §MotorA |¢
+
+####################################################################
+
+| Trennbefehle :
+
+Trennbefehle sollen innerhalb eine der Proteine/Protone/Warps die
+Operatoren/Argumente/Feed sauber Trennen wobei Operatoren/Argumente/
+Feeds immer vor eines DatenSatzen kommen , um von Links nach rechts
+gelesen eine saubere Struktur zu gewehrleisten. Trennbefehle können
+mehrfach innerhalb eines Proteine/Protone/Warps für Aufträge mit
+Operatoren/Argumente/Feed sorgen
+
+
+####################################################################
+
+§ Zielreferenzen :
+
+Innere Zielreferenz die angesteuert werden sollen , egal ob
+Hardware oder Programme .
+
+/ $Prozess-ID
+/ $Hardware-Slot
+/ $Gerätepfad (in RAM, Dev, CPU-Bereich)
+/ $OrdnerPfad (zur Ausführbaren oder Laufenden Verknüpfung)
+/ $Compositoren
+/ $Compiler
+
+####################################################################
+
+$ Dirigent :
+
+Externe Übergabe
+
+/ §lokale API
+/ §Kernelpfad
+/ §Netzwerk
+/ §InternetAdresse
+/ §Email (Direkte Sendung z.b)
+/ §Imei (Geräate Upadets z.b)
+/ §BuildNr (Software Updates z.b)
+
+usw , die möglichkeiten sind quasi unbegrenzt
+
+####################################################################
+
+þ Checksume :
+
+Checksumen werden dazu verwendet Protein / Proton / Warps etc.
+innerhalb der Transaktion zu Nummerieren bzw eine eindeutige
+nummer zuzuweisen , die auch buchstaben und sonderzeichen erfasst
+für erhöhte sicherheits individualitäten ...
+
+Diese þ Checksumen werden Speziell bei Warp transporte dazu
+verwendet das sie fest ab dem punkt wo sie aus der MCS Syntax
+herausgleiten und die nächste Transaktion zurück gesendet wird
+um sie wieder dann heraus zu schicken , mit der selben checksume
+ausgestattet um kollisionen zu vermeiden und die eigenheiten der
+jeweiligen hardware devices in ihrem takt mühelos zuweisen zu können
+und dabei blind checksumen ohne weiteres zurücksenden oder ausgeben
+kann , jede checksume kann dann mit Visuellen , sound oder
+eingaben prozessen wie monitoring etc , mühelos in ein daten packet
+geschnürt werden , wo einzelne
+¢|Transaktionen|¢ per þ combiniert dann einen datensatz von mehreren
+schichten ergeben können ...
+
+beispiel  :
+
+¢| »["Hallo"|'echo']«
+{Wait-s|3}
+ømisc {
+  swallow_regex = ^(kitty)$
+  term = kitty
+  open = kitty
+}ø  = §kitty þ1623512
+|¢
+
+####################################################################
+
+[ ] Proteine :
+
+Proteine können mehrere Aspekte abdecken in dem sie sogenannte
+Operatoren mit geben die innerhalb einer Trennung vorhanden sind :
+
+""     Print , zeigt alles darin als ausgabe an
+''     Commando , Wird als Anweisung verstanden
+¨¨     Blanker Nenner , Das ist , Richtig , abgleich
+Einfache eingaben ohne etwas
+
+Sie werden in Print , Commando , Blanker Nenner oder Einfach ohne
+irgendwas in den Protein Zelle als Operatoren mit gegeben ,
+was auch schluss endlich auch nur in Proteinpackete mit Operatoren
+Enden kann oder als Combination mit Proton(en) oder Warps .
+
+Beispiele :
+
+¢| »['echo'|"Hallo"]« = §/usr/bin/kitty |¢
+¢| »['echo'|"Hallo"]« = §kitty |¢
+¢| »['echo'|"Hallo"]« = §kitty $url://127.2.123.45:2345 Þ45637 |¢
+¢| »['echo'|"Hallo"]« øBash|...øWarp = §kitty Þ45637 |¢
+
+####################################################################
+
+{ } Proton(en) :
+
+Protonen können mit oder ohne Feed explizit weitergegeben werden
+und dienen für Hardware oder Feineren aufgaben die Proteine Ergänzen.
+
+Beispiel Protein ohne Proton ;
+¢| »["Hallo"|'echo']« = §5436 |¢
+Beispiel Protein mit Proton ohne Hardware Aufgaben;
+¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
+
+Ein Proton innerhalb eines Proteins kann daten aller Argument
+oder Wahrheiten mit in die nächste Verarbeitung oder
+Endverarbeitung geben oder führen .
+
+Beispiele der Proton packete ;
+
+{Band|Frequenz}{Amp|Zahl}{Watt|Zahl}{V|Spannung}{Temp|Zahl}
+{Pfad|Adresse}{Ip|Adresse}{Interface|wlan0}{Transport|Packet}
+{Cash|Größe}{Signed|Größe}{Unsigned|Größe}{Tracer|Zahl}
+{Wait|ms|120}{Wait|s|2}{Wait-m|1}
+
+Notiz :
+
+Müsste nur ein vollständiges register haben um die namens
+gebung zu definieren welches proton was trägt , kann
+beliebig erweitert werden und auch berechnet oder sogar
+später dem jeweiligen nutzer als eingabe software für die
+Configuration erstellt bzw geschrieben werden .
+
+####################################################################
+
+ø ø Warp : zusatzbeispiel wlan mit warp im anhang nr 01
+
+Ein Warp wird dafür verwendet um explizite language's aller art
+mit transportiert zu werden.Der Warp wird entweder als einzel
+Transaktion mit Zielreferenz oder Dirigenten verschickt als
+einzel Transaktionsauftrag Oder einer Protein Verarbeitungs Zelle
+beigefügt wenn es Performanter Transportiert werden kann , weil der
+warp die selben Elektronischen Nervenbahnen des Systems anspricht
+(Stichwort lastenverteilung)
+
+ein warp folgt der regel øLanguals|Codeø und kann außerhalb den
+selben effeckt wie die internet MCS sprache haben
+
+Gleicher Effeckt mit Verschiedenen Umsetzungen :
+
+/ Protein Pure
+
+¢| »["Hallo"|'echo']« = §5436 |¢
+
+/ Protein + Proton
+
+¢| »["Hallo"|'echo'|{Wait-s|3}]« = §5436 |¢
+
+/ ølanguage|Codeø Warp alleine für Compositoren/Compiler
+
+¢| øC|
+#include <stdio.h>
+
+int main() {
+printf("Hallo, Fenster!\n"); // Gibt "Hallo, Fenster!" auf der
+Konsole aus
+return 0; // Zeigt an, dass das Programm erfolgreich ausgeführt
+wurde
+}
+ø = $gcc |¢
+
+####################### Warp Anhang ################################
+####################################################################
+Anhang NR 01
+
+MCS-Transaktion mit Warp für C
+
+¢|                                      # Transaktion starten
+øC|                                     # Warp für C-Code
+#include <stdio.h>
+#include <iwlib.h>
+
+int main() {
+    wireless_config wconf;
+    int sock = iw_sockets_open();
+    if (iw_get_basic_config(sock, "wlan0", &wconf) < 0) {
+        return 1;
+    }
+    wconf.frequency = 2.4e9; // 2.4 GHz
+    if (iw_set_basic_config(sock, "wlan0", &wconf) < 0) {
+        return 1;
+    }
+    return 0;
+}
+ø = §gcc |              # Warp an Compiler (gcc) senden
+»[{Band|2.4G}§WLAN]«    # Protein: WLAN-Band auf 2.4G setzen
+= §(1)Displey           # Ergebnis(z. B. Erfolg/Fehler)an Display
+|¢                       # Transaktion beenden
+
+Interpretation:
+
+Der C-Code wird in einen Warp (øC|...ø) eingebettet und an
+§gcc gesendet, was bedeutet,dass MCS den Code kompiliert
+(oder interpretiert) und in Assembly-Binaries übersetzt.
+Das Protein [{Band|2.4G}§WLAN] ist die MCS-native Repräsentation
+der Aktion,die direkt die Hardware (WLAN-Interface) anspricht,
+vermutlich über ein Kernel-Modul (*.needle). Der Feed §(1)Displey
+gibt das Ergebnis (z. B. Erfolg oder Fehler) an ein Display weiter,
+wie in deinem Beispiel. MCS sendet die Symbolik ([{Band|2.4G}§WLAN])
+direkt an die Assembly,ohne Umrechnungsvariablen, was den Punkt
+über die direkte Assembly-Interaktion bestätigt.
+
+Vorschläge für die WLAN-Implementierung :
+
+¢|{Interface|wlan0}|{Action|set_band}|{Value|2.4G}|
+ø... C-Code ...ø
+ø = §gcc
+|¢
+Warp-Standardisierung: Definiert ein Standard-Format für C-Warps,
+Metadaten,die MCS mitteilen, welche :
+Zielreferenzen (§) oder Protonen ({}) angesprochen werden.
+
+####################################################################
+
+(Zahl) Feed
+
+Feeds sind Rück oder Angaben wohin welche Merge Forke oder Parallele
+Transaktion wie Prozess gehen soll und wo er wieder andocken soll
+
+Jeder Feed wird Mit einer Zahl oder einem Buchstaben belegt , wodurch
+er immer die selbe zahl im weitergehenden verarbeitungs prozess hat
+und dadurch seine andock station definiert ..
+
+Beispiel an einer Beispiel Transaktion ;
+
+Beispiel Code  Ohne Merge und Feed:
+
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}|««%50]« # Proteinpaket:MotorA,200W,12V mit %50
+= §Displey                              # der Werte an Display ausgeben
+¶=                                      # Paralleler Prozess
+»[{Temp|25}§SensorX]«                   # Temperatur von SensorX lesen
+««+10 = §Cooler                         # Temperatur +10 an Kühler senden
+;;                                      # Paralleler Transport ohne Eingabe
+»[{Band|2.4G}§WLAN]«                    # WLAN-Band auf 2.4G setzen
+|¢                                      # Transaktion beenden
+
+Interpretation: Dieser Code sendet Leistung/Volt an einen Motor,
+zeigt 50% der Werte auf einem Display, liest parallel die Temperatur
+eines Sensors, passt sie an und aktiviert einen Kühler, während
+das WLAN auf 2.4G gestellt wird. Das zeigt die Stärke von MCS
+in paralleler, systemnaher Steuerung.
+
+Beispiel mit Parallele und Feed (1);
+
+¢|                                      # Transaktion starten
+»['MotorA'|{Watt|200}|{Volt|12}|««%50]« # Proteinpaket:MotorA,200W,12V mit %50
+= §(1)Displey                           # der Werte an Display ausgeben
+¶=                                      # Paralleler Prozess
+»[{Temp|25}§SensorX]«                   # Temperatur von SensorX lesen
+««+10 = §Cooler                         # Temperatur +10 an Kühler senden
+;;                                      # Paralleler Transport ohne Eingabe
+»[{Band|2.4G}§WLAN]«                    # WLAN-Band auf 2.4G setzen
+=  §(1)                                 # Zielreferenz übernehmen
+|¢                                      # Transaktion beenden
+
+Hierbei diente Feed als Duplikator für den Visuellen Displeyoutput ,
+da feed immer mit der selben zahl , buchtstabe , code , symbole , im
+weiteren prozess oder Dirigent transaktionen sich gegenseitig findet ,
+wird immer das weitergegeben was gefeedet wurde , ganz gleich ob berechnet
+oder kalt hingeschrieben bzw programmiert .. so dient feed für viele zwecke
+außerhalb von ¶ ¶¶ ¶=;;⊕ usw ...
+
+####################################################################
+
+⊕ Sync-timer ;
+
+kann als erweiterter Paraleller Transport verstanden werden
+der dazudient :
+
+Laufende Prozesse die Fehlerhaft Arbeiten per Live Reperatur
+flexibel mit einem Sync-timer zu taggen und dadurch direkte
+Reperaturen oder Fineabstimmungen vorzunehmen .
+
+es dient dazu laufende takt geber also Runner selbst im Betrieb
+mit Laufenden Prozesse umzuschreiben und duzende *.*-synctimer
+anzulegen die essentiell anders takten und sich nathlos in den
+laufenden prozess als weiterführende transaktionsschleife ,
+um den prozess weiterführen oder verändern zu können , am laufen halten
+
+sync-timer symbole in einem bestehenden code dienen als Einspeisung's
+moment und *.*-logic daten dienen als datensatz der eingespeißt
+werden soll oder als wechsel schicht , die wiederum auch als
+cache gehalten werden können .....
+
+####################################################################
+
+Wahreiten :
+
+Wahrheiten weitergeben mit mehrfach Auswahl oder Transporte
+ermöglichen wären einem gui Fenster aufruf.Ermöglicht granulare
+paralell verarbeitungen wie hintergrund prozesse
+
+~~ für Merge von mehreren Packets kann per () granuliert werden das
+genau
+
+> > für Fork oder Splitting Links Nach Rechts
+<< für Fork oder Splitting Rechts Vor Links
+¶  IF
+¶¶ Else
+¶= Paralelle oder nebenprozesse die mit eingaben rücksprachen zu tun
+haben , besonders hilfreich bei Gui designe
+;; Für Paralell Transport , ohne eingabe aufforderung
+
+# bleibt traditionell kommentar
+
+=  gibt alles an § oder $ direkt als kennungswert mit
+
+Operatoren :
+
+Werden immer als Schlüssel element zuerst angegeben , wenn sie
+erfoderlich sind , gerade für Wahrheiten sehr Relevant
+
+Wenn/Kann
+°  WennNicht/Muss
+
+> WennKleiner/Kann/Soll
+<  WennGrößer/Kann/Soll
+!  WennEindeutig/Sofort
+…  WennFehler/Kann/Sicherheit
+^  TransaktionsFehler/Debugg
+ſ  DatenReste/Löschung
+
+####################################################################
+
+Reihenfolge wenn das angesprochene System oder Browser die daten
+für eine reibungslose Übersetzung benötigt ist : 3
+
+1. Transaktion Anfang
+2. Protein (das Proton mitliefern kann)
+3. Proton (das eigenständig hardware ansprechen kann)
+4. Warp (das für die übersetzung für Performenstechnische aspekte
+direkt in die jeweiligen compositor bzw Compiler eingespeißt wird)
+5. = Kennungswert
+6. Zielreferenz oder Dirigent
+7. Transaktion Ende
+
+####################################################################
+
+SICHERHEITS Checks Laufen dann Grundsätzlich über MCS
+
+¢|                                      # Transaktion starten
+»[{Band|2.4G}§WLAN]«                   # Protein: WLAN-Band auf 2.4G setzen
+°WennNicht[{Band|2.4G}|{Valid|2.4G,5G}] # Sicherheitscheck: Nur 2.4G/5G erlaubt
+^TransaktionsFehler                    # Fehler bei ungültigem Band
+= §(1)Displey                          # Ergebnis an Display
+¶=                                     # Paralleler Prozess
+øC|                                    # Warp: C-Code für detaillierte Steuerung
+#include <iwlib.h>
+int main() {
+    wireless_config wconf;
+    int sock = iw_sockets_open();
+    wconf.frequency = 2.4e9;
+    iw_set_basic_config(sock, "wlan0", &wconf);
+    return 0;
+}
+ø = §gcc                               # Warp an gcc senden
+= §(1)                                 # Feed zurück an Display
+|¢                                      # Transaktion beenden
+Erklärung:
+
+Der Sicherheitscheck (°WennNicht) prüft, ob Band|2.4G gültig ist,
+und löst bei Fehler einen ^TransaktionsFehler aus.
+Der C-Warp wird kompiliert und in Assembly übersetzt,
+während das Protein [{Band|2.4G}§WLAN] direkt die Hardware anspricht.
+Der Feed §(1) synchronisiert Display-Ausgabe zwischen Protein und Warp.
+
+
+####################################################################
+####################### ENDE VON MCS ###############################
+####################################################################
+####################################################################
+
+
+

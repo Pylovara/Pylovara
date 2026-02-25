@@ -1,0 +1,51 @@
+/* Pylovara Basic Waybar Style (PoC) v0.1 */
+/* Quelle : /Pylovara/Setup/MCS-Hyprland-Dotfiles/waybar/style.css */
+* {
+    border: none;
+    font-family: Fira Code, monospace;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(26, 26, 26, 0.8);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* MCS Status Module Style */
+#custom-pylovara-status {
+padding: 0 10px;
+border-radius: 0;
+margin: 0;
+transition: all 0.2s ease-in-out;
+}
+
+#custom-pylovara-status.mcs-active {
+background-color: #38b488; /* Pylovara Green: Aktivitäts-Status */
+color: #000000;
+}
+
+#custom-pylovara-status.mcs-inactive {
+background-color: #e67474; /* Error Red: Kritischer Fehler */
+color: #ffffff;
+}
+
+/* Workspaces */
+#workspaces button {
+padding: 0 5px;
+background-color: transparent;
+color: #ffffff;
+border-bottom: 2px solid transparent;
+}
+#workspaces button.active {
+color: #38b488;
+border-bottom: 2px solid #38b488;
+}
+
+/* Clock */
+#clock {
+padding: 0 10px;
+background-color: #2e3440;
+}

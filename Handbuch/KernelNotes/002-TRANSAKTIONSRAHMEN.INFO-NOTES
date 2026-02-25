@@ -1,0 +1,41 @@
+ 002-TRANSAKTIONSRAHMEN-INFO-NOTES 
+#====================================================================#
+@info-id: TRANSAKTIONSRAHMEN-DEV
+#====================================================================#
+
+ DIESER BEREICH IST LEER
+
+#====================================================================#
+@info-id: TRANSAKTIONSRAHMEN
+#====================================================================#
+
+ ERKLÄRUNG TRANSAKTIONSRAHMEN =
+
+ DIE TRANSAKTIONSRAHMEN MCS-RUNTIMEBEDIENUNG SORGEN FÜR DEN
+ PROZESSRAHMEN UND LÖSEN DIE BEDIENUNG AUS, DAS AUSFÜHRBARE
+ ODER UNAUSFÜHRBARE PROTEIN/E GELESEN WERDEN DÜRFEN.
+
+ SIE SIND IM RAHMEN MUSTER MIT ZWEI SYMBOLEN DEKLARIERT UND
+ UND BESTIMMEN DEN VERARBEITUNGSRAHMEN.
+
+ SYMBOLIK IN WORTEN =
+
+ CENT-ZEICHEN AUSRUFEZEICHEN INHALT AUSRUFEZEICHEN CENT-ZEICHEN
+
+ SYMBOLRAHMEN UNTERSCHIEDE IN WORTEN =
+
+ CENT-ZEICHEN AUSRUFEZEICHEN = TRANSAKTIONSRAHMEN-STARTPUNKT
+
+ AUSRUFEZEICHEN CENT-ZEICHEN = TRANSAKTIONSRAHMEN-ENDPUNKT
+
+#====================================================================#
+
+  MUSTERBEISPIELE =
+
+ ¢! # TRANSAKTIONSRAHMEN-STARTPUNKT
+   
+   INHALT
+
+ !¢ # TRANSAKTIONSRAHMEN-ENDPUNKT
+
+#====================================================================#

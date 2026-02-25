@@ -1,0 +1,296 @@
+@kernel-nr: 09 # REX | STATUS = DEV LEVEL ROLLING-RELEASE 
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ### STARTPUNKT REX  ### === # == ##### === ###
+
+NAME Ð REX
+
+ INFO-ID § REX
+
+MASTER § MASU-REX
+
+ BEGRIFFSDEFINITION = FLUSS-GATTER | SCHALTUNGS-LOGIK | OPERATIONSREFLEX
+
+ FUNKTION = PARALLELE ENTSCHEIDUNGSSTRUKTUR
+
+ AUSFÜHRUNGSART = LISTENORIENTIERTE
+                  GATTER-STEUERUNG
+
+ GÜLTIGKEITSBEREICH = SYSTEMWEIT
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-KERNKLASSE § REXK
+
+ INFO = INITIALISIERT REX
+
+ INFO-ID § REX
+
+ FUNKTION = SCHALTUNGS-AUSLÖSER
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-HAUPTKLASSE § REXH-SPACECREATOR
+
+ INFO = INITIALISIERT REX KLASSE-AUSLÖSER
+
+ INFO-ID § REX-SPACECREATOR
+
+ FUNKTION = SCHALTUNGS-AUSLÖSER
+
+SYMBOLISCHE-DEKLARATION § ¬
+
+ SYMBOL IN WORTEN = NEGATIONSZEICHEN
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE § REXU-WORKSPACE-1
+
+ INFO = AKTIVIERT ERSTEN MAIN WORKSPACE  
+
+ INFO-ID § REX-SPACECREATOR-WORKSPACE
+
+ FUNKTION = ERSTER AUSGANG (PRIMÄRER PFAD)
+
+SYMBOLISCHE-DEKLARATION § ·
+
+ SYMBOL IN WORTEN = MITTELPUNKT
+
+ BEISPIEL:
+ »[× 1 + 1 ×]
+  ¬· »['sudo pacman -Syyu']«
+  ¬· »[,reboot,]«««ſ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE § REXU-WORKSPACE-2
+
+ INFO = AKTIVIERT ZWEITEN WORKSPACE
+
+ INFO-ID § REX-SPACECREATOR-WORKSPACE
+
+ FUNKTION = ZWEITER AUSGANG (ALTERNATIVER PFAD)
+
+SYMBOLISCHE-DEKLARATION § ··
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE § REXU-WORKSPACE-3
+
+ INFO = AKTIVIERT DRITTEN WORKSPACE
+
+ INFO-ID § REX-SPACECREATOR-WORKSPACE
+
+ FUNKTION = DRITTER AUSGANG (ZUSÄTZLICHER PFAD)
+
+SYMBOLISCHE-DEKLARATION § ···
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE § REXU-WORKSPACE-4
+
+ INFO = AKTIVIERT VIERTEN WORKSPACE
+
+ INFO-ID § REX-SPACECREATOR-WORKSPACE
+
+ FUNKTION = VIERTER AUSGANG (ERWEITERTER PFAD)
+
+SYMBOLISCHE-DEKLARATION § ····
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT MITTELPUNKT
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE § REXU-WORKSPACE-5
+
+ INFO = AKTIVIERT FÜNFTER WORKSPACE
+
+ INFO-ID § REX-SPACECREATOR-WORKSPACE
+
+ FUNKTION = FÜNFTER AUSGANG (MAXIMALER PFAD)
+
+SYMBOLISCHE-DEKLARATION § ·····
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT MITTELPUNKT MITTELPUNKT 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE § REXU-WORKSPACE-6
+
+ INFO = AKTIVIERT SECHSTEN WORKSPACE
+
+ INFO-ID § REX-AUSLÖSER-WORKSPACE
+
+ FUNKTION = FÜNFTER AUSGANG (MAXIMALER PFAD)
+
+SYMBOLISCHE-DEKLARATION § ·····
+
+ SYMBOL IN WORTEN = MITTELPUNKT MITTELPUNKT MITTELPUNKT MITTELPUNKT MITTELPUNKT 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE-OPTIONSKLASSE § REXO-KORDI
+
+ INFO = INITIALISIERT NACH OPTIONSKLASSE DEN KORDINATOR KORDI
+
+ INFO-ID § REX-AUSLÖSER-OPTIONSKLASSE-KORDI
+
+ FUNKTION = SCHALTUNGS-AUSLÖSER
+
+SYMBOLISCHE-DEKLARATION § ¤
+
+ SYMBOL IN WORTEN = GENERISCHES WAEHRUNGSZEICHEN
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE-KORDI-ANKERKLASSE § REXAN-AUSWERTUNG
+
+ INFO = INITIALISIERT NACH WORKSPACE AUSWAHL DIE OPTIONEN
+        HOLT DAS ERGEBNIS DER ALU ZURÜCK IN DEN AUSGEWÄHLTEN 
+        WORKSPACE 
+
+ INFO-ID = REX-AUSLÖSER-OPTIONEN
+
+ FUNKTION = ALU-RECHNER AUSWERTUNG | RÜCKANTWORT | RÜCKSENDUNG
+
+SYMBOLISCHE-DEKLARATION § =
+
+ SYMBOL IN WORTEN = ISTGLEICHZEICHEN
+
+ BEISPIELE =
+
+ ¬· »[× 1 + 1 ×]
+     ¬·¤= ['echo (1)±2±']«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE-KORDI-ANKERKLASSE § REXAN-PROZESS
+
+ INFO = ZEIGT DIE BOXI PROZESSE WAS GERADE VERARBEITET WIRD ODER HOLT SUDO PASSORT
+        UND DARF ALS EINZIGES ELEMENT OHNE PROTEINE ZEIGEN WAS PASSIERT
+
+ INFO-ID § REX-AUSLÖSER-OPTIONEN
+
+ FUNKTION = SPIEGELUNG DES BOXIS PROZESS AUF DER JEWEILIGEN EBENE
+
+SYMBOLISCHE-DEKLARATION § :
+
+ SYMBOL IN WORTEN = DOPPELPUNKT
+
+ BEISPIEL =
+
+  ¬·¤: »[':: Installation fortsetzen? [J/n]']«
+        ¶ ¬· »['j']«
+              ¶ ¬· »['ENTER']«
+              ¶¶ ¬· »['exit']«««ſ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE-KORDI-ANKERKLASSE § REXAN-PARALLEL-AUSFÜHRUNG
+
+ INFO = INIZIALISIERT PARALLELE AUSFÜHRUNGSOPTION
+        
+ INFO-ID § REX-AUSLÖSER-OPTIONEN
+
+ FUNKTION = PARALLEL AUSFÜHRUNG
+
+SYMBOLISCHE-DEKLARATION § ‹
+
+ SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
+
+ BEISPIEL =
+
+ ¬·¤‹ »[× 1 + 1 ×]
+       ¬·¤= ["(1)±2±"]«
+
+ ¬··¤‹ »[× 1 + 1 ×]
+        ¬··¤= ['reboot wait (N)±2±']«
+
+ ¬···¤‹ »[× 1 + 1 ×]
+         ¬···¤= ["(2)±2±"]«
+
+ ¬····¤‹ »[× 1 · 1 ×]
+          ¬····¤= ["(3)±2±"]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE-KORDI-ANKERKLASSE § REXAN-TRANSPORT
+
+ INFO = TRANSPORTIERT DIE DATEN PARALLEL
+
+ INFO-ID § REX-AUSLÖSER-OPTIONEN
+
+ FUNKTION = PARALLEL TRANSPORT
+
+SYMBOLISCHE-DEKLARATION § ›
+
+ SYMBOL IN WORTEN = GRÖSSER-ALS-ZEICHEN
+
+ BEISPIEL =
+
+ ¬·¤› »[× 1 + 1 ×]
+       ¬·¤= ["(1)±2±"]«
+
+ ¬··¤› »[× 1 + 2 ×]
+        ¬··¤= ["(2)±3±"]«
+
+ ¬···¤› »[× 1 + 7 ×]
+         ¬···¤= ["(3)±8±"]«
+
+ ¬····¤› »[× 1 · 1 ×]
+          ¬····¤= ["(4)±1±"]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE-KORDI-ANKERKLASSE § REXAN-AUFSTEIGENDSORTIEREN
+
+ INFO = INITIIERT PARALLELE PROZESSE ODER PROTEIN-DUPLIKATE
+
+ INFO-ID § REX-AUSLÖSER-OPTIONEN
+
+ FUNKTION = PARALLEL AUSFÜHRUNG RELATIONALE REIHENFOLGE
+
+SYMBOLISCHE-DEKLARATION § ↑
+
+ SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
+
+ BEISPIEL =
+
+ »['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
+
+  ¬·¤↑ »['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']
+        ['cd /Pylovara/MCSKernel']
+        ['./pylovara_kernel testcodes/test.datei-lcore']«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+REX-SPACECREATOR-UNTERKLASSE-KORDI-ANKERKLASSE § REXAN-ABSTEIGENDSORTIEREN
+
+ INFO = INITIIERT PARALLELE PROZESSE ODER PROTEIN-DUPLIKATE
+
+ INFO-ID § REX-AUSLÖSER-OPTIONEN
+
+ FUNKTION = PARALLEL AUSFÜHRUNG RELATIONALE REIHENFOLGE
+
+SYMBOLISCHE-DEKLARATION § ↓
+
+ SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
+
+ BEISPIEL =
+
+ »['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
+
+  ¬·¤↓ »['./pylovara_kernel testcodes/test.datei-lcore']
+        ['cd /Pylovara/MCSKernel']
+        ['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
+
+### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
+SBSK = POIU-START-POIWERK-<ELEMENT>-REXH-SPACECREATOR-REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ # RBSK = POIK-REXK                                               
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ #  DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ### ENDPUNKT REX  = ### === # == ##### === ###

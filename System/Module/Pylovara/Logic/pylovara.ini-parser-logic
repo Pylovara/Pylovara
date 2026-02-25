@@ -1,0 +1,27 @@
+# pylovara.ini-parser-logic – Parse INI-artige .conf Dateien
+
+parse_conf() {
+    local conf_file="$1"
+    local section=""
+    local key value line
+
+    while IFS= read -r line; do
+        # Leere Zeilen ignorieren
+        [[ "$line" =~ ^[[:space:]]*$ ]] && continue
+        
+        # Sektionen erkennen
+        if [[ "$line" =~ ^$$([a-zA-Z0-9_]+)$$ ]]; then
+            section="${BASH_REMATCH[1]}"
+            continue
+        fi
+
+        # Key=Value parsen
+        if [[ "$line" =~ ^([a-zA-Z0-9_]+)[[:space:]]*=[[:space:]]*(.*)$ ]]; then
+            key="${BASH_REMATCH[1]}"
+            value="${BASH_REMATCH[2]}"
+            
+            # Variablen exportieren als PV_<section>_<key>
+            export "PV_${section}_${key}=${value}"
+        fi
+    done < "$conf_file"
+}

@@ -1,0 +1,279 @@
+@kernel-nr: 22 # KKIS | STATUS = ŊOTIERUNGSZUSTAND TESTFLÄCHE
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ # INSTANZ STUFE 9 WIRD VOLLZUGRIFF HABEN OHNE ÄNDERUNGSRECHTE BIS
+ # ZUM TAG DER ÜBERGABE.
+### ==== ##### == # === ### STARTPUNKT KKIS ### === # == ##### === ###
+
+NAME Ð KKIS
+
+ INSTANZ STUFE = 9
+
+ INFO-ID ¡ KKIS
+
+MASTER § MASU-KKIS
+
+ BEGRIFFSDEFINITION = KOGNITIVES-KÜNSTLICHES-INTELLIGENTES-SYSTEM
+
+ FUNKTION = PYLOVARA-SYSTEM
+
+ AUSFÜHRUNGSART = KOGNITIV 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-KERNKLASSE § KKIK
+
+ INFO = INSTANZ
+
+ FUNKTION = KKI INSTANZ
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-HAUPTKLASSE § KKIH-ZUGRIFF
+
+ INFO = INSTANZ
+
+ FUNKTION = KKI INSTANZ
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-RETRON
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF RETRON
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-VATRON
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF VATRON
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-NAVIGATOR
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF NAVIGATOR
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-SENTIATOR
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF SENTIATOR
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-WARP
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF WARP
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-DATEITYPEN
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF DATEITYPEN
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-TRENNBEFEHL
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF TRENNBEFEHL
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-FEED
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF FEED
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-PROTEIN
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF PROTEIN
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-PROTON
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF PROTON
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-MASTER
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF MASTER
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-ARGUMENT
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF ARGUMENT
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-MCS-CMD
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF MCS-CMD
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-MATRIX
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF MATRIX
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-TRANSAKTIONSRAHMEN
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF TRANSAKTIONSRAHMEN
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-REX
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF REX
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-LEXIKON
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF LEXIKON
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-INFO-ID
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF INFO-ID
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-DATENTYPEN
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF DATENTYPEN
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-BOXIS
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF BOXIS
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-IDENTIFIKATION
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF IDENTIFIKATION
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-AKTIONSDRAHT
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF AKTIONSDRAHT
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-LICENSE
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF LICENSE
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
+ # SBSK = KKIU-<ELEMENT>
+ # VBSK = KKIH-ZUGRIFF-KKIU-<ELEMENT>
+ # RBSK = KKIK-MASU-<ELEMENT>
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ #  DATUM = [00:26:28|Mo Jan 26 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ### ENDPUNKT KKIS = ### === # == ##### === ###

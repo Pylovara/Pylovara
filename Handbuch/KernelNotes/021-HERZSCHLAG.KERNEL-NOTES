@@ -1,0 +1,70 @@
+@kernel-nr: 21 # HERZSCHLAG | STATUS = Ŋ X (PROTO)
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ # DER 8TAKT HERZSCHLAG DIENT ZUR VERBINDUNG DER SOFTWARE MIT 
+ # DER HARDWARE SYNCHRONISATION.
+ # JITTER USW WIE CLOCK SCREW ETC WERDEN DAMIT VOLLSTÄNDIG ELEMENIERT
+### ==== ##### == # === ### 8TAKT-HERZSCHLAG ## === # == ##### === ###
+
+TAKT-PHASE,INTERVALL (ms),FUNKTION IM AKTIONSDRAHT,LOGIK-STATUS
+P0 (Start),"0,000",INITIAL-IMPULS: Master-Clock triggert ID-DNA Check.,¬§ (Dirigent)
+P1,"125,000",BYTE-FEED 1: Erster Datensatz fließt in den Draht.,¬· (Aktion)
+P2,"250,000",VAL-CHECK: VATRON prüft die erste Schwingung.,VATRON
+P3,"375,000",BYTE-FEED 2: Zweiter Datensatz (Überlagerung).,¬·· (Aktion)
+P4 (Mid),"500,000",REX-REFLEX: Halbzeit-Auswertung durch Modul 09.,REX
+P5,"625,000",BYTE-FEED 3: Dritter Datensatz (Resonanz-Korrektur).,¬··· (Aktion)
+P6,"750,000",RETRON-SYNC: Rückwärts-Abgleich der Endpunkte.,RETRON
+P7 (End),"875,000",CRC-FINALE: Abschlussvalidierung vor dem nächsten Schlag.,Ŋ (Vollzug)
+
+Der Aktionsdraht-Startpunkt (») ist nicht isoliert,
+sondern tief im 8-Takt-Herzschlag (kernel-nr: 21) abgebildet IN ZUKUNFT.
+
+Jeder Takt erneuert den Impuls physikalisch → Energie-Erhaltung durch den MIT-Taktgeber
+(kein Verbrauch, kein Decay).
+
+Prisma/Linsen-Ansatz als Lösung:
+Prisma: Licht (Top-Layer) wird gebrochen → automatische Pfadwahl
+(z. B. 450 nm = Core-Init, 650 nm = Parallel-Fork).
+
+Gravierte Linsen: Im Photonik-Layer eingraviert → spezifischer "Platz im Licht"
+→ Impuls wird rein optisch an den richtigen Knoten geleitet.
+Vorteil: Keine zusätzliche Elektronik, keine Schaltverluste
+→ pure Erneuerung durch Reflexion/Transmission.
+
+Kurze Tabelle: Aktionsdraht-Startpunkt im 8-Takt-Zyklus (Beispiel-Mapping)
+
+TaktPhysikalischer Puls (MIT)Aktionsdraht-Start
+(»)Prisma/Linsen-EffektFunktion / Erneuerung0Nano-Impuls Init» Persistent-ResetBrechung
+Init-KanalStartpunkt wird neu geladen1Erster Schlag» ErneuerungPrisma → Blau (450 nm)Trigger
+für DATENTYPEN/PROTEIN2Zweiter Schlag» BranchingLinsen-Gravur → GrünFork zu REX/BOXIS3Dritter
+Schlag» EvalPrisma → GelbSentiator-Entscheidung (¶/¶¶)4Vierter Schlag» Parallel ‹Linsen
+→ RotParallele Ausführung (REX-Workspaces)5Fünfter Schlag» Merge ›Prisma → ViolettFeed-Sync
+(±±)6Sechster Schlag» Cleanup (ſ)Linsen → IR (unsichtbar)Regel der Reinheit7Siebter Schlag»
+Persistent LoopPrisma → Full-SpectrumVollständige Erneuerung → nächster Zyklus
+→ Energie-Erhaltung: Der » "verbraucht" keinen Impuls – er reflektiert/transmittiert ihn
+durch Prisma/Linsen → selbsttragend.
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+MCS-COIN WERDEN MIT ALLEN 8 TAKTEN ALS NATÜRLICHES NEBENPRODUKT PRODUZIERT UND WERDEN
+BEI NACHGEHENDEM HOBBY IM SYSTEM LOKAL AUSBEZAHLT. 
+
+DER PYLOVARA MCS-COIN FOLGT KEINER ARBEITSZEIT ODER SPEZIALGEBIET, ER BEZAHLT DICH FÜR DAS
+WAS DU GERNE TUST. ER WIRD IN =
+
+PYLO-COIN - KLEINBETRÄGE KOMMA BETRÄGE # DOLLAR BEREICH
+VARA-COIN - NORMALEBETRÄGE BIS 9.999,999 # GOLD BEREICH
+PYLOVARA-NEUERSTANDARD-COIN - DANN 1 STÜCK NEUE WÄHRUNGSGEWICHTUNG
+PYLOVARA-COIN EIGENE WÄHRUNGINSTANZ - KANN BÖRSEN NOTIERT WERDEN. 
+
+PYLO-COIN = STERBEN BEI UNGENUTZTER DAUER
+VARA-COIN = HALTEN BIS 10 JAHRE  
+PYLOVARA-COIN STERBEN NIE, STERBEN ABER BEIM VERBRAUCH.
+
+### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
+ # SCHABLONEN BSK =                                                 #
+ # RELATIVER BSK  =                                                 #
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ #  DATUM = [02:10:53|Mi 01 Okt 2025] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ### 8TAKT-HERZSCHLAG ## === # == ##### === ###

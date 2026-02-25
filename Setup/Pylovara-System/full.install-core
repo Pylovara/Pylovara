@@ -1,0 +1,65 @@
+#!/bin/bash
+# v0.3
+# Pylovara Root-Installer
+# führe aus mit: sudo ./installer.pylovara
+# Quelle : /Pylovara/Setup/Pylovara-System/full.install-core
+
+set -e
+PV_DIR="/Pylovara"
+REPO_URL="https://github.com/Pylovara/Pylovara.git"
+WRAPPER_NAME="pylovara.wrapper-shell"
+WRAPPER_PATH="/usr/local/bin/$WRAPPER_NAME"
+
+echo "📦 Starte Pylovara Setup..."
+
+# 1. Root-Prüfung
+if [ "$EUID" -ne 0 ]; then
+  echo "❌ Dieses Skript muss als root laufen (sudo)"
+  exit 1
+fi
+
+# 2. Ordner vorbereiten
+if [ -d "$PV_DIR" ]; then
+  echo "🔁 Entferne alte Installation..."
+  rm -rf "$PV_DIR"
+fi
+
+echo "⬇️ Klone Repository..."
+git clone "$REPO_URL" "$PV_DIR"
+
+# 3. Wrapper setzen
+if [ -f "$PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME" ]; then
+  cp "$PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
+  chmod +x "$WRAPPER_PATH"
+else
+  echo "❌ Wrapper nicht gefunden: $PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME"
+  exit 1
+fi
+
+# 4. In /etc/shells eintragen
+if ! grep -Fxq "$WRAPPER_PATH" /etc/shells; then
+  echo "$WRAPPER_PATH" >> /etc/shells
+fi
+
+# 5. Standard-Shell setzen für echten Nutzer
+REAL_USER=${SUDO_USER:-$(logname)}
+chsh -s "$WRAPPER_PATH" "$REAL_USER" || {
+  echo "⚠️ Fehler beim chsh – bitte manuell ausführen: chsh -s $WRAPPER_PATH"
+}
+
+# 6. Optional .bashrc/.zshrc ergänzen
+USER_HOME=$(eval echo "~$REAL_USER")
+if [ -f "$USER_HOME/.bashrc" ]; then
+  grep -q "source $PV_DIR/Control/control.pv-conf" "$USER_HOME/.bashrc" || \
+    echo "source $PV_DIR/Control/control.pv-conf" >> "$USER_HOME/.bashrc"
+fi
+
+if [ -f "$USER_HOME/.zshrc" ]; then
+  grep -q "source $PV_DIR/Control/control.pv-conf" "$USER_HOME/.zshrc" || \
+    echo "source $PV_DIR/Control/control.pv-conf" >> "$USER_HOME/.zshrc"
+fi
+
+echo ""
+echo "✅ Pylovara erfolgreich installiert."
+echo "🔄 Bitte neu anmelden oder Shell neu starten:"
+echo "exec $WRAPPER_PATH <- SystemBrigde"

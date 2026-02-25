@@ -1,0 +1,475 @@
+@kernel-nr: 31 # SCHABLONATOR | STATUS = DEV LEVEL ROLLING-RELEASE
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ #  DIESER BEREICH STEHT AKTIV IN DER ENTWICKLUNG                   #
+### ==== ##### == # === STARTPUNKT SCHABLONATOR === # == ##### === ###
+
+NAME Ð SCHABLONATOR
+
+ INFO-ID ¡ SCHABLONATOR
+
+MASTER § MASU-SCHABLONATOR
+
+ BEGRIFFSDEFINITION = SCHABLONATOR
+
+ FUNKTION = BSK-SCHABLONE ERZEUGER FÜR DAS SYSTEM
+
+ AUSFÜHRUNGSART = SYMBOL IN WORTEN = SCHABLONATOR
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ SCHABLONATOR-KERNKLASSE § SBK
+
+ INFO = SCHABLONIERT 
+
+ FUNKTION = ASSEMBLER ASSIMILIERUNG
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ TRANU-START                    §   ¢!
+ TRANAN-ENDE                    §   !¢
+ POIU-START                     §   [
+ POIAN-ENDE                     §   ]
+ POIWERK-VATK                   §   ©
+ POIWERK-RETK                   §   Ŧ
+ POIWERK-NAVK                   §   NAVK
+ POIAN-IMPULS                   §   ]
+ POOU-START                     §   {
+ POOAN-ENDE                     §   }
+ TRENO-1                        §   BOXH|BOXH
+ TRENO-2                        §   BOXH|BOXH|BOXH
+ TRENO-3                        §   BOXH|BOXH|BOXH|BOXH
+ TRENO-4                        §   BOXH|BOXH|BOXH|BOXH|BOXH
+ AKTU-START                     §   »
+ AKTAN-ENDE                     §   «
+ BOXH-ABI                       §   Ħ <OS-ABI> Ħ
+ BOXU-ABI-START                 §   Ħ
+ BOXAN-ABI-ENDE                 §   Ħ
+ BOXH-SYSCALL                   §   , <SYSCALL> ,
+ BOXU-SYSCALL-START             §   ,
+ BOXAN-SYSCALL-ENDE             §   ,
+ BOXH-SHELL-CONTROL             §   ' <OS-SHELL> '
+ BOXU-SHELL-CONTROL-START       §   '
+ BOXAN-SHELL-CONTROL-ENDE       §   '
+ BOXH-CALLIS                    §   " <PRINT> "
+ BOXU-CALLIS-START              §   "
+ BOXAN-CALLIS-ENDE              §   "
+ BOXH-ALU                       §   × <ALU> ×
+ BOXU-ALU-START                 §   ×
+ BOXAN-ALU-ENDE                 §   ×
+ BOXH-MCS-CMD                   §   ~ <MCS-CMD> ~
+ BOXU-MCS-CMD-START             §   ~
+ BOXAN-MCS-CMD-ENDE             §   ~
+ BOXH-BLANKERNENNER             §   ¥ <BLANKERNENNER> ¥
+ BOXU-BLANKERNENNER-START       §   ¥
+ BOXAN-BLANKERNENNER-ENDE       §   ¥
+ BOXH-MASCHINENCODE             §   º <MASCHINENCODE> º
+ BOXU-MASCHINENCODE-START       §   º
+ BOXAN-MASCHINENCODE-ENDE       §   º
+ REXU-SPACECREATOR              §   ¬
+ REXU-WORKSPACE-1               §   ·
+ REXU-WORKSPACE-2               §   ··
+ REXU-WORKSPACE-3               §   ···
+ REXU-WORKSPACE-4               §   ····
+ REXU-WORKSPACE-5               §   ·····
+ REXU-WORKSPACE-6               §   ·······
+ REXO-KORDI                     §   ¤
+ REXAN-AUSWERTUNG               §   =
+ REXAN-PROZESS                  §   :
+ REXAN-PARALLEL-AUSFÜHRUNG      §   ‹
+ REXAN-TRANSPORT                §   ›
+ REXAN-AUFSTEIGENDSORTIEREN     §   ↑
+ REXAN-ABSTEIGENDSORTIEREN      §   ↓
+ SENTAN-REGEL-DER-REINHEIT      §   ſ
+ ARGH-OPTION                    §   ««
+ ARGAN-LOOP                     §   ««Ω
+ ARGAN-EXIT                     §   ««E
+ ARGAN-BESTÄTIGEN               §   ««B 
+ ARGAN-REGEL-DER-REINHEIT       §   ««ſ
+ ARGWERK-NANOSEKUNDEN           §   ««N
+ ARGWERK-SEKUNDEN               §   ««S
+ ARGWERK-TAKTSCHLÄGE            §   ««T
+ FFEH-SYNC                      §   (<NR>)± WERT ±
+ TFEH-SYNC                      §   ± WERT ±(<NR>)
+ FEEH-ZAHLTRÄGER                §   (<NR>)
+ FEEWERK-ZAHLTRÄGER-START       §   (
+ FEEWERK-ZAHLTRÄGER-ENDE        §   )
+ FEEH-WERTRÄGER                 §   ± WERT ±
+ FEEWERK-WERTRÄGER-START        §   ±
+ FEEWERK-WERTRÄGER-ENDE         §   ±
+ WARH-LEGACY                    §   øĸ »["LEGACY"]« ĸø
+ WARU-START                     §   øĸ
+ WARAN-ENDE                     §   ĸø
+ NAVAUS-PYLOVARA                §   KLASSENSTEUERUNG
+ NAVAUS-KERNKLASSE              §   KERNKLASSE
+ NAVAUS-HAUPTKLASSE             §   HAUPTKLASSE
+ NAVAUS-OPTIONKLASSE            §   OPTIONKLASSE
+ NAVAUS-UNTERKLASSE             §   UNTERKLASSE
+ NAVAUS-MODULKLASSE             §   MODULKLASSE
+ NAVAUS-WERKZEUGKLASSE          §   WERKZEUGKLASSE
+ NAVAUS-AUSFÜHRUNGSKLASSE       §   AUSFÜHRUNGSKLASSE
+ NAVAUS-ANKERKLASSE             §   ANKERKLASSE
+ NAVAUS-WERTKLASSE              §   WERTKLASSE
+ NAVAUS-LINKERKLASSE            §   LINKERKLASSE
+ NAVAUS-NUMMERKLASSE            §   NUMMERKLASSE ############################### VOREINTRAG
+ NAVU-KNOTENPUNKT               §   -
+ NAVU-DIRIGENT                  §   §
+ NAVU-INFORMATION               §   ¡
+ NAVU-KOMMENTAR                 §   #
+ NAVU-LANGZEITSPEICHER          §   Ð
+ NAVU-SCHATTENIDENTITÄT         §   <SID>
+ NAVU-ZIELREFERENZ              §   $
+ IDU-DNA-TRANSAKTIONSRAHMEN     §   þ
+ IDU-DNA-DIENST                 §   þþ
+ IDU-DNA-FIRMA                  §   þþþ
+ IDU-DNA-INFASTRUKTUR           §   þþþ
+ IDU-DNA-BILDUNGSBEREICH        §   þþþ
+ IDU-DNA-BIOLIVE                §   þþþþ
+ MCCH-UND-AUSFÜHREN-SEQUENZIELL §   &
+ MCCH-KLASSE-KNOTENPUNKT        §   -
+ MCCH-UND-AUSFÜHREN-PARALLEL    §   &&
+ MCCH-SYSTEMCONTROL             §   REGISTER-LISTE
+ MCCU-START                     §   START-<PROZESS|PROGRAMM>
+ MCCU-STOP                      §   STOP-<PROZESS|PROGRAMM>
+ MCCU-NEUSTART                  §   NEUSTART-<PROZESS|PROGRAMM>
+ MCCU-STATUS                    §   STATUS-<PROZESS|PROGRAMM>
+ MCCU-AKTIVIEREN                §   AKTIVIEREN-<PROGRAMM>
+ MCCU-DEAKTIVIEREN              §   DEAKTIVIEREN-<PROGRAMM>
+ MCCU-BERICHT-ANZEIGEN          §   BERICHT-ANZEIGEN-<PROGRAMM>
+ MCCU-CORE                      §   ERZEUGE-CORE
+ MCCU-LCORE                     §   ERZEUGE-LCORE
+ MCCU-VCORE                     §   ERZEUGE-VCORE
+ MCCU-FCORE                     §   ERZEUGE-FCORE
+ MCCU-MCORE                     §   ERZEUGE-MCORE
+ MCCU-NODE                      §   ERZEUGE-NODE
+ MCCU-NANO                      §   ERZEUGE-NANO
+ MCCU-MICRO                     §   ERZEUGE-MICRO
+ MCCU-NEEDLE                    §   ERZEUGE-NEEDLE
+
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ #  DATUM = [01:00:12|Di 09 Feb 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ENDPUNKT SCHABLONATOR # === # == ##### === ###
+
+@kernel-nr: 30 ABSOLULATOR | STATUS = DEV LEVEL ROLLING-RELEASE
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ #      DER PYLOVARA BAUSTEINSCHALTUNGSKREISLAUF  = BSK             #
+ #   DEVONOTE = DAS WIRD IST EIN VOLLWERTIGES SCHALTREGISTERKERN    #
+ #  DER ABSOLULATOR BEFINDET SICH MOMENTAN IM NEUAUFBAUMODUS UND    #
+ #  ENTHÄLT FEHLERHAFTE DATEN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
+### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###
+ # NOCH LEER                                                        #
+## PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT> #
+### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
+
+NAME           Ð ABSOLULATOR
+
+ INFO-ID       = ABSOLULATOR
+
+MASTER         § MASU-ABSOLULATOR
+
+ BEGRIFFSDEF    = (SYSTEM-SCHALTUNG)
+
+ FUNKTION       = DEFINITION BAUSTEINSCHALTUNGSKREIS BSK
+
+ AUSFÜHRUNGSART = ABSOLUTERSCHALTKREIS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 01 # TRANSAKTIONS-SCHALTUNG (HÜLLE)
+ SCHALTKETTE:  TRANK-TRANU-START-MASK-TRANAN-ENDE
+BEDINGUNG:  ¢! MASK !¢
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 01-01 # TRANSAKTIONSRAHMEN START
+ SCHALTKETTE:  TRANK-TRANH-RUN-TRANU-START-<MASK>
+BEDINGUNG:  ¢! MASK 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 01-02 # TRANSAKTIONSRAHMEN ENDE
+ SCHALTKETTE:  TRANK-TRANH-RUN-TRANU-START-<MASK>-TRANAN-ENDE
+BEDINGUNG:  ¢! MASK !¢
+    START:  ¢! MASK !¢
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02 # AKTIONS-INITIIERUNG (IMPULS)
+ SCHALTKETTE:  AKTK-AKTU-START
+BEDINGUNG:      »
+    START:      »
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02-01 # PROTEIN START
+ SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START
+BEDINGUNG:      »
+    START:      »[
+    START: Ŧ
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02-02 # BOXIS KERNKLASSEN ANSTEUERUNG
+ SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-POIAN-ENDE-AKTAN-ENDE
+BEDINGUNG:      »[
+    START:      »[BOXK]
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02-03 # 
+ SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENO-1-BOXK-POIAN-ENDE
+BEDINGUNG:      »[
+    START:      »[BOXK|BOXK]
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02-04 # BOXIS ZUORDNUNG OHNE WIE MIT TRENNBEFEHL TRENK
+ SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENO-<NR>-BOXK-POIAN-ENDE
+BEDINGUNG:      »[BOXK]«
+    START:      »[BOXK]«
+    START:      »[BOXK|BOXK]«
+    START:      »[BOXK|BOXK|BOXK]«
+    START:      »[BOXK|BOXK|BOXK|BOXK]«
+    START:      »[BOXK|BOXK|BOXK|BOXK|BOXK]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02-04-01 # BOXIS KERNKLASSEN BAUEN
+ SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-BOXH-<ELEMENT>-BOXAN-<ELEMENT>-POIAN-ENDE
+BEDINGUNG:      BOXH-<ELEMENT>
+    START:      Ħ <OS-ABI> Ħ
+    START:      , <SYSCALL> ,
+    START:      ' <OS-SHELL> '
+    START:      " <PRINT> "
+    START:      × <ALU> ×
+    START:      ~ <MCCK> >~
+    START:      ¥ <CASH> ¥
+    START:     º <MASCHINENCODE> º
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02-04-02 # BOXIS TRENNBEFEHL 
+ SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENK-TRENH-SPALT-TRENU-START-TRENO-<NR>-BOXK-POIAN-ENDE
+BEDINGUNG:      »[BOXH-<ELEMENT>]«
+    START:      »[BOXK|BOXK]«
+    START:      »[BOXK|BOXK|BOXK]« 
+    START:      »[BOXK|BOXK|BOXK|BOXK]« 
+    START:      »[BOXK|BOXK|BOXK|BOXK|BOXK]« 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 02-05 # PROTON INTEGRATION
+ SCHALTKETTE:  AKTK-AKTU-START-POIK-POIH-SOFT-POIU-START-BOXK-TRENK-TRENH-SPALT-TRENU-START-TRENO-<NR>-POOK-POOH-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
+BEDINGUNG:      »[BOXH-<ELEMENT>|POOH-<ELEMENT>]«
+    START:      »[BOXK|{POOK}]«
+    START:      »[BOXK|BOXK|{POOK}]«
+    START:      »[BOXK|BOXK|BOXK|{POOK}]«
+    START:      »[BOXK|BOXK|BOXK|{POOK}|{POOK}]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03 # PROTEIN-KERN BOXIS EINRASTPUNKT (LOGIK-BAUSTEIN)
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-POIWERK-<ELEMENT>-BOXK-BOXH-<ELEMENT>-BOXAN-<ELEMENT>-POIAN-ENDE
+BEDINGUNG:    [BOXK]
+    START:    [BOXK]
+    START:    »[BOXK]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01 # REX-EINRASTPUNKT (DATENTRANSPORT-PIPELINE-VERTIKAL))
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-REXK
+BEDINGUNG:       [
+    START:       ¬
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-01 # REX-REXU-WORKSPACE-1
+ SCHALTKETTE: POIWERK-REXK-REXH-SPACECREATOR-REXU-WORKSPACE-1
+BEDINGUNG:       ¬
+    START:       ¬·      
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-02 # REX-REXU-WORKSPACE-2
+ SCHALTKETTE: POIWERK-REXK-REXH-SPACECREATOR-REXU-WORKSPACE-2  
+BEDINGUNG:       ¬
+    START:       ¬··
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-03 # REX-REXU-WORKSPACE-3
+ SCHALTKETTE: POIWERK-REXK-REXH-SPACECREATOR-REXU-WORKSPACE-3 
+BEDINGUNG:       ¬
+    START:       ¬···
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-04 # REX-REXU-WORKSPACE-4
+ SCHALTKETTE: POIWERK-REXK-REXH-SPACECREATOR-REXU-WORKSPACE-4 
+BEDINGUNG:       ¬
+    START:       ¬····
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-05 # REX-REXU-WORKSPACE-5
+ SCHALTKETTE: POIWERK-REXK-REXH-SPACECREATOR-REXU-WORKSPACE-5 
+BEDINGUNG:       ¬
+    START:       ¬·····
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-06 # REX-REXU-WORKSPACE-6
+ SCHALTKETTE: POIWERK-REXK-REXH-SPACECREATOR-REXU-WORKSPACE-6 
+BEDINGUNG:       ¬
+    START:       ¬······
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-01 # REX-REXU-WORKSPACE-<NR>-REXO-KORDI
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI
+BEDINGUNG:       ·
+    START:       ·¤
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-02 # REX-REXU-WORKSPACE-<NR>-REXO-KORDI
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-PROZESS-POIK
+BEDINGUNG:       ¤
+    START:       ¤:
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-03 # REX-REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-AUSWERTUNG-POIK
+BEDINGUNG:       ¤
+    START:       ¤=
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-03-01 # REXO-KORDI-BOXH-ALU
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-AUSWERTUNG-AKTK-POIK-BOXH-ALU-POIK-AKTK
+BEDINGUNG:       =
+    START:       »[× <ALU> ×]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-04 # REX-REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-PARALLEL-AUSFÜHRUNG
+BEDINGUNG:       ¤
+    START:       ¤‹
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-05 # REX-REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-REXO-KORDI-REXAN-TRANSPORT
+BEDINGUNG:       ¤
+    START:       ¤›
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-06 # REX-REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-AUFSTEIGENDSORTIEREN
+BEDINGUNG:       ¤
+    START:       ¤↑
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-01-<NR>-07 # REX-REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ SCHALTKETTE: REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-ABSTEIGENDSORTIEREN
+BEDINGUNG:       ¤
+    START:       ¤↓
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-02 # SENTIATOR-EINRASTPUNKT VERTIKAL
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-SENTK-SENTH-FLEX-SENTAN-WENN-KANN-SENTAU-IMPULS-POIU-START-
+BEDINGUNG:       [
+    START:       ¶ 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-02-01 # SENTIATOR-PROTEIN-START 
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-SENTK-SENTH-FLEX-SENTAN-WENN-KANN-SENTAU-IMPULS-POIU-START
+BEDINGUNG:       [
+    START:       ¶ [
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-02-02 # SENTIATOR-REX-SPACECREATOR
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-SENTK-SENTH-FLEX-REXK-REXH-SPACECREATOR  
+BEDINGUNG:       [
+    START:       ¶ ¬ 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-03 # SENTIATOR-WENN-NICHT    
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-SENTK-SENTH-FLEX-SENTAN-WENN-NICHT-SENTAU-IMPULS
+BEDINGUNG:       [
+    START:       ¶¶ 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-02-03 # SENTIATOR-WENN-NICHT    
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-SENTK-SENTH-FLEX-SENTAN-WENN-NICHT-SENTAU-IMPULS-POIU-START
+BEDINGUNG:       [
+    START:       ¶¶ [
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-02-04 # SENTIATOR-SENTIATOR-REX-SPACECREATOR    
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-SENTK-SENTH-FLEX-SENTAN-WENN-NICHT-SENTAU-IMPULS-REXK-REXH-SPACECREATOR
+BEDINGUNG:       [
+    START:       ¶¶ ¬
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-02-05 # SENTIATOR-REGEL-DER-REINHEIT       
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-SENTK-SENTH-FLEX-SENTAN-REGEL-DER-REINHEIT-SENTAU-IMPULS  
+BEDINGUNG:       [
+    START:       ſ »[<BOXK|MCCK>]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-03-01 # NAVIGATOR ADRESSIERUNGS REFERENZ EINRASTPUNKT
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVIK-NAVU-DIRIGENT
+BEDINGUNG:       [
+    START:       § »[<BOXK|MCCK>]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-03-02 # NAVIGATOR ZIELREFERENZ EINRASTPUNKT
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVIK-NAVU-ZIELREFERENZ
+BEDINGUNG:       [
+    START:       $ »[<BOXK|MCCK>]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-03-03 # NAVIGATOR QUELLE LANGZEITSPEICHERREFERENZEINRASTPUNKT
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVIK-NAVU-LANGZEITSPEICHER
+BEDINGUNG:       [
+    START:       Ð »[<NAME>]«
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 03-03-04 # NAVIGATOR QUELLE ID-DNA-<SID> = <SCHATTENIDENTITÄT>
+ SCHALTKETTE:  POIK-POIH-SOFT-POIU-START-[NÄCHSTE-ZEILEN-ABSATZ]-POIWERK-NAVIK-NAVU-SCHATTENIDENTITÄT
+BEDINGUNG:       ORDNERTYP
+    START:       þ<SID>
+    START:       þþ<SID>
+    START:       þþþ<SID>
+    START:       þþþþ<SID>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 04 # AKTIONSDRAHT-ABSCHLUSS 
+ SCHALTKETTE:  POIAN-ENDE-AKTK-AKTAN-ENDE
+BEDINGUNG:                ]
+    START:                 «
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 05 # ARGUMENT-ZUGANG
+ SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION
+BEDINGUNG:                 ««
+    START:                 ««
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 05-01 # ARGUMENT-DIREKT OPERATION
+ SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGH-ARGWERT-<ARGUMENT>
+BEDINGUNG:                 ««<ARGUMENT>
+    START:                 ««B
+    START:                 ««E
+    START:                 ««N
+    START:                 ««S
+    START:                 ««T
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 05-01-01 # ARGUMENT-DIREKT-ANKER 
+ SCHALTKETTE:  AKTK-AKTAN-ENDE-ARGK-ARGH-OPTION-ARGH-ARGWERT-<ARGUMENT>
+BEDINGUNG:                 ««<ARGUMENT><WERT>
+    START:                 ««N<WERT>
+    START:                 ««S<WERT>
+    START:                 ««T<WERT>  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-01 # FEED SEGMENT
+ SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:       [ (<NR>)± <WERT> ± ] 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-01-01 # FÜHRENDER FEED SYNC
+ SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:         (<NR>)  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-01-02 # FÜHRENDER FEED ÜBERGABE
+ SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FFEH-ÜBERGABE-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:             ± <WERT> ±
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-02 # FEED SEGMENT
+ SCHALTKETTE:  AKTK-POIK-TFEH-SYNC-POIK-AKTAN-ENDE
+BEDINGUNG:       [ ± WERT ±(<NR>) ]  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-02-01 # FEED SEGMENT
+ SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FFEH-ÜBERGABE-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:         ± WERT ±  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 06-02-02 # FEED SEGMENT
+ SCHALTKETTE:  AKTK-POIK-BOXH-<ELEMENT>-FEEH-SYNC-BOXAN-<ELEMENT>-POIK-AKTAN-ENDE
+BEDINGUNG:                 (<NR>)  
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 07 # TRANSAKTIONSRAHMEN ID VALIDIERUNG IM DATEITYPE
+ SCHALTKETTE: IDK-IDH-IDU-DNA-TRANSAKTIONSRAHMEN-IDAN-ENDE 
+BEDINGUNG: þ
+    START: P<SID>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 07-01 # BASIS-ID / DIENST 
+ SCHALTKETTE: IDK-IDH-IDU-DNA-DIENST-IDAN-ENDE 
+BEDINGUNG: þþ 
+    START: þþ<SID>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 07-02 # FIRMEN KENNUNG 
+ SCHALTKETTE: IDK-IDH-IDU-DNA-FIRMA-IDAN-ENDE 
+BEDINGUNG: þþþ
+    START: þþþ<SID>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 07-03 # INFASTRUKTUR 
+ SCHALTKETTE: IDK-IDH-IDU-DNA-FIRMA-IDAN-ENDE 
+BEDINGUNG: þþþ
+    START: þþþ<SID>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 07-04 # BILDUNGSWESEN 
+ SCHALTKETTE: IDK-IDH-IDU-DNA-BILDUNGSBEREICH-IDAN-ENDE
+BEDINGUNG: þþþ
+    START: þþþ<SID>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR § MODUL 07-05 # BIOLIVE AUTHENTIFIKATION 
+ SCHALTKETTE: IDK-IDH-IDU-DNA-BIOLIVE-IDAN-ENDE
+BEDINGUNG: þþþþ<LIVE-DATA-FEED> 
+    START: þþþþ<LIVE-DATA-FEED>
+### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
+ # SBSK = NOCH LEER
+ # VBSK = NOCH LEER
+ # RBSK = NOCH LEER
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ #  DATUM = [01:09:43|DI 10 FEB 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === # ENDPUNKT ABSOLULATOR  === # == ##### === ###

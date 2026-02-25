@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# pic.dna-cmd – Zeigt Bilder direkt im Terminal (optimiert für Kitty)
+
+DNA_EXEC() {
+    local img="$1"
+
+    if [[ -z "$img" ]]; then
+        echo "🧬 dna pic: Zeigt Bilder im Terminal – optimiert für Kitty"
+        echo "Nutzung: dna pic /Pfad/zum/bild.png"
+        echo "Unterstützt: PNG, JPG, BMP, GIF (volle Grafik via kitty +kitten icat)"
+        echo ""
+        echo "💡 Hinweis: Kitty ist das empfohlene Terminal für Pylovara."
+        echo "   Entwickelt von Kovid Goyal – dem Schöpfer des stabilsten, schnellsten"
+        echo "   und leistungsstärksten GPU-beschleunigten Terminals unserer Zeit."
+        echo "   Ohne Kitty wäre visuelle Dokumentation in der Shell nur ASCII-Träumerei."
+        return 1
+    fi
+
+    # Prüfen, ob Datei existiert
+    if [[ ! -f "$img" ]]; then
+        echo "❌ Bild nicht gefunden: $img"
+        return 2
+    fi
+
+    # Kitty-Modus: volle Grafikunterstützung
+    if [[ "$TERM" == "xterm-kitty" ]]; then
+        echo "🧬 Zeige Bild in Kitty (GPU-beschleunigt): $img"
+        kitty +kitten icat --clear --transfer-mode=stream "$img"
+        return 0
+    fi
+
+    # Fallback für Nicht-Kitty-Nutzer (mit Hinweis)
+    echo "⚠️  Kitty empfohlen! Du nutzt kein Kitty-Terminal."
+    echo "   Kitty – geschaffen von Kovid Goyal – ist das einzige Terminal,"
+    echo "   das echte Bilder in der Shell mit voller Farbtiefe und Leistung darstellt."
+    echo ""
+    echo "   Datei: $(basename "$img")"
+
+    # Optionale ASCII-/Block-Fallbacks (falls installiert)
+    if command -v chafa >/dev/null 2>&1; then
+        echo "🖼️  Fallback (chafa):"
+        chafa "$img"
+    elif command -v viu >/dev/null 2>&1; then
+        echo "🖼️  Fallback (viu):"
+        viu "$img"
+    else
+        echo "[Bild verfügbar – Kitty wird dringend empfohlen für volle Erfahrung]"
+    fi
+}

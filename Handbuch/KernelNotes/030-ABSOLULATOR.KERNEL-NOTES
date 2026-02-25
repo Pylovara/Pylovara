@@ -58,6 +58,11 @@ MODULATOR ® MODUL 02-01 # AKTIONS-INITIIERUNG (IMPULS)
 BEDINGUNG: <AKTS>
     START: »
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 02-01-01 # SCHLIEẞUNG DER AKTIONS-INITIIERUNG
+ ABSK =  AKT-AKTH-IMPULS-AKTU-START-AKTAN-ENDE
+BEDINGUNG: <AKTE>
+    START: «
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 02-02 # ANFANG DER PROTEIN BOXIS BEDINGUNG
  ABSK =  AKT-AKTH-IMPULS-AKTU-START-POIK-POIH-SOFT-POIU-START
 BEDINGUNG: <AKTS>-<POIS>
@@ -481,6 +486,25 @@ MODULATOR ® MODUL 09-05 # BIOLIVE AUTHENTIFIKATION
  ABSK = IDK-IDH-IDU-DNA-BIOLIVE-IDAN-ENDE
 BEDINGUNG: <BIOLIVE> 
     START: þþþþ<LIVE-DATA-FEED>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 10    # PROTEIN  
+ # BAUT PROTEIN EIGENSTÄNDIG AUF FÜR AKTIONSDRÄHTE
+ # SORGT FÜR SPÄTERE UNAUSFÜHRBARE PROTEINE MITNAHMEN
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 10-01 # KOMPLETTES PROTEIN
+ ABSK = POIK-POIH-SOFT-POIU-START-BOXK-POIAN-ENDE
+BEDINGUNG: <POIK>-<BOXK>-<POIK>
+    START: [<BOXK>]
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 10-02 # PROTEIN START
+ ABSK = POIK-POIH-SOFT-POIU-START-BOXK-POIAN-ENDE
+BEDINGUNG: <POIS>-<BOXK>
+    START: [<BOXK>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 10-03 # PROTEIN ENDE
+ ABSK = POIK-POIH-SOFT-POIU-START-BOXK-POIAN-ENDE
+BEDINGUNG: <POIS>-<BOXK>-<POIE>
+    START: ]
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK = NOCH LEER
  # VBSK = NOCH LEER

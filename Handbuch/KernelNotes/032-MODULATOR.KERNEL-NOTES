@@ -41,12 +41,13 @@ GENERIERE ® ~ <MCS-CMD> ~
 BEFEHLSZEILEN ANSTEUERUNG § BOXH-MCCH-<ELEMENT>-<GENERAL>-BOXAN-<ELEMENT>
 
 BEDIENUNG = <ELEMENT>-<GENERAL>-<ELEMENT>
+BEDINGUNG = <MASK>-<MASK>-<MASK>
 
 GENERIERE ® <ELEMENT>-<GENERAL>-<ELEMENT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# KONTROLLE ÜBER TRANSAKTIONSRAHMEN (TRANSAKTIONS-LAYER)
+# KONTROLLE ÜBER TRANSAKTIONSRAHMEN START BEDINGUNG
 
 MCS-CMD ~ GENERIERE-TRANH-START
 
@@ -59,7 +60,7 @@ GENERIERE ® ¢!
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# KONTROLLE ÜBER TRANSAKTIONSRAHMEN (TRANSAKTIONS-LAYER)
+# KONTROLLE ÜBER TRANSAKTIONSRAHMEN INHALT 
 
 MCS-CMD ~ GENERIERE-TRANAN-ENDE
 
@@ -73,39 +74,151 @@ GENERIERE ® !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# KONTROLLE ÜBER PROTEIN-SCHALTUNG (SOFTWARE-SCHALTUNG)
+# KONTROLLE ÜBER TRANSAKTIONSRAHMEN SCHLIEẞUNG
 
-MCS-CMD ~ GENERIERE-PROTEIN-START
+MCS-CMD ~ GENERIERE-TRANAN-ENDE
+
+ MODULATOR ® MODUL 01-02 
+
+BEDINGUNG:  
+¢! 
+ <MASK> 
+
+GENERIERE ® !¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER AKTIONSDRAHT START BEDINGUNG
+
+MCS-CMD ~ GENERIERE-AKTU-START
 
  MODULATOR ® MODUL 02-01
 
 BEDINGUNG:  
 ¢! 
- <AKTS>-<POIS> 
+ <AKTS>
 !¢
 
-GENERIERE ® »[
+GENERIERE ® »
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# KONTROLLE ÜBER BOXIS AUSWAHL (LAYER-AUSWAHL)
+# KONTROLLE ÜBER AKTIONSDRAHT START BEDINGUNG
 
-MCS-CMD ~ GENERIERE-BOXH-MCS-CMD
+MCS-CMD ~ GENERIERE-POIU-START
+
+ MODULATOR ® MODUL 02-01
+
+BEDINGUNG:  
+¢! 
+ »<POIS>
+!¢
+
+GENERIERE ® [
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER PROTEIN INHALT BOXIS ÜBER MASK VERZEICHNIS
+MCS-CMD ~ GENERIERE-MASK
+
+ MODULATOR ® MODUL 
+
+BEDINGUNG:  
+¢!
+ »[<MASK>
+!¢
+
+GENERIERE ® <MASK>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# KONTROLLE ÜBER PROTEIN SCHLIEẞUNG
+
+MCS-CMD ~ GENERIERE-POIAN-ENDE
 
  MODULATOR ® MODUL 
 
 BEDINGUNG:  
 ¢! 
- »[
+ »[<MASK>
 !¢
 
-GENERIERE ® ~ <MCS-CMD> ~
+GENERIERE ® ]
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# KONTROLLE ÜBER BOXIS AUSWAHL (LAYER-AUSWAHL)
 
+MCS-CMD ~ GENERIERE-POIAN-ENDE
 
+ MODULATOR ® MODUL 
 
+BEDINGUNG:  
+¢! 
+ »[~ <MCS-CMD> ~
+!¢
 
+GENERIERE ® ]
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER BOXIS AUSWAHL (LAYER-AUSWAHL)
+
+MCS-CMD ~ GENERIERE-AKTAN-ENDE
+
+ MODULATOR ® MODUL 
+
+BEDINGUNG:  
+¢! 
+ »[~ <MCS-CMD> ~]
+!¢
+
+GENERIERE ® «
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER BOXIS AUSWAHL (LAYER-AUSWAHL)
+
+MCS-CMD ~ GENERIERE-ARGUMENT-OPTION
+
+ MODULATOR ® MODUL 
+
+BEDINGUNG:  
+¢! 
+ »[~ <MCS-CMD> ~]«««
+!¢
+
+GENERIERE ® «
 
 
 
@@ -352,10 +465,6 @@ BEDINGUNG =  º <MASCHINENCODE> º
  GENERIERE ® º <MASCHINENCODE> º
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-
 
 
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###

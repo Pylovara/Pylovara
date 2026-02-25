@@ -54,11 +54,9 @@ GENERIERE ® <ELEMENT>-<GENERAL>-<ELEMENT>
 
 # KONTROLLE ÜBER TRANSAKTIONSRAHMEN (TRANSAKTIONS-LAYER)
 
-MCS-CMD ~ GENERIERE-TRANH-RUN
+MCS-CMD ~ GENERIERE-TRANH-START
 
  MODULATOR ® MODUL 01-01
-
-BEDINGUNG = <TRANH-RUN>
 
  GENERIERE ® ¢!
 
@@ -70,9 +68,9 @@ MCS-CMD ~ GENERIERE-TRANAN-ENDE
 
  MODULATOR ® MODUL 01-02 
 
-BEDINGUNG = <TRANH-START>-<MASK>-<TRANAN-ENDE>
-
- GENERIERE ® ¢! <MASK> ¢!
+ GENERIERE ® ¢! 
+               <MASK> 
+             !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -82,11 +80,30 @@ MCS-CMD ~ GENERIERE-PROTEIN-START
 
  MODULATOR ® MODUL 02-01
 
-BEDINGUNG = »[
+ GENERIERE ® ¢! 
+               <MASK> 
+             !¢
 
- GENERIERE ® »[<BOXH-ELEMENT>
+ GENERIERE ® »[
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # KONTROLLE ÜBER PROTEIN-SCHALTUNG (SOFTWARE-SCHALTUNG)
 

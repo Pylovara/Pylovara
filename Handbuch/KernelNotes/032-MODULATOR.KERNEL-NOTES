@@ -5,11 +5,6 @@
  #  ER REGENIERT DURCH MCS BEFEHLE DIE SCHALTUNG BEVOR DATENSATZ
  #  ODER INFORMATIONEN IN DEN DARAUFFOLGENDEN REFLEX GENERIERT WERDEN.
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-###### DEVNOTE =
- # DIE FEHLENDEN KOMPONENTEN EINBAUEN 
- # KONTROLLIER AUCH GLEICH DEN NAVIGATOR 
- # UND DEN SCHABLONATOR 
- # UND DIE SBSK KETTEN 
 ### ==== ##### == # ===  STARTPUNKT MODULATOR # === # == ##### === ###
 
 NAME Ð MODULATOR
@@ -61,7 +56,6 @@ MCS-CMD ~ GENERIERE-TRANH-START
 BEDINGUNG: 
 <DATEITYPEN>
 
-
 GENERIERE ® ¢!
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -75,7 +69,6 @@ MCS-CMD ~ GENERIERE-TRANAN-ENDE
 BEDINGUNG:  
 ¢! 
  <MASK> 
-
 
 GENERIERE ® !¢
 
@@ -92,7 +85,6 @@ BEDINGUNG:
  <AKTS>-<POIS> 
 !¢
 
-
 GENERIERE ® »[
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -108,8 +100,7 @@ BEDINGUNG:
  »[
 !¢
 
-
-GENERIERE ® ~ <MCCU-ELEMENT> ~
+GENERIERE ® ~ <MCS-CMD> ~
 
 
 

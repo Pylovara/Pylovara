@@ -13,7 +13,7 @@
  #   13  · + 0  WARP           | 14  · + 0   NAVIGATOR              #
  #   15  · + 0  IDENTIFIKATION | 16  · + 0   MCS-CMD                #
  #   17  · + 0  DATEITYPEN     | 18  · + 0   VATRON                 #
- #   19  · + 0  RETRON         | 20  · - X   MATRIX                 #
+ #   19  · + 0  RETRON         | 20  Ŋ - X   MATRIX                 #
  #   21  Ŋ - X  HERZSCHLAG     | 22  · + 0   KKIS                   #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG          #   
@@ -22,9 +22,9 @@
 ### ==== ##### == # === ### SYSTEM LOGIKEN  ### === # == ##### === ###
  #   NR HINWEIS INFO-ID FÜR SYSTEMRELEVANTE LOGIKEN                 #
  #   800  BSK   BAUSTEINSCHALTUNGSKREISLAUF                         #
- #   801  KWG   KOGNITIVEWÄHRUNGSGELDSYSTEM                         #
+ #   801  KWG   KOGNITIVESWÄHRUNGSGELDSYSTEM                        #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
- #   993   L1_COREKERNELMANDAT               #     #        #       #
+ #   993   L1_COREKERNELMANDAT               #     #        #   #   #
  #   994   L2_AUTHORRIGHTS                   # #  # #  #       #    #
  #   995   L3_COMMERCIALLICENSING            #   Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  #   #    # # #   ##

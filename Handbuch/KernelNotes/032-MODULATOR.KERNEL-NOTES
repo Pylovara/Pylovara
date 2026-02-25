@@ -58,7 +58,11 @@ MCS-CMD ~ GENERIERE-TRANH-START
 
  MODULATOR ® MODUL 01-01
 
- GENERIERE ® ¢!
+BEDINGUNG: 
+<DATEITYPEN>
+
+
+GENERIERE ® ¢!
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -68,9 +72,12 @@ MCS-CMD ~ GENERIERE-TRANAN-ENDE
 
  MODULATOR ® MODUL 01-02 
 
- GENERIERE ® ¢! 
-               <MASK> 
-             !¢
+BEDINGUNG:  
+¢! 
+ <MASK> 
+
+
+GENERIERE ® !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -80,15 +87,21 @@ MCS-CMD ~ GENERIERE-PROTEIN-START
 
  MODULATOR ® MODUL 02-01
 
- GENERIERE ® ¢! 
-               <MASK> 
-             !¢
+BEDINGUNG:  
+¢! 
+ <AKTS>-<POIS> 
+!¢
 
- GENERIERE ® »[
+
+GENERIERE ® »[
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# KONTROLLE ÜBER BOXIS AUSWAHL (LAYER-AUSWAHL)
 
+MCS-CMD ~ GENERIERE-BOXH-AUSWAHL
+
+ MODULATOR ® MODUL 
 
 
 

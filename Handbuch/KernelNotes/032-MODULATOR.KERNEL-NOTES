@@ -119,16 +119,62 @@ GENERIERE ® [
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # KONTROLLE ÜBER PROTEIN INHALT BOXIS ÜBER MASK VERZEICHNIS
-MCS-CMD ~ GENERIERE-MASK
+
+MCS-CMD ~ GENERIERE-BOXK
 
  MODULATOR ® MODUL 
 
 BEDINGUNG:  
 ¢!
- »[<MASK>
+ »[<BOXK>
 !¢
 
-GENERIERE ® <MASK>
+GENERIERE ® <BOXK>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER BOXIS FÜR ABI OS ANRUFE
+
+MCS-CMD ~ GENERIERE-BOXH-ABI
+
+ MODULATOR ® MODUL 03-02
+
+BEDINGUNG:  
+¢!
+ »[<BOXK>
+!¢
+
+GENERIERE ® Ħ <OS-ABI> Ħ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER BOXIS FÜR SPEZIFISCHE OS-SYSCALLS (COMPOSITOREN ETC)
+
+MCS-CMD ~ GENERIERE-BOXH-SYSCALL
+
+ MODULATOR ® MODUL 03-03
+
+BEDINGUNG:  
+¢!
+ »[<BOXK>
+!¢
+
+GENERIERE ® , <OS-TYP> ,
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER BOXIS FÜR OS-SHELL ANSTEUERUNGEN
+
+MCS-CMD ~ GENERIERE-BOXH-SHELL
+
+ MODULATOR ® MODUL 03-04
+
+BEDINGUNG:  
+¢!
+ »[<BOXK>
+!¢
+
+GENERIERE ® , <OS-SHELL> ,
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

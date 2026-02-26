@@ -73,6 +73,18 @@ Wert in der Entdeckung sucht, findet die Freiheit.
 
                                 Pylovara bezahlt die Freiheit."
 
+
+Ebene       Zielgruppe          Syntax Belohnung                    (KWG)                         Validierung
+
+Level 1     Developer        Symbolisch (¢! »[ ]« !¢)         PYLO-COIN (Kleinbeträge)       VATRON prüft Syntax, 
+                                                                                              KKIS prüft Logik
+
+Level 2  Senior/Architekt   Absolute BSK (TRANK-AKT-POI...)   VARA-COIN (Mittelbeträge)     VATRON prüft Gatter-Kette, 
+                                                                                              KKIS prüft Effizienz
+
+
+Level 3   Module-Creator   Komplette Dateitypen (CORE/LCORE)  PYLOVARA-COIN (Hohe Werte)     Vollständiger Integrity-Scan (DIMS)
+
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [08:13:01|So Feb 22 2026] MARKENBRANDT                       #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

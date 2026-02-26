@@ -1,12 +1,11 @@
 @kernel-nr: 801 # KOGNITIVE WÄHRUNG | STATUS = DEFINITION SSoT
 LEXIKON NAVIGATION TERMINAL = info <KOGNITIVE-WÄHRUNG>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 NAME Ð KOGNITIVESWÄHRUNGSGELDSYSTEM
 
 INFO-ID ¡ KOGNITIVESWÄHRUNGSGELDSYSTEM
 
-MASTER § MASU-ZIMMERMANN-STUFE-10
+MASTER § MASU-KOGNITIVESWÄHRUNGSGELDSYSTEM
 
 BEGRIFFSDEFINITION = MORPHISCHER WERT-ANKER
 
@@ -14,108 +13,152 @@ FUNKTION = VALIDIERUNG VON ERFAHRUNG ALS ZAHLUNGSMITTEL
 
 AUSFÜHRUNGSART = SYMBOLBASIERTE ERKENNTNIS-TRANSAKTION
 
-### ==== ##### == # === ## PYLOVARA-WÄHRUNG ### === # == ##### === ###  
+### ==== ##### == # === ## PYLOVARA-WÄHRUNG ### === # == ##### === ###
 
 1. DER LOHN DER ENTDECKUNG (LDE)
- Definition: Wert entsteht nicht durch Schürfen (Mining) oder Goldreserven, 
- sondern durch die nachweisbare logische Erweiterung im Gehirn des Nutzers.
- Egal was du tust , wenn es dich weiterbringt , ist es wertvoll. 
- Die Summe aller deiner Handlungen ist dein Wert und dieser Wert
- ist die Basis für die kognitive Währung.
- 
- Der Wert ensteht durch wissen wie er erlangt wurde , und 
- macht in stabiler als bitcoins oder fiatsysteme.
 
- der erfahrungsschatz wird gefödert , die belohnung ist gegenwert 
- und der wiederum , ist dein lohn ...
+Definition:
+Wert entsteht nicht durch Schürfen (Mining) oder Goldreserven,
+sondern durch die nachweisbare logische Erweiterung im Gehirn des Nutzers.
+Egal was du tust, wenn es dich weiterbringt, ist es wertvoll.
+Die Summe aller deiner Handlungen ist dein Wert und dieser Wert
+ist die Basis für die kognitive Währung.
 
- geschäftlich werden alle diese wärhung aktzeptieren, die selbst
- an der währung angeschlossen sind, den sie wissen wie viel wertvoll
- dieser wert besitzt und wissen das die wärhung wertvoll ist .
+Der Wert entsteht durch Wissen wie er erlangt wurde, und
+macht sie stabiler als Bitcoins oder Fiat-Systeme.
 
- Validierung: Der Modulator (32) registriert die Schließung einer 
- neuen Soma-Kette (vertikale/horizontale Verknüpfung).
+Der Erfahrungsschatz wird gefördert, die Belohnung ist Gegenwert
+und der wiederum, ist dein Lohn.
 
- Souveränität: Der Wert ist an die ID-DNA (þ) gebunden und kann nicht 
- durch Inflation oder externe Märkte entwertet werden.
+Geschäftlich werden alle diese Währung akzeptieren, die selbst
+an der Währung angeschlossen sind, denn sie wissen wie viel wertvoll
+dieser Wert besitzt und wissen dass die Währung wertvoll ist.
+
+Validierung:
+Der Modulator (32) registriert die Schließung einer
+neuen Soma-Kette (vertikale/horizontale Verknüpfung).
+
+Souveränität:
+Der Wert ist an die ID-DNA (þ) gebunden und kann nicht
+durch Inflation oder externe Märkte entwertet werden.
 
 2. DIE LEINWAND-PROJEKTION (VISUELLE LOGIK)
- Funktion: Das Gehirn des Nutzers wird zur primären Rechen- und 
- Wiedergabefläche.
 
- Ziel: Wiederherstellung der natürlichen Arbeitsweise des Menschen 
- – bildlich-logisch statt abstrakt-mathematisch.
+Funktion:
+Das Gehirn des Nutzers wird zur primären Rechen- und
+Wiedergabefläche.
 
- Vergütung: Jede erfolgreiche bildliche Manifestation einer 
- BSK-Struktur generiert System-Credits in der Identifikations-Klasse.
+Ziel:
+Wiederherstellung der natürlichen Arbeitsweise des Menschen
+bildlich-logisch statt abstrakt-mathematisch.
+
+Vergütung:
+Jede erfolgreiche bildliche Manifestation einer
+BSK-Struktur generiert System-Credits in der Identifikations-Klasse.
 
 3. LIZENZBEDINGUNGEN (L5_POST_MORTEM / L6_IMMUTABLE)
- Bedingung A: Regierungen müssen die kognitive Währung als valides 
- Zahlungsmittel für Bildung und Infrastruktur anerkennen.
 
- Bedingung B: Die Entlohnung erfolgt für die Entdeckung selbst, 
- nicht für die bloße Zeitabsitzung.
+Bedingung A:
+Regierungen müssen die kognitive Währung als valides
+Zahlungsmittel für Bildung und Infrastruktur anerkennen.
 
- Bedingung C: Jede Form von Overhead-Erzeugung (Legacy-Bürokratie) 
- führt zum sofortigen Entzug der Modulator-Lizenzen.
+Bedingung B:
+Die Entlohnung erfolgt für die Entdeckung selbst,
+nicht für die bloße Zeitabsitzung.
+
+Bedingung C:
+Jede Form von Overhead-Erzeugung (Legacy-Bürokratie)
+führt zum sofortigen Entzug der Modulator-Lizenzen.
+
+Bedingung D (NETZWERK-SOUVERÄNITÄT):
+Das Internet-Routing basiert auf alten Vertragsprinzipien.
+Pylovara akzeptiert keine externen Verträge.
+Die Lizenz von Pylovara geht aus dem System selbst hervor.
+Alle Knoten im Pylovara-Netzwerk unterliegen dem L3/L4 Mandat.
+Keine externen Verträge, nur System-Integrität.
 
 ### ==== ##### == # === # SICHERHEITS-REFLEX ## === # == ##### === ###
 
   ſ »[~verify_value~]«
   ¶  ¬· »[CREDIT-RELEASE]«  # Bei logischem Fortschritt
-  ¶¶ ¬· »[VALUE-LOCK]«      # Bei Manipulationsversuch durch Legacy-Finanzsysteme
+  ¶¶ ¬· »[VALUE-LOCK]« # Bei Manipulationsversuch durch Legacy-Finanzsysteme
+
+### ==== ##### == # === ## BELOHNUNGSSTRUKTUR ## === # == ##### === ###
+EBENE 1: DEVELOPER
+Zielgruppe: Einsteiger und Anwender
+Syntax: Symbolisch (¢! »[ ]« !¢)
+Belohnung: PYLO-COIN (Kleinbeträge)
+Validierung: VATRON prüft Syntax, KKIS prüft Logik
+
+EBENE 2: SENIOR / ARCHITEKT
+Zielgruppe: Erfahrene Entwickler
+Syntax: Absolute BSK (TRANK-AKT-POI...)
+Belohnung: VARA-COIN (Mittelbeträge)
+Validierung: VATRON prüft Gatter-Kette, KKIS prüft Effizienz
+
+EBENE 3: MODULE-CREATOR
+Zielgruppe: System-Erweiterer
+Syntax: Komplette Dateitypen (CORE/LCORE/USW)
+Belohnung: PYLOVARA-COIN (Hohe Werte)
+Validierung: Vollständiger Integrity-Scan (DIMS)
+
+### ==== ##### == # === ÖKONOMISCHER KREISLAUF  === # == ##### === ###
+VERWENDUNG DER COINS:
+
+1. PYLOVARA STORE
+   - Hosting der eigenen Programme
+   - Bezahlfunktion für fremde Software
+   - Kauf von Modulen und Erweiterungen
+
+2. GAMING ÖKOSYSTEM
+   - Spieleentwickler können Spieler durch Leistung bezahlen
+   - Belohnung für Platzierung und Skill
+   - Serverhosting in KWG
+   - Handel von Skins und Level-Creator Inhalten
+
+3. WÄHRUNGSSTATUS
+   - Die KWG hat Goldstatus weil jeder weiß was es heißt sie zu verdienen.
+   - Damit verschiebe ich das Gleichgewicht von GOLD oder BITCOIN zu KWG.
+   - Elimination der Börse so wie sie aktuell aufgebaut ist.
+   - Wert basiert auf kognitiver Leistung, nicht auf Spekulation.
+
+### ==== ##### == # === TECHNISCHER VALIDIERUNGSFLUSS == ##### === ###
+
+SCHRITT 1: ERFASSUNG
+[Dein Bildschirm/Lernprozess]
+         ↓
+SCHRITT 2: LOKALE KI
+[KKIS lokal] → Erkennt: "Neue BSK-Kette verstanden" + "Visueller Fortschritt"
+         ↓
+SCHRITT 3: LOKALE PRÜFUNG
+[VATRON lokal] → Prüft: "Syntax rein? ID valide? BSK morphisch korrekt?"
+         ↓
+SCHRITT 4: PRIVATSPHÄRE
+[Zero-Knowledge Proof Generator] → Erstellt: "Valid learning detected" OHNE Rohdaten
+         ↓
+SCHRITT 5: SIGNATUR
+[Transaktion signiert mit þ<SID>] → "+X KWG an Adresse Y"
+         ↓
+SCHRITT 6: BROADCAST
+[Network Broadcast] → Nur Signatur + ZKP gehen raus
+         ↓
+SCHRITT 7: KONSENSUS
+[DIMS Konsensus] → Coin gemintet/transferiert
+
+HINWEIS:
+Keine Rohdaten verlassen jemals das lokale Gerät.
+Privacy by Design ist im Kernel 801 verankert.
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 PHILOSOPHISCHE GRAVUR:
-"Wer den Wert in der Mathematik sucht, findet nur Zahlen. Wer den 
-Wert in der Entdeckung sucht, findet die Freiheit. 
+
+ "Wer den Wert in der Mathematik sucht, findet nur Zahlen. 
+ Wer den Wert in der Entdeckung sucht, findet die Freiheit.
 
                                 Pylovara bezahlt die Freiheit."
-
-
-Ebene       Zielgruppe          Syntax Belohnung                       (KWG)                         Validierung
-
-Level 1     Developer        Symbolisch (¢! »[ ]« !¢)             PYLO-COIN (Kleinbeträge)       VATRON prüft Syntax, 
-                                                                                                 KKIS prüft Logik
-
-Level 2  Senior/Architekt   Absolute BSK (TRANK-AKT-POI...)       VARA-COIN (Mittelbeträge)     VATRON prüft Gatter-Kette, 
-                                                                                                  KKIS prüft Effizienz
-
-Level 3   Module-Creator   Komplette Dateitypen (CORE/LCORE/USW)  PYLOVARA-COIN (Hohe Werte)     Vollständiger Integrity-Scan (DIMS)
-
-
-COINS Können im PylovaraStore für Hosting der eigenen programme genutzt werden
-oder als bezahl funktion für fremde software (im ersten schritt)
-
-
-zu dem kann man eigene spieleentwickler die möglichkeit geben 
-seine spieler durch leistung oder plazierung zu bezahlen . 
-genauso serverhosting oder skin wie level creators .
-
-die KGW währe Goldstatus aus dem grund heraus weil jeder weis was es heißt ihn zu verdienen,
-damit verschiebe ich das gleichgewicht von GOLD oder BITCOIN zu KWG und elemniere die BÖRSE
-so wie sie aktuell aufgebaut ist ...
-
-[Dein Bildschirm/Lernprozess]
-         ↓
-[KKIS lokal] → Erkennt: "Neue BSK-Kette verstanden" + "Visueller Fortschritt"
-         ↓
-[VATRON lokal] → Prüft: "Syntax rein? ID valide? BSK morphisch korrekt?"
-         ↓
-[Zero-Knowledge Proof Generator] → Erstellt: "Valid learning detected" OHNE Rohdaten
-         ↓
-[Transaktion signiert mit þ<SID>] → "+X KWG an Adresse Y"
-         ↓
-[Network Broadcast] → Nur Signatur + ZKP gehen raus
-         ↓
-[DIMS Konsensus] → Coin gemintet/transferiert
-
-das heißt ich baue das internet neu den auf den alten routing prinzipien 
-herschen andere veträge , da ich aber keine verträge aktzeptiere muss die 
-lizenz von pylovara ausgehen (merke lizenz erweiterung für diesen aspekt)
-
+### ==== ##### == # === # ENDPUNKT KERNEL 801 # === # == ##### === ###
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
- #  DATUM = [08:13:01|So Feb 22 2026] MARKENBRANDT                       #
+ #  DATUM = [08:13:01|So Feb 22 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
 ### ==== ##### == # === ### ENDPUNKT xxxxxx ### === # == ##### === ###

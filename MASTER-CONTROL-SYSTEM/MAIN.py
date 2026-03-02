@@ -10,6 +10,6 @@ from BIOS.LOOP.LOOP import CognitiveLoop
 
 LOOP = CognitiveLoop()
 
-for i in range(10000000000):
+for i in range(500000):
     score = LOOP.step()
     print(f"[{i}] SCORE={score}")

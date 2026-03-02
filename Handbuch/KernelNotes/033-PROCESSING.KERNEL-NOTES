@@ -38,10 +38,10 @@ MASTER § MASU-CHIPONATOR
   1 © ¬······ ¶¶ſ ¢!!¢ §$¡# ØĸĸØ
   2 ® ¬······ ¤ : = ↑↓ ›‹ 
   3 Ŧ ¬······ ¹²³ ° º ~ " - ¥ ' ,
-  4 » ¬······ | « «« NST EB 
+  4 » ¬······ | 
   5 « ¬······ 
   6 [ ¬······
-  7 ] ¬······
+  7 ] ¬······ « «« NST EB Ω ſ
   8 { ¬······
   9 } ¬······
   0 A BCDEFGH IJK LMNOPQRSTUVWXYZ
@@ -59,8 +59,51 @@ MASTER § MASU-CHIPONATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+¢!
+# Beispiel Schaltung (meine inspirationsschablote von normalem programme *.*-lcore)
+
+»['exec <SPIEL>']
+ ↓  »[~run intelarc~]«
+ ↓   -· »[~prozess gpu-core~]
+ ↓   ↓   ¶ -· [~run ast intelarc.gpu-core~]«««T1
+ ↓   ↓        ¶ -· [~run intelarc.gpu-lcore~]«T2
+ ↓   ↓             ¶ -· [~run intelarc.gpu-vcore~]«T3
+ ↓   ↓                  ¶ -· [~run intelarc.gpu-mcore~]«T4
+ ↓   ↓                       ¶ -· [~run intelarc.gpu-fcore~]«T5
+ ↓   ¶¶ -· »[~debugging log to /Pylovara/~{~WATT~|°200.00°}]«
+ ↓   ↓
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+ ↓   ↓         ¶ -·· »['run /SPI/Runtime Service']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
+ ↓             ¶ -·· »['']
+ ↓
+ © »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
+    ¶ -· »[~syncronisiere 8taktryhtmus~]«
+
+!¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
   0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 
+  1 ® ©
   2 
   3
   4

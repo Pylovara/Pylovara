@@ -7,6 +7,45 @@
  # Phase 3 (ASIC 100mm²)	400 Millionen Blöcke	444.444×
  # Phase 4 (3D 100 Layer)	40 Milliarden Blöcke	44 Millionen ×
  # Phase 5 (M.C.S.Chips)    ~ Unendliche Blöcke ~ 
+
+ # ¢!
+ # # Beispiel Schaltung (meine inspirationsschablote von normalem programme *.*-lcore)
+ # »['exec <SPIEL>']
+ # ↓  »[~run intelarc~]«
+ # ↓   -· »[~prozess gpu-core~]
+ # ↓   ↓   ¶ -· [~run ast intelarc.gpu-core~]«««T1
+ # ↓   ↓        ¶ -· [~run intelarc.gpu-lcore~]«T2
+ # ↓   ↓             ¶ -· [~run intelarc.gpu-vcore~]«T3
+ # ↓   ↓                  ¶ -· [~run intelarc.gpu-mcore~]«T4
+ # ↓   ↓                       ¶ -· [~run intelarc.gpu-fcore~]«T5
+ # ↓   ¶¶ -· »[~debugging log to /Pylovara/~{~WATT~|°200.00°}]«
+ # ↓   ↓
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+ # ↓   ↓         ¶ -·· »['run /SPI/Runtime Service']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
+ # ↓   ↓         ¶ -·· »['']
+ # ↓   Ŧ² -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
+ # ↓             ¶ -·· »['']
+ # ↓
+ # © »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
+ #    ¶ -· »[~syncronisiere 8taktryhtmus~]«
+ # !¢
 ### ==== ##### == # ===  STARTPUNKT PROCESSING  === # == ##### === ###
 
 NAME Ð CHIPONATOR
@@ -59,54 +98,59 @@ MASTER § MASU-CHIPONATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-¢!
-# Beispiel Schaltung (meine inspirationsschablote von normalem programme *.*-lcore)
+  0ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  1 ®®®®®®®®®®®®®®®®®®®®®®®®
+  2 ©©©©©©©©©©©©©©©©©©©©©©©©
+  3 ŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦŦ
+  4 ¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹
+  5 ²²²²²²²²²²²²²²²²²²²²²²²²
+  6 ³³³³³³³³³³³³³³³³³³³³³³³³
+  7 °°°°°°°°°°°°°°°°°°°°°°°°
+  8 ºººººººººººººººººººººººº
+  9 ××××××××××××××××××××××××
+ 10 ~~~~~~~~~~~~~~~~~~~~~~~~
+ 11 ,,,,,,,,,,,,,,,,,,,,,,,,
+ 12 ------------------------
+ 13 ''''''''''''''''''''''''
+ 14 """"""""""""""""""""""""
+ 15 ()()()()()()()()()()()()
+ 16 [][][][][][][][][][][][]
+ 17 {}{}{}{}{}{}{}{}{}{}{}{}
+ 18 ±±±±±±±±±±±±±±±±±±±±±±±±
+ 19 »»»»»»»»»»»»»»»»»»»»»»»»
+ 20 ««««««««««««««««««««««««
+ 21 ››››››››››››››››››››››››
+ 22 ‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹
+ 23 ########################
+ 24 ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+ 25 ························
+ 26 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+ 27 ========================
+ 28 ::::::::::::::::::::::::
+ 29 ||||||||||||||||||||||||
+ 30 ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+ 31 ſſſſſſſſſſſſſſſſſſſſſſſſ
+ 32 NNNNNNNNNNNNNNNNNNNNNNNN
+ 33 SSSSSSSSSSSSSSSSSSSSSSSS
+ 34 TTTTTTTTTTTTTTTTTTTTTTTT
+ 35 BBBBBBBBBBBBBBBBBBBBBBBB
+ 36 EEEEEEEEEEEEEEEEEEEEEEEE
+ 37  
 
-»['exec <SPIEL>']
- ↓  »[~run intelarc~]«
- ↓   -· »[~prozess gpu-core~]
- ↓   ↓   ¶ -· [~run ast intelarc.gpu-core~]«««T1
- ↓   ↓        ¶ -· [~run intelarc.gpu-lcore~]«T2
- ↓   ↓             ¶ -· [~run intelarc.gpu-vcore~]«T3
- ↓   ↓                  ¶ -· [~run intelarc.gpu-mcore~]«T4
- ↓   ↓                       ¶ -· [~run intelarc.gpu-fcore~]«T5
- ↓   ¶¶ -· »[~debugging log to /Pylovara/~{~WATT~|°200.00°}]«
- ↓   ↓
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
- ↓   ↓         ¶ -·· »['run /SPI/Runtime Service']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
- ↓             ¶ -·· »['']
- ↓
- © »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
-    ¶ -· »[~syncronisiere 8taktryhtmus~]«
-
-!¢
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+ ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
   0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 ® ©
-  2 
-  3
-  4
+  1 
+  2 »[BOXH-ELEMENT]«
+  3  ¬·¤: »[BOXH-ABI]«
+  4  ¬·¤: »[BOXH-ALU]«
+           ¬··¤= »[× * ×]«
+  4  ¬·¤: »[BOXH-SYSCALL]«
+  5  ¬·¤: »[BOXH-SHELL]«
+  6  ¬·¤: »[BOXH-MCS-CMD]«
+  7  ¬·¤: »[BOXH-CACHE]«
+  8  ¬·¤: »[BOXH-PRINT]«
+
   5
   6
   7
@@ -149,150 +193,6 @@ MASTER § MASU-CHIPONATOR
  20
 
  ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 
-  2 
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
-
- ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 
-  2 
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
-
- ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 
-  2 
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
-
- ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 
-  2 
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
-
- ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 
-  2 
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
-
- ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  1 
-  2 
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 
   0ABCDEFGHIJKLMNOPQRSTUVWXYZ
   1 

@@ -1,7 +1,7 @@
 @kernel-nr: 33 # CHIPONATOR | STATUS = DEV LEVEL ROLLING-RELEASE
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
- #
+ # 
 ### ==== ##### == # ===  STARTPUNKT PROCESSING  === # == ##### === ###
 
 NAME Ð CHIPONATOR
@@ -99,38 +99,48 @@ MASTER § MASU-CHIPONATOR
  
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# BOXIS ZEICHENDRUCK
+# AKTIONSBLOCK BAU BILD MIT POIWERK
 
-   0ABCDEFGHIJKLMNOPQRSTUVWXYZ
-   1 »[»[»[»[»[»[»[»[»[»[»[»[
-   2 ]«]«]«]«]«]«]«]«]«]«]«]«
-   3 »[Ħ <OS-ABI> Ħ]«
-   4 »[, <OS-TYP> ,]«
-   5 »[<OS-SHELL>]«
-   6 »[<PRINT>]«
-   7 »[× <ALU> ×]«
-   8 »[~ <MCCK> ~]«
-   9 »[¥ <CACHE> ¥]«
-  10 »[º <MASCHINENCODE> º]«
-  11 »[BOXH-ELEMENT]«
-  12 »[BOXH-ABI]«
-  13 »[BOXH-ALU]«
-  14 »[BOXH-SYSCALL]«
-  15 »[BOXH-SHELL]«
-  16 »[BOXH-MCS-CMD]«
-  17 »[BOXH-CACHE]«
-  18 »[BOXH-PRINT]«
-  19 »[BOXK]«
-  20 »[BOXK-TRENK-BOXK]«
-  21 »[BOXK-TRENO-1-BOXK]«
-  
-
+  0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+  1 »
+  2 »[
+  3 »[]
+  4 »[]«
+  5 »[]
+  6 »[]
+  7 »[]
+  8  ¬· []«
+  9 »[]
+ 10  ¬· []«
+ 11  ¬· []«
+ 12 »[]
+ 13  ¬· []«
+ 14  ¬· []«
+ 15  ¬· []«
+ 16 »[]«
+ 17  ¬· []«
+ 18  ¬· []«
+ 19  ¬· []«
+ 20  ¬· []«
+ 21 »[]«
+ 22  ¬· []«
+ 23  ¬· []«
+ 24  ¬· []«
+ 25  ¬· []«
+ 26  ¬· []«
+ 27 »[]«
+ 28  ¬· []«
+ 29  ¬· []«
+ 30  ¬· []«
+ 31  ¬· []«
+ 32  ¬· []«
+ 33  ¬· []«
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # BOXIS IM REX OPTIONEN ZEICHENBLOCK
 
-   0ABCDEFGHIJKLMNOPQRSTUVWXYZÆÜÄÖÐŊŦ
+   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
    1 »[MASU-BOXIS]«
    2  ¬· »[BOXH-ELEMENT]«
    2      ¬· »[BOXH-ABI]«

@@ -132,53 +132,27 @@ MASTER § MASU-CHIPONATOR
 
    0ABCDEFGHIJKLMNOPQRSTUVWXYZÆÜÄÖÐŊŦ
    1 »[MASU-BOXIS]«
-   2  ¬·· »[BOXH-ABI]«
-   3      ¬·¤: »[Ħ <OS-ABI> Ħ]«
-   4  ¬·· »[BOXH-ALU]«
-   5      ¬·¤: »[× <ALU> ×]«
-   6  ¬·· »[BOXH-SYSCALL]«
-   7      ¬·¤: »[, <OS-TYP> ,]«
-   8  ¬·· »[BOXH-SHELL]«
-   9      ¬·¤: »[<OS-SHELL>]«
-  10  ¬·· »[BOXH-MCS-CMD]«
-  11      ¬·¤: »[~ <MCCK> ~]«
-  12  ¬·· »[BOXH-CACHE]«
-  13      ¬·¤: »[¥ <CACHE> ¥]«
-  14  ¬·· »[BOXH-PRINT]«
-  15      ¬·¤: »[<PRINT>]«
-  16  ¬·· »[BOXH-MASCHINENCODE]«
-  17      ¬·¤: »[º <MASCHINENCODE> º]«
+   2  ¬· »[BOXH-ELEMENT]«
+   2      ¬· »[BOXH-ABI]«
+   3          ¬·¤: »[Ħ <OS-ABI> Ħ]«
+   4      ¬· »[BOXH-ALU]«
+   5          ¬·¤: »[× <ALU> ×]«
+   6      ¬· »[BOXH-SYSCALL]«
+   7          ¬·¤: »[, <OS-TYP> ,]«
+   8      ¬· »[BOXH-SHELL]«
+   9          ¬·¤: »[<OS-SHELL>]«
+  10      ¬· »[BOXH-MCS-CMD]«
+  11          ¬·¤: »[~ <MCCK> ~]«
+  12      ¬· »[BOXH-CACHE]«
+  13          ¬·¤: »[¥ <CACHE> ¥]«
+  14      ¬· »[BOXH-PRINT]«
+  15          ¬·¤: »[<PRINT>]«
+  16      ¬· »[BOXH-MASCHINENCODE]«
+  17          ¬·¤: »[º <MASCHINENCODE> º]«
 
   18
   19
   20
- 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-# BOXH ELEMENT ANSTEUERUNG ZEICHENBLOCK
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZÆÜÄÖ
-  1 
-  2 »[BOXH-ELEMENT]«
-  3  ¬·· »[BOXH-ABI]«
-  4       ¬·¤: »[Ħ <OS-ABI> Ħ]«
-  5  ¬·· »[BOXH-ALU]«
-  6       ¬·¤: »[× <ALU> ×]«
-  7  ¬·· »[BOXH-SYSCALL]«
-  8       ¬·¤: »[, <OS-TYP> ,]«
-  9  ¬·· »[BOXH-SHELL]«
- 10       ¬·¤: »[<OS-SHELL>]«
- 11  ¬·· »[BOXH-MCS-CMD]«
- 12       ¬·¤: »[~ <MCCK> ~]«
- 13  ¬·· »[BOXH-CACHE]«
- 14       ¬·¤: »[¥ <CACHE> ¥]«
- 15  ¬·· »[BOXH-PRINT]«
- 16       ¬·¤: »[<PRINT>]«
-
- 17
- 18
- 19
- 20
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -219,4 +193,4 @@ MASTER § MASU-CHIPONATOR
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [12:09:13|Mo Mär 02 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-### ==== ##### == # === # ENDPUNKT MODULATOR ## === # == ##### === ###
+### ==== ##### == # === # ENDPUNKT CHIPONATOR # === # == ##### === ###

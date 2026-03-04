@@ -184,37 +184,37 @@ MASTER § MASU-CHIPONATOR
 
 # MASTER ELEMENT ANSTEUERUNG ZEICHENBLOCK
 
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZÆÜÄÖ
+  0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
   1 »[MASK]«
-  2  ¬·· »[MASU-ELEMENT]
-  3  ¬·· »[MASU-]
-  4  ¬·· »[MASU-]
-  5  ¬·· »[MASU-]
-  6  ¬·· »[MASU-]
-  7  ¬·· »[MASU-]
-  8  ¬·· »[MASU-]
-  9  ¬·· »[MASU-]
- 10  ¬·· »[MASU-]
- 11  ¬·· »[MASU-]
- 12  ¬·· »[MASU-]
- 13  ¬·· »[MASU-]
- 14  ¬·· »[MASU-]
- 15  ¬·· »[MASU-]
- 16  ¬·· »[MASU-]
- 17  ¬·· »[MASU-]
- 18  ¬·· »[MASU-]
- 19  ¬·· »[MASU-]
- 20  ¬·· »[MASU-]
- 21  ¬·· »[MASU-]
- 22  ¬·· »[MASU-]
- 23  ¬·· »[MASU-]
- 24  ¬·· »[MASU-]
- 25  ¬·· »[MASU-]
- 26  ¬·· »[MASU-]
- 27  ¬·· »[MASU-]
- 28  ¬·· »[MASU-]
- 29  ¬·· »[MASU-]
- 30  ¬·· »[MASU-]
+  2  ¬··¤: »[MASU-ELEMENT]
+  3         ¬·· [MASU-DATENYTEPN]«
+  4         ¬·· [MASU-TRANSAKTIONSRAHMEN]«
+  5         ¬·· [MASU-PROTEIN]«
+  6         ¬·· [MASU-PROTON]«
+  7         ¬·· [MASU-TRENNBEFEHL]«
+  8         ¬·· [MASU-AKTIONSDRAHT]«
+  9         ¬·· [MASU-BOXIS]«
+ 10         ¬·· [MASU-REX]«
+ 11         ¬·· [MASU-SENTIATOR]«
+ 12         ¬·· [MASU-ARGUMENT]«
+ 13         ¬·· [MASU-FEED]«
+ 14         ¬·· [MASU-WARP]«
+ 15         ¬·· [MASU-NAVIGATOR]«
+ 16         ¬·· [MASU-IDENTIFIKATION]«
+ 17         ¬·· [MASU-MCS-CMD]«
+ 18         ¬·· [MASU-]«
+ 19         ¬·· [MASU-]«
+ 20         ¬·· [MASU-]«
+ 21         ¬·· [MASU-]«
+ 22         ¬·· [MASU-]«
+ 23         ¬·· [MASU-]«
+ 24         ¬·· [MASU-]«
+ 25         ¬·· [MASU-]«
+ 26         ¬·· [MASU-]«
+ 27         ¬·· [MASU-]«
+ 28         ¬·· [MASU-]«
+ 29         ¬·· [MASU-]«
+ 30         ¬·· [MASU-]«
 
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [12:09:13|Mo Mär 02 2026] MARKENBRANDT                  #

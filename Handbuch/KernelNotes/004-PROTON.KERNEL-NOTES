@@ -1,7 +1,9 @@
 @kernel-nr: 04 # PROTON | STATUS = ·
-#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>     #
-### ==== ##### == # === ## STARTPUNKT PROTON ### === # == ##### === ###
-
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ # { *V | *A } WERDEN SPÄTER BERÜCKSICHTIGTE PUNKTE                  
+### ==== ##### == # === ## STARTPUNKT PROTON ## === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 NAME Ð PROTON
 
  INFO-ID ¡ PROTON
@@ -28,7 +30,7 @@ PROTON-HAUPTKLASSE § POOH-HARD
 
  FUNKTION = VERSORGUNGSRAHMEN
 
-SYMBOLISCHE DEKLARATION § {…}
+SYMBOLISCHE DEKLARATION § { <MASK> }
 
  SYMBOLIK IN WORTEN = GESCHWEIFTEKLAMMER-AUF GESCHWEIFTEKLAMMER-ZU
 
@@ -43,6 +45,30 @@ PROTON-HARD-UNTERKLASSE § POOU-START
 SYMBOLISCHE DEKLARATION § {
 
  SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+PROTON-HARD-START-WERTKLASSE § POOWERT-EINGABE-TRENO-1
+
+ INFO = ÖFFNET DIE HARDWAREVERSORGUNG 
+
+ FUNKTION = VERSORGUNGSRAHMEN START BEDINGUNG
+
+SYMBOLISCHE DEKLARATION § {<WERT>|
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF WERTEINGABE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+PROTON-HARD-START-WERTKLASSE § POOWERT-WERT-TRENO-1-WERT
+
+ INFO = ÖFFNET DIE HARDWAREVERSORGUNG 
+
+ FUNKTION = VERSORGUNGSRAHMEN START BEDINGUNG
+
+SYMBOLISCHE DEKLARATION § {<WERT>|<WERT>
+
+ SYMBOL IN WORTEN = GESCHWEIFTE KLAMMER AUF WERTEINGABE
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

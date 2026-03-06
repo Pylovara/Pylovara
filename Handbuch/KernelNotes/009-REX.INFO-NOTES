@@ -3,36 +3,6 @@
 @info-id: REX-DEV
 #====================================================================#
 
-¢|
-# 1. 10 MB in Bytes berechnen (ALU-RECHNER)
-»[× 10 · 1024 · 1024 ×]«
- -·¤= »["(1)±10485760±"]«
-
-# 2. Ergebnis in Feed 1 speichern (CMD-FEED)
-»[~TRANSFER BOXIS ¬ MACH TF 1~|"±10485760±(1)"]«
-
-# 3. Dateigröße mit Feed 1 vergleichen (SENTIATOR-MEHRWERT)
-»[× $file_size > ±WERT±(1) ×]«
- -··¤= »["is_large"]«
-
-# 4. Wenn größer (SENTIATOR-KANN-IMPULS)
-     ¶ -·· »["is_large"]
-     # 4a. Komprimieren (SHELL-CONTROL)
-           -·· ['gzip "$file_path"']«
-           -·· »["compress_ok"]«
-
-            ¶ »["compress_ok"]
-            # 4b. Pfad erweitern (SHELL-CONTROL)
-               ['file_path="${file_path}.gz"']«
-               -···¤= »["new_path"]«
-
-# 4c. Neuen Pfad in Feed 2 speichern
-»[~TRANSFER BOXIS ¬ MACH FF 2~|"(2)±${file_path}.gz±"]«
-# 5. Wenn nicht größer (SENTIATOR-NICHT-IMPULS)
- ¶¶ -··> »["is_large"]«««t5
-    -··> »["Datei ist klein, keine Komprimierung nötig."]«««t6
-¢|
-
 #====================================================================#
 @info-id: REX
 #====================================================================#
@@ -73,71 +43,4 @@
 
 #====================================================================#
 @info-id: REX-AUSLÖSER-WORKSPACE
-#====================================================================#
-
- EIN WORKSPACE
-
- (–·¤, –··¤, …) IS KEIN EINFACHER SPEICHERORT, SONDERN EIN
- BEARBEITUNGS-KONTEX FÜR EIN PROTEIN.
-
- INNERHALB EINES WORKSPACE KANN EIN CONTAINER-PROTEIN STEHEN :
-
- → ['BOXI-1'|"BOXI-2"|,BOXI-3,]
-
- DIE PROTEIN LOGIK IST EIN STAPEL PRINZIP VON BOXIS DIE FÜR
- EIN PROZESSRAHMEN GEBRAUCHT WERDEN KÖNNEN.
-
- DER MCS PARSER VERARBEITET SAUBER GETRENNT UND SEQUENZIELL/PARALLEL
- FORK ¤‹
- MERGE ¤›
- SORTIERUNG ¤↑ ¤↓
-
-
- Beispiel aus deiner Vision (angepasst):
- »['echo "------ MCS CODE ------" && cat test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
- -·¤↑ »[boxi1] [boxi2] [boxi3]«  # Fork + aufsteigende Sortierung
-     -·¤= [(1)°°]«               # Zuweisung in Fork
-     ¶ -· ['echo Fork OK']«
- -··¤↓ »[boxi1] [boxi2] [boxi3]« # Zweiter Fork + absteigende Sortierung
-     -··¤= [(2)°°]«
-     ¶ -·· ['echo Fork OK']«
- -···› »[°(1)° + °(2)°]«         # Merge aus beiden Forks
-     ¶ -··· ['echo Merge erfolgreich']«
-     ¶¶ -··· ['echo Merge fehlgeschlagen']«
-
- DA ES ABSOLUT PARALLEL UND SYNCRONISIERBAR ÜBER DEN 8 TAKRT
- HERZSCHLAG IST.
-
-#====================================================================#
-@info-id: REX-AUSLÖSER-OPTIONSKLASSE-KORDI
-#====================================================================#
-
-¢!
- # REX-AUSLÖSER-WORKSPACE-OPTIONEN-PROZESS
-
- »['sudo pacman -Syyu']
-  -·¤: [sudo] Passwort für bandino: 
- :: Paketdatenbanken werden synchronisiert …
- core                                                122,0 KiB   592 KiB/s 00:00 [----------------------------------------------] 100%
- extra                                                 7,9 MiB  4,41 MiB/s 00:02 [----------------------------------------------] 100%
- multilib                                            126,9 KiB   486 KiB/s 00:00 [----------------------------------------------] 100%
- :: Vollständige Systemaktualisierung wird gestartet …
- Abhängigkeiten werden aufgelöst …
- Nach in Konflikt stehenden Paketen wird gesucht …
-
- Paket (2)              Alte Version  Neue Version  Netto-Veränderung  Größe des Downloads
-
- extra/lilv             0.26.2-2      0.26.2-3               0,00 MiB             0,08 MiB
- extra/python-markdown  3.10.0-2      3.10.1-1               0,00 MiB             0,19 MiB
-
- Gesamtgröße des Downloads:             0,27 MiB
- Gesamtgröße der installierten Pakete:  1,39 MiB
- Größendifferenz der Aktualisierung:    0,00 MiB
-
-  ¬·¤: »[':: Installation fortsetzen? [J/n]']«
-        ¶ ¬· ['j']«
-              ¶ ¬· ['ENTER']«
-              ¶¶ ¬· ['exit']«««ſ
-!¢
-
 #====================================================================#

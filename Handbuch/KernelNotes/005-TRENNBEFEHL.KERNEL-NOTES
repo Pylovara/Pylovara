@@ -37,7 +37,7 @@ TRENNBEFEHL-HAUPTKLASSE § TRENH-WAND
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-TRENNBEFEHL-SPALT-UNTERKLASSE § TRENU-START
+TRENNBEFEHL-WAND-UNTERKLASSE § TRENU-START
 
  INFO = CONTAINERISIERUNGSTRENNUNG VON BOXIS ZU BOXIS
 
@@ -45,7 +45,7 @@ TRENNBEFEHL-SPALT-UNTERKLASSE § TRENU-START
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-TRENNBEFEHL-SPALT-START-OPTIONSKLASSE § TRENO-SPALT
+TRENNBEFEHL-WAND-START-OPTIONSKLASSE § TRENO-SPALT
 
  INFO = CONTAINERISIERUNGSTRENNUNG VON BOXIS ZU BOXIS 
 
@@ -57,7 +57,7 @@ SYMBOLISCHE DEKLARATION * |
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-TRENNBEFEHL-SPALT-TRENO-<NR>-ANKERKLASSE § TRENAN-ENDE
+TRENNBEFEHL-START-SPALT-ANKERKLASSE § TRENAN-ENDE
 
  INFO = CONTAINERISIERUNGSTRENNUNG VON 4 BOXIS
 
@@ -65,8 +65,10 @@ TRENNBEFEHL-SPALT-TRENO-<NR>-ANKERKLASSE § TRENAN-ENDE
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK = TRENU-START-TRENO-SPALT-TRENAN-ENDE                       #
- # VSBK = TRENH-WAND-TRENO-SPALT-TRENAN-ENDE                        #                
- # RBSK = TRENK-BOXK                                                #          
+ # VSBK = TRENH-WAND-TRENU-START-TRENO-SPALT-TRENAN-ENDE            #                
+ # RBSK = TRENK                                                     #
+ # RBSK = BOXK-TRENK-POOK                                           #
+ # RBSK = BOXK-TRENK-BOXK-TRENK-POOK                                #        
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

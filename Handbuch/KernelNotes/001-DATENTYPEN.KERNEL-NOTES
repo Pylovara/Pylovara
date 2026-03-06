@@ -87,47 +87,26 @@ MCS-TYP § þ-SID
  BEZEICHNUNG = IDENTITÄTS-TYP
  BIT-BREITE = VARIABLE
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 MCS-TYP § INIT-V
-
  DATENTYPENKATEGORIEN = PROTEIN
-
  INFO = INITIALISIERUNGS-VEKTOR
-
  FUNKTION = LÄDT KONFIGURATIONEN BEIM START
-
  BEZEICHNUNG = PROTEIN-STARTPUNKT
-
  BIT-BREITE = 64+
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 MCS-TYP § KKIS-CMD
-
  DATENTYPENKATEGORIEN = PROTEIN
-
  INFO = SCHNITTSTELLE FÜR KKIS-HANDSHAKE
-
  FUNKTION = ABGLEICH DER SIGNATUREN
-
  BEZEICHNUNG = KONSENS-TYP
-
  BIT-BREITE = 128
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § P-CMD
-
+MCS-TYP § POIH-SOFT
  DATENTYPENKATEGORIEN = PROTEIN
-
  INFO = TRÄGER FÜR KERNEL BEFEHLE
-
  FUNKTION = KAPSELUNG
-
  BEZEICHNUNG = BEFEHLS-PROTEIN
-
  BIT-BREITE = 16/32
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 MCS-TYP § PR-PHYS

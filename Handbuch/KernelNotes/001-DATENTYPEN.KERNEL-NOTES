@@ -122,271 +122,40 @@ MCS-TYP § F-REF
  BEZEICHNUNG = ZUSTANDS-REFERENZ
  BIT-BREITE = 16/32
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 MCS-TYP § PR-VAL
-
  DATENTYPENKATEGORIEN = PROTON
-
  INFO = REINE NUMMERISCHE ODER BOOLESCHE WERTE FÜR PROTON INHALT
-
  FUNKTION = DIENT ALS OPERAND FÜR OPERATOREN
-
  BEZEICHNUNG = LOGIK-WERT
-
  BIT-BREITE = 1/64
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 MCS-TYP § PR-DNA
-
  DATENTYPENKATEGORIEN = PROTON
-
  INFO = PLATZHALTER
-
  FUNKTION = PLATZHALTER
-
  BEZEICHNUNG = BIO-SCHNITTSTELLE
-
  BIT-BREITE = VARIABEL
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 MCS-TYP = PLATZHALTER 
-
  DATENTYPENKATEGORIEN = PROTON
-
  INFO = PLATZHALTER
-
  FUNKTION = PLATZHALTER
-
  BEZEICHNUNG = PLATZHALTER
-
  BIT-BREITE = PLATZHALTER
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 MCS-TYP § B-ROOT
-
  DATENTYPENKATEGORIEN = BOOT-LOGIK
-
  INFO = HÖCHSTE ADRESSIERUNGSEBENE FÜR DEN HARDWARE-ZUGRIFF
-
  FUNKTION = ROOT-ZUGRIFF-DEV
-
  BEZEICHNUNG = MASTER-ZWEIG
-
  BIT-BREITE = 128
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 MCS-TYP § SYS-RST
-
  DATENTYPENKATEGORIEN = BOOT-LOGIK
-
  INFO = HARDWIRED RESET-TRIGGER
-
  FUNKTION = ERZWINGT BEREINIGUNG
-
  BEZEICHNUNG = ADRESSIERUNG-PFAD
-
  BIT-BREITE = 32
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § B64
-
- DATENTYPENKATEGORIEN = KERNEL
-
- INFO = GROẞE DATENSTRÖME, MODERNE SPEICHERADRESSIERUNG.
-
- FUNKTION = TRANSPORTIERT KOMPLEXE PROTEINE MIT MAXIMALER BANDBREITE
-
- BEZEICHNUNG = HIGH-SPEED-PFAD
-
- BIT-BREITE = 64
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § B-INF
-
- DATENTYPENKATEGORIEN = KERNEL
-
- INFO = MASSENZUSAMMENSETZUNG
-
- FUNKTION = SCHALTZUSTAND ÖFFNEN / SCHLIEẞEN
-
- BEZEICHNUNG = MASSENTYP
-
- BIT-BREITE = 64
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § B-þA
-
- DATENTYPENKATEGORIEN = ID-DNA-GENERATOR
-
- INFO = DIENT ALS ABGLEICHSNUMMER FÜR DEN ID-DNA-GENERATOR
-
- FUNKTION = SCHATTEN-IDENTITÄT
-
- BEZEICHNUNG = ABGLEICHSNUMMER
-
- BIT-BREITE = VARIABLE
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § þ-KEY
-
- DATENTYPENKATEGORIEN = PROTEIN
-
- INFO = KRYPTOGENETISCHE SIGNATUR
-
- FUNKTION = SIGNALFLUSS PRÜFUNG
-
- BEZEICHNUNG = IDENTITÄTS-TYP
-
- BIT-BREITE = VARIABLE
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § INIT-V
-
- DATENTYPENKATEGORIEN = PROTEIN
-
- INFO = INITIALISIERUNGS-VEKTOR
-
- FUNKTION = LÄDT KONFIGURATIONEN BEIM START
-
- BEZEICHNUNG = PROTEIN-STARTPUNKT
-
- BIT-BREITE = 64+
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § KKIS-CMD
-
- DATENTYPENKATEGORIEN = PROTEIN
-
- INFO = SCHNITTSTELLE FÜR KKIS-HANDSHAKE
-
- FUNKTION = ABGLEICH DER SIGNATUREN
-
- BEZEICHNUNG = KONSENS-TYP
-
- BIT-BREITE = 128
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § P-CMD
-
- DATENTYPENKATEGORIEN = PROTEIN
-
- INFO = TRÄGER FÜR KERNEL BEFEHLE
-
- FUNKTION = KAPSELUNG
-
- BEZEICHNUNG = BEFEHLS-PROTEIN
-
- BIT-BREITE = 16/32
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § PR-PHYS
-
- DATENTYPENKATEGORIEN = PROTON
-
- INFO = PHYSIKALISCHE MESSWERTE VON PROTON/EN
-
- FUNKTION = ECHTZEIT-SENSORDATEN
-
- BEZEICHNUNG = HARDWARE-PHYSIK
-
- BIT-BREITE = 32
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § F-REF
-
- DATENTYPENKATEGORIEN = PROTON
-
- INFO = REFERENZ-POINTER FÜR FEED CACHE
-
- FUNKTION = SYSTEMZUSTAND VERWEISE
-
- BEZEICHNUNG = ZUSTANDS-REFERENZ
-
- BIT-BREITE = 16/32
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § PR-VAL
-
- DATENTYPENKATEGORIEN = PROTON
-
- INFO = REINE NUMMERISCHE ODER BOOLESCHE WERTE FÜR PROTON INHALT
-
- FUNKTION = DIENT ALS OPERAND FÜR OPERATOREN
-
- BEZEICHNUNG = LOGIK-WERT
-
- BIT-BREITE = 1/64
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § PR-DNA
-
- DATENTYPENKATEGORIEN = PROTON
-
- INFO = PLATZHALTER
-
- FUNKTION = PLATZHALTER
-
- BEZEICHNUNG = BIO-SCHNITTSTELLE
-
- BIT-BREITE = VARIABEL
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP = PLATZHALTER 
-
- DATENTYPENKATEGORIEN = PROTON
-
- INFO = PLATZHALTER
-
- FUNKTION = PLATZHALTER
-
- BEZEICHNUNG = PLATZHALTER
-
- BIT-BREITE = PLATZHALTER
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § B-ROOT
-
- DATENTYPENKATEGORIEN = BOOT-LOGIK
-
- INFO = HÖCHSTE ADRESSIERUNGSEBENE FÜR DEN HARDWARE-ZUGRIFF
-
- FUNKTION = ROOT-ZUGRIFF-DEV
-
- BEZEICHNUNG = MASTER-ZWEIG
-
- BIT-BREITE = 128
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-MCS-TYP § SYS-RST
-
- DATENTYPENKATEGORIEN = BOOT-LOGIK
-
- INFO = HARDWIRED RESET-TRIGGER
-
- FUNKTION = ERZWINGT BEREINIGUNG
-
- BEZEICHNUNG = PURGE-INITIALER
-
- BIT-BREITE = 1
-
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK =                                                           #
  # VBSK =                                                           #

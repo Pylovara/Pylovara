@@ -108,9 +108,10 @@ SYMBOLISCHE DEKLARATION * ]
  # - POIWERK-RETK  = Retron-Einspeisung (Ŧ-Regulation)
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK = POIU-START-BOXU-<ELEMENT>-<INHALT>-BOXU-<ELEMENT>-POIAN-ENDE 
- # VBSK = POIU-START-POIWERK-<ELEMENT>-MASK-POIAN-ENDE              
- # RBSK = POIK-POIWERK-<ELEMENT>-MASK-POIK
- # RBSK = POIK-MASK-POIK                                            
+ # VBSK = POIU-START-POIWERK-<ELEMENT>-BOXK-POIAN-ENDE              
+ # RBSK = POIK-POIWERK-<ELEMENT>-BOXK-POIK
+ # RBSK = POIK-BOXK-POIK  
+ # RBSK = POIK-BOXK-POOK-POIK                                          
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

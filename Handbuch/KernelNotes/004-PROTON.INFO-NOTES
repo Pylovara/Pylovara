@@ -9,22 +9,8 @@
 
  {{{{{{{}}}}}}}
 
-
- Beispiel HardwareManagment MusterBeispiel:
-
- {’CPU’{’Volt’|'*'{'Watt'|'*'{’Ampere’|'*'{’Widerstand’}}}}}
-{~ FREQUENZ ~|}
- (Diese Sektor Wird Noch Designed und Definiert)
-
- Proton Anwendungsfälle
-
- - Primär Physikalische (Temp, Volt, Watt, Amp)
- - Sekundär Verschachtelte (Chip + EnergieManagment)
- - Kommunikationsbezogene (Strom ,Interface, Transport)
- - Speicherbezogene (Cache, Signed, Unsigned)
- - Logische (Valid, State, Mode)
- - Prozessbezogene (Pid, Thread, ID)
-
+ (die verschachtelung wird noch definiert und implementiert)
+ 
 #====================================================================#
 @info-id: PROTON
 #====================================================================#

@@ -13,69 +13,16 @@
  TRANSPORTFÄHIG MACHEN FÜR DEN WEITEREN VERARBEITUNGSPROZESS.
 
 #====================================================================#
- 
- BOXIS-SHELL-CONTROL
 
- SHELL-CONTROL MUSTERBEISPIELE =
+ BOXIS-ABI
 
- # Shell CMD : Komplexes Beispiel mit Operatoren
- »['cd /var/log && grep "error" syslog | head -20 > errors.txt && echo "Done" || echo "Failed"']«
+ ABI MUSTERBEISPIELE =
 
- # Komplexes Beispiel mit Operatoren
- »['cd /var/log && grep "error" syslog | head -20 > errors.txt && echo "Done" || echo "Failed"']«
+ # System V AMD64 ABI
+ »[Ħ int $0x80 Ħ]«
 
- # ADB + Shell Kombination
- »['adb devices | grep device && adb shell pm list packages | grep -i google']«
-
- # PowerShell-ähnliche Pipeline in Bash
- »['ps aux | awk '{print $1, $4}' | sort -k2 -rn | head -10']«
-
- # Sichere Ausführung
- »['[ -f file.txt ] && cat file.txt || echo "Datei nicht gefunden"']«
-
- # Mit Fehlerbehandlung
- »['command 2>&1 | tee output.log && echo "Success" || { echo "Error"; exit 1; }']«
-
-#====================================================================#
-
- BOXIS-CALLIS
-
- CALLIS MUSTERBEISPIELE =
-
- #Einfacher Text-Output
- »["Hallo Welt"]«
-
- #Feed-Output (Inhalt von Feed 1 drucken)
- »["(1)± ±"]«
-
- #Kombinierter Output (Text + Feed)
- »["Status: (1)± ±"]«
-
- EINSATZBEREICHE MUSTERBEISPIELE =
-
- # LINUX (x86_64) - Direkter Syscall-Weg
- # Nutzt sys_write (RAX 1) auf Dateideskriptor 1
-
- RAX: 1    | sys_write | System-Aufruf für Schreiben
- RDI: 1    | stdout    | Ziel:Standard-Ausgabe (Dateideskriptor 1)
- RSI: *    | buffer    | Zeiger auf den Text/Daten-Protein
- RDX: *    | length    | Länge der Daten in Bytes
-
- # WINDOWS NT (Kernel-Level) - Native API
- # Nutzt NtWriteFile auf den Console-Handle
-
- Befehl: NtWriteFile
- Handle: StandardOutput  | Identifiziert den Konsolen-Puffer
- Buffer: * | Zeiger auf Speicherbereich des Proteins
- Length: * | Anzahl der zu schreibenden Bytes
-
- # MACOS / DARWIN (BSD-Layer)
- # Nutzt den BSD-write Call (RAX 4)
-
- RAX: 4     | write        | System-Aufruf (Klasse 0x2000000)
- RDI: 1     | stdout       | Dateideskriptor 1
- RSI: *     | buffer       | Daten-Protein Ursprung
- RDX: *     | length       | Byte-Zahl
+ # Windows x64 ABI
+ »[Ħ call rcx Ħ]«
 
 #====================================================================#
  
@@ -128,6 +75,71 @@
  RAX: 37 | kill     | Sendet Signale an PIDs zur Prozesssteuerung
 
 #====================================================================#
+ 
+ BOXIS-SHELL-CONTROL
+
+ SHELL-CONTROL MUSTERBEISPIELE =
+
+ # Shell CMD : Komplexes Beispiel mit Operatoren
+ »['cd /var/log && grep "error" syslog | head -20 > errors.txt && echo "Done" || echo "Failed"']«
+
+ # Komplexes Beispiel mit Operatoren
+ »['cd /var/log && grep "error" syslog | head -20 > errors.txt && echo "Done" || echo "Failed"']«
+
+ # ADB + Shell Kombination
+ »['adb devices | grep device && adb shell pm list packages | grep -i google']«
+
+ # PowerShell-ähnliche Pipeline in Bash
+ »['ps aux | awk '{print $1, $4}' | sort -k2 -rn | head -10']«
+
+ # Sichere Ausführung
+ »['[ -f file.txt ] && cat file.txt || echo "Datei nicht gefunden"']«
+
+ # Mit Fehlerbehandlung
+ »['command 2>&1 | tee output.log && echo "Success" || { echo "Error"; exit 1; }']«
+
+#====================================================================#
+
+ BOXIS-PRINT
+
+ PRINT MUSTERBEISPIELE =
+
+ #Einfacher Text-Output
+ »["Hallo Welt"]«
+
+ #Feed-Output (Inhalt von Feed 1 drucken)
+ »["(1)± ±"]«
+
+ #Kombinierter Output (Text + Feed)
+ »["Status: (1)± ±"]«
+
+ EINSATZBEREICHE MUSTERBEISPIELE =
+
+ # LINUX (x86_64) - Direkter Syscall-Weg
+ # Nutzt sys_write (RAX 1) auf Dateideskriptor 1
+
+ RAX: 1    | sys_write | System-Aufruf für Schreiben
+ RDI: 1    | stdout    | Ziel:Standard-Ausgabe (Dateideskriptor 1)
+ RSI: *    | buffer    | Zeiger auf den Text/Daten-Protein
+ RDX: *    | length    | Länge der Daten in Bytes
+
+ # WINDOWS NT (Kernel-Level) - Native API
+ # Nutzt NtWriteFile auf den Console-Handle
+
+ Befehl: NtWriteFile
+ Handle: StandardOutput  | Identifiziert den Konsolen-Puffer
+ Buffer: * | Zeiger auf Speicherbereich des Proteins
+ Length: * | Anzahl der zu schreibenden Bytes
+
+ # MACOS / DARWIN (BSD-Layer)
+ # Nutzt den BSD-write Call (RAX 4)
+
+ RAX: 4     | write        | System-Aufruf (Klasse 0x2000000)
+ RDI: 1     | stdout       | Dateideskriptor 1
+ RSI: *     | buffer       | Daten-Protein Ursprung
+ RDX: *     | length       | Byte-Zahl
+
+#====================================================================#
 
  BOXIS-ALU =
 
@@ -155,9 +167,35 @@
 
 #====================================================================#
 
- BOXIS-BLANKERNENNER 
+ BOXIS-MCS-CMD
+
+ MCS-CMD MUSTERBEISPIELE =
+
+ # Master Control System Command
+ »[~ STATUS_CHECK ~]«
+ »[~ COMPONENT_INIT ~]«
+
+#====================================================================#
+
+ BOXIS-CACHE 
 
  WIRD VERWENDET UM ETWAS ZWISCHEN ZU SPEICHERN , WEG ZU PARKEN .
- DIENT ALS AD-HOC BUGG BESEITIGER .
+ DIENT ZUR ZWISCHENSPEICHERUNG <RAM> BEI ÜBERLAGERUNGEN, 
+ ALS AD-HOC BUGG BESEITIGER.
+
+ CACHE MUSTERBEISPIELE =
+
+ »[¥ TEMP_BUFFER_1 ¥]«
+
+#====================================================================#
+
+ BOXIS-MASCHINENCODE 
+
+ MASCHINENCODE MUSTERBEISPIELE =
+
+ # x86_64 Machine Code
+ »[º mov RAX, 42 º]«
+ »[º add RAX, RBX º]«
+ »[º syscall º]«
 
 #====================================================================#

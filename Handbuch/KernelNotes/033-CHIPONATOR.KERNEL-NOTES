@@ -23,6 +23,54 @@ MASTER § MASU-CHIPONATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+ CHIPONATOR-HAUPTKLASSE § CHIH-LAYER
+
+ INFO = LAYERSTEUERUNG DES CHIP-KOORDINATENSYSTEMS
+
+ FUNKTION = ORGANISIERT ALLE ZEICHENBLÖCKE UND BAUPLÄNE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ CHIPONATOR-LAYER-UNTERKLASSE § CHIU-PROBEBLÖCK
+
+ INFO = KOORDINATENRASTER MIT SYMBOL- UND KERNKLASSEN-ADRESSEN
+
+ FUNKTION = SYMBOL-ZU-KOORDINATEN ZUORDNUNG
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ CHIPONATOR-LAYER-UNTERKLASSE § CHIU-ZEICHENDRUCK
+
+ INFO = DRUCKSCHICHTEN FÜR ALLE MCS-SYMBOLE
+
+ FUNKTION = GLYPH-TABELLE DES CHIPS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ CHIPONATOR-LAYER-UNTERKLASSE § CHIU-BAUPLAN
+
+ INFO = VISUELLES WORKSPACE-VERSCHACHTELUNGSMUSTER
+
+ FUNKTION = LAYOUT-VORLAGE FÜR PROTEIN-VERSCHACHTELUNGSTIEFE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ CHIPONATOR-LAYER-UNTERKLASSE § CHIU-ZEICHENBLOCK
+
+ INFO = FERTIGE CHIP-LAYOUT-VORLAGEN FÜR EINZELNE KOMPONENTEN
+
+ FUNKTION = KOMPONENTENSPEZIFISCHE ZEICHENBLÖCKE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ CHIPONATOR-LAYER-ANKERKLASSE § CHIAN-ENDE
+
+ INFO = ABSCHLUSS DES CHIPLAYERS
+
+ FUNKTION = LAYER-ABSCHLUSS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 # PROBEBLÖCK
 
    0 A BCDEFGH IJK LMNOPQRSTUVWXYZ
@@ -305,6 +353,196 @@ MASTER § MASU-CHIPONATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# BOXIS IM REX OPTIONEN ZEICHENBLOCK
+
+   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+   1 »[MASU-BOXIS]«
+   2  ¬· »[BOXH-ELEMENT]«
+   2      ¬· »[BOXH-ABI]«
+   3          ¬·¤: »[Ħ <OS-ABI> Ħ]«
+   4      ¬· »[BOXH-ALU]«
+   5          ¬·¤: »[× <ALU> ×]«
+   6      ¬· »[BOXH-SYSCALL]«
+   7          ¬·¤: »[, <OS-TYP> ,]«
+   8      ¬· »[BOXH-SHELL]«
+   9          ¬·¤: »[<OS-SHELL>]«
+  10      ¬· »[BOXH-MCS-CMD]«
+  11          ¬·¤: »[~ <MCCK> ~]«
+  12      ¬· »[BOXH-CACHE]«
+  13          ¬·¤: »[¥ <CACHE> ¥]«
+  14      ¬· »[BOXH-PRINT]«
+  15          ¬·¤: »[<PRINT>]«
+  16      ¬· »[BOXH-MASCHINENCODE]«
+  17          ¬·¤: »[º <MASCHINENCODE> º]«
+
+  18
+  19
+  20
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# SENTIATOR-RETRON-VATRON ZEICHENBLOCK
+
+   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+   1 »[POIWERK-SENTK]«
+   2  ¬·¤: »[SENTH-FLEX]
+   3        ¶ ¬· »[SENTAN-WENN-KANN]«
+   4              ¬· §SENTAU-IMPULS «
+   5        ¶¶ ¬· »[SENTAN-WENN-NICHT]«
+   6               ¬· §SENTAU-IMPULS «
+   7 »[POIWERK-RETK]«
+   8  ¬·¤: »[RETH-REGULAR]
+   9        ¬· [RETU-STUFE-NULL]« Ŧ°
+  10        ¬· [RETU-STUFE-EINS]« Ŧ¹
+  11        ¬· [RETU-STUFE-ZWEI]« Ŧ²
+  12        ¬· [RETU-STUFE-DREI]« Ŧ³
+  13 »[POIWERK-VATK]«
+  14  ¬·¤: »[VATH-VALIDA]
+  15        ¬· [VATWERK-PASSIV]«
+  16           ¬·¤: [VATO-PASSIV-RBSK]«
+  17           ¬·¤: [VATO-PASSIV-SBSK]«
+  18           ¬·¤: [VATO-PASSIV-ID]«
+  19        ¬· [VATWERK-PRÜFEND]«
+  20           ¬·¤: [VATO-PRÜFEND-ABSK]«
+  21           ¬·¤: [VATO-PRÜFEND-VBSK]«
+  22           ¬·¤: [VATO-PRÜFEND-ID]«
+  23        ¬· [VATWERK-VERWORFEN]«
+  24           ¬·¤: [VATO-VERWORFEN-ABSK]«
+  25           ¬·¤: [VATO-VERWORFEN-ID]«
+  26        ¬· [VATWERK-BESTÄTIGT]«
+  27           ¬·¤: [VATO-BESTÄTIGT-ABSK]«
+  28           ¬·¤: [VATO-BESTÄTIGT-ID]«
+  29        ¬· [VAAN-IMPULS]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# FEED ZEICHENBLOCK
+
+   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+   1 »[FEEK]«
+   2  ¬·¤: »[FFEH-SYNC]
+   3        ¬· [FEEH-ZAHLTRÄGER]«  (<NR>)
+   4        ¬· [FEEH-WERTRÄGER]«   ± <WERT> ±
+   5        ¬· [FEEAN-ZAHLTRÄGER-ENDE]«
+   6        ¬· [FEEAN-WERTTRÄGER-ENDE]«
+   7  ¬·¤: »[TFEH-SYNC]
+   8        ¬· [FEEH-WERTRÄGER]«   ± <WERT> ±
+   9        ¬· [FEEH-ZAHLTRÄGER]«  (<NR>)
+  10        ¬· [FEEAN-WERTTRÄGER-ENDE]«
+  11        ¬· [FEEAN-ZAHLTRÄGER-ENDE]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# WARP ZEICHENBLOCK
+
+   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+   1 »[WARK]«
+   2  ¬·¤: »[WARH-LEGACY]
+   3        ¬· [WARM-C]«         øĸ »["C"]« ĸø
+   4        ¬· [WARM-PYTHON]«    øĸ »["PYTHON"]« ĸø
+   5        ¬· [WARM-RUST]«      øĸ »["RUST"]« ĸø
+   6        ¬· [WARM-ASM]«       øĸ »["ASM"]« ĸø
+   7        ¬· [WARM-GCC]«       øĸ »["GCC"]« ĸø
+   8        ¬· [WARM-CLANG]«     øĸ »["CLANG"]« ĸø
+   9        ¬· [WARM-JAVA]«      øĸ »["JAVA"]« ĸø
+  10        ¬· [WARM-GO]«        øĸ »["GO"]« ĸø
+  11        ¬· [WARM-WASM]«      øĸ »["WASM"]« ĸø
+  12        ¬· [WARM-DOCKER]«    øĸ »["DOCKER"]« ĸø
+  13        ¬· [WARM-ELF]«       øĸ »["ELF"]« ĸø
+  14        ¬· [WARM-PE]«        øĸ »["PE"]« ĸø
+  15        ¬· [WARM-MACH-O]«    øĸ »["MACH-O"]« ĸø
+  16        ¬· [WARM-JSON]«      øĸ »["JSON"]« ĸø
+  17        ¬· [WARM-XML]«       øĸ »["XML"]« ĸø
+  18        ¬· [WARM-YAML]«      øĸ »["YAML"]« ĸø
+  19        ¬· [WARM-SQL]«       øĸ »["SQL"]« ĸø
+  20        ¬· [WARM-HTML5]«     øĸ »["HTML5"]« ĸø
+  21        ¬· [WARM-PHP]«       øĸ »["PHP"]« ĸø
+  22        ¬· [WARM-RUBY]«      øĸ »["RUBY"]« ĸø
+  23        ¬· [WARM-LUA]«       øĸ »["LUA"]« ĸø
+  24        ¬· [WARM-SWIFT]«     øĸ »["SWIFT"]« ĸø
+  25        ¬· [WARM-OBJC]«      øĸ »["OBJC"]« ĸø
+  26        ¬· [WARM-METAL]«     øĸ »["METAL"]« ĸø
+  27        ¬· [WARM-DIRECTX]«   øĸ »["DIRECTX"]« ĸø
+  28        ¬· [WARM-DOTNET]«    øĸ »["DOTNET"]« ĸø
+  29        ¬· [WARM-WIN32]«     øĸ »["WIN32"]« ĸø
+  30        ¬· [WARM-WIN64]«     øĸ »["WIN64"]« ĸø
+  31        ¬· [WARM-FATBIN]«    øĸ »["FATBIN"]« ĸø
+  32        ¬· [WARM-APP]«       øĸ »["APP"]« ĸø
+  33        ¬· [WARAN-ENDE]«     ĸø
+  34        ¬· [WARL-NAVU-DIRIGENT]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# IDENTIFIKATION ZEICHENBLOCK
+
+   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+   1 »[IDK]«
+   2  ¬·¤: »[IDH-ID]
+   3        ¬· [IDU-DNA-TRANSAKTIONSRAHMEN]«  þ
+   4        ¬· [IDU-DNA-DIENST]«              þþ
+   5        ¬· [IDU-DNA-FIRMA]«               þþþ
+   6        ¬· [IDU-DNA-INFASTRUKTUR]«        þþþ
+   7        ¬· [IDU-DNA-BILDUNGSBEREICH]«     þþþ
+   8        ¬· [IDU-DNA-BIOLIVE]«             þþþþ
+   9        ¬· [IDAN-ENDE]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# PROTON-BOXIS KOMBINATIONSBLOCK
+
+   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+   1 »[POIK-POIH-SOFT]
+   2  ¬· [POIU-START]
+   3      ¬· [BOXK-BOXH-<ELEMENT>]
+   4          ¬·¤: [BOXU-<ELEMENT>-START]
+   5                [<INHALT>]
+   6          ¬· [BOXAN-<ELEMENT>-ENDE]
+   7      ¬· [TRENK-TRENH-WAND]
+   8          ¬· [TRENU-START-TRENO-SPALT]
+   9      ¬· [POOK-POOH-HARD]
+  10          ¬·¤: [POOU-START]
+  11                {<INHALT>}
+  12          ¬· [POOAN-ENDE]
+  13  ¬· [POIAN-ENDE]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# MASTER ELEMENT ANSTEUERUNG ZEICHENBLOCK
+
+  0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
+  1 »[MASK]«
+  2  ¬··¤: »[MASU-ELEMENT]
+  3         ¬·· [MASU-DATENYTEPN]«
+  4         ¬·· [MASU-TRANSAKTIONSRAHMEN]«
+  5         ¬·· [MASU-PROTEIN]«
+  6         ¬·· [MASU-PROTON]«
+  7         ¬·· [MASU-TRENNBEFEHL]«
+  8         ¬·· [MASU-AKTIONSDRAHT]«
+  9         ¬·· [MASU-BOXIS]«
+ 10         ¬·· [MASU-REX]«
+ 11         ¬·· [MASU-SENTIATOR]«
+ 12         ¬·· [MASU-ARGUMENT]«
+ 13         ¬·· [MASU-FEED]«
+ 14         ¬·· [MASU-WARP]«
+ 15         ¬·· [MASU-NAVIGATOR]«
+ 16         ¬·· [MASU-IDENTIFIKATION]«
+ 17         ¬·· [MASU-MCS-CMD]«
+ 18         ¬·· [MASU-DATEITYPEN]«
+ 19         ¬·· [MASU-VATRON]«
+ 20         ¬·· [MASU-RETRON]«
+ 21         ¬·· [MASU-MATRIX]«
+ 22         ¬·· [MASU-HERZSCHLAG]«
+ 23         ¬·· [MASU-KKIS]«
+ 24         ¬·· [MASU-ABSOLULATOR]«
+ 25         ¬·· [MASU-SCHABLONATOR]«
+ 26         ¬·· [MASU-MODULATOR]«
+ 27         ¬·· [MASU-CHIPONATOR]«
+ 28         ¬·· [MASU-]«
+ 29         ¬·· [MASU-]«
+ 30         ¬·· [MASU-]«
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 # NAVIGATOR-PYLOVARA-UNTERKLASSE § NAVU-STERN | VARIANTEN 
 
   0ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -366,71 +604,11 @@ MASTER § MASU-CHIPONATOR
  56       ¬·¤‹ »[]«
  57       ¬·¤↑ »[]«
  58       ¬·¤↓ »[]«
-  
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# BOXIS IM REX OPTIONEN ZEICHENBLOCK
-
-   0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
-   1 »[MASU-BOXIS]«
-   2  ¬· »[BOXH-ELEMENT]«
-   2      ¬· »[BOXH-ABI]«
-   3          ¬·¤: »[Ħ <OS-ABI> Ħ]«
-   4      ¬· »[BOXH-ALU]«
-   5          ¬·¤: »[× <ALU> ×]«
-   6      ¬· »[BOXH-SYSCALL]«
-   7          ¬·¤: »[, <OS-TYP> ,]«
-   8      ¬· »[BOXH-SHELL]«
-   9          ¬·¤: »[<OS-SHELL>]«
-  10      ¬· »[BOXH-MCS-CMD]«
-  11          ¬·¤: »[~ <MCCK> ~]«
-  12      ¬· »[BOXH-CACHE]«
-  13          ¬·¤: »[¥ <CACHE> ¥]«
-  14      ¬· »[BOXH-PRINT]«
-  15          ¬·¤: »[<PRINT>]«
-  16      ¬· »[BOXH-MASCHINENCODE]«
-  17          ¬·¤: »[º <MASCHINENCODE> º]«
-
-  18
-  19
-  20
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-# MASTER ELEMENT ANSTEUERUNG ZEICHENBLOCK
-
-  0ABCDEFGHIJKLMNOPQRSTUVWXYZ(MEHRBLÖCKE)
-  1 »[MASK]«
-  2  ¬··¤: »[MASU-ELEMENT]
-  3         ¬·· [MASU-DATENYTEPN]«
-  4         ¬·· [MASU-TRANSAKTIONSRAHMEN]«
-  5         ¬·· [MASU-PROTEIN]«
-  6         ¬·· [MASU-PROTON]«
-  7         ¬·· [MASU-TRENNBEFEHL]«
-  8         ¬·· [MASU-AKTIONSDRAHT]«
-  9         ¬·· [MASU-BOXIS]«
- 10         ¬·· [MASU-REX]«
- 11         ¬·· [MASU-SENTIATOR]«
- 12         ¬·· [MASU-ARGUMENT]«
- 13         ¬·· [MASU-FEED]«
- 14         ¬·· [MASU-WARP]«
- 15         ¬·· [MASU-NAVIGATOR]«
- 16         ¬·· [MASU-IDENTIFIKATION]«
- 17         ¬·· [MASU-MCS-CMD]«
- 18         ¬·· [MASU-DATEITYPEN]«
- 19         ¬·· [MASU-VATRON]«
- 20         ¬·· [MASU-RETRON]«
- 21         ¬·· [MASU-MATRIX]«
- 22         ¬·· [MASU-HERZSCHLAG]«
- 23         ¬·· [MASU-KKIS]«
- 24         ¬·· [MASU-ABSOLULATOR]«
- 25         ¬·· [MASU-SCHABLONATOR]«
- 26         ¬·· [MASU-MODULATOR]«
- 27         ¬·· [MASU-CHIPONATOR]«
- 28         ¬·· [MASU-]«
- 29         ¬·· [MASU-]«
- 30         ¬·· [MASU-]«
-
+### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
+ # SBSK = CHIU-<ELEMENT>-CHIAN-ENDE
+ # VBSK = CHIH-LAYER-CHIU-<ELEMENT>-CHIAN-ENDE
+ # RBSK = CHIK-MASK
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [12:09:13|Mo Mär 02 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

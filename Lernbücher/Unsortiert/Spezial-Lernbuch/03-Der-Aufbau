@@ -48,25 +48,35 @@ wie bauen wir jetzt einen einfachen usb call ?
 
 ¢!
 © »['lsusb -t']«
-   ¬· ['echo usb-blabla']
-   ¬· ['echo usb-01irgendwas']
-   ¬· ['echo usb-GamingMaus']
-   ¬· ['echo usb-USBC-TaschenBong']
-   ¬· ['echo usb-usbstick']
-      ¶ »['sudo mkdir /media/usbstick']
-         ¬· »['sudo mount /dev/sdb1 /media/usbstick']«
-             ¬·¤: ['echo usbstick gemountet']
+   ¬·¤: ['echo usb-blabla']
+   ¬·¤: ['echo usb-01irgendwas']
+   ¬·¤: ['echo usb-GamingMaus']
+   ¬·¤: ['echo usb-USBC-TaschenBong']
+   ¬·¤: ['echo usb-usbstick']
+        ¶ »['sudo mkdir /media/usbstick']
+           ¬· »['sudo mount /dev/sdb1 /media/usbstick']«
+               ¬·¤: ['echo usbstick gemountet']
 
-      ¶¶ »['exit']
-          ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]
-              ¬· »['cp /media/usbstick/* ~/Downloads']«
+        ¶¶ »['exit']
+            ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]
+                ¬· »['cp /media/usbstick/* ~/Downloads']«
 !¢
 
 was sehen wir hier ?
 
+wir sehen einen Transaktionsrahmen der diese komponenten
+verwendet 
 
+¢!!¢ <- Transaktionsrahmen = Runtime bedingung 
+©    <- VATRON der BSK Prüfer
+¬    <- REXH-PROZESS = Platzmacher 
+·    <- REXU-FLÄCHE-1 =  1 FLÄCHE ODER EIN KERN ODER EINE KERN LEISTUNG IM GESAMMTEN 
+¤    <- REXO-KORDI = OPTIONSAUSWAHL
+:    <- REXAN-STATUS = ÜBETRAGUNG 
+¶    <- SENTIATOR-WENN-KANN = WENN DAS VORHANDEN IST ODER AUSGEFÜHRT , PFAD AKTIV
+¶¶   <- SENTIATOR-WENN-NICHT = WENN DAS NICHT VORHANDEN IST ODER NICHT AUSGEFÜHRT WERDEN KANN , PFAD INAKTIV
 
-
+Damit wir erstmal die verwendeten Komponenten auf einem Tablet haben .
 
 
 

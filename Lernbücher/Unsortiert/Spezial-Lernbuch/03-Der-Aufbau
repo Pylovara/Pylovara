@@ -167,7 +167,7 @@ Wir nehmen also unausführbare proteine für triviale echos .... muss man da meh
    und erst ab hier werden die möglichkeiten als status medlung in unausführbaren proteinen ausgegeben als 
    sehbaren wert .... 
 
-deswegen werden dann am POIWERK einrastpunkt diese unausführbaren proteine wiedergegeben 
+deswegen werden dann am POIWERK einrastpunkt diese unausführbaren proteine wiedergegeben als status meldung
    ↓
    ¬·¤: ['echo usb-blabla'] <--- QUASI hier
    ¬·¤: ['echo usb-01irgendwas'] <--- QUASI hier
@@ -175,7 +175,32 @@ deswegen werden dann am POIWERK einrastpunkt diese unausführbaren proteine wied
    ¬·¤: ['echo usb-USBC-TaschenBong'] <--- QUASI hier
    ¬·¤: ['echo usb-usbstick'] <--- QUASI hier
 
+----------------------------------------------------------
 
+jetzt kommen wir an dem punkt wo irgendwer garantiert auf die 
+logisches schlussfolgerung kommen muss das :
+
+„ wenn wir einen transaktionsrahmen vor schreiben , wie soll dann etwas ausgegeben werden
+  und wie sollen wir aufgrunddessen dann das richtige rein schreiben ? macht überhaupt keinen sinn *fragezeichen*“
+
+
+und die antwort ist =
+
+wir greifen aktiv auf das transaktionsrahmen an und geben den befehl an das es ausgegeben werden soll
+über das (dann folgende) interne terminal MCS-CMD Shell fenster das genau an dem punkt uns die möglichkeit
+gibt die ausgabe weiter zu editieren !
+
+Was im übrigen auch über den gesamten transaktionsrahmen ablauf passieren kann.
+
+
+also halten wir uns mit dieser erstmal unrelevanten tatsache nicht auf das wir es manual 
+zusammen basteln wollen ... 
+
+später implementiere ich einen natives Live Terminal für Genau solche fragen!
+
+daher ist diese frage im kopf gerade nicht relevant für die lernphase!
+
+----------------------------------------------------------
 
 
 

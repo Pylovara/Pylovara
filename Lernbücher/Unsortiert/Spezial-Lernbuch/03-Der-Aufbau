@@ -69,12 +69,12 @@ wie bauen wir jetzt einen einfachen usb call ?
    ¬·¤: ['echo usb-GamingMaus']
    ¬·¤: ['echo usb-USBC-TaschenBong']
    ¬·¤: ['echo usb-usbstick']
-        ¶ »['sudo mkdir /media/usbstick']
+        ¶ »['sudo mkdir /media/usbstick']«
            ¬· »['sudo mount /dev/sdb1 /media/usbstick']«
                ¬·¤: ['echo usbstick gemountet']
 
         ¶¶ »['exit']
-            ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]
+            ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]«
                 ¬· »['cp /media/usbstick/* ~/Downloads']«
 !¢
 
@@ -120,11 +120,11 @@ Vatron rattert bis in den letzten REX-PROZESS aller unterklassen REXU-FLÄCHE-1 
    ¬·¤: ['echo usb-GamingMaus'] <--- QUASI hier
    ¬·¤: ['echo usb-USBC-TaschenBong'] <--- QUASI hier
    ¬·¤: ['echo usb-usbstick'] <--- QUASI hier
-        ¶ »['sudo mkdir /media/usbstick'] <--- QUASI hier
+        ¶ »['sudo mkdir /media/usbstick']« <--- QUASI hier
            ¬· »['sudo mount /dev/sdb1 /media/usbstick']« <--- QUASI hier
                ¬·¤: ['echo usbstick gemountet'] <--- QUASI hier
 
-        ¶¶ »['exit'] <--- QUASI hier
+        ¶¶ »['exit']« <--- QUASI hier
             ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]« <--- QUASI hier
                 ¬· »['cp /media/usbstick/* ~/Downloads']«  <--- und hier 
 
@@ -203,7 +203,33 @@ daher ist diese frage im kopf gerade nicht relevant für die lernphase!
 ----------------------------------------------------------
 
 
+nach dem REXO-KORDI-REXAN-STATUS die möglichkeiten gezeigt hat , was überhaupt existiert
 
+bauen wir darauf hin 
+
+die auswahl auf mit der wenn kann und wenn nicht regelung, die reaktiv auf existenz oder ausführungsmöglichkeit 
+geschrieben wurde , um lässtige IF else Operatoren gegen reflexe auszutauschen , die effecktiver sind 
+
+¢!
+© »['lsusb -t']«
+   ¬·¤: ['echo usb-blabla']
+   ¬·¤: ['echo usb-01irgendwas']
+   ¬·¤: ['echo usb-GamingMaus']
+   ¬·¤: ['echo usb-USBC-TaschenBong']
+   ¬·¤: ['echo usb-usbstick']
+
+        Wir Rasten also WENN KANN und WENN NICHT direkt im POIWERK-SENTK ein 
+        ↓
+        ¶ »['sudo mkdir /media/usbstick']« <---- erstellen dann den bootpfad
+           ¬· »['sudo mount /dev/sdb1 /media/usbstick']« <-- und Mounten sie 
+               ¬·¤: ['echo usbstick gemountet'] <--- und bekommen gleich eine rückmeldung von <os-shell> output
+
+        Wenn irgendwas nicht stimmt , schalten wir die fehlersuche mit ein 
+        ↓
+        ¶¶ »['exit']«
+            ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]« <-- und lassen es uns zum gewünschten ordner schicken
+                ¬· »['cp /media/usbstick/* ~/Downloads']« <-- und versuchen es ein letzte mal aus verzweiflung zu copieren (was warscheins fehl schlägt)
+!¢
 
 
 

@@ -1,0 +1,84 @@
+Gut , wir kommen wieder zum punkt aufbau 
+
+wie genau baut sich die syntax auf ? 
+
+Naja ( ich klugscheiße jetzt mal), ganz easy ( klar ... der dev sagt easy )
+
+wir haben auf seite 2 gelernt am schluss das dass lernen der BSK Verkürzungslogik
+der schlüssel zum verständniss des unterbaus selbst ist und durch PROTEIN POIWERK
+einrastpunkte der weitere verlauf der schaltung Möglich wird.. 
+
+
+
+gut ... lassen wir bsk beiseite den genau diese stärke kann ich garantieren!
+
+Lernen wir symbolisch die Syntax der puren Logik 
+
+
+jede Dateityp das wir anlegen , beinhaltet Transaktionsrahmen als RUNTIME !
+
+Diese Runtimes Schalten die eltern dateitypen frei und ergeben ein gesamtes
+programmiertes element ( je nach dem was du tun möchtest )
+
+sagen wir , wir wollen einen usb stick ansteuern und die ports sehen
+
+dann wäre der terminal weg warscheinlich 
+
+### Befehle und Pfade für USB-Geräte
+
+| Befehl/Pfad | Beschreibung/Zweck |
+
+| `lsusb` | Listet alle USB-Geräte auf . |
+| `lsusb -v` | Ausführliche Details zu allen USB-Geräten . |
+| `lsusb -t` | Zeigt die USB-Geräte als Baumstruktur . |
+| `lsusb -d 1234:5678` | Filtert nach Hersteller- und Produkt-ID . |
+| `usb-devices` | Zeigt detaillierte USB-Informationen als Tabelle . |
+| `dmesg | grep usb` | Zeigt USB-Ereignisse aus dem Kernel-Ringpuffer . |
+| `journalctl -f | grep usb` | Überwacht laufend USB-Ereignisse im Systemlog . |
+| `udevadm monitor --subsystem-match=usb --udev` | Überwacht USB-Ereignisse in Echtzeit . |
+| `udevadm info -a -n /dev/bus/usb/001/002` | Zeigt alle udev-Attribute eines Geräts (Bus 001, Gerät 002) . |
+| `lsblk` | Listet alle Blockgeräte (z.B. USB-Sticks) auf . |
+| `cat /sys/bus/usb/devices/*/product` | Zeigt direkt die Produktnamen aller USB-Geräte an. |
+| `ls /sys/bus/usb/devices/` | Listet alle USB-Geräte-Verzeichnisse im Sysfs auf . |
+
+diese liste erstellt dir jede AI ..... also Chill .... 
+
+
+wie bauen wir jetzt einen einfachen usb call ? 
+
+¢!
+© »['lsusb -t']«
+   ¬· ['echo usb-blabla']
+   ¬· ['echo usb-01irgendwas']
+   ¬· ['echo usb-GamingMaus']
+   ¬· ['echo usb-USBC-TaschenBong']
+   ¬· ['echo usb-usbstick']
+      ¶ »['sudo mkdir /media/usbstick']
+         ¬· »['sudo mount /dev/sdb1 /media/usbstick']«
+             ¬·¤: ['echo usbstick gemountet']
+
+      ¶¶ »['exit']
+          ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]
+              ¬· »['cp /media/usbstick/* ~/Downloads']«
+!¢
+
+was sehen wir hier ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,21 +3,21 @@ Gut , wir kommen wieder zum punkt aufbau
 wie genau baut sich die syntax auf ? 
 Naja ( ich klugscheiße jetzt mal), ganz easy ( klar ... der dev sagt easy )
 
-wir haben auf seite 2 gelernt am schluss das dass lernen der BSK Verkürzungslogik
-der schlüssel zum verständniss des unterbaus selbst ist und durch PROTEIN POIWERK
-einrastpunkte der weitere verlauf der schaltung Möglich wird.. 
+wir haben auf seite 2 gelernt am schluss dass das Lernen der BSK Verkürzungslogik
+der schlüssel zum Verständnis des unterbaus selbst ist und durch PROTEIN POI-WERK
+einrastpunkte der weitere verlauf der schaltung möglich wird.. 
 
 gut ... lassen wir bsk beiseite den genau diese stärke kann ich garantieren!
 Lernen wir symbolisch die Syntax der puren Logik 
 
-jeden Dateitype den wir anlegen , beinhaltet Transaktionsrahmen als RUNTIME !
+jeder Dateityp den wir anlegen , beinhaltet Transaktionsrahmen als RUNTIME !
 
 Diese Runtimes schalten die Eltern Dateitypen (auch als MORPHIC-0 als DI bekannt )frei und ergeben ein gesamtes
-programmiertes element ( je nach dem was du tun möchtest )
+programmiertes Element ( je nach dem was du tun möchtest )
 
 sagen wir , wir wollen einen usb stick ansteuern und die ports sehen
 
-dann wäre der terminal weg warscheinlich 
+dann wäre der terminal weg wahrscheinlich 
 
 ### Befehle und Pfade für USB-Geräte
 
@@ -41,7 +41,7 @@ diese liste erstellt dir jede AI ..... also Chillt! ....
 
 ----------------------------------------------------------
 
-kurze zwischen sache = 
+kurze Zwischensache = 
 
 Warum Nutzen wir es nicht einfach im Terminal ? 
 
@@ -54,7 +54,7 @@ das OS Nutzen ( wovon wir alle weg wollen ...... weil seite 1 erklärt )
 
 Natürlich können wir Terminals über Pylovara Installieren und dann
 auf dem weg nativ nutzen - aber das ist jetzt eine sache die wir
-nüchtern als logische selbst erkenntniss später irgendwann mal
+nüchtern als logische Selbsterkenntnis später irgendwann mal
 Nutzen würden, wenn wir es wirklich wollen ( das ecklige invalide Unix monster, ohne native runs für alles ).
 
 ----------------------------------------------------------
@@ -86,9 +86,9 @@ verwendet
 ¢!!¢ <- Transaktionsrahmen = Runtime bedingung 
 ©    <- VATRON der BSK Prüfer
 ¬    <- REXH-PROZESS = Platzmacher 
-·    <- REXU-FLÄCHE-1 =  1 FLÄCHE ODER EIN KERN ODER EINE KERN LEISTUNG IM GESAMMTEN 
+·    <- REXU-FLÄCHE-1 =  1 FLÄCHE ODER EIN KERN ODER EINE KERN LEISTUNG IM GESAMTEN 
 ¤    <- REXO-KORDI = OPTIONSAUSWAHL
-:    <- REXAN-STATUS = ÜBETRAGUNG 
+:    <- REXAN-STATUS = ÜBERTRAGUNG 
 ¶    <- SENTIATOR-WENN-KANN = WENN DAS VORHANDEN IST ODER AUSGEFÜHRT , PFAD AKTIV
 ¶¶   <- SENTIATOR-WENN-NICHT = WENN DAS NICHT VORHANDEN IST ODER NICHT AUSGEFÜHRT WERDEN KANN , PFAD INAKTIV
 ''   <- BOXH-SHELL
@@ -103,7 +103,7 @@ vielleicht falschen MCS-CMD für die erstellung...
 
 so .... ab dem punkt müssen wir jetzt anfangen im "sync" zu denken ..... 
 
-ich würde sagen wir ziehe das ding jetzt erstmal zum erklären , line für line außeinander und weil der transaktionsrahmen , 
+ich würde sagen wir ziehe das ding jetzt erstmal zum erklären , line für line auseinander und weil der transaktionsrahmen , 
 die bedingung darstellt und IMMER vorhanden sein MUSS, (aus mehreren gründen bis hin zum nativen isa freien einsatz von Pylovara)
 fangen wir mit VATRON selbst an 
 
@@ -139,23 +139,25 @@ Richtig ! IM ABSOLULATOR ( der Name ist Programm und Eselsbrücke gleichzeitig )
 also nochmal :
 er kontrolliert die ABSK ketten und prüft ob sie Sinn ergeben , ob die Syntax stimmt und die komponenten ordentlich im poiwerk eingerastet sind!
 
-soviel zum sind der hauseigenen firewall ( die ich später auch auf andere aufgaben ausweite die system relevant sind )
+soviel zum Sinn der hauseigenen firewall ( die ich später auch auf andere aufgaben ausweite die system relevant sind )
 
 ----------------------------------------------------------
-zwischen wissen warum =
+Zwischenwissen warum =
 
 In Unix gibt es Virenscanner, die Dateien nach Mustern durchsuchen.
 In Pylovara prüft der VATRON (©) die strukturelle Integrität der Gatter-Schleife.
 Das macht das System immun gegen „Code-Injection“, weil eine falsche Syntax in der ABSK einfach physikalisch nicht leitfähig ist.
 ----------------------------------------------------------
 VATRON = FIREWALL = ABSOLULATOR = ABSK KONTROLLE 
-Jo .... damit wären wir mit lektion FIREWALL fertig ....
+Jo .... damit wären wir mit Lektion FIREWALL fertig ....
 
-jetzt kommen wir zu dem kuriosen umstand ( den ich nicht erwähnt habe aber hoffentlich bei einige die frage aufwirft) warum fehlen » und « bei Proteine ?
+jetzt kommen wir zu dem kuriosen umstand 
+( den ich nicht erwähnt habe aber hoffentlich bei einige die frage aufwirft) 
+warum fehlen » und « bei Proteine ?
 
-Naja .... Ausführbare PROTEINE und NICHT Ausführbare PROTEINE haben einen tieferen designe hintegrund
+Naja .... Ausführbare PROTEINE und NICHT Ausführbare PROTEINE haben einen tieferen Design-Hintergrund
 
-da ich knapp 4 monate lang an dem BLOCK dillema von verschiedenen Langs gesessen war und das Jitter Problem auf software ebene auch 
+da ich knapp 4 monate lang an dem BLOCK Dilemma von verschiedenen Langs gesessen war und das Jitter Problem auf software ebene auch 
 ein ding war das ich in den griff bekommen musste ....
 
 werden ausführbare proteine nur dann verwendet wenn sie etwas tun !
@@ -211,7 +213,7 @@ gibt die ausgabe weiter zu editieren !
 Was im übrigen auch über den gesamten transaktionsrahmen ablauf passieren kann.
 
 
-also halten wir uns mit dieser erstmal unrelevanten tatsache nicht auf das wir es manual 
+also halten wir uns mit dieser erstmal irrelevanten tatsache nicht auf das wir es manuell 
 zusammen basteln wollen ... 
 
 später implementiere ich einen natives Live Terminal für Genau solche fragen!
@@ -226,7 +228,7 @@ nach dem REXO-KORDI-REXAN-STATUS die möglichkeiten gezeigt hat , was überhaupt
 bauen wir darauf hin 
 
 die auswahl auf mit der wenn kann und wenn nicht regelung, die reaktiv auf existenz oder ausführungsmöglichkeit 
-geschrieben wurde , um lässtige IF else Operatoren gegen reflexe auszutauschen , die effecktiver sind 
+geschrieben wurde , um lästige IF else Operatoren gegen reflexe auszutauschen , die effektiver sind 
 
 ¢!
 © »['lsusb -t']«
@@ -246,7 +248,7 @@ geschrieben wurde , um lässtige IF else Operatoren gegen reflexe auszutauschen 
         ↓
         ¶¶ »['exit']«
             ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]« <-- und lassen es uns zum gewünschten ordner schicken
-                ¬· »['cp /media/usbstick/* ~/Downloads']« <-- und versuchen es ein letzte mal aus verzweiflung zu copieren (was warscheins fehl schlägt)
+                ¬· »['cp /media/usbstick/* ~/Downloads']« <-- und versuchen es ein letzte mal aus verzweiflung zu kopieren (was wahrscheinlich fehl schlägt)
 !¢
 
 ----------------------------------------------------------
@@ -264,7 +266,4 @@ fließt der Strom in den ¶¶-Pfad. Keine Verzögerung, keine Fehlprognose der C
 
 ----------------------------------------------------------
 
-
-
-und alleine diese einfache seite , selbst mit meinen tausenden gramatik fehler - ist mehr wert als 100 jahre informatik !
-
+(weiter blättern))

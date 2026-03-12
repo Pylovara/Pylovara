@@ -1,23 +1,18 @@
 Gut , wir kommen wieder zum punkt aufbau 
 
 wie genau baut sich die syntax auf ? 
-
 Naja ( ich klugscheiße jetzt mal), ganz easy ( klar ... der dev sagt easy )
 
 wir haben auf seite 2 gelernt am schluss das dass lernen der BSK Verkürzungslogik
 der schlüssel zum verständniss des unterbaus selbst ist und durch PROTEIN POIWERK
 einrastpunkte der weitere verlauf der schaltung Möglich wird.. 
 
-
-
 gut ... lassen wir bsk beiseite den genau diese stärke kann ich garantieren!
-
 Lernen wir symbolisch die Syntax der puren Logik 
 
+jeden Dateitype den wir anlegen , beinhaltet Transaktionsrahmen als RUNTIME !
 
-jede Dateityp das wir anlegen , beinhaltet Transaktionsrahmen als RUNTIME !
-
-Diese Runtimes Schalten die eltern dateitypen frei und ergeben ein gesamtes
+Diese Runtimes schalten die Eltern Dateitypen (auch als MORPHIC-0 als DI bekannt )frei und ergeben ein gesamtes
 programmiertes element ( je nach dem was du tun möchtest )
 
 sagen wir , wir wollen einen usb stick ansteuern und die ports sehen
@@ -41,7 +36,23 @@ dann wäre der terminal weg warscheinlich
 | `cat /sys/bus/usb/devices/*/product` | Zeigt direkt die Produktnamen aller USB-Geräte an. |
 | `ls /sys/bus/usb/devices/` | Listet alle USB-Geräte-Verzeichnisse im Sysfs auf . |
 
-diese liste erstellt dir jede AI ..... also Chill .... 
+diese liste erstellt dir jede AI ..... also Chillt! ....
+
+
+----------------------------------------------------------
+
+kurze zwischen sache = 
+
+Warum Nutzen wir es nicht einfach im Terminal ? 
+
+Antwort = 
+
+Weil das Terminal das du nutzt einem OS system zugeordnet ist 
+oder ausgewählt (je nach system) und das nicht das Pylovara-System ist
+das frei über dem OS schwebt oder untendrunter und wir damit lediglich 
+das OS Nutzen ( wovon wir alle weg wollen ...... weil seite 1 erklärt )
+
+----------------------------------------------------------
 
 
 wie bauen wir jetzt einen einfachen usb call ? 

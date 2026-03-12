@@ -141,6 +141,13 @@ er kontrolliert die ABSK ketten und prüft ob sie Sinn ergeben , ob die Syntax s
 
 soviel zum sind der hauseigenen firewall ( die ich später auch auf andere aufgaben ausweite die system relevant sind )
 
+----------------------------------------------------------
+zwischen wissen warum =
+
+In Unix gibt es Virenscanner, die Dateien nach Mustern durchsuchen.
+In Pylovara prüft der VATRON (©) die strukturelle Integrität der Gatter-Schleife.
+Das macht das System immun gegen „Code-Injection“, weil eine falsche Syntax in der ABSK einfach physikalisch nicht leitfähig ist.
+----------------------------------------------------------
 VATRON = FIREWALL = ABSOLULATOR = ABSK KONTROLLE 
 Jo .... damit wären wir mit lektion FIREWALL fertig ....
 

@@ -15,6 +15,8 @@ Anstatt abstrakten Code oder komplizierte Techniktheorie zu büffeln, lernen die
 
 Diese Symbole sind keine reinen Fantasieprodukte, sondern starke Übersetzungen echter, grundlegender Bestandteile aus unserem Entwickler-Lexikon (den _Kernel Notes_). Durch das Visualisieren dieser Bausteine verstehen die Kinder intuitiv, wie digitale und logische Prozesse aufgebaut sind, lange bevor sie auch nur eine Zeile Code schreiben.
 
+Das schöne dabei ist
+
 ## Welche neuen "Vokabeln" / Komponenten lernen die Kinder?
 In den kommenden Lektionen werden die Kinder sehr spezifischen Komponenten begegnen. Damit auch Sie als Begleitpersonen das Konzept dahinter verstehen, finden Sie hier eine kurze Übersicht der wichtigsten Symbole, die wir in dieser Stufe einführen:
 
@@ -120,10 +122,10 @@ KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE # in der Datei befindet sich dann:
 
 !¢
 
-Sie haben richtig gesehen! Das lernen die Kinder auf spielerische Art und Weise. Das kann ihnen kein C, Python oder Sonstiges beibringen, weil es zu abstrakt ist und nicht direkt auf dem Sockel der Hardware basiert!
+Sie haben richtig gesehen! Das lernen die Kinder auf spielerische Art und Weise. Das kann ihnen kein C, Python oder Sonstiges bieten, weil es zu abstrakt ist und nicht direkt auf dem Sockel der Hardware basiert!
 
 Wir werden den Kindern erklären können, warum welches Symbol was tut!
 Wir werden den Kindern erklären können, wie man Programme schreibt – ohne Fragezeichen im Kopf!
 Wir werden den Kindern keine abstrakten Hieroglyphen in einem Compiler näherbringen müssen, sondern wir können sie direkt mit logischem Denken in den BSK (Bausteinschaltungs-Kreislauf) einführen!
 
-Selbst die Komponenten, die für die Übersetzung existieren, können wir für das eigene Verständnis den Kindern mit jeder symbolischen Lektion vermitteln!
+Selbst die Komponenten, die für die Übersetzung existieren, können wir für das eigene Verständnis den Kindern mit jeder symbolischen Lektion vermittelt werden!

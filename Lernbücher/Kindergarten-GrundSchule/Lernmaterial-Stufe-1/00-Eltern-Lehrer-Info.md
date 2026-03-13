@@ -79,7 +79,7 @@ Wir werden keine OS ABI oder sonstigen schnickschnack benutzen , sondern nur die
 damit sie verstehen worauf das ganze hinausläuft , zeige ich ihnen eine Print 
 variante die die kinder später selbst schreiben können :
 
-KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE
+KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE # in der datei befindet sich dann :
 
 ¢!
 

@@ -3,7 +3,7 @@
 Das ist ein langes Wort: Kom-po-nen-ten. 
 Aber es ist ganz schwer? Nein, ganz einfach!
 
-(Bild: ![alt text](../Bildliches/komponenten_wald_puzzle.png))
+(Bild: ![alt text](../Bildliches-Stufe-0/komponenten_wald_puzzle.png))
 
 Komponenten sind wie **Puzzleteile**. 
 Wenn du viele kleine Puzzleteile richtig zusammensteckst, bekommst du ein großes, schönes Bild.

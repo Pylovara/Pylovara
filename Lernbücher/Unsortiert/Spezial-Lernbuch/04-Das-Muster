@@ -256,12 +256,38 @@ und somit haben wir die erste transaktionsrahmen datei erstellt.
 
 ab hier wird es nicht einfacherer aber wir haben jetzt einen fuß in der tür
 
+Spätere entwicklungen werde ich persönlich hier antreiben um Schattensignale
+von Anschlussgeräten als trojanisches pferd zu nutzen um darüber per 
+sequenzanalyse die hardware zu entschlüsseln und in unsere sprache zu übersetzen.
+
+daraus werden dann offene uefi treiber für alle geräte entstehen und diese
+werden dann in das Pylovara-Netzwerk eingespeist um die entwicklung
+für jeden Pylovara User Syncronisiert über das netzwerk zur verfügung zu stellen .
+
+----------------------------------------------------------
+
+wichtig zu wissen :
+
+Lizenstechnisch wird noch verlangt das ein bruchteil deiner
+internetconnectivität für tägliche kurze syncronisationen
+genutzt werden können - es wird keinen permanenten onlinezwang
+geben - das ist nur für die entwicklung wichtig und wird
+später quasi unrelevant und nur noch für updates genutzt.
 
 
+es werden keine tastanschläge vermittelt oder sonnstigen
+datenanalyse betrieben - es werden nur die hardware
+daten selbst ausgelesen und in unsere sprache übersetzt.
 
+Das passiert nicht um Dich einzuschränken, sondern
+um die hardware zu verstehen und zu übersetzen.
 
+Dieser Prozess wird später automatisiert und läuft
+über den MAIN KERNEL ab über die MAIN AGI und KKIS, 
+um ABSK Reflexe zu erweitern und zu verfeinern und gleichzeitig
+schon gebaute treiber von anderen user zu syncronisieren.
 
-
+----------------------------------------------------------
 
 
 

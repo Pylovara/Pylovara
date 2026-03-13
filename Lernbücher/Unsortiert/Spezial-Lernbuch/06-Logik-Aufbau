@@ -140,10 +140,20 @@ KAFFESTARTET.KAFFECREMAMASCHINE-CORE
        ¶ ¬· »["Tanken"]«
              ¬· »["Brauch Wasser"]«
                  ¶ ¬· »["Wasser voll"]«
-                       ¬· »["Stop den zufuhr"]«««E
+                       ¬· »["Stop die Zufuhr"]«««E
                  ¶¶ ¬· »["Wasser rein"]«
-
+                        ¬· »["Füllstand prüfen"]«««S8
+                            ¶ ¬· »["Füllstand Voll"]«««E
+                            ¶¶ ¬· »["Füllstand leer"]«
+                                   ¬· »["FEHLER Meldung"]«
              ¬· »["Brauch Strom"]«
+                 ¶ ¬· »["Heizstab an"]«««E
+                 ¶¶ ¬· »["Heizstab aus"]«
+                        ¬· »["Fehlermeldung"]«««E
+                        
+
+
+
              ¬· »["Brauch Kaffeepulver"]«                
                  ¶ ¬· »["ist voll"]«
                        ¬· »["Tasse Drunter"]«

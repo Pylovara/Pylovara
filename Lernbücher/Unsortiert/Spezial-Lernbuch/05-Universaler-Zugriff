@@ -16,3 +16,87 @@ nehmen wir jetzt mal an wir haben ein Linux System installiert.
 Vorteilhaft = linux-zen | linux-zen-header | bash 
 (ich steh auf Arch aber das ist jetzt egal , wir nehmen jetzt mal den kernel der am besten passt)
 
+BOXIS ! AHU 
+
+Dank dieser komponenten können wir jetzt die hardware ansprechen 
+und uns die daten holen die wir brauchen um uns einen eigenen
+runtime zu bauen. 
+
+vielleicht ein Runtime für einen Ai runtimer ? 
+am besten Nativ ?
+noch beser permanent live ?
+vielleicht sogar mit rückmeldungen per popup?
+
+also etwas künsteln !
+
+um das zu bewerkstelligen brauchen wir einen runtime 
+der schon existiert in den alten sprachen wie C und C++.
+
+Google glaub hat hier noch nix am start aber soweit ich weis
+gibts 3 andere runtimer 
+
+1. ollama
+2. openclaw
+3. cpp-llama
+(und dann gibts bestimmt noch mehrere runtimer wie LLM Studio, aber wir begrenzen es erstmal)
+
+um einen runtimer zu triggern das er läuft und zwar auch wenn nichts eingegeben wird 
+brauchen wir zwar zwei weitere komponenten , die später zwei dinge tun :
+
+1. Tastatur IDLE TRIGGER
+2. POPUP CHAT Schnittstelle
+
+somit kann eine AI permanent laufen ohne eingabe und ist live neber dir auch wenn 
+du nur ein filmschaust oder so ! 
+
+da wir aber den runtime ansteuern wollen bauen wir jetzt über das boxis system die system internen
+aufrufe für das Runtime , Ollama (weil einfach)
+
+
+__________________________________________________________
+*.OLLAMA-CORE # START
+
+¢!
+© »[~RUN *.OLLAMA-CORE*~]
+   ¬· »['/Pylovara/AI/ollama/bin/ollama start']
+       ¬·· »[~RUN *.OLLAMA-NODE*~]
+!¢
+__________________________________________________________
+*.OLLAMA-NODE # CHAT AUFBAU
+
+¢!
+Ŧ² »['hyprctl dispatch exec "kitty --hold ollama run qwen3:0.6ben"']«
+    ¬·¤: ["Hyprland Display Server Zuweisung"]
+    ¬·¤: ["Ollama Core gestartet"]
+    ¬·¤: ["Ollama Chat Trigger aktiv"]
+    ¬·· »[~RUN *.OLLAMA-NODE*~]«
+!¢
+__________________________________________________________
+*.OLLAMA-NANO # CHAT TRIGGER (GUI NACHRICHTEN)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

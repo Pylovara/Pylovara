@@ -122,3 +122,12 @@ KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE # in der datei befindet sich dann :
 
 Sie haben Richtig gesehen ! Das Lernen die kinder auf spielerische art und weise und das kann kein C oder Python oder sonstiges beibringen, weil es zu abstrakt ist und nicht auf dem Sockel der Hardware basiert!
 
+Wir werden Kinder erklären können warum welches Symbol was tut !
+Wir werden Kinder erklären können, wie man Programme schreib Ohne Fragezeichen im kopf !
+Wir werden Kinder keinen abstrakten Hieroglyphen in einem Compiler
+näher bringen müssen, sondern wir können sie direkt mit logischen Denken
+auf die BSK (BAUSTEINSCHALTUNGSKREISLAUF) bringen!
+
+Selbst die komponenten die für die übersetzung Exitieren, können wir für
+das verständnisses willen, kinder mit jeder Symbolischen Lektion - Vermitteln !
+

@@ -4,7 +4,7 @@ Liebe Eltern, liebe Lehrkräfte,
 
 herzlichen Glückwunsch! Die Kinder haben die ersten Grundlagen unserer Lernwelt (Stufe 0) erfolgreich gemeistert. 
 
-Bei Stufe 0 Ging es in erster Linie darum den Kinder die Welt von Pylovara näher zu bringen bevor wir in die Tiefe gehen in die Symbolische Entwickler oberfläche der MaschinenCodeSpeech Sprache - Stufe 0 soll Spaß auf das Programm machen das wir jetzt in Stufe 1 vertiefen werden.
+Bei Stufe 0 ging es in erster Linie darum, den Kindern die Welt von Pylovara näherzubringen, bevor wir in die Tiefe der symbolischen Entwickler-Oberfläche der MaschinenCodeSpeech-Sprache gehen. Stufe 0 sollte Lust auf das machen, was wir jetzt in Stufe 1 vertiefen werden.
 
 Nun beginnt ein neues, sehr spannendes Kapitel: **Stufe 1**. 
 
@@ -25,22 +25,22 @@ In den kommenden Lektionen werden die Kinder sehr spezifischen Komponenten begeg
 * **Proton:** 
   Der feste, positive Kern. Es ist der essenzielle Funke oder die Energie, die bewirkt, dass Dinge stabil bleiben und funktionieren.
 
-  Wir Sprechen hierbei von Hardware Energie Management das die Kinder spielerisch lernen!
+  Wir sprechen hierbei vom Hardware-Energiemanagement, das die Kinder spielerisch lernen!
 
 * **Argumente:** 
   In der Programmierung sind das Parameter, die übergeben werden. Für die Kinder sind das "Aufträge" oder "Zutaten", die wir unseren Helfern mitgeben müssen, damit sie genau wissen, was sie tun sollen.
 * **Sentiatoren:** 
   Wächter- oder Sensor-Systeme. Die Kinder lernen sie als extrem aufmerksame Beobachter kennen, die immer sofort spüren (sensen), wenn sich etwas verändert oder ausgeführt werden muss.
 
-  Wir Sprechen hierbei von Zweige die entscheidungen freischalten können!
-  Das selbe Prinzip das jede Programmiersprache der welt hat, nur besser!
+  Wir sprechen hierbei von Zweigen, die Entscheidungen freischalten können!
+  Dasselbe Prinzip, das jede Programmiersprache der Welt hat, nur besser!
 
 * **REX:** 
   Die ausführende Instanz (Executor/Router). Ein starker, verlässlicher "Gefährte", der Aufgaben annimmt, koordiniert und sicherstellt, dass die Befehle am richtigen Ort ausgeführt werden.
 
-  Das heißt im Klartext das die Kinder Arbeitsflächen (REX) kennenlernen die sie später in der echten Programmierung brauchen werden!
+  Das heißt im Klartext, dass die Kinder Arbeitsflächen (REX) kennenlernen, die sie später in der echten Programmierung brauchen werden!
 
-  Damit sie später nicht wie ich als Programmierer anfangen müssen zu lernen was eine Arbeitsfläche ist, sondern es schon kennen!
+  Damit sie später nicht wie ich als Programmierer erst mühsam lernen müssen, was eine Arbeitsfläche ist, sondern es schon von Beginn an kennen!
 
 ## Wie können Sie die Kinder unterstützen?
 Die Kinder werden lernen, diese hochentwickelten "Erwachsenen-Komponenten" in Form von Tieren, leuchtenden Steinen, Pflanzen oder magischen Werkzeugen in unserer Pylovara-Wald- und Tiefseewelt zu sehen.
@@ -49,85 +49,81 @@ Bitte ermutigen Sie die Kinder dazu, diese Symbole zu zeichnen und die Begriffe 
 
 Wir freuen uns darauf, gemeinsam mit Ihnen den nächsten Schritt in der Entwicklung unserer "Entwickler der Stufe 0" zu gehen!
 
-Es wäre auch Ratsam Mandalas für die Symbole zu erstellen und diese den Kindern zum Ausmalen zu geben. Das hilft ihnen dabei, sich die Symbole besser zu merken und fördert ihre Kreativität.
+Es wäre auch ratsam, Mandalas für die Symbole zu erstellen und diese den Kindern zum Ausmalen zu geben. Das hilft ihnen dabei, sich die Symbole besser zu merken, und fördert ihre Kreativität.
 
-Ich werde Persönlich ein paar Mandalas für die Symbole erstellen die Sie nur noch in ihrem Drucke ausdrucken müssen. Das hilft ihnen dabei, sich die Symbole besser zu merken und fördert ihre Kreativität.
+Ich werde persönlich ein paar Mandalas für die Symbole erstellen, die Sie nur noch mit Ihrem Drucker ausdrucken müssen. 
 
-Für den Stufen 1 lernprozess, Arbeiten wir hauptsächlich nur mit Print Boxis
-vom system , die so heißen = BOXIS und klassen herachie technisch aufgebaut sind...
+Für den Lernprozess in Stufe 1 arbeiten wir hauptsächlich mit Print-Boxis vom System, die "BOXIS" heißen und klassenhierarchisch technisch aufgebaut sind ...
 
-Disclaimer = Wenn ihr Kind nicht Lesen und Schreiben kann , weil es noch zu jung ist .... dann müssen sie den lesepaart übernehmen und ich denke das sie ihrem kind gerne etwas beibringen das Sinn ergibt ... 
+Disclaimer: Wenn Ihr Kind noch nicht lesen und schreiben kann, weil es noch zu jung ist, dann müssen Sie den Lesepart übernehmen. Ich denke aber, dass Sie Ihrem Kind gerne etwas beibringen, das Sinn ergibt ... 
 
-Der Rest ist Symbolische einbrägung mit schaltlogik !
+Der Rest ist symbolische Einprägung mit Schaltlogik!
 
-das heißt das ihr kind nicht lesen lernen muss um zu verstehen was hier passiert, sondern es muss die symbole verstehen und die logik dahinter! 
+Das heißt, dass Ihr Kind nicht lesen lernen muss, um zu verstehen, was hier passiert. Es muss lediglich die Symbole und die Logik dahinter verstehen! 
 
 Das ist der Sinn der Sache! 
 
-Wenn es Schon Lesen kann , wäre es natürlich schön <3
+Wenn es schon lesen kann, wäre es natürlich schön <3
 
-Was vielleicht noch erwähnenswert ist , ist das wir hierbei von einer Symbolischen Programmiersprache sprechen , die die Logik hinter der Programmierung vermittelt , ohne das Kind mit der Syntax einer Programmiersprache zu belasten und in Späteren Schritten auch den Unterbau kennenlernen kann, ohne dabei Gehirnungerecht lernen zu müssen.
+Was vielleicht noch erwähnenswert ist, ist, dass wir hierbei von einer symbolischen Programmiersprache sprechen. Diese vermittelt die Logik hinter der Programmierung, ohne das Kind mit der Syntax einer klassischen Programmiersprache zu belasten. In späteren Schritten kann es so auch den Unterbau kennenlernen, ohne dabei nicht gehirngerecht lernen zu müssen.
 
-Seien sie versichert das es keine symbole gibt die unerklärbar in irgend einer abstraktionsschicht stecken, sondern vom Sockel bis zum Po alles logisch
-und absolut Valide erklärt werden kann !
+Seien Sie versichert, dass es keine Symbole gibt, die unerklärbar in irgendeiner Abstraktionsschicht stecken, sondern vom Sockel bis zur Spitze alles logisch und absolut valide erklärt werden kann!
 
-Wir werden hierbei dann bei Stufe 2 anfangen Die Gelernten Komponenten mit 
-BOXH-PRINT => "" zu benutzen und bauen einfache schaltungen auf die mit allem auf diesem planeten erklärt werden kann .... 
+Wir werden hierbei dann in Stufe 2 anfangen, die gelernten Komponenten mit BOXH-PRINT => "" zu benutzen, und bauen einfache Schaltungen auf, die mit allem auf diesem Planeten erklärt werden können ... 
 
-Wir werden keine OS ABI oder sonstigen schnickschnack benutzen , sondern nur die Symbolische Sprache der MCS , die auf dem Sockel der Hardware basiert und somit absolut valide ist und nichts mit irgendwelchen Programmiersprachen zu tun hat, die auf irgendwelchen Abstraktionsschichten basieren und somit nicht valide sind!
+Wir werden keine OS ABI oder sonstigen Schnickschnack benutzen, sondern nur die symbolische Sprache der MCS, die völlig auf dem Sockel der Hardware basiert und somit absolut valide ist. Sie hat nichts mit herkömmlichen Programmiersprachen zu tun, die auf abstrakten Schichten basieren und somit verfälscht sind!
 
-damit sie verstehen worauf das ganze hinausläuft , zeige ich ihnen eine Print 
-variante die die kinder später selbst schreiben können :
+Wir lernen auch keine alten Syscalls. Denn wie Sie sicher schon festgestellt haben, kann uns eine KI diese heutzutage auf Knopfdruck wie ein Taschenrechner servieren!
 
-KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE # in der datei befindet sich dann :
+Deswegen nutzen wir dieses System als Alleinstellungsmerkmal. Später können alle Boxis mit KI-Unterstützung für die genaue Übersetzung befüllt werden (hierbei sprechen wir dann aber eher vom Anfang der Hauptschulzeit!).
+
+Damit Sie verstehen, worauf das Ganze hinausläuft, zeige ich Ihnen eine Print-Variante, die die Kinder später selbst schreiben können:
+
+KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE # in der Datei befindet sich dann:
 
 ¢!
 
 Ŧ° »["KNOPF AN"]«
-    ¬·»["Kaffeemaschine"]«««S20 # 20sekunden wartezeit wegen dem Heizstab
+    ¬·»["Kaffeemaschine"]«««S20 # 20 Sekunden Wartezeit wegen dem Heizstab
        ¶ ¬· »["Tanken"]«
              ¬· »["Brauch Wasser"]«
                  ¶ ¬· »["Wasser voll"]«
-                       ¬· »["Stop die Zufuhr"]«««E
+                       ¬· »["Stoppe die Zufuhr"]«««E
                  ¶¶ ¬· »["Wasser rein"]«
                         ¬· »["Füllstand prüfen"]«««S8
-                            ¶ ¬· »["Füllstand Voll"]«««E
+                            ¶ ¬· »["Füllstand voll"]«««E
                             ¶¶ ¬· »["Füllstand leer"]«
-                                   ¬· »["FEHLER Meldung"]«
+                                   ¬· »["FEHLER-Meldung"]«
 
              ¬· »["Brauch Strom"]«
                  ¶ ¬· »["Heizstab an"]«««E
                  ¶¶ ¬· »["Heizstab aus"]«
-                        ¬· »["Fehlermeldung"]«
+                        ¬· »["Fehler-Meldung"]«
                         
              ¬· »["Brauch Kaffeepulver"]«                
                  ¶ ¬· »["Kaffeepulver ist voll"]«««E
                  ¶¶ ¬· »["Kaffeepulver ist leer"]«
-                        ¬· »["FEHLER Meldung"]«
+                        ¬· »["FEHLER-Meldung"]«
 
              ¬· »["Brauch Tasse"]«
                  ¶ ¬· »["Tasse ist da"]«««E
                  ¶¶ ¬· »["Tasse ist nicht da"]«
-                        ¬· »["Wir stellen eine schnell darunter"]«
+                        ¬· »["Wir stellen schnell eine darunter"]«
                             ¬· »["Brauch Milch"]«
                             ¬· »["Brauch Zucker"]«
                             ¬· »["Brauch Kaffeelöffel"]«
 
     ¶¶ ¬· »["ES FEHLTE ETWAS"]«
         ¬· »["Kaffee ist nicht fertig"]«
-            ¬· »["Maschine Signal "]«
-                ſ »["Kaffee ist nicht fertig, reinige aber den Speicher"]«
+            ¬· »["Maschinen-Signal"]«
+                ſ »["Kaffee ist nicht fertig, reinige aber den Speicher!"]«
 
 !¢
 
-Sie haben Richtig gesehen ! Das Lernen die kinder auf spielerische art und weise und das kann kein C oder Python oder sonstiges beibringen, weil es zu abstrakt ist und nicht auf dem Sockel der Hardware basiert!
+Sie haben richtig gesehen! Das lernen die Kinder auf spielerische Art und Weise. Das kann ihnen kein C, Python oder Sonstiges beibringen, weil es zu abstrakt ist und nicht direkt auf dem Sockel der Hardware basiert!
 
-Wir werden Kinder erklären können warum welches Symbol was tut !
-Wir werden Kinder erklären können, wie man Programme schreib Ohne Fragezeichen im kopf !
-Wir werden Kinder keinen abstrakten Hieroglyphen in einem Compiler
-näher bringen müssen, sondern wir können sie direkt mit logischen Denken
-auf die BSK (BAUSTEINSCHALTUNGSKREISLAUF) bringen!
+Wir werden den Kindern erklären können, warum welches Symbol was tut!
+Wir werden den Kindern erklären können, wie man Programme schreibt – ohne Fragezeichen im Kopf!
+Wir werden den Kindern keine abstrakten Hieroglyphen in einem Compiler näherbringen müssen, sondern wir können sie direkt mit logischem Denken in den BSK (Bausteinschaltungs-Kreislauf) einführen!
 
-Selbst die komponenten die für die übersetzung Exitieren, können wir für
-das verständnisses willen, kinder mit jeder Symbolischen Lektion - Vermitteln !
-
+Selbst die Komponenten, die für die Übersetzung existieren, können wir für das eigene Verständnis den Kindern mit jeder symbolischen Lektion vermitteln!

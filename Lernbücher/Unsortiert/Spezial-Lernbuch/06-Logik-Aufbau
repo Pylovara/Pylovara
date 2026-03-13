@@ -115,6 +115,21 @@ ABSK = BOXK-BOXH-PRINT-BOXH-PRINT-START-INHALT-BOXU-PRINT-ENDE
 
 Das wäre das die BOX im Protein die mit anführungszeichen auskommt - einfaches Drucken
 
+Ihr müsst euch keine gedanken machen ob das jetzt alles so passt oder nicht , es geht nur um die logik des aufbaus und der verknüpfung der POIWERKE untereinander ! 
+
+Vor allem um das gleich vorweg zu nehmen 
+
+----------------------------------------------------------
+
+zwischen wissen :
+
+POIWERk zu POIWERK Herschen eigene daten vertikale verbindungsstränge,
+sobald ein poiwerk auf ein frische vertikal kommt , endet der vertikale datenstrom des POIWERK drüber oder drunter - dies erlaubt nervenzellen aufbauten
+
+(nur als hinweis für später)
+
+----------------------------------------------------------
+
 ________________________________________________________
 KAFFESTARTET.KAFFECREMAMASCHINE-CORE
 
@@ -123,10 +138,11 @@ KAFFESTARTET.KAFFECREMAMASCHINE-CORE
 Ŧ° »["KNOPF AN"]«
     ¬·»["Kaffemaschine"]«««S20 # 20sekunden wartezeit wegen dem heitzstab
        ¶ ¬· »["Tanken"]«
-             ¬· »["Brauch wasser"]«
+             ¬· »["Brauch Wasser"]«
              ¬· »["Brauch Strom"]«
              ¬· »["Brauch Kaffeepulver"]«                
                  ¶ ¬· »["ist voll"]«
+                       ¬· »[" "]«
 
                  ¶¶ ¬· »["ist leer"]«
 

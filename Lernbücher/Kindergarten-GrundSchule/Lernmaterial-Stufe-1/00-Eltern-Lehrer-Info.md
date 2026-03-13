@@ -24,6 +24,9 @@ In den kommenden Lektionen werden die Kinder sehr spezifischen Komponenten begeg
   Proteine sind die wandelbaren Strukturbausteine. Für die Kinder sind sie das "Material" oder der "Körper", aus dem unsere Ideen geformt werden.
 * **Proton:** 
   Der feste, positive Kern. Es ist der essenzielle Funke oder die Energie, die bewirkt, dass Dinge stabil bleiben und funktionieren.
+
+  Wir Sprechen hierbei von Hardware Energie Management das die Kinder spielerisch lernen!
+
 * **Argumente:** 
   In der Programmierung sind das Parameter, die übergeben werden. Für die Kinder sind das "Aufträge" oder "Zutaten", die wir unseren Helfern mitgeben müssen, damit sie genau wissen, was sie tun sollen.
 * **Sentiatoren:** 

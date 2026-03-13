@@ -12,6 +12,4 @@ Boxis ist ein richtig guter Helfer in der Pylovara-Welt.
 📦 ✨
 Wenn du etwas Wichtiges suchen möchtest oder gut aufheben willst, dann frag Boxis!
 
-Es Gibt Viele Boxis in der Pylovara Welt. Sie sehen alle gleich aus im Protein haben aber unterschiedliche Aufgaben.
-
-Und Boxis haben Symbole auf der Seite gemalt. Diese Symbole helfen uns zu erkennen, was in der Box ist.
+Es Gibt Viele Boxis in der Pylovara Welt. Sie sehen alle etwas anders aus im Protein und haben unterschiedliche Aufgaben.

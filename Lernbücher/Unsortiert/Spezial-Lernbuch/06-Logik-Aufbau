@@ -65,34 +65,96 @@ wir haben also gelernt das wir nichts ohne einen Rahmen machen können
 der schon in der grundaustattung im TRANK verankert ist - und das wir
 jede weiter logik ab dem ersten Start Protein aus die logik weiter führen können.
 
+SOBALD MAN EINRASTET können an dem Rastpunkt viele PROZESS-FLÄCHEN entstehen ohne dabei
+die maschine im unterbau, andauernt nur zu iritieren .
 
+die schreibweise ist hierbei immer gleich , egal wie wir den code aufbauen...
 ________________________________________________________
 KAFFESTARTET.KAFFECREMAMASCHINE-CORE
 
 ¢!
 »["Kaffemaschine"]«
  ¶ ¬· »["Brauch wasser"]«
-       ¶ ¬· »["Brauch Strom"]«
+   ¬· »["Brauch Strom"]«
+   ¬· »["Brauch Kaffeepulver"]«
+   ¬· »["Brauch Tasse"]«
+   ¬· »["Brauch Zeit"]«
+   ¬· »["Brauch Hitze"]«
+   ¬· »["Brauch Druck"]«
+   ¬· »["Brauch Geschmack"]«
+   ¬· »["Brauch Aroma"]«
+   ¬· »["Brauch Milch"]«
+!¢
+
+wir könnten aber genausogut ohne sentiatorn arbeiten
+und stattdessen nur den arbeitsplatz füllen ....
+
+¢!
+»["Kaffemaschine"]«
+ ¬· »["Brauch wasser"]«
+ ¬· »["Brauch Strom"]«
+ ¬· »["Brauch Kaffeepulver"]«
+ ¬· »["Brauch Tasse"]«
+ ¬· »["Brauch Zeit"]«
+ ¬· »["Brauch Hitze"]«
+ ¬· »["Brauch Druck"]«
+ ¬· »["Brauch Geschmack"]«
+ ¬· »["Brauch Aroma"]«
+ ¬· »["Brauch Milch"]«
+!¢
+
+dadurch haben wir zwar eine feine Digitale Liste erstellt aber das wäre
+zu nativ und zu trocken - wenn da eine komponente reißt , schmeck der kaffe nicht mehr
+und wir liefern vielleicht das elektronische gerät das den code ausführt - wer weis 
+also ist vorsicht geboten (schreibts euch an die wand)
+
+also versuchen wir jetzt daraus eine VALIDE geschickte werden zu lassen und 
+wir arbeiten nur mit :
+
+ABSK = BOXK-BOXH-PRINT-BOXH-PRINT-START-INHALT-BOXU-PRINT-ENDE
+
+Das wäre das die BOX im Protein die mit anführungszeichen auskommt - einfaches Drucken
+
+________________________________________________________
+KAFFESTARTET.KAFFECREMAMASCHINE-CORE
+
+¢!
+»["Kaffemaschine"]«««S30
+ ¶ ¬· »["Brauch wasser"]«
 
 
+   ¬· »["Brauch Strom"]«
 
 
+   ¬· »["Brauch Kaffeepulver"]«
 
 
-   ¶ ¬· »["Brauch Kaffeepulver"]«
-    ¶ ¬· »["Brauch Tasse"]«
-     ¶ ¬· »["Brauch Zeit"]«
-      ¶ ¬· »["Brauch Hitze"]«
-       ¶ ¬· »["Brauch Druck"]«
-        ¶ ¬· »["Brauch Geschmack"]«
-         ¶ ¬· »["Brauch Aroma"]«
-          ¶ ¬· »["Brauch Milch"]«
-           
-    
+   ¬· »["Brauch Tasse"]«
 
 
+   ¬· »["Brauch Zeit"]«
 
 
+   ¬· »["Brauch Hitze"]«
+
+
+   ¬· »["Brauch Druck"]«
+
+
+   ¬· »["Brauch Geschmack"]«
+
+
+   ¬· »["Brauch Aroma"]«
+
+   
+   ¬· »["Brauch Milch"]«
+
+ ¶¶ ¬· »["ES FEHLTE ETWAS"]«
+        ¬· »["Kaffee ist nicht fertig"]«
+            ¬· »["Maschine Aus EXIT"]«
+
+
+!¢
 
 
 

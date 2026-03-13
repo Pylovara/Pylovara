@@ -48,3 +48,11 @@ Die Kinder werden lernen, diese hochentwickelten "Erwachsenen-Komponenten" in Fo
 Bitte ermutigen Sie die Kinder dazu, diese Symbole zu zeichnen und die Begriffe wie "Protein" oder "Sentiator" ganz selbstverständlich in ihren Wortschatz aufzunehmen. Wenn ein Kind zum Beispiel von einem "Sentiatoren-Tier" spricht, das lauscht und aufpasst, dann hat es bereits eine komplexe Kontroll-Struktur der Informatik begriffen!
 
 Wir freuen uns darauf, gemeinsam mit Ihnen den nächsten Schritt in der Entwicklung unserer "Entwickler der Stufe 0" zu gehen!
+
+Es wäre auch Ratsam Mandalas für die Symbole zu erstellen und diese den Kindern zum Ausmalen zu geben. Das hilft ihnen dabei, sich die Symbole besser zu merken und fördert ihre Kreativität.
+
+Ich werde Persönlich ein paar Mandalas für die Symbole erstellen die Sie nur noch in ihrem Drucke ausdrucken müssen. Das hilft ihnen dabei, sich die Symbole besser zu merken und fördert ihre Kreativität.
+
+
+
+

@@ -58,8 +58,11 @@ __________________________________________________________
 
 ¢!
 © »[~RUN *.OLLAMA-CORE*~]
-   ¬· »['/Pylovara/AI/ollama/bin/ollama start']
-       ¬·· »[~RUN *.OLLAMA-NODE*~]
+   ¶ ¬· »['/Pylovara/AI/ollama/bin/ollama start']
+         ¶¶ ¬· »['/Pylovara/AI/ollama/bin/ollama start']
+                ¶¶ ¬· »[~( FLAG BERICHT )~]
+
+         ¶ ¬·· »[~RUN *.OLLAMA-NODE*~]
 !¢
 __________________________________________________________
 *.OLLAMA-NODE # CHAT AUFBAU

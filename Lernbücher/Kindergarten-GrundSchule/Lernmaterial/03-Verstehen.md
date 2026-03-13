@@ -3,6 +3,8 @@
 Weißt du, wie es sich anfühlt, wenn man endlich versteht, wie ein Spiel funktioniert?
 Das ist so, als ob oben über dem Kopf eine kleine Lampe angeht! **Pling!**
 
+(Bild: ![alt text](../Bildliches/mcs_tiefsee_gehirn.png))
+
 In Pylovara nennen wir das: **Das Verstehen**.
 Wenn du die Puzzleteile richtig zusammensteckst, verstehst du das große Bild. Alles macht auf einmal Sinn.
 

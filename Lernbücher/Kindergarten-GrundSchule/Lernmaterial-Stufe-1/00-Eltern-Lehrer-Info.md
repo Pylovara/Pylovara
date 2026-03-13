@@ -53,6 +53,5 @@ Es wäre auch Ratsam Mandalas für die Symbole zu erstellen und diese den Kinder
 
 Ich werde Persönlich ein paar Mandalas für die Symbole erstellen die Sie nur noch in ihrem Drucke ausdrucken müssen. Das hilft ihnen dabei, sich die Symbole besser zu merken und fördert ihre Kreativität.
 
-
-
-
+Für den Stufen 1 lernprozess, Arbeiten wir hauptsächlich nur mit Print Boxis
+vom system , die so heißen = BOXIS und klassen herachie technisch aufgebaut sind...

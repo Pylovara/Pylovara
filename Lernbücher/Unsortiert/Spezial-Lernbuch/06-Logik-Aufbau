@@ -119,34 +119,35 @@ ________________________________________________________
 KAFFESTARTET.KAFFECREMAMASCHINE-CORE
 
 ¢!
-»["Kaffemaschine"]«««S30
- ¶ ¬· »["Brauch wasser"]«
+
+Ŧ° »["KNOPF AN"]«
+    ¬·»["Kaffemaschine"]«««S20 # 20sekunden wartezeit wegen dem heitzstab
+       ¶ ¬· »["Tanken"]«
+             ¬· »["Brauch wasser"]«
+             ¬· »["Brauch Strom"]«
+             ¬· »["Brauch Kaffeepulver"]«                
+                 ¶ ¬· »["ist voll"]«
+
+                 ¶¶ ¬· »["ist leer"]«
+
+             ¬· »["Brauch Tasse"]«
 
 
-   ¬· »["Brauch Strom"]«
+       ¬· »["Brauch Zeit"]«
 
 
-   ¬· »["Brauch Kaffeepulver"]«
+       ¬· »["Brauch Hitze"]«
 
 
-   ¬· »["Brauch Tasse"]«
+       ¬· »["Brauch Druck"]«
 
 
-   ¬· »["Brauch Zeit"]«
+       ¬· »["Brauch Geschmack"]«
 
 
-   ¬· »["Brauch Hitze"]«
+       ¬· »["Brauch Aroma"]«
 
 
-   ¬· »["Brauch Druck"]«
-
-
-   ¬· »["Brauch Geschmack"]«
-
-
-   ¬· »["Brauch Aroma"]«
-
-   
    ¬· »["Brauch Milch"]«
 
  ¶¶ ¬· »["ES FEHLTE ETWAS"]«

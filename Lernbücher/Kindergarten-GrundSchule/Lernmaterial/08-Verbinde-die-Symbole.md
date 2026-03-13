@@ -20,3 +20,12 @@ Ziehe mit deinem Finger (oder deinem Stift auf dem Papier) eine Linie vom Bild z
 
 Toll gemacht! Du bist jetzt ein echter **Pylovara-Profi**! 🎉 
 Du kennst nun die wichtigsten Helfer.
+
+Aber wir müssen noch ein bisschen mehr lernen!
+
+Denn wir brauchen ja auch die Puzzelteile :-D
+
+Bist du Bereit für das nächste Spiel? 🎉
+
+
+

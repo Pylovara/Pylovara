@@ -60,12 +60,12 @@ __________________________________________________________
 *.OLLAMA-CORE # START
 
 ¢!
-© »[~RUN *.OLLAMA-CORE*~]
+© »[~RUN *.OLLAMA-CORE~]
    ¶ ¬· »['/Pylovara/AI/ollama/bin/ollama start']
          ¶¶ ¬· »['/Pylovara/AI/ollama/bin/ollama start']
                 ¶¶ ¬· »[~( FLAG BERICHT )~]
 
-         ¶ ¬·· »[~RUN *.OLLAMA-NODE*~]
+         ¶ ¬·· »[~RUN *.OLLAMA-NODE~]
 !¢
 __________________________________________________________
 *.OLLAMA-NODE # CHAT AUFBAU
@@ -75,7 +75,7 @@ __________________________________________________________
     ¬·¤: ["Hyprland Display Server Zuweisung"]
     ¬·¤: ["Ollama Core gestartet"]
     ¬·¤: ["Ollama Chat Trigger aktiv"]
-    ¬·· »[~RUN *.OLLAMA-NANO*~]«
+    ¬·· »[~RUN *.OLLAMA-NANO~]«
 !¢
 __________________________________________________________
 *.OLLAMA-NANO # CHAT TRIGGER (GUI NACHRICHTEN)

@@ -55,3 +55,13 @@ Ich werde Persönlich ein paar Mandalas für die Symbole erstellen die Sie nur n
 
 Für den Stufen 1 lernprozess, Arbeiten wir hauptsächlich nur mit Print Boxis
 vom system , die so heißen = BOXIS und klassen herachie technisch aufgebaut sind...
+
+Disclaimer = Wenn ihr Kind nicht Lesen und Schreiben kann , weil es noch zu jung ist .... dann müssen sie den lesepaart übernehmen und ich denke das sie ihrem kind gerne etwas beibringen das Sinn ergibt ... 
+
+Der Rest ist Symbolische einbrägung mit schaltlogik !
+
+das heißt das ihr kind nicht lesen lernen muss um zu verstehen was hier passiert, sondern es muss die symbole verstehen und die logik dahinter! 
+
+Das ist der Sinn der Sache! 
+
+Wenn es Schon Lesen kann , wäre es natürlich schön <3

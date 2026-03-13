@@ -65,3 +65,60 @@ das heißt das ihr kind nicht lesen lernen muss um zu verstehen was hier passier
 Das ist der Sinn der Sache! 
 
 Wenn es Schon Lesen kann , wäre es natürlich schön <3
+
+Was vielleicht noch erwähnenswert ist , ist das wir hierbei von einer Symbolischen Programmiersprache sprechen , die die Logik hinter der Programmierung vermittelt , ohne das Kind mit der Syntax einer Programmiersprache zu belasten und in Späteren Schritten auch den Unterbau kennenlernen kann, ohne dabei Gehirnungerecht lernen zu müssen.
+
+Seien sie versichert das es keine symbole gibt die unerklärbar in irgend einer abstraktionsschicht stecken, sondern vom Sockel bis zum Po alles logisch
+und absolut Valide erklärt werden kann !
+
+Wir werden hierbei dann bei Stufe 2 anfangen Die Gelernten Komponenten mit 
+BOXH-PRINT => "" zu benutzen und bauen einfache schaltungen auf die mit allem auf diesem planeten erklärt werden kann .... 
+
+Wir werden keine OS ABI oder sonstigen schnickschnack benutzen , sondern nur die Symbolische Sprache der MCS , die auf dem Sockel der Hardware basiert und somit absolut valide ist und nichts mit irgendwelchen Programmiersprachen zu tun hat, die auf irgendwelchen Abstraktionsschichten basieren und somit nicht valide sind!
+
+damit sie verstehen worauf das ganze hinausläuft , zeige ich ihnen eine Print 
+variante die die kinder später selbst schreiben können :
+
+KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE
+
+¢!
+
+Ŧ° »["KNOPF AN"]«
+    ¬·»["Kaffeemaschine"]«««S20 # 20sekunden wartezeit wegen dem Heizstab
+       ¶ ¬· »["Tanken"]«
+             ¬· »["Brauch Wasser"]«
+                 ¶ ¬· »["Wasser voll"]«
+                       ¬· »["Stop die Zufuhr"]«««E
+                 ¶¶ ¬· »["Wasser rein"]«
+                        ¬· »["Füllstand prüfen"]«««S8
+                            ¶ ¬· »["Füllstand Voll"]«««E
+                            ¶¶ ¬· »["Füllstand leer"]«
+                                   ¬· »["FEHLER Meldung"]«
+
+             ¬· »["Brauch Strom"]«
+                 ¶ ¬· »["Heizstab an"]«««E
+                 ¶¶ ¬· »["Heizstab aus"]«
+                        ¬· »["Fehlermeldung"]«
+                        
+             ¬· »["Brauch Kaffeepulver"]«                
+                 ¶ ¬· »["Kaffeepulver ist voll"]«««E
+                 ¶¶ ¬· »["Kaffeepulver ist leer"]«
+                        ¬· »["FEHLER Meldung"]«
+
+             ¬· »["Brauch Tasse"]«
+                 ¶ ¬· »["Tasse ist da"]«««E
+                 ¶¶ ¬· »["Tasse ist nicht da"]«
+                        ¬· »["Wir stellen eine schnell darunter"]«
+                            ¬· »["Brauch Milch"]«
+                            ¬· »["Brauch Zucker"]«
+                            ¬· »["Brauch Kaffeelöffel"]«
+
+    ¶¶ ¬· »["ES FEHLTE ETWAS"]«
+        ¬· »["Kaffee ist nicht fertig"]«
+            ¬· »["Maschine Signal "]«
+                ſ »["Kaffee ist nicht fertig, reinige aber den Speicher"]«
+
+!¢
+
+Sie haben Richtig gesehen ! Das Lernen die kinder auf spielerische art und weise und das kann kein C oder Python oder sonstiges beibringen, weil es zu abstrakt ist und nicht auf dem Sockel der Hardware basiert!
+

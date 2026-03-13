@@ -35,9 +35,12 @@ In den kommenden Lektionen werden die Kinder sehr spezifischen Komponenten begeg
   Wir Sprechen hierbei von Zweige die entscheidungen freischalten können!
   Das selbe Prinzip das jede Programmiersprache der welt hat, nur besser!
 
-
 * **REX:** 
   Die ausführende Instanz (Executor/Router). Ein starker, verlässlicher "Gefährte", der Aufgaben annimmt, koordiniert und sicherstellt, dass die Befehle am richtigen Ort ausgeführt werden.
+
+  Das heißt im Klartext das die Kinder Arbeitsflächen (REX) kennenlernen die sie später in der echten Programmierung brauchen werden!
+
+  Damit sie später nicht wie ich als Programmierer anfangen müssen zu lernen was eine Arbeitsfläche ist, sondern es schon kennen!
 
 ## Wie können Sie die Kinder unterstützen?
 Die Kinder werden lernen, diese hochentwickelten "Erwachsenen-Komponenten" in Form von Tieren, leuchtenden Steinen, Pflanzen oder magischen Werkzeugen in unserer Pylovara-Wald- und Tiefseewelt zu sehen.

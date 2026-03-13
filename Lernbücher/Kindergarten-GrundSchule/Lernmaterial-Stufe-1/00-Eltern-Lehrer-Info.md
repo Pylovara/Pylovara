@@ -31,6 +31,11 @@ In den kommenden Lektionen werden die Kinder sehr spezifischen Komponenten begeg
   In der Programmierung sind das Parameter, die übergeben werden. Für die Kinder sind das "Aufträge" oder "Zutaten", die wir unseren Helfern mitgeben müssen, damit sie genau wissen, was sie tun sollen.
 * **Sentiatoren:** 
   Wächter- oder Sensor-Systeme. Die Kinder lernen sie als extrem aufmerksame Beobachter kennen, die immer sofort spüren (sensen), wenn sich etwas verändert oder ausgeführt werden muss.
+
+  Wir Sprechen hierbei von Zweige die entscheidungen freischalten können!
+  Das selbe Prinzip das jede Programmiersprache der welt hat, nur besser!
+
+
 * **REX:** 
   Die ausführende Instanz (Executor/Router). Ein starker, verlässlicher "Gefährte", der Aufgaben annimmt, koordiniert und sicherstellt, dass die Befehle am richtigen Ort ausgeführt werden.
 

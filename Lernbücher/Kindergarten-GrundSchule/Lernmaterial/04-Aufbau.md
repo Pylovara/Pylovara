@@ -3,6 +3,8 @@
 Nachdem wir etwas gut verstanden haben, fangen wir an zu bauen!
 Das nennt man in Pylovara den **Aufbau**.
 
+(Bild: ![alt text](../Bildliches/aufbau_tiefsee_bausteine.png))
+
 Wir nehmen unsere Teile und bauen etwas Neues. 
 Das ist genau wie wenn du mit bunten Bausteinen einen großen, starken Turm baust!
 

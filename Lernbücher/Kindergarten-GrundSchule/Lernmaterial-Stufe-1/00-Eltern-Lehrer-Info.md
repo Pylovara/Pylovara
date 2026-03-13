@@ -4,11 +4,11 @@ Liebe Eltern, liebe Lehrkräfte,
 
 herzlichen Glückwunsch! Die Kinder haben die ersten Grundlagen unserer Lernwelt (Stufe 0) erfolgreich gemeistert. 
 
-Bei Stufe 0 Ging es in erster Linie darum den Kinder die Welt von Pylovara näher zu bringen bevor wir in die Tiefe gehen in die Symbolische Entwickler oberfläche der MaschinenCodeSpeech Sprache - Stufe 0 ist reine Vorbereitung auf die folgenden LernMaterialen. 
+Bei Stufe 0 Ging es in erster Linie darum den Kinder die Welt von Pylovara näher zu bringen bevor wir in die Tiefe gehen in die Symbolische Entwickler oberfläche der MaschinenCodeSpeech Sprache - Stufe 0 soll Spaß auf das Programm machen das wir jetzt in Stufe 1 vertiefen werden.
 
 Nun beginnt ein neues, sehr spannendes Kapitel: **Stufe 1**. 
 
-In dieser neuen Lernphase machen wir einen faszinierenden Schritt. Wir beginnen damit, den Kindern die **symbolische MCS-Oberfläche** (Master Control System) beizubringen. Unser gemeinsames Ziel ist es, sie spielerisch und kindgerecht zu "Entwicklern der Stufe 0" auszubilden. 
+In dieser neuen Lernphase machen wir einen faszinierenden Schritt. Wir beginnen damit, den Kindern die **symbolische MCS-Oberfläche** (Master Control System aka MaschinenCodeSpeech, zu Deutsch „MaschinenCodeSprache“) beizubringen. Unser gemeinsames Ziel ist es, sie spielerisch und kindgerecht zu "Entwicklern der Stufe 0" auszubilden. 
 
 ## Was bedeutet das genau?
 Anstatt abstrakten Code oder komplizierte Techniktheorie zu büffeln, lernen die Kinder durch **Bilder und Symbole**, wie komplexe Netzwerke und System-Architekturen funktionieren. 

@@ -113,7 +113,7 @@ wir arbeiten nur mit :
 
 ABSK = BOXK-BOXH-PRINT-BOXH-PRINT-START-INHALT-BOXU-PRINT-ENDE
 
-Das wäre das die BOX im Protein die mit anführungszeichen auskommt - einfaches Drucken
+Das wären die BOXIS im Protein die mit anführungszeichen auskommt - einfaches Druck Element
 
 Ihr müsst euch keine gedanken machen ob das jetzt alles so passt oder nicht , es geht nur um die logik des aufbaus und der verknüpfung der POIWERKE untereinander ! 
 
@@ -136,7 +136,7 @@ KAFFESTARTET.KAFFECREMAMASCHINE-CORE
 ¢!
 
 Ŧ° »["KNOPF AN"]«
-    ¬·»["Kaffemaschine"]«««S20 # 20sekunden wartezeit wegen dem heitzstab
+    ¬·»["Kaffemaschine"]«««S20 # 20sekunden wartezeit wegen dem Heizstab
        ¶ ¬· »["Tanken"]«
              ¬· »["Brauch Wasser"]«
                  ¶ ¬· »["Wasser voll"]«
@@ -146,36 +146,37 @@ KAFFESTARTET.KAFFECREMAMASCHINE-CORE
                             ¶ ¬· »["Füllstand Voll"]«««E
                             ¶¶ ¬· »["Füllstand leer"]«
                                    ¬· »["FEHLER Meldung"]«
+
              ¬· »["Brauch Strom"]«
                  ¶ ¬· »["Heizstab an"]«««E
                  ¶¶ ¬· »["Heizstab aus"]«
-                        ¬· »["Fehlermeldung"]«««E
+                        ¬· »["Fehlermeldung"]«
                         
-
-
-
              ¬· »["Brauch Kaffeepulver"]«                
-                 ¶ ¬· »["ist voll"]«
-                       ¬· »["Tasse Drunter"]«
-
-                 ¶¶ ¬· »["ist leer"]«
+                 ¶ ¬· »["Kaffeepulver ist voll"]«««E
+                 ¶¶ ¬· »["Kaffeepulver ist leer"]«
+                        ¬· »["FEHLER Meldung"]«
 
              ¬· »["Brauch Tasse"]«
+                 ¶ ¬· »["Tasse ist da"]«««E
+                 ¶¶ ¬· »["Tasse ist nicht da"]«
+                        ¬· »["Wir stellen eine schnell darunter"]«
+                            ¬· »["Brauch Milch"]«
+                            ¬· »["Brauch Zucker"]«
+                            ¬· »["Brauch Kaffeelöffel"]«
 
+ ¶¶ ¬· »["ES FEHLTE ETWAS"]«
+        ¬· »["Kaffee ist nicht fertig"]«
+            ¬· »["Maschine Aus EXIT"]«
 
-       ¬· »["Brauch Zeit"]«
+!¢
 
-
+                            ¬· »["Brauch Zeit"]«
+                            ¬· »["Brauch Hitze"]«
+                            ¬· »["Brauch Aroma"]«
        ¬· »["Brauch Hitze"]«
-
-
        ¬· »["Brauch Druck"]«
-
-
        ¬· »["Brauch Geschmack"]«
-
-
-       ¬· »["Brauch Aroma"]«
 
 
    ¬· »["Brauch Milch"]«
@@ -183,9 +184,6 @@ KAFFESTARTET.KAFFECREMAMASCHINE-CORE
  ¶¶ ¬· »["ES FEHLTE ETWAS"]«
         ¬· »["Kaffee ist nicht fertig"]«
             ¬· »["Maschine Aus EXIT"]«
-
-
-!¢
 
 
 

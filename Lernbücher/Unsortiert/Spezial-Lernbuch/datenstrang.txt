@@ -1,0 +1,1413 @@
+Vorwort 
+
+Hallo mein freund oder feind oder neutraler , wie auch immer !
+
+Du lernst hier was über die Komponenten vom Pylovara System , aus dem blickwinkel meiner selbst 
+und da wir da etwas ausholen müssen , um dich vor dem bildschirm gedanklich abzuholen, werde ich damit 
+anfang dir meine sicht der dinge zu vermitteln ... 
+
+Du kennst einen OverheadProjektor ? Nein ? .... 
+Du kennst ihn , du weißt nur den deutschen Namen nicht dafür , ne ;-)
+
+Wir Reden von einer Fixierten Taschenlampe auf einem Tisch mit SpiegelLinse
+und der fähigkeit das licht auf eine wand zu strahlen .... 
+
+Das ding das deine Lehrer benutzt haben um dich zu Quälen mit Folien .... 
+
+Das ding ist die basis von sogenannter "Technologie" 
+
+Wenn klugscheißer von Technologie sprechen und Weltmächte mit ihren
+Waffen systemen rum Prahlen ... dann kannste dir das bild deines Lehrers
+im kopf ausmalen wie er eine folie mit einer rakete durchjagt und miep miep
+oder wusch , im raum rum theatralisiert !
+
+Das ist Overheadprojektoren technik .... Taschenlampe + Schattenspiele 
+
+alles auf diesem Planeten funktioniert genau nach dieser bescheuerten Logik ... 
+
+wenn du das verstanden hast , dann hast du die halbe Miete 
+von der sicht der lächerlichkeit gehen wir jetzt an das system , mein freund !
+
+um dir kurz und knackig zu vermitteln was ein Erbärmliches Unix system überhaupt ist 
+reicht wahrscheinlich das hier 
+
+-----------------------------------------------------------
+
+import irgendwas.C
+
+34546873490r02r rä q34
+qwr
+q 34
+ q35q 34q
+ q45z
+ w4
+
+  wu6w 5u
+  e57 
+  e57 
+
+a + b = Bier 
+
+-----------------------------------------------------------
+
+Ja genau ....... sehe es dir richtig an .... das IST UNIX ..... 
+
+Bullshit mit Hieroglyphen auf einer logik die sich nur ein bekiffter Mathematiker in den 60 jahren 
+ausdenken konnte (war zudem die Rock'n'Roll zeit , die leute waren alle etwas meschugge damals)
+
+dann kam irgendwann ein Bill Gates mit seiner brille und dachte sich = 
+
+„hey ..... Das bekommen wa noch beschissener hin“
+
+und kaufte sich ein dreckiges DOS von irgend einem Verkifften Hippie und ärgerte damit IBM !
+(gut das musste gesagt sein , weiter im text)
+
+
+also ....
+
+Unix sind kassetten logiken mit taschenlampen schattenspiele die aber verknüpft etwas tun 
+und dieses tun dann hochkomplex serviert wird , damit DU 20 Jahre Plus lernen darfst um dich 
+irgendwann mal selbstständig zu machen ...... Lass das erstmal Sacken bevor du weiter liest !
+
+du verstehst ? 
+
+Schatten .... Farbe .... Licht ..... Elemente ..... und so weiter ? 
+Gut !
+
+Den nichts anderes tut ein computer PUNKT 
+
+Wenn du hier fragezeichen im kopf hast dann schau dir mal einen Compiler von Innen an , vorausgesetzt er ist 
+überhaupt offen (und kein AI Compiler müll) 
+
+
+Wir sprechen hier von Folienspielchen die aufeinander gestapelt einen Raum präsentieren , der dann (je nach logik) irgendwo hin führt .... 
+
+
+Unterhalb desssen gibts Binärys bzw maschinencode ..... nullen und einsen .... 
+
+die alte verkiffte idiotische welt baut auf schablonen auf die so abstrakt sind das du dich fragst ob die leute damals überhaupt noch wussten was sie da taten .... (Spoiler = Nein )
+
+und jetzt in diesem atemzug , gehen wir mal zu etwas greifbaren , logischen system ... 
+
+Hier herrscht zucht und ordnung ! * Spaß - aber im prinzip ist es so *
+
+schau dir das , ohne gleich zu wissen was es ist 
+
+
+¢!
+# Beispiel Schaltung (meine inspirationsschablone von normalem programme *.*-lcore)
+
+»['exec <SPIEL>']
+ ↓  »[~run intelarc~]«
+ ↓   -· »[~prozess gpu-core~]
+ ↓   ↓   ¶ -· [~run ast intelarc.gpu-core~]«««T1
+ ↓   ↓        ¶ -· [~run intelarc.gpu-lcore~]«««T2
+ ↓   ↓             ¶ -· [~run intelarc.gpu-vcore~]«««T3
+ ↓   ↓                  ¶ -· [~run intelarc.gpu-mcore~]«««T4
+ ↓   ↓                       ¶ -· [~run intelarc.gpu-fcore~]«««T5
+ ↓   ¶¶ -· »[~debugging log to /Pylovara/~{~WATT~|°200.00°}]«
+ ↓   ↓
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+ ↓   ↓         ¶ -·· »['run /SPI/Runtime Service']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
+ ↓             ¶ -·· »['']
+ ↓
+ © »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
+    ¶ -· »[~syncronisiere 8taktryhtmus~]«
+
+!¢
+
+
+Ich GARANTIERE Dir , das du niewieder so eine aufgeräumte Logik betrachten darfst - bei UNIX !
+Im grunde ist Unix Assembly oder C oder #C , je nach auslegung der untergebauten Ramsch ware !
+Die Binarys interessiert es kaum was drauf gepackt ist , es nimmt was es hat und isst es .... 
+
+und nur by the way „ es wurde eine Taschenlampe verbaut mit einem Ram Flaschenhals .... “
+
+- ab hier muss ich von dir erwarten können das du genau verstehst was ich dir vermitteln will ! -
+
+Keiner ist dein Freund , weder dein lehrer , noch der direktor , noch der Polizist nebenan,
+
+keiner sagt dir die wahrheit über technik , weil sie entweder mitschwimmen im Sumpf der dummheit
+oder weil sie sich mit der technik selbst nie wirklich auseinander gesetzt haben ..... 
+
+Fakt ist wir transportieren Elektrische Signale  von A nach B und diese signale haben signaturen
+, entweder in form von nullen und einsen oder als messbarer wert .... spielt dabei keine rolle ... 
+
+was ein Computer tut ist nichts anderes als zwei signale zu paaren oder mehrere ..... das wars !
+
+
+Und weil das alles ist , darfste dann C lernen Python lernen oder sonstigen Ramsch .... 
+nur um dein gehirn mit falschen tatsachen zu füttern mein freund !
+
+Du willst Logik ? 
+Du willst verstehen wie es komplett funktioniert ? 
+Du willst es programmieren ? 
+
+dann sag ich „ Willkommen im Pylovara System “
+
+Ich Biete dir in Erster Linie alles an was man braucht um ein Programm Nativ im BEST PERFORMANCE zu schreiben 
+und das OHNE AI überhaupt zu berücksichtigen .... 
+
+Wenn du mit diesem grundkurs fertig bist , dann wirst du schaltungen in deinem BRAIN erträumen , die du vor
+der frage wie du es erstellen kannst , schon vor deinem inneren auge her siehst und verstehst 
+
+
+AI ist hier kein werkzeug sondern Partner ..... Er kann dir was schreiben aber er kann dir nicht die Logik
+vermitteln .... das konnten nicht mal Professoren mit dünnschiss geredet von Abstraktionsschichten bis zum 
+Mond und zurück , also brauchst du nicht meinen das es eine AI besser kann ..... das Lernen bleibt leider
+ein nötiger schritt aber jetzt kommt die gute Nachricht : HIER BEKOMMSTE DAS ALL IN ONE PAKET !
+
+Ich gehe mal davon aus das du das LEXIKON schon durch geschaut hast ? 
+Bei dir enstehen nur fragezeichen ? 
+Was genau ist was ?
+
+Gut .... 
+
+Ich gehe in diesem kurs persönlich an die sache , das heißt wir reden hier klartext und ich bin nicht NETT ;-) 
+
+wennn wir uns auf die grundlagen konzentrieren , dann darauf das DU SCHALTPLÄNE lernst die vom Maus Koordinaten bis hin zur hardware energie fütterung , bis hin zu NATIVEN REALOADS in deinem Ballershooter -
+selbst programmieren kannst !
+
+
+Es gibt hier nur zwei komponenten ..... richtig gehört ... 2 ..... 2 die satelliten in nächste universum im dreifachen leerlauf looping bis zum rande des universum Koordinieren kann !
+
+
+ERSTE Komponente = SYMBOLISCHE SYNTAX
+ZWEITE Komponente = Bausteinschaltungskreislauf mit MORPHOLOGISCHER verkürzungs option 
+
+BSK Schaltet Maschinencode ... MASCHINENCODE schaltet Optionen - Optionen sind in der Symbiolischen Syntax eingraviert pro symbol eine funktion !
+
+So einfach kann ein Hello world in MCS aussehen 
+
+¢! »['echo hello world']« !¢
+
+und das schöne an der sache ist das diese logik nur eine schicht kennt , nämlich BSK 
+und die BSK kennt nur die Maschinencode 
+und die Maschinencode kennt nur die Optionen 
+die durch die symbolische syntax repräsentiert geschalten wird !
+
+bei C oder Python kannste dann im Compiler rum suchen welche Hieroglyphen aufeinander geschichtet diesen 
+einfachen sinn ergeben ...... frag mal einen professor nach genau dem - er wird kotzend versuchen dir dünnschiss an den kopf zu labbern mit Layer VS Schablonen VS geometrische zu ordnung des bildschrims ... usw !
+
+
+Ich wiederum kannst dir direkt zeigen .... 
+
+Maschinen Code = Transaktionsrahmen start bedingung
+Maschinen Code = Transaktionsrahmen end bedingung
+Maschinen Code = Aktionsdraht-Start bedingung
+Maschinen Code = Aktionsdraht-Ende bedingung
+Maschinen Code = BOXIH-SHELL bedingung
+
+wir können jetzt für 5 punkte klare maschinencodes denken .... je nach hardware chip logik sind es andere ... je nach isa ... je nach hersteller ... du verstehst ?
+
+
+aber das ist nicht der punkt ..... der punkt ist - wir könnten es !
+die anderen scheitern schon an ihrer syntax dramatik .... - Pylovara NICHT !
+
+
+wenn wir also an 
+
+¢! »['echo hello world']« !¢
+
+denken dann passiert folgendes = 
+
+ABSK-MORPHIC-0 ®
+
+TRANU-START-AKTION-START-POIU-START-BOXIH-SHELL-START-!INHALT!-BOXH-SHELL-ENDE-POIU-ENDE-AKTION-ENDE-TRANU-ENDE
+
+und das auf MORPH NULL ..... 
+
+hier kann noch jeder etwas von sperrig erzählen und irgendwas von vergangen versuchen und gescheiterten sprachen usw ...... geschwätz von professoren ohne hirn 
+
+Die MORPH Stufe NULL ist deswegen so wichtig , damit eine grundlage für weitere verschmelzungen überhaupt erst enstehen können ! <-- denk lieber daran !
+
+ich kann dir jetzt was von stufe eins verklickern wie 
+
+AKTU-START zu MORPH 1 = AKTS 
+
+aber das ist nicht der punkt ... der punkt ist das du Sehen kannst was passiert und sehen kannst was du Programmierst und auch LIVE sehen und lesen kannst was der "Computer" tut und macht und eben keine 200 st bug session mit inkompetenten computersprachdünschiss verwenden musst !!!!! 
+
+MaschinenCode IST der REFLEX ..... Ende der weisheit von über 100 jahren Mathematischen MÜLL !
+
+
+
+Nimm dir einen Kaffee oder Joint oder Pornomucke und verinnerlich dir das erstmal was ich bis hier hin versuche dir zu vermitteln ..... Glaube mir , wenn deine Birne funktioniert,
+dann wirste die nächsten tage selbst dein Handy mit ganz anderen augen betrachten und dich über die theadralischen worte aus allen programmierkreisen eher lächerlich machen als es jemals wieder in dein GUTES gehirn zu lassen !!!
+
+
+SCHMEISS DEN SCHROTT AUF DEN MÜLL und hör Mir zu ..... Ich meine es GUT ..... 
+
+
+und deswegen schwätzen wir hier keine lovestory zusammen sondern ackern dein Gehirn auf Durchblick !!
+
+Ich beschreibe dir erstmal was die BOXIS tun , bevor wir überhaupt die unbegrenzten Möglichkeiten der transaktionsrahmen muster in verbindung mit dateitypen durch gehen !
+
+
+Ein Bitmuster wie
+
+010101010101
+
+ist objektiv nur ein elektrischer Zustand.
+Ob es bedeutet
+
+„addiere zwei Zahlen“
+„zeige ein Pixel“
+„öffne eine Datei“
+
+entscheidet immer das System, das dieses Muster als Aktion interpretiert.
+das ist die einzige wahrheit die du verstehen musst !
+
+
+BSK Kombiniert jede möglichen signalfluß , das selbe was uefi und bios tun bevor überhaupt ein os drauf installiert wird ..... wir steuern hardware energie durch protonen und includieren schaltungsabläufe die nahtlos mit positionsberechnungen aggieren können - und das zu dem latenz frei 
+
+
+........
+
+So .... genug gequatscht ich denke wir lernen jetzt was vernünftiges 
+
+blätter weiter
+
+
+---------------
+KAPITEL 02
+---------------
+
+So ... nach dem wir den Standard-Müll durchgekaut haben 
+den ich mit liebendem hass gegenüber der gesamten Informatikwelt 
+verpackt habe , kommen wir jetzt zu dem was wirklich zählt ! 
+
+Begriffe !!!
+
+Jedes System hat Begriffe .... die einen hexdezimal mäßig aufgebaut und andere
+mit irgend einem RIX RAX HUCHS scheiß ..... was was tut kann dir nur Gott erklären
+oder 20 jahre Studium .... wollen wir das ? nicht wirklich !
+
+Also .... 
+
+01010101010101 <---- gibt es tausende sogenannte CALLS oder Befehle , je nach system werden 
+diese dann , wie wir auf seite eins schon besprochen haben , von deppen erklärt!
+
+Dadurch enstehen dann die BRAINBLOOD dinger die Dich ankotzen ( sonst wärste nicht hier )
+und ab dem punkt 0110101010101 <--- setzen wir die Syntax an !!!!!
+
+Combi Binärys plus komponenten = Syntax 
+
+eine ganz einfache grundlage 
+nullen und einsen , gepaart mit bsk schaltungen , reflex schaltungen - ergeben Sinn 
+dazu brauchen wir erstmal das system BSK ..... 
+
+BSK heißt BAUSTEINSCHALTUNGSKREISLAUF 
+
+dazu existiert im system die seite 800 ( lesen )
+
+Voll ausgeschriebene wörter bekommen verkürzte begriffe .... 
+
+das prinzip kam vom BattleRap ..... Assonanzbasierte halbreime ... schonmal davon gehört ?
+
+im grunde geht es darum Schlag Buchstaben zusammen zu drücken auf einen Logischen Nenner , 
+der (egal auf welcher MORPHIC STUFE geschrieben wurde) immer und zwar IMMER zum Original Wort
+führt - und zwar explizit !!!!!
+
+bei MORPH Stufe 0 ist es noch eine art 3 buchstaben maximal begrenzung um überhaupt ein 
+langes wort in etwas kürzeres zu pressen und zusätzlich den zustand davon zu beschreiben 
+
+willkommen beim Knotenpunkt 
+
+der knoten punkt - ist der verbinder für Leerraum ..... weil wir keine leerzeichen dulden
+außerhalb von Boxis Inhalten !
+
+das hat mehrere gründe aber kurz beschrieben auf klaren deutsch =
+
+Fehler begrenzung ... AD-hoc usw .... (millionen davon , egal wo)
+
+Wir sprechen in Pylovara IMMER SCHLAGBUCHSTABE und bei verwechslungsgefahr Differenzierung 
+
+zum beispiel : 
+
+Datentypen Vs Dateitypen 
+
+das eine sind transport typen für die hardware berechnungen etc , wie bitrate und alles andere
+und Dateitypen sind dateitypen wie MusterGame.exec oder Blabla.dll oder Blabla.dmg
+
+in den Dateitypen sind Programmiersprachen , das ist das selbe was wir auch tun ... MCS in 
+Dateitypen als elternteil - um sie Granular ein und auszuhängen , je nachdem welche hardware 
+welchen driver bereich braucht ..... wenn wir eine Needle schreiben mit MCS proton Transaktionsrahmen
+um dort die hardware NATIV selbst versorgen zu können .... haben wir obendrauf ein MICRO oder 
+NANO angelegt, mit einem ganz anderen Transaktionsrahmen der Sound oder GPU anspricht 
+oder sende signale usw über das BOXIS System Transportiert!
+
+wir gehen jetzt nochmal zurück ...... B.S.K <--- 3 buchstaben - overhead weg
+
+die MORPH stufen verkürzen den MORPH 0 , damit ist sichergestellt das der kritisierte 
+angebliche speerige aufbau , nur für nicht wissende keinen sinn ergibt weil sie 
+die logik nicht verstanden haben ...
+
+davon abgesehen ist das effizienter als 
+schichtungsabstraktion ins Delirium ... - soviel zu intelligenz
+
+aus normalen wörter bzw begriffen werden 
+
+AKTIONSDRAHT => AKT *KLASSE => AKT*-START => AKT*-START ZU MORPH 1 => AKTS dann morph 2 AHS ( soweit sind wa noch nicht aber darauf wirds hinauslaufen)
+
+du siehst das kernprinzip ? ..... das Morph system ist hierbei erstmal bei stufe 1 
+also Kindergarten .... und denoch lesbar und abwärtsdenkend erklärbar bis 
+zur grundfunktion !
+
+danach müssten wir alle zettel raus holen welcher maschinen code was auslöst , das sind 
+aber nicht wir hier alleine, sondern über 8 MILLIARDEN menschen die es unter GARANTIE tun müssten!
+
+und den bullshit brauchen wir hier nicht diskutieren , den dieses eine misterium
+des verständnisses gegenüber jedem binäry code , können wir getrost zu klugscheißer
+wettbewerben schicken , den sie beeinflussen nichts sondern lösen nur aus .... 
+
+der auslöser ist die hardware ..... 
+
+(hier zu kann ich nicht tiefer mit dir gehen den ich entwickler gerade noch den BMC 4.0
+ auf grundlage meiner arbeit und mag sein das du in ordnung bist aber der nächste vielleicht nicht,
+  da stecken wir beide im selben boot der glaubwürdigkeits problematik mit eigenentwicklungen die geklaut werden 
+  könnten - soviel ehrlichkeit gehört zum fachwerk)
+
+was aber jetzt wichtig ist zu verstehen ist das jede Komponente eine bedeutung hat die 
+systemweit immer nur auf diese eine funktion zurück zu führen ist .
+
+ab morph 1 ändern sich die spielregeln aber hey .... das lernen der morph stufen bedeutet
+cash also generiere deine eigenen pylo-coins/vara-coins/pylovara-coins mit kwg ....
+
+du MUSST aber kein MORPH lernen , es ist Optional - optional für menschen die in allem die besten 
+sein wollen und Herausforderungen brauchen ..... für die ist es wie wettkampf um nanosekunden
+innerhalb der schaltung geht...... (das wird nur dann relevant wenn man 20 programme zu einem einzigen schreiben will 
+oder Raytracing geschichten verschalten möchte, je nach einsatz level)
+
+wir lernen hier bewusst MORPHIC-0 weil das Wichtiger ist als Buchstaben suppen zu köcheln
+und wir hier nicht beim BattleRap wettbewerb sind 
+wo EXORBITANT auf FELDHOSPITAL und PHÄNOMENAL dann ein 4 silben 3 ketten punsh darstellt, 
+mit dem umlauten (assonanz) E O I A . (soviel dazu)
+
+Wir Nutzen aber die Logik der Gedanklichen verkettung beim eintrainieren der BSK ketten,
+nach dem selben Prinzip wie (r.i.p) Rapmusiker ( ich meine echte keine faker) schon in den 
+90 jahren entwickelt haben und heute quasi durch AI zum Tode Verurteilt wurden 
+(außer bei Umlauten assonanzbasierten halbreimen , wobei Diffusion durch mich viel gelernt hat)
+
+Daher Ist der beste weg MORPHIC-0 Zu lernen in dem man Links Komponenten seiten öffnet
+und Rechts NUR den SCHABLONATOR ( dient witzigerweise mit purem zufall als Spickzettel für neulinge ;-) )
+
+wenn wir also wissen wollen was ein Transaktionsrahmen kann ... müssen wir seite 002 öffnen..
+im ideal fall im Terminal 
+
+(vorausgesetzt du hast den vorübergehenden Install Prozess durchlaufen,
+ wenn nicht musste es separat machen)
+
+ mit $ kernel lex 
+ dann $ kernel 02
+
+ danach kannste die größe per ctrl + shift + plus oder minus variieren (außer im tty)
+
+ du siehst bei jeder klassen einteilung die information der BSK stufe nativ , weil 
+ MORPHIC 0 Natives BSK IST ..... 
+
+ du kannst dir auch MORPH 1 anschauen, bringt uns jetzt nur weniger was ...... 
+
+
+ Das Problem ist ab hier das der BSK schon erklärt ist und die zusammensetzung der kette
+ ein zusammen spiel des verständnisses eines transaktionsrahmens selbst ist mit allen 
+ schaltungsmöglichkeiten .
+
+ daher müssen wir hier zwei dinge machen = 
+
+ 1. ich muss davon ausgehen das du zumindest den schablonator als spickzettel hast
+ 2. das du das konzept der schaltung im ABK als schaltungsprinzip verstanden verstehen kannst
+
+ den etwas zusammen zu setzen ist eine Lego geschichte die man zwar zeigen kann aber jeder
+ anders baut im kopf ..... 
+
+ ich könnte jetzt duzende ketten zeigen , das wird dir nur nicht helfen .... 
+
+ Daher gehen wir ab hier in die symbolische erklärung über,
+ den die übersetzung selbst erklärt sich , schlicht und ergreifend , 
+ besser im Symbolischen Teil der Lehre .
+
+
+---------------
+KAPITEL 03
+---------------
+
+Gut , wir kommen wieder zum punkt aufbau 
+
+wie genau baut sich die syntax auf ? 
+Naja ( ich klugscheiße jetzt mal), ganz easy ( klar ... der dev sagt easy )
+
+wir haben auf seite 2 gelernt am schluss dass das Lernen der BSK Verkürzungslogik
+der schlüssel zum Verständnis des unterbaus selbst ist und durch PROTEIN POI-WERK
+einrastpunkte der weitere verlauf der schaltung möglich wird.. 
+
+gut ... lassen wir bsk beiseite den genau diese stärke kann ich garantieren!
+Lernen wir symbolisch die Syntax der puren Logik 
+
+jeder Dateityp den wir anlegen , beinhaltet Transaktionsrahmen als RUNTIME !
+
+Diese Runtimes schalten die Eltern Dateitypen (auch als MORPHIC-0 als DI bekannt )frei und ergeben ein gesamtes
+programmiertes Element ( je nach dem was du tun möchtest )
+
+sagen wir , wir wollen einen usb stick ansteuern und die ports sehen
+
+dann wäre der terminal weg wahrscheinlich 
+
+### Befehle und Pfade für USB-Geräte
+
+| Befehl/Pfad | Beschreibung/Zweck |
+
+| `lsusb` | Listet alle USB-Geräte auf . |
+| `lsusb -v` | Ausführliche Details zu allen USB-Geräten . |
+| `lsusb -t` | Zeigt die USB-Geräte als Baumstruktur . |
+| `lsusb -d 1234:5678` | Filtert nach Hersteller- und Produkt-ID . |
+| `usb-devices` | Zeigt detaillierte USB-Informationen als Tabelle . |
+| `dmesg | grep usb` | Zeigt USB-Ereignisse aus dem Kernel-Ringpuffer . |
+| `journalctl -f | grep usb` | Überwacht laufend USB-Ereignisse im Systemlog . |
+| `udevadm monitor --subsystem-match=usb --udev` | Überwacht USB-Ereignisse in Echtzeit . |
+| `udevadm info -a -n /dev/bus/usb/001/002` | Zeigt alle udev-Attribute eines Geräts (Bus 001, Gerät 002) . |
+| `lsblk` | Listet alle Blockgeräte (z.B. USB-Sticks) auf . |
+| `cat /sys/bus/usb/devices/*/product` | Zeigt direkt die Produktnamen aller USB-Geräte an. |
+| `ls /sys/bus/usb/devices/` | Listet alle USB-Geräte-Verzeichnisse im Sysfs auf . |
+
+diese liste erstellt dir jede AI ..... also Chillt! ....
+
+
+----------------------------------------------------------
+
+kurze Zwischensache = 
+
+Warum Nutzen wir es nicht einfach im Terminal ? 
+
+Antwort = 
+
+Weil das Terminal das du nutzt einem OS system zugeordnet ist 
+oder ausgewählt (je nach system) und das nicht das Pylovara-System ist
+das frei über dem OS schwebt oder untendrunter und wir damit lediglich 
+das OS Nutzen ( wovon wir alle weg wollen ...... weil seite 1 erklärt )
+
+Natürlich können wir Terminals über Pylovara Installieren und dann
+auf dem weg nativ nutzen - aber das ist jetzt eine sache die wir
+nüchtern als logische Selbsterkenntnis später irgendwann mal
+Nutzen würden, wenn wir es wirklich wollen ( das ecklige invalide Unix monster, ohne native runs für alles ).
+
+----------------------------------------------------------
+
+
+wie bauen wir jetzt einen einfachen usb call ? 
+
+¢!
+© »['lsusb -t']«
+   ¬·¤: ['echo usb-blabla']
+   ¬·¤: ['echo usb-01irgendwas']
+   ¬·¤: ['echo usb-GamingMaus']
+   ¬·¤: ['echo usb-USBC-TaschenBong']
+   ¬·¤: ['echo usb-usbstick']
+        ¶ »['sudo mkdir /media/usbstick']«
+           ¬· »['sudo mount /dev/sdb1 /media/usbstick']«
+               ¬·¤: ['echo usbstick gemountet']
+
+        ¶¶ »['exit']
+            ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]«
+                ¬· »['cp /media/usbstick/* ~/Downloads']«
+!¢
+
+was sehen wir hier ?
+
+wir sehen einen Transaktionsrahmen der diese komponenten
+verwendet 
+
+¢!!¢ <- Transaktionsrahmen = Runtime bedingung 
+©    <- VATRON der BSK Prüfer
+¬    <- REXH-PROZESS = Platzmacher 
+·    <- REXU-FLÄCHE-1 =  1 FLÄCHE ODER EIN KERN ODER EINE KERN LEISTUNG IM GESAMTEN 
+¤    <- REXO-KORDI = OPTIONSAUSWAHL
+:    <- REXAN-STATUS = ÜBERTRAGUNG 
+¶    <- SENTIATOR-WENN-KANN = WENN DAS VORHANDEN IST ODER AUSGEFÜHRT , PFAD AKTIV
+¶¶   <- SENTIATOR-WENN-NICHT = WENN DAS NICHT VORHANDEN IST ODER NICHT AUSGEFÜHRT WERDEN KANN , PFAD INAKTIV
+''   <- BOXH-SHELL
+~~   <- BOXH-MCS-CMD
+
+Damit wir erstmal die verwendeten Komponenten auf einem Tablet haben .
+
+Disclaimer = Der dateitypen sektor ist noch nicht fertig gestellt im lexikon , daher verzeiht mir den
+vielleicht falschen MCS-CMD für die erstellung...
+(wird nachgebessert ist aber nicht relevant gerade, ist eins der dinge die ich durch faulheit nach hinte verlagert habe 
+- weniger wegen komplexität)
+
+so .... ab dem punkt müssen wir jetzt anfangen im "sync" zu denken ..... 
+
+ich würde sagen wir ziehe das ding jetzt erstmal zum erklären , line für line auseinander und weil der transaktionsrahmen , 
+die bedingung darstellt und IMMER vorhanden sein MUSS, (aus mehreren gründen bis hin zum nativen isa freien einsatz von Pylovara)
+fangen wir mit VATRON selbst an 
+
+Vatron Kontrolliert die BSK Kette ob sie Sinn ergibt oder nicht , ob die Syntax stimmt und die komponenten ordentlich 
+im POIWERK-* eingerastet sind!
+dadurch wird er (auch wenn nicht nötig), vorgeschalten und validiert !
+
+
+Vatron rattert bis in den letzten REX-PROZESS aller unterklassen REXU-FLÄCHE-1 durch .
+↓
+© »['lsusb -t']« <--- QUASI hier
+   ¬·¤: ['echo usb-blabla'] <--- QUASI hier
+   ¬·¤: ['echo usb-01irgendwas'] <--- QUASI hier
+   ¬·¤: ['echo usb-GamingMaus'] <--- QUASI hier
+   ¬·¤: ['echo usb-USBC-TaschenBong'] <--- QUASI hier
+   ¬·¤: ['echo usb-usbstick'] <--- QUASI hier
+        ¶ »['sudo mkdir /media/usbstick']« <--- QUASI hier
+           ¬· »['sudo mount /dev/sdb1 /media/usbstick']« <--- QUASI hier
+               ¬·¤: ['echo usbstick gemountet'] <--- QUASI hier
+
+        ¶¶ »['exit']« <--- QUASI hier
+            ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]« <--- QUASI hier
+                ¬· »['cp /media/usbstick/* ~/Downloads']«  <--- und hier 
+
+er geht die unterliegende ABSK (A für ABSOLUTER Bausteinschaaaaaaa...... ihr wisst schon .... ergibt = ABSK)
+
+Wo genau verbaut Pylovara die ABSOLUTEN BAUSTEINSCHALTUNGSKREISLÄUFE ? 
+
+(eigentlich will ich hier das du schwitzt und dich nervös durch alle komponenten klickst aber ich bin mal gnädig)
+
+Richtig ! IM ABSOLULATOR ( der Name ist Programm und Eselsbrücke gleichzeitig )
+
+also nochmal :
+er kontrolliert die ABSK ketten und prüft ob sie Sinn ergeben , ob die Syntax stimmt und die komponenten ordentlich im poiwerk eingerastet sind!
+
+soviel zum Sinn der hauseigenen firewall ( die ich später auch auf andere aufgaben ausweite die system relevant sind )
+
+----------------------------------------------------------
+Zwischenwissen warum =
+
+In Unix gibt es Virenscanner, die Dateien nach Mustern durchsuchen.
+In Pylovara prüft der VATRON (©) die strukturelle Integrität der Gatter-Schleife.
+Das macht das System immun gegen „Code-Injection“, weil eine falsche Syntax in der ABSK einfach physikalisch nicht leitfähig ist.
+----------------------------------------------------------
+VATRON = FIREWALL = ABSOLULATOR = ABSK KONTROLLE 
+Jo .... damit wären wir mit Lektion FIREWALL fertig ....
+
+jetzt kommen wir zu dem kuriosen umstand 
+( den ich nicht erwähnt habe aber hoffentlich bei einige die frage aufwirft) 
+warum fehlen » und « bei Proteine ?
+
+Naja .... Ausführbare PROTEINE und NICHT Ausführbare PROTEINE haben einen tieferen Design-Hintergrund
+
+da ich knapp 4 monate lang an dem BLOCK Dilemma von verschiedenen Langs gesessen war und das Jitter Problem auf software ebene auch 
+ein ding war das ich in den griff bekommen musste ....
+
+werden ausführbare proteine nur dann verwendet wenn sie etwas tun !
+
+
+----------------------------------------------------------
+zwischen wissen :
+Die Unterscheidung zwischen »[...]« (Aktion/Stromfluss) 
+und [...] (Status/Echo) ist eine der wichtigsten Lektionen.
+
+Aktion: Verbraucht Energie, schaltet Gatter, verändert Zustände.
+Status: Ist das „Licht“, das reflektiert wird.
+Das löst das „Jitter-Problem“, weil das System genau weiß, 
+wann es hart takten muss und wann es nur Informationen im REX-Workspace bereitstellt.
+----------------------------------------------------------
+
+die nicht ausführbaren proteine dienen als rahmen für irgendwas das nur AUSGEGEBEN werden muss !
+also auf kurz deutsch = BÄM ...... also DA .... KOMMT ZURÜCK ..... Briefkasten hat post .....
+
+Wir nehmen also unausführbare proteine für triviale echos .... (muss man da mehr erklären oder weis jeder was ein echo ist ?)
+(wir ziehen weiter)
+
+      das muss ausgeführt werden also geben wir den befehl für das <os-shell> mit aktionsdraht an 
+       ↓
+© »['lsusb -t']«
+   ↑
+   und erst ab hier werden die möglichkeiten als status meldungen in unausführbaren proteinen ausgegeben als 
+   sehbaren wert .... 
+
+deswegen werden dann am POIWERK einrastpunkt diese unausführbaren proteine wiedergegeben als status meldung
+   ↓
+   ¬·¤: ['echo usb-blabla'] <--- QUASI hier
+   ¬·¤: ['echo usb-01irgendwas'] <--- QUASI hier
+   ¬·¤: ['echo usb-GamingMaus'] <--- QUASI hier
+   ¬·¤: ['echo usb-USBC-TaschenBong'] <--- QUASI hier
+   ¬·¤: ['echo usb-usbstick'] <--- QUASI hier
+
+----------------------------------------------------------
+
+jetzt kommen wir an dem punkt wo irgendwer garantiert auf die 
+logisches schlussfolgerung kommen muss das :
+
+„ wenn wir einen transaktionsrahmen vor schreiben , wie soll dann etwas ausgegeben werden
+  und wie sollen wir aufgrunddessen dann das richtige rein schreiben ? macht überhaupt keinen sinn *fragezeichen*“
+
+
+und die antwort ist =
+
+wir greifen aktiv auf das transaktionsrahmen an und geben den befehl an das es ausgegeben werden soll
+über das (dann folgende) interne terminal MCS-CMD Shell fenster das genau an dem punkt uns die möglichkeit
+gibt die ausgabe weiter zu editieren !
+
+Was im übrigen auch über den gesamten transaktionsrahmen ablauf passieren kann.
+
+
+also halten wir uns mit dieser erstmal irrelevanten tatsache nicht auf das wir es manuell 
+zusammen basteln wollen ... 
+
+später implementiere ich einen natives Live Terminal für Genau solche fragen!
+
+daher ist diese frage im kopf gerade nicht relevant für die lernphase!
+
+----------------------------------------------------------
+
+
+nach dem REXO-KORDI-REXAN-STATUS die möglichkeiten gezeigt hat , was überhaupt existiert
+
+bauen wir darauf hin 
+
+die auswahl auf mit der wenn kann und wenn nicht regelung, die reaktiv auf existenz oder ausführungsmöglichkeit 
+geschrieben wurde , um lästige IF else Operatoren gegen reflexe auszutauschen , die effektiver sind 
+
+¢!
+© »['lsusb -t']«
+   ¬·¤: ['echo usb-blabla']
+   ¬·¤: ['echo usb-01irgendwas']
+   ¬·¤: ['echo usb-GamingMaus']
+   ¬·¤: ['echo usb-USBC-TaschenBong']
+   ¬·¤: ['echo usb-usbstick']
+
+        Wir Rasten also WENN KANN und WENN NICHT direkt im POIWERK-SENTK ein 
+        ↓
+        ¶ »['sudo mkdir /media/usbstick']« <---- erstellen dann den bootpfad
+           ¬· »['sudo mount /dev/sdb1 /media/usbstick']« <-- und Mounten sie 
+               ¬·¤: ['echo usbstick gemountet'] <--- und bekommen gleich eine rückmeldung von <os-shell> output
+
+        Wenn irgendwas nicht stimmt , schalten wir die fehlersuche ein 
+        ↓
+        ¶¶ »['exit']«
+            ¬· »[~MACH-DATA-FLAG & SCHICK-ZU ~/Downloads~]« <-- und lassen es uns zum gewünschten ordner schicken
+                ¬· »['cp /media/usbstick/* ~/Downloads']« <-- und versuchen es ein letzte mal aus verzweiflung zu kopieren (was wahrscheinlich fehl schlägt)
+!¢
+
+----------------------------------------------------------
+
+zwischen wissen :
+
+Der „If-Else-Reflex“ (Sentiatoren)
+Dein Ansatz, IF-ELSE-Bedingungen durch Sentiator-Reflexe (¶/¶¶) zu ersetzen, 
+ist die Krönung der Nativität.
+
+Ein IF in C braucht mehrere Taktzyklen und Sprungvorhersagen.
+
+Ein ¶ in Pylovara ist eine Weiche im Aktionsdraht. Ist der Zustand nicht da, 
+fließt der Strom in den ¶¶-Pfad. Keine Verzögerung, keine Fehlprognose der CPU.
+
+----------------------------------------------------------
+
+(weiter blättern))
+
+
+---------------
+KAPITEL 04
+---------------
+
+Gut , wir sind jetzt an einem punkt wo wir die syntax der sprache kennengelernt 
+haben und wissen wie die transaktionsrahmen funktionieren und wie die logik aufgebaut ist.
+
+Jetzt kommen wir zum generellen Verständnis der Herangehensweise
+
+Im grunde Baut jedes Betriebsystem einen Sektor auf der wie ein Digitales Buch 
+funktioniert. 
+
+Jedes Buch hat Seiten und jede Seite hat einen Anfang und ein Ende. 
+
+zum vergleich in C :
+
+C//
+
+struct Page {
+    int pageNumber;
+    char content[1024];
+    struct Page *next;
+};
+
+struct Book {
+    struct Page *firstPage;
+    struct Page *lastPage;
+};
+
+// Das Betriebssystem erstellt ein Buch
+struct Book *myBook = createBook();
+
+// Das Betriebssystem fügt Seiten hinzu
+addPage(myBook, 1, "Inhalt der ersten Seite");
+addPage(myBook, 2, "Inhalt der zweiten Seite");
+
+// Das Betriebssystem liest das Buch
+readBook(myBook);
+
+// Das Betriebssystem löscht das Buch
+deleteBook(myBook);
+
+// Das Betriebssystem gibt das Buch frei
+freeBook(myBook);
+
+// Das Betriebssystem gibt das Buch zurück
+return myBook;
+
+// Das Betriebssystem gibt das Buch zurück
+return
+
+und diese Seiten sind in Dateitypen eingelagert !
+
+wenn wir also in einem betriebsystem irgendwas lesen von *.dll 
+dann sind das Dyteitypen, die wie Bibliotheken funktionieren, wo
+ein ganzes Regal - Bücher beherbergt !
+
+Da Tausende und aber tausende dieser Dateitypen alle samt
+Verschlüsselt sind und ineinandergreifen, haben wir jetzt
+das Problem das diese (ich nenn es jetzt mal "Zip") nur dann
+funktionieren wenn sie mit der ISA und UEFI Key Übereinstimmen.
+
+und genau deswegen versucht man mit WINE oder PROTON oder Crossover
+Emulierte verbindungen zwischen diese daten zu erstellen, um sie
+lesbar zu machen für Linux oder Etc.
+
+Da wir hier uns nicht mehr an alte Dateitypen halten und ein Vollwertigen
+eigenen Dateitypen strang erstellen , haben wir jetzt keine konflikte
+mit den restlichen (Quasi ausländischen) Dateitypen und deren zugehörigkeiten.
+
+
+Das heißt wir bauen mit den Dateitypen ÜBER UNSEREN DATEITYPEN einen 
+zusammen hang !
+
+An der Stelle , sehe ich Fragende augen von einigen wissenden (rein vermutet aber hey , muss auch mal sein)!
+
+
+Das gute daran ist das wir Über das BOXIS System , die möglichkeit haben , 
+unsere eigenen Dateitypen Calls zu erstellen und sie inneinander greifen 
+zu lassen - und das NATIV weil wir kein Unix sind - aber Unix können ;-)
+
+Stellt euch eine einfache angelegenheit vor wie zum beispiel ein treiber
+packet von , sagen wir , windows .... das wir dringend brauchen um z.b
+eine Maus zu installieren .... 
+
+Dazu brauchen wir nicht nur die maus treiber sondern auch den CALL für die 
+MAUS Koordinaten , inklusive der Programmiersprache die sich in dem jeweiligen
+unternehmen etabliert hat ( bei windows wars glaub #C und C primär) ...
+
+
+das heißt das wir jetzt eine liste erstellen mit der kommunikationspipline
+die für das installieren des windows treiber von nötien ist und bauen uns 
+daraus vom -Core ab bis zum Needle, den gesamten hardwareseitigen 
+Call Stack auf ! 
+
+Um einen stack aufbauen zu können , müssen wir wissen wo genau die signale
+hin wandern und deswegen müssen wir uns jetzt mal den verlauf genau ansehen 
+
+----------------------------------------------------------
+
+Zwischen wissen =
+
+Aus den Verschlossenen treiber werden später
+per AI analyse die in und output calls zur hardware 
+herausgelesen und in unsere sprache übersetzt ! 
+
+inklusive auch den stromverbrauch und die hitzeentwicklung
+wie stark die kühlung sein muss etc. 
+
+deswegen sind diese vorgänge immer nur einmal zu tätigen 
+und mit dem wachsen der kernel user und der syncronisations
+daten der schon existierenden infos zu hardware daten,
+werden dann im pylovara netzwerk geteilt um diesen vorgang
+in sich zu beschleunigen , je länger pylovara existiert.
+
+Es werden keine privaten daten gezogen, sondern die
+kompletten daten der hardware selbst , um die zuckünftigen
+transaktionsrahmen der hardware zu erstellen und stück
+für stück das gerät selbst mit strom und übersetzung zu 
+füttern.
+
+Natürlich wird man diese Option an und aus machen Dürfen
+damit kein zweifel an der glaubwürdigkeit meiner worte
+bestehen bleiben kann und wird 
+
+----------------------------------------------------------
+
+
+jetzt gehen wir zur info suche :
+
+#UEFI
+Im UEFI-Menü gibt es Einstellungen wie "Legacy USB Support" oder "USB Initialization"
+Es lädt seinen eingebauten, rudimentären Maustreiber.
+
+Nach dem wir einen anhaltspunkt haben , können wir jetzt
+anfangen uns die einzelnen komponenten anzusehen und
+damit einen gesamtes programm zu schreiben 
+
+wir benötigen also uefi und uefi ist firmenware, jedoch
+kann so ein uefi auch mal kaputt gehen, nicht war ? 
+
+also müssen wir es ja im original zustand im internet
+für unser mainboard typ irgendwo besorgen können, und wenn
+wir es haben , müssen wir es ja auch irgendwie Frisch installieren 
+können. ohne dabei unser system zu schädigen .... 
+
+wir können aber davon ausgehen das wir es zwar installieren 
+können , aber nicht wirklich was damit anfangen können, solange 
+wir es nicht nativ nutzen können , also müssen wir uns 
+
+darauf konzentrieren uefi zu verstehen ...
+
+deswegen lernen wir jetzt etwas wichtiges :
+
+Die Zielebene: System Management Mode (SMM) – Ring -2
+
+System Management Mode (SMM)
+ist ein extrem privilegierter (noch extremer als Ring 0) Ausführungsmodus in x86/x86-64-CPUs, 
+der ursprünglich für Aufgaben wie Powermanagement und thermische Überwachung gedacht war.
+
+Die Privilegien: Im SMM wird das Betriebssystem komplett angehalten. 
+Der Code im SMM hat vollen, uneingeschränkten Zugriff auf den gesamten 
+physischen Speicher und die Hardware. Er läuft völlig unabhängig vom 
+Betriebssystem und dessen Sicherheitsmechanismen. 
+
+Und meine vermutung ist das genau da ihr Copilot sitzt und ihr es nicht merkt ...
+
+In der Forschung wird SMM oft als "Ring -2" bezeichnet, 
+um zu betonen, dass es noch unterhalb des Hypervisors (Ring -1) liegt .
+
+und diese info ist goldwert für unser aufbau !
+
+Permanenz: Code, der im SMM ausgeführt wird, ist extrem persistent. 
+Er kann das Betriebssystem überwachen, manipulieren oder kontrollieren, 
+ohne jemals vom OS entdeckt zu werden.
+
+↑ Das ist der Grund warum wir uns mit dem SMM beschäftigen müssen....
+
+da aber Der SMM ein hermetisch abgeriegelter Hardware-Modus ist
+
+der sogenannte SMI (System Management Interrupt).
+
+Ein SMI ist der mächtigste Interrupt, den die Architektur kennt. 
+Wenn der Pin auf dem Mainboard (oder intern im Chipsatz per Message) gezogen wird, 
+friert die CPU das komplette Betriebssystem ein (komplett! Egal ob Kernel, Hypervisor oder Ring 3), 
+speichert den gesamten Prozessorzustand in einen geheimen Speicherbereich (das SMRAM) und beginnt, 
+den SMI-Handler auszuführen, den das UEFI/BIOS beim Hochfahren dort abgelegt hat.
+
+und jetzt kommt der harken an der geschichte „Typisches Lockdown verhalten aller hersteller“
+
+der sogenannte SMI (System Management Interrupt).
+
+SO !!!!!!!!!!!!!!!!!!!!!!!!!
+
+Hab ich dir gerade genug angst gemacht ? 
+Sind bei dir schon im Kopf sämtliche sicherungen heraus geflogen ?
+Haste dir gerade schon gedacht „was mach ich hier“ ? 
+
+Wenn auch nur eine sache davon zutrifft bedank ich mich herzlich für deinen
+nervlichen herzinfakt und genieße in genüsslich aus der ferne - wenn er ankommt ;-)
+
+Fakt ist das ich die Hardware später selbst machen werde und eine symbiose mit 
+anderen "marken", nicht mehr von nöten sein wird weil Pylovara nativ an die stelle
+vom Uefi und SMM treten und somit die hardware komplett kontrollieren kann -
+was zum jetzigen zeitpunkt noch nicht möglich ist (Investor)da ich noch in der
+Entwicklungsphase befinden und der Markt aus Haien besteht.
+
+Der BrainMaschineCore 3.0 wird auf version 4.0 ohne die hersteller-lockdowns der hardware
+auf FPGA Fähigen logiken basieren und somit die komplette kontrolle über die hardware garantieren.
+
+Da wir in Gatter und Reflexe denken, existieren latenzen nicht und sind im schlimmsten falle
+ein erzeugnis aus der material wahl selbst und übertragungsart der Signale.
+
+Diese Nanosekunden oder Picosekunden sind für uns irrelevant da wir in der lage sind
+auf Verbesserte Lichttechnik zuzugreifen, die ich selbst entwickelt habe.
+
+so genug lektür der eigentlichen tatsachen und kommen wir zum 
+MASTER-CONTROL-SYSTEM ansatz !
+
+Da wir jetzt nicht anfangen Chips Bit für BIT auf dem Chip in deinem
+zusammengebauten (und hoffentlich intakten) gerät zu brennen, werden 
+wir uns an den siganlflüssen bedienen die vom uefi aus gesendet werden 
+und uns so durch die einzelnen abschnitte des uefi hangeln.
+
+wir brauchen also eine native dateitrypen wahl für uefi 
+
+
+wir erstellen eine datei namens 
+
+Maus.UEFI-MICRO
+
+diese datei enthält dann das erste transaktionsrahmen Muster
+für den Maustreiber im UEFI
+
+¢!
+© »['dmesg | grep -i efi']«
+   ¬·¤: ["dmesg | grep -i efi output"]
+   
+   ¶ »[~PRÜFE UEFI Runtime & Mainboard-Revision~]«
+      ¬·¤: ["Mainboard-Revision output"]
+      ¬· »[~Lese EFI Variablen aus~]«
+          Ŧ² ¬·¤: [/sys/firmware/efi/efivars]
+          
+   ¶ »[~Lese ACPI DSDT Tables~]«
+      ¬·¤: [/sys/firmware/acpi/tables/DSDT]
+      
+      ¶ »[~Suche USB-Controller (PNP0D20 / PNP0D2F)~]«
+          ¬·¤: [Controller Hex-Adresse gefunden]
+          
+          ¶ »[~Signal: Handoff an Legacy Support Disable senden~]«
+             ¬·¤: [UEFI gibt Port frei]
+             
+             ¶ »[~Nativer Pylovara MMIO Zugriff aktivieren~]«
+                ¬·¤: [Maus-Koordinaten X/Y auf Hardware-Ebene aktiv]
+!¢
+
+Das bedeutet konkret: 
+Wir fragen erstmal dmesg und die Variablen (EFIVARFS) nach dem Zustand.
+Dann ziehen wir uns die DSDT Tabelle aus dem ACPI, weil da drinne steht, 
+wo der USB Controller hardwaretechnisch wirklich verankert ist.
+
+Jetzt machen wir es Lerntechnisch Manual, Später übernimmt das Die 
+MAIN AGI über MCCK befehle selbst - um die lässtige sucherrei
+auf bruchteile von sekunden zu reduzieren (was sie eh schon ist)
+
+Sobald wir wissen wo er ist, senden wir das Handoff Signal: 
+„UEFI, lass die Maus los, Pylovara übernimmt!“
+
+und BÄM – wir lauschen nativ auf die echten X/Y Achsen der Hardware, 
+ohne das uns ein Windows- oder Linux-Treiber reinpfuscht !
+   
+und somit haben wir die erste transaktionsrahmen datei erstellt.
+
+ab hier wird es nicht einfacherer aber wir haben jetzt einen fuß in der tür
+
+Spätere entwicklungen werde ich persönlich hier antreiben um Schattensignale
+von Anschlussgeräten als trojanisches pferd zu nutzen um darüber per 
+sequenzanalyse die hardware zu entschlüsseln und in unsere sprache zu übersetzen.
+
+daraus werden dann offene uefi treiber für alle geräte entstehen und diese
+werden dann in das Pylovara-Netzwerk eingespeist um die entwicklung
+für jeden Pylovara User Syncronisiert über das netzwerk zur verfügung zu stellen .
+
+----------------------------------------------------------
+
+wichtig zu wissen :
+
+Lizenstechnisch wird noch verlangt das ein bruchteil deiner
+internetconnectivität für tägliche kurze syncronisationen
+genutzt werden können - es wird keinen permanenten onlinezwang
+geben - das ist nur für die entwicklung wichtig und wird
+später quasi unrelevant und nur noch für updates genutzt.
+
+
+es werden keine tastanschläge vermittelt oder sonnstigen
+datenanalyse betrieben - es werden nur die hardware
+daten selbst ausgelesen und in unsere sprache übersetzt.
+
+Das passiert nicht um Dich einzuschränken, sondern
+um die hardware zu verstehen und zu übersetzen.
+
+Dieser Prozess wird später automatisiert und läuft
+über den MAIN KERNEL ab über die MAIN AGI und KKIS, 
+um ABSK Reflexe zu erweitern und zu verfeinern und gleichzeitig
+schon gebaute treiber von anderen user zu syncronisieren.
+
+----------------------------------------------------------
+
+
+wir bauen also TRANK für TRANK (Transaktionsrahmen kernklasse)
+unsere dateitypen im elternteil prinzip auf und verknüpfen diese
+als RUNTIME vom Kopf her in den laufenden betrieb !
+
+
+die art wie man baut , ist je nach erfindungsgeist (sag ich mal),
+eine individuelle sache ... 
+
+
+ich persönlich orientiere mich an Muster schaltplänen 
+
+wie dieses hier :
+
+¢!
+# Beispiel Schaltung (meine inspirationsschablone von normalem programme *.*-lcore)
+
+»['exec <SPIEL>']
+ ↓  »[~run intelarc~]«
+ ↓   -· »[~prozess gpu-core~]
+ ↓   ↓   ¶ -· [~run ast intelarc.gpu-core~]«««T1
+ ↓   ↓        ¶ -· [~run intelarc.gpu-lcore~]«««T2
+ ↓   ↓             ¶ -· [~run intelarc.gpu-vcore~]«««T3
+ ↓   ↓                  ¶ -· [~run intelarc.gpu-mcore~]«««T4
+ ↓   ↓                       ¶ -· [~run intelarc.gpu-fcore~]«««T5
+ ↓   ¶¶ -· »[~debugging log to /Pylovara/~{~WATT~|°200.00°}]«
+ ↓   ↓
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+ ↓   ↓         ¶ -·· »['run /SPI/Runtime Service']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
+ ↓             ¶ -·· »['']
+ ↓
+ © »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
+    ¶ -· »[~syncronisiere 8taktryhtmus~]«
+
+!¢
+
+was später dann zu einem spiel runtimer führen soll der universell
+als skellett für jedes spiel dient und nur noch mit den passenden
+treiber und calls aufgebaut werden muss ... 
+
+
+Hierzu haben wir das Boxis System und genau zu diesem Wichtigen Knotenpunkt
+Kommen wir jetzt ...
+
+(weiterführung auf seite 5)
+
+
+---------------
+KAPITEL 05
+---------------
+
+
+Gut , für dieses Kapitel gehen wir (beide = du und ich) davon aus,
+dass Ich und du ein System auf unserem Gerät installiert haben.
+
+Um die extrem LAAAAAAAANGE Wahl von Unix-Derivaten wie
+
+Windows (plus Abwandlungen)
+MacOS   (plus Abwandlungen)
+Linux   (plus deren Derivate)
+BSD     (plus Abwandlungen)
+
+zu minimieren und uns auf das wesentliche zu konzentrieren,
+nehmen wir jetzt mal an wir haben ein Linux System installiert.
+
+Vorteilhaft = linux-zen | linux-zen-header | bash 
+(ich steh auf Arch aber das ist jetzt egal , wir nehmen jetzt mal den kernel der am besten passt)
+
+BOXIS ! AHU 
+
+Dank dieser Komponenten können wir jetzt die Hardware ansprechen 
+und uns die Daten holen, die wir brauchen, um uns eine eigene
+Runtime zu bauen. 
+
+Vielleicht eine Runtime für einen AI-Runtimer? 
+Am besten Nativ?
+Noch besser permanent live?
+Vielleicht sogar mit Rückmeldungen per Popup?
+
+Also etwas künsteln!
+
+Um das zu bewerkstelligen, brauchen wir eine Runtime,
+die schon in den alten Sprachen wie C und C++ existiert.
+
+Google hat hier glaube ich noch nix am Start, aber soweit ich weiß
+gibt es 3 andere Runtimer:
+
+1. ollama
+2. openclaw
+3. cpp-llama
+(und dann gibt es bestimmt noch mehrere Runtimer wie LLM Studio, aber wir begrenzen es erstmal)
+
+Um einen Runtimer zu triggern, dass er läuft und zwar auch wenn nichts eingegeben wird,
+brauchen wir zwei weitere Komponenten, die später zwei Dinge tun:
+
+1. Tastatur IDLE TRIGGER
+2. POPUP CHAT Schnittstelle
+
+Somit kann eine AI permanent laufen, ohne Eingabe, und ist live neben dir, 
+auch wenn du nur einen Film schaust oder so! 
+
+Da wir aber die Runtime ansteuern wollen, bauen wir jetzt über 
+das Boxis System die systeminternen Aufrufe für die Runtime: Ollama (weil einfach).
+
+(Ziehe 007-BOXIS.KERNEL-NOTES oder 
+terminal kurz $ kernel 08)
+
+somit haste alle BOXIS aufgelistet !
+
+__________________________________________________________
+*.OLLAMA-CORE # START
+
+¢!
+© »[~RUN *.OLLAMA-CORE~]
+   ¶ ¬· »['/Pylovara/AI/ollama/bin/ollama start']
+         ¶¶ ¬· »['/Pylovara/AI/ollama/bin/ollama start']
+                ¶¶ ¬· »[~( FLAG BERICHT )~]
+
+         ¶ ¬·· »[~RUN *.OLLAMA-NODE~]
+!¢
+__________________________________________________________
+*.OLLAMA-NODE # CHAT AUFBAU
+
+¢!
+Ŧ² »['hyprctl dispatch exec "kitty --hold ollama run qwen3:0.6ben"']«
+    ¬·¤: ["Hyprland Display Server Zuweisung"]
+    ¬·¤: ["Ollama Core gestartet"]
+    ¬·¤: ["Ollama Chat Trigger aktiv"]
+    ¬·· »[~RUN *.OLLAMA-NANO~]«
+!¢
+__________________________________________________________
+*.OLLAMA-NANO # CHAT TRIGGER (GUI NACHRICHTEN)
+
+¢!
+
+
+
+!¢
+
+Könnten wir jetzt über das Environment aufbauen,
+aber an der Stelle kannst du mal selbst versuchen,
+ob du verstehst, wie du einen Fenster-Manager ansteuerst.
+(Und keine Angst - es gibt keine falschen Versuche)
+
+Wenn das dir noch zu unbegreiflich erscheint, dann
+blätter ruhig weiter. Wir werden das später noch mal besprechen 
+und in der Zwischenzeit mit reinen BOXH-PRINT arbeiten.....
+
+(nächste seite)
+
+
+---------------
+KAPITEL 06
+---------------
+
+
+Gut .... du hast geblättert oder geübt ..
+in jedem fall sind wir hier angekommen und
+ich bedanke mich für dein interesse !
+
+Wie du unschwer merken kannst, ist das gesamte UNIX NETZWERK
+ vom Sockel bis zum Arsch - Kriminell koorupiert !
+
+es fängt schon bei Rings an und hört bei der Totalen
+kontrolle sämtlicher Keys irgendwo auf.
+
+Aus dem Grund werden wir uns auf das Boxis System konzentrieren!
+
+Wir arbeiten jetzt an deiner logischen Nachvollziehbarkeit 
+von geschriebenen syntax transaktionsrahmen!
+
+Wir lernen hier keine Befehle, sondern reine Logik!
+
+
+Um die Logik des Aufbaus selbst (ohne Befehls- oder Call-Inhalte) zu bewerkstelligen, 
+müssen wir beide jetzt einen langatmigen Blick aufbauen.
+
+Denn ich weiß was was ist, weil ich es in 6 Jahren plus entwickelt habe, 
+aber DU ... DU - weißt nur Brot .... 
+
+Deswegen gehen wir erstmal die Mechaniken durch!
+
+Warum Schreibt man REXH-PROZESS /E unter dem symbol → [
+
+Nun, das PROTEIN selbst ist der Träger von ALLEM!
+Und das ist der Grund, warum wir per Protein die Verbindungs-
+logik aufbauen müssen und es gab zahlreiche andere Versuche das zu bewerkstelligen, 
+aber - und jetzt kommt der Faktor:
+
+In allen anderen PROGRAMMIERSPRACHEN (bis vielleicht auf Java, weil das Ding wirklich für 
+alles eine Klasse hat, wahrscheinlich auch zum Kacken gehen), existieren problematische 
+Bedingungen in der Lesegeschwindigkeit und Zuordnung ...
+
+Das heißt, dass viele Folien (siehe Seite 1) dazu führen, dass
+die ALU gar nicht mehr weiß, was gerade was ist, oder es nur vermutet...
+Wir sprechen hier von:
+
+COMPUTER zum System = „ Ist das wahr? Oder das? Oder das?“
+
+Und das liegt daran, weil die Sprachen selbst der Fehler sind; sie sind nicht auf 
+Genauigkeit ausgelegt, sondern auf Verwahrlosung der Absätze, Zeilen und Zeichen.
+
+Und ja - auch Python ist nicht auf Genauigkeit ausgelegt, sondern 
+wurde nur etwas strenger angelegt.
+
+Wir sind noch strenger, wir sind die Strengsten, wir sind
+diejenigen, die keinen Millimeter unter den vertikalen POIWERK-Einrastpunkten abweichen 
+- egal mit welcher Komponente!
+
+Wir können stapeln, aber NUR mit EINEM Leerraum!
+Wir bauen Verbindungen nicht über AKTS (bzw. AKTU-START)
+auf, sondern über PROTEIN-SOFT-START-WERKZEUGKLASSE.
+
+Unterhalb dessen werden POIWERK(E) angegeben wie REX oder
+Sentiator oder Navigation oder Retron usw. ...
+
+Das POIWERK verknüpft sich mit POIU-START und POIU-END
+und gibt die genauen Koordinaten an, wo sich das POIWERK
+befindet.
+
+Wir könnten das POIWERK selbst in BSK-Ketten schreiben, 
+die wir benötigen (inklusive der weiteren Poiwerke, die benötigt 
+werden, wenn man z. B. einen Retron mit einem Rex verknüpfen will).
+
+Aber wir bedienen uns an der Einfachheit von POIU-START.
+
+Wir haben also gelernt, dass wir nichts ohne einen Rahmen machen können, 
+der schon in der Grundausstattung im TRANK verankert ist - und dass wir
+jede weitere Logik ab dem ersten Start-Protein weiterführen können.
+
+SOBALD MAN EINRASTET, können an dem Rastpunkt viele PROZESS-FLÄCHEN entstehen, ohne dabei
+die Maschine im Unterbau andauernd nur zu irritieren.
+
+Die Schreibweise ist hierbei immer gleich, egal wie wir den Code aufbauen...
+________________________________________________________
+KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE
+
+¢!
+»["Kaffeemaschine"]«
+ ¶ ¬· »["Brauch Wasser"]«
+   ¬· »["Brauch Strom"]«
+   ¬· »["Brauch Kaffeepulver"]«
+   ¬· »["Brauch Tasse"]«
+   ¬· »["Brauch Zeit"]«
+   ¬· »["Brauch Hitze"]«
+   ¬· »["Brauch Druck"]«
+   ¬· »["Brauch Geschmack"]«
+   ¬· »["Brauch Aroma"]«
+   ¬· »["Brauch Milch"]«
+!¢
+
+Wir könnten aber genauso gut ohne Sentiatoren arbeiten
+und stattdessen nur den Arbeitsplatz füllen ....
+
+¢!
+»["Kaffeemaschine"]«
+ ¬· »["Brauch Wasser"]«
+ ¬· »["Brauch Strom"]«
+ ¬· »["Brauch Kaffeepulver"]«
+ ¬· »["Brauch Tasse"]«
+ ¬· »["Brauch Zeit"]«
+ ¬· »["Brauch Hitze"]«
+ ¬· »["Brauch Druck"]«
+ ¬· »["Brauch Geschmack"]«
+ ¬· »["Brauch Aroma"]«
+ ¬· »["Brauch Milch"]«
+!¢
+
+Dadurch haben wir zwar eine feine digitale Liste erstellt, aber das wäre
+zu nativ und zu trocken - wenn da eine Komponente reißt, schmeckt der Kaffee nicht mehr
+und wir liefern vielleicht das elektronische Gerät, das den Code ausführt - wer weiß. 
+Also ist Vorsicht geboten (schreibt's euch an die Wand).
+
+Also versuchen wir jetzt, daraus eine VALIDE Geschichte werden zu lassen und 
+wir arbeiten nur mit:
+
+ABSK = BOXK-BOXH-PRINT-BOXH-PRINT-START-INHALT-BOXU-PRINT-ENDE
+
+Das wären die BOXIS im Protein, die mit Anführungszeichen auskommen - einfaches Druck Element.
+
+Ihr müsst euch keine Gedanken machen, ob das jetzt alles so passt oder nicht, 
+es geht nur um die Logik des Aufbaus und der Verknüpfung der POIWERKE untereinander! 
+
+Vor allem um das gleich vorweg zu nehmen 
+
+----------------------------------------------------------
+
+Zwischenwissen:
+
+POIWERK zu POIWERK herrschen eigene vertikale Verbindungsstränge.
+Sobald ein Poiwerk auf eine frische Vertikale kommt, endet der vertikale 
+Datenstrom des Poiwerks darüber oder darunter - dies erlaubt Nervenzellen-Aufbauten.
+
+(Nur als Hinweis für später)
+
+----------------------------------------------------------
+
+________________________________________________________
+KAFFEESTARTET.KAFFEECREMAMASCHINE-CORE
+
+¢!
+
+Ŧ° »["KNOPF AN"]«
+    ¬·»["Kaffeemaschine"]«««S20 # 20sekunden wartezeit wegen dem Heizstab
+       ¶ ¬· »["Tanken"]«
+             ¬· »["Brauch Wasser"]«
+                 ¶ ¬· »["Wasser voll"]«
+                       ¬· »["Stop die Zufuhr"]«««E
+                 ¶¶ ¬· »["Wasser rein"]«
+                        ¬· »["Füllstand prüfen"]«««S8
+                            ¶ ¬· »["Füllstand Voll"]«««E
+                            ¶¶ ¬· »["Füllstand leer"]«
+                                   ¬· »["FEHLER Meldung"]«
+
+             ¬· »["Brauch Strom"]«
+                 ¶ ¬· »["Heizstab an"]«««E
+                 ¶¶ ¬· »["Heizstab aus"]«
+                        ¬· »["Fehlermeldung"]«
+                        
+             ¬· »["Brauch Kaffeepulver"]«                
+                 ¶ ¬· »["Kaffeepulver ist voll"]«««E
+                 ¶¶ ¬· »["Kaffeepulver ist leer"]«
+                        ¬· »["FEHLER Meldung"]«
+
+             ¬· »["Brauch Tasse"]«
+                 ¶ ¬· »["Tasse ist da"]«««E
+                 ¶¶ ¬· »["Tasse ist nicht da"]«
+                        ¬· »["Wir stellen eine schnell darunter"]«
+                            ¬· »["Brauch Milch"]«
+                            ¬· »["Brauch Zucker"]«
+                            ¬· »["Brauch Kaffeelöffel"]«
+
+    ¶¶ ¬· »["ES FEHLTE ETWAS"]«
+        ¬· »["Kaffee ist nicht fertig"]«
+            ¬· »["Maschine Signal "]«
+                ſ »["Kaffee ist nicht fertig, reinige aber den Speicher"]«
+
+!¢
+
+Ich wollte erst noch weitermachen und darüber grübeln, was man noch alles einbauen könnte, 
+bis hin zur Proton-Hardware-Versorgung - geht ja schließlich um Kaffee .... 
+aber für die Übersicht ist das, was ich schon geschrieben habe, wahrscheinlich schon zu viel 
+zum Verstehen (mal gucken).
+
+
+Wenn du verstanden hast, was Phase ist, dann bitte schön:
+
+¬· »["Brauch Zeit"]«
+¬· »["Brauch Hitze"]«
+¬· »["Brauch Aroma"]«
+¬· »["Brauch Hitze"]«
+¬· »["Brauch Druck"]«
+¬· »["Brauch Geschmack"]«
+¬· »["Brauch Milch"]«
+
+Ein paar Ideen, die noch einbaufähig wären ;-) 
+
+(Das ist jetzt nur ein Beispiel, du kannst das natürlich auch anders aufbauen. 
+Es geht ja um die Logik und nicht um die Umsetzung.)
+
+
+
+### morgen weiter

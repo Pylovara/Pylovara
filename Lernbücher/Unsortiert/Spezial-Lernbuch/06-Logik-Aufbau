@@ -139,10 +139,14 @@ KAFFESTARTET.KAFFECREMAMASCHINE-CORE
     ¬·»["Kaffemaschine"]«««S20 # 20sekunden wartezeit wegen dem heitzstab
        ¶ ¬· »["Tanken"]«
              ¬· »["Brauch Wasser"]«
+                 ¶ ¬· »["Wasser voll"]«
+                       ¬· »["Stop den zufuhr"]«««E
+                 ¶¶ ¬· »["Wasser rein"]«
+
              ¬· »["Brauch Strom"]«
              ¬· »["Brauch Kaffeepulver"]«                
                  ¶ ¬· »["ist voll"]«
-                       ¬· »[" "]«
+                       ¬· »["Tasse Drunter"]«
 
                  ¶¶ ¬· »["ist leer"]«
 

@@ -50,7 +50,67 @@ wir bauen verbindungen nicht über AKTS (bzw AKTU-START)
 auf sondern über PROTEIN-SOFT-START-WERKZEUGKLASSE 
 
 unterhalb dessen werden POIWERK(E) angegeben wie REX oder
-Sentiator oder Navigation oder Retron 
+Sentiator oder Navigation oder Retron usw ...
+
+Das POIWERK Verknüpft sich mit POIU-START und POIU-END
+und gibt die genauen koordinaten an wo sich das POIWERK
+befindet.
+
+Wir Könnten das POIWERK Selbst in BSK ketten schreiben 
+das wir benötigen (mit auch den weiteren poiwerken die benötigt werden wenn man einen Retron mit einem Rex zu verknüpfen ).
+
+aber wir Bedienen uns an der einfachheit von POIU-START.
+
+wir haben also gelernt das wir nichts ohne einen Rahmen machen können 
+der schon in der grundaustattung im TRANK verankert ist - und das wir
+jede weiter logik ab dem ersten Start Protein aus die logik weiter führen können.
+
+
+________________________________________________________
+KAFFESTARTET.KAFFECREMAMASCHINE-CORE
+
+¢!
+»["Kaffemaschine"]«
+ ¶ ¬· »["Brauch wasser"]«
+       ¶ ¬· »["Brauch Strom"]«
+
+
+
+
+
+
+   ¶ ¬· »["Brauch Kaffeepulver"]«
+    ¶ ¬· »["Brauch Tasse"]«
+     ¶ ¬· »["Brauch Zeit"]«
+      ¶ ¬· »["Brauch Hitze"]«
+       ¶ ¬· »["Brauch Druck"]«
+        ¶ ¬· »["Brauch Geschmack"]«
+         ¶ ¬· »["Brauch Aroma"]«
+          ¶ ¬· »["Brauch Milch"]«
+           
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

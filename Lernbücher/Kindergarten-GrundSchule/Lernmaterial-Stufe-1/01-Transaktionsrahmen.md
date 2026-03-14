@@ -2,7 +2,7 @@
 
 Hallo kleiner Entwickler! 🌟
 
-Heute lernen wir etwas ganz Wichtiges. Weißt du, was passiert, wenn man im Wald eine ganz besondere Entdeckung macht? Man möchte einen Schutzzaun darum bauen, damit alles sicher ist und man in Ruhe schauen kann.
+Heute lernen wir etwas ganz Wichtiges. Weißt du, was passiert, wenn man im Wald eine ganz besondere Entdeckung macht? Man möchte einen Schutzzaun darum bauen, damit alles sicher ist und man in Ruhe schauen kann, was im Wald passiert.
 
 In Pylovara nennen wir das einen **Transaktionsrahmen**. Aber wir sagen dazu einfach: **Der Zauberrand**.
 
@@ -45,4 +45,3 @@ Wenn sie mit einem Computer arbeiten , stellen sie sicher das sie utf -8 Deutsch
 Sie finden die das cent zeichen unter Rechtes Alt + C = ¢ und das Ausrufezeichen unter Shift + 1 = !
 
 Besser wäre es wenn sie Schriftlich arbeiten auf Originalem Weisen Blätter oder auf einem Whiteboard ! 
-

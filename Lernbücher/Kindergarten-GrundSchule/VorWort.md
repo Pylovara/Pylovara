@@ -1,3 +1,4 @@
+# Vorwort
 
 Dieses Lernmaterial ist für Kinder im Kindergarten- und Grundschulalter konzipiert. Es soll ihnen auf spielerische Weise die Grundlagen der Pylovara-Sprache vermitteln.
 
@@ -13,8 +14,7 @@ abstraktionslayer, nur so blutet !
 
 Pylovara-System ist kein Spielzeug und wissenschaftlich fundiert erklärbar und tragfähig.
 
-Der Simple grund warum ich ihn noch nicht als translate compiler heraus haue, ist der grund das ich das erst nach dem nativen kernel
-machen möchte.
+"Der Grund, warum es noch keinen Übersetzer-Compiler gibt, ist einfach: Ich möchte zuerst den nativen Kernel vollenden – denn nur so kann die Qualität garantiert werden, die dieses System verdient."
 
 Die Entwicklung an Kernel fördert das logische denken und die Problemlösungskompetenz. Es ist wie ein Puzzle, bei dem man die Teile zusammensetzen muss, um das Gesamtbild zu sehen. 
 

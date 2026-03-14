@@ -37,16 +37,16 @@ und das alles ohne das kind es merkt.(DAS GROßE ZIEL)
 
 Wissen sie ? ich betitel irgendwo im lexikon den begriff naturgesetzt ..... ich glaub der satz wahr*hmm* „ Performance ist ein Naturgesetz“ oder so ... 
 
-ich meinte dabei nicht nur Systematisch , also Systembedingt{Elektronisch} sondern auch Physikalisch bedingt.
+Ich meinte dabei nicht nur Systematisch , also Systembedingt{Elektronisch} sondern auch Physikalisch bedingt.
 
 Wir trainieren den Muskel im Gehirn Der Essenziell Für Kompetenz ist - Und das ist das Ziel dieses Buches.
 
 Die Wahl der Tiere war willkürlich darauf abgestimmt das System zu vermitteln .... ich möchte (obwohl ich nicht daran glaube das sie so denken), direkt klar stellen das das ein Löwe nicht mit dem Hasen grillt - Wenn dann grillt der Löwe den Hasen zur Grillfeier!(Das ist der Witz - der Löwe weis ja garnicht wie Feuer geht!) 
 Aber wollen wir unseren Kinder sowas Vermitteln ?
-ich denke jeder der weis das ein Kind den Tag im Kopf im Schlaf
+Ich denke jeder der Weis das ein Kind den Tag im Kopf im Schlaf
 verarbeitet , könnte automatisch an der stelle mit dem Löwen hängen bleiben ( die Eltern die das Lesen, wissen was ich meine und das heißt - nachts schreiendes aufgewachtes kind wegen nichts und weniger schlaf für euch Eltern )
 
-Klar isst es Wurst - aber müssen wir dem Kind Albträume vom Fressenden Löwen mit geben ? Ich zu meinem Teil möchte dies nur 
+Klar isst es Wurst - aber müssen wir dem Kind Albträume vom Fressenden Löwen mit geben - Wir sind Froh wenn er sein samali Brötchen isst und nicht Magersuüchtig wird , nicht wahr? Ich zu meinem Teil möchte dies nur 
 Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun im Lernprozess!
 
 Mit Freundlichen Grüßen

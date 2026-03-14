@@ -41,7 +41,11 @@ ich meinte dabei nicht nur Systematisch , also Systembedingt{Elektronisch} sonde
 
 Wir trainieren den Muskel im Gehirn Der Essenziell Für Kompetenz ist - Und das ist das Ziel dieses Buches.
 
-Die wahl der Tiere war wirrkürlich darauf abgestimmt das system zu vermitteln .... ich möchte (obwohl ich nicht daran glaube das sie so denken), direkt klar stellen das klar ist das ein löwe nicht mit dem hasen grillt - Wenn dann grillt der Löwe den Hasen zur Grillfeier! Aber wollen wir unseren Kinder sowas Vermitteln ?
+Die wahl der Tiere war wirrkürlich darauf abgestimmt das system zu vermitteln .... ich möchte (obwohl ich nicht daran glaube das sie so denken), direkt klar stellen das das ein löwe nicht mit dem hasen grillt - Wenn dann grillt der Löwe den Hasen zur Grillfeier!(Das ist ein Witz - der löwe weis ja garnicht wie Feuer geht!) 
+Aber wollen wir unseren Kinder sowas Vermitteln ?
+ich denke jeder der weis das ein kind den tag im kopf im Schlaf
+verarbeitet , könnte automatisch an der stelle mit dem löwen hängen bleiben ( die eltern die das lesen, wissen was ich meine und das heißt - nachts schreiendes aufgewachtes kind wegen nichts und weniger schlaf für euch Eltern )
+
 Klar isst es Wurst - aber müssen wir dem Kind ablträume vom Fressenden löwen mit geben ? Ich zu meinem Teil möchte dies nur 
 Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun im Lernprozess!
 

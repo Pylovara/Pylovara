@@ -30,10 +30,12 @@ Jetzt hat jedes Tier seinen eigenen Platz in der Kiste und alles ist sicher geor
 1. Zeichne eine große Zauberkiste `[]`.
 2. Zeichne in die linke Seite eine Sonne ☀️ und in die rechte Seite einen Mond 🌙.
 3. Ziehe jetzt die **Zaubertrennwand** `|` genau in die Mitte zwischen Sonne und Mond!
-4. Kannst du den geraden Strich `|` auf deiner Tastatur finden? (Tipp: Meistens links neben der `Y`-Taste mit `Alt Gr` + `<`)
+# 4. Kannst du den geraden Strich `|` auf deiner Tastatur finden? 
+#(Tipp: Meistens links neben der `Y`-Taste mit `Alt Gr` + `<`)
 
 ---
 > [!TIP]
 > **Für Eltern:** Der **Trennbefehl** (`|`) dient in Pylovara der Containerisierungs-Trennung. Er sorgt dafür, dass Daten innerhalb eines Proteins (der Kiste) klar voneinander abgegrenzt sind. Das Kind lernt hier ein fundamentales Prinzip der Ordnung und Strukturierung von Datensätzen.
 > 
 > **Wichtig:** Achten Sie darauf, dass das Kind den senkrechten Strich `|` nicht mit dem kleinen `L` oder dem großen `I` verwechselt. Es ist ein ganz gerader, magischer Zauberstab!
+

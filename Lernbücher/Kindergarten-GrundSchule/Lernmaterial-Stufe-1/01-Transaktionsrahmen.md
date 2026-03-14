@@ -6,7 +6,9 @@ Heute lernen wir etwas ganz Wichtiges. Weißt du, was passiert, wenn man im Wald
 
 In Pylovara nennen wir das einen **Transaktionsrahmen**. Aber wir sagen dazu einfach: **Der Zauberrand**.
 
-(Bild: ![zauberrand_wald.png](../Bildliches-Stufe-1/zauberrand_wald.png))
+(Bild: hier kommt das bild)
+
+(Mandala: hier kommt das Mandala)
 
 Alles, was innerhalb dieses Randes passiert, gehört zusammen. Es ist wie eine kleine Insel, auf der deine Befehle ganz sicher sind.
 

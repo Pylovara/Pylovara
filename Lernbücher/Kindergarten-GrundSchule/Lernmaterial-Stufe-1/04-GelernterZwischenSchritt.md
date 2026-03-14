@@ -41,10 +41,10 @@ Sieht das nicht toll aus? Das ist schon ein richtiger kleiner Baustein (BSK), de
    `¢! [ "Hase"  "Möhre" ] !¢`
    *(Tipp: Wie hieß nochmal der Strich, der Dinge trennt?)*
 
-3. **Luftschreiben:** Versuche, die ganze Zeile `¢! [ "A" | "B" ] !¢` mit deinem Finger in die Luft zu malen!
+3. **Luftschreiben:** Versuche, die ganze Zeile `¢! [ "A" | "B" ] !¢` mit deinem Finger in die Luft zu malen! 
+  *(Tipp: Versuchen sie es Gemeinsam mit dem Kind)*
 
 ---
 > [!TIP]
 > **Für Eltern:** Diese Übung festigt die Kombination der Symbole. Das Kind lernt jetzt nicht mehr nur einzelne Zeichen, sondern beginnt, **Strukturen** zu erkennen. 
 > - Das Kind lernt: Erst kommt der Rahmen (Sicherheit), dann der Container (Inhalt), dann die Trennung (Ordnung). 
-> - Loben Sie das Kind besonders für die richtige Reihenfolge der Symbole beim "Luftschreiben"!

@@ -4,7 +4,7 @@
 ## 2. Die Zauberkiste `[]`
 ## 3. Zauberwand `|`
 ## 4. Meister REX `¬·`
-## 5. Der Aktionsdraht `» ... «`
+## 5. Der Aktionszauber `» ... «`
 
 Sind alles Mächte Zaubergegenstände die du Gelernt hast um :
 
@@ -39,3 +39,6 @@ Und wir haben Gelernt das man mit dem Schlafende Kisten und Wache Kisten mit dem
 ![Schlafende-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png)
 
 ![Wache-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Ausführbares-Protein.png)
+
+
+

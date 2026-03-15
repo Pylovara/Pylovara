@@ -28,13 +28,13 @@ In Pylovara nennen wir das einen **Transaktionsrahmen**. Aber wir sagen dazu ein
      \_________________#_________________/
                        #
           /------------#-----------\
-         /    [ OVERHEAD PROJECTOR ]\
+         /  [ OVERHEAD PROJECTOR ]  \
         /____________________________\
-              /                \
-             /     *  *  *      \
-            /   *          *     \
-           /  *   (^_^)  (o_o)  * \
-          / *   / squirrel \ owl  * \
+              /                  \
+             /                    \
+            /                      \
+           /     (^_^)    (o_o)     \
+          /    squirrel |  owl       \
 ```
 
 

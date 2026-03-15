@@ -41,4 +41,7 @@ Und wir haben Gelernt das man mit dem Schlafende Kisten und Wache Kisten mit dem
 ![Wache-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Ausführbares-Protein.png)
 
 
+Jetzt Können wir Tolle Dinge Zaubern, z.b einen Zauberrand mit Aktionszauber und Zauberkisten.
+
+Wir können diese Kisten Sogar Schlafen lassen und Wach machen !
 

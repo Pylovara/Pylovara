@@ -44,6 +44,9 @@ Sieht das nicht toll aus? Das ist schon ein richtiger kleiner Baustein (BSK), de
 3. **Luftschreiben:** Versuche, die ganze Zeile `¢! [ "A" | "B" ] !¢` mit deinem Finger in die Luft zu malen! 
   *(Tipp: Versuchen sie es Gemeinsam mit dem Kind)*
 
+4. **Andere Zauberkisten:** Male weitere zauberkisten wo du deine
+   Lieblingssachen reinlegen kannst. 
+
 ---
 > [!TIP]
 > **Für Eltern:** Diese Übung festigt die Kombination der Symbole. Das Kind lernt jetzt nicht mehr nur einzelne Zeichen, sondern beginnt, **Strukturen** zu erkennen. 

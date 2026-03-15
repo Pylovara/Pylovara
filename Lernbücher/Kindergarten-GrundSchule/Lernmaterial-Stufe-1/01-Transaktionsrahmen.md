@@ -6,7 +6,37 @@ Heute lernen wir etwas ganz Wichtiges. Weißt du, was passiert, wenn man im Wald
 
 In Pylovara nennen wir das einen **Transaktionsrahmen**. Aber wir sagen dazu einfach: **Der Zauberrand**.
 
-(Bild: hier kommt das bild)
+```text
+          .   *   .    *  .   *   .    *  .   *
+       *    .  / \  *  .  / \  .  *  / \  .  *
+      .  *    /   \  .  /   \  *  /   \    .
+    *      --|     |---|     |---|     |--     *
+  .    *     |     |   |     |   |     |  .  *
+             |     |   |     |   |     |
+      _________________#_________________
+     /                                   \
+    |     ***************************     |
+    |     *                         *     |
+    |     *   ¢! ["Der Hase"] !¢    *     |
+    |     *                         *     |
+    |     *         (\_/)           *     |
+    |     *         (z.z)           *     |
+    |     *        (>  <)           *     |
+    |     *     schläft tief...     *     |
+    |     *                         *     |
+    |     ***************************     |
+     \_________________#_________________/
+                       #
+          /------------#-----------\
+         /    [ OVERHEAD PROJECTOR ]\
+        /____________________________\
+              /                \
+             /     *  *  *      \
+            /   *          *     \
+           /  *   (^_^)  (o_o)  * \
+          / *   / squirrel \ owl  * \
+```
+
 
 (Mandala: hier kommt das Mandala)
 

@@ -32,6 +32,10 @@ Wir Rex Der zaubermeister Tische aufstellen kann.
 
 ![Rex.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Rex.png)
 
-## 5. Der Aktionsdraht `» ... «`
+## 5. Der Aktionszauber `» ... «`
 
-Und wir haben Gelernt das man mit dem Schlafende Kisten und Wache Kisten mit dem Aktionsdraht 
+Und wir haben Gelernt das man mit dem Schlafende Kisten und Wache Kisten mit dem Aktionszauber belegen können wenn was passieren soll.
+
+![Schlafende-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png)
+
+![Wache-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Ausführbares-Protein.png)

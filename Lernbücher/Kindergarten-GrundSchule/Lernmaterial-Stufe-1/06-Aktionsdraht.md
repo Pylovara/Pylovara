@@ -21,8 +21,6 @@ Der Aktionsdraht sieht aus wie kleine Pfeile, die zeigen, wo die Energie langfli
 
 Wenn wir den Draht um eine Kiste legen, wird aus einer schlafenden Kiste eine **ausführbare Zauberkiste**. Das bedeutet: Jetzt passiert etwas! # Metapher für Eltern: Die Kiste ist jetzt wach und kann benutzt werden. # Metapher für Kinder: Die Kiste ist jetzt wach und kann benutzt werden.
 
-(Bild: ![aktionsdraht_animation.png](../Bildliches-Stufe-1/aktionsdraht_animation.png))
-
 ---
 
 ## Schlafende Kiste vs. Wache Kiste
@@ -31,6 +29,7 @@ Schau dir den Unterschied an:
 
 1. **Die schlafende Kiste (Protein):**
    `["Der Hase schläft"]`
+   ![alt text](../Bildliches-Stufe-1/Unausführbares-Protein.png)
    *(Hier liegt nur die Information: Der Hase schläft. Nichts bewegt sich.)*
 
 2. **Die wache Kiste (Aktion):**

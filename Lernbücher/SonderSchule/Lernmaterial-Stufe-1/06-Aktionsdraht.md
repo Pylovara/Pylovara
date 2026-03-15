@@ -97,5 +97,11 @@ Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
 > Das ist das, was Ihr Kind mit dieser Methode lernen wird. 
 > Dadurch entstehen neue Denkprozesse bei allem, was Ihr Kind tut. 
 > Es entwickelt ein besseres Verständnis für logische Abläufe und 
-> kann dadurch selbstständiger werden und sich besser organisieren. 
+> kann dadurch selbstständiger werden und sich besser 
+> organisieren. 
 > Alles hat eine Auswirkung auf das, was danach kommt.
+> [!TIPZUSATZ]
+> **Für Eltern:** Drucken sie das Bild Aus und lassen ihr Kind den 
+> Aktionsdraht mit dem Finger nachfahren oder nach zeichnen ... 
+> oder mit einem Stift nachmalen. Das fördert die Motorik und das 
+> Verständnis für die Symbole.

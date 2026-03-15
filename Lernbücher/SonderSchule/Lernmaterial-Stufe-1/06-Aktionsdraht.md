@@ -47,13 +47,13 @@ Meister REX liebt den Aktionsdraht. Er benutzt ihn, um dir zu zeigen, was gerade
 
 Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
 
-## Schau wir mal was passieren kann wenn wir den Hasen Füttern, wenn wir 
+## Schauen wir mal, was passieren kann, wenn wir den Hasen füttern:
 
 ¢!
 
 »["Wir geben dem Hasen eine Möhre"]«
  ¬· »["Der Hase frisst die Möhre"]«
- ¬· »["Der Hasse Freut sich"]«
+ ¬· »["Der Hase freut sich"]«
  ¬· ["Der Hase schläft ein"]
 
 !¢
@@ -82,18 +82,8 @@ Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
 
 > [!TIP]
 > **Für Eltern:** Das Beispiel mit dem Hasen illustriert die **sequenzielle Ausführung** von Aktionen. 
-> Das Heißt das Sie wie eine Tagesliste etwas aufschreiben , wo dann ab dem 
-> punkt - punkt für punkt weiter einstellen , bearbeiten oder ausführen , bis 
-> das ergebnis da ist. In der Normalen Informatik Spricht man es etwas anders 
-> aus , sie nennen es EVA - Eingabe , Verarbeitung , Ausgabe . Das ist aber das 
-> gleiche Prinzip. 
+> Das heißt, dass Sie wie bei einer Tagesliste etwas aufschreiben, was dann Punkt für Punkt eingestellt, bearbeitet oder ausgeführt wird, bis das Ergebnis da ist. In der normalen Informatik spricht man es etwas anders aus: Man nennt es EVA – Eingabe, Verarbeitung, Ausgabe. Das ist aber das gleiche Prinzip. 
 
-> wir listen Quasi die Kaffeemaschinen anweisungen auf und führen sie dann aus 
-> und jede ausführung kann logisch geschalten werden , so das wir z.B. sagen 
-> können , wenn der Kaffee fertig ist , dann soll die Maschine aus gehen. 
+> Wir listen quasi die Anweisungen für die Kaffeemaschine auf und führen sie dann aus. Jede Ausführung kann logisch geschaltet werden, sodass wir zum Beispiel sagen können: "Wenn der Kaffee fertig ist, dann soll die Maschine ausgehen." 
 
-> das ist das was ihr kind mit dieser methode lernen wird und dadurch enstehen 
-> auch andere denkprozesse bei egal was ihr kind selbst macht , es entwickelt 
-> ein besseres verständnis zu logischen abläufen und kann dadurch auch 
-> selbstständiger werden und sich besser organisieren, alles hat eine auswirken 
-> auf das was danach kommt.
+> Das ist das, was Ihr Kind mit dieser Methode lernen wird. Dadurch entstehen neue Denkprozesse bei allem, was Ihr Kind tut. Es entwickelt ein besseres Verständnis für logische Abläufe und kann dadurch selbstständiger werden und sich besser organisieren. Alles hat eine Auswirkung auf das, was danach kommt.

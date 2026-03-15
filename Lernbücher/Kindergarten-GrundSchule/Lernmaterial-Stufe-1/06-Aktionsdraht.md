@@ -47,6 +47,16 @@ Meister REX liebt den Aktionsdraht. Er benutzt ihn, um dir zu zeigen, was gerade
 
 Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
 
+## Schau wir mal was passieren kann wenn wir den Hasen Füttern, wenn wir 
+
+¢!
+
+»["Wir geben dem Hasen eine Möhre"]«
+ ¬· »["Der Hase frisst die Möhre"]«
+ ¬· »["Der Hasse Freut sich"]«
+ ¬· ["Der Hase schläft ein"]
+
+!¢
 ---
 
 ### Deine Aufgaben:
@@ -66,5 +76,24 @@ Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
 > **Für Eltern:** Der **Aktionsdraht** (`» ... «`) symbolisiert in Pylovara den **Execution Thread** oder die **Aktionsverdrahtung**. 
 > - Ein einfaches `[]` (Protein/BSK) ist statische Information (Daten).
 > - Erst durch die Umschließung mit dem Aktionsdraht wird daraus eine ausführbare Operation.
-> - In Kombination mit **REX** (`¬·`) wird definiert, auf welchem Workspace diese Aktion ausgeführt wird.
+> - In Kombination mit **REX** (`¬·`) wird definiert, 
+> auf welchem Workspace diese Aktion ausgeführt wird.
 > - Helfen Sie dem Kind, den Unterschied zwischen "etwas besitzen" (Protein) und "etwas tun" (Aktion) zu verstehen.
+
+> [!TIP]
+> **Für Eltern:** Das Beispiel mit dem Hasen illustriert die **sequenzielle Ausführung** von Aktionen. 
+> Das Heißt das Sie wie eine Tagesliste etwas aufschreiben , wo dann ab dem 
+> punkt - punkt für punkt weiter einstellen , bearbeiten oder ausführen , bis 
+> das ergebnis da ist. In der Normalen Informatik Spricht man es etwas anders 
+> aus , sie nennen es EVA - Eingabe , Verarbeitung , Ausgabe . Das ist aber das 
+> gleiche Prinzip. 
+
+> wir listen Quasi die Kaffeemaschinen anweisungen auf und führen sie dann aus 
+> und jede ausführung kann logisch geschalten werden , so das wir z.B. sagen 
+> können , wenn der Kaffee fertig ist , dann soll die Maschine aus gehen. 
+
+> das ist das was ihr kind mit dieser methode lernen wird und dadurch enstehen 
+> auch andere denkprozesse bei egal was ihr kind selbst macht , es entwickelt 
+> ein besseres verständnis zu logischen abläufen und kann dadurch auch 
+> selbstständiger werden und sich besser organisieren, alles hat eine auswirken 
+> auf das was danach kommt.

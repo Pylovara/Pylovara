@@ -34,6 +34,8 @@ Schau dir den Unterschied an:
 
 2. **Die wache Kiste (Aktion):**
    `»["Der Hase kommt sanft in sein zuhause"]«`
+   (Bild: ![alt text](image-1.png))
+
    *(Zack! Durch den Aktionsdraht wird daraus ein echter Befehl(Zauberspruch). Der Hase bewegt sich wirklich!)*
 
 ---

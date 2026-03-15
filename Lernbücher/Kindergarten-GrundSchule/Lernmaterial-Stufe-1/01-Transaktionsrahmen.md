@@ -7,13 +7,13 @@ Heute lernen wir etwas ganz Wichtiges. Weißt du, was passiert, wenn man im Wald
 In Pylovara nennen wir das einen **Transaktionsrahmen**. Aber wir sagen dazu einfach: **Der Zauberrand**.
 
 ```text
-          .   *   .    *  .   *   .    *  .   *
-       *    .  / \  *  .  / \  .  *  / \  .  *
+        .   *   .    *    .  *      .    * 
+       *    .  / \  *  . / \  .  * / \  .  *
       .  *    /   \  .  /   \  *  /   \    .
     *      --|     |---|     |---|     |--     *
   .    *     |     |   |     |   |     |  .  *
              |     |   |     |   |     |
-      _________________#_________________
+      _______###########################_ 
      /                                   \
     |     ***************************     |
     |     *                         *     |

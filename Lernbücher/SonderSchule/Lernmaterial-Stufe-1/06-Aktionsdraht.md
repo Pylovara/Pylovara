@@ -29,12 +29,12 @@ Schau dir den Unterschied an:
 
 1. **Die schlafende Kiste (Protein):**
    `["Der Hase schläft"]`
- (Bild: ![alt text](image.png))
+ (Bild: ![Ausführbares-Protein.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png) )
    *(Hier liegt nur die Information: Der Hase schläft. Nichts bewegt sich.)*
 
 2. **Die wache Kiste (Aktion):**
    `»["Der Hase kommt sanft in sein zuhause"]«`
-   (Bild: ![alt text](image-1.png))
+   (Bild: ![Unausführbares-Protein.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png))
 
    *(Zack! Durch den Aktionsdraht wird daraus ein echter Befehl(Zauberspruch). Der Hase bewegt sich wirklich!)*
 

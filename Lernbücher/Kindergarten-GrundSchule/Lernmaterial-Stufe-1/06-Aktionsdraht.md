@@ -16,10 +16,10 @@ Dafür brauchen wir den **Aktionsdraht**!
 
 Der Aktionsdraht sieht aus wie kleine Pfeile, die zeigen, wo die Energie langfließt. Er umschließt die Zauberkiste und weckt sie auf!
 
-- `»` Das ist der Anfang vom Draht.
-- `«` Das ist das Ende vom Draht.
+- `»` Das ist der Anfang vom Draht. # Metapher für Eltern Linke Hand oder Linker Fuß. # Metapher für Kinder Linker Fuß oder Linke Hand.
+- `«` Das ist das Ende vom Draht. # Metapher für Eltern Rechte Hand oder Rechter Fuß. # Metapher für Kinder Rechter Fuß oder Rechte Hand.
 
-Wenn wir den Draht um eine Kiste legen, wird aus einer schlafenden Kiste eine **ausführbare Zauberkiste**. Das bedeutet: Jetzt passiert etwas!
+Wenn wir den Draht um eine Kiste legen, wird aus einer schlafenden Kiste eine **ausführbare Zauberkiste**. Das bedeutet: Jetzt passiert etwas! # Metapher für Eltern: Die Kiste ist jetzt wach und kann benutzt werden. # Metapher für Kinder: Die Kiste ist jetzt wach und kann benutzt werden.
 
 (Bild: ![aktionsdraht_animation.png](../Bildliches-Stufe-1/aktionsdraht_animation.png))
 

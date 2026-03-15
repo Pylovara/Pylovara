@@ -4,22 +4,22 @@ Hallo kleiner Entwickler! 🌟⚡
 
 Du weißt jetzt schon, wie man Dinge in eine **Zauberkiste** `[]` legt und wie **Meister REX** `¬·` die Arbeitstische aufstellt. Aber wusstest du, dass manche Zauberkisten noch schlafen?
 
-Stell dir vor, du hast eine Kiste mit einem Apfel darin: `["Apfel"]`. Der Apfel liegt einfach nur da. Das nennen wir ein **Unausführbares Protein** – es ist wie ein Baustein, der darauf wartet, benutzt zu werden.
+Stell dir vor, du hast eine Kiste mit einem Apfel darin: `["Apfel"]`. Der Apfel liegt einfach nur da. Das nennen wir ein **Unausführbares Protein** und liegt in einer **Schlafenden Zauberkiste** – es ist wie ein Baustein, der darauf wartet, benutzt zu werden.
 
 Aber was ist, wenn der Apfel **rollen** soll? Oder wenn der Hase in sein Zuhause **hoppeln** möchte? 🐰
 
-Dafür brauchen wir den **Aktionsdraht**!
+Dafür brauchen wir den **Aktionszauber**!
 
 ---
 
 ## Die Symbole: » und «
 
-Der Aktionsdraht sieht aus wie kleine Pfeile, die zeigen, wo die Energie langfließt. Er umschließt die Zauberkiste und weckt sie auf!
+Der Aktionszauber sehen aus wie kleine Pfeile, die zeigen, wo die Energie hindurchfließt. Er umschließt die Zauberkiste und weckt sie auf!
 
-- `»` Das ist der Anfang vom Draht. # Metapher für Eltern Linke Hand oder Linker Fuß. # Metapher für Kinder Linker Fuß oder Linke Hand.
-- `«` Das ist das Ende vom Draht. # Metapher für Eltern Rechte Hand oder Rechter Fuß. # Metapher für Kinder Rechter Fuß oder Rechte Hand.
+- `»` Das ist der Anfang vom Zauber. # Metapher für Eltern Linke Hand oder Linker Fuß. # Metapher für Kinder Linker Fuß oder Linke Hand.
+- `«` Das ist das Ende vom Zauber. # Metapher für Eltern Rechte Hand oder Rechter Fuß. # Metapher für Kinder Rechter Fuß oder Rechte Hand.
 
-Wenn wir den Draht um eine Kiste legen, wird aus einer **schlafenden Kiste** eine **Wache Zauberkiste**. Das bedeutet: Jetzt passiert etwas! # Metapher für Eltern: Die Kiste ist jetzt wach und kann benutzt werden. # Metapher für Kinder: Die Kiste ist jetzt wach und kann benutzt werden.
+Wenn wir den Aktionszauber um eine Kiste legen, wird aus einer **schlafenden Kiste** eine **Wache Zauberkiste**. Das bedeutet: Jetzt passiert etwas! # Metapher für Eltern: Die Kiste ist jetzt wach und kann benutzt werden. # Metapher für Kinder: Die Kiste ist jetzt wach und kann benutzt werden.
 
 ---
 
@@ -27,25 +27,25 @@ Wenn wir den Draht um eine Kiste legen, wird aus einer **schlafenden Kiste** ein
 
 Schau dir den Unterschied an:
 
-1. **Die schlafende Kiste (Protein):**
+1. **Die schlafende Kiste (Unausführbares Protein):**
    `["Der Hase schläft"]`
  (Bild: ![Ausführbares-Protein.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png) )
    *(Hier liegt nur die Information: Der Hase schläft. Nichts bewegt sich.)*
 
-2. **Die wache Kiste (Aktion):**
+2. **Die wache Kiste (Aktionszauber):**
    `»["Der Hase kommt sanft in sein zuhause"]«`
    (Bild: ![Unausführbares-Protein.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png))
    *(Zack! Durch den Aktionsdraht wird daraus ein echter Befehl(Zauberspruch). Der Hase bewegt sich wirklich!)*
 
 ---
 
-## Meister REX und der Aktionsdraht
+## Meister REX und der Aktionszauber
 
-Meister REX liebt den Aktionsdraht. Er benutzt ihn, um dir zu zeigen, was gerade passiert. Wenn REX einen Arbeitstisch aufstellt, benutzt er seinen Punkt, um die Aktion genau dort zu starten:
+Meister REX liebt den Aktionszauber. Er benutzt ihn, um dir zu zeigen, was gerade passiert. Wenn REX einen Arbeitstisch aufstellt, benutzt er seinen Punkt, um die Aktion genau dort zu starten:
 
 `¬· ["Der Hase schaut dich an"]`
 
-Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
+Hier hilft REX dabei, dass der Aktionszauber genau auf seinem Tisch stattfindet.
 
 ## Schauen wir mal, was passieren kann, wenn wir den Hasen füttern:
 
@@ -66,9 +66,9 @@ Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
    - B) `»["Möhre essen"]«`
    *(Tipp: Such nach den Draht-Pfeilen!)*
 
-2. **Malen:** Zeichne einen langen, leuchtenden Draht (den Aktionsdraht) auf ein Blatt Papier. In die Mitte des Drahtes zeichnest du eine Zauberkiste. Was soll in deiner Kiste passieren? Vielleicht `["Tanzen"]` oder `["Singen"]`?
+2. **Malen:** Zeichne einen langen, leuchtenden Aktionszauber (den Aktionsdraht) auf ein Blatt Papier. In die Mitte des Aktionszaubers zeichnest du eine Zauberkiste. Was soll in deiner Kiste passieren? Vielleicht `["Tanzen"]` oder `["Singen"]`?
 
-3. **Verbinden:** Kannst du den Aktionsdraht mit dem Finger nachfahren? 
+3. **Verbinden:** Kannst du einen Aktionszauber mit dem Finger nachfahren? 
    Start bei `»`, dann über die Kiste `[]` bis zum Ende `«`.
 
 ---

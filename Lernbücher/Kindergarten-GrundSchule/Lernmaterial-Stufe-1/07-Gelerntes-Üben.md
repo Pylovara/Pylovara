@@ -6,29 +6,32 @@
 ## 4. Meister REX `¬·`
 ## 5. Der Aktionsdraht `» ... «`
 
-
-
-Sind alles Mächte Zaubergegenstände die du Gelernt hast um 
-
-
+Sind alles Mächte Zaubergegenstände die du Gelernt hast um :
 
 ## 1. Der Zauberand `¢! ... !¢`
+Wir haben Gelernt das man mit dem Zauberand einen Zauber Sprechen kann. Wie Das Licht von dem OverHeadProjektor.
 
-Wir haben Gelernt das man mit dem Zauberand einen Zauber Sprechen kann. 
+![Schattenspiele_OverheadProjektor.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/schattenspiele_OverheadProjektor.png)
+
 
 ## 2. Die Zauberkiste `[]`
-
 Wir haben Gelernt das man in eine Zauberkiste Dinge legen kann. 
 
-## 3. Zauberwand `|`
+![Boxis_Wald_Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/boxis_wald_kiste.png)
 
+
+## 3. Zauberwand `|`
 Wir haben Gelernt das man mit der Zauberwand Dinge trennen kann
 - Oder Tiere - Oder Gegestände - Viele Dinge. 
 
-## 4. Meister REX `¬·`
+![Aufbau_Tiefsee_Bausteine.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/aufbau_tiefsee_bausteine.png)
 
+
+## 4. Meister REX `¬·`
 Wir Rex Der zaubermeister Tische aufstellen kann. 
+
+![Rex.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Rex.png)
 
 ## 5. Der Aktionsdraht `» ... «`
 
-Und wir haben Gelernt das man mit dem Aktionsdraht einen Zauber ausführen kann. 
+Und wir haben Gelernt das man mit dem Schlafende Kisten und Wache Kisten mit dem Aktionsdraht 

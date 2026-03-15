@@ -19,7 +19,7 @@ Der Aktionsdraht sieht aus wie kleine Pfeile, die zeigen, wo die Energie langfli
 - `»` Das ist der Anfang vom Draht. # Metapher für Eltern Linke Hand oder Linker Fuß. # Metapher für Kinder Linker Fuß oder Linke Hand.
 - `«` Das ist das Ende vom Draht. # Metapher für Eltern Rechte Hand oder Rechter Fuß. # Metapher für Kinder Rechter Fuß oder Rechte Hand.
 
-Wenn wir den Draht um eine Kiste legen, wird aus einer schlafenden Kiste eine **ausführbare Zauberkiste**. Das bedeutet: Jetzt passiert etwas! # Metapher für Eltern: Die Kiste ist jetzt wach und kann benutzt werden. # Metapher für Kinder: Die Kiste ist jetzt wach und kann benutzt werden.
+Wenn wir den Draht um eine Kiste legen, wird aus einer **schlafenden Kiste** eine **Wache Zauberkiste**. Das bedeutet: Jetzt passiert etwas! # Metapher für Eltern: Die Kiste ist jetzt wach und kann benutzt werden. # Metapher für Kinder: Die Kiste ist jetzt wach und kann benutzt werden.
 
 ---
 
@@ -71,6 +71,7 @@ Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
 3. **Verbinden:** Kannst du den Aktionsdraht mit dem Finger nachfahren? 
    Start bei `»`, dann über die Kiste `[]` bis zum Ende `«`.
 
+
 ---
 > [!TIP]
 > **Für Eltern:** Der **Aktionsdraht** (`» ... «`) symbolisiert in Pylovara den **Execution Thread** oder die **Aktionsverdrahtung**. 
@@ -82,8 +83,19 @@ Hier hilft REX dabei, dass die Aktion genau auf seinem Tisch stattfindet.
 
 > [!TIP]
 > **Für Eltern:** Das Beispiel mit dem Hasen illustriert die **sequenzielle Ausführung** von Aktionen. 
-> Das heißt, dass Sie wie bei einer Tagesliste etwas aufschreiben, was dann Punkt für Punkt eingestellt, bearbeitet oder ausgeführt wird, bis das Ergebnis da ist. In der normalen Informatik spricht man es etwas anders aus: Man nennt es EVA – Eingabe, Verarbeitung, Ausgabe. Das ist aber das gleiche Prinzip. 
+> Das heißt, dass Sie wie bei einer Tagesliste etwas aufschreiben, 
+> was dann Punkt für Punkt eingestellt, bearbeitet oder ausgeführt 
+> wird, bis das Ergebnis da ist. In der normalen Informatik spricht 
+> man es etwas anders aus: Man nennt es EVA – Eingabe, 
+> Verarbeitung, Ausgabe. Das ist aber das gleiche Prinzip. 
 
-> Wir listen quasi die Anweisungen für die Kaffeemaschine auf und führen sie dann aus. Jede Ausführung kann logisch geschaltet werden, sodass wir zum Beispiel sagen können: "Wenn der Kaffee fertig ist, dann soll die Maschine ausgehen." 
+> Wir listen quasi die Anweisungen für die Kaffeemaschine auf und 
+> führen sie dann aus. Jede Ausführung kann logisch geschaltet 
+> werden, sodass wir zum Beispiel sagen können: "Wenn der Kaffee 
+> fertig ist, dann soll die Maschine ausgehen." 
 
-> Das ist das, was Ihr Kind mit dieser Methode lernen wird. Dadurch entstehen neue Denkprozesse bei allem, was Ihr Kind tut. Es entwickelt ein besseres Verständnis für logische Abläufe und kann dadurch selbstständiger werden und sich besser organisieren. Alles hat eine Auswirkung auf das, was danach kommt.
+> Das ist das, was Ihr Kind mit dieser Methode lernen wird. 
+> Dadurch entstehen neue Denkprozesse bei allem, was Ihr Kind tut. 
+> Es entwickelt ein besseres Verständnis für logische Abläufe und 
+> kann dadurch selbstständiger werden und sich besser organisieren. 
+> Alles hat eine Auswirkung auf das, was danach kommt.

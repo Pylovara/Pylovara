@@ -35,7 +35,6 @@ Schau dir den Unterschied an:
 2. **Die wache Kiste (Aktion):**
    `»["Der Hase kommt sanft in sein zuhause"]«`
    (Bild: ![Unausführbares-Protein.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png))
-
    *(Zack! Durch den Aktionsdraht wird daraus ein echter Befehl(Zauberspruch). Der Hase bewegt sich wirklich!)*
 
 ---

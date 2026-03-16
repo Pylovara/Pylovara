@@ -41,9 +41,9 @@ Beispiel für eine erweiterte
 Ŧ¹ »["KNOPF AN"|{Volt:230, Watt:1000, Kapazität:50.0L}]« # 50 liter wirds nicht geben ;-) 
     ¬·»["Kaffeemaschine"|{Volt:230, Watt:800, Kapazität:1.0L}]«««T28 
     # beispiel : 28 Takte Wartezeit wegen dem Heizstab
-       ¶ ¬· »["Tanken"]«««T9
-             ¬· »["Brauch Wasser"]«
-                 ¶ ¬· »["Wasser voll"]«
+       ¶ ¬· »["Tanken"|{Grenze:1.0L}]«««T9
+             ¬· »["Brauch Wasser"|{Liter:1.0L}]«
+                 ¶ ¬· »["Wasser voll"|{Zufuhr:Aus}]«
                        ¬· »["Stoppe die Zufuhr"]«««E
                  ¶¶ ¬· »["Wasser rein"]«
                         ¬· »["Füllstand prüfen"|{Liter:1.0L}]«««S8

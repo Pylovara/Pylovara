@@ -7,7 +7,7 @@ prototyping
 
 Hallo Kinder 
 
-Jetzt wo wir gelernt haben wie wir Zauber sprechen können, und wie wir Zauberkisten einordnen können, können wir jetzt tolle Dinge zaubern. Zauberränder wo Rex Mit Zauberkisten seine Arbeitstische aufstellt.
+Jetzt wo wir gelernt haben wie wir Zauber sprechen , und wie wir Zauberkisten einordnen können, können wir jetzt tolle Dinge zaubern. Zauberränder wo Rex Mit Zauberkisten seine Arbeitstische aufstellt.
 
 aber wir haben noch keinen Zauber dafür das wir einfach einem Tier in der Selben kisten Essen mit geben können. Oder das wir einem Tier in der Selben kisten ein Spielzeug mit geben können. 
 

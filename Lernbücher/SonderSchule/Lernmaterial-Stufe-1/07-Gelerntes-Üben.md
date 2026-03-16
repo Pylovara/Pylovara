@@ -1,0 +1,46 @@
+# Kapitel 7: Die mächtigen Zauber
+
+## 1. Der Zauberrand (Transaktionsrahmen) `¢! ... !¢`
+## 2. Die Zauberkiste (Protein) `[]`
+## 3. Die Zaubertrennwand (Trennbefehl) `|`
+## 4. Meister REX (Workspace / Prozess) `¬·`
+## 5. Der Aktionszauber (Execution Thread / Aktionsdraht) `» ... «`
+
+Das sind alles mächtige Zaubergegenstände, die du gelernt hast, um:
+
+## 1. Der Zauberrand (Transaktionsrahmen) `¢! ... !¢`
+Wir haben gelernt, dass man mit dem Zauberrand einen Zauber sprechen kann. Wie das Licht von dem Overheadprojektor.
+
+![Schattenspiele_OverheadProjektor.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/schattenspiele_OverheadProjektor.png)
+
+
+## 2. Die Zauberkiste (Protein) `[]`
+Wir haben gelernt, dass man in eine Zauberkiste Dinge legen kann. 
+
+![Boxis_Wald_Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/boxis_wald_kiste.png)
+
+
+## 3. Die Zaubertrennwand (Trennbefehl) `|`
+Wir haben gelernt, dass man mit der Zaubertrennwand Dinge trennen kann:
+- Oder Tiere - Oder Gegenstände - Viele Dinge. 
+
+![Aufbau_Tiefsee_Bausteine.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/aufbau_tiefsee_bausteine.png)
+
+
+## 4. Meister REX (Workspace / Prozess) `¬·`
+Wie Rex, der Zaubermeister, Tische aufstellen kann. 
+
+![Rex.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Rex.png)
+
+## 5. Der Aktionszauber (Execution Thread / Aktionsdraht) `» ... «`
+
+Und wir haben gelernt, dass wir schlafende Kisten und wache Kisten mit dem Aktionszauber belegen können, wenn etwas passieren soll.
+
+![Schlafende-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png)
+
+![Wache-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Ausführbares-Protein.png)
+
+
+Jetzt können wir tolle Dinge zaubern, z.B. einen Zauberrand mit Aktionszauber und Zauberkisten.
+Wir können diese Kisten sogar schlafen lassen und wach machen!
+

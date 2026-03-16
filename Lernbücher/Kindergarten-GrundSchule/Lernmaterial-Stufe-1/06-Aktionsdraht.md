@@ -8,7 +8,7 @@ Stell dir vor, du hast eine Kiste mit einem Apfel darin: `["Apfel"]`. Der Apfel 
 
 Aber was ist, wenn der Apfel **rollen** soll? Oder wenn der Hase in sein Zuhause **hoppeln** möchte? 🐰
 
-Dafür brauchen wir den **Aktionszauber**!
+Dafür brauchen wir den **Aktionszauber** (Execution Thread / Aktionsdraht)!
 
 ---
 

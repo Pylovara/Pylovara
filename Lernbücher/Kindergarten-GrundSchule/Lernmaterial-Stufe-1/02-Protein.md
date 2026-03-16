@@ -4,7 +4,7 @@ Hallo kleiner Entwickler! 🌟
 
 Erinnerst du dich an unseren **Zauberrand** `¢! ... !¢` aus dem letzten Kapitel? Heute schauen wir uns an, was wir in diesen sicheren Bereich hineinlegen können.
 
-Stell dir vor, du hast eine ganz besondere Kiste, in die du alles hineinlegen kannst, was du für dein Abenteuer brauchst. In Pylovara nennen wir das ein **Protein**. Aber wir sagen dazu einfach: **Die Zauberkiste**.
+Stell dir vor, du hast eine ganz besondere Kiste, in die du alles hineinlegen kannst, was du für dein Abenteuer brauchst. In Pylovara nennen wir das ein **Protein**. Aber wir sagen dazu einfach: **Die Zauberkiste** (Protein).
 
 (Bild: ![protein_zauberkiste.png](../Bildliches-Stufe-1/protein_zauberkiste.png))
 

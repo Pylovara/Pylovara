@@ -26,11 +26,11 @@ Schau mal:
 
 Das bedeutet: Der Affe ist in der großen Kiste und er hat seine kleine Lunchbox mit den Bananen dabei! 🍌
 
-Oder wenn er ganz viel spielen möchte:
+Oder wenn er auch Spielezeug mitnehmen möchte:
 
-### »["Hund" | {"Knochen"} | {"Ball"}]«
+### »["Hund" | {"Hundefutter"} | {"Ball"}]«
 
-Hier hat der Hund gleich zwei kleine Kisten dabei: eine für sein Essen und eine für sein Spielzeug! 🎾🦴
+Hier hat der Hund gleich zwei kleine Kisten dabei: eine für sein Essen und eine für sein Spielzeug!
 
 ---
 
@@ -47,7 +47,7 @@ Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir 
 
 1. **Malen:** Zeichne einen großen Hund 🐕 in eine Zauberkiste `[]`.
 2. **Lunchbox:** Zeichne eine kleine Zauberkiste `{}` daneben (in die große Kiste) und mal ein paar leckere Knochen hinein!
-3. **Zauber schreiben:** Kannst du den Code für deinen Hund mit seinen Knochen aufschreiben? 
+3. **Zauber schreiben:** Kannst du eine der zwei kisten für deinen Hund mit seinen Knochen aufschreiben? 
    *(Tipp: `["Hund" | {"Knochen"}]`)*
 
 ---

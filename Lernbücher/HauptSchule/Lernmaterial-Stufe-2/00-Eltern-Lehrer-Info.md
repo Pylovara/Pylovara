@@ -79,6 +79,8 @@ Beispiel für eine erweiterte
 
 Sie verstehen also das ihr in diesem Punkt die Syntax der MCS-Sprache lernt. Aber nicht nur das, sondern auch die Logik dahinter. Und das auf eine Art und Weise, die kindgerecht und verständlich ist. 
 
+Wir führen auch ab dieser Phase , neber den Zauber* begriffen , die echten Fachbegriffe ein vom Pylovara-System.
+
 Persönliche Meinung:
 
 Ich finde es wichtig, dass die Kinder die Konzepte verstehen, bevor sie die Syntax lernen. Das ist der Schlüssel zum Erfolg. Wenn die Kinder die Konzepte verstehen, dann können sie auch die Syntax verstehen. Wenn die Kinder die Syntax verstehen, dann können sie auch die Konzepte verstehen. Es ist ein Teufelskreis, aber ein guter Teufelskreis.

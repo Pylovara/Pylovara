@@ -49,22 +49,22 @@ Wir können diese Kisten sogar schlafen lassen und wach machen!
 
 ¢!
 »["Hund"]«
- ¬· »["Essen"]«««E
-     ¬· »["Ball"]«««E
-     ¬· »["Kuscheltier"]«««E
+ ¬· »["Essen"]«
+     ¬· »["Ball"]«
+     ¬· »["Kuscheltier"]«
 !¢
 
 ¢!
 »["Katze"]«
- ¬· »["Milch"]«««E
-     ¬· »["Kratzbaum"]«««E
-     ¬· »["Spielzeugmaus"]«««E
+ ¬· »["Milch"]«
+     ¬· »["Kratzbaum"]«
+     ¬· »["Spielzeugmaus"]«
 !¢
 
 
 ¢!
 »["Maus"]
- ¬· »["Käse"]«««E
-     ¬· »["Loch"]«««E
-     ¬· »["Käse"]«««E
+ ¬· »["Käse"]«
+     ¬· »["Loch"]«
+     ¬· »["Käse"]«
 !¢

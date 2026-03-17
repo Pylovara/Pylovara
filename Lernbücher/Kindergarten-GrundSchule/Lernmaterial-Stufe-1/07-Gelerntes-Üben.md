@@ -41,6 +41,30 @@ Und wir haben gelernt, dass wir schlafende Kisten und wache Kisten mit dem Aktio
 ![Wache-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Ausführbares-Protein.png)
 
 
-Jetzt können wir tolle Dinge zaubern, z.B. einen Zauberrand mit Aktionszauber und Zauberkisten.
+Jetzt können wir tolle Dinge zaubern, z.B. einen Zauberrand `¢! ... !¢` mit Aktionszauber `» ... «` und Zauberkisten `[]` mit Meister REX `¬·` und Trennzauber `|`, erstellen .
 Wir können diese Kisten sogar schlafen lassen und wach machen!
 
+## 6. Übung: Kleine ZauberStröme erstellen 
+
+
+¢!
+»["Hund"]«
+ ¬· »["Essen"]«««E
+     ¬· »["Ball"]«««E
+     ¬· »["Kuscheltier"]«««E
+!¢
+
+¢!
+»["Katze"]«
+ ¬· »["Milch"]«««E
+     ¬· »["Kratzbaum"]«««E
+     ¬· »["Spielzeugmaus"]«««E
+!¢
+
+
+¢!
+»["Maus"]
+ ¬· »["Käse"]«««E
+     ¬· »["Loch"]«««E
+     ¬· »["Käse"]«««E
+!¢

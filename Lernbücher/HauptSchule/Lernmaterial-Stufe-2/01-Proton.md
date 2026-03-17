@@ -1,80 +1,83 @@
-# Kapitel 1: Die kleine Zauberkiste (Proton)
+# Kapitel 1: Das Proton (Zustandssteuerung)
 
-Hallo kleiner Entwickler! 🌟
+Willkommen in der nächsten Stufe deiner Ausbildung als Entwickler! 🌟
 
-Du bist ja schon ein richtiger Profi! Du weißt bereits, wie wir mit dem **Zauberrand** (Transaktionsrahmen) `¢! ... !¢` einen sicheren Bereich schaffen und wie **Meister REX** (Workspace) dort die Arbeitstische aufstellt. Du kennst auch schon die großen **Zauberkisten** (Protein) `[]`, in denen wir unsere Entdeckungen speichern.
+Du hast bereits gelernt, wie man mit dem **Transaktionsrahmen** `¢! ... !¢` (unserem früheren "Zauberrand") einen sicheren Bereich schafft und wie der **Arbeitsflächenprozess** (Meister REX) dort die Workspaces aufstellt. Du kennst auch schon die **Proteine** `[]` (die großen Zauberkisten), in denen wir unsere Daten speichern.
 
-Aber heute wird es noch magischer! Stell dir vor, du hast einen Affen 🐒 in deiner Zauberkiste. Der Affe hat aber Hunger und möchte seine eigene kleine **Lunchbox** mitnehmen, in der seine Bananen sind. 
+Heute gehen wir einen Schritt tiefer in die Logik. Stell dir vor, du hast ein Objekt in deinem Protein – zum Beispiel einen Affen 🐒. Dieser Affe braucht Informationen oder Zustände, die direkt zu ihm gehören, wie zum Beispiel sein Futter oder seine Energie.
 
-Wie machen wir das? Dafür gibt es einen neuen Zauber: das **Proton**. Aber wir nennen es einfach: **Die kleine Zauberkiste**.
+Dafür nutzen wir das **Proton**. Wir nennen es ab jetzt auch **Zustands-Container** oder kleine Kiste.
 
 ---
 
-## Das Symbol für die kleine Kiste: {}
+## Das Symbol für das Proton: {}
 
-Die kleine Zauberkiste (das Proton) sieht fast so aus wie die große, aber sie ist etwas geschwungener, wie zwei kleine Arme, die etwas festhalten:
+Das Proton wird durch geschweifte Klammern dargestellt. Es umschließt spezifische Werte, die einem Objekt zugeordnet werden:
 
 # {}
 
-## Ein Tier mit seinem Proviant
+## Objekte mit Zuständen versorgen
 
-Wenn wir einem Tier etwas mitgeben wollen, legen wir die kleine Kiste (Proton) einfach mit in die große Kiste (Protein). Wir trennen sie mit unserer **Zaubertrennwand** (Trennbefehl) `|`.
+Um einem Objekt (im Protein) Informationen mitzugeben, setzen wir das Proton einfach mit hinein. Wir trennen die Bereiche wie gewohnt mit dem **Trennbefehl** `|`.
 
-Schau mal:
+Schau dir die Struktur an:
 
 ### »["Affe" | {"Bananen"}]«
 
-Das bedeutet: Der Affe ist in der großen Kiste und er hat seine kleine Lunchbox mit den Bananen dabei! 🍌
+Hier ist der Affe das Haupt-Datenpaket, und in seinem Proton `{}` trägt er die Information über seine Nahrung mit sich. 🍌
 
-Oder wenn er auch Spielezeug mitnehmen möchte:
+Oder für mehrere Informationen:
 
 ### »["Hund" | {"Hundefutter"} | {"Ball"}]«
 
-Hier hat der Hund gleich zwei kleine Kisten dabei: eine für sein Essen und eine für sein Spielzeug!
+Hier hat das Objekt "Hund" zwei Protons: Eines für seine Nahrung und eines für seinen aktuellen Zustand (er möchte spielen).
 
 ---
 
-## Schlafende und Wache Kisten
+## Statische Daten vs. Aktive Ausführung
 
-Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir Dinge wach. 
+Wichtig ist die Unterscheidung, ob Daten nur gespeichert sind oder gerade verarbeitet werden. Dafür nutzen wir den **Aktionsdraht** `» ... «`:
 
-- `["Affe" | {"Bananen"}]` – Hier schläft alles. Der Affe und seine Bananen warten nur. (**Schlafende Kiste**)
-- `»["Affe" | {"Bananen"}]«` – Zack! Der Aktionszauber weckt sie auf. Jetzt wird der Affe gefüttert! (**Wache Kiste**)
+- `["Affe" | {"Bananen"}]` – Das ist ein **schlafendes Protein**. Es liegt im Speicher bereit, aber es passiert noch nichts.
+- `»["Affe" | {"Bananen"}]«` – Hier ist der Aktionsdraht aktiv. Das System verarbeitet die Daten jetzt – der Affe wird gefüttert!
 
 ---
 
-## Übung: Kleine ZauberStröme erstellen 
+## Übung: Prozess-Ströme erstellen
 
+Versuche, die folgenden Abläufe im Transaktionsrahmen zu verstehen:
 
+```text
 ¢!
-»["Hund"|{"Komm her"}]«
- ¬· »["Essen"|{"Hundefutter"}]« 
-     # und nach dem essen will er spielen
-     ¬· »["Ball"|{"Renn zum Ball"}]«
-     ¬· »["Kuscheltier"|{"Kuschel dich an mich"}]«
+»["Hund" | {"Komm her"}]«
+ ¬· »["Essen" | {"Hundefutter"}]« 
+     # Der Hund isst und wechselt danach in den Spielmodus
+     ¬· »["Ball" | {"Renn zum Ball"}]«
+     ¬· »["Kuscheltier" | {"Kuschel dich an mich"}]«
 !¢
+```
 
+```text
 ¢!
-»["Katze"|{"Komm her"}]«
- ¬· »["Milch"|{"Trink die Milch"}]« # und nach dem trinken will sie spielen
-     ¬· »["Kratzbaum"|{"Kratz den Baum"}]«
-     ¬· »["Spielzeugmaus"|{"Spiel mit der Maus"}]«
+»["Katze" | {"Komm her"}]«
+ ¬· »["Milch" | {"Trink die Milch"}]« 
+     # Die Katze trinkt und sucht sich einen Beschäftigung
+     ¬· »["Kratzbaum" | {"Kratz den Baum"}]«
+     ¬· »["Spielzeugmaus" | {"Spiel mit der Maus"}]«
 !¢
+```
+
+---
 
 ### Deine Aufgaben:
 
-1. **Malen:** Zeichne einen großen Hund 🐕 in eine Zauberkiste `[]`.
-2. **Lunchbox:** Zeichne eine kleine Zauberkiste `{}` daneben (in die große Kiste) und mal ein paar leckere Knochen hinein!(vergiss nicht die Zauberwand `|` zwischen den Kisten!)
-3. **Zauber schreiben:** Kannst du eine der zwei kisten für deinen Hund mit seinen Knochen aufschreiben? 
-   *(Tipp: `["Hund"|{"Knochen"}]`)*
+1. **Struktur zeichnen:** Erstelle ein Protein `[]` für einen Hund 🐕.
+2. **Proton hinzufügen:** Zeichne ein Proton `{}` in das Protein und schreibe "Knochen" hinein. Vergiss den Trennbefehl `|` nicht!
+3. **Syntax schreiben:** Schreibe die vollständige Zeile für einen schlafenden Hund mit seinem Knochen auf.
+   *(Tipp: `["Hund" | {"Knochen"}]`)*
 
 ---
 
 > [!TIP]
-> **Für Eltern:** Ein **Proton** `{}` ist in Pylovara eine Unter-Struktur innerhalb eines Proteins. Es dient primär dazu, **Zustände (States)** oder **Hardware-Parameter** zu definieren.
-> - Während das **Protein** `[]` den allgemeinen Daten-Container darstellt, steuert das **Proton** `{}` die spezifischen Details oder "Versorgungs-Werte" (wie z.B. Spannung, Farbe, oder hier: Futter).
-> - Protons stehen in der Syntax oft am Ende oder als ergänzende Information zu einem Objekt.
-> - Helfen Sie dem Kind zu verstehen, dass die geschweiften Klammern `{}` etwas "Zugehöriges" markieren – wie ein Rucksack, den man trägt.
-
-> [!IMPORTANT]
-> **Für Eltern:** Technisch gesehen werden Protons genutzt, um Hardware-Komponenten (Gatter/Register) direkt mit Werten zu versorgen. In der Lernstufe 2 führen wir dies als "kleine Kiste" ein, um die hierarchische Struktur von Daten (verschachtelte Objekte/States) begreifbar zu machen.
+> **Für Eltern & Lehrkräfte:** Das **Proton** `{}` dient in der Pylovara-Architektur der Definition von **Attributen** und **Hardware-Zuständen**. Während das Protein den Container für ein Objekt definiert, liefert das Proton die Parameter (z.B. Spannungswerte, Farben oder Mengen), die für die Hardware-Steuerung (Gatter/Register) benötigt werden.
+> - Helfen Sie dem Lernenden zu verstehen, dass `{}` immer etwas beschreibt oder versorgt, was im `[]` definiert wurde.

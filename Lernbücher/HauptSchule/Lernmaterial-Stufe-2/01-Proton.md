@@ -47,7 +47,7 @@ Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir 
 
 
 ¢!
-»["Hund" | {"Komm her"}]«
+»["Hund"|{"Komm her"}]«
  ¬· »["Essen"|{"Hundefutter"}]« 
      # und nach dem essen will er spielen
      ¬· »["Ball"|{"Renn zum Ball"}]«
@@ -55,7 +55,7 @@ Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir 
 !¢
 
 ¢!
-»["Katze" | {"Komm her"}]«
+»["Katze"|{"Komm her"}]«
  ¬· »["Milch"|{"Trink die Milch"}]« # und nach dem trinken will sie spielen
      ¬· »["Kratzbaum"|{"Kratz den Baum"}]«
      ¬· »["Spielzeugmaus"|{"Spiel mit der Maus"}]«
@@ -68,7 +68,7 @@ Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir 
 # Übung für Fortgeschrittene
 # Vortgeschrittene die Argumentzauber verstehen !
 ¢!
-»["Maus" | {"Komm her"}]
+»["Maus"|{"Komm her"}]
  ¬· »["Käse"|{"Iss den Käse"}]« # und nach dem essen will sie spielen
      ¬· »["Loch"|{"Versteck dich im Loch"}]
      ¬· »["Käse"|{"Iss den Käse"}]
@@ -86,7 +86,7 @@ Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir 
 1. **Malen:** Zeichne einen großen Hund 🐕 in eine Zauberkiste `[]`.
 2. **Lunchbox:** Zeichne eine kleine Zauberkiste `{}` daneben (in die große Kiste) und mal ein paar leckere Knochen hinein!(vergiss nicht die Zauberwand `|` zwischen den Kisten!)
 3. **Zauber schreiben:** Kannst du eine der zwei kisten für deinen Hund mit seinen Knochen aufschreiben? 
-   *(Tipp: `["Hund" | {"Knochen"}]`)*
+   *(Tipp: `["Hund"|{"Knochen"}]`)*
 
 ---
 

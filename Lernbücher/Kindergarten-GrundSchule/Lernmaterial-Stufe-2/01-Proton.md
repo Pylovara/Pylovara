@@ -43,6 +43,44 @@ Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir 
 
 ---
 
+## Übung: Kleine ZauberStröme erstellen 
+
+
+¢!
+»["Hund" | {"Komm her"}]«
+ ¬· »["Essen"|{"Hundefutter"}]« 
+     # und nach dem essen will er spielen
+     ¬· »["Ball"|{"Renn zum Ball"}]«
+     ¬· »["Kuscheltier"|{"Kuschel dich an mich"}]«
+!¢
+
+¢!
+»["Katze" | {"Komm her"}]«
+ ¬· »["Milch"|{"Trink die Milch"}]« # und nach dem trinken will sie spielen
+     ¬· »["Kratzbaum"|{"Kratz den Baum"}]«
+     ¬· »["Spielzeugmaus"|{"Spiel mit der Maus"}]«
+!¢
+
+
+
+-----------------------------------------------------
+
+# Übung für Fortgeschrittene
+# Vortgeschrittene die Argumentzauber verstehen !
+¢!
+»["Maus" | {"Komm her"}]
+ ¬· »["Käse"|{"Iss den Käse"}]« # und nach dem essen will sie spielen
+     ¬· »["Loch"|{"Versteck dich im Loch"}]
+     ¬· »["Käse"|{"Iss den Käse"}]
+         ¬· ["KurzeRuhe"|{"Schlafenszeit"}]
+            # Hier kommt der Argumentzauber ins Spiel
+            ¬· »["Schlafenszeit"|{"Schlafenszeit"}]«««S6 
+                ¬· »["Aufwachen"|{"Aufwachen"}]«
+!¢
+
+-----------------------------------------------------
+
+
 ### Deine Aufgaben:
 
 1. **Malen:** Zeichne einen großen Hund 🐕 in eine Zauberkiste `[]`.

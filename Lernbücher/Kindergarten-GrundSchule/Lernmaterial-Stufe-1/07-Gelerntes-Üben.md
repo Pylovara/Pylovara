@@ -49,14 +49,14 @@ Wir können diese Kisten sogar schlafen lassen und wach machen!
 
 ¢!
 »["Hund"]«
- ¬· »["Essen"]«
+ ¬· »["Essen"]« # und nach dem essen will er spielen
      ¬· »["Ball"]«
      ¬· »["Kuscheltier"]«
 !¢
 
 ¢!
 »["Katze"]«
- ¬· »["Milch"]«
+ ¬· »["Milch"]« # und nach dem trinken will sie spielen
      ¬· »["Kratzbaum"]«
      ¬· »["Spielzeugmaus"]«
 !¢
@@ -64,7 +64,10 @@ Wir können diese Kisten sogar schlafen lassen und wach machen!
 
 ¢!
 »["Maus"]
- ¬· »["Käse"]«
+ ¬· »["Käse"]« # und nach dem essen will sie spielen
      ¬· »["Loch"]«
      ¬· »["Käse"]«
+         ¬· ["KurzeRuhe"]
+            ¬· ["Schlafenszeit"]
+               ¬· »["Aufwachen"]«
 !¢

@@ -46,7 +46,7 @@ Aber wollen wir unseren Kinder sowas Vermitteln ?
 Ich denke jeder der Weis das ein Kind den Tag im Kopf im Schlaf
 verarbeitet , könnte automatisch an der stelle mit dem Löwen hängen bleiben ( die Eltern die das Lesen, wissen was ich meine und das heißt - nachts schreiendes aufgewachtes kind wegen nichts und weniger schlaf für euch Eltern )
 
-Klar isst es Wurst - aber müssen wir dem Kind Albträume vom Fressenden Löwen mit geben - Wir sind Froh wenn er sein samali Brötchen isst und nicht Magersuüchtig wird , nicht wahr? Ich zu meinem Teil möchte dies nur 
+Klar isst es Wurst - aber müssen wir dem Kind Albträume vom Fressenden Löwen mit geben - Wir sind Froh wenn er sein Salami Brötchen isst und nicht Magersüchtig wird , nicht wahr? Ich zu meinem Teil möchte dies nur 
 Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun im Lernprozess!
 
 Mit Freundlichen Grüßen

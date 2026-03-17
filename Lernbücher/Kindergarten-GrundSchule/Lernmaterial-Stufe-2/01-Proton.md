@@ -46,7 +46,7 @@ Weißt du noch? Mit dem **Aktionszauber** (Aktionsdraht) `» ... «` machen wir 
 ### Deine Aufgaben:
 
 1. **Malen:** Zeichne einen großen Hund 🐕 in eine Zauberkiste `[]`.
-2. **Lunchbox:** Zeichne eine kleine Zauberkiste `{}` daneben (in die große Kiste) und mal ein paar leckere Knochen hinein!
+2. **Lunchbox:** Zeichne eine kleine Zauberkiste `{}` daneben (in die große Kiste) und mal ein paar leckere Knochen hinein!(vergiss nicht die Zauberwand `|` zwischen den Kisten!)
 3. **Zauber schreiben:** Kannst du eine der zwei kisten für deinen Hund mit seinen Knochen aufschreiben? 
    *(Tipp: `["Hund" | {"Knochen"}]`)*
 

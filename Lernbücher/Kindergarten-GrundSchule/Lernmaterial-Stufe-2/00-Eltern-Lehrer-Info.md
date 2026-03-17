@@ -24,6 +24,7 @@ Wir nutzen weiterhin die **bildliche Metapher**, um komplexe technische Sachverh
 ## Wichtige Hinweise für die Begleitung
 - **Geduld:** Die Unterscheidung zwischen `[]` (Container) und `{}` (Inhalt/Zustand) kann anfangs ungewohnt sein. Üben Sie gemeinsam das „Packen“ und „Auspacken“.
 - **Kreativität fördern:** Ermutigen Sie das Kind, eigene „Lunchboxen“ für seine Spielfiguren zu erfinden.
+- **Nutzen sie Meister REX** um die Arbeitssflächen zu vermitteln und die Logik dahinter zu verstehen.(Wir brauchen Für jede Kiste einen Arbeitstisch , damit wir wissen was wir tun können!)
 
 ## Wenn Sie möchten:
 - **Tastatur:** Helfen Sie beim Finden der Klammertasten auf der Tastatur. Dies ist die erste praktische Berührung mit „echter“ Programmier-Syntax.

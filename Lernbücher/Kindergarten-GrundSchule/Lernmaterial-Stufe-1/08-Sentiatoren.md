@@ -65,8 +65,8 @@ Die kleine Maus möchte wissen, ob Käse im Haus ist.
 
 2. **Malen:** Zeichne ein großes Tor. Auf der einen Seite malst du ein `¶` (für "Alles da!") und einen glücklichen Smiley. Auf der anderen Seite malst du ein `¶¶` (für "Oh nein, leer!") und einen fragenden Smiley.
 
-3. **Zauber schreiben:** Kannst du den Ja-Weg für eine Katze schreiben, die `["Milch"]` trinken will?
-   *(Tipp: `¶ ¬· »["Milch trinken"]«`)*
+3. **Zauber schreiben:** Kannst du den Entscheidungszauber JA und NEIN für eine Katze schreiben, die `["Milch"]` trinken will?
+   *(Tipp: `¶ ¬· »["Milch trinken"]«` Vergiss den Aktionszauber nicht!)*
 
 ---
 

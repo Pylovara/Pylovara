@@ -67,6 +67,18 @@ Die kleine Maus möchte wissen, ob Käse im Haus ist.
 
 ---
 
+## Das Eichelhörnchen und seine Nuss️ 🌰 🐿️
+
+¢!
+
+["Nuss"]
+
+¶ ¬· »["Nuss knacken"]«
+¶¶ ¬· »["Traurig piepsen"]«
+
+!¢
+
+---
 ### Deine Aufgaben:
 
 1. **Wächter-Check:** Welches Zeichen benutzt der Wächter, wenn alles super ist und wir weitermachen dürfen? Einmal `¶` oder zweimal `¶¶`?

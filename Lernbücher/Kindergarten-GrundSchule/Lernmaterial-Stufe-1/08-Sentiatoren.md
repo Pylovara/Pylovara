@@ -4,9 +4,11 @@ Hallo kleiner Entdecker! 🌟🚪
 
 Du hast schon gelernt, wie man Dinge in Kisten packt und wie der Aktionsdraht sie wach macht. Aber was passiert, wenn wir mal nicht wissen, ob etwas in der Kiste ist? Oder wenn wir uns entscheiden müssen?
 
-Dafür gibt es den Magischen Wächter mit **Entscheidungszauber** (Sentiator), der Zwei Verschiedene Wege Zaubern kann.
+Dafür gibt es den Magischen IgelWächter mit seinem 
+**Entscheidungszauber** (Sentiator), der Zwei Verschiedene 
+Wege Zaubern kann.
 
-(Bild: Hier kommt das Bild für den Entscheidungszauber hin)
+(Bild: ![Hier kommt das Bild für den Entscheidungszauber hin](../../SonderSchule/Bildliches-Stufe-1/Sentiatoren.png))
 
 ---
 

@@ -15,12 +15,14 @@ Es gibt zwei Wege, die der Wächter uns zeigen kann:
 1. **¶ (Der Ja-Weg):** 
    Dieses Zeichen bedeutet: "Ja, alles ist okay! Der Apfel ist da!" oder "Die Kiste ist bereit!" 
    Wenn der Wächter dieses Zeichen zeigt, dürfen wir weitergehen.
-   Wir nennen es den **Entscheidungszauber JA**.
+ 
 
 2. **¶¶ (Der Nein-Weg):** 
    Dieses Zeichen bedeutet: "Stopp! Da fehlt etwas!" oder "Der Apfel ist weg!"
    Dann zeigt uns der Wächter einen anderen Weg.
-   Wir nennen es den **Entscheidungszauber NEIN**.
+
+
+Mit dem Entscheidungszauber können wir entscheiden, was passieren soll, je nachdem, ob was in der Kiste ist oder nicht.
 
 ---
 
@@ -71,7 +73,7 @@ Die kleine Maus möchte wissen, ob Käse im Haus ist.
 ---
 
 > [!TIP]
-> **Für Eltern:** Ein **Sentiator** (`¶` oder `¶¶`) ist in Pylovara eine **bedingte Anweisung** (Logik-Gatter / If-Else). 
+> **Für Eltern:** Ein **Sentiator** (Entscheidungszauber) (`¶` Ja oder `¶¶` Nein) ist in Pylovara eine **bedingte Anweisung** (Logik-Gatter / If-Else). 
 > - `¶` (SENTAN-WENN-KANN) prüft, ob die Bedingung (der Wahrheitswert oder der physikalische Status) erfüllt ist. 
 > - `¶¶` (SENTAN-WENN-NICHT) reagiert auf den negativen Zustand oder einen Fehler.
 > - Helfen Sie dem Kind zu verstehen, dass das System hier "denkt" und eine Entscheidung trifft, basierend auf dem, was in der Kiste gefunden wird.

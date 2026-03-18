@@ -49,6 +49,10 @@ verarbeitet , könnte automatisch an der stelle mit dem Löwen hängen bleiben (
 Klar isst es Wurst - aber müssen wir dem Kind Albträume vom Fressenden Löwen mit geben - Wir sind Froh wenn er sein Salami Brötchen isst und nicht Magersüchtig wird , nicht wahr? Ich zu meinem Teil möchte dies nur 
 Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun im Lernprozess!
 
+Ich halte Indoktrination und Gendern aus dem Lernmaterial
+heraus , weil es hier um Wissen geht und keine Politik.
+
+
 Mit Freundlichen Grüßen
 Thomas Zimmermann (Pylovara-System-Entwickler)
 GoogleSearch: Pylovara System Thomas Zimmermann

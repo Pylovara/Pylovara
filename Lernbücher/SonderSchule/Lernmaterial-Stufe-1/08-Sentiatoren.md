@@ -4,23 +4,31 @@ Hallo kleiner Entdecker! 🌟🚪
 
 Du hast schon gelernt, wie man Dinge in Kisten packt und wie der Aktionsdraht sie wach macht. Aber was passiert, wenn wir mal nicht wissen, ob etwas in der Kiste ist? Oder wenn wir uns entscheiden müssen?
 
-Dafür gibt es den Magischen Wächter mit **Entscheidungszauber** (Sentiator), der Zwei Verschiedene Wege Zaubern kann.
+Dafür gibt es den Magischen IgelWächter mit seinem 
+**Entscheidungszauber** (Sentiator), der Zwei Verschiedene 
+Wege Zaubern kann.
+
+(Bild: ![Hier kommt das Bild für den Entscheidungszauber hin](../../SonderSchule/Bildliches-Stufe-1/Sentiatoren.png))
 
 ---
 
 ## Die Symbole: ¶ und ¶¶
 
-Es gibt zwei Wege, die der Wächter uns zeigen kann:
+Es gibt zwei Wege, die der IgelWächter uns zeigen kann:
 
 1. **¶ (Der Ja-Weg):** 
    Dieses Zeichen bedeutet: "Ja, alles ist okay! Der Apfel ist da!" oder "Die Kiste ist bereit!" 
-   Wenn der Wächter dieses Zeichen zeigt, dürfen wir weitergehen.
-   Wir nennen es den **Entscheidungszauber JA**.
+   Wenn der IgelWächter dieses Zeichen zeigt, dürfen wir weitergehen.
+   (Bild: Hier kommt das Bild für den Entscheidungszauber JA hin)
+
+
 
 2. **¶¶ (Der Nein-Weg):** 
    Dieses Zeichen bedeutet: "Stopp! Da fehlt etwas!" oder "Der Apfel ist weg!"
-   Dann zeigt uns der Wächter einen anderen Weg.
-   Wir nennen es den **Entscheidungszauber NEIN**.
+   Dann zeigt uns der IgelWächter einen anderen Weg.
+   (Bild: Hier kommt das Bild für den Entscheidungszauber NEIN hin)
+
+Mit dem **Entscheidungszauber** können wir entscheiden, was passieren soll, je nachdem, ob was in der Kiste ist oder nicht.
 
 ---
 
@@ -59,6 +67,29 @@ Die kleine Maus möchte wissen, ob Käse im Haus ist.
 
 ---
 
+## Das Eichelhörnchen und seine Nuss️ 🌰 🐿️
+
+¢!
+
+["Nuss"]
+
+¶ ¬· »["Nuss knacken"]«
+      ¬· »["Nuss essen"]«
+
+¶¶ ¬· »["Traurig piepsen"]«
+       ¬· »["Suchen gehen"]«
+           ¬· »["Bäumen klettern"]«
+           ¬· »["Boden absuchen"]«
+           ¬· »["Andere Tiere fragen"]«
+               ¶ ¬· »["Nuss gefunden"]«
+                     ¬· »["Nuss knacken"]«
+               
+               ¶¶ ¬· »["Traurig piepsen"]«
+                      ¬· »["Geht nach Hause"]«
+                          ¬· ["Schläft ein"]
+!¢
+
+---
 ### Deine Aufgaben:
 
 1. **Wächter-Check:** Welches Zeichen benutzt der Wächter, wenn alles super ist und wir weitermachen dürfen? Einmal `¶` oder zweimal `¶¶`?
@@ -71,7 +102,7 @@ Die kleine Maus möchte wissen, ob Käse im Haus ist.
 ---
 
 > [!TIP]
-> **Für Eltern:** Ein **Sentiator** (`¶` oder `¶¶`) ist in Pylovara eine **bedingte Anweisung** (Logik-Gatter / If-Else). 
+> **Für Eltern:** Ein **Sentiator** (Entscheidungszauber) (`¶` Ja oder `¶¶` Nein) ist in Pylovara eine **bedingte Anweisung** (Logik-Gatter / If-Else). 
 > - `¶` (SENTAN-WENN-KANN) prüft, ob die Bedingung (der Wahrheitswert oder der physikalische Status) erfüllt ist. 
 > - `¶¶` (SENTAN-WENN-NICHT) reagiert auf den negativen Zustand oder einen Fehler.
 > - Helfen Sie dem Kind zu verstehen, dass das System hier "denkt" und eine Entscheidung trifft, basierend auf dem, was in der Kiste gefunden wird.

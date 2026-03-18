@@ -81,6 +81,12 @@ Die kleine Maus möchte wissen, ob Käse im Haus ist.
            ¬· »["Bäumen klettern"]«
            ¬· »["Boden absuchen"]«
            ¬· »["Andere Tiere fragen"]«
+               ¶ ¬· »["Nuss gefunden"]«
+                     ¬· »["Nuss knacken"]«
+               
+               ¶¶ ¬· »["Traurig piepsen"]«
+                      ¬· »["Geht nach Hause"]«
+                          ¬· ["Schläft ein"]
 !¢
 
 ---

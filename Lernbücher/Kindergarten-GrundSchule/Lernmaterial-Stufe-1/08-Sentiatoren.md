@@ -74,8 +74,13 @@ Die kleine Maus möchte wissen, ob Käse im Haus ist.
 ["Nuss"]
 
 ¶ ¬· »["Nuss knacken"]«
-¶¶ ¬· »["Traurig piepsen"]«
+      ¬· »["Nuss essen"]«
 
+¶¶ ¬· »["Traurig piepsen"]«
+       ¬· »["Suchen gehen"]«
+           ¬· »["Bäumen klettern"]«
+           ¬· »["Boden absuchen"]«
+           ¬· »["Andere Tiere fragen"]«
 !¢
 
 ---

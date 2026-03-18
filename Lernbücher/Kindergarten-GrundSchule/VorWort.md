@@ -52,6 +52,8 @@ Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun i
 Ich halte Indoktrination und Gendern aus dem Lernmaterial
 heraus , weil es hier um Wissen geht und keine Politik.
 
+Was das Kind später ISST oder SEXUELL Empfindet , ist weder
+teil des systems , noch relevant für den Lernfaktor.
 
 Mit Freundlichen Grüßen
 Thomas Zimmermann (Pylovara-System-Entwickler)

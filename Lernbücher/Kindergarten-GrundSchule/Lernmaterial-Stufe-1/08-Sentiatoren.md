@@ -6,6 +6,8 @@ Du hast schon gelernt, wie man Dinge in Kisten packt und wie der Aktionsdraht si
 
 Dafür gibt es den Magischen Wächter mit **Entscheidungszauber** (Sentiator), der Zwei Verschiedene Wege Zaubern kann.
 
+(Bild: Hier kommt das Bild für den Entscheidungszauber hin)
+
 ---
 
 ## Die Symbole: ¶ und ¶¶
@@ -15,12 +17,14 @@ Es gibt zwei Wege, die der Wächter uns zeigen kann:
 1. **¶ (Der Ja-Weg):** 
    Dieses Zeichen bedeutet: "Ja, alles ist okay! Der Apfel ist da!" oder "Die Kiste ist bereit!" 
    Wenn der Wächter dieses Zeichen zeigt, dürfen wir weitergehen.
- 
+   (Bild: Hier kommt das Bild für den Entscheidungszauber JA hin)
+
+
 
 2. **¶¶ (Der Nein-Weg):** 
    Dieses Zeichen bedeutet: "Stopp! Da fehlt etwas!" oder "Der Apfel ist weg!"
    Dann zeigt uns der Wächter einen anderen Weg.
-
+   (Bild: Hier kommt das Bild für den Entscheidungszauber NEIN hin)
 
 Mit dem Entscheidungszauber können wir entscheiden, was passieren soll, je nachdem, ob was in der Kiste ist oder nicht.
 

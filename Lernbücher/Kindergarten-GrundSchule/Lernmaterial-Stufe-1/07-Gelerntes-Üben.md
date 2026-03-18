@@ -9,7 +9,8 @@
 Das sind alles mächtige Zaubergegenstände, die du gelernt hast, um:
 
 ## 1. Der Zauberrand (Transaktionsrahmen) `¢! ... !¢`
-Wir haben gelernt, dass man mit dem Zauberrand einen Zauber sprechen kann. Wie das Licht von dem Overheadprojektor.
+Wir haben gelernt, dass man mit dem Zauberrand einen Zauber sprechen kann.
+Wie das Licht von dem Overheadprojektor.
 
 ![Schattenspiele_OverheadProjektor.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/schattenspiele_OverheadProjektor.png)
 
@@ -34,14 +35,17 @@ Wie Rex, der Zaubermeister, Tische aufstellen kann.
 
 ## 5. Der Aktionszauber (Execution Thread / Aktionsdraht) `» ... «`
 
-Und wir haben gelernt, dass wir schlafende Kisten und wache Kisten mit dem Aktionszauber belegen können, wenn etwas passieren soll.
+Und wir haben gelernt, dass wir schlafende Kisten und wache Kisten mit 
+dem Aktionszauber belegen können, wenn etwas passieren soll.
 
 ![Schlafende-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png)
 
 ![Wache-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Ausführbares-Protein.png)
 
 
-Jetzt können wir tolle Dinge zaubern, z.B. einen Zauberrand `¢! ... !¢` mit Aktionszauber `» ... «` und Zauberkisten `[]` mit Meister REX `¬·` und Trennzauber `|`, erstellen .
+Jetzt können wir tolle Dinge zaubern, z.B. einen Zauberrand `¢! ... !¢` 
+mit Aktionszauber `» ... «` und Zauberkisten `[]` mit Meister REX `¬·` 
+und Trennzauber `|`, erstellen .
 Wir können diese Kisten sogar schlafen lassen und wach machen!
 
 ## 6. Übung: Kleine ZauberStröme erstellen 
@@ -71,3 +75,16 @@ Wir können diese Kisten sogar schlafen lassen und wach machen!
             ¬· ["Schlafenszeit"]
                ¬· »["Aufwachen"]«
 !¢
+
+
+---
+
+> [!TIP]
+> **Für Eltern:** Ermutigen Sie Ihr Kind, die Symbole 
+> selbst zu malen und die Struktur zu verstehen. Es geht 
+> nicht um Perfektion, sondern um das Verständnis der 
+> Logik. Das Kind lernt, dass jede Aktion eine 
+> Konsequenz 
+> hat und dass Ordnung (durch Trennwände und REX) 
+> wichtig 
+> ist, um Chaos zu vermeiden.

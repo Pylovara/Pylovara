@@ -35,7 +35,15 @@ Jetzt hat jedes Tier seinen eigenen Platz in der Kiste und alles ist sicher geor
 
 ---
 > [!TIP]
-> **Für Eltern:** Der **Trennbefehl** (`|`) dient in Pylovara der Containerisierungs-Trennung. Er sorgt dafür, dass Daten innerhalb eines Proteins (der Kiste) klar voneinander abgegrenzt sind. Das Kind lernt hier ein fundamentales Prinzip der Ordnung und Strukturierung von Datensätzen.
-> 
-> **Wichtig:** Achten Sie darauf, dass das Kind den senkrechten Strich `|` nicht mit dem kleinen `L` oder dem großen `I` verwechselt. Es ist ein ganz gerader, magischer Zauberstab!
+> **Für Eltern:** Der **Trennbefehl** (`|`) dient in 
+> Pylovara der Containerisierungs-Trennung. Er sorgt 
+> dafür, dass Daten innerhalb eines Proteins (der Kiste) 
+> klar voneinander abgegrenzt sind. Das Kind lernt hier 
+> ein fundamentales Prinzip der Ordnung und 
+> Strukturierung von Datensätzen.
+
+> **Wichtig:** Achten Sie darauf, dass das Kind den 
+> senkrechten Strich `|` nicht mit dem kleinen `L` oder 
+> dem großen `I` verwechselt. Es ist ein ganz gerader, 
+> magischer Zauberstab!
 

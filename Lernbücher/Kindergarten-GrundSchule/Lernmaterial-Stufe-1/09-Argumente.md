@@ -79,7 +79,13 @@ und zeichne ein zauberkarussel am schluss von deinem aktionszauber `»["Wiederho
 ---
 
 > [!TIP]
-> **Für Eltern:** Eine **Wiederholung** (Loop/Iteration) (`««Ω`) ist ein fundamentales Konzept. 
-> In Pylovara nutzen argumente als taktgeber für die wiederholungen unter anderem.
-> - Das Kind lernt hier, dass Prozesse nicht immer linear enden, sondern zyklisch sein können.
-> - Helfen Sie dem Kind zu verstehen, dass es eine **Abbruchbedingung** braucht (wie beim Bären, der müde wird), damit das Karussell nicht ewig weiterdreht (Endlosschleife).
+> **Für Eltern:** Eine **Wiederholung** (Loop/Iteration) 
+> (`««Ω`) ist ein fundamentales Konzept. 
+> In Pylovara nutzen argumente als taktgeber für die 
+> wiederholungen unter anderem.
+> - Das Kind lernt hier, dass Prozesse nicht immer linear 
+> enden, sondern zyklisch sein können.
+> - Helfen Sie dem Kind zu verstehen, dass es eine 
+> **Abbruchbedingung** braucht (wie beim Bären, der müde 
+> wird), damit das Karussell nicht ewig weiterdreht 
+> (Endlosschleife).

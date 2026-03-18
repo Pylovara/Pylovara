@@ -49,5 +49,10 @@ Sieht das nicht toll aus? Das ist schon ein richtiger kleiner Baustein (BSK), de
 
 ---
 > [!TIP]
-> **Für Eltern:** Diese Übung festigt die Kombination der Symbole. Das Kind lernt jetzt nicht mehr nur einzelne Zeichen, sondern beginnt, **Strukturen** zu erkennen. 
-> - Das Kind lernt: Erst kommt der Rahmen (Sicherheit), dann der Container (Inhalt), dann die Trennung (Ordnung). 
+> **Für Eltern:** Diese Übung festigt die Kombination 
+> der Symbole. Das Kind lernt jetzt nicht mehr nur 
+> einzelne Zeichen, sondern beginnt, **Strukturen** zu 
+> erkennen. 
+> - Das Kind lernt: Erst kommt der Rahmen (Sicherheit), 
+> dann der Container (Inhalt), dann die Trennung 
+> (Ordnung). 

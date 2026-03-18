@@ -3,6 +3,15 @@
 ### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
  #    PROGRAMM|KLASSEKÜRZEL-ELEMENT = **-<ELEMENT> *-*-<ELEMENT>    #
  #    BSK UNTERBAU META-EBENE  | MASCHINENCODE ZU BSK               #
+ #      Die Morphic Stage ist dein eigentlicher Compiler.           #
+ # Beispiel :                                                       #
+ # AKTU-START  → Morphic 0→1 → AKTS                                 #
+ # Das ist:                                                         #
+ # LANGNAME → SYMBOLTOKEN → MASCHINENNAH                            #
+ # Also:                                                            #
+ # Semantik → Tokenisierung → Encoding                              #
+ # Nur eben nicht wie bei C/LLVM, sondern:                          #
+ # semantisch + systematisch + deterministisch verkürzt             #
 ### ==== #####  STARTPUNKT BAUSTEINSCHALTUNGSKREISLAUF   ##### === ###
 
 NAME Ð BAUSTEINSCHALTUNGSKREISLAUF 

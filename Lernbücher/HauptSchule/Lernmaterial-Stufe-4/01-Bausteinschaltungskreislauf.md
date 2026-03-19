@@ -1,15 +1,34 @@
 ## Kapitel 1 Zusammenspiel des Systems
 
-(hier noch die erklärung nach dem ich die system 800 seite nachgebessert habe , nicht davor)
+ DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK - ERKLÄRUNG = 
 
+  DER BSK BAUT AUF MORPHISCHES DENKEN AUF UND IST IM KERN
+  EIN VERSCHMELZUNGSZUSTAND VON ZWEI DINGEN/DREI DINGEN.
 
+  MORPHISCHES DENKEN BESCHREIBT DIE FÄHIGKEIT,
+  FORMEN UND STRUKTUREN ZU ERKENNEN UND ZU ÜBERTRAGEN,
 
+  UNABHÄNGIG VOM KONKRETEN MATERIAL ODER MEDIUM,
+  ES GEHT UM STRUKTURELLE ÄHNLICHKEITEN..
+ 
+  DA DER BSK 3 DINGE TUT UM JEDE FUNKTION ZIELGESICHERT
+  ZU BENENNEN, WIRD HAUPTNAME + KLASSE + TAG VERWENDET IN 
+  DER STANDART STUFE 0.
+
+Wir Arbeiten bewusst mit Stufe 0 um euch die Abstraktion
+oder auch die Abstraktionsverfahrenslogik zu vermitteln.
+Im Späteren verlauf werden wir die Morph logik für den
+weiteren verschmelzungsprozess, zur Sprache bringen.
 
 ## 1. Maschinen Code Speech
 
 MCS : Maschinen Code Speech | Maschinen Code Sprache =
 
 ¢! Ŧ³ »["Affe"|{"Bananen"}]« !¢
+
+Hier bei handelt es sich Um das was ihr gelernt habt.
+Der Affe wird mit seinen Bananen versorgt und da der
+Affe Wach ist wird er mit dem Aktionsdraht verbunden.
 
 ## 2. Bausteinschaltungskreislauf
 
@@ -30,7 +49,7 @@ TRENO-SPALT: Der Trennbefehl | wird zu einer harten Trennung der Datenströme.(T
 POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox/Hardware-Versorgung) wird als State-Vector oder Parameter-Set eingebettet.(Proton|Lunchbox|Kleinekiste)
 
 
-MORPHIC-1: Morphic-Stufen =
-MORPHIC-2: Morphic-Stufen =
-MORPHIC-3: Morphic-Stufen =
+
+
+
 

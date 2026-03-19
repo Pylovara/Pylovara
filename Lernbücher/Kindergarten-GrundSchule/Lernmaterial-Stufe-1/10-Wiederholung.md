@@ -174,4 +174,8 @@ Wir Üben jetzt zur Wiederholung:
 > … dann ist die Antwort:
 > „Das lernst du in der Hauptschule — da bekommst du noch mehr Zauber wie PROTON(Kleine Kiste)
 > und den ¤:-Spiegel(Kordinator Meister REX mit Kordizauber plus Auswertungzauber)!“
-
+> Dies ist damit die Letzte Lektion für ein Grundschulkind in diesem Buch.
+> Es Spielt auch keine Rolle ob alles perfekt ist oder nicht, es geht um das Verständnis der 
+> Zauber und Symbole.
+> Später Lernt das Kind alles Mit mit Echten Begriffen und die Bausteinschaltungskreis BSK Logik
+> wie die Morphic Stufen.

@@ -5,13 +5,13 @@
 Wir haben jetzt die Grundlagen der Pylovarischen Sprache gelernt und Verinnerlicht.
 Damit wir Alle Wissen was wir für einen Zauber brauchen, Listen wir sie nochmal auf.
 
-- Der Zauberrand              ¢! … !¢
-- Die Zauberkiste             []       
-- Die Zaubertrennwand         |        
-- Meister REX                 ¬·       
-- Der Aktionszauber           » … «    
-- Der Igel-Wächter            ¶ / ¶¶   
-- Das Zauber-Karussell        ««Ω      
+- Der Zauberrand            ¢! … !¢    Sichererer Raum
+- Die Zauberkiste           []         Träger der Bedeutung
+- Die Zaubertrennwand       |          Ordnung ohne Chaos
+- Meister REX               ¬·         Meister REX, der die Arbeitstische aufstellt
+- Der Aktionszauber         » … «      Erlaubnis zur Tat
+- Der Igel-Wächter          ¶ / ¶¶     Wächter der Wahrheit
+- Das Zauber-Karussell      ««Ω        Um Argumente zu setzen das Zauberkarussell „Wiederholungen“
 
 Jedes Symbol ist eine Garantierter Zauber, und jeder Zauber hat eine Konsequenz.
 Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
@@ -23,4 +23,3 @@ Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
 - Einen Spickzettel für alle Zauber ;-)
 
 ## 2. Eine Vorgehensgeschichte ( Erzählt vom MCS Meister )
-

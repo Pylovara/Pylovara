@@ -3,7 +3,7 @@
  Hallo kleiner Meister-Entwickler! 🌟🎠
 
 Wir haben jetzt die Grundlagen der Pylovarischen Sprache gelernt und Verinnerlicht.
-Damit wir Alle Wissen was wir für einen Zauber brauchen, Listen wir sie nochmal auf.
+Damit wir alles haben was wir für einen Zauber brauchen, Listen wir sie nochmal auf.
 
 - Der Zauberrand            ¢! … !¢    Sichererer Raum
 - Die Zauberkiste           []         Träger der Bedeutung
@@ -19,7 +19,7 @@ Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
 ## 1. Was wir brauchen:
 
 - Ein Tier für Die Zauberkiste (Gern dein Haustier)
-- Eine Liste Was Dein Tier tuen möchte am Tag 
+- Eine Liste Was Dein Tier tuen möchte am Tag für Meister Rex
 - Einen Spickzettel für alle Zauber ;-)
 
 ## 2. Eine Vorgehensgeschichte ( Erzählt vom MCS Meister )
@@ -30,9 +30,9 @@ Der wahre Zauberer bist du kleiner Lehrling.
 Damit Du soooo guut wirst wie ein Zaubermeister, müssen wir
 jetzt Alles gelernte wiederholen, damit du Große oder Kleine
 Zauber Schreiben kannst - und deswegen fragen wir dein
-Wissen ab.
+Wissen ab weil jeder GroßerZauberer das wissen muss.
 
-Wenn du deinen Hasen füttern willst, dann schreib:
+Wenn du deinen Hasen füttern willst, dann Zauberst du :
 
 ¢! 
 »["Hase"]« 
@@ -57,7 +57,7 @@ Und wenn etwas fehlt? Dann frag den Igel-Wächter:
                      ¬· »["Hase frisst die Möhre"]«
 !¢
 
-Wenn dein Hund spielen will, dann sag:
+Wenn dein Hund spielen will, dann Zauberst du:
 
 ¢! 
 ["Hund"]
@@ -66,11 +66,11 @@ Wenn dein Hund spielen will, dann sag:
     ¶¶ ¬· »["Ball selber holen weil der Hund müde ist"]«
 !¢
 
-Du brauchst keine Angst kleiner Meister, jeder Zauber fängt klein an
+und du brauchst keine Angst haben kleiner Meister, jeder Zauber fängt klein an
 und wird größer je mehr du übst.
 
 Bei Meister Rex landen wir immer wenn wir eine Entscheidung treffen müssen
-und ob der IgelWächter beide möglichkeiten zaubert, ob der Ball da ist oder nicht:
+und der IgelWächter gibt uns die möglichkeit für beide Entscheidungen:
 
 ¢!
 ["Ball"]
@@ -237,9 +237,6 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 „Robbi arbeitet, solange seine Batterie grün leuchtet. Wenn rot – muss er laden!“
 
 ##########################################################################
-
-
-
 
 ---
 

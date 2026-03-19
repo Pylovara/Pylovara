@@ -10,7 +10,7 @@ Damit wir Alle Wissen was wir für einen Zauber brauchen, Listen wir sie nochmal
 - Die Zaubertrennwand       |          Ordnung ohne Chaos
 - Meister REX               ¬·         Meister REX, der die Arbeitstische aufstellt
 - Der Aktionszauber         » … «      Erlaubnis zur Tat
-- Der Igel-Wächter          ¶ / ¶¶     Wächter der Wahrheit
+- Der Igel-Wächter          ¶ / ¶¶     Wächter der Entscheidungen
 - Das Zauber-Karussell      ««Ω        Um Argumente zu setzen das Zauberkarussell „Wiederholungen“
 
 Jedes Symbol ist eine Garantierter Zauber, und jeder Zauber hat eine Konsequenz.
@@ -26,25 +26,35 @@ Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
 
 „Ich bin der MCS Meister — aber ich bin nicht der Zauberer.
 Ich zeige dir nur, wie die Symbole atmen.
-Der wahre Zauberer bist du.
+Der wahre Zauberer bist du kleiner Lehrling.
+Damit Du soooo guut wirst wie ein Zaubermeister, müssen wir
+Wir jetzt Alles gelernte wiederholen, damit du Große oder Kleine
+Zauber Schreiben kannst - und deswegen fragen wir dein
+Wissen ab.
+
 Wenn du deinen Hasen füttern willst, dann schreib:
 
 ¢! 
 »["Hase"]« 
  ¬· »["Möhre geben"]« 
+     ¬· »["Hase frisst die Möhre"]«
+         ¬· ["Hase ist satt"]
 !¢
 
 
-Und wenn etwas fehlt? Dann frag der Igel-Wächter:
+Und wenn etwas fehlt? Dann frag den Igel-Wächter:
 
 ¢! 
 »["Hase"]« 
  ¬·  ["Hunger"]
      ¶ ¬· ["Möhre liegt da!"]
           ¬· »["Möhre geben"]«
+              ¬· »["Hase frisst die Möhre"]«
+                  ¬· ["Hase ist satt"]
      ¶¶ ¬· »["Möhre suchen gehen!"]«
             ¶ ¬· ["Möhre gefunden!"]
                  ¬· »["Möhre geben"]«
+                     ¬· »["Hase frisst die Möhre"]«
 !¢
 
 Wenn dein Hund spielen will, dann sag:

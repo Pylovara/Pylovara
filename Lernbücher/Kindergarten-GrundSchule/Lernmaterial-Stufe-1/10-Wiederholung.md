@@ -85,14 +85,11 @@ Sind Schwere Zauber die du nicht sofort beherschen musst
 aber es ist gut zu wissen was alles gezaubert werden kann.
 
 
-## 3. Wir Frischen dein zauber wissen auf 
+## 3. Wir Frischen dein Zauberwissen auf!
 
 Wir Üben jetzt zur Wiederholung:
 
- Zauberkisten :
-
- Wieviele zauberkisten haben wir den ?
- (Kleiner tipp sch ... wa ...)
+ - Zauberkisten :
 
  Zähle auf wieviele Zauberkisten wir haben ohne extra Zauber 
 
@@ -103,6 +100,7 @@ Wir Üben jetzt zur Wiederholung:
   (Schreibe Summe/Zahl hier hin) =
 
  Und wie Heißen die Zauberkisten ?
+   (Kleiner tipp sch ... wa ...)
 
               Zauberkiste
               Zauberkiste

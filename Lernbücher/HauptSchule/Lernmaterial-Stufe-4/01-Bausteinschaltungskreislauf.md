@@ -3,7 +3,7 @@
  DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK - ERKLÄRUNG = 
 
   DER BSK BAUT AUF MORPHISCHES DENKEN AUF UND IST IM KERN
-  EIN VERSCHMELZUNGSZUSTAND VON ZWEI DINGEN/DREI DINGEN.
+  EIN VERSCHMELZUNGSZUSTAND VON ZWEI/DREI DINGEN.
 
   MORPHISCHES DENKEN BESCHREIBT DIE FÄHIGKEIT,
   FORMEN UND STRUKTUREN ZU ERKENNEN UND ZU ÜBERTRAGEN,
@@ -19,6 +19,52 @@ Wir Arbeiten bewusst mit Stufe 0 um euch die Abstraktion
 oder auch die Abstraktionsverfahrenslogik zu vermitteln.
 Im Späteren verlauf werden wir die Morph logik für den
 weiteren verschmelzungsprozess, zur Sprache bringen.
+
+Ihr könnt das System mit Reimstrukturen vergleichen
+wie Assonanzbasierte halbreime 
+
+Luftschutzbunker => Luxusplunder
+
+hier bei haben wir einen Klassischen 3 Silber
+der auf die Umlaute U U U E Aufbaut.
+
+L(u)ftsch(u)tzb(u)nk(e)r => L(u)x(u)spl(u)nd(e)r
+
+Das Prinzip ist das gleiche wie bei den Reimstrukturen
+nur das wir statts Reimstrukturen auf Eindeutigkeit achten.
+
+Wir verbindet das mit Logischen Stufen Regeln,
+ähnlich einem RapSong der auf Announcen achtet.
+
+Wir haben hierbei Verkürzungsgesetze die fest
+Vorgeschrieben werden, da wir ansonnsten nichts
+damit anfangen können!
+
+Aus einem 
+
+AKTIONSDRAHT UNTERKLASSE START
+
+Wird ein Morphischer Baustein der Aktionsdraht als Akt 
+bezeichnet und die klasse als kern buchstabe hinten ansetzt,
+inklusive die funktion des Aktionsdrahtes als Tag.
+
+Kurz Um : AKT U START
+
+Da wir im System keine Leerräume haben wollen, um einige
+der bekannten System Probleme zu beheben, setzen wir
+immer einen KNOTENPUNKT.
+
+Der wie Folgt aussieht -
+
+Kurz Um : AKTU-START / AKTAN-ENDE : » … «
+
+Durch diese Logik , die Systematisch verankert ist,
+schaffen wir ein vorgeschriebenes verkürzungsgesetzes.
+
+Mit diesem verkürzungsgesetz können wir nun die
+MORPHIC Stufe bestimmen und anwenden - und zwar aufwärts
+und abwärts kompaktibel.
+
 
 ## 1. Maschinen Code Speech
 

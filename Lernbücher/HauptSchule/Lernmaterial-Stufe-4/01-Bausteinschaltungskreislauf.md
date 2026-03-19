@@ -65,6 +65,24 @@ Mit diesem verkürzungsgesetz können wir nun die
 MORPHIC Stufe bestimmen und anwenden - und zwar aufwärts
 und abwärts kompaktibel.
 
+Da wir hier bei MORPHIC Stufe 0 Arbeiten,
+gilt also im Unterricht :
+
+MOPHIC-0
+
+ WIR VERBINDEN HAUPTNAMEN PLUS KLASSE - DAS VERKÜRZT 
+ ERGIBT DEN PRÄFIX FÜR DIE EINORDNUNG. NACH EINEM KNOTENPUNKT 
+ KÖNNEN DIE PUNKTE EINGEGEBEN WERDEN, DIE DIESE SPEZIELLE 
+ FUNKTION EINER KOMPONENTE PRÄGEN.
+
+ BEISPIEL = Aktionsdraht Unterklasse = * * = ** = AKTU
+ VON = BAUSTEINSCHALTUNGSKREISLAUF-MORPHISCHESDENKCLUSTER = BSK-MORPHIC
+
+ WEITERÜHREND ZU WERT ANKER NUMMER OPTIONS ODER WERKZEUGKLASSEN 
+ DIE GETAGGT WERDEN IN DER FUNKTIONSBENNENUNG.
+
+ BEISPIEL = Aktionsdraht Unterklasse Start ** - * = **-* = AKTU-START
+ 
 
 ## 1. Maschinen Code Speech
 

@@ -57,3 +57,17 @@ AKTU-START-POIU-START-{"Stärke": 10}-POIAN-ENDE-AKTAN-ENDE
 Kannst du sehen, wie das Proton { } mitten im Protein [ ] sitzt? 
 Es gibt dem Protein die Kraft (Stärke 10), damit 
 der Aktionsdraht (AKT) weiß, wie stark er leiten soll.
+
+
+
+####################################################################
+
+---
+[!TIP]
+> Für Lehrkräfte: In diesem Kapitel führen wir das Konzept 
+> der Parameterübergabe auf Hardware-Ebene ein. 
+> Das Proton {} repräsentiert Zustandsdaten (State-Vectors). 
+> Wir lehren den Schülern, dass Daten ([]) und deren 
+> Steuerungsparameter ({}) getrennte, aber verschmolzene 
+> Einheiten im BSK sind. Dies ist die Grundlage für 
+> das Verständnis von Low-Level-Optimierung.

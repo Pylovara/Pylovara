@@ -5,7 +5,8 @@ Das ist so, als ob oben über dem Kopf eine kleine Lampe angeht! **Pling!**
 
 (Bild: ![alt text](../Bildliches-Stufe-0/verstehen_tiefsee_lampe.png))
 
-In Pylovara nennen wir das: **Das Verstehen**.
+In Pylovara nennen wir das: 
+**Das Verstehen**.
 Wenn du die Puzzleteile richtig zusammensteckst, verstehst du das große Bild. Alles macht auf einmal Sinn.
 
 💡 💡 💡

@@ -36,9 +36,24 @@ In Pylovara ist das **Protein** das Material, aus dem wir unsere digitalen Welte
 
 ---
 > [!TIP]
-> **Für Eltern:** Das **Protein** entspricht in der Informatik einem Daten-Container oder einem Struktur-Baustein. Erklären Sie dem Kind, dass die Kiste `[]` ein Platzhalter ist. Man kann etwas hineintun, es wieder herausnehmen oder verändern. Es ist das "Was", mit dem wir arbeiten, während der Transaktionsrahmen das "Wo" bestimmt.
+> **Für Eltern:** Das **Protein** 
+> entspricht in der Informatik einem 
+> Daten-Container oder einem Struktur-Baustein. 
+> Erklären Sie dem Kind, dass die Kiste `[]` ein 
+> Platzhalter ist. Man kann etwas hineintun, es wieder 
+> herausnehmen oder verändern. Es ist das "Was", mit dem 
+> wir arbeiten, während der Transaktionsrahmen das "Wo" 
+> bestimmt.
 
 > [!NOTE]
->Das ist keine stumpfe Übung. Das ist Kreativität als Lernverstärker. Das Kind malt etwas, das es liebt – einen Hund, einen Drachen, eine Eisdiele – und setzt es in Beziehung zum Gelernten. Der Zauberrand wird positiv besetzt, weil er um etwas Schönes herum ist.
+> Das ist keine stumpfe Übung. Das ist Kreativität als 
+> Lernverstärker. Das Kind malt etwas, das es liebt – 
+> einen Hund, einen Drachen, eine Eisdiele – und setzt 
+> es in Beziehung zum Gelernten. Der Zauberrand wird 
+> positiv besetzt, weil er um etwas Schönes herum ist.
 
-Und die zweite Aufgabe (drei Kisten malen und mit Stern, Blume, Fisch füllen) macht dasselbe: Sie verbindet das Abstrakte ([]) mit dem Konkreten (Stern, Blume, Fisch). Das Kind lernt nicht "eine Klammer", es lernt "ein Behälter für etwas Schönes".
+> Und die zweite Aufgabe (drei Kisten malen und mit 
+> Stern, Blume, Fisch füllen) macht dasselbe: Sie 
+> verbindet das Abstrakte ([]) mit dem Konkreten (Stern, 
+> Blume, Fisch). Das Kind lernt nicht "eine Klammer", 
+> es lernt "ein Behälter für etwas Schönes".

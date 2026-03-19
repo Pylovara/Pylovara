@@ -43,8 +43,16 @@ Das bedeutet: Meister REX startet den Auftrag und stellt sofort den ersten Arbei
 
 ---
 > [!TIP]
-> **Für Eltern:** **REX** ist in der Pylovara-Architektur für die Prozesssteuerung und das Workspace-Management zuständig. 
-> - Das Symbol `¬·` (Arbeitsfläche) aktiviert einen Workspace, auf dem Operationen ausgeführt werden.
-> Helfen Sie dem Kind zu verstehen, dass REX der "Chef" ist, der bestimmt, wo und wann gearbeitet wird.(sie können gerne das Kaffemaschinen beispiel nehmen und es mit etwas anderem füttern)
+> **Für Eltern:** **REX** ist in der 
+> Pylovara-Architektur für die Prozesssteuerung und das 
+> Workspace-Management zuständig. 
+> - Das Symbol `¬·` (Arbeitsfläche) aktiviert einen 
+> Workspace, auf dem Operationen ausgeführt werden.
+> Helfen Sie dem Kind zu verstehen, dass REX der "Chef" 
+> ist, der bestimmt, wo und wann gearbeitet wird.(sie 
+> können gerne das Kaffemaschinen beispiel nehmen und es 
+> mit etwas anderem füttern)
 
-Das konkrete Beispiel zeigt die Anwendung. Das Kind versteht: "Ach so, wenn mein Hase etwas braucht, dann stellt REX einen Tisch auf, wo die Möhre hingehört."
+> Das konkrete Beispiel zeigt die Anwendung. Das Kind 
+> versteht: "Ach so, wenn mein Hase etwas braucht, dann 
+> stellt REX einen Tisch auf, wo die Möhre hingehört."

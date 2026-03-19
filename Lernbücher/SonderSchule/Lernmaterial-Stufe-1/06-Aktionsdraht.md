@@ -81,26 +81,41 @@ Hier hilft REX dabei, dass der Aktionszauber genau auf seinem Tisch stattfindet.
 > - Helfen Sie dem Kind, den Unterschied zwischen "etwas besitzen" (Protein) und "etwas tun" (Aktion) zu verstehen.
 
 > [!TIP]
-> **Für Eltern:** Das Beispiel mit dem Hasen illustriert die **sequenzielle Ausführung** von Aktionen. 
-> Das heißt, dass Sie wie bei einer Tagesliste etwas aufschreiben, 
-> was dann Punkt für Punkt eingestellt, bearbeitet oder ausgeführt 
-> wird, bis das Ergebnis da ist. In der normalen Informatik spricht 
+> **Für Eltern:** Das Beispiel mit dem Hasen illustriert 
+> die **sequenzielle Ausführung** von Aktionen. 
+> Das heißt, dass Sie wie bei einer Tagesliste etwas 
+> aufschreiben, 
+> was dann Punkt für Punkt eingestellt, bearbeitet oder 
+> ausgeführt 
+> wird, bis das Ergebnis da ist. In der normalen 
+> Informatik spricht 
 > man es etwas anders aus: Man nennt es EVA – Eingabe, 
-> Verarbeitung, Ausgabe. Das ist aber das gleiche Prinzip. 
+> Verarbeitung, Ausgabe. Das ist aber das gleiche 
+> Prinzip. 
 
-> Wir listen quasi die Anweisungen für die Kaffeemaschine auf und 
-> führen sie dann aus. Jede Ausführung kann logisch geschaltet 
-> werden, sodass wir zum Beispiel sagen können: "Wenn der Kaffee 
+> Wir listen quasi die Anweisungen für die 
+> Kaffeemaschine auf und 
+> führen sie dann aus. Jede Ausführung kann logisch 
+> geschaltet 
+> werden, sodass wir zum Beispiel sagen können: "Wenn 
+> der Kaffee 
 > fertig ist, dann soll die Maschine ausgehen." 
 
-> Das ist das, was Ihr Kind mit dieser Methode lernen wird. 
-> Dadurch entstehen neue Denkprozesse bei allem, was Ihr Kind tut. 
-> Es entwickelt ein besseres Verständnis für logische Abläufe und 
+> Das ist das, was Ihr Kind mit dieser Methode lernen 
+> wird. 
+> Dadurch entstehen neue Denkprozesse bei allem, was Ihr 
+> Kind tut. 
+> Es entwickelt ein besseres Verständnis für logische 
+> Abläufe und 
 > kann dadurch selbstständiger werden und sich besser 
 > organisieren. 
 > Alles hat eine Auswirkung auf das, was danach kommt.
+
 > [!TIPZUSATZ]
-> **Für Eltern:** Drucken sie das Bild Aus und lassen ihr Kind den 
-> Aktionsdraht mit dem Finger nachfahren oder nach zeichnen ... 
-> oder mit einem Stift nachmalen. Das fördert die Motorik und das 
+> **Für Eltern:** Drucken sie das Bild Aus und lassen 
+> ihr Kind den 
+> Aktionsdraht mit dem Finger nachfahren oder nach 
+> zeichnen ... 
+> oder mit einem Stift nachmalen. Das fördert die 
+> Motorik und das 
 > Verständnis für die Symbole.

@@ -71,11 +71,26 @@ und ob der IgelWächter beide möglichkeiten zaubert, ob der Ball da ist oder ni
       ¬· »["Ball suchen"]«
 !¢   
 
-Sind Schwere Zauber die du nicht sofort beherschen musst.
+Sind Schwere Zauber die du nicht sofort beherschen musst
+aber es ist gut zu wissen was alles gezaubert werden kann.
 
 
+## 3. Wir Frischen dein zauber wissen auf 
 
+Wir Üben jetzt zur Wiederholung:
 
+ Zauberkisten :
 
+ Wieviele zauberkisten haben wir den ?
+ (Kleiner tipp sch ... wa ...)
+
+ Zähle auf wieviele Zauberkisten wir haben zum zaubern
+
+  Schreibe die Zahl hierhin =
+
+ Und wie Heißen die Zauberkisten ?
+
+              Zauberkiste
+              Zauberkiste
 
 

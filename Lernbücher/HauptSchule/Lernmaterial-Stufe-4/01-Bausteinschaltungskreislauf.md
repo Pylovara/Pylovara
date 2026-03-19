@@ -83,6 +83,30 @@ MOPHIC-0
 
  BEISPIEL = Aktionsdraht Unterklasse Start ** - * = **-* = AKTU-START
  
+Wenn wir das in Morph 1 oder zwei sehen, dann können
+wir alleine durch die Regelung, jeder Morphic Stufe
+die herkunft des Bausteins erkennenund bekommen durch
+den nächsten Morph stufen schritt abwärts heraus :
+
+- was es ist 
+- welche klasse sie trägt
+- welche funktion sie hat
+
+Beispiel von Morphic-1 = AKTS 
+zu Morphic-0 = AKTU-START
+zu Nativen ausgeschrieben System Sektionen =
+AKTIONSDRAHT-IMPULS-UNTERKLASSE § AKTU-START
+
+Im System werden lange begriffe anders gehandhabt,
+da sie inneinandergeschalten von kernklasse über
+hauptklasse zu unterklasse etc führen.
+
+Das heißt : Native Wörter sind Unlogisch
+angebracht für den Morph aber direkt findbar
+fürs Triviale Debugging eurer Programme.
+
+in diesem Lernmaterial dürft ihr gerne auch so denken
+wie es verkürzt dann gedanklich stehen müsste.
 
 ## 1. Maschinen Code Speech
 

@@ -1,10 +1,23 @@
+## Kapitel 1 Zusammenspiel des Systems
+
+(hier noch die erklärung nach dem ich die system 800 seite nachgebessert habe , nicht davor)
 
 
 
+
+## 1. Maschinen Code Speech
 
 MCS : Maschinen Code Speech | Maschinen Code Sprache =
 
 ¢! Ŧ³ »["Affe"|{"Bananen"}]« !¢
+
+
+
+
+
+
+
+## 2. Bausteinschaltungskreislauf
 
 BSK : Bausteinschaltungskreislauf | Baustein Schaltungskreislauf
 

@@ -28,7 +28,7 @@ Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
 Ich zeige dir nur, wie die Symbole atmen.
 Der wahre Zauberer bist du kleiner Lehrling.
 Damit Du soooo guut wirst wie ein Zaubermeister, müssen wir
-Wir jetzt Alles gelernte wiederholen, damit du Große oder Kleine
+jetzt Alles gelernte wiederholen, damit du Große oder Kleine
 Zauber Schreiben kannst - und deswegen fragen wir dein
 Wissen ab.
 

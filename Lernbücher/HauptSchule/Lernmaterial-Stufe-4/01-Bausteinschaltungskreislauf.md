@@ -1,6 +1,6 @@
 ## Kapitel 1 Zusammenspiel des Systems
 
- DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK - ERKLÄRUNG = 
+ DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK = 
 
   DER BSK BAUT AUF MORPHISCHES DENKEN AUF UND IST IM KERN
   EIN VERSCHMELZUNGSZUSTAND VON ZWEI/DREI DINGEN.
@@ -18,10 +18,10 @@
 Wir Arbeiten bewusst mit Stufe 0 um euch die Abstraktion
 oder auch die Abstraktionsverfahrenslogik zu vermitteln.
 Im Späteren verlauf werden wir die Morph logik für den
-weiteren verschmelzungsprozess, zur Sprache bringen.
+weiteren verschmelzungsprozess, zur Sprache gebracht.
 
 Ihr könnt das System mit Reimstrukturen vergleichen
-wie Assonanzbasierte halbreime 
+wie Assonanzbasierte halbreime oder auch Echt Reim genannt.
 
 Luftschutzbunker => Luxusplunder
 
@@ -78,14 +78,14 @@ MOPHIC-0
  BEISPIEL = Aktionsdraht Unterklasse = * * = ** = AKTU
  VON = BAUSTEINSCHALTUNGSKREISLAUF-MORPHISCHESDENKCLUSTER = BSK-MORPHIC
 
- WEITERÜHREND ZU WERT ANKER NUMMER OPTIONS ODER WERKZEUGKLASSEN 
- DIE GETAGGT WERDEN IN DER FUNKTIONSBENNENUNG.
+ WEITERFÜHREND ZU WERT/ANKER/NUMMER/OPTIONS ODER WERKZEUGKLASSEN 
+ DIE GETAGGT WERDEN IN DER FUNKTIONSBENNUNG.
 
  BEISPIEL = Aktionsdraht Unterklasse Start ** - * = **-* = AKTU-START
  
 Wenn wir das in Morph 1 oder zwei sehen, dann können
 wir alleine durch die Regelung, jeder Morphic Stufe
-die herkunft des Bausteins erkennenund bekommen durch
+die herkunft des Bausteins erkennen und bekommen durch
 den nächsten Morph stufen schritt abwärts heraus :
 
 - was es ist 
@@ -147,12 +147,11 @@ TRANU-START-AKTU-START-POIU-START-BOXU-PRINT-START-Affe-BOXAN-PRINT-ENDE-TRENO-S
 Erklärung =
 
 TRANU-START / TRANAN-ENDE: Der Transaktionsrahmen ¢! !¢ wird zu einer harten Speicher-Isolation.(Transaktionsrahmen|Zauberrand)
-AKTU-START / AKTAN-ENDE: Der Aktionsdraht » « wird zum aktiven Stromfluss (Execution Thread).(Aktionsdraht|Zauberstrom)
+AKTU-START / AKTAN-ENDE: Der Aktionsdraht » « wird zum aktiven Stromfluss (Execution Thread).(Aktionsdraht|Aktionszauber)
 POIU-START / POIAN-ENDE: Das Protein [] wird als primärer Daten-Container initialisiert.(Protein|Zauberkiste)
 POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox) wird als State-Vector oder Parameter-Set eingebettet.(Proton|Lunchbox)
-BOXU-PRINT-START / BOXAN-PRINT-ENDE: Das Print-Statement wird zu einem Output-Befehl, der die Daten in den Workspace schreibt.(Print-Statement|Ausgabebefehl)
-TRENO-SPALT: Der Trennbefehl | wird zu einer harten Trennung der Datenströme.(Trennbefehl|Trennstrom)
-POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox/Hardware-Versorgung) wird als State-Vector oder Parameter-Set eingebettet.(Proton|Lunchbox|Kleinekiste)
+BOXU-PRINT-START / BOXAN-PRINT-ENDE: Das Print-Statement wird zu einem Output-Befehl, der die Daten in den Workspace schreibt.(Print-Statement|Boxis)
+TRENO-SPALT: Der Trennbefehl | wird zu einer harten Trennung der Datenströme.(Trennbefehl|Zaubertrennwand)
 
 ## 3. Der Zusammenhang (Das Einrasten)
 

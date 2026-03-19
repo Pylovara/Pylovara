@@ -117,7 +117,7 @@ Wir Üben jetzt zur Wiederholung:
 
  Wieviele Tiere haben wir den ?
 
-  ["Hasen"|"Löwe"|"Hund"|"Katze"|"Eichhörnchen"|"Robbe"]
+  ["Hasen"|"Löwe"|"Hund"|"Katze"|"Eichhörnchen"|"Robbi"]
 
   (Schreibe Summe/Zahl hier hin) = 
 
@@ -181,34 +181,11 @@ Wir Üben jetzt zur Wiederholung:
 
 ##########################################################################
 
+## 4. Übungszauber zum selber ab-schreiben:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Jetzt wo wir deine Zaubertalente aufgefrischt haben, wollen wir mal versuchen, 
+ob du schon selber Zauber schreiben kannst.
+Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 
 ##########################################################################
 

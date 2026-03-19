@@ -154,10 +154,31 @@ BOXU-PRINT-START / BOXAN-PRINT-ENDE: Das Print-Statement wird zu einem Output-Be
 TRENO-SPALT: Der Trennbefehl | wird zu einer harten Trennung der Datenströme.(Trennbefehl|Trennstrom)
 POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox/Hardware-Versorgung) wird als State-Vector oder Parameter-Set eingebettet.(Proton|Lunchbox|Kleinekiste)
 
-## 3. Der Zusammenhang
+## 3. Der Zusammenhang (Das Einrasten)
 
+Stell dir vor, der BSK ist wie eine elektrische Schiene. 
+Wenn du den TRANU-START setzt, wird der Bereich unter Strom gesetzt. 
+Wenn die Kette bis zum TRANAN-ENDE logisch lückenlos geschlossen ist, 
+„rastet“ die Funktion im System ein.
 
+Warum schreiben wir so lange Wörter in Stufe 0? 
+Damit du die Landkarte der Hardware lernst.
+Wenn du später Profi bist, nutzt du MORPHIC-2 (AS). 
+Das System „weiß“ dann durch das Training in Stufe 0 sofort, 
+was gemeint ist. Es ist wie beim Fahrradfahren: 
 
+             Erst schaust du auf die Pedale (Stufe 0), 
+             später fährst du freihändig durch den Wald (Stufe 2), 
+             weil die Bewegungen in dein „Biologisches MCS Gehirn“ 
+             übergegangen sind.
 
+Übung für den Kopf:
 
+Versuche die Kette TRANU-START-AKTU-START-POIU-START wie einen Rap-Beat zu lesen. 
+Spürst du den Takt? Das ist der  RETRON Ŧ³-Rhythmus Modus des Kernels.
 
+Wenn ein Teil fehlt – zum Beispiel ein ENDE – bricht der Reim ab. 
+Der Song (das Programm) stoppt. 
+Pylovara lässt keine „schlechten Reime“ zu. 
+Entweder es ist perfekt, oder es leitet nicht. 
+Das ist Performance als Naturgesetz.

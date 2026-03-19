@@ -100,3 +100,67 @@ Wir Üben jetzt zur Wiederholung:
  und wie heißt der Zauber der die Zauberkisten umrandet ?
 
  (Schreibe Zauber hierhin) = 
+
+
+
+
+
+
+
+
+
+
+
+##########################################################################
+
+🐱 Die neugierige Katze und der leere Napf
+
+¢!
+»["Katze"]«
+ ¬· »["Napf anschauen"]«
+     ¶ ¬· ["Napf ist voll!"]
+          ¬· »["Fressen"]«
+     ¶¶ ¬· ["Napf ist leer!"]
+           ¬· »["Miau!"]«
+!¢
+
+„Wenn der Napf voll ist, frisst die Katze. Wenn nicht, ruft sie laut!“
+
+##########################################################################
+
+🐿️ Das Eichhörnchen und die versteckte Nuss
+
+¢!
+»["Eichhörnchen"]«
+ ¬· »["Baumloch prüfen"]«
+     ¶ ¬· ["Nuss gefunden!"]
+          ¬· »["Knacken"]«
+          ¬· »["Genießen"]«
+     ¶¶ ¬· ["Nuss weg!"]
+           ¬· »["Suchen im Laub"]«
+           ¬· »["Traurig piepsen"]«
+!¢
+
+„Es schaut nach – wenn die Nuss da ist, knackt es sie. Wenn nicht, sucht es traurig.“
+
+##########################################################################
+
+🤖 Robbi der kleine Helfer-Roboter
+
+¢!
+»["Robbi"]«
+ ¬· ["Batterie prüfen"]
+    ¶ ¬· »["Grün leuchtet!"]«
+          ¬· »["Aufräumen"]«
+          ¬· »["Spielen"]«
+    ¶¶ ¬· »["Rot leuchtet!"]«
+          ¬· ["Laden"]
+             ¬· ["Warten…"]
+!¢
+
+„Robbi arbeitet, solange seine Batterie grün leuchtet. Wenn rot – muss er laden!“
+
+##########################################################################
+
+
+

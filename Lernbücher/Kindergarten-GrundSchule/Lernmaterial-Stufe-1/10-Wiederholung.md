@@ -89,6 +89,8 @@ aber es ist gut zu wissen was alles gezaubert werden kann.
 
 Wir Üben jetzt zur Wiederholung:
 
+##########################################################################
+
  - Zauberkisten :
 
  Zähle auf wieviele Zauberkisten wir haben ohne extra Zauber 
@@ -109,13 +111,93 @@ Wir Üben jetzt zur Wiederholung:
 
  (Schreibe Zauber hierhin) = 
 
- - Zaubertrennwand :
+##########################################################################
 
- Wieviele Zaubertrennwände haben wir den ?
+ - Zauber ??? :
 
-  ["Hasen"|"Löwe"|"Hund"|"Katze"|"Eichhörnchen"|"Robbi"]
+ Wieviele Tiere haben wir den ?
+
+  ["Hasen"|"Löwe"|"Hund"|"Katze"|"Eichhörnchen"|"Robbe"]
 
   (Schreibe Summe/Zahl hier hin) = 
+
+  Und wie heißt der Zauber der sieh trennt ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Meister ??? :
+
+ Wie heißt nochmal der Meister der die Tische hinstellt ?
+
+  (Schreibe) = 
+
+  Und wie heißt der Zauber der sieh trennt ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Aktionszauber :
+
+ Ein Aktionszauber macht eine Schlafende Kiste zu einer ?
+
+  (Schreibe Zauber hierhin) = 
+
+  Und wie heißt der Zauber der sieh trennt ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Igel-Wächter :
+
+ Wieviele Zauber kann der Igel-Wächter haben ?
+
+  (Schreibe Summe/Zahl hier hin) = 
+
+  Und wie heißen die Zauber ?
+
+ (Schreibe Zauber hierhin) ¶ = 
+
+ (Schreibe Zauber hierhin) ¶¶ = 
+
+##########################################################################
+
+ - Zauber-Karussell :
+
+ Wieviele Zauber-Karussell haben wir den ?
+
+  (Schreibe Summe/Zahl hier hin) = 
+
+  Und wo setzen wir das Zauber-Karussell hin ?
+
+ (Schreibe den Zauber dazu) = »["Schaukeln"]«
+
+##########################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -12,3 +12,5 @@ Wir haben jetzt gelernt die Grundlagen der Pylovarischen Sprache und können mit
 
 Jedes Symbol ist eine Garantierter Zauber,
 und jeder Zauber hat eine Konsequenz.
+
+Jetzt wollen wir mal Versuchen, einen Ganzen Zauber Zu Schreiben.

@@ -29,6 +29,24 @@ MCS : Maschinen Code Speech | Maschinen Code Sprache =
 Hier bei handelt es sich Um das was ihr gelernt habt.
 Der Affe wird mit seinen Bananen versorgt und da der
 Affe Wach ist wird er mit dem Aktionsdraht verbunden.
+Hierbei ist klar das die Bananen die Hardware versorgung
+darstellen und wenn sie irgendwer ISST - dann der Affe der
+den Anderen Affen in die "Wache Kiste" geschmissen hat ;-)
+
+Natürlich wissen wir es mittlerweile besser - nicht wahr ?
+
+In diesem Abschnitt Lernen wir Logisches Denken in 
+SystemArchitektur, das es so noch nicht gegeben hat.
+(Stand des Spruches Frühlingsanfang 2026)
+
+Der BSK ist ein Verschmelzungsprozess der nicht nur den 
+Speed (Hardwareübersetzung) reguliert, sondern auch 
+übertaktungen der eigenen echtzeit geschwindigkeit 
+anpasst.
+
+Ihr Lernt also nicht nur Logische Gattertechnik
+für das Leben, sondern gleichzeitig eine Vollwertige
+Systemarchitektur aus dem Hause Pylovara-System!
 
 ## 2. Bausteinschaltungskreislauf
 
@@ -47,6 +65,8 @@ POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox) wird als Stat
 BOXU-PRINT-START / BOXAN-PRINT-ENDE: Das Print-Statement wird zu einem Output-Befehl, der die Daten in den Workspace schreibt.(Print-Statement|Ausgabebefehl)
 TRENO-SPALT: Der Trennbefehl | wird zu einer harten Trennung der Datenströme.(Trennbefehl|Trennstrom)
 POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox/Hardware-Versorgung) wird als State-Vector oder Parameter-Set eingebettet.(Proton|Lunchbox|Kleinekiste)
+
+## 3. Der Zusammenhang
 
 
 

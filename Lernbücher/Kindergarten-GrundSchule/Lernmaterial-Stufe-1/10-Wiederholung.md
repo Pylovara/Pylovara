@@ -1,6 +1,11 @@
 # Kapitel 10: MCS Meister !
 
-Wir haben jetzt gelernt die Grundlagen der Pylovarischen Sprache und können mit den Kindern die Grundlagen der Pylovarischen Sprache Verinnerlichen.
+ Hallo kleiner Meister-Entwickler! 🌟🎠
+
+
+
+Wir haben jetzt die Grundlagen der Pylovarischen Sprache gelernt und können 
+die Grundlagen der Pylovarischen Sprache Verinnerlichen.
 
 - Der Zauberrand              ¢! … !¢
 - Die Zauberkiste             []       
@@ -16,9 +21,11 @@ und jeder Zauber hat eine Konsequenz.
 Jetzt wollen wir mal Versuchen, einen Ganzen Zauber Zu Schreiben.
 
 
-Was wir brauchen:
+## 1. Was wir brauchen:
 
 - Ein Tier für Die Zauberkiste (Gern dein Haustier)
 - Eine Liste Was Dein Tier tuen möchte am Tag 
 - Einen Spickzettel für alle Zauber ;-)
-- 
+
+## 2. Eine Vorgehensgeschichte ( Erzählt vom MCS Meister )
+

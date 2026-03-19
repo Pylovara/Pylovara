@@ -13,8 +13,16 @@ Aber ohne Energie bewegt sich nichts.
 
  Das Proton { } ist der Funke (Das Benzin|Der Strom|Der Zündfunke). 
 
-Es enthält die Informationen, wie viel Kraft, welche Farbe 
-oder welche Dauer eine Aktion hat.
+Es enthält die Informationen, wie viel Kraft die hardware für
+die bearbeitung braucht. In Normalen Geräten (Nicht PylovaraHardware)
+werden diese Informationen in den Registern gespeichert - für die 
+Stromversorgung der CPU oder GPU wie z.B. die Taktrate oder auch
+wie viel Strom sie ziehen über das Netzteil oder die Grafikkarte.
+
+Wir steuern damit die Hardware selbst - und das ist der Clou!
+Wir werden jedoch nicht bei jedem Protein ein Proton haben müssen,
+es kommt aber darauf an ob man Protein-Proton packete seperat
+als Transaktionsrahmen in Dateitypen anlegen(hierzu später mehr) - oder ob man es in einem Protein packen möchte und direkt takten. 
 
 Merksatz: 
  „Das Protein ist das Auto, das Proton 

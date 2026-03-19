@@ -164,3 +164,14 @@ Wir Üben jetzt zur Wiederholung:
 
 
 
+
+---
+
+> [!TIP]
+> **Für Eltern:** 
+> wenn das Kind später fragen sollte:
+> „Wie kann der Roboter wissen, wie viel Energie er hat?“
+> … dann ist die Antwort:
+> „Das lernst du in der Hauptschule — da bekommst du noch mehr Zauber wie PROTON(Kleine Kiste)
+> und den ¤:-Spiegel(Kordinator Meister REX mit Kordizauber plus Auswertungzauber)!“
+

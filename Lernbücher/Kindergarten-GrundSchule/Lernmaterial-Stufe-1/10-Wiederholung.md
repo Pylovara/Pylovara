@@ -13,11 +13,8 @@ Damit wir Alle Wissen was wir für einen Zauber brauchen, Listen wir sie nochmal
 - Der Igel-Wächter            ¶ / ¶¶   
 - Das Zauber-Karussell        ««Ω      
 
-Jedes Symbol ist eine Garantierter Zauber,
-und jeder Zauber hat eine Konsequenz.
-
-Jetzt wollen wir mal Versuchen, einen Ganzen Zauber Zu Schreiben.
-
+Jedes Symbol ist eine Garantierter Zauber, und jeder Zauber hat eine Konsequenz.
+Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
 
 ## 1. Was wir brauchen:
 

@@ -93,11 +93,11 @@ Wir Üben jetzt zur Wiederholung:
 
  Zähle auf wieviele Zauberkisten wir haben ohne extra Zauber 
 
-  (Schreibe Summe/Zahl hier hin) =
+  (Schreibe Summe/Zahl hier hin) = 
 
  und wieviele Zauberkisten haben wir wenn wir einen davon Verzaubern ?
 
-  (Schreibe Summe/Zahl hier hin) =
+  (Schreibe Summe/Zahl hier hin) = 
 
  Und wie Heißen die Zauberkisten ?
    (Kleiner tipp sch ... wa ...)
@@ -109,8 +109,13 @@ Wir Üben jetzt zur Wiederholung:
 
  (Schreibe Zauber hierhin) = 
 
+ - Zaubertrennwand :
 
+ Wieviele Zaubertrennwände haben wir den ?
 
+  ["Hasen"|"Löwe"|"Hund"|"Katze"|"Eichhörnchen"|"Robbi"]
+
+  (Schreibe Summe/Zahl hier hin) = 
 
 
 

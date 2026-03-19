@@ -84,13 +84,19 @@ Wir Üben jetzt zur Wiederholung:
  Wieviele zauberkisten haben wir den ?
  (Kleiner tipp sch ... wa ...)
 
- Zähle auf wieviele Zauberkisten wir haben zum zaubern
+ Zähle auf wieviele Zauberkisten wir haben ohne extra Zauber 
 
-  Schreibe die Zahl hierhin =
+  (Schreibe Summe/Zahl hier hin) =
+
+ und wieviele Zauberkisten haben wir wenn wir einen davon Verzaubern ?
+
+  (Schreibe Summe/Zahl hier hin) =
 
  Und wie Heißen die Zauberkisten ?
 
               Zauberkiste
               Zauberkiste
 
+ und wie heißt der Zauber der die Zauberkisten umrandet ?
 
+ (Schreibe Zauber hierhin) = 

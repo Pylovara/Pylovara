@@ -5,7 +5,7 @@
  #    BSK UNTERBAU META-EBENE  | MASCHINENCODE ZU BSK               #
  #      Die Morphic Stage ist dein eigentlicher Compiler.           #
  # Beispiel :                                                       #
- # AKTU-START  → Morphic 0→1 → AKTS                                 #
+ # AKTU-START  → Morphic 0→1 → AKTS → Morphic 2 → AS (Über RETRON)  #
  # Das ist:                                                         #
  # LANGNAME → SYMBOLTOKEN → MASCHINENNAH                            #
  # Also:                                                            #

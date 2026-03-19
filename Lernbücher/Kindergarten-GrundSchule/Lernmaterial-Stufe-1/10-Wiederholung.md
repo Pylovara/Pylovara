@@ -23,3 +23,59 @@ Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
 - Einen Spickzettel für alle Zauber ;-)
 
 ## 2. Eine Vorgehensgeschichte ( Erzählt vom MCS Meister )
+
+„Ich bin der MCS Meister — aber ich bin nicht der Zauberer.
+Ich zeige dir nur, wie die Symbole atmen.
+Der wahre Zauberer bist du.
+Wenn du deinen Hasen füttern willst, dann schreib:
+
+¢! 
+»["Hase"]« 
+ ¬· »["Möhre geben"]« 
+!¢
+
+
+Und wenn etwas fehlt? Dann frag der Igel-Wächter:
+
+¢! 
+»["Hase"]« 
+ ¬·  ["Hunger"]
+     ¶ ¬· ["Möhre liegt da!"]
+          ¬· »["Möhre geben"]«
+     ¶¶ ¬· »["Möhre suchen gehen!"]«
+            ¶ ¬· ["Möhre gefunden!"]
+                 ¬· »["Möhre geben"]«
+!¢
+
+Wenn dein Hund spielen will, dann sag:
+
+¢! 
+["Hund"]
+¬· »["Ball werfen"]« 
+    ¶ ¬· »["Hund rennt zum Ball"]« 
+    ¶¶ ¬· »["Ball selber holen weil der Hund müde ist"]«
+!¢
+
+Du brauchst keine Angst kleiner Meister, jeder Zauber fängt klein an
+und wird größer je mehr du übst.
+
+Bei Meister Rex landen wir immer wenn wir eine Entscheidung treffen müssen
+und ob der IgelWächter beide möglichkeiten zaubert, ob der Ball da ist oder nicht:
+
+¢!
+["Ball"]
+¶ ¬· ["Ball ist da"]
+     ¬· »["Ball werfen"]«
+     ¬· »["Ball fangen"]«
+¶¶ ¬· ["Ball ist nicht da"]
+      ¬· »["Ball suchen"]«
+!¢   
+
+Sind Schwere Zauber die du nicht sofort beherschen musst.
+
+
+
+
+
+
+

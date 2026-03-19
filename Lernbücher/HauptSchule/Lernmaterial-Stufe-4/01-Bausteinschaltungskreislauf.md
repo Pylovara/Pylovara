@@ -188,4 +188,6 @@ Wenn ein Teil fehlt – zum Beispiel ein ENDE – bricht der Reim ab.
 Der Song (das Programm) stoppt. 
 Pylovara lässt keine „schlechten Reime“ zu. 
 Entweder es ist perfekt, oder es leitet nicht. 
-Das ist Performance als Naturgesetz.
+
+Markenrechtlicher Slogan:
+„Performance ist ein Naturgesetz und undiskutabel.“

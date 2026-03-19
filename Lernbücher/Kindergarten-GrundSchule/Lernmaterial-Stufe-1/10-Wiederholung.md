@@ -163,6 +163,10 @@ Wir Üben jetzt zur Wiederholung:
 
  (Schreibe Zauber hierhin) ¶¶ = 
 
+ kommt der Igel-Wächter vor oder nach Meister Rex ?
+
+ (Schreibe Zauber hierhin) = 
+
 ##########################################################################
 
  - Zauber-Karussell :

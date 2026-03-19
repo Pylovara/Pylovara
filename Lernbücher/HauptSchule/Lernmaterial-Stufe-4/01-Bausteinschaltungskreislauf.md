@@ -160,6 +160,14 @@ Wenn du den TRANU-START setzt, wird der Bereich unter Strom gesetzt.
 Wenn die Kette bis zum TRANAN-ENDE logisch lückenlos geschlossen ist, 
 „rastet“ die Funktion im System ein.
 
+Der Transaktionsrahmen selbst, dient als erkennungs merkmal für das System, das es sich um eine MCS Datei handelt die mit TRANU-START beginnt und TRANAN-ENDE endet.
+
+Dadurch können wir beliebig viele Dateien schreiben später die 
+Nathlos mit dem Rest des Frameworks arbeiten kann, ähnlich wie
+bei einem C Header oder Bash Header oder Python Header - nur das
+wir keine bibliotheken einbinden müssen, da alles in der MCS Datei
+selbst die Logik trägt.
+
 Warum schreiben wir so lange Wörter in Stufe 0? 
 Damit du die Landkarte der Hardware lernst.
 Wenn du später Profi bist, nutzt du MORPHIC-2 (AS). 

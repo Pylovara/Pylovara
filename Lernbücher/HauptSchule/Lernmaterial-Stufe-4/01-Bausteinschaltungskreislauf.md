@@ -11,12 +11,6 @@ MCS : Maschinen Code Speech | Maschinen Code Sprache =
 
 ¢! Ŧ³ »["Affe"|{"Bananen"}]« !¢
 
-
-
-
-
-
-
 ## 2. Bausteinschaltungskreislauf
 
 BSK : Bausteinschaltungskreislauf | Baustein Schaltungskreislauf
@@ -27,13 +21,13 @@ TRANU-START-AKTU-START-POIU-START-BOXU-PRINT-START-Affe-BOXAN-PRINT-ENDE-TRENO-S
 
 Erklärung =
 
-TRANU-START / TRANAN-ENDE: Der Transaktionsrahmen ¢! !¢ wird zu einer harten Speicher-Isolation.
-AKTU-START / AKTAN-ENDE: Der Aktionsdraht » « wird zum aktiven Stromfluss (Execution Thread).
-POIU-START / POIAN-ENDE: Das Protein [] wird als primärer Daten-Container initialisiert.
-POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox) wird als State-Vector oder Parameter-Set eingebettet.
-BOXU-PRINT-START / BOXAN-PRINT-ENDE: Das Print-Statement wird zu einem Output-Befehl, der die Daten in den Workspace schreibt.
-TRENO-SPALT: Der Trennbefehl | wird zu einer harten Trennung der Datenströme.
-POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox/Hardware-Versorgung) wird als State-Vector oder Parameter-Set eingebettet.
+TRANU-START / TRANAN-ENDE: Der Transaktionsrahmen ¢! !¢ wird zu einer harten Speicher-Isolation.(Transaktionsrahmen|Zauberrand)
+AKTU-START / AKTAN-ENDE: Der Aktionsdraht » « wird zum aktiven Stromfluss (Execution Thread).(Aktionsdraht|Zauberstrom)
+POIU-START / POIAN-ENDE: Das Protein [] wird als primärer Daten-Container initialisiert.(Protein|Zauberkiste)
+POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox) wird als State-Vector oder Parameter-Set eingebettet.(Proton|Lunchbox)
+BOXU-PRINT-START / BOXAN-PRINT-ENDE: Das Print-Statement wird zu einem Output-Befehl, der die Daten in den Workspace schreibt.(Print-Statement|Ausgabebefehl)
+TRENO-SPALT: Der Trennbefehl | wird zu einer harten Trennung der Datenströme.(Trennbefehl|Trennstrom)
+POOU-START / POOAN-ENDE: Das Proton {} (die kleine Kiste/Lunchbox/Hardware-Versorgung) wird als State-Vector oder Parameter-Set eingebettet.(Proton|Lunchbox|Kleinekiste)
 
 
 MORPHIC-1: Morphic-Stufen =

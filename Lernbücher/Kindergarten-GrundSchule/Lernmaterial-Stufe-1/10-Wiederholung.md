@@ -19,3 +19,4 @@ Jetzt wollen wir mal Versuchen, einen Ganzen Zauber Zu Schreiben.
 Was wir brauchen:
 
 - Ein Tier für Die Zauberkiste (Gern dein Haustier)
+- Eine Liste Was Dein Tier tuen möchte am Tag 

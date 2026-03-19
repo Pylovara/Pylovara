@@ -2,10 +2,8 @@
 
  Hallo kleiner Meister-Entwickler! 🌟🎠
 
-
-
-Wir haben jetzt die Grundlagen der Pylovarischen Sprache gelernt und können 
-die Grundlagen der Pylovarischen Sprache Verinnerlichen.
+Wir haben jetzt die Grundlagen der Pylovarischen Sprache gelernt und Verinnerlicht.
+Damit wir Alle Wissen was wir für einen Zauber brauchen, Listen wir sie nochmal auf.
 
 - Der Zauberrand              ¢! … !¢
 - Die Zauberkiste             []       

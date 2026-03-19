@@ -14,3 +14,8 @@ Jedes Symbol ist eine Garantierter Zauber,
 und jeder Zauber hat eine Konsequenz.
 
 Jetzt wollen wir mal Versuchen, einen Ganzen Zauber Zu Schreiben.
+
+
+Was wir brauchen:
+
+- Ein Tier für Die Zauberkiste (Gern dein Haustier)

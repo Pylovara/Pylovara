@@ -192,4 +192,7 @@ Denken sie am besten Immer an das hier :
 Gedanklicher Zusatz:
 
 ich persönlich wäre Froh gewesen, wenn mein Vater mit so einem 
-Lehrgang um die ecke gekommen wäre !
+Lehrgang um die ecke gekommen wäre - vielleicht nicht Akut als Kind,
+aber spätestens wenn ich als Erwachsener begriffen hätte was das hier
+mir persönlich für Türen geöffnet hätte - da hätte ich mich in den Arsch
+gebissen vor Freude!

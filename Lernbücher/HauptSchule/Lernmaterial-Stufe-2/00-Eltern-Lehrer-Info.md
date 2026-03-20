@@ -137,6 +137,13 @@ Beispiel für eine erweiterte Kaffemaschinen Einsatz nahen Erklärung:
                 ſ »["Kaffee ist nicht fertig, reinige aber den Speicher!"]«
 
 !¢
+--------------------------------------------------------------
+Kurz Info zu Sentiator-regel-der-reinheit :
+
+ſ »["Kaffee ist nicht fertig, reinige aber den Speicher!"]«
+
+das lehrt die Kinder : "Hinterlasse niemals Datenmüll"
+--------------------------------------------------------------
 
 Sie verstehen also das ihr in diesem Punkt die Syntax der MCS-Sprache 
 lernt. Aber nicht nur das, sondern auch die Logik dahinter. Und das auf 

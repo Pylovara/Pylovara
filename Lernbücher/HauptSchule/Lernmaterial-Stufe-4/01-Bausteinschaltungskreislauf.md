@@ -35,7 +35,17 @@
  Bewegungen die Zauberformel - Die wir Schon Gelernt haben.
 
  Aber damit der Zauber wirkt, muss er auch die Energie
- mit seinem Zauber Spruch Transportieren - und das ist der Trick.
+ mit seinem Zauberspruch Transportieren - und das ist der Trick.
+
+ Wärendessen Gandalf den Zauber Spricht :
+
+ TRANU-START-AKTU-START-POIU-START-BOXU-PRINT-START-Erhebt euch, Wesen des Waldes-BOXAN-PRINT-ENDE-POIAN-ENDE-AKTAN-ENDE-TRANAN-ENDE
+
+ Zeichnet er mit dem Zauberstab in die Luft :
+
+ ¢! »["Erhebt euch, Wesen des Waldes"]« !¢
+
+ 
 
  
  

@@ -15,7 +15,7 @@
   das ihr sie nicht vergessen könnt.
 
   
-  
+## 1. Die Logik der Verkürzung
 
 
 
@@ -137,7 +137,7 @@ fürs Triviale Debugging eurer Programme.
 in diesem Lernmaterial dürft ihr gerne auch so denken
 wie es verkürzt dann gedanklich stehen müsste.
 
-## 1. Maschinen Code Speech
+## 2. Maschinen Code Speech
 
 MCS : Maschinen Code Speech | Maschinen Code Sprache =
 

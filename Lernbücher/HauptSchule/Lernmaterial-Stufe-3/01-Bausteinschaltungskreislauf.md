@@ -1,18 +1,19 @@
 ## Kapitel 1: Zusammenspiel des Systems
 
  heute lernen wir den Bausteinschaltungskreislauf,
- die die bisherigen Zauber miteinander verbindet.
- und wie die hardware im system zusammenarbeitet.
+ die die bisherigen Zauber miteinander verbindet -
+ inklusive wie die Hardware im System zusammenarbeitet.
 
   Wir werden uns hierbei auf die Morphic Stufe 0 konzentrieren,
-  da wir hierbei die hardware am besten verstehen können.
+  da wir hierbei die Hardware am besten verstehen können.
   
-  Wir werden auch weg von den Zauber-Sprachgebrauch
-  gehen und uns Richtung Echter System begriffe zuwenden.
+  Wir werden den Zauber-Sprachgebrauch beibehalten,
+  aber wir werden uns Richtung Echter System begriffe zuwenden.
   
   Keine Angst, es werden im gesamten Lernmaterial immer
-  wieder die alten Begriffe im klammern auftauchen, so 
+  die alten Begriffe im klammern auftauchen, so 
   das ihr sie nicht vergessen könnt.
+
 
   
 ## 1. Die Logik der Verkürzung
@@ -47,11 +48,53 @@
 
  
 
+
+
+
+
+## 4. Die Weichenstellung (Der Navigator vom ÜbungsProgramm)
+
+Wenn du deine Schiene (BSK) fertig gebaut hast, 
+braucht das System jemanden, der die Informationen ohne 
+umwege ans Ziel bringt. 
+
+Das macht der **NAVU-STERN (*)**.
+
+Er „liest“ deine BSK-Kette nicht wie ein langsamen Zauberspruch, 
+sondern er erkennt das Muster sofort. 
+Wie ein Navi im Auto, das die schnellste Route über die Gatter berechnet.
+
+Wichtig: Wenn du einen Fehler im BSK hast (z.B. AKTAN-ENDE vergessen), 
+dann ist die Schiene kaputt. 
+Der NAVU-STERN bleibt stehen, 
+weil der Stromkreis nicht geschlossen ist. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
  
  
- 
+ (hier bin ich gerade , das untere ist der alte ansatz aber zu gut um es zu löschen - ich exportiere die daten unterhalb in die realschule)
   
 
 

@@ -65,7 +65,7 @@
     
  ¬· ["Menschen"]
     ¬· »["Sprechen"]«
-    ¬· »["Lachen"]«
+    ¬· »["Kreischen"]«
     ¬· »["Grummeln"]«
 !¢
 

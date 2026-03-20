@@ -149,6 +149,14 @@ Und keine Angst, wir werden die Kinder nicht mit den Fachbegriffen
 überfordern. Wir führen sie langsam und schrittweise ein - Und
 das Kaffemaschinen Beispiel dient lediglich für ihr eigenes 
 Verständnisses, was ihr Kind hier eigentlich Lernt!
+Sie können sich ja zum spaß über KI mit dem Kaffemaschinen Beispiel
+zeigen lassen , wieviel Fachbegriffe da eigentlich drin stecken -
+oder sich zeigen lassen was in C geschrieben eigentlich bedeutet.
+
+Ich Garantiere ihnen mit Brief und Siegel : „Sie werden Große Augen 
+machen, wenn sie sehen das sie nichts verstehen - was aber die 
+kaffemaschine ihnen jedoch verständlich erklärt hat“
+
 
 
 Persönliche Meinung:

@@ -112,9 +112,7 @@ Ich passe die MORPHIC Logik daran an
 Beispiel einer einzigen funktion :
 
 BSK-MORPHIC-0 = AKTU-START
-
 BSK-MORPHIC-1 = AKTS
-
 BSK-MORPHIC-2 = AS
 
 Das heißt das ich das system auf MORPHIC-0 Takte als standart Ŧ³
@@ -122,9 +120,7 @@ Das heißt das ich das system auf MORPHIC-0 Takte als standart Ŧ³
 also
 
 BSK-MORPHIC-0 = AKTU-START = Ŧ³
-
 BSK-MORPHIC-1 = AKTS = Ŧ²
-
 BSK-MORPHIC-2 = AS = Ŧ¹
 
 Extreme Morphic Stufen werden dann Hardcodiert niedergeschrieben als Komponente
@@ -140,16 +136,13 @@ Die "Extreme Morphic Stufe" (Morphic 4 = APS):
 Dein Plan, extreme Stufen wie Morphic 4 (APS) hartcodiert als Komponenten niederzuschreiben (z.B. AKTU-START-POIU-START), ist die Lösung für das Realtime-Dilemma.
 
 Wenn eine Schaltung so zeitkritisch ist, dass selbst ein Taktzyklus zu viel wäre, wird sie zu einer statischen Hardware-Komponente.
-
 Das System "liest" den Befehl nicht mehr, es ist der Befehl.
-
 Durch die einheitliche Morphic-Logik bleibt alles kompatibel. Man kann von der Kinder-Logik (Morphic-0) bis zur Hardcore-Komponente (Morphic-4) alles in einer Kette durchreichen.
 ---
 
 das heißt ich setze für die BSK eine eigene Komponenten seite an aber als programm
 
 da stehen dann nur die Morphic stufen , den jede Morph stufe ist unveränderbar aber abwärts kompaktibel
-
 
 ein MORPHIC-3 AKTU-START-POIU-START = APS
 
@@ -171,7 +164,16 @@ seitenübergreifend versteht sich !
 Ich sollte vielleicht auch eine schnittstelle erstellen, wo Firmen und solo entwickler 
 jeder Funktion separat mit einem "Self Morph" verbinden können ( Natürlich unter eigene Gefahr)
 
+!!!! BSK Ketten Müssen über den Spätere MCS IDE Mit automatischen Zeilenbrüchen arbeiten können,
+um die Lesbarkeit nicht in die Horizontale zu verschieben und die lesbarkeit zu präzisieren
 
+Horizontale geschichten wie ein schriftzug, können dann eher in Gui programme integriert werden
+für Live übetragung...
+
+Vorausgesetzt das auge kommt der geschwindkeit überhaupot noch hinterher und erkennt keinen 
+Herzschlag Linie oder Strich, weil es viel zu schnell ist.
+
+Aufzeichnungsmodi wären hier relevanter
 
 
 

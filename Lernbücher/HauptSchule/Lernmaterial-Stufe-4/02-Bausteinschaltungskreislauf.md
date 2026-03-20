@@ -1,11 +1,33 @@
+## Kapitel 2 Zusammenspiel des Systems
 
- !! Ich muss das hier nochmal überarbeiten, da ich hier nicht
- mit erwachsenen spreche sondern mit kinder und jugendlichen.
- und ich sollte lektion 2 vor lektion 1 setzen um den
- zusammenhang der hardware besser zu vermitteln.
+ heute lernen wir den Bausteinschaltungskreislauf,
+ die die bisherigen Zauber miteinander verbindet.
+ und wie die hardware im system zusammenarbeitet.
+
+  Wir werden uns hierbei auf die Morphic Stufe 0 konzentrieren,
+  da wir hierbei die hardware am besten verstehen können.
+  
+  Wir werden auch weg von den Zauber-Sprachgebrauch
+  gehen und uns Richtung Echter System begriffe zuwenden.
+  
+  Keine Angst, es werden im gesamten Lernmaterial immer
+  wieder die alten Begriffe im klammern auftauchen, so 
+  das ihr sie nicht vergesst.
+
+  
+  
 
 
-## Kapitel 1 Zusammenspiel des Systems
+
+
+
+
+
+
+
+
+
+
 
  DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK = 
 

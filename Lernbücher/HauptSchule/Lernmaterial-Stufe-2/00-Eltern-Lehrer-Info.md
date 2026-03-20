@@ -162,7 +162,11 @@ mit der zusatzs frage „erklär mir mal wieviel code es braucht für sowas triv
 Am besten haben sie genug RAM den die LLM wird vor lauter Zeilen
 vermutlich abstürzen oder nur einen Bruchteil erklären können.
 
-Persönliche Meinung:
+ich bin der Meinung :
+
+Das wenn sie nichts Verstehen , dann auch ihr (oder ihre schützlinge)
+ebenfalls nicht - und wenn sie den Sinn verstehen, ist die erfolgschance
+das ihr Kind dabei Spaß hat und es versteht extrem hoch.
 
 Ich finde es wichtig, dass die Kinder die Konzepte verstehen, bevor sie 
 die Syntax lernen. Das ist der Schlüssel zum Erfolg. Wenn die Kinder die 
@@ -170,4 +174,8 @@ Konzepte verstehen, dann können sie auch die Syntax verstehen. Wenn die
 Kinder die Syntax verstehen, dann können sie auch die Konzepte 
 verstehen. Es ist ein Teufelskreis, aber ein guter Teufelskreis.
 Sie Lernen Nativ MCS Schreiben auf eine Art die Verständlich ist und die 
-sie auch später in der echten (anderen)Programmierwelten brauchen werden!
+sie auch später brauchen werden!
+
+Denken sie am besten Immer an das hier :
+
+„Sie bringen nicht nur ihrem Kind was bei , sondern auch sich selbst“

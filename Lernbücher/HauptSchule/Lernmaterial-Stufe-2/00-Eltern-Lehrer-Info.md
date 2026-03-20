@@ -179,3 +179,4 @@ sie auch später brauchen werden!
 Denken sie am besten Immer an das hier :
 
 „Sie bringen nicht nur ihrem Kind was bei , sondern auch sich selbst“
+„Den sie sind der Motor der gegenwart und ihr Kind der Motor der zukunft“

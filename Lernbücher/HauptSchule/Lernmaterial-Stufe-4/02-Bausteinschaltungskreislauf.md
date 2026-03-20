@@ -12,7 +12,7 @@
   
   Keine Angst, es werden im gesamten Lernmaterial immer
   wieder die alten Begriffe im klammern auftauchen, so 
-  das ihr sie nicht vergesst.
+  das ihr sie nicht vergessen könnt.
 
   
   

@@ -39,7 +39,7 @@ Beispiel für eine erweiterte
 
 ¢!
 
-Ŧ¹ »["KNOPF AN"|{Volt:230, Watt:1000, Kapazität:50.0L}]« # 50 liter wirds nicht geben ;-) 
+Ŧ¹ »["KNOPF AN"|{Volt:230, Watt:1000, Kapazität:50.0L}]« # 50 liter wirds leider nicht geben ;-) 
     ¬·»["Kaffeemaschine"|{Volt:230, Watt:800, Kapazität:1.0L}]«««T28 
     # beispiel : 28 Takte Wartezeit wegen dem Heizstab
        ¶ ¬· »["Tanken"|{Grenze:1.0L}]«««T9

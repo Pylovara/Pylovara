@@ -14,24 +14,32 @@ Aber ohne Energie bewegt sich nichts.
  Das Proton { } ist der Funke (Das Benzin|Der Strom|Der Zündfunke). 
 
 Es enthält die Informationen, wie viel Kraft die hardware für
-die bearbeitung braucht. In Normalen Geräten (Nicht PylovaraHardware)
+die bearbeitung braucht. 
+In Normalen Geräten (Nicht PylovaraHardware)
 werden diese Informationen in den Registern gespeichert - für die 
 Stromversorgung der CPU oder GPU wie z.B. die Taktrate oder auch
 wie viel Strom sie ziehen über das Netzteil oder die Grafikkarte.
 
 Wir steuern damit die Hardware selbst - und das ist der Clou!
 Wir werden jedoch nicht bei jedem Protein ein Proton haben müssen,
-es kommt aber darauf an ob man Protein-Proton packete seperat
-als Transaktionsrahmen in Dateitypen anlegen(hierzu später mehr) - oder ob man es in einem Protein packen möchte und direkt takten. 
+es kommt aber darauf an ob man Protein-Proton packete in seperaten
+Dateitypen mit Transaktionsrahmen anlegen, die speziell für
+das Gesammt Programm(Zauber) wichtig sind (hierzu später mehr) 
+- oder ob man es in einem Protein packen möchte und direkt takten.
+
+Wir können also entscheiden ob wir die Energie Steuerung seperat
+im dateitypen elternteil familien strang anlegen möchten oder direkt
+im Protein mit verpacken (Das ist Geschmackssache des Programmierers).
 
 Merksatz: 
  „Das Protein ist das Auto, das Proton 
   ist der Treibstoff und der Schlüssel.“
 
 
-## 2. Die Hardware-Versorgung (P-Klassen)
+## 2. Die Hardware-Versorgung (POO-Klassen)
 
 Im BSK nutzen wir die POO-Logik (Proton-Output-Orientation). 
+
 Das klingt kompliziert, ist aber wie eine Steckdose:
 
 POOU-START: Wir stecken den Stecker rein (Energie fließt zum Baustein).
@@ -47,7 +55,7 @@ POOU-START-Bananen-POOAN-ENDE
 
 ## 3. Der Takt-Geber (RETRON-Modus)
 
-Erinnerst du dich an den Rap-Beat? 
+Erinnerst du dich an die Reim Struktur vergleiche? 
 Der RETRON ist der Schlagzeuger in deinem Computer.
 
 Ŧ³ (Morphic-0): Der langsame, deutliche Beat. 
@@ -58,15 +66,15 @@ Ideal zum Lernen und Fehlerfinden.
 Das System arbeitet so schnell, dass wir die 
 Worte nicht mehr brauchen, nur noch den Impuls.
 
-Übung: Der Energie-Check
+## 4.Übung: Der Energie-Check
+
 Schau dir diese Kette an:
+
 AKTU-START-POIU-START-{"Stärke": 10}-POIAN-ENDE-AKTAN-ENDE
 
 Kannst du sehen, wie das Proton { } mitten im Protein [ ] sitzt? 
-Es gibt dem Protein die Kraft (Stärke 10), damit 
-der Aktionsdraht (AKT) weiß, wie stark er leiten soll.
-
-
+Es gibt dem Protein(ZauberKiste) die Kraft (Stärke 10), damit 
+der Aktionsdraht(Aktionszauber = AKT) weiß, wie stark er leiten soll.
 
 ####################################################################
 

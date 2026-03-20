@@ -1,4 +1,4 @@
-## Kapitel 1: Die Schaltung der Energie (Proton & Protonen-Fluss)
+## Kapitel 2: Die Schaltung der Energie (Proton & Protonen-Fluss)
 
 Bisher haben wir über "Dinge" in Kisten gesprochen und Zauber. 
 Jetzt sprechen wir darüber, was diese Kisten antreibt. 

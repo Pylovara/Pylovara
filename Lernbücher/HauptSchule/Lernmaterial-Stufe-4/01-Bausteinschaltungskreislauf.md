@@ -1,4 +1,4 @@
-## Kapitel 2 Zusammenspiel des Systems
+## Kapitel 1: Zusammenspiel des Systems
 
  heute lernen wir den Bausteinschaltungskreislauf,
  die die bisherigen Zauber miteinander verbindet.

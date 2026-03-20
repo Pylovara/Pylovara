@@ -5,7 +5,7 @@
  inklusive wie die Hardware im System zusammenarbeitet.
 
   Wir werden uns hierbei auf die Morphic Stufe 0 konzentrieren,
-  da wir hierbei die Hardware am besten verstehen können.
+  da wir damit - die Hardware am besten verstehen können.
   
   Wir werden den Zauber-Sprachgebrauch beibehalten,
   aber wir werden uns Richtung Echter System begriffe zuwenden.

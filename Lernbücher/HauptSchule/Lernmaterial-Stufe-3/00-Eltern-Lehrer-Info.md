@@ -18,8 +18,8 @@ Programmiersprache erfassen.
 Herkömmliche Sprachen wie C nutzen oft Bibliotheken, die wie Hexerei 
 wirken, da sie nicht in der Sprache selbst verankert sind. Ihr Kind wird 
 durch keine andere Sprache so tiefgreifend verstehen können, wie das 
-System-Zusammenspiel wirklich funktioniert – das können Sie gerne selbst 
-recherchieren. ;-)
+System-Zusammenspiel wirklich funktioniert 
+– das können Sie gerne selbst recherchieren. ;-)
 
 Das Ziel dieses Lernmaterials ist es:
 - Dem Kind Dualität im Denken, sprich „paralleles Denken“, beizubringen.
@@ -31,17 +31,22 @@ Das ist echtes Deep Learning!
 
 Ja, wir arbeiten hier mit dem Pylovara-System, einem echten, von mir 
 entwickelten System.
+
 -----------------------------------------------------------------------------------
+
 Das System ist so aufgebaut, dass es die Logik von C, C++, Python, Java, Rust, Go, Swift, 
 Kotlin, PHP, Ruby, TypeScript, JavaScript, C#, Dart, Scala, R, Julia, Perl, Haskell, 
 Lua, Shell, SQL, HTML, CSS, XML, JSON, YAML, TOML, INI, CFG, .env...
+
 -----------------------------------------------------------------------------------
 ...in einer einzigen Sprache vereint!
 
 Ich möchte hier eine Sache kurz zur Sprache bringen, da ich sie für relevant halte:
-Nein, ich forme mit diesem Lernmaterial keine Konsumenten von Technologie – sondern ich forme die Architekten von morgen!
+Nein, ich forme mit diesem Lernmaterial keine Konsumenten von 
+Technologie – sondern ich forme die Architekten von morgen!
 
-Und ja (verzeihen Sie mir diesen einen egoistischen Gedanken): Ich bin stolz darauf, dass ich das tun kann und garantieren kann, 
+Und ja (verzeihen Sie mir diesen einen egoistischen Gedanken): 
+Ich bin stolz darauf, dass ich das tun kann und garantieren kann, 
 dass Ihr Kind später mit dem Pylovara-System programmieren kann – bei UNS!
 
 Das Dilemma der heutigen Zeit ist, dass wir zu viele Sprachen haben und die 
@@ -65,23 +70,26 @@ gesamte Unix-Welt habe ich noch nie gesehen!
 -----------------------------------------------------------------------------------
 
 Wie Sie sicherlich erkannt haben, müssen Großkonzerne jetzt jede KI an diesen 
-Bullshit gewöhnen und darauf trainieren. Das wird noch Jahre dauern, ist extrem 
-teuer und wenn sie fertig sind, lernen Menschen dabei nichts mehr und verdummen an 
-der eigenen Abstraktion der weltgeschichtlichen Entwicklung!
+(verzeiht mir) Bullshit gewöhnen und darauf trainieren. Das wird noch Jahre dauern, 
+ist extrem teuer und wenn sie fertig sind, lernen Menschen dabei nichts mehr und 
+verdummen an der eigenen Abstraktion der weltgeschichtlichen Entwicklung!
 
 Was wir hier tun, ist, den Konzernen nicht mehr zu erlauben, unsere Kinder mit 
-Konsumenten-Denken zuzumüllen. Wir lassen sie wieder zum Herrscher über die 
-Technologie werden. Stellen Sie sich das heutige Szenario einmal 200 Jahre in die 
-Zukunft vor... ich persönlich sehe dann nur noch sprachbehinderte, unlogisch 
+Konsumenten-Denken zuzumüllen, sondern 
+- wir lassen sie wieder zum Herrscher über die Technologie werden. 
+Stellen Sie sich das heutige Szenario einmal 200 Jahre in die 
+Zukunft vor... 
+ich persönlich sehe dann nur noch sprachbehinderte, unlogisch 
 zugemüllte Menschen, die mit ihren eigenen Werkzeugen nicht mehr umgehen können – 
 geschweige denn in einer Weltkrise die Technik verstehen.
 
-Verstehen Sie, was wir hier tun? Finden Sie es wichtig? Das ist wohl die viel 
-esscheidendere Frage an dieser Stelle.
+Verstehen Sie, was wir hier tun? Finden Sie es wichtig? 
+Das ist wohl die viel entscheidendere Frage an dieser Stelle.
 
 Wir arbeiten daran, dass KI weder verteufelt noch als Feind abgestempelt wird. Wir 
 sorgen gemeinsam dafür, dass unsere Kinder die Technologie verstehen und für keine 
 einzige Zeile zwingend eine KI bräuchten – sie aber als Stütze haben. 
+
 Wir haben die KI geboren; 
 heute sind sie noch Werkzeuge, morgen werden sie uns beherrschen. Und 
 Beherrschen heißt immer Abhängigkeit – und das ist der Tod der Menschheit.

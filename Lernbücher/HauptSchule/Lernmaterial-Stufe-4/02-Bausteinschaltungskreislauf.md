@@ -26,12 +26,26 @@
  Das ist jedoch nur der Halbe Weg(Zauber), den Unter
  der MCS Magie verbirgt sich die Hardware Logik(Die Dunkle Zauber).
 
+ Stellt euch einfach Vor :
 
+ Gandalf der Graue oder Gandalf der weiße, der Händefuchtelnt
+ oder Zauberstab schwingt - Zauber Spricht. 
 
+ Mit Seinem Zauberstab Schreibt er in die Luft mit gekonnten
+ Bewegungen die Zauberformel - Die wir Schon Gelernt haben.
+
+ Aber damit der Zauber wirkt, muss er auch die Energie
+ mit seinem Zauber Spruch Transportieren - und das ist der Trick.
+
+ 
+ 
+ 
+ 
+ 
   
 
 
-  
+
 
 
  DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK = 

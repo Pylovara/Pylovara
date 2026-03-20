@@ -17,16 +17,21 @@
   
 ## 1. Die Logik der Verkürzung
 
+ Die MCS Maschinen Code Sprache ist die Sprache
+ die wir über die Zeit mit Zauberworten gelernt haben.
+
+ Damit könnt ihr große Programme(Zauber) schreiben und
+ die Computer ansprechen oder Handys oder auch Smartwatches(etc).
+
+ Das ist jedoch nur der Halbe Weg(Zauber), den Unter
+ der MCS Magie verbirgt sich die Hardware Logik(Die Dunkle Zauber).
 
 
 
+  
 
 
-
-
-
-
-
+  
 
 
  DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK = 

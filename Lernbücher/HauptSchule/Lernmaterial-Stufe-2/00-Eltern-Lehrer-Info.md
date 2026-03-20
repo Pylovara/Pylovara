@@ -155,9 +155,12 @@ oder sich zeigen lassen was in C geschrieben eigentlich bedeutet.
 
 Ich Garantiere ihnen mit Brief und Siegel : „Sie werden Große Augen 
 machen, wenn sie sehen das sie nichts verstehen - was aber die 
-kaffemaschine ihnen jedoch verständlich erklärt hat“
+Kaffemaschine ihnen jedoch verständlich erklärt hat“
+Am besten sie Copieren den kaffemaschinen code in einen LLM Chat
+mit der zusatzs frage „erklär mir mal wieviel code es braucht für sowas triviales wie eine Kaffeemaschine in C oder python oder sonnst was“
 
-
+Am besten haben sie genug RAM den die LLM wird vor lauter Zeilen
+vermutlich abstürzen oder nur einen Bruchteil erklären können.
 
 Persönliche Meinung:
 

@@ -180,3 +180,9 @@ Denken sie am besten Immer an das hier :
 
 „Sie bringen nicht nur ihrem Kind was bei , sondern auch sich selbst“
 „Den sie sind der Motor der gegenwart und ihr Kind der Motor der zukunft“
+
+
+Gedanklicher Zusatz:
+
+ich persönlich wäre Froh gewesen, wenn mein Vater mit so einem 
+Lehrgang um die ecke gekommen wäre !

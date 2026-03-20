@@ -37,11 +37,11 @@
  Aber damit der Zauber wirkt, muss er auch die Energie
  mit seinem Zauberspruch Transportieren - und das ist der Trick.
 
- Wärendessen Gandalf den Zauber Spricht :
+ Wärendessen Gandalf den Zauber Vor sich her Murmelt :
 
  TRANU-START-AKTU-START-POIU-START-BOXU-PRINT-START-Erhebt euch, Wesen des Waldes-BOXAN-PRINT-ENDE-POIAN-ENDE-AKTAN-ENDE-TRANAN-ENDE
 
- Zeichnet er mit dem Zauberstab in die Luft :
+ Zeichnet er mit dem Zauberstab und Hand - in die Luft :
 
  ¢! »["Erhebt euch, Wesen des Waldes"]« !¢
 

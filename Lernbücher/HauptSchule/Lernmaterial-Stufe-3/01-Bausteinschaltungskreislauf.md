@@ -44,7 +44,31 @@
 
  ¢! »["Erhebt euch, Wesen des Waldes"]« !¢
 
- 
+ Und aus allen ecken des Waldes kommen dann 
+
+¢! 
+ ["Wesen"]
+ ¬· ["Bäume"]
+    ¬· »["Blätter Rascheln"]«
+    ¬· »["Äste Knarren"]«
+    ¬· »["Holz knistert"]«
+    
+ ¬· ["Tiere"]
+    ¬· »["Vögel Zwitschern"]«
+    ¬· »["Insekten Summen"]«
+    ¬· »["Rehe Springen"]«
+    
+ ¬· ["Geister"]
+    ¬· »["Flüstern"]«
+    ¬· »["Weinen"]«
+    ¬· »["Lachen"]«
+    
+ ¬· ["Menschen"]
+    ¬· »["Sprechen"]«
+    ¬· »["Lachen"]«
+    ¬· »["Grummeln"]«
+!¢
+
 
 !!!!!!!!(ab hier Heute abend weiter machen)!!!!!!!!!!!!!
 

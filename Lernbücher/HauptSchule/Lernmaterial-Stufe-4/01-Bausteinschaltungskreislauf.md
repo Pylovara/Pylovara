@@ -1,3 +1,10 @@
+
+ !! Ich muss das hier nochmal überarbeiten, da ich hier nicht
+ mit erwachsenen spreche sondern mit kinder und jugendlichen.
+ und ich sollte lektion 2 vor lektion 1 setzen um den
+ zusammenhang der hardware besser zu vermitteln.
+
+
 ## Kapitel 1 Zusammenspiel des Systems
 
  DIE BAUSTEINSCHALTUNGSKREISLAUF LOGIK = 

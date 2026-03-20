@@ -1,9 +1,3 @@
-
-
- !! Ich muss das hier nochmal überarbeiten, da ich hier nicht
- mit erwachsenen spreche sondern mit kinder und jugendlichen.
-
-
 ## Kapitel 2: Die Schaltung der Energie (Proton & Protonen-Fluss)
 
 Bisher haben wir über "Dinge" in Kisten gesprochen und Zauber. 

@@ -246,12 +246,13 @@ Augenprinzip. Wir wissen also, dass Gehirne Informationen viel besser
 wie einen „Video-Stream“ bearbeiten können, lange bevor sie Worte dafür 
 hatten.
 
-Kommunikation herrscht überall durch Haltungssymbolik, Mimik und Gestik. 
+Kommunikation herrscht überall durch Haltungssymbolik, Mimik und Gestik
+- wie auch Geruchs und Gefühlswarnehmungen. 
 Der Teil des Gehirns, der für die Verarbeitung dieser Synapsen zuständig 
 ist, ist der visuelle Cortex. Dieser am besten trainierte, genetisch 
 übertragene Teil, der die Evolution seit der Entstehung von Allem, was 
 sich selbst replizieren, denken oder handeln kann, begleitet, wird heute 
-oft nicht genutzt.
+oft nicht genutzt - leider.
 
 Stattdessen stehen oft 20 Jahre Studium (nach der Schule) an, plus 
 weitere 10 Jahre, um das eigentlich Studierte auch wirklich zu verstehen 
@@ -286,12 +287,15 @@ Egal ob als (und verzeihen Sie mir meinen Enthusiasmus):
 - Mathematiker der AAA-Klasse
 - Biologe der AAA-Klasse
 
-Und das Beste ist: Sie können mit MCS sogar direkt Arbeiten aus dem 
+Und das Beste ist: 
+Sie können mit MCS sogar direkt Arbeiten aus dem 
 Bereich der Kybernetik vermitteln – als echte Alternative zu dem, was 
 heute oft in den Schulen gelehrt wird (nicht zwingend als Ersatz zu 
-empfehlen, aber absolut als mächtige Ergänzung möglich!).
+empfehlen, aber absolut als mächtige Ergänzung!).
 
-Oder sie können bei Pylovara direkt ihr Geld verdienen! 
+Oder sie können bei Pylovara direkt ihr Geld verdienen und zwar
+unabhängig, eigenständig und flexibel - ohne "Titel" Nachweis! 
+(Dafür Garantiere ich als Gründer von Pylovara-System und MCS!)
 
 Wir wünschen unseren Kindern keine „Gehirnblutungen“ durch künstlich 
 hochgeschraubte Abstraktionsschichten. 

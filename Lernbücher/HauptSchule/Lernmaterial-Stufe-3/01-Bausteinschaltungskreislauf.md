@@ -14,8 +14,6 @@
   die alten Begriffe im klammern auftauchen, so 
   das ihr sie nicht vergessen könnt.
 
-
-  
 ## 1. Die Logik der Verkürzung
 
  Die MCS Maschinen Code Sprache ist die Sprache
@@ -30,7 +28,7 @@
  Stellt euch einfach Vor :
 
  Gandalf der Graue oder Gandalf der weiße, der Händefuchtelnt
- oder Zauberstab schwingt - Zauber Spricht. 
+ oder Zauberstab schwingend - Zauber Spricht. 
 
  Mit Seinem Zauberstab Schreibt er in die Luft mit gekonnten
  Bewegungen die Zauberformel - Die wir Schon Gelernt haben.
@@ -48,7 +46,7 @@
 
  
 
-
+!!!!!!!!(ab hier Heute abend weiter machen)!!!!!!!!!!!!!
 
 
 

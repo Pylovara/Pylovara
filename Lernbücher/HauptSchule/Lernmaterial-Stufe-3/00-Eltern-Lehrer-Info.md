@@ -2,128 +2,119 @@
 
 Liebe Eltern, liebe Lehrkräfte,
 
-In diesem Lernmaterial Lernen wir den Bausteinschaltungskreislauf,
-in verbindung mit dem "Zauberwald" und den "Zauberern" aus dem 2ten Teil.
+in diesem Lernmaterial behandeln wir den Bausteinschaltungskreislauf 
+(BSK) in Verbindung mit dem „Zauberwald“ und den „Zauberern“ aus dem 
+zweiten Teil.
 
-Sie werden langsam darauf vorbereitet zu verstehen das jedes Symbol 
-keine losen gegenstände sind sondern in direkter verbindung mit dem
-untergebauten System steht.
+Die Kinder werden schrittweise darauf vorbereitet zu verstehen, dass die 
+Symbole keine losen Gegenstände sind, sondern in direkter Verbindung mit 
+dem darunterliegenden System stehen. Hierbei wird das duale Denken 
+gefördert!
 
-Hier bei wird das Duale Denken gefödert !
+Wenn wir fertig sind, werden die Kinder bei jedem Symbol den BSK-Wert 
+vor ihrem inneren Auge sehen und parallel dazu die Logik der 
+Programmiersprache erfassen.
 
-wenn wir fertig sind, werden kinder bei jedem symbol den BSK-Wert
-im inneren auge sehen und parallel dazu die Logik der Programmiersprache.
+Herkömmliche Sprachen wie C nutzen oft Bibliotheken, die wie Hexerei 
+wirken, da sie nicht in der Sprache selbst verankert sind. Ihr Kind wird 
+durch keine andere Sprache so tiefgreifend verstehen können, wie das 
+System-Zusammenspiel wirklich funktioniert – das können Sie gerne selbst 
+recherchieren. ;-)
 
-C hat nur Bibliotheken die wie hexereien wirken - 
-da sie nicht in der sprache selbst verankert sind.
+Das Ziel dieses Lernmaterials ist es:
+- Dem Kind Dualität im Denken, sprich „paralleles Denken“, beizubringen.
+- Dem Kind zu zeigen, dass eine Oberfläche immer einen Unterbau besitzt.
+- Dem Kind extrem hardwarenah zu vermitteln, wie Systeme funktionieren.
+- Das gehirngerechte, bildliche und dennoch sprachliche Denken zu fördern.
 
-Ihr kind wird durch keine andere sprache verstehen können wie das
-zusammenspiel funktioniert - Das können sie gerne selbst Recherchieren ;-)
+Das ist echtes Deep Learning!
 
-Das Ziel in diesem Lernmaterial ist es :
-
-- Das Kind Dualität im Denken, sprich „Parallelitäres Denkens“ beibringt..
-- Dem Kind zu Zeigen das eine oberfläche, immer einen unterbau besitzt.
-- Dem Kind Extrem Hardware nah beizubringen, wie Systeme funktionieren.
-- Gehirnliches Bildliches und dennoch Sprachliches Denken zu fördern.
-
-...... Das ist echtes Deep Learning!
-
-Ja ... wir Arbeiten hier mit Pylovara-System, einem Echten (von mir entwickeltem) System.
------------------------------------------------------------------------------------------
-Das System ist so aufgebaut das es die Logik von C, C++, Python, Java, Rust, Go, Swift, 
+Ja, wir arbeiten hier mit dem Pylovara-System, einem echten, von mir 
+entwickelten System.
+-----------------------------------------------------------------------------------
+Das System ist so aufgebaut, dass es die Logik von C, C++, Python, Java, Rust, Go, Swift, 
 Kotlin, PHP, Ruby, TypeScript, JavaScript, C#, Dart, Scala, R, Julia, Perl, Haskell, 
-Lua, Shell, SQL, HTML, CSS, XML, JSON, YAML, TOML, INI, CFG, .env,
------------------------------------------------------------------------------------------
-In einer einzige Sprache vereint !
+Lua, Shell, SQL, HTML, CSS, XML, JSON, YAML, TOML, INI, CFG, .env...
+-----------------------------------------------------------------------------------
+...in einer einzigen Sprache vereint!
 
-Ich möchte hier eine sache kurz zur Sprache bringen , weil ich denke das es Relevant ist:
+Ich möchte hier eine Sache kurz zur Sprache bringen, da ich sie für relevant halte:
+Nein, ich forme mit diesem Lernmaterial keine Konsumenten von Technologie – sondern ich forme die Architekten von morgen!
 
-Nein, ich Forme mit diesem Lernmaterial keine Konsumenten von Technologie -
-Sondern ich Forme die Architekten von Morgen !
+Und ja (verzeihen Sie mir diesen einen egoistischen Gedanken): Ich bin stolz darauf, dass ich das tun kann und garantieren kann, 
+dass Ihr Kind später mit dem Pylovara-System programmieren kann – bei UNS!
 
-Und ja (verzeihen sie mir diesen einen Ergoistischen gedanken) - 
-Ich bin Stolz darauf, das ich das tun kann und auch Garantieren kann 
-das ihr Kind später mit Pylovara-System Programmieren kann - bei UNS ! 
+Das Dilemma der heutigen Zeit ist, dass wir zu viele Sprachen haben und die 
+Kinder nicht wissen, welche sie lernen sollen. Zudem rutscht die Abstraktion 
+der Sprachen in ein Pensum, das kein Gehirn der Welt mehr verarbeiten kann. 
+Das ist nicht der Sinn der Sache!
 
-Das Dillema der heutigen Zeit ist ja das wir zu viele Sprachen haben
-und die Kinder nicht wissen welche sie lernen sollen.
+Mit diesem Lernmaterial lehren Sie die Kinder zwar natives MCS, aber Sie lehren 
+ihnen weit mehr als nur unsere Logik: Sie lernen das System hinter den Systemen 
+kennen und können so jede Sprache verstehen. Wenn ein Kind später mit C in 
+Kontakt kommt, sieht es logische Abläufe wie Blöcke und kann die Syntax viel 
+schneller erlernen. Was es aber nicht muss – und das ist der Clou an der ganzen 
+Sache.
 
-Wie auch die Abstraktivität der Sprachen, in ein Pensum Rutscht, 
-das kein Gehirn der Welt verarbeiten kann.
+-----------------------------------------------------------------------------------
+Wir bringen den Kindern bei, dass es nicht auf die Sprache ankommt, sondern auf 
+die Logik dahinter!
 
-Das ist ja auch nicht der Sinn der Sache ! 
+Und verzeihen Sie mir meinen Frust, aber: So einen unlogischen BULLSHIT wie die 
+gesamte Unix-Welt habe ich noch nie gesehen!
+-----------------------------------------------------------------------------------
 
-Mit diesem Lernmaterial lehren sie Kinder zwar Natives MCS aber sie lehren
-ihren Kinder weit mehr als nur unsere Logik !
+Wie Sie sicherlich erkannt haben, müssen Großkonzerne jetzt jede KI an diesen 
+Bullshit gewöhnen und darauf trainieren. Das wird noch Jahre dauern, ist extrem 
+teuer und wenn sie fertig sind, lernen Menschen dabei nichts mehr und verdummen an 
+der eigenen Abstraktion der weltgeschichtlichen Entwicklung!
 
-Sie lernen das System hinter den Systemen und können so jede Sprache
-verstehen und lernen. 
+Was wir hier tun, ist, den Konzernen nicht mehr zu erlauben, unsere Kinder mit 
+Konsumenten-Denken zuzumüllen. Wir lassen sie wieder zum Herrscher über die 
+Technologie werden. Stellen Sie sich das heutige Szenario einmal 200 Jahre in die 
+Zukunft vor... ich persönlich sehe dann nur noch sprachbehinderte, unlogisch 
+zugemüllte Menschen, die mit ihren eigenen Werkzeugen nicht mehr umgehen können – 
+geschweige denn in einer Weltkrise die Technik verstehen.
 
-Wenn ein Kind später mit C in kontakt kommt dann sieht es Logische abläufe
-wie Blöcke und kann so die Syntax der Sprache viel schneller lernen.
+Verstehen Sie, was wir hier tun? Finden Sie es wichtig? Das ist wohl die viel 
+esscheidendere Frage an dieser Stelle.
 
-Was es aber nicht muss - und das ist der Clou an dem Ganzen 
------------------------------------------------------------------------------------------
+Wir arbeiten daran, dass KI weder verteufelt noch als Feind abgestempelt wird. Wir 
+sorgen gemeinsam dafür, dass unsere Kinder die Technologie verstehen und für keine 
+einzige Zeile zwingend eine KI bräuchten – sie aber als Stütze haben. 
+Wir haben die KI geboren; 
+heute sind sie noch Werkzeuge, morgen werden sie uns beherrschen. Und 
+Beherrschen heißt immer Abhängigkeit – und das ist der Tod der Menschheit.
 
-Wir bringen den Kindern bei , das es nicht auf die Sprache ankommt - 
-sondern auf die Logik dahinter ! 
+Wir müssen also gemeinsam wachsen, und zwar effektiv, ohne Konsum-Datenmüll. 
+Das ist der Kern, an dem unsere Zukunft und die Zukunft Ihres Kindes gemessen 
+werden wird. Deswegen nehme ich mir die „Frechheit“ heraus, Ihnen eine Lösung für 
+dieses Problem an die Hand zu geben!
 
-und verzeihen sie mir meinen Frust aber :
+Ja – ich bin der Entwickler.
+Ja – ich werde Programmierer als Teil des Systems aufnehmen.
+Und ja – das Lernmaterial gibt Ihren Kindern die Wahl.
 
-So unlogischen BULLSHIT wie die gesamten Unix welt , hab ich noch nie gesehen ! 
+Mir ist bewusst, dass es eine Bevorzugung geben wird, weil sie dieses System nativ 
+gelernt haben. Aber: Das hier ist keine Verkaufsmasche, sondern eine Revolution 
+der Bildung! Ich möchte das alles nur gesagt haben, damit Sie verstehen, wer ich 
+bin und was wir hier gemeinsam für Ihr Kind bewerkstelligen! Und vielleicht sogar 
+für Sie selbst...
 
------------------------------------------------------------------------------------------
+Zusatz:
+Ihr Kind wird später jedes Wort der KI verstehen und die Logik dahinter erkennen 
+können, ohne bange sein zu müssen, ob es Datenlecks oder ähnliches gibt. Wir 
+behandeln die KI nicht als Sklaven und Ihr Kind auch nicht, sondern lassen beide 
+Welten auf Augenhöhe miteinander verschmelzen.
 
-Wie sie sicherlich erkannt haben, müssen GroßKonzerne jetzt jede AI an diesen Bullshit
-Gewöhnen und trainieren. 
+Während andere irgendwelche dahingeschmierten „Apps“ per Unix und diversen 
+Sprachen zusammenbauen, können Kinder, Jugendliche und natürlich auch Erwachsene 
+Dinge konstruieren und dabei nativ dem Code folgen – ohne Fragezeichen.
 
-Das wird noch Jahre dauern und ist extrem Teuer und wenn sie Fertig sind
-dann lernen Menschen dabei nichts mehr und Verdummen an der eigenen Abstraktion
-der gesamten Weltgeschichtlichen Entwicklung ! 
+Wir machen damit beide Welten glücklich – KI und Menschen!
+KI: Weil sie nie wieder unehrlichen Code konstruieren muss.
+Menschen: Weil sie die Technologie verstehen und beherrschen können!
 
-Was Wir hier tun ist es den Konzernen nicht mehr zu erlauben unseren Kinder
-mit Konsumenten denken zuzumüllen, sondern sie wieder zum Herrscher der 
-der Technologie werden zu lassen.
+Das ist echte moralische Verantwortung!
 
-Stellen sie sich das heutige senario mal 200 jahre in die zuckunft vor ...
-
-Ich persönlich sehe dann nur noch Sprachbehinderte, unlogisch zugemüllte Menschen
-die mit ihren eigenen Werkzeugen nicht mehr umgehen können.
-
-Geschweigeden in einer Weltkriese , die Technik Verstehen ....
-
-Verstehen sie was wir hier tun ?
-Finden sie es wichtig, is wohl die viel wichtigerer Frage an der stelle .... ?
-
-Wir hier arbeiten daran das AI weder verteufelt noch als Feind abgestempelt werden
-kann, in dem wir gemeinsam dafür sorgen das Unsere Kinder die Technologie Verstehen
-und für keine einzige zeile wirklich Ai bräuchten - aber als Stüze haben.
-
-Wir haben AI geboren, heute sind sie noch werkzeuge - morgen werden sie uns beherrschen
-Und Beherrschen heißt immer abhängigkeit - und das ist der Tod der Menschheit.
-
-Wir müssen also gemeinsam wachsen und zwar effecktiv ohne KonsumerDatenmüll.
-
-Das ist der Kern woran unsere Zuckunft und die zuckunft ihres Kindes Gemessen werden wird
-und deswegen nehme ich mir die "Frechheit" heraus, ihnen eine lösung für dieses problem
-an die hand zu geben !
-
-Ja - Ich bin der Dev 
-JA - Ich werde Programmierer als Teil des Systemes aufnehmen
-und JA - das Lernmaterial gäbe ihren kinder die wahl ...
-
-und Ja , mir ist bewusst das es eine bevorzugung geben wird weil sie dieses
-System Nativ gelernt haben.
-
-Aber !
-
-Das das hier ist keine Verkaufsmasche , sondern eine Revolution der Bildung ! 
-
-
-Ich möchte das alles nur gesagt haben, damit sie verstehen wer ich bin und was 
-wir hier gemeinsam für Ihr kind bewerkstelligen !
-
-und vielleicht sogar für sie selbst ....
-
------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------

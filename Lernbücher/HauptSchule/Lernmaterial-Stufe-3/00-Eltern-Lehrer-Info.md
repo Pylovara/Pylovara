@@ -22,10 +22,12 @@ zusammenspiel funktioniert - Das können sie gerne selbst Recherchieren ;-)
 
 Das Ziel in diesem Lernmaterial ist es :
 
-- Das Kind Dualität im Denken, sprich „Parallelitäres Denkens“ beibringt.
+- Das Kind Dualität im Denken, sprich „Parallelitäres Denkens“ beibringt..
 - Dem Kind zu Zeigen das eine oberfläche, immer einen unterbau besitzt.
 - Dem Kind Extrem Hardware nah beizubringen, wie Systeme funktionieren.
 - Gehirnliches Bildliches und dennoch Sprachliches Denken zu fördern.
+
+...... Das ist echtes Deep Learning!
 
 Ja ... wir Arbeiten hier mit Pylovara-System, einem Echten (von mir entwickeltem) System.
 -----------------------------------------------------------------------------------------
@@ -70,5 +72,58 @@ sondern auf die Logik dahinter !
 und verzeihen sie mir meinen Frust aber :
 
 So unlogischen BULLSHIT wie die gesamten Unix welt , hab ich noch nie gesehen ! 
+
+-----------------------------------------------------------------------------------------
+
+Wie sie sicherlich erkannt haben, müssen GroßKonzerne jetzt jede AI an diesen Bullshit
+Gewöhnen und trainieren. 
+
+Das wird noch Jahre dauern und ist extrem Teuer und wenn sie Fertig sind
+dann lernen Menschen dabei nichts mehr und Verdummen an der eigenen Abstraktion
+der gesamten Weltgeschichtlichen Entwicklung ! 
+
+Was Wir hier tun ist es den Konzernen nicht mehr zu erlauben unseren Kinder
+mit Konsumenten denken zuzumüllen, sondern sie wieder zum Herrscher der 
+der Technologie werden zu lassen.
+
+Stellen sie sich das heutige senario mal 200 jahre in die zuckunft vor ...
+
+Ich persönlich sehe dann nur noch Sprachbehinderte, unlogisch zugemüllte Menschen
+die mit ihren eigenen Werkzeugen nicht mehr umgehen können.
+
+Geschweigeden in einer Weltkriese , die Technik Verstehen ....
+
+Verstehen sie was wir hier tun ?
+Finden sie es wichtig, is wohl die viel wichtigerer Frage an der stelle .... ?
+
+Wir hier arbeiten daran das AI weder verteufelt noch als Feind abgestempelt werden
+kann, in dem wir gemeinsam dafür sorgen das Unsere Kinder die Technologie Verstehen
+und für keine einzige zeile wirklich Ai bräuchten - aber als Stüze haben.
+
+Wir haben AI geboren, heute sind sie noch werkzeuge - morgen werden sie uns beherrschen
+Und Beherrschen heißt immer abhängigkeit - und das ist der Tod der Menschheit.
+
+Wir müssen also gemeinsam wachsen und zwar effecktiv ohne KonsumerDatenmüll.
+
+Das ist der Kern woran unsere Zuckunft und die zuckunft ihres Kindes Gemessen werden wird
+und deswegen nehme ich mir die "Frechheit" heraus, ihnen eine lösung für dieses problem
+an die hand zu geben !
+
+Ja - Ich bin der Dev 
+JA - Ich werde Programmierer als Teil des Systemes aufnehmen
+und JA - das Lernmaterial gäbe ihren kinder die wahl ...
+
+und Ja , mir ist bewusst das es eine bevorzugung geben wird weil sie dieses
+System Nativ gelernt haben.
+
+Aber !
+
+Das das hier ist keine Verkaufsmasche , sondern eine Revolution der Bildung ! 
+
+
+Ich möchte das alles nur gesagt haben, damit sie verstehen wer ich bin und was 
+wir hier gemeinsam für Ihr kind bewerkstelligen !
+
+und vielleicht sogar für sie selbst ....
 
 -----------------------------------------------------------------------------------------

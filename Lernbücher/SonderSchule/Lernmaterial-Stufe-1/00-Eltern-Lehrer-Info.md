@@ -294,4 +294,6 @@ empfehlen, aber absolut als mächtige Ergänzung möglich!).
 Oder sie können bei Pylovara direkt ihr Geld verdienen! 
 
 Wir wünschen unseren Kindern keine „Gehirnblutungen“ durch künstlich 
-hochgeschraubte Abstraktionsschichten. Wir wollen sie richtig schulen! <3
+hochgeschraubte Abstraktionsschichten. 
+
+Wir wollen sie richtig schulen! <3

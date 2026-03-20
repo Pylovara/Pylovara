@@ -295,7 +295,7 @@ empfehlen, aber absolut als mächtige Ergänzung!).
 
 Oder sie können bei Pylovara direkt ihr Geld verdienen und zwar
 unabhängig, eigenständig und flexibel - ohne "Titel" Nachweis! 
-(Dafür Garantiere ich als Gründer von Pylovara-System und MCS!)
+(Dafür Garantiere ich als Urheber und Vater von Pylovara-System !)
 
 Wir wünschen unseren Kindern keine „Gehirnblutungen“ durch künstlich 
 hochgeschraubte Abstraktionsschichten. 

@@ -26,6 +26,8 @@ Er ist der sichere Raum für unsere Zauber.
 
 ¢! Zauberrand !¢
 
+(Ohne Zauberrand, keinen Zauber)
+
 
 #######################################################
 
@@ -38,6 +40,8 @@ Lieblinge sicher zu verpacken.
 
 
 ¢! Zauberkiste [] !¢
+
+(Ohne Zauberkiste, keine sicheren Berreich)
 
 
 #######################################################
@@ -52,6 +56,8 @@ zu trennen.
 
 
 ¢! Zauberkiste [Zauber|trennwand]  !¢
+
+(Ohne Zaubertrennwand, kein geordneter Bereich)
 
 
 #######################################################
@@ -70,6 +76,8 @@ Zauberkiste [Zauber|trennwand]
 Meister REX ¬· [Schlafende Zauberkiste]
 
 !¢
+
+(Ohne Meister Rex, kein Aufbau der Zaubertische)
 
 
 #######################################################
@@ -94,6 +102,8 @@ Meister REX ¬· »[Wache Zauberkiste]«
     Meister REX ¬· [Schlafende Zauberkiste]
 
 !¢
+
+(Ohne Aktionszauber, keine wache Zauberkiste)
 
 
 #######################################################
@@ -126,6 +136,8 @@ Meister REX ¬· [Schlafende Zauberkiste]
 
 !¢
 
+(Ohne Igel-Wächter, kein Entscheidungszauber)
+
 
 #######################################################
 
@@ -153,6 +165,8 @@ Meister REX ¬· [Schlafende Zauberkiste]
           Meister REX ¬· [Schlafende Zauberkiste]
 
 !¢
+
+(Ohne Zauber-Karussell, kein Wiederholungszauber)
 
 
 #######################################################

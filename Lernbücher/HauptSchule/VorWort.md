@@ -63,8 +63,10 @@ Hierbei handelt es sich um :
 
 - **Technische Relevanz:** 
 Entspricht der Definition von 
-**Objektattributen** oder **Konfigurationsparametern** in der 
-Programmierung.
+**Objektattributen** 
+oder 
+**Konfigurationsparametern** 
+in der Programmierung.
 
 ### 2. Schlafende vs. Wache Kisten
 

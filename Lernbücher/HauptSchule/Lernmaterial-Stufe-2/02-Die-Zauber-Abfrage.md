@@ -17,11 +17,17 @@ Für was Brauchen wir den zauberrand ? :
 
 
 
+
+
+
 ----------------------------------------------------
 
 - Der Aktionszauber         » … « 
 
 Für was Brauchen wir den Aktionszauber ? :
+
+
+
 
 
 
@@ -36,12 +42,18 @@ Wieviele Zauberkisten gibt es ? :
 
 
 
+
+
+
 ----------------------------------------------------
 
 
 - Die Zaubertrennwand       |   
 
 Für was Brauchen wir die Zaubertrennwand ? :
+
+
+
 
 
 
@@ -55,6 +67,9 @@ Was Tut Meister Rex zaubern ? :
 
 
 
+
+
+
 ----------------------------------------------------
 
 - Der Igel-Wächter          ¶ / ¶¶     
@@ -64,11 +79,17 @@ Was kann der Igel-Wächter Zaubern ? :
 
 
 
+
+
+
 ----------------------------------------------------
 
 - Das Zauber-Karussell      ««Ω    
 
 Was kann das Zauber-Karusell ? :
+
+
+
 
 
 

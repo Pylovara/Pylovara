@@ -14,40 +14,49 @@ tun und wofür wir sie gebraucht werden.
 
 # 1. Die Zauber Auffrischung
 
-- Der Zauberrand            ¢! … !¢  
+- Der Zauberrand  ¢! … !¢  ist die GrundMagie
 
-Der Zauberrand ist ein Zauber der uns hilft, unsere Zauber sicher zu machen.
-Er ist wie ein sicherer Raum für unsere Zauber.
+Der Zauberrand ist ein Zauber der uns hilft, unsere Zauber 
+sicher zu machen - Tiere, Pflanzen, Gegenstände, Orte.
 
-- Die Zauberkiste           []         Träger der Bedeutung
+Er ist der sichere Raum für unsere Zauber.
+
+#######################################################
+
+- Die Zauberkiste  []  Träger von Allem
 
 Die Zauberkiste ist ein Zauber der uns hilft, unsere 
 Lieblinge sicher zu verpacken.
 
+#######################################################
 
 - Die Zaubertrennwand       |          Ordnung ohne Chaos
 
 Die Zaubertrennwand ist ein Zauber der uns hilft, unsere 
 Zauber ordentlich zu trennen.
 
+#######################################################
 
 - Meister REX               ¬·         Meister REX, der die Arbeitstische aufstellt
 
 Meister REX ist der Zauberer der uns hilft, unsere 
 Zauber auf Jedem Tisch aufzustellen.
 
+#######################################################
 
 - Der Aktionszauber         » … «      Erlaubnis zur Tat
 
 Der Aktionszauber ist ein Zauber der uns hilft, unsere 
 Zauber in Bewegung zu setzen, aufzuwecken.
 
+#######################################################
 
 - Der Igel-Wächter          ¶ / ¶¶     Wächter der Entscheidungen
 
 Der Igel-Wächter ist ein Zauber der uns hilft, unsere 
 Entscheidungzauber für Beide fälle aufzubauen.
 
+#######################################################
 
 - Das Zauber-Karussell      ««Ω        Um Argumente zu setzen das Zauberkarussell „Wiederholungen“
 
@@ -55,7 +64,7 @@ Das Zauber-Karussell ist ein Zauber der uns hilft,
 unsere Wiederholungszauber an eine Wache Zauberkiste
 zu binden.
 
-
+#######################################################
 
 
 

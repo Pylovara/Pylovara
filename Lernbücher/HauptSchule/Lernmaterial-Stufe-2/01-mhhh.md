@@ -59,8 +59,13 @@ Was kann das Zauber-Karusell ? :
 
 ----------------------------------------------------
 
+# 2. Grundlegendes Tastatur Wissen
 
-# 2. Zauber Symbole auf der Tastatur finden
+
+
+
+
+# 3. Zauber Symbole auf der Tastatur finden
 
 Und jetzt Lernen wir die Zauber Symbole auf 
 der Tastatur kennen!

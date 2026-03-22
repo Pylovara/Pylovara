@@ -47,6 +47,10 @@ Lieblinge sicher zu verpacken.
 
 Fachbegriff: Protein
 
+Ohne Aktionszauber: Schlafende Zauberkiste
+
+Fachbegriff: Unausführbares Protein
+
 
 #######################################################
 
@@ -64,6 +68,7 @@ zu trennen.
 (Ohne Zaubertrennwand, kein geordneter Bereich)
 
 Fachbegriff: Trennbefehl
+
 
 #######################################################
 
@@ -113,6 +118,10 @@ Meister REX ¬· »[Wache Zauberkiste]«
 (Ohne Aktionszauber, keine wache Zauberkiste)
 
 Fachbegriff: Aktionsdraht
+
+Mit Aktionszauber: Wache Zauberkiste
+
+Fachbegriff: Ausführbares Protein
 
 
 #######################################################

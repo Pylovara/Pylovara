@@ -56,6 +56,7 @@ zu trennen.
 
 #######################################################
 
+
 - Meister REX  ¬·  der die Arbeitstische aufstellt
 
 Meister REX ist der Zauberer der uns hilft, unsere 
@@ -72,6 +73,7 @@ Meister REX ¬· [Schlafende Zauberkiste]
 
 
 #######################################################
+
 
 - Der Aktionszauber  » … «  Erlaubnis zur Tat
 
@@ -95,6 +97,7 @@ Meister REX ¬· »[Wache Zauberkiste]«
 
 
 #######################################################
+
 
 - Der Igel-Wächter  ¶ / ¶¶  der Entscheidungszauber
 
@@ -126,6 +129,7 @@ Meister REX ¬· [Schlafende Zauberkiste]
 
 #######################################################
 
+
 - Das Zauber-Karussell  ««Ω  das Zauberkarussell „Wiederholungen“
 
 Das Zauber-Karussell ist ein Zauber der uns hilft, 
@@ -133,6 +137,23 @@ unsere Wiederholungszauber an eine Wache Zauberkiste
 zu binden.
 
 Er ermöglicht uns das Etwas öfters wiederholt werden soll.
+
+
+¢!
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶ [Zauberkiste] # Ja Zauber
+     Meister REX ¬· »[Wache Zauberkiste]«««Ω  (das Zauberkarussell „Wiederholungen“)
+         Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶¶ [Zauberkiste] # Nein Zauber
+      Meister REX ¬· »[Wache Zauberkiste]«
+          Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
 
 #######################################################
 

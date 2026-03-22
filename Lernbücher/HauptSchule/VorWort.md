@@ -26,6 +26,7 @@ Jedoch als Zweitmerkmal und das Lernmaterial übergreifend,
 wir bleiben bei den Zauberbegriffen und den Fachbegriffen,
 so das die Kinder beides verstehen können und in den 
 (sogenannten) „Eselsbrücken Gedächtnis“ hängen bleibt.
+(dazu am schluss noch mehr)
 
 Darüber hinaus führen wir das Konzept:
 
@@ -198,8 +199,9 @@ das lehrt die Kinder : "Hinterlasse niemals Datenmüll"
 --------------------------------------------------------------
 
 Sie verstehen also das ihr in diesem Punkt die Syntax der MCS-Sprache 
-lernt. Aber nicht nur das, sondern auch die Logik dahinter. Und das auf 
-eine Art und Weise, die kindgerecht und verständlich ist. 
+lernt - aber nicht nur das, sondern auch die Logik dahinter. 
+Auf diese Art und Weise, Lernen wir die kindgerecht und verständlich 
+art des vorgehens. 
 
 Wir führen auch ab dieser Phase , neber den Zauber* begriffen , die 
 echten Fachbegriffe ein vom Pylovara-System.

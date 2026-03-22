@@ -28,6 +28,8 @@ Er ist der sichere Raum für unsere Zauber.
 
 (Ohne Zauberrand, keinen Zauber)
 
+Fachbegriff: Transaktionsrahmen
+
 
 #######################################################
 
@@ -42,6 +44,8 @@ Lieblinge sicher zu verpacken.
 ¢! Zauberkiste [] !¢
 
 (Ohne Zauberkiste, keine sicheren Berreich)
+
+Fachbegriff: Protein
 
 
 #######################################################
@@ -59,6 +63,7 @@ zu trennen.
 
 (Ohne Zaubertrennwand, kein geordneter Bereich)
 
+Fachbegriff: Trennbefehl
 
 #######################################################
 
@@ -78,6 +83,8 @@ Meister REX ¬· [Schlafende Zauberkiste]
 !¢
 
 (Ohne Meister Rex, kein Aufbau der Zaubertische)
+
+Fachbegriff: REX
 
 
 #######################################################
@@ -104,6 +111,8 @@ Meister REX ¬· »[Wache Zauberkiste]«
 !¢
 
 (Ohne Aktionszauber, keine wache Zauberkiste)
+
+Fachbegriff: Aktionsdraht
 
 
 #######################################################
@@ -138,6 +147,8 @@ Meister REX ¬· [Schlafende Zauberkiste]
 
 (Ohne Igel-Wächter, kein Entscheidungszauber)
 
+Fachbegriff: Sentiator
+
 
 #######################################################
 
@@ -167,6 +178,8 @@ Meister REX ¬· [Schlafende Zauberkiste]
 !¢
 
 (Ohne Zauber-Karussell, kein Wiederholungszauber)
+
+Fachbegriff: Argument
 
 
 #######################################################

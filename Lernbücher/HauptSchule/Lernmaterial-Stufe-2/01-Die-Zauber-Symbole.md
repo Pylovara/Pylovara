@@ -13,20 +13,32 @@ tun und wofür wir sie gebraucht werden.
 
 
 # 1. Die Zauber Auffrischung
+#######################################################
+
 
 - Der Zauberrand  ¢! … !¢  ist die GrundMagie
 
+
 Der Zauberrand ist ein Zauber der uns hilft, unsere Zauber 
 sicher zu machen - Tiere, Pflanzen, Gegenstände, Orte.
-
 Er ist der sichere Raum für unsere Zauber.
+
+
+¢! Zauberrand !¢
+
 
 #######################################################
 
+
 - Die Zauberkiste  []  Träger von Allem
+
 
 Die Zauberkiste ist ein Zauber der uns hilft, unsere 
 Lieblinge sicher zu verpacken.
+
+
+¢! Zauberkiste [] !¢
+
 
 #######################################################
 

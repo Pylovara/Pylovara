@@ -10,6 +10,11 @@ aufschreiben und uns ansehen, was sie tun.
 
 
 
+
+
+
+# 1. Zauber Abfragen
+
 - Der Zauberrand            ¢! … !¢    
 
 Für was Brauchen wir den zauberrand ? :
@@ -30,14 +35,35 @@ Wieviele Zauberkisten gibt es ? :
 ----------------------------------------------------
 
 
-- Die Zaubertrennwand       |          
+- Die Zaubertrennwand       |   
+
+Für was Brauchen wir die Zaubertrennwand ? :
+
+----------------------------------------------------
+
 - Meister REX               ¬·         
      
+Was Tut Meister Rex zaubern ? :
+
+----------------------------------------------------
+
 - Der Igel-Wächter          ¶ / ¶¶     
+
+Was kann der Igel-Wächter Zaubern ? :
+
+----------------------------------------------------
+
 - Das Zauber-Karussell      ««Ω    
 
+Was kann das Zauber-Karusell ? :
 
-Und jetzt Lernen wir die Zauber Symbole auf der Tastatur kennen!
+----------------------------------------------------
+
+
+# 2. Zauber Symbole auf der Tastatur finden
+
+Und jetzt Lernen wir die Zauber Symbole auf 
+der Tastatur kennen!
 
 
 

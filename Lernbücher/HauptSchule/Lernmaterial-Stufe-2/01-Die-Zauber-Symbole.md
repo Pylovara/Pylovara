@@ -49,7 +49,11 @@ jeden Zauber auszubauen.
 - Der Aktionszauber  » … «  Erlaubnis zur Tat
 
 Der Aktionszauber ist ein Zauber der uns hilft, unsere 
-Zauber in Bewegung zu setzen, aufzuwecken.
+Zauberkisten in Bewegung zu setzen, aufzuwecken.
+
+Wenn eine Kiste schläft, dann kann sie nur schlafen. 
+Wenn eine Kiste Wach ist, dann kann sie alles tun was wir 
+ihr sagen.
 
 #######################################################
 

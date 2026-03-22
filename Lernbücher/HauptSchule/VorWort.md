@@ -22,6 +22,11 @@ die wir zuvor bildlich umschrieben haben:
 - **Proton** (statt kleine Zauberkiste)
 - **Aktionsdraht** (statt Aktionszauber)
 
+Jedoch als Zweitmerkmal und das Lernmaterial übergreifend,
+wir bleiben bei den Zauberbegriffen und den Fachbegriffen,
+so das die Kinder beides verstehen können und in den 
+(sogenannten) „Eselsbrücken Gedächtnis“ hängen bleibt.
+
 Darüber hinaus führen wir das Konzept:
 
 - der **Datenstrukturierung** 

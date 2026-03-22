@@ -13,7 +13,7 @@ und die Konzepte dahinter erfassen können.
 Deshalb führen wir ab dieser Stufe die professionellen Fachbegriffe ein, 
 die wir zuvor bildlich umschrieben haben:
 
-- **Argumente** (präzise Befehle/Werte innerhalb von `{}`)
+- **Argumente** (Zauber-Karusell «« mit Loop als Wiederholungszauber)
 - **Sentiatoren** (Zustandsprüfer/Entscheidungslogik)
 - **Transaktionsrahmen** (statt Zauberrand)
 - **Arbeitsflächenprozess** (statt Meister REX)

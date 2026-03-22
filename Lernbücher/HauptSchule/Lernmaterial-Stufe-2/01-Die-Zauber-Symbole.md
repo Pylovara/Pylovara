@@ -82,6 +82,18 @@ Wenn eine Kiste schläft, dann kann sie nur schlafen.
 Wenn eine Kiste Wach ist, dann kann sie alles tun was wir 
 ihr sagen.
 
+¢!
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+   Meister REX ¬· »[Wache Zauberkiste]«
+
+Meister REX ¬· »[Wache Zauberkiste]«
+    Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
+
 #######################################################
 
 - Der Igel-Wächter  ¶ / ¶¶  der Entscheidungszauber

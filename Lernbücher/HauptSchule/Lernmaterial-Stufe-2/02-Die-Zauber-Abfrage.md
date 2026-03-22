@@ -105,3 +105,6 @@ Was kann das Zauber-Karusell ? :
 > 
 > Wenn nicht, dann müssen wir nochmal zurück und
 > die Zauber nochmal erklären. 
+> Hierbei geht es nicht nach dem Lernmaterial präzise
+> zu antworten, sondern darum ob das Kind den Kontext
+> der Zauber verstanden hat.

@@ -54,17 +54,21 @@ Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun i
 Wenn sie Merken, das Ihr Kind nur in der sonderschule ist 
 weil es angeblich unaufmerksam zu seien scheint und viel
 Wackelt - aber dennoch hoch intelligent ist 
-- dann ist das hier das nicht das Lernmaterial für ihr
-  Kind ! 
+- dann ist das hier Nicht zwangsbedingt das Lernmaterial 
+für ihr Kind ! 
 
-im Berreich Sonderschule versuche ich die Konzepte
+Wir arbeiten hier mit Zauberformeln und Zauberfiguren
+um die Konzepte zu vermitteln und halten die Echten Begriffe
+weitesgehend aus dem Lernmaterial.
+
+Im Berreich Sonderschule versuche ich die Konzepte
 so unterschwellig wie nur möglich zu vermitteln und
 dadurch kann das Lernmaterial etwas Kindisch wirken.
 
 Wenn sie Feststellen das ihr Kind absolut Normal
-denken kann und die Konzepte versteht auf anhieb versteht
-dann schwenken sie um auf das normale Lernmaterial
-das im berreich Hauptschule angelegt ist.
+denken kann und die Konzepte auf anhieb versteht,
+dann schwenken sie um auf das normale Lernmaterial um,
+dass im bereich Hauptschule angelegt ist.
 
 Lassen sie sich von Keinem Kinderpädagogen erklären
 das ihr Kind nicht normal ist, wenn es in der Lage ist

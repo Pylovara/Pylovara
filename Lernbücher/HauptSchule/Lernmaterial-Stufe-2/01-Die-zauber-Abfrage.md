@@ -14,6 +14,7 @@ tun und wofür wir sie gebraucht werden.
 
 # 1. Die Zauber Auffrischung
 
+- Der Zauberrand            ¢! … !¢  
 
 
 
@@ -28,51 +29,6 @@ tun und wofür wir sie gebraucht werden.
 
 
 
-# 2. Zauber Abfragen
-
-- Der Zauberrand            ¢! … !¢    
-
-Für was Brauchen wir den zauberrand ? :
-
-----------------------------------------------------
-
-- Der Aktionszauber         » … « 
-
-Für was Brauchen wir den Aktionszauber ? :
-
-----------------------------------------------------
-
-
-- Die Zauberkiste           []        
-
-Wieviele Zauberkisten gibt es ? :
-
-----------------------------------------------------
-
-
-- Die Zaubertrennwand       |   
-
-Für was Brauchen wir die Zaubertrennwand ? :
-
-----------------------------------------------------
-
-- Meister REX               ¬·         
-     
-Was Tut Meister Rex zaubern ? :
-
-----------------------------------------------------
-
-- Der Igel-Wächter          ¶ / ¶¶     
-
-Was kann der Igel-Wächter Zaubern ? :
-
-----------------------------------------------------
-
-- Das Zauber-Karussell      ««Ω    
-
-Was kann das Zauber-Karusell ? :
-
-----------------------------------------------------
 
 # 3. Grundlegendes Tastatur Wissen
 

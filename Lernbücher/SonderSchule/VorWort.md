@@ -74,6 +74,11 @@ zu verstehen.
 ich Garantiere ihnen das dies den Hauptschüler nicht anderst
 geht - es ist das gleiche Lernmaterial nur anderst
 
+Sie können das Privat auf einem Spielplatz üben z.b
+um zu erkennen, ob ihr Kind alles noch weis.
+
+Sand hat tolle Eigenschaften wenn es etwas Feucht ist ;-)
+
 ---
 
 Mit Freundlichen Grüßen

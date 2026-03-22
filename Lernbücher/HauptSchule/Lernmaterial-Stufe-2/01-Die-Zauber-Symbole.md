@@ -42,11 +42,17 @@ Lieblinge sicher zu verpacken.
 
 #######################################################
 
+
 - Die Zaubertrennwand  |  Ordnung ohne Chaos
+
 
 Die Zaubertrennwand ist ein Zauber der uns hilft, 
 unsere Tier oder Gegenstände sicher in einer Zauberkiste 
 zu trennen.
+
+
+¢! Zauberkiste [Zauber|trennwand]  !¢
+
 
 #######################################################
 

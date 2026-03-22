@@ -49,6 +49,33 @@ verarbeitet , könnte automatisch an der stelle mit dem Löwen hängen bleiben (
 Klar isst es Wurst - aber müssen wir dem Kind Albträume vom Fressenden Löwen mit geben - Wir sind Froh wenn er sein Salami Brötchen isst und nicht Magersüchtig wird , nicht wahr? Ich zu meinem Teil möchte dies nur 
 Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun im Lernprozess!
 
+# Sonderschul Hinweis
+
+Wenn sie Merken, das Ihr Kind nur in der sonderschule ist 
+weil es angeblich unaufmerksam zu seien scheint und viel
+Wackelt - aber dennoch hoch intelligent ist 
+- dann ist das hier das nicht das Lernmaterial für ihr
+  Kind ! 
+
+im Berreich Sonderschule versuche ich die Konzepte
+so unterschwellig wie nur möglich zu vermitteln und
+dadurch kann das Lernmaterial etwas Kindisch wirken.
+
+Wenn sie Feststellen das ihr Kind absolut Normal
+denken kann und die Konzepte versteht auf anhieb versteht
+dann schwenken sie um auf das normale Lernmaterial
+das im berreich Hauptschule angelegt ist.
+
+Lassen sie sich von Keinem Kinderpädagogen erklären
+das ihr Kind nicht normal ist, wenn es in der Lage ist
+dieses Lernmaterial bis Stufe 1 halbwegs bis Vollständig
+zu verstehen.
+
+ich Garantiere ihnen das dies den Hauptschüler nicht anderst
+geht - es ist das gleiche Lernmaterial nur anderst
+
+---
+
 Mit Freundlichen Grüßen
 Thomas Zimmermann (Pylovara-System-Entwickler)
 GoogleSearch: Pylovara System Thomas Zimmermann

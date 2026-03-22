@@ -57,7 +57,8 @@ Hierbei handelt es sich um :
     - Strom (HauptElement)
     - Kühlung (HauptElement)
     - Kühlflüssigkeit/Lüftergeschwindigkeit (HauptElement)
-    und des gleichen (PCIE, RAM, CPU, GPU, etc. Strom, Kühlung, Kühlflüssigkeit/Lüftergeschwindigkeit)
+    und des gleichen (PCIE, RAM, CPU, GPU, etc. Strom, Kühlung, 
+    Kühlflüssigkeit/Lüftergeschwindigkeit)
 
 - **Technische Relevanz:** 
 Entspricht der Definition von 
@@ -73,8 +74,10 @@ Daten liegen bereit, aber es passiert nichts.
 - **Wach:** (ausführbar)
 Daten werden aktiv verarbeitet. 
 (Dynamische Daten / Execution)
-- **Technisch:** Dies simuliert den Unterschied zwischen **Datenspeicherung** (RAM/Festplatte) und **Datenverarbeitung** 
-(CPU/Execution Thread).
+- **Technisch:** 
+Dies simuliert den Unterschied zwischen 
+**Datenspeicherung** (RAM/Festplatte) und 
+**Datenverarbeitung** (CPU/Execution Thread).
 
 ## Didaktischer Ansatz
 Wir nutzen weiterhin die **bildliche Metapher**, um komplexe technische 

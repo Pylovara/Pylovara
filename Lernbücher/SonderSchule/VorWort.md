@@ -2,93 +2,74 @@
 
 Dieses Lernmaterial ist für Kinder im Kindergarten- und Grundschulalter konzipiert. Es soll ihnen auf spielerische Weise die Grundlagen der Pylovara-Sprache vermitteln.
 
-Wir Indoktrinieren nicht sondern wir Lehren Logische Gatter Mustererkennung und Problemlösungskompetenz. 
+Wir indoktrinieren nicht, sondern wir lehren logische Gatter, Mustererkennung und Problemlösungskompetenz. 
 
-Ich Verspreche Ihnen :
+Ich verspreche Ihnen:
 
-Dieses lehrmaterial wird später Goldwert sein, wenn ihr kind irgend eine syntaktische Sprache lernen muss. Ob es Python, Java, C++ oder eine andere ist, spielt keine Rolle. Das Gehirn wird trainiert, die Struktur zu erkennen, die Logik zu verstehen und die Muster zu verarbeiten. Das ist das Fundament, auf dem alles andere aufbaut.
+Dieses Lehrmaterial wird später goldwert sein, wenn Ihr Kind irgendeine syntaktische Sprache lernen muss. Ob es Python, Java, C++ oder eine andere ist, spielt keine Rolle. Das Gehirn wird trainiert, die Struktur zu erkennen, die Logik zu verstehen und die Muster zu verarbeiten. Das ist das Fundament, auf dem alles andere aufbaut.
 
-Doch ich muss Sie warnen, den ich glaube nicht daran das je einen anderen kernel vor einem Pylovara-Kernel laufen wird - und wenn 
-die kinder verstanden haben das sie eine ALL INKLUSIVE Sprache gelernt haben, werden sie keine andere mehr lernen wollen, die vor
-abstraktionslayer, nur so blutet !
+Doch ich muss Sie warnen, denn ich glaube nicht daran, dass je ein anderer Kernel vor einem Pylovara-Kernel laufen wird – und wenn 
+die Kinder verstanden haben, dass sie eine All-inclusive-Sprache gelernt haben, werden sie keine andere mehr lernen wollen, die vor 
+Abstraktionslayern nur so blutet!
 
-Pylovara-System ist kein Spielzeug und wissenschaftlich fundiert erklärbar und tragfähig.
+Das Pylovara-System ist kein Spielzeug, sondern wissenschaftlich fundiert erklärbar und tragfähig.
 
 "Der Grund, warum es noch keinen Übersetzer-Compiler gibt, ist einfach: Ich möchte zuerst den nativen Kernel vollenden – denn nur so kann die Qualität garantiert werden, die dieses System verdient."
 
-Die Entwicklung an Kernel fördert das logische denken und die Problemlösungskompetenz. Es ist wie ein Puzzle, bei dem man die Teile zusammensetzen muss, um das Gesamtbild zu sehen. 
+Die Entwicklung am Kernel fördert das logische Denken und die Problemlösungskompetenz. Es ist wie ein Puzzle, bei dem man die Teile zusammensetzen muss, um das Gesamtbild zu sehen. 
 
-Das ist Spezialisierte Berufs Expertise die man durch solche denkmuster aufbaut und die man später im Berufsleben brauchen wird.
+Das ist spezialisierte Berufsexpertise, die man durch solche Denkmuster aufbaut und die man später im Berufsleben brauchen wird.
 
-Ich bin mir sicher das sie mit diesem Buch ihrem Kind einen riesen gefallen tun, denn sie werden ihm das logische denken und die Problemlösungskompetenz beibringen, was ihm in seinem ganzen Leben helfen wird.
+Ich bin mir sicher, dass Sie mit diesem Buch Ihrem Kind einen Riesengefallen tun, denn Sie werden ihm das logische Denken und die Problemlösungskompetenz beibringen, was ihm in seinem ganzen Leben helfen wird.
 
-Den wer einmal mit einem Nativen MCS-Kernel zu tun hatte, der wird nie wieder eine andere Sprache lernen wollen - Für was auch ?
-(Es ist wie wenn man einmal mit einem Sportwagen gefahren ist, warum sollte man dann wieder mit einem Esel fahren wollen ?)
+Denn wer einmal mit einem nativen MCS-Kernel zu tun hatte, der wird nie wieder eine andere Sprache lernen wollen – für was auch?
+(Es ist wie, wenn man einmal mit einem Sportwagen gefahren ist – warum sollte man dann wieder mit einem Esel fahren wollen?)
 
-was sie lernen werden sind ganze betriebsysteme von der wurzel an zu steuern und das wissen hierzu werden sie nirgendswo anders lernen können in diesem umfang ohne überforderung.
+Was Sie lernen werden, sind ganze Betriebssysteme von der Wurzel an zu steuern, und das Wissen hierzu werden Sie nirgendwo anders in diesem Umfang ohne Überforderung lernen können.
 
-Wir Tranieren : 
+Wir trainieren: 
 
 - Logische Denkmuster
-- Problem Entscheidungszweige = Verzweigungen
-- Genauichkeitssinne = Präzision
+- Problementscheidungszweige = Verzweigungen
+- Genauigkeitssinne = Präzision
 
-und das alles ohne das kind es merkt.(DAS GROßE ZIEL)
+Und das alles, ohne dass das Kind es merkt (das große Ziel).
 
-Wissen sie ? ich betitel irgendwo im lexikon den begriff naturgesetzt ..... ich glaub der satz wahr*hmm* „ Performance ist ein Naturgesetz“ oder so ... 
+Wissen Sie? Ich betitel irgendwo im Lexikon den Begriff Naturgesetz ... ich glaube, der Satz war *hmm* „Performance ist ein Naturgesetz“ oder so ... 
 
-Ich meinte dabei nicht nur Systematisch , also Systembedingt{Elektronisch} sondern auch Physikalisch bedingt.
+Ich meinte dabei nicht nur systematisch, also systembedingt (elektronisch), sondern auch physikalisch bedingt.
 
-Wir trainieren den Muskel im Gehirn Der Essenziell Für Kompetenz ist - Und das ist das Ziel dieses Buches.
+Wir trainieren den Muskel im Gehirn, der essenziell für Kompetenz ist – und das ist das Ziel dieses Buches.
 
-Die Wahl der Tiere war willkürlich darauf abgestimmt das System zu vermitteln .... ich möchte (obwohl ich nicht daran glaube das sie so denken), direkt klar stellen das das ein Löwe nicht mit dem Hasen grillt - Wenn dann grillt der Löwe den Hasen zur Grillfeier!(Das ist der Witz - der Löwe weis ja garnicht wie Feuer geht!) 
-Aber wollen wir unseren Kinder sowas Vermitteln ?
-Ich denke jeder der Weis das ein Kind den Tag im Kopf im Schlaf
-verarbeitet , könnte automatisch an der stelle mit dem Löwen hängen bleiben ( die Eltern die das Lesen, wissen was ich meine und das heißt - nachts schreiendes aufgewachtes kind wegen nichts und weniger schlaf für euch Eltern )
+Die Wahl der Tiere war willkürlich darauf abgestimmt, das System zu vermitteln ... ich möchte (obwohl ich nicht daran glaube, dass Sie so denken) direkt klarstellen, dass ein Löwe nicht mit dem Hasen grillt – wenn, dann grillt der Löwe den Hasen zur Grillfeier! (Das ist der Witz – der Löwe weiß ja gar nicht, wie Feuer geht!) 
+Aber wollen wir unseren Kindern so etwas vermitteln?
+Ich denke, jeder, der weiß, dass ein Kind den Tag im Kopf im Schlaf verarbeitet, könnte automatisch an der Stelle mit dem Löwen hängen bleiben (die Eltern, die das lesen, wissen, was ich meine – und das heißt: nachts schreiend aufgewachtes Kind wegen nichts und weniger Schlaf für euch Eltern).
 
-Klar isst es Wurst - aber müssen wir dem Kind Albträume vom Fressenden Löwen mit geben - Wir sind Froh wenn er sein Salami Brötchen isst und nicht Magersüchtig wird , nicht wahr? Ich zu meinem Teil möchte dies nur 
-Bewusst mit einbringen, damit sie verstehen das wir hier nichts "Falsches" tun im Lernprozess!
+Klar ist es Wurst – aber müssen wir dem Kind Albträume vom fressenden Löwen mitgeben? Wir sind froh, wenn es sein Salami-Brötchen isst und nicht magersüchtig wird, nicht wahr? Ich zu meinem Teil möchte dies nur bewusst mit einbringen, damit Sie verstehen, dass wir hier nichts „Falsches“ tun im Lernprozess!
 
-# Sonderschul Hinweis
+# Sonderschul-Hinweis
 
-Wenn sie Merken, das Ihr Kind nur in der sonderschule ist 
-weil es angeblich unaufmerksam zu seien scheint und viel
-Wackelt - aber dennoch hoch intelligent ist 
-- dann ist das hier Nicht zwangsbedingt das Lernmaterial 
-für ihr Kind ! 
+Wenn Sie merken, dass Ihr Kind nur in der Sonderschule ist, weil es angeblich unaufmerksam zu sein scheint und viel wackelt – aber dennoch hochintelligent ist –, dann ist das hier nicht zwangsbedingt das Lernmaterial für Ihr Kind! 
 
-Wir arbeiten hier mit Zauberformeln und Zauberfiguren
-um die Konzepte zu vermitteln und halten die Echten Begriffe
-weitesgehend aus dem Lernmaterial.
+Wir arbeiten hier mit Zauberformeln und Zauberfiguren, um die Konzepte zu vermitteln, und halten die echten Begriffe weitestgehend aus dem Lernmaterial heraus.
 
-Im Berreich Sonderschule versuche ich die Konzepte
-so unterschwellig wie nur möglich zu vermitteln und
-dadurch kann das Lernmaterial etwas Kindisch wirken.
+Im Bereich Sonderschule versuche ich, die Konzepte so unterschwellig wie nur möglich zu vermitteln, und dadurch kann das Lernmaterial etwas kindisch wirken.
 
-Wenn sie Feststellen das ihr Kind absolut Normal
-denken kann und die Konzepte auf anhieb versteht,
-dann schwenken sie um auf das normale Lernmaterial um,
-dass im bereich Hauptschule angelegt ist.
+Wenn Sie feststellen, dass Ihr Kind absolut normal denken kann und die Konzepte auf Anhieb versteht, dann schwenken Sie auf das normale Lernmaterial um, das im Bereich Hauptschule angelegt ist.
 
-Lassen sie sich von Keinem Kinderpädagogen erklären
-das ihr Kind nicht normal ist, wenn es in der Lage ist
-dieses Lernmaterial bis Stufe 1 halbwegs bis Vollständig
-zu verstehen.
+Lassen Sie sich von keinem Kinderpädagogen erklären, dass Ihr Kind nicht normal ist, wenn es in der Lage ist, dieses Lernmaterial bis Stufe 1 halbwegs bis vollständig zu verstehen.
 
-ich Garantiere ihnen das dies den Hauptschüler nicht anderst
-geht - es ist das gleiche Lernmaterial nur anderst
+Ich garantiere Ihnen, dass dies den Hauptschülern nicht anders geht – es ist das gleiche Lernmaterial, nur anders.
 
-Sie können das Privat auf einem Spielplatz üben z.b
-um zu erkennen, ob ihr Kind alles noch weis.
+Sie können das privat auf einem Spielplatz üben, z. B. um zu erkennen, ob Ihr Kind alles noch weiß.
 
-Sand hat tolle Eigenschaften wenn es etwas Feucht ist ;-)
-Sie können Sandformen den zauber zuordnen z.b 
-oder Plastik Spielzeugtiere mit zwei Burggraben bauen.
+Sand hat tolle Eigenschaften, wenn er etwas feucht ist ;-)
+Sie können Sandformen den Zaubern zuordnen, z. B. oder Plastik-Spielzeugtiere mit zwei Burggräben bauen.
 
-Es gibt sehr viele möglichkeiten das Gelernte zu vertiefen.
+Es gibt sehr viele Möglichkeiten, das Gelernte zu vertiefen.
 
 ---
 
-Mit Freundlichen Grüßen
+Mit freundlichen Grüßen
 Thomas Zimmermann (Pylovara-System-Entwickler)
-GoogleSearch: Pylovara System Thomas Zimmermann
+Google-Suche: Pylovara System Thomas Zimmermann

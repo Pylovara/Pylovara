@@ -65,5 +65,7 @@ Was kann das Zauber-Karusell ? :
 Und jetzt Lernen wir die Zauber Symbole auf 
 der Tastatur kennen!
 
+Der Zauberrand : ¢! … !¢   
 
+![Tastatur](Bildliches/apple_keyboard_german.png)
 

@@ -38,14 +38,15 @@ zu trennen.
 
 #######################################################
 
-- Meister REX               ¬·         Meister REX, der die Arbeitstische aufstellt
+- Meister REX  ¬·  der die Arbeitstische aufstellt
 
 Meister REX ist der Zauberer der uns hilft, unsere 
-Zauber auf Jedem Tisch aufzustellen.
+Zauber auf Jedem Tisch aufzustellen und erlaubt uns,
+jeden Zauber auszubauen.
 
 #######################################################
 
-- Der Aktionszauber         » … «      Erlaubnis zur Tat
+- Der Aktionszauber  » … «  Erlaubnis zur Tat
 
 Der Aktionszauber ist ein Zauber der uns hilft, unsere 
 Zauber in Bewegung zu setzen, aufzuwecken.

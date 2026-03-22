@@ -202,4 +202,6 @@ Fachbegriff: Argument
 > Gerade aus dem Grund heraus, das sie einen
 > schulwechsel hinter sich haben.
 > damit sorgen wir für die Auffrischung 
-> bevor wir mit den neuen Zaubern anfangen.
+> bevor wir weiter damit arbeiten.
+> Zusätzlich bekommen die Kinder die Fachbegriffe
+> nebenbei mit auf den Weg.

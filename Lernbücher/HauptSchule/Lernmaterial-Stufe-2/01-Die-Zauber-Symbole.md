@@ -107,6 +107,23 @@ Wenn Ja oder Nein Zauber, dann brauchen wir um
 zu wissen was passieren soll wenn der Gegenständ 
 oder das Tier nicht weis was es tun soll.
 
+
+¢!
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶ [Zauberkiste] # Ja Zauber
+     Meister REX ¬· »[Wache Zauberkiste]«
+         Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶¶ [Zauberkiste] # Nein Zauber
+      Meister REX ¬· »[Wache Zauberkiste]«
+          Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
+
 #######################################################
 
 - Das Zauber-Karussell  ««Ω  das Zauberkarussell „Wiederholungen“

@@ -62,6 +62,15 @@ Meister REX ist der Zauberer der uns hilft, unsere
 Zauber auf Jedem Tisch aufzustellen und erlaubt uns,
 jeden Zauber auszubauen.
 
+
+¢! 
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
+
 #######################################################
 
 - Der Aktionszauber  » … «  Erlaubnis zur Tat

@@ -78,6 +78,10 @@ Sie können das Privat auf einem Spielplatz üben z.b
 um zu erkennen, ob ihr Kind alles noch weis.
 
 Sand hat tolle Eigenschaften wenn es etwas Feucht ist ;-)
+Sie können Sandformen den zauber zuordnen z.b 
+oder Plastik Spielzeugtiere mit zwei Burggraben bauen.
+
+Es gibt sehr viele möglichkeiten das Gelernte zu vertiefen.
 
 ---
 

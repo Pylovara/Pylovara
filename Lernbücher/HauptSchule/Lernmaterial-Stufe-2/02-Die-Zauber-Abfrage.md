@@ -14,11 +14,17 @@ Zauber aus deinem Gedächtnis heraus Aufbauen kannst.
 
 Für was Brauchen wir den zauberrand ? :
 
+
+
+
 ----------------------------------------------------
 
 - Der Aktionszauber         » … « 
 
 Für was Brauchen wir den Aktionszauber ? :
+
+
+
 
 ----------------------------------------------------
 
@@ -27,6 +33,9 @@ Für was Brauchen wir den Aktionszauber ? :
 
 Wieviele Zauberkisten gibt es ? :
 
+
+
+
 ----------------------------------------------------
 
 
@@ -34,11 +43,17 @@ Wieviele Zauberkisten gibt es ? :
 
 Für was Brauchen wir die Zaubertrennwand ? :
 
+
+
+
 ----------------------------------------------------
 
 - Meister REX               ¬·         
      
 Was Tut Meister Rex zaubern ? :
+
+
+
 
 ----------------------------------------------------
 
@@ -46,10 +61,26 @@ Was Tut Meister Rex zaubern ? :
 
 Was kann der Igel-Wächter Zaubern ? :
 
+
+
+
 ----------------------------------------------------
 
 - Das Zauber-Karussell      ««Ω    
 
 Was kann das Zauber-Karusell ? :
 
+
+
+
 ----------------------------------------------------
+
+
+---
+> [!NOTE]
+> Hier versuchen wir heraus zu bekommen ob das Kind
+> die Zauber noch im Gedächtnis hat und sie verstanden
+> hat.
+> 
+> Wenn nicht, dann müssen wir nochmal zurück und
+> die Zauber nochmal erklären. 

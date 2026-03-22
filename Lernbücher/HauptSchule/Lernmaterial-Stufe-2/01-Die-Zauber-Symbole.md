@@ -57,28 +57,36 @@ ihr sagen.
 
 #######################################################
 
-- Der Igel-Wächter          ¶ / ¶¶     Wächter der Entscheidungen
+- Der Igel-Wächter  ¶ / ¶¶  der Entscheidungszauber
 
-Der Igel-Wächter ist ein Zauber der uns hilft, unsere 
-Entscheidungzauber für Beide fälle aufzubauen.
+Der Igel-Wächter ist der Zauberer der uns hilft, 
+die Entscheidungzauber für beide Fälle aufzubauen.
+Er kann vorhersehen das es zwei möglichkeiten gibt
+und kann uns helfen, beide möglichkeiten aufzubauen.
+
+Wenn Ja oder Nein Zauber, dann brauchen wir um
+zu wissen was passieren soll wenn der Gegenständ 
+oder das Tier nicht weis was es tun soll.
 
 #######################################################
 
-- Das Zauber-Karussell      ««Ω        Um Argumente zu setzen das Zauberkarussell „Wiederholungen“
+- Das Zauber-Karussell  ««Ω  das Zauberkarussell „Wiederholungen“
 
 Das Zauber-Karussell ist ein Zauber der uns hilft, 
 unsere Wiederholungszauber an eine Wache Zauberkiste
 zu binden.
 
+Er ermöglicht uns das Etwas öfters wiederholt werden soll.
+
 #######################################################
 
 
+---
 
-
-
-
-
-
-
-
-
+> [!NOTE]
+> Hier werden alle Zauber nochmal erklärt, um das
+> Gelernte zu festigen und zu verinnerlichen.
+> Gerade aus dem Grund heraus, das sie einen
+> schulwechsel hinter sich haben.
+> damit sorgen wir für die Auffrischung 
+> bevor wir mit den neuen Zaubern anfangen.

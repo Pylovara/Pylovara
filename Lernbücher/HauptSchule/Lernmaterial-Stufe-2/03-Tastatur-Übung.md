@@ -30,7 +30,7 @@ Android = Acode
 Linux = Kate
 Chrome OS = Coder
 
-(Es muss aber nur Text Können und UTF -8 Sauber darstellen können)
+(Es muss aber nur Text Können und UTF -8 Sauber darstellen)
 
 # 1. Grundlegendes Tastatur Wissen
 

@@ -30,6 +30,8 @@ Android = Acode
 Linux = Kate
 Chrome OS = Coder
 
+(Es muss aber nur Text Können und UTF -8 Sauber darstellen können)
+
 # 1. Grundlegendes Tastatur Wissen
 
 Auf einer Tastatur gibt es viele Tasten, darunter

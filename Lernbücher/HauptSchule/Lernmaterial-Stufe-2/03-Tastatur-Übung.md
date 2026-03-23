@@ -22,6 +22,13 @@ Wenn das der fall ist -
 dann kannst du dieses Kapitel überspringen
 und direkt mit Kapitel 4 weiter machen.
 
+Programm Empfehlungen zum Schreiben:
+
+Mac OS = BBedit
+Windows = Notepad++
+Android = Acode
+Linux = Kate
+Chrome OS = Coder
 
 # 1. Grundlegendes Tastatur Wissen
 

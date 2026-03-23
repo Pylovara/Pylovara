@@ -27,17 +27,16 @@ Vieleicht hat unser Hund Hunger und Durst
 
  Wer kann Entscheidungszauber ausführen ?
 
-
  Zwischen Frage: 
 
 und wer stellt die Arbeitstische her ?
 
  Zwischen Frage:
 
+#########################################################
 
- 
-
-baue den Wenn-Nein Entscheidungszauber aus:
+ Und Jetzt bauen wir den Wenn-Nein Entscheidungszauber aus
+ und setzen sie Richtig:
 
 ¢!
 
@@ -47,12 +46,17 @@ baue den Wenn-Nein Entscheidungszauber aus:
 
    ¬· »["WasserNapf Holen"|"Mit der Hand Wasser Füllen|{"Wasser"}]« 
 
- ¶¶ 
+ ¶¶ ¬· 
 
 
 
 
 !¢
+
+
+
+Mögliche Lösung: »["Hund schlafen lassen"|{"Futter"|"Wasser"}]« 
+
 
 
 ###########################################################

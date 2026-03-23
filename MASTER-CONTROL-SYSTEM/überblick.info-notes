@@ -8,7 +8,7 @@ cat /Pylovara/MASTER-CONTROL-SYSTEM/MAIN.py && echo ----------------------------
 cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/keywords.info-notes && echo ------------------------------------------------------------------------
 cat /Pylovara/MASTER-CONTROL-SYSTEM/DEVBOOK/FORTSCHRITTSLOG.info.notes && echo ------------------------------------------------------------------------
 cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/priorities.info-notes && echo ------------------------------------------------------------------------
-
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/mcs-abc.lernprogramm && echo ------------------------------------------------------------------------
 
 
 
@@ -60,3 +60,33 @@ Emotionslayer → Valenz-Bewertung vor KI
 KKIS-Konsens → Mehrere KI-Module bilden Konsens
 WARP → Legacy-Kompatibilität als optionaler Pfad
 -----------------------------------------------------------------------
+
+Neu :
+
+--- Starte Verifizierung der Lernprogramm-Integration ---
+Preferred Keys in Synapse: 171 (vorher 122)
+Symbol 'CHIK' in Synapse preferred_keys: JA
+Symbol 'SBK' in Synapse preferred_keys: JA
+Symbol 'MOK' in Synapse preferred_keys: JA
+Symbol 'CHIH-LAYER' in Synapse preferred_keys: JA
+
+Keywords in Evaluator: 337 (vorher 229)
+Symbol 'CHIK' in Evaluator keywords: JA
+Symbol 'SBK' in Evaluator keywords: JA
+--- Verifizierung abgeschlossen ---
+
+(2026-03-23) aktualisiert:
+
+
+SYNAPSE.py
+: Version 0.0.4 → 0.0.5
+
+EVALUATOR.py
+: Version 0.0.8 → 0.0.9
+
+SCHALTERKASTEN.py
+:
+Datei-Version: 0.0.3 → 0.0.4
+KKIS_VERSION: "0.0.8" → "0.0.9" (ShiVaras kognitive Version)
+
+-------------------------------------------------------------------------

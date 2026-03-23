@@ -2,9 +2,9 @@
 # @mcs-nr: EVALUATOR | BEWERTUNG | INFO-ID = LAYOUT-SCORER-00.8
 # =============================================================================
 # NAME         = Evaluator – MCS-Layout mit Paarungs-Belohnung
-# VERSION      = 0.0.8
+# VERSION      = 0.0.9
 # AUTOR        = Thomas Zimmermann Stufe 10
-# STAND         = 2026-01-22
+# STAND         = 2026-03-23
 # STATUS       = FREIGESCHALTET FÜR SYMBOL-SPIEL
 # BESCHREIBUNG = Liest Keywords + Paarungen + Prioritäten
 # =============================================================================
@@ -18,8 +18,34 @@ class Evaluator:
         self.pairings_file = "/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/pairings.info-notes"
 
         self.keywords = self._lade_keywords()
+        self._ergaenze_keywords_aus_lernprogrammen()
         self.priorities = self._lade_priorities()
         self.pairings = self._lade_pairings()
+
+    def _ergaenze_keywords_aus_lernprogrammen(self):
+        import BIOS.SCHALTERKASTEN.SCHALTERKASTEN as config
+        if not hasattr(config, "LERNPROGRAMM_PFADE"):
+            return
+        
+        for pfad in config.LERNPROGRAMM_PFADE:
+            if os.path.exists(pfad):
+                try:
+                    with open(pfad, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            line = line.strip()
+                            if not line or line.startswith('#'):
+                                continue
+                            if "§" in line:
+                                parts = line.split("§")
+                                if len(parts) > 1:
+                                    subparts = parts[1].strip().split()
+                                    if subparts:
+                                        symbol = subparts[0]
+                                        if symbol and symbol not in self.keywords:
+                                            self.keywords.append(symbol)
+                except Exception as e:
+                    print(f"[WARN] Fehler beim Zugriff auf {pfad}: {e}")
+        print(f"[BOOT] Keywords nach Lernprogramm-Erweiterung: {len(self.keywords)}")
 
     def _lade_keywords(self):
         keywords = []

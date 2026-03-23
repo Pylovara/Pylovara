@@ -2,14 +2,14 @@
 # @mcs-nr: CONFIG | BIOS/SCHALTERKASTEN | INFO-ID = KKIS-NULLPUNKT-KONFIG-00.3
 # =============================================================================
 # NAME         = KKIS NULLPUNKT KONFIGURATION – mit dynamischem Decay
-# VERSION      = 0.0.3
+# VERSION      = 0.0.4
 # AUTOR        = Thomas Zimmermann Stufe 10
-# STAND         = 2026-01-22
+# STAND         = 2026-03-23
 # STATUS       = FREIGESCHALTET FÜR DYNAMISCHEN SELBSTSCHUTZ
 # =============================================================================
 
 KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "ShiVara"
-KKIS_VERSION = "0.0.8"
+KKIS_VERSION = "0.0.9"
 
 # =============================================================================
 # Lernparameter – MCS-Style: kleine Werte = Kontrolle

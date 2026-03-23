@@ -2,9 +2,9 @@
 # @mcs-nr: SYNAPSE | ÜBERGANGSREGELN | INFO-ID = SYNAPSE-REGELN-00.3
 # =============================================================================
 # NAME         = SYNAPSE – Übergangsregeln mit starkem MCS-Seeding
-# VERSION      = 0.0.4
+# VERSION      = 0.0.5
 # AUTOR        = Thomas Zimmermann Stufe 10
-# STAND         = 2026-02-04
+# STAND         = 2026-03-23
 # STATUS       = FREIGESCHALTET FÜR STARKES KEYWORD-SEEDING
 # =============================================================================
 
@@ -29,7 +29,28 @@ class Synapse:
 
         # Integration der registrierten Lernprogramme
         if hasattr(config, "LERNPROGRAMM_PFADE"):
-            self.preferred_keys.extend(config.LERNPROGRAMM_PFADE)
+            self._parse_lernprogramme(config.LERNPROGRAMM_PFADE)
+
+    def _parse_lernprogramme(self, pfade):
+        import os
+        for pfad in pfade:
+            if os.path.exists(pfad):
+                try:
+                    with open(pfad, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            line = line.strip()
+                            if not line or line.startswith('#'):
+                                continue
+                            if "§" in line:
+                                parts = line.split("§")
+                                if len(parts) > 1:
+                                    subparts = parts[1].strip().split()
+                                    if subparts:
+                                        symbol = subparts[0]
+                                        if symbol and symbol not in self.preferred_keys:
+                                            self.preferred_keys.append(symbol)
+                except Exception as e:
+                    print(f"[WARN] Fehler beim Zugriff auf {pfad}: {e}")
 
     def apply(self, state):
         if not state.values:

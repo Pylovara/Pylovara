@@ -61,7 +61,9 @@ Der unterschied ist Simpel
 
 
 ! Ein kleiner Hinweis für die Barrierefreiheit: 
- Erwähne eventuell kurz, dass die Tasten gleichzeitig gedrückt werden müssen 
+ Erwähne eventuell kurz als Lehrer oder Elternteil, dass die Tasten 
+ gleichzeitig gedrückt werden müssen oder in abfolge solange
+ gehalten werden müssen bis das Symbol erscheint.
  (wie ein Akkord beim Klavier). 
  Das ist für 7- bis 9-Jährige manchmal ein motorischer Lernschritt.
 

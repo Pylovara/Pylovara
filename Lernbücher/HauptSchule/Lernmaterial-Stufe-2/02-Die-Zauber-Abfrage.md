@@ -2,13 +2,16 @@
 
 Hallo kleiner Zauber Entwickler! 🌟
 
-Damit wir gut vorbereitet sind, werden wir uns jetzt
-deinem Zaubergedächnis widmen - Damit du viele
+Damit wir gut vorbereitet sind, wenden wir uns jetzt
+deinem Zaubergedächnis zu - Damit du viele
 Zauber aus deinem Gedächtnis heraus Aufbauen kannst.
 
+Dazu müssen wir Wissen, welche zauber du noch kennst.
 
 
-# 2. Zauber Abfragen
+
+
+# 1. Zauber Abfragen
 
 - Der Zauberrand            ¢! … !¢    
 

@@ -45,7 +45,7 @@ brauchen um die Versorgung zu gewährleisten.
 Wir Füttern jetzt alles was wir haben - Mit der
 kleinen Zauberkiste.
 
-
+####################################################
 
 ¢! »["Hund"|{"          "}]« !¢
 
@@ -69,7 +69,19 @@ kleinen Zauberkiste.
 
 ¢! »["Vogel"|{"          "}]« !¢
 
+####################################################
 
 
+---
+> [!NOTE]
+> Bei Dieser Übung geht es um die zugehörigkeit
+> der Dinge und Tiere. Es geht darum, dass das Kind
+> Verstehen Lernt was Benötigt wird und weniger
+> um darum das das kind die dinge per Sentiator|REX
+> gleich ausbaut.
+> Wenn das Kind Versteht das Haupt Elemente
+> wie z.B. das Auto mit dem Benötigten Benzin,
+> "gefüttert" werden muss - hat es diese Lektion 
+> Verstanden.
 
 

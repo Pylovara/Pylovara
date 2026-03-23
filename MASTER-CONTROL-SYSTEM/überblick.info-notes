@@ -9,7 +9,7 @@ cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/keywords.info-notes && 
 cat /Pylovara/MASTER-CONTROL-SYSTEM/DEVBOOK/FORTSCHRITTSLOG.info.notes && echo ------------------------------------------------------------------------
 cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/priorities.info-notes && echo ------------------------------------------------------------------------
 cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/mcs-abc.lernprogramm && echo ------------------------------------------------------------------------
-
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/DATEI_STRUKTUR/Dateitypen && echo ------------------------------------------------------------------------
 
 
 
@@ -88,5 +88,9 @@ SCHALTERKASTEN.py
 :
 Datei-Version: 0.0.3 → 0.0.4
 KKIS_VERSION: "0.0.8" → "0.0.9" (ShiVaras kognitive Version)
+
+nach dem hinzufügen von 
+/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/DATEI_STRUKTUR/Dateitypen
+auf KKIS_VERSION: 0.1.0 gehoben
 
 -------------------------------------------------------------------------

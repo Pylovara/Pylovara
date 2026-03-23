@@ -2,14 +2,14 @@
 # @mcs-nr: CONFIG | BIOS/SCHALTERKASTEN | INFO-ID = KKIS-NULLPUNKT-KONFIG-00.3
 # =============================================================================
 # NAME         = KKIS NULLPUNKT KONFIGURATION – mit dynamischem Decay
-# VERSION      = 0.0.4
+# VERSION      = 0.0.5
 # AUTOR        = Thomas Zimmermann Stufe 10
 # STAND         = 2026-03-23
 # STATUS       = FREIGESCHALTET FÜR DYNAMISCHEN SELBSTSCHUTZ
 # =============================================================================
 
 KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "ShiVara"
-KKIS_VERSION = "0.0.9"
+KKIS_VERSION = "0.0.10"
 
 # =============================================================================
 # Lernparameter – MCS-Style: kleine Werte = Kontrolle
@@ -28,7 +28,8 @@ DECAY_BOOST_FACTOR    = 25.0      # Decay wird dann 1.5× stärker
 # LERNPROGRAMME – MCS-REGISTRIERUNG
 # =============================================================================
 LERNPROGRAMM_PFADE = [
-    "/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/mcs-abc.lernprogramm"
+    "/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/mcs-abc.lernprogramm",
+    "/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/DATEI_STRUKTUR/Dateitypen"
 ]
 
 # =============================================================================

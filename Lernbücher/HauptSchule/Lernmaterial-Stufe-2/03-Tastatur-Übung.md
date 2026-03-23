@@ -99,9 +99,9 @@ Tastatur Position :
 
 - Der Igel-Wächter : ¶ / ¶¶
 
-   Gr Alt + 7 = ¶
+   Gr Alt + R = ¶
 
-   Gr Alt + 8 = ¶¶
+   Gr Alt + R × 2 = ¶¶
 
 
 - Das Zauber-Karussell : ««Ω

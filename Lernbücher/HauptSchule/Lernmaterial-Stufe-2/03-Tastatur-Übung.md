@@ -70,7 +70,7 @@ Tastatur Position :
 
    Gr Alt + C = ¢ 
 
-   1 + shift = !
+   Shift + 1 = !
 
 
 - Die Zauberkiste : []

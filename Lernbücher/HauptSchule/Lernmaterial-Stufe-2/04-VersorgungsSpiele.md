@@ -94,3 +94,11 @@ kleinen Zauberkiste.
 > umgehen können.(Der teil mit den Protonen
 > wird später Präzisiert und wird für die Kinder
 > als Energiequelle erklärt.)
+
+
+> [!Wichtig]: 
+> In der Übung ¢! »["Hund"|{" "}]« !¢ lernt 
+> das Kind unbewusst das Parsing. 
+> Es begreift, dass der Trennbestrich | die 
+> Grenze zwischen dem „Wer“ (Hund) und 
+> dem „Was“ (Futter) ist.

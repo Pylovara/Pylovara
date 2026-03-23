@@ -11,6 +11,13 @@ Jetzt lassen wir unsere Gegenstände und Tiere in
 Schlafenden Zauberkisten mit Versorgung schlafen,
 um mit der Versorgung Händisch auszubauen.
 
+Solange wir die Versorgung nicht Händisch geben
+oder die Zauberkisten nicht Ausbauen, werden sie
+schlafen und nicht Aktiv sein.
+
+solange das so ist wird in jeder Zauberkiste
+die Versorgungskiste mit geführt.
+
 
 # 1. Die Versorgung Ausbauen
 

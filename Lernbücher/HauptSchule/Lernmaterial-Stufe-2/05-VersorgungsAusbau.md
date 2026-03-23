@@ -12,6 +12,17 @@ Schlafenden Zauberkisten mit Versorgung schlafen,
 um mit der Versorgung Händisch auszubauen.
 
 
+# 1. Die Versorgung Ausbauen
+
+Vieleicht hat unser Hund Hunger und Durst
+ oder Eben nicht - Das ist die Frage die wir uns
+ stellen müssen.
+
+ Wer kann diese Frage beantworten ?
+
+
+ Zwischen Frage: Der I
+
 
 
 ¢!

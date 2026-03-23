@@ -77,7 +77,7 @@ Jetzt lass uns mal Schauen ob du weist welches Tier
 oder gegenstand was Benötigt:
 
 
-¢! »["          "|{"Hundefutter"}]« !¢
+¢! »["          "|{"WuffFutter"}]« !¢
 
 ¢! »["          "|{"Bananen"}]« !¢
 

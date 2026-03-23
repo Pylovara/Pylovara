@@ -41,14 +41,28 @@ machen können.
 Von dieser Leertaste aus gibt es Rechts und Links 
 weitere Tasten die wir für unsere Zauber brauchen.
 
-# 2. Zauber Symbole auf der Tastatur finden
+# 2. Die Tastatur kennenlernen
 
 Und jetzt Lernen wir die Zauber Symbole auf 
 der Tastatur kennen!
 
 ![Tastatur](Bildliches/apple_keyboard_german.png)
 
+Manche Herstelle nennen die Tasten Option, andere
+nennen sie alt und gr alt .
 
+Der unterschied ist Simpel  
+
+   Alt ist die Taste links
+   Gr Alt ist die Taste rechts neben der Leertaste.
+
+  Shift ist Links der kleine pfeil nach oben
+  und Dauer Shift ist der grosse pfeil nach oben.
+
+  Shift kann als Großschreibung verstanden werden.
+
+
+# 3. Zauber Symbole auf der Tastatur finden
 
 - Der Zauberrand : ¢! … !¢   
 

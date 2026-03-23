@@ -12,7 +12,6 @@ Da hersteller unterschiedliche Touch Tastaturen verwenden.
 Deswegen halten wir uns an die Original Tastatur, wie sie
 in jedem Laden für ein Apfel und einem Ei gekauft werden kann.
 
-
 Wenn du keine Tastatur hast und die Schule keine
 zur verfügung stellt, dann bist du Gezwungen weiter
 mit dem Blatt zu arbeiten und zu Radieren.
@@ -72,6 +71,7 @@ Tastatur Position :
 
    Shift + 1 = !
 
+##################################################
 
 - Die Zauberkiste : []
 
@@ -81,7 +81,17 @@ Tastatur Position :
 
    Gr Alt + 9 = ]
 
+##################################################
 
+- Kleine Zauberkiste : {}
+
+Tastatur Position : 
+
+   Gr Alt + 7 = { 
+
+   Gr Alt + 0 = }
+
+##################################################
 
 - Die Zaubertrennwand : |
 
@@ -93,7 +103,7 @@ Tastatur Position :
 
    Gr Alt + > = |
 
-
+##################################################
 
 - Meister REX : ¬·
 
@@ -103,6 +113,7 @@ Tastatur Position :
 
    Gr Alt + . = ·
 
+##################################################
 
 - Der Aktionszauber : » … «
 
@@ -110,6 +121,7 @@ Tastatur Position :
 
    Gr Alt + X = «
 
+##################################################
 
 - Der Igel-Wächter : ¶ / ¶¶
 
@@ -117,6 +129,7 @@ Tastatur Position :
 
    Gr Alt + R × 2 = ¶¶
 
+##################################################
 
 - Das Zauber-Karussell : ««Ω
 
@@ -124,4 +137,4 @@ Tastatur Position :
 
    Gr Alt + Shift + Q = Ω
 
-   
+##################################################

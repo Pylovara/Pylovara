@@ -104,13 +104,13 @@ oder gegenstand was Benötigt:
 > Bei Dieser Übung geht es um die zugehörigkeit
 > der Dinge und Tiere. Es geht darum, dass das Kind
 > Verstehen Lernt was Benötigt wird und weniger
-> um darum das das kind die dinge per Sentiator|REX
+> darum das dass Kind die dinge per Sentiator|REX
 > gleich ausbaut.
 > Wenn das Kind Versteht das Haupt Elemente
-> wie z.B. das Auto mit dem Benötigten Benzin,
+> wie z.B. das Auto mit dem Benötigten Benzin
 > "gefüttert" werden muss - hat es diese Lektion 
 > Verstanden.
-> Mit Diesem wissen können wir Später Arbeiten.
+> Mit Diesem Wissen können wir Später Arbeiten.
 > Um es dann Nutzbar zu machen, werden wir
 > Lernen das diese Packete für einen Ganzen Zauber
 > verwendet werden können.

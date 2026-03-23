@@ -44,7 +44,8 @@ und wer stellt die Arbeitstische her ?
  ¶ ¬· »["FutterNapf Holen"|{"Futter"}]«
        ¬· »["Mit der Hand Futter Füllen"|{"Futter"}]« 
 
-   ¬· »["WasserNapf Holen"|"Mit der Hand Wasser Füllen|{"Wasser"}]« 
+   ¬· »["WasserNapf Holen"|{"Wasser"}]« 
+       ¬· »["Mit der Hand Wasser Füllen"|{"Wasser"}]«
 
  ¶¶ ¬· 
 

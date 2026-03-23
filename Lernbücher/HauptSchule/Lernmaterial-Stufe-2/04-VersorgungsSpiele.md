@@ -83,5 +83,4 @@ kleinen Zauberkiste.
 > wie z.B. das Auto mit dem Benötigten Benzin,
 > "gefüttert" werden muss - hat es diese Lektion 
 > Verstanden.
-
-
+> Mit Diesem wissen können wir Später Arbeiten.

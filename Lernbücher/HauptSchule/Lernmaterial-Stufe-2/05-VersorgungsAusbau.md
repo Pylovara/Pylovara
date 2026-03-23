@@ -24,12 +24,15 @@ Vieleicht hat unser Hund Hunger und Durst
  Zwischen Frage: Der 
 
 
-
 ¢!
 
  ["Hund"|{"Futter"|"Wasser"}]
- ¶ ¬· »["HundeNapf"|{"Mit der Hand Futter Füllen}]« 
- 
+ ¶ ¬· »["FutterNapf"|"Mit der Hand Futter Füllen|{"Futter"}]« 
+   ¬· »["WasserNapf"|"Mit der Hand Wasser Füllen|{"Wasser"}]« 
 
+ ¶¶ 
 
 !¢
+
+
+###########################################################

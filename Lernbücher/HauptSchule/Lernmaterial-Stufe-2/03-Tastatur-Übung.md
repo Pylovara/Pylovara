@@ -41,19 +41,56 @@ machen können.
 Von dieser Leertaste aus gibt es Rechts und Links 
 weitere Tasten die wir für unsere Zauber brauchen.
 
-
-
-
-
-
-
-
-
-# 4. Zauber Symbole auf der Tastatur finden
+# 2. Zauber Symbole auf der Tastatur finden
 
 Und jetzt Lernen wir die Zauber Symbole auf 
 der Tastatur kennen!
 
-Der Zauberrand : ¢! … !¢   
-
 ![Tastatur](Bildliches/apple_keyboard_german.png)
+
+
+
+- Der Zauberrand : ¢! … !¢   
+
+Tastatur Position : 
+
+   Gr Alt + C = ¢ 
+
+   1 + shift = !
+
+
+- Die Zauberkiste : []
+
+Tastatur Position : 
+
+   Gr Alt + 8 = [ 
+
+   Gr Alt + 9 = ]
+
+
+
+- Die Zaubertrennwand : |
+
+Tastatur Position : 
+
+   Gr Alt + < = |
+
+   oder:
+
+   Gr Alt + > = |
+
+
+
+- Meister REX : ¬·
+
+Tastatur Position : 
+
+   Gr Alt + 6 = ¬
+
+   Gr Alt + . = ·
+
+
+- Der Aktionszauber : » … «
+
+
+   

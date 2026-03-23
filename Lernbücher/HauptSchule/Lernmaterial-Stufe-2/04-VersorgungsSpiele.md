@@ -71,6 +71,33 @@ kleinen Zauberkiste.
 
 ####################################################
 
+# 3. Die Versorgung Erkennen
+
+Jetzt lass uns mal Schauen ob du weist welches Tier
+oder gegenstand was Benötigt:
+
+
+¢! »["          "|{"Hundefutter"}]« !¢
+
+¢! »["          "|{"Bananen"}]« !¢
+
+¢! »["          "|{"ErsatzAku"}]« !¢
+
+¢! »["          "|{"Batterien"}]« !¢
+
+¢! »["          "|{"MoewFutter"}]« !¢
+
+¢! »["          "|{"Benzin"}]« !¢
+
+¢! »["          "|{"Nüsse"}]« !¢
+
+¢! »["          "|{"Karotten"}]« !¢
+
+¢! »["          "|{"Grasshalme"}]« !¢
+
+¢! »["          "|{"Würmer"}]« !¢
+
+####################################################
 
 ---
 > [!NOTE]
@@ -102,3 +129,11 @@ kleinen Zauberkiste.
 > Es begreift, dass der Trennbestrich | die 
 > Grenze zwischen dem „Wer“ (Hund) und 
 > dem „Was“ (Futter) ist.
+
+> [!Tipp]:
+> Wenn sie mit einem OverheadProjektor oder
+> Blätter arbeiten - Decken sie die Sektionen
+> Einfach ab.
+> Wenn sie mit Computer Arbeiten, Dann 
+> Copieren sie Die Sektionen aus dem 
+> TextDokument

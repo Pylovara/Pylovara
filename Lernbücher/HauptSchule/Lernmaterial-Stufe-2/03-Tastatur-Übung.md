@@ -28,7 +28,7 @@ Mac OS = BBedit
 Windows = Notepad++
 Android = Acode
 Linux = Kate
-Chrome OS = Coder
+Chrome OS = Coder(oder Texteditor)
 
 (Es muss aber nur Text Können und UTF -8 Sauber darstellen)
 

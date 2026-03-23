@@ -20,7 +20,6 @@ Wenn das der fall ist - dann kannst du dieses Kapitel überspringen
 und direkt mit Kapitel 4 weiter machen.
 
 
-
 # 1. Grundlegendes Tastatur Wissen
 
 Auf einer Tastatur gibt es viele Tasten, darunter
@@ -138,3 +137,19 @@ Tastatur Position :
    Gr Alt + Shift + Q = Ω
 
 ##################################################
+
+
+
+---
+
+> [!NOTE]
+> Lassen sie ihr Kind die Symbole auf der Tastatur suchen.
+> Hierbei ist es wichtig, dass das Kind die Symbole 
+> auf der Tastatur findet und versteht, wie es sie 
+> ansteuern kann.
+> Wenn das Kind die Symbole nicht findet, dann 
+> können sie ihm helfen, sie zu finden.
+> Lassen sie das Kind etwas in einem Schreibprogramm
+> mit den Zauber Symbolen schreiben - Hierbei ist
+> ist keine Perfektion gefragt, sondern den umgang
+> mit der Syntax.

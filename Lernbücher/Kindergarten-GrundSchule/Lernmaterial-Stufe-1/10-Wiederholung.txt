@@ -225,13 +225,13 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 
 ¢!
  ["Robbi"]
- ¬· ["Batterie prüfen"]
-    ¶ ¬· »["Grün leuchtet!"]«
-          ¬· »["Aufräumen"]«
-          ¬· »["Spielen"]«
-    ¶¶ ¬· »["Rot leuchtet!"]«
-          ¬· ["Laden"]
-             ¬· ["Warten…"]
+ ¬· »["Batterie prüfen"]«
+     ¶ ¬· »["Grün leuchtet!"]«
+           ¬· »["Aufräumen"]«
+           ¬· »["Spielen"]«
+     ¶¶ ¬· »["Rot leuchtet!"]«
+            ¬· ["Laden"]
+               ¬· ["Warten…"]
 !¢
 
 „Robbi arbeitet, solange seine Batterie grün leuchtet. Wenn rot – muss er laden!“
@@ -250,5 +250,6 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 > Dies ist damit die Letzte Lektion für ein Grundschulkind in diesem Buch.
 > Es Spielt auch keine Rolle ob alles perfekt ist oder nicht, es geht um das Verständnis der 
 > Zauber und Symbole.
-> Später Lernt das Kind alles Mit mit Echten Begriffen und die Bausteinschaltungskreis BSK Logik
+> Später Lernt das Kind alles Mit mit Echten Begriffen und 
+> die Bausteinschaltungskreislauf BSK Logik
 > wie die Morphic Stufen.

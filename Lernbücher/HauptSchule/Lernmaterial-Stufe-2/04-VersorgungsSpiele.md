@@ -6,8 +6,8 @@ Heute werden wir uns mit die Kleinen Kisten und den
 Die Versorgung eurer Tiere oder gegenstände Kümmern.
 
 Wir haben ja gelernt, dass wir für jedes Tier oder
-Gegenstand kümmern müssen und Logischerweise auch
-das Essen oder Baterien für die Zauber bereitstellen
+Gegenstand Versorgung brauchen und deswegen Logischerweise 
+auch das Essen oder Batterien für die Zauber bereitstellen
 müssen.
 
 Wenn die Taschenlampe leer ist, dann müssen wir

@@ -28,6 +28,10 @@ und wer stellt die Arbeitstische her ?
  Zwischen Frage:
 
 
+ 
+
+baue den Wenn-Nein Entscheidungszauber aus:
+
 ¢!
 
  ["Hund"|{"Futter"|"Wasser"}]
@@ -37,6 +41,9 @@ und wer stellt die Arbeitstische her ?
    ¬· »["WasserNapf Holen"|"Mit der Hand Wasser Füllen|{"Wasser"}]« 
 
  ¶¶ 
+
+
+
 
 !¢
 

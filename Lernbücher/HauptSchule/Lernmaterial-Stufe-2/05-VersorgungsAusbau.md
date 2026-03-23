@@ -29,6 +29,12 @@ Vieleicht hat unser Hund Hunger und Durst
 
  Antwort: 
 
+ Und welche hat er zur auswahl ?
+
+ Antwort: Wenn-
+
+ Antwort: Wenn-
+
 und wer stellt die Arbeitstische her ?
 
  Antwort:

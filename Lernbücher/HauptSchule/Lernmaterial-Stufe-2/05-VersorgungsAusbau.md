@@ -58,7 +58,7 @@ und wer stellt die Arbeitstische her ?
 
 
 
-Mögliche Lösung: »["Hund schlafen lassen"|{"Futter"|"Wasser"}]« 
+Mögliche Lösung: ["Hund schlafen lassen"|{"Futter"|"Wasser"}]
 
 
 

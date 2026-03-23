@@ -34,3 +34,42 @@ Beispiele:
 
 
 # 2. Die Versorgung Spielen
+
+Jetzt Lernen wir die Versorgung, indem wir uns
+jetzt anstrengen und heraus bekommen, was wir
+alles für die Versorgung brauchen.
+
+Und dazu Schreiben wir jetzt auf, was wir alles
+brauchen um die Versorgung zu gewährleisten.
+
+Wir Füttern jetzt alles was wir haben - Mit der
+kleinen Zauberkiste.
+
+
+
+¢! »["Hund"|{"          "}]« !¢
+
+¢! »["Du"|{"          "}]« !¢
+
+¢! »["Affe"|{"          "}]« !¢
+
+¢! »["Roboter"|{"          "}]« !¢
+
+¢! »["Taschenlampe"|{"          "}]« !¢
+
+¢! »["Katze"|{"          "}]« !¢
+
+¢! »["Auto"|{"          "}]« !¢
+
+¢! »["Eichhörnchen"|{"          "}]« !¢
+
+¢! »["Hase"|{"          "}]« !¢
+
+¢! »["Kuh"|{"          "}]« !¢
+
+¢! »["Vogel"|{"          "}]« !¢
+
+
+
+
+

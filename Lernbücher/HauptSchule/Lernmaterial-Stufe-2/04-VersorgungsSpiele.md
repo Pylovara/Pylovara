@@ -84,3 +84,13 @@ kleinen Zauberkiste.
 > "gefüttert" werden muss - hat es diese Lektion 
 > Verstanden.
 > Mit Diesem wissen können wir Später Arbeiten.
+> Um es dann Nutzbar zu machen, werden wir
+> Lernen das diese Packete für einen Ganzen Zauber
+> verwendet werden können.
+> Natürlich Sind Proton Packete für die Hardware
+> Versorgung gedacht, jedoch werden wir sie
+> für die Kinder als mögliche "Futter" Packete
+> Verwenden, damit sie lernen wie sie Damit
+> umgehen können.(Der teil mit den Protonen
+> wird später Präzisiert und wird für die Kinder
+> als Energiequelle erklärt.)

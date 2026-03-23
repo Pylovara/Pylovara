@@ -23,7 +23,7 @@ Vieleicht hat unser Hund Hunger und Durst
 
  Zwischen Frage: 
 
-und wer tut Arbeitstische bauen ?
+und wer stellt die Arbeitstische her ?
 
  Zwischen Frage:
 

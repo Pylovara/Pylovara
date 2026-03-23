@@ -2,12 +2,14 @@
 
 Hallo kleiner Zauber Entwickler! 🌟
 
-Damit wir endlich verstehen wo wir unsere zauber auf der 
+Damit wir endlich verstehen wo wir unsere Zauber auf der 
 TASTATUR finden, werden wir uns jetzt die Tastatur genauer ansehen.
 
-Hier bei Liegt das üben mit Touch Tastaturen für jeden
+Hierbei liegt das üben mit Touch Tastaturen für jeden
 in der eigenverantwortung und kann nicht repliziert werden -
-Da hersteller unterschiedliche Touch Tastaturen verwenden.
+Da Hersteller unterschiedliche Touch Tastaturen verwenden.
+
+In der Regel Qwertz oder Qwerty.
 
 Deswegen halten wir uns an die Original Tastatur, wie sie
 in jedem Laden für ein Apfel und einem Ei gekauft werden kann.
@@ -16,7 +18,8 @@ Wenn du keine Tastatur hast und die Schule keine
 zur verfügung stellt, dann bist du Gezwungen weiter
 mit dem Blatt zu arbeiten und zu Radieren.
 
-Wenn das der fall ist - dann kannst du dieses Kapitel überspringen
+Wenn das der fall ist - 
+dann kannst du dieses Kapitel überspringen
 und direkt mit Kapitel 4 weiter machen.
 
 

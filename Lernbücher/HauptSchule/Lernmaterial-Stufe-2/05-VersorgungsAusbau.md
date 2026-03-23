@@ -42,10 +42,12 @@ und wer stellt die Arbeitstische her ?
 
  ["Hund"|{"Futter"|"Wasser"}]
  ¶ ¬· »["FutterNapf Holen"|{"Futter"}]«
-       ¬· »["Mit der Hand Futter Füllen"|{"Futter"}]« 
+       ¬· »["Mit der Hand Futter Füllen"|{"Futter"}]«
+           ¬· »["FutterNapf ist Voll"]«
 
    ¬· »["WasserNapf Holen"|{"Wasser"}]« 
        ¬· »["Mit der Hand Wasser Füllen"|{"Wasser"}]«
+           ¬· »["WasserNapf ist Voll"]«
 
  ¶¶ ¬· 
 

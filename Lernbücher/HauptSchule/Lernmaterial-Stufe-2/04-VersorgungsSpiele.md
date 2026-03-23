@@ -21,15 +21,16 @@ Magen eines Tieres oder die Energie eines Roboters
 - Die Versorgung ist ein Zauber der uns hilft, unsere 
 Zauberkisten mit Essen oder Batterien zu versorgen und
 weil wir Versogung brauchen, brauchen wir 
-die Wachen Zauberkisten, weil sonst die Versorgung
-nicht funktioniert und es Lediglich eine Schlafende
-Zauberkiste bleibt ohne Aktive Versorgung.
+die Wachen Zauberkisten(ausführbares Protein), weil 
+sonst die Versorgung nicht funktioniert und es Lediglich 
+eine Schlafende Zauberkiste(unausführbares Protein) bleibt, 
+ohne Aktive Versorgung.
 
 Beispiele:
 
 ¢! »["Hund"|{"Futter"|"Wasser"}]« !¢
 ¢! »["Taschenlampe"|{"Batterien"}]« !¢
-¢! »["Roboter"|{"Batterien"}]« !¢
+¢! »["Roboter"|{"Ladegerät"}]« !¢
 
 
 # 2. Die Versorgung Spielen

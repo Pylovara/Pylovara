@@ -60,6 +60,12 @@ Der unterschied ist Simpel
   Shift kann als Großschreibung verstanden werden.
 
 
+! Ein kleiner Hinweis für die Barrierefreiheit: 
+ Erwähne eventuell kurz, dass die Tasten gleichzeitig gedrückt werden müssen 
+ (wie ein Akkord beim Klavier). 
+ Das ist für 7- bis 9-Jährige manchmal ein motorischer Lernschritt.
+
+
 # 3. Zauber Symbole auf der Tastatur finden
 
 - Der Zauberrand : ¢! … !¢   

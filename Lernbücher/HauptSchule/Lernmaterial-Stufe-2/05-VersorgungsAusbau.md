@@ -21,14 +21,20 @@ Vieleicht hat unser Hund Hunger und Durst
  Wer kann Entscheidungszauber ausführen ?
 
 
- Zwischen Frage: Der 
+ Zwischen Frage: 
+
+und wer tut Arbeitstische bauen ?
+
+ Zwischen Frage:
 
 
 ¢!
 
  ["Hund"|{"Futter"|"Wasser"}]
- ¶ ¬· »["FutterNapf"|"Mit der Hand Futter Füllen|{"Futter"}]« 
-   ¬· »["WasserNapf"|"Mit der Hand Wasser Füllen|{"Wasser"}]« 
+ ¶ ¬· »["FutterNapf Holen"|{"Futter"}]«
+       ¬· »["Mit der Hand Futter Füllen"|{"Futter"}]« 
+
+   ¬· »["WasserNapf Holen"|"Mit der Hand Wasser Füllen|{"Wasser"}]« 
 
  ¶¶ 
 

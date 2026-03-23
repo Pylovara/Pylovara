@@ -27,11 +27,11 @@ Vieleicht hat unser Hund Hunger und Durst
 
  Wer kann Entscheidungszauber ausführen ?
 
- Zwischen Frage: 
+ Antwort: 
 
 und wer stellt die Arbeitstische her ?
 
- Zwischen Frage:
+ Antwort:
 
 #########################################################
 
@@ -63,3 +63,5 @@ Mögliche Lösung: ["Hund schlafen lassen"|{"Futter"|"Wasser"}]
 
 
 ###########################################################
+
+ 

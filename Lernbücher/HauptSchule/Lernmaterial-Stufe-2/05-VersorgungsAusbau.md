@@ -18,10 +18,10 @@ Vieleicht hat unser Hund Hunger und Durst
  oder Eben nicht - Das ist die Frage die wir uns
  stellen müssen.
 
- Wer kann diese Frage beantworten ?
+ Wer kann Entscheidungszauber ausführen ?
 
 
- Zwischen Frage: Der I
+ Zwischen Frage: Der 
 
 
 

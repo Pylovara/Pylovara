@@ -1,9 +1,50 @@
 ## Kapitel 2: Die Schaltung der Energie (Proton & Protonen-Fluss)
 
 Bisher haben wir über "Dinge" in Kisten gesprochen und Zauber. 
-Jetzt sprechen wir darüber, was diese Kisten antreibt. 
-In der Hauptschule nennen wir das nicht mehr nur "Lunchbox", 
+Wir haben darüber gesprochen wie wir die Zauber in der Morphic Stufe 0
+denken und wie wir im letzten Lernmaterial die Versorgung sichern,
+mit entwedere automatischen oder Manualen(Händisch) angelegten
+Proton Packeten(Kleine Kisten).
+
+Jetzt sprechen wir darüber, wieviel Energie wir den Zaubern geben. 
+In der Hauptschule nennen wir das nicht mehr nur 
+"Lunchbox" oder "Kleine Kisten", 
 sondern wir steigen ein in die Welt der Protonen-Logik.
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ Den Kinder zum beispiel solche dinge mit geben 
+
+ ¢! »["Hase"|{"Möhre: 1"}]« !¢
+
+ ¢! »["Hund"|{"Ball: 1"}]« !¢
+
+ ¢! »["Katze"|{"Fisch: 1"}]« !¢
+
+ ¢! »["Eichhörnchen"|{"Nüsse: 2"}]« !¢
+
+ ¢! »["Robbi"|{"Watt: 140"}]« !¢
+
+ um die mengen angabe einzuführen....
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 ## 1. Das Proton: Der Energie-Parameter { }
@@ -13,11 +54,11 @@ Aber ohne Energie bewegt sich nichts.
 
  Das Proton { } ist der Funke (Das Benzin|Der Strom|Der Zündfunke). 
 
-Es enthält die Informationen, wie viel Kraft die hardware für
+Es enthält die Informationen, wie viel Kraft die Hardware für
 die bearbeitung braucht. 
-In Normalen Geräten (Nicht PylovaraHardware)
-werden diese Informationen in den Registern gespeichert - für die 
-Stromversorgung der CPU oder GPU wie z.B. die Taktrate oder auch
+In Normalen Geräten werden diese Informationen in den 
+Registern gespeichert - für die Stromversorgung der CPU oder GPU 
+wie z.B. die Taktrate oder auch
 wie viel Strom sie ziehen über das Netzteil oder die Grafikkarte.
 
 Wir steuern damit die Hardware selbst - und das ist der Clou!

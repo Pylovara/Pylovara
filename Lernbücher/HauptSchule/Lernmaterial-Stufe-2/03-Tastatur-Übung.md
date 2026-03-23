@@ -9,7 +9,7 @@ Hierbei liegt das üben mit Touch Tastaturen für jeden
 in der eigenverantwortung und kann nicht repliziert werden -
 Da Hersteller unterschiedliche Touch Tastaturen verwenden.
 
-In der Regel Qwertz oder Qwerty.
+In der Regel Qwertz oder Qwerty.(Ansonnsten die Einstellungen anpassen)
 
 Deswegen halten wir uns an die Original Tastatur, wie sie
 in jedem Laden für ein Apfel und einem Ei gekauft werden kann.

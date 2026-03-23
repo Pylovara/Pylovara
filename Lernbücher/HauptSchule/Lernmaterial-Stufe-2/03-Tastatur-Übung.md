@@ -92,5 +92,22 @@ Tastatur Position :
 
 - Der Aktionszauber : » … «
 
+   Gr Alt + Y = »
+
+   Gr Alt + X = «
+
+
+- Der Igel-Wächter : ¶ / ¶¶
+
+   Gr Alt + 7 = ¶
+
+   Gr Alt + 8 = ¶¶
+
+
+- Das Zauber-Karussell : ««Ω
+
+   Gr Alt + X × 2 = ««
+
+   Gr Alt + Shift + Q = Ω
 
    

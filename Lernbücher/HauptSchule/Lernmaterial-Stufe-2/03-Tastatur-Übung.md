@@ -153,3 +153,6 @@ Tastatur Position :
 > mit den Zauber Symbolen schreiben - Hierbei ist
 > ist keine Perfektion gefragt, sondern den umgang
 > mit der Syntax.
+> Wenn sie der Meinung sind das Blätter besser Geeignet sind
+> dann können sie auch das verwenden und diese Lektion
+> überspringen.(Nicht zu Empfehlen)

@@ -115,9 +115,9 @@ Jetzt zurück zum Thema:
      ¬· »["Möhre sammeln"]« -> {"Möhre": 1}
          # Die ALU rechnet im Hintergrund: 1 + 1 = 2
          ¬· »[× 1 + 1 ×]«
-             ¬· »[× 2 ×]«
+             ¬· »["Möhre: 2"]«
 
-     # Wenn der Korb voll ist, wird die Masse bewegt:
-     ¬· »["Möhrenkorb füllen"]«
-        ¬· »[{"Inhalt": 2}]«
+                 # Wenn der Korb voll ist, wird die Masse bewegt:
+                 ¬· »["Möhrenkorb füllen"]«
+                     ¬· »[{"Inhalt": 2}]«
 !¢

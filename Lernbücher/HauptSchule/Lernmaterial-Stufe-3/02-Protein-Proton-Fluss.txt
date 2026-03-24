@@ -183,25 +183,37 @@ minimalen mathematischen verständniss erklären.
 
 ¢! 
  ["Wesen"|{"100% Energie"}]
- ¬· ["Bäume"|{"30% Energie"}]
+ ¬· ["Bäume"|(1)±{"30% Energie"}±]
     ¬· »["Blätter Rascheln"]«
+        ¬· »[± % ±(1)]«
     ¬· »["Äste Knarren"]«
+        ¬· »[± % ±(1)]«
     ¬· »["Holz knistert"]«
+        ¬· »[± % ±(1)]«
     
- ¬· ["Tiere"|{"40% Energie"}]
+ ¬· ["Tiere"|(2)±{"40% Energie"}±]
     ¬· »["Vögel Zwitschern"]«
+        ¬· »[± % ±(2)]«
     ¬· »["Insekten Summen"]«
+        ¬· »[± % ±(2)]«
     ¬· »["Rehe Springen"]«
+        ¬· »[± % ±(2)]«
     
- ¬· ["Geister"|{"6% Energie"}]
+ ¬· ["Geister"|(3)±{"6% Energie"}±]
     ¬· »["Flüstern"]«
+        ¬· »[± % ±(3)]«
     ¬· »["Weinen"]«
+        ¬· »[± % ±(3)]«
     ¬· »["Lachen"]«
+        ¬· »[± % ±(3)]«
     
- ¬· ["Menschen"|{"24% Energie"}]
+ ¬· ["Menschen"|(4)±{"24% Energie"}±]
     ¬· »["Sprechen"]«
+        ¬· »[± % ±(4)]«
     ¬· »["Kreischen"]«
+        ¬· »[± % ±(4)]«
     ¬· »["Grummeln"]«
+        ¬· »[± % ±(4)]«
 !¢
 
 

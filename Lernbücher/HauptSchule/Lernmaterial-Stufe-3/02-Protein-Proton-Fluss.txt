@@ -157,7 +157,24 @@ mit einem jeweiligen protein mit einem FF füllen das dann den jeweiligen
 TF tragenden den jeweiligen prozess zuordnet
         
  
- 
+ Beispiel: Energie-Management (Die "Batterie-Logik")
+Stellen wir uns vor, ein Roboter hat 100% Energie. Jeder Schritt verbraucht 5%.
+
+¢!
+  # HEADER-PROTEIN: Start-Energie auf Rohr (1)
+  ["Roboter-Kern" | (1)± 100 ±]
+
+  ¬· ["Bewegungs-Strang"]
+     # Die ALU berechnet den Verbrauch
+     ¬· »[× (1) - 5 ×]« 
+        # Das Ergebnis wird als NEUER Wert in Rohr (1) geschoben
+        ¬·¤= »[(1)± 95 ±]«
+
+  ¬· ["Sensor-Strang"]
+     # Dieser Strang braucht nur den aktuellen Wert
+     ¬· »["Energie-Check"]«
+        ¬· »[± % ±(1)]«  # Empfängt die 95 von Rohr (1)
+!¢
 
 
 

@@ -99,18 +99,20 @@ und eine innerstmme Sprach zu ihm :
 
  Und auf einmal sah Meister Rex Die Feen um sich herum.
 
- (MeisterFee)±{"Futter: 5"|"Wasser: 5"}± sprach zu ihm :
+ (MeisterFee1)±{" Leere Kleine Kiste "}± sprach zu ihm :
 
  "Hallo Meister Rex! Ich bin eine MeisterFee und ich werde dir
   helfen, deine Tiere und Gegenstände zu Versorgen."
 
- "Jedoch kann ich nur die kleine Kiste tragen, die du mir gibst."
+ "Jedoch kann ich nur die kleine Kiste tragen, die du mir gibst und 
+  ich kann nur eine Sache Tragen - Aber ich habe noch Freunde die
+  mir helfen können! - Deswegen musst du uns Nummern geben"
 
  Und Meister Rex Nickte "Ja, das Verstehe ich!"
 
  dann sah er neber Der MeisterFee noch 
- eine Fee ± Leer ±(KleineFee)
- und noch eine Fee ± Leer ±(KleineFee)
+ eine Fee ± Leer ±(KleineFee1)
+ und noch eine Fee ± Leer ±(KleineFee2)
  die nichts Tragen konnten, weil sie keine kleine Kiste hatten.
 
  Und Meister Rex Fragte die Feen:
@@ -121,15 +123,21 @@ und eine innerstmme Sprach zu ihm :
 
  "Wir sind nur Normale Feen und können nichts Tragen,
   aber wenn du uns eine kleine Kiste gibst, dann können wir
-  von der MeisterFee das Futter und Wasser nehmen und
+  von unserer MeisterFee das nehmen was wir brauchen und
   es den Tieren geben."
 
  Und Meister Rex Nickte "Ja, das Verstehe ich!"
 
- Und Meister Rex gab den Feen kleine Kisten 
- 
- 
+ Und Meister Rex gab den Feen kleine Kisten:
 
+  ± Nehme Futter ±(KleineFee1)
+  ± Nehme Wasser ±(KleineFee2)
+ 
+und da kam auch schon die Zweite MeisterFee (MeisterFee2)
+und Meister Rex Teilte Futter und Wasser auf die Feen auf:
+
+ (MeisterFee1)±{"Futter: 5"}±
+ (MeisterFee2)±{"Wasser: 5"}±
 
 
 

@@ -140,34 +140,26 @@ und Meister Rex Teilte Futter und Wasser auf die Feen auf:
  (MeisterFee2)±{"Wasser: 5"}±
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 2. Das erste starke Zauber Paket
 
  ¢! 
  
-  ["Hasenfamilie"|(MeisterFee)±{"Futter: 5"|"Wasser: 5"}±] 
+  ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
   ¬· ["Papa Hase"]
-
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
   ¬· ["Mama Hase"]
-
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
   ¬· ["Baby Hase"]
-
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]« 
   ¬· ["Opa Hase"]
-
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
   ¬· ["Oma Hase"]
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
   
 !¢
  

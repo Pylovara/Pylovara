@@ -142,6 +142,23 @@ und Meister Rex Teilte Futter und Wasser auf die Feen auf:
 
 # 2. Das erste starke Zauber Paket
 
+Meister Rex ging zu seinem Zauberstab und schaute auf die Feen
+und krämpelte die Ärmel hoch und Grauste an seinem Bart.
+
+Dann fing Meister REX an zu Sprechen:
+
+"Ich habe Hunger!"
+"Ich habe Durst!"
+"Ich brauch Pizza"
+
+und Lachte dabei.
+
+Danach sah er die Koordinaten der Feen und der Hasen
+und Schwingte seinen Zauberstab und Murmelte vor sich her ...(Dunkler Zauber - BSK)
+
+und Zeichnete die Koordinaten der Feen und der Hasen
+in die Luft mit seinem Zauberstab.
+
  ¢! 
  
   ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
@@ -163,33 +180,40 @@ und Meister Rex Teilte Futter und Wasser auf die Feen auf:
   
 !¢
 
- 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Und sah wie die Gesamte Hasen Familie aß und trank.
+Sie Quickten vor Freude und Bedankten sich bei Meister Rex.
 
-Nächste Logik einbringen nach dem die Kinder Verstanden haben was passiert.
-
-"Was passiert, wenn die MeisterFee (1) kein Futter mehr hat? 
-Der Igel-Wächter muss prüfen mit dem "EntscheidungsZauber JA-Weg Nein-Weg:
-¶ (MeisterFee1) > 0 -> Futter geben!
-¶¶ (MeisterFee1) == 0 -> Meister Rex muss zum Acker laufen!"
-
-Das verbindet die ALU-Mathematik mit der Entscheidungs-Logik (Sentiator).
+Meister Rex war so Glücklich, dass er sich hinsetzte
+und sich eine Pizza Bestellt hat. ;-)
 
 
-Der Igel-Wächter steht an der Weggabelung: 
-Hat die MeisterFee noch Futter? 
-
-Wenn JA (¶), geht es weiter zum Füttern. 
-Wenn NEIN (¶¶), muss Meister Rex eine neue Kiste herbeizaubern."
+# 3. Versorgung Üben 
 
 
-ich bin mir noch nicht sicher ob das hier rein soll, ich denke alleine die 
-tatsache das die Kinder Verstehen das sie die Koordinaten der Dinge Erkennen 
-und das trockenste thema der informatik kindergerecht vermitteln können ist 
-Goldstandart.
+So meine Lieben Lehrlinge des Zauberwaldes!
+Jetzt wo ihr die Neuen Zauber von Meister Rex gelernt habt,
+wollen wir mal schauen ob ihr auch so gut aufpasst habt wie Meister Rex.
+
+Aufgabe1:
+
+ - Denke dir 10 Tierfamilie aus und Schreibe sie auf einen Schmierzettel.
+   (Familienmitglieder und was sie Essen und Trinken)
+
+Aufgabe 2:
+
+ - Schreibe für Jede Familie einen Zauber, der die Tiere Versorgt.
+   (Denke dir aus wie viele Feen du brauchst und wie viel Futter und Wasser)
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
 
 
 ---

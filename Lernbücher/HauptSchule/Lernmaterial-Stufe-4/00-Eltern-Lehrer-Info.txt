@@ -113,13 +113,13 @@ Jetzt zurück zum Thema:
      # Wir sammeln Möhren einzeln (Inkrement)
      ¬· »["Möhre sammeln"]« -> {"Möhre": 1}
      ¬· »["Möhre sammeln"]« -> {"Möhre": 1}
-         # Die ALU rechnet im Hintergrund: 1 + 1 = 2
+         # Die ALU rechnet im Hintergrund: 1 + 1 = ?
          ¬· »[× 1 + 1 ×]«
-             ¬· »["Möhre: 2"]«
+             ¬· »["Möhre:   "]« # Dein Ergebnis
 
                  # Wenn der Korb voll ist, wird die Masse bewegt:
                  ¬· »["Möhrenkorb füllen"]«
-                     ¬· »[(1)±{"Inhalt": 2}±]«
+                     ¬· »[(1)±{"Inhalt":   }±]« # Das Ergebnis
 !¢
 
 ich muss davor den kinder in lernmaterial stufe 3 das Feed system beibringen.

@@ -164,7 +164,16 @@ und Meister Rex Teilte Futter und Wasser auf die Feen auf:
 !¢
  
  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+"Was passiert, wenn die MeisterFee (1) kein Futter mehr hat? 
+Der Igel-Wächter muss prüfen mit dem "EntscheidungsZauber JA-Weg Nein-Weg:
+¶ (MeisterFee1) > 0 -> Futter geben!
+¶¶ (MeisterFee1) == 0 -> Meister Rex muss zum Acker laufen!"
+
+Das verbindet die ALU-Mathematik mit der Entscheidungs-Logik (Sentiator).
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 ---

@@ -107,7 +107,7 @@ Jetzt zurück zum Thema:
 
 ¢! 
   # Der Hase braucht 2 Möhren für seinen Korb
-  ["Hase"|{"Hunger": 2}]
+  ["Hase"|±{"Hunger": 2}±(1)]
   # Der Acker ist unser Arbeitsbereich (REX)
   ¬· ["Möhrenacker"]
      # Wir sammeln Möhren einzeln (Inkrement)
@@ -119,5 +119,5 @@ Jetzt zurück zum Thema:
 
                  # Wenn der Korb voll ist, wird die Masse bewegt:
                  ¬· »["Möhrenkorb füllen"]«
-                     ¬· »[{"Inhalt": 2}]«
+                     ¬· »[(1)±{"Inhalt": 2}±]«
 !¢

@@ -1,0 +1,201 @@
+## für 02-Protein-Proton-Fluss.txt
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ Ich denke das das ich das feed system, so wie es im system selbst ist , als 
+ universalen daten transport für die kinder erklären kann.
+
+ wenn sie eine zahl variable über die alu berechnen wollen um sie
+ dann in einem anderen zauber zu verwenden , muss ich dem Ganzen
+ feed FF und TF als "Rohrpost" erklären.
+
+
+Stcihwort : Fundament für Green Computing und Echtzeit-Hardware-Management.
+
+ FührenderFeed
+ FF (1)± 2 ± (Der Sender): Hier wird die Zahl 2 in das Rohr mit der Nummer 1 gesteckt.
+
+ TragenderFeed
+ TF ± 2 ±(1) (Der Empfänger): Hier kommt die Zahl 2 aus dem Rohr mit der Nummer 1 wieder heraus.
+
+»[± " " ±(Empfänger)]«
+ ¬· blabla
+ ¬· blabla
+ ¬· blabla
+ ¬· blabla
+ ¬· blabla
+    ¬· »[× 1 + 1 ]«
+        ¬·¤= »[(Sender)± "2" ±]«
+
+  Ich würde sagen das ich das MCCK MCS-CMD hierbei noch nicht zur sprache bringen sollte,
+  den ansonnsten verwandeln sich die TRANK zu Echten TRANK und die kinder werden es nicht mehr verstehen
+  ohne das mühsam in einer eigenen Lernmaterial-Stufe ausführlich zu erklären.
+
+  das aufbau ketten system , behalte ich als schluss lektion.
+
+  --------------------------------------------------------
+
+das hab ich mal als notiz auf ein schmierzettel geschrieben
+
+
+
+im grunde funktionieren hardware versorgungen entwdere auf
+
+
+
+das wird bearbeitet = das wird verbraucht
+
+
+
+
+
+Selbst gespräch:
+
+wenn aber das was verarbeitet wird mehrere stufe hat könnte man
+
+die gesamte gebrauchte leistung jeweils im Header Protein 
+(egal ob er anhänglich eines eigentlichen prozesses von protein rex ketten drinne steckt), 
+rein schreiben und jeweils zur jeden weiteren verarbeitung mathematisch 
+die alu verwenden um die jeweilige leistung dann ordnentlich per FF und TF 
+in die prozess kette einzufügen ....
+
+
+dann müsste ich jeden prozess strang vom task heraus holen 
+für ein programm oder ähnliches und jeden prozess strang über 
+die alu mathematisch über ¬·¤= (Also REXH-PROZESS-FLÄCHE-1-KORDI-RÜCKGABE) 
+mit einem jeweiligen protein mit einem FF füllen das dann den jeweiligen 
+TF tragenden den jeweiligen prozess zuordnet
+        
+ 
+ Beispiel: Energie-Management (Die "Batterie-Logik")
+Stellen wir uns vor, ein Roboter hat 100% Energie. Jeder Schritt verbraucht 5%.
+
+¢!
+  # HEADER-PROTEIN: Start-Energie auf Rohr (1)
+  ["Roboter-Kern" | (1)± 100 ±]
+
+  ¬· ["Bewegungs-Strang"]
+     # Die ALU berechnet den Verbrauch
+     ¬· »[× (1) - 5 ×]« 
+        # Das Ergebnis wird als NEUER Wert in Rohr (1) geschoben
+        ¬·¤= »[(1)± 95 ±]«
+
+  ¬· ["Sensor-Strang"]
+     # Dieser Strang braucht nur den aktuellen Wert
+     ¬· »["Energie-Check"]«
+        ¬· »[± % ±(1)]«  # Empfängt die 95 von Rohr (1)
+!¢
+
+
+Ich denke ich werde die feed einführung erstmal mit gebrauchte energie und 
+minimalen mathematischen verständniss erklären.
+
+
+¢! 
+ ["Wesen"|{"100% Energie"}]
+ ¬· ["Bäume"|(1)±{"30% Energie"}±]
+    ¬· »["Blätter Rascheln"]«
+        ¬·¤= »[× ± % - 10% ±(1) ×]«
+    ¬· »["Äste Knarren"]«
+        ¬·¤= »[× ± % - 10% ±(1) ×]«
+    ¬· »["Holz knistert"]«
+        ¬·¤= »[× ± % - 10% ±(1) ×]«
+    
+ ¬· ["Tiere"|(2)±{"40% Energie"}±]
+    ¬· »["Vögel Zwitschern"]«
+        ¬·¤= »[× ± % - 10% ±(2) ×]«
+    ¬· »["Insekten Summen"]«
+        ¬·¤= »[× ± % - 10% ±(2) ×]«
+    ¬· »["Rehe Springen"]«
+        ¬·¤= »[× ± % - 20% ±(2) ×]«
+    
+ ¬· ["Geister"|(3)±{"6% Energie"}±]
+    ¬· »["Flüstern"]«
+        ¬·¤= »[× ± % - 1% ±(3) ×]«
+    ¬· »["Weinen"]«
+        ¬·¤= »[× ± % - 2% ±(3) ×]«
+    ¬· »["Lachen"]«
+        ¬·¤= »[× ± % - 3% ±(3) ×]«
+    
+ ¬· ["Menschen"|(4)±{"24% Energie"}±]
+    ¬· »["Sprechen"]«
+        ¬·¤= »[× ± % - 10% ±(4) ×]«
+    ¬· »["Kreischen"]«
+        ¬·¤= »[× ± % - 7% ±(4) ×]«
+    ¬· »["Grummeln"]«
+        ¬·¤= »[× ± % - 7% ±(4) ×]«
+!¢
+
+¢! 
+  # Der Wald-Speicher (FEEDs 1-4)
+  ¬· ["Bäume"|(1)±{"30%"}±]
+     # Der Zauberstab-Funke (¤) berechnet und sendet das Ergebnis (=)
+     ¬·¤= »[× ± % - 10% ±(1) ×]«
+!¢
+
+
+!!!!!!!!!!!! Ich denke damit kann ich die brücke schlagen ... !!!!
+
+Exportiere den schmierzeug in das General protokoll für die externe ssd .... 
+
+darauf aufbauend kann ich dann in symbiose mit dem Mathe unterricht aggieren 
+
+
+by to way (symbiotischer unterricht)
+
+Kernklasse
+- Deutsch ( bzw Landesprachen Unterricht)
+- Mathematik
+
+Hauptklasse
+- Elektrotechnik (speziell Stromkreise und Spannungen, wenn die haupt sowas anbietet)
+- Informatik (ich hoffe die haupt bietet in zuckunft sowas an)
+
+
+Unterklasse
+- Physik
+- Musik (speziell Tonlehre und Frequenzen)
+- Biologie (speziell Genetik und Vererbung)
+
+optionsklasse
+- Kunst (speziell Design und Ästhetik)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Extra Notizen
+
+
+## 3. Der Takt-Geber (RETRON-Modus)
+
+Erinnerst du dich an die Reim Struktur vergleiche? 
+Der RETRON ist der Schlagzeuger in deinem Computer.
+
+Ŧ³ (Morphic-0): Der langsame, deutliche Beat. 
+Jeder Schritt wird laut ausgesprochen. 
+Ideal zum Lernen und Fehlerfinden.
+
+Ŧ¹ (Morphic-2): Der Turbo-Beat. 
+Das System arbeitet so schnell, dass wir die 
+Worte nicht mehr brauchen, nur noch den Impuls.
+
+## 4.Übung: Der Energie-Check
+
+Schau dir diese Kette an:
+
+AKTU-START-POIU-START-{"Stärke": 10}-POIAN-ENDE-AKTAN-ENDE
+
+Kannst du sehen, wie das Proton { } mitten im Protein [ ] sitzt? 
+Es gibt dem Protein(ZauberKiste) die Kraft (Stärke 10), damit 
+der Aktionsdraht(Aktionszauber = AKT) weiß, wie stark er leiten soll

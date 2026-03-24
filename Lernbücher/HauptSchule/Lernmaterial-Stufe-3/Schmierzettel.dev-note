@@ -1,5 +1,92 @@
 ## für 02-Protein-Proton-Fluss.txt
 
+Bisher haben wir über "Dinge" in Kisten gesprochen und Zauber. 
+Wir haben darüber gesprochen wie wir die Zauber in der Morphic Stufe 0
+denken und wie wir im letzten Lernmaterial die Versorgung sichern,
+mit entwedere automatischen oder Manualen(Händisch) angelegten
+Proton Packeten(Kleine Kisten).
+
+Jetzt sprechen wir darüber, wieviel Energie wir den Zaubern geben. 
+In der Hauptschule nennen wir das nicht mehr nur 
+"Lunchbox" oder "Kleine Kisten", 
+sondern wir steigen ein in die Welt der Protonen-Logik.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ Den Kinder zum beispiel solche dinge mit geben 
+
+ ¢! »["Hase"|{"Möhre: 1"}]« !¢
+
+ ¢! »["Hund"|{"Ball: 1"}]« !¢
+
+ ¢! »["Katze"|{"Fisch: 1"}]« !¢
+
+ ¢! »["Eichhörnchen"|{"Nüsse: 2"}]« !¢
+
+ ¢! »["Robbi"|{"Watt: 140"}]« !¢
+
+ um die mengen angabe einzuführen....
+
+ ich muss das gleich mit dem feed system nachfolgend verknüpfen.
+
+ ich muss das feed system so gestallten das sie etwas sammeln können
+ und es dann in einem gegenstand ablegen können. 
+
+ inklusive muss ich die erweiterte logik gleich mit in den bsk einbauen.
+
+ !! Die POIWERK /e sollten hierbei auch eine rolle spielen !!
+
+ 
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+## 1. Das Proton: Der Energie-Parameter { }
+
+Ein Protein [ ] ist die Materie (der Körper). 
+Aber ohne Energie bewegt sich nichts. 
+
+ Das Proton { } ist der Funke (Das Benzin|Der Strom|Der Zündfunke). 
+
+Es enthält die Informationen, wie viel Kraft die Hardware für
+die bearbeitung braucht. 
+In Normalen Geräten werden diese Informationen in den 
+Registern gespeichert - für die Stromversorgung der CPU oder GPU 
+wie z.B. die Taktrate oder auch
+wie viel Strom sie ziehen über das Netzteil oder die Grafikkarte.
+
+Wir steuern damit die Hardware selbst - und das ist der Clou!
+Wir werden jedoch nicht bei jedem Protein ein Proton haben müssen,
+es kommt aber darauf an ob man Protein-Proton packete in seperaten
+Dateitypen mit Transaktionsrahmen anlegen, die speziell für
+das Gesammt Programm(Zauber) wichtig sind (hierzu später mehr) 
+- oder ob man es in einem Protein packen möchte und direkt takten.
+
+Wir können also entscheiden ob wir die Energie Steuerung seperat
+im dateitypen elternteil familien strang anlegen möchten oder direkt
+im Protein mit verpacken (Das ist Geschmackssache des Programmierers).
+
+Merksatz: 
+ „Das Protein ist das Auto, das Proton 
+  ist der Treibstoff und der Schlüssel.“
+
+
+## 2. Die Hardware-Versorgung (POO-Klassen)
+
+Im BSK nutzen wir die POO-Logik (Proton-Output-Orientation). 
+
+Das klingt kompliziert, ist aber wie eine Steckdose:
+
+POOU-START: Wir stecken den Stecker rein (Energie fließt zum Baustein).
+POOAN-ENDE: Wir ziehen den Stecker (Energie-Auftrag abgeschlossen).
+
+Wenn wir im BSK schreiben:
+POOU-START-Bananen-POOAN-ENDE
+...dann sagen wir dem System: 
+
+            "Reserviere genau die Energie und 
+             den Platz, den diese Bananen brauchen!"
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
  Ich denke das das ich das feed system, so wie es im system selbst ist , als 

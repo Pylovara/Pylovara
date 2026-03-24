@@ -103,7 +103,21 @@ hier zusammen schreibe.
 
 Jetzt zurück zum Thema:
 
+!!baustelle!!
 
+¢! 
+  # Der Hase braucht 2 Möhren für seinen Korb
+  ["Hase"|{"Hunger": 2}]
+  # Der Acker ist unser Arbeitsbereich (REX)
+  ¬· ["Möhrenacker"]
+     # Wir sammeln Möhren einzeln (Inkrement)
+     ¬· »["Möhre sammeln"]« -> {"Möhre": 1}
+     ¬· »["Möhre sammeln"]« -> {"Möhre": 1}
+         # Die ALU rechnet im Hintergrund: 1 + 1 = 2
+         ¬· »[× 1 + 1 ×]«
+             ¬· »[× 2 ×]«
 
-
-
+     # Wenn der Korb voll ist, wird die Masse bewegt:
+     ¬· »["Möhrenkorb füllen"]«
+        ¬· »[{"Inhalt": 2}]«
+!¢

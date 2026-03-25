@@ -86,10 +86,20 @@ Hier Lernen wir kleine Logiken in Verbindung mit dem BSK.
 TRANU-START       = Zauberrand Start = Transaktionsrahmen Start = Start =  ¢!
 AKTU-START        = Aktionszauber = Aktionsdraht Start = Start = »
 POIU-START        = Zauberkiste = Protein Start = Start = [
-BOXU-PRINT-START  = BOXIS Print Container Start = Print Start = "
-BOXAN-PRINT-ENDE  = BOXIS Print Container Ende = Print Ende = "
+BOXU-PRINT-START  = Tier/Gegenstand = BOXIS Print Container Start = Print Start = "
+BOXAN-PRINT-ENDE  = Tier/Gegenstand = BOXIS Print Container Ende = Print Ende = "
 POIAN-ENDE        = Zauberkiste = Protein Ende = Ende = ]
 TRANAN-ENDE       = Zauberrand Ende = Transaktionsrahmen Ende = Ende = !¢
+
+REXH-PROZESS      = Meister Rex = REX Prozess HauptAnker = Prozess HauptAnker = Prozess = ¬
+REXU-FLÄCHE-1     = Meister Rex zaubertisch = (REX Prozess) Fläche 1 = (Prozess) Fläche 1 = Prozess Fläche 1 = · 
+
+SENTH-FLEX        = Der IgelWächter = Sentiator Hauptanker = Entscheidungsreflex = Kein Symbol
+SENTAN-WENN-KANN  = Der Entscheidungszauber JA-Weg = Entscheidungsreflex Wenn kann folgendes passieren = ¶
+SENTAN-WENN-NICHT = Der Entscheidungszauber NEIN-Weg = Entscheidungsreflex Wenn nicht muss folgendes passieren = ¶¶
+
+
+
 
 Kannst du daraus ein Zauber machen ?
 
@@ -113,6 +123,20 @@ Gandalf Murmelt Zauberstab Schwingend :
 POIU-START-BOXU-PRINT-START-Hase-BOXAN-PRINT-ENDE-POIAN-ENDE
 
 Wie Sieht der Zauber aus ?:
+
+
+
+
+
+
+
+Gandalf Murmelt Zauberstab Schwingend :
+
+REXH-PROZESS-REXU-FLÄCHE-1
+
+Wie Sieht der Zauber aus ?:
+
+
 
 
 

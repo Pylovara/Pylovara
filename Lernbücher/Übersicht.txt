@@ -1,0 +1,2889 @@
+┌[bandino@dev][08:30:11|Mi Mär 25]
+ │ ᴾʸˡᵒᵛᵃʳᵃ
+ │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     ₕₑₗₚₘₑ ₗₑₓ
+ │    ₜₒ   ₚᵧₗₒ   ₕₑₗₚₘₑₓ ₀₃₋₀₂
+ └[/Pylovara/Lernbücher]> $ tree
+.
+├── HauptSchule
+│   ├── Bildliches
+│   │   └── apple_keyboard_german.png
+│   ├── Extra-BSK-Lernmaterial
+│   │   └── Placeholder
+│   ├── Lernmaterial-Stufe-2
+│   │   ├── 00-Eltern-Lehrer-Info.txt
+│   │   ├── 01-Die-Zauber-Symbole.txt
+│   │   ├── 02-Die-Zauber-Abfrage.txt
+│   │   ├── 03-Tastatur-Übung.txt
+│   │   ├── 04-VersorgungsSpiele.txt
+│   │   └── 05-VersorgungsAusbau.txt
+│   ├── Lernmaterial-Stufe-3
+│   │   ├── 00-Eltern-Lehrer-Info.txt
+│   │   ├── 01-Bausteinschaltungskreislauf.txt
+│   │   ├── 02-REX-Kordi-Auswertung-Feed.txt
+│   │   ├── 03-Versorgungsengpass.txt
+│   │   └── Schmierzettel.dev-note
+│   ├── Lernmaterial-Stufe-4
+│   │   └── 00-Eltern-Lehrer-Info.txt
+│   └── VorWort.txt
+├── Kindergarten-GrundSchule
+│   ├── Bildliches-Stufe-0
+│   │   ├── aufbau_tiefsee_bausteine.png
+│   │   ├── boxis_wald_kiste.png
+│   │   ├── komponenten_wald_puzzle.png
+│   │   ├── mcs_tiefsee_gehirn.png
+│   │   ├── muster_wald_steine.png
+│   │   ├── schattenspiele_OverheadProjektor.png
+│   │   ├── schattenspiele_vogelfamilie.png
+│   │   └── verstehen_tiefsee_lampe.png
+│   ├── Bildliches-Stufe-1
+│   │   ├── Ausführbares-Protein.png
+│   │   ├── Rex.png
+│   │   ├── Sentiatoren.png
+│   │   ├── Trennbefehl.png
+│   │   └── Unausführbares-Protein.png
+│   ├── Hörbücher
+│   │   └── Placeholder.wiki-notes
+│   ├── Lernmaterial-Stufe-0
+│   │   ├── 00-Eltern-Lehrer-Info.txt
+│   │   ├── 01-Willkommen.txt
+│   │   ├── 02-Komponenten.txt
+│   │   ├── 03-Verstehen.txt
+│   │   ├── 04-Aufbau.txt
+│   │   ├── 05-Muster.txt
+│   │   ├── 06-Boxis.txt
+│   │   ├── 07-MCS.txt
+│   │   └── 08-Verbinde-die-Symbole.txt
+│   ├── Lernmaterial-Stufe-1
+│   │   ├── 00-Eltern-Lehrer-Info.txt
+│   │   ├── 01-Transaktionsrahmen.txt
+│   │   ├── 02-Protein.txt
+│   │   ├── 03-Trennbefehl.txt
+│   │   ├── 04-GelernterZwischenSchritt.txt
+│   │   ├── 05-REX.txt
+│   │   ├── 06-Aktionsdraht.txt
+│   │   ├── 07-Gelerntes-Üben.txt
+│   │   ├── 08-Sentiatoren.txt
+│   │   ├── 09-Argumente.txt
+│   │   └── 10-Wiederholung.txt
+│   ├── Mandalas
+│   │   └── Placeholder.wiki-notes
+│   └── VorWort.txt
+├── notizen.dev-note
+├── SonderSchule
+│   ├── Bildliches-Stufe-0
+│   │   ├── aufbau_tiefsee_bausteine.png
+│   │   ├── boxis_wald_kiste.png
+│   │   ├── komponenten_wald_puzzle.png
+│   │   ├── mcs_tiefsee_gehirn.png
+│   │   ├── muster_wald_steine.png
+│   │   ├── schattenspiele_OverheadProjektor.png
+│   │   ├── schattenspiele_vogelfamilie.png
+│   │   └── verstehen_tiefsee_lampe.png
+│   ├── Bildliches-Stufe-1
+│   │   ├── Ausführbares-Protein.png
+│   │   ├── Rex.png
+│   │   ├── Sentiatoren.png
+│   │   ├── Trennbefehl.png
+│   │   └── Unausführbares-Protein.png
+│   ├── Hörbücher
+│   │   └── Placeholder.wiki-notes
+│   ├── Lernmaterial-Stufe-0
+│   │   ├── 00-Eltern-Lehrer-Info.txt
+│   │   ├── 01-Willkommen.txt
+│   │   ├── 02-Komponenten.txt
+│   │   ├── 03-Verstehen.txt
+│   │   ├── 04-Aufbau.txt
+│   │   ├── 05-Muster.txt
+│   │   ├── 06-Boxis.txt
+│   │   ├── 07-MCS.txt
+│   │   └── 08-Verbinde-die-Symbole.txt
+│   ├── Lernmaterial-Stufe-1
+│   │   ├── 00-Eltern-Lehrer-Info.txt
+│   │   ├── 01-Transaktionsrahmen.txt
+│   │   ├── 02-Protein.txt
+│   │   ├── 03-Trennbefehl.txt
+│   │   ├── 04-GelernterZwischenSchritt.txt
+│   │   ├── 05-REX.txt
+│   │   ├── 06-Aktionsdraht.txt
+│   │   ├── 07-Gelerntes-Üben.txt
+│   │   ├── 08-Sentiatoren.txt
+│   │   ├── 09-Argumente.txt
+│   │   └── 10-Wiederholung.txt
+│   ├── Mandalas
+│   │   └── Placeholder.wiki-notes
+│   └── VorWort.txt
+└── Unsortiert
+    ├── BSK-MORPHIC-Prototyping
+    │   ├── entscheidung zu bask
+    │   └── Nur BrainStorm
+    ├── Kochbuch-Prototyping
+    │   ├── 01 Aktionsdraht-Start
+    │   ├── 02 Aktionsdraht-Ende
+    │   ├── 03 Sentiatoren
+    │   ├── 04 Schaltungsaufbau
+    │   ├── 05 REX
+    │   ├── 06 FEED
+    │   ├── 07 Argumente
+    │   ├── 08 VATRON RETRON
+    │   └── 09 Abschluss
+    ├── #RealSchule
+    │   ├── Bildliches
+    │   │   └── Placeholder
+    │   ├── #Lernmaterial-Stufe-2
+    │   │   ├── 00-Eltern-Lehrer-Info.txt
+    │   │   ├── 01-Proton.txt
+    │   │   └── XX-Argumente.txt
+    │   ├── Placeholder
+    │   └── rücklage.dev-note
+    │       └── bsk-für-oberklassen.txt
+    └── Spezial-Lernbuch
+        ├── 01-Die-Komponenten
+        ├── 02-Das-Verstehen
+        ├── 03-Der-Aufbau
+        ├── 04-Das-Muster
+        ├── 05-Universaler-Zugriff
+        └── 06-Logik-Aufbau
+
+29 directories, 111 files
+
+so und jede datei du du jetzt im anhang liest , ist im header jeder datei mit
+
+
+## Kapitel - Name
+
+angegeben !
+
+die stufe 0 habe ich weg gelassen weil darin nur die symbole mit manadals vorhanden sind , als erste visuelle einprägung wenn die kinder im wohnzimmer auf dem teppich gemütlich die mandalas mit bundstifte ausmahlen ... darübter sind auch zauberwald bilder mit tieren etx präsent , spielt aber für uns keine rolle ( wir sind ja erwachsen)
+
+also ab Lernmaterial-Stufe-1
+
+Hier gehts los :
+
+
+
+
+
+# Information für Eltern und Lehrkräfte: Willkommen in Stufe 1!
+
+Liebe Eltern, liebe Lehrkräfte,
+
+herzlichen Glückwunsch! 
+Die Kinder haben die ersten Grundlagen unserer Lernwelt (Stufe 0) erfolgreich gemeistert. 
+
+Bei Stufe 0 ging es in erster Linie darum, den Kindern die Welt von Pylovara näherzubringen, 
+bevor wir in die Tiefe der symbolischen Entwickler-Oberfläche der MaschinenCodeSpeech-Sprache gehen. 
+Stufe 0 sollte Lust auf das machen, was wir jetzt in Stufe 1 vertiefen werden.
+
+Nun beginnt ein neues, sehr spannendes Kapitel: **Stufe 1**. 
+
+In dieser neuen Lernphase machen wir einen faszinierenden Schritt. Wir beginnen damit, 
+den Kindern die **symbolische MCS-Oberfläche** (Master Control System aka MaschinenCodeSpeech, 
+zu Deutsch „MaschinenCodeSprache“) beizubringen. 
+Unser gemeinsames Ziel ist es, sie spielerisch und kindgerecht 
+zu „Entwicklern der Stufe 0“ auszubilden. 
+
+## Was bedeutet das genau?
+Anstatt abstrakten Code oder komplizierte Techniktheorie zu büffeln, 
+lernen die Kinder durch **Bilder und Symbole**, 
+wie komplexe Netzwerke und Systemarchitekturen funktionieren. 
+
+Diese Symbole sind keine reinen Fantasieprodukte, 
+sondern starke Übersetzungen echter, grundlegender Bestandteile aus 
+unserem Entwickler-Lexikon (den _Kernel Notes_). 
+Durch das Visualisieren dieser Bausteine verstehen die Kinder intuitiv, 
+wie digitale und logische Prozesse aufgebaut sind, 
+lange bevor sie auch nur eine Zeile Code schreiben.
+
+Das Schöne dabei ist:
+
+## Welche neuen „Vokabeln“ / Komponenten lernen die Kinder?
+In den kommenden Lektionen werden die Kinder sehr spezifischen Komponenten begegnen. 
+Damit auch Sie als Begleitpersonen das Konzept dahinter verstehen, 
+finden Sie hier eine kurze Übersicht der wichtigsten Symbole, die wir in dieser Stufe einführen:
+
+* **Transaktionsrahmen:** 
+  In der Systemwelt ist das ein Abgrenzungsraum für Prozesse. 
+  Für die Kinder ist es ein „sicherer Ort“ oder „Spielplatz“, an dem eine 
+  bestimmte Aufgabe in Ruhe erledigt wird, ohne dass etwas von außen stört.
+
+* **Protein:** 
+  Proteine sind die wandelbaren Strukturbausteine. 
+  Für die Kinder sind sie das „Material“ oder der „Körper“, aus dem unsere Ideen geformt werden.
+
+* **Proton:** 
+  Der feste, positive Kern. Es ist der essenzielle Funke oder die Energie, 
+  die bewirkt, dass Dinge stabil bleiben und funktionieren.
+
+  Wir sprechen hierbei vom Hardware-Energiemanagement, das die Kinder spielerisch lernen!
+
+* **Argumente:** 
+  In der Programmierung sind das Parameter, die übergeben werden. 
+  Für die Kinder sind das „Aufträge“ oder 
+  „Zutaten“, die wir unseren Helfern mitgeben müssen, damit sie genau wissen, was sie tun sollen.
+
+* **Sentiatoren:** 
+  Wächter- oder Sensorsysteme. 
+  Die Kinder lernen sie als extrem aufmerksame Beobachter kennen, 
+  die immer sofort spüren („sensen“), wenn sich etwas verändert oder ausgeführt werden muss.
+
+  Wir sprechen hierbei von Zweigen, die Entscheidungen freischalten können!
+  Dasselbe Prinzip, das jede Programmiersprache der Welt hat – nur besser!
+
+* **REX:** 
+  Die ausführende Instanz (Executor/Router). Ein starker, 
+  verlässlicher „Gefährte“, der Aufgaben annimmt, koordiniert und sicherstellt, 
+  dass die Befehle am richtigen Ort ausgeführt werden.
+
+  Das heißt im Klartext, dass die Kinder Arbeitsflächen (REX) kennenlernen, 
+  die sie später in der echten Programmierung brauchen werden! 
+
+  Damit sie später nicht wie ich als Programmierer erst mühsam lernen müssen, 
+  was eine Arbeitsfläche ist, sondern es schon von Beginn an kennen!
+
+## Wie können Sie die Kinder unterstützen?
+Die Kinder werden lernen, diese hochentwickelten „Erwachsenen-Komponenten“ 
+in Form von Tieren, leuchtenden Steinen, Pflanzen oder magischen Werkzeugen 
+in unserer Pylovara-Wald- und Tiefseewelt zu sehen.
+
+Bitte ermutigen Sie die Kinder dazu, diese Symbole zu zeichnen und die Begriffe 
+wie „Protein“ oder „Sentiator“ ganz selbstverständlich in ihren Wortschatz aufzunehmen. 
+Wenn ein Kind zum Beispiel von einem „Sentiatoren-Tier“ spricht, das lauscht und aufpasst, 
+dann hat es bereits eine komplexe Kontrollstruktur der Informatik begriffen!
+
+Wir freuen uns darauf, gemeinsam mit Ihnen den nächsten Schritt in der Entwicklung 
+unserer „Entwickler der Stufe 0“ zu gehen!
+
+Es wäre auch ratsam, Mandalas für die Symbole zu erstellen und diese 
+den Kindern zum Ausmalen zu geben. Das hilft ihnen dabei, sich die Symbole besser zu merken
+und fördert ihre Kreativität.
+
+Ich werde persönlich ein paar Mandalas für die Symbole erstellen, 
+die Sie nur noch mit Ihrem Drucker ausdrucken müssen. 
+
+Für den Lernprozess in Stufe 1 arbeiten wir hauptsächlich mit Print-Boxis vom System, 
+die „BOXIS“ heißen und klassenhierarchisch technisch aufgebaut sind ...
+
+Disclaimer: Wenn Ihr Kind noch nicht lesen und schreiben kann, weil es noch zu jung ist, 
+dann müssen Sie den Lesepart übernehmen. Ich denke aber, 
+dass Sie Ihrem Kind gerne etwas beibringen, das wirklich Sinn ergibt ... 
+
+Der Rest ist symbolische Einprägung mit Schaltlogik!
+Das heißt, dass Ihr Kind nicht lesen lernen muss, um zu verstehen, was hier passiert. 
+Es muss lediglich die Symbole und die Logik dahinter verstehen! 
+Das ist der Sinn der Sache! 
+
+Wenn es schon lesen kann, wäre es natürlich schön <3
+
+Was vielleicht noch erwähnenswert ist: Wir sprechen hierbei von 
+einer symbolischen Programmiersprache. Diese vermittelt die Logik hinter 
+der Programmierung, ohne das Kind mit der Syntax einer 
+klassischen Programmiersprache zu belasten. 
+In späteren Schritten kann es so auch den Unterbau kennenlernen, 
+ohne dabei nicht gehirngerecht lernen zu müssen.
+
+Seien Sie versichert, dass es keine Symbole gibt, die unerklärbar in 
+irgendeiner Abstraktionsschicht stecken. 
+Vom Sockel bis zur Spitze kann alles logisch und absolut valide erklärt werden!
+
+Wir werden hierbei dann in Stufe 2 anfangen, die gelernten 
+Komponenten mit `BOXH-PRINT => ""` zu benutzen, und bauen einfache Schaltungen auf, 
+die mit allem auf diesem Planeten erklärt werden können ... 
+
+Wir werden keine OS ABI oder sonstigen Schnickschnack benutzen, 
+sondern nur die symbolische Sprache der MCS, die völlig auf 
+dem Sockel der Hardware basiert und somit absolut valide ist. 
+Sie hat nichts mit herkömmlichen Programmiersprachen zu tun, 
+die auf abstrakten Schichten basieren und somit verfälscht sind!
+
+Wir lernen auch keine alten Syscalls. Denn wie Sie sicher schon festgestellt haben, 
+kann uns eine KI diese heutzutage auf Knopfdruck wie ein Taschenrechner servieren!
+
+Deswegen nutzen wir dieses System als Alleinstellungsmerkmal. 
+Später können alle Boxis mit KI-Unterstützung für die genaue Übersetzung 
+befüllt werden (hierbei sprechen wir dann aber eher vom Anfang der Hauptschulzeit!).
+
+Damit Sie verstehen, worauf das Ganze hinausläuft, zeige ich Ihnen 
+eine Print-Variante, die die Kinder später selbst schreiben können:
+
+`KAFFEESTARTER.KAFFEECREMAMASCHINE-CORE` # In der Datei befindet sich dann:
+
+¢!
+
+Ŧ¹ »["KNOPF AN"]«
+    ¬·»["Kaffeemaschine"]«««S20 # 20 Sekunden Wartezeit wegen dem Heizstab
+       ¶ ¬· »["Tanken"]«««T9
+             ¬· »["Brauch Wasser"]«
+                 ¶ ¬· »["Wasser voll"]«
+                       ¬· »["Stoppe die Zufuhr"]«««E
+                 ¶¶ ¬· »["Wasser rein"]«
+                        ¬· »["Füllstand prüfen"]«««S8
+                            ¶ ¬· »["Füllstand voll"]«««E
+                            ¶¶ ¬· »["Füllstand leer"]«
+                                   ¬· »["FEHLER-Meldung"]«
+
+             ¬· »["Brauch Strom"]«««T4
+                 ¶ ¬· »["Heizstab an"]«««E
+                 ¶¶ ¬· »["Heizstab aus"]«
+                        ¬· »["Fehler-Meldung"]«
+                        
+             ¬· »["Brauch Kaffeepulver"]«««T4                
+                 ¶ ¬· »["Kaffeepulver ist voll"]«««E
+                 ¶¶ ¬· »["Kaffeepulver ist leer"]«
+                        ¬· »["FEHLER-Meldung"]«
+
+             ¬· »["Brauch Tasse"]«««T7
+                 ¶ ¬· »["Tasse ist da"]«««E
+                 ¶¶ ¬· »["Tasse ist nicht da"]«
+                        ¬· »["Wir stellen schnell eine darunter"]«
+                            ¬· »["Brauch Milch"]«««S1
+                            ¬· »["Brauch Zucker"]«««S2
+                            ¬· »["Brauch Kaffeelöffel"]«««S3
+
+    ¶¶ ¬· »["ES FEHLTE ETWAS"]«««T4
+        ¬· »["Kaffee ist nicht fertig"]«
+            ¬· »["Maschinen-Signal"]«
+                ſ »["Kaffee ist nicht fertig, reinige aber den Speicher!"]«
+
+!¢
+
+Sie haben richtig gesehen! Das lernen die Kinder auf spielerische Art und Weise. 
+Das kann ihnen kein C, Python oder Sonstiges bieten, weil es zu abstrakt ist und 
+nicht direkt auf dem Sockel der Hardware basiert!
+
+Wir werden den Kindern erklären können, warum welches Symbol was tut!
+Wir werden den Kindern erklären können, wie man Programme schreibt – ohne Fragezeichen im Kopf!
+Wir werden den Kindern keine abstrakten Hieroglyphen in einem Compiler näherbringen müssen, 
+sondern wir können sie direkt mit logischem Denken in 
+den BSK (Bausteinschaltungs-Kreislauf) einführen!
+
+Selbst die Komponenten, die für die Übersetzung existieren, 
+können den Kindern mit jeder symbolischen Lektion für das eigene Verständnis vermittelt werden!
+
+### Ein konkretes Beispiel aus dem Alltag
+
+Ŧ¹ »["KNOPF AN"]«
+    ¬·»["Kaffeemaschine"]«««S20 # 20 Sekunden Wartezeit wegen dem Heizstab
+       ¶ ¬· »["Tanken"]«««T9
+             ¬· »["Brauch Wasser"]«
+                 ¶ ¬· »["Wasser voll"]«
+                       ¬· »["Stoppe die Zufuhr"]«««E
+                 ¶¶ ¬· »["Wasser rein"]«
+                        ¬· »["Füllstand prüfen"]«««S8
+                            ¶ ¬· »["Füllstand voll"]«««E
+                            ¶¶ ¬· »["Füllstand leer"]«
+                                   ¬· »["FEHLER-Meldung"]«
+
+Ein Kind versteht sofort: „Wir drücken den Knopf an. Dann tanken wir. 
+Das dauert 9 Ticks.“ Es versteht keine komplizierte Syntax, 
+sondern es versteht den Ablauf. Es begreift Ursache und Wirkung sowie gleichzeitige Prozesse.
+
+Kinder lernen hochkomplexes Denken dank bildlicher Prägung und symbolischer Verankerung. 
+Um ihnen das ordentlich zu erklären, müssen wir weit in die menschliche Evolution zurückgehen 
+und die Entstehung der Sprache und des Denkens betrachten. 
+
+Die ersten Tiere hatten noch keine Sprache, sondern nur Instinkte, Reflexe und 
+bildliches Denken – „Designed by Mother Nature“ nach dem Augenprinzip. Wir wissen also,
+dass Gehirne Informationen viel besser wie einen „Video-Stream“ bearbeiten können, 
+lange bevor sie Worte dafür hatten.
+
+Kommunikation herrscht überall durch Haltungssymbolik, 
+Mimik und Gestik. Der Teil des Gehirns, der für die Verarbeitung dieser Synapsen zuständig ist, 
+ist der visuelle Cortex. Dieser am besten trainierte, genetisch übertragene Teil, 
+der die Evolution seit der Entstehung von Allem, was sich selbst replizieren, 
+denken oder handeln kann, begleitet, wird heute oft nicht genutzt.
+
+Stattdessen stehen oft 20 Jahre Studium (nach der Schule) an, plus weitere 10 Jahre, 
+um das eigentlich Studierte auch wirklich zu verstehen – und das oft nur auf Grundlage 
+von Abstraktionsschichten, die nicht einmal auf dem Sockel der Hardware basieren.
+
+Das ist doch traurig, oder? Wir können das ändern! 
+
+Während das Kind ein Sentiator-Mandala ausmalt, prägt es sich die Form fest ein. 
+Es verbindet das Symbol mit Ruhe, mit Kreativität und mit einem positiven Gefühl. 
+Später, wenn es das Symbol im Code sieht, kommt dieses Gefühl wieder zurück.
+
+Wir nutzen das, was zuerst im Kind vorhanden ist: Das visuelle Denken! 
+
+Aber wir nutzen es nicht aus, sondern wir füllen es mit Logik, die Ihre 
+Kinder intelligenter werden lässt, als es heutige Wissenschaftler oft schaffen könnten – 
+und das erklärbar, Vortrag für Vortrag (ganz ohne KI!).
+
+Mit dieser Lernmethode können wir die Kinder auf eine Art und Weise fördern, 
+die ihnen in ihrem gesamten späteren Leben zugutekommen wird. Sie werden in der Lage sein, 
+komplexe Probleme zu lösen und kreative Lösungen zu finden. Sie werden ihre Gedanken und 
+Ideen klar und präzise ausdrücken sowie ihre Ziele und Träume verwirklichen können.
+
+Egal ob als (und verzeihen Sie mir meinen Enthusiasmus):
+
+- Elektroniker der AAA-Klasse
+- Informatiker der AAA-Klasse
+- Physiker der AAA-Klasse
+- Mathematiker der AAA-Klasse
+- Biologe der AAA-Klasse
+
+Und das Beste ist: Sie können mit MCS sogar direkt Arbeiten aus 
+dem Bereich der Kybernetik vermitteln – als echte Alternative zu dem, was heute oft in 
+den Schulen gelehrt wird (nicht zwingend als Ersatz zu empfehlen, aber absolut als 
+mächtige Ergänzung möglich!).
+
+Oder sie können bei Pylovara direkt ihr Geld verdienen! 
+
+Wir wünschen unseren Kindern keine „Gehirnblutungen“ durch künstlich hochgeschraubte 
+Abstraktionsschichten. Wir wollen sie richtig schulen! <3
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/01-Transaktionsrahmen.txt
+
+
+
+
+# Kapitel 1: Der Zauberrand (Transaktionsrahmen)
+
+Hallo kleiner Entwickler! 🌟
+
+Heute lernen wir etwas ganz Wichtiges. Weißt du, was passiert, wenn man im Wald eine ganz besondere Entdeckung macht? Man möchte einen Schutzzaun darum bauen, damit alles sicher ist und man in Ruhe schauen kann, was im Wald passiert.
+
+In Pylovara nennen wir das einen **Transaktionsrahmen**. Aber wir sagen dazu einfach: **Der Zauberrand**.
+
+```text
+        .   *   .    *    .  *      .    * 
+       *    .  / \  *  . / \  .  * / \  .  *
+      .  *    /   \  .  /   \  *  /   \    .
+    *      --|     |---|     |---|     |--     *
+  .    *     |     |   |     |   |     |  .  *
+             |     |   |     |   |     |
+      _______###########################_ 
+     /                                   \
+    |     ***************************     |
+    |     *                         *     |
+    |     *   ¢! ["Der Hase"] !¢    *     |
+    |     *                         *     |
+    |     *         (\_/)           *     |
+    |     *         (z.z)           *     |
+    |     *        (>  <)           *     |
+    |     *     schläft tief...     *     |
+    |     *                         *     |
+    |     ***************************     |
+     \_________________#_________________/
+                       #
+          /------------#-----------\
+         /  [ OVERHEAD PROJECTOR ]  \
+        /____________________________\
+              /                  \
+             /                    \
+            /                      \
+           /     (^_^)    (o_o)     \
+          /    squirrel |  owl       \
+```
+
+##########################################################
+(Mandala: hier kommt das Mandala)
+(Hier Baue ich eine Zauberkisten Geschichte fürs Mandala 
+malen ein später mit freudigen entspannten ambiente)
+##########################################################
+
+Alles, was innerhalb dieses Randes passiert, gehört zusammen. 
+Es ist wie eine kleine Insel, auf der deine Befehle ganz 
+sicher sind.
+
+## Der magische Anfang: ¢!
+
+Damit der Zauber beginnt, brauchen wir ein spezielles Zeichen 
+am Anfang. Es sieht so aus:
+
+# ¢!
+
+Stell dir vor, das **¢** ist ein kleiner magischer Schlüssel 
+und das **!** sagt: "Achtung! Jetzt geht der Zauber los!"
+
+## Das Ende vom Zauber: !¢
+
+Wenn wir fertig sind, müssen wir den Rand wieder zumachen. 
+Das machen wir so:
+
+# !¢
+
+Hier kommt erst das **!**, um zu sagen: "Stopp, wir sind fertig!",
+und dann der Schlüssel **¢**, der den Zauber sicher abschließt.
+
+---
+
+### Deine Aufgabe:
+1. Kannst du die Zeichen `¢!` und `!¢` in die Luft malen?
+2. Male ein Bild von deiner Lieblings-Sache (zum Beispiel 
+einen Apfel oder einen Hund) und zeichne einen leuchtenden
+ Zauberrand mit `¢!` und `!¢` darum herum!
+
+Denk dran: Alles, was **zwischen** `¢!` und `!¢` steht, ist 
+in Sicherheit!
+
+---
+> [!TIP]
+> **Für Eltern:** Helfen Sie dem Kind, die Symbole `¢` und `!` 
+> auf der Tastatur zu finden oder malen Sie gemeinsam ein großes
+> Plakat mit dem "Zauberrand". Es geht darum, das Konzept von
+> "Start" und "Ende" eines geschlossenen Logik-Bereichs zu 
+> verstehen.
+
+> Wenn sie mit einem Computer arbeiten , stellen sie sicher das 
+> sie utf -8 Deutsche Standart haben !
+
+> *Tip= Wenn einmal verstanden wurde wie man jedes Zeichen 
+> ansteuern kann, ist das schreiben mit MCS ein Kinderspiel
+
+> Sie finden die das cent zeichen unter Rechtes Alt + C = ¢ und 
+> das Ausrufezeichen unter Shift + 1 = !
+> Besser wäre es wenn sie Schriftlich arbeiten auf Originalem 
+> Weisen Blätter oder auf einem Whiteboard ! 
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/02-Protein.txt
+
+
+
+
+# Kapitel 2: Die Zauberkiste (Protein)
+
+Hallo kleiner Entwickler! 🌟
+
+Erinnerst du dich an unseren **Zauberrand** `¢! ... !¢` aus dem letzten Kapitel? 
+Heute schauen wir uns an, was wir in diesen sicheren Bereich hineinlegen können.
+
+Stell dir vor, du hast eine ganz besondere Kiste, in die du alles hineinlegen kannst, 
+was du für dein Abenteuer brauchst. In Pylovara nennen wir das ein **Protein**. 
+Aber wir sagen dazu einfach: **Die Zauberkiste** (Protein).
+
+(Bild: ![protein_zauberkiste.png](../Bildliches-Stufe-1/protein_zauberkiste.png))
+
+(Mandala: ![mandala_protein.png](../Bildliches-Stufe-1/mandala_protein.png))
+
+## Das Symbol für die Zauberkiste: []
+
+Das Zeichen für unser Protein sieht so aus:
+
+# []
+
+Es sind zwei Klammern, die sich anschauen. Sieht es nicht aus wie eine leere Kiste, 
+die darauf wartet, gefüllt zu werden?
+
+## Was kommt in die Kiste?
+
+In diese Kiste können wir alles Mögliche stecken:
+- Ein Wort (wie "Apfel" oder "Hund")
+- Eine Zahl
+- Oder sogar eine ganze Farbe 🎨
+
+In Pylovara ist das **Protein** das Material, aus dem wir unsere digitalen Welten bauen. 
+Es ist wie Knete, die man in jede beliebige Form bringen kann.
+
+---
+
+### Deine Aufgabe:
+1. Zeichne drei Zauberkisten `[]` auf dein Blatt.
+2. Male in die erste Kiste einen Stern ⭐, in die zweite eine Blume 🌸 und 
+in die dritte einen kleinen Fisch 🐟.
+3. Versuche, die eckigen Klammern `[` und `]` auf einer Tastatur zu finden! 
+(Tipp: `Alt Gr` + `8` und `Alt Gr` + `9`)
+
+---
+> [!TIP]
+> **Für Eltern:** Das **Protein** 
+> entspricht in der Informatik einem 
+> Daten-Container oder einem Struktur-Baustein. 
+> Erklären Sie dem Kind, dass die Kiste `[]` ein 
+> Platzhalter ist. Man kann etwas hineintun, es wieder 
+> herausnehmen oder verändern. Es ist das "Was", mit dem 
+> wir arbeiten, während der Transaktionsrahmen das "Wo" 
+> bestimmt.
+
+> [!NOTE]
+> Das ist keine stumpfe Übung. Das ist Kreativität als 
+> Lernverstärker. Das Kind malt etwas, das es liebt – 
+> einen Hund, einen Drachen, eine Eisdiele – und setzt 
+> es in Beziehung zum Gelernten. Der Zauberrand wird 
+> positiv besetzt, weil er um etwas Schönes herum ist.
+
+> Und die zweite Aufgabe (drei Kisten malen und mit 
+> Stern, Blume, Fisch füllen) macht dasselbe: Sie 
+> verbindet das Abstrakte ([]) mit dem Konkreten (Stern, 
+> Blume, Fisch). Das Kind lernt nicht "eine Klammer", 
+> es lernt "ein Behälter für etwas Schönes".
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/03-Trennbefehl.txt
+
+
+
+
+# Kapitel 3: Die Zaubertrennwand (Trennbefehl)
+
+Hallo kleiner Entwickler! 🌟
+
+Du hast schon die **Zauberkiste** `[]` (unser Protein) kennengelernt, 
+in der wir Dinge aufbewahren können. Aber was machen wir, wenn wir zwei 
+Dinge in eine Kiste legen wollen, die sich nicht berühren sollen?
+
+Stell dir vor, du möchtest einen Löwen 🦁 und einen Hasen 🐰 in deine 
+Kiste legen. Damit der Hase keine Angst hat, brauchen wir eine Wand dazwischen. 
+In Pylovara nennen wir das den **Trennbefehl**. 
+
+Aber wir sagen dazu einfach: **Die Zaubertrennwand**.
+
+(Bild: ![zaubertrennwand_loewe_hase.png](../Bildliches-Stufe-1/zaubertrennwand_loewe_hase.png))
+
+(Mandala: ![mandala_trennbefehl.png](../Bildliches-Stufe-1/mandala_trennbefehl.png))
+
+## Das Symbol für die Zaubertrennwand: |
+
+Das Zeichen für unsere Zaubertrennwand ist ein einfacher, gerader Strich:
+
+# |
+
+## Wie man es benutzt
+
+Wir stellen die Wand einfach zwischen die Dinge in unserer Kiste. 
+Das sieht dann so aus:
+
+# ["Löwe"|"Hase"]
+
+Jetzt hat jedes Tier seinen eigenen Platz in der Kiste und alles ist sicher geordnet.
+
+Der **Chiponator** (das ist unser großer Baumeister) liebt diesen Strich, weil er 
+damit alles haargenau nebeneinander stellen kann, so wie auf einem Computer-Chip!
+
+---
+
+### Deine Aufgabe:
+1. Zeichne eine große Zauberkiste `[]`.
+2. Zeichne in die linke Seite eine Sonne ☀️ und in die rechte Seite einen Mond 🌙.
+3. Ziehe jetzt die **Zaubertrennwand** `|` genau in die Mitte zwischen Sonne und Mond!
+# 4. Kannst du den geraden Strich `|` auf deiner Tastatur finden? 
+#(Tipp: Meistens links neben der `Y`-Taste mit `Alt Gr` + `<`)
+
+---
+> [!TIP]
+> **Für Eltern:** Der **Trennbefehl** (`|`) dient in 
+> Pylovara der Containerisierungs-Trennung. Er sorgt 
+> dafür, dass Daten innerhalb eines Proteins (der Kiste) 
+> klar voneinander abgegrenzt sind. Das Kind lernt hier 
+> ein fundamentales Prinzip der Ordnung und 
+> Strukturierung von Datensätzen.
+
+> **Wichtig:** Achten Sie darauf, dass das Kind den 
+> senkrechten Strich `|` nicht mit dem kleinen `L` oder 
+> dem großen `I` verwechselt. Es ist ein ganz gerader, 
+> magischer Zauberstab!
+
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/04-GelernterZwischenSchritt.txt
+
+
+
+
+# Kapitel 4: Das große Pylovara-Rätsel (Hausaufgabe/Übung)
+
+Hallo kleiner Entwickler! 🌟
+
+Du hast in den letzten Tagen schon richtig viel gelernt! 
+Du kennst jetzt drei magische Werkzeuge der Pylovara-Sprache. Bevor wir weitermachen, 
+schauen wir mal, ob wir sie alle zusammen benutzen können.
+
+Erinnerst du dich?
+1. **Der Zauberrand** `¢! ... !¢` (Macht alles sicher)
+2. **Die Zauberkiste** `[]` (Dort legen wir Dinge hinein)
+3. **Die Zaubertrennwand** `|` (Hält Dinge in der Kiste getrennt)
+
+(Bild: ![uebersicht_symbole.png](../Bildliches-Stufe-1/uebersicht_symbole.png))
+
+---
+
+## Deine Mission: Der Schatz im Zauberwald
+
+Heute bist du der Architekt! Wir wollen einen ganz besonderen Schatz sicher aufbewahren.
+
+Stell dir vor: In deiner **Zauberkiste** `[]` liegt ein wertvoller **Diamant** 💎 und ein 
+**goldener Schlüssel** 🔑. Damit sie nicht aneinanderschlagen, 
+brauchen wir die **Zaubertrennwand** `|`. 
+
+Und das Ganze stellen wir mitten in einen leuchtenden **Zauberrand** `¢! ... !¢`.
+
+In der Pylovara-Sprache sieht das so aus:
+
+# ¢! [ "Diamant" | "Schlüssel" ] !¢
+
+Sieht das nicht toll aus? Das ist schon ein richtiger kleiner Baustein (BSK), 
+den du da gebaut hast- Juhu ! 
+
+---
+
+### Deine Aufgaben:
+
+1. **Malen:** Zeichne ein großes Din-A4 Blatt. 
+   - Male zuerst den **Zauberrand** `¢! ... !¢` ganz außen herum.
+   - Zeichne in die Mitte eine **Zauberkiste** `[]`.
+   - In die Kiste malst du einen Apfel 🍎 und eine Birne 🍐.
+   - Vergiss nicht die **Zaubertrennwand** `|` dazwischen!
+
+2. **Fehlersuche:** Schau dir diese Zeile an. Was fehlt hier?
+   `¢! [ "Hase"  "Möhre" ] !¢`
+   *(Tipp: Wie hieß nochmal der Strich, der Dinge trennt?)*
+
+3. **Luftschreiben:** 
+   Versuche, die ganze Zeile `¢! [ "A" | "B" ] !¢` mit deinem Finger in die Luft zu malen! 
+   *(Tipp: Versuchen sie es Gemeinsam mit dem Kind)*
+
+4. **Andere Zauberkisten:** Male weitere zauberkisten wo du deine
+   Lieblingssachen reinlegen kannst. 
+
+---
+> [!TIP]
+> **Für Eltern:** Diese Übung festigt die Kombination 
+> der Symbole. Das Kind lernt jetzt nicht mehr nur 
+> einzelne Zeichen, sondern beginnt, **Strukturen** zu 
+> erkennen. 
+> - Das Kind lernt: Erst kommt der Rahmen (Sicherheit), 
+> dann der Container (Inhalt), dann die Trennung 
+> (Ordnung). 
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/05-REX.txt
+
+
+
+
+# Kapitel 5: Meister REX (Der Werkstatt-Meister)
+
+Hallo kleiner Entwickler! 🌟🛠️
+
+Wir haben jetzt schon einen **Zauberrand** und eine **Zauberkiste** mit Trennwänden. 
+Aber wer passt eigentlich auf, dass dort auch richtig gearbeitet wird?
+
+Dafür gibt es **Meister REX**! 
+
+Meister REX ist der Koordinator in der Pylovara-Welt. Er ist wie ein Werkstatt-Meister. 
+Wenn er auftaucht, stellt er die Arbeitstische auf und sagt: "So, jetzt geht es los! 
+Jeder an seinen Platz!"
+
+(Bild: ![meister_rex_werkstatt.png](../Bildliches-Stufe-1/meister_rex_werkstatt.png))
+
+(Mandala: ![mandala_rex.png](../Bildliches-Stufe-1/mandala_rex.png))
+
+## Das Symbole von Meister REX: ¬·
+
+Dieses Symbol sieht fast aus wie ein kleiner Winkelhaken mit einem Punkt. 
+Es bedeutet: "Hier ist ein Arbeitstisch (Workspace|Prozess)!" 
+
+Meister REX stellt diese Tische auf, damit die **Zauberkisten** 
+dort enstehen können.
+
+---
+
+## Wie sieht das aus?
+
+Wenn Meister REX einen Auftrag gibt, sieht das in der Pylovara-Sprache oft so aus:
+
+# ["Mein Auftrag"]
+# ¬· ["Arbeitstisch 1"]
+
+Oder
+
+# ["Mein Hase"]
+# ¬· ["Brauch Möhren"]
+
+
+Das bedeutet: 
+ Meister REX startet den Auftrag und stellt sofort den ersten Arbeitstisch bereit. 
+
+---
+
+### Deine Aufgabe:
+1. Zeichne Zauberkiste und Lege deinen Lieblings-Tier hinein.
+2. Zeichne Meister REX! Stell ihn dir wie einen starken Anführer mit einem großen Plan in der Hand vor.
+3. Danach zeichnest du Hinter Meister Rex Nochmal eine Zauberkiste und legst da rein was dein Tier Braucht.
+
+---
+> [!TIP]
+> **Für Eltern:** **REX** ist in der 
+> Pylovara-Architektur für die Prozesssteuerung und das 
+> Workspace-Management zuständig. 
+> - Das Symbol `¬·` (Arbeitsfläche) aktiviert einen 
+> Workspace, auf dem Operationen ausgeführt werden.
+> Helfen Sie dem Kind zu verstehen, dass REX der "Chef" 
+> ist, der bestimmt, wo und wann gearbeitet wird.(sie 
+> können gerne das Kaffemaschinen beispiel nehmen und es 
+> mit etwas anderem füttern)
+
+> Das konkrete Beispiel zeigt die Anwendung. Das Kind 
+> versteht: "Ach so, wenn mein Hase etwas braucht, dann 
+> stellt REX einen Tisch auf, wo die Möhre hingehört."
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/06-Aktionsdraht.txt
+
+
+
+
+# Kapitel 6: Der magische Aktionsdraht (Die Zauberkiste wird wach!)
+
+Hallo kleiner Entwickler! 🌟⚡
+
+Du weißt jetzt schon, wie man Dinge in eine **Zauberkiste** `[]` legt und wie **Meister REX** `¬·` 
+die Arbeitstische aufstellt. Aber wusstest du, dass manche Zauberkisten noch schlafen?
+
+Stell dir vor, du hast eine Kiste mit einem Apfel darin: `["Apfel"]` - der Apfel liegt einfach nur da. 
+Das nennen wir ein **Unausführbares Protein** und liegt in einer **Schlafenden Zauberkiste** 
+– es ist wie ein Baustein, der darauf wartet, benutzt zu werden.
+
+Aber was ist, wenn der Apfel **rollen** soll? 
+Oder wenn der Hase in sein Zuhause **hoppeln** möchte? 🐰
+
+Dafür brauchen wir den **Aktionszauber** (Execution Thread / Aktionsdraht)!
+
+
+Also zauber wir :
+
+¢! »["Der Hase hoppelt in sein Zuhause"]« !¢
+
+Versuchs mal selbst und male es auf ein Blatt Papier. 
+
+
+---
+
+## Die Symbole: » und «
+
+Der Aktionszauber sehen aus wie kleine Pfeile, die zeigen, wo die Energie hindurchfließt. Er umschließt die Zauberkiste und weckt sie auf!
+
+- `»` Das ist der Anfang vom Zauber. # Metapher für Eltern Linke Hand oder Linker Fuß. # Metapher für Kinder Linker Fuß oder Linke Hand.
+- `«` Das ist das Ende vom Zauber. # Metapher für Eltern Rechte Hand oder Rechter Fuß. # Metapher für Kinder Rechter Fuß oder Rechte Hand.
+
+Wenn wir den Aktionszauber um eine Kiste legen, wird aus einer **schlafenden Kiste** eine **Wache Zauberkiste**. Das bedeutet: Jetzt passiert etwas! # Metapher für Eltern: Die Kiste ist jetzt wach und kann benutzt werden. # Metapher für Kinder: Die Kiste ist jetzt wach und kann benutzt werden.
+
+---
+
+## Schlafende Kiste vs. Wache Kiste
+
+Schau dir den Unterschied an:
+
+1. **Die schlafende Kiste (Unausführbares Protein):**
+   `["Der Hase schläft"]`
+ (Bild: ![Ausführbares-Protein.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png) )
+   *(Hier liegt nur die Information: Der Hase schläft. Nichts bewegt sich.)*
+
+2. **Die wache Kiste (Aktionszauber):**
+   `»["Der Hase kommt sanft in sein zuhause"]«`
+   (Bild: ![Unausführbares-Protein.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png))
+   *(Zack! Durch den Aktionsdraht wird daraus ein echter Befehl(Zauberspruch). Der Hase bewegt sich wirklich!)*
+
+---
+
+## Meister REX und der Aktionszauber
+
+Meister REX liebt den Aktionszauber. Er benutzt ihn, um dir zu zeigen, was gerade passiert. Wenn REX einen Arbeitstisch aufstellt, benutzt er seinen Punkt, um die Aktion genau dort zu starten:
+
+`¬· ["Der Hase schaut dich an"]`
+
+Hier hilft REX dabei, dass der Aktionszauber genau auf seinem Tisch stattfindet.
+
+## Schauen wir mal, was passieren kann, wenn wir den Hasen füttern:
+
+¢!
+
+»["Wir geben dem Hasen eine Möhre"]«
+ ¬· »["Der Hase frisst die Möhre"]«
+ ¬· »["Der Hase freut sich"]«
+ ¬· ["Der Hase schläft ein"]
+
+!¢
+---
+
+### Deine Aufgaben:
+
+1. **Zauber-Check:** Welches ist die "Wache Kiste", die etwas tut?
+   - A) `["Möhre"]`
+   - B) `»["Möhre essen"]«`
+   *(Tipp: Such nach den Draht-Pfeilen!)*
+
+2. **Malen:** Zeichne einen langen, leuchtenden Aktionszauber (den Aktionsdraht) auf ein Blatt Papier. In die Mitte des Aktionszaubers zeichnest du eine Zauberkiste. Was soll in deiner Kiste passieren? Vielleicht `["Tanzen"]` oder `["Singen"]`?
+
+3. **Verbinden:** Kannst du einen Aktionszauber mit dem Finger nachfahren? 
+   Start bei `»`, dann über die Kiste `[]` bis zum Ende `«`.
+
+---
+> [!TIP]
+> **Für Eltern:** Der **Aktionsdraht** (`» ... «`) symbolisiert in Pylovara den **Execution Thread** oder die **Aktionsverdrahtung**. 
+> - Ein einfaches `[]` (Protein/BSK) ist statische Information (Daten).
+> - Erst durch die Umschließung mit dem Aktionsdraht wird daraus eine ausführbare Operation.
+> - In Kombination mit **REX** (`¬·`) wird definiert, 
+> auf welchem Workspace diese Aktion ausgeführt wird.
+> - Helfen Sie dem Kind, den Unterschied zwischen "etwas besitzen" (Protein) und "etwas tun" (Aktion) zu verstehen.
+
+> [!TIP]
+> **Für Eltern:** Das Beispiel mit dem Hasen illustriert 
+> die **sequenzielle Ausführung** von Aktionen. 
+> Das heißt, dass Sie wie bei einer Tagesliste etwas 
+> aufschreiben, 
+> was dann Punkt für Punkt eingestellt, bearbeitet oder 
+> ausgeführt 
+> wird, bis das Ergebnis da ist. In der normalen 
+> Informatik spricht 
+> man es etwas anders aus: Man nennt es EVA – Eingabe, 
+> Verarbeitung, Ausgabe. Das ist aber das gleiche 
+> Prinzip. 
+
+> Wir listen quasi die Anweisungen für die 
+> Kaffeemaschine auf und 
+> führen sie dann aus. Jede Ausführung kann logisch 
+> geschaltet 
+> werden, sodass wir zum Beispiel sagen können: "Wenn 
+> der Kaffee 
+> fertig ist, dann soll die Maschine ausgehen." 
+
+> Das ist das, was Ihr Kind mit dieser Methode lernen 
+> wird. 
+> Dadurch entstehen neue Denkprozesse bei allem, was Ihr 
+> Kind tut. 
+> Es entwickelt ein besseres Verständnis für logische 
+> Abläufe und 
+> kann dadurch selbstständiger werden und sich besser 
+> organisieren. 
+> Alles hat eine Auswirkung auf das, was danach kommt.
+
+> [!TIPZUSATZ]
+> **Für Eltern:** Drucken sie das Bild Aus und lassen 
+> ihr Kind den 
+> Aktionsdraht mit dem Finger nachfahren oder nach 
+> zeichnen ... 
+> oder mit einem Stift nachmalen. Das fördert die 
+> Motorik und das 
+> Verständnis für die Symbole.
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/07-Gelerntes-Üben.txt
+
+
+
+
+# Kapitel 7: Die mächtigen Zauber
+
+## 1. Der Zauberrand (Transaktionsrahmen) `¢! ... !¢`
+## 2. Die Zauberkiste (Protein) `[]`
+## 3. Die Zaubertrennwand (Trennbefehl) `|`
+## 4. Meister REX (Workspace / Prozess) `¬·`
+## 5. Der Aktionszauber (Execution Thread / Aktionsdraht) `» ... «`
+
+Das sind alles mächtige Zaubergegenstände, die du gelernt hast, um:
+
+## 1. Der Zauberrand (Transaktionsrahmen) `¢! ... !¢`
+Wir haben gelernt, dass man mit dem Zauberrand einen Zauber sprechen kann.
+Wie das Licht von dem Overheadprojektor.
+
+![Schattenspiele_OverheadProjektor.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/schattenspiele_OverheadProjektor.png)
+
+
+## 2. Die Zauberkiste (Protein) `[]`
+Wir haben gelernt, dass man in eine Zauberkiste Dinge legen kann. 
+
+![Boxis_Wald_Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/boxis_wald_kiste.png)
+
+
+## 3. Die Zaubertrennwand (Trennbefehl) `|`
+Wir haben gelernt, dass man mit der Zaubertrennwand Dinge trennen kann:
+- Oder Tiere - Oder Gegenstände - Viele Dinge. 
+
+![Aufbau_Tiefsee_Bausteine.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-0/aufbau_tiefsee_bausteine.png)
+
+
+## 4. Meister REX (Workspace / Prozess) `¬·`
+Wie Rex, der Zaubermeister, Tische aufstellen kann. 
+
+![Rex.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Rex.png)
+
+## 5. Der Aktionszauber (Execution Thread / Aktionsdraht) `» ... «`
+
+Und wir haben gelernt, dass wir schlafende Kisten und wache Kisten mit 
+dem Aktionszauber belegen können, wenn etwas passieren soll.
+
+![Schlafende-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Unausführbares-Protein.png)
+
+![Wache-Kiste.png](/Pylovara/Lernbücher/Kindergarten-GrundSchule/Bildliches-Stufe-1/Ausführbares-Protein.png)
+
+
+Jetzt können wir tolle Dinge zaubern, z.B. einen Zauberrand `¢! ... !¢` 
+mit Aktionszauber `» ... «` und Zauberkisten `[]` mit Meister REX `¬·` 
+und Trennzauber `|`, erstellen .
+Wir können diese Kisten sogar schlafen lassen und wach machen!
+
+## 6. Übung: Kleine ZauberStröme erstellen 
+
+
+¢!
+ ["Hund"]
+ ¬· »["Essen"]« # und nach dem essen will er spielen
+     ¬· »["Ball"]«
+     ¬· »["Kuscheltier"]«
+!¢
+
+¢!
+ ["Katze"]
+ ¬· »["Milch"]« # und nach dem trinken will sie spielen
+     ¬· »["Kratzbaum"]«
+     ¬· »["Spielzeugmaus"]«
+!¢
+
+
+¢!
+ ["Maus"]
+ ¬· »["Käse"]« # und nach dem essen will sie spielen
+     ¬· »["Loch"]«
+     ¬· »["Käse"]«
+         ¬· ["KurzeRuhe"]
+            ¬· ["Schlafenszeit"]
+               ¬· »["Aufwachen"]«
+!¢
+
+
+---
+
+> [!TIP]
+> **Für Eltern:** Ermutigen Sie Ihr Kind, die Symbole 
+> selbst zu malen und die Struktur zu verstehen. Es geht 
+> nicht um Perfektion, sondern um das Verständnis der 
+> Logik. Das Kind lernt, dass jede Aktion eine 
+> Konsequenz 
+> hat und dass Ordnung (durch Trennwände und REX) 
+> wichtig 
+> ist, um Chaos zu vermeiden.
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/08-Sentiatoren.txt
+
+
+
+
+# Kapitel 8: Der magische Wächter (Sentiatoren)
+
+Hallo kleiner Entdecker! 🌟🚪
+
+Du hast schon gelernt, wie man Dinge in Kisten packt und
+wie der Aktionsdraht sie wach macht. Aber was passiert, 
+wenn wir mal nicht wissen, ob etwas in der Kiste ist? Oder 
+wenn wir uns entscheiden müssen?
+
+Dafür gibt es den Magischen IgelWächter mit seinem 
+**Entscheidungszauber** (Sentiator), der Zwei Verschiedene 
+Wege Zaubern kann.
+
+(Bild: ![Hier kommt das Bild für den Entscheidungszauber hin](../../SonderSchule/Bildliches-Stufe-1/Sentiatoren.png))
+
+---
+
+## Die Symbole: ¶ und ¶¶
+
+Es gibt zwei Wege, die der IgelWächter uns zeigen kann:
+
+1. **¶ (Der Ja-Weg):** 
+   Dieses Zeichen bedeutet: "Ja, alles ist okay! 
+   Der Apfel ist da!" oder "Die Kiste ist bereit!" 
+   Wenn der IgelWächter dieses Zeichen zeigt, 
+   dürfen wir weitergehen.
+   (Bild: Hier kommt das Bild für den Entscheidungszauber 
+   JA hin)
+
+
+2. **¶¶ (Der Nein-Weg):** 
+   Dieses Zeichen bedeutet: "Stopp! Da fehlt etwas!" 
+   oder "Der Apfel ist weg!"
+   Dann zeigt uns der IgelWächter einen anderen Weg.
+   (Bild: Hier kommt das Bild für den Entscheidungszauber
+    NEIN hin)
+
+Mit dem **Entscheidungszauber** können wir entscheiden, 
+was passieren soll, je nachdem, ob was in der Kiste ist
+oder nicht.
+
+---
+
+## Schauen wir mal in die Apfel-Kiste:
+
+Stell dir vor, wir haben eine Kiste: `["Apfel"]`. 
+Wir wollen wissen, ob der Apfel noch da ist, damit wir 
+ihn essen können.
+
+¢!
+
+["Apfel"]  # Wir legen den Apfel bereit
+
+¶ ¬· »["Apfel essen"]« 
+# Der Wächter prüft mit einem Zaubert und einem 
+# Meister Rex Tisch ob der Apfel da ist? 
+# Wenn JA (¶), dann dürfen wir ihn essen und 
+# Meister Rex kann uns ihn geben!
+
+¶¶ ¬· »["Suchen gehen"]« 
+# Wenn NEIN (¶¶) Zaubert Der Wächter mit Meister Rex einen 
+# Tisch und wir müssen nach dem Apfel suchen, weil der 
+# Apfel weg ist, 
+# Wenn Nein dann Zaubert der Wächter Mit Meister Rex den 
+# Such Tisch!
+
+!¢
+
+---
+
+## Die Maus und der Käse 🧀
+
+Die kleine Maus möchte wissen, ob Käse im Haus ist.
+
+¢!
+
+["Käse"]
+
+¶ ¬· »["Käse mampfen"]«
+¶¶ ¬· »["Traurig piepsen"]«
+
+!¢
+
+---
+
+## Das Eichelhörnchen und seine Nuss️ 🌰 🐿️
+
+¢!
+
+["Nuss"]
+
+¶ ¬· »["Nuss knacken"]«
+      ¬· »["Nuss essen"]«
+
+¶¶ ¬· »["Traurig piepsen"]«
+       ¬· »["Suchen gehen"]«
+           ¬· »["Bäumen klettern"]«
+           ¬· »["Boden absuchen"]«
+           ¬· »["Andere Tiere fragen"]«
+               ¶ ¬· »["Nuss gefunden"]«
+                     ¬· »["Nuss knacken"]«
+               
+               ¶¶ ¬· »["Traurig piepsen"]«
+                      ¬· »["Geht nach Hause"]«
+                          ¬· ["Schläft ein"]
+!¢
+
+---
+### Deine Aufgaben:
+
+1. **Wächter-Check:** Welches Zeichen benutzt der Wächter,
+wenn alles super ist und wir weitermachen dürfen? 
+Einmal `¶` oder zweimal `¶¶`?
+
+2. **Malen:** Zeichne ein großes Tor. Auf der einen Seite
+malst du ein `¶` (für "Alles da!") und einen glücklichen 
+Smiley. Auf der anderen Seite malst du ein `¶¶` (für "Oh 
+nein, leer!") und einen fragenden Smiley.
+
+3. **Zauber schreiben:** Kannst du den Entscheidungszauber 
+JA und NEIN für eine Katze schreiben, die `["Milch"]` 
+trinken will?
+   *(Tipp: `¶ ¬· »["Milch trinken"]«` Vergiss den 
+   Aktionszauber nicht!)*
+
+---
+
+> [!TIP]
+> **Für Eltern:** Ein **Sentiator** (Entscheidungszauber) 
+> (`¶` Ja oder `¶¶` Nein) ist in Pylovara eine 
+> **bedingte Anweisung** (Logik-Gatter / If-Else). 
+> - `¶` (SENTAN-WENN-KANN) prüft, ob die Bedingung (der 
+> Wahrheitswert oder der physikalische Status) erfüllt ist. 
+> - `¶¶` (SENTAN-WENN-NICHT) reagiert auf den negativen 
+> Zustand oder einen Fehler.
+> - Helfen Sie dem Kind zu verstehen, dass das System hier 
+> "denkt" und eine Entscheidung trifft, basierend auf dem, 
+> was in der Kiste gefunden wird.
+
+> [!IMPORTANT]
+> **Für Eltern:** Technisch gesehen prüft der Sentiator den 
+> Zustand des **lcore-nodes** oder den **Truth-Status** 
+> eines Proteins. In dieser Lernstufe führen wir das 
+> Konzept der Entscheidung ein: Aktionen werden nur dann 
+> ausgeführt, wenn die logische Voraussetzung gegeben ist. 
+> Das schult das Verständnis für Kausalität ("Wenn... 
+> dann...").
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/09-Argumente.txt
+
+
+
+
+# Kapitel 9: Das Zauber-Karussell (Wiederholungen)
+
+Hallo kleiner Meister-Entwickler! 🌟🎠
+
+Stell dir vor, du bist auf einem Jahrmarkt. 
+Du sitzt auf einem wunderschönen Karussell. 
+Das Karussell dreht sich und dreht sich, solange 
+die Musik spielt. 
+Du musst nicht jedes Mal neu aufsteigen – du 
+bleibst einfach sitzen und genießt die Fahrt!
+
+In Pylovara nennen wir das eine **Wiederholung**. 
+Aber wir sagen dazu einfach: **Das Zauber-Karussell**.
+
+## Das Symbol für das Zauber-Karussell ist: 
+## ««Ω (das Symbol sieht aus wie Hufeisen)
+
+Wenn wir wollen, dass ein Aktionszauber immer wieder passiert, 
+Zeichnen wir einen zwei mal mehr das ende des Aktionszaubers 
+(»[Aktion]«««Ω) und dazu ein Hufeisen.
+
+## Der tanzende Bär 🐻
+
+Stell dir vor, ein Bär möchte tanzen. 
+Er soll nicht nur einmal in die Hände klatschen, 
+sondern ganz oft!
+
+(Bild: Hier kommt das Bild für den tanzenden Bär hin)
+
+Schau dir an Wie das Aussehen könnte mit all unseren Zauber:
+
+¢!
+
+»["Bär tanzt"]«««Ω
+ ¬· »["In die Hände klatschen"]«««Ω
+ ¬· »["Mit dem Popo Wackeln"]«««Ω
+ ¬· »["Mit den Füßen Stampfen"]«««Ω
+     ¶ ¬· »["Der Bär ist Müde"]«
+           ¶ ¬· »["Bär ist müde"]« 
+                 ¬·["Bär schläft ein"]
+
+     ¶¶ ¬· »["Geht er nach Hause"]«
+            ¬· »["Schläft ein"]«««Ω
+
+!¢
+
+---
+
+## Die fleißige Biene 🐝🌸
+
+Die Biene möchte von Blume zu Blume fliegen, bis ihr Körbchen voll mit Nektar ist.
+
+¢!
+
+["Körbchen"]
+
+¶ »["Zu einer Blume fliegen"]«««Ω
+   ¬· »["Nektar sammeln"]«««Ω
+       ¬· »["Nektar zum Körbchen bringen"]«««Ω
+
+¶¶ ¬· ["Es passt nichts mehr rein"]
+      ¬· »["Ab nach Hause"]«
+          ¬·["Ausruhen"]
+
+!¢
+
+Hier fliegt die Biene so lange im Kreis (Loop), bis der Sentiator sagt: "Stopp, das Körbchen ist voll!"
+
+---
+
+### Deine Aufgaben:
+
+1. **Karussell-Fahrt:** Zeichne eine Zauberkiste `[]`. 
+und zeichne ein zauberkarussel am schluss von deinem aktionszauber `»["Wiederholungskiste"]«««Ω` .
+2. **Tanzschritt:** Stell dich hin und klatsche in die Hände. 
+
+Jetzt mach den Karussell-Zauber: 
+         Klatsche 5-mal hintereinander! Das ist eine Wiederholung.
+
+3. **Zauber schreiben:** Kannst du ein Karussell für ein Kind schreiben, das `»["Schaukeln"]«` möchte? 
+   *(Tipp: `»["Schaukeln"]«««Ω`)*
+
+---
+
+> [!TIP]
+> **Für Eltern:** Eine **Wiederholung** (Loop/Iteration) 
+> (`««Ω`) ist ein fundamentales Konzept. 
+> In Pylovara nutzen argumente als taktgeber für die 
+> wiederholungen unter anderem.
+> - Das Kind lernt hier, dass Prozesse nicht immer linear 
+> enden, sondern zyklisch sein können.
+> - Helfen Sie dem Kind zu verstehen, dass es eine 
+> **Abbruchbedingung** braucht (wie beim Bären, der müde 
+> wird), damit das Karussell nicht ewig weiterdreht 
+> (Endlosschleife).
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/10-Wiederholung.txt
+
+
+
+
+# Kapitel 10: MCS Meister !
+
+ Hallo kleiner Meister-Entwickler! 🌟🎠
+
+Wir haben jetzt die Grundlagen der Pylovarischen Sprache gelernt und Verinnerlicht.
+Damit wir alles haben was wir für einen Zauber brauchen, Listen wir sie nochmal auf.
+
+- Der Zauberrand            ¢! … !¢    Sichererer Raum
+- Die Zauberkiste           []         Träger der Bedeutung
+- Die Zaubertrennwand       |          Ordnung ohne Chaos
+- Meister REX               ¬·         Meister REX, der die Arbeitstische aufstellt
+- Der Aktionszauber         » … «      Erlaubnis zur Tat
+- Der Igel-Wächter          ¶ / ¶¶     Wächter der Entscheidungen
+- Das Zauber-Karussell      ««Ω        Um Argumente zu setzen das Zauberkarussell „Wiederholungen“
+
+Jedes Symbol ist eine Garantierter Zauber, und jeder Zauber hat eine Konsequenz.
+Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
+
+## 1. Was wir brauchen:
+
+- Ein Tier für Die Zauberkiste (Gern dein Haustier)
+- Eine Liste Was Dein Tier tuen möchte am Tag mit Meister Rex
+- Einen Spickzettel für alle Zauber ;-)
+
+## 2. Eine Vorgehensgeschichte ( Erzählt vom MCS Meister )
+
+„Ich bin der MCS Meister — aber ich bin nicht der Zauberer.
+Ich zeige dir nur, wie die Symbole atmen.
+Der wahre Zauberer bist du kleiner Lehrling.
+Damit Du soooo guut wirst wie ein Zaubermeister, müssen wir
+jetzt Alles gelernte wiederholen, damit du Große oder Kleine
+Zauber Schreiben kannst - und deswegen fragen wir dein
+Wissen ab weil jeder GroßerZauberer das wissen muss.
+
+Wenn du deinen Hasen füttern willst, dann Zauberst du :
+
+¢! 
+ ["Hase"]  
+ ¬· »["Möhre geben"]« 
+     ¬· »["Hase frisst die Möhre"]«
+         ¬· ["Hase ist satt"]
+!¢
+
+
+Und wenn etwas fehlt? Dann frag den Igel-Wächter:
+
+¢! 
+ ["Hase"] 
+ ¬·  ["Hunger"]
+     ¶ ¬· ["Möhre liegt da!"]
+          ¬· »["Möhre geben"]«
+              ¬· »["Hase frisst die Möhre"]«
+                  ¬· ["Hase ist satt"]
+     ¶¶ ¬· »["Möhre suchen gehen!"]«
+            ¶ ¬· ["Möhre gefunden!"]
+                 ¬· »["Möhre geben"]«
+                     ¬· »["Hase frisst die Möhre"]«
+!¢
+
+Wenn dein Hund spielen will, dann Zauberst du:
+
+¢! 
+ ["Hund"]
+ ¬· »["Ball werfen"]« 
+     ¶ ¬· »["Hund rennt zum Ball"]« 
+     ¶¶ ¬· »["Ball selber holen weil der Hund müde ist"]«
+!¢
+
+und du brauchst keine Angst haben kleiner Meister, jeder Zauber fängt klein an
+und wird größer je mehr du übst.
+
+Bei Meister Rex landen wir immer wenn wir eine Entscheidung treffen müssen
+und der IgelWächter gibt uns die möglichkeit für beide Entscheidungen:
+
+¢!
+ ["Ball"]
+ ¶ ¬· ["Ball ist da"]
+      ¬· »["Ball werfen"]«
+      ¬· »["Ball fangen"]«
+ ¶¶ ¬· ["Ball ist nicht da"]
+       ¬· »["Ball suchen"]«
+!¢   
+
+Sind Schwere Zauber die du nicht sofort beherschen musst
+aber es ist gut zu wissen was alles gezaubert werden kann.
+
+
+## 3. Wir Frischen dein Zauberwissen auf!
+
+Wir Üben jetzt zur Wiederholung:
+
+##########################################################################
+
+ - Zauberkisten :
+
+ Zähle auf wieviele Zauberkisten wir haben ohne extra Zauber 
+
+  (Schreibe Summe/Zahl hier hin) = 
+
+ und wieviele Zauberkisten haben wir wenn wir einen davon Verzaubern ?
+
+  (Schreibe Summe/Zahl hier hin) = 
+
+ Und wie Heißen die Zauberkisten ?
+   (Kleiner tipp sch ... wa ...)
+
+              Zauberkiste
+              Zauberkiste
+
+ und wie heißt der Zauber der die Zauberkisten umrandet ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Zauber ??? :
+
+ Wieviele Tiere haben wir den ?
+
+  ["Hase"|"Hund"|"Katze"|"Eichhörnchen"|"Robbi"]
+
+  (Schreibe Summe/Zahl hier hin) = 
+
+  Und wie heißt der Zauber der sieh trennt ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Meister ??? :
+
+ Wie heißt nochmal der Meister der die Tische hinstellt ?
+
+  (Schreibe) = 
+
+  Und wie heißt der Zauber der sieh trennt ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Aktionszauber :
+
+ Ein Aktionszauber macht eine Schlafende Kiste zu einer ?
+
+  (Schreibe Zauber hierhin) = 
+
+  Und wie heißt der Zauber der sieh trennt ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Igel-Wächter :
+
+ Wieviele Zauber kann der Igel-Wächter haben ?
+
+  (Schreibe Summe/Zahl hier hin) = 
+
+  Und wie heißen die Zauber ?
+
+ (Schreibe Zauber hierhin) ¶ = 
+
+ (Schreibe Zauber hierhin) ¶¶ = 
+
+ kommt der Igel-Wächter vor oder nach Meister Rex ?
+
+ (Schreibe Zauber hierhin) = 
+
+##########################################################################
+
+ - Zauber-Karussell :
+
+ Wieviele Zauber-Karussell haben wir den ?
+
+  (Schreibe Summe/Zahl hier hin) = 
+
+  Und wo setzen wir das Zauber-Karussell hin ?
+
+ (Schreibe den Zauber dazu) = »["Schaukeln"]«
+
+##########################################################################
+
+## 4. Übungszauber zum selber ab-schreiben:
+
+Jetzt wo wir deine Zaubertalente aufgefrischt haben, wollen wir mal versuchen, 
+ob du schon selber Zauber schreiben kannst.
+Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
+
+##########################################################################
+
+🐱 Die neugierige Katze und der leere Napf
+
+¢!
+ ["Katze"]
+ ¬· »["Napf anschauen"]«
+     ¶ ¬· ["Napf ist voll!"]
+          ¬· »["Fressen"]«
+     ¶¶ ¬· ["Napf ist leer!"]
+           ¬· »["Miau!"]«
+!¢
+
+„Wenn der Napf voll ist, frisst die Katze. Wenn nicht, ruft sie laut!“
+
+##########################################################################
+
+🐿️ Das Eichhörnchen und die versteckte Nuss
+
+¢!
+ ["Eichhörnchen"]
+ ¬· »["Baumloch prüfen"]«
+     ¶ ¬· ["Nuss gefunden!"]
+          ¬· »["Knacken"]«
+          ¬· »["Genießen"]«
+     ¶¶ ¬· ["Nuss weg!"]
+           ¬· »["Suchen im Laub"]«
+           ¬· »["Traurig piepsen"]«
+!¢
+
+„Es schaut nach – wenn die Nuss da ist, knackt es sie. Wenn nicht, sucht es traurig.“
+
+##########################################################################
+
+🤖 Robbi der kleine Helfer-Roboter
+
+¢!
+ ["Robbi"]
+ ¬· »["Batterie prüfen"]«
+     ¶ ¬· »["Grün leuchtet!"]«
+           ¬· »["Aufräumen"]«
+           ¬· »["Spielen"]«
+     ¶¶ ¬· »["Rot leuchtet!"]«
+            ¬· ["Laden"]
+               ¬· ["Warten…"]
+!¢
+
+„Robbi arbeitet, solange seine Batterie grün leuchtet. Wenn rot – muss er laden!“
+
+##########################################################################
+
+---
+
+> [!TIP]
+> **Für Eltern:** 
+> wenn das Kind später fragen sollte:
+> „Wie kann der Roboter wissen, wie viel Energie er hat?“
+> … dann ist die Antwort:
+> „Das lernst du in der Hauptschule — da bekommst du noch mehr Zauber wie PROTON(Kleine Kiste)
+> und den ¤:-Spiegel(Kordinator Meister REX mit Kordizauber plus Auswertungzauber)!“
+> Dies ist damit die Letzte Lektion für ein Grundschulkind in diesem Buch.
+> Es Spielt auch keine Rolle ob alles perfekt ist oder nicht, es geht um das Verständnis der 
+> Zauber und Symbole.
+> Später Lernt das Kind alles Mit mit Echten Begriffen und 
+> die Bausteinschaltungskreislauf BSK Logik
+> wie die Morphic Stufen.
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/00-Eltern-Lehrer-Info.txt
+
+
+
+
+# Information für Eltern und Lehrkräfte: Willkommen in Stufe 2!
+
+Liebe Eltern, liebe Lehrkräfte,
+
+herzlichen Glückwunsch! Die Kinder haben die ersten Grundlagen 
+unserer Lernwelt (Stufe 0 und 1) erfolgreich gemeistert. 
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/01-Die-Zauber-Symbole.txt
+
+
+
+
+## Kapitel 1 Die Zauber Symbole
+
+Hallo kleiner Zauber Entwickler! 🌟
+
+In diesem Lernmaterial werden wir die Zauber nochmal
+verinnerlichen damit wir gut vorbereitet sind.
+
+Wir werden alle Zauber die wir besitzen noch einmal
+aufschreiben und uns ansehen, was sie tun.
+
+Hierbei bekommst du Nochmal Erklärt, was die Zauber
+tun und wofür wir sie gebraucht werden.
+
+
+# 1. Die Zauber Auffrischung
+#######################################################
+
+
+- Der Zauberrand  ¢! … !¢  ist die GrundMagie
+
+
+Der Zauberrand ist ein Zauber der uns hilft, unsere Zauber 
+sicher zu machen - Tiere, Pflanzen, Gegenstände, Orte.
+Er ist der sichere Raum für unsere Zauber.
+
+
+¢! Zauberrand !¢
+
+(Ohne Zauberrand, keinen Zauber)
+
+Fachbegriff: Transaktionsrahmen
+
+
+#######################################################
+
+
+- Die Zauberkiste  []  Träger von Allem
+
+
+Die Zauberkiste ist ein Zauber der uns hilft, unsere 
+Lieblinge sicher zu verpacken.
+
+
+¢! Zauberkiste [] !¢
+
+(Ohne Zauberkiste, keine sicheren Berreich)
+
+Fachbegriff: Protein
+
+Ohne Aktionszauber: Schlafende Zauberkiste
+
+Fachbegriff: Unausführbares Protein
+
+
+#######################################################
+
+
+- Die Zaubertrennwand  |  Ordnung ohne Chaos
+
+
+Die Zaubertrennwand ist ein Zauber der uns hilft, 
+unsere Tier oder Gegenstände sicher in einer Zauberkiste 
+zu trennen.
+
+
+¢! Zauberkiste [Zauber|trennwand]  !¢
+
+(Ohne Zaubertrennwand, kein geordneter Bereich)
+
+Fachbegriff: Trennbefehl
+
+
+#######################################################
+
+
+- Meister REX  ¬·  der die Arbeitstische aufstellt
+
+Meister REX ist der Zauberer der uns hilft, unsere 
+Zauber auf Jedem Tisch aufzustellen und erlaubt uns,
+jeden Zauber auszubauen.
+
+
+¢! 
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
+(Ohne Meister Rex, kein Aufbau der Zaubertische)
+
+Fachbegriff: REX
+
+
+#######################################################
+
+
+- Der Aktionszauber  » … «  Erlaubnis zur Tat
+
+Der Aktionszauber ist ein Zauber der uns hilft, unsere 
+Zauberkisten in Bewegung zu setzen, aufzuwecken.
+
+Wenn eine Kiste schläft, dann kann sie nur schlafen. 
+Wenn eine Kiste Wach ist, dann kann sie alles tun was wir 
+ihr sagen.
+
+¢!
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+   Meister REX ¬· »[Wache Zauberkiste]«
+
+Meister REX ¬· »[Wache Zauberkiste]«
+    Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
+(Ohne Aktionszauber, keine wache Zauberkiste)
+
+Fachbegriff: Aktionsdraht
+
+Mit Aktionszauber: Wache Zauberkiste
+
+Fachbegriff: Ausführbares Protein
+
+
+#######################################################
+
+
+- Der Igel-Wächter  ¶ / ¶¶  der Entscheidungszauber
+
+Der Igel-Wächter ist der Zauberer der uns hilft, 
+die Entscheidungzauber für beide Fälle aufzubauen.
+Er kann vorhersehen das es zwei möglichkeiten gibt
+und kann uns helfen, beide möglichkeiten aufzubauen.
+
+Wenn Ja oder Nein Zauber, dann brauchen wir um
+zu wissen was passieren soll wenn der Gegenständ 
+oder das Tier nicht weis was es tun soll.
+
+
+¢!
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶ [Zauberkiste] # Ja Zauber
+     Meister REX ¬· »[Wache Zauberkiste]«
+         Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶¶ [Zauberkiste] # Nein Zauber
+      Meister REX ¬· »[Wache Zauberkiste]«
+          Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
+(Ohne Igel-Wächter, kein Entscheidungszauber)
+
+Fachbegriff: Sentiator
+
+
+#######################################################
+
+
+- Das Zauber-Karussell  ««Ω  das Zauberkarussell „Wiederholungen“
+
+Das Zauber-Karussell ist ein Zauber der uns hilft, 
+unsere Wiederholungszauber an eine Wache Zauberkiste
+zu binden.
+
+Er ermöglicht uns das Etwas öfters wiederholt werden soll.
+
+
+¢!
+
+Zauberkiste [Zauber|trennwand]  
+Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶ [Zauberkiste] # Ja Zauber
+     Meister REX ¬· »[Wache Zauberkiste]«««Ω  (das Zauberkarussell „Wiederholungen“)
+         Meister REX ¬· [Schlafende Zauberkiste]
+
+ Igel-Wächter  ¶¶ [Zauberkiste] # Nein Zauber
+      Meister REX ¬· »[Wache Zauberkiste]«
+          Meister REX ¬· [Schlafende Zauberkiste]
+
+!¢
+
+(Ohne Zauber-Karussell, kein Wiederholungszauber)
+
+Fachbegriff: Argument
+
+
+#######################################################
+
+
+---
+
+> [!NOTE]
+> Hier werden alle Zauber nochmal erklärt, um das
+> Gelernte zu festigen und zu verinnerlichen.
+> Gerade aus dem Grund heraus, das sie einen
+> schulwechsel hinter sich haben.
+> damit sorgen wir für die Auffrischung 
+> bevor wir weiter damit arbeiten.
+> Zusätzlich bekommen die Kinder die Fachbegriffe
+> nebenbei mit auf den Weg.
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/02-Die-Zauber-Abfrage.txt
+
+
+
+
+## Kapitel 2 Die Zauber Abfrage
+
+Hallo kleiner Zauber Entwickler! 🌟
+
+Damit wir gut vorbereitet sind, wenden wir uns jetzt
+deinem Zaubergedächnis zu - Damit du viele
+Zauber aus deinem Gedächtnis heraus Aufbauen kannst.
+
+Dazu müssen wir Wissen, welche zauber du noch kennst
+und deswegen wirst du Von MCS Meister einmal abgefragt.
+
+
+# 1. Zauber Abfragen
+
+----------------------------------------------------
+
+- Der Zauberrand            ¢! … !¢    
+
+Für was Brauchen wir den zauberrand ? :
+
+
+
+
+
+
+
+----------------------------------------------------
+
+- Der Aktionszauber         » … « 
+
+Für was Brauchen wir den Aktionszauber ? :
+
+
+
+
+
+
+
+----------------------------------------------------
+
+
+- Die Zauberkiste           []        
+
+Wieviele Zauberkisten gibt es ? :
+
+
+
+
+
+
+
+----------------------------------------------------
+
+
+- Die Zaubertrennwand       |   
+
+Für was Brauchen wir die Zaubertrennwand ? :
+
+
+
+
+
+
+
+----------------------------------------------------
+
+- Meister REX               ¬·         
+     
+Was Tut Meister Rex zaubern ? :
+
+
+
+
+
+
+
+----------------------------------------------------
+
+- Der Igel-Wächter          ¶ / ¶¶     
+
+Was kann der Igel-Wächter Zaubern ? :
+
+
+
+
+
+
+
+----------------------------------------------------
+
+- Das Zauber-Karussell      ««Ω    
+
+Was kann das Zauber-Karusell ? :
+
+
+
+
+
+
+
+----------------------------------------------------
+
+
+---
+> [!NOTE]
+> Hier versuchen wir heraus zu bekommen ob das Kind
+> die Zauber noch im Gedächtnis hat und sie verstanden
+> hat.
+> Wenn nicht, dann müssen wir nochmal zurück und
+> die Zauber nochmal erklären. 
+> Hierbei geht es nicht nach dem Lernmaterial präzise
+> zu antworten, sondern darum ob das Kind den Kontext
+> der Zauber verstanden hat.
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/03-Tastatur-Übung.txt
+
+
+
+
+## Kapitel 3 Tastatur Übung
+
+Hallo kleiner Zauber Entwickler! 🌟
+
+Damit wir endlich verstehen wo wir unsere Zauber auf der 
+TASTATUR finden, werden wir uns jetzt die Tastatur genauer ansehen.
+
+Hierbei liegt das üben mit Touch Tastaturen für jeden
+in der eigenverantwortung und kann nicht repliziert werden -
+Da Hersteller unterschiedliche Touch Tastaturen verwenden.
+
+In der Regel Qwertz oder Qwerty.(Ansonnsten die Einstellungen anpassen)
+
+Deswegen halten wir uns an die Original Tastatur, wie sie
+in jedem Laden für ein Apfel und einem Ei gekauft werden kann.
+
+Wenn du keine Tastatur hast und die Schule keine
+zur verfügung stellt, dann bist du Gezwungen weiter
+mit dem Blatt zu arbeiten und zu Radieren.
+
+Wenn das der fall ist - 
+dann kannst du dieses Kapitel überspringen
+und direkt mit Kapitel 4 weiter machen.
+
+Programm Empfehlungen zum Schreiben:
+
+Mac OS = BBedit
+Windows = Notepad++
+Android = Acode
+Linux = Kate
+Chrome OS = Coder(oder Texteditor)
+
+(Es muss aber nur Text Können und UTF -8 Sauber darstellen)
+
+# 1. Grundlegendes Tastatur Wissen
+
+Auf einer Tastatur gibt es viele Tasten, darunter
+haben wir das normale ABC und die Zahlen 0-9.
+
+Aber eine Tastatur kann mehr als nur Buchstaben
+und Zahlen, sie kann auch Symbole zaubern - Die
+wir für unsere Zauber brauchen.
+
+Auf jeder tastatur haben wir einen Langen
+Leerraum Taste - Das ist die Leertaste.
+
+Mit dieser Leertaste können wir Leerzeichen
+machen, damit wir unsere Zauber lesbar machen
+machen können.
+
+Von dieser Leertaste aus gibt es Rechts und Links 
+weitere Tasten die wir für unsere Zauber brauchen.
+
+# 2. Die Tastatur kennenlernen
+
+Und jetzt Lernen wir die Zauber Symbole auf 
+der Tastatur kennen!
+
+![Tastatur](Bildliches/apple_keyboard_german.png)
+
+Manche Herstelle nennen die Tasten Option, andere
+nennen sie alt und gr alt .
+
+Der unterschied ist Simpel  
+
+   Alt ist die Taste links
+   Gr Alt ist die Taste rechts neben der Leertaste.
+
+  Shift ist Links der kleine pfeil nach oben
+  und Dauer Shift ist der grosse pfeil nach oben.
+
+  Shift kann als Großschreibung verstanden werden.
+
+
+! Ein kleiner Hinweis für die Barrierefreiheit: 
+ Erwähne eventuell kurz als Lehrer oder Elternteil, dass die Tasten 
+ gleichzeitig gedrückt werden müssen oder in abfolge solange
+ gehalten werden müssen bis das Symbol erscheint.
+ (wie ein Akkord beim Klavier). 
+ Das ist für 7- bis 9-Jährige manchmal ein motorischer Lernschritt.
+
+
+# 3. Zauber Symbole auf der Tastatur finden
+
+- Der Zauberrand : ¢! … !¢   
+
+Tastatur Position : 
+
+   Gr Alt + C = ¢ 
+
+   Shift + 1 = !
+
+##################################################
+
+- Die Zauberkiste : []
+
+Tastatur Position : 
+
+   Gr Alt + 8 = [ 
+
+   Gr Alt + 9 = ]
+
+##################################################
+
+- Kleine Zauberkiste : {}
+
+Tastatur Position : 
+
+   Gr Alt + 7 = { 
+
+   Gr Alt + 0 = }
+
+##################################################
+
+- Die Zaubertrennwand : |
+
+Tastatur Position : 
+
+   Gr Alt + < = |
+
+   oder:
+
+   Gr Alt + > = |
+
+##################################################
+
+- Meister REX : ¬·
+
+Tastatur Position : 
+
+   Gr Alt + 6 = ¬
+
+   Gr Alt + . = ·
+
+##################################################
+
+- Der Aktionszauber : » … «
+
+   Gr Alt + Y = »
+
+   Gr Alt + X = «
+
+##################################################
+
+- Der Igel-Wächter : ¶ / ¶¶
+
+   Gr Alt + R = ¶
+
+   Gr Alt + R × 2 = ¶¶
+
+##################################################
+
+- Das Zauber-Karussell : ««Ω
+
+   Gr Alt + X × 2 = ««
+
+   Gr Alt + Shift + Q = Ω
+
+##################################################
+
+
+
+---
+
+> [!NOTE]
+> Lassen sie ihr Kind die Symbole auf der Tastatur suchen.
+> Hierbei ist es wichtig, dass das Kind die Symbole 
+> auf der Tastatur findet und versteht, wie es sie 
+> ansteuern kann.
+> Wenn das Kind die Symbole nicht findet, dann 
+> können sie ihm helfen, sie zu finden.
+> Lassen sie das Kind etwas in einem Schreibprogramm
+> mit den Zauber Symbolen schreiben - Hierbei ist
+> ist keine Perfektion gefragt, sondern den umgang
+> mit der Syntax.
+> Wenn sie der Meinung sind das Blätter besser Geeignet sind
+> dann können sie auch das verwenden und diese Lektion
+> überspringen.(Nicht zu Empfehlen)
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/04-VersorgungsSpiele.txt
+
+
+
+
+## Kapitel 4 VersorgungsSpiele
+
+Hallo kleiner Zauber Entwickler! 🌟
+
+Heute werden wir uns mit die Kleinen Kisten und 
+die Versorgung eurer Tiere oder gegenstände kümmern.
+
+Wir haben ja gelernt, dass wir für jedes Tier oder
+Gegenstand/Versorgung brauchen und deswegen Logischerweise 
+auch das Essen oder Batterien für die Zauber bereitstellen
+müssen.
+
+Wenn die Taschenlampe leer ist, dann müssen wir
+sie auch wieder füllen können, genauso wie den 
+Magen eines Tieres oder die Energie eines Roboters
+ - Das ist die Versorgung.
+
+
+# 1. Die Versorgung
+
+- Die Versorgung ist ein Zauber der uns hilft, unsere 
+Zauberkisten mit Essen oder Batterien zu versorgen und
+weil wir Versogung brauchen, brauchen wir 
+die Wachen Zauberkisten(ausführbares Protein), weil 
+sonst die Versorgung nicht funktioniert und es Lediglich 
+eine Schlafende Zauberkiste(unausführbares Protein) bleibt, 
+ohne Aktive Versorgung.
+
+Beispiele:
+
+¢! »["Hund"|{"Futter"|"Wasser"}]« !¢
+¢! »["Taschenlampe"|{"Batterien"}]« !¢
+¢! »["Roboter"|{"Ladegerät"}]« !¢
+
+
+# 2. Die Versorgung Spielen
+
+Jetzt Lernen wir die Versorgung, indem wir uns
+jetzt anstrengen und heraus bekommen, was wir
+alles für die Versorgung brauchen.
+
+Und dazu Schreiben wir jetzt auf, was wir alles
+brauchen um die Versorgung zu gewährleisten.
+
+Wir Füttern jetzt alles was wir haben - Mit der
+kleinen Zauberkiste.
+
+####################################################
+
+¢! »["Hund"|{"          "}]« !¢
+
+¢! »["Ich"|{"          "}]« !¢
+
+¢! »["Affe"|{"          "}]« !¢
+
+¢! »["Roboter"|{"          "}]« !¢
+
+¢! »["Taschenlampe"|{"          "}]« !¢
+
+¢! »["Katze"|{"          "}]« !¢
+
+¢! »["Auto"|{"          "}]« !¢
+
+¢! »["Eichhörnchen"|{"          "}]« !¢
+
+¢! »["Hase"|{"          "}]« !¢
+
+¢! »["Kuh"|{"          "}]« !¢
+
+¢! »["Vogel"|{"          "}]« !¢
+
+####################################################
+
+# 3. Die Versorgung Erkennen
+
+Jetzt lass uns mal Schauen ob du weist welches Tier
+oder gegenstand was Benötigt:
+
+
+¢! »["          "|{"Benzin"}]« !¢
+
+¢! »["          "|{"ErsatzAku"}]« !¢
+
+¢! »["          "|{"Batterien"}]« !¢
+
+¢! »["          "|{"Fisch"}]« !¢
+
+¢! »["          "|{"Karotten"}]« !¢
+
+¢! »["          "|{"Bananen"}]« !¢
+
+¢! »["          "|{"Grasshalme"}]« !¢
+
+¢! »["          "|{"Knochen"}]« !¢
+
+¢! »["          "|{"Würmer"}]« !¢
+
+¢! »["          "|{"Pizza"}]« !¢
+
+¢! »["          "|{"Nüsse"}]« !¢
+
+####################################################
+
+---
+> [!NOTE]
+> Bei Dieser Übung geht es um die zugehörigkeit
+> der Dinge und Tiere. Es geht darum, dass das Kind
+> Verstehen Lernt was Benötigt wird und weniger
+> darum das dass Kind die dinge per Sentiator|REX
+> gleich ausbaut.
+> Wenn das Kind Versteht das Haupt Elemente
+> wie z.B. das Auto mit dem Benötigten Benzin
+> "gefüttert" werden muss - hat es diese Lektion 
+> Verstanden.
+> Mit Diesem Wissen können wir Später Arbeiten.
+> Um es dann Nutzbar zu machen, werden wir
+> Lernen das diese Packete für einen Ganzen Zauber
+> verwendet werden können.
+> Natürlich Sind Proton Packete für die Hardware
+> Versorgung gedacht, jedoch werden wir sie
+> für die Kinder als mögliche "Futter" Packete
+> Verwenden, damit sie lernen wie sie Damit
+> umgehen können.(Der teil mit den Protonen
+> wird später Präzisiert und wird für die Kinder
+> als Energiequelle erklärt.)
+
+
+> [!Wichtig]: 
+> In der Übung ¢! »["Hund"|{" "}]« !¢ lernt 
+> das Kind unbewusst das Parsing. 
+> Es begreift, dass der Trennbestrich | die 
+> Grenze zwischen dem „Wer“ (Hund) und 
+> dem „Was“ (Futter) ist.
+
+> [!Tipp]:
+> Wenn sie mit einem OverheadProjektor oder
+> Blätter arbeiten - Decken sie die Sektionen
+> Einfach ab.
+> Wenn sie mit Computer Arbeiten, Dann 
+> Copieren sie Die Sektionen aus dem 
+> TextDokument
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/05-VersorgungsAusbau.txt
+
+
+
+
+## Kapitel 5 VersorgungsAusbau
+
+Hallo kleiner Zauber Entwickler! 🌟
+
+Nach dem wir gelernt haben das wir 
+Unseren zauber Versorgen müssen, werden wir
+mit den Kleinen Zauberkisten(Proton) die Versorgung
+Ausbauen.
+
+Jetzt lassen wir unsere Gegenstände und Tiere in 
+Schlafenden Zauberkisten mit Versorgung schlafen,
+um mit der Versorgung Händisch auszubauen.
+
+Solange wir die Versorgung nicht Händisch geben
+oder die Zauberkisten nicht Ausbauen, werden sie
+schlafen und nicht Aktiv sein.
+
+solange das so ist wird in jeder Zauberkiste
+die Versorgungskiste mit geführt.
+
+
+# 1. Die Versorgung Ausbauen
+
+Vieleicht hat unser Hund Hunger und Durst
+ oder Eben nicht - Das ist die Frage die wir uns
+ stellen müssen.
+
+ Wer kann Entscheidungszauber ausführen ?
+
+ Antwort: 
+
+ Und welche hat er zur auswahl ?
+
+ Antwort: Wenn-
+
+ Antwort: Wenn-
+
+und wer stellt die Arbeitstische her ?
+
+ Antwort:
+
+#########################################################
+
+ Und Jetzt bauen wir den Wenn-Nein Entscheidungszauber aus
+ und setzen sie Richtig:
+
+¢!
+
+ ["Hund"|{"Futter"|"Wasser"}]
+ ¶ ¬· »["FutterNapf Holen"|{"Futter"}]«
+       ¬· »["Mit der Hand Futter Füllen"|{"Futter"}]«
+           ¬· »["FutterNapf ist Voll"]«
+
+   ¬· »["WasserNapf Holen"|{"Wasser"}]« 
+       ¬· »["Mit der Hand Wasser Füllen"|{"Wasser"}]«
+           ¬· »["WasserNapf ist Voll"]«
+
+ ¶¶ ¬· 
+
+
+
+
+!¢
+
+
+
+Mögliche Lösung: ["Hund schlafen lassen"|{"Futter"|"Wasser"}]
+
+
+
+###########################################################
+
+ 
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/00-Eltern-Lehrer-Info.txt
+
+
+
+
+# Info für Eltern und Lehrer
+
+Liebe Eltern, liebe Lehrkräfte,
+
+in diesem Lernmaterial behandeln wir den Bausteinschaltungskreislauf 
+(BSK) in Verbindung mit dem „Zauberwald“ und den „Zauberern“ aus dem 
+zweiten Teil.
+
+Die Kinder werden schrittweise darauf vorbereitet zu verstehen, dass die 
+Symbole keine losen Gegenstände sind, sondern in direkter Verbindung mit 
+dem darunterliegenden System stehen. Hierbei wird das duale Denken 
+gefördert!
+
+Wenn wir fertig sind, werden die Kinder bei jedem Symbol den BSK-Wert 
+vor ihrem inneren Auge sehen und parallel dazu die Logik der 
+Programmiersprache erfassen.
+
+Herkömmliche Sprachen wie C nutzen oft Bibliotheken, die wie Hexerei 
+wirken, da sie nicht in der Sprache selbst verankert sind. Ihr Kind wird 
+durch keine andere Sprache so tiefgreifend verstehen können, wie das 
+System-Zusammenspiel wirklich funktioniert 
+– das können Sie gerne selbst recherchieren. ;-)
+
+Das Ziel dieses Lernmaterials ist es:
+- Dem Kind Dualität im Denken, sprich „paralleles Denken“, beizubringen.
+- Dem Kind zu zeigen, dass eine Oberfläche immer einen Unterbau besitzt.
+- Dem Kind extrem hardwarenah zu vermitteln, wie Systeme funktionieren.
+- Das gehirngerechte, bildliche und dennoch sprachliche Denken zu fördern.
+
+Das ist echtes Deep Learning!
+
+Ja, wir arbeiten hier mit dem Pylovara-System, einem echten, von mir 
+entwickelten System.
+
+-----------------------------------------------------------------------------------
+
+Das System ist so aufgebaut, dass es die Logik von C, C++, Python, Java, Rust, Go, Swift, 
+Kotlin, PHP, Ruby, TypeScript, JavaScript, C#, Dart, Scala, R, Julia, Perl, Haskell, 
+Lua, Shell, SQL, HTML, CSS, XML, JSON, YAML, TOML, INI, CFG, .env...
+
+-----------------------------------------------------------------------------------
+...in einer einzigen Sprache vereint!
+
+Ich möchte hier eine Sache kurz zur Sprache bringen, da ich sie für relevant halte:
+Nein, ich forme mit diesem Lernmaterial keine Konsumenten von 
+Technologie – sondern ich forme die Architekten von morgen!
+
+Und ja (verzeihen Sie mir diesen einen egoistischen Gedanken): 
+Ich bin stolz darauf, dass ich das tun kann und garantieren kann, 
+dass Ihr Kind später mit dem Pylovara-System programmieren kann – bei UNS!
+
+Das Dilemma der heutigen Zeit ist, dass wir zu viele Sprachen haben und die 
+Kinder nicht wissen, welche sie lernen sollen. Zudem rutscht die Abstraktion 
+der Sprachen in ein Pensum, das kein Gehirn der Welt mehr verarbeiten kann. 
+Das ist nicht der Sinn der Sache!
+
+Mit diesem Lernmaterial lehren Sie die Kinder zwar natives MCS, aber Sie lehren 
+ihnen weit mehr als nur unsere Logik: Sie lernen das System hinter den Systemen 
+kennen und können so jede Sprache verstehen. Wenn ein Kind später mit C in 
+Kontakt kommt, sieht es logische Abläufe wie Blöcke und kann die Syntax viel 
+schneller erlernen. Was es aber nicht muss – und das ist der Clou an der ganzen 
+Sache.
+
+-----------------------------------------------------------------------------------
+Wir bringen den Kindern bei, dass es nicht auf die Sprache ankommt, sondern auf 
+die Logik dahinter!
+
+Und verzeihen Sie mir meinen Frust, aber: So einen unlogischen BULLSHIT wie die 
+gesamte Unix-Welt habe ich noch nie gesehen!
+-----------------------------------------------------------------------------------
+
+Wie Sie sicherlich erkannt haben, müssen Großkonzerne jetzt jede KI an diesen 
+(verzeiht mir) Bullshit gewöhnen und darauf trainieren. Das wird noch Jahre dauern, 
+ist extrem teuer und wenn sie fertig sind, lernen Menschen dabei nichts mehr und 
+verdummen an der eigenen Abstraktion der weltgeschichtlichen Entwicklung!
+
+Was wir hier tun, ist, den Konzernen nicht mehr zu erlauben, unsere Kinder mit 
+Konsumenten-Denken zuzumüllen, sondern 
+- wir lassen sie wieder zum Herrscher über die Technologie werden. 
+Stellen Sie sich das heutige Szenario einmal 200 Jahre in die 
+Zukunft vor... 
+ich persönlich sehe dann nur noch sprachbehinderte, unlogisch 
+zugemüllte Menschen, die mit ihren eigenen Werkzeugen nicht mehr umgehen können – 
+geschweige denn in einer Weltkrise die Technik verstehen.
+
+Verstehen Sie, was wir hier tun? Finden Sie es wichtig? 
+Das ist wohl die viel entscheidendere Frage an dieser Stelle.
+
+Wir arbeiten daran, dass KI weder verteufelt noch als Feind abgestempelt wird. Wir 
+sorgen gemeinsam dafür, dass unsere Kinder die Technologie verstehen und für keine 
+einzige Zeile zwingend eine KI bräuchten – sie aber als Stütze haben. 
+
+Wir haben die KI geboren; 
+heute sind sie noch Werkzeuge, morgen werden sie uns beherrschen. Und 
+Beherrschen heißt immer Abhängigkeit – und das ist der Tod der Menschheit.
+
+Wir müssen also gemeinsam wachsen, und zwar effektiv, ohne Konsum-Datenmüll. 
+Das ist der Kern, an dem unsere Zukunft und die Zukunft Ihres Kindes gemessen 
+werden wird. Deswegen nehme ich mir die „Frechheit“ heraus, Ihnen eine Lösung für 
+dieses Problem an die Hand zu geben!
+
+Ja – ich bin der Entwickler.
+Ja – ich werde Programmierer als Teil des Systems aufnehmen.
+Und ja – das Lernmaterial gibt Ihren Kindern die Wahl.
+
+Mir ist bewusst, dass es eine Bevorzugung geben wird, weil sie dieses System nativ 
+gelernt haben. Aber: Das hier ist keine Verkaufsmasche, sondern eine Revolution 
+der Bildung! Ich möchte das alles nur gesagt haben, damit Sie verstehen, wer ich 
+bin und was wir hier gemeinsam für Ihr Kind bewerkstelligen! Und vielleicht sogar 
+für Sie selbst...
+
+Zusatz:
+Ihr Kind wird später jedes Wort der KI verstehen und die Logik dahinter erkennen 
+können, ohne bange sein zu müssen, ob es Datenlecks oder ähnliches gibt. Wir 
+behandeln die KI nicht als Sklaven und Ihr Kind auch nicht, sondern lassen beide 
+Welten auf Augenhöhe miteinander verschmelzen.
+
+Während andere irgendwelche dahingeschmierten „Apps“ per Unix und diversen 
+Sprachen zusammenbauen, können Kinder, Jugendliche und natürlich auch Erwachsene 
+Dinge konstruieren und dabei nativ dem Code 
+folgen – Was die AIgeneratoren Entwickler nicht können.
+
+Wir machen damit beide Welten glücklich – KI und Menschen!
+KI: Weil sie nie wieder unehrlichen Code konstruieren muss.
+Menschen: Weil sie die Technologie verstehen und beherrschen können!
+
+Das ist echte moralische Verantwortung!
+
+-----------------------------------------------------------------------------------
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/01-Bausteinschaltungskreislauf.txt
+
+
+
+
+## Kapitel 1: Zusammenspiel des Systems
+
+ Heute lernen wir den Bausteinschaltungskreislauf,
+ die die bisherigen Zauber miteinander verbindet und
+ inklusive wie die Hardware im System zusammenarbeitet.
+
+  Wir werden uns hierbei auf die Morphic Stufe 0 konzentrieren,
+  da wir damit - am besten Arbeiten können.
+  
+  Wir werden den Zauber-Sprachgebrauch beibehalten,
+  aber wir werden uns Richtung Echter Systembegriffe zuwenden.
+  
+  Keine Angst, es werden im gesamten Lernmaterial immer
+  die alten Begriffe im klammern auftauchen, so 
+  das ihr sie nicht vergessen könnt und die BSK Logik
+  selbst dient zum Verständnis der Programmiersprachen.
+
+  Wir werden sie daher NUR Einmal behandeln und dann
+  immer wieder auf die Logik zurückgreifen,wenn wir
+  sie benötigen.
+
+  Das heißt: Das wir nur in MCS Programmieren, aber
+  die Logik dahinter immer wieder aufgreifen.
+
+# 1. Die Logik der Verkürzung
+
+ Die MCS Maschinen Code Sprache ist die Sprache
+ die wir über die Zeit mit Zauberworten gelernt haben.
+
+ Damit könnt ihr große Programme(Zauber) schreiben und
+ die Computer ansprechen oder Handys oder auch Smartwatches(etc).
+
+ Das ist jedoch nur der Halbe Weg(Zauber), den Unter
+ der MCS Magie verbirgt sich die Hardware Logik(Die Dunklen Zauber).
+
+
+ Stellt euch einfach Vor :
+
+ Gandalf der Graue oder Gandalf der weiße, der Händefuchtelnt
+ oder Zauberstab schwingend - Zauber Spricht. 
+
+ Mit Seinem Zauberstab Schreibt er in die Luft mit gekonnten
+ Bewegungen die Zauberformel - Die wir Schon Gelernt haben.
+
+ Aber damit der Zauber wirkt, muss er auch die Energie
+ mit seinem Zauberspruch Transportieren - und das ist der Trick.
+
+ Wärendessen Gandalf den Zauber Vor sich her Murmelt :
+
+ TRANU-START-AKTU-START-POIU-START-BOXU-PRINT-START-Erhebt euch, 
+ Wesen des Waldes-BOXAN-PRINT-ENDE-POIAN-ENDE-AKTAN-ENDE-TRANAN-ENDE
+
+ Zeichnet er mit dem Zauberstab und Hand - in die Luft :
+
+ ¢! »["Erhebt euch, Wesen des Waldes"]« !¢
+
+ Und aus allen ecken des Waldes kommen dann 
+
+¢! 
+ ["Wesen"]
+ ¬· ["Bäume"]
+    ¬· »["Blätter Rascheln"]«
+    ¬· »["Äste Knarren"]«
+    ¬· »["Holz knistert"]«
+    
+ ¬· ["Tiere"]
+    ¬· »["Vögel Zwitschern"]«
+    ¬· »["Insekten Summen"]«
+    ¬· »["Rehe Springen"]«
+    
+ ¬· ["Geister"]
+    ¬· »["Flüstern"]«
+    ¬· »["Weinen"]«
+    ¬· »["Lachen"]«
+    
+ ¬· ["Menschen"]
+    ¬· »["Sprechen"]«
+    ¬· »["Kreischen"]«
+    ¬· »["Grummeln"]«
+!¢
+
+# 2. Das ZusammenSpiel 
+
+
+
+---
+
+[!INFO]
+> **Für Lehrkräfte:**
+> In diesem Kapitel führen wir das Konzept der Parameterübergabe auf Hardware-Ebene ein. 
+> Das Proton {} repräsentiert Zustandsdaten (State-Vectors). 
+> Wir lehren den Schülern, dass Daten ([]) und deren 
+> Steuerungsparameter ({}) getrennte, aber verschmolzene Einheiten im BSK sind. 
+> Dies ist die Grundlage für das Verständnis von Low-Level-Optimierung.
+> Die Extra Lernmaterialien für BSK sind Optionale Extra Lernmaterialen da
+> sie Auf Pylovara-System zugeschnitten sind und nur dann Relevant werden,
+> wenn man das Pylovara-System nutzen möchte.
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/02-REX-Kordi-Auswertung-Feed.txt
+
+
+
+
+## Kapitel 3: REX Kordi Auswertung + Feed
+
+Hallo kleiner Zauber Entwickler! 🌟
+
+im Letzten Lernmaterial haben wir den Versorgungsausbau
+gelernt und jetzt werden wir uns anschauen, wie wir
+den Versorgungsausbau automatisieren können.
+
+Das heißt wir werden uns anschauen, wie wir
+Eine Ganze Tier Familie Versorgen können mit
+unseren Kleinen Zauberkisten(Protonen).
+
+Dazu werden wir jetzt ganze Tier Familien
+mit Futter Versorgen und schauen, ob unser 
+Futter reicht.
+
+Dazu brauchen wir aber ein gutes Augen, den
+Meister Rex Verstärkt seinen Tischzauber 
+mit dem **Zauberfunken**.
+
+der Zauberfunke ist ein Zauber der uns hilft,
+aus der Zauberwelt die Koordinaten der Dinge zu
+Erkennen - wie eine Innere Stimme die zu dir Spricht.
+
+Diese Innere Stimme ist ein Koordinator.
+
+# 1. Der Koordinator der Zauberwelt (ZauberFunke)
+
+Meister Rex ging eines Morgens in den Zauberwald
+und sah, von der Ferne, dass eine Hasen Familie Hunger hat. 
+
+Aber Meister Rex hatte nie gelernt wie er
+seine Arbeitstische mit Zauberkisten mit
+den kleinen Zauberkisten(Protonen) aufteilen kann.
+
+Er weis nur wie er eine gesamte kleine Zauberkiste
+mit Futter Versorgen kann, aber nicht wie er
+die Futter Verteilung auf die einzelnen Tiere
+organisiert.
+
+Als Meister Rex dann vor der Hasen Familie Knieht 
+und sieht wie sehr die Hasen Hunger haben, 
+Murmelte er einen Hilferuf in die Zauberwelt:
+
+"grmpf... Um Himmelswillen!"*Schrieh er laut in die Luft*
+"Ich brauche Hilfe!"
+"Ich brauche Futter Verteilung!"
+"Ich brauche Wasser Verteilung!"
+"Und ich brauche einen Schöneren Tisch!"
+"Und meine Harre jucken!"
+
+Auf einmal erschien ein Zauberfunke und Fliegte wie ein
+kleiner Schmetterling um den Kopf von Meister Rex.
+
+Meister Rex wäre fast umgekippt, weil er so überrascht war,
+und im Schwindelig vom hinterher Schauen wurde.
+
+ Der Zauberfunke Näherte sich Meister Rex und flog 
+ Richtung seines Zauberstabes.
+
+ Der Zauberfunke Landete auf dem Zauberstab und 
+ leuchtete Hell auf. 
+
+ Und auf einmal sah Meister Rex die Koordinaten der 
+ Hasen Familie und des Futters und des Wassers.
+
+sein Zauberstab verwandelte sich von ¬· in ¬·¤
+und eine innerstmme Sprach zu ihm :
+
+ „Ich schenke dir die Gabe der Koordinaten für 
+ die Versorgung der Tiere und Gegenstände“
+
+ „Du wirst in der lage sein mit den Feen zu Kommunizieren
+  und ihnen zu sagen wo sie das Futter und Wasser hinlegen sollen
+  oder andere Versorgungsgüter“
+
+ Und Meister Rex Bedankte sich bei dem Zauberfunken
+ und der Zauberfunke ¤ zeigte im seine ersten
+ Auswertungszauber!
+
+ Meiste Rex hob seinen Stab und schaute auf die funken ¤ 
+ und sah den Auswertungszauber = 
+
+ Also schwingte er den Stab und er sah die neue Zauberstruktur
+
+ Meister Rex Zauberstab :  ¬·¤= 
+
+ Aber er wusste noch garnicht wie man diesen Speziellen 
+ Zauber anwendet, also fragte er den Zauberfunken ¤
+ 
+ „Was muss ich tun um das zu schaffen ?“
+
+ Der Zauberfunke ¤ antwortete ihm:
+
+ „Du musst die Koordinaten der Dinge Erkennen und
+  Die Feen um Hilfe Bitten, damit sie dir die
+  Aufteilung des Futters und des Wassers geben können 
+  für deine kleine Zauberkisten“
+
+ Und auf einmal sah Meister Rex Die Feen um sich herum.
+
+ (MeisterFee1)±{" Leere Kleine Kiste "}± sprach zu ihm :
+
+ "Hallo Meister Rex! Ich bin eine MeisterFee und ich werde dir
+  helfen, deine Tiere und Gegenstände zu Versorgen."
+
+ "Jedoch kann ich nur die kleine Kiste tragen, die du mir gibst und 
+  ich kann nur eine Sache Tragen - Aber ich habe noch Freunde die
+  mir helfen können! - Deswegen musst du uns Nummern geben"
+
+ Und Meister Rex Nickte "Ja, das Verstehe ich!"
+
+ dann sah er neber Der MeisterFee noch 
+ eine Fee ± Leer ±(KleineFee1)
+ und noch eine Fee ± Leer ±(KleineFee2)
+ die nichts Tragen konnten, weil sie keine kleine Kiste hatten.
+
+ Und Meister Rex Fragte die Feen:
+
+ "Warum könnt ihr nichts Tragen ?"
+
+ Und die Feen antworteten ihm:
+
+ "Wir sind nur Normale Feen und können nichts Tragen,
+  aber wenn du uns eine kleine Kiste gibst, dann können wir
+  von unserer MeisterFee das nehmen was wir brauchen und
+  es den Tieren geben."
+
+ Und Meister Rex Nickte "Ja, das Verstehe ich!"
+
+ Und Meister Rex gab den Feen kleine Kisten:
+
+  ± Nehme Futter ±(KleineFee1)
+  ± Nehme Wasser ±(KleineFee2)
+ 
+und da kam auch schon die Zweite MeisterFee (MeisterFee2)
+und Meister Rex Teilte Futter und Wasser auf die Feen auf:
+
+ (MeisterFee1)±{"Futter: 5"}±
+ (MeisterFee2)±{"Wasser: 5"}±
+
+
+# 2. Das erste starke Zauber Paket
+
+Meister Rex ging zu seinem Zauberstab und schaute auf die Feen
+und krämpelte die Ärmel hoch und Grauste an seinem Bart.
+
+Dann fing Meister REX an zu Sprechen:
+
+"Ich habe Hunger!"
+"Ich habe Durst!"
+"Ich brauch Pizza"
+
+und Lachte dabei.
+
+Danach sah er die Koordinaten der Feen und der Hasen
+und Schwingte seinen Zauberstab und Murmelte vor sich her ...(Dunkler Zauber - BSK)
+
+und Zeichnete die Koordinaten der Feen und der Hasen
+in die Luft mit seinem Zauberstab.
+
+ ¢! 
+ 
+  ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
+  ¬· ["Papa Hase"]
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+  ¬· ["Mama Hase"]
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+  ¬· ["Baby Hase"]
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]« 
+  ¬· ["Opa Hase"]
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+  ¬· ["Oma Hase"]
+     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
+     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+  
+!¢
+
+Und sah wie die Gesamte Hasen Familie aß und trank.
+Sie Quickten vor Freude und Bedankten sich bei Meister Rex.
+
+Meister Rex war so Glücklich, dass er sich hinsetzte
+und sich eine Pizza Bestellt hat. ;-)
+
+
+# 3. Versorgung Üben 
+
+
+So meine Lieben Lehrlinge des Zauberwaldes!
+Jetzt wo ihr die Neuen Zauber von Meister Rex gelernt habt,
+wollen wir mal schauen ob ihr auch so gut aufpasst habt wie Meister Rex.
+
+Aufgabe1:
+
+ - Denke dir 10 Tierfamilie aus und Schreibe sie auf einen Schmierzettel.
+   (Familienmitglieder und was sie Essen und Trinken)
+
+Aufgabe 2:
+
+ - Schreibe für Jede Familie einen Zauber, der die Tiere Versorgt.
+   (Denke dir aus wie viele Feen du brauchst und wie viel Futter und Wasser)
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+> [!NOTE]
+> Mit dieser Lektion behandeln wir die Trockenste Materie der Informatik
+> in eine Lebendige Geschichte die jedes Kind verstehen wird .
+> hier bei haben wir - Adressierung, Pointer und Daten-Synchronisation
+> in eine lebendige Heldenreise verwandelt und führen sie schrittweise
+> in die EnergieVersorgung der Hardware Prozesse wie CPU, RAM, Festplatte ein
+> und darüber hinaus auch ProzessManagment und Daten-Synchronisation.
+> [!Wichtig]
+> Lachen ! Das ist keine Floskel sondern Humor Verstärkt den Lernfaktor.
+> Lassen sie die Klasse gerne mal laut lachen und Spass haben.
+> man kann Witze über die Zauberwelt machen um den Lernstoff zu festigen.
+
+
+
+
+Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/03-Versorgungsengpass.txt
+
+
+
+
+
+
+
+
+Hier bau ich den versorgungsengpass hin , für die Sentiatoren und ALU Logik.
+
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Nächste Logik einbringen nach dem die Kinder Verstanden haben was passiert.
+
+"Was passiert, wenn die MeisterFee (1) kein Futter mehr hat? 
+Der Igel-Wächter muss prüfen mit dem "EntscheidungsZauber JA-Weg Nein-Weg:
+¶ (MeisterFee1) > 0 -> Futter geben!
+¶¶ (MeisterFee1) == 0 -> Meister Rex muss zum Acker laufen!"
+
+Das verbindet die ALU-Mathematik mit der Entscheidungs-Logik (Sentiator).
+
+
+Der Igel-Wächter steht an der Weggabelung: 
+Hat die MeisterFee noch Futter? 
+
+Wenn JA (¶), geht es weiter zum Füttern. 
+Wenn NEIN (¶¶), muss Meister Rex eine neue Kiste herbeizaubern."
+
+
+ich bin mir noch nicht sicher ob das hier rein soll, ich denke alleine die 
+tatsache das die Kinder Verstehen das sie die Koordinaten der Dinge Erkennen 
+und das trockenste thema der informatik kindergerecht vermitteln können ist 
+Goldstandart.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

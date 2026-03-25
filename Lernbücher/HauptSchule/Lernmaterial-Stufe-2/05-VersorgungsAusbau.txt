@@ -66,8 +66,48 @@ und wer stellt die Arbeitstische her ?
 
 Mögliche Lösung: ["Hund schlafen lassen"|{"Futter"|"Wasser"}]
 
-
-
 ###########################################################
 
- 
+
+# 2. Übung
+
+Und Jetzt üben wir auf der grundlage des Einen möglichen Zauberrandes aus dem ersten Kapitel:
+
+
+
+ ¢!
+
+ ["Katze"|{"     "|"Wasser"}]
+ ¶ ¬· »["FutterNapf Holen"|{"Futter"}]«
+       ¬· »["Mit der Hand Futter Füllen"|{"Futter"}]«
+           ¬· »["FutterNapf ist Voll"]«
+
+   ¬· »["                "|{"Wasser"}]« 
+       ¬· »["Mit der Hand Wasser Füllen"|{"Wasser"}]«
+           ¬· »["                     "]«
+
+ ¶¶ ¬· ["Katze schlafen lassen"|{"Futter"|"Wasser"}]
+
+
+!¢
+
+
+
+¢!
+
+ ["Pferd"|{"       "|"Wasser"}]
+ ¶ ¬· »["           Holen"|{"      "}]«
+       ¬· »["Mit der Hand       Füllen"|{"        "}]«
+           ¬· »["            ist Voll"]«
+
+   ¬· »["            Holen"|{"Wasser"}]« 
+       ¬· »["Mit der Hand Wasser Füllen"|{"Wasser"}]«
+           ¬· »["          ist Voll"]«
+
+ ¶¶ ¬· 
+
+
+!¢
+
+
+

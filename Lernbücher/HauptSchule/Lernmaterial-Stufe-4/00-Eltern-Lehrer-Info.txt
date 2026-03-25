@@ -12,6 +12,17 @@ Wir Paaren die Bisher verwendet BOXH-PRINT Container mit den BOXIH-ALU - System.
 Dadurch werden wir jetzt in der Lage sein Kindern das Kleine 1 mal 1 beizubringen
 oder einfache Rechenaufgaben zu lösen.
 
+Bisher haben wir den Kinder nur Verteilung der Ressourcen über das FEED System,
+Vermittelt und das verpacken von Ressourcen in Container.
+
+Jetzt kommt der Teil wo wir den Kindern beibringen wie sie die Ressourcen
+mathematisch verarbeiten können.
+
+Wir bleiben unterhalb der 100 um Schulische Grundlagen zu vermitteln,
+die altergerecht schon im Mathematik unterricht behandelt werden.
+
+Sprich : Plus Minus Mal Geteilt ... und das kleine 1 mal 1.
+
 Ich Persönlich sehe Mathematik etwas Zwiegespalten aufgrundlage der Annahme das 
 eine 1 eine 1 ist/bedeutet.... 
 
@@ -42,36 +53,36 @@ Aus dem Grund heraus bin ich an dieser stelle mit ihnen Ehrlich :
   mit einer Falschen annahme oder nicht“
 
 ich kann ihnen lediglich sagen das wir Versuchen auf Grundlage der Definierten
-Mathematik, die sich Standartmäßig in der Welt etabliert hat, ihnen das rechnen
-beizubringen.
+Mathematik, die sich Standartmäßig in der Welt etabliert hat, ihnen das Rechnen
+einzubeziehen und beizubringen.
 
 Ob das Richtig ist oder Nicht, kann ich ihnen nicht garantieren.
 Was ich Jedoch garantieren kann ist, das wir versuchen das Rechnen so zu erklären
 aufgrundlage dessen was die Kinder im Mathematik untericht lernen oder schon
 gelernt haben .
 
-da ich das thema so sehe das wir hier lediglich das sichtbare berechnen
-und nicht die tiefe der Materie ansprechen, kann ich das Lernmaterial
-nur aufgrundlage dessen aufbauen was als objekt definiert ist.
+da ich das Thema so sehe das wir hier lediglich das sichtbare berechnen
+und nicht die Tiefe der Materie, kann ich das Lernmaterial
+nur aufgrundlage dessen aufbauen was als Objekt definiert ist.
 
 Deswegen werden wir hier keine Physikalischen oder Chemischen oder Biologischen
 zusammenhänge oder Tiefer Logische Berechnungen durchführen - mit dem Hinblick
 das wir hier von Kinder und Jugendliche sprechen - und nicht von Erwachsenen
 die etwas Erforschen.
 
-also bleibt die tatsache bestehen , wenn wir von Einem Hasen sprechen,
-dann Berechnen wir auch nur Einen Hasen für das Futter (Z.b).
+Also bleibt die Tatsache bestehen , wenn wir von Einem Hasen sprechen,
+dann Berechnen wir auch nur Einen Hasen für das Futter.
 
-Das heißt wir Berchnen hier Oberflächige Logische dinge, die man benennen kann,
+Das heißt wir Berechnen hier Oberflächige logische dinge, die man benennen kann,
 ohne dabei gleich ein Informatik Studium absolviert haben zu müssen.
 
 Kleiner FunFact : Informatik ist die Wissenschaft der Informationsverarbeitung.
 
-Das Morphic System das die kinder hier lernen, ist in der Ersten stufe eine
+Das Morphic System das die Kinder hier lernen, ist in der Ersten Stufe eine
 Verschmelzung von Länge zu Kürze und umgekehrt.Man nennt es Compaktibilität
 oder auch Komprimierung und wird Weltweit in der Informatik benutzt - nur anders.
 
-Das Morphic System wird sich warscheins auch auf zahlen bennenung ausweiten, 
+Das Morphic System wird sich warscheins auch auf Zahlen bennenung ausweiten, 
 um Berechnungen, in sich, zu verschnellern. 
 
 Das ist jedoch nicht im Lernmaterial-Stufe-4 enthalten.
@@ -85,7 +96,7 @@ Was die Kinder hier lernen ist das Prinzip von Hexadezimalen Systemen
 umgewandelt in das Pylovara-System Morphic System.
 
 Statt Zahlen gilt die selbe methode für Wörter, da Wörter im Grunde 
-nur aus buchstaben bestehen und buchstaben sind auch nur Symbole - wie Zahlen.
+nur aus Buchstaben bestehen und Buchstaben sind auch nur Symbole - wie Zahlen.
 
 Aber damit wir den Kindern erstmal die Grundlage von Rechenoperationen
 vermitteln müssen, halte ich Mich persönlich an die Standartlehre der
@@ -103,30 +114,4 @@ hier zusammen schreibe.
 
 Jetzt zurück zum Thema:
 
-!!baustelle!!
-
-¢! 
-  # Der Hase braucht 2 Möhren für seinen Korb
-  ["Hase"|±{"Hunger": 2}±(1)]
-  # Der Acker ist unser Arbeitsbereich (REX)
-  ¬· ["Möhrenacker"]
-     # Wir sammeln Möhren einzeln (Inkrement)
-     ¬· »["Möhre sammeln"]« -> {"Möhre": 1}
-     ¬· »["Möhre sammeln"]« -> {"Möhre": 1}
-         # Die ALU rechnet im Hintergrund: 1 + 1 = ?
-         ¬· »[× 1 + 1 ×]«
-             ¬· »["Möhre:   "]« # Dein Ergebnis
-
-                 # Wenn der Korb voll ist, wird die Masse bewegt:
-                 ¬· »["Möhrenkorb füllen"]«
-                     ¬· »[(1)±{"Inhalt":   }±]« # Das Ergebnis
-!¢
-
-ich muss davor den kinder in lernmaterial stufe 3 das Feed system beibringen.
-ich sollte den kinder auch gleich mehrere möglichkeiten zeigen wie sie etwas 
-von a nach b bekommen. 
-
-ich denke das ich das Feed system so gestalte das es wie eine Funkverbindung
-der Magie herstellen , eine funke .... die blitze aus dem zauberstab .... 
-irgendwie so.. schwarzes loch ..... hmm
-
+(Morgen mehr Info's)

@@ -165,20 +165,20 @@ in die Luft mit seinem Zauberstab.
  
   ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
   ¬· ["Papa Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(Fee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(Fee2) ×]«
   ¬· ["Mama Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(Fee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(Fee2) ×]«
   ¬· ["Baby Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]« 
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(Fee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(Fee2) ×]« 
   ¬· ["Opa Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(Fee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(Fee2) ×]«
   ¬· ["Oma Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(Fee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(Fee2) ×]«
   
 !¢
 
@@ -207,15 +207,42 @@ Aufgabe 2:
    (Denke dir aus wie viele Feen du brauchst und wie viel Futter und Wasser)
 
 
+Muster Beispiel Für Große Zauber (Energie Verteilung):
 
-
-
-
-
-
-
-
-
+¢! 
+ ["Wesen"|{"100% Energie"}]
+ ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±]
+    ¬· »["Blätter Rascheln"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(Fee1) ×]«
+    ¬· »["Äste Knarren"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(Fee1) ×]«
+    ¬· »["Holz knistert"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(Fee1) ×]«
+    
+ ¬· ["Tiere"|(2)±{"40% Energie"}±]
+    ¬· »["Vögel Zwitschern"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(Fee2) ×]«
+    ¬· »["Insekten Summen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(Fee2) ×]«
+    ¬· »["Rehe Springen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 20% ±(Fee2) ×]«
+    
+ ¬· ["Geister"|(3)±{"6% Energie"}±]
+    ¬· »["Flüstern"]«
+        ¬·¤= »[× ± (MeisterFee3) - 1% ±(Fee3) ×]«
+    ¬· »["Weinen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 2% ±(Fee3) ×]«
+    ¬· »["Lachen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 3% ±(Fee3) ×]«
+    
+ ¬· ["Menschen"|(4)±{"24% Energie"}±]
+    ¬· »["Sprechen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 10% ±(Fee4) ×]«
+    ¬· »["Kreischen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(Fee4) ×]«
+    ¬· »["Grummeln"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(Fee4) ×]«
+!¢
 
 
 ---

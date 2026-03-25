@@ -81,6 +81,39 @@
 
 # 2. Das ZusammenSpiel 
 
+Hier Lernen wir kleine Logiken in Verbindung mit dem BSK.
+
+TRANU-START       = Zauberrand Start = Transaktionsrahmen Start = Start =  ¢!
+AKTU-START        = Aktionszauber = Aktionsdraht Start = Start = »
+POIU-START        = Zauberkiste = Protein Start = Start = [
+BOXU-PRINT-START  = BOXIS Print Container Start = Print Start = "
+BOXAN-PRINT-ENDE  = BOXIS Print Container Ende = Print Ende = "
+POIAN-ENDE        = Zauberkiste = Protein Ende = Ende = ]
+TRANAN-ENDE       = Zauberrand Ende = Transaktionsrahmen Ende = Ende = !¢
+
+Kannst du daraus ein Zauber machen ?
+
+Gandalf Murmelt Zauberstab Schwingend :
+
+TRANU-START-AKTU-START-POIU-START-BOXU-PRINT-START-Erleuchte den Wald 
+-BOXAN-PRINT-ENDE-POIAN-ENDE-AKTAN-ENDE-TRANAN-ENDE
+
+Wir sieht der Zauber aus ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
@@ -95,3 +128,11 @@
 > Die Extra Lernmaterialien für BSK sind Optionale Extra Lernmaterialen da
 > sie Auf Pylovara-System zugeschnitten sind und nur dann Relevant werden,
 > wenn man das Pylovara-System nutzen möchte.
+
+> [!NOTE]
+> Dass der BSK optional ist, nimmt den Druck raus, 
+> aber die "Hacker" unter den Schülern werden sich genau darauf stürzen.
+> Wenn sie Merken das ein Kind daran mehr Interesse zeigt,
+> können sie gerne Den Schablonator Verwenden um , daraus noch viel mehr 
+> Logiken bauen zu können oder dem Kind als Baumaterial zur verfügung zu stellen.
+> Das ist die reinste Form der "Low Level Programmierung" und des "Hardware Hacking",

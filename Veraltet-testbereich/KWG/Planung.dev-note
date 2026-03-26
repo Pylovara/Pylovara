@@ -132,3 +132,61 @@ Der PC Wird alle 12 Monate zurückgesetzt bei nicht gebrauch.
 Der VC Wird alle 24 Monate zurückgesetzt bei nicht gebrauch.
 Der PVC Wird nie zurückgesetzt und kann gehandelt werden
 
+
+14. wie sind die instanzen?
+
+KKIS Prüft den datenverkehr über Vatron und gibt die Daten an die KI weiter.
+Die KI Wertet den Schwirigkeitsgrad des Faktors und die Häufigkeit des Faktors und gibt die Daten an die KKIS weiter.
+KKIS Analysiert die ABSK Daten für den In und Output und gibt die Daten an die KI weiter.
+Die KI Berechnet anhand des MainKernels eintrags des Gegenwertes die Ausschüttung und 
+Schüttet Live an den User aus.
+
+Beispiel:
+
+Der User Eröffnet einen PylovaraStore Platz .... 
+
+Dazu muss er Lesen wie man das tut und was die Vorraussetzung ist.
+Das Ernsthafte Lesen der Anleitung wird als Faktor 1 gewertet.
+Der Faktor 1 Wird im Main Kernel als 20 PC gewertet.
+
+Die Analyse der umsetzung der Anleitung wird als Faktor 2 gewertet.
+Der Faktor 2 Wird im Main Kernel als als weitere 10 PC gewertet.
+
+Die Analyse des Einrichtens des Platzes wird als Faktor 3 gewertet.
+Der Faktor 3 Wird im Main Kernel als weitere 5 PC gewertet.
+
+Die Analyse der verweildauer des Ausschmücken des Platzes wird als Faktor 4 gewertet.
+Der Faktor 4 Wird im Main Kernel als weitere 2 PC gewertet im 5 minuten Takt bis maximal 60 Minuten, 
+dann abwertung auf 1 PC pro 5 Minuten und nach maximal 120 minuten Beendet.
+
+Die Analyse der Fertigstellung wird als Faktor 5 gewertet.
+Der Faktor 5 Wird im Main Kernel als 50 PC gewertet.
+
+Die Analyse des ersten Verkaufes wird als Faktor 6 gewertet.
+Der Faktor 6 Wird im Main Kernel als zusatz belohnung von 100 PC gewertet.
+
+Der Verkauf selbst Bestimmt die Nachfrage des Platzes und wird als Faktor 7 gewertet.
+der Faktor 7 wird für den Platz im Pylovara Store mit Monats und Jährlichen Gebühren belegt.
+
+Die Gebühren werden auf Maximal 5% der Monatlichen Einnahmen des Platzes belegt.
+Bei Ausfällen des Platzes werden die Gebühren reduziert.
+Bei zu wenigen Verkäufen wird der Faktor 7 von 5% auf 1% reduziert.
+Bei zu vielen Verkäufen wird der Faktor 7 von 5% auf 10% erhöht.
+
+Bei der Faktoren Erhöhung gehen die 5% mehr belastung an das Zentrale Pylovara-System
+Konto und werden für die Entwicklung und Wartung des Pylovara-Systems genutzt.
+
+Das Geld was Übrig bleibt, wird dem Ersteller des Platzes gutgeschrieben
+und nicht mehr zu Faktor 7 gezählt.
+
+
+15. Was ist das Ziel des KWG?
+
+Neu Aufbau eines Währungssystems das auf Vertrauen und Leistung basiert und
+jeder Mensch die Möglichkeit geben Geld zu verdienen und auszugeben.
+
+Das System soll nicht die Welt verändern sondern nur Pylovara und die Menschen 
+die Pylovara nutzen.
+
+Der Handel der Währung ist erlaubt, solange er im Pylovara-System Registriert bleibt.
+Keine Ausnahme Regelung für keinen Staat oder Organisation.

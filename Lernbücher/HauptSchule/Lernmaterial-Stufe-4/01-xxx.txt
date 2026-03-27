@@ -1,0 +1,238 @@
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Vorbereitungen für die einführung der manualen rechnungen in der schule!
+
+Das Skelett der Rechenoperationen muss ich nochmal durchgehen und die passenden 
+Transaktionsrahmen dazu aufbauen und platz lassen für die Handrechnung!
+
+ich denke ich werde mit einfachen sachen beginnen um den kindern dann von der gesamt logik ¬·¤=
+
+wieder zurück auf den urzustand zu kommen ¬· 
+
+und die auswertung speziell an die BOXH-ALU [× Rechnung ×] zu koppeln und zu verknüpfen!
+
+
+also muss ich Schulbedingt mit dem kleinen Geteilt und Mal aufgaben anfangen die 
+man schön mit unterstrich hinschreiben kann (wenn die das überhaupt noch so machen wie früher)
+
+
+[× 145·34 × ]
+   -------
+
+
+¬·¤= [" <Auswertung Ergebnis> "]
+
+
+damit sie jetzt die auswertung als rückantwort verstehen und nicht als eine neue eingabe!
+
+ich bau die Muster so auf das sie dann mühelos mit Bleistif oder fineliner Ausrechnen können oder 
+abschreiben auf dem Blatt karierten Papier!
+
+Ich denke das ist ganz im sinne des schulischen unterrichts und der methodik! 
+
+
+sobald der saft stimmt gehts weiter... 
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Kapitel 4: Die Rechenkammer des Meister REX (Die ALU Boxis)
+
+Hallo kleiner Zauber-Entwickler! 🌟
+
+Meister Rex hat nun seine Koordinaten ¤, aber manchmal muss er auch rechnen. 
+Stell dir vor, die Hasenfamilie hat 10 Möhren gefunden, aber es kommen noch 5 Möhren dazu. 
+Wie schreibt man das in der Zauberwelt, ohne dass der Zauberstab durcheinanderkommt?
+
+Dazu nutzt Rex den Rechen-Workspace (Die ALU). Das ist wie ein kleiner Arbeitstisch, 
+auf dem die Zahlen liegen, bevor sie in eine Zauberkiste (Protein) wandern.
+
+## 1. Die Zauberformel für Zahlen
+
+In unserer Zauberwelt schreiben wir Zahlen nicht einfach so hin. 
+
+Wir verpacken sie in **Zauberkisten (Proteine)**.
+
+Aber wie weiß der Computer, ob er rechnen oder nur speichern soll?
+
+Wir brauchen eine **Zauberformel**, 
+
+die dem Computer sagt: "Achtung, hier kommt eine Rechnung!"
+
+### Die magischen Zeichen
+
+Um zu rechnen, benutzen wir besondere Zeichen, die wie kleine Zauberstäbe aussehen:
+
+*   **+** : Das ist der **Plus-Zauber**. Er packt Dinge zusammen.
+*   **-** : Das ist der **Minus-Zauber**. Er nimmt Dinge weg.
+*   **=** : Das ist der **Ergebnis-Zauber**. Er zeigt, was herauskommt.
+
+### Beispiel: Die Möhren-Rechnung
+
+Stell dir vor, wir wollen rechnen: **10 + 5**
+
+Wir packen die Zahlen in Kisten und sagen dem Computer, was er tun soll:
+
+[10] + [5] = [15]
+
+*   **[10]** und **[5]** sind unsere Zauberkisten mit den Zahlen.
+*   **+** ist der Zauber, der sagt: "Pack sie zusammen!"
+*   **=** ist der Zauber, der sagt: "Zeig mir das Ergebnis!"
+*   **[15]** ist die neue Zauberkiste mit dem Ergebnis.
+
+### Übung: Finde die fehlenden Zahlen!
+
+Kannst du die fehlenden Zahlen in diesen Zauberformeln finden?
+
+1.  [7] + [3] = [ ? ]
+2.  [12] - [4] = [ ? ]
+3.  [6] + [ ? ] = [10]
+4.  [9] - [ ? ] = [2]
+
+Schreib die fehlenden Zahlen auf ein Blatt Papier. Du schaffst das! 💪
+
+## 2. Der Rechen-Workspace (Die ALU)
+
+Jetzt wird es spannend! 🚀
+
+Wenn Meister Rex rechnet, benutzt er nicht einfach die Zauberkisten direkt. 
+Er holt die Zahlen aus den Kisten und legt sie auf einen **Rechen-Workspace**.
+
+Stell dir das wie einen kleinen Tisch vor, auf dem nur Platz für zwei Zahlen ist. 
+Der Computer legt die erste Zahl hin, dann die zweite Zahl, und dann führt er die Rechnung aus.
+
+### Der Ablauf
+
+1.  **Hol die erste Zahl:** Rex nimmt die erste Zauberkiste und legt die Zahl auf den Tisch.
+2.  **Hol die zweite Zahl:** Rex nimmt die zweite Zauberkiste und legt die Zahl dazu.
+3.  **Der Zauber:** Rex benutzt den Rechen-Workspace, um die Zahlen zu addieren oder zu subtrahieren.
+4.  **Das Ergebnis:** Das Ergebnis wird in eine neue Zauberkiste gepackt.
+
+### Beispiel: 10 + 5
+
+1. Rex holt [10] und legt es auf den Tisch.
+2. Rex holt [5] und legt es dazu.
+3. Rex rechnet: 10 + 5 = 15
+4. Rex packt [15] in eine neue Zauberkiste.
+
+### Übung: Zeichne den Rechen-Workspace!
+
+Zeichne auf ein Blatt Papier:
+
+*   Einen großen Kreis für den **Rechen-Workspace**.
+*   Zwei kleine Kreise für die **Zahlen** (z.B. 7 und 3).
+*   Ein **Plus-Zeichen** (+) in der Mitte.
+*   Ein **Gleichheitszeichen** (=) daneben.
+*   Einen großen Kreis für das **Ergebnis** (10).
+
+Sieht es so aus wie ein kleiner Zauber-Tisch? Perfekt! 🎉
+
+## 3. Die Zauberformel für Texte (Strings)
+
+Wir haben gelernt, wie man Zahlen verpackt. Aber was ist mit **Texten**? Texte sind in unserer Zauberwelt **Strings**.
+
+Ein String ist wie eine lange Perlenkette, bei der jede Perle ein Buchstabe ist. Zum Beispiel: "Hallo".
+
+### Das Problem
+
+Wenn wir zwei Texte zusammenfügen wollen, müssen wir aufpassen. Stell dir vor, du hast zwei Perlenketten:
+
+*   Kette 1: "Hallo"
+*   Kette 2: "Welt"
+
+Wenn wir sie einfach so zusammenlegen, bekommen wir: "HalloWelt". Das ist okay, aber es sieht ein bisschen komisch aus, oder? Es fehlt ein Leerzeichen!
+
+### Die Lösung: Das Leerzeichen als Perle
+
+Wir können ein **Leerzeichen** wie eine eigene Perle behandeln. Es ist eine Perle, die nichts zeigt, aber Platz schafft.
+
+So sieht es aus, wenn wir "Hallo" und "Welt" richtig zusammensetzen:
+
+
+"Hallo" + " " + "Welt" = "Hallo Welt"
+
+
+*   **"Hallo"** ist die erste Kette.
+*   **" "** ist die Leerzeichen-Perle.
+*   **"Welt"** ist die zweite Kette.
+*   **+** ist der Zauber, der alles zusammenfügt.
+
+### Übung: Finde die fehlenden Texte!
+
+Kannst du die fehlenden Texte in diesen Zauberformeln finden?
+
+1.  "Ich" + " " + "lerne" = "Ich lerne"
+2.  "Pylovara" + " " + "ist" = "Pylovara ist"
+3.  "Computer" + " " + "sind" = "Computer sind"
+4.  "Spaß" + " " + "macht" = "Spaß macht"
+
+Schreib die fehlenden Texte auf ein Blatt Papier. Du bist ein echter String-Zauberer! 🧙‍♂️
+
+
+
+
+## 4. Der Text-Workspace (String-Konkatenation)
+
+Genau wie bei den Zahlen haben wir auch für Texte einen **Workspace**. Das nennt man **String-Konkatenation**.
+
+Das klingt kompliziert, ist aber ganz einfach: Es bedeutet nur **"Texte aneinanderreihen"**.
+
+### Der Ablauf
+
+1.  **Hol die erste Textkette:** Rex nimmt die erste Zauberkiste und legt den Text auf den Tisch.
+2.  **Hol die zweite Textkette:** Rex nimmt die zweite Zauberkiste und legt den Text dazu.
+3.  **Der Zauber:** Rex benutzt den Workspace, um die Texte zusammenzufügen.
+4.  **Das Ergebnis:** Das Ergebnis wird in eine neue Zauberkiste gepackt.
+
+### Beispiel: "Hallo" + "Welt"
+
+
+1. Rex holt "Hallo" und legt es auf den Tisch.
+2. Rex holt "Welt" und legt es dazu.
+3. Rex fügt zusammen: "Hallo" + "Welt" = "HalloWelt"
+4. Rex packt "HalloWelt" in eine neue Zauberkiste.
+
+
+### Übung: Zeichne den Text-Workspace!
+
+Zeichne auf ein Blatt Papier:
+
+*   Einen großen Kreis für den **Text-Workspace**.
+*   Zwei kleine Kreise für die **Texte** (z.B. "Ich" und "lerne").
+*   Ein **Plus-Zeichen** (+) in der Mitte.
+*   Ein **Gleichheitszeichen** (=) daneben.
+*   Einen großen Kreis für das **Ergebnis** ("Ich lerne").
+
+Sieht es so aus wie ein kleiner Zauber-Tisch für Texte? Super! 🎉
+
+
+
+
+## 5. Die Zauberformel für Listen (Arrays)
+
+Jetzt wird es richtig mächtig! 🌟
+
+Manchmal haben wir nicht nur eine Zahl oder einen Text, sondern viele auf einmal. Stell dir vor, die Hasenfamilie hat nicht nur 10 Möhren, sondern 10 Möhren, 5 Karotten und 3 Radieschen.
+
+Das packen wir in eine **Liste** (oder **Array**). Das ist wie eine lange

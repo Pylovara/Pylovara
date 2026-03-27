@@ -34,6 +34,77 @@ oder eher so : ( verzeert zwar die optik aber egal )
 ¬·¤= [" <Auswertung Ergebnis> "]
 
 
+Oder also gesamt Prozess, wobei ich das noch nicht festlegen kann (sind ja Hauptschüler)
+
+
+¢!
+# ============================================
+# MCS-CAESAR: Verschlüsselung mit Shift
+# EINGABE: SHIFT TEXT
+# AUSGABE: VERSCHLÜSSELTER TEXT
+# ============================================
+
+»['echo Caesar-Verschlüsselung startet']«
+
+# 1. Eingabe-Parameter als PROTEIN entgegennehmen
+»[~CAESAR SHIFT 3 TEXT HalloWelt~]«
+ ¬·¤: ['Parameter empfangen']«
+
+# 2. SHIFT und TEXT in FEED 1 und 2 ablegen
+»[~EXTRACT SHIFT~|"3"]«
+ ¬··¤= »["(1)±3±"]«        # FEED 1 = Shift
+
+»[~EXTRACT TEXT~|"HalloWelt"]«
+ ¬···¤= »["(2)±HalloWelt±"]« # FEED 2 = Text
+
+# 3. Verarbeitungsschleife initialisieren (REX-WORKSPACE)
+»[× 0 = i ×]«              # Zähler i = 0
+»[× ±WERT±(2) = text ×]«   # Text aus FEED 2
+»[× ±WERT±(1) = shift ×]«  # Shift aus FEED 1
+
+¶ »[× i < LÄNGE(text) ×]«  # SENTIATOR: Schleifenbedingung
+    # 3a. Zeichen holen
+    »[× text[i] = ch ×]«
+    
+    # 3b. Großbuchstabe?
+    »[× ch >= 'A' AND ch <= 'Z' ×]«
+     ¬·¤= »["(3)±true±"]«
+        »[× ch = ch - 'A' + shift ×]«
+        »[× ch = ch % 26 ×]«
+        »[× ch = ch + 'A' ×]«
+        »[× text[i] = ch ×]«
+        »['echo Großbuchstabe verschoben']«
+    
+    ¶¶ ¬·»[× ch >= 'a' AND ch <= 'z' ×]«  # SENTIATOR-NICHT für Kleinbuchstaben
+          ¬··¤= »["(4)±true±"]«
+         »[× ch = ch - 'a' + shift ×]«
+         »[× ch = ch % 26 ×]«
+         »[× ch = ch + 'a' ×]«
+         »[× text[i] = ch ×]«
+         »['echo Kleinbuchstabe verschoben']«
+    
+    # 3c. i erhöhen
+    »[× i = i + 1 ×]«
+     ¬···¤: ['Schleife Iteration']«
+
+# 4. Ergebnis zurück in FEED 3
+»[~STORE RESULT~|"±text±(3)"]«
+
+# 5. Ausgabe (BOXIS-CALLIS)
+»['echo Verschlüsselter Text:']«
+»["±WERT±(3)"]«
+
+# 6. Cleanup (Regel der Reinheit)
+ſ ¬· [~PROZESS BEENDEN~]«
+
+!¢
+
+
+Mal gucken morgen ob das so klappt wie ich mir das vorstelle .....
+
+
+
+
 
 
 

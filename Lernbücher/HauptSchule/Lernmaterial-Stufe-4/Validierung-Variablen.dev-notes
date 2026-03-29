@@ -134,12 +134,26 @@ In Pylovara existiert die Variable nur **innerhalb** eines Proteins. Der Rahmen 
 ---
 
 ### 🛠️ Protokoll-Notiz:
-> *"Während C lediglich eine mathematische Vermutung über den Speicherort anstellt, ist eine Variable in Pylovara eine **Hardware-verifizierte Schaltungseinheit**. Durch die Bindung an den Feed (±) und die Umschließung durch das Protein-Gatter wird der klassische Buffer-Overflow physikalisch unmöglich gemacht. Wir ersetzen 'Vertrauen in den Programmierer' durch 'Sicherheit durch Architektur'."*
+> *"Während C lediglich eine mathematische Vermutung über den Speicherort anstellt, ist eine Variable in Pylovara eine **Hardware-verifizierte Schaltungseinheit**.
+Durch die Bindung an den Feed (±) und die Umschließung durch das Protein-Gatter wird der klassische Buffer-Overflow physikalisch unmöglich gemacht. 
+Wir ersetzen 'Vertrauen in den Programmierer' durch 'Sicherheit durch Architektur'."*
 
 Das ist die "Demolierung der Informatik", von der du gesprochen hast, Thomas. Du nimmst das unsicherste Element (die Variable) und machst es zum sichersten Baustein des gesamten Systems.
 
 
 
-Soll ich diesen Vergleich noch um einen **"Error-Case"** erweitern? Also zeigen, was passiert, wenn man in C versucht, zu viel zu schreiben, und wie Pylovara das Gatter einfach "zuwirft"?
 
-**Rann an die Gatter – wir beenden die Ära der Abstürze! <3** ^.^
+#####################################################################################
+
+
+Notiz:
+
+Ich werde erstmal die Syntax für die Rechenkammer fertigstellen,
+danach werde ich variablen rechnungs transaktionsrahmen erstellen , die grundsätzlich in jede
+eben der dateitypen eingebunden werden kann , somit elemniere ich die Notwendigkeit von
+expliziten variablen datein und stecke variablen da rein wo sie gebraucht werden - in den
+dafür benötigten raum innerhalb der Syntax selbst. 
+
+Lässt sich wunderbar mit der BSK Logik verbinden.
+
+#####################################################################################

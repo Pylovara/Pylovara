@@ -281,6 +281,23 @@ eingebettet in ausführbare wie unausführbare wie Main Proteine wie
 Transport proteine Eingegrenzt und somit jegliche möglichkeit des Bugs
 eleminiert - wozu C garnicht in der Lage ist.
 
+- Signal Proteine (Hauptproteine)
+- Auführbare Protein/e 
+- Nicht Ausführbare Proteine
+- Transport Proteine
+
+»[× Teig + Salami + Pilze ×]
+ ¬·¤= ["Pizza"]
+      ¬· »[× Pizza ×]«
+          ¬·¤= ["Teig + Salami +Pilze"]
+
+Variablen wäre damit absobierbar in die Syntax und damit wäre
+C geschriebene kernel kern strukturen komplett absolet.
+
+Was ich hier gerade konzipiere, ist die Lösung für das größte Problem von C:
+Pointer-Out-of-Bounds und Memory Leaks
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 

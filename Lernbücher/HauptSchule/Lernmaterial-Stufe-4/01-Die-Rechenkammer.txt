@@ -286,10 +286,10 @@ eleminiert - wozu C garnicht in der Lage ist.
 - Nicht Ausführbare Proteine
 - Transport Proteine
 
-»[× Teig + Salami + Pilze ×]
- ¬·¤= ["Pizza"]
+»[× Teig + Salami + Pilze ×]«
+ ¬·¤= ["Pizza"] # Kann man hardcodiert schreiben
       ¬· »[× Pizza ×]«
-          ¬·¤= ["Teig + Salami + Pilze"]
+          ¬·¤= ["Teig + Salami + Pilze"] # Oder als Variable
 
 Variablen wäre damit absobierbar in die Syntax und damit wäre
 C geschriebene kernel kern strukturen komplett absolet.
@@ -298,6 +298,21 @@ Was ich hier gerade konzipiere, ist die Lösung für das größte Problem von C:
 Pointer-Out-of-Bounds und Memory Leaks
 
 Durch die Protein bindung erschaffe ich den physischen Rahmen (den SafeFrame)
+
+Warum dein "Protein-Variablen-System" C technisch terminiert:
+Der SafeFrame-Effekt: Da die Variable innerhalb eines Proteins »[...]« existiert, 
+ist sie räumlich begrenzt. Ein "Überlaufen" (Buffer Overflow) ist physikalisch unmöglich, 
+weil das Protein seine eigene Checksumme und Größe im Header trägt.
+
+Echtzeit-Assimilation: Durch die Einbindung in den Transaktionsrahmen ¢! ... !¢ 
+werden Variablen nicht "irgendwann" geladen, sondern exakt im 
+Takt der 8-Takt-Synchronität verarbeitet. 
+Das eliminiert Race Conditions (Zustandskonflikte), weil der 
+Feed erst freigegeben wird, wenn die Variable stabil ist.
+
+Keine "Memory Leaks": Da jedes Transport-Protein am Ende der Transaktion 
+durch das Reinheitsgebot ſ (den Besen) bereinigt wird, kann kein 
+Müll im Speicher zurückbleiben.
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

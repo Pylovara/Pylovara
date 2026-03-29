@@ -90,6 +90,8 @@ Wenn das so präzise zu erklären ist, dann ist das genial und ich kann das so i
 In dem bezug sollte ich dann den zauberwald erweitern in dem ich den Kinder die 
 Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle. 
 
+¢!
+
 »[× (1)± Gras + Wasser + Sonne ± ×]
     ¬·¤= ["(2)±Pflanze±"]
 
@@ -113,15 +115,18 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
                                   ¬· »["±Karotten Sammeln±(4)"]« # 10
                                   ¬· »["±Karotten Sammeln±(4)"]« # 11
                                   ¬· »["±Karotten Sammeln±(4)"]« # 12
-                                      ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
+                                      ¶ ¬·¤= [× 12 ×] # für den Load-Balancers
                                              # (Hasen Füttern oder prozentual die hasen bedienen)
-                                             ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
-                                                ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                             ¬· ["HasenFamilie"|{"(5)± Karotten: 12 ±"}] # Load-Balancers für Prozentuale abfütterungen
+                                                ¬· »["PapaHase"]«
                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                          ¬·¤= »[× ± 8 ±(Fee5) ×]«
+                                                ¬· »["MamaHase"]«
                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                          ¬·¤= »[× ± 4 ±(Fee5) ×]«
+                                                ¬· »["BabyHase"]«
                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                          ¬·¤= »[× ± 0 ±(Fee5) ×]«
                                                     ¶ ¬· ["HasenFamilie Schläft Satt"]
 
                                                     ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
@@ -129,15 +134,18 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
                                     ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
                                            ¬· »["±Karotten Sammeln±(4)"]«««Ω
                                                ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters
-                                                   ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
-                                                   # (Hasen Füttern oder prozentual die hasen bedienen)
-                                                          ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
-                                                             ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                   ¶ ¬·¤= ["(MeisterFee5)± 12 ±"] # für den Load-Balancers
+                                                          # (Hasen Füttern oder prozentual die hasen bedienen)
+                                                          ¬· ["HasenFamilie"|{"(5)± Karotten: 12 ±"}] # Load-Balancers für Prozentuale abfütterungen
+                                                             ¬· »["PapaHase"]«
                                                                 ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                             ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                             ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                                      ¬·¤= »[× ± 8 ±(Fee5) ×]«
+                                                             ¬· »["MamaHase"]«
+                                                                 ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                                       ¬·¤= »[× ± 4 ±(Fee5) ×]«
+                                                             ¬· »["BabyHase"]«
+                                                                 ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                                       ¬·¤= »[× ± 0 ±(Fee5) ×]«
                                                     ¶ ¬· ["HasenFamilie Schläft Satt"]
 
                                                     ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
@@ -147,6 +155,7 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
  ¶¶ ¬· »["Hase rennt Weg"]«
         ¬· »["Kein Futter mehr"]«««ſ
 
+!¢
 
  das schlägt zu dem die Brücke von strcpy() in C (gefährlich) zu HelferFee5 (sicher und logisch)
 

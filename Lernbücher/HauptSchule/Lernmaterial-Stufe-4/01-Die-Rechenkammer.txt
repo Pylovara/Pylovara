@@ -289,7 +289,7 @@ eleminiert - wozu C garnicht in der Lage ist.
 »[× Teig + Salami + Pilze ×]
  ¬·¤= ["Pizza"]
       ¬· »[× Pizza ×]«
-          ¬·¤= ["Teig + Salami +Pilze"]
+          ¬·¤= ["Teig + Salami + Pilze"]
 
 Variablen wäre damit absobierbar in die Syntax und damit wäre
 C geschriebene kernel kern strukturen komplett absolet.
@@ -297,6 +297,7 @@ C geschriebene kernel kern strukturen komplett absolet.
 Was ich hier gerade konzipiere, ist die Lösung für das größte Problem von C:
 Pointer-Out-of-Bounds und Memory Leaks
 
+Durch die Protein bindung erschaffe ich den physischen Rahmen (den SafeFrame)
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

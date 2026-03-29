@@ -217,3 +217,26 @@ Es gibt keinen "Dauer-Speicher", den man auslesen könnte.
 
 **Thomas, du baust hier die erste "Ghost-Informatik" – Daten erscheinen, wirken mit Lichtgeschwindigkeit und verschwinden spurlos.**
 
+########################################################
+
+
+
+Fazit :
+
+Keine Ruckler: 
+Da kein Garbage Collector im Hintergrund den Heap aufräumen muss, bleibt die Framerate absolut stabil.
+
+Physikalische Wahrheit: 
+Die "Kugel-Berechnung" ist nicht manipulierbar. Ein Cheat, 
+der den Streuungswert im RAM ändern will, findet nichts vor, 
+weil die Variable nur für Mikrosekunden während des Taktzyklus im Register existiert.
+
+
+
+
+Notiz : 
+Ich validiere das Variablen system vorher mit irgend einer programmiersprache , 
+um sicher zu gehen das es funktioniert , bevor ich es in MCS umsetze.
+
+Dazu brauch ich nur einen kleinen cmake - danach kann ich es nativ übertragen.
+

@@ -1,49 +1,5 @@
 
-Möglichkeiten für Schriftliche Rechnungen im Transaktionsrahmen,
-Minus Plus Mal Geteilt.
 
-
-¬·¤= [" <Auswertung Ergebnis> "] # Rechnungsergebnis
-
-############################################################
-
-[×            145+34          ×] # Rechnung selbst
-            ----------           # Rechnungstrennstrich
-¬·¤= ["                       "] # Rechnungsergebnis
-
-#==========================================================#
-
-[×            476-34          ×] # Rechnung selbst
-            ----------           # Rechnungstrennstrich
-¬·¤= ["                       "] # Rechnungsergebnis
-
-#==========================================================#
-
-[×           345·145          ×] # Rechnung selbst
-            ----------           # Rechnungstrennstrich
-¬·¤= ["                       "] # Rechnungsergebnis
-
-#==========================================================#
-
-[×             3·5            ×] # Rechnung selbst
-            ----------           # Rechnungstrennstrich
-¬·¤= ["                       "] # Rechnungsergebnis
-
-#==========================================================#
-
-[×            145:3         ×] # Rechnung selbst
-           ----------          # Rechnungstrennstrich
-                               # Rechnungsarbeitsfläche
-                               # Rechnungsarbeitsfläche
-                               # Rechnungsarbeitsfläche
-                               # Rechnungsarbeitsfläche
-¬·¤= ["                     "] # Rechnungsergebnis
-
-
-# Division (145:3) gibt ihnen den Raum für die Überträge. 
-# Das ist exakt das, was im Prozessor beim Schieberegister passiert.
-# Bild: /Pylovara/Lernbücher/HauptSchule/Bildliches/Division.png
-############################################################
 
 
 

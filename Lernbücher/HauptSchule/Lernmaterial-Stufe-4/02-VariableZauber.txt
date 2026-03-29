@@ -97,28 +97,30 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
                   ¬· »[× (3)± (1) + (2) ± ×]
                       ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(3)"]
                            ¬·¤= ["(4)±Karotte±"]
-                                ¬· »["±Karotten Sammeln±(4)"] 
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
-                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
+                                ¬· »["±Karotten Sammeln±(4)"]«
                                     ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
                                            # (Hasen Füttern oder prozentual die hasen bedienen)
                                            ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
                                               ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
                                               ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
                                               ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                 ¶ ¬· ["HasenFamilie Schläft Satt"]
+                                                  ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                  ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
 
                                     ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
-                                         
+                                           ¬· »["±Karotten Sammeln±(4)"]«««Ω
 
 
 Die "unsichtbare" Informatik in dem Beispiel:

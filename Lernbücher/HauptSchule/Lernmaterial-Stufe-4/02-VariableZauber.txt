@@ -92,36 +92,45 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
 
 »[× (1)± Gras + Wasser + Sonne ± ×]
     ¬·¤= ["(2)±Pflanze±"]
-         ¬· »[× ±Pflanze±(2) ×]
-             ¬·¤= ["±Gras + Wasser + Sonne±(1)"]
-                  ¬· »[× (3)± (1) + (2) ± ×]
-                      ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(3)"]
-                           ¬·¤= ["(4)±Karotte±"]
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                ¬· »["±Karotten Sammeln±(4)"]«
-                                    ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
-                                           # (Hasen Füttern oder prozentual die hasen bedienen)
-                                           ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
-                                              ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                              ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                              ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                  ¶ ¬· ["HasenFamilie Schläft Satt"]
 
-                                                  ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+
+ ¶ ¬· »["Rascheln im Busch"]«
+       ¬· »["Hase Wartet"]«
+           ¬· »[× ±Pflanze±(2) ×]
+               ¬·¤= ["±Gras + Wasser + Sonne±(1)"]
+                    ¬· »[× (3)± (1) + (2) ± ×]
+                        ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(3)"]
+                             ¬·¤= ["(4)±Karotte±"]
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                  ¬· »["±Karotten Sammeln±(4)"]«
+                                      ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
+                                             # (Hasen Füttern oder prozentual die hasen bedienen)
+                                             ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
+                                                ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
 
                                     ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
                                            ¬· »["±Karotten Sammeln±(4)"]«««Ω
 
+
+
+
+ ¶¶ ¬· »["Hase rennt Weg"]«
+        ¬· »["Kein Futter mehr"]«««ſ
 
 Die "unsichtbare" Informatik in dem Beispiel:
 
@@ -132,6 +141,7 @@ Das mehrfache ¬· »["±Karotten Sammeln±(4)"] ist ein entfalteteter Loop. Das
 - Terminierung: 
 ¶ ¬· ["HasenFamilie Schläft Satt"] ist der Exit-Status 0 (Success). Das Programm ist erfolgreich abgeschlossen.
 
+inklusive wäre das Ereignis-gesteuerte Architektur (Event-Driven Architecture) in eine Fabel verwandelt.
 
 und auf diesem wege kann man die ernährungs produtions oder herstellung
 mit in die syntax einbauen um den kindern mehr fanatsie spielraum zu geben.

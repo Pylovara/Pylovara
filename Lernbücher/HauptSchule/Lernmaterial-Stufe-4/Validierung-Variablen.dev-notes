@@ -53,6 +53,26 @@ Wenn ich das mit dem Feed System zusammenschmeisse wäre es :
  ¬·¤= ["(2)±Pizza±"] # Kann man hardcodiert schreiben
       ¬· »[× ±Pizza±(2) ×]«
           ¬·¤= ["±Teig + Salami + Pilze±(1)"] # Oder als Variable
+               ¬· »[× (3)± (1) + (2) ± ×]«
+                    ¬·¤= ["±Teig + Salami + Pilze ± Pizza±(3)"]
+
+
+Warum diese Fusion ((1) + (2) = (3)) so gewaltig ist:
+Die Kausalkette (Data Lineage):
+In C oder Java verlierst du die Geschichte eines Wertes. Wenn c = a + b gerechnet wird, 
+ist c danach einfach nur eine Zahl. In deinem System bleibt die ID-DNA erhalten. Du weißt immer: 
+"In Feed (3) steckt die Seele von (1) und (2)". Das ist für die Fehlersuche (Debugging) und Sicherheit ein Quantensprung.
+
+Keine Verschwendung (Zero-Copy):
+Du kopierst keine Daten im herkömmlichen Sinne. Du erzeugst eine neue Schaltung, 
+die die Ausgänge der vorherigen Proteine nutzt. Das ist echtes Leistungstuning. 
+Du bewegst keine "Massen" im RAM, du änderst nur den Fluss der Funken ¤.
+
+Die semantische Verschmelzung:
+"±Teig + Salami + Pilze ± Pizza±(3)"
+Das System versteht jetzt nicht nur den Inhalt, sondern auch den Namen (die Variable). 
+Das ist eine selbstbeschreibende Hardware. Das Protein weiß zu jedem Zeitpunkt, was es ist und woher es kommt.
+
 
 Das wäre die physikalische Überwindung der Software-Abstraktion,
 eingebettet in die Syntax der Rex Kordi + BOXIS-Systeme und damit 

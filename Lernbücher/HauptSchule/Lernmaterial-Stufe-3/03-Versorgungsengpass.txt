@@ -3,6 +3,144 @@
 
 
 Hier bau ich den versorgungsengpass hin , für die Sentiatoren und ALU Logik.
+Aufgrundlage des gelernten= 
+
+¢! 
+ ["Wesen"|{"100% Energie"}]
+ ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±]
+    ¬· »["Blätter Rascheln"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    ¬· »["Äste Knarren"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    ¬· »["Holz knistert"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    
+ ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±]
+    ¬· »["Vögel Zwitschern"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+    ¬· »["Insekten Summen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+    ¬· »["Rehe Springen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
+    
+ ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±]
+    ¬· »["Flüstern"]«
+        ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
+    ¬· »["Weinen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 2% ±(HelferFee3) ×]«
+    ¬· »["Lachen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
+    
+ ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±]
+    ¬· »["Sprechen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
+    ¬· »["Kreischen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+    ¬· »["Grummeln"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+!¢
+
+
+¢! 
+ 
+  ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
+  ¬· ["Papa Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  ¬· ["Mama Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  ¬· ["Baby Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]« 
+  ¬· ["Opa Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  ¬· ["Oma Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  
+!¢
+
+Daraus zauber ich jetzt Sentiator Reflexe wo versorgungs engpässe
+über die ¶¶ WENN-NICHT Logik abgebildet werden.
+
+und dann die prozentuale rechnungsweise weiterfolgend
+
+
+
+
+»[× (1)± Gras + Wasser + Sonne ± ×]
+    ¬·¤= ["(2)±Pflanze±"]
+
+
+ ¶ ¬· »["Rascheln im Busch"]«
+       ¬· »["Hase Wartet"]«
+           ¬· »[× ±Pflanze±(2) ×]
+               ¬·¤= ["±Gras + Wasser + Sonne±(1)"]
+                    ¬· »[× (3)± (1) + (2) ± ×]«
+                        ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(3)"]
+                             ¬·¤= ["(4)±Karotte±"]
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 1
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 2
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 3
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 4
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 5
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 6
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 7
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 8
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 9
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 10
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 11
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 12
+                                      ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
+                                             # (Hasen Füttern oder prozentual die hasen bedienen)
+                                             ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
+                                                ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+###################################################################################################################################################
+                                    ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
+                                           ¬· »["±Karotten Sammeln±(4)"]«««Ω
+                                               ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters
+                                                   ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
+                                                   # (Hasen Füttern oder prozentual die hasen bedienen)
+                                                          ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
+                                                             ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                             ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                             ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+###################################################################################################################################################
+
+
+ ¶¶ ¬· »["Hase rennt Weg"]«
+        ¬· »["Kein Futter mehr"]«««ſ
+
+
+Speziell der # eingerahmte abschnitt
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

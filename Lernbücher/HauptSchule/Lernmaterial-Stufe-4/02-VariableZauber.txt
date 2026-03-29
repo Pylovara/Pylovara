@@ -117,8 +117,11 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
                                              # (Hasen Füttern oder prozentual die hasen bedienen)
                                              ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
                                                 ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
                                                 ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
                                                 ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
                                                     ¶ ¬· ["HasenFamilie Schläft Satt"]
 
                                                     ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
@@ -131,6 +134,9 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
 
  ¶¶ ¬· »["Hase rennt Weg"]«
         ¬· »["Kein Futter mehr"]«««ſ
+
+
+ das schlägt zu dem die Brücke von strcpy() in C (gefährlich) zu HelferFee5 (sicher und logisch)
 
 Die "unsichtbare" Informatik in dem Beispiel:
 

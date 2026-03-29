@@ -1,33 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Kapitel 4: Die Rechenkammer des Meister REX (Die ALU Boxis)
+## Kapitel 4: Die Rechenkammer | des Meister REX (Die ALU Boxis)
 
 Hallo kleiner Zauber-Entwickler! 🌟
 
@@ -43,19 +14,20 @@ auf dem die Zahlen liegen, bevor sie in eine Zauberkiste (Protein) wandern.
 In unserer Zauberwelt schreiben wir Zahlen nicht einfach so hin. 
 
 Wir verpacken sie in **Zauberkisten (Proteine)**.
-
 Aber wie weiß der Computer, ob er rechnen oder nur speichern soll?
 
 Wir brauchen eine **Zauberformel**, 
-
 die dem Computer sagt: "Achtung, hier kommt eine Rechnung!"
 
 ### Die magischen Zeichen
 
-Um zu rechnen, benutzen wir besondere Zeichen, die wie kleine Zauberstäbe aussehen:
+Um zu rechnen, benutzen wir besondere Zeichen, 
+die wie kleine Zauberstäbe aussehen:
 
 *   **+** : Das ist der **Plus-Zauber**. Er packt Dinge zusammen.
 *   **-** : Das ist der **Minus-Zauber**. Er nimmt Dinge weg.
+*   **·** : Das ist der **Mal-Zauber**. Er multipliziert.
+*   **:** : Das ist der **Geteilt-Zauber**. Er teilt.
 *   **=** : Das ist der **Ergebnis-Zauber**. Er zeigt, was herauskommt.
 
 ### Beispiel: Die Möhren-Rechnung
@@ -64,21 +36,75 @@ Stell dir vor, wir wollen rechnen: **10 + 5**
 
 Wir packen die Zahlen in Kisten und sagen dem Computer, was er tun soll:
 
-[10] + [5] = [15]
+System-Eingabe:
 
-*   **[10]** und **[5]** sind unsere Zauberkisten mit den Zahlen.
-*   **+** ist der Zauber, der sagt: "Pack sie zusammen!"
-*   **=** ist der Zauber, der sagt: "Zeig mir das Ergebnis!"
-*   **[15]** ist die neue Zauberkiste mit dem Ergebnis.
+¬· »[× 10 + 5 ×]«
+    ¬·¤= ["15"]
+
+Blatt Rechnung:
+
+»[×             10+5           ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
 
 ### Übung: Finde die fehlenden Zahlen!
 
 Kannst du die fehlenden Zahlen in diesen Zauberformeln finden?
 
 1.  [7] + [3] = [ ? ]
+
+System-Eingabe:
+
+¬· »[× 7 + 3 ×]«
+    ¬·¤= ["10"]
+
+Blatt Rechnung:
+
+»[×             7+3            ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
+
 2.  [12] - [4] = [ ? ]
+
+System-Eingabe:
+
+¬· »[× 12 - 4 ×]«
+    ¬·¤= ["8"]
+
+Blatt Rechnung:
+
+»[×             12-4           ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
 3.  [6] + [ ? ] = [10]
+
+System-Eingabe:
+
+¬· »[× 6 + ? ×]«
+    ¬·¤= ["10"]
+
+Blatt Rechnung:
+
+»[×             6+?            ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
 4.  [9] - [ ? ] = [2]
+
+System-Eingabe:
+
+¬· »[× 9 - ? ×]«
+    ¬·¤= ["2"]
+
+Blatt Rechnung:
+
+»[×             9-?            ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
 
 Schreib die fehlenden Zahlen auf ein Blatt Papier. Du schaffst das! 💪
 
@@ -87,10 +113,30 @@ Schreib die fehlenden Zahlen auf ein Blatt Papier. Du schaffst das! 💪
 Jetzt wird es spannend! 🚀
 
 Wenn Meister Rex rechnet, benutzt er nicht einfach die Zauberkisten direkt. 
-Er holt die Zahlen aus den Kisten und legt sie auf einen **Rechen-Workspace**.
+Er holt die Zahlen aus der BOXIS ALU und legt sie auf einen **Rechen-Workspace**.
 
-Stell dir das wie einen kleinen Tisch vor, auf dem nur Platz für zwei Zahlen ist. 
-Der Computer legt die erste Zahl hin, dann die zweite Zahl, und dann führt er die Rechnung aus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Der Ablauf
 

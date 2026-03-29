@@ -36,6 +36,8 @@ Stell dir vor, wir wollen rechnen: **10 + 5**
 
 Wir packen die Zahlen in Kisten und sagen dem Computer, was er tun soll:
 
+#==========================================================#
+
 System-Eingabe:
 
 ¬· »[× 10 + 5 ×]«
@@ -47,6 +49,7 @@ Blatt Rechnung:
              ----------            # Rechnungstrennstrich
  ¬·¤= ["                       "]  # Rechnungsergebnis
 
+#==========================================================#
 
 ### Übung: Finde die fehlenden Zahlen!
 
@@ -65,6 +68,7 @@ Blatt Rechnung:
              ----------            # Rechnungstrennstrich
  ¬·¤= ["                       "]  # Rechnungsergebnis
 
+#==========================================================#
 
 2.  [12] - [4] = [ ? ]
 
@@ -79,6 +83,8 @@ Blatt Rechnung:
              ----------            # Rechnungstrennstrich
  ¬·¤= ["                       "]  # Rechnungsergebnis
 
+#==========================================================#
+
 3.  [6] + [ ? ] = [10]
 
 System-Eingabe:
@@ -91,6 +97,8 @@ Blatt Rechnung:
 »[×             6+?            ×]« # Rechnung selbst
              ----------            # Rechnungstrennstrich
  ¬·¤= ["                       "]  # Rechnungsergebnis
+
+#==========================================================#
 
 4.  [9] - [ ? ] = [2]
 
@@ -105,52 +113,80 @@ Blatt Rechnung:
              ----------            # Rechnungstrennstrich
  ¬·¤= ["                       "]  # Rechnungsergebnis
 
+#==========================================================#
 
 Schreib die fehlenden Zahlen auf ein Blatt Papier. Du schaffst das! 💪
+
 
 ## 2. Der Rechen-Workspace (Die ALU)
 
 Jetzt wird es spannend! 🚀
 
 Wenn Meister Rex rechnet, benutzt er nicht einfach die Zauberkisten direkt. 
-Er holt die Zahlen aus der BOXIS ALU und legt sie auf einen **Rechen-Workspace**.
+Er holt die Zahlen aus der BOXIS ALU und führt die Rechnung direkt in der ALU aus.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Da diese Zauberrei aber Voll Automatisch im Nebel der Magie passiert und wir
+nicht sehen können was da genau passiert, haben wir uns überlegt, wie wir das
+Schriftliche Rechnen auf Papier bringen können.
 
 
 ### Der Ablauf
 
-1.  **Hol die erste Zahl:** Rex nimmt die erste Zauberkiste und legt die Zahl auf den Tisch.
-2.  **Hol die zweite Zahl:** Rex nimmt die zweite Zauberkiste und legt die Zahl dazu.
-3.  **Der Zauber:** Rex benutzt den Rechen-Workspace, um die Zahlen zu addieren oder zu subtrahieren.
-4.  **Das Ergebnis:** Das Ergebnis wird in eine neue Zauberkiste gepackt.
+1.  **Hol die Rechnung:** Rex nimmt die Rechnung aus der BOXIS ALU und legt sie auf dem Tisch.
+2.  **Rechne:** Rex rechnet die Rechnung aus und schreibt das Ergebnis auf dem Tisch.
+3.  **Das Ergebnis:** Das Ergebnis wird in eine neue Boxis Alu Zauberkiste gepackt.
 
-### Beispiel: 10 + 5
+Somit lassen sich ausgerechnete Elemente immer wieder verwenden.
 
-1. Rex holt [10] und legt es auf den Tisch.
-2. Rex holt [5] und legt es dazu.
-3. Rex rechnet: 10 + 5 = 15
-4. Rex packt [15] in eine neue Zauberkiste.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Übung: Zeichne den Rechen-Workspace!
 

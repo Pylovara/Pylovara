@@ -23,20 +23,31 @@ Möglichkeiten für Schriftliche Rechnungen in den Transaktionsrahmen
 
 ¬·¤= [" <Auswertung Ergebnis> "] # Rechnungsergebnis
 
+############################################################
 
 [×            145+34          ×] # Rechnung selbst
             ----------           # Rechnungstrennstrich
 ¬·¤= ["                       "] # Rechnungsergebnis
 
+#==========================================================#
+
 [×            476-34          ×] # Rechnung selbst
             ----------           # Rechnungstrennstrich
 ¬·¤= ["                       "] # Rechnungsergebnis
 
+#==========================================================#
 
 [×           345·145          ×] # Rechnung selbst
             ----------           # Rechnungstrennstrich
 ¬·¤= ["                       "] # Rechnungsergebnis
 
+#==========================================================#
+
+[×             3·5            ×] # Rechnung selbst
+            ----------           # Rechnungstrennstrich
+¬·¤= ["                       "] # Rechnungsergebnis
+
+#==========================================================#
 
 [×            145:3         ×] # Rechnung selbst
            ----------          # Rechnungstrennstrich
@@ -46,7 +57,7 @@ Möglichkeiten für Schriftliche Rechnungen in den Transaktionsrahmen
                                # Rechnungsarbeitsfläche
 ¬·¤= ["                     "] # Rechnungsergebnis
 
-
+############################################################
 
 
 

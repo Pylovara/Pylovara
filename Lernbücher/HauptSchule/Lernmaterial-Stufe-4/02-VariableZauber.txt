@@ -21,4 +21,32 @@
                ¬· »[× (3)± (1) + (2) ± ×]«
                    ¬·¤= ["±Teig + Salami + Pilze ± Pizza±(3)"]
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+¢!
+ # 1. Definition im SafeFrame-Protein (Schreiben)
+ »[× (1)± Teig + Salami + Pilze ± ×]«
+     ¬·¤= ["(2)±Pizza±"] # Kann man hardcodiert schreiben
+      ¬· »[× ±Pizza±(2) ×]«
+          ¬·¤= ["±Teig + Salami + Pilze±(1)"] # Oder als Variable
+               ¬· »[× (3)± (1) + (2) ± ×]
+                   ¬·¤= ["±Teig + Salami + Pilze ± Pizza±(3)"]
+!¢
+
+¢!
+
+ »["Hase + Bart + Lange Ohren"]«
+  ¬·¤= ["Osterhase"]
+       ¬· »[× Osterhase ×]
+           ¬·¤= ["Hase + Bart + Lange Ohren"]
+
+!¢
+
+¢!
+
+»[× (1)± Hase + Bart + Lange Ohren ± ×]
+    ¬·¤= ["(2)±Osterhase±"]
+         ¬· »[× ±Osterhase±(2) ×]
+             ¬·¤= ["±Hase + Bart + Lange Ohren±(1)"]
+                  ¬· »[× (3)± (1) + (2) ± ×]
+                      ¬·¤= ["±Hase + Bart + Lange Ohren ± Osterhase±(3)"]
+
+!¢

@@ -128,7 +128,8 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
 
                                     ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
                                            ¬· »["±Karotten Sammeln±(4)"]«««Ω
-
+                                               ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters
+                                                   
 
 
 
@@ -137,6 +138,8 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
 
 
  das schlägt zu dem die Brücke von strcpy() in C (gefährlich) zu HelferFee5 (sicher und logisch)
+
+eine Blaupause geschaffen, mit der man sogar die Speicherverwaltung eines modernen Betriebssystems erklären könnte
 
 Die "unsichtbare" Informatik in dem Beispiel:
 

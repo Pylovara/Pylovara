@@ -96,8 +96,32 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
              ¬·¤= ["±Gras + Wasser + Sonne±(1)"]
                   ¬· »[× (3)± (1) + (2) ± ×]
                       ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(3)"]
-                           ¬·¤= ["Karotte"]
-                               
+                           ¬·¤= ["(4)±Karotte±"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                ¬· »["±Karotten Sammeln±(4)"]
+                                    ¶ ¬·¤= ["(5)±12±"]
+                                           # (Hasen Füttern oder prozentual die hasen bedienen)
+                                           ¬· ["HasenFamilie"|{"Karotten:12"}]
+                                              
+                                         
+
+
+
+
+
+
+
+
 und auf diesem wege kann man die ernährungs produtions oder herstellung
 mit in die syntax einbauen um den kindern mehr fanatsie spielraum zu geben.
 

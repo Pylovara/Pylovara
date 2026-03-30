@@ -120,13 +120,13 @@ Variablen als Ernährungs wirtschaftlichen Kreislauf darstelle.
                                              ¬· ["HasenFamilie"|{"(5)± Karotten: 12 ±"}] # Load-Balancers für Prozentuale abfütterungen
                                                 ¬· »["PapaHase"]«
                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                          ¬·¤= »[× ± 8 ±(Fee5) ×]«
+                                                          ¬·¤= »[× ± 8 ±(Fee5) ×]« # Rest
                                                 ¬· »["MamaHase"]«
                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                          ¬·¤= »[× ± 4 ±(Fee5) ×]«
+                                                          ¬·¤= »[× ± 4 ±(Fee5) ×]« # Rest
                                                 ¬· »["BabyHase"]«
                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                          ¬·¤= »[× ± 0 ±(Fee5) ×]«
+                                                          ¬·¤= »[× ± 0 ±(Fee5) ×]« # Rest
                                                     ¶ ¬· ["HasenFamilie Schläft Satt"]
 
                                                     ¶¶ ¬· »["HasenFamilie Spielt Satt"]«

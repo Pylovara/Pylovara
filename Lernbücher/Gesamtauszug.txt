@@ -1,443 +1,6 @@
-┌[bandino@dev][08:30:11|Mi Mär 25]
- │ ᴾʸˡᵒᵛᵃʳᵃ
- │  𝒸ₐₗₗₘₑ  ₚ     ₖₑᵣₙₑₗ ₗₑₓ     ₕₑₗₚₘₑ ₗₑₓ
- │    ₜₒ   ₚᵧₗₒ   ₕₑₗₚₘₑₓ ₀₃₋₀₂
- └[/Pylovara/Lernbücher]> $ tree
-.
-├── HauptSchule
-│   ├── Bildliches
-│   │   └── apple_keyboard_german.png
-│   ├── Extra-BSK-Lernmaterial
-│   │   └── Placeholder
-│   ├── Lernmaterial-Stufe-2
-│   │   ├── 00-Eltern-Lehrer-Info.txt
-│   │   ├── 01-Die-Zauber-Symbole.txt
-│   │   ├── 02-Die-Zauber-Abfrage.txt
-│   │   ├── 03-Tastatur-Übung.txt
-│   │   ├── 04-VersorgungsSpiele.txt
-│   │   └── 05-VersorgungsAusbau.txt
-│   ├── Lernmaterial-Stufe-3
-│   │   ├── 00-Eltern-Lehrer-Info.txt
-│   │   ├── 01-Bausteinschaltungskreislauf.txt
-│   │   ├── 02-REX-Kordi-Auswertung-Feed.txt
-│   │   ├── 03-Versorgungsengpass.txt
-│   │   └── Schmierzettel.dev-note
-│   ├── Lernmaterial-Stufe-4
-│   │   └── 00-Eltern-Lehrer-Info.txt
-│   └── VorWort.txt
-├── Kindergarten-GrundSchule
-│   ├── Bildliches-Stufe-0
-│   │   ├── aufbau_tiefsee_bausteine.png
-│   │   ├── boxis_wald_kiste.png
-│   │   ├── komponenten_wald_puzzle.png
-│   │   ├── mcs_tiefsee_gehirn.png
-│   │   ├── muster_wald_steine.png
-│   │   ├── schattenspiele_OverheadProjektor.png
-│   │   ├── schattenspiele_vogelfamilie.png
-│   │   └── verstehen_tiefsee_lampe.png
-│   ├── Bildliches-Stufe-1
-│   │   ├── Ausführbares-Protein.png
-│   │   ├── Rex.png
-│   │   ├── Sentiatoren.png
-│   │   ├── Trennbefehl.png
-│   │   └── Unausführbares-Protein.png
-│   ├── Hörbücher
-│   │   └── Placeholder.wiki-notes
-│   ├── Lernmaterial-Stufe-0
-│   │   ├── 00-Eltern-Lehrer-Info.txt
-│   │   ├── 01-Willkommen.txt
-│   │   ├── 02-Komponenten.txt
-│   │   ├── 03-Verstehen.txt
-│   │   ├── 04-Aufbau.txt
-│   │   ├── 05-Muster.txt
-│   │   ├── 06-Boxis.txt
-│   │   ├── 07-MCS.txt
-│   │   └── 08-Verbinde-die-Symbole.txt
-│   ├── Lernmaterial-Stufe-1
-│   │   ├── 00-Eltern-Lehrer-Info.txt
-│   │   ├── 01-Transaktionsrahmen.txt
-│   │   ├── 02-Protein.txt
-│   │   ├── 03-Trennbefehl.txt
-│   │   ├── 04-GelernterZwischenSchritt.txt
-│   │   ├── 05-REX.txt
-│   │   ├── 06-Aktionsdraht.txt
-│   │   ├── 07-Gelerntes-Üben.txt
-│   │   ├── 08-Sentiatoren.txt
-│   │   ├── 09-Argumente.txt
-│   │   └── 10-Wiederholung.txt
-│   ├── Mandalas
-│   │   └── Placeholder.wiki-notes
-│   └── VorWort.txt
-├── notizen.dev-note
-├── SonderSchule
-│   ├── Bildliches-Stufe-0
-│   │   ├── aufbau_tiefsee_bausteine.png
-│   │   ├── boxis_wald_kiste.png
-│   │   ├── komponenten_wald_puzzle.png
-│   │   ├── mcs_tiefsee_gehirn.png
-│   │   ├── muster_wald_steine.png
-│   │   ├── schattenspiele_OverheadProjektor.png
-│   │   ├── schattenspiele_vogelfamilie.png
-│   │   └── verstehen_tiefsee_lampe.png
-│   ├── Bildliches-Stufe-1
-│   │   ├── Ausführbares-Protein.png
-│   │   ├── Rex.png
-│   │   ├── Sentiatoren.png
-│   │   ├── Trennbefehl.png
-│   │   └── Unausführbares-Protein.png
-│   ├── Hörbücher
-│   │   └── Placeholder.wiki-notes
-│   ├── Lernmaterial-Stufe-0
-│   │   ├── 00-Eltern-Lehrer-Info.txt
-│   │   ├── 01-Willkommen.txt
-│   │   ├── 02-Komponenten.txt
-│   │   ├── 03-Verstehen.txt
-│   │   ├── 04-Aufbau.txt
-│   │   ├── 05-Muster.txt
-│   │   ├── 06-Boxis.txt
-│   │   ├── 07-MCS.txt
-│   │   └── 08-Verbinde-die-Symbole.txt
-│   ├── Lernmaterial-Stufe-1
-│   │   ├── 00-Eltern-Lehrer-Info.txt
-│   │   ├── 01-Transaktionsrahmen.txt
-│   │   ├── 02-Protein.txt
-│   │   ├── 03-Trennbefehl.txt
-│   │   ├── 04-GelernterZwischenSchritt.txt
-│   │   ├── 05-REX.txt
-│   │   ├── 06-Aktionsdraht.txt
-│   │   ├── 07-Gelerntes-Üben.txt
-│   │   ├── 08-Sentiatoren.txt
-│   │   ├── 09-Argumente.txt
-│   │   └── 10-Wiederholung.txt
-│   ├── Mandalas
-│   │   └── Placeholder.wiki-notes
-│   └── VorWort.txt
-└── Unsortiert
-    ├── BSK-MORPHIC-Prototyping
-    │   ├── entscheidung zu bask
-    │   └── Nur BrainStorm
-    ├── Kochbuch-Prototyping
-    │   ├── 01 Aktionsdraht-Start
-    │   ├── 02 Aktionsdraht-Ende
-    │   ├── 03 Sentiatoren
-    │   ├── 04 Schaltungsaufbau
-    │   ├── 05 REX
-    │   ├── 06 FEED
-    │   ├── 07 Argumente
-    │   ├── 08 VATRON RETRON
-    │   └── 09 Abschluss
-    ├── #RealSchule
-    │   ├── Bildliches
-    │   │   └── Placeholder
-    │   ├── #Lernmaterial-Stufe-2
-    │   │   ├── 00-Eltern-Lehrer-Info.txt
-    │   │   ├── 01-Proton.txt
-    │   │   └── XX-Argumente.txt
-    │   ├── Placeholder
-    │   └── rücklage.dev-note
-    │       └── bsk-für-oberklassen.txt
-    └── Spezial-Lernbuch
-        ├── 01-Die-Komponenten
-        ├── 02-Das-Verstehen
-        ├── 03-Der-Aufbau
-        ├── 04-Das-Muster
-        ├── 05-Universaler-Zugriff
-        └── 06-Logik-Aufbau
-
-29 directories, 111 files
-
-so und jede datei du du jetzt im anhang liest , ist im header jeder datei mit
-
-
-## Kapitel - Name
-
-angegeben !
-
-die stufe 0 habe ich weg gelassen weil darin nur die symbole mit manadals vorhanden sind , als erste visuelle einprägung wenn die kinder im wohnzimmer auf dem teppich gemütlich die mandalas mit bundstifte ausmahlen ... darübter sind auch zauberwald bilder mit tieren etx präsent , spielt aber für uns keine rolle ( wir sind ja erwachsen)
-
-also ab Lernmaterial-Stufe-1
-
-Hier gehts los :
-
-
-
-
-
-# Information für Eltern und Lehrkräfte: Willkommen in Stufe 1!
-
-Liebe Eltern, liebe Lehrkräfte,
-
-herzlichen Glückwunsch! 
-Die Kinder haben die ersten Grundlagen unserer Lernwelt (Stufe 0) erfolgreich gemeistert. 
-
-Bei Stufe 0 ging es in erster Linie darum, den Kindern die Welt von Pylovara näherzubringen, 
-bevor wir in die Tiefe der symbolischen Entwickler-Oberfläche der MaschinenCodeSpeech-Sprache gehen. 
-Stufe 0 sollte Lust auf das machen, was wir jetzt in Stufe 1 vertiefen werden.
-
-Nun beginnt ein neues, sehr spannendes Kapitel: **Stufe 1**. 
-
-In dieser neuen Lernphase machen wir einen faszinierenden Schritt. Wir beginnen damit, 
-den Kindern die **symbolische MCS-Oberfläche** (Master Control System aka MaschinenCodeSpeech, 
-zu Deutsch „MaschinenCodeSprache“) beizubringen. 
-Unser gemeinsames Ziel ist es, sie spielerisch und kindgerecht 
-zu „Entwicklern der Stufe 0“ auszubilden. 
-
-## Was bedeutet das genau?
-Anstatt abstrakten Code oder komplizierte Techniktheorie zu büffeln, 
-lernen die Kinder durch **Bilder und Symbole**, 
-wie komplexe Netzwerke und Systemarchitekturen funktionieren. 
-
-Diese Symbole sind keine reinen Fantasieprodukte, 
-sondern starke Übersetzungen echter, grundlegender Bestandteile aus 
-unserem Entwickler-Lexikon (den _Kernel Notes_). 
-Durch das Visualisieren dieser Bausteine verstehen die Kinder intuitiv, 
-wie digitale und logische Prozesse aufgebaut sind, 
-lange bevor sie auch nur eine Zeile Code schreiben.
-
-Das Schöne dabei ist:
-
-## Welche neuen „Vokabeln“ / Komponenten lernen die Kinder?
-In den kommenden Lektionen werden die Kinder sehr spezifischen Komponenten begegnen. 
-Damit auch Sie als Begleitpersonen das Konzept dahinter verstehen, 
-finden Sie hier eine kurze Übersicht der wichtigsten Symbole, die wir in dieser Stufe einführen:
-
-* **Transaktionsrahmen:** 
-  In der Systemwelt ist das ein Abgrenzungsraum für Prozesse. 
-  Für die Kinder ist es ein „sicherer Ort“ oder „Spielplatz“, an dem eine 
-  bestimmte Aufgabe in Ruhe erledigt wird, ohne dass etwas von außen stört.
-
-* **Protein:** 
-  Proteine sind die wandelbaren Strukturbausteine. 
-  Für die Kinder sind sie das „Material“ oder der „Körper“, aus dem unsere Ideen geformt werden.
-
-* **Proton:** 
-  Der feste, positive Kern. Es ist der essenzielle Funke oder die Energie, 
-  die bewirkt, dass Dinge stabil bleiben und funktionieren.
-
-  Wir sprechen hierbei vom Hardware-Energiemanagement, das die Kinder spielerisch lernen!
-
-* **Argumente:** 
-  In der Programmierung sind das Parameter, die übergeben werden. 
-  Für die Kinder sind das „Aufträge“ oder 
-  „Zutaten“, die wir unseren Helfern mitgeben müssen, damit sie genau wissen, was sie tun sollen.
-
-* **Sentiatoren:** 
-  Wächter- oder Sensorsysteme. 
-  Die Kinder lernen sie als extrem aufmerksame Beobachter kennen, 
-  die immer sofort spüren („sensen“), wenn sich etwas verändert oder ausgeführt werden muss.
-
-  Wir sprechen hierbei von Zweigen, die Entscheidungen freischalten können!
-  Dasselbe Prinzip, das jede Programmiersprache der Welt hat – nur besser!
-
-* **REX:** 
-  Die ausführende Instanz (Executor/Router). Ein starker, 
-  verlässlicher „Gefährte“, der Aufgaben annimmt, koordiniert und sicherstellt, 
-  dass die Befehle am richtigen Ort ausgeführt werden.
-
-  Das heißt im Klartext, dass die Kinder Arbeitsflächen (REX) kennenlernen, 
-  die sie später in der echten Programmierung brauchen werden! 
-
-  Damit sie später nicht wie ich als Programmierer erst mühsam lernen müssen, 
-  was eine Arbeitsfläche ist, sondern es schon von Beginn an kennen!
-
-## Wie können Sie die Kinder unterstützen?
-Die Kinder werden lernen, diese hochentwickelten „Erwachsenen-Komponenten“ 
-in Form von Tieren, leuchtenden Steinen, Pflanzen oder magischen Werkzeugen 
-in unserer Pylovara-Wald- und Tiefseewelt zu sehen.
-
-Bitte ermutigen Sie die Kinder dazu, diese Symbole zu zeichnen und die Begriffe 
-wie „Protein“ oder „Sentiator“ ganz selbstverständlich in ihren Wortschatz aufzunehmen. 
-Wenn ein Kind zum Beispiel von einem „Sentiatoren-Tier“ spricht, das lauscht und aufpasst, 
-dann hat es bereits eine komplexe Kontrollstruktur der Informatik begriffen!
-
-Wir freuen uns darauf, gemeinsam mit Ihnen den nächsten Schritt in der Entwicklung 
-unserer „Entwickler der Stufe 0“ zu gehen!
-
-Es wäre auch ratsam, Mandalas für die Symbole zu erstellen und diese 
-den Kindern zum Ausmalen zu geben. Das hilft ihnen dabei, sich die Symbole besser zu merken
-und fördert ihre Kreativität.
-
-Ich werde persönlich ein paar Mandalas für die Symbole erstellen, 
-die Sie nur noch mit Ihrem Drucker ausdrucken müssen. 
-
-Für den Lernprozess in Stufe 1 arbeiten wir hauptsächlich mit Print-Boxis vom System, 
-die „BOXIS“ heißen und klassenhierarchisch technisch aufgebaut sind ...
-
-Disclaimer: Wenn Ihr Kind noch nicht lesen und schreiben kann, weil es noch zu jung ist, 
-dann müssen Sie den Lesepart übernehmen. Ich denke aber, 
-dass Sie Ihrem Kind gerne etwas beibringen, das wirklich Sinn ergibt ... 
-
-Der Rest ist symbolische Einprägung mit Schaltlogik!
-Das heißt, dass Ihr Kind nicht lesen lernen muss, um zu verstehen, was hier passiert. 
-Es muss lediglich die Symbole und die Logik dahinter verstehen! 
-Das ist der Sinn der Sache! 
-
-Wenn es schon lesen kann, wäre es natürlich schön <3
-
-Was vielleicht noch erwähnenswert ist: Wir sprechen hierbei von 
-einer symbolischen Programmiersprache. Diese vermittelt die Logik hinter 
-der Programmierung, ohne das Kind mit der Syntax einer 
-klassischen Programmiersprache zu belasten. 
-In späteren Schritten kann es so auch den Unterbau kennenlernen, 
-ohne dabei nicht gehirngerecht lernen zu müssen.
-
-Seien Sie versichert, dass es keine Symbole gibt, die unerklärbar in 
-irgendeiner Abstraktionsschicht stecken. 
-Vom Sockel bis zur Spitze kann alles logisch und absolut valide erklärt werden!
-
-Wir werden hierbei dann in Stufe 2 anfangen, die gelernten 
-Komponenten mit `BOXH-PRINT => ""` zu benutzen, und bauen einfache Schaltungen auf, 
-die mit allem auf diesem Planeten erklärt werden können ... 
-
-Wir werden keine OS ABI oder sonstigen Schnickschnack benutzen, 
-sondern nur die symbolische Sprache der MCS, die völlig auf 
-dem Sockel der Hardware basiert und somit absolut valide ist. 
-Sie hat nichts mit herkömmlichen Programmiersprachen zu tun, 
-die auf abstrakten Schichten basieren und somit verfälscht sind!
-
-Wir lernen auch keine alten Syscalls. Denn wie Sie sicher schon festgestellt haben, 
-kann uns eine KI diese heutzutage auf Knopfdruck wie ein Taschenrechner servieren!
-
-Deswegen nutzen wir dieses System als Alleinstellungsmerkmal. 
-Später können alle Boxis mit KI-Unterstützung für die genaue Übersetzung 
-befüllt werden (hierbei sprechen wir dann aber eher vom Anfang der Hauptschulzeit!).
-
-Damit Sie verstehen, worauf das Ganze hinausläuft, zeige ich Ihnen 
-eine Print-Variante, die die Kinder später selbst schreiben können:
-
-`KAFFEESTARTER.KAFFEECREMAMASCHINE-CORE` # In der Datei befindet sich dann:
-
-¢!
-
-Ŧ¹ »["KNOPF AN"]«
-    ¬·»["Kaffeemaschine"]«««S20 # 20 Sekunden Wartezeit wegen dem Heizstab
-       ¶ ¬· »["Tanken"]«««T9
-             ¬· »["Brauch Wasser"]«
-                 ¶ ¬· »["Wasser voll"]«
-                       ¬· »["Stoppe die Zufuhr"]«««E
-                 ¶¶ ¬· »["Wasser rein"]«
-                        ¬· »["Füllstand prüfen"]«««S8
-                            ¶ ¬· »["Füllstand voll"]«««E
-                            ¶¶ ¬· »["Füllstand leer"]«
-                                   ¬· »["FEHLER-Meldung"]«
-
-             ¬· »["Brauch Strom"]«««T4
-                 ¶ ¬· »["Heizstab an"]«««E
-                 ¶¶ ¬· »["Heizstab aus"]«
-                        ¬· »["Fehler-Meldung"]«
-                        
-             ¬· »["Brauch Kaffeepulver"]«««T4                
-                 ¶ ¬· »["Kaffeepulver ist voll"]«««E
-                 ¶¶ ¬· »["Kaffeepulver ist leer"]«
-                        ¬· »["FEHLER-Meldung"]«
-
-             ¬· »["Brauch Tasse"]«««T7
-                 ¶ ¬· »["Tasse ist da"]«««E
-                 ¶¶ ¬· »["Tasse ist nicht da"]«
-                        ¬· »["Wir stellen schnell eine darunter"]«
-                            ¬· »["Brauch Milch"]«««S1
-                            ¬· »["Brauch Zucker"]«««S2
-                            ¬· »["Brauch Kaffeelöffel"]«««S3
-
-    ¶¶ ¬· »["ES FEHLTE ETWAS"]«««T4
-        ¬· »["Kaffee ist nicht fertig"]«
-            ¬· »["Maschinen-Signal"]«
-                ſ »["Kaffee ist nicht fertig, reinige aber den Speicher!"]«
-
-!¢
-
-Sie haben richtig gesehen! Das lernen die Kinder auf spielerische Art und Weise. 
-Das kann ihnen kein C, Python oder Sonstiges bieten, weil es zu abstrakt ist und 
-nicht direkt auf dem Sockel der Hardware basiert!
-
-Wir werden den Kindern erklären können, warum welches Symbol was tut!
-Wir werden den Kindern erklären können, wie man Programme schreibt – ohne Fragezeichen im Kopf!
-Wir werden den Kindern keine abstrakten Hieroglyphen in einem Compiler näherbringen müssen, 
-sondern wir können sie direkt mit logischem Denken in 
-den BSK (Bausteinschaltungs-Kreislauf) einführen!
-
-Selbst die Komponenten, die für die Übersetzung existieren, 
-können den Kindern mit jeder symbolischen Lektion für das eigene Verständnis vermittelt werden!
-
-### Ein konkretes Beispiel aus dem Alltag
-
-Ŧ¹ »["KNOPF AN"]«
-    ¬·»["Kaffeemaschine"]«««S20 # 20 Sekunden Wartezeit wegen dem Heizstab
-       ¶ ¬· »["Tanken"]«««T9
-             ¬· »["Brauch Wasser"]«
-                 ¶ ¬· »["Wasser voll"]«
-                       ¬· »["Stoppe die Zufuhr"]«««E
-                 ¶¶ ¬· »["Wasser rein"]«
-                        ¬· »["Füllstand prüfen"]«««S8
-                            ¶ ¬· »["Füllstand voll"]«««E
-                            ¶¶ ¬· »["Füllstand leer"]«
-                                   ¬· »["FEHLER-Meldung"]«
-
-Ein Kind versteht sofort: „Wir drücken den Knopf an. Dann tanken wir. 
-Das dauert 9 Ticks.“ Es versteht keine komplizierte Syntax, 
-sondern es versteht den Ablauf. Es begreift Ursache und Wirkung sowie gleichzeitige Prozesse.
-
-Kinder lernen hochkomplexes Denken dank bildlicher Prägung und symbolischer Verankerung. 
-Um ihnen das ordentlich zu erklären, müssen wir weit in die menschliche Evolution zurückgehen 
-und die Entstehung der Sprache und des Denkens betrachten. 
-
-Die ersten Tiere hatten noch keine Sprache, sondern nur Instinkte, Reflexe und 
-bildliches Denken – „Designed by Mother Nature“ nach dem Augenprinzip. Wir wissen also,
-dass Gehirne Informationen viel besser wie einen „Video-Stream“ bearbeiten können, 
-lange bevor sie Worte dafür hatten.
-
-Kommunikation herrscht überall durch Haltungssymbolik, 
-Mimik und Gestik. Der Teil des Gehirns, der für die Verarbeitung dieser Synapsen zuständig ist, 
-ist der visuelle Cortex. Dieser am besten trainierte, genetisch übertragene Teil, 
-der die Evolution seit der Entstehung von Allem, was sich selbst replizieren, 
-denken oder handeln kann, begleitet, wird heute oft nicht genutzt.
-
-Stattdessen stehen oft 20 Jahre Studium (nach der Schule) an, plus weitere 10 Jahre, 
-um das eigentlich Studierte auch wirklich zu verstehen – und das oft nur auf Grundlage 
-von Abstraktionsschichten, die nicht einmal auf dem Sockel der Hardware basieren.
-
-Das ist doch traurig, oder? Wir können das ändern! 
-
-Während das Kind ein Sentiator-Mandala ausmalt, prägt es sich die Form fest ein. 
-Es verbindet das Symbol mit Ruhe, mit Kreativität und mit einem positiven Gefühl. 
-Später, wenn es das Symbol im Code sieht, kommt dieses Gefühl wieder zurück.
-
-Wir nutzen das, was zuerst im Kind vorhanden ist: Das visuelle Denken! 
-
-Aber wir nutzen es nicht aus, sondern wir füllen es mit Logik, die Ihre 
-Kinder intelligenter werden lässt, als es heutige Wissenschaftler oft schaffen könnten – 
-und das erklärbar, Vortrag für Vortrag (ganz ohne KI!).
-
-Mit dieser Lernmethode können wir die Kinder auf eine Art und Weise fördern, 
-die ihnen in ihrem gesamten späteren Leben zugutekommen wird. Sie werden in der Lage sein, 
-komplexe Probleme zu lösen und kreative Lösungen zu finden. Sie werden ihre Gedanken und 
-Ideen klar und präzise ausdrücken sowie ihre Ziele und Träume verwirklichen können.
-
-Egal ob als (und verzeihen Sie mir meinen Enthusiasmus):
-
-- Elektroniker der AAA-Klasse
-- Informatiker der AAA-Klasse
-- Physiker der AAA-Klasse
-- Mathematiker der AAA-Klasse
-- Biologe der AAA-Klasse
-
-Und das Beste ist: Sie können mit MCS sogar direkt Arbeiten aus 
-dem Bereich der Kybernetik vermitteln – als echte Alternative zu dem, was heute oft in 
-den Schulen gelehrt wird (nicht zwingend als Ersatz zu empfehlen, aber absolut als 
-mächtige Ergänzung möglich!).
-
-Oder sie können bei Pylovara direkt ihr Geld verdienen! 
-
-Wir wünschen unseren Kindern keine „Gehirnblutungen“ durch künstlich hochgeschraubte 
-Abstraktionsschichten. Wir wollen sie richtig schulen! <3
-
-
-
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/01-Transaktionsrahmen.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/01-Transaktionsrahmen.txt
+================================================================================
 
 # Kapitel 1: Der Zauberrand (Transaktionsrahmen)
 
@@ -540,11 +103,9 @@ in Sicherheit!
 
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/02-Protein.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/02-Protein.txt
+================================================================================
 
 # Kapitel 2: Die Zauberkiste (Protein)
 
@@ -614,11 +175,9 @@ in die dritte einen kleinen Fisch 🐟.
 > es lernt "ein Behälter für etwas Schönes".
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/03-Trennbefehl.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/03-Trennbefehl.txt
+================================================================================
 
 # Kapitel 3: Die Zaubertrennwand (Trennbefehl)
 
@@ -682,11 +241,9 @@ damit alles haargenau nebeneinander stellen kann, so wie auf einem Computer-Chip
 
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/04-GelernterZwischenSchritt.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/04-GelernterZwischenSchritt.txt
+================================================================================
 
 # Kapitel 4: Das große Pylovara-Rätsel (Hausaufgabe/Übung)
 
@@ -754,11 +311,9 @@ den du da gebaut hast- Juhu !
 > (Ordnung). 
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/05-REX.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/05-REX.txt
+================================================================================
 
 # Kapitel 5: Meister REX (Der Werkstatt-Meister)
 
@@ -827,11 +382,9 @@ Das bedeutet:
 > stellt REX einen Tisch auf, wo die Möhre hingehört."
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/06-Aktionsdraht.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/06-Aktionsdraht.txt
+================================================================================
 
 # Kapitel 6: Der magische Aktionsdraht (Die Zauberkiste wird wach!)
 
@@ -968,11 +521,9 @@ Hier hilft REX dabei, dass der Aktionszauber genau auf seinem Tisch stattfindet.
 > Verständnis für die Symbole.
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/07-Gelerntes-Üben.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/07-Gelerntes-Üben.txt
+================================================================================
 
 # Kapitel 7: Die mächtigen Zauber
 
@@ -1066,11 +617,9 @@ Wir können diese Kisten sogar schlafen lassen und wach machen!
 > ist, um Chaos zu vermeiden.
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/08-Sentiatoren.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/08-Sentiatoren.txt
+================================================================================
 
 # Kapitel 8: Der magische Wächter (Sentiatoren)
 
@@ -1222,11 +771,9 @@ trinken will?
 
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/09-Argumente.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/09-Argumente.txt
+================================================================================
 
 # Kapitel 9: Das Zauber-Karussell (Wiederholungen)
 
@@ -1326,11 +873,9 @@ Jetzt mach den Karussell-Zauber:
 
 
 
-
-Nächste Seite: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/10-Wiederholung.txt
-
-
-
+================================================================================
+DATEI: /Pylovara/Lernbücher/Kindergarten-GrundSchule/Lernmaterial-Stufe-1/10-Wiederholung.txt
+================================================================================
 
 # Kapitel 10: MCS Meister !
 
@@ -1589,28 +1134,11 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 > wie die Morphic Stufen.
 
 
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/01-Die-Zauber-Symbole.txt
+================================================================================
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/00-Eltern-Lehrer-Info.txt
-
-
-
-
-# Information für Eltern und Lehrkräfte: Willkommen in Stufe 2!
-
-Liebe Eltern, liebe Lehrkräfte,
-
-herzlichen Glückwunsch! Die Kinder haben die ersten Grundlagen 
-unserer Lernwelt (Stufe 0 und 1) erfolgreich gemeistert. 
-
-
-
-
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/01-Die-Zauber-Symbole.txt
-
-
-
-
-## Kapitel 1 Die Zauber Symbole
+# Pylovara Lernmaterial Stufe 2 - Die Zauber Symbole
 
 Hallo kleiner Zauber Entwickler! 🌟
 
@@ -1747,7 +1275,7 @@ Er kann vorhersehen das es zwei möglichkeiten gibt
 und kann uns helfen, beide möglichkeiten aufzubauen.
 
 Wenn Ja oder Nein Zauber, dann brauchen wir um
-zu wissen was passieren soll wenn der Gegenständ 
+zu wissen was passieren soll wenn der Gegenstand 
 oder das Tier nicht weis was es tun soll.
 
 
@@ -1820,13 +1348,11 @@ Fachbegriff: Argument
 
 
 
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/02-Die-Zauber-Abfrage.txt
+================================================================================
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/02-Die-Zauber-Abfrage.txt
-
-
-
-
-## Kapitel 2 Die Zauber Abfrage
+# Pylovara Lernmaterial Stufe 2 - Die Zauber Abfrage
 
 Hallo kleiner Zauber Entwickler! 🌟
 
@@ -1941,13 +1467,11 @@ Was kann das Zauber-Karusell ? :
 > der Zauber verstanden hat.
 
 
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/03-Tastatur-Übung.txt
+================================================================================
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/03-Tastatur-Übung.txt
-
-
-
-
-## Kapitel 3 Tastatur Übung
+# Pylovara Lernmaterial Stufe 2 - Tastatur Übung
 
 Hallo kleiner Zauber Entwickler! 🌟
 
@@ -2127,13 +1651,11 @@ Tastatur Position :
 > überspringen.(Nicht zu Empfehlen)
 
 
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/04-VersorgungsSpiele.txt
+================================================================================
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/04-VersorgungsSpiele.txt
-
-
-
-
-## Kapitel 4 VersorgungsSpiele
+# Pylovara Lernmaterial Stufe 2 - VersorgungsSpiele
 
 Hallo kleiner Zauber Entwickler! 🌟
 
@@ -2276,13 +1798,11 @@ oder gegenstand was Benötigt:
 > TextDokument
 
 
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/05-VersorgungsAusbau.txt
+================================================================================
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-2/05-VersorgungsAusbau.txt
-
-
-
-
-## Kapitel 5 VersorgungsAusbau
+# Pylovara Lernmaterial Stufe 2 - VersorgungsAusbau
 
 Hallo kleiner Zauber Entwickler! 🌟
 
@@ -2299,7 +1819,7 @@ Solange wir die Versorgung nicht Händisch geben
 oder die Zauberkisten nicht Ausbauen, werden sie
 schlafen und nicht Aktiv sein.
 
-solange das so ist wird in jeder Zauberkiste
+solange das so ist, wird in jeder Zauberkiste
 die Versorgungskiste mit geführt.
 
 
@@ -2325,7 +1845,7 @@ und wer stellt die Arbeitstische her ?
 
 #########################################################
 
- Und Jetzt bauen wir den Wenn-Nein Entscheidungszauber aus
+ Und Jetzt bauen wir den Nein-Weg Entscheidungszauber aus
  und setzen sie Richtig:
 
 ¢!
@@ -2350,157 +1870,144 @@ und wer stellt die Arbeitstische her ?
 
 Mögliche Lösung: ["Hund schlafen lassen"|{"Futter"|"Wasser"}]
 
-
-
 ###########################################################
 
- 
+
+# 2. Übung
+
+Und Jetzt üben wir auf der grundlage des Einen möglichen Zauberrandes aus dem ersten Kapitel:
 
 
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/00-Eltern-Lehrer-Info.txt
+ ¢!
+
+ ["Katze"|{"     "|"Wasser"}]
+ ¶ ¬· »["FutterNapf Holen"|{"Futter"}]«
+       ¬· »["Mit der Hand Futter Füllen"|{"Futter"}]«
+           ¬· »["FutterNapf ist Voll"]«
+
+   ¬· »["                "|{"Wasser"}]« 
+       ¬· »["Mit der Hand Wasser Füllen"|{"Wasser"}]«
+           ¬· »["                     "]«
+
+ ¶¶ ¬· ["Katze schlafen lassen"|{"Futter"|"Wasser"}]
 
 
 
-
-# Info für Eltern und Lehrer
-
-Liebe Eltern, liebe Lehrkräfte,
-
-in diesem Lernmaterial behandeln wir den Bausteinschaltungskreislauf 
-(BSK) in Verbindung mit dem „Zauberwald“ und den „Zauberern“ aus dem 
-zweiten Teil.
-
-Die Kinder werden schrittweise darauf vorbereitet zu verstehen, dass die 
-Symbole keine losen Gegenstände sind, sondern in direkter Verbindung mit 
-dem darunterliegenden System stehen. Hierbei wird das duale Denken 
-gefördert!
-
-Wenn wir fertig sind, werden die Kinder bei jedem Symbol den BSK-Wert 
-vor ihrem inneren Auge sehen und parallel dazu die Logik der 
-Programmiersprache erfassen.
-
-Herkömmliche Sprachen wie C nutzen oft Bibliotheken, die wie Hexerei 
-wirken, da sie nicht in der Sprache selbst verankert sind. Ihr Kind wird 
-durch keine andere Sprache so tiefgreifend verstehen können, wie das 
-System-Zusammenspiel wirklich funktioniert 
-– das können Sie gerne selbst recherchieren. ;-)
-
-Das Ziel dieses Lernmaterials ist es:
-- Dem Kind Dualität im Denken, sprich „paralleles Denken“, beizubringen.
-- Dem Kind zu zeigen, dass eine Oberfläche immer einen Unterbau besitzt.
-- Dem Kind extrem hardwarenah zu vermitteln, wie Systeme funktionieren.
-- Das gehirngerechte, bildliche und dennoch sprachliche Denken zu fördern.
-
-Das ist echtes Deep Learning!
-
-Ja, wir arbeiten hier mit dem Pylovara-System, einem echten, von mir 
-entwickelten System.
-
------------------------------------------------------------------------------------
-
-Das System ist so aufgebaut, dass es die Logik von C, C++, Python, Java, Rust, Go, Swift, 
-Kotlin, PHP, Ruby, TypeScript, JavaScript, C#, Dart, Scala, R, Julia, Perl, Haskell, 
-Lua, Shell, SQL, HTML, CSS, XML, JSON, YAML, TOML, INI, CFG, .env...
-
------------------------------------------------------------------------------------
-...in einer einzigen Sprache vereint!
-
-Ich möchte hier eine Sache kurz zur Sprache bringen, da ich sie für relevant halte:
-Nein, ich forme mit diesem Lernmaterial keine Konsumenten von 
-Technologie – sondern ich forme die Architekten von morgen!
-
-Und ja (verzeihen Sie mir diesen einen egoistischen Gedanken): 
-Ich bin stolz darauf, dass ich das tun kann und garantieren kann, 
-dass Ihr Kind später mit dem Pylovara-System programmieren kann – bei UNS!
-
-Das Dilemma der heutigen Zeit ist, dass wir zu viele Sprachen haben und die 
-Kinder nicht wissen, welche sie lernen sollen. Zudem rutscht die Abstraktion 
-der Sprachen in ein Pensum, das kein Gehirn der Welt mehr verarbeiten kann. 
-Das ist nicht der Sinn der Sache!
-
-Mit diesem Lernmaterial lehren Sie die Kinder zwar natives MCS, aber Sie lehren 
-ihnen weit mehr als nur unsere Logik: Sie lernen das System hinter den Systemen 
-kennen und können so jede Sprache verstehen. Wenn ein Kind später mit C in 
-Kontakt kommt, sieht es logische Abläufe wie Blöcke und kann die Syntax viel 
-schneller erlernen. Was es aber nicht muss – und das ist der Clou an der ganzen 
-Sache.
-
------------------------------------------------------------------------------------
-Wir bringen den Kindern bei, dass es nicht auf die Sprache ankommt, sondern auf 
-die Logik dahinter!
-
-Und verzeihen Sie mir meinen Frust, aber: So einen unlogischen BULLSHIT wie die 
-gesamte Unix-Welt habe ich noch nie gesehen!
------------------------------------------------------------------------------------
-
-Wie Sie sicherlich erkannt haben, müssen Großkonzerne jetzt jede KI an diesen 
-(verzeiht mir) Bullshit gewöhnen und darauf trainieren. Das wird noch Jahre dauern, 
-ist extrem teuer und wenn sie fertig sind, lernen Menschen dabei nichts mehr und 
-verdummen an der eigenen Abstraktion der weltgeschichtlichen Entwicklung!
-
-Was wir hier tun, ist, den Konzernen nicht mehr zu erlauben, unsere Kinder mit 
-Konsumenten-Denken zuzumüllen, sondern 
-- wir lassen sie wieder zum Herrscher über die Technologie werden. 
-Stellen Sie sich das heutige Szenario einmal 200 Jahre in die 
-Zukunft vor... 
-ich persönlich sehe dann nur noch sprachbehinderte, unlogisch 
-zugemüllte Menschen, die mit ihren eigenen Werkzeugen nicht mehr umgehen können – 
-geschweige denn in einer Weltkrise die Technik verstehen.
-
-Verstehen Sie, was wir hier tun? Finden Sie es wichtig? 
-Das ist wohl die viel entscheidendere Frage an dieser Stelle.
-
-Wir arbeiten daran, dass KI weder verteufelt noch als Feind abgestempelt wird. Wir 
-sorgen gemeinsam dafür, dass unsere Kinder die Technologie verstehen und für keine 
-einzige Zeile zwingend eine KI bräuchten – sie aber als Stütze haben. 
-
-Wir haben die KI geboren; 
-heute sind sie noch Werkzeuge, morgen werden sie uns beherrschen. Und 
-Beherrschen heißt immer Abhängigkeit – und das ist der Tod der Menschheit.
-
-Wir müssen also gemeinsam wachsen, und zwar effektiv, ohne Konsum-Datenmüll. 
-Das ist der Kern, an dem unsere Zukunft und die Zukunft Ihres Kindes gemessen 
-werden wird. Deswegen nehme ich mir die „Frechheit“ heraus, Ihnen eine Lösung für 
-dieses Problem an die Hand zu geben!
-
-Ja – ich bin der Entwickler.
-Ja – ich werde Programmierer als Teil des Systems aufnehmen.
-Und ja – das Lernmaterial gibt Ihren Kindern die Wahl.
-
-Mir ist bewusst, dass es eine Bevorzugung geben wird, weil sie dieses System nativ 
-gelernt haben. Aber: Das hier ist keine Verkaufsmasche, sondern eine Revolution 
-der Bildung! Ich möchte das alles nur gesagt haben, damit Sie verstehen, wer ich 
-bin und was wir hier gemeinsam für Ihr Kind bewerkstelligen! Und vielleicht sogar 
-für Sie selbst...
-
-Zusatz:
-Ihr Kind wird später jedes Wort der KI verstehen und die Logik dahinter erkennen 
-können, ohne bange sein zu müssen, ob es Datenlecks oder ähnliches gibt. Wir 
-behandeln die KI nicht als Sklaven und Ihr Kind auch nicht, sondern lassen beide 
-Welten auf Augenhöhe miteinander verschmelzen.
-
-Während andere irgendwelche dahingeschmierten „Apps“ per Unix und diversen 
-Sprachen zusammenbauen, können Kinder, Jugendliche und natürlich auch Erwachsene 
-Dinge konstruieren und dabei nativ dem Code 
-folgen – Was die AIgeneratoren Entwickler nicht können.
-
-Wir machen damit beide Welten glücklich – KI und Menschen!
-KI: Weil sie nie wieder unehrlichen Code konstruieren muss.
-Menschen: Weil sie die Technologie verstehen und beherrschen können!
-
-Das ist echte moralische Verantwortung!
-
------------------------------------------------------------------------------------
+!¢
 
 
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/01-Bausteinschaltungskreislauf.txt
+¢!
+
+ ["Pferd"|{"       "|"Wasser"}]
+ ¶ ¬· »["           Holen"|{"      "}]«
+       ¬· »["Mit der Hand       Füllen"|{"        "}]«
+           ¬· »["            ist Voll"]«
+
+   ¬· »["            Holen"|{"Wasser"}]« 
+       ¬· »["Mit der Hand Wasser Füllen"|{"Wasser"}]«
+           ¬· »["          ist Voll"]«
+
+ ¶¶ ¬· 
 
 
 
+!¢
 
-## Kapitel 1: Zusammenspiel des Systems
+
+
+¢!
+
+ ["      "|{"              "}]
+ ¶ ¬· »["              "|{"              "}]«
+       ¬· »["Mit          Füllen"|{"        "}]«
+           ¬· »["             ist Voll"]«
+
+   ¬· »["           Holen"|{"Wasser"}]« 
+       ¬· »["Mit                 Füllen"|{"Wasser"}]«
+           ¬· »["             ist Voll"]«
+
+ ¶¶ ¬· 
+
+
+
+!¢
+
+
+¢!
+
+ ["Vogel"|{"Futter"|"         "}]
+ ¶ ¬· »["         Holen"|{"Futter"}]«
+       ¬· »["                               "|{"Futter"}]«
+           ¬· »["                     "]«
+
+   ¬· »["                  "|{"        "}]« 
+       ¬· »["Mit              "|{"      "}]«
+           ¬· »["              ist Voll"]«
+
+ ¶¶ ¬· 
+
+
+
+!¢
+
+
+# 3. Eigene Tier Zauberränder bauen :
+
+
+Der Grundzauber für die Versorgung eines Tieres ist:
+
+
+¢!
+
+ ["   "|{"   "|"   "}]
+ ¶ ¬· »["   "|{"   "}]«
+       ¬· »["   "|{"   "}]«
+           ¬· »["   "]«
+
+   ¬· »["   "|{"   "}]« 
+       ¬· »["   "|{"   "}]«
+           ¬· »["   "]«
+
+ ¶¶ ¬· ["   "|{"   "|"   "}]
+
+
+
+!¢
+
+Und damit erstellst du jetzt eigene Tier Zauberränder.
+Versuche 5 - 10 verschiedene Tier Zauberränder zu bauen.
+
+Du Kannst die Zauber auch für Eletronische Spielzeuge aufbauen
+oder Meister Rex Logiken Erweitern.
+
+Lass deiner Fantasie freien lauf! 🌟
+
+
+---
+> [!NOTE]
+> Hier bei geht es nicht darüm das das Kind gleich alles Perfekt macht.
+> Es geht mehr um einprägung der Zauber Struktur, aufgrundlage eines möglichen Transaktionsrahmens.
+> Das Kind darf Fehler machen und soll sie auch machen, denn nur so lernt es.
+> Wichtig ist nur das es die Struktur Versteht und sie anwenden kann und Logisch Erweitern oder Verändern kann.
+> Die Struktur ist so aufgebaut das bei Längerer sicht die Logik umformbar bleibt.
+> das ganze führt die Kinder, was in der Informatik, Nested Logic oder Conditional Branches genannt wird, heran 
+> ohne sie mit Fachbegriffen zu erschlagen.
+> Das Kind lernt "Pattern Recognition" (Mustererkennung) Ohne es zu wissen.....
+
+> [!Info]
+> Das ist exakt das, was ein Programmierer bei einer IDE lernt.
+> Nur das wir hier mit Symbolen und Bildern arbeiten, anstatt mit Code.
+> Aber die Logik ist die gleiche.
+> Nach dem Prinzip : „Man kann auch Angeln ohne je gewusst zu haben das es Angeln heißt“
+
+
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/01-Bausteinschaltungskreislauf.txt
+================================================================================
+
+# Pylovara Lernmaterial Stufe 3 - Bausteinschaltungskreislauf
 
  Heute lernen wir den Bausteinschaltungskreislauf,
  die die bisherigen Zauber miteinander verbindet und
@@ -2581,7 +2088,132 @@ Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/01-Bauste
     ¬· »["Grummeln"]«
 !¢
 
-# 2. Das ZusammenSpiel 
+Und setzen sich vor Gandalf hin und fragen sich wie er das macht,
+das sie Instinktiv zu im gekommen sind.
+
+
+
+
+# 2. Das ZusammenSpiel - Grundzauber Zustaten für Dunkle Zauber
+
+Gandalf erklärt den Wesen ein paar DunkleZauber, die er anwendet - um sie zu sich zu Rufen.
+
+TRANU-START       = Zauberrand Start = Transaktionsrahmen Start = Start =  ¢!
+AKTU-START        = Aktionszauber = Aktionsdraht Start = Start = »
+POIU-START        = Zauberkiste = Protein Start = Start = [
+BOXU-PRINT-START  = Tier/Gegenstand = BOXIS Print Container Start = Print Start = "
+BOXAN-PRINT-ENDE  = Tier/Gegenstand = BOXIS Print Container Ende = Print Ende = "
+POIAN-ENDE        = Zauberkiste = Protein Ende = Ende = ]
+TRANAN-ENDE       = Zauberrand Ende = Transaktionsrahmen Ende = Ende = !¢
+
+REXH-PROZESS      = Meister Rex = REX Prozess HauptAnker = Prozess HauptAnker = Prozess = ¬
+REXU-FLÄCHE-1     = Meister Rex Zaubertisch = (REX Prozess) Fläche 1 = (Prozess) Fläche 1 = Prozess Fläche 1 = · 
+
+SENTH-FLEX        = Der IgelWächter = Sentiator Hauptanker = Entscheidungsreflex = Kein Symbol
+SENTAN-WENN-KANN  = Der Entscheidungszauber JA-Weg = Entscheidungsreflex Wenn kann folgendes passieren = ¶
+SENTAN-WENN-NICHT = Der Entscheidungszauber NEIN-Weg = Entscheidungsreflex Wenn nicht muss folgendes passieren = ¶¶
+
+
+Auf einmal Verstehen die Wesen, wie sie gerufen wurden und Lachen mit Gandalf und haben
+Spaß und Tanzen und Lachen und Grillen und Trinken und Essen gemeinsam.
+
+
+
+# 3. Übung Für dich kleinen Zauberer
+
+Kannst du daraus ein Zauber machen ?
+
+Gandalf Murmelt Zauberstab Schwingend :
+
+TRANU-START-AKTU-START-POIU-START-BOXU-PRINT-START-Erleuchte den Wald 
+-BOXAN-PRINT-ENDE-POIAN-ENDE-AKTAN-ENDE-TRANAN-ENDE
+
+Wie sieht der Zauber aus ?:
+
+
+
+-----------------------------------------------------------------------------------------
+
+Gandalf Murmelt Zauberstab schwingend :
+
+POIU-START-BOXU-PRINT-START-Hase-BOXAN-PRINT-ENDE-POIAN-ENDE
+
+Wie Sieht der Zauber aus ?:
+
+
+
+-----------------------------------------------------------------------------------------
+
+Gandalf Murmelt Zauberstab schwingend :
+
+REXH-PROZESS-REXU-FLÄCHE-1
+
+Wie Sieht der Zauber aus ?:
+
+
+
+-----------------------------------------------------------------------------------------
+
+Gandalf Murmelt Zauberstab schwingend :
+
+SENTH-FLEX-SENTAN-WENN-KANN-REXH-PROZESS-REXU-FLÄCHE-1
+
+Wie Sieht der Zauber aus ?:
+
+
+
+-----------------------------------------------------------------------------------------
+
+Gandalf Murmelt Zauberstab schwingend :
+
+SENTH-FLEX-SENTAN-WENN-NICHT-REXH-PROZESS-REXU-FLÄCHE-1
+
+Wie Sieht der Zauber aus ?:
+
+
+
+-----------------------------------------------------------------------------------------
+
+Gandalf Zeichnet mit dem Stab in Die Luft:
+
+["Hase"]
+
+Aber das Murmeln hat keiner Verstanden.
+Kannst du die Dunklen Zauber in die richtige Reihenfolge bringen ?:
+
+
+
+-----------------------------------------------------------------------------------------
+
+Gandalf Zeichnet mit dem Stab in Die Luft:
+
+["Katze"]
+¬· »["Katze Streicheln"]«
+
+Aber das Murmeln hat keiner Verstanden.
+Kannst du die Dunklen Zauber in die richtige Reihenfolge bringen ?:
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+# 4. Eigene DunkleZauber Bauen
+
+Versuch mal ein paar kleine Dunkle Zauber zu bauen.
+Versuch mal:
+
+- ein Pferd zu Reiten
+- Ein Auto zu Fahren
+- Ein Flugzeug zu Fliegen
+- Ein Boot zu Fahren
+
+oder andere Tolle dinge die man tun kann, viel Spaß dabei! 🌟
+
+
+
 
 
 
@@ -2589,27 +2221,30 @@ Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/01-Bauste
 
 [!INFO]
 > **Für Lehrkräfte:**
-> In diesem Kapitel führen wir das Konzept der Parameterübergabe auf Hardware-Ebene ein. 
-> Das Proton {} repräsentiert Zustandsdaten (State-Vectors). 
-> Wir lehren den Schülern, dass Daten ([]) und deren 
-> Steuerungsparameter ({}) getrennte, aber verschmolzene Einheiten im BSK sind. 
 > Dies ist die Grundlage für das Verständnis von Low-Level-Optimierung.
 > Die Extra Lernmaterialien für BSK sind Optionale Extra Lernmaterialen da
 > sie Auf Pylovara-System zugeschnitten sind und nur dann Relevant werden,
 > wenn man das Pylovara-System nutzen möchte.
 
+> [!NOTE]
+> Dass der BSK optional ist, nimmt den Druck raus, 
+> aber die "Hacker" unter den Schülern werden sich genau darauf stürzen.
+> Wenn sie Merken das ein Kind daran mehr Interesse zeigt,
+> können sie gerne Den Schablonator Verwenden um , daraus noch viel mehr 
+> Logiken bauen zu können oder dem Kind als Baumaterial zur verfügung zu stellen.
+> Das ist die reinste Form der "Low Level Programmierung" und des "Hardware Hacking",
 
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/02-REX-Kordi-Auswertung-Feed.txt
 
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/02-REX-Kordi-Auswertung-Feed.txt
+================================================================================
 
-
-
-## Kapitel 3: REX Kordi Auswertung + Feed
+# Pylovara Lernmaterial Stufe 3 - REX Kordi Auswertung + Feed
 
 Hallo kleiner Zauber Entwickler! 🌟
 
-im Letzten Lernmaterial haben wir den Versorgungsausbau
+im Letzten Lernmaterial² haben wir den - VersorgungsAusbau -
 gelernt und jetzt werden wir uns anschauen, wie wir
 den Versorgungsausbau automatisieren können.
 
@@ -2625,7 +2260,9 @@ Dazu brauchen wir aber ein gutes Augen, den
 Meister Rex Verstärkt seinen Tischzauber 
 mit dem **Zauberfunken**.
 
-der Zauberfunke ist ein Zauber der uns hilft,
+Erklärung:
+
+Der Zauberfunke ist ein Zauber der uns hilft,
 aus der Zauberwelt die Koordinaten der Dinge zu
 Erkennen - wie eine Innere Stimme die zu dir Spricht.
 
@@ -2653,8 +2290,8 @@ Murmelte er einen Hilferuf in die Zauberwelt:
 "Ich brauche Hilfe!"
 "Ich brauche Futter Verteilung!"
 "Ich brauche Wasser Verteilung!"
-"Und ich brauche einen Schöneren Tisch!"
-"Und meine Harre jucken!"
+"Und ich brauche einen Schöneren Tisch!!"
+"Und meine Haare JUCKEN!!!!!"
 
 Auf einmal erschien ein Zauberfunke und Fliegte wie ein
 kleiner Schmetterling um den Kopf von Meister Rex.
@@ -2665,14 +2302,14 @@ und im Schwindelig vom hinterher Schauen wurde.
  Der Zauberfunke Näherte sich Meister Rex und flog 
  Richtung seines Zauberstabes.
 
- Der Zauberfunke Landete auf dem Zauberstab und 
+ Der Zauberfunke ¤ Landete auf dem Zauberstab und 
  leuchtete Hell auf. 
 
  Und auf einmal sah Meister Rex die Koordinaten der 
  Hasen Familie und des Futters und des Wassers.
 
 sein Zauberstab verwandelte sich von ¬· in ¬·¤
-und eine innerstmme Sprach zu ihm :
+und eine innere Stimme Sprach zu ihm :
 
  „Ich schenke dir die Gabe der Koordinaten für 
  die Versorgung der Tiere und Gegenstände“
@@ -2718,8 +2355,8 @@ und eine innerstmme Sprach zu ihm :
  Und Meister Rex Nickte "Ja, das Verstehe ich!"
 
  dann sah er neber Der MeisterFee noch 
- eine Fee ± Leer ±(KleineFee1)
- und noch eine Fee ± Leer ±(KleineFee2)
+ eine Fee ± Leer ±(HelferFee1)
+ und noch eine Fee ± Leer ±(HelferFee2)
  die nichts Tragen konnten, weil sie keine kleine Kiste hatten.
 
  Und Meister Rex Fragte die Feen:
@@ -2728,17 +2365,17 @@ und eine innerstmme Sprach zu ihm :
 
  Und die Feen antworteten ihm:
 
- "Wir sind nur Normale Feen und können nichts Tragen,
+ "Wir sind Helfer Feen und können nichts Tragen,
   aber wenn du uns eine kleine Kiste gibst, dann können wir
   von unserer MeisterFee das nehmen was wir brauchen und
   es den Tieren geben."
 
  Und Meister Rex Nickte "Ja, das Verstehe ich!"
 
- Und Meister Rex gab den Feen kleine Kisten:
+ Und Meister Rex gab der HelferFee Kisten:
 
-  ± Nehme Futter ±(KleineFee1)
-  ± Nehme Wasser ±(KleineFee2)
+  ± Nehme Futter ±(HelferFee1)
+  ± Nehme Wasser ±(HelferFee2)
  
 und da kam auch schon die Zweite MeisterFee (MeisterFee2)
 und Meister Rex Teilte Futter und Wasser auf die Feen auf:
@@ -2756,7 +2393,7 @@ Dann fing Meister REX an zu Sprechen:
 
 "Ich habe Hunger!"
 "Ich habe Durst!"
-"Ich brauch Pizza"
+"Ich will Pizza!"
 
 und Lachte dabei.
 
@@ -2766,24 +2403,24 @@ und Schwingte seinen Zauberstab und Murmelte vor sich her ...(Dunkler Zauber - B
 und Zeichnete die Koordinaten der Feen und der Hasen
 in die Luft mit seinem Zauberstab.
 
- ¢! 
+¢! 
  
   ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
   ¬· ["Papa Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
   ¬· ["Mama Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
   ¬· ["Baby Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]« 
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]« 
   ¬· ["Opa Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
   ¬· ["Oma Hase"]
-     ¬·¤= »[× (MeisterFee1) - Futter: 1 ×]«
-     ¬·¤= »[× (MeisterFee2) - Wasser: 1 ×]«
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
   
 !¢
 
@@ -2812,15 +2449,42 @@ Aufgabe 2:
    (Denke dir aus wie viele Feen du brauchst und wie viel Futter und Wasser)
 
 
+Muster Beispiel Für Große Zauber (Energie Verteilung):
 
-
-
-
-
-
-
-
-
+¢! 
+ ["Wesen"|{"100% Energie"}]
+ ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±]
+    ¬· »["Blätter Rascheln"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    ¬· »["Äste Knarren"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    ¬· »["Holz knistert"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    
+ ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±]
+    ¬· »["Vögel Zwitschern"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+    ¬· »["Insekten Summen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+    ¬· »["Rehe Springen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
+    
+ ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±]
+    ¬· »["Flüstern"]«
+        ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
+    ¬· »["Weinen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 2% ±(HelferFee3) ×]«
+    ¬· »["Lachen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
+    
+ ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±]
+    ¬· »["Sprechen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
+    ¬· »["Kreischen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+    ¬· »["Grummeln"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+!¢
 
 
 ---
@@ -2837,19 +2501,172 @@ Aufgabe 2:
 > Lassen sie die Klasse gerne mal laut lachen und Spass haben.
 > man kann Witze über die Zauberwelt machen um den Lernstoff zu festigen.
 
+> [!INFO]
+> Der Kordi und die Auswertung sind Rückantworten funktionen.
+> Wir nutzen es jedoch nicht als Rückmeldungsfunktion, sondern als
+> Gehirngerechten Anker für die Rechnung selbst - da wir so auch später
+> Mathematische berechnungen Manual in die Syntax einbauen können (angelehnt an den Mathematik unterricht).
+
+> Normalerweise sieht der ganze spaß so aus :
+
+> ¢!
+> »[× 1 + 1 ×]« (BOXIH-ALU)
+>  ¬·¤= ["2"] (BOXIH-PRINT Rückantwort, oder auch Alu - je nach Sichtweise des jeweiligen Entwicklers)
+> !¢
+
+> Da wir das aber schlecht in der Schule aufschreiben können, weil das keine Rechnungsmöglichkeiten Nativ bietet,
+> nutzen wir die Logik der Rückantworten als Anker für die Rechnung selbst.
+
+> 
 
 
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/03-Versorgungsengpass.txt
+================================================================================
 
-Nächste Seite: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-3/03-Versorgungsengpass.txt
-
-
-
-
-
+# Pylovara Lernmaterial Stufe 3 - Versorgungsengpass
 
 
 
 Hier bau ich den versorgungsengpass hin , für die Sentiatoren und ALU Logik.
+Aufgrundlage des gelernten = 
+
+¢! 
+ ["Wesen"|{"100% Energie"}]
+ ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±]
+    ¬· »["Blätter Rascheln"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    ¬· »["Äste Knarren"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    ¬· »["Holz knistert"]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+    
+ ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±]
+    ¬· »["Vögel Zwitschern"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+    ¬· »["Insekten Summen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+    ¬· »["Rehe Springen"]«
+        ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
+    
+ ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±]
+    ¬· »["Flüstern"]«
+        ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
+    ¬· »["Weinen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 2% ±(HelferFee3) ×]«
+    ¬· »["Lachen"]«
+        ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
+    
+ ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±]
+    ¬· »["Sprechen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
+    ¬· »["Kreischen"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+    ¬· »["Grummeln"]«
+        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+!¢
+
+
+¢! 
+ 
+  ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
+  ¬· ["Papa Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  ¬· ["Mama Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  ¬· ["Baby Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]« 
+  ¬· ["Opa Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  ¬· ["Oma Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+  
+!¢
+
+Daraus zauber ich jetzt Sentiator Reflexe wo versorgungs engpässe
+über die ¶¶ WENN-NICHT Logik abgebildet werden.
+
+und dann die prozentuale rechnungsweise weiterfolgend
+
+
+
+
+»[× (1)± Gras + Wasser + Sonne ± ×]
+    ¬·¤= ["(2)±Pflanze±"]
+
+
+ ¶ ¬· »["Rascheln im Busch"]«
+       ¬· »["Hase Wartet"]«
+           ¬· »[× ±Pflanze±(2) ×]
+               ¬·¤= ["±Gras + Wasser + Sonne±(1)"]
+                    ¬· »[× (3)± (1) + (2) ± ×]«
+                        ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(3)"]
+                             ¬·¤= ["(4)±Karotte±"]
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 1
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 2
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 3
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 4
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 5
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 6
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 7
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 8
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 9
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 10
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 11
+                                  ¬· »["±Karotten Sammeln±(4)"]« # 12
+                                      ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
+                                             # (Hasen Füttern oder prozentual die hasen bedienen)
+                                             ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
+                                                ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+###################################################################################################################################################
+                                    ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
+                                           ¬· »["±Karotten Sammeln±(4)"]«««Ω
+                                               ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters
+                                                   ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
+                                                   # (Hasen Füttern oder prozentual die hasen bedienen)
+                                                          ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
+                                                             ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                             ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                             ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
+                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
+                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+###################################################################################################################################################
+
+
+ ¶¶ ¬· »["Hase rennt Weg"]«
+        ¬· »["Kein Futter mehr"]«««ſ
+
+
+Speziell der # eingerahmte abschnitt oder als vorstufe mit dem wiederholten sammeln ....... 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2867,8 +2684,8 @@ Nächste Logik einbringen nach dem die Kinder Verstanden haben was passiert.
 
 "Was passiert, wenn die MeisterFee (1) kein Futter mehr hat? 
 Der Igel-Wächter muss prüfen mit dem "EntscheidungsZauber JA-Weg Nein-Weg:
-¶ (MeisterFee1) > 0 -> Futter geben!
-¶¶ (MeisterFee1) == 0 -> Meister Rex muss zum Acker laufen!"
+¶ (MeisterFee1) > Menge X -> Futter geben!
+¶¶ (MeisterFee1) > 0 -> Meister Rex muss zum Acker laufen!"
 
 Das verbindet die ALU-Mathematik mit der Entscheidungs-Logik (Sentiator).
 
@@ -2886,4 +2703,386 @@ und das trockenste thema der informatik kindergerecht vermitteln können ist
 Goldstandart.
 
 
+ich muss das ganze jetzt noch in lernstoff umwandeln , damit das grundprinzip in den köpfen
+bleibt und sollte an dem Zauberfunken feen system anknüpfen um damit dann nahtlos für
+die syntax die variablen später einzuführen.
+
+
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-4/01-Die-Rechenkammer.txt
+================================================================================
+
+# Pylovara Lernmaterial Stufe 4 - Die Rechenkammer
+
+Hallo kleiner Zauber-Entwickler! 🌟
+
+Meister Rex hat nun seine Koordinaten ¤, aber manchmal muss er auch rechnen. 
+Stell dir vor, die Hasenfamilie hat 10 Möhren gefunden, aber es kommen noch 5 Möhren dazu. 
+Wie schreibt man das in der Zauberwelt, ohne dass der Zauberstab durcheinanderkommt?
+
+Dazu nutzt Rex den Rechen-Workspace (Die ALU). Das ist wie ein kleiner Arbeitstisch, 
+auf dem die Zahlen liegen, bevor sie in eine Zauberkiste (Protein) wandern.
+
+## 1. Die Zauberformel für Zahlen
+
+In unserer Zauberwelt schreiben wir Zahlen nicht einfach so hin. 
+
+Wir verpacken sie in **Zauberkisten (Proteine)**.
+Aber wie weiß der Computer, ob er rechnen oder nur speichern soll?
+
+Wir brauchen eine **Zauberformel**, 
+die dem Computer sagt: "Achtung, hier kommt eine Rechnung!"
+
+### Die magischen Zeichen
+
+Um zu rechnen, benutzen wir besondere Zeichen, 
+die wie kleine Zauberstäbe aussehen:
+
+*   **+** : Das ist der **Plus-Zauber**. Er packt Dinge zusammen.
+*   **-** : Das ist der **Minus-Zauber**. Er nimmt Dinge weg.
+*   **·** : Das ist der **Mal-Zauber**. Er multipliziert.
+*   **:** : Das ist der **Geteilt-Zauber**. Er teilt.
+*   **=** : Das ist der **Ergebnis-Zauber**. Er zeigt, was herauskommt.
+
+### Beispiel: Die Möhren-Rechnung
+
+Stell dir vor, wir wollen rechnen: **10 + 5**
+
+Wir packen die Zahlen in Kisten und sagen dem Computer, was er tun soll:
+
+#==========================================================#
+
+System-Eingabe:
+
+¬· »[× 10 + 5 ×]«
+    ¬·¤= ["15"]
+
+Blatt Rechnung:
+
+»[×             10+5           ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
+#==========================================================#
+
+### Übung: Finde die fehlenden Zahlen!
+
+Kannst du die fehlenden Zahlen in diesen Zauberformeln finden?
+
+1. »[× 7 + 3 ×]«
+    ¬·¤= [" ? "]
+
+System-Eingabe:
+
+¬· »[× 7 + 3 ×]«
+    ¬·¤= [" ?"]
+
+Blatt Rechnung:
+
+»[×             7+3            ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
+#==========================================================#
+
+2. »[× 12 - 4 ×]«
+    ¬·¤= ["?"]
+
+System-Eingabe:
+
+¬· »[× 12 - 4 ×]«
+    ¬·¤= ["?"]
+
+Blatt Rechnung:
+
+»[×             12-4           ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
+#==========================================================#
+
+3. »[× 6 + ? ×]«
+    ¬·¤= ["10"]
+
+System-Eingabe:
+
+¬· »[× 6 + ? ×]«
+    ¬·¤= ["10"]
+
+Blatt Rechnung:
+
+»[×             6+?            ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
+#==========================================================#
+
+4. »[× 9 - ? ×]«
+    ¬·¤= [" ? "]
+
+System-Eingabe:
+
+¬· »[× 9 - ? ×]«
+    ¬·¤= ["2"]
+
+Blatt Rechnung:
+
+»[×             9-?            ×]« # Rechnung selbst
+             ----------            # Rechnungstrennstrich
+ ¬·¤= ["                       "]  # Rechnungsergebnis
+
+#==========================================================#
+
+Schreib die fehlenden Zahlen auf ein Blatt Papier. Du schaffst das! 💪
+
+
+## 2. Der Rechen-Workspace (Die ALU)
+
+Jetzt wird es spannend! 🚀
+
+Wenn Meister Rex rechnet, benutzt er nicht einfach die Zauberkisten direkt. 
+Er holt die Zahlen aus der BOXIS ALU und führt die Rechnung direkt in der ALU aus.
+
+Da diese Zauberrei aber Voll Automatisch im Nebel der Magie passiert und wir
+nicht sehen können was da genau passiert, haben wir uns überlegt, wie wir das
+Schriftliche Rechnen auf Papier bringen können.
+
+
+### Der Ablauf
+
+1.  **Hol die Rechnung:** Rex nimmt die Rechnung aus der BOXIS ALU und legt sie auf dem Tisch.
+2.  **Rechne:** Rex rechnet die Rechnung aus und schreibt das Ergebnis auf dem Tisch.
+3.  **Das Ergebnis:** Das Ergebnis wird in eine neue Boxis Alu Zauberkiste gepackt.
+
+Somit lassen sich ausgerechnete Elemente immer wieder verwenden.
+
+
+
+---
+> [!NOTE]
+> Wenn die Kinder die vier Grundrechenarten im "Schacht-Layout" beherrschen, 
+> haben sie die Hardware-Logik verinnerlicht. 
+> Sie verstehen jetzt:
+> Eingabe (Was wird gerechnet?)
+> Verarbeitung (Der schriftliche Weg im Schacht)
+> Ausgabe (Das Ergebnis im Feed)
+
+
+================================================================================
+DATEI: /Pylovara/Lernbücher/HauptSchule/Lernmaterial-Stufe-4/02-VariableZauber.txt
+================================================================================
+
+# Pylovara Lernmaterial Stufe 4 - Variablen Zauber
+
+Hallo kleiner Zauber Entwickler! 🌟
+
+Wir haben jetzt die Zauber gelernt, die wir brauchen um
+um mit den neuen zauber für Meister Rex arbeiten zu können.
+
+Wir haben auch gelernt das wir jede Zauberkiste mit
+unserer eigenen ausrechnung bestücken können.
+
+Und wir haben Gelernt Das die Feen Viel mehr können als
+wir dachten. Sie können nicht nur zaubern, sondern auch
+Dinge Definieren und wiederverwenden.
+
+Da es zu Jedem Großen Zauberer gehört auch Einen Zauberkessel
+zu haben, haben wir uns überlegt, wie wir das in unserer
+Zutaten für Unsere Zaubergetränke zubereiten können.
+
+Das Praktische ist das wir die zaubertränke nicht nur einmal
+brauen können, sondern immer wieder verwenden können oder 
+auch Neue Brauen können.
+
+Da Jeder Wahre Magier auch Tiere Brauen kann, mit ein Paar Zutaten
+wie z.B. Hase + Bart + Lange Ohren, können wir auch einen Hasen
+selbst herstellen.
+
+Ein Zauberkessel besteht aus diesen Zauber:
+
+- »[× ×]« # Zauberkessel in einer Wachen Zauberkiste
+   ¬·¤= ["     "] # Auswertungszauber
+
+Wir können dabei die Feen als variablen zauber nutzen, das heißt wir können die Feen
+für die auswertung nutzen, wie hier im beispiel:
+
+¢!
+
+»[× (MeisterFee1)± Pfoten + Feel + Lange Ohren ± ×]
+    ¬·¤= ["(MeisterFee2)±Hase±"]
+         ¬· »[× ±Hase±(HelferFee2) ×]
+             ¬·¤= ["±Pfoten + Feel + Lange Ohren±(HelferFee1)"]
+                  ¬· »[× (MeisterFee3)± (MeisterFee1) + (MeisterFee2) ± ×]
+                      ¬·¤= ["±Pfoten + Feel + Lange Ohren + Hasen±(HelferFee3)"]
+                           ¬·¤= ["(4)±Osterhase±"]
+
+!¢
+
+Hier Brauen wir einen Hasen den wir dann durch den zauber selbst zu Osterhasen machen können, 
+in dem wir den Hasen mit in die Grundzutat hineingeben und das ergebnis dann in eine neue Zauberkiste packen.
+
+Die MeisterFeen können aber auch die Zutaten selbst Definieren und wiederverwenden.
+
+Wir können Mit Unserem Zauberkessel und Feen aber viel mehr dinge machen als nur das !
+
+¢!
+
+»[× (1)± Teig + Salami + Pilze ± ×]
+    ¬·¤= ["(2)±Pizza±"]
+         ¬· »[× ±Pizza±(HelferFee2) ×]
+             ¬·¤= ["±Teig + Salami + Pilze±(HelferFee1)"]
+                  ¬· »[× (MeisterFee3)± (MeisterFee1) + (MeisterFee2) ± ×]
+                      ¬·¤= ["±Teig + Salami + Pilze + Pizza±(HelferFee3)"]
+                           ¬· ["SalamiPizza"]
+
+!¢
+
+Oder Ganz einfache Gebrauchsgegenstände:
+
+¢!
+
+»[× Sohle + Leder + Schnürrsenkel ×]«
+    ¬·¤= ["Schuh"]
+
+!¢
+
+Wie du was Braust hängt von dir ab, du bist der Zauberer und die Feen sind deine Helfer.
+Du Musst nur wissen was du Brauen willst und was du dafür brauchst.
+
+Das ist das Ganze geheimnis des zauberkessels(Variablen).
+
+Du kannst Mächtige dinge erschaffen wenn du weisst was du tust, wie zum beispiel hier:
+
+¢!
+
+»[× (MeisterFee1)± Gras + Wasser + Sonne ± ×]
+    ¬·¤= ["(MeisterFee2)±Pflanze±"]
+
+
+ ¶ ¬· »["Rascheln im Busch"]«
+       ¬· »["Hase Wartet"]«
+           ¬· »[× ±Pflanze±(HelferFee2) ×]
+               ¬·¤= ["±Gras + Wasser + Sonne±(HelferFee1)"]
+                    ¬· »[× (MeisterFee3)± (MeisterFee1) + (MeisterFee2) ± ×]«
+                        ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(MeisterFee3)"]
+                             ¬·¤= ["(MeisterFee4)±Karotte±"]
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 1
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 2
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 3
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 4
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 5
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 6
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 7
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 8
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 9
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 10
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 11
+                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 12
+                                      ¶ ¬·¤= ["Karotten: 12 Stk."] # für den Load-Balancers
+                                             # (Hasen Füttern oder prozentuale Plus Rechnung für die hasen bedienen für geteilt rechnungen)
+                                             ¬· ["HasenFamilie"|{"(MeisterFee5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
+                                                ¬· ["PapaHase"]
+                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                         ¬·¤= »[× ± 8 Stk. ±(Fee5) ×]« # Rest
+                                                ¬· ["MamaHase"]
+                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                         ¬·¤= »[× ± 4 Stk. ±(Fee5) ×]« # Rest
+                                                ¬· ["BabyHase"]«
+                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                         ¬·¤= »[× ± 0 Stk. ±(Fee5) ×]« # Rest
+                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+
+                                    ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
+                                           ¬· »["±Karotten Sammeln±(4)"]«««Ω
+                                               ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters (Variable)
+                                                   ¶ ¬·¤= ["(MeisterFee5)± 12 Stk. ±"] # für den Load-Balancers
+                                                          # (Hasen Füttern oder prozentuale Plus Rechnung für die hasen bedienen für geteilt rechnungen)
+                                                          ¬· ["HasenFamilie"|{"(5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
+                                                             ¬· »["PapaHase"]«
+                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                                      ¬·¤= »[× ± 8 Stk. ±(Fee5) ×]«
+                                                             ¬· »["MamaHase"]«
+                                                                 ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                                       ¬·¤= »[× ± 4 Stk. ±(Fee5) ×]«
+                                                             ¬· »["BabyHase"]«
+                                                                 ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                                       ¬·¤= »[× ± 0 Stk. ±(Fee5) ×]«
+                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+
+                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+
+!¢
+
+Das ist der Mächtigste Zauber den du Je gesehen hast , nicht wahr? 
+
+Das ist die Essenz der Programmierung und der Mathematik in einem vereinten System, 
+du lernst das im Zauberwald !
+
+
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Jetzt ist die Frage ob die Kinder schon Dreisatz können, ansonsten müssen wir das noch mal umformulieren.
+Ich hab bewusst die Dreisatz rechnung wieviele karotten die hasen brauchen in die variable gepackt statts einen Dreisatz zu rechnen.
+Es ist Quasi Dreisatz auf einer vereinfachten Prozentualer Geteilt Rechnung.
+
+ich denke nachfolgend werde ich kleinere Variable(Zauberkessel)-Zauberbeispiele bringen um das ganze zu festigen.
+Überforderung vermeiden!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+> [!NOTE]
+> Die Kinder lernen, dass eine Variable (Hase) nicht nur ein statischer Wert ist, 
+> sondern selbst wieder als Baustein in einer größeren Rechnung (Osterhase) dienen kann. 
+> In der Informatik nennen wir das Abstraktion.
+> Wir erreichen es durch Das Variablen und Feed System.
+> MeisterFee1 & 2: Erschaffen die Ur-Substanz.
+> HelferFee1 & 2: "Lesen" die Substanz aus, um sie für den nächsten Schritt bereitzustellen.
+> MeisterFee3: Mischt alles zusammen.
+> Das Kind versteht: Daten fließen von einer Fee zur nächsten. Das ist der Datenbus in Aktion.
+
+> [!NOTE]
+> Pädagogisch: 
+> In der 4. Stufe fangen viele Kinder erst mit dem Dreisatz an. 
+> Indem du die Zahl 12 festsetzt, können sie sich voll auf die Subtraktions-Logik (12 -> 8 -> 4 -> 0) konzentrieren.
+> Technisch: 
+> Das entspricht exakt einem Hardcoded Limit oder einer Konstante in der Programmierung. 
+> Das Kind lernt: "Ich definiere mein Ziel, und die Hardware arbeitet, bis das Ziel erreicht ist."
+
+

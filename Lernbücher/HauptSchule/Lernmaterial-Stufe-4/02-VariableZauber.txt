@@ -142,10 +142,6 @@ Jetzt ist die Frage ob die Kinder schon Dreisatz können, ansonsten müssen wir 
 
 Ich hab bewusst die Dreisatz rechnung wieviele karotten die hasen brauchen in die variable gepackt statts einen Dreisatz zu rechnen.
 
-Das ist der Trick an der sache, wir packen die rechnung in die variable und lassen die feen die rechnung machen.
-
-mal angenommen die Kinder können schon Dreisatz, dann können wir das noch mal umformulieren und die rechnung in die variable packen.
-
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -178,3 +174,11 @@ mal angenommen die Kinder können schon Dreisatz, dann können wir das noch mal 
 > HelferFee1 & 2: "Lesen" die Substanz aus, um sie für den nächsten Schritt bereitzustellen.
 > MeisterFee3: Mischt alles zusammen.
 > Das Kind versteht: Daten fließen von einer Fee zur nächsten. Das ist der Datenbus in Aktion.
+
+> [!NOTE]
+> Pädagogisch: 
+> In der 4. Stufe fangen viele Kinder erst mit dem Dreisatz an. 
+> Indem du die Zahl 12 festsetzt, können sie sich voll auf die Subtraktions-Logik (12 -> 8 -> 4 -> 0) konzentrieren.
+> Technisch: 
+> Das entspricht exakt einem Hardcoded Limit oder einer Konstante in der Programmierung. 
+> Das Kind lernt: "Ich definiere mein Ziel, und die Hardware arbeitet, bis das Ziel erreicht ist."

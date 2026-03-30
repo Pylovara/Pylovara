@@ -100,15 +100,15 @@ Du kannst Mächtige dinge erschaffen wenn du weisst was du tust, wie zum beispie
                                       ¶ ¬·¤= ["Karotten: 12 Stk."] # für den Load-Balancers
                                              # (Hasen Füttern oder prozentuale Plus Rechnung für die hasen bedienen für geteilt rechnungen)
                                              ¬· ["HasenFamilie"|{"(MeisterFee5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
-                                                ¬· »["PapaHase"]«
-                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                          ¬·¤= »[× ± 8 Stk. ±(Fee5) ×]« # Rest
-                                                ¬· »["MamaHase"]«
-                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                          ¬·¤= »[× ± 4 Stk. ±(Fee5) ×]« # Rest
-                                                ¬· »["BabyHase"]«
-                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                          ¬·¤= »[× ± 0 Stk. ±(Fee5) ×]« # Rest
+                                                ¬· ["PapaHase"]
+                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                         ¬·¤= »[× ± 8 Stk. ±(Fee5) ×]« # Rest
+                                                ¬· ["MamaHase"]
+                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                         ¬·¤= »[× ± 4 Stk. ±(Fee5) ×]« # Rest
+                                                ¬· ["BabyHase"]«
+                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                         ¬·¤= »[× ± 0 Stk. ±(Fee5) ×]« # Rest
                                                     ¶ ¬· ["HasenFamilie Schläft Satt"]
 
                                                     ¶¶ ¬· »["HasenFamilie Spielt Satt"]«

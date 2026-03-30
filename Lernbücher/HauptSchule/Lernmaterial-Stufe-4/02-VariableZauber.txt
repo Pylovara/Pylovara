@@ -98,7 +98,7 @@ Du kannst Mächtige dinge erschaffen wenn du weisst was du tust, wie zum beispie
                                   ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 11
                                   ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 12
                                       ¶ ¬·¤= ["Karotten: 12 Stk."] # für den Load-Balancers
-                                             # (Hasen Füttern oder prozentual die hasen bedienen)
+                                             # (Hasen Füttern oder prozentuale Plus Rechnung für die hasen bedienen für geteilt rechnungen)
                                              ¬· ["HasenFamilie"|{"(MeisterFee5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
                                                 ¬· »["PapaHase"]«
                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
@@ -115,9 +115,9 @@ Du kannst Mächtige dinge erschaffen wenn du weisst was du tust, wie zum beispie
 
                                     ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
                                            ¬· »["±Karotten Sammeln±(4)"]«««Ω
-                                               ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters
+                                               ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters (Variable)
                                                    ¶ ¬·¤= ["(MeisterFee5)± 12 Stk. ±"] # für den Load-Balancers
-                                                          # (Hasen Füttern oder prozentual die hasen bedienen)
+                                                          # (Hasen Füttern oder prozentuale Plus Rechnung für die hasen bedienen für geteilt rechnungen)
                                                           ¬· ["HasenFamilie"|{"(5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
                                                              ¬· »["PapaHase"]«
                                                                 ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«

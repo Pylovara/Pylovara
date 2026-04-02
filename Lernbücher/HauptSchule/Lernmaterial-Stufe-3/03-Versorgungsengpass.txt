@@ -2,8 +2,10 @@
 
 Hallo kleiner Zauber Entwickler! 🌟
 
-Da Meister Rex nun weiß was Sein zauberstab kann:
+Da Meister Rex nun weiß was Sein zauberstab kann, wollen wir die neu erworbenen
+Zauberfunken und Feen auch Besser einsätzen !
 
+Schaut euch mal an was Gandalf Zauber könnte:
 
 ¢! 
  ["Wesen"|(MeisterFee9)±{"Energie: 100%"}±] # Netzteil
@@ -59,10 +61,41 @@ Da Meister Rex nun weiß was Sein zauberstab kann:
                           ¬·¤= »[(MeisterFee4)±{"Energie: 0%"}±]« # Rest Energie
 !¢
 
-Und er Verstanden hat was die Feen dabei Tuen können .
-Ist jetzt die Frage wie Versorgungs Engpässe zu Lösen sind.
+Soooo Gut kann ein zauber sein ! Gandalf kann sogar die Energie über die Feen Verteilen!
+
+¢! 
+ ["Wesen"|(MeisterFee9)±{"Energie: 100%"}±] # Netzteil
+ ¬·¤= »[× ± (MeisterFee9) - 30% ±(HelferFee9) ×]« # Verbraucher
+       ¬¤= »["Bäume"|(MeisterFee1)±{"Energie: 30%"}±]« # Prozentuale Verteilung
+            ¬· »["Blätter Rascheln"]«
+                ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]« 
+                      ¬·¤= »[(MeisterFee1)±{"Energie: 20%"}±]« # Rest Energie
+            ¬· »["Äste Knarren"]«
+                ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+                      ¬·¤= »[(MeisterFee1)±{"Energie: 10%"}±]« # Rest Energie
+            ¬· »["Holz knistert"]«
+                ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+                      ¬·¤= »[(MeisterFee1)±{"Energie: 0%"}±]« # Rest Energie
+
+ ¶ ¬· »[× ± (MeisterFee9)±{"Energie: 70%"}± ×]«
+       ¬· ["Bäume|(MeisterFee1)±{"Energie: 30%"}±"]«
 
 
+ ¶¶ ¬· »[× ± (MeisterFee9)±{"Energie: 70%"}± ×]«
+        ¬·¤= »[× (MeisterFee9) - (MeisterFee1) ×]«««ſ # 30% = 10% - 10% - 10% = 0%
+              
+!¢
+
+Und sogar mit Meiste Igel Kontrollieren ob die Energie Verteilt wurde ..
+
+¶: Prüft den Ist-Zustand (70% Rest im Netzteil, während 30% bei den Bäumen sind). 
+Das ist das Monitoring.
+
+¶¶: Führt die Endabrechnung durch. 100% - 30% - 40% - 6% - 24% = 0%.
+
+Das Kind lernt: 
+Ein System ist erst dann stabil (und der Zauber sicher), 
+wenn die Rechnung am Ende auf Null aufgeht (Clean State).
 
 
 

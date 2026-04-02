@@ -159,6 +159,53 @@ Das Prüft für uns Meister Igel mit seinem Sentiator Reflexen.
                                ¬· »["Meister Igel rollt sich zusammen"]«««ſ # Sofort-Stop / Safety First
 !¢
 
+Wir können einmal in die Magische Welt etwas 
+Abfragen ob es existiert ¬·¤= [× Hase ×]
+Wir fragen ob es schläft oder wach ist
+ ¬·¤= [× Schlafender Hase ×] oder ¬·¤= [× Wacher Hase ×]
+und der info zauber , gibt uns eine Antwort zurück.
+
+ ¬·¤: ["Hase"] # Meister igel weiß das in der kiste ein hase ist
+ ¬·¤: ["Schlafender Hase"] # Meister igel weiß das der hase schläft
+ ¬·¤: ["Wacher Hase"] # Meister igel weiß das der hase wach ist
+ ¬·¤: ["Kein Hase!"] # Meister igel weiß das der hase nicht da ist
+ ¬·¤: ["Wolf!"] # Meister igel weiß das der wolf da ist
+
+Damit Können wir Sehr gut Versorgungsengpässe abfragen.
+
+
+¢!
+
+Meister Igel prüft den Versorgungs-Engpass
+["Energie-Kiste"] # Wir brauchen 10% für das "Vögel Zwitschern"
+¶ ¬· »["Schnüffelt"]«
+      ¬·¤: [±{"Energie: 5%"}±] # Oha! Nur noch 5% da?
+           ¬· »["Meister Igel schüttelt den Kopf"]«
+¶¶ ¬· »["Engpass-Reflex!"]«
+       ¬·¤= »[× Sende Hilfe-Signal ×]«
+             ¬·¤: ["Meister Rex, wir brauchen Protonen-Nachschub!"]
+   ¬· »["Sicherheits-Schlaf"]«
+       ¬·¤= »[× Zwitschern AUS ×]«««ſ # System geschützt
+!¢
+
+
+
+
+
+
+
+
+
+
+
+
+
+!! Hier sentseht noch !!
+
+
+
+
+
 
 
 
@@ -174,6 +221,11 @@ Das Prüft für uns Meister Igel mit seinem Sentiator Reflexen.
 > und Datenpräsentation. Die Kinder beherrschen nun das 
 > Monitoring komplexer Kaskaden-Prozesse. Das System-Vertrauen 
 > wird durch die explizite Validierung des 'Rests' gestärkt."
+> "Wir erweitern die Stufe 3 um die Status-Validierung. 
+> Durch den 'Schnüffel-Reflex' lernen die Kinder, 
+> Hardware-Zustände abzufragen, bevor Transaktionen eingeleitet werden. 
+> Die Unterscheidung zwischen ¶ (Vorhandensein) und ¶¶ (Nicht-Vorhandensein/Fehler) 
+> bildet die Basis für robuste, fehlerresistente KERNEL-NEEDLES."
 
 
 

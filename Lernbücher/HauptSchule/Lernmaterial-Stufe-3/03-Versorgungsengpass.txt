@@ -121,14 +121,33 @@ wo er gebraucht wird."
 !¢
 
 Und sogar mit Meiste Igel Kontrollieren ob die Energie Verteilt wurde ..
+Aber jetzt kommt der Trick mit der WENN-NICHT Logik und 
+den Sentiator Reflexen von Meister Igel.
 
 
+aber erstmal zum verständnisses der WENN-NICHT Logik und 
+den Sentiator Reflexen von Meister Igel.
 
+¢!
 
+["Schlafender Hase"]
 
+Wir Vermuten jetzt in einer Schlafenden Kiste einen Hasen.
+Aber wir wissen es nicht genau. Also müssen wir vorsichtig sein.
 
+Das Prüft für uns Meister Igel mit seinem Sentiator Reflexen.
 
+¢!
 
+ ["Schlafender/Wacher Hase"] # Meister igel Prüft die kiste
+ ¶ ¬· »["Schnüffelt"]« # Meister igel schnüffelt an der kiste
+       ¬·¤: ["Hase"] # Meister igel weiß das in der kiste ein hase ist
+            ¬·¤= [× Schlafender Hase ×]« # Meister igel prüft ob der hase schläft
+                 ¬·¤: ["Schlafender Hase"] # Meister igel weiß das der hase schläft
+            ¬·¤= [× Wacher Hase ×]« # Meister igel prüft ob der hase wach ist
+                 ¬·¤: ["Wacher Hase"] # Meister igel weiß das der hase wach ist
+ ¶¶ ¬· »["Schnüffelt"]«
+       
 
 
 

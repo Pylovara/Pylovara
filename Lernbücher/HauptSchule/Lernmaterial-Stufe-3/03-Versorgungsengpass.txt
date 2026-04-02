@@ -6,54 +6,105 @@ Da Meister Rex nun weiß was Sein zauberstab kann:
 
 
 ¢! 
- ["Wesen"|{"100% Energie"}]
- ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±] # Prozentuale Verteilung
-    ¬· »["Blätter Rascheln"]«
-        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]« 
-              ¬·¤= »[(MeisterFee1)±{"20% Energie"}±]« # Rest Energie
-    ¬· »["Äste Knarren"]«
-        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
-              ¬·¤= »[(MeisterFee1)±{"10% Energie"}±]« # Rest Energie
-    ¬· »["Holz knistert"]«
-        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
-              ¬·¤= »[(MeisterFee1)±{"0% Energie"}±]« # Rest Energie
-    
- ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±] # Prozentuale Verteilung
-    ¬· »["Vögel Zwitschern"]«
-        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
-              ¬·¤= »[(MeisterFee2)±{"30% Energie"}±]« # Rest Energie
-    ¬· »["Insekten Summen"]«
-        ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
-              ¬·¤= »[(MeisterFee2)±{"20% Energie"}±]« # Rest Energie
-    ¬· »["Rehe Springen"]«
-        ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
-              ¬·¤= »[(MeisterFee2)±{"0% Energie"}±]« # Rest Energie
-    
- ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±] # Prozentuale Verteilung
-    ¬· »["Flüstern"]«
-        ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
-              ¬·¤= »[(MeisterFee3)±{"5% Energie"}±]« # Rest Energie
-    ¬· »["Weinen"]«
-        ¬·¤= »[× ± (MeisterFee3) - 2% ±(HelferFee3) ×]«
-              ¬·¤= »[(MeisterFee3)±{"3% Energie"}±]« # Rest Energie
-    ¬· »["Lachen"]«
-        ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
-              ¬·¤= »[(MeisterFee3)±{"0% Energie"}±]« # Rest Energie
-    
- ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±] # Prozentuale Verteilung
-    ¬· »["Sprechen"]«
-        ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
-              ¬·¤= »[(MeisterFee4)±{"14% Energie"}±]« # Rest Energie
-    ¬· »["Kreischen"]«
-        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
-              ¬·¤= »[(MeisterFee4)±{"7% Energie"}±]« # Rest Energie
-    ¬· »["Grummeln"]«
-        ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
-              ¬·¤= »[(MeisterFee4)±{"0% Energie"}±]« # Rest Energie
+ ["Wesen"|(MeisterFee9)±{"Energie: 100%"}±] # Netzteil
+ ¬·¤= »[× ± (MeisterFee9) - 30% ±(HelferFee9) ×]« # Verbraucher
+       ¬¤= »["Bäume"|(MeisterFee1)±{"Energie: 30%"}±]« # Prozentuale Verteilung
+            ¬· »["Blätter Rascheln"]«
+                ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]« 
+                      ¬·¤= »[(MeisterFee1)±{"Energie: 20%"}±]« # Rest Energie
+            ¬· »["Äste Knarren"]«
+                ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+                      ¬·¤= »[(MeisterFee1)±{"Energie: 10%"}±]« # Rest Energie
+            ¬· »["Holz knistert"]«
+                ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+                      ¬·¤= »[(MeisterFee1)±{"Energie: 0%"}±]« # Rest Energie
+
+ ¬·¤= »[× ± (MeisterFee9) - 40% ±(HelferFee9) ×]« # Verbraucher                      
+       ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±] # Prozentuale Verteilung
+          ¬·¤= »[× ± (MeisterFee9) - 40% ±(HelferFee9) ×]« 
+                ¬· »["Vögel Zwitschern"]«
+                    ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+                          ¬·¤= »[(MeisterFee2)±{"Energie: 30%"}±]« # Rest Energie
+               ¬· »["Insekten Summen"]«
+                   ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+                         ¬·¤= »[(MeisterFee2)±{"Energie: 20%"}±]« # Rest Energie
+                ¬· »["Rehe Springen"]«
+                    ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
+                          ¬·¤= »[(MeisterFee2)±{"Energie: 0%"}±]« # Rest Energie
+
+ ¬·¤= »[× ± (MeisterFee9) - 6% ±(HelferFee9) ×]« # Verbraucher
+       ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±] # Prozentuale Verteilung
+          ¬·¤= »[× ± (MeisterFee9) - 6% ±(HelferFee9) ×]« 
+                ¬· »["Flüstern"]«
+                    ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
+                          ¬·¤= »[(MeisterFee3)±{"Energie: 5%"}±]« # Rest Energie
+                ¬· »["Weinen"]«
+                    ¬·¤= »[× ± (MeisterFee3) - 2% ±(HelferFee3) ×]«
+                          ¬·¤= »[(MeisterFee3)±{"Energie: 3%"}±]« # Rest Energie
+                ¬· »["Lachen"]«
+                    ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
+                          ¬·¤= »[(MeisterFee3)±{"Energie: 0%"}±]« # Rest Energie
+
+ ¬·¤= »[× ± (MeisterFee9) - 24% ±(HelferFee9) ×]« # Verbraucher   
+       ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±] # Prozentuale Verteilung
+          ¬·¤= »[× ± (MeisterFee9) - 24% ±(HelferFee9) ×]« 
+                ¬· »["Sprechen"]«
+                    ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
+                          ¬·¤= »[(MeisterFee4)±{"Energie: 14%"}±]« # Rest Energie
+                ¬· »["Kreischen"]«
+                    ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+                          ¬·¤= »[(MeisterFee4)±{"Energie: 7%"}±]« # Rest Energie
+                ¬· »["Grummeln"]«
+                    ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+                          ¬·¤= »[(MeisterFee4)±{"Energie: 0%"}±]« # Rest Energie
 !¢
 
 Und er Verstanden hat was die Feen dabei Tuen können .
 Ist jetzt die Frage wie Versorgungs Engpässe zu Lösen sind.
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+Hier weiterführend die Versorgungs engpässe manifestieren ..... 
+der rest unterhalb als vorlage behalten 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

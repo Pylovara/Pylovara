@@ -78,7 +78,7 @@ Soooo Gut kann ein zauber sein ! Gandalf kann sogar die Energie über die Feen V
                       ¬·¤= »[(MeisterFee1)±{"Energie: 0%"}±]« # Rest Energie
 
  ¶ ¬· »[× ± (MeisterFee9)±{"Energie: 70%"}± ×]« # Prüft den Ist-Zustand (70% Rest im Netzteil, während 30% bei den Bäumen sind)
-       ¬·= »["Bäume|(MeisterFee1)±{"Energie: 30%"}±"]« # Kontrollieren ob die Energie Verteilt wurde
+       ¬·¤= »["Bäume|(MeisterFee1)±{"Energie: 30%"}±"]« # Kontrollieren ob die Energie Verteilt wurde
 
 
  ¶¶ ¬· »[× ± (MeisterFee9)±{"Energie: 70%"}± ×]« # Führt die Endabrechnung durch. 100% - 30% - 40% - 6% - 24% = 0%.

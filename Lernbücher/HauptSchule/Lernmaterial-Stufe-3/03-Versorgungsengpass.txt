@@ -189,7 +189,40 @@ Meister Igel prüft den Versorgungs-Engpass
 !¢
 
 
+Wir Können jetzt Richtig Gute Starke zauber bauen , egal wie 
+wir es brauchen : 
 
+
+¢! 
+ 
+  ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
+  ¬· ["Papa Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+           ¬·¤: [±{"Futter: 4"}±]
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+           ¬·¤: [±{"Wasser: 4"}±]
+  ¬· ["Mama Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+           ¬·¤: [±{"Futter: 4"}±]
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+           ¬·¤: [±{"Wasser: 4"}±]
+  ¬· ["Baby Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+           ¬·¤: [±{"Futter: 4"}±]
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]« 
+           ¬·¤: [±{"Wasser: 4"}±]
+  ¬· ["Opa Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+           ¬·¤: [±{"Futter: 4"}±]
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+           ¬·¤: [±{"Wasser: 4"}±]
+  ¬· ["Oma Hase"]
+     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
+           ¬·¤: [±{"Futter: 4"}±]
+     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
+           ¬·¤: [±{"Wasser: 4"}±]
+  
+!¢
 
 
 
@@ -226,194 +259,3 @@ Meister Igel prüft den Versorgungs-Engpass
 > Hardware-Zustände abzufragen, bevor Transaktionen eingeleitet werden. 
 > Die Unterscheidung zwischen ¶ (Vorhandensein) und ¶¶ (Nicht-Vorhandensein/Fehler) 
 > bildet die Basis für robuste, fehlerresistente KERNEL-NEEDLES."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-¢! 
- 
-  ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
-  ¬· ["Papa Hase"]
-     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-  ¬· ["Mama Hase"]
-     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-  ¬· ["Baby Hase"]
-     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]« 
-  ¬· ["Opa Hase"]
-     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-  ¬· ["Oma Hase"]
-     ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-     ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-  
-!¢
-
-Daraus zauber ich jetzt Sentiator Reflexe wo versorgungs engpässe
-über die ¶¶ WENN-NICHT Logik abgebildet werden.
-
-und dann die prozentuale rechnungsweise weiterfolgend
-
-
-
-
-»[× (1)± Gras + Wasser + Sonne ± ×]
-    ¬·¤= ["(2)±Pflanze±"]
-
-
- ¶ ¬· »["Rascheln im Busch"]«
-       ¬· »["Hase Wartet"]«
-           ¬· »[× ±Pflanze±(2) ×]
-               ¬·¤= ["±Gras + Wasser + Sonne±(1)"]
-                    ¬· »[× (3)± (1) + (2) ± ×]«
-                        ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(3)"]
-                             ¬·¤= ["(4)±Karotte±"]
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 1
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 2
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 3
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 4
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 5
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 6
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 7
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 8
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 9
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 10
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 11
-                                  ¬· »["±Karotten Sammeln±(4)"]« # 12
-                                      ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
-                                             # (Hasen Füttern oder prozentual die hasen bedienen)
-                                             ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
-                                                ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                    ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
-
-                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
-###################################################################################################################################################
-                                    ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
-                                           ¬· »["±Karotten Sammeln±(4)"]«««Ω
-                                               ¬· »[× (MeisterFee5) = 12 = 100% ×]« # Prozentuale füllung des futters
-                                                   ¶ ¬·¤= ["(MeisterFee5)±12±"] # für den Load-Balancers
-                                                   # (Hasen Füttern oder prozentual die hasen bedienen)
-                                                          ¬· ["HasenFamilie"|{"Karotten:12"}] # Load-Balancers für Prozentuale abfütterungen
-                                                             ¬· »["PapaHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                             ¬· »["MamaHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                             ¬· »["BabyHase"|{"Karotten:±4±(HelferFee5)"}]«
-                                                                ¬·¤= »[× ± (MeisterFee5) - Futter: 4 ±(Fee5) ×]«
-                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
-
-                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
-###################################################################################################################################################
-
-
- ¶¶ ¬· »["Hase rennt Weg"]«
-        ¬· »["Kein Futter mehr"]«««ſ
-
-
-Speziell der # eingerahmte abschnitt oder als vorstufe mit dem wiederholten sammeln ....... 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-Nächste Logik einbringen nach dem die Kinder Verstanden haben was passiert.
-
-"Was passiert, wenn die MeisterFee (1) kein Futter mehr hat? 
-Der Igel-Wächter muss prüfen mit dem "EntscheidungsZauber JA-Weg Nein-Weg:
-¶ (MeisterFee1) > Menge X -> Futter geben!
-¶¶ (MeisterFee1) > 0 -> Meister Rex muss zum Acker laufen!"
-
-Das verbindet die ALU-Mathematik mit der Entscheidungs-Logik (Sentiator).
-
-
-Der Igel-Wächter steht an der Weggabelung: 
-Hat die MeisterFee noch Futter? 
-
-Wenn JA (¶), geht es weiter zum Füttern. 
-Wenn NEIN (¶¶), muss Meister Rex eine neue Kiste herbeizaubern."
-
-
-ich bin mir noch nicht sicher ob das hier rein soll, ich denke alleine die 
-tatsache das die Kinder Verstehen das sie die Koordinaten der Dinge Erkennen 
-und das trockenste thema der informatik kindergerecht vermitteln können ist 
-Goldstandart.
-
-
-ich muss das ganze jetzt noch in lernstoff umwandeln , damit das grundprinzip in den köpfen
-bleibt und sollte an dem Zauberfunken feen system anknüpfen um damit dann nahtlos für
-die syntax die variablen später einzuführen.
-
-
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

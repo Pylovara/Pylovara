@@ -19,7 +19,7 @@ Jetzt wollen wir mal Versuchen, einen Ganzen Zauber zu Schreiben.
 ## 1. Was wir brauchen:
 
 - Ein Tier für Die Zauberkiste (Gern dein Haustier)
-- Eine Liste Was Dein Tier tuen möchte am Tag für Meister Rex
+- Eine Liste Was Dein Tier tuen möchte am Tag mit Meister Rex
 - Einen Spickzettel für alle Zauber ;-)
 
 ## 2. Eine Vorgehensgeschichte ( Erzählt vom MCS Meister )
@@ -35,7 +35,7 @@ Wissen ab weil jeder GroßerZauberer das wissen muss.
 Wenn du deinen Hasen füttern willst, dann Zauberst du :
 
 ¢! 
-»["Hase"]« 
+ ["Hase"]  
  ¬· »["Möhre geben"]« 
      ¬· »["Hase frisst die Möhre"]«
          ¬· ["Hase ist satt"]
@@ -45,7 +45,7 @@ Wenn du deinen Hasen füttern willst, dann Zauberst du :
 Und wenn etwas fehlt? Dann frag den Igel-Wächter:
 
 ¢! 
-»["Hase"]« 
+ ["Hase"] 
  ¬·  ["Hunger"]
      ¶ ¬· ["Möhre liegt da!"]
           ¬· »["Möhre geben"]«
@@ -60,10 +60,10 @@ Und wenn etwas fehlt? Dann frag den Igel-Wächter:
 Wenn dein Hund spielen will, dann Zauberst du:
 
 ¢! 
-["Hund"]
-¬· »["Ball werfen"]« 
-    ¶ ¬· »["Hund rennt zum Ball"]« 
-    ¶¶ ¬· »["Ball selber holen weil der Hund müde ist"]«
+ ["Hund"]
+ ¬· »["Ball werfen"]« 
+     ¶ ¬· »["Hund rennt zum Ball"]« 
+     ¶¶ ¬· »["Ball selber holen weil der Hund müde ist"]«
 !¢
 
 und du brauchst keine Angst haben kleiner Meister, jeder Zauber fängt klein an
@@ -73,12 +73,12 @@ Bei Meister Rex landen wir immer wenn wir eine Entscheidung treffen müssen
 und der IgelWächter gibt uns die möglichkeit für beide Entscheidungen:
 
 ¢!
-["Ball"]
-¶ ¬· ["Ball ist da"]
-     ¬· »["Ball werfen"]«
-     ¬· »["Ball fangen"]«
-¶¶ ¬· ["Ball ist nicht da"]
-      ¬· »["Ball suchen"]«
+ ["Ball"]
+ ¶ ¬· ["Ball ist da"]
+      ¬· »["Ball werfen"]«
+      ¬· »["Ball fangen"]«
+ ¶¶ ¬· ["Ball ist nicht da"]
+       ¬· »["Ball suchen"]«
 !¢   
 
 Sind Schwere Zauber die du nicht sofort beherschen musst
@@ -117,7 +117,7 @@ Wir Üben jetzt zur Wiederholung:
 
  Wieviele Tiere haben wir den ?
 
-  ["Hasen"|"Löwe"|"Hund"|"Katze"|"Eichhörnchen"|"Robbi"]
+  ["Hase"|"Hund"|"Katze"|"Eichhörnchen"|"Robbi"]
 
   (Schreibe Summe/Zahl hier hin) = 
 
@@ -192,7 +192,7 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 🐱 Die neugierige Katze und der leere Napf
 
 ¢!
-»["Katze"]«
+ ["Katze"]
  ¬· »["Napf anschauen"]«
      ¶ ¬· ["Napf ist voll!"]
           ¬· »["Fressen"]«
@@ -207,7 +207,7 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 🐿️ Das Eichhörnchen und die versteckte Nuss
 
 ¢!
-»["Eichhörnchen"]«
+ ["Eichhörnchen"]
  ¬· »["Baumloch prüfen"]«
      ¶ ¬· ["Nuss gefunden!"]
           ¬· »["Knacken"]«
@@ -224,14 +224,14 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 🤖 Robbi der kleine Helfer-Roboter
 
 ¢!
-»["Robbi"]«
- ¬· ["Batterie prüfen"]
-    ¶ ¬· »["Grün leuchtet!"]«
-          ¬· »["Aufräumen"]«
-          ¬· »["Spielen"]«
-    ¶¶ ¬· »["Rot leuchtet!"]«
-          ¬· ["Laden"]
-             ¬· ["Warten…"]
+ ["Robbi"]
+ ¬· »["Batterie prüfen"]«
+     ¶ ¬· »["Grün leuchtet!"]«
+           ¬· »["Aufräumen"]«
+           ¬· »["Spielen"]«
+     ¶¶ ¬· »["Rot leuchtet!"]«
+            ¬· ["Laden"]
+               ¬· ["Warten…"]
 !¢
 
 „Robbi arbeitet, solange seine Batterie grün leuchtet. Wenn rot – muss er laden!“
@@ -250,5 +250,6 @@ Dazu gebe ich dir Große Zauber aus meinem Zauberbuch, und du schreibst sie ab.
 > Dies ist damit die Letzte Lektion für ein Grundschulkind in diesem Buch.
 > Es Spielt auch keine Rolle ob alles perfekt ist oder nicht, es geht um das Verständnis der 
 > Zauber und Symbole.
-> Später Lernt das Kind alles Mit mit Echten Begriffen und die Bausteinschaltungskreis BSK Logik
+> Später Lernt das Kind alles Mit mit Echten Begriffen und 
+> die Bausteinschaltungskreislauf BSK Logik
 > wie die Morphic Stufen.

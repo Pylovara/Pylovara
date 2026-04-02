@@ -5,6 +5,23 @@ Hallo kleiner Zauber Entwickler! 🌟
 Da Meister Rex nun weiß was Sein zauberstab kann, wollen wir die neu erworbenen
 Zauberfunken und Feen auch Besser einsätzen !
 
+Und jetzt Lernt er den Unterschied Zwischen Rechenzauber und Zauber Info .
+beides zauber vom Funken des Meister Rex Zauberstabes ¬·¤ 
+
+1. ¬·¤= Rechenzauber
+2. ¬·¤: ZauberInfo
+
+Wir können das zwar auch per Rechenzauber mit der ALU BOXI Zum Zauberrechner Schicken
+aber das ist viel zu umständlich und dauert viel zu lange ! 
+
+¬· »[× 100 + 100 ×]«
+    ¬·¤= »[× 200 ×]«
+          # Hier Rechenzauber ende
+          ¬·¤: »[× 200 ×]« # Hier Zauber Info ende
+
+Wir Trennen die zauber damit wir damit besser arbeiten können mit schlafenden Zauberkisten 
+wie wachen Zauberkisten .
+
 Schaut euch mal an was Gandalf Zauber könnte:
 
 ¢! 
@@ -13,52 +30,52 @@ Schaut euch mal an was Gandalf Zauber könnte:
        ¬¤= »["Bäume"|(MeisterFee1)±{"Energie: 30%"}±]« # Prozentuale Verteilung
             ¬· »["Blätter Rascheln"]«
                 ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]« 
-                      ¬·¤= »[(MeisterFee1)±{"Energie: 20%"}±]« # Rest Energie
+                      ¬·¤: [±{"Energie: 20%"}±(HelferFee1)] # Rest Energie
             ¬· »["Äste Knarren"]«
                 ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
-                      ¬·¤= »[(MeisterFee1)±{"Energie: 10%"}±]« # Rest Energie
+                      ¬·¤: [±{"Energie: 10%"}±(HelferFee1)] # Rest Energie
             ¬· »["Holz knistert"]«
                 ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
-                      ¬·¤= »[(MeisterFee1)±{"Energie: 0%"}±]« # Rest Energie
+                      ¬·¤: [±{"Energie: 0%"}±(HelferFee1)] # Rest Energie
 
  ¬·¤= »[× ± (MeisterFee9) - 40% ±(HelferFee9) ×]« # Verbraucher                      
        ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±] # Prozentuale Verteilung
           ¬·¤= »[× ± (MeisterFee9) - 40% ±(HelferFee9) ×]« 
                 ¬· »["Vögel Zwitschern"]«
                     ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
-                          ¬·¤= »[(MeisterFee2)±{"Energie: 30%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 30%"}±(HelferFee2)] # Rest Energie
                ¬· »["Insekten Summen"]«
                    ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
-                         ¬·¤= »[(MeisterFee2)±{"Energie: 20%"}±]« # Rest Energie
+                         ¬·¤: [±{"Energie: 20%"}±(HelferFee2)] # Rest Energie
                 ¬· »["Rehe Springen"]«
                     ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
-                          ¬·¤= »[(MeisterFee2)±{"Energie: 0%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 0%"}±(HelferFee2)] # Rest Energie
 
  ¬·¤= »[× ± (MeisterFee9) - 6% ±(HelferFee9) ×]« # Verbraucher
        ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±] # Prozentuale Verteilung
           ¬·¤= »[× ± (MeisterFee9) - 6% ±(HelferFee9) ×]« 
                 ¬· »["Flüstern"]«
                     ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
-                          ¬·¤= »[(MeisterFee3)±{"Energie: 5%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 5%"}±(HelferFee3)] # Rest Energie
                 ¬· »["Weinen"]«
                     ¬·¤= »[× ± (MeisterFee3) - 2% ±(HelferFee3) ×]«
-                          ¬·¤= »[(MeisterFee3)±{"Energie: 3%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 3%"}±(HelferFee3)] # Rest Energie
                 ¬· »["Lachen"]«
                     ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
-                          ¬·¤= »[(MeisterFee3)±{"Energie: 0%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 0%"}±(HelferFee3)] # Rest Energie
 
  ¬·¤= »[× ± (MeisterFee9) - 24% ±(HelferFee9) ×]« # Verbraucher   
        ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±] # Prozentuale Verteilung
           ¬·¤= »[× ± (MeisterFee9) - 24% ±(HelferFee9) ×]« 
                 ¬· »["Sprechen"]«
                     ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
-                          ¬·¤= »[(MeisterFee4)±{"Energie: 14%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 14%"}±(HelferFee4)] # Rest Energie
                 ¬· »["Kreischen"]«
                     ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
-                          ¬·¤= »[(MeisterFee4)±{"Energie: 7%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 7%"}±(HelferFee4)] # Rest Energie
                 ¬· »["Grummeln"]«
                     ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
-                          ¬·¤= »[(MeisterFee4)±{"Energie: 0%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 0%"}±(HelferFee4)] # Rest Energie
 !¢
 
 Soooo Gut kann ein zauber sein ! Gandalf kann sogar die Energie über die Feen Verteilen!
@@ -72,29 +89,28 @@ wo er gebraucht wird."
        ¬¤= »["Bäume"|(MeisterFee1)±{"Energie: 30%"}±]« # Prozentuale Verteilung
                 ¬· »["Blätter Rascheln"]«
                     ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]« 
-                        ¬·¤= »[(MeisterFee1)±{"Energie: 20%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 20%"}±(HelferFee1)] # Rest Energie
                 ¬· »["Äste Knarren"]«
                     ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
-                        ¬·¤= »[(MeisterFee1)±{"Energie: 10%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 10%"}±(HelferFee1)] # Rest Energie
                 ¬· »["Holz knistert"]«
                     ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
-                        ¬·¤= »[(MeisterFee1)±{"Energie: 0%"}±]« # Rest Energie
+                          ¬·¤: [±{"Energie: 0%"}±(HelferFee1)] # Rest Energie
 
     ¶ ¬· »[× ± (MeisterFee9)±{"Energie: 70%"}± ×]« # Prüft den Ist-Zustand (70% Rest im Netzteil, während 30% bei den Bäumen sind)
         ¬·¤= »["Bäume|(MeisterFee1)±{"Energie: 30%"}±"]« # Kontrollieren ob die Energie Verteilt wurde
-                ¶ ¬· »[× ±{"Energie: 30%"}±(HelferFee1) ×]« # Prüft den Ist-Zustand (70% Rest im Netzteil, während 30% bei den Bäumen sind)
-                    ¬·¤= »[±{"Energie: 0%"}±(HelferFee1)]« # Rest Energie       
+                ¶ ¬·¤= »[× ±{"Energie: 30%"}±(HelferFee1) ×]« # Prüft den Ist-Zustand (70% Rest im Netzteil, während 30% bei den Bäumen sind)
+                        ¬·¤: [±{"Energie: 0%"}±(HelferFee1)] # Rest Energie       
 
     ¶¶ ¬· »[× ± (MeisterFee9)±{"Energie: 70%"}± ×]« # Führt die Endabrechnung durch. 100% - 30% - 40% - 6% - 24% = 0%.
             ¬·¤= »[× (MeisterFee9) - (MeisterFee1) ×]«««ſ # 30% = 10% - 10% - 10% = 0%
-                  ¬· »[× ±{"Energie: 30%"}±(HelferFee1) - 10% ±(HelferFee1) ×]«««Ω 
+                  ¬· »[× ±{"Energie: 30%"}±(MeisterFee1) - 10% ±(HelferFee1) ×]«««Ω 
                       ¬·¤: ["Energie: 20%"]
-                  ¬· »[× ±{"Energie: 20%"}±(HelferFee1) - 10% ±(HelferFee1) ×]«««Ω 
+                  ¬· »[× ±{"Energie: 20%"}±(MeisterFee1) - 10% ±(HelferFee1) ×]«««Ω 
                       ¬·¤: ["Energie: 10%"]
-                  ¬· »[× ±{"Energie: 10%"}±(HelferFee1) - 10% ±(HelferFee1) ×]«««Ω 
+                  ¬· »[× ±{"Energie: 10%"}±(MeisterFee1) - 10% ±(HelferFee1) ×]«««Ω 
                       ¬·¤: ["Energie: 0%"]
-
-    !¢
+!¢
 
 Und sogar mit Meiste Igel Kontrollieren ob die Energie Verteilt wurde ..
 

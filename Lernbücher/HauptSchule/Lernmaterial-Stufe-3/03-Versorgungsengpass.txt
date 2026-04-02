@@ -7,7 +7,7 @@ Da Meister Rex nun weiß was Sein zauberstab kann:
 
 ¢! 
  ["Wesen"|{"100% Energie"}]
- ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±]
+ ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±] # Prozentuale Verteilung
     ¬· »["Blätter Rascheln"]«
         ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]« 
               ¬·¤= »[(MeisterFee1)±{"20% Energie"}±]« # Rest Energie
@@ -18,7 +18,7 @@ Da Meister Rex nun weiß was Sein zauberstab kann:
         ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
               ¬·¤= »[(MeisterFee1)±{"0% Energie"}±]« # Rest Energie
     
- ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±]
+ ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±] # Prozentuale Verteilung
     ¬· »["Vögel Zwitschern"]«
         ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
               ¬·¤= »[(MeisterFee2)±{"30% Energie"}±]« # Rest Energie
@@ -29,7 +29,7 @@ Da Meister Rex nun weiß was Sein zauberstab kann:
         ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
               ¬·¤= »[(MeisterFee2)±{"0% Energie"}±]« # Rest Energie
     
- ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±]
+ ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±] # Prozentuale Verteilung
     ¬· »["Flüstern"]«
         ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
               ¬·¤= »[(MeisterFee3)±{"5% Energie"}±]« # Rest Energie
@@ -40,7 +40,7 @@ Da Meister Rex nun weiß was Sein zauberstab kann:
         ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
               ¬·¤= »[(MeisterFee3)±{"0% Energie"}±]« # Rest Energie
     
- ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±]
+ ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±] # Prozentuale Verteilung
     ¬· »["Sprechen"]«
         ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
               ¬·¤= »[(MeisterFee4)±{"14% Energie"}±]« # Rest Energie

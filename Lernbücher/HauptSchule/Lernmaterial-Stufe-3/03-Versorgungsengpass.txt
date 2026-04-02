@@ -198,29 +198,29 @@ wir es brauchen :
   ["Hasenfamilie"|(MeisterFee1)±{"Futter: 5"}±|(MeisterFee2)±{"Wasser: 5"}±] 
   ¬· ["Papa Hase"]
      ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-           ¬·¤: [±{"Futter: 4"}±]
+           ¬·¤: [±{"Futter: 4"}±(HelferFee1)]
      ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-           ¬·¤: [±{"Wasser: 4"}±]
+           ¬·¤: [±{"Wasser: 4"}±(HelferFee2)]
   ¬· ["Mama Hase"]
      ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-           ¬·¤: [±{"Futter: 4"}±]
+           ¬·¤: [±{"Futter: 3"}±(HelferFee1)]
      ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-           ¬·¤: [±{"Wasser: 4"}±]
+           ¬·¤: [±{"Wasser: 3"}±(HelferFee2)]
   ¬· ["Baby Hase"]
      ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-           ¬·¤: [±{"Futter: 4"}±]
+           ¬·¤: [±{"Futter: 2"}±(HelferFee1)]
      ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]« 
-           ¬·¤: [±{"Wasser: 4"}±]
+           ¬·¤: [±{"Wasser: 2"}±(HelferFee2)]
   ¬· ["Opa Hase"]
      ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-           ¬·¤: [±{"Futter: 4"}±]
+           ¬·¤: [±{"Futter: 1"}±(HelferFee1)]
      ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-           ¬·¤: [±{"Wasser: 4"}±]
+           ¬·¤: [±{"Wasser: 1"}±(HelferFee2)]
   ¬· ["Oma Hase"]
      ¬·¤= »[× ± (MeisterFee1) - Futter: 1 ±(HelferFee1) ×]«
-           ¬·¤: [±{"Futter: 4"}±]
+           ¬·¤: [±{"Futter: 0"}±(HelferFee1)]
      ¬·¤= »[× ± (MeisterFee2) - Wasser: 1 ±(HelferFee2) ×]«
-           ¬·¤: [±{"Wasser: 4"}±]
+           ¬·¤: [±{"Wasser: 0"}±(HelferFee2)]
   
 !¢
 

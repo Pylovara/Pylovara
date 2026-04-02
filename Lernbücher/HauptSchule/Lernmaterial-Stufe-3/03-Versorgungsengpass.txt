@@ -148,7 +148,14 @@ Das Prüft für uns Meister Igel mit seinem Sentiator Reflexen.
                  ¬·¤: ["Wacher Hase"] # Meister igel weiß das der hase wach ist
  ¶¶ ¬· »["Schnüffelt"]«
        
-
+ ¶¶ ¬· »["Schnüffelt"]«
+        ¬·¤: ["Kein Hase!"] # Die Kiste ist leer oder verschlossen
+             ¬· »["Meister Igel schüttelt den Kopf"]« # Meister igel weiß das der hase nicht da ist
+             ¬· »["Rex muss eine neue Kiste suchen"]« # Rex weiß von Meister Igel das der hase nicht da ist
+                 ¶ ¬·¤= [× Kein Hase! ×]«««ſ
+                        ¬·¤: ["Kein Hase!"] # Die Kiste ist leer oder verschlossen
+                 ¶¶ ¬·¤= [× Kein Hase! ×]«««ſ
+                         ¬·¤: ["Kein Hase!"] # Die Kiste ist leer oder verschlossen
 
 
 

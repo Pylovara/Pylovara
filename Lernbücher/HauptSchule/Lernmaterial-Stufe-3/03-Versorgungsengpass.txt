@@ -1,44 +1,71 @@
 # Pylovara Lernmaterial Stufe 3 - Versorgungsengpass
 
+Hallo kleiner Zauber Entwickler! 🌟
 
+Da Meister Rex nun weiß was Sein zauberstab kann:
 
-Hier bau ich den versorgungsengpass hin , für die Sentiatoren und ALU Logik.
-Aufgrundlage des gelernten = 
 
 ¢! 
  ["Wesen"|{"100% Energie"}]
  ¬· ["Bäume"|(MeisterFee1)±{"30% Energie"}±]
     ¬· »["Blätter Rascheln"]«
-        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+        ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]« 
+              ¬·¤= »[(MeisterFee1)±{"20% Energie"}±]« # Rest Energie
     ¬· »["Äste Knarren"]«
         ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+              ¬·¤= »[(MeisterFee1)±{"10% Energie"}±]« # Rest Energie
     ¬· »["Holz knistert"]«
         ¬·¤= »[× ± (MeisterFee1) - 10% ±(HelferFee1) ×]«
+              ¬·¤= »[(MeisterFee1)±{"0% Energie"}±]« # Rest Energie
     
  ¬· ["Tiere"|(MeisterFee2)±{"40% Energie"}±]
     ¬· »["Vögel Zwitschern"]«
         ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+              ¬·¤= »[(MeisterFee2)±{"30% Energie"}±]« # Rest Energie
     ¬· »["Insekten Summen"]«
         ¬·¤= »[× ± (MeisterFee2) - 10% ±(HelferFee2) ×]«
+              ¬·¤= »[(MeisterFee2)±{"20% Energie"}±]« # Rest Energie
     ¬· »["Rehe Springen"]«
         ¬·¤= »[× ± (MeisterFee2) - 20% ±(HelferFee2) ×]«
+              ¬·¤= »[(MeisterFee2)±{"0% Energie"}±]« # Rest Energie
     
  ¬· ["Geister"|(MeisterFee3)±{"6% Energie"}±]
     ¬· »["Flüstern"]«
         ¬·¤= »[× ± (MeisterFee3) - 1% ±(HelferFee3) ×]«
+              ¬·¤= »[(MeisterFee3)±{"5% Energie"}±]« # Rest Energie
     ¬· »["Weinen"]«
         ¬·¤= »[× ± (MeisterFee3) - 2% ±(HelferFee3) ×]«
+              ¬·¤= »[(MeisterFee3)±{"3% Energie"}±]« # Rest Energie
     ¬· »["Lachen"]«
         ¬·¤= »[× ± (MeisterFee3) - 3% ±(HelferFee3) ×]«
+              ¬·¤= »[(MeisterFee3)±{"0% Energie"}±]« # Rest Energie
     
  ¬· ["Menschen"|(MeisterFee4)±{"24% Energie"}±]
     ¬· »["Sprechen"]«
         ¬·¤= »[× ± (MeisterFee4) - 10% ±(HelferFee4) ×]«
+              ¬·¤= »[(MeisterFee4)±{"14% Energie"}±]« # Rest Energie
     ¬· »["Kreischen"]«
         ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+              ¬·¤= »[(MeisterFee4)±{"7% Energie"}±]« # Rest Energie
     ¬· »["Grummeln"]«
         ¬·¤= »[× ± (MeisterFee4) - 7% ±(HelferFee4) ×]«
+              ¬·¤= »[(MeisterFee4)±{"0% Energie"}±]« # Rest Energie
 !¢
+
+Und er Verstanden hat was die Feen dabei Tuen können .
+Ist jetzt die Frage wie Versorgungs Engpässe zu Lösen sind.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ¢! 

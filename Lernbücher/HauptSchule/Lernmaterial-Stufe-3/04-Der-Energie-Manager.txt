@@ -87,6 +87,32 @@ Ich versuche es euch in MCS zu erklären:
                                            ¬·¤: [±{"Energie: 40%"}|{"Watt: 40%"}±(HelferFee1)]
                                                 ¬·¤= »[× ± (MeisterFee1) - {"Energie: 30%"}|{"Watt: 40%"} ±(HelferFee1) ×]« # Verbraucher
                                                       
+!¢
 
+¢!
+
+»["Ladegerät"|(MeisterFee1)±{"Volt: 230"}|{"Watt: 60"}]«
+ ¬·¤= »[× ± (MeisterFee1) + {"Volt: 230"}|{"Watt: 60"} ±(HelferFee1) ×]« # Verbraucher
+       ¬·¤: [ (MeisterFee2)±{"Energie: 60%"}± ]
+            ¬·¤= »[¥ {"Load: ON"} ¥]«
+                  ¬·¤: [ (MeisterFee2)±{"Energie: 70%"}± ]
+            ¬·¤= »[¥ {"Load: ON"} ¥]«
+                  ¬·¤: [ (MeisterFee2)±{"Energie: 80%"}± ]
+            ¬·¤= »[¥ {"Load: ON"} ¥]«
+                  ¬·¤: [ (MeisterFee2)±{"Energie: 90%"}± ]
+            ¬·¤= »[¥ {"Load: ON"} ¥]«
+                  ¬·¤: [ (MeisterFee2)±{"Energie: 100%"}± ]
+                       ¬·¤= »[¥ {"Load: OFF"} ¥]«
+
+                       ¶ ¬· »["Batterie"|(MeisterFee2)±{"Energie: 100%"}]«
+                             ¬·¤: [ (MeisterFee2)±{"Energie: 100%"}± ]
+
+                       ¶¶ ¬· »[]
+
+
+
+
+»["Batterie"|(MeisterFee1)±{"Energie: 90%"}|{"Watt: 100%"}]
+    
 
                      

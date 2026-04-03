@@ -40,7 +40,7 @@ für die auswertung nutzen, wie hier im beispiel:
              ¬·¤= ["±Pfoten + Feel + Lange Ohren±(HelferFee1)"]
                   ¬· »[× (MeisterFee3)± (MeisterFee1) + (MeisterFee2) ± ×]
                       ¬·¤= ["±Pfoten + Feel + Lange Ohren + Hasen±(HelferFee3)"]
-                           ¬·¤= ["(4)±Osterhase±"]
+                           ¬·¤: ["(4)±Osterhase±"]
 
 !¢
 
@@ -146,27 +146,21 @@ Das ist der Mächtigste Zauber den du Je gesehen hast , nicht wahr?
 Das ist die Essenz der Programmierung und der Mathematik in einem vereinten System, 
 du lernst das im Zauberwald !
 
+„Schau mal, kleiner Zauberer! Wir können auch ganz kleine Dinge im Kessel speichern, damit wir sie nicht vergessen:
 
+¢!
+»[× (MeisterFee1)± 5 Goldmünzen ± ×]«
+ ¬·¤= ["Mein Schatz"] # Die Variable wird benannt
 
+Wenn wir eine Münze ausgeben:
+¬· »[× ±Mein Schatz± - 1 Münze ±(HelferFee1) ×]«
+    ¬·¤: ["Noch 4 Ringe im Schatz"] # Die Info zeigt uns den Rest vom Mein Schatz !
+!¢
 
+So weißt du immer, was in deinem Zauberbeutel steckt!“
 
-
-
-
-
-
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-Jetzt ist die Frage ob die Kinder schon Dreisatz können, ansonsten müssen wir das noch mal umformulieren.
-Ich hab bewusst die Dreisatz rechnung wieviele karotten die hasen brauchen in die variable gepackt statts einen Dreisatz zu rechnen.
-Es ist Quasi Dreisatz auf einer vereinfachten Prozentualer Geteilt Rechnung.
-
-ich denke nachfolgend werde ich kleinere Variable(Zauberkessel)-Zauberbeispiele bringen um das ganze zu festigen.
-Überforderung vermeiden!
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+„und hey  : lachen ist erlaubt , denn das ist die Essenz der Programmierung 
+und der Mathematik in einem vereinten System, du lernst das im Zauberwald !“
 
 
 

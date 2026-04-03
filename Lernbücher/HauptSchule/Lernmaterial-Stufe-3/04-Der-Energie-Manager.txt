@@ -121,15 +121,15 @@ oder Arbeiten wir mal Spaßes halber mit Roboter Spielzeug!
        ¬·¤: [±{"Energie: 70%"}|{"Watt: 0.500"}±(HelferFee1)]
             ¶ ¬· ["Optimus Prime"|(MeisterFee2)±{"Energie: 30%"}|{"Watt: 0.300"}]
                  ¬· »["Optimus Arme"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]« 
-                     ¬·¤= »["Load: IDLE" ]«
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
 
                  ¬· »["Optimus Beine"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]«
-                     ¬·¤= »["Load: IDLE" ]«
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
 
                  ¬· »["Optimus Kopf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
-                     ¬·¤= »["Load: IDLE" ]«
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
 
                  ¬· »["Optimus Rumpf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
-                     ¬·¤= »["Load: IDLE" ]«
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
 
 !¢

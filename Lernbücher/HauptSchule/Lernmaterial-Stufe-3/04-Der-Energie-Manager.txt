@@ -131,11 +131,16 @@ oder Arbeiten wir mal Spaßes halber mit Roboter Spielzeug!
                                  ¬·¤: ["LinkerArm"|{"Energie: 6%"}|{"Watt: 0.060"}] # Kondensator vor geladen
                                  ¬·¤: ["RechterArm"|{"Energie: 6%"}|{"Watt: 0.060"}] # Kondensator vor geladen
 
+                                      ¶ # AB HIER WÄREN GANZE ABLAUFPLÄNE MÖGLICH
+
+
                  ¬· »["Optimus Beine"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]«
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau | Kondensatoren
                            ¬·¤= »[¥BeineSensor: Puffer¥|{"Energie: 8%"}|{"Watt: 0.080"} ]«
                                  ¬·¤: ["LinkerFuß"|{"Energie: 4%"}|{"Watt: 0.040"}] # Kondensator vor geladen
                                  ¬·¤: ["RechterFuß"|{"Energie: 4%"}|{"Watt: 0.040"}] # Kondensator vor geladen
+
+                                      ¶ # AB HIER WÄREN GANZE ABLAUFPLÄNE MÖGLICH
 
                  ¬· »["Optimus Kopf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau | Kondensatoren
@@ -143,11 +148,14 @@ oder Arbeiten wir mal Spaßes halber mit Roboter Spielzeug!
                                  ¬·¤: ["Augen"|{"Energie: 3%"}|{"Watt: 0.030"}] # Kondensator vor geladen
                                  ¬·¤: ["Mund"|{"Energie: 3%"}|{"Watt: 0.030"}] # Kondensator vor geladen
 
+                                      ¶ # AB HIER WÄREN GANZE ABLAUFPLÄNE MÖGLICH
+
                  ¬· »["Optimus Rumpf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau | Kondensatoren
                            ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 4%"}|{"Watt: 0.040"} ]«
                                  ¬·¤: ["RumpfPlatte"|{"Energie: 1%"}|{"Watt: 0.010"}] # Kondensator vor geladen
 
+                                      ¶ # AB HIER WÄREN GANZE ABLAUFPLÄNE MÖGLICH
 !¢
 
 Stell dir vor, eine Stadtverwaltung nutzt diesen Zauberrand(Transaktionsrahmen) in einer Needle, 

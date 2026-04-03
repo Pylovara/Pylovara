@@ -2,14 +2,12 @@
 
 Hallo kleiner Zauber Entwickler! 🌟
 
-
-
-
+(NOCH DIE EINLEITUNG HIER EINFÜGEN)
 
 
 # 1. Der Energie Notstand 
 
-
+(Hierzubrauch ich erstmal eine ZAUBERWALD GESCHICHTE)
 
 »["Baterrie"|(MeisterFee10)±{"Energie: 80% watt 800"}±]«
   ¬·¤= »[× ± (MeisterFee10) - 30% ±(HelferFee10) ×]« # Verbraucher
@@ -62,6 +60,11 @@ SYMBOLISCHE DEKLARATION * ¥ <CACHE> ¥
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# 3. Der BOXIS Zauber
+
+(HIER MUSS ICH NOCH DEN ZAUBER RICHTIG DEFINIEREN UND ERKLÄREN)
+
+
 Das ist der BOXIS Zauber, der uns hilft, den Überblick zu behalten.
 wenn wir Versorgungs ängpässe haben weil die Batterien leer sind.
 
@@ -88,6 +91,8 @@ Ich versuche es euch in MCS zu erklären:
                                                 ¬·¤= »[× ± (MeisterFee1) - {"Energie: 30%"}|{"Watt: 40%"} ±(HelferFee1) ×]« # Verbraucher
                                                       
 !¢
+
+(HIER AUCH , DIE ABGEWANDELTE VERSION)
 
 ¢!
 
@@ -121,20 +126,27 @@ oder Arbeiten wir mal Spaßes halber mit Roboter Spielzeug!
        ¬·¤: [±{"Energie: 70%"}|{"Watt: 0.500"}±(HelferFee1)]
             ¶ ¬· ["Optimus Prime"|(MeisterFee2)±{"Energie: 30%"}|{"Watt: 0.300"}]
                  ¬· »["Optimus Arme"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]« 
-                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
-                           ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 12%"}|{"Watt: 0.120"} ]«
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau | Kondensatoren
+                           ¬·¤= »[¥ArmeSensor: Puffer¥|{"Energie: 12%"}|{"Watt: 0.120"} ]«
+                                 ¬·¤: ["LinkerArm"|{"Energie: 6%"}|{"Watt: 0.060"}] # Kondensator vor geladen
+                                 ¬·¤: ["RechterArm"|{"Energie: 6%"}|{"Watt: 0.060"}] # Kondensator vor geladen
 
                  ¬· »["Optimus Beine"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]«
-                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
-                           ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 8%"}|{"Watt: 0.080"} ]«
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau | Kondensatoren
+                           ¬·¤= »[¥BeineSensor: Puffer¥|{"Energie: 8%"}|{"Watt: 0.080"} ]«
+                                 ¬·¤: ["LinkerFuß"|{"Energie: 4%"}|{"Watt: 0.040"}] # Kondensator vor geladen
+                                 ¬·¤: ["RechterFuß"|{"Energie: 4%"}|{"Watt: 0.040"}] # Kondensator vor geladen
 
                  ¬· »["Optimus Kopf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
-                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
-                           ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 6%"}|{"Watt: 0.060"} ]«
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau | Kondensatoren
+                           ¬·¤= »[¥KopfSensor: Puffer¥|{"Energie: 6%"}|{"Watt: 0.060"} ]«
+                                 ¬·¤: ["Augen"|{"Energie: 3%"}|{"Watt: 0.030"}] # Kondensator vor geladen
+                                 ¬·¤: ["Mund"|{"Energie: 3%"}|{"Watt: 0.030"}] # Kondensator vor geladen
 
                  ¬· »["Optimus Rumpf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
-                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
+                     ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau | Kondensatoren
                            ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 4%"}|{"Watt: 0.040"} ]«
+                                 ¬·¤: ["RumpfPlatte"|{"Energie: 1%"}|{"Watt: 0.010"}] # Kondensator vor geladen
 
 !¢
 

@@ -126,12 +126,15 @@ oder Arbeiten wir mal Spaßes halber mit Roboter Spielzeug!
 
                  ¬· »["Optimus Beine"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]«
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
+                           ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 8%"}|{"Watt: 0.080"} ]«
 
                  ¬· »["Optimus Kopf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
+                           ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 6%"}|{"Watt: 0.060"} ]«
 
                  ¬· »["Optimus Rumpf"|(MeisterFee1)±{"Energie: 5%"}|{"Watt: 0.050"}]« 
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
+                           ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 4%"}|{"Watt: 0.040"} ]«
 
 !¢
 
@@ -139,3 +142,9 @@ Stell dir vor, eine Stadtverwaltung nutzt diesen Zauberrand(Transaktionsrahmen) 
 um das Stromnetz eines Viertels zu steuern. Wenn ein Krankenhaus 
 (Sektor A) mehr Watt braucht, schaltet der Energie-Manager die Straßenbeleuchtung 
 (Sektor B) automatisch in den IDLE-Modus. Das ist der Zauberwald in der echten Welt.
+
+"Meister Rex sagt: Optimus Prime schläft nicht einfach nur. 
+Er ist wie eine Katze vor dem Sprung! 
+Jeder Teil von ihm – Arme, Beine, Kopf – hält eine kleine Portion Zauberkraft (Puffer) bereit. 
+Wenn der BewegungsSensor etwas bemerkt, muss die Energie nicht erst mühsam aus der großen Batterie 
+geholt werden – sie ist schon im Muskel und lässt Optimus blitzschnell reagieren!"

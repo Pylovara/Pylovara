@@ -9,12 +9,17 @@ sondern greift einfach in die Dose.
 Genau das ist der BOXH-CACHE ¥. Es ist ein Speicher-Zauber, 
 der eine kleine Menge Energie (oder Wissen) ganz nah bei sich behält.
 
-Wache Kiste: Benutzt den Cache ständig, um blitzschnell zu reagieren.
+Wache Kiste: 
 
-Schlafende Kiste: Behält den Cache für später, falls sie plötzlich geweckt wird.
+      Benutzt den Cache ständig, um blitzschnell zu reagieren.
 
-Wir nennen ihn auch den Puffer-Zauber. Er sorgt dafür, dass wir immer einen 
-Vorsprung haben, falls die große Batterie mal eine Pause braucht oder wir ganz 
+Schlafende Kiste: 
+
+      Behält den Cache für später, falls sie plötzlich geweckt wird.
+
+Wir nennen ihn auch den Puffer-Zauber. 
+Er sorgt dafür, dass wir immer einen Vorsprung haben, 
+falls die große Batterie mal eine Pause braucht oder wir ganz 
 schnell ganz viel Kraft für einen Motor benötigen.“
 
 
@@ -160,9 +165,15 @@ Er ist der Puffer, der den Riesen weckt, bevor er gerufen wird!“
                        ¶ ¬· »["Batterie"|(MeisterFee2)±{"Energie: 100%"}]«
                              ¬·¤: [ (MeisterFee2)±{"Energie: 100%"}± ]
 
-                       ¶¶ ¬·¤= »[¥ {"Load: ON"} ¥]«
+                       ¶¶ ¬·¤= »[¥ {"Load: ON"} ¥]«««Ω
                              ¬·¤: [ (MeisterFee2)±{"Energie: 96%"}± ]
+                             ¬·¤: [ (MeisterFee2)±{"Energie: 97%"}± ]
+                             ¬·¤: [ (MeisterFee2)±{"Energie: 98%"}± ]
+                             ¬·¤: [ (MeisterFee2)±{"Energie: 99%"}± ]
+                             ¬·¤: [ (MeisterFee2)±{"Energie: 100%"}± ]
 
+                                  ¶ ¬· »["Batterie"|(MeisterFee2)±{"Energie: 100%"}]«
+                                        ¬·¤: [ (MeisterFee2)±{"Energie: 100%"}± ]
 !¢
     
 Oder arbeiten wir mal Spaßes halber mit Roboter Spielzeug, das selbst Erwachsene überzeugt ?:

@@ -59,16 +59,6 @@ MeisterRex Fing An :
   ¬·¤= »[× ± (MeisterFee9) - 30% ±(HelferFee9) ×]« # Verbraucher
   ¬·¤: [±{"Energie: -10% watt -100"}±(HelferFee9)] # Rest Energie
        ¬· »["Baterrie"|(MeisterFee11)±{"Energie: 100% watt 1000"}±]«
-           ¬·¤= »[× ± (MeisterFee11) - 10% ±(HelferFee11) ×]« # Verbraucher
-           ¬·¤: [±{"Energie: 90% watt 900"}±(HelferFee11)] # Rest Energie
-               ¬· »["Baterrie"|(MeisterFee11)±{"Energie: 90% watt 900"}±]«
-                   ¬·¤= »[× ± (MeisterFee11) - 10% ±(HelferFee11) ×]« # Verbraucher
-                   ¬·¤: [±{"Energie: 80% watt 800"}±(HelferFee11)] # Rest Energie
-                       ¬· »["Baterrie"|(MeisterFee11)±{"Energie: 80% watt 800"}±]«
-                           ¬·¤= »[× ± (MeisterFee11) - 10% ±(HelferFee11) ×]« # Verbraucher
-                           ¬·¤: [±{"Energie: 70% watt 700"}±(HelferFee11)] # Rest Energie
-                               ¬· »["Baterrie"|(MeisterFee11)±{"Energie: 70% watt 700"}±]«
-                                   ¬·¤= »[× ± (MeisterFee11) - 10% ±(HelferFee11) ×]« # Verbraucher
                                    
                                    Meister Rex könnte endlos hinzufügen ......
 
@@ -123,13 +113,13 @@ Ich versuche es euch in MCS zu erklären:
 »["Batterie"|(MeisterFee1)±{"Energie: 90%"}|{"Watt: 100%"}]
     ¬·¤= »[× ± (MeisterFee1) - {"Energie: 30%"}|{"Watt: 30%"} ±(HelferFee1) ×]« # Verbraucher
           ¬·¤: [±{"Energie: 60%"}|{"Watt: 70%"}±(HelferFee1)]
-               ¬·¤= »[¥"BOXIS-CACHE"¥ ±{"Energie: 70%"}|{"Watt: 100%"}]«
-                     ¬·¤: [±{"Energie: 70%"}|{"Watt: 100%"}±(HelferFee1)]
-                          ¬·¤= »[× ± (MeisterFee1) - {"Energie: 30%"}|{"Watt: 70%"} ±(HelferFee1) ×]« # Verbraucher
-                                ¬·¤: [±{"Energie: 40%"}|{"Watt: 30%"}±(HelferFee1)]
-                                     ¬·¤= »[¥"BOXIS-CACHE"¥ ±{"Energie: 40%"}|{"Watt: 40%"}]«
-                                           ¬·¤: [±{"Energie: 40%"}|{"Watt: 40%"}±(HelferFee1)]
-                                                ¬·¤= »[× ± (MeisterFee1) - {"Energie: 30%"}|{"Watt: 40%"} ±(HelferFee1) ×]« # Verbraucher
+               ¬·¤= »[¥Batterie-Puffer¥ (MeisterFee2)±{"Energie: 70%"}|{"Watt: 100%"}±]«
+                     ¬·¤: [±{"Energie: 70%"}|{"Watt: 100%"}±(HelferFee2)]
+                          ¬·¤= »[× ± (MeisterFee2) - {"Energie: 30%"}|{"Watt: 70%"} ±(HelferFee2) ×]« # Verbraucher
+                                ¬·¤: [±{"Energie: 40%"}|{"Watt: 30%"}±(HelferFee2)]
+                                     ¬·¤= »[¥Batterie-Puffer¥ (MeisterFee3)±{"Energie: 40%"}|{"Watt: 40%"}±]«
+                                           ¬·¤: [±{"Energie: 40%"}|{"Watt: 40%"}±(HelferFee3)]
+                                                ¬·¤= »[× ± (MeisterFee3) - {"Energie: 30%"}|{"Watt: 40%"} ±(HelferFee3) ×]« # Verbraucher
                                                       
 !¢
 
@@ -173,7 +163,7 @@ Er ist der Puffer, der den Riesen weckt, bevor er gerufen wird!“
                              ¬·¤: [ (MeisterFee2)±{"Energie: 100%"}± ]
 
                                   ¶ ¬· »["Batterie"|(MeisterFee2)±{"Energie: 100%"}]«
-                                        ¬·¤: [ (MeisterFee2)±{"Energie: 100%"}± ]
+                                        ¬·¤= »[¥ {"Load: OFF"} ¥]«««Exit 
 !¢
     
 Oder arbeiten wir mal Spaßes halber mit Roboter Spielzeug, das selbst Erwachsene überzeugt ?:
@@ -232,11 +222,11 @@ Denkt immer daran Kinder:
 
 „Der Speicherzauber ¥¥ in unserer Kiste [] hat immer eine speicherkammer die mehr speichern kann als 
 die einzelnen Verbraucher zusammen.
-Darum ist es wichtig immer genug Energie in der Kiste zu haben, Jeder konektor  für ein kondensator  
-oder motor muss immer genug Energie haben um den motor zu starten!“
+Darum ist es wichtig immer genug Energie in der Kiste zu haben, Jeder konektor für einen Kondensator  
+oder Motor muss immer genug Energie haben um den motor zu starten!“
 
-Diese Start energie können wir bei allen dingen mit einplanen und so den Motor oder verbraucher 
-steuern und regeln. 
+Diese Start Energie können wir bei allen dingen mit eingeplant und so den Motor oder verbraucher 
+Steuern wie Regeln zu können. 
 
 ---
 > [Info für die Großen]------------------------------------------

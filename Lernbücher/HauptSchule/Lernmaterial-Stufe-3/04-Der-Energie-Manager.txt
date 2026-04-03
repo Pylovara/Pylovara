@@ -122,6 +122,7 @@ oder Arbeiten wir mal Spaßes halber mit Roboter Spielzeug!
             ¶ ¬· ["Optimus Prime"|(MeisterFee2)±{"Energie: 30%"}|{"Watt: 0.300"}]
                  ¬· »["Optimus Arme"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]« 
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
+                           ¬·¤= »[¥BewegungsSensor: Puffer¥|{"Energie: 12%"}|{"Watt: 0.120"} ]«
 
                  ¬· »["Optimus Beine"|(MeisterFee1)±{"Energie: 10%"}|{"Watt: 0.100"}]«
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
@@ -133,3 +134,8 @@ oder Arbeiten wir mal Spaßes halber mit Roboter Spielzeug!
                      ¬·¤= »[¥Load: IDLE¥ ]« # SpeicherZauber | Puffer Aufbau
 
 !¢
+
+Stell dir vor, eine Stadtverwaltung nutzt diesen Zauberrand(Transaktionsrahmen) in einer Needle, 
+um das Stromnetz eines Viertels zu steuern. Wenn ein Krankenhaus 
+(Sektor A) mehr Watt braucht, schaltet der Energie-Manager die Straßenbeleuchtung 
+(Sektor B) automatisch in den IDLE-Modus. Das ist der Zauberwald in der echten Welt.

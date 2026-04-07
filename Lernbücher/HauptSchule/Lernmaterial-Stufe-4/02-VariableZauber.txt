@@ -3,10 +3,10 @@
 Hallo kleiner Zauber Entwickler! 🌟
 
 Wir haben jetzt die Zauber gelernt, die wir brauchen um
-um mit den neuen zauber für Meister Rex arbeiten zu können.
+um mit den neuen Zauber für Meister Rex arbeiten zu können.
 
 Wir haben auch gelernt das wir jede Zauberkiste mit
-unserer eigenen ausrechnung bestücken können.
+unserer eigenen ausrechnungszauber bestücken können.
 
 Und wir haben Gelernt Das die Feen Viel mehr können als
 wir dachten. Sie können nicht nur zaubern, sondern auch
@@ -27,7 +27,8 @@ selbst herstellen.
 Ein Zauberkessel besteht aus diesen Zauber:
 
 - »[× ×]« # Zauberkessel in einer Wachen Zauberkiste
-   ¬·¤= ["     "] # Auswertungszauber
+   ¬·¤= »["     "]« # Rechnungszauber definierter Zaubername
+         ¬·¤: ["     "] # Auswertungszauber des Zaubernamens
 
 Wir können dabei die Feen als variablen zauber nutzen, das heißt wir können die Feen
 für die auswertung nutzen, wie hier im beispiel:
@@ -92,33 +93,33 @@ Du kannst Mächtige dinge erschaffen wenn du weisst was du tust, wie zum beispie
                     ¬· »[× (MeisterFee3)± (MeisterFee1) + (MeisterFee2) ± ×]«
                         ¬·¤= ["±Gras + Wasser + Sonne ± Pflanze±(MeisterFee3)"]
                              ¬·¤= ["(MeisterFee4)±Karotte±"]
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 1
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 2
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 3
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 4
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 5
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 6
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 7
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 8
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 9
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 10
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 11
-                                  ¬· »["±Karotten Sammeln±(HelferFee4)"]« # 12
-                                      ¶ ¬·¤= ["Karotten: 12 Stk."] # für den Load-Balancers
-                                             # (Hasen Füttern oder prozentuale Plus Rechnung für die hasen bedienen für geteilt rechnungen)
-                                             ¬· ["HasenFamilie"|{"(MeisterFee5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
-                                                ¬· ["PapaHase"]
-                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                         ¬·¤= »[× ± 8 Stk. ±(Fee5) ×]« # Rest
-                                                ¬· ["MamaHase"]
-                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                         ¬·¤= »[× ± 4 Stk. ±(Fee5) ×]« # Rest
-                                                ¬· ["BabyHase"]«
-                                                   ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                         ¬·¤= »[× ± 0 Stk. ±(Fee5) ×]« # Rest
-                                                    ¶ ¬· ["HasenFamilie Schläft Satt"]
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 1
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 2
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 3
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 4
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 5
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 6
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 7
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 8
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 9
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 10
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 11
+                                  ¬·¤: »["±Karotten Sammeln±(HelferFee4)"]« # 12
+                                        ¶ ¬·¤= ["Karotten: 12 Stk."] # für den Load-Balancers
+                                               # (Hasen Füttern oder prozentuale Plus Rechnung für die hasen bedienen für geteilt rechnungen)
+                                               ¬· ["HasenFamilie"|{"(MeisterFee5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
+                                                  ¬· ["PapaHase"]
+                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                           ¬·¤: [× ± Karotten: 8 Stk. ±(Fee5) ×] # Rest
+                                                  ¬· ["MamaHase"]
+                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                           ¬·¤: [× ± Karotten: 4 Stk. ±(Fee5) ×] # Rest
+                                                  ¬· ["BabyHase"]«
+                                                     ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
+                                                           ¬·¤: [× ± Karotten: 0 Stk. ±(Fee5) ×] # Rest
+                                                      ¶ ¬· ["HasenFamilie Schläft Satt"]
 
-                                                    ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
+                                                      ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
 
                                     ¶¶ ¬· »["Karotten Sammeln bis 12 Stk."]
                                            ¬· »["±Karotten Sammeln±(4)"]«««Ω
@@ -128,13 +129,13 @@ Du kannst Mächtige dinge erschaffen wenn du weisst was du tust, wie zum beispie
                                                           ¬· ["HasenFamilie"|{"(5)± Karotten: 12 Stk. ±"}] # Load-Balancers für Prozentuale abfütterungen
                                                              ¬· »["PapaHase"]«
                                                                 ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                                      ¬·¤= »[× ± 8 Stk. ±(Fee5) ×]«
+                                                                      ¬·¤: [× ± Karotten: 8 Stk. ±(Fee5) ×]
                                                              ¬· »["MamaHase"]«
                                                                  ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                                       ¬·¤= »[× ± 4 Stk. ±(Fee5) ×]«
+                                                                       ¬·¤: [× ± Karotten: 4 Stk. ±(Fee5) ×]
                                                              ¬· »["BabyHase"]«
                                                                  ¬·¤= »[× ± (MeisterFee5) - Futter: 4 Stk. ±(Fee5) ×]«
-                                                                       ¬·¤= »[× ± 0 Stk. ±(Fee5) ×]«
+                                                                       ¬·¤: [× ± 0 Stk. ±(Fee5) ×]
                                                     ¶ ¬· ["HasenFamilie Schläft Satt"]
 
                                                     ¶¶ ¬· »["HasenFamilie Spielt Satt"]«
@@ -161,23 +162,6 @@ So weißt du immer, was in deinem Zauberbeutel steckt!“
 
 „und hey  : lachen ist erlaubt , denn das ist die Essenz der Programmierung 
 und der Mathematik in einem vereinten System, du lernst das im Zauberwald !“
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ---

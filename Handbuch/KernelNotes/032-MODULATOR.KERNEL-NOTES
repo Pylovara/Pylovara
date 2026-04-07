@@ -278,10 +278,42 @@ MCS-CMD ~ GENERIERE-AKTAN-ENDE
 
 BEDINGUNG:  
 ¢! 
- »[<BOKK>]
+ »[<BOKH-ELEMENT>]
 !¢
 
 GENERIERE ® «
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER EINZELNDE BOXIS AUSWAHL SCHLIEẞUNG
+
+MCS-CMD ~ GENERIERE-POIWERK-REXK
+
+ MODULATOR ® MODUL 
+
+BEDINGUNG:  
+¢! 
+ »[<BOKH-ELEMENT>]«
+  ¬·¤=
+!¢
+
+GENERIERE ® ¬·¤= »[
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# KONTROLLE ÜBER EINZELNDE BOXIS AUSWAHL SCHLIEẞUNG
+
+MCS-CMD ~ GENERIERE-POIWERK-REXK
+
+ MODULATOR ® MODUL 
+
+BEDINGUNG:  
+¢! 
+ »[<BOKH-ELEMENT>]«
+  ¬·¤: »[
+!¢
+
+GENERIERE ® ¬·¤: »[
 
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [10:59:06|So Feb 22 2026] MARKENBRANDT                  #

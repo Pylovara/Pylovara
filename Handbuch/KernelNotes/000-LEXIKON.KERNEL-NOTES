@@ -13,21 +13,21 @@
  #   13  · + 0  WARP           | 14  · + 0   NAVIGATOR              #
  #   15  · + 0  IDENTIFIKATION | 16  · + 0   MCS-CMD                #
  #   17  · + 0  DATEITYPEN     | 18  · + 0   VATRON                 #
- #   19  · + 0  RETRON         | 20  Ŋ - X   MATRIX                 #
+ #   19  · + 0  RETRON         | 20  · - X   MATRIX                 #
  #   21  Ŋ - X  HERZSCHLAG     | 22  · + 0   KKIS                   #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG          #   
  #   30  · + 0  ABSOLULATOR    | 31  · + 0   SCHABLONATOR           #
  #   32  · + 0  MODULATOR      | 33  Ŋ + 0   CHIPONATOR             #
- #   34  Ŋ - X  MORPHIC        |                                    #
+ #   34  Ŋ - X  MORPHIC        | 35  Ŋ - X   BAUMODUS               #
 ### ==== ##### == # === ### SYSTEM LOGIKEN  ### === # == ##### === ###
  #   NR HINWEIS INFO-ID FÜR SYSTEMRELEVANTE LOGIKEN                 #
  #   800  BSK   BAUSTEINSCHALTUNGSKREISLAUF                         #
  #   801  KWG   KOGNITIVESWÄHRUNGSGELDSYSTEM                        #
- #   802  BAM    BAUMODUS | VARIABLEN | FORMELN 
+ #   802   | VARIABLEN | FORMELN 
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
  #   993   L1_COREKERNELMANDAT               #  #  # #  ##  #  ## # #
- #   994   L2_AUTHORRIGHTS                   #    # #  #  #    #   ##
+ #   994   L2_AUTHORRIGHTS                   #    ###  #  #    #   ##
  #   995   L3_COMMERCIALLICENSING            ##  Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  #   #  # # # #   ##
  #   997   L5_POST_MORTEM-CONTROL            #  #   #   # #  ##  #  #

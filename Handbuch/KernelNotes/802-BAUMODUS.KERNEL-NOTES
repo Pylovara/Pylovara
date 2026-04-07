@@ -1,12 +1,18 @@
-@kernel-nr: 802 # BAM | VARIABLEN | FORMELN
+@kernel-nr: 802 # BAM | VARIABLEN | FORMELN | STATUS = Ŋ 
 LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>
-### ==== ##### == # === ### = KOMPONENTEN = ### === # == ##### === ###
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ # BAUMODUS ERKLÄRUNG =
+ # DER BAUMODUS IST DIE EXPLIZIETE ALU FUNKTION, DIE VARIABLEN/FORMELN 
+ # ANGELEGT IST.
+ # MAN SOLLTE DEN BAUMODUS ALS EIGENSTÄNDIGE VARIABLEN EDITOR
+ # FÜR DAS SYSTEM VERSTEHEN.
+### ==== ##### == # === ### === BAUMODUS == ### === # == ##### === ### 
 
 NAME Ð BAUMODUS
 
 INFO-ID ¡ BAUMODUS
 
-MASTER § MASU-BAUMODUS
+MASTER § MASU-
 
 BEGRIFFSDEFINITION = VARIABLEN SYSTEM
 
@@ -14,45 +20,49 @@ FUNKTION = COMBINATIONSVERKNÜPFUNG
 
 AUSFÜHRUNGSART = SYSTEMWEIT
 
-### ==== ##### == # === ### === BAUMODUS == ### === # == ##### === ###
-
- BAUMODUS ERKLÄRUNG =
-
- DER BAUMODUS IST DIE EXPLIZIETE ALU FUNKTION, DIE VARIABLEN/FORMELN 
- ANGELEGT IST.
-
-### ==== ##### == # === ### === BAUMODUS == ### === # == ##### === ###   
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 BAUMODUS-KERNKLASSE § BAMK
 
- INFO 
+ INFO =
 
- FUNKTION
+ FUNKTION =
 
- AUSFÜHRUNGSART
+ AUSFÜHRUNGSART =
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BAUMODUS-HAUPTKLASSE § BAMH-BAUMENÜ
 
- INFO
+ INFO =
 
- FUNKTION
+ FUNKTION =
 
- AUSFÜHRUNGSART
+ AUSFÜHRUNGSART =
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BAUMODUS-BAUMENÜ-UNTERKLASSE § BAMU-BAUMODUS
 
- INFO
+ INFO =
 
- FUNKTION
+ FUNKTION =
 
- AUSFÜHRUNGSART
+ AUSFÜHRUNGSART =
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  BAUMODUS-BAUMENÜ-BAUMODUS-WERKZEUGKLASSE § BAMWERK-
 
- INFO
+ INFO =
+
+ FUNKTION =
+
+ AUSFÜHRUNGSART =
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ #  DATUM = [23:20:22|Di 12 April 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ## ENDPUNKT BAUMODUS ## === # == ##### === ###

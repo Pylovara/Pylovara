@@ -36,9 +36,9 @@ BAUMODUS-KERNKLASSE § BAMK
 
  INFO = Baurahmen für Variablendefinitionen
 
- FUNKTION = vorgefertigte Boxis Struktur für Variablendefinitionen
+ FUNKTION = vorgefertigte Boxis Struktur für Variablendefinitionen IN BOXH-ALU
 
- AUSFÜHRUNGSART = 
+ AUSFÜHRUNGSART = AUTO GENERIERUNG
 
 ABSOLULATOR :
 
@@ -166,13 +166,6 @@ BEDINGUNG: <REXO-KORDI>-<REXAN-STATUS>
  AUSFÜHRUNGSART = DIREKTE EINGABE ENTER 
 
 
-
-
-
-
-
-
-
 MCS-CMD ~ GENERIERE-BOXH-ALU
 
  MODULATOR ® MODUL 03-06
@@ -185,64 +178,15 @@ BEDINGUNG:
 GENERIERE ® × <BOXH-ALU> ×
 
 
-
-
-
-
-
-
-
-
-
-
-
 BOXIS-HAUPTKLASSE § BOXH-ALU
-
- INFO-ID § BOXIS-ALU
-
- INFO = NUTZT DIREKT DIE ALU
-
- FUNKTION = RECHNUNG|SACHE
-
-MORPHIC-1
-
- BOXH-ALU * BOXALU
-
 SYMBOLISCHE DEKLARATION * × <ALU0> ×
 
- SYMBOL IN WORTEN = MALZEICHEN INHALT MALZEICHEN
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 BOXIS-ALU-UNTERKLASSE § BOXU-ALU-START
-
- INFO = ALU <EINGABEN|AUSGABE> STARTPUNKT
-
- FUNKTION = RECHNUNG|SACHE
-
-MORPHIC-1
-
- BOXH-ALU-START * BOXALUS
-
 SYMBOLISCHE DEKLARATION * × <ALU1>
 
- SYMBOL IN WORTEN = MALZEICHEN INHALT 
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 BOXIS-ALU-ANKERKLASSE § BOXAN-ALU-ENDE
-
- INFO = ALU <EINGABEN|AUSGABE> ENDPUNKT
-
- FUNKTION = GIBT RECHNUNG|SACHE ZUR ALU
-
-MORPHIC-1
-
- BOXH-ALU-ENDE * BOXALUE
-
 SYMBOLISCHE DEKLARATION *   <ALU2> ×
 
- SYMBOL IN WORTEN = INHALT MALZEICHEN
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

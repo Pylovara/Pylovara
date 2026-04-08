@@ -31,8 +31,8 @@ MASTER         § MASU-ABSOLULATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 00 # MASTER ANSTEUERUNG
- ABSK = MASK-MASU-<ELEMENT>
-BEDINGUNG: MASU-<ELEMENT>
+ ABSK = MASK-MASU-ELEMENT
+BEDINGUNG: <MASU-ELEMENT>
     START: <MASK>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE)
@@ -45,6 +45,11 @@ BEDINGUNG: <TRANK>
     START: ¢!
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 01-02 # TRANSAKTIONSRAHMEN ENDE MINIMAL BEDINGUNG
+ ABSK = TRANK-TRANH-RUN-TRANU-START-MASK
+BEDINGUNG: <TRANK>-<MASK>
+    START: ¢! <MASK>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 01-03 # TRANSAKTIONSRAHMEN ENDE MINIMAL BEDINGUNG
  ABSK = TRANK-TRANH-RUN-TRANU-START-MASK-TRANAN-ENDE
 BEDINGUNG: <TRANK>-<MASK>-<TRANK>
     START: ¢! <MASK> !¢

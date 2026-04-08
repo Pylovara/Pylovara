@@ -45,7 +45,7 @@ SYMBOLISCHE-DEKLARATION * ¬
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-REX-PROZESS-UNTERKLASSE § REXU-FLÄCHE
+REX-PROZESS-UNTERKLASSE § REXU-FLÄCHE-NR
 
  INFO = AKTIVIERT ERSTEN MAIN FLÄCHE  
 
@@ -54,15 +54,6 @@ REX-PROZESS-UNTERKLASSE § REXU-FLÄCHE
 MORPHIC-1
 
  REXU-FLÄCHE * REXFLÄCHE
-
-SYMBOLISCHE-DEKLARATION * ·
-
- SYMBOL IN WORTEN = MITTELPUNKT
-
- BEISPIEL:
- »[× 1 + 1 ×]
-  ¬· »['sudo pacman -Syyu']«
-  ¬· »[,reboot,]«««ſ
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -79,11 +70,6 @@ MORPHIC-1
 SYMBOLISCHE-DEKLARATION * ·
 
  SYMBOL IN WORTEN = MITTELPUNKT
-
- BEISPIEL:
- »[× 1 + 1 ×]
-  ¬· »['sudo pacman -Syyu']«
-  ¬· »[,reboot,]«««ſ
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -337,7 +323,7 @@ SYMBOLISCHE-DEKLARATION * ↓
         ['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK = POIU-START-POIWERK-<ELEMENT>-REXH-SPACECREATOR-REXU-WORKSPACE-<NR>-REXO-KORDI-REXAN-<ELEMENT>
+ # SBSK = POIU-START-POIWERK-ELEMENT-REXH-SPACECREATOR-REXU-WORKSPACE-NR-REXO-KORDI-REXAN-<ELEMENT>
  # RBSK = POIK-REXK                                               
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT                  #

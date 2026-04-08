@@ -34,11 +34,11 @@ BAUMODUS-KERNKLASSE § BAMK
 
  BAUMODUS-HAUPTKLASSE § BAMH-BAUMENÜ
 
- INFO =
+ INFO = Baurahmen für Variablendefinitionen
 
- FUNKTION =
+ FUNKTION = vorgefertigte Boxis Struktur für Variablendefinitionen
 
- AUSFÜHRUNGSART =
+ AUSFÜHRUNGSART = 
 
 ABSOLULATOR :
 
@@ -166,6 +166,13 @@ BEDINGUNG: <REXO-KORDI>-<REXAN-STATUS>
  AUSFÜHRUNGSART = DIREKTE EINGABE ENTER 
 
 
+
+
+
+
+
+
+
 MCS-CMD ~ GENERIERE-BOXH-ALU
 
  MODULATOR ® MODUL 03-06
@@ -177,7 +184,17 @@ BEDINGUNG:
 
 GENERIERE ® × <BOXH-ALU> ×
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
 
 BOXIS-HAUPTKLASSE § BOXH-ALU
 

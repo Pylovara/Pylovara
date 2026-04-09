@@ -54,11 +54,11 @@ SYMBOLISCHE DEKLARATION * [
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-PROTEIN-SOFT-START-SYSTEMKLASSE § POISYS-START-MASK
+PROTEIN-SOFT-START-SYSTEMKLASSE § POISYS-BOXK
 
  INFO = STARTPUNKT BEDINGUNG
 
- FUNKTION = KOMPLETTER <MASK> STARTPUNKT
+ FUNKTION = KOMPLETTER <BOXK> STARTPUNKT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -136,7 +136,7 @@ SYMBOLISCHE DEKLARATION * ID
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-PROTEIN-SOFT-START-MASK-ANKERKLASSE § POIAN-ENDE
+PROTEIN-SOFT-START-BOXK-ANKERKLASSE § POIAN-ENDE
 
  INFO = ENDPUNKT DES PROTEIN
 
@@ -159,9 +159,9 @@ SYMBOLISCHE DEKLARATION * ]
  # - POIWERK-NAVIK = Navigator-Anbindung (Ziele)
  # - POIWERK-RETK  = Retron-Einspeisung (Ŧ-Regulation)
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK = POIU-START-BOXU-<ELEMENT>-<INHALT>-BOXU-<ELEMENT>-POIAN-ENDE 
- # VBSK = POIU-START-POIWERK-<ELEMENT>-BOXK-POIAN-ENDE              
- # RBSK = POIK-POIWERK-<ELEMENT>-BOXK-POIK
+ # SBSK = POIU-START-POISYS-BOXK-POIAN-ENDE 
+ # SBSK = POIU-START-POIWERK-ELEMENT-BOXK-POIAN-ENDE              
+ # RBSK = POIK-POIWERK-ELEMENT-BOXK-POIK
  # RBSK = POIK-BOXK-POIK  
  # RBSK = POIK-BOXK-POOK-POIK                                          
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###

@@ -54,7 +54,7 @@ SYMBOLISCHE DEKLARATION * ¢!
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-TRANSAKTIONSRAHMEN-RUN-START-SYSTEMKLASSE § TRANSYS-START-MASK
+TRANSAKTIONSRAHMEN-RUN-START-SYSTEMKLASSE § TRANSYS-MASK
 
  INFO = STARTPUNKT BEDINGUNG
 
@@ -77,8 +77,8 @@ SYMBOLISCHE DEKLARATION * !¢
  SYMBOL IN WORTEN = MASK-AUSRUFEZEICHEN CENT-ZEICHEN
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK = TRANU-START-MASU-<ELEMENT>-TRANAN-ENDE                    #
- # VBSK = TRANH-RUN-TRANU-START-MASU-<ELEMENT>-TRANAN-ENDE                                #
+ # SBSK = TRANH-RUN-TRANU-START-TRANSYS-MASK-TRANAN-ENDE            #
+ # VBSK = TRANH-RUN-TRANU-START-TRANSYS-MASK                        #
  # RBSK = TRANK-MASK-TRANK                                          #
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [03:10:53|So 12 Jul 2025] MARKENBRANDT                  #

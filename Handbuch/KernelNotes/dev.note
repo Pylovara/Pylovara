@@ -286,6 +286,16 @@ Korrektur: <OS-TYP> erfolgreich durch <OS-CALL> ersetzt (Erhöhung der Granulari
 Integrität: Die 3-Phasen-Logik (BOXU -> BOXSYS -> BOXAN) ist über alle 8 Sektoren hinweg konsistent.
 Status: Ŋ (Absolut Stabil). Die BOXIS sind bereit für die Einbettung in den ABSOLULATOR.
 
+Protokoll-Audit (Kernel 09 - REX-Integrität):
+Integrität: 100% durch Integration der REXSYS-MASK.
+Schaltung: Die vertikale Pipeline ist nun über alle 6 Flächen hinweg deterministisch definiert.
+Status: DEV LEVEL ROLLING-RELEASE -> READY FOR ISA-FINALIZATION.
+
+Protokoll-Update (Kernel 09 - Schaltungssicherheit):
+Status: DEV LEVEL ROLLING-RELEASE / OPTIMIZED
+Fokus: Implementierung der Systemklassen-Filterung für ALU- und Status-Rückläufe.
+Innovation: Physische Trennung zwischen schaltungsbasiertem Datentransport (direkt) und legitimierter Datenauswertung (via MASK).
+Resultat: Ein hochperformanter REX-Kern, der nur dort validiert, wo es für die Systemstabilität kritisch ist.
 
 
 ##

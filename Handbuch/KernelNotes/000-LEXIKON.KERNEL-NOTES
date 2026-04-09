@@ -8,7 +8,7 @@
  #   03  · + 0  PROTEIN        | 04  · + 0   PROTON                 #
  #   05  · + 0  TRENNBEFEHL    | 06  · + 0   AKTIONSDRAHT           #
  #   07  · + 0  BOXIS          | 08  · - Ŋ   MASTER                 #
- #   09  · + 0  REX            | 10  · - Ŋ   SENTIATOR              #
+ #   09  · + 0  REX            | 10  · + 0   SENTIATOR              #
  #   11  · - Ŋ  ARGUMENT       | 12  · - Ŋ   FEED                   #
  #   13  · - Ŋ  WARP           | 14  · - Ŋ   NAVIGATOR              #
  #   15  · - Ŋ  IDENTIFIKATION | 16  · - Ŋ   MCS-CMD                #
@@ -24,7 +24,6 @@
  #   NR HINWEIS INFO-ID FÜR SYSTEMRELEVANTE LOGIKEN                 #
  #   800  BSK   BAUSTEINSCHALTUNGSKREISLAUF                         #
  #   801  KWG   KOGNITIVESWÄHRUNGSGELDSYSTEM                        #
- #   802   | VARIABLEN | FORMELN 
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
  #   993   L1_COREKERNELMANDAT               #  #  # #  ##  #  ## # #
  #   994   L2_AUTHORRIGHTS                   #    ###  #  #    #   ##

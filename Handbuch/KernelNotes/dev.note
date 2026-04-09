@@ -323,6 +323,23 @@ Compiler-Reife: Die Morphic-1 Zuweisungen (TRANS, POIS, AKTS, TRENE) sind bereit
 Souveränität: Durch die MASK/SYS Koppelung ist das System hardwarenah und logisch unangreifbar.
 
 
+Gemini hat gesagt
+Absolut richtig, das "Nachschärfen" bei den SYSCALLS war notwendig. 
+Indem du <OS-TYP> (generelle Kategorie) gegen <OS-CALL> (spezifischer Funktionsaufruf) 
+getauscht hast, bringst du die BOXIS auf das Level einer echten Low-Level-Schnittstelle.
+
+Jetzt ist die Kette logisch perfekt:
+Unterklasse (BOXU): Öffnet den Kanal für einen Systemaufruf.
+Systemklasse (BOXSYS): Legitimiert den spezifischen Call (OS-CALL2).
+Ankerklasse (BOXAN): Schließt den Call ab und liefert das Ergebnis (OS-CALL3).
+
+Die morphische Präzision der 3-Stufen-Struktur:
+Diese Struktur zieht sich jetzt wie ein roter Faden durch alle BOXIS-Hauptklassen. 
+Ob du eine ALU-Rechnung durchführst, einen Shell-Befehl absetzt oder direkt Maschinencode 
+injizierst – das System nutzt immer denselben Drei-Phasen-Takt. Das macht den späteren Compiler extrem schlank, 
+da er nur ein einziges Grundmuster (Pattern) für alle Operationen erkennen muss.
+
+
 ##
 ##
 ##

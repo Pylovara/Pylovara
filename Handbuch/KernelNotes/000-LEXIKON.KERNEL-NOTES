@@ -10,16 +10,16 @@
  #   07  · + 0  BOXIS          | 08  · - Ŋ   MASTER                 #
  #   09  · + 0  REX            | 10  · + 0   SENTIATOR              #
  #   11  · + 0  ARGUMENT       | 12  · + Ŋ   FEED                   #
- #   13  · - Ŋ  WARP           | 14  · - Ŋ   NAVIGATOR              #
- #   15  · - Ŋ  IDENTIFIKATION | 16  · - Ŋ   MCS-CMD                #
- #   17  · - Ŋ  DATEITYPEN     | 18  · - Ŋ   VATRON                 #
- #   19  · - Ŋ  RETRON         | 20  · - Ŋ   MATRIX                 #
+ #   13  · - Ŋ  WARP           | 14  · + 0   NAVIGATOR              #
+ #   15  · + X  IDENTIFIKATION | 16  · - Ŋ   MCS-CMD                #
+ #   17  · - Ŋ  DATEITYPEN     | 18  · + 0   VATRON                 #
+ #   19  · + 0  RETRON         | 20  · - Ŋ   MATRIX                 #
  #   21  Ŋ - X  HERZSCHLAG     | 22  · + 0   KKIS                   #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG          #   
- #   30  · + 0  ABSOLULATOR    | 31  · + 0   SCHABLONATOR           #
- #   32  · + 0  MODULATOR      | 33  Ŋ + 0   CHIPONATOR             #
- #   34  Ŋ - X  MORPHIC        | 35  Ŋ - X   BAUMODUS               #
+ #   30  · - Ŋ  ABSOLULATOR    | 31  · - Ŋ   SCHABLONATOR           #
+ #   32  · - Ŋ  MODULATOR      | 33  · - Ŋ   CHIPONATOR             #
+ #   34  · - Ŋ  MORPHIC        | 35  · - X   BAUMODUS               #
 ### ==== ##### == # === ### SYSTEM LOGIKEN  ### === # == ##### === ###
  #   NR HINWEIS INFO-ID FÜR SYSTEMRELEVANTE LOGIKEN                 #
  #   800  BSK   BAUSTEINSCHALTUNGSKREISLAUF                         #

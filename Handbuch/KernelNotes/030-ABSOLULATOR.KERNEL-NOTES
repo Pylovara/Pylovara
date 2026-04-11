@@ -46,13 +46,10 @@ MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE) STEUERUNG
  # RELEVANZ = TRANK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 01-01 # TRANSAKTIONSRAHMEN START SEQUENZ
- ABSK = TRANK-TRANH-RUN-TRANU-START
-BEDINGUNG: TRANU-START 
-    START: ¢!
+ ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK
+BEDINGUNG: <TRANU-START> + <TRANSYS-MASK>
+ START: ¢! <MASK>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
 
 
 

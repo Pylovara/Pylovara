@@ -81,12 +81,12 @@ MODULATOR ® MODUL 03 # PROTON HARDWARE STEUERUNG
  # RELEVANZ = POOK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 03-01 # PROTON HARDWARE START SEQUENZ
- ABSK = 
-BEDINGUNG: 
- START: 
+ ABSK = POOK-POOH-HARD-POOU-START-POOWERT-WERT
+BEDINGUNG: <POOU-START> + <POOWERT-WERT>
+ START: {<WERT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 03-02 # PROTON HARDWARE ENDE SEQUENZ
- ABSK = 
+ ABSK = POOK-POOH-HARD-POOU-START-POOWERT-WERT-TRENSYS-BOXK-WERT-POOAN-ENDE
 BEDINGUNG: 
  START: 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

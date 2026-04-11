@@ -37,7 +37,7 @@ MODULATOR ® MODUL 00
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 00-01 # MASTER SYSTEM ANSTEUERUNG
  ABSK = MASK-MASH-REGISTER-MASU-ELEMENT
-BEDINGUNG: <MASK>
+BEDINGUNG: MASK
     START: MASU-ELEMENT
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE) STEUERUNG

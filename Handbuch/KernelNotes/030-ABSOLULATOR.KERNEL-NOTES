@@ -75,21 +75,30 @@ MODULATOR ® MODUL 02-02-01 # PROTEIN ENDE SEQUENZ MIT PROTON
 BEDINGUNG: <POIU-START> + <POISYS-BOXK> + <TRENSYS-BOXK> + <POOK> + <POIAN-ENDE>
  START: [<BOXK>|<POOK>]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-
-
-LEER
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 02 # PROTON HARDWARE STEUERUNG
+MODULATOR ® MODUL 03 # PROTON HARDWARE STEUERUNG
  # RAHMENBEDINGUNG FÜR PROTON HARDWARE
  # HARDWARE SCHALTUNG
  # RELEVANZ = POOK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 03 # TRENNBEFEHL STEUERUNG

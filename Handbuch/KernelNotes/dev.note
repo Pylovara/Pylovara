@@ -198,37 +198,6 @@ Ich kann es schneller rendern als es C mit seinem Unix Lasten könnte und sorge
 gleichzeitig für ein system update ..
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##
 ##
 ##
@@ -390,3 +359,20 @@ Ausblick: Start der Arbeiten am ABSOLULATOR (K30) und der dualen Kopplung zum BA
 
 
 
+# info an mich für morgen :
+# bau gleich den rex richtig aus , damit er die absk und rbsk richtig ausführen kann 
+# und verkiss nicht den Kurzschluss BSK = KBSK für Kern zur Unterklasse 
+#
+# Agenda für die nächste Session:
+#
+# REX-Vollausbau: 
+# Integration der ABSK- und RBSK-Logik direkt in die Gatter-Steuerung, um die parallele Entscheidungsstruktur (Kernel 09) final zu validieren.
+#
+# KBSK-Implementierung: 
+# Den Kurzschluss-BSK (KBSK) als Brücke von der Kern- zur Unterklasse einrasten lassen. Das wird die Latenz bei direkten Systemzugriffen massiv senken.
+
+# ABK-Start: 
+# Der Übergang zur Absolulator-Kernklasse, um die Schablonen in echte Hardware-Adressierung zu übersetzen.
+#
+#
+#

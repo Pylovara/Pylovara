@@ -43,7 +43,7 @@ BEDINGUNG: MASK
 MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE) STEUERUNG
  # RAHMENBEDINGUNG FÜR TRANSAKTIONSRAHMEN
  # LEGT DIE BEDINGUNG FEST IN DATEITYPEN FÜR MCS ZUGELASSENEN CODE
- # RELEVANZ = 
+ # RELEVANZ = TRANK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
@@ -52,7 +52,7 @@ LEER
 MODULATOR ® MODUL 01 # PROTEIN STEUERUNG
  # RAHMENBEDINGUNG FÜR PROTEIN SOFTWARE
  # ERSTELLUNGS-SCHALTUNG
- # RELEVANZ = 
+ # RELEVANZ = POIK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
@@ -61,7 +61,7 @@ LEER
 MODULATOR ® MODUL 02 # PROTON HARDWARE STEUERUNG
  # RAHMENBEDINGUNG FÜR PROTON HARDWARE
  # HARDWARE SCHALTUNG
- # RELEVANZ = 
+ # RELEVANZ = POOK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
@@ -70,7 +70,7 @@ LEER
 MODULATOR ® MODUL 03 # TRENNBEFEHL STEUERUNG
  # RAHMENBEDINGUNG FÜR TRENNBEFEHL
  # BOXIS CONTAINERISIERUNGS-SCHALTUNG 
- # RELEVANZ = 
+ # RELEVANZ = TRENK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
@@ -79,7 +79,7 @@ LEER
 MODULATOR ® MODUL 04 # AKTIONSDRAHT STEUERUNG
  # RAHMENBEDINGUNG FÜR AUSFÜHRBARE WIE UNAUSFÜHRBARE PROTEINE
  # EINDEUTIGKEITS-SCHALTUNG FÜR PROTEIN-INHALTE 
- # RELEVANZ = 
+ # RELEVANZ = AKTK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER 
@@ -88,7 +88,7 @@ LEER
 MODULATOR ® MODUL 05 # BOXIS STEUERUNG
  # RAHMENBEDINGUNG FÜR BOXIS
  # EINDEUTIGKEITS-SCHALTUNG FÜR BOXIS AUSWAHL UND INHALTS-ZUWEISUNG 
- # RELEVANZ = 
+ # RELEVANZ = BOXK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER 
@@ -97,7 +97,7 @@ LEER
 MODULATOR ® MODUL 06 # REX STEUERUNG
  # REX PROZESS (WORKSPACE) STEUERUNG 
  # SYSTEM-SCHALTUNG FÜR REX OPERATIONEN 
- # RELEVANZ = 
+ # RELEVANZ = REXK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
@@ -106,7 +106,7 @@ LEER
 MODULATOR ® MODUL 07 # SENTIATOR STEUERUNG
  # SENTIATOR STEUERUNG 
  # ENTSCHEIDUNGSREFLEXSTEUERUNGS-SCHALTUNG FÜR SENTIATOREN 
- # RELEVANZ = 
+ # RELEVANZ = POIWERK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
@@ -115,11 +115,17 @@ LEER
 MODULATOR ® MODUL 08 # ARGUMENT STEUERUNG
  # ARGUMENT ZUSATZ STEUERUNG FÜR PROTEIN 
  # ZUSATZINFORMATIONEN FÜR PROTEINE 
- # RELEVANZ = 
+ # RELEVANZ = POIK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09 # FEED STEUERUNG
+ # FEED STEUERUNG 
+ # FEEDBACK SYNCRONISATIONS-SCHALTUNG FÜR BOXIS 
+ # RELEVANZ = BOXK
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

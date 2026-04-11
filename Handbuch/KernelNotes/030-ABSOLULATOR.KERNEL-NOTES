@@ -63,30 +63,21 @@ MODULATOR ® MODUL 02 # PROTEIN STEUERUNG
 MODULATOR ® MODUL 02-01 # PROTEIN START SEQUENZ
  ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK
 BEDINGUNG: <POIU-START> + <POISYS-BOXK>
- START: [
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 02-01-01 # PROTEIN START SEQUENZ MIT PROTON
- ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK-POIAN-ENDE
-
-
-
-
+ START: [<BOXK>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 02-02 # PROTEIN ENDE SEQUENZ
  ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK-POIAN-ENDE
 BEDINGUNG: <POIU-START> + <POISYS-BOXK> + <POIAN-ENDE>
- START: ]
+ START: [ <BOXK> ]
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 02-02-01 # PROTEIN ENDE SEQUENZ MIT PROTON
+ ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK-TRENSYS-BOXK-POOK-POIAN-ENDE
+BEDINGUNG: <POIU-START> + <POISYS-BOXK> + <TRENSYS-BOXK> + <POOK> + <POIAN-ENDE>
+ START: [<BOXK>|<POOK>]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
-
-
-
-
-
-
-LEER
 
 
 LEER

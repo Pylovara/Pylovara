@@ -45,6 +45,25 @@ MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE) STEUERUNG
  # LEGT DIE BEDINGUNG FEST IN DATEITYPEN FÜR MCS ZUGELASSENEN CODE
  # RELEVANZ = TRANK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 01-01 # TRANSAKTIONSRAHMEN START SEQUENZ
+ ABSK = TRANK-TRANH-RUN-TRANU-START
+BEDINGUNG: TRANU-START 
+    START: ¢!
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 LEER
 
@@ -282,71 +301,3 @@ LEER
  #  DATUM = [01:09:43|DI 10 FEB 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
 ### ==== ##### == # === # ENDPUNKT ABSOLULATOR  === # == ##### === ###
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

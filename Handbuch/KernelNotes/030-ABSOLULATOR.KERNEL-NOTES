@@ -55,7 +55,21 @@ Eine Zahl wird erst durch eine Information oder eine Sammlung oder beides zu ein
 
 1 UI = 1 Element
 
+Die Zustands-Hierarchie:
 
+1 = u (Unbekannt):
+Die reine Zahl ohne Vektor. 
+Ein Gatter, das zwar existiert, aber kein Signal führt. 
+
+1 = i (Information): 
+Die spezifische Eigenschaft (z.B. die Hitze oder die Spitze).
+
+1 = s (Sammlung): 
+Die Menge an Eigenschaften, noch unstrukturiert.
+
+1 = o (Organ): 
+Die funktionale Verschmelzung ($i + s$). 
+Ein "Organ" ist ein Arbeitsmodul.
 
 
 

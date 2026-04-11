@@ -80,8 +80,16 @@ MODULATOR ® MODUL 03 # PROTON HARDWARE STEUERUNG
  # HARDWARE SCHALTUNG
  # RELEVANZ = POOK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-LEER
+MODULATOR ® MODUL 03-01 # PROTON HARDWARE START SEQUENZ
+ ABSK = 
+BEDINGUNG: 
+ START: 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 03-02 # PROTON HARDWARE ENDE SEQUENZ
+ ABSK = 
+BEDINGUNG: 
+ START: 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

@@ -109,14 +109,15 @@ Kritik sektor validieren =
 
 auszug :
 
-es geht dabei weniger um die absk den die beruhen auf dem MORPHIC prinzip und sind Wort zusammensetzungs abhängig .... die schaltung läuft (solange kein fehler im tastatur layout ist) einwandfrei ...
+es geht dabei weniger um die absk den die beruhen auf dem MORPHIC prinzip und sind Wort zusammensetzungs abhängig .... 
+die schaltung läuft (solange kein fehler im tastatur layout ist) einwandfrei ...
 bei der mathematik geht es eher darum wenn man dinge in der variable dann berechnen will wie
 
 
 
 »[× 1 + Apfel ×]«
 
-¬·¤= »[× 1 Apfel ×]«
+ ¬·¤= »[× 1 Apfel ×]«
 
 
 
@@ -125,14 +126,10 @@ das man diese Variable nicht nur 2 schichtig sondern mehrschichtig machen kann ,
 
 
 »[× 1 + Apfel ×]«
-
-¬·¤= »[× 1 Apfel ×]«
-
-¬·¤: [" Unbekannter Apfel"]
-
-¬·¤= »[× 1u + Apfel ×]«
-
-¬·¤: [" 1 Unbekannter Apfel"]«
+ ¬·¤= »[× 1 Apfel ×]«
+       ¬·¤: [" Unbekannter Apfel"]
+            ¬·¤= »[× 1u + Apfel ×]«
+                  ¬·¤: [" 1 Unbekannter Apfel"]«
 
 
 

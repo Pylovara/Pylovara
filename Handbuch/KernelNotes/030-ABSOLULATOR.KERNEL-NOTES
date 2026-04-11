@@ -50,9 +50,26 @@ MODULATOR ® MODUL 01-01 # TRANSAKTIONSRAHMEN START SEQUENZ
 BEDINGUNG: <TRANU-START> + <TRANSYS-MASK>
  START: ¢! <MASK>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
+MODULATOR ® MODUL 01-02 # TRANSAKTIONSRAHMEN ENDE SEQUENZ
+ ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK-TRANAN-ENDE
+BEDINGUNG: <TRANU-START> + <TRANSYS-MASK> + <TRANAN-ENDE>
+ START: ¢! <MASK> !¢
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 01 # PROTEIN STEUERUNG
+ # RAHMENBEDINGUNG FÜR PROTEIN SOFTWARE
+ # ERSTELLUNGS-SCHALTUNG
+ # RELEVANZ = POIK
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 02-01 # PROTEIN START SEQUENZ
+ ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK
+BEDINGUNG: <POIU-START> + <POISYS-BOXK>
+ START: [
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 02-02 # PROTEIN ENDE SEQUENZ
+ ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK-POIAN-ENDE
+BEDINGUNG: <POIU-START> + <POISYS-BOXK> + <POIAN-ENDE>
+ START: ]
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
@@ -64,12 +81,6 @@ BEDINGUNG: <TRANU-START> + <TRANSYS-MASK>
 
 LEER
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 01 # PROTEIN STEUERUNG
- # RAHMENBEDINGUNG FÜR PROTEIN SOFTWARE
- # ERSTELLUNGS-SCHALTUNG
- # RELEVANZ = POIK
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 LEER
 

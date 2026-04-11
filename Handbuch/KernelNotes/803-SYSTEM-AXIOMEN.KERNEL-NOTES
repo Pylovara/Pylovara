@@ -361,10 +361,25 @@ sondern "n, i, s oder o?".
 
 zwischen notiz von mir:
 
+handgeschriebene variablen sollte ich per argument zusatz kennzeichnen , dann wäre auch klar 
+woher die variable in einer trank stammt ... hardcodiert etc ...
 
-ich denke ich werde das prinzip direkt von Binarys zu BSK übersetzen, um die Logik zu vereinfachen und um die Latenz zu verringern gegen pico sekunden.......
+««V1 ««V2 ««V3 ««V4 ««V5 ««V6 ««V7 ««V8 ««V9 ««V10
 
 
+wäre dann 
 
+»[× 1n + 1i ×]«««V1
+ ¬·¤= [× 1i ×]
+      ¬¤: ["1 Information"]
+      
+man sieht das die alu durch unausfürbares protein direkt von der alu wieder zurück gegeben würde
+weil sie nicht ausführbar ist und daher nicht hardgecodet rein geschrieben wurde ... 
 
+wenn ich das jetzt auf das Variablen system erweitere mit hardcodierten 
 
+»[× 1n + 1i ×]«««V1
+ ¬·¤= »[× 1i ×]«««V2
+      ¬¤: ["1 Information"]
+
+könnte das prinzip einwandfrei funktionieren .

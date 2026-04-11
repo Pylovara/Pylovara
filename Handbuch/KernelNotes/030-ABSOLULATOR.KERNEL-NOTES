@@ -30,8 +30,15 @@ MASTER         § MASU-ABSOLULATOR
  FUNKTION = SCHALTET KETTEN EIN UND AUS
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
+MODULATOR ® MODUL 00 # MASTER ANSTEUERUNG
+ ABSK = MASK-MASH-REGISTER-MASU-ELEMENT
+BEDINGUNG: <MASK>
+    START: MASU-ELEMENT
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE)
+ # RAHMENBEDINGUNG FÜR TRANSAKTIONSRAHMEN
+ # LEGT DIE BEDINGUNG FEST IN DATEITYPEN FÜR MCS ZUGELASSENEN CODE
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

@@ -75,7 +75,9 @@ Die Element-Formel:
                     1u + 1i = 1UI
 
 
-
+Ein Signal, das nur als 1u (Unbekannt) reinkommt, wird vom VATRON (K18) sofort als "unvollständig" erkannt.
+Erst wenn die Kette die Stufe 1UI oder 1OI erreicht, gibt der SENTIATOR (K10) den Impuls frei.
+Der BauModus (K35) baut also keine "Zahlen", sondern er montiert Elemente.
 
 
 

@@ -414,20 +414,3 @@ Legacy Warp, 0 / 1 (Binär): "Nostalgiker, Rohdaten-Import, C, Scala, Unix-Altla
 Pylovara TRANK,"n, i, s, o (Zustand)": "Hochsichere Industrie-Standards, KI-Koppelung, Souveräne Logik."
 
 ===============================================================================================
-
-
-┌─────────────────────────────────────────────────────────┐
-│                    ZUSTANDSAUTOMAT                      │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│   1n ──(+1i)──→ 1UI ──(+1s)──→ 1o (ausführbar)          │
-│     │              │                                    │
-│     │              └──→ ¬¤:["unbekannt, Herkunft"]      │
-│     │                                                   │
-│     └──(+1r)────→ 1r ──(+1i)──→ 1i ──(+1s)──→ 1o        │
-│                                                         │
-│   1u ──(+1i)──→ 1UI (gleicher Pfad)                     │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-
-

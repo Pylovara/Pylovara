@@ -1,3 +1,59 @@
+@kernel-nr: 30 ABSOLULATOR | STATUS = DEV LEVEL ROLLING-RELEASE
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ #      DER PYLOVARA BAUSTEINSCHALTUNGSKREISLAUF = BSK              #
+ #      DER ABSOLUTEBAUSTEINSCHALTUNGSKREISLAUF  = ABSK             #
+ #   DEVONOTE = DAS WIRD EIN VOLLWERTIGES SCHALTREGISTERKERN        #
+ # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1 (META-EBENE)     #
+### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###                                                      #
+ # PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT> #
+### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
+
+NAME           Ð ABSOLULATOR
+
+ INFO-ID       = ABSOLULATOR
+
+MASTER         § MASU-ABSOLULATOR
+
+ BEGRIFFSDEF    = (SYSTEM-SCHALTUNG)
+
+ FUNKTION       = DEFINITION BAUSTEINSCHALTUNGSKREIS BSK
+
+ AUSFÜHRUNGSART = ABSOLUTERSCHALTKREIS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ ABSOLULATOR-KERNKLASSE § ABK
+
+ INFO = ABSOLUTERBAUSTEINSCHALTUNGSKREISLAUF
+
+ FUNKTION = SCHALTET KETTEN EIN UND AUS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #
 #!!! Ausnahmezustand Neuaufbau !!!
 #

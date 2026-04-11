@@ -35,7 +35,7 @@ MODULATOR ® MODUL 00 # MASTER ANSTEUERUNG
 BEDINGUNG: <MASK>
     START: MASU-ELEMENT
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE)
+MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE) STEUERUNG
  # RAHMENBEDINGUNG FÜR TRANSAKTIONSRAHMEN
  # LEGT DIE BEDINGUNG FEST IN DATEITYPEN FÜR MCS ZUGELASSENEN CODE
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -43,6 +43,11 @@ MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE)
 
 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 01 # PROTEIN STEUERUNG
+ # RAHMENBEDINGUNG FÜR PROTEINE
+ # REFLEX SCHALTUNG
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

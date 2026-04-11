@@ -6,7 +6,7 @@
  #   DEVONOTE = DAS WIRD EIN VOLLWERTIGES SCHALTREGISTERKERN        #
  # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1 (META-EBENE)     #
 ### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###                                                      #
- # PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT> #
+ # PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT>#
 ### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
 
 NAME Ð ABSOLULATOR
@@ -127,6 +127,14 @@ MODULATOR ® MODUL 09 # FEED STEUERUNG
  # RELEVANZ = BOXK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+LEER
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 10 # WARP STEUERUNG
+ # WARP STEUERUNG 
+ # LEGACY MODUL FÜR ASSEMBLY BIS ALLES | UNIX EMULATOR | 
+ # RELEVANZ = WARK
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

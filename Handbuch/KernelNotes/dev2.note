@@ -378,9 +378,9 @@ weil sie nicht ausführbar ist und daher nicht hardgecodet rein geschrieben wurd
 
 wenn ich das jetzt auf das Variablen system erweitere mit hardcodierten 
 
-»[× 1n + 1i ×]«««V1
- ¬·¤= »[× 1i ×]«««V2
-      ¬¤: ["1 Information"]
+»[× 1n + 1i ×]«««V1 # Variable 1 für ALU
+ ¬·¤= »[× 1i ×]«««V2 # Variable 2 Ergebnis für ALU
+      ¬¤: ["1 Information"] # Rückantwort 
 
 könnte das prinzip einwandfrei funktionieren .
 
@@ -395,6 +395,23 @@ und für Pylovara selbst wird es angeschaltet sobald es um ein Transaktionsrahme
 Ich muss damit sämtlichen legacy müll von C bis Scala und weis der geier wer was gebaut hat , ausnahmslos bei roh daten 
 in den Warp verfrachten ... das ist der einzige weg um das system sauber zu halten ...
 
+
+In dem Bezug sollte ich aufschreiben das argumente vielleicht selbst als 
+Variablen behandelt werden sollten ... oder ob ich das Standart mäßig über
+den FEED regeln sollte ... 
+
+FEED Variante :
+»[× (1)± 1n + 1i ± ×]«««V1 # Variable 1 für ALU
+ ¬·¤= »[× (2)± 1i ± ×]«««V2 # Variable 2 Ergebnis für ALU
+      ¬¤: ["1 Information"] # Rückantwort 
+          ¬·¤= »[× (1) + (2) ×]«
+                ¬·¤: ["2 Informationen"]
+
+
+Bereich,Logik,Zielgruppe
+Legacy Warp, 0 / 1 (Binär): "Nostalgiker, Rohdaten-Import, C, Scala, Unix-Altlasten."
+
+Pylovara TRANK,"n, i, s, o (Zustand)": "Hochsichere Industrie-Standards, KI-Koppelung, Souveräne Logik."
 
 ===============================================================================================
 
@@ -412,3 +429,5 @@ in den Warp verfrachten ... das ist der einzige weg um das system sauber zu halt
 │   1u ──(+1i)──→ 1UI (gleicher Pfad)                     │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
+
+

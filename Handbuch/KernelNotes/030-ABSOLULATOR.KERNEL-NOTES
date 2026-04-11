@@ -30,7 +30,7 @@ MASTER         § MASU-ABSOLULATOR
  FUNKTION = SCHALTET KETTEN EIN UND AUS
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 00 # MASTER ANSTEUERUNG
+MODULATOR ® MODUL 00 # MASTER SYSTEM ANSTEUERUNG
  ABSK = MASK-MASH-REGISTER-MASU-ELEMENT
 BEDINGUNG: <MASK>
     START: MASU-ELEMENT
@@ -41,14 +41,23 @@ MODULATOR ® MODUL 01 # TRANSAKTIONSRAHMEN (HÜLLE) STEUERUNG
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
+LEER
 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 01 # PROTEIN STEUERUNG
- # RAHMENBEDINGUNG FÜR PROTEINE
- # REFLEX SCHALTUNG
+ # RAHMENBEDINGUNG FÜR PROTEIN SOFTWARE
+ # ERSTELLUNGS-SCHALTUNG
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+
+LEER
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 02 # PROTON HARDWARE STEUERUNG
+ # RAHMENBEDINGUNG FÜR PROTON HARDWARE
+ # HARDWARE SCHALTUNG
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

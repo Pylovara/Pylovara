@@ -125,6 +125,26 @@ MODULATOR ® MODUL 04-03 # CONTAINER SPALTUNG FÜR HARDWARE-PROTON
 BEDINGUNG: <TRENSYS-POOK>
  START: | 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05 # AKTIONSDRAHT STEUERUNG
+ # RAHMENBEDINGUNG FÜR AUSFÜHRBARE WIE UNAUSFÜHRBARE PROTEINE
+ # EINDEUTIGKEITS-SCHALTUNG FÜR PROTEIN-INHALTE 
+ # RELEVANZ = AKTK
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05-01 # AKTIONS-IMPULS (START)
+ ABSK = AKTK-AKTH-IMPULS-AKTU-START
+BEDINGUNG: <AKTU-START>
+ START: »
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -130,17 +130,37 @@ MODULATOR ® MODUL 05 # AKTIONSDRAHT STEUERUNG
  # EINDEUTIGKEITS-SCHALTUNG FÜR PROTEIN-INHALTE 
  # RELEVANZ = AKTK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 05-01 # AKTIONS-IMPULS (START)
+MODULATOR ® MODUL 05-01 # AKTIONSDRAHT START
  ABSK = AKTK-AKTH-IMPULS-AKTU-START
 BEDINGUNG: <AKTU-START>
  START: »
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05-01-01 # AKTIONSDRAHT START MIT PROTEIN
+ ABSK = AKTK-AKTH-IMPULS-AKTU-START-AKTSYS-POIK
+BEDINGUNG: <AKTU-START> + <POIK>
+ START: »<POIK>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 05-02 # AKTIONSDRAHT ENDE
+ ABSK = AKTK-AKTH-IMPULS-AKTU-START-AKTSYS-POIK-POIAN-ENDE
+BEDINGUNG: <AKTU-START> + <POIK> + <POIAN-ENDE>
+ START: »<POIK>«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
 
 
+!!! Notiz : 
 
+Boar Alter muss ich strullern , kaaaaaffeeeeee ...... 
+Zigarette !!!!!! ...... 
+
+soll ich noch ne bratwurst mampfen ? hmmm 
+
+also moment ich muss erstmal mein gemütszustand stabilisieren und 
+dann gehts weiter ....
+
+das wird eine massive baustelle hier , aber ich schaff das schon 
 
 
 

@@ -341,7 +341,8 @@ MODULATOR ® MODUL 07 # REX STEUERUNG
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 07-01 # REX START SEQUENZ
  ABSK = REXK-REXH-PROZESS
-
+BEDINGUNG: <REXH-PROZESS> 
+ START: ¬
 
 
 

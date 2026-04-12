@@ -145,6 +145,15 @@ MODULATOR ® MODUL 05-02 # AKTIONSDRAHT ENDE
 BEDINGUNG: <AKTU-START> + <POIK> + <POIAN-ENDE>
  START: »<POIK>«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+!!!!!!! MORGEN NOCHMAL DRÜBER GUCKEN , ICH HAB WARSCHEINS EINEN KLEINEN
+FEHLER BEI DER MAPPING SCHALTUNG IM BERREICH BEDINGUNGEN !!!!!!!!!!!
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 06 # BOXIS STEUERUNG
  # RAHMENBEDINGUNG FÜR BOXIS
  # EINDEUTIGKEITS-SCHALTUNG FÜR BOXIS AUSWAHL UND INHALTS-ZUWEISUNG 
@@ -270,16 +279,55 @@ MODULATOR ® MODUL 06-06-03 # BOXIS MCS-CMD END SEQUENZ
 BEDINGUNG: <BOXU-MCS-CMD-START> + <MCCK3> + <BOXAN-MCS-CMD-ENDE
  START: ~ <MCCK3> ~
 ### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-07 # BOXIS CACHE 
+ ABSK = BOXK-BOXH-CACHE
+BEDINGUNG: <BOXH-CACHE> + <CACHE>
+ START: ¥ <CACHE> ¥
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-07-01 # BOXIS CACHE START SEQUENZ
+ ABSK = BOXK-BOXH-CACHE-BOXU-CACHE-START
+BEDINGUNG: <BOXU-CACHE-START> + <CACHE1>
+ START: ¥ <CACHE1>
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-07-02 # BOXIS CACHE INHALT SEQUENZ
+ ABSK = BOXK-BOXH-CACHE-BOXU-CACHE-START-BOXSYS-CACHE2
+BEDINGUNG: <BOXU-CACHE-START> + <CACHE2>
+ START: ¥ <CACHE2>
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-07-03 # BOXIS CACHE INHALT SEQUENZ
+ ABSK = BOXK-BOXH-CACHE-BOXU-CACHE-START-BOXSYS-CACHE2-BOXAN-CACHE-ENDE
+BEDINGUNG: <BOXU-CACHE-START> + <CACHE3> + <BOXAN-CACHE-ENDE>
+ START: ¥ <CACHE3> ¥
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-08 # BOXIS MASCHINENCODE 
+ ABSK = BOXK-BOXH-MASCHINENCODE
+BEDINGUNG: <BOXH-MASCHINENCODE> + <B-MASCHINENCODE>
+ START: º <B-MASCHINENCODE> º
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-08-01 # BOXIS MASCHINENCODE START SEQUENZ
+ ABSK = BOXK-BOXH-MASCHINENCODE-BOXU-MASCHINENCODE-START
+BEDINGUNG: <BOXH-MASCHINENCODE> + <B-MASCHINENCODE1>
+ START: º <B-MASCHINENCODE1>
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-08-02 # BOXIS MASCHINENCODE INHALT SEQUENZ
+ ABSK = BOXK-BOXH-MASCHINENCODE-BOXU-MASCHINENCODE-START-BOXSYS-MASCHINENCODE2
+BEDINGUNG: <BOXH-MASCHINENCODE> + <B-MASCHINENCODE2>
+ START: º <B-MASCHINENCODE2>
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-08-02 # BOXIS MASCHINENCODE END SEQUENZ
+ ABSK = BOXK-BOXH-MASCHINENCODE-BOXU-MASCHINENCODE-START-BOXSYS-MASCHINENCODE2-BOXAN-MASCHINENCODE-ENDE
+BEDINGUNG: <BOXH-MASCHINENCODE> + <B-MASCHINENCODE3> + <BOXAN-MASCHINENCODE-ENDE>
+ START: º <B-MASCHINENCODE3>
+### ==== ##### == # === ### =============== ### === # == #####
 
 
 
- 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Ich seh gerade nix mehr .... es werden 2-4 fehler drinne sein ... 
+erstmal ausruhen .....
 
-
-
-
-
-
+den morgen muss das sitzen den dann kommt der König ... REX
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 

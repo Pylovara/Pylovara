@@ -112,17 +112,17 @@ MODULATOR ® MODUL 04 # TRENNBEFEHL STEUERUNG
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 04-01 # CONTAINER SPALTUNG FÜR BOXIS
  ABSK: TRENK-TRENH-WAND-TRENU-START-TRENSYS-BOXK-TRENAN-ENDE
-BEDINGUNG: <TRENSYS-BOXK>
+BEDINGUNG: <BOXK> + <TRENSYS-BOXK> + <BOXK>
  START: | 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 04-02 # CONTAINER SPALTUNG FÜR HYBRID-BOXIS
  ABSK: TRENK-TRENH-WAND-TRENU-START-TRENSYS-COMBO-TRENAN-ENDE
-BEDINGUNG: <TRENSYS-COMBO>
+BEDINGUNG: <BOXK> + <TRENSYS-COMBO> + <POOK>
  START: | 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 04-03 # CONTAINER SPALTUNG FÜR HARDWARE-PROTON
  ABSK: TRENK-TRENH-WAND-TRENU-START-TRENSYS-POOK-TRENAN-ENDE
-BEDINGUNG: <TRENSYS-POOK>
+BEDINGUNG: <POOU-START> + <POON-NAME> + <POOR-SEMI> + <POOWERT-WERT> + <TRENSYS-POOK> + <POOU-START> + <POON-NAME> + <POOR-SEMI> + <POOWERT-WERT> + <POOAN-ENDE>
  START: | 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05 # AKTIONSDRAHT STEUERUNG
@@ -145,41 +145,68 @@ MODULATOR ® MODUL 05-02 # AKTIONSDRAHT ENDE
 BEDINGUNG: <AKTU-START> + <POIK> + <POIAN-ENDE>
  START: »<POIK>«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-
-
-!!! Notiz : 
-
-Boar Alter muss ich strullern , kaaaaaffeeeeee ...... 
-Zigarette !!!!!! ...... 
-
-soll ich noch ne bratwurst mampfen ? hmmm 
-
-also moment ich muss erstmal mein gemütszustand stabilisieren und 
-dann gehts weiter ....
-
-das wird eine massive baustelle hier , aber ich schaff das schon 
-
-
-
-
-
-
-
-
-
-
-
-LEER 
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 05 # BOXIS STEUERUNG
  # RAHMENBEDINGUNG FÜR BOXIS
  # EINDEUTIGKEITS-SCHALTUNG FÜR BOXIS AUSWAHL UND INHALTS-ZUWEISUNG 
  # RELEVANZ = BOXK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 LEER 
 

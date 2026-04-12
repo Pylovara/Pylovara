@@ -60,6 +60,13 @@ MODULATOR ® MODUL 02 # PROTEIN STEUERUNG
  # ERSTELLUNGS-SCHALTUNG
  # RELEVANZ = POIK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
 MODULATOR ® MODUL 02-01 # PROTEIN START SEQUENZ
  ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK
 BEDINGUNG: <POIU-START> + <POISYS-BOXK>
@@ -145,6 +152,15 @@ MODULATOR ® MODUL 05-02 # AKTIONSDRAHT ENDE
 BEDINGUNG: <AKTU-START> + <POIK> + <POIAN-ENDE>
  START: »<POIK>«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
 
 
 
@@ -317,28 +333,6 @@ MODULATOR ® MODUL 06-08-02 # BOXIS MASCHINENCODE END SEQUENZ
 BEDINGUNG: <BOXH-MASCHINENCODE> + <B-MASCHINENCODE3> + <BOXAN-MASCHINENCODE-ENDE>
  START: º <B-MASCHINENCODE3> º
 ### ==== ##### == # === ### =============== ### === # == #####
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

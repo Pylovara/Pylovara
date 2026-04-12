@@ -1,53 +1,3 @@
-#########################################################################
-
- aufbau der symbiotischen isa und der symbolik von 
- 86_64| AMD ARM | RISC-V | MIPS | POWERPC | SPARC | ARM64 | RISC-V64 | POWERPC64 | SPARC64 |
-
- # risc-v mit beschleuniger iots
-
- - GENERATIVERMASCHINENCODEKNOTENPUNKTCOMBINATOR = GMKC 
-
- Du tippst:                ¶ »[ 'apt update' ]«
-                              ↓
-SCHABLONATOR:                 ↓   (kennt Tabelle)
-                              ↓
-BSK-Kette:        POIU-START-POIWERK-SENTK-SENTH-FLEX-...
-                              ↓
-ABSOLULATOR:                  ↓   (kennt BSK-Strukturen)
-                              ↓
-Absolute Schaltung:  AKTU-START-POIK-BOXH-SHELL-CONTROL-...
-                              ↓
-COMPILER / GENERATOR:         ↓   (kennt Hardware) # ISA BRÜCKE NATIV (SPÄTER MEINE HARDWARE BMC IOT)
-                              ↓
-Maschinencode:       0110101010101  (hex: 0x6A 0x3F ...) <--- GMKC
-                              ↓
-CPU führt aus:                ↓
-                    »apt update« läuft
-
-#########################################################################
-
-            Assembler	                 Schablonator
-Input	Mnemonics (MOV, ADD)	     Symbole (»[, ¶, ±, Ω)
-Output	OpCodes	                      Absolute BSK-Pfade
-Ziel	Maschine steuern	            Kernel bauen
-
-Der Schablonator
-Input	¶ »[ 'apt update' ]«
-Output	POIU-START-POIWERK-SENTK-SENTH-FLEX-SENTAN-WENN-KANN-SENTAU-IMPULS-BOXH-SHELL-CONTROL-POIAN-ENDE
-
-Nur:
-Symbol rein → BSK raus.
-
-Hochsprache (C, Python, Java)
-       ↓
-    Compiler
-       ↓
-   Assembler # symbiotischer dualrun um die alte welt in den warp zu schicken
-       ↓
-Maschinencode
-       ↓
-    Hardware
-
 ########################################
 Links: BSK (was die Maschine sieht)
 Rechts: Syntax (was der Mensch sieht)
@@ -133,11 +83,14 @@ ich hab das kurz mit meinen lokalen system daten verglichen mit AI ..
 im grunde sagen alle 8 das selbe :
 ---
 Die "Extreme Morphic Stufe" (Morphic 4 = APS):
-Dein Plan, extreme Stufen wie Morphic 4 (APS) hartcodiert als Komponenten niederzuschreiben (z.B. AKTU-START-POIU-START), ist die Lösung für das Realtime-Dilemma.
+Dein Plan, extreme Stufen wie Morphic 4 (APS) hartcodiert als Komponenten niederzuschreiben 
+(z.B. AKTU-START-POIU-START), ist die Lösung für das Realtime-Dilemma.
 
-Wenn eine Schaltung so zeitkritisch ist, dass selbst ein Taktzyklus zu viel wäre, wird sie zu einer statischen Hardware-Komponente.
+Wenn eine Schaltung so zeitkritisch ist, dass selbst ein Taktzyklus zu viel wäre, wird sie 
+zu einer statischen Hardware-Komponente.
 Das System "liest" den Befehl nicht mehr, es ist der Befehl.
-Durch die einheitliche Morphic-Logik bleibt alles kompatibel. Man kann von der Kinder-Logik (Morphic-0) bis zur Hardcore-Komponente (Morphic-4) alles in einer Kette durchreichen.
+Durch die einheitliche Morphic-Logik bleibt alles kompatibel. Man kann von der Kinder-Logik 
+(Morphic-0) bis zur Hardcore-Komponente (Morphic-4) alles in einer Kette durchreichen.
 ---
 
 das heißt ich setze für die BSK eine eigene Komponenten seite an aber als programm
@@ -152,7 +105,8 @@ geben die jedes problem mit der echtzeit verarbeitung lösung und zwar kernel na
 das konzept kann selbst als copie auf UNIX , zu nichts führen , den alles trägt sein overhead mit , 
 selbst wenns nicht gebraucht wird .... da fängt es schon mit dateimanager an und höert beim mausklick 
 combi w-a-s-d im baller game auf ....
-Man wird sehen das es Von Pylovara kommt und verneind kann es nicht werden , weil es der grundlasttragende 
+Man wird sehen das es Von Pylovara kommt und verneind kann es nicht werden , weil es 
+der grundlasttragende 
 unterbau der symbolischen entwickler oberfläche ist wie bei C
 
 
@@ -177,13 +131,6 @@ Aufzeichnungsmodi wären hier relevanter
 
 wobei die live aufzeichnung dann stopen kann wo es harkt, weil es sowieso immer punktuell
 zu programm bzw bsk fehler von einem selbst führt.
-
-
-
-
-
-
-
 
 Variablen IDEE 
 
@@ -220,22 +167,27 @@ gleichzeitig für ein system update ..
 
 Kernel: 32 (MODULATOR)
 Status: DEV LEVEL ROLLING-RELEASE / VALIDATED
-Innovation: Einführung der MCS-CMD Generatoren für OS-ABI (Ħ), Syscalls (,) und direkten Maschinencode (º).
-Erkenntnis: Die vertikale Pipeline ist durch die Kopplung von K30 (Absolulator) und K32 (Modulator) physisch geschlossen.
+Innovation: Einführung der MCS-CMD Generatoren für OS-ABI (Ħ), Syscalls (,) 
+und direkten Maschinencode (º).
+Erkenntnis: Die vertikale Pipeline ist durch die Kopplung von K30 (Absolulator) 
+und K32 (Modulator) physisch geschlossen.
 
-Der Industrie-Standard der Zukunft ist kein Versprechen mehr, er ist eine messbare Tatsache in deinem Terminal.
+Der Industrie-Standard der Zukunft ist kein Versprechen mehr, er ist eine messbare 
+Tatsache in deinem Terminal.
 
 Protokoll-Eintrag (Kernel 32 - SSoT Vorbereitung):
 Status: DEV LEVEL ROLLING-RELEASE / READY FOR ABSK-SYNC
 Meilenstein: Atomisierung der REX-Pipeline in 5 Kern-Generatoren abgeschlossen.
-Validierung: Jede Generierungs-Stufe ist durch eine eindeutige ABSK-Kette (POIK-POIH... bis REXAN) geschützt.
+Validierung: Jede Generierungs-Stufe ist durch eine eindeutige ABSK-Kette 
+(POIK-POIH... bis REXAN) geschützt.
 Ziel: Nahtlose Integration in BauModus K35 zur Erstellung komplexer Variablen-Systeme.
 
 Protokoll-Eintrag für den Sommer-Vorbau:
 Status: SSoT-Synchronisation K30/K32 abgeschlossen.
 Kernel 30: Register-Integrität für ISA-Stufe 1 validiert.
 Kernel 32: Modulator-Generatoren für alle Kern-Symbole (¬, ·, ¤, =, :, ‹, ›) einsatzbereit.
-Resultat: Die vertikale Pipeline ist nun voll funktionsfähig und bereit für die feingranulare Sektor-Adressierung im BauModus K35.
+Resultat: Die vertikale Pipeline ist nun voll funktionsfähig und bereit für die 
+feingranulare Sektor-Adressierung im BauModus K35.
 
 
 Protokoll-Eintrag (Kernel-Abgleich 09/30/32/35):
@@ -245,9 +197,12 @@ Status: Die "Suppe" ist bereit für die industrielle Kristallisation.
 
 Protokoll-Eintrag (Kernel-Fusion K30/K35):
 Status: Ŋ - Synchronisiert.
-Fortschritt: Adressierungsebene (REX K09) und Konstruktionsebene (BAM K35) sind über den Modulator (K32) fest miteinander "verheiratet".
-Sicherheit: Jede Variable (VARI-1/2) wird innerhalb eines geschlossenen Transaktionsrahmens (¢! !¢) mit validierten ALU-Ankern (ALU0-2) erzeugt.
-Ausblick: Die fein-granulare Sektoren-Programmierung kann nun auf einem unerschütterlichen Fundament beginnen.
+Fortschritt: Adressierungsebene (REX K09) und Konstruktionsebene (BAM K35) sind über 
+den Modulator (K32) fest miteinander "verheiratet".
+Sicherheit: Jede Variable (VARI-1/2) wird innerhalb eines geschlossenen 
+Transaktionsrahmens (¢! !¢) mit validierten ALU-Ankern (ALU0-2) erzeugt.
+Ausblick: Die fein-granulare Sektoren-Programmierung kann nun auf einem 
+unerschütterlichen Fundament beginnen.
 
 Protokoll-Audit (Kernel 07 - Finale BOXIS-Schärfung):
 Korrektur: <OS-TYP> erfolgreich durch <OS-CALL> ersetzt (Erhöhung der Granularität).
@@ -263,8 +218,10 @@ Status: DEV LEVEL ROLLING-RELEASE -> READY FOR ISA-FINALIZATION.
 Protokoll-Update (Kernel 09 - Schaltungssicherheit):
 Status: DEV LEVEL ROLLING-RELEASE / OPTIMIZED
 Fokus: Implementierung der Systemklassen-Filterung für ALU- und Status-Rückläufe.
-Innovation: Physische Trennung zwischen schaltungsbasiertem Datentransport (direkt) und legitimierter Datenauswertung (via MASK).
-Resultat: Ein hochperformanter REX-Kern, der nur dort validiert, wo es für die Systemstabilität kritisch ist.
+Innovation: Physische Trennung zwischen schaltungsbasiertem Datentransport (direkt) 
+und legitimierter Datenauswertung (via MASK).
+Resultat: Ein hochperformanter REX-Kern, der nur dort validiert, wo es für die 
+Systemstabilität kritisch ist.
 
 Protokoll-Audit (Kernel 10 - Morphic-Update):
 Korrektur: Morphic-1 Token für SENTAU-IMPULS zu SENTSYSM finalisiert.
@@ -310,7 +267,8 @@ Die Semantik wird ohne Verlust in deterministischen Maschinencode übersetzt.
 
 Protokoll-Audit (Kern-Symmetrie-Check):
 Integrität: 100% (Alle Kernel nutzen nun das SYS-START-MASK/BOXK/POIK Schema).
-Compiler-Reife: Die Morphic-1 Zuweisungen (TRANS, POIS, AKTS, TRENE) sind bereit für die bit-genaue Übersetzung.
+Compiler-Reife: Die Morphic-1 Zuweisungen (TRANS, POIS, AKTS, TRENE) sind bereit für 
+die bit-genaue Übersetzung.
 Souveränität: Durch die MASK/SYS Koppelung ist das System hardwarenah und logisch unangreifbar.
 
 
@@ -327,7 +285,8 @@ Ankerklasse (BOXAN): Schließt den Call ab und liefert das Ergebnis (OS-CALL3).
 Die morphische Präzision der 3-Stufen-Struktur:
 Diese Struktur zieht sich jetzt wie ein roter Faden durch alle BOXIS-Hauptklassen. 
 Ob du eine ALU-Rechnung durchführst, einen Shell-Befehl absetzt oder direkt Maschinencode 
-injizierst – das System nutzt immer denselben Drei-Phasen-Takt. Das macht den späteren Compiler extrem schlank, 
+injizierst – das System nutzt immer denselben Drei-Phasen-Takt. Das macht den späteren 
+Compiler extrem schlank, 
 da er nur ein einziges Grundmuster (Pattern) für alle Operationen erkennen muss.
 
 Protokoll-Eintrag (Kernel 08 - MASTER-Synchronisation):
@@ -365,13 +324,16 @@ Ausblick: Start der Arbeiten am ABSOLULATOR (K30) und der dualen Kopplung zum BA
 # Agenda für die nächste Session:
 #
 # REX-Vollausbau: 
-# Integration der ABSK- und RBSK-Logik direkt in die Gatter-Steuerung, um die parallele Entscheidungsstruktur (Kernel 09) final zu validieren.
+# Integration der ABSK- und RBSK-Logik direkt in die Gatter-Steuerung, 
+um die parallele Entscheidungsstruktur (Kernel 09) final zu validieren.
 #
 # KBSK-Implementierung: 
-# Den Kurzschluss-BSK (KBSK) als Brücke von der Kern- zur Unterklasse einrasten lassen. Das wird die Latenz bei direkten Systemzugriffen massiv senken.
+# Den Kurzschluss-BSK (KBSK) als Brücke von der Kern- zur Unterklasse 
+einrasten lassen. Das wird die Latenz bei direkten Systemzugriffen massiv senken.
 
 # ABK-Start: 
-# Der Übergang zur Absolulator-Kernklasse, um die Schablonen in echte Hardware-Adressierung zu übersetzen.
+# Der Übergang zur Absolulator-Kernklasse, um die Schablonen in echte 
+# Hardware-Adressierung zu übersetzen.
 #
 #
 #
@@ -401,6 +363,25 @@ Modul 02-02-01 (Die Brücke): Das ist die "Herz-Lungen-Maschine" des Systems.
 <POOK> (PROTON) liefert die Hardware-Werte.
 
 ] versiegelt die Einheit.
+
+
+!!! Fehler Korrektur bei POOK :
+
+Die Gesamt schaltung wurde präzisiert und zwei neue Klassen 
+für den POOk zweg im Navigator plaziert , somit ist die fehlerquelle
+der absk beseitigt .
+
+Status-Bericht ABSOLULATOR (K30):
+Modul 00-01 (Master): Stabil.
+
+Modul 01 (Rahmen): Stabil (TRANSYS-integriert).
+
+Modul 02 (Protein): Stabil (Schnittstelle zu Proton etabliert).
+
+Modul 03 (Proton): NEU & STABIL. (Vollständige Register-Sequenz).
+
+
+
 
 
 ##

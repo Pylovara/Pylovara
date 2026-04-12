@@ -237,12 +237,12 @@ BEDINGUNG: <BOXH-ALU> + <ALU>
 ### ==== ##### == # === ### =============== ### === # == #####
 MODULATOR ® MODUL 06-05-01 # BOXIS ALU START SEQUENZ
  ABSK = BOXK-BOXH-ALU-BOXU-ALU-START 
-BEDINGUNG: <BOXH-ALU> + <ALU1>
+BEDINGUNG: <BOXU-ALU-START> + <ALU1>
  START: × <ALU1>
 ### ==== ##### == # === ### =============== ### === # == #####
 MODULATOR ® MODUL 06-05-02 # BOXIS ALU INHALT SEQUENZ
  ABSK = BOXK-BOXH-ALU-BOXU-ALU-START-BOXSYS-ALU2
-BEDINGUNG: <BOXH-ALU> + <ALU2>
+BEDINGUNG: <BOXU-ALU-START> + <ALU2>
  START: × <ALU2>
 ### ==== ##### == # === ### =============== ### === # == #####
 MODULATOR ® MODUL 06-05-03 # BOXIS ALU END SEQUENZ
@@ -250,10 +250,26 @@ MODULATOR ® MODUL 06-05-03 # BOXIS ALU END SEQUENZ
 BEDINGUNG: <BOXH-ALU> + <ALU3> + <BOXAN-ALU-ENDE
  START: × <ALU3> ×
 ### ==== ##### == # === ### =============== ### === # == #####
-
-
-
-
+MODULATOR ® MODUL 06-06 # BOXIS MCS-CMD
+ ABSK = BOXK-BOXH-MCS-CMD 
+BEDINGUNG: <BOXH-MCS-CMD> + <MCCK>
+ START: ~ <MCCK> ~
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-06-01 # BOXIS MCS-CMD START SEQUENZ
+ ABSK = BOXK-BOXH-MCS-CMD-BOXU-MCS-CMD-START
+BEDINGUNG: <BOXU-MCS-CMD-START> + <MCCK1>
+ START: ~ <MCCK1>
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-06-02 # BOXIS MCS-CMD INHALT SEQUENZ
+ ABSK = BOXK-BOXH-MCS-CMD-BOXU-MCS-CMD-START-BOXSYS-MCCK2
+BEDINGUNG: <BOXU-MCS-CMD-START> + <MCCK2>
+ START: ~ <MCCK2>
+### ==== ##### == # === ### =============== ### === # == #####
+MODULATOR ® MODUL 06-06-03 # BOXIS MCS-CMD END SEQUENZ
+ ABSK = BOXK-BOXH-MCS-CMD-BOXU-MCS-CMD-START-BOXSYS-MCCK2-BOXAN-MCS-CMD-ENDE
+BEDINGUNG: <BOXU-MCS-CMD-START> + <MCCK3> + <BOXAN-MCS-CMD-ENDE
+ START: ~ <MCCK3> ~
+### ==== ##### == # === ### =============== ### === # == #####
 
 
 

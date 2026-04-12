@@ -105,8 +105,6 @@ MODULATOR ® MODUL 03-02 # PROTON HARDWARE ENDSEQUENZ
 BEDINGUNG: <POOU-START> + <POON-NAME> + <POOR-SEMI> + <POOWERT-WERT> + <POOAN-ENDE>
  START: {<NAME>;<WERT>}
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 04 # TRENNBEFEHL STEUERUNG
  # RAHMENBEDINGUNG FÜR TRENNBEFEHL
  # CONTAINERISIERUNGS-SCHALTUNG 
@@ -126,25 +124,13 @@ MODULATOR ® MODUL 04-03 # CONTAINER SPALTUNG FÜR HARDWARE-PROTON
  ABSK: TRENK-TRENH-WAND-TRENU-START-TRENSYS-POOK-TRENAN-ENDE
 BEDINGUNG: <TRENSYS-POOK>
  START: | 
-
-
-
-
-
-
-
-
-
-
-
-LEER
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 04 # AKTIONSDRAHT STEUERUNG
- # RAHMENBEDINGUNG FÜR AUSFÜHRBARE WIE UNAUSFÜHRBARE PROTEINE
- # EINDEUTIGKEITS-SCHALTUNG FÜR PROTEIN-INHALTE 
- # RELEVANZ = AKTK
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
 
 LEER 
 

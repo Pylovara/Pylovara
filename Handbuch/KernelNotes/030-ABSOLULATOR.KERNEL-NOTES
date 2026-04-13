@@ -520,10 +520,16 @@ MODULATOR ® MODUL 09 # ARGUMENT STEUERUNG
  # ZUSATZINFORMATIONEN FÜR PROTEINE 
  # RELEVANZ = AKTK ARGK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-01
 
 
 
 
+===========================================================
+ ABSK = AKTK-AKTH-IMPULS-AKTU-START-AKTSYS-POIK-POIAN-ENDE
+BEDINGUNG: <AKTU-START> + <POIK> + <POIAN-ENDE>
+ START: »<POIK>«
+===========================================================
 
 
 

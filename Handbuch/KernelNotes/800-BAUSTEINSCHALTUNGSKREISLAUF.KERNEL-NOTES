@@ -82,6 +82,11 @@ MOPHIC-0
  KNOTENPUNKT LOGIK FÜR RBSK =
         - KERNKLASSE = KERNKLASSE 
 
+ NAME + KLASSE + KNOTENPUNKT + FUNKTIONSNAME 
+  2*    1             -         MUSTER       = NAK-MUSTER
+
+ STERN FÜR VARIANTE 3/4 BUCSTABEN, JE NACH VERWECHSLUNGS RISIKO WIE SENT
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # DIESER BEREICH IST NOCH INAKTIV
 BAUSTEINSCHALTUNGSKREISLAUF-MORPHIC-UNTERKLASSE § MORPHIC-EINS
@@ -111,12 +116,19 @@ MORPHIC-1
  WERDEN GRUNDSÄTZLICH NUR MIT DEN ANFANGS BUCHSTABEN ERWEITERT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# Inaktiver test bereich 
 BAUSTEINSCHALTUNGSKREISLAUF-MORPHIC-UNTERKLASSE § MORPHIC-ZWEI
 
 MORPHIC-2
 
- KOMMT BALD....
+
+ BEISPIEL = *U-* = AKTS | *AN-ENDE = AKTE
+            *U-* = POIS | *AN-ENDE = POIE 
+
+ VON =       AKTU-START     AKTAN-ENDE 
+             POIU-START     POIAN-ENDE
+
+
 
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [06:31:54|Mi 11 Feb 2025] MARKENBRANDT                  #

@@ -1,3 +1,5 @@
+!!!!!! Tastatur MCS Symbol Erweiterungen bauen !!!!!!!
+
 KCharSelect (zum Testen von Zeichen)
 sudo pacman -S kcharselect
 sudo pacman -S antlr4
@@ -10,6 +12,36 @@ Variante B: Fcitx5 # komplexe Systeme
 flexibler als XKB
 unterstützt Sequenzen / Logik
 sudo pacman -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool
+
+
+# 1. Benötigt werden 3 weiter klammern 
+
+1- halb stern klammer (Supermario stern , häfte , outlines , beidseitig )
+
+2- Stachel Klammer ( runde klammer mit drei spitzen pro seite , nadelförmig)
+
+3- PlusKlammer ( eine rundklammer mit spiegelverkehrten zwei plus zeichen , mittig angebunden)
+
+4- Minus Klammer ( eine rundklammer mit spiegelverkehrten zwei minus zeichen , mittig angebunden)
+
+5/6 = 
+
+FF Klammer mit rechter bindung zu ± quasi (1)± 
+TF Klammer mit Linker bindung zu ± quasi ±(1)
+
+
+zusätzlich zu geschweifen klammern und eckigen klammern und runden klammern 
+um die options kette zu verbessern !
+
+leider nicht mein spezial gebiet aber da fuchs ich mich rein ...
+ich brauch eine möglichkeit utf -8 als eigenes layout mit
+den zusatz arbeitswerkzeugen zu integrieren .... 
+
+damit die Entwickler oberfläche ihre volle Macht entfalten kann !
+
+(Sollte ich mit auf meine bedinungen schreiben = MCS-Boards | keyboards)
+
+
 
 
 !!!!!!!!!!!!!!!!!!!! BAUSTELLE !!!!!!!!!!!!!!!!!!!

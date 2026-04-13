@@ -1,3 +1,17 @@
+KCharSelect (zum Testen von Zeichen)
+sudo pacman -S kcharselect
+sudo pacman -S antlr4
+
+Tree-sitter
+moderne Parser-Engine
+sudo pacman -S tree-sitter
+
+Variante B: Fcitx5 # komplexe Systeme
+flexibler als XKB
+unterstützt Sequenzen / Logik
+sudo pacman -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool
+
+
 !!!!!!!!!!!!!!!!!!!! BAUSTELLE !!!!!!!!!!!!!!!!!!!
 
 

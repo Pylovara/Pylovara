@@ -59,9 +59,7 @@ MORPHIC-1
 
  FFEH-SYNC-RAM *
 
-SYMBOLISCHE DEKLARATION * (<NR>)—o—|
-
- SYMBOL IN WORTEN =
+RAM DIRIGENT $ »[(1)—o—± $ MOV AL, 0x1745…]«
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -93,9 +91,7 @@ MORPHIC-1
 
  FFEH-SYNC-RAM *
 
-SYMBOLISCHE DEKLARATION * |—o—(<NR>)
-
- SYMBOL IN WORTEN =
+RAM DIRIGENT $ »[±—o—(1) $ MOV AL, 0x1745…]«
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

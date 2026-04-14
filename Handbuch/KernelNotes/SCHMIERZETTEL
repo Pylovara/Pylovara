@@ -32,3 +32,57 @@ FEED-KERNKLASSE § FEEK
  FUNKTION = GESAMTHEITLICHER CACHE GEBUNDENER NUMMERIERTE RAHMEN
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FÜHRENDER-FEED-HAUPTKLASSE § FFEH-SYNC
+
+ INFO = DUPLIKATIONSMECHANISMUS VON HOST BIS EMPFÄNGER | MEHRFACH
+
+ FUNKTION = GESAMTHEITLICHER CACHE GEBUNDENER NUMMERIERTE RAHMEN
+
+MORPHIC-1
+
+ FFEH-SYNC * FFEEDSYNC
+
+SYMBOLISCHE DEKLARATION * (<NR>)± WERT ±
+
+ SYMBOL IN WORTEN = KLAMMER AUF INHALT KLAMMER ZU PLUSMINUS-ZEICHEN WERT PLUSMINUS-ZEICHEN
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-01 # FEED 
+ # BAUT FÜHRENDER FEED CACHE UND TRAGENDE FEED SYNC
+ # ELTERNTEIL GIBT GESCHWISTER DEN CACHE SYNCRON WEITER INNERHALB DES TRANAKTIONSRAHMEN
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-02 # FF FÜHRENDEN FEED BAUEN
+ ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
+BEDINGUNG:      »[ (<NR>)± <WERT> ± ]«
+    START:      »[ (<NR>)± <WERT> ± ]«
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-02-01 # ZAHLTRÄGER PLAZIERUNG
+ ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEH-ZAHLTRÄGER-BOXU-<ELEMENT>-POIAN-ENDE
+BEDINGUNG:      »[ (<NR>)           ]
+    START:      »[ (<NR>)           ]
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-02-02 # WERTRÄGER PLAZIERUNG
+ ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEH-ZAHLTRÄGER-FEEH-WERTRÄGER-POIAN-ENDE
+BEDINGUNG:      »[ (<NR>)± <WERT> ± ]
+    START:      »[ (<NR>)± <WERT> ± ]
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-03 # TF TRAGENDEN FEED BAUEN 
+ ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEK-TFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
+BEDINGUNG:      »[ ± <WERT> ±(<NR>) ]«
+    START:      »[ ± <WERT> ±(<NR>) ]«
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-03-01 # WERTRÄGER PLAZIERUNG
+ ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEH-WERTRÄGER-POIAN-ENDE
+BEDINGUNG:      »[ ± <WERT> ±       ]
+    START:      »[ ± <WERT> ±       ]
+#### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 09-03-02 # ZAHLTRÄGER PLAZIERUNG
+ ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-<NR>-FEEH-WERTRÄGER-FEEH-ZAHLTRÄGER-POIAN-ENDE
+BEDINGUNG:      »[ ± <WERT> ±(<NR>) ]
+    START:      »[ ± <WERT> ±(<NR>) ]
+### ==== ##### == # === ### =============== ### === # == ##### === ###

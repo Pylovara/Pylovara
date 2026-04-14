@@ -611,6 +611,17 @@ BEDINGUNG: <POIAN-ENDE> + <ARGH-OPTION> + <ARGWERK-VARIABLEN> + <ARGWERT-WERT> +
 (1)±<Sachlage>± = RAM NOTIZ = (1)—o—|$ MOV AL, [0x1745…]
 ±<Sachlage>±(1) = RAM SUCHE = |—o—(1)$ MOV AL, [0x1745…]
 
+wäre 
+
+¢! # Direkte Feed speicherung des FF für systemweite transaktionsrahmen abrufe innerhalb
+   # des Dateitypen elternteil stranges des programmes selbst 
+»[(1)±<Sachlage>±]«
+ ¬· »[~RAM-SPEICHER~]«
+     ¬· »[, MOV AL, [0x1745…] ,]«
+
+         # ab hier normal weiter 
+!¢
+
 ich brauch eine RAMKLASSE ! Vergess das nicht im NAVU-
 ich brauch warscheins ein WARP Skelett für RAM Ansteuerung 
 danach brauch ich eine MCS transformierte version .

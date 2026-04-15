@@ -1,6 +1,6 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON #  ### #  # ### # # # # #   #  # ####
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON #  ### #  #  ## # # # # #   #  # ####
  #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>  #
- #   · KEIN EINTRAG | 0 KONSOLIDIERUNG | Ŋ = NOTIERUNGSZUSTAND      #
+ #     · KEIN EINTRAG | 0 KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
 ### ==== ##### == # === ### = KOMPONENTEN = ### === # == ##### === ###
  #   NR HINWEIS INFO-ID MCS    | NR HINWEIS  INFO-ID MCS            #
@@ -9,7 +9,7 @@
  #   05  · + 0  TRENNBEFEHL    | 06  · + 0   AKTIONSDRAHT           #
  #   07  · + 0  BOXIS          | 08  · + Ŋ   MASTER                 #
  #   09  · + 0  REX            | 10  · + 0   SENTIATOR              #
- #   11  · + 0  ARGUMENT       | 12  · + Ŋ   FEED                   #
+ #   11  · + 0  ARGUMENT       | 12  · + 0   FEED                   #
  #   13  · - X  WARP           | 14  · + 0   NAVIGATOR              #
  #   15  · + X  IDENTIFIKATION | 16  · + Ŋ   MCS-CMD                #
  #   17  · - Ŋ  DATEITYPEN     | 18  · + 0   VATRON                 #
@@ -28,7 +28,7 @@
  #   993   L1_COREKERNELMANDAT               ## #  # #  ##  #   # # #
  #   994   L2_AUTHORRIGHTS                   #    ###  #  #    #   ##
  #   995   L3_COMMERCIALLICENSING            ##  Pylovara—System©   #
- #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  ### #  # # # #   ##
+ #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  ##  #  # #   #   ##
  #   997   L5_POST_MORTEM-CONTROL            #  ## ##   # #  ##  #  #
  #   998   L6_IMMUTABLE_CORES_DEFINITION     ##   ### # # # #  #  # #
  #   999   LICENSE—MANIFEST.PROTO            # #  #  # #  #  ###  ###

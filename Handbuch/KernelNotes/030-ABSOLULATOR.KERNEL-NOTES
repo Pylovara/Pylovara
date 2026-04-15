@@ -629,6 +629,28 @@ MODULATOR ® MODUL 10 # FEED STEUERUNG
 MODULATOR ® MODUL 10-01 
 
 
+
+
+
+
+
+
+
+[POIK] » (1)± 42 ± «
+↓
+FFRA-ZUWEISUNG aktiviert
+↓
+$ MOV AL, [0x1745]  ; 42 wird gespeichert
+
+
+
+
+
+
+
+===============================================================
+
+
 FÜR MORGEN :
 !!! FEED WURDE ÜBERARBEITET UND VERFEINERT 
 - NAVU BEKAM KLASSEN UPDATES
@@ -648,20 +670,6 @@ UFFF ..... DIE UHRZEIT WIEDER .... FEED SEID HEUTE MITTAG IN ARBEIT
 ENGÜLTIG NACHTS GESCHRIEBEN ...... FINISH FÜR HEUTE .... K12 READY
 
  WICHTIG ... SCHAU FEED MORGEN NOCHMAL DURCH ( VORSICHTSHALBER) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

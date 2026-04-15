@@ -202,6 +202,219 @@ denk immer dran :
 
 das wird wichtig sein vom system zu montoring 
 
+==============================================================================================
+# schmierzettel =
+
+BerechnungsGesetzt 1.2
+
+1 = Nichts = n/N
+1u = Unreine Zahl = u/U
+1r = Reine Zahl = r/R
+1i = 1 Information = i/I
+1s = 1 Sammlung = s/S
+1i + 1s = 1o = 1 Organ
+1o = Organ = o/O
+1 + 2 = Nichts = 3n
+3n - 3 = 0n 
+0n + 3r = 3r
+1u + 1i = UI = 1 Unbekannte Information 
+1 Nadel = 1i + 1s = Eine Nadel
+
+Nadel = ·Metal ·Hitze ·Form ·Spitze ·EnergieZufuhr ·Form ·EnergieAbfuhr ·USW
+
+1 UI = Eine Unbekannte Information
+
+1 = ?
+
+
+
+ schmierbereich =
+
+ 1i + 20 = 1i,20n 
+
+ 20o + 323i = 20o,323i 
+
+ 1o ÷ 4i = 4u (2,5…) = 2,5uio
+
+
+     1u
+ 1o  —— = 1o,2u
+     2u
+
+
+probe gedanke ....
+
+; 1n = Nichts = RAM-Zelle ist leer
+(1)± ±           ; Feed 1 enthält nichts
+
+; 1i = Information = Einzelner Wert
+(2)± 42 ±        ; Feed 2 enthält die Zahl 42
+
+; 1s = Sammlung = Mehrere Werte
+(3)± [1,2,3] ±   ; Feed 3 enthält eine Liste
+
+; 1o = Organ = Komplexes Objekt
+(4)± {name:"Nadel", eigenschaften:[Metal,Hitze,Form]} ±
+
+
+
+MODULATOR ® MODUL XX # BERECHNUNGSGESETZ 1.2
+ ABSK = BERK-BERH-RECHEN-BERU-START-BERSYS-ZUSTAND
+ BEDINGUNG: <BERU-START> + <ZUSTAND>
+ 
+ ; 1n + 1i = 1 UI (Unbekannte Information)
+ BERECHNUNG: 1n + 1i = 1UI
+ 
+ ; 1i + 1s = 1o (Organ)
+ BERECHNUNG: 1i + 1s = 1o
+ 
+ ; 1o ÷ 2u = 0.5uio (Unbestimmtes Organ)
+ BERECHNUNG: 1o ÷ 2u = 0.5uio
+
+==================================================
+hmmm 1i + 1i = ? (2i?) ( oder 2ti) T = geTrennte # verworfen
+==================================================
+
+HIER WIRD KLAUSAL  ..... 
+
+ich muss info von info wie auch organ etc von einander 
+im berechnungszustand als zwei information oder … berechnen ..
+
+geht das überhaupt ?! <--- Philosophisch 
+
+das geht !!!!!!!!!
+
+ich muss nur die Info axoimen dem ensprechen unter geordnet kategorisieren 
+
+das heißt .... ich brauch anhaltspunkte und diese müssen teil der berchnung sein 
+
+welche tabelle könnte ein vorbild für den rechen weg sein ? 
+
+ Chemische tabelarung system 
+
+
+ hmmm 
+
+
+
+1.3 Berechnungsweg = 
+
+1i (Information)	= Ein einzelner Materialkennwert (z.B. Dichte)
+
+1s (Sammlung)	    = Ein Satz von Eigenschaften (i-Dichte, i-Härte, i-Schmelzpunkt)
+
+1o (Organ)	      = Ein vollständiger Werkstoffdatensatz
+
+1u (Unbekannt)	  = ein Material mit unbekannten Eigenschaften
+
+=°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°=====================
+kurze Analyse der möglichkeit über KI = 
+
+# Jedes Element als 1s (Sammlung)
+Wasserstoff = {
+    "Nr": 1,
+    "Symbol": "H",
+    "Gruppe": "Alkalimetalle",
+    "Elektronegativität": 2.20,
+    "Schmelzpunkt": -259.1°C
+}  # Das ist 1s
+
+# Ein Werkstoff wie Stahl ist dann 1o (Organ)
+Stahl = {
+    "Zusammensetzung": [Eisen, Kohlenstoff, Mangan],  # 1s
+    "Eigenschaften": [Dichte, Zugfestigkeit, Härte],   # 1s
+    "Verarbeitung": [Schmelzen, Walzen, Schmieden]     # 1s
+}  # 1s + 1s + 1s = 1o (Organ)
+0°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°==========
+
+mögliche MCS TRANK (dateityp kernel)
+
+»[" Wasserstof "]«
+ ¬·¤= »[× (1)±NR : 1± ×]«««V1
+ ¬·¤= »[× (2)±Symbol : H± ×]«««V2
+ ¬·¤= »[× (3)±Gruppe : Alkalimetalle± ×]«««V3
+ ¬·¤= »[× (4)±Elektronegativität : 2.20± ×]«««V4
+ ¬·¤= »[× (5)±Schmelzpunkt : -259.1°C± ×]«««V5
+       
+       ¬·¤= »[× (1) + (2) + (3) + (4) + (5) ×]«««S2
+             ¬·= »[× (6)±1s± ×]«««V6
+
+hmmm ... das bestätigt nur das per ARGK V und FEEK FF 
+dann punktuelle weitere berechnungen losgetreten werden können .....
+
+aber das sollte ich im kopf behalten , variable 6 ist ergo das produkt 
+wärendessen FF 6 weiter verschmelzt werden kann 
+
+
+
+BerechnungsGesetz - Materialerweiterung ( vorgemerkt)
+
+1i = Basiseigenschaft (z.B. Härte, Dichte, Leitfähigkeit)
+1s = Werkstoffprobe (Sammlung von Basiseigenschaften)
+1o = Werkstoff (funktionales Organ aus Proben)
+
+Beispiel: Kupfer
+1i(Härte) + 1i(Leitfähigkeit) + 1i(Dichte) = 1s(Kupferprobe)
+1s(Kupferprobe) + 1s(Kupferlegierung) = 1o(Kupferwerkstoff)            
+
+hinweis für lernmaterial der stufe 4/5 ( Der Zauberkessel)
+
+1i(Dichte) + 1i(Härte) = 2i (Zwei getrennte Informationen)
+
+ERST wenn sie in einen Kontext gesetzt werden:
+1i(Dichte) + 1i(Härte) + [Kontext: Metall] = 1s(Metallprobe)
+
+
+ Berchnungs messung = 
+
+  NR (info) (Semantischeinformation der info)
+
+
+  Periodensystem als Rechenmodell:
+____________________________________________________________
+
+Gedankespiel =
+
+1i = Einzelnes Atommerkmal
+  ├── Ordnungszahl (1i)
+  ├── Atommasse (1i)
+  ├── Elektronegativität (1i)
+  └── Radius (1i)
+
+
+1s = Ein vollständiges Element
+  ─ Wasserstoff = 1s(1i+1i+1i+1i...)
+  ─ helium = 1s(...)
+  — etc jedes sammlung + semnatisches wort 
+
+
+1o = Eine Verbindung / Legierung
+  ─ H₂O = 1o(1s(H)+1s(H)+1s(O))
+  ─ Stahl = 1o(1s(Fe)+1s(C)+1s(Mn))
+  ─ Organ = strukturierte Zusammenführung von Sammlungen
+____________________________________________________________
+
+EBENE 1: Unreine Mathematik (heutiger Standard)
+ ─ Zahlen existieren einfach
+ ─ Keine semantische Prüfung
+ ─ 1 = 1, Punkt.
+ ─ Ergebnis: Kann mit Müll rechnen, kommt Müll raus
+
+EBENE 2: Reine Mathematik (Pylovara-Axiome)
+ ─ Zahlen müssen kategorisiert sein
+ ─ 1n ≠ 1i ≠ 1s ≠ 1o
+ ─ 1u muss zuerst definiert werden
+ ─ Ergebnis: Nur reine Werte erzeugen reine Resultate
+
+EBENE 3: 
+
+
+
+
+
+
+
+
 
 
  ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###

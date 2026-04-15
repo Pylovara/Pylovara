@@ -834,3 +834,23 @@ welche tabelle könnte ein vorbild für den rechen weg sein ?
 1o (Organ)	      = Ein vollständiger Werkstoffdatensatz
 
 1u (Unbekannt)	  = ein Material mit unbekannten Eigenschaften
+
+=°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°=====================
+kurze Analyse der möglichkeit über KI = 
+
+# Jedes Element als 1s (Sammlung)
+Wasserstoff = {
+    "Nr": 1,
+    "Symbol": "H",
+    "Gruppe": "Alkalimetalle",
+    "Elektronegativität": 2.20,
+    "Schmelzpunkt": -259.1°C
+}  # Das ist 1s
+
+# Ein Werkstoff wie Stahl ist dann 1o (Organ)
+Stahl = {
+    "Zusammensetzung": [Eisen, Kohlenstoff, Mangan],  # 1s
+    "Eigenschaften": [Dichte, Zugfestigkeit, Härte],   # 1s
+    "Verarbeitung": [Schmelzen, Walzen, Schmieden]     # 1s
+}  # 1s + 1s + 1s = 1o (Organ)
+0°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°==========

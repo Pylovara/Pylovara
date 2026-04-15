@@ -24,17 +24,33 @@ MASTER = § MASU-ABSOLULATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- ABSOLULATOR-KERNKLASSE § ABK
+ABSOLULATOR-KERNKLASSE § ABK
 
  INFO = ABSOLUTERBAUSTEINSCHALTUNGSKREISLAUF
 
  FUNKTION = SCHALTET KETTEN EIN UND AUS
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ABSOLULATOR-HAUPTKLASSE § ABH-ELEMENT
+
+ INFO = ELEMENT KLAMMER 
+
+ FUNKTION = FUNKTIONSAUFRUFE
+
+SYMBOLISCHE DEKLERATION * <ELEMENT>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 00
  # SYSTEMSTEUERUNG MASTER
  # SUCHT NACH MASTER UNTERKLASSEN ELEMENTEN
  # RELEVANZ = MASK
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 00-00 # MASTER SYSTEM ANSTEUERUNG
+ ABSK = 
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 00-01 # MASTER SYSTEM ANSTEUERUNG
  ABSK = MASK-MASH-REGISTER-MASU-ELEMENT

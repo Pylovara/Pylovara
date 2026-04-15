@@ -636,21 +636,22 @@ MODULATOR ® MODUL 10-01
 
 Feed 1 erstellen=
 
-[POIK] » (1)± 42 ± «
+POIK + BOXK = (1)± 42 ± 
 ↓
 FFRA-ZUWEISUNG aktiviert
 ↓
 $ MOV AL, [0x1745]  ; 42 wird gespeichert
 
 
-
 und warscheins abruf =
 
-[POIK] » ± 42 ±(1) «
+POIK BOXK = ± 42 ±(1) 
 ↓
 FTRA-ABRUF aktiviert
 ↓
 $ MOV AL, [0x1745]  ; 42 wird geladen
+
+
 
 ich muss also feed als normade deklarieren aber innerhalb der boxis bewegen
 lassen , damit der inhalt der boxis selbst genommen wird 

@@ -50,7 +50,7 @@ SYMBOLISCHE DEKLARATION * (<NR>)± INHALT ±
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-FÜHREND-UNTERKLASSE § FFU-TRÄGERSTART
+FEED-FÜHREND-UNTERKLASSE § FFU-GEBERSTART
 
  INFO = NUMMERBEZOGENER FEED RAHMEN ANFANG
 
@@ -66,7 +66,7 @@ SYMBOLISCHE DEKLARATION * (
  
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-FÜHREND-TRÄGER-START-NUMMERKLASSE § FFNR-NR
+FEED-FÜHREND-GEBERSTART-NUMMERKLASSE § FFNR-NR
 
  INFO = 
 
@@ -78,7 +78,7 @@ SYMBOLISCHE DEKLARATION § (<NR>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-FÜHREND-TRÄGER-START-NR-ANSCHLUSSKLASSE § FFANS-LINKZU
+FEED-FÜHREND-GEBERSTART-NR-ANSCHLUSSKLASSE § FFANS-LINKZU
 
  INFO = 
 
@@ -90,7 +90,7 @@ SYMBOLISCHE DEKLARATION § (<NR>)
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-FÜHREND-TRÄGER-START-NR-LINKZU-LINKERKLASSE § FFLINK-START
+FEED-FÜHREND-GEBERSTART-NR-LINKZU-LINKERKLASSE § FFLINK-START
 
  INFO = 
 
@@ -102,7 +102,7 @@ SYMBOLISCHE DEKLARATION § (<NR>)±
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-FÜHREND-TRÄGER-START-NR-LINKZU-START-SYSTEMKLASSE § FFSYS-INHALT
+FEED-FÜHREND-GEBERSTART-NR-LINKZU-START-SYSTEMKLASSE § FFSYS-INHALT
 
  INFO = TRANSPORTIERT DEN INHALT 
 
@@ -114,7 +114,7 @@ SYMBOLISCHE DEKLARATION § (<NR>)± <INHALT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-FÜHREND-TRÄGER-START-NR-LINKZU-START-LINKS-INHALT-ANKERKLASSE § FFAN-ENDE
+FEED-FÜHREND-GEBERSTART-NR-LINKZU-START-LINKS-INHALT-ANKERKLASSE § FFAN-ENDE
 
  INFO = TRANSPORTIERT DEN INHALT 
 
@@ -126,7 +126,7 @@ SYMBOLISCHE DEKLARATION § (<NR>)± <INHALT> ±
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-FÜHREND-TRÄGER-START-NR-ENDE-LINKS-INHALT-ENDE-RAMKLASSE § FFRA-ZUWEISUNG
+FEED-FÜHREND-GEBERSTART-NR-ENDE-LINKS-INHALT-ENDE-RAMKLASSE § FFRA-ZUWEISUNG
 
  INFO = RAM ADRESSIERUNGSSPEICHERUNGSRAUM
 
@@ -140,7 +140,7 @@ RAM DIRIGENT $ »[(1)—o—± $ MOV AL, 0x1745…]«
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-HAUPTKLASSE $ FFEH-TRAGEND
+FEED-HAUPTKLASSE $ FFEH-TRAGENDER
 
  INFO = EMPFANGSCONTAINER FÜR FÜHRENDE DATENSÄTZE
 
@@ -156,19 +156,7 @@ SYMBOLISCHE DEKLARATION * ± <INHALT> ±(<NR>)
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-
-
-
-
-
-
-
-
-
-
-
-
-FEED-FÜHREND-UNTERKLASSE § FFU-TRÄGERSTART
+FEED-TRAGENDER-UNTERKLASSE § FFU-NEHMERSTART
 
  INFO = NUMMERBEZOGENER FEED RAHMEN ANFANG
 
@@ -178,119 +166,123 @@ MORPHIC-1
 
  FEEH-TRÄGER * FFTRÄGER
 
-SYMBOLISCHE DEKLARATION * (
+SYMBOLISCHE DEKLARATION * ±
 
  SYMBOL IN WORTEN = KLAMMER AUF INHALT KLAMMER ZU
  
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-FEED-HAUPTKLASSE § FEEH-TRAGEND
-
- INFO = AKTIVIERT CACHE VOM FF RAHMEN SYNCHRONISIERT DAS GLEICHE PASSIV
-        FEEDRAHMEN TRANSPORTRAHMEN FÜR GESCHWISTER.
-        KANN IN ALLEN BOXIS VERWENDET WERDEN.
-
- FUNKTION = CACHE GEBUNDENER RAHMEN VOM FEEDS-FÜHREND <RAM>
-
-MORPHIC-1
-
- TFEH-SYNC * TFEEDSYNC
-
-SYMBOLISCHE DEKLARATION * ± WERT ±(<NR>)
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-FEED-TRAGEND-UNTERKLASSE § 
+FEED-TRAGENDER-NEHMERSTART-SYSTEMKLASSE § FTSYS-INHALT
 
  INFO = 
 
+ FUNKTION = 
 
+MORPHIC-1
 
+ FTSYS-INHALT * 
 
+SYMBOLISCHE DEKLARATION * ± <INHALT>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ SYMBOL IN WORTEN = PLUS-ZEICHEN INHALT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 09-01 # FEED 
- # BAUT FÜHRENDER FEED CACHE UND TRAGENDE FEED SYNC
- # ELTERNTEIL GIBT GESCHWISTER DEN CACHE SYNCRON WEITER INNERHALB DES TRANAKTIONSRAHMEN
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 09-02 # FF FÜHRENDEN FEED BAUEN
- ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEK-FFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
-BEDINGUNG:      »[ (<NR>)± <WERT> ± ]«
-    START:      »[ (<NR>)± <WERT> ± ]«
-#### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 09-02-01 # ZAHLTRÄGER PLAZIERUNG
- ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEH-ZAHLTRÄGER-BOXU-<ELEMENT>-POIAN-ENDE
-BEDINGUNG:      »[ (<NR>)           ]
-    START:      »[ (<NR>)           ]
-#### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 09-02-02 # WERTRÄGER PLAZIERUNG
- ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEH-ZAHLTRÄGER-FEEH-WERTRÄGER-POIAN-ENDE
-BEDINGUNG:      »[ (<NR>)± <WERT> ± ]
-    START:      »[ (<NR>)± <WERT> ± ]
-#### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 09-03 # TF TRAGENDEN FEED BAUEN 
- ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEK-TFEH-SYNC-BOXAN-<ELEMENT>-POIAN-ENDE-AKTAN-ENDE
-BEDINGUNG:      »[ ± <WERT> ±(<NR>) ]«
-    START:      »[ ± <WERT> ±(<NR>) ]«
-#### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 09-03-01 # WERTRÄGER PLAZIERUNG
- ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-FEEH-WERTRÄGER-POIAN-ENDE
-BEDINGUNG:      »[ ± <WERT> ±       ]
-    START:      »[ ± <WERT> ±       ]
-#### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 09-03-02 # ZAHLTRÄGER PLAZIERUNG
- ABSK = AKTU-START-POIU-START-BOXU-<ELEMENT>-<NR>-FEEH-WERTRÄGER-FEEH-ZAHLTRÄGER-POIAN-ENDE
-BEDINGUNG:      »[ ± <WERT> ±(<NR>) ]
-    START:      »[ ± <WERT> ±(<NR>) ]
+
+FEED-TRAGENDER-NEHMERSTART-INHALT-ANSCHLUSSKLASSE § FTANS-LINKZU
+
+ INFO = 
+
+ FUNKTION = 
+
+MORPHIC-1
+
+ FTSYS-INHALT * 
+
+SYMBOLISCHE DEKLARATION * ± <INHALT> ±
+
+ SYMBOL IN WORTEN = PLUS-ZEICHEN INHALT PLUS-ZEICHEN
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+FEED-TRAGENDER-NEHMERSTART-INHALT-LINKZU-LINKERKLASSE § FTLINK-START
 
-feed wird boxis übergeordnet
+ INFO = 
+
+ FUNKTION = 
+
+MORPHIC-1
+
+ FTSYS-INHALT * 
+
+SYMBOLISCHE DEKLARATION * ± <INHALT> ±(
+
+ SYMBOL IN WORTEN = 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FEED-TRAGENDER-NEHMERSTART-INHALT-LINKZU-START-NUMMERKLASSE § FTNR-NR
+
+ INFO = 
+
+ FUNKTION = 
+
+MORPHIC-1
+
+ FTSYS-INHALT * 
+
+SYMBOLISCHE DEKLARATION * ± <INHALT> ±(<NR>
+
+ SYMBOL IN WORTEN = 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FEED-TRAGENDER-NEHMERSTART-INHALT-LINKZU-START-NR § FTAN-ENDE
+
+ INFO = 
+
+ FUNKTION = 
+
+MORPHIC-1
+
+ FTSYS-INHALT * 
+
+SYMBOLISCHE DEKLARATION * ± <INHALT> ±(<NR>)
+
+ SYMBOL IN WORTEN = 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FEED-TRAGENDER-NEHMERSTART-INHALT-LINKZU-START-NR § FTAN-ENDE
+
+ INFO = 
+
+ FUNKTION = 
+
+MORPHIC-1
+
+ FTSYS-INHALT * 
+
+SYMBOLISCHE DEKLARATION * ± <INHALT> ±(<NR>)
+
+ SYMBOL IN WORTEN = 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FEED-TRAGENDER-NEHMERSTART-INHALT-LINKZU-START-NR-ENDE-RAMKLASSE § FTRA-ABRUF
+
+ INFO = RAM ADRESSIERUNGSSPEICHERUNGSRAUM
+
+ FUNKTION = RAM ADRESSIERUNGSSPEICHERUNGSRAUM DES FÜHRENDEN FEED
+
+MORPHIC-1
+
+ FFRA-ZUWEISUNG * FFRAZUWEISUNG
+
+RAM DIRIGENT $ »[±—o—(1) $ MOV AL, 0x1745…]«
+
+### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
+ # NOCH LEER
+### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
+ #  DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT                 #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ###  ENDPUNKT FEED  ### === # == ##### === ###

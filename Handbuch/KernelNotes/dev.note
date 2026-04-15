@@ -872,4 +872,15 @@ dann punktuelle weitere berechnungen losgetreten werden können .....
 
 aber das sollte ich im kopf behalten , variable 6 ist ergo das produkt 
 wärendessen FF 6 weiter verschmelzt werden kann 
-             
+
+
+
+BerechnungsGesetz - Materialerweiterung ( vorgemerkt)
+
+1i = Basiseigenschaft (z.B. Härte, Dichte, Leitfähigkeit)
+1s = Werkstoffprobe (Sammlung von Basiseigenschaften)
+1o = Werkstoff (funktionales Organ aus Proben)
+
+Beispiel: Kupfer
+1i(Härte) + 1i(Leitfähigkeit) + 1i(Dichte) = 1s(Kupferprobe)
+1s(Kupferprobe) + 1s(Kupferlegierung) = 1o(Kupferwerkstoff)            

@@ -634,7 +634,7 @@ MODULATOR ® MODUL 10-01
 
 
 
-
+Feed 1 erstellen=
 
 [POIK] » (1)± 42 ± «
 ↓
@@ -643,6 +643,27 @@ FFRA-ZUWEISUNG aktiviert
 $ MOV AL, [0x1745]  ; 42 wird gespeichert
 
 
+
+und warscheins abruf =
+
+[POIK] » ± 42 ±(1) «
+↓
+FTRA-ABRUF aktiviert
+↓
+$ MOV AL, [0x1745]  ; 42 wird geladen
+
+ich muss also feed als normade deklarieren aber innerhalb der boxis bewegen
+lassen , damit der inhalt der boxis selbst genommen wird 
+
+
+das heißt der POIK dient als fixierung 
+die boxis sind egal aber muss im rahmen sein , das heißt für jede boxis 
+den feed rahmen festlegen 
+
+und der inhalt kann dann von BOXH-ALU zu BOXH-PRint wandern , ohne irritation 
+
+
+( rauch noch einen , denke drüber nach , dann notizen , dann umsetzen )
 
 
 

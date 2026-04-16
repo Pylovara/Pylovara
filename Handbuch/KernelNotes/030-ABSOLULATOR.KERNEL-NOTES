@@ -717,19 +717,22 @@ BEDINUNG: <FTH-TRAGEND> + <FTU-NEHMERSTART> + <FTSYS-INHALT> + <FTANS-LINKZU> + 
 !START: ±—o—(1) $ MOV AL, 0x1745…!
 
 
+
+
+
+================================================
+
 # BOXIS GENERELL 
+
  START: [<BOXK>
 ------------------------------------------------
  START: [<BOXK>|<POOK>
-
-
-# SCHMIERZETTEL ... GENERAL SCHALTUNG
-
+------------------------------------------------
  START: POIS + BOXH-ELEMENT + BOXU-ELEMENT-START + FEEK + BOXAN-ELEMENT-ENDE
 
+# GENERAL SCHALTUNG
 
-
-
+================================================
 
 
 

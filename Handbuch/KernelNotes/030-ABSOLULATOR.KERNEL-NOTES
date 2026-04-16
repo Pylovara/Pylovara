@@ -624,9 +624,49 @@ BEDINGUNG: <POIAN-ENDE> + <ARGH-OPTION> + <ARGWERK-VARIABLEN> + <ARGWERT-WERT> +
 MODULATOR ® MODUL 10 # FEED STEUERUNG
  # FEED STEUERUNG 
  # FEEDBACK SYNCRONISATIONS-SCHALTUNG FÜR BOXIS 
- # RELEVANZ = 
+ # RELEVANZ = POIK BOXK FEEK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 10-01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -653,18 +693,6 @@ $ MOV AL, [0x1745]  ; 42 wird geladen
 
 
 
-ich muss also feed als normade deklarieren aber innerhalb der boxis bewegen
-lassen , damit der inhalt der boxis selbst genommen wird 
-
-
-das heißt der POIK dient als fixierung 
-die boxis sind egal aber muss im rahmen sein , das heißt für jede boxis 
-den feed rahmen festlegen 
-
-und der inhalt kann dann von BOXH-ALU zu BOXH-PRint wandern , ohne irritation 
-
-
-( rauch noch einen , denke drüber nach , dann notizen , dann umsetzen )
 
 
 
@@ -673,30 +701,6 @@ und der inhalt kann dann von BOXH-ALU zu BOXH-PRint wandern , ohne irritation
 
 
 
-
-
-===============================================================
-
-
-FÜR MORGEN :
-!!! FEED WURDE ÜBERARBEITET UND VERFEINERT 
-- NAVU BEKAM KLASSEN UPDATES
-- ABK BEKAM DIREKT SCHALTUNG UNTER HAUPTKLASSE 
-- RAMKLASSE WURDE DIREKT IN FEED MIT EINGEBAUT 
-
-JETZT MUSS FEED HIER NORMADISCH EINGEBAUT WERDEN , EIGENSTÄNDIGE SCHALTUNG
-DAS WIRD MORGEN NICHT MEHR SCHWER ... 
-
-DER KNOTEN PUNKT —O— WURDE ERSTMAL ALS INHALTS ANKER VEWENDET , SPÄTER TAUSCH 
-ICH IN MIT EINEM ANDEREN SYMBOL AUS UND VERWENDE DAS ZEICHEN AB 81+ FÜR DIE 
- BSK VERKETTUNG ...
-
- LESE MORGEN DIE DEVONOTE NOTIZ NACH , WEGEN DER REIHENFOLGE .
-
-UFFF ..... DIE UHRZEIT WIEDER .... FEED SEID HEUTE MITTAG IN ARBEIT 
-ENGÜLTIG NACHTS GESCHRIEBEN ...... FINISH FÜR HEUTE .... K12 READY
-
- WICHTIG ... SCHAU FEED MORGEN NOCHMAL DURCH ( VORSICHTSHALBER) 
 
 
 

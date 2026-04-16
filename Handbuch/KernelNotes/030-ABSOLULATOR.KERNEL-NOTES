@@ -717,44 +717,12 @@ BEDINUNG: <FTH-TRAGEND> + <FTU-NEHMERSTART> + <FTSYS-INHALT> + <FTANS-LINKZU> + 
 !START: ±—o—(1) $ MOV AL, 0x1745…!
 
 
- BEDINGUNG : <FTNR-NR> + <FTRA-ABRUF>
-FTRA-ABRUF
-
-
-
-
-HMM....erst die aufbauten , dann die boxis schaltung ! also TF
-hmmmmmmmm....... 
-
-
-
-
-
-
-
-
-
 # BOXIS GENERELL 
-
- 
-
-
-
-
-BEDINGUNG: <POIU-START> + <POISYS-BOXK>
  START: [<BOXK>
-
-MODULATOR ® MODUL 10-02 # FEED START SEQUENZ BOXK + POOK
- ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK-TRENSYS-COMBO-POOK-
-BEDINGUNG:
- BEDINGUNG2: 
- START: »[ (<NR>)± <INHALT> ± ]«
-
-BEDINGUNG: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> + <POOK>
+------------------------------------------------
  START: [<BOXK>|<POOK>
 
 ========================== feed relevant start ===========================
-
 
 MODULATOR ® MODUL 02-01-01 # PROTEIN BOXIS SEQUENZ
  ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK
@@ -883,19 +851,8 @@ $ MOV AL, [0x1745]  ; 42 wird geladen
 
 
 
+######################### AUSTEHENDE NÄCHSTE ABSK #########################
 
-
-
-
-
-
-
-
-
-
-
-
-LEER
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 11 # WARP STEUERUNG

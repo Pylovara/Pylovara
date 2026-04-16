@@ -628,6 +628,11 @@ MODULATOR ® MODUL 10 # FEED STEUERUNG
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 10-01 # FEED FF FÜRENDE START SEQUENZ 
  ABSK = FEEK-FFH-FÜHREND-FFU-GEBERSTART
+BEDINGUNG: <FFH-FÜHREND> + <FFU-GEBERSTART>
+ START: (
+
+
+
 
 
 

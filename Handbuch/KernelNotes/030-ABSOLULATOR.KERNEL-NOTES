@@ -726,64 +726,13 @@ MODULATOR ® MODUL 10-03 # FEDD BOXIS GENERAL STEUERUNG
 
 
 
+GENERALSCHALTUNG BOXIS
+BOXU-ELEMENT-ELEMENT-BOXSYS-ELEMENT-ELEMENT-BOXAN-ELEMENT-ELEMENT
 
+kurz den boxis sektor nach kontrollieren nach änderung von k7 boxsys und boxan 
+, dann in die generalschaltung , die feeds implementieren 
 
-
-
-
-Designe frage : alles oder general .... ANTWORT . GENERAL WEIL MODULAR 
-================================================
-# BOXIS GENERELL 
-
-
-  START: [<BOXK>
-------------------------------------------------
-  START: [<BOXK>|<POOK>
-------------------------------------------------
-> FALSCHE SCHALTUNG = START: POIK + POIU-START + BOXH-ELEMENT + BOXU-ELEMENT-START + FEEK + BOXAN-ELEMENT-ENDE + POIAN-ENDE
-> RICHTIG = BOXU-ELEMENT-ELEMENT-BOXSYS-ELEMENT-ELEMENT-BOXAN-ELEMENT-ELEMENT
-
-# GENERAL SCHALTUNG
-================================================
-
-
-
-MODULATOR ® MODUL  # GENERAL FEED-ANDOCKUNG
-ABSK = POIK-POISYS-BOXK-FEEK-FFH-FÜHREND
-BEDINGUNG: <POISYS-BOXK> + <FEEK>
-START: [<BOXK> (NR)± <INHALT> ± ]
-
-hmmm .... schaltet aber nur über boxk und lässt h u inhalt an , außenvor 
-ich sollte bei so einem brutalen modularen aufbau auf die general schaltung zurück greifen 
-statts einzeln jede box zu verbinden , da die element in der abk als hauptklasse steht 
-und später im chiponator mit navu stern fixiert wird 
-
-sollte ich den abk nicht unötig aufblähen ....
-
- durch die generalisierung kann ich den datenstrang streuend aufbauen ... statts gebündelt wie neumann sein
- und später beim BMC update die zuschaltung von ram selbst punktuell legen .... 
-
- das wird dann das krankeste gehirn das es je gab mit software gepaart ..
- dagegen sehen die roboter heute , die noch kommen , im schaltkreis gehirn wie kinderspielzeug aus
-
- das ist kein wine mehr , kein proton mehr , nicht mal mehr kybenetik ... das ist Pylovara !
-
- jetzt hat das system seine eigene übergeordnete system klasse !
-
- scheiß auf unix ( nur für nostalgia als mögliche nativ übersetzung anbieten )
-
- ich ziehe 3 sachen nach dem system start vor 
-
- 0 - KWG 
- 1 - MCS IDE 
- 2 - MCS SVG GRAFIK PROGRAMM 
- 3 - MEIN TRAUM = ENEMY TERRITORY FULL NATIV MCS 
-
- DANACH ERST =
-
- - PYLOVARA STORE 
- - BROWSER 
- - MMM.DEINEWEBSITE.IRGENWAS (NETZWERK ROUTING)
+feeds binden an sysklasse der boxis 
 
 
 ========================== feed relevant start ===========================

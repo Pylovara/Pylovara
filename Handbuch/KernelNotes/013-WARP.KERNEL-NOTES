@@ -390,13 +390,17 @@ SYMBOLISCHE DEKLARATION § $
  #      Legacy-Binary → WARP-Kapsel → PYLOVARA-DATEITYP
  #       ↓
  #      Eingepasst in die Hierarchie:
- #      - .exe → .pylo-legacy-NEEDLE
+ #      - .exe → .pylo-legacy-CORE 
+ #      - .dmg → .pylo-legacy-CORE 
+ #      - .apk → .pylo-legacy-CORE 
  #      - .dll → .pylo-legacy-MICRO  
  #      - .sys → .pylo-legacy-LCORE
  #      - .ko  → .pylo-legacy-LCORE
-### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK =
- # RBSK =
+### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
+ # MASTERWORT = WARELT # AM LIEBSTEN BULLSHITELT
+ # SBSK = 
+ # VBSK = 
+ # RBSK = 
 ### ==== ##### == # === ### = merkzettel  = ### === # == ##### === ###
  # WARH-LEGACY-WARU-START-WARM-<ELEMENT>-WARAN-ENDE
  # WARK-<MASK>-WARK

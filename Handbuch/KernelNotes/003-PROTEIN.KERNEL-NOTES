@@ -159,12 +159,11 @@ SYMBOLISCHE DEKLARATION * ]
  # - POIWERK-SENTK = Sentiator-Schnittstelle (Bedingungen)
  # - POIWERK-NAVIK = Navigator-Anbindung (Ziele)
  # - POIWERK-RETK  = Retron-Einspeisung (Ŧ-Regulation)
-### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK = POIU-START-POISYS-BOXK-POIAN-ENDE 
- # SBSK = POIU-START-POIWERK-ELEMENT-BOXK-POIAN-ENDE              
- # RBSK = POIK-POIWERK-ELEMENT-BOXK-POIK
- # RBSK = POIK-BOXK-POIK  
- # RBSK = POIK-BOXK-POOK-POIK                                          
+### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
+ # MASTERWORT = POIEL
+ # SBSK = 
+ # VBSK = 
+ # RBSK =                                  
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

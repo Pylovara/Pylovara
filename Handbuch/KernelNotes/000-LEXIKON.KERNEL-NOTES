@@ -4,8 +4,8 @@
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
 ### ==== ##### == # === ### = KOMPONENTEN = ### === # == ##### === ###
  #   NR HINWEIS INFO-ID MCS       | NR HINWEIS  INFO-ID MCS         #
- #   01  · - ·  DATENTYPEN        | 02  · · ·   TRANSAKTIONSRAHMEN  #
- #   03  · · ·  PROTEIN           | 04  · · ·   PROTON              #
+ #   01  · - ·  DATENTYPEN        | 02  · + ·   TRANSAKTIONSRAHMEN  #
+ #   03  · + ·  PROTEIN           | 04  · · ·   PROTON              #
  #   05  · · ·  TRENNBEFEHL       | 06  · · ·   AKTIONSDRAHT        #
  #   07  · · ·  BOXIS             | 08  · · ·   MASTER              #
  #   09  · · ·  REX               | 10  · · ·   SENTIATOR           #
@@ -28,7 +28,7 @@
  #   802  TIL   TIMELINE                                            #
  #   803  SAX   SYSTEM-AXOIMEN                                      #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
- #   993   L1_COREKERNELMANDAT               ## #  # #      #   # # #
+ #   993   L1_COREKERNELMANDAT               ##    # #      #   # # #
  #   994   L2_AUTHORRIGHTS                   #         #  #    #   ##
  #   995   L3_COMMERCIALLICENSING            ##  Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  ##  #        #   ##

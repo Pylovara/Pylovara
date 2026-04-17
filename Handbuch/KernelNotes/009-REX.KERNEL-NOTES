@@ -358,9 +358,11 @@ SYMBOLISCHE-DEKLARATION * ↓
         ['cd /Pylovara/MCSKernel']
         ['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
 
-### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK = POIU-START-POIWERK-ELEMENT-REXH-PROZESS-REXU-FLÄCHE-NR-REXO-KORDI-REXAN-ELEMENT
- # RBSK = POIK-REXK                                               
+### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
+ # MASTERWORT = REXELT
+ # SBSK = REXK-
+ # VBSK =
+ # RBSK =                                            
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [02:02:44|So 29 Dez 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

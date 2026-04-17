@@ -1,4 +1,4 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON ## ### #  ##    # # # # #   #  # ####
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON ## ### #   #    # # # # #   #  # ####
  #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>  #
  #     · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
@@ -6,7 +6,7 @@
  #   NR HINWEIS INFO-ID MCS       | NR HINWEIS  INFO-ID MCS         #
  #   01  · - ·  DATENTYPEN        | 02  · + O   TRANSAKTIONSRAHMEN  #
  #   03  · + O  PROTEIN           | 04  · + O   PROTON              #
- #   05  · + O  TRENNBEFEHL       | 06  · · ·   AKTIONSDRAHT        #
+ #   05  · + O  TRENNBEFEHL       | 06  · + ·   AKTIONSDRAHT        #
  #   07  · · ·  BOXIS             | 08  · · ·   MASTER              #
  #   09  · · ·  REX               | 10  · · ·   SENTIATOR           #
  #   11  · · ·  ARGUMENT          | 12  · · ·   FEED                #
@@ -31,9 +31,9 @@
  #   993   L1_COREKERNELMANDAT               ##    # #      #   # # #
  #   994   L2_AUTHORRIGHTS                   #         #  #    #   ##
  #   995   L3_COMMERCIALLICENSING            ##  Pylovara—System©   #
- #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  ##  #        #   ##
+ #   996   L4_AI_ADMINISTRATIONSMANDATE      #    ##  #        #   ##
  #   997   L5_POST_MORTEM-CONTROL            #            #      #  #
- #   998   L6_IMMUTABLE_CORES_DEFINITION     ##                   # #
+ #   998   L6_IMMUTABLE_CORES_DEFINITION     ##       #           # #
  #   999   LICENSE—MANIFEST.PROTO            # #       #           ##
 ### ==== ##### == # === ### VERSIONSDATEN = ### === # == ##### === ###
  # SYSTEM = PNS 2.6.2 PYLOVARA—NETZWERK—SYSTEM                      #

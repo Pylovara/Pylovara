@@ -1,37 +1,37 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON ##  ## #  #  ## # # # # #   #  # ####
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON ## ### #  #     # # # # #   #  # ####
  #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>  #
  #     · KEIN EINTRAG | 0 KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
 ### ==== ##### == # === ### = KOMPONENTEN = ### === # == ##### === ###
  #   NR HINWEIS INFO-ID MCS    | NR HINWEIS  INFO-ID MCS            #
- #   01  Ŋ - X  DATENTYPEN     | 02  · + 0   TRANSAKTIONSRAHMEN     #
- #   03  · + 0  PROTEIN        | 04  · + 0   PROTON                 #
- #   05  · + 0  TRENNBEFEHL    | 06  · + 0   AKTIONSDRAHT           #
- #   07  · + 0  BOXIS          | 08  · + Ŋ   MASTER                 #
- #   09  · + 0  REX            | 10  · + 0   SENTIATOR              #
- #   11  · + 0  ARGUMENT       | 12  · + 0   FEED                   #
- #   13  · - X  WARP           | 14  · + 0   NAVIGATOR              #
- #   15  · + X  IDENTIFIKATION | 16  · + Ŋ   MCS-CMD                #
- #   17  · - Ŋ  DATEITYPEN     | 18  · + 0   VATRON                 #
- #   19  · + 0  RETRON         | 20  · - Ŋ   MATRIX                 #
- #   21  Ŋ - X  HERZSCHLAG     | 22  · + 0   KKIS                   #
+ #   01  · · ·  DATENTYPEN     | 02  · · ·   TRANSAKTIONSRAHMEN     #
+ #   03  · · ·  PROTEIN        | 04  · · ·   PROTON                 #
+ #   05  · · ·  TRENNBEFEHL    | 06  · · ·   AKTIONSDRAHT           #
+ #   07  · · ·  BOXIS          | 08  · · ·   MASTER                 #
+ #   09  · · ·  REX            | 10  · · ·   SENTIATOR              #
+ #   11  · · ·  ARGUMENT       | 12  · · ·   FEED                   #
+ #   13  · · ·  WARP           | 14  · · ·   NAVIGATOR              #
+ #   15  · · ·  IDENTIFIKATION | 16  · · ·   MCS-CMD                #
+ #   17  · · ·  DATEITYPEN     | 18  · · ·   VATRON                 #
+ #   19  · · ·  RETRON         | 20  · · ·   MATRIX                 #
+ #   21  · · ·  HERZSCHLAG     | 22  · · ·   KKIS                   #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG          #
- #   30  · - Ŋ  ABSOLULATOR    | 31  · - Ŋ   SCHABLONATOR           #
- #   32  · - Ŋ  MODULATOR      | 33  · - Ŋ   CHIPONATOR             #
- #   34  · - Ŋ  MORPHIC        | 35  · - X   BAUMODUS               #
+ #   30  · · ·  ABSOLULATOR    | 31  · · ·   SCHABLONATOR           #
+ #   32  · · ·  MODULATOR      | 33  · · ·   CHIPONATOR             #
+ #   34  · · ·  MORPHIC        | 35  · · ·   BAUMODUS               #
 ### ==== ##### == # === ### SYSTEM LOGIKEN  ### === # == ##### === ###
  #   NR HINWEIS INFO-ID FÜR SYSTEMRELEVANTE LOGIKEN                 #
  #   800  BSK   BAUSTEINSCHALTUNGSKREISLAUF                         #
  #   801  KWG   KOGNITIVESWÄHRUNGSGELDSYSTEM                        #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
- #   993   L1_COREKERNELMANDAT               ## #  # #  ##  #  ## # #
- #   994   L2_AUTHORRIGHTS                   #    ###  #  #    #   ##
+ #   993   L1_COREKERNELMANDAT               ## #  # #      #   # # #
+ #   994   L2_AUTHORRIGHTS                   #         #  #    #   ##
  #   995   L3_COMMERCIALLICENSING            ##  Pylovara—System©   #
- #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  ##  #  # #   #   ##
- #   997   L5_POST_MORTEM-CONTROL            #  ## ##   # #  ##  #  #
- #   998   L6_IMMUTABLE_CORES_DEFINITION     ##   ### # # # #  #  # #
- #   999   LICENSE—MANIFEST.PROTO            # #  #  # #  #  ###  ###
+ #   996   L4_AI_ADMINISTRATIONSMANDATE      # #  ##  #        #   ##
+ #   997   L5_POST_MORTEM-CONTROL            #            #      #  #
+ #   998   L6_IMMUTABLE_CORES_DEFINITION     ##                   # #
+ #   999   LICENSE—MANIFEST.PROTO            # #                   ##
 ### ==== ##### == # === ### VERSIONSDATEN = ### === # == ##### === ###
  # SYSTEM = PNS 2.6.2 PYLOVARA—NETZWERK—SYSTEM                      #
  # KERNEL = MCS 7.2 MASCHINEN-CODE-SPEECH | MASTER—CONTROL—SYSTEM   #

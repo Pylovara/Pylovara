@@ -1,18 +1,18 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON  # ### #   #    # # # ####  #  # ####
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON  # ### #    #   # # # ####  #  # ####
  #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>  #
  #     · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
 ### ==== ##### == # === ### = KOMPONENTEN = ### === # == ##### === ###
  #   NR HINWEIS INFO-ID MCS       | NR HINWEIS  INFO-ID MCS         #
- #   01  · - ·  DATENTYPEN        | 02  · + O   TRANSAKTIONSRAHMEN  #
+ #   01  · - X  DATENTYPEN        | 02  · + O   TRANSAKTIONSRAHMEN  #
  #   03  · + O  PROTEIN           | 04  · + O   PROTON              #
  #   05  · + O  TRENNBEFEHL       | 06  · + O   AKTIONSDRAHT        #
  #   07  · + O  BOXIS             | 08  · + Ŋ   MASTER              #
  #   09  · + O  REX               | 10  · + O   SENTIATOR           #
  #   11  · + O  ARGUMENT          | 12  · + O   FEED                #
  #   13  · - O  WARP              | 14  · + O   NAVIGATOR           #
- #   15  · · ·  IDENTIFIKATION    | 16  · · ·   MCS-CMD             #
- #   17  · - ·  DATEITYPEN        | 18  · · ·   VATRON              #
+ #   15  · + O  IDENTIFIKATION    | 16  · · ·   MCS-CMD             #
+ #   17  · - X  DATEITYPEN        | 18  · · ·   VATRON              #
  #   19  · · ·  RETRON            | 20  · - ·   MATRIX              #
  #   21  · - ·  HERZSCHLAG        | 22  · · ·   KKIS                #
  #   23  · · Ŋ  GENERALSCHALTUNG  | 24  · · ·                       #

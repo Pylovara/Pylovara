@@ -140,6 +140,22 @@ SCHRIFTLICHE DEKLARATION * BOXELT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-MASELEMENT
+
+ INFO = MASTERWORT
+
+ FUNKTION = BILDET MASTERWÖRTER FÜR MASTER BSK
+
+MORPHIC-ELEMENT
+
+ GAU-MASELEMENT * MASEELT
+
+SCHRIFTLICHE DEKLARATION * MASEELT
+
+ SYMBOL IN WORTEN = MASEELT
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-
 
 
@@ -147,7 +163,8 @@ GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-
 
 
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

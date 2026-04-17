@@ -173,15 +173,29 @@ SCHRIFTLICHE DEKLARATION * REXELT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-
+GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-SENTELEMENT
 
+ INFO = MASTERWORT
 
+ FUNKTION = BILDET MASTERWÖRTER FÜR SENTIATOR BSK
 
+MORPHIC-ELEMENT
 
+ GAU-SENTELEMENT * SENTELT
 
+SCHRIFTLICHE DEKLARATION * SENTELT
 
+ SYMBOL IN WORT = SENTELT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+GENER
+
+
+
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

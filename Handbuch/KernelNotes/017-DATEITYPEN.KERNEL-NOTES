@@ -1,5 +1,6 @@
 @kernel-nr: 17 # DATEITYPEN | STATUS = X
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+### ==== ##### == # === ### K17 DATEITYPEN  ### === # == ##### === ###
 ### ==== ##### == # === STARTPUNKT DATEITYPEN # === # == ##### === ###
 
 NAME Ð DATEITYPEN
@@ -206,7 +207,6 @@ DATEITYPEN-ORGANISATOR-CORE-AUSFÜHRUNGSKLASSE § DIAU-SYSTEM-COIN
  # 3. RUNTIME-SIGNATUR (þ) VERIFIZIEREN (0x10–0x1F)                 #
  # 4. CRC32 PRÜFSUMME (ENDE DER DATEI) VALIDIEREN                   #
  # 5. KKIS-INTEGRITÄTSSCAN DURCHFÜHREN                              #
-### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
 ### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
  # MASTERWORT = DIELT
  # SBSK = DIK-DIH-DIELT

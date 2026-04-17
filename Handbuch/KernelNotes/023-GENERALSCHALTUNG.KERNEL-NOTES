@@ -189,14 +189,29 @@ SCHRIFTLICHE DEKLARATION * SENTELT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-GENER
+GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-ARGELEMENT
 
+ INFO = MASTERWORT
 
+ FUNKTION = BILDET MASTERWÖRTER FÜR ARGUMENTE BSK
 
+MORPHIC-ELEMENT
 
+ GAU-ARGELEMENT * ARGELT
 
+SCHRIFTLICHE DEKLARATION * ARGELT
+
+ SYMBOL IN WORTEN = ARGELT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

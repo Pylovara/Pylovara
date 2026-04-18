@@ -1,4 +1,4 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON #  ### #    #   # # # ####  #  # ####
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON #  ### #   ##   # # # ####  #  # ####
  #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>  #
  #     · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
@@ -15,7 +15,7 @@
  #   17  · - X  DATEITYPEN        | 18  · + O   VATRON              #
  #   19  · + O  RETRON            | 20  · - X   MATRIX              #
  #   21  · - X  HERZSCHLAG        | 22  · + O   KKIS                #
- #   23  · · Ŋ  GENERALSCHALTUNG  | 24  · · ·                       #
+ #   23  · + 0  GENERALSCHALTUNG  | 24  · · ·                       #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG          #
  #   30  · · ·  ABSOLULATOR    | 31  · - ·   SCHABLONATOR           #
@@ -29,7 +29,7 @@
  #   803  SAX   SYSTEM-AXOIMEN                                      #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
  #   993   L1_COREKERNELMANDAT               ##    # #      #   # # #
- #   994   L2_AUTHORRIGHTS                   #         #  #    # #  #
+ #   994   L2_AUTHORRIGHTS                   #   #     #  #    # #  #
  #   995   L3_COMMERCIALLICENSING            ##  Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      #    ##  #        #   ##
  #   997   L5_POST_MORTEM-CONTROL            #  #         #      #  #

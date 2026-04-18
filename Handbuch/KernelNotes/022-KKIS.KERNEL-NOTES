@@ -269,10 +269,62 @@ KKIS-ZUGRIFF-UNTERKLASSE § KKIU-LICENSE
 
  AUSFÜHRUNGSART = KOGNITIV
 
-### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # SBSK = KKIU-<ELEMENT>
- # VBSK = KKIH-ZUGRIFF-KKIU-<ELEMENT>
- # RBSK = KKIK-MASU-<ELEMENT>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-GENERALSCHALTUNG
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF GENERALSCHALTUNG
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-ABSOLULATOR
+
+ INFO = INSTANZ
+
+ FUNKTION = 
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-MODULATOR
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF MODULATOR
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-CHIPONATOR
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF CHIPONATOR
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+KKIS-ZUGRIFF-UNTERKLASSE § KKIU-MORPHIC
+
+ INFO = INSTANZ
+
+ FUNKTION = ZUGRIFF AUF MORPHIC
+
+ AUSFÜHRUNGSART = KOGNITIV
+
+### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
+ # MASTERWORT = 
+ # SBSK = 
+ # VBSK = 
+ # RBSK = 
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [00:26:28|Mo Jan 26 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

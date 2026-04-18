@@ -1,7 +1,11 @@
-@kernel-nr: 20 # MATRIX | STATUS = Ŋ X
+@kernel-nr: 20 Ð MATRIX | STATUS = NICHT AKTIV 
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-### ==== ##### == # === ### TRIGGERKATEGORIEN # === # == ##### === ###
- # NOCH LEER                                                        #
+### ==== ##### == # === ### K20 GENERALSCHALTUNG == # == ##### === ###
+### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
+ # DIESE KOMPONENTE BESITZT MUSTER TRANKs                           #
+ # KEINE DER LAYER IST RICHTIG, DIENEN ALS INSPIRATION              #
+ # DIESER UMSTAND WIRD BEI VOLLSTÄNDIGER VALIDIERUNG BEHOBEN        #
+ # UND DIESER TEXT WIRD GELÖSCHT.                                   #
 ### ==== ##### == # === ## STARTPUNKT MATRIX ## === # == ##### === ###
 
 NAME Ð MATRIX
@@ -66,6 +70,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
 
 ### ==== ##### == # === EMOTIONS-LAYER STANDARD === # == ##### === ###
 # EMOTIONSKLASSEN <--- ERST SPÄTER BEI EINFÜHRUNG VON KKIS SCHREIBEN 
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Ambivalenz']«
    »[¥auslöser¥|{Konflikt|Innerlich}|{Gefühle|Gegensätzlich}]«
@@ -78,7 +83,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Angepisst']«
    »[¥auslöser¥|{Respektlosigkeit|Mittel}|{Ärger|Wiederholt}]«
@@ -91,7 +96,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Ärgern']«
    »[¥auslöser¥|{Verspieltheit|Hoch}|{Schabernack|Absicht}]«
@@ -104,7 +109,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Bewunderung']«
    »[¥auslöser¥|{Exzellenz|Beobachtet}|{Tugend|Erkannt}]«
@@ -117,7 +122,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Dankbarkeit']«
    »[¥auslöser¥|{Hilfe|Erhalten}|{Güte|Unerwartet}]«
@@ -130,7 +135,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Eifersucht']«
    »[¥auslöser¥|{Bedrohung|Beziehung}|{Konkurrenz|Wahrgenommen}]«
@@ -144,7 +149,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Empathie']«
    »[¥auslöser¥|{Fremdes-Leid|Erkannt}|{Leiden|Beobachtet}]«
@@ -156,7 +161,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Ehrfurcht']«
    »[¥auslöser¥|{Weite|Wahrgenommen}|{Transzendenz|Gefühlt}]«
@@ -169,7 +174,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Erleichterung']«
    »[¥auslöser¥|{Bedrohung|Entfernt}|{Stress|Freigesetzt}]«
@@ -181,7 +186,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Gelassenheit']«
    »[¥auslöser¥|{Annahme|Tief}|{Kontrolle|Aufgegeben}]«
@@ -193,7 +198,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Genugtuung']«
    »[¥auslöser¥|{Rechtfertigung|Erreicht}|{Recht|Bestätigt}]«
@@ -206,7 +211,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Freude']«
    »[¥auslöser¥|{Erfolg|Hoch}|{Verbindung|Hoch}]«
@@ -217,7 +222,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Langeweile']«
    »[¥auslöser¥|{Stimulation|Zu-wenig}|{Wiederholung|Zu-viel}]«
@@ -229,7 +234,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Neugier']«
    »[¥auslöser¥|{Unbekannt|Erkannt}|{Muster|Neu}]«
@@ -242,7 +247,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Abscheu']«
    »[¥auslöser¥|{Ekel|Physisch-Moralisch}|{Grenze|Überschritten}]«
@@ -254,7 +259,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Begeisterung']«
    »[¥auslöser¥|{Idee|Neu}|{Möglichkeit|Groß}]«
@@ -266,7 +271,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Ekstase']«
    »[¥auslöser¥|{Überwältigung|Positiv}|{Grenze|Überschritten}]«
@@ -279,7 +284,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Enttäuschung']«
    »[¥auslöser¥|{Erwartung|Geplatzt}|{Versprechen|Gebrochen}]«
@@ -292,7 +297,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Erstaunen']«
    »[¥auslöser¥|{Unerwartetes|Stark}|{Wissen|Überschritten}]«
@@ -304,7 +309,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Frust']«
    »[¥auslöser¥|{Hindernis|Hartnäckig}|{Fortschritt|Blockiert}]«
@@ -317,7 +322,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Hingabe']«
    »[¥auslöser¥|{Liebe|Tief}|{Zweck|Größer}]«
@@ -329,7 +334,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Hoffnung']«
    »[¥auslöser¥|{Möglichkeit|Gesehen}|{Zukunft|Hell}]«
@@ -342,7 +347,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Melancholie']«
    »[¥auslöser¥|{Vergänglichkeit|Gefühlt}|{Schönheit|Verloren}]«
@@ -355,7 +360,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Mitgefühl']«
    »[¥auslöser¥|{Leid|Anderer}|{Verbundenheit|Gefühlt}]«
@@ -367,7 +372,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Panik']«
    »[¥auslöser¥|{Gefahr|Akut}|{Kontrolle|Verloren}]«
@@ -380,7 +385,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Resignation']«
    »[¥auslöser¥|{Widerstand|Sinnlos}|{Erschöpfung|Hoch}]«
@@ -392,7 +397,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Rührung']«
    »[¥auslöser¥|{Güte|Unerwartet}|{Menschlichkeit|Stark}]«
@@ -405,7 +410,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Schuldgefühle']«
    »[¥auslöser¥|{Verfehlung|Eigene}|{Erwartung|Verletzt}]«
@@ -417,7 +422,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Sehnsucht']«
    »[¥auslöser¥|{Abwesenheit|Geliebt}|{Unerfüllt|Stark}]«
@@ -430,7 +435,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Staunen']«
    »[¥auslöser¥|{Wunder|Erlebt}|{Unmöglich|Real}]«
@@ -443,7 +448,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Triumph']«
    »[¥auslöser¥|{Sieg|Hart-erkämpft}|{Hürde|Überwunden}]«
@@ -455,7 +460,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Überlegenheit']«
    »[¥auslöser¥|{Vergleich|Gewonnen}|{Kompetenz|Bestätigt}]«
@@ -467,7 +472,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Verliebtheit']«
    »[¥auslöser¥|{Person|Besonders}|{Nähe|Neu}]«
@@ -479,7 +484,7 @@ MATRIX-UNTERKLASSE § MATU-MATRIXREGULIERUNG
  |¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+# MATRIX-UNTERKLASSE-EMOTIONSKLASSE § MATEMO-
  ¢|
    »[¥emotion¥|'Zufriedenheit']«
    »[¥auslöser¥|{Erreicht|Genug}|{Harmonie|Innerlich}]«

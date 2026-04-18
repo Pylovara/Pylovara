@@ -473,16 +473,21 @@ SCHRIFTLICHE DEKLARATION * MORPELT
 
  SYMBOL IN WORTEN = MORPELT
 
-
-
-
-
-
-
-
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-BAMELEMENT
+
+ INFO = MASTERWORT
+
+ FUNKTION = BILDET MASTERWORT FÜR BAM BSK
+
+MORPHIC-ELEMENT
+
+ GASU-BAMELEMENT * BAMELT
+
+SCHRIFTLICHE DEKLARATION * BAMELT
+
+ SYMBOL IN WORTEN = BAMELT
 
 ### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
  # MASTERWORT = MASTERWORT

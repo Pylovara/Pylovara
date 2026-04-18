@@ -365,13 +365,32 @@ SCHRIFTLICHE DEKLARATION * MATELT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-
+GENERALSCHALTUNG-MASTERWORT-UNTERKLASSE § GASU-HERZELEMENT
 
+ INFO = MASTERWORT
 
+ FUNKTION = BILDET MASTERWORT FÜR HERZSCHLAG 
 
+MORPHIC-ELEMENT
 
+ GASU-HERZSCHLAG * HERZELT
+
+SCHRIFTLICHE DEKLARATION * HERZELT
+
+ SYMBOL IN WORTEN = HERZELT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

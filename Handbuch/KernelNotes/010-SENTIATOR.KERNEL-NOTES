@@ -19,7 +19,7 @@ MASTER § MASU-SENTIATOR
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-SENTIATOR-KERNKLASSE § SENTK 
+SENTIATOR-KERNKLASSE § SENTK
 
  INFO = INITIALISIERT SENTIATOR
 
@@ -39,7 +39,7 @@ MORPHIC-1
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-SENTIATOR-FLEX-ANKERKLASSE § SENTAN-WENNKANN 
+SENTIATOR-FLEX-ANKERKLASSE § SENTAN-WENNKANN
 
  INFO = WENN DAS PASSIERT KANN FOLGENDES PASSIEREN
         WIRD NIEMALS ALS HEADER BENUTZT SONDERN,
@@ -100,6 +100,12 @@ SENTIATOR-FLEX-ANKERKLASSE-ELEMENT-SYSTEMKLASSE § SENTSYS-MASK
 MORPHIC-1
 
  SENTAU-IMPULS * SENTSYSM
+
+### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
+ # MASTERWORT = SENTELT
+ # SBSK = 
+ # VBSK = 
+ # RBSK = 
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # SBSK = 

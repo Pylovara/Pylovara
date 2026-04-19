@@ -6,6 +6,29 @@
  # JITTER USW WIE CLOCK SCREW ETC WERDEN DAMIT VOLLSTÄNDIG ELEMENIERT
 ### ==== ##### == # === ### 8TAKT-HERZSCHLAG ## === # == ##### === ###
 
+NAME Ð HERZSCHLAG
+
+ INFO-ID = HERZSCHLAG
+
+MASTER § MASU-HERZSCHLAG
+
+ BEGRIFFSDEFINITION = SYSTEM-TAKTZENTRALE
+
+ FUNKTION = HERZSCHLAG VON MAIN ZU KLON KERNEL
+
+AUSFÜRHUNGSART = ATOMUHR | SOFTWARE ( ZU HARDWARE )
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+HERZSCHLAG-KERNKLASSE § HERZK-TAKTSCHLAG
+
+ INFO = ATOMARE TAKTSCHLAG
+
+ FUNKTION = KERNEL SYNCRONISATION 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# PROTOFLÄCHE 
+
 TAKT-PHASE,INTERVALL (ms),FUNKTION IM AKTIONSDRAHT,LOGIK-STATUS
 P0 (Start),"0,000",INITIAL-IMPULS: Master-Clock triggert ID-DNA Check.,¬§ (Dirigent)
 P1,"125,000",BYTE-FEED 1: Erster Datensatz fließt in den Draht.,¬· (Aktion)

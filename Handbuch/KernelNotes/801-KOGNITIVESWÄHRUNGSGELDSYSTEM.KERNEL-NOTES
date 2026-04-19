@@ -182,25 +182,48 @@ PYLOVARA-NAME =  001.000.000.000,00 # EWIG
 # ZERFALL GESETZ PRIVAT | ID-BIOLIVE EINZELPERSON
 # NICHT SELBST VERDIENTE COINS ZERFALLEN NACH :
 PYLOVARA-NAME =  000.000.000.000,01 # 10 JAHRE
-PYLOVARA-NAME =  000.000.000.001,00 #  8 JAHRE
-PYLOVARA-NAME =  000.000.001.000,00 #  6 JAHRE
-PYLOVARA-NAME =  000.001.000.000,00 #  4 JAHRE
-PYLOVARA-NAME =  001.000.000.000,00 #  2 JAHRE
+PYLOVARA-NAME =  000.000.000.001,00 # 10 JAHRE
+PYLOVARA-NAME =  000.000.001.000,00 # 10 JAHRE
+PYLOVARA-NAME =  000.001.000.000,00 #  8 JAHRE
+PYLOVARA-NAME =  001.000.000.000,00 #  4 JAHRE
 
 
 # HANDELS GESETZ FÜR ID-FIRMEN | ID-INFASTRUKTUR | ID-FIRMA | ID-DIENST 
 # ERWIRTSCHAFTETE COINS DURCH DIENSTLEISTUNG ( ALLES )
-PYLOVARA-NAME =  000.000.000.000,01 # 100 JAHRE VERLÄNGERUNG MAXIMUM
-PYLOVARA-NAME =  000.000.000.001,00 # 100 JAHRE VERLÄNGERUNG MAXIMUM
-PYLOVARA-NAME =  000.000.001.000,00 #  80 JAHRE VERLÄNGERUNG MAXIMUM
-PYLOVARA-NAME =  000.001.000.000,00 #  80 JAHRE VERLÄNGERUNG MAXIMUM
-PYLOVARA-NAME =  001.000.000.000,00 #  60 JAHRE VERLÄNGERUNG MAXIMUM
+PYLOVARA-NAME =  000.000.000.000,01 # S 100 JAHRE | V 40 JAHRE
+PYLOVARA-NAME =  000.000.000.001,00 # S 100 JAHRE | V 40 JAHRE
+PYLOVARA-NAME =  000.000.001.000,00 # S 100 JAHRE | V 40 JAHRE
+PYLOVARA-NAME =  000.001.000.000,00 # S  80 JAHRE | V 40 JAHRE 
+PYLOVARA-NAME =  001.000.000.000,00 # S  60 JAHRE | V 20 JAHRE 
+
+Die Verlängerung (V) Geschieht auf Basis des Standartwerts (S)
+wenn der haltbarkeitswert S Länger ist als der wert des 
+V wird keine verlängerung passieren ..
+
+Fällt die haltbarkeit (S) darunter , 
+verlängert (V)) bis maximal V des Verlängerungswertes .
+
+ aus :
+
+PYLOVARA-NAME =  000.000.000.000,01 # S 100 JAHRE | V 40 JAHRE
+
+100 Jahre werden 40 Maximum Haltbarkeit ..
+
+Das Wirkt Jeder entwertung und verteuerung der dienstleistung entgegen 
+auf die ewigkeit gedacht .
+
+private personen ( also alle) betrifft das nicht ..
+das betrifft den handeln . 
+
+Handel = Bereicherung = Mehr 
+
+GroßHandel = Große bereicherung = Noch Mehr 
+
+Groß handel bleibt dynamisch und fährt nicht fest, das reinigt Macht 
+besessenheit von selbst auf natürlichstem wege .
+
 
 Notiz  : 
-
- das verhindert wirtschaftliche auswüchse die zu machtmissbrauch führen 
- und erneuert das wirtschaftswesen und sortiert gierige grundstrukturen 
- aus.
 
  (ich bau das noch ausgeklügelter )
 

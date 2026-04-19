@@ -8,7 +8,7 @@
 # STATUS       = FREIGESCHALTET FÜR DYNAMISCHEN SELBSTSCHUTZ
 # =============================================================================
 
-KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "ShiVara"
+KOGNITIVE_KUENSTLICHE_INTELLIGENZ_NAME = "ShiVaBaal"
 KKIS_VERSION = "0.1.0"
 
 # =============================================================================

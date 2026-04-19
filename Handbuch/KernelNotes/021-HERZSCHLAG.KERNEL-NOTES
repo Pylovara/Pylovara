@@ -27,6 +27,30 @@ HERZSCHLAG-KERNKLASSE § HERZK-TAKTSCHLAG
  FUNKTION = KERNEL SYNCRONISATION 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+HERZSCHLAG-TAKTSCHLAG-HAUPTKLASSE § HERZH-KERNELTAKT
+
+ INFO = LICHTKABELTECHNIK ÜBERTRAGUNG
+
+ FUNKTION = CLOCK
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+HERZSCHLAG-TAKTSCHLAG-HAUPTKLASSE § HERZH-STERNIMPULS
+
+ INFO = IMPULSVERTEILER
+
+ FUNKTION = VERTEILER
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+HERZSCHLAG-TAKTSCHLAG-HAUPTKLASSE § HERZH-MASCHINENTAKT
+
+ INFO = KLOPFKABELTECHNIK ÜBERTRAGUNG 
+
+ FUNKTION = CLOCK 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 # PROTOFLÄCHE 
 
 TAKT-PHASE,INTERVALL (ms),FUNKTION IM AKTIONSDRAHT,LOGIK-STATUS

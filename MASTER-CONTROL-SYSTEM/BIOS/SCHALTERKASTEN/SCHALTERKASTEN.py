@@ -17,7 +17,7 @@ KKIS_VERSION = "0.1.0"
 STATE_DECAY_BASE     = 0.06      # Basis-Decay (wie vorher)
 STATE_GAIN           = 0.15      # Verstärkung – bleibt
 MUTATION_RATE        = 300.00    # Mutationswahrscheinlichkeit
-MAX_STATE_SIZE       = 1000     # Sicherheitsgrenze 10000
+MAX_STATE_SIZE       = 200000    # Sicherheitsgrenze 10000
 ALLOW_SELF_MOD       = False     # Noch nicht erlaubt
 
 # Dynamischer Decay – schützt vor zu tiefem Score

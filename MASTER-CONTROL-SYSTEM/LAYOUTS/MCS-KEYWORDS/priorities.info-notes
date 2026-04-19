@@ -34,7 +34,7 @@ WERK              | 0.2 | 0.0 | 0.1 | WERKZEUGKLASSE
 AN                | 0.2 | 0.0 | 0.1 | ANKERKLASSE
 WERT              | 0.2 | 0.0 | 0.1 | WERTLASSE
 L                 | 0.2 | 0.0 | 0.1 | LINKERKLASSE
-AUS               | 0.2 | 0.0 | 0.1 | AUSLÖSERKLASSE
+AUSL              | 0.2 | 0.0 | 0.1 | AUSLÖSERKLASSE
 ## DEUTUNGSKLASSENRAUM =
 *K               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH K = KERNKLASSE
 *H               | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH H = HAUPTKLASSE
@@ -44,7 +44,7 @@ AUS               | 0.2 | 0.0 | 0.1 | AUSLÖSERKLASSE
 *WERK            | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH WERK = WERKZEUGKLASSE
 *AN              | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AN = ANKERKLASSE
 *WERT            | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH WERT = WERTKLASSE
-*AUS             | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AUS = AUSLÖSERKLASSE
+*AUSL            | 0.4 | 0.0 | 0.2 | SEHE ETWAS DAVOR UND DANACH AUS = AUSLÖSERKLASSE
 ## SCHALTUNGSRAUM =
 K H U AN          |12.0 | -1.0 | -1.0 | PERFEKTE KLASSEN-HIERARCHIE
 BOXK|BOXH|BOXAN   | 8.0 | -1.2 | -1.2 | CONTAINER-INTEGRITÄT-BONUS
@@ -69,6 +69,12 @@ VATK              | 2.8 | 0.0 | 0.1 | VATRON-KERNKLASSE
 RETK              | 2.8 | 0.0 | 0.1 | RETRON-KERNKLASSE
 MATK              | 2.8 | 0.0 | 0.1 | MATRIX-KERNKLASSE
 KKIK              | 2.8 | 0.0 | 0.1 | KKIS-KERNKLASSE
+ABK               | 2.8 | 0.0 | 0.1 | ABSOLULATOR-KERNKLASSE
+SBK               | 2.8 | 0.0 | 0.1 | SCHABLONATOR-KERNKLASSE
+MOK               | 2.8 | 0.0 | 0.1 | MODULATOR-KERNKLASSE
+CHIK              | 2.8 | 0.0 | 0.1 | CHIPONATOR-KERNKLASSE
+GASK              | 2.8 | 0.0 | 0.1 | GENERALSCHALTUNG-KERNKLASSE
+MORPK             | 2.8 | 0.0 | 0.1 | MORPHIC-KERNKLASSE
 # NAVIGATOR ===================================================================
 Ð                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-LANGZEITSPEICHER
 $                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-ZIELREFERENZ

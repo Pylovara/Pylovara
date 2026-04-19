@@ -987,9 +987,7 @@ $ 030-ABSOLULATOR.KERNEL-NOTES
 
 MORPHIC-0 =
 
-ABSOLULATOR-KERNKLASSE § ABK
-
-ABSOLULATOR-HAUPTKLASSE § ABH-ELEMENT
+ # nach der erneuerung eintragen 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -1001,9 +999,15 @@ $ 031-SCHABLONATOR.KERNEL-NOTES
 
  FUNKTION = SCHABLONEN
 
+ MASTERWORT = SBELT
+
 MORPHIC-0 =
  
-INAKTIV =
+ SCHABLONATOR-KERNKLASSE § SBK
+
+ SCHABLONATOR-HAUPTKLASSE § SBH-SCHABLONEN
+
+ # NACH ERNEUERUNG WEITERES EINTRAGEN 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

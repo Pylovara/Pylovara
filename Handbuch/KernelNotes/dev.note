@@ -1125,18 +1125,18 @@ dann beim feed weiter machen .
 
 AKTUALISIERUNG VERFAHREN FÜR =
 
- - MASK 
- - SCHABLONATOR
+ - MASK #ERLEDIGT
+ - SCHABLONATOR # OFFEN
 
  DANACH 
 
- - ABSOLULATOR
+ - ABSOLULATOR # OFFEN
 
 DANACH
 
- - MODULATOR + MCS-CMD 
- - DANN MORPK AUFBAUEN 
- - DANN CHIPONATOR 
+ - MODULATOR + MCS-CMD  # OFFEN
+ - DANN MORPK AUFBAUEN <---------- ANGEFANGEN !!!!
+ - DANN CHIPONATOR # OFFEN
 
 - feed bauschaltung erledigt (alt)
 - feed bauschaltung BOXSYS-EINGABE binden nicht erledigt 
@@ -1187,9 +1187,9 @@ REXAN-PARALLEL-AUSFÜHRUNG ZU REXAN-PARALLELAUSFÜHRUNG FÜR ELT SCHALTUNG
    = MODULKLASSE ANSCHEINEND NUR IM WARP , WURDE GEÄNDERT VON O AUF MOD 
    = WARELT ERWEITERT BEI WARMOD FÜR 2 KNOTENPUNKT NUTZUNGEN IM NAMEN 
    = OPTIONSKLASSE BLEIBT BEI O
- · MORPK ERWEITERT 
+ · MORPK ERWEITERT <--------------------------------------------------------------## OFFEN = SEITE 800 AKTUALISIEREN
  · MASTER SOFORT AKTUALISIERT
- · jetzt Schablonator layout überarbeiten und axoimen 
+ · jetzt Schablonator layout überarbeiten und axoimen <---------------------------## OFFEN = SPÄTER NACH ABK LAYOUT VERBESSERUNG
 
 
 

@@ -1,46 +1,12 @@
-!!!!!!!!! PAUSIERT !!!!!!!!!!
-
-KOMPONENTEN-GENERAL-SCHALTUNG # FERTIG
-
-Notiz = nach der generalschaltung einmal bestehendes aktualisieren
-dann beim feed weiter machen .
-
-AKTUALISIERUNG VERFAHREN FÜR =
-
- - MASK 
- - SCHABLONATOR
-
- DANACH 
-
- - ABSOLULATOR
-
-DANACH
-
- - MODULATOR + MCS-CMD 
- - DANN MORPK AUFBAUEN 
- - DANN CHIPONATOR 
-
-- feed bauschaltung erledigt (alt)
-- feed bauschaltung BOXSYS-EINGABE binden nicht erledigt 
-
-FEHLER GEFUNDEN =
-REX-PROZESS-FLÄCHE-NR-NUMMERKLASSE § REXU <-- WURDE ZU REXNR GEÄNDERT
-
-UMGEÄNDERT =
-REXAN-PARALLEL-AUSFÜHRUNG ZU REXAN-PARALLELAUSFÜHRUNG FÜR ELT SCHALTUNG
-
-
-
 @kernel-nr: 30 ABSOLULATOR | STATUS = DEV LEVEL ROLLING-RELEASE
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # === ### K30 ABSOLULATOR ### === # == ##### === ###
 ### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
- #      DER PYLOVARA BAUSTEINSCHALTUNGSKREISLAUF = BSK              #
  #      DER ABSOLUTEBAUSTEINSCHALTUNGSKREISLAUF  = ABSK             #
  #   DEVONOTE = DAS WIRD EIN VOLLWERTIGES SCHALTREGISTERKERN        #
  # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1 (META-EBENE)     #
 ### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###                                                      #
- # PROGRAMM|KLASSEKÜRZEL-ELEMENT = ** **-<ELEMENT> *-* *-*-<ELEMENT>#
+ # PROGRAMMKÜRZEL|KLASSENETIKETTE-MASTERWORT  =  **-<*-*ELT>        #
 ### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
 
 NAME Ð ABSOLULATOR
@@ -65,53 +31,7 @@ ABSOLULATOR-KERNKLASSE § ABK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-ABSOLULATOR-HAUPTKLASSE § ABH-RELFEX
-
- INFO = SCHALTET DIE REFLEXSCHALTUNG
-
- FUNKTION = FUNKTIONSAUFRUFE
-
-SYMBOLISCHE DEKLERATION *  
-
- SYMBOL IN WORTEN = 
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-↓ NEUE BLÖCKE 
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-ABSOLULATOR-REFLEX-UNTERKLASSE § ABU-(BRAUCH NOCH NAMEN)
-
-MODULATOR ® MODUL 00
- # SYSTEMSTEUERUNG MASTER
- # SUCHT NACH MASTER UNTERKLASSEN ELEMENTEN
- # RELEVANZ = MASK
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-ABSOLULATOR-REFLEX-(BRAUCH NOCH NAMEN)-(BRAUCH EIGENE KLASSE) § XXX-MASU-ELEMENT
-
-MODULATOR ® MODUL 00-00 # MASTER CONTROL SYSTEM ANSTEUERUNG
- ABSK = MASK-MASU-ELEMENT
-BEDINGUNG: <MASK>
- START: <MASK>
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
- ↑ NEUE bLÖCKE , WIRD DOCH NOCHMAL ALLES FRISCH AUFGESETZT NACH 
-   AKTUALISIERUNG.
-
-
-
-neuer block designe für den abk =
-
-
-
-
+# NEUE BLOCK DESIGNES
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

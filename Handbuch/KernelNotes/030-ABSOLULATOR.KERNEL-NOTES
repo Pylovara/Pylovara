@@ -2,8 +2,6 @@
 
 KOMPONENTEN-GENERAL-SCHALTUNG # FERTIG
 
-
-
 Notiz = nach der generalschaltung einmal bestehendes aktualisieren
 dann beim feed weiter machen .
 
@@ -22,23 +20,14 @@ DANACH
  - DANN MORPK AUFBAUEN 
  - DANN CHIPONATOR 
 
-
-
-
-
-
 - feed bauschaltung erledigt (alt)
 - feed bauschaltung BOXSYS-EINGABE binden nicht erledigt 
 
 FEHLER GEFUNDEN =
-
 REX-PROZESS-FLÄCHE-NR-NUMMERKLASSE § REXU <-- WURDE ZU REXNR GEÄNDERT
 
 UMGEÄNDERT =
-
 REXAN-PARALLEL-AUSFÜHRUNG ZU REXAN-PARALLELAUSFÜHRUNG FÜR ELT SCHALTUNG
-
-
 
 
 
@@ -76,27 +65,49 @@ ABSOLULATOR-KERNKLASSE § ABK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-ABSOLULATOR-HAUPTKLASSE § ABH-ELEMENT
+ABSOLULATOR-HAUPTKLASSE § ABH-RELFEX
 
- INFO = ELEMENT KLAMMER 
+ INFO = SCHALTET DIE REFLEXSCHALTUNG
 
  FUNKTION = FUNKTIONSAUFRUFE
 
-SYMBOLISCHE DEKLERATION * <ELEMENT> 
+SYMBOLISCHE DEKLERATION *  
 
-# CHIPONATOR NAVU-STERN ELEMENT = *
-# SCHALTUNG ELEMENT GLEICH STERN GLEICH STERN GLEICH KOMPONENTE (MASU-*)
-# <*> = ELEMENT
+ SYMBOL IN WORTEN = 
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+↓ NEUE BLÖCKE 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ABSOLULATOR-REFLEX-UNTERKLASSE § ABU-(BRAUCH NOCH NAMEN)
+
 MODULATOR ® MODUL 00
  # SYSTEMSTEUERUNG MASTER
  # SUCHT NACH MASTER UNTERKLASSEN ELEMENTEN
  # RELEVANZ = MASK
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ABSOLULATOR-REFLEX-(BRAUCH NOCH NAMEN)-(BRAUCH EIGENE KLASSE) § XXX-MASU-ELEMENT
+
 MODULATOR ® MODUL 00-00 # MASTER CONTROL SYSTEM ANSTEUERUNG
  ABSK = MASK-MASU-ELEMENT
 BEDINGUNG: <MASK>
  START: <MASK>
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+ ↑ NEUE bLÖCKE , WIRD DOCH NOCHMAL ALLES FRISCH AUFGESETZT NACH 
+   AKTUALISIERUNG.
+
+
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 00-00-00-00 # MASTER SYSTEM ANSTEUERUNG
  ABSK = MASK-MASH-REGISTER-MASU-ELEMENT

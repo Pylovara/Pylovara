@@ -150,6 +150,14 @@ WARP-LEGACY-START-MODULKLASSE § WARO-CLANG
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+WARP-LEGACY-START-MODULKLASSE § WARO-HTML4
+
+ INFO = Bindung an HTML5/CSS3/JS Runtime und Browser-ABIs
+
+ FUNKTION = Stabile Übertragung von Web-Content
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 WARP-LEGACY-START-MODULKLASSE § WARO-HTML5
 
  INFO = Bindung an HTML5/CSS3/JS Runtime und Browser-ABIs
@@ -247,6 +255,14 @@ WARP-LEGACY-START-MODULKLASSE § WARO-UWP
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 WARP-LEGACY-START-MODULKLASSE § WARO-DIRECTX
+
+ INFO = DirectX 11/12 Grafik- und Compute-ABI
+
+ FUNKTION = Stabile Übertragung von DirectX-Workloads
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-LEGACY-START-MODULKLASSE § WARO-X11
 
  INFO = DirectX 11/12 Grafik- und Compute-ABI
 
@@ -355,6 +371,54 @@ WARP-LEGACY-START-MODULKLASSE § WARO-FATBIN
  INFO = Universal Binaries (Apple Silicon + Intel)
 
  FUNKTION = Legacy-Übertragung von Fat-Binaries
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-LEGACY-START-MODULKLASSE § WARO-ASSEMBLY
+
+ INFO = 
+
+ FUNKTION = Legacy-Übertragung von 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-LEGACY-START-MODULKLASSE § WARO-GRANDL
+
+ INFO = 
+
+ FUNKTION = Legacy-Übertragung von 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-LEGACY-START-MODULKLASSE § WARO-KOTLIN
+
+ INFO = 
+
+ FUNKTION = Legacy-Übertragung von 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-LEGACY-START-MODULKLASSE § WARO-COBOLT
+
+ INFO = 
+
+ FUNKTION = Legacy-Übertragung von 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-LEGACY-START-MODULKLASSE § WARO-CSHARP
+
+ INFO = 
+
+ FUNKTION = Legacy-Übertragung von 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-LEGACY-START-MODULKLASSE § WARO-BASH
+
+ INFO = 
+
+ FUNKTION = Legacy-Übertragung von 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

@@ -60,7 +60,9 @@ VATRON BEDINGUNG:
  ©    1 - <MASH-MASELT>
  ©    0 - <MASK>
 
-START: <MASK>
+KURZSCHLUSS: <MASK> + <MASH-MASELT>
+
+ START: <MASK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## GIBT MASK DIE MASU-MASELT VERBINDUNG
@@ -74,6 +76,8 @@ VATRON BEDINGUNG:
  ©    0 - <MASK>
  ©    1 - <MASH-MASELT>
  ©    2 - <MASU-MASELT>
+
+KURZSCHLUSS: <MASH-MASELT> + <MASU-MASELT>
 
 START: <MASU-MASELT>
 
@@ -93,10 +97,16 @@ MODULATOR ® MODUL 01-01
 VATRON BEDINGUNG:
  ©    2 - <MASU-MASELT>
  ©    3 - <TRANK>
- ©    4 - <
- ©    5 - <
- ©    6 - <
- 
+ ©    4 - <TRANH-RUN>
+ ©    5 - <TRANU-START>
+ ©    6 - <TRANSYS-MASK>
+
+KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK>
+
+ START: ¢! <MASK>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 
 
 

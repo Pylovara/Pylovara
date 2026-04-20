@@ -93,7 +93,6 @@ START: <MASU-MASELT>
 #
 ABSOLULATOR-HAUPTKLASSE § ABH-23456
 
-
 MODULATOR ® MODUL 01-01 
  ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK
 
@@ -113,17 +112,26 @@ KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK>
 #
 ABSOLULATOR-23456-UNTERKLASSE § ABU-
 
+MODULATOR ® MODUL 01-02 
+ ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK-TRANAN-ENDE
 
+VATRON BEDINGUNG:
+ ©    2 - <MASU-MASELT>
+ ©    3 - <TRANK>
+ ©    4 - <TRANH-RUN>
+ ©    5 - <TRANU-START>
+ ©    6 - <TRANSYS-MASK>
+ ©    7 - <TRANAN-ENDE>
 
+KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK> + <TRANAN-ENDE>
+
+ START: ¢! <MASK> !¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 # Abgleiche ( waren alle richtig , nur alte blöcke)
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 01-02 # TRANSAKTIONSRAHMEN ENDE SEQUENZ
- ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK-TRANAN-ENDE
-BEDINGUNG: <TRANU-START> + <TRANSYS-MASK> + <TRANAN-ENDE>
- START: ¢! <MASK> !¢
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 02 # PROTEIN STEUERUNG
  # RAHMENBEDINGUNG FÜR PROTEIN SOFTWARE

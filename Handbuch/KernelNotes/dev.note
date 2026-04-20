@@ -1263,7 +1263,10 @@ REXAN-PARALLEL-AUSFÜHRUNG ZU REXAN-PARALLELAUSFÜHRUNG FÜR ELT SCHALTUNG
         laufen wird und nur der abgleich auf den klonen.
         = ich behalte mir vor es auch in das MCCK register zu legen 
           damit es innerhalb des POIK BOXH-MCSCMD ist und nicht außerhalb
-          
+          = die syncronisation für games , videostreams , chats etc 
+            passiert sowieso außerhalb explizit nur bei registrierten 
+            entwickler, die option ist also nicht öffentlich sondern 
+            lizenz gebunden an die registrierung selbst
 
 VERMERKT = 
 

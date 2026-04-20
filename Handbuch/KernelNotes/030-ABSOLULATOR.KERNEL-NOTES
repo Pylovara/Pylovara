@@ -31,14 +31,13 @@ ABSOLULATOR-KERNKLASSE § ABK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-
-# PROTO
+# PROTO SBSK = GASK-GASH-MASTERWORT-GASU-MASTERWORT-MORPHIC-ELEMENT
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-ABSOLULATOR-HAUPTKLASSE § ABH-MASU-MASELT
+ABSOLULATOR-HAUPTKLASSE § ABH-MASU-MASELT # MASK
 
-MODULATOR ® MODUL 00-00-00 # MASTER CONTROL SYSTEM ANSTEUERUNG
+MODULATOR ® MODUL 00 # MASTER CONTROL SYSTEM ANSTEUERUNG
  ABSK = MASK-MASH-REGISTER-MASU-MASELT
 
 VATRON BEDINGUNG:
@@ -55,11 +54,31 @@ START: <MASU-MASELT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
-SBSK = GASK-GASH-MASTERWORT-GASU-MASTERWORT-MORPHIC-ELEMENT
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+MODULATOR ® MODUL 00-00-00-00 # MASTER SYSTEM ANSTEUERUNG
+ ABSK = MASK-MASH-REGISTER-MASU-ELEMENT
+BEDINGUNG: <MASK> + <MASU-ELEMENT>
+    START: MASU-ELEMENT
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+Also wenn ich mir die blöcke im vergleich anschaue, denke ich folgendes :
 
+ · BEDINGUNGEN 
+   = RADIKAL VERBESSERT UND ENDLICH AN DEN VATRON GEBUNDEN 
+   = MODULATOR CONNECTOR VORHANDEN 
+   = START ENDLICH KLAR 
+   = BSK O ENDLICH KLASSENFIZIERT 
+   
+ich denke ich sollte jetzt nur noch der revers dazu schreiben damit man 
+auch automatisch von mask aus in im master suchen kann ... damit ergibt der 
+absolulator konsistenten sinn ...
 
+ich finde das das eine welten verbesserung darstellt 
+da der VATH-VALIDA sowieso über die hauptklasse mit symbol © gekoppelt ist 
+kann er dann auch darüber validieren ...
 
+das einzige was fehlen würde wären TRANK rahmen .... 
+aber das liegt im MCS sektor 
 
 
 

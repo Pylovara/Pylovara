@@ -5,6 +5,8 @@
  #      DER ABSOLUTE BAUSTEINSCHALTUNGSKREISLAUF  = ABSK            #
  #   DEVONOTE = DAS WIRD EIN VOLLWERTIGES SCHALTREGISTERKERN        #
  # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1? (META-EBENE)    #
+ # ISA Benennungsrecht:                                             #
+ #           Morphische physische Logik-Architektur = MPLA-IS       #
 ### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###                                                      #
  # PROGRAMMKÜRZEL|KLASSENETIKETTE-MASTERWORT  =  **-<*-*ELT>        #
 ### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
@@ -163,7 +165,7 @@ VATRON BEDINGUNG:
  ©    8 - <POIK>
  ©    9 - <POIH-SOFT>
  ©   10 - <POIU-START>
- ©   11 - <POISYS-BOXK> 
+ ©   11 - <POISYS-BOXK>
    
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> 
 

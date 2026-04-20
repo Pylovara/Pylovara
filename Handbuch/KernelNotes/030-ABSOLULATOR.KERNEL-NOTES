@@ -30,17 +30,34 @@ ABSOLULATOR-KERNKLASSE § ABK
  FUNKTION = SCHALTET KETTEN EIN UND AUS
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
+#
 # PROTO SBSK = GASK-GASH-MASTERWORT-GASU-MASTERWORT-MORPHIC-ELEMENT
-
-
-# Block anfang
-
-### ==== ##### == # === ### =============== ### === # == ##### === ### anfang 1
+#
+# hier muss der MORPHIC-ELEMENT später rein ,  der anschluss
+# 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 ABSOLULATOR-HAUPTKLASSE § ABH-MASU-MASELT # MASK
 
 MODULATOR ® MODUL 00 # MASTER CONTROL SYSTEM ANSTEUERUNG
+ ABSK = MASU-MASELT-MASH-REGISTER-MASK
+
+VATRON BEDINGUNG:
+ ©  6 - <MASU-MASELT>
+ ©  5 - <MASELT>
+ ©  4 - <MASU>
+ ©  3 - <MASH-MASELT>
+ ©  2 - <MASELT>
+ ©  1 - <MASH>
+ ©  0 - <MASK>
+
+START: <MASK>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ABSOLULATOR-HAUPTKLASSE § ABH-MASU-MASELT # MASK REVERS MASU-MASELT
+
+MODULATOR ® MODUL 00-01 # MASTER CONTROL SYSTEM ANSTEUERUNG
  ABSK = MASK-MASH-REGISTER-MASU-MASELT
 
 VATRON BEDINGUNG:
@@ -54,7 +71,7 @@ VATRON BEDINGUNG:
 
 START: <MASU-MASELT>
 
-### ==== ##### == # === ### =============== ### === # == ##### === ### ende 19
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 

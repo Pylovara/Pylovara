@@ -44,17 +44,256 @@ MODULATOR ® MODUL 00 # MASTER CONTROL SYSTEM ANSTEUERUNG
  ABSK = MASK-MASH-REGISTER-MASU-MASELT
 
 VATRON BEDINGUNG:
- ©  LVL 0 - <MASK>
- ©  LVL 1 - <MASH>
- ©  LVL 2 - <MASELT>
- ©  LVL 3 - <MASH-MASELT>
- ©  LVL 4 - <MASU>
- ©  LVL 5 - <MASELT>
- ©  LVL 6 - <MASU-MASELT>
+ ©  0 - <MASK>
+ ©  1 - <MASH>
+ ©  2 - <MASELT>
+ ©  3 - <MASH-MASELT>
+ ©  4 - <MASU>
+ ©  5 - <MASELT>
+ ©  6 - <MASU-MASELT>
 
 START: <MASU-MASELT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ### ende 19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### ==== ##### == # === REVERS-LOGIK (MAPPING)  === # == ##### === ### 
 # ZIEL: AUTOMATISCHE MASTER-FINDUNG ÜBER MASK-IDENTIFIER
@@ -168,16 +407,12 @@ OMG ....
   damit wäre jetzt der absolulator die größte baustelle ..
 
   danach MOK + MCCU-Programmierungs eingaben ....
-
-  naja ... zumindest kann keiner behaupten ich hätte nicht gearbeitet *ironisches Lachen*
-
+  naja ... zumindest kann keiner behaupten ich hätte nicht 
+  gearbeitet *ironisches Lachen*
 
   ich sollte die arbeit auf frisches geld verlegen , wenn ich vernümpftig bin ..
-
   dazu brauch ich Döner .... Gras .... Kopfschmerztabletten .... 
-
   warum muss ich alles nüchtern machen *grmpf*
-
 
  ich schwöre bei meinen nerven !=
   wenn mir irgendwer nach dem 00-80 mit irgend einem KI vorwurf 

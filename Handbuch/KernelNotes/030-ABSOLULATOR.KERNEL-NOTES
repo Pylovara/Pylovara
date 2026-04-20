@@ -132,11 +132,11 @@ KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK> + <TRANAN-ENDE>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### MODUL 02 PROTEIN
-### RAHMENBEDINGUNG FÜR PROTEIN 
+### RAHMENBEDINGUNG FÜR PROTEIN : BOXIS | PROTON
 ### HERSTELLUNGS-SCHALTUNG
 ### RELEVANZ = POIK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## PROTEIN START SEQUENZ
+## PROTEIN BOXIS START SEQUENZ
 #
 ABSOLULATOR-HAUPTKLASSE § ABH-28910
 
@@ -173,7 +173,7 @@ KURZSCHLUSS: <POIU-START> + <POISYS-BOXK>
   START: [<BOXK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## PROTEIN ENDE SEQUENZ
+## PROTEIN BOXIS ENDE SEQUENZ
 #
 ABSOLULATOR-28910-2891011-ANKERKLASSE § ABAN-289101112
 
@@ -193,7 +193,7 @@ KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <POIAN-ENDE>
   START: [<BOXK>]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## PROTEIN & PROTON START SEQUENZ
+## PROTEIN BOXIS & PROTON START SEQUENZ
 #
 ABSOLULATOR-HAUPTKLASSE § ABH-28910
 
@@ -211,7 +211,7 @@ KURZSCHLUSS: <POIU-START>
   START: [
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## PROTEIN & PROTON BOXIS SEQUENZ
+## PROTEIN BOXIS & PROTON BOXIS SEQUENZ
 #
 ABSOLULATOR-28910-UNTERKLASSE § ABU-2891011
 
@@ -230,7 +230,7 @@ KURZSCHLUSS: <POIU-START> + <POISYS-BOXK>
   START: [<BOXK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## PROTEIN & PROTON BOXIS TRENH-WAND TRENSYS-COMBO SEQUENZ
+## PROTEIN BOXIS & PROTON BOXIS TRENH-WAND TRENSYS-COMBO SEQUENZ
 #
 ABSOLULATOR-28910-2891011-WERKZEUGKLASSE § ABWERK-289101112
 
@@ -250,7 +250,7 @@ KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO>
   START: [<BOXK>|
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## PROTEIN & PROTON SEQUENZ
+## PROTEIN BOXIS & PROTON SEQUENZ
 #
 ABSOLULATOR-28910-2891011-289101112-UNTERKLASSE § ABU-28910111213
 
@@ -271,7 +271,7 @@ KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> + <POOK>
   START: [<BOXK>|<POOK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## PROTEIN & PROTON ENDE SEQUENZ
+## PROTEIN BOXIS & PROTON ENDE SEQUENZ
 #
 ABSOLULATOR-28910-2891011-289101112-28910111213-ANKERKLASSE § ABAN-2891011121314
 
@@ -291,6 +291,37 @@ VATRON BEDINGUNG:
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> + <POOK> + <POIAN-ENDE>
 
   START: [<BOXK>|<POOK>]
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## PROTEIN & PROTON START SEQUENZ
+#
+ABSOLULATOR-28910-2891011-289101112-28910111213-ANKERKLASSE § ABAN-2891011121314
+
+MODULATOR ® MODUL 02-02-04
+ ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK-TRENSYS-COMBO-POOK--POIAN-ENDE
+
+VATRON BEDINGUNG:
+ ©    2 - <MASU-MASELT>
+ ©    8 - <POIK>
+ ©    9 - <POIH-SOFT>
+ ©   10 - <POIU-START>
+ ©   11 - <POISYS-BOXK>
+ ©   12 - <TRENSYS-COMBO>
+ ©   13 - <POOK>
+ ©   14 - <POIAN-ENDE>
+
+KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> + <POOK> + <POIAN-ENDE>
+
+  START: [<BOXK>|<POOK>]
+
+
+
+
+
+
+
+
+
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN POIWERK VERTIKALE ANDOCKSTATION REX 
@@ -388,47 +419,54 @@ AUSWAHL: Ŧ³
 ### HARDWARE MANAGMENT SERVICE
 ### RELEVANZ = POOK 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## 
+## PROTON HARDWARE START SEQUENZ
 #
-ABSOLULATOR-  § ABH-
+ABSOLULATOR-HAUPTKLASSE § ABH-213
+
+MODULATOR ® MODUL 03-01
+ ABSK = POOK-POOH-HARD-POOU-START
+
+VATRON BEDINGUNG:
+ ©    2 - <MASU-MASELT>
+ ©   13 - <POOK> 
+ ©   14 - <POOH-HARD>
+ ©   15 - <POOU-START>
+
+KURZSCHLUSS: <POOU-START>
+
+  START: {
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## PROTON HARDWARE NAME SEQUENZ
+#
+ABSOLULATOR-  § AB-
 
 MODULATOR ® MODUL  
  ABSK = 
 
 VATRON BEDINGUNG:
  ©    2 - <MASU-MASELT>
- ©   13 - <POOK> 
+ ©    
  ©    
  ©    
  ©    
 
 KURZSCHLUSS:  + 
 
- START: {
+ START: 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# POOK BEI MODUL MODULATOR ® MODUL 02-02-03 EINORDNEN 
 
-
-VATRON BEDINGUNG:
- ©    2 - <MASU-MASELT>
- ©    8 - <POIK>
- ©    9 - <POIH-SOFT>
- ©   10 - <POIU-START>
- ©   11 - <POISYS-BOXK>
- ©   12 - <TRENSYS-COMBO>
   
 
 
 
 
 
+
+
+
 # Abgleiche ( waren alle richtig , nur alte blöcke)
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 03-01 # PROTON HARDWARE START SEQUENZ
- ABSK = POOK-POOH-HARD-POOU-START
-BEDINGUNG: <POOU-START> 
- START: {
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 03-01-01 # PROTON HARDWARE START SEQUENZ NAME
  ABSK = POOK-POOH-HARD-POOU-START-POON-NAME

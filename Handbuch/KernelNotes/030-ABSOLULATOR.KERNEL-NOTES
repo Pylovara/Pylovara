@@ -5,9 +5,10 @@
  #      DER ABSOLUTE BAUSTEINSCHALTUNGSKREISLAUF  = ABSK            #
  #   DEVONOTE = DAS WIRD EIN VOLLWERTIGES SCHALTREGISTERKERN        #
  # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1? (META-EBENE)    #
- # ISA Benennungsrecht:                                             #
- #  (PROTO)  Morphische physische Logik-Architektur = MPLA-SYSTEM   #
-### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###                                                      #
+ # ISA Benennungsrecht: (PROTO)                                     #
+ # MORPHISCHE-BAUSTEINSCHALTUNGSKREISLAUF-LOGIK-ARCHITEKTUR         #
+ #                     KURZ = MBSKLA-ISA                            #
+### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###
  # PROGRAMMKÜRZEL|KLASSENETIKETTE-MASTERWORT  =  **-<*-*ELT>        #
 ### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
 
@@ -253,19 +254,21 @@ KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO>
 #
 ABSOLULATOR-28910-2891011-289101112-UNTERKLASSE § ABU-
 
-MODULATOR ® MODUL  
- ABSK = 
+MODULATOR ® MODUL 02-02-03
+ ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK-TRENSYS-COMBO-POOK
 
 VATRON BEDINGUNG:
  ©    2 - <MASU-MASELT>
- ©    
- ©    
- ©    
- ©    
+ ©    8 - <POIK>
+ ©    9 - <POIH-SOFT>
+ ©   10 - <POIU-START>
+ ©   11 - <POISYS-BOXK>
+ ©   12 - <TRENSYS-COMBO>
+ ©   13 - <POOK>  
 
-KURZSCHLUSS:  + 
+KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> + <POOK>
 
- START: 
+ START: [<BOXK>|<POOK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

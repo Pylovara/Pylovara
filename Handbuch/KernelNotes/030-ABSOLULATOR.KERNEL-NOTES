@@ -187,11 +187,14 @@ VATRON BEDINGUNG:
  ©   11 - <POISYS-BOXK>
  ©   12 - <POIAN-ENDE>
 
-KURZSCHLUSS:  + 
+KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <POIAN-ENDE>
 
  START: [<BOXK>]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+## # PROTEIN & PROTON START SEQUENZ
+#
+ABSOLULATOR-HAUPTKLASSE § ABH-
 
 
 
@@ -205,11 +208,6 @@ KURZSCHLUSS:  +
 
 # Abgleiche ( waren alle richtig , nur alte blöcke)
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL  
- 
-BEDINGUNG: <POIU-START> + <POISYS-BOXK> + <POIAN-ENDE>
- 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 MODULATOR ® MODUL 02-02 # PROTEIN START SEQUENZ
  ABSK = POIK-POIH-SOFT-POIU-START

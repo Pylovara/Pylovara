@@ -67,7 +67,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <MASK> + <MASH-MASELT>
 
- START: <MASK>
+  START: <MASK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## GIBT MASK DIE MASU-MASELT VERBINDUNG
@@ -84,7 +84,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <MASH-MASELT> + <MASU-MASELT>
 
-START: <MASU-MASELT>
+  START: <MASU-MASELT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### MODUL 01 TRANSAKTIONSRAHMEN
@@ -108,7 +108,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK>
 
- START: ¢! <MASK>
+  START: ¢! <MASK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## TRANSAKTIONSRAHMEN ENDE SEQUENZ
@@ -128,7 +128,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK> + <TRANAN-ENDE>
 
- START: ¢! <MASK> !¢
+  START: ¢! <MASK> !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### MODUL 02 PROTEIN
@@ -151,7 +151,7 @@ VATRON BEDINGUNG:
    
 KURZSCHLUSS: <POIU-START>
 
- START: [
+  START: [
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN BOXIS SEQUENZ
@@ -170,7 +170,7 @@ VATRON BEDINGUNG:
    
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> 
 
- START: [<BOXK>
+  START: [<BOXK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN ENDE SEQUENZ
@@ -190,7 +190,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <POIAN-ENDE>
 
- START: [<BOXK>]
+  START: [<BOXK>]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN & PROTON START SEQUENZ
@@ -208,7 +208,7 @@ VATRON BEDINGUNG:
    
 KURZSCHLUSS: <POIU-START>
 
- START: [
+  START: [
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN & PROTON BOXIS SEQUENZ
@@ -227,7 +227,7 @@ VATRON BEDINGUNG:
    
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> 
 
- START: [<BOXK
+  START: [<BOXK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN & PROTON BOXIS TRENH-WAND TRENSYS-COMBO SEQUENZ
@@ -247,7 +247,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> 
 
- START: [<BOXK>|
+  START: [<BOXK>|
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN & PROTON SEQUENZ
@@ -268,7 +268,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> + <POOK>
 
- START: [<BOXK>|<POOK>
+  START: [<BOXK>|<POOK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN & PROTON ENDE SEQUENZ
@@ -290,7 +290,7 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <POIU-START> + <POISYS-BOXK> + <TRENSYS-COMBO> + <POOK> + <POIAN-ENDE>
 
- START: [<BOXK>|<POOK>]
+  START: [<BOXK>|<POOK>]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN POIWERK VERTIKALE ANDOCKSTATION REX 
@@ -309,8 +309,8 @@ VATRON BEDINGUNG:
 
 KURZSCHLUSS: <POIU-START> + <POIWERK-REXK>
 
- START: [
-        ¬
+  START: [
+AUSWAHL: ¬
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## PROTEIN POIWERK VERTIKALE ANDOCKSTATION SENTIATOR
@@ -318,8 +318,17 @@ KURZSCHLUSS: <POIU-START> + <POIWERK-REXK>
 ABSOLULATOR-28910-KANALKLASSE § ABH-
  ABSK = POIK-POIH-SOFT-POIU-START-POIWERK-SENTK
 
+VATRON BEDINGUNG:
+ ©    2 - <MASU-MASELT>
+ ©    8 - <POIK>
+ ©    9 - <POIH-SOFT>
+ ©   10 - <POIU-START>
+ ©   16 - <POIWERK-SENTK>
 
+KURZSCHLUSS: <POIU-START> + <POIWERK-SENTK>
 
+ START: [
+        
 
 
 

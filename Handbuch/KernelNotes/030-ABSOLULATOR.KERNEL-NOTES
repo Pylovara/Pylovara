@@ -2,9 +2,9 @@
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
 ### ==== ##### == # === ### K30 ABSOLULATOR ### === # == ##### === ###
 ### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
- #      DER ABSOLUTEBAUSTEINSCHALTUNGSKREISLAUF  = ABSK             #
+ #      DER ABSOLUTE BAUSTEINSCHALTUNGSKREISLAUF  = ABSK            #
  #   DEVONOTE = DAS WIRD EIN VOLLWERTIGES SCHALTREGISTERKERN        #
- # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1 (META-EBENE)     #
+ # MOMENTANER STATUS : ISA-SPEZIFIKATION – STUFE 1? (META-EBENE)    #
 ### ==== ##### == # == REGISTER ABSOLULATOR K30 === # == ##### === ###                                                      #
  # PROGRAMMKÜRZEL|KLASSENETIKETTE-MASTERWORT  =  **-<*-*ELT>        #
 ### ==== ##### == # === STARTPUNKT ABSOLULATOR  === # == ##### === ###
@@ -80,10 +80,18 @@ START: <MASU-MASELT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ##
 #
-ABSOLULATOR-HAUPTKLASSE § ABH-
+ABSOLULATOR-HAUPTKLASSE § ABH-MASU-TRANSAKTIONSRAHMEN
 
 MODULATOR ® MODUL 01-01 
+ ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK
 
+VATRON BEDINGUNG:
+ ©  2 - <MASU-MASELT>
+ ©  3 - <
+ ©  4 - <
+ ©  5 - <
+ ©  6 - <
+ 
 
 
 

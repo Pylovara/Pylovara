@@ -129,31 +129,31 @@ KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK> + <TRANAN-ENDE>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### MODUL 02 PROTEIN
-### RAHMENBEDINGUNG FÜR PROTEIN SOFTWARE
-### ERSTELLUNGS-SCHALTUNG
+### RAHMENBEDINGUNG FÜR PROTEIN 
+### HERSTELLUNGS-SCHALTUNG
 ### RELEVANZ = POIK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## 
+## PROTEIN START SEQUENZ
 #
-ABSOLULATOR-HAUPTKLASSE § ABH-
+ABSOLULATOR-HAUPTKLASSE § ABH-28910
 
-MODULATOR ® MODUL  
- ABSK = 
+MODULATOR ® MODUL 02-01
+ ABSK = POIK-POIH-SOFT-POIU-START
 
 VATRON BEDINGUNG:
  ©    2 - <MASU-MASELT>
- ©    
- ©    
- ©    
- ©    
+ ©    8 - <POIK>
+ ©    9 - <POIH-SOFT>
+ ©   10 - <POIU-START>
+   
+KURZSCHLUSS: <POIU-START>
 
-KURZSCHLUSS:  + 
-
- START: 
+ START: [
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
+## PROTEIN BOXIS SEQUENZ
+#
+ABSOLULATOR-28910-UNTERKLASSE § ABU-
 
 
 
@@ -162,18 +162,8 @@ KURZSCHLUSS:  +
 
 
 # Abgleiche ( waren alle richtig , nur alte blöcke)
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 02 # PROTEIN STEUERUNG
- # 
- # 
- # 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-MODULATOR ® MODUL 02-01 # PROTEIN START SEQUENZ
- ABSK = POIK-POIH-SOFT-POIU-START
-BEDINGUNG: <POIU-START>
- START: [
-MODULATOR ® MODUL 02-01-01 # PROTEIN BOXIS SEQUENZ
+MODULATOR ® MODUL 02-01-01 
  ABSK = POIK-POIH-SOFT-POIU-START-POISYS-BOXK
 BEDINGUNG: <POIU-START> + <POISYS-BOXK>
  START: [<BOXK>

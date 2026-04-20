@@ -36,7 +36,7 @@ ABSOLULATOR-KERNKLASSE § ABK
 
 # Block anfang
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
+### ==== ##### == # === ### =============== ### === # == ##### === ### anfang 1
 
 ABSOLULATOR-HAUPTKLASSE § ABH-MASU-MASELT # MASK
 
@@ -54,7 +54,7 @@ VATRON BEDINGUNG:
 
 START: <MASU-MASELT>
 
-### ==== ##### == # === REVERS-LOGIK (MAPPING)  === # == ##### === ###
+### ==== ##### == # === REVERS-LOGIK (MAPPING)  === # == ##### === ### ende 19
 # ZIEL: AUTOMATISCHE MASTER-FINDUNG ÜBER MASK-IDENTIFIER
 REVERS-ZUGRIFF: <MASK> -> § MASU-ABSOLULATOR # REVERSE
 SUCH-PFAD: KERNEL-30 -> MASK -> REGISTER-MAPPING
@@ -66,6 +66,7 @@ VALIDIERUNG: VATRON © LVL 0
 
 !!! ich sollte darüber noch mal ein tag nachdenken ......
 
+ das register wird gefühlt 10.000 zeilen lang .... 
 
 
 
@@ -100,9 +101,15 @@ das einzige was fehlen würde wären TRANK rahmen ....
 aber das liegt im MCS sektor 
 
 
+19 zeilen pro block ....
 
+cirka 350+ schaltungen .... 
 
+uff 
 
+ 19i x 350i = 6650i 
+
+na okey .... das sind aber deutlich mehr informationen pro block 
 
 
 

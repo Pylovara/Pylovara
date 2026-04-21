@@ -79,37 +79,30 @@ BOXH-ABI                      = BI0
 BOXU-ABI-START                = BI1
 BOXSYS-ABI-EINGABE            = BI2
 BOXAN-ABI-ENDE                = BI3
-
 BOXH-SYSCALL                  = BL0
 BOXU-SYSCALL-START            = BL1
 BOXSYS-SYSCALL-EINGABE        = BL2
 BOXAN-SYSCALL-ENDE            = BL3
-
 BOXH-SHELL                    = BE0
 BOXU-SHELL-START              = BE1
 BOXSYS-SHELL-EINGABE          = BE2
 BOXAN-SHELL-ENDE              = BE3
-
 BOXH-PRINT                    = BP0
 BOXU-PRINT-START              = BP1
 BOXSYS-PRINT-EINGABE          = BP2
 BOXAN-PRINT-ENDE              = BP3
-
 BOXH-ALU                      = BU0
 BOXU-ALU-START                = BU1
 BOXSYS-ALU-EINGABE            = BU2
 BOXAN-ALU-ENDE                = BU3
-
 BOXH-MCSCMD                   = BM0
 BOXU-MCSCMD-START             = BM1
 BOXSYS-MCSCMD-EINGABE         = BM2
 BOXAN-MCSCMD-ENDE             = BM3
-
 BOXH-CACHE                    = BC0
 BOXU-CACHE-START              = BC1
 BOXSYS-CACHE-HALTER           = BC2
 BOXAN-CACHE-ENDE              = BC3
-
 BOXH-MASCHINENCODE            = BA0
 BOXU-MASCHINENCODE-START      = BA1
 BOXSYS-MASCHINENCODE-EINGABE  = BA2
@@ -177,8 +170,7 @@ DANN Durchweg Konektorklasse
 dann für direkte argumente - neue klasse = Argumentklasse 
 für Variablen - Variablenklassen 
 für zeitoperatoren dann erstmal allgemein als konektorklasse (quasi masterwort für spätere verfeinerungen)
-für zeit eingaben - pure zeitklasse als blankernenner für die timing datentypen schablonen später usw 
-und dann ein allround anker für alle 3 unterklassen funktionen 
+WERTEINGABE PURE SUMME/VERARBEITUNG DESSEN WIE , ZUR KOMPONENTE DATENTYP VERLEGEN .
 
 # master bereinigen nicht vergessen k11
 

@@ -76,37 +76,50 @@ AKTAN-ENDE      = AK3
 
 # BOXK 
 BOXH-ABI                      = BI0
-BOXU-ABI-START                =
-BOXSYS-ABI-EINGABE            =
-BOXAN-ABI-ENDE                =
+BOXU-ABI-START                = BI1
+BOXSYS-ABI-EINGABE            = BI2
+BOXAN-ABI-ENDE                = BI3
+
 BOXH-SYSCALL                  = BL0
-BOXU-SYSCALL-START            =
-BOXSYS-SYSCALL-EINGABE        =
-BOXAN-SYSCALL-ENDE            =
+BOXU-SYSCALL-START            = BL1
+BOXSYS-SYSCALL-EINGABE        = BL2
+BOXAN-SYSCALL-ENDE            = BL3
+
 BOXH-SHELL                    = BE0
-BOXU-SHELL-START              =
-BOXSYS-SHELL-EINGABE          =
-BOXAN-SHELL-ENDE              =
+BOXU-SHELL-START              = BE1
+BOXSYS-SHELL-EINGABE          = BE2
+BOXAN-SHELL-ENDE              = BE3
+
 BOXH-PRINT                    = BP0
-BOXU-PRINT-START              =
-BOXSYS-PRINT-EINGABE          =
-BOXAN-PRINT-ENDE              =
+BOXU-PRINT-START              = BP1
+BOXSYS-PRINT-EINGABE          = BP2
+BOXAN-PRINT-ENDE              = BP3
+
 BOXH-ALU                      = BU0
-BOXU-ALU-START                =
-BOXSYS-ALU-EINGABE            =
-BOXAN-ALU-ENDE                =
+BOXU-ALU-START                = BU1
+BOXSYS-ALU-EINGABE            = BU2
+BOXAN-ALU-ENDE                = BU3
+
 BOXH-MCSCMD                   = BM0
-BOXU-MCSCMD-START             =
-BOXSYS-MCSCMD-EINGABE         =
-BOXAN-MCSCMD-ENDE             =
+BOXU-MCSCMD-START             = BM1
+BOXSYS-MCSCMD-EINGABE         = BM2
+BOXAN-MCSCMD-ENDE             = BM3
+
 BOXH-CACHE                    = BC0
-BOXU-CACHE-START              =
-BOXSYS-CACHE-HALTER           =
-BOXAN-CACHE-ENDE              =
+BOXU-CACHE-START              = BC1
+BOXSYS-CACHE-HALTER           = BC2
+BOXAN-CACHE-ENDE              = BC3
+
 BOXH-MASCHINENCODE            = BA0
-BOXU-MASCHINENCODE-START      =
-BOXSYS-MASCHINENCODE-EINGABE  =
-BOXAN-MASCHINENCODE-ENDE      =
+BOXU-MASCHINENCODE-START      = BA1
+BOXSYS-MASCHINENCODE-EINGABE  = BA2
+BOXAN-MASCHINENCODE-ENDE      = BA3
+
+
+
+
+
+
 
 
 

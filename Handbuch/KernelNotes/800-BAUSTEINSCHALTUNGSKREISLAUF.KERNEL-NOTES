@@ -1,17 +1,6 @@
-@kernel-nr: 800 # BAUSTEINSCHALTUNGSKREISLAUF | STATUS = ·
-#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
-### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
- #    PROGRAMM|KLASSEKÜRZEL-ELEMENT = **-<ELEMENT> *-*-<ELEMENT>    #
- #    BSK UNTERBAU META-EBENE  | MASCHINENCODE ZU BSK               #
- #      Die Morphic Stage ist dein eigentlicher Compiler.           #
- # Beispiel :                                                       #
- # AKTU-START  → Morphic 0→1 → AKTS → Morphic 2 → AS (Über RETRON)  #
- # Das ist:                                                         #
- # LANGNAME → SYMBOLTOKEN → MASCHINENNAH                            #
- # Also:                                                            #
- # Semantik → Tokenisierung → Encoding                              #
- # Nur eben nicht wie bei C/LLVM, sondern:                          #
- # semantisch + systematisch + deterministisch verkürzt             #
+@kernel-nr: 800 Ð BAUSTEINSCHALTUNGSKREISLAUF 
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ###
+### ==== ##### == # === ### PYLOVARA-SYSTEM ### === # == ##### === ###
 ### ==== #####  STARTPUNKT BAUSTEINSCHALTUNGSKREISLAUF   ##### === ###
 
 NAME Ð BAUSTEINSCHALTUNGSKREISLAUF 

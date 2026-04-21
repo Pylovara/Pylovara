@@ -1,6 +1,8 @@
-@kernel-nr: 17 # DATEITYPEN | STATUS = X
-#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+@kernel-nr: 17 Ð DATEITYPEN
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ###
 ### ==== ##### == # === ### K17 DATEITYPEN  ### === # == ##### === ###
+### ==== ##### == # === ### PYLOVARA-SYSTEM ### === # == ##### === ###
+ #            DATEITYPEN = THE FAMILY FILE TYPES CARRIER            #
 ### ==== ##### == # === STARTPUNKT DATEITYPEN # === # == ##### === ###
 
 NAME Ð DATEITYPEN
@@ -206,7 +208,7 @@ DATEITYPEN-ORGANISATOR-CORE-AUSFÜHRUNGSKLASSE § DIAUSF-SYSTEM-COIN
  # 2. TYP-KENNUNG VERGLEICHEN (0x04–0x05)                           #
  # 3. RUNTIME-SIGNATUR (þ) VERIFIZIEREN (0x10–0x1F)                 #
  # 4. CRC32 PRÜFSUMME (ENDE DER DATEI) VALIDIEREN                   #
- # 5. KKIS-INTEGRITÄTSSCAN DURCHFÜHREN                              #
+ # 5. KKIS-INTEGRITÄTSSCAN DURCHFÜHREN PER VATRON                   #
 ### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
  # MASTERWORT = DIELT
  # SBSK = DIK-DIH-DIELT

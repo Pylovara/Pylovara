@@ -9,20 +9,31 @@
 # SYMBOL MATCHES  | PUNKTE KASTEN   | WAS ES BEDEUTET
 # MASTER REGISTER KLASSEN ALPHABET =============================================
 ## DEUTUNGSRAUM =
-*                 | 0.2 | 0.0 | 0.1 | SEHE ETWAS
-*|<LEER>          | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DAHINTER IST ETWAS LEER
-<LEER>|*          | 0.2 | 0.0 | 0.1 | SEHE DAVOR NUR LEER ABER SEHE ETWAS DANACH
-*|*               | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND SEHE ETWAS DANACH
-MASK              | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE
-MASK|<LEER>       | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND DAHINTER IST ETWAS LEER
-<LEER>|MASK       | 0.2 | 0.0 | 0.1 | SEHE DAVOR NUR LEER ABER SEHE MASTER KRENKLASSE DANACH
-MASK|MASK         | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND MASTER KRENKLASSE DANACH
-*-<LEER>          | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND DAHINTER IST LEER
-<LEER>-*          | 0.2 | 0.0 | 0.1 | SEHE DAVOR NUR LEER ABER SEHE ETWAS DANACH
-*-*               | 0.2 | 0.0 | 0.1 | SEHE ETWAS DAVOR UND SEHE ETWAS DANACH
-MASK-<LEER>       | 0.2 | 0.0 | 0.1 | SEHE MASTER KRENKLASSE DAVOR UND LEERE DANACH
-<LEER>-MASK       | 0.2 | 0.0 | 0.1 | SEHE LEERE DAVOR UND MASTER KERNKLASSE DANACH 
-MASK-MASK         | 0.2 | 0.0 | 0.1 | SEHE MASK MASTER KRENKLASSE DAVOR WIE MASTER KRENKLASSE DANACH
+*                 | 0.2 | 0.0 | -0.1 | SEHE ETWAS
+*|<LEER>          | 0.2 | 0.0 | -0.1 | SEHE ETWAS DAVOR UND DAHINTER IST ETWAS LEER
+<LEER>|*          | 0.2 | 0.0 | -0.1 | SEHE DAVOR NUR LEER ABER SEHE ETWAS DANACH
+*|*               | 0.2 | 0.0 | -0.1 | SEHE ETWAS DAVOR UND SEHE ETWAS DANACH
+MASK              | 0.2 | 0.0 | -0.1 | SEHE MASTER KRENKLASSE
+MASK|<LEER>       | 0.2 | 0.0 | -0.1 | SEHE MASTER KRENKLASSE DAVOR UND DAHINTER IST ETWAS LEER
+<LEER>|MASK       | 0.2 | 0.0 | -0.1 | SEHE DAVOR NUR LEER ABER SEHE MASTER KRENKLASSE DANACH
+MASK|MASK         | 0.2 | 0.0 | -0.1 | SEHE MASTER KRENKLASSE DAVOR UND MASTER KRENKLASSE DANACH
+*-<LEER>          | 0.2 | 0.0 | -0.1 | SEHE ETWAS DAVOR UND DAHINTER IST LEER
+<LEER>-*          | 0.2 | 0.0 | -0.1 | SEHE DAVOR NUR LEER ABER SEHE ETWAS DANACH
+*-*               | 0.2 | 0.0 | -0.1 | SEHE ETWAS DAVOR UND SEHE ETWAS DANACH
+MASK-<LEER>       | 0.2 | 0.0 | -0.1 | SEHE MASTER KRENKLASSE DAVOR UND LEERE DANACH
+<LEER>-MASK       | 0.2 | 0.0 | -0.1 | SEHE LEERE DAVOR UND MASTER KERNKLASSE DANACH 
+MASK-MASK         | 0.2 | 0.0 | -0.1 | SEHE MASK MASTER KRENKLASSE DAVOR WIE MASTER KRENKLASSE DANACH
+#                 | -4.0 | -0.2 | -0.2 | NICHT LESEN = NICHT VERWENDEN
+
+
+
+
+
+
+
+
+
+
 ## KLASSENRAUM =
 MASTER            | 0.2 | 0.0 | 0.1 | MASTER
 K                 | 0.2 | 0.0 | 0.1 | KERNKLASSE
@@ -76,12 +87,13 @@ CHIK              | 2.8 | 0.0 | 0.1 | CHIPONATOR-KERNKLASSE
 GASK              | 2.8 | 0.0 | 0.1 | GENERALSCHALTUNG-KERNKLASSE
 MORPK             | 2.8 | 0.0 | 0.1 | MORPHIC-KERNKLASSE
 # NAVIGATOR ===================================================================
-Ð                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-LANGZEITSPEICHER
-$                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-ZIELREFERENZ
-§                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-DIRIGENT
-=                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-INFORMATION
-…                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-MASK
--                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-NAVU-KNOTENPUNKT
+Ð                 | 1.6 | -0.1 | -0.2 | NAVIGATOR-LANGZEITSPEICHER
+$                 | 1.6 | -0.1 | -0.2 | NAVIGATOR-ZIELREFERENZ
+§                 | 1.6 | -0.1 | -0.2 | NAVIGATOR-DIRIGENT
+=                 | 1.6 | -0.1 | -0.2 | NAVIGATOR-INFORMATION
+…                 | 1.6 | -0.1 | -0.2 | NAVIGATOR-MASK
+-                 | 1.6 | -0.1 | -0.2 | NAVIGATOR-NAVU-KNOTENPUNKT
+ID                | 9.0 |  0.0 | -0.2 | IDENTIFIKATION
 IDENH-ID          | 1.8 | -0.1 | -0.2 | NAVIGATOR-IDENTIFIKATION
 ID-DNA            | 1.8 | -0.1 | -0.2 | NAVIGATOR-NAVU-NAVU-SCHATTENIDENTITÄT
 $                 | 1.8 | -0.1 | -0.2 | NAVIGATOR-NAVU-NAVU-ZIELREFERENZ
@@ -115,21 +127,21 @@ RAUTE-SYMBOLE     | 1.8 | -0.1 | -0.2 | NAVIGATOR-KOMMENTAR
 ¶                 | 1.5 | -0.3 | -0.7 | SENTIATOR-SENTAN-WENN-KANN
 ¶¶                | 1.5 | -0.3 | -0.7 | SENTIATOR-SENTAN-WENN-NICHT
 ſ                 | 1.5 | -0.3 | -0.7 | SENTIATOR-SENTAN-REGEL-DER-REINHEIT
-¬                 | 3.0 | +0.2 | +0.5 | REX-REXH-SPACECREATOR
-·                 | 1.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-1
-··                | 1.1 | -0.0 | -0.0 | REX-REXU-WORKSPACE-2
-···               | 1.2 | -0.0 | -0.0 | REX-REXU-WORKSPACE-3
-····              | 1.3 | -0.0 | -0.0 | REX-REXU-WORKSPACE-4
-·····             | 1.4 | -0.0 | -0.0 | REX-REXU-WORKSPACE-5
-······            | 1.5 | -0.0 | -0.0 | REX-REXU-WORKSPACE-6
-¤                 | 1.3 | -0.3 | -0.7 | REX-REXO-KORDI
-:                 | 1.3 | -0.3 | -0.7 | REX-REXAN-PROZESS 
-=                 | 1.3 | -0.3 | -0.7 | REX-REXAN-AUSWERTUNG
-›                 | 1.3 | -0.3 | -0.7 | REX-REXAN-PARALLEL-AUSFÜHRUNG
-‹                 | 1.3 | -0.3 | -0.7 | REX-REXAN-TRANSPORT
-↑                 | 1.3 | -0.3 | -0.7 | REX-REXAN-AUFSTEIGENDSORTIEREN
-↓                 | 1.3 | -0.3 | -0.7 | REX-REXAN-ABSTEIGENDSORTIEREN
-<MASK>            | 1.3 | -0.3 | -0.7 | MASK
+¬                 | 1.9 | +0.2 | +0.5 | REX-REXH-SPACECREATOR
+·                 | 1.6 | -0.0 | -0.0 | REX-REXU-WORKSPACE-1
+··                | 1.7 | -0.0 | -0.0 | REX-REXU-WORKSPACE-2
+···               | 1.8 | -0.0 | -0.0 | REX-REXU-WORKSPACE-3
+····              | 1.9 | -0.0 | -0.0 | REX-REXU-WORKSPACE-4
+·····             | 2.0 | -0.0 | -0.0 | REX-REXU-WORKSPACE-5
+······            | 2.1 | -0.0 | -0.0 | REX-REXU-WORKSPACE-6
+¤                 | 3.0 | -0.3 | -0.7 | REX-REXO-KORDI
+:                 | 3.0 | -0.3 | -0.7 | REX-REXAN-PROZESS 
+=                 | 3.0 | -0.3 | -0.7 | REX-REXAN-AUSWERTUNG
+›                 | 3.0 | -0.3 | -0.7 | REX-REXAN-PARALLEL-AUSFÜHRUNG
+‹                 | 3.0 | -0.3 | -0.7 | REX-REXAN-TRANSPORT
+↑                 | 3.0 | -0.3 | -0.7 | REX-REXAN-AUFSTEIGENDSORTIEREN
+↓                 | 3.0 | -0.3 | -0.7 | REX-REXAN-ABSTEIGENDSORTIEREN
+<MASK>            | 2.0 | -0.3 | -0.7 | MASK
 # TRANSAKTIONSRAHMEN ==========================================================
 ¢!MASK             | 2.0 | -0.5 | -1.0 | TRANSAKTIONSRAHMENTRANU-START
 MASK!¢             | 2.2 | -0.5 | -1.0 | TRANSAKTIONSRAHMENTRANU-TRANAN-ENDE

@@ -9,7 +9,7 @@
 
 NAME Ð FEED
 
- INFO-ID = FEED
+ MORPHIC-ID ¡ FE
 
 MASTER § MASU-FEED
 
@@ -28,7 +28,9 @@ FEED-KERNKLASSE § FEEK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED-HAUPTKLASSE § FFH-FÜHREND
+FEED-HAUPTKLASSE § FEH-FÜHREND
+
+ MORPHIC-ID ¡ FF
 
  INFO = BEREITHALTUNGSCONTAINER FÜR FÜHRENDE DATENSÄTZE
 
@@ -135,6 +137,8 @@ RAM DIRIGENT $ »[(1)—o—± $ MOV AL, 0x1745…]«
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 FEED-HAUPTKLASSE $ FTH-TRAGEND
+
+ MORPHIC-ID ¡ FT
 
  INFO = EMPFANGSCONTAINER FÜR FÜHRENDE DATENSÄTZE
 

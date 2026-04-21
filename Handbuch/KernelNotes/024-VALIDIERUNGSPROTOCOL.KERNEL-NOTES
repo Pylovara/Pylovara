@@ -38,14 +38,15 @@ VALIDIERUNGSPROTOCOL-ALPHAKLASE $ VALALPHA-VAL-KENNUNG
 
 # ERST KURZ LISTE 
 
-# TRANK
+# TRANSAKTIONSRAHMEN
+TRANK           =
 TRANH-RUN       = TA0
 TRANU-START     = TA1
 TRANSYS-MASK    = TA2
 TRANAN-ENDE     = TA3
 
-
-# POIK
+# PROTEIN
+POIK            =
 POIH-SOFT       = PI0
 POIU-START      = PI1
 POISYS-BOXK     = PI2
@@ -56,8 +57,8 @@ POIWERK-NAVK    = PI6
 POIWERK-RETK    = PI7
 POIAN-ENDE      = PI8
 
-
-# POOK
+# PROTON 
+POOK            = 
 POOH-HARD       = PO0 (O wie olaf dann erst null ,NICHT VERWECHSELN - SCHEIẞ FONTS)
 POOU-START      = P01 
 POON-NAME       = PO2
@@ -65,8 +66,8 @@ POOR-SEMI       = PO3
 POOWERT-WERT    = PO4
 POOAN-ENDE      = PO5
 
-
-# TRENK
+# TRENNBEFEHL
+TRENK           =
 TRENH-WAND      = TR0
 TRENU-START     = TR1
 TRENSYS-BOXK    = TR2
@@ -74,15 +75,15 @@ TRENSYS-POOK    = TR3
 TRENSYS-COMBO   = TR4
 TRENAN-ENDE     = TR5 
 
-
-# AKTK
+# AKTIONSDRAHT
+AKTK            = 
 AKTH-IMPULS     = AK0
 AKTU-START      = AK1
 AKTSYS-POIK     = AK2
 AKTAN-ENDE      = AK3
 
-
-# BOXK 
+# BOXIS
+BOXK                          = 
 BOXH-ABI                      = BI0
 BOXU-ABI-START                = BI1
 BOXSYS-ABI-EINGABE            = BI2
@@ -123,8 +124,8 @@ BOXU-MASCHINENCODE-START      = BA1
 BOXSYS-MASCHINENCODE-EINGABE  = BA2
 BOXAN-MASCHINENCODE-ENDE      = BA3
 
-
-# REXK 
+# REX
+REXK                          = 
 REXH-PROZESS                  = RX0
 REXU-FLÄCHE                   = RX1
 REXNR-1                       = RX2
@@ -147,16 +148,16 @@ REXTOR-AUFSTEIGENDSORTIEREN   = RX18
 REXTOR-ABSTEIGENDSORTIEREN    = RX19
 REXAN-ENDE                    = RX20
 
-
-# SENTK 
+# SENTIATOR
+SENTK                         = 
 SENTH-FLEX                    = SE0
 SENTOR-WENNKANN               = SE1
 SENTOR-WENNNICHT              = SE2
 SENTOR-REGELDERREINHEIT       = SE3
 SENAN-ENDE                    = SE4
 
-
-# ARGK
+# ARGUMENT
+ARGK                          = 
 ARGH-OPTION                   = AR0
 ARGAUF-LOOP                   = AR1
 ARGAUF-EXIT                   = AR2
@@ -188,7 +189,7 @@ Gut okey , doch erst die oberen - erst den schalt kniff, dann weiter
 ich bin schon knapp 1t wach .... erstmal die oberen ... dann gucken ...
 das nächste mal denken, dann handeln ..... doppelte arbeit .... 
 
-
+Einen haufen scheiß werde ich tun ! ich schalte alle mit k 
 
 
 

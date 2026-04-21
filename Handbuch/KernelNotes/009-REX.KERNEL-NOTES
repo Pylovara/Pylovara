@@ -1,8 +1,8 @@
 @kernel-nr: 09 # REX | STATUS = DEV LEVEL ROLLING-RELEASE 
-#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> | info <INFO-ID>    #
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ###
 ### ==== ##### == # === ### === K9 REX  === ### === # == ##### === ###
 ### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
- # REX IST KÖNIG ! MANAGER SYSTEM                                   #
+ #      REX IST DAS CONTROL FILE AND PROZESS MANAGMENT SYSTEM       #
 ### ==== ##### == # === ### STARTPUNKT REX  ### === # == ##### === ###
 
 NAME Ð REX
@@ -274,13 +274,6 @@ SYMBOLISCHE-DEKLARATION * :
 
  SYMBOL IN WORTEN = DOPPELPUNKT
 
- BEISPIEL =
-
-  ¬·¤: »[':: Installation fortsetzen? [J/n]']«
-        ¶ ¬· »['j']«
-              ¶ ¬· »['ENTER']«
-              ¶¶ ¬· »['exit']«««ſ
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 REX-PROZESS-FLÄCHE-NR-NUMMERKLASSE-KORDI-STATUS-SYSTEMKLASSE § REXSYS-STATUS-MASK
@@ -296,7 +289,6 @@ MORPHIC-1
 SYMBOLISCHE-DEKLARATION * <MASK>
 
  SYMBOL IN WORTEN = MASKIERUNG
-
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -314,20 +306,6 @@ SYMBOLISCHE-DEKLARATION * ‹
 
  SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
 
- BEISPIEL =
-
- ¬·¤‹ »[× 1 + 1 ×]
-       ¬·¤= ["(1)±2±"]«
-
- ¬··¤‹ »[× 1 + 1 ×]
-        ¬··¤= ['reboot wait (N)±2±']«
-
- ¬···¤‹ »[× 1 + 1 ×]
-         ¬···¤= ["(2)±2±"]«
-
- ¬····¤‹ »[× 1 · 1 ×]
-          ¬····¤= ["(3)±2±"]«
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 REX-PROZESS-FLÄCHE-NR-NUMMERKLASSE-KORDI-ANKERKLASSE § REXAN-TRANSPORT
@@ -343,20 +321,6 @@ MORPHIC-1
 SYMBOLISCHE-DEKLARATION * ›
 
  SYMBOL IN WORTEN = GRÖSSER-ALS-ZEICHEN
-
- BEISPIEL =
-
- ¬·¤› »[× 1 + 1 ×]
-       ¬·¤= ["(1)±2±"]«
-
- ¬··¤› »[× 1 + 2 ×]
-        ¬··¤= ["(2)±3±"]«
-
- ¬···¤› »[× 1 + 7 ×]
-         ¬···¤= ["(3)±8±"]«
-
- ¬····¤› »[× 1 · 1 ×]
-          ¬····¤= ["(4)±1±"]«
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -374,14 +338,6 @@ SYMBOLISCHE-DEKLARATION * ↑
 
  SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
 
- BEISPIEL =
-
- »['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
-
-  ¬·¤↑ »['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']
-        ['cd /Pylovara/MCSKernel']
-        ['./pylovara_kernel testcodes/test.datei-lcore']«
-
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 REX-PROZESS-FLÄCHE-NR-NUMMERKLASSE-KORDI-ANKERKLASSE § REXAN-ABSTEIGENDSORTIEREN
@@ -397,14 +353,6 @@ MORPHIC-1
 SYMBOLISCHE-DEKLARATION * ↓
 
  SYMBOL IN WORTEN = KLEINER-ALS-ZEICHEN
-
- BEISPIEL =
-
- »['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore'|'cd /Pylovara/MCSKernel'|'./pylovara_kernel testcodes/test.datei-lcore']«
-
-  ¬·¤↓ »['./pylovara_kernel testcodes/test.datei-lcore']
-        ['cd /Pylovara/MCSKernel']
-        ['echo "- MCS CODE -" && cat /Pylovara/MCSKernel/testcodes/test.datei-lcore']«
 
 ### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
  # MASTERWORT = REXELT

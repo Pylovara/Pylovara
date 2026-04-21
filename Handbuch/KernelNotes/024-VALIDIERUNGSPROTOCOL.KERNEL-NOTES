@@ -173,55 +173,13 @@ KONEKTORKLASSE            ARGAN-ENDE  = AR11
 KONEKTORKLASSE-ZEITKLASSE ARGAN-ENDE  = AR12
 BAUKLASSE-NUMMERKLASSE    ARGAN-ENDE  = AR13
 
+#####=================================================######## 
+AB HIER 0 kERNKLASSE, SPÄTER OBERE HÄFTE AUCH 
+- KEINE VERSCHIEBUNG AUF 00-81
+  (manchmal hasse ich mein perfektionismus)
 
 
-
-
-
-
-# MASTER ARGUMENTE AKTUALISIEREN UND DAZU NOCH NAVIAUSL-BAUKLASSE 
-! NAVIGATOR-START-AUSLÖSERKLASSE § NAVAUSL-BAUKLASSE
-
-
-
-
-
-
-
-
-#ALT 
-ARGUMENT-HAUPTKLASSE § ARGH-OPTION
-ARGUMENT-OPTION-ANKERKLASSE § ARGAN-LOOP
-ARGUMENT-OPTION-ANKERKLASSE § ARGAN-EXIT
-ARGUMENT-OPTION-ANKERKLASSE § ARGAN-BESTÄTIGUNG
-ARGUMENT-OPTION-ANKERKLASSE § ARGAN-REGELDERREINHEIT
-ARGUMENT-OPTION-UNTERKLASSE § ARGU-NANOSEKUNDEN
-ARGUMENT-OPTION-UNTERKLASSE § ARGU-SEKUNDEN
-ARGUMENT-OPTION-UNTERKLASSE § ARGU-TAKTSCHLÄGE
-ARGUMENT-OPTION-UNTERKLASSE-ZEITKLASSE § ARGZEIT-ZEIT
-ARGUMENT-OPTION-UNTERKLASSE § ARGU-VARIABLEN
-ARGUMENT-OPTION-UNTERKLASSE-NUMMERKLASSE § ARGNR-NR
-ANKERKLASSE § ARGAN-ENDE
-ZEITKLASSE-ANKERKLASSE § ARGAN-ENDE
-NUMMERKLASSE-ANKERKLASSE § ARGAN-ENDE
-
-Gut .... muss frisch aufgebaut werden 
-
-hauptklasse der arg zusatz «« 
-damit das 4 bytes sind | 2 bytes pro zeichen bei ««« wären das 6 bytes als 
-
-2 bytes für AKTAN-ENDE 
-
-4 BYTES FÜR ARG OPTION AUSWAHL  
-
-DANN Durchweg Konektorklasse 
-
-dann für direkte argumente - neue klasse = Argumentklasse 
-für Variablen - Variablenklassen 
-für zeitoperatoren dann erstmal allgemein als konektorklasse (quasi masterwort für spätere verfeinerungen)
-WERTEINGABE PURE SUMME/VERARBEITUNG DESSEN WIE , ZUR KOMPONENTE DATENTYP VERLEGEN .
-
-# master bereinigen nicht vergessen k11
+# REXK
 
 
 
@@ -256,17 +214,7 @@ WERTEINGABE PURE SUMME/VERARBEITUNG DESSEN WIE , ZUR KOMPONENTE DATENTYP VERLEGE
 
 
 
-
-
-
-
-Kopf macht dicht ... knapp 14st+ 
-
-
-merk liste :
-- ab ARGK weiter machen runter zu's ..
-- danach Master kontrolle 
-
+# merken
 die feeds muss ich noch sauberer machen , das gefällt mir nicht .
 denke ich rufe die klasse Schmelzklasse ins leben...
 

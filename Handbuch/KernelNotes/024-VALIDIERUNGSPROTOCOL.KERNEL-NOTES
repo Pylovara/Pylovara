@@ -74,16 +74,47 @@ AKTU-START      = AK1
 AKTSYS-POIK     = AK2
 AKTAN-ENDE      = AK3
 
-#
-
+# BOXK 
+BOXH-ABI                      = BI0
+BOXU-ABI-START                =
+BOXSYS-ABI-EINGABE            =
+BOXAN-ABI-ENDE                =
+BOXH-SYSCALL                  = BL0
+BOXU-SYSCALL-START            =
+BOXSYS-SYSCALL-EINGABE        =
+BOXAN-SYSCALL-ENDE            =
+BOXH-SHELL                    = BE0
+BOXU-SHELL-START              =
+BOXSYS-SHELL-EINGABE          =
+BOXAN-SHELL-ENDE              =
+BOXH-PRINT                    = BP0
+BOXU-PRINT-START              =
+BOXSYS-PRINT-EINGABE          =
+BOXAN-PRINT-ENDE              =
+BOXH-ALU                      = BU0
+BOXU-ALU-START                =
+BOXSYS-ALU-EINGABE            =
+BOXAN-ALU-ENDE                =
+BOXH-MCSCMD                   = BM0
+BOXU-MCSCMD-START             =
+BOXSYS-MCSCMD-EINGABE         =
+BOXAN-MCSCMD-ENDE             =
+BOXH-CACHE                    = BC0
+BOXU-CACHE-START              =
+BOXSYS-CACHE-HALTER           =
+BOXAN-CACHE-ENDE              =
+BOXH-MASCHINENCODE            = BA0
+BOXU-MASCHINENCODE-START      =
+BOXSYS-MASCHINENCODE-EINGABE  =
+BOXAN-MASCHINENCODE-ENDE      =
 
 
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
- # MASTERWORT = INFO-ID
- # SBSK = INFO-ID
- # VBSK = INFO-ID
- # RBSK = INFO-ID
+ # MASTERWORT = VAL-KENNUNG
+ # SBSK = VAL-KENNUNG
+ # VBSK = VAL-KENNUNG
+ # RBSK = VAL-KENNUNG
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [04:13:31|Di Apr 21 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

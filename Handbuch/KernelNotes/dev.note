@@ -1324,46 +1324,57 @@ KURZSCHLUSS:  +
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
-ABSOLULATOR NUMMERIERUNGS ÜBERBLICK : 
-
- ©    0 - <MASK>
- ©    1 - <MASH-MASELT>
- ©    2 - <MASU-MASELT>
- ©    4 - <TRANH-RUN>
- ©    5 - <TRANU-START>
- ©    6 - <TRANSYS-MASK>
- ©    7 - <TRANAN-ENDE>
- ©    8 - <POIK>
- ©    9 - <POIH-SOFT>
- ©   10 - <POIU-START>
- ©   11 - <POISYS-BOXK> !
 
 
- ©   12 - <POIAN-ENDE> ÄNDERUNG AUF 13
-
- ©   12 - <TRENSYS-COMBO> <--- gut das ich das gemacht hab , fehler 
-
- ©   13 - <POOK>  
-
-
-grmpf ... da war ich gestern wieder schneller beim 
-lösungen suchen im kopf als bei der ordentlichkeit 
-der nummerierung.
-
-das ja peinlich ..... beheben bevor ich weiter mache !!!
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
 
 
-gut ... ich werde das mathematische system der pylovara axoimen 
-für die nummerierung nehmen , dann hab ich bei erweiterungen 
-weniger ein gesamt problem und mehr ein punktuelles 
+## 001-DATENTYPEN.kernel-notes = verbindungslogik für mcs-schablonen BIBLIOTHEK
 
-PROTEIN Kernklasse  = PI0
-Protein Hauptklasse = PI1
 
-usw dann wäre das hier möglich :
+"Die Variable zahl ist vom Datentyp int."
+Nicht umgekehrt. int ist die Schablone, zahl der konkrete Behälter.
 
-Proton kernklasse  = PO1
-Proton Hauptklasse = PO2
+Der Datentyp int verknüpft drei Dinge miteinander:
+
+Speicherplatz (z. B. 4 Bytes)
+Interpretation der Bits (als vorzeichenbehaftete Ganzzahl)
+Erlaubte Operationen (+, -, *, /, %, ==, <, >, ++, --, ...)
+
+
+und diese drei verknüpfungen werden quasi wie ein gestapelter kasten für den inhalt 
+genutzt durch das datentyp wort int ?
+
+also sind datentypen vorgefertigte schablonen die eine aufgabe tuen und diese werden dann 
+benannt , richtig ?
+
+wenn ich also zahlen rechnen will brauch ich quasi ein rechen datentyp der dann die 
+symbol verknüpfung richtig in die kästen legt und durch den kasten des datentypes wird 
+das dann ausgerechnet 
+
+oder datentypen für videobilder fürs abspielen 
+oder datentypen für ton 
+
+das sind also alles nur general schablonen die einzelne dinge fixieren können 
+und diese dinge werden dann in die schablone gelegt ?
+
+Antwort :
+
+ "Datentypen sind vorgefertigte Schablonen" – Richtig!
+
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
+#### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN #### VORMERKEN 
+
+
+
+
+
+
 
 
 

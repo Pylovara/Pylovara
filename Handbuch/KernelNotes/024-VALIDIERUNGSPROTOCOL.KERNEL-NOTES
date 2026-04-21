@@ -129,8 +129,18 @@ REXNR-7                       = RX8
 REXNR-8                       = RX9
 REXNR-9                       = RX10
 REXO-KORDI                    = RX11
-REXAN                    = RX12
+REXTOR-ALU                    = RX12
+REXSYS-ALU-MASK               = RX13
+REXTOR-STATUS                 = RX14
+REXSYS-STATUS-MASK            = RX15
+REXTOR-PARALLELAUSFÜHRUNG     = RX16
+REXTOR-TRANSPORT              = RX17
+REXTOR-AUFSTEIGENDSORTIEREN   = RX18
+REXTOR-ABSTEIGENDSORTIEREN    = RX19
+REXAN-ENDE                    = RX20
 
+
+# uffffffff  ....... 
 
 
 

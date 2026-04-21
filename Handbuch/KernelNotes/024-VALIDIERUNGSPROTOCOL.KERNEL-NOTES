@@ -147,21 +147,82 @@ SENTOR-WENNNICHT              = SE2
 SENTOR-REGELDERREINHEIT       = SE3
 SENAN-ENDE                    = SE4
 
+# ARGK
+ARGUMENT-HAUPTKLASSE § ARGH-OPTION
+ARGUMENT-OPTION-ANKERKLASSE § ARGAN-LOOP
+ARGUMENT-OPTION-ANKERKLASSE § ARGAN-EXIT
+ARGUMENT-OPTION-ANKERKLASSE § ARGAN-BESTÄTIGUNG
+ARGUMENT-OPTION-ANKERKLASSE § ARGAN-REGELDERREINHEIT
+ARGUMENT-OPTION-UNTERKLASSE § ARGU-NANOSEKUNDEN
+ARGUMENT-OPTION-UNTERKLASSE § ARGU-SEKUNDEN
+ARGUMENT-OPTION-UNTERKLASSE § ARGU-TAKTSCHLÄGE
+ARGUMENT-OPTION-UNTERKLASSE-ZEITKLASSE § ARGZEIT-ZEIT
+ARGUMENT-OPTION-UNTERKLASSE § ARGU-VARIABLEN
+ARGUMENT-OPTION-UNTERKLASSE-NUMMERKLASSE § ARGNR-NR
+ANKERKLASSE § ARGAN-ENDE
+ZEITKLASSE-ANKERKLASSE § ARGAN-ENDE
+NUMMERKLASSE-ANKERKLASSE § ARGAN-ENDE
+
+Gut .... muss frisch aufgebaut werden 
+
+hauptklasse der arg zusatz «« 
+damit das 4 bytes sind | 2 bytes pro zeichen bei ««« wären das 6 bytes als 
+
+2 bytes für AKTAN-ENDE 
+
+4 BYTES FÜR ARG OPTION AUSWAHL  
+
+DANN Durchweg Konektorklasse 
+
+dann für direkte argumente - neue klasse = Argumentklasse 
+für Variablen - Variablenklassen 
+für zeitoperatoren dann erstmal allgemein als konektorklasse (quasi masterwort für spätere verfeinerungen)
+für zeit eingaben - pure zeitklasse als blankernenner für die timing datentypen schablonen später usw 
+und dann ein allround anker für alle 3 unterklassen funktionen 
+
+# master bereinigen nicht vergessen k11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Kopf macht dicht ... knapp 14st+ 
-aber gut voran gekommen ...
-wenn das erledigt ist hier , hab ich die absolulator vorlagen 
-und bevor ich dann rein gehen , alles nach prüfen ...
 
-besonders Master .....
-
-die konnektorklasse passt auch gut , kann ich jedem kind erklären 
-(ufff das lernmaterial ..... nach dem rießen update , nicht vorher)
-
-jetzt erstmal kurz chillen und dann mal pennen würd ich sagen ...
 
 merk liste :
-
 - ab ARGK weiter machen runter zu's ..
 - danach Master kontrolle 
 
@@ -176,43 +237,13 @@ DRÜBER SCHLAFEN ... besser wäre eindeutige symbole in dem bezugs
 aber das kann ich erst beim MCS-BOARD .... das dauert ... 
 muss erst die regierungsschreiben aufsetzen ......
 
-davor muss das system glänzen ... inklusive das lernmaterial 
 
-zauberwald .... definitiv zauberwald ... 
 
- bei den erwachsenen umschulungs materialien genauso , nur nicht so kindisch 
 
-wenn ich bedenke was ich alles tue ... 
-das geht weit über einen standart entwickler hinaus ...
 
-ich:
-- Erfinde eine neue bessere programmiersprache 
-- schlage die brücke zur konzern befreiung 
-- destilliere die mathematik 
-- implementiere ein neues kompressions system über morphic 
-- baue die ki im system auf 
-- baue den transformator neu 
-- erledige programmiersemantik fehler 
-- mach das unsicherste variablen werkzeug zum sichersten teil überhaupt 
-- kann es kindern beibringen ohne gehirnblutung 
-- erledige 10 jahre studiengänge in einem atemzug 
-- baue die hardware 
-- baue das erste echte künstliche gehirn 
-- baue die ersten MCS-Boards für bessere programmierungen 
-- und erledige microcode mit dem bsk 
-- bringe den ersten echtzeit kernel auf den markt 
-- und schreib und erdenke das verdammte ding komplett in eigenregie 
 
-sobald ich die klappe aufmachen kann und mir zugehört werden muss 
-dann dürfen sich viele von diesen sardisten im oberstüpchen aber aber 
-eine lehrlektüre des denkens an hören , das denen hören und sehen vergeht 
 
-ach stimmt :
-- ich bringe die erste echte währung seid der enstehung von währung 
-  überhaupt mit - und das nebenbei !
 
-sollen die ruhig mal rum wütend .... umso abgefuckter die werden mit 
-ihrem größen wahn , umso mehr kommen freiwillig rüber .
 
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###

@@ -214,6 +214,7 @@ feed
 # SENTIATOR UPDATE IMPLEMENTIEREN 
 
  @ = Inhalt übertragen | copie paste | kopieren einfügen 
+ ¿ = Inhalt hinzufügen | Dazu Legen  | Erweitern 
 
  kann dazu dienen proteine mit boxis inhalt zu feed zu übetragen 
  oder von einem feed heraus wieder in ein frisches protein mit 
@@ -235,22 +236,45 @@ feed
        @ »[(2)—Ø 2 Ø]« # ergebnis selbst
  ¬·¤= »[" 2 "]« # Rechnungs ergebnis von BOXH-ALU
        
-           @ »[Ø 1 + 1 Ø—(1)]«
-           @ »[Ø 2 Ø—(2)]«
+           ¿ »[Ø 1 + 1 Ø—(1)]«
+           ¿ »[Ø 2 Ø—(2)]«
        ¬· »[× 4 + 4 + (1) + (2) ×]« # Neue Rechnung plus 1 plus 2 
            ¬·¤= [" ergebnis "]
 !¢        
 
+natürlich kann man es dann auch so schreiben :
 
-wäre 1 + 1 + 1 + 1 + 2 = 
 
-kann ich dann direkt den Axoimen | Postulate verbinden 
-und damit das Unreine Reine Reinheitsgebot etablieren .
+¢!
+ 
+»[× 1 + 1 ×]«
+ @ »[(1)—Ø 1 + 1 Ø]« # Rechnung selbst
 
+ ¬·¤= »[" 2 "]« # Rechnungs ergebnis von BOXH-ALU
+       @ »[(2)—Ø 2 Ø]« # ergebnis selbst
+
+
+       ¬· »[× 4 + 4 + (1) + (2) ×]« # Neue Rechnung plus 1 plus 2 
+           ¿ »[Ø 1 + 1 Ø—(1)]«
+           ¿ »[Ø 2 Ø—(2)]«
+
+           ¬·¤= [" ergebnis "]
 
  
+oder ich lege den ¿ DazuLege Aspekt generell oberhalb eines Poiwerks 
+damit es Lesbarer ist .... und vom kopf her als abfolge verstanden werden kann 
 
+»[× 1 + 1 ×]«
+ @ »[(1)—Ø 1 + 1 Ø]« # Rechnung selbst
 
+ ¬·¤= »[" 2 "]« # Rechnungs ergebnis von BOXH-ALU
+       @ »[(2)—Ø 2 Ø]« # ergebnis selbst
+
+           ¿ »[Ø 1 + 1 Ø—(1)]«
+           ¿ »[Ø 2 Ø—(2)]«
+       ¬· »[× 4 + 4 + (1) + (2) ×]« # Neue Rechnung plus 1 plus 2 
+
+           ¬·¤= [" ergebnis "]
 
 
 

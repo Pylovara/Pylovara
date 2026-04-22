@@ -1309,6 +1309,37 @@ VERMERKT =
  bios beispiele vorgeholt für spätere datentypen aufbauten 
 
 
+
+
+
+            FF      (<NR>)—O <INHALT> O
+            FT             O <INHALT> O—(<NR>)
+
+            FF      (<NR>)—ø <INHALT> ø
+            FT             ø <INHALT> ø—(<NR>)
+
+            FF      (<NR>)—± <INHALT> ±
+            FT             ± <INHALT> ±—(<NR>)
+
+
+
+                           # Ram|Rom|Stick|Host|ID-DNA|FrequenzSpeicher|TonAbfolge|Wanzen|Mechanisch|RemoteSpeicher|Explizite Gehinrströmung bei einem Speziellen Gedanken| - Notiz
+                           ↓
+            FF      (<NR>)—o—± <INHALT> ±
+            FT               ± <INHALT> ±—o—(<NR>)
+                                          ↑
+                                          # Ram|Rom|Stick|Host|ID-DNA|FrequenzSpeicher|TonAbfolge|Wanzen|Mechanisch|RemoteSpeicher|Explizite Gehinrströmung bei einem Speziellen Gedanken| - Lesen
+
+
+
+
+
+
+
+
+
+
+
 ----------------------------------------------------------------------------
 
  - MODULATOR + MCS-CMD 

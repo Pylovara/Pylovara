@@ -234,6 +234,7 @@ WARH-COMPILER              = WAC0
 NAVK                       = NA
 
 NAVALPHA-STERN             = NAA0
+NAVAN-STERN-ENDE           = NAA1
 
 NAVH-KLASSEN               = NAE0
 NAVAUSL-PYLOVARA           = NAE1
@@ -261,6 +262,8 @@ NAVAUSL-NUMMERKLASSE       = NAE22
 NAVAUSL-LINKERKLASSE       = NAE23
 NAVAUSL-RAMKLASSE          = NAE24
 NAVAUSL-KANALKLASSE        = NAE25
+NAVAN-KLASSE-ENDE          = NAE26
+
 
 NAVH-NAVI                  = NAV0
 NAVAUSL-KNOTENPUNKT        = NAV1
@@ -270,11 +273,20 @@ NAVAUSL-KOMMENTAR          = NAV4
 NAVAUSL-LANGZEITSPEICHER   = NAV5
 NAVAUSL-SCHATTENIDENTITÄT  = NAV6
 NAVAUSL-DIRIGENT           = NAV7
+NAVAUSL-NAVI-ENDE          = NAV8
+
 
 
 NAVH-DATENSTROM            = NAD0
-
-
+NAVU-KANAL1                = NAD1
+NAVU-KANAL2                = NAD2
+NAVU-KANAL3                = NAD3
+NAVU-KANAL4                = NAD4
+NAVU-KANAL5                = NAD5
+NAVU-KANAL6                = NAD6
+NAVU-KANAL7                = NAD7
+NAVU-KANAL8                = NAD8
+NAVU-DATENSTROM-ENDE       = NAD9
 
 
 

@@ -138,6 +138,7 @@ BOXAN-MASCHINENCODE-ENDE      = BM3
 # MASTER
 MASK                          = MA
 
+
 # REX
 REXK                          = RX
 REXH-PROZESS                  = RX0
@@ -163,7 +164,6 @@ REXTOR-ABSTEIGENDSORTIEREN    = RX19
 REXAN-ENDE                    = RX20
 
 
-
 # SENTIATOR
 SENK                          = SE
 SENH-FLEX                     = SE0
@@ -171,7 +171,6 @@ SENTOR-WENNKANN               = SE1
 SENTOR-WENNNICHT              = SE2
 SENTOR-REGELDERREINHEIT       = SE3
 SENAN-ENDE                    = SE4
-
 
 
 # ARGUMENT ( ICH SEHE NACHHOLBEDARF BEI ARGAN-ENDE | SPÄTER )
@@ -191,7 +190,6 @@ ARGNR-NR                      = AR10
 !KONEKTORKLASSE            ARGAN-ENDE  = AR11
 !KONEKTORKLASSE-ZEITKLASSE ARGAN-ENDE  = AR12
 !BAUKLASSE-NUMMERKLASSE    ARGAN-ENDE  = AR13
-
 
 
 # FEED 
@@ -214,9 +212,7 @@ FTSYS-NR-EINGABE            = FT5
 FTAN-NR-ENDE                = FT6
 
 
-
 # WARP 
-
 WARK                       = WA
 
 WARH-GAMES                 = WAG0
@@ -231,6 +227,48 @@ WARAPI-REGISTRY-EMULATION  = WAG8
 WARAPI-COM                 = WAG9
 
 WARH-COMPILER              = WAC0
+
+
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

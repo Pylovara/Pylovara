@@ -1880,6 +1880,24 @@ Pylovara-Boot MASTER TRUE
    - ALLE ARM BASIERTEN SYSTEME DER DREI (GOOGLES LINUX KERNEL Z.B)
 
 
+im grunde muss ich nur das BIOn dann so bauen das er 
+die hardware , je nach "Kundenwunsch" umedikettiert 
+und ich muss die hardware selbst so Pulsen das die eingebauten 
+mechaniken für den "angeblichen schutz" löscht 
+
+dann muss ich den USB bzw RAM Anbekomm ...
+dadurch den kernel starten , die eingebrandten "sicherungs calls"
+klipp und klar ins leer laufen lassen und dann alle bootloader 
+oberhalb vom Pylovara-Boot Ochestriern 
+
+Für die ROM/Ram selbst , eine Einteilungs zu ordnung machen 
+
+und der rest wäre dann abhängig von der fremd hardware ...
+
+erst bei Pylovara-MainBoards kann ich funktioniert das 
+ohne den heckmeck .... wäre aber sinnvoll es zu tun 
+
+was man hat , hat man ...
 
 
 

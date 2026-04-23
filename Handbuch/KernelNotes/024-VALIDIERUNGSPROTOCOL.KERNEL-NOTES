@@ -227,6 +227,7 @@ FTH-TRAGEND                  = FT0
  des poiwerks die andock funktion benutzt wird können 
  dann solche geschichten programmiert werden 
 
+¢!
 
 »[× 1 + 1 ×]«
  @ »[(1)—Ø 1 + 1 Ø]« # Rechnung selbst
@@ -234,12 +235,13 @@ FTH-TRAGEND                  = FT0
  ¬·¤= »[" 2 "]« # Rechnungs ergebnis von BOXH-ALU
        @ »[(2)—Ø 2 Ø]« # ergebnis selbst
 
-           ¿ »[Ø 1 + 1 Ø—(1)]«
-           ¿ »[Ø 2 Ø—(2)]«
+           ¿ »[Ø 1 + 1 Ø—(1)]« # NITROX KOMPONENTE MIT FT
+           ¿ »[Ø 2 Ø—(2)]«     # NITROX KOMPONENTE MIT FT
        ¬· »[× 4 + 4 + (1) + (2) ×]« # Neue Rechnung plus 1 plus 2 
 
            ¬·¤= [" ergebnis "]
 
+!¢
 
 oder ich lege den ¿ DazuLege Aspekt generell oberhalb eines Poiwerks 
 damit es Lesbarer ist .... und vom kopf her als abfolge verstanden werden kann 

@@ -185,8 +185,13 @@ ARGNR-NR                      = AR10
 !KONEKTORKLASSE-ZEITKLASSE ARGAN-ENDE  = AR12
 !BAUKLASSE-NUMMERKLASSE    ARGAN-ENDE  = AR13
 
+
+#################################################
+
+# BAUSTELLE 
+
 # FEED 
-FEK                         = FE
+FEK                         = F
 FFH-FÜHREND                 = FF0
 FFU-NR-START                = FF1
 FFSYS-NR-EINGABE            = FF2
@@ -195,12 +200,13 @@ FFU-INHALT-START            = FF4
 FFSYS-INHALT-EINGABE        = FF5 
 FFAN-INHALT-ENDE            = FF6
 
-FTU-INHALT-START
-FTSYS-INHALT-EINGABE 
-FTANS-INHALT-ENDE 
-FTU-NR-START 
-FTSYS-NR-EINGABE 
-FTAN-NR-ENDE 
+FTH-TRAGEND                 = FT
+FTU-INHALT-START            = FT
+FTSYS-INHALT-EINGABE        = FT
+FTANS-INHALT-ENDE           = FT
+FTU-NR-START                = FT
+FTSYS-NR-EINGABE            = FT
+FTAN-NR-ENDE                = FT
 
 
 

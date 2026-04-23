@@ -1773,25 +1773,81 @@ morphic 0 DA     TE   TY    PE = 4
  weiter ackern 
 
 
-ich werde bevor ich es durch rechne und engültig implementiere 
-dann alle wörter die gleich geschrieben werden auswerten 
-und daraus ein vernümpftiges morph system bauen 
+Betriebsysteme     
 
-statts warlos zwei buchstaben zu verknüpfen 
-der MASTERGRUND muss stimmen, weil erklärbar 
+VxWorks    = eher Nasa Spielzeug    
 
- ich bau denen meine RAPGOTT expertise so in deren Programmierköpfe 
- rein , das die auch gescheite raptexte schreiben könnten XD
+RTEMS     = auch eher nasa spielzeug 
 
- inklusive den halbreim aspekt 
+Nucleus RTOS = nasa 
 
+Linux 
 
+sylixOS 
 
 
 
+##########
+
+Windows = NT-Kernel (Hybrid-Kernel)
+
+macOS, iOS = XNU  (basiert auf Mach- und BSD-Komponenten)
+
+Linux, Android = Linux-Kernel (Monolithischer Kernel)
+
+VxWorks, RTEMS, Nucleus RTOS = Raumfahr ( Raumfahrt ) 
 
 
 
+Unix nur als Tor zur welt .... 
+
+also NT-Kernel | XNU | Linux-kernel |
+
+alle drei lauffähig machen .... 
+
+hmmm ..... 
+
+Poesix selbst werde ich nicht verwenden ... schrott 
+
+
+ warp lösung : 
+
+ ich bau den warp selbst nur für die grundzutaten 
+
+ Uefi | GNU | ARM | RISCV usw 
+
+ Microsoft Windows
+Ebene       Name
+Grundlage   UEFI (moderne Systeme) oder BIOS (Legacy)
+Kernel      Windows NT Kernel (ntoskrnl.exe)
+Oberfläche  Desktop Window Manager (DWM)
+
+Apple macOS
+Ebene       Name
+Grundlage   iBoot (Apple Silicon) oder UEFI (Intel-Macs)
+Kernel      XNU (X is Not Unix)
+Oberfläche  Quartz Compositor (Teil von SkyLight)
+
+
+Linux (Allgemein / Standard-Desktop)
+Ebene       Name
+Grundlage   UEFI oder BIOS oder Uboot (ARM)
+Kernel      Linux Kernel (vmlinuz)
+Oberfläche  Mutter (GNOME) / KWin (KDE) / Sway (Wayland)
+
+
+
+
+Grundzutaten : 
+
+- iBoot 
+- Uefi  
+- Uboot 
+
+dann die Kernel Schicht 
+
+und die oberflächen brauch ich nicht , läuft alles nativ 
+auf der eigenen ...
 
 
 
@@ -1860,49 +1916,5 @@ Reinstall später , von Arch zu BSD
 
 
 
- warp lösung : 
-
- ich bau den warp selbst nur für die grundzutaten 
-
- Uefi | GNU | ARM | RISCV usw 
 
 
- Alles andere spielt keine rolle da 
-
- die sowieso durch deren unterbau gecallt werden ...
-
- also keine  programmiersprachen in den warp 
-
- sondern nur vollständige geschrieben fertige grundzutaten 
-
- ich verkleinere den warp auf das wichtigste - diese werden 
- nativ unterstützt .... 
-
- alles andere müssen die programmierer dann selbst 
- für sich oder andere im pylovara store , quasi porten 
-
- ich selbst liefer Nur handgeschriebene Native MCS Programme 
- und keinen sondermüll ....
-
-
- ich werde meine MCS Programmierer vor jedem angriff schützen !
-
-
- und leute die es nicht gut meinen und denken 
- sie können dann in mcs einen verhackten scheiß 
- außerhalb des klone kernels liefern 
-
- werden grundsätzlich bis zum Morden gejagt ....
-
-keine gnade , kein herz , keine ausrede !
-
-
-wlan | lan | bluetooth | Antennen 
-
-alles was mit globaler verbindung zu tun hat wird 
-gepulst bis zum ausfall vernichten 
-
-und ich sorge dafür das keine firewall dieses drecks planeten 
-mein wort untergräbt und nicht angreifbar ist ..
-
-ich lass niewieder Satanisten spielraum !

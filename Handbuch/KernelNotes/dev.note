@@ -1839,11 +1839,26 @@ Kernel      Linux Kernel (vmlinuz)
 Oberfläche  Mutter (GNOME) / KWin (KDE) / Sway (Wayland)
 ==========================================================
 FreeBSD
-Ebene	      Name
+Ebene       Name
 Grundlage   UEFI (modern) oder BIOS (Legacy)
 Kernel      FreeBSD Kernel (monolithisch, mit ladbaren Modulen)
 Oberfläche  Wayfire / Sway / Hikari (Wayland Compositors) 
 ==========================================================
+UNIX System V (Original)
+Ebene       Name
+Grundlage   Proprietäre Firmware / Boot-ROM (Hardware-spezifisch, z. B. SUN OpenBoot, IBM ROS)
+Kernel      UNIX Kernel (Monolithisch)
+Oberfläche  X11 (X Window System) mit Motif Window Manager (MWM) oder CDE
+==========================================================
+
+
+
+
+
+
+
+
+
 
 Grundzutaten : 
 

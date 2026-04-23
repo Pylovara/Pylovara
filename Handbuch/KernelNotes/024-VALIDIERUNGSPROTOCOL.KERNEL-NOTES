@@ -186,7 +186,6 @@ ARGK                          = A        HIER ALLES FRISCH AUFSETZEN - ALLES NAC
 
 ARGH-OPTION                   = AOP
 
-
 ARGU-BEFEHL                   = AB0
 ARGAUSF-LOOP                  = AB1
 ARGAUSF-EXIT                  = AB2
@@ -195,10 +194,16 @@ ARGAUSF-REGELDERREINHEIT      = AB4
 ARGAN-BEFEHL-ENDE             = AB5
 
 
-
-
 ARGU-TIMER                    = AT0
+ARGTOR-NANOSEKUNDEN           = AT1
+ARGTOR-SEKUNDEN               = AT
+ARGTOR-TAKTSCHLÄGE            = AT
+ARGZEIT-ZEIT                  = AT
+ARGAN-TIMER-ENDE              = AT
 
+
+
+ARGH-BAUMODUS                 = AV
 
 
 ARGU-BAUMODUS                 = AV0

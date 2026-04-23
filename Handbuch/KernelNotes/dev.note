@@ -1815,8 +1815,8 @@ Poesix selbst werde ich nicht verwenden ... schrott
  ich bau den warp selbst nur für die grundzutaten 
 
  Uefi | GNU | ARM | RISCV usw 
-
- Microsoft Windows
+==========================================================
+Microsoft Windows
 Ebene       Name
 Grundlage   UEFI (moderne Systeme) oder BIOS (Legacy)
 Kernel      Windows NT Kernel (ntoskrnl.exe)
@@ -1827,7 +1827,6 @@ Ebene       Name
 Grundlage   iBoot (Apple Silicon) oder UEFI (Intel-Macs)
 Kernel      XNU (X is Not Unix)
 Oberfläche  Quartz Compositor (Teil von SkyLight)
-
 
 hinweis :
 macOS (XNU): Die Kombination aus Mach und BSD

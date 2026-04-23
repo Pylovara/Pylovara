@@ -272,25 +272,19 @@ RAM DIRIGENT $ »[¥Ø—(1)¥|Ħ $ MOV AL, 0x1745… Ħ]«
 
                      »[Ħ $ MOV AL, 0x1745… Ħ]«
                       ¶
-                      
+
                       ¶¶ 
 
 
 
 
-
-
-
-
-
-
 ### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
- # MASTERWORT = FFELT | FTELT
- # SBSK FF = FEEK-FFH-FFELT-FFU-FFELT-FFNR-FFELT-FFANS-FFELT-FFLINK-FFELT-FFSYS-FFELT-FFAN-FFELT-FFRA-FFELT
- # SBSK FT = FEEK-FTH-FTELT-FTU-FTELT-FTSYS-FTELT-FTANS-FTELT-FTLINK-FTELT-FTNR-FTELT-FTAN-FTELT-FTRA-FTELT
+ # MASTERWORT = FEFELT | FFELT | FTELT
+ # SBSK FF = 
+ # SBSK FT = 
  # VBSK = 
- # RBSK = BOXK FEEK
- # RBSK = POOK FEEK
+ # RBSK = BOXK FEK
+ # RBSK = POOK FEK
 ### ==== ##### == # === # HERSTELLUNGSDATEN ### === # == ##### === ###
  #  DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT                 #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

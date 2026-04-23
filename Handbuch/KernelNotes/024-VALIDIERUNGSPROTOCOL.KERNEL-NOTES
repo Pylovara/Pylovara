@@ -332,3 +332,91 @@ damit es Lesbarer ist .... und vom kopf her als abfolge verstanden werden kann
  #  DATUM = [04:13:31|Di Apr 21 2026] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+# kurzer schmierzettel 
+
+#!/bin/bash
+
+# Konfiguration
+REPO_PATH="/home/bandino/Pylovara"
+LOG_FILE="/home/bandino/.cache/pylovara-push.log"
+
+# Farben für Benachrichtigung
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+# Funktion für Benachrichtigung (Hyprland + libnotify)
+notify() {
+    if command -v notify-send &> /dev/null; then
+        notify-send -u normal -t 3000 -i git "Pylovara Git" "$1"
+    fi
+    echo -e "$1"
+}
+
+# Prüfen ob Verzeichnis existiert
+if [ ! -d "$REPO_PATH" ]; then
+    notify "${RED}❌ Fehler: $REPO_PATH existiert nicht${NC}"
+    exit 1
+fi
+
+cd "$REPO_PATH" || exit 1
+
+# Prüfen ob es ein Git-Repo ist
+if [ ! -d ".git" ]; then
+    notify "${RED}❌ Fehler: $REPO_PATH ist kein Git-Repository${NC}"
+    exit 1
+fi
+
+# Git Operationen
+{
+    echo "=== Push am $(date '+%Y-%m-%d %H:%M:%S') ==="
+    
+    git add -A
+    echo "→ git add -A ausgeführt"
+    
+    COMMIT_MSG="$(date '+%Y-%m-%d %H:%M:%S')"
+    git commit -m "$COMMIT_MSG"
+    COMMIT_EXIT=$?
+    
+    if [ $COMMIT_EXIT -eq 0 ]; then
+        echo "→ Commit erstellt: $COMMIT_MSG"
+    elif [ $COMMIT_EXIT -eq 1 ]; then
+        echo "→ Keine Änderungen zum Commit"
+        notify "ℹ️ Pylovara: Keine Änderungen"
+        exit 0
+    fi
+    
+    git push origin main --force
+    PUSH_EXIT=$?
+    
+    if [ $PUSH_EXIT -eq 0 ]; then
+        echo "→ Push erfolgreich"
+        notify "${GREEN}✅ Pylovara gepusht: $COMMIT_MSG${NC}"
+    else
+        echo "→ Push fehlgeschlagen (Exit: $PUSH_EXIT)"
+        notify "${RED}❌ Push fehlgeschlagen!${NC}"
+        exit 1
+    fi
+    
+} >> "$LOG_FILE" 2>&1
+
+~/.config/hypr/hyprland.conf 
+
+# Für Cmd + ü (SUPER + ü)
+bind = SUPER, udiaeresis, exec, /home/bandino/.local/bin/pylovara-push.sh
+
+# Alternative: Falls du die deutsche Tastatur meinst wo ü auf [ ist:
+# bind = SUPER, bracketleft, exec, /home/bandino/.local/bin/pylovara-push.sh
+
+#### klatsch den key bind nicht in /Pylovara/Control rein 
+  das ist dev speziell .... damit ich es bissel bequemer habe 
+
+  vergiss nicht die ignor liste , sonnst push ich versehentlich den 
+  test compiler für verilog und c 

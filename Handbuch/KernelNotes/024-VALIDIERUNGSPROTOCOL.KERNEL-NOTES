@@ -173,23 +173,24 @@ SENTOR-REGELDERREINHEIT       = SE3
 SENAN-ENDE                    = SE4
 
 
-# ARGUMENT ( ICH SEHE NACHHOLBEDARF BEI ARGAN-ENDE | SPÄTER )
-ARGK                          = AR
-ARGH-OPTION                   = AR0
-ARGAUF-LOOP                   = AR1
-ARGAUF-EXIT                   = AR2
-ARGAUF-BESTÄTIGUNG            = AR3
-ARGAUF-REGELDERREINHEIT       = AR4
-ARGTOR-NANOSEKUNDEN           = AR5
-ARGTOR-SEKUNDEN               = AR6
-ARGTOR-TAKTSCHLÄGE            = AR7
-ARGZEIT-ZEIT                  = AR8
-ARGBAU-VARIABLEN              = AR9
-ARGNR-NR                      = AR10
+# ARGUMENT 
+ARGK                          = A
+ARGH-BEFEHL                   = AB
+ARGAUF-LOOP                   = AB
+ARGAUF-EXIT                   = AB
+ARGAUF-BESTÄTIGUNG            = AB
+ARGAUF-REGELDERREINHEIT       = AB
+ARGAN-BEFEHL-ENDE             = AB
 
-!KONEKTORKLASSE            ARGAN-ENDE  = AR11
-!KONEKTORKLASSE-ZEITKLASSE ARGAN-ENDE  = AR12
-!BAUKLASSE-NUMMERKLASSE    ARGAN-ENDE  = AR13
+ARGTOR-NANOSEKUNDEN           = AT
+ARGTOR-SEKUNDEN               = AT
+ARGTOR-TAKTSCHLÄGE            = AT
+ARGZEIT-ZEIT                  = AT
+ARGAN-TIMER-ENDE              = AT
+
+ARGBAU-VARIABLEN              = AV
+ARGNR-NR                      = AV
+ARGAN-BAUMODUS-ENDE           = AV
 
 
 # FEED 
@@ -212,7 +213,7 @@ FTSYS-NR-EINGABE            = FT5
 FTAN-NR-ENDE                = FT6
 
 
-# WARP 
+# WARP = UNFERTIG WEIL ANKER FEHLEN 
 WARK                       = WA
 
 WARH-GAMES                 = WAG0

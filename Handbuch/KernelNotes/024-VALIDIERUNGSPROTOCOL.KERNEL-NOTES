@@ -379,7 +379,7 @@ fi
     echo "=== Push am $(date '+%Y-%m-%d %H:%M:%S') ==="
     
     git add -A
-    echo "→ git add -A ausgeführt"
+    echo "→ git add -A ausgeführt | ignoriert anscheinend sowieso "
     
     COMMIT_MSG="$(date '+%Y-%m-%d %H:%M:%S')"
     git commit -m "$COMMIT_MSG"

@@ -32,17 +32,32 @@ FEED-KERNKLASSE § FEK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+FEED-FÜHREND-HAUPTKLASSE § FFH-FÜHREND
+
+ SCHALTUNGSBEZEICHNUNG = FÜHREND
+
+ VAL-KENNUNG = FF0
+
+ INFO = BEREITHALTUNGSCONTAINER FÜR FÜHRENDE DATENSÄTZE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FEED-TRAGEND-HAUPTKLASSE § FTH-TRAGEND
+
+ SCHALTUNGSBEZEICHNUNG = TRAGEND
+
+ VAL-KENNUNG = FT0
+
+ INFO = BEREITHALTUNGSCONTAINER FÜR TRAGENDE DATENSÄTZE
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
 
 
 
-
-
-
-
-
+# MOMENT 
 
 FEED-HAUPTKLASSE § FFH-FÜHREND
 

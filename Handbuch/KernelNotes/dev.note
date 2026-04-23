@@ -1821,7 +1821,7 @@ Ebene       Name
 Grundlage   UEFI (moderne Systeme) oder BIOS (Legacy)
 Kernel      Windows NT Kernel (ntoskrnl.exe)
 Oberfläche  Desktop Window Manager (DWM)
-
+==========================================================
 Apple macOS
 Ebene       Name
 Grundlage   iBoot (Apple Silicon) oder UEFI (Intel-Macs)
@@ -1829,14 +1829,22 @@ Kernel      XNU (X is Not Unix)
 Oberfläche  Quartz Compositor (Teil von SkyLight)
 
 
+hinweis :
+macOS (XNU): Die Kombination aus Mach und BSD
+XNU ist ein Hybrid-Kernel, der im Kern auf Mach aufbaut. 
+==========================================================
 Linux (Allgemein / Standard-Desktop)
 Ebene       Name
 Grundlage   UEFI oder BIOS oder Uboot (ARM)
 Kernel      Linux Kernel (vmlinuz)
 Oberfläche  Mutter (GNOME) / KWin (KDE) / Sway (Wayland)
-
-
-
+==========================================================
+FreeBSD
+Ebene	      Name
+Grundlage   UEFI (modern) oder BIOS (Legacy)
+Kernel      FreeBSD Kernel (monolithisch, mit ladbaren Modulen)
+Oberfläche  Wayfire / Sway / Hikari (Wayland Compositors) 
+==========================================================
 
 Grundzutaten : 
 

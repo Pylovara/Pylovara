@@ -18,6 +18,10 @@ AUSFÜHRUNGSART = KEINE
 
 VALIDIERUNGSPROTOCOL-KERNKLASSE § VALK 
 
+ SCHALTUNGSBEZEICHNUNG = VALK
+
+ VAL-KENNUNG = VAL0
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 VALIDIERUNGSPROTOCOL-ALPHAKLASE $ VALALPHA-VAL-KENNUNG
@@ -32,14 +36,11 @@ VALIDIERUNGSPROTOCOL-ALPHAKLASE $ VALALPHA-VAL-KENNUNG
 
  VAL-KENNUNG =
 
-# wenn ich einmal durch bin einmal nummer rücken 
-  ich binde die kernklassen als null .... 
-
-
-# ERST KURZ LISTE 
+# ERST KURZ LISTE (STICHPUNKT KURZ : WIE IMMER IRONISCHER LACHER )
 
 # DATENTYPEN 
 DAK             = DA
+
 
 # TRANSAKTIONSRAHMEN
 TRANK           = TA
@@ -47,6 +48,7 @@ TRANH-RUN       = TA0
 TRANU-START     = TA1
 TRANSYS-MASK    = TA2
 TRANAN-ENDE     = TA3
+
 
 # PROTEIN
 POIK            = PI
@@ -60,6 +62,7 @@ POIWERK-NAVK    = PI6
 POIWERK-RETK    = PI7
 POIAN-ENDE      = PI8
 
+
 # PROTON 
 POOK            = PO
 POOH-HARD       = PO0 
@@ -68,6 +71,7 @@ POON-NAME       = PO2
 POOR-SEMI       = PO3
 POOWERT-WERT    = PO4
 POOAN-ENDE      = PO5
+
 
 # TRENNBEFEHL
 TRENK           = TE
@@ -78,12 +82,14 @@ TRENSYS-POOK    = TE3
 TRENSYS-COMBO   = TE4
 TRENAN-ENDE     = TE5 
 
+
 # AKTIONSDRAHT
 AKTK            = AK
 AKTH-IMPULS     = AK0
 AKTU-START      = AK1
 AKTSYS-POIK     = AK2
 AKTAN-ENDE      = AK3
+
 
 # BOXIS
 BOXK                          = B

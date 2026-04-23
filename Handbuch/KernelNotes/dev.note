@@ -1401,40 +1401,6 @@ per designe ein schöner kasten aber macht es die einfachheit kaputt ?
 
 
 
-
-ŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁŁ
-
-
-
-            FF      (<NR>)—± <INHALT> ±
-            FT             ± <INHALT> ±—(<NR>)
-                            
-
-
-                           # Ram|Rom|Stick|Host|ID-DNA|FrequenzSpeicher|TonAbfolge|Wanzen|Mechanisch|RemoteSpeicher|Explizite Gehinrströmung bei einem Speziellen Gedanken| - Notiz
-                           ↓
-FF      (<NR>)—o—± <INHALT> ±
-FT               ± <INHALT> ±—o—(<NR>)
-                                          ↑
-                                          # Ram|Rom|Stick|Host|ID-DNA|FrequenzSpeicher|TonAbfolge|Wanzen|Mechanisch|RemoteSpeicher|Explizite Gehinrströmung bei einem Speziellen Gedanken| - Lesen
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ----------------------------------------------------------------------------
 
  - MODULATOR + MCS-CMD 
@@ -1588,14 +1554,6 @@ kann keiner was anfangen ohne den MASTERKEY
 
 
 
-
-gut ich geh erst einen kaffe essen und eine zigarette trinken 
-und mein brötchen rauchen .... und dann gehts weiter ...
-
-ich kann den ganzen sektor hier löschen danach , dann ist 
-die komponente finish ..... 
-
-
 vermerk vor dem lösch vorgang : 
 
 navigator und warp erstmal nicht in den VAL 
@@ -1617,11 +1575,75 @@ dann wäre ich wieder bei absolulator
 
 
 
+================ARBEIT FÜR FEED UND NITROX=======================
+
+# MUSS IN DEN SCHABLONATOR ALS SYNTAX MASTER VORLAGEN LOGIK 
+
+¢!
+
+# HINZUFÜGEN ZU EINEM FEED FÜHREND
+»[" IRGENWAS "]«
+ @ »[(<NR>)—Ø IRGENDWAS ÜBETRAGEN Ø]«
 
 
+# SYNCRONISATION ZU FEED TRAGEND
+»[Ø IRGENDWAS VON FF <NR> Ø—(<NR>)]«
+ @ »[, IRGENDWAS ÜBETRAGEN Ø]«
+
+!¢
+
+# SENTIATOR UPDATE IMPLEMENTIEREN 
+
+ @ = Inhalt übertragen | copie paste | kopieren einfügen 
+ ¿ = Inhalt hinzufügen | Dazu Legen  | Erweitern 
+
+ kann dazu dienen proteine mit boxis inhalt zu feed zu übetragen 
+ oder von einem feed heraus wieder in ein frisches protein mit 
+ anderem oder des gleichen boxis.
+
+ kann auch von Reinen Protein Proton träger zu Protein Proton Träge 
+ dienen .... ausarbeitung dessen steht noch offen 
+
+ für nervenzellen transaktionsrahmen , wo unten und oberhalb 
+ des poiwerks die andock funktion benutzt wird können 
+ dann solche geschichten programmiert werden 
+
+¢!
+
+»[× 1 + 1 ×]«
+ @ »[(1)—Ø 1 + 1 Ø]« # Rechnung selbst
+
+ ¬·¤= »[" 2 "]« # Rechnungs ergebnis von BOXH-ALU
+       @ »[(2)—Ø 2 Ø]« # ergebnis selbst
+
+           ¿ »[Ø 1 + 1 Ø—(1)]« # NITROX KOMPONENTE MIT FT
+           ¿ »[Ø 2 Ø—(2)]«     # NITROX KOMPONENTE MIT FT
+       ¬· »[× 4 + 4 + (1) + (2) ×]« # Neue Rechnung plus 1 plus 2 
+
+           ¬·¤= [" ergebnis "]
+
+!¢
+
+oder ich lege den ¿ DazuLege Aspekt generell oberhalb eines Poiwerks 
+damit es Lesbarer ist .... und vom kopf her als abfolge verstanden werden kann 
 
 
+»[(1)—Ø <CACHE-HALTER> Ø]«
+ # als sentiatoren erweiterung am besten , der direkt den ram speicher notiert irgendwas
+ # FF BOXH-CACHE
+(1)—[¥24561322312¥]
+(1)—[¥24561322312¥]
+(1)—[¥24561322312¥]
+(1)—[¥24561322312¥]
+(1)—[¥24561322312¥]
 
+»[(1)—Ø <CACHE-NEHMER> Ø]«
+ # FT BOXH-CACHE
+ [¥24561322312¥]—(1)
+ [¥24561322312¥]—(1)
+ [¥24561322312¥]—(1)
+ [¥24561322312¥]—(1)
+ [¥24561322312¥]—(1)
 
 
 LÄSST SICH WIE BUTTER RUNTER TIPPEN , WENN DAS SO EINFACH IM KOPF ZU 
@@ -1830,3 +1852,34 @@ Reinstall später , von Arch zu BSD
  - Port nur Git 
  - Browser nicht installieren 
  - Keine Linux Fundation Software 
+
+
+
+
+
+
+
+
+ warp lösung : 
+
+ ich bau den warp selbst nur für die grundzutaten 
+
+ Uefi | GNU | ARM | RISCV usw 
+
+
+ Alles andere spielt keine rolle da 
+
+ die sowieso durch deren unterbau gecallt werden ...
+
+ also keine  programmiersprachen in den warp 
+
+ sondern nur vollständige geschrieben fertige grundzutaten 
+
+ ich verkleinere den warp auf das wichtigste - diese werden 
+ nativ unterstützt .... 
+
+ alles andere müssen die programmierer dann selbst 
+ für sich oder andere im pylovara store , quasi porten 
+
+ ich selbst liefer Nur handgeschriebene Native MCS Programme 
+ und keinen sondermüll ....

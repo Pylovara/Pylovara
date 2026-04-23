@@ -37,8 +37,8 @@ WARP-HAUPTKLASSE § WARH-GAMES
  VAL-KENNUNG = WA1
 
  INFO = DIREKTE ORIGINALE API SCHNITTSTELLEN LOGIK ANBINDUNG
-        FÜR DIE GAMEING INDUSTRIE 
-
+        FÜR DIE GAMEING INDUSTRIE VON ALTEN PROGRAMMIERSPRACHEN.
+        
  FUNKTION = GAMES 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -70,6 +70,39 @@ WARP-GAMES-APIKLASSE § WARAPI-SOUND
  BENÖTIG FÜR = XAUDIO2 | DIRECTSOUND | OPENAL 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-GAMES-APIKLASSE § WARAPI-CONTROL
+
+ SCHALTUNGSBEZEICHNUNG = CONTROL
+
+ VAL-KENNUNG = WA4
+
+ INFO =
+
+ BENÖTIGT FÜR = XINPUT | RAWINPUT | DIRECTINPUT | SDL
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+WARP-GAMES-APIKLASSE § WARAPI-NETZWERK 
+
+ SCHALTUNGSBEZEICHNUNG = NETZWERK
+
+ VAL-KENNUNG = WA5
+
+ INFO = STANDART-WINDOWS-SOCKETS | STEAMWORKS = ISTEAMNETWORKINGSOCKETS
+
+ BENÖTIGT FÜR = SWS | ISNS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2367,7 +2367,49 @@ das einzige wo es nicht sinnfrei
 
  gut ... dann mach ich es so .... klingt nach einem warp umbau 
 
+# nur eine rücklage .......
+==========================================================
+Microsoft Windows
+Ebene       Name
+Grundlage   UEFI (moderne Systeme) oder BIOS (Legacy)
+Kernel      Windows NT Kernel (ntoskrnl.exe)
+Oberfläche  Desktop Window Manager (DWM)
+==========================================================
+Apple macOS
+Ebene       Name
+Grundlage   iBoot (Apple Silicon) oder UEFI (Intel-Macs)
+Kernel      XNU (X is Not Unix)
+Oberfläche  Quartz Compositor (Teil von SkyLight)
 
+hinweis :
+macOS (XNU): Die Kombination aus Mach und BSD
+XNU ist ein Hybrid-Kernel, der im Kern auf Mach aufbaut. 
+==========================================================
+Linux (Allgemein / Standard-Desktop)
+Ebene       Name
+Grundlage   UEFI oder BIOS oder Uboot (ARM)
+Kernel      Linux Kernel (vmlinuz)
+Oberfläche  Mutter (GNOME) / KWin (KDE) / Sway (Wayland)
+
+
+hinweis treiber :
+- Slackware 
+- ArchRepo 
+- etc
+
+==========================================================
+FreeBSD
+Ebene       Name
+Grundlage   UEFI (modern) oder BIOS (Legacy)
+Kernel      FreeBSD Kernel (monolithisch, mit ladbaren Modulen)
+Oberfläche  Wayfire / Sway / Hikari (Wayland Compositors) 
+==========================================================
+UNIX System V (Original)
+Ebene       Name
+Grundlage   Proprietäre Firmware / Boot-ROM (Hardware-spezifisch, z. B. SUN OpenBoot, IBM ROS)
+Kernel      UNIX Kernel (Monolithisch)
+Oberfläche  X11 (X Window System) mit Motif Window Manager (MWM) oder CDE
+==========================================================
 
 
 

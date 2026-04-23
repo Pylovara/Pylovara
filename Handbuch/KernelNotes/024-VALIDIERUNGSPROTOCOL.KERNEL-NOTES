@@ -213,231 +213,29 @@ FTU-NR-START                = FT4
 FTSYS-NR-EINGABE            = FT5
 FTAN-NR-ENDE                = FT6
 
-# 
 
 
-Betriebsysteme     
+# WARP 
 
-VxWorks    = eher Nasa Spielzeug    
+WARK                       = WA0
 
-RTEMS     = auch eher nasa spielzeug 
+WARH-GAMES                 = WAG1 
+WARAPI-OPTIK               = WAG2 
+WARAPI-SOUND               = WAG3 
+WARAPI-CONTROL             = WAG4 
+WARAPI-NETZWERK            = WAG5 
+WARAPI-DATENTYPENZUGRIFF   = WAG6 
+WARAPI-IOT                 = WAG7 
+WARAPI-PE-LOADER           = WAG8 
+WARAPI-REGISTRY-EMULATION  = WAG9 
+WARAPI-COM                 = WAG10
 
-Nucleus RTOS = nasa 
 
-Linux 
 
-sylixOS 
 
 
 
-##########
-
-Windows = NT-Kernel (Hybrid-Kernel)
-
-macOS, iOS = XNU  (basiert auf Mach- und BSD-Komponenten)
-
-Linux, Android = Linux-Kernel (Monolithischer Kernel)
-
-VxWorks, RTEMS, Nucleus RTOS = Raumfahr ( Raumfahrt ) 
-
-
-
-Unix nur als Tor zur welt .... 
-
-also NT-Kernel | XNU | Linux-kernel |
-
-alle drei lauffähig machen .... 
-
-hmmm ..... 
-
-Poesix selbst werde ich nicht verwenden ... schrott 
-
-
- warp lösung : 
-
- ich bau den warp selbst nur für die grundzutaten 
-
- Uefi | GNU | ARM | RISCV usw 
-==========================================================
-Microsoft Windows
-Ebene       Name
-Grundlage   UEFI (moderne Systeme) oder BIOS (Legacy)
-Kernel      Windows NT Kernel (ntoskrnl.exe)
-Oberfläche  Desktop Window Manager (DWM)
-==========================================================
-Apple macOS
-Ebene       Name
-Grundlage   iBoot (Apple Silicon) oder UEFI (Intel-Macs)
-Kernel      XNU (X is Not Unix)
-Oberfläche  Quartz Compositor (Teil von SkyLight)
-
-hinweis :
-macOS (XNU): Die Kombination aus Mach und BSD
-XNU ist ein Hybrid-Kernel, der im Kern auf Mach aufbaut. 
-==========================================================
-Linux (Allgemein / Standard-Desktop)
-Ebene       Name
-Grundlage   UEFI oder BIOS oder Uboot (ARM)
-Kernel      Linux Kernel (vmlinuz)
-Oberfläche  Mutter (GNOME) / KWin (KDE) / Sway (Wayland)
-
-
-hinweis treiber :
-- Slackware 
-- ArchRepo 
-- etc
-
-==========================================================
-FreeBSD
-Ebene       Name
-Grundlage   UEFI (modern) oder BIOS (Legacy)
-Kernel      FreeBSD Kernel (monolithisch, mit ladbaren Modulen)
-Oberfläche  Wayfire / Sway / Hikari (Wayland Compositors) 
-==========================================================
-UNIX System V (Original)
-Ebene       Name
-Grundlage   Proprietäre Firmware / Boot-ROM (Hardware-spezifisch, z. B. SUN OpenBoot, IBM ROS)
-Kernel      UNIX Kernel (Monolithisch)
-Oberfläche  X11 (X Window System) mit Motif Window Manager (MWM) oder CDE
-==========================================================
-
-hinweis : 
-     GNU Hurd: Setzt auf GNU Mach als Mikrokernel
-
-     XNU (Kernel von macOS/iOS): 
-     Nutzt Mach 3.0 als Basis, aber modifiziert 
-     und mit BSD-Komponenten kombiniert
-
-     das heißt die sind BSD abhängig ... wusst ich auch nicht 
-     dachte nur Sony wäre so unterwegs ...
-
-
-  das heißt ich muss meinen freund aktivieren ...
-   der soll mir die daten liefern ..... 
-
-   - ELETRONIK STEUERUNG 
- - HARDWARE BINDUNG 
-Pylovara-Boot MASTER TRUE 
- - HARDWARE BINDUNG 
-   - ELEKTRONIK STROM 
-   - CHIPS = CHIPLAYER FÜR UEFI IBOOT UBOOT 
-   - GRAKAS = HARDWARE LAYER 
-   - RAM = UNWICHTIG 
-============= BEKOMMEN DAS WAS SIE WOLLEN, und wenns ein pferd ist =================
-     - UEFI 
-       - WINDOWS (Bekommt seine Fantasie Hardware Nahmen)
-       - LINUX   (Naja , kann originales haben)
-       - FREE BSD (glaub die sind da auch normal im kopf)
-
-     - IBOOT 
-       - XNU (Bekommt seine Fantasie hardware namen)
-
-     - UBOOT 
-   - ALLE ARM BASIERTEN SYSTEME DER DREI (GOOGLES LINUX KERNEL Z.B)
-
-
-im grunde muss ich nur das BIOn dann so bauen das er 
-die hardware , je nach "Kundenwunsch" umedikettiert 
-und ich muss die hardware selbst so Pulsen das die eingebauten 
-mechaniken für den "angeblichen schutz" löscht 
-
-dann muss ich den USB bzw RAM Anbekomm ...
-dadurch den kernel starten , die eingebrandten "sicherungs calls"
-klipp und klar ins leer laufen lassen und dann alle bootloader 
-oberhalb vom Pylovara-Boot Ochestriern 
-
-Für die ROM/Ram selbst , eine Einteilungs zu ordnung machen 
-
-und der rest wäre dann abhängig von der fremd hardware ...
-
-erst bei Pylovara-MainBoards kann ich funktioniert das 
-ohne den heckmeck .... wäre aber sinnvoll es zu tun 
-
-was man hat , hat man ...
-
-das würde heißen , irgendwer hat hat eine voodo z.b 
-aber windows will mindestens rtx für ein game ...
-
-dann bekommt er rtx ... oder sonnst einen scheiß namen 
-
-die imei funktion selbst , blockier ich vollständig 
-
-jedes system bekommt seine anforderung quasi 
-auf blattpapier 
-
-die logik wird dann so designed das die das als 
-hardware sehen 
-
-ich kann sogar noch dreister sein ...
-
-
-ich bau einen MAINBOARD SIMULATOR 
-
-und der spuckt denen dann die hardware hin wie sie es wollen 
-die treiber selbst laufen dann auch rein 
-
-interesiert ja den computer nicht ... der läuft 
-
-und da alles läuft, startet alles ganz normal , weil installiert halt 
-auf dem simulator ..... 
-
-der wird gleich gatterlogik technisch aufgebaut das nur 
-pylovara rein senden kann aber keines der systeme durch den 
-simulator runter ... 
-
-hmmmm ...... 
-
-ich bau am besten deren datentypen nach , hol deren BIONs 
-und fütter die damit .... dann hat jeder MAINBOARD simulations 
-die richtigen IOT daten etc ... 
-
-ich muss lediglich die IOT logik dann übersetzen ...
-da ich einen echtzeit kernelbaue und die nur Bullshit 
-.... haben die Booter von denen gleich alles wie sie es brauchen 
-... selbst wenn sie es zeitverzögert konsumieren wollen 
-
-ich wiederum nutze den ram nicht sondern SanDisk sachen ..
-
-ob jetzt USB 4.0 oder Native RamRiegel , ist dabei scheiß egal ..
-
-
-
-
-
-
-
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-hmmmmm .......
-
- ich glaube das ist sinnfrei ... 
-
- ich glaube auch das keins der Treiber irgendwas mit den boots zu tun hat 
- ich glaube auch das die alle eigenständig funktionieren ....
-
- ich kann mir im besten wille nicht vorstellen das 
-
- - DirecX
- - Realtek
- - Vulkan 
- - Open GL 
-
- usw .... irgendwas mit dem unterbau zu tun haben 
-
- die sind ( das ist meine annahme), nicht schlau genug und 
- bekommen auch kein zugriff 
-
- die müssen also auf den systemen nur mit der logik arbeiten 
-
- hmmmm .... 
-
- 
-
-
-
-
+WARH-COMPILER
 
 
 

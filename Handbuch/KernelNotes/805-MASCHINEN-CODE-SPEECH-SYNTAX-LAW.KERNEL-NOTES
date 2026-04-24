@@ -18,24 +18,101 @@ ENSTEHT SEPERAT UND WIRD SEPERAT FÜR DIE BILDUNG ZUR VERFÜGUNG GESTELLT.
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-FEED NUTZUNG =
+ PROTEIN NUTZUNG
 
-»[()—Ø "BOXIS BEISPIELINHALT" Ø]« # HINZUFÜGEN
+¢!
+ »[ ]« = AUSFÜHRBARES PROTEIN
+!¢
 
 
-   »[Ø "BOXIS BEISPIELINHALT" Ø—()]« SYNCRONISIEREN
- 
+¢!
+  [ ]  = UNAUSFÜHRBARES PROTEIN
+!¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FEED NUTZUNG =
+
+¢!
+»[(1)—Ø "BOXIS BEISPIELINHALT" Ø]« # HINZUFÜGEN
+ ¬· »[Ø "BOXIS BEISPIELINHALT" Ø—(1)]« SYNCRONISIEREN
+!¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ REX NUTZUNG =
+
+ »[ ]«
+  ↓ # REX PROSS FLÄCHEN
+  ¬·
+  ¬··    
+
+ »[ ]«
+  ↓ # REX ENTSCHEIDUNGSPFAD AUSWAHL 
+  ↓
+  ¶ ¬· # ENTSCHEIDUNG PLUS WEITERER REX FLÄCHE
+  ↓
+  ¶¶ ¬· # PLUS WEITERER PROZESS FLÄCHE 
 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ SENTIATOR NUTZUNG =
+
+ »[ ]«
+  ↓ 
+  ¶ ¬· »[ ]« # ENTSCHEIDUNGSPFAD KANN 
+  ↓
+  ¶¶ ¬·· »[ ]« # ENTSCHEIDUNGSPFAD KANN NICHT 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+# KORRIGIERE IN UND OUT ROX .... ER WIRD ZUM NITROX 
+ NITROX NUTZUNG =
+
+¢!
+
+»[ ]«
+ ↓
+ @ ¬· »[ ]« # GREIFT DATEN VOR DER WEITER VERARBEITUNG AB 
+ ↓    
+ ¬· »[ ]«
+
+!¢
 
 
+¢!
+»[ ]«
+ ↓
+ ↓   ¿ ¬· »[ ]« # GIBT DATEN IN DIE VERARBEITUNG SELBST 
+ ↓   ↓
+ ¬· »[ ]«
+
+!¢
 
 
+¢!
 
+»[× 1 + 1 ×]«
+ @ »[(1)—Ø 1 + 1 Ø]« # Rechnung selbst
 
+ ¬·¤= »[" 2 "]« # Rechnungs ergebnis von BOXH-ALU
+       @ »[(2)—Ø 2 Ø]« # ergebnis selbst
 
+           ¿ »[Ø 1 + 1 Ø—(1)]« # NITROX KOMPONENTE MIT FT
+           ¿ »[Ø 2 Ø—(2)]«     # NITROX KOMPONENTE MIT FT
+       ¬· »[× 4 + 4 + (1) + (2) ×]« # Neue Rechnung plus 1 plus 2 
+
+           ¬·¤= [" ergebnis "]
+
+!¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ #  DATUM = [01:57:47|Sa  25 Apr 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ## ENDPUNKT PROTEIN ### === # == ##### === ###

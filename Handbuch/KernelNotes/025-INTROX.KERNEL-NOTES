@@ -13,21 +13,25 @@ MASTER § MASU-#INTROX
 
  BEGRIFFDEFINITION = ZUSATZPACK MANAGMENT INJEKTIONS EXTRAXTIONS SYSTEM 
 
- FUNKTION = EXTRA INJEKTION VON REIN UND RAUS 
-               TRANSPORTIERTE EXTRA DATEN 
+ FUNKTION = EXTRA INJEKTION VON REIN  TRANSPORTIERTE EXTRA DATEN 
 
-AUSFÜHRUNGSART = REIN UND RAUS VON KOPF ZUSÄTZE EINES POIWERKS 
+AUSFÜHRUNGSART = REIN  VON KOPF ZUSÄTZE EINES POIWERKS 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 INTROX-KERNKLASSE § INTK
 
- SCHALTUNGSBEZEICHNUNG = 
+ SCHALTUNGSBEZEICHNUNG = INTK
 
- VAL-KENNUNG = 
+ VAL-KENNUNG = INT
 
- iNFO = 
+ INFO = OPERIERT OBERHALB EINES PROTEIN 
 
+ FUNKTION = PROTEIN NAGGER, NIMMT ZUSÄTZE 
+
+ AUSFÜHRUNGSART =  KONTROLLE DES KOPFBEREICHES VOM PROTEIN POIWERK 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
@@ -39,28 +43,18 @@ INTROX-KERNKLASSE § INTK
 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-TROX-KERNKLASSE § TROXK
-
-
-
-
-
-
-
-
-
-Die Operator-Duo: @ vs. ¿
-@ (Der Extraktor): 
-
-Er zieht Informationen aus einer Box oder einem Prozess heraus 
-und friert sie im Feed-Vakuum Ø ... Ø ein.
 
 ¿ (Der Injektor): 
 Er ist der Vorbereiter. 
 Er legt die nomadischen Daten an die Andockstation, damit 
 die nächste Box sie sofort verarbeiten kann.
 
-==============================================================
+### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
+ # MASTERWORT = 
+ # SBSK =
+ # VBSK =
+ # RBSK =
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ #  DATUM = [xx:xx:xx|xx xx xx xxxx] MARKENBRANDT                   #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ### ENDPUNKT xxxxxx ### === # == ##### === ###

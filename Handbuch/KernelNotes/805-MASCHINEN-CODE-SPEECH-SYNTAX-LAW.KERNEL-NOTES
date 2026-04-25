@@ -97,13 +97,13 @@ ENSTEHT SEPERAT UND WIRD SEPERAT FÜR DIE BILDUNG ZUR VERFÜGUNG GESTELLT.
 ¢!
 
 »[× 1 + 1 ×]«
- @ »[(1)—Ø 1 + 1 Ø]« # Rechnung selbst
+ ± »[(1)—Ø 1 + 1 Ø]« # Rechnung selbst
 
  ¬·¤= »[" 2 "]« # Rechnungs ergebnis von BOXH-ALU
-       @ »[(2)—Ø 2 Ø]« # ergebnis selbst
+       ± »[(2)—Ø 2 Ø]« # ergebnis selbst
 
-           ¿ »[Ø 1 + 1 Ø—(1)]« # NITROX KOMPONENTE MIT FT
-           ¿ »[Ø 2 Ø—(2)]«     # NITROX KOMPONENTE MIT FT
+           ÷ »[Ø 1 + 1 Ø—(1)]« # NITROX KOMPONENTE MIT FT
+           ÷ »[Ø 2 Ø—(2)]«     # NITROX KOMPONENTE MIT FT
        ¬· »[× 4 + 4 + (1) + (2) ×]« # Neue Rechnung plus 1 plus 2 
 
            ¬·¤= [" ergebnis "]
@@ -117,10 +117,9 @@ FEED NUTZUNG =
 ¢!
 
 »[" BOXIS BEISPIELINHALT "]«
- @
-»[(1)—Ø " BOXIS BEISPIELINHALT " Ø]« # HINZUFÜGEN
+ ± »[(1)—Ø " BOXIS BEISPIELINHALT " Ø]« # HINZUFÜGEN
 
-     ¿ »[Ø " BOXIS BEISPIELINHALT " Ø—(1)]«
+     ÷ »[Ø " BOXIS BEISPIELINHALT " Ø—(1)]«
  ¬· »[" BOXIS BEISPIELINHALT "]« SYNCRONISIEREN
 
 !¢

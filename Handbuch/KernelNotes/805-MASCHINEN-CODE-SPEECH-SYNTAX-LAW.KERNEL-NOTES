@@ -21,25 +21,24 @@ ENSTEHT SEPERAT UND WIRD SEPERAT FÜR DIE BILDUNG ZUR VERFÜGUNG GESTELLT.
  PROTEIN NUTZUNG
 
 ¢!
+
  »[ ]« = AUSFÜHRBARES PROTEIN
+
 !¢
 
 
 ¢!
+
   [ ]  = UNAUSFÜHRBARES PROTEIN
+
 !¢
 
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-FEED NUTZUNG =
-
 ¢!
-»[(1)—Ø "BOXIS BEISPIELINHALT" Ø]« # HINZUFÜGEN
- ¬· »[Ø "BOXIS BEISPIELINHALT" Ø—(1)]« SYNCRONISIEREN
+
+»[ ]«
+ ↓
+ * # BESITZT EIN VERTIKALES ANSCHLUSS SYSTEM 
+
 !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -70,7 +69,7 @@ FEED NUTZUNG =
   ¶¶ ¬·· »[ ]« # ENTSCHEIDUNGSPFAD KANN NICHT 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-# KORRIGIERE IN UND OUT ROX .... ER WIRD ZUM NITROX 
+
  NITROX NUTZUNG =
 
 ¢!
@@ -85,6 +84,7 @@ FEED NUTZUNG =
 
 
 ¢!
+
 »[ ]«
  ↓
  ↓   ¿ ¬· »[ ]« # GIBT DATEN IN DIE VERARBEITUNG SELBST 
@@ -111,6 +111,26 @@ FEED NUTZUNG =
 !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+FEED NUTZUNG =
+
+¢!
+
+»[" BOXIS BEISPIELINHALT "]«
+ @
+»[(1)—Ø " BOXIS BEISPIELINHALT " Ø]« # HINZUFÜGEN
+
+     ¿ »[Ø " BOXIS BEISPIELINHALT " Ø—(1)]«
+ ¬· »[" BOXIS BEISPIELINHALT "]« SYNCRONISIEREN
+
+!¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
 
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [01:57:47|Sa  25 Apr 2026] MARKENBRANDT                  #

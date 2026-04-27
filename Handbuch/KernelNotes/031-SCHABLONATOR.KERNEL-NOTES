@@ -1,10 +1,9 @@
-@kernel-nr: 31 Ð SCHABLONATOR   | STATUS = DEV LEVEL ROLLING-RELEASE
+@kernel-nr: 31 Ð SCHABLONATOR     | STATUS = DEV LEVEL ROLLING-RELEASE
 #  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ###
 ### ==== ##### == # === ### K31 SCHABLONATOR ## === # == ##### === ###
 ### ==== ##### == # === ### PYLOVARA-SYSTEM ### === # == ##### === ###
- #
 ### ==== ##### == # === ## WICHTIGER HINWEIS ## === # == ##### === ###
- #  DIESER BEREICH STEHT AKTIV IN DER ENTWICKLUNG                   #
+ # 
 ### ==== ##### == # === STARTPUNKT SCHABLONATOR === # == ##### === ###
 
 NAME Ð SCHABLONATOR 00-79
@@ -38,13 +37,12 @@ SCHABLONATOR-HAUPTKLASSE § SBH-NAVIGATOR
 
 SCHABLONATOR-NAVIGATOR-UNTERKLASSE § SBU-
 
-NAVAUSL-RELAISKLASSE * ;
-NAVWERK-KNOTENPUNKT * -
 NAVWERK-ZIELREFERENZ * §
-NAVWERK-INFORMATION * ¡
+
 NAVWERK-KOMMENTAR * #
-NAVWERK-LANGZEITSPEICHER * Ð
+
 NAVWERK-DIRIGENT * $
+
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

@@ -505,6 +505,47 @@ DRUCK € )
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-IDENTIFIKATION
+
+INFO = DRUCKT ID ANKER FÜR MCS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-IDENTIFIKATION-UNTERKLASSE § SBU-IDU-DNA-BIOLIVE 
+
+DRUCK € þþþþ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-IDENTIFIKATION-UNTERKLASSE § SBU-IDU-DNA-BILDUNGSBEREICH 
+
+DRUCK € þþþ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-IDENTIFIKATION-UNTERKLASSE § SBU-IDU-DNA-INFASTRUKTUR 
+
+DRUCK € þþþ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-IDENTIFIKATION-UNTERKLASSE § SBU-IDU-DNA-FIRMA 
+
+DRUCK € þþþ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-IDENTIFIKATION-UNTERKLASSE § SBU-IDU-DNA-DIENST 
+
+DRUCK € þþ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-IDENTIFIKATION-UNTERKLASSE § SBU-IDU-DNA-TRANSAKTIONSRAHMEN 
+
+DRUCK € þ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
@@ -512,20 +553,9 @@ DRUCK € )
 
 
 
-# NAVIGATOR 
 
-NAVIGATOR-NAVI-WERKZEUGKLASSE § NAVWERK-LANGZEITSPEICHER * Ð
-NAVIGATOR-NAVI-WERKZEUGKLASSE § NAVWERK-KOMMENTAR * # 
-NAVIGATOR-NAVI-WERKZEUGKLASSE § NAVWERK-ZIELREFERENZ * § 
 
-# IDENTIFIKATION 
 
-IDENTIFIKATION-ID-UNTERKLASSE § IDU-DNA-BIOLIVE * þþþþ 
-IDENTIFIKATION-ID-UNTERKLASSE § IDU-DNA-BILDUNGSBEREICH * þþþ 
-IDENTIFIKATION-ID-UNTERKLASSE § IDU-DNA-INFASTRUKTUR * þþþ 
-IDENTIFIKATION-ID-UNTERKLASSE § IDU-DNA-FIRMA * þþþ 
-IDENTIFIKATION-ID-UNTERKLASSE § IDU-DNA-DIENST * þþ
-IDENTIFIKATION-ID-UNTERKLASSE § IDU-DNA-TRANSAKTIONSRAHMEN * þ
 
 # VATRON 
 

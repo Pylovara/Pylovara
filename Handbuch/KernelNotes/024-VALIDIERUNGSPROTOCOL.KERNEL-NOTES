@@ -39,7 +39,7 @@ SCHRIFTLICHE BLOCK DEKLARATION = VAL-KENNUNG
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# COPIE BLOCK ALLES  :
+# VAL BLÖCKE :
 
  SCHALTUNGSBEZEICHNUNG =
 
@@ -440,16 +440,6 @@ KKIU-MORPHIC               = KK29
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-
-# HIER WEITER MACHEN SOBALD RUHE DA IST .... 
-
-# COPIE BLOCK:
-
- SCHALTUNGSBEZEICHNUNG =
-
- VAL-KENNUNG =
-
-
 # BSK-GENERALSCHALTUNG ( GRUNDSÄTZLICHE ELEMENT SCHALTUNG FÜR BSK LOGIK )
 
 GASK                       = GA
@@ -477,29 +467,15 @@ GASU-RETELEMENT            = GA20
 GASU-MAELEMENT             = GA21
 GASU-HERZELEMENT           = GA22
 GASU-KKIELEMENT            = GA23
+GASU-MORPELEMENT           = GA24
+GASU-NITELEMENT            = GA25 
 
 
+=======================================================================
 
-
-
-
-
-
-
-
-
-
-
-GASU-ABSKELEMENT           =  # STEHT NOCH IN FRAGE OB DER ÜBERHAUPT GEBRAUCHT WIRD
-ABK WIE MOK WIE CHIK WURDEN HERAUS GENOMMEN , DA SIE KEINE ELT SCHALTUNG FÜR SICH SELBST BRAUCHEN 
-- ES SIND PROGRAMME ..... KEINE KOMPONENTEN 
-
-HOLE IM FOODERBANNER JEWEILS DIE SCHALTUNGSBLÖCKE RAUS ... 
-
- 
-
-
-
+GASU-ABELEMENT           =  # STEHT NOCH IN FRAGE OB DER ÜBERHAUPT GEBRAUCHT WIRD
+DER AB HAT EINEN ALPHA ... DESWEGEN WAR ER DRINNE .... IMPLEMENTIERT DAS SPÄTER 
+WENN ER FERTIG GESCHRIEBEN IST FÜR DIE VERSION 00-80
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

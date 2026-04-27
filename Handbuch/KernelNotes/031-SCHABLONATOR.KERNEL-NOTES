@@ -259,6 +259,113 @@ DRUCK € º
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-REX 
+
+INFO = DRUCKT REX FÜR MCS 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXH-PROZESS 
+
+DRUCK € ¬ 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-1 
+
+DRUCK € ·
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-2 
+
+DRUCK € ··
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-3 
+
+DRUCK € ···
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-4 
+
+DRUCK € ····
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-5 
+
+DRUCK € ·····
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-6 
+
+DRUCK € ······
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-7 
+
+DRUCK € ·······
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-8 
+
+DRUCK € ········
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXNR-9 
+
+DRUCK € ·········
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXO-KORDI 
+
+DRUCK ¤
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-EXTOR-ALU 
+
+DRUCK € =
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXTOR-STATUS 
+
+DRUCK € : 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXTOR-PARALLELAUSFÜHRUNG 
+
+DRUCK € ‹
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXTOR-TRANSPORT 
+
+DRUCK € ›
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXTOR-AUFSTEIGENDSORTIEREN 
+
+DRUCK € ↑
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-REX-UNTERKLASSE § SBU-REXTOR-ABSTEIGENDSORTIEREN 
+
+DRUCK € ↓
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
@@ -269,28 +376,8 @@ DRUCK € º
 
 
 
-#  REX 
 
-REX-HAUPTKLASSE § REXH-PROZESS * ¬ 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-1 * · 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-2 * ·· 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-3 * ··· 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-4 * ···· 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-5 * ····· 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-6 * ······ 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-7 * ·······
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-8 * ········ 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE § REXNR-9 * ·········
 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE-OPTIONSKLASSE § REXO-KORDI * ¤ 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE-KORDI-KONEKTORKLASSE § REXTOR-ALU * = 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE-KORDI-KONEKTORKLASSE § REXTOR-STATUS * : 
-
-REX-PROZESS-FLÄCHE-NUMMERKLASSE-KORDI-KONEKTORKLASSE § REXTOR-PARALLELAUSFÜHRUNG * ‹ 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE-KORDI-KONEKTORKLASSE § REXTOR-TRANSPORT * ›
-
-REX-PROZESS-FLÄCHE-NUMMERKLASSE-KORDI-KONEKTORKLASSE § REXTOR-AUFSTEIGENDSORTIEREN * ↑ 
-REX-PROZESS-FLÄCHE-NUMMERKLASSE-KORDI-KONEKTORKLASSE § REXTOR-ABSTEIGENDSORTIEREN * ↓
 
 
 # SENTIATOR 

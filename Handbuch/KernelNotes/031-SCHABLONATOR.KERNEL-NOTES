@@ -91,20 +91,32 @@ DRUCK € ]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-PROTON
 
+INFO = DRUCKT PROTON RAHMEN FÜR MCS 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-
-
-
-
-
-
-# PROTON 
+SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
 
 PROTON-HARD-UNTERKLASSE § POOU-START * { 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
+
 PROTON-HARD-START-NAMEN-RELAISKLASSE § POOR-SEMI * <NAME>;
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
+
 PROTON-HARD-START-NAMEN-SEMI-WERTKLASSE § POOWERT-WERT * <WERT>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
+
 PROTON-HARD-START-NAMEN-SEMI-WERT-ANKERKLASSE § POOAN-ENDE * }
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

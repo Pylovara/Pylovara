@@ -139,6 +139,23 @@ DRUCK € |
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-AKTIONSDRAHT
+
+INFO = DRUCKT AKTIONSDRAHT FÜR MCS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-AKTIONSDRAHT-UNTERKLASSE § SBU-AKTU-START 
+
+DRUCK € »
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-AKTIONSDRAHT-UNTERKLASSE § SBU-AKTAN-ENDE 
+
+DRUCK € « 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
@@ -149,11 +166,6 @@ DRUCK € |
 
 
 
-
-# AKTIONSDRAHT 
-
-AKTIONSDRAHT-IMPULS-UNTERKLASSE § AKTU-START * »
-AKTIONSDRAHT-IMPULS-START-POIK-ANKERKLASSE § AKTAN-ENDE * « 
 
 # BOXIS
 

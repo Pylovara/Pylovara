@@ -97,35 +97,58 @@ INFO = DRUCKT PROTON RAHMEN FÜR MCS
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
+SCHABLONATOR -PROTON-UNTERKLASSE § SBU-POOU-START 
 
-PROTON-HARD-UNTERKLASSE § POOU-START * { 
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
-
-PROTON-HARD-START-NAMEN-RELAISKLASSE § POOR-SEMI * <NAME>;
+DRUCK € {
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
+SCHABLONATOR -PROTON-UNTERKLASSE § SBU-POOR-SEMI 
 
-PROTON-HARD-START-NAMEN-SEMI-WERTKLASSE § POOWERT-WERT * <WERT>
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-SCHABLONATOR -PROTON-UNTERKLASSE $ SBU-
-
-PROTON-HARD-START-NAMEN-SEMI-WERT-ANKERKLASSE § POOAN-ENDE * }
+DRUCK € ;
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# TRENNBEFEHL 
+SCHABLONATOR -PROTON-UNTERKLASSE § SBU-POOAN-ENDE 
 
-TRENNBEFEHL-WAND-START-SYSTEMKLASSE § TRENSYS-BOXK * | 
-TRENNBEFEHL-WAND-START-SYSTEMKLASSE § TRENSYS-POOK * | 
-TRENNBEFEHL-WAND-START-SYSTEMKLASSE § TRENSYS-COMBO * | 
+DRUCK € }
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-HAUPTKLASSE § SBH-TRENNBEFEHL
+
+INFO = DRUCKT TRENNBEFEHL FÜR MCS 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-TRENNBEFEHL-UNTERKLASSE § SBU-TRENSYS-BOXK 
+
+DRUCK € | 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-TRENNBEFEHL-UNTERKLASSE § SBU-TRENSYS-POOK 
+
+DRUCK € | 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-TRENNBEFEHL-UNTERKLASSE § SBU-TRENSYS-COMBO 
+
+DRUCK € | 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
 
 # AKTIONSDRAHT 
 

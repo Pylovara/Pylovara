@@ -334,9 +334,24 @@ DIK                        =
 
 # VATRON 
 
-VATK                       =
+VATK                       = VAT 
+VATH-VALIDA                = VAT0
+VATWERK                    = VAT1
+VATO-PASSIV-RBSK           = VAT2
+VATO-PASSIV-SBSK           = VAT3 
+VATO-PASSIV-ID             = VAT4 
+VATWERK-PRÜFEND            = VAT5
+VATO-PRÜFEND-ABSK          = VAT6 
+VATO-PRÜFEND-VBSK          = VAT7 
+VATO-PRÜFEND-ID            = VAT8
+VATWERK-VERWORFEN          = VAT9
+VATO-VERWORFEN-ABSK        = VAT10 
+VATO-VERWORFEN-ID          = VAT11 
+VATWERK-BESTÄTIGT          = VAT12
+VATO-BESTÄTIGT-ABSK        = VAT13 
+VATO-BESTÄTIGT-ID          = VAT14 
+VATAN-IMPULS               = VAT15
 
-!!! HIER NOCH EINTRAGEN , IMPLEMENTIERT SIND SO SCHON 
 
 
 # RETRON

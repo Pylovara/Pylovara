@@ -391,35 +391,126 @@ DRUCK € ſ
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-ARGUMENT
+
+INFO = DRUCKT ARGUMENT/E FÜR MCS 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGH-OPTION 
+
+DRUCK € ««
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGAUSF-LOOP 
+
+DRUCK € Ω
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGAUSF-EXIT 
+
+DRUCK € E
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGAUSF-BESTÄTIGUNG 
+
+DRUCK € B
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGAUSF-REGELDERREINHEIT 
+
+DRUCK € ſ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGTOR-NANOSEKUNDEN 
+
+DRUCK € N
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGTOR-SEKUNDEN 
+
+DRUCK € S
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGTOR-TAKTSCHLÄGE 
+
+DRUCK € T
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-ARGUMENT-UNTERKLASSE § SBU-ARGBAU-VARIABLEN 
+
+DRUCK € V
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-HAUPTKLASSE § SBH-FEED
+
+INFO = DRUCKT FEED/S FÜR MCS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FFU-NR-START 
+
+DRUCK € (
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FFANS-NR-ENDE 
+
+DRUCK € )—
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FFANS-INHALT-START 
+
+DRUCK € Ø
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FFAN-INHALT-ENDE 
+
+DRUCK € Ø
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FTU-INHALT-START 
+
+DRUCK € Ø
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FTANS-INHALT-ENDE 
+
+DRUCK € Ø
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FTU-NR-START 
+
+DRUCK € —(
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-FEED-UNTERKLASSE § SBU-FTAN-NR-ENDE 
+
+DRUCK € )
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
 
 
 
-# ARGUMENT
 
-ARGUMENT-HAUPTKLASSE § ARGH-OPTION * ««
-ARGUMENT-OPTION-BEFEHL-AUSFÜRHUNGSKLASSE § ARGAUSF-LOOP * Ω 
-ARGUMENT-OPTION-BEFEHL-AUSFÜRHUNGSKLASSE § ARGAUSF-EXIT * E
-ARGUMENT-OPTION-BEFEHL-AUSFÜHRUNGSKLASSE § ARGAUSF-BESTÄTIGUNG * B 
-ARGUMENT-OPTION-BEFEHL-AUSFÜHRUNGSKLASSE § ARGAUSF-REGELDERREINHEIT * ſ 
-ARGUMENT-TIMER-KONEKTORKLASSE § ARGTOR-NANOSEKUNDEN * N 
-ARGUMENT-TIMER-KONEKTORKLASSE § ARGTOR-SEKUNDEN * S 
-ARGUMENT-TIMER-KONEKTORKLASSE § ARGTOR-TAKTSCHLÄGE * T
-ARGUMENT-OPTION-BAUMODUS-BAUKLASSE § ARGBAU-VARIABLEN * V
-
-# FEED 
-
-FEED-FÜHREND-UNTERKLASSE § FFU-NR-START * ( 
-FEED-FÜHREND-UNTERKLASSE-SYSTEMKLASSE-ANSCHLUSSKLASSE § FFANS-NR-ENDE * )—
-FEED-FÜHREND-UNTERKLASSE-SYSTEMKLASSE-ANSCHLUSSKLASSE § FFANS-INHALT-START * Ø
-FEED-FÜHREND-UNTERKLASSE-SYSTEMKLASSE-ANSCHLUSSKLASSE-SYSTEMKLASSE-ANKERKLASSE § FFAN-INHALT-ENDE + Ø
-
-FEED-TRAGEND-UNTERKLASSE § FTU-INHALT-START * Ø 
-FEED-TRAGEND-UNTERKLASSE-SYSTEMKLASSE-ANSCHLUSSKLASSE § FTANS-INHALT-ENDE * Ø 
-FEED-TRAGEND-UNTERKLASSE-SYSTEMKLASSE-ANSCHLUSSKLASSE-UNTERKLASSE § FTU-NR-START * —( 
-FEED-TRAGEND-UNTERKLASSE-SYSTEMKLASSE-ANSCHLUSSKLASSE-UNTERKLASSE-NUMMERKLASSE-ANKERKLASSE § FTAN-NR-ENDE * )
 
 # NAVIGATOR 
 

@@ -3084,7 +3084,46 @@ und per Rex Kordi Als Rechnung erzwungen .... ( Noch vor den eigenen BION = Bibl
 
 
 
+¢! ### Älteres modell .... dient aber gut für den überblick 
+# Beispiel Schaltung (meine inspirationsschablone von normalem programme *.*-lcore)
 
+»['exec <SPIEL>']
+ ↓  »[~run intelarc~]«
+ ↓   -· »[~prozess gpu-core~]
+ ↓   ↓   ¶ -· [~run ast intelarc.gpu-core~]«««T1
+ ↓   ↓        ¶ -· [~run intelarc.gpu-lcore~]«««T2
+ ↓   ↓             ¶ -· [~run intelarc.gpu-vcore~]«««T3
+ ↓   ↓                  ¶ -· [~run intelarc.gpu-mcore~]«««T4
+ ↓   ↓                       ¶ -· [~run intelarc.gpu-fcore~]«««T5
+ ↓   ¶¶ -· »[~debugging log to /Pylovara/~{~WATT~|°200.00°}]«
+ ↓   ↓
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
+ ↓   ↓         ¶ -·· »['run /SPI/Runtime Service']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
+ ↓   ↓         ¶ -·· »['']
+ ↓   Ŧ² -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
+ ↓             ¶ -·· »['']
+ ↓
+ © »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
+    ¶ -· »[~syncronisiere 8taktryhtmus~]«
+
+!¢
 
 
 

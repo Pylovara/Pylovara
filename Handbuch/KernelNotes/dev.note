@@ -2797,13 +2797,6 @@ VERMERK WICHTIG :
  autovervollständigungen braucht keinen ki unterbau 
 
 
-
-
-
-
-
-
-
 ######## ROLLER ########## ROLLER ######## ROLLER ########## ROLLER ######## ROLLER ########## ROLLER ######## ROLLER ########## ROLLER ######## ROLLER ########## ROLLER ######## ROLLER ########## ROLLER ######## ROLLER ########## ROLLER 
 ## Vor der Arbeit am System , notwendige reperatur - vorschieben !!!!!!!!!
 
@@ -3045,193 +3038,59 @@ den echten erst kontakt warten .....
  und schreib ihm eine tastatur belegung für die symbole ... damit er weis wo was ist ... 
  auf utf -8 basis 
 
+##############################################################################################################
 
 
 
+ SCHABLONATOR NOTWENDIGKEIT HERGESTELLT ...
+ ALLES ANDERE HAT DA SOWIESO NICHTS ZU SUCHEN DA ES 
+ NICHTS MIT SYNTAX ZU TUN HAT ...
 
-############################ vorbereitung auf das verständnis daten blatt #######################################
+ IM DIREKTEN VERGLEICH SOGAR BESSER ALS DER LETZTE ....
 
 
-» « = GRAlt + y oder + x 
+ GUT .... VORBEREITUNG GETROFFEN ..... DIE EINFACHE SACHE IST DAMIT 
+ FINISH ...... SPÄTER WENN DIE ALLE PENNEN KOMMT DER ANFANG 
+ VOM ABSOLULATOR (ICH HOFF ICH BEKOMMS HIN , BIN HEUTE NICHT SO FITT)
 
-¥ = GrAlt + Shift + z 
+ ANSONNSTEN STEHT DAVOR EIGENTLICH NUR NOCH EIN MASTER AKTUALISIERUNG 
+ AUS ..... 
 
-Ħ = GrAlt + h 
+ ICH DRÜCK MICH SCHON DIE GANZE ZEIT DAVOR .... 
 
-¶ = GrAlt + r 
+ ICH MUSS WARSCHEINS DAS GESAMTE MASTER NEU AUFSETZEN ... 
+ HAB VERGESSEN WAS ICH ALLES VERBESSERT HABE .... 
+ AM BESTEN IST ES STUMPF WIE BROT EINFACH ALLES ZU AKTUALISIEREN 
+ DANN BIN ICH AUF DER SICHEREN SEITE ... 
 
-ſ = Gralt + s 
+ ICH HAB 2 KOMPONENTEN KOMPLETT ERNEURT , INKLUSIVE DEN NITROX 
+ EINGEFÜHRT , DADURCH DEN DIREKTEN BOXIS INPUT FEED WAHNSINN BEENDET 
+ UND ES ORDENTLICH EINGEBAUT .... ZUSÄTZLICH GLAUB ICH DAS ICH NOCH 
+ 2 ANDERE SACHEN VERBESSERT HABE ... DAHER MASTER VOLLSTÄNDIGES 
+ NEU AUFSETZEN ... 
 
-Ω = Gralt + shift + q 
+ VOR ODER DANACH ? ........
 
-° = shift + ^ 
+ BOAR ICH BIN HEUTE ECHT ZU FAUL FÜR .... 
 
-~ = GrAlt + +
+ KOMM ...... ICH KENN MICH ...... KAUM SITZT ICH AM ABK 
+ SEHE ICH WAS ..... WILLST VERBESSERN ... 
+ GEHE ZURÜCK .... MACH ES ... MUSS DANN 3 SACHEN AKTUALISIEREN  
+ UND DANN SITZT ICH WIEDER DA MIT DEM MASTER .... 
 
-Ø = GrAlt + Shift + O 
+ GRMPF ....... NE KOMM ..... HAT ZEIT XD
 
-× = GrAlt + Shift + , 
+ ERST DEN ABK ... DAS IST DER ENDGEGNER .... DANN DER MOK ...
+ UND DAAAAAAANN DAS MASTER ..... 
 
-¬ = GrAlt + 6 
+ DANACH SNAPSHOT VERSION 00-80 
 
-· = GrAlt + , 
+ UND DANN ERST ROLLER .... WICHTIG .... VERDAMMT WICHTIG ...
 
-- = - (BSK Ketten Verbundingen )
+ UND DANN ERST DIE 00-81 MIT BESSEREN EINDEUTIGEREN 
+ KLASSEN ....
 
-Ŧ = GrAlt + t (Retron Ŧ°¹²³ <-- Prozess Regulator)
+ 
 
-Ð = GrAlt + Shift + d ( Langzeitspeicher bindung )
-
-
-## Wichtiges 
-
-Ø Irgendwas Ø—() |()—Ø Irgendwas Ø=
-# — = GrAlt + Shift + - (Feed Strich bindung)
-
-# Protein Logik 
-
- »[]« = Ausfürhbare proteine für aktive prozess 
-  [] = unausfürhabre proteine für Transport oder anzeige möglichkeit 
-
-  ± = Nitrox Header Protein für exaktes ebenbild des raus kommenden protein inhalts 
-  ÷ = Nitro Fooder Protein für Zuspeißung in ein Protein Prozess - extra daten 
-
- {Netzteil; 200 Watt} = Proton Container die Nur für die Hardware versorgung dienen , strom , ampher , Puls , usw 
- !! Proton immer in eine Protein , niemals alleine 
-
- ¬ # Prozess manager mit nummerischer auswahl .... werden direkt am poiwerk angeschlossen , nach möglichen food protein 
-
-
-## grundregel 
-
- Alles wird in einem Transaktionsrahmen geschrieben das berahmt ist wie ein Bash script header nur auch unter
-
- ¢!
-
- inhalt
-
- !¢
-
- diese transaktionsrahmen (kurz TRAN + Klasse ) dienen dann für die jeweiligen aufgaben .
-
- schreib man einen TRANK (Transaktionsrahmen kernklasse ) für hardware versorgung , nutzt man diese 
- später in sogenannten needles ( nadeln ) 
-
- beispiel : 
-
- # Datentype = *.*-needle 
-
- ¢!
-
- »[{NETZTEIL; 200 WATT}]«
-  ¬· »[{CPU; 20 WATT}]«
-  ¬· »[{RAM; 10 WATT}]«
-
-!¢
-
-HARDWARE VERSOGUNG WIRD DANN PER ZIELREFERENZ AN DIE JEWEILIGEN OBRIGEN DATEITYPEN ZUDAGEHÖRIGKEITEN GEBUNDEN 
-
- *.*-core daten dienen als exe ... startet ..... starte programm mit diesen dateitypen ..
-
- im Core sind die verknüpfungen angelegt in einem Trank 
-
- beispiel 
-
- ¢!
-
- »[" Programm Name Selbst "]«
-  § »[~BINDUNG-*.*-MANAGER]«
-  § »[~BINDUNG-*.*-NODE]«
-  § »[~BINDUNG-*.*-NANO]«
-  § »[~BINDUNG-*.*-MICRO]«
-  § »[~BINDUNG-*.*-NEEDLE]«
-
-!¢
-
-Alle diese Transaktionsrahmen werden für die jeweilige nutzung geschrieben , z.b 
-
- - Ansteuerung der Userland Programme 
- - Ansteuerung der OS Spezifischen Compiler/COMPOSITOREN 
- - ansteuerung der Jeweiligen Isa Spezifikationen der datentypen 
- - ansteuerung der hardware energie versorgung , für den aufwand 
-
- die MCS Syntax ist darauf ausgelegt , alles schreiben zu können was benötigt wird 
- in einem festen rahmen für Bessere und fehlerfreieren hardware probleme 
-
- wie z.b in C 
-
- Variablen .... AdHoC problematikm ... im Trank spezialisiert im Sentiator rahmen über Argument bindung 
-
-
- Vorher C = 
-
- A + B = Affe 
-
- (ohne rahmen , ohne sicherung ... ohne irgendwas )
-
- in MCS 
-
- »[× A + B ×]«««V1 # erste Variable in Alu Boxis 
-  ¬· »[× AFFE ×]«««V2 # was es sein soll im Alu Boxis Rahmen Variable 2
-
-Alu Rechnungen gehen über den REX KORDI ALU .... Das ist was anderes als direkte Variablen per ALU zu definieren 
-
-Die Alu Rechnungen gehen nativ ... Plus Minus Mal geteilt .... Native Rechnungen werden dann in die Alu Gesehndet 
-und per Rex Kordi Als Rechnung erzwungen .... ( Noch vor den eigenen BION = Bibliotheken möglich )
-
-
-
-¢! ### Älteres modell .... dient aber gut für den überblick 
-# Beispiel Schaltung (meine inspirationsschablone von normalem programme *.*-lcore)
-
-»['exec <SPIEL>']
- ↓  »[~run intelarc~]«
- ↓   -· »[~prozess gpu-core~]
- ↓   ↓   ¶ -· [~run ast intelarc.gpu-core~]«««T1
- ↓   ↓        ¶ -· [~run intelarc.gpu-lcore~]«««T2
- ↓   ↓             ¶ -· [~run intelarc.gpu-vcore~]«««T3
- ↓   ↓                  ¶ -· [~run intelarc.gpu-mcore~]«««T4
- ↓   ↓                       ¶ -· [~run intelarc.gpu-fcore~]«««T5
- ↓   ¶¶ -· »[~debugging log to /Pylovara/~{~WATT~|°200.00°}]«
- ↓   ↓
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/uefi.boot-kernel']«
- ↓   ↓         ¶ -·· »['run /SPI/Runtime Service']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/asm.compiler-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/direcx12.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/vs-studio.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/realtak.treiber-needle']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/usb.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/monitor.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/maus.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² –··¤› »['exec /Pylovara/System/Module/tastatur.system-kernel']«
- ↓   ↓         ¶ -·· »['']
- ↓   Ŧ² -··¤› »['exec /Pylovara/System/Module/firefox.system-kernel]«
- ↓             ¶ -·· »['']
- ↓
- © »['exec /Pylovara/System/Module/8taktryhtmus.system-kernel']«
-    ¶ -· »[~syncronisiere 8taktryhtmus~]«
-
-!¢
-
-
-
-BSK = Grundlage der Morphic Stufen , Dient als Unterbau Referenz für Die Standart System Schaltung
-ABSK = Absolute werden im ABK von mir verbaut , für das verständniss gegenüber der grundschaltungslogiken #(Gerade neu im aufbau nach ValidierungsProtocol )
-
-
-
-hmmm ..... wie verklicker in jemmand das system , wenn er mit machen will ? *grübel* 
-Im Grunde ist das ganze lexikon die erklärung ..... plus einzelschaltungen der komponenten 
-
-ich sollte nach der 00-80 definitiv mit den Neuen Lernmaterial anfangen ..... das wird höchste zeit 
 
 

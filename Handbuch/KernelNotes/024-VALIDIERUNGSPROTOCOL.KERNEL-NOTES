@@ -44,23 +44,31 @@ SCHRIFTLICHE BLOCK DEKLARATION = VAL-KENNUNG
 
  VAL-KENNUNG =
 
-# ERST KURZ LISTE 
-(STICHPUNKT KURZ : WIE IMMER IRONISCHER LACHER )
-( WENN ICH KURZ BSAGE SOLLTE ICH SELBST VOR MIR WEGRENNEN *LACH*)
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 # DATENTYPEN 
+
 DAK             = DA
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 # TRANSAKTIONSRAHMEN
+
 TRANK           = TA
+
 TRANH-RUN       = TA0
 TRANU-START     = TA1
 TRANSYS-MASK    = TA2
 TRANAN-ENDE     = TA3
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 
 # PROTEIN
+
 POIK            = PI
+
 POIH-SOFT       = PI0
 POIU-START      = PI1
 POISYS-BOXK     = PI2
@@ -72,9 +80,12 @@ POIWERK-RETK    = PI7
 POIWERK-NITK    = P18
 POIAN-ENDE      = PI9
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # PROTON 
+
 POOK            = PO
+
 POOH-HARD       = PO0 
 POOU-START      = P01 
 POON-NAME       = PO2
@@ -82,9 +93,12 @@ POOR-SEMI       = PO3
 POOWERT-WERT    = PO4
 POOAN-ENDE      = PO5
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # TRENNBEFEHL
+
 TRENK           = TE
+
 TRENH-WAND      = TE0
 TRENU-START     = TE1
 TRENSYS-BOXK    = TE2
@@ -92,17 +106,23 @@ TRENSYS-POOK    = TE3
 TRENSYS-COMBO   = TE4
 TRENAN-ENDE     = TE5 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # AKTIONSDRAHT
+
 AKTK            = AK
+
 AKTH-IMPULS     = AK0
 AKTU-START      = AK1
 AKTSYS-POIK     = AK2
 AKTAN-ENDE      = AK3
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # BOXIS
+
 BOXK                          = B
+
 BOXH-ABI                      = BI0
 BOXU-ABI-START                = BI1
 BOXSYS-ABI-EINGABE            = BI2
@@ -143,13 +163,18 @@ BOXU-MASCHINENCODE-START      = BM1
 BOXSYS-MASCHINENCODE-EINGABE  = BM2
 BOXAN-MASCHINENCODE-ENDE      = BM3
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # MASTER
+
 MASK                          = MA
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # REX
+
 REXK                          = RX
+
 REXH-PROZESS                  = RX0
 REXU-FLÄCHE                   = RX1
 REXNR-1                       = RX2
@@ -172,8 +197,10 @@ REXTOR-AUFSTEIGENDSORTIEREN   = RX18
 REXTOR-ABSTEIGENDSORTIEREN    = RX19
 REXAN-ENDE                    = RX20
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # SENTIATOR
+
 SENK                          = SE
 SENH-FLEX                     = SE0
 SENTOR-WENNKANN               = SE1
@@ -181,7 +208,9 @@ SENTOR-WENNNICHT              = SE2
 SENTOR-REGELDERREINHEIT       = SE3
 SENAN-ENDE                    = SE4
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+# ARGUMENTE 
 
 ARGK                          = A
 
@@ -208,8 +237,10 @@ ARGBAU-VARIABLEN              = AV1
 ARGNR-NR-EINGABE              = AV2
 ARGAN-BAUMODUS-ENDE           = AV3
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # FEED 
+
 FEK                         = F
 
 FFH-FÜHREND                 = FF0
@@ -228,8 +259,10 @@ FTU-NR-START                = FT4
 FTSYS-NR-EINGABE            = FT5
 FTAN-NR-ENDE                = FT6
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # WARP = UNFERTIG WEIL ANKER FEHLEN 
+
 WARK                       = WA
 
 WARH-GAMES                 = WAG0
@@ -245,6 +278,7 @@ WARAPI-COM                 = WAG9
 
 WARH-COMPILER              = WAC0
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # NAVIGATOR ( SPÄTER DOPPELTE SEGMENTE ENTFERNEN IN DEN BLÖCKEN )
 
@@ -304,10 +338,12 @@ NAVU-KANAL7                = NAD7
 NAVU-KANAL8                = NAD8
 NAVU-DATENSTROM-ENDE       = NAD9
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # IDENTIFIKATION
 
 IDK                        = ID
+
 IDH-ID                     = ID0
 IDU-DNA-TRANSAKTIONSRAHMEN = ID1 
 IDU-DNA-DIENST             = ID2 
@@ -317,25 +353,24 @@ IDU-DNA-BILDUNGSBEREICH    = ID5
 IDU-DNA-BIOLIVE            = ID6 
 IDU-DNA-ENDE               = IDLINK
 
-
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # MCS CMD (Kann ich erst bei der arbeit am modulator machen - wäre zuviel jetzt)
 
 MCCK                       = 
 
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # DATEITYPEN (Sind noch nicht entgültig designed, daher warten .....)
 
 DIK                        = 
 
-
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # VATRON 
 
 VATK                       = VAT 
+
 VATH-VALIDA                = VAT0
 VATWERK                    = VAT1
 VATO-PASSIV-RBSK           = VAT2
@@ -353,22 +388,25 @@ VATO-BESTÄTIGT-ABSK        = VAT13
 VATO-BESTÄTIGT-ID          = VAT14 
 VATAN-IMPULS               = VAT15
 
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # RETRON
 
 RETK                       = RET 
+
 RETH-REGULAR               = RET0
 RETU-STUFE-NULL            = RET1
 RETU-STUFE-EINS            = RET2
 RETU-STUFE-ZWEI            = RET3
 RETU-STUFE-DREI            = RET4
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # KKIS ( NUR SYSTEM VERBINDUNGS ZUGRIFFE )
 
 KKIK                       = KKI
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 # HIER WEITER MACHEN SOBALD RUHE DA IST .... 
@@ -384,9 +422,10 @@ KKIK                       = KKI
 
 GASK                       =
 
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 # NITROX ( FERTIG VALIDIERT MIT FEED , NEUE SYNTAX REGEL IM 805 MANIFESTIERT )
+
 NITK                       = N
 
 NITH-INJEKTOR              = NI0
@@ -398,32 +437,6 @@ NITH-EXTRAKTOR             = NE0
 NITU-EXTRAKTOR-START       = NE1
 NITSYS-EXTRAKTOR-INHALT    = NE2
 NITAN-EXTRAKTOR-ENDE       = NE3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### ==== ##### == # === ### KOMPONENTEN BSK ### === # == ##### === ###
  # MASTERWORT = VAL-KENNUNG

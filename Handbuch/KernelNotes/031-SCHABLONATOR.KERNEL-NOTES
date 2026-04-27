@@ -55,29 +55,28 @@ DRUCK € $
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-TRANSAKTIONSRAHMEN
+
+INFO = TRANSAKTIONSRAHMEN DRUCK FÜR MCS 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-TRANSAKTIONSRAHMEN-UNTERKLASSE § SBU-TRANU-START
+
+DRUCK € ¢!
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-TRANSAKTIONSRAHMEN-UNTERKLASSE § SBU-TRANAN-ENDE 
+
+DRUCK € !¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# TRANSAKTIONSRAHMEN 
-
-TRANSAKTIONSRAHMEN-RUN-UNTERKLASSE § TRANU-START * ¢!
-TRANSAKTIONSRAHMEN-RUN-START-MASK-ANKERKLASSE § TRANAN-ENDE * !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

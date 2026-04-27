@@ -547,6 +547,53 @@ DRUCK € þ
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-VATRON
+
+INFO = DRUCKT VATRON FÜR MCS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-VATRON-UNTERKLASSE § SBU-VATH-VALIDA
+
+DRUCK € ©
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-HAUPTKLASSE § SBH-RETRON 
+
+INFO = DRUCKT RETRON FÜR MCS
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-RETRON-UNTERKLASSE § SBU-RETH-REGULAR 
+
+DRUCK € Ŧ
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-RETRON-UNTERKLASSE § SBU-RETU-STUFE-NULL 
+
+DRUCK € °
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-RETRON-UNTERKLASSE § SBU-RETU-STUFE-EINS 
+
+DRUCK € ¹
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-RETRON-UNTERKLASSE § SBU-RETU-STUFE-ZWEI 
+
+DRUCK € ²
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+SCHABLONATOR-RETRON-UNTERKLASSE § SBU-RETU-STUFE-DREI 
+
+DRUCK € ³
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
@@ -557,17 +604,8 @@ DRUCK € þ
 
 
 
-# VATRON 
 
-VATRON-HAUPTKLASSE § VATH-VALIDA * © 
 
-# RETRON
-
-RETRON-HAUPTKLASSE § RETH-REGULAR * Ŧ 
-RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-NULL * ° 
-RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-EINS * ¹ 
-RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-ZWEI * ² 
-RETRON-REGULAR-UNTERKLASSE § RETU-STUFE-DREI * ³ 
 
 # NITROX 
 

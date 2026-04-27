@@ -79,28 +79,82 @@ KURZSCHLUSS: <MASH-MASELT> + <MASU-MASELT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### MODUL 01 TRANSAKTIONSRAHMEN 
-### 
-### 
+### STELLT DIE RAHMENBEDINGUNG FÜR MCS LANG HER
+### RUNTIME BEDINGUNG
 ### RELEVANZ = TRANK 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## 
 #
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-GA8TATA0
 
 MODULATOR ® MODUL 01
- ABSK = TRANK-TRANH-RUN-TRANU-START-xxx-TRANU-ENDE
+ ABSK = TRANK-TRANH-RUN
 
 VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © TA          - <TRANK>
+ © TA0         - <TRANH-RUN> 
 
+KURZSCHLUSS: <TRANH-RUN>
 
+  START: ¢! <TRANSYS-MASK> !¢
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## 
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-GATATA0TA1
 
+MODULATOR ® MODUL 01-01
+ ABSK = TRANK-TRANH-RUN-TRANU-START
 
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © TA          - <TRANK>
+ © TA0         - <TRANH-RUN> 
+ © TA1         - <TRANU-START>
 
+KURZSCHLUSS: <TRANU-START> 
 
-KURZSCHLUSS: 
+  START: ¢! 
 
-  START: 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## 
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-GA8TATA0TA1TA2
+
+MODULATOR ® MODUL 01-02
+ ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK
+
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © TA          - <TRANK>
+ © TA0         - <TRANH-RUN> 
+ © TA1         - <TRANU-START>
+ © TA2         - <TRANSYS-MASK>
+
+KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK>
+
+  START: ¢! <TRANSYS-MASK>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## 
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-GA8TATA0TA1TA2TA3
+
+MODULATOR ® MODUL 01-03
+ ABSK = TRANK-TRANH-RUN-TRANU-START-TRANSYS-MASK-TRANU-ENDE
+
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © TA          - <TRANK>
+ © TA0         - <TRANH-RUN> 
+ © TA1         - <TRANU-START>
+ © TA2         - <TRANSYS-MASK>
+ © TA3         - <TRANU-ENDE>
+
+KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK> + <TRANU-ENDE>
+
+  START: ¢! <TRANSYS-MASK> !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

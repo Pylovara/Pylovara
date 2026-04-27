@@ -1,23 +1,23 @@
-﻿@kernel-nr: lex Ð SYSTEM LEXIKON ### ## ### ##   ##    # ### ## # ###
+﻿@kernel-nr: lex Ð SYSTEM LEXIKON #          #      #      #         #
 ##  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ##
  #     · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
 ### ==== ##### == # === ### = KOMPONENTEN = ### === # == ##### === ###
  #   NR HINWEIS INFO             | NR HINWEIS  INFO                 #
  #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   01  - Ŋ  DATENTYPEN         | 02  + O  TRANSAKTIONSRAHMEN      #
- #   03  + O  PROTEIN            | 04  + O  PROTON                  #
- #   05  + O  TRENNBEFEHL        | 06  + O  AKTIONSDRAHT            #
- #   07  + O  BOXIS              | 08  - Ŋ  MASTER                  #
- #   09  + O  REX                | 10  + O  SENTIATOR               #
- #   11  + O  ARGUMENT           | 12  + O  FEED                    #
- #   13  - Ŋ  WARP               | 14  + O  NAVIGATOR               #
- #   15  + O  IDENTIFIKATION     | 16  + Ŋ  MCSCMD                  #
- #   17  - X  DATEITYPEN         | 18  + O  VATRON                  #
- #   19  + O  RETRON             | 20  - X  MATRIX                  #
- #   21  - X  HERZSCHLAG         | 22  + O  KKIS                    #
- #   23  + 0  GENERALSCHALTUNG   | 24  - Ŋ  VALIDIERUNGSPROTOCOL    #
- #   25  + O  NITROX             | 26  · ·                          #
+ #   01  - Ŋ  DATENTYPEN         | 02  - ·  TRANSAKTIONSRAHMEN      #
+ #   03  - ·  PROTEIN            | 04  - ·  PROTON                  #
+ #   05  - ·  TRENNBEFEHL        | 06  - ·  AKTIONSDRAHT            #
+ #   07  - ·  BOXIS              | 08  - Ŋ  MASTER                  #
+ #   09  - ·  REX                | 10  - ·  SENTIATOR               #
+ #   11  - ·  ARGUMENT           | 12  - ·  FEED                    #
+ #   13  - Ŋ  WARP               | 14  - ·  NAVIGATOR               #
+ #   15  - ·  IDENTIFIKATION     | 16  - ·  MCSCMD                  #
+ #   17  - X  DATEITYPEN         | 18  - ·  VATRON                  #
+ #   19  - ·  RETRON             | 20  - X  MATRIX                  #
+ #   21  - X  HERZSCHLAG         | 22  - ·  KKIS                    #
+ #   23  - ·  GENERALSCHALTUNG   | 24  - ·  VALIDIERUNGSPROTOCOL    #
+ #   25  - ·  NITROX             | 26  · ·                          #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG          #
  #:::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::::#
@@ -35,11 +35,11 @@
  #   805   MCS      MASCHINEN-CODE-SPEECH SYNTAX LAW                #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
  #   993   L1_COREKERNELMANDAT               ###   # # #    #   # # #
- #   994   L2_AUTHORRIGHTS                   #   #     #  #    # #  #
+ #   994   L2_AUTHORRIGHTS                   #                      #
  #   995   L3_COMMERCIALLICENSING            ##  Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      ##   ##  #    #   #   ##
  #   997   L5_POST_MORTEM-CONTROL            #  #      #  #      #  #
- #   998   L6_IMMUTABLE_CORES_DEFINITION     ##   #   #   #   #   # #
+ #   998   L6_IMMUTABLE_CORES_DEFINITION     #                      #
  #   999   LICENSE—MANIFEST.PROTO            # #  #    # #  #  #   ##
 ### ==== ##### == # === ### VERSIONSDATEN = ### === # == ##### === ###
  # SYSTEM = PNS 2.6.2 PYLOVARA—NETZWERK—SYSTEM                      #

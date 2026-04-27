@@ -164,22 +164,19 @@ KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK> + <TRANU-ENDE>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## 
 #
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-G8PIPI0
 
 MODULATOR ® MODUL 02
- ABSK = POIK-POIH-HARD
+ ABSK = POIK-POIH-SOFT
 
 VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © PI          - <POIK>
+ © PI0         - <POIH-SOFT>
 
+KURZSCHLUSS: <POI-SOFT>
 
-
-
-
-
-
-KURZSCHLUSS: 
-
-  START: 
+  START: [<MASK>]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

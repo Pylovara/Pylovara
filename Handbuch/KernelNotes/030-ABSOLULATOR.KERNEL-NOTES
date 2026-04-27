@@ -51,15 +51,15 @@ ABSOLULATOR-KERNKLASSE § ABK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## GIBT MASU-MASELT DIE MASK VERBINDUNG 
 #
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-210
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-
 
 MODULATOR ® MODUL 00-01 
  ABSK = MASU-MASELT-MASH-REGISTER-MASK
 
 VATRON BEDINGUNG:
- ©    2 - <MASU-MASELT>
- ©    1 - <MASH-MASELT>
- ©    0 - <MASK>
+ ©      - <MASU-MASELT>
+ ©      - <MASH-MASELT>
+ ©      - <MASK>
 
 KURZSCHLUSS: <MASK> + <MASH-MASELT>
 
@@ -68,21 +68,80 @@ KURZSCHLUSS: <MASK> + <MASH-MASELT>
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## GIBT MASK DIE MASU-MASELT VERBINDUNG
 #
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-012 
+ABSOLULATOR-ALPHAKLASSE § ABALPHA- 
 
 MODULATOR ® MODUL 00-02 
  ABSK = MASK-MASH-REGISTER-MASU-MASELT
 
 VATRON BEDINGUNG:
- ©    0 - <MASK>
- ©    1 - <MASH-MASELT>
- ©    2 - <MASU-MASELT>
+ ©      - <MASK>
+ ©      - <MASH-MASELT>
+ ©      - <MASU-MASELT>
 
 KURZSCHLUSS: <MASH-MASELT> + <MASU-MASELT>
 
   START: <MASU-MASELT>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### MODUL 01 TRANSAKTIONSRAHMEN
 ### RAHMENBEDINGUNG FÜR TRANSAKTIONSRAHMEN
 ### LEGT DIE BEDINGUNG FEST IN DATEITYPEN FÜR MCS ZUGELASSENEN CODE

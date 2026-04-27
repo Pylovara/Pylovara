@@ -73,19 +73,32 @@ DRUCK € !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-HAUPTKLASSE § SBH-PROTEIN
 
+INFO = DRUCKT PROTEIN RAHMEN FÜR MCS 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+SCHABLONATOR-PROTEIN-UNTERKLASSE § SBU-POIU-START 
 
+DRUCK € [ 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# PROTEIN 
+SCHABLONATOR-PROTEIN-UNTERKLASSE § SBU-POIAN-ENDE 
 
-PROTEIN-SOFT-UNTERKLASSE § POIU-START * [ 
-PROTEIN-SOFT-START-BOXK-ANKERKLASSE § POIAN-ENDE * ]
+DRUCK € ]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+
+
+
+
 
 # PROTON 
 

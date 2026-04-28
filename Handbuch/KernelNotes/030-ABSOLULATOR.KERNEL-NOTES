@@ -197,12 +197,12 @@ KURZSCHLUSS: <POIU-START>
   START: [
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## EINZEL PROTEIN COMBO AUSWAHL 
+## EINZEL PROTEIN BOXK AUSWAHL 
 #
 ABSOLULATOR-ALPHAKLASSE § ABALPHA-
 
 MODULATOR ® MODUL 02-01-01
- ABSK = POIK-POIH-SOFT-POIU-START
+ ABSK = POIK-POIH-SOFT-POIU-START-POICOM-BOXK
 
 VATRON BEDINGUNG:
  © GA8         - <MASU-MASELT>
@@ -214,6 +214,25 @@ VATRON BEDINGUNG:
 KURZSCHLUSS: <POIU-START> + <POICOM-BOXK>
 
   START: [<BOXK>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## EINZEL PROTEIN POOK AUSWAHL 
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-
+
+MODULATOR ® MODUL 02-01-02
+ ABSK = POIK-POIH-SOFT-POIU-START-POICOM-BOXK
+
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © PI          - <POIK>
+ © PI0         - <POIH-SOFT>
+ © PI1         - <POIU-START>
+ © PI3         - <POICOM-POOK>
+
+KURZSCHLUSS: <POIU-START> + <POICOM-POOK>
+
+  START: [<POOK>
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

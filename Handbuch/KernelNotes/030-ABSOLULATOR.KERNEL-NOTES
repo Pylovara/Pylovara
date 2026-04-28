@@ -502,7 +502,7 @@ KURZSCHLUSS:
 #
 ABSOLULATOR-ALPHAKLASSE § ABALPHA-
 
-MODULATOR ® MODUL 
+MODULATOR ® MODUL 05
  ABSK = AKTK-AKTH-IMPULS
 
 VATRON BEDINGUNG:
@@ -512,6 +512,31 @@ VATRON BEDINGUNG:
 KURZSCHLUSS: <AKTH-IMPULS>
 
    KOPF:
+  START: »<POIK>«
+   FOOD: 
+   PIPE:
+   PIPE:
+   PIPE:
+   PIPE:
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+##  AKTIONSDRAHT START
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-
+
+MODULATOR ® MODUL 05-01
+ ABSK = AKTK-AKTH-IMPULS-AKTU-START
+
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © AK0         - <AKTH-IMPULS>
+ © AKT1        - <AKTU-START>
+
+
+
+KURZSCHLUSS: <AKTU-START>
+
+   KOPF:
   START: »
    FOOD: 
    PIPE:
@@ -519,7 +544,57 @@ KURZSCHLUSS: <AKTH-IMPULS>
    PIPE:
    PIPE:
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+##  AKTIONSDRAHT PROTEIN 
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-
 
+MODULATOR ® MODUL 05-01-01
+ ABSK = AKTK-AKTH-IMPULS-AKTU-START-AKTCOM-POIK
+
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © AK0         - <AKTH-IMPULS>
+ © AKT1        - <AKTU-START>
+ © AKT2        - <AKTCOM-POIK>
+
+
+
+KURZSCHLUSS: <AKTU-START> + <AKTCOM-POIK>
+
+   KOPF:
+  START: »<POIK>
+   FOOD: 
+   PIPE:
+   PIPE:
+   PIPE:
+   PIPE:
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+##  AKTIONSDRAHT ENDE
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-
+
+MODULATOR ® MODUL 05-01-02
+ ABSK = AKTK-AKTH-IMPULS-AKTU-START-AKTCOM-POIK-AKTAN-ENDE
+
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © AK0         - <AKTH-IMPULS>
+ © AKT1        - <AKTU-START>
+ © AKT2        - <AKTCOM-POIK>
+ © AKT3        - <AKTAN-ENDE>
+
+
+KURZSCHLUSS: <AKTU-START> + <AKTCOM-POIK> + <AKTAN-ENDE>
+
+   KOPF:
+  START: »<POIK>«
+   FOOD: 
+   PIPE:
+   PIPE:
+   PIPE:
+   PIPE:
 
 
 

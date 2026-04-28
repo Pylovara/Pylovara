@@ -129,46 +129,6 @@ SYMBOLISCHE DEKLARATION * <MASK>]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 PROTEIN-SOFT-PIPEKLASSE § POIPIPE-PIPE-START
 
  SCHALTUNGSBEZEICHNUNG = PIPE-START
@@ -185,25 +145,54 @@ SYMBOLISCHE DEKLARATION * [<MASK>
 
  IN WORTEN = ECKIGE KLAMMER AUF
 
-
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 PROTEIN-SOFT-PIPEKLASSE-PIPEKLASSE § POIPIPE-REXK
 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
 PROTEIN-SOFT-PIPEKLASSE-PIPEKLASSE § POIPIPE-SENK
+
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 
 PROTEIN-SOFT-PIPEKLASSE-PIPEKLASSE § POIPIPE-NITK
 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
 PROTEIN-SOFT-PIPEKLASSE-PIPEKLASSE § POIPIPE-NAVK
+
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 
 PROTEIN-SOFT-PIPEKLASSE-COMBOKLASSE § POICOM-BOXK
 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
 PROTEIN-SOFT-PIPEKLASSE-COMBOKLASSE § POICOM-POOK
 
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
 PROTEIN-SOFT-PIPEKLASSE-COMBOKLASSE § POICOM-FEED
+
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 
 PROTEIN-SOFT-PIPEKLASSE-COMBOKLASSE-ANKERKLASSE § POIAN-PIPE-ENDE
 
 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
 
@@ -233,17 +222,17 @@ PROTEIN-SOFT-PIPEKLASSE-COMBOKLASSE-ANKERKLASSE § POIAN-PIPE-ENDE
 
 
 ### ==== ##### == # = REGEL: SPALTEN-SYNCHRONITÄT = # == ##### === ###
- # [POIU-START] BILDET DIE VERTIKALE NULL-LINIE. 
+ # [POIPIPE-PIPE-START] BILDET DIE VERTIKALE NULL-LINIE. 
  # ALLE FOLGE-KOMPONENTEN MÜSSEN ZENTRAL IM ABSATZ DARUNTER EINRASTEN.
  # EINRASTPUNKTE (POIWERK):
- # - POIWERK-REXK  = Workspace-Verteilung (REX-Logik)
- # - POIWERK-SENTK = Sentiator-Schnittstelle (Bedingungen)
- # - POIWERK-NAVIK = Navigator-Anbindung (Ziele)
- # - POIWERK-RETK  = Retron-Einspeisung (Ŧ-Regulation)
+ # - POIPIPE-REXK  = Workspace-Verteilung (REX-Logik)
+ # - POIPIPE-SENTK = Sentiator-Schnittstelle (Bedingungen)
+ # - POIPIPE-NAVIK = Navigator-Anbindung (Ziele)
+ # - POIPIPE-RETK  = Retron-Einspeisung (Ŧ-Regulation)
 ### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
  # MASTERWORT = POIELT
  # SBSK = POIK-POIH-POIELT-POIU-POIELT-POICOM-POIELT-POIAN-ENDE
- # SBSK = POIK-POIH-POIELT-POIPIPE-POIELT-POICOM-POIELT-POIAN-ENDE
+ # SBSK = POIK-POIH-POIELT-POIPIPE-PIPE-START-POICOM-POIELT-POIAN-PIPE-ENDE
  # VBSK = POIWERK-POIELT
  # RBSK = POIK
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###

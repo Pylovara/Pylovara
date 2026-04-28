@@ -136,7 +136,7 @@ HERARCHIE NR :
 
 KLASSEN NAMEN : SYMBOLKLASSE 
 
-NUTZUNG : 
+NUTZUNG : LEGT SYSTEM SYMBOLE FEST 
 
 SCHALTUNGSNUTZUNG : 
 
@@ -152,6 +152,44 @@ SCHALTUNGSNUTZUNG : ALPHAKLASSEN SIND ÜBERGEORDNETE EINZELSCHALTUNGEN
                     
 
 ===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : SYMBOLKLASSE 
+
+NUTZUNG : LEGT SYSTEM SYMBOLE FEST 
+
+SCHALTUNGSNUTZUNG : 
+
 ===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : SYSTEMKLASSE 
+
+NUTZUNG : ZUGRIFFSSCHNITTSTELLE FÜR EINGABE FELDER  
+
+SCHALTUNGSNUTZUNG : IN/OUPUT EINGABE FELDER - BLANKERNENNER
+
+===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : NUMMERKLASSE 
+
+NUTZUNG : ZUGRIFFSSCHNITTSTELLE FÜR NUMMER FELDER 
+
+SCHALTUNGSNUTZUNG : 
+
+===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : WERTKLASSE 
+
+NUTZUNG : ZUGRIFFSSCHNITTSTELLE FÜR WERT ANGABEN  
+
+SCHALTUNGSNUTZUNG : WATT|VOLT|AMPHER|A|
+
 ===========================================================================
 

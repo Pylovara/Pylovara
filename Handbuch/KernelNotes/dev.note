@@ -3356,16 +3356,19 @@ uffff .... das war wieder sooooo klar ...
   ansich die klasse einführen 
 
   - VAL = bereich nav 
-  - NAV = ansich 
-    2 KLASSEN 
+  - NAV = ansich # EINGEFÜGT ABER VAL FALSCH 
+    2 KLASSEN # ALPHA-KLASSEN 
       1 - PIPEKLASSE  ( FÜR DEN DATENSTRANG)
       2 - COMBOKLASSE ( FÜR KOMPONENTEN )
       -----------------------------------
       WÄREN DANN EINDEUTIG :
-      3 - SYSTEMKLASSE ( FÜR EINGABE/INHALTE)
+    ALPHA ->  3 - SYSTEMKLASSE ( FÜR EINGABE/INHALTE)
       4 - WERKZEUGKLASSE ( ERSTMAL VERWENDUNGSFREI )
 
 
   - MAS = sowieso 
 
  klingt erstmal wenig .... okey ... auf in den kampf 
+
+ HAB DIE 3 ZUR ALPHAKLASSE GEMACHT , WEIL DIE UNABHÄNGIG 
+ AGGIEREN MÜSSEN .... 

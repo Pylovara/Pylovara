@@ -128,9 +128,9 @@ TRENK           = TE
 
 TRENH-WAND      = TE0
 TRENU-START     = TE1
-TRENSYS-BOXK    = TE2
-TRENSYS-POOK    = TE3
-TRENSYS-COMBO   = TE4
+TRENSYS-BOXK    = TE2 # NACHKONTROLLE 
+TRENSYS-POOK    = TE3 # NACHKONTROLLE
+TRENSYS-COMBO   = TE4 # NACHKONTROLLE 
 TRENAN-ENDE     = TE5 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -141,7 +141,7 @@ AKTK            = AK
 
 AKTH-IMPULS     = AK0
 AKTU-START      = AK1
-AKTSYS-POIK     = AK2
+AKTSYS-POIK     = AK2 # NACHKONTROLLE (SPÄTER)
 AKTAN-ENDE      = AK3
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

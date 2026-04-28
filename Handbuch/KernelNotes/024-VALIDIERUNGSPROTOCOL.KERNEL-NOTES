@@ -27,11 +27,13 @@ VALIDIERUNGSPROTOCOL-KERNKLASSE § VALK
 
 VALIDIERUNGSPROTOCOL-ALPHAKLASE $ VALALPHA-VAL-KENNUNG
 
- SCHALTUNGSBEZEICHNUNG = KENNUNG
+ SCHALTUNGSBEZEICHNUNG = VAL-KENNUNG
 
  VAL-KENNUNG = VAL1
 
- INFO = ZEIGT EXPLITIT DIE VAL-KENNUNG
+ KLASSEN-KENNUNG = 
+
+ INFO = ZEIGT EXPLIZIT DIE VAL-KENNUNG FÜR VATRON
 
  FUNKTION = DATENTYPEN BION KENNZIFFER
 
@@ -39,23 +41,31 @@ SCHRIFTLICHE BLOCK DEKLARATION = VAL-KENNUNG
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# VAL BLÖCKE :
+VALIDIERUNGSPROTOCOL-ALPHAKLASE $ VALALPHA-KLASSEN-KENNUNG
+
+ SCHALTUNGSBEZEICHNUNG = KLASSEN-KENNUNG
+
+ VAL-KENNUNG =
+
+ KLASSEN-KENNUNG = 
+
+ INFO = ZEIGT EXPLIZIT DIE VAL-KENNUNG FÜR VATRON
+
+ FUNKTION = DATENTYPEN BION KENNZIFFER
+
+SCHRIFTLICHE BLOCK DEKLARATION = VAL-KENNUNG
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+# BLOCK :
 
  SCHALTUNGSBEZEICHNUNG =
 
  VAL-KENNUNG =
 
+ KLASSEN-KENNUNG =
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
-
-!!! veraltet ab morgen , muss neu aufgesetzt werden 
-
-
-
-
-
-
-
 
 # DATENTYPEN 
 
@@ -64,7 +74,7 @@ DAK             = DA
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
-# TRANSAKTIONSRAHMEN
+# VAL KENNUNG = TRANSAKTIONSRAHMEN
 
 TRANK           = TA
 
@@ -76,7 +86,7 @@ TRANAN-ENDE     = TA3
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 
-# PROTEIN 
+# VAL KENNUNG = PROTEIN 
 
 POIK            = PI
 
@@ -93,7 +103,7 @@ POIAN-ENDE      = PI9
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# PROTON 
+# VAL KENNUNG = PROTON 
 
 POOK            = PO
 
@@ -106,7 +116,7 @@ POOAN-ENDE      = PO5
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# TRENNBEFEHL
+# VAL KENNUNG = TRENNBEFEHL
 
 TRENK           = TE
 
@@ -119,7 +129,7 @@ TRENAN-ENDE     = TE5
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# AKTIONSDRAHT
+# VAL KENNUNG = AKTIONSDRAHT
 
 AKTK            = AK
 
@@ -130,7 +140,7 @@ AKTAN-ENDE      = AK3
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# BOXIS
+# VAL KENNUNG = BOXIS
 
 BOXK                          = B
 
@@ -176,13 +186,13 @@ BOXAN-MASCHINENCODE-ENDE      = BM3
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# MASTER
+# VAL KENNUNG = MASTER
 
 MASK                          = MA
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# REX
+# VAL KENNUNG = REX
 
 REXK                          = RX
 
@@ -210,7 +220,7 @@ REXAN-ENDE                    = RX20
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# SENTIATOR
+# VAL KENNUNG = SENTIATOR
 
 SENK                          = SE
 SENH-FLEX                     = SE0
@@ -221,7 +231,7 @@ SENAN-ENDE                    = SE4
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# ARGUMENTE 
+# VAL KENNUNG = ARGUMENTE 
 
 ARGK                          = A
 
@@ -250,7 +260,7 @@ ARGAN-BAUMODUS-ENDE           = AV3
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# FEED 
+# VAL KENNUNG = FEED 
 
 FEK                         = F
 
@@ -274,7 +284,7 @@ FTAN-NR-ENDE                = FT6
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# WARP = UNFERTIG WEIL ANKER FEHLEN 
+# VAL KENNUNG = WARP = UNFERTIG WEIL ANKER FEHLEN 
 
 WARK                       = WA
 
@@ -293,7 +303,7 @@ WARH-COMPILER              = WAC0
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# NAVIGATOR (nach 00-80 die gesamte klassen logik präzisieren , danach seitenweise komponenten damit bestücken)
+# VAL KENNUNG = NAVIGATOR 
 
 NAVK                       = NA
 
@@ -353,7 +363,7 @@ NAVU-DATENSTROM-ENDE       = NAD9
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# IDENTIFIKATION (grund schaltung zum main kernel für klone kernels)
+# VAL KENNUNG = IDENTIFIKATION (grund schaltung zum main kernel für klone kernels)
 
 IDK                        = ID
 
@@ -368,19 +378,19 @@ IDU-DNA-ENDE               = IDLINK
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# MCS CMD (Kann ich erst bei der arbeit am modulator machen - wäre zuviel jetzt)
+# VAL KENNUNG = MCS CMD (Kann ich erst bei der arbeit am modulator machen - wäre zuviel jetzt)
 
 MCCK                       = 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# DATEITYPEN (Sind noch nicht entgültig designed, daher warten .....)
+# VAL KENNUNG = DATEITYPEN (Sind noch nicht entgültig designed, daher warten .....)
 
 DIK                        = 
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# VATRON 
+# VAL KENNUNG = VATRON 
 
 VATK                       = VAT 
 
@@ -403,7 +413,7 @@ VATAN-IMPULS               = VAT15
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# RETRON
+# VAL KENNUNG = RETRON
 
 RETK                       = RET 
 
@@ -415,7 +425,7 @@ RETU-STUFE-DREI            = RET4
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# KKIS ( NUR SYSTEM VERBINDUNGS ZUGRIFFE )
+# VAL KENNUNG = KKIS ( NUR SYSTEM VERBINDUNGS ZUGRIFFE )
 
 KKIK                       = KK
 
@@ -452,7 +462,7 @@ KKIU-MORPHIC               = KK29
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# BSK-GENERALSCHALTUNG ( GRUNDSÄTZLICHE ELEMENT SCHALTUNG FÜR BSK LOGIK )
+# VAL KENNUNG = BSK-GENERALSCHALTUNG ( GRUNDSÄTZLICHE ELEMENT SCHALTUNG FÜR BSK LOGIK )
 
 GASK                       = GA
 
@@ -491,7 +501,7 @@ WENN ER FERTIG GESCHRIEBEN IST FÜR DIE VERSION 00-80
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# NITROX ( FERTIG VALIDIERT MIT FEED , NEUE SYNTAX REGEL IM 805 MANIFESTIERT )
+# VAL KENNUNG = NITROX ( FERTIG VALIDIERT MIT FEED , NEUE SYNTAX REGEL IM 805 MANIFESTIERT )
 
 NITK                       = N
 

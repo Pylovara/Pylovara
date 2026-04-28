@@ -46,7 +46,7 @@ SCHALTUNGSNUTZUNG : WIRD ALS KOPF NENNER DER FUNKTION GENUTZT
 
 ===========================================================================
 
-HERARCHIE NR : 3
+HERARCHIE NR : 3 EINZEL VARIABEL
 
 KLASSEN NAME : UNTERKLASSE
 
@@ -57,10 +57,59 @@ NUTZUNG : WIRD FÜR VARIANTEN DER SELBEN FUNKTION DER KOMPONENTE GENUTZT
 SCHALTUNGSNUTZUNG : KANN SELBST DIE START SEQUENZ DES SCHALTWEGES TRAGEN  
 
 ===========================================================================
+
+HERARCHIE NR : 3 MULTI VARIABEL
+
+KLASSEN NAME : WERKKLASSE 
+
+KERNINFO : WIRD FÜR DIE VERTIKALE VERBINDUNGSMÖGLICHKEIT DER PROTEINE 
+           GENUTZT UND DIENT ALS KONEKTOR SCHNITTSTELLE .
+
+NUTZUNG : VERBINDET VERTIKAL KOMPONENTEN SCHALTUNGEN UND DIENT DER DATEN 
+          VERBINDUNG DER VERTIKALEN VERBINDUNGSSCHNITTSTELLE .
+
+SCHALTUNGSNUTZUNG : KANN SELBST DIE START SEQUENZ DES SCHALTWEGES TRAGEN 
+
 ===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : 
+
+NUTZUNG : 
+
+SCHALTUNGSNUTZUNG : 
+
 ===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : KONEKTOR KLASSE 
+
+NUTZUNG : 
+
+SCHALTUNGSNUTZUNG : 
+
 ===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : OPTIONSKLASSE KLASSE 
+
+NUTZUNG : 
+
+SCHALTUNGSNUTZUNG : 
+
 ===========================================================================
+
+HERARCHIE NR : 
+
+KLASSEN NAMEN : INPUT/OUTPUT KLASSE 
+
+NUTZUNG : 
+
+SCHALTUNGSNUTZUNG : 
+
 ===========================================================================
 ===========================================================================
 ===========================================================================

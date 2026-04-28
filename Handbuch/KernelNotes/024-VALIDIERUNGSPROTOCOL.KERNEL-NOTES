@@ -92,16 +92,13 @@ TRANAN-ENDE     = TA3
 
 POIK            = PI
 
-POIH-SOFT       = PI0
-POIU-START      = PI1
-POISYS-BOXK     = PI2
-POISYS-POOK     = PI3
-POIWERK-REXK    = PI4
-POIWERK-SENTK   = PI5
-POIWERK-NAVK    = PI6
-POIWERK-RETK    = PI7
-POIWERK-NITK    = P18
-POIAN-ENDE      = PI9
+POIH-SOFT       = PI
+POIU-START      = PI
+POIPIPE-START   = PI
+POISYS-BOXK     = PI
+POISYS-POOK     = PI
+POISYS-FEED     = PI
+POIAN-ENDE      = PI
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -311,6 +308,9 @@ NAVK                       = NA
 
 NAVALPHA-STERN             = NAA0
 NAVAN-STERN-ENDE           = NAA1
+
+NAVALPHA-PIPEKLASSE        = NP0
+
 
 NAVH-KLASSEN               = NAE0
 NAVAUSL-PYLOVARA           = NAE1

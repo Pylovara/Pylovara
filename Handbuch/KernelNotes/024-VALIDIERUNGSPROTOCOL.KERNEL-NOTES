@@ -94,12 +94,18 @@ POIK            = PI
 
 POIH-SOFT       = PI0
 POIU-START      = PI1
-POISYS-BOXK     = PI2
-POISYS-POOK     = PI3
-POISYS-FEED     = PI4
+POICOM-BOXK     = PI2
+POICOM-POOK     = PI3
+POICOM-FEED     = PI4
 POIAN-ENDE      = PI5
 
-POIPIPE-START   = PIP1
+POIH-PIPE           = PIP0
+POIPIPE-PIPE-START  = PIP1
+POICOM-BOXK         = PIP2
+POICOM-TRENK        = PIP3
+POICOM-POOK         = PIP4
+POICOM-FEK          = PIP5
+POIAN-PIPE-ENDE
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

@@ -162,7 +162,7 @@ KURZSCHLUSS: <TRANU-START> + <TRANSYS-MASK> + <TRANU-ENDE>
 ### BEINHALTET ALLE ARTEN VON BOXIS | PROTON | FEED CONTAINER
 ### RELEVANZ = POIK 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## 
+## EINZEL PROTEIN HAUPTKLASSE
 #
 ABSOLULATOR-ALPHAKLASSE § ABALPHA-G8PIPI0
 
@@ -174,44 +174,46 @@ VATRON BEDINGUNG:
  © PI          - <POIK>
  © PI0         - <POIH-SOFT>
 
-KURZSCHLUSS: <POI-SOFT>
+KURZSCHLUSS: <POIH-SOFT>
 
   START: [<MASK>]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## 
+## EINZEL PROTEIN START 
 #
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-G8PIPI0
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-G8PIPI0PI1
 
-MODULATOR ® MODUL 02
- ABSK = POIK-POIH-SOFT
-
-VATRON BEDINGUNG:
- © GA8         - <MASU-MASELT>
- © PI          - <POIK>
- © PI0         - <POIH-SOFT>
-
-KURZSCHLUSS: <POI-SOFT>
-
-  START: [<MASK>]
-
-### ==== ##### == # === ### =============== ### === # == ##### === ###
-## 
-#
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-G8PIPI0
-
-MODULATOR ® MODUL 02
+MODULATOR ® MODUL 02-01
  ABSK = POIK-POIH-SOFT-POIU-START
 
 VATRON BEDINGUNG:
  © GA8         - <MASU-MASELT>
  © PI          - <POIK>
  © PI0         - <POIH-SOFT>
- © PI
+ © PI1         - <POIU-START
 
-KURZSCHLUSS: <POI-SOFT>
+KURZSCHLUSS: <POIU-START>
 
-  START: [<MASK>]
+  START: [
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## EINZEL PROTEIN COMBO AUSWAHL 
+#
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-
+
+MODULATOR ® MODUL 02-02
+ ABSK = POIK-POIH-SOFT-POIU-START
+
+VATRON BEDINGUNG:
+ © GA8         - <MASU-MASELT>
+ © PI          - <POIK>
+ © PI0         - <POIH-SOFT>
+ © PI1         - <POIU-START>
+ © PI HIER 
+
+KURZSCHLUSS: <POIU-START>
+
+  START: [HIER
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 

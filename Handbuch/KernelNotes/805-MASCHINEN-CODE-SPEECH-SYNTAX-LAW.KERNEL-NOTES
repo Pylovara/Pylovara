@@ -21,7 +21,7 @@ ENSTEHEN SEPERAT UND WIRD FÜR DIE BILDUNG ZUR VERFÜGUNG GESTELLT.
 
 ¢!
 
- »[ ]« = AUSFÜHRBARES PROTEIN
+ »[ ]« = AUSFÜHRBARES PROTEIN 
 
 !¢
 
@@ -34,7 +34,7 @@ ENSTEHEN SEPERAT UND WIRD FÜR DIE BILDUNG ZUR VERFÜGUNG GESTELLT.
 ¢!
 
  ↑
-»[ ]«
+»[ ]« # AUSFÜHRBARES PIPE PROTEIN
  ↓
  * # VERTIKALER PROZESS STRANG 
 
@@ -44,7 +44,7 @@ ENSTEHEN SEPERAT UND WIRD FÜR DIE BILDUNG ZUR VERFÜGUNG GESTELLT.
 
  ÷ »[ HEADER PROTEIN ]« # KOPF PROTEIN | LÄSST DATEN IN DEN PROZESS MIT EINFLIEẞEN 
  ↑
-»[ MAIN PROTEIN ]« # HAUPT PROTEIN | AUS ODER BEARBEITUNGS/PUNKT 
+»[ MAIN PROTEIN ]« # PIPE PROTEIN | AUSGANGS ODER BEARBEITUNGS/PUNKT 
  ↓
  ± »[ FOOD PROTEIN ]« # FOOD PROTEIN | SPEICHER MEDIUM IN FF FEED FÜHREND  
 
@@ -135,8 +135,8 @@ FEED NUTZUNG =
 
 »[" BOXIS BEISPIELINHALT "]«
  ± »[(1)—Ø " BOXIS BEISPIELINHALT " Ø]« # HINZUFÜGEN
-
-     ÷ »[Ø " BOXIS BEISPIELINHALT " Ø—(1)]«
+ ↓
+ ↓   ÷ »[Ø " BOXIS BEISPIELINHALT " Ø—(1)]«
  ¬· »[" BOXIS BEISPIELINHALT "]« SYNCRONISIEREN
 
 !¢
@@ -159,18 +159,42 @@ VATRON NUTZUNG =
 ¢!
 
 »[ <INHALT VON USRRLAND NUTZUNGEN> ]«
+ ↓
  $ »[ WURZELVERZEICHNIS/USERORDNER/.CONFIG]« # ABRUF DER COMPILIERTEN SOFTWARE
 
 !¢
 
 »[ <PYLOVARA-MCS-CMD> ]« # Z.B ~GENERIERE-ZIELREFERENZ && POIH-HARD~
+ ↓
  § »[~ /Pylovara/+Kommender Kernel /system.kernel-core ~]« # abruf funktion für interne kernel daten 
 
 ¢!
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-# NOCH IM AUFBAU UND NICHT FINAL 
+ BOXIS NUTZUNG =
+
+ ¢!
+
+ »[<BOXK>]« # BOXIS WERDEN IN PROTEIN/E VERWENDET
+
+ !¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ PROTON NUTZUNG = 
+
+ ¢!
+
+ »[<POOK>]« # PROTON SIND HARDWARE VERSORGUNGS CONTAINER 
+
+ !¢
+
+ ¢!
+
+ »[<BOXK>|<POOK>]« # KÖNNEN KOMBINIERT VERWENDET WERDEN 
+
+ !¢
 
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [01:57:47|Sa  25 Apr 2026] MARKENBRANDT                 #

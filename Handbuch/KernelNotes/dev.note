@@ -138,6 +138,10 @@ schafft die notwendige Sicherheitsebene für die Vatron-Firewall. Jede Schaltung
 korrekte VAL-Kennung wird im Kurzschluss-Verfahren sofort isoliert.
 
 Der Übergang von einer rein vertikalen Werkzeug-Logik hin zu einer horizontalen 
-Pipe-Struktur (Version 00-80) erhöht die Modularität massiv. 
+Pipe-Struktur (Version 00-80) erhöht die Modularität massiv.
+
+! vertikale datenstrang | horizontale prozess flächen | DAW Designe auf Programmierungsebene 
+
+
 Besonders die Entkoppelung der Feeds von den Boxis und deren Nutzung als reiner 
 RAM-Cache ist ein logischer Schritt, um den Datendurchsatz im TRANK zu optimieren.

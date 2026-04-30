@@ -1022,4 +1022,66 @@ und erdachte Technik .....
 
 
 
+das würde heißen , ich muss die alu als Takt geber Verwenden .... 
+
+dazu müsste ich den Herzschlag quasi auf einen takt einstellen 
+und mit diesem takt einfach stumpf zwei verschiedne zustände 
+schalten .... der rest wie maus , sound , microphon , müsste dann 
+als Boxis direkt ins system gecallt werden ... anschluss + driver 
+
+
+also system läuft als takt frame .... als übergangsformat .... 
+weil kein schwanz kauft jetzt extra für das system andere offene 
+hardware ..... logisch ..... würd ich auch nicht ... 
+
+und alles andere über interne system calls .... 
+
+damit würde ich quasi alles was mit grafik zu tun hat 
+isa unabhängig machen , weil keiner dafür irgend eine berechnung brauch 
+sondern lediglich nur die gebaute abfolge .... und das gut ... 
+
+und der rest wäre 
+
+- Tastatur 
+- Sound 
+- Internet 
+- Maus 
+- Usb ansich 
+- Ram (wobei .....)
+- ROM 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

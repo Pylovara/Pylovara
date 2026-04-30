@@ -2081,11 +2081,32 @@ sooo ... also den kuddelmuddel muss man erstmal prototyp haft richten ....
      ¬· »[× localtime() ×]«««Ω
          ¬·¤: »["12:30:05"]«««Ω
 
+!¢ 
+
+GUT ... das hieße ... das ich jetzt eine lösung finden muss über ARGUMENT um sleep zustände 
+logischerweise mit einzubeziehen .... oder den haupt prozess takte über den Taktschlag 
+ und der taktschlag selbst ist die sekunde der uhr ... also takt 1 
+
+¢!
+
+»["HAUPTBLOCK"]«««T
+ ¬· »[, time_t rawtime ,]« 
+     ¬· »[× localtime() ×]«««Ω
+         ¬·¤: »["12:30:05"]«««Ω
+
+!¢ 
+
+wäre dann auf die neue syntax gesehen dann eher : 
 
 
+(15000910)  ¢!
+(15000911)  »["UHR_HERZ"]«««T
+(15000912)       ± »[(1)—Ø <SYSTEM_ZEIT> Ø]«        
+(15000913)   ¬· »[× FORMATIERUNG_SCHABLONE ×]«««Ω 
+(15000914)       ¬·¤: »[ MONITOR_BOX_01 ]«««Ω         
+(15000915)  !¢
 
-
-
+zum beispiel .... 
 
 
 

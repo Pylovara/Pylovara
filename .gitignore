@@ -8,6 +8,12 @@
 /Pylovara/Kernel/*.*-*
 /Pylovara/Kernel/DevNotes
 
+# Unveröffentlicher Sektor
+/Pylovara/Lernbücher/*
+/Pylovara/Lernbücher/*/*
+/Pylovara/Lernbücher/*/*/*
+/Pylovara/Lernbücher/*/*/*/*
+
 # Pylovara Hochsensibler Bereich (Handbuch & DevNotes)
 # Diese Regel verhindert das Tracken des kompletten DevNotes-Verzeichnisses
 /Pylovara/Handbuch/DevNotes/

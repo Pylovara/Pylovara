@@ -289,3 +289,35 @@ das würde heißen , die ms wäre etragbar minimal höher als in C
 aber mit dem vorteil das der brasilianer damals zumindest auf 
 dem motto : „ das auge isst mit “ gebaut hat ... 
 
+und irgend einen kompromiss MUSS ich am anfang gehen ... 
+
+und da Lua weniger probleme bereitet und ich somit für diesen 
+schritt KI nutzen könnte , bis zum self hosting .. 
+
+wäre es ein kompromiss .... 
+
+und lua läuft eigentlich auf alles ... 
+
+
+gut okey ..... ich will eigentlich garnicht .... 
+
+aber naja 
+
+Phase 1: Bootstrap in Lua (JETZT)
+ ─ Tokenizer: ¢!, », «, ±, ÷, ¬, ¶
+ ─ Minimaler Kern: TRANK + POIK + REXK
+ ─ Ziel: funktionierendes System
+
+Phase 2: Opcodes für BOXIS (DANN)
+ ─ Sycalls für BOXIS (ABI, Systemaufrufe)
+ ─ Hardware-Nähe selbst bauen
+ ─ Kein C – deine eigene native Schicht
+
+Phase 3: Self-Hosting (DANN)
+ ─ Pylovara kompiliert sich selbst
+ ─ Lua wird als Host nicht mehr gebraucht
+ ─ Vollständige Kontrolle
+
+Phase 4: Ausbau (SPÄTER)
+ ─ Lexikon, Navigatoren, MATRIX
+ ─ Hyprland-Integration

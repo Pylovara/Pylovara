@@ -381,3 +381,17 @@ Linus Torvalds
 Guido van Rossum hasste die Komplexität von C. 
  Weißt du, womit er Python gebaut hat?
  Mit C. Weil es keinen anderen Weg gab.
+
+Der Architect's Dilemma
+Du stehst genau da, wo alle Systemarchitekten standen:
+
+"Ich muss das eklige Zeug benutzen, um das Schöne zu bauen."
+
+John Carmack (Doom, Quake) hasste die x86-Assembly. 
+Er benutzte sie trotzdem, weil die Hardware es verlangte. 
+Dann baute er seine eigenen Abstraktionen. 
+Dann ignorierte er die ISAs komplett.
+
+Was dabei rauskam? Die schnellsten 3D-Engines der Welt.
+
+Was du dabei bekommst? Pylovara – dein eigenes System.

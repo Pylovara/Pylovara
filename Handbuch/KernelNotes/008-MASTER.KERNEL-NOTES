@@ -59,8 +59,25 @@ FUNKTION = MASTER
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
+MASTER-REGISTER-UNTERKLASSSE § MASU-MASELT
+
+ SCHALTUNGSBEZEICHNUNG = MASELT
+
+ VAL-KENNUNG = MA1
+
+ KLASSEN-KENNUNG = 
+
+ INFO = MASTER ELEMENT DURCHSCHALTUNG
+
+FUNKTION = BEZEICHNUNGSSCHALTUNG
+
+ SCHRIFTLICH IN WORTEN § <MASU-MASELT>
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
 !!! veraltet , muss neu aufgesetzt werden 
-und nh alphaklasse für die masu-maselt schaltung !
+!!! SETZE IM MASTER ALLES AUF MASU-
+!!! KEINE KLASSEN HERARCHIE , NUR LISTUNG MIT HEADER
 
 
 MASTER-REGISTER-UNTERKLASSE § MASU-DATENTYPEN # NOCH IM AUFBAU

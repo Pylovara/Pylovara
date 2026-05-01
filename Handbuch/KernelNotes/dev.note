@@ -650,3 +650,70 @@ function Absolulator.module_to_string(module)
 end
 
 return Absolulator
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!! TEST TEST TEST TEST TEST TEST TET !!!!!!!!!!!!!!!!!
+
+-- test_absolulator.lua
+-- Testet den Parser mit deinem ABSOLULATOR
+
+local Absolulator = require("absolulator_parser")
+
+-- Beispiel: Einen Modul-Block direkt als String parsen
+local test_block = [[
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### MODUL 02-03-01 
+### NAME = UNAUSFÜRBAHRES PIPE PROTEIN MIT BOXIS
+### RELEVANZ = POIK
+### OPCODE   = 0x0A
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## INFO = Definiert ein nicht ausführbares Pipe-Protein mit Boxis-Container
+
+ABSOLULATOR-MODUL § ABALPHA-GA8PIP0PIP1PIP2
+
+MODULATOR ® MODUL 02-03-01
+ ABSK = POIK-POIH-PIPE-POIPIPE-PIPE-START-POICOM-BOXK
+
+VATRON KONTROLLE:
+ © GA8  - <MASU-MASELT>
+ © PIPO - <POIH-PIPE>
+ © PIP1 - <POIPIPE-PIPE-START>
+ © PIP2 - <POICOM-BOXK>
+
+MORPHIC-SYNTAX: 
+   KOPF:  ±
+  START:  [
+   FOOD:  ÷
+   PIPE:  ↓
+   PIPE:  ¬
+   PIPE:  ¶
+   PIPE:  ¢!
+##
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+]]
+
+local module = Absolulator.parse_module(test_block)
+print(Absolulator.module_to_string(module))
+
+-- Ausgabe sollte sein:
+-- === MODUL 02-03-01 ===
+--   NAME: UNAUSFÜRBAHRES PIPE PROTEIN MIT BOXIS
+--   RELEVANZ: POIK
+--   OPCODE: 0x0A
+--   INFO: Definiert ein nicht ausführbares Pipe-Protein mit Boxis-Container
+--   ABSK: POIK-POIH-PIPE-POIPIPE-PIPE-START-POICOM-BOXK
+--   VATRON: 4 Einträge
+--   MORPHIC:
+--     KOPF: ±
+--     START: [
+--     FOOD: ÷
+--     PIPES: ↓, ¬, ¶, ¢!
+
+!!!!!!!!!!!!!!!!!!! TEST ENDE TEST ENDE TEST ENDE TET !!!!!!!!!!!!!!!!!

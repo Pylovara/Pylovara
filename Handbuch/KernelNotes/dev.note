@@ -409,16 +409,14 @@ Grund Block
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### MODUL 
-###  
-###  
-### RELEVANZ = 
+### RELEVANZ = [KERNKLASSE] 
+### OPCODE  = [HEX|DEZ] 
+### 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+##
 #
+
 ABSOLULATOR-ALPHAKLASSE § ABALPHA-
-
-BEZEICHNUNG | OPCODE
-
-XXXX - XXXXXXXXXX
 
 MODULATOR ® MODUL 
  ABSK MORPHIC-0 = 
@@ -436,5 +434,46 @@ MORPHIC-1:
    PIPE:
    PIPE:
    PIPE:
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+function parse_absolulator(file)
+    local modules = {}
+    for block in file:gmatch("### ==== #####.-### ==== #####") do
+        local name = block:match("### MODUL ([^\n]+)")
+        local absk = block:match("ABSK = ([^\n]+)")
+        modules[name] = {
+            absk = absk,
+            opcode = block:match("OPCODE = ([^\n]+)"),
+            kontrolle = block:match("VATRON KONTROLLE:(.-)MORPHIC-1")
+        }
+    end
+    return modules
+end
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### MODUL [NR] 
+### NAME = [NAME]
+### RELEVANZ = [KERNKLASSE]
+### OPCODE   = [HEX|DEZ]
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ABSOLULATOR-MODUL § [BEZEICHNUNG]
+
+MODULATOR ® MODUL [NR]
+ ABSK = [SCHALTUNGSKETTE]
+
+VATRON KONTROLLE:
+ © [GA...]  - <[REFERENZ]>
+ © [NA...]  - <[REFERENZ]>
+
+MORPHIC-SYNTAX: 
+   KOPF:  […………………………]
+  START:  [INIT]
+   FOOD:  [FEED-PUNKT]
+   PIPE:  [DATENKANAL]
+   PIPE:  [DATENKANAL]
+   PIPE:  [DATENKANAL]
+   PIPE:  [DATENKANAL]
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

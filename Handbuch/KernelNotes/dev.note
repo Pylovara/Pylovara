@@ -451,6 +451,27 @@ function parse_absolulator(file)
     return modules
 end
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ### MODUL [NR] 
 ### NAME = [NAME]
@@ -479,3 +500,153 @@ MORPHIC-SYNTAX:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+
+
+
+
+-- absolulator_parser.lua
+-- Parser für Pylovara ABSOLULATOR-Module
+
+local Absolulator = {}
+
+-- Token-Erkennung für die speziellen Symbole
+Absolulator.PATTERNS = {
+    MODUL_START     = "### ==== #####",
+    MODUL_END       = "### ==== #####",
+    HEADER_NR       = "### MODUL (%S+)",
+    HEADER_NAME     = "NAME = ([^\n]+)",
+    HEADER_RELEVANZ = "RELEVANZ = ([^\n]+)",
+    HEADER_OPCODE   = "OPCODE[ ]*=[ ]*([^\n]+)",
+    INFO_LINE       = "## INFO = ([^\n]+)",
+    MODUL_SECTION   = "ABSOLULATOR%-MODUL § ([^\n]+)",
+    MODULATOR       = "MODULATOR ® MODUL ([^\n]+)",
+    ABSK            = "ABSK = ([^\n]+)",
+    VATRON_LINE     = "© ([^%s]+)%s*-%s*<([^>]+)>",
+    MORPHIC_KOPF    = "KOPF:%s*([^%\n]+)",
+    MORPHIC_START   = "START:%s*([^%\n]+)",
+    MORPHIC_FOOD    = "FOOD:%s*([^%\n]+)",
+    MORPHIC_PIPE    = "PIPE:%s*([^%\n]+)",
+}
+
+-- Extrahiert einen Block zwischen zwei Markern
+local function extract_blocks(content, start_marker, end_marker)
+    local blocks = {}
+    local pattern = start_marker .. "(.-)" .. end_marker
+    for block in content:gmatch(pattern) do
+        table.insert(blocks, block)
+    end
+    return blocks
+end
+
+-- Parst einen einzelnen VATRON-Kontroll-Eintrag
+local function parse_vatron_line(line)
+    local ga, ref = line:match(Absolulator.PATTERNS.VATRON_LINE)
+    if ga and ref then
+        return { ga = ga, reference = ref }
+    end
+    return nil
+end
+
+-- Parst die MORPHIC-SYNTAX-Sektion
+local function parse_morphix(block)
+    local morphic = {
+        kopf = block:match(Absolulator.PATTERNS.MORPHIC_KOPF) or "",
+        start = block:match(Absolulator.PATTERNS.MORPHIC_START) or "",
+        food = block:match(Absolulator.PATTERNS.MORPHIC_FOOD) or "",
+        pipes = {}
+    }
+    
+    -- Sammle alle PIPE-Zeilen
+    for pipe in block:gmatch("PIPE:%s*([^%\n]+)") do
+        table.insert(morphic.pipes, pipe)
+    end
+    
+    return morphic
+end
+
+-- Parst einen einzelnen ABSOLULATOR-Modul-Block
+function Absolulator.parse_module(block)
+    local module = {
+        raw = block,
+        vatron = {},
+        morphic = nil
+    }
+    
+    -- Header parsen
+    module.nr = block:match(Absolulator.PATTERNS.HEADER_NR) or ""
+    module.name = block:match(Absolulator.PATTERNS.HEADER_NAME) or ""
+    module.relevanz = block:match(Absolulator.PATTERNS.HEADER_RELEVANZ) or ""
+    module.opcode = block:match(Absolulator.PATTERNS.HEADER_OPCODE) or ""
+    module.info = block:match(Absolulator.PATTERNS.INFO_LINE) or ""
+    
+    -- Haupt-Sektionen
+    module.modul_section = block:match(Absolulator.PATTERNS.MODUL_SECTION) or ""
+    module.modulator = block:match(Absolulator.PATTERNS.MODULATOR) or ""
+    module.absk = block:match(Absolulator.PATTERNS.ABSK) or ""
+    
+    -- VATRON-Kontrollen (können mehrere sein)
+    for line in block:gmatch("© [^\n]+") do
+        local vatron_entry = parse_vatron_line(line)
+        if vatron_entry then
+            table.insert(module.vatron, vatron_entry)
+        end
+    end
+    
+    -- MORPHIC-SYNTAX parsen
+    local morphic_section = block:match("MORPHIC%-SYNTAX:(.-)##")
+    if morphic_section then
+        module.morphic = parse_morphix(morphic_section)
+    end
+    
+    return module
+end
+
+-- Hauptfunktion: Parst eine gesamte ABSOLULATOR-Datei
+function Absolulator.parse_file(filepath)
+    local content = read_file(filepath)  -- oder als String übergeben
+    local blocks = extract_blocks(content, 
+        Absolulator.PATTERNS.MODUL_START, 
+        Absolulator.PATTERNS.MODUL_END)
+    
+    local modules = {}
+    for i, block in ipairs(blocks) do
+        local module = Absolulator.parse_module(block)
+        if module.nr ~= "" then
+            modules[module.nr] = module
+        end
+    end
+    
+    return modules
+end
+
+-- Hilfsfunktion zum Lesen einer Datei (falls du sie brauchst)
+function read_file(path)
+    local file = io.open(path, "r")
+    if not file then return nil end
+    local content = file:read("*all")
+    file:close()
+    return content
+end
+
+-- Gibt ein Modul als lesbaren String aus (für Debugging)
+function Absolulator.module_to_string(module)
+    local out = {}
+    table.insert(out, "=== MODUL " .. module.nr .. " ===")
+    table.insert(out, "  NAME: " .. module.name)
+    table.insert(out, "  RELEVANZ: " .. module.relevanz)
+    table.insert(out, "  OPCODE: " .. module.opcode)
+    table.insert(out, "  INFO: " .. module.info)
+    table.insert(out, "  ABSK: " .. module.absk)
+    table.insert(out, "  VATRON: " .. #module.vatron .. " Einträge")
+    if module.morphic then
+        table.insert(out, "  MORPHIC:")
+        table.insert(out, "    KOPF: " .. module.morphic.kopf)
+        table.insert(out, "    START: " .. module.morphic.start)
+        table.insert(out, "    FOOD: " .. module.morphic.food)
+        table.insert(out, "    PIPES: " .. table.concat(module.morphic.pipes, ", "))
+    end
+    return table.concat(out, "\n")
+end
+
+return Absolulator

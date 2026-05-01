@@ -249,3 +249,9 @@ und die syntax selbst , ist überzeugend genug ( und das ist stark untertrieben 
 sprache  starzeit 
 
 C         2ms
+lua       5ms
+bash      8ms 
+AWK       4ms 
+perl      8ms 
+python   55ms <-- uffff (schrott)
+java    326ms <-- OMG ... also kein java 

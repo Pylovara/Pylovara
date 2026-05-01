@@ -2,10 +2,17 @@
 # | GIT-SECURITY | KERNEL-PROTECTION | STATUS = BAUSTELLE STUFE 10
 ####################################################################
 
+# Neu Angelegter Sektor
+/Pylovara/Kernel
+/Pylovara/Kernel/*.*-*
+/Pylovara/Kernel/*.*-*
+/Pylovara/Kernel/DevNotes
+
 # Pylovara Hochsensibler Bereich (Handbuch & DevNotes)
 # Diese Regel verhindert das Tracken des kompletten DevNotes-Verzeichnisses
 /Pylovara/Handbuch/DevNotes/
 /Pylovara/Handbuch/Archiv/
+/Pylovara/Handbuch/WikiNotes
 
 
 /Pylovara/AI/

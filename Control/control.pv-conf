@@ -1,3 +1,4 @@
+##############################################################################
 ### Control PV CONF - PYLOVARA CONFIG MAIN
 ### Alle Conf Sourcen - Komplette Kontrolle
 ### Quelle ~> /Pylovara/Control/
@@ -26,31 +27,14 @@ export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 
 ##############################################################################
-### Startet Ollama <---- bald unötig , wird ersetzt
-alias ollama='/Pylovara/AI/ollama/bin/ollama start'
-
-### Startet mini modelle
-alias phi='/Pylovara/AI/ollama/bin/ollama run phi4-mini'
-alias qwen='/Pylovara/AI/ollama/bin/ollama run qwen3:0.6b'
-alias deepseek='/Pylovara/AI/ollama/bin/ollama run deepseek-r1:1.5b'
-alias gemma='/Pylovara/AI/ollama/bin/ollama run gemma3:1b'
-
-###Info:Es wurden die kleinsten Modelle gewählt aus Universalengründen
-###Info:Später wird ChatGPT|Gemini|Grok|Claude|Qwen als Kern verwendet
-###Info:Kleinere Modelle sind universal einsetzbar zur zeit auf aller hardware
-##############################################################################
 ### Master-Input - control.pv-conf
 source "$MASTER_DIR/shell.conf"
 source "$MASTER_DIR/navigator.conf"
 source "$MASTER_DIR/callme.conf"
-#source "$MASTER_DIR/desktop.conf" #Info:Inaktiv , wird später aktualisiert !
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
 parse_conf "$MASTER_DIR/datatypes.conf"
-
-### Hyprland Desktop
-#source "/Pylovara/Control/desktop.conf"
 
 ##############################################################################
 ### SYSTEMALIASE Sektion | wird bald ausgelagert
@@ -94,26 +78,5 @@ function record() {
     script -q -t 2>"/tmp/terminal-${TIMESTAMP}.timing" "$FILENAME"
     echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
 }
-
-##############################################################################
-### Debug Sektion
-
-# echo "[DEBUG] control.pv-conf sourced at $(date)" >> /tmp/pv-control-debug.log
-
-### Prüfung
-# cat /tmp/pv-control-debug.log
-
-##############################################################################
-### DeV Sektion Experimentiell ### Not Used Guys !!!
-
-### alias: setup-desktop # experimentiell
-#alias cat='cut|mcs_highlight'
-#alias cut|mcs_highlight='cut'
-
-## Legacy von MCS Beta !!!
-#source "$MCS_DIR/Wrapper/aliase.wrapper-needles"
-
-### MCS Syntax-Highlighting
-#source "$MASTER_DIR/mcs-visualizer.conf"
 
 ##############################################################################

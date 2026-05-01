@@ -1,0 +1,251 @@
+##########===========================########################===========================##########
+# Verbesserungen 00-80 :
+
+- SYSTEMKLASSE
+
+  DIENEN NUR NOCH FÜR DEN JEWEILIGEN IN UND OUTPUT EINGABE BEREICH
+
+- COMBOKLASSE
+
+ EINFÜGEN VON KOMPONENTEN WURDE AUS DEN SYSTEMKLASSE ENTFERNT
+ UND HIER EXPLIZIT EINGEFÜHRT
+
+- PIPEKLASSE
+
+ WURDE EXPLIZIT FÜR POIWERK AUSGETAUSCHT EINGEFÜHRT = POIPIPE !
+
+- PROTEIN ERWEITERUNG
+
+ PIPE (AUSFÜHRBARE) PROTEINE HABEN JETZT KOPF INPUT UND FOOD OUTPUT FUNKTIONEN
+ HINZUBEKOMMEN .
+
+##########===========================
+
+- VALIDIERUNGSPROTOCOL
+
+ WURDE EINGEFÜHRT FÜR VATRON FIREWALL KONTROLLE DER BSK RICHTIGKEIT
+ UND DIENT IM ABSOLULATOR ALS REFERENZ BEDINGUNG .
+ DIESE KENNUNG WURDE SEITENWEISE IN JEDEM BLOCK GESCHRIEBEN .
+ VAL-KENNUNG : XY
+
+##########===========================
+
+- SYSTEM-AXOIMEN
+
+ MATHEMATISCHE REGELUNGEN WURDEN ERSTMAL HERAUS GENOMMEN
+ UND DAMIT BEGONNEN REKRUSIV NEUE KLASSEN DIREKT EINZUORDNEN
+
+##########===========================
+
+- PROTEIN
+
+ WURDE ÜBERARBEITET UND HAT ZWEI SCHALTUNGEN MIT DEN FRISCHEN COMBOKLASSEN
+ INKLUSIVE WURDE DIE WERKZEUGKLASSE DURCH DIE PIPEKLASSE ERSETZT UM
+ DEN PROZESS SCHALTWEG DER VERTIKALEN AUF HORIZONTALER WEITERFÜHRUNGEN
+ ZU GEWÄHRLEISTEN .
+
+- TRENNBEFEHL
+
+ WURDEN DIE SYSTEMKLASSEN HERAUS GENOMMEN UND DURCH COMBO KLASSE ERSETZT.
+ INKLUSIVE WURDE DER TRENBEFEHL VERSCHLANK, GILT NUN GENERELL FÜR ALLE
+ TRENNUNGEN INNERHALB DER CONTAINER BOXIS PROTON IM PROTEIN.
+
+
+ - FEED
+
+ WERDEN NICHT MEHR DIREKT IN BOXIS IMPLEMENTIERT SONDERN GESONDERT.
+ FEEDS SIND DAMIT DER DIREKTE CACHE FÜR RAM NOTIZEN UND WERDEN NUR NOCH
+ FÜR DEN TRANSPORT WEG GENUTZT .
+ ANSONNSTEN SELBES PRINZIP : MASTER AND SLAVE
+
+- NITROX
+
+ IN UND OUT PUT = IO = NITROX , WURDE IM KOPF UND FOOD DER PIPE PROTEINE INTEGRIERT
+ UM DIE FF UND FT FEED LOGIK ZU VERBESSERN .
+ NITROX INJEKTIERT UND EXTRAHIERT FF WIE FT UM SIE COPIERT EINEM ANDEREN PROZESS ZUZUFÜGEN ,
+ ÄHNLICH EINER BIBLIOTHEK VON C HEADER, NUR MIT DEM UNTERSCHIED DAS SIE GRANULAR IM TRANK
+ SELBST VERWENDET WERDEN KÖNNEN.
+ DAS WURDE GETAN UM SPÄTER AUCH VARIABLEN TRANSPORT FÄHIG UND COMBINATIONSFÄHIG ZU MACHEN .
+
+##########===========================
+
+- SYNTAX LAW 805
+
+ VERVOLLSTÄNDIGUNG DER NUTZUNGSMÖGLICHKEITEN
+
+- 800 BAUSTEINSCHALTUNGSKREISLAUF
+
+  VERBESSERUNG DER INFORMATIONS ERKLÄRUNG FERTIGGESTELLT UND TEST BEREICHE VERSCHOBEN
+  BIS ENDGÜLTIGER IMPLEMENTIERUNGS STATUS FOLGT.
+
+##########===========================########################===========================##########
+# Vermerke :
+
+ - MASTER
+
+  MASTER IST NICHT AKTUELL
+
+- NAVIGATOR
+
+ KLASSEN MÜSSEN PRÄZISER EINGESETZT WERDEN , UNVOLLSTÄNDIGE LOGIK AUẞERHALB DER ALPHAKLASSEN
+
+- HERZSCHLAG
+
+ ENTFERNE DIE TEST DATEN , SPÄTER FOLGEN DIE TAKT DATEN - SCHNITTSTELLE ZUM M.I.T
+
+- CHIPONATOR
+
+ ERSETZE ALLE LOGIKEN MIT DEM NAVU-STERN RASTER VERFAHREN ....
+ LASS ES BEIM LAYOUT BIS ABK MOK FERTIG SIND .
+
+- SCHABLONATOR
+
+ NACH BEGRADIGUNG DER KOMPONENTE TRENNBEFEHL, MUSS DER SEKTOR IM SBK NACHGEBESSERT WERDEN
+
+- ABSOLULATOR
+
+ WURDE NOCHMAL EINGESTAMPFT , MUSS BEI RUHE AUFGEBAUT WERDEN (ZU KOMPLEX MIT STÖRRAUSCHEN)
+
+- MODULATOR
+
+ DAS MCCK REGISTER FÜR DIE SELBSTGENERIERUNG DER CMD BEFEHLE BEIM ERSTELLEN DUAL
+ SCHREIBEN !
+
+- NACHKONTROLLE ALLER KOMPONENTEN
+
+ 1. SEMANTISCHE INFOS WIE AUCH ALTER BLOCK DATEN
+ 2. SYS UND COMBO KLASSEN VOM PROTEIN AN REIHENWEISE EXPLIZIT ÄNDERN .
+ 3. TRENNBEFEHL KOMPONENTE ÜBERARBEITEN, ES STELLT SICH HERAUS DAS
+    NUR DIE TRENWAND-COMBO BENÖTIGT WIRD .
+    EVENTUELL DEN ÜBERGANG VON PROTON MIT EINBAUEN , ZENTRALISIERUNG - WENN ES GEHT
+
+- LIZENZ LAYER ÜBERARBEITEN
+
+ DENK ERSTMAL DARAN DAS DER ENGLISCHE NAME MIT DEM DEUTSCHEN NAMEN - ERSETZT WIRD
+ DANN DENKE DARAN DIE NEUEN KOMPONENTEN EXPLIZIT MIT REIN ZU SCHREIBEN
+
+ AUẞERDEM EINEN ABZUG DAVON FÜR DIE KANZLEI.
+
+##########===========================########################===========================##########
+# etc :
+
+- BESSERER ARBEITSPLATZ
+
+ ICH BRAUCH STECKDOSE , RUHE UND MEHR MONITORE .
+ SUCHE NACH GÄRTEN MIT STECKDOSE ODER GÜNSTIGEN GARAGEN .
+ WAS GENAU IST SCHEIẞ EGAL , WICHTIG IST ABSCHLIEẞBAR UND VOLLSTÄNDIGE ISOLATION !
+ IM BESTEN FALLE TOILETTE IRGENDWIE , WASSER(OBWOHL) , KAFFE MASCHINE , KEINE NERVENDEN GERÄUSCHE .
+
+ - VERSTÄNDNISS ERKLÄRUNG
+
+  ICH MUSS EIN EINARBEITUNGS INFORBLATT SCHREIBEN, UM DEMNÄCHST DEN KOMMENDEN
+  INTERESSENT BESTMÖGLICH ÜBER DIE STRUKTUR AUFZUKLÄREN .
+
+  INFORMIER DICH AUCH ÜBER SYNCRONISERTE IDEs ... ICH ARBEITE SO INTENSIV DAS
+  ICH NICHT AUFGEHALTEN WERDEN MÖCHTE ABER DIE DATEN IMMER SYNCRON BLEIBEN ...
+
+  ERSTELL DANN AUCH DEN ZUGANGS SSH SCHLÜSSEL FÜR IHN - NICHT VERGESSEN
+
+##########===========================########################===========================##########
+# Überlegungen | Labber ecker | Psycho Ecke | Leck mich alle am arsch Ecke : 
+
+
+
+Ich glaube ich hätte einen perfekten kanidat gefunden als Sklaven Sprache 
+um quasi darüber erstmal das system lauffähig zu bekommen ... 
+
+das ding ist ... ich werde später mit opcodes arbeiten müssen , für die sycalls der boxis 
+
+aber und jetzt kommt der faktor X 
+
+
+Selbst C Hat zwei sprachen gebraucht bis C überhaupt lauffähig war 
+
+irgend eine komische alte sprache die mit B anfängt 
+und asssembly 
+
+wenn ich über LUA arbeiten würde .... hätte ich zwar eine höherliegende abstraktion 
+und es wäre natürlich kein wirklich kompromiss ... 
+
+
+aber LUA wäre zumindest ansatzweise , kein vollständiges gekritzel ... 
+
+
+das würde bedeuten das ich versuche über LUA erstmal ein grundgerüst zu bauen ... 
+um die lauffähigkeit erstmal hinzubiegen .... 
+
+danach wäre der fehlende teil der nativen Hardware nähe dann über opcodes selbst 
+drann ... 
+
+daraufhin kann ich dann den SelfHosting effeckt bewerkstelligen ... 
+
+und das wäre als aller erstes sinnvoll , bevor ich den unterbau mit dem herzschlag fütter 
+und nur konkrette raus gehende befehle der BOXIS dann per opcodes umsetzen ... 
+
+
+das würde bedeuten das ich quasi eine abgespeckte version baue 
+
+Phase 1: Parser in Lua
+      ─ Tokenize: ¢!, », «, ±, ÷, ¬, ¶, etc.
+
+Phase 2: minimaler Pylovara-Kern
+      ─ Nur TRANK + POIK + REXK
+
+Phase 3: Self-Hosting
+      ─ Der minimale Pylovara kann sich selbst kompilieren
+
+danach wäre der ausbau nach Lexikon drann ... 
+und bei der Arbeit könnt ich dann hilfe gebrauchen und die hilfe 
+hat sich über linked in gemeldet und wartet auf rückmeldung 
+
+ich selbst hab lua bis jetzt nur für configs genutzt und vielleicht 
+als Enemy Territory WolfAdmin script ... 
+
+aber , dank der expliziten bauweise von LUA 
+wäre es sogar möglich eine KI damit einzuspannen ... 
+
+die fehler tolleranz wäre quasi 0 ... den LUA ist besten dokumentiert ... 
+
+Lua ist in ANSI C geschrieben , verzeiht mehr und crash's wäre faktlich Egal 
+und die MS dinger Halluzinieren weniger ... 
+
+wäre eine überlegung wert ..... 
+
+ab dem self hosting effeckt , kenn ich mich aus ... 
+
+das einzige wo KI überhaupt in frage kommen würde ab dem Punkt von MCS 
+wäre bei den ABI und SYS calls und eventuell das eine oder andere Shell Boxi 
+
+aber das wäre auch für jeden der einsatzbereich , den wer kann schon alle sprachen ? 
+niemand .... 
+
+und das schöne wäre , durch diese arbeit könnte ich einen vollständigen 
+Hyprland desktop erstellen der in den Configs , ausnahmslos PIPE Proteine verwendet 
+das wäre ein schöner nebeneffeckt , da wayland in den hyprland configs selbst ... 
+eine mischung zwischen bash und lua verwendet .... 
+
+und da ich mit dem Pylovara Shell install die bash auf das eigene Control verzeichnis 
+schon vor monaten gelegt habe ... wäre es ein ausbau wert und verfeinerung ... 
+
+und damit könnte ich als maintainer ... Hyprland größer machen als es jetzt ist .. 
+
+und ich denke das wayland .... die Dudes ... das gerne sehen ... 
+da könnte dann vielleicht eine Partnerschaft enstehen ... 
+
+und ich bin nicht abgeneigt IBM quasi in dem aspekt Kooperativ 
+als Partner zu gewinnen .... 
+
+vor allem wenn man bedenk das ich bessere arbeits und lebensverhältnisse 
+aufbauen will um schluss endlich voll issoliert , am kernel dann nativer 
+weiter runter arbeiten will ... 
+
+damit wäre es für diese firma möglich , auf dauer .... vom linux kernel weg 
+zum pylovara-kernel zu gehen ... 
+
+und die syntax selbst , ist überzeugend genug ( und das ist stark untertrieben )
+
+
+
+sprache  starzeit 
+
+C         2ms

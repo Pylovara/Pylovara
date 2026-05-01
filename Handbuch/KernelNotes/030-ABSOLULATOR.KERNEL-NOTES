@@ -57,18 +57,17 @@ ABSOLULATOR-KERNKLASSE § ABK
 ### RELEVANZ = MASK
 ### OPCODE   = [HEX|DEZ]
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## INFO = 
+## INFO = MASTER SCHALTUNG FÜR MASU-MASELT
 
 ABSOLULATOR-ALPHAKLASSE § ABALPHA-
 
-MODULATOR ® MODUL 00-01
- ABSK = 
-
+MODULATOR ® MODUL 00
+ ABSK = MASK-MASH-REGISTER-MASU-MASELT
 
 VATRON KONTROLLE:
- © 
- © 
-
+ © MA          - <MASK>
+ © MA0         - <REGISTER>
+ © MA1         - <MASU-MASELT>
 
 MORPHIC-SYNTAX: 
    KOPF:
@@ -79,10 +78,36 @@ MORPHIC-SYNTAX:
    PIPE:
    PIPE:
 
+##
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+### MODUL 01 
+### NAME = TRANSAKTIONSRAHMEN
+### RELEVANZ = TRANK
+### OPCODE   = [HEX|DEZ]
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+## INFO = TRANSAKTIONSRAHMEN KOMPLETT
+
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-
+
+MODULATOR ® MODUL 01
+ ABSK = 
+
+VATRON KONTROLLE:
+ © MA1         - <MASU-MASELT>
+ © 
+ © 
+
+MORPHIC-SYNTAX: 
+   KOPF:
+  START:
+   FOOD:
+   PIPE:
+   PIPE:
+   PIPE:
+   PIPE:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-
 
 
 

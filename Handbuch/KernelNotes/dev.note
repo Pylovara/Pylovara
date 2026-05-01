@@ -427,3 +427,114 @@ SYSTEM PAUSE =
   »[~RAM-LÖSCHEN~]«««ſ
 
 !¢
+
+
+ich hab was gefunden das eventuell eine live zusammenarbeit 
+bewerkstelligen könnte 
+
+ritwickdey.LiveServer 
+
+quasi = Live share 
+
+wäre interessant wenns ums einarbeiten geht etc ... 
+
+
+
+syntax highlights probe : 
+
+{
+  "highlight.regexes": {
+    "(¢!|!¢)": {
+      "regexFlags": "g",
+      "decorations": [
+        { "backgroundColor": "#2d2d2d", "color": "#ff79c6", "fontWeight": "bold", "border": "1px solid #ff79c6", "borderRadius": "3px" }
+      ]
+    },
+    "(»[ ]«|»\\[.*?\\]«)": {
+      "regexFlags": "g",
+      "decorations": [
+        { "color": "#8be9fd", "fontWeight": "bold", "fontStyle": "italic" }
+      ]
+    },
+    "(±|¶|¶¶|¬·|÷|¤=|§|$|©|↑|↓|×)": {
+      "regexFlags": "g",
+      "decorations": [
+        { "color": "#ffb86c", "fontWeight": "bold" }
+      ]
+    },
+    "(#.*$)": {
+      "regexFlags": "gm",
+      "decorations": [
+        { "color": "#6272a4", "fontStyle": "italic" }
+      ]
+    }
+  }
+}
+
+vermerk : 
+code --install-extension fabiospampinato.vscode-highlight
+
+erleichtert das visuelle vielleicht ... momentan ist alles weiß 
+Ultra Dark auf Kontrast Text ... aber nur weiß ... 
+
+ist zwar gut aber ich denke ich es wäre sinnvoll elemente per highlight 
+besser zu visualisieren , erleichtert die übersicht ...
+
+test phase ... wenn nicht geil ... weg damit ... 
+
+
+auf dauer :
+
+npm install -g yo generator-code
+yo code
+# → "New Language Support" → Name: Pylovara MCS → Id: pylovaramesh
+# → Extension Name: pylovara-mcs
+# → File Extension: -core
+# → File Extension: -manager
+# → File Extension: -node
+# → File Extension: -nano 
+# → File Extension: -micro 
+# → File Extension: -needle 
+
+vielleicht auch gleich 
+
+# → File Extension: -visu 
+# → File Extension: -sound 
+# → File Extension: -render 
+# → File Extension: -
+
+
+
+
+
+
+Ich denke ich bau mir jetzt erstmal eine inspirations schaltung und das am aller besten als baum .... 
+angeschlossen am herzschlag selbst ..... ohne boxis hinahlte , sondern reine syntax strukuren ... 
+ein kunst werk der schaltungs technik , für den einen oder anderen tag eines augeschmausinspirationsmomentfassenden Blitzgedanken moment ...
+weniger realismus den driver schaltung .... viel mehr das model der möglichkeits freien bauweise .... 
+
+
+ja man ..... ja man !
+
+
+
+
+
+
+
+»[]« 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

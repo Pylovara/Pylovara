@@ -427,19 +427,13 @@ VATRON KONTROLLE:
  © AK1         - <AKTU-START>
  © PIP1        - <POIPIPE-PIPE-START>
  © PIP2        - <POICOM-BOXK>
- © 
- ©
- ©
- ©
- ©
- ©
- ©
- ©
- ©
+ © PIP3        - <POICOM-TRENK>
+ © PIP4        - <POICOM-POOK>
+ © PIP6        - <POIAN-PIPE-ENDE>
 
 MORPHIC-SYNTAX: 
    KOPF:
-  START: »[<BOXK>
+  START: »[<BOXK><TRENK><POOK>]«
    FOOD:
   KANAL:
   KANAL:

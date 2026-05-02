@@ -343,26 +343,27 @@ schaltung drinne habe
 
 hmmm ... 
 
+      ¿¹
 ¬·¤› »[{<NAME>; <WERT>}]«
 
-      ¿
+      ¿¹
 ¬·¤› »[{<NAME>; <WERT>}]«
 
-      ¿
+      ¿¹
 ¬·¤› »[{<NAME>; <WERT>}]«
 
-      ¿
+      ¿¹
 ¬·¤› »[{<NAME>; <WERT>}]«
 
-      ¿
+      ¿¹
 ¬·¤› »[{<NAME>; <WERT>}]«
 
-      ¿
+      ¿¹
 ¬·¤› »[{<NAME>; <WERT>}]«
 
-      ¶ ¬· 
+      ¶ ¬· »['echo "Hardware Versorgung OK"']«
 
-      ¶¶ ¬·
+      ¶¶ ¬· »[~FLAG-SEND && COPIE~ZU /Pylovara/Hardware/needlexxx.system-flag~]«
 
 
 

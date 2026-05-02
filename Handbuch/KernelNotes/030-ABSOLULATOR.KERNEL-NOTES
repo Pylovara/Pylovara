@@ -76,10 +76,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: <MASK>
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -108,10 +108,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: ¢! <MASK> !¢
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -134,10 +134,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: ¢! <MASK> 
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -166,10 +166,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: [<BOXK>]
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -192,10 +192,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: [<BOXK>
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -219,10 +219,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: [<FEK>]
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -245,10 +245,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: [<FEK>
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -272,10 +272,10 @@ MORPHIC-SYNTAX:
    KOPF:
   START: [<POOK>]
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
@@ -298,63 +298,64 @@ MORPHIC-SYNTAX:
    KOPF:
   START: [<POOK>
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 ## INFO = AUSFÜHRBARES PIPE PROTEIN | BOXIS KOMPLETT
 
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-MA1
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-MA1AK1PIP1PIP2PIP6AK3
 
 MODULATOR ® MODUL 02-03
- ABSK = 
+ ABSK = AKT-AKTH-IMPULS-AKTU-START-POIK-POIH-PIPE-POIPIPE-PIPE-START-POICOM-BOXK-POIAN-PIPE-ENDE-AKTAN-ENDE
 
 MORPHIC-1 = 
 
 VATRON KONTROLLE:
  © MA1         - <MASU-MASELT>
- © 
- © 
- © 
- © 
+ © AK1         - <AKTU-START>
+ © PIP1        - <POIPIPE-PIPE-START>
+ © PIP2        - <POICOM-BOXK>
+ © PIP6        - <POIAN-PIPE-ENDE>
+ © AK3         - <AKTAN-ENDE>
 
 MORPHIC-SYNTAX: 
    KOPF:
   START: »[<BOXK>]«
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
-## INFO = AUSFÜHRBARES PROTEIN | BOXIS OFFEN
+## INFO = AUSFÜHRBARES PIPE PROTEIN | BOXIS OFFEN
 
-ABSOLULATOR-ALPHAKLASSE § ABALPHA-MA1
+ABSOLULATOR-ALPHAKLASSE § ABALPHA-MA1AK1PIP1PIP2
 
 MODULATOR ® MODUL 02-03-01
- ABSK = 
+ABSK = AKT-AKTH-IMPULS-AKTU-START-POIK-POIH-PIPE-POIPIPE-PIPE-START-POICOM-BOXK 
 
 MORPHIC-1 = 
 
 VATRON KONTROLLE:
  © MA1         - <MASU-MASELT>
- © 
- © 
- © 
+ © AK1         - <AKTU-START>
+ © PIP1        - <POIPIPE-PIPE-START>
+ © PIP2        - <POICOM-BOXK>
 
 MORPHIC-SYNTAX: 
    KOPF:
   START: »[<BOXK>
    FOOD:
-   PIPE:
-   PIPE:
-   PIPE:
-   PIPE:
+  KANAL:
+  KANAL:
+  KANAL:
+  KANAL:
 
 ##
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

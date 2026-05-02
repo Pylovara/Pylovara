@@ -41,12 +41,12 @@ ABSOLULATOR-KERNKLASSE § ABK
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 # SYSTEMATISCHE ABFOLGE :
 #
-# ABALPHA-GA8TATA0TA1TA2TA3
-# │       │  │  │  │  │  │
-# │       │  │  │  │  │  └─ TA3 (TRANAN-ENDE)
-# │       │  │  │  │  └─── TA2 (TRANSYS-MASK)
-# │       │  │  │  └────── TA1 (TRANU-START)
-# │       │  │  └───────── TA0 (TRANH-RUN)
+# ABALPHA-MA1TATA0TA1TA2TA3
+# │       │  │ │  │  │  │
+# │       │  │ │  │  │  └─ TA3 (TRANAN-ENDE)
+# │       │  │ │  │  └──── TA2 (TRANSYS-MASK)
+# │       │  │ │  └─────── TA1 (TRANU-START)
+# │       │  │ └────────── TA0 (TRANH-RUN)
 # │       │  └──────────── TA  (TRANK)
 # │       └─────────────── MA1 (MASU-MASELT) (ALTERNATIV G8)
 # └─────────────────────── ABALPHA (Absolulator Alpha-Klasse)

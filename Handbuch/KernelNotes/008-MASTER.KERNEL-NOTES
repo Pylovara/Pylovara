@@ -75,17 +75,31 @@ FUNKTION = BEZEICHNUNGSSCHALTUNG
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
-MASU-001-DATENTYPEN.KERNEL-NOTES
+MASU-SYSTEM-LEXIKON
 
- INFO-ID ¡ DAT
+ INFO-ID ¡ lex 
 
-$ 0
+$ 000-LEXIKON.KERNEL-NOTES
 
- FUNKTION = 
+ FUNKTION = ÜBERSICHT 
 
- MASTERWORT = 
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+MASU-DATENTYPEN
+
+ INFO-ID ¡ DA
+
+$ 001-DATEITYPEN.KERNEL-NOTES
+
+ FUNKTION = EINORDNUNG | BION
+
+ MASTERWORT = DAELT
 
 MORPHIC-0 =
+
+DATENTYPEN KERNKLASSE § DAK
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
  
 ### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
  # MASTERWORT = MASELT

@@ -1,14 +1,14 @@
 @kernel-nr: 995 # L3_COMMERCIALLICENSING | STATUS = PROTO
-### ==== ##### == # = STARTPUNKT LICENZ-LAYER L3 == # == ##### === ###
+### ==== ##### == # = STARTPUNKT LIZENZ-LAYER L3 == # == ##### === ###
 
 1. Grundsatz der freien Privatnutzung
 
-    Die Nutzung von MCS/Pylovara für Einzelpersonen zu Lernzwecken,
-    Hobby, Forschung und persönlichen Projekten ist vollständig
+    Die Nutzung von Pylovara-System für Einzelpersonen zu Lernzwecken,
+    Hobby, Forschung und persönlichen Projekten - ist vollständig
     kostenfrei.
 
-    Es ist keine Registrierung und keine
-    Gebühr erforderlich.
+    Es ist jedoch eine ID-DNA Registrierung erforderlich , die keine
+    Gebühr verlangt.
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -27,6 +27,12 @@
 
     Staatliche und militärische Institutionen.
 
+    Und beinhaltet das Aktzeptieren vom KGW System, das Im 
+
+    Pylovara-Store als Dominierende Währung Explizit Zur 
+
+    Vefügung Steht .
+
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 3. Lizenz-Klassen (Auszug)
@@ -41,13 +47,19 @@
 
 4. Technischer Lizenz-Enforcement (Kernel-Ebene)
 
-    Der Kernel überwacht die Lizenz-Flags über DIMS.
+    Der Kernel überwacht die Lizenz-Flags über den ID-DNA-Main-Kernel
+    Instanz.
+
+    Dies sind Punktuelle Kontrollen die die System Integrität Prüfen.
+
     Bei schweren Verstößen (z.B. Quellfälschung,
     Verschleierung des Autors) reagiert das System abgestuft:
 
     Deaktivierung von Warp-Modulen.
 
     Blockierung von Runtime-Funktionen.
+
+    Disktrikte Verkaufsmöglichkeiten im Pylovara-Store.
 
     Permanent-L3-Block (nur durch Thomas Zimmermann entsperrbar).
 
@@ -60,6 +72,10 @@
     gegenüber offengelegt werden. Die Verschleierung von 
     KI-Urheberschaft als menschliche Eigenleistung führt zum 
     sofortigen Entzug des L3-Mandats.
+
+    KI-Generierte Produkte sind ausnahmslos - Kostenlos.
+
+    Menschliche Produkte sind ausnahmslos - Eigenleistung
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 #    Abschluss L3:

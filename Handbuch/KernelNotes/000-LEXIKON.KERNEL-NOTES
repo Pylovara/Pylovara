@@ -1,4 +1,4 @@
-﻿@kernel-nr: lex Ð SYSTEM-LEXIKON # # ##     ## #   #      #         #
+﻿@kernel-nr: lex Ð SYSTEM-LEXIKON # # ###    ## #   #      #         #
 ##  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ##
  #     · KEIN EINTRAG | 0 KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
@@ -16,14 +16,15 @@
  #   17  - X  DATEITYPEN         | 18  + 0  VATRON                  #
  #   19  + 0  RETRON             | 20  - X  MATRIX                  #
  #   21  X Ŋ  HERZSCHLAG         | 22  + 0  KKIS                    #
- #   23  + 0  GENERALSCHALTUNG   | 24  + 0  VALIDIERUNGSPROTOCOL    #
- #   25  + 0  NITROX             | 26  + X  SYNAPTOR                #
+ #   23  + 0  GENERALSCHALTUNG   | 24  + 0  NITROX                  #
+ #   25  + 0  SYNAPTOR           | 26  ··                           #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
- #   NR HINWEIS PROGRAMMIERUNG | NR HINWEIS PROGRAMMIERUNG          #
- #:::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::::#
- #   30  - Ŋ  ABSOLULATOR      | 31  - ·   SCHABLONATOR             #
- #   32  - ·  MODULATOR        | 33  - ·   CHIPONATOR               #
- #   34  + 0  MORPHIC          | 35  - ·   BAUMODUS                 #
+ #   NR HINWEIS PROGRAMMIERUNG     | NR HINWEIS PROGRAMMIERUNG      #
+ #:::::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::#
+ #   30  - Ŋ  ABSOLULATOR          | 31  - ·   SCHABLONATOR         #
+ #   32  - ·  MODULATOR            | 33  - ·   CHIPONATOR           #
+ #   34  + 0  MORPHIC              | 35  - ·   BAUMODUS             #
+ #   88  - ·  VALIDIERUNGSPROTOCOL
 ### ==== ##### == # === ### SYSTEM LOGIKEN  ### === # == ##### === ###
  #   NR    HINWEIS  NAMEN                                           #
  #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::#
@@ -35,11 +36,11 @@
  #   805   MCS      MASCHINEN-CODE-SPEECH SYNTAX LAW                #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
  #   993   L1_COREKERNELMANDAT               ###   # # #    #   # # #
- #   994   L2_AUTHORRIGHTS                   #    #     #           #
+ #   994   L2_AUTHORRIGHTS                   ##   #     #    #      #
  #   995   L3_COMMERCIALLICENSING            #   Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      ##   ##  #    #   #   ##
  #   997   L5_POST_MORTEM-CONTROL            #  #   #  #  #      #  #
- #   998   L6_IMMUTABLE_CORES_DEFINITION     #    ##          #     #
+ #   998   L6_IMMUTABLE_CORES_DEFINITION     #    ##  #       #     #
  #   999   LICENSE—MANIFEST.PROTO            # #  #    # #  #  #  # #
 ### ==== ##### == # === ### VERSIONSDATEN = ### === # == ##### === ###
  # SYSTEM = PNS 2.6.2 PYLOVARA—NETZWERK—SYSTEM                      #

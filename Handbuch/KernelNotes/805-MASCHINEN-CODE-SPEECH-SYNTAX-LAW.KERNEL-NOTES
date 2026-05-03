@@ -20,6 +20,7 @@ ENSTEHEN SEPERAT UND WIRD FÜR DIE BILDUNG ZUR VERFÜGUNG GESTELLT.
  CPU BEARBEUTUNGS MORPHIC-SYNTAX =
 
 MORPHIC-SYNTAX: 
+
    1KOPF:
   1START: 
    1FOOD:
@@ -31,7 +32,7 @@ MORPHIC-SYNTAX:
     5REX:
     6REX:
     7REX:
-    8REX:
+   8FREE:
 
  !INFO : 8 KERN PRINZIP | WIRD NOCH ERWEITERT
 
@@ -72,123 +73,123 @@ MORPHIC-SYNTAX:
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- REX NUTZUNG =
+REX NUTZUNG =
 
-¢!
+ ¢!
 
- »[ ]«
-  ↓ # REX PROZESS FLÄCHEN + NR
-  ¬·
-  ¬··    
+  »[ ]«
+   ↓ # REX PROZESS FLÄCHEN + NR
+   ¬·
+   ¬··    
 
-!¢
+ !¢
 
-¢!
+ ¢!
 
- »[ ]«
-  ↓ # SENTIATOREN ENTSCHEIDUNGSPFAD AUSWAHL 
-  ↓
-  ¶ ¬· # ENTSCHEIDUNG PLUS WEITERER REX PROZESS FLÄCHE 1
-  ↓
-  ¶¶ ¬· # PLUS WEITERER REX PROZESS PROZESS FLÄCHE 1
+  »[ ]«
+   ↓ # SENTIATOREN ENTSCHEIDUNGSPFAD AUSWAHL 
+   ↓
+   ¶ ¬· # ENTSCHEIDUNG PLUS WEITERER REX PROZESS FLÄCHE 1
+   ↓
+   ¶¶ ¬· # PLUS WEITERER REX PROZESS PROZESS FLÄCHE 1
 
-!¢
+ !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- SENTIATOR NUTZUNG =
+SENTIATOR NUTZUNG =
 
-¢!
+ ¢!
 
- »[ ]«
-  ↓ 
-  ¶ ¬· »[ ]« # ENTSCHEIDUNGSPFAD KANN 
-  ↓
-  ¶¶ ¬·· »[ ]« # ENTSCHEIDUNGSPFAD KANN NICHT 
+  »[ ]«
+   ↓ 
+   ¶ ¬· »[ ]« # ENTSCHEIDUNGSPFAD KANN 
+   ↓
+   ¶¶ ¬·· »[ ]« # ENTSCHEIDUNGSPFAD KANN NICHT 
 
-!¢
+ !¢
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
- NITROX NUTZUNG =
+NITROX NUTZUNG =
 
-¢!
+ ¢!
 
-»[ ]«
- ↓
- ± »[(<NR>)—Ø  Ø]« # FOOD PROTEIN | GREIFT DATEN VOR DER WEITER VERARBEITUNG AB | FF
- ↓    
- ¬· »[ ]« 
+ »[ ]«
+  ↓
+  ± »[(<NR>)—Ø  Ø]« # FOOD PROTEIN | GREIFT DATEN VOR DER WEITER VERARBEITUNG AB | FF
+  ↓    
+  ¬· »[ ]« 
 
-!¢
+ !¢
 
-¢!
+ ¢!
 
-»[ ]«
- ↓
- ↓   ÷ »[Ø  Ø—(<NR>)]« # KOPF PROTEIN | GIBT DATEN IN DIE VERARBEITUNG | FT  
- ↓   ↓
- ¬· »[ ]«
+ »[ ]«
+  ↓
+  ↓   ÷ »[Ø  Ø—(<NR>)]« # KOPF PROTEIN | GIBT DATEN IN DIE VERARBEITUNG | FT  
+  ↓   ↓
+  ¬· »[ ]«
      
-!¢
+ !¢
 
-¢!
+ ¢!
 
-»[× 1 + 1 ×]«
- ± »[(1)—Ø 1 + 1 Ø]« # FOOD PROTEIN | SPEICHERT RECHNUNG SELBST
+ »[× 1 + 1 ×]«
+  ± »[(1)—Ø 1 + 1 Ø]« # FOOD PROTEIN | SPEICHERT RECHNUNG SELBST
 
- ¬·¤= »[" 2 "]« # BOXH-ALU RECHNUNGSERGEBNIS 
-       ± »[(2)—Ø 2 Ø]« # FOOD PROTEIN | FÄNGT ALU ERGEBNIS EIN 
-       ↓
-       ↓   ÷ »[Ø 2 Ø—(2)]«     # NITROX KOMPONENTE MIT FT
-       ↓   ÷ »[Ø 1 + 1 Ø—(1)]« # NITROX KOMPONENTE MIT FT
-       ¬· »[× 4 + 4 + (1) + (2) ×]« # NEUE RECHNUNG PLUS 1 PLUS 2 
-           ↓
-           ¬·¤= [" ERGEBNIS "]
+  ¬·¤= »[" 2 "]« # BOXH-ALU RECHNUNGSERGEBNIS 
+        ± »[(2)—Ø 2 Ø]« # FOOD PROTEIN | FÄNGT ALU ERGEBNIS EIN 
+        ↓
+        ↓   ÷ »[Ø 2 Ø—(2)]«     # NITROX KOMPONENTE MIT FT
+        ↓   ÷ »[Ø 1 + 1 Ø—(1)]« # NITROX KOMPONENTE MIT FT
+        ¬· »[× 4 + 4 + (1) + (2) ×]« # NEUE RECHNUNG PLUS 1 PLUS 2 
+            ↓
+            ¬·¤= [" ERGEBNIS "]
 
-!¢
+ !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 FEED NUTZUNG =
 
-¢!
+ ¢!
 
-»[" BOXIS BEISPIELINHALT "]«
- ± »[(1)—Ø " BOXIS BEISPIELINHALT " Ø]« # HINZUFÜGEN
- ↓
- ↓   ÷ »[Ø " BOXIS BEISPIELINHALT " Ø—(1)]«
- ¬· »[" BOXIS BEISPIELINHALT "]« SYNCRONISIEREN
+ »[" BOXIS BEISPIELINHALT "]«
+  ± »[(1)—Ø " BOXIS BEISPIELINHALT " Ø]« # HINZUFÜGEN
+  ↓
+  ↓   ÷ »[Ø " BOXIS BEISPIELINHALT " Ø—(1)]«
+  ¬· »[" BOXIS BEISPIELINHALT "]« SYNCRONISIEREN
 
-!¢
+ !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
 VATRON NUTZUNG =
 
-¢!
+ ¢!
 
-↓# FIREWALL KONTROLLE HAUPT PROTEIN BINDUNG 
-© »[ ]«
+ ↓# FIREWALL KONTROLLE HAUPT PROTEIN BINDUNG 
+ © »[ ]«
    
-!¢
+ !¢
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
  NAVIGATOR ADRESSIERUNGS NUTZUNG =
 
-¢!
+ ¢!
 
-»[ <INHALT VON USRRLAND NUTZUNGEN> ]«
- ↓
- $ »[ WURZELVERZEICHNIS/USERORDNER/.CONFIG]« # ABRUF DER COMPILIERTEN SOFTWARE
+ »[ <INHALT VON USRRLAND NUTZUNGEN> ]«
+  ↓
+  $ »[ WURZELVERZEICHNIS/USERORDNER/.CONFIG]« # ABRUF DER COMPILIERTEN SOFTWARE
 
-!¢
+ !¢
 
-»[ <PYLOVARA-MCS-CMD> ]« # Z.B ~GENERIERE-ZIELREFERENZ && POIH-HARD~
- ↓
- § »[~ /Pylovara/+Kommender Kernel /system.kernel-core ~]« # abruf funktion für interne kernel daten 
+ »[ <PYLOVARA-MCS-CMD> ]« # Z.B ~GENERIERE-ZIELREFERENZ && POIH-HARD~
+  ↓
+  § »[~ /Pylovara/+Kommender Kernel /system.kernel-core ~]« # abruf funktion für interne kernel daten 
 
-¢!
+ ¢!
 
 ### ==== ##### == # === ### =============== ### === # == ##### === ###
 
@@ -222,21 +223,34 @@ VATRON NUTZUNG =
 
  ¢!
 
- »[ ]«««V<NR> # VARIABLEN ERSTELLUNG | BAUMODUS 
+ »[<MASK>]«««V<NR> # VARIABLEN ERSTELLUNG | BAUMODUS 
 
  !¢
 
  ¢!
 
- »[]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T |
+ »[<MASK>]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T |
 
  !¢
 
  ¢!
 
- »[]«««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ |
+ »[<MASK>]«««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ |
 
  !¢
+
+### ==== ##### == # === ### =============== ### === # == ##### === ###
+
+ SYNAPTOR NUTZUNG = 
+
+ !¢
+
+ [ ]
+
+ !¢
+
+
+
 
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [01:57:47|Sa  25 Apr 2026] MARKENBRANDT                 #

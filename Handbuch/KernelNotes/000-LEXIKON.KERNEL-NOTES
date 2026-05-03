@@ -1,4 +1,4 @@
-﻿@kernel-nr: lex Ð SYSTEM-LEXIKON # # ###    ## #   #      #         #
+﻿@kernel-nr: lex Ð SYSTEM-LEXIKON # # ###    ## #   ##     #         #
 ##  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ##
  #     · KEIN EINTRAG | 0 KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
@@ -14,10 +14,9 @@
  #   13  - Ŋ  WARP               | 14  + 0  NAVIGATOR               #
  #   15  + 0  IDENTIFIKATION     | 16  + 0  MCSCMD                  #
  #   17  - X  DATEITYPEN         | 18  + 0  VATRON                  #
- #   19  + 0  RETRON             | 20  - X  MATRIX                  #
- #   21  X Ŋ  HERZSCHLAG         | 22  + 0  KKIS                    #
- #   23  + 0  GENERALSCHALTUNG   | 24  + 0  NITROX                  #
- #   25  + 0  SYNAPTOR           | 26  ··                           #
+ #   19  + 0  RETRON             | 20  - X  HERZSCHLAG              #
+ #   21  X Ŋ  KKIS               | 22  + 0  GENERALSCHALTUNG        #
+ #   23  + 0  NITROX             | 24  + 0  SYNAPTOR                #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG     | NR HINWEIS PROGRAMMIERUNG      #
  #:::::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::#
@@ -35,13 +34,13 @@
  #   804   KKI      KOGNITIVE-KÜNSTLICHE-INTELLIGENZ-SHIVABAAL      #
  #   805   MCS      MASCHINEN-CODE-SPEECH SYNTAX LAW                #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
- #   993   L1_COREKERNELMANDAT               ###   # # #    #   # # #
+ #   993   L1_COREKERNELMANDAT               ###     # #    #   #   #
  #   994   L2_AUTHORRIGHTS                   ##   #     #    #      #
  #   995   L3_COMMERCIALLICENSING            #   Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      ##   ##  #    #   #   ##
  #   997   L5_POST_MORTEM-CONTROL            #  #   #  #  #      #  #
- #   998   L6_IMMUTABLE_CORES_DEFINITION     #    ##  #       #     #
- #   999   LICENSE—MANIFEST.PROTO            # #  #    # #  #  #  # #
+ #   998   L6_IMMUTABLE_CORES_DEFINITION     #     #      #   #     #
+ #   999   LICENSE—MANIFEST.PROTO            # #  #    #    #  #  # #
 ### ==== ##### == # === ### VERSIONSDATEN = ### === # == ##### === ###
  # SYSTEM = PNS 2.6.2 PYLOVARA—NETZWERK—SYSTEM                      #
  # KERNEL = MCS 7.2 MASCHINEN-CODE-SPEECH | MASTER—CONTROL—SYSTEM   #

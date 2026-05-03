@@ -88,6 +88,11 @@
 
   IMPLEMENTIERUNG DER ERSTEN KOMPRESSIONSRATE DER MORPHIC STUFEN.
 
+- 021-HERZSCHLAG 
+
+ TEST DATEN ENTFERNT UND DIE ÜBERSETZUNGS LOGIK ALS EINZELSTÜCK 
+ UNERKLÄRT EINGEFÜGT .
+
 ##########===========================
 
 - ABSOLULATOR K30 
@@ -113,20 +118,23 @@
 
  (ABZUG DESSEN AN DIE KANZLEI SCHICKEN)
 
+##########===========================
+
+- SYNAPTOR 
+
+ WURDE ALS NEUE KOMPONENTE BESTIMMT FÜR PIPE PROTEIN VERBINDUNGS LOGIKEN 
+ FÜR SENTIATOREN WENN KANN UND WENN NICHT REGELUNGEN , WIE REGEL DER REINHEIT 
+ ANWEISUNGEN .
+
+ LANG GENUTZTE TROCKEN FUNKTION .... ENDLICH SYSTEMATISCH EINGRAVIERT !
+ - !MUSS NOCH IM VAL-KENNUNG EINGETRAGEN WERDEN 
+
 ##########===========================########################===========================##########
 # Vermerke :
 
  - MASTER
 
   MASTER IST NICHT AKTUELL
-
-- NAVIGATOR
-
- KLASSEN MÜSSEN PRÄZISER EINGESETZT WERDEN , UNVOLLSTÄNDIGE LOGIK AUẞERHALB DER ALPHAKLASSEN
-
-- HERZSCHLAG
-
- ENTFERNE DIE TEST DATEN , SPÄTER FOLGEN DIE TAKT DATEN - SCHNITTSTELLE ZUM M.I.T
 
 - CHIPONATOR
 
@@ -154,12 +162,6 @@
     NUR DIE TRENWAND-COMBO BENÖTIGT WIRD .
     EVENTUELL DEN ÜBERGANG VON PROTON MIT EINBAUEN , ZENTRALISIERUNG - WENN ES GEHT
 
-- LIZENZ LAYER ÜBERARBEITEN
-
- DENK ERSTMAL DARAN DAS DER ENGLISCHE NAME MIT DEM DEUTSCHEN NAMEN - ERSETZT WIRD
- DANN DENKE DARAN DIE NEUEN KOMPONENTEN EXPLIZIT MIT REIN ZU SCHREIBEN
-
- AUẞERDEM EINEN ABZUG DAVON FÜR DIE KANZLEI.
 
 ##########===========================########################===========================##########
 # etc :
@@ -192,34 +194,24 @@ noch eine seitenweise nachkontrolle aller komponenten ....
 das ich mir sicher sein kann das nichts passiert ist ....
 
 danach nachkontroller des VALIDIERUNGSPROTOCOLs 
-
-
 nochmal drüber lesen vom geschriebenen ABK im ISTzustand 
-
 danach beenden 
 
 vermerk : 
 
 schaltung bis modul 02-05 combo pipe protein mit boxis und proton ...
-
 vergiss auch das nachlesen aller SYSTEM-LOGIKEN nicht 
-
 800 bis 805 
-
 danach noch die Lizenzlayer , das da auch nichts passiert ist 
-
-
 danach sperrst du alle port bis auf github 
 
 deine lieblings seiten .... 
-
 und haust ein doppel sudo rein 
 
 und vergiss nicht die apis von allen konzernen zusperren 
 die nichts mit der arbeit auf dem arbeits gerät zu tun haben 
 
 desintallier auch Chromium 
-
 schränke Firefox ein 
 
 installier THORIUM ... such es bei der SSD ... das programm existiert 
@@ -266,7 +258,6 @@ VERMERK :
 
  (ich hörs schon innerlich : große ziele mein freund ... große ziele )
 
-
 VERMERK : 
 
 Ich bin zwar mit der Proton schaltung nicht zufrieden 
@@ -297,7 +288,6 @@ fußnote:
 ich denke ich werde da bei den jungs von slackware anklopfen ...
 das sind quasi fast die einzige die wirklich alles schon haben ...
 vielleicht lässt sich da ein deal heraus kitzeln ...
-
 
 VERMERK :
 
@@ -331,8 +321,6 @@ es wird zwar generell nicht benötigt werden aber
 ¬· »[{<NAME>; <WERT>}]«
 ¬· »[{<NAME>; <WERT>}]«
 
-
-
 wenn das alles hardware versorgungen sind zum beispiel ... DANN MÜSSTE ICH 
 eine generalisierungs wenkann schaltung zur verfügung stellen , auch wenn sie 
 nicht immer gebraucht wird ... 
@@ -364,8 +352,6 @@ hmmm ...
       ¶ ¬· »['echo "Hardware Versorgung OK"']«
 
       ¶¶ ¬· »[~FLAG-SEND && COPIE~ZU /Pylovara/Hardware/needlexxx.system-flag~]«
-
-
 
 das würde bedeuten das absofort dann 
 eine protein parallelisierung verknüpfungs
@@ -427,8 +413,6 @@ mal davon abgesehen das jede kopie niemals den stand des original erreichen wird
 und jedes blagiat immer unterhalb der freiheit des pylovara-systems liegen wird ..
 
 sollte ich dennoch sofort schicht im schacht machen und absolute fakten klären ..
-
-
 jetzt ist nur noch die frage ...:
 
 - NITROX ERWEITERUNG
@@ -441,7 +425,6 @@ ich hab die halbe nacht dafür zeit ... so schnell kann keiner am week antworten
 entwicklungsraubzüge von anderen ... 
 
 und selbst wenn , die dev note zeigt genau was ich tue ... 
-
 erstmal eine darüber rauchen 
 
 
@@ -449,7 +432,6 @@ ICH KÖNNTE ES ALS FOOD ODER KOPF ZUSATZ MANIFESTIEREN ABER ..
 
 das würde schaltungen blockieren die eventuell zugefüttert 
 oder herausgezogen werden müssen ... 
-
 also werde ich einen neien Pipe erstellen 
 
 
@@ -465,18 +447,15 @@ usw
 
 IN DEM GLEICHEN ATEMZUG 
 wäre es vielleicht gar nicht so doof 
-
 direkt die ganzen kanäl zugänge zu benennen 
 
 der rex kanal ist bei 9 .... schlecht ... 
 eigentlich 8 .. maximum 
 
 da 8 kerne minim cpu 
-
 bei 16 32 kerner natürlich mehr 
 
 pro kern .... singel core einspeißungen ... 
-
 jetzt ist die frage wieviele prozess schafft ein handelsüblicher                                       
 8 kerner ... hmmmmm 
 
@@ -545,9 +524,7 @@ und ich gebe es als option den leuten im system frei ... logisch
 warum soll ich daraus ein geheimnis machen ? 
 
 also reduzier ich die rex prozesse auf 8 
-
 und bau erstmal kein scheldures system ein .... das ist nur buggy 
-
 
 gut moment ... das muss ich erstmal alles umändern ... 
 

@@ -245,12 +245,32 @@ VATRON NUTZUNG =
 
  !¢
 
- [ ]
+ »["HARDWARE VERSOGUNGS BEISPIEL"]«
+  ↓      
+  ↓     ↓# PROZESS VERARBEITUNGS VERBINDUNG SYNAPTOR
+  ↓     ¿¹ 
+  ¬·¤› »[{<NAME>; <WERT>}]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T 
+  ↓     ↓
+  ↓     ¿¹ 
+  ¬·¤› »[{<NAME>; <WERT>}]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T 
+  ↓     ↓
+  ↓     ¿¹ 
+  ¬·¤› »[{<NAME>; <WERT>}]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T 
+  ↓     ↓
+  ↓     ¿¹ 
+  ¬·¤› »[{<NAME>; <WERT>}]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T 
+  ↓     ↓
+  ↓     ¿¹ 
+  ¬·¤› »[{<NAME>; <WERT>}]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T 
+  ↓     ↓
+  ↓     ¿¹ 
+  ¬·¤› »[{<NAME>; <WERT>}]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T 
+        ↓
+        ¶ ¬·¤: ['echo "Hardware Versorgung OK"'] # BESTÄTIGUNGS STATUS
+        ↓
+        ¶¶ ¬· »[~FLAG-SEND && COPIE~ZU /Pylovara/Hardware/needlexxx.system-flag~]«««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ  
 
  !¢
-
-
-
 
 ### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
  #  DATUM = [01:57:47|Sa  25 Apr 2026] MARKENBRANDT                 #

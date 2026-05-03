@@ -162,6 +162,44 @@
     NUR DIE TRENWAND-COMBO BENÖTIGT WIRD .
     EVENTUELL DEN ÜBERGANG VON PROTON MIT EINBAUEN , ZENTRALISIERUNG - WENN ES GEHT
 
+##########===========================########################===========================##########
+
+Vermerk : 
+
+- Sentiatoren Klassen überarbeiten | Eigene Klassen 
+- Generell MUX und DEMUX Klasse Einfügen | Erleichterte BIONs Logiken 
+  - über diese klassen lassen sich verbesserte verarbeitungslogiken erstell
+- argugemente ab der nächsten version verbessern .. 
+  - doppel funktionsargumente implementieren 
+    wegen dem ram löschen plus zwei argument 
+    - implementierung durch verknüpfungs argumente 
+
+- NAVIGATOR TOTALE ÜBERARBEITUNG IN DER NÄCHSTEN VERSION 
+  - KERN KANÄLE HINZUFÜGEN 
+  - RAM KANÄLE HINZUFÜGEN 
+  - SÄMTLICHE SCHALTUNGEN HAUPTKLASSEN SPEZIELL EINORDNEN 
+  - ALHPAKLASSE SEPERAT HALTEN 
+
+!! 
+ICH SOLLTE GERNELL vielleicht eine MUXKLASSE und eine DEMUXKLASSE 
+einfügen damit es auch bei der arbeit damit einfacherer zu schreiben ist
+
+fußnote: 
+ich denke ich werde da bei den jungs von slackware anklopfen ...
+das sind quasi fast die einzige die wirklich alles schon haben ...
+vielleicht lässt sich da ein deal heraus kitzeln ...
+
+!!
+ICH DENKE DAS ICH DIE KONKETOR KLASSE FÜR DEN REX SPEZIELL MACHEN WERDE IN ZUCKUNFT 
+
+und die sentiatoren ihre eigene klasse bekommen , speziell für die 
+entscheidungs reflexe ... 
+muss es auch ..... alleine für die Bion's später .... 
+ich arbeite dennoch jetzt damit , ich kann es bei einer finalisierung immer noch 
+rekrusiv punktuell austauschen ... 
+und ich werde die regel der reinheit raus nehmen .... 
+sie wird explizit als argument gesetzt ... 
+
 
 ##########===========================########################===========================##########
 # etc :
@@ -188,76 +226,6 @@
 Sprache 
 
 
-für heute reicht es ...
-
-noch eine seitenweise nachkontrolle aller komponenten ....
-das ich mir sicher sein kann das nichts passiert ist ....
-
-danach nachkontroller des VALIDIERUNGSPROTOCOLs 
-nochmal drüber lesen vom geschriebenen ABK im ISTzustand 
-danach beenden 
-
-vermerk : 
-
-schaltung bis modul 02-05 combo pipe protein mit boxis und proton ...
-vergiss auch das nachlesen aller SYSTEM-LOGIKEN nicht 
-800 bis 805 
-danach noch die Lizenzlayer , das da auch nichts passiert ist 
-danach sperrst du alle port bis auf github 
-
-deine lieblings seiten .... 
-und haust ein doppel sudo rein 
-
-und vergiss nicht die apis von allen konzernen zusperren 
-die nichts mit der arbeit auf dem arbeits gerät zu tun haben 
-
-desintallier auch Chromium 
-schränke Firefox ein 
-
-installier THORIUM ... such es bei der SSD ... das programm existiert 
-sonnst nirgends mehr .... 
-
-lass sämtliche verbindungen Proticollieren und Ping bei eingehenden Bytes 
-sofort zurück ... 
-
-VERMERK : 
-
- - MASTER 
- ICH MACH JETZT GEMÜTLICH DIE MASTER AKTUALISIERUNG PER HAND 
- DANN WEIS ICH DAS ALLES SEINE RICHTIGKEIT HAT UND NIX DURCH 
-
- DIESES VS-CODE PLUGIN VERRÜCKT IST ... 
- ZWEI FLIEGEN MIT EINER KLAPPE ...
- - HÄTTE DAS MASTER SOWIESO AKTUALISIEREN MÜSSEN 
- VERMERK2 : NIEMALS MEHR LIVE-SHARE .... !!!!!
-
-
- DENK DRANN DAS GESAMTE LEXIKON NACH BEENDIGUNG DER 00-80 
- TEST TESCHNISCH VON *.KERNEL-NOTES 
-
- ZU *.KERNEL-CORE Umzuschreiben 
-
- bzw dateitypen teschnisch einzordnen 
- und die schaltungen direkt in schablonen zu schreiben ..
-
- mit viel glück könnte das schon zum selfhosting effeckt führen und 
- ich kann den demuts gang umgehen ... 
-
- was ich brauche sind nur gescheite schablonen vorlagen ... 
-
- wenn ich das schaffe , müssten mir alle kernel maintainer 
- respekt eingestehen - egal ob sie mich lieben oder hassen !
-
- am besten gleich kernel dateitypen ... wie damals in der semantik beschrieben 
-
- TYPNAME.DATEITYPEN-KERNEL 
- TYPNAME.TRANSAKTIONSRAHMEN-KERNEL 
-
- USW ... Das würden mehrere schablonen direkt eindeutig einordnen 
- für jeden schaltungsweg ..........
-
- (ich hörs schon innerlich : große ziele mein freund ... große ziele )
-
 VERMERK : 
 
 Ich bin zwar mit der Proton schaltung nicht zufrieden 
@@ -268,417 +236,5 @@ anders gestalten ?
 bis ich das mit mir selbst nicht geklärt habe - bleibt sie so wie sie 
 ist ..
 
-ich denke das ich in den proton schablonen später 
-jede bekannte chip variante explizit mit dem jeweiligen 
-opcode verbinden werde , damit kann das proton selbst 
-universal bleiben , wenn in den schablonen dann für 
-jede verbindung die als name angegeben wird , auch erkannt wird ..
 
-im grunde wird dann per schablone die treiber möglichkeit erweitert ..
 
-das wäre für das system denk ich der beste weg für die versorgung ..
-
-wenn namen falsch eingegeben werden , werden sie einfach nicht erkannt ..
-
-eine liste später im bereich system logiken mit einem proton namens liste 
-für die jeweilige hardware wäre nicht schlecht .... quasi als extra nutzung handbuch 
-aber mit in slexikon und als seiten eingraviert ... 
-
-fußnote: 
-ich denke ich werde da bei den jungs von slackware anklopfen ...
-das sind quasi fast die einzige die wirklich alles schon haben ...
-vielleicht lässt sich da ein deal heraus kitzeln ...
-
-VERMERK :
-
-Mir egal ob der roller am montag nicht läuft , die teile kommen erst gegen 07 
-..... dann lauf ich halt die 30kmh .... ich will morgen gemütlich arbeiten ... 
-nur so bekomm ich meinen innerlichen hass gegenüber dem sklaven system der gegenwart 
-unter kontrolle .... die wut in mir blockiert mein gehirn ...
-
-BLITZGEDANKE :
-
-ich sehe gerade das ich keinen nitrox protein verbinder für parallel laufende 
-prozesse habe .... dadurch lässt sich der sentiator wennkann und wenn nicht 
-garnicht mit allen prozesse koppeln , obwohl ich es die ganze zeit so schreibe 
-
-sie können zwar paralell laufen aber es kann kein sentiator mit dem duchgang 
-von allen durchläufen verbunden werden ... 
-
-es können nur sentiatoren pro pipe zugang geschaltet werden ... 
-wenn ich das regeln will , für eventualitäten ... besonders 
-bei späteren proton schaltungen für die hardware in needles 
-
-sollte ich zumindest die option für eine gesamten wenn kann und wenn nicht 
-verschaltung , programmieren ... 
-
-es wird zwar generell nicht benötigt werden aber 
-
-¬· »[{<NAME>; <WERT>}]«
-¬· »[{<NAME>; <WERT>}]«
-¬· »[{<NAME>; <WERT>}]«
-¬· »[{<NAME>; <WERT>}]«
-¬· »[{<NAME>; <WERT>}]«
-¬· »[{<NAME>; <WERT>}]«
-
-wenn das alles hardware versorgungen sind zum beispiel ... DANN MÜSSTE ICH 
-eine generalisierungs wenkann schaltung zur verfügung stellen , auch wenn sie 
-nicht immer gebraucht wird ... 
-
-ich denke das mach ich über NITROX ... es bietet sich an in damit auszubauen 
-und ich sollte es jetzt tun da ich im abk bis gerade noch keine NITROX 
-schaltung drinne habe 
-
-hmmm ... 
-
-      ¿¹
-¬·¤› »[{<NAME>; <WERT>}]«
-
-      ¿¹
-¬·¤› »[{<NAME>; <WERT>}]«
-
-      ¿¹
-¬·¤› »[{<NAME>; <WERT>}]«
-
-      ¿¹
-¬·¤› »[{<NAME>; <WERT>}]«
-
-      ¿¹
-¬·¤› »[{<NAME>; <WERT>}]«
-
-      ¿¹
-¬·¤› »[{<NAME>; <WERT>}]«
-
-      ¶ ¬· »['echo "Hardware Versorgung OK"']«
-
-      ¶¶ ¬· »[~FLAG-SEND && COPIE~ZU /Pylovara/Hardware/needlexxx.system-flag~]«
-
-das würde bedeuten das absofort dann 
-eine protein parallelisierung verknüpfungs
-schaltung eingebaut werden muss , damit man 
-
-wenn das alles nicht durchgelauf ist 
-eine wenn kann regel unten drann setzen kann 
-um damit dann den fehler log oder 
-einen reboot der prozess in gang zu setzen ..
-
-warum fällt mir das erst jetzt ein ? 
-
-ich schreibe jeden trank schon die ganze zeit 
-so und mir ist es nicht aufgefallen das ich es garnicht 
-rein programmiert habe ....
-
-okey ... dann wird es einfach dafür zeit ... 
-
-es ist bei manchen sachen nützlich und bei anderen 
-eben garnicht von nöten 
-
-wenn ich schlau bin , ordne ich das gleich wie bei 
-Retron ... als kanäle ein 
-
-die aber nur dann gelten wenn es im selben prozess feld 
-statt findet ... 
-
-somit wären wenn kann regelungen granular wie gesamt möglich..
-das würde die system granularität massivst steigern , ohne das 
-gesammt system umschreiben zu müssen , sondern lediglich nur 
-erweitern .... 
-
-aber ich bin noch gar nicht an dem punkt das system zu erweitern ..
-ich brauch noch den selfhosting effeckt ... 
-
-wäre es so dramatiosch die kleinichkeit schnell als schaltung in den 
-nitrox einzugravieren ? 
-
-hm .... 
-
-gut ... eigentlich bin ich schon fast dazu genötig es sofort zu regeln 
-den irgendwer ist immer ein hurensohn und klaut idden .. 
-wenn ich es sofort eingraviere , wars das ...
-
-ich erkenne aus 200 kilometer gegen den wind mit blinden augen 
-meine eigenen komponenten in jedem danach kommenden blagiat 
-
-davon abgesehen kann man das system eh nicht blagiatisieren .. 
-die syntax selbst lässt es schon nicht zu ... 
-
-und ich bekomme von jedem gericht dieses planeten recht ... 
-
-man könnte höchstens andere symbole verwenden und die namen ändern 
-... macht es aber dennoch zum plagiat .... und ich kann trotzdem 
-in millionen bis milliarden höhe jeden verklagen der das system 
-kopiert .... 
-
-mal davon abgesehen das jede kopie niemals den stand des original erreichen wird 
-und jedes blagiat immer unterhalb der freiheit des pylovara-systems liegen wird ..
-
-sollte ich dennoch sofort schicht im schacht machen und absolute fakten klären ..
-jetzt ist nur noch die frage ...:
-
-- NITROX ERWEITERUNG
-oder 
-- eigenständige Komponente 
-
-hmm ... 
-
-ich hab die halbe nacht dafür zeit ... so schnell kann keiner am week antworten auf 
-entwicklungsraubzüge von anderen ... 
-
-und selbst wenn , die dev note zeigt genau was ich tue ... 
-erstmal eine darüber rauchen 
-
-
-ICH KÖNNTE ES ALS FOOD ODER KOPF ZUSATZ MANIFESTIEREN ABER ..
-
-das würde schaltungen blockieren die eventuell zugefüttert 
-oder herausgezogen werden müssen ... 
-also werde ich einen neien Pipe erstellen 
-
-
-kopf
-»[Irgenddwas]«
-food
-sync
-kanal
-kanal
-kanal 
-
-usw 
-
-IN DEM GLEICHEN ATEMZUG 
-wäre es vielleicht gar nicht so doof 
-direkt die ganzen kanäl zugänge zu benennen 
-
-der rex kanal ist bei 9 .... schlecht ... 
-eigentlich 8 .. maximum 
-
-da 8 kerne minim cpu 
-bei 16 32 kerner natürlich mehr 
-
-pro kern .... singel core einspeißungen ... 
-jetzt ist die frage wieviele prozess schafft ein handelsüblicher                                       
-8 kerner ... hmmmmm 
-
-im grunde sollte ich bei maximal 8 kern logiken bleiben 
-den scheldures sollte ich vermeiden ... 
-da jede boxi schon ein , je nach trank , ein prozess mit sich führt 
-
-ich könnte höchstens bei install eine cpu abfrage mit rein hauen in die bion 
-später , die die kerne beziffert .... und demnach dann 16 oder 32 kanäle zulässt 
-
-wenn ich aber auf das mux verfahren des scheldures prinzip zurück greife 
-dann mach ich den selben fehler wie alle anderen systeme ... ich überlasste die cpu 
-taktrate und das führt zu einer kaugummi warnehmung ... 
-
-wenn ich ehrlich bleibe und die kanäle je nach cpu bestimme  
-dann haben entwickler später ein absolut prinzip und können 
-ihre sachen darauf präzise abstimmen ... 
-
-ohne dabei die hardware von irgendwen zu überbelassten ...
-
-das würde zwangsbedingt dafür sorgen das hardware nicht 
-künstlich langsamer gemacht werden kann , wenn ich später 
-im pylovara store explizit nur programme für den jeweiligen kern 
-dem jeweiligen user aufliste ... 
-
-würde aber auch bedeuten das der einzel entwickler für 8 / 16/ 32 
-kerne jeweils sein programm aufsetzt (wenn er das will) ... 
-
-wäre fairplay .... 
-
-und alles was man mit einem scheldures unterbaut , muss prinzipiell als 
-emulations programm in den infos angegeben werden ... 
-
-wenn ich da an riot games denke zum beispiel .... 
-die sind gern mal arschlöcher .... 
-
-und nicht nur die .... 
-
-bei der eigenen hardware kann ich sofort auf 64 kern prozessoren setzen 
-und die gatter nanometer muss keine 10 besitzen für perfekte übersetzungen ... 
-
-hmmm .... 
-
-prinzipiell würde ich sagen ... das ich anfänglich auf 8 kerne setze 
-
-das deckt die palette bis ... ufff ... 1998  ab ? 
-und umso neuer der prozessor mit 8 kernen , also kleiner nm gatter 
-umso effizienter für alle ... 
-
-das würde herstelle zwingen auf dauer nach mir zu bauen ... 
-
-die alten systeme werden es auf dauer sowieso nicht schaffen 
-mit der effizienz mit zu halten ... auch kein arm .... 
-
-die meisten grafikkarten haben sowieso eingebaute singel tracer 
-die laufen also auf einem kern ... selbst ab der rtx reihe ... 
-also sind bei kleinen kernen 7 kerne frei .... desktop und system prozesse 
-cirka 4 kerne ... 3 kerne übrig 
-
-durch scheldures verteilt auf alle ... aber will man das ? 
-
-bei einem full install pylovara wäre das dann geschichte ... 
-den wenn jemmand irgendwas einordnet dann ich ... 
-
-und ich gebe es als option den leuten im system frei ... logisch 
-warum soll ich daraus ein geheimnis machen ? 
-
-also reduzier ich die rex prozesse auf 8 
-und bau erstmal kein scheldures system ein .... das ist nur buggy 
-
-gut moment ... das muss ich erstmal alles umändern ... 
-
-gott sei dank war ich noch nicht so weit beim abk ... 
-das hätte unbedacht ausgesehen 
-
-und mein ruf ist mir verdammt wichtig .... wichtiger als lügerreien 
-
-HMM ... KOPF PLUS MAIN PLUS SYNC EIN PROZESS STRANG.. 1 KERN 
-NITROX EXTRAKTOR AUCH DABEI .... NUR EIN KERN 
-
-DIE ANDEREN 7 LASSEN SICH WUNDERBAR VERTEILEN .... 
-ALSO MAXIMAL 7 REX PROZESS FLÄCHEN UND DIESE SIEBEN 
-MUSS REX SICH MIT SENTIATOR TEILEN 
-
-HÖRT SICH OKEY AN ... 
-
-UND DIESE PROZESS GEHEN SCHNELL ... 
-
-ALSO SYNTAX TECHNISCH IN DEN BIONS DAS MAXIMUM FESTLEGEN 
-UND GLEICH IM SYSTEM IN DER ERSTE NATIVEN IDE ES AUCH SO ANLEGEN 
-
-SOLANGE DIE LEUTE EXTERN ARBEITEN MÜSSEN MIT VS CODE ETC 
-VIELLEICHT EIN PYLOVARA-EXT ZUR VERFÜGUNG STELLEN ... 
-
-UND DIE ABFOLGE DERPROZESSE AUF GRUNDLAGE DER SCHALTUNG PRIORISIEREN ..
-ERSTES PIPE PROTEIN DANN ZWEITENS UND SOWEIT ... 
-
-RUNTER ZUS DURCH RETRON GEREGELT , WAS WANN WO DRANN KOMMT .. 
-IM GRUNDE AUCH EIN SCHELDURES ABER WENIGER AUF VERTEILUNG SONDERN 
-EHER KERN BEZOGEN ... DAMIT KANN ICH MICRORUCKLER UNMÖGLICH MACHEN 
-UND PYLOVARA SOFTWARE WÜRDE NATURELL NIEMALS HÄNGEN ... PER DESIGNE ..
-
-OKEY 
-
-ICH REDUZIER SIE ERSTMAL AUF 5 ... 
-
-DA DIE TRANKS SOWIESO WEITER GESCHALTET WERDEN .... PASST DAS 
-DA ICH MOMENTAN BEI PARALLELISIERTEN PROZESSEN IM DENKMUSTER 
-SITZE UND NICHT DIE NORMALEN WORKSPACES ... 
-
-UND ICH KEINEN SCHNITT FÜR DIESEN NUTZEN HABE ZUR ZEIT 
-IST ES SICHERER ERSTMAL AUF UNTER DEM MAXIMUM ZU LAUFEN , STATTS 
-VIELLEICHT DARÜBER ... 
-
-DIE SPÄTEREN TEST AUF HARDWARE WERDEN ES DANN PREIS GEBEN 
-
-ICH TESTE ES ERST AUF URALTER HARDWARE UND WENN DIE SAGT 
-„ GIB MIR MEHR , ICH LAUFE FAST AUF LEERLAUF ... “
-DANN ADDE ICH MEHR HINZU ... AUF BASIS DER ÄLTESTEN HARDWARE 
-
-ALLES WAS NEUER IST WIRD DANN PER BIONs ERKANNT 
-UND BEKOMMT CPU TECHNISCH DANN SEIN MAXIMUM ZUGEORDNET 
-
-ICH LASS DIE VALL NUMMER BEIM REX SO , WER WEIS OB ICH DOCH 
-EINEN MEHR ADDE .... LIEBER SO , MACHT WENIGER ARBEIT 
-
-BIN ZU MÜDE ... ABER SYNAPTOR IST OFFIZIELL EINGETRAGEN 
-
-!!!!!!!!
-VERMERK : 
-
-MORGEN WEITER MIT DEM MASTER , DAN VAL DANN GENERALSCHALTUNG 
-UND DANN ERST IN DEN ABK ... SYNAPTOR !
-
-DIE SEITE IST ANGELEGT .... DAHER ALLES GUT 
-
-
-Gut , heute mal den motor soweit zerlegen können das 
-ich ihn mit einem hochdruck gerät mit puren benzin ausspritzen konnte ..
-
-was da für eine braune soße raus kam war ja nicht mehr normal ... 
-gut das ich das mal getan habe ... 
-
-jetzt kann er bis die bestellungen eintrudeln vollständig per 
-geschütztem luft raum trocknen .... benzin verdampft 
-das ist gut .... 
-
-ich werde nächste monat erstmal ein gescheiten luftdruck bohrer kaufen 
-damit ich in zuckunft den motor vollständig zerlegen kann ...
-
-mit viel glück ging die öl wanne auf und ich könnte vorne 
-beim zylinder kopf schön an der kette entlang den dreck raus spritzen ..
-
-hoffentlich ist er so jetzt sauber ...
-
-inklusive hab ich die öl schraube rein und in fast bis vorne mit 
-benzin einmal einwirken lassen , dann nochmal ausgespült 
-
-fast 50 euro nur benzin .... krass ... 
-
-jetzt bekommt er eine neue zyndkerze und frische 
-öl ... da will ich mal das bessere synt 10 W40 ausprobieren 
-oder das w30 , weil sommer .... 
-
-ich kann nicht verstehen warum den chinesen ein guter 
-motor zugesprochen wird .... allein das außeinander nehmen war ein 
-akt für sich .... 
-
-der alte filter werde ich so nicht mehr am vergasser drann knallen ..
-nur noch decko ... der vergasse bekommt direkt einen sport filter 
-mit spritz schutz von unten ... ich denke der alte luftfilter 
-kasten war ein fehldesigne .... das lässt zuviel dreck rein ... 
-hab ich gemerkt als ich ihn sauber gemacht habe ...
-
-inklusive hab ich den auspuff ausgebrennt .... das ist das einzige 
-ding wo ich lobenswert finde , weil kein cat drinne ist ...
-kein dreck fänger und motor abwürger ... sondern er bläst 
-den dreck direkt raus , wie es sich gehört .... 
-
-jetzt erstmal nach dem langen fuß marsch kaffe und füße ausruhen ..
-kurz youtube und dann gehts weiter ... nur nicht solange heute ..
-
-bin ziemlich erschöpft ... die hitze ist nicht meins ...
-ich hab das nordische wetter lieber gehabt , auch wenn feuchter ... 
-
-ich sollte vielleicht darauf achten das egal wohin ich späte gehe 
-das wetter generel ⅞im jahr kahlt ist ... 
-
-wärmen kann man immer nur hitze kühlen , schwierig ... 
-
-ich sollte mir eisbatterien später merken und selbst bauen 
-das würde zu mir passen ... 
-
-
-ICH DENKE DAS ICH DIE KONKETOR KLASSE FÜR DEN REX SPEZIELL MACHEN WERDE IN ZUCKUNFT 
-
-und die sentiatoren ihre eigene klasse bekommen , speziell für die 
-entscheidungs reflexe ... 
-
-muss es auch ..... alleine für die Bion's später .... 
-
-ich arbeite dennoch jetzt damit , ich kann es bei einer finalisierung immer noch 
-rekrusiv punktuell austauschen ... 
-
-und ich werde die regel der reinheit raus nehmen .... 
-
-sie wird explizit als argument gesetzt ... 
-
-ICH SOLLTE GERNELL vielleicht eine MUXKLASSE und eine DEMUXKLASSE 
-einfügen damit es auch bei der arbeit damit einfacherer zu schreiben ist 
-
-Vermerk : 
-
-- Sentiatoren Klassen überarbeiten | Eigene Klassen 
-- Generell MUX und DEMUX Klasse Einfügen | Erleichterte BIONs Logiken 
-  - über diese klassen lassen sich verbesserte verarbeitungslogiken erstellen 
-- argugemente ab der nächsten version verbessern .. 
-  - doppel funktionsargumente implementieren 
-    wegen dem ram löschen plus zwei argument 
-    - implementierung durch verknüpfungs argumente 
-
-- NAVIGATOR TOTALE ÜBERARBEITUNG IN DER NÄCHSTEN VERSION 
-  - KERN KANÄLE HINZUFÜGEN 
-  - RAM KANÄLE HINZUFÜGEN 
-  - SÄMTLICHE SCHALTUNGEN HAUPTKLASSEN SPEZIELL EINORDNEN 
-  - ALHPAKLASSE SEPERAT HALTEN 

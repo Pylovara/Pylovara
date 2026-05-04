@@ -1,4 +1,4 @@
-﻿@kernel-nr: lex Ð SYSTEM-LEXIKON # # ###    ## #   ##     #         #
+﻿@kernel-nr: lex Ð SYSTEM-LEXIKON # # ###    ## #   ###    #         #
 ##  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ##
  #     · KEIN EINTRAG | 0 KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #          + AKTIV  | - NICHT AKTIV | X TESTFLÄCHE                 #
@@ -8,14 +8,14 @@
  #   01  - Ŋ  DATENTYPEN         | 02  + 0  TRANSAKTIONSRAHMEN      #
  #   03  + 0  PROTEIN            | 04  + 0  PROTON                  #
  #   05  + 0  TRENNBEFEHL        | 06  + 0  AKTIONSDRAHT            #
- #   07  + 0  BOXIS              | 08  - Ŋ  MASTER                  #
+ #   07  + 0  BOXIS              | 08  + Ŋ  MASTER                  #
  #   09  + 0  REX                | 10  + 0  SENTIATOR               #
  #   11  + 0  ARGUMENT           | 12  + 0  FEED                    #
  #   13  - Ŋ  WARP               | 14  + 0  NAVIGATOR               #
  #   15  + 0  IDENTIFIKATION     | 16  + 0  MCSCMD                  #
  #   17  - X  DATEITYPEN         | 18  + 0  VATRON                  #
- #   19  + 0  RETRON             | 20  - X  HERZSCHLAG              #
- #   21  X Ŋ  KKIS               | 22  + 0  GENERALSCHALTUNG        #
+ #   19  + 0  RETRON             | 20  - Ŋ  HERZSCHLAG              #
+ #   21  + 0  KKIS               | 22  + 0  GENERALSCHALTUNG        #
  #   23  + 0  NITROX             | 24  + 0  SYNAPTOR                #
 ### ==== ##### == # === ### PROGRAMMIERUNG  ### === # == ##### === ###
  #   NR HINWEIS PROGRAMMIERUNG     | NR HINWEIS PROGRAMMIERUNG      #
@@ -35,7 +35,7 @@
  #   805   MCS      MASCHINEN-CODE-SPEECH SYNTAX LAW                #
 ### ==== ##### == # === ### == LIZENZEN === ### === # == ##### === ###
  #   993   L1_COREKERNELMANDAT               ###     # #    #   #   #
- #   994   L2_AUTHORRIGHTS                   ##   #     #    #      #
+ #   994   L2_AUTHORRIGHTS                   ##   #  #  #    #      #
  #   995   L3_COMMERCIALLICENSING            #   Pylovara—System©   #
  #   996   L4_AI_ADMINISTRATIONSMANDATE      ##   ##  #    #   #   ##
  #   997   L5_POST_MORTEM-CONTROL            #  #   #  #  #      #  #

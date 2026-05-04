@@ -235,6 +235,20 @@
     BENÖTIGT DANN ZWAR EINEN SCHALTWEG MEHR PRO SCHALTUNG 
     WÄRE ABER DAFÜR NARRENSICHER .
 
+00-81 PROTOLAYOUT =
+
+Kernklassen         = TRANK | POIK | POOK | AKTK | TRENK | SENK | NITK | SYNK USW
+
+Ober/HAUPT klassen  =  TRANH | POIH | POOH | AKTH | USW 
+
+Mittelklasse STARTS = STARTS | TRANS | POIS | POOS | AKTS | NITS | USW
+
+WABEN               = EINGANG | AUSGANG | COMBOS | SYSTEM | RAM | USW 
+
+Unterklassen ENDEN  =  TRANE | POISE | POOE | AKTE | NITE | USW 
+
+EXTRAKlassen        = TRANX | POISX | POOX | AKTX | NITX | USW
+
 ##########===========================########################===========================##########
 # VERMERKE : 
 
@@ -459,3 +473,11 @@ NICHT UMGEKEHRT
            ee 
            ww 
            
+
+
+
+
+
+
+
+

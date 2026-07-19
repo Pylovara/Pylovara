@@ -4,7 +4,7 @@ git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
-### ==== ##### == # === # = LINUX DERIVATE == # === # == ##### === ###
+### ==== ##### == # === # LINUX DERIVATE 86_64# === # == ##### === ###
 
  Alle Linux Derivate mit BASH-SHELL werden Unterstützt
 
@@ -14,6 +14,8 @@ sudo ./full.install-core
 
  Termux wird strickt abgelehnt, weil Android Closed Bootloader
  Politik - Installation auf eigene Faust.
+
+ ARM basierte Systeme werden nicht unterstützt - eigene Verantwortung.
 
 ### ==== ##### == # == INSTALLATIONSINFORMATION === # == ##### === ###
 # Hier wird mit Arch + Bash + Kitty First gearbeitet,

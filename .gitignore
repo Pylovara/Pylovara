@@ -20,7 +20,10 @@
 /Pylovara/Handbuch/Archiv/
 /Pylovara/Handbuch/WikiNotes
 
-
+# Dieser gesamte sektor ist veraltet und in den
+# arbeitsbereich verschoben worden, die sensibelsten daten
+# wurden auf die externe ssd verlagert und heraus genommen
+# und der rest freigegeben
 /Pylovara/AI/
 /Pylovara/MCS-Plus/
 # Sicherheits-Zusatz: Verhindert das Tracken von Redflag-Berichten
@@ -28,6 +31,7 @@
 *.redflag-notes
 *.*-kernel
 *.*-mcsplus
+# noch aktiv daher not push
 /Dokumenten/redflag-*.redflag-notes
 
 # Sicherheits-Zusatz: Verhindert das Tracken von temporären Cache-Dateien
@@ -41,10 +45,14 @@
 *.dna-shadow
 
 #REDPush
+# WIRD FÜR DIE HISTORISCHE LÖSCHUNG FÜR GITHUB REGELMÄẞIG
+# EINGESETZT UM NACHVOLLZIEHBARKEIT DER GESAMT ARBEIT ZU
+# ERSCHWEREN . DIE EIGENTLICHE HISTORISCHE AUFZEICHNUNG
+# FINDET IM DARKWEB STATT - NICHT AUF GIT
 /Pylovara/shredder.mcs-redpush
 
 
-#Unerlaubter Sektor !
+# Unerlaubter Sektor !
 /Pylovara/PKS-00-64.system-kernel
 
 ####################################################################
@@ -52,4 +60,7 @@
 # Befehl: git rm -r --cached Pylovara/Handbuch/DevNotes/
 # Danach Spam Aktualisierung protokl /Pylovara/Shredder.redpush
 ####################################################################
+
+# WURDE EINGESTELLT UND EXTERN VERSCHOBEN
+# PYTHON SCHROTT WIRD NICHT MEHR VERWENDET
 MASTER-CONTROL-SYSTEM/training.log

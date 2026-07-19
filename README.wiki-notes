@@ -1,34 +1,4 @@
-### ==== ##### == # === ### === VORWWORT == ### === # == ##### === ###
-
- Das Bash Basierte Installations verfahren , existiert nur aus einem
- Einzigen Grund : Es Trägt Die Zuckunft Dessen Was Das Böse Mit Uns
- Vorhat.
-
- Ich gab mir keine Mühe für Bash und auch nicht für Die Funktionalität
- für Linux.
-
- Ich Arbeite Ausschließlich Am Pylovara-System und die Daten
- der Enstehung , liegen Hier vor :
-
- /Pylovara/Handbuch/KernelNotes
-
- Das Terminal Bassierte Buch Ist der der alleinige Grund für
- Einen Install .
-
- Mehr als $ kernel lex
- und      $ kernel <NR>
-
- Soll Dieses Repo nicht können !
-
- Wer Also Installiert, Installiert Die Ensteheung Geschichte von
- Einer Arbeit die Lange vor dem Repo Selbst schon von statten geht.
-
- Die Seiten sind für die Shell optimiert , nicht für was anderes !
-
-                                            Gezeichnet :
-                                            OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68
-
-### ==== ##### == # === # INSTALLATIONS PROZESS === # == ##### === ###
+### ==== ##### == # = LINUX INSTALLATIONS PROZESS = # == ##### === ###
 
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
@@ -38,8 +8,9 @@ sudo ./full.install-core
 # Hier wird mit Arch + Bash + Kitty First gearbeitet,
 # bei Problemen auf andere Derivate Befehle einzelnd eingeben .
 # Funktioniert auch über Homebrew oder WSL , Primär Linux-Zen + Bash
-# Besonderheit ist ihr könnt pylovara ab linuxkernel install direkt im tty
-# als vollwertigen desktop installieren mit hyprland ....
+# Besonderheit: Pylovara ab Linuxkernel install direkt im tty möglich
+# und bringt volle hyprland desktops von hause mit von ausgewählten
+# seriösen Delevoper.
 ### ==== ##### == # === ### = UPDATE MANUAL ### === # == ##### === ###
 
 cd Pylovara/Setup/Pylovara-System/
@@ -76,7 +47,7 @@ sudo ./pylovara.updater-needle
 # Entwickler Stichwort   : Entwicklungsinteresse | lehrgang
 # Lizenskäufte Stichwort : License Buy
 #
-# Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen
-#       auf den Prinzip ,, Mensch & Mensch ’’
+# Info : Für den Kontakt werden keine AI Modelle Vorgeschoben
+#         und beruhen auf den Prinzip ,, Mensch & Mensch ’’
 #
 ### ==== ##### == # === ### =============== ### === # == ##### === ###

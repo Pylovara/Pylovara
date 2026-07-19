@@ -1,8 +1,19 @@
-### ==== ##### == # = LINUX INSTALLATIONS PROZESS = # == ##### === ###
+### ==== ##### == # == LINUX INSTALLATIONSPROZESS = # == ##### === ###
 
 git clone https://github.com/Pylovara/Pylovara.git
 cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
+
+### ==== ##### == # === # = LINUX DERIVATE == # === # == ##### === ###
+
+ Alle Linux Derivate mit BASH-SHELL werden Unterstützt
+
+ Alle Homebrew BASH-Shell werden Unterstützt
+
+ Zsh wird nicht Unterstützt
+
+ Termux wird strickt abgelehnt, weil Android Closed Bootloader
+ Politik - Installation auf eigene Faust.
 
 ### ==== ##### == # == INSTALLATIONSINFORMATION === # == ##### === ###
 # Hier wird mit Arch + Bash + Kitty First gearbeitet,

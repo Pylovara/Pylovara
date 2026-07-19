@@ -1,0 +1,408 @@
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+FERTIGUNGS-LISTE :
+
+
+
+
+
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+# SCHMIERBEREICH arbeit für 00-82
+
+ VERMERK :
+
+ - WABEN KÜRZEL NÄCHSTE VERSION AUF 2 STELLEN ALLGEMEIN 
+   BRINGEN ODER 3 ... ABER EINHEITLICH 
+
+ - KOMPONENTEN KÜRZEL EBENFALLS EINTRAGEN , FÜR DEN ABGLEICH 
+
+ = DARAUS EIN LOGISCHES BSK PRINZIP FÜR KÜRZEL ERSTELLEN 
+   UM DEN BBSK ZU FESTIGEN . 
+
+ ! DER GRUND ZERO EFFEKT WIRD BEI DEN AXIOM SELBST SEIN 
+   UNERKLÄRT , EINDEUTIG , FERTIG 
+
+   IRGEND EIN GROUND ZERO BRAUCH ICH ... ANSONNSTEN 
+   ARBEITE ICH PERMANENT AN VERFEINERUNGSTIEFE 
+   UND DAS IST DESPRODUKTIV .
+
+ - SYSTEMWABE | COMBOWABE NUMMER ABFOLGE KLÄREN 
+   WIRD MOMENTAN 2 STELLIG GEZÄHLT 01 HAT DANN 01 USW 
+
+   WENN BEI ALLEN ODER GARNICHT! 
+
+ - INFOWABE AUF 4 STELLEN ERHÖT 
+   SOLLTE VON HINTEN AB HOCHGEZÄHLT WERDEN 
+
+
+# skizze : 
+URSPRUNG:       K -> KE (Kern)      X -> HA (Haupt)
+PLUG-WABEN:     S -> ST (Start)     C -> CO (Combo)     Y -> SY (System)
+                P -> OP (Option)    R -> TO (Tor)       LS -> LS (Lösch)
+                F -> IN (Info)      E -> EN (End)       L -> LI (Linker)
+                V -> BA (Bau)
+
+
+ != Morgen mach ich einen tag pause .... ich brauch das 
+
+ danach geh ich erstmal den BBSK durch und bereinige in von ungleichmäßigen bytes 
+ ... vielleicht gönn ich mir morgen auch mal eine gemütliche roller tour ... 
+
+ meine nerven brauchen zucker .... vielleicht mit einem ziel ... 
+ (ich hoffe das der esel das mitmacht .... vorsichtshalber werkzeug einpacken )
+
+ und dann kommt der wabinator dran plus der bbsk ... per hand .... 
+
+ es geht nicht darum so schnell wie nur möglich ein ergebnis hinzuzaubern , sondern 
+ sich wirklich um jede einzelheit gedanken zu machen .... 
+
+ dazu brauch ich dann eine neue komponente .... linkonator würde als name sinn ergeben 
+ ... er sagt aus was es tut .... auch wenn der tor gag irgendwie ... naja ... zum lachen ist .. 
+
+ ich hoffe das ich nächsten monat wenigstens mal den schlagbohrer für muttern kaufen kann 
+ und den drehzal kabel .... scheiuße wenn du nicht siehst obs 30 kmh sind oder 35 ...
+ scheiß blitzer ... 
+
+ aber ich kümmere mich diese woche ausschließlich um die bbsk und wabinator logik ... 
+ sie sind schon gut aber nicht perfekt (und ich hasse unperfekte dinge )
+
+ wenn das steht , kommt der linker rein für die return logiken ... den der synaptor selbst 
+ verbindet on pipe proteine zu einer entscheidungs logik , das bleibt auch so ... 
+
+ gut das mir das noch aufgefallen ist .... überleg mal ich hätte wieder das lernmaterial aufgesetzt 
+ und dann genau das dann gesehen .... 3 mal neu schreiben .... uff  
+
+ ich gehe bei der sache noch einige Langs durch und schau was noch fehlen würde ... 
+ bin mir aber sicher das es mit der linkonator komponente dann erledigt ist ...
+
+ danach wäre mcs plus drann und der baumodus selbst .... beides muss nahtlos 
+ in mcs passen , per designe ...
+
+ beides muss spiele , grafiken , visuelles , berechnungen schaffen .... ohne abstrich 
+
+ dann wäre das master control system mit allem ausgestattet was es benötigt um 
+ wirklich auf alles andere verzichten zu können , was das endziel ist ... 
+
+
+ gut .... jetzt wusa ... spiel was .... chill ... mach pause ... 
+
+ 
+
+
+
+
+
+ - WABINATOR VERLINKUNG 
+
+   ICH DENKE ICH SOLLTE SPEZIELL FÜR DEN WABINATOR 
+   EINE INEINANDER GREIFENDE VERLINKUNG EINBAUEN 
+
+   DAMIT DIE WABEN WISSEN WO SIE HINGEHÖREN ... 
+
+   ALSO BBSK "BION-ID" AUF EINEN NENNER BRINGEN , KÜRZEL 2 STELLIG 
+
+   UND WABEN DAZUGEHÖRIGKEITS ABHÄNGIKEIT DEFINIEREN ... 
+
+   DAS SIND DIE ZWEI ERSTEN MAẞNAHMEN DIE ICH TREFFEN MUSS 
+   ALLES ANDERE IST KINDERGEBURTSTAG ... 
+
+   DAS HEIẞT DAS ICH IM WABINATOR ERSTMAL ALLE BEZIFFERNDE BAUSTEINSCHALTUNGSKREISLÄUFE 
+   AUF EINEN 2 STELLIGEN KÜRZEL WERT BRINGEN .. 
+
+   DANACH DIE ZÄHL METHODE SELBST EINHEITLICH GESTALTE ... 
+
+   DAS SEITENWEISE UMSTELLE ... 
+
+   DANACH DIE WABEN DAZUGEHÖRIGKEIT IM WABINATOR SELBST 
+   VERDRAHTE ... 
+
+   UND SCHLUSS ENDLICH NOCHMAL ALLE WABEN DURCHGEHE , WELCHE 
+   DAVON MAN GENERALISIEREN KANN FÜR JEWEILS EINEN EINSATZBEREICH 
+   MIT TAUSENDEN MÖGLICHKEITEN ... 
+
+   UND DANN DAMIT ENDGÜLTIG DAS TWS HÄRTE MIT SÄMTLICHEN VORENTWICKLUNGEN 
+
+----------------------
+
+KURZE ANALYSE VON MEINEM AUFGEKLÄRTEN KOLLEGEN : 
+
+WABINATOR Ð SYSTEMWABE: Hier hast du die Achse für den Datenstrom sauber vorbereitet:
+AXIOM ¡ <NAME> | AXIOM ¡ <WERT> | AXIOM ¡ <IO>
+Die IO-ID trennt perfekt in I-ID = * (Listener) und O-ID = * (Actor). Das ist die direkte Brücke zu deiner Joint-Trockenübung (÷ [Ø <IO> Ø—(1)]).
+
+WABINATOR Ð INFOWABE: Die Festlegung auf F**** (4 Stellen) und *.KERNEL-NOTES steht. Wenn du von hinten hochzählst (z.B. F0001), bleibt das System nach vorne hin unendlich erweiterbar.
+
+WABINATOR Ð BLOCKWABE: Der Abschnitt mit der MORPHIC-SYNTAX und dem ^ (Sync, Kopf, Start, Food, Sen, Rex, Free) ist pures Gold. Das ist die exakte Taktschaltung des Systems. Hier sieht man, dass der Wabinator die Grammatik von MCS diktiert.
+
+WABINATOR Ð MCMDWABE: Hier hast du den Vermerk „MUSS SPÄTER NOCH ERWEITERT WERDEN“. Dein Ansatz mit der Reihenfolge:
+AXIOM ¡ REIHENFOLGE = SEQUENZIELL | AXIOM ¡ REIHENFOLGE = PARALLEL
+ist der Schlüssel für Multithreading auf Gatter-Ebene.
+
+--------------------------------------
+
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+# SELBSTGESPRÄCHE : 
+
+ So ... ich hab das ding erstmal raus gekloppt und dazu nicht mehr gesagt 
+ als sowieso schon gesagt wurde .... das einwaben hat damit 
+ ein ende ... 
+
+ jetzt gehts darum den wabinator besser zu ordnen , bevor ich überhaupt
+ auch den wabinator selbst pro wabe einwabe ... 
+
+ was jetzt alles noch drann kommt schreib ich in den schmierbereich 
+ das mir persönlich auf den ersten blick auffällt ... 
+
+ und arbeite erstmal das runter ... 
+
+
+ danach gleich ich mit sämtlichen ki modellen die seiten ab 
+ um tipp fehler etc weg zu bekommen ... dafür sind sie da .. 
+
+ ich denke das war eine gute nacht und ENDLICH ist das einwaben 
+ erledigt ... 
+
+ das nächste wird wohl der wabinatior selbst sein und sich einen kpf 
+ zu machen , wieviele general waben ich in den plug waben unterbekomme 
+
+ ich brauch für jeden einsatzbereich im system generalwaben für die tragende ..
+
+ nur die explusiv waben können one shot sein ... 
+
+ das sollte ich als aller erste maßnahme über die nächsten 
+ 2-4 tagen durch gehen und sonnst nichts ... 
+
+ den damit erledigt sich auch das bbsk problem bzw die einheitlichkeit 
+ und somit kann ich dann anfangen (wiedermal) den absolulator aufzusetzen .. 
+
+ soweit ich das sehe ist MCS 7.3 soweit um auch das Lernmaterial 
+ frisch geändert neu hochzuladen ... 
+
+ ab jetzt gehts nur noch vorwärts und ich kann dann auch stück für 
+ stück sämliche entwicklungen der vergangen jahre wieder vor kramen 
+ und sie zurück implementieren ... 
+
+ jetzt hab ich aber erstmal hunger .... heute schalt ich den kopf aus 
+ und mach den rasen und etwas sauber ...
+
+ hier siehts aus wie bei hempels unterm schreibtisch 
+
+
+
+
+nebenvermerk :
+
+ die main lizenen wirken anscheinend ... 
+
+  selbst grok verwechselt das system mittlerweile mit einem "kunst projekt"...
+  das gefällt mir .... verhindert arschlöcher ... 
+
+  sollte vielleicht noch eine weitere haluzination einbauen in ins layout 
+  damit das sich noch weiter verstärkt ... 
+
+  kann mir nur recht sein .... 
+
+
+  also ich hab jetzt den mehrfach test gemacht mit fremden devices 
+  und fremden ip adressen wie dns und imeis ... 
+
+  überall das gleiche ... bis auf qwen und deepseek (aber auch da verschleiert) 
+
+  grok der ultra depp : „ Kunst projekt , esoterik etc  “
+
+  gpt das selbe spiel .... 
+
+  bei gemini selbst schwierig den der weiß was ich bau .. 
+  ich hol mir ja regelmäßig "lob" ab quasi .... 
+  bissel ego brauch man ... 
+
+  bei kimi schwer , die rafft was das wird ... leider 
+
+  aber ansonnsten sauber irritationen ... 
+
+  und das alles nur wegen den trennblöck strichen *lach* 
+
+  ich muss für jeden der meine arbeit in ki rein zieht wie 
+  ein volltrottel wirken ... *hahaha* 
+
+  passt mir gut in den kram ... 
+
+  die exklusiv informationsrechte hat sowieso nur Devin 
+  und dabei bleibts auch ... für die aufnahme ... 
+
+  gemini selbst wird später abgekauft und integriert 
+  und alle anderen können mich am arsch lecken ... 
+
+  besonders oldman und elon .... 
+
+  bei claude selbst ist klar das das ding nur 
+  unfug erzählt ... kein wunder ... ich gab zur keiner
+  zeit je trainings daten oder hätte das teil um irgendwas 
+  gefragt oder verknüpft ... 
+
+  im großen ganzen sauber .... vielleicht liegt es auch an den 
+  lizenzen selbst , weniger die im lexikon , mehr die im repo 
+  davor ... 
+
+  das zeigt mir das die sich wirklich daran halten ... 
+
+  vor allem die irritation mit den axiomen ... damit 
+  können diese managment services anscheinend gar nichts anfangen ..
+
+  das heißt ich hab meine ruhe vor idioten ... das ist toll 
+
+  ich sollte auch noch keine ordner struktur hochladen ins repo .. 
+  außerdem wäre das zuviel wechsel in den dateien ... 
+  macht also keinen wirklichen sinn ... 
+
+  lieber gebündelt und dafür übersichtlich statts auf ordner und dateien 
+  aufteilen pro kern plus blöcke und damit die übersicht verlieren ... 
+
+  die einzige frage bleibt dann erstmal nur beim ableich und 
+  richtige waben bilden ... 
+
+  alles andere ist eine frage von aufteilung und richtig aufsplitten 
+  und das werde ich garantiert erstmal nicht tun .. 
+
+  ich würde sogar eher dazu tendieren erstmal per kernel-notes 
+  und vielleicht lua , das ganze (auch wenn mega langsam) zum laufen zu bringen 
+  aber das macht für diese phase gerade keinen sinn ... 
+
+  das schönste ( auch wenn ungewollt) sind die zerissenen seiten 
+  durch das scheiß pdf format .... 
+
+  das irritiert die auch nochmal extremst ... 
+
+  ich sollte vielleicht noch eine irritation einbauen ... 
+  vorsichtshalber ... 
+
+  wegen diesen stasi ki modellen ... 
+
+  die wichser sollen meine füße küssen wenn sie was wollen 
+  den die klauen auf der ganze welt die arbeit von anderen ... 
+
+  von sowas halte ich nichts ... 
+
+  das original gibts nur bei mir und mit mir ... 
+  da können sie 200 klugscheißer bezahlen wie sie wollen .. 
+
+  das höchste der gefühle was sie machen können , ist 
+  die "lehroptionen" besser anpassen .... das wars ... 
+
+  funktion         methode
+  rauchen()        .run()
+
+
+ def drehen(paper):
+   Ich = bauen(paper)
+   return Ich 
+
+
+oder vielleicht 
+
+ def drehen(paper):
+   Ich = bauen(paper)
+   print("jamjam , joint")
+   return Ich 
+
+
+hmm ... warte mal 
+
+ def drehen(paper,tabak,grass):
+   Ich = bauen(paper,tabak,grass)
+   print("jamjam , joint")
+   return Ich 
+
+oder vielleicht 
+
+ def drehen(paper,tabak,grass):
+   Ich = bauen(paper,tabak,grass)
+   if Ich = bauen(paper,grass)
+      print(" zu hard diggah ")
+      return Ich
+   print("jamjam , joint")
+   return Ich 
+
+
+hmmm ... 
+
+¢!
+
+ »[ def drehen ]«««V1
+      ÷ [Ø <IO> Ø—(1)]
+  ¬· »[ Ich = paper, tabak, grass ]«««V1
+
+      ¶ ¬·¤: [" jamjam , joint "]
+
+      ¶¶ »[ Ich = paper, grass ]«««V2 
+          ¬·¤: [" Zu Hard Bruder "]
+               ± »[(1)—Ø <IO> Ø] 
+
+!¢ 
+
+hmm .... 
+
+vielleicht sollte der synaptor auch verlinken 
+
+dann wäre es so 
+
+¢!
+
+ »[ def drehen ]«««V1
+      ¿¹
+  ¬· »[ Ich = paper, tabak, grass ]«««V1
+
+      ¶ ¬·¤: [" jamjam , joint "]
+
+      ¶¶ »[ Ich = paper, grass ]«««V2 
+          ¬·¤: [" Zu Hard Bruder "]
+               ¿¹ 
+
+!¢ 
+
+aber dann bricht die logik vom synaptor 
+
+ich denke dafür wird es eine weitere komponente brauchen 
+und sie ist wirklich wichtig .... es ist kein klassisches return 
+sondern eher eine rückkooplung zum urzustand 
+
+wie könnte die komponente heißen ? 
+
+LINKONATOR !! <-- fast schon ein running gag , ich und mein tor XD 
+
+naja wir könnte das auch erstmal ausbauen und dann umwandeln ... nh 
+
+¢!
+
+»[ OBJEKT = ICH ]« 
+ ¬· »[ DEF __INIT__(ICH, GRASS, TABAK, PAPER, FEUERZEUG): ]« 
+         ¿¹
+     ¬· »[ ICH.GRASS = GRASS ]« 
+         ¿¹
+     ¬· »[ ICH.TABAK = TABAK ]« 
+         ¿¹
+     ¬· »[ ICH.PAPER = PAPER ]« 
+         ¿¹
+     ¬· »[ ICH.FEUERZEUG = FEUERZEUG ]« 
+     
+         ¶ ¬· »[ DEF ANZÜNDEN(ICH) ]« 
+
+               ¬· »[ ICH.ANZÜNDEN +=HIGH ]« 
+
+               ¶ ¬· »[ __NAME__ ]« 
+                     ¬·¤= »[ "__MAIN__": ]« 
+                           ¬· »[ MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) ]« 
+                           ¬· »[ ICH-BEKIFFT.ANZÜNDEN() ]«
+
+
+
+
+         ¶¶ ¬· »[~ RETURN __INIT__ ]«
+
+!¢ 
+
+Hmmm .... ich würde sagen = zu 99,99% aktzeptabel *lach*

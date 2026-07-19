@@ -1,0 +1,504 @@
+##########===========================########################===========================##########
+# Verbesserungen 00-80 :
+
+- SYSTEMKLASSE 
+  
+  DIENEN NUR NOCH FÜR DEN JEWEILIGEN IN UND OUTPUT EINGABE BEREICH
+
+- COMBOKLASSE 
+
+ EINFÜGEN VON KOMPONENTEN WURDE AUS DEN SYSTEMKLASSE ENTFERNT 
+ UND HIER EXPLIZIT EINGEFÜHRT 
+
+- PIPEKLASSE 
+
+ WURDE EXPLIZIT FÜR POIWERK AUSGETAUSCHT EINGEFÜHRT = POIPIPE !
+
+- PROTEIN ERWEITERUNG
+
+ PIPE (AUSFÜHRBARE) PROTEINE HABEN JETZT KOPF INPUT UND FOOD OUTPUT FUNKTIONEN 
+ HINZUBEKOMMEN .
+
+##########===========================
+
+- VALIDIERUNGSPROTOCOL 
+
+ WURDE EINGEFÜHRT FÜR VATRON FIREWALL KONTROLLE DER BSK RICHTIGKEIT 
+ UND DIENT IM ABSOLULATOR ALS REFERENZ BEDINGUNG .
+ DIESE KENNUNG WURDE SEITENWEISE IN JEDEM BLOCK GESCHRIEBEN .
+ VAL-KENNUNG : XY 
+
+##########===========================
+
+- SYSTEM-AXOIMEN 
+
+ MATHEMATISCHE REGELUNGEN WURDEN ERSTMAL HERAUS GENOMMEN 
+ UND DAMIT BEGONNEN REKRUSIV NEUE KLASSEN DIREKT EINZUORDNEN 
+
+##########===========================
+
+- PROTEIN 
+
+ WURDE ÜBERARBEITET UND HAT ZWEI SCHALTUNGEN MIT DEN FRISCHEN COMBOKLASSEN 
+ INKLUSIVE WURDE DIE WERKZEUGKLASSE DURCH DIE PIPEKLASSE ERSETZT UM 
+ DEN PROZESS SCHALTWEG DER VERTIKALEN AUF HORIZONTALER WEITERFÜHRUNGEN 
+ ZU GEWÄHRLEISTEN .
+
+- TRENNBEFEHL 
+
+ WURDEN DIE SYSTEMKLASSEN HERAUS GENOMMEN UND DURCH COMBO KLASSE ERSETZT.
+ INKLUSIVE WURDE DER TRENBEFEHL VERSCHLANK, GILT NUN GENERELL FÜR ALLE 
+ TRENNUNGEN INNERHALB DER CONTAINER BOXIS PROTON IM PROTEIN.
+
+
+ - FEED 
+
+ WERDEN NICHT MEHR DIREKT IN BOXIS IMPLEMENTIERT SONDERN GESONDERT.
+ FEEDS SIND DAMIT DER DIREKTE CACHE FÜR RAM NOTIZEN UND WERDEN NUR NOCH 
+ FÜR DEN TRANSPORT WEG GENUTZT . 
+ ANSONNSTEN SELBES PRINZIP : MASTER AND SLAVE 
+
+- NITROX 
+
+ IN UND OUT PUT = IO = NITROX , WURDE IM KOPF UND FOOD DER PIPE PROTEINE INTEGRIERT 
+ UM DIE FF UND FT FEED LOGIK ZU VERBESSERN . 
+ NITROX INJEKTIERT UND EXTRAHIERT FF WIE FT UM SIE COPIERT EINEM ANDEREN PROZESS ZUZUFÜGEN , 
+ ÄHNLICH EINER BIBLIOTHEK VON C HEADER, NUR MIT DEM UNTERSCHIED DAS SIE GRANULAR IM TRANK 
+ SELBST VERWENDET WERDEN KÖNNEN.
+ DAS WURDE GETAN UM SPÄTER AUCH VARIABLEN TRANSPORT FÄHIG UND COMBINATIONSFÄHIG ZU MACHEN .
+
+##########===========================
+
+- SYNTAX LAW 805
+
+ VERVOLLSTÄNDIGUNG DER NUTZUNGSMÖGLICHKEITEN 
+
+- 800 BAUSTEINSCHALTUNGSKREISLAUF 
+
+  VERBESSERUNG DER INFORMATIONS ERKLÄRUNG FERTIGGESTELLT UND TEST BEREICHE VERSCHOBEN 
+  BIS ENDGÜLTIGER IMPLEMENTIERUNGS STATUS FOLGT.
+
+##########===========================########################===========================##########
+# Vermerke :
+
+ - MASTER 
+
+  MASTER IST NICHT AKTUELL 
+
+- NAVIGATOR 
+
+ KLASSEN MÜSSEN PRÄZISER EINGESETZT WERDEN , UNVOLLSTÄNDIGE LOGIK AUẞERHALB DER ALPHAKLASSEN 
+
+- HERZSCHLAG 
+
+ ENTFERNE DIE TEST DATEN , SPÄTER FOLGEN DIE TAKT DATEN - SCHNITTSTELLE ZUM M.I.T
+
+- CHIPONATOR 
+
+ ERSETZE ALLE LOGIKEN MIT DEM NAVU-STERN RASTER VERFAHREN ....
+ LASS ES BEIM LAYOUT BIS ABK MOK FERTIG SIND .
+
+- SCHABLONATOR 
+
+ NACH BEGRADIGUNG DER KOMPONENTE TRENNBEFEHL, MUSS DER SEKTOR IM SBK NACHGEBESSERT WERDEN 
+
+- ABSOLULATOR 
+
+ WURDE NOCHMAL EINGESTAMPFT , MUSS BEI RUHE AUFGEBAUT WERDEN (ZU KOMPLEX MIT STÖRRAUSCHEN)
+
+- MODULATOR 
+
+ DAS MCCK REGISTER FÜR DIE SELBSTGENERIERUNG DER CMD BEFEHLE BEIM ERSTELLEN DUAL 
+ SCHREIBEN !
+
+- NACHKONTROLLE ALLER KOMPONENTEN 
+
+ 1. SEMANTISCHE INFOS WIE AUCH ALTER BLOCK DATEN 
+ 2. SYS UND COMBO KLASSEN VOM PROTEIN AN REIHENWEISE EXPLIZIT ÄNDERN .
+ 3. TRENNBEFEHL KOMPONENTE ÜBERARBEITEN, ES STELLT SICH HERAUS DAS 
+    NUR DIE TRENWAND-COMBO BENÖTIGT WIRD .
+    EVENTUELL DEN ÜBERGANG VON PROTON MIT EINBAUEN , ZENTRALISIERUNG - WENN ES GEHT 
+
+- LIZENZ LAYER ÜBERARBEITEN 
+
+ DENK ERSTMAL DARAN DAS DER ENGLISCHE NAME MIT DEM DEUTSCHEN NAMEN - ERSETZT WIRD 
+ DANN DENKE DARAN DIE NEUEN KOMPONENTEN EXPLIZIT MIT REIN ZU SCHREIBEN 
+
+ AUẞERDEM EINEN ABZUG DAVON FÜR DIE KANZLEI.
+
+##########===========================########################===========================##########
+# etc :
+
+- BESSERER ARBEITSPLATZ 
+
+ ICH BRAUCH STECKDOSE , RUHE UND MEHR MONITORE .
+ SUCHE NACH GÄRTEN MIT STECKDOSE ODER GÜNSTIGEN GARAGEN .
+ WAS GENAU IST SCHEIẞ EGAL , WICHTIG IST ABSCHLIEẞBAR UND VOLLSTÄNDIGE ISOLATION !
+ IM BESTEN FALLE TOILETTE IRGENDWIE , WASSER(OBWOHL) , KAFFE MASCHINE , KEINE NERVENDEN GERÄUSCHE .
+
+ - VERSTÄNDNISS ERKLÄRUNG 
+
+  ICH MUSS EIN EINARBEITUNGS INFORBLATT SCHREIBEN, UM DEMNÄCHST DEN KOMMENDEN 
+  INTERESSENT BESTMÖGLICH ÜBER DIE STRUKTUR AUFZUKLÄREN . 
+
+  INFORMIER DICH AUCH ÜBER SYNCRONISERTE IDEs ... ICH ARBEITE SO INTENSIV DAS 
+  ICH NICHT AUFGEHALTEN WERDEN MÖCHTE ABER DIE DATEN IMMER SYNCRON BLEIBEN ...
+
+  ERSTELL DANN AUCH DEN ZUGANGS SSH SCHLÜSSEL FÜR IHN - NICHT VERGESSEN 
+
+##########===========================########################===========================##########
+# gelabber für mich selbst : 
+
+
+
+########################################################
+
+ - 1
+ #########################
+ 1                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #  REX                  #
+ #                       #
+ #                       #
+ #########################
+ - 0
+ #########################
+ 2                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #                       #
+ #      FLÄCHE           #
+ #                       #
+ #########################
+ 
+ - 3 
+ #########################
+ 3    #                  #
+ #    #                  #
+ #    #                  #
+ #    #                  #
+ #    #                  #
+ #    ###12345678####    # <- überlagerungsschablonen rex-prozess-fläche-<nr>
+ #                  #    #
+ #                  #    #
+ #                  #    #
+ #  REX FLÄCHE      #    #
+ #                  #    4
+ #########################
+
+
+vermerkt : zeilen abgleich für positions start endpunkt und nitrox feed für exakten passierten inhalt ... 
+
+10 1 0 1 0 1 0 prüfsumme = 1 !
+
+1 + 0 = 0 + 1 = 1 + 0 = 1 + 1 = 0 + 0 = 0 + 1 = 1 + 0 = 1 <-- lol 
+
+
+1 + 0 = 1 
+1 + 1 = 0 
+0 + 1 = 1 
+0 + 0 = 0 
+
+
+X + O = X 
+X + X = O 
+O + X = X 
+
+ # # #
+ # # # 
+ # # # 
+
+ #   # 
+   # # 
+ # #  
+
+ #   #
+   # 
+ #   # 
+
+ # # #
+ #   # 
+ # # #
+
+ HM ... 
+
+ AUSFÜHRBARE SCHABLONEN
+ ###########################
+ #                         #
+ #   ¬                     #
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ #                         #      + 
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ ###########################
+
+
+ UNAUSFÜHRBARE SCHABLONEN
+ ###########################
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ #         #######         #
+ #         #######         #     +
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ ###########################
+
+ AUSFÜHRBARE SCHABLONEN 
+ ###########################
+ #                         #
+ #                         #
+ #  [<BOX>]                #
+ #                         #
+ #                         #
+ #                         #
+ #                         #     + 
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ #                         #
+ ###########################
+
+
+ wenn die summe höher ist als 1 ist das ergebnis eins 
+
+ 10 3 0 4 9 03 
+
+ 1 + 0 = 1 + 3 = 0 + 0 = 0 + 4 = 1 + 9 = 0 + 0 = 0 + 3 = 1
+
+
+ es gibt zwei denk muster 
+
+ eins plus eins ist eins 
+ eins plus eins ist 0 
+
+
+  1     0     1     0     1     0     1     0  
+        ON          ON          ON          ON
+ klick klick klick klick klick klick klick klick 
+  1     2      3     4     5     6     7     8   
+
+
+Hier ist ein klassisches Beispiel für eine einfache Konsolen-Uhr in C, wie sie unter Linux (x86_64) laufen würde:
+
+C
+#include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+
+int main() {
+    time_t rawtime;
+    struct tm *timeinfo;
+
+    // Die "Endlosschleife" - frisst ständig Zyklen
+    while(1) {
+        // 1. Systemcall: Kernel fragen, wie spät es ist
+        time(&rawtime); 
+        
+        // 2. Berechnung: Sekunden in Stunden/Minuten umrechnen
+        timeinfo = localtime(&rawtime);
+
+        // 3. I/O Wahnsinn: Text formatieren und in den Puffer schreiben
+        printf("\rAktuelle Uhrzeit: %02d:%02d:%02d", 
+               timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
+        
+        // Den Puffer leeren, damit es sofort erscheint
+        fflush(stdout);
+
+        // 4. Den Prozess schlafen legen (Context Switch!)
+        sleep(1); 
+    }
+    return 0;
+}
+
+das ist der ramsch aus einem C gekritzel 
+
+Schritt       Was in C passiert          Warum das ineffizient ist
+
+Abfrage         time(&rawtime)           Ein Systemcall. Die CPU muss vom User-Mode in den Kernel-Mode wechseln, nur um eine Zahl zu holen.
+Logik             localtime()            Eine mathematische Bibliothek muss Schaltjahre, Zeitzonen und Offsets berechnen. Jedes Mal neu.
+Anzeige             printf()             Der Text "12:30:05" muss als ASCII-Zeichenkette verarbeitet werden. Die GPU weiß gar nicht, dass das eine Uhr ist, sie sieht nur Pixel-Befehle
+Warten              sleep(1)             Der Scheduler schiebt den Prozess beiseite. Wenn der Takt wiederkommt, muss der gesamte Speicherzustand wieder in die CPU-Register geladen werden.
+
+sooo ... also den kuddelmuddel muss man erstmal prototyp haft richten .... 
+
+
+¢!
+
+»["HAUPTBLOCK"]«
+ ¬· »[, time_t rawtime ,]« 
+     ¬· »[× localtime() ×]«««Ω
+         ¬·¤: »["12:30:05"]«««Ω
+
+!¢ 
+
+GUT ... das hieße ... das ich jetzt eine lösung finden muss über ARGUMENT um sleep zustände 
+logischerweise mit einzubeziehen .... oder den haupt prozess takte über den Taktschlag 
+ und der taktschlag selbst ist die sekunde der uhr ... also takt 1 
+
+¢!
+
+»["HAUPTBLOCK"]«««T
+ ¬· »[, time_t rawtime ,]« 
+     ¬· »[× localtime() ×]«««Ω
+         ¬·¤: »["12:30:05"]«««Ω
+
+!¢ 
+
+wäre dann auf die neue syntax gesehen dann eher : 
+
+   ↓ # zeilen nummer vom trank selbst ( sieht man eh nicht , nur wenn gewollt)
+(15000910)  ¢!
+(15000911)  »["UHR_HERZ"]«««T
+(15000912)       ± »[(1)—Ø <SYSTEM_ZEIT> Ø]«        
+(15000913)   ¬· »[× FORMATIERUNG_SCHABLONE ×]«««Ω 
+(15000914)       ¬·¤: »[ MONITOR_BOX_01 ]«««Ω         
+(15000915)  !¢
+
+zum beispiel .... 
+
+
+SYSTEM PAUSE = 
+
+ HEUTE BIS MORGEN NACHT 
+
+
+ MOMENT ... 
+
+ ich werde in Tranks HauptProteine statts ein hauptprotein manifestieren 
+
+ pro prozess abfolge 
+
+ ein haupt protein im trank selbszt ... die idee war mal da , ging wieder raus , glaube ab 00-50 rum ... 
+
+ also wieder rein mit ... diese hauptproteine können dann per RETRON Ochestriert werden ... 
+
+ ¢!
+
+ »[ ]«
+  ± »[(<NR>)—Ø <Inhalt> Ø]«
+  
+  ¶ ¬·»[ ]«
+       ¬·»[ ]«
+       ¬·»[ ]«
+          ¶ ¬·»[ ]« 
+                
+                ÷ »[Ø <Inhalt> Ø—(<NR>)]«
+          ¶¶ ¬·»[ ]«
+
+  ¶¶  ¬·»[ ]«
+         ¬·»[ ]«
+         ¬·»[ ]«
+
+  
+
+ »[ ]«
+  ± »[(<NR>)—Ø <Inhalt> Ø]«
+  
+  ¬·»[ ]«
+     ¬·»[ ]«
+
+         ÷ »[Ø <INHALT> Ø—(<NR>)]« 
+     ¬·»[ ]«
+
+  »[~RAM-LÖSCHEN~]«««ſ
+
+!¢
+
+
+ich hab was gefunden das eventuell eine live zusammenarbeit 
+bewerkstelligen könnte 
+
+ritwickdey.LiveServer 
+
+quasi = Live share 
+
+wäre interessant wenns ums einarbeiten geht etc ... 
+
+
+
+syntax highlights probe : 
+
+{
+  "highlight.regexes": {
+    "(¢!|!¢)": {
+      "regexFlags": "g",
+      "decorations": [
+        { "backgroundColor": "#2d2d2d", "color": "#ff79c6", "fontWeight": "bold", "border": "1px solid #ff79c6", "borderRadius": "3px" }
+      ]
+    },
+    "(»[ ]«|»\\[.*?\\]«)": {
+      "regexFlags": "g",
+      "decorations": [
+        { "color": "#8be9fd", "fontWeight": "bold", "fontStyle": "italic" }
+      ]
+    },
+    "(±|¶|¶¶|¬·|÷|¤=|§|$|©|↑|↓|×)": {
+      "regexFlags": "g",
+      "decorations": [
+        { "color": "#ffb86c", "fontWeight": "bold" }
+      ]
+    },
+    "(#.*$)": {
+      "regexFlags": "gm",
+      "decorations": [
+        { "color": "#6272a4", "fontStyle": "italic" }
+      ]
+    }
+  }
+}
+
+vermerk : 
+code --install-extension fabiospampinato.vscode-highlight
+
+erleichtert das visuelle vielleicht ... momentan ist alles weiß 
+Ultra Dark auf Kontrast Text ... aber nur weiß ... 
+
+ist zwar gut aber ich denke ich es wäre sinnvoll elemente per highlight 
+besser zu visualisieren , erleichtert die übersicht ...
+
+test phase ... wenn nicht geil ... weg damit ... 
+
+
+auf dauer :
+
+npm install -g yo generator-code
+yo code
+# → "New Language Support" → Name: Pylovara MCS → Id: pylovaramesh
+# → Extension Name: pylovara-mcs
+# → File Extension: -core
+# → File Extension: -manager
+# → File Extension: -node
+# → File Extension: -nano 
+# → File Extension: -micro 
+# → File Extension: -needle 
+
+vielleicht auch gleich 
+
+# → File Extension: -visu 
+# → File Extension: -sound 
+# → File Extension: -render 
+# → File Ex

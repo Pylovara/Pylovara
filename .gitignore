@@ -1,0 +1,55 @@
+####################################################################
+# | GIT-SECURITY | KERNEL-PROTECTION | STATUS = BAUSTELLE STUFE 10
+####################################################################
+
+# Neu Angelegter Sektor
+/Pylovara/Kernel
+/Pylovara/Kernel/*.*-*
+/Pylovara/Kernel/*.*-*
+/Pylovara/Kernel/DevNotes
+
+# Unveröffentlicher Sektor
+/Pylovara/Lernbücher/*
+/Pylovara/Lernbücher/*/*
+/Pylovara/Lernbücher/*/*/*
+/Pylovara/Lernbücher/*/*/*/*
+
+# Pylovara Hochsensibler Bereich (Handbuch & DevNotes)
+# Diese Regel verhindert das Tracken des kompletten DevNotes-Verzeichnisses
+/Pylovara/Handbuch/DevNotes/
+/Pylovara/Handbuch/Archiv/
+/Pylovara/Handbuch/WikiNotes
+
+
+/Pylovara/AI/
+/Pylovara/MCS-Plus/
+# Sicherheits-Zusatz: Verhindert das Tracken von Redflag-Berichten
+# Falls der PP-Generator Logs erstellt, werden diese hier abgefangen
+*.redflag-notes
+*.*-kernel
+*.*-mcsplus
+/Dokumenten/redflag-*.redflag-notes
+
+# Sicherheits-Zusatz: Verhindert das Tracken von temporären Cache-Dateien
+# basierend auf Kernel 88 (*.cache)
+*.cache
+/Pylovara/**/cache/
+
+# Ausschluss von verschlüsselten þ-Schatten-Referenzen
+# Falls lokale Key-Files für den Generator angelegt werden
+*.þ-key
+*.dna-shadow
+
+#REDPush
+/Pylovara/shredder.mcs-redpush
+
+
+#Unerlaubter Sektor !
+/Pylovara/PKS-00-64.system-kernel
+
+####################################################################
+# HINWEIS: Falls der Ordner bereits im Git-Index ist:
+# Befehl: git rm -r --cached Pylovara/Handbuch/DevNotes/
+# Danach Spam Aktualisierung protokl /Pylovara/Shredder.redpush
+####################################################################
+MASTER-CONTROL-SYSTEM/training.log

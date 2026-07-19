@@ -1,0 +1,82 @@
+### ==== ##### == # === ### === VORWWORT == ### === # == ##### === ###
+
+ Das Bash Basierte Installations verfahren , existiert nur aus einem
+ Einzigen Grund : Es Trägt Die Zuckunft Dessen Was Das Böse Mit Uns
+ Vorhat.
+
+ Ich gab mir keine Mühe für Bash und auch nicht für Die Funktionalität
+ für Linux.
+
+ Ich Arbeite Ausschließlich Am Pylovara-System und die Daten
+ der Enstehung , liegen Hier vor :
+
+ /Pylovara/Handbuch/KernelNotes
+
+ Das Terminal Bassierte Buch Ist der der alleinige Grund für
+ Einen Install .
+
+ Mehr als $ kernel lex
+ und      $ kernel <NR>
+
+ Soll Dieses Repo nicht können !
+
+ Wer Also Installiert, Installiert Die Ensteheung Geschichte von
+ Einer Arbeit die Lange vor dem Repo Selbst schon von statten geht.
+
+ Die Seiten sind für die Shell optimiert , nicht für was anderes !
+
+                                            Gezeichnet :
+                                            OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68
+
+### ==== ##### == # === # INSTALLATIONS PROZESS === # == ##### === ###
+
+git clone https://github.com/Pylovara/Pylovara.git
+cd Pylovara/Setup/Pylovara-System/
+sudo ./full.install-core
+
+### ==== ##### == # == INSTALLATIONSINFORMATION === # == ##### === ###
+# Hier wird mit Arch + Bash + Kitty First gearbeitet,
+# bei Problemen auf andere Derivate Befehle einzelnd eingeben .
+# Funktioniert auch über Homebrew oder WSL , Primär Linux-Zen + Bash
+# Besonderheit ist ihr könnt pylovara ab linuxkernel install direkt im tty
+# als vollwertigen desktop installieren mit hyprland ....
+### ==== ##### == # === ### = UPDATE MANUAL ### === # == ##### === ###
+
+cd Pylovara/Setup/Pylovara-System/
+sudo ./pylovara.updater-needle
+
+### ==== ##### == # === # UPDATE INFORMATION ## === # == ##### === ###
+# - sucht alte installationen /Pylovara/ ~/Pylovara
+# - löscht sie rekursiv & sauber
+# - klont das repo nach /tmp/pylovara-latest
+# - kopiert das geklonte repo nach /Pylovara/
+# - lässt wrapper außenvor weil schon gesetzt
+# - entfernt /tmp/pylovara-latest wieder
+# - funktioniert nur mit = sudo ./pylovara.updater-needle
+# - einführung der wahrheiten logistik
+# wenns nicht klappt =
+#       - einfach zip laden
+#       - entpacken
+#       - /Pylovara/ ordner ersetzen im Root
+#       - fertig
+### ==== ##### == # ===  IMPRESUM INFORMATION # === # == ##### === ###
+# Direkte Hilfe + Investoren Anlaufstelle :
+#
+# Name :     Thomas Zimmermann - System Architekt & Designer & MCS Erfinder
+# Telefon :  +49 176/88218035
+# Telegram : @iBandino
+# LinkedIn : https://www.linkedin.com/in/thomas-zimmermann-pylovara-system-mcs/
+# DeepWiki : https://deepwiki.com/Pylovara/Pylovara/2.1-installation
+#
+# Sprachkenntnisse : Deutsch 100% Englisch 40% SchweitzerDeutsch 98%
+#
+# Schriftlicher verkehrt kann in jeder Sprache Stattfinden
+#
+# Investoren Stichwort   : Finanzierung | Geschäfts-treffen/gespräch
+# Entwickler Stichwort   : Entwicklungsinteresse | lehrgang
+# Lizenskäufte Stichwort : License Buy
+#
+# Info : Für den Kontakt werden keine AI Modelle Vorgeschoben und beruhen
+#       auf den Prinzip ,, Mensch & Mensch ’’
+#
+### ==== ##### == # === ### =============== ### === # == ##### === ###

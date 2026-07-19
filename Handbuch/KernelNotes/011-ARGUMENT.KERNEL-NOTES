@@ -1,0 +1,289 @@
+@kernel-nr: 11 Ð ARGUMENT 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####======K11 ARGUMENT======#####======###==##==###  
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #      ARGUMENT =  LOGIC OPERATOR CONTROL MANAGMENT SYSTEM         #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ # --  AR00X01 = BEFEHLE
+ # --  AR00X02 = TIMER
+ # --  AR00X03 = BAUMODUS
+ # --  AR00X04 = LOOP 
+ # --  AR00X05 = CLEANER
+###==##==###======#####==STARTPUNKT ARUGMENT===#####======###==##==###
+
+BION Ð ARGUMENT 
+
+ MORPHIC-ID ¡ ARG 
+
+ BION-ID ¡ AR
+
+MASK ¡ MASU-ARGUMENT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð ARGUMENT 
+
+ MORPHIC-ID ¡ ARGK 
+
+ BION-ID ¡ AR00
+
+ AXIOM ¡ ARGK = <ARGK>
+
+ ABSK ¡ ARGK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BEFEHL
+
+ MORPHIC-ID ¡ ARGX-BEFEHL
+
+ BION-ID ¡ AR00X01
+
+ AXIOM ¡ ARGX-BEFEHL = ««<MCD>
+
+ ABSK ¡ ARGK+ARGX-BEFEHL
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRWABE-BEFEHL Ð STARTWABE 
+
+ MORPHIC-ID ¡ ARGS-BEFEHL
+
+ BION-ID ¡ AR00X01S01
+
+ AXIOM ¡ ARGS-BEFEHL = ««
+
+ ABSK ¡ ARGK+ARGX-BEFEHL+ARGS-BEFEHL
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BEFEHL Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ ARGSYS-BEFEHL-IO
+
+ BION-ID ¡ AR00X01S01Y01 
+
+ AXIOM ¡ ARGSYS-BEFEHL-MCDK = ««<IO>
+
+ AXIOM ¡ <IO>
+
+ ABSK ¡ ARGK+ARGX-BEFEHL+ARGS-BEFEHL+ARGSYS-BEFEHL-MCDK
+
+ I-ID ¡ ARGSYS-BEFEHL-IO
+
+ O-ID ¡ ARGSYS-BEFEHL-IO
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BEFEHL Ð LINKENDWABE
+
+ MORPHIC-ID ¡ ARGL-BEFEHL
+ 
+ BION-ID ¡ AR00X01S01Y01L01
+
+ AXIOM ¡ ARGL-BEFEHL = ««<MCD>
+
+ ABSK ¡ ARGK+ARGX-BEFEHL+ARGS-BEFEHL+ARGSYS-BEFEHL-MCDK+ARGL-BEFEHL
+
+ LINK ¡ MCDK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-TIMER
+
+ MORPHIC-ID ¡ ARGX-TIMER
+
+ BION-ID ¡ AR00X02
+
+ AXIOM ¡ ARGX-TIMER = ««<IO><TIMER>
+
+ ABSK ¡ ARGK+ARGX-TIMER
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TIMER Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ ARGSYS-TIMER-IO 
+
+ BION-ID ¡ AR00X02Y01 
+
+ AXIOM ¡ ARGSYS-TIMER-IO = ««<IO>
+
+ AXIOM ¡ <IO>
+
+ AXIOM ¡ PO
+
+ AXIOM ¡ NA
+
+ AXIOM ¡ MO
+
+ AXIOM ¡ MI
+
+ ABSK ¡ ARGK+ARGX-TIMER+ARGSYS-TIMER-IO
+
+ I-ID ¡ 
+
+ O-ID ¡ 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TIMER Ð TIMERWABE 
+
+ MORPHIC-ID ¡ ARGT-TIMER
+
+ BION-ID ¡ AR00X02Y01T01
+
+ AXIOM ¡ ARGT-TIMER = ««<IO><TIMER>
+
+ ABSK ¡ ARGK+ARGX+TIMER+ARGSYS-TIMER-IO+ARGT-TIMER
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TIMER Ð LINKENDWABE 
+
+ MORPHIC-ID ¡ ARGLE-TIMER 
+
+ BION-ID ¡ AR00X02Y01T01L01
+
+ AXIOM ¡ ARGL-TIMER = ««<IO><TIMER>
+
+ ABSK ¡ ARGK+ARGX+TIMER+ARGSYS-TIMER-IO+ARGT-TIMER+AGRL-TIMER
+
+ LINK ¡ AKTK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BAUMODUS
+
+ MORPHIC-ID ¡ ARGX-BAUMODUS
+
+ BION-ID ¡ AR00X03
+
+ AXIOM ¡ ARGX-BAUMODUS = ««V<IO>
+
+ ABSK ¡ ARGK+ARGX-BAUMODUS
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BAUMODUS Ð BAUWABE 
+
+ MORPHIC-ID ¡ ARGV-BAUMODUS-NR
+
+ BION-ID ¡ AR00X03V01
+
+ AXIOM ¡ ARGV-BAUMODUS-IO = ««V<NR>
+
+ ABSK ¡ ARGK+ARGX-BAUMODUS+ARGV-BAUMODUS-NR
+
+ CACHE ¡ ON 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BAUMODUS Ð LINKENDWABE
+
+ MORPHIC-ID ¡ ARGL-BAUMODUS
+
+ BION-ID ¡ AR00X03V01L01
+
+ ARGL-BAUMODUS-AXIOM ¡ ««V<NR>
+
+ ABSK = ARGK+ARGX-BAUMODUS+ARGV-BAUMODUS-NR+ARGL-BAUMODUS 
+
+ LINK ¡ ARGV-BAUMODUS-NR
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-LOOP
+
+ MORPHIC-ID ¡ ARGX-LOOP
+
+ BION-ID ¡ AR00X04
+
+ AXIOM ¡ ARGX-ZEITSCHLEIFE = ««Ω 
+
+ ABSK ¡ ARGK+ARGX-LOOP
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LOOP Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ ARGSYS-LOOP-IO
+
+ BION-ID ¡ AR00X04Y01
+
+ AXIOM ¡ ARGSYS-LOOP-IO = ««Ω
+
+ I-ID ¡ 
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LOOP Ð  ENDWABE
+
+ MORPHIC-ID ¡ ARGE-LOOP 
+
+ BION-ID ¡ AR00X04Y01E01
+
+ AXIOM ¡ ARGE-LOOP = ««Ω
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-REGEL-DER-REINHEIT
+
+ MORPHIC-ID ¡ ARGX-REGEL-DER-REINHEIT
+
+ BION-ID ¡ AR00X05 
+
+ AXIOM ¡ ARGX-REGEL-DER-REINHEIT = ««ſ
+
+ ABSK ¡ ARGK+ARGX-REGEL-DER-REINHEIT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-REGEL-DER-REINHEIT Ð LÖSCHWABE 
+
+ MORPHIC-ID ¡ ARGLS-REGEL-DER-REINHEIT 
+
+ BION-ID ¡ AR00X05LS01
+
+ AXIOM ¡ ARGLS-REGEL-DER-REINHEIT = ««ſ
+
+ ABSK ¡ ARGK-ARGX-REGEL-DER-REINHEIT+ARGLS-REGEL-DER-REINHEIT 
+
+ I-CLEAN-ID ¡ *
+
+ O-CLEAN-ID ¡ 0
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-REGEL-DER-REINHEIT Ð ENDWABE 
+
+ MORPHIC-ID ¡ ARGE-REGEL-DER-REINHEIT
+
+ BION-ID ¡ AR00X05R01E01
+
+ AXIOM ¡ ARGE-REGEL-DER-REINHEIT = ««ſ
+
+ ABSK ¡ ARGK-ARGX-REGEL-DER-REINHEIT+ARGLS-REGEL-DER-REINHEIT+ARGE-REGEL-DER-REINHEIT 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = ARGELT (SPÄTER)
+ # SBSK =
+ # VBSK =
+ # RBSK = 
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT                 #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####====ENDPUNKT ARGUMENT===#####======###==##==###

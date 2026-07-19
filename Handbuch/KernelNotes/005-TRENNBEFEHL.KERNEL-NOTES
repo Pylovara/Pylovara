@@ -1,0 +1,78 @@
+@kernel-nr: 05 Ð TRENNBEFEHL 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####=====K5 TRENNBEFEHL=====#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #            TRENNBEFEHL = THE PROTEIN CONTAINER WALL              #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ # SENKRECHTSTRICH WIRD IM PROTEIN/E NICHT WIE IN BOXIS VERWENDET   #
+ #      BOXIS TRAGEN GRUNDLOGIK VON LEGACY OPERATIONS SYSTEMEN:     #
+ # | WINDOWS | MACOS | LINUX | BSD | UNIX | GNU | UEFI | BIOS | ETC #
+###==##==###======#####=STARTPUNKT TRENNBEFEHL=#####======###==##==###
+
+BION Ð TRENNBEFEHL 
+
+ MORPHIC-ID ¡ TREN 
+
+ BION-ID ¡ TE
+
+MASK ¡ MASU-TRENNBEFEHL 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð TRENNBEFEHL 
+
+ MORPHIC-ID ¡ TRENK
+
+ BION-ID ¡ TE00
+
+ AXIOM ¡ TRENK = <TRENK>
+
+ ABSK ¡ TRENK 
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-WAND
+
+ MORPHIC-ID ¡ TRENX-WAND
+
+ BION-ID ¡ TE00X01
+
+ AXIOM ¡ TRENX-WAND = |
+
+ ABSK = TRENK+TRENX-WAND
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WAND Ð STARTWABE 
+
+ MORPHIC-ID ¡ TRENS-WAND
+
+ BION-ID ¡ TE00X01S01
+
+ AXIOM ¡ TRENS-WAND = |
+
+ ABSK ¡ TRENK+TREX-WAND+TRENS-WAND
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WAND Ð ENDWABE 
+
+ MORPHIC-ID ¡ TRENE-WAND
+
+ BION-ID ¡ TE00X01S01E01
+
+ AXIOM ¡ TRENE-WAND = | 
+
+ ABSK ¡ TRENK+TRENX-WAND+TRENS-WAND+TRENE-WAND
+
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = TRENELT 
+ SBSK = TRENK+TRENX-WAND+TRENS-WAND+TRENE-WAND
+ # VBSK = NICHT VORHANDEN
+ RBSK = TRENK
+###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
+ #  DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####===ENDPUNKT TRENNBEFEHL=#####======###==##==###

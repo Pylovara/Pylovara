@@ -1,0 +1,472 @@
+@kernel-nr: 08 Ð BOXI
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####========K8 BOXI=========#####======###==##==###  
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # BOXI'S = THE IN/OUT ALLFILE CONTAINER PROZESS MANAGMENT SYSTEM   #
+###==##==###======#####====STARTPUNKT BOXI=====#####======###==##==###
+
+BION Ð BOXI 
+
+ MORPHIC-ID ¡ BOX 
+
+ BION-ID ¡ BX
+
+MASK ¡ MASU-BOXI
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð BOXK
+
+ MORPHIC-ID ¡ BOXK
+
+ BION-ID ¡ BX00
+
+ AXIOM ¡ BOXK = <BOXK>
+
+ ABSK ¡ BOXK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-PRINT
+
+ MORPHIC-ID ¡ BOXX-BOXI-PRINT
+
+ BION-ID ¡ BX00X01
+
+ AXIOM ¡ BOXX-BOXIS-PRINT = " <IO> "
+
+ ABSK ¡ BOXK+BOXX-BOXI-PRINT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-PRINT Ð STARTWABE 
+
+ MORPHIC ¡ BOXS-BOXI-PRINT 
+
+ BION-ID ¡ BX00X01S01
+
+ AXIOM ¡ BOXS-BOXI-PRINT = "
+
+ ABSK ¡ BOXK+BOXX-BOXI-PRINT+BOXS-BOXI-PRINT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXIS-ALU Ð SYSTEMWABE
+
+ MORPHIC-ID ¡ BOXSYS-BOXI-PRINT-IO
+
+ BION-ID ¡ BX00X01S01Y01
+
+ AXIOM ¡ BOXSYS-BOXI-PRINT-IO = " <IO>
+
+ ABSK ¡ BOXK+BOXX-BOXI-PRINT+BOXS-BOXI-PRINT+BOXSYS-BOXI-PRINT-IO
+
+ I-ID ¡ 
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-ETRAWABE-BOXI-ALU Ð ENDWABE  
+
+ MORPHIC-ID ¡ BOXE-BOXI-PRINT
+
+ BION-ID ¡ BX00X01S01Y01E01
+
+ AXIOM ¡ BOXE-BOXI-PRINT = " <IO> "
+
+ ABSK ¡ BOXK+BOXX-BOXI-PRINT+BOXS-BOXI-PRINT+BOXSYS-BOXI-PRINT-IO+BOXE-BOXI-PRINT
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-ALU 
+
+ MORPHIC-ID ¡ BOXX-BOXI-ALU 
+
+ BION-ID ¡ BX00X02
+
+ AXIOM ¡ BOXX-BOXI-ALU = × <IO> ×
+
+ ABSK ¡ BOXK+BOXX-BOXI-ALU
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-ALU Ð STARTWABE 
+
+ MOPHIC-ID ¡ BOXS-BOXI-ALU 
+
+ BION-ID ¡ BX00X02S01
+ 
+ AXIOM ¡ BOXS-BOXI-ALU = ×
+
+ ABSK ¡ BOXK+BOXX-BOXI-ALU+BOXS-BOXI-ALU
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-ALU Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ BOXSYS-BOXI-ALU-IO
+
+ BION-ID ¡ BX00X02S01Y01
+
+ AXIOM ¡ BOXSYS-BOXI-ALU-IO = × <IO> 
+
+ ABSK ¡ BOXK+BOXX-BOXI-ALU+BOXXS-BOXI-ALU+BOXSYS-BOXI-ALU-IO
+
+ I-ID ¡ 
+
+ O-ID ¡ 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOX-ALU Ð ENDWABE 
+
+ MORPHIC-ID Ð BOXE-BOXI-ALU 
+
+ BION-ID ¡ BX00X02S01Y01E01
+
+ AXIOM ¡ BOXE-BOXI-ALU = × <IO> ×
+
+ ABSK ¡ BOXK+BOXX-BOXI-ALU+BOXXS-BOXI-ALU+BOXSYS-BOXI-ALU-IO-BOXE-BOXI-ALU
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-SYSCALL 
+
+ MORPHIC-ID Ð BOXX-BOXI-SYCALL
+
+ BION-ID ¡ BX00X03
+
+ AXIOM ¡ BOXX-BOXI-SYSCALL = , <IO> ,
+
+ ABSK ¡ BOXK+BOXX-BOXI-SYSCALL
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-SYSCALL Ð STARTWABE 
+
+ MORPHIC-ID Ð BOXS-BOXI-SYSCALL 
+
+ BION-ID Ð BX00X03S01
+
+ AXIOM ¡ BOXS-BOXIS-SYSCALL = , 
+
+ ABSK ¡ BOXK+BOXX-BOXI-SYSCALL-BOXS-BOXI-SYSCALL
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-SYSCALL Ð SYSTEMWABE 
+
+ MORPHIC-ID Ð BOXSYS-BOXI-SYSCALL-IO
+
+ BION-ID Ð BX00X03S01Y01 
+
+ AXIOM ¡ BOXSYS-BOXI-SYSCALL = , <IO> 
+
+ ABSK ¡ BOXK+BOXX-BOXI-SYSCALL+BOXS-BOXI-SYSCALL+BOXSYS-BOXI-SYSCALL-IO
+
+ I-ID ¡
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BOXI-EXTRAWABE-BOXI-SYSCALL Ð ENDWABE 
+
+ MORPHIC-ID Ð BOXE-BOXI-SYSCALL 
+
+ BION-ID ¡ BX00X03S01Y01E01
+
+ AXIOM ¡ BOXE-BOXI-SYSCALL = , <IO> ,
+
+ ABSK ¡ BOXK+BOXX-BOXI-SYSCALL+BOXS-BOXI-SYSCALL+BOXSYS-BOXI-SYSCALL-IO+BOXE-BOXI-SYSCALL
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-ABI 
+
+ MORPHIC-ID ¡ BOXX-BOXI-ABI
+
+ BION-ID ¡ BX00X04
+
+ AXIOM ¡ BOXX-BOXI-ABI = Ħ <IO> Ħ
+
+ ABSK ¡ BOXK+BOXX-BOXI-ABI
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-ABI Ð STARWABE 
+
+ MORPHIC-ID ¡ BOXS-BOXI-ABI 
+
+ BION-ID ¡ BX00X04S01
+
+ AXIOM ¡ BOXS-BOXI-ABI = Ħ 
+
+ ABSK ¡ BOXK+BOXX-BOXI-ABI+BOXS-BOXI-ABI 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-ABI Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ BOXSYS-BOXI-ABI-IO 
+
+ BION-ID ¡ BX00X04S01Y01
+
+ AXIOM ¡ BOXSYS-BOXI-ABI-IO = Ħ <IO> 
+
+ ABSK ¡ BOXK+BOXX-BOXI-ABI+BOXS-BOXI-ABI+BOXSYS-BOXI-ABI-IO
+
+ I-ID ¡
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-ABI Ð ENDWABE
+
+ MORPHIC-ID ¡ BOXE-BOXI-ABI 
+
+ BION-ID ¡ BX00X04S01Y01E01
+
+ AXIOM ¡ BOXE-BOXI-ABI = Ħ <IO> Ħ
+
+ ABSK ¡ BOXK+BOXX-BOXI-ABI+BOXS-BOXI-ABI+BOXSYS-BOXI-ABI+BOXE-BOXI-ABI
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-SHELL
+
+ MORPHIC-ID ¡ BOXX-BOXI-SHELL
+
+ BION-ID ¡ BX00X05
+
+ AXIOM ¡ BOXX-BOXI-SHELL = ' <IO> ' 
+
+ ABSK ¡ BOXK+BOXX-BOXI-SHELL 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-SHELL Ð STARTWABE 
+
+ MOPRHIC-ID ¡ BOXS-BOXI-SHELL
+
+ BION-ID ¡ BX00X05S01 
+
+ AXIOM ¡ BOXS-BOXI-SHELL = ' 
+
+ ABSK ¡ BOXK+BOXX-BOXI-SHELL+BOXS-BOXI-SHELL 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-SHELL Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ BOXSYS-BOXI-SHELL-IO 
+
+ BION-ID ¡ BX00X05S01Y01 
+
+ AXIOM ¡ BOXSYS-BOXI-SHELL = , <IO> 
+
+ ABSK ¡ BOXK+BOXX-BOXI-SHELL+BOXS-BOXI-SHELL+BOXSYS-BOXI-SHELL 
+
+ I-ID ¡
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-SHELL Ð ENDWABE 
+
+ MORPHIC-ID ¡ BOXE-BOXI-SHELL 
+
+ BION-ID ¡ BX00X05S01Y01E01 
+
+ AXIOM ¡ BOXE-BOXI-SHELL = ' <IO> ' 
+
+ ABSK ¡ BOXK+BOXX-BOXI-SHELL+BOXS-BOXI-SHELL+BOXSYS-BOXI-SHELL+BOXE-BOXI-SHELL
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-MCSCMD 
+
+ MORPHIC-ID ¡ BOXX-BOXI-MCSCMD
+
+ BION-ID ¡ BX00X06
+
+ AXIOM ¡ BOXX-MCSCMD-AXIOM ¡ ~ <IO> ~
+
+ ABSK ¡ BOXK+BOXX-BOXI-MCSCMD 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-MCSCMD Ð STARTWABE 
+
+ MORPHIC-ID ¡ BOXS-BOXI-MCSCMD 
+
+ BION-ID ¡ BX00X06S01 
+
+ AXIOM ¡ BOXS-BOXI-MCSCMD = ~ 
+
+ ABSK ¡ BOXK+BOXX-BOXI-MCSCMD+BOXS-BOXI-MCSCMD 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-MCSCMD Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ BOXSYS-BOXI-MCSCMD-IO
+
+ BION-ID ¡ BX00X06S01Y01 
+
+ AXIOM ¡ BOXSYS-BOXI-MCSCMD-IO = ~ <IO> 
+
+ ABSK ¡ BOXK+BOXX-BOXI-MCSCMD+BOXS-BOXI-MCSCMD+BOXSYS-BOXI-MCSCMD-IO
+
+ I-ID ¡ 
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-MCSCMD Ð ENDWABE 
+
+ MORPHIC-ID ¡ BOXE-BOXI-MCSCMD 
+
+ BION-ID ¡ BX00X06S01Y01E01 
+
+ AXIOM ¡ BOXE-BOXI-MCSCMD = ~ <IO> ~ 
+
+ ABSK ¡ BOXK+BOXX-BOXI-MCSCMD+BOXS-BOXI-MCSCMD+BOXSYS-BOXI-MCSCMD-IO+BOXE-BOXI-MCSCMD 
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-MASCHINENCODE
+
+ MORPHIC-ID ¡ BOXX-BOXI-MASCHINENCODE
+
+ BION-ID ¡ BX00X07
+ 
+ #- AXIOM FÜR DIREKTEN  OPCODE-EINGABE:
+ AXIOM ¡ BOXX-BOXI-MASCHINENCODE = º <OPCODE-LISTE> º 
+ 
+ #- ODER FÜR EINZELNE MASCHINENBEFEHLE:
+ AXIOM ¡ BOXX-BOXI-MASCHINENCODE = º <MASCHINENBEFEHL> º
+ 
+ ABSK = BOXK+BOXX-BOXI-MASCHINENCODE
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-MASCHINENCODE Ð STARTWABE 
+
+ MORPHIC-ID ¡ BOXS-BOXI-MASCHINENCODE 
+
+ BION-ID ¡ BX00X07S01
+
+ AXIOM ¡ BOXS-BOXI-MASCHINENCODE-AXIOM ¡ ° 
+
+ ABSK ¡ BOXK+BOXX-BOXI-MASCHINENCODE+BOXS-BOXI-MASCHINENCODE
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-MASCHINENCODE Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ BOXSYS-BOXI-MASCHINENCODE-IO 
+
+ BION-ID ¡ BX00X07S01Y01 
+
+ AXIOM ¡ BOXSYS-BOXI-MASCHINENCODE = ° <IO> 
+
+ ABSK ¡ BOXK-BOXX-BOXI-MASCHINENCODE+BOXS-BOXI-MASCHINENCODE+BOXSYS-BOXI-MASCHINENCODE-IO
+
+ I-ID ¡
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-MASCHINENCODE Ð ENDWABE 
+
+ MORPHIC-ID ¡ BOXE-BOXI-MASCHINENCODE 
+
+ BION-ID ¡ BX00X07S01Y01E01 
+
+ AXIOM ¡ BOXE-BOXI-MASCHINENCODE = ° <IO> °
+
+ ABSK ¡ BOXK+BOXX-BOXI-MASCHINENCODE+BOXS-BOXI-MASCHINENCODE+BOXSYS-BOXI-MASCHINENCODE-IO+BOXE-BOXI-MASCHINENCODE
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-BOXI-CACHE
+
+ MORPHIC-ID ¡ BOXX-BOXI-CACHE 
+
+ BION-ID ¡ BX00X08
+
+ AXIOM ¡ BOXX-BOXI-CACHE = ¥ <IO> ¥
+
+ ABSK ¡ BOXK+BOXX-BOXI-CACHE
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-CACHE Ð STARTWABE 
+
+ MORPHIC-ID ¡ BOXS-BOXI-CACHE 
+
+ BION-ID ¡ BX00X08S01 
+
+ AXIOM ¡ BOXS-BOXI-CACHE = ¥  
+
+ ABSK ¡ BOXK+BOXX-BOXI-CACHE+BOXS-BOXI-CACHE
+ 
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI-CACHE Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ BOXSYS-BOXI-CACHE-IO
+
+ BION-ID ¡ BX00X08S01Y01 
+
+ AXIOM ¡ BOXSYS-BOXI-CACHE-IO = ¥ <IO>
+
+ ABSK ¡ BOXK+BOXX-BOXI-CACHE+BOXS-BOXI-CACHE+BOXSYS-BOXI-CACHE-IO
+
+ I-ID ¡ 
+
+ O-ID ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ 
+BION-EXTRAWABE-BOXI-CACHE Ð ENDWABE 
+
+ MORPHIC-ID ¡ BOXE-BOXI-CACHE
+
+ BION-ID : BX00X08S01Y01E01
+
+ AXIOM ¡ BOXE-BOXI-CACHE = ¥ <IO> ¥
+
+ ABSK ¡ BOXK+BOXX-BOXI-CACHE+BOXS-BOXI-CACHE+BOXSYS-BOXI-CACHE-IO
+
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = BOXELT
+ SBSK = BOXK+BOXX-BOXI-BOXELT+BOXS-BOXI-BOXELT+BOXSYS-BOXI-BOXELT-BOXELT+BOXE-BOXI-BOXLET
+ # VBSK = 
+ RBSK = BOXK
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####=====ENDPUNKT BOXI======#####======###==##==###

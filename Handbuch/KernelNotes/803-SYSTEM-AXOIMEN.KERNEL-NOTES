@@ -1,0 +1,360 @@
+@kernel-nr: 803 Ð SYSTEM-AXIOMEN 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####=====SYSTEM-AXIOMEN=====#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #           PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER         #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+###==##==###======#####STARTPUNKT SYSTEM-AXIOMEN####======###==##==###
+
+BION Ð SYSTEM-AXIOMEN
+
+ MORPHIC-ID ¡ SAX 
+
+ BION-ID ¡  SA
+
+MASK ¡ MASU-PROTEIN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð SYSTEM-AXIOMEN
+
+ MORPHIC-ID ¡ SAXK
+
+ BION-ID ¡ SAX00
+
+ AXIOM ¡ SAXK = <SAXK>
+
+ ABSK ¡ SAXK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-LEXIKON
+
+ MORPHIC-ID ¡ SAXX-LEXIKON
+
+ BION-ID ¡ SAX00X01
+
+ AXIOM ¡ SAXX-LEXIKON = SYSTEM-AXIOMEN
+
+ ABSK ¡ SAXK+SAXX-LEXIKON
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-STANDARD-WABE
+
+ BION-ID ¡ SAX00X01F0001
+
+ AXIOM ¡ SAXF-STANDARD-WABE
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-STANDARD-WABE
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+### !!!!!! MUSS NOCH ÜBERARBEITET WERDEN
+ STANDARD WABE AXIOMEN
+
+ Ð BION :
+   DAS BION BESCHREIB DEN BIBLIOTHEKEN RAUM 
+   ER SITZT ALS HEADER UND ORDNET DAS BION WABENNETZWERK ZU
+
+ Ð KERNWABE (K):
+   WABENTRÄGER ! EINE BIENENSTOCK WABE . 
+   BASIEREND-AUF-NETZWERK-NERVENZELLEN-IMPULS-VERZWEIGTE-REFLEX-SYSTEME.
+
+ Ð ALPHAWABE (ALPHA):
+   TRÄGT SEINE FUNKTIONEN UNTERHALB DER KERN FÜR SICH SELBST MIT.
+   BESITZT SEIN SINGEL RUN RECHT.
+
+ Ð HAUPTWABE (X):
+   EINE HAUPTWABE PRODUZIERT EIN GANZES WABENNETZWERK INNERHALB DER KERNWABE 
+   UND SORGT FÜR EXTRAWABEN-MUSTERNAMEN FÜR DIE DAZUGEHÖRIGE STRUKTUR.
+
+ Ð ENDWABE (E):
+   DAS ANGEGEBENE EXTRAWABEN NETZWERK SCHLIEẞT SICH UND FÜHRT SICH AUS.
+
+ Ð LINKENDWABE (L):
+   SCHLIEẞT DAS EXTRAWABE NETZWERK MIT EINER ZIEL VERLINKUNG AB.
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-PLUG-WABE
+
+ BION-ID ¡ SAX00X01F0002
+
+ AXIOM ¡ SAXF-PLUG-WABE
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-PLUG-WABE
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+### !!!!!! MUSS NOCH ÜBERARBEITET WERDEN
+ PLUG WABE AXIOMEN
+
+ Ð STARTWABE :
+  EINE STARTWABE STARTET ETWAS , SIE LÖST EIN BION AUS DAS GESTARTET 
+  WERDEN SOLL 
+
+ Ð SYSTEMWABE :
+   SIND EIN UND AUSGÄNGE FÜR EINGABEN ODER AUSGABEN .
+   SIE DIENEN ALS IN UND OUTPUT.
+
+ Ð TORWABE :
+   EXTRA SYSTEMWABE FÜR SPEZIALISIERTE VERLINKUNGSOPTIONEN
+
+ Ð TIMERWABE :
+   SPEIẞT TIME ZAHL IN DEN EINGABE IO SEKTOR EIN.
+   WIRD WIE SYSTEMWABE GENUTZT NUR EXAKT FÜR ZEIT EINGABEN.
+
+ Ð COMBOWABE :
+   COMBOWABEN FÜGEN ANDERE KERNWABEN EIN DIE FÜR SICH SELBST 
+   SICH IN DIE STRUKTUR EINWABEN.
+   SIE DIENEN ALS BION-ÜBERGREIFENDES EINFÜG SYSTEM 
+
+ Ð OPTIONSWABE :
+   ZEIGT DIE FUNKTION DER WABE AUF DIE SIE TRÄGT.
+
+ Ð BAUWABE :
+   BEHINAHLTET DIE V NUMMERN JEDER VARIABLEN ERZEUGTEN 
+   ERGEBNISSES ALLER ART. 
+   DIE BAUWABE VERKNOTET NUMMERISCH NACH ABFOLGE 
+   - ELTERNTEIL PRINZIP
+
+ Ð LÖSCHWABE :
+   DIE REGLE DER REINHEIT WABE.
+   SIE LÖSCHT ABFALL PROZESSSTRÄNGE.
+
+# KOMMT (EXKLUSIVWABEN) = WIRD GETRENNT SPÄTER
+
+ Ð NAVIWABE
+
+ Ð SYMBOLWABE
+
+ Ð IDLEWABE
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-BION-ID
+
+ BION-ID ¡ SAX00X01F0003
+
+ AXIOM ¡ SAXF-BION-ID
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-BION-ID
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ BION-ID AXIOMEN 
+
+  URSPRUNG WABEN :
+  ———————————————————————————————————————————————————————————————————
+   WABEN-TYP    | BION-ID | BEDEUTUNG
+  ———————————————————————————————————————————————————————————————————
+   BION         | BION-ID | FUNDAMENT
+   KERNWABE     |   K     | BASIS-PROZESS-MANAGER
+
+  STANDARD WABEN FÜR PLUG WABEN  :
+  ———————————————————————————————————————————————————————————————————
+   HAUPTWABE    |   X     | ORCHESTRATION 
+   
+  PLUG WABEN :
+  ———————————————————————————————————————————————————————————————————
+   STARTWABE    |   S     | INIZIALISIERUNG DER SENSORKETTE
+   COMBOWABE    |   C     | KERN INTEGRIERUNG    
+   SYSTEMWABE   |   Y     | IO IN/OUT PUT DER EIN/AUSGABE SEKTOREN 
+   OPTIONSWABE  |   P     | INTEGRIERUNGEN VON OPTIONEN
+   TORWABE      |   R     | GATE LINKER 
+   LÖSCHWABE    |   LS    | LÖST EINE CACHE/SPEICHER LÖSCHUNG AUS 
+   INFOWABE     |   F     | INFORMATIONS TEXT QUELLENBERREICH
+   ENDWABE      |   E     | PROZESS ABGESCHLOSSEN - SPEICHER FREI
+   LINKERWABE   |   L     | KOMBINATORISCHER PROZESS ABGESCHLOSSEN
+   BAUWABE      |   V     | BAUMODUS V NUMMER | SYSTEMLOGISCH
+
+  EXKLUSIV WABEN NACH URSPRUNG WABEN :
+  ———————————————————————————————————————————————————————————————————
+   NIDUSWABE    |   NI    | AUSFÜHRUNGSDATEI
+   NODUS        |   NO    | DATENSAMMLUNGSDATEI 
+   NEXUS        |   NE    | DATENSAMMLUNGVERKNÜPFUNGDATEI
+   MCMDWABE     |   MC    | COMMAND 
+   NAVIWABE     |   W     | NAVIGATION 
+   SYMBOLWABE   |   SB    | MCS 
+   KENNUNGSWABE |   KW    | NAVIGATOR 
+   ILDEWABE     |   DL    | PROZESS HALTER 
+   PROZESSWABE  |   SS    | RETRON PROZESSE 
+   MORPHICWABE  |   I     | GENERALSCHALTUNG
+   MASTERWABE   |   U     | MASTER REGISTER 
+
+
+   !! NACHBEARBEITUNG ... ENTWDERE GENERELL 2 STELLIG BEI ALLEN ODER NICHT ... 
+
+
+   DIE ANORDNUNG DER INDIVIDUELLEN WARBEN , WERDEN AUFGRUNDLAGE 
+   DES ERSTGEBRAUCHST HOCH SORTIERT BIS ZUR ENDWABE ZIFFER.
+
+   INNERHALB DER ZIFFERN KANN EINE SCHALTUNG AUCH 4 STELLEN EINNEHMEN 
+
+   Y0101 <- SYSTEMWABE 01 HAT 01 SCHALTUNG 
+   C0101 <- COMBOWABE 01 HAT 01 SCHALTUNG 
+   P0101 <- OPTIONSWABE 01 HAT 01 SCHALTUNG 
+
+   SPEZIELL BEI DEN PLUG WABEN , WERDEN SCHALTUNGEN SOLANGE GESTAPELT 
+   BIS SIE ENDET UND DANN WIRD ERST DIE NEUE ZIFFER DRAUF GESETZT ... 
+
+  STAPEL-REGEL : 
+  SCHALTUNGEN INNERHALB VON PLUG WABEN (Y, C, P) WERDEN ERST 
+  KOMPLETT GESTAPELT, BEVOR EINE NEUE ZIFFERNFOLGE INITIIERT WIRD.
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-PROTEIN
+
+ BION-ID ¡ SAX00X01F0004
+
+ AXIOM ¡ SAXF-PROTEIN
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-PROTEIN
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ PROTEIN AXIOMEN 
+
+ Ð PROTEIN (POI):
+ 1 ON PIPE PROTEIN 
+   IST EIN PROTEIN MIT EINEM VERTIKALEM BEARBEITUNGSSTRANG
+
+ 0 OFF PIPE PROTEIN (POI):
+   IST EIN PROTEIN OHNE VERTIKALEM BEARBEITUNGSSTRANG"
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-PROTON
+
+ BION-ID ¡ SAX00X01F0005
+
+ AXIOM ¡ SAXF-PROTON
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-PROTON
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ PROTON AXIOMEN
+
+ Ð PROTON (POO):
+   TRÄGT INNERHLAB EINES PROTEIN, HARDWARE VERSOGUNGSDATEN.
+   WIRD NUR DAFÜR VERWENDET.
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-AKTIONSDRAHT
+
+ BION-ID ¡ SAX00X01F0006
+
+ AXIOM ¡ SAXF-AKTIONSDRAHT
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-AKTIONSDRAHT
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ AKTIONSDRAHT AXIOMEN 
+
+ Ð AKTIONSDRAHT (AKT):
+   MACH AUS BEIDEN PIPE PROTEIN/EN AUSFÜHRBARE PROTEIN/E  
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-BOXI
+
+ BION-ID ¡ SAX00X01F0006
+
+ AXIOM ¡ SAXF-BOXI
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-BOXI
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ BOXI AXIOMEN 
+
+ Ð BOXI (BOX):
+   TRANSPORT EINHEIT FÜR MASTER-CONTROL SERVICE OPERATIONEN
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-SENTIATOR
+
+ BION-ID ¡ SAX00X01F0007
+
+ AXIOM ¡ SAXF-SENTIATOR
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-SENTIATOR
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ SENTIATOR AXIOMEN 
+
+ Ð SENTIATOR (SEN):
+ ENTSCHEIDUNGSZWEIG FÜR AUSGEFÜHRTE PROTEIN PROZESSE
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ SAXF-
+
+ BION-ID ¡ SAX00X01F0008
+
+ AXIOM ¡ 
+
+ ABSK ¡ SAXK+SAXX-LEXIKON+SAXF-
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ FREI
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
+ #  DATUM = [01:18:20|Di 14 Apr 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####ENDPUNKT SYSTEM-AXIOMEN=#####======###==##==###

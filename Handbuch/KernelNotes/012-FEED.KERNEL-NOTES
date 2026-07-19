@@ -1,0 +1,176 @@
+@kernel-nr: 12 Ð FEED 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####========K12 FEED========#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #       FEED = THE NOMADIC MASTER AND SLAVE MANAGER SYSTEM         #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ #         FEED FÜHREND = MEISTER | FEED TRAGEND = SKLAVE           #
+###==##==###======#####=====STARTPUNKT FEED====#####======###==##==###
+
+BION Ð FEED 
+
+ MORPHIC-ID ¡ F
+
+ BION-ID ¡ F
+
+MASK ¡ MASU-FEED
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð FEED
+
+ MORPHIC-ID ¡ FK 
+
+ BION-ID ¡ F00
+
+ AXIOM ¡ FK = <FK> 
+
+ ABSK ¡ FK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTKLASSE Ð EXTRAWABE-FÜHREND 
+
+ MORPHIC-ID ¡ FX-FÜHREND
+
+ BION-ID ¡ F00X01
+
+ AXIOM ¡ FX-FÜHREND = (<NR>)—Ø ¥ <CACHE> ¥ Ø
+ 
+ ABSK ¡ FK+FX-FÜHREND
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FÜHREND Ð STARTWABE
+
+ MORPHIC-ID ¡ FS-FÜHREND
+
+ BION-ID ¡ F00X01S01
+
+ AXIOM ¡ FS-FÜHREND = (
+
+ ABSK ¡ FK+FX-FÜHREND+FS-FÜHREND
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FÜHREND Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ FSYS-FÜHREND-NR
+
+ BION-ID ¡ F00X01Y01
+
+ AXIOM ¡ FSYS-FÜHREND-NR = (<NR>
+
+ ABSK ¡ FK+FX-FÜHREND+FSYS-FÜHREND-NR
+
+ I-ID ¡
+
+ O-ID ¡
+ 
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FÜHREND Ð COMBOWABE 
+
+ MORPHIC-ID ¡ FCOM-FÜHREND-BOXX-BOXI-CACHE
+
+ BION-ID ¡ F00X01Y01C01
+
+ AXIOM ¡ FCOM-FÜHREND = (<NR>)—Ø ¥ <CACHE> ¥ 
+
+ ABSK ¡ FK+FX-FÜHREND+FSYS-FÜHREND-NR+FCOM-FÜHREND-BOXX-BOXI-CACHE
+
+ LINK ¡ BOXK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FÜHREND Ð ENDWABE
+
+ MORPHIC-ID ¡ FE-FÜHREND
+
+ BION-ID ¡ F00X01Y01C01E01
+
+ AXIOM ¡ FCOM-FÜHREND = (<NR>)—Ø ¥ <CACHE> ¥ Ø
+
+ ABSK ¡ FK+FX-FÜHREND+FSYS-FÜHREND-NR+FCOM-FÜHREND-BOXX-BOXI-CACHE+FE-FÜHREND
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTKLASSE Ð EXTRAWABE-TRAGEND 
+
+ MORPHIC-ID ¡ FX-TRAGEND
+
+ BION-ID ¡ F00X02 
+
+ AXIOM ¡ FX-TRAGEND = Ø ¥ <CACHE ¥ Ø—(<NR>)
+
+ ABSK ¡ FK+FX-TRAGEND
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TRAGEND Ð STARWABE 
+
+ MORPHIC-ID ¡ FS-TRAGEND
+
+ BION-ID ¡ F00X02S01
+
+ AXIOM ¡ FS-TRAGEND = Ø 
+
+ ABSK ¡ FK+FX-TRAGEND+FS-TRAGEND
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TRAGEND Ð COMBOWABE 
+
+ MORPHIC-ID ¡  FCOM-TRAGEND-BOXX-BOXI-CACHE
+ 
+ BIO-ID ¡ F00X02S01C01
+ 
+ AXIOM ¡ FCOM-TRAGEND-BOXX-BOXI-CACHE = Ø ¥ <CACHE ¥
+
+ ABSK ¡ FK+FX-TRAGEND+FS-TRAGEND+FCOM-TRAGEND-BOXX-BOXI-CACHE
+
+ LINK ¡ BOXK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TRAGEND Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ FSYS-TRAGEND-NR 
+
+ BION-ID ¡ F00X02S01C01Y01
+
+ AXIOM ¡ FSYS-TRAGEND-NR = Ø ¥ <CACHE ¥ Ø—(<NR>
+
+ ABSK ¡ FK+FX-TRAGEND+FS-TRAGEND+FCOM-TRAGEND-BOXX-BOXI-CACHE+FSYS-TRAGEND-NR
+
+ I-ID ¡ 
+
+ O-ID ¡ 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TRAGEND ¡ ENDWABE 
+
+ MORPHIC-ID ¡ FE-TRAGEND 
+
+ BION-ID ¡ F00X2S01C01Y01E01 
+
+ AXIOM ¡ FE-TRAGEND = Ø ¥ <CACHE ¥ Ø—(<NR>)
+
+ ABSK ¡ FK+FX-TRAGEND+FS-TRAGEND+FCOM-TRAGEND-BOXX-BOXI-CACHE+FSYS-TRAGEND-NR+FE-TRAGEND
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = FFELT | FTELT (SPÄTER)
+ # SBSK FF = 
+ # SBSK FT = 
+ # VBSK = 
+ # RBSK = FK
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT                 #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####======ENDPUNKT FEED=====#####======###==##==###

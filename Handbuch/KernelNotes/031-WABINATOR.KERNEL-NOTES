@@ -1,0 +1,1119 @@
+@kernel-nr: 31 Ð WABINATOR        | STATUS = DEV LEVEL ROLLING-RELEASE
+#  LEXIKON NAVIGATION TERMINAL = kernel <NUMMER> == # == ##### === ###
+###==##==###======#####======K31 WABINATOR=====#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #                  WABINATOR = THE WABE NEST SYSTEM                 #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ # DEVNOTE: SPÄTER ALLE WABEN ABGLEICHEN .... VORSICHTHALBER
+ # UND SORTIEREN ... UND BLOCK TRENNER EINBAUEN 
+###==##==###======#####==STARTPUNKT WABINATOR==#####======###==##==###
+
+BION Ð WABINATOR 
+
+ MORPHIC-ID ¡ WAB
+
+ BION-ID ¡ WB
+
+MASK ¡ MASU-WABINATOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð WABINATOR 
+
+ MORPHIC-ID ¡ WABK 
+
+ BION-ID ¡ WB00 
+
+ AXIOM ¡ WABK = WABEN
+
+ ABSK = WABK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+WABINATOR Ð BION
+
+BION = ON
+
+ AXIOM ¡ BION = BION Ð *
+
+MORPHIC-ID = ON 
+ 
+ AXIOM ¡ MORPHIC-ID = *
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = * 
+
+ BION-ID-TYP = *
+
+MASK = ON 
+
+ AXIOM ¡ MASK = MASK-*
+
+SYSTEM = ON
+
+ WABEN-NEST = STANDART
+
+ WABEN-TYP = BION
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð KERNWABE
+
+BION = ON
+
+ AXIOM ¡ BION = BION-KERNWABE Ð *
+
+MORPHIC-ID = ON 
+ 
+ AXIOM ¡ MORPHIC-ID = *K
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = * 
+
+ BION-ID-TYP = *00
+
+AXIOM = ON
+
+ AXIOM ¡ AXIOM = *K
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK = **
+
+SYSTEM = ON
+
+ WABEN-NEST = STANDART
+
+ WABEN-TYP = KERN
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð HAUPTWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-HAUPTWABE Ð EXTRAWABE-*
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID =  *X-*
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = X**
+
+ BION-ID-TYP = X
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = **+**-*
+
+SYSTEM = ON
+
+ WABEN-NEST = STANDART
+
+ WABEN-TYP = TRÄGER
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð STARTWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð STARTWABE
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *S-*
+
+BION-ID = ON 
+ 
+ AXIOM ¡ BION-ID = S**
+
+ BION-ID-TYP = S
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = **-*
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = START
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð COMBOWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð COMBOWABE 
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *COM-*
+
+BION-ID = ON 
+
+ AXIOM  ¡ BION-ID = C**
+ AXIOM  ¡ BION-ID = C****
+
+ BION-ID-TYP = C
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = **-*-*K
+
+ AXIOM ¡ LINK = *K
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = SYSTEMLINK
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð SYSTEMWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð SYSTEMWABE 
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *SYS-*
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = Y**
+ AXIOM ¡ BION-ID = Y****
+
+ BION-ID-TYP = Y
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK = 
+
+ AXIOM ¡ <NAME>
+
+ AXIOM ¡ <WERT> 
+
+ AXIOM ¡ <IO>
+
+IO-ID = ON 
+
+ AXIOM ¡ I-ID = * # LISTENER
+
+ AXIOM ¡ O-ID = * # ACTOR
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = EINGABE/AUSGABE KANAL 
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð OPTIONSWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð OPTIONSWABE 
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *P-*
+
+BION-ID = ON 
+
+ AXIOM  ¡ BION-ID = P**
+
+ BION-ID-TYP = P
+
+AXIOM = ON 
+
+ AXIOM ¡ * = * 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = 
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP =
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð TORWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð TORWABE
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *R-*
+
+BION-ID = ON 
+
+ AXIOM  ¡ BION-ID = R**
+
+ BION-ID-TYP = R 
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK =
+
+ AXIOM ¡ LINK = *K
+
+TOR = ON 
+
+ AXIOM ¡ TOR = IN-ID =
+
+ AXIOM ¡ TOR = OUT-ID =
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = 
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð INFOWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð INFOWABE
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *F-*
+
+BION-ID = ON 
+
+ AXIOM  ¡ BION-ID = F****
+
+ BION-ID-TYP = F 
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK =
+
+ZEIG = ON 
+
+ AXIOM ¡ ZEIG = INHALT
+
+ AXOIM ¡ START INHALT 
+
+ AXIOM ¡ ENDE INHALT
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = ZEIG
+
+ DATEITYPEN = *.KERNEL-NOTES
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð ENDWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð ENDWABE 
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *E-*
+
+BION-ID = ON 
+
+ AXIOM  ¡ BION-ID = E**
+
+ AXIOM  ¡ BION-ID = E
+
+AXIOM = ON 
+
+ AXIOM ¡ * = * 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = 
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = ENDE
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð LINKENDWABE
+
+BION = ON
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð LINKENDWABE
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *L-*
+
+BION-ID = ON
+
+ AXIOM  ¡ BION-ID = L**
+
+ AXIOM  ¡ BION-ID = L
+
+AXIOM = ON
+
+ AXIOM ¡ * = *
+
+ABSK = ON
+
+ AXIOM ¡ ABSK =
+
+ AXIOM ¡ LINK = *K
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = SYSTEMLINK ENDE
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð BAUWABE
+
+BION = ON
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð  BAUDWABE
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *V-*
+
+BION-ID = ON
+
+ AXIOM  ¡ BION-ID = V**
+
+ AXIOM  ¡ BION-ID = V
+
+AXIOM = ON
+
+ AXIOM ¡ * = *
+
+ABSK = ON
+
+ AXIOM ¡ ABSK =
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = VARIABLEN
+
+ CACHE-TYP = BOXX-CACHE
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð LÖSCHWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-EXTRAWABE-* Ð LÖSCHWABE
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *LS-*
+
+BION-ID = ON
+
+ AXIOM  ¡ BION-ID = LS**
+
+ AXIOM  ¡ BION-ID = LS
+
+AXIOM = ON
+
+ AXIOM ¡ * = *
+
+ABSK = ON
+
+ AXIOM ¡ ABSK =
+
+IO-CLEAN-ID = AN
+
+ I-CLEAN-ID ¡ I-CLEAN-ID = * 
+
+ O-CLEAN-ID ¡ O-CLEAN-ID = 0  
+
+SYSTEM = ON
+
+ WABEN-NEST = PLUG
+
+ WABEN-TYP = LÖSCHEN
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð NAVIWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-NAVIWABE Ð *
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *W-*
+
+BION-ID = ON
+
+ AXIOM  ¡ BION-ID = W**
+
+ AXIOM  ¡ BION-ID = W
+
+AXIOM = ON 
+
+ AXIOM ¡ * = * 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK =
+
+BSK = ON 
+
+ AXIOM ¡ BSK = MORPHIC-ID = *
+
+BBSK = ON 
+
+ AXIOM ¡ BBSK = BION-ID = *
+
+SYSTEM = ON
+
+ WABEN-NEST = SYSTEM
+
+ WABEN-TYP = NAVIGATION
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð SYMBOLWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-SYMBOLWABE Ð *
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *SB-*
+
+BION-ID = ON
+
+ AXIOM  ¡ BION-ID = SB**
+
+ AXIOM  ¡ BION-ID = SB
+
+AXIOM = ON 
+
+ AXIOM ¡ * = * 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK =
+
+WERKZEUG = ON 
+
+ AXIOM ¡ WERKZEUG = * 
+
+SYSTEM = ON
+
+ WABEN-NEST = SYSTEM
+
+ WABEN-TYP = NAVIGATION
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð KENNUNGSWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-KENNUNGSWABE Ð *
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *KW-*
+
+BION-ID = ON
+
+ AXIOM  ¡ BION-ID = KW**
+
+ AXIOM  ¡ BION-ID = KW
+
+AXIOM = ON 
+
+ AXIOM ¡ * = * 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK =
+
+WBSK = ON 
+
+ AXIOM ¡ WBSK = *
+
+SYSTEM = ON
+
+ WABEN-NEST = SYSTEM
+
+ WABEN-TYP = NAVIGATION
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð NIDUSWABE
+
+BION = ON 
+
+ AXIOM ¡ BION-NIDUSWABE Ð *
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *DITNI-*
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = NI**
+
+ BION-ID-TYP = NI
+
+AXIOM = ON 
+
+ AXIOM ¡ *.*-* 
+ AXIOM ¡ *-*.*-* 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = 
+
+INFO = ON
+
+ INFO ¡ INFO-REGEL = *
+ INFO ¡ INFO-KETTE = *
+
+SYSTEM = ON
+
+ WABEN-NEST = KERN
+
+ WABEN-TYP = DATEITYPEN
+
+ DATEITYPEN = NIDUS = AUSFÜRHUNG
+
+ RANG = 1
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð NODUSWABE
+
+BION = ON 
+
+ AXIOM ¡ BION-NODUSWABE Ð *
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *DITNO-*
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = NO**
+
+ BION-ID-TYP = NO
+
+AXIOM = ON 
+
+ AXIOM ¡ *.*-* 
+ AXIOM ¡ *-*.*-* 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = 
+
+INFO = ON
+
+ INFO ¡ INFO-REGEL = 
+ INFO ¡ INFO-KETTE = 
+
+SYSTEM = ON
+
+ WABEN-NEST = KERN
+
+ WABEN-TYP = DATEITYPEN
+
+ DATEITYPEN = NODUS = KNOTENPUNKT
+
+ RANG = 2
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð NEXUSWABE
+
+BION = ON 
+
+ AXIOM ¡ BION-NEXUSWABE Ð *
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *DITNE-*
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = NE**
+
+ BION-ID-TYP = NE
+
+AXIOM = ON 
+
+ AXIOM ¡ *.*-* 
+ AXIOM ¡ *-*.*-* 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = 
+
+INFO = ON
+
+ INFO ¡ INFO-REGEL = *
+ INFO ¡ INFO-KETTE = *
+
+SYSTEM = ON
+
+ WABEN-NEST = KERN
+
+ WABEN-TYP = DATEITYPEN
+
+ DATEITYPEN = NEXUS = VERBINDUNG
+
+ RANG = 3
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð PROZESSWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION-EXTRAWABE-* Ð PROZESSWABE
+ 
+MORPHIC-ID = ON 
+
+ AXIOM ¡ 
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = SS**
+
+ BION-ID-TYP = SS
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON 
+
+ AXIOM ¡
+
+###==##==###======#####====
+
+HARDWARE = ON 
+
+ AXIOM ¡ LFSR = 
+
+GENERIERE = ON 
+
+ AXIOM ¡  MCDX-GENERIERE =
+ 
+###==##==###======#####====
+
+SYSTEM = ON
+
+ WABEN-NEST = KERN
+
+ WABEN-TYP = PROZESS
+
+ DATEITYPEN = NIDUS = AUSFÜRHUNG
+
+ RANG = 1 
+
+ OPTION = NIDUS START SUCHE 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð IDLEWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION-EXTRAWABE-* Ð IDLEWABE
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = DL**
+
+ BION-ID-TYP = DL
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK = 
+
+IDLE = ON 
+
+ AXIOM ¡ IDLE = PROZESS = *
+
+SYSTEM = ON
+
+ WABEN-NEST = KERN
+
+ WABEN-TYP = PROZESS
+
+ DATEITYPEN = NIDUS = AUSFÜRHUNG
+
+ RANG = 1 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð MORPHICWABE
+
+BION = ON 
+
+ AXIOM ¡
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = 
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = I**
+
+ BION-ID-TYP = I
+
+AXIOM = ON 
+
+ AXIOM ¡ AXIOM = 
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK =
+
+###==##==###======#####====
+
+GENERALSCHALTUNG = ON 
+
+ AXIOM ¡ GAS = ELEMENT
+
+ AXIOM ¡ ELEMENT = ELT
+
+ AXIOM ¡ MORPHIC-ID = GAS-IN 
+
+ AXIOM ¡ GAS-IN = MORPHIC-ID
+
+ AXIOM ¡ GAS-OUT = *ELT
+
+###==##==###======#####====
+
+SYSTEM = ON
+
+ WABEN-NEST = 
+
+ WABEN-TYP = PROZESS
+
+ DATEITYPEN = NIDUS = AUSFÜRHUNG
+
+ RANG = 1 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð BLOCKWABE
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ BION-EXTRAWABE-* Ð BLOCKWABE
+
+BION-ID = ON
+
+ AXIOM ¡ BION-ID = B**
+
+ BION-ID-TYP = B
+
+AXIOM = ON 
+
+ AXIOM ¡ AXIOM = 
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK = 
+
+###==##==###======#####====
+
+MORPHIC-SYNTAX = ON 
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^ 3ZYKLUS-OUT:
+ AXIOM ¡ ^       1SYNC:
+ AXIOM ¡ ^       2KOPF:
+ AXIOM ¡ ^      1START: 
+ AXIOM ¡ ^       2FOOD:
+ AXIOM ¡ ^  3ZYKLUS-IN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^       6FREE:
+
+###==##==###======#####====
+
+BRÜCKE = ON 
+
+ AXIOM ¡ BRÜCKE-IN = *
+
+ AXIOM ¡ BRÜCKE-OUT = *
+
+###==##==###======#####====
+
+SYSTEM = ON
+
+ WABEN-NEST = 
+
+ WABEN-TYP = 
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð MASTERWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-MASTERWABE Ð *
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = *U-*
+
+BION-ID = ON 
+
+ AXIOM  ¡ BION-ID = MU****
+
+ BION-ID-TYP = MU 
+
+AXIOM = ON 
+
+ AXIOM ¡ *U-*
+
+ABSK = ON 
+
+ AXIOM ¡ ABSK = 
+
+ADRESSIERUNG = ON 
+
+ AXIOM ¡ ADRESSIERUNG = *-*.KERNEL-NOTES
+
+EXISTENZ = ON 
+
+ AXIOM ¡ EXISTENZ = *K
+
+GENERALSCHALTUNG = ON 
+
+ AXIOM ¡ GAS = ELEMENT
+
+ AXIOM ¡ ELEMENT = ELT
+
+ AXIOM ¡ MORPHIC-ID = GAS-IN 
+
+ AXIOM ¡ GAS-IN = MORPHIC-ID
+
+ AXIOM ¡ GAS-OUT = *ELT
+
+SYSTEM = ON
+
+ WABEN-NEST = 
+
+ WABEN-TYP = 
+
+ DATEITYPEN = 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+WABINATOR Ð DATENTYPWABE
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-DATENTYPWABE Ð *
+
+MORPHIC-ID = ON 
+
+ AXIOM ¡ MORPHIC-ID = DATYP*-*
+
+BION-ID = ON 
+
+ AXIOM ¡ BION-ID = DA**TYP**
+
+ BION-ID-TYP = DAT
+
+AXIOM = ON 
+
+ AXIOM ¡ * = *
+
+ABSK = ON
+
+ AXIOM ¡ ABSK = **+**-*
+
+MCS-TYP = ON 
+
+ AXIOM ¡ MCS-TYP = *
+
+ AXIOM ¡ DATENTYPKATEGORIEN = *
+
+ AXIOM ¡ BIT-BREITE = *
+ 
+ AXIOM ¡ LICHTPULSRATE = *
+
+ AXIOM ¡ FARBSPEKTRUM = *
+
+ AXIOM ¡ SIGNALSTÄRKE = *
+
+ AXIOM ¡ TONFREQUENZ = *
+
+ AXIOM ¡ FUNKTION = * 
+
+ AXIOM ¡ BEZEICHNUNG = *
+
+SYSTEM = ON
+
+ WABEN-NEST = SYSTEM
+
+ WABEN-TYP = DATENTRÄGER
+
+ DATEITYPEN = DATENTYP
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+# MUSS SPÄTER NOCH ERWEITERT WERDEN BEIM ABK MOK SCHREIBEN | GRUNDGERÜST
+WABINATOR Ð MCMDWABE 
+
+BION = ON 
+
+ AXIOM ¡ BION = BION-MCMD Ð * 
+
+MORPHIC-ID = ON
+
+ AXIOM ¡ MORPHIC-ID = *MCD-*
+
+BION-ID = ON
+
+ AXIOM  ¡ BION-ID = MC**
+
+ AXIOM  ¡ BION-ID = MC
+
+AXIOM = ON 
+
+ AXIOM ¡ * = * 
+
+ABSK = ON
+
+ AXIOM ¡ ABSK =
+
+---------------------------------------
+!! KLUG DARÜBER NACHDENKEN 
+   
+EINGABE = ON 
+
+ AXIOM ¡ EINGABE = *
+
+BRÄUCHTE :
+
+REIHENFOLGE = ON
+
+ AXIOM ¡ REIHENFOLGE = SEQUENZIELL 
+
+ AXIOM ¡ REIHENFOLGE = PARALLEL
+ 
+---------------------------------------
+
+SYSTEM = ON
+
+ WABEN-NEST = SYSTEM
+
+ WABEN-TYP = COMMAND
+
+ DATEITYPEN =
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [23:30:22|Mo 11 Mai 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####===ENDPUNKT WABINATOR===#####======###==##==###

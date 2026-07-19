@@ -1,0 +1,73 @@
+@kernel-nr: 06 Ð BINDUNGSBEFEHL 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####====K6 BINDUNGSBEFEHL===#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####STARTPUNKT BINDUNGSBEFEHL####======###==##==###
+
+BION Ð BINDUNGSBEFEHL 
+
+ MORPHIC-ID ¡ BIN
+
+ BION-ID ¡ BI
+
+MASK ¡ MASU-BINDUNGSBEFEHL 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð BINDUNGSBEFEHL
+
+ MORPHIC-ID ¡ BINK
+
+ BION-ID ¡ BI00
+
+ AXIOM ¡ BINK = <BINK>
+
+ ABSK ¡ BINK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-KNOTEN
+
+ MORPHIC-ID ¡ BINX-KNOTEN
+ 
+ BION-ID ¡ BI00X01
+
+ AXIOM ¡ BINX-KNOTEN = <NAME>;<WERT>
+
+ ABSK ¡ BINK-BINX-KNOTEN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-KNOTEN Ð STARTWABE
+
+ MORPHIC-ID ¡ BINS-KNOTEN
+
+ BION-ID ¡ BI00X01S01
+
+ AXIOM ¡ BINS-KNOTEN = ;
+
+ ABSK ¡ BINK+BINX-KNOTEN+BINS-KNOTEN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-KNOTEN Ð ENDWABE 
+
+ MORPHIC-ID ¡ BINE-KNOTEN
+
+ BION-ID ¡ BI00X01S01E01
+
+ AXIOM ¡ BINE-KNOTEN = ;
+
+ ABSK ¡ BINK+BINX-KNOTEN+BINS-KNOTEN+BINE-KNOTEN
+
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = BINELT
+ SBSK = BINK-BINX-KNOTEN-BINS-KNOTEN-BINE-KNOTEN
+ # VBSK = NICHT VORHANDEN
+ RBSK = BINK
+###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
+ #  DATUM = [15:30:53|Di 05 Mai 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####ENDPUNKT BINDUNGSBEFEHL=#####======###==##==###

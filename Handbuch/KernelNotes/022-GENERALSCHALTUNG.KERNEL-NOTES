@@ -1,0 +1,631 @@
+@kernel-nr: 22 Ð GENERALSCHALTUNG 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####==K22 GENERALSCHALTUNG==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # GENERALSCHALTUNG = THE ENTRY POINT THE ELEMENT COMPONENT CONTROL #
+###==##==###======###STARTPUNKT GENERALSCHALTUNG####======###==##==###
+
+BION Ð GENERALSCHALTUNG
+
+ MORPHIC-ID ¡ GAS
+
+ BION-ID ¡ GA
+
+MASK ¡ MASU-GENERALSCHALTUNG
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð GENERALSCHALTUNG
+
+ MORPHIC-ID ¡ GASK
+
+ BION-ID ¡ GA00
+
+ AXIOM ¡ GASK = <GASK>
+
+ ABSK ¡ GASK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-MORPHICWABE Ð DATENTYPEN
+
+ MORPHIC-ID ¡ GASI-DATENTYPEN
+
+ BION-ID ¡ GA00I01
+
+ AXIOM ¡ GASI-DATENTYPEN
+
+ ABSK ¡ GASK+GASI-DATENTYPEN
+
+ GAS-IN ¡ DAT
+
+ GAS-OUT ¡ DATELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð TRANSAKTIONSRAHMEN
+
+ MORPHIC-ID ¡ GASI-TRANSAKTIONSRAHMEN
+
+ BION-ID ¡ GA00I02
+
+ AXIOM ¡ GASI-TRANSAKTIONSRAHMEN
+
+ ABSK ¡ GASK+GASI-TRANSAKTIONSRAHMEN
+
+ GAS-IN ¡ TRAN
+
+ GAS-OUT ¡ TRANELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð PROTEIN
+
+ MORPHIC-ID ¡ GASI-PROTEIN
+
+ BION-ID ¡ GA00I03
+
+ AXIOM ¡ GASI-PROTEIN
+
+ ABSK ¡ GASK+GASI-PROTEIN
+
+ GAS-IN ¡ POI
+
+ GAS-OUT ¡ POIELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð PROTON
+
+ MORPHIC-ID ¡ GASI-PROTON
+
+ BION-ID ¡ GA00I04
+
+ AXIOM ¡ GASI-PROTON
+
+ ABSK ¡ GASK+GASI-PROTON
+
+ GAS-IN ¡ POO
+
+ GAS-OUT ¡ POOELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð TRENNBEFEHL
+
+ MORPHIC-ID ¡ GASI-TRENNBEFEHL
+
+ BION-ID ¡ GA00I05
+
+ AXIOM ¡ GASI-TRENNBEFEHL
+
+ ABSK ¡ GASK+GASI-TRENNBEFEHL
+
+ GAS-IN ¡ TREN
+
+ GAS-OUT ¡ TRENELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð BINDUNGSBEFEHL
+
+ MORPHIC-ID ¡ GASI-BINDUNGSBEFEHL
+
+ BION-ID ¡ GA00I06
+
+ AXIOM ¡ GASI-BINDUNGSBEFEHL
+
+ ABSK ¡ GASK+GASI-BINDUNGSBEFEHL
+
+ GAS-IN ¡ BIN
+
+ GAS-OUT ¡ BINELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð AKTIONSDRAHT
+
+ MORPHIC-ID ¡ GASI-AKTIONSDRAHT
+
+ BION-ID ¡ GA00I07
+
+ AXIOM ¡ GASI-AKTIONSDRAHT
+
+ ABSK ¡ GASK+GASI-AKTIONSDRAHT
+
+ GAS-IN ¡ AKT
+
+ GAS-OUT ¡ AKTELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð BOXI
+
+ MORPHIC-ID ¡ GASI-BOXI
+
+ BION-ID ¡ GA00I08
+
+ AXIOM ¡ GASI-BOXI
+
+ ABSK ¡ GASK+GASI-BOXI
+
+ GAS-IN ¡ BOX
+
+ GAS-OUT ¡ BOXELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð MASTER
+
+ MORPHIC-ID ¡ GASI-MASTER
+
+ BION-ID ¡ GA00I09
+
+ AXIOM ¡ GASI-MASTER
+
+ ABSK ¡ GASK+GASI-MASTER
+
+ GAS-IN ¡ MAS
+
+ GAS-OUT ¡ MASELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð REX
+
+ MORPHIC-ID ¡ GASI-REX
+
+ BION-ID ¡ GA00I10
+
+ AXIOM ¡ GASI-REX
+
+ ABSK ¡ GASK+GASI-REX
+
+ GAS-IN ¡ REX
+
+ GAS-OUT ¡ REXELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð ARGUMENT
+
+ MORPHIC-ID ¡ GASI-ARGUMENT
+
+ BION-ID ¡ GA00I11
+
+ AXIOM ¡ GASI-ARGUMENT
+
+ ABSK ¡ GASK+GASI-ARGUMENT
+
+ GAS-IN ¡ ARG
+
+ GAS-OUT ¡ ARGELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð FEED
+
+ MORPHIC-ID ¡ GASI-FEED
+
+ BION-ID ¡ GA00I12
+
+ AXIOM ¡ GASI-FEED
+
+ ABSK ¡ GASK+GASI-FEED
+
+ GAS-IN ¡ F
+
+ GAS-OUT ¡ FELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð SENTIATOR
+
+ MORPHIC-ID ¡ GASI-SENTIATOR
+
+ BION-ID ¡ GA00I13
+
+ AXIOM ¡ GASI-SENTIATOR
+
+ ABSK ¡ GASK+GASI-SENTIATOR
+
+ GAS-IN ¡ SEN
+
+ GAS-OUT ¡ SENELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð NAVIGATOR
+
+ MORPHIC-ID ¡ GASI-NAVIGATOR
+
+ BION-ID ¡ GA00I14
+
+ AXIOM ¡ GASI-NAVIGATOR
+
+ ABSK ¡ GASK+GASI-NAVIGATOR
+
+ GAS-IN ¡ NAV
+
+ GAS-OUT ¡ NAVELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð WARP
+
+ MORPHIC-ID ¡ GASI-WARP
+
+ BION-ID ¡ GA00I15
+
+ AXIOM ¡ GASI-WARP
+
+ ABSK ¡ GASK+GASI-WARP
+
+ GAS-IN ¡ WAR
+
+ GAS-OUT ¡ WARELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð IDENTIFIKATION
+
+ MORPHIC-ID ¡ GASI-IDENTIFIKATION
+
+ BION-ID ¡ GA00I16
+
+ AXIOM ¡ GASI-IDENTIFIKATION
+
+ ABSK ¡ GASK+GASI-IDENTIFIKATION
+
+ GAS-IN ¡ GAS
+
+ GAS-OUT ¡ GASELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð MCMD
+
+ MORPHIC-ID ¡ GASI-MCMD
+
+ BION-ID ¡ GA00I17
+
+ AXIOM ¡ GASI-MCMD
+
+ ABSK ¡ GASK+GASI-MCMD
+
+ GAS-IN ¡ MCD
+
+ GAS-OUT ¡ MCDELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð DATEITYPEN
+
+ MORPHIC-ID ¡ GASI-DATEITYPEN
+
+ BION-ID ¡ GA00I18
+
+ AXIOM ¡ GASI-DATEITYPEN
+
+ ABSK ¡ GASK+GASI-DATEITYPEN
+
+ GAS-IN ¡ DIT
+
+ GAS-OUT ¡ DITELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð RETRON
+
+ MORPHIC-ID ¡ GASI-RETRON
+
+ BION-ID ¡ GA00I19
+
+ AXIOM ¡ GASI-RETRON
+
+ ABSK ¡ GASK+GASI-RETRON
+
+ GAS-IN ¡ RET
+
+ GAS-OUT ¡ RETELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð VATRON
+
+ MORPHIC-ID ¡ GASI-VATRON
+
+ BION-ID ¡ GA00I20
+
+ AXIOM ¡ GASI-VATRON
+
+ ABSK ¡ GASK+GASI-VATRON
+
+ GAS-IN ¡ VAT
+
+ GAS-OUT ¡ VATELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð KKIS
+
+ MORPHIC-ID ¡ GASI-KKIS
+
+ BION-ID ¡ GA00I21
+
+ AXIOM ¡ GASI-KKIS
+
+ ABSK ¡ GASK+GASI-KKIS
+
+ GAS-IN ¡ KKI
+
+ GAS-OUT ¡ KKIELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð GENERALSCHALTUNG
+
+ MORPHIC-ID ¡ GASI-GENERALSCHALTUNG
+
+ BION-ID ¡ GA00I22
+
+ AXIOM ¡ GASI-GENERALSCHALTUNG
+
+ ABSK ¡ GASK+GASI-GENERALSCHALTUNG
+
+ GAS-IN ¡ GAS
+
+ GAS-OUT ¡ GASELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð NITROX
+
+ MORPHIC-ID ¡ GASI-NITROX
+
+ BION-ID ¡ GA00I23
+
+ AXIOM ¡ GASI-NITROX
+
+ ABSK ¡ GASK+GASI-NITROX
+
+ GAS-IN ¡ NIT
+
+ GAS-OUT ¡ NITELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð SYNAPTOR
+
+ MORPHIC-ID ¡ GASI-SYNAPTOR
+
+ BION-ID ¡ GA00I24
+
+ AXIOM ¡ GASI-SYNAPTOR
+
+ ABSK ¡ GASK+GASI-SYNAPTOR
+
+ GAS-IN ¡ SYN
+
+ GAS-OUT ¡ SYNELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð ZYTRON
+
+ MORPHIC-ID ¡ GASI-ZYTRON
+
+ BION-ID ¡ GA00I25
+
+ AXIOM ¡ GASI-ZYTRON
+
+ ABSK ¡ GASK+GASI-ZYTRON
+
+ GAS-IN ¡ ZYT
+
+ GAS-OUT ¡ ZYTELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð HERZSCHLAG
+
+ MORPHIC-ID ¡ GASI-HERZSCHLAG
+
+ BION-ID ¡ GA00I29
+
+ AXIOM ¡ GASI-HERZSCHLAG
+
+ ABSK ¡ GASK+GASI-HERZSCHLAG
+
+ GAS-IN ¡ HERZ
+
+ GAS-OUT ¡ HERZELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð ABSOLULATOR
+
+ MORPHIC-ID ¡ GASI-ABSOLULATOR
+
+ BION-ID ¡ GA00I30
+
+ AXIOM ¡ GASI-ABSOLULATOR
+
+ ABSK ¡ GASK+GASI-ABSOLULATOR
+
+ GAS-IN ¡ AB
+
+ GAS-OUT ¡ ABELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð WABINATOR
+
+ MORPHIC-ID ¡ GASI-WABINATOR
+
+ BION-ID ¡ GA00I31
+
+ AXIOM ¡ GASI-WABINATOR
+
+ ABSK ¡ GASK+GASI-WABINATOR
+
+ GAS-IN ¡ WAB
+
+ GAS-OUT ¡ WABELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð MODULATOR
+
+ MORPHIC-ID ¡ GASI-MODULATOR
+
+ BION-ID ¡ GA00I32
+
+ AXIOM ¡ GASI-MODULATOR
+
+ ABSK ¡ GASK+GASI-MODULATOR
+
+ GAS-IN ¡ MO
+
+ GAS-OUT ¡ MOELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð CHIPONATOR
+
+ MORPHIC-ID ¡ GASI-CHIPONATOR
+
+ BION-ID ¡ GA00I33
+
+ AXIOM ¡ GASI-CHIPONATOR
+
+ ABSK ¡ GASK+GASI-CHIPONATOR
+
+ GAS-IN ¡ CHI
+
+ GAS-OUT ¡ CHIELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð MORPHIC
+
+ MORPHIC-ID ¡ GASI-MORPHIC
+
+ BION-ID ¡ GA00I34
+
+ AXIOM ¡ GASI-MORPHIC
+
+ ABSK ¡ GASK+GASI-MORPHIC
+
+ GAS-IN ¡ MORP
+
+ GAS-OUT ¡ MORPELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð THE-WABE-NEST-SYSTEM
+
+ MORPHIC-ID ¡ GASI-THE-WABE-NEST-SYSTEM
+
+ BION-ID ¡ GA00I80
+
+ AXIOM ¡ GASI-THE-WABE-NEST-SYSTEM
+
+ ABSK ¡ GASK+GASI-THE-WABE-NEST-SYSTEM
+
+ GAS-IN ¡ TWS
+
+ GAS-OUT ¡ TWSELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð KOGNITIVESWÄHRUNGSGELDSYSTEM
+
+ MORPHIC-ID ¡ GASI-KOGNITIVESWÄHRUNGSGELDSYSTEM
+
+ BION-ID ¡ GA00I81
+
+ AXIOM ¡ GASI-KOGNITIVESWÄHRUNGSGELDSYSTEM
+
+ ABSK ¡ GASK+GASI-KOGNITIVESWÄHRUNGSGELDSYSTEM
+
+ GAS-IN ¡ KGW
+
+ GAS-OUT ¡ KGWELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð TIMELINE
+
+ MORPHIC-ID ¡ GASI-TIMELINE
+
+ BION-ID ¡ GA00I82
+
+ AXIOM ¡ GASI-TIMELINE
+
+ ABSK ¡ GASK+GASI-TIMELINE
+
+ GAS-IN ¡ TIL
+
+ GAS-OUT ¡ TILELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð SYSTEM-AXIOMEN
+
+ MORPHIC-ID ¡ GASI-SYSTEM-AXIOMEN
+
+ BION-ID ¡ GA00I83
+
+ AXIOM ¡ GASI-SYSTEM-AXIOMEN
+
+ ABSK ¡ GASK+GASI-SYSTEM-AXIOMEN
+
+ GAS-IN ¡ SAX
+
+ GAS-OUT ¡ SAXELT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-MORPHICWABE Ð 
+
+ MORPHIC-ID ¡ GASI-
+
+ BION-ID ¡ GA00I
+
+ AXIOM ¡ GASI-
+
+ ABSK ¡ GASK+GASI-
+
+ GAS-IN ¡ 
+
+ GAS-OUT ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+## LEERER BEREICH 
+BION-MORPHICWABE Ð 
+
+ MORPHIC-ID ¡ GASI-
+
+ BION-ID ¡ GA00I
+
+ AXIOM ¡ GASI-
+
+ ABSK ¡ GASK+GASI-
+
+ GAS-IN ¡ 
+
+ GAS-OUT ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = GASELT
+ SBSK = GASK+GASI-GASELT
+ # VBSK = 
+ RBSK = GASK
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [04:50:25|Fr 17 April 2026] MARKENBRANDT                #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======####ENDPUNKT GENERALSCHALTUNG#####======###==##==###

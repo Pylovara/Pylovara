@@ -1,0 +1,413 @@
+@kernel-nr: 14 Ð NAVIGATOR | DEMNÄCHST IN PRÄZISIONSARBEIT 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####======K14 NAVIGATOR=====#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #   NAVIGATOR = THE SYSTEM NAVIGATIONS SIGNPOST MANAGMENT SERVICE  #
+###==##==###======#####===STARTPUNKT NAVIGATOR=#####======###==##==###
+
+BION Ð NAVIGATOR 
+
+ MORPHIC-ID ¡ NAV 
+
+ BION-ID ¡ NA 
+
+MASK ¡ MASU-NAVIGATOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð NAVIGATOR
+
+ MORPHIC-ID ¡ NAVK 
+
+ BION-ID ¡ NA00 
+
+ AXIOM ¡ NAVK = <NAVK>
+
+ ABSK ¡ NAVK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-NAVIWABE Ð BSK
+
+ MORPHIC-ID ¡ NAVW-BSK
+
+ BION-ID ¡ NA00X01W01
+
+ AXIOM ¡ NAVW-BSK = BSK
+
+ ABSK ¡ NAVK+NAVW-BSK
+
+ BSK ¡ MORPHIC-ID = DAT
+
+ BSK ¡ MORPHIC-ID = TRAN
+
+ BSK ¡ MORPHIC-ID = POI
+
+ BSK ¡ MORPHIC-ID = POO
+
+ BSK ¡ MORPHIC-ID = TREN
+
+ BSK ¡ MORPHIC-ID = BIN
+
+ BSK ¡ MORPHIC-ID = AKT
+
+ BSK ¡ MORPHIC-ID = BOX
+
+ BSK ¡ MORPHIC-ID = MAS
+
+ BSK ¡ MORPHIC-ID = REX
+
+ BSK ¡ MORPHIC-ID = ARG
+
+ BSK ¡ MORPHIC-ID = F
+
+ BSK ¡ MORPHIC-ID = SEN
+
+ BSK ¡ MORPHIC-ID = NAV
+
+ BSK ¡ MORPHIC-ID = WAR
+
+ BSK ¡ MORPHIC-ID = ID
+
+ BSK ¡ MORPHIC-ID = MCC
+
+ BSK ¡ MORPHIC-ID = DI
+
+ BSK ¡ MORPHIC-ID = RET
+
+ BSK ¡ MORPHIC-ID = VAT
+
+ BSK ¡ MORPHIC-ID = KKI
+
+ BSK ¡ MORPHIC-ID = GAS
+
+ BSK ¡ MORPHIC-ID = NIT
+
+ BSK ¡ MORPHIC-ID = SYN
+
+ BSK ¡ MORPHIC-ID = ZYT
+
+ BSK ¡ MORPHIC-ID = HERZ
+
+ BSK ¡ MORPHIC-ID = AB
+
+ BSK ¡ MORPHIC-ID = WAB
+
+ BSK ¡ MORPHIC-ID = MO
+
+ BSK ¡ MORPHIC-ID = CHI
+
+ BSK ¡ MORPHIC-ID = MORP
+
+ BSK ¡ MORPHIC-ID = TWS
+
+ BSK ¡ MORPHIC-ID = KGW 
+
+ BSK ¡ MORPHIC-ID = TIL 
+
+ BSK ¡ MORPHIC-ID = SAX
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==### 
+
+BION-NAVIWABE Ð BBSK
+
+ MORPHIC-ID ¡ NAVW-BBSK
+
+ BION-ID ¡ NA00X01W02
+
+ AXIOM ¡ NAVW-BBSK = BBSK
+
+ ABSK ¡ NAVK+NAVW-BBSK
+
+ BBSK ¡ BION-ID = DA
+
+ BBSK ¡ BION-ID = TA
+
+ BBSK ¡ BION-ID = PI
+
+ BBSK ¡ BION-ID = PO
+
+ BBSK ¡ BION-ID = TE
+
+ BBSK ¡ BION-ID = BI
+
+ BBSK ¡ BION-ID = AK
+
+ BBSK ¡ BION-ID = BX
+
+ BBSK ¡ BION-ID = MA
+
+ BBSK ¡ BION-ID = RX
+
+ BBSK ¡ BION-ID = AR
+
+ BBSK ¡ BION-ID = F
+
+ BBSK ¡ BION-ID = SE
+
+ BBSK ¡ BION-ID = NA
+
+ BBSK ¡ BION-ID = WA
+
+ BBSK ¡ BION-ID = ID
+
+ BBSK ¡ BION-ID = MC
+
+ BBSK ¡ BION-ID = DI
+
+ BBSK ¡ BION-ID = RE
+
+ BBSK ¡ BION-ID = VA
+
+ BBSK ¡ BION-ID = KK
+
+ BBSK ¡ BION-ID = GA
+
+ BBSK ¡ BION-ID = NI
+
+ BBSK ¡ BION-ID = SY
+
+ BBSK ¡ BION-ID = ZY
+
+ BBSK ¡ BION-ID = HR
+
+ BBSK ¡ BION-ID = AB
+
+ BBSK ¡ BION-ID = WB
+
+ BBSK ¡ BION-ID = MO
+
+ BBSK ¡ BION-ID = CH
+
+ BBSK ¡ BION-ID = MR
+
+ BBSK ¡ BION-ID = TW
+
+ BBSK ¡ BION-ID = TI
+
+ BBSK ¡ BION-ID = SA
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==### 
+
+BION-SYMBOLWABE Ð KORDI
+
+ MORPHIC-ID ¡ NAVSB-KORDI
+
+ BION-ID ¡ NA00X01B01
+
+ AXIOM ¡ NAVSB-KORDI = WERKZEUG
+
+ ABSK ¡ NAVK+NAVSB-KORDI
+
+ WERKZEUG ¡ #
+
+ WERKZEUG ¡ ™
+
+ WERKZEUG ¡ ¢!
+
+ WERKZEUG ¡ !¢
+
+ WERKZEUG ¡ Ł
+
+ WERKZEUG ¡ £
+
+ WERKZEUG ¡ ĸ
+
+ WERKZEUG ¡ þ
+
+ WERKZEUG ¡ |
+
+ WERKZEUG ¡ /
+
+ WERKZEUG ¡ \
+
+ WERKZEUG ¡ &&
+
+ WERKZEUG ¡ &
+
+ WERKZEUG ¡ ‹
+
+ WERKZEUG ¡ ›
+
+ WERKZEUG ¡ >
+
+ WERKZEUG ¡ <
+
+ WERKZEUG ¡ *
+
+ WERKZEUG ¡ ¡
+
+ WERKZEUG ¡ =
+
+ WERKZEUG ¡ §
+
+ WERKZEUG ¡ $
+
+ WERKZEUG ¡ Ð
+
+ WERKZEUG ¡ [
+
+ WERKZEUG ¡ —[
+
+ WERKZEUG ¡ ] 
+
+ WERKZEUG ¡ {
+
+ WERKZEUG ¡ }
+
+ WERKZEUG ¡ -
+
+ WERKZEUG ¡ –
+
+ WERKZEUG ¡ ¿
+
+ WERKZEUG ¡ ¿¹
+
+ WERKZEUG ¡ ¿²
+
+ WERKZEUG ¡ ¿³
+
+ WERKZEUG ¡ Ŧ
+
+ WERKZEUG ¡ Ŧ°
+
+ WERKZEUG ¡ Ŧ¹
+
+ WERKZEUG ¡ Ŧ²
+
+ WERKZEUG ¡ Ŧ³
+
+ WERKZEUG ¡ ÷
+
+ WERKZEUG ¡ ±
+
+ WERKZEUG ¡ ®
+
+ WERKZEUG ¡ ©
+
+ WERKZEUG ¡ ¬
+
+ WERKZEUG ¡ ¤
+
+ WERKZEUG ¡ ·
+
+ WERKZEUG ¡ ··
+
+ WERKZEUG ¡ ···
+
+ WERKZEUG ¡ ····
+
+ WERKZEUG ¡ ¥
+
+ WERKZEUG ¡ Ħ
+
+ WERKZEUG ¡ × 
+
+ WERKZEUG ¡ ~ 
+
+ WERKZEUG ¡ º
+
+ WERKZEUG ¡ '
+
+ WERKZEUG ¡ ,
+
+ WERKZEUG ¡ "
+
+ WERKZEUG ¡ »
+
+ WERKZEUG ¡ «
+
+ WERKZEUG ¡ ««
+
+ WERKZEUG ¡ ſ
+
+ WERKZEUG ¡ Ω 
+
+ WERKZEUG ¡ Æ
+
+ WERKZEUG ¡ (
+
+ WERKZEUG ¡ )
+
+ WERKZEUG ¡ Ø—(
+
+ WERKZEUG ¡ )—Ø
+
+ WERKZEUG ¡ Ø
+
+ WERKZEUG ¡ £
+
+ WERKZEUG ¡ £1
+
+ WERKZEUG ¡ £2
+
+ WERKZEUG ¡ £3
+
+ WERKZEUG ¡ £4
+
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-KENNUNGSWABE Ð WBSK
+
+ MORPHIC-ID ¡ NAVKW-WBSK
+
+ BION-ID ¡ NA00X01KW01
+
+ AXIOM ¡ NAVKW-WBSK = WBSK
+
+ ABSK ¡ NAVK+NAVKW-WBSK
+
+ WBSK ¡ BION = *
+
+ WBSK ¡ KERNWABE = K
+
+ WBSK ¡ HAUPTWABE = X
+
+ WBSK ¡ STARTWABE = S
+
+ WBSK ¡ COMBOWABE = C
+
+ WBSK ¡ SYSTEMWABE = SYS
+
+ WBSK ¡ OPTIONSWABE = P
+
+ WBSK ¡ TORWABE = R
+
+ WBSK ¡ INFOWABE = F
+
+ WBSK ¡ ENDWABE = E
+
+ WBSK ¡ LINKENDWABE = L
+
+ WBSK ¡ BAUWABE = V
+
+ WBSK ¡ LÖSCHWABE = LS
+
+ WBSK ¡ NAVIWABE = W
+
+ WBSK ¡ SYMBOLWABE = SB 
+
+ WBSK ¡ KENNUNGSWABE = KW
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = NAVELT
+ # SBSK = 
+ # SBSK = 
+ # VBSK = 
+ # RBSK = 
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [11:30:00|Di 27 JAN 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####===ENDPUNKT NAVIGATOR===#####======###==##==###

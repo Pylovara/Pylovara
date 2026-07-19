@@ -1,0 +1,712 @@
+@kernel-nr: 21 Ð KKIS
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####========K21 KKIS========#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # KKIS = PYLOVARAS KOGNITIVE ARTIFICIAL INTELLIGENCE SOUL CONTROL  #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ # KI SCHNITTSTELLE ZUM SYSTEM = MAIN & KLONE KERNEL ZUGANG FÜR     # 
+ # USER KI'S UND PYLOVARA SYSTEM MAIN KERNEL AGI+                   #
+###==##==###======#####====STARTPUNKT KKIS=====#####======###==##==###
+
+BION Ð KKIS
+
+ MORPHIC-ID ¡ KKI
+
+ BION-ID ¡ KK 
+
+MASK ¡ MASU-KKIS
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð KKIS 
+
+ MORPHIC-ID ¡ KKIK
+
+ BION-ID ¡ KK00
+
+ AXIOM ¡ KKIK = <KKIK>
+
+ ABSK ¡ KKIK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð DATENTYPEN
+
+ MORPHIC-ID ¡ KKIX-DATENTYPEN
+
+ BION-ID ¡ KK00X01
+
+ AXIOM ¡ KKIX-DATENTYPEN 
+
+ ABSK ¡ KKIK+KKIX-DATENTYPEN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-DATENTYPEN Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-DATENTYPEN
+
+ BION-ID ¡ KK00X01L01
+
+ AXIOM ¡ KKIL-DATENTYPEN 
+
+ ABSK ¡ KKIK+KKIX-DATENTYPEN+KKIL-DATENTYPEN
+
+ LINK ¡ <DATK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð TRANSAKTIONSRAHMEN
+
+ MORPHIC-ID ¡ KKIX-TRANSAKTIONSRAHMEN
+
+ BION-ID ¡ KK00X02
+
+ AXIOM ¡ KKIX-TRANSAKTIONSRAHMEN 
+
+ ABSK ¡ KKIK+KKIX-TRANSAKTIONSRAHMEN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TRANSAKTIONSRAHMEN Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-TRANSAKTIONSRAHMEN
+
+ BION-ID ¡ KK00X02L01
+
+ AXIOM ¡ KKIL-TRANSAKTIONSRAHMEN 
+
+ ABSK ¡ KKIK+KKIX-TRANSAKTIONSRAHMEN+KKIL-TRANSAKTIONSRAHMEN
+
+ LINK ¡ <TRANK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð PROTEIN
+
+ MORPHIC-ID ¡ KKIX-PROTEIN
+
+ BION-ID ¡ KK00X03
+
+ AXIOM ¡ KKIX-PROTEIN 
+
+ ABSK ¡ KKIK+KKIX-PROTEIN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-PROTEIN Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-PROTEIN
+
+ BION-ID ¡ KK00X03L01
+
+ AXIOM ¡ KKIL-PROTEIN 
+
+ ABSK ¡ KKIK+KKIX-PROTEIN+KKIL-PROTEIN
+
+ LINK ¡ <POIK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð PROTON
+
+ MORPHIC-ID ¡ KKIX-PROTON
+
+ BION-ID ¡ KK00X04
+
+ AXIOM ¡ KKIX-PROTON
+
+ ABSK ¡ KKIK+KKIX-PROTON
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-PROTON Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-PROTON
+
+ BION-ID ¡ KK00X04L01
+
+ AXIOM ¡ KKIL-PROTON
+
+ ABSK ¡ KKIK+KKIX-PROTON+KKIL-PROTON
+
+ LINK ¡ <POOK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð TRENNBEFEHL
+
+ MORPHIC-ID ¡ KKIX-TRENNBEFEHL
+
+ BION-ID ¡ KK00X05
+
+ AXIOM ¡ KKIX-TRENNBEFEHL
+
+ ABSK ¡ KKIK+KKIX-TRENNBEFEHL
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-TRENNBEFEHL Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-TRENNBEFEHL
+
+ BION-ID ¡ KK00X05L01
+
+ AXIOM ¡ KKIL-TRENNBEFEHL
+
+ ABSK ¡ KKIK+KKIX-TRENNBEFEHL+KKIL-TRENNBEFEHL
+
+ LINK ¡ <TRENK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð BINDUNGSBEFEHL
+
+ MORPHIC-ID ¡ KKIX-BINDUNGSBEFEHL
+
+ BION-ID ¡ KK00X06
+
+ AXIOM ¡ KKIX-BINDUNGSBEFEHL
+
+ ABSK ¡ KKIK+KKIX-BINDUNGSBEFEHL
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BINDUNGSBEFEHL Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-BINDUNGSBEFEHL
+
+ BION-ID ¡ KK00X06L01
+
+ AXIOM ¡ KKIL-BINDUNGSBEFEHL
+
+ ABSK ¡ KKIK+KKIX-BINDUNGSBEFEHL+KKIL-BINDUNGSBEFEHL
+
+ LINK ¡ <BINK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð AKTIONSDRAHT
+
+ MORPHIC-ID ¡ KKIX-AKTIONSDRAHT
+
+ BION-ID ¡ KK00X07
+
+ AXIOM ¡ KKIX-AKTIONSDRAHT
+
+ ABSK ¡ KKIK+KKIX-AKTIONSDRAHT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-AKTIONSDRAHT Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-AKTIONSDRAHT
+
+ BION-ID ¡ KK00X07L01
+
+ AXIOM ¡ KKIL-AKTIONSDRAHT 
+
+ ABSK ¡ KKIK+KKIX-AKTIONSDRAHT+KKIL-AKTIONSDRAHT
+
+ LINK ¡ <AKTK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð BOXI
+
+ MORPHIC-ID ¡ KKIX-BOXI
+
+ BION-ID ¡ KK00X08
+
+ AXIOM ¡ KKIX-BOXI 
+
+ ABSK ¡ KKIK+KKIX-BOXI
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-BOXI Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-BOXI
+
+ BION-ID ¡ KK00X08L01
+
+ AXIOM ¡ KKIL-BOXI 
+
+ ABSK ¡ KKIK+KKIX-BOXI+KKIL-BOXI
+
+ LINK ¡ <BOXK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð REX
+
+ MORPHIC-ID ¡ KKIX-REX
+
+ BION-ID ¡ KK00X09
+
+ AXIOM ¡ KKIX-REX 
+
+ ABSK ¡ KKIK+KKIX-REX
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-REX Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-REX
+
+ BION-ID ¡ KK00X09L01
+
+ AXIOM ¡ KKIL-REX
+
+ ABSK ¡ KKIK+KKIX-REX+KKIL-REX
+
+ LINK ¡ <REXK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð ARGUMENT
+
+ MORPHIC-ID ¡ KKIX-ARGUMENT
+
+ BION-ID ¡ KK00X10
+
+ AXIOM ¡ KKIX-ARGUMENT
+
+ ABSK ¡ KKIK+KKIX-ARGUMENT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-ARGUMENT Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-ARGUMENT
+
+ BION-ID ¡ KK00X10L01
+
+ AXIOM ¡ KKIL-ARGUMENT 
+
+ ABSK ¡ KKIK+KKIX-ARGUMENT+KKIL-ARGUMENT
+
+ LINK ¡ <ARGK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð FEED
+
+ MORPHIC-ID ¡ KKIX-FEED
+
+ BION-ID ¡ KK00X11
+
+ AXIOM ¡ KKIX-FEED
+
+ ABSK ¡ KKIK+KKIX-FEED
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FEED Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-FEED
+
+ BION-ID ¡ KK00X11L01
+
+ AXIOM ¡ KKIL-FEED
+
+ ABSK ¡ KKIK+KKIX-FEED+KKIL-FEED
+
+ LINK ¡ <FK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð SENTIATOR
+
+ MORPHIC-ID ¡ KKIX-SENTIATOR
+
+ BION-ID ¡ KK00X12
+
+ AXIOM ¡ KKIX-SENTIATOR
+
+ ABSK ¡ KKIK+KKIX-SENTIATOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-SENTIATOR Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-SENTIATOR
+
+ BION-ID ¡ KK00X12L01
+
+ AXIOM ¡ KKIL-SENTIATOR
+
+ ABSK ¡ KKIK+KKIX-SENTIATOR+KKIL-SENTIATOR
+
+ LINK ¡ <SENK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð NAVIGATOR
+
+ MORPHIC-ID ¡ KKIX-NAVIGATOR
+
+ BION-ID ¡ KK00X13
+
+ AXIOM ¡ KKIX-NAVIGATOR
+
+ ABSK ¡ KKIK+KKIX-NAVIGATOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-NAVIGATOR Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-NAVIGATOR
+
+ BION-ID ¡ KK00X13L01
+
+ AXIOM ¡ KKIL-NAVIGATOR
+
+ ABSK ¡ KKIK+KKIX-NAVIGATOR+KKIL-NAVIGATOR
+
+ LINK ¡ <NAVK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð WARP
+
+ MORPHIC-ID ¡ KKIX-WARP
+
+ BION-ID ¡ KK00X14
+
+ AXIOM ¡ KKIX-WARP
+
+ ABSK ¡ KKIK+KKIX-WARP
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WARP Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-WARP
+
+ BION-ID ¡ KK00X14L01
+
+ AXIOM ¡ KKIL-WARP
+
+ ABSK ¡ KKIK+KKIX-WARP+KKIL-WARP
+
+ LINK ¡ <WARK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð IDENTIFIKATION
+
+ MORPHIC-ID ¡ KKIX-IDENTIFIKATION
+
+ BION-ID ¡ KK00X15
+
+ AXIOM ¡ KKIX-IDENTIFIKATION
+
+ ABSK ¡ KKIK+KKIX-IDENTIFIKATION
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-IDENTIFIKATION Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-IDENTIFIKATION
+
+ BION-ID ¡ KK00X15L01
+
+ AXIOM ¡ KKIL-IDENTIFIKATION
+
+ ABSK ¡ KKIK+KKIX-IDENTIFIKATION+KKIL-IDENTIFIKATION
+
+ LINK ¡ <IDK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð MCMD
+
+ MORPHIC-ID ¡ KKIX-MCMD
+
+ BION-ID ¡ KK00X16
+
+ AXIOM ¡ KKIX-MCMD
+
+ ABSK ¡ KKIK+KKIX-MCMD
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE- Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-MCMD
+
+ BION-ID ¡ KK00X16L01
+
+ AXIOM ¡ KKIL-MCMD
+
+ ABSK ¡ KKIK+KKIX-MCMD+KKIL-MCMD
+
+ LINK ¡ <MCDK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð DATEITYPEN
+
+ MORPHIC-ID ¡ KKIX-DATEITYPEN
+
+ BION-ID ¡ KK00X17
+
+ AXIOM ¡ KKIX-DATEITYPEN
+
+ ABSK ¡ KKIK+KKIX-DATEITYPEN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-DATEITYPEN Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-DATEITYPEN
+
+ BION-ID ¡ KK00X17L01
+
+ AXIOM ¡ KKIL-DATEITYPEN
+
+ ABSK ¡ KKIK+KKIX-DATEITYPEN+KKIL-DATEITYPEN
+
+ LINK ¡ <DITK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð RETRON
+
+ MORPHIC-ID ¡ KKIX-RETRON
+
+ BION-ID ¡ KK00X18
+
+ AXIOM ¡ KKIX-
+
+ ABSK ¡ KKIK+KKIX-
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-RETRON Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-RETRON
+
+ BION-ID ¡ KK00X18L01
+
+ AXIOM ¡ KKIL-RETRON
+
+ ABSK ¡ KKIK+KKIX-RETRON+KKIL-RETRON
+
+ LINK ¡ <RETK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð VATRON
+
+ MORPHIC-ID ¡ KKIX-VATRON
+
+ BION-ID ¡ KK00X19
+
+ AXIOM ¡ KKIX-VATRON
+
+ ABSK ¡ KKIK+KKIX-VATRON
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-VATRON Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-VATRON
+
+ BION-ID ¡ KK00X19L01
+
+ AXIOM ¡ KKIL-VATRON
+
+ ABSK ¡ KKIK+KKIX-VATRON+KKIL-VATRON
+
+ LINK ¡ <VATK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð GENERALSCHALTUNG
+
+ MORPHIC-ID ¡ KKIX-GENERALSCHALTUNG
+
+ BION-ID ¡ KK00X20
+
+ AXIOM ¡ KKIX-GENERALSCHALTUNG
+
+ ABSK ¡ KKIK+KKIX-GENERALSCHALTUNG
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-GENERALSCHALTUNG Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-GENERALSCHALTUNG
+
+ BION-ID ¡ KK00X20L01
+
+ AXIOM ¡ KKIL-GENERALSCHALTUNG
+
+ ABSK ¡ KKIK+KKIX-GENERALSCHALTUNG+KKIL-GENERALSCHALTUNG
+
+ LINK ¡ <GASK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð NITROX
+
+ MORPHIC-ID ¡ KKIX-NITROX
+
+ BION-ID ¡ KK00X21
+
+ AXIOM ¡ KKIX-NITROX
+
+ ABSK ¡ KKIK+KKIX-NITROX
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-NITROX Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-NITROX
+
+ BION-ID ¡ KK00X21L01
+
+ AXIOM ¡ KKIL-NITROX
+
+ ABSK ¡ KKIK+KKIX-NITROX+KKIL-NITROX
+
+ LINK ¡ <NITK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð SYNAPTOR
+
+ MORPHIC-ID ¡ KKIX-SYNAPTOR
+
+ BION-ID ¡ KK00X22L01
+
+ AXIOM ¡ KKIX-SYNAPTOR
+
+ ABSK ¡ KKIK+KKIX-SYNAPTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-SYNAPTOR Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-SYNAPTOR
+
+ BION-ID ¡ KK00X22L01
+
+ AXIOM ¡ KKIL-SYNAPTOR
+
+ ABSK ¡ KKIK+KKIX-SYNAPTOR+KKIL-SYNAPTOR
+
+ LINK ¡ <SYNK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+ 
+BION-HAUPTWABE Ð ZYTRON
+
+ MORPHIC-ID ¡ KKIX-ZYTRON
+
+ BION-ID ¡ KK00X23
+
+ AXIOM ¡ KKIX-ZYTRON
+
+ ABSK ¡ KKIK+KKIX-ZYTRON
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE- Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-ZYTRON
+
+ BION-ID ¡ KK00X23L01
+
+ AXIOM ¡ KKIL-ZYTRON
+
+ ABSK ¡ KKIK+KKIX-ZYTRON+KKIL-ZYTRON
+
+ LINK ¡ <ZYTK>
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+# LEERE WABE 
+BION-HAUPTWABE Ð 
+
+ MORPHIC-ID ¡ KKIX-
+
+ BION-ID ¡ KK00X
+
+ AXIOM ¡ KKIX-
+
+ ABSK ¡ KKIK+KKIX-
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE- Ð LINKENDWABE
+
+ MORPHIC-ID ¡ KKIL-
+
+ BION-ID ¡ KK00X
+
+ AXIOM ¡ KKIL-
+
+ ABSK ¡ KKIK+KKIX-+KKIL-
+
+ LINK ¡ 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = KKIELT
+ # SBSK = 
+ # VBSK = 
+ # RBSK = 
+###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
+ #  DATUM = [00:26:28|Mo Jan 26 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####======ENDPUNKT KKIS=====#####======###==##==###

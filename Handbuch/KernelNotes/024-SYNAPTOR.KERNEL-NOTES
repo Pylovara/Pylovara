@@ -1,0 +1,195 @@
+@kernel-nr: 24 Ð SYNAPTOR 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####======K24 SYNAPTOR======#####======###==##==###  
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #              SYNAPTOR = PIPEP PROTEIN CONFLUENCE GATE            #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+###==##==###======#####==STARTPUNKT SYNAPTOR===#####======###==##==###
+
+BION Ð SYNAPTOR
+
+ MORPHIC-ID ¡ SYN
+
+ BION-ID ¡ SY
+
+MASK ¡ MASU-SYNAPTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð SYNAPTOR
+
+ MORPHIC-ID ¡ SYNK
+
+ BION-ID ¡ SY00
+
+ AXIOM ¡ SYNK = SYNK
+
+ ABSK ¡ SYNK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-FLUSSTOR
+
+ MORPHIC-ID ¡ SYNX-FLUSSTOR 
+
+ BION-ID ¡ SY00X01 
+
+ AXIOM ¡ EXTRAWABE-FLUSSTOR = ¿
+
+ ABSK ¡ SYNK+SYNX-FLUSSTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FLUSSTOR Ð STARTWABE 
+
+ MORPHIC-ID ¡ SYNS-FLUSSTOR 
+
+ BION-ID ¡ SY00X01S01
+
+ AXIOM ¡ EXTRAWABE-FLUSSTOR = ¿
+
+ AXIOM ¡ EXTRAWABE-FLUSSTOR = ¿¹
+ AXIOM ¡ EXTRAWABE-FLUSSTOR = ¿²
+ AXIOM ¡ EXTRAWABE-FLUSSTOR = ¿³
+
+ ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FLUSSTOR Ð BLOCKWABE
+
+ MORPHIC-ID ¡ SYNB-FLUSSTOR-1
+
+ BION-ID ¡ SY00X01S01B01
+
+ AXIOM ¡ SYNB-FLUSSTOR-1 = ¿¹
+
+ ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-1
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^       1SYNC: ¿¹
+ AXIOM ¡ ^      1START: —[<BOXK>]
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^ 3ZYKLUS-OUT:
+ AXIOM ¡ ^       1SYNC: ¿¹
+ AXIOM ¡ ^       2KOPF:
+ AXIOM ¡ ^      1START: —[<BOXK>]
+ AXIOM ¡ ^       2FOOD:
+ AXIOM ¡ ^  3ZYKLUS-IN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^       6FREE:
+
+ BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
+
+ BRÜCKE-OUT ¡ SYNS-FLUSSTOR-1
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FLUSSTOR Ð BLOCKWABE
+
+ MORPHIC-ID ¡ SYNB-FLUSSTOR-2
+
+ BION-ID ¡ SY00X01S01B02
+
+ AXIOM ¡ SYNB-FLUSSTOR-2 = ¿²
+
+ ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-2
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^       1SYNC: ¿²
+ AXIOM ¡ ^      1START: —[<BOXK>]
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^ 3ZYKLUS-OUT:
+ AXIOM ¡ ^       1SYNC: ¿²
+ AXIOM ¡ ^       2KOPF:
+ AXIOM ¡ ^      1START: —[<BOXK>]
+ AXIOM ¡ ^       2FOOD:
+ AXIOM ¡ ^  3ZYKLUS-IN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^       6FREE:
+
+ BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
+
+ BRÜCKE-OUT ¡ SYNS-FLUSSTOR-2
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FLUSSTOR Ð BLOCKWABE
+
+ MORPHIC-ID ¡ SYNB-FLUSSTOR-3
+
+ BION-ID ¡ SY00X01S01B03
+
+ AXIOM ¡ SYNB-FLUSSTOR-3 = ¿³
+
+ ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-3
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^       1SYNC: ¿³
+ AXIOM ¡ ^      1START: —[<BOXK>]
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^ 3ZYKLUS-OUT:
+ AXIOM ¡ ^       1SYNC: ¿³
+ AXIOM ¡ ^       2KOPF:
+ AXIOM ¡ ^      1START: —[<BOXK>]
+ AXIOM ¡ ^       2FOOD:
+ AXIOM ¡ ^  3ZYKLUS-IN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^       6FREE:
+
+ BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
+
+ BRÜCKE-OUT ¡ SYNS-FLUSSTOR-3
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-FLUSSTOR Ð LINKENDWABE 
+
+ MORPHIC-ID ¡ SYNL-FLUSSTOR
+
+ BION-ID ¡ SY00X01S01B01L01
+ BION-ID ¡ SY00X01S01B01L02
+ BION-ID ¡ SY00X01S01B01L03
+
+ AXIOM ¡ SYNB-FLUSSTOR-1 = ¿¹
+ AXIOM ¡ SYNB-FLUSSTOR-2 = ¿²
+ AXIOM ¡ SYNB-FLUSSTOR-3 = ¿³
+
+ ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-1+SYNL-FLUSSTOR
+ ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-2+SYNL-FLUSSTOR
+ ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-3+SYNL-FLUSSTOR
+
+ LINK ¡ SENK
+ 
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = SYNELT                                              #
+ # SBSK =
+ # VBSK =
+ # RBSK = SYNK                                                      #
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [01:40:44|So 03 Mai 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####====ENDPUNKT SYNAPTOR===#####======###==##==###

@@ -1,0 +1,88 @@
+@kernel-nr: 07 Ð AKTIONSDRAHT
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####=====K7 AKTIONSDRAHT====#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #             AKTIONSDRAHT = THE PROTEIN EXECUTE LAW               #
+###==##==###======#####=STARTPUNKT AKTIONSDRAHT#####======###==##==###
+
+BION Ð AKTIONSDRAHT
+
+ MORPHIC-ID ¡ AKT
+
+ BION-ID ¡ AK
+
+MASK ¡ MASU-AKTIONSDRAHT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð AKTK
+
+ MORPHIC-ID ¡ AKTK
+
+ BION-ID ¡ AK00
+
+ AXIOM ¡ AKTK = <AKTK>
+
+ ABSK ¡ AKTK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-IMPULS 
+
+ MORPHIC-ID ¡ AKTX-IMPULS
+
+ BION-ID ¡ AK00X01
+
+ AXIOM ¡ AKTX-IMPULS = »<POIK>«
+
+ ABSK ¡ AKTK+AKTX-IMPULS
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-IMPULS Ð STARTWABE 
+
+ MORPHIC-ID ¡ AKTS-IMPULS 
+
+ BION-ID ¡ AK00X01S01
+
+ AXIOM ¡ AKTS-IMPULS = »
+
+ ABSK ¡ AKTK+AKTX-IMPULS+AKTS-IMPULS
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-IMPULS Ð COMBOWABE 
+
+ MORPHIC-ID ¡ AKTCOM-IMPULS-POIK
+
+ BION-ID ¡ AK00X01S01C01
+
+ AXIOM ¡ AKTCOM-IMPULS-POIK = »<POIK>
+
+ ABSK ¡ AKTK+AKTX-IMPULS+AKTS-IMPULS+AKTCOM-IMPULS-POIK
+
+ LINK ¡ POIK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-IMPULS Ð ENDWABE 
+
+ MORPHIC-ID ¡ AKTE-IMPULS
+
+ BION-ID ¡ AK00X01S01C01Y01E01
+
+ AXIOM ¡ AKTE-IMPULS = »<POIK>«
+
+ ABSK ¡ AKTK+AKTX-IMPULS+AKTS-IMPULS+AKTCOM-IMPULS-POIK+AKTSYS-IMPULS-IO+AKTE-IMPULS
+
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = AKTELT
+ SBSK = AKTK+AKTX-IMPULS+AKTS-IMPULS+AKTCOM-IMPULS-POIK+AKTE-IMPULS
+ VBSK = AKTCOM-IMPULS-POIK
+ RBSK = AKT
+###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
+ #  DATUM = [08:50:23|Fr 25 Jun 2025] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####==ENDPUNKT AKTIONSDRAHT=#####======###==##==###

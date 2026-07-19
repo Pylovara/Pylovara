@@ -1,0 +1,16 @@
+# cpu.dna-cmd – Zeige CPU-Informationen (über eigenes Tool oder System)
+
+Vara_Dir="/Pylovara/System/Shell/Vara"
+
+DNA_EXEC() {
+    if [ -f "$Vara_Dir/lscpu.vara" ]; then
+        echo "🧬 Verwende eigenes Tool: lscpu.vara"
+        ${Vara_Dir}/lscpu.vara | ${Vara_Dir}/less.vara
+    elif command -v lscpu &> /dev/null; then
+        echo "🧬 Verwende Systemtool: lscpu"
+        lscpu | less
+    else
+        echo "❌ Fehler: Kein verfügbares 'lscpu' gefunden."
+        echo "[Hinweis] Stelle sicher, dass 'lscpu' installiert ist zur not zieh das paket runter und bennen es in *.vara um und lege es in /Pylovara/System/Shell/Vara rein wenn du Pylovara auf einem USB stick nutzt"
+    fi
+}

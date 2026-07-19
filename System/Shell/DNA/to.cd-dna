@@ -1,0 +1,28 @@
+# Definiere das Basisverzeichnis für die .vara-Tools
+Vara_Dir="/Pylovara/System/Shell/Vara"
+
+# Funktion: Interaktive Anzeige von Verzeichnissen mit fzf
+fzf_select() {
+  local options=("$@")
+  if [ ${#options[@]} -eq 0 ]; then
+    echo ""
+    return
+  fi
+  # Auswahl mit fzf.vara, single select, Höhe 40%, reverse, Border
+  printf '%s\n' "${options[@]}" | "$Vara_Dir/fzf.vara" --height=40% --reverse --border
+}
+
+# Funktion: Wechsel in ein Verzeichnis mit Anzeige der Inhalte
+to() {
+  local target_dir="$1"
+  if [ -z "$target_dir" ]; then
+    target_dir="$HOME"
+  fi
+  # Wechsel in das angegebene Verzeichnis
+  cd "$target_dir" || return
+  # Zeige die Inhalte des Verzeichnisses an
+  "$Vara_Dir/ls.vara" --color=auto
+}
+
+# Ersetze den Standard-cd-Befehl durch die to-Funktion
+alias cd='to'

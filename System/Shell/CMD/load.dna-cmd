@@ -1,0 +1,32 @@
+# load.dna-cmd
+# Lädt Datei aus dem Internet via wget oder curl
+
+DNA_EXEC() {
+    if [[ -z "$1" ]]; then
+        echo "🧬 DNA load: Bitte eine URL angeben." >&2
+        echo "Nutzung: dna load https://example.com/datei.zip" >&2
+        return 1
+    fi
+
+    # Prüfen, ob wget oder curl verfügbar ist
+    if command -v wget >/dev/null 2>&1; then
+        downloader="wget"
+    elif command -v curl >/dev/null 2>&1; then
+        downloader="curl -O"
+    else
+        echo "❌ Fehler: Weder 'wget' noch 'curl' ist installiert (z.B. 'pacman -S wget')" >&2
+        return 2
+    fi
+
+    # URL validieren (einfache Prüfung)
+    if [[ ! "$1" =~ ^https?:// ]]; then
+        echo "❌ Fehler: Ungültige URL. Verwende http:// oder https://" >&2
+        return 3
+    fi
+
+    echo "🧬 DNA load: Lade $1 ..."
+    $downloader "$1" || {
+        echo "❌ Fehler beim Herunterladen von '$1'" >&2
+        return 4
+    }
+}

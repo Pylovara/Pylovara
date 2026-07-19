@@ -1,0 +1,611 @@
+@kernel-nr: 800 Ð THE-WABE-NEST-SYSTEM                    | INFO SEITE
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======STARTPUNKT THE-WABE-NEST-SYSTEM=========###==##==###
+
+BION Ð THE-WABE-NEST-SYSTEM
+
+ MORPHIC-ID ¡ TWS
+
+ BION-ID ¡ TW
+
+MASK ¡ MASU-THE-WABE-NEST-SYSTEM 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWARBE Ð THE-WABE-NEST-SYSTEM 
+
+ MOPHIC-ID ¡ TWSK 
+
+ BION-ID ¡ TW00 
+
+ AXIOM ¡ TWSK
+
+ ABSK ¡ TWSK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+ BION-HAUPTWABE Ð EXTRAWABE-LEXIKON
+
+ MORPHIC-ID ¡ TWSX-LEXIKON 
+
+ BION-ID ¡ TW00X01
+
+ AXIOM ¡ TWSX-LEXIKON = THE-WABE-NEST-SYSTEM
+
+ ABSK ¡ TWSK+TWSX-LEXIKON 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-BAUSTEINSCHALTUNGSKREISLAUF
+
+ BION-ID ¡ TW00X01F0001
+
+ AXIOM ¡ TWSF-BAUSTEINSCHALTUNGSKREISLAUF
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-BAUSTEINSCHALTUNGSKREISLAUF
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ BAUSTEINSCHALTUNGSKREISLAUF 
+ 
+ KURZ = BSK 
+
+ SETZT NAMENTLICHE BILDUNGEN INSTANT UND REGULIERT AUSGESCHRIEBENE 
+ ELEMENTE ZU LOGISCHEN BAUSTEINEN .
+
+ ER FUNGIERT HIERBEI IN DER GATTERLOGIK  :
+
+ „ DER WIEDERSTANDFREISTE ZUSAMMENSETZ PROZESS IST DAS ERGEBNIS “
+
+ LANGE ELEMENTE ZU VERKÜRZEN UND SIE GREIFBAR FÜR DAS MORPHISCHE 
+ ELEMENT DER VERSCHMELZUNG - NUTBAR ZU MACHEN 
+
+ WIR HABEN BION NAMEN 
+ WIR HABEN WABEN NAMEN 
+ 
+ BEIDES SIND ELEMENTE DIE VON LANG AUF KURZ AUF DIE MORPHISCHE 
+ LOGISCHSTE KURZFASSUNG GEBRACHT WERDEN MÜSSEN .
+
+ DER BAUSTEINSCHALTUNGSKREISLAUF BEDIENT SICH DAHER DER REGEL 
+
+ NAME + WABEN + EXTRWABENNAMEN = EINE BSK ADRESSE 
+
+ JEDES ELEMENT FÜHRT SEIN EIGENES KÜRZEL IM WABINATOR MIT 
+ UND WIRD SYSTEMWEIT GÜLTIG EINGESETZT.
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-BEZIFFERNDE-BAUSTEINSCHALTUNGSKREISLAUF
+
+ BION-ID ¡ TW00X01F0002
+
+ AXIOM ¡ TWSF-BEZIFFERNDE-BAUSTEINSCHALTUNGSKREISLAUF
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-BEZIFFERNDE-BAUSTEINSCHALTUNGSKREISLAUF
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ BEZIFFERNDE BAUSTEINSCHALTUNGSKREISLAUF 
+
+ KURZ = BBSK
+
+ ER WIRD IN DER BION-ID GENUTZT UND DIENT ALS GRUNDLAGE VOM AUSTAUSCH 
+ VON KURZ GEKENNZEICHNETE UND DURCH NUMMERIERTE WIE EXTRA NUMMERIERTE 
+ INFORMATIONS QUELLEN DEM ENSPRECHENDEM BEREICH.
+
+ ER FUNGIERT HIERBEI IN DER GATTER LOGIK UND BINARIES 
+
+ „ DIREKT ADRESSIERBARE OPERATIONSZUSTÄNDE IN ECHTZEIT  “
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-ABSOLUTER-BAUSTEINSCHALTUNGSKREISLAUF 
+
+ BION-ID ¡ TW00X01F0003
+
+ AXIOM ¡ TWSF-ABSOLUTER-BAUSTEINSCHALTUNGSKREISLAUF
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-ABSOLUTER-BAUSTEINSCHALTUNGSKREISLAUF 
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ ABSOLUTER BAUSTEINSCHALTUNGSKREISLAUF 
+
+ KURZ = ABSK 
+
+ DER ABSK DIENT ALS GESAMTER SCHALTUNGS ZUSTAND VON EINZELNEN BSK 
+ UND WIRD IN FOLGE AUCH SO VERSTANDEN.
+
+ ER FUNGIERT ALS : 
+ 
+ „REFLEXSCHALTUNGS- PARALELLITÄRER-DUAL-ZWEITSCHALTUNGSKREISLAUF “ 
+
+ UND DIENT NEBER DEN BBSK ALS SYSTEMRELEVANTE GRUNDSCHALTUNGSWEISUNG.
+
+ ER TRENNT BSK VON BSK MIT ( IN WORTEN-> ) PLUS VERBINDUNGEN UND SETZT 
+ SIE DADURCH IN STROMFREQUENZ.
+
+ ER WIRD AUCH FÜR KERN BSK VERWENDET ALS DIREKTE SCHNITTSTELL FÜR 
+ DIE MCS PROGRAMMIERSPRACHE.
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-MORPHIC
+
+ BION-ID ¡ TW00X01F0004
+
+ AXIOM ¡ TWSF-MORPHIC
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-MORPHIC
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ MORPHIC 
+
+ KERN = KOMPRESSIONSSYSTEM 
+
+ MORPHIC WIRD IM KERN ALS VERSCHELZUNGSZUSTAND VERWENDET UND IST 
+ IN DER STANDARD VERSION IMMER DIE MORPHIC-ID SELBST .
+
+ DIESER ANKER DER BSK DIENT ALS GRUNDEINSTELLUNG FÜR DIE MORPHIC 
+ STUFEN.
+
+ MORPHIC KOMPRESSIONEN WERDEN SO VERSTANDEN :
+
+ „ DIE STANDARD MORPHIC STUFE MOORPHIC-ID, DIENT ALS GRUNDLAGE 
+   FÜR JEDE WEITERE KROMPRESSIONSRATE “
+
+ MORPHIC BILDET EINE EINDEUTIGE BSK AB UND NIMMT SIE ALS 
+ GRUNDPOSITION VOR WEITERE STUFEN.
+
+ MORPHIC STUFEN KOMMEN NOCH.
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-BIBLIOTHEKEN
+
+ BION-ID ¡ TW00X01F0005
+
+ AXIOM ¡ TWSF-BIBLIOTHEKEN
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-BIBLIOTHEKEN
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ BIBLIOTHEKEN 
+
+ KURZ = BION 
+
+ DIE BIONE DIENEN ALS GRUNDLAGE FÜR JEDE IN PYLOVARA ERTSTELLTE 
+ KOMPONENTE DIE DURCH IHR BION ABGEDECKT UND VOLLSTÄNDIG VERSCHALTEN 
+ IN IHREM EIGENEN SEKTOR - VORLIEGT. 
+
+ SIE WERDEN IM TWS SO VERSTANDEN :
+
+ „ GRUNDLAGE DER STRUKTUR DIE FÜR DIE WABEN-STRUKTUR ZUSTÄNDIG SIND “
+
+ EIN BION HAT IM SYSTEM WEITERE BIONE UND DIE ANZAHL DES GESAMTEN ERGIBT 
+ SCHLUSS ENDLICH DIE MÖGLICHKEIT DESSEN , WAS ES KANN/IST/TUT 
+
+ MOMENTANE BIONE SIND GRUNDSTRUKTURELL AN MCS IN DER ERSTEN DISTANZ 
+ GESCHRIEBEN - ES TRÄGT DAS GESAMTE PYLOVARA-NETZWERK-SYSTEM.
+
+ ° KOMPONENTEN SIND DIE NAMEN UND DIE DESIGNES. 
+ ° BIONS SIND DIE GESAMTE WABEN PROGRAMMIERUNG.
+
+ FÜR MITDENKER :
+
+ „ OH .. EIN BION ... UND DIE KOMPONENTE HEIẞT VOGLE ... STEUERUNG ... 
+   FERNZUGRIFF  ... DIE DNA BION STRUKTUREN WÄREN GRENZENLOS OFFEN ...“
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-MASCHINEN-CODE-SPEECH
+
+ BION-ID ¡ TW00X01F0006
+
+ AXIOM ¡ TWSF-MASCHINEN-CODE-SPEECH
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-MASCHINEN-CODE-SPEECH
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ MASCHINEN-CODE-SPEECH 
+
+ KURZ = MCS 
+
+ KURZE EIGENE WORTE :
+ 
+ MEIN STOL ALS URVATER UND ENTWICKLER DESSEN , WAS ICH ALS GEORDNETE 
+ UND GEHIRNGERECHTE GRUNDSTRUKUR VERSTEHE.
+
+ EINE STRUKTUR FÜR JEDES KIND ERKLÄRBAR SIND UND LEHRBARER ALS ALLES 
+ WAS MAN SICH SONNST AUSDENKEN KANN.
+
+ MCS IST DIE ANTWORT AUF GEHIRN GERECHTE PROGRAMMIERUNG UND ICH BIN 
+ DER ABSOLUTEN ÜBERZEUGUNG ( MEHR NOCH) FAST GRÖẞEN WAHNSINNIG 
+
+ „ DAS DIES AUF DAUER DER GEZEITEN SELBST UND ANBETRACHT DER GEHIRNFORSCHUNG 
+   INKLUSIVE DER DRAMATISCHEN ENTWICKLUNGEN DER NEUZEIT - DIE ANTWORT IST  “
+
+ ICH ENTWICKELTE SIE NIE ALS SCRIPTSPRACHE ODER DESGLEICHEN.
+ ICH NENNE SIE AUCH MIT DEMUT : „ MASTER-CONTROL-SYSTEM “.
+
+ HAUPTTEIL : 
+
+ MCS IST EINE ENTWICKLUNGSOBERFLÄCHE DIE DER LOGISCHEN GRUNDANNAHME 
+ VON UNSEREM LOGISCHEN DENKEN HER AUFGEBAUT WURDE.
+
+ SIE DEFINIERT STRUKTUR VON GEKRITZEL (ANDERS KANN ICH DAS NICHT MEHR NENNEN)
+ UND SCHLÄGT DIE BURGGRABEN LOGIK VOLLSTÄNDIG AUS JEDER ANDEREN 
+ PROGRAMMIERSPRACHE HERAUS. 
+
+ SIE IST DER GRUND WARUM PYLOVARA-SYSTEM ENSTANDEN IST UND DIENT ALS 
+ EINZIGE ANWENDBARE PROGRAMMIERSPRACHE IM PYLOVARA SYSTEM.
+
+
+ EASY :
+ ¢! ['echo "Hallo Welt"] !¢
+
+
+ EXPERT :
+ ¢!
+ # DIE SYNAPTOR GRUNDLAGE  
+
+  »["SYNAPTOR"]«
+
+       ¿¹
+       ÷ [Ø <irgendwas> Ø—(1)]
+   ¬· »—[<BOXK>]«
+       ± [(2)—Ø <irgendwas> Ø]
+
+       ¿¹
+       ÷ [Ø <irgendwas> Ø—(2)]
+   ¬· »—[<BOXK>]«
+       ± [(3)—Ø <irgendwas> Ø]
+
+       ¿¹
+       ÷ [Ø <irgendwas> Ø—(3)]
+   ¬· »—[<BOXK>]«
+       ± [(4)—Ø <irgendwas> Ø]
+
+       ¿¹
+       ÷ [Ø <irgendwas> Ø—(4)]
+   ¬· »—[<BOXK>]«
+       ± [(1)—Ø <irgendwas> Ø]
+
+       ¶ ¬· * 
+
+       ¶¶ ¬· *
+
+!¢
+
+
+ LERNMATERIAL :
+
+ (KOMMT BALD ERNEUT)
+
+ INFO :
+
+ DA DIE FORTSCHRITTE INNERHALB DER MCS SYNTAX SO GRAVIEREND GROẞ 
+ WAREN ÜBER DIE JAHRE, MUSSTE ICH DAS ALTE LERNMATERIAL OFFLINE 
+ NEHMEN - UM DANN DIE NEUEN MÖGLICHKEITEN VOLLSTÄNDIG EINZUGRAVIEREN.
+
+ IM ALTEN LERMATERIAL NUTZE MAN NOCH FF UND FT VOLLSTÄNDIG 
+ ALS BOXIS CONTAINER FÜR SYNCRONITÄTS ABGLEICHE ETC .
+
+ JETZT PASSIERT ES GEORDNET ÜBER DEN NITROX UND DIE PROTEINE 
+ WURDEN DEMENSPRECHEN ANGEPASST.
+
+ ICH MUSS AUCH NOCH MIT DER ALTEN TASTATUR ARBEITEN WIE IHR 
+ UND ICH FINDE SIE NICHT BESONDERS PROGRAMMIERFREUNDLICH .
+
+ ICH MÖCHTE HIERBEI DIE GELEGENHEIT NUTZEN UND IM VOLLEN EINKLANG MIT 
+ RUHE UND STILLE ... DAS GRUNDSTRUKTURELL NOCHMAL AUFZUWERTEN .
+
+ ICH MÖCHTE HIER AUCH SAGEN , DAS ICH DEN SINN DAHINTER SEHE 
+ LERNMATERIAL FÜR KIND WIE ERWACHSENEN GLEICHERMAẞEN AUFZUSETZEN .
+
+ DER KINDER ZAUBERWALD , WIRD KEIN DER ERWACHSENE ZAUBERWALD - AUẞER 
+ VIELLEICHT MAN LÄSST ES FÜR SICH GÜLTIG WERDEN.
+
+ ICH BEDIENE MICH ABER IN BEIDEN RICHTUNGEN AN DEM OBERBEGRIFF 
+ DES LERNMATERIALS „ ZAUBERWALD “ 
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-WABE
+
+ BION-ID ¡ TW00X01F0007
+
+ AXIOM ¡ TWSF-WABE
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-WABE
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ WABE 
+
+ EINE WABE BILDET DEN ABSOLUTEN ATOMAREN SPEICHER- UND 
+ LOGIKRAUM INNERHALB DES NESTES. SIE IST DIE KLEINSTE AUTARKE EINHEIT, 
+ DIE SOWOHL IHRE EIGENE IDENTITÄT (BION-ID) ALS AUCH IHRE FUNKTION 
+ (MORPHIC-ID) IN EINEM UNTRENNBAREN ZUSTAND HÄLT.
+
+
+ SO WIRD SIE VERSTANDEN :
+
+      „IN DER WABE WIRD AUS ENERGIE (STROM) LOGIK (SINN).“
+
+ DURCH DIE ZWEIFACHE VERSCHMELZUNG VON SCHALTUNGSZUSTÄNDEN 
+ DURCH BSK ABSK UND BBSK, FUNGIEREN WABEN NACH GENERALMUSTER
+ VORLAGEN.
+
+ DIESE BILDEN DAS GRUND AXIOM DER TWS WAHRHEIT SELBST.
+
+ JEDE WABE HAT IHR EINSATZGEBIET UND KANN BION ÜBEGREIFEND
+ EINGESETZT WERDEN UND DENNOCH VERSCHIEDENES BEWIRKEN.
+
+ SIE SIND DAS RÜCKRAT VON MCS.
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-WBSK
+
+ BION-ID ¡ TW00X01F0008
+
+ AXIOM ¡ TWSF-WBSK
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-WBSK
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ WABE BAUSTEINSCHALTUNGSKREISLAUF 
+
+ KURZ : WBSK 
+
+ ER WIRD FÜR DIE VERKÜRZUNG DER WABEN NAMEN GENUTZT.
+
+ ER WIRD SO VERSTANDEN :
+
+ „ EIN WABEN NAMEN BEKOMMT EINE EINDEUTIGE KENNUNG IN KURZ“
+
+ ER MUSS NICHT LOGISCH SEIN, DIENT ABER FÜR EINE LOGISCH NAHE 
+ VERKÜRZUNG DES VOLLEN WABEN NAMENS 
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-LEXIKON Ð INFOWABE 
+
+ MORPHIC-ID ¡ TWSF-N3-DATEITYPEN
+
+ BION-ID ¡ TW00X01F0008
+
+ ABSK ¡ TWSK+TWSX-LEXIKON+TWSF-N3-DATEITYPEN
+
+ ZEIG ¡ INHALT
+
+###==##==###======########## START INHALT ##########======###==##==###
+
+ N3-DATEITYPEN 
+
+ KURZ = N3D
+
+ VORWORT :
+ DAS N3D SYSTEM WURDE ENTWICKELT NACH EINER SEHR LANGEN PHASE 
+ DER OHNMACHT ! 
+
+ ICH HABE MIR MIT MEINEN ENTWICKLUNGS DATEN VON DEEPSEEK 
+ IN DER LOGIK UND DER VEREINFACHUNG DES ELTERNTEIL PRINZIPS 
+ HELFEN LASSEN.
+
+ ES VEREINFACHT DIE VORENTWICKELTE LOGIK UND SORGT 
+ FÜR EINE SAUBERE STRUKTUR, UNTER BERÜCKSICHTIGUNG 
+ DER NACHVOLLZIEHBARKEIT FÜR JEDEN PYLOVARA-SYSTEM 
+ ENTWICKLER. 
+
+
+ ZUR SACHLAGE :
+
+ ICH ALS ARCHITEKT DES SYSTEM MÖCHTE DARAUF HINWEISEN 
+ DAS ICH ERST DURCH DIE HILFE UND RECHERCHEN - DIES 
+ HIER BEWERKSTELLIGEN KONNTE. 
+
+ DAS PRINZIPT FOLGT EINER EINHEITLICHEN VEREINFACHTEN LOGIK 
+ DER VOR ENTWICKLUNGS PHASEN DER VORVERSIONEN .
+
+ DIESE KANN MAN IN JEDER VORVERSION EINER PYLOVARA-SYSTEM-SSoT 
+ NACHLESEN.
+
+ DAS GRUND PRINZIP :
+
+ NIDUS = LATEINISCH = NEST
+
+ NODUS = LATEINISCH = KNOTEN
+
+ NEXUS = LATEINISCH = VERBINDUNG
+
+ DIESE 3 DATEITYPEN FOLGEN DIESER LOGIK :
+
+ NIDUS : DAS PROGRAMM SOLL START 
+
+ NODUS : DAS PROGRAMM BRAUCH BILDER/SOUNDS/DATEN 
+
+ NEXUS : NODUS DATEN BRAUCHEN VERBINDUNGEN 
+
+┌────────────────────────────────────────────────────────────────────┐
+│                         PYLOVARA-SYSTEM                            │
+│                             │                                      │
+│                    ┌────────┴────────┐                             │
+│                    │                 │                             │
+│                    ▼                 ▼                             │
+│              ┌──────────┐      ┌──────────┐                        │
+│              │  NIDUS   │      │  NODUS   │                        │
+│              │ (Prozess)│      │ (Daten)  │                        │
+│              └────┬─────┘      └────┬─────┘                        │
+│                   │                 │                              │
+│                   └────────┬────────┘                              │
+│                            │                                       │
+│                            ▼                                       │
+│                     ┌──────────┐                                   │
+│                     │  NEXUS   │                                   │
+│                     │(Relation)│                                   │
+│                     └──────────┘                                   │
+│                            │                                       │
+│              ┌─────────────┼─────────────┐                         │
+│              ▼             ▼             ▼                         │
+│         ┌────────┐   ┌────────┐   ┌────────┐                       │
+│         │ KERNEL │   │  MCS   │   │ HARD-  │                       │
+│         │        │   │        │   │ WARE   │                       │
+│         └────────┘   └────────┘   └────────┘                       │
+│                            │                                       │
+│                            ▼                                       │
+│                     ┌──────────┐                                   │
+│                     │   TWS    │                                   │
+│                     │(Waben)   │                                   │
+│                     └──────────┘                                   │
+└────────────────────────────────────────────────────────────────────┘
+
+EIN AUFBAU BEISPIEL , OHNE MCS FÜR DAS VERSTÄNDNIS WIE N3D AUFGEBAUT 
+IST :
+
+┌────────────────────────────────────────────────────────────────────┐
+ # gallery.nidus
+ # NIDUS = Das Nest - der Startprozess
+
+ name: "Bildergalerie"
+ version: "1.0"
+ entry: "main.nodus"
+ bootloader: true
+
+ # Der Equilizer (Regelung aller NODUS)
+ equilizer:
+   memory_limit: "512MB"
+   priority: "normal"
+
+└────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────┐
+ # main.nodus
+ # NODUS = Der Knoten - Daten, Assets, Bibliotheken
+
+ assets:
+   - type: "image"
+     nexus: "hero.nexus"
+     path: "/assets/hero.jpg"
+  
+   - type: "image"  
+     nexus: "thumb.nexus"
+     path: "/assets/thumbnails/*.jpg"
+  
+   - type: "config"
+     nexus: "settings.nexus"
+     path: "/config/gallery.json"
+
+ libraries:
+   - "render.nodus"
+   - "ui.nodus"
+└────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────┐
+ # hero.nexus  
+ # NEXUS = Die Verbindung - Linker, Loader, Mapping
+
+ name: "hero-image"
+ source: "/assets/hero.jpg"
+ target: "main.nodus"
+ mapping:
+   position: "top"
+   size: "large"
+   lazy_load: false
+└────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────┐
+ # thumb.nexus
+ # NEXUS = Verbindet Thumbnails mit der Galerie
+
+ name: "thumbnails"
+ source: "/assets/thumbnails/*.jpg"
+ target: "main.nodus"
+ mapping:
+   grid: "3x3"
+   lazy_load: true
+   cache: "128MB"
+└────────────────────────────────────────────────────────────────────┘
+
+ Benutzer klickt auf "Bildergalerie"
+        │
+        ▼
+ ┌─────────────────┐
+ │  gallery.nidus  │  ← Startet den Prozess
+ │  (NIDUS)        │
+ └────────┬────────┘
+         │ "Ich brauche die Hauptdaten"
+         ▼
+ ┌─────────────────┐
+ │   main.nodus    │  ← Lädt alle Assets
+ │   (NODUS)       │
+ └────────┬────────┘
+         │ "Wo ist das Hero-Bild?"
+         ▼
+ ┌─────────────────┐
+ │   hero.nexus    │  ← Sagt: hero.jpg gehört nach oben, groß
+ │   (NEXUS)       │
+ └────────┬────────┘
+         │
+         ▼
+ ┌─────────────────┐
+ │  hero.jpg       │  ← Die eigentliche Datei wird geladen
+ └─────────────────┘
+         │
+         ▼
+ ┌─────────────────┐
+ │  Bild wird oben │
+ │  groß angezeigt │
+ └─────────────────┘
+
+###==##==###======########## ENDE INHALT ##########======###==##==####
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [22:45:54|Mi 13 Mai 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###========ENDPUNKT THE-WABE-NEST-SYSTEM=========###==##==###

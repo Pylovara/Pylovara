@@ -1,0 +1,98 @@
+@kernel-nr: 17 Ð MCMD             | STATUS = DEV LEVEL ROLLING-RELEASE
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####========K17 MCMD========#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #         MCMD = THE PYLOVARA SYSTEM MASTER CONTROL COMMANDO       #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ #   WIRD ERST WEITER VERVOLLSTÄNDIGT , SOBALD DER MOK DRANN KOMMT  #
+###==##==###======#####====STARTPUNKT MCMD=====#####======###==##==###
+
+BION Ð MCMD
+
+ MORPHIC-ID ¡ MCD
+
+ BION-ID ¡ MC
+
+MASK ¡ MASU-MCMD
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð MCMD
+
+ MORPHIC ¡ MCDK
+
+ BION-ID ¡ MC00
+
+ AXIOM ¡ MCDK = <MCDK>
+
+ ABSK ¡ MCDK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-EXTRAS
+
+ MORPHIC-ID ¡ MCDX-EXTRAS
+
+ BION-ID ¡ MC00X01
+
+ AXIOM ¡ MCDX-EXTRAS
+
+ ABSK ¡ MCDK+MCDX-EXTRAS
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-CONTROL
+
+ MORPHIC-ID ¡ MCDX-CONTROL
+
+ BION-ID ¡ MC00X02
+
+ AXIOM ¡ MCDX-CONTROL =
+
+ ABSK ¡ MCDK+MCDX-CONTROL
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð GENERIERE
+
+ MORPHIC-ID ¡ MCDX-GENERIERE
+
+ BION-ID ¡ MC00X03
+
+ AXIOM ¡ MCDX-GENERIERE = 
+
+ ABSK ¡ MCDK+MCDX-GENERIERE
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð REGISTER
+
+ MORPHIC-ID ¡ MCDX-REGISTER
+
+ BION-ID ¡ MC00X04
+
+ AXIOM ¡ MCDX-REGISTER =
+
+ ABSK ¡ MCDK+MCDX-REGISTER
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
+ # MASTERWORT = MCCELT # UNFERTIG OFFEN
+ # SBSK = 
+ # VBSK = 
+ # RBSK = MCCK # REIHENFOLGE KLÄREN , MODULATOR ODER ABK ZUERST              
+### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
+ #  DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT                #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+### ==== ##### == # === ## ENDPUNKT MCS-CMD ### === # == ##### === ###

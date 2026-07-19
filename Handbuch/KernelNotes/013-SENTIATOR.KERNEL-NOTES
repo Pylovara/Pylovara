@@ -1,0 +1,142 @@
+@kernel-nr: 13 Ð SENTIATOR 
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####======K13 SENTIATOR=====#####======###==##==###  
+ #       SENTIATOR = LOGIC DECISION CONTROL MANAGMENT SYSTEM        #
+###==##==###======#####==STARTPUNKT SENTIATOR==#####======###==##==###
+
+BION Ð SENTIATOR 
+
+ MORPHIC-ID ¡ SEN
+
+ BION-ID ¡ SE
+
+MASK ¡ MASU-SENTIATOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE ¡ SENTIATOR 
+
+ MORPHIC-ID ¡ SENK 
+
+ BION-ID ¡ SE00 
+
+ AXIOM ¡ SENK = SENK 
+
+ ABSK ¡ SENK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRWABE-WENNKANN
+
+ MORPHIC-ID ¡ SENX-WENNKANN 
+
+ BION-ID ¡ SE00X01
+
+ AXIOM ¡ SENX-WENNKANN = ¶ <REXK>
+
+ ABSK ¡ SENK+SENX-WENNKANN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WENNKANN Ð STARTWABE
+
+ MORPHIC-ID ¡ SENS-WENNKANN
+
+ BION-ID ¡ SE00X01S01
+
+ AXIOM ¡ SENS-WENNKANN = ¶
+
+ ABSK = SENK+SENX-WENNKANN+SENS-WENNKANN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WENNKANN Ð COMBOWABE 
+
+ MORPHIC-ID ¡ SENCOM-WENNKANN-REXK
+
+ BION-ID ¡ SE00X01S01C01
+
+ AXIOM ¡ SENCOM-WENNKANN-REXK = ¶ <REXK>
+
+ ABSK ¡ SENK-SENX-WENNKANN+SENS-WENNKANN+SENCOM-WENN-KANN-REXK
+
+ LINK ¡ REXK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRWABE-WENNKANN Ð ENDWABE 
+
+ MORPHIC-ID ¡ SENL-WENNKANNN 
+
+ BION-ID ¡ SE00X01S01C01L01
+
+ AXIOM ¡ SENE-WENNKANN = ¶ <REXK> 
+  
+ ABSK ¡ SENK-SENX-WENNKANN+SENS-WENNKANN+SENCOM-WENN-KANN-REXK+SENE-WENNKANN
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-WENNNICHT
+
+ MORPHIC-ID ¡ SENX-WENNNICHT
+
+ BION-ID ¡ SE00X02
+
+ AXIOM ¡ SENX-WENNNICHT = ¶¶ <REXK>
+
+ ABSK ¡ SENK+SENX-WENNNICHT
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WENNNICHT Ð STARTWABE 
+
+ MORPHIC-ID ¡ SENS-WENNNICHT 
+
+ BION-ID ¡ SE00X02S01
+
+ SENS-WENNICHT = ¶¶ 
+
+ ABSK ¡ SENK+SENX-WENNNICHT+SENS-WENNNICHT 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WENNNICHT Ð COMBOWABE
+
+ MORPHIC-ID ¡ SENCOM-WENNNICHT-REXK
+
+ BION-ID ¡ SE00X02S01C01
+
+ AXIOM ¡ SENCOM-WENNNICHT-REXK = ¶¶ <REXK>
+
+ ABSK ¡ SENK-SENX-WENNNICHT+SENS-WENNNICHT+SENCOM-WENNNICHT 
+
+ LINK ¡ REXK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-WENNNICHT Ð ENDWABE 
+
+ MORPHIC-ID ¡ SENL-WENNNICHT 
+
+ BION-ID ¡ SE00X02S01C01L01
+
+ AXIOM ¡ SENL-WENNNICHT = ¶¶ <REXK>
+
+ ABSK ¡ SENK-SENX-WENNNICHT+SENS-WENNNICHT+SENCOM-WENNNICHT+SENE-WENNNICHT
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = SENELT (SPÄTER)
+ # SBSK = 
+ # VBSK = 
+ # RBSK = 
+###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
+ #  DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####====ENDPUNKT SENTIATOR==#####======###==##==###

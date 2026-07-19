@@ -1,0 +1,90 @@
+# Datei zum Speichern der Ausgabe
+OUTPUT_FILE="system-info.txt"
+
+collect_info() {
+    echo "=== Systeminformationen ===" > "$OUTPUT_FILE"
+    echo "Datum und Uhrzeit: $(date)" >> "$OUTPUT_FILE"
+    echo "Hostname: $(hostname)" >> "$OUTPUT_FILE"
+    echo "Benutzer: $(whoami)" >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Kernel & Architektur ===" >> "$OUTPUT_FILE"
+    uname -a >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== CPU Infos ===" >> "$OUTPUT_FILE"
+    lscpu | grep -E "Model name|Socket|Thread|CPU\(s\)|MHz|Architecture" >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== RAM / SWAP ===" >> "$OUTPUT_FILE"
+    free -h >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Bootloader-Verzeichnis ===" >> "$OUTPUT_FILE"
+    ls -l /boot >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== systemd-boot ===" >> "$OUTPUT_FILE"
+    if [ -d "/boot/loader/entries" ]; then
+        ls -l /boot/loader/entries >> "$OUTPUT_FILE"
+        cat /boot/loader/entries/*.conf 2>/dev/null >> "$OUTPUT_FILE"
+    else
+        echo "systemd-boot Konfiguration nicht gefunden" >> "$OUTPUT_FILE"
+    fi
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== GRUB (falls vorhanden) ===" >> "$OUTPUT_FILE"
+    [ -f "/boot/grub/grub.cfg" ] && grep -i "linux" /boot/grub/grub.cfg | head -n 5 >> "$OUTPUT_FILE"
+    [ -f "/etc/default/grub" ] && cat /etc/default/grub >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Aktuelle Kernel-Parameter ===" >> "$OUTPUT_FILE"
+    cat /proc/cmdline >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Partitionen und UUIDs ===" >> "$OUTPUT_FILE"
+    blkid >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Mountpunkte ===" >> "$OUTPUT_FILE"
+    lsblk >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== PCI-Geräte: Netz, Audio, Grafik ===" >> "$OUTPUT_FILE"
+    lspci | grep -Ei 'vga|3d|audio|network' >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== USB Geräte ===" >> "$OUTPUT_FILE"
+    lsusb >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Netzwerkgeräte (nmcli) ===" >> "$OUTPUT_FILE"
+    nmcli device status >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Geladene Module (Netz, USB, Audio) ===" >> "$OUTPUT_FILE"
+    lsmod | grep -Ei 'wl|usb|snd|nvidia|radeon|amdgpu|i915' >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== USB-Stromsparmodus ===" >> "$OUTPUT_FILE"
+    [ -f /sys/module/usbcore/parameters/autosuspend ] && cat /sys/module/usbcore/parameters/autosuspend >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Audio Info (ALSA) ===" >> "$OUTPUT_FILE"
+    aplay -l 2>/dev/null >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Audio Info (PulseAudio/PipeWire) ===" >> "$OUTPUT_FILE"
+    pactl list short sinks 2>/dev/null >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+
+    echo "=== Kernel Log (Audio/USB/Fehler) ===" >> "$OUTPUT_FILE"
+    dmesg | grep -Ei 'usb|audio|snd|error' | tail -n 50 >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+}
+
+# Ausführen
+collect_info
+cat "$OUTPUT_FILE"
+
+echo "Fertig. Gespeichert unter: $OUTPUT_FILE"

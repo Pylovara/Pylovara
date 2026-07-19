@@ -1,0 +1,181 @@
+@kernel-nr: 23 Ð NITROX
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####=======K23 NITROX=======#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #             NITROX =  VERSORGUNGSMANAGER SERVICE SYSTEM          #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+###==##==###======#####====STARTPUNKT NITROX===#####======###==##==###
+
+BION Ð NITROX 
+
+ MORPHIC-ID ¡ NIT 
+
+ BION-ID ¡ N
+
+MASK ¡ MASU-NITROX
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE ¡ NITROX
+
+ MORPHIC-ID ¡ NITK
+
+ BION-ID ¡ N00
+
+ AXIOM ¡ NITK = <NITK>
+
+ ABSK ¡ NITK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE ¡ EXTRAWABE-INJEKTOR
+
+ MORPHIC-ID ¡ NITK
+
+ BION-ID ¡ N00X01
+
+ AXIOM ¡ NITK = <NITK>
+
+ ABSK ¡ NITK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-INJEKTOR Ð STARWABE 
+
+ MORPHIC-ID ¡ NITS-INJEKTOR
+
+ BION-ID ¡ N00X01S01
+
+ AXIOM ¡ NITS-INJEKTOR = ©
+
+ ABSK ¡ NITK+NITX-INJEKTOR+NITS-INJEKTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-INJEKTOR Ð BLOCKWABE
+
+ MORPHIC-ID ¡ NITB-INJEKTOR
+
+ BION-ID ¡ N00X01S01B01
+
+ AXIOM ¡ NITB-INJEKTOR = ±
+
+ ABSK ¡ NITK+NITX-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^ 3ZYKLUS-OUT:
+ AXIOM ¡ ^       1SYNC:
+ AXIOM ¡ ^       2KOPF:
+ AXIOM ¡ ^      1START: —[<BOXK>]
+ AXIOM ¡ ^       2FOOD: ± [(<NR>)—Ø ¥ <IO> ¥ Ø]
+ AXIOM ¡ ^  3ZYKLUS-IN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^       6FREE:
+
+ BRÜCKE-IN ¡ POIK+POIX-ON-PIPE
+
+ BRÜCKE-OUT ¡ POIK-POIX-OFF-PIPE
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-INJEKTOR Ð LINKENDWABE
+
+ MORPHIC-ID ¡ NITL-INJEKTOR
+
+ BION-ID ¡ N00X01S01B01L01
+
+ AXIOM ¡ NITL-INJEKTOR = ±
+
+ ABSK ¡ NITK+NITX-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR+NITL-INJEKTOR
+
+ LINK ¡ NITK
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
+BION-HAUPTWABE ¡ EXTRAWABE-EXTRAKTOR
+
+ MORPHIC-ID ¡ NITK
+
+ BION-ID ¡ N00X02
+
+ AXIOM ¡ NITK = <NITK>
+
+ ABSK ¡ NITK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-EXTRAKTOR Ð STARWABE 
+
+ MORPHIC-ID ¡ NITS-EXTRAKTOR
+
+ BION-ID ¡ N00X02S01
+
+ AXIOM ¡ NITS-EXTRAKTOR = ÷
+
+ ABSK ¡ NITK+NITS-EXTRAKTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-EXTRAKTOR Ð BLOCKWABE
+
+ MORPHIC-ID ¡ NITB-EXTRAKTOR
+
+ BION-ID ¡ N00X02S01B01
+
+ AXIOM ¡ NITB-EXTRAKTOR = ÷
+
+ ABSK ¡ NITK+NITS-EXTRAKTOR+NITB-EXTRAKTOR
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^ 3ZYKLUS-OUT:
+ AXIOM ¡ ^       1SYNC:
+ AXIOM ¡ ^       2KOPF: ÷ [Ø ¥ <IO> ¥ Ø—(<NR>)]
+ AXIOM ¡ ^      1START: —[<BOXK>]
+ AXIOM ¡ ^       2FOOD: 
+ AXIOM ¡ ^  3ZYKLUS-IN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        4SEN:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^        5REX:
+ AXIOM ¡ ^       6FREE:
+
+ BRÜCKE-IN ¡ POIK+POIX-OFF-PIPE
+
+ BRÜCKE-OUT ¡ POIK+POIX-ON-PIPE
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-EXTRAKTOR Ð LINKENDWABE
+
+ MORPHIC-ID ¡ NITL-EXTRAKTOR
+
+ BION-ID ¡ N00X01S01B01L01
+
+ AXIOM ¡ NITL-EXTRAKTOR = ÷
+
+ ABSK ¡ NITK+NITX-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR+NITL-EXTRAKTOR
+
+ LINK ¡ NITK
+
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = NITELT
+ # SBSK = 
+ # VBSK = 
+ # RBSK = 
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [02:50:12|Do 29 Jan 2025] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####=====ENDPUNKT NITROX====#####======###==##==###

@@ -519,7 +519,7 @@ theoretisch .....
 
 und die mcs code pro datei sehr minimal ausfallen würden :
 
-¢!
+¢! # FALSCHE VERSION PROTO 
 »—["TRANSAKTIONSRAHMEN"]«
  
  ¬· »—[" ¢! "]«
@@ -539,6 +539,25 @@ und die mcs code pro datei sehr minimal ausfallen würden :
              ± »[(11)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
 !¢
 
+¢! # RICHTIGE VERSION PROTO
+»—["TRANSAKTIONSRAHMEN"]«
+
+ ¬· »—[" ¢! "]«
+     ± »[(1)—Ø ¥ ¢! ¥ Ø]«
+
+         ÷ »[Ø <IO> Ø—(1)]«
+     ¬· »—[, RAM_REG ,]«
+         ¬· »—[" THEORETISCH NUMMER "]«
+             ± »[(10)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
+
+ ¬· »—[" !¢ "]«
+     ± »[(2)—Ø !¢ Ø]«
+
+         ÷ »[Ø <IO> Ø—(2)]«
+     ¬· »—[, RAM_REG ,]«
+         ¬· »—[" THEORETISCH NUMMER "]«
+             ± »[(11)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
+!¢
 
 theoretisch , wenn nicht mehr infos erwartet ...
 

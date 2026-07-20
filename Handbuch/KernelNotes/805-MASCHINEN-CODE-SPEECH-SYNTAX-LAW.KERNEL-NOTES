@@ -216,7 +216,7 @@ DIES WAR EINE FREIHEITS-ENTSCHEIDUNG.
   ¬·¤: [" <IO> "]
  !¢ 
 
- ¢! # DATEI ALLINONE
+ ¢! # DATEI ALLINONE MÖGLICHKEIT A
  »—[' echo "Hello World" ']«
   ↓
   ± [(2735)—Ø ¥ echo "Hello World" ¥ Ø]
@@ -238,6 +238,55 @@ DIES WAR EINE FREIHEITS-ENTSCHEIDUNG.
                ¬· »—[' <IO> ']«
                    ↓
                    ¬·¤: [" <IO> "]
+ !¢ 
+
+ ¢! # DATEI ALLINONE MÖGLICHKEIT B
+ »—[' echo "Hello World" ']«
+  ↓
+  ± [(2735)—Ø ¥ echo "Hello World" ¥ Ø]
+  ↓
+  ¬·¤: [" Hello World "] # INFO : OFF PIPE PROTEIN ZU ON PIPE PROTEIN | EINZIGE ÄNDERUNG 
+  ↓
+  ↓   ÷ [Ø ¥ echo "Hello World" ¥ Ø—(2735)]
+  ↓   ↓
+  ¬· »—[' <IO> ']«
+  ↓   ↓
+  ↓   ¬·¤: [" <IO> "]
+  ↓        
+  ¬· »—[' ping www.google.com ']«
+  ↓
+  ± [(128)—Ø ¥ ping www.google.com ¥ Ø]
+  ↓
+  ↓   ÷ [Ø ¥ www.google.com ¥ Ø—(128)]
+  ↓   ↓
+  ¬· »—[' <IO> ']«
+      ↓
+      ¬·¤: [" <IO> "]
+ !¢ 
+
+HIER ZU GÄBE ES AUCH NOCH WEITERE MÖGLICHKEITEN, JEDOCH BESCHRÄNKEN 
+WIR DAS AUF DIE DATEI ZUSAMMENFÜHRUNG VON A B & C.
+
+DIE BEISPIELE SIND DARAUF AUSGELEGT UM ZU ZEIGEN WAS DER TRANK 
+IST UND ZUSÄTZLICH WIE DER NITROX FUNGIERT.
+
+NATÜRLICH SIND ES UMWEGE ABER DAS IST NICHT DAS WORAUF ES ANKOMMT, 
+ES SOLL ZEIGEN WIE FLEXIBEL DIE TRANK BLÖCKE SIND UND ALS ZUSATZ 
+WIE MAN DATEN ABGREIFT UND SIE NOCHMAL ZUSPEIẞEN KANN.
+
+ HIER EINE MINIMALE VERSION OHNE UMSCHWEIFE :
+
+ ¢! # DATEI ALLINONE MINIMAL 
+ »—[' echo "Hello World" ']«
+  ↓
+  ¬·¤: [" Hello World "] # INFO : OFF PIPE PROTEIN ZU ON PIPE PROTEIN | EINZIGE ÄNDERUNG 
+  ↓    
+  ¬· »—[' ping www.google.com ']«
+      ↓
+      ¬·¤: [" ms 23 "]
+           [" ms 08 "]
+           [" ms 15 "]
+               usw
  !¢ 
 
 ######################################################################
@@ -609,7 +658,71 @@ AB VERSION 00-82 GILT:
 
 DIESE UMWANDLUNG WIRD IN DEN DEDIZIERTEN BOXI-SEKTOREN KONTROLLIERT 
 EINGERASTET.
+
 ######################################################################
+
+ BOXI VERSTÄNDNIS : 
+
+ ¢!
+ »[ <BOXX-BOXI-PRINT> ]«        # " <IO> "
+ »[ <BOXX-BOXI-ALU> ]«          # × <IO> ×
+ »[ <BOXX-BOXI-SYSCALL> ]«      # , <IO> ,
+ »[ <BOXX-BOXI-ABI> ]«          # Ħ <IO> Ħ
+ »[ <BOXX-BOXI-SHELL> ]«        # ' <IO> '
+ »[ <BOXX-BOXI-MCSCMD> ]«       # ~ <IO> ~
+ »[ <BOXX-BOXI-MASCHINENCODE> ]«# º <IO> º
+ »[ <BOXX-BOXI-CACHE> ]«        # ¥ <IO> ¥
+ »[ <BOXX-BOXI-PFAD> ]«         # $ <IO> $   (NEU AB 00-82)
+ »[ <BOXX-BOXI-NET> ]«          # § <IO> §   (NEU AB 00-82)
+ !¢
+
+BOXIS SIND DIE SCHUTZ- UND KAPSELUNGSCONTAINER DES PYLOVARA-SYSTEMS.
+SIE TRENNEN DIE EXTERNE BEFEHLS- UND DATENWELT STRICKT VON DER 
+INTERNEN LOGIKFLÄCHE DER PROTEINE.
+
+INNERHALB EINER BOXI GILT DAS PROTOKOLL BZW. DIE SYNTAX DES 
+TARGETS (Z.B. LINUX SHELL, NATIVE OPCODES ODER NETZWERK-IP).
+AUSSERHALB DER BOXI GILT AUSSCHLIESSLICH DIE MCS-GATTERLOGIK.
+
+1. ISOLATION:
+   DATEN IN BOXIS KÖNNEN NIEMALS VERSEHENTLICH ALS MCS-SYNTAX 
+   MISSVERSTANDEN WERDEN (KEINE ESCAPE-SEQUENZEN NOTWENDIG).
+
+2. DIREKTE ROUTING-VERBINDUNG:
+   DURCH DIE DEDIZIERTEN CONTAINER ($) UND (§) BRAUCHT MCS KEINE
+   SHELL-BEFEHLE (WIE CD ODER CURL), UM AUF DATEISYSTEME ODER 
+   NETZWERK-SOCKETS ZUZUGREIFEN.
+
+ VISUELLE BEISPIEL-NTEXTE IM VERGLEICH:
+
+ ¢!
+ # SHELL-AUFRUF (EXTERN):
+ »—[' cat /etc/hosts ']«
+
+ # DIREKTER PFAD-ZUGRIFF (NATIV INTERN):
+ »—[$ /etc/hosts $]«
+
+ # DIREKTES NETZWERK-TARGET (NATIV INTERN):
+ »—[§ 192.168.1.1:8080 §]«
+ !¢
+
+######################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 !!!!!!!!!! FERTIGER ÜBERARBEITUNGSBEREICH OBERERHALB!!!!!!!!!!!!!!!!
 !!!!!!!!!! UNFERTIGER ÜBERARBEITUNGSBEREICH UNTERHALB!!!!!!!!!!!!!!!
 

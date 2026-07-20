@@ -817,7 +817,7 @@ PAUSE ... HEUTE NACHT WEITER
         ↓
         ¿¹ ¶ ¬·¤: ['echo "Hardware Versorgung OK"'] # BESTÄTIGUNGS STATUS
         ↓
-        ¿¹ ¶¶ ¬· »—[~FLAG-SEND && COPIE~ZU ~]«««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ  
+        ¿¹ ¶¶ ¬· »—[~FLAG-SEND && COPIE~ZU ~]« # optional : ««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ  
                   ↓
                   ¬· »[$ /Pylovara/Hardware/HARDWARE_VERSOGUNGS_BEISPIEL.system-flag $]«
  !¢

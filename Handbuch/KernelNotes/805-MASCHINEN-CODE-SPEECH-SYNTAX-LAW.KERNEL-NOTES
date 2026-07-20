@@ -866,21 +866,98 @@ PAUSE ... HEUTE NACHT WEITER
        ↓
        ¿ ¶¶ »—[ OBJEKT = MATERIAL, MATERIAL ]«««V2 # PROTEIN OHNE BOXI IM BAUMODUS V2 (VARABLE2)
              ↓
-             ¬·¤: [" AUSGABE TEXT "]
-                 ↓
-                 £1 # ZYTRON INPUT 
+             ¬·¤: —[" AUSGABE TEXT "]
+                  ↓
+                  £1 # ZYTRON INPUT 
 
  !¢ 
 
 syncrositations zustand plus zytron verkabelung für wieder einspeißung .... hmm 
 
+ da ich beim REX KORDI die beiden symbole für sequenzell und paralell entfernt habe ab 00-79 
+ wären diese symbole frei › ‹ 
+
+ um den zyklus zu bestimmen könnte ich den in und output bereich von zytron verbessern 
+ in dem ich den entwickler beim benutzen erlaube den datenfluss einspeißungspunkt zu bestimmen 
+
+ das wäre dann cirka so 
+
+ £1› = von hier aus raus/out
+ £1‹ = von hier aus rein/in 
+
+ müsste ich beim zitron selbst noch in den waben hinein programmieren 
+ aber schluss folgernd dann :
 
 
+ ¢!
 
+   ¿¹
+  »—[ BAU AKTION ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+   ↓  
+   ↓   ¿¹
+   ↓   £1‹ # ZYTRON OUTPUT 
+   ↓   ↓
+   ¬· »—[ OBJEKT = MATERIAL, MATERIAL, MATERIAL ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+       ↓
+       ¿¹ ¶ ¬·¤: [" AUSGABE TEXT "]
+       ↓
+       ¿ ¶¶ »—[ OBJEKT = MATERIAL, MATERIAL ]«««V2 # PROTEIN OHNE BOXI IM BAUMODUS V2 (VARABLE2)
+             ↓
+             ¬·¤: —[" AUSGABE TEXT "]
+                  ↓
+                  £1› # ZYTRON INPUT 
 
+ !¢ 
 
+oder andersrum 
 
+ ¢!
 
+   ¿¹
+  »—[ BAU AKTION ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+   ↓  
+   ↓   ¿¹
+   ↓   £1› # ZYTRON OUTPUT 
+   ↓   ↓
+   ¬· »—[ OBJEKT = MATERIAL, MATERIAL, MATERIAL ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+       ↓
+       ¿¹ ¶ ¬·¤: [" AUSGABE TEXT "]
+       ↓
+       ¿ ¶¶ »—[ OBJEKT = MATERIAL, MATERIAL ]«««V2 # PROTEIN OHNE BOXI IM BAUMODUS V2 (VARABLE2)
+             ↓
+             ¬·¤: —[" AUSGABE TEXT "]
+                  ↓
+                  £1‹ # ZYTRON INPUT 
+
+ !¢ 
+
+das wäre in verschiedenen senarion sinnvoll .... man könnte sogar daten immer wieder zurück führen 
+und verarbeiten lassen und zusätzlich jedes mal die weiter verarbeitet daten dann per nitro abgreifen 
+
+hmmm ... 
+
+ ¢!
+
+   ¿¹
+  »—[ BAU AKTION ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+   ↓  
+   ↓   ¿¹
+   ↓   £1› # ZYTRON OUTPUT 
+   ↓   ↓
+   ¬· »—[ OBJEKT = MATERIAL, MATERIAL, MATERIAL ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+       ↓
+       ¿¹ ¶ ¬·¤: [" AUSGABE TEXT "]
+       ↓
+       ¿ ¶¶ »—[ OBJEKT = MATERIAL, MATERIAL ]«««V2 # PROTEIN OHNE BOXI IM BAUMODUS V2 (VARABLE2)
+             ↓
+             ¬·¤:—[" AUSGABE TEXT "]
+                 ↓
+                 £1‹ # ZYTRON INPUT 
+                 ↓
+                 ± [(<NR)—Ø ¥ <ABGRIFF> ¥ Ø] 
+                 ↓
+                 * # weitere dinge was damit passieren soll | in dem fall nur text output .. 
+ !¢ 
 
 
 

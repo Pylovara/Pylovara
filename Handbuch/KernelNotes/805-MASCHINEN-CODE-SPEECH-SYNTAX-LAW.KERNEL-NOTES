@@ -815,9 +815,9 @@ PAUSE ... HEUTE NACHT WEITER
   ↓     ¿¹ 
   ¬·¤› »—[{<NAME>; <WERT>}]«««<TIMER><ZEIT> # ZEITTAKTUNGEN | NS - S - T 
         ↓
-        ¶ ¬·¤: ['echo "Hardware Versorgung OK"'] # BESTÄTIGUNGS STATUS
+        ¿¹ ¶ ¬·¤: ['echo "Hardware Versorgung OK"'] # BESTÄTIGUNGS STATUS
         ↓
-        ¶¶ ¬· »[~FLAG-SEND && COPIE~ZU /Pylovara/Hardware/needlexxx.system-flag~]«««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ  
+        ¿¹ ¶¶ ¬· »[~FLAG-SEND && COPIE~ZU /Pylovara/Hardware/needlexxx.system-flag~]«««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ  
 
  !¢
 
@@ -843,6 +843,48 @@ PAUSE ... HEUTE NACHT WEITER
                 £1 # ZYTRON INPUT 
 
  !¢ 
+
+
+
+### kurzer kritzel bereich : 
+
+
+ visuell für mich kurz ...
+
+
+ ¢!
+
+   ¿¹
+  »—[ BAU AKTION ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+   ↓  
+   ↓   ¿¹
+   ↓   £1 # ZYTRON OUTPUT 
+   ↓   ↓
+   ¬· »—[ OBJEKT = MATERIAL, MATERIAL, MATERIAL ]«««V1 # PROTEIN OHNE BOXI IM BAUMODUS V1 (VARIABLE1)
+       ↓
+       ¿¹ ¶ ¬·¤: [" AUSGABE TEXT "]
+       ↓
+       ¿ ¶¶ »—[ OBJEKT = MATERIAL, MATERIAL ]«««V2 # PROTEIN OHNE BOXI IM BAUMODUS V2 (VARABLE2)
+             ↓
+             ¬·¤: [" AUSGABE TEXT "]
+                 ↓
+                 £1 # ZYTRON INPUT 
+
+ !¢ 
+
+syncrositations zustand plus zytron verkabelung für wieder einspeißung .... hmm 
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###==##==###======########## ENDE INHALT ##########======###==##==####
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###

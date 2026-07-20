@@ -664,16 +664,16 @@ EINGERASTET.
  BOXI VERSTÄNDNIS : 
 
  ¢!
- »[ <BOXX-BOXI-PRINT> ]«        # " <IO> "
- »[ <BOXX-BOXI-ALU> ]«          # × <IO> ×
- »[ <BOXX-BOXI-SYSCALL> ]«      # , <IO> ,
- »[ <BOXX-BOXI-ABI> ]«          # Ħ <IO> Ħ
- »[ <BOXX-BOXI-SHELL> ]«        # ' <IO> '
- »[ <BOXX-BOXI-MCSCMD> ]«       # ~ <IO> ~
- »[ <BOXX-BOXI-MASCHINENCODE> ]«# º <IO> º
- »[ <BOXX-BOXI-CACHE> ]«        # ¥ <IO> ¥
- »[ <BOXX-BOXI-PFAD> ]«         # $ <IO> $   (NEU AB 00-82)
- »[ <BOXX-BOXI-NET> ]«          # § <IO> §   (NEU AB 00-82)
+ »[ <BOXX-BOXI-PRINT> ]«         # " <IO> "
+ »[ <BOXX-BOXI-ALU> ]«           # × <IO> ×
+ »[ <BOXX-BOXI-SYSCALL> ]«       # , <IO> ,
+ »[ <BOXX-BOXI-ABI> ]«           # Ħ <IO> Ħ
+ »[ <BOXX-BOXI-SHELL> ]«         # ' <IO> '
+ »[ <BOXX-BOXI-MCSCMD> ]«        # ~ <IO> ~
+ »[ <BOXX-BOXI-MASCHINENCODE> ]« # º <IO> º
+ »[ <BOXX-BOXI-CACHE> ]«         # ¥ <IO> ¥
+ »[ <BOXX-BOXI-PFAD> ]«          # $ <IO> $   (NEU AB 00-82)
+ »[ <BOXX-BOXI-NET> ]«           # § <IO> §   (NEU AB 00-82)
  !¢
 
 BOXIS SIND DIE SCHUTZ- UND KAPSELUNGSCONTAINER DES PYLOVARA-SYSTEMS.
@@ -693,17 +693,24 @@ AUSSERHALB DER BOXI GILT AUSSCHLIESSLICH DIE MCS-GATTERLOGIK.
    SHELL-BEFEHLE (WIE CD ODER CURL), UM AUF DATEISYSTEME ODER 
    NETZWERK-SOCKETS ZUZUGREIFEN.
 
+   DAZU WERDEN INTERNE MCD BEFEHLE VERWENDET.
+
  VISUELLE BEISPIEL-NTEXTE IM VERGLEICH:
 
  ¢!
  # SHELL-AUFRUF (EXTERN):
- »—[' cat /etc/hosts ']«
+ »—[' cat /etc/hosts ']« # OS PROGRAMM
+  ¬·¤: [ <OUTPUT> ]
 
  # DIREKTER PFAD-ZUGRIFF (NATIV INTERN):
- »—[$ /etc/hosts $]«
+ »—[~ ÖFFNEN ~]« # MCD BEFEHL ( WAS SOLL ER MIT DER DATEI MACHEN : ÖFFNEN )
+  ¬· »—[$ /etc/hosts $]« # PYLOVARA BOXI
+      ¬·¤: [" <OUTPUT> "]
 
  # DIREKTES NETZWERK-TARGET (NATIV INTERN):
- »—[§ 192.168.1.1:8080 §]«
+ »—[~ CONNECT ~]« # MCD BEFEHL ( WAS SOLL ER MIT DER IP MACHEN : CONNECTEN )
+  ¬· »—[§ 192.168.1.1:8080 §]«
+      ¬· [ <VERBINDUNG|HERGESTELLT/NICHT HERGESTELLT> ]
  !¢
 
 ######################################################################

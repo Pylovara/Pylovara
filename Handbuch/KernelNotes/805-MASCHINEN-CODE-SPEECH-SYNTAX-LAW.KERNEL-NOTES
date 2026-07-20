@@ -817,7 +817,7 @@ PAUSE ... HEUTE NACHT WEITER
         ↓
         ¿¹ ¶ ¬·¤: —['echo "Hardware Versorgung OK"'] # BESTÄTIGUNGS STATUS
         ↓         ¬· »—[~ START-MONITORING && SEND-ZU ~]«
-        ↓             ¬· »[ <BOXI-NET>/<BOXI-PFAD> ]«
+        ↓             ¬· »[ <BOXI-NET>/<BOXI-PFAD> ]« # OPTIONAL ZU RETRON 
         ↓    
         ¿¹ ¶¶ ¬· »—[~ FLAG-SEND && COPIE~ZU ~]« # optional : ««<COMMAND> # BEFEHL VOR WEITERES | B - E - ſ  
                   ↓

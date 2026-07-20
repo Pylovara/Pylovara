@@ -31,6 +31,14 @@
        WURDE DIES GEMACHT, UM AUCH DIE SAUBERE ZU ORDNUNG IM CODE 
        ZU GEWÄHRLEISTEN.
 
+ 008 BOXI
+
+ - WURDE ERNEUERT UND ERWEITER 
+   = BX00X09 -> BOXX-BOXI-PFAD  = $ <IO> $  (Nativer interner Dateisystem-Pfad)
+   = BX00X10 -> BOXX-BOXI-NET   = § <IO> §  (Netzwerk, IP-Adressierung, Sockets & Routing)
+     = SOMIT brauch mann keine umwege als fremd shell für die pfad ansteuerung 
+       und die leeren proteine wurden freigeschaufelt für den bau modus später 
+       und unklare codes wurden eliminiert .
 
  020 VATRON 
 

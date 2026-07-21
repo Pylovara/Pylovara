@@ -824,7 +824,6 @@ PAUSE ... HEUTE NACHT WEITER
                   ¬· »[$ /Pylovara/Hardware/HARDWARE_VERSOGUNGS_BEISPIEL.system-flag $]«
  !¢
 
-
 SYNAPTOR (¿¹) – DIE TAKT- & PRTOZESS-SYNCRONISATION 
 
 DER SYNAPTOR IST DER TAKTGEBER UND SPANNUNGS-BUS DES SYSTEMS.
@@ -899,16 +898,6 @@ WIE DER ZYTRON ODER DER FEED NUMMERIERBAR WERDEN UND EXTREM FLEXIBEL.
 
  !¢ 
 
-
-Die Kombination aus SYNAPTOR (¿¹) und ZYTRON (£<NR><IN/OUT>) bildet die weltweit erste deterministische, 
-visuell nachvollziehbare Künstliche Synapsen-Logik.
-
-Sie entkoppelt die zeitliche Prozess-Synchronisation vollständig vom physikalischen Datentransport 
-und ermöglicht echte Rückkopplungsschleifen (Feedback-Loops) ohne Race-Conditions.
-
-
-
-
  ¢!
 
    ¿¹
@@ -929,7 +918,6 @@ und ermöglicht echte Rückkopplungsschleifen (Feedback-Loops) ohne Race-Conditi
 
  !¢ 
 
-
  ¢!
 
    ¿¹
@@ -948,14 +936,33 @@ und ermöglicht echte Rückkopplungsschleifen (Feedback-Loops) ohne Race-Conditi
                  ↓
                  £1‹ # ZYTRON INPUT 
                  ↓
-                 ± [(<NR)—Ø ¥ <ABGRIFF> ¥ Ø] 
+                 ± [(<NR)—Ø ¥ <IO> ¥ Ø] # FF ABGRIFF DATENSATZ
                  ↓
-                 * # weitere dinge was damit passieren soll | in dem fall nur text output .. 
+                 * # WEITER MÖGLICHKEITEN | IN DEM FALL MIT TEXT OUTPUT 
  !¢ 
 
+ZYTRON DIE DYNAMISCHE DATEN-ROUTING & RAM-PUFFER KOMPONENTE FUNGIERT ALS 
+NEURALE AXON-/DENDRITEN-LEITUNG MIT INTEGRIERTEM RAM-PUFFER-PUNKT. 
 
+ER ZIEHT DATEN AN EINER BELIEBIGEN STELLE AUS DEM HAUPTSTRANG HERAUS UND ISOLIERT SIE IN EINEM LEICHTEN 
+TRANSAKTIONSSPEICHER DES CODES UND SPEIST SIE AN GEWÜNSCHTER STELLE WIEDER EIN.
 
+ VERSTÄNDNIS LEICHT GEMACHT : 
 
+STELLT EUCH EINEN GROẞEN AUX-STECKE-DOPPELSEITIG VOR DER IN EURER ANLAGE ZWEI ANALOG 
+GERÄTE VERKOPPELT.
+
+ SYMBOLIK :
+
+ £<NR>› # = RAUS/OUTPUT 
+ £<NR>‹ # = REIN/INPUT
+
+DIE KOMBINATION AUS SYNAPTOR (¿¹) UND ZYTRON (£1) BILDET DIE WELTWEITE ERSTE DETERMINISTISCHE,
+VISUELL GREIFBARE UND NACHVOLLZIEHBARE KÜNSTLICHE SYNAPSEN-LOGIK IN MCS .
+
+SIE ENTKOPPELT DIE ZEITLICHE PROZESS.SYNCRONISATION VOLLSTÄNDIG VOM PHYSICALISCHEN 
+DATENSTROM ( BEHÄLT DABEI DIE VOLLE GESCHWINDIGKEIT DER ÜBERTRAGUNG DES ) DATENSTRANSPORT 
+UND ERMÖGLICHT ECHTE RÜCKKOPPLUNGSSCHLEIFEN (FEEDBACK-LOOPS) OHNE RACE-CONDITIONS.
 
 
 ###==##==###======########## ENDE INHALT ##########======###==##==####

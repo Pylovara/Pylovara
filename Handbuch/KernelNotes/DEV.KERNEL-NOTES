@@ -301,3 +301,72 @@ EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - L
                                           ↓                  │
                                      £1 INPUT ───────────────┘ (Daten-Auskopplung)
 
+
+
+
+
+
+# kurzer kritzel bereich für synaptor 
+
+
+BION-EXTRAWABE-SYNAPTOR Ð TORWABE
+ MORPHIC-ID ¡ SYNR-FLUSSTOR-1
+ BION-ID ¡ SY00X01S01B01R01
+ 
+ AXIOM ¡ SYNR-FLUSSTOR-1 = ¿¹
+ 
+ TOR = ON
+  AXIOM ¡ TOR = IN-ID = POICOM-ON-PIPE-BOXK
+  AXIOM ¡ TOR = OUT-ID = SENK
+ 
+ LINK ¡ SENK
+ 
+ SYSTEM = ON
+  WABEN-NEST = PLUG
+  WABEN-TYP = PROZESS-VERBINDER 
+
+notiz : 
+
+ich füge der torwabe die option noch hinzu den syncronisations zustand 
+über retron zu steuern ... 
+
+ich verbanne retron erstmal aus der mcs syntax und baue in waben 
+technisch in den tws ein  
+
+der wabinator selbst bekommt ein vollständiges update für eine explizite wabe 
+die on und off zustande alle * = ON zustände erkennt und sie gleich 
+an den ram adressierbar macht um den zustand off und on zu steuern  
+
+inklusive die träger funktion für waben ansich 
+
+aber davor baue ich den synaptor richtig ... 
+
+
+danach bekommt zytron seine steckverbindung ... 
+
+der brauch im grunde nur eine RÜCKKOPPLUNGSSCHLEIFEN die im grunde die tor wabe 
+erledigen könnte aber die tor wabe hat kein ramcache 
+
+ich erstelle daher die torwabe statts mit retron prozess managent bindung zum 
+cache .... da wäre die feed variante interessant 
+
+
+ich merke auf jedenfall das ich dringend eine wabinator wabe brauche 
+die alle schalter und optionen generalisiert beinhaltet und dann 
+waben tragen kann mit unter auch einem textlichen bereich für den 
+einsatz grund ... 
+
+das ding wird eh wachsen und besser ist es wenn jede wabe einen beschriebenen 
+existenz grund hat , den so sind sie nur in meinem kopf nachvollziehbar .. 
+
+und das darf es nicht sein , das system soll in 500 jahren noch von jedem neueinsteigenden system entwickler 
+verstanden werden , genauso wie später von der von mir ausgewählten system ki die die lizenzen 
+und auch die system integrität gewährleistet ... 
+
+darüber grübeln .... es rennt nichts weg ... 
+
+umso besser der beiläufige bau in meinem kopf , umso besser die umsetzung ! 
+
+
+
+

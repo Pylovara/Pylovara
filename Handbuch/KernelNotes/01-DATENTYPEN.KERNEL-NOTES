@@ -33,6 +33,40 @@ BION-KERNWABE Ð DATENTYPEN
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 ###==##==###======#####========================#####======###==##==###
 
+BION-DATENWABE Ð DATENTYPEN
+
+ MORPHIC-ID ¡ DATTP-DAT
+
+ BION-ID ¡ DA01TP01
+
+ AXIOM ¡ DATTP-DAT = DA01
+
+ ABSK ¡ DATK+DATTP-DAT
+
+#MCS-TYP ¡
+
+#MCS-TYP ¡
+
+ DATENTYPKATEGORIEN ¡ DATENTYPEN
+
+ BIT-BREITE ¡
+ 
+ LICHTPULSRATE ¡
+ 
+ FARBSPEKTRUM ¡
+
+ SIGNALSTÄRKE ¡ 
+
+ TONFREQUENZ ¡
+
+ FUNKTION ¡ SYSTEM
+
+ BEZEICHNUNG ¡ TWS BINARYS
+
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+
 BION-DATENWABE Ð TRANSAKTIONSRAHMEN
 
  MORPHIC-ID ¡ DATTP-TRAN
@@ -242,6 +276,10 @@ BION-DATENWABE Ð BOXI
  MCS-TYP ¡ ° °
 
  MCS-TYP ¡ ¥ ¥
+
+ MCS-TYP ¡ $ $
+
+ MCS-TYP ¡ § §
 
  DATENTYPKATEGORIEN ¡ INHALTSCONTAINER
 

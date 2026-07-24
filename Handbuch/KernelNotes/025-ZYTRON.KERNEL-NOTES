@@ -34,10 +34,7 @@ BION-HAUPTWABE Ð EXTRAWABE-ZURÜCK
 
  BION-ID ¡ ZY00X01
  
- AXIOM ¡ ZYTX-ZURÜCK = £1
- AXIOM ¡ ZYTX-ZURÜCK = £2
- AXIOM ¡ ZYTX-ZURÜCK = £3
- AXIOM ¡ ZYTX-ZURÜCK = £4
+ AXIOM ¡ ZYTHT-ZURÜCK = ZYTHT-ZURÜCK
 
  ABSK ¡ ZYTK+ZYTX-ZURÜCK
 
@@ -54,6 +51,73 @@ BION-EXTRAWABE-ZURÜCK Ð STARTWABE
  ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-ZURÜCK Ð SYSTEMWABE 
+
+ MORPHIC-ID ¡ ZYTSYS-ZURÜCK-IO
+
+ BION-ID ¡ ZYT00HT01ST01
+
+ AXIOM ¡ ZYTSYS-ZURÜCK-IO = £<NR>
+
+ ABSK ¡ 
+
+ I-ID ¡ 
+
+ O-ID ¡
+
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+!!!!!!!!!!! ALT ↓↓↓↓ ALT !!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
 

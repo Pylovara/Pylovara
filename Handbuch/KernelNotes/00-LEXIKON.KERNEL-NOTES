@@ -1,4 +1,4 @@
-﻿@kernel-nr: lex Ð SYSTEM-LEXIKON #   #   #   #              # 源真理 #
+﻿@kernel-nr: lex Ð SYSTEM-LEXIKON #   #   #   #   #          # 源真理 #
 ###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
  #     · KEIN EINTRAG | 0 KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
@@ -10,7 +10,7 @@
  #   03  + ·  PROTEIN            | 04  + ·  PROTON                  #
  #   05  + ·  TRENNBEFEHL        | 06  + ·  BINDUNGSBEFEHL          #
  #   07  + ·  AKTIONSDRAHT       | 08  + ·  BOXI                    #
- #   09  - ·  MASTER             | 10  - ·  REX                     #
+ #   09  + ·  MASTER             | 10  - ·  REX                     #
  #   11  - ·  ARGUMENT           | 12  - ·  FEED                    #
  #   13  - ·  SENTIATOR          | 14  - ·  NAVIGATOR               #
  #   15  - ·  WARP               | 16  - ·  IDENTIFIKATION          #
@@ -28,20 +28,20 @@
 ###==##==###======#####====SYSTEM-LOGIKEN======#####======###==##==###
  #   NR HINWEIS NAMEN                                               #
  #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::#
- #   800   - Ŋ  TWS THE-WABE-NEST-SYSTEM                            #
- #   801   - ·  KGW KOGNITIVES-GELD-WÄRHUNGS-SYSTEM                 #
- #   802   + ·  TIL TIMELINE                                        #
- #   803   + Ŋ  SAX SYSTEM-AXOIMEN                                  #
- #   804   - ·  KKZ KOGNITIVE-KÜNSTLICHE-INTELLIGENZ                #
- #   805   + 0  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                #
+ #   80   - Ŋ  TWS THE-WABE-NEST-SYSTEM                            #
+ #   81   - ·  KGW KOGNITIVES-GELD-WÄRHUNGS-SYSTEM                 #
+ #   82   + ·  TIL TIMELINE                                        #
+ #   83   + Ŋ  SAX SYSTEM-AXOIMEN                                  #
+ #   84   - ·  KKZ KOGNITIVE-KÜNSTLICHE-INTELLIGENZ                #
+ #   85   + 0  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                #
 ###==##==###======#####=======LIZENZEN=========#####======###==##==###
- #   993   L1_COREKERNELMANDAT                 #   #    #           #
- #   994   L2_AUTHORRIGHTS                     #     #      #       #
- #   995   L3_COMMERCIALLICENSING              #  PYLOVARA—SYSTEM©  #
- #   996   L4_AI_ADMINISTRATIONSMANDATE        #   #                #
- #   997   L5_POST_MORTEM-CONTROL              #         #          #
- #   998   L6_IMMUTABLE_CORES_DEFINITION       #                    #
- #   999   LICENSE—MANIFEST.PROTO              #           #        #
+ #   93   L1_COREKERNELMANDAT                 #   #    #           #
+ #   94   L2_AUTHORRIGHTS                     #     #      #       #
+ #   95   L3_COMMERCIALLICENSING              #  PYLOVARA—SYSTEM©  #
+ #   96   L4_AI_ADMINISTRATIONSMANDATE        #   #                #
+ #   97   L5_POST_MORTEM-CONTROL              #         #          #
+ #   98   L6_IMMUTABLE_CORES_DEFINITION       #    #               #
+ #   99   LICENSE—MANIFEST.PROTO              #           #        #
 ###==##==###======#####=====VERSIONSDATEN======#####======###==##==###
  # SYSTEM = PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM                      #
  # PROGRAMMIERSPRACHE = MCS 7.4 | MASCHINEN-CODE-SPEECH             #
@@ -49,7 +49,7 @@
  # TASTATURSTANDARD = UTF -8 DEUTSCHER-STANDARD                     #
  # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                     #
  # BRAINMASCHINECORE = BMC 3.0 BRAIN—MASCHINE—CORE                  #
- # LIZENSEN = LV 1.2 LIZENSVERTRAG                                  #
+ # LIZENSEN = LV 1.3 LIZENSVERTRAG                                  #
  # SINGLE SOURCE OF TRUTH § SSoT LEXIKON VERSION 00.82              #
 ###==##==###======#####====IMPRESSUM DATEN=====#####======###==##==###
  # AUTOR = OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68 Since 2025          #

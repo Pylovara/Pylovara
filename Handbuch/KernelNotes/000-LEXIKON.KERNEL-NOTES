@@ -9,7 +9,7 @@
  #   01  + ·  DATENTYPEN         | 02  + ·  TRANSAKTIONSRAHMEN      #
  #   03  + ·  PROTEIN            | 04  + ·  PROTON                  #
  #   05  + ·  TRENNBEFEHL        | 06  + ·  BINDUNGSBEFEHL          #
- #   07  - ·  AKTIONSDRAHT       | 08  - ·  BOXI                    #
+ #   07  + ·  AKTIONSDRAHT       | 08  + ·  BOXI                    #
  #   09  - ·  MASTER             | 10  - ·  REX                     #
  #   11  - ·  ARGUMENT           | 12  - ·  FEED                    #
  #   13  - ·  SENTIATOR          | 14  - ·  NAVIGATOR               #
@@ -36,7 +36,7 @@
  #   805   + 0  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                #
 ###==##==###======#####=======LIZENZEN=========#####======###==##==###
  #   993   L1_COREKERNELMANDAT                 #   #    #           #
- #   994   L2_AUTHORRIGHTS                     #            #       #
+ #   994   L2_AUTHORRIGHTS                     #     #      #       #
  #   995   L3_COMMERCIALLICENSING              #  PYLOVARA—SYSTEM©  #
  #   996   L4_AI_ADMINISTRATIONSMANDATE        #   #                #
  #   997   L5_POST_MORTEM-CONTROL              #         #          #

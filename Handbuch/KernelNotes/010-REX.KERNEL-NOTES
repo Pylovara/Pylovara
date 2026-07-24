@@ -6,20 +6,7 @@
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
 # DER BEZIFFERNDE BAUSTEINSCHALTUNGSKREISLAUF = BBSK                #
 # IN BIBLIOTHEKEN = BION                                            #
-# KOMPLETT ALS ID = ID                                              #
-#                                                                   #
-# PARALELLE PFADE BBSK BION ID  :                                   #
-#                                                                   #
-#      RX00X01S01Y0101P01P01C01                                     #
-#      │   │  │  │    │  │  │                                       #
-#      │   │  │  │    │  │  └─ COMBO (C01) → POIK-Bindung           #
-#      │   │  │  │    │  └──── OPTION (P01) → ALU                   #
-#      │   │  │  │    └─────── OPTION (P01) → KORDI                 #
-#      │   │  │  └──────────── SYSTEM (Y0101) → 1 Punkt             #
-#      │   │  └─────────────── START (S01)                          #
-#      │   └────────────────── HAUPT (X01) → PROZESS                #
-#      └─────────────────────── KERN (RX00)                         #
-#                                                                   #
+# KOMPLETT ALS ID = ID                                              #                                                                #                                                           #
 ###==##==###======#####=====STARTPUNKT REX=====#####======###==##==###
 
 BION Ð REX 
@@ -79,10 +66,8 @@ BION-EXTRAWABE-PROZESS Ð SYSTEMWABE
  BION-ID ¡ RX00X01S01Y0103
  BION-ID ¡ RX00X01S01Y0104
 
- AXIOM ¡ BOXSYS-PROZESS-1 = ¬· 
- AXIOM ¡ BOXSYS-PROZESS-2 = ¬··
- AXIOM ¡ BOXSYS-PROZESS-3 = ¬···
- AXIOM ¡ BOXSYS-PROZESS-4 = ¬····
+ 
+ AXIOM ¡ BOXSYS-PROZESS-1 = ¬
 
  ABSK ¡ REXK+REXX-PROZESS+REXS-PROZESS+REXSYS-PROZESS-IO
 

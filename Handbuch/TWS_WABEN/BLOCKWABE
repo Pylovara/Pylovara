@@ -68,4 +68,20 @@ BION-EXTRAWABE-ON-PIPE Ð BLOCKWABE
  BRÜCKE-OUT ¡ <REK>
  BRÜCKE-OUT ¡ <REK>
  BRÜCKE-OUT ¡ <SENK>
- BRÜCKE-OUT ¡ <SENK>
+ BRÜCKE-OUT ¡ <SENK> 
+
+
+#######################################################
+
+ info : protein pipeline = ON-PIPE 
+
+ Regelt die anschlüsse aller komponenten 
+ mit in und out kanälen , inklusive  
+
+ syntax erlaubnis für jede blockwabe in einer komponente 
+ und verbindet den datenstrangverarbeitungskanal.
+
+ die wabe selbst muss je nach einsatz präzisiert werden 
+ im bereich : SYNTAX-ERLAUBNIS 
+
+ und in und out brücken demenspreczhend angepasst .

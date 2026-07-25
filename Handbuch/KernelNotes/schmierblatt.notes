@@ -323,52 +323,47 @@ ERWEITERBAR .
 ############################################
 REX 
 
-MID RE
-BID RX
+MID = RE
+BID = RX
 
 WBID = HAUPTWABE   = HT 
 WBID = STARTWABE   = ST
 WBID = BLOCKWABE   = BK
-WBID = KNOTENWABE  = TN
-
-
+#WBID = KNOTENWABE  = TN
 
 ------------------------
-WBID = COMBOWABE    = CB 
-WBID = OPTIONSWABE  = OP
-WBID = TORWABE      = TO 
+#WBID = COMBOWABE    = CB 
+#WBID = OPTIONSWABE  = OP
+#WBID = TORWABE      = TO 
 --------------------------
 
 
 TH01 = REHT-PROZESS 
 ST01 = REST-PROZESS 
-BK01 = 
+BK01 = REBK-PROZESS
+
+
+
+
 TN02 = 
 TN03 = 
 TN04 = 
 
-pause : 
+############################################
+ICTUS 
 
-ich hab die ganze nacht und den ganzen tag 
-gestern durch gearbeitet .. 
+MID = IC
+BID = IT
 
-vergiss nicht :
+WBID = HAUPTWABE  = HT 
+WBID = STARTWABE  = ST 
+WBID = KNOTENWABE = TN
 
-ich bin beim rex , rex wird mit den  
-flächen per combowabe über ICTUS ( EINSCHLAG) IN 
-VERKoppeLT ... 
+HT01 = ICHT-IN
+ST01 = ICST-IN
+TN01 = ICTN-IN-1
 
-ictus wird dann zu retron 
-verkoppelt .. 
-
-doppelte verkoppelung .. 
-
-cpu last ... 
-
-orientierung lex ... 
-..
-
-letzter push 
-dann schlafen und 
-dann in den sonntag 
-vollständig rein arbeiten 
+-----------------
+TN02 = ICTN-IN-2
+TN03 = ICTN-IN-3
+TN04 = ICTN-IN-4

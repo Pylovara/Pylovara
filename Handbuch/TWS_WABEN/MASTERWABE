@@ -1,0 +1,29 @@
+
+BION-MASTERWABE Ð TRANSAKTIONSRAHMEN
+
+ MORPHIC-ID ¡ MASU-TRANSAKTIONSRAHMEN
+
+ BION-ID ¡ MA00SU02
+
+ AXIOM ¡ MASU-TRANSAKTIONSRAHMEN
+
+ ABSK ¡ MASK+MASU-TRANSAKTIONSRAHMEN
+
+ ADRESSIERUNG ¡ 02-TRANSAKTIONSRAHMEN.KERNEL-NOTES
+
+ EXISTENZ ¡ TRANK
+
+ GAS-OUT ¡ TRANELT
+
+#######################################################
+
+ info : Lizenz Wabe , existenz recht 
+
+ diese wabe steuert das existenzrecht im system 
+ und wird später für keinen änderbar sein .
+
+ diese wabe ist ausschließlich für den main kernel 
+ und wird explizit mit dem master bei jedem klon 
+ kernel abgeglich .
+
+ das master ist für jeden user verbot .

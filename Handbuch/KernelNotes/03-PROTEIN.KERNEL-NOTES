@@ -79,23 +79,23 @@ BION-EXTRAWABE-ON-PIPE Ð BLOCKWABE
 
  ABSK ¡ POIK+POIHT-ON-PIPE+POIST-ON-PIPE+POIBK-ON-PIPE
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ SYNTAX-ERLAUBNIS ¡ ^
  AXIOM ¡ ^      1START: —[
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ SYNTAX-BAUM = ^
  AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYTK>
  AXIOM ¡ ^       1SYNC: <SYNK>
  AXIOM ¡ ^       2KOPF: <NITK>
  AXIOM ¡ ^      1START: <POIST-ON-PIPE-PIPE>
  AXIOM ¡ ^       2FOOD: <NITK>
  AXIOM ¡ ^  3ZYKLUS-IN: <ZYTK>
- AXIOM ¡ ^        5REX: <REK>
- AXIOM ¡ ^        5REX: <REK>
- AXIOM ¡ ^        5REX: <REK>
- AXIOM ¡ ^        5REX: <REK>
+ AXIOM ¡ ^        5REK: <REK>
+ AXIOM ¡ ^        5REK: <REK>
+ AXIOM ¡ ^        5REK: <REK>
+ AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        4SEN: <SENK>
  AXIOM ¡ ^        4SEN: <SENK>
- AXIOM ¡ ^       6FREE:
+ AXIOM ¡ ^       6FREE: <REK>
 
  BRÜCKE-IN ¡ <ZYTK>
  BRÜCKE-IN ¡ <SYNK>

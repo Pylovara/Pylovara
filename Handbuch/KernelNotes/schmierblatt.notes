@@ -27,6 +27,7 @@ DATENTYPWABE = DATENTYP ANSTEUERUNG ZU KERNWABEN
 KERNWABE    = KERNANSTEUERUNG ZU HAUPTWABEN (PROGRAMMIERUNGEN)
 HAUPTWABE   = PROGRAMMIERUNG HEADER PER NAMENSPRÄFIX 
 STARTWABE   = ANSTEUERUNG 
+BLOCKWABE   = PIPELINE VERSCHALTUNG
 COMBOWABEN  = <MCS-TYP> MIT WEITERER <KERNWABE> VERLINKUNG 
 SYSTEMWABE  = EINGABE|AUSGABE
 KNOTENWABE  = VERBINDET EINGABEN DAVOR 
@@ -325,9 +326,12 @@ REX
 MID RE
 BID RX
 
-WBID = HAUPTWABE    = HT 
-WBID = STARTWABE    = ST 
-WBID = KNOTENWABE   = TN
+WBID = HAUPTWABE   = HT 
+WBID = STARTWABE   = ST
+WBID = BLOCKWABE   = BK
+WBID = KNOTENWABE  = TN
+
+
 
 ------------------------
 WBID = COMBOWABE    = CB 
@@ -336,10 +340,35 @@ WBID = TORWABE      = TO
 --------------------------
 
 
-
-TH01 = REXHT-PROZESS 
+TH01 = REHT-PROZESS 
 ST01 = REST-PROZESS 
-TN01 = 
+BK01 = 
 TN02 = 
 TN03 = 
 TN04 = 
+
+pause : 
+
+ich hab die ganze nacht und den ganzen tag 
+gestern durch gearbeitet .. 
+
+vergiss nicht :
+
+ich bin beim rex , rex wird mit den  
+flächen per combowabe über ICTUS ( EINSCHLAG) IN 
+VERKoppeLT ... 
+
+ictus wird dann zu retron 
+verkoppelt .. 
+
+doppelte verkoppelung .. 
+
+cpu last ... 
+
+orientierung lex ... 
+..
+
+letzter push 
+dann schlafen und 
+dann in den sonntag 
+vollständig rein arbeiten 

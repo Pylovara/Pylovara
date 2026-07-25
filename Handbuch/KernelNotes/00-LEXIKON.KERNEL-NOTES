@@ -10,15 +10,16 @@
  #   03  + ·  PROTEIN            | 04  + ·  PROTON                  #
  #   05  + ·  TRENNBEFEHL        | 06  + ·  BINDUNGSBEFEHL          #
  #   07  + ·  AKTIONSDRAHT       | 08  + ·  BOXI                    #
- #   09  + ·  MASTER             | 10  - ·  REX                     #
- #   11  - ·  ARGUMENT           | 12  - ·  FEED                    #
- #   13  - ·  SENTIATOR          | 14  - ·  NAVIGATOR               #
+ #   09  + ·  MASTER             | 10  - Ŋ  REX                     #
+ #   11  - Ŋ  ARGUMENT           | 12  - Ŋ  FEED                    #
+ #   13  - Ŋ  SENTIATOR          | 14  - ·  NAVIGATOR               #
  #   15  - ·  WARP               | 16  - ·  IDENTIFIKATION          #
- #   17  - ·  MCMD               | 18  - ·  DATEITYPEN              #
- #   19  - ·  RETRON             | 20  - ·  VATRON                  #
- #   21  - ·  KKIS               | 22  - ·  GENERALSCHALTUNG        #
+ #   17  - Ŋ  MCMD               | 18  - Ŋ  DATEITYPEN              #
+ #   19  - Ŋ  RETRON             | 20  - Ŋ  VATRON                  #
+ #   21  - Ŋ  KKIS               | 22  - Ŋ  GENERALSCHALTUNG        #
  #   23  - ·  NITROX             | 24  - Ŋ  SYNAPTOR                #
- #   25  - Ŋ  ZYTRON             | 29  - ·  HERZSCHLAG              #
+ #   25  - Ŋ  ZYTRON             | 26  - Ŋ  ICTUS                   #
+ #   27  - Ŋ  DETEKTOR           | 29  - ·  HERZSCHLAG              #
 ###==##==###======#####====PROGRAMMIERUNG======#####======###==##==###
  #   NR HINWEIS PROGRAMMIERUNG     | NR HINWEIS PROGRAMMIERUNG      #
  #:::::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::#
@@ -38,9 +39,9 @@
  #   93   L1_COREKERNELMANDAT                 #   #    #           #
  #   94   L2_AUTHORRIGHTS                     #     #      #       #
  #   95   L3_COMMERCIALLICENSING              #  PYLOVARA—SYSTEM©  #
- #   96   L4_AI_ADMINISTRATIONSMANDATE        #   #                #
+ #   96   L4_AI_ADMINISTRATIONSMANDATE        #   #         #      #
  #   97   L5_POST_MORTEM-CONTROL              #         #          #
- #   98   L6_IMMUTABLE_CORES_DEFINITION       #    #               #
+ #   98   L6_IMMUTABLE_CORES_DEFINITION       #    #          #    #
  #   99   LICENSE—MANIFEST.PROTO              #           #        #
 ###==##==###======#####=====VERSIONSDATEN======#####======###==##==###
  # SYSTEM = PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM                      #

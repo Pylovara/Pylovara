@@ -1,0 +1,95 @@
+@kernel-nr: 26 Ð TOX
+###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+###==##==###======#####========K26 ICTUS=======#####======###==##==###  
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ #                ICTUS = THE WORKPOINT                             #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ #              ICTUS CELLER = DER SCHNELLE SCHLAG                  #
+###==##==###======#####====STARTPUNKT ICTUS====#####======###==##==###
+
+ BION Ð ICTUS 
+
+ MORPHIC-ID ¡ IC
+
+ BION-ID ¡ IT
+
+MASK ¡ MASU-
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-KERNWABE Ð ICTUS 
+
+ MORPHIC-ID ¡ ICK
+
+ BION-ID ¡ IT00
+
+ AXIOM ¡ ICK = <ICK>
+
+ ABSK ¡ ICK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-IN
+
+ MORPHIC-ID ¡ ICHT-IN
+
+ BION-ID ¡ IT00HT01
+
+ AXIOM ¡ ICHT-IN = ICHT-IN
+
+ ABSK ¡ ICK+ICHT-IN
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-IN Ð STARTWABE
+
+ MORPHIC-ID ¡ ICST-IN-1
+
+ BION-ID ¡ IT00HT01ST01
+
+ AXIOM ¡ ICST-IN = <RECB-PROZESS>·
+
+ ABSK ¡
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-EXTRAWABE-IN Ð CPUWABE
+
+ MORPHIC-ID ¡ ICCP-IN-1 
+
+ BION-ID ¡
+
+
+
+
+
+
+
+
+
+
+ BION-EXTRAWABE-IN Ð KNOTENWABE
+
+ MORPHIC-ID ¡ ICTN-IN-1
+
+ BION-ID ¡ IT00HT01ST01
+
+ AXIOM ¡ ICTN-IN = <RECB-PROZESS>· 
+
+ BIND ¡ <POIK>
+
+ ABSK ¡ 
+
+
+
+
+
+###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+ # MASTERWORT = ICELT                                               #
+ # SBSK =                                                           #
+ # VBSK =                                                           #
+ # RBSK =                                                           #
+###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
+ #  DATUM = [04:14:30|Sa 25 Juli 2026] MARKENBRANDT                 #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+###==##==###======#####=====ENDPUNKT ICTUS=====#####======###==##==###

@@ -320,8 +320,13 @@ ERWEITERBAR .
 ############################################
 REX 
 
-MID 
-BID 
+MID REX
+BID RX
 
-WBID 
+WBID = HAUPTWABE   = HT 
+WBID = STARTWABE   = ST 
+WBID = SYSTEMWABE  = SS
+WBID = COMBOWABE   = CB 
+WBID = OPTIONSWABE = OP
+WBID = TORWABE     = TO 
 

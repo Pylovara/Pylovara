@@ -164,3 +164,59 @@ Geben Sie eine Zahl ein (Voreinstellung=1):  ']
 
  das ist das ziel und deswegen ist der rex so aufgebaut .
 
+
+
+
+¢! 
+ »—[~ ANSTEUERUNG-TERMINAL && SEND-BOXHT-SHELL ~]« 
+  ¬· »–[' sudo pacman -Syyu ']«
+      ¬·¤¤ »—[' [sudo] Passwort für bandino: ']« 
+            ¬· »—[~ SEND-BOXHT-SHELL ~]« 
+                ¬· »—[' <PASSWORD> ']«
+                         ¿¹
+                    ¬·¤¤ –[' :: Paketdatenbanken werden synchronisiert …
+ core                         126,7 KiB  71,5 KiB/s 00:02 [------------------------------] 100%
+ extra                          8,3 MiB  1250 KiB/s 00:07 [------------------------------] 100%
+ multilib                     127,2 KiB  63,5 KiB/s 00:02 [------------------------------] 100%
+:: Vollständige Systemaktualisierung wird gestartet …
+Abhängigkeiten werden aufgelöst …
+:: Es stehen 5 Anbieter für onnxruntime zur Verfügung:
+:: Repositorium extra
+   1) onnxruntime-cpu  2) onnxruntime-cuda  3) onnxruntime-opt-cuda  4) onnxruntime-opt-rocm
+   5) onnxruntime-rocm
+
+Geben Sie eine Zahl ein (Voreinstellung=1):  ']
+
+                     
+
+       ¿¹ 
+      »–[~ SEND-BOXHT-SHELL ~]«
+       ¬· »—[' <NR> ']«
+
+ !¢ 
+
+ ¢!
+ »—[' sudo pacman -Syyu ']«««~ SEND-COMPOSITOR ~« 
+ !¢
+
+ DANN GEHT HIER DAS TERMINAL AUF QUASI 
+
+ ----------------------------------------------
+ [sudo] Passwort für bandino: blabla 
+ :: Paketdatenbanken werden synchronisiert …
+ core                         126,7 KiB  71,5 KiB/s 00:02 [------------------------------] 100%
+ extra                          8,3 MiB  1250 KiB/s 00:07 [------------------------------] 100%
+ multilib                     127,2 KiB  63,5 KiB/s 00:02 [------------------------------] 100%
+ :: Vollständige Systemaktualisierung wird gestartet …
+ Abhängigkeiten werden aufgelöst …
+ :: Es stehen 5 Anbieter für onnxruntime zur Verfügung:
+ :: Repositorium extra
+   1) onnxruntime-cpu  2) onnxruntime-cuda  3) onnxruntime-opt-cuda  4) onnxruntime-opt-rocm
+   5) onnxruntime-rocm
+ ----$ 1 
+
+ usw , ganz normal im os ..
+
+ und das mit einer zeile MCS Code ... 
+
+ 

@@ -418,6 +418,83 @@ WICHTIG .....
 
 !¢
 
+
+nach dem umbau kann ich sogar sämtliche sachen in das cmd register verschieben und antriggern  
+
+
+¢! masstyp idee
+
+»—[ GEOMETRIE = <AUSWAHL> ]«««~ BAUMODUS-START && VERBINDE ~«
+ ¬· »—[ MASSENTYP = <AUSWAHL> ]«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+!¢
+
+es würden sich unzälige befehle für die genaue geometrie , zeit , kollision , punkte 
+und alles andere machen ..... pro obejekt ... sogar mit folge funktionen ..
+im grunde egal was .... nativ .... 
+
+ ««~ PHYSIK-KOLLISION-RIGIDBODY ~«
+ ««~ MATERIAL-MESSUNG-HOLZ ~«
+
+ und soweit ... 
+
+ »—[ GEOMETRIE = <AUSWAHL> ]«««~ BAUMODUS-START && VERBINDE ~«
+  # und ab hier alles möglich .. alles in einer transaktionrahmen block 
+  selbst ... gepaart mirt duzenden dateien ... gebünderld wiederum mit 
+  einem koordinations mcs code der nur einzelne gebaute daten läd im strang 
+
+  das wird extrem mächtig .... mächtig ist sogar noch untertrieben 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ¢!
 »—["TRANSAKTIONSRAHMEN"]«
 

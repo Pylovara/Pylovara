@@ -330,26 +330,20 @@ WBID = HAUPTWABE   = HT
 WBID = STARTWABE   = ST
 WBID = BLOCKWABE   = BK
 WBID = TORWABE     = TR 
-
+WBID = OPTIONSWABE = PT
 
 
 ------------------------
 #WBID = COMBOWABE   = CB 
-#WBID = OPTIONSWABE = PS
-#WBID = KNOTENWABE  = TN
---------------------------
+------------------------
 
 
 TH01 = REHT-PROZESS 
 ST01 = REST-PROZESS 
 BK01 = REBK-PROZESS
 TR01 = RETR-PROZESS
+PT01 = REPT-PROZESS
 
-
-
-TN02 = 
-TN03 = 
-TN04 = 
 
 ############################################
 ICTUS 

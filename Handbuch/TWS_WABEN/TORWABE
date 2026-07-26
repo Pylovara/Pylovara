@@ -1,0 +1,42 @@
+
+BION-EXTRAWABE-IN Ð TORWABE 
+
+ MORPHIC-ID ¡ <TOR-MORPHIC-ID>
+
+ BION-ID ¡ <TOR-BION-ID>
+
+ AXIOM ¡ <TOR-MORPHIC-ID> = <AUSGANGSPUNKT-SYMBOLIK>·<KERNWABEBINDUNG>
+
+ ABSK ¡ <ABSK-KETTE>+<TOR-MORPHIC-ID>
+
+ # Eingangsbindung (z.B. ICTN-IN-1..4 / RECB)
+ BIND ¡ <WABE-EINGANG-1>
+ BIND ¡ <WABE-EINGANG-2>
+ BIND ¡ <WABE-EINGANG-3>
+ BIND ¡ <WABE-EINGANG-4>
+
+ # Ausgangsbindung (z.B. ON-PIPE-PROTEIN -> BOXI)
+ LINK ¡ <WABE-AUSGANG-1> = <SYMBOLIK-1>
+ LINK ¡ <WABE-AUSGANG-2> = <SYMBOLIK-2>
+ LINK ¡ <WABE-AUSGANG-3> = <SYMBOLIK-3>
+ LINK ¡ <WABE-AUSGANG-4> = <SYMBOLIK-4>
+
+
+#######################################################
+
+ Info : Bindet und Verlinkt 
+
+ neue torwabe verbindet und verlinkt 
+
+ erst werden die waben eingangs morphic ids verbunden 
+
+ im ausgang kann dann eine andere komponente mit ihrer 
+ morphic id mit istgleich zum symbol oder strukur 
+ verbunden werden ... der verbundenen link 
+ wird dann nahtlos in die andere komponente 
+ übetragen und fügt sich nahtlos ein .. 
+
+ die alte torwabe wird umgebaut und anders verwendet 
+
+ 
+

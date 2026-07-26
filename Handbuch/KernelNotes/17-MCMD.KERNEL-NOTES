@@ -9,7 +9,7 @@
 
 BION Ð MCMD
 
- MORPHIC-ID ¡ MCD
+ MORPHIC-ID ¡ M
 
  BION-ID ¡ MC
 
@@ -19,31 +19,33 @@ MASK ¡ MASU-MCMD
 
 BION-KERNWABE Ð MCMD
 
- MORPHIC ¡ MCDK
+ MORPHIC ¡ MK
 
  BION-ID ¡ MC00
 
- AXIOM ¡ MCDK = <MCDK>
+ AXIOM ¡ MK = <MK>
 
- ABSK ¡ MCDK
+ ABSK ¡ MK
 
 ###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 ###==##==###======#####========================#####======###==##==###
 
-BION-MCDWABE Ð BEFEHLWABE 
+BION-MCMDWABE Ð BESTÄTIGUNG
 
- MORPHIC-ID ¡ 
+ MORPHIC-ID ¡ MCD
 
  BION-ID ¡ 
 
  AXIOM ¡ 
 
- ABSK ¡ 
+ ABSK ¡ MK+MCD-BESTÄTIGUNG
 
- BEFEHL ¡ 
+ BIND ¡ BOXHT-BOXI-MCMD
 
- SYSTEM-INPUT 
+ BEFEHL ¡ OK
+
+ SYSTEM-INPUT ¡
 
 
 

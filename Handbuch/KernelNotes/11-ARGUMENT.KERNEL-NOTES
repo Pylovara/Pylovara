@@ -4,8 +4,7 @@
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
  #      ARGUMENT = LOGIC OPERATOR CONTROL MANAGMENT SYSTEM           #
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- # --  AR00HT01 = BEFEHLE (DIRECT CONTROL ROUTE)
- # --  AR00HT02 = MCMD BYPASS & CONTROL PIPELINE
+ # --  AR00HT01 = BEFEHLE (DIRECT CONTROL ROUTE VIA MCMD)           #
 ###==##==###======#####==STARTPUNKT ARGUMENT===#####======###==##==###
 
 BION Ð ARGUMENT 
@@ -78,13 +77,13 @@ BION-EXTRAWABE-BEFEHL Ð ENDWABE
 
  AXIOM ¡ ARGLE-BEFEHL = ««<BOXH-BOXI-MCMD>«
 
- ABSK ¡ ARGK+ARGHT-BEFEHL+ARGST-BEFEHL+ARGSP-BEFEHL-BOXK+ARGLE-BEFEHL
+ ABSK ¡ ARGK+ARGHT-BEFEHL+ARGST-BEFEHL+ARGCB-BEFEHL-BOXK+ARGLE-BEFEHL
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
 ###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
  # MASTERWORT = ARGELT
- SBSK = ARGK+ARGHT-BEFEHL+ARGST-BEFEHL+ARGCB-BEFEHL-BOXK+ARGLD-BEFEHL
- VBSK = ARGSP-BEFEHL-BOXK
+ SBSK = ARGK+ARGHT-BEFEHL+ARGST-BEFEHL+ARGCB-BEFEHL-BOXK+ARGLE-BEFEHL
+ VBSK = ARGCB-BEFEHL-BOXK
  RBSK = ARGK
 ###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
  #  DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT                  #

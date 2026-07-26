@@ -1,19 +1,19 @@
-@kernel-nr: 26 Ð TOX
+@kernel-nr: 26 Ð ICTUS
 ###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
 ###==##==###======#####========K26 ICTUS=======#####======###==##==###  
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #                ICTUS = THE WORKPOINT                             #
+ #                ICTUS = THE WORKPOINT FOR PROZESSING              #
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
  #              ICTUS CELLER = DER SCHNELLE SCHLAG                  #
 ###==##==###======#####====STARTPUNKT ICTUS====#####======###==##==###
 
- BION Ð ICTUS 
+BION Ð ICTUS 
 
  MORPHIC-ID ¡ IC
 
  BION-ID ¡ IT
 
-MASK ¡ MASU-
+MASK ¡ MASU-ICTUS
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
@@ -47,7 +47,10 @@ BION-EXTRAWABE-IN Ð STARTWABE
 
  BION-ID ¡ IT00HT01ST01
 
- AXIOM ¡ ICST-IN = <RECB-PROZESS>·
+ AXIOM ¡ ICST-IN = ·
+ AXIOM ¡ ICST-IN = ·· 
+ AXIOM ¡ ICST-IN = ···
+ AXIOM ¡ ICST-IN = ····
 
  ABSK ¡ ICK+ICHT-IN+ICST-IN
 
@@ -55,57 +58,57 @@ BION-EXTRAWABE-IN Ð STARTWABE
 
  BION-EXTRAWABE-IN Ð KNOTENWABE
 
- MORPHIC-ID ¡ ICTN-IN-1
+ MORPHIC-ID ¡ ICTN-IN1
 
- BION-ID ¡ IT00HT01ST01
+ BION-ID ¡ IT00HT01ST01TN01
 
  AXIOM ¡ ICTN-IN = <REBK-PROZESS>· 
 
- BIND ¡ <POIHT-ON-PIPE>
+ BIND ¡ <RETR-PROZESS>
 
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-1
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN1
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
  BION-EXTRAWABE-IN Ð KNOTENWABE
 
- MORPHIC-ID ¡ ICTN-IN-2
+ MORPHIC-ID ¡ ICTN-IN2
 
- BION-ID ¡ IT00HT01ST02
+ BION-ID ¡ IT00HT01ST01TN02
 
  AXIOM ¡ ICTN-IN = <REBK-PROZESS>··
 
- BIND ¡ <POIHT-ON-PIPE>
+ BIND ¡ <RETR-PROZESS>
 
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-2
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN2
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
  BION-EXTRAWABE-IN Ð KNOTENWABE
 
- MORPHIC-ID ¡ ICTN-IN-3
+ MORPHIC-ID ¡ ICTN-IN3
 
- BION-ID ¡ IT00HT01ST03
+ BION-ID ¡ IT00HT01ST01TN03
 
  AXIOM ¡ ICTN-IN = <REBK-PROZESS>···
 
- BIND ¡ <POIHT-ON-PIPE>
+ BIND ¡ <RETR-PROZESS>
 
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-3
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN3
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
  BION-EXTRAWABE-IN Ð KNOTENWABE
 
- MORPHIC-ID ¡ ICTN-IN-4
+ MORPHIC-ID ¡ ICTN-IN4
 
- BION-ID ¡ IT00HT01ST04
+ BION-ID ¡ IT00HT01ST01TN04
 
  AXIOM ¡ ICTN-IN = <REBK-PROZESS>····
 
- BIND ¡ <POIHT-ON-PIPE>
+ BIND ¡ <RETR-PROZESS>
 
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-4
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN4
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
@@ -113,31 +116,31 @@ BION-EXTRAWABE-IN Ð LINKENDWABE
 
  MORPHIC-ID ¡ ICLD-IN
 
- BION-ID ¡ IT00HT01ST01ED01
- BION-ID ¡ IT00HT01ST02ED02
- BION-ID ¡ IT00HT01ST03ED03
- BION-ID ¡ IT00HT01ST04ED04
+ BION-ID ¡ IT00HT01ST01TN01LD01
+ BION-ID ¡ IT00HT01ST01TN02LD02
+ BION-ID ¡ IT00HT01ST01TN03LD03
+ BION-ID ¡ IT00HT01ST01TN04LD04
 
- AXIOM ¡ ICST-IN = ICTN-IN-1-POIK
- AXIOM ¡ ICST-IN = ICTN-IN-2-POIK
- AXIOM ¡ ICST-IN = ICTN-IN-3-POIK
- AXIOM ¡ ICST-IN = ICTN-IN-4-POIK
+ AXIOM ¡ ICTN-IN1 = ICLD-IN
+ AXIOM ¡ ICTN-IN2 = ICLD-IN
+ AXIOM ¡ ICTN-IN3 = ICLD-IN
+ AXIOM ¡ ICTN-IN4 = ICLD-IN
 
- LINK ¡ REBK-PROZESS = ICTN-IN-1
- LINK ¡ REBK-PROZESS = ICTN-IN-2
- LINK ¡ REBK-PROZESS = ICTN-IN-3
- LINK ¡ REBK-PROZESS = ICTN-IN-4
+ LINK ¡ REBK-PROZESS = ICTN-IN1
+ LINK ¡ REBK-PROZESS = ICTN-IN2
+ LINK ¡ REBK-PROZESS = ICTN-IN3
+ LINK ¡ REBK-PROZESS = ICTN-IN4
 
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-1+ICLD-IN
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-2+ICLD-IN
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-3+ICLD-IN
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN-4+ICLD-IN
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN1+ICLD-IN
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN2+ICLD-IN
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN3+ICLD-IN
+ ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN4+ICLD-IN
 
 ###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
  # MASTERWORT = ICELT                                               #
- # SBSK =                                                           #
+ SBSK = ICK+ICHT-IN+ICST-IN+ICTN-ICELT+ICLD-IN                      #
  # VBSK =                                                           #
- # RBSK =                                                           #
+ RBSK = ICK                                                         #
 ###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
  #  DATUM = [04:14:30|Sa 25 Juli 2026] MARKENBRANDT                 #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

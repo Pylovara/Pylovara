@@ -63,14 +63,34 @@
 
 ###====================================|====================================###
 
+ WABEN-KATEGORIE Ð COMBOWABE 
 
+ PROGRAMM ¡ <BEZIFFERUNGSNAME-NAMEN>
 
+ WABEN-ID ¡ CB
 
+ BION-ZIFFER ¡
 
+ BION-ID ¡
 
+ GBSK ¡
 
+ ABSK ¡
+
+ PROGRAMMIERUNGSBEREICH ↓ 
+ LINK ¡ PIK
+ LINK ¡ BXK
+
+ AXIOM ¡ LINK ≠ PIHT-ON-PIPE + BXK ≠ COMBINIERT  
+ AXIOM ¡ COMBINIERT ¡ —[<BXK>
 
 ###====================================|====================================###
+
+
+
+
+
+
 ###====================================|====================================###
 ###====================================|====================================###
 ###====================================|====================================###
@@ -83,18 +103,6 @@
 
 
 !!!! ↓↓↓↓ ALTER BEREICH ↓↓↓↓↓ !!!!!!!
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-RUNTIME Ð STARTWABE
-
- MORPHIC-ID ¡ TAST-RUNTIME
-
- BION-ID ¡ TA01HT01ST01
-
- AXIOM ¡ TAST-RUNTIME = ¢!
-
- ABSK ¡ TAK+TAHT-RUNTIME+TAST-RUNTIME
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

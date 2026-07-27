@@ -57,6 +57,33 @@ BID = BION-ID = <BBSK>
 # BION-ID ABKÜRZUNGS-STRUKTUR
 WBID = WABEN-BION-ID = <NAMEN> + <WBBSK>
 ############################################
+TRANSAKTIONSRAHMEN 
+
+MID = TA
+BID = TA01
+
+WBID = HAUPTWABE = HT
+WBID = STARTWABE = ST
+WBID = COMBOWABE = CB
+WBID = ENDWABE   = ED 
+
+HT01 = TAHT-RUNTIME 
+ST01 = TAST-RUNTIME
+CB01 = TACB-RUNTIME-MASK
+CB02 = TACB-RUNTIME-POIK
+ED01 = TAED-RUNTIME
+ED02 = TAED-RUNTIME
+
+############################################
+
+
+
+
+
+############################################
+  !!!--- ↓↓ überarbeitungsbereich ↓↓ !!!
+
+
 DATENTYPEN  
 
 MID = DA
@@ -91,22 +118,7 @@ TP24 = DATTP-SYN
 TP25 = DATTP-ZYT
 
 ############################################
-TRANSAKTIONSRAHMEN 
 
-MID = TA
-BID = TA02
-
-WBID = HAUPTWABE = HT
-WBID = STARTWABE = ST
-WBID = COMBOWABE = CB
-WBID = ENDWABE   = ED 
-
-HT01 = TAHT-RUNTIME 
-ST01 = TAST-RUNTIME
-CB01 = TACB-RUNTIME-MASK
-CB02 = TACB-RUNTIME-POIK
-ED01 = TAED-RUNTIME
-ED02 = TAED-RUNTIME
 
 
 ############################################

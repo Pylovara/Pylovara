@@ -122,8 +122,19 @@ CB01 = POCB-HARDWARE-BIK
 SS02 = POSS-HARDWARE-WERT
 ED01 = POED-HARDWARE
 
+############################################
+TRENNBEFEHL 
 
+MID = TE
+BID = TE04
 
+WBID = HAUPTWABE = HT 
+WBID = STARTWABE = ST 
+WBID = ENDWABE   = ED 
+
+HT01 = TEHT-WAND
+ST01 = TEST-WAND
+ED01 = TEED-WAND
 
 
 
@@ -172,18 +183,7 @@ TP24 = DATTP-SYN
 TP25 = DATTP-ZYT
 
 ############################################
-TRENNBEFEHL 
 
-MID = TE
-BID = TE05 
-
-WBID = HAUPTWABE = HT 
-WBID = STARTWABE = ST 
-WBID = ENDWABE   = ED 
-
-HT01 = TEHT-WAND
-ST01 = TEST-WAND
-ED01 = TEED-WAND
 
 ############################################
 BINDUNGSBEFEHL 

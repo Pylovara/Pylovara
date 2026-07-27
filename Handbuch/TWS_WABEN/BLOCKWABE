@@ -28,10 +28,10 @@ BION-EXTRAWABE-[BEREICH] Ð BLOCKWABE
  AXIOM ¡ SYNTAX-ERLAUBNIS ¡ ^
  AXIOM ¡ ^ 3ZYKLUS-OUT: £<NR>‹
  AXIOM ¡ ^ 3ZYKLUS-OUT: £<NR>›
- AXIOM ¡ ^        1SYNC: <SYNK>
- AXIOM ¡ ^        2KOPF: ÷
- AXIOM ¡ ^       1START: —[
- AXIOM ¡ ^        2FOOD: ±
+ AXIOM ¡ ^       1SYNC: <SYNK>
+ AXIOM ¡ ^       2KOPF: ÷
+ AXIOM ¡ ^      1START: —[
+ AXIOM ¡ ^       2FOOD: ±
  AXIOM ¡ ^  3ZYKLUS-IN: £<NR>‹
  AXIOM ¡ ^  3ZYKLUS-IN: £<NR>›
  AXIOM ¡ ^        5REK: ¬
@@ -40,23 +40,23 @@ BION-EXTRAWABE-[BEREICH] Ð BLOCKWABE
  AXIOM ¡ ^        5REK: ¬
  AXIOM ¡ ^        4SEN: ¶
  AXIOM ¡ ^        4SEN: ¶¶
- AXIOM ¡ ^        6FREE: 
+ AXIOM ¡ ^       6FREE: 
 
  # BION-SYNTAX-BAUM (STRUKTURELLE KASKADE)
  AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYTK>
- AXIOM ¡ ^        1SYNC: <SYNK>
- AXIOM ¡ ^        2KOPF: <NITK>
- AXIOM ¡ ^       1START: <[PREFIX]-PIPE>
- AXIOM ¡ ^        2FOOD: <NITK>
- AXIOM ¡ ^  3ZYKLUS-IN: <ZYTK>
+ AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYK>
+ AXIOM ¡ ^       1SYNC: <SYK>
+ AXIOM ¡ ^       2KOPF: <NIK>
+ AXIOM ¡ ^      1START: <[PREFIX]-PIPE>
+ AXIOM ¡ ^       2FOOD: <NIK>
+ AXIOM ¡ ^  3ZYKLUS-IN: <ZYK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        4SEN: <SENK>
- AXIOM ¡ ^        4SEN: <SENK>
- AXIOM ¡ ^        6FREE: <REK>
+ AXIOM ¡ ^        4SEN: <SEK>
+ AXIOM ¡ ^        4SEN: <SEK>
+ AXIOM ¡ ^       6FREE: <REK>
 
  # BRÜCKEN-STEUERUNG (IN / IO / OUT PIPELINE ROUTING)
  BRÜCKEN-IN ¡ <ZYTK>
@@ -65,15 +65,15 @@ BION-EXTRAWABE-[BEREICH] Ð BLOCKWABE
 
  BRÜCKEN-IO ¡ [PREFIX]-PIPE
 
- BRÜCKEN-OUT ¡ <NITK>
- BRÜCKEN-OUT ¡ <ZYTK>
+ BRÜCKEN-OUT ¡ <NIK>
+ BRÜCKEN-OUT ¡ <ZYK>
  BRÜCKEN-OUT ¡ <REK>
  BRÜCKEN-OUT ¡ <REK>
  BRÜCKEN-OUT ¡ <REK>
  BRÜCKEN-OUT ¡ <REK>
  BRÜCKEN-OUT ¡ <REK>
- BRÜCKEN-OUT ¡ <SENK>
- BRÜCKEN-OUT ¡ <SENK>
+ BRÜCKEN-OUT ¡ <SEK>
+ BRÜCKEN-OUT ¡ <SEK>
 
 ###==##==###======#####========================#####======###==##==###
  # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/

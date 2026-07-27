@@ -1,99 +1,62 @@
-﻿@kernel-nr: lex Ð SYSTEM-LEXIKON #   ##  ##  #   # #  #  #  # 源真理 #
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==========================================================================###
-#######################################==#######################################
-################################################################################
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #     · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
- #           + AKTIV  | - NICHT AKTIV  | X = TEIL-VOLLSTÄNDIG       #
-###==##==###======#####======KOMPONENTEN=======#####======###==##==###
- #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
- #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   01  - -  TRANSAKTIONSRAHMEN | 02  - -  PROTEIN                 #
- #   03  - -  PROTON             | 04  - -  TRENNBEFEHL             #
- #   05  - -  BINDUNGSBEFEHL     | 06  - -  AKTIONSDRAHT            #
- #   07  - -  ICTUS              | 08  - -  BOXI                    #
- #   09  - -  REX                | 10  - -  ARGUMENTEN              #
- #   11  - -  NITROX             | 12  - -  FEED                    #
- #   13  - -  SYNAPTOR           | 14  - -  ZYTRON                  #
- #   15  - -  SENTIATOR          | 16  - -                          #
- ###==##==###======#####====SYSTEM-ELEMENTE====#####======###==##==###
- #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
- #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   30  - -  VATRON             | 31  - -  RETRON                  #
-###==##==###======#####=======REGISTER=========#####======###==##==###
- #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
- #::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::#
- #   40  - -  DATENTYPEN         | 41  - -  NAVIGATOR               #
- #   42  - -  IDENTIFIKATION     | 43  - -  KKIS                    #
- #   44  - -  GENERALSCHALTUNG   | 45  - -  MCD                     #
- #   46  - -  MASTER             | 47  - -                          #
-###==##==###======#####====PROGRAMMIERUNG======#####======###==##==###
- #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
- #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   50  - -  ABSOLULATOR        | 51  - -   WABINATOR              #
- #   52  - -  MODULATOR          | 53  - -   CHIPONATOR             #
- #   54  - -  MORPHIC            | 55  - -   DETEKTOR               #
- #   56  - -  HERZSCHLAG         | 57  - -                          #
-###==##==###======#####====SYSTEM-LOGIKEN======#####======###==##==###
- #   NR HINWEIS NAMEN                                               #
- #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::#
- #   80   - -  TWS THE-WABE-NEST-SYSTEM                             #
- #   81   - -  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                 #
-###==##==###======#####=======LIZENZEN=========#####======###==##==###
- #   93   L1_COREKERNELMANDAT                  # # #    #     #     #
- #   94   L2_AUTHORRIGHTS                      #     #      #   #   #
- #   95   L3_COMMERCIALLICENSING               #  PYLOVARA—SYSTEM©  #
- #   96   L4_AI_ADMINISTRATIONSMANDATE         #   #         #      #
- #   97   L5_POST_MORTEM-CONTROL               #     #   #       #  #
- #   98   L6_IMMUTABLE_CORES_DEFINITION        #    #   #      #    #
- #   99   LICENSE—MANIFEST.PROTO               # #         #        #
-###==##==###======#####=====VERSIONSDATEN======#####======###==##==###
- # SYSTEM = PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM                      #
- # PROGRAMMIERSPRACHE = MCS 7.4 | MASCHINEN-CODE-SPEECH             #
- # KERNELSPRACHE  = TWS 0.2 | THE-WABE-NEST-SYSTEM                  #
- # TASTATURSTANDARD = UTF -8 DEUTSCHER-STANDARD                     #
- # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                     #
- # LIZENSEN = LV 1.3 LIZENSVERTRAG                                  #
- # SINGLE SOURCE OF TRUTH § SSoT LEXIKON VERSION 00.82              #
-###==##==###======#####====IMPRESSUM DATEN=====#####======###==##==###
- # AUTOR = OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68 Since 2025          #
- # STANDORT = /Pylovara/Handbuch/KernelNotes/                       #
- # STATUS = VOLLSTÄNDIGE-ROLLENDE-VERBESSERUNGEN                    #
- # PDF NAMENSLAYER = PYLOVARA-SYSTEM-SSoT-XX.XX.pdf                 #
- # GARANTIERTE BERUFSERFAHRUNG = PYLOVARA-NETZWERK-SYSTEM           #
-###==##==###======#####======LEXIKON ENDE======#####======###==##==###
-
-#######################################==#######################################
-###=============================PYLOVARA-SYSTEM==============================###
-#######################################==#######################################
-
-
-
-
-
-
-
-
-
-
-
-!!! - Daten wurden ausgelagert um den kern selbst lauffähig 
-      hochzuziehen 
-      die komponenten seiten werden jetzt nach reihe eingearbeitet 
-      ich bitte um gedult .... 
-
-!!! - gesamte neu aufbau ... wollte glatt ziehen lassen die nummern 
-      und dann passierte es ... 
-
-      es gelten nur + makierte seiten als vollständig glatt gezogen 
-      alles andere ist momentan wirrwarr 
-
-      da ich jede komponente selbst geschrieben habe , wird die arbeit 
-      nur eine frage der arbeits geschwindigkeit 
-
-      ich bitte um geduld und in zuckunft wird das nicht mehr 
-      in erwägung gezogen .. 
-
-      das war mir eine lehre ! ( gleich beim ersten mal versuchen 
-      direkt so ein misst )
+﻿@kernel-nr: lex Ð SYSTEM-LEXIKON #                                   # 源真理 #
+###LEXIKON NAVIGATION TERMINAL = kernel lex=================================###
+###============================PYLOVARA-SYSTEM==============================###
+ #          · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND          #
+ #              + AKTIV  | - NICHT AKTIV  | X = TEIL-VOLLSTÄNDIG             #
+###==============================KOMPONENTEN================================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
+ #   01  - -  TRANSAKTIONSRAHMEN       | 02  - -  PROTEIN                    #
+ #   03  - -  PROTON                   | 04  - -  TRENNBEFEHL                #
+ #   05  - -  BINDUNGSBEFEHL           | 06  - -  AKTIONSDRAHT               #
+ #   07  - -  ICTUS                    | 08  - -  BOXI                       #
+ #   09  - -  REX                      | 10  - -  ARGUMENTEN                 #
+ #   11  - -  NITROX                   | 12  - -  FEED                       #
+ #   13  - -  SYNAPTOR                 | 14  - -  ZYTRON                     #
+ #   15  - -  SENTIATOR                | 16  - -                             #
+###=============================SYSTEM-ELEMENTE=============================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
+ #   30  - -  VATRON                   | 31  - -  RETRON                     #
+###=================================REGISTER================================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
+ #   40  - -  DATENTYPEN               | 41  - -  NAVIGATOR                  #
+ #   42  - -  IDENTIFIKATION           | 43  - -  KKIS                       #
+ #   44  - -  GENERALSCHALTUNG         | 45  - -  MCD                        #
+ #   46  - -  MASTER                   | 47  - -                             #
+###===============================PROGRAMMIERUNG============================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
+ #   50  - -  ABSOLULATOR              | 51  - -   WABINATOR                 #
+ #   52  - -  MODULATOR                | 53  - -   CHIPONATOR                #
+ #   54  - -  MORPHIC                  | 55  - -   DETEKTOR                  #
+ #   56  - -  HERZSCHLAG               | 57  - -                             #
+###==============================SYSTEM-LOGIKEN=============================###
+ #   NR HINWEIS NAMEN                                                        #
+ #:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::#
+ #   80   - -  TWS THE-WABE-NEST-SYSTEM                                      #
+ #   81   - -  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                          #
+###=================================LIZENZEN================================###
+ #   93   L1_COREKERNELMANDAT                       #                        #
+ #   94   L2_AUTHORRIGHTS                           #                        #
+ #   95   L3_COMMERCIALLICENSING                    #    PYLOVARA—SYSTEM©    #
+ #   96   L4_AI_ADMINISTRATIONSMANDATE              #                        #
+ #   97   L5_POST_MORTEM-CONTROL                    #                        #
+ #   98   L6_IMMUTABLE_CORES_DEFINITION             #              #         #
+ #   99   LICENSE—MANIFEST.PROTO                    #                        #
+###===============================VERSIONSDATEN=============================###
+ # SYSTEM = PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM                               #
+ # PROGRAMMIERSPRACHE = MCS 7.4 | MASCHINEN-CODE-SPEECH                      #
+ # KERNELSPRACHE  = TWS 0.2 | THE-WABE-NEST-SYSTEM                           #
+ # TASTATURSTANDARD = UTF -8 DEUTSCHER-STANDARD                              #
+ # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                              #
+ # LIZENSEN = LV 1.3 LIZENSVERTRAG                                           #
+ # SINGLE SOURCE OF TRUTH § SSoT LEXIKON VERSION 00.82                       #
+###=================================IMPRESSUM===============================###
+ # AUTOR = OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68                              #
+ # STANDORT = /Pylovara/Handbuch/KernelNotes/       GITHUB                   #
+ # STATUS = VOLLSTÄNDIGE-ROLLENDE-VERBESSERUNGEN      PYLOVARA SYSTEM        #
+ # PDF NAMENSLAYER = PYLOVARA-SYSTEM-SSoT-XX.XX.pdf           Since 2025     #
+ # GARANTIERTE BERUFSERFAHRUNG = PYLOVARA-NETZWERK-SYSTEM                    #
+###===============================LEXIKON-ENDE==============================###

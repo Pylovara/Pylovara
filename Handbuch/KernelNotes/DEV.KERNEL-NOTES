@@ -47,7 +47,6 @@ Der Pylovara-Fahrplan
         3. welcher waben typ und welche kennung 
         inklusive welche hauptwabe , in dem fall ht = hauptwabe 2
 
-        
 [ ] BLOCKWABE einbauen , seitenweise .
 
 [ ] 031 WABINATOR ÜBERARBEITEN
@@ -72,118 +71,37 @@ Der Pylovara-Fahrplan
 [ ] Vollends reinkommen und Kurs auf die 00-83 nehmen.
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
- EXTREM WICHTIG VORANGIG VOR ALLEM : 
+WARP = 
 
- ALLE KOMPONENTEN HEADER : 
- BION Ð * <----!!!!! 
- BRAUCHEN EINEN ANDERE HEADERINFO KENNUNG !!! 
- LIEGT OBERHALB DER KERNWABE 
- KERNWABE BEKOMMT MASK  
- HEADER WERDEN ALS BEZEICHNUNG GENOMMEN 
- KERNWABE WIRD STARTPUNKT 
- HEADER INFO FÄLLT IN DEN BEREICH 
- KOPFNOTIZ 
- SEITENWEISE !!!!! 
- WABONATOR BEKOMMT MASTER KONTROLL 
- ALLE PUNKTE WERDEN EXPLIZIT 
- WABINATOR BEKOMMT WABENTRÄGER 
- WABINATOR BEKOMMT ZUGRIFF AUF WABEN-TYPEN 
- WABINATOR BEKOMMT HARDWARE BINDUNG 
- WABINATOR BEKOMMT ERSTMAL 86_64 BINDUNG 
- VOM WABINATOR AUS WIRD ALLES ERNEUERT 
+ DA MCS IM GRUNDE ALLES TRAGEN KANN UND NATIV ÜBERSETZEN ,
 
----------------- 
-
-!- X. OPTIONSWABE - VIELLEICHT EHER 
-
-STARWABE - REX - ¬
-
-OPTION - FLÄCHE - ·/··/···/····/USW
-
----------------
-
-OPTION ¤ LINKERWABE :  # PROTEIN - MONITORING
-OPTION ¤ LINKERWABE =  # PROTEIN - TARGET 
+ WIRD DER WARP ÜBERFLÜSSIG ....
 
 
- sortierungs spalte : 
+ WARUM MCS ALLES EMULIEREN KANN UND DER WARP ÜBERFLÜSSIG IST :
 
-MASTER-CONTROL - TWS 
+ Direkter Hardware- & Befehlssatzzugriff:
+ MCS sitzt als Steuerungsschicht nah an den Kernressourcen und den Logik-Toren. 
+ Wenn MCS fremde Systembefehle oder Protokolle direkt auf Pylovara-Instruktionen übersetzt 
+ (Translation-Layer), brauchst du kein "Paket-Verknüpfer-Medium" dazwischen.
 
- 1. WABINATOR - MASTER-CONTROL-WABE - MASTER-CONTROL 
+Vermeidung von Protokoll-Overhead:
+Proton und Wine übersetzen Systemaufrufe (z.B. Direct3D zu Vulkan, Win32 zu POSIX) in Echtzeit. 
+Wenn WARP nur als zusätzliche Zwischenschicht dient, um Pakete zu schnüren und weiterzuleiten, 
+erzeugst du eine doppelte Abstraktion. MCS kann diese Übersetzungs-Matrix direkt über eigene 
+Waben/Schaltungen verarbeiten.
 
----------------
+Geringere Latenz & Redundanz:
+Jede Schnittstelle kostet Zyklen. Wenn MCS die Logik der Fremdsysteme nativ versteht oder 
+über entsprechende Sub-Module direkt interpretiert, sparst du dir die komplette 
+Synchronisations-Logik zwischen WARP und MCS.
 
- EINZEL TRÄGER - ALLINONE 
+INLUSIVE VERSCHWINDEN EINIGE MEINER DATEN ZURÜCK AUF DIE EXTERNE FESTPLATTE 
+UM SIE SPÄTER WIEDER EINZUGLIEDERN ...
 
- 2. DATENTYPEN  - DATENTYPWABE
- X. MASTERWABE  - MASTER TRÄGER 
- X. MORPHICWABE - GENERALSCHALTUNG *ELT
-
- -------------- 
-
- GESAMMT TRÄGER - KOMPONENTE
-
- 3. KERNWABE - ALLES
-
-----------------
-
- PROGRAMM TRÄGER - TRÄGER
-
- 4. HAUPTWABE - PROGRAMM TRÄGER - WABEN BINDUNG - ID 
-
-----------------
-
-ERKENNUNGS TRÄGER - ABLAUF 
-
- 5. STARTWABE - START (VERSCHMELZE MIT BLOCKWABE)
- #. ?
- 7. ENDWABE - DIREKT ENDE 
- 8. LINKENDWABE - ENDE MIT WEITERVERLINKUNG 
-
-----------------
-#.? optionswabe bleibt 
-----------------
-
-EINSATZTRÄGER - PLUG IN 
-
- 9. SYSTEMWABE
-10. TORWABE
-11. COMBOWABE 
-12. INFOWABE 
-
------------------ 
-
-PROZESSTRÄGER - TASK 
-
- X. IDLEWABE 
- X. PROZESSWABE
- 
------------------ 
-
-DATEITYPENTRÄGER - 
-
-NOTIZ : 
-
-ICH SCHMEISS WARSCHEINS DIE NIDUS NODUS NEXUS SACHE WIEDER RAUS 
-UND KEHRE ZU NEEDLES MICRO NANO NODES CORE ZURÜCK 
-DA DANN DIE ERWEITERUNGEN FÜR VIS SOUND BILD ETC BESSER IST 
-
-ODER ICH KNOTE SIE ALLE SAMMT AN NODUS 
-LASS NEXUS DIE HARDWARE BINDUNG 
-UND NIDUS IST DIE EXE/BIN DATEI ZUM STARTEN 
-
-DARÜBER DENK ICH SPÄTER NACH .... 
-
-GOOGLE NANNTE EXE = "APP" 
-MICROSOFT BLIEB BEI = EXE(CUTE)
-APPLE MACHTE = DMG 
-
-LINUX MACHTE ZUVIEL .... 
-
-ICH DENK DARÜBER NOCH MAL NACH ....
-BIS DORT HIN SCHMEIS ICH DIE DATEITYPEN WABEN RAUS ... NICHT SO 
-WICHTIG .....
+UMSTELLUNG DER SEITEN FÜR MCS KOMPONENTE 
+UMSTELLUNG DER BROSCHÜREN ( EINIGE AUF FESTPLATTE ZURÜCK ) 
+UMSTELLUNG DER REIHENFOLGE 
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 # PATCH LIKSTE :

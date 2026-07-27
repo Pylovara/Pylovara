@@ -335,7 +335,7 @@ SU99 = LIZENZ-MANIFEST
 REX 
 
 MID = RE
-BID = RX
+BID = RX 00
 
 WBID = HAUPTWABE      = HT 
 WBID = STARTWABE      = ST
@@ -359,7 +359,7 @@ ED03 = REED-PROZESS
 ICTUS 
 
 MID = IC
-BID = IT
+BID = IT 00
 
 WBID = HAUPTWABE   = HT 
 WBID = STARTWABE   = ST 
@@ -382,7 +382,7 @@ LD04 = ICLD-IN
 ARGUMENT 
 
 MID = ARG
-BID = AR 
+BID = AR 00
 
 WBID = HAUPTWABE      = HT 
 WBID = STARTWABE      = ST
@@ -398,7 +398,7 @@ ED01 = ARGED-BEFEHL
 FEED 
 
 MID = F
-BID = 
+BID = FD 00
 
 
 WBID = HAUPTWABE   = HT
@@ -419,12 +419,25 @@ CB02 = FCB-TRAGEND-BOXHT-BOXI-CACHE
 SS02 = FSS-TRAGEND-NR
 LD02 = FLD-FÜHREND 
 
-!- muss noch systemwaben verbesserungen 
-   haben aber feinschliff 
-
-   linkendwabe später mit nitrox verbinden
-
-erstmal ein nickerchen , seid gestern 21 uhr 
-wach 
-
 ############################################
+SENTIATOR 
+
+MID = SE
+BID = SE 00
+
+WBID = HAUPTWABE = HT 
+WBID = STARTWABE = ST 
+WBID = BLOCKWABE = BK
+WBID = COMBOWABE = CB
+
+HT01 = SEHT-WENN
+ST01 = SEST-WENN
+BK01 = SEBK-WENN
+CB01 = SECB-WENN
+LD01 = SELD-WENN
+
+HT02 = SEHT-NICHT
+ST02 = SEST-NICHT
+BK02 = SEBK-NICHT
+CB02 = SECB-NICHT
+LD02 = SELD-NICHT

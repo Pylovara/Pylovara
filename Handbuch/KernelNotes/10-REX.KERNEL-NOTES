@@ -2,7 +2,7 @@
 ###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
 ###==##==###======#####=========K10 REX========#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #       REX = THE CONTROL FILE AND PROZESS MANAGMENT SYSTEM        #
+ #        REX = THE CONTROL FILE AND PROZESS MANAGMENT SYSTEM        #
 ###==##==###======#####=====STARTPUNKT REX=====#####======###==##==###
 
 BION Ð REX 
@@ -15,7 +15,7 @@ MAK ¡ MASU-REX
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-KERNWABE ¡ REX 
+BION-KERNWABE Ð REX 
 
  MORPHIC-ID ¡ REK
 
@@ -41,7 +41,7 @@ BION-HAUPTWABE Ð EXTRAWABE-PROZESS
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRWABE-PROZESS Ð STARTWABE
+BION-EXTRAWABE-PROZESS Ð STARTWABE
 
  MORPHIC-ID ¡ REST-PROZESS
 
@@ -72,21 +72,21 @@ BION-EXTRAWABE-PROZESS Ð BLOCKWABE
  AXIOM ¡ ^        5REK: ¬
 
  AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYTK>
- AXIOM ¡ ^       1SYNC: <SYNK>
- AXIOM ¡ ^       2KOPF: <NITK>
- AXIOM ¡ ^      1START: <POIST-ON-PIPE-PIPE>
- AXIOM ¡ ^       2FOOD: <NITK>
- AXIOM ¡ ^  3ZYKLUS-IN: <ZYTK>
+ AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYK>
+ AXIOM ¡ ^       1SYNC: <SYK>
+ AXIOM ¡ ^       2KOPF: <NIK>
+ AXIOM ¡ ^      1START: <POICB-ON-PIPE>
+ AXIOM ¡ ^       2FOOD: <NIK>
+ AXIOM ¡ ^  3ZYKLUS-IN: <ZYK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        4SEN: <SENK>
- AXIOM ¡ ^        4SEN: <SENK>
+ AXIOM ¡ ^        4SEN: <SEK>
+ AXIOM ¡ ^        4SEN: <SEK>
  AXIOM ¡ ^       6FREE: <REK>
 
- BRÜCKE-IO ¡ POIST-ON-PIPE-PIPE
+ BRÜCKE-IO ¡ POIST-ON-PIPE
 
  BRÜCKE-OUT ¡ <REK>
  BRÜCKE-OUT ¡ <REK>
@@ -173,7 +173,7 @@ BION-EXTRAWABE-PROZESS Ð TORWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRWABE-PROZESS Ð ALUBACKWABE
+BION-EXTRAWABE-PROZESS Ð ALUBACKWABE
 
  MORPHIC-ID ¡ REAL-PROZESS
 
@@ -233,7 +233,7 @@ BION-EXTRWABE-PROZESS Ð ALUBACKWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRWABE-PROZESS Ð STATUSBACKWABE
+BION-EXTRAWABE-PROZESS Ð STATUSBACKWABE
 
  MORPHIC-ID ¡ RETT-PROZESS 
 

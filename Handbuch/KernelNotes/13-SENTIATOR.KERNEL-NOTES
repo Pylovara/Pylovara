@@ -1,7 +1,7 @@
 @kernel-nr: 13 Ð SENTIATOR 
 ###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
 ###==##==###======#####======K13 SENTIATOR=====#####======###==##==###  
- #        SENTIATOR = LOGIC DECISION CONTROL MANAGMENT SYSTEM        #
+ #         SENTIATOR = LOGIC DECISION CONTROL MANAGMENT SYSTEM        #
 ###==##==###======#####==STARTPUNKT SENTIATOR==#####======###==##==###
 
 BION Ð SENTIATOR 
@@ -64,26 +64,26 @@ BION-EXTRAWABE-WENN Ð BLOCKWABE
 
  AXIOM ¡ SYNTAX-ERLAUBNIS = ^
  AXIOM ¡ ^      1START: —[
- AXIOM ¡ ^        4SEN: ¶
+ AXIOM ¡ ^        4SEK: ¶
 
  AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYTK>
- AXIOM ¡ ^       1SYNC: <SYNK>
- AXIOM ¡ ^       2KOPF: <NITK>
- AXIOM ¡ ^      1START: <POIST-ON-PIPE-PIPE>
- AXIOM ¡ ^       2FOOD: <NITK>
- AXIOM ¡ ^  3ZYKLUS-IN: <ZYTK>
+ AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYK>
+ AXIOM ¡ ^       1SYNC: <SYK>
+ AXIOM ¡ ^       2KOPF: <NIK>
+ AXIOM ¡ ^      1START: <PICB-ON-PIPE-PIPE>
+ AXIOM ¡ ^       2FOOD: <NIK>
+ AXIOM ¡ ^  3ZYKLUS-IN: <ZYK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        4SEN: <SENK>
- AXIOM ¡ ^        4SEN: <SENK>
+ AXIOM ¡ ^        4SEK: <SEK>
+ AXIOM ¡ ^        4SEK: <SEK>
  AXIOM ¡ ^       6FREE: <REK>
 
- BRÜCKE-IO ¡ POIST-ON-PIPE-PIPE
+ BRÜCKE-IO ¡ PICB-ON-PIPE-PIPE
 
- BRÜCKE-OUT ¡ <SENK>
+ BRÜCKE-OUT ¡ <SEK>
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
@@ -149,28 +149,28 @@ BION-EXTRAWABE-NICHT Ð BLOCKWABE
 
  ABSK ¡ SEK+SEHT-NICHT+SEST-NICHT+SEBK-NICHT
 
- AXIOM ¡ SYNTAX-ERLAUBNIS ¡ ^
+ AXIOM ¡ SYNTAX-ERLAUBNIS = ^
  AXIOM ¡ ^      1START: —[
- AXIOM ¡ ^        4SEN: ¶¶
+ AXIOM ¡ ^        4SEK: ¶¶
 
  AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYTK>
- AXIOM ¡ ^       1SYNC: <SYNK>
- AXIOM ¡ ^       2KOPF: <NITK>
- AXIOM ¡ ^      1START: <POIST-ON-PIPE-PIPE>
- AXIOM ¡ ^       2FOOD: <NITK>
- AXIOM ¡ ^  3ZYKLUS-IN: <ZYTK>
+ AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYK>
+ AXIOM ¡ ^       1SYNC: <SYK>
+ AXIOM ¡ ^       2KOPF: <NIK>
+ AXIOM ¡ ^      1START: <PICB-ON-PIPE>
+ AXIOM ¡ ^       2FOOD: <NIK>
+ AXIOM ¡ ^  3ZYKLUS-IN: <ZYK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        4SEN: <SENK>
- AXIOM ¡ ^        4SEN: <SENK>
+ AXIOM ¡ ^        4SEK: <SEK>
+ AXIOM ¡ ^        4SEK: <SEK>
  AXIOM ¡ ^       6FREE: <REK>
 
- BRÜCKE-IO ¡ POIST-ON-PIPE-PIPE
+ BRÜCKE-IO ¡ POICB-ON-PIPE
 
- BRÜCKE-OUT ¡ <SENK>
+ BRÜCKE-OUT ¡ <SEK>
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

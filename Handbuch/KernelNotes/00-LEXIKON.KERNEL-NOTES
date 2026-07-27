@@ -1,7 +1,7 @@
-﻿@kernel-nr: lex Ð SYSTEM-LEXIKON #   #   #   #   # #  #  #  # 源真理 #
+﻿@kernel-nr: lex Ð SYSTEM-LEXIKON #   #   ##  #   # #  #  #  # 源真理 #
 ###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #     · KEIN EINTRAG | 0 KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
+ #     · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND      #
  #           + AKTIV  | - NICHT AKTIV  | X = TEIL-VOLLSTÄNDIG       #
 ###==##==###======#####======KOMPONENTEN=======#####======###==##==###
  #   NR HINWEIS INFO             | NR HINWEIS  INFO                 #
@@ -9,10 +9,10 @@
  #   01  + ·  DATENTYPEN         | 02  + ·  TRANSAKTIONSRAHMEN      #
  #   03  + ·  PROTEIN            | 04  + ·  PROTON                  #
  #   05  + ·  TRENNBEFEHL        | 06  + ·  BINDUNGSBEFEHL          #
- #   07  + X  AKTIONSDRAHT       | 08  + ·  BOXI                    #
+ #   07  + ·  AKTIONSDRAHT       | 08  + ·  BOXI                    #
  #   09  + ·  MASTER             | 10  + ·  REX                     #
- #   11  + ·  ARGUMENT           | 12  - Ŋ  FEED                    #
- #   13  - Ŋ  SENTIATOR          | 14  - ·  NAVIGATOR               #
+ #   11  + O  ARGUMENT           | 12  + O  FEED                    #
+ #   13  + O  SENTIATOR          | 14  - Ŋ  NAVIGATOR               #
  #   15  - ·  WARP               | 16  - ·  IDENTIFIKATION          #
  #   17  - Ŋ  MCMD               | 18  - Ŋ  DATEITYPEN              #
  #   19  - Ŋ  RETRON             | 20  - Ŋ  VATRON                  #
@@ -40,7 +40,7 @@
  #   94   L2_AUTHORRIGHTS                     #     #      #       #
  #   95   L3_COMMERCIALLICENSING              #  PYLOVARA—SYSTEM©  #
  #   96   L4_AI_ADMINISTRATIONSMANDATE        #   #         #      #
- #   97   L5_POST_MORTEM-CONTROL              #         #       #  #
+ #   97   L5_POST_MORTEM-CONTROL              #     #   #       #  #
  #   98   L6_IMMUTABLE_CORES_DEFINITION       #    #   #      #    #
  #   99   LICENSE—MANIFEST.PROTO              # #         #        #
 ###==##==###======#####=====VERSIONSDATEN======#####======###==##==###

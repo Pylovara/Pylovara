@@ -4,16 +4,16 @@
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
  # BOXI'S = THE IN/OUT ALLFILE CONTAINER PROZESS MANAGMENT SYSTEM   #
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- # [ BX08: BOXI PROCESS MANAGEMENT SYSTEM ]                         #
- # ├── HT01:PRINT  ("...")-> Systemausgaben/Strings                 #
+ # [ BX08: BOXI PROCESS MANAGEMENT SYSTEM ]                          #
+ # ├── HT01:PRINT  ("...")-> Systemausgaben/Strings                  #
  # ├── HT02:ALU    (×...×)-> Mathematische Operatoren/ALU-Container #
  # ├── HT03:SYSCALL(,...,)-> System-Calls/Kernel-Invocations        #
  # ├── HT04:ABI    (Ħ...Ħ)-> Binary Interfaces/Hardware-Register    #
  # ├── HT05:SHELL  ('...')-> Native Shell Commands/Skripte          #
- # ├── HT06:MCD    (~...~)-> Microcode Commands                     #
- # ├── HT07:BINÄR  (°...°)-> Maschinenbefehle/OpCodes               #
- # ├── HT08:CACHE  (¥...¥)-> Fast-Cache/Speicherknoten              #
- # ├── HT09:PFAD   ($...$)-> Datei- & Verzeichnispfade              #
+ # ├── HT06:MCD    (~...~)-> Microcode Commands                      #
+ # ├── HT07:BINÄR  (°...°)-> Maschinenbefehle/OpCodes                #
+ # ├── HT08:CACHE  (¥...¥)-> Fast-Cache/Speicherknoten               #
+ # ├── HT09:PFAD   ($...$)-> Datei- & Verzeichnispfade               #
  # └── HT10:NET    (§...§)-> Netzwerk-Interfaces/Socket-I/O         #
 ###==##==###======#####====STARTPUNKT BOXI=====#####======###==##==###
 
@@ -55,7 +55,7 @@ BION-HAUPTWABE Ð EXTRAWABE-PRINT
 
 BION-EXTRAWABE-PRINT Ð STARTWABE 
 
- MORPHIC ¡ BXST-PRINT 
+ MORPHIC-ID ¡ BXST-PRINT 
 
  BION-ID ¡ BX08HT01ST01
 
@@ -65,7 +65,7 @@ BION-EXTRAWABE-PRINT Ð STARTWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-ALU Ð SYSTEMWABE
+BION-EXTRAWABE-PRINT Ð SYSTEMWABE
 
  MORPHIC-ID ¡ BXSS-PRINT-IO
 
@@ -73,7 +73,7 @@ BION-EXTRAWABE-ALU Ð SYSTEMWABE
 
  AXIOM ¡ BXSS-PRINT-IO = " <IO>
 
- ABSK ¡ BXK+BXTH-PRINT+BXST-PRINT+BXSS-PRINT-IO
+ ABSK ¡ BXK+BXHT-PRINT+BXST-PRINT+BXSS-PRINT-IO
 
  I-ID ¡ 
 
@@ -81,7 +81,7 @@ BION-EXTRAWABE-ALU Ð SYSTEMWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-ETRAWABE-ALU Ð ENDWABE  
+BION-EXTRAWABE-PRINT Ð ENDWABE  
 
  MORPHIC-ID ¡ BXED-PRINT
 
@@ -109,7 +109,7 @@ BION-HAUPTWABE Ð EXTRAWABE-ALU
 
 BION-EXTRAWABE-ALU Ð STARTWABE 
 
- MOPHIC-ID ¡ BXST-ALU
+ MORPHIC-ID ¡ BXST-ALU
 
  BION-ID ¡ BX08HT02ST02
  
@@ -177,7 +177,7 @@ BION-EXTRAWABE-SYSCALL Ð SYSTEMWABE
 
  MORPHIC-ID ¡ BXSS-SYSCALL-IO
 
- BION-ID Ð BX08HT03ST03SS03 
+ BION-ID ¡ BX08HT03ST03SS03 
 
  AXIOM ¡ BXSS-SYSCALL = , <IO> 
 
@@ -215,7 +215,7 @@ BION-HAUPTWABE Ð EXTRAWABE-ABI
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-ABI Ð STARWABE 
+BION-EXTRAWABE-ABI Ð STARTWABE 
 
  MORPHIC-ID ¡ BXST-ABI 
 
@@ -251,7 +251,7 @@ BION-EXTRAWABE-ABI Ð ENDWABE
 
  AXIOM ¡ BXED-ABI = Ħ <IO> Ħ
 
- ABSK ¡ BXK+BXHT-ABI+BXST-ABI+BXSS-ABI+BXED-ABI
+ ABSK ¡ BXK+BXHT-ABI+BXST-ABI+BXSS-ABI-IO+BXED-ABI
 
 ###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
@@ -271,7 +271,7 @@ BION-HAUPTWABE Ð EXTRAWABE-SHELL
 
 BION-EXTRAWABE-SHELL Ð STARTWABE 
 
- MOPRHIC-ID ¡ BXST-SHELL
+ MORPHIC-ID ¡ BXST-SHELL
 
  BION-ID ¡ BX08HT05ST05
 
@@ -287,7 +287,7 @@ BION-EXTRAWABE-SHELL Ð SYSTEMWABE
 
  BION-ID ¡ BX08HT05ST05SS05
 
- AXIOM ¡ BXSS-SHELL = , <IO> 
+ AXIOM ¡ BXSS-SHELL = ' <IO> 
 
  ABSK ¡ BXK+BXHT-SHELL+BXST-SHELL+BXSS-SHELL-IO
 
@@ -331,7 +331,7 @@ BION-EXTRAWABE-MCD Ð STARTWABE
 
  AXIOM ¡ BXST-MCD = ~ 
 
- ABSK ¡ BXK+BXHT-MCMD+BXST-MCD
+ ABSK ¡ BXK+BXHT-MCD+BXST-MCD
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
@@ -395,7 +395,7 @@ BION-EXTRAWABE-BINÄR Ð SYSTEMWABE
 
  BION-ID ¡ BX08HT07ST07SS07 
 
- AXIOM ¡ BXSS-BINÄR-MASCHINENBEFEH = ° <MASCHINENBEFEHL> 
+ AXIOM ¡ BXSS-BINÄR-MASCHINENBEFEHL = ° <MASCHINENBEFEHL> 
 
  ABSK ¡ BXK+BXHT-BINÄR+BXST-BINÄR+BXSS-BINÄR-MASCHINENBEFEHL
 
@@ -429,9 +429,9 @@ BION-EXTRAWABE-BINÄR Ð ENDWABE
  
  BION-ID ¡ BX08HT07ST07SS08ED08
 
- AXIOM ¡ BXED-BXI-BINÄR-MASCHINENBEFEHL = ° <MASCHINENBEFEHL> °
+ AXIOM ¡ BXED-BINÄR-MASCHINENBEFEHL = ° <MASCHINENBEFEHL> °
 
- AXIOM ¡ BXED-BXI-BINÄR-OPCODE = ° <OPCODE> °
+ AXIOM ¡ BXED-BINÄR-OPCODE = ° <OPCODE> °
 
  ABSK ¡ BXK+BXHT-BINÄR+BXST-BINÄR+BXSS-BINÄR-OPCODE+BXED-BINÄR
 
@@ -489,7 +489,7 @@ BION-EXTRAWABE-CACHE Ð ENDWABE
 
  AXIOM ¡ BXED-CACHE = ¥ <IO> ¥
 
- ABSK ¡ BXK+BXHT-CACHE+BXST-CACHE+BXSS-CACHE-IO
+ ABSK ¡ BXK+BXHT-CACHE+BXST-CACHE+BXSS-CACHE-IO+BXED-CACHE
 
 ###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
@@ -511,7 +511,7 @@ BION-EXTRAWABE-PFAD Ð STARTWABE
 
  MORPHIC-ID ¡ BXST-PFAD 
 
- BION-ID ¡ BX08X09ST09
+ BION-ID ¡ BX08HT09ST09
 
  AXIOM ¡ BXST-PFAD = $  
 
@@ -523,7 +523,7 @@ BION-EXTRAWABE-PFAD Ð SYSTEMWABE
 
  MORPHIC-ID ¡ BXSS-PFAD-IO
 
- BION-ID ¡ BX08X09ST09SS10 
+ BION-ID ¡ BX08HT09ST09SS10 
 
  AXIOM ¡ BXSS-PFAD-IO = $ <IO>
 
@@ -539,11 +539,11 @@ BION-EXTRAWABE-PFAD Ð ENDWABE
 
  MORPHIC-ID ¡ BXED-PFAD
 
- BION-ID ¡ BX08X09ST09SS10ED10
+ BION-ID ¡ BX08HT09ST09SS10ED10
 
  AXIOM ¡ BXED-PFAD = $ <IO> $
 
- ABSK ¡ BXK+BXHT-PFAD+BXST-PFAD+BXSS-PFAD-IO
+ ABSK ¡ BXK+BXHT-PFAD+BXST-PFAD+BXSS-PFAD-IO+BXED-PFAD
 
 ###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
@@ -565,7 +565,7 @@ BION-EXTRAWABE-NET Ð STARTWABE
 
  MORPHIC-ID ¡ BXST-NET 
 
- BION-ID ¡ BX08HT10ST09 
+ BION-ID ¡ BX08HT10ST10 
 
  AXIOM ¡ BXST-NET = §  
 
@@ -577,7 +577,7 @@ BION-EXTRAWABE-NET Ð SYSTEMWABE
 
  MORPHIC-ID ¡ BXSS-NET-IO
 
- BION-ID ¡ BX08HT10ST09SS11
+ BION-ID ¡ BX08HT10ST10SS11
 
  AXIOM ¡ BXSS-NET-IO = § <IO>
 
@@ -593,7 +593,7 @@ BION-EXTRAWABE-NET Ð ENDWABE
 
  MORPHIC-ID ¡ BXED-NET
 
- BION-ID ¡ BX08HT10ST001SS11ED11
+ BION-ID ¡ BX08HT10ST10SS11ED11
 
  AXIOM ¡ BXED-NET = § <IO> §
 
@@ -601,11 +601,11 @@ BION-EXTRAWABE-NET Ð ENDWABE
 
 ###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
  # MASTERWORT = BXELT
- SBSK = BXK+BXHT-BXELT+BXST-BXELT+BXSS-BXELT+BXED-BXLET
- SBSK = BXK+BXHT-BXELT+BXST-BXELT+BXSS-BXELT-BXELT+BXED-BXLET
+ SBSK = BXK+BXHT-BXELT+BXST-BXELT+BXSS-BXELT+BXED-BXELT
+ SBSK = BXK+BXHT-BXELT+BXST-BXELT+BXSS-BXELT-BXELT+BXED-BXELT
  # VBSK = 
  RBSK = BXK
 ###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+ #  DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT                   #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                 #
 ###==##==###======#####=====ENDPUNKT BOXI======#####======###==##==###

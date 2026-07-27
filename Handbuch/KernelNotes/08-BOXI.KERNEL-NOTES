@@ -3,6 +3,18 @@
 ###==##==###======#####========K8 BOXI=========#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
  # BOXI'S = THE IN/OUT ALLFILE CONTAINER PROZESS MANAGMENT SYSTEM   #
+###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+ # [ BX08: BOXI PROCESS MANAGEMENT SYSTEM ]                         #
+ # ├── HT01:PRINT  ("...")-> Systemausgaben/Strings                 #
+ # ├── HT02:ALU    (×...×)-> Mathematische Operatoren/ALU-Container #
+ # ├── HT03:SYSCALL(,...,)-> System-Calls/Kernel-Invocations        #
+ # ├── HT04:ABI    (Ħ...Ħ)-> Binary Interfaces/Hardware-Register    #
+ # ├── HT05:SHELL  ('...')-> Native Shell Commands/Skripte          #
+ # ├── HT06:MCD    (~...~)-> Microcode Commands                     #
+ # ├── HT07:BINÄR  (°...°)-> Maschinenbefehle/OpCodes               #
+ # ├── HT08:CACHE  (¥...¥)-> Fast-Cache/Speicherknoten              #
+ # ├── HT09:PFAD   ($...$)-> Datei- & Verzeichnispfade              #
+ # └── HT10:NET    (§...§)-> Netzwerk-Interfaces/Socket-I/O         #
 ###==##==###======#####====STARTPUNKT BOXI=====#####======###==##==###
 
 BION Ð BOXI 

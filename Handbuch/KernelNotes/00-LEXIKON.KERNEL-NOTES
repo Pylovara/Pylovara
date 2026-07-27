@@ -6,13 +6,13 @@
 ###==##==###======#####======KOMPONENTEN=======#####======###==##==###
  #   NR HINWEIS INFO             | NR HINWEIS  INFO                 #
  #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   01  + ·  DATENTYPEN         | 02  + ·  TRANSAKTIONSRAHMEN      #
+ #   01  + X  DATENTYPEN         | 02  + ·  TRANSAKTIONSRAHMEN      #
  #   03  + ·  PROTEIN            | 04  + ·  PROTON                  #
  #   05  + ·  TRENNBEFEHL        | 06  + ·  BINDUNGSBEFEHL          #
  #   07  + ·  AKTIONSDRAHT       | 08  + ·  BOXI                    #
- #   09  + ·  MASTER             | 10  + O  REX                     #
- #   11  + O  ARGUMENT           | 12  + O  FEED                    #
- #   13  + O  SENTIATOR          | 14  - Ŋ  NAVIGATOR               #
+ #   09  + ·  MASTER             | 10  + ·  REX                     #
+ #   11  + ·  ARGUMENT           | 12  + ·  FEED                    #
+ #   13  + ·  SENTIATOR          | 14  - Ŋ  NAVIGATOR               #
  #   15  - ·  WARP               | 16  - ·  IDENTIFIKATION          #
  #   17  - Ŋ  MCMD               | 18  - Ŋ  DATEITYPEN              #
  #   19  - Ŋ  RETRON             | 20  - Ŋ  VATRON                  #

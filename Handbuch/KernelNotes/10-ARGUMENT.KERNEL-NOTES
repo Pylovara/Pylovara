@@ -1,6 +1,6 @@
-@kernel-nr: 11 Ð ARGUMENT 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####======K11 ARGUMENT======#####======###==##==###  
+@kernel-nr: 10 Ð ARGUMENT | STATUS = RELEASE V2.0
+#  LEXIKON NAVIGATION TERMINAL = kernel <10> == # == ##### === ###
+###==##==###======#####======K10 ARGUMENT======#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
  #      ARGUMENT = LOGIC OPERATOR CONTROL MANAGMENT SYSTEM           #
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
@@ -13,7 +13,7 @@ BION Ð ARGUMENT
 
  BION-ID ¡ AR
 
- MAK ¡ MASU-ARGUMENT
+ MASK ¡ MASU-ARGUMENT
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
@@ -21,21 +21,21 @@ BION-KERNWABE Ð ARGUMENT
 
  MORPHIC-ID ¡ ARK 
 
- BION-ID ¡ AR11
+ BION-ID ¡ AR10
 
  AXIOM ¡ ARK = <ARK>
 
  ABSK ¡ ARK
 
-###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+# HT01: BEFEHLE
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
 BION-HAUPTWABE Ð EXTRAWABE-BEFEHL
 
  MORPHIC-ID ¡ ARHT-BEFEHL
 
- BION-ID ¡ AR11HT01
+ BION-ID ¡ AR10HT01
 
  AXIOM ¡ ARHT-BEFEHL = ARHT-BEFEHL
 
@@ -43,11 +43,11 @@ BION-HAUPTWABE Ð EXTRAWABE-BEFEHL
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-BEFEHL Ð STARTWABE 
+BION-STARTWABE Ð BEFEHL-START
 
  MORPHIC-ID ¡ ARST-BEFEHL
 
- BION-ID ¡ AR11HT01ST01
+ BION-ID ¡ AR10HT01ST01
 
  AXIOM ¡ ARST-BEFEHL = ««
 
@@ -55,11 +55,11 @@ BION-EXTRAWABE-BEFEHL Ð STARTWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-BEFEHL Ð COMBOWABE 
+BION-COMBOWABE Ð BEFEHL-COMBO
 
  MORPHIC-ID ¡ ARCB-BEFEHL-BXK
 
- BION-ID ¡ AR11HT01ST01CB01
+ BION-ID ¡ AR10HT01ST01CB01
 
  AXIOM ¡ ARCB-BEFEHL-BXK = ««<BXH-MCMD>
 
@@ -69,22 +69,23 @@ BION-EXTRAWABE-BEFEHL Ð COMBOWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-BEFEHL Ð ENDWABE
+BION-ENDWABE Ð BEFEHL-END
 
  MORPHIC-ID ¡ ARED-BEFEHL
 
- BION-ID ¡ AR11HT01ST01CB01ED01
+ BION-ID ¡ AR10HT01ST01CB01ED01
 
  AXIOM ¡ ARED-BEFEHL = ««<BXH-MCMD>«
 
  ABSK ¡ ARK+ARHT-BEFEHL+ARST-BEFEHL+ARCB-BEFEHL-BXK+ARED-BEFEHL
 
 ###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 ###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
  # MASTERWORT = ARGELT
- SBSK = ARK+ARHT-BEFEHL+ARST-BEFEHL+ARCB-BEFEHL-BXK+ARED-BEFEHL
- VBSK = ARCB-BEFEHL-BXK
- RBSK = ARK
+ # SBSK = ARK+ARHT-BEFEHL+ARST-BEFEHL+ARCB-BEFEHL-BXK+ARED-BEFEHL
+ # VBSK = ARCB-BEFEHL-BXK
+ # RBSK = ARK
 ###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
  #  DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT                 #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

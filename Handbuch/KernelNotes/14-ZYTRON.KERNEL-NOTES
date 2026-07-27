@@ -1,158 +1,89 @@
-@kernel-nr: 25 Ð ZYTRON
+@kernel-nr: 14 Ð ZYTRON | STATUS = unfertig nur glat gezogen 
 ###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=======K25 ZYTRON=======#####======###==##==###  
+###==##==###======#####=======K14 ZYTRON=======#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #                ZYTRON = BACK TO ZYKLUS REBORN                    #
+ #                 ZYTRON = BACK TO ZYKLUS REBORN                     #
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
 ###==##==###======#####====STARTPUNKT ZYTRON===#####======###==##==###
 
-BION Ð ZYTRON 
+BION Ð ZYTRON
 
  MORPHIC-ID ¡ ZYT
 
  BION-ID ¡ ZY
 
-MASK ¡ MASU-ZYTRON
+ MASK ¡ MASU-ZYTRON
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-KERNWABE Ð ZYTRON 
+BION-KERNWABE Ð ZYTRON
 
- MORPHIC-ID ¡ ZYTK 
+ MORPHIC-ID ¡ ZYTK
 
- BION-ID ¡ ZY00 
+ BION-ID ¡ ZY14
 
- AXIOM ¡ ZYTK = <ZYTK> 
+ AXIOM ¡ ZYTK = <ZYTK>
 
  ABSK ¡ ZYTK
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###==##==###======#####========================#####======###==##==###
+# HT01: EXTRAWABE-ZURÜCK
+###==##==###======#####========================#####======###==##==###
 
-BION-HAUPTWABE Ð EXTRAWABE-ZURÜCK 
+BION-HAUPTWABE Ð EXTRAWABE-ZURÜCK
 
  MORPHIC-ID ¡ ZYTX-ZURÜCK
 
- BION-ID ¡ ZY00X01
- 
+ BION-ID ¡ ZY14HT01
+
  AXIOM ¡ ZYTHT-ZURÜCK = ZYTHT-ZURÜCK
 
  ABSK ¡ ZYTK+ZYTX-ZURÜCK
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-ZURÜCK Ð STARTWABE
+BION-STARTWABE Ð ZURÜCK-START
 
  MORPHIC-ID ¡ ZYTS-ZURÜCK
 
- BION-ID ¡ ZYT00X01S01
+ BION-ID ¡ ZY14HT01ST01
 
- AXIOM ¡  AXIOM ¡ ZYTS-ZURÜCK = £
+ AXIOM ¡ ZYTS-ZURÜCK = £
 
  ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-ZURÜCK Ð SYSTEMWABE 
+BION-BLOCKWABE Ð ZURÜCK-BLOCK-1
 
- MORPHIC-ID ¡ ZYTSYS-ZURÜCK-IO
+ MORPHIC-ID ¡ ZYTB-ZURÜCK-1
 
- BION-ID ¡ ZYT00HT01ST01
+ BION-ID ¡ ZY14HT01ST01B01
 
- AXIOM ¡ ZYTSYS-ZURÜCK-IO = £<NR>
+ AXIOM ¡ ZYTB-ZURÜCK-1 = £1
 
- ABSK ¡ 
-
- I-ID ¡ 
-
- O-ID ¡
-
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-!!!!!!!!!!! ALT ↓↓↓↓ ALT !!!!!!!!!!!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
-
- MORPHIC-ID ¡ ZYTB-ZURÜCK
-
- BION-ID ¡ ZY00X01S01B01
-
- AXIOM ¡ ZYTB-ZURÜCK = £1
-
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTSYS-ZYTB-ZURÜCK-1
-
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £1
-
- AXIOM ¡ ^ 3ZYKLUS-OUT: £1
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-1
 
  AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: £1
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £1
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £1
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^  3ZYKLUS-OUT: £1
+ AXIOM ¡ ^        1SYNC:
+ AXIOM ¡ ^        2KOPF:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £1
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^        6FREE:
 
  BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
 
@@ -160,40 +91,36 @@ BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
+BION-BLOCKWABE Ð ZURÜCK-BLOCK-2
 
- MORPHIC-ID ¡ ZYTB-ZURÜCK
+ MORPHIC-ID ¡ ZYTB-ZURÜCK-2
 
- BION-ID ¡ ZY00X01S01B02
+ BION-ID ¡ ZY14HT01ST01B02
 
- AXIOM ¡ ZYTB-ZURÜCK = £2
+ AXIOM ¡ ZYTB-ZURÜCK-2 = £²
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTSYS-ZYTB-ZURÜCK-2
-
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £2
-
- AXIOM ¡ ^ 3ZYKLUS-OUT: £2
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-2
 
  AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: £2
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £2
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £²
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^  3ZYKLUS-OUT: £²
+ AXIOM ¡ ^        1SYNC:
+ AXIOM ¡ ^        2KOPF:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £²
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^        6FREE:
 
  BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
 
@@ -201,40 +128,36 @@ BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
+BION-BLOCKWABE Ð ZURÜCK-BLOCK-3
 
- MORPHIC-ID ¡ ZYTB-ZURÜCK
+ MORPHIC-ID ¡ ZYTB-ZURÜCK-3
 
- BION-ID ¡ ZY00X01S01B03
+ BION-ID ¡ ZY14HT01ST01B03
 
- AXIOM ¡ ZYTB-ZURÜCK = £3
+ AXIOM ¡ ZYTB-ZURÜCK-3 = £³
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTSYS-ZYTB-ZURÜCK-3
-
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £3
-
- AXIOM ¡ ^ 3ZYKLUS-OUT: £3
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-3
 
  AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: £3
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £3
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £³
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^  3ZYKLUS-OUT: £³
+ AXIOM ¡ ^        1SYNC:
+ AXIOM ¡ ^        2KOPF:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £³
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^        6FREE:
 
  BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
 
@@ -242,51 +165,76 @@ BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-ZURÜCK Ð BLOCKWABE
+BION-BLOCKWABE Ð ZURÜCK-BLOCK-4
 
- MORPHIC-ID ¡ ZYTB-ZURÜCK
+ MORPHIC-ID ¡ ZYTB-ZURÜCK-4
 
- BION-ID ¡ ZY00X01S01B04
+ BION-ID ¡ ZY14HT01ST01B04
 
- AXIOM ¡ ZYTB-ZURÜCK = £4
+ AXIOM ¡ ZYTB-ZURÜCK-4 = £⁴
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTSYS-ZYTB-ZURÜCK-4
-
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £4
-
- AXIOM ¡ ^ 3ZYKLUS-OUT: £4
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-4
 
  AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: £4
- AXIOM ¡ ^       1SYNC: 
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN: £4
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £⁴
+
+ AXIOM ¡ MORPHIC-SYNTAX ¡ ^
+ AXIOM ¡ ^  3ZYKLUS-OUT: £⁴
+ AXIOM ¡ ^        1SYNC:
+ AXIOM ¡ ^        2KOPF:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD:
+ AXIOM ¡ ^   3ZYKLUS-IN: £⁴
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         4SEN:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^         5REX:
+ AXIOM ¡ ^        6FREE:
 
  BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
 
  BRÜCKE-OUT ¡ POICOM-ON-PIPE-BOXK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-LINKENDWABE Ð ZURÜCK-LINKEND
+
+ MORPHIC-ID ¡ ZYNL-ZURÜCK
+
+ BION-ID ¡ ZY14HT01ST01B01LD01
+ BION-ID ¡ ZY14HT01ST01B02LD01
+ BION-ID ¡ ZY14HT01ST01B03LD01
+ BION-ID ¡ ZY14HT01ST01B04LD01
+
+ AXIOM ¡ ZYTB-ZURÜCK-1 = £1
+ AXIOM ¡ ZYTB-ZURÜCK-2 = £²
+ AXIOM ¡ ZYTB-ZURÜCK-3 = £³
+ AXIOM ¡ ZYTB-ZURÜCK-4 = £⁴
+
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-1+ZYNL-ZURÜCK
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-2+ZYNL-ZURÜCK
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-3+ZYNL-ZURÜCK
+ ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-4+ZYNL-ZURÜCK
+
+ LINK ¡ SENK
 
 ###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = ZYTELT                                              #
- # SBSK =
- # VBSK =
- # RBSK = ZYTK                                                      #
+ # MASTERWORT = ZYTELT
+ # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-1+ZYNL-ZURÜCK
+ # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-2+ZYNL-ZURÜCK
+ # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-3+ZYNL-ZURÜCK
+ # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-4+ZYNL-ZURÜCK
+ # VBSK = ZYTB-ZURÜCK-1
+ # VBSK = ZYTB-ZURÜCK-2
+ # VBSK = ZYTB-ZURÜCK-3
+ # VBSK = ZYTB-ZURÜCK-4
+ # RBSK = ZYTK
 ###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [00:14:44|So 24 Mai 2026] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
+ #  DATUM = [21:23:16|Mo 27 Jul 2026] MARKENBRANDT                  #
+ #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                 #
 ###==##==###======#####=====ENDPUNKT ZYTRON====#####======###==##==###

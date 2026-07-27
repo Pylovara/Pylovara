@@ -6,40 +6,40 @@
 ###==##==###======#####======KOMPONENTEN=======#####======###==##==###
  #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
  #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   01  + ·  TRANSAKTIONSRAHMEN | 02  + ·  PROTEIN                 #
- #   03  + ·  PROTON             | 04  + ·  TRENNBEFEHL             #
- #   05  - Ŋ  BINDUNGSBEFEHL     | 06  - Ŋ  AKTIONSDRAHT            #
- #   07  - Ŋ  ARGUMENTEN         | 08  - Ŋ  BOXI                    #
- #   09  - Ŋ  REX                | 10  - Ŋ  ICTUS                   #
- #   11  - Ŋ  FEED               | 12  - Ŋ  NITROX                  #
- #   13  - Ŋ  SYNAPTOR           | 14  - Ŋ  ZYTRON                  #
- #   15  - Ŋ  SENTIATOR          | 16  - -                          #
+ #   01  - -  TRANSAKTIONSRAHMEN | 02  - -  PROTEIN                 #
+ #   03  - -  PROTON             | 04  - -  TRENNBEFEHL             #
+ #   05  - -  BINDUNGSBEFEHL     | 06  - -  AKTIONSDRAHT            #
+ #   07  - -  ICTUS              | 08  - -  BOXI                    #
+ #   09  - -  REX                | 10  - -  ARGUMENTEN              #
+ #   11  - -  NITROX             | 12  - -  FEED                    #
+ #   13  - -  SYNAPTOR           | 14  - -  ZYTRON                  #
+ #   15  - -  SENTIATOR          | 16  - -                          #
  ###==##==###======#####====SYSTEM-ELEMENTE====#####======###==##==###
  #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
  #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   30  - Ŋ  VATRON             | 31  - Ŋ  RETRON                  #
+ #   30  - -  VATRON             | 31  - -  RETRON                  #
 ###==##==###======#####=======REGISTER=========#####======###==##==###
  #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
  #::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::#
- #   40  - Ŋ  DATENTYPEN         | 41  - Ŋ  NAVIGATOR               #
- #   42  - Ŋ  IDENTIFIKATION     | 43  - Ŋ  KKIS                    #
- #   44  - Ŋ  GENERALSCHALTUNG   | 45  - Ŋ  MCD                     #
- #   46  - Ŋ  MASTER             | 47  - -                          #
+ #   40  - -  DATENTYPEN         | 41  - -  NAVIGATOR               #
+ #   42  - -  IDENTIFIKATION     | 43  - -  KKIS                    #
+ #   44  - -  GENERALSCHALTUNG   | 45  - -  MCD                     #
+ #   46  - -  MASTER             | 47  - -                          #
 ###==##==###======#####====PROGRAMMIERUNG======#####======###==##==###
  #   NR NOTIZ NAMEN              | NR NOTIZ NAMEN                   #
  #:::::::::::::::::::::::::::::::|::::::::::::::::::::::::::::::::::#
- #   50  - Ŋ  ABSOLULATOR        | 51  - Ŋ   WABINATOR              #
- #   52  - Ŋ  MODULATOR          | 53  - Ŋ   CHIPONATOR             #
- #   54  - Ŋ  MORPHIC            | 55  - Ŋ   DETEKTOR               #
- #   56  - Ŋ  HERZSCHLAG         | 57  - -                          #
+ #   50  - -  ABSOLULATOR        | 51  - -   WABINATOR              #
+ #   52  - -  MODULATOR          | 53  - -   CHIPONATOR             #
+ #   54  - -  MORPHIC            | 55  - -   DETEKTOR               #
+ #   56  - -  HERZSCHLAG         | 57  - -                          #
 ###==##==###======#####====SYSTEM-LOGIKEN======#####======###==##==###
  #   NR HINWEIS NAMEN                                               #
  #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::#
- #   80   - Ŋ  TWS THE-WABE-NEST-SYSTEM                             #
- #   81   - Ŋ  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                 #
+ #   80   - -  TWS THE-WABE-NEST-SYSTEM                             #
+ #   81   - -  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                 #
 ###==##==###======#####=======LIZENZEN=========#####======###==##==###
  #   93   L1_COREKERNELMANDAT                  # # #    #     #     #
- #   94   L2_AUTHORRIGHTS                      #     #      #       #
+ #   94   L2_AUTHORRIGHTS                      #     #      #   #   #
  #   95   L3_COMMERCIALLICENSING               #  PYLOVARA—SYSTEM©  #
  #   96   L4_AI_ADMINISTRATIONSMANDATE         #   #         #      #
  #   97   L5_POST_MORTEM-CONTROL               #     #   #       #  #
@@ -63,7 +63,20 @@
 
 !!! - Daten wurden ausgelagert um den kern selbst lauffähig 
       hochzuziehen 
-
       die komponenten seiten werden jetzt nach reihe eingearbeitet 
-
       ich bitte um gedult .... 
+
+!!! - gesamte neu aufbau ... wollte glatt ziehen lassen die nummern 
+      und dann passierte es ... 
+
+      es gelten nur + makierte seiten als vollständig glatt gezogen 
+      alles andere ist momentan wirrwarr 
+
+      da ich jede komponente selbst geschrieben habe , wird die arbeit 
+      nur eine frage der arbeits geschwindigkeit 
+
+      ich bitte um geduld und in zuckunft wird das nicht mehr 
+      in erwägung gezogen .. 
+
+      das war mir eine lehre ! ( gleich beim ersten mal versuchen 
+      direkt so ein misst )

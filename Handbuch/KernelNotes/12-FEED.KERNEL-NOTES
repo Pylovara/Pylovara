@@ -1,20 +1,20 @@
-@kernel-nr: 12 Ð FEED 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
+@kernel-nr: 12 Ð FEED | STATUS = RELEASE V2.0
+#  LEXIKON NAVIGATION TERMINAL = kernel <12> == # == ##### === ###
 ###==##==###======#####========K12 FEED========#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #        FEED = THE NOMADIC MASTER AND SLAVE MANAGER SYSTEM         #
+ #         FEED = THE NOMADIC MASTER AND SLAVE MANAGER SYSTEM         #
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- #        FEED FÜHREND = MEISTER | FEED TRAGEND = SKLAVE            #
- #        später nach dem durchgang noch systemwabe verbessern        #
+ #         FEED FÜHREND = MEISTER | FEED TRAGEND = SKLAVE            #
+ #         Später nach dem Durchgang noch Systemwabe verbessern       #
 ###==##==###======#####=====STARTPUNKT FEED====#####======###==##==###
 
 BION Ð FEED 
 
- MORPHIC-ID ¡ FD
+ MORPHIC-ID ¡ FD 
 
  BION-ID ¡ FD
 
-MAK ¡ MASU-FEED
+ MASK ¡ MASU-FEED
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
@@ -28,23 +28,23 @@ BION-KERNWABE Ð FEED
 
  ABSK ¡ FDK
 
-###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+# HT01: EXTRAWABE-FÜHREND (MEISTER)
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-HAUPTWABE Ð EXTRAWABE-FÜHREND 
+BION-HAUPTWABE Ð EXTRAWABE-FÜHREND
 
  MORPHIC-ID ¡ FDHT-FÜHREND
 
  BION-ID ¡ FD12HT01
 
  AXIOM ¡ FDHT-FÜHREND = (<NR>)—Ø ¥ <CACHE> ¥ Ø
- 
+
  ABSK ¡ FDK+FDHT-FÜHREND
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-FÜHREND Ð STARTWABE
+BION-STARTWABE Ð FÜHREND-START
 
  MORPHIC-ID ¡ FDST-FÜHREND
 
@@ -56,7 +56,7 @@ BION-EXTRAWABE-FÜHREND Ð STARTWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-FÜHREND Ð SYSTEMWABE 
+BION-SYSTEMWABE Ð FÜHREND-SYSTEM
 
  MORPHIC-ID ¡ FDSS-FÜHREND-NR
 
@@ -66,13 +66,13 @@ BION-EXTRAWABE-FÜHREND Ð SYSTEMWABE
 
  ABSK ¡ FDK+FDHT-FÜHREND+FDST-FÜHREND+FDSS-FÜHREND-NR
 
- I-ID ¡
+ I-ID ¡ 
 
- O-ID ¡
- 
+ O-ID ¡ 
+
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-FÜHREND Ð COMBOWABE 
+BION-COMBOWABE Ð FÜHREND-COMBO
 
  MORPHIC-ID ¡ FDCB-FÜHREND-BXHT-CACHE
 
@@ -86,7 +86,7 @@ BION-EXTRAWABE-FÜHREND Ð COMBOWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-FÜHREND Ð LINKENDWABE
+BION-LINKENDWABE Ð FÜHREND-LINKEND
 
  MORPHIC-ID ¡ FDLD-FÜHREND
 
@@ -94,15 +94,15 @@ BION-EXTRAWABE-FÜHREND Ð LINKENDWABE
 
  AXIOM ¡ FDLD-FÜHREND = (<NR>)—Ø ¥ <CACHE> ¥ Ø
 
- LINK ¡ # HIER MUSS NITROX SPÄTER REIN
+ LINK ¡ NI11HT01ST01BK01
 
- LINK ¡ # HIER MUSS NITROX SPÄTER REIN
+ LINK ¡ NI11HT02ST01BK01
 
  ABSK ¡ FDK+FDHT-FÜHREND+FDST-FÜHREND+FDSS-FÜHREND-NR+FDCB-FÜHREND-BXHT-CACHE+FDLD-FÜHREND
 
-###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+# HT02: EXTRAWABE-TRAGEND (SKLAVE)
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
 BION-HAUPTWABE Ð EXTRAWABE-TRAGEND 
 
@@ -116,11 +116,11 @@ BION-HAUPTWABE Ð EXTRAWABE-TRAGEND
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-TRAGEND Ð STARTWABE 
+BION-STARTWABE Ð TRAGEND-START
 
  MORPHIC-ID ¡ FDST-TRAGEND
 
- BION-ID ¡ FD12HT02ST02
+ BION-ID ¡ FD12HT02ST01
 
  AXIOM ¡ FDST-TRAGEND = Ø 
 
@@ -128,12 +128,12 @@ BION-EXTRAWABE-TRAGEND Ð STARTWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-TRAGEND Ð COMBOWABE 
+BION-COMBOWABE Ð TRAGEND-COMBO
 
  MORPHIC-ID ¡ FDCB-TRAGEND-BXHT-CACHE
- 
- BION-ID ¡ FD12HT02ST02CB02
- 
+
+ BION-ID ¡ FD12HT02ST01CB01
+
  AXIOM ¡ FDCB-TRAGEND-BXHT-CACHE = Ø ¥ <CACHE ¥
 
  ABSK ¡ FDK+FDHT-TRAGEND+FDST-TRAGEND+FDCB-TRAGEND-BXHT-CACHE
@@ -142,11 +142,11 @@ BION-EXTRAWABE-TRAGEND Ð COMBOWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-TRAGEND Ð SYSTEMWABE 
+BION-SYSTEMWABE Ð TRAGEND-SYSTEM
 
  MORPHIC-ID ¡ FDSS-TRAGEND-NR
 
- BION-ID ¡ FD12HT02ST02CB02SS02
+ BION-ID ¡ FD12HT02ST01CB01SS01
 
  AXIOM ¡ FDSS-TRAGEND-NR = Ø ¥ <CACHE ¥ Ø—(<NR>
 
@@ -158,27 +158,29 @@ BION-EXTRAWABE-TRAGEND Ð SYSTEMWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-TRAGEND Ð LINKENDWABE
+BION-LINKENDWABE Ð TRAGEND-LINKEND
 
  MORPHIC-ID ¡ FDLD-TRAGEND
 
- BION-ID ¡ FD12HT02ST02CB02SS02LD02
+ BION-ID ¡ FD12HT02ST01CB01SS01LD01
 
  AXIOM ¡ FDLD-TRAGEND = Ø ¥ <CACHE ¥ Ø—(<NR>)
 
- LINK ¡ # HIER MUSS NITROX SPÄTER REIN
+ LINK ¡ NI11HT01ST01BK01
 
- LINK ¡ # HIER MUSS NITROX SPÄTER REIN
+ LINK ¡ NI11HT02ST01BK01
 
  ABSK ¡ FDK+FDHT-TRAGEND+FDST-TRAGEND+FDCB-TRAGEND-BXHT-CACHE+FDSS-TRAGEND-NR+FDLD-TRAGEND
 
+###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 ###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
  # MASTERWORT = FELT
- SBSK FF = FDK+FDHT-FÜHREND+FDST-FÜHREND+FDSS-FÜHREND-NR+FDCB-FÜHREND-BXHT-CACHE+FDLD-FÜHREND
- SBSK FT = FDK+FDHT-TRAGEND+FDST-TRAGEND+FDCB-TRAGEND-BXHT-CACHE+FDSS-TRAGEND-NR+FDLD-TRAGEND
- # VBSK = 
- RBSK = FDK
+ # SBSK FF = FDK+FDHT-FÜHREND+FDST-FÜHREND+FDSS-FÜHREND-NR+FDCB-FÜHREND-BXHT-CACHE+FDLD-FÜHREND
+ # SBSK FT = FDK+FDHT-TRAGEND+FDST-TRAGEND+FDCB-TRAGEND-BXHT-CACHE+FDSS-TRAGEND-NR+FDLD-TRAGEND
+ # VBSK = FDCB-FÜHREND-BXHT-CACHE
+ # VBSK = FDCB-TRAGEND-BXHT-CACHE
+ # RBSK = FDK
 ###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
  #  DATUM = [08:02:44|FR 25 JUNI 2025] MARKENBRANDT                 #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

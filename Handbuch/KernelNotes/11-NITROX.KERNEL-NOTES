@@ -1,75 +1,75 @@
-@kernel-nr: 23 Ð NITROX
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=======K23 NITROX=======#####======###==##==###
+@kernel-nr: 11 Ð NITROX | STATUS = RELEASE V2.0
+#  LEXIKON NAVIGATION TERMINAL = kernel <11> == # == ##### === ###
+###==##==###======#####======K11 NITROX=======#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #             NITROX =  VERSORGUNGSMANAGER SERVICE SYSTEM          #
+ #               NITROX = VERSORGUNGSMANAGER SERVICE SYSTEM          #
 ###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
 ###==##==###======#####====STARTPUNKT NITROX===#####======###==##==###
 
 BION Ð NITROX 
 
- MORPHIC-ID ¡ NIT 
+ MORPHIC-ID ¡ NI
 
- BION-ID ¡ N
+ BION-ID ¡ NI
 
-MASK ¡ MASU-NITROX
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE ¡ NITROX
-
- MORPHIC-ID ¡ NITK
-
- BION-ID ¡ N00
-
- AXIOM ¡ NITK = <NITK>
-
- ABSK ¡ NITK
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE ¡ EXTRAWABE-INJEKTOR
-
- MORPHIC-ID ¡ NITK
-
- BION-ID ¡ N00X01
-
- AXIOM ¡ NITK = <NITK>
-
- ABSK ¡ NITK
+ MASK ¡ MASU-NITROX
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-INJEKTOR Ð STARWABE 
+BION-KERNWABE Ð NITROX
 
- MORPHIC-ID ¡ NITS-INJEKTOR
+ MORPHIC-ID ¡ NIK
 
- BION-ID ¡ N00X01S01
+ BION-ID ¡ NI11
+
+ AXIOM ¡ NIK = <NIK>
+
+ ABSK ¡ NIK
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+# HT01: EXTRAWABE-INJEKTOR
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-HAUPTWABE Ð EXTRAWABE-INJEKTOR
+
+ MORPHIC-ID ¡ NIHT-INJEKTOR
+
+ BION-ID ¡ NI11HT01
+
+ AXIOM ¡ NIHT-INJEKTOR = NIHT-INJEKTOR
+
+ ABSK ¡ NIK+NIHT-INJEKTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-STARTWABE Ð INJEKTOR-START
+
+ MORPHIC-ID ¡ NIST-INJEKTOR
+
+ BION-ID ¡ NI11HT01ST01
 
  AXIOM ¡ NITS-INJEKTOR = ©
 
- ABSK ¡ NITK+NITX-INJEKTOR+NITS-INJEKTOR
+ ABSK ¡ NITK+NIHT-INJEKTOR+NITS-INJEKTOR
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-INJEKTOR Ð BLOCKWABE
+BION-BLOCKWABE Ð INJEKTOR-BLOCK
 
  MORPHIC-ID ¡ NITB-INJEKTOR
 
- BION-ID ¡ N00X01S01B01
+ BION-ID ¡ NI11HT01ST01BK01
 
  AXIOM ¡ NITB-INJEKTOR = ±
 
- ABSK ¡ NITK+NITX-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR
+ ABSK ¡ NITK+NIHT-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR
 
  AXIOM ¡ MORPHIC-SYNTAX ¡ ^
  AXIOM ¡ ^ 3ZYKLUS-OUT:
- AXIOM ¡ ^       1SYNC:
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD: ± [(<NR>)—Ø ¥ <IO> ¥ Ø]
+ AXIOM ¡ ^        1SYNC:
+ AXIOM ¡ ^        2KOPF:
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD: ± [(<NR>)—Ø ¥ <IO> ¥ Ø]
  AXIOM ¡ ^  3ZYKLUS-IN:
  AXIOM ¡ ^        4SEN:
  AXIOM ¡ ^        4SEN:
@@ -86,62 +86,62 @@ BION-EXTRAWABE-INJEKTOR Ð BLOCKWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-INJEKTOR Ð LINKENDWABE
+BION-LINKENDWABE Ð INJEKTOR-LINKEND
 
  MORPHIC-ID ¡ NITL-INJEKTOR
 
- BION-ID ¡ N00X01S01B01L01
+ BION-ID ¡ NI11HT01ST01BK01LK01
 
  AXIOM ¡ NITL-INJEKTOR = ±
 
- ABSK ¡ NITK+NITX-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR+NITL-INJEKTOR
+ ABSK ¡ NITK+NIHT-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR+NITL-INJEKTOR
 
  LINK ¡ NITK
 
-###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE ¡ EXTRAWABE-EXTRAKTOR
-
- MORPHIC-ID ¡ NITK
-
- BION-ID ¡ N00X02
-
- AXIOM ¡ NITK = <NITK>
-
- ABSK ¡ NITK
-
+# HT02: EXTRAWABE-EXTRAKTOR
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-EXTRAKTOR Ð STARWABE 
+BION-HAUPTWABE Ð EXTRAWABE-EXTRAKTOR
+
+ MORPHIC-ID ¡ NIHT-EXTRAKTOR
+
+ BION-ID ¡ NI11HT02
+
+ AXIOM ¡ NIHT-EXTRAKTOR = NIHT-EXTRAKTOR
+
+ ABSK ¡ NITK+NIHT-EXTRAKTOR
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+BION-STARTWABE Ð EXTRAKTOR-START
 
  MORPHIC-ID ¡ NITS-EXTRAKTOR
 
- BION-ID ¡ N00X02S01
+ BION-ID ¡ NI11HT02ST01
 
  AXIOM ¡ NITS-EXTRAKTOR = ÷
 
- ABSK ¡ NITK+NITS-EXTRAKTOR
+ ABSK ¡ NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-EXTRAKTOR Ð BLOCKWABE
+BION-BLOCKWABE Ð EXTRAKTOR-BLOCK
 
  MORPHIC-ID ¡ NITB-EXTRAKTOR
 
- BION-ID ¡ N00X02S01B01
+ BION-ID ¡ NI11HT02ST01BK01
 
  AXIOM ¡ NITB-EXTRAKTOR = ÷
 
- ABSK ¡ NITK+NITS-EXTRAKTOR+NITB-EXTRAKTOR
+ ABSK ¡ NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR
 
  AXIOM ¡ MORPHIC-SYNTAX ¡ ^
  AXIOM ¡ ^ 3ZYKLUS-OUT:
- AXIOM ¡ ^       1SYNC:
- AXIOM ¡ ^       2KOPF: ÷ [Ø ¥ <IO> ¥ Ø—(<NR>)]
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD: 
+ AXIOM ¡ ^        1SYNC:
+ AXIOM ¡ ^        2KOPF: ÷ [Ø ¥ <IO> ¥ Ø—(<NR>)]
+ AXIOM ¡ ^       1START: —[<BOXK>]
+ AXIOM ¡ ^        2FOOD: 
  AXIOM ¡ ^  3ZYKLUS-IN:
  AXIOM ¡ ^        4SEN:
  AXIOM ¡ ^        4SEN:
@@ -158,23 +158,27 @@ BION-EXTRAWABE-EXTRAKTOR Ð BLOCKWABE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-EXTRAWABE-EXTRAKTOR Ð LINKENDWABE
+BION-LINKENDWABE Ð EXTRAKTOR-LINKEND
 
  MORPHIC-ID ¡ NITL-EXTRAKTOR
 
- BION-ID ¡ N00X01S01B01L01
+ BION-ID ¡ NI11HT02ST01BK01LK01
 
  AXIOM ¡ NITL-EXTRAKTOR = ÷
 
- ABSK ¡ NITK+NITX-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR+NITL-EXTRAKTOR
+ ABSK ¡ NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR+NITL-EXTRAKTOR
 
  LINK ¡ NITK
 
+###==##==###======#####========================#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 ###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
  # MASTERWORT = NITELT
- # SBSK = 
- # VBSK = 
- # RBSK = 
+ # SBSK = NITK+NIHT-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR+NITL-INJEKTOR
+ # SBSK = NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR+NITL-EXTRAKTOR
+ # VBSK = NITB-INJEKTOR
+ # VBSK = NITB-EXTRAKTOR
+ # RBSK = NITK
 ###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
  #  DATUM = [02:50:12|Do 29 Jan 2025] MARKENBRANDT                  #
  #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #

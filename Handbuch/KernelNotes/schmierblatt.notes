@@ -121,7 +121,7 @@ WABENKATEGORIE Ð STARWABE
 
  PROGRAMMIERUNGSBEREICH ↓
 
-AXIOM ¡ ZEICHENBAUM-BAUM = ^
+ AXIOM ¡ ZEICHENBAUM-BAUM = ^
  AXIOM ¡ ^ <TASTENCODE> ≠ <ZEICHEN>
  AXIOM ¡ ^ <TASTENCODE> ≠ <ZEICHEN>
  AXIOM ¡ ^ <TASTENCODE> ≠ <ZEICHEN>
@@ -155,18 +155,18 @@ WABENKATEGORIE Ð BLOCKWABE
  PROGRAMMIERUNGSBEREICH ↓ 
 
  AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT ≠ <ZYK>
- AXIOM ¡ ^         1SY ≠ <SYK>
- AXIOM ¡ ^         2NI ≠ <NIK>
- AXIOM ¡ ^         1PI ≠ <PIBK-ON-PIPE>
- AXIOM ¡ ^         2NI ≠ <NIK>
- AXIOM ¡ ^         3ZY ≠ <ZYK>
- AXIOM ¡ ^         5RE ≠ <REK>
- AXIOM ¡ ^         5RE ≠ <REK>
- AXIOM ¡ ^         5RE ≠ <REK>
- AXIOM ¡ ^         5RE ≠ <REK>
- AXIOM ¡ ^         4SE ≠ <SEK>
- AXIOM ¡ ^         4SE ≠ <SEK>
+ AXIOM ¡ ^ 3ZY ≠ <ZYK>
+ AXIOM ¡ ^ 1SY ≠ <SYK>
+ AXIOM ¡ ^ 2NI ≠ <NIK>
+ AXIOM ¡ ^ 1PI ≠ <PIBK-ON-PIPE>
+ AXIOM ¡ ^ 2NI ≠ <NIK>
+ AXIOM ¡ ^ 3ZY ≠ <ZYK>
+ AXIOM ¡ ^ 5RE ≠ <REK>
+ AXIOM ¡ ^ 5RE ≠ <REK>
+ AXIOM ¡ ^ 5RE ≠ <REK>
+ AXIOM ¡ ^ 5RE ≠ <REK>
+ AXIOM ¡ ^ 4SE ≠ <SEK>
+ AXIOM ¡ ^ 4SE ≠ <SEK>
 
  BRÜCKE-IN ¡ <ZYK>
  BRÜCKE-IN ¡ <SYK>

@@ -1,50 +1,44 @@
+@wabinator-template: DATENWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = DATENWABE (HERZSTÜCK FÜR KOMPONENTEN- BINDUNGEN)      #
+###==##==###======#####========================#####======###==##==###
 
-BION-DATENWABE Ð 
+BION-DATENWABE Ð [TYP_NAME]
 
- MORPHIC-ID ¡ TP-
+ MORPHIC-ID ¡ [PREFIX]TP-[TYP_NAME]
 
- BION-ID ¡ 
+ BION-ID ¡ [BION_INDEX]TP01
 
- AXIOM ¡ TP- = 00
+ AXIOM ¡ [PREFIX]TP-[TYP_NAME] = [STANDARD_WERT]
 
- ABSK ¡ 
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]TP-[TYP_NAME]
 
- MCS-TYP ¡ 
+ MCS-TYP ¡ [MCS_DATENTYP_1]
+ MCS-TYP ¡ [MCS_DATENTYP_2]
+ MCS-TYP ¡ [MCS_DATENTYP_3]
+ MCS-TYP ¡ [MCS_DATENTYP_4]
+ MCS-TYP ¡ [MCS_DATENTYP_5]
 
- MCS-TYP ¡ 
+ DATENTYPKATEGORIEN ¡ [KATEGORIE_NAME]
 
- MCS-TYP ¡ 
+ BIT-BREITE ¡ [BREITE_IN_BIT]
 
- MCS-TYP ¡ 
+ LICHTPULSRATE ¡ [RATE_ODER_FREQUENZ]
 
- MCS-TYP ¡ 
+ FARBSPEKTRUM ¡ [SPEKTRUM_WERT_ODER_HEX]
 
- DATENTYPKATEGORIEN ¡ 
+ SIGNALSTÄRKE ¡ [PEGELLIMIT_ODER_WERT]
 
- BIT-BREITE ¡
- 
- LICHTPULSRATE ¡
- 
- FARBSPEKTRUM ¡
+ TONFREQUENZ ¡ [FREQUENZ_IN_HZ]
 
- SIGNALSTÄRKE ¡ 
+ FUNKTION ¡ [SYSTEM_FUNKTION]
 
- TONFREQUENZ ¡
- 
- FUNKTION ¡ 
+ BEZEICHNUNG ¡ [TEXTUELLER_NAME]
 
- BEZEICHNUNG ¡ 
-
-#######################################################
-
- Info : Regelt die Datentyp dazugehörigkeit 
- 
- alle komponenten werden zugewiesen , explizit .
- regelt inklusive symbol dazugehörigkeit 
- und die bitbreite inklusiver aller anderen 
- datenverarbeitungs möglichkeiten .
-
- ultraschall ist hier noch ausgeschlossen aber 
- grundsätzlich möglich wie auch :
-
- infarot, magnetwellen, etc .
+###==##==###======#####========================#####======###==##==###
+ # INFO      = REGELT DATENTYP-, SYMBOL- UND HARDWARE-ZUGEHÖRIGKEIT. #
+ #             ERWEITERBAR FÜR INFRAROT, MAGNETWELLEN, ULTRASCHALL. #
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/            #
+ # TYPE      = WABINATOR_DATENWABE_TEMPLATE_V1.0                     #
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

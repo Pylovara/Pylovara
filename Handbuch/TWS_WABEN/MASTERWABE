@@ -1,101 +1,26 @@
+@wabinator-template: MASTERWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = MASTERWABE (ÜBERGEORDNETE SYSTEM- & KERNEL-STEUERUNG) #
+###==##==###======#####========================#####======###==##==###
 
-BION-MASTERWABE Ð 
+BION-MASTERWABE Ð [SYSTEM_BEREICH]
 
- MORPHIC-ID ¡ MASU-
+ MORPHIC-ID ¡ [PREFIX]MASU-[SYSTEM_NAME]
 
- BION-ID ¡ MA00SU
+ BION-ID ¡ [BION_INDEX]MA00SU
 
- AXIOM ¡ MASU-
+ AXIOM ¡ [PREFIX]MASU-[SYSTEM_NAME] = [HAUPT_AXIOM_WERT]
 
- ABSK ¡ MASK+MASU-
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]MASU-[SYSTEM_NAME]
 
- ADRESSIERUNG ¡ - .KERNEL-NOTES
+ ADRESSIERUNG ¡ [SYSTEM_PFAD_ODER_NOTE]
 
- EXISTENZ ¡ <KERNWABE>
+ EXISTENZ ¡ <[GEBUNDENE_KERNWABE]>
 
- GAS-OUT ¡ <GENERALSCHALTUNG>
+ GAS-OUT ¡ <[GENERALSCHALTUNG_ZIEL]>
 
-#######################################################
-
- info : Lizenz Wabe , existenz recht 
-
- diese wabe steuert das existenzrecht im system 
- und wird später für keinen änderbar sein .
-
- diese wabe ist ausschließlich für den main kernel 
- und wird explizit mit dem master bei jedem klon 
- kernel abgeglich .
-
- das master ist für jeden user verbot .
-
- eine beantragung für eine komponenten erweiterung , 
- wird später erst beantragt ( kostenlos) und geprüft 
- und erst wenn die prüfung erfolgreich abgelaufen ist .
-
- wird diese komponente im master freigegeben .
-
- das ist der vertrag zwischen PYLOVARA-SYSTEM 
- und jedem MCS oder Waben Entwickler in der 
- Zuckunft .
-
- gebunden an der IDENTIFIKATION þ<NR> þþ<NR> þþþ<BIOLIVE> 
- selbst . 
-
- hier geht es nicht um machtmissbrauch , hier geht es um 
- system integrität .
-
- der Wabinator wird später , für interne MCS entwickler 
- für CUSTOM Wabinatoren , für sein eigenes Entwickeltes 
- Programm ( spiel , daw , engine , ki ), zur verfügung gestellt. 
-
- Das Master wird diese Custom Wabinatoren funktion , selbstverständlich 
- mit Tragen . 
-
- Das Master ist der KERN , der KERN hat nichts mit USER zu tun 
- und der KERN wird weltweit syncron Gleich behandelt ! 
-
- das heißt : 
-
- jeder entwickler für egal was hat einen custom wabinator der so 
- oder so , die kernel eigenen waben aktzeptiert !
-
- das aufbauen dessen um für den jeweiligen programmierer 
- die best mögliche freiheit zu bieten , ist der custom wabinator 
- der MCS zusätze explizit für sein speziell entwickeltes 
- programm zulässt ( oder auch generell als entwickler studio) 
-
- updates werden vom kernel ab , jedem entwickler explizit mitgeteilt 
- damit jeder entwickler genau weis was sich geändert hat .. 
-
- kleines beispiel : 
-
- früher wurde FEED freihand überall verwendet ... da wo man hin 
- gerade drin haben wollte . 
-
- jetzt wird er in Nitrox Gesetzt und Injektiert oder Extrahiert 
- von einem Protein heraus oder hinein . 
-
- dazu werden dann expliziten code gezeigt und auch 
- die anschlüsse !!!!!
-
- daraus kann dann jeder entwickler ( bevor das update stattfindet)
-
- direkt ( per hand oder per seiner haus ki ) , frühzeitig die änderung  
- in seinem Custom Wabinator Eintragen. 
-
- zusätzlich wird es einen brücken verbinder geben , in sofern 
- die änderungen nicht zu Massiv sind . 
-
- Das heißt das ein Programm ( spiel , daw, engine , textprogramm , datenbank , etc )
- immer nur mit dem eigenen dafür ausgelegten Custom Wabinator 
- Läuft !
-
- wenn ein entwickler team sich darauf  einigt einen Custom wabinator 
- für ihre produkte zu Generalisieren , dann laufen alle ihre Programme 
- über den einen und dem selben !
-
- Deswegen wird das MASTER Für alle Nicht Relevant sein und hochgradigt 
- gegen auch nur die kleinste änderung , Geschützt !
-
- Master Anfassen = System Brick !
-
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_MASTERWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

@@ -1,34 +1,37 @@
+@wabinator-template: BLOCKWABE_ON_PIPE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = BLOCKWABE (ON-PIPE PIPELINE HERZSTÜCK)                #
+###==##==###======#####========================#####======###==##==###
 
-BION-EXTRAWABE-ON-PIPE Ð BLOCKWABE
+BION-EXTRAWABE-[BEREICH] Ð BLOCKWABE
 
- MORPHIC-ID ¡ 
+ MORPHIC-ID ¡ [PREFIX]BK-[PROZESS_NAME]
 
- BION-ID ¡ 
+ BION-ID ¡ [BION_INDEX]BK01
 
- AXIOM ¡ POIST-ON-PIPE-INFO = #
- AXIOM ¡ POIST-ON-PIPE-SYNK = ¿<NR>
- AXIOM ¡ POIST-ON-PIPE-SYNK = ¿<NR>
- AXIOM ¡ POIST-ON-PIPE-SYNK = ¿<NR>
- AXIOM ¡ POIST-ON-PIPE-ZYTK = £<NR>‹
- AXIOM ¡ POIST-ON-PIPE-ZYTK = £<NR>›
- AXIOM ¡ POIST-ON-PIPE-NITK = ÷
- AXIOM ¡ POIST-ON-PIPE-PIPE = —[
- AXIOM ¡ POIST-ON-PIPE-NITK = ± 
- AXIOM ¡ POIST-ON-PIPE-ZYTK = £<NR>‹
- AXIOM ¡ POIST-ON-PIPE-ZYTK = £<NR>›
- AXIOM ¡ POIST-ON-PIPE-REK  = ¬
- AXIOM ¡ POIST-ON-PIPE-SENK = ¶ 
- AXIOM ¡ POIST-ON-PIPE-SENK = ¶¶ 
+ # PIPELINE-ELEMENTE UND KERNMUSTER
+ AXIOM ¡ [PREFIX]-INFO = #
+ AXIOM ¡ [PREFIX]-SYNK = ¿<NR>
+ AXIOM ¡ [PREFIX]-ZYTK = £<NR>‹
+ AXIOM ¡ [PREFIX]-ZYTK = £<NR>›
+ AXIOM ¡ [PREFIX]-NITK = ÷
+ AXIOM ¡ [PREFIX]-PIPE = —[
+ AXIOM ¡ [PREFIX]-NITK = ± 
+ AXIOM ¡ [PREFIX]-REK  = ¬
+ AXIOM ¡ [PREFIX]-SENK = ¶ 
+ AXIOM ¡ [PREFIX]-SENK = ¶¶ 
 
- ABSK ¡ 
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]BK-[PROZESS_NAME]
 
+ # ERLAUBNIS-MUSTER UND SYMBOL-DEFINITIONEN
  AXIOM ¡ SYNTAX-ERLAUBNIS ¡ ^
  AXIOM ¡ ^ 3ZYKLUS-OUT: £<NR>‹
  AXIOM ¡ ^ 3ZYKLUS-OUT: £<NR>›
- AXIOM ¡ ^       1SYNC: <SYNK>
- AXIOM ¡ ^       2KOPF: ÷
- AXIOM ¡ ^      1START: —[
- AXIOM ¡ ^       2FOOD: ±
+ AXIOM ¡ ^        1SYNC: <SYNK>
+ AXIOM ¡ ^        2KOPF: ÷
+ AXIOM ¡ ^       1START: —[
+ AXIOM ¡ ^        2FOOD: ±
  AXIOM ¡ ^  3ZYKLUS-IN: £<NR>‹
  AXIOM ¡ ^  3ZYKLUS-IN: £<NR>›
  AXIOM ¡ ^        5REK: ¬
@@ -37,14 +40,15 @@ BION-EXTRAWABE-ON-PIPE Ð BLOCKWABE
  AXIOM ¡ ^        5REK: ¬
  AXIOM ¡ ^        4SEN: ¶
  AXIOM ¡ ^        4SEN: ¶¶
- AXIOM ¡ ^       6FREE: 
+ AXIOM ¡ ^        6FREE: 
 
+ # BION-SYNTAX-BAUM (STRUKTURELLE KASKADE)
  AXIOM ¡ SYNTAX-BAUM = ^
  AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYTK>
- AXIOM ¡ ^       1SYNC: <SYNK>
- AXIOM ¡ ^       2KOPF: <NITK>
- AXIOM ¡ ^      1START: <POIST-ON-PIPE-PIPE>
- AXIOM ¡ ^       2FOOD: <NITK>
+ AXIOM ¡ ^        1SYNC: <SYNK>
+ AXIOM ¡ ^        2KOPF: <NITK>
+ AXIOM ¡ ^       1START: <[PREFIX]-PIPE>
+ AXIOM ¡ ^        2FOOD: <NITK>
  AXIOM ¡ ^  3ZYKLUS-IN: <ZYTK>
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        5REK: <REK>
@@ -52,36 +56,26 @@ BION-EXTRAWABE-ON-PIPE Ð BLOCKWABE
  AXIOM ¡ ^        5REK: <REK>
  AXIOM ¡ ^        4SEN: <SENK>
  AXIOM ¡ ^        4SEN: <SENK>
- AXIOM ¡ ^       6FREE: <REK>
+ AXIOM ¡ ^        6FREE: <REK>
 
- BRÜCKE-IN ¡ <ZYTK>
- BRÜCKE-IN ¡ <SYNK>
- BRÜCKE-IN ¡ <NITK>
+ # BRÜCKEN-STEUERUNG (IN / IO / OUT PIPELINE ROUTING)
+ BRÜCKEN-IN ¡ <ZYTK>
+ BRÜCKEN-IN ¡ <SYNK>
+ BRÜCKEN-IN ¡ <NITK>
 
- BRÜCKE-IO ¡ POIST-ON-PIPE-PIPE
+ BRÜCKEN-IO ¡ [PREFIX]-PIPE
 
- BRÜCKE-OUT ¡ <NITK>
- BRÜCKE-OUT ¡ <ZYTK>
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <SENK>
- BRÜCKE-OUT ¡ <SENK> 
+ BRÜCKEN-OUT ¡ <NITK>
+ BRÜCKEN-OUT ¡ <ZYTK>
+ BRÜCKEN-OUT ¡ <REK>
+ BRÜCKEN-OUT ¡ <REK>
+ BRÜCKEN-OUT ¡ <REK>
+ BRÜCKEN-OUT ¡ <REK>
+ BRÜCKEN-OUT ¡ <REK>
+ BRÜCKEN-OUT ¡ <SENK>
+ BRÜCKEN-OUT ¡ <SENK>
 
-
-#######################################################
-
- info : protein pipeline = ON-PIPE 
-
- Regelt die anschlüsse aller komponenten 
- mit in und out kanälen , inklusive  
-
- syntax erlaubnis für jede blockwabe in einer komponente 
- und verbindet den datenstrangverarbeitungskanal.
-
- die wabe selbst muss je nach einsatz präzisiert werden 
- im bereich : SYNTAX-ERLAUBNIS 
-
- und in und out brücken demenspreczhend angepasst .
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_BLOCKWABE_ON_PIPE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

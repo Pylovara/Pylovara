@@ -1,222 +1,69 @@
-# ==============================================================================
-# BION-EXTRAWABE: STATUSBACKWABE (REXTT-PROZESS)
-# System-Kontext: TWS / Pylovara / MCS (SSoT Standard - Kernel 10 REX)
-# Zweck: Routing von System-Status, Errors und Interrupts via ¤¤
-# ==============================================================================
+@wabinator-template: STATUSBACKWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = STATUSBACKWABE (SYSTEM-FEEDBACK & RÜCKKANAL-WABE)     #
+###==##==###======#####========================#####======###==##==###
 
-BION-EXTRAWABE-PROZESS Ð STATUSBACKWABE
+BION-EXTRAWABE-[BEREICH] Ð STATUSBACKWABE
 
- # Morphes Symbol der STATUSBACKWABE
- MORPHIC-ID ¡ REXTT-PROZESS
+ # Morphes Symbol der Statusbackwabe
+ MORPHIC-ID ¡ [PREFIX]TT-[PROZESS_NAME]
 
- # Eindeutige BION-Identifikation im REX-Kernel
- BION-ID ¡ RX00HT01ST01BK01TR01TT01
+ # Eindeutige BION-Identifikation
+ BION-ID ¡ [BION_INDEX]TT01
 
- # EXPLITITE GESETZE 
- AXIOM ¡ RETT-PROZESS = ¬·¤¤
- AXIOM ¡ RETT-PROZESS = ¬·¤¤ <POIK>
- AXIOM ¡ RETT-PROZESS = ¬·¤¤ [<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬·¤¤ —[<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬·¤¤ »[<BOXK+BOXHT-BOXI-BOXELT>]«
- AXIOM ¡ RETT-PROZESS = ¬·¤¤ »—[<BOXK+BOXHT-BOXI-BOXELT>]«
+ # EXPLIZITE GESETZE & TACT-MODIFIERS (¤¤ STATUS-MUSTER)
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬·¤¤
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬·¤¤ <[EINGANGS_KERN]>
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬·¤¤ [<CONTAINER_KERN>]
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬·¤¤ »[<EXPRESSION_MUSTER_1>]«
 
- AXIOM ¡ RETT-PROZESS = ¬··¤¤
- AXIOM ¡ RETT-PROZESS = ¬··¤¤ <POIK>
- AXIOM ¡ RETT-PROZESS = ¬··¤¤ [<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬··¤¤ —[<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬··¤¤ »[<BOXK+BOXHT-BOXI-BOXELT>]«
- AXIOM ¡ RETT-PROZESS = ¬··¤¤ »—[<BOXK+BOXHT-BOXI-BOXELT>]«
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬··¤¤
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬··¤¤ <[EINGANGS_KERN]>
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬··¤¤ [<CONTAINER_KERN>]
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬··¤¤ »[<EXPRESSION_MUSTER_2>]«
 
- AXIOM ¡ RETT-PROZESS = ¬···¤¤
- AXIOM ¡ RETT-PROZESS = ¬···¤¤ <POIK>
- AXIOM ¡ RETT-PROZESS = ¬···¤¤ [<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬···¤¤ —[<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬···¤¤ »[<BOXK+BOXHT-BOXI-BOXELT>]«
- AXIOM ¡ RETT-PROZESS = ¬···¤¤ »—[<BOXK+BOXHT-BOXI-BOXELT>]«
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬···¤¤
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬···¤¤ <[EINGANGS_KERN]>
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬···¤¤ [<CONTAINER_KERN>]
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬···¤¤ »[<EXPRESSION_MUSTER_3>]«
 
- AXIOM ¡ RETT-PROZESS = ¬····¤¤
- AXIOM ¡ RETT-PROZESS = ¬····¤¤ <POIK>
- AXIOM ¡ RETT-PROZESS = ¬····¤¤ [<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬····¤¤ —[<BOXK>]
- AXIOM ¡ RETT-PROZESS = ¬····¤¤ »[<BOXK+BOXHT-BOXI-BOXELT>]«
- AXIOM ¡ RETT-PROZESS = ¬····¤¤ »—[<BOXK+BOXHT-BOXI-BOXELT>]«
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬····¤¤
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬····¤¤ <[EINGANGS_KERN]>
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬····¤¤ [<CONTAINER_KERN>]
+ AXIOM ¡ [PREFIX]TT-[PROZESS_NAME] = ¬····¤¤ »[<EXPRESSION_MUSTER_4>]«
 
- # KONTEXT-RÜCKBAUPFAD
- ABSK ¡ REK+REHT-PROZESS+REST-PROZESS+REBK-PROZESS+RECB-PROZESS+RETR-PROZESS+REXTT-PROZESS
+ # KONTEXT-RÜCKBAUPFAD (ABSK-KETTE)
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]TT-[PROZESS_NAME]
 
  # EINGANG
- BIND ¡ ICTN-IN1
- BIND ¡ ICTN-IN2
- BIND ¡ ICTN-IN3
- BIND ¡ ICTN-IN4
+ BIND ¡ [EINGANGS_QUELLE_1]
+ BIND ¡ [EINGANGS_QUELLE_2]
+ BIND ¡ [EINGANGS_QUELLE_3]
+ BIND ¡ [EINGANGS_QUELLE_4]
 
- # AUSGANG
- LINK ¡ RETX-STUFE-0 = Ŧ° # SPÄTER BEI RETRON EINTRAGEN X ZU HT
- LINK ¡ RETX-STUFE-1 = Ŧ¹ # SPÄTER BEI RETRON EINTRAGEN X ZU HT
- LINK ¡ RETX-STUFE-2 = Ŧ² # SPÄTER BEI RETRON EINTRAGEN X ZU HT
- LINK ¡ RETX-STUFE-3 = Ŧ³ # SPÄTER BEI RETRON EINTRAGEN X ZU HT
+ # AUSGANG (TAKTSTUFEN)
+ LINK ¡ [AUSGANG_STUFE_0] = Ŧ°
+ LINK ¡ [AUSGANG_STUFE_1] = Ŧ¹
+ LINK ¡ [AUSGANG_STUFE_2] = Ŧ²
+ LINK ¡ [AUSGANG_STUFE_3] = Ŧ³
 
- # CONTAINER
- KERNBINDUNG ¡ <POIK>
+ # CONTAINER / HARDWAREBINDUNG
+ KERNBINDUNG ¡ <[EINGANGS_KERN]>
 
- STATUS-IN ¡ <BOXHT-BOXI-PRINT>
- STATUS-IN ¡ <BOXHT-BOXI-SYSCALL>
- STATUS-IN ¡ <BOXHT-BOXI-ABI>
- STATUS-IN ¡ <BOXHT-BOXI-BINÄR>
- STATUS-IN ¡ <BOXHT-BOXI-NET>
- STATUS-IN ¡ <BOXHT-BOXI-PFAD>
- STATUS-IN ¡ <BOXHT-BOXI-SHELL>
+ # STATUS-QUELLEN (ORIGIN OF SYSTEM MESSAGES / ERRORS)
+ STATUS-IN ¡ <[STATUS_SOURCE_1]>
+ STATUS-IN ¡ <[STATUS_SOURCE_2]>
+ STATUS-IN ¡ <[STATUS_SOURCE_3]>
+ STATUS-IN ¡ <[STATUS_SOURCE_4]>
 
- STATUS-OUT ¡ <BOXHT-BOXI-PRINT>
- STATUS-OUT ¡ <BOXHT-BOXI-CACHE>
- STATUS-OUT ¡ <BOXHT-BOXI-SHELL>
- STATUS-OUT ¡ <BOXHT-BOXI-SYSCALL>
+ # STATUS-ZIELE (DESTINATIONS FOR PROCESSING / LOGGING)
+ STATUS-OUT ¡ <[STATUS_TARGET_1]>
+ STATUS-OUT ¡ <[STATUS_TARGET_2]>
+ STATUS-OUT ¡ <[STATUS_TARGET_3]>
+ STATUS-OUT ¡ <[STATUS_TARGET_4]>
 
- # STATUS-QUELLEN (HIER ENTSTEHEN FEHLER UND SYSTEM-MELDUNGEN)
- STATUS-IN ¡ <BOXHT-BOXI-PRINT>
- STATUS-IN ¡ <BOXHT-BOXI-SYSCALL>
- STATUS-IN ¡ <BOXHT-BOXI-ABI>
- STATUS-IN ¡ <BOXHT-BOXI-BINÄR>
- STATUS-IN ¡ <BOXHT-BOXI-NET>
- STATUS-IN ¡ <BOXHT-BOXI-PFAD>
-
- # STATUS-ZIELE (HIER LANDEN DIE RÜCKMELDUNGEN ZUR VERARBEITUNG/ANZEIGE)
- STATUS-OUT ¡ <BOXHT-BOXI-PRINT>
- STATUS-OUT ¡ <BOXHT-BOXI-CACHE>
- STATUS-OUT ¡ <BOXHT-BOXI-SHELL>
- STATUS-OUT ¡ <BOXHT-BOXI-SYSCALL> 
-
-
-#######################################################
-
-NOTIZ : 
-
-SPÄTERE KOPPELUNG AM MCMD REGISTER FÜR DIREKTE COMMANDOS 
-
- BEISPIEL : 
-
- ¢! 
- »—[~ ANSTEUERUNG-TERMINAL && SEND-BOXHT-SHELL ~]« 
-  ¬· »–[' sudo pacman -Syyu ']«
-      ¬·¤¤ »—[' [sudo] Passwort für bandino: ']« 
-            ¬· »—[~ SEND-BOXHT-SHELL ~]« 
-                ¬· »—[' <PASSWORD> ']«
-                         ¿¹
-                    ¬·¤¤ –[' :: Paketdatenbanken werden synchronisiert …
- core                         126,7 KiB  71,5 KiB/s 00:02 [------------------------------] 100%
- extra                          8,3 MiB  1250 KiB/s 00:07 [------------------------------] 100%
- multilib                     127,2 KiB  63,5 KiB/s 00:02 [------------------------------] 100%
-:: Vollständige Systemaktualisierung wird gestartet …
-Abhängigkeiten werden aufgelöst …
-:: Es stehen 5 Anbieter für onnxruntime zur Verfügung:
-:: Repositorium extra
-   1) onnxruntime-cpu  2) onnxruntime-cuda  3) onnxruntime-opt-cuda  4) onnxruntime-opt-rocm
-   5) onnxruntime-rocm
-
-Geben Sie eine Zahl ein (Voreinstellung=1):  ']
-
-                     
-
-       ¿¹ 
-      »–[~ SEND-BOXHT-SHELL ~]«
-       ¬· »—[' <NR> ']«
-
- !¢ 
-
- NATÜRLICH GEHTS WEITER ABER NUR VISUELL GREIFBAR 
- UND OB ICH DAS ÜBERHAUPT ALS SEND BEFEHL AUFSETZEN 
- MUSS , STEHT NOCH IN DEN STERNEN .. 
-
- deswegen würde ich persönlich die shell selber auch noch in den status in bereich 
- verschieben bzw auch möglich machen 
-
-
- das erlaub später folgendes : 
-
-
- erst als parsing getriebene programmiersprache über lua 
- oder c oder c++ 
-
- dann der benchmark beweis ( echtzeit )
-
- dann investoren 
-
- der rex ist so konsipiert das er im unterbau 
- in einer ide als script sprache verwendet werden kann 
- und auch über diese sprache spiele , packete , ansteuerungen 
- erledigen kann 
-
- später kann der in und output der durch das mcmd register 
- und befehlsketten sätze aufgebaut wird 
-
- als terminal bei den alu und status meldungen und mcmd 
- direkt mit dem unterbau kommunizieren .. 
-
- nicht nur statische abläufe , sondern dynamische durch eingriff 
-
- und zusätzlich lassen sich so , wie in C oder andere programmiersprachen ,
- ganze programme schreiben . 
-
- und wenn dann noch der baumodus dazu kommt .. 
-
- werden nicht mal mehr fremde packete benötigt 
- geschweigeden fremde engines oder compositoren 
-
- das ist das ziel und deswegen ist der rex so aufgebaut .
-
-
-
-
-¢! 
- »—[~ ANSTEUERUNG-TERMINAL && SEND-BOXHT-SHELL ~]« 
-  ¬· »–[' sudo pacman -Syyu ']«
-      ¬·¤¤ »—[' [sudo] Passwort für bandino: ']« 
-            ¬· »—[~ SEND-BOXHT-SHELL ~]« 
-                ¬· »—[' <PASSWORD> ']«
-                         ¿¹
-                    ¬·¤¤ –[' :: Paketdatenbanken werden synchronisiert …
- core                         126,7 KiB  71,5 KiB/s 00:02 [------------------------------] 100%
- extra                          8,3 MiB  1250 KiB/s 00:07 [------------------------------] 100%
- multilib                     127,2 KiB  63,5 KiB/s 00:02 [------------------------------] 100%
-:: Vollständige Systemaktualisierung wird gestartet …
-Abhängigkeiten werden aufgelöst …
-:: Es stehen 5 Anbieter für onnxruntime zur Verfügung:
-:: Repositorium extra
-   1) onnxruntime-cpu  2) onnxruntime-cuda  3) onnxruntime-opt-cuda  4) onnxruntime-opt-rocm
-   5) onnxruntime-rocm
-
-Geben Sie eine Zahl ein (Voreinstellung=1):  ']
-
-                     
-
-       ¿¹ 
-      »–[~ SEND-BOXHT-SHELL ~]«
-       ¬· »—[' <NR> ']«
-
- !¢ 
-
- ¢!
- »—[' sudo pacman -Syyu ']«««~ SEND-COMPOSITOR ~« 
- !¢
-
- DANN GEHT HIER DAS TERMINAL AUF QUASI 
-
- ----------------------------------------------
- [sudo] Passwort für bandino: blabla 
- :: Paketdatenbanken werden synchronisiert …
- core                         126,7 KiB  71,5 KiB/s 00:02 [------------------------------] 100%
- extra                          8,3 MiB  1250 KiB/s 00:07 [------------------------------] 100%
- multilib                     127,2 KiB  63,5 KiB/s 00:02 [------------------------------] 100%
- :: Vollständige Systemaktualisierung wird gestartet …
- Abhängigkeiten werden aufgelöst …
- :: Es stehen 5 Anbieter für onnxruntime zur Verfügung:
- :: Repositorium extra
-   1) onnxruntime-cpu  2) onnxruntime-cuda  3) onnxruntime-opt-cuda  4) onnxruntime-opt-rocm
-   5) onnxruntime-rocm
- ----$ 1 
-
- usw , ganz normal im os ..
-
- und das mit einer zeile MCS Code ... 
-
- 
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_STATUSBACKWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

@@ -1,46 +1,24 @@
-BION-EXTRAWABE-BOXI-PFAD Ð SYSTEMWABE 
+@wabinator-template: SYSTEMWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = GENERISCHE SYSTEMWABE FÜR I/O UND STATUS-STEUERUNG    #
+###==##==###======#####========================#####======###==##==###
 
- MORPHIC-ID ¡ BOXSS-BOXI-PFAD-IO
+BION-EXTRAWABE-[BEREICH] Ð SYSTEMWABE
 
- BION-ID ¡ BX00X09ST09SS10 
+ MORPHIC-ID ¡ [PREFIX]SS-[SYSTEM_FUNKTION]
 
- AXIOM ¡ SS- -IO =  <IO>
+ BION-ID ¡ [BION_INDEX]SS01
 
- ABSK ¡ 
+ AXIOM ¡ [PREFIX]SS-[SYSTEM_FUNKTION] = [OPENING_SYMBOL]<[SIGNAL_TYP]>
 
- I-ID ¡ 
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]SS-[SYSTEM_FUNKTION]
 
- O-ID ¡
+ I-ID ¡ [EINGANGS_SIGNAL_ODER_WERT]
 
-#######################################################
+ O-ID ¡ [AUSGANGS_SIGNAL_ODER_WERT]
 
- Info : Eingabe 
-
- Die Systemwabe ist eine generalisierungs wabe für 
- eingaben ... 
-
- ein mächtiges werzeug !
-
- sie kann schluss endlich eingaben in und out führen 
- also : 
-
- I-ID = Eingabe selbst 
-
- O-ID = Innhalt Rausführen 
-
- sie wird zwischen geschaltet und kann eingaben (input) 
- vom system selbst oder von Keyboards in sich tragen .
-
- Was sie trägt wird in einem protein entschieden und 
- kann folge richtig in ON oder OFF pipe proteinen 
- für den jeweiligen zweck entnommen werden .
-
- die systemwabe kann auch für Admin bestätigungen 
- genutzt werden , in pylovara können diese bestätigungen 
- im grunde alle BOXI tragen die nicht mit zahlen zu tun haben 
-
- Für entwickler von Custem komponenten ist wichtig zu verstehen 
- das ihr , je nach system , die jeweiligen richtigen boxi verwendet 
- wenn ihr systemwaben nicht in einer komponente selbst benutzen wollt.
-
- denkt hierbei an die VBSK ( das sind eure andock stationen )
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_SYSTEMWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

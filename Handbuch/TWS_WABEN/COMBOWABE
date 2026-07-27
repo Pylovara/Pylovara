@@ -1,22 +1,25 @@
-BION-EXTRAWABE- Ð COMBOWABE 
+@wabinator-template: COMBOWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = GENERISCHE COMBOWABE FÜR VERKNÜPFUNGSNETZE           #
+###==##==###======#####========================#####======###==##==###
 
- MOPRHIC-ID ¡ CB-
+BION-EXTRAWABE-[BEREICH] Ð COMBOWABE 
 
- BION-ID ¡ 
+ MORPHIC-ID ¡ [PREFIX]CB-[VERKNÜPFUNG_NAME]
 
- AXIOM ¡ CB- = <SYMBOL><KERNWABEBINDUNG>
+ BION-ID ¡ [BION_INDEX]CB01
 
- ABSK ¡ -<KERNWABEBINDUNG>
+ AXIOM ¡ [PREFIX]CB-[VERKNÜPFUNG_NAME] = [PRAEFIX_SYMBOL]<[KERNWABEBINDUNG_1]>
 
- LINK ¡ <KERNWABEBINDUNG>
-#LINK ¡ <KERNWABEBINDUNG>
-#LINK ¡ <KERNWABEBINDUNG>
-#LINK ¡ <KERNWABEBINDUNG>
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]CB-[VERKNÜPFUNG_NAME]
 
-#######################################################
+ LINK ¡ [KERNWABEBINDUNG_1]
+ # LINK ¡ [KERNWABEBINDUNG_2]
+ # LINK ¡ [KERNWABEBINDUNG_3]
+ # LINK ¡ [KERNWABEBINDUNG_4]
 
- info : zusammenführungen von unterprogrammen 
-
- wird für die zusammenarbeit der unterprogramme 
- verwendet in dem sie jede komponente an der kernwabe 
- ansteuert und verlinkt.
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_COMBOWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

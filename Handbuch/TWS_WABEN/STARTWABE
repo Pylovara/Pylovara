@@ -1,17 +1,21 @@
 
-BION-EXTRAWABE- Ð 
+@wabinator-template: STARTWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = GENERISCHE STARTWABE FÜR ANFANGSMARKIERUNGEN         #
+###==##==###======#####========================#####======###==##==###
 
- MORPHIC-ID ¡ ST-
+BION-EXTRAWABE-[BEREICH] Ð STARTWABE
 
- BION-ID ¡ 
+ MORPHIC-ID ¡ [PREFIX]ST-[TYP_NAME]
 
- AXIOM ¡ ST- = <SYMBOL>
+ BION-ID ¡ [BION_INDEX]ST01
 
- ABSK ¡ 
+ AXIOM ¡ [PREFIX]ST-[TYP_NAME] = [OPENING_SYMBOL]
 
-#######################################################
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]ST-[TYP_NAME]
 
- info : startsequenz des MCS-TYP 
-
- startet symbolische existenz und oder 
- startet verarbeitungs sequenz 
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_STARTWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

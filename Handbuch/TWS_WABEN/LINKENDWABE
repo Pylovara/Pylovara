@@ -1,31 +1,34 @@
+@wabinator-template: LINKENDWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = LINKENDWABE (ROUTING- & VERKNÜPFUNGS-ENDPUNKT)        #
+###==##==###======#####========================#####======###==##==###
 
-BION-EXTRAWABE-<HAUPTWABE> Ð LINKENDWABE 
+BION-EXTRAWABE-<HAUPTWABE> Ð LINKENDWABE
 
- MORPHIC-ID ¡ <WBID>LD-<HAUPTWABE>
+ MORPHIC-ID ¡ [PREFIX]LD-[HAUPTWABE_NAME]
 
- BION-ID ¡ <BINDUNG-BION-ID>
- BION-ID ¡ <BINDUNG-BION-ID>
- BION-ID ¡ <BINDUNG-BION-ID>
- BION-ID ¡ <BINDUNG-BION-ID>
+ BION-ID ¡ [BINDUNG_BION_ID_1]
+ BION-ID ¡ [BINDUNG_BION_ID_2]
+ BION-ID ¡ [BINDUNG_BION_ID_3]
+ BION-ID ¡ [BINDUNG_BION_ID_4]
 
- AXIOM ¡ <AUSGANGSPUNKT> = <VORGESAMT><ZU>
- AXIOM ¡ <AUSGANGSPUNKT> = <VORGESAMT><ZU>
- AXIOM ¡ <AUSGANGSPUNKT> = <VORGESAMT><ZU>
- AXIOM ¡ <AUSGANGSPUNKT> = <VORGESAMT><ZU>
+ AXIOM ¡ [AUSGANGSPUNKT_1] = [VORGESAMT_1][ZIEL_1]
+ AXIOM ¡ [AUSGANGSPUNKT_2] = [VORGESAMT_2][ZIEL_2]
+ AXIOM ¡ [AUSGANGSPUNKT_3] = [VORGESAMT_3][ZIEL_3]
+ AXIOM ¡ [AUSGANGSPUNKT_4] = [VORGESAMT_4][ZIEL_4]
 
- LINK ¡ <VON>-<ZU>
- LINK ¡ <VON>-<ZU>
- LINK ¡ <VON>-<ZU>
- LINK ¡ <VON>-<ZU>
+ LINK ¡ [QUELLE_1]-[ZIEL_1]
+ LINK ¡ [QUELLE_2]-[ZIEL_2]
+ LINK ¡ [QUELLE_3]-[ZIEL_3]
+ LINK ¡ [QUELLE_4]-[ZIEL_4]
 
- ABSK ¡ <GESAMT>
- ABSK ¡ <GESAMT>
- ABSK ¡ <GESAMT>
- ABSK ¡ <GESAMT>
-   
-#######################################################
+ ABSK ¡ [GESAMT_PFAD_1]
+ ABSK ¡ [GESAMT_PFAD_2]
+ ABSK ¡ [GESAMT_PFAD_3]
+ ABSK ¡ [GESAMT_PFAD_4]
 
- Info : Endwabe mit weiterer bindung 
-
- schließt den auftrag ab und verlinkt weiter 
- an die dazugehörige komponente 
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_LINKENDWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

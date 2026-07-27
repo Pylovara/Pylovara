@@ -1,24 +1,43 @@
 
-BION-EXTRAWABE- Ð ENDWABE
+@wabinator-template: ENDWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = GENERISCHE ENDWABE FÜR ABSCHLUSS- UND KETENMORPHING #
+###==##==###======#####========================#####======###==##==###
 
- MORPHIC-ID ¡ ED-
+BION-EXTRAWABE-[BEREICH] Ð ENDWABE
 
- BION-ID ¡ 
- BION-ID ¡ 
- BION-ID ¡ 
+ MORPHIC-ID ¡ [PREFIX]ED-[VARIANTEN_NAME_1]
 
- AXIOM ¡ ED- = <GESAMT>
- AXIOM ¡ ED- = <GESAMT>
- AXIOM ¡ ED- = <GESAMT>
- 
- ABSK ¡ 
- ABSK ¡ 
- ABSK ¡ 
+ BION-ID ¡ [BION_INDEX]ED01
+
+ AXIOM ¡ [PREFIX]ED-[VARIANTEN_NAME_1] = [SCHLIESSSYMBOL_ODER_MUSTER_1]
+
+ ABSK ¡ [ABSK_KETTE_1]+[PREFIX]ED-[VARIANTEN_NAME_1]
 
 
-#######################################################
+BION-EXTRAWABE-[BEREICH] Ð ENDWABE
 
- info : unterprogramm zusammenführung
+ MORPHIC-ID ¡ [PREFIX]ED-[VARIANTEN_NAME_2]
 
- führt alle optionen eines unterprogramms zusammen 
- und bildet den schluss anker - endpunkt 
+ BION-ID ¡ [BION_INDEX]ED02
+
+ AXIOM ¡ [PREFIX]ED-[VARIANTEN_NAME_2] = [SCHLIESSSYMBOL_ODER_MUSTER_2]
+
+ ABSK ¡ [ABSK_KETTE_2]+[PREFIX]ED-[VARIANTEN_NAME_2]
+
+
+BION-EXTRAWABE-[BEREICH] Ð ENDWABE
+
+ MORPHIC-ID ¡ [PREFIX]ED-[VARIANTEN_NAME_3]
+
+ BION-ID ¡ [BION_INDEX]ED03
+
+ AXIOM ¡ [PREFIX]ED-[VARIANTEN_NAME_3] = [SCHLIESSSYMBOL_ODER_MUSTER_3]
+
+ ABSK ¡ [ABSK_KETTE_3]+[PREFIX]ED-[VARIANTEN_NAME_3]
+
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_ENDWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

@@ -1,18 +1,21 @@
 
-BION-HAUPTWABE Ð EXTRAWABE-
+@wabinator-template: HAUPTWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = GENERISCHE HAUPTWABE ALS STRANGBASIS                 #
+###==##==###======#####========================#####======###==##==###
 
- MORPHIC-ID ¡ HT-
+BION-HAUPTWABE Ð EXTRAWABE-[STRANG_NAME]
 
- BION-ID ¡ 
+ MORPHIC-ID ¡ [PREFIX]HT-[STRANG_NAME]
 
- AXIOM ¡ HT- = HT-
+ BION-ID ¡ [BION_INDEX]HT01
 
- ABSK ¡ 
+ AXIOM ¡ [PREFIX]HT-[STRANG_NAME] = [PREFIX]HT-[STRANG_NAME]
 
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]HT-[STRANG_NAME]
 
-#######################################################
-
- info : unterprogrammierungskern 
-
- anlaufstelle zu einer gesamten unterprogrammierung 
- einer kernkomponente
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_HAUPTWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

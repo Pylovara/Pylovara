@@ -1,18 +1,27 @@
+@wabinator-template: SETZUNGSWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = GENERISCHE SETZUNGSWABE FÜR MUSTER-TRANSFORMATION     #
+###==##==###======#####========================#####======###==##==###
 
-BION-EXTRAWABE- Ð SETZUNGSWABE
+BION-EXTRAWABE-[BEREICH] Ð SETZUNGSWABE
 
- MORPHIC-ID ¡ 
+ MORPHIC-ID ¡ [PREFIX]SE-[MUSTER_NAME]-SETZUNG
 
- BION-ID ¡ 
+ BION-ID ¡ [BION_INDEX]SE01
 
- AXIOM ¡ 
+ AXIOM ¡ [PREFIX]SE-[MUSTER_NAME]-SETZUNG = [TRENNER_ODER_MUSTER]
 
- ABSK ¡ 
+ ABSK ¡ [ABSK_KETTE]+[PREFIX]SE-[MUSTER_NAME]-SETZUNG
 
- SETZ-IN ¡ PIK
+ SETZ-IN ¡ <EINGANGS_WABE>
 
  AXIOM ¡ SETZ-OUT = ^
- AXIOM ¡ ^ PIK: –[<BXK>|<BXK>]
- AXIOM ¡ ^ PIK: [<BXK>|<BXK>]
- AXIOM ¡ ^ PIK: –[<BXK>|<POK>]
- AXIOM ¡ ^ PIK: [<BXK>|<POK>]
+ AXIOM ¡ ^ <EINGANGS_WABE>: [MUSTER_TRANSFORMATION_1]
+ AXIOM ¡ ^ <EINGANGS_WABE>: [MUSTER_TRANSFORMATION_2]
+ AXIOM ¡ ^ <EINGANGS_WABE>: [MUSTER_TRANSFORMATION_3]
+
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_SETZUNGSWABE_TEMPLATE_V1.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

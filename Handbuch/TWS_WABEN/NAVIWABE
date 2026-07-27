@@ -1,0 +1,45 @@
+@wabinator-template: NAVIWABE_SCHABLONE
+###==##==###======#####===WABINATOR SCHABLONE==#####======###==##==###
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # SCHABLONE = NAVIGATOR-WABE (GLOBALES KERNEL-ROUTING & INDEX)      #
+###==##==###======#####========================#####======###==##==###
+
+BION-NAVIWABE Ð GLOBAL-ROUTER
+
+ MORPHIC-ID ¡ NAVW-ROUTER
+
+ BION-ID ¡ NA00X01W01
+
+ AXIOM ¡ NAVW-ROUTER = <SYSTEM-INDEX>
+
+ ABSK ¡ NAVK+NAVW-ROUTER
+
+ # REGISTER DER KERNEL- & WABEN-MÖRF-KÜRZEL (ROUTING-TARGETS)
+ INDEX-TARGET ¡ KERN-ID  = K       # Kernwaben / Basis
+ INDEX-TARGET ¡ HAUPT-ID = HT      # Hauptwaben / Stränge
+ INDEX-TARGET ¡ START-ID = ST      # Startwaben
+ INDEX-TARGET ¡ BLOCK-ID = BK      # Blockwaben
+ INDEX-TARGET ¡ COMBO-ID = CB      # Combowaben / Netze
+ INDEX-TARGET ¡ TOR-ID   = TR      # Torwaben / Gateways
+ INDEX-TARGET ¡ STAT-ID  = TT      # Statusbackwaben
+ INDEX-TARGET ¡ ALU-ID   = AL      # Alubackwaben
+ INDEX-TARGET ¡ KNOT-ID  = TN      # Knotenwaben
+ INDEX-TARGET ¡ DATA-ID  = TP      # Datenwaben / MCS-Typen
+ INDEX-TARGET ¡ MAST-ID  = MA      # Masterwaben
+ INDEX-TARGET ¡ LINK-ID  = LD      # Linkendwaben
+ INDEX-TARGET ¡ END-ID   = ED      # Endwaben
+ INDEX-TARGET ¡ SYST-ID  = SS      # Systemwaben / IO
+
+ # DYNAMISCHE BINDUNGS-SINKEN & ENTITY-MAPPING
+ ROUTE-BIND ¡ BIND-PATTERN = <PREFIX><Morphic-ID>
+ ROUTE-LINK ¡ LINK-PATTERN = <VON>-<ZU>
+ ROUTE-ABSK ¡ ABSK-PATTERN = <ABSK_KETTE>
+
+ # SYSTEM-ROUTING (KOPPLUNG AN DEN WABINATOR PARSER)
+ NAV-TARGET ¡ /Pylovara/Handbuch/KernelNotes/Wabinator/
+ NAV-TARGET ¡ /Pylovara/Handbuch/KernelNotes/Boxis/
+
+###==##==###======#####========================#####======###==##==###
+ # ABLAGEORT = /Pylovara/Handbuch/KernelNotes/Wabinator/
+ # TYPE      = WABINATOR_NAVIWABE_TEMPLATE_V2.0
+###==##==###======#####===SCHABLONE ENDE=======#####======###==##==###

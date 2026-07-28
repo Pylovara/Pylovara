@@ -28,13 +28,48 @@ WABEN-KATEGORIE Ð KERNWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
+ PROGRAMM ¡ KNOTEN
 
+ WABEN-ID ¡ HT
 
+ BION-ZIFFER ¡ 06
 
+ BION-ID ¡ BI05HT05
 
+ CBSK ¡ BI05HT06-KNOTEN
 
+ GBSK ¡ BIHT-KNOTEN
 
+ ABSK ¡ BIK-BIHT-KNOTEN
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ KNOTEN
+
+ WABEN-ID ¡ ST
+
+ BION-ZIFFER ¡ 07
+
+ BION-ID ¡ BI05HT05
+
+ CBSK ¡ BI05HT05-KNOTEN
+
+ GBSK ¡ BIST-KNOTEN
+
+ ABSK ¡ BIK-BIHT-KNOTEN
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ AXIOM ¡ ZEICHENBAUM-BAUM ≠ MCS-TYP-ST-KNOTEN ≠ ^ * = *
+ AXIOM ¡ ^ <TASTENCODE> ≠ ;
+
+ MCS-TYP-ST-KNOTEN ¡ ;
+
+###====================================|====================================###
 
 
 

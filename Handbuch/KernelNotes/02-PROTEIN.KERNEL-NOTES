@@ -30,6 +30,8 @@ WABEN-KATEGORIE Ð KERNWABE
  ABSK ¡ PIK
 
 ###====================================|====================================###
+###==========================ON-PIPE BEARBEITUNG============================###
+###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE
 
@@ -75,6 +77,7 @@ WABEN-KATEGORIE Ð STARTWABE
  MCS-TYP-2 ¡ [
 
 ###====================================|====================================###
+
 WABEN-KATEGORIE Ð COMBOWABE 
 
  PROGRAMM ¡ ON-PIPE
@@ -163,8 +166,6 @@ WABEN-KATEGORIE Ð BLOCKWABE
  BRÜCKE-OUT ¡ <REK>
  BRÜCKE-OUT ¡ <SEK>
  BRÜCKE-OUT ¡ <SEK>
-
-###====================================|====================================###
 
 ###====================================|====================================###
 
@@ -340,187 +341,224 @@ WABEN-KATEGORIE Ð ENDWABE
  MCS-TYP-ON-PIPE-FINAL ¡ —[<BXK><TEK><POK>]
 
 ###====================================|====================================###
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+###=========================OFF-PIPE BEARBEITUNG============================###
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE
 
+ PROGRAMM ¡ OFF-PIPE
 
+ WABEN-ID ¡ HT
 
+ BION-ZIFFER ¡ 03
 
+ BION-ID ¡ PI03HT03
 
+ CBSK ¡ PI03HT03-OFF-PIPE
 
-
-
-
-
-
-
-
-!!!!!! ↓↓↓↓ ALTER BEREICH ↓↓↓ !!!!!
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-OFF-PIPE
-
- MORPHIC-ID ¡ PIHT-OFF-PIPE
-
- BION-ID ¡ PI02HT02 
-
- AXIOM ¡ PIHT-OFF-PIPE = PIHT-OFF-PIPE
+ GBSK ¡ PIHT-OFF-PIPE
 
  ABSK ¡ PIK+PIHT-OFF-PIPE
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###====================================|====================================###
 
-BION-EXTRAWABE-OFF-PIPE Ð STARTWABE
+WABEN-KATEGORIE Ð STARTWABE 
 
- MORPHIC-ID ¡ PIST-OFF-PIPE
+ PROGRAMM Ð OFF-PIPE
 
- BION-ID ¡ PI02HT02ST02
+ WABEN-ID ¡ ST
 
- AXIOM ¡ PIST-OFF-PIPE = [
+ BION-ZIFFER ¡ 03
+
+ BION-ID ¡ PI03HT03ST03
+
+ CBSK ¡ PI03ST03-OFF-PIPE
+
+ GBSK ¡ PIST-OFF-PIPE
 
  ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMMIERUNGSBEREICH ↓
 
-BION-EXTRAWABE-OFF-PIPE Ð COMBOWABE
+ AXIOM ¡ ZEICHENBAUM-BAUM ≠ ^ * = **
+ AXIOM ¡ ^ <TASTENCODE> ≠ [
 
- MORPHIC-ID ¡ PICB-OFF-PIPE-BXK 
+ MCS-TYP-OFF-PIPE ¡ [
 
- BION-ID ¡ PI02HT02ST02CB04
+###====================================|====================================###
 
- AXIOM ¡ PICB-OFF-PIPE-BXK = [<BXK>
+WABEN-KATEGORIE Ð COMBOWABE 
 
- ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK 
+ PROGRAMM ¡ OFF-PIPE
 
- LINK ¡ BXK
+ WABEN-ID ¡ CB
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-ZIFFER ¡ 07
 
-BION-EXTRAWABE-OFF-PIPE Ð COMBOWABE
+ BION-ID ¡ PI03HT03ST03CB07
 
- MORPHIC-ID ¡ PICB-OFF-PIPE-POK 
+ CBSK ¡ PI07CB07-OFF-PIPE-BXK
 
- BION-ID ¡ PI02HT02ST02CB05
+ GBSK ¡ PICB-OFF-PIPE-BXK
 
- AXIOM ¡ PICB-OFF-PIPE-POK = [<POK>
+ ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK
 
- ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-POK
+ PROGRAMMIERUNGSBEREICH ↓
 
- LINK ¡ POK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-OFF-PIPE Ð COMBOWABE
-
- MORPHIC-ID ¡ PICB-OFF-PIPE-BXK-TEK-POK
-
- BION-ID ¡ PI02HT02ST02CB06
-
- AXIOM ¡ PICB-OFF-PIPE-BXK-TEK-POK = [<BXK><TEK><POK>
-
- ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK-TEK-POK
+ WABEN-BIND  ¡ MCS-TYP-OFF-PIPE
+ WABEN-RESET ¡ PI03ST03-OFF-PIPE
 
  LINK ¡ BXK
 
- LINK ¡ TEK
+ AXIOM ¡ LINK ≠ MCS-TYP-OFF-PIPE + BXK ≠ ^ COMBINIERT = **-*+* ≠ MCS-TYP-OFF-PIPE-BXK = **
+ AXIOM ¡ ^ COMBINIERT = PICB-OFF-PIPE-BXK
+ AXIOM ¡ ^ MCS-TYP-OFF-PIPE-BXK = [<BXK>
 
- LINK ¡ POK
+ MCS-TYP-OFF-PIPE-BXK ¡ [<BXK>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###====================================|====================================###
 
-BION-EXTRAWABE-OFF-PIPE Ð ENDWABE
+WABEN-KATEGORIE Ð ENDWABE
 
- MORPHIC-ID ¡ PIED-OFF-PIPE-BXK
+ PROGRAMM ¡ OFF-PIPE
 
- BION-ID ¡ PI02HT02ST02CB04ED04
+ WABEN-ID ¡ ED
 
- AXIOM ¡ PIED-OFF-PIPE-BXK = [<BXK>]
+ BION-ZIFFER ¡ 04
+
+ BION-ID ¡ PI03HT03ST03CB07ED04
+
+ GBSK ¡ PIED-OFF-PIPE-BXK
 
  ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK+PIED-OFF-PIPE-BXK
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMMIERUNGSBEREICH ↓
 
-BION-EXTRAWABE-OFF-PIPE Ð ENDWABE
+ WABEN-BIND  ¡ MCS-TYP-OFF-PIPE-BXK
+ WABEN-RESET ¡ PI07CB07-OFF-PIPE-BXK
 
- MORPHIC-ID ¡ PIED-OFF-PIPE-POK
+ AXIOM ¡ MCS-TYP-OFF-PIPE-BXK + ] ≠ ^ MCS-TYP-OFF-PIPE-FINAL = **
+ AXIOM ¡ ^ MCS-TYP-OFF-PIPE-FINAL = [<BXK>]
 
- BION-ID ¡ PI02HT02ST02CB05ED05
+ MCS-TYP-OFF-PIPE-FINAL ¡ [<BXK>]
 
- AXIOM ¡ PIED-OFF-PIPE-POK = [<POK>]
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-ZIFFER ¡ 08
+
+ BION-ID ¡ PI03HT03ST03CB08
+
+ CBSK ¡ PI08CB08-OFF-PIPE-POK
+
+ GBSK ¡ PICB-OFF-PIPE-POK
+
+ ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-POK
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ WABEN-BIND  ¡ MCS-TYP-OFF-PIPE
+ WABEN-RESET ¡ PI03ST03-OFF-PIPE
+
+ LINK ¡ POK
+
+ AXIOM ¡ LINK ≠ MCS-TYP-OFF-PIPE + POK ≠ ^ COMBINIERT = **-*+* ≠ MCS-TYP-OFF-PIPE-POK = **
+ AXIOM ¡ ^ COMBINIERT = PICB-OFF-PIPE-POK
+ AXIOM ¡ ^ MCS-TYP-OFF-PIPE-POK = [<POK>
+
+ MCS-TYP-OFF-PIPE-POK ¡ [<POK>
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ ED
+
+ BION-ZIFFER ¡ 05
+
+ BION-ID ¡ PI03HT03ST03CB08ED05
+
+ GBSK ¡ PIED-OFF-PIPE-POK
 
  ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-POK+PIED-OFF-PIPE-POK
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMMIERUNGSBEREICH ↓
 
-BION-EXTRAWABE-OFF-PIPE Ð ENDWABE
+ WABEN-BIND  ¡ MCS-TYP-OFF-PIPE-POK
+ WABEN-RESET ¡ PI08CB08-OFF-PIPE-POK
 
- MORPHIC-ID ¡ PIED-OFF-PIPE-BXK-TEK-POK
+ AXIOM ¡ MCS-TYP-OFF-PIPE-POK + ] ≠ ^ MCS-TYP-OFF-PIPE-FINAL = **
+ AXIOM ¡ ^ MCS-TYP-OFF-PIPE-FINAL = [<POK>]
 
- BION-ID ¡ PI02HT02ST02CB06ED06
+ MCS-TYP-OFF-PIPE-FINAL ¡ [<POK>]
 
- AXIOM ¡ PIED-OFF-PIPE-BXK-TEK-POK = [<BXK><TEK><POK>]
+###====================================|====================================###
 
- ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK-TEK-POK+PIED-OFF-PIPE-BXK-TEK-POK
+WABEN-KATEGORIE Ð COMBOWABE
 
+ PROGRAMM ¡ OFF-PIPE
 
+ WABEN-ID ¡ CB
+
+ BION-ZIFFER ¡ 09
+
+ BION-ID ¡ PI03HT03ST03CB09
+
+ CBSK ¡ PI09CB09-OFF-PIPE-BTP
+
+ GBSK ¡ PICB-OFF-PIPE-BXK-TEK-POK
+
+ ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK-TEK-POK
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ WABEN-BIND  ¡ MCS-TYP-OFF-PIPE
+ WABEN-RESET ¡ PI03ST03-OFF-PIPE
+
+ LINK ¡ BXK
+ LINK ¡ TEK
+ LINK ¡ POK
+
+ AXIOM ¡ LINK ≠ MCS-TYP-OFF-PIPE + BXK + TEK + POK ≠ ^ COMBINIERT = **-*+* ≠ MCS-TYP-OFF-PIPE-BTP = **
+ AXIOM ¡ ^ COMBINIERT = PICB-OFF-PIPE-BXK-TEK-POK
+ AXIOM ¡ ^ MCS-TYP-OFF-PIPE-BTP = [<BXK><TEK><POK>
+
+ MCS-TYP-OFF-PIPE-BTP ¡ [<BXK><TEK><POK>
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ ED
+
+ BION-ZIFFER ¡ 06
+
+ BION-ID ¡ PI03HT03ST03CB09ED06
+
+ GBSK ¡ PIED-OFF-PIPE-BTP
+
+ ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK-TEK-POK+PIED-OFF-PIPE-BTP
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ WABEN-BIND  ¡ MCS-TYP-OFF-PIPE-BTP
+ WABEN-RESET ¡ PI09CB09-OFF-PIPE-BTP
+
+ AXIOM ¡ MCS-TYP-OFF-PIPE-BTP + ] ≠ ^ MCS-TYP-OFF-PIPE-FINAL = **
+ AXIOM ¡ ^ MCS-TYP-OFF-PIPE-FINAL = [<BXK><TEK><POK>]
+
+ MCS-TYP-OFF-PIPE-FINAL ¡ [<BXK><TEK><POK>]
+
+###====================================|====================================###
 ###=====================REGE-DER-SPALTEN-SYNCHRONITÄT=======================###
  # ALLE FOLGE-KOMPONENTEN MÜSSEN ZENTRAL IM ABSATZ DARUNTER EINRASTEN.
  # EINRASTMÖGLICHKEITEN BEI COMBOWABE JE NACH BEREICH :

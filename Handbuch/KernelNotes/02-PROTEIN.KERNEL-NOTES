@@ -76,56 +76,41 @@ WABEN-KATEGORIE Ð STARTWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-ZIFFER ¡ 03
+
+ BION-ID ¡ PI02HT02ST02CB03
+
+ CBSK ¡ PI02CB03-ON-PIPE
+
+ GBSK ¡ PICB-ON-PIPE
+
+ ABSK ¡ PIK+PIHT-ON-PIPE+PIST-ON-PIPE
+
+ PROGRAMMIERUNGSBEREICH ↓ 
+
+ WABEN-BIND  ¡ MCS-TYP-1
+ WABEN-BIND  ¡ MCS-TYP-2
+ WABEN-RESET ¡ 
+
+ MCS-TYP ¡ <BINDE-SYMBOL>/<<BINDE-SYMBOL-ABFOLGE>
+
+ LINK ¡ *K
+ LINK ¡ *K
+
+ AXIOM ¡ LINK ≠ * + * ≠ ^ COMBINIERT = * ≠ MCS-TYP = * *
+ AXIOM ¡ ^ COMBINIERT = *
+ AXIOM ¡ ^ MCS-TYP = *
 
 
 
 !!!!!! ↓↓↓↓ ALTER BEREICH ↓↓↓ !!!!!
 
-BION Ð PROTEIN 
-
- MORPHIC-ID ¡ PI
-
- BION-ID ¡ PI
-
- MAK ¡ MASU-PROTEIN
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð PROTEIN 
-
- MORPHIC-ID ¡ PIK
-
- BION-ID ¡ PI02
-
- AXIOM ¡ PIK = <PIK>
-
- ABSK ¡ PIK 
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-ON-PIPE
-
- MORPHIC-ID ¡ PIHT-ON-PIPE
-
- BION-ID ¡ PI02HT01
-
- AXIOM ¡ PIHT-ON-PIPE = PIHT-ON-PIPE
-
- ABSK ¡ PIK+PIHT-ON-PIPE
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-ON-PIPE Ð STARTWABE
-
- MORPHIC-ID ¡ PIST-ON-PIPE
-
- BION-ID ¡ PI02HT01ST01
-
- AXIOM ¡ PIST-ON-PIPE = —[
-
- ABSK ¡ PIK+PIHT-ON-PIPE+PIST-ON-PIPE
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

@@ -96,21 +96,35 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  WABEN-BIND  ¡ MCS-TYP-1
  WABEN-BIND  ¡ MCS-TYP-2
- WABEN-RESET ¡ 
+ WABEN-RESET ¡ PI02ST02-ON-PIPE
 
- MCS-TYP ¡ <BINDE-SYMBOL>/<<BINDE-SYMBOL-ABFOLGE>
+ MCS-TYP-2 ¡ —
+ MCS-TYP-2 ¡ [
 
- LINK ¡ *K
- LINK ¡ *K
+ LINK ¡ PIK
 
- AXIOM ¡ LINK ≠ * + * ≠ ^ COMBINIERT = * ≠ MCS-TYP = * *
- AXIOM ¡ ^ COMBINIERT = *
- AXIOM ¡ ^ MCS-TYP = *
+ AXIOM ¡ LINK ≠ * + * ≠ ^ COMBINIERT = * ≠ MCS-TYP-ONE-PIPE = **
+ AXIOM ¡ ^ COMBINIERT = —[
+ AXIOM ¡ ^ MCS-TYP-ON-PIPE = –[
+
+ MCS-TYP-ON-PIPE = –[
+
+###====================================|====================================###
 
 
+
+
+
+
+
+
+
+
+
+
+###====================================|====================================###
 
 !!!!!! ↓↓↓↓ ALTER BEREICH ↓↓↓ !!!!!
-
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

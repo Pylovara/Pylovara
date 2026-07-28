@@ -31,8 +31,9 @@ WICHTIG :
  K  = 02
  HT = 02
  ST = 02
- CB = 03
- ED = 01
+ CB = 06
+ BK = 01
+ ED = 04
 
 ( ERWEITERN SOBALD NOTWENDIG )
 
@@ -201,6 +202,9 @@ WABEN-KATEGORIE Ð COMBOWABE
  LINK ¡ *K
  LINK ¡ *K
 
+ # ziehe comiert dann die typen hinein oder mcs-typ + kernwaben bindung ... 
+ # bei symbole ein weiteren mcs-typ-zusatz 
+
  AXIOM ¡ LINK ≠ * + * ≠ ^ COMBINIERT = * ≠ MCS-TYP = * *
  AXIOM ¡ ^ COMBINIERT = *
  AXIOM ¡ ^ MCS-TYP = *
@@ -265,7 +269,7 @@ WABEN-KATEGORIE Ð BLOCKWABE
 
  PROGRAMM ¡ <BEZIFFERUNGSNAME>
 
- WABEN-ID ¡ ED
+ WABEN-ID ¡ BK
 
  BION-ZIFFER ¡ <2-STELLIGE-NR>
 

@@ -166,7 +166,7 @@ WABEN-KATEGORIE Ð SYSTEMWABE
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð ENDWABE
+WABEN-KATEGORIE Ð LINKENDWABE
 
  PROGRAMM ¡ HARDWARE-FINAL
 
@@ -191,6 +191,13 @@ WABEN-KATEGORIE Ð ENDWABE
  AXIOM ¡ ^ MCS-TYP-HARDWARE-FINAL = {<NAME><BIK><WERT>}
 
  MCS-TYP-HARDWARE-FINAL ¡ {<NAME><BIK><WERT>}
+
+ AXIOM ! BACKLINK ≠ COMBOWABE ≠ CBSK 
+
+ BACKLINK ¡ PI02CB05-ON-PIPE-POK
+ BACKLINK ¡ PI02CB06-ON-PIPE-BTP
+ BACKLINK ¡ PI02CB08-OFF-PIPE-POK
+ BACKLINK ¡ PI02CB09-OFF-PIPE-BTP
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###

@@ -8,7 +8,7 @@
  #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
  #   01  + -  TRANSAKTIONSRAHMEN       | 02  + -  PROTEIN                    #
  #   03  + -  PROTON                   | 04  + -  TRENNBEFEHL                #
- #   05  - -  BINDUNGSBEFEHL           | 06  - -  AKTIONSDRAHT               #
+ #   05  + -  BINDUNGSBEFEHL           | 06  - -  AKTIONSDRAHT               #
  #   07  - -  ICTUS                    | 08  - -  BOXI                       #
  #   09  - -  REX                      | 10  - -  ARGUMENTEN                 #
  #   11  - -  NITROX                   | 12  - -  FEED                       #
@@ -36,7 +36,7 @@
  #   80   - -  TWS THE-WABE-NEST-SYSTEM                                      #
  #   81   - -  MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                          #
 ###=================================LIZENZEN================================###
- #   93   L1_COREKERNELMANDAT                       #                        #
+ #   93   L1_COREKERNELMANDAT                       #                 #      #
  #   94   L2_AUTHORRIGHTS                           #   #        #           #
  #   95   L3_COMMERCIALLICENSING                    #    PYLOVARA—SYSTEM©    #
  #   96   L4_AI_ADMINISTRATIONSMANDATE              #                        #

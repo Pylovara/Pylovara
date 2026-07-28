@@ -1,10 +1,51 @@
 @kernel-nr: 05 Ð BINDUNGSBEFEHL 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####====K5 BINDUNGSBEFEHL===#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #           BINDUNGSBEFEHL  THE PROTON HARDWARE BINDING            #
-###==##==###======#####STARTPUNKT BINDUNGSBEFEHL####======###==##==###
+###LEXIKON NAVIGATION TERMINAL = kernel <NR>================================###
+###============================PYLOVARA-SYSTEM==============================###
+ #            BINDUNGSBEFEHL =  THE PROTON HARDWARE BINDING                  #
+###===============================STARTPUNKT================================###
+
+KOMPONENTEN-NAME Ð BINDUNGSBEFEHL
+
+ KOMPONENTEN-ID ¡ BI
+
+ MASTER-ID ¡ MA46SU05
+
 ###====================================|====================================###
+
+WABEN-KATEGORIE Ð KERNWABE
+
+ WABEN-ID ¡ K
+
+ BION-ZIFFER ¡ 05
+ 
+ BION-ID ¡ BI05
+
+ CBSK ¡ BI05
+
+ GBSK ¡ BIK
+
+ ABSK ¡ BIK
+
+###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!↓↓↓↓↓↓↓↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓↓↓↓↓↓↓↓!!!!!!!!!!!
+
 BION Ð BINDUNGSBEFEHL 
 
  MORPHIC-ID ¡ BI
@@ -93,12 +134,15 @@ BION-EXTRAWABE-KNOTEN Ð LINKENDWABE
 
  ABSK ¡ BIK+BIHT-KNOTEN+BIST-KNOTEN+BITN-KNOTEN-NAME+BITN-KNOTEN-WERT+BILD-KNOTEN
 
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+
+
+
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
  # MASTERWORT = BIELT
- # SBSK = BIK+BIHT-KNOTEN+BIST-KNOTEN+BITN-KNOTEN-NAME+BITN-KNOTEN-WERT+BILD-KNOTEN
- # VBSK = NICHT VORHANDEN
- # RBSK = BIK
-###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
- #  DATUM = [15:30:53|Di 05 Mai 2026] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####ENDPUNKT BINDUNGSBEFEHL=#####======###==##==###
+ # SBSK → 
+ # VBSK → 
+ # RBSK → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

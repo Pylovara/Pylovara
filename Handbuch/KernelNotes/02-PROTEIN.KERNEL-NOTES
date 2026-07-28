@@ -25,9 +25,9 @@ WABEN-KATEGORIE Ð KERNWABE
 
  CBSK ¡ PI02
 
- GBSK ¡ TAK
+ GBSK ¡ PIK
 
- ABSK ¡ TAK
+ ABSK ¡ PIK
 
 ###====================================|====================================###
 
@@ -37,15 +37,15 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
  WABEN-ID ¡ HT
 
- BION-ZIFFER ¡ 01
+ BION-ZIFFER ¡ 02
 
  BION-ID ¡ PI02HT02
 
- CBSK ¡ PI02HT01-ON-PIPE
+ CBSK ¡ PI02HT02-ON-PIPE
 
  GBSK ¡ PIHT-ON-PIPE
 
- ABSK ¡ PIK+HT-ON-PIPE
+ ABSK ¡ PIK+PIHT-ON-PIPE
 
 ###====================================|====================================###
 
@@ -55,14 +55,24 @@ WABEN-KATEGORIE Ð STARTWABE
 
  WABEN-ID ¡ ST
 
- BION-ZIFFER ¡ 01
+ BION-ZIFFER ¡ 02
 
  BION-ID ¡ PI02HT02ST02
 
- 
+ CBSK ¡ PI02ST02-ON-PIPE
 
+ GBSK ¡ PIST-ON-PIPE
 
+ ABSK ¡ PIK+PIHT-ON-PIPE+PIST-ON-PIPE
 
+ PROGRAMMIERUNGSBEREICH ↓
+
+ AXIOM ¡ ZEICHENBAUM-BAUM ≠ ^ * = **
+ AXIOM ¡ ^ <TASTENCODE> ≠ —
+ AXIOM ¡ ^ <TASTENCODE> ≠ [
+
+ MCS-TYP-1 ¡ —
+ MCS-TYP-2 ¡ [
 
 ###====================================|====================================###
 

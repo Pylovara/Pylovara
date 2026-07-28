@@ -28,31 +28,56 @@ WABEN-KATEGORIE Ð KERNWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ HARDWARE
+
+ WABEN-ID ¡ HT
+
+ BION-ZIFFER ¡ 04
+
+ BION-ID ¡ PO003HT03
+
+ CBSK ¡ PO03HT03-HARDWARE
+
+ GBSK ¡ POHT-HARDWARE
+
+ ABSK ¡ POK+POHT-HARDWARE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ HARDWARE
+
+ WABEN-ID ¡ ST
+
+ BION-ZIFFER ¡ 03
+
+ BION-ID ¡ <FOLGE KENNUNG DER BION-IDs>
+
+ CBSK ¡ PO03ST04-HARDWARE
+
+ GBSK ¡ POST-HARDWARE
+
+ ABSK ¡ POK+POHT-HARDWARE+POST-HARDWARE
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ AXIOM ¡ ZEICHENBAUM-BAUM ≠ ^ * = *
+ AXIOM ¡ ^ <TASTENCODE> ≠ {
+ AXIOM ¡ ^ <TASTENCODE> ≠ }
+
+ MCS-TYP-START-POST ¡ {
+ MCS-TYP-ENDE-POST ¡ }
+
+###====================================|====================================###
+
 
 
 
 !!!!!!!!!!!↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓↓↓ !!!!!!!!!!!!
 
-BION Ð PROTON 
-
- MORPHIC-ID ¡ PO
-
- BION-ID ¡ PO 
-
- MAK ¡ MASU-PROTON 
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð PROTON 
-
- MORPHIC-ID ¡ POK 
-
- BION-ID ¡ PO03
-
- AXIOM ¡ POK = <POK>
-
- ABSK ¡ POK
- 
 ###==##==###======#####========================#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 ###==##==###======#####========================#####======###==##==###

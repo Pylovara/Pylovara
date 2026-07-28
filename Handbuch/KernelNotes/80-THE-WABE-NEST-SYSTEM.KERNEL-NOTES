@@ -278,38 +278,38 @@ BION-EXTRAWABE-LEXIKON Ð INFOWABE
 
 
  EASY :
- ¢! ['echo "Hallo Welt"] !¢
+ ¢! »[' echo "Hallo Welt" ']«««~ SEND-COMPOSITOR ~« !¢
 
 
  EXPERT :
  ¢!
  # DIE SYNAPTOR GRUNDLAGE  
 
-  »["SYNAPTOR"]«
+  »["SYNAPTOR"]« # SYNCHRONITÄTS SCHLEIFE 
 
        ¿¹
        ÷ [Ø <irgendwas> Ø—(1)]
-   ¬· »—[<BOXK>]«
+   ¬· »—[<BOK>]«
        ± [(2)—Ø <irgendwas> Ø]
 
        ¿¹
        ÷ [Ø <irgendwas> Ø—(2)]
-   ¬· »—[<BOXK>]«
+   ¬· »—[<BOK>]«
        ± [(3)—Ø <irgendwas> Ø]
 
        ¿¹
        ÷ [Ø <irgendwas> Ø—(3)]
-   ¬· »—[<BOXK>]«
+   ¬· »—[<BOK>]«
        ± [(4)—Ø <irgendwas> Ø]
 
        ¿¹
        ÷ [Ø <irgendwas> Ø—(4)]
-   ¬· »—[<BOXK>]«
+   ¬· »—[<BOK>]«
        ± [(1)—Ø <irgendwas> Ø]
 
-       ¶ ¬· * 
+       ¿¹ ¶ ¬· * 
 
-       ¶¶ ¬· *
+       ¿¹ ¶¶ ¬· *
 
 !¢
 

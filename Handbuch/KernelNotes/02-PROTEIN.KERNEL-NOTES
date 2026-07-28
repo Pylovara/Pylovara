@@ -1,13 +1,23 @@
-@kernel-nr: 02 Ð PROTEIN 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=======K02 PROTEIN=======#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #            PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER         #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
+@kernel-nr: 02 Ð PROTEIN
+###LEXIKON NAVIGATION TERMINAL = kernel <NR>================================###
+###============================PYLOVARA-SYSTEM==============================###
+ #             PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER                #
+###===========================WICHTIGER-HINWEIS=============================###
  # ON-PIPE  = MIT BEARBEITUNGSSTRANG
  # OFF-PIPE = OHNE BEARBEITUNGSSTRANG
-###==##==###======#####===STARTPUNKT PROTEIN===#####======###==##==###
+###===============================STARTPUNKT================================###
+
+
 ###====================================|====================================###
+###====================================|====================================###
+###====================================|====================================###
+###====================================|====================================###
+
+
+
+
+!!!!!! ↓↓↓↓ ALTER BEREICH ↓↓↓ !!!!!
+
 BION Ð PROTEIN 
 
  MORPHIC-ID ¡ PI
@@ -288,7 +298,8 @@ BION-EXTRAWABE-OFF-PIPE Ð ENDWABE
 
  ABSK ¡ PIK+PIHT-OFF-PIPE+PIST-OFF-PIPE+PICB-OFF-PIPE-BXK-TEK-POK+PIED-OFF-PIPE-BXK-TEK-POK
 
-###==##==###======####REGEL: SPALTEN-SYNCHRONITÄT###======###==##==###
+
+###=====================REGE-DER-SPALTEN-SYNCHRONITÄT=======================###
  # ALLE FOLGE-KOMPONENTEN MÜSSEN ZENTRAL IM ABSATZ DARUNTER EINRASTEN.
  # EINRASTMÖGLICHKEITEN BEI COMBOWABE JE NACH BEREICH :
  # - SYK  = SYNCHRONITÄT
@@ -296,18 +307,10 @@ BION-EXTRAWABE-OFF-PIPE Ð ENDWABE
  # - NIK  = FÜR DATENTRANSPORTE ÜBER FF UND FT 
  # - REK  = ARBEITSFLÄCHEN VERTEILUNG (REX-LOGIK)
  # - SEK  = SENTIATOR-SCHNITTSTELLE (BEDINGUNGEN)
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
  # MASTERWORT = PIELT
- # SBSK ¡ PIK+PIHT-PIELT+PIST-PIELT+PICB-PIELT+PIED-PIELT
- # SBSK ¡ PIK+PIHT-PIELT+PIST-PIELT+PIBK-PIELT+PICB-PIELT+PIED-PIELT
- # VBSK ¡ PICB-ON-PIPE-BXK
- # VBSK ¡ PICB-ON-PIPE-POK
- # VBSK ¡ PICB-ON-PIPE-BXK-TEK-POK
- # VBSK ¡ PICB-OFF-PIPE-BXK 
- # VBSK ¡ PICB-OFF-PIPE-POK 
- # VBSK ¡ PICB-OFF-PIPE-BXK-TEK-POK
- # RBSK ¡ PIK
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [04:10:53|So 01 Jul 2025] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####====ENDPUNKT PROTEIN====#####======###==##==###
+ # SBSK → 
+ # VBSK →
+ # RBSK → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

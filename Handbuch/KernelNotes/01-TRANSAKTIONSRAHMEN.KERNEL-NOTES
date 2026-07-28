@@ -67,7 +67,7 @@ WABEN-KATEGORIE Ð STARTWABE
  AXIOM ¡ ZEICHENBAUM-BAUM ≠ ^ * = **
  AXIOM ¡ ^ <TASTENCODE> = ¢! 
  
- MCS-TYP ¡ ¢!
+ MCS-TYP-START-TAST ¡ ¢!
 
 ###====================================|====================================###
 
@@ -89,17 +89,17 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  PROGRAMMIERUNGSBEREICH ↓ 
 
- WABEN-BIND  ¡ MCS-TYP
+ WABEN-BIND  ¡ MCS-TYP-START-TAST
  WABEN-RESET ¡ TA01ST01-RUNTIME
 
  LINK ¡ TAK
  LINK ¡ PIK
 
- AXIOM ¡ LINK ≠ TAK + PIK ≠ ^ COMBINIERT = **-*+* ≠ MCS-TYP = * *
+ AXIOM ¡ LINK ≠ TAK + PIK ≠ ^ COMBINIERT = **-*+* ≠ MCS-TYP-PIK = * *
  AXIOM ¡ ^ COMBINIERT = TACB-RUNTIME+PIK
- AXIOM ¡ ^ MCS-TYP = ¢! <PIK>
+ AXIOM ¡ ^ MCS-TYP-PIK = ¢! <PIK>
 
- MCS-TYP ¡ ¢! <PIK>
+ MCS-TYP-PIK ¡ ¢! <PIK>
 
 ###====================================|====================================###
 
@@ -121,17 +121,17 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  PROGRAMMIERUNGSBEREICH ↓ 
 
- WABEN-BIND  ¡ MCS-TYP
+ WABEN-BIND  ¡ MCS-TYP-PIK
  WABEN-RESET ¡ TA01CB01-RUNTIME
 
  LINK ¡ TAK
  LINK ¡ PIK
 
- AXIOM ¡ LINK ≠ TAK + PIK ≠ ^ COMBINIERT = **-*+* ≠ MCS-TYP = * *
+ AXIOM ¡ LINK ≠ TAK + PIK ≠ ^ COMBINIERT = **-*+* ≠ MCS-TYP-PIK-FINAL = * *
  AXIOM ¡ ^ COMBINIERT = TACB-RUNTIME+PIK
- AXIOM ¡ ^ MCS-TYP = ¢! <PIK>
+ AXIOM ¡ ^ MCS-TYP-PIK-FINAL = ¢! <PIK>
 
- MCS-TYP ¡ ¢! <PIK>
+ MCS-TYP-PIK-FINAL ¡ ¢! <PIK> !¢
 
 ###====================================|====================================###
 
@@ -151,7 +151,7 @@ WABEN-KATEGORIE Ð ENDWABE
 
  PROGRAMMIERUNGSBEREICH ↓
 
- WABEN-BIND  ¡ MCS-TYP
+ WABEN-BIND  ¡ MCS-TYP-PIK-FINAL
  WABEN-RESET ¡ TA01CB02-RUNTIME
 
 ###====================================|====================================###

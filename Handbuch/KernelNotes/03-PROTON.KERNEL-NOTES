@@ -5,30 +5,45 @@
 
 WABEN-KATEGORIE Ð KOPFWABE
 
-KOMPONENTE Ð PROTON
+ KOMPONENTE ¡ PROTON
+
+ KOMPONENTEN-ID ¡ PO
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ PO03
 
  MASTER-ID ¡ MA46SU03
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð KERNWABE
+WABEN-KATEGORIE Ð MASTERKERNWABE
 
- KOMPONENTEN-ID ¡ PO
+ WABEN-ID ¡ MK
 
- WABEN-ID ¡ K
+ BION-NR ¡ 03
 
- BION-ZIFFER ¡ 03
+ BION-ID ¡ MK03
 
- BION-ID ¡ PO03
+ BSK ¡ POMK-RUNTIME
 
- BBSK ¡ PO03
-
- NBSK ¡ POK
-
- ABSK ¡ POK
+ BION ¡ PO03MK03
 
 ###====================================|====================================###
 
+
+
+
+
+
+
+
+
+
+
+
+###====================================|====================================###
+!!!!!!↓↓↓↓↓↓ ALTER BEREICH↓↓↓↓↓ !!!!! 
 WABEN-KATEGORIE Ð HAUPTWABE 
 
  PROGRAMM ¡ HARDWARE

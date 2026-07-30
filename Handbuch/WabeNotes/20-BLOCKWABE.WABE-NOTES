@@ -1,9 +1,9 @@
 @waben-nr: 20 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
-###===============================COMBOWABE=================================###
+###===============================BLOCKWABE=================================###
 
-WABEN-KATEGORIE Ð COMBOWABE 
+WABEN-KATEGORIE Ð BLOCKWABE 
 
  PROGRAMM ¡ <NAME>
 
@@ -64,9 +64,12 @@ WABEN-KATEGORIE Ð COMBOWABE
  BRÜCKE-OUT ¡ <SEMK>
  BRÜCKE-OUT ¡ <SEMK>
 
-###==============================INFORMATIONEN==============================###
+###==========================VERWENDETE-WABEN-NR============================###
 
- VERWENDETE : 01
+ PI = BK01 
+
+
+###==============================INFORMATIONEN==============================###
 
  LINKT KERNKLASSEN UND COMBINIERT BINDENT UND SENDET ES AN  MCS-TYP-<PRÄFIX>
  

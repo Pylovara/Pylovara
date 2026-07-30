@@ -1,0 +1,84 @@
+@waben-nr: 20 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================COMBOWABE=================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ BK
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ BK<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^       START: <ON-PIPE-START>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^ ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^       SYNC: <SYMK>
+ AXIOM ¡ ^       KOPF: <NIMK>
+ AXIOM ¡ ^      START: <ON-PIPE-START>
+ AXIOM ¡ ^       FOOD: <NIMK>
+ AXIOM ¡ ^  ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        SEN: <SEMK>
+ AXIOM ¡ ^        SEN: <SEMK>
+ AXIOM ¡ ^       FREE: <REMK>
+
+ # ZUSCHLUSS KANÄLE = INPUT
+ BRÜCKE-IN ¡ <ZYMK>
+ BRÜCKE-IN ¡ <SYMK>
+ BRÜCKE-IN ¡ <NIMK>
+
+ # VERARBEITUNGS PIPELINE ANSCHLUSS = IO
+ BRÜCKE-IO ¡ PIMKHTSTBK-ON-PIPE
+
+ # ZUSCHLUSS KANÄLE = OUTPUT
+ BRÜCKE-OUT ¡ <NIMK>
+ BRÜCKE-OUT ¡ <ZYMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <SEMK>
+ BRÜCKE-OUT ¡ <SEMK>
+
+###==============================INFORMATIONEN==============================###
+
+ VERWENDETE : 01
+
+ LINKT KERNKLASSEN UND COMBINIERT BINDENT UND SENDET ES AN  MCS-TYP-<PRÄFIX>
+ 
+###=========================PROGRAMMIERUNGSBEREICH==========================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

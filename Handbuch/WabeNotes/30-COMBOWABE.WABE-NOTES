@@ -1,0 +1,60 @@
+@waben-nr: 30 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================COMBOWABE=================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ CB<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIK
+
+# OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ <AXIOM> = <KENNUNG>
+ EINHEIT ¡ <AXIOM> = <KENNUNG>
+
+ # AXIOMEN
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ <AXIOM> = <NEUE-KENNUNG>
+
+###==============================INFORMATIONEN==============================###
+
+ VERWENDETE : 06
+
+ LINKT KERNKLASSEN UND COMBINIERT BINDENT UND SENDET ES AN  MCS-TYP-<PRÄFIX>
+ 
+###=========================PROGRAMMIERUNGSBEREICH==========================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

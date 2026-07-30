@@ -1,0 +1,52 @@
+@waben-nr: 60 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###=================================ENDWABE=================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ ED<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # UNFERTIG
+ AXIOM ¡ MCS-TYP-ON-PIPE-BXMK + ] ≠ ^ MCS-TYP-ON-PIPE-FINAL = **
+ AXIOM ¡ ^ MCS-TYP-ON-PIPE-FINAL = —[<BXMK>]
+
+ # LIEGT IM RAM 
+ FINISCH ¡ <AXIOM> 
+
+###==============================INFORMATIONEN==============================###
+
+ VERWENDETE : 02
+
+ BEENDET DAS ZUSAMMENSETZEN ODER DEN PROZESS DESSEN 
+
+###=========================PROGRAMMIERUNGSBEREICH==========================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

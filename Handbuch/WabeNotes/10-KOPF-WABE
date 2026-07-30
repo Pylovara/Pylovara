@@ -1,0 +1,35 @@
+@waben-nr: 10 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###================================KOPFWABE=================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ <NAME>
+
+ KOMPONENTEN-ID ¡ <PRÄFIX>
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ MASTER-ID ¡ <MASTER>
+
+###==============================INFORMATIONEN==============================###
+
+ VERWENDETE-WABEN : 02
+
+      DIE MASTER GEBUNDENE KOPFWABE TRÄGER DER GESAMTEN PROGRAMMIERTEN
+      WABEN, DIE ALLES FIXIERT UND INS MASTER EINTRÄGT UND
+      BENENNT WIE NUMMERISCH ZUORDNET.
+
+###=========================PROGRAMMIERUNGSBEREICH==========================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ AXIOM ≠ MASTER-CONTROL ≠ MASTER-ID ¡ MA****** 
+ AXIOM ≠ MASTER-CONTROL ≠ WABEN-KATEGORIE Ð KOPFWABE 
+ AXIOM ≠ MASTER-CONTROL ≠ KOMPONENTE ¡ *
+ AXIOM ≠ MASTER-CONTROL ≠ BION-NR ¡ * 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

@@ -1,0 +1,50 @@
+@waben-nr: 13 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================STARTWABE=================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###==============================INFORMATIONEN==============================###
+
+ VERWENDETE-WABEN : 03
+
+ START SEQUENZ UND BAUT BENÖTIGTE SYMBOLE.
+ 
+###=========================PROGRAMMIERUNGSBEREICH==========================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+ AXIOM ≠ MASTER-CONTROL ≠ 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

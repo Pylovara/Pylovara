@@ -45,27 +45,12 @@ REGEL : ERST NUMMER ERHÖHEN
         WENN SIE GERADE EINGETIPPT WIRD 
 ##################################
 
-KOMPONENTEN-NAME Ð *********
-
- KOMPONENTEN-ID ¡ **
+KOMPONENTE Ð *********
 
  MASTER-ID ¡ MA**SU**
 
 ##################################
 
-WABEN-KATEGORIE Ð KERNWABE
-
- WABEN-ID ¡ K
-
- BION-ZIFFER ¡ <2-STELLIGE-NR|KOMPONENTEN-NR>
-
- BION-ID ¡ <KOMPONENTEN-ID>+<BIONZIFFER>
-
- CBSK ¡ <KOMPONENTEN-ID><BION-ZIFFER>
-
- GBSK ¡ <KOMPONENTEN-ID> + <WABEN-ID>
-
- ABSK ¡ *K
 
 ##################################
 

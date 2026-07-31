@@ -34,37 +34,7 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
 
  BSK ¡ TEMK
 
- BION ¡ <BION-ABLAUF>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-WABEN-KATEGORIE Ð KERNWABE
-
- KOMPONENTEN-ID ¡ TE
-
- WABEN-ID ¡ K
-
- BION-ZIFFER ¡ 04
-
- BION-ID ¡ TE04
-
- BBSK ¡ TE04
-
- NBSK ¡ TEK
-
- ABSK ¡ TEK
+ BION ¡ TE04MK04
 
 ###====================================|====================================###
 
@@ -74,15 +44,22 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
  WABEN-ID ¡ HT
 
- BION-ZIFFER ¡ 05
+ BION-NR ¡ 05
 
- BION-ID ¡ TE04HT05
+ BION-ID ¡ HT05
 
- BBSK ¡ TE04HT05-WAND
+ BSK ¡ TEMKHT-WAND
 
- NBSK ¡ TEHT-WAND
+ BION ¡ TE04MK04HT05
 
- ABSK ¡ TEK+TEHT-WAND
+###====================================|====================================###
+
+
+
+
+
+
+
 
 ###====================================|====================================###
 

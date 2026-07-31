@@ -51,6 +51,9 @@ kernel() {
 kernelx() {
     source "$Shell_DIR/kernelx.deluxe-dna" "$@"
 }
+wabe() {
+    source "$Shell_DIR/kernel.cut-dna" "$@"
+}
 dev() {
     source "$Shell_DIR/dev.cut-dna" "$@"
 }
@@ -80,3 +83,5 @@ function record() {
 }
 
 ##############################################################################
+# DEV BEREICH :
+alias pylokate='kate --new-instance --config ~/Pylovara/Arbeitsfläche/arbeitsconfigs/katescript.sh'

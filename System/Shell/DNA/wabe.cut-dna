@@ -1,32 +1,32 @@
 #!/bin/bash
-# kernel.cut-dna - MCS 1.9 Patch
-# ...
 # ==============================================================================
-# kernel.cut-dna [Pylovara 3.4]
+# wabe.cut-dna [3.5]
 # ==============================================================================
 # Ort   : Pylovara/System/Shell/Dna/kernel.cut-dna
 # Zweck : Zentrales Hilfesystem mit AST-ID und *.KERNEL-NOTES Anbindung
 # Status: STABIL - AST kompatibel - KEIN Lexikon nötig - Unabhängig
+# TERMINAL : wabe lex | wabe <nr>
 # ==============================================================================
 
 Vara_Dir="/Pylovara/System/Shell/Vara"
-BASE_DIR="/Pylovara/Handbuch/KernelNotes"
+BASE_DIR="/Pylovara/Handbuch/WabenNotes"
 INPUT="$1"
 
-extract_kernel_nr() {
-    $Vara_Dir/grep.vara -i '@kernel-nr:' "$1" | $Vara_Dir/head.vara -n 1 | $Vara_Dir/sed.vara -E 's/.*@kernel-nr:[[:space:]]*([^#[:space:]]+).*/\1/I'
+# GENERAL SUCHE 00
+extract_waben_nr() {
+    $Vara_Dir/grep.vara -i '@waben-nr:' "$1" | $Vara_Dir/head.vara -n 1 | $Vara_Dir/sed.vara -E 's/.*@waben-nr:[[:space:]]*([^#[:space:]]+).*/\1/I'
 }
 
 if [[ -z "$INPUT" || "$INPUT" == "00" ]]; then
-    echo "[INFO] Übersicht aller verfügbaren *.KERNEL-NOTES mit Nummern:"
-    $Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.KERNEL-NOTES" | while read -r file; do
-        nr=$(extract_kernel_nr "$file")
+    echo "[INFO] Übersicht aller verfügbaren *.WABEN-NOTES mit Nummern:"
+    $Vara_Dir/find.vara "$BASE_DIR" -type f -name "*.WABEN-NOTES" | while read -r file; do
+        nr=$(extract_waben_nr "$file")
         name=$($Vara_Dir/basename.vara "$file")
         if [[ -n "$nr" ]]; then
             printf "%-10s -> %s\n" "$nr" "$name"
         fi
     done
-    echo "[INFO] Vorgang abgeschlossen. [ENTER] zum Beenden."
+    printf "[INFO] Vorgang abgeschlossen. [ENTER] zum Beenden."
     read
     return
 fi
@@ -39,7 +39,7 @@ if [[ "$INPUT" =~ ^[0-9a-zA-Z_-]+$ ]]; then
     done)
 
     if [[ -n "$FOUND_PATH" ]]; then
-        echo "[INFO] Datei mit @kernel-nr: $INPUT gefunden → $FOUND_PATH"
+        echo "[INFO] Datei mit @waben-nr: $INPUT gefunden → $FOUND_PATH"
         echo "----------------------------------------"
         $Vara_Dir/cat.vara "$FOUND_PATH"
     else
@@ -52,14 +52,14 @@ fi
 
 # === Fall 2: Dateinamen-Suche ===
 SEARCH_NAME=$(echo "$INPUT" | $Vara_Dir/awk.vara '{print tolower($0)}')
-FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -iname "${SEARCH_NAME}.KERNEL-NOTES" | $Vara_Dir/head.vara -n 1)
+FOUND_PATH=$($Vara_Dir/find.vara "$BASE_DIR" -type f -iname "${SEARCH_NAME}.WABEN-NOTES" | $Vara_Dir/head.vara -n 1)
 
 if [[ -n "$FOUND_PATH" ]]; then
     echo "[INFO] Datei '${SEARCH_NAME}.KERNEL-NOTES' gefunden → $FOUND_PATH"
     echo "----------------------------------------"
     $Vara_Dir/cat.vara "$FOUND_PATH"
 else
-    echo "[!] Keine passende .KERNEL-NOTES-DATEI gefunden für: $SEARCH_NAME"
+    echo "[!] Keine passende .WABEN-NOTES-DATEI gefunden für: $SEARCH_NAME"
 fi
 
 printf "\n[ENTER] zum Beenden.\n"

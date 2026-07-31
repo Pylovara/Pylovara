@@ -1,31 +1,42 @@
-@kernel-nr: 02 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+@kernel-nr: 05 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
  #             BINDUNGSBEFEHL =  THE PROTON HARDWARE BINDING                  #
 ###===============================STARTPUNKT================================###
 
 WABEN-KATEGORIE Ð KOPFWABE
 
-KOMPONENTE Ð BINDUNGSBEFEHL
-
- MASTER-ID ¡ MA46SU05
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð KERNWABE
+ KOMPONENTE ¡ BINDUNGSBEFEHL
 
  KOMPONENTEN-ID ¡ BI
 
- WABEN-ID ¡ K
-
- BION-ZIFFER ¡ 05
+ BION-NR ¡ 05
 
  BION-ID ¡ BI05
 
- BBSK ¡ BI05
+ MASTER-ID ¡ MK46SU05
 
- NBSK ¡ BIK
+###====================================|====================================###
 
- ABSK ¡ BIK
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ MK05
+
+ BSK ¡ BIMK
+
+ BION ¡ BI05MK05
+
+###====================================|====================================###
+
+
+
+
+
+
+
 
 ###====================================|====================================###
 

@@ -1,12 +1,11 @@
 #!/bin/bash
-# kernel.cut-dna - MCS 1.9 Patch
-# ...
 # ==============================================================================
-# kernel.cut-dna [Pylovara 3.4]
+# kernel.cut-dna [3.5]
 # ==============================================================================
 # Ort   : Pylovara/System/Shell/Dna/kernel.cut-dna
 # Zweck : Zentrales Hilfesystem mit AST-ID und *.KERNEL-NOTES Anbindung
 # Status: STABIL - AST kompatibel - KEIN Lexikon nötig - Unabhängig
+# TERMINAL : kernel lex | kernel <nr>
 # ==============================================================================
 
 Vara_Dir="/Pylovara/System/Shell/Vara"

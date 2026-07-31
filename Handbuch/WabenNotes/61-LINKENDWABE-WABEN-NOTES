@@ -1,17 +1,17 @@
-@waben-nr: 60 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 61 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
-###=================================ENDWABE=================================###
+###==============================LINKENDWABE================================###
 
-WABEN-KATEGORIE Ð ENDWABE 
+WABEN-KATEGORIE Ð LINKENDWABE 
 
  PROGRAMM ¡ <NAME>
 
- WABEN-ID ¡ ED
+ WABEN-ID ¡ LD
 
  BION-NR ¡ <NR>
 
- BION-ID ¡ ED<NR>
+ BION-ID ¡ LD<NR>
 
  BSK ¡ <BSK>-<PROGRAMM>
 
@@ -25,29 +25,26 @@ WABEN-KATEGORIE Ð ENDWABE
  # BEENDET VOR PROZESS
  WABEN-BSK-RESET ¡ 
 
- # UNFERTIG
- AXIOM ¡ MCS-TYP-ON-PIPE-BXMK + ] ≠ ^ MCS-TYP-ON-PIPE-FINAL = **
- AXIOM ¡ ^ MCS-TYP-ON-PIPE-FINAL = —[<BXMK>]
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
- # LIEGT IM RAM 
- FINISCH ¡ <AXIOM> 
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ 
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
-
+ PO = LD01
 
 
 ###==============================INFORMATIONEN==============================###
 
- VERWENDETE : 02
-
- BEENDET DAS ZUSAMMENSETZEN ODER DEN PROZESS DESSEN 
+           BEENDET DAS ZUSAMMENGESETZTE HAUPTWABEN PROGRAMM UND 
+    VERLINKTES IM GESAMTEN FÜR DEN JEWEILIGEN GEBRAUCHTEN EINSATZBEREICH  
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
  # GRUNDPROGRAMMIERUNG
  AXIOM ≠ AXIOM
  
-
-
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

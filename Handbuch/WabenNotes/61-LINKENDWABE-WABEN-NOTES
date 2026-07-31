@@ -1,17 +1,17 @@
-@waben-nr: 30 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 60 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
-###===============================COMBOWABE=================================###
+###=================================ENDWABE=================================###
 
-WABEN-KATEGORIE Ð COMBOWABE 
+WABEN-KATEGORIE Ð ENDWABE 
 
  PROGRAMM ¡ <NAME>
 
- WABEN-ID ¡ CB
+ WABEN-ID ¡ ED
 
  BION-NR ¡ <NR>
 
- BION-ID ¡ CB<NR>
+ BION-ID ¡ ED<NR>
 
  BSK ¡ <BSK>-<PROGRAMM>
 
@@ -22,41 +22,33 @@ WABEN-KATEGORIE Ð COMBOWABE
  # BINDET RAM GEBAUTE-EINHEIT 
  EINHEIT ¡ <START-KENNUNG> 
 
- # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ # BEENDET VOR PROZESS
  WABEN-BSK-RESET ¡ 
 
- # OPTIONAL HOLT KOMPONENTE DAZU
- LINK ¡ 
-
- # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
- EINHEIT ¡ <AXIOM> = <KENNUNG>
- EINHEIT ¡ <AXIOM> = <KENNUNG>
-
- # AXIOMEN
- AXIOM ¡ ≠
- AXIOM ¡ 
- AXIOM ¡ 
+ # UNFERTIG
+ AXIOM ¡ MCS-TYP-ON-PIPE-BXMK + ] ≠ ^ MCS-TYP-ON-PIPE-FINAL = **
+ AXIOM ¡ ^ MCS-TYP-ON-PIPE-FINAL = —[<BXMK>]
 
  # LIEGT IM RAM 
- EINHEIT ¡ <AXIOM> = <NEUE-KENNUNG>
+ FINISCH ¡ <AXIOM> 
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
- TA = CB01 CB02
 
- PI = CB03 CB04 CB05 CB06 CB07 CB08 CB09 CB10 CB11
 
- PO = CB12 
 
 ###==============================INFORMATIONEN==============================###
 
- LINKT KERNKLASSEN UND COMBINIERT BINDENT UND SENDET ES AN  MCS-TYP-<PRÄFIX>
- 
+ VERWENDETE : 02
+
+ BEENDET DAS ZUSAMMENSETZEN ODER DEN PROZESS DESSEN 
+
 ###=========================PROGRAMMIERUNGSBEREICH==========================###
 
  # GRUNDPROGRAMMIERUNG
  AXIOM ≠ AXIOM
+ 
 
-
+ 
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

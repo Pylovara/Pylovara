@@ -66,10 +66,13 @@ WABEN-KATEGORIE Ð STARTWABE
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
  AXIOM ¡ ^ <TASTENCODE> = ¬
+ AXIOM ¡ ^ <TASTENCODE> = ¤
  AXIOM ¡ ^ ¬ ≠ * ≠ ¬ = RX-MANAGER
+ AXIOM ¡ ^ ¤ ≠ * ≠ ¤ = RX-STATUS
 
  # LIEGT IM RAM
  GEBAUTE-EINHEIT ¡ ¬ = RX-MANAGER
+ GEBAUTE-EINHEIT ¡ ¤ = RX-STATUS
 
 ###====================================|====================================###
 

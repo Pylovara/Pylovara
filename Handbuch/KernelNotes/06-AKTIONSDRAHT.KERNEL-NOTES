@@ -11,7 +11,7 @@ WABEN-KATEGORIE Ð KOPFWABE
 
  BION-NR ¡ 06
 
- BION-ID ¡ <BION-ID>
+ BION-ID ¡ AK06
 
  MASTER-ID ¡ MA46SU06
 
@@ -31,12 +31,50 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
+ PROGRAMM ¡ IMPULS
 
+ WABEN-ID ¡ HT
 
+ BION-NR ¡ 07
 
+ BION-ID ¡ HT07
 
+ BSK ¡ AKMKHT-IMPULS
 
+ BION ¡ AK06MK06
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ ST07
+
+ BSK ¡ AKMKHTST-IMPULS
+
+ BION ¡ AK06MK06
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = » 
+ AXIOM ¡ ^ <TASTENCODE> = « 
+ AXIOM ¡ ^ » ≠ * ≠ » ≠ AK-START
+ AXIOM ¡ ^ « ≠ * ≠ « ≠ AK-ENDE
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ » = AK-START 
+ GEBAUTE-EINHEIT ¡ « = AK-ENDE
+
+###====================================|====================================###
 
 
 

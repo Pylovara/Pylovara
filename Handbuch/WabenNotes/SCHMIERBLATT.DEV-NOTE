@@ -255,3 +255,106 @@ TOCHTERWABEN-KATEGORIE § SHELLWABE
 - AXIOM: BXSS-NET-IO = § <IO>
 - EINSATZGEBIET: Netzwerkverbindungen, Sockets, IP-Adressen, Protokolle
 - BESCHREIBUNG: Die Verbindung zum Netzwerk – TCP/IP, HTTP, DNS, Sockets.
+
+
+
+
+
+
+
+
+MUTTERWABE Ð <GENERALBEGRIFF> 
+
+Trägt die grundsätze wie  
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+
+dann ab hier : 
+
+ TOCHTERWABEN § <EINSATZPROGRAMMIERUNG> 
+
+trägt ( wenn die mutter wabe zum beispiel SCHLEIFEN heißt , in den tochterwaben ( und das können einige sein explizite waben standarts wie 
+
+- schleife vorwärts ( 1 kanal) 
+- schleife Rückwärts ( 1 kanal) 
+- schleife mit 2 ausgangs multiplexer 
+- schleife mit 3 ausgangs multiplexer 
+- schleife plus verlinkungs prozess verabreitung davor , vorwärts 
+- schleife plus verlinkungs prozess verabreitung davor , rücvkwärts 
+
+USW ... DANN KOMMEN : 
+
+KINDERWABE ° <ANDOCKPLÄTZE> 
+
+kinder wabe sind lediglich dann die aux verbinden die benutzt werden können , wohin usw 
+
+quasi das was vorher in den waben in tws 0.2 steckt 
+
+ # ZUSCHLUSS KANÄLE = INPUT
+ BRÜCKE-IN ¡ 
+ BRÜCKE-IN ¡ 
+ BRÜCKE-IN ¡ 
+
+ # VERARBEITUNGS PIPELINE ANSCHLUSS = IO
+ BRÜCKE-IO ¡ PIMKHTSTBK-ON-PIPE
+
+ # ZUSCHLUSS KANÄLE = OUTPUT
+ BRÜCKE-OUT ¡ 
+ BRÜCKE-OUT ¡ 
+ BRÜCKE-OUT ¡ 
+
+linkk ¡ 
+einheit ¡ 
+waben reset ¡ 
+
+usw 
+
+
+also alles was überhaupt an anschluss funktionen benutzt werden darf , aber gerelaisierte ...
+in der jeweiligen tochter wabe werden dann die explizite genannt weil jeder schleifen kanal seine eigenen eindeutigen anschlüsse bekommt 
+
+
+
+
+kurzes geordnetes bild : 
+----------------------------------------------------
+
+TWS 0.3 = Drei-Ebenen-Hierarchie:
+Ebene 1: MUTTERWABE (Konzept)
+Generalisierter Begriff (z.B. "SCHLEIFEN")
+Trägt die Grundprinzipien
+BION-ID, BSK, BION
+
+Ebene 2: TOCHTERWABE (Spezifische Variante)
+Explizite Einsatzprogrammierung
+z.B. "Schleife vorwärts 1 Kanal"
+z.B. "Schleife mit 2 Ausgangs-Multiplexer"
+Jede Tochter hat ihre eigenen eindeutigen Anschlüsse
+
+Ebene 3: KINDERWABE (Konkrete Verbindungen)
+Die Aux-Verbindungen, die tatsächlich benutzt werden
+BRÜCKE-IN, BRÜCKE-IO, BRÜCKE-OUT
+LINK, EINHEIT, WABEN-RESET
+Alles was an Anschluss-Funktionen erlaubt ist
+
+---------------------------------------------------
+
+
+die ersten waben werden explizit für mcs entwickelt , alles andere 
+wird hinten angestellt ... 
+
+mcs als expliziter alleinige programmiersprache 
+( alles andere duldung in mcs geschrieben transaktionsrahmen in proteinen)
+
+ich mache die industrie obsolet und sorge für ein besseres system 

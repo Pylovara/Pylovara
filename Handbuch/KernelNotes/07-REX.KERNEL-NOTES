@@ -47,8 +47,52 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 08
+
+ BION-ID ¡ ST08
+
+ BSK ¡ RXMKHTST-MANAGER
+
+ BION ¡ RX07MK07HT08ST08
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ¬
+ AXIOM ¡ ^ ¬ ≠ * ≠ ¬ = RX-MANAGER
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¬ = RX-MANAGER
+
+###====================================|====================================###
 
 
+
+
+
+
+
+
+
+
+
+
+
+###====================================|====================================###
+
+
+
+
+
+
+!!!!!!!!!!!!!↓↓↓↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓↓↓ !!!!!!!!!!!!!!!!
 
 
 ###==##==###======#####=====STARTPUNKT REX=====#####======###==##==###

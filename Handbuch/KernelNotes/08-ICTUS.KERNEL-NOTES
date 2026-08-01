@@ -33,7 +33,7 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
 
 WABEN-KATEGORIE Ð HAUPTWABE 
 
- PROGRAMM ¡ IN
+ PROGRAMM ¡ PLATZ
 
  WABEN-ID ¡ HT
 
@@ -41,15 +41,67 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
  BION-ID ¡ HT09
 
- BSK ¡ ICMKHT-IN
+ BSK ¡ ICMKHT-PLATZ
 
  BION ¡ IC07MK08HT09
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ PLATZ
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 09 
+
+ BION-ID ¡ ST09
+
+ BSK ¡ ICMKHTST-PLATZ
+
+ BION ¡ IC07MK08HT09ST09
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ·
+ AXIOM ¡ ^ <TASTENCODE> = ··
+ AXIOM ¡ ^ <TASTENCODE> = ···
+ AXIOM ¡ ^ <TASTENCODE> = ····
+ AXIOM ¡ ^ · ≠ * ≠ · = IC-IN-1
+ AXIOM ¡ ^ ·· ≠ ** ≠ ·· = IC-IN-2
+ AXIOM ¡ ^ ··· ≠ *** ≠ ··· = IC-IN-3
+ AXIOM ¡ ^ ···· ≠ **** ≠ ···· = IC-IN-4
+
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ · = IC-IN-1
+ GEBAUTE-EINHEIT ¡ ·· = IC-IN-2
+ GEBAUTE-EINHEIT ¡ ··· = IC-IN-3
+ GEBAUTE-EINHEIT ¡ ···· = IC-IN-4
 
 ###====================================|====================================###
 
 
 
 
+
+
+
+
+
+
+
+
+
+###====================================|====================================###
+
+
+
+
+
+!!!!!!!!!!!!!↓↓↓↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓↓↓ !!!!!!!!!!!!!!!!
 
 ###==##==###======#####====STARTPUNKT ICTUS====#####======###==##==###
 

@@ -1,21 +1,38 @@
-@kernel-nr: 08 Ð BOXI
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####========K8 BOXI=========#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- # BOXI'S = THE IN/OUT ALLFILE CONTAINER PROZESS MANAGMENT SYSTEM   #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- # [ BX08: BOXI PROCESS MANAGEMENT SYSTEM ]                          #
- # ├── HT01:PRINT  ("...")-> Systemausgaben/Strings                  #
- # ├── HT02:ALU    (×...×)-> Mathematische Operatoren/ALU-Container #
- # ├── HT03:SYSCALL(,...,)-> System-Calls/Kernel-Invocations        #
- # ├── HT04:ABI    (Ħ...Ħ)-> Binary Interfaces/Hardware-Register    #
- # ├── HT05:SHELL  ('...')-> Native Shell Commands/Skripte          #
- # ├── HT06:MCD    (~...~)-> Microcode Commands                      #
- # ├── HT07:BINÄR  (°...°)-> Maschinenbefehle/OpCodes                #
- # ├── HT08:CACHE  (¥...¥)-> Fast-Cache/Speicherknoten               #
- # ├── HT09:PFAD   ($...$)-> Datei- & Verzeichnispfade               #
- # └── HT10:NET    (§...§)-> Netzwerk-Interfaces/Socket-I/O         #
-###==##==###======#####====STARTPUNKT BOXI=====#####======###==##==###
+@kernel-nr: 09 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #      BOXI'S = THE IN/OUT ALLFILE CONTAINER PROZESS MANAGMENT SYSTEM       #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ BOXIS
+
+ KOMPONENTEN-ID ¡ BX
+
+ BION-NR ¡ 09
+
+ BION-ID ¡ IC09
+
+ MASTER-ID ¡ MK46SU09
+
+###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!↓↓↓↓ ALTER BEREICH ↓↓↓↓!!!!!!!!!!!!!!!!!
 
 BION Ð BOXI 
 
@@ -599,13 +616,16 @@ BION-EXTRAWABE-NET Ð ENDWABE
 
  ABSK ¡ BXK+BXHT-NET+BXST-NET+BXSS-NET-IO+BXED-NET
 
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = BXELT
- SBSK = BXK+BXHT-BXELT+BXST-BXELT+BXSS-BXELT+BXED-BXELT
- SBSK = BXK+BXHT-BXELT+BXST-BXELT+BXSS-BXELT-BXELT+BXED-BXELT
- # VBSK = 
- RBSK = BXK
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [00:12:44|So 28 Dez 2025] MARKENBRANDT                   #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                 #
-###==##==###======#####=====ENDPUNKT BOXI======#####======###==##==###
+
+
+
+
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = 
+ # BION-ID-PFAD  → 
+ # BION-ID-VPFAD → 
+ # BION-ID-RPFAD → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

@@ -1,0 +1,4018 @@
+@kernel-nr: lex =================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+ #          · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND          #
+ #              + AKTIV  | - NICHT AKTIV  | X = TEIL-VOLLSTÄNDIG             #
+ #                        Æ STRUKTUR ERNEUERT                                #
+###=========================PYLOVARA-SYSTEM-LEXIKON=========================###
+###===============================KOMPONENTEN===============================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN              源真理   #
+ #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
+ #   01  Æ ·  TRANSAKTIONSRAHMEN       | 02  Æ ·  PROTEIN                    #
+ #   03  Æ ·  PROTON                   | 04  Æ ·  TRENNBEFEHL                #
+ #   05  Æ ·  BINDUNGSBEFEHL           | 06  Æ ·  AKTIONSDRAHT               #
+ #   07  Æ ·  REX                      | 08  Æ ·  ICTUS                      #
+ #   09  - -  BOXI                     | 10  - -  SENTIATOR
+#########################REIHENFOLGEUNGEKLÄRTER BEREICH########################
+ #   11  - -  NITROX                   | 12  - -  FEED                       #
+ #   13  - -  SYNAPTOR                 | 14  - -  ZYTRON                     #
+ #   15  - -  ARGUMENTEN               | 16  - -                             #
+###==============================SYSTEM-ELEMENTE============================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #   30  - -  VATRON                   | 31  - -  RETRON                     #
+###=================================REGISTER================================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #   40  - -  DATENTYPEN               | 41  - -  NAVIGATOR                  #
+ #   42  - -  IDENTIFIKATION           | 43  - -  KKIS                       #
+ #   44  - -  GENERALSCHALTUNG         | 45  - -  MCD                        #
+ #   46  - -  MASTER                   | 47  - -                             #
+###==============================PROGRAMMIERUNG=============================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #   50  - -  ABSOLULATOR              | 51  - -  WABINATOR                  #
+ #   52  - -  DETEKTOR                 | 53  - -  HERZSCHLAG                 #
+###==============================SYSTEM-LOGIKEN=============================###
+ #   NR NOTIZ NAMEN                                                          #
+ #   81   - - MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                           #
+###=================================LIZENZEN================================###
+ #   93   L1_COREKERNELMANDAT                        #        #   #     #    #
+ #   94   L2_AUTHORRIGHTS                            #    # #      #         #
+ #   95   L3_COMMERCIALLICENSING                     #       #               #
+ #   96   L4_AI_ADMINISTRATIONSMANDATE               #    PYLOVARA—SYSTEM©   #
+ #   97   L5_POST_MORTEM-CONTROL                     #    #     #            #
+ #   98   L6_IMMUTABLE_CORES_DEFINITION              #        #      #       #
+ #   99   LICENSE—MANIFEST.PROTO                     #    #                  #
+###===============================VERSIONSDATEN=============================###
+ # SYSTEM = PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM                               #
+ # PROGRAMMIERSPRACHE = MCS 7.4 | MASCHINEN-CODE-SPEECH                      #
+ # KERNELSPRACHE  = TWS 0.2 | THE-WABE-NEST-SYSTEM                           #
+ # TASTATURSTANDARD = UTF -8 DEUTSCHER-STANDARD                              #
+ # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                              #
+ # LIZENSEN = LV 1.3 LIZENSVERTRAG                                           #
+ # SINGLE SOURCE OF TRUTH = SSoT LEXIKON VERSION 00.82                       #
+###=================================IMPRESSUM===============================###
+ # AUTOR = OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68     GITHUB                   #
+ # STANDORT = /Pylovara/Handbuch/KernelNotes/         PYLOVARA SYSTEM        #
+ # STATUS = VOLLSTÄNDIGE-ROLLENDE-VERBESSERUNGEN               Since 2025    #
+ # PDF NAMENSLAYER = PYLOVARA-SYSTEM-SSoT-XX.XX.pdf                          #
+ # GARANTIERTE BERUFSERFAHRUNG = PYLOVARA-NETZWERK-SYSTEM   +4917688218035   #
+###===============================LEXIKON-ENDE==============================###
+@kernel-nr: 01 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #       TRANSAKTIONSRAHMEN =  THE PROGRAMMING LANGUAGE DATA EXECUTE LAW     #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ TRANSAKTIONSRAHMEN
+
+ KOMPONENTEN-ID ¡ TA
+
+ BION-NR ¡ 01 
+
+ BION-ID ¡ TA01
+
+ MASTER-ID ¡ MA46SU01
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE 
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ MK01
+
+ BSK ¡ TAMK
+
+ BION ¡ TA01MK01
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ RUNTIME
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ HT01
+
+ BSK ¡ TAMKHT-RUNTIME
+
+ BION ¡ TA01MK01HT01
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ RUNTIME
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ ST01
+
+ BSK ¡ TAMKHTST-RUNTIME
+
+ BION ¡ TA01MK01HT01ST01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ ≠ * = *
+ AXIOM ¡ ^ <TASTENCODE> = ¢ 
+ AXIOM ¡ ^ <TASTENCODE> = ! 
+ AXIOM ¡ ¢ + ! ≠ ** ≠ ¢!
+ AXIOM ¡ ! + ¢ ≠ ** ≠ !¢
+ 
+ # EINHEIT
+ EINHEIT ¡ ¢! = MCS-BLOCK-START
+ EINHEIT ¡ !¢ = MCS-BLOCK-ENDE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ RUNTIME
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ CB01
+
+ BSK ¡ TAMKHTSTCB-RUNTIME
+
+ BION ¡ TA01MK01HT01ST01CB01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # EINHEIT RAM
+ EINHEIT ¡ ¢! = MCS-BLOCK-START
+ EINHEIT ¡ !¢ = MCS-BLOCK-ENDE
+
+ # BEENDET DEN PROZESS
+ WABEN-BSK-RESET ¡ TAMKHTST-RUNTIME
+
+ # LINK WABEN SEKTOR
+ LINK ¡ PIMK
+
+ # SYNTHESE UND TYP-GENERIERUNG
+ AXIOM ¡ LINK ≠ MCS-BLOCK-START + PIMK ≠  ¢! <PIMK> = MCS-BLOCK-OFFEN
+ AXIOM ¡ ^ MCS-TYP-PIMK = ¢! <PIMK> 
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¢! <PIMK> = MCS-BLOCK-OFFEN
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ RUNTIME
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ CB02
+
+ BSK ¡ TAMKHTSTCBCB-RUNTIME
+
+ BION ¡ TA01MK01HT01ST01CB01CB02
+
+ PROGRAMMIERUNGSBEREICH ↓ 
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¢! <PIMK> = MCS-BLOCK-OFFEN
+ EINHEIT ¡ !¢ = MCS-BLOCK-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ TAMKHTSTCB-RUNTIME
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ AUS
+
+ # KAPSELUNG ABSCHLIESSEN (START + SEKTOR + ENDE)
+ AXIOM ¡ MCS-BLOCK-OFFEN + MCS-BLOCK-ENDE ≠ ¢! <PIMK> !¢ = MCS-BLOCK-GESCHLOSSEN
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¢! <PIMK> !¢ = MCS-BLOCK-GESCHLOSSEN
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ RUNTIME
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ ED01
+
+ BSK ¡ TAMKHTSTCBCBED-RUNTIME
+
+ BION ¡ TA01MK01HT01ST01CB01CB02ED01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT
+ EINHEIT ¡ ¢! <PIMK> !¢ = MCS-BLOCK-GESCHLOSSEN
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ TAMKHTSTCBCB-RUNTIME
+
+ # FINALE AUSFÜHRUNGSLOGIK & INTEGRITÄTSPRÜFUNG
+ AXIOM ¡ FINISH ≠ ¢! <PIMK> !¢ = MCS-BLOCK-GESCHLOSSEN ≠ FINISH
+
+ # BLOCK ENDE 
+ FINISH ¡ ¢! <PIMK> !¢ = MCS-BLOCK-GESCHLOSSEN
+
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = TARUNTIME
+ # BION-ID-PFAD → TA01+MK01+HT01+ST01+CB01+CB02+ED01
+ # BION-ID-VPFAD → TA01MK01HT01ST01CB01CB02ED01
+ # BION-ID-RPFAD → TA01|MK01|HT01
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+@kernel-nr: 02 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ # PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER                            #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ PROTEIN
+
+ KOMPONENTEN-ID ¡ PI
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ PI02
+
+ MASTER-ID ¡ MA46SU02
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 02 
+
+ BION-ID ¡ MK02
+
+ BSK ¡ PIMK
+
+ BION ¡ PI02MK02
+
+###====================================|====================================###
+###==========================ON-PIPE BEARBEITUNG============================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ HT02
+
+ BSK ¡ PIMKHT-ON-PIPE
+
+ BION ¡ PI02MK02HT02
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ ST02
+
+ BSK ¡ PIMKHTST-ON-PIPE
+
+ BION ¡ PI02MK02HT02ST02
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ ≠  ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = — 
+ AXIOM ¡ ^ <TASTENCODE> = [
+ AXIOM ¡ — + [ ≠ ** ≠ —[
+ AXIOM ¡ ^ <TASTENCODE> = ]
+
+ # LIEGT IM RAM
+ EINHEIT ¡ —[ = ON-PIPE-START
+ EINHEIT ¡ ] = ON-PIPE-ENDE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð BLOCKWABE
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ BK
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ BK01
+
+ BSK ¡ PIMKHTSTBK-ON-PIPE
+
+ BION ¡ PI02MK02HT02ST02BK01
+
+ PROGRAMMIERUNGSBEREICH ↓ 
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ —[ = ON-PIPE-START
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTST-ON-PIPE
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^         START: <ON-PIPE-START>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^  ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        SYNC: <SYMK>
+ AXIOM ¡ ^        KOPF: <NIMK>
+ AXIOM ¡ ^       START: <ON-PIPE-START>
+ AXIOM ¡ ^        FOOD: <NIMK>
+ AXIOM ¡ ^   ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^         REK: <REMK>
+ AXIOM ¡ ^         REK: <REMK>
+ AXIOM ¡ ^         REK: <REMK>
+ AXIOM ¡ ^         REK: <REMK>
+ AXIOM ¡ ^         SEN: <SEMK>
+ AXIOM ¡ ^         SEN: <SEMK>
+ AXIOM ¡ ^        FREE: <REMK>
+
+ # ZUSCHLUSS KANÄLE = INPUT
+ BRÜCKE-IN ¡ <ZYMK>
+ BRÜCKE-IN ¡ <SYMK>
+ BRÜCKE-IN ¡ <NIMK>
+
+ # VERARBEITUNGS PIPELINE ANSCHLUSS = IO
+ BRÜCKE-IO ¡ PIMKHTSTBK-ON-PIPE
+
+ # ZUSCHLUSS KANÄLE = OUTPUT
+ BRÜCKE-OUT ¡ <NIMK>
+ BRÜCKE-OUT ¡ <ZYMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <SEMK>
+ BRÜCKE-OUT ¡ <SEMK>
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ CB03
+
+ BSK ¡ PIMKHTSTBKCB-ON-PIPE
+
+ BION ¡ PI02MK02HT02ST02BK01CB03
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # LIEGT IM RAM
+ EINHEIT ¡ —[ = ON-PIPE-START
+ EINHEIT ¡ ] = ON-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTBK-ON-PIPE
+
+ # HOLT KOMPONENTE DAZU
+ LINK ¡ BXMK
+
+ # KOPPLUNG AN PIPELINE-BOX
+ AXIOM ¡ LINK ≠ ON-PIPE-START + BXMK ≠ —[<BXMK> = ON-PIPE-BXMK
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ —[<BXMK> = ON-PIPE-BXMK
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ ED02
+
+ BSK ¡ PIMKHTSTBKCBED-ON-PIPE
+
+ BION ¡ PI02MK02HT02ST02BK01CB03ED02
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ —[<BXMK> = ON-PIPE-BXMK
+ EINHEIT ¡ ] = ON-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTBKCB-ON-PIPE
+
+ # FINALE INTEGRATION (VERPACKUNG SCHLIESSEN)
+ AXIOM ¡ ON-PIPE-BXMK + ON-PIPE-ENDE ≠ —[<BXMK>] = ON-PIPE-BX-FINAL
+
+ # FERTIGES ON-PIPE PROTEIN (ABGABE AN TORWABE / PIPELINE)
+ FINISH ¡ —[<BXMK>] = ON-PIPE-BX-FINAL
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ CB04
+
+ BSK ¡ PIMKHTSTBKCB-ON-PIPE
+
+ BION ¡ PI02MK02HT02ST02BK01CB04
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # LIEGT IM RAM
+ EINHEIT ¡ —[ = ON-PIPE-START
+ EINHEIT ¡ ] = ON-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTBK-ON-PIPE
+
+ # HOLT KOMPONENTE DAZU
+ LINK ¡ POMK
+
+ # KOPPLUNG AN PROTON-KERN
+ AXIOM ¡ LINK ≠ ON-PIPE-START + POMK ≠ —[<POMK> = ON-PIPE-POMK
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ —[<POMK> = ON-PIPE-POMK
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ ON-PIPE
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ ED03
+
+ BSK ¡ PIMKHTSTBKCBED-ON-PIPE
+
+ BION ¡ PI02MK02HT02ST02BK01CB04ED03
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ —[<POMK> = ON-PIPE-POMK
+ EINHEIT ¡ ] = ON-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTBKCB-ON-PIPE
+
+ # FINALE INTEGRATION
+ AXIOM ¡ ON-PIPE-POMK + ON-PIPE-ENDE ≠ —[<POMK>] = ON-PIPE-PO-FINAL
+
+ # FERTIGES ON-PIPE PROTEIN 
+ FINISH ¡ —[<POMK>] = ON-PIPE-PO-FINAL
+
+###====================================|====================================###
+###=========================OFF-PIPE BEARBEITUNG============================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ HT03
+
+ BSK ¡ PIMKHT-OFF-PIPE
+
+ BION ¡ PI02MK02HT03
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 03 
+
+ BION-ID ¡ ST03
+
+ BSK ¡ PIMKHTST-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ ≠  ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = [
+ AXIOM ¡ ^ <TASTENCODE> = ]
+
+ # LIEGT IM RAM
+ EINHEIT ¡ [ = OFF-PIPE-START
+ EINHEIT ¡ ] = OFF-PIPE-ENDE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ CB05
+
+ BSK ¡ PIMKHTSTCB-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB05
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [ = OFF-PIPE-START
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTST-OFF-PIPE
+
+ # HOLT KOMPONENTE DAZU
+ LINK ¡ BXMK
+
+ # KOPPLUNG AN OFF-PIPE BOX
+ AXIOM ¡ LINK ≠ OFF-PIPE-START + BXMK ≠ [<BXMK> = OFF-PIPE-BXMK
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ [<BXMK> = OFF-PIPE-BXMK
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ CB06
+
+ BSK ¡ PIMKHTSTCBCB-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB05CB06
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [<BXMK> = OFF-PIPE-BXMK
+ EINHEIT ¡ ] = OFF-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCB-OFF-PIPE
+
+ # SYNTHESE SCHLIESST DIE KLAMMER (STANDALONE BXMK)
+ AXIOM ¡ OFF-PIPE-BXMK + OFF-PIPE-ENDE ≠ [<BXMK>] = OFF-PIPE-BX
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ [<BXMK>] = OFF-PIPE-BX
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ ED04
+
+ BSK ¡ PIMKHTSTCBCBED-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB05CB06ED04
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [<BXMK>] = OFF-PIPE-BX
+ EINHEIT ¡ ] = OFF-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCBCB-OFF-PIPE
+
+ # AUSFÜHRUNGSLOGIK & ABSCHLUSS (ÜBERGABE AN REX LOGIK)
+ AXIOM ¡ OFF-PIPE-BX + OFF-PIPE-ENDE ≠ [<BXMK>] = OFF-PIPE-BX-FINAL
+
+ # FERTIGES OFF-PIPE PROTEIN
+ FINISH ¡ [<BXMK>] = OFF-PIPE-BX-FINAL
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ CB07
+
+ BSK ¡ PIMKHTSTCBCB-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB05CB07
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT (BAUT AUF CB05 AUF)
+ EINHEIT ¡ [<BXMK> = OFF-PIPE-BXMK
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCB-OFF-PIPE
+
+ # HOLT KOMPONENTE DAZU (BT ERWEITERUNG)
+ LINK ¡ TEMK
+
+ # KOPPLUNG AN OFF-PIPE BOX
+ AXIOM ¡ LINK ≠ OFF-PIPE-BXMK + TEMK ≠ [<BXMK><TEMK> = OFF-PIPE-BT
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ [<BXMK><TEMK> = OFF-PIPE-BT
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 08
+
+ BION-ID ¡ CB08
+
+ BSK ¡ PIMKHTSTCBCBCB-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB05CB07CB08
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [<BXMK><TEMK> = OFF-PIPE-BT
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCBCB-OFF-PIPE
+
+ # HOLT KOMPONENTE DAZU (BTP ERWEITERUNG)
+ LINK ¡ POMK
+
+ # KOPPLUNG AN OFF-PIPE BOX
+ AXIOM ¡ LINK ≠ OFF-PIPE-BT + POMK ≠ [<BXMK><TEMK><POMK> = OFF-PIPE-BTP
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ [<BXMK><TEMK><POMK> = OFF-PIPE-BTP
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 09
+
+ BION-ID ¡ CB09
+
+ BSK ¡ PIMKHTSTCBCBCBCB-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB05CB07CB08CB09
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [<BXMK><TEMK><POMK> = OFF-PIPE-BTP
+ EINHEIT ¡ ] = OFF-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCBCBCB-OFF-PIPE
+
+ # SYNTHESE SCHLIESST DIE KLAMMER
+ AXIOM ¡ OFF-PIPE-BTP + OFF-PIPE-ENDE ≠ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ ED05
+
+ BSK ¡ PIMKHTSTCBCBCBCBED-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB05CB07CB08CB09ED05
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCBCBCBCB-OFF-PIPE
+
+ # AUSFÜHRUNGSLOGIK & ABSCHLUSS
+ AXIOM ¡ OFF-PIPE-BTP ≠ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP-FINAL
+
+ # FERTIGES OFF-PIPE PROTEIN (BTP LOGIK)
+ FINISH ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP-FINAL
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ CB10
+
+ BSK ¡ PIMKHTSTCB-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB10
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT (BAUT DIREKT AUF ST03 AUF)
+ EINHEIT ¡ [ = OFF-PIPE-START
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTST-OFF-PIPE
+
+ # HOLT KOMPONENTE DAZU (POMK STANDALONE)
+ LINK ¡ POMK
+
+ # KOPPLUNG AN OFF-PIPE PROTON
+ AXIOM ¡ LINK ≠ OFF-PIPE-START + POMK ≠ [<POMK> = OFF-PIPE-POMK
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ [<POMK> = OFF-PIPE-POMK
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 11
+
+ BION-ID ¡ CB11
+
+ BSK ¡ PIMKHTSTCBCB-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB10CB11
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [<POMK> = OFF-PIPE-POMK
+ EINHEIT ¡ ] = OFF-PIPE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCB-OFF-PIPE
+
+ # SYNTHESE SCHLIESST DIE KLAMMER
+ AXIOM ¡ OFF-PIPE-POMK + OFF-PIPE-ENDE ≠ [<POMK>] = OFF-PIPE-POMK-FINAL 
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ [<POMK>] = OFF-PIPE-POMK-FINAL
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE
+
+ PROGRAMM ¡ OFF-PIPE
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ ED06
+
+ BSK ¡ PIMKHTSTCBCBED-OFF-PIPE
+
+ BION ¡ PI02MK02HT03ST03CB10CB11ED06
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ [<POMK>] = OFF-PIPE-POMK-FINAL
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ PIMKHTSTCBCB-OFF-PIPE
+
+ # AUSFÜHRUNGSLOGIK & ABSCHLUSS
+ AXIOM ¡ OFF-PIPE-POMK-FINAL ≠ [<POMK>] = OFF-PIPE-PO-FINAL
+
+ # FERTIGES OFF-PIPE PROTEIN (POMK STANDALONE)
+ FINISH ¡ [<POMK>] = OFF-PIPE-PO-FINAL
+
+###====================================|====================================###
+###======================REGEL DER SPALTEN-SYNCHRONITÄT======================###
+ # ALLE FOLGE-KOMPONENTEN MÜSSEN ZENTRAL IM ABSATZ DARUNTER EINRASTEN.
+ # EINRASTMÖGLICHKEITEN BEI COMBOWABE JE NACH BEREICH :
+ # - SYMK  = SYNCHRONITÄT
+ # - ZYMK  = RÜCKKOPPLUNGSSCHLEIFE 
+ # - NIMK  = FÜR DATENTRANSPORTE ÜBER FF UND FT 
+ # - REMK  = ARBEITSFLÄCHEN VERTEILUNG (REX-LOGIK)
+ # - SEMK  = SENTIATOR-SCHNITTSTELLE (BEDINGUNGEN)
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = PROTEIN
+ # BION-ID-PFAD (ON-PIPE-BX)  → PI02+MK02+HT02+ST02+BK01+CB03+ED02
+ # BION-ID-PFAD (ON-PIPE-PO)  → PI02+MK02+HT02+ST02+BK01+CB04+ED03
+ # BION-ID-PFAD (OFF-PIPE-BX) → PI02+MK02+HT03+ST03+CB05+CB06+ED04
+ # BION-ID-PFAD (OFF-PIPE-PO) → PI02+MK02+HT03+ST03+CB10+CB11+ED06
+ # BION-ID-PFAD (OFF-PIPE-BT) → PI02+MK02+HT03+ST03+CB05+CB07+CB08+CB09+ED05
+ # BION-ID-VPFAD → PI02MK02HT02ST02BK01CB03CB04ED02ED03HT03ST03CB05CB06CB07CB08CB09CB10CB11ED04ED05ED06
+ # BION-ID-RPFAD → PI02|MK02|HT02|HT03
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+@kernel-nr: 03 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #         PROTON = THE PROTEIN HARDWARE MANAGEMENT CONTROL SYSTEM             # 
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ PROTON
+
+ KOMPONENTEN-ID ¡ PO
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ PO03
+
+ MASTER-ID ¡ MA46SU03
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ MK03
+
+ BSK ¡ POMK-RUNTIME
+
+ BION ¡ PO03MK03
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ HARDWARE
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ HT04
+
+ BSK ¡ POMKHT-HARDWARE
+
+ BION ¡ PO03MK03HT04
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ HARDWARE
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ ST04
+
+ BSK ¡ POMKHTST-HARDWARE
+
+ BION ¡ PO03MK03HT04ST04
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = { 
+ AXIOM ¡ ^ <TASTENCODE> = }
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ { = HARDWARE-START
+ GEBAUTE-EINHEIT ¡ } = HARDWARE-ENDE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ SS01
+
+ BSK ¡ POMKHTSTSS-HARDWARE
+
+ BION ¡ PO03MK03HT04ST04SS01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ { = HARDWARE-START
+ EINHEIT ¡ } = HARDWARE-ENDE
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ POMKHTST-HARDWARE
+
+ # AXIOM  
+ AXIOM ¡ HARDWARE-START + IN-ID ≠ ^ HARDWARE-START-NAME = **
+ AXIOM ¡ ^ HARDWARE-START-NAME ≠ {<NAME> = HARDWARE-START-NAME
+
+ # EINGABE-I
+ IN-ID   ¡ <NAME>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+ # EINHEIT
+ EINHEIT ¡ {<NAME> = HARDWARE-START-NAME
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ HARDWARE
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 12
+
+ BION-ID ¡ CB12
+
+ BSK ¡ POMKHTSTSSCB-HARDWARE
+
+ BION ¡ PO03MK03HT04ST04SS01CB12
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ {<NAME> = HARDWARE-START-NAME 
+ EINHEIT ¡ } = HARDWARE-ENDE
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ <KEIN-RESET>
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ BIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ <AXIOM> = <KENNUNG>
+ EINHEIT ¡ <AXIOM> = <KENNUNG>
+
+ # AXIOMEN
+ AXIOM ¡ HARDWARE-START-NAME + LINK ≠ {<NAME>; = HARDWARE-START-NAME-BIMK 
+ 
+ # LIEGT IM RAM 
+ EINHEIT ¡ {<NAME>; = HARDWARE-START-NAME-BIMK 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ HARDWARE
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ SS02
+
+ BSK ¡ POMKHTSTSSCBSS-HARDWARE
+
+ BION ¡ PO03MK03HT04ST04SS01CB12SS02
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ {<NAME>; = HARDWARE-START-NAME-BIMK
+ EINHEIT ¡ *;* = DATENSTRANG
+ EINHEIT ¡ } = HARDWARE-ENDE
+
+ # BSK | BEENDET VOR PROZESS
+ WABEN-RESET ¡ POMKHTSTSS-HARDWARE
+ WABEN-RESET ¡ POMKHTSTSSCB-HARDWARE
+
+ # AXIOM  
+ AXIOM ¡ HARDWARE-START-NAME-BIMK ≠ *;* + IN-ID ≠ ^ HARDWARE-START-NAME-BIMK-WERT = **
+ AXIOM ¡ ^ HARDWARE-START-NAME-BIMK-WERT ≠ {<NAME>;<WERT> = HARDWARE-START-NAME-BIMK-WERT
+
+ # EINGABE-I
+ IN-ID   ¡ <WERT>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+ # EINHEIT
+ EINHEIT ¡ {<NAME>;<WERT> = HARDWARE-START-NAME-BIMK-WERT
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ HARDWARE
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ LD01
+
+ BSK ¡ POMKHTSTSSCBSS-HARDWARE
+
+ BION ¡ PO03MK03HT04ST04SS01CB12SS02LD01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ {<NAME>;<WERT> = HARDWARE-START-NAME-BIMK-WERT
+ EINHEIT ¡ } = HARDWARE-ENDE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ POMKHTSTSSCBSS-HARDWARE
+
+ # AXIOM
+ AXIOM ¡ HARDWARE-START-NAME-BIMK-WERT + HARDWARE-ENDE ≠ {<NAME>;<WERT>}
+ AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCBCBCB-OFF-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================_______###
+ # MASTERWORT = POELT
+ # SBSK → 
+ # VBSK → 
+ # RBSK → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+@kernel-nr: 04 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #                TRENNBEFEHL = THE PROTEIN CONTAINER WALL                   #
+###===========================WICHTIGER-HINWEIS=============================###
+ #     DER TRENNBEFEHL BLEIBT ERSTMAL OFFLINE , WIRD SPÄTER EINGEPFLEGT      #
+ #     PROTEINE SIND OHNE POMK|POMK AUSGERÜSTET ...                          #
+ #############################################################################
+ # SENKRECHTSTRICH WIRD IN PROTEIN/E NICHT WIE IN BOXIS VERWENDET            #
+ #     BOXIS TRAGEN GRUNDLOGIK VON LEGACY OPERATIONS SYSTEMEN:               #
+ # | WINDOWS | MACOS | LINUX | BSD | UNIX | GNU | UEFI | BIOS | ETC          #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ TRENNBEFEHL
+
+ KOMPONENTEN-ID ¡ TE
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ TE04
+
+ MASTER-ID ¡ MK46SU04
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 04 
+
+ BION-ID ¡ MK04
+
+ BSK ¡ TEMK
+
+ BION ¡ TE04MK04
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ WAND
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ HT05
+
+ BSK ¡ TEMKHT-WAND
+
+ BION ¡ TE04MK04HT05
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ WAND
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ ST05
+
+ BSK ¡ TEMKHTST-WAND
+
+ BION ¡ TE04MK04HT05ST05
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = |
+ AXIOM ¡ ^ | ≠ * ≠ | = TE-WAND
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ | = TE-WAND
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ WAND
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ ED07
+
+ BSK ¡ TEMKHTST-WAND
+
+ BION ¡ TE04MK04HT05ST05ED07
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ | = TE-WAND 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ TEMKHTST-WAND
+
+ # AXIOM
+ AXIOM ¡ 
+
+ # LIEGT IM RAM 
+ FINISH ¡ | = TE-WAND
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================_______###
+ # MASTERWORT = TEELT
+ # SBSK → 
+ # VBSK → 
+ # RBSK → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+@kernel-nr: 05 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #             BINDUNGSBEFEHL =  THE PROTON HARDWARE BINDING                  #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ BINDUNGSBEFEHL
+
+ KOMPONENTEN-ID ¡ BI
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ BI05
+
+ MASTER-ID ¡ MK46SU05
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ MK05
+
+ BSK ¡ BIMK
+
+ BION ¡ BI05MK05
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ BINDER
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ HT06
+
+ BSK ¡ BIMKHT-BINDER
+
+ BION ¡ BI05MK05HT06
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ BINDER
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ ST06
+
+ BSK ¡ BIMKHTST-BINDER
+
+ BION ¡ BI05MK05HT06ST06
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ; 
+ AXIOM ¡ ^ ; ≠ * ≠ ;
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ; = BI-BINDER
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð BINDUNGSWABE 
+
+ PROGRAMM ¡ BINDER
+
+ WABEN-ID ¡ BD
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ BD01
+
+ BSK ¡ BIMKHTSTBD-BINDER
+
+ BION ¡ BI05MK05HT06ST06BD01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ; = BI-BINDER 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ BIMKHTST-BINDER
+
+ # SYSTEMWABEN KNÜPFER (SCHALTBRÜCKE)
+ BION-ID-1-IN ¡ SS01
+ BION-ID-2-IN ¡ SS01
+
+ # AXIOM
+ AXIOM ¡ BION-ID-1 + BI-BINDER + BION-ID-2 ≠ *;* = DATENSTRANG
+
+ # FERTIG GEBAUTE EINHEIT
+ EINHEIT ¡ *;* = DATENSTRANG
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ BINDER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ LD03
+
+ BSK ¡ BIMKHTSTBDLD-BINDER
+
+ BION ¡ BI05MK05HT06ST06BD01LD01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ *;* = DATENSTRANG
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ BIMKHTSTBD-BINDER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ POMKHTSTSSCB-HARDWARE
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = BIELT
+ # SBSK → 
+ # VBSK → 
+ # RBSK → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+@kernel-nr: 06 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #                 AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                     #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ AKTIONSDRAHT
+
+ KOMPONENTEN-ID ¡ AK
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ AK06
+
+ MASTER-ID ¡ MA46SU06
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ MK06
+
+ BSK ¡ AKMK
+
+ BION ¡ AK06MK06
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ HT07
+
+ BSK ¡ AKMKHT-IMPULS
+
+ BION ¡ AK06MK06HT07
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ ST07
+
+ BSK ¡ AKMKHTST-IMPULS
+
+ BION ¡ AK06MK06HT07ST07
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = » 
+ AXIOM ¡ ^ <TASTENCODE> = « 
+ AXIOM ¡ ^ » ≠ * ≠ » ≠ AK-START
+ AXIOM ¡ ^ « ≠ * ≠ « ≠ AK-ENDE
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ » = AK-START 
+ GEBAUTE-EINHEIT ¡ « = AK-ENDE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 13
+
+ BION-ID ¡ CB13
+
+ BSK ¡ AKMKHTSTCB-IMPULS
+
+ BION ¡ AK06MK06HT07ST07CB13
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ » = AK-START
+ EINHEIT ¡ « = AK-ENDE
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ AKMKHTST-IMPULS
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # BENÖTIGTE PASSIVE PROTEIN-EINHEITEN (DATENTRÄGER)
+ EINHEIT ¡ —[<BXMK>] = ON-PIPE-BX-FINAL
+ EINHEIT ¡ —[<POMK>] = ON-PIPE-PO-FINAL
+ EINHEIT ¡ [<BXMK>] = OFF-PIPE-BX-FINAL
+ EINHEIT ¡ [<POMK>] = OFF-PIPE-PO-FINAL
+ EINHEIT ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP-FINAL
+
+ # AXIOMEN (ZÜNDUNG: SYNTHESE AUS AKTIONSDRAHT + PROTEIN)
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + ON-PIPE-BX-FINAL + AK-ENDE ≠ »—[<BXMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + ON-PIPE-PO-FINAL + AK-ENDE ≠ »—[<POMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-BX-FINAL + AK-ENDE ≠ »[<BXMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-PO-FINAL + AK-ENDE ≠ »[<POMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-BTP-FINAL + AK-ENDE ≠ »[<BXMK><TEMK><POMK>]« = AUSFÜHRBAR
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ »—[<BXMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »—[<POMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<BXMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<POMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<BXMK><TEMK><POMK>]« = AUSFÜHRBAR
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð AUSFÜHRUNGSWABE
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ AN
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ AN01
+
+ BSK ¡ AKMKHTSTAN-IMPULS
+
+ BION ¡ AK06MK06HT07ST07CB13AN01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ AUSFÜHRBAR
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ AKMKHTSTCB-IMPULS
+
+ # AUSFÜHRUNGSLOGIK & ABSCHLUSS
+ AXIOM ¡ AUSFÜHRBAR ≠ VERARBEITUNG 
+
+ # AUSFÜHRUNGSERLAUBNIS | ABGABE AN IMPULS-TREIBER
+ AUSFÜHRUNG ¡ AUSFÜHRBAR
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = AKTIONSDRAHT
+ # BION-ID-PFAD → AK06+MK06+HT07+ST07+CB13+AN01
+ # BION-ID-VPFAD → AK06MK06HT07ST07CB13AN01
+ # BION-ID-RPFAD → AK06|MK06|HT07|AN01
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+@kernel-nr: 07 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #        REX = THE CONTROL FILE AND PROZESS MANAGMENT SYSTEM                #
+###===========================WICHTIGER-HINWEIS=============================###
+ #  REX SCHALTET SICH GRUNDSÄTZLICH NACH PIMK, ICMK WIRD HIER GEBUNDEN       #                                                         
+ #   ┌──────────────────────────────────────────────────────────┐            #
+ #   │                                                          │ (Loop)     #
+ #   ▼ ON|OFF PIPE PROTEIN                                      │            #
+ #   [PIMK] ──► [ ICTUS (Workspace) ] ──► [ REX (Control/SC) ] ─┘            #
+ #  ( DIE BLOCKWABE WIRD NOCH MODIFIZIERT FÜR DEN SYNTAXBAUM REX ANSCHLUSS)  #
+ # INFO : REX IST PER DESIGNED WIE EIN MUX AUFGEBAUT , KEIN OVERHEAD         #                                                                    #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ REX
+
+ KOMPONENTEN-ID ¡ RX
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ BX07
+
+ MASTER-ID ¡ MK46SU07
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ MK07
+
+ BSK ¡ BXMK
+
+ BION ¡ BX07MK07
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 08
+
+ BION-ID ¡ HT08
+
+ BSK ¡ RXMKHT-MANAGER
+
+ BION ¡ RX07MK07HT08
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 08
+
+ BION-ID ¡ ST08
+
+ BSK ¡ RXMKHTST-MANAGER
+
+ BION ¡ RX07MK07HT08ST08
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ¬
+ AXIOM ¡ ^ <TASTENCODE> = ¤
+ AXIOM ¡ ^ ¬ ≠ * ≠ ¬ = RX-MANAGER
+ AXIOM ¡ ^ ¤ ≠ * ≠ ¤ = RX-STATUS
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¬ = RX-MANAGER
+ GEBAUTE-EINHEIT ¡ ¤ = RX-STATUS
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 14
+
+ BION-ID ¡ CB14
+
+ BSK ¡ RXMKHTSTCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB14
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬ = RX-MANAGER
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ ICMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ · = IC-IN-1
+
+ # AXIOMEN
+ AXIOM ¡ RX-MANAGER + IC-IN-1 ≠ ** ≠ ¬· = RX-IN-1-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 08
+
+ BION-ID ¡ LD08
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB14LD08
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 09
+
+ BION-ID ¡ LD09
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB14LD09
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STATUSWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ SC
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ SC01
+
+ BSK ¡ RXMKHTSTCBSC-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB14SC01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¤ = RX-STATUS
+
+ # AXIOM
+ AXIOM ¡ RX-IN-1-FLÄCHE + RX-STATUS ≠ ** ≠ ¬·¤ = RX-IN-1-STATUS
+
+ # SCHALTAXIOM | STATUS WEG
+ SCHALTAXIOM ¡ # ON-PIPE-TORWABE INPUT | ZU PIMK-RXMK OUPUT
+
+ # FERTIGE EINHEIT 
+ EINHEIT ¡ ¬·¤ = RX-IN-1-STATUS
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ LD10
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB14SC01LD10
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬·¤ = RX-IN-1-STATUS
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 11
+
+ BION-ID ¡ LD11
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB14SC01LD11
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬·¤ = RX-IN-1-STATUS
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 15
+
+ BION-ID ¡ CB15
+
+ BSK ¡ RXMKHTSTCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB15
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬ = RX-MANAGER
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ ICMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ ·· = IC-IN-2
+
+ # AXIOMEN
+ AXIOM ¡ RX-MANAGER + IC-IN-2 ≠ ** ≠ ¬·· = RX-IN-2-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬·· = RX-IN-2-FLÄCHE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 12
+
+ BION-ID ¡ LD12
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB15LD12
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬·· = RX-IN-2-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 13
+
+ BION-ID ¡ LD13
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB15LD13
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬·· = RX-IN-2-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STATUSWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ SC
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ SC02
+
+ BSK ¡ RXMKHTSTCBSC-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB15SC02
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬·· = RX-IN-2-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¤ = RX-STATUS
+
+ # AXIOM
+ AXIOM ¡ RX-IN-2-FLÄCHE + RX-STATUS ≠ ** ≠ ¬··¤ = RX-IN-2-STATUS
+
+ # SCHALTAXIOM | STATUS WEG
+ SCHALTAXIOM ¡ # ON-PIPE-TORWABE INPUT | ZU PIMK-RXMK OUPUT
+
+ # FERTIGE EINHEIT 
+ EINHEIT ¡ ¬··¤ = RX-IN-2-STATUS
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 14
+
+ BION-ID ¡ LD14
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB15SC02LD14
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬··¤ = RX-IN-2-STATUS
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE 
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 15
+
+ BION-ID ¡ LD15
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB15SC02LD15
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬··¤ = RX-IN-2-STATUS
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 16
+
+ BION-ID ¡ CB16
+
+ BSK ¡ RXMKHTSTCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬ = RX-MANAGER
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ ICMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ ··· = IC-IN-3
+
+ # AXIOMEN
+ AXIOM ¡ RX-MANAGER + IC-IN-3 ≠ ** ≠ ¬··· = RX-IN-3-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬··· = RX-IN-3-FLÄCHE
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 16
+
+ BION-ID ¡ LD16
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16LD16
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬··· = RX-IN-3-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE 
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 17
+
+ BION-ID ¡ LD17
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16LD17
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬··· = RX-IN-3-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STATUSWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ SC
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SC03
+
+ BSK ¡ RXMKHTSTCBSC-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16SC03
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬··· = RX-IN-3-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¤ = RX-STATUS
+
+ # AXIOM
+ AXIOM ¡ RX-IN-3-FLÄCHE + RX-STATUS ≠ ** ≠ ¬···¤ = RX-IN-3-STATUS
+
+ # SCHALTAXIOM | STATUS WEG
+ SCHALTAXIOM ¡ # ON-PIPE-TORWABE INPUT | ZU PIMK-RXMK OUPUT
+
+ # FERTIGE EINHEIT 
+ EINHEIT ¡ ¬···¤ = RX-IN-3-STATUS
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 18
+
+ BION-ID ¡ LD18
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16SC03LD18
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬···¤ = RX-IN-3-STATUS
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE 
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 19
+
+ BION-ID ¡ LD19
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16SC03LD19
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬···¤ = RX-IN-3-STATUS
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 17
+
+ BION-ID ¡ CB17
+
+ BSK ¡ RXMKHTSTCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬ = RX-MANAGER
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ ICMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ ···· = IC-IN-4
+
+ # AXIOMEN
+ AXIOM ¡ RX-MANAGER + IC-IN-4 ≠ ** ≠ ¬···· = RX-IN-4-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 20
+
+ BION-ID ¡ LD20
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17LD20
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE 
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 21
+
+ BION-ID ¡ LD21
+
+ BSK ¡ RXMKHTSTCBLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17LD21
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STATUSWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ SC
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ SC04
+
+ BSK ¡ RXMKHTSTCBSC-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17SC04
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¤ = RX-STATUS
+
+ # AXIOM
+ AXIOM ¡ RX-IN-4-FLÄCHE + RX-STATUS ≠ ** ≠ ¬····¤ = RX-IN-4-STATUS
+
+ # SCHALTAXIOM | STATUS WEG
+ SCHALTAXIOM ¡ # ON-PIPE-TORWABE INPUT | ZU PIMK-RXMK OUPUT
+
+ # FERTIGE EINHEIT 
+ EINHEIT ¡ ¬····¤ = RX-IN-4-STATUS
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 22
+
+ BION-ID ¡ LD22
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17SC04LD22
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-ON-PIPE 
+
+###====================================|====================================###
+
+ WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 23
+
+ BION-ID ¡ LD23
+
+ BSK ¡ RXMKHTSTCBSCLD-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17SC04LD23
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ PIMKHT-OFF-PIPE 
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = 
+ # BION-ID-PFAD (CB14 → LD08)  → RX07+MK07+HT08+ST08+CB14+LD08
+ # BION-ID-PFAD (CB14 → LD09)  → RX07+MK07+HT08+ST08+CB14+LD09
+ # BION-ID-PFAD (CB14 → SC01 → LD10)  → RX07+MK07+HT08+ST08+CB14+SC01+LD10
+ # BION-ID-PFAD (CB14 → SC01 → LD11)  → RX07+MK07+HT08+ST08+CB14+SC01+LD11
+ # BION-ID-PFAD (CB15 → LD12)  → RX07+MK07+HT08+ST08+CB15+LD12
+ # BION-ID-PFAD (CB15 → LD13)  → RX07+MK07+HT08+ST08+CB15+LD13
+ # BION-ID-PFAD (CB15 → SC02 → LD14)  → RX07+MK07+HT08+ST08+CB15+SC02+LD14
+ # BION-ID-PFAD (CB15 → SC02 → LD15)  → RX07+MK07+HT08+ST08+CB15+SC02+LD15
+ # BION-ID-PFAD (CB16 → LD16)  → RX07+MK07+HT08+ST08+CB16+LD16
+ # BION-ID-PFAD (CB16 → LD17)  → RX07+MK07+HT08+ST08+CB16+LD17
+ # BION-ID-PFAD (CB16 → SC03 → LD18)  → RX07+MK07+HT08+ST08+CB16+SC03+LD18
+ # BION-ID-PFAD (CB16 → SC03 → LD19)  → RX07+MK07+HT08+ST08+CB16+SC03+LD19
+ # BION-ID-PFAD (CB17 → LD20)  → RX07+MK07+HT08+ST08+CB17+LD20
+ # BION-ID-PFAD (CB17 → LD21)  → RX07+MK07+HT08+ST08+CB17+LD21
+ # BION-ID-PFAD (CB17 → SC04 → LD22)  → RX07+MK07+HT08+ST08+CB17+SC04+LD22
+ # BION-ID-PFAD (CB17 → SC04 → LD23)  → RX07+MK07+HT08+ST08+CB17+SC04+LD23
+ # BION-ID-VPFAD → RX07MK07HT08ST08CB14LD08LD09SC01LD10LD11CB15LD12LD13SC02LD14LD15CB16LD16LD17SC03LD18LD19CB17LD20LD21SC04LD22LD23
+ # BION-ID-RPFAD → RX07|MK07|HT08
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@kernel-nr: 08 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #                  ICTUS = THE WORKPOINT FOR PROZESSING                     #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ ICTUS
+
+ KOMPONENTEN-ID ¡ IC
+
+ BION-NR ¡ 08
+
+ BION-ID ¡ IC08
+
+ MASTER-ID ¡ MK46SU08
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 08
+
+ BION-ID ¡ MK08
+
+ BSK ¡ ICMK
+
+ BION ¡ IC08MK08
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ PLATZ
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 09
+
+ BION-ID ¡ HT09
+
+ BSK ¡ ICMKHT-PLATZ
+
+ BION ¡ IC08MK08HT09
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ PLATZ
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 09 
+
+ BION-ID ¡ ST09
+
+ BSK ¡ ICMKHTST-PLATZ
+
+ BION ¡ IC08MK08HT09ST09
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ·
+ AXIOM ¡ ^ <TASTENCODE> = ··
+ AXIOM ¡ ^ <TASTENCODE> = ···
+ AXIOM ¡ ^ <TASTENCODE> = ····
+ AXIOM ¡ ^ · ≠ * ≠ · = IC-IN-1
+ AXIOM ¡ ^ ·· ≠ ** ≠ ·· = IC-IN-2
+ AXIOM ¡ ^ ··· ≠ *** ≠ ··· = IC-IN-3
+ AXIOM ¡ ^ ···· ≠ **** ≠ ···· = IC-IN-4
+
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ · = IC-IN-1
+ GEBAUTE-EINHEIT ¡ ·· = IC-IN-2
+ GEBAUTE-EINHEIT ¡ ··· = IC-IN-3
+ GEBAUTE-EINHEIT ¡ ···· = IC-IN-4
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ PLATZ
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ LD04
+
+ BSK ¡ LD04-PLATZ
+
+ BION ¡ IC08MK08HT09ST09LD04
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ · = IC-IN-1 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ ICMKHTST-PLATZ
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ RXMKHTSTCB-MANAGER
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ PLATZ
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 05
+
+ BION-ID ¡ LD05
+
+ BSK ¡ ICMKHTSTLD05-PLATZ
+
+ BION ¡ IC08MK08HT09ST09LD05
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ·· = IC-IN-2
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ ICMKHTST-PLATZ
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ RXMKHTSTCB-MANAGER
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ PLATZ
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ LD06
+
+ BSK ¡ ICMKHTSTLD06-PLATZ
+
+ BION ¡ IC08MK08HT09ST09LD06
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ··· = IC-IN-3
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ ICMKHTST-PLATZ 
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ RXMKHTSTCB-MANAGER
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ 07
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ 07
+
+ BION-ID ¡ LD07
+
+ BSK ¡ ICMKHTSTLD07-PLATZ
+
+ BION ¡ IC08MK08HT09ST09LD07
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ···· = IC-IN-4
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ ICMKHTST-PLATZ 
+
+ # AXIOM
+ AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ RXMKHTSTCB-MANAGER
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = 
+ # BION-ID-PFAD IC-IN-1 → IC08+MK08+HT09+ST09+LD04
+ # BION-ID-PFAD IC-IN-2 → IC08+MK08+HT09+ST09+LD05
+ # BION-ID-PFAD IC-IN-3 → IC08+MK08+HT09+ST09+LD06
+ # BION-ID-PFAD IC-IN-4 → IC08+MK08+HT09+ST09+LD07
+ # BION-ID-VPFAD → IC08MK08ST09HT09LD04LD05LD06LD07
+ # BION-ID-RPFAD → IC08|MK08|HT09
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+
+ab hier pflege ich gerade noch ein , seperat wird das tws lexikon aufgebaut für die tws 0.2 
+
+@waben-nr: lex ===================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###=========================THE-WABE-NEST-LEXIKON===========================###
+ #            DAS TRAGENDE SKELETT DES GESAMTEN PYLOVARA-SYSTEMS             #
+ #       BERUHT AUF DEM PRINZIP EINER SELBST TRAGENDEN PROGRAMMIERUNG        #
+ #     DIE PURE SCHNELLIGKEIT DER NATÜRLICHEN PERFORMANCE WIEDERSPIEGELT     #
+ #        KEINE FEHLERTOLERANZEN - KEINE HEUCHELEI - KRAFT DES SEIN`S        #
+ #         WILLKOMMEN IM ENTWICKLER LEXIKON VON THE-WABE-NEST-SYSTEM         #
+###=============================VORKENNTNISSE===============================###
+ # 01 - BAUSTEINSCHALTUNGSKREISLAUF  | 02 - BIBLIOTHEKEN-ARTEN               #
+ # 03 - AXIOM-PROGRAMMIERUNG         | 04 -                                  #
+###=========================WABEN-KATALOG-TRAGEND===========================###
+ # NR X NAMEN                        | NR X NAMEN                            #
+ # 10 - KOPFWABE                     | 11 - KERNWABE                         #
+ # 12 - HAUPTWABE                    | 13 - STARTWABE                        #
+###=========================WABEN-KATALOG-SPEZIAL===========================###
+ # NR X NAMEN                        | NR X NAMEN                            #
+ # 20 - BLOCKWABE                    | 21 -                                  #
+###=========================WABEN-KATALOG-PLUG-IN===========================###
+ # NR X NAMEN                        | NR X NAMEN                            #
+ # 30 - COMBOWABE                    | 31 - SYSTEMWABE                       #
+ # 32 - BNDUNGSWABE                  | 33 - STATUSWABE                       #
+ # 34 -                              | 35 -                                  #
+ # 36 -                              | 37 -                                  #
+###=======================WABEN-KATALOG-SCHLIEẞEND==========================###
+ # NR X NAMEN                        | NR X NAMEN                            #
+ # 60 - ENDWABE                      | 61 X LINKENDWABE                      #
+ # 62 - AUSFÜHRUNGSWABE              | 63 -                                  #
+ # 64 -                              | 65 -                                  #
+###=======================WABEN-KATALOG-EXKLUSIVE===========================###
+ # NR X NAMEN                        | NR X NAMEN                            #
+ # 80 X REGISTERWABE                 | 81 X DATENTYPWABE                     #
+ # 82 -                              | 83 -                                  #
+ # 84 -                              | 85 -                                  #
+###===============================VERSIONSDATEN=============================###
+ # TWS = THE-WABE-NEST-SYSTEM                          #   #     #   #       #
+ # TASTATURSTANDARD = UTF -8 DEUTSCHER-STANDARD        #  PYLOVARA—SYSTEM©   #
+ # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel        #      #   #          #
+ # SINGLE SOURCE OF TRUTH § SSoT LEXIKON VERSION 00-02 #   #    #     #      #
+###=================================IMPRESSUM===============================###
+ # AUTOR = OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68                              #
+ # STANDORT = /Pylovara/Handbuch/WabenNotes/         GITHUB                  #
+ # STATUS = VOLLSTÄNDIGE-ROLLENDE-VERBESSERUNGEN        PYLOVARA-SYSTEM©     #
+ # PDF NAMENSLAYER = PYLOVARA-SYSTEM-TWS-SSoT-XX.XX.pdf          SINCE-2025  #
+ # GARANTIERTE BERUFSERFAHRUNG = PYLOVARA-NETZWERK-SYSTEM                    #
+###===============================INFORMATION===============================###
+ # DIESES LEXIKON BEZIEHT SICH AUF DAS TWS 0.2                               #
+ # NACH DER FERTIGSTELLUNG DER VERSION , WERDEN ALLE WABEN RESETET           #
+ # UND NEU AUFGEBAUT BZW GRUNDLEGENDE ERWEITERT .                            #
+ # NACH DER FERTIGSTELLUNG DES PYLOVARA-SYSTEM-SSoT-00-82.pdf SNAPSHOT       #
+ # WIRD , BEVOR DIE 00-83 AUFGESETZT WIRD - DAS TWS 0.3 AUFGEBAUT .          #
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+ #             DER ENTWICKLER-PROGRAMMIERUNGSBEREICH STEHT                   #
+ #               FÜR DIE WABEN NOCH NICHT ZUR VERFÜGUNG !                    #
+###===============================LEXIKON-ENDE==============================###
+ @waben-nr: 01 Ð BAUSTEINSCHALTUNGSKREISLAUF
+###LEXIKON NAVIGATION TERMINAL = wabi <NR> ======THE-WABE-NEST-SYSTEM=======###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###======================BAUSTEINSCHALTUNGSKREISLÄUFE=======================###
+
+ INFORMATIONSSEITE : BAUSTEINSCHALTUNGSKREISLAUF 
+
+ ZWECK : VERSTÄNDNIS DER SCHALTUNGSLOGIK
+
+###==============================INFORMATIONEN==============================###
+
+ BAUSTEINSCHALTUNGSKREISLAUF = BSK
+ —————————————————————————————————
+
+ JEDE BSK BAUT AUF DIE ANDERE AUF, SIE ZIEHT DIE INFORMATIONEN AUS DER OBEREN
+ HERAUS UND INTEGRIERT SIE IN IHRE EINE BSK.
+
+ NACH JEDER INTEGRATION SETZT SIE AB DER HAUPTWABE, IMMER DEN PROGRAMM NAMEN 
+ ALS PRÄFIX HINZU.
+
+ ABLAUF BEISPIEL :
+
+ KOMPONENTEN-ID ¡ TA # KOPFWABEN | GESAMT TRÄGER
+ WABEN-ID ¡ TAMK # MASTERKERNWABE | PROGRAMM TRÄGER EINHEIT
+ WABEN-ID ¡ TAMKHT # HAUPTWABE | HAUPTTRAGER EINER GESAMTEN PROGRAMMIERUNG
+
+ AB DER HAUPTWABE EXISTIEREN PROGRAMM NAMEN DIE MIT „ PROGRAMM ¡ <NAME> “ 
+ GEKENNZEICHNET SIND.
+
+ JEDE HAUPTWABE HAT EINEN EIGENEN PRÄFIX UND HÄGT SICH ZU DER SUMMIERUNG HINZU 
+
+ BEISPIEL : 
+
+ 
+ KOMPONENTEN-ID ¡ TA              # KOPFWABEN | GESAMT NAMENSGEBUNG 
+ WABEN-ID ¡ TAMK                  # MASTERKERNWABE | PROGRAMM TRÄGER EINHEIT
+ WABEN-ID ¡ TAMKHT-RUNTIME        # HAUPTWABE | HAUPTTRAGER 
+ WABEN-ID ¡ TAMKHTST-RUNTIME      # STARTWABE | STARTET DAS PROGRAMM
+
+ DIE ABFOLGE WIRD VON LINKS NACH RECHTS GELESEN UND ERGEBEN EINEN FOLLSTÄNDIGEN 
+ ABLAUF MECHANISMUS. 
+
+ DIE EINDEUTIGKEIT MACHT DIE REIHENFOLGE.
+ DIE DIE EINDEUTIGE GESTARTETE PROGRAMMIERUNG ERLEDIGT DER PRÄFIX.
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+          ZU DIESER SEITE GIBT ES KEINE GENERAL PROGRAMMIERUNGEN 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+@waben-nr: 02 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===========================BIBLIOTHEKEN-ARTEN============================###
+
+ INFORMATIONSSEITE : BIBLIOTHEKEN-ARTEN
+
+ ZWECKE : VERSTÄNDNIS DER BION ZUSAMMENFÜHRUNGEN
+
+###==============================INFORMATIONEN==============================###
+
+ BION-ID
+ ———————
+
+ JE NACH WABEN-KATEGORIE BAUEN FOLGENDE PUNKTE ZUSAMMEN AUF 
+
+ KOPFWABE :
+
+ - KOMPONENTEN-ID ¡ TA
+ + BION-NR ¡ 01 
+ = BION-ID ¡ TA01
+
+ MASTERKERNWABE : 
+
+ - WABEN-ID ¡ MK
+ + BION-NR ¡ 01
+ = BION-ID ¡ MK01
+
+ HAUPTWABE :
+
+ - WABEN-ID ¡ HT
+ + BION-NR ¡ 01
+ = BION-ID ¡ HT01
+
+ DIESES PRINZIP ZEI9CHNET SICH IN JEDER BION-ID AB UND BEKOMMT DADURCH EINE 
+ EIMALIGE KENNUNG ZUGEWISSEN .
+
+###==============================INFORMATIONEN==============================###
+
+ BION 
+ —————
+ 
+ BEISPIEL : 
+
+ BION ¡ PI02MK02HT02
+
+ BION ANHAND DER OBRIGEN BEISPIELE : 
+
+ BION-ID + BION-ID + BION-ID USW = BION ¡ PI02MK02HT02 
+
+ DIE BION SELBST TRÄGT KEIN PRÄFIX, SIE IST EINDEUTIG DURCH 
+ EINDEUTIGE BENUMMERUNG.
+
+ DIESES BEISPIEL ZEIGT DIE BION-ID IM GESAMT ZUSTAND DER ABFOLGE, INKLUSIVER 
+ EINDEUTIGKEIT. ANHAND DIESER KENNUNG LÄSST SICH PRÄZISE SAGEN ZU WELCHER 
+ KOMPONENTE WELCHE WABE VERBAUT IST UND SOMIT GANZ LEICHT ENDWEDER ÜBER 
+ DIE KENNUNG ODER DURCH EINZELNEN WABEN BION-ID KENNUNGEN - SUCHEN .
+
+ IN DEM BEISPIEL HÄTTEN WIR : 
+ 
+ PI02 = (P)ROTE(I)N 
+ KOMPONENTE = 02 (SEITEN ORIENTIERT)
+ MASTERKERNWABE = 02 ( DIE 2 VERBAUTE KERNWABE )
+ HAUPTWABE = HT02 = ( DIE ZWEITE VERBAUTE HAUPTWABE - IN DEM FALL IN ON-PIPE )
+
+ DADURCH LASSEN SICH ( FÜR SPÄTERE EINSTEIGER UND ETWAS ÜBERSICHTS GEDÄCHNIS)
+ ABFOLGEN NACHVOLLZIEHEN , DIE IN ABFOLGE , WIE AUCH IM EINZELNEN ABSCHNITT 
+ VOLLSTÄNDIGE (NICHT NUR IN DER FEHLER ODER ERWEITERUNGS SUCHE) ANALYSEN WIE 
+ DIREKTE DAZUGEHÖRIGKEITEN BESTIMMEN .
+
+ ZUSATZ :
+
+ JEDE WABE HAT FÜR SICH EINE FOLGE NUMMER, KEINE WABE HAT EINE DOPPELTE NUMMER .
+ JEDE WABE KANN VON 01 BIS 99 ZÄHLEN UND DIES REICHT VOLLKOMMEND AUS .
+
+ INFO = BEI SPÄTEREN VERLÄUFEN KANN UND WIRD AUF 3 STELLIG GEUPDATET .
+
+ SOMIT HAT JEDE WABE IHRE EXPLIZITE KENNUNG UND KANN EINDEUTIG IDENTIFIZIERT 
+ WERDEN .
+
+ DAS BION SELBST IST DIE FOLGE SCHRIFT VON ALLE VORWABEN, SIE NIMMT DIE KOPFWABE 
+ UND DIE KERNWABE MIT UND SCHREIBT SICH AB DER EIGENEN HAUPTWABE HOCH .
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+         AUF DIESE SEITE GIBT ES KEINE, SIE DIENT DER AUFKLÄRUNG
+                     DAS AXIOM WERDEN IN DEN WABEN AUFGEBAUT
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 03 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===========================BIBLIOTHEKEN-ARTEN============================###
+
+ INFORMATIONSSEITE : AXIOM-PROGRAMMIERUNG 
+
+ ZWECKE : AXIOM VERSTÄNDNIS 
+
+###==============================INFORMATIONEN==============================###
+
+ AXIOM, DAS WORT DAS DIE ABFOLGE UND DIE VERBINDUNG BESCHREIB.
+ ES DIENT ALS GENERELLE "PROGRAMMIERUNGSSCHABLONE" UND WIRD FÜR PRÄZISIERTE 
+ AUSSAGEN VERWENDET.
+
+ AXIOMEN SIND SÄTZE DIE EINE SACHE IN DER ABFOLGE BESCHREIBEN WIE 
+ EIN GESETZT IN DER MATHEMATIK.
+
+ WIR VERWENDET DAS AXIOM IN EINZELFORM, OHNE SATZ-BILDUNG IN DER ERSTEN INSTANZ
+ UM GENAU DAS ZU TUN : 
+
+ IN WORTEG GESETZTES BEISPIEL : 
+
+ AXIOM ¡ DAS(ZEICHEN-BAUM) ≠(MASTERISTGLEICH) ^<TASENCODE> =(ISTGLEICH SYMBOL)
+
+ 
+ PROGRAMMIERUNGSBEREICH ↓
+ # BEISPIEL FÜR STARWABE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ ≠ * = *
+ AXIOM ¡ ^ <TASTENCODE> = ¢ 
+ AXIOM ¡ ^ <TASTENCODE> = ! 
+ AXIOM ¡ ¢ + ! ≠ ** ≠ ¢!
+ AXIOM ¡ ! + ¢ ≠ ** ≠ !¢
+
+ DAS MASTER ISTGLEICH DIENT FÜR DIE SYSTEM LOGIK , DAS NORMALE ISTGLEICH FÜR 
+ ALLES ANDERE DARIN .
+
+ DADURCH ERREICHEN WIR EINE VORPROGRAMMIERUNGSSTUFE DIE IM WEITEREN AUSBAU 
+ PRÄZISIERT WERDEN UND IHRES GLEICHEN SUCHEN WIRD.
+
+###=========================PROGRAMMIERUNGSBEREICH==========================###
+
+         AUF DIESE SEITE GIBT ES KEINE, SIE DIENT DER AUFKLÄRUNG
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 10 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###================================KOPFWABE=================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ <NAME>
+
+ KOMPONENTEN-ID ¡ <PRÄFIX>
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ MASTER-ID ¡ <MASTER>
+
+###==============================INFORMATIONEN==============================###
+
+      DIE MASTER GEBUNDENE KOPFWABE TRÄGER DER GESAMTEN PROGRAMMIERTEN
+      WABEN, DIE ALLES FIXIERT UND INS MASTER EINTRÄGT UND
+      BENENNT WIE NUMMERISCH ZUORDNET.
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ INFO : SEITEN NR
+
+ TA01 PI02 PO03 TE04 BI05 AK06 RX07 IC08
+
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 11 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###=============================MASTERKERNWABE==============================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+###==============================INFORMATIONEN==============================###
+
+    KERNTRÄGER DER GESAMTEN HAUPTWABEN PROGRAMMIERUNGEN VON EINER KOMPONENTE
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ MK01 MK02 MK03 MK04 MK05 MK06 MK07 MK08
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 12 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================HAUPTWABE=================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ TA01 = HT01
+
+ PI01 = HT02 HT03
+
+ PO03 = HT04
+
+ TE04 = HT05
+
+ BI05 = HT06
+
+ AK06 = HT07
+
+ RX07 = HT08
+
+ ICTUS = HT09
+
+###==============================INFORMATIONEN==============================###
+
+                             PROGRAMM HAUPT-TRÄGER 
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 13 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================STARTWABE=================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ TA01 = ST01
+
+ PI01 = ST02 ST03
+
+ PO03 = ST04
+
+ TE04 = ST05
+
+ BI05 = ST06
+
+ AK06 = ST07
+
+ RX07 = ST08 
+
+ IC08 = ST09
+
+###==============================INFORMATIONEN==============================###
+
+ START SEQUENZ UND BAUT BENÖTIGTE SYMBOLE.
+ 
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 20 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================BLOCKWABE=================================###
+
+WABEN-KATEGORIE Ð BLOCKWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ BK
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ BK<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^       START: <ON-PIPE-START>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^ ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^       SYNC: <SYMK>
+ AXIOM ¡ ^       KOPF: <NIMK>
+ AXIOM ¡ ^      START: <ON-PIPE-START>
+ AXIOM ¡ ^       FOOD: <NIMK>
+ AXIOM ¡ ^  ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        REK: <REMK>
+ AXIOM ¡ ^        SEN: <SEMK>
+ AXIOM ¡ ^        SEN: <SEMK>
+ AXIOM ¡ ^       FREE: <REMK>
+
+ # ZUSCHLUSS KANÄLE = INPUT
+ BRÜCKE-IN ¡ <ZYMK>
+ BRÜCKE-IN ¡ <SYMK>
+ BRÜCKE-IN ¡ <NIMK>
+
+ # VERARBEITUNGS PIPELINE ANSCHLUSS = IO
+ BRÜCKE-IO ¡ PIMKHTSTBK-ON-PIPE
+
+ # ZUSCHLUSS KANÄLE = OUTPUT
+ BRÜCKE-OUT ¡ <NIMK>
+ BRÜCKE-OUT ¡ <ZYMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <SEMK>
+ BRÜCKE-OUT ¡ <SEMK>
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ PI = BK01 
+
+###==============================INFORMATIONEN==============================###
+
+     DATENPIPELINE KANAL FÜR DEN MCS ANSCHLUSS VON ON-PIPE-PROTEINEN
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ - PIPELINE SPÄTER PARALELLISIERBARE VERABEITUNGS HARDWARE 
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 30 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================COMBOWABE=================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ CB<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ 
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ <AXIOM> = <KENNUNG>
+ EINHEIT ¡ <AXIOM> = <KENNUNG>
+
+ # AXIOMEN
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ <AXIOM> = <NEUE-KENNUNG>
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ TA = CB01 CB02
+
+ PI = CB03 CB04 CB05 CB06 CB07 CB08 CB09 CB10 CB11
+
+ PO = CB12 
+
+ AK = CB13
+ 
+ RX = CB14 CB15 CB16 CB17
+
+###==============================INFORMATIONEN==============================###
+
+ LINKT KERNKLASSEN UND COMBINIERT WIE BINDET UND SENDET ES AN  MCS-TYP-<PRÄFIX>
+ 
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 31 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================SYSTEMWABE================================###
+!! entwicklungs status : unvollständig 
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION-ID-KETTE>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ PO = ST01 ST02
+
+###==============================INFORMATIONEN==============================###
+
+   DIE EXPLIZITE SYSTEM SPEZIFIKATIONS ANSTEUERUNG DER EINGABE 
+
+   WIRD SPÄTER KOMPONENTEN ÜBEGREIFEND SPEZIALISIERT PROGRAMMIERT
+   UND BEFINDET SICH IM DEFAULT MODUS ALS DIREKTE EINVERARBEITUNGSWABE 
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # WABEN GRUNDPROGRAMMIERUNG 
+ WABEN-KATEGORIE ≠ WABEN-NAME ≠ * + WABE ≠ *WABE
+ PROGRAMM ≠ PROGRAMM-NAMEN ≠ *
+ WABEN-ID ≠ WABENKENNUNG ≠ *WABE ≠ **
+ BION-NR ≠ NR
+ BION-ID ≠ BION-ID-ABFOLGE
+ BION ≠ BION
+
+ # WABEN GRUNDPROGRAMMIERUNGEN
+ WABEN-BIND ≠ EINHEIT
+ WABEN
+
+ AXIOM ≠ AXIOM 
+ EINHEIT ≠ RAM 
+
+ # ENTWICKLUNGSBEREICH (MUSS WARSCHEINS IN DEN ABSOLULATOR )
+ BSK ≠ BION-ID + Ω + - + PROGRAMM ≠ BAUSTEINSCHALTUNGSKREISLAUF
+ BION ≠ KOPFWABE ≠ KOMPONENTEN-ID + BION-NR +
+ 
+ # GRUNDPROGRAMMIERUNG & SYSTEM-STEUERUNG
+ AXIOM ≠ MASTER-CONTROL ≠ LATCH-ENABLE  = <*>
+ AXIOM ≠ MASTER-CONTROL ≠ BUFFER-CLEAR  = <*>
+ AXIOM ≠ MASTER-CONTROL ≠ SYNC-TRIGGER  = <*>
+ AXIOM ≠ MASTER-CONTROL ≠ STREAM-SPLIT  = <*>
+ AXIOM ≠ MASTER-CONTROL ≠ OVERFLOW-GATE = <*>
+ AXIOM ≠ MASTER-CONTROL ≠ TIMEOUT-CHECK = <*>
+
+ # I/O & SOFTWARE INTERFACE AXIOME (BOXI / UNTERBAU-SYSTEME)
+ AXIOM ≠ SYSTEM-IO ≠ INTERRUPT-CATCHER  = <*>
+ AXIOM ≠ SYSTEM-IO ≠ ABI-REGISTER-FETCH  = <*>
+ AXIOM ≠ SYSTEM-IO ≠ SYSCALL-TRIGGER    = <*>
+ AXIOM ≠ SYSTEM-IO ≠ SHELL-COMMAND-EXEC = <*>
+ AXIOM ≠ SYSTEM-IO ≠ CACHE-READ-WRITE   = <*>
+ AXIOM ≠ SYSTEM-IO ≠ PATH-BUFFER-PARSE  = <*>
+ AXIOM ≠ SYSTEM-IO ≠ NET-SOCKET-RECEIVE = <*>
+
+ # ALU & ARITHMETISCH-LOGISCHE HARDWARE-AXIOME
+ AXIOM ≠ BXHT-ALU ≠ OPERATOR-SELECT  = <*>
+ AXIOM ≠ BXHT-ALU ≠ DATA-BUS-SHIFT   = <*>
+ AXIOM ≠ BXHT-ALU ≠ BIT-MASK-APPLY   = <*>
+ AXIOM ≠ BXHT-ALU ≠ FLAG-ZERO-CHECK  = <*>
+ AXIOM ≠ BXHT-ALU ≠ FLAG-CARRY-CHECK = <*>
+
+ # HARDWARE DIRECT-ADDRESSING & TELEMETRIE (PROTONEN)
+ AXIOM ≠ POHT-HARDWARE ≠ ADDR-BUS-SELECT  = <*>
+ AXIOM ≠ POHT-HARDWARE ≠ DATA-BUS-WRITE   = <*>
+ AXIOM ≠ POHT-HARDWARE ≠ POWER-VOLT-SENS  = <*>
+ AXIOM ≠ POHT-HARDWARE ≠ AMPERE-DRAW-SENS = <*>
+ AXIOM ≠ POHT-HARDWARE ≠ WATT-CALCULATION = <*>
+ AXIOM ≠ POHT-HARDWARE ≠ GPU-REGISTER-SET = <*>
+ AXIOM ≠ POHT-HARDWARE ≠ SENSOR-READ-RAW  = <*>
+
+
+
+
+
+
+ !!!! UNFERTIG
+ # 1. SYSTEM-INPUT MAPPING & VARIABLE-BINDUNG
+ #AXIOM ¡ INPUT-VARIABLE-SETTER   ≠ TARGET = <*>
+ #AXIOM ¡ DYNAMIC-NAME-BINDER     ≠ NAME-FRAME = <NAME>
+ #AXIOM ¡ DYNAMIC-BIK-BINDER      ≠ BIK-FRAME = <BIK>
+ #AXIOM ¡ DYNAMIC-VALUE-BINDER    ≠ VALUE-FRAME = <WERT>
+ #AXIOM ¡ INPUT-PARSER-MODE       ≠ PARSE-PATTERN = {<NAME><BIK><WERT>}
+ #AXIOM ¡ ALTERNATIVE-IO-PARSER   ≠ PARSE-PATTERN = <IO>
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 30 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================BINDUNGSWABE==============================###
+
+WABEN-KATEGORIE Ð BINDUNGSWABE 
+
+ PROGRAMM ¡ BINDER
+
+ WABEN-ID ¡ BD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ 
+
+ BSK ¡ 
+
+ BION ¡ 
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡
+
+ # SYSTEMWABEN KNÜPFER (SCHALTBRÜCKE)
+ BION-ID-1-IN ¡ <SYSTEMWABEN BION-ID>
+ BION-ID-2-IN ¡ <SYSTEMWABEN BION-ID>
+
+ # AXIOM
+ AXIOM ¡ BION-ID-1 + BI-BINDER + BION-ID-2 ≠ 
+
+ # FERTIG GEBAUTE EINHEIT
+ EINHEIT ¡ 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ BI05 = BD01
+
+###==============================INFORMATIONEN==============================###
+
+ BIMK WIRD GEBUNDEN GEHOLT , BINDET ZWEI WABEN ANSICH SICH ..
+
+ INFO : SOLANGE ER DIE EWABEN HOLEN MUSS , DÜRFEN DIE WABEN NICHT 
+ RESETET WERDEN ( PROZESS ENDE ),RST DANACH .
+
+ FUNGIERT GERADE ALS UNIVERSELLES MUSTER , WIRD SPÄTER PRÄZISIERTER 
+ 
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 33 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###================================STATUSWABE===============================###
+
+WABEN-KATEGORIE Ð STATUSWABE 
+
+ PROGRAMM ¡ <PROGRAMM>>
+
+ WABEN-ID ¡ SC
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ <WABEN-ID+BION-NR>
+
+ BSK ¡ <BSK>
+
+ BION ¡ <SCHALTPLAN-BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <EINHEIT>
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ <**MK>
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ <EINHEIT>
+ EINHEIT ¡ <EINHEIT>
+
+ # AXIOM
+ AXIOM ¡ 
+
+ # SCHALTAXIOM | STATUS WEG
+ SCHALTAXIOM ¡ # ON-PIPE-TORWABE INPUT | ZU PIMK-RXMK OUPUT
+
+ # FERTIGE EINHEIT 
+ EINHEIT ¡ <EINHEIT>>
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ RX07 = SC01 SC02 SC03 SC04
+
+###==============================INFORMATIONEN==============================###
+
+       COMBINIERT UND GIBT EXAKTEN KANAL FREI FÜR STATUS MELDUNG 
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 60 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###=================================ENDWABE=================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ ED<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # LIEGT IM RAM 
+ FINISH ¡ <AXIOM> 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ TA01 = ED01
+
+ PI02 = ED02 ED03 ED04 ED05 ED06 
+
+ TE04 = ED07
+
+###==============================INFORMATIONEN==============================###
+
+ BEENDET DAS ZUSAMMENSETZEN ODER DEN PROZESS DESSEN 
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 61 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###==============================LINKENDWABE================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ PO03 = LD01
+
+ TE04 = LD02
+
+ BI05 = LD03
+
+ IC08 = LD04 LD05 LD06 LD07
+
+ RX007 = LD08 LD09 LD10 LD11 LD12 LD13 LD14 LD15 LD16 LD17 LD18 LD19 LD20 LD21
+
+###==============================INFORMATIONEN==============================###
+
+           BEENDET DAS ZUSAMMENGESETZTE HAUPTWABEN PROGRAMM UND 
+    VERLINKTES IM GESAMTEN FÜR DEN JEWEILIGEN GEBRAUCHTEN EINSATZBEREICH  
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+@waben-nr: 62 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###============================AUSFÜHRUNGSWABE==============================###
+
+WABEN-KATEGORIE Ð AUSFÜHRUNGSWABE
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ AN
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ AN01
+
+ BSK ¡ AKMKHTSTAN-IMPULS
+
+ BION ¡ AK06MK06HT07ST07CB13AN01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ AUSFÜHRBAR
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ AKMKHTSTCB-IMPULS
+
+ # AUSFÜHRUNGSLOGIK & ABSCHLUSS
+ AXIOM ¡ AUSFÜHRBAR ≠ VERARBEITUNG 
+
+ # AUSFÜHRUNGSERLAUBNIS | ABGABE AN IMPULS-TREIBER
+ AUSFÜHRUNG ¡ AUSFÜHRBAR
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+AK06 = AN01
+
+###==============================INFORMATIONEN==============================###
+
+ TRENN UNAUSFÜHRBARE PROTEINE VON AUSFÜHRBAREN PROTEINE UND WIRD MOMENTAN 
+ AUSSCHLIEẞLICH IM AKTIONSDRAHT ALS ENDWABE MIT AUSFÜHRUNGS RECHT EINGESETZT
+
+          AUS DIESEM GRUND SIND DIE DATEN VOM AKTIONSDRAHT ENTHALTEN 
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+tsw schmierbereich 
+# schmierzettel dev-note | tws 
+
+## NICHTS MEHR ÄNDERN 
+
+ LISTE FÜR MERKMALE 
+
+ VEREINHEITLICHE DIE WABEN * = <*> IN DEN BEREICHEN 
+
+ VEREINHEITLICHE DIE # HEADER INFO 
+
+ MEHR MICHT 
+
+
+
+
+########################################################
+
+NOTIZEN FÜR TWS 0.3 
+
+MUTTERWABEN 
+
+10 BIS 60+
+
+KINDERWABEN 
+
+JEDE WABE VON 10 BIS 60+
+BEKOMMT MODULARITÄTS MERKMALE DER EINSATZMÖGLICHKEITEN 
+AUF KERNBASIS DER MUTTERWABE IM TWS SELBST 
+
+
+! MUTTER WABE 
+
+GURNDTRÄGER FÜR MODULARE BLÖCKE 
+= DAS WAS ICH BEI DER SYSTEM WABE ZUM BEISPIEL VORHABE 
+DA SIE AUCH IN BOXIS VERWENDET WERDEN ODER ALS DIREKTE EINGABE 
+UND SYMBOLISCH IN DER MCS SPRACHE VERANKERT SIND FÜR DAS MENSCHLICHE 
+VERBESSERTE LERNEN UND SCHREIBEN ALS SCHALTUNGSPROGRAMMIERUNGSSPRACHE SELBST 
+
+- KINDERWABEN SIND DANN DIE EINSATZGEBIETE 
+
+ IO EINGABE Z.B ... SYSTEMWABE ( MUTTER WABE ) 
+ 
+ KINDERWABEN TRAGEN DANN DIE OPTIONEN  DIE 
+ MOMENTAN IN DEN PROGRAMMIERUNGEN , BZW DEKLARATIONEN GESAMMELT WERDEN 
+
+
+ KINDER WABEN WERDEN DANN PER PRÄFIX ZUR MUTTER WABE HINZU 
+ GEADDET UND BEKOMMEN EINE GENERAL I-ID UND GENERAL O-ID 
+ DIE DANN DIE JEWEILIGE PROGRAMMIERUNGS EBENE ANSPRICHT 
+
+
+
+FAZIT = 
+
+MEIN VERFICKTES PROBLEM IST 
+
+ICH BIN SCHNELLER IN DER WEITER ENTWICKLUNG ALS DAS ICH 
+EINMAL DAS SYSTEM VOLLSTÄNDIG UMGESCHRIEBEN HABE 
+
+
+ICH HAB DEN GESAMTEN BAUPLAN IM KOPF ABER NICHT AUF PAPIER 
+
+ICH BRAUCH DRINGEND EINE GENERALE PROMPT ANWEISUNG FÜR EINE 
+KI DIE DIE STRUKUR SO HOCHZIEHT WIE ICH ES VORGEBE 
+
+DAMIT ICH SCHNELLER DIE SNAPSHOTS RAUS HAUEN KANN UND DABEI 
+MICH VOLLSTÄNDIG AUF DIE WEITER ENTWICKLUNG KONZENTRIEREN KANN 
+
+ ES MACHT MICH NOCH WAHNSINNIG 
+
+ICH BEENDE DAS AUCH AB DER 00-82 , DIE ERSTMAL STEHEN BLEIBT 
+
+ICH WERDE DANACH VOLLSTÄNDIG DIE MUTTER KINDWABEN BEZIEHUNG AUFBAUEN 
+
+UND ERST 3 WABEN DAFÜR VERWENDEN , BEVOR ICH ALLE SCHREIBE 
+
+UMSO KÜRZER DIE SCHEIẞ SCHREIB ARBEIT ... 
+
+UMSO SCHNELLER DIE UMSETZUNG DES BESTEN SYSTEMS DAS ES JE GEBEN HAT 
+UND JEMALS GEBEN WIRD !!!!
+
+
+AN DEM WOCHENED JETZT AB HEUTE ABEND ... SETZE ICH MICH AUSSCHLIEẞLICH 
+AN DIE NEUE STRUKUR ZUM EINWABEN ( BZW SCHON WIEDER VERALTETE)
+
+MACH DEN VERFICKTEN SNAPSHOT 
+
+UND DANACH GIBTS TACHELES ..... ICH WERDE VON MEINER EIGENEN 
+INTELLIGENZ SO UNTER DRUCK GESETZT , DAS ICH MIT DEM TIPPEN NICHT HINTER HER KOMME 
+
+
+
+
+
+MUTTERWABEN-KATEGORIE Ð EINGABENAUFRUF
+
+ WABEN-ID ¡ EC
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ EC01
+
+ BSK ¡ 
+
+ BION ¡ 
+
+ PROGRAMMIERUNG ↓ 
+
+ § <TOCHTERWABEN-KATEGORIE-NAME> 
+
+ CALL ADRESSE ¡
+ - 
+ - 
+ - 
+ - 
+ - 
+
+ ARCHITEKTUR ¡
+ - 
+ - 
+
+
+( SO UNGEFÄHR ... ausarbeiten aber in dem still )
+
+für alle systemwaben quasi , noch alte layout und alte nummern 
+
+TOCHTERWABEN-KATEGORIE § PRINTWABE 
+### 1. PRINT (Ausgabe / Text)
+- BION-ID: BX08HT01ST01SS01
+- MORPHIC-ID: BXSS-PRINT-IO
+- AXIOM: BXSS-PRINT-IO = " <IO>
+- EINSATZGEBIET: Systemausgaben, Strings, Textausgabe auf Konsole/Bildschirm
+- BESCHREIBUNG: Die einfachste und grundlegendste Ausgabe – alles, was als Text erscheinen soll.
+
+
+TOCHTERWABEN-KATEGORIE § ALUWABE 
+### 2. ALU (Arithmetische Logik)
+- BION-ID: BX08HT02ST02SS02
+- MORPHIC-ID: BXSS-ALU-IO
+- AXIOM: BXSS-ALU-IO = × <IO>
+- EINSATZGEBIET: Mathematische Operationen, Berechnungen, Ganzzahl-/Gleitkomma-Logik
+- BESCHREIBUNG: Der Rechenkern – alle mathematischen Operationen laufen hier.
+
+TOCHTERWABEN-KATEGORIE § SYSTEMWABE 
+### 3. SYSCALL (Systemaufrufe)
+- BION-ID: BX08HT03ST03SS03
+- MORPHIC-ID: BXSS-SYSCALL-IO
+- AXIOM: BXSS-SYSCALL = , <IO>
+- EINSATZGEBIET: Kernel- und Betriebssystem-Aufrufe (Datei, Prozesse, Speicher, Zeit, Netzwerk)
+- BESCHREIBUNG: Die Brücke zum Betriebssystem – alle OS-Funktionen werden hier angesprochen.
+
+TOCHTERWABEN-KATEGORIE § BINARYWABE 
+### 4. ABI (Application Binary Interface)
+- BION-ID: BX08HT04ST04SS04
+- MORPHIC-ID: BXSS-ABI-IO
+- AXIOM: BXSS-ABI-IO = Ħ <IO>
+- EINSATZGEBIET: Hardware-Register, Binär-Interfaces, direkte Hardware-Ansprache (PROTON)
+- BESCHREIBUNG: Die Verbindung zur Hardware – Register, Busse, DMA, Interrupts.
+
+
+TOCHTERWABEN-KATEGORIE § SHELLWABE 
+### 5. SHELL (Shell-Kommandos)
+- BION-ID: BX08HT05ST05SS05
+- MORPHIC-ID: BXSS-SHELL-IO
+- AXIOM: BXSS-SHELL = ' <IO>
+- EINSATZGEBIET: Native Shell-Befehle (Linux, Bash, Zsh, Windows CMD)
+- BESCHREIBUNG: Die Brücke zu bestehenden Betriebssystem-Shells – für externe Befehle.
+
+
+ und diese aufbauten werden dann allen mutter general waben unterhalb als auswechselbares modul eingearbeitet 
+
+
+ für Z.B 
+
+ MUTTERWABEN-KATEGORIE Ð VERLINKUNEN
+
+ MUTTERWABEN-KATEGORIE Ð SCHLEIFEN 
+
+ MUTTERWABEN-KATEGORIE Ð DATENFLUSS
+
+ MUTTERWABEN-KATEGORIE Ð CPUFREQUENZ 
+
+
+ USW 
+
+ die layouts werde ich dann gemütlich in ruhe ausarbeiten aber das wäre
+ die art und weise ... 
+
+ MUTTERWABEN bekommen eine STOCK präfix dafür 
+
+
+ austauschbare generalwaben mit modularen gleichen prinzipiell nutzbaren aspekten 
+ ... aufgebaut auf vorwärts wie rückwärts oder multitreads 
+
+ das wird lustig ... aber ich mach erstmaol die 00-82 fertig mit dir .. 
+
+
+ danach geht die post ab 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 6. MCD (Microcode Commands)
+- BION-ID: BX08HT06ST06SS06
+- MORPHIC-ID: BXSS-MCD-IO
+- AXIOM: BXSS-MCD-IO = ~ <IO>
+- EINSATZGEBIET: Pylovara-interne Mikrocode-Befehle (MCD) – systemeigene Steuerung
+- BESCHREIBUNG: Die systemeigene Befehlssprache für Pylovara-internen Code.
+
+### 7. BINÄR (Maschinenbefehle / OpCodes)
+- BION-ID: BX08HT07ST07SS07 / BX08HT07ST07SS08
+- MORPHIC-ID: BXSS-BINÄR-MASCHINENBEFEHL / BXSS-BINÄR-OPCODE
+- AXIOM: BXSS-BINÄR-MASCHINENBEFEHL = ° <MASCHINENBEFEHL> °
+- AXIOM: BXSS-BINÄR-OPCODE = ° <OPCODE> °
+- EINSATZGEBIET: Direkte Maschinenbefehle und OpCodes (Assembler-Level)
+- BESCHREIBUNG: Die tiefste Ebene – direkter Zugriff auf CPU-Befehle.
+
+### 8. CACHE (Speicherknoten / Schneller Cache)
+- BION-ID: BX08HT08ST08SS09
+- MORPHIC-ID: BXSS-CACHE-IO
+- AXIOM: BXSS-CACHE-IO = ¥ <IO>
+- EINSATZGEBIET: Schneller Speicherzugriff (NITROX-Cache), temporäre Datenhaltung
+- BESCHREIBUNG: Der Code-eigene Cache – speichert Daten schnell und effizient.
+
+### 9. PFAD (Datei- & Verzeichnispfade)
+- BION-ID: BX08HT09ST09SS10
+- MORPHIC-ID: BXSS-PFAD-IO
+- AXIOM: BXSS-PFAD-IO = $ <IO>
+- EINSATZGEBIET: Datei- und Verzeichnispfade, Ordnerstruktur-Navigation
+- BESCHREIBUNG: Die Verbindung zum Dateisystem – lokale Pfade und Ordner.
+
+### 10. NET (Netzwerk-Interfaces)
+- BION-ID: BX08HT10ST10SS11
+- MORPHIC-ID: BXSS-NET-IO
+- AXIOM: BXSS-NET-IO = § <IO>
+- EINSATZGEBIET: Netzwerkverbindungen, Sockets, IP-Adressen, Protokolle
+- BESCHREIBUNG: Die Verbindung zum Netzwerk – TCP/IP, HTTP, DNS, Sockets.
+
+
+
+
+
+
+
+
+MUTTERWABE Ð <GENERALBEGRIFF> 
+
+Trägt die grundsätze wie  
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+
+dann ab hier : 
+
+ TOCHTERWABEN § <EINSATZPROGRAMMIERUNG> 
+
+trägt ( wenn die mutter wabe zum beispiel SCHLEIFEN heißt , in den tochterwaben ( und das können einige sein explizite waben standarts wie 
+
+- schleife vorwärts ( 1 kanal) 
+- schleife Rückwärts ( 1 kanal) 
+- schleife mit 2 ausgangs multiplexer 
+- schleife mit 3 ausgangs multiplexer 
+- schleife plus verlinkungs prozess verabreitung davor , vorwärts 
+- schleife plus verlinkungs prozess verabreitung davor , rücvkwärts 
+
+USW ... DANN KOMMEN : 
+
+KINDERWABE ° <ANDOCKPLÄTZE> 
+
+kinder wabe sind lediglich dann die aux verbinden die benutzt werden können , wohin usw 
+
+quasi das was vorher in den waben in tws 0.2 steckt 
+
+ # ZUSCHLUSS KANÄLE = INPUT
+ BRÜCKE-IN ¡ 
+ BRÜCKE-IN ¡ 
+ BRÜCKE-IN ¡ 
+
+ # VERARBEITUNGS PIPELINE ANSCHLUSS = IO
+ BRÜCKE-IO ¡ PIMKHTSTBK-ON-PIPE
+
+ # ZUSCHLUSS KANÄLE = OUTPUT
+ BRÜCKE-OUT ¡ 
+ BRÜCKE-OUT ¡ 
+ BRÜCKE-OUT ¡ 
+
+linkk ¡ 
+einheit ¡ 
+waben reset ¡ 
+
+usw 
+
+
+also alles was überhaupt an anschluss funktionen benutzt werden darf , aber gerelaisierte ...
+in der jeweiligen tochter wabe werden dann die explizite genannt weil jeder schleifen kanal seine eigenen eindeutigen anschlüsse bekommt 
+
+
+
+
+kurzes geordnetes bild : 
+----------------------------------------------------
+
+TWS 0.3 = Drei-Ebenen-Hierarchie:
+Ebene 1: MUTTERWABE (Konzept)
+Generalisierter Begriff (z.B. "SCHLEIFEN")
+Trägt die Grundprinzipien
+BION-ID, BSK, BION
+
+Ebene 2: TOCHTERWABE (Spezifische Variante)
+Explizite Einsatzprogrammierung
+z.B. "Schleife vorwärts 1 Kanal"
+z.B. "Schleife mit 2 Ausgangs-Multiplexer"
+Jede Tochter hat ihre eigenen eindeutigen Anschlüsse
+
+Ebene 3: KINDERWABE (Konkrete Verbindungen)
+Die Aux-Verbindungen, die tatsächlich benutzt werden
+BRÜCKE-IN, BRÜCKE-IO, BRÜCKE-OUT
+LINK, EINHEIT, WABEN-RESET
+Alles was an Anschluss-Funktionen erlaubt ist
+
+---------------------------------------------------
+
+GESAMTE MUTTERWABE : 
+##########################################################
+
+WABEN-KATEGORIE Ð <mutterwaben-namen>
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ <mutter-kennung>
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+ TOCHTERWABEN-KATEGORIE § <TOCHTERWABE-NAME>
+
+ # HIER IHRE DATEN 
+
+ PROGRAMMIERBEREICH ↓
+
+ # AXIOM | LOGIK 
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+
+ KINDERWABE ! <ERLAUBTE ANSCHLÜSSE>
+
+ # HIER DIE DATEN 
+
+##########################################################
+
+
+
+die ersten waben werden explizit für mcs entwickelt , alles andere 
+wird hinten angestellt ... 
+
+mcs als expliziter alleinige programmiersprache 
+( alles andere duldung in mcs geschrieben transaktionsrahmen in proteinen)
+
+ich mache die industrie obsolet und sorge für ein besseres system 

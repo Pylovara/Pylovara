@@ -2,19 +2,12 @@
 ###============================PYLOVARA-SYSTEM==============================###
  #        REX = THE CONTROL FILE AND PROZESS MANAGMENT SYSTEM                #
 ###===========================WICHTIGER-HINWEIS=============================###
- #  REX SCHALTET SICH GRUNDSÄTZLICH IN DAS ON-PIPE PROGRAMM UND MACHT NUR    #   
- #  AUSNAHMEN IM OFF PIPE PROTEIN , FÜR ASYNCRONITÄTS PROZESSE OHNE WEITERE  # 
- #  PIPE VERBINDUNG.                                                         #
- #                                                                           #                                                          
+ #  REX SCHALTET SICH GRUNDSÄTZLICH NACH PIMK, ICMK WIRD HIER GEBUNDEN       #                                                         
  #   ┌──────────────────────────────────────────────────────────┐            #
  #   │                                                          │ (Loop)     #
- #   ▼                                                          │            #
- # [ PIMK ] ──► [ ICTUS (Workspace) ] ──► [ REX (Control/SC) ] ─┘            #
- #   │                                                                       #
- #   ├─► On-Pipe Proteine  (dynamisch im Stream angedockt)                   #
- #   │                                                                       #
- #   └─► Off-Pipe Proteine (direkt an REX geklemmt für Sonderprozesse)       #
- #                                                                           #
+ #   ▼ ON|OFF PIPE PROTEIN                                      │            #
+ #   [PIMK] ──► [ ICTUS (Workspace) ] ──► [ REX (Control/SC) ] ─┘            #
+ #  ( DIE BLOCKWABE WIRD NOCH MODIFIZIERT FÜR DEN SYNTAXBAUM REX ANSCHLUSS)  #                                                                     #
 ###===============================STARTPUNKT================================###
 
 WABEN-KATEGORIE Ð KOPFWABE
@@ -127,6 +120,10 @@ WABEN-KATEGORIE Ð COMBOWABE
 
 ###====================================|====================================###
 
+ HIER LINKENDWABE ZU PIMK 
+
+###====================================|====================================###
+
 WABEN-KATEGORIE Ð STATUSWABE 
 
  PROGRAMM ¡ MANAGER
@@ -166,15 +163,16 @@ WABEN-KATEGORIE Ð STATUSWABE
 
 ###====================================|====================================###
 
+ HIER LINKENDWABE ZU PIMK 
+
+###====================================|====================================###
+
 # WEITER RX-IN-1-FLÄCHE
  
  FLÄCHE 1 STATUS : BRAUCH NOCH LINKENDWABE ZU ON-PIPE PIMK
  RX07MK07HT08ST08CB14SC01 
  RXMKHTSTCBSC-MANAGER
 
- # FLÄCHE 1 OFF PIPE : FEHLT NOCH
- - LINKENDWABE 
- 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð COMBOWABE 
@@ -211,6 +209,10 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  # LIEGT IM RAM 
  EINHEIT ¡ ¬·· = RX-IN-2-FLÄCHE
+
+###====================================|====================================###
+
+ HIER LINKENDWABE ZU PIMK 
 
 ###====================================|====================================###
 
@@ -252,14 +254,15 @@ WABEN-KATEGORIE Ð STATUSWABE
  EINHEIT ¡ ¬··¤ = RX-IN-2-STATUS
 
 ###====================================|====================================###
+
+ HIER LINKENDWABE ZU PIMK 
+
+###====================================|====================================###
 # WEITER RX-IN-2-FLÄCHE
  
  FLÄCHE 2 STATUS : STATUS : BRAUCH NOCH LINKENDWABE ZU ON-PIPE PIMK
  RX07MK07HT08ST08CB15SC02
  RXMKHTSTCBSC-MANAGER
-
- # FLÄCHE 2 OFF PIPE : FEHLT NOCH
- - LINKENDWABE 
 
 ###====================================|====================================###
 
@@ -297,6 +300,10 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  # LIEGT IM RAM 
  EINHEIT ¡ ¬··· = RX-IN-3-FLÄCHE
+
+###====================================|====================================###
+
+ HIER LINKENDWABE ZU PIMK 
 
 ###====================================|====================================###
 
@@ -338,14 +345,15 @@ WABEN-KATEGORIE Ð STATUSWABE
  EINHEIT ¡ ¬···¤ = RX-IN-3-STATUS
 
 ###====================================|====================================###
+
+ HIER LINKENDWABE ZU PIMK 
+
+###====================================|====================================###
 # WEITER RX-IN-3-FLÄCHE
  
  FLÄCHE 3 STATUS : BRAUCH NOCH LINKENDWABE ZU ON-PIPE PIMK
  RX07MK07HT08ST08CB16SC03
  RXMKHTSTCBSC-MANAGER
-
- # FLÄCHE 3 OFF PIPE : FEHLT NOCH
- - LINKENDWABE 
 
 ###====================================|====================================###
 
@@ -383,6 +391,10 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  # LIEGT IM RAM 
  EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+###====================================|====================================###
+
+ HIER LINKENDWABE ZU PIMK 
 
 ###====================================|====================================###
 
@@ -424,14 +436,15 @@ WABEN-KATEGORIE Ð STATUSWABE
  EINHEIT ¡ ¬····¤ = RX-IN-4-STATUS
 
 ###====================================|====================================###
+
+ HIER LINKENDWABE ZU PIMK 
+
+###====================================|====================================###
 # WEITER RX-IN-4-FLÄCHE
  
  FLÄCHE 4 STATUS : BRAUCH NOCH LINKENDWABE ZU ON-PIPE PIMK
  RX07MK07HT08ST08CB17SC04
  RXMKHTSTCBSC-MANAGER
-
- # FLÄCHE 4 OFF PIPE : FEHLT NOCH
- - LINKENDWABE 
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###

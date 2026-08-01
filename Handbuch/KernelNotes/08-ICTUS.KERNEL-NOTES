@@ -83,161 +83,127 @@ WABEN-KATEGORIE Ð STARTWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð LINKENDWABE 
 
+ PROGRAMM ¡ <NAME>
 
+ WABEN-ID ¡ LD
 
+ BION-NR ¡ 04
 
+ BION-ID ¡ LD<NR>
 
+ BSK ¡ <BSK>-<PROGRAMM>
 
+ BION ¡ <BION>
 
+ PROGRAMMIERUNGSBEREICH ↓
 
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ 
 
 ###====================================|====================================###
+# 2
+WABEN-KATEGORIE Ð LINKENDWABE 
 
+ PROGRAMM ¡ <NAME>
 
+ WABEN-ID ¡ LD
 
+ BION-NR ¡ 05
 
+ BION-ID ¡ LD<NR>
 
-!!!!!!!!!!!!!↓↓↓↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓↓↓ !!!!!!!!!!!!!!!!
+ BSK ¡ <BSK>-<PROGRAMM>
 
-###==##==###======#####====STARTPUNKT ICTUS====#####======###==##==###
+ BION ¡ <BION>
 
-BION Ð ICTUS 
+ PROGRAMMIERUNGSBEREICH ↓
 
- MORPHIC-ID ¡ IC
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
- BION-ID ¡ IC
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
-MASK ¡ MASU-ICTUS
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ 
 
-BION-KERNWABE Ð ICTUS 
+###====================================|====================================###
+# 3
+WABEN-KATEGORIE Ð LINKENDWABE 
 
- MORPHIC-ID ¡ ICK
+ PROGRAMM ¡ <NAME>
 
- BION-ID ¡ IC16
+ WABEN-ID ¡ LD
 
- AXIOM ¡ ICK = <ICK>
+ BION-NR ¡ 06
 
- ABSK ¡ ICK
+ BION-ID ¡ LD<NR>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BSK ¡ <BSK>-<PROGRAMM>
 
-BION-HAUPTWABE Ð EXTRAWABE-IN
+ BION ¡ <BION>
 
- MORPHIC-ID ¡ ICHT-IN
+ PROGRAMMIERUNGSBEREICH ↓
 
- BION-ID ¡ IC16HT01
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
- AXIOM ¡ ICHT-IN = ICHT-IN
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
- ABSK ¡ ICK+ICHT-IN
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ 
 
-BION-EXTRAWABE-IN Ð STARTWABE
+###====================================|====================================###
+# 4
+WABEN-KATEGORIE Ð LINKENDWABE 
 
- MORPHIC-ID ¡ ICST-IN
+ PROGRAMM ¡ 07
 
- BION-ID ¡ IC16HT01ST01
+ WABEN-ID ¡ LD
 
- AXIOM ¡ ICST-IN = ·
- AXIOM ¡ ICST-IN = ·· 
- AXIOM ¡ ICST-IN = ···
- AXIOM ¡ ICST-IN = ····
+ BION-NR ¡ <NR>
 
- ABSK ¡ ICK+ICHT-IN+ICST-IN
+ BION-ID ¡ LD<NR>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BSK ¡ <BSK>-<PROGRAMM>
 
- BION-EXTRAWABE-IN Ð KNOTENWABE
+ BION ¡ <BION>
 
- MORPHIC-ID ¡ ICTN-IN1
+ PROGRAMMIERUNGSBEREICH ↓
 
- BION-ID ¡ IC16HT01ST01TN01
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
- AXIOM ¡ ICTN-IN = <REBK-PROZESS>· 
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
- BIND ¡ <RETR-PROZESS>
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN1
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
- BION-EXTRAWABE-IN Ð KNOTENWABE
-
- MORPHIC-ID ¡ ICTN-IN2
-
- BION-ID ¡ IC16HT01ST01TN02
-
- AXIOM ¡ ICTN-IN = <REBK-PROZESS>··
-
- BIND ¡ <RETR-PROZESS>
-
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN2
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
- BION-EXTRAWABE-IN Ð KNOTENWABE
-
- MORPHIC-ID ¡ ICTN-IN3
-
- BION-ID ¡ IC16HT01ST01TN03
-
- AXIOM ¡ ICTN-IN = <REBK-PROZESS>···
-
- BIND ¡ <RETR-PROZESS>
-
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN3
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
- BION-EXTRAWABE-IN Ð KNOTENWABE
-
- MORPHIC-ID ¡ ICTN-IN4
-
- BION-ID ¡ IC16HT01ST01TN04
-
- AXIOM ¡ ICTN-IN = <REBK-PROZESS>····
-
- BIND ¡ <RETR-PROZESS>
-
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN4
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-IN Ð LINKENDWABE 
-
- MORPHIC-ID ¡ ICLD-IN
-
- BION-ID ¡ IT00HT01ST01TN01LD01
- BION-ID ¡ IT00HT01ST01TN02LD02
- BION-ID ¡ IT00HT01ST01TN03LD03
- BION-ID ¡ IT00HT01ST01TN04LD04
-
- AXIOM ¡ ICTN-IN1 = ICLD-IN
- AXIOM ¡ ICTN-IN2 = ICLD-IN
- AXIOM ¡ ICTN-IN3 = ICLD-IN
- AXIOM ¡ ICTN-IN4 = ICLD-IN
-
- LINK ¡ REBK-PROZESS = ICTN-IN1
- LINK ¡ REBK-PROZESS = ICTN-IN2
- LINK ¡ REBK-PROZESS = ICTN-IN3
- LINK ¡ REBK-PROZESS = ICTN-IN4
-
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN1+ICLD-IN
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN2+ICLD-IN
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN3+ICLD-IN
- ABSK ¡ ICK+ICHT-IN+ICST-IN+ICTN-IN4+ICLD-IN
-
-
-
-
-
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ 
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###

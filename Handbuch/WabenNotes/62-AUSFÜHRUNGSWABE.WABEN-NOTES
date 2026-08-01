@@ -1,7 +1,7 @@
-@waben-nr: 61 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 62 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
-###==============================LINKENDWABE================================###
+###============================AUSFÜHRUNGSWABE==============================###
 
 WABEN-KATEGORIE Ð AUSFÜHRUNGSWABE
 
@@ -48,32 +48,3 @@ AK06 = AN01
  AXIOM ≠ AXIOM
  
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
-
-
-WABEN-KATEGORIE Ð AUSFÜHRUNGSWABE
-
- PROGRAMM ¡ IMPULS
-
- WABEN-ID ¡ AN
-
- BION-NR ¡ 01
-
- BION-ID ¡ AN01
-
- BSK ¡ AKMKHTSTAN-IMPULS
-
- BION ¡ AK06MK06HT07ST07CB13AN01
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ AUSFÜHRBAR
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ AKMKHTSTCB-IMPULS
-
- # AUSFÜHRUNGSLOGIK & ABSCHLUSS
- AXIOM ¡ AUSFÜHRBAR ≠ VERARBEITUNG 
-
- # AUSFÜHRUNGSERLAUBNIS | ABGABE AN IMPULS-TREIBER
- AUSFÜHRUNG ¡ AUSFÜHRBAR

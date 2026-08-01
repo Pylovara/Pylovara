@@ -9,12 +9,12 @@
  #   01  Æ ·  TRANSAKTIONSRAHMEN       | 02  Æ ·  PROTEIN                    #
  #   03  Æ ·  PROTON                   | 04  Æ ·  TRENNBEFEHL                #
  #   05  Æ ·  BINDUNGSBEFEHL           | 06  Æ ·  AKTIONSDRAHT               #
- #   07  - -  REX                      | 08  Æ -  ICTUS                      #
+ #   07  Æ ·  REX                      | 08  Æ ·  ICTUS                      #
+ #   09  - -  BOXI                     | 10  - -  SENTIATOR
 #########################REIHENFOLGEUNGEKLÄRTER BEREICH########################
- #   09  - -  BOXI                     | 10  - -  ARGUMENTEN                 #
  #   11  - -  NITROX                   | 12  - -  FEED                       #
  #   13  - -  SYNAPTOR                 | 14  - -  ZYTRON                     #
- #   15  - -  SENTIATOR                | 16  - -                             #
+ #   15  - -  ARGUMENTEN               | 16  - -                             #
 ###==============================SYSTEM-ELEMENTE============================###
  #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
  #   30  - -  VATRON                   | 31  - -  RETRON                     #
@@ -33,7 +33,7 @@
  #   81   - - MCS MASCHINEN-CODE-SPEECH-SYNTAX-LAW                           #
 ###=================================LIZENZEN================================###
  #   93   L1_COREKERNELMANDAT                        #        #   #     #    #
- #   94   L2_AUTHORRIGHTS                            #    #        #         #
+ #   94   L2_AUTHORRIGHTS                            #    # #      #         #
  #   95   L3_COMMERCIALLICENSING                     #       #               #
  #   96   L4_AI_ADMINISTRATIONSMANDATE               #    PYLOVARA—SYSTEM©   #
  #   97   L5_POST_MORTEM-CONTROL                     #    #     #            #

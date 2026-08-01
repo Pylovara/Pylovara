@@ -1,14 +1,35 @@
 @kernel-nr: 06 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- #             BINDUNGSBEFEHL =  THE PROTON HARDWARE BINDING                  #
+ #                AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                     #
 ###===============================STARTPUNKT================================###
 
+WABEN-KATEGORIE Ð KOPFWABE
 
+ KOMPONENTE ¡ AKTIONSDRAHT
 
+ KOMPONENTEN-ID ¡ AK
 
+ BION-NR ¡ 06
 
+ BION-ID ¡ <BION-ID>
 
+ MASTER-ID ¡ MA46SU06
 
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 06
+
+ BION-ID ¡ MK06
+
+ BSK ¡ AKMK
+
+ BION ¡ AK06MK06
+
+###====================================|====================================###
 
 
 
@@ -41,7 +62,7 @@
 ###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
 ###==##==###======#####=====K7 AKTIONSDRAHT====#####======###==##==###
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-#             AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                #
+
 ###==##==###======#####=STARTPUNKT AKTIONSDRAHT#####======###==##==###
 
 BION Ð AKTIONSDRAHT
@@ -186,14 +207,11 @@ BION-EXTRAWABE-ZUSATZIMPULS Ð LINKENDWABE
 
  ABSK ¡ AKK+AKHT-ZUSATZIMPULS+AKST-ZUSATZIMPULS+AKCB-ZUSATZIMPULS-PIK+AKTN-ZUSATZIMPULS-ZUSATZ+AKLD-KNOTEN
 
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = AKELT
- SBSK = AKK+AKHT-IMPULS+AKST-IMPULS+AKCB-IMPULS-PIK+AKED-IMPULS
- SBSK = AKK+AKHT-ZUSATZIMPULS+AKST-ZUSATZIMPULS+AKCB-ZUSATZIMPULS-PIK+AKTN-ZUSATZIMPULS-ZUSATZ+AKLD-KNOTEN
- VBSK = AKCB-IMPULS-PIK
- VBSK = AKCB-ZUSATZIMPULS-PIK
- RBSK = AKK
-###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
- #  DATUM = [08:50:23|Fr 25 Jun 2025] MARKENBRANDT                   #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                 #
-###==##==###======#####==ENDPUNKT AKTIONSDRAHT=#####======###==##==###
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = BIELT
+ # SBSK → 
+ # VBSK → 
+ # RBSK → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

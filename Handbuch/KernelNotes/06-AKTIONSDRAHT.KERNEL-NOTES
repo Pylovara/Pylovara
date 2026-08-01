@@ -1,6 +1,6 @@
 @kernel-nr: 06 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- #                AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                     #
+ #                 AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                     #
 ###===============================STARTPUNKT================================###
 
 WABEN-KATEGORIE Ð KOPFWABE
@@ -43,7 +43,7 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
  BSK ¡ AKMKHT-IMPULS
 
- BION ¡ AK06MK06
+ BION ¡ AK06MK06HT07
 
 ###====================================|====================================###
 
@@ -59,7 +59,7 @@ WABEN-KATEGORIE Ð STARTWABE
 
  BSK ¡ AKMKHTST-IMPULS
 
- BION ¡ AK06MK06
+ BION ¡ AK06MK06HT07ST07
 
  PROGRAMMIERUNGSBEREICH ↓
 
@@ -76,180 +76,88 @@ WABEN-KATEGORIE Ð STARTWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð COMBOWABE 
 
+ PROGRAMM ¡ IMPULS
 
+ WABEN-ID ¡ CB
 
+ BION-NR ¡ 13
 
+ BION-ID ¡ CB13
 
+ BSK ¡ AKMKHTSTCB-IMPULS
 
+ BION ¡ AK06MK06HT07ST07CB13
 
+ PROGRAMMIERUNGSBEREICH ↓
 
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ » = AK-START
+ EINHEIT ¡ « = AK-ENDE
 
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ AKMKHTST-IMPULS
 
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
 
+ # BENÖTIGTE PASSIVE PROTEIN-EINHEITEN (DATENTRÄGER)
+ EINHEIT ¡ —[<BXMK>] = ON-PIPE-BX-FINAL
+ EINHEIT ¡ —[<POMK>] = ON-PIPE-PO-FINAL
+ EINHEIT ¡ [<BXMK>] = OFF-PIPE-BX-FINAL
+ EINHEIT ¡ [<POMK>] = OFF-PIPE-PO-FINAL
+ EINHEIT ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP-FINAL
 
+ # AXIOMEN (ZÜNDUNG: SYNTHESE AUS AKTIONSDRAHT + PROTEIN)
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + ON-PIPE-BX-FINAL + AK-ENDE ≠ »—[<BXMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + ON-PIPE-PO-FINAL + AK-ENDE ≠ »—[<POMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-BX-FINAL + AK-ENDE ≠ »[<BXMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-PO-FINAL + AK-ENDE ≠ »[<POMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-BTP-FINAL + AK-ENDE ≠ »[<BXMK><TEMK><POMK>]« = AUSFÜHRBAR
 
-
-
-
-
-
-
-
-@kernel-nr: 06 Ð AKTIONSDRAHT #### info .... 23st ... ich muss schlafen 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=====K7 AKTIONSDRAHT====#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-###==##==###======#####=STARTPUNKT AKTIONSDRAHT#####======###==##==###
-
-BION Ð AKTIONSDRAHT
-
- MORPHIC-ID ¡ AK
-
- BION-ID ¡ AK
- 
-MAK ¡ MASU-AKTIONSDRAHT
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð AKTIONSDRAHT
-
- MORPHIC-ID ¡ AKK
-
- BION-ID ¡ AK07
-
- AXIOM ¡ AKK = <AKK>
-
- ABSK ¡ AKK
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-IMPULS 
-
- MORPHIC-ID ¡ AKHT-IMPULS
-
- BION-ID ¡ AK07HT01
-
- AXIOM ¡ AKHT-IMPULS = AKHT-IMPULS
-
- ABSK ¡ AKK+AKHT-IMPULS
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-IMPULS Ð STARTWABE 
-
- MORPHIC-ID ¡ AKST-IMPULS
-
- BION-ID ¡ AK07HT01ST01
-
- AXIOM ¡ AKST-IMPULS = »
-
- ABSK ¡ AKK+AKHT-IMPULS+AKST-IMPULS
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-IMPULS Ð COMBOWABE 
-
- MORPHIC-ID ¡ AKCB-IMPULS-PIK
-
- BION-ID ¡ AK07HT01ST01CB01
-
- AXIOM ¡ AKCB-IMPULS-PIK = »<PIK>
-
- ABSK ¡ AKK+AKHT-IMPULS+AKST-IMPULS+AKCB-IMPULS-PIK
-
- LINK ¡ PIK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-IMPULS Ð ENDWABE 
-
- MORPHIC-ID ¡ AKED-IMPULS
-
- BION-ID ¡ AK07HT01ST01CB01ED01
-
- AXIOM ¡ AKED-IMPULS = »<PIK>«
-
- ABSK ¡ AKK+AKHT-IMPULS+AKST-IMPULS+AKCB-IMPULS-PIK+AKED-IMPULS
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-ZUSATZIMPULS 
-
- MORPHIC-ID ¡ AKHT-ZUSATZIMPULS
-
- BION-ID ¡ AK07HT02
-
- AXIOM ¡ AKHT-ZUSATZIMPULS = AKHT-ZUSATZIMPULS
-
- ABSK ¡ AKK+AKHT-ZUSATZIMPULS
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-ZUSATZIMPULS Ð STARTWABE 
-
- MORPHIC-ID ¡ AKST-ZUSATZIMPULS
-
- BION-ID ¡ AK07HT02ST02
-
- AXIOM ¡ AKST-ZUSATZIMPULS = »
-
- ABSK ¡ AKK+AKHT-ZUSATZIMPULS+AKST-ZUSATZIMPULS
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-ZUSATZIMPULS Ð COMBOWABE 
-
- MORPHIC-ID ¡ AKCB-ZUSATZIMPULS-PIK
-
- BION-ID ¡ AK07HT02ST02CB02
-
- AXIOM ¡ AKCB-ZUSATZIMPULS-PIK = »<PIK>
-
- ABSK ¡ AKK+AKHT-ZUSATZIMPULS+AKST-ZUSATZIMPULS+AKCB-ZUSATZIMPULS-PIK
-
- LINK ¡ PIK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-ZUSATZIMPULS Ð KNOTENWABE
-
- MORPHIC-ID ¡ AKTN-ZUSATZIMPULS-ZUSATZ
-
- BION-ID ¡ AK07HT02ST02CB02TN01
-
- AXIOM ¡ AKTN-ZUSATZIMPULS-ZUSATZ = »<PIK>«<ARK>
-
- BIND ¡ <PIK>
-
- BIND ¡ <ARK>
-
- ABSK ¡ AKK+AKHT-ZUSATZIMPULS+AKST-ZUSATZIMPULS+AKCB-ZUSATZIMPULS-PIK+AKTN-ZUSATZIMPULS-ZUSATZ
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-ZUSATZIMPULS Ð LINKENDWABE 
-
- MORPHIC-ID ¡ AKLD-KNOTEN
-
- BION-ID ¡ AK07HT02ST02CB02TN01LD01
-
- AXIOM ¡ AKLD-ZUSATZIMPULS = »<PIK>«<ARK>
-
- LINK ¡ AKLD-KNOTEN = ARHT-BEFEHL
-
- ABSK ¡ AKK+AKHT-ZUSATZIMPULS+AKST-ZUSATZIMPULS+AKCB-ZUSATZIMPULS-PIK+AKTN-ZUSATZIMPULS-ZUSATZ+AKLD-KNOTEN
+ # LIEGT IM RAM 
+ EINHEIT ¡ »—[<BXMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »—[<POMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<BXMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<POMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<BXMK><TEMK><POMK>]« = AUSFÜHRBAR
 
 ###====================================|====================================###
-###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
- # MASTERWORT = BIELT
- # SBSK → 
- # VBSK → 
- # RBSK → 
+
+WABEN-KATEGORIE Ð AUSFÜHRUNGSWABE
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ AN
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ AN01
+
+ BSK ¡ AKMKHTSTAN-IMPULS
+
+ BION ¡ AK06MK06HT07ST07CB13AN01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ AUSFÜHRBAR
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ AKMKHTSTCB-IMPULS
+
+ # AUSFÜHRUNGSLOGIK & ABSCHLUSS
+ AXIOM ¡ AUSFÜHRBAR ≠ VERARBEITUNG 
+
+ # AUSFÜHRUNGSERLAUBNIS | ABGABE AN IMPULS-TREIBER
+ AUSFÜHRUNG ¡ AUSFÜHRBAR
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = AKTIONSDRAHT
+ # BION-ID-PFAD → AK06+MK06+HT07+ST07+CB13+AN01
+ # BION-ID-VPFAD → AK06MK06HT07ST07CB13AN01
+ # BION-ID-RPFAD → AK06|MK06|HT07|AN01
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

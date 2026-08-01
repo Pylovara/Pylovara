@@ -109,6 +109,42 @@ WABEN-KATEGORIE Ð COMBOWABE
  EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
 
 ###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 18
+
+ BION-ID ¡ CB18
+
+ BSK ¡ RXMKHTSTCBCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB14CB18
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ —[ = ON-PIPE-START
+
+ # AXIOMEN
+ AXIOM ¡ RX-IN-1-FLÄCHE + ON-PIPE-START ≠ * * = ¬· —[ = RX-IN-1-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬· —[ = RX-IN-1-FLÄCHE
+
+###====================================|====================================###
 # WEITER RX-IN-1-FLÄCHE
 ###====================================|====================================###
 
@@ -148,6 +184,42 @@ WABEN-KATEGORIE Ð COMBOWABE
  EINHEIT ¡ ¬·· = RX-IN-2-FLÄCHE
 
 ###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 19
+
+ BION-ID ¡ CB19
+
+ BSK ¡ RXMKHTSTCBCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB15CB19
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ 
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ —[ = ON-PIPE-START
+
+ # AXIOMEN
+ AXIOM ¡ RX-IN-2-FLÄCHE + ON-PIPE-START ≠ * * = ¬·· —[ = RX-IN-2-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬·· —[ = RX-IN-2-FLÄCHE
+
+###====================================|====================================###
 # WEITER RX-IN-2-FLÄCHE
 ###====================================|====================================###
 
@@ -185,6 +257,43 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  # LIEGT IM RAM 
  EINHEIT ¡ ¬··· = RX-IN-3-FLÄCHE
+
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 20
+
+ BION-ID ¡ CB20
+
+ BSK ¡ RXMKHTSTCBCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16CB20
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ 
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ —[ = ON-PIPE-START
+
+ # AXIOMEN
+ AXIOM ¡ RX-IN-3-FLÄCHE + ON-PIPE-START ≠ * * = ¬··· —[ = RX-IN-3-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬··· —[ = RX-IN-3-FLÄCHE
 
 ###====================================|====================================###
 # WEITER RX-IN-3-FLÄCHE
@@ -226,6 +335,42 @@ WABEN-KATEGORIE Ð COMBOWABE
  EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
 
 ###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 21
+
+ BION-ID ¡ CB21
+
+ BSK ¡ RXMKHTSTCBCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17CB21
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ 
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ —[ = ON-PIPE-START
+
+ # AXIOMEN
+ AXIOM ¡ RX-IN-4-FLÄCHE + ON-PIPE-START ≠ * * = ¬···· —[ = RX-IN-4-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬···· —[ = RX-IN-4-FLÄCHE
+
+###====================================|====================================###
 # WEITER RX-IN-4-FLÄCHE
 ###====================================|====================================###
 
@@ -233,50 +378,6 @@ WABEN-KATEGORIE Ð COMBOWABE
 
 
 
-
-!!!!!!!!!!!!!↓↓↓↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓↓↓ !!!!!!!!!!!!!!!!
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-BLOCKWABE Ð SYNTAX-BAUM-DEFINITION
-
- MORPHIC-ID ¡ REBK-PROZESS
-
- BION-ID ¡ RE09HT01ST01BK01
-
- AXIOM ¡ REBK-PROZESS = ¬
-
- ABSK ¡ REK+REHT-PROZESS+REST-PROZESS+REBK-PROZESS
-
- AXIOM ¡ SYNTAX-ERLAUBNIS = ^
- AXIOM ¡ ^      1START: —[
- AXIOM ¡ ^        5REK: ¬
- AXIOM ¡ ^        5REK: ¬
- AXIOM ¡ ^        5REK: ¬
- AXIOM ¡ ^        5REK: ¬
- AXIOM ¡ ^        5REK: ¬
-
- AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYK>
- AXIOM ¡ ^        1SYNC: <SYK>
- AXIOM ¡ ^        2KOPF: <NIK>
- AXIOM ¡ ^       1START: <POICB-ON-PIPE>
- AXIOM ¡ ^        2FOOD: <NIK>
- AXIOM ¡ ^  3ZYKLUS-IN: <ZYK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        4SEN: <SEK>
- AXIOM ¡ ^        4SEN: <SEK>
- AXIOM ¡ ^       6FREE: <REK>
-
- BRÜCKE-IO ¡ POIST-ON-PIPE
-
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <REK>
- BRÜCKE-OUT ¡ <REK>
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

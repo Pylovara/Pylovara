@@ -99,25 +99,134 @@ WABEN-KATEGORIE Ð COMBOWABE
  LINK ¡ ICMK
 
  # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
- EINHEIT ¡ <AXIOM> = <KENNUNG>
- EINHEIT ¡ <AXIOM> = <KENNUNG>
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ · = IC-IN-1
 
  # AXIOMEN
- AXIOM ¡ ≠
- AXIOM ¡ 
- AXIOM ¡ 
+ AXIOM ¡ RX-MANAGER + IC-IN-1 ≠ ** ≠ ¬· = RX-IN-1-FLÄCHE
 
  # LIEGT IM RAM 
- EINHEIT ¡ <AXIOM> = <NEUE-KENNUNG>
+ EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
 
+###====================================|====================================###
+# WEITER RX-IN-1-FLÄCHE
+###====================================|====================================###
 
+WABEN-KATEGORIE Ð COMBOWABE 
 
+ PROGRAMM ¡ MANAGER
 
+ WABEN-ID ¡ CB
 
+ BION-NR ¡ 15
 
+ BION-ID ¡ CB15
 
+ BSK ¡ RXMKHTSTCB-MANAGER
 
+ BION ¡ RX07MK07HT08ST08CB15
 
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬ = RX-MANAGER
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ ICMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ ·· = IC-IN-2
+
+ # AXIOMEN
+ AXIOM ¡ RX-MANAGER + IC-IN-2 ≠ ** ≠ ¬·· = RX-IN-2-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬·· = RX-IN-2-FLÄCHE
+
+###====================================|====================================###
+# WEITER RX-IN-2-FLÄCHE
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 16
+
+ BION-ID ¡ CB16
+
+ BSK ¡ RXMKHTSTCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB16
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬ = RX-MANAGER
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ ICMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ ··· = IC-IN-3
+
+ # AXIOMEN
+ AXIOM ¡ RX-MANAGER + IC-IN-3 ≠ ** ≠ ¬··· = RX-IN-3-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬··· = RX-IN-3-FLÄCHE
+
+###====================================|====================================###
+# WEITER RX-IN-3-FLÄCHE
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ MANAGER
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 17
+
+ BION-ID ¡ CB17
+
+ BSK ¡ RXMKHTSTCB-MANAGER
+
+ BION ¡ RX07MK07HT08ST08CB17
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¬ = RX-MANAGER
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ ICMK
+
+ # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
+ EINHEIT ¡ ¬ = RX-MANAGER
+ EINHEIT ¡ ···· = IC-IN-4
+
+ # AXIOMEN
+ AXIOM ¡ RX-MANAGER + IC-IN-4 ≠ ** ≠ ¬···· = RX-IN-4-FLÄCHE
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ ¬···· = RX-IN-4-FLÄCHE
+
+###====================================|====================================###
+# WEITER RX-IN-4-FLÄCHE
 ###====================================|====================================###
 
 
@@ -126,55 +235,6 @@ WABEN-KATEGORIE Ð COMBOWABE
 
 
 !!!!!!!!!!!!!↓↓↓↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓↓↓ !!!!!!!!!!!!!!!!
-
-
-###==##==###======#####=====STARTPUNKT REX=====#####======###==##==###
-
-BION Ð REX 
-
- MORPHIC-ID ¡ RE
-
- BION-ID ¡ RE
-
- MASK ¡ MASU-REX 
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð REX 
-
- MORPHIC-ID ¡ REK
-
- BION-ID ¡ RE09
-
- AXIOM ¡ REK = <REK>
-
- ABSK ¡ REK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-# HT01: PROZESS-STEUERUNG
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-PROZESS
-
- MORPHIC-ID ¡ REHT-PROZESS 
-
- BION-ID ¡ RE09HT01
-
- AXIOM ¡ REHT-PROZESS = REHT-PROZESS
-
- ABSK ¡ REK+REHT-PROZESS 
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-STARTWABE Ð PROZESS-START
-
- MORPHIC-ID ¡ REST-PROZESS
-
- BION-ID ¡ RE09HT01ST01
-
- AXIOM ¡ REST-PROZESS = ¬
-
- ABSK ¡ REK+REHT-PROZESS+REST-PROZESS
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

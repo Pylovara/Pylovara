@@ -1,6 +1,6 @@
 @kernel-nr: 02 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- # PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER                            #
+ # PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER                             #
 ###===============================STARTPUNKT================================###
 
 WABEN-KATEGORIE Ð KOPFWABE
@@ -106,12 +106,12 @@ WABEN-KATEGORIE Ð BLOCKWABE
 
  # VERARBEITUNGS PIPELINE
  AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
- AXIOM ¡ ^ ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^  ZYKLUS-OUT: <ZYMK>
  AXIOM ¡ ^        SYNC: <SYMK>
  AXIOM ¡ ^        KOPF: <NIMK>
  AXIOM ¡ ^       START: <ON-PIPE-START>
  AXIOM ¡ ^        FOOD: <NIMK>
- AXIOM ¡ ^  ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^   ZYKLUS-IN: <ZYMK>
  AXIOM ¡ ^         REK: <REMK>
  AXIOM ¡ ^         REK: <REMK>
  AXIOM ¡ ^         REK: <REMK>
@@ -204,7 +204,7 @@ WABEN-KATEGORIE Ð ENDWABE
  AXIOM ¡ ^ MCS-TYP-ON-PIPE-FINAL = —[<BXMK>]
 
  # FERTIGES ON-PIPE PROTEIN (ABGABE AN ALU/HW)
- FINISCH ¡ AXIOM ≠ MCS-TYP-ON-PIPE-FINAL
+ FINISH ¡ AXIOM ≠ MCS-TYP-ON-PIPE-FINAL
 
 ###====================================|====================================###
 
@@ -271,7 +271,7 @@ WABEN-KATEGORIE Ð ENDWABE
  AXIOM ¡ ^ MCS-TYP-ON-PIPE-FINAL = —[<POMK>]
 
  # FERTIGES ON-PIPE PROTEIN 
- FINISCH ¡ AXIOM ≠ MCS-TYP-ON-PIPE-FINAL
+ FINISH ¡ AXIOM ≠ MCS-TYP-ON-PIPE-FINAL
 
 ###====================================|====================================###
 ###=========================OFF-PIPE BEARBEITUNG============================###
@@ -413,7 +413,7 @@ WABEN-KATEGORIE Ð ENDWABE
  AXIOM ¡ ^ MCS-TYP-OFF-PIPE-FINAL = [<BXMK>]
 
  # FERTIGES OFF-PIPE PROTEIN
- FINISCH ¡ AXIOM ≠ MCS-TYP-OFF-PIPE-FINAL
+ FINISH ¡ AXIOM ≠ MCS-TYP-OFF-PIPE-FINAL
 
 ###====================================|====================================###
 
@@ -544,7 +544,7 @@ WABEN-KATEGORIE Ð ENDWABE
  AXIOM ¡ ^ MCS-TYP-OFF-PIPE-BTP-FINAL = [<BXMK><TEMK><POMK>]
 
  # FERTIGES OFF-PIPE PROTEIN (BTP LOGIK)
- FINISCH ¡ AXIOM ≠ MCS-TYP-OFF-PIPE-BTP-FINAL
+ FINISH ¡ AXIOM ≠ MCS-TYP-OFF-PIPE-BTP-FINAL
 
 ###====================================|====================================###
 
@@ -641,7 +641,7 @@ WABEN-KATEGORIE Ð ENDWABE
  AXIOM ¡ ^ MCS-TYP-OFF-PIPE-POMK-FINAL = [<POMK>]
 
  # FERTIGES OFF-PIPE PROTEIN (POMK STANDALONE)
- FINISCH ¡ AXIOM ≠ MCS-TYP-OFF-PIPE-POMK-FINAL
+ FINISH ¡ AXIOM ≠ MCS-TYP-OFF-PIPE-POMK-FINAL
 
 ###====================================|====================================###
 ###======================REGEL DER SPALTEN-SYNCHRONITÄT======================###
@@ -652,8 +652,8 @@ WABEN-KATEGORIE Ð ENDWABE
  # - NIMK  = FÜR DATENTRANSPORTE ÜBER FF UND FT 
  # - REMK  = ARBEITSFLÄCHEN VERTEILUNG (REX-LOGIK)
  # - SEMK  = SENTIATOR-SCHNITTSTELLE (BEDINGUNGEN)
-###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
- # MASTERWORT = PIPROTEIN
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = PROTEIN
  # BION-ID-PFAD (ON-PIPE-BX)  → PI02+MK02+HT02+ST02+BK01+CB03+ED02
  # BION-ID-PFAD (ON-PIPE-PO)  → PI02+MK02+HT02+ST02+BK01+CB04+ED03
  # BION-ID-PFAD (OFF-PIPE-BX) → PI02+MK02+HT03+ST03+CB05+CB06+ED04

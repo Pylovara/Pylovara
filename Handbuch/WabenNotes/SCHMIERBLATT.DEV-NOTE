@@ -88,3 +88,170 @@ MACH DEN VERFICKTEN SNAPSHOT
 UND DANACH GIBTS TACHELES ..... ICH WERDE VON MEINER EIGENEN 
 INTELLIGENZ SO UNTER DRUCK GESETZT , DAS ICH MIT DEM TIPPEN NICHT HINTER HER KOMME 
 
+
+
+
+
+MUTTERWABEN-KATEGORIE Ð EINGABENAUFRUF
+
+ WABEN-ID ¡ EC
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ EC01
+
+ BSK ¡ 
+
+ BION ¡ 
+
+ PROGRAMMIERUNG ↓ 
+
+ § <TOCHTERWABEN-KATEGORIE-NAME> 
+
+ CALL ADRESSE ¡
+ - 
+ - 
+ - 
+ - 
+ - 
+
+ ARCHITEKTUR ¡
+ - 
+ - 
+
+
+( SO UNGEFÄHR ... ausarbeiten aber in dem still )
+
+für alle systemwaben quasi , noch alte layout und alte nummern 
+
+TOCHTERWABEN-KATEGORIE § PRINTWABE 
+### 1. PRINT (Ausgabe / Text)
+- BION-ID: BX08HT01ST01SS01
+- MORPHIC-ID: BXSS-PRINT-IO
+- AXIOM: BXSS-PRINT-IO = " <IO>
+- EINSATZGEBIET: Systemausgaben, Strings, Textausgabe auf Konsole/Bildschirm
+- BESCHREIBUNG: Die einfachste und grundlegendste Ausgabe – alles, was als Text erscheinen soll.
+
+
+TOCHTERWABEN-KATEGORIE § ALUWABE 
+### 2. ALU (Arithmetische Logik)
+- BION-ID: BX08HT02ST02SS02
+- MORPHIC-ID: BXSS-ALU-IO
+- AXIOM: BXSS-ALU-IO = × <IO>
+- EINSATZGEBIET: Mathematische Operationen, Berechnungen, Ganzzahl-/Gleitkomma-Logik
+- BESCHREIBUNG: Der Rechenkern – alle mathematischen Operationen laufen hier.
+
+TOCHTERWABEN-KATEGORIE § SYSTEMWABE 
+### 3. SYSCALL (Systemaufrufe)
+- BION-ID: BX08HT03ST03SS03
+- MORPHIC-ID: BXSS-SYSCALL-IO
+- AXIOM: BXSS-SYSCALL = , <IO>
+- EINSATZGEBIET: Kernel- und Betriebssystem-Aufrufe (Datei, Prozesse, Speicher, Zeit, Netzwerk)
+- BESCHREIBUNG: Die Brücke zum Betriebssystem – alle OS-Funktionen werden hier angesprochen.
+
+TOCHTERWABEN-KATEGORIE § BINARYWABE 
+### 4. ABI (Application Binary Interface)
+- BION-ID: BX08HT04ST04SS04
+- MORPHIC-ID: BXSS-ABI-IO
+- AXIOM: BXSS-ABI-IO = Ħ <IO>
+- EINSATZGEBIET: Hardware-Register, Binär-Interfaces, direkte Hardware-Ansprache (PROTON)
+- BESCHREIBUNG: Die Verbindung zur Hardware – Register, Busse, DMA, Interrupts.
+
+
+TOCHTERWABEN-KATEGORIE § SHELLWABE 
+### 5. SHELL (Shell-Kommandos)
+- BION-ID: BX08HT05ST05SS05
+- MORPHIC-ID: BXSS-SHELL-IO
+- AXIOM: BXSS-SHELL = ' <IO>
+- EINSATZGEBIET: Native Shell-Befehle (Linux, Bash, Zsh, Windows CMD)
+- BESCHREIBUNG: Die Brücke zu bestehenden Betriebssystem-Shells – für externe Befehle.
+
+
+ und diese aufbauten werden dann allen mutter general waben unterhalb als auswechselbares modul eingearbeitet 
+
+
+ für Z.B 
+
+ MUTTERWABEN-KATEGORIE Ð VERLINKUNEN
+
+ MUTTERWABEN-KATEGORIE Ð SCHLEIFEN 
+
+ MUTTERWABEN-KATEGORIE Ð DATENFLUSS
+
+ MUTTERWABEN-KATEGORIE Ð CPUFREQUENZ 
+
+
+ USW 
+
+ die layouts werde ich dann gemütlich in ruhe ausarbeiten aber das wäre
+ die art und weise ... 
+
+ MUTTERWABEN bekommen eine STOCK präfix dafür 
+
+
+ austauschbare generalwaben mit modularen gleichen prinzipiell nutzbaren aspekten 
+ ... aufgebaut auf vorwärts wie rückwärts oder multitreads 
+
+ das wird lustig ... aber ich mach erstmaol die 00-82 fertig mit dir .. 
+
+
+ danach geht die post ab 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 6. MCD (Microcode Commands)
+- BION-ID: BX08HT06ST06SS06
+- MORPHIC-ID: BXSS-MCD-IO
+- AXIOM: BXSS-MCD-IO = ~ <IO>
+- EINSATZGEBIET: Pylovara-interne Mikrocode-Befehle (MCD) – systemeigene Steuerung
+- BESCHREIBUNG: Die systemeigene Befehlssprache für Pylovara-internen Code.
+
+### 7. BINÄR (Maschinenbefehle / OpCodes)
+- BION-ID: BX08HT07ST07SS07 / BX08HT07ST07SS08
+- MORPHIC-ID: BXSS-BINÄR-MASCHINENBEFEHL / BXSS-BINÄR-OPCODE
+- AXIOM: BXSS-BINÄR-MASCHINENBEFEHL = ° <MASCHINENBEFEHL> °
+- AXIOM: BXSS-BINÄR-OPCODE = ° <OPCODE> °
+- EINSATZGEBIET: Direkte Maschinenbefehle und OpCodes (Assembler-Level)
+- BESCHREIBUNG: Die tiefste Ebene – direkter Zugriff auf CPU-Befehle.
+
+### 8. CACHE (Speicherknoten / Schneller Cache)
+- BION-ID: BX08HT08ST08SS09
+- MORPHIC-ID: BXSS-CACHE-IO
+- AXIOM: BXSS-CACHE-IO = ¥ <IO>
+- EINSATZGEBIET: Schneller Speicherzugriff (NITROX-Cache), temporäre Datenhaltung
+- BESCHREIBUNG: Der Code-eigene Cache – speichert Daten schnell und effizient.
+
+### 9. PFAD (Datei- & Verzeichnispfade)
+- BION-ID: BX08HT09ST09SS10
+- MORPHIC-ID: BXSS-PFAD-IO
+- AXIOM: BXSS-PFAD-IO = $ <IO>
+- EINSATZGEBIET: Datei- und Verzeichnispfade, Ordnerstruktur-Navigation
+- BESCHREIBUNG: Die Verbindung zum Dateisystem – lokale Pfade und Ordner.
+
+### 10. NET (Netzwerk-Interfaces)
+- BION-ID: BX08HT10ST10SS11
+- MORPHIC-ID: BXSS-NET-IO
+- AXIOM: BXSS-NET-IO = § <IO>
+- EINSATZGEBIET: Netzwerkverbindungen, Sockets, IP-Adressen, Protokolle
+- BESCHREIBUNG: Die Verbindung zum Netzwerk – TCP/IP, HTTP, DNS, Sockets.

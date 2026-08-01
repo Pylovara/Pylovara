@@ -25,18 +25,20 @@ WABEN-KATEGORIE Ð ENDWABE
  # BEENDET VOR PROZESS
  WABEN-BSK-RESET ¡ 
 
- # UNFERTIG
- AXIOM ¡ MCS-TYP-ON-PIPE-BXMK + ] ≠ ^ MCS-TYP-ON-PIPE-FINAL = **
- AXIOM ¡ ^ MCS-TYP-ON-PIPE-FINAL = —[<BXMK>]
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
  # LIEGT IM RAM 
- FINISCH ¡ <AXIOM> 
+ FINISH ¡ <AXIOM> 
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
- TA = ED01
+ TA01 = ED01
 
- PI = ED02 ED03 ED04 ED05 ED06 
+ PI02 = ED02 ED03 ED04 ED05 ED06 
+
+ TE04 = ED07
 
 ###==============================INFORMATIONEN==============================###
 

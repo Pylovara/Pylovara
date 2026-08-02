@@ -620,7 +620,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# MCD !
+# MCD SCHRITT : 2
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -657,14 +657,14 @@ WABEN-KATEGORIE Ð STARTWABE
 
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = <> 
- AXIOM ¡ ^ <TASTENCODE> = <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = ~ 
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ ~ + : ≠ ** ≠ ~: = BX-MCD-START
+ AXIOM ¡ ^ : + ~ ≠ ** ≠ :~ = BX-MCD-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ ~: = BX-MCD-START
+ GEBAUTE-EINHEIT ¡ :~ = BX-MCD-ENDE
 
 ###====================================|====================================###
 
@@ -685,21 +685,22 @@ WABEN-KATEGORIE Ð SYSTEMWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <ANSCHLUSS> 
- EINHEIT ¡ <ANSCHLUSS>
+ EINHEIT ¡ ~: = BX-MCD-START 
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ <PROZESS-STOP>
+ WABEN-RESET ¡ BXMKHTST-MCD
 
  # AXIOM
- AXIOM ¡ ≠
- AXIOM ¡ 
+ AXIOM ¡ BX-MCD-START + <IO> ≠ * * ≠ ~: <IO> = BX-MCD-IO
 
  # EINGABE-I
- IN-ID   ¡ <EINGABE>
+ IN-ID   ¡ <IO>
 
  # AUSGABE-0
  OUT-ID  ¡ IN-ID
+
+ # EINHEIT 
+ EINHEIT ¡ ~: <IO> = BX-MCD-IO
 
 ###====================================|====================================###
 
@@ -720,20 +721,23 @@ WABEN-KATEGORIE Ð LINKENDWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <START-KENNUNG> 
+ EINHEIT ¡ ~: <IO> = BX-MCD-IO
+ EINHEIT ¡ :~ = BX-MCD-ENDE
 
  # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ 
+ WABEN-BSK-RESET ¡ BXMKHTSTSS-SHELL
 
  # AXIOM
- AXIOM ¡ 
- AXIOM ¡ 
+ AXIOM ¡ BX-MCD-IO + BX-MCD-ENDE ≠ * * ≠ ~: <IO> :~
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡
+ LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# OPCODE
+# OPCODE !
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 

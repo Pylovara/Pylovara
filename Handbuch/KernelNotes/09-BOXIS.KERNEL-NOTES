@@ -35,7 +35,7 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
  BION ¡ BX09MK09
 
 ###====================================|====================================###
-# PRINT 1
+# PRINT 1 : SCHRITT 2 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -72,14 +72,14 @@ WABEN-KATEGORIE Ð STARTWABE
 
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = <> 
- AXIOM ¡ ^ <TASTENCODE> = <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = "
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ " + : ≠ ** ≠ ": = BX-PRINT-START
+ AXIOM ¡ ^ : + " ≠ ** ≠ :" = BX-PRINT-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ ": = BX-PRINT-START
+ GEBAUTE-EINHEIT ¡ :" = BX-PRINT-ENDE 
 
 ###====================================|====================================###
 

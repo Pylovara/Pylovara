@@ -376,6 +376,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  # BEENDET VOR PROZESS
  WABEN-BSK-RESET ¡ BXMKHTSTSS-SYSCALL
 
+ # AXIOM
  AXIOM ¡ BX-SYSCALL-IO + BX-SYSCALL-ENDE ≠ * * ≠ ,: <IO> :,
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
@@ -385,7 +386,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# ABI !
+# ABI : SCHRITT 2
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -422,14 +423,14 @@ WABEN-KATEGORIE Ð STARTWABE
 
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = <> 
- AXIOM ¡ ^ <TASTENCODE> = <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = Ħ 
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ Ħ + : ≠ ** ≠ Ħ: = BX-ABI-START
+ AXIOM ¡ ^ : + Ħ ≠ ** ≠ :Ħ = BX-ABI-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ Ħ: = BX-ABI-START 
+ GEBAUTE-EINHEIT ¡ :Ħ = BX-ABI-ENDE
 
 ###====================================|====================================###
 
@@ -450,21 +451,22 @@ WABEN-KATEGORIE Ð SYSTEMWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <ANSCHLUSS> 
- EINHEIT ¡ <ANSCHLUSS>
+ EINHEIT ¡ Ħ: = BX-ABI-START  
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ <PROZESS-STOP>
+ WABEN-RESET ¡ BXMKHTST-ABI
 
  # AXIOM
- AXIOM ¡ ≠
- AXIOM ¡ 
+ AXIOM ¡ BX-ABI-START + <IO> ≠ * * ≠ Ħ: <IO> = BX-ABI-IO
 
  # EINGABE-I
  IN-ID   ¡ <EINGABE>
 
  # AUSGABE-0
  OUT-ID  ¡ IN-ID
+
+ # EINHEIT 
+ EINHEIT ¡ Ħ: <IO> = BX-ABI-IO
 
 ###====================================|====================================###
 
@@ -485,20 +487,23 @@ WABEN-KATEGORIE Ð LINKENDWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <START-KENNUNG> 
+ EINHEIT ¡ Ħ: <IO> = BX-ABI-IO
+ EINHEIT ¡ :Ħ = BX-ABI-ENDE
 
  # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ 
+ WABEN-BSK-RESET ¡ BXMKHTSTSS-ABI
 
  # AXIOM
- AXIOM ¡ 
- AXIOM ¡ 
+ AXIOM ¡ BX-ABI-IO + BX-ABI-ENDE ≠ * * ≠ Ħ: <IO> :Ħ
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡
+ LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# SHELL 
+# SHELL !
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 

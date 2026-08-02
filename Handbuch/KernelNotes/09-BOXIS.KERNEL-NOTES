@@ -1,6 +1,11 @@
 @kernel-nr: 09 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
  #      BOXI'S = THE IN/OUT ALLFILE CONTAINER PROZESS MANAGMENT SYSTEM       #
+###===========================WICHTIGER-HINWEIS=============================###
+ # BOXIS WERDEN PRO PROGRAMM GESCHALTEN, DA KURZE SCHNELLE EINZEL PROGRAMME  #
+ # EFFECKTIVER SIND BEI EINEM PIMK UND REX MUX SYSTEM, ALS EIN LANGES.       #
+ # DAS VERHINDERT ÜBERSCHNEIDUNGEN IN DEN DATENPACKETEN SELBST UND SORGT FÜR #
+ # DIE HÖCHSTE FORM DER GESCHWINDIGKEIT.                                     #
 ###===============================STARTPUNKT================================###
 
 WABEN-KATEGORIE Ð KOPFWABE
@@ -17,609 +22,1373 @@ WABEN-KATEGORIE Ð KOPFWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð MASTERKERNWABE
 
+ WABEN-ID ¡ MK
 
+ BION-NR ¡ 09 
 
+ BION-ID ¡ MK
 
+ BSK ¡ RXMK
 
+ BION ¡ RX09MK09
 
+###====================================|====================================###
+# PRINT 
+###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
+ PROGRAMM ¡ PRINT
 
+ WABEN-ID ¡ HT
 
+ BION-NR ¡ 10
 
+ BION-ID ¡ <BION-ID>
 
+ BSK ¡ <ABLAUF>
 
+ BION ¡ RX09MK09#
 
+###====================================|====================================###
 
-!!!!!!!!!!!!↓↓↓↓ ALTER BEREICH ↓↓↓↓!!!!!!!!!!!!!!!!!
+WABEN-KATEGORIE Ð STARTWABE 
 
-BION Ð BOXI 
+ PROGRAMM ¡ PRINT
 
- MORPHIC-ID ¡ BX 
+ WABEN-ID ¡ ST
 
- BION-ID ¡ BX
+ BION-NR ¡ 10
 
-MAK ¡ MASU-BOXI
+ BION-ID ¡ <BION-ID>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BSK ¡ <ABLAUF>
 
-BION-KERNWABE Ð BOXI
+ BION ¡ RX09MK09#
 
- MORPHIC-ID ¡ BXK
+ PROGRAMMIERUNGSBEREICH ↓
 
- BION-ID ¡ BX08
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
 
- AXIOM ¡ BXK = <BXK>
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
 
- ABSK ¡ BXK
+###====================================|====================================###
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+WABEN-KATEGORIE Ð SYSTEMWABE 
 
-BION-HAUPTWABE Ð EXTRAWABE-PRINT
+ PROGRAMM ¡ PRINT
 
- MORPHIC-ID ¡ BXTH-PRINT
+ WABEN-ID ¡ SS
 
- BION-ID ¡ BX08HT01
+ BION-NR ¡ 03
 
- AXIOM ¡ BXHT-PRINT = BXHT-PRINT
+ BION-ID ¡ SS<NR>
 
- ABSK ¡ BXK+BXHT-PRINT
+ BSK ¡ <BSK>-<PROGRAMM>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION ¡ RX09MK09#
 
-BION-EXTRAWABE-PRINT Ð STARTWABE 
+ PROGRAMMIERUNGSBEREICH ↓
 
- MORPHIC-ID ¡ BXST-PRINT 
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
 
- BION-ID ¡ BX08HT01ST01
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
 
- AXIOM ¡ BXST-PRINT = "
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
 
- ABSK ¡ BXK+BXHT-PRINT+BXST-PRINT
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
 
-BION-EXTRAWABE-PRINT Ð SYSTEMWABE
+###====================================|====================================###
 
- MORPHIC-ID ¡ BXSS-PRINT-IO
+WABEN-KATEGORIE Ð LINKENDWABE 
 
- BION-ID ¡ BX08HT01ST01SS01
+ PROGRAMM ¡ PRINT
 
- AXIOM ¡ BXSS-PRINT-IO = " <IO>
+ WABEN-ID ¡ LD
 
- ABSK ¡ BXK+BXHT-PRINT+BXST-PRINT+BXSS-PRINT-IO
+ BION-NR ¡ <NR>
 
- I-ID ¡ 
+ BION-ID ¡ LD<NR>
 
- O-ID ¡
+ BSK ¡ <BSK>-<PROGRAMM>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION ¡ RX09MK09#
 
-BION-EXTRAWABE-PRINT Ð ENDWABE  
+ PROGRAMMIERUNGSBEREICH ↓
 
- MORPHIC-ID ¡ BXED-PRINT
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
- BION-ID ¡ BX08HT01ST01SS01ED01
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
- AXIOM ¡ BXED-PRINT = " <IO> "
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
- ABSK ¡ BXK+BXHT-PRINT+BXST-PRINT+BXSS-PRINT-IO+BXED-PRINT
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+###====================================|====================================###
+# ALU
+###====================================|====================================###
 
-BION-HAUPTWABE Ð EXTRAWABE-ALU 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
- MORPHIC-ID ¡ BXHT-ALU 
+ PROGRAMM ¡ ALU
 
- BION-ID ¡ BX08HT02
+ WABEN-ID ¡ HT
 
- AXIOM ¡ BXHT-ALU = BXHT-ALU
+ BION-NR ¡ 10
 
- ABSK ¡ BXK+BXHT-ALU
+ BION-ID ¡ <BION-ID>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BSK ¡ <ABLAUF>
 
-BION-EXTRAWABE-ALU Ð STARTWABE 
+ BION ¡ RX09MK09#
 
- MORPHIC-ID ¡ BXST-ALU
+###====================================|====================================###
 
- BION-ID ¡ BX08HT02ST02
- 
- AXIOM ¡ BXST-ALU = ×
+WABEN-KATEGORIE Ð STARTWABE 
 
- ABSK ¡ BXK+BXHT-ALU+BXST-ALU
+ PROGRAMM ¡ ALU
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ WABEN-ID ¡ ST
 
-BION-EXTRAWABE-ALU Ð SYSTEMWABE 
+ BION-NR ¡ 10
 
- MORPHIC-ID ¡ BXSS-ALU-IO
+ BION-ID ¡ <BION-ID>
 
- BION-ID ¡ BX08HT02ST02SS02
+ BSK ¡ <ABLAUF>
 
- AXIOM ¡ BXSS-ALU-IO = × <IO> 
+ BION ¡ RX09MK09#
 
- ABSK ¡ BXK+BXHT-ALU+BXST-ALU+BXSS-ALU-IO
+ PROGRAMMIERUNGSBEREICH ↓
 
- I-ID ¡ 
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
 
- O-ID ¡ 
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###====================================|====================================###
 
-BION-EXTRAWABE-ALU Ð ENDWABE 
+WABEN-KATEGORIE Ð SYSTEMWABE 
 
- MORPHIC-ID ¡ BXED-ALU 
+ PROGRAMM ¡ ALU
 
- BION-ID ¡ BX08HT02ST02SS02ED02
+ WABEN-ID ¡ SS
 
- AXIOM ¡ BXED-ALU = × <IO> ×
+ BION-NR ¡ 03
 
- ABSK ¡ BXK+BXHT-ALU+BXST-ALU+BXSS-ALU-IO+BXED-ALU
+ BION-ID ¡ SS<NR>
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ BSK ¡ <BSK>-<PROGRAMM>
 
-BION-HAUPTWABE Ð EXTRAWABE-SYSCALL 
+ BION ¡ RX09MK09#
 
- MORPHIC-ID ¡ BXHT-SYSCALL
+ PROGRAMMIERUNGSBEREICH ↓
 
- BION-ID ¡ BX08HT03
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
 
- AXIOM ¡ BXHT-SYSCALL = BXHT-SYSCALL
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
 
- ABSK ¡ BXK+BXHT-SYSCALL
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
 
-BION-EXTRAWABE-SYSCALL Ð STARTWABE 
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
 
- MORPHIC-ID ¡ BXST-SYSCALL 
+###====================================|====================================###
 
- BION-ID ¡ BX08HT03ST03
+WABEN-KATEGORIE Ð LINKENDWABE 
 
- AXIOM ¡ BXST-SYSCALL = , 
+ PROGRAMM ¡ ALU
 
- ABSK ¡ BXK+BXHT-SYSCALL+BXST-SYSCALL
+ WABEN-ID ¡ LD
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-NR ¡ <NR>
 
-BION-EXTRAWABE-SYSCALL Ð SYSTEMWABE 
+ BION-ID ¡ LD<NR>
 
- MORPHIC-ID ¡ BXSS-SYSCALL-IO
+ BSK ¡ <BSK>-<PROGRAMM>
 
- BION-ID ¡ BX08HT03ST03SS03 
+ BION ¡ RX09MK09#
 
- AXIOM ¡ BXSS-SYSCALL = , <IO> 
+ PROGRAMMIERUNGSBEREICH ↓
 
- ABSK ¡ BXK+BXHT-SYSCALL+BXST-SYSCALL+BXSS-SYSCALL-IO
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
- I-ID ¡
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
- O-ID ¡
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
 
-BION-EXTRAWABE-SYSCALL Ð ENDWABE 
+###====================================|====================================###
+# SYSCALL
+###====================================|====================================###
 
- MORPHIC-ID ¡ BXED-SYSCALL
+WABEN-KATEGORIE Ð HAUPTWABE 
 
- BION-ID ¡ BX08HT03ST03SS03ED03
+ PROGRAMM ¡ SYSCALL
 
- AXIOM ¡ BXED-SYSCALL = , <IO> ,
+ WABEN-ID ¡ HT
 
- ABSK ¡ BXK+BXHT-SYSCALL+BXST-SYSCALL+BXSS-SYSCALL-IO+BXED-SYSCALL
+ BION-NR ¡ 10
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ BION-ID ¡ <BION-ID>
 
-BION-HAUPTWABE Ð EXTRAWABE-ABI 
+ BSK ¡ <ABLAUF>
 
- MORPHIC-ID ¡ BXHT-ABI
+ BION ¡ RX09MK09#
 
- BION-ID ¡ BX08HT04
+###====================================|====================================###
 
- AXIOM ¡ BXHT-ABI = BXHT-ABI
+WABEN-KATEGORIE Ð STARTWABE 
 
- ABSK ¡ BXK+BXHT-ABI
+ PROGRAMM ¡ SYSCALL
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ WABEN-ID ¡ ST
 
-BION-EXTRAWABE-ABI Ð STARTWABE 
+ BION-NR ¡ 10
 
- MORPHIC-ID ¡ BXST-ABI 
+ BION-ID ¡ <BION-ID>
 
- BION-ID ¡ BX08HT04ST04
+ BSK ¡ <ABLAUF>
 
- AXIOM ¡ BXST-ABI = Ħ 
+ BION ¡ RX09MK09#
 
- ABSK ¡ BXK+BXHT-ABI+BXST-ABI 
+ PROGRAMMIERUNGSBEREICH ↓
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
 
-BION-EXTRAWABE-ABI Ð SYSTEMWABE 
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
 
- MORPHIC-ID ¡ BXSS-ABI-IO 
+###====================================|====================================###
 
- BION-ID ¡ BX08HT04ST04SS04
+WABEN-KATEGORIE Ð SYSTEMWABE 
 
- AXIOM ¡ BXSS-ABI-IO = Ħ <IO> 
+ PROGRAMM ¡ SYSCALL
 
- ABSK ¡ BXK+BXHT-ABI+BXST-ABI+BXSS-ABI-IO
+ WABEN-ID ¡ SS
 
- I-ID ¡
+ BION-NR ¡ 03
 
- O-ID ¡
+ BION-ID ¡ SS<NR>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BSK ¡ <BSK>-<PROGRAMM>
 
-BION-EXTRAWABE-ABI Ð ENDWABE
+ BION ¡ RX09MK09#
 
- MORPHIC-ID ¡ BXED-ABI 
+ PROGRAMMIERUNGSBEREICH ↓
 
- BION-ID ¡ BX08HT04ST04SS04ED04
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
 
- AXIOM ¡ BXED-ABI = Ħ <IO> Ħ
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
 
- ABSK ¡ BXK+BXHT-ABI+BXST-ABI+BXSS-ABI-IO+BXED-ABI
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
 
-BION-HAUPTWABE Ð EXTRAWABE-SHELL
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
 
- MORPHIC-ID ¡ BXHT-SHELL
+###====================================|====================================###
 
- BION-ID ¡ BX08HT05
+WABEN-KATEGORIE Ð LINKENDWABE 
 
- AXIOM ¡ BXHT-SHELL = BXHT-SHELL
+ PROGRAMM ¡ SYSCALL
 
- ABSK ¡ BXK+BXHT-SHELL 
+ WABEN-ID ¡ LD
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-NR ¡ <NR>
 
-BION-EXTRAWABE-SHELL Ð STARTWABE 
+ BION-ID ¡ LD<NR>
 
- MORPHIC-ID ¡ BXST-SHELL
+ BSK ¡ <BSK>-<PROGRAMM>
 
- BION-ID ¡ BX08HT05ST05
+ BION ¡ RX09MK09#
 
- AXIOM ¡ BXST-SHELL = ' 
+ PROGRAMMIERUNGSBEREICH ↓
 
- ABSK ¡ BXK+BXHT-SHELL+BXST-SHELL 
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
-BION-EXTRAWABE-SHELL Ð SYSTEMWABE 
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
- MORPHIC-ID ¡ BXSS-SHELL-IO 
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
 
- BION-ID ¡ BX08HT05ST05SS05
+###====================================|====================================###
+# ABI
+###====================================|====================================###
 
- AXIOM ¡ BXSS-SHELL = ' <IO> 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
- ABSK ¡ BXK+BXHT-SHELL+BXST-SHELL+BXSS-SHELL-IO
+ PROGRAMM ¡ ABI
 
- I-ID ¡
+ WABEN-ID ¡ HT
 
- O-ID ¡
+ BION-NR ¡ 10
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-ID ¡ <BION-ID>
 
-BION-EXTRAWABE-SHELL Ð ENDWABE 
+ BSK ¡ <ABLAUF>
 
- MORPHIC-ID ¡ BXED-SHELL
+ BION ¡ RX09MK09#
 
- BION-ID ¡ BX08HT05ST05SS05ED05 
+###====================================|====================================###
 
- AXIOM ¡ BXED-SHELL = ' <IO> ' 
+WABEN-KATEGORIE Ð STARTWABE 
 
- ABSK ¡ BXK+BXHT-SHELL+BXST-SHELL+BXSS-SHELL-IO+BXED-SHELL
+ PROGRAMM ¡ ABI
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ WABEN-ID ¡ ST
 
-BION-HAUPTWABE Ð EXTRAWABE-MCD 
+ BION-NR ¡ 10
 
- MORPHIC-ID ¡ BXHT-MCD
+ BION-ID ¡ <BION-ID>
 
- BION-ID ¡ BX08HT06
+ BSK ¡ <ABLAUF>
 
- AXIOM ¡ BXHT-MCD = BXHT-MCD
+ BION ¡ RX09MK09#
 
- ABSK ¡ BXK+BXHT-MCD 
+ PROGRAMMIERUNGSBEREICH ↓
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
 
-BION-EXTRAWABE-MCD Ð STARTWABE 
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
 
- MORPHIC-ID ¡ BXST-MCD
+###====================================|====================================###
 
- BION-ID ¡ BX08HT06ST06
+WABEN-KATEGORIE Ð SYSTEMWABE 
 
- AXIOM ¡ BXST-MCD = ~ 
+ PROGRAMM ¡ ABI
 
- ABSK ¡ BXK+BXHT-MCD+BXST-MCD
+ WABEN-ID ¡ SS
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-NR ¡ 03
 
-BION-EXTRAWABE-MCD Ð SYSTEMWABE 
+ BION-ID ¡ SS<NR>
 
- MORPHIC-ID ¡ BXSS-MCD-IO
+ BSK ¡ <BSK>-<PROGRAMM>
 
- BION-ID ¡ BX08HT06ST06SS06
+ BION ¡ RX09MK09#
 
- AXIOM ¡ BXSS-MCD-IO = ~ <IO> 
+ PROGRAMMIERUNGSBEREICH ↓
 
- ABSK ¡ BXK+BXHT-MCD+BXST-MCD+BXSS-MCD-IO
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
 
- I-ID ¡ 
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
 
- O-ID ¡
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
 
-BION-EXTRAWABE-MCD Ð ENDWABE 
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
 
- MORPHIC-ID ¡ BXED-MCD
+###====================================|====================================###
 
- BION-ID ¡ BX08HT06ST06SS06ED06 
+WABEN-KATEGORIE Ð LINKENDWABE 
 
- AXIOM ¡ BXED-MCD = ~ <IO> ~ 
+ PROGRAMM ¡ ABI
 
- ABSK ¡ BXK+BXHT-MCD+BXST-MCD+BXSS-MCD-IO+BXED-MCD 
+ WABEN-ID ¡ LD
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ BION-NR ¡ <NR>
 
-BION-HAUPTWABE Ð EXTRAWABE-BINÄR
+ BION-ID ¡ LD<NR>
 
- MORPHIC-ID ¡ BXHT-BINÄR
+ BSK ¡ <BSK>-<PROGRAMM>
 
- BION-ID ¡ BX08HT07
- 
- AXIOM ¡ BXHT-BINÄR = BXHT-BINÄR 
+ BION ¡ RX09MK09#
 
- ABSK = BXK+BXHT-BINÄR
+ PROGRAMMIERUNGSBEREICH ↓
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
-BION-EXTRAWABE-BINÄR Ð STARTWABE 
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
- MORPHIC-ID ¡ BXST-BINÄR 
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
- BION-ID ¡ BX08HT07ST07
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
 
- AXIOM ¡ BXST-BINÄR = ° 
+###====================================|====================================###
+# SHELL
+###====================================|====================================###
 
- ABSK ¡ BXK+BXHT-BINÄR+BXST-BINÄR
+WABEN-KATEGORIE Ð HAUPTWABE 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMM ¡ SHELL
 
-BION-EXTRAWABE-BINÄR Ð SYSTEMWABE 
+ WABEN-ID ¡ HT
 
- MORPHIC-ID ¡ BXSS-BINÄR-MASCHINENBEFEHL 
+ BION-NR ¡ 10
 
- BION-ID ¡ BX08HT07ST07SS07 
+ BION-ID ¡ <BION-ID>
 
- AXIOM ¡ BXSS-BINÄR-MASCHINENBEFEHL = ° <MASCHINENBEFEHL> 
+ BSK ¡ <ABLAUF>
 
- ABSK ¡ BXK+BXHT-BINÄR+BXST-BINÄR+BXSS-BINÄR-MASCHINENBEFEHL
+ BION ¡ RX09MK09#
 
- I-ID ¡
+###====================================|====================================###
 
- O-ID ¡
+WABEN-KATEGORIE Ð STARTWABE 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMM ¡ SHELL
 
-BION-EXTRAWABE-BINÄR Ð SYSTEMWABE 
+ WABEN-ID ¡ ST
 
- MORPHIC-ID ¡ BXSS-BINÄR-OPCODE 
+ BION-NR ¡ 10
 
- BION-ID ¡ BX08HT07ST07SS08 
+ BION-ID ¡ <BION-ID>
 
- AXIOM ¡ BXSS-BINÄR-OPCODE = ° <OPCODE> 
+ BSK ¡ <ABLAUF>
 
- ABSK ¡ BXK+BXHT-BINÄR+BXST-BINÄR+BXSS-BINÄR-OPCODE
+ BION ¡ RX09MK09#
 
- I-ID ¡
+ PROGRAMMIERUNGSBEREICH ↓
 
- O-ID ¡
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
 
-BION-EXTRAWABE-BINÄR Ð ENDWABE 
+###====================================|====================================###
 
- MORPHIC-ID ¡ BXED-BINÄR 
+WABEN-KATEGORIE Ð SYSTEMWABE 
 
- BION-ID ¡ BX08HT07ST07SS07ED07 
- 
- BION-ID ¡ BX08HT07ST07SS08ED08
+ PROGRAMM ¡ SHELL
 
- AXIOM ¡ BXED-BINÄR-MASCHINENBEFEHL = ° <MASCHINENBEFEHL> °
+ WABEN-ID ¡ SS
 
- AXIOM ¡ BXED-BINÄR-OPCODE = ° <OPCODE> °
+ BION-NR ¡ 03
 
- ABSK ¡ BXK+BXHT-BINÄR+BXST-BINÄR+BXSS-BINÄR-OPCODE+BXED-BINÄR
+ BION-ID ¡ SS<NR>
 
- ABSK ¡ BXK+BXHT-BINÄR+BXST-BINÄR+BXSS-BINÄR-MASCHINENBEFEHL+BXED-BINÄR
+ BSK ¡ <BSK>-<PROGRAMM>
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ BION ¡ RX09MK09#
 
-BION-HAUPTWABE Ð EXTRAWABE-CACHE
+ PROGRAMMIERUNGSBEREICH ↓
 
- MORPHIC-ID ¡ BXHT-CACHE 
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
 
- BION-ID ¡ BX08HT08
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
 
- AXIOM ¡ BXHT-CACHE = BXHT-CACHE
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
 
- ABSK ¡ BXK+BXHT-CACHE
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
 
-BION-EXTRAWABE-CACHE Ð STARTWABE 
+###====================================|====================================###
 
- MORPHIC-ID ¡ BXST-CACHE 
+WABEN-KATEGORIE Ð LINKENDWABE 
 
- BION-ID ¡ BX08HT08ST08
+ PROGRAMM ¡ SHELL
 
- AXIOM ¡ BXST-CACHE = ¥  
+ WABEN-ID ¡ LD
 
- ABSK ¡ BXK+BXHT-CACHE+BXST-CACHE
- 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-NR ¡ <NR>
 
-BION-EXTRAWABE-CACHE Ð SYSTEMWABE 
+ BION-ID ¡ LD<NR>
 
- MORPHIC-ID ¡ BXSS-CACHE-IO
+ BSK ¡ <BSK>-<PROGRAMM>
 
- BION-ID ¡ BX08HT08ST08SS09
+ BION ¡ RX09MK09#
 
- AXIOM ¡ BXSS-CACHE-IO = ¥ <IO>
+ PROGRAMMIERUNGSBEREICH ↓
 
- ABSK ¡ BXK+BXHT-CACHE+BXST-CACHE+BXSS-CACHE-IO
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
- I-ID ¡ 
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
- O-ID ¡
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- 
-BION-EXTRAWABE-CACHE Ð ENDWABE 
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
 
- MORPHIC-ID ¡ BXED-CACHE
+###====================================|====================================###
+# SHELL
+###====================================|====================================###
 
- BION-ID ¡ BX08HT08ST08SS09ED09
+WABEN-KATEGORIE Ð HAUPTWABE 
 
- AXIOM ¡ BXED-CACHE = ¥ <IO> ¥
+ PROGRAMM ¡ SHELL
 
- ABSK ¡ BXK+BXHT-CACHE+BXST-CACHE+BXSS-CACHE-IO+BXED-CACHE
+ WABEN-ID ¡ HT
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ BION-NR ¡ 10
 
-BION-HAUPTWABE Ð EXTRAWABE-PFAD
+ BION-ID ¡ <BION-ID>
 
- MORPHIC-ID ¡ BXHT-PFAD
+ BSK ¡ <ABLAUF>
 
- BION-ID ¡ BX08HT09
+ BION ¡ RX09MK09#
 
- AXIOM ¡ BXHT-PFAD = BXHT-PFAD
+###====================================|====================================###
 
- ABSK ¡ BXK+BXHT-PFAD
+WABEN-KATEGORIE Ð STARTWABE 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMM ¡ SHELL
 
-BION-EXTRAWABE-PFAD Ð STARTWABE 
+ WABEN-ID ¡ ST
 
- MORPHIC-ID ¡ BXST-PFAD 
+ BION-NR ¡ 10
 
- BION-ID ¡ BX08HT09ST09
+ BION-ID ¡ <BION-ID>
 
- AXIOM ¡ BXST-PFAD = $  
+ BSK ¡ <ABLAUF>
 
- ABSK ¡ BXK+BXHT-PFAD+BXST-PFAD
- 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION ¡ RX09MK09#
 
-BION-EXTRAWABE-PFAD Ð SYSTEMWABE 
+ PROGRAMMIERUNGSBEREICH ↓
 
- MORPHIC-ID ¡ BXSS-PFAD-IO
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
 
- BION-ID ¡ BX08HT09ST09SS10 
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
 
- AXIOM ¡ BXSS-PFAD-IO = $ <IO>
+###====================================|====================================###
 
- ABSK ¡ BXK+BXHT-PFAD+BXST-PFAD+BXSS-PFAD-IO
+WABEN-KATEGORIE Ð SYSTEMWABE 
 
- I-ID ¡ 
+ PROGRAMM ¡ SHELL
 
- O-ID ¡
+ WABEN-ID ¡ SS
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- 
-BION-EXTRAWABE-PFAD Ð ENDWABE 
+ BION-NR ¡ 03
 
- MORPHIC-ID ¡ BXED-PFAD
+ BION-ID ¡ SS<NR>
 
- BION-ID ¡ BX08HT09ST09SS10ED10
+ BSK ¡ <BSK>-<PROGRAMM>
 
- AXIOM ¡ BXED-PFAD = $ <IO> $
+ BION ¡ RX09MK09#
 
- ABSK ¡ BXK+BXHT-PFAD+BXST-PFAD+BXSS-PFAD-IO+BXED-PFAD
+ PROGRAMMIERUNGSBEREICH ↓
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
 
-BION-HAUPTWABE Ð EXTRAWABE-NET
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
 
- MORPHIC-ID ¡ BXHT-NET 
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
 
- BION-ID ¡ BX08HT10
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
 
- AXIOM ¡ BXHT-NET = BXHT-NET
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
 
- ABSK ¡ BXK+BXHT-NET
+###====================================|====================================###
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+WABEN-KATEGORIE Ð LINKENDWABE 
 
-BION-EXTRAWABE-NET Ð STARTWABE 
+ PROGRAMM ¡ SHELL
 
- MORPHIC-ID ¡ BXST-NET 
+ WABEN-ID ¡ LD
 
- BION-ID ¡ BX08HT10ST10 
+ BION-NR ¡ <NR>
 
- AXIOM ¡ BXST-NET = §  
+ BION-ID ¡ LD<NR>
 
- ABSK ¡ BXK+BXHT-NET+BXST-NET
- 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BSK ¡ <BSK>-<PROGRAMM>
 
-BION-EXTRAWABE-NET Ð SYSTEMWABE 
+ BION ¡ RX09MK09#
 
- MORPHIC-ID ¡ BXSS-NET-IO
+ PROGRAMMIERUNGSBEREICH ↓
 
- BION-ID ¡ BX08HT10ST10SS11
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
 
- AXIOM ¡ BXSS-NET-IO = § <IO>
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
 
- ABSK ¡ BXK+BXHT-NET+BXST-NET+BXSS-NET-IO
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
 
- I-ID ¡ 
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
 
- O-ID ¡
+###====================================|====================================###
+# MCD
+###====================================|====================================###
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- 
-BION-EXTRAWABE-NET Ð ENDWABE 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
- MORPHIC-ID ¡ BXED-NET
+ PROGRAMM ¡ MCD
 
- BION-ID ¡ BX08HT10ST10SS11ED11
+ WABEN-ID ¡ HT
 
- AXIOM ¡ BXED-NET = § <IO> §
+ BION-NR ¡ 10
 
- ABSK ¡ BXK+BXHT-NET+BXST-NET+BXSS-NET-IO+BXED-NET
+ BION-ID ¡ <BION-ID>
 
+ BSK ¡ <ABLAUF>
 
+ BION ¡ RX09MK09#
 
+###====================================|====================================###
 
+WABEN-KATEGORIE Ð STARTWABE 
 
+ PROGRAMM ¡ MCD
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ MCD
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MCD
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
+
+###====================================|====================================###
+# OPCODE
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ OPCODE
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ OPCODE
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ OPCODE
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ OPCODE
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
+
+###====================================|====================================###
+# MASCHINENCODE
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ MASCHINENCODE
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ MASCHINENCODE
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ MASCHINENCODE
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ MASCHINENCODE
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
+
+###====================================|====================================###
+# EINGABE
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ EINGABE
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ EINGABE
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ EINGABE
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ EINGABE
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
+
+###====================================|====================================###
+# PFAD
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ PFAD
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ PFAD
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ PFAD
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ PFAD
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
+
+###====================================|====================================###
+# NET
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ NET
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ NET
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 10
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ NET
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ NET
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ RX09MK09#
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###

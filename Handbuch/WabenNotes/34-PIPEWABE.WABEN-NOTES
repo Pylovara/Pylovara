@@ -80,7 +80,6 @@ WABEN-KATEGORIE Ð PIPEMWABE
 ###==========================VERWENDETE-WABEN-NR============================###
 
 
-
 ###==============================INFORMATIONEN==============================###
 
    IN ARBEIT  
@@ -88,6 +87,57 @@ WABEN-KATEGORIE Ð PIPEMWABE
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
 
+¢!
+# Beispiel Schaltung (inspirationsschablone|kein echter inhalt)
 
+»—[': exec <SPIEL> :']
+ ↓  »—[": intelarc :"]«
+ ↓   ¬· »—[": prozess gpu-core :"]
+ ↓   ↓   ¶ ¬· »—[": run ast intelarc.gpu-core :"]«
+ ↓   ↓         ¶ ¬· »—[": run intelarc.gpu-lcore :"]«
+ ↓   ↓               ¶ ¬· »—[": run intelarc.gpu-vcore :"]«
+ ↓   ↓                     ¶ ¬· »—[": run intelarc.gpu-mcore :"]«
+ ↓   ↓                           ¶ ¬· »—[": run intelarc.gpu-fcore :"]«
+ ↓   ↓
+ ↓   ¶¶ ¬· »[": debugging log to /Pylovara/ :"|{WATT|200.00}]«
+ ↓   ↓
+ ↓   ¶ ¬·· »—[': exec /Pylovara/System/Module/uefi.boot-kernel :']«
+ ↓          ¶ ¬·· »[': run /SPI/Runtime Service :']
+ ↓
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/asm.compiler-kernel :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓    
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓    
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/direcx12.treiber-needle :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓    
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/vs-studio.treiber-needle :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓    
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/realtak.treiber-needle :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓    
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/usb.system-kernel :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/monitor.system-kernel :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/maus.system-kernel :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/tastatur.system-kernel :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓
+ ↓          ¬·· »—[': exec /Pylovara/System/Module/firefox.system-kernel :']«
+ ↓               ¶ ¬··¤ [': :']
+ ↓
+ ¶ ¬··¤ »[': compositor :']«
+ ↓
+ ¶¶ ¬··¤ »[": error bildschirm :"]«
+ 
+!¢
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

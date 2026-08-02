@@ -35,7 +35,7 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
  BION ¡ BX09MK09
 
 ###====================================|====================================###
-# PRINT 1 : SCHRITT 2 
+# PRINT 1 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -145,14 +145,14 @@ WABEN-KATEGORIE Ð LINKENDWABE
  # AXIOM
  AXIOM ¡ BX-PRINT-IO + BX-PRINT-ENDE ≠ * * ≠ ": <IO> :"
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT  PIMK  PIMKHT-OFF-PIPE
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
  LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# ALU 2 : SCHRITT 2
+# ALU 2 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -260,7 +260,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  WABEN-BSK-RESET ¡ BXMKHTSTSS-ALU
 
  # AXIOM
- AXIOM ¡ BX-PRINT-IO + BX-PRINT-ENDE ≠ * * ≠ ": <IO> :"
+ AXIOM ¡ BX-PRINT-IO + BX-PRINT-ENDE ≠ * * ≠ ×: <IO> :×
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
@@ -269,7 +269,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# SYSCALL : SCHRITT 2
+# SYSCALL 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -386,7 +386,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# ABI : SCHRITT 2
+# ABI 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -503,7 +503,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# SHELL : SCHRITT 2 
+# SHELL 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -725,7 +725,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  EINHEIT ¡ :~ = BX-MCD-ENDE
 
  # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-SHELL
+ WABEN-BSK-RESET ¡ BXMKHTSTSS-MCD
 
  # AXIOM
  AXIOM ¡ BX-MCD-IO + BX-MCD-ENDE ≠ * * ≠ ~: <IO> :~
@@ -817,7 +817,7 @@ WABEN-KATEGORIE Ð SYSTEMWABE
  OUT-ID  ¡ IN-ID
 
  # EINHEIT 
- EINHEIT ¡ ~: <IO> = BX-OPCODE-IO
+ EINHEIT ¡ °: <IO> = BX-OPCODE-IO
 
 ###====================================|====================================###
 
@@ -854,7 +854,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# MASCHINENCODE : SCHRITT 2
+# MASCHINENCODE 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -971,7 +971,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# EINGABE : SCHRITT 2
+# EINGABE 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -1088,7 +1088,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# PFAD : SCHRITT 2
+# PFAD 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -1205,7 +1205,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# NET : SCHRITT 2
+# NET 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -1244,11 +1244,11 @@ WABEN-KATEGORIE Ð STARTWABE
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
  AXIOM ¡ ^ <TASTENCODE> = §
  AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ § + : ≠ ** ≠ $: = BX-NET-START
+ AXIOM ¡ ^ § + : ≠ ** ≠ §: = BX-NET-START
  AXIOM ¡ ^ : + § ≠ ** ≠ :§ = BX-NET-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ $: = BX-NET-START
+ GEBAUTE-EINHEIT ¡ §: = BX-NET-START
  GEBAUTE-EINHEIT ¡ :§ = BX-NET-ENDE
 
 ###====================================|====================================###
@@ -1306,13 +1306,13 @@ WABEN-KATEGORIE Ð LINKENDWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <START-KENNUNG> 
+ EINHEIT ¡ BXMKHTSTSS-NET
 
  # BEENDET VOR PROZESS
  WABEN-BSK-RESET ¡ BXMKHTSTSS-NET
 
  # AXIOM
- AXIOM ¡ BX-EINGABE-IO + BX-EINGABE-ENDE ≠ * * ≠ ¥: <IO> :¥
+ AXIOM ¡ BX-NET-IO + BX-NET-ENDE ≠ * * ≠ §: <IO> :§
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
@@ -1323,8 +1323,18 @@ WABEN-KATEGORIE Ð LINKENDWABE
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
  # MASTERWORT = 
- # BION-ID-PFAD  → 
- # BION-ID-VPFAD → 
- # BION-ID-RPFAD → 
+ # BION-ID-PFAD (BX-PRINT)           → BX09+MK09+HT10+ST10+SS03+LD22
+ # BION-ID-PFAD (BX-ALU)             → BX09+MK09+HT11+ST11+SS04+LD23
+ # BION-ID-PFAD (BX-SYSCALL)         → BX09+MK09+HT12+ST12+SS05+LD24
+ # BION-ID-PFAD (BX-ABI)             → BX09+MK09+HT13+ST13+SS06+LD25
+ # BION-ID-PFAD (BX-SHELL)           → BX09+MK09+HT14+ST14+SS07+LD26
+ # BION-ID-PFAD (BX-MCD)             → BX09+MK09+HT15+ST15+SS08+LD27
+ # BION-ID-PFAD (BX-OPCODE)          → BX09+MK09+HT16+ST16+SS09+LD28
+ # BION-ID-PFAD (BX-MASCHINENCODE)   → BX09+MK09+HT17+ST17+SS10+LD29
+ # BION-ID-PFAD (BX-EINGABE)         → BX09+MK09+HT18+ST18+SS11+LD31
+ # BION-ID-PFAD (BX-PFAD)            → BX09+MK09+HT19+ST19+SS12+LD32
+ # BION-ID-PFAD (BX-NET)             → BX09+MK09+HT20+ST20+SS13+LD33
+ # BION-ID-VPFAD → BX09MK09HT10HT11HT12HT13HT14HT15HT16HT17HT18HT19HT20ST10ST11ST12ST13ST14ST15ST16ST17ST18ST19ST20SS03SS04SS05SS06SS07SS08SS09SS10SS11SS12SS13LD22LD23LD24LD25LD26LD27LD28LD29LD31LD32LD33
+ # BION-ID-RPFAD → BX+MK09
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

@@ -32,220 +32,41 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
+ PROGRAMM ¡ JA
 
-!!! ESSEN ... Gott hab ich kohldampf 
+ WABEN-ID ¡ HT
 
+ BION-NR ¡ 21
 
+ BION-ID ¡ HT21
 
+ BSK ¡ SEMKHT-JA
 
+ BION ¡ SE10MK10HT22
 
+###====================================|====================================###
+# SEMKHT-JA WEITER
+###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
+ PROGRAMM ¡ NEIN
 
+ WABEN-ID ¡ HT
 
+ BION-NR ¡ 22
 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####======K13 SENTIATOR=====#####======###==##==###  
+ BION-ID ¡ HT22
 
-###==##==###======#####==STARTPUNKT SENTIATOR==#####======###==##==###
+ BSK ¡ SEMKHT-JA
 
-BION Ð SENTIATOR 
+ BION ¡ SE10MK10HT22
 
- MORPHIC-ID ¡ SE
-
- BION-ID ¡ SE
-
- MAK ¡ MASU-SENTIATOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð SENTIATOR 
-
- MORPHIC-ID ¡ SEK
-
- BION-ID ¡ SE13 
-
- AXIOM ¡ SEK = <SEK> 
-
- ABSK ¡ SEK
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-WENN
-
- MORPHIC-ID ¡ SEHT-WENN
-
- BION-ID ¡ SE13HT01
-
- AXIOM ¡ SEHT-WENN = SEHT-WENN
-
- ABSK ¡ SEK+SEHT-WENN
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-WENN Ð STARTWABE
-
- MORPHIC-ID ¡ SEST-WENN
-
- BION-ID ¡ SE13HT01ST01
-
- AXIOM ¡ SEST-WENN = ¶
-
- ABSK ¡ SEK+SEHT-WENN+SEST-WENN
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-WENN Ð BLOCKWABE
-
- MORPHIC-ID ¡ SEBK-WENN
-
- BION-ID ¡ SE13HT01ST01BK01
-
- AXIOM ¡ SEBK-WENN = ¶
-
- ABSK ¡ SEK+SEHT-WENN+SEST-WENN+SEBK-WENN
-
- AXIOM ¡ SYNTAX-ERLAUBNIS = ^
- AXIOM ¡ ^      1START: —[
- AXIOM ¡ ^        4SEK: ¶
-
- AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYK>
- AXIOM ¡ ^       1SYNC: <SYK>
- AXIOM ¡ ^       2KOPF: <NIK>
- AXIOM ¡ ^      1START: <PICB-ON-PIPE-PIPE>
- AXIOM ¡ ^       2FOOD: <NIK>
- AXIOM ¡ ^  3ZYKLUS-IN: <ZYK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        4SEK: <SEK>
- AXIOM ¡ ^        4SEK: <SEK>
- AXIOM ¡ ^       6FREE: <REK>
-
- BRÜCKE-IO ¡ PICB-ON-PIPE-PIPE
-
- BRÜCKE-OUT ¡ <SEK>
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-WENN Ð COMBOWABE 
-
- MORPHIC-ID ¡ SECB-WENN
-
- BION-ID ¡ SE13HT01ST01BK01CB01
-
- AXIOM ¡ SECB-WENN = ¶ <REXK>
-
- ABSK ¡ SEK+SEHT-WENN+SEST-WENN+SEBK-WENN+SECB-WENN
-
- LINK ¡ REXK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-WENN Ð LINKENDWABE 
-
- MORPHIC-ID ¡ SELD-WENN
-
- BION-ID ¡ SE13HT01ST01BK01CB01LD01
-
- AXIOM ¡ SELD-WENN = ¶ <REXK> 
-  
- ABSK ¡ SEK+SEHT-WENN+SEST-WENN+SEBK-WENN+SECB-WENN+SELD-WENN
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-NICHT
-
- MORPHIC-ID ¡ SEHT-NICHT
-
- BION-ID ¡ SE13HT02
-
- AXIOM ¡ SEHT-NICHT = SEHT-NICHT
-
- ABSK ¡ SEK+SEHT-NICHT
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-NICHT Ð STARTWABE
-
- MORPHIC-ID ¡ SEST-NICHT
-
- BION-ID ¡ SE13HT02ST02
-
- AXIOM ¡ SEST-NICHT = ¶¶
-
- ABSK ¡ SEK+SEHT-NICHT+SEST-NICHT
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-NICHT Ð BLOCKWABE
-
- MORPHIC-ID ¡ SEBK-NICHT
-
- BION-ID ¡ SE13HT02ST02BK02
-
- AXIOM ¡ SEBK-NICHT = ¶¶
-
- ABSK ¡ SEK+SEHT-NICHT+SEST-NICHT+SEBK-NICHT
-
- AXIOM ¡ SYNTAX-ERLAUBNIS = ^
- AXIOM ¡ ^      1START: —[
- AXIOM ¡ ^        4SEK: ¶¶
-
- AXIOM ¡ SYNTAX-BAUM = ^
- AXIOM ¡ ^ 3ZYKLUS-OUT: <ZYK>
- AXIOM ¡ ^       1SYNC: <SYK>
- AXIOM ¡ ^       2KOPF: <NIK>
- AXIOM ¡ ^      1START: <PICB-ON-PIPE>
- AXIOM ¡ ^       2FOOD: <NIK>
- AXIOM ¡ ^  3ZYKLUS-IN: <ZYK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        5REK: <REK>
- AXIOM ¡ ^        4SEK: <SEK>
- AXIOM ¡ ^        4SEK: <SEK>
- AXIOM ¡ ^       6FREE: <REK>
-
- BRÜCKE-IO ¡ POICB-ON-PIPE
-
- BRÜCKE-OUT ¡ <SEK>
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-NICHT Ð COMBOWABE 
-
- MORPHIC-ID ¡ SECB-NICHT
-
- BION-ID ¡ SE13HT02ST02BK02CB02
-
- AXIOM ¡ SECB-NICHT = ¶¶ <REXK>
-
- ABSK ¡ SEK+SEHT-NICHT+SEST-NICHT+SEBK-NICHT+SECB-NICHT
-
- LINK ¡ REXK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-NICHT Ð LINKENDWABE 
-
- MORPHIC-ID ¡ SELD-NICHT
-
- BION-ID ¡ SE13HT02ST02BK02CB02LD02
-
- AXIOM ¡ SELD-NICHT = ¶¶ <REXK> 
-  
- ABSK ¡ SEK+SEHT-NICHT+SEST-NICHT+SEBK-NICHT+SECB-NICHT+SELD-NICHT
-
-
-
+###====================================|====================================###
+# SEMKHT-JA WEITER
+###====================================|====================================###
 
 
 ###====================================|====================================###

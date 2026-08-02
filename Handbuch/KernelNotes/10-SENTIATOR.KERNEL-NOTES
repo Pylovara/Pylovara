@@ -44,10 +44,36 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
  BSK ¡ SEMKHT-JA
 
- BION ¡ SE10MK10HT22
+ BION ¡ SE10MK10HT21
 
 ###====================================|====================================###
-# SEMKHT-JA WEITER
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ JA
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 21
+
+ BION-ID ¡ ST21
+
+ BSK ¡ SEMKHTST-JA
+
+ BION ¡ SE10MK10HT21ST21
+
+ PROGRAMMIERUNGSBEREICH ↓
+ 
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ¶
+ AXIOM ¡ ^ ¶ ≠ * ≠ ¶ = SE-JA-START
+ 
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¶ = SE-JA-START 
+
+###====================================|====================================###
+# SEMKHT-JA WEITER | PIPEWABE
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -60,14 +86,42 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
  BION-ID ¡ HT22
 
- BSK ¡ SEMKHT-JA
+ BSK ¡ SEMKHT-NEIN
 
  BION ¡ SE10MK10HT22
 
 ###====================================|====================================###
-# SEMKHT-JA WEITER
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ NEIN
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 22
+
+ BION-ID ¡ ST22
+
+ BSK ¡ SEMKHTST-NEIN
+
+ BION ¡ SE10MK10HT22ST22
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ¶
+ AXIOM ¡ ^ <TASTENCODE> = ¶
+ AXIOM ¡ ^ ¶ + ¶ ≠ ** ≠ ¶¶ = SE-NEIN-START
+ 
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¶¶ = SE-NEIN-START
+
+###====================================|====================================###
+# SEMKHT-NEIN WEITER | PIPEWABE
 ###====================================|====================================###
 
+FUCK ... DER KOPF PLATZ .... KURZ HINLEGEN 
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###

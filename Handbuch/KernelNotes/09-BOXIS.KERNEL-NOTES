@@ -928,7 +928,7 @@ EINHEIT ¡ °°: = BX-MASCHINENCODE-START
  AXIOM ¡ BX-MASCHINENCODE-START + <IO> ≠ * * ≠ °°: <IO> = BX-MASCHINENCODE-IO
 
  # EINGABE-I
- IN-ID   ¡ <EINGABE>
+ IN-ID   ¡ <IO>
 
  # AUSGABE-0
  OUT-ID  ¡ IN-ID
@@ -1088,7 +1088,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# PFAD
+# PFAD : SCHRITT 2
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -1125,14 +1125,14 @@ WABEN-KATEGORIE Ð STARTWABE
 
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = <> 
- AXIOM ¡ ^ <TASTENCODE> = <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = $
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ $ + : ≠ ** ≠ $: = BX-PFAD-START
+ AXIOM ¡ ^ : + $ ≠ ** ≠ :$ = BX-PFAD-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ $: = BX-PFAD-START 
+ GEBAUTE-EINHEIT ¡ :$ = BX-PFAD-ENDE 
 
 ###====================================|====================================###
 
@@ -1153,21 +1153,22 @@ WABEN-KATEGORIE Ð SYSTEMWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <ANSCHLUSS> 
- EINHEIT ¡ <ANSCHLUSS>
+ EINHEIT ¡ $: = BX-PFAD-START 
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ <PROZESS-STOP>
+ WABEN-RESET ¡ BXMKHTST-PFAD
 
  # AXIOM
- AXIOM ¡ ≠
- AXIOM ¡ 
+ AXIOM ¡ BX-PFAD-START + <IO> ≠ * * ≠ $: <IO> = BX-PFAD-IO
 
  # EINGABE-I
- IN-ID   ¡ <EINGABE>
+ IN-ID   ¡ <IO>
 
  # AUSGABE-0
  OUT-ID  ¡ IN-ID
+
+ # EINHEIT 
+ EINHEIT ¡ $: <IO> = BX-PFAD-IO
 
 ###====================================|====================================###
 
@@ -1188,17 +1189,20 @@ WABEN-KATEGORIE Ð LINKENDWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <START-KENNUNG> 
+ EINHEIT ¡ $: <IO> = BX-PFAD-IO
+ EINHEIT ¡ :$ = BX-PFAD-ENDE 
 
  # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ 
+ WABEN-BSK-RESET ¡ BXMKHTSTSS-PFAD
 
  # AXIOM
- AXIOM ¡ 
- AXIOM ¡ 
+ AXIOM ¡ BX-PFAD-IO + BX-PFAD-ENDE ≠ * * ≠ $: <IO> :$
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡
+ LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
 # NET

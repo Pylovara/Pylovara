@@ -102,23 +102,42 @@ WABEN-KATEGORIE Ð BLOCKWABE
 
  # FIXPUNKT VERARBEITUNGS PIPELINE
  AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIBK-ON-PIPE ≠ ≠ ^ *: <*>
- AXIOM ¡ ^         START: <ON-PIPE-START>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
 
  # VERARBEITUNGS PIPELINE
  AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
- AXIOM ¡ ^  ZYKLUS-OUT: <ZYMK>
- AXIOM ¡ ^        SYNC: <SYMK>
- AXIOM ¡ ^        KOPF: <NIMK>
- AXIOM ¡ ^       START: <ON-PIPE-START>
- AXIOM ¡ ^        FOOD: <NIMK>
- AXIOM ¡ ^   ZYKLUS-IN: <ZYMK>
- AXIOM ¡ ^         REK: <REMK>
- AXIOM ¡ ^         REK: <REMK>
- AXIOM ¡ ^         REK: <REMK>
- AXIOM ¡ ^         REK: <REMK>
- AXIOM ¡ ^         SEN: <SEMK>
- AXIOM ¡ ^         SEN: <SEMK>
- AXIOM ¡ ^        FREE: <REMK>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
 
  # ZUSCHLUSS KANÄLE = INPUT
  BRÜCKE-IN ¡ <ZYMK>
@@ -132,12 +151,8 @@ WABEN-KATEGORIE Ð BLOCKWABE
  BRÜCKE-OUT ¡ <NIMK>
  BRÜCKE-OUT ¡ <ZYMK>
  BRÜCKE-OUT ¡ <REMK>
- BRÜCKE-OUT ¡ <REMK>
- BRÜCKE-OUT ¡ <REMK>
- BRÜCKE-OUT ¡ <REMK>
- BRÜCKE-OUT ¡ <REMK>
- BRÜCKE-OUT ¡ <SEMK>
- BRÜCKE-OUT ¡ <SEMK>
+ BRÜCKE-OUT ¡ <SEMK>+<REMK>
+ BRÜCKE-OUT ¡ <SEMK>+<REMK>
 
 ###====================================|====================================###
 

@@ -1,8 +1,10 @@
 ﻿@kernel-nr: lex =================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###=========================PYLOVARA-SYSTEM-LEXIKON=========================###
+ #    PYLOVARA-SYSTEM VERSPRICHT : „ PERFORMANCE IST EIN NATURGESETZT “      #
+###========================ARBEITS-NOTIZ-DEFINITION=========================###
  #          · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND          #
  #              + AKTIV  | - NICHT AKTIV  | X = TEIL-VOLLSTÄNDIG             #
- #                        Æ STRUKTUR ERNEUERT                                #
-###=========================PYLOVARA-SYSTEM-LEXIKON=========================###
+ #                  Æ STRUKTUR ERNEUERT | F = OBSOLET                        #
 ###===============================KOMPONENTEN===============================###
  #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN              源真理   #
  #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
@@ -16,10 +18,8 @@
  #   13  - -  SYNAPTOR                 | 14  - -  ZYTRON                     #
  #   15  - -  ARGUMENTEN               | 16  - -                             #
 ###==============================SYSTEM-ELEMENTE============================###
- #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
  #   30  - -  VATRON                   | 31  - -  RETRON                     #
 ###=================================REGISTER================================###
- #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
  #   40  - -  DATENTYPEN               | 41  - -  NAVIGATOR                  #
  #   42  - -  IDENTIFIKATION           | 43  - -  KKIS                       #
  #   44  - -  GENERALSCHALTUNG         | 45  - -  MCD                        #
@@ -27,7 +27,7 @@
 ###==============================PROGRAMMIERUNG=============================###
  #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
  #   50  - -  ABSOLULATOR              | 51  - -  WABINATOR                  #
- #   52  - -  DETEKTOR                 | 53  - -  HERZSCHLAG                 #
+ #   52  - F  DETEKTOR                 | 53  - -  HERZSCHLAG                 #
 ###=================================LIZENZEN================================###
  #   93   L1_COREKERNELMANDAT                        #        #   #     #    #
  #   94   L2_AUTHORRIGHTS                            #    # #      #    #    #

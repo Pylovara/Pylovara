@@ -145,12 +145,14 @@ WABEN-KATEGORIE Ð LINKENDWABE
  # AXIOM
  AXIOM ¡ BX-PRINT-IO + BX-PRINT-ENDE ≠ * * ≠ ": <IO> :"
  AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+ AXIOM ¡ LINK-OUT  PIMK  PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
  LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# ALU 2
+# ALU 2 : SCHRITT 2
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -187,14 +189,14 @@ WABEN-KATEGORIE Ð STARTWABE
 
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = <> 
- AXIOM ¡ ^ <TASTENCODE> = <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = × 
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ × + : ≠ ** ≠ ×: = BX-ALU-START
+ AXIOM ¡ ^ : + × ≠ ** ≠ :× = BX-ALU-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ ×: = BX-ALU-START
+ GEBAUTE-EINHEIT ¡ :× = BX-ALU-ENDE
 
 ###====================================|====================================###
 
@@ -215,21 +217,22 @@ WABEN-KATEGORIE Ð SYSTEMWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <ANSCHLUSS> 
- EINHEIT ¡ <ANSCHLUSS>
+ EINHEIT ¡ ×: = BX-ALU-START
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ <PROZESS-STOP>
+ WABEN-RESET ¡ BXMKHTST-ALU
 
  # AXIOM
- AXIOM ¡ ≠
- AXIOM ¡ 
+ AXIOM ¡ BX-ALU-START + <IO> ≠ * * ≠ ×: <IO> = BX-ALU-IO
 
  # EINGABE-I
- IN-ID   ¡ <EINGABE>
+ IN-ID   ¡ <IO>
 
  # AUSGABE-0
  OUT-ID  ¡ IN-ID
+
+ # RAM GEBAUTE EINHEIT 
+ EINHEIT ¡ ×: <IO> = BX-ALU-IO
 
 ###====================================|====================================###
 
@@ -250,20 +253,23 @@ WABEN-KATEGORIE Ð LINKENDWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <START-KENNUNG> 
+ EINHEIT ¡ ×: <IO> = BX-ALU-IO
+ EINHEIT ¡ :× = BX-ALU-ENDE
 
  # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ 
+ WABEN-BSK-RESET ¡ BXMKHTSTSS-ALU
 
  # AXIOM
- AXIOM ¡ 
- AXIOM ¡ 
+ AXIOM ¡ BX-PRINT-IO + BX-PRINT-ENDE ≠ * * ≠ ": <IO> :"
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡
+ LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# SYSCALL
+# SYSCALL : SCHRITT 2
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -300,14 +306,14 @@ WABEN-KATEGORIE Ð STARTWABE
 
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = <> 
- AXIOM ¡ ^ <TASTENCODE> = <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = , 
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ , + : ≠ ** ≠ ,: = BX-SYSCALL-START
+ AXIOM ¡ ^ : + , ≠ ** ≠ :, = BX-SYSCALL-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ ,: = BX-SYSCALL-START
+ GEBAUTE-EINHEIT ¡ :, = BX-SYSCALL-ENDE 
 
 ###====================================|====================================###
 
@@ -328,21 +334,22 @@ WABEN-KATEGORIE Ð SYSTEMWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <ANSCHLUSS> 
- EINHEIT ¡ <ANSCHLUSS>
+ GEBAUTE-EINHEIT ¡ ,: = BX-SYSCALL-START
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ <PROZESS-STOP>
+ WABEN-RESET ¡ BXMKHTST-SYSCALL
 
  # AXIOM
- AXIOM ¡ ≠
- AXIOM ¡ 
+ AXIOM ¡ BX-SYSCALL-START + <IO> ≠ * * ≠ ,: <IO> = BX-SYSCALL-IO
 
  # EINGABE-I
  IN-ID   ¡ <EINGABE>
 
  # AUSGABE-0
  OUT-ID  ¡ IN-ID
+
+ # EINHEIT
+ EINHEIT ¡ ,: <IO> = BX-SYSCALL-IO
 
 ###====================================|====================================###
 
@@ -363,20 +370,22 @@ WABEN-KATEGORIE Ð LINKENDWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <START-KENNUNG> 
+ EINHEIT ¡ ,: <IO> = BX-SYSCALL-IO
+ EINHEIT ¡ :, = BX-SYSCALL-ENDE 
 
  # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ 
+ WABEN-BSK-RESET ¡ BXMKHTSTSS-SYSCALL
 
- # AXIOM
- AXIOM ¡ 
- AXIOM ¡ 
+ AXIOM ¡ BX-SYSCALL-IO + BX-SYSCALL-ENDE ≠ * * ≠ ,: <IO> :,
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡
+ LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# ABI
+# ABI !
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 

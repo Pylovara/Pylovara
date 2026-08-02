@@ -1,16 +1,36 @@
 @kernel-nr: 10 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
  #           SENTIATOR = LOGIC DECISION CONTROL MANAGMENT SYSTEM             #
-###===========================WICHTIGER-HINWEIS=============================###
- # devnotiz : PIPEWABE GEBÄREN |  
- # - REX-Quittung prüfen & Pipeline entsperren  
+###===========================WICHTIGER-HINWEIS=============================### 
 ###===============================STARTPUNKT================================###
 
+WABEN-KATEGORIE Ð KOPFWABE
 
+ KOMPONENTE ¡ SENTIATOR
 
+ KOMPONENTEN-ID ¡ SE
 
+ BION-NR ¡ 10
 
+ BION-ID ¡ SE10
 
+ MASTER-ID ¡ MA46SU10
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 10 
+
+ BION-ID ¡ MK10
+
+ BSK ¡ SEMK
+
+ BION ¡ SE10MK10
+
+###====================================|====================================###
 
 
 
@@ -224,16 +244,15 @@ BION-EXTRAWABE-NICHT Ð LINKENDWABE
   
  ABSK ¡ SEK+SEHT-NICHT+SEST-NICHT+SEBK-NICHT+SECB-NICHT+SELD-NICHT
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = SENELT (SPÄTER)
- # SBSK SEW = SEK+SEHT-WENN+SEST-WENN+SEBK-WENN+SECB-WENN+SELD-WENN
- # SBSK SEN = SEK+SEHT-NICHT+SEST-NICHT+SEBK-NICHT+SECB-NICHT+SELD-NICHT
- # VBSK = 
- # RBSK = SEK
-###==##==###======#####====HERSTELLUNGSDATEN===#####======###==##==###
- #  DATUM = [09:50:23|So 29 Dez 2025] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####====ENDPUNKT SENTIATOR==#####======###==##==###
+
+
+
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+ # MASTERWORT = 
+ # BION-ID-PFAD  → 
+ # BION-ID-VPFAD → 
+ # BION-ID-RPFAD → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

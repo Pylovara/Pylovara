@@ -971,7 +971,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
-# EINGABE !
+# EINGABE : SCHRITT 2
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -1008,14 +1008,14 @@ WABEN-KATEGORIE Ð STARTWABE
 
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = <> 
- AXIOM ¡ ^ <TASTENCODE> = <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = ¥ 
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ ¥ + : ≠ ** ≠ ¥: = BX-EINGABE-START
+ AXIOM ¡ ^ : + ¥ ≠ ** ≠ :¥ = BX-EINGABE-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ ¥: = BX-EINGABE-START 
+ GEBAUTE-EINHEIT ¡ :¥ = BX-EINGABE-ENDE
 
 ###====================================|====================================###
 
@@ -1036,21 +1036,22 @@ WABEN-KATEGORIE Ð SYSTEMWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <ANSCHLUSS> 
- EINHEIT ¡ <ANSCHLUSS>
+ EINHEIT ¡ ¥: = BX-EINGABE-START
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ <PROZESS-STOP>
+ WABEN-RESET ¡ BXMKHTST-EINGABE
 
  # AXIOM
- AXIOM ¡ ≠
- AXIOM ¡ 
+ AXIOM ¡ BX-EINGABE-START + <IO> ≠ * * ≠ ¥: <IO> = BX-EINGABE-IO
 
  # EINGABE-I
- IN-ID   ¡ <EINGABE>
+ IN-ID   ¡ <IO>
 
  # AUSGABE-0
  OUT-ID  ¡ IN-ID
+
+ # EINHEIT 
+ EINHEIT ¡ ¥: <IO> = BX-EINGABE-IO
 
 ###====================================|====================================###
 
@@ -1071,17 +1072,20 @@ WABEN-KATEGORIE Ð LINKENDWABE
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <START-KENNUNG> 
+ EINHEIT ¡ ¥: <IO> = BX-EINGABE-IO 
+ EINHEIT ¡ :¥ = BX-EINGABE-ENDE
 
  # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ 
+ WABEN-BSK-RESET ¡ BXMKHTSTSS-EINGABE
 
  # AXIOM
- AXIOM ¡ 
- AXIOM ¡ 
+ AXIOM ¡ BX-EINGABE-IO + BX-EINGABE-ENDE ≠ * * ≠ ¥: <IO> :¥
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
+ AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
 
  # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡
+ LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
+ LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
 
 ###====================================|====================================###
 # PFAD

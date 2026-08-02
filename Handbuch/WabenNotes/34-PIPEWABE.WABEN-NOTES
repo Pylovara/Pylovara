@@ -3,7 +3,7 @@
 ###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
 ###===============================PIPEMWABE=================================###
 
-WABEN-KATEGORIE Ð PIPEMWABE 
+WABEN-KATEGORIE Ð PIPEWABE 
 
  PROGRAMM ¡ <NAME>
 
@@ -66,16 +66,52 @@ WABEN-KATEGORIE Ð PIPEMWABE
  AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
  AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
 
- # AXIOM LOGIK - ENTSCHEIDUNGS-GATTER
- AXIOM ¡ REX PROZESS FINISH + <SEMK>-JA   ≠ * * ≠ ¶  <PIPE-PASS>
- AXIOM ¡ REX PROZESS FINISH + <SEMK>-NEIN ≠ * * ≠ ¶¶ <PIPE-HOLD>
+ # AXIOM SIGNAL
+ AXIOM ¡ SIGNAL-NUMMER ≠ ** ≠ <ZAHL>
+ AXIOM ¡ 01        DATENKANAL: <REMK>
+ AXIOM ¡ 02        DATENKANAL: <REMK>
+ AXIOM ¡ 03        DATENKANAL: <REMK>
+ AXIOM ¡ 04        DATENKANAL: <REMK>
+ AXIOM ¡ 05        DATENKANAL: <REMK>
+ AXIOM ¡ 06        DATENKANAL: <REMK>
+ AXIOM ¡ 07        DATENKANAL: <REMK>
+ AXIOM ¡ 08        DATENKANAL: <REMK>
+ AXIOM ¡ 09        DATENKANAL: <REMK>
+ AXIOM ¡ 10        DATENKANAL: <REMK>
+ AXIOM ¡ 11        DATENKANAL: <REMK>
+ AXIOM ¡ 12        DATENKANAL: <REMK>
+ AXIOM ¡ 13        DATENKANAL: <REMK>
+ AXIOM ¡ 14        DATENKANAL: <REMK>
+ AXIOM ¡ 15        DATENKANAL: <REMK>
+ AXIOM ¡ 16        DATENKANAL: <REMK>
+ AXIOM ¡ 17        DATENKANAL: <REMK>
+ AXIOM ¡ 18        DATENKANAL: <REMK>
+ AXIOM ¡ 19        DATENKANAL: <REMK>
+ AXIOM ¡ 20        DATENKANAL: <REMK>
+
+
+
+
+!!!
+
+
+
+
+
+ # AXIOM LOGIK JA | ENTSCHEIDUNGS-GATTER | WEITER IM KONTEXT
+-AXIOM ¡ REX PROZESS FINISH + <SEMK>-JA   ≠ * * ≠ ¶  <PIPE-WEITER>
+
+ # AXIOM LOGIK NEIN | ENTSCHEIDUNGS-GATTER | FÜR OPERATION
+-AXIOM ¡ REX PROZESS FINISH + <SEMK>-NEIN ≠ * * ≠ ¶¶ <PIPE-HALTEN>
 
  # PIPE-IN (ABFRAGE VOM FERTIGEN REX PROZESSEN & SENTIATOR)
  PIPE-IN  ¡ <REMK> + <SEMK>
 
- # PIPE-OUT (RELAY ZUM NÄCHSTEN PIPELINE SCHRITT)
- PIPE-0   ¡ <PIPE-PASSIEREN>  ≠ WEITER-STREAMEM
- PIPE-0   ¡ <PIPE-HALTEN>     ≠ BRANCH-ODER-HALT
+ # PIPE-OUT JA | (RELAY ZUM NÄCHSTEN PIPELINE SCHRITT)
+-PIPE-0UT   ¡ <PIPE-PASSIEREN>  ≠ WEITER-STREAMEM
+
+ # PIPE-OUT NEIN | (RELAY ZUM NÄCHSTEN PIPELINE SCHRITT)
+-PIPE-0UT   ¡ <PIPE-HALTEN>     ≠ HALTEN-ODER-STOP
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
@@ -86,58 +122,6 @@ WABEN-KATEGORIE Ð PIPEMWABE
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
-
-¢!
-# Beispiel Schaltung (inspirationsschablone|kein echter inhalt)
-
-»—[': exec <SPIEL> :']
- ↓  »—[": intelarc :"]«
- ↓   ¬· »—[": prozess gpu-core :"]
- ↓   ↓   ¶ ¬· »—[": run ast intelarc.gpu-core :"]«
- ↓   ↓         ¶ ¬· »—[": run intelarc.gpu-lcore :"]«
- ↓   ↓               ¶ ¬· »—[": run intelarc.gpu-vcore :"]«
- ↓   ↓                     ¶ ¬· »—[": run intelarc.gpu-mcore :"]«
- ↓   ↓                           ¶ ¬· »—[": run intelarc.gpu-fcore :"]«
- ↓   ↓
- ↓   ¶¶ ¬· »[": debugging log to /Pylovara/ :"|{WATT|200.00}]«
- ↓   ↓
- ↓   ¶ ¬·· »—[': exec /Pylovara/System/Module/uefi.boot-kernel :']«
- ↓          ¶ ¬·· »[': run /SPI/Runtime Service :']
- ↓
- ↓          ¬·· »—[': exec /Pylovara/System/Module/asm.compiler-kernel :']«
- ↓               ¶ ¬··¤ [': :']
- ↓    
- ↓          ¬·· »—[': exec /Pylovara/System/Module/intel_arc_gpu.treiber-needle :']«
- ↓               ¶ ¬··¤ [': :']
- ↓    
- ↓          ¬·· »—[': exec /Pylovara/System/Module/direcx12.treiber-needle :']«
- ↓               ¶ ¬··¤ [': :']
- ↓    
- ↓          ¬·· »—[': exec /Pylovara/System/Module/vs-studio.treiber-needle :']«
- ↓               ¶ ¬··¤ [': :']
- ↓    
- ↓          ¬·· »—[': exec /Pylovara/System/Module/realtak.treiber-needle :']«
- ↓               ¶ ¬··¤ [': :']
- ↓    
- ↓          ¬·· »—[': exec /Pylovara/System/Module/usb.system-kernel :']«
- ↓               ¶ ¬··¤ [': :']
- ↓
- ↓          ¬·· »—[': exec /Pylovara/System/Module/monitor.system-kernel :']«
- ↓               ¶ ¬··¤ [': :']
- ↓
- ↓          ¬·· »—[': exec /Pylovara/System/Module/maus.system-kernel :']«
- ↓               ¶ ¬··¤ [': :']
- ↓
- ↓          ¬·· »—[': exec /Pylovara/System/Module/tastatur.system-kernel :']«
- ↓               ¶ ¬··¤ [': :']
- ↓
- ↓          ¬·· »—[': exec /Pylovara/System/Module/firefox.system-kernel :']«
- ↓               ¶ ¬··¤ [': :']
- ↓
- ¶ ¬··¤ »[': compositor :']«
- ↓
- ¶¶ ¬··¤ »[": error bildschirm :"]«
- 
-!¢
+ GENERALSCHABLONE : GEZEICHNET DURCH : -
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

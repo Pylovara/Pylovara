@@ -52,6 +52,32 @@ WABEN-KATEGORIE Ð HAUPTWABE
  BION ¡ NI11MK11HT23
 
 ###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ INJEKTOR
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 23
+
+ BION-ID ¡ ST23
+
+ BSK ¡ NIMKHTST-INJEKTOR
+
+ BION ¡ NI11MK11HT23ST23
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ÷ 
+ AXIOM ¡ ^ ÷ ≠ * ≠ ÷ = NI-INJEKTOR-START
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ÷ = NI-INJEKTOR-START 
+
+###====================================|====================================###
 INJEKTOR : WEITER
 ###====================================|====================================###
 ###================================EXTRAKTOR================================###
@@ -70,6 +96,32 @@ WABEN-KATEGORIE Ð HAUPTWABE
  BSK ¡ NIMKHT-EXTRAKTOR
 
  BION ¡ NI11MK11HT24
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 24
+
+ BION-ID ¡ ST24
+
+ BSK ¡ NIMKHTST-EXTRAKTOR
+
+ BION ¡ NI11MK11HT24ST24
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ±
+ AXIOM ¡ ^ ± ≠ * ≠ ± = NI-EXTRAKTOR-START
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ± = NI-EXTRAKTOR-START 
 
 ###====================================|====================================###
 EXTRAKTOR : WEITER

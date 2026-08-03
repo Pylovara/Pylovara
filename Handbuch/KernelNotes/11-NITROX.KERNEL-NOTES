@@ -1,185 +1,26 @@
-@kernel-nr: 11 Ð NITROX | STATUS = RELEASE V2.0
-#  LEXIKON NAVIGATION TERMINAL = kernel <11> == # == ##### === ###
-###==##==###======#####======K11 NITROX=======#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #               NITROX = VERSORGUNGSMANAGER SERVICE SYSTEM          #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
-###==##==###======#####====STARTPUNKT NITROX===#####======###==##==###
+@kernel-nr: 10 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #               NITROX = CACHE IN AND OUT PUT SERVICE SYSTEM                #
+###===========================WICHTIGER-HINWEIS=============================### 
+ # NITROX SPEIST CACHE DATEN IN DAS FEED SYSTEM UND DIENT ALS IN UND OUTPUT  #
+ # KANAL DER DIE DATEN ENTWEDER ABGREIFT ODER HINZUGIBT, IM ISTZUSTAND.      #
+###===============================STARTPUNKT================================###
 
-BION Ð NITROX 
+KAFFE UND ZIGARETTE .... DANN WEITER 
 
- MORPHIC-ID ¡ NI
 
- BION-ID ¡ NI
 
- MASK ¡ MASU-NITROX
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-BION-KERNWABE Ð NITROX
 
- MORPHIC-ID ¡ NIK
 
- BION-ID ¡ NI11
 
- AXIOM ¡ NIK = <NIK>
-
- ABSK ¡ NIK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-# HT01: EXTRAWABE-INJEKTOR
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-INJEKTOR
-
- MORPHIC-ID ¡ NIHT-INJEKTOR
-
- BION-ID ¡ NI11HT01
-
- AXIOM ¡ NIHT-INJEKTOR = NIHT-INJEKTOR
-
- ABSK ¡ NIK+NIHT-INJEKTOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-STARTWABE Ð INJEKTOR-START
-
- MORPHIC-ID ¡ NIST-INJEKTOR
-
- BION-ID ¡ NI11HT01ST01
-
- AXIOM ¡ NITS-INJEKTOR = ©
-
- ABSK ¡ NITK+NIHT-INJEKTOR+NITS-INJEKTOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-BLOCKWABE Ð INJEKTOR-BLOCK
-
- MORPHIC-ID ¡ NITB-INJEKTOR
-
- BION-ID ¡ NI11HT01ST01BK01
-
- AXIOM ¡ NITB-INJEKTOR = ±
-
- ABSK ¡ NITK+NIHT-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT:
- AXIOM ¡ ^        1SYNC:
- AXIOM ¡ ^        2KOPF:
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD: ± [(<NR>)—Ø ¥ <IO> ¥ Ø]
- AXIOM ¡ ^  3ZYKLUS-IN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
-
- BRÜCKE-IN ¡ POIK+POIX-ON-PIPE
-
- BRÜCKE-OUT ¡ POIK-POIX-OFF-PIPE
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-LINKENDWABE Ð INJEKTOR-LINKEND
-
- MORPHIC-ID ¡ NITL-INJEKTOR
-
- BION-ID ¡ NI11HT01ST01BK01LK01
-
- AXIOM ¡ NITL-INJEKTOR = ±
-
- ABSK ¡ NITK+NIHT-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR+NITL-INJEKTOR
-
- LINK ¡ NITK
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-# HT02: EXTRAWABE-EXTRAKTOR
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-EXTRAKTOR
-
- MORPHIC-ID ¡ NIHT-EXTRAKTOR
-
- BION-ID ¡ NI11HT02
-
- AXIOM ¡ NIHT-EXTRAKTOR = NIHT-EXTRAKTOR
-
- ABSK ¡ NITK+NIHT-EXTRAKTOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-STARTWABE Ð EXTRAKTOR-START
-
- MORPHIC-ID ¡ NITS-EXTRAKTOR
-
- BION-ID ¡ NI11HT02ST01
-
- AXIOM ¡ NITS-EXTRAKTOR = ÷
-
- ABSK ¡ NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-BLOCKWABE Ð EXTRAKTOR-BLOCK
-
- MORPHIC-ID ¡ NITB-EXTRAKTOR
-
- BION-ID ¡ NI11HT02ST01BK01
-
- AXIOM ¡ NITB-EXTRAKTOR = ÷
-
- ABSK ¡ NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT:
- AXIOM ¡ ^        1SYNC:
- AXIOM ¡ ^        2KOPF: ÷ [Ø ¥ <IO> ¥ Ø—(<NR>)]
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD: 
- AXIOM ¡ ^  3ZYKLUS-IN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
-
- BRÜCKE-IN ¡ POIK+POIX-OFF-PIPE
-
- BRÜCKE-OUT ¡ POIK+POIX-ON-PIPE
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-LINKENDWABE Ð EXTRAKTOR-LINKEND
-
- MORPHIC-ID ¡ NITL-EXTRAKTOR
-
- BION-ID ¡ NI11HT02ST01BK01LK01
-
- AXIOM ¡ NITL-EXTRAKTOR = ÷
-
- ABSK ¡ NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR+NITL-EXTRAKTOR
-
- LINK ¡ NITK
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = NITELT
- # SBSK = NITK+NIHT-INJEKTOR+NITS-INJEKTOR+NITB-INJEKTOR+NITL-INJEKTOR
- # SBSK = NITK+NIHT-EXTRAKTOR+NITS-EXTRAKTOR+NITB-EXTRAKTOR+NITL-EXTRAKTOR
- # VBSK = NITB-INJEKTOR
- # VBSK = NITB-EXTRAKTOR
- # RBSK = NITK
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [02:50:12|Do 29 Jan 2025] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####=====ENDPUNKT NITROX====#####======###==##==###
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = 
+ # BION-ID-PFAD (SE-JA)   → SE10+MK10+HT21+ST21+PP01+LD34
+ # BION-ID-PFAD (SE-NEIN) → SE10+MK10+HT22+ST22+PP02+LD35
+ # BION-ID-VPFAD → SE10MK10HT21HT22ST21ST22PP01PP02LD34LD35
+ # BION-ID-RPFAD → SE10+MK10
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

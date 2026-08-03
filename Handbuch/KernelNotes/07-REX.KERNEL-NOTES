@@ -143,12 +143,6 @@ WABEN-KATEGORIE Ð LINKENDWABE
  # BEENDET VOR PROZESS
  WABEN-BSK-RESET ¡ RXMKHTSTCB-MANAGER
 
- # AXIOM
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHT-ON-PIPE
-
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð LINKENDWABE 
@@ -867,7 +861,7 @@ WABEN-KATEGORIE Ð STATUSWABE
  LINK-OUT ¡ PIMKHT-OFF-PIPE 
 
 ###====================================|====================================###
-###=====================KOMPONENTEN-GENERAL-SCHALTUNG================-------###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
  # MASTERWORT = 
  # BION-ID-PFAD (CB14 → LD08)  → RX07+MK07+HT08+ST08+CB14+LD08
  # BION-ID-PFAD (CB14 → LD09)  → RX07+MK07+HT08+ST08+CB14+LD09

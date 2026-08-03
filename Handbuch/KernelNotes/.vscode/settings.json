@@ -77,13 +77,15 @@
  { <-- 
     "blabla.blabla" ->>>:<<<---    20 ->>>,<<<-
     "blabla.blabla": "onWindowChange", <--
+                      ↑ ↑     ↑
     "blabla.blabla": "Ember High Contrast (green)",
+                                          ↑↑↑↑↑↑↑
     "blabla.blabla": true, <--
     "blabla.blabla": ->>[80]<<--,
     
     "blabla.blabla": {
           ->>>>>>> "(^[#=]{3,}.*$)": { <---------------
-        }, <--
+        }, <--     ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
 
         }, <---
 
@@ -94,8 +96,7 @@
         }
     } <--
 } <--
-
-            
+     
  _   _______
 | | / / ___/
 | |/ (__  ) 

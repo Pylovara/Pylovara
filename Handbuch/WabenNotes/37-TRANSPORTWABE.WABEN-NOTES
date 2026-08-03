@@ -1,54 +1,47 @@
-@waben-nr: 35 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 36 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
-###===============================ANDOCKWABE================================###
+###=============================TRANSPORTWABE==============================###
 
-WABEN-KATEGORIE Ð ANDOCKWABE 
+WABEN-KATEGORIE Ð TRANSPORTWABE 
 
  PROGRAMM ¡ <NAME>
 
- WABEN-ID ¡ AD
+ WABEN-ID ¡ TP
 
  BION-NR ¡ <NR> 
 
- BION-ID ¡ AD<BION-NR>
+ BION-ID ¡ TP<BION-NR>
 
  BSK ¡ <ABLAUF>
 
  BION ¡ <BION-ABLAUF>
 
  PROGRAMMIERUNGSBEREICH ↓
-
  # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ <ANSCHLUSS> 
- EINHEIT ¡ <ANSCHLUSS>
+ EINHEIT ¡ <EINHEIT>
+ EINHEIT ¡ <EINHEIT>
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ <PROZESS-STOP>
+ WABEN-RESET ¡ <BSK>
 
- # HOLE KOMPONENTE
- LINK ¡ FEMK
- LINK ¡ PIMK 
+ # DATENSATZ
+ DATEN-IO ¡ 
 
- # DATEN HOLEN 
- LINK-IN ¡ FEMKHT # GLEICH  | MUSS NOCH EINGEGLIEDERT WERDEN 
-
- # AXIOM 
+ # AXIOM
  AXIOM ¡ 
- AXIOM ¡
- 
+ AXIOM ¡ 
+
  # EINHEIT 
  EINHEIT ¡ 
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
- NI11 = AD01
- FE12 = AD02
+ FE12 = TP14
 
 ###==============================INFORMATIONEN==============================###
 
- 
-
+ HOLT DEN DATENSATZ 
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 

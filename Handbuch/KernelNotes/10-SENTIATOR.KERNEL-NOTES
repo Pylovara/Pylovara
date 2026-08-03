@@ -32,7 +32,7 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
 
  BION ¡ SE10MK10
 ###====================================|====================================###
-# SENTIATOR : ↓ JA
+###===========================SENTIATOR WEITERLEITUNG=======================###
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -173,7 +173,7 @@ WABEN-KATEGORIE Ð PIPEWABE
  PIPE-0UT ¡ DATENKANAL OK ≠ DATENKANAL OK
 
  # AXIOM SIGNAL LOGIK JA | ENTSCHEIDUNGS-GATTER | WEITER IM KONTEXT
- AXIOM ¡ DATENKANAL OK ≠ SE-JA-START ≠ * ≠  ¶ = SE-JA-OK
+ AXIOM ¡ DATENKANAL OK ≠ SE-JA-START = SE-JA-OK ≠ ¶ = SE-JA-OK
 
  # EINHEIT
  EINHEIT ¡ ¶ = SE-JA-OK
@@ -210,7 +210,7 @@ WABEN-KATEGORIE Ð LINKENDWABE
  LINK-OUT ¡ RXMKHT-MANAGER
 
 ###====================================|====================================###
-# SENTIATOR : ↓ NEIN 
+###===================SENTIATOR DATENKANAL FEHLERBEHANDLUNG=================###
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
@@ -259,17 +259,17 @@ WABEN-KATEGORIE Ð STARTWABE
 
 WABEN-KATEGORIE Ð PIPEWABE 
 
- PROGRAMM ¡ <NAME>
+ PROGRAMM ¡ NEIN
 
  WABEN-ID ¡ PP
 
- BION-NR ¡ <NR>
+ BION-NR ¡ 02
 
- BION-ID ¡ PP<NR>
+ BION-ID ¡ PP02
 
- BSK ¡ <BSK>-<PROGRAMM>
+ BSK ¡ SEMKHTSTPP-NEIN
 
- BION ¡ <BION-ID-KETTE>
+ BION ¡ SE10MK10HT22ST22
 
  PROGRAMMIERUNGSBEREICH ↓
 

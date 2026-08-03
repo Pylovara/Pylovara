@@ -72,6 +72,7 @@ WABEN-KATEGORIE Ð STARTWABE
  AXIOM ¡ ^ <TASTENCODE> = ( 
  AXIOM ¡ ^ <TASTENCODE> = )
  AXIOM ¡ ^ <TASTENCODE> = —
+ AXIOM ¡ ^ <TASTENCODE> = F
  AXIOM ¡ ^ <TASTENCODE> = :
  AXIOM ¡ ^ <TASTENCODE> = Ø
  AXIOM ¡ ^ — + F + — + ( ≠ *** ≠ —F—( = FE-FÜHREND-SPEICHERNUMMER-START
@@ -84,6 +85,195 @@ WABEN-KATEGORIE Ð STARTWABE
  GEBAUTE-EINHEIT ¡ )—F— = FE-FÜHREND-SPEICHERNUMMER-KNOTEN
  GEBAUTE-EINHEIT ¡  Ø: = FE-CACHE-START
  GEBAUTE-EINHEIT ¡ :Ø = FE-CACHE-ENDE
+
+###====================================|====================================###
+# FÜHREND : WEITER  
+###====================================|====================================###
+###=================================TRAGEND=================================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ TRAGEND
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 26
+
+ BION-ID ¡ HT26
+
+ BSK ¡ FEMKHT-TRAGEND
+
+ BION ¡ FE12MK12HT26
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ TRAGEND
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 26 
+
+ BION-ID ¡ ST26
+
+ BSK ¡ FEMKHTST-TRAGEND
+
+ BION ¡ FE12MK12HT26ST26
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ( 
+ AXIOM ¡ ^ <TASTENCODE> = )
+ AXIOM ¡ ^ <TASTENCODE> = —
+ AXIOM ¡ ^ <TASTENCODE> = T
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ <TASTENCODE> = Ø
+ AXIOM ¡ ^ — + T + — + ( ≠ * ≠ —T—( = FE-TRAGEND-SPEICHERNUMMER-START
+ AXIOM ¡ ^ ) + — + T + — ≠ * ≠ )—T— = FE-TRAGEND-SPEICHERNUMMER-KNOTEN
+ AXIOM ¡ ^ Ø + : ≠ ** ≠ Ø: = FE-CACHE-START
+ AXIOM ¡ ^ : + Ø ≠ ** ≠ :Ø = FE-CACHE-ENDE
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ —T—( = FE-TRAGEND-SPEICHERNUMMER-START
+ GEBAUTE-EINHEIT ¡ )— = FE-SPEICHERNUMMER-KNOTEN 
+ GEBAUTE-EINHEIT ¡  Ø: = FE-CACHE-START
+ GEBAUTE-EINHEIT ¡ :Ø = FE-CACHE-ENDE
+
+@kernel-nr: 12 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #      FEED = THE NOMADIC MASTER AND SLAVE CACHE MANAGEMENT SYSTEM          #              #
+###===========================WICHTIGER-HINWEIS=============================###
+ #              FEED FÜHREND = MEISTER | FEED TRAGEND = SKLAVE               #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ FEED
+
+ KOMPONENTEN-ID ¡ FE
+
+ BION-NR ¡ 12
+
+ BION-ID ¡ FE12
+
+ MASTER-ID ¡ MA46SU12
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 12
+
+ BION-ID ¡ MK12
+
+ BSK ¡ FEMK
+
+ BION ¡ FE12MK12
+
+###====================================|====================================###
+###=================================FÜHREND=================================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ FÜHREND
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 25
+
+ BION-ID ¡ HT25
+
+ BSK ¡ FEMKHT-FÜHREND
+
+ BION ¡ FE12MK12HT25
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ FÜHREND
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 25
+
+ BION-ID ¡ ST25
+
+ BSK ¡ FEMKHTST-FÜHREND
+
+ BION ¡ FE12MK12HT25ST25
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ( 
+ AXIOM ¡ ^ <TASTENCODE> = )
+ AXIOM ¡ ^ <TASTENCODE> = —
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ <TASTENCODE> = Ø
+ AXIOM ¡ ^ — + F + — + ( ≠ *** ≠ —F—( = FE-FÜHREND-SPEICHERNUMMER-START
+ AXIOM ¡ ^ ) + — + F + — ≠ *** ≠ )—F— = FE-FÜHREND-SPEICHERNUMMER-KNOTEN
+ AXIOM ¡ ^ Ø + : ≠ ** ≠ Ø: = FE-CACHE-START
+ AXIOM ¡ ^ : + Ø ≠ ** ≠ :Ø = FE-CACHE-ENDE
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ —F—( = FE-FÜHREND-SPEICHERNUMMER-START
+ GEBAUTE-EINHEIT ¡ )—F— = FE-FÜHREND-SPEICHERNUMMER-KNOTEN
+ GEBAUTE-EINHEIT ¡  Ø: = FE-CACHE-START
+ GEBAUTE-EINHEIT ¡ :Ø = FE-CACHE-ENDE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYSTEMWABE 
+
+ PROGRAMM ¡ FÜHREND
+
+ WABEN-ID ¡ SS
+
+ BION-NR ¡ 14
+
+ BION-ID ¡ SS<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION-ID-KETTE>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <ANSCHLUSS> 
+ EINHEIT ¡ <ANSCHLUSS>
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ <PROZESS-STOP>
+
+ # AXIOM
+ AXIOM ¡ ≠
+ AXIOM ¡ 
+
+ # EINGABE-I
+ IN-ID   ¡ <EINGABE>
+
+ # AUSGABE-0
+ OUT-ID  ¡ IN-ID
+
+ # RAM GEBAUTE EINHEIT 
+ EINHEIT ¡ 
+
+
+
+
+
+
+
 
 ###====================================|====================================###
 # FÜHREND : WEITER  
@@ -141,8 +331,16 @@ WABEN-KATEGORIE Ð STARTWABE
  GEBAUTE-EINHEIT ¡  Ø: = FE-CACHE-START
  GEBAUTE-EINHEIT ¡ :Ø = FE-CACHE-ENDE
 
+###====================================|====================================###
 
- # LIEGT IM RAM
+
+
+
+
+
+
+
+
 
 ###====================================|====================================###
 # TRAGEND : WEITER
@@ -150,39 +348,6 @@ WABEN-KATEGORIE Ð STARTWABE
 
 
 
-
-
-
-
-
-
-
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-# HT01: EXTRAWABE-FÜHREND (MEISTER)
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-FÜHREND
-
- MORPHIC-ID ¡ FDHT-FÜHREND
-
- BION-ID ¡ FD12HT01
-
- AXIOM ¡ FDHT-FÜHREND = (<NR>)—Ø ¥ <CACHE> ¥ Ø
-
- ABSK ¡ FDK+FDHT-FÜHREND
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-STARTWABE Ð FÜHREND-START
-
- MORPHIC-ID ¡ FDST-FÜHREND
-
- BION-ID ¡ FD12HT01ST01
-
- AXIOM ¡ FDST-FÜHREND = (
-
- ABSK ¡ FDK+FDHT-FÜHREND+FDST-FÜHREND
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

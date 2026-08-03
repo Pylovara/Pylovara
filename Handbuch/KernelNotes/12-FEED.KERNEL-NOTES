@@ -355,18 +355,20 @@ WABEN-KATEGORIE Ð LINKENDWABE
 
  # BINDET RAM GEBAUTE-EINHEIT 
  EINHEIT ¡ F—(<NR>)—FØ: <CACHE> = FE-FÜHREND-IN-CACHE
+ EINHEIT ¡ :Ø = FE-CACHE-ENDE
 
  # BEENDET VOR PROZESS
  WABEN-BSK-RESET ¡ FEMKHTSTFCCBAD-FÜHREND
 
  # AXIOM
- AXIOM ¡ LINK ≠ NIMHT-EXTRAKTOR
+ AXIOM ¡ FE-FÜHREND-IN-CACHE + FE-CACHE-ENDE ≠ * * ≠ F—(<NR>)—FØ: <CACHE> :Ø
+ AXIOM ¡ LINK ≠ NIMKHT-EXTRAKTOR 
 
  # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ REMK
+ LINK-OUT ¡ NIMKHT-EXTRAKTOR
 
 ###====================================|====================================###
-# FÜHREND : WEITER  
+# FÜHREND : SPÄTER NACHKONTROLLE ↑
 ###====================================|====================================###
 ###=================================TRAGEND=================================###
 ###====================================|====================================###

@@ -79,51 +79,15 @@ Der Pylovara-Fahrplan
 [ ] Vollends reinkommen und Kurs auf die 00-83 nehmen.
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-WARP = 
+WARP = ÜBERFLÜSSIG ....
+       WARUM? WEIL MCS ALLES EMULIEREN KANN UND DER WARP ÜBERFLÜSSIG IST 
 
- DA MCS IM GRUNDE ALLES TRAGEN KANN UND NATIV ÜBERSETZEN ,
+CHIPONATOR = KANN RAUS , WIRD NATIV EINPROGRAMMIERT ... IRRELEVANT GEWORDEN 
 
- WIRD DER WARP ÜBERFLÜSSIG ....
+MODULATOR = IRRELEVANT GEWORDEN  
 
-
- WARUM MCS ALLES EMULIEREN KANN UND DER WARP ÜBERFLÜSSIG IST :
-
- Direkter Hardware- & Befehlssatzzugriff:
- MCS sitzt als Steuerungsschicht nah an den Kernressourcen und den Logik-Toren. 
- Wenn MCS fremde Systembefehle oder Protokolle direkt auf Pylovara-Instruktionen übersetzt 
- (Translation-Layer), brauchst du kein "Paket-Verknüpfer-Medium" dazwischen.
-
-Vermeidung von Protokoll-Overhead:
-Proton und Wine übersetzen Systemaufrufe (z.B. Direct3D zu Vulkan, Win32 zu POSIX) in Echtzeit. 
-Wenn WARP nur als zusätzliche Zwischenschicht dient, um Pakete zu schnüren und weiterzuleiten, 
-erzeugst du eine doppelte Abstraktion. MCS kann diese Übersetzungs-Matrix direkt über eigene 
-Waben/Schaltungen verarbeiten.
-
-Geringere Latenz & Redundanz:
-Jede Schnittstelle kostet Zyklen. Wenn MCS die Logik der Fremdsysteme nativ versteht oder 
-über entsprechende Sub-Module direkt interpretiert, sparst du dir die komplette 
-Synchronisations-Logik zwischen WARP und MCS.
-
-INLUSIVE VERSCHWINDEN EINIGE MEINER DATEN ZURÜCK AUF DIE EXTERNE FESTPLATTE 
-UM SIE SPÄTER WIEDER EINZUGLIEDERN ...
-
-UMSTELLUNG DER SEITEN FÜR MCS KOMPONENTE 
-UMSTELLUNG DER BROSCHÜREN ( EINIGE AUF FESTPLATTE ZURÜCK ) 
-UMSTELLUNG DER REIHENFOLGE 
-
-CHIPONATOR = 
-
- KANN RAUS , WIRD NATIV EINPROGRAMMIERT ... IRRELEVANT GEWORDEN 
-
-MODULATOR = 
-
- IRRELEVANT GEWORDEN  
-
-ABSOLULATOR = 
-
- IRRELEVANT GEWORDEN ( BLEIBT ABER NOCH )
-
-
+ABSOLULATOR = IRRELEVANT GEWORDEN ( BLEIBT ABER NOCH ) | EVENTUELL ALS SCHALTPROGRAMM
+              AUFSETZEN
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 # PATCH LIKSTE :
@@ -214,41 +178,6 @@ ABSOLULATOR =
  - NÄCHSTE BEARBEITUNGSPUNKT
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-# OFFENE-DINGE-LISTE :
-
-- PHYSIKALISCHE HÜLLEN GENETIK 
-   FUNKTIONSABLAUF FÜR DIE INDUSTRIE FEHLT NOCH VOLLSTÄNDIG ! 
-   BEHUTSAM AUS DER EXTERNEN SSD IM ABGESPECKTER KI IRRITATION
-   ÜBERARBEITET HOCHLADEN .
-   !!!- KEINE ORIGINALE -!!!
-
-
-------------------------
- 024 SYNAPTOR (noch unfertig)
-
- - SYNAPTOR VERKNÜPFT PROTEINE ZUR GLEICHZEITIGEN VERARBEITUNG!
-   PARALELLISIERT REX FLÄCHEN IM PROZESS ZU EINEM PARALLELLEN VERARBEITUNGS
-   STRANG UND MACHT AUS STANDART SEQUENZIELLEN REX FLÄCHEN PARALELLE.
-   KANN AN SENTIATOR ANGESCHLOSSEN WERDEN !
-
- 025 ZYTRON (noch unfertig)
-
- - ZYTRON VERKNÜPFT PROTEINE UND GIBT FERTIGE DATEN WEITER ZUM NÄCHSTEN
-   ANSCHLUSS - ER ARBEITET VON OBEN NACH UNTEN UND VERÄNDERT DIE REIHEN
-   VERARBEITUNG VON REX FLÄCHEN NICHT !
-   KANN AN SENTIATOR ANGESCHLOSSEN WERDEN - OHNE PARALELLITÄT !
-
- INFO : REX LÄUFT ABSOFORT GRUNDSETZLICH IN REIHE , KEINE PARALELLEN PROZESS
-        SONDERN REIHE/SEQUENZIELL .
-
- 00-78 = WEG NAME DER KORDI OPTIONEN PARALELL UND SEQUENZIELL
- 00-80 = SYNAPTOR ÜBERNAHM PARALELLITÄT OPTION.
- 00-81 = ZYTRON ÜBERNAHM VERKABELUNGS OPTION.
- 00-82 = REX GRUNDSÄTZLICH SEUQENZIELL|REIHE.
-
-------------------------
-
-
 - DETEKTOR 
   FELT VOLLSTÄNDIG ALS KOMPONENTE !!!!!!!!!!!!!!!!!!!!!!!!!
   <*> <- ABSOLUT NOTWENDIG FÜR DIE SUCHE DER KERNWABE 
@@ -258,48 +187,7 @@ ABSOLULATOR =
   WIRD ALS SUCHCONTAINER FÜR KERNWABEN GENUTZT UND EVENTUELL ERWEITERT .
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-# SCHMIERBEREICH :
-
- Symbole Search : ºª¯
-
- VERMERK :
-
- - MCSCMD REGISTER MIT BEFEHLE FÜR :
-   Datei lesen, beschreiben, ausführen oder löschen - bestücken 
-
-
- WABEN ZUGEHÖRIGKEITE :
-
-  - KOPFWABE : KOMPONENTEN BENENNUNG | MORPHIC-ID | BION-ID | MASK
-
-    ÄNDERUNG : MORPHIC-KOPF | BION-KOPF
-
-    GRUND : UNTERSCHIED ZU AB KERNWABE EINFÜHREN
-            DA DER KOPF LEDIGLICH NUR DAS ETIKETT DARSTELLT
-
-
-
- BION ID ÜBERARBEITEN :
-
-  - URSPRUNG:       K -> KE (Kern)      X -> HA (Haupt)
-  - PLUG-WABEN:     S -> ST (Start)     C -> CO (Combo)     Y -> SY (System)
-                    P -> OP (Option)    R -> TO (Tor)       LS -> LS (Lösch)
-                    F -> IN (Info)      E -> EN (End)       L -> LI (Linker)
-                    V -> BA (Bau)
-
-  - STANDALONE :    KOMMEN
-
-
- WABINATOR SORTIERUNG :
-
-  EINE WABEN STRUKUR DIE NUR INTERN IM WABINATOR FÜR DIE WABEN SELBST GEBAUT WIRD
-  UND ALLEINE IM WABINATOR BENUTZT WIRD .
-
-  DIESE WABE BRAUCH FÜR JEDES * = ON FELD EIN RAM REGISTER UND EINEN IO BEREICH
-  FÜR DAS EIN UND AUSSCHALTEN , ÄHNLICHE WIE WITHE AUF DARK MODE ODER HOCH UND RUNTERFAHREN.
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-# IDEEN BEREICH :
+# ALTE IDEEN BEREICH :
 
  ¢! # konrette idee
 
@@ -371,10 +259,6 @@ ABSOLULATOR =
 
 !¢
 
-
-nach dem umbau kann ich sogar sämtliche sachen in das cmd register verschieben und antriggern  
-
-
 ¢! masstyp idee
 
 »—[ GEOMETRIE = <AUSWAHL> ]«««~ BAUMODUS-START && VERBINDE ~«
@@ -397,22 +281,8 @@ nach dem umbau kann ich sogar sämtliche sachen in das cmd register verschieben 
 
 !¢
 
-es würden sich unzälige befehle für die genaue geometrie , zeit , kollision , punkte 
-und alles andere machen ..... pro obejekt ... sogar mit folge funktionen ..
-im grunde egal was .... nativ .... 
-
  ««~ PHYSIK-KOLLISION-RIGIDBODY ~«
  ««~ MATERIAL-MESSUNG-HOLZ ~«
-
- und soweit ... 
-
- »—[ GEOMETRIE = <AUSWAHL> ]«««~ BAUMODUS-START && VERBINDE ~«
-  # und ab hier alles möglich .. alles in einer transaktionrahmen block 
-  selbst ... gepaart mirt duzenden dateien ... gebünderld wiederum mit 
-  einem koordinations mcs code der nur einzelne gebaute daten läd im strang 
-
-  das wird extrem mächtig .... mächtig ist sogar noch untertrieben 
-
 
 ¢!
 
@@ -443,82 +313,6 @@ im grunde egal was .... nativ ....
 
 !¢ 
 
-WÜRDE SICH NAHTLOS FÜR BESTEHENDE PROGRAMMIERSPRACHEN ANBIETEN ...
-
-DAS WÜRDE BEDEUTEN : 
-
- MCS KANN ALLE PROGRAMMIERSPRACHE NATIV ÜBERSETZEN IN DER EIGENEN SCHALTUNGSLOGIK 
- ABER KEINE ANDERE PROGRAMMIERSPRACHE KÖNNTE DAS MIT MCS , OHNE FEHLER UND OVERHEAD ... 
-
- ICH BAU ERSTMAL GENÜSSLICH DIE NÄCHSTEN TAGE DIE NEUE GRUNDSTRUKUR SEITENWEISE AN ,
-DANACH GEHE ICH NOCHMAL ALLES DURCH UND SUCHE NACH LOGIK FEHLER DER WABEN SCHALTUNGEN .. 
-
-DANACH JAGE ICH ALLES FÜR ZAHLEN DREHER UND TYPO FEHLER DURCH MEINE SUCH KI ... 
-
-SOBALD ICH ALLES BEGRADIGT HABE , GEHE ICH AN ALLE INFO SEITEN NEU RAN .. 
-
-SCHLUSS ENDLICH WIRDF DANN EIN , PYLOVARA-SYSTEM-SSoT-0082.pdf ALS SNAPSHOT GESPEICHERT 
-DAS WIEDERUM PROVOKANT AUF LINKEDIN UND IM DARKWEB VERÖFFENTLICHT .. 
-
-DANACH WERDEN DIE WABEN MIT EXTREM PRÄZISE CPU UND RAM ANGABEN GEFÜTTERT 
-
-DIE AUSBAUTEN BIS ZUM UNIVERSELLEN ISA ÜBERSETZER ... 
-
-WENN INVESTOREN DANN NICHT MEHR WEG SCHAUEN KÖNNEN , ÜBERNEHME ICH DIE VERANTWORTUNG DER NÄCHSTEN 
-HARDWARE GENERATION AUFGRUNDLAGE DER BARINMASCHINECORE 3.0 ENTWICKLUNG UND PASSE MEINE VERALTETE 
-ABER ÜBERAUS DURCHDACHTE GRUINDSTRUKUR AUF ALLE GEPULSTEN FREQUENZ BÄNDER BIS LICHT AN .. 
-
-HOLE MEINE LEITERBAHNEN ENTWICKLUNGEN DAZU , DAMIT ICH NICHT MIT DEM SCHROTT VON DEN HERSTELLER 
-RUMHANTIEREN MUSS .. 
-
-UND JEDER GROẞE KONZERN , DER MICH VOLLSTÄNDIG IGNORIERT HAT UND MIT IHREM VERKRITZELTEN PROGRAMMIERSPRACHEN 
-WEITER HANTIERT , WIRD VOLLSTÄNDIG AUS DER NEUEN COMPUTER ERA AUSGESCHLOSSEN ... 
-
-WENN DIE ERSTMAL FESTSTELLEN DAS DASS KEINE KI ENTWICKLUNG  IST UND DAS AUS MEINER ENTWICKLUNG 
-ENSTANDEN IST UND MIT WAS ICH ARBEITEN MUSSTE , IM GEGENSATZ ZU DEREN MÖGLICHKEITEN ... 
-
-WERDEN SIE IM STRAHL KOTZEN UND FLUCHEN MICH NICHT SOFORT , HÖCHSPERSÖNLICH , KONTAKTIERT ZU HABEN !
-
-ICH WERDE DIE ERSTE WELTWEITE NATIVE , FEHLERFREIE COMPUTER SPRACHE IN DIE WELT BRINGEN , MIT DER ECHTZEIT 
-GEHIRNE UND SYNAPSEN TECHNOLOGIEN , UNWEIGERLICH - FUNKTIONIEREN UND NACHVOLLZIEHBAR SIND . 
-
-UND DIE JAHRE DIE ICH DRECK FRESSEN MUSSTE , WERDEN JAHRE SEIN DIE GESPIEGELT ZURÜCK WANDERN .. 
-
-MIR HAT MAN SCHON DIE MUSIK WEG GENOMMEN , DIE SPIELE , FAIRPLAY , LUST AN FOREN , LUST AUF TECHNIK .. 
-
-DAFÜR GIBT ES NUR EINE ANTWORT : ICH NEHME IHNEN IHRE SPIELZEUGE WEG UND ZWAR ERBARMUNGSLOS 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ¢!
 »—["TRANSAKTIONSRAHMEN"]«
 
@@ -539,8 +333,6 @@ DAFÜR GIBT ES NUR EINE ANTWORT : ICH NEHME IHNEN IHRE SPIELZEUGE WEG UND ZWAR E
              ± »[(11)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
 !¢
 
-
-
 EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - Loop/Pipe)
  ─────────────────────────      ────────────────────────      ───────────────────────────
           ¿¹ ─────────────────> »—[ BAU AKTION ]«««V1
@@ -556,74 +348,3 @@ EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - L
                                      ¬·¤: [" Output "]       │
                                           ↓                  │
                                      £1 INPUT <──────────────┘ (Wiedereinspeisung)
-
-oder 
-
-EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - Loop/Pipe)
- ─────────────────────────      ────────────────────────      ───────────────────────────
-          ¿¹ ─────────────────> »—[ BAU AKTION ]«««V1
-          ↓                               ↓
-          ¿¹ <───────────────────   £1 OUTPUT <──────────────┐ (Wiedereinspeisung)
-          ↓                               ↓                  │
-          ¿¹ ─────────────────> »—[ OBJEKT = ... ]«          │
-          ↓                               ↓                  │
-          ¿¹ ─────────────────>   ¶ ¬·¤: [" Output "]        │
-          ↓                               ↓                  │
-          ¿  ─────────────────>  ¶¶ »—[ OBJEKT = ... ]«      │
-                                          ↓                  │
-                                     ¬·¤: [" Output "]       │
-                                          ↓                  │
-                                     £1 INPUT ───────────────┘ (Daten-Auskopplung)
-
-
-
-# kurzer kritzel bereich für synaptor 
-
-BION-EXTRAWABE-SYNAPTOR Ð TORWABE
-
- MORPHIC-ID ¡ SYNR-FLUSSTOR-1
-
- BION-ID ¡ SY00X01S01B01R01
- 
- AXIOM ¡ SYNR-FLUSSTOR-1 = ¿¹
- 
- TOR = ON
-  AXIOM ¡ TOR = IN-ID = POICOM-ON-PIPE-BOXK
-  AXIOM ¡ TOR = OUT-ID = SENK
- 
- LINK ¡ SENK
- 
- SYSTEM = ON
-  WABEN-NEST = PLUG
-  WABEN-TYP = PROZESS-VERBINDER 
-
-BION-EXTRAWABE-PROZESS Ð TORWABE 
-
- MORPHIC-ID ¡ REXR-STATUS
-
- BION-ID ¡ RX00X01S01Y0101R02
- BION-ID ¡ RX00X01S01Y0102R02
- BION-ID ¡ RX00X01S01Y0103R02
- BION-ID ¡ RX00X01S01Y0104R02
-
- AXIOM ¡ REXR-STATUS = ¬·¤:
- AXIOM ¡ REXR-STATUS = ¬··¤:
- AXIOM ¡ REXR-STATUS = ¬···¤:
- AXIOM ¡ REXR-STATUS = ¬····¤:
-
- AXIOM ¡ REXR-STATUS = ¬·¤: <POIK>
- AXIOM ¡ REXR-STATUS = ¬·¤: [<BOXK>]
- AXIOM ¡ REXR-STATUS = ¬··¤: <POIK>
- AXIOM ¡ REXR-STATUS = ¬··¤: [<BOXK>]
- AXIOM ¡ REXR-STATUS = ¬···¤: <POIK>
- AXIOM ¡ REXR-STATUS = ¬···¤: [<BOXK>]
- AXIOM ¡ REXR-STATUS = ¬····¤: <POIK>
- AXIOM ¡ REXR-STATUS = ¬····¤: [<BOXK>]
-
- ABSK ¡ REXK+REXX-PROZESS+REXS-PROZESS+REXSYS-PROZESS-IO+REXO-PROZESS+REXR-STATUS
-
- LINK ¡ POIK
-
- TOR ¡ IN-ID = POIK+POIX-ON-PIPE+BOXK
-
- TOR ¡ OUT-ID = POIK+POIX-OFF-PIPE

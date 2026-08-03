@@ -1,11 +1,151 @@
-@kernel-nr: 12 Ð FEED | STATUS = RELEASE V2.0
-#  LEXIKON NAVIGATION TERMINAL = kernel <12> == # == ##### === ###
-###==##==###======#####========K12 FEED========#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- # FEED = THE NOMADIC MASTER AND SLAVE CACHE MANAGER SYSTEM         #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- #       FEED FÜHREND = MEISTER | FEED TRAGEND = SKLAVE             #
-###==##==###======#####=====STARTPUNKT FEED====#####======###==##==###
+@kernel-nr: 12 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #      FEED = THE NOMADIC MASTER AND SLAVE CACHE MANAGEMENT SYSTEM          #              #
+###===========================WICHTIGER-HINWEIS=============================###
+ #              FEED FÜHREND = MEISTER | FEED TRAGEND = SKLAVE               #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ FEED
+
+ KOMPONENTEN-ID ¡ FE
+
+ BION-NR ¡ 12
+
+ BION-ID ¡ FE12
+
+ MASTER-ID ¡ MA46SU12
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 12
+
+ BION-ID ¡ MK12
+
+ BSK ¡ FEMK
+
+ BION ¡ FE12MK12
+
+###====================================|====================================###
+###=================================FÜHREND=================================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ FÜHREND
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 25
+
+ BION-ID ¡ HT25
+
+ BSK ¡ FEMKHT-FÜHREND
+
+ BION ¡ FE12MK12HT25
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 25
+
+ BION-ID ¡ ST25
+
+ BSK ¡ FEMKHTST-FÜHREND
+
+ BION ¡ FE12MK12HT25ST25
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ( 
+ AXIOM ¡ ^ <TASTENCODE> = )
+ AXIOM ¡ ^ <TASTENCODE> = —
+ AXIOM ¡ ^ <TASTENCODE> = Ø:
+ AXIOM ¡ ^ <TASTENCODE> = :Ø
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+# FÜHREND : WEITER
+###====================================|====================================###
+###=================================TRAGEND=================================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ TRAGEND
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 26
+
+ BION-ID ¡ HT26
+
+ BSK ¡ FEMKHT-TRAGEND
+
+ BION ¡ FE12MK12HT26
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ TRAGEND
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 26 
+
+ BION-ID ¡ ST26
+
+ BSK ¡ FEMKHTST-TRAGEND
+
+ BION ¡ FE12MK12HT26ST26
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ( 
+ AXIOM ¡ ^ <TASTENCODE> = )
+ AXIOM ¡ ^ <TASTENCODE> = —
+ AXIOM ¡ ^ <TASTENCODE> = Ø:
+ AXIOM ¡ ^ <TASTENCODE> = :Ø
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
+# TRAGEND : WEITER
+###====================================|====================================###
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓!!!!!!!!!!!!!!!!
 
 BION Ð FEED 
 

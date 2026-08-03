@@ -53,7 +53,7 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
 WABEN-KATEGORIE Ð STARTWABE 
 
- PROGRAMM ¡ <NAME>
+ PROGRAMM ¡ FÜHREND
 
  WABEN-ID ¡ ST
 
@@ -72,17 +72,21 @@ WABEN-KATEGORIE Ð STARTWABE
  AXIOM ¡ ^ <TASTENCODE> = ( 
  AXIOM ¡ ^ <TASTENCODE> = )
  AXIOM ¡ ^ <TASTENCODE> = —
- AXIOM ¡ ^ <TASTENCODE> = Ø:
- AXIOM ¡ ^ <TASTENCODE> = :Ø
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ <TASTENCODE> = Ø
+ AXIOM ¡ ^ — + F + — + ( ≠ *** ≠ —F—( = FE-FÜHREND-SPEICHERNUMMER-START
+ AXIOM ¡ ^ ) + — + F + — ≠ *** ≠ )—F— = FE-FÜHREND-SPEICHERNUMMER-KNOTEN
+ AXIOM ¡ ^ Ø + : ≠ ** ≠ Ø: = FE-CACHE-START
+ AXIOM ¡ ^ : + Ø ≠ ** ≠ :Ø = FE-CACHE-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ —F—( = FE-FÜHREND-SPEICHERNUMMER-START
+ GEBAUTE-EINHEIT ¡ )—F— = FE-FÜHREND-SPEICHERNUMMER-KNOTEN
+ GEBAUTE-EINHEIT ¡  Ø: = FE-CACHE-START
+ GEBAUTE-EINHEIT ¡ :Ø = FE-CACHE-ENDE
 
 ###====================================|====================================###
-# FÜHREND : WEITER
+# FÜHREND : WEITER  
 ###====================================|====================================###
 ###=================================TRAGEND=================================###
 ###====================================|====================================###
@@ -124,14 +128,21 @@ WABEN-KATEGORIE Ð STARTWABE
  AXIOM ¡ ^ <TASTENCODE> = ( 
  AXIOM ¡ ^ <TASTENCODE> = )
  AXIOM ¡ ^ <TASTENCODE> = —
- AXIOM ¡ ^ <TASTENCODE> = Ø:
- AXIOM ¡ ^ <TASTENCODE> = :Ø
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
- AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <TASTENCODE> = :
+ AXIOM ¡ ^ <TASTENCODE> = Ø
+ AXIOM ¡ ^ — + T + — + ( ≠ * ≠ —T—( = FE-TRAGEND-SPEICHERNUMMER-START
+ AXIOM ¡ ^ ) + — + T + — ≠ * ≠ )—T— = FE-TRAGEND-SPEICHERNUMMER-KNOTEN
+ AXIOM ¡ ^ Ø + : ≠ ** ≠ Ø: = FE-CACHE-START
+ AXIOM ¡ ^ : + Ø ≠ ** ≠ :Ø = FE-CACHE-ENDE
 
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
- GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ —T—( = FE-TRAGEND-SPEICHERNUMMER-START
+ GEBAUTE-EINHEIT ¡ )— = FE-SPEICHERNUMMER-KNOTEN 
+ GEBAUTE-EINHEIT ¡  Ø: = FE-CACHE-START
+ GEBAUTE-EINHEIT ¡ :Ø = FE-CACHE-ENDE
+
+
+ # LIEGT IM RAM
 
 ###====================================|====================================###
 # TRAGEND : WEITER
@@ -145,27 +156,7 @@ WABEN-KATEGORIE Ð STARTWABE
 
 
 
-!!!!!!!!!!!!!!↓↓↓↓↓ ALTER BEREICH ↓↓↓↓↓↓!!!!!!!!!!!!!!!!
 
-BION Ð FEED 
-
- MORPHIC-ID ¡ FD 
-
- BION-ID ¡ FD
-
- MASK ¡ MASU-FEED
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð FEED
-
- MORPHIC-ID ¡ FDK 
-
- BION-ID ¡ FD12
-
- AXIOM ¡ FDK = <FDK> 
-
- ABSK ¡ FDK
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 # HT01: EXTRAWABE-FÜHREND (MEISTER)

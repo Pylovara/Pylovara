@@ -291,3 +291,61 @@
         "abschliessend": "Und jetzt alle: AMEN."
     }
 }
+
+
+OVER END BUG ..... 
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class BuggyInvoiceLoop {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<Double> preise = new ArrayList<>();
+        List<Integer> mengen = new ArrayList<>();
+        
+        System.out.println("=== RECHNUNGSERSTELLUNG ===");
+        
+        // BUG 1: Endlosschleife, weil Abbruchbedingung falsch ist
+        while (true) {
+            System.out.print("Preis (oder -1 zum Beenden): ");
+            double preis = scanner.nextDouble();
+            
+            // BUG 2: -1 wird mit in die Liste aufgenommen, obwohl es Abbruch sein soll
+            if (preis == -1) {
+                // Hier fehlt ein break! -> Endlosschleife
+                // break; // <- auskommentiert = BUG
+            }
+            
+            System.out.print("Menge: ");
+            int menge = scanner.nextInt();
+            
+            preise.add(preis);
+            mengen.add(menge);
+        }
+        
+        // BUG 3: Berechnung wird nie erreicht (wegen Endlosschleife)
+        double gesamt = 0;
+        for (int i = 0; i < preise.size(); i++) {
+            // BUG 4: IndexOutOfBounds, wenn Listen unterschiedlich groß sind
+            double summe = preise.get(i) * mengen.get(i);
+            
+            // BUG 5: Mehrwertsteuer wird falsch berechnet (sollte 19% sein)
+            double mwst = summe * 0.07; // <- falscher Steuersatz
+            
+            // BUG 6: Rundungsfehler bei double (kaufmännisch nicht korrekt)
+            gesamt += summe + mwst;
+            
+            // BUG 7: Formatierung fehlt -> krumme Zahlen
+            System.out.println(i + ". Artikel: " + summe + " € netto");
+        }
+        
+        // BUG 8: Gesamtsumme wird nie ausgegeben, weil Schleife nicht endet
+        System.out.println("Gesamt (brutto): " + gesamt + " €");
+        
+        scanner.close();
+    }
+}
+

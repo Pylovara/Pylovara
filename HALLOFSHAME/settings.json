@@ -263,7 +263,7 @@
                           ¬· »—[PY: ICH.PAPER = PAPER :PY]« 
                               ¿¹
                           ¬· »—[PY: ICH.FEUERZEUG = FEUERZEUG :PY]« 
-                          
+
                                     £2
                               ¶ ¬· »—[PY: DEF ANZÜNDEN(ICH) :PY]« 
 
@@ -395,25 +395,55 @@ public class BuggyInvoiceLoop {
   \  /  |______      |______ | \  | |     \
    \/   ______|      |______ |  \_| |_____/
 
-¢! # NUR EIN VORSCHLAG | BIN JA NICHT SO 
-»—[": RECHNUNGSERSTELLUNG IN MCS :"]«
-    ¬· »—[": PREIS UND MENGE EINGEBEN :"]«
-        ¬· »—[×: preis = eingabe :×]«
-            ¶ ¬· »—[": WENN PREIS == -1 :"]«
-                  ¬· »—[": BRICH AB :"]«
-            ¶¶ ¬· »—[": MENGE EINGEBEN :"]«
-                   ¬· »[×: menge = eingabe :×]«
-                   ¬· »[×: summe = preis * menge :×]«
-                   ¬· »[×: mwst = summe * 0.19 :×]«
-                   ¬· »[×: gesamt += summe + mwst :×]«
-                   ¬· »—[": AUSGABE :"]«
-                       ¬·¤ »—[": summe :"]«
-                            ÷ [F—(3)—FØ: <CACHE> :Ø]
+¢! # NUR ANGETEASERTE ÜBERSETZUNG IN MCS JS: :JS 
+ »—[JS: public class FixedInvoiceLoop :JS]
+  ¬· »—[JS: public class FixedInvoiceLoop :JS]
+      ¬· »[JS: Scanner scanner = new Scanner(System.in) :JS]
+      ¬· »[JS: List<Double> preise = new ArrayList<>() :JS]
+      ¬· »[JS: List<Integer> mengen = new ArrayList<>() :JS]
+      ¶ ¬· »—[JS: System.out.println("=== RECHNUNGSERSTELLUNG ===") :JS]«
+            ¬·¤ [ === RECHNUNGSERSTELLUNG ===  ]
+¢! # NATIVE FREMDSPRACHEN ÜBERSETZUNG 
+
+ ¢! UND JETZT NUR MAL IN BESSERER LOGIK 
+    —[": RECHNUNGSERSTELLUNG IN MCS :"]
+    ¬· —[": PREIS UND MENGE EINGEBEN :"]
+       ¬· »—[×: preis = eingabe :×]«
+           ¶ ¬· —[": WENN PREIS == -1 :"]
+                ¬· »—[~: STOP :~]«               
+           ¶¶ ¬·¤ —[": MENGE EINGEBEN :"]
+                  ¬·¤ —[": menge = eingabe :"]«
+                      ¬· »—[¥: <EINGABE> :¥]«
+                              ¿³
+                          ¬· »—[×: <IO> :×]«
+                              £4
+                  ¬·¤ —[": summe = preis * menge :"]
+                      ¬· »—[¥: <EINGABE> :¥]«
+                              ¿³
+                          ¬· »—[×: <IO> :×]«
+                              £4
+                  ¬·¤ —[": mwst = summe * 0.19 :"]
+                      ¬· »—[¥: <EINGABE> :¥]«
+                              ¿³
+                          ¬· »—[×: <IO> :×]«
+                              £4
+                  ¬·¤ —[": gesamt += summe + mwst :"]
+                      ¬· »—[¥: <EINGABE> :¥]«
+                              ¿³
+                          ¬· »—[×: <IO> :×]«
+                              £4
+
+                  ¬·¤ —[": AUSGABE :"]
+
+                          ¿³
+                          £4
+                      ¬·¤ —[": summe :"]
+                          ÷ [F—(3)—FØ: <CACHE> :Ø]
 
         ± [T—(3)—TØ: <CACHE> :Ø]                     
     ¬· »—[": GESAMTSUMME :"]«
-        ¬·¤ »[": gesamt :"]«
-!¢
+        ¬·¤ [": gesamt :"]
+ !¢ # DAS IST MCS | BOXIS SYSTEM | SYNAPTOR | ZYTRON | PRINT | RECHNUNG | EINGABE | STATUS AUSGABE = ALL INKLUSIVE 
 
  PERSÖNLICHES SCHLUSS WORT 
 

@@ -54,14 +54,29 @@
 
   ¶ ¬· »—[": highlight.regexes :"]«
         ¬· »—[": WABEN-KATEGORIE && BION-NR && BION-ID && BION  :"]«
-            ¬· »–[": color :"]
+            ¬· »—[": color :"]
                 ¬· »[": #FFD966 :"]«
 
-                ¬· »–[": fontWeight :"]«
-                    ¬· »[": bold :"]«
+            ¬· »–[": fontWeight :"]«
+                ¬· »[": bold :"]«
 
-                ¬· »–[": backgroundColor :"]«
-                    ¬· »[": #2D2D2D :"]«
+            ¬· »–[": backgroundColor :"]«
+                ¬· »[": #FFD966 :"]«
+
+
+        ¬· »—[": [ && | && ] && | && ¢ && ! && ¢ && : && ¶ && ¶¶ && £ && ¹ && ² && ³ && " && × && ¿ :"]«
+            ¬· »—[": color :"]
+                ¬· »[": #FF6B6B :"]«
+
+            ¬· »–[": fontWeight :"]«
+                ¬· »[": bold :"]«
+
+            ¬· »–[": backgroundColor :"]«
+                ¬· »[": #FFD966 :"]«
+
+        ¬· »–[": 0-9 :"]«
+            ¬· »—[": color :"]
+                ¬· »[": #FFB86C :"]«
 
  !¢
 

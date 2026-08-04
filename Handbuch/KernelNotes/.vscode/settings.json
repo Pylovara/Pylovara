@@ -7,7 +7,7 @@
     "editor.rulers": [80],
     
     "highlight.regexes": {
-        "\\b(BION|MORPHIC-ID|BION-ID|ABSK|AXIOM|MASK|ZEIG|I-ID|O-ID|IN-ID|OUT-ID|Ð|¡|)\\b": {
+        "\\b(BION|MORPHIC-ID|BION-ID|AXIOM||ZEIG|I-ID|O-ID||OUT-ID|Ð|¡|)\\b": {
             "color": "#FFD966",
             "fontWeight": "bold",
             "backgroundColor": "#2D2D2D"
@@ -236,28 +236,27 @@
                 ¶¶ ¬· »–[":UND WENN BEI EUCH EIN FEHLER IM KANAL 1 EINDONNERT :"]«
                        ¬· »–[": BRICKT EUCH JEDER RECHNER WEG, WEGEN EURER INKOMPETENZ  :"]«
 
-  ¶¶ ¬· »—[": AMEN :"]«
-         ¬· »—[": UND WENN GOTT NICHT HILFT :"]«
-             ¬· »—[": DANN NEHM ICH ES SELBST IN DIE HAND :"]«
-                 ¬· »—[": MIT MCS, MIT TWS, MIT BMC :"]«
-                     ¬· »—[": UND EINEM LÄCHELN :"]«
-                         ¬· »—[": DAS KEINE LÜGE IST :"]«
-                             ¬· »—[": SONDERN EIN VERSPRECHEN :"]«
-                                 ¬· »—[": UND JA - ICH MEIN JEDES WORT ERNST, TIEF IN MEINEM HERZEN :"]«
+ ¶¶ ¬· »—[": AMEN :"]«
+        ¬· »—[": UND WENN GOTT NICHT HILFT :"]«
+            ¬· »—[": DANN NEHM ICH ES SELBST IN DIE HAND :"]«
+                ¬· »—[": MIT MCS, MIT TWS, MIT BMC :"]«
+                    ¬· »—[": UND EINEM LÄCHELN :"]«
+                        ¬· »—[": DAS KEINE LÜGE IST :"]«
+                            ¬· »—[": SONDERN EIN VERSPRECHEN :"]«
+                                ¬· »—[": UND JA - ICH MEIN JEDES WORT ERNST, TIEF IN MEINEM HERZEN :"]«
 
-
-         ¬· »—[": UND JETZT ALLE  :"]«
-                 ¿¹
-             ¬· »—[": AMEN :"]« 
+                                    ¬· »—[": UND JETZT ALLE  :"]«
+                                            ¿¹
+                                        ¬· »—[": AMEN :"]« 
              
-                 ¿¹         
-             ¬· »—[": AMEN :"]«
+                                            ¿¹         
+                                        ¬· »—[": AMEN :"]«
 
-                 ¿¹
-             ¬· »—[": AMEN :"]«   
+                                            ¿¹
+                                        ¬· »—[": AMEN :"]«   
              
-                 ¿¹             
-             ¬· »—[": AMEN :"]«
+                                            ¿¹             
+                                        ¬· »—[": AMEN :"]«
  !¢
 
  _    _ _______      _______ __   _ ______ 
@@ -291,7 +290,6 @@
         "abschliessend": "Und jetzt alle: AMEN."
     }
 }
-
 
 OVER END BUG ..... 
 

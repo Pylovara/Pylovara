@@ -196,11 +196,11 @@
                ¬· —[": WARTET AB, BIS MCS DA IST :"]
                   ¬· —[": DANN KÖNNT IHR ZUSCHAUEN :"]
                      ¬· —[": UND LERNEN, WIE ES RICHTIG GEHT :"]
-                        ¬· —[": ABER WARSCHEINLICH KÖNNT IHR NICHT MAL RECHNEN :"]
+                        ¬· —[": ABER WAHRSCHEINLICH KÖNNT IHR NICHT MAL RECHNEN :"]
                            ¬· —[": ABER KEINE SORGE DANN BRINGE ICH ES EUCH SCHNELL MAL BEI :"]
                                     
                               ¬· »—[×: 1 + 0 :×]«
-                                 ¬·¤ [": 1 :"]
+                                  ¬·¤ [": 1 :"]
 
                               ¬· —[": UND WAS KOMMT NACH DER 1 ? :"]
 
@@ -217,14 +217,20 @@
 
                                  ¬· —[": JETZT VERSUCHEN WIR ES MAL BIS IHR NICHT MEHR WEITER WISST :"]
 
-                                    ¬· »—[×: 1 + O :×]«««~: LOOP :~«
-                                        ÷ »[F—(1)—FØ: 1 + O :Ø]«
-                                         
-                                        ¬·¤ —[": 1 :"]
+                                        ± »[T—(2)—TØ: < ZAHLEN-REIHE > :Ø]«««~: LOOP :~«
+                                    ¬· »—[×: 1 + (2) :×]«««~: LOOP :~«
+                                        ¬·¤ »—[": < ZAHLEN-REIHE > :"]«««~: LOOP :~«
+                                             ÷ »[F—(2)—FØ: < ZAHLEN-REIHE > :Ø]«««~: LOOP :~«
 
-                                                ± »[T—(1)—TØ: 1 + 0 :Ø]«
-                                            ¬· »—[×: 1 + (1) :×]«««~: LOOP :~«
-                                                ¬·¤ [": RATET MAL ? :"]                                
+                                 ¬· —[": JETZT EINE PFAND-FRAGE .... EIN KLEINES QUIZ *SCHMUNZEL* :"]               
+                                            
+                                    ¬· »—[~: SEND BXMKHT-EINGABE && GIBT HTMKHT-EINGABE HTMKHT-ALU :~]«
+                                        ¬· »—[¥: <EINGABE : 2> :¥]«
+
+                                                ± »[T—(3)—TØ: <RATET MAL ?> :Ø]«
+                                            ¬· »—[×: 2 × (1) :×]«««~: LOOP :~«
+                                                ¬·¤ »—[": <RATET MAL ?> :"]«
+                                                     ÷ »[F—(3)—FØ: <RATET MAL ?> :Ø]«««~: LOOP :~«                                
 
                                     ¬· —[": ALLEINE DAS IN JSON.... *OH MEIN GOTT* .. :"]
                                        ¬· [": UND WENN ICH DA NOCH MIT MCS PROTON ANFANGEN WÜRDE ... ENDE :"]
@@ -483,4 +489,4 @@ public class BuggyInvoiceLoop {
  MACHT EUERN SEGEN DAMIT DAS DIE ERÄ DER NEANDERTALER VARIANTEN - ENDGÜLTIG GEGEN SEIN ENDE TENDIERT.
 
 ======================================================================================================
-                                                     FERTIG GESTELLT AM : 04.08.2026 | 15:11 UHR
+                                                     FERTIG GESTELLT AM : 04.08.2026 | 17:51 UHR

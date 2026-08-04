@@ -27,45 +27,23 @@ WABEN-KATEGORIE Ð TRANSPORTWABE
 
  # HOLE KOMPONENTE
  LINK ¡ #
- LINK ¡ #
+
+
  
- # AXIOM | STARTET HAUPTWABE 
- AXIOM ¡ LINK ≠ # ≠ # ≠ #
- AXIOM ¡ LINK ≠ # ≠ # ≠ #
 
- # HOLT EINHEIT
- EINHEIT ¡ #
- EINHEIT ¡ #
- EINHEIT ¡ #
 
- # AXIOM | KOMBINIERT
- AXIOM ¡ # + # + # + # ≠ * *** ≠ # = #
 
- # EINHEIT 
- EINHEIT ¡ # = #
 
- # AXIOM
- AXIOM ¡ PIMK ≠ # ≠ #
- AXIOM ¡ SYNTAX-BAUM ≠ # 
-
- # FIXPUNKT VERARBEITUNGS PIPELINE
- AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
- AXIOM ¡ ^     #: #
-
- AXIOM ¡ SPEICHER ≠ #
-
- # EINHEIT 
- EINHEIT ¡ # = # 
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
- NI11 = TP01 TP02
+
 
 ###==============================INFORMATIONEN==============================###
 
- SPEZIALISIERTE PLUG-IN WABE FÜR NITROX. 
+ SPEZIALISIERTE PLUG-IN WABE FÜR SYNAPTOR. 
 
- TRANSPORTIERT FERTIG GEBAUTEN INHALT ( CACHE ) UND GIBT PLAZIERUNG AN. 
+ SYNCROSITATIONS PROZESS WABE FÜR BENÖTIGTE KANÄLE FÜR ZEITGLEICHEN ABGLEICH
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 

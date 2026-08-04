@@ -48,8 +48,34 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
 ###====================================|====================================###
 
+WABEN-KATEGORIE Ð STARTWABE 
 
+ PROGRAMM ¡ SYNC
 
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 27
+
+ BION-ID ¡ ST27
+
+ BSK ¡ SYMKHT-SYNC
+
+ BION ¡ SY13MK13HT27ST27
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###====================================|====================================###
 
 
 

@@ -193,20 +193,20 @@
                                 ¬· »—[": ABER KEINE SORGE DANN BRINGE ICH ES EUCH SCHNELL MAL BEI :"]«
                                     
                                     ¬· »—[×: 1 + 0 :×]«
-                                        ¬·¤ »—[": 1 :"]«
+                                        ¬·¤ »[": 1 :"]«
 
                                     ¬· »—[": UND WAS KOMMT NACH DER 1 ? :"]«
 
                                     ¬· »—[×: 1 + 1 :×]«
                                         ÷ [F—(1)—FØ: 1 + 1 :Ø]
                                          
-                                        ¬·¤ »—[": 2 :"]«
+                                        ¬·¤ »[": 2 :"]«
 
                                     ¬· »—[": KÖNNT IHR AUCH BIS 3 ZÄHLEN  ? :"]«
 
                                             ± [T—(1)—TØ: 1 + 1 :Ø]
                                         ¬· »—[×: 1 + (1) :×]«
-                                            ¬·¤ »—[": 3 :"]«
+                                            ¬·¤ »[": 3 :"]«
 
                                     ¬· »—[": JETZT VERSUCHEN WIR ES MAL BIS IHR NICHT MEHR WEITER WISST :"]«
 
@@ -217,7 +217,7 @@
 
                                                  ± »[T—(1)—TØ: 1 + 0 :Ø]«««~: LOOP PROZESS && AKTUALISIERE IN 1 PICOSEKUNDE :~«
                                              ¬· »—[×: 1 + (1) :×]«««~: LOOP PROZESS && AKTUALISIERE IN 1 PICOSEKUNDE :~«
-                                                 ¬·¤ »—[": RATET MAL ? :"]«««~: MONITORING && AKTUALISIERE IN 1 PICOSEKUNDE :~«                                  
+                                                 ¬·¤ »[": RATET MAL ? :"]«««~: MONITORING && AKTUALISIERE IN 1 PICOSEKUNDE :~«                                  
 
                                     ¬· »[": ALLEINE DAS IN JSON.... *OH MEIN GOTT* .. UND WENN ICH DA NOCH MIT MCS PROTON ANFANGEN WÜRDE ... ENDE :"]«
 
@@ -229,20 +229,20 @@
                                 ¬· »—[": NICHTS ALS LIEBE :"]«
                                     ¬· »—[": ABER AUCH NICHTS ALS HASS :"]«
                                         ¬· »—[": UND WENN IHR DAS NICHT KAPIERT :"]«
-                                            ¬· »—[": DANN HABT IHR AUCH NIE CODE VERSTANDEN :"]«
+                                            ¬· »[": DANN HABT IHR AUCH NIE CODE VERSTANDEN :"]«
 
 
-            ¬· »–[": IHR DENKT BESTIMMT WIE EINE HÄNGENDE SCHALLPLATTE :"]«                               
+            ¬· »—[": IHR DENKT BESTIMMT WIE EINE HÄNGENDE SCHALLPLATTE :"]«                               
                 
                     £1
                 ¬· »—[": IM REPLAY FORMAT :"]«
                     £1
 
-                ¶ ¬· »–[": UND UND UND UND UND STOTTERT BEIM SPRECHEN OHNE SINN UND VERSTAND  :"]«
-                      ¬· »—[": UND DAS IST VERDAMMT NOCHMAL KEIN GAG :"]«
+                ¶ ¬· »—[": UND UND UND UND UND STOTTERT BEIM SPRECHEN OHNE SINN UND VERSTAND  :"]«
+                      ¬· »[": UND DAS IST VERDAMMT NOCHMAL KEIN GAG :"]«
 
                 ¶¶ ¬· »—[":UND WENN BEI EUCH EIN FEHLER IM KANAL 1 EINDONNERT :"]«
-                       ¬· »—[": BRICKT EUCH JEDER RECHNER WEG, WEGEN EURER INKOMPETENZ  :"]«
+                       ¬· »[": BRICKT EUCH JEDER RECHNER WEG, WEGEN EURER INKOMPETENZ  :"]«
 
             ¬· »—[": WERT NICHT MAL IN DER LAGE EUCH SELBST ALS SPIELFIGUR ZU DEFINIEREN - UND ZWAR ORDNENTLICH! :"]
                 ¬· »—[": GESCHEWEIGEDEN EINE ANDERE SPRACHE NATIV ZU ÜBERTRAGEN :"]«
@@ -270,7 +270,7 @@
                                       ¶¶ ¬· »[PY: RETURN __INIT__ :PY]«
 
             ¬· »—[": ABER WAS WILL MAN AUICH VON SO EINEM VEREIN HALTEN DER NUR GEKRITZEL UNTER ALKOHOLKONSUM VERANSTALTET :"]
-                ¬· »—[": ABER HEY , ZU EURER VERTEITIGUNG : „ DAS IST DER ZUKÜNFTIGE BAUMODUS “ .. :"]
+                ¬· »[": ABER HEY , ZU EURER VERTEITIGUNG : „ DAS IST DER ZUKÜNFTIGE BAUMODUS “ .. :"]
      
      ¶¶ ¬· »—[": AMEN :"]«
             ¬· »—[": UND WENN GOTT NICHT HILFT :"]«
@@ -279,7 +279,7 @@
                         ¬· »—[": UND EINEM LÄCHELN :"]«
                             ¬· »—[": DAS KEINE LÜGE IST :"]«
                                 ¬· »—[": SONDERN EIN VERSPRECHEN :"]«
-                                    ¬· »—[": UND JA - ICH MEIN JEDES WORT ERNST, TIEF IN MEINEM HERZEN :"]«
+                                    ¬· »[": UND JA - ICH MEIN JEDES WORT ERNST, TIEF IN MEINEM HERZEN :"]«
 
 
             ¬· »—[": UND JETZT ALLE  :"]«
@@ -399,7 +399,11 @@ public class BuggyInvoiceLoop {
                    ¬· »[×: mwst = summe * 0.19 :×]«
                    ¬· »[×: gesamt += summe + mwst :×]«
                    ¬· »—[": AUSGABE :"]«
-                       ¬·¤ »[": summe :"]«
+
+                       ¬·¤ »—[": summe :"]«
+                            ÷ [F—(3)—FØ: <CACHE> :Ø]
+                            
+        ± [T—(3)—TØ: <CACHE> :Ø]                     
     ¬· »—[": GESAMTSUMME :"]«
         ¬·¤ »[": gesamt :"]«
 !¢

@@ -1,4 +1,4 @@
-#  DEINE SPRACHE SIEHT AUS WIE EIN VERKIRTZELTES MANDALA !
+# ORACLE : DEINE "PROGRAMMIERSPRACHE|CONFIG" SIEHT AUS WIE EIN VERKIRTZELTES MANDALA !
 {
     "editor.fontSize": 20,
     "files.autoSave": "onWindowChange",
@@ -33,8 +33,6 @@
    | | / / ___/
    | |/ (__  ) 
    |___/____/  
-            
-
  ¢!
  »—[": Settings.json  :"]«
   ¬· »—[": editor.fontSize :"]«
@@ -78,13 +76,10 @@
                 ¬· »[": #FFB86C :"]«
 
  !¢
-
     _   _______
    | | / / ___/
    | |/ (__  ) 
    |___/____/  
-            
-
   "blabla.blabla": 20, <---  
 
  { <-- 
@@ -109,13 +104,10 @@
         }
     } <--
 } <--
-     
     _   _______
    | | / / ___/
    | |/ (__  ) 
    |___/____/  
-            
-
 ¢!
 »—[": EINE KLEINE WARNUNG AN DIE JAVA-KONFERENZ :"]«
  ¬· »—[": WER DIESEN CODE LIEST, HAT VERLOREN :"]«
@@ -246,8 +238,8 @@
                 ¶ ¬· »–[": UND UND UND UND UND STOTTERT BEIM SPRECHEN OHNE SINN UND VERSTAND  :"]«
                       ¬· »—[": UND DAS IST VERDAMMT NOCHMAL KEIN GAG :"]«
 
-                ¶¶ ¬· »–[":UND WENN BEI EUCH EIN FEHLER IM KANAL 1 EINDONNERT :"]«
-                       ¬· »–[": BRICKT EUCH JEDER RECHNER WEG, WEGEN EURER INKOMPETENZ  :"]«
+                ¶¶ ¬· »—[":UND WENN BEI EUCH EIN FEHLER IM KANAL 1 EINDONNERT :"]«
+                       ¬· »—[": BRICKT EUCH JEDER RECHNER WEG, WEGEN EURER INKOMPETENZ  :"]«
 
             ¬· »—[": WERT NICHT MAL IN DER LAGE EUCH SELBST ALS SPIELFIGUR ZU DEFINIEREN - UND ZWAR ORDNENTLICH! :"]
                 ¬· »—[": GESCHEWEIGEDEN EINE ANDERE SPRACHE NATIV ZU ÜBERTRAGEN :"]«
@@ -300,12 +292,10 @@
                     ¿¹             
                 ¬· »—[": AMEN :"]«
  !¢
-
     _   _______
    | | / / ___/
    | |/ (__  ) 
-   |___/____/  
-                                           
+   |___/____/                                    
 {
     "letztes_wort_an_die_java_konferenz": {
         "warnung": "Die Java-Konferenz wird diese Datei nie vergessen.",
@@ -333,7 +323,6 @@
         "abschliessend": "Und jetzt alle: AMEN."
     }
 }
-
  _    _ _______      _______ __   _ ______ 
   \  /  |______      |______ | \  | |     \
    \/   ______|      |______ |  \_| |_____/
@@ -391,25 +380,23 @@ public class BuggyInvoiceLoop {
         scanner.close();
     }
 }
-
  _    _ _______      _______ __   _ ______ 
   \  /  |______      |______ | \  | |     \
    \/   ______|      |______ |  \_| |_____/
-
 
 ¢! # NUR EIN VORSCHLAG | BIN JA NICHT SO 
 »—[": RECHNUNGSERSTELLUNG IN MCS :"]«
     ¬· »—[": PREIS UND MENGE EINGEBEN :"]«
         ¬· »—[×: preis = eingabe :×]«
             ¶ ¬· »—[": WENN PREIS == -1 :"]«
-                ¬· »—[": BRICH AB :"]«
+                  ¬· »—[": BRICH AB :"]«
             ¶¶ ¬· »—[": MENGE EINGEBEN :"]«
-                ¬· »—[×: menge = eingabe :×]«
-                ¬· »—[×: summe = preis * menge :×]«
-                ¬· »—[×: mwst = summe * 0.19 :×]«
-                ¬· »—[×: gesamt += summe + mwst :×]«
-                ¬· »—[": AUSGABE :"]«
-                    ¬·¤ »—[": summe :"]«
+                   ¬· »[×: menge = eingabe :×]«
+                   ¬· »[×: summe = preis * menge :×]«
+                   ¬· »[×: mwst = summe * 0.19 :×]«
+                   ¬· »[×: gesamt += summe + mwst :×]«
+                   ¬· »—[": AUSGABE :"]«
+                       ¬·¤ »[": summe :"]«
     ¬· »—[": GESAMTSUMME :"]«
-        ¬·¤ »—[": gesamt :"]«
+        ¬·¤ »[": gesamt :"]«
 !¢

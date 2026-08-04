@@ -1,213 +1,23 @@
-##############################################################################
-vornotiz : 
+@kernel-nr: 24 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #              SYNAPTOR = PIPEP PROTEIN PROZESS CONFLUENCE GATE             #
+###===========================WICHTIGER-HINWEIS=============================### 
+###===============================STARTPUNKT================================###
 
- am besten über dem rex an ictus anschließen und generell über den 
- onpipe syncronisieren lassen .... macht PERFORMANCE technisch am 
- aller meisten sind , da die cpu verarbeitungs last retron regelt 
- und die syncronisations zustände von synaptor aus geht wird dann 
- der retron beider seits angeschlossen 
 
- retron eigene wabe ... 
 
- synaptor eigene wabe ... 
 
- am bestenmit nummer auswahl , damit man den per nummer gleichschasltung 
- selbst über 8.000 zeile mcs code benutzen kann wenn man will ...
 
- aber mit datei begrenzung .... nicht übergreifend ... 
 
- da ja eh dann datei für datei die mcs daten gebunden werden mit 
- extra transaktionsrahmen als execute oder darunter liegenden config manager 
- wäre das am sinnvollsten , dann lässt sich das ganze wie ein dna baum 
- ins unendliche skalieren ..rrrt
 
 
-@kernel-nr: 24 Ð SYNAPTOR 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####======K24 SYNAPTOR======#####======###==##==###  
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #              SYNAPTOR = PIPEP PROTEIN CONFLUENCE GATE            #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
-###==##==###======#####==STARTPUNKT SYNAPTOR===#####======###==##==###
-
-BION Ð SYNAPTOR
-
- MORPHIC-ID ¡ SYN
-
- BION-ID ¡ SY
-
-MASK ¡ MASU-SYNAPTOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð SYNAPTOR
-
- MORPHIC-ID ¡ SYNK
-
- BION-ID ¡ SY00
-
- AXIOM ¡ SYNK = SYNK
-
- ABSK ¡ SYNK
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-FLUSSTOR
-
- MORPHIC-ID ¡ SYNX-FLUSSTOR 
-
- BION-ID ¡ SY00X01 
-
- ABSK ¡ SYNK+SYNX-FLUSSTOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-FLUSSTOR Ð STARTWABE 
-
- MORPHIC-ID ¡ SYNS-FLUSSTOR 
-
- BION-ID ¡ SY00X01S01
-
- AXIOM ¡ EXTRAWABE-FLUSSTOR = ¿
-
- ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-FLUSSTOR Ð BLOCKWABE
-
- MORPHIC-ID ¡ SYNB-FLUSSTOR-1
-
- BION-ID ¡ SY00X01S01B01
-
- AXIOM ¡ SYNB-FLUSSTOR-1 = ¿¹
-
- ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-1
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^       1SYNC: ¿¹
- AXIOM ¡ ^      1START: —[<BOXK>]
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT:
- AXIOM ¡ ^       1SYNC: ¿¹
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
-
- BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
-
- BRÜCKE-OUT ¡ SYNS-FLUSSTOR-1
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-FLUSSTOR Ð BLOCKWABE
-
- MORPHIC-ID ¡ SYNB-FLUSSTOR-2
-
- BION-ID ¡ SY00X01S01B02
-
- AXIOM ¡ SYNB-FLUSSTOR-2 = ¿²
-
- ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-2
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^       1SYNC: ¿²
- AXIOM ¡ ^      1START: —[<BOXK>]
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT:
- AXIOM ¡ ^       1SYNC: ¿²
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
-
- BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
-
- BRÜCKE-OUT ¡ SYNS-FLUSSTOR-2
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-FLUSSTOR Ð BLOCKWABE
-
- MORPHIC-ID ¡ SYNB-FLUSSTOR-3
-
- BION-ID ¡ SY00X01S01B03
-
- AXIOM ¡ SYNB-FLUSSTOR-3 = ¿³
-
- ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-3
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^       1SYNC: ¿³
- AXIOM ¡ ^      1START: —[<BOXK>]
-
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^ 3ZYKLUS-OUT:
- AXIOM ¡ ^       1SYNC: ¿³
- AXIOM ¡ ^       2KOPF:
- AXIOM ¡ ^      1START: —[<BOXK>]
- AXIOM ¡ ^       2FOOD:
- AXIOM ¡ ^  3ZYKLUS-IN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        4SEN:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^        5REX:
- AXIOM ¡ ^       6FREE:
-
- BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
-
- BRÜCKE-OUT ¡ SYNS-FLUSSTOR-3
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-FLUSSTOR Ð LINKENDWABE 
-
- MORPHIC-ID ¡ SYNL-FLUSSTOR
-
- BION-ID ¡ SY00X01S01B01L01
- BION-ID ¡ SY00X01S01B01L02
- BION-ID ¡ SY00X01S01B01L03
-
- AXIOM ¡ SYNB-FLUSSTOR-1 = ¿¹
- AXIOM ¡ SYNB-FLUSSTOR-2 = ¿²
- AXIOM ¡ SYNB-FLUSSTOR-3 = ¿³
-
- ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-1+SYNL-FLUSSTOR
- ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-2+SYNL-FLUSSTOR
- ABSK ¡ SYNK+SYNX-FLUSSTOR-SYNS-FLUSSTOR-3+SYNL-FLUSSTOR
-
- LINK ¡ SENK
  
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = SYNELT                                              #
- # SBSK =
- # VBSK =
- # RBSK = SYNK                                                      #
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [01:40:44|So 03 Mai 2026] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####====ENDPUNKT SYNAPTOR===#####======###==##==###
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = 
+ # BION-ID-PFAD  → 
+ # BION-ID-PFAD  → 
+ # BION-ID-VPFAD → 
+ # BION-ID-RPFAD → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

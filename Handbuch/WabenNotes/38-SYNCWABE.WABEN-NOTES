@@ -1,9 +1,9 @@
-@waben-nr: 37 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 38 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
-###=============================TRANSPORTWABE==============================###
+###===============================SYNCWABE==================================###
 
-WABEN-KATEGORIE Ð TRANSPORTWABE 
+WABEN-KATEGORIE Ð SYNCWABE 
 
  PROGRAMM ¡ <NAME>
 
@@ -25,10 +25,11 @@ WABEN-KATEGORIE Ð TRANSPORTWABE
  # BSK | BEENDET VOR PROZESS 
  WABEN-RESET ¡ #
 
- # HOLE KOMPONENTE
- LINK ¡ #
+ # LINKT KOMPONENTE
+ LINK ¡ PIMK
 
-
+ # AXIOM 
+ AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ 
  
 
 
@@ -37,13 +38,15 @@ WABEN-KATEGORIE Ð TRANSPORTWABE
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
-
+SY13 = SN01
 
 ###==============================INFORMATIONEN==============================###
 
  SPEZIALISIERTE PLUG-IN WABE FÜR SYNAPTOR. 
 
- SYNCROSITATIONS PROZESS WABE FÜR BENÖTIGTE KANÄLE FÜR ZEITGLEICHEN ABGLEICH
+ SYNCHRONISATIONS-PROZESS FÜR BENÖTIGTE KANÄLE FÜR ZEITGLEICHEN ABGLEICH
+
+ REGELT DEN DIREKTEN ANSCHLUSS ZU ON PIPE .
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 

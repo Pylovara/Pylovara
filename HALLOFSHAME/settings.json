@@ -121,12 +121,12 @@
                ¬· —[": WER ZUM TEUFEL DACHTE SICH DIESE KACKE AUS? :"]
                   ¬· —[": ERNSTHAFT. WER? :"]
                        ¬· —[": WENN IHR DEN JENIGEN GEFUNDEN HABT, SCHREIBT MIR EINE EMAIL :"]
-                          ¬· »—[~: SEND NET :~]««
+                          ¬· »—[~: SEND NET :~]«
                               ¬· —[§: bandinozimmermann@gmail.com :§]
                                  ¬· —[": ODER WISST IHR WAS ? ER SOLL MICH ANRUFEN, VIELEICHT LERNT ER NOCH WAS :"]
                                     ¬·»—[~: SUCH PFAD && PICK :~]«
-                                       ¬· »—[¥: # Telefon :¥]«
-                                       ¬· »—[$: /Pylovara/README.wiki-notes :$]«
+                                       ¬· »[$: /Pylovara/README.wiki-notes :$]«
+                                       ¬· »[¥: # Telefon :¥]«
                                        ¶ ¬·¤ [": ZEILE 50 # Telefon :  +49 176/88218035 :"]
 
            ¬· —[": DEINE SYNTAX :"]
@@ -263,7 +263,8 @@
                           ¬· »—[PY: ICH.PAPER = PAPER :PY]« 
                               ¿¹
                           ¬· »—[PY: ICH.FEUERZEUG = FEUERZEUG :PY]« 
-
+                          
+                                    £2
                               ¶ ¬· »—[PY: DEF ANZÜNDEN(ICH) :PY]« 
 
                                     ¬· »—[PY: ICH.ANZÜNDEN +=HIGH :PY]« 
@@ -274,8 +275,8 @@
                                                ¬· »[PY: MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) :PY]« 
                                                ¬· »[PY: ICH-BEKIFFT.ANZÜNDEN() :PY]«
 
-                                    ¶¶ ¬· »[PY: RETURN __INIT__ :PY]«
-
+                                    ¶¶ ¬· »—[PY: RETURN __INIT__ :PY]«
+                                           £2
             ¬· —[": ABER WAS WILL MAN AUICH VON SO EINEM VEREIN HALTEN DER NUR GEKRITZEL UNTER ALKOHOLKONSUM VERANSTALTET :"]
                 ¬· [": ABER HEY , ZU EURER VERTEITIGUNG : „ DAS IST DER ZUKÜNFTIGE BAUMODUS “ .. :"]
      

@@ -399,10 +399,9 @@ public class BuggyInvoiceLoop {
                    ¬· »[×: mwst = summe * 0.19 :×]«
                    ¬· »[×: gesamt += summe + mwst :×]«
                    ¬· »—[": AUSGABE :"]«
-
                        ¬·¤ »—[": summe :"]«
                             ÷ [F—(3)—FØ: <CACHE> :Ø]
-                            
+
         ± [T—(3)—TØ: <CACHE> :Ø]                     
     ¬· »—[": GESAMTSUMME :"]«
         ¬·¤ »[": gesamt :"]«

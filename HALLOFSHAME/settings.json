@@ -392,3 +392,24 @@ public class BuggyInvoiceLoop {
     }
 }
 
+ _    _ _______      _______ __   _ ______ 
+  \  /  |______      |______ | \  | |     \
+   \/   ______|      |______ |  \_| |_____/
+
+
+¢! # NUR EIN VORSCHLAG | BIN JA NICHT SO 
+»—[": RECHNUNGSERSTELLUNG IN MCS :"]«
+    ¬· »—[": PREIS UND MENGE EINGEBEN :"]«
+        ¬· »—[×: preis = eingabe :×]«
+            ¶ ¬· »—[": WENN PREIS == -1 :"]«
+                ¬· »—[": BRICH AB :"]«
+            ¶¶ ¬· »—[": MENGE EINGEBEN :"]«
+                ¬· »—[×: menge = eingabe :×]«
+                ¬· »—[×: summe = preis * menge :×]«
+                ¬· »—[×: mwst = summe * 0.19 :×]«
+                ¬· »—[×: gesamt += summe + mwst :×]«
+                ¬· »—[": AUSGABE :"]«
+                    ¬·¤ »—[": summe :"]«
+    ¬· »—[": GESAMTSUMME :"]«
+        ¬·¤ »—[": gesamt :"]«
+!¢

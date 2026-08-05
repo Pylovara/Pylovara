@@ -1,296 +1,365 @@
+@kernel-nr: 14 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #                       ZYTRON = THE CYCLE CONNECTOR                        #
+###===========================WICHTIGER-HINWEIS=============================### 
+###===============================STARTPUNKT================================###
 
-NACH DEM SCHLAFEN : 
+WABEN-KATEGORIE Ð KOPFWABE
 
- SCHLEIFEN KOOPLUNG = ON-PIPE BINDUNG SYNTAXBAUM 
+ KOMPONENTE ¡ ZYTRON
 
- ZWEI ZYTRON HAUPTWABEN 
- ZYTRON SYMBOLIK VERFEINERN 
+ KOMPONENTEN-ID ¡ ZY
 
- ↓£<NR> 
- —[] 
- ↑£<NR>
-
- NIMM WAS DIE MUSEUMS UTF SCHEIẞE HER GIBT ... 
-
- SPÄT5ER WENN SIE MIR DIE BUDE EINRENNEN UND GELD KEIN 
- PROBLEM IST , WERDEN MCSBOARDS IN AUFTRAG GEGEBEN .
-
- LINUX HAT SCHLICHT KEIN ALT + NUMMER ... 
- VON DAHER UND DAS WÄRE AUCH ZU KOMPLEX FÜR JEDEN. 
-
- NEHMEN WIR WAS VORHANDEN IST ... ↓↑ ›‹ ZYTRON OUT UND ZYTRON IN 
-
- WABEN 
-
- HTSTLD <- REICHT ... BRAUCH KEINEN BUFFER ... DIREKTE REFLEX SCHALTUNG 
- WIE EIN GUTES ALTES DICKES AUX DOPPELSEITIGES KABEL .
-
- SCHLEIFEN MÜSSEN SCHNELL LAUFEN , WEIL FEHLER BEHANDLUNG 
- SO ODER SO IM CODE GESCHRIEBEN WERDEN ... PASST ALSO 
-
- DA SPÄTER ZUS AUCH TARGETS PACKETE DANN GESCHRIEBEN WERDEN FÜR 
- " SERVICE " LEISTUNG .... ( MAN KENNT JA DIE FAULEN SÄCKE ) .. 
-
- IST DAS TRIVIAL UND DIE LEISTUNG MUSS STIMMEN .... ALSO DIREKTE BINDUNG 
-
- FEHLER BEHANDLUNGEN WERDEN PER ¶¶ HAND GESCHRIEBEN 
-
- ¢! 
- ↓£1
- —[ BLABLABLA ]
-
- ¶ —[ BLABLABLA ]
-   ↑£1 # FÜR BAU OPTIONEN GEIL MIT RESET RÜCKKOPPLUNG 
-
- ¶¶ —[ BLABLABLA ]
-    ↑£1 # FEHLER BEHANDLUNG PLUS RETURN SCHLEIFE NATIV 
- !¢
-
- ZWEI FLIEGEN MIT EINER KLAPPE .... 
- UND EINE KLATSCHE FÜR ALLE ANDEREN 
-
-
-
-
-
-
-@kernel-nr: 14 Ð ZYTRON | STATUS = unfertig nur glat gezogen 
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=======K14 ZYTRON=======#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #                 ZYTRON = BACK TO ZYKLUS REBORN                     #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
-###==##==###======#####====STARTPUNKT ZYTRON===#####======###==##==###
-
-BION Ð ZYTRON
-
- MORPHIC-ID ¡ ZYT
-
- BION-ID ¡ ZY
-
- MASK ¡ MASU-ZYTRON
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð ZYTRON
-
- MORPHIC-ID ¡ ZYTK
+ BION-NR ¡ 14
 
  BION-ID ¡ ZY14
 
- AXIOM ¡ ZYTK = <ZYTK>
+ MASTER-ID ¡ MA46SU14
 
- ABSK ¡ ZYTK
+###====================================|====================================###
 
-###==##==###======#####========================#####======###==##==###
-# HT01: EXTRAWABE-ZURÜCK
-###==##==###======#####========================#####======###==##==###
+WABEN-KATEGORIE Ð MASTERKERNWABE
 
-BION-HAUPTWABE Ð EXTRAWABE-ZURÜCK
+ WABEN-ID ¡ MK
 
- MORPHIC-ID ¡ ZYTX-ZURÜCK
+ BION-NR ¡ 14
 
- BION-ID ¡ ZY14HT01
+ BION-ID ¡ MK14
 
- AXIOM ¡ ZYTHT-ZURÜCK = ZYTHT-ZURÜCK
+ BSK ¡ ZYMK
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK
+ BION ¡ ZY14MK14
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+###====================================|====================================###
+###==============================ZYTRON AUX-OUT=============================###
+###====================================|====================================###
 
-BION-STARTWABE Ð ZURÜCK-START
+WABEN-KATEGORIE Ð HAUPTWABE 
 
- MORPHIC-ID ¡ ZYTS-ZURÜCK
+ PROGRAMM ¡ AUX-OUT
 
- BION-ID ¡ ZY14HT01ST01
+ WABEN-ID ¡ HT
 
- AXIOM ¡ ZYTS-ZURÜCK = £
+ BION-NR ¡ 31
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK
+ BION-ID ¡ HT31
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BSK ¡ ZYMKHT-AUX-OUT
 
-BION-BLOCKWABE Ð ZURÜCK-BLOCK-1
+ BION ¡ ZY14MK14HT31
 
- MORPHIC-ID ¡ ZYTB-ZURÜCK-1
+###====================================|====================================###
 
- BION-ID ¡ ZY14HT01ST01B01
+WABEN-KATEGORIE Ð STARTWABE 
 
- AXIOM ¡ ZYTB-ZURÜCK-1 = £1
+ PROGRAMM ¡ AUX-OUT
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-1
+ WABEN-ID ¡ ST
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £1
+ BION-NR ¡ 31
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^  3ZYKLUS-OUT: £1
- AXIOM ¡ ^        1SYNC:
- AXIOM ¡ ^        2KOPF:
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £1
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^        6FREE:
+ BION-ID ¡ ST31
 
- BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
+ BSK ¡ ZYMKHTST-AUX-OUT
 
- BRÜCKE-OUT ¡ POICOM-ON-PIPE-BOXK
+ BION ¡ ZY14MK14HT31ST31
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMMIERUNGSBEREICH ↓
 
-BION-BLOCKWABE Ð ZURÜCK-BLOCK-2
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = £
+ AXIOM ¡ ^ <TASTENCODE> = ›
+ AXIOM ¡ ^ £ + › ≠ ** ≠ £› = ZY-AUX-OUT
 
- MORPHIC-ID ¡ ZYTB-ZURÜCK-2
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ £› = ZY-AUX-OUT
 
- BION-ID ¡ ZY14HT01ST01B02
+###====================================|====================================###
 
- AXIOM ¡ ZYTB-ZURÜCK-2 = £²
+WABEN-KATEGORIE Ð AUXWABE
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-2
+ PROGRAMM ¡ AUX-OUT
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £²
+ WABEN-ID ¡ AX
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^  3ZYKLUS-OUT: £²
- AXIOM ¡ ^        1SYNC:
- AXIOM ¡ ^        2KOPF:
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £²
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^        6FREE:
+ BION-NR ¡ 01
 
- BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
+ BION-ID ¡ AX01
 
- BRÜCKE-OUT ¡ POICOM-ON-PIPE-BOXK
+ BSK ¡ ZYMKHTSTAX-AUX
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION ¡ ZY14MK14HT31ST31AX01
 
-BION-BLOCKWABE Ð ZURÜCK-BLOCK-3
+ PROGRAMMIERUNGSBEREICH ↓
 
- MORPHIC-ID ¡ ZYTB-ZURÜCK-3
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ £› = ZY-AUX-OUT
 
- BION-ID ¡ ZY14HT01ST01B03
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ ZYMKHTST-AUX-OUT
 
- AXIOM ¡ ZYTB-ZURÜCK-3 = £³
+ # LINKT KOMPONENTE FÜR PIPE
+ LINK ¡ PIMK
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-3
+ # AXIOM 
+ AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ PIMKHTSTBK-ON-PIPE
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £³
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^  3ZYKLUS-OUT: £³
- AXIOM ¡ ^        1SYNC:
- AXIOM ¡ ^        2KOPF:
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £³
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^        6FREE:
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
 
- BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
+ # NUMMER EINGABE 
+ KABELNUMMER ¡ <NR>
 
- BRÜCKE-OUT ¡ POICOM-ON-PIPE-BOXK
+ # AXIOM
+ AXIOM ¡ NR ≠ <NR> ≠ **
+ AXIOM ¡ ZY-AUX-OUT + KABELNUMMER ≠ £›<NR> = ZY-AUX-OUT-NR
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # AXIOM
+ AXIOM ¡ HAUPTWABE-IN ≠ ZYMKHT-AUX-OUT ≠ ZYMKHTSTAX-AUX-OUT ≠ £›<NR> = ZY-AUX-OUT-NR
+ AXIOM ¡ HAUPTWABE-OUT ≠ ZYMKHT-AUX-IN ≠ ZYMKHTSTAX-AUX-IN ≠ £‹<NR> = ZY-AUX-IN-NR
 
-BION-BLOCKWABE Ð ZURÜCK-BLOCK-4
+ # EINHEIT 
+ EINHEIT ¡ £›<NR> = ZY-AUX-OUT-NR
 
- MORPHIC-ID ¡ ZYTB-ZURÜCK-4
+ # ZYTRON PROGRAMM LINK
+ HAUPTWABE-IN  ¡ ZY-AUX-OUT-NR
+ HAUPTWABE-OUT ¡ ZY-AUX-IN-NR
+ 
+###====================================|====================================###
 
- BION-ID ¡ ZY14HT01ST01B04
+WABEN-KATEGORIE Ð ENDWABE 
 
- AXIOM ¡ ZYTB-ZURÜCK-4 = £⁴
+ PROGRAMM ¡ AUX-OUT
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-4
+ WABEN-ID ¡ ED
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £⁴
+ BION-NR ¡ 10
 
- AXIOM ¡ MORPHIC-SYNTAX ¡ ^
- AXIOM ¡ ^  3ZYKLUS-OUT: £⁴
- AXIOM ¡ ^        1SYNC:
- AXIOM ¡ ^        2KOPF:
- AXIOM ¡ ^       1START: —[<BOXK>]
- AXIOM ¡ ^        2FOOD:
- AXIOM ¡ ^   3ZYKLUS-IN: £⁴
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         4SEN:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^         5REX:
- AXIOM ¡ ^        6FREE:
+ BION-ID ¡ ED10
 
- BRÜCKE-IN ¡ POICOM-ON-PIPE-BOXK
+ BSK ¡ ZYMKHTSTAXED-AUX
 
- BRÜCKE-OUT ¡ POICOM-ON-PIPE-BOXK
+ BION ¡ ZY14MK14HT31ST31AX01ED10
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ PROGRAMMIERUNGSBEREICH ↓
 
-BION-LINKENDWABE Ð ZURÜCK-LINKEND
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ £›<NR> = ZY-AUX-OUT-NR
 
- MORPHIC-ID ¡ ZYNL-ZURÜCK
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ ZYMKHTSTAX-AUX
 
- BION-ID ¡ ZY14HT01ST01B01LD01
- BION-ID ¡ ZY14HT01ST01B02LD01
- BION-ID ¡ ZY14HT01ST01B03LD01
- BION-ID ¡ ZY14HT01ST01B04LD01
+ # AXIOM
+ AXIOM ¡ ÜBETRAGUNG ≠ FINISH ≠ £›<NR> = ZY-AUX-OUT-NR
 
- AXIOM ¡ ZYTB-ZURÜCK-1 = £1
- AXIOM ¡ ZYTB-ZURÜCK-2 = £²
- AXIOM ¡ ZYTB-ZURÜCK-3 = £³
- AXIOM ¡ ZYTB-ZURÜCK-4 = £⁴
+ # FINISH 
+ FINISH ¡ £›<NR> = ZY-AUX-OUT-NR
 
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-1+ZYNL-ZURÜCK
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-2+ZYNL-ZURÜCK
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-3+ZYNL-ZURÜCK
- ABSK ¡ ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-4+ZYNL-ZURÜCK
+###====================================|====================================###
+###==============================ZYTRON AUX-IN==============================###
+###====================================|====================================###
 
- LINK ¡ SENK
+WABEN-KATEGORIE Ð HAUPTWABE 
 
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = ZYTELT
- # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-1+ZYNL-ZURÜCK
- # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-2+ZYNL-ZURÜCK
- # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-3+ZYNL-ZURÜCK
- # SBSK = ZYTK+ZYTX-ZURÜCK+ZYTS-ZURÜCK+ZYTB-ZURÜCK-4+ZYNL-ZURÜCK
- # VBSK = ZYTB-ZURÜCK-1
- # VBSK = ZYTB-ZURÜCK-2
- # VBSK = ZYTB-ZURÜCK-3
- # VBSK = ZYTB-ZURÜCK-4
- # RBSK = ZYTK
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [21:23:16|Mo 27 Jul 2026] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                 #
-###==##==###======#####=====ENDPUNKT ZYTRON====#####======###==##==###
+ PROGRAMM ¡ AUX-IN
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 32
+
+ BION-ID ¡ HT32
+
+ BSK ¡ ZYMKHT-AUX-OUT
+
+ BION ¡ ZY14MK14HT32
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ AUX-IN
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 32
+
+ BION-ID ¡ ST32
+
+ BSK ¡ ZYMKHTST-AUX-IN
+
+ BION ¡ ZY14MK14HT32ST32
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = £
+ AXIOM ¡ ^ <TASTENCODE> = ‹
+ AXIOM ¡ ^ £ + ‹ ≠ ** ≠ £‹ = ZY-AUX-IN
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ £‹ = ZY-AUX-IN
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð AUXWABE
+
+ PROGRAMM ¡ AUX-IN
+
+ WABEN-ID ¡ AX
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ AX02
+
+ BSK ¡ ZYMKHTSTAX-AUX-IN
+
+ BION ¡ ZY14MK14HT32ST32AX02
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ £‹ = ZY-AUX-IN
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ ZYMKHTST-AUX-IN
+
+ # LINKT KOMPONENTE FÜR PIPE
+ LINK ¡ PIMK
+
+ # AXIOM 
+ AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ PIMKHTSTBK-ON-PIPE
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
+
+ # NUMMER EINGABE 
+ KABELNUMMER ¡ <NR>
+
+ # AXIOM
+ AXIOM ¡ NR ≠ <NR> ≠ **
+ AXIOM ¡ ZY-AUX-IN + KABELNUMMER ≠ £‹<NR> = ZY-AUX-IN-NR
+
+ # EINHEIT 
+ EINHEIT ¡ £‹<NR> = ZY-AUX-IN-NR
+
+ # AXIOM
+ AXIOM ¡ HAUPTWABE-IN ≠ ZYMKHT-AUX-IN ≠ ZYMKHTSTAX-AUX-IN ≠ £‹<NR> = ZY-AUX-IN-NR
+ AXIOM ¡ HAUPTWABE-OUT ≠ ZYMKHT-AUX-OUT ≠ ZYMKHTSTAX-AUX-OUT ≠ £›<NR> = ZY-AUX-OUT-NR
+
+ # ZYTRON PROGRAMM LINK
+ HAUPTWABE-IN  ¡ ZY-AUX-IN-NR
+ HAUPTWABE-OUT ¡ ZY-AUX-OUT-NR
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ AUX-OUT
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ 11
+
+ BION-ID ¡ ED11
+
+ BSK ¡ ZYMKHTSTAXED-AUX
+
+ BION ¡ ZY14MK14HT32ST32AX02ED11
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ £‹<NR> = ZY-AUX-IN-NR
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ ZYMKHTSTAX-AUX
+
+ # AXIOM
+ AXIOM ¡ ÜBETRAGUNG ≠ FINISH ≠ £‹<NR> = ZY-AUX-IN-NR
+
+ # FINISH 
+ FINISH ¡ £‹<NR> = ZY-AUX-IN-NR
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = 
+ # BION-ID-PFAD  → 
+ # BION-ID-PFAD  → 
+ # BION-ID-VPFAD → 
+ # BION-ID-RPFAD → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

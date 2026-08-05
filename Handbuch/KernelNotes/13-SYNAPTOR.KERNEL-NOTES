@@ -1,6 +1,6 @@
-@kernel-nr: 24 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+@kernel-nr: 13 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- #              SYNAPTOR = PIPEP PROTEIN PROZESS CONFLUENCE GATE             #
+ #              SYNAPTOR = PIPE'P PROTEIN PROZESS CONFLUENCE GATE             #
 ###===========================WICHTIGER-HINWEIS=============================### 
 ###===============================STARTPUNKT================================###
 
@@ -31,18 +31,20 @@ WABEN-KATEGORIE Ð MASTERKERNWABE
  BION ¡ SY13MK13
 
 ###====================================|====================================###
+###===============================SYNAPTOR NR0==============================###
+###====================================|====================================###
 
 WABEN-KATEGORIE Ð HAUPTWABE 
 
- PROGRAMM ¡ SYNC1
+ PROGRAMM ¡ SYNC0
 
  WABEN-ID ¡ HT
 
  BION-NR ¡ 27
 
- BION-ID ¡ HT13
+ BION-ID ¡ HT27
 
- BSK ¡ SYMKHT-SYNC1
+ BSK ¡ SYMKHT-SYNC0
 
  BION ¡ SY13MK13HT
 
@@ -50,7 +52,7 @@ WABEN-KATEGORIE Ð HAUPTWABE
 
 WABEN-KATEGORIE Ð STARTWABE 
 
- PROGRAMM ¡ SYNC
+ PROGRAMM ¡ SYNC0
 
  WABEN-ID ¡ ST
 
@@ -58,7 +60,7 @@ WABEN-KATEGORIE Ð STARTWABE
 
  BION-ID ¡ ST27
 
- BSK ¡ SYMKHTST-SYNC
+ BSK ¡ SYMKHTST-SYNC0
 
  BION ¡ SY13MK13HT27ST27
 
@@ -67,26 +69,16 @@ WABEN-KATEGORIE Ð STARTWABE
  # BAUT DIE SYMBOLE 
  AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
  AXIOM ¡ ^ <TASTENCODE> = ¿º
- AXIOM ¡ ^ <TASTENCODE> = ¿¹
- AXIOM ¡ ^ <TASTENCODE> = ¿²
- AXIOM ¡ ^ <TASTENCODE> = ¿³
  AXIOM ¡ ^ ¿ + º ≠ ** ≠ ¿º = SY-0-ANSCHLUSS
- AXIOM ¡ ^ ¿ + ¹ ≠ ** ≠ ¿¹ = SY-1-ANSCHLUSS
- AXIOM ¡ ^ ¿ + ² ≠ ** ≠ ¿² = SY-2-ANSCHLUSS
- AXIOM ¡ ^ ¿ + ³ ≠ ** ≠ ¿³ = SY-3-ANSCHLUSS
-
 
  # LIEGT IM RAM
  GEBAUTE-EINHEIT ¡ ¿º = SY-0-ANSCHLUSS
- GEBAUTE-EINHEIT ¡ ¿¹ = SY-1-ANSCHLUSS
- GEBAUTE-EINHEIT ¡ ¿² = SY-2-ANSCHLUSS 
- GEBAUTE-EINHEIT ¡ ¿³ = SY-3-ANSCHLUSS
 
 ###====================================|====================================###
 
 WABEN-KATEGORIE Ð SYNCWABE
 
- PROGRAMM ¡ SYNC
+ PROGRAMM ¡ SYNCO
 
  WABEN-ID ¡ SN
 
@@ -94,44 +86,572 @@ WABEN-KATEGORIE Ð SYNCWABE
 
  BION-ID ¡ SN01
 
- BSK ¡ SYMKHTSN01-SYNC
+ BSK ¡ SYMKHTSN-SYNCO
 
- BION ¡ SY13MK13HT27ST27
+ BION ¡ SY13MK13HT27ST27SN01
 
  PROGRAMMIERUNGSBEREICH ↓
 
  # BINDET RAM GEBAUTE-EINHEIT 
  EINHEIT ¡ ¿º = SY-0-ANSCHLUSS
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ SYMKHTST-SYNC0
+
+ # LINKT KOMPONENTE FÜR PIPE
+ LINK ¡ PIMK
+
+ # AXIOM 
+ AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ PIMKHTSTBK-ON-PIPE
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
+
+ # LINK SYNC
+ LINK-SYNC ¡ REMK
+ LINK-SYNC ¡ ICMK
+
+ # AXIOM
+ AXIOM ¡ LINK-SYNC ≠ REMK ≠ RXMKHT-MANAGER ≠ RXMKHTSTCB-MANAGER
+ AXIOM ¡ LINK-SYNC ≠ ICMK ≠ ICMKHT-PLATZ ≠ ICMKHTSTLD-PLATZ
+
+ # AXIOM SIGNAL
+ AXIOM ¡ SIGNAL-NUMMER ≠ ** ≠ <ZAHL>
+ AXIOM ¡ 01        DATENKANAL: <REMK>
+ AXIOM ¡ 02        DATENKANAL: <REMK>
+ AXIOM ¡ 03        DATENKANAL: <REMK>
+ AXIOM ¡ 04        DATENKANAL: <REMK>
+ AXIOM ¡ 05        DATENKANAL: <REMK>
+ AXIOM ¡ 06        DATENKANAL: <REMK>
+ AXIOM ¡ 07        DATENKANAL: <REMK>
+ AXIOM ¡ 08        DATENKANAL: <REMK>
+ AXIOM ¡ 09        DATENKANAL: <REMK>
+ AXIOM ¡ 10        DATENKANAL: <REMK>
+ AXIOM ¡ 11        DATENKANAL: <REMK>
+ AXIOM ¡ 12        DATENKANAL: <REMK>
+ AXIOM ¡ 13        DATENKANAL: <REMK>
+ AXIOM ¡ 14        DATENKANAL: <REMK>
+ AXIOM ¡ 15        DATENKANAL: <REMK>
+ AXIOM ¡ 16        DATENKANAL: <REMK>
+ AXIOM ¡ 17        DATENKANAL: <REMK>
+ AXIOM ¡ 18        DATENKANAL: <REMK>
+ AXIOM ¡ 19        DATENKANAL: <REMK>
+ AXIOM ¡ 20        DATENKANAL: <REMK>
+
+ # AXIOM 
+ AXIOM ¡ SIGNAL-NUMMER ≠ NR ABFRAGE ≠ <NR> DATENKANAL ≠ SYNC-PROZESS
+
+ # WÄHLT DIE VERBINDUNG 
+ SYNC-PROZESS-IN ¡ SY-0-ANSCHLUSS
+
+###====================================|====================================###
+
+
+
+
+
+
+###====================================|====================================###
+###===============================SYNAPTOR NR1==============================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ SYNC1
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 28
+
+ BION-ID ¡ HT28
+
+ BSK ¡ SYMKHT-SYNC1
+
+ BION ¡ SY13MK13HT28
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ SYNC1
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 28
+
+ BION-ID ¡ ST28
+
+ BSK ¡ SYMKHTST-SYNC1
+
+ BION ¡ SY13MK13HT28ST28
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ¿¹
+ AXIOM ¡ ^ ¿ + ¹ ≠ ** ≠ ¿¹ = SY-1-ANSCHLUSS
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¿¹ = SY-1-ANSCHLUSS
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYNCWABE
+
+ PROGRAMM ¡ SYNC1
+
+ WABEN-ID ¡ SN
+
+ BION-NR ¡ 02
+
+ BION-ID ¡ SN02
+
+ BSK ¡ SYMKHTSN-SYNC1
+
+ BION ¡ SY13MK13HT28ST28SN02
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
  EINHEIT ¡ ¿¹ = SY-1-ANSCHLUSS
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ SYMKHTST-SYNC1
+
+ # LINKT KOMPONENTE FÜR PIPE
+ LINK ¡ PIMK
+
+ # AXIOM 
+ AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ PIMKHTSTBK-ON-PIPE
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
+
+ # LINK SYNC
+ LINK-SYNC ¡ REMK
+ LINK-SYNC ¡ ICMK
+
+ # AXIOM
+ AXIOM ¡ LINK-SYNC ≠ REMK ≠ RXMKHT-MANAGER ≠ RXMKHTSTCB-MANAGER
+ AXIOM ¡ LINK-SYNC ≠ ICMK ≠ ICMKHT-PLATZ ≠ ICMKHTSTLD-PLATZ
+
+ # AXIOM SIGNAL
+ AXIOM ¡ SIGNAL-NUMMER ≠ ** ≠ <ZAHL>
+ AXIOM ¡ 01        DATENKANAL: <REMK>
+ AXIOM ¡ 02        DATENKANAL: <REMK>
+ AXIOM ¡ 03        DATENKANAL: <REMK>
+ AXIOM ¡ 04        DATENKANAL: <REMK>
+ AXIOM ¡ 05        DATENKANAL: <REMK>
+ AXIOM ¡ 06        DATENKANAL: <REMK>
+ AXIOM ¡ 07        DATENKANAL: <REMK>
+ AXIOM ¡ 08        DATENKANAL: <REMK>
+ AXIOM ¡ 09        DATENKANAL: <REMK>
+ AXIOM ¡ 10        DATENKANAL: <REMK>
+ AXIOM ¡ 11        DATENKANAL: <REMK>
+ AXIOM ¡ 12        DATENKANAL: <REMK>
+ AXIOM ¡ 13        DATENKANAL: <REMK>
+ AXIOM ¡ 14        DATENKANAL: <REMK>
+ AXIOM ¡ 15        DATENKANAL: <REMK>
+ AXIOM ¡ 16        DATENKANAL: <REMK>
+ AXIOM ¡ 17        DATENKANAL: <REMK>
+ AXIOM ¡ 18        DATENKANAL: <REMK>
+ AXIOM ¡ 19        DATENKANAL: <REMK>
+ AXIOM ¡ 20        DATENKANAL: <REMK>
+
+ # AXIOM 
+ AXIOM ¡ SIGNAL-NUMMER ≠ NR ABFRAGE ≠ <NR> DATENKANAL ≠ SYNC-PROZESS
+
+ # WÄHLT DIE VERBINDUNG 
+ SYNC-PROZESS-IN ¡ SY-1-ANSCHLUSS
+
+###====================================|====================================###
+
+
+
+
+
+
+###====================================|====================================###
+###===============================SYNAPTOR NR2==============================###
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ SYNC2
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 29
+
+ BION-ID ¡ HT29
+
+ BSK ¡ SYMKHT-SYNC2
+
+ BION ¡ SY13MK13HT29
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ SYNC2
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 29
+
+ BION-ID ¡ ST29
+
+ BSK ¡ SYMKHTST-SYNC2
+
+ BION ¡ SY13MK13HT29ST29
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ¿²
+ AXIOM ¡ ^ ¿ + ² ≠ ** ≠ ¿² = SY-2-ANSCHLUSS
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¿² = SY-2-ANSCHLUSS 
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYNCWABE
+
+ PROGRAMM ¡ SYNC2
+
+ WABEN-ID ¡ SN
+
+ BION-NR ¡ 03
+
+ BION-ID ¡ SN03
+
+ BSK ¡ SYMKHTSN-SYNC2
+
+ BION ¡ SY13MK13HT29ST29SN03
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
  EINHEIT ¡ ¿² = SY-2-ANSCHLUSS 
  EINHEIT ¡ ¿³ = SY-3-ANSCHLUSS
 
  # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ SYMKHTST-SYNC
+ WABEN-RESET ¡ SYMKHTST-SYNC2
 
- # LINKT KOMPONENTE
+ # LINKT KOMPONENTE FÜR PIPE
  LINK ¡ PIMK
 
  # AXIOM 
- AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ 
+ AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ PIMKHTSTBK-ON-PIPE
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
+
+ # LINK SYNC
+ LINK-SYNC ¡ REMK
+ LINK-SYNC ¡ ICMK
+
+ # AXIOM
+ AXIOM ¡ LINK-SYNC ≠ REMK ≠ RXMKHT-MANAGER ≠ RXMKHTSTCB-MANAGER
+ AXIOM ¡ LINK-SYNC ≠ ICMK ≠ ICMKHT-PLATZ ≠ ICMKHTSTLD-PLATZ
+
+ # AXIOM SIGNAL
+ AXIOM ¡ SIGNAL-NUMMER ≠ ** ≠ <ZAHL>
+ AXIOM ¡ 01        DATENKANAL: <REMK>
+ AXIOM ¡ 02        DATENKANAL: <REMK>
+ AXIOM ¡ 03        DATENKANAL: <REMK>
+ AXIOM ¡ 04        DATENKANAL: <REMK>
+ AXIOM ¡ 05        DATENKANAL: <REMK>
+ AXIOM ¡ 06        DATENKANAL: <REMK>
+ AXIOM ¡ 07        DATENKANAL: <REMK>
+ AXIOM ¡ 08        DATENKANAL: <REMK>
+ AXIOM ¡ 09        DATENKANAL: <REMK>
+ AXIOM ¡ 10        DATENKANAL: <REMK>
+ AXIOM ¡ 11        DATENKANAL: <REMK>
+ AXIOM ¡ 12        DATENKANAL: <REMK>
+ AXIOM ¡ 13        DATENKANAL: <REMK>
+ AXIOM ¡ 14        DATENKANAL: <REMK>
+ AXIOM ¡ 15        DATENKANAL: <REMK>
+ AXIOM ¡ 16        DATENKANAL: <REMK>
+ AXIOM ¡ 17        DATENKANAL: <REMK>
+ AXIOM ¡ 18        DATENKANAL: <REMK>
+ AXIOM ¡ 19        DATENKANAL: <REMK>
+ AXIOM ¡ 20        DATENKANAL: <REMK>
+
+ # AXIOM 
+ AXIOM ¡ SIGNAL-NUMMER ≠ NR ABFRAGE ≠ <NR> DATENKANAL ≠ SYNC-PROZESS
+
+ # WÄHLT DIE VERBINDUNG 
+ SYNC-PROZESS-IN ¡ SY-2-ANSCHLUSS
+
+###====================================|====================================###
 
 
 
 
 
+###====================================|====================================###
+###===============================SYNAPTOR NR3==============================###
+###====================================|====================================###
 
+WABEN-KATEGORIE Ð HAUPTWABE 
 
+ PROGRAMM ¡ SYNC3
 
+ WABEN-ID ¡ HT
 
+ BION-NR ¡ 30
 
+ BION-ID ¡ HT30
 
+ BSK ¡ SYMKHT-SYNC3
 
+ BION ¡ SY13MK13HT30
 
+###====================================|====================================###
 
+WABEN-KATEGORIE Ð STARTWABE 
 
+ PROGRAMM ¡ SYNC3
 
+ WABEN-ID ¡ ST
 
+ BION-NR ¡ 30
 
+ BION-ID ¡ ST30
+
+ BSK ¡ SYMKHTST-SYNC3
+
+ BION ¡ SY13MK13HT30ST30
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = ¿³
+ AXIOM ¡ ^ ¿ + ³ ≠ ** ≠ ¿³ = SY-3-ANSCHLUSS
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¿³ = SY-3-ANSCHLUSS
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SYNCWABE
+
+ PROGRAMM ¡ SYNC3
+
+ WABEN-ID ¡ SN
+
+ BION-NR ¡ 04
+
+ BION-ID ¡ SN04
+
+ BSK ¡ SYMKHTSN-SYNC3
+
+ BION ¡ SY13MK13HT30ST30SN04
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ ¿³ = SY-3-ANSCHLUSS
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ SYMKHTST-SYNC3
+
+ # LINKT KOMPONENTE FÜR PIPE
+ LINK ¡ PIMK
+
+ # AXIOM 
+ AXIOM ¡ LINK ≠ PIMK ≠ PIMKHT-ON-PIPE ≠ PIMKHTSTBK-ON-PIPE
+
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
+
+ # LINK SYNC
+ LINK-SYNC ¡ REMK
+ LINK-SYNC ¡ ICMK
+
+ # AXIOM
+ AXIOM ¡ LINK-SYNC ≠ REMK ≠ RXMKHT-MANAGER ≠ RXMKHTSTCB-MANAGER
+ AXIOM ¡ LINK-SYNC ≠ ICMK ≠ ICMKHT-PLATZ ≠ ICMKHTSTLD-PLATZ
+
+ # AXIOM SIGNAL
+ AXIOM ¡ SIGNAL-NUMMER ≠ ** ≠ <ZAHL>
+ AXIOM ¡ 01        DATENKANAL: <REMK>
+ AXIOM ¡ 02        DATENKANAL: <REMK>
+ AXIOM ¡ 03        DATENKANAL: <REMK>
+ AXIOM ¡ 04        DATENKANAL: <REMK>
+ AXIOM ¡ 05        DATENKANAL: <REMK>
+ AXIOM ¡ 06        DATENKANAL: <REMK>
+ AXIOM ¡ 07        DATENKANAL: <REMK>
+ AXIOM ¡ 08        DATENKANAL: <REMK>
+ AXIOM ¡ 09        DATENKANAL: <REMK>
+ AXIOM ¡ 10        DATENKANAL: <REMK>
+ AXIOM ¡ 11        DATENKANAL: <REMK>
+ AXIOM ¡ 12        DATENKANAL: <REMK>
+ AXIOM ¡ 13        DATENKANAL: <REMK>
+ AXIOM ¡ 14        DATENKANAL: <REMK>
+ AXIOM ¡ 15        DATENKANAL: <REMK>
+ AXIOM ¡ 16        DATENKANAL: <REMK>
+ AXIOM ¡ 17        DATENKANAL: <REMK>
+ AXIOM ¡ 18        DATENKANAL: <REMK>
+ AXIOM ¡ 19        DATENKANAL: <REMK>
+ AXIOM ¡ 20        DATENKANAL: <REMK>
+
+ # AXIOM 
+ AXIOM ¡ SIGNAL-NUMMER ≠ NR ABFRAGE ≠ <NR> DATENKANAL ≠ SYNC-PROZESS
+
+ # WÄHLT DIE VERBINDUNG 
+ SYNC-PROZESS-IN ¡ SY-3-ANSCHLUSS
+
+###====================================|====================================###
 
 
 

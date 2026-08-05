@@ -10,13 +10,13 @@
  #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
  #   01  Æ ·  TRANSAKTIONSRAHMEN       | 02  Æ ·  PROTEIN                    #
  #   03  Æ ·  PROTON                   | 04  Æ ·  TRENNBEFEHL                #
- #   05  Æ ·  BINDUNGSBEFEHL           | 06  Æ Ŋ  AKTIONSDRAHT               #
+ #   05  Æ ·  BINDUNGSBEFEHL           | 06  Æ ·  AKTIONSDRAHT               #
  #   07  Æ ·  REX                      | 08  Æ ·  ICTUS                      #
  #   09  Æ ·  BOXIS                    | 10  Æ ·  SENTIATOR                  #
  #   11  Æ ·  NITROX                   | 12  Æ ·  FEED                       #
  #   13  Æ X  SYNAPTOR                 | 14  Æ ·  ZYTRON                     #
 ###==============================SYSTEM-ELEMENTE============================###
-########################### ALTER STRUKTUR DATEN ##############################
+############################ ALTER STRUKTUR BAUM ##############################
  #   30  - -  VATRON                   | 31  - -  RETRON                     #
  #   32  - -  MCD                      | 33  - -                             #
 ###=================================REGISTER================================###
@@ -36,7 +36,7 @@
  #   95   L3_COMMERCIALLICENSING                     # #     #        #      #
  #   96   L4_AI_ADMINISTRATIONSMANDATE               #    PYLOVARA—SYSTEM©   #
  #   97   L5_POST_MORTEM-CONTROL                     #    #     #            #
- #   98   L6_IMMUTABLE_CORES_DEFINITION              #        #      #  #    #
+ #   98   L6_IMMUTABLE_CORES_DEFINITION              # #      #      #  #    #
  #   99   LICENSE—MANIFEST.PROTO                     #    #              #   #
 ###===============================VERSIONSDATEN=============================###
  # SYSTEM = PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM                               #

@@ -1,10 +1,72 @@
-@kernel-nr: 09 Ð MASTER           | STATUS = DEV LEVEL ROLLING-RELEASE
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=======K9 MASTER========#####======###==##==###  
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #          MASTER = THE MASTER SOURCE OF SINGLE ENTRY POINT        #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
-###==##==###======#####===STARTPUNKT MASTER====#####======###==##==###
+@kernel-nr: 46 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==DEV LEVEL ROLLING-RELEASE===###
+ #             MASTER = THE MASTER SOURCE OF SINGLE ENTRY POINT              #
+###===============================STARTPUNKT================================###
+
+WABEN-KATEGORIE Ð KOPFWABE
+
+ KOMPONENTE ¡ MASTER
+
+ KOMPONENTEN-ID ¡ MA
+
+ BION-NR ¡ 46
+
+ BION-ID ¡ MA46
+
+ MASTER-ID ¡ MA46SU46
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð MASTERKERNWABE
+
+ WABEN-ID ¡ MK
+
+ BION-NR ¡ 46 
+
+ BION-ID ¡ MK46
+
+ BSK ¡ MAMK
+
+ BION ¡ MA46MK46
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð SUPERLIZENZWABE 
+
+ WABEN-ID ¡ SU
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ SU01
+
+ BION ¡ MA46MK46SU01
+
+ MASTER-ID ¡ MK46SU01
+
+ LIZENZBEREICH ↓
+
+ KOMPONENTE-EINTRAG ¡ TRANSAKTIONSRAHMEN
+
+
+
+ DATENBANK ¡ 01-TRANSAKTIONSRAHMEN.KERNEL-NOTES
+
+ PROGRAMM-ANZAHL ¡ 1
+
+ FREIGABE ¡ ALLE
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 BION Ð MASTER 
 

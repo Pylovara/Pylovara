@@ -1,6 +1,6 @@
 @kernel-nr: 06 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- #                 AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                     #
+ #                 AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                    #
 ###===============================STARTPUNKT================================###
 
 WABEN-KATEGORIE Ð KOPFWABE
@@ -154,6 +154,261 @@ WABEN-KATEGORIE Ð AUSFÜHRUNGSWABE
  AUSFÜHRUNG ¡ AUSFÜHRBAR
 
 ###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WABEN-KATEGORIE Ð HAUPTWABE 
+
+ PROGRAMM ¡ IMPULS-MCD
+
+ WABEN-ID ¡ HT
+
+ BION-NR ¡ 33
+
+ BION-ID ¡ HT33
+
+ BSK ¡ AKMKHT-IMPULS-MCD
+
+ BION ¡ AK06MK06HT33
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ IMPULS-MCD
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ 33
+
+ BION-ID ¡ ST33
+
+ BSK ¡ AKMKHTST-IMPULS-MCD
+
+ BION ¡ AK06MK06HT33ST33
+
+
+
+
+
+
+
+!!!! ARGUMENT MERGE !!!!
+
+
+
+
+
+
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = » 
+ AXIOM ¡ ^ <TASTENCODE> = « 
+ AXIOM ¡ ^ » ≠ * ≠ » ≠ AK-START
+ AXIOM ¡ ^ « ≠ * ≠ « ≠ AK-ENDE
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ » = AK-START 
+ GEBAUTE-EINHEIT ¡ « = AK-ENDE
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð COMBOWABE 
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ CB
+
+ BION-NR ¡ 13
+
+ BION-ID ¡ CB13
+
+ BSK ¡ AKMKHTSTCB-IMPULS
+
+ BION ¡ AK06MK06HT07ST07CB13
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ » = AK-START
+ EINHEIT ¡ « = AK-ENDE
+
+ # WENN GEBRAUCHT | BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ AKMKHTST-IMPULS
+
+ # OPTIONAL HOLT KOMPONENTE DAZU
+ LINK ¡ PIMK
+
+ # BENÖTIGTE PASSIVE PROTEIN-EINHEITEN (DATENTRÄGER)
+ EINHEIT ¡ —[<BXMK>] = ON-PIPE-BX-FINAL
+ EINHEIT ¡ —[<POMK>] = ON-PIPE-PO-FINAL
+ EINHEIT ¡ [<BXMK>] = OFF-PIPE-BX-FINAL
+ EINHEIT ¡ [<POMK>] = OFF-PIPE-PO-FINAL
+ EINHEIT ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP-FINAL
+
+ # AXIOMEN (ZÜNDUNG: SYNTHESE AUS AKTIONSDRAHT + PROTEIN)
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + ON-PIPE-BX-FINAL + AK-ENDE ≠ »—[<BXMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + ON-PIPE-PO-FINAL + AK-ENDE ≠ »—[<POMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-BX-FINAL + AK-ENDE ≠ »[<BXMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-PO-FINAL + AK-ENDE ≠ »[<POMK>]« = AUSFÜHRBAR
+ AXIOM ¡ AUSFÜHRBAR ≠ AK-START + OFF-PIPE-BTP-FINAL + AK-ENDE ≠ »[<BXMK><TEMK><POMK>]« = AUSFÜHRBAR
+
+ # LIEGT IM RAM 
+ EINHEIT ¡ »—[<BXMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »—[<POMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<BXMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<POMK>]« = AUSFÜHRBAR
+ EINHEIT ¡ »[<BXMK><TEMK><POMK>]« = AUSFÜHRBAR
+
+###====================================|====================================###
+
+WABEN-KATEGORIE Ð AUSFÜHRUNGSWABE
+
+ PROGRAMM ¡ IMPULS
+
+ WABEN-ID ¡ AN
+
+ BION-NR ¡ 01
+
+ BION-ID ¡ AN01
+
+ BSK ¡ AKMKHTSTAN-IMPULS
+
+ BION ¡ AK06MK06HT07ST07CB13AN01
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ AUSFÜHRBAR
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ AKMKHTSTCB-IMPULS
+
+ # AUSFÜHRUNGSLOGIK & ABSCHLUSS
+ AXIOM ¡ AUSFÜHRBAR ≠ VERARBEITUNG 
+
+ # AUSFÜHRUNGSERLAUBNIS | ABGABE AN IMPULS-TREIBER
+ AUSFÜHRUNG ¡ AUSFÜHRBAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
  # MASTERWORT = 
  # BION-ID-PFAD → AK06+MK06+HT07+ST07+CB13+AN01

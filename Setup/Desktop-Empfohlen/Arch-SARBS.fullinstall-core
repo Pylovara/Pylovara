@@ -1,11 +1,11 @@
 #!/bin/bash
-# SARBS X11 basiertes Tiling Window System 
+# SARBS X11 basiertes Tiling Window System
 # made by Sergius https://github.com/Sergi-us/SARBS/tree/main
-
+# AKTUALISIERT VON SERGIUS 0.2V
 echo "==========================================="
 echo "   SARBS - Slightly Advanced Rolling Backed System"
 echo "   X11-basiertes Tiling Window Management"
-echo "   Erstellt von Sergius (https://github.com/Sergi-us/SARBS)"
+echo "   Erstellt von Sergius (https://codeberg.org/Sergius/SARBS)"
 echo "==========================================="
 echo "Diese Installation muss als root ausgeführt werden!"
 echo "Bitte stellen Sie sicher, dass Sie:"
@@ -27,7 +27,7 @@ echo ""
 echo "✅ Erfolg: Sie sind als root angemeldet."
 echo "Die Installation kann nun beginnen."
 echo ""
-read -p "Drücken Sie ENTER, um mit der Installation fortzufahren... (Strg+C zum Abbrechen)" 
+read -p "Drücken Sie ENTER, um mit der Installation fortzufahren... (Strg+C zum Abbrechen)"
 
 echo ""
 echo "🚀 Starte SARBS-Installation..."

@@ -2,13 +2,9 @@
 ###============================PYLOVARA-SYSTEM==============================###
 ###============ ENTWICKLUNGSBEREICH FÜR DIE NÄCHSTE TWS STRUKUR ============###
 ###==============================WABENAUFBAU================================###
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
- INFORMATIONSSEITE : WABENAUFBAU 
-
- ZWECK : VERSTÄNDNIS
-
-###==============================INFORMATIONEN==============================###
-
+###=============================GESAMTWABE-ANFANG===========================###
 
 MUTTERWABEN-KATEGORIE ¡ <NAME>
 
@@ -28,6 +24,10 @@ TOCHTERWABEN-KATEGORIE ¡ <NAMEN>
 
 KINDWABE-KATEGORIE ¡ <NAMEN>
 
+ ISA-OPTION ¡ 
+
+
+###==============================GESAMTWABE-ENDE============================###
 
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
@@ -66,13 +66,13 @@ KINDWABE-KATEGORIE ¡ <NAMEN>
 
  TOCHTERWABEN-KATEGORIE ¡ REGISTER-MAPPER (REG/RIG)
 
- OPTION ¡ X86_64-BUS-LINK
+ OPTION ¡ 
 
  OPTIONSBLOCK ↓
 
-   IN-ID   ¡ <REG_TARGET>
-   OUT-ID  ¡ <RIG_GATE>
-   LINK-OUT ¡ HW-EXECUTE-IMPULS
+
+
+
 ###====================================================
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###

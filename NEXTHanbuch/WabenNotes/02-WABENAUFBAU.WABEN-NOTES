@@ -20,28 +20,13 @@ MUTTERWABEN-KATEGORIE ¡ <NAME>
 
  BION ¡ <BION-ID + ABFOLGE>
 
+
 TOCHTERWABEN-KATEGORIE ¡ <NAMEN>
 
  OPTION ¡ <VARIANTE>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+KINDWABE-KATEGORIE ¡ <NAMEN>
 
 
 
@@ -51,27 +36,74 @@ TOCHTERWABEN-KATEGORIE ¡ <NAMEN>
 
 ###====================================================
 
+ TOCHTERWABEN-KATEGORIE ¡ ABI-DISPATCHER
 
+ OPTION ¡ TASTENCODE-STREAM
 
+ OPTIONSBLOCK ↓
 
-
-###====================================================
-
-
-
-
-
-###====================================================
-
-
-
-
-
+   # AXIOM-VERERBUNG VON MUTTER
+   GEBAUTE-EINHEIT ¡ ÷: = BX-ABI-START
+   IN-ID   ¡ <IO_INPUT>
+   OUT-ID  ¡ <IO_OUTPUT>
+   LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
 
 ###====================================================
 
+ TOCHTERWABEN-KATEGORIE ¡ MCD-DISPATCHER
 
+ OPTION ¡ HARDWARE-CONTROL-IMPULS
 
+ OPTIONSBLOCK ↓
+
+   # AXIOM-VERERBUNG VON MUTTER
+   GEBAUTE-EINHEIT ¡ ~: = BX-MCD-START
+   IN-ID   ¡ <MCD_REGISTER>
+   OUT-ID  ¡ <MCD_REGISTER>
+   LINK-OUT ¡ AKMKHTSTCB-ARGUMENT-IMPULS
+
+###====================================================
+
+ TOCHTERWABEN-KATEGORIE ¡ REGISTER-MAPPER (REG/RIG)
+
+ OPTION ¡ X86_64-BUS-LINK
+
+ OPTIONSBLOCK ↓
+
+   IN-ID   ¡ <REG_TARGET>
+   OUT-ID  ¡ <RIG_GATE>
+   LINK-OUT ¡ HW-EXECUTE-IMPULS
+###====================================================
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+TOCHTERWABEN ANSCHLUSS AUSWAHL :
+
+###====================================================
+
+KINDWABEN-KATEGORIE ¡
+
+ ISA-OPTION ¡ 
+
+ ISABLOCK ↓
+
+###====================================================
+
+KINDWABEN-KATEGORIE ¡
+
+ ISA-OPTION ¡ 
+
+ ISABLOCK ↓
+
+###====================================================
+
+KINDWABEN-KATEGORIE ¡
+
+ ISA-OPTION ¡ 
+
+ ISABLOCK ↓
+
+###====================================================
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

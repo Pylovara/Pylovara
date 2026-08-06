@@ -54,7 +54,7 @@
 
 
 verständis frage nach system dokumente verstanden :
-2 kis 
+2 kis ( tws lexikon | pns lexikon )
 
 
 output von einer : 
@@ -483,6 +483,380 @@ Die Firmen-Präsentation dafür mache?
 Oder einfach TWS 0.2 als fertiges System erkläre?
 
 Dein System IST fertig – du musst es nur noch "anschließen"!
+
+
+
+
+
+
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+
+vorlage für ki irritationen beseitigung , was die aussagen des system angehen ... 
+
+vorübergehendes beipack zettel in die ssot legen , damit mein name nicht in den dreck gezogen wird ... 
+
+
+noch unausgefüllt : 
+
+
+/*
+ * TWS 0.2 / MCS 7.4  --  NATIVE PARSER TEMPLATE
+ * Sprache: C11 (kein externer Abhängigkeiten)
+ * Zweck: Liest Pylovara-Kernel-Lexikon-Dateien und baut eine interne Waben-Struktur auf.
+ * 
+ * Kompilieren:  gcc -O2 -o tws_parser tws_parser.c
+ * Aufruf:       ./tws_parser kernel_lex.txt
+ * 
+ * Ausfüllen: Die Funktionen unter "SEMANTIK-HOOKS" (ab Zeile ~180) 
+ *            sind die Stellen, an denen du deine MCS-Logik einhängst.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAX_LINE 4096
+#define MAX_WABEN 1024
+
+/* --------------------------------------------------------------- */
+/*  DATENSTRUKTUREN                                                */
+/* --------------------------------------------------------------- */
+
+typedef struct AxiomNode {
+    char *raw;
+    struct AxiomNode *next;
+} AxiomNode;
+
+typedef struct EinheitNode {
+    char *raw;
+    struct EinheitNode *next;
+} EinheitNode;
+
+typedef struct Wabe {
+    char *kategorie;      /* z.B. "KOPFWABE" */
+    char *programm;       /* z.B. "RUNTIME" */
+    char *waben_id;       /* z.B. "HT" */
+    char *bion_nr;        /* z.B. "01" */
+    char *bion_id;        /* z.B. "HT01" */
+    char *bsk;            /* z.B. "TAMKHT-RUNTIME" */
+    char *bion;           /* z.B. "TA01MK01HT01" */
+    char *master_id;      /* nur bei KOPFWABE */
+
+    AxiomNode *axioms;
+    EinheitNode *einheiten;
+
+    struct Wabe *next;
+} Wabe;
+
+typedef struct KernelSection {
+    int nr;
+    char *title;
+    Wabe *waben;
+    struct KernelSection *next;
+} KernelSection;
+
+/* --------------------------------------------------------------- */
+/*  HILFSFUNKTIONEN                                                */
+/* --------------------------------------------------------------- */
+
+char* trim(char *s) {
+    while (isspace((unsigned char)*s)) s++;
+    if (*s == 0) return s;
+    char *end = s + strlen(s) - 1;
+    while (end > s && isspace((unsigned char)*end)) end--;
+    end[1] = '\0';
+    return s;
+}
+
+char* strdup_safe(const char *s) {
+    if (!s) return NULL;
+    char *d = malloc(strlen(s) + 1);
+    if (d) strcpy(d, s);
+    return d;
+}
+
+/* Extrahiert Wert nach dem Trennzeichen '¡' */
+char* extract_value(const char *line) {
+    const char *p = strstr(line, "\xC2\xA1");  /* UTF-8 fuer ¡ */
+    if (!p) {
+        /* Fallback: suche nach normalem Leerzeichen als Trenner */
+        p = strchr(line, ' ');
+        if (!p) return NULL;
+        p++;
+        while (*p == ' ') p++;
+        return strdup_safe(trim((char*)p));
+    }
+    p += 2; /* hinter ¡ */
+    while (*p == ' ') p++;
+    return strdup_safe(trim((char*)p));
+}
+
+/* Prüft, ob Zeile mit einem bestimmten Token beginnt */
+int starts_with(const char *line, const char *token) {
+    return strncmp(trim((char*)line), token, strlen(token)) == 0;
+}
+
+/* --------------------------------------------------------------- */
+/*  PARSER-KERN                                                    */
+/* --------------------------------------------------------------- */
+
+Wabe* wabe_new() {
+    Wabe *w = calloc(1, sizeof(Wabe));
+    return w;
+}
+
+KernelSection* section_new(int nr, const char *title) {
+    KernelSection *sec = calloc(1, sizeof(KernelSection));
+    sec->nr = nr;
+    sec->title = strdup_safe(title);
+    return sec;
+}
+
+void wabe_add_axiom(Wabe *w, const char *raw) {
+    AxiomNode *node = calloc(1, sizeof(AxiomNode));
+    node->raw = strdup_safe(raw);
+    node->next = w->axioms;
+    w->axioms = node;
+}
+
+void wabe_add_einheit(Wabe *w, const char *raw) {
+    EinheitNode *node = calloc(1, sizeof(EinheitNode));
+    node->raw = strdup_safe(raw);
+    node->next = w->einheiten;
+    w->einheiten = node;
+}
+
+/* --------------------------------------------------------------- */
+/*  HAUPTPARSER                                                    */
+/* --------------------------------------------------------------- */
+
+KernelSection* parse_lexikon(const char *filename) {
+    FILE *fp = fopen(filename, "r");
+    if (!fp) {
+        fprintf(stderr, "FEHLER: Kann '%s' nicht oeffnen.\n", filename);
+        return NULL;
+    }
+
+    KernelSection *root = NULL, *current_sec = NULL;
+    Wabe *current_wabe = NULL;
+    char line[MAX_LINE];
+    int in_programmierbereich = 0;
+
+    while (fgets(line, sizeof(line), fp)) {
+        /* Entferne \n */
+        line[strcspn(line, "\n")] = '\0';
+
+        char *t = trim(line);
+        if (strlen(t) == 0) continue;          /* Leerzeile */
+        if (t[0] == '#') continue;              /* Kommentar */
+        if (strstr(t, "###") == t) continue;    /* Header-Trenner */
+
+        /* --- @kernel-nr: --- */
+        if (strncmp(t, "@kernel-nr:", 11) == 0) {
+            int nr = 0;
+            char title[256] = {0};
+            sscanf(t, "@kernel-nr: %d", &nr);
+            const char *p = strstr(t, "=");
+            if (p) {
+                strncpy(title, p + 1, sizeof(title) - 1);
+                char *x = strstr(title, "=");
+                if (x) *x = '\0';
+                trim(title);
+            }
+            KernelSection *sec = section_new(nr, title);
+            sec->next = root;
+            root = sec;
+            current_sec = sec;
+            current_wabe = NULL;
+            in_programmierbereich = 0;
+            continue;
+        }
+
+        /* --- WABEN-KATEGORIE --- */
+        if (starts_with(t, "WABEN-KATEGORIE")) {
+            current_wabe = wabe_new();
+            current_wabe->next = current_sec ? current_sec->waben : NULL;
+            if (current_sec) current_sec->waben = current_wabe;
+            in_programmierbereich = 0;
+
+            /* Extrahiere Kategorie nach dem Ð oder dem letzten Token */
+            char *p = strstr(t, "\xC3\x90"); /* Ð */
+            if (p) {
+                p += 2;
+                current_wabe->kategorie = strdup_safe(trim(p));
+            }
+            continue;
+        }
+
+        /* --- PROGRAMMIERUNGSBEREICH --- */
+        if (strstr(t, "PROGRAMMIERUNGSBEREICH")) {
+            in_programmierbereich = 1;
+            continue;
+        }
+
+        /* --- BLOCK-ENDE MARKER (z.B. ###...ENDE...) --- */
+        if (strstr(t, "ENDPUNKT") || strstr(t, "KOMPONENTEN-GENERAL")) {
+            in_programmierbereich = 0;
+            continue;
+        }
+
+        /* --- ATTRIBUT-ZEILEN innerhalb einer Wabe --- */
+        if (current_wabe && !in_programmierbereich) {
+            if (starts_with(t, "KOMPONENTE")) 
+                current_wabe->programm = extract_value(t);
+            else if (starts_with(t, "KOMPONENTEN-ID"))
+                ; /* implizit */
+            else if (starts_with(t, "WABEN-ID"))
+                current_wabe->waben_id = extract_value(t);
+            else if (starts_with(t, "BION-NR"))
+                current_wabe->bion_nr = extract_value(t);
+            else if (starts_with(t, "BION-ID"))
+                current_wabe->bion_id = extract_value(t);
+            else if (starts_with(t, "BSK"))
+                current_wabe->bsk = extract_value(t);
+            else if (starts_with(t, "BION"))
+                current_wabe->bion = extract_value(t);
+            else if (starts_with(t, "MASTER-ID"))
+                current_wabe->master_id = extract_value(t);
+            continue;
+        }
+
+        /* --- PROGRAMMIERUNGSBEREICH INHALT --- */
+        if (current_wabe && in_programmierbereich) {
+            if (starts_with(t, "AXIOM")) {
+                wabe_add_axiom(current_wabe, t);
+            } else if (starts_with(t, "EINHEIT") || starts_with(t, "GEBAUTE-EINHEIT")) {
+                wabe_add_einheit(current_wabe, t);
+            } else if (starts_with(t, "LINK") || starts_with(t, "FINISH") || 
+                       starts_with(t, "BRÜCKE") || starts_with(t, "PIPE")) {
+                /* Als generische Axiome behandeln */
+                wabe_add_axiom(current_wabe, t);
+            }
+            continue;
+        }
+    }
+
+    fclose(fp);
+    return root;
+}
+
+/* --------------------------------------------------------------- */
+/*  SEMANTIK-HOOKS  --  HIER AUSFÜLLEN                           */
+/* --------------------------------------------------------------- */
+
+/* 
+ * Diese Funktionen werden fuer JEDEN geparsten Block aufgerufen.
+ * Sie sind der Anschluss zwischen Parser und deiner MCS/TWS-Logik.
+ * 
+ * TODO: Fuege hier deine x86-64 Code-Generierung, VM-Schritte oder 
+ *       MCS-Interpreter-Logik ein.
+ */
+
+void execute_axiom(const char *raw_axiom, const Wabe *ctx) {
+    /* 
+     * BEISPIEL: Wenn AXIOM ein Register-Mapping enthaelt,
+     * generiere hier den entsprechenden x86-64 Opcode.
+     */
+    (void)ctx;
+    printf("    [SEMANTIK] AXIOM: %s\n", raw_axiom);
+}
+
+void execute_einheit(const char *raw_einheit, const Wabe *ctx) {
+    (void)ctx;
+    printf("    [SEMANTIK] EINHEIT: %s\n", raw_einheit);
+}
+
+void execute_wabe_finish(const Wabe *w) {
+    /* 
+     * Wird aufgerufen, wenn eine Wabe komplett geparst ist.
+     * Hier kannst du z.B. die BSK-Kette validieren oder 
+     * Maschinencode emittieren.
+     */
+    printf("  [WABE-FINISH] %s | BSK=%s | BION=%s\n",
+           w->kategorie ? w->kategorie : "?",
+           w->bsk ? w->bsk : "?",
+           w->bion ? w->bion : "?");
+}
+
+/* --------------------------------------------------------------- */
+/*  AUSGABE / DEBUG                                                */
+/* --------------------------------------------------------------- */
+
+void dump_sections(KernelSection *root) {
+    KernelSection *sec = root;
+    while (sec) {
+        printf("\n=== KERNEL-NR %d : %s ===\n", sec->nr, sec->title ? sec->title : "");
+
+        Wabe *w = sec->waben;
+        while (w) {
+            printf("\n  [WABE] Kategorie: %s\n", w->kategorie ? w->kategorie : "?");
+            if (w->programm)  printf("    Programm:  %s\n", w->programm);
+            if (w->waben_id)  printf("    Waben-ID:  %s\n", w->waben_id);
+            if (w->bion_nr)   printf("    BION-NR:   %s\n", w->bion_nr);
+            if (w->bion_id)   printf("    BION-ID:   %s\n", w->bion_id);
+            if (w->bsk)       printf("    BSK:       %s\n", w->bsk);
+            if (w->bion)      printf("    BION:      %s\n", w->bion);
+            if (w->master_id) printf("    MASTER-ID: %s\n", w->master_id);
+
+            AxiomNode *a = w->axioms;
+            while (a) {
+                execute_axiom(a->raw, w);
+                a = a->next;
+            }
+
+            EinheitNode *e = w->einheiten;
+            while (e) {
+                execute_einheit(e->raw, w);
+                e = e->next;
+            }
+
+            execute_wabe_finish(w);
+            w = w->next;
+        }
+        sec = sec->next;
+    }
+}
+
+/* --------------------------------------------------------------- */
+/*  MAIN                                                           */
+/* --------------------------------------------------------------- */
+
+int main(int argc, char **argv) {
+    if (argc < 2) {
+        printf("Usage: %s <lexikon-datei.txt>\n", argv[0]);
+        printf("\nDieser Parser liest Pylovara TWS/MCS Lexikon-Dateien\n");
+        printf("und ruft fuer jeden AXIOM/EINHEIT die SEMANTIK-HOOKS auf.\n");
+        printf("Fuelle die Funktionen ab Zeile 180 aus, um Maschinencode\n");
+        printf("oder VM-Befehle zu generieren.\n");
+        return 1;
+    }
+
+    KernelSection *sys = parse_lexikon(argv[1]);
+    if (!sys) return 2;
+
+    dump_sections(sys);
+
+    printf("\n\n[PARSER-STATUS] OK. Datei erfolgreich strukturiert geparst.\n");
+    printf("[HINWEIS] Die SEMANTIK-HOOKS (execute_*) sind noch mit Platzhaltern belegt.\n");
+    return 0;
+}
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,54 @@
+@waben-nr: 60 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###=================================ENDWABE=================================###
+
+WABEN-KATEGORIE Ð ENDWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ED
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ ED<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FINISH 
+ FINISH ¡ <AXIOM> 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ TA01 = ED01
+ PI02 = ED02 ED03 ED04 ED05 ED06 
+ TE04 = ED07
+ NI11 = ED08 ED09
+ ZY14 = ED10 ED11
+
+
+###==============================INFORMATIONEN==============================###
+
+ BEENDET DAS ZUSAMMENSETZEN ODER DEN PROZESS DESSEN 
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

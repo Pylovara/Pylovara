@@ -1,0 +1,59 @@
+@waben-nr: 35 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================ANDOCKWABE================================###
+
+WABEN-KATEGORIE Ð ANDOCKWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ AD
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ AD<BION-NR>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ 
+ EINHEIT ¡  
+
+ # BSK | BEENDET VOR PROZESS 
+ WABEN-RESET ¡ 
+
+ # HOLT DATENSATZ
+ LINK ¡ 
+ 
+ # AXIOM
+ AXIOM ¡ LINK ≠ # ≠ # ≠ IN-CACHE
+
+ # DATEN ZIEHEN 
+ IN-CACHE ¡ OUT-CACHE
+
+ # AXIOM | 
+ AXIOM ¡ # + # + OUT-CACHE ≠ ** * ≠ # = #
+
+ # RAM GEBAUTE EINHEIT 
+ EINHEIT ¡ 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ FE12 = AD01 AD02
+
+###==============================INFORMATIONEN==============================###
+
+ SPEZIALISERTE CACHE WABE FÜR FEED RAM SPEICHERUNGEN .
+ LINKT DEN NITROX, HOLT DIE DATEN IN DEN CACHE, BAUT DEN FEED FERTIG 
+ UND LEGT SIE FÜR DAS WEITER IM RAM AB.
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

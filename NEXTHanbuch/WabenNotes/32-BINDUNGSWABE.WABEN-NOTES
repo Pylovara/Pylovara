@@ -1,0 +1,57 @@
+@waben-nr: 32 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================BINDUNGSWABE==============================###
+
+WABEN-KATEGORIE Ð BINDUNGSWABE 
+
+ PROGRAMM ¡ BINDER
+
+ WABEN-ID ¡ BD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ 
+
+ BSK ¡ 
+
+ BION ¡ 
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡
+
+ # SYSTEMWABEN KNÜPFER (SCHALTBRÜCKE)
+ BION-ID-1-IN ¡ <SYSTEMWABEN BION-ID>
+ BION-ID-2-IN ¡ <SYSTEMWABEN BION-ID>
+
+ # AXIOM
+ AXIOM ¡ BION-ID-1 + BI-BINDER + BION-ID-2 ≠ 
+
+ # FERTIG GEBAUTE EINHEIT
+ EINHEIT ¡ 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ BI05 = BD01
+
+###==============================INFORMATIONEN==============================###
+
+ BIMK WIRD GEBUNDEN GEHOLT , BINDET ZWEI WABEN ANSICH SICH ..
+
+ INFO : SOLANGE ER DIE EWABEN HOLEN MUSS , DÜRFEN DIE WABEN NICHT 
+ RESETET WERDEN ( PROZESS ENDE ),RST DANACH .
+
+ FUNGIERT GERADE ALS UNIVERSELLES MUSTER , WIRD SPÄTER PRÄZISIERTER 
+ 
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

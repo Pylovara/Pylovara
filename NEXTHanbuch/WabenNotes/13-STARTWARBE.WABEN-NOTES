@@ -1,0 +1,63 @@
+@waben-nr: 13 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###===============================STARTWABE=================================###
+
+WABEN-KATEGORIE Ð STARTWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ ST
+
+ BION-NR ¡ <NR> 
+
+ BION-ID ¡ <BION-ID>
+
+ BSK ¡ <ABLAUF>
+
+ BION ¡ <BION-ABLAUF>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BAUT DIE SYMBOLE 
+ AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
+ AXIOM ¡ ^ <TASTENCODE> = <> 
+ AXIOM ¡ ^ <TASTENCODE> = <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+ AXIOM ¡ ^ <> + <> ≠ ** ≠ <>
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+ GEBAUTE-EINHEIT ¡ <SYMBOLE> = <VERWENDUNGS-WORT> 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ TA01 = ST01
+ PI02 = ST02 ST03
+ PO03 = ST04
+ TE04 = ST05
+ BI05 = ST06
+ AK06 = ST07 ST33
+ RX07 = ST08 
+ IC08 = ST09
+ BX09 = ST10 ST11 ST12 ST13 ST14 ST15 ST16 ST17 ST18 ST19 ST20
+ SE10 = ST21 ST22 
+ NI11 = ST23 ST24 
+ FE12 = ST25 ST26
+ SY13 = ST27 ST28 ST29 ST30 
+ ZY14 = ST31 ST32
+
+
+###==============================INFORMATIONEN==============================###
+
+ START SEQUENZ UND BAUT BENÖTIGTE SYMBOLE.
+ 
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+
+
+
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

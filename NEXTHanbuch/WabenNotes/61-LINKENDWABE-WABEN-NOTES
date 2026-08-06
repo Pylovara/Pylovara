@@ -1,0 +1,57 @@
+@waben-nr: 61 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###========== SÄMTLICHE EINGABEN <*> SIND AUSZUFÜLLEND ZU DENKEN. ==========###
+###==============================LINKENDWABE================================###
+
+WABEN-KATEGORIE Ð LINKENDWABE 
+
+ PROGRAMM ¡ <NAME>
+
+ WABEN-ID ¡ LD
+
+ BION-NR ¡ <NR>
+
+ BION-ID ¡ LD<NR>
+
+ BSK ¡ <BSK>-<PROGRAMM>
+
+ BION ¡ <BION>
+
+ PROGRAMMIERUNGSBEREICH ↓
+
+ # BINDET RAM GEBAUTE-EINHEIT 
+ EINHEIT ¡ <START-KENNUNG> 
+
+ # BEENDET VOR PROZESS
+ WABEN-BSK-RESET ¡ 
+
+ # AXIOM
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # FERTIG GEBAUTE EINHEIT
+ LINK-OUT ¡ 
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+ PO03 = LD01
+ TE04 = LD02
+ BI05 = LD03
+ IC08 = LD04 LD05 LD06 LD07
+ RX07 = LD08 LD09 LD10 LD11 LD12 LD13 LD14 LD15 LD16 LD17 LD18 LD19 LD20 LD21
+ BX09 = LD22 LD23 LD24 LD25 LD26 LD27 LD28 LD29 LD30 LD31 LD32 LD33
+ SE10 = LD34 LD35
+ FE12 = LD36 LD37
+
+
+###==============================INFORMATIONEN==============================###
+
+           BEENDET DAS ZUSAMMENGESETZTE HAUPTWABEN PROGRAMM UND 
+    VERLINKTES IM GESAMTEN FÜR DEN JEWEILIGEN GEBRAUCHTEN EINSATZBEREICH  
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # GRUNDPROGRAMMIERUNG
+ AXIOM ≠ AXIOM
+ 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

@@ -1,171 +1,19 @@
-@kernel-nr: 19 Ð RETRON
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=======K19 RETRON=======#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #                 RETRON = PROCESS REGULATIONS                     #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- # DEVNOTE: MORPHIC TAKTUNG IMPLEMENTIEREN                          #
-###==##==###======#####====STARTPUNKT RETRON===#####======###==##==###
-
-BION Ð RETRON
-
- MORPHIC-ID ¡ RET
-
- BION-ID ¡ RE
-
-MASK ¡ MASU-RETRON
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð RETRON 
-
- MORPHIC-ID ¡ RETK 
-
- BION-ID ¡ RE00 
-
- AXIOM ¡ RETK = <RETK> 
-
- ABSK ¡ RETK
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-STUFE-0
-
- MORPHIC-ID ¡ RETX-STUFE-0
-
- BION-ID ¡ RE00X01
-
- AXIOM ¡ RETX-STUFE-0 = Ŧ°
-
- ABSK ¡ RETK+RETX-STUFE-0
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-STUFE-0 Ð STARTWABE
-
- MORPHIC-ID ¡ RETS-STUFE-0
-
- BION-ID ¡ RE00X01S01
-
- AXIOM ¡ RETS-STUFE-0 = Ŧ
-
- ABSK ¡ RETK+RETX-STUFE0+RETS-STUFE-0
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-STUFE-0 Ð IDLEWABE
-
- MORPHIC-ID ¡ RETDL-STUFE-0
-
- BION-ID ¡ RE00X01S01DL01
-
- AXIOM ¡ RETDL-STUFE-0 = Ŧ°
-
- ABSK = RETK+RETX-STUFE0+RETS-STUFE-0+RETDL-STUFE-0
-
- IDLE ¡ PROZESS = 001
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-STUFE-1
-
- MORPHIC-ID ¡ RETX-STUFE-1
-
- BION-ID ¡ RE00X02
-
- AXIOM ¡ RETX-STUFE-1 = Ŧ¹
-
- ABSK ¡ RETK+RETX-STUFE-1
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-STUFE-1 Ð PROZESSWABE
-
- MORPHIC-ID ¡ RETSS-STUFE-1
-
- BION-ID ¡ RE00X02DL01
-
- AXIOM ¡ RETSS-STUFE-1
-
- ABSK ¡ RETK+RETX-STUFE-1+RETSS-STUFE-1
-
- HARDWARE ¡ LFSR =
-
- MCDX-GENERIERE ¡
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-STUFE-2
-
- MORPHIC-ID ¡ RETX-STUFE-2
-
- BION-ID ¡ RE00X03
-
- AXIOM ¡ RETX-STUFE-2 = Ŧ²
-
- ABSK ¡ RETK+RETX-STUFE-2
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-STUFE-2 Ð PROZESSWABE
-
- MORPHIC-ID ¡ RETSS-STUFE-2
-
- BION-ID ¡ RE00X03DL02
-
- AXIOM ¡ RETSS-STUFE-2
-
- ABSK ¡ RETK+RETX-STUFE-2+RETSS-STUFE-2
-
- HARDWARE ¡ LFSR =
-
- MCDX-GENERIERE ¡
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-STUFE-3
-
- MORPHIC-ID ¡ RETX-STUFE-3
-
- BION-ID ¡ RE00X04
-
- AXIOM ¡ RETX-STUFE-3 = Ŧ³
-
- ABSK ¡ RETK+RETX-STUFE-3
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-STUFE-3 Ð PROZESSWABE
-
- MORPHIC-ID ¡ RETSS-STUFE-3
-
- BION-ID ¡ RE00X04DL03
-
- AXIOM ¡ RETSS-STUFE-3
-
- ABSK ¡ RETK+RETX-STUFE-3+RETSS-STUFE-3
-
- HARDWARE ¡ LFSR =
-
- MCDX-GENERIERE ¡ 
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = RETELT
- # SBSK = 
- # VBSK = 
- # RBSK = 
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [02:50:12|Do 29 Jan 2025] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####=====ENDPUNKT RETRON====#####======###==##==###
+@kernel-nr: 30 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #                      RETRON = PROCESS REGULATIONS                         #
+###===========================WICHTIGER-HINWEIS=============================### 
+###===============================STARTPUNKT================================###
+
+
+ 1. HAUPTWABE : PROZESS LAST VON SYNAPTOR HER 
+ 2. HAUPTWABE : REGULÄRER ICTUS ANSCHLUSS 
+
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = 
+ # BION-ID-PFAD  → 
+ # BION-ID-PFAD  → 
+ # BION-ID-VPFAD → 
+ # BION-ID-RPFAD → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

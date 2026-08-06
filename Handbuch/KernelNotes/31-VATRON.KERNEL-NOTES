@@ -1,64 +1,25 @@
-@kernel-nr: 20 Ð VATRON
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####=======K20 VATRON=======#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #              VATRON = THE PYLOVARA SYSTEM FIREWALL               #
-###==##==###======#####====STARTPUNKT VATRON===#####======###==##==###
+@kernel-nr: 31 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #                      RETRON = PROCESS REGULATIONS                         #
+###===========================WICHTIGER-HINWEIS=============================### 
+###===============================STARTPUNKT================================###
 
-BION Ð VATRON 
+ # NOTIZ 
 
- MORPHIC-ID ¡ VAT 
+ SOLLTE DIREKT MIT DEM ABSOLULATOR VERDRAHTET WERDEN .
+ REGULÄRE BION-ID KONTROLLE UND SCHALTPLAN-BAUSTEINSCHALTUNGSKREISLÄUFE
+ 
 
- BION-ID ¡ VA 
+ ALTERNATIV SEGMENT , MCS SYNTAX CONTROLLE ÜBER PROGRAMMIERUNGSLOGIK ( AXIOM )
 
-MASK ¡ MASU-VATRON
+ SPÄTER NATIVE BINDUNG ALS FIREWALL PROGRAMM FÜR INTERNE MAIN KERNEL KI 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-KERNWABE Ð VATRON
-
- MORPHIC-ID ¡ VATK 
-
- BION-ID ¡ VA00 
-
- AXIOM ¡ VATK = <VATK>
-
- ABSK ¡ VATK 
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-COPYRIGHT
-
- MORPHIC-ID ¡ VATX-COPYRIGHT
-
- BION-ID ¡ VA00X01
-
- AXIOM ¡ VATX-COPYRIGHT
-
- ABSK ¡ VATK+VATX-COPYRIGHT
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-
-BION-EXTRAWABE-COPYRIGHT Ð STARTWABE 
-
- MORPHIC-ID ¡ VATS-COPYRIGHT
-
- BION-ID ¡ VA00X01S01
-
- AXIOM ¡ VATS-COPYRIGHT = ©
-
- ABSK ¡ VATK+VATX-COPYRIGHT+VATS-COPYRIGHT
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = VATELT                                              #
- # SBSK =                                                           #
- # VBSK =                                                           #
- # RBSK =                                                           #
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [08:48:22|Do 12 Feb 2025] MARKENBRANDT                  #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####=====ENDPUNKT VATRON====#####======###==##==###
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ # MASTERWORT = 
+ # BION-ID-PFAD  → 
+ # BION-ID-PFAD  → 
+ # BION-ID-VPFAD → 
+ # BION-ID-RPFAD → 
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

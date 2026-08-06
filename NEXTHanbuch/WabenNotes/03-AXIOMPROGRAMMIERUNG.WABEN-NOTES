@@ -4,9 +4,6 @@
 ###============================AXIOMPROGRAMMIERUNG==========================###
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
-
-
-
 zukünftige ¡ verbindungen 
 
 werden dann als axiomen genutzt für die logik schaltung 
@@ -45,11 +42,41 @@ werden dann als axiomen genutzt für die logik schaltung
 ⣿
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 das würde bedeuten jede wabe bekommt einen logischen verknüpfer .. pro wabe eigene dot patter 
 
 also 
 
 MUTTERWABEN-KATEGORIE ⠁ <NAME>
+
+
+
+
+
+
+
+
+
+
+
+
 
  WABEN-ID ⠂ <WABENKENNUNG>
 
@@ -66,9 +93,12 @@ wäre dann
  AXIOM ¡ ⠁ 
 
  # BION-ID AXIOM 
- AXIOM ¡ ⠂ + ⠄ ⑅ ⠈
+ AXIOM ¡ ⠂ + ⠄ = ⠈
  
 BEZIEHUNG WEISE NICHT ISTGLEICH SONDERN ( SCHREIBE IN = ⑅ )
+
+ # BION-ID AXIOM 
+ AXIOM ¡ ⠂ + ⠄ ⑅ ⠈
 
  # BION AXIOM 
  AXIOM ¡ ⠈ 
@@ -87,6 +117,91 @@ BEZIEHUNG WEISE NICHT ISTGLEICH SONDERN ( SCHREIBE IN = ⑅ )
  GRUND WABEN PROGRAMMIERUNG .... ÜBER DOTPATTERN UND EXTRAS 
  
 
+######################## erster entwurf :
+
+###=====================NEUE AXIOM-PROGRAMMIERUNG=========================###
+
+### SYMBOL-LEXIKON (jedes Symbol = ein Befehl)
+
+SYMBOL-LEXIKON ¡
+
+  # GRUNDSYMBOLE (Operatoren)
+  ⠁ = START / BEGINN
+  ⠂ = IDENTIFIKATION / NAME
+  ⠄ = NUMMER / WERT
+  ⡀ = KOMBINATION / VERBINDUNG
+  ⠈ = ABSCHLUSS / ENDE
+  
+  # LOGISCHE VERKNÜPFER
+  ⑅ = ISTGLEICH / ZUWEISUNG
+  ⌬ = KETTE / SEQUENZ
+  ː = PFAD / WEG
+  ⌯ = KNOTEN / PUNKT
+  
+  # DATENFLUSS
+  ║ = PARALLEL / GLEICHZEITIG
+  ⍅ = EINGABE / INPUT
+  ◘ = AUSGABE / OUTPUT
+  
+  # KONTROLLFLUSS
+  ˦ = AUFSTEIGEND / FORWÄRTS
+  ˧ = ABSTEIGEND / RÜCKWÄRTS
+  ⑆ = SCHLEIFE / WIEDERHOLUNG
+  ⑅ = BEDINGUNG / WENN-DANN
+
+###----------------------------------------------------
+
+### AXIOM-PROGRAMMIERUNG (nur mit Symbolen)
+
+# BEISPIEL 1: WABEN-DEFINITION
+AXIOM ¡ ⠁ + ⠂ + ⠄ ⑅ ⡀
+
+# BEDEUTET:
+# START + NAME + NUMMER = KOMBINATION
+# → Eine neue Wabe beginnt
+
+# BEISPIEL 2: BION-ID
+AXIOM ¡ ⠂ + ⠄ ː ⡀ ⑅ ⠈
+
+# BEDEUTET:
+# NAME + NUMMER → KOMBINATION = ENDE
+# → Die BION-ID ist komplett
+
+# BEISPIEL 3: DATENFLUSS
+AXIOM ¡ ⍅ + ː + ◘ ⑅ ║
+
+# BEDEUTET:
+# INPUT → OUTPUT = PARALLEL
+# → Daten fließen parallel
+
+# BEISPIEL 4: KONTROLLFLUSS
+AXIOM ¡ ˦ + ⑆ + ˧ ⑅ ⌬
+
+# BEDEUTET:
+# FORWÄRTS + SCHLEIFE + RÜCKWÄRTS = SEQUENZ
+# → Eine Schleife wird definiert
+
+###----------------------------------------------------
+
+### KETTENSCHALTUNG (Waben verbinden)
+
+# BEISPIEL: HAUPTWABE → STARTWABE → ENDWABE
+AXIOM ¡ HT + ⌬ + ST + ⌬ + ED ⑅ ː
+
+# BEDEUTET:
+# HAUPTWABE → STARTWABE → ENDWABE = PFAD
+# → Die Waben sind verkettet
+
+# BEISPIEL: BION-ID-KETTE
+AXIOM ¡ ⠂ + ⠄ + ⌬ + ⠂ + ⠄ + ⌬ + ⠂ + ⠄ ⑅ ⠈
+
+# BEDEUTET:
+# NAME+NR → NAME+NR → NAME+NR = ENDE
+# → Die BION-ID-Kette ist komplett
+
+########################################## erster entwurf ende 
+
+
 
 
 
@@ -104,7 +219,6 @@ BEZIEHUNG WEISE NICHT ISTGLEICH SONDERN ( SCHREIBE IN = ⑅ )
  AXIOM ¡ HAUPTWABE-OUT ≠ ZYMKHT-AUX-IN ≠ ZYMKHTSTAX-AUX-IN ≠ £‹<NR> = ZY-AUX-IN-NR
 
  dann 
-
 
  # AXIOM
  AXIOM ¡ HAUPTWABE-IN geht in den  ZYMKHT-AUX-OUT und holt ZYMKHTSTAX-AUX-OUT und speichert die info in  £›<NR> = ZY-AUX-OUT-NR
@@ -133,38 +247,44 @@ BEZIEHUNG WEISE NICHT ISTGLEICH SONDERN ( SCHREIBE IN = ⑅ )
   ׀ =         ╫ =
   ⌬ =         ╬ = 
 
-
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###
 
-notiz : 
-
-ich machs wie bei hypürland jakoolit 
 
 
- supertaste + h oder so , für spickzettel 
 
- aber eigene super taste 
 
- dann bau ich in diesem zettel alle mcs komponenten im gesamten 
- und lege sie auf eine zahlen nummer oder buchstaben 
 
- dann drücken diese später nur noch die mcs supertaste + irgendwas 
- dann kommt der fertige baustein in die IDE 
+1 Punkt:
+⠁ ⠂ ⠄ ⡀ ⠈ ⠐ ⠠  ⢀
 
- das selbe mach ich mit dem tws ... 
+2 Punkte:
+⠃ ⠅ ⠉ ⠑ ⠡ ⡁ ⢁ ⠆ ⠊ ⠒ ⠢ ⡂ ⢂ 
+⠌ ⠔ ⠤ ⡄ ⢄ ⠘ ⠨ ⡈ ⢈ ⠰ ⡐ ⢐ ⡠ ⢠ ⣀
 
- dann muss keiner mit copie and paste rum hantieren , sondern es ist da 
- und diese sache lege ich grundsätzlich als eigens bin programm später 
- bei archlinux in das yay rein ... 
- das adde ich grundsätzlich zu jedem empfohlenen desktop hinzu 
+3 Punkte:
+⠇ ⠋ ⠓ ⠣ ⡃ ⢃ ⠍ ⠕ ⠥ ⡅ ⢅ ⠙ ⠩ ⡉ ⢉ ⠱ ⡑ ⢑ ⡡ 
+⢡ ⣁ ⠎ ⠖ ⠦ ⡆ ⢆ ⠚ ⠪ ⡊ ⢊ ⠲ ⡒ ⢒ ⡢ ⢢ ⣂ ⠜ ⠬ 
+⡌ ⢌ ⠴ ⡔ ⢔ ⡤ ⢤ ⣄ ⠸ ⡘ ⢘ ⡨ ⢨ ⣈ ⡰ ⢰ ⣐ ⣠
 
- dann haben alle das ding vorgefertigt dabei .. 
+4 Punkte:
+⠏ ⠗ ⠧ ⡇ ⢇ ⠛ ⠫ ⡋ ⢋ ⠳ ⡓ ⢓ ⡣ ⢣ ⣃ ⠝ ⠭ ⡍ ⢍ 
+⠵ ⡕ ⢕ ⡥ ⢥ ⣅ ⠹ ⡙ ⢙ ⡩ ⢩ ⣉ ⡱ ⢱ ⣑ ⣡ ⠞ ⠮ ⡎ 
+⢎ ⠶ ⡖ ⢖ ⡦ ⢦ ⣆ ⠺ ⡚ ⢚ ⡪ ⢪ ⣊ ⡲ ⢲ ⣒ ⣢ ⠼ ⡜ 
+⢜ ⡬ ⢬ ⣌ ⡴ ⢴ ⣔ ⣤ ⡸ ⢸ ⣘ ⣨ ⣰
 
- ich nehme dafür dann eine super taste die keiner nutzt als solche 
- dann kreutz ich niemanden in sein handwerk aber jeder hat die sachen 
- griff bereit 
+5 Punkte:
+⠟ ⠯ ⡏ ⢏ ⠷ ⡗ ⢗ ⡧ ⢧ ⣇ ⠻ ⡛ ⢛ ⡫ ⢫ ⣋ ⡳ ⢳ ⣓ 
+⣣ ⠽ ⡝ ⢝ ⡭ ⢭ ⣍ ⡵ ⢵ ⣕ ⣥ ⡹ ⢹ ⣙ ⣩ ⣱ ⠾ ⡞ ⢞ 
+⡮ ⢮ ⣎ ⡶ ⢶ ⣖ ⣦ ⡺ ⢺ ⣚ ⣪ ⣲ ⡼ ⢼ ⣜ ⣬ ⣴ ⣸
 
- und keiner muss sich in der utf 8 liste durch arbeiten oder rum copieren 
- .....
+6 Punkte:
+⠿ ⡟ ⢟ ⡯ ⢯ ⣏ ⡷ ⢷ ⣗ ⣧ ⡻ ⢻ ⣛ ⣫ ⣳ ⡽ ⢽   
+⣵        
+
+7 Punkte:
+ ⢿ ⣟ ⣯ ⣷ ⣻ ⣽ 
+
+8 Punkte:
+
 

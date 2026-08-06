@@ -1,5 +1,6 @@
 @waben-nr: X3 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
-###============================PYLOVARA-SYSTEM==============================###
+###=======================PYLOVARA-SYSTEM-LIZENZ-SYSTEM=====================###
+###=========================GEBURTSTAG=DO-06-08-2026========================###
 ###============ ENTWICKLUNGSBEREICH FÜR DIE NÄCHSTE TWS STRUKTUR ===========###
 ###==============================WABENTECHNIK===============================###
 
@@ -9,6 +10,49 @@ TOCHTERWABEN = TRAGEN IN DEN MUTTERWABEN EINSATZGEBIETE
 
 KINDERWABE = TRAGEN FÜR DIE EINSATZGEBIETE DIE SPEZIALISIERUNGUNG 
 
+KOPFWABEN | MASTERKERNWABEN | HAUPTWABEN | STARTWABEN  
+
+SIND PER DESIGNE GLEICH UND WERDEN SO IMMER EINGESETZT 
+
+BAUWABEN ENDWABEN 
+
+TRAGEN DIE TOCHTER MODULE FÜR DEN JEWEILIGEN BEREICH 
+ES KÖNNEN MEHRERE TOCHTER WABEN ANGESCHLOSSEN WERDEN 
+BLEIBEN ABER PRO TOCHTERWABE UNVERÄNDERTE MODULE 
+
+AXIOM SYMBOLIKEN 
+
+Ξ = ISTGLEICH | ZUWEISUNG
+⧓ = VERBINDE
+⧑ = GEHT ZU 
+⧒ = KOMMT VON 
+⧔ = SCHNEIDE ZU  
+⧕ = ZU SCHNEIDE 
+ʃ = SCHLEIFE HOCH
+ʅ = SCHLEIFE RUNTER 
+⮀ = AUSTAUSCH 
+
+⑄ = TASTENCODE
+ͽ = AUSFÜHREN
+ͼ = BEENDEN
+
+ӿ = WARTE 
+⌬ = 
+
+≠ = UNGLEICH  | BEDINGUNG 
+ⴱ = MINUS
+ⴲ = PLUS
+ⵙ = MAL
+⨸ = GETEILT
+⧀ = KLEINER ALS
+⧁ = GRÖẞER ALS
+
+# NOCH FREI 
+⥚ = 
+⥛ = 
+⥏ 
+⥑ 
+ 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
 MUTTERWABEN-KATEGORIE ⣿ <MODUL> 
@@ -27,8 +71,8 @@ BION-ID ⣞
 
 MASTER-ID ⣾
 
-# BION-ID AXIOM 
-AXIOM ¡ ⣺ + ⣮ ≠ ⣞
+# ( steht später nur im lexikon BION-ID AXIOM ) 
+AXIOM ¡ ⣺ ⟛ ⣮ ≠ ⣞
 
 ###============================MUTTERWABEN-MODUL============================###
 
@@ -44,8 +88,8 @@ MODUL ⣿ MASTERKERNWABE
 
  BION ¡ ⣭
 
-# BION-ID AXIOM 
-AXIOM ¡ ⣞ + ⢾ ≠ ⡾
+# ( steht später nur im lexikon BION-ID AXIOM )
+AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
 
 ###============================MUTTERWABEN-MODUL============================###
 
@@ -63,8 +107,8 @@ MODUL ⣿ HAUPTWABE
 
  BION ⣭ 
 
-# BION-ID AXIOM 
-AXIOM ¡ ⣞ + ⢾ ≠ ⡾
+# ( steht später nur im lexikon BION-ID AXIOM )
+AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
 
 ###============================MUTTERWABEN-MODUL============================###
 
@@ -82,8 +126,67 @@ MODUL ⣿ STARTWABE
 
  BION ⣭ 
 
-# BION-ID AXIOM 
-AXIOM ¡ ⣞ + ⢾ ≠ ⡾
+ TASTENCODE ⡧
+ TASTENCODE ⣴
+ TASTENCODE ⣬
+ TASTENCODE ⣜
+ TASTENCODE ⢼
+ TASTENCODE ⡼
+ TASTENCODE ⣲
+ TASTENCODE ⣪
+ TASTENCODE ⣚
+ TASTENCODE ⢺
+
+ SYMBOLE ⡺
+ SYMBOLE ⣦
+ SYMBOLE ⣖
+ SYMBOLE ⢶
+ SYMBOLE ⡶
+ SYMBOLE ⣎
+ SYMBOLE ⢮
+ SYMBOLE ⡮
+ SYMBOLE ⢞
+ SYMBOLE ⡞
+
+ PRÄFIX ⢵
+ PRÄFIX ⡵
+ PRÄFIX ⣍
+ PRÄFIX ⢭
+ PRÄFIX ⡭
+ PRÄFIX ⢝
+ PRÄFIX ⡝
+ PRÄFIX ⠽
+ PRÄFIX ⣣
+ PRÄFIX ⠟
+
+# ISA AXIOM VARIANTE 1
+AXIOM ¡ <TASTECODE-PATTER> ⟛ <TASTENCODE-PATTER> Ξ <SYMBOL-PATTER>  
+AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
+
+# ISA AXIOM VARIANTE 2
+AXIOM ¡ <TASTECODE-PATTER> Ξ <SYMBOL-PATTER>  
+AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
+
+ PRODUKT ⠾
+ PRODUKT ⣱
+ PRODUKT ⣩
+ PRODUKT ⣙
+ PRODUKT ⢹
+ PRODUKT ⡹
+ PRODUKT ⣥
+ PRODUKT ⣕
+
+# RAM AXIOM 
+AXIOM ¡ <PRODUKT> ≠ <EIMHEIT>
+
+ # RAM
+ EINHEIT ⡟ 
+
+ # PROZESS STOP
+ BSK-RESET ⣶ 
+
+# ( steht später nur im lexikon BION-ID AXIOM )
+AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
 
 ###============================MUTTERWABEN-MODUL============================###
 
@@ -101,9 +204,25 @@ MODUL ⣿ BAUWABE
 
  BION ⣭ 
 
-# BION-ID AXIOM 
-AXIOM ¡ ⣞ + ⢾ ≠ ⡾
+ # RAM
+ EINHEIT ⡟ 
 
+ # PROZESS STOP
+ BSK-RESET ⣶ 
+
+# ( steht später nur im lexikon BION-ID AXIOM )
+AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
+
+TOCHTERWABEN-KATEGORIE ⡿
+
+ ( EXPLIZITE MODUL EINSTELLUNGEN)
+
+ (ALLE MOMENTAN NOCH AUF WABEN AUFGETEILTE DINGE )
+
+KINDWABEN-KATEGORIE ⢿ 
+
+ ( SPEZIASLISIERTE EINSTELLUNGEN WIE ABI , BINARY , EINGABEN EBENEN , SHELLS - WENN TOCHTERWABE SYSTEMWABE Z.B)
+ ( DIE KINDERWABEN HABEN ABER DEN ECHTEN DRAHT ... IN DEN TOCHERWABEN SIND DIE IM PYLOVARA-SYSTEM DRÄHTE )
 ###============================MUTTERWABEN-MODUL============================###
 
 MODUL ⣿ ENDWABE 
@@ -120,8 +239,20 @@ MODUL ⣿ ENDWABE
 
  BION ⣭ 
 
-# BION-ID AXIOM 
-AXIOM ¡ ⣞ + ⢾ ≠ ⡾
+ # RAM
+ EINHEIT ⡟ 
+
+ # PROZESS STOP
+ BSK-RESET ⣶ 
+
+# ( steht später nur im lexikon BION-ID AXIOM ) 
+AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
+
+TOCHTERWABEN-KATEGORIE ⡿
+
+( EXPLIZITE MODUL EINSTELLUNGEN)
+
+( BEISPIEL = LINKEND , DOPPELTER LINEKND , EINFACHES BEENDEN USW )
 
 ###============================MUTTERWABEN-MODUL============================###
 ###=========================================================================###
@@ -130,45 +261,7 @@ TOCHTERWABEN-KATEGORIE ⡿ <MODUL>
 
 ###===========================TOCHTERWABEN-MODUL============================###
 
-
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
+ MODUL ⡿ EINGABE
 
 ###===========================TOCHTERWABEN-MODUL============================###
 
@@ -177,14 +270,4 @@ TOCHTERWABEN-KATEGORIE ⡿ <MODUL>
 ###===========================TOCHTERWABEN-MODUL============================###
 
 
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
-
-###===========================TOCHTERWABEN-MODUL============================###
+KINDWABEN-KATEGORIE ⢿ <MODUL>

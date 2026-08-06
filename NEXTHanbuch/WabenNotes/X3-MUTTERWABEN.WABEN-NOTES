@@ -20,8 +20,11 @@ TRAGEN DIE TOCHTER MODULE FÜR DEN JEWEILIGEN BEREICH
 ES KÖNNEN MEHRERE TOCHTER WABEN ANGESCHLOSSEN WERDEN 
 BLEIBEN ABER PRO TOCHTERWABE UNVERÄNDERTE MODULE 
 
-AXIOM SYMBOLIKEN 
 
+###==============================WABENTECHNIK===============================###
+DIE AXIOM PROGRAMMIERUNG BETRIFFT NUR MICH DAHER RASTE ICH HIER VOLLSTÄNDIG AUS
+
+AXIOM SYMBOLIKEN 
 Ξ = ISTGLEICH | ZUWEISUNG
 ⧓ = VERBINDE
 ⧑ = GEHT ZU 
@@ -47,117 +50,221 @@ AXIOM SYMBOLIKEN
 ⧀ = KLEINER ALS
 ⧁ = GRÖẞER ALS
 
+ # KONTROLLFLUSS
+ ˦ = AUFSTEIGEND / FORWÄRTS
+ ˧ = ABSTEIGEND / RÜCKWÄRTS
+ ⑆ = SCHLEIFE / WIEDERHOLUNG
+ ⑅ = BEDINGUNG / WENN-DANN
+ ː = PFAD / WEG
+
 # NOCH FREI 
-⥚ = 
-⥛ = 
+⥚ 
+⥛ 
 ⥏ 
 ⥑ 
- 
+
+# VERWENDETE ABZIEHEN 
+0 Punkte (1 Zeichen):
+⠀
+
+1 Punkt:
+⠁ ⠂ ⠄ ⡀ ⠈ ⠐ ⠠ ⢀
+2 Punkte:
+⠃ ⠅ ⠉ ⠑ ⠡ ⡁ ⢁ ⠆ ⠊ 
+⠒ ⠢ ⡂ ⢂ ⠌ ⠔ ⠤ ⡄ ⢄ 
+⠘ ⠨ ⡈ ⢈ ⠰ ⡐ ⢐ ⡠ ⢠ 
+⣀
+3 Punkte:
+⠇ ⠋ ⠓ ⠣ ⡃ ⢃ ⠍ ⠕ ⠥ 
+⡅ ⢅ ⠙ ⠩ ⡉ ⢉ ⠱ ⡑ ⢑ 
+⡡ ⢡ ⣁ ⠎ ⠖ ⠦ ⡆ ⢆ ⠚ 
+⠪ ⡊ ⢊ ⠲ ⡒ ⢒ ⡢ ⢢ ⣂ 
+⠜ ⠬ ⡌ ⢌ ⠴ ⡔ ⢔ ⡤ ⢤ 
+⣄ ⠸ ⡘ ⢘ ⡨ ⢨ ⣈ ⡰ ⢰ 
+⣐ ⣠
+4 Punkte:
+⠏ ⠗ ⠧ ⡇ ⢇ ⠛ ⠫ ⡋ ⢋ 
+⠳ ⡓ ⢓ ⡣ ⢣ ⣃ ⠝ ⠭ ⡍ 
+⢍ ⠵ ⡕ ⢕ ⡥ ⢥ ⣅ ⠹ ⡙ 
+⢙ ⡩ ⢩ ⣉ ⡱ ⢱ ⣑ ⣡ ⠞ 
+⠮ ⡎ ⢎ ⠶ ⡖ ⢖ ⡦ ⢦ ⣆ 
+⠺ ⡚ ⢚ ⡪ ⢪ ⣊ ⡲ ⢲ ⣒ 
+⣢ ⠼ ⡜ ⢜ ⡬ ⢬ ⣌ ⡴ ⢴ 
+⣔ ⣤ ⡸ ⢸ ⣘ ⣨ ⣰
+5 Punkte:
+⠟ ⠯ ⡏ ⢏ ⠷ ⡗ ⢗ ⡧ ⢧ 
+⣇ ⠻ ⡛ ⢛ ⡫ ⢫ ⣋ ⡳ ⢳ 
+⣓ ⣣ ⠽ ⡝ ⢝ ⡭ ⢭ ⣍ ⡵ 
+⢵ ⣕ ⣥ ⡹ ⢹ ⣙ ⣩ ⣱ ⠾ 
+⡞ ⢞ ⡮ ⢮ ⣎ ⡶ ⢶ ⣖ ⣦ 
+⡺ ⢺ ⣚ ⣪ ⣲ ⡼ ⢼ ⣜ ⣬ 
+⣴ ⣸
+6 Punkte:
+⠿ ⡟ ⢟ ⡯ ⢯ ⣏ ⡷ ⢷ ⣗ 
+⣧ ⡻ ⢻ ⣛ ⣫ ⣳ ⡽ ⢽ ⣝ 
+⣭ ⣵ ⣹ ⡾ ⢾ ⣞ ⣮ ⣶ ⣺ 
+⣼
+7 Punkte:
+⡿ ⢿ ⣟ ⣯ ⣷ ⣻ ⣽ ⣾
+8 Punkte:
+⣿
+# BENUTZTE ABZIEHEN 
+䷀ ䷁ ䷂ ䷃ ䷄ ䷅ ䷆ ䷇ ䷈ ䷉ ䷊ 
+䷋ ䷌ ䷍ ䷎ ䷏ ䷐ ䷑ ䷒ ䷓ ䷔ ䷕ 
+䷖ ䷗ ䷘ ䷙ ䷚ ䷛ ䷜ ䷝ ䷞ ䷟ ䷠ 
+䷡ ䷢ ䷣ ䷤ ䷥ ䷦ ䷧ ䷨ ䷩ ䷪ ䷫ 
+䷬ ䷭ ䷮ ䷯ ䷰ ䷱ ䷲ ䷳ ䷴ ䷵ ䷶ 
+䷷ ䷸ ䷹ ䷺ ䷻ ䷼ ䷽ ䷾ ䷿
+
+# ON | OFF 1 PUNKT 
+   ○ | ● 
+
+
+# GENUTZTE RAUS | 4 BITS | ALLE EINMALIG | NUR FÜR WABEN TARGETS | 
+
+⠃⠃ ⠃⠅ ⠃⠉ ⠃⠑ ⠃⠡ ⠃⡁ ⠃⢁ ⠃⠆ ⠃⠊ ⠃⠒ ⠃⠢ ⠃⡂ ⠃⢂ ⠃⠌ ⠃⠔ ⠃⠤ ⠃⡄ ⠃⢄ ⠃⠘ ⠃⠨ ⠃⡈ ⠃⢈ ⠃⠰ ⠃⡐ ⠃⢐ ⠃⡠ 
+⠃⢠ ⠃⣀ ⠅⠃ ⠅⠅ ⠅⠉ ⠅⠑ ⠅⠡ ⠅⡁ ⠅⢁ ⠅⠆ ⠅⠊ ⠅⠒ ⠅⠢ ⠅⡂ ⠅⢂ ⠅⠌ ⠅⠔ ⠅⠤ ⠅⡄ ⠅⢄ ⠅⠘ ⠅⠨ ⠅⡈ ⠅⢈ ⠅⠰ ⠅⡐ 
+⠅⢐ ⠅⡠ ⠅⢠ ⠅⣀ ⠉⠃ ⠉⠅ ⠉⠉ ⠉⠑ ⠉⠡ ⠉⡁ ⠉⢁ ⠉⠆ ⠉⠊ ⠉⠒ ⠉⠢ ⠉⡂ ⠉⢂ ⠉⠌ ⠉⠔ ⠉⠤ ⠉⡄ ⠉⢄ ⠉⠘ ⠉⠨ ⠉⡈ ⠉⢈ 
+⠉⠰ ⠉⡐ ⠉⢐ ⠉⡠ ⠉⢠ ⠉⣀ ⠑⠃ ⠑⠅ ⠑⠉ ⠑⠑ ⠑⠡ ⠑⡁ ⠑⢁ ⠑⠆ ⠑⠊ ⠑⠒ ⠑⠢ ⠑⡂ ⠑⢂ ⠑⠌ ⠑⠔ ⠑⠤ ⠑⡄ ⠑⢄ ⠑⠘ ⠑⠨ 
+⠑⡈ ⠑⢈ ⠑⠰ ⠑⡐ ⠑⢐ ⠑⡠ ⠑⢠ ⠑⣀ ⠡⠃ ⠡⠅ ⠡⠉ ⠡⠑ ⠡⠡ ⠡⡁ ⠡⢁ ⠡⠆ ⠡⠊ ⠡⠒ ⠡⠢ ⠡⡂ ⠡⢂ ⠡⠌ ⠡⠔ ⠡⠤ ⠡⡄ ⠡⢄ 
+⠡⠘ ⠡⠨ ⠡⡈ ⠡⢈ ⠡⠰ ⠡⡐ ⠡⢐ ⠡⡠ ⠡⢠ ⠡⣀ ⡁⠃ ⡁⠅ ⡁⠉ ⡁⠑ ⡁⠡ ⡁⡁ ⡁⢁ ⡁⠆ ⡁⠊ ⡁⠒ ⡁⠢ ⡁⡂ ⡁⢂ ⡁⠌ ⡁⠔ ⡁⠤ 
+⡁⡄ ⡁⢄ ⡁⠘ ⡁⠨ ⡁⡈ ⡁⢈ ⡁⠰ ⡁⡐ ⡁⢐ ⡁⡠ ⡁⢠ ⡁⣀ ⢁⠃ ⢁⠅ ⢁⠉ ⢁⠑ ⢁⠡ ⢁⡁ ⢁⢁ ⢁⠆ ⢁⠊ ⢁⠒ ⢁⠢ ⢁⡂ ⢁⢂ ⢁⠌ 
+⢁⠔ ⢁⠤ ⢁⡄ ⢁⢄ ⢁⠘ ⢁⠨ ⢁⡈ ⢁⢈ ⢁⠰ ⢁⡐ ⢁⢐ ⢁⡠ ⢁⢠ ⢁⣀ ⠆⠃ ⠆⠅ ⠆⠉ ⠆⠑ ⠆⠡ ⠆⡁ ⠆⢁ ⠆⠆ ⠆⠊ ⠆⠒ ⠆⠢ ⠆⡂ 
+⠆⢂ ⠆⠌ ⠆⠔ ⠆⠤ ⠆⡄ ⠆⢄ ⠆⠘ ⠆⠨ ⠆⡈ ⠆⢈ ⠆⠰ ⠆⡐ ⠆⢐ ⠆⡠ ⠆⢠ ⠆⣀ ⠊⠃ ⠊⠅ ⠊⠉ ⠊⠑ ⠊⠡ ⠊⡁ ⠊⢁ ⠊⠆ ⠊⠊ ⠊⠒ 
+⠊⠢ ⠊⡂ ⠊⢂ ⠊⠌ ⠊⠔ ⠊⠤ ⠊⡄ ⠊⢄ ⠊⠘ ⠊⠨ ⠊⡈ ⠊⢈ ⠊⠰ ⠊⡐ ⠊⢐ ⠊⡠ ⠊⢠ ⠊⣀ ⠒⠃ ⠒⠅ ⠒⠉ ⠒⠑ ⠒⠡ ⠒⡁ ⠒⢁ ⠒⠆ 
+⠒⠊ ⠒⠒ ⠒⠢ ⠒⡂ ⠒⢂ ⠒⠌ ⠒⠔ ⠒⠤ ⠒⡄ ⠒⢄ ⠒⠘ ⠒⠨ ⠒⡈ ⠒⢈ ⠒⠰ ⠒⡐ ⠒⢐ ⠒⡠ ⠒⢠ ⠒⣀ ⠢⠃ ⠢⠅ ⠢⠉ ⠢⠑ ⠢⠡ ⠢⡁ 
+⠢⢁ ⠢⠆ ⠢⠊ ⠢⠒ ⠢⠢ ⠢⡂ ⠢⢂ ⠢⠌ ⠢⠔ ⠢⠤ ⠢⡄ ⠢⢄ ⠢⠘ ⠢⠨ ⠢⡈ ⠢⢈ ⠢⠰ ⠢⡐ ⠢⢐ ⠢⡠ ⠢⢠ ⠢⣀ ⡂⠃ ⡂⠅ ⡂⠉ ⡂⠑ 
+⡂⠡ ⡂⡁ ⡂⢁ ⡂⠆ ⡂⠊ ⡂⠒ ⡂⠢ ⡂⡂ ⡂⢂ ⡂⠌ ⡂⠔ ⡂⠤ ⡂⡄ ⡂⢄ ⡂⠘ ⡂⠨ ⡂⡈ ⡂⢈ ⡂⠰ ⡂⡐ ⡂⢐ ⡂⡠ ⡂⢠ ⡂⣀ ⢂⠃ ⢂⠅ 
+⢂⠉ ⢂⠑ ⢂⠡ ⢂⡁ ⢂⢁ ⢂⠆ ⢂⠊ ⢂⠒ ⢂⠢ ⢂⡂ ⢂⢂ ⢂⠌ ⢂⠔ ⢂⠤ ⢂⡄ ⢂⢄ ⢂⠘ ⢂⠨ ⢂⡈ ⢂⢈ ⢂⠰ ⢂⡐ ⢂⢐ ⢂⡠ ⢂⢠ ⢂⣀ 
+⠌⠃ ⠌⠅ ⠌⠉ ⠌⠑ ⠌⠡ ⠌⡁ ⠌⢁ ⠌⠆ ⠌⠊ ⠌⠒ ⠌⠢ ⠌⡂ ⠌⢂ ⠌⠌ ⠌⠔ ⠌⠤ ⠌⡄ ⠌⢄ ⠌⠘ ⠌⠨ ⠌⡈ ⠌⢈ ⠌⠰ ⠌⡐ ⠌⢐ ⠌⡠ 
+⠌⢠ ⠌⣀ ⠔⠃ ⠔⠅ ⠔⠉ ⠔⠑ ⠔⠡ ⠔⡁ ⠔⢁ ⠔⠆ ⠔⠊ ⠔⠒ ⠔⠢ ⠔⡂ ⠔⢂ ⠔⠌ ⠔⠔ ⠔⠤ ⠔⡄ ⠔⢄ ⠔⠘ ⠔⠨ ⠔⡈ ⠔⢈ ⠔⠰ ⠔⡐ 
+⠔⢐ ⠔⡠ ⠔⢠ ⠔⣀ ⠤⠃ ⠤⠅ ⠤⠉ ⠤⠑ ⠤⠡ ⠤⡁ ⠤⢁ ⠤⠆ ⠤⠊ ⠤⠒ ⠤⠢ ⠤⡂ ⠤⢂ ⠤⠌ ⠤⠔ ⠤⠤ ⠤⡄ ⠤⢄ ⠤⠘ ⠤⠨ ⠤⡈ ⠤⢈ 
+⠤⠰ ⠤⡐ ⠤⢐ ⠤⡠ ⠤⢠ ⠤⣀ ⡄⠃ ⡄⠅ ⡄⠉ ⡄⠑ ⡄⠡ ⡄⡁ ⡄⢁ ⡄⠆ ⡄⠊ ⡄⠒ ⡄⠢ ⡄⡂ ⡄⢂ ⡄⠌ ⡄⠔ ⡄⠤ ⡄⡄ ⡄⢄ ⡄⠘ ⡄⠨ 
+⡄⡈ ⡄⢈ ⡄⠰ ⡄⡐ ⡄⢐ ⡄⡠ ⡄⢠ ⡄⣀ ⢄⠃ ⢄⠅ ⢄⠉ ⢄⠑ ⢄⠡ ⢄⡁ ⢄⢁ ⢄⠆ ⢄⠊ ⢄⠒ ⢄⠢ ⢄⡂ ⢄⢂ ⢄⠌ ⢄⠔ ⢄⠤ ⢄⡄ ⢄⢄ 
+⢄⠘ ⢄⠨ ⢄⡈ ⢄⢈ ⢄⠰ ⢄⡐ ⢄⢐ ⢄⡠ ⢄⢠ ⢄⣀ ⠘⠃ ⠘⠅ ⠘⠉ ⠘⠑ ⠘⠡ ⠘⡁ ⠘⢁ ⠘⠆ ⠘⠊ ⠘⠒ ⠘⠢ ⠘⡂ ⠘⢂ ⠘⠌ ⠘⠔ ⠘⠤ 
+⠘⡄ ⠘⢄ ⠘⠘ ⠘⠨ ⠘⡈ ⠘⢈ ⠘⠰ ⠘⡐ ⠘⢐ ⠘⡠ ⠘⢠ ⠘⣀ ⠨⠃ ⠨⠅ ⠨⠉ ⠨⠑ ⠨⠡ ⠨⡁ ⠨⢁ ⠨⠆ ⠨⠊ ⠨⠒ ⠨⠢ ⠨⡂ ⠨⢂ ⠨⠌ 
+⠨⠔ ⠨⠤ ⠨⡄ ⠨⢄ ⠨⠘ ⠨⠨ ⠨⡈ ⠨⢈ ⠨⠰ ⠨⡐ ⠨⢐ ⠨⡠ ⠨⢠ ⠨⣀ ⡈⠃ ⡈⠅ ⡈⠉ ⡈⠑ ⡈⠡ ⡈⡁ ⡈⢁ ⡈⠆ ⡈⠊ ⡈⠒ ⡈⠢ ⡈⡂ 
+⡈⢂ ⡈⠌ ⡈⠔ ⡈⠤ ⡈⡄ ⡈⢄ ⡈⠘ ⡈⠨ ⡈⡈ ⡈⢈ ⡈⠰ ⡈⡐ ⡈⢐ ⡈⡠ ⡈⢠ ⡈⣀ ⢈⠃ ⢈⠅ ⢈⠉ ⢈⠑ ⢈⠡ ⢈⡁ ⢈⢁ ⢈⠆ ⢈⠊ ⢈⠒ 
+⢈⠢ ⢈⡂ ⢈⢂ ⢈⠌ ⢈⠔ ⢈⠤ ⢈⡄ ⢈⢄ ⢈⠘ ⢈⠨ ⢈⡈ ⢈⢈ ⢈⠰ ⢈⡐ ⢈⢐ ⢈⡠ ⢈⢠ ⢈⣀ ⠰⠃ ⠰⠅ ⠰⠉ ⠰⠑ ⠰⠡ ⠰⡁ ⠰⢁ ⠰⠆ 
+⠰⠊ ⠰⠒ ⠰⠢ ⠰⡂ ⠰⢂ ⠰⠌ ⠰⠔ ⠰⠤ ⠰⡄ ⠰⢄ ⠰⠘ ⠰⠨ ⠰⡈ ⠰⢈ ⠰⠰ ⠰⡐ ⠰⢐ ⠰⡠ ⠰⢠ ⠰⣀ ⡐⠃ ⡐⠅ ⡐⠉ ⡐⠑ ⡐⠡ ⡐⡁ 
+⡐⢁ ⡐⠆ ⡐⠊ ⡐⠒ ⡐⠢ ⡐⡂ ⡐⢂ ⡐⠌ ⡐⠔ ⡐⠤ ⡐⡄ ⡐⢄ ⡐⠘ ⡐⠨ ⡐⡈ ⡐⢈ ⡐⠰ ⡐⡐ ⡐⢐ ⡐⡠ ⡐⢠ ⡐⣀ ⢐⠃ ⢐⠅ ⢐⠉ ⢐⠑ 
+⢐⠡ ⢐⡁ ⢐⢁ ⢐⠆ ⢐⠊ ⢐⠒ ⢐⠢ ⢐⡂ ⢐⢂ ⢐⠌ ⢐⠔ ⢐⠤ ⢐⡄ ⢐⢄ ⢐⠘ ⢐⠨ ⢐⡈ ⢐⢈ ⢐⠰ ⢐⡐ ⢐⢐ ⢐⡠ ⢐⢠ ⢐⣀ ⡠⠃ ⡠⠅ 
+⡠⠉ ⡠⠑ ⡠⠡ ⡠⡁ ⡠⢁ ⡠⠆ ⡠⠊ ⡠⠒ ⡠⠢ ⡠⡂ ⡠⢂ ⡠⠌ ⡠⠔ ⡠⠤ ⡠⡄ ⡠⢄ ⡠⠘ ⡠⠨ ⡠⡈ ⡠⢈ ⡠⠰ ⡠⡐ ⡠⢐ ⡠⡠ ⡠⢠ ⡠⣀ 
+⢠⠃ ⢠⠅ ⢠⠉ ⢠⠑ ⢠⠡ ⢠⡁ ⢠⢁ ⢠⠆ ⢠⠊ ⢠⠒ ⢠⠢ ⢠⡂ ⢠⢂ ⢠⠌ ⢠⠔ ⢠⠤ ⢠⡄ ⢠⢄ ⢠⠘ ⢠⠨ ⢠⡈ ⢠⢈ ⢠⠰ ⢠⡐ ⢠⢐ ⢠⡠ 
+⢠⢠ ⢠⣀ ⣀⠃ ⣀⠅ ⣀⠉ ⣀⠑ ⣀⠡ ⣀⡁ ⣀⢁ ⣀⠆ ⣀⠊ ⣀⠒ ⣀⠢ ⣀⡂ ⣀⢂ ⣀⠌ ⣀⠔ ⣀⠤ ⣀⡄ ⣀⢄ ⣀⠘ ⣀⠨ ⣀⡈ ⣀⢈ ⣀⠰ ⣀⡐ 
+⣀⢐ ⣀⡠ ⣀⢠ ⣀⣀
+
+###==============================WABENTECHNIK===============================###
+
+
+
+
+
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
-MUTTERWABEN-KATEGORIE ⣿ <MODUL> 
+MUTTERWABEN-KATEGORIE  <MODUL> 
 
 ###============================MUTTERWABEN-MODUL============================###
 
-MODUL ⣿ KOPFWABE 
+MODUL  KOPFWABE 
 
-KOMPONENTE ⣼
+KOMPONENTE 
 
-KOMPONENTEN-ID ⣺
+KOMPONENTEN-ID 
 
-BION-NR ⣮
+BION-NR 
 
-BION-ID ⣞
+BION-ID 
 
-MASTER-ID ⣾
+MASTER-ID 
 
 # ( steht später nur im lexikon BION-ID AXIOM ) 
-AXIOM ¡ ⣺ ⟛ ⣮ ≠ ⣞
+AXIOM ¡ 
 
 ###============================MUTTERWABEN-MODUL============================###
 
 MODUL ⣿ MASTERKERNWABE
 
- WABEN-ID ⣞ MK
+ WABEN-ID  MK
 
- BION-NR ⢾ 
+ BION-NR  
 
- BION-ID ⡾ 
+ BION-ID  
 
- BSK ¡ ⣹
+ BSK ¡ 
 
- BION ¡ ⣭
+ BION ¡ 
 
 # ( steht später nur im lexikon BION-ID AXIOM )
-AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
+AXIOM ¡ 
 
 ###============================MUTTERWABEN-MODUL============================###
 
 MODUL ⣿ HAUPTWABE 
 
- PROGRAMM ⣝ 
+ PROGRAMM  
 
- WABEN-ID ⣞ HT
+ WABEN-ID  HT
 
- BION-NR ⢾ 
+ BION-NR  
 
- BION-ID ⡾ 
+ BION-ID  
 
- BSK ¡ ⣹
+ BSK  
 
- BION ⣭ 
+ BION  
 
 # ( steht später nur im lexikon BION-ID AXIOM )
-AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
+AXIOM ¡ 
 
 ###============================MUTTERWABEN-MODUL============================###
 
 MODUL ⣿ STARTWABE 
 
- PROGRAMM ⣝ 
+ PROGRAMM  
 
- WABEN-ID ⣞ ST
+ WABEN-ID  ST
 
- BION-NR ⢾ 
+ BION-NR  
 
- BION-ID ⡾ 
+ BION-ID  
 
- BSK ¡ ⣹
+ BSK 
 
- BION ⣭ 
+ BION  
 
- TASTENCODE ⡧
- TASTENCODE ⣴
- TASTENCODE ⣬
- TASTENCODE ⣜
- TASTENCODE ⢼
- TASTENCODE ⡼
- TASTENCODE ⣲
- TASTENCODE ⣪
- TASTENCODE ⣚
- TASTENCODE ⢺
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
 
- SYMBOLE ⡺
- SYMBOLE ⣦
- SYMBOLE ⣖
- SYMBOLE ⢶
- SYMBOLE ⡶
- SYMBOLE ⣎
- SYMBOLE ⢮
- SYMBOLE ⡮
- SYMBOLE ⢞
- SYMBOLE ⡞
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
+ SYMBOLE 
 
- PRÄFIX ⢵
- PRÄFIX ⡵
- PRÄFIX ⣍
- PRÄFIX ⢭
- PRÄFIX ⡭
- PRÄFIX ⢝
- PRÄFIX ⡝
- PRÄFIX ⠽
- PRÄFIX ⣣
- PRÄFIX ⠟
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
+ PRÄFIX 
 
 # ISA AXIOM VARIANTE 1
 AXIOM ¡ <TASTECODE-PATTER> ⟛ <TASTENCODE-PATTER> Ξ <SYMBOL-PATTER>  
@@ -167,59 +274,59 @@ AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
 AXIOM ¡ <TASTECODE-PATTER> Ξ <SYMBOL-PATTER>  
 AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
 
- PRODUKT ⠾
- PRODUKT ⣱
- PRODUKT ⣩
- PRODUKT ⣙
- PRODUKT ⢹
- PRODUKT ⡹
- PRODUKT ⣥
- PRODUKT ⣕
+ PRODUKT 
+ PRODUKT 
+ PRODUKT 
+ PRODUKT 
+ PRODUKT 
+ PRODUKT 
+ PRODUKT 
+ PRODUKT 
 
 # RAM AXIOM 
 AXIOM ¡ <PRODUKT> ≠ <EIMHEIT>
 
  # RAM
- EINHEIT ⡟ 
+ EINHEIT 
 
  # PROZESS STOP
- BSK-RESET ⣶ 
+ BSK-RESET  
 
 # ( steht später nur im lexikon BION-ID AXIOM )
-AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
+AXIOM ¡ 
 
 ###============================MUTTERWABEN-MODUL============================###
 
 MODUL ⣿ BAUWABE 
 
- PROGRAMM ⣝ 
+ PROGRAMM 
 
- WABEN-ID ⣞ BA
+ WABEN-ID  BA
 
- BION-NR ⢾ 
+ BION-NR  
 
- BION-ID ⡾ 
+ BION-ID  
 
- BSK ¡ ⣹
+ BSK ¡ 
 
- BION ⣭ 
+ BION  
 
  # RAM
- EINHEIT ⡟ 
+ EINHEIT  
 
  # PROZESS STOP
- BSK-RESET ⣶ 
+ BSK-RESET  
 
 # ( steht später nur im lexikon BION-ID AXIOM )
-AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
+AXIOM ¡ 
 
-TOCHTERWABEN-KATEGORIE ⡿
+TOCHTERWABEN-KATEGORIE 
 
  ( EXPLIZITE MODUL EINSTELLUNGEN)
 
  (ALLE MOMENTAN NOCH AUF WABEN AUFGETEILTE DINGE )
 
-KINDWABEN-KATEGORIE ⢿ 
+KINDWABEN-KATEGORIE 
 
  ( SPEZIASLISIERTE EINSTELLUNGEN WIE ABI , BINARY , EINGABEN EBENEN , SHELLS - WENN TOCHTERWABE SYSTEMWABE Z.B)
  ( DIE KINDERWABEN HABEN ABER DEN ECHTEN DRAHT ... IN DEN TOCHERWABEN SIND DIE IM PYLOVARA-SYSTEM DRÄHTE )
@@ -227,28 +334,28 @@ KINDWABEN-KATEGORIE ⢿
 
 MODUL ⣿ ENDWABE 
 
- PROGRAMM ⣝ 
+ PROGRAMM 
 
- WABEN-ID ⣞ ED
+ WABEN-ID  ED
 
- BION-NR ⢾ 
+ BION-NR  
 
- BION-ID ⡾ 
+ BION-ID  
 
- BSK ¡ ⣹
+ BSK 
 
- BION ⣭ 
+ BION 
 
  # RAM
- EINHEIT ⡟ 
+ EINHEIT  
 
  # PROZESS STOP
- BSK-RESET ⣶ 
+ BSK-RESET  
 
 # ( steht später nur im lexikon BION-ID AXIOM ) 
-AXIOM ¡ ⣞ ⟛ ⢾ Ξ ⡾
+AXIOM 
 
-TOCHTERWABEN-KATEGORIE ⡿
+TOCHTERWABEN-KATEGORIE 
 
 ( EXPLIZITE MODUL EINSTELLUNGEN)
 
@@ -257,17 +364,17 @@ TOCHTERWABEN-KATEGORIE ⡿
 ###============================MUTTERWABEN-MODUL============================###
 ###=========================================================================###
 
-TOCHTERWABEN-KATEGORIE ⡿ <MODUL> 
+TOCHTERWABEN-KATEGORIE  <MODUL> 
 
 ###===========================TOCHTERWABEN-MODUL============================###
 
- MODUL ⡿ EINGABE
-
-###===========================TOCHTERWABEN-MODUL============================###
-
-
+ MODUL  EINGABE
 
 ###===========================TOCHTERWABEN-MODUL============================###
 
 
-KINDWABEN-KATEGORIE ⢿ <MODUL>
+
+###===========================TOCHTERWABEN-MODUL============================###
+
+
+KINDWABEN-KATEGORIE  <MODUL>

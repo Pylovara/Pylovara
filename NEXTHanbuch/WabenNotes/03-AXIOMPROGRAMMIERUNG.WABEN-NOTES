@@ -12,7 +12,7 @@ zukünftige ¡ verbindungen
 werden dann als axiomen genutzt für die logik schaltung 
 
 1 Punkt:
-⠁ ⠂ ⠄ ⠈ ⠐ ⠠ ⡀ ⢀
+⠁ ⠂ ⠄ ⡀ ⠈ ⠐ ⠠  ⢀
 
 2 Punkte:
 ⠃ ⠅ ⠉ ⠑ ⠡ ⡁ ⢁ ⠆ ⠊ ⠒ ⠢ ⡂ ⢂ 
@@ -45,6 +45,52 @@ werden dann als axiomen genutzt für die logik schaltung
 ⣿
 
 
+das würde bedeuten jede wabe bekommt einen logischen verknüpfer .. pro wabe eigene dot patter 
+
+also 
+
+MUTTERWABEN-KATEGORIE ⠁ <NAME>
+
+ WABEN-ID ⠂ <WABENKENNUNG>
+
+ BION-NR ⠄ <EXPLIZITE-NUMMER>
+
+ BION-ID ⡀ <WABEN-ID + BION-NR>
+
+ BION ⠈ <BION-ID + ABFOLGE>
+
+
+wäre dann 
+
+ # PROGRAMM NAMEN AXIOM 
+ AXIOM ¡ ⠁ 
+
+ # BION-ID AXIOM 
+ AXIOM ¡ ⠂ + ⠄ = ⠈
+ 
+ # BION AXIOM 
+ AXIOM ¡ ⠈ 
+
+ DANN EIN SYMBOL FÜR KETTEN SCHALTUNGEN 
+ VON OBEN NACH UNTEN ZÄHLEND FÜR HAUPTWABEN BIS ENDWABEN 
+
+ ZUM BEISPIEL = ⌬ 
+
+ WÄRE DANN 
+
+ # BION AXIOM 
+ AXIOM ¡ ⠈ + ⌬ = ⠈ 
+
+
+ GRUND WABEN PROGRAMMIERUNG .... ÜBER DOTPATTERN UND EXTRAS 
+ 
+
+
+
+
+
+
+##############################################################
 
  neue symbole speziell für die axiomen , ich brauch symbole für wörter 
 
@@ -120,4 +166,3 @@ ich machs wie bei hypürland jakoolit
  und keiner muss sich in der utf 8 liste durch arbeiten oder rum copieren 
  .....
 
- 

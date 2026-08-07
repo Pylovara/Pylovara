@@ -3,8 +3,32 @@
 ###============ ENTWICKLUNGSBEREICH FÜR DIE NÄCHSTE TWS STRUKTUR ===========###
 ###==============================WABENAUFBAU================================###
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+###==========================INFORMATIONSBEREICH============================###
 
-###=============================GESAMTWABE-ANFANG===========================###
+ MUTTERWABE 
+ —————————— 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 MUTTERWABEN-KATEGORIE ¡ <NAME>
 
@@ -17,100 +41,10 @@ MUTTERWABEN-KATEGORIE ¡ <NAME>
  BION ¡ <BION-ID + ABFOLGE>
 
 
-TOCHTERWABEN-KATEGORIE ¡ <NAMEN>
-
- OPTION ¡ <VARIANTE>
-
-verschiednen programmierungs optionen aber zentralisiert eindeutig 
-keine manualen mehr pro waben 
-
-
-
-KINDWABE-KATEGORIE ¡ <NAMEN>
-
- ISA-OPTION ¡ 
-
-direkte anbindungen zu verschiedenen programmiersprachen 
-waben speziell ... 
-
-
-###==============================GESAMTWABE-ENDE============================###
-
-
-###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
-
- TOCHTERWABEN ANSCHLUSS AUSWAHL : beispiele 
-
-###====================================================
-
- TOCHTERWABEN-KATEGORIE ¡ ABI-DISPATCHER
-
- OPTION ¡ TASTENCODE-STREAM
-
- OPTIONSBLOCK ↓
-
-   # AXIOM-VERERBUNG VON MUTTER
-   GEBAUTE-EINHEIT ¡ ÷: = BX-ABI-START
-   IN-ID   ¡ <IO_INPUT>
-   OUT-ID  ¡ <IO_OUTPUT>
-   LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
-
-###====================================================
-
- TOCHTERWABEN-KATEGORIE ¡ MCD-DISPATCHER
-
- OPTION ¡ HARDWARE-CONTROL-IMPULS
-
- OPTIONSBLOCK ↓
-
-   # AXIOM-VERERBUNG VON MUTTER
-   GEBAUTE-EINHEIT ¡ ~: = BX-MCD-START
-   IN-ID   ¡ <MCD_REGISTER>
-   OUT-ID  ¡ <MCD_REGISTER>
-   LINK-OUT ¡ AKMKHTSTCB-ARGUMENT-IMPULS
-
-###====================================================
-
- TOCHTERWABEN-KATEGORIE ¡ REGISTER-MAPPER (REG/RIG)
-
- OPTION ¡ 
-
- OPTIONSBLOCK ↓
 
 
 
 
-###====================================================
-
-###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
-
-TOCHTERWABEN ANSCHLUSS AUSWAHL :
-
-###====================================================
-
-KINDWABEN-KATEGORIE ¡
-
- ISA-OPTION ¡ 
-
- ISABLOCK ↓
-
-###====================================================
-
-KINDWABEN-KATEGORIE ¡
-
- ISA-OPTION ¡ 
-
- ISABLOCK ↓
-
-###====================================================
-
-KINDWABEN-KATEGORIE ¡
-
- ISA-OPTION ¡ 
-
- ISABLOCK ↓
-
-###====================================================
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

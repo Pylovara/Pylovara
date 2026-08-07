@@ -1,0 +1,103 @@
+@mcs-nr: 01 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #       TRANSAKTIONSRAHMEN =  THE PROGRAMMING LANGUAGE DATA EXECUTE LAW     #
+###==============================MCS-ERKLÄRUNG==============================###
+
+ ⠆⢄⢁⠒ TRANSAKTIONSRAHMEN 
+ ———————————————————————
+
+ EINE TRANSAKTION TRANSFERIERT ETWAS VON A NACH B.
+ SIE KANN, GELD, INTERNETDATEN, CODE, STANDORTE, ETC - TRANSPORTIEREN.
+
+ WIR TRANSPORTIEREN IN AKTION CODE - IM RAHMEN.
+ SO SETZT SICH DER TRANSAKTIONSRAHMEN NAMENTLICH ZUSAMMEN.
+
+ ER SORGT FÜR EINDEUTIGE RAHMENBEDINGUNGEN DIE IN ANDEREN SPRACHEN 
+
+ MEIST IN SCHLECHTERER FORM :
+
+ JAVA :
+
+ public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hallo Welt!");
+    }
+ }
+
+  C : 
+
+  #include <stdio.h>
+
+ int main() {
+    printf("Hallo Welt!\n");
+    return 0;
+ }
+
+ C++ : 
+
+ #include <iostream>
+
+ int main() {
+    std::cout << "Hallo Welt!" << std::endl;
+    return 0;
+ }
+
+ PYTHON : 
+
+ print("Hallo Welt!") 
+
+ JAVASCRIPT : 
+
+ console.log("Hallo Welt!"); 
+
+ JAVASCRIPT : 
+
+ const message: string = "Hallo Welt!";
+ console.log(message); 
+
+ HTML : 
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Beispiel</title>
+ </head>
+ <body>
+    <h1>Hallo Welt!</h1>
+ </body>
+ </html>
+
+
+ 99% BESITZEN KEINERLEI SCHUTZ AUSFÜHRUNG, DIE RESTLICHEN 1% EHER AUFGETEILTE 
+ BIS GARKEINE ( BASH Z.B ). 
+
+ IN MCS WIRD DER BLOCK SO DEFINIERT : 
+
+ ¢! # STARTPUNKT 
+ !¢ # ENDPUNKT 
+
+ BEISPIEL : 
+
+# MCS
+¢!
+  —[": BION-ID BILDEN :"]
+  ¬· —[": HOLE NAME :"]
+     ¬· »—[×: MOV RAX, [NAME] :×]«
+  ¬· —[": HOLE NUMMER :"]
+     ¬· »—[×: ADD RAX, [NR] :×]«
+  ¬· —[": SPEICHERE BION-ID :"]
+     ¬· »—[×: MOV [BION-ID], RAX :×]«
+!¢
+
+¢!
+ —[": RECHNUNGSBEISPIEL :"]
+ ¬· »—[×: 1 + 0 :×]«
+     ¬·¤ [": 1 :"]
+!¢
+
+ TA = TRANSAKTIONSRAHMEN SIND FREIGABE UND BLOCK REGISTRIERUNG 
+ UND KÖNNEN, JE NACH EINSATZGEBIET, IN VERSCHIEDENEN DATEIEN 
+ EINES PROGRAMMES ALS SPEZIALISIERTEN TA ODER GESAMT CODE TA 
+ VERWENDET WERDEN. 
+
+###================================ENDPUNKT=================================###

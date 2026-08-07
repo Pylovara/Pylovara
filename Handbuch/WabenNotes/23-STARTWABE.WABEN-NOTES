@@ -1,0 +1,98 @@
+@waben-nr: 23 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###================================STARTWABE================================###
+
+MODUL ⠆⢄⢈⡠ STARTWABE 
+
+ PROGRAMM ⠆⢄⢈⢁ 
+
+ WABEN-ID ⠆⢄⢈⢂ ST
+
+ BION-NR ⠆⢄⢈⢐ 
+
+ BION-ID ⠆⢄⢈⢠ 
+
+ BSK ⠆⢄⢈⣀
+
+ BION ⠆⢄⢐⠃ 
+
+ TASTENCODE ⠆⢄⢐⠅
+ TASTENCODE ⠆⢄⢐⠉
+ TASTENCODE ⠆⢄⢐⠊
+ TASTENCODE ⠆⢄⢐⠌
+ TASTENCODE ⠆⢄⢈⠒
+ TASTENCODE ⠆⢄⢈⠔
+ TASTENCODE ⠆⢄⢈⠘
+ TASTENCODE ⠆⢄⢈⠡
+ TASTENCODE ⠆⢄⢈⠢
+ TASTENCODE ⠆⢄⢈⠤
+
+ SYMBOLE ⠆⢄⢈⠨
+ SYMBOLE ⠆⢄⢈⠰
+ SYMBOLE ⠆⢄⢈⡁
+ SYMBOLE ⠆⢄⢈⡂
+ SYMBOLE ⠆⢄⢈⡄
+ SYMBOLE ⠆⢄⢈⡈
+ SYMBOLE ⠆⢄⢂⡠
+ SYMBOLE ⠆⢄⢂⢁
+ SYMBOLE ⠆⢄⢂⢈
+ SYMBOLE ⠆⢄⢂⢐
+
+ PRÄFIX ⠆⢄⢂⢠
+ PRÄFIX ⠆⢄⢂⣀
+ PRÄFIX ⠆⢄⢈⠃
+ PRÄFIX ⠆⢄⢈⠅
+ PRÄFIX ⠆⢄⢈⠉
+ PRÄFIX ⠆⢄⢈⠊
+ PRÄFIX ⠆⢄⢈⠌
+ PRÄFIX ⠆⢄⢈⠑
+ PRÄFIX ⠆⢄⢂⠔
+ PRÄFIX ⠆⢄⢂⠘
+
+# ISA AXIOM VARIANTE 1
+AXIOM ¡ <TASTECODE-PATTER> ⟛ <TASTENCODE-PATTER> Ξ <SYMBOL-PATTER>  
+AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
+
+# ISA AXIOM VARIANTE 2
+AXIOM ¡ <TASTECODE-PATTER> Ξ <SYMBOL-PATTER>  
+AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
+
+ PRODUKT ⠆⢄⢂⠡
+ PRODUKT ⠆⢄⢂⠢
+ PRODUKT ⠆⢄⢂⠤
+ PRODUKT ⠆⢄⢂⠨
+ PRODUKT ⠆⢄⢂⠰
+ PRODUKT ⠆⢄⢂⡁
+ PRODUKT ⠆⢄⢂⡂
+ PRODUKT ⠆⢄⢂⡄
+
+# RAM AXIOM 
+AXIOM ¡ <PRODUKT> ≠ <EIMHEIT>
+
+ # RAM
+ EINHEIT ⠆⢄⢂⡈
+
+ # PROZESS STOP
+ BSK-RESET ⠆⢄⢂⡐ 
+
+# ( steht später nur im lexikon BION-ID AXIOM )
+AXIOM ¡ 
+
+###==============================INFORMATIONEN==============================###
+
+
+###==========================VERWENDETE-WABEN-NR============================###
+
+
+###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
+
+ # BION-ID
+ AXIOM ¡ ⠆⢄⢈⢂ ⧓ ⠆⢄⢈⢐ Ξ ⠆⢄⢈⢠
+
+### GRUNDSTRUKTUR:
+<OPERAND1> ⧓ <OPERAND2> Ξ <ERGEBNIS>
+
+# ⧓ = VERBINDE (KOMBINIERE OPERAND1 UND OPERAND2)
+# Ξ = ISTGLEICH (WEISE DAS ERGEBNIS ZU)
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

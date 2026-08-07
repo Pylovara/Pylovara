@@ -1,23 +1,24 @@
-@waben-nr: 01 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 21 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
-###============ ENTWICKLUNGSBEREICH FÜR DIE NÄCHSTE TWS STRUKTUR ===========###
-###================================KOPFWABE=================================###
+###==============================MASTERKERNWABE=============================###
 
-MUTTERWABEN-KATEGORIE ⠆⢄⢐⣀ KOPFWABE
+MODUL ⠆⢄⢐⠑ MASTERKERNWABE
 
- KOMPONENTE ⠆⢄⢐⡠ <NAME>
+ WABEN-ID ⠆⢄⢐⠒ MK
 
- KOMPONENTEN-ID ⠆⢄⢐⢁ <PRÄFIX>
+ BION-NR ⠆⢄⢐⠔ 
 
- BION-NR ⠆⢄⢐⢂ <NR> 
+ BION-ID ⠆⢄⢐⠘ 
 
- BION-ID ⠆⢄⢐⢈ <BION-ID>
+ BSK ⠆⢄⢐⠡
 
- MASTER-ID ⠆⢄⢐⢠ <MASTER>
+ BION ⠆⢄⢐⠢
+
+# MASTER AXIOM
+AXIOM ¡ 
 
 ###==============================INFORMATIONEN==============================###
 
- DIE KOPFWABE TRÄGT DIE KOMPONENTE.
 
 ###==========================VERWENDETE-WABEN-NR============================###
 
@@ -25,7 +26,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⢐⣀ KOPFWABE
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
  # BION-ID
- AXIOM ¡ ⠆⢄⢐⢁ ⧓ ⠆⢄⢐⢂ Ξ ⠆⢄⢐⢈
+ AXIOM ¡ ⠆⢄⢐⠒ ⧓ ⠆⢄⢐⠔ Ξ ⠆⢄⢐⠢
 
 ### GRUNDSTRUKTUR:
 <OPERAND1> ⧓ <OPERAND2> Ξ <ERGEBNIS>

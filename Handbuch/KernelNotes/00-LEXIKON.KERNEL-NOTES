@@ -8,17 +8,17 @@
 ###===============================KOMPONENTEN===============================###
  #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN              源真理   #
  #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
- #   01  Æ ·  TRANSAKTIONSRAHMEN       | 02  Æ ·  PROTEIN                    #
- #   03  Æ ·  PROTON                   | 04  Æ ·  TRENNBEFEHL                #
- #   05  Æ ·  BINDUNGSBEFEHL           | 06  Æ ·  AKTIONSDRAHT               #
- #   07  Æ ·  REX                      | 08  Æ ·  ICTUS                      #
- #   09  Æ ·  BOXIS                    | 10  Æ ·  SENTIATOR                  #
- #   11  Æ ·  NITROX                   | 12  Æ ·  FEED                       #
- #   13  Æ X  SYNAPTOR                 | 14  Æ ·  ZYTRON                     #
-###==============================SYSTEM-ELEMENTE============================###
+ #   01  - -  TRANSAKTIONSRAHMEN       | 02  - -  PROTEIN                    #
 ############################ ALTER STRUKTUR BAUM ##############################
+ #   03  - -  PROTON                   | 04  - -  TRENNBEFEHL                #
+ #   05  - -  BINDUNGSBEFEHL           | 06  - -  AKTIONSDRAHT               #
+ #   07  - -  REX                      | 08  - -  ICTUS                      #
+ #   09  - -  BOXIS                    | 10  - -  SENTIATOR                  #
+ #   11  - -  NITROX                   | 12  - -  FEED                       #
+ #   13  - -  SYNAPTOR                 | 14  - -  ZYTRON                     #
+###==============================SYSTEM-ELEMENTE============================###
  #   30  - -  VATRON                   | 31  - -  RETRON                     #
- #   32  - -  MCD                      | 33  - -                             #
+ #   32  - -  MCD                      | 33  - -  DATENPIPELINE              #
 ###=================================REGISTER================================###
  #   40  - Ŋ  DATENTYPEN               | 41  - Ŋ  NAVIGATOR                  #
  #   42  - Ŋ  KKIS                     | 43  - -  DATEITYPEN                 #
@@ -31,21 +31,21 @@
 ###==========IDENTIFIKATION-BERECHTIGUNG-FÜR-ENTWICKLER-ZURGFFF=============###
  #   90  - - IDENTIFIKATION            | 91  - -                             #
 ###=================================LIZENZEN================================###
- #   93   L1_COREKERNELMANDAT                        #  #     #   #     #    #
- #   94   L2_AUTHORRIGHTS                            #    # #      #    #    #
- #   95   L3_COMMERCIALLICENSING                     # #     #        #      #
+ #   93   L1_COREKERNELMANDAT                        #                       #
+ #   94   L2_AUTHORRIGHTS                            #                       #
+ #   95   L3_COMMERCIALLICENSING                     #                       #
  #   96   L4_AI_ADMINISTRATIONSMANDATE               #    PYLOVARA—SYSTEM©   #
- #   97   L5_POST_MORTEM-CONTROL                     #    #     #            #
- #   98   L6_IMMUTABLE_CORES_DEFINITION              # #      #      #  #    #
- #   99   LICENSE—MANIFEST.PROTO                     #    #       #      #   #
+ #   97   L5_POST_MORTEM-CONTROL                     #                       #
+ #   98   L6_IMMUTABLE_CORES_DEFINITION              #                       #
+ #   99   LICENSE—MANIFEST.PROTO                     #                       #
 ###===============================VERSIONSDATEN=============================###
  # SYSTEM = PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM                               #
  # PROGRAMMIERSPRACHE = MCS 7.4 | MASCHINEN-CODE-SPEECH                      #
- # KERNELSPRACHE  = TWS 0.2 | THE-WABE-NEST-SYSTEM                           #
+ # KERNELSPRACHE  = TWS 0.3 | THE-WABE-NEST-SYSTEM                           #
  # TASTATURSTANDARD = UTF -8 DEUTSCHER-STANDARD                              #
  # HANDBUCHSTANDORT = /Pylovara/Handbuch/Kernel                              #
  # LIZENSEN = LV 1.3 LIZENSVERTRAG                                           #
- # SINGLE SOURCE OF TRUTH = SSoT LEXIKON VERSION 00.82                       #
+ # SINGLE SOURCE OF TRUTH = SSoT LEXIKON VERSION 00.83                       #
 ###=================================IMPRESSUM===============================###
  # AUTOR = OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68     GITHUB                   #
  # STANDORT = /Pylovara/Handbuch/KernelNotes/         PYLOVARA SYSTEM        #

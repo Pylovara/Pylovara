@@ -16,8 +16,10 @@ MODUL ⠆⢄⢈⡠ STARTWABE
 
  BION ⠆⢄⢐⠃ 
 
- # BION-ID USW
- AXIOM ¡
+ # BION-ID 
+ AXIOM ¡  ⧓  Ξ 
+ # BION
+ AXIOM ¡  ⧑ # NEXT
 
  TASTENCODE ⠆⢄⢐⠅
  TASTENCODE ⠆⢄⢐⠉
@@ -52,13 +54,9 @@ MODUL ⠆⢄⢈⡠ STARTWABE
  PRÄFIX ⠆⢄⢂⠔
  PRÄFIX ⠆⢄⢂⠘
 
-# ISA AXIOM VARIANTE 1
-AXIOM ¡ <TASTECODE-PATTER> ⟛ <TASTENCODE-PATTER> Ξ <SYMBOL-PATTER>  
-AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
-
-# ISA AXIOM VARIANTE 2
-AXIOM ¡ <TASTECODE-PATTER> Ξ <SYMBOL-PATTER>  
-AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
 
  PRODUKT ⠆⢄⢂⠡
  PRODUKT ⠆⢄⢂⠢
@@ -69,17 +67,21 @@ AXIOM ¡ <SYMBOL-PATTER> ⟛ <PRÄFIX> Ξ <PRODUKT>
  PRODUKT ⠆⢄⢂⡂
  PRODUKT ⠆⢄⢂⡄
 
-# RAM AXIOM 
-AXIOM ¡ <PRODUKT> ≠ <EIMHEIT>
 
- # RAM
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍞ 
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍞ 
+
+ # EINHEIT | RAM
  EINHEIT ⠆⢄⢂⡈
 
- # PROZESS STOP
- BSK-RESET ⠆⢄⢂⡐ 
-
-# ( steht später nur im lexikon BION-ID AXIOM )
-AXIOM ¡ 
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡
 
 ###==============================INFORMATIONEN==============================###
 

@@ -184,8 +184,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡄⠡ BAUWABE
 
  # BION-ID AXIOM
  AXIOM ¡ ⠆⢄⡂⠰ ⧓ ⠆⢄⡂⡁ Ξ ⠆⢄⡂⡄
- # BION ( ÜBER BIOND-ID FOLGE )
- AXIOM ¡ ⠆⢄⡂⡄ ⧑ #NEXT
+ # BION ( ÜBER BION-ID FOLGE )
+ AXIOM ¡ ⠆⢄⡂⡄ ⧑ ⠆⢄⡄⢠
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⡂⡠ 
@@ -205,17 +205,6 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⡂⢁ COMBOWABE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡   ⦳ #NEXT BION
-
-
-###################################
-
- HIER MUTTERWABE MODUL COMBOWABE FÜRS FERTIG SETZEN. 
- 
- DANACH ENDWABE ZWEI AUSFÜHRUNGSKANÄLE 
-#################
- FINISHWABE = OHNE MULTI ODER EINZEL LINK 
- FINISHLINKWABE = MIT MULTI ODER EINZEL LINK 
-
 
 ###====================================|====================================###
  DANACH ENDWABE ZWEI AUSFÜHRUNGSKANÄLE 

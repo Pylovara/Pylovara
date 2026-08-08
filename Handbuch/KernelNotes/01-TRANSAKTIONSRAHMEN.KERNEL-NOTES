@@ -143,54 +143,41 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡐⠑ BAUWABE
  EINHEIT ⠆⢄⢂⠉ ¢! TA-RUNTIME-START
  EINHEIT ⠆⢄⡈⡂ !¢ TA-RUNTIME-ENDE
 
-TOCHTERWABE-KATEGORIE ⠆⢄⡈⡄
+TOCHTERWABE-KATEGORIE ⠆⢄⡈⡄ COMBOWABE
 
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
 
+ # AXIOM | RAM 
+ AXIOM ¡
 
-WABEN-KATEGORIE Ð COMBOWABE 
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⡈⠅
 
- PROGRAMMIERUNGSBEREICH ↓
-
-
-
-
-
-
-
- # BEENDET DEN PROZESS
- WABEN-BSK-RESET ¡ TAMKHTST-RUNTIME
-
- # LINK WABEN SEKTOR
- LINK ¡ PIMK
-
- # SYNTHESE UND TYP-GENERIERUNG
- AXIOM ¡ LINK ≠ MCS-BLOCK-START + PIMK ≠  ¢! <PIMK> = MCS-BLOCK-OFFEN
- AXIOM ¡ ^ MCS-TYP-PIMK = ¢! <PIMK> 
-
- # LIEGT IM RAM 
- EINHEIT ¡ ¢! <PIMK> = MCS-BLOCK-OFFEN
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡   ⦳ #NEXT BION
 
 ###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###====================================|====================================###
 

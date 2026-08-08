@@ -147,77 +147,15 @@ TOCHTERWABE-KATEGORIE ⠆⢄⡈⡄
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ RUNTIME
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 01
-
- BION-ID ¡ ST01
-
- BSK ¡ TAMKHTST-RUNTIME
-
- BION ¡ TA01MK01HT01ST01
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ ≠ * = *
- AXIOM ¡ ^ <TASTENCODE> = ¢ 
- AXIOM ¡ ^ <TASTENCODE> = ! 
- AXIOM ¡ ¢ + ! ≠ ** ≠ ¢!
- AXIOM ¡ ! + ¢ ≠ ** ≠ !¢
- 
- # EINHEIT
- EINHEIT ¡ ¢! = MCS-BLOCK-START
- EINHEIT ¡ !¢ = MCS-BLOCK-ENDE
-
-###====================================|====================================###
-
 WABEN-KATEGORIE Ð COMBOWABE 
 
- PROGRAMM ¡ RUNTIME
-
- WABEN-ID ¡ CB
-
- BION-NR ¡ 01
-
- BION-ID ¡ CB01
-
- BSK ¡ TAMKHTSTCB-RUNTIME
-
- BION ¡ TA01MK01HT01ST01CB01
-
  PROGRAMMIERUNGSBEREICH ↓
 
- # EINHEIT RAM
- EINHEIT ¡ ¢! = MCS-BLOCK-START
- EINHEIT ¡ !¢ = MCS-BLOCK-ENDE
+
+
+
+
+
 
  # BEENDET DEN PROZESS
  WABEN-BSK-RESET ¡ TAMKHTST-RUNTIME
@@ -231,6 +169,31 @@ WABEN-KATEGORIE Ð COMBOWABE
 
  # LIEGT IM RAM 
  EINHEIT ¡ ¢! <PIMK> = MCS-BLOCK-OFFEN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###====================================|====================================###
+
+###====================================|====================================###
+
 
 ###====================================|====================================###
 

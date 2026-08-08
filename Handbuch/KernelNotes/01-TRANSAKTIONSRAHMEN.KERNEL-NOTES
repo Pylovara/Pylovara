@@ -61,32 +61,37 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⠃ HAUPTWABE
 # BION-ID
 AXIOM ¡ ⠆⢄⡠⠉ ⧓ ⠆⢄⡠⠊ Ξ ⠆⢄⡠⠌
 # BION
-AXIOM ¡ ⠆⢄⡠⠌ ⧑ #NÄCHSTE MODUL STARTWABE
+AXIOM ¡ ⠆⢄⡠⠌ ⧑ ⠆⢄⡐⡁
 
 ###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE ⠆⢄⡠⠔ STARTWABE 
 
- PROGRAMM ⠆⢄⡠⠘ 
+ PROGRAMM ⠆⢄⡠⠘ RUNTIME
 
  WABEN-ID ⠆⢄⡐⠢ ST
 
- BION-NR ⠆⢄⡐⠤ 
+ BION-NR ⠆⢄⡐⠤ 01
 
- BION-ID ⠆⢄⡐⠨ 
+ BION-ID ⠆⢄⡐⠨ ST01
 
- BSK ⠆⢄⡐⠰
+ BSK ⠆⢄⡐⠰ TAMKHT-RUNTIME
 
- BION ⠆⢄⡐⡁ 
+ BION ⠆⢄⡐⡁ TA01MK01HT01ST01
 
- TASTENCODE ⠆⢄⡐⡂
- TASTENCODE ⠆⢄⡐⡄
+ # BION-ID 
+ AXIOM ¡ ⠆⢄⡐⠢ ⧓ ⠆⢄⡐⠤ Ξ ⠆⢄⡐⠨
+ # BION
+ AXIOM ¡ ⠆⢄⡠⠌ ⧑ # NEXT
 
- SYMBOLE ⠆⢄⡐⡈
- SYMBOLE ⠆⢄⡐⡠
+ TASTENCODE ⠆⢄⡐⡂ ALT GR
+ TASTENCODE ⠆⢄⡐⡄ SCHIFT 1
 
- PRÄFIX ⠆⢄⡐⢁
- PRÄFIX ⠆⢄⡐⢂
+ SYMBOLE ⠆⢄⡐⡈ ¢
+ SYMBOLE ⠆⢄⡐⡠ !
+
+ PRÄFIX ⠆⢄⡐⢁ TA-RUNTIME-START
+ PRÄFIX ⠆⢄⡐⢂ TA-RUNTIME-ENDE
 
 # ISA AXIOM VARIANTE 1
 AXIOM ¡ <TASTECODE-PATTER> ⟛ <TASTENCODE-PATTER> Ξ <SYMBOL-PATTER>  

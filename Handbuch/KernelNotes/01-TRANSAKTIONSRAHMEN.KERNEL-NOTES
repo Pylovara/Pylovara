@@ -39,7 +39,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⡐ MASTERKERNWABE
 
  # BION-ID AXIOM
  AXIOM ¡ ⠆⢄⡠⢁ ⧓ ⠆⢄⡠⢂ Ξ ⠆⢄⡐⢐
- # BION ( ÜBER BIOND-ID FOLGE )
+ # BION ( ÜBER BION-ID FOLGE )
  AXIOM ¡ ⠆⢄⡐⢐ ⧑ ⠆⢄⡠⠌
 
 ###====================================|====================================###
@@ -116,7 +116,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⠔ STARTWABE
  EINHEIT ⠆⢄⡐⠌ !¢ TA-RUNTIME-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⡠⠔ ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢄⡠⠔ ⦳ ⠆⢄⡈⠨
 
 ###====================================|====================================###
 
@@ -136,8 +136,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡐⠑ BAUWABE
 
  # BION-ID AXIOM
  AXIOM ¡ ⠆⢄⡐⠡ ⧓ ⠆⢄⡈⠤ Ξ ⠆⢄⡈⠨
- # BION ( ÜBER BIOND-ID FOLGE )
- AXIOM ¡ ⠆⢄⡈⠨ ⧑ 
+ # BION ( ÜBER BION-ID FOLGE )
+ AXIOM ¡ ⠆⢄⡈⠨ ⧑ #NEXT-BION-ID
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⢂⠉ ¢! TA-RUNTIME-START
@@ -149,19 +149,22 @@ TOCHTERWABE-KATEGORIE ⠆⢄⡈⡄ COMBOLINKWABE
  LINK ⠆⢄⡈⠑ PIMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ ⠆⢄⡈⠑ ⍠ (PIMK SYSTEM-ID SPÄTER )
+ AXIOM ¡ ⠆⢄⡈⠑ ⍠ ⠆⢄⡄⡂
 
- # AXIOM | SETZEN 
- AXIOM ¡ ⠆⢄⢂⠉ ⍿ (PIMK SYSTEM-ID SPÄTER ) ⧖ 
+ # AXIOM | SETZEN : ¢! <PIMK>
+ AXIOM ¡ ⠆⢄⢂⠉ ⍿ ⠆⢄⡄⡂ Ξ ⠆⢄⢂⠉ ⠆⢄⡄⡂ 
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢄⡄⡐ TA-RUNTIME-PIMK
 
  # AXIOM | RAM 
- AXIOM ¡ 
+ AXIOM ¡ ⠆⢄⢂⠉ ⠆⢄⡄⡂ ⥓ ⠆⢄⡄⡐ ⍞ ⠆⢄⡈⠉
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT ⠆⢄⡈⠉
+ EINHEIT ⠆⢄⡈⠉ ¢! PIMK TA-RUNTIME-PIMK
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡   ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢄⡈⠨ ⦳ #NEXT-BION
 
 ###====================================|====================================###
 

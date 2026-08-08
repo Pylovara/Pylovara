@@ -15,20 +15,36 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡈⠊ KOPFWABE
 
  BION-ID ⠆⢄⡈⠘ PI002
 
- MASTER-ID ⠆⢄⡈⠡ <MASTER>
+ MASTER-ID ⠆⢄⡈⠡ MK046SU002
 
  # KOMPONENTE
  AXIOM ¡ ⠆⢄⡈⠌ ⏍ ⠆⢄⡈⠌
  # BION-ID
  AXIOM ¡ ⠆⢄⡈⠒ ⧓ ⠆⢄⡈⠔ Ξ ⠆⢄⡈⠘
  # BION ( ÜBER BIOND-ID FOLGE )
- AXIOM ¡ ⠆⢄⡈⠘ ⧑ 
+ AXIOM ¡ ⠆⢄⡈⠘ ⧑ ⠆⢄⡄⡁
  # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⡈⠢ MASTERKERNWABE
 
+ WABEN-ID ⠆⢄⡄⠨ MK
 
+ BION-NR ⠆⢄⡄⠰ 002
+
+ BION-ID ⠆⢄⡄⡁ MK002
+
+ BSK ⠆⢄⡄⡂ PIMK
+
+ BION ⠆⢄⡄⡈ PI002MK002
+
+ # BION-ID AXIOM
+ AXIOM ¡ ⠆⢄⡄⠨ ⧓ ⠆⢄⡄⠰ Ξ ⠆⢄⡄⡁
+ # BION ( ÜBER BION-ID FOLGE )
+ AXIOM ¡ ⠆⢄⡄⡁ ⧑ #NEXT-BION-ID
+
+###====================================|====================================###
 
 
 

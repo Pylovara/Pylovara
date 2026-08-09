@@ -214,7 +214,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⡂⢁ COMBOWABE
  EINHEIT ⠆⢄⡄⠢ ¢! <PIMK> !¢ TA-RUNTIME-PIMK-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⡂⡄ ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢄⡂⡄ ⦳ ⠆⢄⡄⢠
 
 ###====================================|====================================###
  
@@ -237,24 +237,22 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡄⢁ ENDWABE
  # BION-ID FOLGESCHLUSS
  AXIOM ¡ ⠆⢄⡄⢈ ͼ
 
-TOCHTERWABEN-KATEGORIE ⠆⢄⡄⠃ AUSFÜRHUNGSWABE
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢄⡄⠢ ⍞ ⠆⢄⡂⠉
 
- # AXIOM | 
- AXIOM ¡ 
- AXIOM ¡ 
- AXIOM ¡ 
+TOCHTERWABEN-KATEGORIE ⠆⢄⡄⠃ AUSFÜRHUNGSWABE
 
  # AXIOM | NAME SETZEN  
  PRÄFIX ⠆⢄⡂⠊ TA-RUNTIME-FINISH
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍞ # 
+ AXIOM ¡ ⠆⢄⡂⠉ ⥓ ⠆⢄⡂⠊ ⍞ ⠆⢄⡂⠉ 
 
  # EINHEIT | RAM | VERLINKT FERTIG
  EINHEIT ⠆⢄⡂⠉
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ͼ 
+ AXIOM ¡ ⠆⢄⡄⢠ ͼ 
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###

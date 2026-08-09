@@ -46,7 +46,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡈⠢ MASTERKERNWABE
 
 ###====================================|====================================###
 
-MODUL ⠆⢄⡂⠌ HAUPTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢄⡂⠌ HAUPTWABE 
 
  PROGRAMM ⠆⢄⡂⠑ ON-PIPE
 
@@ -67,55 +67,65 @@ MODUL ⠆⢄⡂⠌ HAUPTWABE
 
 ###====================================|====================================###
 
-!! POWERSTADION SAGT 22% VOLT 10.1 ..
+MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE 
 
-HIER KURZ PASE ERST WECHSELN DANN ZURÜCK HIER WEITER  
+ PROGRAMM ⠆⢄⡂⠨ 
 
- MODUL STARTWABE 
+ WABEN-ID ⠆⢄⡁⡂ ST
 
+ BION-NR ⠆⢄⡁⡄ 
 
+ BION-ID ⠆⢄⡁⡈ 
 
+ BSK ⠆⢄⡁⡐
 
+ BION ⠆⢄⡁⡠ 
 
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
 
+ TASTENCODE ⠆⢄⡁⢁ ALT GR
+ TASTENCODE ⠆⢄⡁⢂ SHIFT
+ TASTENCODE ⠆⢄⡁⢈ 8
+ TASTENCODE ⠆⢄⡁⢠ 9
 
+ SYMBOLE ⠆⢄⡁⢐ —
+ SYMBOLE ⠆⢄⡂⠃ [
+ SYMBOLE ⠆⢄⡁⣀ ]
+
+ PRÄFIX ⠆⢄⡁⠉ PI-ON-PIPE-START
+ PRÄFIX ⠆⢄⡁⠊ PI-ON-PIPE-ENDE
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+
+ PRODUKT ⠆⢄⡁⠌ —[
+ PRODUKT ⠆⢄⡁⠑ ]
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍞ 
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍞ 
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⡁⠒
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡   ⦳ #NEXT BION
+
+###====================================|====================================###
 
 
 
 ###====================================|====================================###
-
-WABEN-KATEGORIE Ð MASTERKERNWABE
-
- WABEN-ID ¡ MK
-
- BION-NR ¡ 02 
-
- BION-ID ¡ MK02
-
- BSK ¡ PIMK
-
- BION ¡ PI02MK02
-
-###====================================|====================================###
-###==========================ON-PIPE BEARBEITUNG============================###
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ ON-PIPE
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 02
-
- BION-ID ¡ HT02
-
- BSK ¡ PIMKHT-ON-PIPE
-
- BION ¡ PI02MK02HT02
-
-###====================================|====================================###
-
+# ALTER BEREICH ↓↓↓↓↓↓↓↓
 WABEN-KATEGORIE Ð STARTWABE 
 
  PROGRAMM ¡ ON-PIPE

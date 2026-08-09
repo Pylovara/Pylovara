@@ -84,7 +84,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡁⡂ ⧓ ⠆⢄⡁⡄ Ξ ⠆⢄⡁⡈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⡁⡈ ⧑ 
+ AXIOM ¡ ⠆⢄⡁⡈ ⧑ #NEXT
 
  TASTENCODE ⠆⢄⡁⢁ ALT GR
  TASTENCODE ⠆⢄⡁⢂ SHIFT
@@ -99,26 +99,27 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  PRÄFIX ⠆⢄⡁⠊ PI-ON-PIPE-ENDE
 
  # PRODUKT
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡ ⠆⢄⡁⢐ ⦻ ⠆⢄⡂⠃ Ξ ⠆⢄⡁⠌
+ AXIOM ¡ ⠆⢄⡁⣀ Ξ ⠆⢄⡁⠑
 
  PRODUKT ⠆⢄⡁⠌ —[
  PRODUKT ⠆⢄⡁⠑ ]
 
  # TAGGEN PRÄFIX
- AXIOM ¡  ⥓ 
- AXIOM ¡  ⥓ 
+ AXIOM ¡ ⠆⢄⡁⠌ ⥓ ⠆⢄⡁⠉
+ AXIOM ¡ ⠆⢄⡁⠑ ⥓ ⠆⢄⡁⠊
 
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍞ 
+ AXIOM ¡ ⠆⢄⡁⠌ ⥗ ⠆⢄⡁⠉ ⍞ ⠆⢄⡁⠒
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍞ 
+ AXIOM ¡ ⠆⢄⡁⠑ ⥗ ⠆⢄⡁⠊ ⍞ ⠆⢄⡁⠔
 
  # EINHEIT | RAM
- EINHEIT ⠆⢄⡁⠒
+ EINHEIT ⠆⢄⡁⠒ —[ PI-ON-PIPE-START
+ EINHEIT ⠆⢄⡁⠔ ] PI-ON-PIPE-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡   ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢄⡁⡈ ⦳ #NEXT BION
 
 ###====================================|====================================###
 

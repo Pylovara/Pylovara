@@ -15,11 +15,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⢁⠔ KOPFWABE
 
  MASTER-ID ⠆⢄⡠⠤ MK046SU001
 
- # KOMPONENTE
+ # AXIOM | KOMPONENTEN NAMEN
  AXIOM ¡ ⠆⢄⢁⠒ ⏍ ⠆⢄⢁⠒
- # BION-ID
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⢁⠑ ⧓ ⠆⢄⡠⠡ Ξ ⠆⢄⡠⠢
- # BION ( ÜBER BION-ID FOLGE )
+ # BION-ID FOLGESCHALTUNG 
  AXIOM ¡ ⠆⢄⡠⠢ ⧑ ⠆⢄⡐⢐
  # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
@@ -37,9 +37,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⡐ MASTERKERNWABE
 
  BION ⠆⢄⡐⣀ TA01MK01
 
- # BION-ID AXIOM
+ # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡠⢁ ⧓ ⠆⢄⡠⢂ Ξ ⠆⢄⡐⢐
- # BION ( ÜBER BION-ID FOLGE )
+ # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⡐⢐ ⧑ ⠆⢄⡠⠌
 
 ###====================================|====================================###
@@ -58,9 +58,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⠃ HAUPTWABE
 
  BION ⠆⢄⡠⠒ TA01MK01HT01
 
- # BION-ID
+ # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡠⠉ ⧓ ⠆⢄⡠⠊ Ξ ⠆⢄⡠⠌
- # BION ( ÜBER BION-ID FOLGE )
+ # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⡠⠌ ⧑ ⠆⢄⡐⠨
 
 ###====================================|====================================###
@@ -79,9 +79,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⠔ STARTWABE
 
  BION ⠆⢄⡐⡁ TA001MK001HT001ST001
 
- # BION-ID 
+ # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡐⠢ ⧓ ⠆⢄⡐⠤ Ξ ⠆⢄⡐⠨
- # BION ( ÜBER BION-ID FOLGE )
+ # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⡐⠨ ⧑ #NEXTBION
 
  TASTENCODE ⠆⢄⡐⡂ ALT GR
@@ -122,7 +122,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⠔ STARTWABE
 
 MUTTERWABEN-KATEGORIE ⠆⢄⡐⠑ BAUWABE
 
- PROGRAMM ⠆⢄⡐⠘ COMBI
+ PROGRAMM ⠆⢄⡐⠘ COMBILINK
 
  WABEN-ID ⠆⢄⡐⠡ BA
 
@@ -134,9 +134,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡐⠑ BAUWABE
 
  BION ⠆⢄⡈⡁ TA001MK001HT001ST001BA001
 
- # BION-ID AXIOM
+ # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡐⠡ ⧓ ⠆⢄⡈⠤ Ξ ⠆⢄⡈⠨
- # BION ( ÜBER BION-ID FOLGE )
+ # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⡈⠨ ⧑ ⠆⢄⡂⡄
 
  # AXIOM | HOLE RAM EINHEIT 
@@ -182,13 +182,13 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡄⠡ BAUWABE
 
  BION-ID ⠆⢄⡂⡄ BA002
 
- BSK ⠆⢄⡂⡈ TAMKHTSTBA-SCHLIEẞEN
+ BSK ⠆⢄⡂⡈ TAMKHTSTBABA-SCHLIEẞEN
 
  BION ⠆⢄⡂⡐ TA001MK001HT001ST001BA002
 
- # BION-ID AXIOM
+ # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡂⠰ ⧓ ⠆⢄⡂⡁ Ξ ⠆⢄⡂⡄
- # BION ( ÜBER BION-ID FOLGE )
+ # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⡂⡄ ⧑ ⠆⢄⡄⢠
 
  # AXIOM | HOLE RAM EINHEIT 
@@ -218,39 +218,43 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⡂⢁ COMBOWABE
 
 ###====================================|====================================###
  
- !!! mein gehirn ist müde ... nach dem schlafen ..... 
-
- hier morgen weiter machen 
- 
- 
- 
- 
- DANACH ENDWABE ZWEI AUSFÜHRUNGSKANÄLE 
-#################
- AUSFÜHRUNGSWABE = OHNE MULTI ODER EINZEL LINK 
- AUSFÜHRUNGSLINKWABE = MIT MULTI ODER EINZEL LINK 
-
-# SYSTEM-ID SCHON ERNEUERT 
 MUTTERWABEN-KATEGORIE ⠆⢄⡄⢁ ENDWABE 
 
- PROGRAMM ⠆⢄⡄⢂
+ PROGRAMM ⠆⢄⡄⢂ BEENDIGUNG
 
  WABEN-ID ⠆⢄⡄⢈ ED
 
- BION-NR ⠆⢄⡄⢐ 
+ BION-NR ⠆⢄⡄⢐ 001
 
- BION-ID ⠆⢄⡄⢠ 
+ BION-ID ⠆⢄⡄⢠ ED001
 
- BSK ⠆⢄⡄⠅ 
+ BSK ⠆⢄⡄⠅ TAMKHTSTBABAED-SCHLIEẞEN
 
  BION ⠆⢄⡄⠉ 
 
- # BION-ID AXIOM
+ # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡  ⧓  Ξ 
- # BION ( EIGNE BIOND-ID MIT EIGENER BIOND-ID ENDPUNKT )
+ # BION-ID FOLGEVERBINDUNG
  AXIOM ¡  ⧑ 
 
-TOCHTERWABEN-KATEGORIE ⠆⢄⡄⠃ 
+TOCHTERWABEN-KATEGORIE ⠆⢄⡄⠃ AUSFÜRHUNGSWABE
+
+ # AXIOM | 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢄⡂⠊ TA-RUNTIME-FINISH
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍞ # 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢄⡂⠉
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡  ͼ 
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###

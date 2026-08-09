@@ -42,14 +42,36 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡈⠢ MASTERKERNWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡄⠨ ⧓ ⠆⢄⡄⠰ Ξ ⠆⢄⡄⡁
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⡄⡁ ⧑ #NEXT-BION-ID
+ AXIOM ¡ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘
 
 ###====================================|====================================###
 
+MODUL ⠆⢄⡂⠌ HAUPTWABE 
 
+ PROGRAMM ⠆⢄⡂⠑ ON-PIPE
 
+ WABEN-ID ⠆⢄⡂⠒ HT
 
+ BION-NR ⠆⢄⡂⠔ 002
 
+ BION-ID ⠆⢄⡂⠘ HT002
+
+ BSK ⠆⢄⡂⠡ PIMKHT-ON-PIPE
+
+ BION ⠆⢄⡂⠢ PI002MK002HT002
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⡂⠒ ⧓ ⠆⢄⡂⠔ Ξ ⠆⢄⡂⠘
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⡂⠘ ⧑ #NEXT
+
+###====================================|====================================###
+
+!! POWERSTADION SAGT 22% VOLT 10.1 ..
+
+HIER KURZ PASE ERST WECHSELN DANN ZURÜCK HIER WEITER  
+
+ MODUL STARTWABE 
 
 
 

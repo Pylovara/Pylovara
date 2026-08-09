@@ -63,28 +63,28 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠌ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡂⠒ ⧓ ⠆⢄⡂⠔ Ξ ⠆⢄⡂⠘
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⡂⠘ ⧑ #NEXT
+ AXIOM ¡ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈
 
 ###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE 
 
- PROGRAMM ⠆⢄⡂⠨ 
+ PROGRAMM ⠆⢄⡂⠨ ON-PIPE
 
  WABEN-ID ⠆⢄⡁⡂ ST
 
- BION-NR ⠆⢄⡁⡄ 
+ BION-NR ⠆⢄⡁⡄ 002
 
- BION-ID ⠆⢄⡁⡈ 
+ BION-ID ⠆⢄⡁⡈ ST002
 
- BSK ⠆⢄⡁⡐
+ BSK ⠆⢄⡁⡐ PIMKST-ON-PIPE
 
- BION ⠆⢄⡁⡠ 
+ BION ⠆⢄⡁⡠ PI002MK002ST002
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢄⡁⡂ ⧓ ⠆⢄⡁⡄ Ξ ⠆⢄⡁⡈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢄⡁⡈ ⧑ 
 
  TASTENCODE ⠆⢄⡁⢁ ALT GR
  TASTENCODE ⠆⢄⡁⢂ SHIFT

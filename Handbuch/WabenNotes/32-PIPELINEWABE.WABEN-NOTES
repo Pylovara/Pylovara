@@ -1,8 +1,85 @@
 @waben-nr: 32 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###==============================PIPELINEWABE===============================###
-
+# BAUSTELLE
 MODUL ⠆⢄⡁⠡ PIPELINEWABE
+
+ # AXIOM START ERLAUBNIS 
+ AXIOM ¡ (ANSCHLUSS-SYSTEM-ID) (ZU) ⠆⢄⠰⡄
+
+ ERLAUBNIS ⠆⢄⠰⡄ PI-IO
+
+ # AXIOM PIPELINE BAUM 
+ AXIOM ¡ 
+
+ PIPELINE ⠆⢄⠰⡈ ZY-IN
+ PIPELINE ⠆⢄⠰⡐ SY-IN
+ PIPELINE ⠆⢄⠰⡠ NI-IN
+ PIPELINE ⠆⢄⠰⢁ PI-IO
+ PIPELINE ⠆⢄⠰⢂ NI-OUT
+ PIPELINE ⠆⢄⠰⢈ ZY-OUT
+ PIPELINE ⠆⢄⠰⢐ RX-DATENKANAL
+ PIPELINE ⠆⢄⠰⢠ SE-JA
+ PIPELINE ⠆⢄⡁⠰ SE-NEIN
+
+
+
+
+#############################################
+# NUR ZUM ARBEITEN : ALT ↓
+ # FIXPUNKT VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-ERLAUBNIS ≠ PIMKHTSTBK-ON-PIPE ≠ ≠ ^ *: <*>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+
+ # VERARBEITUNGS PIPELINE
+ AXIOM ¡ SYNTAX-BAUM ≠ ^ *: <*>
+ AXIOM ¡ ^         ZYKLUS-IN: <ZYMK>
+ AXIOM ¡ ^      SYNC-ON-PIPE: <SYMK>
+ AXIOM ¡ ^     KOPF-INJEKTOR: <NIMK>
+ AXIOM ¡ ^        START-PIPE: <ON-PIPE-START>
+ AXIOM ¡ ^    FOOD-EXTRAKTOR: <NIMK>
+ AXIOM ¡ ^        ZYKLUS-OUT: <ZYMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK> 
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^        DATENKANAL: <REMK>
+ AXIOM ¡ ^      SENTIATOR-JA: <SEMK>+<REMK>
+ AXIOM ¡ ^    SENTIATOR-NEIN: <SEMK>+<REMK>
+
+ # ZUSCHLUSS KANÄLE = INPUT
+ BRÜCKE-IN ¡ <ZYMK>
+ BRÜCKE-IN ¡ <SYMK>
+ BRÜCKE-IN ¡ <NIMK>
+
+ # VERARBEITUNGS PIPELINE ANSCHLUSS = IO
+ BRÜCKE-IO ¡ PIMKHTSTBK-ON-PIPE
+
+ # ZUSCHLUSS KANÄLE = OUTPUT
+ BRÜCKE-OUT ¡ <NIMK>
+ BRÜCKE-OUT ¡ <ZYMK>
+ BRÜCKE-OUT ¡ <REMK>
+ BRÜCKE-OUT ¡ <SEMK>+<REMK>
+ BRÜCKE-OUT ¡ <SEMK>+<REMK>
 
 
 

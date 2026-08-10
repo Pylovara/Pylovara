@@ -123,38 +123,61 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠰⣀ BAUWABE 
+
+ PROGRAMM ⠆⢄⡁⠃ PIPEKANAL
+
+ WABEN-ID ⠆⢄⡁⠅ BA
+
+ BION-NR ⠆⢄⠰⠊ 003
+
+ BION-ID ⠆⢄⠰⠌ BA003
+
+ BSK ⠆⢄⠰⠑ PIMKSTBA-PIPEKANAL
+
+ BION ⠆⢄⠰⠒ PI002MK002ST002BA003
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⍞
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠰⠔ 
+
+TOCHTERWABEN-KATEGORIE  PIPELINEWABE
+
+ # AXIOM START ERLAUBNIS 
+ AXIOM ¡ (ANSCHLUSS-SYSTEM-ID) (ZU) ⠆⢄⠰⡄
+
+ ERLAUBNIS ⠆⢄⠰⡄ PI-IO
+
+ # AXIOM PIPELINE BAUM 
+ AXIOM ¡ 
+
+ PIPELINE ⠆⢄⠰⡈ ZY-IN
+ PIPELINE ⠆⢄⠰⡐ SY-IN
+ PIPELINE ⠆⢄⠰⡠ NI-IN
+ PIPELINE ⠆⢄⠰⢁ PI-IO
+ PIPELINE ⠆⢄⠰⢂ NI-OUT
+ PIPELINE ⠆⢄⠰⢈ ZY-OUT
+ PIPELINE ⠆⢄⠰⢐ RX-DATENKANAL
+ PIPELINE ⠆⢄⠰⢠ SE-JA
+ PIPELINE ⠆⢄⡁⠰ SE-NEIN
+
+
+# stelle erst die pipe waben fertig .... modularität an erster stelle 
+wenn dann richtig , keine halben sachen ....
+
+
+
 
 
 ###====================================|====================================###
 # ALTER BEREICH ↓↓↓↓↓↓↓↓
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ ON-PIPE
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 02
-
- BION-ID ¡ ST02
-
- BSK ¡ PIMKHTST-ON-PIPE
-
- BION ¡ PI02MK02HT02ST02
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ ≠  ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = — 
- AXIOM ¡ ^ <TASTENCODE> = [
- AXIOM ¡ — + [ ≠ ** ≠ —[
- AXIOM ¡ ^ <TASTENCODE> = ]
-
- # LIEGT IM RAM
- EINHEIT ¡ —[ = ON-PIPE-START
- EINHEIT ¡ ] = ON-PIPE-ENDE
-
-###====================================|====================================###
 
 WABEN-KATEGORIE Ð BLOCKWABE
 

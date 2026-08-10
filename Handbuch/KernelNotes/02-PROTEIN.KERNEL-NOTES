@@ -84,7 +84,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡁⡂ ⧓ ⠆⢄⡁⡄ Ξ ⠆⢄⡁⡈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⡁⡈ ⧑ #NEXT
+ AXIOM ¡ ⠆⢄⡁⡈ ⧑ ⠆⢄⠰⠌
 
  TASTENCODE ⠆⢄⡁⢁ ALT GR
  TASTENCODE ⠆⢄⡁⢂ SHIFT
@@ -119,7 +119,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  EINHEIT ⠆⢄⡁⠔ ] PI-ON-PIPE-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⡁⡈ ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢄⡁⡈ ⦳ ⠆⢄⠰⠌
 
 ###====================================|====================================###
 
@@ -138,15 +138,17 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠰⣀ BAUWABE
  BION ⠆⢄⠰⠒ PI002MK002ST002BA003
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢄⡁⠅ ⧓ ⠆⢄⠰⠊ Ξ ⠆⢄⠰⠌
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢄⠰⠌ ⧑ #NEXT
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⍞
+ AXIOM ¡ ⠆⢄⡁⠒ ⍞ ⠆⢄⠰⠔
+ AXIOM ¡ ⠆⢄⡁⠔ ⍞ ⠆⢄⠰⠡
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⠰⠔ 
+ EINHEIT ⠆⢄⠰⠡
 
 TOCHTERWABEN-KATEGORIE  PIPELINEWABE
 
@@ -155,9 +157,10 @@ TOCHTERWABEN-KATEGORIE  PIPELINEWABE
 
  ERLAUBNIS ⠆⢄⠰⡄ PI-IO
 
- # AXIOM PIPELINE BAUM 
+ # AXIOM PIPELINE STARTPUNKT
  AXIOM ¡ 
 
+ # PIPELINE BAUM 
  PIPELINE ⠆⢄⠰⡈ ZY-IN
  PIPELINE ⠆⢄⠰⡐ SY-IN
  PIPELINE ⠆⢄⠰⡠ NI-IN
@@ -172,9 +175,10 @@ TOCHTERWABEN-KATEGORIE  PIPELINEWABE
 # stelle erst die pipe waben fertig .... modularität an erster stelle 
 wenn dann richtig , keine halben sachen ....
 
+!! - es ist so heiß .... so ein drecks sommer ... 35 grad schon wieder 
+     wo bleibt der herbst .... 
 
-
-
+    ich kann kaum denken .... alles dreht sich ums schwitzen 
 
 ###====================================|====================================###
 # ALTER BEREICH ↓↓↓↓↓↓↓↓

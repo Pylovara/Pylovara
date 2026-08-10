@@ -119,7 +119,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  EINHEIT ⠆⢄⡁⠔ ]— PI-ON-PIPE-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⡁⡈ ⦳          # SPÄTER , WARSCHEINS WARTEN DANN PIPELINEABE  (⠆⢄⠰⠌)
+ AXIOM ¡ ⠆⢄⡁⡈ ⦳ # SPÄTER         
 
 ###====================================|====================================###
 
@@ -205,12 +205,34 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⠨⢂ PIPELINEWABE
  PIPELINE ⠆⢄⡁⠰ NEIN
 
   # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # OFFEN LASSEN ...
+ AXIOM ¡ ⠆⢄⠰⠌ ⧖ # SPÄTER 
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠨⢈ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢄⠨⢐ 
 
 
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢄⡂⢠
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍞ #
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢄⠰⠃
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡   ⦳ #NEXT BION
+
+###====================================|====================================###
 
 
 

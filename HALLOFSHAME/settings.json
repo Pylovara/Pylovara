@@ -4,8 +4,9 @@
     "files.autoSave": "onWindowChange",
     "workbench.colorTheme": "Ember High Contrast (green)",
     "editor.fontLigatures": true,
-    "editor.rulers": [80],
-    
+    "editor.rulers": [
+        80
+    ],
     "highlight.regexes": {
         "\\b(BION|MORPHIC-ID|BION-ID|ABSK|AXIOM|MASK|ZEIG|I-ID|O-ID|IN-ID|OUT-ID|Ð|¡|)\\b": {
             "color": "#FFD966",
@@ -35,46 +36,103 @@
    |___/____/ 
 
  ¢!
- »—[": Settings.json  :"]«
-  ¬· »—[": editor.fontSize :"]«
-      ¬· »[": 20 :"]«
+ »—[
+    ": Settings.json  :"
+]—«
+  ¬· »—[
+    ": editor.fontSize :"
+]—«
+      ¬· »[
+    ": 20 :"
+]«
 
-  ¬· »—[": files.autoSave :"]«
-      ¬· »[": onWindowChange :"]«
+  ¬· »—[
+    ": files.autoSave :"
+]—«
+      ¬· »[
+    ": onWindowChange :"
+]«
 
-  ¬· »—[": workbench.colorTheme :"]«
-      ¬· »[": Ember High Contrast (green) :"]«
+  ¬· »—[
+    ": workbench.colorTheme :"
+]—«
+      ¬· »[
+    ": Ember High Contrast (green) :"
+]«
 
-  ¬· »—[": editor.fontLigatures :"]«
-      ¬· »[": true :"]«
+  ¬· »—[
+    ": editor.fontLigatures :"
+]—«
+      ¬· »[
+    ": true :"
+]«
 
-  ¬· »—[": editor.rulers :"]«
-      ¬· »[": 80 :"]«
+  ¬· »—[
+    ": editor.rulers :"
+]—«
+      ¬· »[
+    ": 80 :"
+]«
 
-  ¶ ¬· »—[": highlight.regexes :"]«
-        ¬· »—[": WABEN-KATEGORIE && BION-NR && BION-ID && BION  :"]«
-            ¬· »—[": color :"]
-                ¬· »[": #FFD966 :"]«
+  ¶ ¬· »—[
+    ": highlight.regexes :"
+]—«
+        ¬· »—[
+    ": WABEN-KATEGORIE && BION-NR && BION-ID && BION  :"
+]—«
+            ¬· »—[
+    ": color :"
+]—«
+                ¬· »[
+    ": #FFD966 :"
+]«
 
-            ¬· »–[": fontWeight :"]«
-                ¬· »[": bold :"]«
+            ¬· »–[
+    ": fontWeight :"
+]—«
+                ¬· »[
+    ": bold :"
+]«
 
-            ¬· »–[": backgroundColor :"]«
-                ¬· »[": #FFD966 :"]«
+            ¬· »–[
+    ": backgroundColor :"
+]—«
+                ¬· »[
+    ": #FFD966 :"
+]«
 
-        ¬· »—[": [ && | && ] && | && ¢ && ! && ¢ && : && ¶ && ¶¶ && £ && ¹ && ² && ³ && " && × && ¿ :"]«
-            ¬· »—[": color :"]
-                ¬· »[": #FF6B6B :"]«
+        ¬· »—[
+    ": [ && | && ] && | && ¢ && ! && ¢ && : && ¶ && ¶¶ && £ && ¹ && ² && ³ && " && × && ¿ :"]—«
+            ¬· »—[
+        ": color :"
+    ]—«
+                ¬· »[
+        ": #FF6B6B :"
+    ]«
 
-            ¬· »–[": fontWeight :"]«
-                ¬· »[": bold :"]«
+            ¬· »–[
+        ": fontWeight :"
+    ]—«
+                ¬· »[
+        ": bold :"
+    ]«
 
-            ¬· »–[": backgroundColor :"]«
-                ¬· »[": #FFD966 :"]«
+            ¬· »–[
+        ": backgroundColor :"
+    ]—«
+                ¬· »[
+        ": #FFD966 :"
+    ]«
 
-        ¬· »–[": 0-9 :"]«
-            ¬· »—[": color :"]
-                ¬· »[": #FFB86C :"]«
+        ¬· »–[
+        ": 0-9 :"
+    ]—«
+            ¬· »—[
+        ": color :"
+    ]—«
+                ¬· »[
+        ": #FFB86C :"
+    ]«
 
  !¢
     _   _______
@@ -90,20 +148,17 @@
     "blabla.blabla": "Ember High Contrast (green)",
                                           ↑↑↑↑↑↑↑
     "blabla.blabla": true, <--
-    "blabla.blabla": ->>[80]<<--,
-    
-    "blabla.blabla": {
+    "blabla.blabla": ->>[
+            80
+        ]<<--,
+        "blabla.blabla": {
           ->>>>>>> "(^[#=]{3,}.*$)": { <---------------
-        }, <--     ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
-
+            }, <--     ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
         },"\\b <---
-
-        }, <--
-
-        }, <--
-
-        }
-    } <--
+    }, <--
+}, <--
+}
+} <--
 } <--
     _   _______
    | | / / ___/
@@ -111,235 +166,488 @@
    |___/____/  
 
  ¢!
- —[": EINE KLEINE WARNUNG AN DIE JAVA-KONFERENZ :"]
- ¬· —[": WER DIESEN CODE LIEST, HAT VERLOREN :"]
-    ¬· —[": ODER GEWONNEN - JE NACHDEM :"]
+ —[
+": EINE KLEINE WARNUNG AN DIE JAVA-KONFERENZ :"
+]—
+ ¬· —[
+": WER DIESEN CODE LIEST, HAT VERLOREN :"
+]—
+    ¬· [
+": ODER GEWONNEN - JE NACHDEM :"
+]
 
- ¬· —[": LASS UNS ÜBER DEN DRECK REDEN, DEN IHR CODE NENNT :"]
+ ¬· —[
+": LASS UNS ÜBER DEN DRECK REDEN, DEN IHR CODE NENNT :"
+]—
 
-    ¶ ¬· —[": DEINE SCHEISS JSON :"]
-         ¬· —[": ICH WÜRDE JA SAGEN, 'SCHÖN GEMACHT' - ABER DAS WÄRE EINE LÜGE :"]
-               ¬· —[": WER ZUM TEUFEL DACHTE SICH DIESE KACKE AUS? :"]
-                  ¬· —[": ERNSTHAFT. WER? :"]
-                       ¬· —[": WENN IHR DEN JENIGEN GEFUNDEN HABT, SCHREIBT MIR EINE EMAIL :"]
-                          ¬· »—[~: SEND NET :~]«
-                              ¬· —[§: bandinozimmermann@gmail.com :§]
-                                 ¬· —[": ODER WISST IHR WAS ? ER SOLL MICH ANRUFEN, VIELEICHT LERNT ER NOCH WAS :"]
-                                    ¬·»—[~: SUCH PFAD && PICK :~]«
-                                       ¬· »[$: /Pylovara/README.wiki-notes :$]«
-                                       ¬· »[¥: # Telefon :¥]«
-                                       ¶ ¬·¤ [": ZEILE 50 # Telefon :  +49 176/88218035 :"]
+    ¶ ¬· —[
+": DEINE SCHEISS JSON :"
+]—
+         ¬· —[
+": ICH WÜRDE JA SAGEN, 'SCHÖN GEMACHT' - ABER DAS WÄRE EINE LÜGE :"
+]—
+               ¬· —[
+": WER ZUM TEUFEL DACHTE SICH DIESE KACKE AUS? :"
+]—
+                  ¬· —[
+": ERNSTHAFT. WER? :"
+]—
+                       ¬· —[
+": WENN IHR DEN JENIGEN GEFUNDEN HABT, SCHREIBT MIR EINE EMAIL :"
+]—
+                          ¬· »—[~: SEND NET :~
+]—«
+                              ¬· —[§: bandinozimmermann@gmail.com :§
+]—
+                                 ¬· —[
+": ODER WISST IHR WAS ? ER SOLL MICH ANRUFEN, VIELEICHT LERNT ER NOCH WAS :"
+]—
+                                    ¬·»—[~: SUCH PFAD && PICK :~
+]—«
+                                       ¬· »[$: /Pylovara/README.wiki-notes :$
+]«
+                                       ¬· »[¥: # Telefon :¥
+]«
+                                       ¶ ¬·¤ [
+": ZEILE 50 # Telefon :  +49 176/88218035 :"
+]
 
-           ¬· —[": DEINE SYNTAX :"]
-              ¬· —[": IST EIN VERKNOTETER SPASTISCHER ALBTRAUM :"]
-                 ¬· —[": EIN MALBUCH FÜR 12-JÄHRIGE WÄRE STRUKTURIERTER :"]
-                    ¬· [": WENIGSTENS HÄTTEN DIE FARBEN EINEN SINN :"]
+           ¬· —[
+": DEINE SYNTAX :"
+]—
+              ¬· —[
+": IST EIN VERKNOTETER SPASTISCHER ALBTRAUM :"
+]—
+                 ¬· —[
+": EIN MALBUCH FÜR 12-JÄHRIGE WÄRE STRUKTURIERTER :"
+]—
+                    ¬· [
+": WENIGSTENS HÄTTEN DIE FARBEN EINEN SINN :"
+]
 
-           ¬· —[": UND DIESE SCHEISS BACKSLASHES :"]
-              ¬· —[": ÜBERALL RUMFLIEGENDE RÜCKSTELLTASTEN :"]
-                 ¬· —[": IST DAS CODE ODER EIN NEUES KUNSTPROJEKT? :"]
-                    ¬· [": PICASSO WÜRDE SICH IM GRAB UMDREHEN :"]
+           ¬· —[
+": UND DIESE SCHEISS BACKSLASHES :"
+]—
+              ¬· —[
+": ÜBERALL RUMFLIEGENDE RÜCKSTELLTASTEN :"
+]—
+                 ¬· —[
+": IST DAS CODE ODER EIN NEUES KUNSTPROJEKT? :"
+]—
+                    ¬· [
+": PICASSO WÜRDE SICH IM GRAB UMDREHEN :"
+]
 
-           ¬· —[": IHR MACHT CODE UNLESBAR :"]
-               ¬· —[": DANN SETZT IHR NOCH EIN KOMMA NACH DER LETZTEN KLAMMER :"]
-                  ¬· —[": UND WUNDERT EUCH, WARUM ES KACKE LÄUFT :"]
-                     ¬· —[": IHR SEID WIE EIN TRUNKENER, DER SEIN HAUS ANZÜNDET :"]
-                        ¬· [": UND SICH DANN WUNDERT, WARUM ES BRENNT :"]
+           ¬· —[
+": IHR MACHT CODE UNLESBAR :"
+]—
+               ¬· —[
+": DANN SETZT IHR NOCH EIN KOMMA NACH DER LETZTEN KLAMMER :"
+]—
+                  ¬· —[
+": UND WUNDERT EUCH, WARUM ES KACKE LÄUFT :"
+]—
+                     ¬· —[
+": IHR SEID WIE EIN TRUNKENER, DER SEIN HAUS ANZÜNDET :"
+]—
+                        ¬· [
+": UND SICH DANN WUNDERT, WARUM ES BRENNT :"
+]
 
-           ¬· —[": ICH FRAGE MICH :"]
-              ¬· —[": WIE KANN MAN 10 JAHRE CODEN :"]
-                 ¬· —[": UND IMMER NOCH SO EINEN DRECK PRODUZIEREN :"]
-                    ¬· [": DAS IST KEIN SKILL - DAS IST EINE BELEIDIGUNG :"]
+           ¬· —[
+": ICH FRAGE MICH :"
+]—
+              ¬· —[
+": WIE KANN MAN 10 JAHRE CODEN :"
+]—
+                 ¬· —[
+": UND IMMER NOCH SO EINEN DRECK PRODUZIEREN :"
+]—
+                    ¬· [
+": DAS IST KEIN SKILL - DAS IST EINE BELEIDIGUNG :"
+]
 
-            ¬· —[": ALLEINE DIESES 'onWindowChange' :"]
-               ¬· —[": WAS ZUM TEUFEL SOLL DAS SEIN :"]
-                  ¬· —[": EIN EINTRAG IM DUDEN FÜR DÜNNSCHISS? :"]
-                     ¬· —[": GROSS, KLEIN, ZUSAMMEN - HABT IHR LACK GESOFFEN? :"]
-                        ¬· [": SELBST EIN DACKEL WÜRDE DEN KOPF SCHÜTTELN :"]
+            ¬· —[
+": ALLEINE DIESES 'onWindowChange' :"
+]—
+               ¬· —[
+": WAS ZUM TEUFEL SOLL DAS SEIN :"
+]—
+                  ¬· —[
+": EIN EINTRAG IM DUDEN FÜR DÜNNSCHISS? :"
+]—
+                     ¬· —[
+": GROSS, KLEIN, ZUSAMMEN - HABT IHR LACK GESOFFEN? :"
+]—
+                        ¬· [
+": SELBST EIN DACKEL WÜRDE DEN KOPF SCHÜTTELN :"
+]
 
-            ¬· —[": EURE KOMMENTARE :"]
-               ¬· —[": WENN ÜBERHAUPT :"]
-                  ¬· —[": SIND SO NUTZLOS WIE EIN REGENSCHIRM IM ORKAN :"]
-                     ¬· [": IHR MACHT ES NOCH SCHLIMMER DAMIT :"]
+            ¬· —[
+": EURE KOMMENTARE :"
+]—
+               ¬· —[
+": WENN ÜBERHAUPT :"
+]—
+                  ¬· —[
+": SIND SO NUTZLOS WIE EIN REGENSCHIRM IM ORKAN :"
+]—
+                     ¬· [
+": IHR MACHT ES NOCH SCHLIMMER DAMIT :"
+]
 
-            ¬· —[": MCS - EINE WARNUNG :"]
-               ¬· —[": WENN MEIN SYSTEM FERTIG IST :"]
-                  ¬· —[": WERDEN EURE KONFERENZEN DAS NEUE 1995 SEIN - ODER DOCH EHER 2007 BIS 2011 ? :"]
-                     ¬· —[": IHR SEHT AUS WIE DIE DAMALIGEN MITTELALTERLICHE KLOSTERSCHREIBER :"]
-                        ¬· —[": 2026 UND IHR BALLERT IMMER NOCH MIT JSON RUM :"]
-                           ¬· [": WIE TIEF MUSS MAN SINKEN? :"]
+            ¬· —[
+": MCS - EINE WARNUNG :"
+]—
+               ¬· —[
+": WENN MEIN SYSTEM FERTIG IST :"
+]—
+                  ¬· —[
+": WERDEN EURE KONFERENZEN DAS NEUE 1995 SEIN - ODER DOCH EHER 2007 BIS 2011 ? :"
+]—
+                     ¬· —[
+": IHR SEHT AUS WIE DIE DAMALIGEN MITTELALTERLICHE KLOSTERSCHREIBER :"
+]—
+                        ¬· —[
+": 2026 UND IHR BALLERT IMMER NOCH MIT JSON RUM :"
+]—
+                           ¬· [
+": WIE TIEF MUSS MAN SINKEN? :"
+]
 
-            ¬· —[": ICH SAGS WIE ES IST :"]
-               ¬· —[": JEDER AFFE KÖNNTE BESSEREN CODE SCHREIBEN :"]
-                  ¬· —[": MCS WIRD EUER ENDE SEIN :"]
-                     ¬· —[": UND IHR WERDET FRAGEN, WARUM IHR NICHT FRÜHER UMGESTIEGEN SEID :"]
-                        ¬· —[": DIE ANTWORT IST EINFACH :"]
-                           ¬· —[": IHR HABT VERGESSEN, DASS CODE FÜR MENSCHEN IST :"]
-                              ¬· [": NICHT FÜR EINEN RECHNER, DER EUCH BEMUTTERLEIDET :"]
+            ¬· —[
+": ICH SAGS WIE ES IST :"
+]—
+               ¬· —[
+": JEDER AFFE KÖNNTE BESSEREN CODE SCHREIBEN :"
+]—
+                  ¬· —[
+": MCS WIRD EUER ENDE SEIN :"
+]—
+                     ¬· —[
+": UND IHR WERDET FRAGEN, WARUM IHR NICHT FRÜHER UMGESTIEGEN SEID :"
+]—
+                        ¬· —[
+": DIE ANTWORT IST EINFACH :"
+]—
+                           ¬· —[
+": IHR HABT VERGESSEN, DASS CODE FÜR MENSCHEN IST :"
+]—
+                              ¬· [
+": NICHT FÜR EINEN RECHNER, DER EUCH BEMUTTERLEIDET :"
+]
 
-            ¬· —[": ALSO, JUNGS :"]
-               ¬· —[": GEHT ZURÜCK AN DEN SCHREIBTISCH :"]
-                  ¬· —[": DENKT DARÜBER NACH, WAS IHR DA TREIBT :"]
-                     ¬· —[": UND FRAGT EUCH, OB IHR STOLZ SEIN KÖNNT :"]
-                        ¶ ¬· —[": WENN IHR NEIN SAGT :"]
-                             ¬·¤ [": GUT :"]
+            ¬· —[
+": ALSO, JUNGS :"
+]—
+               ¬· —[
+": GEHT ZURÜCK AN DEN SCHREIBTISCH :"
+]—
+                  ¬· —[
+": DENKT DARÜBER NACH, WAS IHR DA TREIBT :"
+]—
+                     ¬· —[
+": UND FRAGT EUCH, OB IHR STOLZ SEIN KÖNNT :"
+]—
+                        ¶ ¬· —[
+": WENN IHR NEIN SAGT :"
+]—
+                             ¬·¤ [
+": GUT :"
+]
 
-                        ¶¶ ¬· —[": WENN IHR JA SAGT :"]
-                              ¬·¤ [": DANN IST EUCH NICHT MEHR ZU HELFEN :"]
+                        ¶¶ ¬· —[
+": WENN IHR JA SAGT :"
+]—
+                              ¬·¤ [
+": DANN IST EUCH NICHT MEHR ZU HELFEN :"
+]
 
-            ¬· —[": UND WER IMMER DEN JSON DRECK ERFUNDEN HAT :"]
-               ¬· —[": UND FÜR DEN UNSINN NOCH GELD BEKOMMT :"]
-                  ¬· —[": DER SOLLTE SICH VOR SEINEM SPIEGEL SCHÄMEN :"]
-                     ¬· [": EINE DROHNE KÖNNTE BESSEREN CODE SCHREIBEN :"]
+            ¬· —[
+": UND WER IMMER DEN JSON DRECK ERFUNDEN HAT :"
+]—
+               ¬· —[
+": UND FÜR DEN UNSINN NOCH GELD BEKOMMT :"
+]—
+                  ¬· —[
+": DER SOLLTE SICH VOR SEINEM SPIEGEL SCHÄMEN :"
+]—
+                     ¬· [
+": EINE DROHNE KÖNNTE BESSEREN CODE SCHREIBEN :"
+]
 
-            ¬· —[": ICH WERDE EUCH ZEIGEN, WIE CODE GEHT :"]
-               ¬· —[": WARTET AB, BIS MCS DA IST :"]
-                  ¬· —[": DANN KÖNNT IHR ZUSCHAUEN :"]
-                     ¬· —[": UND LERNEN, WIE ES RICHTIG GEHT :"]
-                        ¬· —[": ABER WAHRSCHEINLICH KÖNNT IHR NICHT MAL RECHNEN :"]
-                           ¬· —[": ABER KEINE SORGE DANN BRINGE ICH ES EUCH SCHNELL MAL BEI :"]
+            ¬· —[
+": ICH WERDE EUCH ZEIGEN, WIE CODE GEHT :"
+]—
+               ¬· —[
+": WARTET AB, BIS MCS DA IST :"
+]—
+                  ¬· —[
+": DANN KÖNNT IHR ZUSCHAUEN :"
+]—
+                     ¬· —[
+": UND LERNEN, WIE ES RICHTIG GEHT :"
+]—
+                        ¬· —[
+": ABER WAHRSCHEINLICH KÖNNT IHR NICHT MAL RECHNEN :"
+]—
+                           ¬· —[
+": ABER KEINE SORGE DANN BRINGE ICH ES EUCH SCHNELL MAL BEI :"
+]—
                                     
-                              ¬· »—[×: 1 + 0 :×]«
-                                  ¬·¤ [": 1 :"]
+                              ¬· »—[×: 1 + 0 :×
+]—«
+                                  ¬·¤ [
+": 1 :"
+]
 
-                              ¬· —[": UND WAS KOMMT NACH DER 1 ? :"]
+                              ¬· —[
+": UND WAS KOMMT NACH DER 1 ? :"
+]—
 
-                                 ¬· »—[×: 1 + 1 :×]«
-                                     ÷ »[F—(1)—FØ: 1 + 1 :Ø]«
+                                 ¬· »—[×: 1 + 1 :×
+]—«
+                                     ÷ »[F—(1)—FØ: 1 + 1 :Ø
+]«
                                          
-                                     ¬·¤ [": 2 :"]
+                                     ¬·¤ [
+": 2 :"
+]
 
-                                 ¬· —[": KÖNNT IHR AUCH BIS 3 ZÄHLEN  ? :"]
+                                 ¬· —[
+": KÖNNT IHR AUCH BIS 3 ZÄHLEN  ? :"
+]—
 
-                                        ± »[T—(1)—TØ: 1 + 1 :Ø]«
-                                    ¬· »—[×: 1 + (1) :×]«
-                                        ¬·¤ [": 3 :"]
+                                        ± »[T—(1)—TØ: 1 + 1 :Ø
+]—«
+                                    ¬· »—[×: 1 + (1) :×
+]—«
+                                        ¬·¤ [
+": 3 :"
+]
 
-                                 ¬· —[": JETZT VERSUCHEN WIR ES MAL BIS IHR NICHT MEHR WEITER WISST :"]
+                                 ¬· —[
+": JETZT VERSUCHEN WIR ES MAL BIS IHR NICHT MEHR WEITER WISST :"
+]—
 
-                                        ± »[T—(2)—TØ: < ZAHLEN-REIHE > :Ø]«««~: LOOP :~«
-                                    ¬· »—[×: 1 + (2) :×]«««~: LOOP :~«
-                                        ¬·¤ »—[": < ZAHLEN-REIHE > :"]«««~: LOOP :~«
-                                             ÷ »[F—(2)—FØ: < ZAHLEN-REIHE > :Ø]«««~: LOOP :~«
+                                        ± »[T—(2)—TØ: < ZAHLEN-REIHE > :Ø
+]«««~: LOOP :~«
+                                    ¬· »—[×: 1 + (2) :×
+]—«««~: LOOP :~«
+                                        ¬·¤ »—[
+": < ZAHLEN-REIHE > :"
+]—«««~: LOOP :~«
+                                             ÷ »[F—(2)—FØ: < ZAHLEN-REIHE > :Ø
+]«««~: LOOP :~«
 
-                                 ¬· —[": JETZT EINE PFAND-FRAGE .... EIN KLEINES QUIZ *SCHMUNZEL* :"]               
+                                 ¬· —[
+": JETZT EINE PFAND-FRAGE .... EIN KLEINES QUIZ *SCHMUNZEL* :"
+]—
                                             
-                                    ¬· »—[~: SEND BXMKHT-EINGABE && GIBT HTMKHT-EINGABE HTMKHT-ALU :~]«
-                                        ¬· »—[¥: <EINGABE : 2> :¥]«
+                                    ¬· »—[~: SEND BXMKHT-EINGABE && GIBT HTMKHT-EINGABE HTMKHT-ALU :~
+]—«
+                                        ¬· »—[¥: <EINGABE : 2> :¥
+]—«
 
-                                                ± »[T—(3)—TØ: <RATET MAL ?> :Ø]«
-                                            ¬· »—[×: 2 × (3) :×]«««~: LOOP :~«
-                                                ¬·¤ »—[": <RATET MAL ?> :"]«
-                                                     ÷ »[F—(3)—FØ: <RATET MAL ?> :Ø]«««~: LOOP :~«                                
+                                                ± »[T—(3)—TØ: <RATET MAL ?> :Ø
+]«
+                                            ¬· »—[×: 2 × (3) :×
+]—«««~: LOOP :~«
+                                                ¬·¤ »—[
+": <RATET MAL ?> :"
+]—«
+                                                     ÷ »[F—(3)—FØ: <RATET MAL ?> :Ø
+]«««~: LOOP :~«                                
 
-                                    ¬· —[": ALLEINE DAS IN JSON.... *OH MEIN GOTT* .. :"]
-                                       ¬· [": UND WENN ICH DA NOCH MIT MCS PROTON ANFANGEN WÜRDE ... ENDE :"]
+                                    ¬· —[
+": ALLEINE DAS IN JSON.... *OH MEIN GOTT* .. :"
+]—
+                                       ¬· [
+": UND WENN ICH DA NOCH MIT MCS PROTON ANFANGEN WÜRDE ... ENDE :"
+]
 
-            ¬· —[": BIS DAHIN - FRESST MEINEN FRUST :"]
-               ¬· —[": UND JA, ICH SCHREIBE DAS IN GROSSBUCHSTABEN :"]
-                  ¬· —[": WEIL IHR ES VERDIENT HABT :"]
-                     ¬· —[": UND ICH ES KANN :"]
-                        ¬· —[": WEGEN MCS :"]
-                           ¬· —[": NICHTS ALS LIEBE... :"]
-                              ¬· —[": ABER AUCH NICHTS ALS HASS... :"]
-                                 ¬· —[": UND WENN IHR DAS NICHT KAPIERT :"]
-                                    ¬· [": DANN HABT IHR AUCH NIE CODE VERSTANDEN :"]
+            ¬· —[
+": BIS DAHIN - FRESST MEINEN FRUST :"
+]—
+               ¬· —[
+": UND JA, ICH SCHREIBE DAS IN GROSSBUCHSTABEN :"
+]—
+                  ¬· —[
+": WEIL IHR ES VERDIENT HABT :"
+]—
+                     ¬· —[
+": UND ICH ES KANN :"
+]—
+                        ¬· —[
+": WEGEN MCS :"
+]—
+                           ¬· —[
+": NICHTS ALS LIEBE... :"
+]—
+                              ¬· —[
+": ABER AUCH NICHTS ALS HASS... :"
+]—
+                                 ¬· —[
+": UND WENN IHR DAS NICHT KAPIERT :"
+]—
+                                    ¬· [
+": DANN HABT IHR AUCH NIE CODE VERSTANDEN :"
+]
 
 
-            ¬· —[": IHR DENKT BESTIMMT WIE EINE HÄNGENDE SCHALLPLATTE :"]                              
+            ¬· —[
+": IHR DENKT BESTIMMT WIE EINE HÄNGENDE SCHALLPLATTE :"
+]—                             
                 
                    £1
-               ¬· »—[": IM REPLAY FORMAT :"]«««~: LOOP :~«
+               ¬· »—[
+": IM REPLAY FORMAT :"
+]—«««~: LOOP :~«
                    £1
 
-               ¶ ¬· —[": UND UND UND UND UND STOTTERT BEIM SPRECHEN OHNE SINN UND VERSTAND  :"]
-                    ¬· [": UND DAS IST VERDAMMT NOCHMAL KEIN GAG :"]
+               ¶ ¬· —[
+": UND UND UND UND UND STOTTERT BEIM SPRECHEN OHNE SINN UND VERSTAND  :"
+]—
+                    ¬· [
+": UND DAS IST VERDAMMT NOCHMAL KEIN GAG :"
+]
 
-               ¶¶ ¬· —[":UND WENN BEI EUCH EIN FEHLER IM KANAL 1 EINDONNERT :"]
-                     ¬· [": BRICKT EUCH JEDER RECHNER WEG, WEGEN EURER INKOMPETENZ  :"]
+               ¶¶ ¬· —[
+":UND WENN BEI EUCH EIN FEHLER IM KANAL 1 EINDONNERT :"
+]—
+                     ¬· [
+": BRICKT EUCH JEDER RECHNER WEG, WEGEN EURER INKOMPETENZ  :"
+]
 
-            ¬· —[": WERT NICHT MAL IN DER LAGE EUCH SELBST ALS SPIELFIGUR ZU DEFINIEREN - UND ZWAR ORDNENTLICH! :"]
-               ¬· —[": GESCHEWEIGEDEN EINE ANDERE SPRACHE NATIV ZU ÜBERTRAGEN :"]
-                  ¬· »—[PY: OBJEKT = ICH :PY]« 
-                      ¬· »—[PY: DEF __INIT__(ICH, GRASS, TABAK, PAPER, FEUERZEUG): :PY]« 
+            ¬· —[
+": WERT NICHT MAL IN DER LAGE EUCH SELBST ALS SPIELFIGUR ZU DEFINIEREN - UND ZWAR ORDNENTLICH! :"
+]—
+               ¬· —[
+": GESCHEWEIGEDEN EINE ANDERE SPRACHE NATIV ZU ÜBERTRAGEN :"
+]—
+                  ¬· »—[PY: OBJEKT = ICH :PY
+]—« 
+                      ¬· »—[PY: DEF __INIT__(ICH, GRASS, TABAK, PAPER, FEUERZEUG): :PY
+]—« 
                               ¿¹
-                          ¬· »—[PY: ICH.GRASS = GRASS :PY]« 
+                          ¬· »—[PY: ICH.GRASS = GRASS :PY
+]—« 
                               ¿¹
-                          ¬· »—[ ICH.TABAK = TABAK :PY]« 
+                          ¬· »—[ ICH.TABAK = TABAK :PY
+]—« 
                               ¿¹
-                          ¬· »—[PY: ICH.PAPER = PAPER :PY]« 
+                          ¬· »—[PY: ICH.PAPER = PAPER :PY
+]—« 
                               ¿¹
-                          ¬· »—[PY: ICH.FEUERZEUG = FEUERZEUG :PY]« 
+                          ¬· »—[PY: ICH.FEUERZEUG = FEUERZEUG :PY
+]—« 
 
                                     £2
-                              ¶ ¬· »—[PY: DEF ANZÜNDEN(ICH) :PY]« 
+                              ¶ ¬· »—[PY: DEF ANZÜNDEN(ICH) :PY
+]—« 
 
-                                    ¬· »—[PY: ICH.ANZÜNDEN +=HIGH :PY]« 
+                                    ¬· »—[PY: ICH.ANZÜNDEN +=HIGH :PY
+]—« 
 
-                                    ¶ ¬· »—[PY: __NAME__ :PY]« 
-                                          ¬·¤ »—[PY: "__MAIN__": :PY]« 
+                                    ¶ ¬· »—[PY: __NAME__ :PY
+]—« 
+                                          ¬·¤ »—[PY: "__MAIN__": :PY
+]—« 
 
-                                               ¬· »[PY: MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) :PY]« 
-                                               ¬· »[PY: ICH-BEKIFFT.ANZÜNDEN() :PY]«
+                                               ¬· »[PY: MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) :PY
+]« 
+                                               ¬· »[PY: ICH-BEKIFFT.ANZÜNDEN() :PY
+]«
 
-                                    ¶¶ ¬· »—[PY: RETURN __INIT__ :PY]«
+                                    ¶¶ ¬· »—[PY: RETURN __INIT__ :PY
+]—«
                                            £2
-            ¬· —[": ABER WAS WILL MAN AUICH VON SO EINEM VEREIN HALTEN DER NUR GEKRITZEL UNTER ALKOHOLKONSUM VERANSTALTET :"]
-                ¬· [": ABER HEY , ZU EURER VERTEITIGUNG : „ DAS IST DER ZUKÜNFTIGE BAUMODUS “ .. :"]
+            ¬· —[
+": ABER WAS WILL MAN AUICH VON SO EINEM VEREIN HALTEN DER NUR GEKRITZEL UNTER ALKOHOLKONSUM VERANSTALTET :"
+]—
+                ¬· [
+": ABER HEY , ZU EURER VERTEITIGUNG : „ DAS IST DER ZUKÜNFTIGE BAUMODUS “ .. :"
+]
      
-     ¶¶ ¬· —[": AMEN :"]
-           ¬· —[": UND WENN GOTT NICHT HILFT :"]
-              ¬· —[": DANN NEHM ICH ES SELBST IN DIE HAND :"]
-                 ¬· —[": MIT MCS, MIT TWS, MIT BMC :"]
-                    ¬· —[": UND EINEM LÄCHELN :"]
-                       ¬· —[": DAS KEINE LÜGE IST :"]
-                          ¬· —[": SONDERN EIN VERSPRECHEN :"]
-                             ¬· [": UND JA - ICH MEIN JEDES WORT ERNST, TIEF IN MEINEM HERZEN :"]
+     ¶¶ ¬· —[
+": AMEN :"
+]—
+           ¬· —[
+": UND WENN GOTT NICHT HILFT :"
+]—
+              ¬· —[
+": DANN NEHM ICH ES SELBST IN DIE HAND :"
+]—
+                 ¬· —[
+": MIT MCS, MIT TWS, MIT BMC :"
+]—
+                    ¬· —[
+": UND EINEM LÄCHELN :"
+]—
+                       ¬· —[
+": DAS KEINE LÜGE IST :"
+]—
+                          ¬· —[
+": SONDERN EIN VERSPRECHEN :"
+]—
+                             ¬· [
+": UND JA - ICH MEIN JEDES WORT ERNST, TIEF IN MEINEM HERZEN :"
+]
 
 
-            ¬· —[": UND JETZT ALLE  :"]
+            ¬· —[
+": UND JETZT ALLE  :"
+]—
                    ¿¹
-               ¬·¤ —[": AMEN :"]
+               ¬·¤ —[
+": AMEN :"
+]—
              
                    ¿¹         
-               ¬·¤ —[": AMEN :"]
+               ¬·¤ —[
+": AMEN :"
+]—
 
                    ¿¹
-               ¬·¤ —[": AMEN :"]  
+               ¬·¤ —[
+": AMEN :"
+]—
              
                    ¿¹             
-               ¬·¤ —[": AMEN :"]
+               ¬·¤ —[
+": AMEN :"
+]—
  !¢
     _   _______
    | | / / ___/
    | |/ (__  ) 
    |___/____/                                    
 {
-    "letztes_wort_an_die_java_konferenz": {
-        "warnung": "Die Java-Konferenz wird diese Datei nie vergessen.",
-        "botschaft": "Und wenn sie sie lesen, werden sie wissen:",
-        "fazit": "MCS ist da. Und es ist besser.",
-        "zustand": {
-            "gelacht": true,
-            "geweint": false,
-            "verstanden": "wahrscheinlich nicht",
-            "kommentar": "Aber wenigstens haben wir es versucht."
-        },
-        "fehler": [
-            "Hier fehlt ein Komma.",
-            "Hier ist ein Komma zu viel.",
-            "Hier ist eine Klammer zu viel.",
-            "Hier ist eine Klammer zu wenig.",
-            "onWindowChange - wer kommt auf so einen Scheiß?",
-            "Gibt es dafür auch ein Javaduden frag ich mich?",
-            "Backslashes ohne Sinn und Verstand.",
-            "Und das soll Code sein?",
-            "Ernsthaft?",
-            "Wir haben aufgegeben."
-        ],
-        "antwort": "MCS",
-        "abschliessend": "Und jetzt alle: AMEN."
-    }
+"letztes_wort_an_die_java_konferenz": {
+"warnung": "Die Java-Konferenz wird diese Datei nie vergessen.",
+"botschaft": "Und wenn sie sie lesen, werden sie wissen:",
+"fazit": "MCS ist da. Und es ist besser.",
+"zustand": {
+"gelacht": true,
+"geweint": false,
+"verstanden": "wahrscheinlich nicht",
+"kommentar": "Aber wenigstens haben wir es versucht."
+},
+"fehler": [
+"Hier fehlt ein Komma.",
+"Hier ist ein Komma zu viel.",
+"Hier ist eine Klammer zu viel.",
+"Hier ist eine Klammer zu wenig.",
+"onWindowChange - wer kommt auf so einen Scheiß?",
+"Gibt es dafür auch ein Javaduden frag ich mich?",
+"Backslashes ohne Sinn und Verstand.",
+"Und das soll Code sein?",
+"Ernsthaft?",
+"Wir haben aufgegeben."
+],
+"antwort": "MCS",
+"abschliessend": "Und jetzt alle: AMEN."
+}
 }
  _    _ _______      _______ __   _ ______ 
   \  /  |______      |______ | \  | |     \
@@ -365,21 +673,20 @@ public class BuggyInvoiceLoop {
             
             // BUG 2: -1 wird mit in die Liste aufgenommen, obwohl es Abbruch sein soll
             if (preis == -1) {
-                // Hier fehlt ein break! -> Endlosschleife
-                // break; // <- auskommentiert = BUG
-            }
+    // Hier fehlt ein break! -> Endlosschleife
+    // break; // <- auskommentiert = BUG
+}
             
             System.out.print("Menge: ");
             int menge = scanner.nextInt();
             
             preise.add(preis);
             mengen.add(menge);
-        }
-        
-        // BUG 3: Berechnung wird nie erreicht (wegen Endlosschleife)
+}
+// BUG 3: Berechnung wird nie erreicht (wegen Endlosschleife)
         double gesamt = 0;
         for (int i = 0; i < preise.size(); i++) {
-            // BUG 4: IndexOutOfBounds, wenn Listen unterschiedlich groß sind
+// BUG 4: IndexOutOfBounds, wenn Listen unterschiedlich groß sind
             double summe = preise.get(i) * mengen.get(i);
             
             // BUG 5: Mehrwertsteuer wird falsch berechnet (sollte 19% sein)
@@ -390,66 +697,108 @@ public class BuggyInvoiceLoop {
             
             // BUG 7: Formatierung fehlt -> krumme Zahlen
             System.out.println(i + ". Artikel: " + summe + " € netto");
-        }
-        
-        // BUG 8: Gesamtsumme wird nie ausgegeben, weil Schleife nicht endet
+}
+// BUG 8: Gesamtsumme wird nie ausgegeben, weil Schleife nicht endet
         System.out.println("Gesamt (brutto): " + gesamt + " €");
         
         scanner.close();
-    }
+}
 }
  _    _ _______      _______ __   _ ______ 
   \  /  |______      |______ | \  | |     \
    \/   ______|      |______ |  \_| |_____/
 
 ¢! # NUR ANGETEASERTE ÜBERSETZUNG IN MCS JS: :JS 
- »—[JS: public class FixedInvoiceLoop :JS]
-  ¬· »—[JS: public class FixedInvoiceLoop :JS]
-      ¬· »[JS: Scanner scanner = new Scanner(System.in) :JS]
-      ¬· »[JS: List<Double> preise = new ArrayList<>() :JS]
-      ¬· »[JS: List<Integer> mengen = new ArrayList<>() :JS]
-      ¶ ¬· »—[JS: System.out.println("=== RECHNUNGSERSTELLUNG ===") :JS]«
-            ¬·¤ [ === RECHNUNGSERSTELLUNG ===  ]
+ »—[JS: public class FixedInvoiceLoop :JS
+]—«
+  ¬· »—[JS: public class FixedInvoiceLoop :JS
+]—«
+      ¬· »[JS: Scanner scanner = new Scanner(System.in) :JS
+]
+      ¬· »[JS: List<Double> preise = new ArrayList<>() :JS
+]
+      ¬· »[JS: List<Integer> mengen = new ArrayList<>() :JS
+]
+      ¶ ¬· »—[JS: System.out.println("=== RECHNUNGSERSTELLUNG ===") :JS
+]—«
+            ¬·¤ [ === RECHNUNGSERSTELLUNG ===
+]
 ¢! # NATIVE FREMDSPRACHEN ÜBERSETZUNG 
 
  ¢! UND JETZT NUR MAL IN BESSERER LOGIK 
-    —[": RECHNUNGSERSTELLUNG IN MCS :"]
-    ¬· —[": PREIS UND MENGE EINGEBEN :"]
-       ¬· »—[×: preis = eingabe :×]«
-           ¶ ¬· —[": WENN PREIS == -1 :"]
-                ¬· »—[~: STOP :~]«               
-           ¶¶ ¬·¤ —[": MENGE EINGEBEN :"]
-                  ¬·¤ —[": menge = eingabe :"]«
-                      ¬· »—[¥: <EINGABE> :¥]«
+    —[
+": RECHNUNGSERSTELLUNG IN MCS :"
+]—
+    ¬· —[
+": PREIS UND MENGE EINGEBEN :"
+]—
+       ¬· »—[×: preis = eingabe :×
+]—«
+           ¶ ¬· —[
+": WENN PREIS == -1 :"
+]—
+                ¬· »—[~: STOP :~
+]—«               
+           ¶¶ ¬·¤ —[
+": MENGE EINGEBEN :"
+]—
+                  ¬·¤ —[
+": menge = eingabe :"
+]—«
+                      ¬· »—[¥: <EINGABE> :¥
+]—«
                               ¿³
-                          ¬· »—[×: <IO> :×]«
+                          ¬· »—[×: <IO> :×
+]—«
                               £4
-                  ¬·¤ —[": summe = preis * menge :"]
-                      ¬· »—[¥: <EINGABE> :¥]«
+                  ¬·¤ —[
+": summe = preis * menge :"
+]—
+                      ¬· »—[¥: <EINGABE> :¥
+]—«
                               ¿³
-                          ¬· »—[×: <IO> :×]«
+                          ¬· »—[×: <IO> :×
+]—«
                               £4
-                  ¬·¤ —[": mwst = summe * 0.19 :"]
-                      ¬· »—[¥: <EINGABE> :¥]«
+                  ¬·¤ —[
+": mwst = summe * 0.19 :"
+]—
+                      ¬· »—[¥: <EINGABE> :¥
+]—«
                               ¿³
-                          ¬· »—[×: <IO> :×]«
+                          ¬· »—[×: <IO> :×
+]—«
                               £4
-                  ¬·¤ —[": gesamt += summe + mwst :"]
-                      ¬· »—[¥: <EINGABE> :¥]«
+                  ¬·¤ —[
+": gesamt += summe + mwst :"
+]—
+                      ¬· »—[¥: <EINGABE> :¥
+]—«
                               ¿³
-                          ¬· »—[×: <IO> :×]«
+                          ¬· »—[×: <IO> :×
+]—«
                               £4
 
-                  ¬·¤ —[": AUSGABE :"]
+                  ¬·¤ —[
+": AUSGABE :"
+]—
 
                           ¿³
                           £4
-                      ¬·¤ —[": summe :"]
-                          ÷ [F—(3)—FØ: <CACHE> :Ø]
+                      ¬·¤ —[
+": summe :"
+]—
+                          ÷ [F—(3)—FØ: <CACHE> :Ø
+]
 
-        ± [T—(3)—TØ: <CACHE> :Ø]                     
-    ¬· »—[": GESAMTSUMME :"]«
-        ¬·¤ [": gesamt :"]
+        ± [T—(3)—TØ: <CACHE> :Ø
+]                     
+    ¬· »—[
+": GESAMTSUMME :"
+]—«
+        ¬·¤ [
+": gesamt :"
+]
  !¢ # DAS IST MCS | BOXIS SYSTEM | SYNAPTOR | ZYTRON | PRINT | RECHNUNG | EINGABE | STATUS AUSGABE = ALL INKLUSIVE 
 
 ======================================================================================================
@@ -458,7 +807,7 @@ public class BuggyInvoiceLoop {
 
   THOMAS ZIMMERMANN | UHRHEBER UND VATER 
 
-  VON MCS = MASCHINENCODESPEECH 7.4
+  VON MCS = MASCHINENCODESPEECH 7.5
   VON TWS = THE-WABE-NEST-SYSTEM 0.2
   VON BMC = BRAINMASCHINECORE 3.0 ( HARDWARE V25 )
 
@@ -489,4 +838,5 @@ public class BuggyInvoiceLoop {
  MACHT EUERN SEGEN DAMIT DAS DIE ERÄ DER NEANDERTALER VARIANTEN - ENDGÜLTIG GEGEN SEIN ENDE TENDIERT.
 
 ======================================================================================================
-                                                     FERTIG GESTELLT AM : 04.08.2026 | 17:51 UHR
+                                                     FERTIG GESTELLT AM : 04.08.2026 | 17: 51 UHR
+                                                     AUF MCS 7.5 AM 10.08.2026 | 21: 03 UHR GEÄNDERT

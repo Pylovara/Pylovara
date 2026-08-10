@@ -82,18 +82,18 @@
 
 # MCS
 ¢!
-  —[": BION-ID BILDEN :"]
-  ¬· —[": HOLE NAME :"]
-     ¬· »—[×: MOV RAX, [NAME] :×]«
-  ¬· —[": HOLE NUMMER :"]
-     ¬· »—[×: ADD RAX, [NR] :×]«
-  ¬· —[": SPEICHERE BION-ID :"]
-     ¬· »—[×: MOV [BION-ID], RAX :×]«
+  —[": BION-ID BILDEN :"]—
+  ¬· —[": HOLE NAME :"]—
+     ¬· »—[×: MOV RAX, [NAME] :×]—«
+  ¬· —[": HOLE NUMMER :"]—
+     ¬· »—[×: ADD RAX, [NR] :×]—«
+  ¬· —[": SPEICHERE BION-ID :"]—
+     ¬· »—[×: MOV [BION-ID], RAX :×]—«
 !¢
 
 ¢!
- —[": RECHNUNGSBEISPIEL :"]
- ¬· »—[×: 1 + 0 :×]«
+ —[": RECHNUNGSBEISPIEL :"]—
+ ¬· »—[×: 1 + 0 :×]—«
      ¬·¤ [": 1 :"]
 !¢
 

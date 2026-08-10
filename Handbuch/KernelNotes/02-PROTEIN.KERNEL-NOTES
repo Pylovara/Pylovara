@@ -216,6 +216,57 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⠨⢂ PIPELINEWABE
 
 ################################################################################
 
+# SCHMIERBREICH 
+
+
+TOCHTERWABEN-KATEGORIE ⠆⢄⠰⣀ PIPELINEWABE
+
+ # WABEN IDENTIFIKATION
+ WABEN-ID ⠆⢄⠰⡁ PL
+ BION-NR ⠆⢄⠰⡂ 001
+ BION-ID ⠆⢄⠰⡄ PL001
+ BSK ⠆⢄⠰⡅ PIMKSTBA-PIPELINEWABE
+ BION ⠆⢄⠰⡆ PI002MK002ST002BA003PL001
+
+ # AXIOM START ERLAUBNIS (ANSCHLUSS VON BAUWABE BA003)
+ AXIOM ¡ ⠆⢄⠰⠌ ⧑ ⠆⢄⠰⡄
+
+ ERLAUBNIS ⠆⢄⠰⡄ —[ PI-ON-PIPE-START
+
+ # PIPELINE STRUCT / ANSCHLÜSSE
+ PIPELINE ⠆⢄⠰⡈ IN          # ZYKLUS-IN       <ZYMK>
+ PIPELINE ⠆⢄⠰⡐ IN          # SYNC-ON-PIPE    <SYMK>
+ PIPELINE ⠆⢄⠰⡠ IN          # KOPF-INJEKTOR   <NIMK>
+ PIPELINE ⠆⢄⠰⢁ IO          # START-PIPE      —[
+ PIPELINE ⠆⢄⠰⢂ OUT         # FOOD-EXTRAKTOR  <NIMK>
+ PIPELINE ⠆⢄⠰⢈ OUT         # ZYKLUS-OUT      <ZYMK>
+ PIPELINE ⠆⢄⠰⢐ DATENKANAL  # 24x REX BUS     <REMK>
+ PIPELINE ⠆⢄⠰⢠ JA          # SENTIATOR-JA    <SEMK>+<REMK>
+ PIPELINE ⠆⢄⠰ NEIN        # SENTIATOR-NEIN  <SEMK>+<REMK>
+
+ # MCS-MODUL ANSCHLÜSSE (BRIDGES)
+ ANSCHLUSS ⠆⢄⠰⠢ ZYTRON    # <ZYMK>  (Zyklus In)
+ ANSCHLUSS ⠆⢄⠰⠤ SYNAPTOR  # <SYMK>  (Sync)
+ ANSCHLUSS ⠆⢄⠰⠨ NITROX    # <NIMK>  (Kopf-Injektor)
+ ANSCHLUSS ⠆⢄⠰⡁ PROTEIN   # —[      (Start-Pipe)
+ ANSCHLUSS ⠆⢄⠰⡂ NITROX    # <NIMK>  (Food-Extraktor)
+ ANSCHLUSS ⠆⢄⠨⡈ ZYTRON    # <ZYMK>  (Zyklus Out)
+ ANSCHLUSS ⠆⢄⠨⡐ REX       # <REMK>  (Datenkanäle 1-24)
+ ANSCHLUSS ⠆⢄⠨⡠ SENTIATOR # <SEMK>+<REMK> (Ja-Zweig)
+ ANSCHLUSS ⠆⢄⠨⢁ SENTIATOR # <SEMK>+<REMK> (Nein-Zweig)
+
+ # AXIOM MAFT (BAUM IN ANSCHLUSS MAPPING)
+ AXIOM ¡ ⠆⢄⠰⡈ ⧑ ⠆⢄⠰⠢   # IN -> ZYTRON (IN)
+ AXIOM ¡ ⠆⢄⠰⡐ ⧑ ⠆⢄⠰⠤   # IN -> SYNAPTOR
+ AXIOM ¡ ⠆⢄⠰⡠ ⧑ ⠆⢄⠰⠨   # IN -> NITROX (Kopf)
+ AXIOM ¡ ⠆⢄⠰⢁ ⧑ ⠆⢄⠰   # IO -> PROTEIN START
+ AXIOM ¡ ⠆⢄⠰⢂ ⧑ ⠆⢄⠰⡂   # OUT -> NITROX (Food)
+ AXIOM ¡ ⠆⢄⠰⢈ ⧑ ⠆⢄⠨⡈   # OUT -> ZYTRON (OUT)
+ AXIOM ¡ ⠆⢄⠰⢐ ⧑ ⠆⢄⠨   # DATENKANAL -> REX BUS (24-fach)
+ AXIOM ¡ ⠆⢄⠰⢠ ⧑ ⠆⢄⠨⡠   # SENTIATOR-JA -> SEMK+REMK
+ AXIOM ¡ ⠆⢄⠰ ⧑ ⠆⢄⠨⢁   # SENTIATOR-NEIN -> SEMK+REMK
+
+
 # stelle erst die pipe waben fertig .... modularität an erster stelle 
 wenn dann richtig , keine halben sachen ....
 

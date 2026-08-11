@@ -10,221 +10,163 @@
  # | WINDOWS | MACOS | LINUX | BSD | UNIX | GNU | UEFI | BIOS | ETC          #
 ###===============================STARTPUNKT================================###
 
-WABEN-KATEGORIE Ð KOPFWABE
+MUTTERWABEN-KATEGORIE ⠆⢄⠨⢠ KOPFWABE
 
- KOMPONENTE ¡ TRENNBEFEHL
+ KOMPONENTE ⠆⢄⠨⣀ TRENNBEFEHL
 
- KOMPONENTEN-ID ¡ TE
+ KOMPONENTEN-ID ⠆⢄⠰⠅ TE
 
- BION-NR ¡ 04
+ BION-NR ⠆⢄⠰⠉ 004
 
- BION-ID ¡ TE04
+ BION-ID ⠆⢄⠨⠌ TE004
 
- MASTER-ID ¡ MK46SU04
+ MASTER-ID ⠆⢄⠨⠑ MK046SU004
 
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð MASTERKERNWABE
-
- WABEN-ID ¡ MK
-
- BION-NR ¡ 04 
-
- BION-ID ¡ MK04
-
- BSK ¡ TEMK
-
- BION ¡ TE04MK04
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⢄⠨⣀ ⏍ ⠆⢄⠨⣀
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠰⠅ ⧓ ⠆⢄⠰⠉ Ξ ⠆⢄⠨⠌
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠨⠌ ⧑ ⠆⢄⠨⠡
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð HAUPTWABE 
+MODUL ⠆⢄⠨⠒ MASTERKERNWABE
 
- PROGRAMM ¡ WAND
+ WABEN-ID ⠆⢄⠨⠔ MK
 
- WABEN-ID ¡ HT
+ BION-NR ⠆⢄⠨⠘ 004
 
- BION-NR ¡ 05
+ BION-ID ⠆⢄⠨⠡ MK004
 
- BION-ID ¡ HT05
+ BSK ⠆⢄⠨⠢ TEMK
 
- BSK ¡ TEMKHT-WAND
+ BION ⠆⢄⠨⠤ TE004MK004
 
- BION ¡ TE04MK04HT05
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ WAND
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 05
-
- BION-ID ¡ ST05
-
- BSK ¡ TEMKHTST-WAND
-
- BION ¡ TE04MK04HT05ST05
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = |
- AXIOM ¡ ^ | ≠ * ≠ | = TE-WAND
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ | = TE-WAND
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠨⠔ ⧓ ⠆⢄⠨⠘ Ξ ⠆⢄⠨⠡
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠨⠡ ⧑ ⠆⢄⠤⡐
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð ENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⢄⠨⠰ HAUPTWABE 
 
- PROGRAMM ¡ WAND
+ PROGRAMM ⠆⢄⠨⡁ WAND
 
- WABEN-ID ¡ ED
+ WABEN-ID ⠆⢄⠨⡂ HT
 
- BION-NR ¡ 07
+ BION-NR ⠆⢄⠨⡄ 005
 
- BION-ID ¡ ED07
+ BION-ID ⠆⢄⠤⡐ HT005
 
- BSK ¡ TEMKHTST-WAND
+ BSK ⠆⢄⠤⡠ TEMKHT-WAND
 
- BION ¡ TE04MK04HT05ST05ED07
+ BION ⠆⢄⠤⢁ TE004MK004HT005
 
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ | = TE-WAND 
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ TEMKHTST-WAND
-
- # AXIOM
- AXIOM ¡ 
-
- # LIEGT IM RAM 
- FINISH ¡ | = TE-WAND
-
-###====================================|====================================###
-###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
-@kernel-nr: 04 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
-###============================PYLOVARA-SYSTEM==============================###
- #                TRENNBEFEHL = THE PROTEIN CONTAINER WALL                   #
-###===========================WICHTIGER-HINWEIS=============================###
- #     DER TRENNBEFEHL BLEIBT ERSTMAL OFFLINE , WIRD SPÄTER EINGEPFLEGT      #
- #     PROTEINE SIND OHNE POMK|POMK AUSGERÜSTET ...                          #
- #############################################################################
- # SENKRECHTSTRICH WIRD IN PROTEIN/E NICHT WIE IN BOXIS VERWENDET            #
- #     BOXIS TRAGEN GRUNDLOGIK VON LEGACY OPERATIONS SYSTEMEN:               #
- # | WINDOWS | MACOS | LINUX | BSD | UNIX | GNU | UEFI | BIOS | ETC          #
-###===============================STARTPUNKT================================###
-
-WABEN-KATEGORIE Ð KOPFWABE
-
- KOMPONENTE ¡ TRENNBEFEHL
-
- KOMPONENTEN-ID ¡ TE
-
- BION-NR ¡ 04
-
- BION-ID ¡ TE04
-
- MASTER-ID ¡ MK46SU04
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠨⡂ ⧓ ⠆⢄⠨⡄ Ξ ⠆⢄⠤⡐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠤⡐ ⧑ ⠆⢄⠤⠒
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð MASTERKERNWABE
+MUTTERWABEN-KATEGORIE ⠆⢄⠤⢂ STARTWABE 
 
- WABEN-ID ¡ MK
+ PROGRAMM ⠆⢄⠨⠉ WAND
 
- BION-NR ¡ 04 
+ WABEN-ID ⠆⢄⠨⠊ ST
 
- BION-ID ¡ MK04
+ BION-NR ⠆⢄⠤⠑ 005
 
- BSK ¡ TEMK
+ BION-ID ⠆⢄⠤⠒ ST005
 
- BION ¡ TE04MK04
+ BSK ⠆⢄⠤⠔ TEMKHTST-WAND
 
-###====================================|====================================###
+ BION ⠆⢄⠤⠘ TE004MK004HT005ST005
 
-WABEN-KATEGORIE Ð HAUPTWABE 
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠨⠊ ⧓ ⠆⢄⠤⠑ Ξ ⠆⢄⠤⠒
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠤⠒ ⧑ ⠆⢄⠢⣀
 
- PROGRAMM ¡ WAND
+ TASTENCODE ⠆⢄⠤⠡ ALT GR
+ TASTENCODE ⠆⢄⠤⠢ <
 
- WABEN-ID ¡ HT
+ SYMBOLE ⠆⢄⠤⠨ |
 
- BION-NR ¡ 05
+ PRÄFIX ⠆⢄⠤⠰ TE-WAND
 
- BION-ID ¡ HT05
+ # PRODUKT
+ AXIOM ¡ ⠆⢄⠤⠡ ⦻ ⠆⢄⠤⠢ Ξ ⠆⢄⠤⡁
 
- BSK ¡ TEMKHT-WAND
+ PRODUKT ⠆⢄⠤⡁ |
 
- BION ¡ TE04MK04HT05
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢄⠤⡁ ⥓ ⠆⢄⠤⠰
 
-###====================================|====================================###
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢄⠤⡁ ⥗ ⠆⢄⠤⠰ ⍞ ⠆⢄⠤⡂
 
-WABEN-KATEGORIE Ð STARTWABE 
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠤⡂ | TE-WAND
 
- PROGRAMM ¡ WAND
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 05
-
- BION-ID ¡ ST05
-
- BSK ¡ TEMKHTST-WAND
-
- BION ¡ TE04MK04HT05ST05
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = |
- AXIOM ¡ ^ | ≠ * ≠ | = TE-WAND
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ | = TE-WAND
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢄⠤⠒ ⦳ ⠆⢄⠢⣀
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð ENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⢄⠤⡄ ENDWABE 
 
- PROGRAMM ¡ WAND
+ PROGRAMM ⠆⢄⠢⢈ WAND
 
- WABEN-ID ¡ ED
+ WABEN-ID ⠆⢄⠢⢐ ED
 
- BION-NR ¡ 07
+ BION-NR ⠆⢄⠢⢠ 005
 
- BION-ID ¡ ED07
+ BION-ID ⠆⢄⠢⣀ ED005
 
- BSK ¡ TEMKHTST-WAND
+ BSK ⠆⢄⠤⠃ TEMKHTSTED-WAND
 
- BION ¡ TE04MK04HT05ST05ED07
+ BION ⠆⢄⠤⠅ TE004MK004HT005ST005ED005
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠢⢐ ⧓ ⠆⢄⠢⢠ Ξ ⠆⢄⠢⣀
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢄⠢⣀ ͼ 
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ | = TE-WAND 
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢄⠤⡂ ⍞ ⠆⢄⠤⠌
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ TEMKHTST-WAND
+ EINHEIT ⠆⢄⠤⠌ | TE-WAND
 
- # AXIOM
- AXIOM ¡ 
+TOCHTERWABEN-KATEGORIE ⠆⢄⠤⡈ AUSFÜRHUNGSLINKWABE
 
- # LIEGT IM RAM 
- FINISH ¡ | = TE-WAND
+ # PROZESS LINK
+ LINKPROZESS ⠆⢄⠢⡠ PIMK
+
+ # AXIOM | PROZESSLINK
+ AXIOM ¡ ### SPÄTER BEIDE HAUPTWABEN ALS EXPLITER PLATZ 
+ # BEISPIEL : PIMK -> PIMKHT 1 UND 2   
+ 
+ # NAME SETZEN
+ PRÄFIX ⠆⢄⠢⢁ TE-WAND-FINISH
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢄⠤⠌ ⥓ ⠆⢄⠢⢁ ⍞ ⠆⢄⠢⢂
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢄⠢⢂ | TE-WAND-FINISH
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢄⠢⢂ ⑅ ⠆⢄⠢⡠
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
- # MASTERWORT = 
- # BION-ID-PFAD (WAND) → TE04+MK04+HT05+ST05+ED07
- # BION-ID-VPFAD → TE04MK04HT05ST05ED07
- # BION-ID-RPFAD → TE04+MK04
+ # 
+ # 
+ # 
+ # 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

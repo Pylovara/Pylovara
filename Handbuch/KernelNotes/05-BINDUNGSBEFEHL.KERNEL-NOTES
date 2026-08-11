@@ -3,6 +3,148 @@
  #             BINDUNGSBEFEHL =  THE PROTON HARDWARE BINDING                  #
 ###===============================STARTPUNKT================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠢⠊ KOPFWABE
+
+ KOMPONENTE ⠆⢄⠢⠌ BINDUNGSBEFEHL
+
+ KOMPONENTEN-ID ⠆⢄⠢⠑ BI
+
+ BION-NR ⠆⢄⠡⠔ 005 
+
+ BION-ID ⠆⢄⠡⠘ BI005
+
+ MASTER-ID ⠆⢄⠡⠢ MA005SU005
+
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⢄⠢⠌ ⏍ ⠆⢄⠢⠌
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠢⠑ ⧓ ⠆⢄⠡⠔ Ξ ⠆⢄⠡⠘
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠡⠘ ⧑ ⠆⢄⠡⡁
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠡⠤ MASTERKERNWABE
+
+ WABEN-ID ⠆⢄⠡⠨ MK
+
+ BION-NR ⠆⢄⠡⠰ 005
+
+ BION-ID ⠆⢄⠡⡁ MK005
+
+ BSK ⠆⢄⠡⡂ BIMK
+
+ BION ⠆⢄⠡⡄ BI005MK005
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠡⠨ ⧓ ⠆⢄⠡⠰ Ξ ⠆⢄⠡⡁
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠡⡁ ⧑ ⠆⢄⠘⡠
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠘⡂ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠘⡄ BIND
+
+ WABEN-ID ⠆⢄⠘⡈ HT
+
+ BION-NR ⠆⢄⠘⡐ 006
+
+ BION-ID ⠆⢄⠘⡠ HT006
+
+ BSK ⠆⢄⠘⢁ BIMKHT-BIND
+
+ BION ⠆⢄⠔⢈ BI005MK005HT006
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠘⡈ ⧓ ⠆⢄⠘⡐ Ξ ⠆⢄⠘⡠
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠘⡠ ⧑ ⠆⢄⠘⠨
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠡⠒ STARTWABE 
+
+ PROGRAMM ⠆⢄⠘⠡ BIND
+
+ WABEN-ID ⠆⢄⠘⠢ ST
+
+ BION-NR ⠆⢄⠘⠤ 006
+
+ BION-ID ⠆⢄⠘⠨ ST006
+
+ BSK ⠆⢄⠘⠰ BIMKHTST-BIND
+
+ BION ⠆⢄⠘⡁ BI005MK005HT006ST006
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠘⠢ ⧓ ⠆⢄⠘⠤ Ξ ⠆⢄⠘⠨
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠘⠨ ⧑ 
+
+ TASTENCODE ⠆⢄⠔⢐ SHIFT
+ TASTENCODE ⠆⢄⠔⢠ ,
+
+ SYMBOLE ⠆⢄⠔⣀ ;
+
+ PRÄFIX ⠆⢄⠘⠅ BI-BIND
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢄⠔⢐ ⦻ ⠆⢄⠔⢠ Ξ ⠆⢄⠘⠃
+
+ PRODUKT ⠆⢄⠘⠃ ;
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢄⠘⠃ ⥓ ⠆⢄⠘⠅
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢄⠘⠃ ⥗ ⠆⢄⠘⠅ ⍞ ⠆⢄⠘⠉
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠘⠉ ; BI-BIND
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢄⠘⠨ ⦳ #
+
+###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 WABEN-KATEGORIE Ð KOPFWABE
 
  KOMPONENTE ¡ BINDUNGSBEFEHL

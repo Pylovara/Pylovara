@@ -13,7 +13,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠢⠘ KOPFWABE
 
  BION-ID ⠆⢄⠢⠰ PO003
 
- MASTER-ID ⠆⢄⠢⡁ MK046SU003
+ MASTER-ID ⠆⢄⠢⡁ MA046SU003
 
  # AXIOM | KOMPONENTEN NAMEN
  AXIOM ¡ ⠆⢄⠢⠡ ⏍ ⠆⢄⠢⠡
@@ -61,11 +61,82 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠡⢈ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠡⢠ ⧓ ⠆⢄⠡⣀ Ξ ⠆⢄⠢⠃
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠢⠃ ⧑ 
+ AXIOM ¡ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE
+MUTTERWABEN-KATEGORIE ⠆⢄⠡⡈ STARTWABE 
+
+ PROGRAMM ⠆⢄⠘⣀ HARDWARE
+
+ WABEN-ID ⠆⢄⠡⠃ ST
+
+ BION-NR ⠆⢄⠡⠅ 004
+
+ BION-ID ⠆⢄⠡⠉ ST004
+
+ BSK ⠆⢄⠡⠊ POMKHTST-HARDWARE
+
+ BION ⠆⢄⠡⠌ PO003MK003HT004ST004
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠡⠃ ⧓ ⠆⢄⠡⠅ Ξ ⠆⢄⠡⠉ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠡⠉ ⧑ 
+
+ TASTENCODE ⠆⢄⠘⠊ ALT GR
+ TASTENCODE ⠆⢄⠘⠌ 7
+ TASTENCODE ⠆⢄⠘⠑ 0
+
+ SYMBOLE ⠆⢄⠡⡐ {
+ SYMBOLE ⠆⢄⠡⡠ }
+
+ PRÄFIX ⠆⢄⠘⢂ PO-START
+ PRÄFIX ⠆⢄⠘⢈ PO-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢄⠘⠊ ⦻ ⠆⢄⠘⠌ Ξ ⠆⢄⠘⢐
+ AXIOM ¡ ⠆⢄⠘⠊ ⦻ ⠆⢄⠘⠑ Ξ ⠆⢄⠘⢠
+
+ PRODUKT ⠆⢄⠘⢐ {
+ PRODUKT ⠆⢄⠘⢠ }
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢄⠘⢐ ⥓ ⠆⢄⠘⢂
+ AXIOM ¡ ⠆⢄⠘⢠ ⥓ ⠆⢄⠘⢈
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢄⠘⢐ ⥗ ⠆⢄⠘⢂ ⍞ ⠆⢄⠡⠑
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢄⠘⢠ ⥗ ⠆⢄⠘⢈ ⍞ ⠆⢄⠘⠒
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠡⠑ { PO-START
+ EINHEIT ⠆⢄⠘⠒ } PO-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢄⠡⠉ ⦳ #
+
+###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###====================================|====================================###
+
+
+
+
 
 
 

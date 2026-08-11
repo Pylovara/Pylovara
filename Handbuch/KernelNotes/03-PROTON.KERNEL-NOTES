@@ -155,10 +155,12 @@ TOCHTERWABEN-KATEGORIE # EINGABEWABE
  
  EINGABEHALTEN ⠆⢄⠔⠌ 
 
+KINDERWABEN-KATEGORIE ⠆⢄⠔⡠ HARDWAREWABE
+
  # AXIOM | (EINGABE WEITERGEBEN)
  AXIOM ¡ # ⍞ #
 
- HONIGTROPFEN ⠆⢄⠔⠑ <PUUUH ... OBERBEGRIFF FÜR GERÄTE NAMEN>
+ HONIGTROPFEN ⠆⢄⠔⠑ <OBERBEGRIFF FÜR GERÄTENAMEN>
 
  # AXIOM | DATENBANK ABGLEICH
  AXIOM ¡ 
@@ -174,45 +176,8 @@ TOCHTERWABEN-KATEGORIE # EINGABEWABE
  # RAM GEBAUTE EINHEIT
  EINHEIT ⠆⢄⠔⠘ 
 
-KINDERWABEN-KATEGORIE ⠆⢄⠔⡠ HARDWAREWABE
-################
- # EINGABE-I
- IN-ID #
-
- HONIGTROPFEN #
- HONIGTROPFEN #
- HONIGTROPFEN #
-
- # AXIOM | IO VERBINDEN
- AXIOM ¡ # (VERBINDEN) #
-
- # AUSGABE-0
- OUT-ID #
-
- # AXIOM | OUT-ID RAM 
- AXIOM ¡ # ⍞ #
-
- # RAM GEBAUTE EINHEIT
- EINHEIT # 
-
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ # ⦳ #
-
-
-so ... nochmal ein nickerchen ... warm , kahlt ... 30° .... 20° .... runter ... 
-
-erstmal noch bis 01/02:00 uhr pause ... dann sortieren pro waben block ... 
-
-ich sehe verdoppelungen ... die eigentlich ineinander runter geschaltet gehören ..
-
-muss noch verfeinert werden ... 
-
-wäre zwar so auch möglich und eine trivialität für den assembler code später 
-aber eine gesamt wabe in sich die ram daten pro aspekt neu ziehen zu lassen statts zu halten 
-wäre sinnfreie zeitverschwendung ... 
-
-aber ansich kann man so machen , sehr modular ... fehlen dann die honig tropfen 
-aber erstmal die generalisierte modularität rein arbeiten ... das ist ein viel wichtigerer aspekt 
 
 ###====================================|====================================###
 

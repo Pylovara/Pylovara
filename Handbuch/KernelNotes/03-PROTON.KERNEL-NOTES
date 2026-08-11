@@ -119,7 +119,32 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠡⡈ STARTWABE
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE ⠆⢄⠔⡐ EINGABEWABE
+MUTTERWABEN-KATEGORIE ⠆⢄⠔⡐ BAUWABE 
+
+ PROGRAMM #
+
+ WABEN-ID # BA
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⍞
+
+ # EINHEIT | RAM
+ EINHEIT # 
+
+TOCHTERWABEN-KATEGORIE # EINGABEWABE
 
  # AXIOM | RAM HOLEN
  AXIOM ¡ # ⍞ #

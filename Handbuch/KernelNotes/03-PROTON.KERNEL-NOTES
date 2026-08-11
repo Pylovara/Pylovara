@@ -3,33 +3,70 @@
  #         PROTON = THE PROTEIN HARDWARE MANAGEMENT CONTROL SYSTEM             # 
 ###===============================STARTPUNKT================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠢⠘ KOPFWABE
 
+ KOMPONENTE ⠆⢄⠢⠡ PROTON
 
+ KOMPONENTEN-ID ⠆⢄⠢⠤ PO
 
+ BION-NR ⠆⢄⠢⠨ 003
 
+ BION-ID ⠆⢄⠢⠰ PO003
 
+ MASTER-ID ⠆⢄⠢⡁ MK046SU003
 
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⢄⠢⠡ ⏍ ⠆⢄⠢⠡
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠢⠤ ⧓ ⠆⢄⠢⠨ Ξ ⠆⢄⠢⠰
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠢⠰ ⧑ ⠆⢄⠢⡐
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
+###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠢⡂ MASTERKERNWABE
 
- so ... wird schon wieder hell .... 
+ WABEN-ID ⠆⢄⠢⡄ MK
 
-  es wird heute eh heiß wie sau .... ich gehe erstmal pennen und versuche 
-  solange wie möglich die hitze mit schlaf zu überstehen .. 
+ BION-NR ⠆⢄⠢⡈ 003
 
-  heute abend arbeite ich die modular strukur weiter aus ..
+ BION-ID ⠆⢄⠢⡐ MK003
 
-  erst wenn klar wird wo die reise hingeht und welche wabe was tragen muss 
-  geh ich dann an den proton ( der brauch den bindungsbefehl) 
+ BSK ⠆⢄⠡⢁ POMK
 
-  die eingabewabe muss stimmen , sie wird öfters zum einsatz kommen ... 
+ BION ⠆⢄⠡⢂ PO003MK003
 
-  proton und boxis müssen vor protein erstellt werden , damit ich 
-  den protein link richtig setzen kann ... 
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠢⡄ ⧓ ⠆⢄⠢⡈ Ξ ⠆⢄⠢⡐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃
 
-  danach den rex und dann ab da reihefolge ... 
+###====================================|====================================###
 
-  das wird eine sehr mächtige struktur ... 
+MUTTERWABEN-KATEGORIE ⠆⢄⠡⢈ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠡⢐ HARDWARE
+
+ WABEN-ID ⠆⢄⠡⢠ HT
+
+ BION-NR ⠆⢄⠡⣀ 004
+
+ BION-ID ⠆⢄⠢⠃ HT004
+
+ BSK ⠆⢄⠢⠅ POMKHT-HARDWARE
+
+ BION ⠆⢄⠢⠉ PO003MK003HT004
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠡⢠ ⧓ ⠆⢄⠡⣀ Ξ ⠆⢄⠢⠃
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠢⠃ ⧑ 
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE
+
 
 
 

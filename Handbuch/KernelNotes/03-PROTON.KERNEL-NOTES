@@ -146,31 +146,34 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠔⡐ BAUWABE
 
 TOCHTERWABEN-KATEGORIE # EINGABEWABE
 
- # AXIOM | RAM HOLEN
+ EINGABE 
+
+ # AXIOM | (EINGABE COPIE)
+ AXIOM ¡ # ⍞ #
+ 
+ EINGABEHALTEN 
+
+ # AXIOM | (EINGABE WEITERGEBEN)
  AXIOM ¡ # ⍞ #
 
- # EINHEIT | RAM
- EINHEIT #
+ HONIGTROPFEN
 
- SYSTEMEINGABE 
+ # AXIOM | DATENBANK ABGLEICH
+ AXIOM ¡ 
 
- # EINGABE-I
- IN-ID #
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡
 
- # AUSGABE-0
- OUT-ID #
+ AUSGABE
 
- # AXIOM | IO VERBINDEN
- AXIOM ¡ # (VERBINDEN) #
- 
- # AXIOM | OUT-ID RAM 
+ # AXIOM | RAM 
  AXIOM ¡ # ⍞ #
 
  # RAM GEBAUTE EINHEIT
  EINHEIT # 
 
 KINDERWABEN-KATEGORIE ⠆⢄⠔⡠ HARDWAREWABE
-
+################
  # EINGABE-I
  IN-ID #
 
@@ -208,12 +211,6 @@ wäre sinnfreie zeitverschwendung ...
 
 aber ansich kann man so machen , sehr modular ... fehlen dann die honig tropfen 
 aber erstmal die generalisierte modularität rein arbeiten ... das ist ein viel wichtigerer aspekt 
-
-
-
-
-
-
 
 ###====================================|====================================###
 

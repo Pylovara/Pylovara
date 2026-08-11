@@ -14,14 +14,15 @@
  # 05 - SYSTEM-ID                    | 06 - BION-ID                          #
 ###=========================GENERALWABEN-KATALOG============================###
  # 10 - MUTTERWABE                   | 11 - TOCHTERWABEN                     #
- # 12 - KINDERWABEN                  | 13 X HONIGTROPFEN                     #
+ # 12 - KINDERWABEN                  | 13 - HONIGTROPFEN                     #
 ###=========================MUTTERWABEN-MODULE==============================###
  # 20 - KOPFWABE                     | 21 - MASTERKERNWABE                   #
  # 22 - HAUPTWABE                    | 23 - STARTWABE                        #
  # 24 - BAUWABE                      | 25 - ENDWABE                          #
 ###==========================TOCHTERWABEN-MODULE============================###
- # 30 - COMBOWABE                    | 31 X EINGABEWABE                      #
- # 32 - PIPELINEWABE                 | 33 - PIPELINEANDOCKWABE               #
+ # 30 - COMBOWABE                    | 31 - COMBOLINKWABE                    #
+ # 32 - EINGABEWABE                  | 33 - PIPELINEWABE                     #
+ # 34 - PIPELINEANDOCKWABE           | 35 -                                  #
  # 40 - AUSFÜRUNGSWABE               | 41 - AUSFÜHRUNGSLINKWABE              #
 ###===========================KINDERWABEN-MODULE============================###
  # 60 X HARDWAREWABE                 | 61 - BOXIWABE                         #

@@ -82,7 +82,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠡⠒ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠘⠢ ⧓ ⠆⢄⠘⠤ Ξ ⠆⢄⠘⠨
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠘⠨ ⧑ 
+ AXIOM ¡ ⠆⢄⠘⠨ ⧑ ⠆⢄⠔⠰
 
  TASTENCODE ⠆⢄⠔⢐ SHIFT
  TASTENCODE ⠆⢄⠔⢠ ,
@@ -106,10 +106,36 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠡⠒ STARTWABE
  EINHEIT ⠆⢄⠘⠉ ; BI-BIND
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⠘⠨ ⦳ #
+ AXIOM ¡ ⠆⢄⠘⠨ ⦳ ⠆⢄⠔⠰
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠘⠔ BAUWABE 
+
+ PROGRAMM ⠆⢄⠔⡄ BINDLINK
+
+ WABEN-ID ⠆⢄⠔⡂ BA
+
+ BION-NR ⠆⢄⠔⡁ 007
+
+ BION-ID ⠆⢄⠔⠰ BA007
+
+ BSK ⠆⢄⠔⠨ BIMKHTSTBA-BINDLINK
+
+ BION ⠆⢄⠔⠤ BI005MK005HT006ST006BA007
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠔⡂ ⧓ ⠆⢄⠔⡁ Ξ ⠆⢄⠔⠰
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠔⠰ ⧑ #
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢄⠘⠉ ⍞ ⠆⢄⠔⠢
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠔⠢ ; BI-BIND
+
+TOCHTERWABEN-KATEGORIE ⠆⢄⠔⡈ (COMBOLINK)
 
 
 

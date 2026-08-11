@@ -20,11 +20,15 @@
  # 22 - HAUPTWABE                    | 23 - STARTWABE                        #
  # 24 - BAUWABE                      | 25 - ENDWABE                          #
 ###==========================TOCHTERWABEN-MODULE============================###
- # 30 - COMBOWABE                    | 31 -                                  #
+ # 30 - COMBOWABE                    | 31 X EINGABEWABE                      #
  # 32 - PIPELINEWABE                 | 33 - PIPELINEANDOCKWABE               #
  # 40 - AUSFÜRUNGSWABE               | 41 - AUSFÜHRUNGSLINKWABE              #
 ###===========================KINDERWABEN-MODULE============================###
- # 60 X                              | 61 -                                  #
+ # 60 X HARDWAREWABE                 | 61 -                                  #
+ # 62 X                              | 63 -                                  #
+###==========================HONIGTROPFEN-MODULE============================###
+ # 90 X WATT                         | 91 X VOLT                             #
+ # 
 ###===============================VERSIONSDATEN=============================###
  # TWS ⠆⢄⢁⡈ THE-WABE-NEST-SYSTEM                          #       #          #
  # TASTATURSTANDARD ⠆⢄⢁⡐ UTF -8 DEUTSCHER-STANDARD        # PYLOVARA—SYSTEM© #

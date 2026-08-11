@@ -1,31 +1,30 @@
-@waben-nr: 32 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 60 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
-###==============================EINGABEWABE================================###
+###=============================HARDWAREWABE================================###
 # UNFERTIG
-MODUL ⠆⢄⠢⠒ EINGABEWABE
-
- # AXIOM | RAM HOLEN
- AXIOM ¡ # ⍞ #
-
- # EINHEIT | RAM
- EINHEIT #
-
- SYSTEMEINGABE 
+MODUL ⠆⢄⠢⠒ HARDWAREWABE
 
  # EINGABE-I
  IN-ID #
 
- # AUSGABE-0
- OUT-ID #
+ HONIGTROPFEN #
+ HONIGTROPFEN #
+ HONIGTROPFEN #
 
  # AXIOM | IO VERBINDEN
  AXIOM ¡ # (VERBINDEN) #
- 
+
+ # AUSGABE-0
+ OUT-ID #
+
  # AXIOM | OUT-ID RAM 
  AXIOM ¡ # ⍞ #
 
  # RAM GEBAUTE EINHEIT
  EINHEIT # 
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
 
 ###==============================INFORMATIONEN==============================###
 

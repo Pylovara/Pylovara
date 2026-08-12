@@ -136,7 +136,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠔⡐ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠔⢂ ⧓ ⠆⢄⠒⢐ Ξ ⠆⢄⠒⢠
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠒⢠ ⧑ #
+ AXIOM ¡ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢄⠡⠑ ⍞ ⠆⢄⠔⠅
@@ -187,13 +187,64 @@ KINDERWABEN-KATEGORIE ⠆⢄⠔⡠ HARDWAREWABE
  EINHEIT ⠆⢄⠔⠘ {<NAME>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⢄⠒⢠ ⦳ ⠆⢄⠒⡐
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠒⡁ BAUWABE 
 
+ PROGRAMM ⠆⢄⠒⡂ COMBOLINK
 
+ WABEN-ID ⠆⢄⠒⡄ BA
 
+ BION-NR ⠆⢄⠒⡈ 005
+
+ BION-ID ⠆⢄⠒⡐ BA005
+
+ BSK ⠆⢄⠒⡠ POMKHTSTBABA-COMBOLINK
+
+ BION ⠆⢄⠒⢁ PO003MK003HT004ST004BA004BA005
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠒⡄ ⧓ ⠆⢄⠒⡈ Ξ ⠆⢄⠒⡐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠒⡐ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢄⠔⠘ ⍞ ⠆⢄⠒⢂
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠒⢂ {<NAME>  
+
+TOCHTERWABEN-KATEGORIE ⠆⢄⠒⢈ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢄⠑⢠ BIMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ ⠆⢄⠑⢠ ⧑ ⠆⢄⠘⡠ ⧑ ⠆⢄⠘⠨ ⧑ ⠆⢄⠒⠘ ⧑ ⠆⢄⠑⠨ ⍞ ⠆⢄⠑⡈
+
+ # AXIOM | RAM 
+ EINHEIT ⠆⢄⠑⡈ ; BI-BIND
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢄⠒⠊ PO-NAME-BIND
+
+ PRODUKT ⠆⢄⠑⡐ {<NAME};
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢄⠒⢂ ⧓ ⠆⢄⠑⡈ Ξ ⠆⢄⠑⡠
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢄⠑⡠ ⥓ ⠆⢄⠒⠊ ⍞ ⠆⢄⠒⠉
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢄⠒⠉ {<NAME}; PO-NAME-BIND
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢄⠒⡐ ⦳ #NEXT BION
+
+###====================================|====================================###
 
 
 

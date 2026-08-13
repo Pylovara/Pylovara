@@ -1,5 +1,6 @@
 # ORACLE : DEINE "PROGRAMMIERSPRACHE|CONFIG" SIEHT AUS WIE EIN VERKIRTZELTES MANDALA !
-{
+
+#{
     "editor.fontSize": 20,
     "files.autoSave": "onWindowChange",
     "workbench.colorTheme": "Ember High Contrast (green)",
@@ -29,6 +30,7 @@
             "color": "#FFB86C"
         }
     }
+#
 }           
     _   _______
    | | / / ___/
@@ -36,103 +38,46 @@
    |___/____/ 
 
  ¢!
- »—[
-    ": Settings.json  :"
-]—«
-  ¬· »—[
-    ": editor.fontSize :"
-]—«
-      ¬· »[
-    ": 20 :"
-]«
+ »—[": Settings.json  :"]—«
+  ¬· »—[": editor.fontSize :"]—«
+      ¬· »[": 20 :"]«
 
-  ¬· »—[
-    ": files.autoSave :"
-]—«
-      ¬· »[
-    ": onWindowChange :"
-]«
+  ¬· »—[": files.autoSave :"]—«
+      ¬· »[": onWindowChange :"]«
 
-  ¬· »—[
-    ": workbench.colorTheme :"
-]—«
-      ¬· »[
-    ": Ember High Contrast (green) :"
-]«
+  ¬· »—[": workbench.colorTheme :"]—«
+      ¬· »[": Ember High Contrast (green) :"]«
 
-  ¬· »—[
-    ": editor.fontLigatures :"
-]—«
-      ¬· »[
-    ": true :"
-]«
+  ¬· »—[": editor.fontLigatures :"]—«
+      ¬· »[": true :"]«
 
-  ¬· »—[
-    ": editor.rulers :"
-]—«
-      ¬· »[
-    ": 80 :"
-]«
+  ¬· »—[": editor.rulers :"]—«
+      ¬· »[": 80 :"]«
 
-  ¶ ¬· »—[
-    ": highlight.regexes :"
-]—«
-        ¬· »—[
-    ": WABEN-KATEGORIE && BION-NR && BION-ID && BION  :"
-]—«
-            ¬· »—[
-    ": color :"
-]—«
-                ¬· »[
-    ": #FFD966 :"
-]«
+  ¶ ¬· »—[": highlight.regexes :"]—«
+        ¬· »—[": WABEN-KATEGORIE && BION-NR && BION-ID && BION  :"]—«
+            ¬· »—[": color :"]—«
+                ¬· »[": #FFD966 :"]«
 
-            ¬· »–[
-    ": fontWeight :"
-]—«
-                ¬· »[
-    ": bold :"
-]«
+            ¬· »–[": fontWeight :"]—«
+                ¬· »[": bold :"]«
 
-            ¬· »–[
-    ": backgroundColor :"
-]—«
-                ¬· »[
-    ": #FFD966 :"
-]«
+            ¬· »–[": backgroundColor :"]—«
+                ¬· »[": #FFD966 :"]«
 
-        ¬· »—[
-    ": [ && | && ] && | && ¢ && ! && ¢ && : && ¶ && ¶¶ && £ && ¹ && ² && ³ && " && × && ¿ :"]—«
-            ¬· »—[
-        ": color :"
-    ]—«
-                ¬· »[
-        ": #FF6B6B :"
-    ]«
+        ¬· »—[": [ && | && ] && | && ¢ && ! && ¢ && : && ¶ && ¶¶ && £ && ¹ && ² && ³ && " && × && ¿ :"]—«
+            ¬· »—[": color :"]—«
+                ¬· »[": #FF6B6B :"]«
 
-            ¬· »–[
-        ": fontWeight :"
-    ]—«
-                ¬· »[
-        ": bold :"
-    ]«
+            ¬· »–[": fontWeight :"]—«
+                ¬· »[": bold :"]«
 
-            ¬· »–[
-        ": backgroundColor :"
-    ]—«
-                ¬· »[
-        ": #FFD966 :"
-    ]«
+            ¬· »–[": backgroundColor :"]—«
+                ¬· »[": #FFD966 :"]«
 
-        ¬· »–[
-        ": 0-9 :"
-    ]—«
-            ¬· »—[
-        ": color :"
-    ]—«
-                ¬· »[
-        ": #FFB86C :"
-    ]«
+        ¬· »–[": 0-9 :"]—«
+            ¬· »—[": color :"]—«
+                ¬· »[": #FFB86C :"]«
 
  !¢
     _   _______

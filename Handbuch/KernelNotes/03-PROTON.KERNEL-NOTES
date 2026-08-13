@@ -106,9 +106,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠡⡈ STARTWABE
  AXIOM ¡ ⠆⢄⠘⢠ ⥓ ⠆⢄⠘⢈
 
  # RAM AXIOM 
- AXIOM ¡ ⠆⢄⠘⢐ ⥗ ⠆⢄⠘⢂ ⍞ ⠆⢄⠡⠑
+ AXIOM ¡ ⠆⢄⠘⢐ ⥗ ⠆⢄⠘⢂ ⍠ ⠆⢄⠡⠑
  # RAM AXIOM 
- AXIOM ¡ ⠆⢄⠘⢠ ⥗ ⠆⢄⠘⢈ ⍞ ⠆⢄⠘⠒
+ AXIOM ¡ ⠆⢄⠘⢠ ⥗ ⠆⢄⠘⢈ ⍠ ⠆⢄⠘⠒
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⠡⠑ { PO-START
@@ -139,8 +139,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠔⡐ BAUWABE
  AXIOM ¡ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⠡⠑ ⍞ ⠆⢄⠔⠅
- AXIOM ¡ ⠆⢄⠘⠒ ⍞ ⠆⢄⠔⠉
+ AXIOM ¡ ⠆⢄⠡⠑ ⍠ ⠆⢄⠔⠅
+ AXIOM ¡ ⠆⢄⠘⠒ ⍠ ⠆⢄⠔⠉
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⠔⠅ { PO-START
@@ -156,7 +156,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⠔⠡ EINGABEWABE
  PRODUKT ⠆⢄⠒⠤ {<NAME>
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⠒⠤ ⍞ ⠆⢄⠒⠨
+ AXIOM ¡ ⠆⢄⠒⠤ ⍠ ⠆⢄⠒⠨
 
  EINHEIT ⠆⢄⠒⠨ {<NAME>
 
@@ -181,7 +181,7 @@ KINDERWABEN-KATEGORIE ⠆⢄⠔⡠ HARDWAREWABE
  AXIOM ¡ ⠆⢄⠔⠌ ⎚
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⠒⠨ ⍞ ⠆⢄⠔⠘
+ AXIOM ¡ ⠆⢄⠒⠨ ⍠ ⠆⢄⠔⠘
 
  # RAM GEBAUTE EINHEIT
  EINHEIT ⠆⢄⠔⠘ {<NAME>
@@ -211,7 +211,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠒⡁ BAUWABE
  AXIOM ¡ ⠆⢄⠒⡐ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⠔⠘ ⍞ ⠆⢄⠒⢂
+ AXIOM ¡ ⠆⢄⠔⠘ ⍠ ⠆⢄⠒⢂
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⠒⢂ {<NAME>  
@@ -222,7 +222,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⠒⢈ COMBOLINKWABE
  LINK ⠆⢄⠑⢠ BIMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ ⠆⢄⠑⢠ ⍿ ⠆⢄⠡⡂ ⧑ ⠆⢄⠘⡠ ⧑ ⠆⢄⠘⠨ ⧑ ⠆⢄⠒⠘ ⧑ ⠆⢄⠑⠨ ⍞ ⠆⢄⠑⡈
+ AXIOM ¡ ⠆⢄⠑⢠ ⍿ ⠆⢄⠡⡂ ⧑ ⠆⢄⠘⡠ ⧑ ⠆⢄⠘⠨ ⧑ ⠆⢄⠒⠘ ⧑ ⠆⢄⠑⠨ ⍠ ⠆⢄⠑⡈
 
  # AXIOM | RAM 
  EINHEIT ⠆⢄⠑⡈ ; BI-BIND
@@ -236,7 +236,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⠒⢈ COMBOLINKWABE
  AXIOM ¡ ⠆⢄⠒⢂ ⧓ ⠆⢄⠑⡈ Ξ ⠆⢄⠑⡠
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⠑⡠ ⥓ ⠆⢄⠒⠊ ⍞ ⠆⢄⠒⠉
+ AXIOM ¡ ⠆⢄⠑⡠ ⥓ ⠆⢄⠒⠊ ⍠ ⠆⢄⠒⠉
 
  # EINHEIT | RAM | VERLINKT FERTIG
  EINHEIT ⠆⢄⠒⠉ {<NAME}; PO-NAME-BIND
@@ -266,8 +266,8 @@ MUTTERWABEN-KATEGORIE # BAUWABE
  AXIOM ¡ # ⧑ #
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍞ #
- AXIOM ¡ # ⍞ #
+ AXIOM ¡ # ⍠ #
+ AXIOM ¡ # ⍠ #
 
  # EINHEIT | RAM
  EINHEIT # 
@@ -283,7 +283,7 @@ TOCHTERWABEN-KATEGORIE # EINGABEWABE
  PRODUKT # 
 
  # AXIOM | RAM 
- AXIOM ¡ # ⍞ #
+ AXIOM ¡ # ⍠ #
 
  EINHEIT # 
 

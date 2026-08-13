@@ -107,9 +107,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡠⠔ STARTWABE
  AXIOM ¡ ⠆⢄⡈⢠ ⥓ ⠆⢄⡐⢂
 
  # RAM AXIOM 
- AXIOM ¡ ⠆⢄⡐⢈ ⥗ ⠆⢄⡐⢁ ⍞ ⠆⢄⡈⣀
+ AXIOM ¡ ⠆⢄⡐⢈ ⥗ ⠆⢄⡐⢁ ⍠ ⠆⢄⡈⣀
  # RAM AXIOM 
- AXIOM ¡ ⠆⢄⡈⢠ ⥗ ⠆⢄⡐⢂ ⍞ ⠆⢄⡐⠌
+ AXIOM ¡ ⠆⢄⡈⢠ ⥗ ⠆⢄⡐⢂ ⍠ ⠆⢄⡐⠌
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⡈⣀ ¢! TA-RUNTIME-START
@@ -140,8 +140,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡐⠑ BAUWABE
  AXIOM ¡ ⠆⢄⡈⠨ ⧑ ⠆⢄⡂⡄
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⡈⣀ ⍞ ⠆⢄⢂⠉
- AXIOM ¡ ⠆⢄⡐⠌ ⍞ ⠆⢄⡈⡂
+ AXIOM ¡ ⠆⢄⡈⣀ ⍠ ⠆⢄⢂⠉
+ AXIOM ¡ ⠆⢄⡐⠌ ⍠ ⠆⢄⡈⡂
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⢂⠉ ¢! TA-RUNTIME-START
@@ -162,7 +162,7 @@ TOCHTERWABE-KATEGORIE ⠆⢄⡈⡄ COMBOLINKWABE
  PRÄFIX ⠆⢄⡄⡐ TA-RUNTIME-PIMK
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⢂⠉ ⠆⢄⡄⡂ ⥓ ⠆⢄⡄⡐ ⍞ ⠆⢄⡈⠉
+ AXIOM ¡ ⠆⢄⢂⠉ ⠆⢄⡄⡂ ⥓ ⠆⢄⡄⡐ ⍠ ⠆⢄⡈⠉
 
  # EINHEIT | RAM | VERLINKT FERTIG
  EINHEIT ⠆⢄⡈⠉ ¢! <PIMK> TA-RUNTIME-PIMK
@@ -192,8 +192,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡄⠡ BAUWABE
  AXIOM ¡ ⠆⢄⡂⡄ ⧑ ⠆⢄⡄⢠
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⡈⠉ ⍞ ⠆⢄⡂⡠
- AXIOM ¡ ⠆⢄⡐⠌ ⍞ ⠆⢄⡂⢂
+ AXIOM ¡ ⠆⢄⡈⠉ ⍠ ⠆⢄⡂⡠
+ AXIOM ¡ ⠆⢄⡐⠌ ⍠ ⠆⢄⡂⢂
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⡂⡠ ¢! <PIMK> TA-RUNTIME-PIMK
@@ -208,7 +208,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⡂⢁ COMBOWABE
  PRÄFIX ⠆⢄⡂⢈ TA-RUNTIME-PIMK-ENDE
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⡄⠢ ⥓ ⠆⢄⡂⢈ ⍞ ⠆⢄⡄⠢
+ AXIOM ¡ ⠆⢄⡄⠢ ⥓ ⠆⢄⡂⢈ ⍠ ⠆⢄⡄⠢
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⡄⠢ ¢! <PIMK> !¢ TA-RUNTIME-PIMK-ENDE
@@ -238,7 +238,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡄⢁ ENDWABE
  AXIOM ¡ ⠆⢄⡄⢈ ⫯
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⡄⠢ ⍞ ⠆⢄⡂⠉
+ AXIOM ¡ ⠆⢄⡄⠢ ⍠ ⠆⢄⡂⠉
 
  EINHEIT ⠆⢄⡂⠉ ¢! <PIMK> !¢ TA-RUNTIME-PIMK-ENDE
 
@@ -248,7 +248,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⡄⠃ AUSFÜRHUNGSWABE
  PRÄFIX ⠆⢄⡂⠊ TA-RUNTIME-FINISH
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⡂⠉ ⥓ ⠆⢄⡂⠊ ⍞ ⠆⢄⠤⠊ 
+ AXIOM ¡ ⠆⢄⡂⠉ ⥓ ⠆⢄⡂⠊ ⍠ ⠆⢄⠤⠊ 
 
  # EINHEIT | RAM | VERLINKT FERTIG
  EINHEIT ⠆⢄⠤⠊ ¢! <PIMK> !¢ TA-RUNTIME-FINISH

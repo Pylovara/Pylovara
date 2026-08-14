@@ -1,0 +1,72 @@
+@mcs-nr: 03 ==================LEXIKON NAVIGATION TERMINAL ======= mcs <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+  #         PROTON = THE PROTEIN HARDWARE MANAGEMENT CONTROL SYSTEM          # 
+###==============================MCS-ERKLÄRUNG==============================###
+
+ ⠆⢄⠢⠡ PROTON 
+ ————————————
+
+ DAS PROTON IST DARAUF AUSGELEGT ANTRIEBSDATEN AN DIE JEWEILIGE HARDWARE ZU 
+ VERTEILEN UND SOLL INNERHALB DER SPRACHE FÜR DIE NATIVE HARDWAREVERSORGUNG 
+ FIXIERT UND OPTIMIERT WERDEN. 
+
+ IN DIESEM PUNKT IST DIE UMSETZUNG NOCH SEHR SCHWAMMIG, AUFGRUNDLAGE DESSEN 
+ WEIL ICH IN DIESEM ASPEKT KEINE TIEFERE EXPERTISE MIT BRINGE UND DESWEGEN 
+ IST DAS PROTON EINE VORGEMERKTE ABER VORHANDENE KOMPONENTE - DIE IN DER 
+ JETZIGEN FORM " ON THE FLY " EXISTIERT . 
+
+ GEDACHT IST DAS PROTON SYNTAX TECHNNISCH ALS ZUGABE FUNKTION MIT DANN 
+ FOLGENDEN MCD BEFEHL UND BOXIS ADRESSIERUNG IN DAFÜR ANGELEGTEN DATEIEN. 
+
+ DIE DATEIEN SELBST WERDEN ( VON MIR HER GESEHEN ) ALS NEEDLES DEFINIERT, 
+ ALSO NADELN ( IN GEWISSERWEISE HARDWARE ZUGRIFFS PUNKTE ) - DIE SICH AUCH 
+ TREIBER NENNEN. 
+
+ ¢! 
+ »—[~: SEND PCIE-SLOT  :~]—«
+  ¬· »[MS: <NR-Pin PCIe-Stecker> :MS|{NETZTEIL:800WATT}]«««~: TAKT 1 SEKUNDE ~:«
+ !¢
+
+### WAS ES BEDEUTET:
+
+# - »—[~: SEND <HARDWARE> :~]—«  → Sende an Hardware
+# - MS: <NR-Pin> :MS              → MS = Mainboard-Stecker
+# - {<NAME>:<WATT>}               → PROTON-Block (Name + Watt)
+# - «««~: <TAKT> ~:«              → Zeit-Taktung
+
+ DIESER ASPEKT DES SYSTEMS IST IN DEN KINDERSCHUHEN UND WIRD IM LAUFE DER 
+ VERSIONEN VERFEINERT UND VERBESSERT - JEDOCH SOLL SIE DIESEN SINN ERFÜLLEN. 
+
+ DIESER TEIL DER PYLOVARA-SYSTEMS IST DER EINZIGE TEIL DES GESAMTEN AUFBAUS 
+ DER NOCH SEHR EXPERIEMNTIELL IST UND NOCH KEINE ENGÜLTIGE DEUTUNG IN DER 
+ SCHREIBWEISE BESITZT. 
+
+ JEDOCH WIRD SIE IN DIESER FORM UMGESETZT WERDEN, ENTWEDER NACH EINEM INVESTOR 
+ UND DER LAUFFÄHIGKEIT DES RESTLICHEN SYSTEMS - ODER SOGAR DAVOR . 
+
+ BIS DORTHIN GELTEN VORHANDENE TREIBER UND DIESE WERDEN AUCH TRANSPORTIERT UND 
+ GENUTZT : 
+
+ ¢!
+# Beispiel Schaltung | MÖGLICHKEIT
+
+»—['exec <SPIEL>']—«
+ ¬· »—[~run intelarc~]—«
+     ¬· »—[~prozess gpu-core~]—«
+
+         ¶ ¬· »—[~run ast intelarc.gpu-core~]—«
+               ¬· »—[~run intelarc.gpu-lcore~]—«
+               ¬· »—[~run intelarc.gpu-vcore~]—«
+               ¬· »—[~run intelarc.gpu-mcore~]—«
+               ¬· »—[~run intelarc.gpu-fcore~]—«
+  
+               ¶¶ ¬· »—[~: START-ANALYSE DATENKANALE:~]—«
+                ¬·¤ —[": <KANAL-NR> :"]—
+                    ¬· »—[~debugging log to /Pylovara/~]«    
+
+         ¶¶ ¬· »—[~: START-ANALYSE DATENKANALE:~]—«
+                ¬·¤ —[": <KANAL-NR> :"]—
+                    ¬· »—[~debugging log to /Pylovara/~]«
+ !¢
+
+###================================ENDPUNKT=================================###

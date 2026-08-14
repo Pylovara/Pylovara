@@ -50,22 +50,48 @@
  ¢!
 # Beispiel Schaltung | MÖGLICHKEIT
 
-»—['exec <SPIEL>']—«
- ¬· »—[~run intelarc~]—«
-     ¬· »—[~prozess gpu-core~]—«
+»—[': exec <SPIEL> :']—«
+ ¬· »—[~: run intelarc :~]—«
+     ¬· »—[~: prozess gpu-core :~]—«
 
-         ¶ ¬· »—[~run ast intelarc.gpu-core~]—«
-               ¬· »—[~run intelarc.gpu-lcore~]—«
-               ¬· »—[~run intelarc.gpu-vcore~]—«
-               ¬· »—[~run intelarc.gpu-mcore~]—«
-               ¬· »—[~run intelarc.gpu-fcore~]—«
+         ¶ ¬· »—[~: run ast intelarc.gpu-core :~]—«
+               ¬· »—[~: run intelarc.gpu-lcore :~]—«
+               ¬· »—[~: run intelarc.gpu-vcore :~]—«
+               ¬· »—[~: run intelarc.gpu-mcore :~]—«
+               ¬· »—[~: run intelarc.gpu-fcore :~]—«
   
                ¶¶ ¬· »—[~: START-ANALYSE DATENKANALE PIC :~]—«
                       ¬·¤ —[": <KANAL-NR> :"]—
-                          ¬· »—[~debugging log to /Pylovara/~]«    
+                          ¬· »—[~: debugging log to /Pylovara/ :~]«  
+                          #  ODER WEITERE FEHLERBEHANDLUNG NATIV  
 
          ¶¶ ¬· »—[~: START-ANALYSE DATENKANALE 1 :~]—«
-                ¬· »—[~debugging log to /Pylovara/~]«
- !¢
+                ¬· »—[~: debugging log to /Pylovara/ :~]«
+                #  ODER WEITERE FEHLERBEHANDLUNG NATIV
+ !¢ 
+
+ ### WAS ES BEDEUTET ( GELISTET ) :
+
+# 1. SPIEL STARTEN
+»—[': exec <SPIEL> :']—«  → FÜHRT DAS SPIEL AUS (SHELL)
+
+# 2. INTEL ARC GPU ANSTEUERN
+»—[~: run intelarc :~]—«  → STARTET DIE INTEL ARC GPU
+    »—[~: prozess gpu-core :~]—«  → STARTET DEN GPU-KERN
+
+# 3. SENTIATOR (WENN-KANN)
+¶ ¬· »—[~: run ast intelarc.gpu-core :~]—«
+    → WENN GPU-KERN LÄUFT, STARTET AST (ASYNC SHADER TRANSLATOR)
+    → DANN STARTEN ALLE GPU-KERNE (LCORE, VCORE, MCORE, FCORE)
+
+# 4. SENTIATOR (WENN-NICHT) - FEHLERBEHANDLUNG
+¶¶ ¬· »—[~: START-ANALYSE DATENKANALE PIC :~]—«
+    → WENN GPU-KERN NICHT LÄUFT, ANAÖLYSIERE PIC („ Programmable Interrupt Controller ")
+    → LOGGE NACH /Pylovara/
+
+# 5. SENTIATOR (WENN-NICHT) - ALTERNATIVE FEHLERBEHANDLUNG
+¶¶ ¬· »—[~: START-ANALYSE DATENKANALE 1 :~]—«
+    → ALTERNATIVE FEHLERBEHANDLUNG
+    → LOGGE NACH /Pylovara/
 
 ###================================ENDPUNKT=================================###

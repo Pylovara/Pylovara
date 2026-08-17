@@ -109,9 +109,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠡⡈ STARTWABE
  AXIOM ¡ ⠆⢄⠘⢠ ⥓ ⠆⢄⠘⢈
 
  # RAM AXIOM 
- AXIOM ¡ ⠆⢄⠘⢐ ⥗ ⠆⢄⠘⢂ ⍠ ⠆⢄⠡⠑
+ AXIOM ¡ ⠆⢄⠘⢐ ⥗ ⠆⢄⠘⢂ ⍞ ⠆⢄⠡⠑
  # RAM AXIOM 
- AXIOM ¡ ⠆⢄⠘⢠ ⥗ ⠆⢄⠘⢈ ⍠ ⠆⢄⠘⠒
+ AXIOM ¡ ⠆⢄⠘⢠ ⥗ ⠆⢄⠘⢈ ⍞ ⠆⢄⠘⠒
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⠡⠑ { PO-START
@@ -142,8 +142,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠔⡐ BAUWABE
  AXIOM ¡ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⠡⠑ ⍠ ⠆⢄⠔⠅
- AXIOM ¡ ⠆⢄⠘⠒ ⍠ ⠆⢄⠔⠉
+ AXIOM ¡ ⠆⢄⠡⠑ ⍞ ⠆⢄⠔⠅
+ AXIOM ¡ ⠆⢄⠘⠒ ⍞ ⠆⢄⠔⠉
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⠔⠅ { PO-START
@@ -159,7 +159,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⠔⠡ EINGABEWABE
  PRODUKT ⠆⢄⠒⠤ {<NAME>
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⠒⠤ ⍠ ⠆⢄⠒⠨
+ AXIOM ¡ ⠆⢄⠒⠤ ⍞ ⠆⢄⠒⠨
 
  EINHEIT ⠆⢄⠒⠨ {<NAME>
 
@@ -184,7 +184,7 @@ KINDERWABEN-KATEGORIE ⠆⢄⠔⡠ HARDWAREWABE
  AXIOM ¡ ⠆⢄⠔⠌ ⎚
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⠒⠨ ⍠ ⠆⢄⠔⠘
+ AXIOM ¡ ⠆⢄⠒⠨ ⍞ ⠆⢄⠔⠘
 
  # RAM GEBAUTE EINHEIT
  EINHEIT ⠆⢄⠔⠘ {<NAME>
@@ -211,13 +211,15 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠒⡁ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠒⡄ ⧓ ⠆⢄⠒⡈ Ξ ⠆⢄⠒⡐
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠒⡐ ⧑ 
+ AXIOM ¡ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⠔⠘ ⍠ ⠆⢄⠒⢂
+ AXIOM ¡ ⠆⢄⠔⠘ ⍞ ⠆⢄⠒⢂
+ AXIOM ¡ ⠆⢄⠔⠉ ⍞ ⠆⢄⠑⠢
 
  # EINHEIT | RAM
  EINHEIT ⠆⢄⠒⢂ {<NAME>  
+ EINHEIT ⠆⢄⠑⠢ } PO-ENDE
 
 TOCHTERWABEN-KATEGORIE ⠆⢄⠒⢈ COMBOLINKWABE
 
@@ -239,13 +241,13 @@ TOCHTERWABEN-KATEGORIE ⠆⢄⠒⢈ COMBOLINKWABE
  AXIOM ¡ ⠆⢄⠒⢂ ⧓ ⠆⢄⠑⡈ Ξ ⠆⢄⠑⡠
 
  # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⠑⡠ ⥓ ⠆⢄⠒⠊ ⍠ ⠆⢄⠒⠉
+ AXIOM ¡ ⠆⢄⠑⡠ ⥓ ⠆⢄⠒⠊ ⍞ ⠆⢄⠒⠉
 
  # EINHEIT | RAM | VERLINKT FERTIG
  EINHEIT ⠆⢄⠒⠉ {<NAME}; PO-NAME-BIND
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⠒⡐ ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢄⠒⡐ ⦳ ⠆⢄⠌⣀
 
 ###====================================|====================================###
 
@@ -261,46 +263,110 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠑⢁ BAUWABE
 
  BSK ⠆⢄⠑⠃ POMKHTSTBABABA-EINGABE2
 
- BION ⠆⢄⠑⠅ 
+ BION ⠆⢄⠑⠅ PO03MK03HT004ST004BA004BA005BA006
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⢄⠑⢈ ⧓ ⠆⢄⠑⢐ Ξ ⠆⢄⠌⣀
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⢄⠌⣀ ⧑ #
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⢄⠒⠉ ⍞ ⠆⢄⠑⠉
+ AXIOM ¡ ⠆⢄⠑⠢ ⍞ ⠆⢄⠑⠊
 
  # EINHEIT | RAM
- EINHEIT ⠆⢄⠑⠉ 
- EINHEIT ⠆⢄⠑⠊ 
+ EINHEIT ⠆⢄⠑⠉ {<NAME}; PO-NAME-BIND
+ EINHEIT ⠆⢄⠑⠊ } PO-ENDE
 
-TOCHTERWABEN-KATEGORIE # EINGABEWABE
+TOCHTERWABEN-KATEGORIE ⠆⢄⠌⠉ EINGABEWABE
 
  EINGABE ⠆⢄⠑⠌ <WERT>
 
  # AXIOM | VORBAU 
- AXIOM ¡ # ⧖⧖ ⧓ # Ξ #
+ AXIOM ¡ ⠆⢄⠑⠉ ⧖⧖ ⧓ ⠆⢄⠑⠌ Ξ ⠆⢄⠑⠒
 
- PRODUKT ⠆⢄⠑⠒ 
+ PRODUKT ⠆⢄⠑⠒ {<NAME;
 
  # AXIOM | RAM 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⢄⠑⠒ ⍞ ⠆⢄⠑⠔
 
  EINHEIT ⠆⢄⠑⠔ 
 
  # AXIOM | (EINGABE COPIE)
- AXIOM ¡ # Ξ #
+ AXIOM ¡ ⠆⢄⠑⠔ Ξ ⠆⢄⠑⠘
  
- EINGABEHALTEN ⠆⢄⠑⠘ 
+ EINGABEHALTEN ⠆⢄⠑⠘ {<NAME;<WERT>
 
 KINDERWABEN-KATEGORIE ⠆⢄⠑⠡ STROMWABE
 
-!! -- HIER NACH DEN HITZE TAGEN DIE ZWEITE EINGABE WABE FERTIG BAUEN ... 
-      DIE HONIGTROPFEN SELBST BLEIBEN NUR VORGEMERKT , DA MUSS ICH 
-      DUZENDE UND ABER DUZENDE HARDWARE IMEI NR DURCHGEHEN ..
-      DAHER DRINNE ABER SPÄTER IM SUPERREGISTER IM MASTER IN DER NUTZUNG AUS 
+ HONIGTROPFE ⠆⢄⠌⠰ <STROM-ART>
+
+ # AXIOM | (EINGABE ABGLEICHEN)
+ AXIOM ¡ ⠆⢄⠑⠘ ⟗ ⧖⧖ ⠆⢄⠌⠰ Ξ ⠆⢄⠑⠘
+
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡ ⠆⢄⠑⠘ ⧑ ⠆⢄⠌⡁
+
+ AUSGABE ⠆⢄⠌⡁ {<NAME;<WERT>
+
+ # AXIOM | EINGABEBEHALTEN LÖSCHEN
+ AXIOM ¡ ⠆⢄⠑⠘ ⎚
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢄⠑⠘ ⍞ ⠆⢄⠌⡂
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⢄⠌⡂ {<NAME;<WERT>
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠌⠅ ENDWABE 
+
+ PROGRAMM ⠆⢄⠌⡄ ENDE
+
+ WABEN-ID ⠆⢄⠌⡈ ED
+
+ BION-NR ⠆⢄⠌⡐ 004
+
+ BION-ID ⠆⢄⠌⡠ ED004
+
+ BSK ⠆⢄⠌⢁ PMKHTSTBABABAED-HARDWARE-ENDE
+
+ BION ⠆⢄⠌⢂ PO03MK03HT004ST004BA004BA005BA006ED004
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠌⡈ ⧓ ⠆⢄⠌⡐ Ξ ⠆⢄⠌⡠
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢄⠌⡠ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢄⠌⡂ ⍞ ⠆⢄⠌⢈
+ AXIOM ¡ ⠆⢄⠘⠒ ⍞ ⠆⢄⠌⠊
+
+ EINHEIT ⠆⢄⠌⢈ {<NAME;<WERT>
+ EINHEIT ⠆⢄⠌⠊ } PO-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢄⠌⢐ COMBOWABE
+# BAUSTELLE 
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ 
+ AXIOM ¡
+ AXIOM ¡
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX 
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍞ #
+
+ # EINHEIT | RAM
+ EINHEIT 
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡   ⦳ #NEXT BION
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###

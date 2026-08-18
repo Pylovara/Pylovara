@@ -57,7 +57,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⢈
  # EINGABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠑
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
+ # MCD 
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠨
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑
@@ -201,6 +202,29 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⣀ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⠅ ⧓ ⠆⢄⠅⠌ Ξ ⠆⢄⠅⠑
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⠅⠑ ⧑ 
+
+###====================================|====================================###
+###=================================MCD-BOXIS===============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠅⠘ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠅⠡ MCD
+
+ WABEN-ID ⠆⢄⠅⠢ HT
+
+ BION-NR ⠆⢄⠅⠤ 013
+
+ BION-ID ⠆⢄⠅⠨ HT013
+
+ BSK ⠆⢄⠅⠰ BXMKHT-MCD
+
+ BION ⠆⢄⠅⡁ BX009MK009HT013
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠅⠢ ⧓ ⠆⢄⠅⠤ Ξ ⠆⢄⠅⠨
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠅⠨ ⧑ 
 
 ###====================================|====================================###
 

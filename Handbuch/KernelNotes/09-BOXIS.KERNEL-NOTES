@@ -55,8 +55,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠰
  # SHELL 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⢈
- # 
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
+ # EINGABE
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠑
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
@@ -180,6 +180,30 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡐ HAUPTWABE
  AXIOM ¡ ⠆⢄⠅⢈ ⧑ 
 
 ###====================================|====================================###
+###===============================EINGABE-BOXIS===============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠅⣀ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠉⠃ EINGABE
+
+ WABEN-ID ⠆⢄⠉⠅ HT
+
+ BION-NR ⠆⢄⠅⠌ 012
+
+ BION-ID ⠆⢄⠅⠑ HT012
+
+ BSK ⠆⢄⠅⠒ BXMKHT-EINGABE
+
+ BION ⠆⢄⠅⠔ BX009MK009HT012
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠉⠅ ⧓ ⠆⢄⠅⠌ Ξ ⠆⢄⠅⠑
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠅⠑ ⧑ 
+
+###====================================|====================================###
+
 
 
 

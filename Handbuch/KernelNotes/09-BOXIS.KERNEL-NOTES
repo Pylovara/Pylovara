@@ -53,8 +53,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠔
  # ABI 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠰
+ # SHELL 
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⢈
  # 
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
@@ -136,7 +137,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE
 ###=================================ABI-BOXIS===============================###
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢄⠅⡈ HAUPTWABE 
 
  PROGRAMM ⠆⢄⠉⠢ ABI
 
@@ -156,9 +157,29 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⠰ ⧑ 
 
 ###====================================|====================================###
+###===============================SHELL-BOXIS===============================###
+###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠅⡐ HAUPTWABE 
 
+ PROGRAMM ⠆⢄⠅⡠ SHELL
 
+ WABEN-ID ⠆⢄⠅⢁ HT
+
+ BION-NR ⠆⢄⠅⢂ 011
+
+ BION-ID ⠆⢄⠅⢈ HT011
+
+ BSK ⠆⢄⠅⢐ BXMKHT-SHELL
+
+ BION ⠆⢄⠅⢠ BX009MK009HT011
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠅⢁ ⧓ ⠆⢄⠅⢂ Ξ ⠆⢄⠅⢈
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠅⢈ ⧑ 
+
+###====================================|====================================###
 
 
 

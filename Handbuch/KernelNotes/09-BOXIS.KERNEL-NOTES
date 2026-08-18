@@ -49,8 +49,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⡈
  # ALU
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⢠
- #
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
+ # SYSCALL
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠔
+ # 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
@@ -106,6 +107,29 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⢁ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⢈ ⧓ ⠆⢄⠉⢐ Ξ ⠆⢄⠉⢠
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⠉⢠ ⧑ 
+
+###====================================|====================================###
+###===============================SYSCALL-BOXIS=============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠉⠌ SYSCALL
+
+ WABEN-ID ⠆⢄⠉⠑ HT
+
+ BION-NR ⠆⢄⠉⠒ 009
+
+ BION-ID ⠆⢄⠉⠔ HT009
+
+ BSK ⠆⢄⠉⠘ BXMKHT-SYSCALL
+
+ BION ⠆⢄⠉⠡ BX009MK009HT009
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠉⠑ ⧓ ⠆⢄⠉⠒ Ξ ⠆⢄⠉⠔ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠉⠔ ⧑ 
 
 ###====================================|====================================###
 

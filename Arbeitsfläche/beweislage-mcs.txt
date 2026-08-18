@@ -260,10 +260,11 @@ notierung :
  ich arbeite den tws 0.3 sobald die sommertage weg sind richtig aus 
  damit ich extrem genau über den assembly die funktionen verbessert 
  bestimmen kann , den c ist zu fehleranfällig ... kann auch keine 
- on-pipe wie offpipe proteine unterscheiden geschweigeden die datenpipline. 
+ on-pipe wie offpipe proteine unterscheiden geschweigeden die datenpipeline. 
 
  ich muss also den tws 0.3 fertig machen , nebenbei das mcs lexikon sauber 
- runter schreiben in der ersten version überhaupt (mal von vorversionen abgesehen)
+ runter schreiben in der ersten version überhaupt (mal von vorversionen 
+ abgesehen)
 
  und dann die brücke von c code zu mcs code schreiben ... 
 
@@ -272,8 +273,8 @@ notierung :
  aber das was es kann , direkt von c in assembly umschreiben lassen 
  und die fehlende bindeglieder über den tws 0.3 in assembly ummünzen 
 
- damit wäre ich dann bei einer prototyp version ohne tokeniniserungs scheißdreck 
- und vollständig nutzbar .
+ damit wäre ich dann bei einer prototyp version ohne tokeniniserungs 
+ scheißdreck und vollständig nutzbar .
 
  ich kann die vergleich zu dsl ziehen , mcs lässt es zu ... ohne problem .. 
  ich kann es zu html vergleichen ... ohne wenn und ohne aber .. 
@@ -284,11 +285,11 @@ notierung :
  nicht weil ich es nicht geschissen bekomme , sondern weil der aspekt 
  der dfatencalls mir nicht geläufig sind ... 
 
- aber ich muss kein protion am anfang dabei haben .. das wäre dann optional für später 
- die logische wahl für treiber dateien .. 
+ aber ich muss kein protion am anfang dabei haben .. das wäre dann optional 
+ für später die logische wahl für treiber dateien .. 
 
- ich denke ich bau die hallofshame etwas aus ... ziehe alle sprachen im vergleich zu 
- mcs in deren hoheits gebieten blank ... 
+ ich denke ich bau die hallofshame etwas aus ... ziehe alle sprachen 
+ im vergleich zu mcs in deren hoheits gebieten blank ... 
 
  sammel damit kostbare daten ... 
 
@@ -296,7 +297,6 @@ notierung :
 
  und dann wollen wuir mal schauen welche drecks sprache überhaupt 
  noch ansatzweise ein gegner wäre .... ich denke - keine 
-
 
  bei der hall of shame gehts nicht darum was in den unauführbaren on und 
  off pipe proteinen steht, sondern um den schaltplan selbst .
@@ -398,8 +398,9 @@ print("Hallo Welt")
 # SQL:
 SELECT 'Hallo Welt';
 
-# MCS 7.5:
-¢! »—[": Hallo Welt :"]« !¢
+# MCS 7.5 proton mit und ohne pipe-line :
+¢! »—[": Hallo Welt :"]—« !¢
+¢! »[": Hallo Welt :"]« !¢
 
 ###----------------------------------------------------
 

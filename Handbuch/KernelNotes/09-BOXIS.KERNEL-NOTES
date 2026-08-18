@@ -59,8 +59,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠑
  # MCD 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠨
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
+ # PFAD
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⢁ 
+ # NET 
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠃
+ # 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑
  AXIOM ¡ ⠆⢄⠊⠘ ⧑
  AXIOM ¡ ⠆⢄⠊⠘ ⧑
@@ -225,6 +228,52 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⠘ HAUPTWABE
  AXIOM ¡ ⠆⢄⠅⠢ ⧓ ⠆⢄⠅⠤ Ξ ⠆⢄⠅⠨
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⢄⠅⠨ ⧑ 
+
+###====================================|====================================###
+###=================================PFAD-BOXIS===============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠅⡂ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠃⡈ PFAD
+
+ WABEN-ID ⠆⢄⠃⡐ HT
+
+ BION-NR ⠆⢄⠃⡠ 014
+
+ BION-ID ⠆⢄⠃⢁ HT014
+
+ BSK ⠆⢄⠃⢂ BXMKHT-PFAD
+
+ BION ⠆⢄⠃⢈ BX009MK009HT014
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠃⡐ ⧓ ⠆⢄⠃⡠ Ξ ⠆⢄⠃⢁
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠃⢁ ⧑ 
+
+###====================================|====================================###
+###=================================NET-BOXIS===============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠃⢠ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠃⢐ NET
+
+ WABEN-ID ⠆⢄⠃⠑ HT
+
+ BION-NR ⠆⢄⠃⣀ 015
+
+ BION-ID ⠆⢄⠅⠃ HT015
+
+ BSK ⠆⢄⠅⠉ BXMKHT-NET
+
+ BION ⠆⢄⠅⠊ BX009MK009HT015
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠃⠑ ⧓ ⠆⢄⠃⣀ Ξ ⠆⢄⠅⠃
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠅⠃ ⧑ 
 
 ###====================================|====================================###
 

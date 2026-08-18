@@ -319,7 +319,55 @@ KINDERWABEN-KATEGORIE ⠆⢄⠑⠡ STROMWABE
  EINHEIT ⠆⢄⠌⡂ {<NAME;<WERT>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⠌⣀ ⦳ ⠆⢄⠌⡠
+ AXIOM ¡ ⠆⢄⠌⣀ ⦳ ⠆⢄⠊⡄
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠌⠘ BAUWABE 
+
+ PROGRAMM ⠆⢄⠌⠨ HARDWARE-SCHLIEẞEN
+
+ WABEN-ID ⠆⢄⠌⠤ BA
+
+ BION-NR ⠆⢄⠊⡂ 007
+
+ BION-ID ⠆⢄⠊⡄ BA007
+
+ BSK ⠆⢄⠊⡈ PMKHTSTBABABABA-HARDWARE-ENDE
+
+ BION ⠆⢄⠊⡐ PO03MK03HT004ST004BA004BA005BA006BA007
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠌⠤ ⧓ ⠆⢄⠊⡂ Ξ ⠆⢄⠊⡄
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠊⡄ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢄⠌⡂ ⍞ ⠆⢄⠊⡠
+ AXIOM ¡ ⠆⢄⠑⠢ ⍞ ⠆⢄⠊⢁
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠊⡠ {<NAME;<WERT>  
+ EINHEIT ⠆⢄⠊⢁ } PO-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢄⢂⠌ COMBOWABE
+
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢄⠊⡠ ⧓ ⠆⢄⠊⢁ Ξ ⠆⢄⠌⠢
+ AXIOM ¡
+ AXIOM ¡
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢄⠌⠡ PO-NAME-BIND-WERT-ENDE
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢄⠌⠢ ⥓ ⠆⢄⠌⠡ ⍞ ⠆⢄⠌⠢
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢄⠌⠢ {<NAME;<WERT>} PO-NAME-BIND-WERT-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢄⠊⡄ ⦳ #NEXT BION
 
 ###====================================|====================================###
 
@@ -333,7 +381,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠌⠅ ENDWABE
 
  BION-ID ⠆⢄⠌⡠ ED004
 
- BSK ⠆⢄⠌⢁ PMKHTSTBABABAED-HARDWARE-ENDE
+ BSK ⠆⢄⠌⢁ PMKHTSTBABABABAED-HARDWARE-ENDE
 
  BION ⠆⢄⠌⢂ PO03MK03HT004ST004BA004BA005BA006ED004
 
@@ -343,28 +391,21 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠌⠅ ENDWABE
  AXIOM ¡ ⠆⢄⠌⡠ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⢄⠌⡂ ⍠ ⠆⢄⠌⢈
- AXIOM ¡ ⠆⢄⠘⠒ ⍠ ⠆⢄⠌⠊
+ AXIOM ¡ ⠆⢄⠌⠢ ⍠ ⠆⢄⠌⢈
 
- EINHEIT ⠆⢄⠌⢈ {<NAME;<WERT>
- EINHEIT ⠆⢄⠌⠊ } PO-ENDE
+ EINHEIT ⠆⢄⠌⢈ {<NAME;<WERT>} PO-NAME-BIND-WERT-ENDE
 
-TOCHTERWABEN-KATEGORIE ⠆⢄⠌⢐ COMBOWABE
+TOCHTERWABEN-KATEGORIE ⠆⢄⠌⢐ 
 
- # AXIOM | KOMPONENTE BAUEN  
- AXIOM ¡ ⠆⢄⠌⢈ ⧓ ⠆⢄⠌⠊ Ξ ⠆⢄⠌⠔
 
- # AXIOM | NAME SETZEN  
- PRÄFIX ⠆⢄⠊⡁ PO-NAME-WERT-ENDE
 
- # AXIOM | RAM 
- AXIOM ¡ ⠆⢄⠌⠔ ⥓ ⠆⢄⠊⡁ ⍠ ⠆⢄⠌⠑
 
- # EINHEIT | RAM
- EINHEIT ⠆⢄⠌⠑ {<NAME;<WERT>} PO-NAME-WERT-ENDE
 
- # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⠌⡠ 
+
+
+
+
+
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###

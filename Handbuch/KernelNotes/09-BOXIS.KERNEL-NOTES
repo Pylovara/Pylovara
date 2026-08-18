@@ -47,8 +47,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  # BION-ID FOLGEVERBINDUNG
  # PRINT 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⡈
- # 
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
+ # ALU
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⢠
+ #
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
@@ -61,25 +62,52 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑
 
 ###====================================|====================================###
+###===============================PRINT-BOXIS===============================###
+###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE 
 
- PROGRAMM ⠆⢄⠊⠨  
+ PROGRAMM ⠆⢄⠊⠨ PRINT 
 
  WABEN-ID ⠆⢄⠉⡂ HT
 
- BION-NR ⠆⢄⠉⡄ 
+ BION-NR ⠆⢄⠉⡄ 007
 
- BION-ID ⠆⢄⠉⡈ 
+ BION-ID ⠆⢄⠉⡈ HT007
 
- BSK ⠆⢄⠉⡐ 
+ BSK ⠆⢄⠉⡐ BXMKHT-PRINT
 
- BION ⠆⢄⠉⡠ 
+ BION ⠆⢄⠉⡠ BX009MK009HT007
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢄⠉⡂ ⧓ ⠆⢄⠉⡄ Ξ ⠆⢄⠉⡈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢄⠉⡈ ⧑ 
+
+###====================================|====================================###
+###=================================ALU-BOXIS===============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢄⠉⢁ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠉⢂ ALU 
+
+ WABEN-ID ⠆⢄⠉⢈ HT
+
+ BION-NR ⠆⢄⠉⢐ 008
+
+ BION-ID ⠆⢄⠉⢠ HT008
+
+ BSK ⠆⢄⠉⣀ BXMKHT-ALU
+
+ BION ⠆⢄⠊⠃ BX009MK009HT008
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠉⢈ ⧓ ⠆⢄⠉⢐ Ξ ⠆⢄⠉⢠
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠉⢠ ⧑ 
+
+###====================================|====================================###
 
 
 
@@ -93,10 +121,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE
 
 
 
-
-
-
-
+!!!!↓↓↓ ALTER BEREICH ↓↓↓!!!!!
 
 WABEN-KATEGORIE Ð KOPFWABE
 

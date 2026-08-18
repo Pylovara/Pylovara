@@ -52,7 +52,8 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  # SYSCALL
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠔
  # ABI 
- AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠰
+ # 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ 
@@ -132,7 +133,29 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⠔ ⧑ 
 
 ###====================================|====================================###
+###=================================ABI-BOXIS===============================###
+###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE 
+
+ PROGRAMM ⠆⢄⠉⠢ ABI
+
+ WABEN-ID ⠆⢄⠉⠤ HT
+
+ BION-NR ⠆⢄⠉⠨ 010
+
+ BION-ID ⠆⢄⠉⠰ HT010
+
+ BSK ⠆⢄⠉⡁ BXMKHT-ABI
+
+ BION ⠆⢄⠅⡄ BX009MK009HT010
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠉⠤ ⧓ ⠆⢄⠉⠨ Ξ ⠆⢄⠉⠰
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠉⠰ ⧑ 
+
+###====================================|====================================###
 
 
 

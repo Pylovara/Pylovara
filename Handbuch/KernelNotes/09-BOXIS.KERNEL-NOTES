@@ -95,22 +95,22 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE
 
  MUTTERWABEN-KATEGORIE ⠆⢂⣀⢁ STARTWABE 
 
- PROGRAMM ⠆⢂⣀⢄ 
+ PROGRAMM ⠆⢂⣀⢄ PRINT
 
  WABEN-ID ⠆⢂⣀⢈ ST
 
- BION-NR ⠆⢂⣀⢐ 
+ BION-NR ⠆⢂⣀⢐ 007
 
- BION-ID ⠆⢂⣀⢠ 
+ BION-ID ⠆⢂⣀⢠ ST007
 
- BSK ⠆⢄⠃⠅
+ BSK ⠆⢄⠃⠅ BXMKHTST-PRINT
 
- BION ⠆⢄⠃⠉ 
+ BION ⠆⢄⠃⠉ BX009MK009HT007ST007
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⣀⢈ ⧓ ⠆⢂⣀⢐ Ξ ⠆⢂⣀⢠
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⣀⢠ ⧑ 
+ AXIOM ¡ ⠆⢂⣀⢠ ⧑ #
 
  TASTENCODE ⠆⢄⠃⠊ SHIFT
  TASTENCODE ⠆⢄⠃⠌ 2
@@ -141,11 +141,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE
  AXIOM ¡ ⠆⢂⣀⡄ ⥗ ⠆⢂⣀⠨ ⍠ ⠆⢂⢠⢄
 
  # EINHEIT | RAM
- EINHEIT ⠆⢂⢠⢁
- EINHEIT ⠆⢂⢠⢄
+ EINHEIT ⠆⢂⢠⢁ ": BX-PRINT-START
+ EINHEIT ⠆⢂⢠⢄ :" BX-PRINT-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡   ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢂⣀⢠ ⦳ #
 
 ###====================================|====================================###
 

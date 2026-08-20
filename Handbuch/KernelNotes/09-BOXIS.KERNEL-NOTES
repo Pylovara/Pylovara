@@ -170,13 +170,66 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⢁ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠉⢈ ⧓ ⠆⢄⠉⢐ Ξ ⠆⢄⠉⢠
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠉⢠ ⧑ 
+ AXIOM ¡ ⠆⢄⠉⢠ ⧑ ⠆⢂⣀⠅
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ×: = BX-ALU-START
- GEBAUTE-EINHEIT ¡ :× = BX-ALU-ENDE
+ MUTTERWABEN-KATEGORIE ⠆⢂⣀⢁ STARTWABE 
+
+ PROGRAMM ⠆⢂⢠⢐ ALU
+
+ WABEN-ID ⠆⢂⢠⣀ ST
+
+ BION-NR ⠆⢂⣀⠃ 008
+
+ BION-ID ⠆⢂⣀⠅ ST008
+
+ BSK ⠆⢂⣀⠉ BXMKHTST-ALU
+
+ BION ⠆⢂⣀⠊ BX009MK009HT008ST008
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⢠⣀ ⧓ ⠆⢂⣀⠃ Ξ ⠆⢂⣀⠅
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⣀⠅ ⧑ #
+
+ TASTENCODE ⠆⢂⣀⠌ SHIFT
+ TASTENCODE ⠆⢂⢠⠒ ALTGR
+ TASTENCODE ⠆⢂⢠⠔ ,
+ TASTENCODE ⠆⢂⢠⠘ .
+
+ SYMBOLE ⠆⢂⢠⠡ ×
+ SYMBOLE ⠆⢂⢠⠢ :
+
+ PRÄFIX ⠆⢂⢠⠤ BX-ALU-START
+ PRÄFIX ⠆⢂⢠⠨ BX-ALU-EDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢂⣀⠌ ⦻ ⠆⢂⢠⠒ ⦻ ⠆⢂⢠⠔ Ξ ⠆⢂⢠⠡
+ AXIOM ¡ ⠆⢂⣀⠌ ⦻ ⠆⢂⢠⠘ Ξ ⠆⢂⢠⠢
+ AXIOM ¡ ⠆⢂⢠⠡ ⧓ ⠆⢂⢠⠢ Ξ ⠆⢂⢠⠰
+ AXIOM ¡ ⠆⢂⢠⠢ ⧓ ⠆⢂⢠⠡ Ξ ⠆⢂⢠⡁
+
+ PRODUKT ⠆⢂⢠⠰ ×:
+ PRODUKT ⠆⢂⢠⡁ :×
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⢠⠰ ⥓ ⠆⢂⢠⠤
+ AXIOM ¡ ⠆⢂⢠⡁ ⥓ ⠆⢂⢠⠨
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢠⠰ ⥗ ⠆⢂⢠⠤ ⍠ ⠆⢂⢠⡂
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢠⡁ ⥗ ⠆⢂⢠⠨ ⍠ ⠆⢂⢠⡄
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⢠⡂ ×: BX-ALU-START
+ EINHEIT ⠆⢂⢠⡄ :× BX-ALU-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⣀⠅ ⦳ #
+
+###====================================|====================================###
 
 ###===============================SYSCALL-BOXIS=============================###
 ###====================================|====================================###

@@ -63,10 +63,10 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠑ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⢁ 
  # NET 
  AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠃
- # 
- AXIOM ¡ ⠆⢄⠊⠘ ⧑
- AXIOM ¡ ⠆⢄⠊⠘ ⧑
- AXIOM ¡ ⠆⢄⠊⠘ ⧑
+ # OPCODE
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢂⣀⡈
+ # MASCHINENCODE
+ AXIOM ¡ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⠢
 
 ###====================================|====================================###
 ###===============================PRINT-BOXIS===============================###
@@ -92,6 +92,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⡈ ⧑ 
 
 ###====================================|====================================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ": = BX-PRINT-START
+ GEBAUTE-EINHEIT ¡ :" = BX-PRINT-ENDE 
+
 ###=================================ALU-BOXIS===============================###
 ###====================================|====================================###
 
@@ -115,6 +120,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⢁ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⢠ ⧑ 
 
 ###====================================|====================================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ×: = BX-ALU-START
+ GEBAUTE-EINHEIT ¡ :× = BX-ALU-ENDE
+
 ###===============================SYSCALL-BOXIS=============================###
 ###====================================|====================================###
 
@@ -138,6 +148,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⠔ ⧑ 
 
 ###====================================|====================================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ,: = BX-SYSCALL-START
+ GEBAUTE-EINHEIT ¡ :, = BX-SYSCALL-ENDE 
+
 ###=================================ABI-BOXIS===============================###
 ###====================================|====================================###
 
@@ -161,6 +176,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡈ HAUPTWABE
  AXIOM ¡ ⠆⢄⠉⠰ ⧑ 
 
 ###====================================|====================================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ Ħ: = BX-ABI-START 
+ GEBAUTE-EINHEIT ¡ :Ħ = BX-ABI-ENDE
+
 ###===============================SHELL-BOXIS===============================###
 ###====================================|====================================###
 
@@ -184,6 +204,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡐ HAUPTWABE
  AXIOM ¡ ⠆⢄⠅⢈ ⧑ 
 
 ###====================================|====================================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ': = BX-SHELL-START
+ GEBAUTE-EINHEIT ¡ :' = BX-SHELL-ENDE
+
 ###===============================EINGABE-BOXIS===============================###
 ###====================================|====================================###
 
@@ -207,6 +232,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⣀ HAUPTWABE
  AXIOM ¡ ⠆⢄⠅⠑ ⧑ 
 
 ###====================================|====================================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ¥: = BX-EINGABE-START 
+ GEBAUTE-EINHEIT ¡ :¥ = BX-EINGABE-ENDE
+
 ###=================================MCD-BOXIS===============================###
 ###====================================|====================================###
 
@@ -230,7 +260,12 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⠘ HAUPTWABE
  AXIOM ¡ ⠆⢄⠅⠨ ⧑ 
 
 ###====================================|====================================###
-###=================================PFAD-BOXIS===============================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ ~: = BX-MCD-START
+ GEBAUTE-EINHEIT ¡ :~ = BX-MCD-ENDE
+
+###=================================PFAD-BOXIS==============================###
 ###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE ⠆⢄⠅⡂ HAUPTWABE 
@@ -253,6 +288,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡂ HAUPTWABE
  AXIOM ¡ ⠆⢄⠃⢁ ⧑ 
 
 ###====================================|====================================###
+
+ # LIEGT IM RAM
+ GEBAUTE-EINHEIT ¡ $: = BX-PFAD-START 
+ GEBAUTE-EINHEIT ¡ :$ = BX-PFAD-ENDE 
+
 ###=================================NET-BOXIS===============================###
 ###====================================|====================================###
 
@@ -277,1345 +317,69 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠃⢠ HAUPTWABE
 
 ###====================================|====================================###
 
-
-
-
-
-
-
-
-
-
-!!!!↓↓↓ ALTER BEREICH ↓↓↓!!!!!
-
-WABEN-KATEGORIE Ð KOPFWABE
-
- KOMPONENTE ¡ BOXIS
-
- KOMPONENTEN-ID ¡ BX
-
- BION-NR ¡ 09
-
- BION-ID ¡ BX09
-
- MASTER-ID ¡ MK46SU09
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð MASTERKERNWABE
-
- WABEN-ID ¡ MK
-
- BION-NR ¡ 09 
-
- BION-ID ¡ MK09
-
- BSK ¡ BXMK
-
- BION ¡ BX09MK09
-
-###====================================|====================================###
-# PRINT 1 
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ PRINT
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 10
-
- BION-ID ¡ HT10
-
- BSK ¡ BXMKHT-PRINT
-
- BION ¡ BX09MK09HT10
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ PRINT
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 10
-
- BION-ID ¡ ST10
-
- BSK ¡ BXMKHTST-PRINT
-
- BION ¡ BX09MK09HT10ST10
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = "
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ " + : ≠ ** ≠ ": = BX-PRINT-START
- AXIOM ¡ ^ : + " ≠ ** ≠ :" = BX-PRINT-ENDE
-
  # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ": = BX-PRINT-START
- GEBAUTE-EINHEIT ¡ :" = BX-PRINT-ENDE 
+ GEBAUTE-EINHEIT ¡ §: = BX-NET-START
+ GEBAUTE-EINHEIT ¡ :§ = BX-NET-ENDE
 
+###===============================OPCODE-BOXIS==============================###
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð SYSTEMWABE 
+MUTTERWABEN-KATEGORIE ⠆⢄⠃⠰ HAUPTWABE 
 
- PROGRAMM ¡ PRINT
+ PROGRAMM ⠆⢄⠃⡁ OPCODE
 
- WABEN-ID ¡ SS
+ WABEN-ID ⠆⢄⠃⡂ HT
 
- BION-NR ¡ 03
+ BION-NR ⠆⢄⠃⡄ 016
 
- BION-ID ¡ SS03
+ BION-ID ⠆⢂⣀⡈ HT016
 
- BSK ¡ BXMKHTSTSS-PRINT
+ BSK ⠆⢂⣀⡐ BXMKHT-OPCODE
 
- BION ¡ BX09MK09HT10ST10SS03
+ BION ⠆⢂⣀⡠ BX009MK009HT016
 
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ": = BX-PRINT-START
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-PRINT
-
- # AXIOM
- AXIOM ¡ BX-PRINT-START + <IO> ≠ * * ≠ ": <IO> = BX-PRINT-IO
- 
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # RAM GEBAUTE EINHEIT 
- EINHEIT ¡ ": <IO> = BX-PRINT-IO
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠃⡂ ⧓ ⠆⢄⠃⡄ Ξ ⠆⢂⣀⡈
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⣀⡈ ⧑ 
 
 ###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ PRINT
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 22
-
- BION-ID ¡ LD22
-
- BSK ¡ BXMKHTSTSSLD-PRINT
-
- BION ¡ BX09MK09HT10ST10SS03LD22
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ": <IO> = BX-PRINT-IO
- EINHEIT ¡ :" = BX-PRINT-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-PRINT
-
- # AXIOM
- AXIOM ¡ BX-PRINT-IO + BX-PRINT-ENDE ≠ * * ≠ ": <IO> :"
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# ALU 2 
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ ALU
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 11
-
- BION-ID ¡ HT11
-
- BSK ¡ BXMKHT-ALU
-
- BION ¡ BX09MK09HT11
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ ALU
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 11
-
- BION-ID ¡ ST11
-
- BSK ¡ BXMKHTST-ALU
-
- BION ¡ BX09MK09HT11ST11
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = × 
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ × + : ≠ ** ≠ ×: = BX-ALU-START
- AXIOM ¡ ^ : + × ≠ ** ≠ :× = BX-ALU-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ×: = BX-ALU-START
- GEBAUTE-EINHEIT ¡ :× = BX-ALU-ENDE
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ ALU
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 04
-
- BION-ID ¡ SS04
-
- BSK ¡ BXMKHTSTSS-ALU
-
- BION ¡ BX09MK09HT11ST11SS04
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ×: = BX-ALU-START
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-ALU
-
- # AXIOM
- AXIOM ¡ BX-ALU-START + <IO> ≠ * * ≠ ×: <IO> = BX-ALU-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # RAM GEBAUTE EINHEIT 
- EINHEIT ¡ ×: <IO> = BX-ALU-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ ALU
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 23
-
- BION-ID ¡ LD23
-
- BSK ¡ BXMKHTSTSSLD-ALU
-
- BION ¡ BX09MK09HT11ST11SS04LD23
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ×: <IO> = BX-ALU-IO
- EINHEIT ¡ :× = BX-ALU-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-ALU
-
- # AXIOM
- AXIOM ¡ BX-PRINT-IO + BX-PRINT-ENDE ≠ * * ≠ ×: <IO> :×
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# SYSCALL 3
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ SYSCALL
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 12
-
- BION-ID ¡ HT12
-
- BSK ¡ BXMKHT-SYSCALL
-
- BION ¡ BX09MK09HT12
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ SYSCALL
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 12
-
- BION-ID ¡ ST12
-
- BSK ¡ BXMKHTST-SYSCALL
-
- BION ¡ BX09MK09HT12ST12
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = , 
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ , + : ≠ ** ≠ ,: = BX-SYSCALL-START
- AXIOM ¡ ^ : + , ≠ ** ≠ :, = BX-SYSCALL-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ,: = BX-SYSCALL-START
- GEBAUTE-EINHEIT ¡ :, = BX-SYSCALL-ENDE 
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ SYSCALL
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 05
-
- BION-ID ¡ SS05
-
- BSK ¡ BXMKHTSTSS-SYSCALL
-
- BION ¡ BX09MK09HT12ST12SS05
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- GEBAUTE-EINHEIT ¡ ,: = BX-SYSCALL-START
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-SYSCALL
-
- # AXIOM
- AXIOM ¡ BX-SYSCALL-START + <IO> ≠ * * ≠ ,: <IO> = BX-SYSCALL-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT
- EINHEIT ¡ ,: <IO> = BX-SYSCALL-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ SYSCALL
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 24
-
- BION-ID ¡ LD24
-
- BSK ¡ BXMKHTSTSSLD-SYSCALL
-
- BION ¡ BX09MK09HT12ST12SS05LD24
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ,: <IO> = BX-SYSCALL-IO
- EINHEIT ¡ :, = BX-SYSCALL-ENDE 
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-SYSCALL
-
- # AXIOM
- AXIOM ¡ BX-SYSCALL-IO + BX-SYSCALL-ENDE ≠ * * ≠ ,: <IO> :,
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# ABI 4
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ ABI
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 13
-
- BION-ID ¡ HT13
-
- BSK ¡ BXMKHT-ABI
-
- BION ¡ BX09MK09HT13
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ ABI
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 13
-
- BION-ID ¡ ST13
-
- BSK ¡ BXMKHTST-ABI
-
- BION ¡ BX09MK09HT13ST13 
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = Ħ 
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ Ħ + : ≠ ** ≠ Ħ: = BX-ABI-START
- AXIOM ¡ ^ : + Ħ ≠ ** ≠ :Ħ = BX-ABI-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ Ħ: = BX-ABI-START 
- GEBAUTE-EINHEIT ¡ :Ħ = BX-ABI-ENDE
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ ABI
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 06
-
- BION-ID ¡ SS06
-
- BSK ¡ BXMKHTSTSS-ABI
-
- BION ¡ BX09MK09HT13ST13SS06
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ Ħ: = BX-ABI-START  
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-ABI
-
- # AXIOM
- AXIOM ¡ BX-ABI-START + <IO> ≠ * * ≠ Ħ: <IO> = BX-ABI-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ Ħ: <IO> = BX-ABI-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ ABI
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 25
-
- BION-ID ¡ LD25
-
- BSK ¡ BXMKHTSTSSLD-ABI
-
- BION ¡ BX09MK09HT13ST13SS06LD25
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ Ħ: <IO> = BX-ABI-IO
- EINHEIT ¡ :Ħ = BX-ABI-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-ABI
-
- # AXIOM
- AXIOM ¡ BX-ABI-IO + BX-ABI-ENDE ≠ * * ≠ Ħ: <IO> :Ħ
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# SHELL 5
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ SHELL
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 14
-
- BION-ID ¡ HT14
-
- BSK ¡ BXMKHT-SHELL
-
- BION ¡ BX09MK09HT14
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ SHELL
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 14
-
- BION-ID ¡ ST14
-
- BSK ¡ BXMKHTST-SHELL
-
- BION ¡ BX09MK09HT14ST14
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = '
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ ' + : ≠ ** ≠ ': = BX-SHELL-START
- AXIOM ¡ ^ : + ' ≠ ** ≠ :' = BX-SHELL-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ': = BX-SHELL-START
- GEBAUTE-EINHEIT ¡ :' = BX-SHELL-ENDE
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ SHELL
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 07
-
- BION-ID ¡ SS07
-
- BSK ¡ BXMKHTSTSS-SHELL
-
- BION ¡ BX09MK09HT14ST14SS07
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ': = BX-SHELL-START 
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-SHELL
-
- # AXIOM
- AXIOM ¡ BX-SHELL-START + <IO> ≠ * * ≠ ': <IO> = BX-SHELL-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ ': <IO> = BX-SHELL-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ SHELL
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 26
-
- BION-ID ¡ LD26
-
- BSK ¡ BXMKHTSTSSLD-SHELL
-
- BION ¡ BX09MK09HT14ST14SS07LD26
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ': <IO> = BX-SHELL-IO
- EINHEIT ¡ :' = BX-SHELL-ENDE 
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-SHELL
-
- # AXIOM
- AXIOM ¡ BX-SHELL-IO + BX-SHELL-ENDE ≠ * * ≠ ': <IO> :'
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# MCD 6
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ MCD
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 15
-
- BION-ID ¡ HT15
-
- BSK ¡ BXMKHT-MCD
-
- BION ¡ BX09MK09HT15
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ MCD
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 15
-
- BION-ID ¡ ST15
-
- BSK ¡ BXMKHTST-MCD
-
- BION ¡ BX09MK09HT15ST15
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = ~ 
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ ~ + : ≠ ** ≠ ~: = BX-MCD-START
- AXIOM ¡ ^ : + ~ ≠ ** ≠ :~ = BX-MCD-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ~: = BX-MCD-START
- GEBAUTE-EINHEIT ¡ :~ = BX-MCD-ENDE
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ MCD
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 08
-
- BION-ID ¡ SS08
-
- BSK ¡ BXMKHTSTSS-MCD
-
- BION ¡ BX09MK09HT15ST15SS08
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ~: = BX-MCD-START 
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-MCD
-
- # AXIOM
- AXIOM ¡ BX-MCD-START + <IO> ≠ * * ≠ ~: <IO> = BX-MCD-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ ~: <IO> = BX-MCD-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ MCD
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 27
-
- BION-ID ¡ LD27
-
- BSK ¡ BXMKHTSTSSLD-MCD 
-
- BION ¡ BX09MK09HT15ST15SS08LD27
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ~: <IO> = BX-MCD-IO
- EINHEIT ¡ :~ = BX-MCD-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-MCD
-
- # AXIOM
- AXIOM ¡ BX-MCD-IO + BX-MCD-ENDE ≠ * * ≠ ~: <IO> :~
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# OPCODE 7
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ OPCODE
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 16
-
- BION-ID ¡ HT16
-
- BSK ¡ BXMKHT-OPCODE
-
- BION ¡ BX09MK09HT16
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ OPCODE
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 16
-
- BION-ID ¡ ST16
-
- BSK ¡ BXMKHTST-OPCODE
-
- BION ¡ BX09MK09HT16ST16
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = ° 
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ ° + : ≠ ** ≠ °: = BX-OPCODE-START
- AXIOM ¡ ^ : + ° ≠ ** ≠ :° = BX-OPCODE-ENDE
 
  # LIEGT IM RAM
  GEBAUTE-EINHEIT ¡ °: = BX-OPCODE-START
  GEBAUTE-EINHEIT ¡ :° = BX-OPCODE-ENDE 
 
+###===========================MASCHINENCODE-BOXIS===========================###
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð SYSTEMWABE 
+MUTTERWABEN-KATEGORIE ⠆⢄⠃⠒ HAUPTWABE 
 
- PROGRAMM ¡ OPCODE
+ PROGRAMM ⠆⢄⠃⠔ MASCHINENCODE
 
- WABEN-ID ¡ SS
+ WABEN-ID ⠆⢄⠃⠘ HT
 
- BION-NR ¡ 09
+ BION-NR ⠆⢄⠃⠡ 017
 
- BION-ID ¡ SS09
+ BION-ID ⠆⢄⠃⠢ HT017
 
- BSK ¡ BXMKHTSTSS-OPCODE
+ BSK ⠆⢄⠃⠤ BXMKHT-MASCHINENCODE
 
- BION ¡ BX09MK09HT16ST16SS09
+ BION ⠆⢄⠃⠨ BX009MK009HT017
 
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ °: = BX-OPCODE-START 
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-OPCODE
-
- # AXIOM
- AXIOM ¡ BX-OPCODE-START + <IO> ≠ * * ≠ °: <IO> = BX-OPCODE-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ °: <IO> = BX-OPCODE-IO
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢄⠃⠘ ⧓ ⠆⢄⠃⠡ Ξ ⠆⢄⠃⠢
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢄⠃⠢ ⧑ 
 
 ###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ OPCODE
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 28
-
- BION-ID ¡ LD28
-
- BSK ¡ BXMKHTSTSSLD-OPCODE
-
- BION ¡ BX09MK09HT16ST16SS09LD28
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT
- EINHEIT ¡ °: <IO> = BX-OPCODE-IO
- EINHEIT ¡ :° = BX-OPCODE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-OPCODE
-
- # AXIOM
- AXIOM ¡ BX-OPCODE-IO + BX-OPCODE-ENDE ≠ * * ≠ °: <IO> :°
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# MASCHINENCODE 8
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ MASCHINENCODE
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 17
-
- BION-ID ¡ HT17
-
- BSK ¡ BXMKHT-MASCHINENCODE
-
- BION ¡ BX09MK09HT17
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ MASCHINENCODE
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 17
-
- BION-ID ¡ ST17
-
- BSK ¡ BXMKHTST-MASCHINENCODE
-
- BION ¡ BX09MK09HT17ST17
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = °°
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ °° + : ≠ ** ≠ °°: = BX-MASCHINENCODE-START
- AXIOM ¡ ^ : + °° ≠ ** ≠ :°° = BX-MASCHINENCODE-ENDE
 
  # LIEGT IM RAM
  GEBAUTE-EINHEIT ¡ °°: = BX-MASCHINENCODE-START
  GEBAUTE-EINHEIT ¡ :°° = BX-MASCHINENCODE-ENDE
 
 ###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ MASCHINENCODE
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 10
-
- BION-ID ¡ SS10
-
- BSK ¡ BXMKHTSTSS-MASCHINENCODE
-
- BION ¡ BX09MK09HT17ST17SS10
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
-EINHEIT ¡ °°: = BX-MASCHINENCODE-START
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-MASCHINENCODE
-
- # AXIOM
- AXIOM ¡ BX-MASCHINENCODE-START + <IO> ≠ * * ≠ °°: <IO> = BX-MASCHINENCODE-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ °°: <IO> = BX-MASCHINENCODE-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ MASCHINENCODE
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 29
-
- BION-ID ¡ LD29
-
- BSK ¡ BXMKHTSTSSLD-MASCHINENCODE
-
- BION ¡ BX09MK09HT17ST17SS10LD29
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ °°: <IO> = BX-MASCHINENCODE-IO
- EINHEIT ¡ :°° = BX-MASCHINENCODE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-MASCHINENCODE
-
- # AXIOM
- AXIOM ¡ BX-MASCHINENCODE-IO + BX-MASCHINENCODE-ENDE ≠ * * ≠ °°: <IO> :°°
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# EINGABE 9
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ EINGABE
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 18
-
- BION-ID ¡ HT18
-
- BSK ¡ BXMKHT-EINGABE
-
- BION ¡ BX09MK09HT18
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ EINGABE
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 18
-
- BION-ID ¡ ST18
-
- BSK ¡ BXMKHTST-EINGABE
-
- BION ¡ BX09MK09HT18ST18
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = ¥ 
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ ¥ + : ≠ ** ≠ ¥: = BX-EINGABE-START
- AXIOM ¡ ^ : + ¥ ≠ ** ≠ :¥ = BX-EINGABE-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ¥: = BX-EINGABE-START 
- GEBAUTE-EINHEIT ¡ :¥ = BX-EINGABE-ENDE
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ EINGABE
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 11
-
- BION-ID ¡ SS11
-
- BSK ¡ BXMKHTSTSS-EINGABE
-
- BION ¡ BX09MK09HT18ST18SS11
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ¥: = BX-EINGABE-START
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-EINGABE
-
- # AXIOM
- AXIOM ¡ BX-EINGABE-START + <IO> ≠ * * ≠ ¥: <IO> = BX-EINGABE-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ ¥: <IO> = BX-EINGABE-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ EINGABE
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 31
-
- BION-ID ¡ LD31
-
- BSK ¡ BXMKHTSTSSLD-EINGABE
-
- BION ¡ BX09MK09HT18ST18SS11LD31
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ¥: <IO> = BX-EINGABE-IO 
- EINHEIT ¡ :¥ = BX-EINGABE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-EINGABE
-
- # AXIOM
- AXIOM ¡ BX-EINGABE-IO + BX-EINGABE-ENDE ≠ * * ≠ ¥: <IO> :¥
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# PFAD 10
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ PFAD
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 19
-
- BION-ID ¡ HT19
-
- BSK ¡ BXMKHT-PFAD
-
- BION ¡ BX09MK09HT19
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ PFAD
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 19
-
- BION-ID ¡ ST19
-
- BSK ¡ BXMKHTST-PFAD
-
- BION ¡ BX09MK09HT19ST19
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = $
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ $ + : ≠ ** ≠ $: = BX-PFAD-START
- AXIOM ¡ ^ : + $ ≠ ** ≠ :$ = BX-PFAD-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ $: = BX-PFAD-START 
- GEBAUTE-EINHEIT ¡ :$ = BX-PFAD-ENDE 
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ PFAD
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 12
-
- BION-ID ¡ SS12
-
- BSK ¡ BXMKHTSTSS-PFAD
-
- BION ¡ BX09MK09HT19ST19SS12
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ $: = BX-PFAD-START 
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-PFAD
-
- # AXIOM
- AXIOM ¡ BX-PFAD-START + <IO> ≠ * * ≠ $: <IO> = BX-PFAD-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ $: <IO> = BX-PFAD-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ PFAD
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 32
-
- BION-ID ¡ LD32
-
- BSK ¡ BXMKHTSTSSLD-PFAD
-
- BION ¡ BX09MK09HT19ST19SS12LD32
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ $: <IO> = BX-PFAD-IO
- EINHEIT ¡ :$ = BX-PFAD-ENDE 
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-PFAD
-
- # AXIOM
- AXIOM ¡ BX-PFAD-IO + BX-PFAD-ENDE ≠ * * ≠ $: <IO> :$
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
-# NET 11
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ NET
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 20
-
- BION-ID ¡ HT20
-
- BSK ¡ BXMKHT-NET
-
- BION ¡ BX09MK09HT20
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ NET
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 20
-
- BION-ID ¡ ST20
-
- BSK ¡ BXMKHTST-NET
-
- BION ¡ BX09MK09HT20ST20
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = §
- AXIOM ¡ ^ <TASTENCODE> = :
- AXIOM ¡ ^ § + : ≠ ** ≠ §: = BX-NET-START
- AXIOM ¡ ^ : + § ≠ ** ≠ :§ = BX-NET-ENDE
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ §: = BX-NET-START
- GEBAUTE-EINHEIT ¡ :§ = BX-NET-ENDE
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð SYSTEMWABE 
-
- PROGRAMM ¡ NET
-
- WABEN-ID ¡ SS
-
- BION-NR ¡ 13
-
- BION-ID ¡ SS13
-
- BSK ¡ BXMKHTSTSS-NET
-
- BION ¡ BX09MK09HT20ST20SS13
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ §: = BX-NET-START
-
- # BSK | BEENDET VOR PROZESS 
- WABEN-RESET ¡ BXMKHTST-NET
-
- # AXIOM
- AXIOM ¡ BX-NET-START + <IO> ≠ * * ≠ §: <IO> = BX-NET-IO
-
- # EINGABE-I
- IN-ID   ¡ <IO>
-
- # AUSGABE-0
- OUT-ID  ¡ IN-ID
-
- # EINHEIT 
- EINHEIT ¡ §: <IO> = BX-NET-IO
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð LINKENDWABE 
-
- PROGRAMM ¡ NET
-
- WABEN-ID ¡ LD
-
- BION-NR ¡ 33
-
- BION-ID ¡ LD33
-
- BSK ¡ BXMKHTSTSSLD-NET
-
- BION ¡ BX09MK09HT20ST20SS13LD33
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ §: <IO> = BX-NET-IO
- EINHEIT ¡ :§ = BX-NET-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ BXMKHTSTSS-NET
-
- # AXIOM
- AXIOM ¡ BX-NET-IO + BX-NET-ENDE ≠ * * ≠ §: <IO> :§
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-ON-PIPE
- AXIOM ¡ LINK-OUT ≠ PIMK ≠ PIMKHT-OFF-PIPE
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ PIMKHTSTBKCB-ON-PIPE
- LINK-OUT ¡ PIMKHTSTCB-OFF-PIPE
-
-###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
- # MASTERWORT = 
- # BION-ID-PFAD (BX-PRINT)           → BX09+MK09+HT10+ST10+SS03+LD22
- # BION-ID-PFAD (BX-ALU)             → BX09+MK09+HT11+ST11+SS04+LD23
- # BION-ID-PFAD (BX-SYSCALL)         → BX09+MK09+HT12+ST12+SS05+LD24
- # BION-ID-PFAD (BX-ABI)             → BX09+MK09+HT13+ST13+SS06+LD25
- # BION-ID-PFAD (BX-SHELL)           → BX09+MK09+HT14+ST14+SS07+LD26
- # BION-ID-PFAD (BX-MCD)             → BX09+MK09+HT15+ST15+SS08+LD27
- # BION-ID-PFAD (BX-OPCODE)          → BX09+MK09+HT16+ST16+SS09+LD28
- # BION-ID-PFAD (BX-MASCHINENCODE)   → BX09+MK09+HT17+ST17+SS10+LD29
- # BION-ID-PFAD (BX-EINGABE)         → BX09+MK09+HT18+ST18+SS11+LD31
- # BION-ID-PFAD (BX-PFAD)            → BX09+MK09+HT19+ST19+SS12+LD32
- # BION-ID-PFAD (BX-NET)             → BX09+MK09+HT20+ST20+SS13+LD33
- # BION-ID-VPFAD → BX09MK09HT10HT11HT12HT13HT14HT15HT16HT17HT18HT19HT20ST10ST11ST12ST13ST14ST15ST16ST17ST18ST19ST20SS03SS04SS05SS06SS07SS08SS09SS10SS11SS12SS13LD22LD23LD24LD25LD26LD27LD28LD29LD31LD32LD33
- # BION-ID-RPFAD → BX+MK09
+
+
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

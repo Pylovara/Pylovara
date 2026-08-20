@@ -93,7 +93,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⣀⢁ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⣀⢁ STARTWABE 
 
  PROGRAMM ⠆⢂⣀⢄ PRINT
 
@@ -174,7 +174,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⢁ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⣀⢁ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⣀⢁ STARTWABE 
 
  PROGRAMM ⠆⢂⢠⢐ ALU
 
@@ -255,7 +255,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⢠⡈ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⢠⡈ STARTWABE 
 
  PROGRAMM ⠆⢂⢐⡠ SYSCALL
 
@@ -335,7 +335,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡈ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⢐⠨ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⢐⠨ STARTWABE 
 
  PROGRAMM ⠆⢂⢐⠰ ABI
 
@@ -416,7 +416,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡐ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⢈⠘ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⢈⠘ STARTWABE 
 
  PROGRAMM ⠆⢂⢈⠡ SHELL
 
@@ -496,7 +496,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⣀ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⢈⠉ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⢈⠉ STARTWABE 
 
  PROGRAMM ⠆⢂⢈⠊ EINGABE
 
@@ -577,7 +577,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⠘ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⢁⢠ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⢁⢠ STARTWABE 
 
  PROGRAMM ⠆⢂⢁⣀ MCD
 
@@ -592,9 +592,9 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⠘ HAUPTWABE
  BION ⠆⢂⢄⠌ BX009MK009HT013ST013
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢂⢄⠃ ⧓ ⠆⢂⢄⠅ Ξ ⠆⢂⢄⠉ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ #
+ AXIOM ¡ ⠆⢂⢄⠉ ⧑ #
 
  TASTENCODE ⠆⢂⢄⠑ SHIFT
  TASTENCODE ⠆⢂⢄⠒ ALTGR
@@ -658,7 +658,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡂ HAUPTWABE
 
 ###====================================|====================================###
 
- MUTTERWABEN-KATEGORIE ⠆⢂⢁⡐ STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢂⢁⡐ STARTWABE 
 
  PROGRAMM ⠆⢂⢁⢄ PFAD
 
@@ -678,7 +678,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡂ HAUPTWABE
  AXIOM ¡ ⠆⢂⡠⣀ ⧑ #
 
  TASTENCODE ⠆⢂⢁⠉ SHIFT
- TASTENCODE ⠆⢂⢁⠊ 3
+ TASTENCODE ⠆⢂⢁⠊ 4
  TASTENCODE ⠆⢂⢁⠌ .
 
  SYMBOLE ⠆⢂⢁⠑ $
@@ -734,13 +734,65 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠃⢠ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠃⠑ ⧓ ⠆⢄⠃⣀ Ξ ⠆⢄⠅⠃
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠅⠃ ⧑ 
+ AXIOM ¡ ⠆⢄⠅⠃ ⧑ ⠆⢂⡠⡐
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ §: = BX-NET-START
- GEBAUTE-EINHEIT ¡ :§ = BX-NET-ENDE
+MUTTERWABEN-KATEGORIE ⠆⢂⡠⡁ STARTWABE 
+
+ PROGRAMM ⠆⢂⡠⡂ NET
+
+ WABEN-ID ⠆⢂⡠⡄ ST
+
+ BION-NR ⠆⢂⡠⡈ 015
+
+ BION-ID ⠆⢂⡠⡐ ST015
+
+ BSK ⠆⢂⡠⢁ BXMKHTST-NET
+
+ BION ⠆⢂⡠⢄ BX009MK009HT015ST015
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⡠⡄ ⧓ ⠆⢂⡠⡈ Ξ ⠆⢂⡠⡐ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⡠⡐ ⧑ #
+
+ TASTENCODE ⠆⢂⡠⢈ SHIFT
+ TASTENCODE ⠆⢂⡠⢐ 3
+ TASTENCODE ⠆⢂⡐⣀ .
+
+ SYMBOLE ⠆⢂⡠⠃ §
+ SYMBOLE ⠆⢂⡠⠅ :
+
+ PRÄFIX ⠆⢂⡠⠉ BX-NET-START
+ PRÄFIX ⠆⢂⡠⠊ BX-NET-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢂⡠⢈ ⦻ ⠆⢂⡠⢐ Ξ ⠆⢂⡠⠃
+ AXIOM ¡ ⠆⢂⡠⢈ ⦻ ⠆⢂⡐⣀ Ξ ⠆⢂⡠⠅
+ AXIOM ¡ ⠆⢂⡠⠃ ⧓ ⠆⢂⡠⠅ Ξ ⠆⢂⡠⠌
+ AXIOM ¡ ⠆⢂⡠⠅ ⧓ ⠆⢂⡠⠃ Ξ ⠆⢂⡠⠑
+
+ PRODUKT ⠆⢂⡠⠌ §:
+ PRODUKT ⠆⢂⡠⠑ :§
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⡠⠌ ⥓ ⠆⢂⡠⠉
+ AXIOM ¡ ⠆⢂⡠⠑ ⥓ ⠆⢂⡠⠊
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⡠⠌ ⥗ ⠆⢂⡠⠉ ⍠ ⠆⢂⡠⠒
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⡠⠑ ⥗ ⠆⢂⡠⠊ ⍠ ⠆⢂⡠⠔
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⡠⠒ §: BX-NET-START
+ EINHEIT ⠆⢂⡠⠔ :§ BX-NET-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⡠⡐ ⦳ #
+
+###====================================|====================================###
 
 ###===============================OPCODE-BOXIS==============================###
 ###====================================|====================================###

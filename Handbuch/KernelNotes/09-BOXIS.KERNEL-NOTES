@@ -379,13 +379,6 @@ KINDERWABEN-KATEGORIE ⠆⢂⡄⠨ SYSTEMWABE
 
  # HIER WEITER SPÄTER 
 
- # HIER MACH ICH DANN SPÄTER WEITER , SCHÖN MODULAR .. 
- # DAS SIND ALLES KLEINE PROGRAMME IN DEN KERNWABE .. 
- # JEDE FÜR SICH . 
- # KOMBINIERT MIT MEINEM REX MUX SYSTEM , SPÄTER UNSCHLAGBAR 
- # KNACKIG .
-
- # 18% .. GLEICH POWERBANK WECHSEL ... DANN NACHTS WEITER 
 ###===============================SYSCALL-BOXIS=============================###
 ###====================================|====================================###
 
@@ -427,7 +420,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⢠⡈ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⢐⢁ ⧓ ⠆⢂⢐⢄ Ξ ⠆⢂⢐⢈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⢐⢈ ⧑ #
+ AXIOM ¡ ⠆⢂⢐⢈ ⧑ ⠆⢂⡂⢐
 
  TASTENCODE ⠆⢂⢠⠃ SHIFT
  TASTENCODE ⠆⢂⢠⠅ ,
@@ -462,9 +455,83 @@ MUTTERWABEN-KATEGORIE ⠆⢂⢠⡈ STARTWABE
  EINHEIT ⠆⢂⢐⠤ :, BX-SYSCALL-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⢐⢈ ⦳ #
+ AXIOM ¡ ⠆⢂⢐⢈ ⦳ ⠆⢂⡂⢐
 
 ###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⡂⡠ BAUWABE 
+
+ PROGRAMM ⠆⢂⡂⢁ SYSCALL
+
+ WABEN-ID ⠆⢂⡂⢄ BA
+
+ BION-NR ⠆⢂⡂⢈ 010
+
+ BION-ID ⠆⢂⡂⢐ BA010
+
+ BSK ⠆⢂⡂⢠ BXMKHTSTBA-SYSCALL
+
+ BION ⠆⢂⡂⣀ BX009MK009HT009ST009BA010
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⡂⢄ ⧓ ⠆⢂⡂⢈ Ξ ⠆⢂⡂⢐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⡂⢐ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⢐⠢ ⍠ ⠆⢂⡄⠃
+ AXIOM ¡ ⠆⢂⢐⠤ ⍠ ⠆⢂⡄⠅
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⡄⠃ ,: BX-SYSCALL-START
+ EINHEIT ⠆⢂⡄⠅ :, BX-SYSCALL-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⡈⠢ EINGABEWABE
+
+ EINGABE ⠆⢂⡂⠊ <IO>
+
+ # AXIOM | VORBAU 
+ AXIOM ¡ ⠆⢂⡄⠃ ⧖⧖ ⧓ ⠆⢂⡂⠊ Ξ ⠆⢂⡂⠌
+
+ PRODUKT ⠆⢂⡂⠌ ,: <IO>
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⡂⠌ ⍠ ⠆⢂⡂⠑
+
+ EINHEIT ⠆⢂⡂⠑ ,: <IO>
+
+ # AXIOM | (EINGABE COPIE)
+ AXIOM ¡ ⠆⢂⡂⠑ Ξ ⠆⢂⡂⠢ 
+ 
+ EINGABEHALTEN ⠆⢂⡂⠢ <IO>
+
+KINDERWABEN-KATEGORIE  SYSTEMWABE
+
+ HONIGTROPFEN ⠆⢂⡂⠔ <ART>
+
+ # AXIOM | (EINGABE ABGLEICHEN)
+ AXIOM ¡ ⠆⢂⡂⠢ ⟗ ⧖⧖ ⠆⢂⡂⠔ Ξ ⠆⢂⡂⠘
+
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡ ⠆⢂⡂⠘ ⧑ ⠆⢂⡂⠡
+
+ AUSGABE ⠆⢂⡂⠡ ,: <IO>
+
+ # AXIOM | EINGABEBEHALTEN LÖSCHEN
+ AXIOM ¡ ⠆⢂⡂⠢ ⎚
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⡂⠡ ⍠ ⠆⢂⡂⠤
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⢂⡂⠤ ,: <IO>
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⡂⢐ ⦳ #
+
+###====================================|====================================###
+
+ # HIER WEITER SPÄTER
 
 ###=================================ABI-BOXIS===============================###
 ###====================================|====================================###

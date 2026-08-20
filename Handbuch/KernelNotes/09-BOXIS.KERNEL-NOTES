@@ -89,14 +89,67 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠉⡂ ⧓ ⠆⢄⠉⡄ Ξ ⠆⢄⠉⡈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠉⡈ ⧑ 
+ AXIOM ¡ ⠆⢄⠉⡈ ⧑ ⠆⢂⣀⢠
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ": = BX-PRINT-START
- GEBAUTE-EINHEIT ¡ :" = BX-PRINT-ENDE 
+ MUTTERWABEN-KATEGORIE ⠆⢂⣀⢁ STARTWABE 
 
+ PROGRAMM ⠆⢂⣀⢄ 
+
+ WABEN-ID ⠆⢂⣀⢈ ST
+
+ BION-NR ⠆⢂⣀⢐ 
+
+ BION-ID ⠆⢂⣀⢠ 
+
+ BSK ⠆⢄⠃⠅
+
+ BION ⠆⢄⠃⠉ 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⣀⢈ ⧓ ⠆⢂⣀⢐ Ξ ⠆⢂⣀⢠
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⣀⢠ ⧑ 
+
+ TASTENCODE ⠆⢄⠃⠊ SHIFT
+ TASTENCODE ⠆⢄⠃⠌ 2
+ TASTENCODE ⠆⢂⢠⢈ .
+
+ SYMBOLE ⠆⢂⣀⠔ "
+ SYMBOLE ⠆⢂⣀⠘ :
+
+ PRÄFIX ⠆⢂⣀⠤ BX-PRINT-START
+ PRÄFIX ⠆⢂⣀⠨ BX-PRINT-EDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢄⠃⠊ ⦻ ⠆⢄⠃⠌ Ξ ⠆⢂⣀⠔
+ AXIOM ¡ ⠆⢄⠃⠊ ⦻ ⠆⢂⢠⢈ Ξ ⠆⢂⣀⠘
+ AXIOM ¡ ⠆⢂⣀⠔ ⧓ ⠆⢂⣀⠘ Ξ ⠆⢂⣀⡂
+ AXIOM ¡ ⠆⢂⣀⠘ ⧓ ⠆⢂⣀⠔ Ξ ⠆⢂⣀⡄
+
+ PRODUKT ⠆⢂⣀⡂ ":
+ PRODUKT ⠆⢂⣀⡄ :"
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⣀⡂ ⥓ ⠆⢂⣀⠤
+ AXIOM ¡ ⠆⢂⣀⡄ ⥓ ⠆⢂⣀⠨
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⣀⡂ ⥗ ⠆⢂⣀⠤ ⍠ ⠆⢂⢠⢁
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⣀⡄ ⥗ ⠆⢂⣀⠨ ⍠ ⠆⢂⢠⢄
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⢠⢁
+ EINHEIT ⠆⢂⢠⢄
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡   ⦳ #NEXT BION
+
+###====================================|====================================###
+
+###====================================|====================================###
 ###=================================ALU-BOXIS===============================###
 ###====================================|====================================###
 

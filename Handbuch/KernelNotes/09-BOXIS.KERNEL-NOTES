@@ -120,7 +120,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠊⠰ HAUPTWABE
  SYMBOLE ⠆⢂⣀⠘ :
 
  PRÄFIX ⠆⢂⣀⠤ BX-PRINT-START
- PRÄFIX ⠆⢂⣀⠨ BX-PRINT-EDE
+ PRÄFIX ⠆⢂⣀⠨ BX-PRINT-ENDE
 
  # PRODUKT
  AXIOM ¡ ⠆⢄⠃⠊ ⦻ ⠆⢄⠃⠌ Ξ ⠆⢂⣀⠔
@@ -202,7 +202,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⢁ HAUPTWABE
  SYMBOLE ⠆⢂⢠⠢ :
 
  PRÄFIX ⠆⢂⢠⠤ BX-ALU-START
- PRÄFIX ⠆⢂⢠⠨ BX-ALU-EDE
+ PRÄFIX ⠆⢂⢠⠨ BX-ALU-ENDE
 
  # PRODUKT
  AXIOM ¡ ⠆⢂⣀⠌ ⦻ ⠆⢂⢠⠒ ⦻ ⠆⢂⢠⠔ Ξ ⠆⢂⢠⠡
@@ -251,13 +251,65 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠉⠊ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠉⠑ ⧓ ⠆⢄⠉⠒ Ξ ⠆⢄⠉⠔ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠉⠔ ⧑ 
+ AXIOM ¡ ⠆⢄⠉⠔ ⧑ ⠆⢂⢐⢈
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ,: = BX-SYSCALL-START
- GEBAUTE-EINHEIT ¡ :, = BX-SYSCALL-ENDE 
+ MUTTERWABEN-KATEGORIE ⠆⢂⢠⡈ STARTWABE 
+
+ PROGRAMM ⠆⢂⢐⡠ SYSCALL
+
+ WABEN-ID ⠆⢂⢐⢁ ST
+
+ BION-NR ⠆⢂⢐⢄ 009
+
+ BION-ID ⠆⢂⢐⢈ ST009
+
+ BSK ⠆⢂⢐⢠ BXMKHTST-SYSCALL
+
+ BION ⠆⢂⢐⣀ BX009MK009HT009ST009
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⢐⢁ ⧓ ⠆⢂⢐⢄ Ξ ⠆⢂⢐⢈
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⢐⢈ ⧑ #
+
+ TASTENCODE ⠆⢂⢠⠃ SHIFT
+ TASTENCODE ⠆⢂⢠⠅ ,
+ TASTENCODE ⠆⢂⢠⠉ .
+
+ SYMBOLE ⠆⢂⢠⠊ ,
+ SYMBOLE ⠆⢂⢠⠌ :
+
+ PRÄFIX ⠆⢂⢠⠑ BX-SYSCALL-START
+ PRÄFIX ⠆⢂⢐⠔ BX-SYSCALL-ENDE
+
+ # PRODUKT
+ AXIOM ¡  ⠆⢂⢠⠅ Ξ ⠆⢂⢠⠊
+ AXIOM ¡  ⠆⢂⢠⠃ ⦻ ⠆⢂⢠⠉ Ξ ⠆⢂⢠⠌
+ AXIOM ¡  ⠆⢂⢠⠊ ⧓ ⠆⢂⢠⠌ Ξ ⠆⢂⢐⠘
+ AXIOM ¡  ⠆⢂⢠⠌ ⧓ ⠆⢂⢠⠊ Ξ ⠆⢂⢐⠡
+
+ PRODUKT ⠆⢂⢐⠘ ,:
+ PRODUKT ⠆⢂⢐⠡ :,
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⢐⠘ ⥓ ⠆⢂⢠⠑
+ AXIOM ¡ ⠆⢂⢐⠡ ⥓ ⠆⢂⢐⠔
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢐⠘ ⥗ ⠆⢂⢠⠑ ⍠ ⠆⢂⢐⠢
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢐⠡ ⥗ ⠆⢂⢐⠔ ⍠ ⠆⢂⢐⠤
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⢐⠢ ,: BX-SYSCALL-START
+ EINHEIT ⠆⢂⢐⠤ :, BX-SYSCALL-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⢐⢈ ⦳ #
+
+###====================================|====================================###
 
 ###=================================ABI-BOXIS===============================###
 ###====================================|====================================###

@@ -654,13 +654,65 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡂ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠃⡐ ⧓ ⠆⢄⠃⡠ Ξ ⠆⢄⠃⢁
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠃⢁ ⧑ 
+ AXIOM ¡ ⠆⢄⠃⢁ ⧑ ⠆⢂⡠⣀
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ $: = BX-PFAD-START 
- GEBAUTE-EINHEIT ¡ :$ = BX-PFAD-ENDE 
+ MUTTERWABEN-KATEGORIE ⠆⢂⢁⡐ STARTWABE 
+
+ PROGRAMM ⠆⢂⢁⢄ PFAD
+
+ WABEN-ID ⠆⢂⢁⢈ ST
+
+ BION-NR ⠆⢂⡠⢠ 014
+
+ BION-ID ⠆⢂⡠⣀ ST014
+
+ BSK ⠆⢂⢁⠃ BXMKHTST-PFAD
+
+ BION ⠆⢂⢁⠅ BX009MK009HT014ST014
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⢁⢈ ⧓ ⠆⢂⡠⢠ Ξ ⠆⢂⡠⣀
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⡠⣀ ⧑ #
+
+ TASTENCODE ⠆⢂⢁⠉ SHIFT
+ TASTENCODE ⠆⢂⢁⠊ 3
+ TASTENCODE ⠆⢂⢁⠌ .
+
+ SYMBOLE ⠆⢂⢁⠑ $
+ SYMBOLE ⠆⢂⢁⠒ :
+
+ PRÄFIX ⠆⢂⢁⠔ BX-PFAD-START
+ PRÄFIX ⠆⢂⢁⠘ BX-PFAD-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢂⢁⠉ ⦻ ⠆⢂⢁⠊ Ξ ⠆⢂⢁⠑
+ AXIOM ¡ ⠆⢂⢁⠉ ⦻ ⠆⢂⢁⠌ Ξ ⠆⢂⢁⠒
+ AXIOM ¡ ⠆⢂⢁⠑ ⧓ ⠆⢂⢁⠒ Ξ ⠆⢂⢁⠡
+ AXIOM ¡ ⠆⢂⢁⠒ ⧓ ⠆⢂⢁⠑ Ξ ⠆⢂⡠⠤
+
+ PRODUKT ⠆⢂⢁⠡ $:
+ PRODUKT ⠆⢂⡠⠤ :$
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⢁⠡ ⥓ ⠆⢂⢁⠔ 
+ AXIOM ¡ ⠆⢂⡠⠤ ⥓ ⠆⢂⢁⠘
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢁⠡ ⥗ ⠆⢂⢁⠔ ⍠ ⠆⢂⡠⠨
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⡠⠤ ⥗ ⠆⢂⢁⠘ ⍠ ⠆⢂⡠⠰
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⡠⠨ $: BX-PFAD-START
+ EINHEIT ⠆⢂⡠⠰ :$ BX-PFAD-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⡠⣀ ⦳ #
+
+###====================================|====================================###
 
 ###=================================NET-BOXIS===============================###
 ###====================================|====================================###

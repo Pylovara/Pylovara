@@ -814,13 +814,66 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠃⠰ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠃⡂ ⧓ ⠆⢄⠃⡄ Ξ ⠆⢂⣀⡈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⣀⡈ ⧑ 
+ AXIOM ¡ ⠆⢂⣀⡈ ⧑ ⠆⢂⡐⠰
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ °: = BX-OPCODE-START
- GEBAUTE-EINHEIT ¡ :° = BX-OPCODE-ENDE 
+MUTTERWABEN-KATEGORIE ⠆⢂⡠⠘ STARTWABE 
+
+ PROGRAMM ⠆⢂⡠⠡ OPCODE
+
+ WABEN-ID ⠆⢂⡠⠢ ST
+
+ BION-NR ⠆⢂⡐⠨ 016
+
+ BION-ID ⠆⢂⡐⠰ ST016
+
+ BSK ⠆⢂⡐⡁ BXMKHTST-OPCODE
+
+ BION ⠆⢂⡐⡂ BX009MK009HT016ST016
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⡠⠢ ⧓ ⠆⢂⡐⠨ Ξ ⠆⢂⡐⠰ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⡐⠰ ⧑ #
+
+ TASTENCODE ⠆⢂⡐⡄ SHIFT
+ TASTENCODE ⠆⢂⡐⡈ ALTGR
+ TASTENCODE ⠆⢂⡐⡠ M
+ TASTENCODE ⠆⢂⡐⢁ .
+
+ SYMBOLE ⠆⢂⡐⢄ º
+ SYMBOLE ⠆⢂⡐⢈ :
+
+ PRÄFIX ⠆⢂⡐⢐ BX-OPCODE-START
+ PRÄFIX ⠆⢂⡐⢠ BX-OPCODE-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢂⡐⡄ ⦻ ⠆⢂⡐⡈ ⦻ ⠆⢂⡐⡠ Ξ ⠆⢂⡐⢄
+ AXIOM ¡ ⠆⢂⡐⡄ ⦻ ⠆⢂⡐⢁ Ξ ⠆⢂⡐⢈
+ AXIOM ¡ ⠆⢂⡐⢄ ⧓ ⠆⢂⡐⢈ Ξ ⠆⢂⡐⠃
+ AXIOM ¡ ⠆⢂⡐⢈ ⧓ ⠆⢂⡐⢄ Ξ ⠆⢂⡐⠅
+
+ PRODUKT ⠆⢂⡐⠃ º:
+ PRODUKT ⠆⢂⡐⠅ :º
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⡐⠃ ⥓ ⠆⢂⡐⢐
+ AXIOM ¡ ⠆⢂⡐⠅ ⥓ ⠆⢂⡐⢠
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⡐⠃ ⥗ ⠆⢂⡐⢐ ⍠ ⠆⢂⡐⠉
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⡐⠅ ⥗ ⠆⢂⡐⢠ ⍠ ⠆⢂⡐⠊
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⡐⠉ º: BX-OPCODE-START
+ EINHEIT ⠆⢂⡐⠊ :º BX-OPCODE-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⡐⠰ ⦳ #
+
+###====================================|====================================###
 
 ###===========================MASCHINENCODE-BOXIS===========================###
 ###====================================|====================================###

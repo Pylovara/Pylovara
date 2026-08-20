@@ -331,13 +331,66 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⡈ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠉⠤ ⧓ ⠆⢄⠉⠨ Ξ ⠆⢄⠉⠰
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠉⠰ ⧑ 
+ AXIOM ¡ ⠆⢄⠉⠰ ⧑ ⠆⢂⢐⡄
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ Ħ: = BX-ABI-START 
- GEBAUTE-EINHEIT ¡ :Ħ = BX-ABI-ENDE
+ MUTTERWABEN-KATEGORIE ⠆⢂⢐⠨ STARTWABE 
+
+ PROGRAMM ⠆⢂⢐⠰ ABI
+
+ WABEN-ID ⠆⢂⢐⡁ ST
+
+ BION-NR ⠆⢂⢐⡂ 010
+
+ BION-ID ⠆⢂⢐⡄ ST010
+
+ BSK ⠆⢂⢐⡈ BXMKHTST-ABI
+
+ BION ⠆⢂⢐⡐ BX009MK009HT010ST010
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⢐⡁ ⧓ ⠆⢂⢐⡂ Ξ ⠆⢂⢐⡄
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⢐⡄ ⧑ #
+
+ TASTENCODE ⠆⢂⢈⢁ SHIFT
+ TASTENCODE ⠆⢂⢈⢄ ALTGR
+ TASTENCODE ⠆⢂⢈⢐ H
+ TASTENCODE ⠆⢂⢈⢠ .
+
+ SYMBOLE ⠆⢂⢈⣀ Ħ 
+ SYMBOLE ⠆⢂⢐⠃ :
+
+ PRÄFIX ⠆⢂⢐⠅ BX-ABI-START
+ PRÄFIX ⠆⢂⢐⠉ BX-ABI-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢂⢈⢄ ⦻ ⠆⢂⢈⢁ ⦻ ⠆⢂⢈⢐ Ξ ⠆⢂⢈⣀
+ AXIOM ¡ ⠆⢂⢈⢁ ⦻ ⠆⢂⢈⢠ Ξ ⠆⢂⢐⠃
+ AXIOM ¡ ⠆⢂⢈⣀ ⧓ ⠆⢂⢐⠃ Ξ ⠆⢂⢐⠊
+ AXIOM ¡ ⠆⢂⢐⠃ ⧓ ⠆⢂⢈⣀ Ξ ⠆⢂⢐⠌
+
+ PRODUKT ⠆⢂⢐⠊ Ħ:
+ PRODUKT ⠆⢂⢐⠌ :Ħ
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⢐⠊ ⥓ ⠆⢂⢐⠅
+ AXIOM ¡ ⠆⢂⢐⠌ ⥓ ⠆⢂⢐⠉
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢐⠊ ⥗ ⠆⢂⢐⠅ ⍠ ⠆⢂⢐⠑
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢐⠌ ⥗ ⠆⢂⢐⠉ ⍠ ⠆⢂⢐⠒
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⢐⠑ Ħ: BX-ABI-START
+ EINHEIT ⠆⢂⢐⠒ :Ħ BX-ABI-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⢐⡄ ⦳ #
+
+###====================================|====================================###
 
 ###===============================SHELL-BOXIS===============================###
 ###====================================|====================================###

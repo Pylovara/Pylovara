@@ -197,30 +197,45 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⡈⠢ EINGABEWABE
 
 KINDERWABEN-KATEGORIE ⠆⢂⡄⡐ SYSTEMWABE
 
- HONIGTROPFEN # <ART>
+ HONIGTROPFEN ⠆⢂⡄⡠ <ART>
 
  # AXIOM | (EINGABE ABGLEICHEN)
- AXIOM ¡ # ⟗ ⧖⧖ # Ξ #
+ AXIOM ¡ ⠆⢂⡄⡈ ⟗ ⧖⧖ ⠆⢂⡄⡠ Ξ ⠆⢂⡄⢁
 
  # AXIOM | ABGLEICH BEENDET | AUSGABE
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⢂⡄⢁ ⧑ ⠆⢂⡄⢄
 
- AUSGABE # <NAME>
+ AUSGABE ⠆⢂⡄⢄ ": <IO>
 
  # AXIOM | EINGABEBEHALTEN LÖSCHEN
- AXIOM ¡ # ⎚
+ AXIOM ¡ ⠆⢂⡄⡈ ⎚
 
  # AXIOM | RAM 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⢂⡄⢄ ⍠ ⠆⢂⡄⢈
 
  # RAM GEBAUTE EINHEIT
- EINHEIT # 
+ EINHEIT ⠆⢂⡄⢈ ": <IO>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⢂⡈⠒ ⦳ #
+
+###====================================|====================================###
+
+
+
+
+
+
+
+
 
 
 ###====================================|====================================###
+
+
+
+
+
 
  # BAUSTELLEN BEREICH AB/BEI : EINGABEWABE
 

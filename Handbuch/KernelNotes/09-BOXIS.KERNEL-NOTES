@@ -729,7 +729,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⢈⠘ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⢈⠢ ⧓ ⠆⢂⢈⠤ Ξ ⠆⢂⢈⠨
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⢈⠨ ⧑ #
+ AXIOM ¡ ⠆⢂⢈⠨ ⧑ ⠆⢂⡁⠢
 
  TASTENCODE ⠆⢂⢈⡂ SHIFT
  TASTENCODE ⠆⢂⢈⡄ #
@@ -764,9 +764,83 @@ MUTTERWABEN-KATEGORIE ⠆⢂⢈⠘ STARTWABE
  EINHEIT ⠆⢂⢈⠅ :' BX-SHELL-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⢈⠨ ⦳ #
+ AXIOM ¡ ⠆⢂⢈⠨ ⦳ ⠆⢂⡁⠢
 
 ###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⡁⠒ BAUWABE 
+
+ PROGRAMM ⠆⢂⡁⠔ SHELL
+
+ WABEN-ID ⠆⢂⡁⠘ BA
+
+ BION-NR ⠆⢂⡁⠡ 012
+
+ BION-ID ⠆⢂⡁⠢ BA012
+
+ BSK ⠆⢂⡁⠤ BXMKHTSTBA-SHELL
+
+ BION ⠆⢂⡁⠨ BX009MK009HT011ST011BA012
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⡁⠘ ⧓ ⠆⢂⡁⠡ Ξ ⠆⢂⡁⠢
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⡁⠢ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⢈⠃ ⍠ ⠆⢂⡁⠰
+ AXIOM ¡ ⠆⢂⢈⠅ ⍠ ⠆⢂⡁⡂
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⡁⠰ ': BX-SHELL-START
+ EINHEIT ⠆⢂⡁⡂ :' BX-SHELL-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⡈⠢ EINGABEWABE
+
+ EINGABE ⠆⢂⡁⡄ <IO>
+
+ # AXIOM | VORBAU 
+ AXIOM ¡ ⠆⢂⡁⠰ ⧖⧖ ⧓ ⠆⢂⡁⡄ Ξ ⠆⢂⠰⡐
+
+ PRODUKT ⠆⢂⠰⡐ ': <IO>
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠰⡐ ⍠ ⠆⢂⠰⡠
+
+ EINHEIT ⠆⢂⠰⡠ ': <IO>
+
+ # AXIOM | (EINGABE COPIE)
+ AXIOM ¡ ⠆⢂⠰⡠ Ξ ⠆⢂⠰⢁
+ 
+ EINGABEHALTEN ⠆⢂⠰⢁ <IO>
+
+KINDERWABEN-KATEGORIE  SYSTEMWABE
+
+ HONIGTROPFEN ⠆⢂⠰⢄ <ART>
+
+ # AXIOM | (EINGABE ABGLEICHEN)
+ AXIOM ¡ ⠆⢂⠰⢁ ⟗ ⧖⧖ ⠆⢂⠰⢄ Ξ ⠆⢂⠰⢈ 
+
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡ ⠆⢂⠰⢈ ⧑ ⠆⢂⠰⢐
+
+ AUSGABE ⠆⢂⠰⢐ ': <IO>
+
+ # AXIOM | EINGABEBEHALTEN LÖSCHEN
+ AXIOM ¡ ⠆⢂⠰⢁ ⎚
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠰⢐ ⍠ ⠆⢂⠰⢠
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⢂⠰⢠ ': <IO>
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⡁⠢ ⦳ #
+
+###====================================|====================================###
+
+ # SPÄTER WEITER
 
 ###===============================EINGABE-BOXIS===============================###
 ###====================================|====================================###

@@ -492,13 +492,66 @@ MUTTERWABEN-KATEGORIE ⠆⢄⠅⣀ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⠉⠅ ⧓ ⠆⢄⠅⠌ Ξ ⠆⢄⠅⠑
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢄⠅⠑ ⧑ 
+ AXIOM ¡ ⠆⢄⠅⠑ ⧑ ⠆⢂⢈⠒
 
 ###====================================|====================================###
 
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ¥: = BX-EINGABE-START 
- GEBAUTE-EINHEIT ¡ :¥ = BX-EINGABE-ENDE
+ MUTTERWABEN-KATEGORIE ⠆⢂⢈⠉ STARTWABE 
+
+ PROGRAMM ⠆⢂⢈⠊ EINGABE
+
+ WABEN-ID ⠆⢂⢈⠌ ST
+
+ BION-NR ⠆⢂⢈⠑ 012
+
+ BION-ID ⠆⢂⢈⠒ ST012
+
+ BSK ⠆⢂⢈⠔ BXMKHTST-EINGABE
+
+ BION ⠆⢂⢄⠡ BX009MK009HT012ST012
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⢈⠌ ⧓ ⠆⢂⢈⠑ Ξ ⠆⢂⢈⠒
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⢈⠒ ⧑ #
+
+ TASTENCODE ⠆⢂⢄⠢ SHIFT
+ TASTENCODE ⠆⢂⢄⠤ ALTGR
+ TASTENCODE ⠆⢂⢄⠨ Z
+ TASTENCODE ⠆⢂⢄⠰ .
+
+ SYMBOLE ⠆⢂⢄⡁ ¥
+ SYMBOLE ⠆⢂⢄⡂ :
+
+ PRÄFIX ⠆⢂⢄⡄ BX-EINGABE-START
+ PRÄFIX ⠆⢂⢄⡈ BX-EINGABE-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢂⢄⠤ ⦻ ⠆⢂⢄⠢ ⦻ ⠆⢂⢄⠨ Ξ ⠆⢂⢄⡁
+ AXIOM ¡ ⠆⢂⢄⠢ ⦻ ⠆⢂⢄⠰ Ξ ⠆⢂⢄⡂
+ AXIOM ¡ ⠆⢂⢄⡁ ⧓ ⠆⢂⢄⡂ Ξ ⠆⢂⢄⡐
+ AXIOM ¡ ⠆⢂⢄⡂ ⧓ ⠆⢂⢄⡁ Ξ ⠆⢂⢄⡠
+
+ PRODUKT ⠆⢂⢄⡐ ¥:
+ PRODUKT ⠆⢂⢄⡠ :¥
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢂⢄⡐ ⥓ ⠆⢂⢄⡄
+ AXIOM ¡ ⠆⢂⢄⡠ ⥓ ⠆⢂⢄⡈
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢄⡐ ⥗ ⠆⢂⢄⡄ ⍠ ⠆⢂⢄⢁
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢂⢄⡠ ⥗ ⠆⢂⢄⡈ ⍠ ⠆⢂⢁⢐
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⢄⢁ ¥: BX-EINGABE-START
+ EINHEIT ⠆⢂⢁⢐ ¥' BX-EINGABE-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⢈⠒ ⦳ #
+
+###====================================|====================================###
 
 ###=================================MCD-BOXIS===============================###
 ###====================================|====================================###

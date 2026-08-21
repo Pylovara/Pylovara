@@ -863,7 +863,7 @@ TOCHTERWABEN-KATEGORIE  COMBOWABE
  AXIOM ¡ ⠆⢂⠔⠅ ⥓ ⠆⢂⠔⠉ ⍠ ⠆⢂⠔⠅
 
  # EINHEIT | RAM
- EINHEIT ⠆⢂⠔⠅ Ħ: <IO> :Ħ
+ EINHEIT ⠆⢂⠔⠅ Ħ: <IO> :Ħ BX-ABI-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ ⠆⢂⠔⢁ ⦳ #
@@ -969,7 +969,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⡁⠒ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⡁⠘ ⧓ ⠆⢂⡁⠡ Ξ ⠆⢂⡁⠢
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⡁⠢ ⧑ 
+ AXIOM ¡ ⠆⢂⡁⠢ ⧑ ⠆⢂⠔⠘
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⢈⠃ ⍠ ⠆⢂⡁⠰
@@ -1020,7 +1020,53 @@ KINDERWABEN-KATEGORIE ⠆⢂⠨⢁ SYSTEMWABE
  EINHEIT ⠆⢂⠰⢠ ': <IO>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⡁⠢ ⦳ #
+ AXIOM ¡ ⠆⢂⡁⠢ ⦳ ⠆⢂⠔⠘
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⠔⠊ BAUWABE 
+
+ PROGRAMM ⠆⢂⠔⠌ SHELL
+
+ WABEN-ID ⠆⢂⠔⠑ BA
+
+ BION-NR ⠆⢂⠔⠒ 022
+
+ BION-ID ⠆⢂⠔⠘ BA022
+
+ BSK ⠆⢂⠔⠡ BXMKHTSTBABA-SHELL
+
+ BION ⠆⢂⠔⠢ BX009MK009HT011ST011BA012BA022
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠔⠑ ⧓ ⠆⢂⠔⠒ Ξ ⠆⢂⠔⠘
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⠔⠘ ⧑ #
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠰⢠ ⍠ ⠆⢂⠒⠰
+ AXIOM ¡ ⠆⢂⡁⡂ ⍠ ⠆⢂⠔⠤
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠒⠰ ': <IO>
+ EINHEIT ⠆⢂⠔⠤ :' BX-SHELL-ENDE
+
+TOCHTERWABEN-KATEGORIE  COMBOWABE
+
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢂⠒⠰ ⧓ ⠆⢂⠔⠤ Ξ ⠆⢂⠒⡂
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠒⡁ BX-SHELL-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠒⡂ ⥓ ⠆⢂⠒⡁ ⍠ ⠆⢂⠒⡂
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠒⡂ ': <IO> :' BX-SHELL-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠔⠘ ⦳ #
 
 ###====================================|====================================###
 

@@ -951,7 +951,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠔⡄ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠔⡐ ⧓ ⠆⢂⠔⡠ Ξ ⠆⢂⠔⢁
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠔⢁ ⧑ 
+ AXIOM ¡ ⠆⢂⠔⢁ ⧑ ⠆⢂⠉⠢
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⡁⠑ ⍠ ⠆⢂⠒⣀
@@ -976,11 +976,47 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠑⣀ COMBOWABE
  EINHEIT ⠆⢂⠔⠅ Ħ: <IO> :Ħ BX-ABI-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠔⢁ ⦳ #
+ AXIOM ¡ ⠆⢂⠔⢁ ⦳ ⠆⢂⠉⠢
 
 ###====================================|====================================###
 
- # HIER WEITER SPÄTER
+MUTTERWABEN-KATEGORIE ⠆⢂⠉⠒ ENDWABE
+
+ PROGRAMM ⠆⢂⠉⠔ ABI
+
+ WABEN-ID ⠆⢂⠉⠘ ED
+
+ BION-NR ⠆⢂⠉⠡ 010
+
+ BION-ID ⠆⢂⠉⠢ ED010 
+
+ BSK ⠆⢂⠉⠤ BXMKHTSTBABAED-ABI
+
+ BION ⠆⢂⠉⠨ BX009MK009HT010ST010BA011BA021ED010
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠉⠘ ⧓ ⠆⢂⠉⠡ Ξ ⠆⢂⠉⠢
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢂⠉⠢ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠔⠅ ⍠ ⠆⢂⠉⠰
+
+ EINHEIT ⠆⢂⠉⠰ Ħ: <IO> :Ħ BX-ABI-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠉⡁ BX-ABI-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠉⠰ ⥓ ⠆⢂⠉⡁ ⍠ ⠆⢂⠉⡂
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢂⠉⡂ Ħ: <IO> :Ħ BX-ABI-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠉⠢ ͼ
 
 ###===============================SHELL-BOXIS===============================###
 ###====================================|====================================###

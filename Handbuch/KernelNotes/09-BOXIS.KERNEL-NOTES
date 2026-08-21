@@ -2643,25 +2643,50 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠊⡐ COMBOWABE
 
 ###====================================|====================================###
 
- # SPÄTER WEITER 
+MUTTERWABEN-KATEGORIE ⠆⢁⣀⡂ ENDWABE
+
+ PROGRAMM ⠆⢁⣀⡄ MASCHINENCODE
+
+ WABEN-ID ⠆⢁⣀⡈ ED
+
+ BION-NR ⠆⢁⣀⡐ 017
+
+ BION-ID ⠆⢁⢠⢂ ED017
+
+ BSK ⠆⢁⢠⢄ BXMKHTSTBABAED-MASCHINENCODE
+
+ BION ⠆⢁⢠⢈ BX009MK009HT017ST017BA018BA028ED017
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡  ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠊⡠ ⍠ ⠆⢁⢠⢐
+
+ EINHEIT ⠆⢁⢠⢐ ºº: <IO> :ºº BX-MASCHINENCODE-KOMPLETT 
+
+TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⢠⣀ BX-MASCHINENCODE-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⢠⢐ ⥓ ⠆⢁⢠⣀ ⍠ ⠆⢁⣀⠃ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⣀⠃ ºº: <IO> :ºº BX-MASCHINENCODE-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⢠⢂ ⦱ 
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
 
- # FERTIG : MUTTERWABEN MODUL BAUWABE COMBOWABE 
- # UNFERTIG : MUTTERWABEN MODUL ENDWABE AUSFÜHRUNGSWABE
 
- ÜBERALL EINBAUEN .
 
- SPÄTER WIRD DIE AUSFÜHRUNGSWABE MIT DEM EXPLIZITEN 
- AUSFÜHRUNGSZÜNDER BELEGT.
 
- SIEHT SCHONMAL SAUBERER AUS ALS VORHER IN 00-82 IN DEM ASPEKT 
-
- jetzt bischen ausruhe dann die endwaben setzen ... dann wären 
- die boxis erstmal eingewabt in die tws 0.3 struktur . 
-
- danach gehts weiter zum protein / aktionsdraht
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

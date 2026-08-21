@@ -1501,7 +1501,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⡠⠘ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⡠⠢ ⧓ ⠆⢂⡐⠨ Ξ ⠆⢂⡐⠰ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⡐⠰ ⧑ #
+ AXIOM ¡ ⠆⢂⡐⠰ ⧑ ⠆⢂⠢⠰
 
  TASTENCODE ⠆⢂⡐⡄ SHIFT
  TASTENCODE ⠆⢂⡐⡈ ALTGR
@@ -1537,9 +1537,83 @@ MUTTERWABEN-KATEGORIE ⠆⢂⡠⠘ STARTWABE
  EINHEIT ⠆⢂⡐⠊ :º BX-OPCODE-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⡐⠰ ⦳ #
+ AXIOM ¡ ⠆⢂⡐⠰ ⦳ ⠆⢂⠢⠰
 
 ###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⠢⠘ BAUWABE 
+
+ PROGRAMM ⠆⢂⠢⠡ OPCODE
+
+ WABEN-ID ⠆⢂⠢⠤ BA
+
+ BION-NR ⠆⢂⠢⠨ 016
+
+ BION-ID ⠆⢂⠢⠰ BA016
+
+ BSK ⠆⢂⠢⡁ BXMKHTSTBA-OPCODE
+
+ BION ⠆⢂⠢⡂ BX009MK009HT016ST016BA017
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠢⠤ ⧓ ⠆⢂⠢⠨ Ξ ⠆⢂⠢⠰ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⠢⠰ ⧑ #
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⡐⠉ ⍠ ⠆⢂⠢⡄
+ AXIOM ¡ ⠆⢂⡐⠊ ⍠ ⠆⢂⠢⡈
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠢⡄ º: BX-OPCODE-START
+ EINHEIT ⠆⢂⠢⡈ :º BX-OPCODE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠢⡐ EINGABEWABE
+
+ EINGABE ⠆⢂⠢⡠ <IO>
+
+ # AXIOM | VORBAU 
+ AXIOM ¡ ⠆⢂⠢⡄ ⧖⧖ ⧓ ⠆⢂⠢⡠ Ξ ⠆⢂⠢⢁
+
+ PRODUKT ⠆⢂⠢⢁ º: <IO>
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠢⢁ ⍠ ⠆⢂⠡⢈
+
+ EINHEIT ⠆⢂⠡⢈ º: <IO>
+
+ # AXIOM | (EINGABE COPIE)
+ AXIOM ¡ ⠆⢂⠡⢈ Ξ ⠆⢂⠡⢐
+ 
+ EINGABEHALTEN ⠆⢂⠡⢐ <IO>
+
+KINDERWABEN-KATEGORIE ⠆⢂⠡⢠ SYSTEMWABE
+
+ HONIGTROPFEN ⠆⢂⠡⣀ <ART>
+
+ # AXIOM | (EINGABE ABGLEICHEN)
+ AXIOM ¡ ⠆⢂⠡⢐ ⟗ ⧖⧖ ⠆⢂⠡⣀ Ξ ⠆⢂⠢⠃
+
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡ ⠆⢂⠢⠃ ⧑ ⠆⢂⠢⠅
+
+ AUSGABE ⠆⢂⠢⠅ º: <IO>
+
+ # AXIOM | EINGABEBEHALTEN LÖSCHEN
+ AXIOM ¡ ⠆⢂⠡⢐ ⎚
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠢⠅ ⍠ ⠆⢂⠢⠉
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⢂⠢⠉ º: <IO>
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠢⠰ ⦳ #
+
+###====================================|====================================###
+
+ # SPÄTER WEITER
 
 ###===========================MASCHINENCODE-BOXIS===========================###
 ###====================================|====================================###
@@ -1582,7 +1656,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⡐⠌ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⡐⠒ ⧓ ⠆⢂⡐⠔ Ξ ⠆⢂⡐⠘ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⡐⠘ ⧑ #
+ AXIOM ¡ ⠆⢂⡐⠘ ⧑ ⠆⢂⠢⠔
 
  TASTENCODE ⠆⢂⡐⠤ SHIFT
  TASTENCODE ⠆⢂⡈⠰ ALTGR
@@ -1618,17 +1692,94 @@ MUTTERWABEN-KATEGORIE ⠆⢂⡐⠌ STARTWABE
  EINHEIT ⠆⢂⡈⣀ :ºº BX-MASCHINENCODE-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⡐⠘ ⦳ #
+ AXIOM ¡ ⠆⢂⡐⠘ ⦳ ⠆⢂⠢⠔
 
 ###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⠢⠊ BAUWABE 
+
+ PROGRAMM ⠆⢂⠢⠌ MASCHINENCODE
+
+ WABEN-ID ⠆⢂⠢⠑ BA
+
+ BION-NR ⠆⢂⠢⠒ 018
+
+ BION-ID ⠆⢂⠢⠔ BA018
+
+ BSK ⠆⢂⠡⠢ BXMKHTSTBA-MASCHINENCODE
+
+ BION ⠆⢂⠡⠤ BX009MK009HT017ST017BA018
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠢⠑ ⧓ ⠆⢂⠢⠒ Ξ ⠆⢂⠢⠔ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⠢⠔ ⧑ #
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⡈⢠ ⍠ ⠆⢂⠡⠨
+ AXIOM ¡ ⠆⢂⡈⣀ ⍠ ⠆⢂⠡⠰
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠡⠨ ºº: BX-MASCHINENCODE-START
+ EINHEIT ⠆⢂⠡⠰ :ºº BX-MASCHINENCODE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠡⡁ EINGABEWABE
+
+ EINGABE ⠆⢂⠡⡂ <IO>
+
+ # AXIOM | VORBAU 
+ AXIOM ¡ ⠆⢂⠡⠨ ⧖⧖ ⧓ ⠆⢂⠡⡂ Ξ ⠆⢂⠡⡄
+
+ PRODUKT ⠆⢂⠡⡄ ºº: <IO>
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠡⡄ ⍠ ⠆⢂⠡⡈
+
+ EINHEIT ⠆⢂⠡⡈ ºº: <IO>
+
+ # AXIOM | (EINGABE COPIE)
+ AXIOM ¡ ⠆⢂⠡⡈ Ξ ⠆⢂⠡⡐
+ 
+ EINGABEHALTEN ⠆⢂⠡⡐ <IO>
+
+KINDERWABEN-KATEGORIE ⠆⢂⠡⡠ SYSTEMWABE
+
+ HONIGTROPFEN ⠆⢂⠡⢁ <ART>
+
+ # AXIOM | (EINGABE ABGLEICHEN)
+ AXIOM ¡ ⠆⢂⠡⡐ ⟗ ⧖⧖ ⠆⢂⠡⢁ Ξ ⠆⢂⠡⢄
+
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡ ⠆⢂⠡⢄ ⧑ ⠆⢂⠘⢐
+
+ AUSGABE ⠆⢂⠘⢐ ºº: <IO>
+
+ # AXIOM | EINGABEBEHALTEN LÖSCHEN
+ AXIOM ¡ ⠆⢂⠡⡐ ⎚
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠘⢐ ⍠ ⠆⢂⠘⢠
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⢂⠘⢠ ºº: <IO>
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠢⠔ ⦳ #
+
+###====================================|====================================###
+
+ # SPÄTER WEITER 
 
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
 
- # ganz am schluss überall noch den tastencode kontrollieren 
-   insbesondere der eingabehalt übergang , vielleicht später 
-   direkt verschalten ... momentan ist eine system-id 
-   lose angesetzt um den übetragungszustand zu streuen .
+ # MUTTERWABEN MODUL BAUWABE COMBOWABE 
+ # MUTTERWABEN MODUL ENDWABE AUSFÜHRUNGSWABE
+
+ ÜBERALL EINBAUEN .
+
+ SPÄTER WIRD DIE AUSFÜHRUNGSWABE MIT DEM EXPLIZITEN 
+ AUSFÜHRUNGSZÜNDER BELEGT.
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

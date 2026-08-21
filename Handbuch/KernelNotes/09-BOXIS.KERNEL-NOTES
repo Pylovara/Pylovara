@@ -303,7 +303,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠃ AUSFÜRHUNGSWABE
  EINHEIT ⠆⢂⠊⠔ ": <IO> :" BX-PRINT-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠌⠃ ͼ
+ AXIOM ¡ ⠆⢂⠌⠃ ⦱
 
 ###====================================|====================================###
 ###=================================ALU-BOXIS===============================###
@@ -541,7 +541,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠅ AUSFÜRHUNGSWABE
  EINHEIT ⠆⢂⠉⠑ ×: <IO> :× BX-ALU-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠉⢠ ͼ
+ AXIOM ¡ ⠆⢂⠉⢠ ⦱
 
 ###====================================|====================================###
 ###===============================SYSCALL-BOXIS=============================###
@@ -778,7 +778,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠊ AUSFÜRHUNGSWABE
  EINHEIT ⠆⢂⠉⡐ ,: <IO> :, BX-SYSCALL-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠊⠨ ͼ
+ AXIOM ¡ ⠆⢂⠊⠨ ⦱
 
 ###====================================|====================================###
 ###=================================ABI-BOXIS===============================###
@@ -1016,7 +1016,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠌ AUSFÜRHUNGSWABE
  EINHEIT ⠆⢂⠉⡂ Ħ: <IO> :Ħ BX-ABI-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠉⠢ ͼ
+ AXIOM ¡ ⠆⢂⠉⠢ ⦱
 
 ###====================================|====================================###
 ###===============================SHELL-BOXIS===============================###
@@ -1253,7 +1253,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠅⣀ AUSFÜRHUNGSWABE
  EINHEIT ⠆⢂⠅⠔ ': <IO> :' BX-SHELL-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠅⢄ ͼ
+ AXIOM ¡ ⠆⢂⠅⢄ ⦱
 
 ###====================================|====================================###
 ###===============================EINGABE-BOXIS===============================###
@@ -1451,12 +1451,49 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠑⢐ COMBOWABE
  EINHEIT ⠆⢂⠒⠅ ¥: <IO> :¥ BX-EINGABE-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠒⢁ ⦳ #
+ AXIOM ¡ ⠆⢂⠒⢁ ⦳ ⠆⢂⠅⠨
 
 ###====================================|====================================###
 
- # SPÄTER WEITER
+MUTTERWABEN-KATEGORIE ⠆⢂⠅⠘ ENDWABE
 
+ PROGRAMM ⠆⢂⠅⠡ EINGABE
+
+ WABEN-ID ⠆⢂⠅⠢ ED
+
+ BION-NR ⠆⢂⠅⠤ 012
+
+ BION-ID ⠆⢂⠅⠨ ED012
+
+ BSK ⠆⢂⠅⠰ BXMKHTSTBABAED-EINGABE
+
+ BION ⠆⢂⠅⡁ BX009MK009HT012ST012BA013BA23ED012
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠅⠢ ⧓ ⠆⢂⠅⠤ Ξ ⠆⢂⠅⠨
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢂⠅⠨ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠒⠅ ⍠ ⠆⢂⠅⡂
+
+ EINHEIT ⠆⢂⠅⡂ ¥: <IO> :¥ BX-EINGABE-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠅⡄ BX-EINGABE-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠅⡂ ⥓ ⠆⢂⠅⡄ ⍠ ⠆⢂⠅⡈ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢂⠅⡈ ¥: <IO> :¥ BX-EINGABE-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠅⠨ ⦱
+
+###====================================|====================================###
 ###=================================MCD-BOXIS===============================###
 ###====================================|====================================###
 

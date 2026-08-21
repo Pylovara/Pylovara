@@ -291,7 +291,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠊⢄ ENDWABE
 
  EINHEIT ⠆⢂⠊⠑ ": <IO> :" BX-PRINT-KOMPLETT
 
-TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠃ AUSFÜRHUNGSWABE
 
  # AXIOM | NAME SETZEN  
  PRÄFIX ⠆⢂⠊⠒ BX-PRINT-KOMPLETT
@@ -529,7 +529,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠉⢁ ENDWABE
 
  EINHEIT ⠆⢂⠊⠅ ×: <IO> :× BX-ALU-KOMPLETT
 
-TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠅ AUSFÜRHUNGSWABE
 
  # AXIOM | NAME SETZEN  
  PRÄFIX ⠆⢂⠊⠉ BX-ALU-KOMPLETT
@@ -766,7 +766,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠊⠘ ENDWABE
 
  EINHEIT ⠆⢂⠊⡂ ,: <IO> :, BX-SYSCALL-KOMPLETT
 
-TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠊ AUSFÜRHUNGSWABE
 
  # AXIOM | NAME SETZEN  
  PRÄFIX ⠆⢂⠉⡈ BX-SYSCALL-KOMPLETT
@@ -1004,7 +1004,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠉⠒ ENDWABE
 
  EINHEIT ⠆⢂⠉⠰ Ħ: <IO> :Ħ BX-ABI-KOMPLETT
 
-TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⢂⠉⠌ AUSFÜRHUNGSWABE
 
  # AXIOM | NAME SETZEN  
  PRÄFIX ⠆⢂⠉⡁ BX-ABI-KOMPLETT
@@ -1018,6 +1018,7 @@ TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ ⠆⢂⠉⠢ ͼ
 
+###====================================|====================================###
 ###===============================SHELL-BOXIS===============================###
 ###====================================|====================================###
 
@@ -1187,7 +1188,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠔⠊ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠔⠑ ⧓ ⠆⢂⠔⠒ Ξ ⠆⢂⠔⠘
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠔⠘ ⧑ #
+ AXIOM ¡ ⠆⢂⠔⠘ ⧑ ⠆⢂⠅⢄
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⠰⢠ ⍠ ⠆⢂⠒⠰
@@ -1212,12 +1213,49 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠑⢠ COMBOWABE
  EINHEIT ⠆⢂⠒⡂ ': <IO> :' BX-SHELL-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠔⠘ ⦳ #
+ AXIOM ¡ ⠆⢂⠔⠘ ⦳ ⠆⢂⠅⢄
 
 ###====================================|====================================###
 
- # SPÄTER WEITER
+MUTTERWABEN-KATEGORIE ⠆⢂⠉⡄ ENDWABE
 
+ PROGRAMM ⠆⢂⠅⡐ SHELL
+
+ WABEN-ID ⠆⢂⠅⡠ ED
+
+ BION-NR ⠆⢂⠅⢁ 011
+
+ BION-ID ⠆⢂⠅⢄ ED011
+
+ BSK ⠆⢂⠅⢈ BXMKHTSTBABAED-SHELL
+
+ BION ⠆⢂⠅⢐ BX009MK009HT011ST011BA012BA022ED011
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠅⡠ ⧓ ⠆⢂⠅⢁ Ξ ⠆⢂⠅⢄
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢂⠅⢄ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠒⡂ ⍠ ⠆⢂⠅⢠
+
+ EINHEIT ⠆⢂⠅⢠ ': <IO> :' BX-SHELL-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠅⣀ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠅⠒ BX-SHELL-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠅⢠ ⥓ ⠆⢂⠅⠒ ⍠ ⠆⢂⠅⠔ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢂⠅⠔ ': <IO> :' BX-SHELL-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠅⢄ ͼ
+
+###====================================|====================================###
 ###===============================EINGABE-BOXIS===============================###
 ###====================================|====================================###
 

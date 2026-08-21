@@ -568,7 +568,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⡂⡠ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⡂⢄ ⧓ ⠆⢂⡂⢈ Ξ ⠆⢂⡂⢐
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⡂⢐ ⧑ 
+ AXIOM ¡ ⠆⢂⡂⢐ ⧑ ⠆⢂⠘⠑
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⢐⠢ ⍠ ⠆⢂⡄⠃
@@ -619,7 +619,53 @@ KINDERWABEN-KATEGORIE ⠆⢂⠨⢄ SYSTEMWABE
  EINHEIT ⠆⢂⡂⠤ ,: <IO>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⡂⢐ ⦳ #
+ AXIOM ¡ ⠆⢂⡂⢐ ⦳ ⠆⢂⠘⠑
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⠘⠅ BAUWABE 
+
+ PROGRAMM ⠆⢂⠘⠉ SYSCALL
+
+ WABEN-ID ⠆⢂⠘⠊ BA
+
+ BION-NR ⠆⢂⠘⠌ 020
+
+ BION-ID ⠆⢂⠘⠑ BA020
+
+ BSK ⠆⢂⠘⠒ BXMKHTSTBABA-SYSCALL
+
+ BION ⠆⢂⠘⠔ BX009MK009HT009ST009BA010BA020
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠘⠊ ⧓ ⠆⢂⠘⠌ Ξ ⠆⢂⠘⠑
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⠘⠑ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⡂⠤ ⍠ ⠆⢂⠘⠢
+ AXIOM ¡ ⠆⢂⡄⠅ ⍠ ⠆⢂⠔⠨
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠘⠢ ,: <IO> 
+ EINHEIT ⠆⢂⠔⠨ :,
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠔⠰ COMBOWABE
+
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢂⠘⠢ ⧓ ⠆⢂⠔⠨ Ξ ⠆⢂⠔⡂
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠔⡁ BX-SYSCALL-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠔⡂ ⥓ ⠆⢂⠔⡁ ⍠ ⠆⢂⠔⡂
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠔⡂ ,: <IO> :, BX-SYSCALL-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠘⠑ ⦳ #
 
 ###====================================|====================================###
 

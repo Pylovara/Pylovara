@@ -85,6 +85,23 @@
  ䷁ <- WIRD WARSCHEINS SPÄTER ZUM 8 BRILLIAN PATTER 
  ⠀ <- ALS EQUIVALENT GEFORMT.
 
+ ### BEISPIEL: 42 + 137
+
+ # 1. BITBREITE FESTLEGEN
+ ䷁ = 01 - 99  (8 Bit, reicht für 42)
+ ䷗ = 100 - 999 (16 Bit, reicht für 137)
+
+ # 2. ZAHLEN IN SEGMENTE
+ 42 = ⠄⠂
+ 137 = ⠁⠄⠠
+
+ # 3. RECHNUNG
+ ⠄⠂ + ⠁⠄⠠ = 179
+ 179 = ⠁⠠⣀
+
+ # 4. AUSGABE
+ ䷗ (Bitbreite) + ⠁⠠⣀ (Wert) = 179
+
 ############################################
 
 - BOXIS 

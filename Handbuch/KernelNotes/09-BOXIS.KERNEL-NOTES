@@ -2173,7 +2173,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠢⠊ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠢⠑ ⧓ ⠆⢂⠢⠒ Ξ ⠆⢂⠢⠔ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠢⠔ ⧑ #
+ AXIOM ¡ ⠆⢂⠢⠔ ⧑ ⠆⢂⠌⠨
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⡈⢠ ⍠ ⠆⢂⠡⠨
@@ -2224,7 +2224,53 @@ KINDERWABEN-KATEGORIE ⠆⢂⠡⡠ SYSTEMWABE
  EINHEIT ⠆⢂⠘⢠ ºº: <IO>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠢⠔ ⦳ #
+ AXIOM ¡ ⠆⢂⠢⠔ ⦳ ⠆⢂⠌⠨
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⠌⠘ BAUWABE 
+
+ PROGRAMM ⠆⢂⠌⠡ MASCHINENCODE
+
+ WABEN-ID ⠆⢂⠌⠢ BA
+
+ BION-NR ⠆⢂⠌⠤ 028
+
+ BION-ID ⠆⢂⠌⠨ BA028
+
+ BSK ⠆⢂⠌⠰ BXMKHTSTBABA-MASCHINENCODE
+
+ BION ⠆⢂⠌⡁ BX009MK009HT017ST017BA018BA028
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠌⠢ ⧓ ⠆⢂⠌⠤ Ξ ⠆⢂⠌⠨
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⠌⠨ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠘⢠ ⍠ ⠆⢂⠊⡄
+ AXIOM ¡ ⠆⢂⡈⣀ ⍠ ⠆⢂⠊⡈
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠊⡄ ºº: <IO>
+ EINHEIT ⠆⢂⠊⡈ :ºº BX-MASCHINENCODE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠊⡐ COMBOWABE
+
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢂⠊⡄ ⧓ ⠆⢂⠊⡈ Ξ ⠆⢂⠊⡠
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠊⢁ BX-MASCHINENCODE-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠊⡠ ⥓ ⠆⢂⠊⢁ ⍠ ⠆⢂⠊⡠
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠊⡠ ºº: <IO> :ºº BX-MASCHINENCODE-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠌⠨ ⦳ #
 
 ###====================================|====================================###
 
@@ -2233,13 +2279,20 @@ KINDERWABEN-KATEGORIE ⠆⢂⠡⡠ SYSTEMWABE
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
 
- # MUTTERWABEN MODUL BAUWABE COMBOWABE 
- # MUTTERWABEN MODUL ENDWABE AUSFÜHRUNGSWABE
+ # FERTIG : MUTTERWABEN MODUL BAUWABE COMBOWABE 
+ # UNFERTIG : MUTTERWABEN MODUL ENDWABE AUSFÜHRUNGSWABE
 
  ÜBERALL EINBAUEN .
 
  SPÄTER WIRD DIE AUSFÜHRUNGSWABE MIT DEM EXPLIZITEN 
  AUSFÜHRUNGSZÜNDER BELEGT.
+
+ SIEHT SCHONMAL SAUBERER AUS ALS VORHER IN 00-82 IN DEM ASPEKT 
+
+ jetzt bischen ausruhe dann die endwaben setzen ... dann wären 
+ die boxis erstmal eingewabt in die tws 0.3 struktur . 
+
+ danach gehts weiter zum protein / aktionsdraht
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

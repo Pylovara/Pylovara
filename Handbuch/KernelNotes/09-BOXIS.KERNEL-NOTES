@@ -1961,9 +1961,9 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠢⠘ BAUWABE
 
  WABEN-ID ⠆⢂⠢⠤ BA
 
- BION-NR ⠆⢂⠢⠨ 016
+ BION-NR ⠆⢂⠢⠨ 017
 
- BION-ID ⠆⢂⠢⠰ BA016
+ BION-ID ⠆⢂⠢⠰ BA017
 
  BSK ⠆⢂⠢⡁ BXMKHTSTBA-OPCODE
 
@@ -1972,7 +1972,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠢⠘ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠢⠤ ⧓ ⠆⢂⠢⠨ Ξ ⠆⢂⠢⠰ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠢⠰ ⧑ #
+ AXIOM ¡ ⠆⢂⠢⠰ ⧑ ⠆⢂⠌⢠
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⡐⠉ ⍠ ⠆⢂⠢⡄
@@ -2023,7 +2023,53 @@ KINDERWABEN-KATEGORIE ⠆⢂⠡⢠ SYSTEMWABE
  EINHEIT ⠆⢂⠢⠉ º: <IO>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠢⠰ ⦳ #
+ AXIOM ¡ ⠆⢂⠢⠰ ⦳ ⠆⢂⠌⢠
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⠌⢁ BAUWABE 
+
+ PROGRAMM ⠆⢂⠌⢄ OPCODE
+
+ WABEN-ID ⠆⢂⠌⢈ BA
+
+ BION-NR ⠆⢂⠌⢐ 027
+
+ BION-ID ⠆⢂⠌⢠ BA027
+
+ BSK ⠆⢂⠌⣀ BXMKHTSTBABA-OPCODE
+
+ BION ⠆⢂⠑⠃ BX009MK009HT016ST016BA017BA027
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠌⢈ ⧓ ⠆⢂⠌⢐ Ξ ⠆⢂⠌⢠
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⠌⢠ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠢⠉ ⍠ ⠆⢂⠌⠉
+ AXIOM ¡ ⠆⢂⡐⠊ ⍠ ⠆⢂⠌⠊
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠌⠉ º: <IO>
+ EINHEIT ⠆⢂⠌⠊ :º BX-OPCODE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠌⠔ COMBOWABE
+
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢂⠌⠉ ⧓ ⠆⢂⠌⠊ Ξ ⠆⢂⠌⠒
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠌⠑ BX-OPCODE-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠌⠒ ⥓ ⠆⢂⠌⠑ ⍠ ⠆⢂⠌⠒
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠌⠒ º: <IO> :º BX-OPCODE-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠌⢠ ⦳ #
 
 ###====================================|====================================###
 

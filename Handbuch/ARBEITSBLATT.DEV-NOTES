@@ -7,9 +7,53 @@
   WIRD AUF JEDENFALL EIN LANGES STÜCK PAPIER ...
 
 
+##########################
+
+MUTTERWABEN-KATEGORIE  BAUWABE 
+
+ PROGRAMM 
+
+ WABEN-ID  BA
+
+ BION-NR  
+
+ BION-ID  
+
+ BSK  
+
+ BION  
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⍠
+
+ # EINHEIT | RAM
+ EINHEIT  
+
+TOCHTERWABEN-KATEGORIE  COMBOWABE
+
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡  ⧓  Ξ 
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX 
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍠ #
+
+ # EINHEIT | RAM
+ EINHEIT 
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡   ⦳ #NEXT BION
 
 
 
+############################
 
 
 

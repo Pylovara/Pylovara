@@ -166,7 +166,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⡈⠉ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⡈⠌ ⧓ ⠆⢂⡈⠑ Ξ ⠆⢂⡈⠒
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⡈⠒ ⧑ 
+ AXIOM ¡ ⠆⢂⡈⠒ ⧑ ⠆⢂⠡⠑
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⢠⢁ ⍠ ⠆⢂⡈⠡
@@ -217,41 +217,53 @@ KINDERWABEN-KATEGORIE ⠆⢂⡄⡐ SYSTEMWABE
  EINHEIT ⠆⢂⡄⢈ ": <IO>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⡈⠒ ⦳ #
+ AXIOM ¡ ⠆⢂⡈⠒ ⦳ ⠆⢂⠡⠑
 
 ###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE ⠆⢂⠡⠃ BAUWABE 
 
- PROGRAMM 
+ PROGRAMM ⠆⢂⠡⠉ PRINT
 
- WABEN-ID  BA
+ WABEN-ID ⠆⢂⠡⠊ BA
 
- BION-NR  
+ BION-NR ⠆⢂⠡⠌ 018
 
- BION-ID  
+ BION-ID ⠆⢂⠡⠑ BA018
 
- BSK  
+ BSK ⠆⢂⠡⠒ BXMKHTSTBABA-PRINT
 
- BION  
+ BION ⠆⢂⠡⠔ BX009MK009HT007ST007BA008BA018
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢂⠡⠊ ⧓ ⠆⢂⠡⠌ Ξ ⠆⢂⠡⠑
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢂⠡⠑ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⍠
+ AXIOM ¡ ⠆⢂⡄⢈ ⍠ ⠆⢂⠡⠘
+ AXIOM ¡ ⠆⢂⡈⠤ ⍠ ⠆⢂⠘⠤
 
  # EINHEIT | RAM
- EINHEIT  
+ EINHEIT ⠆⢂⠡⠘ ": <IO> 
+ EINHEIT ⠆⢂⠘⠤ :"
 
-TOCHTERWABEN-KATEGORIE 
+TOCHTERWABEN-KATEGORIE ⠆⢂⠡⠅ COMBOWABE
 
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢂⠡⠘ ⧓ ⠆⢂⠘⠤ Ξ ⠆⢂⠘⠰
 
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠘⠨ BX-PRINT-KOMPLETT
 
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠘⠰ ⥓ ⠆⢂⠘⠨ ⍠ ⠆⢂⠘⠰
 
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠘⠰ ": <IO> :" BX-PRINT-KOMPLETT
 
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠡⠑ ⦳ #NEXT BION
 
 ###====================================|====================================###
 

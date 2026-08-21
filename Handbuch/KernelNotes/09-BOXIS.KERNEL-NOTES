@@ -238,7 +238,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠡⠃ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠡⠊ ⧓ ⠆⢂⠡⠌ Ξ ⠆⢂⠡⠑
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠡⠑ ⧑ 
+ AXIOM ¡ ⠆⢂⠡⠑ ⧑ ⠆⢂⠌⠃
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⡄⢈ ⍠ ⠆⢂⠡⠘
@@ -263,16 +263,48 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠡⠅ COMBOWABE
  EINHEIT ⠆⢂⠘⠰ ": <IO> :" BX-PRINT-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠡⠑ ⦳ #NEXT BION
+ AXIOM ¡ ⠆⢂⠡⠑ ⦳ ⠆⢂⠌⠃
 
 ###====================================|====================================###
 
- # HIER WEITER SPÄTER 
-#######################
-#
-# später muttermodul endwabe ausführungswabe 
-#
-#######################
+MUTTERWABEN-KATEGORIE ⠆⢂⠊⢄ ENDWABE
+
+ PROGRAMM ⠆⢂⠊⢈ PRINT
+
+ WABEN-ID ⠆⢂⠊⢐ ED
+
+ BION-NR ⠆⢂⠊⢠ 007 
+
+ BION-ID ⠆⢂⠌⠃ ED007
+
+ BSK ⠆⢂⠌⠅ BXMKHTSTBABAED-PRINT
+
+ BION ⠆⢂⠊⠌ BX009MK009HT007ST007BA008BA018ED007
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠊⢐ ⧓ ⠆⢂⠊⢠ Ξ ⠆⢂⠌⠃
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢂⠌⠃ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠘⠰ ⍠ ⠆⢂⠊⠑
+
+ EINHEIT ⠆⢂⠊⠑ ": <IO> :" BX-PRINT-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠊⠒ BX-PRINT-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠊⠑ ⥓ ⠆⢂⠊⠒ ⍠ ⠆⢂⠊⠔ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢂⠊⠔ ": <IO> :" BX-PRINT-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠌⠃ ͼ
+
 ###====================================|====================================###
 ###=================================ALU-BOXIS===============================###
 ###====================================|====================================###

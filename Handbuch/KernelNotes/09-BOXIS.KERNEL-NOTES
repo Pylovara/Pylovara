@@ -1936,13 +1936,13 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠃⡄ ENDWABE
 
  WABEN-ID ⠆⢂⠃⡐ ED
 
- BION-NR ⠆⢁⣀⡠ 013
+ BION-NR ⠆⢁⣀⡠ 014
 
- BION-ID ⠆⢁⣀⢂ ED013
+ BION-ID ⠆⢁⣀⢂ ED014
 
  BSK ⠆⢁⣀⢄ BXMKHTSTBABAED-PFAD
 
- BION ⠆⢁⣀⢈ BX009MK009HT014ST014BA015BA025ED013
+ BION ⠆⢁⣀⢈ BX009MK009HT014ST014BA015BA025ED014
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠃⡐ ⧓ ⠆⢁⣀⡠ Ξ ⠆⢁⣀⢂
@@ -2173,13 +2173,13 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠅⠑ ENDWABE
 
  WABEN-ID ⠆⢂⠃⠘ ED
 
- BION-NR ⠆⢂⠃⠡ 014
+ BION-NR ⠆⢂⠃⠡ 015
 
- BION-ID ⠆⢂⠃⠢ ED014
+ BION-ID ⠆⢂⠃⠢ ED015
 
  BSK ⠆⢂⠃⠤ BXMKHTSTBABAED-NET
 
- BION ⠆⢂⠃⠨ BX009MK009HT015ST015BA016BA026ED014
+ BION ⠆⢂⠃⠨ BX009MK009HT015ST015BA016BA026ED015
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠃⠘ ⧓ ⠆⢂⠃⠡ Ξ ⠆⢂⠃⠢
@@ -2376,7 +2376,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠌⢁ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠌⢈ ⧓ ⠆⢂⠌⢐ Ξ ⠆⢂⠌⢠
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠌⢠ ⧑ 
+ AXIOM ¡ ⠆⢂⠌⢠ ⧑ ⠆⢁⣀⠡
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⠢⠉ ⍠ ⠆⢂⠌⠉
@@ -2401,12 +2401,49 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠌⠔ COMBOWABE
  EINHEIT ⠆⢂⠌⠒ º: <IO> :º BX-OPCODE-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠌⢠ ⦳ #
+ AXIOM ¡ ⠆⢂⠌⢠ ⦳ ⠆⢁⣀⠡
 
 ###====================================|====================================###
 
- # SPÄTER WEITER
+MUTTERWABEN-KATEGORIE ⠆⢂⠃⠑ ENDWABE
 
+ PROGRAMM ⠆⢂⠃⠒ OPCODE
+
+ WABEN-ID ⠆⢁⣀⠔ ED
+
+ BION-NR ⠆⢁⣀⠘ 016
+
+ BION-ID ⠆⢁⣀⠡ ED016
+
+ BSK ⠆⢁⣀⠢ BXMKHTSTBABAED-OPCODE
+
+ BION ⠆⢁⣀⠤ BX009MK009HT016ST016BA017BA027ED016
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⣀⠔ ⧓ ⠆⢁⣀⠘ Ξ ⠆⢁⣀⠡
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢁⣀⠡ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠌⠒ ⍠ ⠆⢁⣀⠨
+
+ EINHEIT ⠆⢁⣀⠨ º: <IO> :º BX-OPCODE-KOMPLETT 
+
+TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⣀⠰ BX-OPCODE-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⣀⠨ ⥓ ⠆⢁⣀⠰ ⍠ ⠆⢁⣀⡁ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⣀⡁ º: <IO> :º BX-OPCODE-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⣀⠡ ⦱
+
+###====================================|====================================###
 ###===========================MASCHINENCODE-BOXIS===========================###
 ###====================================|====================================###
 

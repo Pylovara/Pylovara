@@ -1664,7 +1664,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠒⠔ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠒⠡ ⧓ ⠆⢂⠒⠢ Ξ ⠆⢂⠒⠤
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠒⠤ ⧑ #
+ AXIOM ¡ ⠆⢂⠒⠤ ⧑ ⠆⢂⠃⢐
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⠨⡂ ⍠ ⠆⢂⠒⠉
@@ -1689,12 +1689,49 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠑⢄ COMBOWABE
  EINHEIT ⠆⢂⠒⠑ ~: <IO> :~ BX-MCD-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠒⠤ ⦳ #
+ AXIOM ¡ ⠆⢂⠒⠤ ⦳ ⠆⢂⠃⢐
 
 ###====================================|====================================###
 
- # SPÄTER WEITER
+MUTTERWABEN-KATEGORIE ⠆⢂⠃⡠ ENDWABE
 
+ PROGRAMM ⠆⢂⠃⢁ MCD
+
+ WABEN-ID ⠆⢂⠃⢄ ED
+
+ BION-NR ⠆⢂⠃⢈ 013 
+
+ BION-ID ⠆⢂⠃⢐ ED013
+
+ BSK ⠆⢂⠃⢠ BXMKHTSTBABAED-MCD
+
+ BION ⠆⢂⠃⣀ BX009MK009HT013ST013BA014BA024ED013
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠃⢄ ⧓ ⠆⢂⠃⢈ Ξ ⠆⢂⠃⢐
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢂⠃⢐ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠒⠑ ⍠ ⠆⢂⠅⠃
+
+ EINHEIT ⠆⢂⠅⠃ ~: <IO> :~ BX-MCD-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠅⠉ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠅⠊ BX-MCD-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠅⠃ ⥓ ⠆⢂⠅⠊ ⍠ ⠆⢂⠅⠌ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢂⠅⠌ ~: <IO> :~ BX-MCD-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠃⢐ ⦱
+
+###====================================|====================================###
 ###=================================PFAD-BOXIS==============================###
 ###====================================|====================================###
 

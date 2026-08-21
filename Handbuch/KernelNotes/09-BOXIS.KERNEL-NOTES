@@ -505,7 +505,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⡈⠢ EINGABEWABE
  
  EINGABEHALTEN ⠆⢂⡂⠢ <IO>
 
-KINDERWABEN-KATEGORIE  SYSTEMWABE
+KINDERWABEN-KATEGORIE ⠆⢂⠨⢄ SYSTEMWABE
 
  HONIGTROPFEN ⠆⢂⡂⠔ <ART>
 
@@ -814,7 +814,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⡈⠢ EINGABEWABE
  
  EINGABEHALTEN ⠆⢂⠰⢁ <IO>
 
-KINDERWABEN-KATEGORIE  SYSTEMWABE
+KINDERWABEN-KATEGORIE ⠆⢂⠨⢁ SYSTEMWABE
 
  HONIGTROPFEN ⠆⢂⠰⢄ <ART>
 
@@ -944,7 +944,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠰⣀ BAUWABE
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⢄⢁ ⍠ ⠆⢂⠰⠔
- AXIOM ¡ ⠆⢂⢁⢐ ⍠ 
+ AXIOM ¡ ⠆⢂⢁⢐ ⍠ ⠆⢂⠰⠘
 
  # EINHEIT | RAM
  EINHEIT ⠆⢂⠰⠔ ¥: BX-PRINT-START
@@ -1038,7 +1038,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⢁⢠ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⢄⠃ ⧓ ⠆⢂⢄⠅ Ξ ⠆⢂⢄⠉ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⢄⠉ ⧑ #
+ AXIOM ¡ ⠆⢂⢄⠉ ⧑ ⠆⢂⠰⠃
 
  TASTENCODE ⠆⢂⢄⠑ SHIFT
  TASTENCODE ⠆⢂⢄⠒ ALTGR
@@ -1074,9 +1074,83 @@ MUTTERWABEN-KATEGORIE ⠆⢂⢁⢠ STARTWABE
  EINHEIT ⠆⢂⢁⡈ :~ BX-MCD-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⢄⠉ ⦳ #
+ AXIOM ¡ ⠆⢂⢄⠉ ⦳ ⠆⢂⠰⠃
 
 ###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢂⠨⢈ BAUWABE 
+
+ PROGRAMM ⠆⢂⠨⢐ MCD 
+
+ WABEN-ID ⠆⢂⠨⢠ BA
+
+ BION-NR ⠆⢂⠨⣀ 014
+
+ BION-ID ⠆⢂⠰⠃ BA014
+
+ BSK ⠆⢂⠰⠅ BXMKHTSTBA-
+
+ BION ⠆⢂⠰⠉ BX009MK009HT013ST013BA014
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠨⢠ ⧓ ⠆⢂⠨⣀ Ξ ⠆⢂⠰⠃
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢂⠰⠃ ⧑ #
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⢁⡄ ⍠ ⠆⢂⠰⠊
+ AXIOM ¡ ⠆⢂⢁⡈ ⍠ ⠆⢂⠰⠌
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢂⠰⠊ ~: BX-SHELL-START
+ EINHEIT ⠆⢂⠰⠌ :~ BX-SHELL-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠨⠒ EINGABEWABE
+
+ EINGABE ⠆⢂⠨⠔ <IO>
+
+ # AXIOM | VORBAU 
+ AXIOM ¡ ⠆⢂⠰⠊ ⧖⧖ ⧓ ⠆⢂⠨⠔ Ξ ⠆⢂⠨⠘
+
+ PRODUKT ⠆⢂⠨⠘ ~: <IO>
+
+ # AXIOM | RAM 
+ AXIOM ¡  ⍠ 
+
+ EINHEIT ⠆⢂⠨⠘ ~: <IO>
+
+ # AXIOM | (EINGABE COPIE)
+ AXIOM ¡ ⠆⢂⠨⠘ Ξ ⠆⢂⠨⠡
+ 
+ EINGABEHALTEN ⠆⢂⠨⠡ <IO>
+
+KINDERWABEN-KATEGORIE ⠆⢂⠨⠢ SYSTEMWABE
+
+ HONIGTROPFEN ⠆⢂⠨⠤ <ART>
+
+ # AXIOM | (EINGABE ABGLEICHEN)
+ AXIOM ¡ ⠆⢂⠨⠡ ⟗ ⧖⧖ ⠆⢂⠨⠤ Ξ ⠆⢂⠨⡁ 
+
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡ ⠆⢂⠨⡁ ⧑ ⠆⢂⠨⠰
+
+ AUSGABE ⠆⢂⠨⠰ ~: <IO>
+
+ # AXIOM | EINGABEBEHALTEN LÖSCHEN
+ AXIOM ¡ ⠆⢂⠨⠡ ⎚
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠨⠰ ⍠ ⠆⢂⠨⡂
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⢂⠨⡂ ~: <IO>
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠰⠃ ⦳ #
+
+###====================================|====================================###
+
+ # SPÄTER WEITER
 
 ###=================================PFAD-BOXIS==============================###
 ###====================================|====================================###

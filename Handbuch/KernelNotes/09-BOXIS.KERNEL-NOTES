@@ -1479,7 +1479,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠅⠘ ENDWABE
 
  EINHEIT ⠆⢂⠅⡂ ¥: <IO> :¥ BX-EINGABE-KOMPLETT
 
-TOCHTERWABEN-KATEGORIE AUSFÜRHUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⢂⠃⠌ AUSFÜRHUNGSWABE
 
  # AXIOM | NAME SETZEN  
  PRÄFIX ⠆⢂⠅⡄ BX-EINGABE-KOMPLETT
@@ -1901,7 +1901,7 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠑⢁ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠑⡂ ⧓ ⠆⢂⠑⡄ Ξ ⠆⢂⠑⡈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠑⡈ ⧑ 
+ AXIOM ¡ ⠆⢂⠑⡈ ⧑ ⠆⢁⣀⢂
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⠤⠢ ⍠ ⠆⢂⠑⠅
@@ -1926,12 +1926,49 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠑⠒ COMBOWABE
  EINHEIT ⠆⢂⠑⠌ $: <IO> :$ BX-PFAD-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠑⡈ ⦳ #
+ AXIOM ¡ ⠆⢂⠑⡈ ⦳ ⠆⢁⣀⢂
 
 ###====================================|====================================###
 
- # SPÄTER WEITER
+MUTTERWABEN-KATEGORIE ⠆⢂⠃⡄ ENDWABE
 
+ PROGRAMM ⠆⢂⠃⡈ PFAD
+
+ WABEN-ID ⠆⢂⠃⡐ ED
+
+ BION-NR ⠆⢁⣀⡠ 013
+
+ BION-ID ⠆⢁⣀⢂ ED013
+
+ BSK ⠆⢁⣀⢄ BXMKHTSTBABAED-PFAD
+
+ BION ⠆⢁⣀⢈ BX009MK009HT014ST014BA015BA025ED013
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠃⡐ ⧓ ⠆⢁⣀⡠ Ξ ⠆⢁⣀⢂
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢁⣀⢂ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠑⠌ ⍠ ⠆⢁⣀⢐
+
+ EINHEIT ⠆⢁⣀⢐ $: <IO> :$ BX-PFAD-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⣀⢠ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠃⠅ BX-PFAD-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⣀⢐ ⥓ ⠆⢂⠃⠅ ⍠ ⠆⢂⠃⠉ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢂⠃⠉ $: <IO> :$ BX-PFAD-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⣀⢂ ⦱
+
+###====================================|====================================###
 ###=================================NET-BOXIS===============================###
 ###====================================|====================================###
 
@@ -2094,14 +2131,14 @@ MUTTERWABEN-KATEGORIE ⠆⢂⠑⠡ BAUWABE
 
  BION-ID ⠆⢂⠑⠰ BA026
 
- BSK ⠆⢂⠌⡂ BXMKHTSTBABA-
+ BSK ⠆⢂⠌⡂ BXMKHTSTBABA-NET
 
  BION ⠆⢂⠌⡄ BX009MK009HT015ST015BA016BA026
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢂⠑⠤ ⧓ ⠆⢂⠑⠨ Ξ ⠆⢂⠑⠰
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢂⠑⠰ ⧑ 
+ AXIOM ¡ ⠆⢂⠑⠰ ⧑ ⠆⢂⠃⠢
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢂⠤⠒ ⍠ ⠆⢂⠑⠔
@@ -2126,12 +2163,49 @@ TOCHTERWABEN-KATEGORIE ⠆⢂⠌⡈ COMBOWABE
  EINHEIT ⠆⢂⠌⡠ §: <IO> :§ BX-NET-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢂⠑⠰ ⦳ #
+ AXIOM ¡ ⠆⢂⠑⠰ ⦳ ⠆⢂⠃⠢
 
 ###====================================|====================================###
 
- # SPÄTER WEITER
+MUTTERWABEN-KATEGORIE ⠆⢂⠅⠑ ENDWABE
 
+ PROGRAMM ⠆⢂⠃⠔ NET
+
+ WABEN-ID ⠆⢂⠃⠘ ED
+
+ BION-NR ⠆⢂⠃⠡ 014
+
+ BION-ID ⠆⢂⠃⠢ ED014
+
+ BSK ⠆⢂⠃⠤ BXMKHTSTBABAED-NET
+
+ BION ⠆⢂⠃⠨ BX009MK009HT015ST015BA016BA026ED014
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢂⠃⠘ ⧓ ⠆⢂⠃⠡ Ξ ⠆⢂⠃⠢
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢂⠃⠢ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢂⠌⡠ ⍠ ⠆⢂⠃⠰
+
+ EINHEIT ⠆⢂⠃⠰ §: <IO> :§ BX-NET-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE ⠆⢂⠃⠊ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢂⠃⡁ BX-NET-KOMPLETT 
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢂⠃⠰ ⥓ ⠆⢂⠃⡁ ⍠ ⠆⢂⠃⡂
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢂⠃⡂ §: <IO> :§ BX-NET-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢂⠃⠢ ⦱
+
+###====================================|====================================###
 ###===============================OPCODE-BOXIS==============================###
 ###====================================|====================================###
 

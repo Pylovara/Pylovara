@@ -1,38 +1,40 @@
-@waben-nr: 30 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
+@waben-nr: 41 =====================LEXIKON NAVIGATION TERMINAL = wabi <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
 ###=============================TOCHTERMODUL================================###
 
-TOCHTERMODUL ⠆⢄⡈⢁ COMBOWABE
+TOCHTERMODUL ⠆⢄⡈⡠ AUSFÜRHUNGSLINKWABE
 
- # AXIOM | KOMPONENTE BAUEN  
- AXIOM ¡
- AXIOM ¡
- AXIOM ¡
+ # PROZESS LINK
+ LINKPROZESS ⠆⢄⡄⠊ 
+ LINKPROZESS ⠆⢄⡄⠌ 
+ LINKPROZESS ⠆⢄⡄⠑ 
+ LINKPROZESS ⠆⢄⡄⠒ 
 
- # AXIOM | NAME SETZEN  
- PRÄFIX ⠆⢄⡂⢐
+ # AXIOM | PROZESSLINK
+ AXIOM ¡   
+ AXIOM ¡   
+ AXIOM ¡   
+
+ # NAME SETZEN  
+ PRÄFIX ⠆⢄⡂⠅ 
 
  # AXIOM | RAM 
  AXIOM ¡ # ⥓ # ⍠ #
 
- # EINHEIT | RAM
- EINHEIT ⠆⢄⡈⠃
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢄⡄⠔
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡   ⦳ #NEXT BION
+ AXIOM ¡  ⑅ (LINKPROZESS) 
 
 ###==============================INFORMATIONEN==============================###
 
- BAUT KOMPONENTE WEITER OHNE EXTERNE DAZUGEHÖRIGKEITEN. 
+ BEENDET DIE HAUPTWABEN PROZESSE UND VERLINKT DEN DATENSATZ.
 
 ###==========================VERWENDETE-WABEN===============================###
 
- # WIRD AN BAUWABEN GEBUNDEN , HIER NUR WO TOCHTERWABEN EINGESETZT WURDEN :
-
- TA = 1 | PI =  | PO = 1 |  BX = 
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
-
 
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

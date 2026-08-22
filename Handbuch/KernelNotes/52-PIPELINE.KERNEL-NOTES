@@ -66,12 +66,123 @@ MUTTERWABEN-KATEGORIE HAUPTWABE
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE
+MUTTERWABEN-KATEGORIE STARTWABE 
 
+ PROGRAMM  
 
+ WABEN-ID  ST
 
-MUTTERWABEN-KATEGORIE
+ BION-NR  
 
+ BION-ID  
+
+ BSK 
+
+ BION  
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+ TASTENCODE 
+ TASTENCODE 
+ TASTENCODE 
+
+ SYMBOLE 
+
+ PRÄFIX 
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+
+ PRODUKT 
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT 
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡  ⦳ #
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE TRAKTOR
+
+ PROGRAMM #
+
+ WABEN-ID # TT
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⍠
+
+ # EINHEIT | RAM
+ EINHEIT # 
+
+ # VERLINKT MASTERKERNWABEN BSK
+ LINK #
+ LINK #
+ LINK #
+ LINK #
+ LINK #
+ LINK #
+ LINK #
+
+ # AXIOM | MK-BSK LINK AUF HAUPTWABEN SETZEN
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+ AXIOM ¡
+
+ # ANSCHLUSS | UND HAUPTWABEN BINDEN 
+ AI-ZYTRON # 
+ AI-NITROX #
+ AIO-PROTEIN #
+ AO-NITROX # 
+ AO-ZYTRON # 
+ AO-REX # 
+ AO-SENTIATOR #
+
+ # AXIOM | PIPELINE
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+ AXIOM ¡ 
+
+TOCHTERWABEN-KATEGORIE
+
+ ##!!
+
+###====================================|====================================###
 
 
 

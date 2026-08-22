@@ -1,6 +1,6 @@
 @kernel-nr: 52 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- #          BIENENGÖNIGIN = PYLOVARA-MATHEMATIK-MATRIX-ARITHMETIK            #
+ #          BIENENGÖNIGIN = PYLOVARA-MATRIX-MATHEMATIK-ARITHMETIK = PMMA     #
 ###===============================STARTPUNKT================================###
 
 # NOTIZ BEREICH :
@@ -43,11 +43,11 @@
  ⠁⠀⠠ 107    ⠂⠀⠠ 207    ⠄⠀⠠ 307
  ⠁⠀⢀ 108    ⠂⠀⢀ 208    ⠄⠀⢀ 308
  ⠁⠀⣀ 109    ⠂⠀⣀ 209    ⠄⠀⣀ 309
- ䷁ ䷗Jump    ䷁ ䷗Jump    ䷁ ䷗Jump
+ ䷁ ䷗ Jump   ䷁ ䷗ Jump   ䷁ ䷗ Jump
 
  #### 4 STELLIG | AB 1000 
 
- ䷁  ䷖Jump   ䷁  ䷖Jump   ䷁  ䷖Jump
+ ䷁  ䷖ Jump  ䷁  ䷖ Jump  ䷁  ䷖ Jump
  ⠁⠀⠀⠀ 1000  ⠂⠀⠀⠀ 2000  ⠄⠀⠀⠀ 3000
  ⠁⠀⠁⠀ 1010  ⠂⠀⠁⠀ 2010  ⠄⠀⠁⠀ 3010
  ⠁⠀⠂⠀ 1020  ⠂⠀⠂⠀ 2020  ⠄⠀⠂⠀ 3020
@@ -58,11 +58,11 @@
  ⠁⠀⠠⠀ 1070  ⠂⠀⠠⠀ 2070  ⠄⠀⠠⠀ 3070
  ⠁⠀⢀⠀ 1080  ⠂⠀⢀⠀ 2080  ⠄⠀⢀⠀ 3080
  ⠁⠀⣀⠀ 1090  ⠂⠀⣀⠀ 2090  ⠄⠀⣀⠀ 3090
- ䷁  ䷖Jump   ䷁  ䷖Jump   ䷁  ䷖Jump
+ ䷁  ䷖ Jump  ䷁  ䷖ Jump  ䷁  ䷖ Jump
 
  #### 5 STELLIG | AB 10000 
 
- ䷁   ䷇Jump    ䷁   ䷇Jump    ䷁   ䷇Jump
+ ䷁   ䷇ Jump   ䷁   ䷇ Jump   ䷁   ䷇ Jump
  ⠁⠀⠀⠀⠀ 10000  ⠂⠀⠀⠀⠀ 20000  ⠄⠀⠀⠀⠀ 30000
  ⠁⠀⠁⠀⠀ 10100  ⠂⠀⠁⠀⠀ 20100  ⠄⠀⠁⠀⠀ 30100
  ⠁⠀⠂⠀⠀ 10200  ⠂⠀⠂⠀⠀ 20200  ⠄⠀⠂⠀⠀ 30200
@@ -73,7 +73,7 @@
  ⠁⠀⠠⠀⠀ 10700  ⠂⠀⠠⠀⠀ 20700  ⠄⠀⠠⠀⠀ 30700
  ⠁⠀⢀⠀⠀ 10800  ⠂⠀⢀⠀⠀ 20800  ⠄⠀⢀⠀⠀ 30800
  ⠁⠀⣀⠀⠀ 10900  ⠂⠀⣀⠀⠀ 20900  ⠄⠀⣀⠀⠀ 30900
- ䷁   ䷇Jump    ䷁   ䷇Jump    ䷁   ䷇Jump
+ ䷁   ䷇ Jump   ䷁   ䷇ Jump   ䷁   ䷇ Jump
 
  # 6 STELLIG | AB 100000
 
@@ -103,6 +103,8 @@
  JUMP = ䷖ = HECK-JUMP = BITBREITE 4
  JUMP = ䷇ = HECK-JUMP = BITBREITE 5
  JUMP = ䷆ = HECK-JUMP = BITBREITE 6
+ ——————————————————————————————————
+ JUMP = * = HECK-JUMP = SKALIERBAR 
 
  MATHEMATISCHE BITBREITE = KOPF-JUMP ~ HECK-JUMP
  DIMENSIONS-SKALIERUNG = JUMP

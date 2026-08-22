@@ -1,35 +1,50 @@
-@kernel-nr: 17 Ð MCMD             | STATUS = DEV LEVEL ROLLING-RELEASE
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####========K17 MCMD========#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #         MCMD = THE PYLOVARA SYSTEM MASTER CONTROL COMMANDO       #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- #   WIRD ERST WEITER VERVOLLSTÄNDIGT , SOBALD DER MOK DRANN KOMMT  #
-###==##==###======#####====STARTPUNKT MCMD=====#####======###==##==###
+@kernel-nr: 32 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #           MCD = THE FUTURE PYLOVARA SYSTEM MASTER CONTROL COMMANDO LINE   #
+###===============================STARTPUNKT================================###
 
-BION Ð MCMD
+MUTTERWABEN-KATEGORIE KOPFWABE
 
- MORPHIC-ID ¡ M
+ KOMPONENTE 
 
- BION-ID ¡ MC
+ KOMPONENTEN-ID 
 
-MASK ¡ MASU-MCMD
+ BION-NR 
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-ID 
 
-BION-KERNWABE Ð MCMD
+ MASTER-ID 
 
- MORPHIC ¡ MK
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡  ⏍  
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ #
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
- BION-ID ¡ MC00
+###====================================|====================================###
 
- AXIOM ¡ MK = <MK>
+MUTTERWABEN-KATEGORIE MASTERKERNWABE
 
- ABSK ¡ MK
+ WABEN-ID  MK
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+ BION-NR  
+
+ BION-ID  
+
+ BSK 
+
+ BION 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+###====================================|====================================###
+
+######### ALTER BLOCK ANSÄTZE
 
 BION-MCMDWABE Ð BESTÄTIGUNG
 
@@ -47,23 +62,6 @@ BION-MCMDWABE Ð BESTÄTIGUNG
 
  SYSTEM-INPUT ¡
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 BION-HAUPTWABE Ð EXTRAWABE-EXTRAS
 
  MORPHIC-ID ¡ MCDX-EXTRAS
@@ -73,10 +71,6 @@ BION-HAUPTWABE Ð EXTRAWABE-EXTRAS
  AXIOM ¡ MCDX-EXTRAS
 
  ABSK ¡ MCDK+MCDX-EXTRAS
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
 
 BION-HAUPTWABE Ð EXTRAWABE-CONTROL
 
@@ -88,10 +82,6 @@ BION-HAUPTWABE Ð EXTRAWABE-CONTROL
 
  ABSK ¡ MCDK+MCDX-CONTROL
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
 BION-HAUPTWABE Ð GENERIERE
 
  MORPHIC-ID ¡ MCDX-GENERIERE
@@ -101,10 +91,6 @@ BION-HAUPTWABE Ð GENERIERE
  AXIOM ¡ MCDX-GENERIERE = 
 
  ABSK ¡ MCDK+MCDX-GENERIERE
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
 
 BION-HAUPTWABE Ð REGISTER
 
@@ -116,16 +102,13 @@ BION-HAUPTWABE Ð REGISTER
 
  ABSK ¡ MCDK+MCDX-REGISTER
 
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
+########## ALTER BLOCK ANSÄTZE
 
-### ==== ##### == #  KOMPONENTEN-GENERAL-SCHALTUNG  # == ##### === ###
- # MASTERWORT = MCCELT # UNFERTIG OFFEN
- # SBSK = 
- # VBSK = 
- # RBSK = MCCK # REIHENFOLGE KLÄREN , MODULATOR ODER ABK ZUERST              
-### ==== ##### == # === ## HERSTELLUNGSDATEN ## === # == ##### === ###
- #  DATUM = [14:08:23 | DI 06 JAN 2025] MARKENBRANDT                #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-### ==== ##### == # === ## ENDPUNKT MCS-CMD ### === # == ##### === ###
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ #  
+ # 
+ # 
+ #  
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

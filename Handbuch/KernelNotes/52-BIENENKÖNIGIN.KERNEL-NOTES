@@ -1,6 +1,6 @@
 @kernel-nr: 52 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- #          BIENENGÖNIGIN = PYLOVARA-MATRIX-MATHEMATIK-ARITHMETIK = PMMA     #
+ #        BIENENGÖNIGIN = PYLOVARA-MATRIX-MATHEMATIK-ARITHMETIK = PMMA       #
 ###===============================STARTPUNKT================================###
 
 # NOTIZ BEREICH :
@@ -115,7 +115,7 @@
  DER KOPF-JUMP = DEFINIERT DIE BASIS-BITBREITE 
  DER HECK-JUMP = SKALIERT DIE DIMENSION
 
- Die Kombination ergibt die gesamte Rechenkapazität
+ DIE KOMBINATION ERGIBT DIE GESAMTE RECHENKAPAZITÄT
 
  ䷁ <- SOLLTE SPÄTER MIT EINZELNEN STRICHEN IM 8 BRILLIAN PATTER ERSTELLT WERDEN
  ⠀ <- EQUIVALENT 
@@ -143,6 +143,17 @@
 
  ZAHLENBERECHNEN WIRD TRIVIAL PER SEGMENT 
  DEN SEGMENT SELBST IST DIE ZAHL. 
+
+
+ DIMENSIONSBERECHNUNG : 
+
+ ䷁ Jump       ䷁ Jump       ䷁ Jump   
+ ⠀ 0          ⠁⠀ 10        ⠂⠀ 20    
+    ,           ,            ,        
+     ䷁ ䷗ Jump   ䷁ ䷗ Jump      ䷁ ䷗ Jump
+     ⠁⠀⠀ 100    ⠂⠀⠀ 200       ⠄⠀⠀ 300
+
+ ䷁,䷁䷗ = 0,100 | 10,200 | 20,300
 
  ANMERKUNG : 
 

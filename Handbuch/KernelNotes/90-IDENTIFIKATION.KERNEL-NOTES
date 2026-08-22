@@ -1,80 +1,42 @@
-@kernel-nr: 16 Ð IDENTIFIKATION  
-###==##==###=LEXIKON NAVIGATION TERMINAL = kernel <NUMMER=###==##==###
-###==##==###======#####===K16 IDENTIFIKATION===#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
- #            IDENTIFIKATION = THE LICENSED ACCESS SYSTEM           #
-###==##==###======#####====WICHTIGER HINWEIS===#####======###==##==###
- # BILDUNG & RETTUNG WIRD VOM SYSTEM AUF EWIG KOSTENLOS UNTERSTÜTZT #
-###==##==###======#####STARTPUNKT IDENTIFIKATION####======###==##==###
+@kernel-nr: 90 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+ #              IDENTIFIKATION = THE LICENSED ACCESS SYSTEM                  #
+###===========================WICHTIGER-HINWEIS=============================###
+ #    DIESE SEITE WIRD ALS LOGIN FÜR PYLOVARA-SYSTEM ENTWICKLER HERGESTELLT  #
+ #    SIE DIENT FÜR DIE ÜBETRAGUNG ZUR IP ADRESSE UND SOLL NAHTLOS ZU ALLEN  #
+ #    BROWSER ENGINES AUFGEBAUT WERDEN. DIE SYSTEM-LIZENZEN SIND             #
+ #    GRUNDSÄTZLICH KOSTENLOS ABER DIE NUTZUNG DESSEN - NUR ÜBER LIZENZ !    #            #
+###===============================STARTPUNKT================================###
 
-BION Ð IDENTIFIKATION 
+MUTTERWABEN-KATEGORIE ⠆⢁⣀⠒ KOPFWABE
 
- MORPHIC-ID ¡ ID 
+ KOMPONENTE ⠆⢁⢠⠘ IDENTIFIKATION
 
- BION-ID ¡ ID 
+ KOMPONENTEN-ID ⠆⢁⢠⠡ ID
 
-MASK ¡ MASU-IDENTIFIKATION 
+ BION-NR ⠆⢁⢠⠢ 090
 
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ BION-ID ⠆⢁⢠⠤ ID090
 
-BION-KERNWABE Ð IDENTIFIKATION
+ MASTER-ID ⠆⢁⢠⠨ MA046SU090
 
- MORPHIC-ID ¡ IDK
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⢁⢠⠘ ⏍ ⠆⢁⢠⠘ 
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⢠⠡ ⧓ ⠆⢁⢠⠢ Ξ ⠆⢁⢠⠤
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⢠⠤ ⧑ #
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
- BION-ID ¡ ID00
+###====================================|====================================###
 
- AXIOM ¡ IDK = <IDK>
+ # WEITER
 
- ABSK ¡ IDK
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-REGISTRIERUNG
-
- MORPHIC-ID ¡ IDX-REGISTRIERUNG
-
- BION-ID ¡ ID00X01
-
- AXIOM ¡ IDX-REGISTRIERUNG = <REGISTRIERUNG>
-
- ABSK ¡ IDK+IDX-REGISTRIERUNG
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-LOGIN
-
- MOPRHIC-ID ¡ IDX-LOGIN
-
- BION-ID ¡ ID00X02
-
- AXIOM ¡ IDX-LOGIN = <LOGIN>
-
- ABSK ¡ IDK+IDX-LOGIN 
-
-###==##==###======#####========================#####======###==##==###
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-###==##==###======#####========================#####======###==##==###
-
-BION-HAUPTWABE Ð EXTRAWABE-BIOLIVE
-
- MOPRHIC-ID ¡ IDX-BIOLIVE
-
- BION-ID ¡ ID00X03
-
- AXIOM ¡ IDX-LOGIN = <BIOLIVE>
-
- ABSK ¡ IDK+IDX-BIOLIVE
-
-###==##==###======###KOMPONENTEN-GENERAL-SCHALTUNG##======###==##==###
- # MASTERWORT = IDELT
- # SBSK = 
- # VBSK = 
- # RBSK = 
-###==##==###======#####===HERSTELLUNGSDATEN====#####======###==##==###
- #  DATUM = [09:50:23 | So 29 Dez 2025] MARKENBRANDT                #
- #  PYLOVARA-SYSTEM = INDUSTRIE STANDARD DER ZUKUNFT                #
-###==##==###======#####=ENDPUNKT IDENTIFIKATION#####======###==##==###
+###====================================|====================================###
+###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
+ #  
+ # 
+ # 
+ #  
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###

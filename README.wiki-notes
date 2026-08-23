@@ -1,3 +1,11 @@
+### ==== ##### == # === ### ==REPO-VORWORT= ### === # == ##### === ###
+#
+# DAS REPO SPEZIALISIERT SICH AUF DIE TERMINAL NUTZUNG UND BAUT IN 
+# DIESEM ASPEKT AUF BASH AUF.
+#
+# DAS PYLOVARA-SYSTEM SELBST, WÄCHST AUS DEM BEREICH :
+# -> $ to /Pylovara/Handbuch/
+#
 ### ==== ##### == # == LINUX INSTALLATIONSPROZESS = # == ##### === ###
 
 git clone https://github.com/Pylovara/Pylovara.git
@@ -5,18 +13,12 @@ cd Pylovara/Setup/Pylovara-System/
 sudo ./full.install-core
 
 ### ==== ##### == # === # LINUX DERIVATE 86_64# === # == ##### === ###
-
- Alle Linux Derivate mit BASH-SHELL werden Unterstützt
-
- Alle Homebrew BASH-Shell werden Unterstützt
-
- Zsh wird nicht Unterstützt
-
- Termux wird strickt abgelehnt, weil Android Closed Bootloader
- Politik - Installation auf eigene Faust.
-
- ARM basierte Systeme werden nicht unterstützt - eigene Verantwortung.
-
+# Alle Linux Derivate mit BASH-SHELL werden Unterstützt
+# Alle Homebrew BASH-Shell werden Unterstützt
+# Zsh wird nicht Unterstützt
+# Termux wird strickt abgelehnt, weil Android Closed Bootloader
+# Politik - Installation auf eigene Faust.
+# ARM basierte Systeme werden nicht unterstützt - eigene Verantwortung.
 ### ==== ##### == # == INSTALLATIONSINFORMATION === # == ##### === ###
 # Hier wird mit Arch + Bash + Kitty First gearbeitet,
 # bei Problemen auf andere Derivate Befehle einzelnd eingeben .

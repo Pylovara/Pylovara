@@ -4,71 +4,65 @@
  #                   PIPELINE = KOORDINATIONSMANAGEMENT                      #
 ###===============================STARTPUNKT================================###
 
-MUTTERWABEN-KATEGORIE  KOPFWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⢠⠊ KOPFWABE
 
- KOMPONENTE  
+ KOMPONENTE ⠆⢁⢠⠌ PIPELINE
 
- KOMPONENTEN-ID  
+ KOMPONENTEN-ID ⠆⢁⢠⠑ PL
 
- BION-NR  0
+ BION-NR ⠆⢁⢠⠒ 052
 
- BION-ID  
+ BION-ID ⠆⢁⢠⠔ PL052
 
- MASTER-ID  MA046SU0
+ MASTER-ID ⠆⢁⢐⠡ MA046SU052
 
  # AXIOM | KOMPONENTEN NAMEN
- AXIOM ¡  ⏍ 
+ AXIOM ¡ ⠆⢁⢠⠌ ⏍ ⠆⢁⢠⠌
  # AXIOM | KOMPONENTEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢁⢠⠑ ⧓ ⠆⢁⢠⠒ Ξ ⠆⢁⢠⠔
  # BION-ID FOLGESCHALTUNG 
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢁⢠⠔ ⧑ ⠆⢁⢐⠤
  # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
 ###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE MASTERKERNWABE
 
- WABEN-ID  MK
+ WABEN-ID ⠆⢁⢐⠢ MK
 
- BION-NR  
+ BION-NR ⠆⢁⢐⠤ 052
 
- BION-ID  
+ BION-ID ⠆⢁⢐⠨ MK052
 
- BSK 
+ BSK ⠆⢁⢐⠰ PLMK
 
- BION 
+ BION ⠆⢁⢐⡁ PL052MK052
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢁⢐⠢ ⧓ ⠆⢁⢐⠤ Ξ ⠆⢁⢐⠨
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢁⢐⠤ ⧑ ⠆⢁⢐⡠
 
 ###====================================|====================================###
+#
+MUTTERWABEN-KATEGORIE ⠆⢁⢐⡂ TRAKTORWABE
 
-MUTTERWABEN-KATEGORIE TRAKTORWABE
+ PROGRAMM ⠆⢁⢐⡄ PIPLINE
 
- PROGRAMM #
+ WABEN-ID ⠆⢁⢐⡈ TT
 
- WABEN-ID # TT
+ BION-NR ⠆⢁⢐⡐ 001
 
- BION-NR # 
+ BION-ID ⠆⢁⢐⡠ TT001
 
- BION-ID # 
+ BSK ⠆⢁⢐⢂ PLMKTT-PIPELINE
 
- BSK # 
-
- BION # 
+ BION ⠆⢁⢈⢐ PL052MK052TT001
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢁⢐⡈ ⧓ ⠆⢁⢐⡐ Ξ ⠆⢁⢐⡠
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
-
- # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⍠
-
- # EINHEIT | RAM
- EINHEIT # 
+ AXIOM ¡ ⠆⢁⢐⡠ ⧑ 
 
  # VERLINKT MASTERKERNWABEN BSK
  LINK #

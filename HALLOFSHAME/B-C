@@ -1,0 +1,21 @@
+B -> A.K.A -> C DEMOLIERUNG ( VORGEMERKTE ARBEIT)
+
+Der historische Kontext
+1969-1972: Dennis Ritchie entwickelte C bei Bell Labs
+
+Der erste C-Compiler lief auf einer PDP-11 (16-Bit-Rechner)
+
+Die erste Version von Unix wurde in Assembler geschrieben, 
+dann in C neu geschrieben
+
+"Hello, world" wurde erst später (1978) durch das K&R-Buch populär
+
+Das wirklich Beeindruckende: C wurde entwickelt, 
+um Unix selbst zu schreiben. Der erste größere C-Code war also wahrscheinlich 
+ein Teil des Unix-Kernels oder ein Systemprogramm.
+
+C brauchte ursprünglich zwei andere Sprachen, um lauffähig zu werden:
+
+1. B - Die direkte Vorgängersprache von C (von Ken Thompson entwickelt)
+2. Assembler - Für die systemnahen Teile und den ersten Bootstrap
+

@@ -1,4 +1,9 @@
-##############################################################
+################################################################################
+################################################################################
+# TWS 00-03 DEV.KERNEL-NOTES
+################################################################################
+################################################################################
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
  - Das war heute eine schwere geburt ... hat sich heute 
    extrem angefühlt ... 
@@ -24,432 +29,317 @@
    - PROTEIN KOMPONENTE FERTIG MACHEN 
    ! ZWISCHENZEITLICHES DRUNTER SCHIEBEN
 
-############################################
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-###=======================X86-64 ANSCHLUSS FÜR TWS=========================###
 
-### ANSCHLUSS: x86-64 CPU (direkt)
 
-ANSCHLUSS-TYP ¡ X86-64
 
-REGISTER-MAP (x86-64 → TWS) ↓
-  
-  # ALLGEMEINE REGISTER
-  RAX → AK (Akkumulator)
-  RBX → BK (Basis)
-  RCX → CK (Zähler)
-  RDX → DK (Daten)
-  RSI → SI (Quelle)
-  RDI → DI (Ziel)
-  RSP → SP (Stack-Pointer)
-  RBP → BP (Base-Pointer)
-  R8  → R8
-  R9  → R9
-  R10 → R10
-  R11 → R11
-  R12 → R12
-  R13 → R13
-  R14 → R14
-  R15 → R15
-  
-  # FLAGS (Status)
-  FLAGS → ZYMK (Zero)
-  FLAGS → SEMK (Carry)
-  FLAGS → NIMK (Overflow)
-  FLAGS → SYMK (Sign)
-  FLAGS → REMK (Reserved)
 
-###----------------------------------------------------
+################################################################################
+################################################################################
+# MCS 00-75 DEV.KERNEL-NOTES
+################################################################################
+################################################################################
+ICH SOLLTE DAS LEXIKON SO ANLEGEN DAS ICH SEITEN WEISE KURZE ERKLÄRUNGEN 
+BIETE , WAS DIE JEWEILIGE KOMPONENTE TUT .
 
-BEFEHLS-MAP (x86-64 → MCS) ↓
-  
-  # ARITHMETIK
-  ADD → AXIOM: <AK> + <BK> = <AK>
-  SUB → AXIOM: <AK> - <BK> = <AK>
-  MUL → AXIOM: <AK> × <BK> = <AK>
-  DIV → AXIOM: <AK> ÷ <BK> = <AK>
-  INC → AXIOM: <AK> + 1 = <AK>
-  DEC → AXIOM: <AK> - 1 = <AK>
-  
-  # LOGIK
-  AND → AXIOM: <AK> & <BK> = <AK>
-  OR  → AXIOM: <AK> | <BK> = <AK>
-  XOR → AXIOM: <AK> ^ <BK> = <AK>
-  NOT → AXIOM: ~<AK> = <AK>
-  
-  # SPEICHER
-  MOV → AXIOM: <QUELLE> → <ZIEL>
-  PUSH → AXIOM: <AK> → STACK
-  POP  → AXIOM: STACK → <AK>
-  LOAD → AXIOM: <ADRESSE> → <AK>
-  STORE → AXIOM: <AK> → <ADRESSE>
-  
-  # SPRUNG
-  JMP → AXIOM: SPRUNG → <ADRESSE>
-  JE  → AXIOM: WENN <SEMK> = 0 → SPRUNG
-  JNE → AXIOM: WENN <SEMK> = 1 → SPRUNG
-  CALL → AXIOM: RUF AUF → <ADRESSE>
-  RET  → AXIOM: RÜCKKEHR
+UND DAZU DANN SYNTAX AUFBAUTEN , WARUM REX MIT ON-PIPE UND OFF-PIPE 
+FUNGIERT ..
 
-###----------------------------------------------------
+WIE AUCH WARUM ON-PIPE PROTEINE NICHT AUTOMATISCH AUSFÜHRBAR SIND 
+UND WIE GENAU DIE VERSCHALTUNG VON SYNAPTOR UND ZYTRON FUNKTIONIERT .. 
 
-SYSTEMCALL-MAP (Linux x86-64 → TWS) ↓
-  
-  # LINUX SYSCALLS (direkt zum Kernel)
-  NR_read  → AXIOM: EINGABE
-  NR_write → AXIOM: AUSGABE
-  NR_open  → AXIOM: DATEI_ÖFFNEN
-  NR_close → AXIOM: DATEI_SCHLIESSEN
-  NR_exit  → AXIOM: BEENDEN
-  
-  # MCS SYSCALLS (dein System)
-  NR_tws_execute → AXIOM: AUSFÜHREN
-  NR_tws_compile → AXIOM: KOMPILIEREN
-  NR_tws_link   → AXIOM: VERLINKEN
+WARUM MAN ÜBERHAUPT EINEN NITROX BRAUCH UND WAS ER MIT DEM FEED SYSTEM 
+ÜBERHAUPT TUT .
 
-###=================================ANSCHLUSS-ENDE========================###
+ICH SOLLTE DAS BUCH SO ANLEGEN DAS SYSTEM ENTWICKLER ALS QUER EINSTEIGER 
+KEINE GROẞEN PROBLEME ENDECKEN . 
 
-noch unausgefüllt (ÜBERHOLT): 
+ABER QUEREINSTEIGER DIE ÜBERHAUPT NOCH NIE CODE ANGEFASST HABEN 
+GLEICH VERSTEHEN WIE DIE SCHALTUNGS LOGIK IST ... 
 
-/*
- * TWS 0.2 / MCS 7.4  --  NATIVE PARSER TEMPLATE
- * Sprache: C11 (kein externer Abhängigkeiten)
- * Zweck: Liest Pylovara-Kernel-Lexikon-Dateien und baut eine interne Waben-Struktur auf.
- * 
- * Kompilieren:  gcc -O2 -o tws_parser tws_parser.c
- * Aufruf:       ./tws_parser kernel_lex.txt
- * 
- * Ausfüllen: Die Funktionen unter "SEMANTIK-HOOKS" (ab Zeile ~180) 
- *            sind die Stellen, an denen du deine MCS-Logik einhängst.
- */
+DAS BAUT SICH JETZT IM LAUF DER 00-83 AUF .... 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+WERDE WOHL VIEL ÄNDERN ODER UMSORTIEREN MÜSSEN ABER 
+DAS IST DER RICHTIGE WEG . 
 
-#define MAX_LINE 4096
-#define MAX_WABEN 1024
 
-/* --------------------------------------------------------------- */
-/*  DATENSTRUKTUREN                                                */
-/* --------------------------------------------------------------- */
+ SORTIERTE LISTE ÜBER GEDANKEN UND TEXT . 
 
-typedef struct AxiomNode {
-    char *raw;
-    struct AxiomNode *next;
-} AxiomNode;
+###=======================DIE 4 SÄULEN DES MCS-LEXIKONS=====================###
+## KI ROUTMAPLISTEN ANSICHT FÜR DAS MCS LEXIKON GENERELL 
+### SÄULE 1: KOMPONENTEN (WAS)
+# - TRANSAKTIONSRAHMEN (der Rahmen)
+# - PROTEIN (der Datenträger)
+# - PROTON (die Hardware)
+# - BOXIS (die Schnittstelle)
+# - NITROX (der Cache)
+# - FEED (der Speicher)
+# - SYNAPTOR (der Takt)
+# - ZYTRON (die Schleife)
+# - SENTIATOR (die Bedingung)
+# - REX (die Fläche)
 
-typedef struct EinheitNode {
-    char *raw;
-    struct EinheitNode *next;
-} EinheitNode;
+### SÄULE 2: SYNTAX (WIE)
+# - ¢! ... !¢ (der Rahmen)
+# - »—[ ... ]—« (ausführbar)
+# - —[ ... ] (nicht ausführbar)
+# - »[ ... ]« (Off-Pipe)
+# - [ ... ] (nicht ausführbar Off-Pipe)
+# - ¶ (WENN-KANN)
+# - ¶¶ (WENN-NICHT)
 
-typedef struct Wabe {
-    char *kategorie;      /* z.B. "KOPFWABE" */
-    char *programm;       /* z.B. "RUNTIME" */
-    char *waben_id;       /* z.B. "HT" */
-    char *bion_nr;        /* z.B. "01" */
-    char *bion_id;        /* z.B. "HT01" */
-    char *bsk;            /* z.B. "TAMKHT-RUNTIME" */
-    char *bion;           /* z.B. "TA01MK01HT01" */
-    char *master_id;      /* nur bei KOPFWABE */
+### SÄULE 3: ZUSAMMENHÄNGE (WARUM)
+# - On-Pipe vs. Off-Pipe
+# - Ausführbar vs. nicht ausführbar
+# - NITROX + FEED = Cache
+# - SYNAPTOR + ZYTRON = Takt + Schleife
+# - SENTIATOR + REX = Bedingung + Fläche
 
-    AxiomNode *axioms;
-    EinheitNode *einheiten;
+### SÄULE 4: BEISPIELE (FÜR WEN)
+# - Quereinsteiger (einfach)
+# - Anfänger (klar)
+# - Profis (tief)
+# - Alle (verständlich)
 
-    struct Wabe *next;
-} Wabe;
+###=================================4-SÄULEN-ENDE=======================###
 
-typedef struct KernelSection {
-    int nr;
-    char *title;
-    Wabe *waben;
-    struct KernelSection *next;
-} KernelSection;
 
-/* --------------------------------------------------------------- */
-/*  HILFSFUNKTIONEN                                                */
-/* --------------------------------------------------------------- */
 
-char* trim(char *s) {
-    while (isspace((unsigned char)*s)) s++;
-    if (*s == 0) return s;
-    char *end = s + strlen(s) - 1;
-    while (end > s && isspace((unsigned char)*end)) end--;
-    end[1] = '\0';
-    return s;
-}
 
-char* strdup_safe(const char *s) {
-    if (!s) return NULL;
-    char *d = malloc(strlen(s) + 1);
-    if (d) strcpy(d, s);
-    return d;
-}
 
-/* Extrahiert Wert nach dem Trennzeichen '¡' */
-char* extract_value(const char *line) {
-    const char *p = strstr(line, "\xC2\xA1");  /* UTF-8 fuer ¡ */
-    if (!p) {
-        /* Fallback: suche nach normalem Leerzeichen als Trenner */
-        p = strchr(line, ' ');
-        if (!p) return NULL;
-        p++;
-        while (*p == ' ') p++;
-        return strdup_safe(trim((char*)p));
-    }
-    p += 2; /* hinter ¡ */
-    while (*p == ' ') p++;
-    return strdup_safe(trim((char*)p));
-}
+################################################################################
+################################################################################
+# PNS 00-83 DEV.KERNEL-NOTES
+################################################################################
+################################################################################
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+# DIE FRAGEN DER FRAGEN FÜR HEUTE : 
 
-/* Prüft, ob Zeile mit einem bestimmten Token beginnt */
-int starts_with(const char *line, const char *token) {
-    return strncmp(trim((char*)line), token, strlen(token)) == 0;
-}
+ PIPELINE GLEICH ABSOLUT UND EXPLIZIT IN PROTEIN ON-PIPE 
+ INTEGRIEREN 
 
-/* --------------------------------------------------------------- */
-/*  PARSER-KERN                                                    */
-/* --------------------------------------------------------------- */
+ ODER 
 
-Wabe* wabe_new() {
-    Wabe *w = calloc(1, sizeof(Wabe));
-    return w;
-}
+ DIE PIPELINE EIGENSTÄNDIG HOCHBAUEN , WO ABER DER ERST ANSCHLUSS 
+ GEKLÄRT SEIN MÜSSTE ( DENN ALLES FÄNGT MIT EINEM ON-PIPE AN )
 
-KernelSection* section_new(int nr, const char *title) {
-    KernelSection *sec = calloc(1, sizeof(KernelSection));
-    sec->nr = nr;
-    sec->title = strdup_safe(title);
-    return sec;
-}
+ = ÜBERLEGUNG ÜBER DIE NÄCHSTEN STUNDEN ... 
 
-void wabe_add_axiom(Wabe *w, const char *raw) {
-    AxiomNode *node = calloc(1, sizeof(AxiomNode));
-    node->raw = strdup_safe(raw);
-    node->next = w->axioms;
-    w->axioms = node;
-}
+ BIS DORTHIN , SEITEN DURCHGEHEN UND WAS SCHNELL ERNEUERT IST 
+ VORZIEHEN ... 
 
-void wabe_add_einheit(Wabe *w, const char *raw) {
-    EinheitNode *node = calloc(1, sizeof(EinheitNode));
-    node->raw = strdup_safe(raw);
-    node->next = w->einheiten;
-    w->einheiten = node;
-}
+ ICH DENKE DEN ANSATZ DES WABINATORS , ABSOLULATORS , MODULATORS 
+ SOLLTEN MÖGLICH SEIN , OHNE GERIPPE .
 
-/* --------------------------------------------------------------- */
-/*  HAUPTPARSER                                                    */
-/* --------------------------------------------------------------- */
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # VORZUGEHENDER BEREICH : 
 
-KernelSection* parse_lexikon(const char *filename) {
-    FILE *fp = fopen(filename, "r");
-    if (!fp) {
-        fprintf(stderr, "FEHLER: Kann '%s' nicht oeffnen.\n", filename);
-        return NULL;
-    }
+ - PROTEIN PIPELINEWABE 
 
-    KernelSection *root = NULL, *current_sec = NULL;
-    Wabe *current_wabe = NULL;
-    char line[MAX_LINE];
-    int in_programmierbereich = 0;
+ ICH HALTE DIE WABE ALS SINGEL SOURCE FÜR DEN AUFBAUBAUM ... 
+ TRAGE IM VERLAUF ALLE EIN ...
+ SENTIATOR BEKOMM SEINEN DATENKANALWABEN ASPEKT ...
+ DIE KINDERWABENFUNKTION BLEIBT BIS AUF WEITERES IM KOPF ...
 
-    while (fgets(line, sizeof(line), fp)) {
-        /* Entferne \n */
-        line[strcspn(line, "\n")] = '\0';
+ ICH BAU DIE PROTEINE JETZT FERTIG , DANN KOMMEN EINFACHE ASPEKTE 
+ UND DAS MUSTER WIRD SICH IM VERLAUF DES EINARBEITENS FESTIGEN ..
 
-        char *t = trim(line);
-        if (strlen(t) == 0) continue;          /* Leerzeile */
-        if (t[0] == '#') continue;              /* Kommentar */
-        if (strstr(t, "###") == t) continue;    /* Header-Trenner */
+ DINGE DIE MIR AUFFALLEN WERDE ICH DANN NOTIEREN FÜR DEN TWS 0.4 
+ DENNOCH NUR NOTIERT , NICHT INTEGRIERT ...
 
-        /* --- @kernel-nr: --- */
-        if (strncmp(t, "@kernel-nr:", 11) == 0) {
-            int nr = 0;
-            char title[256] = {0};
-            sscanf(t, "@kernel-nr: %d", &nr);
-            const char *p = strstr(t, "=");
-            if (p) {
-                strncpy(title, p + 1, sizeof(title) - 1);
-                char *x = strstr(title, "=");
-                if (x) *x = '\0';
-                trim(title);
-            }
-            KernelSection *sec = section_new(nr, title);
-            sec->next = root;
-            root = sec;
-            current_sec = sec;
-            current_wabe = NULL;
-            in_programmierbereich = 0;
-            continue;
-        }
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+ # UMGESETZTER BEREICH 
 
-        /* --- WABEN-KATEGORIE --- */
-        if (starts_with(t, "WABEN-KATEGORIE")) {
-            current_wabe = wabe_new();
-            current_wabe->next = current_sec ? current_sec->waben : NULL;
-            if (current_sec) current_sec->waben = current_wabe;
-            in_programmierbereich = 0;
+ - PROTEIN UPDATE 
 
-            /* Extrahiere Kategorie nach dem Ð oder dem letzten Token */
-            char *p = strstr(t, "\xC3\x90"); /* Ð */
-            if (p) {
-                p += 2;
-                current_wabe->kategorie = strdup_safe(trim(p));
-            }
-            continue;
-        }
+ ON-PIPE —[] 7.4 | ON-PIPE —[]— 7.5 
+ OFF-PIPE [] BLEIBT GLEICH 
 
-        /* --- PROGRAMMIERUNGSBEREICH --- */
-        if (strstr(t, "PROGRAMMIERUNGSBEREICH")) {
-            in_programmierbereich = 1;
-            continue;
-        }
+ !- GRUND = EXPLITITE PROTEINE , KEINE ENDPUNKT IRRITATIONEN MEHR.
+            KANN IM SPÄTEREN VERLAUF FÜR EINE CONTROLL-PIPELINE VERWENDET WERDEN.
+            ODER INPUT/OUTPUT FUNKTION. ( ZUKUNFTSMUSIK )
 
-        /* --- BLOCK-ENDE MARKER (z.B. ###...ENDE...) --- */
-        if (strstr(t, "ENDPUNKT") || strstr(t, "KOMPONENTEN-GENERAL")) {
-            in_programmierbereich = 0;
-            continue;
-        }
+ # VORAUSSCHAUENDER BEREICH : 
 
-        /* --- ATTRIBUT-ZEILEN innerhalb einer Wabe --- */
-        if (current_wabe && !in_programmierbereich) {
-            if (starts_with(t, "KOMPONENTE")) 
-                current_wabe->programm = extract_value(t);
-            else if (starts_with(t, "KOMPONENTEN-ID"))
-                ; /* implizit */
-            else if (starts_with(t, "WABEN-ID"))
-                current_wabe->waben_id = extract_value(t);
-            else if (starts_with(t, "BION-NR"))
-                current_wabe->bion_nr = extract_value(t);
-            else if (starts_with(t, "BION-ID"))
-                current_wabe->bion_id = extract_value(t);
-            else if (starts_with(t, "BSK"))
-                current_wabe->bsk = extract_value(t);
-            else if (starts_with(t, "BION"))
-                current_wabe->bion = extract_value(t);
-            else if (starts_with(t, "MASTER-ID"))
-                current_wabe->master_id = extract_value(t);
-            continue;
-        }
+ MCS 7.4
+ ¬·¤ [ STATUS ] # AUSLAGERN ZUM COMPOSITOR ALS POPUP
+ ¬·¤¤ [ EINGABE AUFFORDERUNG ] # AUSLAGERN ZUM COMPOSITOR 
+ # BEIDES INTERN IM CODE ... AUSLAGERUNG ZUM COMPOSITOR 
+ MCS 7.5 | BEIDES MÖGICH MACHEN | INTERN UND EXTERN
+ ¬·¤ # DIREKT BINDUNG 
+ ¬·¤¤ # DIREKT BINDUNG
 
-        /* --- PROGRAMMIERUNGSBEREICH INHALT --- */
-        if (current_wabe && in_programmierbereich) {
-            if (starts_with(t, "AXIOM")) {
-                wabe_add_axiom(current_wabe, t);
-            } else if (starts_with(t, "EINHEIT") || starts_with(t, "GEBAUTE-EINHEIT")) {
-                wabe_add_einheit(current_wabe, t);
-            } else if (starts_with(t, "LINK") || starts_with(t, "FINISH") || 
-                       starts_with(t, "BRÜCKE") || starts_with(t, "PIPE")) {
-                /* Als generische Axiome behandeln */
-                wabe_add_axiom(current_wabe, t);
-            }
-            continue;
-        }
-    }
+ LÄSST SICH CODE TECHNISCH BESSER FLEXIBEL ARBEITEN 
+ FÜR AUTOMATIONS SCRIPTS WIE AUCH KOMPLEXE AUFFORDERUNGEN 
+ OHNE DABEI MIT BASH/LINUXCOMMAND ODER RUST ETC ARBEITEN ZU MÜSSEN .. 
+            
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
-    fclose(fp);
-    return root;
-}
+ ¢! # konrette idee
 
-/* --------------------------------------------------------------- */
-/*  SEMANTIK-HOOKS  --  HIER AUSFÜLLEN                           */
-/* --------------------------------------------------------------- */
+ »—[ BAU TISCH ]«
 
-/* 
- * Diese Funktionen werden fuer JEDEN geparsten Block aufgerufen.
- * Sie sind der Anschluss zwischen Parser und deiner MCS/TWS-Logik.
- * 
- * TODO: Fuege hier deine x86-64 Code-Generierung, VM-Schritte oder 
- *       MCS-Interpreter-Logik ein.
- */
+  ¬· »—[ GEOMETRIE = WINKEL ]«
 
-void execute_axiom(const char *raw_axiom, const Wabe *ctx) {
-    /* 
-     * BEISPIEL: Wenn AXIOM ein Register-Mapping enthaelt,
-     * generiere hier den entsprechenden x86-64 Opcode.
-     */
-    (void)ctx;
-    printf("    [SEMANTIK] AXIOM: %s\n", raw_axiom);
-}
+      ¬· »—[ PLATTE = H10 + L60 + B60 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
 
-void execute_einheit(const char *raw_einheit, const Wabe *ctx) {
-    (void)ctx;
-    printf("    [SEMANTIK] EINHEIT: %s\n", raw_einheit);
-}
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
 
-void execute_wabe_finish(const Wabe *w) {
-    /* 
-     * Wird aufgerufen, wenn eine Wabe komplett geparst ist.
-     * Hier kannst du z.B. die BSK-Kette validieren oder 
-     * Maschinencode emittieren.
-     */
-    printf("  [WABE-FINISH] %s | BSK=%s | BION=%s\n",
-           w->kategorie ? w->kategorie : "?",
-           w->bsk ? w->bsk : "?",
-           w->bion ? w->bion : "?");
-}
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
 
-/* --------------------------------------------------------------- */
-/*  AUSGABE / DEBUG                                                */
-/* --------------------------------------------------------------- */
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
 
-void dump_sections(KernelSection *root) {
-    KernelSection *sec = root;
-    while (sec) {
-        printf("\n=== KERNEL-NR %d : %s ===\n", sec->nr, sec->title ? sec->title : "");
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
 
-        Wabe *w = sec->waben;
-        while (w) {
-            printf("\n  [WABE] Kategorie: %s\n", w->kategorie ? w->kategorie : "?");
-            if (w->programm)  printf("    Programm:  %s\n", w->programm);
-            if (w->waben_id)  printf("    Waben-ID:  %s\n", w->waben_id);
-            if (w->bion_nr)   printf("    BION-NR:   %s\n", w->bion_nr);
-            if (w->bion_id)   printf("    BION-ID:   %s\n", w->bion_id);
-            if (w->bsk)       printf("    BSK:       %s\n", w->bsk);
-            if (w->bion)      printf("    BION:      %s\n", w->bion);
-            if (w->master_id) printf("    MASTER-ID: %s\n", w->master_id);
+ !¢
 
-            AxiomNode *a = w->axioms;
-            while (a) {
-                execute_axiom(a->raw, w);
-                a = a->next;
-            }
+ ¢! # generische idee
 
-            EinheitNode *e = w->einheiten;
-            while (e) {
-                execute_einheit(e->raw, w);
-                e = e->next;
-            }
+ »—[ BAU <DAS> ]«
 
-            execute_wabe_finish(w);
-            w = w->next;
-        }
-        sec = sec->next;
-    }
-}
+  ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
 
-/* --------------------------------------------------------------- */
-/*  MAIN                                                           */
-/* --------------------------------------------------------------- */
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
 
-int main(int argc, char **argv) {
-    if (argc < 2) {
-        printf("Usage: %s <lexikon-datei.txt>\n", argv[0]);
-        printf("\nDieser Parser liest Pylovara TWS/MCS Lexikon-Dateien\n");
-        printf("und ruft fuer jeden AXIOM/EINHEIT die SEMANTIK-HOOKS auf.\n");
-        printf("Fuelle die Funktionen ab Zeile 180 aus, um Maschinencode\n");
-        printf("oder VM-Befehle zu generieren.\n");
-        return 1;
-    }
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
 
-    KernelSection *sys = parse_lexikon(argv[1]);
-    if (!sys) return 2;
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
 
-    dump_sections(sys);
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
 
-    printf("\n\n[PARSER-STATUS] OK. Datei erfolgreich strukturiert geparst.\n");
-    printf("[HINWEIS] Die SEMANTIK-HOOKS (execute_*) sind noch mit Platzhaltern belegt.\n");
-    return 0;
-}
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+ !¢
+
+¢! masstyp idee
+
+ »—[ BAU <DAS> ]«
+
+  ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
+      ¬· »—[ MASSENTYP = <AUSWAHL> ]«
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+!¢
+
+¢! masstyp idee
+
+»—[ GEOMETRIE = <AUSWAHL> ]«««~ BAUMODUS-START && VERBINDE ~«
+ ¬· »—[ MASSENTYP = <AUSWAHL> ]«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+!¢
+
+ ««~ PHYSIK-KOLLISION-RIGIDBODY ~«
+ ««~ MATERIAL-MESSUNG-HOLZ ~«
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+¢!
+
+»[ OBJEKT = ICH ]« 
+ ¬· »[ DEF __INIT__(ICH, GRASS, TABAK, PAPER, FEUERZEUG): ]« 
+         ¿¹
+     ¬· »[ ICH.GRASS = GRASS ]« 
+         ¿¹
+     ¬· »[ ICH.TABAK = TABAK ]« 
+         ¿¹
+     ¬· »[ ICH.PAPER = PAPER ]« 
+         ¿¹
+     ¬· »[ ICH.FEUERZEUG = FEUERZEUG ]« 
+     
+         ¶ ¬· »[ DEF ANZÜNDEN(ICH) ]« 
+
+               ¬· »[ ICH.ANZÜNDEN +=HIGH ]« 
+
+               ¶ ¬· »[ __NAME__ ]« 
+                     ¬·¤= »[ "__MAIN__": ]« 
+                           ¬· »[ MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) ]« 
+                           ¬· »[ ICH-BEKIFFT.ANZÜNDEN() ]«
+
+
+
+
+         ¶¶ ¬· »[~ RETURN __INIT__ ]«
+
+!¢ 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+¢!
+»—["TRANSAKTIONSRAHMEN"]«
+
+ ¬· »—[" ¢! "]«
+     ± »[(1)—Ø ¥ ¢! ¥ Ø]«
+
+         ÷ »[Ø <IO> Ø—(1)]«
+     ¬· »—[, RAM_REG ,]«
+         ¬· »—[" THEORETISCH NUMMER "]«
+             ± »[(10)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
+
+ ¬· »—[" !¢ "]«
+     ± »[(2)—Ø !¢ Ø]«
+
+         ÷ »[Ø <IO> Ø—(2)]«
+     ¬· »—[, RAM_REG ,]«
+         ¬· »—[" THEORETISCH NUMMER "]«
+             ± »[(11)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
+!¢
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - Loop/Pipe)
+ ─────────────────────────      ────────────────────────      ───────────────────────────
+          ¿¹ ─────────────────> »—[ BAU AKTION ]«««V1
+          ↓                               ↓
+          ¿¹ ───────────────────>   £1 OUTPUT ───────────────┐ (Daten-Auskopplung)
+          ↓                               ↓                  │
+          ¿¹ ─────────────────> »—[ OBJEKT = ... ]«          │
+          ↓                               ↓                  │
+          ¿¹ ─────────────────>   ¶ ¬·¤: [" Output "]        │
+          ↓                               ↓                  │
+          ¿  ─────────────────>  ¶¶ »—[ OBJEKT = ... ]«      │
+                                          ↓                  │
+                                     ¬·¤: [" Output "]       │
+                                          ↓                  │
+                                     £1 INPUT <──────────────┘ (Wiedereinspeisung)
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###

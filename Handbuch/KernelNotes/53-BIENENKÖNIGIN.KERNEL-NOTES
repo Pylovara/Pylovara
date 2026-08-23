@@ -238,6 +238,55 @@
  - RECHTS
  - LINKS
  - LOOP
+---------------------------------------------------
+ # RECHNUNGSWEISE ( NOTIZ )
+ - UMGEHEN DIE SELBE ZAHL  | PLUS 
+ - NIMM DIE SELBE ZAHL WEG | MINUS
+ - BERECHNE DIE ZAHL SO OFT MIT SICH SELBST | MAL 
+ - ZIEHE DIE ZAHL IN DER SELBEN GRÖẞE AB | GETEILT 
+---------------------------------------------------
+
+ ( HIER DAVOR DIE ABFOLGE TABELLE )
+   1 + 2 = 
+   ↓   ↓
+  FELDPLATZ B2
+   ↓   ↓
+  LLLLLLLLR
+   ↓   ↓
+ GERADE DANN | WENN BEI GERADE KEIN L/R DANN GERADE GLEICH L/R
+
+ # FELDPLATZ B2 | RÄUMLICH | BIT IM SEGMENT
+ [!] [!] [!] [!] [2] [3] [4] [!] [!] [!] [!]
+ [!] [!] [!] [!] [1] [9] [5] [!] [!] [!] [!]
+ [!] [!] [!] [!] [8] [7] [6] [!] [!] [!] [!]
+
+ ( HIER DAVOR DIE ABFOLGE TABELLE )
+   1 + 2 = 
+     ↓
+  FELDPLATZ B1
+   ↓   ↓ 
+  - UMGEHEN DIE SELBE ZAHL
+
+ # FELDPLATZ B1 | LINEAR | BIT 
+ [1] [2] [3] [4] [!] [!] [!] [!] [!] [!] [!]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

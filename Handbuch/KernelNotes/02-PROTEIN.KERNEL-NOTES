@@ -327,6 +327,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠰ COMBOLINKWABE
  LINK ⠆⢁⢄⠘ POMK #
 
  # AXIOM | LINK COMBINATOR  
+ # BOXIS
  AXIOM ¡ ⠆⢁⢄⠒ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⡈ ⧑ ⠆⢂⣀⢠ ⧑ ⠆⢂⡈⠒ ⧑ ⠆⢂⠡⠑ ⧑ ⠆⢂⠌⠃ ⍠ ⠆⢁⢂⠨
  AXIOM ¡ ⠆⢁⢄⠒ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⢠ ⧑ ⠆⢂⣀⠅ ⧑ ⠆⢂⡄⠉ ⧑ ⠆⢂⠘⡐ ⧑ ⠆⢂⠉⢠ ⍠ ⠆⢁⢂⡁
  AXIOM ¡ ⠆⢁⢄⠒ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠔ ⧑ ⠆⢂⢐⢈ ⧑ ⠆⢂⡂⢐ ⧑ ⠆⢂⠘⠑ ⧑ ⠆⢂⠊⠨ ⍠ ⠆⢁⢂⡂
@@ -338,13 +339,13 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠰ COMBOLINKWABE
  AXIOM ¡ ⠆⢁⢄⠒ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠃ ⧑ ⠆⢂⡠⡐ ⧑ ⠆⢂⠤⡈ ⧑ ⠆⢂⠑⠰ ⧑ ⠆⢂⠃⠢ ⍠ ⠆⢁⢂⢈
  AXIOM ¡ ⠆⢁⢄⠒ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢂⣀⡈ ⧑ ⠆⢂⡐⠰ ⧑ ⠆⢂⠢⠰ ⧑ ⠆⢂⠌⢠ ⧑ ⠆⢁⣀⠡ ⍠ ⠆⢁⢂⢐
  AXIOM ¡ ⠆⢁⢄⠒ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⠢ ⧑ ⠆⢂⡐⠘ ⧑ ⠆⢂⠢⠔ ⧑ ⠆⢂⠌⠨ ⧑ ⠆⢁⢠⢂ ⍠ ⠆⢁⢂⢠
-
-
- AXIOM ¡ ⠆⢁⢄⠔ ⑅  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑   ⍠ 
+ # TRENNBEFEHL
+ AXIOM ¡ ⠆⢁⢄⠔ ⑅ ⠆⢄⠨⠡ ⧑ ⠆⢄⠤⡐ ⧑ ⠆⢄⠤⠒ ⧑ ⠆⢄⠢⣀ ⍠ ⠆⢁⢄⠡
+ # PROTON
  AXIOM ¡ ⠆⢁⢄⠘ ⑅  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑   ⍠ 
 
-
  # AXIOM | RAM 
+ # BOXIS
  EINHEIT ⠆⢁⢂⠨ ": <IO> :" BX-PRINT-KOMPLETT
  EINHEIT ⠆⢁⢂⡁ ×: <IO> :× BX-ALU
  EINHEIT ⠆⢁⢂⡂ ,: <IO> :, BX-SYSCALL
@@ -356,12 +357,10 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠰ COMBOLINKWABE
  EINHEIT ⠆⢁⢂⢈ §: <IO> :§ BX-NET
  EINHEIT ⠆⢁⢂⢐ º: <IO> :º BX-OPCODE 
  EINHEIT ⠆⢁⢂⢠ ºº: <IO> :ºº BX-MASCHINENCODE
-
-
-
- EINHEIT ⠆⢁⢄⠡ 
+ # TRENNBEFEHL
+ EINHEIT ⠆⢁⢄⠡ | TE-WAND
+ # PROTON
  EINHEIT ⠆⢁⢄⠢ 
-
 
  # AXIOM | NAME SETZEN  
  PRÄFIX  PI-ON-PIPE-BXMK-TEMK-POMK

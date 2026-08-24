@@ -174,7 +174,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢐⠔ COMBOLINKWABE
  # AXIOM | LINK COMBINATOR  
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠉⡈ ⧑ ⠆⢂⣀⢠ ⧑ ⠆⢂⡈⠒ ⧑ ⠆⢂⠡⠑ ⧑ ⠆⢂⠌⠃ ⍠ ⠆⢁⢐⠊
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠉⢠ ⧑ ⠆⢂⣀⠅ ⧑ ⠆⢂⡄⠉ ⧑ ⠆⢂⠘⡐ ⧑ ⠆⢂⠉⢠ ⍠ ⠆⢁⢈⡄
- AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠉⠔ ⧑   ⍠ 
+ AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠉⠔ ⧑ ⠆⢂⢐⢈ ⧑ ⠆⢂⡂⢐ ⧑ ⠆⢂⠘⠑ ⧑ ⠆⢂⠊⠨ ⍠ ⠆⢁⢈⡈
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠉⠰ ⧑   ⍠ 
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⢈ ⧑   ⍠ 
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⠑ ⧑   ⍠ 
@@ -187,7 +187,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢐⠔ COMBOLINKWABE
  # AXIOM | RAM 
  EINHEIT ⠆⢁⢐⠊ ": <IO> :" BX-PRINT-KOMPLETT
  EINHEIT ⠆⢁⢈⡄ ×: <IO> :× BX-ALU
- EINHEIT ⠆⢁⢈⡈ 
+ EINHEIT ⠆⢁⢈⡈ ,: <IO> :, BX-SYSCALL
  EINHEIT ⠆⢁⢈⡐ 
  EINHEIT ⠆⢁⢈⡠ 
  EINHEIT ⠆⢁⢈⢂ 

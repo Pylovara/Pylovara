@@ -399,7 +399,7 @@ MUTTERWABEN-KATEGORIE ⠆⢁⢄⢈ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⢂⣀ ⧓ ⠆⢁⢄⠃ Ξ ⠆⢁⢄⠅
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢁⢄⠅ ⧑ 
+ AXIOM ¡ ⠆⢁⢄⠅ ⧑ ⠆⢁⡠⠡
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢄⡁⠒ ⍠ ⠆⢁⢄⠌
@@ -465,11 +465,56 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠰ COMBOLINKWABE
  EINHEIT ⠆⢁⢂⠉ —[<BXMK><TEMK><POMK> PI-ON-PIPE-BXMK-TEMK-POMK
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢁⢄⠅ ⦳ 
+ AXIOM ¡ ⠆⢁⢄⠅ ⦳ ⠆⢁⡠⠡
 
 ###====================================|====================================###
 
- # WEITER SPÄTER COMBOWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⡠⠑ BAUWABE 
+
+ PROGRAMM ⠆⢁⡠⠒ ON-PIPE
+
+ WABEN-ID ⠆⢁⡠⠔ BA
+
+ BION-NR ⠆⢁⡠⠘ 034
+
+ BION-ID ⠆⢁⡠⠡ BA034
+
+ BSK ⠆⢁⡠⠢ PIMKHTSTBABA-ON-PIPE
+
+ BION ⠆⢁⡠⠤ PI002MK002HT002ST002BA003BA034
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡠⠔ ⧓ ⠆⢁⡠⠘ Ξ ⠆⢁⡠⠡
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡠⠡ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⢂⠉ ⍠ ⠆⢁⡠⠨
+ AXIOM ¡ ⠆⢄⡁⠔ ⍠ ⠆⢁⡐⡁
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⡠⠨ —[<BXMK><TEMK><POMK> PI-ON-PIPE-BXMK-TEMK-POMK
+ EINHEIT ⠆⢁⡐⡁ ]— PI-ON-PIPE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⡐⡂ COMBOWABE
+
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢁⡠⠨ ⧓ ⠆⢁⡐⡁ Ξ ⠆⢁⡐⡄
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⡐⡈ PI-ON-PIPE-BXMK-TEMK-POMK-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⡐⡄ ⥓ ⠆⢁⡐⡈ ⍠ ⠆⢁⡐⡠
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⡐⡠ —[<BXMK><TEMK><POMK>]— PI-ON-PIPE-BXMK-TEMK-POMK-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⡠⠡ ⦳ #
+
+###====================================|====================================###
+
  # DANACH SPÄTER ENDWABE
 
 ###====================================|====================================###

@@ -165,7 +165,7 @@ MUTTERWABEN-KATEGORIE ⠆⢁⢐⠅ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⢈⠢ ⧓ ⠆⢁⢈⠤ Ξ ⠆⢁⢈⠰
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢁⢈⠰ ⧑ 
+ AXIOM ¡ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢄⡁⠒ ⍠ ⠆⢄⢂⠉
@@ -219,13 +219,36 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢐⠔ COMBOLINKWABE
  EINHEIT ⠆⢁⢐⠒ —[<BXMK> PI-ON-PIPE-BXMK
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢁⢈⠰ ⦳ 
+ AXIOM ¡ ⠆⢁⢈⠰ ⦳ ⠆⢁⢂⠔
 
 ###====================================|====================================###
 
- # WEITER SPÄTER COMBOWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⢂⠊ BAUWABE 
 
+ PROGRAMM ⠆⢁⢂⠌ ON-PIPE
 
+ WABEN-ID ⠆⢁⢂⠑ BA
+
+ BION-NR ⠆⢁⢂⠒ 032
+
+ BION-ID ⠆⢁⢂⠔ BA032
+
+ BSK ⠆⢁⢂⠘ PIMKHTSTBABA-ON-PIPE
+
+ BION ⠆⢁⢂⠡ PI002MK002HT002ST002BA003BA032
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⢂⠑ ⧓ ⠆⢁⢂⠒ Ξ ⠆⢁⢂⠔
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⢂⠔ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⢐⠒ ⍠ ⠆⢁⢂⠢
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⢂⠢ —[<BXMK> PI-ON-PIPE-BXMK
+
+TOCHTERWABEN-KATEGORIE 
 
 
 

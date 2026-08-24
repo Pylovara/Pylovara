@@ -119,7 +119,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  EINHEIT ⠆⢄⡁⠔ ]— PI-ON-PIPE-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢄⡁⡈ ⦳          
+ AXIOM ¡ ⠆⢄⡁⡈ ⦳ ⠆⢁⢈⠰         
 
 ###====================================|====================================###
 # BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
@@ -133,9 +133,6 @@ WABENHÄRTER ⠆⢁⢈⣀ VERTEILERWABE
 
  # PIPELINE CONNECTOR
  AXIOM ¡ 
-
- # KINDERMODUL : !!!!!!!!!!!!!!!!!
- AXIOM ¡ (WIEDER AUF DIE HT PROGRAMMS)
 
  # AXIOM WABEN SYSTEM-ID 
  AXIOM ¡ ⠆⢄⡁⡈ ⑀ ⠆⢁⢐⡠
@@ -157,15 +154,17 @@ MUTTERWABEN-KATEGORIE ⠆⢁⢐⠅ BAUWABE
  BION ⠆⢁⢈⡁ PI002MK002HT002ST002BA003
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢁⢈⠢ ⧓ ⠆⢁⢈⠤ Ξ ⠆⢁⢈⠰
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢁⢈⠰ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⢄⡁⠒ ⍠ ⠆⢄⢂⠉
+ AXIOM ¡ ⠆⢄⡁⠔ ⍠ ⠆⢁⢈⡂
 
  # EINHEIT | RAM
- EINHEIT ⠆⢄⢂⠉ 
+ EINHEIT ⠆⢄⢂⠉ —[ PI-ON-PIPE-START
+ EINHEIT ⠆⢁⢈⡂ ]— PI-ON-PIPE-ENDE
 
 TOCHTERWABEN-KATEGORIE ⠆⢁⢐⠔ COMBOLINKWABE
 

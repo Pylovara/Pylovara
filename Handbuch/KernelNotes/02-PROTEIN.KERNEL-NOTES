@@ -244,22 +244,28 @@ MUTTERWABEN-KATEGORIE ⠆⢁⢂⠊ BAUWABE
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢁⢐⠒ ⍠ ⠆⢁⢂⠢
+ AXIOM ¡ ⠆⢄⡁⠔ ⍠ ⠆⢁⡠⡂
 
  # EINHEIT | RAM
  EINHEIT ⠆⢁⢂⠢ —[<BXMK> PI-ON-PIPE-BXMK
+ EINHEIT ⠆⢁⡠⡂ ]— PI-ON-PIPE-ENDE
 
-TOCHTERWABEN-KATEGORIE 
+TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠤ COMBOWABE
 
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢁⢂⠢ ⧓ ⠆⢁⡠⡂ Ξ ⠆⢁⡠⡄
 
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⡠⠰ PI-ON-PIPE-BXMK-KOMPLETT
 
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⡠⡄ ⥓ ⠆⢁⡠⠰ ⍠ ⠆⢁⡠⡁
 
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⡠⡁ —[<BXMK>]— PI-ON-PIPE-BXMK-KOMPLETT
 
-
-
-
-
-
-
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⢂⠔ ⦳ #
 
 ###====================================|====================================###
 

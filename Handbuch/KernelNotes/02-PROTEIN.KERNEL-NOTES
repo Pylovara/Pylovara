@@ -249,12 +249,12 @@ MUTTERWABEN-KATEGORIE ⠆⢁⢈⠊ BAUWABE
  AXIOM ¡ ⠆⢁⢈⠑ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡  ⍠ 
- AXIOM ¡  ⍠ 
+ AXIOM ¡ ⠆⢄⡁⠒ ⍠ ⠆⢁⢄⡠
+ AXIOM ¡ ⠆⢄⡁⠔ ⍠ ⠆⢁⢄⢂
 
  # EINHEIT | RAM
- EINHEIT ⠆⢁⢄⠤ —[ PI-ON-PIPE-START
- EINHEIT ⠆⢁⢄⠨ ]— PI-ON-PIPE-ENDE
+ EINHEIT ⠆⢁⢄⡠ —[ PI-ON-PIPE-START
+ EINHEIT ⠆⢁⢄⢂ ]— PI-ON-PIPE-ENDE
 
 TOCHTERWABEN-KATEGORIE ⠆⢁⢄⠰ COMBOLINKWABE
 
@@ -262,7 +262,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢄⠰ COMBOLINKWABE
  LINK ⠆⢁⢄⡁ POMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ ⠆⢁⢄⡁ ⑅ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉ ⧑ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀ ⧑ ⠆⢄⠊⡄ ⧑ ⠆⢄⠌⡠  ⍠ 
+ AXIOM ¡ ⠆⢁⢄⡁ ⑅ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉ ⧑ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀ ⧑ ⠆⢄⠊⡄ ⧑ ⠆⢄⠌⡠  ⍠ ⠆⢁⢄⡂
 
  # AXIOM | RAM 
  EINHEIT ⠆⢁⢄⡂ {<NAME;<WERT>} PO-NAME-BIND-WERT-SCHLIEẞEN
@@ -271,7 +271,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢄⠰ COMBOLINKWABE
  PRÄFIX ⠆⢁⢄⡄ PI-ON-PIPE-POMK
 
  # AXIOM | COMBINIERE  
- AXIOM ¡ ⠆⢁⢄⠤ ⧓ ⠆⢁⢄⡂ Ξ ⠆⢁⢄⡐
+ AXIOM ¡ ⠆⢁⢄⡠ ⧓ ⠆⢁⢄⡂ Ξ ⠆⢁⢄⡐
 
  # AXIOM | RAM 
  AXIOM ¡ ⠆⢁⢄⡐ ⥓ ⠆⢁⢄⡄ ⍠ ⠆⢁⢄⡈
@@ -284,7 +284,66 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢄⠰ COMBOLINKWABE
 
 ###====================================|====================================###
 
+ # WEITER SPÄTER ENDWABE
 
+###====================================|====================================###
+###===========================ON-PIPE-PROTEIN-COMBI=========================###
+###====================================|====================================###
+# COMBINATION BX TE PO  
+MUTTERWABEN-KATEGORIE  BAUWABE 
+
+ PROGRAMM  ON-PIPE
+
+ WABEN-ID  BA
+
+ BION-NR  031
+
+ BION-ID  BA031
+
+ BSK  PIMKHTSTBA-ON-PIPE
+
+ BION  PI002MK002HT002ST002BA031
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢄⡁⠒ ⍠ 
+ AXIOM ¡ ⠆⢄⡁⠔ ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT  —[ PI-ON-PIPE-START
+ EINHEIT  ]— PI-ON-PIPE-ENDE
+
+TOCHTERWABEN-KATEGORIE  COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK  
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡  ⑅  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑   ⍠ 
+
+ # AXIOM | RAM 
+ EINHEIT  
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX  PI-ON-PIPE-BXMK-TEMK-POMK
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡  ⧓  Ξ 
+
+ # AXIOM | RAM 
+ AXIOM ¡  ⥓  ⍠ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT  
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡  ⦳ 
+
+###====================================|====================================###
 
 
 

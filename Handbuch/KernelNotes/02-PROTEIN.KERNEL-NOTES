@@ -323,8 +323,8 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠰ COMBOLINKWABE
 
  # LINK KOMPONENTE | MASTERKERNWABE 
  LINK ⠆⢁⢄⠒ BXMK
- LINK ⠆⢁⢄⠔ TEMK #
- LINK ⠆⢁⢄⠘ POMK #
+ LINK ⠆⢁⢄⠔ TEMK
+ LINK ⠆⢁⢄⠘ POMK
 
  # AXIOM | LINK COMBINATOR  
  # BOXIS
@@ -342,7 +342,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠰ COMBOLINKWABE
  # TRENNBEFEHL
  AXIOM ¡ ⠆⢁⢄⠔ ⑅ ⠆⢄⠨⠡ ⧑ ⠆⢄⠤⡐ ⧑ ⠆⢄⠤⠒ ⧑ ⠆⢄⠢⣀ ⍠ ⠆⢁⢄⠡
  # PROTON
- AXIOM ¡ ⠆⢁⢄⠘ ⑅  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑  ⧑   ⍠ 
+ AXIOM ¡ ⠆⢁⢄⠘ ⑅ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉ ⧑ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀ ⧑ ⠆⢄⠊⡄ ⧑ ⠆⢄⠌⡠ ⍠ ⠆⢁⢄⠢
 
  # AXIOM | RAM 
  # BOXIS
@@ -360,172 +360,33 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠰ COMBOLINKWABE
  # TRENNBEFEHL
  EINHEIT ⠆⢁⢄⠡ | TE-WAND
  # PROTON
- EINHEIT ⠆⢁⢄⠢ 
+ EINHEIT ⠆⢁⢄⠢ {<NAME;<WERT>} PO-NAME-BIND-WERT-SCHLIEẞEN
 
  # AXIOM | NAME SETZEN  
- PRÄFIX  PI-ON-PIPE-BXMK-TEMK-POMK
+ PRÄFIX ⠆⢁⢂⠃ PI-ON-PIPE-BXMK-TEMK-POMK
 
  # AXIOM | COMBINIERE  
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢁⢄⠌ ⧓ ⠆⢁⢄⠒ ⧓ ⠆⢁⢄⠔ ⧓ ⠆⢁⢄⠘ Ξ ⠆⢁⢂⠅
 
  # AXIOM | RAM 
- AXIOM ¡  ⥓  ⍠ 
+ AXIOM ¡ ⠆⢁⢂⠅ ⥓ ⠆⢁⢂⠃ ⍠ 
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT  
+ EINHEIT ⠆⢁⢂⠉ —[<BXMK><TEMK><POMK> PI-ON-PIPE-BXMK-TEMK-POMK
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ⦳ 
+ AXIOM ¡ ⠆⢁⢄⠅ ⦳ 
 
 ###====================================|====================================###
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ # WEITER SPÄTER COMBOWABE
+ # DANACH SPÄTER ENDWABE
 
 ###====================================|====================================###
 
-################## ALTER BEREICH 
+AB HIER OFF-PIPE DER VOM REX AUFGENOMMEN WIRD !!!!
 
-
-WABEN-KATEGORIE Ð COMBOWABE 
-
- PROGRAMM ¡ ON-PIPE
-
- WABEN-ID ¡ CB
-
- BION-NR ¡ 03
-
- BION-ID ¡ CB03
-
- BSK ¡ PIMKHTSTBKCB-ON-PIPE
-
- BION ¡ PI02MK02HT02ST02BK01CB03
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # LIEGT IM RAM
- EINHEIT ¡ —[ = ON-PIPE-START
- EINHEIT ¡ ] = ON-PIPE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTBK-ON-PIPE
-
- # HOLT KOMPONENTE DAZU
- LINK ¡ BXMK
-
- # KOPPLUNG AN PIPELINE-BOX
- AXIOM ¡ LINK ≠ ON-PIPE-START + BXMK ≠ —[<BXMK> = ON-PIPE-BXMK
-
- # LIEGT IM RAM 
- EINHEIT ¡ —[<BXMK> = ON-PIPE-BXMK
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð ENDWABE 
-
- PROGRAMM ¡ ON-PIPE
-
- WABEN-ID ¡ ED
-
- BION-NR ¡ 02
-
- BION-ID ¡ ED02
-
- BSK ¡ PIMKHTSTBKCBED-ON-PIPE
-
- BION ¡ PI02MK02HT02ST02BK01CB03ED02
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ —[<BXMK> = ON-PIPE-BXMK
- EINHEIT ¡ ] = ON-PIPE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTBKCB-ON-PIPE
-
- # FINALE INTEGRATION (VERPACKUNG SCHLIESSEN)
- AXIOM ¡ ON-PIPE-BXMK + ON-PIPE-ENDE ≠ —[<BXMK>] = ON-PIPE-BX-FINAL
-
- # FERTIGES ON-PIPE PROTEIN (ABGABE AN TORWABE / PIPELINE)
- FINISH ¡ —[<BXMK>] = ON-PIPE-BX-FINAL
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð COMBOWABE 
-
- PROGRAMM ¡ ON-PIPE
-
- WABEN-ID ¡ CB
-
- BION-NR ¡ 04
-
- BION-ID ¡ CB04
-
- BSK ¡ PIMKHTSTBKCB-ON-PIPE
-
- BION ¡ PI02MK02HT02ST02BK01CB04
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # LIEGT IM RAM
- EINHEIT ¡ —[ = ON-PIPE-START
- EINHEIT ¡ ] = ON-PIPE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTBK-ON-PIPE
-
- # HOLT KOMPONENTE DAZU
- LINK ¡ POMK
-
- # KOPPLUNG AN PROTON-KERN
- AXIOM ¡ LINK ≠ ON-PIPE-START + POMK ≠ —[<POMK> = ON-PIPE-POMK
-
- # LIEGT IM RAM 
- EINHEIT ¡ —[<POMK> = ON-PIPE-POMK
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð ENDWABE 
-
- PROGRAMM ¡ ON-PIPE
-
- WABEN-ID ¡ ED
-
- BION-NR ¡ 03
-
- BION-ID ¡ ED03
-
- BSK ¡ PIMKHTSTBKCBED-ON-PIPE
-
- BION ¡ PI02MK02HT02ST02BK01CB04ED03
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ —[<POMK> = ON-PIPE-POMK
- EINHEIT ¡ ] = ON-PIPE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTBKCB-ON-PIPE
-
- # FINALE INTEGRATION
- AXIOM ¡ ON-PIPE-POMK + ON-PIPE-ENDE ≠ —[<POMK>] = ON-PIPE-PO-FINAL
-
- # FERTIGES ON-PIPE PROTEIN 
- FINISH ¡ —[<POMK>] = ON-PIPE-PO-FINAL
-
+!!!!! ALTER BEREICH
 ###====================================|====================================###
 ###=========================OFF-PIPE BEARBEITUNG============================###
 ###====================================|====================================###

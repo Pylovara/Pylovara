@@ -240,7 +240,7 @@ MUTTERWABEN-KATEGORIE ⠆⢁⢂⠊ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⢂⠑ ⧓ ⠆⢁⢂⠒ Ξ ⠆⢁⢂⠔
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢁⢂⠔ ⧑ 
+ AXIOM ¡ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢁⢐⠒ ⍠ ⠆⢁⢂⠢
@@ -265,11 +265,48 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠤ COMBOWABE
  EINHEIT ⠆⢁⡠⡁ —[<BXMK>]— PI-ON-PIPE-BXMK-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢁⢂⠔ ⦳ #
+ AXIOM ¡ ⠆⢁⢂⠔ ⦳ ⠆⢁⡐⢠
 
 ###====================================|====================================###
 
- # DANACH SPÄTER ENDWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⡐⢂ ENDWABE 
+
+ PROGRAMM ⠆⢁⡐⢄ ON-PIPE
+
+ WABEN-ID ⠆⢁⡐⢈ ED
+
+ BION-NR ⠆⢁⡐⢐ 002
+
+ BION-ID ⠆⢁⡐⢠ ED002
+
+ BSK ⠆⢁⡐⣀ PIMKHTSTBABAED-ON-PIPE
+
+ BION ⠆⢁⡠⠃ PI002MK002HT002ST002BA003BA032ED002
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡐⢈ ⧓ ⠆⢁⡐⢐ Ξ ⠆⢁⡐⢠
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡐⢠ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⡠⡁ ⍠ ⠆⢁⡐⠉
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⡐⠉ —[<BXMK>]— PI-ON-PIPE-BXMK-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⡐⠑ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⡐⠌ PI-ON-PIPE-BXMK-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⡐⠉ ⥓ ⠆⢁⡐⠌ ⍠ ⠆⢁⡐⠊ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⡐⠊ —[<BXMK>]— PI-ON-PIPE-BXMK-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⡐⢠ ⦱ 
 
 ###====================================|====================================###
 ###==========================ON-PIPE-PROTEIN-PROTON=========================###
@@ -564,9 +601,16 @@ AB HIER OFF-PIPE DER VOM REX AUFGENOMMEN WIRD !!!!
  die logik durch gehen .... und vielleicht mit buddy knuddeln ( wobei ... der 
  will warscheins eh nur salami aus dem kühlschrank XD ) ... 
 
+ nebenbei = die endwaben logiken sind eigentlich obsolet geworden 
+            aber für einen sauberen abschluss behalte ich sie mal. 
+            auch wenn es quasi nur ein runter holen bedeutet und dann der 
+            stop prozess... 
 
+            qualitäts arbeit zeichnet sich aber durch solche merkmale aus , 
+            auch wenn sie unötig erscheinen .... 
 
-
+ ich könnte die endwaben logik generalisieren ... ein exit bzw return off 
+ sollte schon vorgesehen bleiben ... mal schauen ... 
 
 
 WABEN-KATEGORIE Ð HAUPTWABE 

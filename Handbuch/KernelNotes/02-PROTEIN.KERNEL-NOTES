@@ -177,12 +177,12 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢐⠔ COMBOLINKWABE
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠉⠔ ⧑ ⠆⢂⢐⢈ ⧑ ⠆⢂⡂⢐ ⧑ ⠆⢂⠘⠑ ⧑ ⠆⢂⠊⠨ ⍠ ⠆⢁⢈⡈
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠉⠰ ⧑ ⠆⢂⢐⡄ ⧑ ⠆⢂⡁⡐ ⧑ ⠆⢂⠔⢁ ⧑ ⠆⢂⠉⠢ ⍠ ⠆⢁⢈⡐
  AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⢈ ⧑ ⠆⢂⢈⠨ ⧑ ⠆⢂⡁⠢ ⧑ ⠆⢂⠔⠘ ⧑ ⠆⢂⠅⢄ ⍠ ⠆⢁⢈⡠
- AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⠑ ⧑   ⍠ 
- AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⠨ ⧑   ⍠ 
- AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠃⢁ ⧑   ⍠ 
- AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⠃ ⧑   ⍠ 
- AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢂⣀⡈ ⧑   ⍠ 
- AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠃⠢ ⧑   ⍠ 
+ AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⠑ ⧑ ⠆⢂⢈⠒ ⧑ ⠆⢂⡁⠊ ⧑ ⠆⢂⠒⢁ ⧑ ⠆⢂⠅⠨ ⍠ ⠆⢁⢈⢂
+ AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⠨ ⧑ ⠆⢂⢄⠉ ⧑ ⠆⢂⠰⠃ ⧑ ⠆⢂⠒⠤ ⧑ ⠆⢂⠃⢐ ⍠ ⠆⢁⢈⢄
+ AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠃⢁ ⧑ ⠆⢂⡠⣀ ⧑ ⠆⢂⠤⢄ ⧑ ⠆⢂⠑⡈ ⧑ ⠆⢁⣀⢂ ⍠ ⠆⢁⢄⢠
+ AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠅⠃ ⧑ ⠆⢂⡠⡐ ⧑ ⠆⢂⠤⡈ ⧑ ⠆⢂⠑⠰ ⧑ ⠆⢂⠃⠢ ⍠ ⠆⢁⢄⣀
+ AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢂⣀⡈ ⧑ ⠆⢂⡐⠰ ⧑ ⠆⢂⠢⠰ ⧑ ⠆⢂⠌⢠ ⧑ ⠆⢁⣀⠡ ⍠ ⠆⢁⢈⠃
+ AXIOM ¡ ⠆⢁⢐⠉ ⑅ ⠆⢄⠃⠢ ⧑ ⠆⢂⡐⠘ ⧑ ⠆⢂⠢⠔ ⧑ ⠆⢂⠌⠨ ⧑ ⠆⢁⢠⢂ ⍠ ⠆⢁⢈⠅
 
  # AXIOM | RAM 
  EINHEIT ⠆⢁⢐⠊ ": <IO> :" BX-PRINT-KOMPLETT
@@ -190,12 +190,12 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢐⠔ COMBOLINKWABE
  EINHEIT ⠆⢁⢈⡈ ,: <IO> :, BX-SYSCALL
  EINHEIT ⠆⢁⢈⡐ Ħ: <IO> :Ħ BX-ABI
  EINHEIT ⠆⢁⢈⡠ ': <IO> :' BX-SHELL
- EINHEIT ⠆⢁⢈⢂ 
- EINHEIT ⠆⢁⢈⢄ 
- EINHEIT ⠆⢁⢄⢠ 
- EINHEIT ⠆⢁⢄⣀ 
- EINHEIT ⠆⢁⢈⠃ 
- EINHEIT ⠆⢁⢈⠅ 
+ EINHEIT ⠆⢁⢈⢂ ¥: <IO> :¥ BX-EINGABE
+ EINHEIT ⠆⢁⢈⢄ ~: <IO> :~ BX-MCD
+ EINHEIT ⠆⢁⢄⢠ $: <IO> :$ BX-PFAD
+ EINHEIT ⠆⢁⢄⣀ §: <IO> :§ BX-NET
+ EINHEIT ⠆⢁⢈⠃ º: <IO> :º BX-OPCODE 
+ EINHEIT ⠆⢁⢈⠅ ºº: <IO> :ºº BX-MASCHINENCODE
 
  # AXIOM | NAME SETZEN  
  PRÄFIX ⠆⢁⢐⠌

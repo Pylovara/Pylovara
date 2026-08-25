@@ -1,0 +1,52 @@
+
+                 [ Antriebswelle vom Motor ] rex 
+                         │
+                    ( Ritzel ) kanäle
+                         │
+                 ▼ ( Tellerrad ) retron cpu prozess
+              ┌───────────────────────┐
+              │  Differenzialgehäuse  │ <-- double clock I.M
+              └──────────┬────────────┘
+                         │
+                [ Ausgleichskegelräder ] <-- OBSOLET
+                 (drehen sich bei Kurve) <-- OBSOLTE
+                     ╱       ╲
+                    ╱         ╲
+   [ Linkes Achsrad ]         [ Rechtes Achsrad ]
+         │                             │
+      Linkes Rad                   Rechtes Rad
+
+      KANAL 1-10                     KANAL 11-20
+
+hmmm .... 
+
+weis nicht .... eine multiplexer double clock variante wäre sinnvoller
+
+quasi : Differenzial getrieben durch Clock-Differenz
+
+
+                [ REX (Dimensions-Multiplexer) ]
+                               │
+                       [ Kanäle / Ritzel ]
+                               │
+                   ▼ [ Retron CPU-Prozess (Tellerrad) ]
+              ┌────────────────────────────────────────┐
+              │    Double Clock I.M. (Multiplexing)    │
+              └───────────┬────────────────┬───────────┘
+                          │                │
+                          ▼                ▼
+                     [ Kanal 1-10 ]   [ Kanal 11-20 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+

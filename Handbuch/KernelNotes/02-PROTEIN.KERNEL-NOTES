@@ -384,7 +384,7 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡠⡈ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⡠⢂ ⧓ ⠆⢁⡠⢄ Ξ ⠆⢁⡠⢈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢁⡠⢈ ⧑ 
+ AXIOM ¡ ⠆⢁⡠⢈ ⧑ ⠆⢁⡐⠢
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⢁⢄⡈ ⍠ ⠆⢁⡠⣀
@@ -409,11 +409,48 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢂⠤ COMBOWABE
  EINHEIT ⠆⢁⡠⠌ —[<POMK>]— PI-ON-PIPE-POMK-KOMPLETT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⢁⡠⢈ ⦳ #
+ AXIOM ¡ ⠆⢁⡠⢈ ⦳ ⠆⢁⡐⠢
 
 ###====================================|====================================###
 
- # DANACH SPÄTER ENDWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⡐⠒ ENDWABE 
+
+ PROGRAMM ⠆⢁⡐⠔ ON-PIPE
+
+ WABEN-ID ⠆⢁⡐⠘ ED
+
+ BION-NR ⠆⢁⡐⠡ 003
+
+ BION-ID ⠆⢁⡐⠢ ED003
+
+ BSK ⠆⢁⡐⠤ PIMKHTSTBABAED-ON-PIPE
+
+ BION ⠆⢁⡐⠨ PI002MK002HT002ST002BA003BA033ED003
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡐⠘ ⧓ ⠆⢁⡐⠡ Ξ ⠆⢁⡐⠢
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡐⠢ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⡠⠌ ⍠ ⠆⢁⡐⠰
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⡐⠰ —[<POMK>]— PI-ON-PIPE-POMK-KOMPLETT
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⡈⡂ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⡈⡄ PI-ON-PIPE-POMK-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⡐⠰ ⥓ ⠆⢁⡈⡄ ⍠ ⠆⢁⡈⡐ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⡈⡐ —[<POMK>]— PI-ON-PIPE-POMK-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⡐⠢ ⦱ 
 
 ###====================================|====================================###
 ###=================ON-PIPE-PROTEIN-BOXIS-TRENNBEFEHL-PROTON================###

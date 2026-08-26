@@ -1,0 +1,26 @@
+Pylovara-System Dev bezug auf JaKooLit User :
+
+Aufgrund von Dauer Umstellungen werden JaKooLit Scripte Inklusive seines "DOT" Updaters
+demnächst aus dem sortiment fliegen ...
+
+Mir ist bekannt das es jedem den Desktop Zerstört und an der Problemlösung Dessen wird bald gearbeitet .
+
+Da ich Aufgrund des Pylovara-Systems Vollzeit mit dem einpflegen der entwicklung Beschäftigt bin,
+versuche ich Gegen Dezember Zeit Zu Finden und den Installations Prozess von Hyprland selbst auf
+den stand 2023 zurück zuführen und den System Updater , vollständig heraus zu Lösen .
+
+ bis dahin „ leben wir mit dem affentheater “
+
+wer den nervenden faktor weg haben will , hier lang :
+
+chmod -x ~/.config/hypr/scripts/KooLsDotsUpdate.sh
+chmod -x ~/.config/hypr/scripts/Distro_update.sh
+
+dann
+
+rm ~/.config/hypr/scripts/KooLsDotsUpdate.sh
+rm ~/.config/hypr/scripts/Distro_update.sh
+
+inklusive waybar :
+
+"on-click": "$HOME/.config/hypr/scripts/KooLsDotsUpdate.sh"

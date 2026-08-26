@@ -2,14 +2,207 @@
 ###============================PYLOVARA-SYSTEM==============================###
  #        REX = THE CONTROL FILE AND PROZESS MANAGMENT SYSTEM                #
 ###===========================WICHTIGER-HINWEIS=============================###
- #  REX SCHALTET SICH GRUNDSÄTZLICH NACH PIMK, ICMK WIRD HIER GEBUNDEN       #                                                         
- #   ┌──────────────────────────────────────────────────────────┐            #
- #   │                                                          │ (Loop)     #
- #   ▼ ON|OFF PIPE PROTEIN                                      │            #
- #   [PIMK] ──► [ ICTUS (Workspace) ] ──► [ REX (Control/SC) ] ─┘            #
- #  ( DIE BLOCKWABE WIRD NOCH MODIFIZIERT FÜR DEN SYNTAXBAUM REX ANSCHLUSS)  #
- # INFO : REX IST PER DESIGNED WIE EIN MUX AUFGEBAUT , KEIN OVERHEAD         #                                                                    #
 ###===============================STARTPUNKT================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⡈⠡ KOPFWABE
+
+ KOMPONENTE ⠆⢁⡈⠢ REX
+
+ KOMPONENTEN-ID ⠆⢁⡈⠤ RX
+
+ BION-NR ⠆⢁⡈⠨ 007
+
+ BION-ID ⠆⢁⡈⠰ RX007
+
+ MASTER-ID ⠆⢁⡈⡁ MA046SU007
+
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⢁⡈⠢ ⏍ ⠆⢁⡈⠢
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡈⠤ ⧓ ⠆⢁⡈⠨ Ξ ⠆⢁⡈⠰
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡈⠰ ⧑ ⠆⢁⡄⢂
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⡄⡈ MASTERKERNWABE
+
+ WABEN-ID ⠆⢁⡄⡐ MK 
+
+ BION-NR ⠆⢁⡄⡠ 007
+
+ BION-ID ⠆⢁⡄⢂ MK007
+
+ BSK ⠆⢁⡄⢄ RXMK
+
+ BION ⠆⢁⡄⢈ RX007MK007
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡄⡐ ⧓ ⠆⢁⡄⡠ Ξ ⠆⢁⡄⢂
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
+
+###====================================|====================================###
+
+ # BEVOR DU WEITER MACHST (DANN) | VERMERK LESEN 
+
+###====================================|====================================###
+
+ vermerkt : 
+ ob ich heute irgendwas schaffe , waage ich zu bezweifeln ...
+
+ kurzer vermerkt für mich 
+ - rex wurde über combi gebaut und über linkendwaben verschalten .
+
+ das heißt : 
+
+ rex baut sich erstmal auf über haupt und start ... 
+ dann baut er seine elemente zusammen über combo ....
+ und dann verlinkte er sich in die jeweilige komponente ..
+
+ das war noch die entwicklung von 00-81 und das schnelle struktur erneuern 
+ in 00-82 ... 
+
+ da ich aber jetzt die härterwaben habe , insbesondere die pipeline 
+ aus protein heraus geholt habe und versuche sie seperat als eigenständige 
+ komponente hoch zu ziehen .... 
+
+ wäre der weg jetzt eher : 
+
+ 1. Normale aufbau über HT wie ST 
+ 2. combolink waben zum reinziehen von ictus  
+ 
+ ?. unbestimt 
+
+ 
+ das ist eine designe angelegenheit .... das ist wieder so eine 
+ sache wo ich stunden lang im selbst gespräch die hütte , hoch und runter 
+ laufen könnte und mir selbst pro und kontras in den mund lege und laut 
+ denke , wie ein wahnsinniger psycho in der klapse ... 
+
+ dann mit jeweiligen eselsbrücken informations recherchen ... 
+
+ die frage ist : „ was will ich ? “
+
+ will ich a : 
+ einen reflex der nur verknotet und ictus die arbeitsflächen containerisiert ? 
+
+ will ich b : 
+ penibel extremsalles rein ziehen und die scheiße hier im onetake bauen ? 
+
+
+ grundsatz : 
+
+ ich leg mich nicht mit irgend einem kleinen schulhof kind an 
+ sondern mit der gesamten informatik und instituten ... 
+
+ ich nehme mir die frechheit heraus , jeden begriff selbst zu definieren 
+ selbst wenn sie in deren münder andere bedeutungen haben ... 
+
+ ich riskiere meinen namen , wenn durch zu strengen datenblätter, die 
+ performance der einzelnen programme leidet ... 
+
+ schluss endlich hafte ich mit meinem namen und meiner ehre ... 
+ inklusive gehts nicht nur darum das ich verstehe was hier gebaut wird 
+ oder gebaut wurde , sondern folge richtig auch jeder student der danach 
+ eine first programmiersprache sucht und eventuell nicht bei mcs sondern 
+ sogar beim tws hängen bleibt ... 
+
+ der vorwurf der unklarheit die ich selbst den konzernen unterstelle 
+ sollte ich in meiner arbeit vermeiden - kernprinzip ... 
+
+ selbst frage : 
+ was macht rex ? 
+
+ REX verknüpft in MCS die datenpackete auf pipeline ebene und 
+ sorgt dafür das die primäre Block funktion ( aus allen sprachen ) 
+ einheitlich unter einem haupt protein plaziert werden .
+
+ damit kann man eigene funktionen , wortwörtlich , selbst bauen und 
+ zwar original getreu und punktuell - was andere nicht können weil sie 
+ wörter wie tragets behandelt haben mit untergaubten bibliotheken 
+ die weder erklärt werden , noch unverschlüsselt vorliegen ( sondern 
+ nur hochgradig verkritzelt ). 
+
+ selbst die schaltungen sind mathematisch unterbaut ( teils sinnlos )
+ und erzeugen overhead, von denen die meisten keine ahung haben - weil 
+ sie kaum spürbar ist ... 
+
+ die summe dessen was steht , erzeugt dann micro latenzen .... 
+ umso mehr code werden sie höher ... bis zum bekannten zeitversetzten 
+ verarbeiten ... 
+
+ kam warscheins noch aus der Hippie zeit von AT&T .... "Alles ist ein Wort" ..
+
+ gut okey , solange ich den bsk nicht repariert habe , stehe ich an der selben 
+ schwelle ( außer die system-id, die das unmögliche möglich macht ) .
+
+ was soll also rex genau tun ? 
+ vereinfacht und behindert ausgedrückt : verlinken 
+ aber syntaktisch verschaltet , statts wahrlos und wirr ... 
+
+ da rex zu mcs gehört und mcs kindern beigebracht werden kann/soll/muss . 
+ keine 40 semester fachabiturient ( quasi : berufsschüler ) 
+ sondern akurat , gerade , verständlich , vollständig ... 
+
+ wie gehe ich also die tage vor , wenn mein gemüt wieder stabiler ist ? 
+
+ ich sollte mich an der neuen wabenhärter logik orientieren ... 
+ sie wäre wie ein analog gerät das man zwischen schaltet oder zu ende .. 
+
+ ähnlich wie der aufbau von REASON damals die Musiker DAW , vorne knöpfe 
+ und hinten kabelsalat ... 
+
+ nur hier Ohne knöpfe aber dafür Kabelsalat ... lach ( ich erschiss mich )
+
+ im grunde muss ich auch noch die status und alu funktion in waben pressen, 
+ mal am rande erwähnt ... 
+
+ ¬·¤ 
+ ¬·¤¤
+
+ gut okey ... hat kein sinn ... innerlich ausgehungert .... kopf technisch 
+ querschläger .... aufbau „ on the fly “ ... 
+
+ ich knall erstmal den header hin , dann kern .... 
+ ab der haupt lass ich offen .... 
+
+ 
+
+ bedenke : 
+
+ Mir Rennt nichts weg , solange die Welt nur Rumzündelt ! 
+ Selbst mit der Vorentwicklung kann ich Überall anklopfen !!!! 
+ Was ich bis her geleistet habe , ist Überragend !!!
+ Du bist Hardware und Software Baue ! Du kannst das !!! 
+ Du Fickst sie !! sie haben nichts vergleichbares !!!
+ Du allein diggah !!! 8 Milliarden menschen und dennoch 
+ nur abgeschriebene programmiersprachen wie neandertaler !!!
+ Du Hast hier ein Unicat !!!
+ qualität !!!
+
+ also chill !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+ der tws ist nur der beweis an mich das ich es mit jedem 
+ konzern aufnehmen kann und zwar egal wie groß und wieviele darin 
+ rum geistern !!!
+
+ Keine Von denen hat was gutes geschrieben .... nicht mal SAP 
+ oder BSD ... 
+
+ Egal wie lange du für diese version brauchst , denke daran 
+ und denk daran wirklich du Vollidiot : 
+ 
+ DU MACHST DAS ! Nicht irgend ein behinderter Hochstudierter , sondern 
+ DUUUUUU ..... 
+
+ Es wird laufen .... Die frage ist nicht Ob , die frage ist nur WIE 
+ Und das WIE Gehst du gerade an !!!
+
+
+!!!!!!!!!!!!!!!!! alter bereich | nicht mein tag 
 
 WABEN-KATEGORIE Ð KOPFWABE
 

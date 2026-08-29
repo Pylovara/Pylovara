@@ -41,279 +41,411 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡄⡈ MASTERKERNWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⡄⡐ ⧓ ⠆⢁⡄⡠ Ξ ⠆⢁⡄⢂
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
+ AXIOM ¡ ⠆⢁⡄⢂ ⧑ ⠆⢁⡈⠅
+
+###====================================|====================================###
+# BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
+WABENHÄRTER  VERTEILERHÄRTER
+
+ # AXIOM | ANSCHLUSS MASTERKERNWABE
+ AXIOM ¡ ⍿ ⠆⢁⡄⢂
+
+ # PIPLINE-LINK
+ TEIL-LINK ¡  ⍠ 
+
+ # PIPELINE CONNECTOR
+ AXIOM ¡ 
+
+ # AXIOM WABEN SYSTEM-ID 
+ AXIOM ¡  ⑀ 
 
 ###====================================|====================================###
 
- # BEVOR DU WEITER MACHST (DANN) | VERMERK LESEN 
+MUTTERWABEN-KATEGORIE ⠆⢁⡄⢐ HAUPTWABE 
+
+ PROGRAMM ⠆⢁⡄⢠ MANAGER
+
+ WABEN-ID ⠆⢁⡄⣀ HT
+
+ BION-NR ⠆⢁⡈⠃ 018
+
+ BION-ID ⠆⢁⡈⠅ HT018
+
+ BSK ⠆⢁⡈⠉ RXMKHT-MANAGER
+
+ BION ⠆⢁⡄⠌ RX007MK007HT018
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡄⣀ ⧓ ⠆⢁⡈⠃ Ξ ⠆⢁⡈⠅
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡈⠅ ⧑ ⠆⢁⡄⠢
 
 ###====================================|====================================###
 
- vermerkt : 
- ob ich heute irgendwas schaffe , waage ich zu bezweifeln ...
+MUTTERWABEN-KATEGORIE ⠆⢁⡄⠔ STARTWABE 
 
- kurzer vermerkt für mich 
- - rex wurde über combi gebaut und über linkendwaben verschalten .
+ PROGRAMM ⠆⢁⡄⠒ MANAGER
 
- das heißt : 
+ WABEN-ID ⠆⢁⡄⠘ ST
 
- rex baut sich erstmal auf über haupt und start ... 
- dann baut er seine elemente zusammen über combo ....
- und dann verlinkte er sich in die jeweilige komponente ..
+ BION-NR ⠆⢁⡄⠡ 018
 
- das war noch die entwicklung von 00-81 und das schnelle struktur erneuern 
- in 00-82 ... 
+ BION-ID ⠆⢁⡄⠢ ST018
 
- da ich aber jetzt die härterwaben habe , insbesondere die pipeline 
- aus protein heraus geholt habe und versuche sie seperat als eigenständige 
- komponente hoch zu ziehen .... 
+ BSK ⠆⢁⡄⠤ RXMKHTST-MANAGER
 
- wäre der weg jetzt eher : 
+ BION ⠆⢁⡄⠨ RX007MK007HT018ST018
 
- 1. Normale aufbau über HT wie ST 
- 2. combolink waben zum reinziehen von ictus  
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡄⠘ ⧓ ⠆⢁⡄⠡ Ξ ⠆⢁⡄⠢
+ # BION-ID FOLGEVERBINDUNG
+ # BA35
+ AXIOM ¡ ⠆⢁⡄⠢ ⧑ ⠆⢁⡂⠢
+ # BA36
+ AXIOM ¡ ⠆⢁⡄⠢ ⧑ ⠆⢁⠢⡠
+ # BA37
+ AXIOM ¡ ⠆⢁⡄⠢ ⧑ ⠆⢁⠡⠰
+ # BA38
+ AXIOM ¡ ⠆⢁⡄⠢ ⧑ ⠆⢁⠡⠊
+
+ TASTENCODE ⠆⢁⡄⠰ ALTGR
+ TASTENCODE ⠆⢁⡄⡁ 6
+ TASTENCODE ⠆⢁⡄⡂ SHIFT
+ TASTENCODE ⠆⢁⡂⡐ 4
+
+ SYMBOLE ⠆⢁⡂⡠ ¬
+ SYMBOLE ⠆⢁⡂⢂ ¤
+
+ PRÄFIX ⠆⢁⡂⢈ RX-MANAGER
+ PRÄFIX ⠆⢁⡂⢐ RX-STATUS
+ PRÄFIX ⠆⢁⡂⢠ RX-ALU
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢁⡄⠰ ⦻ ⠆⢁⡄⡁ Ξ ⠆⢁⡂⡠
+ AXIOM ¡ ⠆⢁⡄⠰ ⦻ ⠆⢁⡄⡂ ⦻ ⠆⢁⡂⡐ Ξ ⠆⢁⡂⢂
+ AXIOM ¡ ⠆⢁⡂⡠ Ξ ⠆⢁⡂⣀ 
+ AXIOM ¡ ⠆⢁⡂⢂ Ξ ⠆⢁⡄⠃
+ AXIOM ¡ ⠆⢁⡂⢂ ⧓ ⠆⢁⡂⢂ Ξ ⠆⢁⡄⠅
+
+ PRODUKT ⠆⢁⡂⣀ ¬
+ PRODUKT ⠆⢁⡄⠃ ¤
+ PRODUKT ⠆⢁⡄⠅ ¤¤
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢁⡂⣀ ⥓ ⠆⢁⡂⢈
+ AXIOM ¡ ⠆⢁⡄⠃ ⥓ ⠆⢁⡂⢠
+ AXIOM ¡ ⠆⢁⡄⠅ ⥓ ⠆⢁⡂⢐
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢁⡂⣀ ⥗ ⠆⢁⡂⢈ ⍠ ⠆⢁⡄⠉
+ AXIOM ¡ ⠆⢁⡄⠃ ⥗ ⠆⢁⡂⢠ ⍠ ⠆⢁⡄⠊
+ AXIOM ¡ ⠆⢁⡄⠅ ⥗ ⠆⢁⡂⢐ ⍠ ⠆⢁⡂⠑
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⡄⠉ ¬ RX-MANAGER
+ EINHEIT ⠆⢁⡄⠊ ¤ RX-ALU
+ EINHEIT ⠆⢁⡂⠑ ¤¤ RX-STATUS
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ # BAU35
+ AXIOM ¡ ⠆⢁⡄⠢ ⦳ ⠆⢁⡂⠢
+ # BAU36
+ AXIOM ¡ ⠆⢁⡄⠢ ⦳ ⠆⢁⠢⡠
+ # BAU37
+ AXIOM ¡ ⠆⢁⡄⠢ ⦳ ⠆⢁⠡⠰
+ # BAU38
+ AXIOM ¡ ⠆⢁⡄⠢ ⦳ ⠆⢁⠡⠊
+
+###====================================|====================================###
+###================================REX-ICTUS-1==============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⡂⠒ BAUWABE 
+
+ PROGRAMM ⠆⢁⡂⠔ MANAGER
+
+ WABEN-ID ⠆⢁⡂⠘ BA
+
+ BION-NR ⠆⢁⡂⠡ 035
+
+ BION-ID ⠆⢁⡂⠢ BA035
+
+ BSK ⠆⢁⡂⠤ RXMKHTSTBA-MANAGER
+
+ BION ⠆⢁⡂⠨ RX007MK007HT018ST018BA035
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡂⠘ ⧓ ⠆⢁⡂⠡ Ξ ⠆⢁⡂⠢
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡂⠢ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⡄⠉ ⍠ ⠆⢁⡂⠰
+ AXIOM ¡ ⠆⢁⡄⠊ ⍠ ⠆⢁⡂⡁
+ AXIOM ¡ ⠆⢁⡂⠑ ⍠ ⠆⢁⡂⡄
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⡂⠰ ¬ RX-MANAGER
+ EINHEIT ⠆⢁⡂⡁ ¤ RX-ALU
+ EINHEIT ⠆⢁⡂⡄ ¤¤ RX-STATUS
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⡂⡈ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢁⠨⠰ ICMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ ⠆⢁⡂⠉ ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠨⢂ ⍠ ⠆⢁⠨⡁
+
+ # AXIOM | RAM 
+ EINHEIT ⠆⢁⠨⡁ · IC-KERN-1
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠨⡂ RX-MANAGER-KERN-1
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢁⡂⠰ ⧓ ⠆⢁⠨⡁ Ξ ⠆⢁⠢⡁
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠢⡁ ⥓ ⠆⢁⠨⡂ ⍠ ⠆⢁⠨⡄
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠨⡄ ¬· RX-MANAGER-KERN-1
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⡂⠢ ⦳ 
+
+###====================================|====================================###
+
+ # WEITERES 
+
+ 1. BA35 DIREKT AUSGANG 
+ 2. BA35 ALU AUSGANG 
+ 3. BA35 STATUS AUSGANG
  
- ?. unbestimt 
+###====================================|====================================###
+###================================REX-ICTUS-2==============================###
+###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢁⠢⡂ BAUWABE 
+
+ PROGRAMM ⠆⢁⠢⡄ MANAGER
+
+ WABEN-ID ⠆⢁⠢⡈ BA
+
+ BION-NR ⠆⢁⠢⡐ 036
+
+ BION-ID ⠆⢁⠢⡠ BA036
+
+ BSK ⠆⢁⠢⢂ RXMKHTSTBA-MANAGER
+
+ BION ⠆⢁⠢⢄ RX007MK007HT018ST018BA036
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠢⡈ ⧓ ⠆⢁⠢⡐ Ξ ⠆⢁⠢⡠
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠢⡠ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⡄⠉ ⍠ ⠆⢁⠢⢈
+ AXIOM ¡ ⠆⢁⡄⠊ ⍠ ⠆⢁⠡⢠
+ AXIOM ¡ ⠆⢁⡂⠑ ⍠ ⠆⢁⠡⣀
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠢⢈ ¬ RX-MANAGER
+ EINHEIT ⠆⢁⠡⢠ ¤ RX-ALU
+ EINHEIT ⠆⢁⠡⣀ ¤¤ RX-STATUS
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⠢⠃ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢁⠢⠅ ICMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ ⠆⢁⠢⠅ ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠨⠒ ⍠ ⠆⢁⠢⠉
+
+ # AXIOM | RAM 
+ EINHEIT ⠆⢁⠢⠉ ·· IC-KERN-2
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠢⠊ RX-MANAGER-KERN-2
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢁⠢⠉ ⧓ ⠆⢁⠢⠊ Ξ ⠆⢁⠢⠌
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠢⠌ ⥓ ⠆⢁⠢⠊ ⍠ ⠆⢁⠢⠑
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠢⠑ ¬·· RX-MANAGER-KERN-2
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠢⡠ ⦳ 
+
+###====================================|====================================###
+
+ # WEITERES 
+
+ 1. BA36 DIREKT AUSGANG 
+ 2. BA36 ALU AUSGANG 
+ 3. BA36 STATUS AUSGANG
  
- das ist eine designe angelegenheit .... das ist wieder so eine 
- sache wo ich stunden lang im selbst gespräch die hütte , hoch und runter 
- laufen könnte und mir selbst pro und kontras in den mund lege und laut 
- denke , wie ein wahnsinniger psycho in der klapse ... 
+###====================================|====================================###
+###================================REX-ICTUS-3==============================###
+###====================================|====================================###
 
- dann mit jeweiligen eselsbrücken informations recherchen ... 
+MUTTERWABEN-KATEGORIE ⠆⢁⠢⠔ BAUWABE 
 
- die frage ist : „ was will ich ? “
+ PROGRAMM ⠆⢁⠢⠘ MANAGER
 
- will ich a : 
- einen reflex der nur verknotet und ictus die arbeitsflächen containerisiert ? 
+ WABEN-ID ⠆⢁⠢⠡ BA
 
- will ich b : 
- penibel extremsalles rein ziehen und die scheiße hier im onetake bauen ? 
+ BION-NR ⠆⢁⠡⠨ 037
 
+ BION-ID ⠆⢁⠡⠰ BA037
 
- grundsatz : 
+ BSK ⠆⢁⠡⡁ RXMKHTSTBA-MANAGER
 
- ich leg mich nicht mit irgend einem kleinen schulhof kind an 
- sondern mit der gesamten informatik und instituten ... 
+ BION ⠆⢁⠡⡂ RX007MK007HT018ST018BA037
 
- ich nehme mir die frechheit heraus , jeden begriff selbst zu definieren 
- selbst wenn sie in deren münder andere bedeutungen haben ... 
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠢⠡ ⧓ ⠆⢁⠡⠨ Ξ ⠆⢁⠡⠰
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠡⠰ ⧑ 
 
- ich riskiere meinen namen , wenn durch zu strengen datenblätter, die 
- performance der einzelnen programme leidet ... 
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⡄⠉ ⍠ ⠆⢁⠢⠒
+ AXIOM ¡ ⠆⢁⡄⠊ ⍠ ⠆⢁⠡⡄
+ AXIOM ¡ ⠆⢁⡂⠑ ⍠ ⠆⢁⠡⡈
 
- schluss endlich hafte ich mit meinem namen und meiner ehre ... 
- inklusive gehts nicht nur darum das ich verstehe was hier gebaut wird 
- oder gebaut wurde , sondern folge richtig auch jeder student der danach 
- eine first programmiersprache sucht und eventuell nicht bei mcs sondern 
- sogar beim tws hängen bleibt ... 
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠢⠒ ¬ RX-MANAGER
+ EINHEIT ⠆⢁⠡⡄ ¤ RX-ALU
+ EINHEIT ⠆⢁⠡⡈ ¤¤ RX-STATUS
 
- der vorwurf der unklarheit die ich selbst den konzernen unterstelle 
- sollte ich in meiner arbeit vermeiden - kernprinzip ... 
+TOCHTERWABEN-KATEGORIE ⠆⢁⠡⡐ COMBOLINKWABE
 
- selbst frage : 
- was macht rex ? 
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢁⠡⡠ ICMK
 
- REX verknüpft in MCS die datenpackete auf pipeline ebene und 
- sorgt dafür das die primäre Block funktion ( aus allen sprachen ) 
- einheitlich unter einem haupt protein plaziert werden .
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ ⠆⢁⠡⡠ ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠤⡠ ⍠ ⠆⢁⠡⢂
 
- damit kann man eigene funktionen , wortwörtlich , selbst bauen und 
- zwar original getreu und punktuell - was andere nicht können weil sie 
- wörter wie tragets behandelt haben mit untergaubten bibliotheken 
- die weder erklärt werden , noch unverschlüsselt vorliegen ( sondern 
- nur hochgradig verkritzelt ). 
+ # AXIOM | RAM 
+ EINHEIT ⠆⢁⠡⢂ ··· IC-KERN-3
 
- selbst die schaltungen sind mathematisch unterbaut ( teils sinnlos )
- und erzeugen overhead, von denen die meisten keine ahung haben - weil 
- sie kaum spürbar ist ... 
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠡⢄ RX-MANAGER-KERN-3
 
- die summe dessen was steht , erzeugt dann micro latenzen .... 
- umso mehr code werden sie höher ... bis zum bekannten zeitversetzten 
- verarbeiten ... 
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢁⠢⠒ ⧓ ⠆⢁⠡⢂ Ξ ⠆⢁⠡⢈
 
- kam warscheins noch aus der Hippie zeit von AT&T .... "Alles ist ein Wort" ..
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠡⢈ ⥓ ⠆⢁⠡⢄ ⍠ ⠆⢁⠡⢐
 
- gut okey , solange ich den bsk nicht repariert habe , stehe ich an der selben 
- schwelle ( außer die system-id, die das unmögliche möglich macht ) .
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠡⢐ ¬··· RX-MANAGER-KERN-3
 
- was soll also rex genau tun ? 
- vereinfacht und behindert ausgedrückt : verlinken 
- aber syntaktisch verschaltet , statts wahrlos und wirr ... 
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠡⠰ ⦳ 
 
- da rex zu mcs gehört und mcs kindern beigebracht werden kann/soll/muss . 
- keine 40 semester fachabiturient ( quasi : berufsschüler ) 
- sondern akurat , gerade , verständlich , vollständig ... 
+###====================================|====================================###
 
- wie gehe ich also die tage vor , wenn mein gemüt wieder stabiler ist ? 
+ # WEITERES 
 
- ich sollte mich an der neuen wabenhärter logik orientieren ... 
- sie wäre wie ein analog gerät das man zwischen schaltet oder zu ende .. 
-
- ähnlich wie der aufbau von REASON damals die Musiker DAW , vorne knöpfe 
- und hinten kabelsalat ... 
-
- nur hier Ohne knöpfe aber dafür Kabelsalat ... lach ( ich erschiss mich )
-
- im grunde muss ich auch noch die status und alu funktion in waben pressen, 
- mal am rande erwähnt ... 
-
- ¬·¤ 
- ¬·¤¤
-
- gut okey ... hat kein sinn ... innerlich ausgehungert .... kopf technisch 
- querschläger .... aufbau „ on the fly “ ... 
-
- ich knall erstmal den header hin , dann kern .... 
- ab der haupt lass ich offen .... 
-
+ 1. BA37 DIREKT AUSGANG 
+ 2. BA37 ALU AUSGANG 
+ 3. BA37 STATUS AUSGANG
  
+###====================================|====================================###
+###================================REX-ICTUS-4==============================###
+###====================================|====================================###
 
- bedenke : 
+MUTTERWABEN-KATEGORIE ⠆⢁⠘⣀ BAUWABE 
 
- Mir Rennt nichts weg , solange die Welt nur Rumzündelt ! 
- Selbst mit der Vorentwicklung kann ich Überall anklopfen !!!! 
- Was ich bis her geleistet habe , ist Überragend !!!
- Du bist Hardware und Software Baue ! Du kannst das !!! 
- Du Fickst sie !! sie haben nichts vergleichbares !!!
- Du allein diggah !!! 8 Milliarden menschen und dennoch 
- nur abgeschriebene programmiersprachen wie neandertaler !!!
- Du Hast hier ein Unicat !!!
- qualität !!!
+ PROGRAMM ⠆⢁⠡⠃ MANAGER
 
- also chill !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ WABEN-ID ⠆⢁⠡⠅ BA
 
+ BION-NR ⠆⢁⠡⠉ 038
 
- der tws ist nur der beweis an mich das ich es mit jedem 
- konzern aufnehmen kann und zwar egal wie groß und wieviele darin 
- rum geistern !!!
+ BION-ID ⠆⢁⠡⠊ BA038
 
- Keine Von denen hat was gutes geschrieben .... nicht mal SAP 
- oder BSD ... 
+ BSK ⠆⢁⠡⠌ RXMKHTSTBA-MANAGER
 
- Egal wie lange du für diese version brauchst , denke daran 
- und denk daran wirklich du Vollidiot : 
+ BION ⠆⢁⠡⠑ RX007MK007HT018ST018BA038
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠡⠅ ⧓ ⠆⢁⠡⠉ Ξ ⠆⢁⠡⠊
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠡⠊ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⡄⠉ ⍠ ⠆⢁⠡⠒
+ AXIOM ¡ ⠆⢁⡄⠊ ⍠ ⠆⢁⠡⠔
+ AXIOM ¡ ⠆⢁⡂⠑ ⍠ ⠆⢁⠡⠘
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠡⠒ ¬ RX-MANAGER
+ EINHEIT ⠆⢁⠡⠔ ¤ RX-ALU
+ EINHEIT ⠆⢁⠡⠘ ¤¤ RX-STATUS
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⠡⠢ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢁⠡⠤ ICMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ ⠆⢁⠡⠤ ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ # ⍠ ⠆⢁⠘⠰
+
+ # AXIOM | RAM 
+ EINHEIT ⠆⢁⠘⠰ ··· IC-KERN-4
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠘⡁ RX-MANAGER-KERN-4
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢁⠡⠒ ⧓ ⠆⢁⠘⠰ Ξ ⠆⢁⠘⡂
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠘⡂ ⥓ ⠆⢁⠘⡁ ⍠ ⠆⢁⠘⡄
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠘⡄ ¬···· RX-MANAGER-KERN-4
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠡⠊ ⦳ 
+
+###====================================|====================================###
+
+ # WEITERES 
+
+ 1. BA38 DIREKT AUSGANG 
+ 2. BA38 ALU AUSGANG    
+ 3. BA38 STATUS AUSGANG 
  
- DU MACHST DAS ! Nicht irgend ein behinderter Hochstudierter , sondern 
- DUUUUUU ..... 
-
- Es wird laufen .... Die frage ist nicht Ob , die frage ist nur WIE 
- Und das WIE Gehst du gerade an !!!
-
-
-!!!!!!!!!!!!!!!!! alter bereich | nicht mein tag 
-
-WABEN-KATEGORIE Ð KOPFWABE
-
- KOMPONENTE ¡ REX
-
- KOMPONENTEN-ID ¡ RX
-
- BION-NR ¡ 07
-
- BION-ID ¡ RX07
-
- MASTER-ID ¡ MK46SU07
-
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð MASTERKERNWABE
+ DIREKT AUSGÄNGE PER ED TOCHTER AUSFÜHRUNG
 
- WABEN-ID ¡ MK
+ ALU AUSGÄNGE ÜBER BAUWABE TOCHTER ( NOCH BAUEN ) ALUWABE
+ STATUS AUSGÄNGE ÜBER BAUWABE TOCHTER ( NOCH BAUEN ) STATUSWABEN
 
- BION-NR ¡ 07
+ STATUS UND ALU BRAUCHEN DANN ED TOCHTER 
 
- BION-ID ¡ MK07
-
- BSK ¡ RXMK
-
- BION ¡ RX07MK07
 
 ###====================================|====================================###
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ MANAGER
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 08
-
- BION-ID ¡ HT08
-
- BSK ¡ RXMKHT-MANAGER
-
- BION ¡ RX07MK07HT08
-
 ###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ MANAGER
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 08
-
- BION-ID ¡ ST08
-
- BSK ¡ RXMKHTST-MANAGER
-
- BION ¡ RX07MK07HT08ST08
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = ¬
- AXIOM ¡ ^ <TASTENCODE> = ¤
- AXIOM ¡ ^ ¬ ≠ * ≠ ¬ = RX-MANAGER
- AXIOM ¡ ^ ¤ ≠ * ≠ ¤ = RX-STATUS
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ ¬ = RX-MANAGER
- GEBAUTE-EINHEIT ¡ ¤ = RX-STATUS
-
 ###====================================|====================================###
-
-WABEN-KATEGORIE Ð COMBOWABE 
-
- PROGRAMM ¡ MANAGER
-
- WABEN-ID ¡ CB
-
- BION-NR ¡ 14
-
- BION-ID ¡ CB14
-
- BSK ¡ RXMKHTSTCB-MANAGER
-
- BION ¡ RX07MK07HT08ST08CB14
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ¬ = RX-MANAGER
-
- # WENN GEBRAUCHT | BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ RXMKHTST-MANAGER
-
- # OPTIONAL HOLT KOMPONENTE DAZU
- LINK ¡ ICMK
-
- # OPTIONAL WEITERE BENÖTIGTE EINHEITEN
- EINHEIT ¡ ¬ = RX-MANAGER
- EINHEIT ¡ · = IC-IN-1
-
- # AXIOMEN
- AXIOM ¡ RX-MANAGER + IC-IN-1 ≠ ** ≠ ¬· = RX-IN-1-FLÄCHE
-
- # LIEGT IM RAM 
- EINHEIT ¡ ¬· = RX-IN-1-FLÄCHE
-
 ###====================================|====================================###
-
+###====================================|====================================###
+###====================================|====================================###
+###====================================|====================================###
+###====================================|====================================###
+###====================================|====================================###
+###====================================|====================================###
+###====================================|====================================###
+!!!!!!!!!!!!!!!!! ALTER  BEREICH ↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 WABEN-KATEGORIE Ð LINKENDWABE 
 
  PROGRAMM ¡ MANAGER

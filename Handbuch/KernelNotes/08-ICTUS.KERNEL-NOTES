@@ -3,212 +3,343 @@
  #                  ICTUS = THE WORKPOINT FOR PROZESSING                     #
 ###===============================STARTPUNKT================================###
 
-WABEN-KATEGORIE Ð KOPFWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⡁⡠ KOPFWABE
 
- KOMPONENTE ¡ ICTUS
+ KOMPONENTE ⠆⢁⡁⢂ ICTUS
 
- KOMPONENTEN-ID ¡ IC
+ KOMPONENTEN-ID ⠆⢁⡁⢄ IC
 
- BION-NR ¡ 08
+ BION-NR ⠆⢁⡁⢈ 008
 
- BION-ID ¡ IC08
+ BION-ID ⠆⢁⡁⢐ IC008
 
- MASTER-ID ¡ MK46SU08
+ MASTER-ID ⠆⢁⡁⢠ MA046SU008
 
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð MASTERKERNWABE
-
- WABEN-ID ¡ MK
-
- BION-NR ¡ 08
-
- BION-ID ¡ MK08
-
- BSK ¡ ICMK
-
- BION ¡ IC08MK08
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⢁⡁⢂ ⏍ ⠆⢁⡁⢂
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡁⢄ ⧓ ⠆⢁⡁⢈ Ξ ⠆⢁⡁⢐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡁⢐ ⧑ ⠆⢁⡂⠉
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð HAUPTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⡁⣀ MASTERKERNWABE
 
- PROGRAMM ¡ PLATZ
+ WABEN-ID ⠆⢁⡂⠃ MK
 
- WABEN-ID ¡ HT
+ BION-NR ⠆⢁⡂⠅ 008
 
- BION-NR ¡ 09
+ BION-ID ⠆⢁⡂⠉ MK008
 
- BION-ID ¡ HT09
+ BSK ⠆⢁⡂⠊ ICMK
 
- BSK ¡ ICMKHT-PLATZ
+ BION ⠆⢁⡂⠌ IC008MK008
 
- BION ¡ IC08MK08HT09
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð STARTWABE 
-
- PROGRAMM ¡ PLATZ
-
- WABEN-ID ¡ ST
-
- BION-NR ¡ 09 
-
- BION-ID ¡ ST09
-
- BSK ¡ ICMKHTST-PLATZ
-
- BION ¡ IC08MK08HT09ST09
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = ·
- AXIOM ¡ ^ <TASTENCODE> = ··
- AXIOM ¡ ^ <TASTENCODE> = ···
- AXIOM ¡ ^ <TASTENCODE> = ····
- AXIOM ¡ ^ · ≠ * ≠ · = IC-IN-1
- AXIOM ¡ ^ ·· ≠ ** ≠ ·· = IC-IN-2
- AXIOM ¡ ^ ··· ≠ *** ≠ ··· = IC-IN-3
- AXIOM ¡ ^ ···· ≠ **** ≠ ···· = IC-IN-4
-
-
- # LIEGT IM RAM
- GEBAUTE-EINHEIT ¡ · = IC-IN-1
- GEBAUTE-EINHEIT ¡ ·· = IC-IN-2
- GEBAUTE-EINHEIT ¡ ··· = IC-IN-3
- GEBAUTE-EINHEIT ¡ ···· = IC-IN-4
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡂⠃ ⧓ ⠆⢁⡂⠅ Ξ ⠆⢁⡂⠉
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð LINKENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⡁⠒ HAUPTWABE 
 
- PROGRAMM ¡ PLATZ
+ PROGRAMM ⠆⢁⡁⠔ KERN
 
- WABEN-ID ¡ LD
+ WABEN-ID ⠆⢁⡁⠘ HT
 
- BION-NR ¡ 04
+ BION-NR ⠆⢁⡁⠡ 019
 
- BION-ID ¡ LD04
+ BION-ID ⠆⢁⡁⠢ HT019
 
- BSK ¡ ICMKHTSTLD-PLATZ
+ BSK ⠆⢁⡁⠤ ICMKHT-KERN
 
- BION ¡ IC08MK08HT09ST09LD04
+ BION ⠆⢁⡁⠨ IC008MK008HT018
 
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ · = IC-IN-1 
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ ICMKHTST-PLATZ
-
- # AXIOM
- AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
-
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ RXMKHTSTCB-MANAGER
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡁⠘ ⧓ ⠆⢁⡁⠡ Ξ ⠆⢁⡁⠢
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð LINKENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⡁⠰ STARTWABE 
 
- PROGRAMM ¡ PLATZ
+ PROGRAMM ⠆⢁⡁⡂ KERN 
 
- WABEN-ID ¡ LD
+ WABEN-ID ⠆⢁⡁⡄ ST
 
- BION-NR ¡ 05
+ BION-NR ⠆⢁⡁⡈ 019 
 
- BION-ID ¡ LD05
+ BION-ID ⠆⢁⡁⡐ ST019
 
- BSK ¡ ICMKHTSTLD-PLATZ
+ BSK ⠆⢁⠰⢂ ICMKHTST-KERN
 
- BION ¡ IC08MK08HT09ST09LD05
+ BION ⠆⢁⠰⢄ IC008MK008HT019ST019
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⡁⡄ ⧓ ⠆⢁⡁⡈ Ξ ⠆⢁⡁⡐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⡁⡐ ⧑ ⠆⢁⠰⠉
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ·· = IC-IN-2
+ TASTENCODE ⠆⢁⠰⢈ ALTGR
+ TASTENCODE ⠆⢁⠰⢐ ,
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ ICMKHTST-PLATZ
+ SYMBOLE ⠆⢁⠰⢠ ·
 
- # AXIOM
- AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
+ PRÄFIX ⠆⢁⡁⠃ IC-KERN-1
+ PRÄFIX ⠆⢁⡁⠅ IC-KERN-2
+ PRÄFIX ⠆⢁⡁⠉ IC-KERN-3
+ PRÄFIX ⠆⢁⡁⠊ IC-KERN-4
 
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ RXMKHTSTCB-MANAGER
+ # PRODUKT
+ AXIOM ¡ ⠆⢁⠰⢈ ⦻ ⠆⢁⠰⢐ Ξ ⠆⢁⠰⢠
+ AXIOM ¡ ⠆⢁⠰⢠ Ξ ⠆⢁⡁⠌
+ AXIOM ¡ ⠆⢁⠰⢠ ⧓ ⠆⢁⠰⢠ Ξ ⠆⢁⡁⠑
+ AXIOM ¡ ⠆⢁⠰⢠ ⧓ ⠆⢁⠰⢠ ⧓ ⠆⢁⠰⢠ Ξ ⠆⢁⠰⠔
+ AXIOM ¡ ⠆⢁⠰⢠ ⧓ ⠆⢁⠰⢠ ⧓ ⠆⢁⠰⢠ ⧓ ⠆⢁⠰⢠ Ξ ⠆⢁⠰⠘
+
+ PRODUKT ⠆⢁⡁⠌ ·
+ PRODUKT ⠆⢁⡁⠑ ··
+ PRODUKT ⠆⢁⠰⠔ ···
+ PRODUKT ⠆⢁⠰⠘ ····
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢁⡁⠌ ⥓ ⠆⢁⡁⠃
+ AXIOM ¡ ⠆⢁⡁⠑ ⥓ ⠆⢁⡁⠅
+ AXIOM ¡ ⠆⢁⠰⠔ ⥓ ⠆⢁⡁⠉
+ AXIOM ¡ ⠆⢁⠰⠘ ⥓ ⠆⢁⡁⠊
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢁⡁⠌ ⥗ ⠆⢁⡁⠃ ⍠ ⠆⢁⠰⠡
+ AXIOM ¡ ⠆⢁⡁⠑ ⥗ ⠆⢁⡁⠅ ⍠ ⠆⢁⠰⠢
+ AXIOM ¡ ⠆⢁⠰⠔ ⥗ ⠆⢁⡁⠉ ⍠ ⠆⢁⠰⠤
+ AXIOM ¡ ⠆⢁⠰⠘ ⥗ ⠆⢁⡁⠊ ⍠ ⠆⢁⠰⠨
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠰⠡ · IC-KERN-1
+ EINHEIT ⠆⢁⠰⠢ ·· IC-KERN-2
+ EINHEIT ⠆⢁⠰⠤ ··· IC-KERN-3
+ EINHEIT ⠆⢁⠰⠨ ···· IC-KERN-4
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ # KERN 1
+ AXIOM ¡ ⠆⢁⡁⡐ ⦳ ⠆⢁⠨⢂
+ # KERN 2
+ AXIOM ¡ ⠆⢁⡁⡐ ⦳ ⠆⢁⠨⠒
+ # KERN 3
+ AXIOM ¡ ⠆⢁⡁⡐ ⦳ 
+ # KERN 4
+ AXIOM ¡ ⠆⢁⡁⡐ ⦳ 
+
+###====================================|====================================###
+# FREILASSEN | VORGEMERKT 
+WABENHÄRTER ⠆⢁⠰⡠ CPUHÄRTER
+
+ CPU-KERN-1 ⠆⢁⠨⢄ <ADD>
+ CPU-KERN-2 ⠆⢁⠨⢈ <ADD>
+ CPU-KERN-3 ⠆⢁⠨⢐ <ADD>
+ CPU-KERN-4 ⠆⢁⠨⢠ <ADD>
+
+ # AXIOM | CPU ADRESSIERUNG
+ AXIOM ¡ ( ST EINHEIT ZU CPU-KERN-X )
+
+ # AXIOM | ANSCHLUSS MASTERKERNWABE
+ AXIOM ¡ ⍿ ⠆⢁⡂⠉
+
+ # REX-LINK O. ICTUS-LINK
+ TEIL-LINK ¡  ⍠ 
+ TEIL-LINK ¡  ⍠
+ TEIL-LINK ¡  ⍠
+ TEIL-LINK ¡  ⍠
+
+ # CPU CONNECTOR
+ AXIOM ¡ 
+
+ # AXIOM WABEN SYSTEM-ID 
+ AXIOM ¡  ⑀ 
+ AXIOM ¡  ⑀ 
+ AXIOM ¡  ⑀ 
+ AXIOM ¡  ⑀ 
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð LINKENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⠰⠑ ENDWABE 
 
- PROGRAMM ¡ PLATZ
+ PROGRAMM ⠆⢁⠨⡈ KERN
 
- WABEN-ID ¡ LD
+ WABEN-ID ⠆⢁⠨⡐ ED
 
- BION-NR ¡ 06
+ BION-NR ⠆⢁⠨⡠ 019
 
- BION-ID ¡ LD06
+ BION-ID ⠆⢁⠨⢂ ED019
 
- BSK ¡ ICMKHTSTLD-PLATZ
+ BSK ⠆⢁⠤⢈ ICMKHTSTED-KERN
 
- BION ¡ IC08MK08HT09ST09LD06
+ BION ⠆⢁⠤⢐ IC008MK008HT019ST019ED019
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠨⡐ ⧓ ⠆⢁⠨⡠ Ξ ⠆⢁⠨⢂
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢁⠨⢂ ͼ 
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ··· = IC-IN-3
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠰⠡ ⍠ ⠆⢁⠤⢠
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ ICMKHTST-PLATZ 
+ EINHEIT ⠆⢁⠤⢠ · IC-KERN-1
 
- # AXIOM
- AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
+TOCHTERWABEN-KATEGORIE ⠆⢁⠤⣀ AUSFÜRHUNGSWABE
 
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ RXMKHTSTCB-MANAGER
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠨⠃ IC-KERN-1
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠤⢠ ⥓ ⠆⢁⠨⠃ ⍠ ⠆⢁⠨⠅ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠨⠅ · IC-KERN-1
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠨⢂ ⦱ 
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⠨⠉ ENDWABE 
+
+ PROGRAMM ⠆⢁⠨⠊ KERN
+
+ WABEN-ID ⠆⢁⠨⠌ ED
+
+ BION-NR ⠆⢁⠨⠑ 020
+
+ BION-ID ⠆⢁⠨⠒ ED020
+
+ BSK ⠆⢁⠨⠔ ICMKHTSTED-KERN
+
+ BION ⠆⢁⠤⠡ IC008MK008HT019ST019ED020
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠨⠌ ⧓ ⠆⢁⠨⠑ Ξ ⠆⢁⠨⠒
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢁⠨⠒ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠰⠢ ⍠ ⠆⢁⠤⠢
+
+ EINHEIT ⠆⢁⠤⠢ ·· IC-KERN-2
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⠤⠨ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠤⠰ IC-KERN-2
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠤⠢ ⥓ ⠆⢁⠤⠰ ⍠ ⠆⢁⠤⡁ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠤⡁ ·· IC-KERN-2
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠨⠒ ⦱ 
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð LINKENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⠤⡂ ENDWABE 
 
- PROGRAMM ¡ 07
+ PROGRAMM ⠆⢁⠤⡄ KERN
 
- WABEN-ID ¡ LD
+ WABEN-ID ⠆⢁⠤⡈ ED
 
- BION-NR ¡ 07
+ BION-NR ⠆⢁⠤⡐ 021
 
- BION-ID ¡ LD07
+ BION-ID ⠆⢁⠤⡠ ED021
 
- BSK ¡ ICMKHTSTLD07-PLATZ
+ BSK ⠆⢁⠤⢂ ICMKHTSTED-KERN
 
- BION ¡ IC08MK08HT09ST09LD07
+ BION ⠆⢁⠤⢄ IC008MK008HT019ST019ED021
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠤⡈ ⧓ ⠆⢁⠤⡐ Ξ ⠆⢁⠤⡠
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢁⠤⡠ ͼ 
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ ···· = IC-IN-4
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠰⠤ ⍠ ⠆⢁⠢⢐
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ ICMKHTST-PLATZ 
+ EINHEIT ⠆⢁⠢⢐ ··· IC-KERN-3
 
- # AXIOM
- AXIOM ¡ LINK-OUT ≠ COMBOWABE ≠ BSK
+TOCHTERWABEN-KATEGORIE ⠆⢁⠢⢠ AUSFÜRHUNGSWABE
 
- # FERTIG GEBAUTE EINHEIT
- LINK-OUT ¡ RXMKHTSTCB-MANAGER
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠢⣀ IC-KERN-3
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠢⢐ ⥓ ⠆⢁⠢⣀ ⍠ ⠆⢁⠤⠃ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠤⠃ ··· IC-KERN-3
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠤⡠ ⦱ 
 
 ###====================================|====================================###
-###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
- # MASTERWORT = 
- # BION-ID-PFAD IC-IN-1 → IC08+MK08+HT09+ST09+LD04
- # BION-ID-PFAD IC-IN-2 → IC08+MK08+HT09+ST09+LD05
- # BION-ID-PFAD IC-IN-3 → IC08+MK08+HT09+ST09+LD06
- # BION-ID-PFAD IC-IN-4 → IC08+MK08+HT09+ST09+LD07
- # BION-ID-VPFAD → IC08MK08ST09HT09LD04LD05LD06LD07
- # BION-ID-RPFAD → IC08|MK08|HT09
-###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⠤⠅ ENDWABE 
+
+ PROGRAMM ⠆⢁⠤⠉ KERN
+
+ WABEN-ID ⠆⢁⠤⠊ ED
+
+ BION-NR ⠆⢁⠤⠌ 022
+
+ BION-ID ⠆⢁⠤⠑ ED022
+
+ BSK ⠆⢁⠤⠒ ICMKHTSTED-KERN
+
+ BION ⠆⢁⠤⠔ IC008MK008HT019ST019ED022
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠤⠊ ⧓ ⠆⢁⠤⠌ Ξ ⠆⢁⠤⠑
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⢁⠤⠑ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠰⠨ ⍠ ⠆⢁⠤⠘
+
+ EINHEIT ⠆⢁⠤⠘ ···· IC-KERN-4
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⠢⠤ AUSFÜRHUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠢⠨ IC-KERN-4
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠤⠘ ⥓ ⠆⢁⠢⠨ ⍠ ⠆⢁⠢⠰ 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠢⠰ ···· IC-KERN-4
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠤⠑ ⦱ 
+
+###====================================|====================================###
+###===========================KOMPAKTE-WABEN-PFADE==========================###
+
+ PFAD-PROGRAMM   = KERN
+ PFAD-SYSTEM-ID  = ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠨⢂ 
+ PFAD-SYSTEM-ID  = ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠨⠒
+ PFAD-SYSTEM-ID  = ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠤⡠
+ PFAD-SYSTEM-ID  = ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠤⠑
+ PFAD-BION-ID    = MK008 ⧑ HT019 ⧑ ST019 ⧑ ED019
+ PFAD-BION-ID    = MK008 ⧑ HT019 ⧑ ST019 ⧑ ED020
+ PFAD-BION-ID    = MK008 ⧑ HT019 ⧑ ST019 ⧑ ED021
+ PFAD-BION-ID    = MK008 ⧑ HT019 ⧑ ST019 ⧑ ED022
+ PFAD-BION       = IC008MK008HT019ST019ED019
+ PFAD-BION       = IC008MK008HT019ST019ED020
+ PFAD-BION       = IC008MK008HT019ST019ED021
+ PFAD-BION       = IC008MK008HT019ST019ED022
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================### 
 ###================================ENDPUNKT=================================###

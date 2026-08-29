@@ -57,6 +57,8 @@ MUTTERMODUL ⠆⢄⢈⡠ STARTWABE
  # PRODUKT
  AXIOM ¡  ⦻  Ξ 
  AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
 
  PRODUKT ⠆⢄⢂⠡
  PRODUKT ⠆⢄⢂⠢
@@ -73,7 +75,6 @@ MUTTERMODUL ⠆⢄⢈⡠ STARTWABE
 
  # RAM AXIOM 
  AXIOM ¡  ⥗  ⍠ 
- # RAM AXIOM 
  AXIOM ¡  ⥗  ⍠ 
 
  # EINHEIT | RAM
@@ -96,11 +97,13 @@ MUTTERMODUL ⠆⢄⢈⡠ STARTWABE
 ###==========================VERWENDETE-WABEN-NR============================###
 
  TA001 = ST001
- PI002 = ST002 # VORGEMERKT ST003
+ PI002 = ST002 - ST003
  PO003 = ST004
  TE004 = ST005
  BI005 = ST006
  BX009 = ST007 - ST017
+ RX007 = ST018
+ IC008 = ST019
 
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 

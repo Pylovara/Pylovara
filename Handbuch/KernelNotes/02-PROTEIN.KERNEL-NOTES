@@ -1,6 +1,6 @@
 @kernel-nr: 02 ==================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
 ###============================PYLOVARA-SYSTEM==============================###
- # PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER                            #
+ #             PROTEIN WABE = THE BOXIS AND PROTON MAINTAINER                #
 ###===========================WICHTIGER-HINWEIS=============================###
  #               DIESE KOMPONENTE IST EIN MASTER PROZESS !                   #
 ###===============================STARTPUNKT================================###
@@ -42,7 +42,10 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡈⠢ MASTERKERNWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢄⡄⠨ ⧓ ⠆⢄⡄⠰ Ξ ⠆⢄⡄⡁
  # BION-ID FOLGEVERBINDUNG
+ # ON-PIPE
  AXIOM ¡ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘
+ # OFF-PIPE 
+ AXIOM ¡ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐
 
 ###====================================|====================================###
 ###===============================ON-PIPE-PROTEIN===========================###
@@ -90,6 +93,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
 
  TASTENCODE ⠆⢄⡁⢁ ALT GR
  TASTENCODE ⠆⢄⡁⢂ SHIFT
+ TASTENCODE ⠆⢁⠘⡈ -
  TASTENCODE ⠆⢄⡁⢈ 8
  TASTENCODE ⠆⢄⡁⢠ 9
 
@@ -101,8 +105,11 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  PRÄFIX ⠆⢄⡁⠊ PI-ON-PIPE-ENDE
 
  # PRODUKT
- AXIOM ¡ ⠆⢄⡁⢐ ⦻ ⠆⢄⡂⠃ Ξ ⠆⢄⡁⠌
- AXIOM ¡ ⠆⢄⡁⣀ ⦻ ⠆⢄⡁⢐ Ξ ⠆⢄⡁⠑
+ AXIOM ¡ ⠆⢄⡁⢁ ⦻ ⠆⢄⡁⢂ ⦻ ⠆⢁⠘⡈ Ξ ⠆⢄⡁⢐
+ AXIOM ¡ ⠆⢄⡁⢁ ⦻ ⠆⢄⡁⢈ Ξ ⠆⢄⡂⠃
+ AXIOM ¡ ⠆⢄⡁⢁ ⦻ ⠆⢄⡁⢠ Ξ ⠆⢄⡁⣀
+ AXIOM ¡ ⠆⢄⡁⢐ ⧓ ⠆⢄⡂⠃ Ξ ⠆⢄⡁⠌
+ AXIOM ¡ ⠆⢄⡁⣀ ⧓ ⠆⢄⡁⢐ Ξ ⠆⢄⡁⠑
 
  PRODUKT ⠆⢄⡁⠌ —[
  PRODUKT ⠆⢄⡁⠑ ]—
@@ -113,7 +120,6 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
 
  # RAM AXIOM 
  AXIOM ¡ ⠆⢄⡁⠌ ⥗ ⠆⢄⡁⠉ ⍠ ⠆⢄⡁⠒
- # RAM AXIOM 
  AXIOM ¡ ⠆⢄⡁⠑ ⥗ ⠆⢄⡁⠊ ⍠ ⠆⢄⡁⠔
 
  # EINHEIT | RAM
@@ -130,7 +136,7 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
 
 ###====================================|====================================###
 # BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
-WABENHÄRTER ⠆⢁⢈⣀ VERTEILERWABE
+WABENHÄRTER ⠆⢁⢈⣀ VERTEILERHÄRTER
 
  # AXIOM | ANSCHLUSS MASTERKERNWABE
  AXIOM ¡ ⍿ ⠆⢄⡄⡁
@@ -345,7 +351,7 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⢄⠰ COMBOLINKWABE
  LINK ⠆⢁⢄⡁ POMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ ⠆⢁⢄⡁ ⑅ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉ ⧑ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀ ⧑ ⠆⢄⠊⡄ ⧑ ⠆⢄⠌⡠  ⍠ ⠆⢁⢄⡂
+ AXIOM ¡ ⠆⢁⢄⡁ ⑅ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉ ⧑ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀ ⧑ ⠆⢄⠊⡄ ⧑ ⠆⢄⠌⡠ ⍠ ⠆⢁⢄⡂
 
  # AXIOM | RAM 
  EINHEIT ⠆⢁⢄⡂ {<NAME;<WERT>} PO-NAME-BIND-WERT-SCHLIEẞEN
@@ -601,7 +607,7 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡈⡠ ENDWABE
 
  BSK ⠆⢁⡈⢠ PIMKHTSTBABAED-ON-PIPE
 
- BION ⠆⢁⡈⣀ 
+ BION ⠆⢁⡈⣀ PI002MK002HT002ST002BA003BA034ED018
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⡈⢄ ⧓ ⠆⢁⡈⢈ Ξ ⠆⢁⡈⢐
@@ -629,469 +635,586 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⡐⠅ AUSFÜRHUNGSWABE
  AXIOM ¡ ⠆⢁⡈⢐ ⦱ 
 
 ###====================================|====================================###
-
-AB HIER OFF-PIPE DER VOM REX AUFGENOMMEN WIRD !!!!
-
-!!!!! ALTER BEREICH
-###====================================|====================================###
 ###=========================OFF-PIPE BEARBEITUNG============================###
 ###====================================|====================================###
 
- wird nicht von der pipeline aufgenommen sondern vom rex , da off pipe proteine 
- keine pipe haben , sie sind ein absoluter endpunkt in einer 
- transaktionsrahmen nervenzellen programmierung. 
+MUTTERWABEN-KATEGORIE ⠆⢁⠘⡠ HAUPTWABE 
 
- sie werden entweder als endzustände für irgend einen einsatz genutzt 
- oder sie werden rein für monitoring verwendet. 
+ PROGRAMM ⠆⢁⠘⢂ OFF-PIPE
 
- daher lager ich das off-pipe protein auf die spätere arbeit am rex selbst aus 
- den die integrierte multiplexer logik der streung , kostet gehirnschmalz ... 
+ WABEN-ID ⠆⢁⠘⢄ HT
 
- was mich stört ist das ich die bsk logik durch den merg , total zerstört haben 
- und ich werde sie zurück auf 00-79 setzen ... die bsk selbst wird auch 
- der präfix der einheit selbst ... 
+ BION-NR ⠆⢁⠘⢈ 003
 
- erst arbeite ich die lesbarkeit rein , dann arbeite ich sie raus .... 
- und jetzt stelle ich fest das sie weder trivial noch unötig war und 
- bau sie wieder ein ... 
+ BION-ID ⠆⢁⠘⢐ HT003
 
- zum glück sind das punktuelle arbeiten wenn ich den tws 0.3 auf 0.4 hebe 
- und keine gesamt arbeit .. 
+ BSK ⠆⢁⠘⢠ PIMKHT-OFF-PIPE
 
- ich ziehe bsk mit einheit und axiom programmierung zusammen in die weiter 
- entwicklung der eigentlich rückentwicklung ... 
+ BION ⠆⢁⠘⠃ PI002MK002HT003
 
- die bienenkönigin stelle ich hinter an .... sie ist die krone - nicht der 
- beilauf prozess ... 
-
- ich verschließe hiermit erstmal die on-pipe kaskarden multiplexer logiken 
- und dann verschieb ich die rex arbeit auf mogen nacht ... 
-
- wenn ich vor morgen früh fertig bin .... mach ich kurz den kopffrei mit 
- bullshit .... vielleicht nh runde schach .... oder was ähnlichem .... 
-
- wildrift ... oder mein knast-schach spiel das ich damals gebaut habe ... 
- egal was .... runter kommen ... kühle geniesen .... im kopf nebenbei 
- die logik durch gehen .... und vielleicht mit buddy knuddeln ( wobei ... der 
- will warscheins eh nur salami aus dem kühlschrank XD ) ... 
-
- nebenbei = die endwaben logiken sind eigentlich obsolet geworden 
-            aber für einen sauberen abschluss behalte ich sie mal. 
-            auch wenn es quasi nur ein runter holen bedeutet und dann der 
-            stop prozess... 
-
-            qualitäts arbeit zeichnet sich aber durch solche merkmale aus , 
-            auch wenn sie unötig erscheinen .... 
-
- ich könnte die endwaben logik generalisieren ... ein exit bzw return off 
- sollte schon vorgesehen bleiben ... mal schauen ... 
-
-
- JA AUF JEDENFALL .... BSK ALS PRÄFIX ABER ALTE VERSION .... WAR VIEL BESSER 
-
- DAZU AUSFÜHRUNGSWABE DOPPELTER PRÄFIX ÜBERSCHREIBUNG IN 0.4 RAUS .. 
-
- AUSFÜHRUNGSWABE SELBST GEKOPPELT AN DEN AKTIONSDRAHT ... 
-
- ABER GRUNDSÄTZLICH , MAL VON DER BSK ABGESEHEN ... SAUBER .. 
-
- IN TWS 0.4 GEHE ICH NOCHMAL ALLE AXIOMATISCHEN SYMBOLE DURCH , WAS GEBRAUCHT 
- WIRD UND WAS NICHT UND WAS FEHLT ... 
-
- IM GRUNDE IST DAS SKELETT 0.3 DANN READY FÜR PUNKTUELLE VERBESSERUNGEN .. 
-
- ABER ERST NACH DER ARBEIT DES ÜBERGANGS ... 
-
- *LACH* UND DAS ALLES NUR UM MCS ALS MUTTERSPRACHE ÜBER ALLEN 
-        PROGRAMMIERSPRACHEN ZU ETABLIEREN ... 
-
- TYPISCH DEUTSCHE LOGIK ... NICHT DAS ZEICHEN MAHLEN , SONDERN DIE 
- VOR-GESCHNITZE FORM GIEẞEN .... 
-
- ABER JETZT ... ICH BEENDE FÜR HEUTE ... SIEHT SAUBER AUS ... 
- MACHE MORGEN WEITER ... ICH BRAUCH BISSEL WOHLBEFINDEN ... 
-
- GING AUCH FLOT ?! 00 UHR CIRKA ANGEFANGEN ... HALB DREI FERTIG .. 
-
- DOCH ... FÜR DAS WAS ES WIRD ... IST DAS MEHR ALS 2 MILLIONEN CODE 
- ZEILEN IN C 
-
-###########################################################################
-
-WABEN-KATEGORIE Ð HAUPTWABE 
-
- PROGRAMM ¡ OFF-PIPE
-
- WABEN-ID ¡ HT
-
- BION-NR ¡ 03
-
- BION-ID ¡ HT03
-
- BSK ¡ PIMKHT-OFF-PIPE
-
- BION ¡ PI02MK02HT03
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠘⢄ ⧓ ⠆⢁⠘⢈ Ξ ⠆⢁⠘⢐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⠘⠅ STARTWABE 
 
- PROGRAMM ¡ OFF-PIPE
+ PROGRAMM ⠆⢁⠘⠉ OFF-PIPE
 
- WABEN-ID ¡ ST
+ WABEN-ID ⠆⢁⠘⠊ ST
 
- BION-NR ¡ 03 
+ BION-NR ⠆⢁⠘⠌ 003
 
- BION-ID ¡ ST03
+ BION-ID ⠆⢁⠘⠑ ST003
 
- BSK ¡ PIMKHTST-OFF-PIPE
+ BSK ⠆⢁⠘⠒ PIMKST-OFF-PIPE
 
- BION ¡ PI02MK02HT03ST03
+ BION ⠆⢁⠘⠔ PI002MK002HT003ST003
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠘⠊ ⧓ ⠆⢁⠘⠌ Ξ ⠆⢁⠘⠑
+ # BION-ID FOLGEVERBINDUNG
+ # BOXIS
+ AXIOM ¡ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊
+ # PROTON
+ AXIOM ¡ ⠆⢁⠘⠑ ⧑ ⠆⢁⠑⠔
+ # BOXIS TRENNBEFEHL PROTON
+ AXIOM ¡ ⠆⢁⠘⠑ ⧑ ⠆⢁⠌⠃
 
- # BAUT DIE SYMBOLE 
- AXIOM ¡ ZEICHEN-BAUM ≠ ^ ≠  ^ <TASTENCODE> = *
- AXIOM ¡ ^ <TASTENCODE> = [
- AXIOM ¡ ^ <TASTENCODE> = ]
+ TASTENCODE ⠆⢁⠘⠡ ALTGR
+ TASTENCODE ⠆⢁⠘⠤ 8
+ TASTENCODE ⠆⢁⠘⠨ 9
 
- # LIEGT IM RAM
- EINHEIT ¡ [ = OFF-PIPE-START
- EINHEIT ¡ ] = OFF-PIPE-ENDE
+ SYMBOLE ⠆⢁⠔⡁ [
+ SYMBOLE ⠆⢁⠔⡂ ]
+
+ PRÄFIX ⠆⢁⠔⡄ PI-OFF-PIPE-START
+ PRÄFIX ⠆⢁⠔⡈ PI-OFF-PIPE-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⢁⠘⠡ ⦻ ⠆⢁⠘⠤ Ξ ⠆⢁⠔⡁
+ AXIOM ¡ ⠆⢁⠘⠡ ⦻ ⠆⢁⠘⠨ Ξ ⠆⢁⠔⡂
+ AXIOM ¡ ⠆⢁⠔⡁ Ξ ⠆⢁⠔⡐
+ AXIOM ¡ ⠆⢁⠔⡂ Ξ ⠆⢁⠔⡠
+
+ PRODUKT ⠆⢁⠔⡐ [
+ PRODUKT ⠆⢁⠔⡠ ]
+ 
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⢁⠔⡐ ⥓ ⠆⢁⠔⡄
+ AXIOM ¡ ⠆⢁⠔⡠ ⥓ ⠆⢁⠔⡈
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⢁⠔⡐ ⥗ ⠆⢁⠔⡄ ⍠ ⠆⢁⠔⢂
+ AXIOM ¡ ⠆⢁⠔⡠ ⥗ ⠆⢁⠔⡈ ⍠ ⠆⢁⠔⢄
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠔⢂ [ PI-OFF-PIPE-START
+ EINHEIT ⠆⢁⠔⢄ ] PI-OFF-PIPE-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ # BOXIS
+ AXIOM ¡ ⠆⢁⠘⠑ ⦳ ⠆⢁⠔⠊
+ # PROTON 
+ AXIOM ¡ ⠆⢁⠘⠑ ⦳ ⠆⢁⠑⠔
+ # BOXIS TRENNBEFEHL PROTON 
+ AXIOM ¡ ⠆⢁⠘⠑ ⦳ ⠆⢁⠌⠃
+
+###====================================|====================================###
+###=========================OFF-PIPE-PROTEIN-BOXIS==========================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⠔⢠ BAUWABE 
+
+ PROGRAMM ⠆⢁⠔⣀ OFF-PIPE
+
+ WABEN-ID ⠆⢁⠔⠅ BA
+
+ BION-NR ⠆⢁⠔⠉ 039
+
+ BION-ID ⠆⢁⠔⠊ BA039
+
+ BSK ⠆⢁⠔⠌ PIMKHTSTBA-OFF-PIPE
+
+ BION ⠆⢁⠔⠑ PI002MK002HT003ST003BA039
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠔⠅ ⧓ ⠆⢁⠔⠉ Ξ ⠆⢁⠔⠊
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠔⢂ ⍠ ⠆⢁⠔⠒
+ AXIOM ¡ ⠆⢁⠔⢄ ⍠ ⠆⢁⠔⠘
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠔⠒ [ PI-OFF-PIPE-START
+ EINHEIT ⠆⢁⠔⠘ ] PI-OFF-PIPE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⠔⠡ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢁⠔⢐ BXMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⡈ ⧑ ⠆⢂⣀⢠ ⧑ ⠆⢂⡈⠒ ⧑ ⠆⢂⠡⠑ ⧑ ⠆⢂⠌⠃ ⍠ ⠆⢁⠔⠢
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⢠ ⧑ ⠆⢂⣀⠅ ⧑ ⠆⢂⡄⠉ ⧑ ⠆⢂⠘⡐ ⧑ ⠆⢂⠉⢠ ⍠ ⠆⢁⠔⠤
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠔ ⧑ ⠆⢂⢐⢈ ⧑ ⠆⢂⡂⢐ ⧑ ⠆⢂⠘⠑ ⧑ ⠆⢂⠊⠨ ⍠ ⠆⢁⠔⠨
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠰ ⧑ ⠆⢂⢐⡄ ⧑ ⠆⢂⡁⡐ ⧑ ⠆⢂⠔⢁ ⧑ ⠆⢂⠉⠢ ⍠ ⠆⢁⠔⠰
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⢈ ⧑ ⠆⢂⢈⠨ ⧑ ⠆⢂⡁⠢ ⧑ ⠆⢂⠔⠘ ⧑ ⠆⢂⠅⢄ ⍠ ⠆⢁⠒⡂
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠑ ⧑ ⠆⢂⢈⠒ ⧑ ⠆⢂⡁⠊ ⧑ ⠆⢂⠒⢁ ⧑ ⠆⢂⠅⠨ ⍠ ⠆⢁⠒⡄
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠨ ⧑ ⠆⢂⢄⠉ ⧑ ⠆⢂⠰⠃ ⧑ ⠆⢂⠒⠤ ⧑ ⠆⢂⠃⢐ ⍠ ⠆⢁⠒⡈
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⢁ ⧑ ⠆⢂⡠⣀ ⧑ ⠆⢂⠤⢄ ⧑ ⠆⢂⠑⡈ ⧑ ⠆⢁⣀⢂ ⍠ ⠆⢁⠒⡐
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠃ ⧑ ⠆⢂⡠⡐ ⧑ ⠆⢂⠤⡈ ⧑ ⠆⢂⠑⠰ ⧑ ⠆⢂⠃⠢ ⍠ ⠆⢁⠒⡠
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢂⣀⡈ ⧑ ⠆⢂⡐⠰ ⧑ ⠆⢂⠢⠰ ⧑ ⠆⢂⠌⢠ ⧑ ⠆⢁⣀⠡ ⍠ ⠆⢁⠒⢂
+ AXIOM ¡ ⠆⢁⠔⢐ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⠢ ⧑ ⠆⢂⡐⠘ ⧑ ⠆⢂⠢⠔ ⧑ ⠆⢂⠌⠨ ⧑ ⠆⢁⢠⢂ ⍠ ⠆⢁⠒⢄
+
+ # AXIOM | RAM 
+ EINHEIT ⠆⢁⠔⠢ ": <IO> :" BX-PRINT-KOMPLETT
+ EINHEIT ⠆⢁⠔⠤ ×: <IO> :× BX-ALU
+ EINHEIT ⠆⢁⠔⠨ ,: <IO> :, BX-SYSCALL
+ EINHEIT ⠆⢁⠔⠰ Ħ: <IO> :Ħ BX-ABI
+ EINHEIT ⠆⢁⠒⡂ ': <IO> :' BX-SHELL
+ EINHEIT ⠆⢁⠒⡄ ¥: <IO> :¥ BX-EINGABE
+ EINHEIT ⠆⢁⠒⡈ ~: <IO> :~ BX-MCD
+ EINHEIT ⠆⢁⠒⡐ $: <IO> :$ BX-PFAD
+ EINHEIT ⠆⢁⠒⡠ §: <IO> :§ BX-NET
+ EINHEIT ⠆⢁⠒⢂ º: <IO> :º BX-OPCODE 
+ EINHEIT ⠆⢁⠒⢄ ºº: <IO> :ºº BX-MASCHINENCODE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠒⢈ PI-OFF-PIPE-BXMK
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢁⠔⠒ ⧓ ⠆⢁⠔⢐ Ξ ⠆⢁⠒⢠
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠒⢠ ⥓ ⠆⢁⠒⢈ ⍠ ⠆⢁⠒⢐
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠒⢐ [<BXMK> PI-OFF-PIPE-BXMK
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠔⠊ ⦳ ⠆⢁⠒⠑
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð COMBOWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⠔⠃ BAUWABE 
 
- PROGRAMM ¡ OFF-PIPE
+ PROGRAMM ⠆⢁⠒⠉ OFF-PIPE
 
- WABEN-ID ¡ CB
+ WABEN-ID ⠆⢁⠒⠊ BA
 
- BION-NR ¡ 05
+ BION-NR ⠆⢁⠒⠌ 040
 
- BION-ID ¡ CB05
+ BION-ID ⠆⢁⠒⠑ BA040
 
- BSK ¡ PIMKHTSTCB-OFF-PIPE
+ BSK ⠆⢁⠒⠔ PIMKHTSTBABA-OFF-PIPE
 
- BION ¡ PI02MK02HT03ST03CB05
+ BION ⠆⢁⠒⠘ PI002MK002HT003ST003BA040
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠒⠊ ⧓ ⠆⢁⠒⠌ Ξ ⠆⢁⠒⠑
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [ = OFF-PIPE-START
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠒⢐ ⍠ ⠆⢁⠒⠡
+ AXIOM ¡ ⠆⢁⠔⢄ ⍠ ⠆⢁⠒⠢
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTST-OFF-PIPE
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠒⠡ [<BXMK> PI-OFF-PIPE-BXMK
+ EINHEIT ⠆⢁⠒⠢ ] PI-OFF-PIPE-ENDE
 
- # HOLT KOMPONENTE DAZU
- LINK ¡ BXMK
+TOCHTERWABEN-KATEGORIE ⠆⢁⠒⠤ COMBOWABE
 
- # KOPPLUNG AN OFF-PIPE BOX
- AXIOM ¡ LINK ≠ OFF-PIPE-START + BXMK ≠ [<BXMK> = OFF-PIPE-BXMK
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢁⠒⠡ ⧓ ⠆⢁⠒⠢ Ξ ⠆⢁⠒⡁
 
- # LIEGT IM RAM 
- EINHEIT ¡ [<BXMK> = OFF-PIPE-BXMK
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠒⠨ PI-OFF-PIPE-BXMK-KOMPLETT
 
-###====================================|====================================###
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠒⡁ ⥓ ⠆⢁⠒⠨ ⍠ ⠆⢁⠒⠰
 
-WABEN-KATEGORIE Ð COMBOWABE 
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠒⠰ [<BXMK>] PI-OFF-PIPE-BXMK-KOMPLETT
 
- PROGRAMM ¡ OFF-PIPE
-
- WABEN-ID ¡ CB
-
- BION-NR ¡ 06
-
- BION-ID ¡ CB06
-
- BSK ¡ PIMKHTSTCBCB-OFF-PIPE
-
- BION ¡ PI02MK02HT03ST03CB05CB06
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [<BXMK> = OFF-PIPE-BXMK
- EINHEIT ¡ ] = OFF-PIPE-ENDE
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCB-OFF-PIPE
-
- # SYNTHESE SCHLIESST DIE KLAMMER (STANDALONE BXMK)
- AXIOM ¡ OFF-PIPE-BXMK + OFF-PIPE-ENDE ≠ [<BXMK>] = OFF-PIPE-BX
-
- # LIEGT IM RAM 
- EINHEIT ¡ [<BXMK>] = OFF-PIPE-BX
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠒⠑ ⦳ ⠆⢁⠑⢂
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð ENDWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⠑⡄ ENDWABE 
 
- PROGRAMM ¡ OFF-PIPE
+ PROGRAMM ⠆⢁⠑⡈ OFF-PIPE
 
- WABEN-ID ¡ ED
+ WABEN-ID ⠆⢁⠑⡐ ED
 
- BION-NR ¡ 04
+ BION-NR ⠆⢁⠑⡠ 023
 
- BION-ID ¡ ED04
+ BION-ID ⠆⢁⠑⢂ ED023
 
- BSK ¡ PIMKHTSTCBCBED-OFF-PIPE
+ BSK ⠆⢁⠑⢄ PIMKHTSTBABAED-OFF-PIPE
 
- BION ¡ PI02MK02HT03ST03CB05CB06ED04
+ BION ⠆⢁⠑⢈ PI002MK002HT003ST003BA040ED023
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠑⡐ ⧓ ⠆⢁⠑⡠ Ξ ⠆⢁⠑⢂
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠑⢂ ͼ 
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [<BXMK>] = OFF-PIPE-BX
- EINHEIT ¡ ] = OFF-PIPE-ENDE
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠒⠰ ⍠ ⠆⢁⠑⢐
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCBCB-OFF-PIPE
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠑⢐ [<BXMK>] PI-OFF-PIPE-BXMK-KOMPLETT
 
- # AUSFÜHRUNGSLOGIK & ABSCHLUSS (ÜBERGABE AN REX LOGIK)
- AXIOM ¡ OFF-PIPE-BX + OFF-PIPE-ENDE ≠ [<BXMK>] = OFF-PIPE-BX-FINAL
+TOCHTERWABEN-KATEGORIE ⠆⢁⠑⢠ AUSFÜRHUNGSWABE
 
- # FERTIGES OFF-PIPE PROTEIN
- FINISH ¡ [<BXMK>] = OFF-PIPE-BX-FINAL
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠑⣀ PI-OFF-PIPE-BXMK-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠑⢐ ⥓ ⠆⢁⠑⣀ ⍠ ⠆⢁⠒⠃
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠒⠃ [<BXMK>] PI-OFF-PIPE-BXMK-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠑⢂ ⦱ 
+
+###====================================|====================================###
+###=========================OFF-PIPE-PROTEIN-PROTON=========================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⠑⠊ BAUWABE 
+
+ PROGRAMM ⠆⢁⠒⠅ OFF-PIPE
+
+ WABEN-ID ⠆⢁⠑⠌ BA
+
+ BION-NR ⠆⢁⠑⠒ 041
+
+ BION-ID ⠆⢁⠑⠔ BA041
+
+ BSK ⠆⢁⠑⠘ PIMKHTSTBA-OFF-PIPE
+
+ BION ⠆⢁⠑⠡ PI002MK002HT003ST003BA041
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠑⠌ ⧓ ⠆⢁⠑⠒ Ξ ⠆⢁⠑⠔
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠑⠔ ⧑ ⠆⢁⠌⢠
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠔⢂ ⍠ ⠆⢁⠑⠢
+ AXIOM ¡ ⠆⢁⠔⢄ ⍠ ⠆⢁⠑⠤
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠑⠢ [ PI-OFF-PIPE-START
+ EINHEIT ⠆⢁⠑⠤ ] PI-OFF-PIPE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⠌⡠ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢁⠑⠰ POMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ ⠆⢁⠑⠰ ⑅ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉ ⧑ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀ ⧑ ⠆⢄⠊⡄ ⧑ ⠆⢄⠌⡠ ⍠ ⠆⢁⠑⡁
+
+ # AXIOM | RAM 
+ EINHEIT ⠆⢁⠑⡁ {<NAME;<WERT>} PO-NAME-BIND-WERT-SCHLIEẞEN
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠑⡂ PI-OFF-PIPE-POMK
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢁⠑⠢ ⧓ ⠆⢁⠑⡁ Ξ ⠆⢁⠌⡈
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠌⡈ ⥓ ⠆⢁⠑⡂ ⍠ ⠆⢁⠌⡐
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠌⡐ [<POMK> PI-OFF-PIPE-POMK
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠑⠔ ⦳ ⠆⢁⠌⢠
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð COMBOWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⠌⢂ BAUWABE 
 
- PROGRAMM ¡ OFF-PIPE
+ PROGRAMM ⠆⢁⠌⢄ OFF-PIPE
 
- WABEN-ID ¡ CB
+ WABEN-ID ⠆⢁⠌⢈ BA
 
- BION-NR ¡ 07
+ BION-NR ⠆⢁⠌⢐ 042
 
- BION-ID ¡ CB07
+ BION-ID ⠆⢁⠌⢠ BA042
 
- BSK ¡ PIMKHTSTCBCB-OFF-PIPE
+ BSK ⠆⢁⠌⣀ PIMKHTSTBABA-OFF-PIPE
 
- BION ¡ PI02MK02HT03ST03CB05CB07
+ BION ⠆⢁⠑⠃ PI002MK002HT003ST003BA041BA042
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠌⢈ ⧓ ⠆⢁⠌⢐ Ξ ⠆⢁⠌⢠
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠌⢠ ⧑ ⠆⢁⡐⠢
 
- # BINDET RAM GEBAUTE-EINHEIT (BAUT AUF CB05 AUF)
- EINHEIT ¡ [<BXMK> = OFF-PIPE-BXMK
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠌⡐ ⍠ ⠆⢁⠑⠉
+ AXIOM ¡ ⠆⢁⠑⠤ ⍠ ⠆⢁⠑⠅
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCB-OFF-PIPE
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠑⠉ [<POMK> PI-OFF-PIPE-POMK
+ EINHEIT ⠆⢁⠑⠅ ] PI-OFF-PIPE-ENDE
 
- # HOLT KOMPONENTE DAZU (BT ERWEITERUNG)
- LINK ¡ TEMK
+TOCHTERWABEN-KATEGORIE ⠆⢁⠌⠑ COMBOWABE
 
- # KOPPLUNG AN OFF-PIPE BOX
- AXIOM ¡ LINK ≠ OFF-PIPE-BXMK + TEMK ≠ [<BXMK><TEMK> = OFF-PIPE-BT
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢁⠑⠉ ⧓ ⠆⢁⠑⠅ Ξ ⠆⢁⠌⠒
 
- # LIEGT IM RAM 
- EINHEIT ¡ [<BXMK><TEMK> = OFF-PIPE-BT
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠌⠔ PI-OFF-PIPE-POMK-KOMPLETT
 
-###====================================|====================================###
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠌⠒ ⥓ ⠆⢁⠌⠔ ⍠ ⠆⢁⠌⠘
 
-WABEN-KATEGORIE Ð COMBOWABE 
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠌⠘ [<POMK>] PI-OFF-PIPE-POMK-KOMPLETT
 
- PROGRAMM ¡ OFF-PIPE
-
- WABEN-ID ¡ CB
-
- BION-NR ¡ 08
-
- BION-ID ¡ CB08
-
- BSK ¡ PIMKHTSTCBCBCB-OFF-PIPE
-
- BION ¡ PI02MK02HT03ST03CB05CB07CB08
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [<BXMK><TEMK> = OFF-PIPE-BT
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCBCB-OFF-PIPE
-
- # HOLT KOMPONENTE DAZU (BTP ERWEITERUNG)
- LINK ¡ POMK
-
- # KOPPLUNG AN OFF-PIPE BOX
- AXIOM ¡ LINK ≠ OFF-PIPE-BT + POMK ≠ [<BXMK><TEMK><POMK> = OFF-PIPE-BTP
-
- # LIEGT IM RAM 
- EINHEIT ¡ [<BXMK><TEMK><POMK> = OFF-PIPE-BTP
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠌⢠ ⦳ ⠆⢁⡐⠢
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð COMBOWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⠌⠡ ENDWABE 
 
- PROGRAMM ¡ OFF-PIPE
+ PROGRAMM ⠆⢁⠌⠢ OFF-PIPE
 
- WABEN-ID ¡ CB
+ WABEN-ID ⠆⢁⠌⠤ ED
 
- BION-NR ¡ 09
+ BION-NR ⠆⢁⠌⠰ 024
 
- BION-ID ¡ CB09
+ BION-ID ⠆⢁⠌⡁ ED024
 
- BSK ¡ PIMKHTSTCBCBCBCB-OFF-PIPE
+ BSK ⠆⢁⠌⡄ PIMKHTSTBABAED-OFF-PIPE
 
- BION ¡ PI02MK02HT03ST03CB05CB07CB08CB09
+ BION ⠆⢁⠌⡂ PI002MK002HT003ST003BA041BA042ED024
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠌⠤ ⧓ ⠆⢁⠌⠰ Ξ ⠆⢁⠌⡁
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠌⡁ ͼ 
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [<BXMK><TEMK><POMK> = OFF-PIPE-BTP
- EINHEIT ¡ ] = OFF-PIPE-ENDE
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠌⠘ ⍠ ⠆⢁⠊⡐
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCBCBCB-OFF-PIPE
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠊⡐ [<POMK>] PI-OFF-PIPE-POMK-KOMPLETT
 
- # SYNTHESE SCHLIESST DIE KLAMMER
- AXIOM ¡ OFF-PIPE-BTP + OFF-PIPE-ENDE ≠ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP
+TOCHTERWABEN-KATEGORIE ⠆⢁⠊⡠ AUSFÜRHUNGSWABE
 
- # LIEGT IM RAM 
- EINHEIT ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠊⢂ PI-OFF-PIPE-POMK-KOMPLETT
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠊⡐ ⥓ ⠆⢁⠊⢂ ⍠ ⠆⢁⠊⢄
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠊⢄ [<POMK>] PI-OFF-PIPE-POMK-KOMPLETT
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠌⡁ ⦱ 
+
+###====================================|====================================###
+###================OFF-PIPE-PROTEIN-BOXIS-TRENNBEFEHL-PROTON================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⢁⠊⢈ BAUWABE 
+
+ PROGRAMM ⠆⢁⠊⢐ OFF-PIPE
+
+ WABEN-ID ⠆⢁⠊⢠ BA
+
+ BION-NR ⠆⢁⠊⣀ 043
+
+ BION-ID ⠆⢁⠌⠃ BA043
+
+ BSK ⠆⢁⠌⠅ PIMKHTSTBA-OFF-PIPE
+
+ BION ⠆⢁⠌⠉ PI002MK002HT003ST003BA043
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠊⢠ ⧓ ⠆⢁⠊⣀ Ξ ⠆⢁⠌⠃
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠌⠃ ⧑ ⠆⢁⠉⠨
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠔⢂ ⍠ ⠆⢁⠌⠊
+ AXIOM ¡ ⠆⢁⠔⢄ ⍠ ⠆⢁⠊⠒
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠌⠊ [ PI-OFF-PIPE-START
+ EINHEIT ⠆⢁⠊⠒ ] PI-OFF-PIPE-ENDE
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⠊⠔ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK ⠆⢁⠊⠘ BXMK
+ LINK ⠆⢁⠉⢐ TEMK
+ LINK ⠆⢁⠉⢠ POMK
+
+ # AXIOM | LINK COMBINATOR  
+ # BOXIS
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⡈ ⧑ ⠆⢂⣀⢠ ⧑ ⠆⢂⡈⠒ ⧑ ⠆⢂⠡⠑ ⧑ ⠆⢂⠌⠃ ⍠ ⠆⢁⠊⠨
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⢠ ⧑ ⠆⢂⣀⠅ ⧑ ⠆⢂⡄⠉ ⧑ ⠆⢂⠘⡐ ⧑ ⠆⢂⠉⢠ ⍠ ⠆⢁⠊⠰
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠔ ⧑ ⠆⢂⢐⢈ ⧑ ⠆⢂⡂⢐ ⧑ ⠆⢂⠘⠑ ⧑ ⠆⢂⠊⠨ ⍠ ⠆⢁⠊⡁
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠉⠰ ⧑ ⠆⢂⢐⡄ ⧑ ⠆⢂⡁⡐ ⧑ ⠆⢂⠔⢁ ⧑ ⠆⢂⠉⠢ ⍠ ⠆⢁⠊⡂
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⢈ ⧑ ⠆⢂⢈⠨ ⧑ ⠆⢂⡁⠢ ⧑ ⠆⢂⠔⠘ ⧑ ⠆⢂⠅⢄ ⍠ ⠆⢁⠊⡄
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠑ ⧑ ⠆⢂⢈⠒ ⧑ ⠆⢂⡁⠊ ⧑ ⠆⢂⠒⢁ ⧑ ⠆⢂⠅⠨ ⍠ ⠆⢁⠊⡈
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠨ ⧑ ⠆⢂⢄⠉ ⧑ ⠆⢂⠰⠃ ⧑ ⠆⢂⠒⠤ ⧑ ⠆⢂⠃⢐ ⍠ ⠆⢁⠉⡠
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⢁ ⧑ ⠆⢂⡠⣀ ⧑ ⠆⢂⠤⢄ ⧑ ⠆⢂⠑⡈ ⧑ ⠆⢁⣀⢂ ⍠ ⠆⢁⠉⢂
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠅⠃ ⧑ ⠆⢂⡠⡐ ⧑ ⠆⢂⠤⡈ ⧑ ⠆⢂⠑⠰ ⧑ ⠆⢂⠃⠢ ⍠ ⠆⢁⠊⠑
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢂⣀⡈ ⧑ ⠆⢂⡐⠰ ⧑ ⠆⢂⠢⠰ ⧑ ⠆⢂⠌⢠ ⧑ ⠆⢁⣀⠡ ⍠ ⠆⢁⠉⢄
+ AXIOM ¡ ⠆⢁⠊⠘ ⑅ ⠆⢄⠊⠘ ⧑ ⠆⢄⠃⠢ ⧑ ⠆⢂⡐⠘ ⧑ ⠆⢂⠢⠔ ⧑ ⠆⢂⠌⠨ ⧑ ⠆⢁⢠⢂ ⍠ ⠆⢁⠉⢈
+ # TRENNBEFEHL
+ AXIOM ¡ ⠆⢁⠉⢐ ⑅ ⠆⢄⠨⠡ ⧑ ⠆⢄⠤⡐ ⧑ ⠆⢄⠤⠒ ⧑ ⠆⢄⠢⣀ ⍠ ⠆⢁⠉⣀
+ # PROTON
+ AXIOM ¡ ⠆⢁⠉⢠ ⑅ ⠆⢄⠢⡐ ⧑ ⠆⢄⠢⠃ ⧑ ⠆⢄⠡⠉ ⧑ ⠆⢄⠒⢠ ⧑ ⠆⢄⠒⡐ ⧑ ⠆⢄⠌⣀ ⧑ ⠆⢄⠊⡄ ⧑ ⠆⢄⠌⡠ ⍠ ⠆⢁⠊⠃
+
+ # AXIOM | RAM 
+ # BOXIS
+ EINHEIT ⠆⢁⠊⠨ ": <IO> :" BX-PRINT-KOMPLETT
+ EINHEIT ⠆⢁⠊⠰ ×: <IO> :× BX-ALU
+ EINHEIT ⠆⢁⠊⡁ ,: <IO> :, BX-SYSCALL
+ EINHEIT ⠆⢁⠊⡂ Ħ: <IO> :Ħ BX-ABI
+ EINHEIT ⠆⢁⠊⡄ ': <IO> :' BX-SHELL
+ EINHEIT ⠆⢁⠊⡈ ¥: <IO> :¥ BX-EINGABE
+ EINHEIT ⠆⢁⠉⡠ ~: <IO> :~ BX-MCD
+ EINHEIT ⠆⢁⠉⢂ $: <IO> :$ BX-PFAD
+ EINHEIT ⠆⢁⠊⠑ §: <IO> :§ BX-NET
+ EINHEIT ⠆⢁⠉⢄ º: <IO> :º BX-OPCODE 
+ EINHEIT ⠆⢁⠉⢈ ºº: <IO> :ºº BX-MASCHINENCODE
+ # TRENNBEFEHL
+ EINHEIT ⠆⢁⠉⣀ | TE-WAND
+ # PROTON
+ EINHEIT ⠆⢁⠊⠃ {<NAME;<WERT>} PO-NAME-BIND-WERT-SCHLIEẞEN
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠊⠅ PI-OFF-PIPE-BXMK-TEMK-POMK
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ ⠆⢁⠌⠊ ⧓ ⠆⢁⠊⠘ ⧓ ⠆⢁⠉⢐ ⧓ ⠆⢁⠉⢠ Ξ ⠆⢁⠊⠌
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠊⠌ ⥓ ⠆⢁⠊⠅ ⍠ ⠆⢁⠉⠔
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠉⠔ [<BXMK><TEMK><POMK> PI-OFF-PIPE-BXMK-TEMK-POMK
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠌⠃ ⦳ ⠆⢁⠉⠨
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð ENDWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⠉⠘ BAUWABE 
 
- PROGRAMM ¡ OFF-PIPE
+ PROGRAMM ⠆⢁⠉⠡ OFF-PIPE
 
- WABEN-ID ¡ ED
+ WABEN-ID ⠆⢁⠉⠢ BA
 
- BION-NR ¡ 05
+ BION-NR ⠆⢁⠉⠤ 044
 
- BION-ID ¡ ED05
+ BION-ID ⠆⢁⠉⠨ BA044
 
- BSK ¡ PIMKHTSTCBCBCBCBED-OFF-PIPE
+ BSK ⠆⢁⠉⠰ PIMKHTSTBABA-OFF-PIPE
 
- BION ¡ PI02MK02HT03ST03CB05CB07CB08CB09ED05
+ BION ⠆⢁⠉⡁ PI002MK002HT003ST003BA043BA044
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠉⠢ ⧓ ⠆⢁⠉⠤ Ξ ⠆⢁⠉⠨
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠉⠨ ⧑ ⠆⢁⠉⠅
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠉⠔ ⍠ ⠆⢁⠉⡂
+ AXIOM ¡ ⠆⢁⠔⢄ ⍠ ⠆⢁⠉⡄
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCBCBCBCB-OFF-PIPE
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠉⡂ [<BXMK><TEMK><POMK> PI-OFF-PIPE-BXMK-TEMK-POMK
+ EINHEIT ⠆⢁⠉⡄ ] PI-OFF-PIPE-ENDE
 
- # AUSFÜHRUNGSLOGIK & ABSCHLUSS
- AXIOM ¡ OFF-PIPE-BTP ≠ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP-FINAL
+TOCHTERWABEN-KATEGORIE ⠆⢁⠅⢂ COMBOWABE
 
- # FERTIGES OFF-PIPE PROTEIN (BTP LOGIK)
- FINISH ¡ [<BXMK><TEMK><POMK>] = OFF-PIPE-BTP-FINAL
+ # AXIOM | KOMPONENTE BAUEN  
+ AXIOM ¡ ⠆⢁⠉⡂ ⧓ ⠆⢁⠉⡄ Ξ ⠆⢁⠅⢈
 
-###====================================|====================================###
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠉⡐ PI-OFF-PIPE-BXMK-TEMK-POMK-KOMPLETT
 
-WABEN-KATEGORIE Ð COMBOWABE 
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠅⢈ ⥓ ⠆⢁⠉⡐ ⍠ ⠆⢁⠅⢄
 
- PROGRAMM ¡ OFF-PIPE
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠅⢄ [<BXMK><TEMK><POMK>] PI-OFF-PIPE-BXMK-TEMK-POMK-KOMPLETT
 
- WABEN-ID ¡ CB
-
- BION-NR ¡ 10
-
- BION-ID ¡ CB10
-
- BSK ¡ PIMKHTSTCB-OFF-PIPE
-
- BION ¡ PI02MK02HT03ST03CB10
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT (BAUT DIREKT AUF ST03 AUF)
- EINHEIT ¡ [ = OFF-PIPE-START
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTST-OFF-PIPE
-
- # HOLT KOMPONENTE DAZU (POMK STANDALONE)
- LINK ¡ POMK
-
- # KOPPLUNG AN OFF-PIPE PROTON
- AXIOM ¡ LINK ≠ OFF-PIPE-START + POMK ≠ [<POMK> = OFF-PIPE-POMK
-
- # LIEGT IM RAM 
- EINHEIT ¡ [<POMK> = OFF-PIPE-POMK
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠉⠨ ⦳ ⠆⢁⠉⠅
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð COMBOWABE 
+MUTTERWABEN-KATEGORIE ⠆⢁⠅⢐ ENDWABE 
 
- PROGRAMM ¡ OFF-PIPE
+ PROGRAMM ⠆⢁⠅⢠ OFF-PIPE
 
- WABEN-ID ¡ CB
+ WABEN-ID ⠆⢁⠅⣀ ED
 
- BION-NR ¡ 11
+ BION-NR ⠆⢁⠉⠃ 025
 
- BION-ID ¡ CB11
+ BION-ID ⠆⢁⠉⠅ ED025
 
- BSK ¡ PIMKHTSTCBCB-OFF-PIPE
+ BSK ⠆⢁⠉⠊ PIMKHTSTBABAED-OFF-PIPE
 
- BION ¡ PI02MK02HT03ST03CB10CB11
+ BION ⠆⢁⠉⠌ PI002MK002HT003ST003BA043BA044ED025
 
- PROGRAMMIERUNGSBEREICH ↓
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⢁⠅⣀ ⧓ ⠆⢁⠉⠃ Ξ ⠆⢁⠉⠅
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⢁⠉⠅ ͼ 
 
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [<POMK> = OFF-PIPE-POMK
- EINHEIT ¡ ] = OFF-PIPE-ENDE
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠅⢄ ⍠ ⠆⢁⠉⠑
 
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCB-OFF-PIPE
+ # EINHEIT | RAM
+ EINHEIT ⠆⢁⠉⠑ [<BXMK><TEMK><POMK>] PI-OFF-PIPE-BXMK-TEMK-POMK-KOMPLETT
 
- # SYNTHESE SCHLIESST DIE KLAMMER
- AXIOM ¡ OFF-PIPE-POMK + OFF-PIPE-ENDE ≠ [<POMK>] = OFF-PIPE-POMK-FINAL 
+TOCHTERWABEN-KATEGORIE ⠆⢁⠉⠒ AUSFÜRHUNGSWABE
 
- # LIEGT IM RAM 
- EINHEIT ¡ [<POMK>] = OFF-PIPE-POMK-FINAL
+ # AXIOM | NAME SETZEN  
+ PRÄFIX ⠆⢁⠅⠘ PI-OFF-PIPE-BXMK-TEMK-POMK-KOMPLETT
 
-###====================================|====================================###
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⢁⠉⠑ ⥓ ⠆⢁⠅⠘ ⍠ ⠆⢁⠅⠡
 
-WABEN-KATEGORIE Ð ENDWABE
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT ⠆⢁⠅⠡ [<BXMK><TEMK><POMK>] PI-OFF-PIPE-BXMK-TEMK-POMK-KOMPLETT
 
- PROGRAMM ¡ OFF-PIPE
-
- WABEN-ID ¡ ED
-
- BION-NR ¡ 06
-
- BION-ID ¡ ED06
-
- BSK ¡ PIMKHTSTCBCBED-OFF-PIPE
-
- BION ¡ PI02MK02HT03ST03CB10CB11ED06
-
- PROGRAMMIERUNGSBEREICH ↓
-
- # BINDET RAM GEBAUTE-EINHEIT 
- EINHEIT ¡ [<POMK>] = OFF-PIPE-POMK-FINAL
-
- # BEENDET VOR PROZESS
- WABEN-BSK-RESET ¡ PIMKHTSTCBCB-OFF-PIPE
-
- # AUSFÜHRUNGSLOGIK & ABSCHLUSS
- AXIOM ¡ OFF-PIPE-POMK-FINAL ≠ [<POMK>] = OFF-PIPE-PO-FINAL
-
- # FERTIGES OFF-PIPE PROTEIN (POMK STANDALONE)
- FINISH ¡ [<POMK>] = OFF-PIPE-PO-FINAL
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⢁⠉⠅ ⦱ 
 
 ###====================================|====================================###
-###======================REGEL DER SPALTEN-SYNCHRONITÄT=====================###
- # ALLE FOLGE-KOMPONENTEN MÜSSEN ZENTRAL IM ABSATZ DARUNTER EINRASTEN.
- # EINRASTMÖGLICHKEITEN BEI COMBOWABE JE NACH BEREICH :
- # - SYMK  = SYNCHRONITÄT
- # - ZYMK  = RÜCKKOPPLUNGSSCHLEIFE 
- # - NIMK  = FÜR DATENTRANSPORTE ÜBER FF UND FT 
- # - REMK  = ARBEITSFLÄCHEN VERTEILUNG (REX-LOGIK)
- # - SEMK  = SENTIATOR-SCHNITTSTELLE (BEDINGUNGEN)
 ###===========================KOMPAKTE-WABEN-PFADE==========================###
 
- PFAD-PROGRAMM   =  
+ PFAD-PROGRAMM   = ON-PIPE
  PFAD-SYSTEM-ID  = 
  PFAD-BION-ID    = 
  PFAD-BION       = 
 
- PFAD-PROGRAMM   =  
+ PFAD-PROGRAMM   = OFF-PIPE
  PFAD-SYSTEM-ID  = 
  PFAD-BION-ID    = 
  PFAD-BION       = 

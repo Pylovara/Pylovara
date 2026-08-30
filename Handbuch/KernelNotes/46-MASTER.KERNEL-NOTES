@@ -3,44 +3,129 @@
  #             MASTER = THE MASTER SOURCE OF SINGLE ENTRY POINT              #
 ###===============================STARTPUNKT================================###
 
-MUTTERWABEN-KATEGORIE ⠆⢁⠅⠢ KOPFWABE
+MUTTERWABEN-KATEGORIE ⠆⢁⠅⠢ MASTERLIZENZWABE
 
- KOMPONENTE 
+ MASTER-ID ⠆⢁⠅⠨ MA
 
- KOMPONENTEN-ID 
+ BION-NR ⠆⢁⠅⡁ 046
 
- BION-NR 
+ BION-ID ⠆⢁⠅⡂ MA046
 
- BION-ID 
+ BSK ⠆⢁⠅⡄ MA
 
- MASTER-ID 
-
- # AXIOM | KOMPONENTEN NAMEN
- AXIOM ¡  ⏍ 
- # AXIOM | KOMPONENTEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
- # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
- # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
-
-###===============================STARTPUNKT================================###
-
-MUTTERWABEN-KATEGORIE ⠆⢁⠅⠤ MASTERKERNWABE
-
- WABEN-ID 
-
- BION-NR 
-
- BION-ID 
-
- BSK 
-
- BION 
+ BION ⠆⢁⠅⡈ MA046
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
- # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⢁⠅⠨ ⧓ ⠆⢁⠅⡁ Ξ ⠆⢁⠅⡂
+
+ # BION-ID FOLGESCHLUSS | SUPERLIZENZWABE
+
+ # TRANSAKTIONSRAHMEN
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑ 
+
+ # PROTEIN
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # PROTON
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # TRENNBEFEHL
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # BINDUNGSBEFEHL
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+ 
+ # AKTIONSDRAHT
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # REX
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # ICTUS
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # BOXIS
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # SENTIATOR
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # NITROX
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # FEED
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # SYNAPTOR
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # ZYTRON
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # RETRON
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # VATRON
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # MCD
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # DATENTYPEN
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # NAVIGATOR
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # KKIS
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # DATEITYPEN
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # ABSOLULATOR
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # WABINATOR
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # PIPELINE
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # BIENENKÖNIGIN
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # HERZSCHLAG
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # IDENTIFIKATION
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # LO_PATTERN_ARITHMETIC_MANDAT
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # L1_CORE_KERNELMANDAT
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # L2_AUTHORRIGHTS
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # L3_COMMERCIALLICENSING
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # L4_AI_ADMINISTRATIONSMANDATE
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # L5_POST_MORTEM_CONTROL
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # L6_IMMUTABLE_CORES_DEFINITION
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+ # LIZENZ-MANIFEST
+ AXIOM ¡ ⠆⢁⠅⡂ ⧑
+
+###====================================|====================================###
 
 
 

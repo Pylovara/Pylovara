@@ -14,18 +14,20 @@
 ###=========================GENERALWABEN-KATALOG============================###
  #  10 - MUTTERWABE                  |  11 - TOCHTERWABEN                    #
  #  12 - KINDERWABEN                 |  13 - HONIGTROPFEN                    #
- #  14 - WABENHÄRTER                 |  15 - ARBEITERBIENEN                  #
+ #  14 - WABENHÄRTER                 |  15 X ARBEITERBIENEN                  #
  #  16 X BIENENKÖNIGIN               |  17 -                                 #
 ###=========================MUTTERWABEN-MODULE==============================###
  #  20 - KOPFWABE                    |  21 - MASTERKERNWABE                  #
  #  22 - HAUPTWABE                   |  23 - STARTWABE                       #
  #  24 - BAUWABE                     |  25 - TRAKTORWABE                     #
- #  26 - ENDWABE                     |  27 -                                 #
+ #  26 - ENDWABE                     |  29 -                                 #
+###===================MUTTERWABEN-MODULE-SYSTEM-INTERN======================###
+ #  27 - MASTERLIZENZWABE            |  28 - SUPERLIZENZWABE                 #
 ###==========================TOCHTERWABEN-MODULE============================###
  #  30 - COMBOWABE                   |  31 - COMBOLINKWABE                   #
  #  32 - EINGABEWABE                 |  33 X KOORDINATORWABE                 #
  #  34 - AUSFÜRUNGSWABE              |  35 - AUSFÜHRUNGSLINKWABE             #                             
- #  36 - BINDUNGSWABE                |  37 -                                 #
+ #  36 - AUSFÜHRUNGSDIREKTLINKWABE   |  37 - BINDUNGSWABE                    #
 ###===========================KINDERWABEN-MODULE============================###
  #  60 - HARDWAREWABE                |  61 - STROMWABE                       #
  #  62 - SYSTEMWABE                  |  63 -                                 #
@@ -37,10 +39,10 @@
 ###==========================WABENHÄRTER-MODULE=============================###
  # 301 - VERTEILERHÄRTER             | 302 - CPUHÄRTER                       #
 ###===============================VERSIONSDATEN=============================###
- # TWS ⠆⢄⢁⡈ THE-WABE-NEST-SYSTEM                          #    #  #  #  #  # #
+ # TWS ⠆⢄⢁⡈ THE-WABE-NEST-SYSTEM                          #    # ##  #  #  # #
  # TASTATURSTANDARD ⠆⢄⢁⡐ UTF -8 DEUTSCHER-STANDARD        # PYLOVARA—SYSTEM© #
  # HANDBUCHSTANDORT ⠆⢄⡠⢈ /Pylovara/Handbuch/WabenNotes/   #   #    #   ⠆⢄⢁⠌  #
- # SINGLE SOURCE OF TRUTH ⠆⢄⢁⡈ SSoT LEXIKON VERSION 00-03 #     #  #  #  #   #
+ # SINGLE SOURCE OF TRUTH ⠆⢄⢁⡈ SSoT LEXIKON VERSION 00-03 #  #  #  #  #  #   #
 ###=================================IMPRESSUM===============================###
  # AUTOR ⠆⢄⡠⣀ OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68                           #
  # STANDORT ⠆⢄⢁⠃ /Pylovara/Handbuch/WabenNotes/      GITHUB                  #

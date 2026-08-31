@@ -217,56 +217,57 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⡂⡈ COMBOLINKWABE
 
 ###====================================|====================================###
 
- # WEITERES 
+MUTTERWABEN-KATEGORIE ⠆⡠⣀⢐ ENDWABE 
 
- 1. BA35 DIREKT AUSGANG 
+ PROGRAMM ⠆⡠⣀⢠ MANAGER
 
-MUTTERWABEN-KATEGORIE ⠆⢁⠃⢠ ENDWABE 
+ WABEN-ID ⠆⢁⠃⠅ ED
 
- PROGRAMM 
+ BION-NR ⠆⢁⠃⠉ 026
 
- WABEN-ID  ED
+ BION-ID ⠆⢁⠃⠊ ED026
 
- BION-NR  
+ BSK ⠆⢁⠃⠌ RXMKHTSTBAED-MANAGER
 
- BION-ID  
-
- BSK 
-
- BION 
+ BION ⠆⢁⠃⠑ RX007MK007HT018ST018BA035ED026
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⢁⠃⠅ ⧓ ⠆⢁⠃⠉ Ξ ⠆⢁⠃⠊
  # BION-ID FOLGESCHLUSS
- AXIOM ¡  ͼ 
+ AXIOM ¡ ⠆⢁⠃⠊ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⍠
+ AXIOM ¡ ⠆⢁⠨⡄ ⍠ ⠆⡠⣀⠡
 
- EINHEIT  
+ EINHEIT ⠆⡠⣀⠡ ¬· RX-MANAGER-KERN-1
 
-TOCHTERWABEN-KATEGORIE  AUSFÜRHUNGSLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⢁⠃⠘ AUSFÜRHUNGSDIREKTLINKWABE
 
  # PROZESS LINK
- LINKPROZESS  
- LINKPROZESS  
+ LINKEND ⠆⡠⣀⠢ PIMK
+ LINKEND ⠆⡠⣀⠤ PIMK
 
  # AXIOM | PROZESSLINK
- AXIOM ¡   
- AXIOM ¡   
- AXIOM ¡   
+ # ON-PIPE BXMK 
+ AXIOM ¡ ⠆⡠⣀⠢ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠
+ # ON-PIPE POMK 
+ AXIOM ¡ ⠆⡠⣀⠢ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠔ ⧑ ⠆⢁⡠⢈ ⧑ ⠆⢁⡐⠢
+ # ON-PIPE BXMK TEMK POMK 
+ AXIOM ¡ ⠆⡠⣀⠢ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢄⠅ ⧑ ⠆⢁⡠⠡ ⧑ ⠆⢁⡈⢐
 
- # NAME SETZEN  
- PRÄFIX  
+ # OFF-PIPE BXMK
+ AXIOM ¡ ⠆⡠⣀⠤ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂
+ # OFF-PIPE POMK
+ AXIOM ¡ ⠆⡠⣀⠤ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠑⠔ ⧑ ⠆⢁⠌⢠ ⧑ ⠆⢁⠌⡁ 
+ # OFF-PIPE BXMK TEMK POMK
+ AXIOM ¡ ⠆⡠⣀⠤ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠌⠃ ⧑ ⠆⢁⠉⠨ ⧑ ⠆⢁⠉⠅  
 
- # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
-
- # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT 
+ # AXIOM | EINHEIT ZU LINKEND
+ AXIOM ¡ ⠆⡠⣀⠡ ⧖⧖ ⧓ ⠆⡠⣀⠢
+ AXIOM ¡ ⠆⡠⣀⠡ ⧖⧖ ⧓ ⠆⡠⣀⠤
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ⑅ (LINKPROZESS) 
+ AXIOM ¡ ⠆⢁⠃⠊ ⦱ 
 
 ###====================================|====================================###
 
@@ -336,9 +337,62 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⠢⠃ COMBOLINKWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡠⣀⠰ ENDWABE 
+
+ PROGRAMM ⠆⡠⣀⡁ MANAGER
+
+ WABEN-ID ⠆⡠⣀⡂ ED
+
+ BION-NR ⠆⡠⣀⡄ 027
+
+ BION-ID ⠆⡠⣀⡈ ED027
+
+ BSK ⠆⡠⣀⡐ RXMKHTSTBAED-MANAGER
+
+ BION ⠆⡠⣀⢁ RX007MK007HT018ST018BA036ED027
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⣀⡂ ⧓ ⠆⡠⣀⡄ Ξ ⠆⡠⣀⡈
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⡠⣀⡈ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠢⠑ ⍠ ⠆⡠⣀⢂
+
+ EINHEIT ⠆⡠⣀⢂ ¬·· RX-MANAGER-KERN-2
+
+TOCHTERWABEN-KATEGORIE ⠆⡠⢠⢈ AUSFÜRHUNGSDIREKTLINKWABE
+
+ # PROZESS LINK
+ LINKEND ⠆⡠⢠⢐ PIMK
+ LINKEND ⠆⡠⢠⣀ PIMK
+
+ # AXIOM | PROZESSLINK
+ # ON-PIPE BXMK 
+ AXIOM ¡ ⠆⡠⢠⢐ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠
+ # ON-PIPE POMK 
+ AXIOM ¡ ⠆⡠⢠⢐ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠔ ⧑ ⠆⢁⡠⢈ ⧑ ⠆⢁⡐⠢
+ # ON-PIPE BXMK TEMK POMK 
+ AXIOM ¡ ⠆⡠⢠⢐ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢄⠅ ⧑ ⠆⢁⡠⠡ ⧑ ⠆⢁⡈⢐
+
+ # OFF-PIPE BXMK
+ AXIOM ¡ ⠆⡠⢠⣀ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂
+ # OFF-PIPE POMK
+ AXIOM ¡ ⠆⡠⢠⣀ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠑⠔ ⧑ ⠆⢁⠌⢠ ⧑ ⠆⢁⠌⡁ 
+ # OFF-PIPE BXMK TEMK POMK
+ AXIOM ¡ ⠆⡠⢠⣀ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠌⠃ ⧑ ⠆⢁⠉⠨ ⧑ ⠆⢁⠉⠅  
+
+ # AXIOM | EINHEIT ZU LINKEND
+ AXIOM ¡ ⠆⡠⣀⢂ ⧖⧖ ⧓ ⠆⡠⢠⢐
+ AXIOM ¡ ⠆⡠⣀⢂ ⧖⧖ ⧓ ⠆⡠⢠⣀ 
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⡠⣀⡈ ⦱ 
+
+###====================================|====================================###
+
  # WEITERES 
 
- 1. BA36 DIREKT AUSGANG 
  2. BA36 ALU AUSGANG 
  3. BA36 STATUS AUSGANG
  
@@ -403,9 +457,62 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⠡⡐ COMBOLINKWABE
 
 ###====================================|====================================###
 
- # WEITERES 
+MUTTERWABEN-KATEGORIE ⠆⡠⣀⠃ ENDWABE 
 
- 1. BA37 DIREKT AUSGANG 
+ PROGRAMM ⠆⡠⣀⠅ MANAGER
+
+ WABEN-ID ⠆⡠⣀⠉ ED
+
+ BION-NR ⠆⡠⣀⠊ 028
+
+ BION-ID ⠆⡠⣀⠌ ED028
+
+ BSK ⠆⡠⣀⠑ RXMKHTSTBAED-MANAGER
+
+ BION ⠆⡠⣀⠒ RX007MK007HT018ST018BA037ED028
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⣀⠉ ⧓ ⠆⡠⣀⠊ Ξ ⠆⡠⣀⠌
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⡠⣀⠌ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠡⢐ ⍠ ⠆⡠⣀⠘
+
+ EINHEIT ⠆⡠⣀⠘ ¬··· RX-MANAGER-KERN-3
+
+TOCHTERWABEN-KATEGORIE ⠆⡠⢠⠨ AUSFÜRHUNGSDIREKTLINKWABE
+
+ # PROZESS LINK
+ LINKEND ⠆⡠⢠⠢ PIMK
+ LINKEND ⠆⡠⢠⠤ PIMK
+
+ # AXIOM | PROZESSLINK
+ # ON-PIPE BXMK 
+ AXIOM ¡ ⠆⡠⢠⠢ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠
+ # ON-PIPE POMK 
+ AXIOM ¡ ⠆⡠⢠⠢ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠔ ⧑ ⠆⢁⡠⢈ ⧑ ⠆⢁⡐⠢
+ # ON-PIPE BXMK TEMK POMK 
+ AXIOM ¡ ⠆⡠⢠⠢ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢄⠅ ⧑ ⠆⢁⡠⠡ ⧑ ⠆⢁⡈⢐
+
+ # OFF-PIPE BXMK
+ AXIOM ¡ ⠆⡠⢠⠤ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂
+ # OFF-PIPE POMK
+ AXIOM ¡ ⠆⡠⢠⠤ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠑⠔ ⧑ ⠆⢁⠌⢠ ⧑ ⠆⢁⠌⡁ 
+ # OFF-PIPE BXMK TEMK POMK
+ AXIOM ¡ ⠆⡠⢠⠤ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠌⠃ ⧑ ⠆⢁⠉⠨ ⧑ ⠆⢁⠉⠅  
+
+ # AXIOM | EINHEIT ZU LINKEND
+ AXIOM ¡ ⠆⡠⣀⠘ ⧖⧖ ⧓ ⠆⡠⢠⠢
+ AXIOM ¡ ⠆⡠⣀⠘ ⧖⧖ ⧓ ⠆⡠⢠⠤
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⡠⣀⠌ ⦱ 
+
+###====================================|====================================###
+
+ # WEITERES
+
  2. BA37 ALU AUSGANG 
  3. BA37 STATUS AUSGANG
  
@@ -470,25 +577,91 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⠡⠢ COMBOLINKWABE
 
 ###====================================|====================================###
 
- # WEITERES 
+MUTTERWABEN-KATEGORIE ⠆⡠⢠⠰ ENDWABE 
 
- 1. BA38 DIREKT AUSGANG 
+ PROGRAMM ⠆⡠⢠⡁ MANAGER
+
+ WABEN-ID ⠆⡠⢠⡂ ED
+
+ BION-NR ⠆⡠⢠⡄ 029
+
+ BION-ID ⠆⡠⢠⡈ ED029
+
+ BSK ⠆⡠⢠⡐ RXMKHTSTBAED-MANAGER
+
+ BION ⠆⡠⢠⢁ RX007MK007HT018ST018BA038ED029
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢠⡂ ⧓ ⠆⡠⢠⡄ Ξ ⠆⡠⢠⡈
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ ⠆⡠⢠⡈ ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ ⠆⢁⠘⡄ ⍠ ⠆⡠⢠⠃
+
+ EINHEIT ⠆⡠⢠⠃ ¬··· RX-MANAGER-KERN-3
+
+TOCHTERWABEN-KATEGORIE ⠆⡠⢠⢄ AUSFÜRHUNGSDIREKTLINKWABE
+
+ # PROZESS LINK
+ LINKEND ⠆⡠⢐⢠ PIMK
+ LINKEND ⠆⡠⢐⣀ PIMK
+
+ # AXIOM | PROZESSLINK
+ # ON-PIPE BXMK 
+ AXIOM ¡ ⠆⡠⢐⢠ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠
+ # ON-PIPE POMK 
+ AXIOM ¡ ⠆⡠⢐⢠ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠔ ⧑ ⠆⢁⡠⢈ ⧑ ⠆⢁⡐⠢
+ # ON-PIPE BXMK TEMK POMK 
+ AXIOM ¡ ⠆⡠⢐⢠ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢄⠅ ⧑ ⠆⢁⡠⠡ ⧑ ⠆⢁⡈⢐
+
+ # OFF-PIPE BXMK
+ AXIOM ¡ ⠆⡠⢐⣀ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂
+ # OFF-PIPE POMK
+ AXIOM ¡ ⠆⡠⢐⣀ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠑⠔ ⧑ ⠆⢁⠌⢠ ⧑ ⠆⢁⠌⡁ 
+ # OFF-PIPE BXMK TEMK POMK
+ AXIOM ¡ ⠆⡠⢐⣀ ⑅ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠌⠃ ⧑ ⠆⢁⠉⠨ ⧑ ⠆⢁⠉⠅  
+
+ # AXIOM | EINHEIT ZU LINKEND
+ AXIOM ¡ ⠆⡠⢠⠃ ⧖⧖ ⧓ ⠆⡠⢐⢠
+ AXIOM ¡ ⠆⡠⢠⠃ ⧖⧖ ⧓ ⠆⡠⢐⣀
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⡠⢠⡈ ⦱ 
+
+###====================================|====================================###
+
+ # WEITERES
+
  2. BA38 ALU AUSGANG    
  3. BA38 STATUS AUSGANG 
  
 ###====================================|====================================###
 
- DIREKT AUSGÄNGE PER ED TOCHTER AUSFÜHRUNG
+ notiz = 
 
- ALU AUSGÄNGE ÜBER BAUWABE TOCHTER ( NOCH BAUEN ) ALUWABE
- STATUS AUSGÄNGE ÜBER BAUWABE TOCHTER ( NOCH BAUEN ) STATUSWABEN
+ bei der alu und status wabe , brauch es eine combowabe die die komponente 
+ baut aber gleichzeitig zu einer kinderwabe weiter modularisiert . 
+ also mw bauwabe  tw "statuswabe"  kw "rufwabe" mit honigtropfen 
+ das selbe bei beiden ... rufwabe bei beiden ... selbe tw/kw module  
 
- STATUS UND ALU BRAUCHEN DANN ED TOCHTER 
+ dann kann ich beide über die ausführungsdirektlinkwabe jagen und 
+ der waben weg ist modular einrastbar für späteren modul austausch 
+ für andere zwecke .. 
+ bau die rufwabe als universal verbinder ... kurz knackig bündig 
+ mit dem haupttweck für kinderwaben modul weiterleitung 
+
+ in der kinderwabe dann den honigtropfen ... 
+ somit wären die beiden module universal einsetzbar für genau diese art 
+ von ruf bindungen ... ähnlich wie die boxis 
+
+ mach das später .... geh jetzt noch paar sektoren durch die weniger 
+ anstrengung brauchen ... 
 
 ###====================================|====================================###
 ###===========================KOMPAKTE-WABEN-PFADE==========================###
 
- PFAD-PROGRAMM   =  
+ PFAD-PROGRAMM   =  MANAGER
  PFAD-SYSTEM-ID  = 
  PFAD-BION-ID    = 
  PFAD-BION       = 

@@ -3,6 +3,161 @@
  #                 AKTIONSDRAHT = THE PROTEIN EXECUTE LAW                    #
 ###===============================STARTPUNKT================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡠⢠⠅ KOPFWABE
+
+ KOMPONENTE ⠆⡠⢠⠉ AKTIONSDRAHT
+
+ KOMPONENTEN-ID ⠆⡠⢠⠊ AK
+
+ BION-NR ⠆⡠⢠⠌ 006
+
+ BION-ID ⠆⡠⢠⠑ AK006
+
+ MASTER-ID ⠆⡠⢠⠒ MA046SU006
+
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⡠⢠⠉ ⏍ ⠆⡠⢠⠉
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢠⠊ ⧓ ⠆⡠⢠⠌ Ξ ⠆⡠⢠⠑
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢠⠑ ⧑ ⠆⡠⢐⠤
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⡠⢠⠔ MASTERKERNWABE
+
+ WABEN-ID ⠆⡠⢠⠘ MK
+
+ BION-NR ⠆⡠⢠⠡ 006
+
+ BION-ID ⠆⡠⢐⠤ MK006
+
+ BSK ⠆⡠⢐⠨ AKMK
+
+ BION ⠆⡠⢐⠰ AK006MK006
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢠⠘ ⧓ ⠆⡠⢠⠡ Ξ ⠆⡠⢐⠤
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢐⠤ ⧑ ⠆⡠⢐⡐
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⡠⢐⡁ HAUPTWABE 
+
+ PROGRAMM ⠆⡠⢐⡂ IMPULS
+
+ WABEN-ID ⠆⡠⢐⡄ HT
+
+ BION-NR ⠆⡠⢐⡈ 020
+
+ BION-ID ⠆⡠⢐⡐ HT020
+
+ BSK ⠆⡠⢐⢁ AKMKHT-IMPULS
+
+ BION ⠆⡠⢐⢂ AK006MK006HT020
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢐⡄ ⧓ ⠆⡠⢐⡈ Ξ ⠆⡠⢐⡐
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢐⡐ ⧑ ⠆⡠⢐⠅
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE 
+
+ PROGRAMM ⠆⡠⢐⢈ IMPULS
+
+ WABEN-ID ⠆⡠⢈⣀ ST
+
+ BION-NR ⠆⡠⢐⠃ 020
+
+ BION-ID ⠆⡠⢐⠅ ST020
+
+ BSK ⠆⡠⢐⠉ AKMKHTST-IMPULS
+
+ BION ⠆⡠⢐⠊ AK006MK006HT020ST020
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢈⣀ ⧓ ⠆⡠⢐⠃ Ξ ⠆⡠⢐⠅ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢐⠅ ⧑ 
+
+ TASTENCODE ⠆⡠⢐⠌ ALTGR
+ TASTENCODE ⠆⡠⢐⠑ Y
+ TASTENCODE ⠆⡠⢐⠒ X
+
+ SYMBOLE ⠆⡠⢐⠔ »
+ SYMBOLE ⠆⡠⢐⠘ «
+
+ PRÄFIX ⠆⡠⢐⠡ AK-IMPULS-START
+ PRÄFIX ⠆⡠⢐⠢ AK-IMPULS-ENDE
+
+ # PRODUKT
+ AXIOM ¡ ⠆⡠⢐⠌ ⦻ ⠆⡠⢐⠑ Ξ ⠆⡠⢐⠔
+ AXIOM ¡ ⠆⡠⢐⠌ ⦻ ⠆⡠⢐⠒ Ξ ⠆⡠⢐⠘
+ AXIOM ¡ ⠆⡠⢐⠔ Ξ ⠆⡠⢈⠨
+ AXIOM ¡ ⠆⡠⢐⠘ Ξ ⠆⡠⢈⠰
+
+ PRODUKT ⠆⡠⢈⠨ »
+ PRODUKT ⠆⡠⢈⠰ «
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡ ⠆⡠⢈⠨ ⥓ ⠆⡠⢐⠡
+ AXIOM ¡ ⠆⡠⢈⠰ ⥓ ⠆⡠⢐⠢
+
+ # RAM AXIOM 
+ AXIOM ¡ ⠆⡠⢈⠨ ⥗ ⠆⡠⢐⠡ ⍠ ⠆⡠⢈⡁
+ AXIOM ¡ ⠆⡠⢈⠰ ⥗ ⠆⡠⢐⠢ ⍠ ⠆⡠⢈⡂
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⡠⢈⡁ » AK-IMPULS-START
+ EINHEIT ⠆⡠⢈⡂ « AK-IMPULS-ENDE
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⡠⢐⠅ ⦳ 
+
+###====================================|====================================###
+
+ # ESELSBRÜCKE : 
+  hier muss ich normal bauen ... 2 hauptwaben ... 
+
+  der einzige kniff ... andere ausführung ... 
+
+  brauch die explizite MASTERAUSFÜHRUNG .. nicht nur die schaltungsausführung 
+  wie bei den anderen ... diese muss explizit sein um den inhalt zu zünden 
+
+  ich bau sie um pimk ... damit sie unausführbar und ausfürhbar sind 
+  den damit kann ich dann die notizen , wie vorgesehen in mcs 7.5 
+  granular nutzen ... 
+
+  die argumente , müssen das mcd register dann im vorgesehenen bereich bauen 
+  dann vorschalten vor einer ausführung ... erst mcd dann boxis oder baumodus 
+  damit das zu erst getriggert ist und nicht umgekehrt .. 
+
+  APROPO UNTERSCHIED : 
+
+  - IMPULSWABE 
+  - PLUSIMPULSWABE 
+
+  SIE DIENEN FÜR DEN UNTERSCHIED ZUM EIGENTLICHEN FREIGABE PROZESS 
+  
+
+###====================================|====================================###
+###===========================KOMPAKTE-WABEN-PFADE==========================###
+
+ PFAD-PROGRAMM   =  
+ PFAD-SYSTEM-ID  = 
+ PFAD-BION-ID    = 
+ PFAD-BION       = 
+
+###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
+###================================ENDPUNKT=================================###
+
+
+!!! ↓↓↓ ALTER BEREICH 
+
 WABEN-KATEGORIE Ð KOPFWABE
 
  KOMPONENTE ¡ AKTIONSDRAHT

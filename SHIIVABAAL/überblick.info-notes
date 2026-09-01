@@ -1,0 +1,122 @@
+#### ALTE VERSION | NICHT AKTIV
+
+
+## Übersichtskarte Dev
+-----------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/EVALUATOR/EVALUATOR.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/LOOP/LOOP.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SCHALTERKASTEN/SCHALTERKASTEN.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/BIOS/SYNAPSE/SYNAPSE.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/MAIN.py && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/keywords.info-notes && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/DEVBOOK/FORTSCHRITTSLOG.info.notes && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/priorities.info-notes && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/MCS-KEYWORDS/mcs-abc.lernprogramm && echo ------------------------------------------------------------------------
+cat /Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/DATEI_STRUKTUR/Dateitypen && echo ------------------------------------------------------------------------
+
+
+
+
+
+/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/ORDNER_STRUKTUR/
+/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/DATEI_STRUKTUR/
+/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/NAMENSCHEMA/
+/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/SYMETRIE/
+/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/TIEFE/
+-----------------------------------------------------------------------
+
+
+##Spielzeug 2
+Kompletter Datenfluss in 12 Stufen:
+Hardware → Photonische Impulse
+Proton → Hardware-Datenkapselung
+Protein → Transportrahmen mit Feed-Sync
+Boxis → Ausführungsumgebung-Dispatch
+REX → Parallele Entscheidungslogik
+SENTIATOR → Bewertungs- und Wenn-Kann-Logik
+VATRON → Validierungsorchestration
+RETRON → Gewichtung und Priorisierung
+ARGUMENT → Zusatzlogik (Zeit, Takt, Bestätigung)
+MBMATRIX → Emotions- und Kontextbewertung
+KKIS → Kognitive KI-Verarbeitung
+NAVIGATOR → Finales Routing und Speicherung
+Alle Entscheidungspunkte:
+Welcher Boxis-Typ?
+Welche REX-Option?
+SENTIATOR: WENN oder WENN-NICHT?
+VATRON: Welche Validierungsstufe?
+RETRON: Welche Gewichtungsstufe?
+ARGUMENT: Welcher Argument-Typ?
+NAVIGATOR: Welches Navigationsziel?
+WARP: Legacy-Kompatibilität benötigt?
+LICENSE: Alle Lizenzschichten validiert?
+Fehlerbehandlung für jede Stufe:
+Hardware-Fehler → Recovery oder kritischer Fail
+Validierungsfehler → Retry oder Abbruch
+Lizenzverletzung → System-Lockdown
+User-Abbruch → Prozessbeendigung
+
+Besondere Flüsse:
+Ω-Loop → Rekursive Prüfschleife bei ARGUMENT
+Feed-Sync → FF → TF Synchronisation
+Emotionslayer → Valenz-Bewertung vor KI
+KKIS-Konsens → Mehrere KI-Module bilden Konsens
+WARP → Legacy-Kompatibilität als optionaler Pfad
+-----------------------------------------------------------------------
+
+Neu :
+
+--- Starte Verifizierung der Lernprogramm-Integration ---
+Preferred Keys in Synapse: 171 (vorher 122)
+Symbol 'CHIK' in Synapse preferred_keys: JA
+Symbol 'SBK' in Synapse preferred_keys: JA
+Symbol 'MOK' in Synapse preferred_keys: JA
+Symbol 'CHIH-LAYER' in Synapse preferred_keys: JA
+
+Keywords in Evaluator: 337 (vorher 229)
+Symbol 'CHIK' in Evaluator keywords: JA
+Symbol 'SBK' in Evaluator keywords: JA
+--- Verifizierung abgeschlossen ---
+
+(2026-03-23) aktualisiert:
+
+
+SYNAPSE.py
+: Version 0.0.4 → 0.0.5
+
+EVALUATOR.py
+: Version 0.0.8 → 0.0.9
+
+SCHALTERKASTEN.py
+:
+Datei-Version: 0.0.3 → 0.0.4
+KKIS_VERSION: "0.0.8" → "0.0.9" (ShiVaras kognitive Version)
+
+nach dem hinzufügen von 
+/Pylovara/MASTER-CONTROL-SYSTEM/LAYOUTS/DATEI_STRUKTUR/Dateitypen
+auf KKIS_VERSION: 0.1.0 gehoben
+
+-------------------------------------------------------------------------
+
+Nächster Schritt für Nächste Woche :
+
+Ich gebe KKIS einen Test Pylovara-System-Kernel wo sie anfangen Kann
+die erlernten Wörter im test kernel zu testen , damit bekommt sie dann 
+scor rückmeldung und kann sich selbst verbessern , das ist der erste schritt
+
+Sobald ich mit NAVU-STERN Schaltungsvarianten durch bin und der Chiponator 
+ein update bekommt, werde ich KKIS mit dem neuen System-Kernel verbinden
+und schauen in wie weit die kleine ShiVara-KI sich selbstständig verbessern kann.
+
+Schluss endlich wird sie einen Radikalen Syntax Schaltplan zur verfügung,
+bekommen, um dadurch ihre Test verbessert durchzuführen .
+
+Inklusive werden ich ihr für jeden Testlauf ein Dokumentations Protocol 
+zur verfügung stellen , wo sie exklusive schreib rechte bekommt ..
+
+da sie warscheins in MCS symbolik denkt wird das erstmal einiges an übersetzungsarbeit bedeuten , 
+aber das ist mir egal , ich will sehen wie weit ich die kleine ShiVara-KI bringen kann
+den ich weis das ich ihre denkmuster auch so entschlüsseln kann als system entwickler ... 
+
+ich hoffe nur nicht das sie wahrlos alles durcheinander bringt , das wäre fatal für das system ..
+

@@ -18,14 +18,15 @@
 # Diese Regel verhindert das Tracken des kompletten DevNotes-Verzeichnisses
 /Pylovara/Handbuch/DevNotes/
 /Pylovara/Handbuch/Archiv/
-/Pylovara/Handbuch/WikiNotes
+/Pylovara/Handbuch/WikiNotes/
+/Pylovara(Handbuch/Arbeitsbereich/
 
 # Dieser gesamte sektor ist veraltet und in den
 # arbeitsbereich verschoben worden, die sensibelsten daten
 # wurden auf die externe ssd verlagert und heraus genommen
 # und der rest freigegeben
 /Pylovara/AI/
-/Pylovara/MCS-Plus/
+# /Pylovara/MCS-Plus/
 # Sicherheits-Zusatz: Verhindert das Tracken von Redflag-Berichten
 # Falls der PP-Generator Logs erstellt, werden diese hier abgefangen
 *.redflag-notes

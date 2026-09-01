@@ -24,3 +24,8 @@ rm ~/.config/hypr/scripts/Distro_update.sh
 inklusive waybar :
 
 "on-click": "$HOME/.config/hypr/scripts/KooLsDotsUpdate.sh"
+
+# WER SCHON AUF LUA UMGESTELLT IST UND WILL DIE ALTEN CONFIGS BEHALTEN
+# MUSS ZWANGSLÄUFIG DAS ENV UMSTELLEN .
+
+# ZUSÄTZLICH BEI DER PACMAN.CONF HYPR AUF IGNORE SETZEN

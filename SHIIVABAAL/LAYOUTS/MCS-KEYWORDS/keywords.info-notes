@@ -1,257 +1,64 @@
-# DATENTYPEN
-B1
-B8
-B16
-B32
-B64
-B-INF
-p-KEY
-INIT-V
-BOOT-LOGIK
-# KLASSEN 
-MASTER 
-KERNKLASSE 
-HAUPTKLASSE
-UNTERKLASSEN
-OPTIONSKLASSE
-AUSFÜHRUNGSKLASSE
-WERKZEUGKLASSE
-ANKERKLASSE
-WERTKLASSE
-NUMMERKLASSE
-LINKERKLASSE
-AUSLÖSERKLASSE
+# MCS LISTENER TRANSAKTIONSRAHMEN MIT PRINTS INFOS ZU MUTTERWABEN
 
-# KLASEN KÜRZUNG
-K
-H
-U
-O
-AU
-WERK
-AN
-WERT
-NR
-L
-AUS
+¢!
+—[": THE-WABE-NEST-SYSTEM :"]—
+¬· —[": MUTTERWABEN-KATEGORIE :"]—
+   #¬· —[": SPEZIAL-TRÄGER :"]—
+       #¬·· —[": MASTERLIZENZWABE :"]—
+            #¬··· [": SUPERLIZENZWABE :"]
 
-# KOMPONENTEN + KLASSENKÜRZEL STANDARTS
+   ¬· [": KOPFWABE :"]
+   ¬· [": MASTERKERNWABE :"]
+   ¬· [": HAUPTWABE :"]
+   ¬· [": STARTWABE :"]
 
-ARGUMENT
-ARGK
-ARGH
-ARGO
-ARGO
-ARGWERK
-ARGWWERT
-ARGNR
-ARGAN
-ARGL
+   ¬· —[": BAUWABE :"]—
+      ¬·· —[": TOCHTERWABEN :"]—
+          ¬·· [": COMBOWABE :"]
+          ¬·· [": COMBOLINKWABE :"]
 
-AKTIONSDRAHT
-AKTK
-AKTH
-AKTU
-AKTO
-AKTWERK
-AKTWERT
-AKTAN
-AKTL
+          ¬·· —[": EINGABEWABE :"]—
+              ¬··· —[": KINDERWABEN :"]—
+                   ¬··· —[": SYSTEMWABE :]—
+                        ¬···· —[": HONIGTROPFEN :"]—
+                              ¬···· [":  :"]
+                   ¬··· —[": STROMWABE :"]—
+                        ¬···· —[": HONIGTROPFEN :"]—
+                              ¬···· [":  :"]
+                   ¬··· —[": HARDWAREWABE :"]—
+                        ¬···· —[": HONIGTROPFEN :"]—
+                              ¬···· [":  :"]
 
-BOXIS
-BOXK
-BOXH
-BOXU
-BOXO
-BOXWERK
-BOXWERT
-BOXNR
-BOXAN
-BOXL
+   #¬· —[": TRAKTORWABE :"]—
+       #¬·· —[": TOCHTERWABEN :"]—
+            #¬·· —[": KOORDINATORWABE :"]—
+                 #¬··· —[":  :"]—
 
-DATENTYPEN
-DAK
-DAH
-DAU
-DAO
-DAWERK
-DAWERT
-DANR
-DAAN
-DAL
+   ¬· —[": ENDWABE :"]—
+      ¬·· —[": TOCHTERWABEN :"]—
+          ¬·· [": AUSFÜHRUNGSWABE :"]
+          ¬·· [": AUSFÜHRUNGSLINKWABE :"]
+          ¬·· [": AUSFÜHRUNGSDIREKTLINKWABE :"]
 
-DATEITYPEN
-DIK
-DIH
-DIU
-DIO
-DIWWERK
-DIWWERT
-DINR
-DIAN
-DIL
+          ¬·· —[": PROZESSRASTERWABE :"]—
+              ¬··· —[": KINDERWABEN :"]—
+                   ¬··· —[": FREIGABEWABE :"]—
+                        ¬···· —[": HONIGTROPFEN :"]—
+                              ¬···· [":  :"]
 
-FEED
-FEEK
-FEEH
-FFEH
-TFEH
-FEEU
-FEEO
-FEEWERK
-FEEWERT
-FEENR
-FEEAN
-FEEL
+!¢
 
-HERZSCHLAG
-HERZK
-HERZH
-HERZU
-HERZO
-HERZWERK
-HERZWERT
-HERZNR
-HERZAN
-HERZL
+##########################################
 
-IDENTIFIKATION
-IDENK
-IDENH
-IDENU
-IDENO
-IDENWERK
-IDENWERT
-IDESID
-IDENAN
-IDENL
-
-MATRIX
-MATK
-MATH
-MATU
-MATO
-MATWERK
-MATWERT
-MATAN
-MATL
-
-MCS-CMD
-MCCK
-MCCH
-MCCU
-MCCO
-MCCWERK
-MCCWERT
-MCCAN
-MCCL
-
-NAVIGATOR
-NAVK
-NAVH
-NAVU
-NAVO
-NAVWERK
-NAVWERT
-NAVNR
-NAVAN
-NAVL
-
-PROTEIN
-POIK
-POIH
-POIU
-POIO
-POIWERK
-POIWERT
-POIAN
-POIL
-
-PROTON
-POOK
-POOH
-POOU
-POOO
-POOWERK
-POOWERT
-POOAN
-POOL
-
-RETRON
-RETK
-RETH
-RETU
-RETO
-RETWERK
-RETWERT
-RETNR
-RETAN
-RETL
-
-REX
-REXK
-REXH
-REXU
-REXO
-REXWERK
-REXWERT
-REXNR
-REXAN
-REXL
-
-SENTIATOR
-SENTK
-SENTH
-SENTU
-SENTO
-SENTWERK
-SENTWERT
-SENTNR
-SENTAN
-SENTL
-
-TRANSAKTIONSRAHMEN
-TRANK
-TRANH
-TRANU
-TRANO
-TRANWERK
-TARNWERT
-TRANNR
-TRANAN
-TRANL
-
-TRENNBEFEHL
-TRENK
-TRENH
-TRENU
-TRENO
-TRENWERK
-TRENWERT
-TRENNR
-TRENAN
-TRENL
-
-VATRON
-VATK
-VATH
-VATU
-VATO
-VATWERK
-VATWERT
-VATNR
-VATAN
-VATL
-
-WARP
-WARK
-WARH
-WARU
-WARO
-WARWERK
-WARWERT
-WARNR
-WARAN
-WARL
-
-# 
+¢!
+¬· —[":  :"]—
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]
+   ¬· [":  :"]

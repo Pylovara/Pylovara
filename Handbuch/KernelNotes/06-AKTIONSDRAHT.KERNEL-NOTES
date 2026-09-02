@@ -224,7 +224,6 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE
  TASTENCODE ⠆⡠⢄⢈ X
 
  SYMBOLE ⠆⡠⢄⢐ »
- SYMBOLE ⠆⡠⢄⢠ «««
  SYMBOLE ⠆⡠⢄⠒ «
 
  PRÄFIX ⠆⡠⢄⣀ AK-PLUS-IMPULS-START
@@ -232,37 +231,35 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE
  PRÄFIX ⠆⡠⢄⠔ AK-PLUS-IMPULS-ENDE
 
  # PRODUKT
-
-
-
-
-
-
- 
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  Ξ 
- AXIOM ¡  Ξ 
+ AXIOM ¡ ⠆⡠⢄⢁ ⦻ ⠆⡠⢄⢂ Ξ ⠆⡠⢄⢐
+ AXIOM ¡ ⠆⡠⢄⢁ ⦻ ⠆⡠⢄⢈ Ξ ⠆⡠⢄⠒
+ AXIOM ¡ ⠆⡠⢄⢐ Ξ ⠆⡠⢄⠉
+ AXIOM ¡ ⠆⡠⢄⠒ ⧓ ⠆⡠⢄⠒ ⧓ ⠆⡠⢄⠒ Ξ ⠆⡠⢄⢠
+ AXIOM ¡ ⠆⡠⢄⠒ Ξ ⠆⡠⢄⠊
 
  PRODUKT ⠆⡠⢄⠉ »
+ PRODUKT ⠆⡠⢄⢠ «««
  PRODUKT ⠆⡠⢄⠊ «
 
  # TAGGEN PRÄFIX
- AXIOM ¡  ⥓ 
- AXIOM ¡  ⥓ 
+ AXIOM ¡ ⠆⡠⢄⠉ ⥓ ⠆⡠⢄⣀
+ AXIOM ¡ ⠆⡠⢄⢠ ⥓ ⠆⡠⢄⠅
+ AXIOM ¡ ⠆⡠⢄⠊ ⥓ ⠆⡠⢄⠔
 
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍠ 
- AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡ ⠆⡠⢄⠉ ⥗ ⠆⡠⢄⣀ ⍠ ⠆⡠⢄⠌
+ AXIOM ¡ ⠆⡠⢄⢠ ⥗ ⠆⡠⢄⠅ ⍠ ⠆⡠⢄⠑
+ AXIOM ¡ ⠆⡠⢄⠊ ⥗ ⠆⡠⢄⠔ ⍠ ⠆⡠⢄⠡
 
  # EINHEIT | RAM
- EINHEIT ⠆⡠⢄⠌
- EINHEIT ⠆⡠⢄⠑
+ EINHEIT ⠆⡠⢄⠌ » AK-PLUS-IMPULS-START
+ EINHEIT ⠆⡠⢄⠑ ««« AK-PLUS-IMPULS-MCD
+ EINHEIT ⠆⡠⢄⠡ « AK-PLUS-IMPULS-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ⦳ 
+ AXIOM ¡ ⠆⡠⢄⡄ ⦳ 
 
-
+###====================================|====================================###
 
 
 

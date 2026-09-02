@@ -82,7 +82,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⢈⣀ ⧓ ⠆⡠⢐⠃ Ξ ⠆⡠⢐⠅ 
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⢐⠅ ⧑ 
+ AXIOM ¡ ⠆⡠⢐⠅ ⧑ ⠆⡠⢈⢂
 
  TASTENCODE ⠆⡠⢐⠌ ALTGR
  TASTENCODE ⠆⡠⢐⠑ Y
@@ -116,10 +116,87 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE
  EINHEIT ⠆⡠⢈⡂ « AK-IMPULS-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⢐⠅ ⦳ 
+ AXIOM ¡ ⠆⡠⢐⠅ ⦳ ⠆⡠⢈⢂
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡠⢈⡄ BAUWABE 
+
+ PROGRAMM ⠆⡠⢈⢐
+
+ WABEN-ID ⠆⡠⢈⢄ BA
+
+ BION-NR ⠆⡠⢈⢁ 
+
+ BION-ID ⠆⡠⢈⢂
+
+ BSK ⠆⡠⢈⡐ 
+
+ BION ⠆⡠⢈⡈ 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢈⢄ ⧓ ⠆⡠⢈⢁ Ξ ⠆⡠⢈⢂
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢈⢂ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+ AXIOM ¡ # ⍠ #
+
+ # EINHEIT | RAM
+ EINHEIT  
+ EINHEIT
+
+TOCHTERWABEN-KATEGORIE ⠆⡠⢈⢠ (PROZESSWABE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################################
  # ESELSBRÜCKE : 
   hier muss ich normal bauen ... 2 hauptwaben ... 
 

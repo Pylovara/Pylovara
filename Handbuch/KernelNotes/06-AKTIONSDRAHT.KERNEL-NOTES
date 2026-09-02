@@ -120,53 +120,65 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE ⠆⡠⢈⡄ BAUWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⢈⡄ ENDWABE 
 
- PROGRAMM ⠆⡠⢈⢐
+ PROGRAMM ⠆⡠⢈⢐ IMPULS
 
- WABEN-ID ⠆⡠⢈⢄ BA
+ WABEN-ID ⠆⡠⢈⢄ ED
 
- BION-NR ⠆⡠⢈⢁ 
+ BION-NR ⠆⡠⢈⢁ 0(!)
 
- BION-ID ⠆⡠⢈⢂
+ BION-ID ⠆⡠⢈⢂ ED0(!)
 
- BSK ⠆⡠⢈⡐ 
+ BSK ⠆⡠⢈⡐ AKMKHTSTBA-IMPULS
 
- BION ⠆⡠⢈⡈ 
+ BION ⠆⡠⢈⡈ AK006MK006HT020ST020ED0(!)
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⢈⢄ ⧓ ⠆⡠⢈⢁ Ξ ⠆⡠⢈⢂
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⢈⢂ ⧑ 
+ AXIOM ¡ ⠆⡠⢈⢂ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⢈⡁ ⍠ ⠆⡠⢈⠅
+ AXIOM ¡ ⠆⡠⢈⡂ ⍠ ⠆⡠⢈⠉
 
  # EINHEIT | RAM
- EINHEIT  
- EINHEIT
+ EINHEIT ⠆⡠⢈⠅ » AK-IMPULS-START
+ EINHEIT ⠆⡠⢈⠉ « AK-IMPULS-ENDE
 
 TOCHTERWABEN-KATEGORIE ⠆⡠⢈⢠ PROZESSRASTERWABE
 
  # PROZESS 
- PROZESS ⠆⢄⡄⠊ PIMK # ON
- PROZESS ⠆⢄⡄⠌ PIMK # OFF
+ PROZESS ⠆⢄⡄⠊ PIMK 
+ PROZESS ⠆⢄⡄⠌ PIMK 
 
  # AXIOM | PROZESS
- AXIOM ¡  ⑆  ⧑  
- AXIOM ¡  ⑆  ⧑
- 
+ # ON-PIPE
+ AXIOM ¡ ⠆⢄⡄⠊ ⑆  ⧑  
+ AXIOM ¡ ⠆⢄⡄⠊ ⑆  ⧑ 
+ AXIOM ¡ ⠆⢄⡄⠊ ⑆  ⧑ 
+ # OFF-PIPE
+ AXIOM ¡ ⠆⢄⡄⠌ ⑆  ⧑
+ AXIOM ¡ ⠆⢄⡄⠌ ⑆  ⧑ 
+ AXIOM ¡ ⠆⢄⡄⠌ ⑆  ⧑ 
+
  # PROZESS FREIGABE
- AXIOM ¡  ⧖⧖ ⑀ 
- AXIOM ¡  ⧖⧖ ⑀
+ # ON-PIPE
+ AXIOM ¡ ⠆⢄⡄⠊ ⧖⧖ ⑀ 
+ AXIOM ¡ ⠆⢄⡄⠊ ⧖⧖ ⑀ 
+ AXIOM ¡ ⠆⢄⡄⠊ ⧖⧖ ⑀ 
+ # OFF-PIPE
+ AXIOM ¡ ⠆⢄⡄⠌ ⧖⧖ ⑀ 
+ AXIOM ¡ ⠆⢄⡄⠌ ⧖⧖ ⑀ 
+ AXIOM ¡ ⠆⢄⡄⠌ ⧖⧖ ⑀ 
 
 KINDERWABEN-KATEGORIE ⠆⡠⢈⠃ FREIGABEWABE
 
- HONIGTROPFEN # <CORE-ART>
+ HONIGTROPFEN ⠆⡠⢈⠊ <CORE-ART>
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦱ ͽ
+ AXIOM ¡ ⠆⡠⢈⢂ ⦱ ͽ
 
 
 

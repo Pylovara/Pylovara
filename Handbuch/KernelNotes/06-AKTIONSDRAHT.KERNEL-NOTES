@@ -217,7 +217,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⢄⡁ ⧓ ⠆⡠⢄⡂ Ξ ⠆⡠⢄⡄
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⢄⡄ ⧑ ⠆⡠⢈⠡
+ AXIOM ¡ ⠆⡠⢄⡄ ⧑ ⠆⡠⢂⡂
 
  TASTENCODE ⠆⡠⢄⢁ ALTGR
  TASTENCODE ⠆⡠⢄⢂ Y
@@ -257,15 +257,46 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE
  EINHEIT ⠆⡠⢄⠡ « AK-PLUS-IMPULS-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⢄⡄ ⦳ 
+ AXIOM ¡ ⠆⡠⢄⡄ ⦳ ⠆⡠⢂⡂
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡠⢄⠢ BAUWABE 
 
+ PROGRAMM ⠆⡠⢄⠤ PLUSIMPULS
 
+ WABEN-ID ⠆⡠⢄⠨ BA
 
+ BION-NR ⠆⡠⢂⡁ 045
 
+ BION-ID ⠆⡠⢂⡂ 
 
+ BSK ⠆⡠⢂⡄ 
+
+ BION ⠆⡠⢂⡈
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢄⠨ ⧓ ⠆⡠⢂⡁ Ξ ⠆⡠⢂⡂
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢂⡂ ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+ AXIOM ¡ # ⍠ #
+ AXIOM ¡ # ⍠ #
+
+ # EINHEIT | RAM
+ EINHEIT ⠆⡠⢂⡐ 
+ EINHEIT ⠆⡠⢂⢄
+ EINHEIT ⠆⡠⢂⢈
+
+TOCHTERWABEN-KATEGORIE ⠆⡠⢂⢁
+
+!! SO ERST DEN BOXIS KASTEN ORDENTLICH EINBAUEN DANN 
+   ERST IN DAS RASTER ÜBERGEHEN UND UND FREIGABE 
+
+ KAFFE ... KOPFSCHMERZTABLETTE ... 
+ DANN DEN REST .... WIRD ABER AUCH ZEIT 
 
 
 

@@ -126,13 +126,13 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢈⡄ ENDWABE
 
  WABEN-ID ⠆⡠⢈⢄ ED
 
- BION-NR ⠆⡠⢈⢁ 0(!)
+ BION-NR ⠆⡠⢈⢁ 030
 
- BION-ID ⠆⡠⢈⢂ ED0(!)
+ BION-ID ⠆⡠⢈⢂ ED030
 
  BSK ⠆⡠⢈⡐ AKMKHTSTBA-IMPULS
 
- BION ⠆⡠⢈⡈ AK006MK006HT020ST020ED0(!)
+ BION ⠆⡠⢈⡈ AK006MK006HT020ST020ED030
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⢈⢄ ⧓ ⠆⡠⢈⢁ Ξ ⠆⡠⢈⢂
@@ -179,68 +179,107 @@ KINDERWABEN-KATEGORIE ⠆⡠⢈⠃ FREIGABEWABE
 
 ###====================================|====================================###
 
- ALTER SCHWEDE .... Mc Donalds war wirklich keine gute idee 
- mein gehirn ist match seid dem zeug ... 
+MUTTERWABEN-KATEGORIE ⠆⡠⢈⠑ HAUPTWABE 
 
- ich werde später das plus impuls argument identisch aufbauen 
- bis auf den punkt starwabe erzeugung 
+ PROGRAMM ⠆⡠⢈⠒ PLUSIMPULS
 
- und bei prozessraster(plus)
- und freigabe(plus) 
+ WABEN-ID ⠆⡠⢈⠔ HT
 
- das mcd berücksichtigen .. 
+ BION-NR ⠆⡠⢈⠘ 021
 
- erkenntnis : selbst das eine mal nach jahren dazwischen , war zuviel 
-              also keinen burger mehr .... zumindest nicht von dem hersteller 
-              .... da ist irgendwas drinne was den kopf schwammig macht ... 
-              ich spüres es weil ich naturell esse ... da muss chemie drinne sein .. 
+ BION-ID ⠆⡠⢈⠡ HT021
 
-              ich brech für heute ab , die leistung ist extrem sauber obwohl ich 
-              abgelenkt vom geiste bin der benebelt ist ... 
+ BSK ⠆⡠⢈⠢ AKMKHT-PLUSIMPULS
+
+ BION ⠆⡠⢈⠤ AK006MK006HT021
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢈⠔ ⧓ ⠆⡠⢈⠘ Ξ ⠆⡠⢈⠡
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢈⠡ ⧑ ⠆⡠⢄⡄
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⡠⢐⢄ STARTWABE 
+
+ PROGRAMM ⠆⡠⢄⠰ PLUSIMPULS
+
+ WABEN-ID ⠆⡠⢄⡁ ST
+
+ BION-NR ⠆⡠⢄⡂ 021
+
+ BION-ID ⠆⡠⢄⡄ ST021
+
+ BSK ⠆⡠⢄⡈ AKMKHTST-IMPULS
+
+ BION ⠆⡠⢄⡐ AK006MK006HT021ST021
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⢄⡁ ⧓ ⠆⡠⢄⡂ Ξ ⠆⡠⢄⡄
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⢄⡄ ⧑ ⠆⡠⢈⠡
+
+ TASTENCODE ⠆⡠⢄⢁ ALTGR
+ TASTENCODE ⠆⡠⢄⢂ Y
+ TASTENCODE ⠆⡠⢄⢈ X
+
+ SYMBOLE ⠆⡠⢄⢐ »
+ SYMBOLE ⠆⡠⢄⢠ «««
+ SYMBOLE ⠆⡠⢄⠒ «
+
+ PRÄFIX ⠆⡠⢄⣀ AK-PLUS-IMPULS-START
+ PRÄFIX ⠆⡠⢄⠅ AK-PLUS-IMPULS-MCD
+ PRÄFIX ⠆⡠⢄⠔ AK-PLUS-IMPULS-ENDE
+
+ # PRODUKT
 
 
- ich bin ja extrem hochsensibel bei luft, wasser, nahrung 
- und spüre sofort wenn irgendwas drinne ist was den körper 
- signale zusendet .. 
 
- das was ich spüre ist reinste „ zufriedenheit “
- komischerweise aber benebelt ... geistlich benebelt .. 
 
- gott sei dank war das heute eine ausnahme ... 
- ich will nicht wissen was die da rein kippen ... 
- wenn das zeug bei denen bei jedem essensgang 
- den geist benebelt , obwohl das was die dort 
- zubereiten keine vitamine etc beinhaltet und reine 
- füllstoffe sind .. 
 
- dann ist das künsltich ... 
 
- ich liebe fleisch ... aber kein gift ... 
+ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  Ξ 
+ AXIOM ¡  Ξ 
 
- das heißt das jeder der zu oft beim mc donald isst 
- geistlich benebelt ist ... 
+ PRODUKT ⠆⡠⢄⠉ »
+ PRODUKT ⠆⡠⢄⠊ «
 
- sollte ich vielleicht mal im hinterkopf behalten und 
- solche kanidaten beobachten , in wie weit sie 
- ihr gehirn nutzen können .. 
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
 
- entweder sind da nur glückshomone oder sowas drinne 
- oder was anderes ... 
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
 
- klingt lächerlich aber normalerweise ist man 
- nicht benebelt wegen 2 steacks und etwas schicken 
+ # EINHEIT | RAM
+ EINHEIT ⠆⡠⢄⠌
+ EINHEIT ⠆⡠⢄⠑
 
- also 2 bigmacs und 20 chickenwings 
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡  ⦳ 
 
- zumal das eher wie babybrei aufbereitet war 
- ... hmm ... gut ... morgen weiter .. 
 
- morgen fertig ... morgen plus impuls .. 
 
- benebelt schreib ich nicht weiter sondern kontrollier 
- nochmal den impuls bevors weiter geht ... 
 
- so geistlich unterschwellig benebelt bin ich nicht mal wenn ich kiff .. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###############################################################################
  # ESELSBRÜCKE : 

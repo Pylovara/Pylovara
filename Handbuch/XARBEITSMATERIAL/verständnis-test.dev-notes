@@ -21,6 +21,32 @@ version gewählt ..
 
 
 
+ nachtrag : 
+
+gut okey , ich merke das , weil die pipeline nicht fertig ist 
+immer noch der rex falsch gesetzt ist .. 
+
+ ist kein beimbruch aber immer hin .. 
+
+ sie verstehen auch das ein ausführbares print boxi ein direktes 
+ echo ist und sie verstehen das sie die rechnung direkt über 
+ die alu schicken .. 
+
+ das sie quasi noch C code nutzen , liegt lediglich daran 
+ das der baummodus und die eigenen angaben der berchenung selbst 
+ noch gar nicht existieren .. 
+
+ das ist jetzt kein fehler , sondern lediglich ein ummünzen .. 
+
+ lässt sich aber schonmal sehen . 
+
+ bin mal gespannt wenn ich synaptor und zytron wie nitrox fertig 
+ habe ob sie dann auch verstehen das sie ergebnise , punktuell 
+ per führende feed nummer überall syncronisiert , weiter verwenden können 
+
+ also lohnt sich die mathematische überarvbeitung und das einfügen 
+ des system-id macht sich absolut bezahlt . 
+
 
  ####################### KI OUTPUT ############################
 
@@ -45,7 +71,7 @@ text
  ¬· »—[×: b = 3 :×]«
  ¬· »—[×: c = a + b :×]«
  ¬· »—[": ERGEBNIS :"]«
-    ¬·¤ »—[": c :"]«
+     ¬·¤ »—[": c :"]«
 !¢
 2. Der "Zustandsprüfer" (SENTIATOR + SHELL + PRINT)
 Was er tut:
@@ -66,9 +92,9 @@ text
 »—[": STATUS-PRÜFUNG :"]«
  ¬· »—[': pgrep firefox :']«
      ¶ ¬· »—[": JA :"]«
-         ¬·¤ »—[": Firefox läuft :"]«
+           ¬·¤ »—[": Firefox läuft :"]«
      ¶¶ ¬· »—[": NEIN :"]«
-         ¬·¤ »—[": Firefox läuft nicht :"]«
+            ¬·¤ »—[": Firefox läuft nicht :"]«
 !¢
 3. Der "Datei-Leser" (EINGABE + PFAD + PRINT)
 Was er tut:
@@ -88,11 +114,11 @@ text
 ¢!
 »—[": DATEI-LESER :"]«
  ¬· »—[$: /Pylovara/test.txt :$]«
-    ¬· »—[×: datei = öffnen(PFAD) :×]«
-    ¬· »—[×: inhalt = lesen(datei) :×]«
-    ¬· »—[": INHALT :"]«
-        ¬·¤ »—[": inhalt :"]«
-    ¬· »—[×: schließen(datei) :×]«
+     ¬· »—[×: datei = öffnen(PFAD) :×]«
+     ¬· »—[×: inhalt = lesen(datei) :×]«
+     ¬· »—[": INHALT :"]«
+         ¬·¤ »—[": inhalt :"]«
+     ¬· »—[×: schließen(datei) :×]«
 !¢
 4. Der "Counter" (REX + ICTUS + ALU)
 Was er tut:
@@ -110,14 +136,14 @@ text
 ¢!
 »—[": COUNTER :"]«
  ¬· »—[×: i = 1 :×]«
- ¬· »—[": SCHLEIFE :"]«
-    ¬· »—[×: i <= 10 :×]«
-        ¶ ¬· »—[": i :"]«
-            ¬·¤ »—[": i :"]«
-            ¬· »—[×: i = i + 1 :×]«
-            ¬· —[": WIEDERHOLE :"]«
-        ¶¶ ¬· »—[": ENDE :"]«
-            ¬·¤ »—[": Fertig :"]«
+     ¬· »—[": SCHLEIFE :"]«
+         ¬· »—[×: i <= 10 :×]«
+             ¶ ¬· »—[": i :"]«
+                   ¬·¤ »—[": i :"]«
+                   ¬· »—[×: i = i + 1 :×]«
+                   ¬· —[": WIEDERHOLE :"]«
+             ¶¶ ¬· »—[": ENDE :"]«
+                    ¬·¤ »—[": Fertig :"]«
 !¢
 5. Der "Kleine Cache" (NITROX + FEED + PRINT)
 Was er tut:
@@ -135,7 +161,7 @@ text
 ¢!
 »—[": CACHE-TEST :"]«
  ¬· »—[¥: 42 :¥]«
-    ¬·¤ »—[": Wert gespeichert :"]«
+     ¬·¤ »—[": Wert gespeichert :"]«
  ¬· —[": ABRUFEN :"]«
     ¬· »—[¥: <CACHE> :¥]«
         ¬·¤ »—[": CACHE-WERT :"]«
@@ -154,10 +180,10 @@ text
 ¢!
 »—[": NETZ-ABFRAGE :"]«
  ¬· »—[§: https://httpbin.org/ip :§]«
-    ¶ ¬· »—[": OK :"]«
-        ¬·¤ »—[": Verbindung hergestellt :"]«
-    ¶¶ ¬· »—[": FEHLER :"]«
-        ¬·¤ »—[": Verbindung fehlgeschlagen :"]«
+     ¶ ¬· »—[": OK :"]«
+           ¬·¤ »—[": Verbindung hergestellt :"]«
+     ¶¶ ¬· »—[": FEHLER :"]«
+            ¬·¤ »—[": Verbindung fehlgeschlagen :"]«
 !¢
 7. Der "Timer" (SYNAPTOR + PRINT)
 Was er tut:
@@ -174,9 +200,9 @@ text
 ¢!
 »—[": TIMER :"]«
  ¬· »—[": WARTE 3 SEKUNDEN :"]«
-    ¬·¤ »—[×: sleep(3) :×]«
+     ¬·¤ »—[×: sleep(3) :×]«
  ¬· »—[": FERTIG :"]«
-    ¬·¤ »—[": 3 Sekunden vorbei :"]«
+     ¬·¤ »—[": 3 Sekunden vorbei :"]«
 !¢
 8. Der "Entscheider" (SENTIATOR + ALU + PRINT)
 Was er tut:
@@ -197,11 +223,11 @@ text
 ¢!
 »—[": GERADE-UNGERADE :"]«
  ¬· »—[×: zahl = 7 :×]«
- ¬· »—[×: rest = zahl % 2 :×]«
-     ¶ ¬· »—[": rest == 0 :"]«
-         ¬·¤ »—[": gerade :"]«
-     ¶¶ ¬· »—[": rest != 0 :"]«
-         ¬·¤ »—[": ungerade :"]«
+     ¬· »—[×: rest = zahl % 2 :×]«
+         ¶ ¬· »—[": rest == 0 :"]«
+               ¬·¤ »—[": gerade :"]«
+         ¶¶ ¬· »—[": rest != 0 :"]«
+                ¬·¤ »—[": ungerade :"]«
 !¢
 9. Der "Hallo-Welt-in-BOXIS" (Alle BOXIS-Typen im Vergleich)
 Was er tut:

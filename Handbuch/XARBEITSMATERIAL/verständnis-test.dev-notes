@@ -70,16 +70,24 @@ text
 
      ¿¹
  ¬· »—[×: a = 5 :×]«
+     £›1
 
      ¿¹
  ¬· »—[×: b = 3 :×]«
+     £›1
+
      ¿¹
  ¬· »—[×: c = a + b :×]«
+     £›1
 
+     £‹1
      ¿¹
  ¬· »—[": ERGEBNIS :"]«
      ¬·¤ »—[": c :"]«
 !¢
+
+
+
 2. Der "Zustandsprüfer" (SENTIATOR + SHELL + PRINT)
 Was er tut:
 Prüft, ob ein Prozess läuft, und gibt eine Meldung aus.

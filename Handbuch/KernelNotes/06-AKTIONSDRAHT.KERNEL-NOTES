@@ -130,7 +130,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢈⡄ ENDWABE
 
  BION-ID ⠆⡠⢈⢂ ED030
 
- BSK ⠆⡠⢈⡐ AKMKHTSTBA-IMPULS
+ BSK ⠆⡠⢈⡐ AKMKHTSTED-IMPULS
 
  BION ⠆⡠⢈⡈ AK006MK006HT020ST020ED030
 
@@ -318,6 +318,89 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⢂⢁ COMBOLINKWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE  ENDWABE 
+
+ PROGRAMM  PLUSIMPULS
+
+ WABEN-ID  ED
+
+ BION-NR  031
+
+ BION-ID  ED031
+
+ BSK  AKMKHTSTBAED-PLUSIMPULS
+
+ BION  AK006MK006HT021ST021BA045ED031
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡  ⍠ 
+ AXIOM ¡  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT # 
+ EINHEIT # 
+
+TOCHTERWABEN-KATEGORIE # PROZESSRASTERWABE
+
+ # PROZESS 
+ PROZESS ⠆⡠⢂⠊ PIMK 
+ PROZESS ⠆⡠⢂⠌ PIMK 
+
+ # AXIOM | PROZESS
+ # ON-PIPE
+ AXIOM ¡ ⠆⡠⢂⠊ ⑆ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ 
+ AXIOM ¡ ⠆⡠⢂⠊ ⑆ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠔ ⧑ ⠆⢁⡠⢈ ⧑ ⠆⢁⡐⠢
+ AXIOM ¡ ⠆⡠⢂⠊ ⑆ ⠆⢄⡄⡁ ⧑ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢄⠅ ⧑ ⠆⢁⡠⠡ ⧑ ⠆⢁⡈⢐
+ # OFF-PIPE
+ AXIOM ¡ ⠆⡠⢂⠌ ⑆ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂
+ AXIOM ¡ ⠆⡠⢂⠌ ⑆ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠑⠔ ⧑ ⠆⢁⠌⢠ ⧑ ⠆⢁⠌⡁
+ AXIOM ¡ ⠆⡠⢂⠌ ⑆ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠌⠃ ⧑ ⠆⢁⠉⠨ ⧑ ⠆⢁⠉⠅
+
+ # AXIOM | COMBINIERE AKTIONSDRAHT IMPULS PROTEIN ON/OFF-PIPE
+ AXIOM ¡ # ⧖⧖ ⧓ ⠆⡠⢂⠊ ⧖⧖ ⧓ # Ξ #
+ AXIOM ¡ # ⧖⧖ ⧓ ⠆⡠⢂⠌ ⧖⧖ ⧓ # Ξ #
+
+KINDERWABEN-KATEGORIE # FREIGABEWABE
+
+ HONIGTROPFEN # <CORE-ART>
+
+ # AXIOM | PROZESS FREIGABE
+ AXIOM ¡ # ⮀ # ͽ
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦱ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -390,7 +473,7 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⢂⢁ COMBOLINKWABE
 
   VOR ALLEM , WAS ER DARAN SCHLECHT REDEN WILL ... 
 
-  
+
 
 
 

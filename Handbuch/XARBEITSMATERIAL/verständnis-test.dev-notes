@@ -112,6 +112,27 @@ eigentlich :
          rechen variablen genutzt die gar keinen mehrwert bieten .
 
 
+ vielleicht wäre es sinnvoll einen marker als komponente später 
+ zu integrieren damit a = 5 punktuell bestimmt werden kann .. 
+
+ das wäre dann ein istgleich davor oder istgleich danach fixierer 
+ um entwdere rückwärts oder vorwärts die berechnung zu nutzen 
+  rückwärts für die anwendung , vorwärts für den rechen  weg 
+
+  dann könnte ich die variablen logik von z ersten abstossen 
+  und gleichzeitig präzesieren 
+
+  den wenn ich ehrlich bin ist mit <buchstabe/irgendwas> <Istgleich> <das/zahl>
+  etwas zu dünn ... das sorgt nur für fragezeichen in der recheneinheit und 
+  gleichzeitig für unötigen overhead ... 
+
+  das muss als schaltungs reflex integriert werden , damit auch hier 
+  die berechnung keinen auffand hat . 
+
+  wieder eine kleinichkeit die wie eine drossel fungiert .. 
+
+
+
 
 2. Der "Zustandsprüfer" (SENTIATOR + SHELL + PRINT)
 Was er tut:

@@ -41,8 +41,12 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡐⢈ MASTERKERNWABE
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⢂⠃ ⧓ ⠆⡠⢂⠅ Ξ ⠆⡠⢁⠑
+
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⢁⠑ ⧑ 
+ # FÜHREND
+ AXIOM ¡ ⠆⡠⢁⠑ ⧑ ⠆⡠⡈⡐
+ # TRAGEND
+ AXIOM ¡ ⠆⡠⢁⠑ ⧑ ⠆⡠⡈⣀
 
 ###====================================|====================================###
 ###================================FE-FÜHREND===============================###
@@ -56,19 +60,20 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡐⠨ HAUPTWABE
 
  BION-NR ⠆⡠⡐⡂ 024
 
- BION-ID ⠆⡠⡈⡐
+ BION-ID ⠆⡠⡈⡐ HT024
 
- BSK ⠆⡠⡈⢁
+ BSK ⠆⡠⡈⢁ FEMKHT-FÜHREND
 
- BION ⠆⡠⡈⢂
+ BION ⠆⡠⡈⢂ FE012MK012HT024
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⡐⡁ ⧓ ⠆⡠⡐⡂ Ξ ⠆⡠⡈⡐
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⡠⡈⡐ ⧑ 
 
 ###====================================|====================================###
 
+ # WEITER
 
 ###====================================|====================================###
 ###================================FE-TRAGEND===============================###
@@ -82,19 +87,20 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡈⢄ HAUPTWABE
 
  BION-NR ⠆⡠⡈⢠ 025
 
- BION-ID ⠆⡠⡈⣀
+ BION-ID ⠆⡠⡈⣀ HT025
 
- BSK ⠆⡠⡐⠃
+ BSK ⠆⡠⡐⠃ FEMKHT-TRAGEND
 
- BION ⠆⡠⡐⠅
+ BION ⠆⡠⡐⠅ FE012MK012HT025
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⡈⢐ ⧓ ⠆⡠⡈⢠ Ξ ⠆⡠⡈⣀
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⡠⡈⣀ ⧑ 
 
 ###====================================|====================================###
 
+ # WEITER
 
 ###====================================|====================================###
 

@@ -1113,3 +1113,101 @@ Und du hast die Pfade gezeichnet – klar, sichtbar, unmissverständlich."
  den ich will nicht mit dem alten schrott im system verglichen werden können .. 
 
  MCS ist kein schrott .... 
+
+  das würde heißen der schluss endlich wirklich und weltweit einzige 
+  echte "variablen" editor in mcs muss dann so aussehen : 
+
+¢!
+—[¥: RECHNUNGSVARIABLE :¥]—
+
+ ¬· »—[¥: A :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ [(1)—Ø: A :Ø]
+
+ ¬· »—[¥: B :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ [(2)—Ø: B :Ø]
+
+ ¬· »—[¥: 2 :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ [(3)—Ø: 2 :Ø]
+
+ ¬· »—[¥: 2 :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ [(4)—Ø: 2 :Ø]
+
+      ± [(1)—Ø: A :Ø]
+      ± [(3)—Ø: 2 :Ø]
+ ¶ ¬· —[×: (1) = (3) :×]—
+      ÷ [(5)—Ø: (1) = (3) :Ø]
+
+         ± [(2)—Ø: B :Ø]
+         ± [(4)—Ø: 2 :Ø]
+      ¬· —[×: (2) = (4) :×]—
+         ÷ [(6)—Ø: (2) = (4) :Ø]
+
+           ± [(5)—Ø: (1) = (3) :Ø]
+           ± [(6)—Ø: (2) = (4) :Ø]
+      ¶ ¬· —[×: (5) + (6) :×]—
+           ¬·¤¤ [×: <ERGEBNIS> :×]
+!¢
+
+### AXIOM | MCD-REGISTER-BINDUNG
+
+# Definition des MCD-Registers für RECHNUNGSVARIABLE
+MCD-REGISTER ¡ RECHNUNGSVARIABLE
+    REGISTER-TYP ¡ KONSTANTEN-SPEICHER
+    REGISTER-GRÖẞE ¡ 64-BIT
+    REGISTER-ZUGRIFF ¡ DIREKT
+
+# Bindung der Caches an das MCD-Register
+AXIOM ¡ MCD-REGISTER + CACHE(1) + CACHE(2) + CACHE(3) + CACHE(4) 
+    ≠ RECHNUNGSVARIABLE = KONSTANTEN-POOL
+
+# Ausführung der Rechnung über MCD
+AXIOM ¡ MCD-REGISTER ≠ RECHNUNGSVARIABLE ≠ EXECUTE = ERGEBNIS
+
+
+
+  mal weg gespeichert , damit ich den kopf frei habe um den tws 0.3 
+  weiter fein einzugliedern , den danach muss ich erst den tws 0.4 
+  rein patchen wegen der bsk und einer verfeinerten axiomatischen vor programmierungs 
+  logik .. 
+
+
+  wenn das sitzt , werde ich mich dann um den baumodus kümmern 
+
+
+  und klar ist das mehr code den man schreiben muss ... 
+
+  aber es geht nicht kürzer ... kürzer heißt fehler , fehler heißt absturz 
+  absturz heißt finanzielle einbußen und unseriösität gegenüber dem kunden 
+
+  das wird pylovara system nicht nachweisen ... 
+
+  und ich denke das werden mir die entwickler verzeihen 
+
+  außerdem kann ich sogar vorgedruckte layouts zur verfügungstellen 
+  die dann quasi nur noch ausgefüllt werden müssen 
+
+  zusätzlich lässt sich das gnadenlos deterministisch mit jeder vernümftigen 
+  ki , im live modus am code vorgedruckt einfügen .. 
+
+  vs code etc machen es ja nicht anderst , sie geben vorschläge 
+
+  das wäre z.b ein code vorschlag ... den man nur noch per tab integrieren müsste 
+
+
+  ich denke das ist der einzige richtige weg und vor allem zeigt es die absolute 
+  dominanz gegenüber den anderen programmiersprachen die wie mandalas wirken ..
+
+  ich scheiße den konzernen und jedem entwickler jeder programmiersprache 
+  wort wörtlich vor die brille ... 
+
+  ich würde alles geben um zu sehen wie die dann in ihren meetings sitzen und 
+  vor wut ihre kaffetassen aufschlagen , den gegen diese logik und diese 
+  schaltung - sind sie machtlos .. 
+
+  dazu haben die zu abstrakt gebaut .. 
+
+  damit drehe ich den spieß vollkommend um .. 
+
+  mcs = echte programmiersprache 
+  vs 
+  rest = pseudo code von der grundschule 

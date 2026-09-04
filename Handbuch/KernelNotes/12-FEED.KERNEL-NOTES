@@ -45,93 +45,60 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡐⢈ MASTERKERNWABE
  AXIOM ¡ ⠆⡠⢁⠑ ⧑ 
 
 ###====================================|====================================###
+###================================FE-FÜHREND===============================###
+###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE  HAUPTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⡐⠨ HAUPTWABE 
 
- PROGRAMM 
+ PROGRAMM ⠆⡠⡐⠰ FÜHREND
 
- WABEN-ID  HT
+ WABEN-ID ⠆⡠⡐⡁ HT
 
- BION-NR 
+ BION-NR ⠆⡠⡐⡂
 
- BION-ID 
+ BION-ID ⠆⡠⡈⡐
 
- BSK 
+ BSK ⠆⡠⡈⢁
 
- BION 
-
- # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
- # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
-
-
-
-
-
-MUTTERWABEN-KATEGORIE  HAUPTWABE 
-
- PROGRAMM 
-
- WABEN-ID  HT
-
- BION-NR 
-
- BION-ID 
-
- BSK 
-
- BION 
+ BION ⠆⡠⡈⢂
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡  ⧓  Ξ 
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡  ⧑ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-!!!!!!!!!! ↓↓↓ alter code bereich 
-
-
-WABEN-KATEGORIE Ð KOPFWABE
-
- KOMPONENTE ¡ FEED
-
- KOMPONENTEN-ID ¡ FE
-
- BION-NR ¡ 12
-
- BION-ID ¡ FE12
-
- MASTER-ID ¡ MK46SU12
 
 ###====================================|====================================###
 
-WABEN-KATEGORIE Ð MASTERKERNWABE
 
- WABEN-ID ¡ MK
+###====================================|====================================###
+###================================FE-TRAGEND===============================###
+###====================================|====================================###
 
- BION-NR ¡ 12
+MUTTERWABEN-KATEGORIE ⠆⡠⡈⢄ HAUPTWABE 
 
- BION-ID ¡ MK12
+ PROGRAMM ⠆⡠⡈⢈ TRAGEND
 
- BSK ¡ FEMK
+ WABEN-ID ⠆⡠⡈⢐ HT
 
- BION ¡ FE12MK12
+ BION-NR ⠆⡠⡈⢠
+
+ BION-ID ⠆⡠⡈⣀
+
+ BSK ⠆⡠⡐⠃
+
+ BION ⠆⡠⡐⠅
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+###====================================|====================================###
+
+
+###====================================|====================================###
+
+!!!!!!!!!! ↓↓↓ alter code bereich 
 
 ###====================================|====================================###
 ###=================================FÜHREND=================================###

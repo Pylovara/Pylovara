@@ -48,90 +48,96 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢁⡁ MASTERKERNWABE
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⡠⡐⢁ ⧑ 
 
+
+###====================================|====================================###
+# BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
+WABENHÄRTER # VERTEILERHÄRTER
+
+ # AXIOM | ANSCHLUSS MASTERKERNWABE
+ AXIOM ¡ ⍿ #
+
+ # PIPLINE-LINK
+ TEIL-LINK ¡ # ⍠ #
+
+ # PIPELINE CONNECTOR
+ AXIOM ¡ 
+
+ # AXIOM WABEN SYSTEM-ID 
+ AXIOM ¡ # ⑀ #
+
+###====================================|====================================###
+###===============================NI-INJEKTOR===============================###
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE  HAUPTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⡐⢐ HAUPTWABE 
 
- PROGRAMM 
+ PROGRAMM ⠆⡠⡐⢠ INJEKTOR
 
- WABEN-ID  HT
+ WABEN-ID ⠆⡠⡐⣀ HT
 
- BION-NR 
+ BION-NR ⠆⡠⢁⠃
 
- BION-ID 
+ BION-ID ⠆⡠⢁⠅
 
- BSK 
+ BSK ⠆⡠⢁⠉
 
- BION 
-
- # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
- # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
-
-
-
-
-
-MUTTERWABEN-KATEGORIE  HAUPTWABE 
-
- PROGRAMM 
-
- WABEN-ID  HT
-
- BION-NR 
-
- BION-ID 
-
- BSK 
-
- BION 
+ BION ⠆⡠⡐⠌
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡  ⧓  Ξ 
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡  ⧑ 
 
+###====================================|====================================###
 
 
 
+###====================================|====================================###
+# BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
+WABENHÄRTER # VERTEILERHÄRTER
+
+ # AXIOM | ANSCHLUSS MASTERKERNWABE
+ AXIOM ¡ ⍿ #
+
+ # PIPLINE-LINK
+ TEIL-LINK ¡ # ⍠ #
+
+ # PIPELINE CONNECTOR
+ AXIOM ¡ 
+
+ # AXIOM WABEN SYSTEM-ID 
+ AXIOM ¡ # ⑀ #
+
+###====================================|====================================###
+###==============================NI-EXTRAKTOR===============================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⡠⡐⠑ HAUPTWABE 
+
+ PROGRAMM ⠆⡠⡐⠒ EXTRAKTOR
+
+ WABEN-ID ⠆⡠⡐⠔ HT
+
+ BION-NR ⠆⡠⡐⠘
+
+ BION-ID ⠆⡠⡐⠡
+
+ BSK ⠆⡠⡐⠢
+
+ BION ⠆⡠⡐⠤
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+
+###====================================|====================================###
 
 
-
-
-
+###====================================|====================================###
 
 
 !!! ↓↓↓ alter code bereich 
-
-
-
-
-WABEN-KATEGORIE Ð KOPFWABE
-
- KOMPONENTE ¡ NITROX
-
- KOMPONENTEN-ID ¡ NI
-
- BION-NR ¡ 11
-
- BION-ID ¡ NI11
-
- MASTER-ID ¡ MK46SU11
-
-###====================================|====================================###
-
-WABEN-KATEGORIE Ð MASTERKERNWABE
-
- WABEN-ID ¡ MK
-
- BION-NR ¡ 11
-
- BION-ID ¡ MK11
-
- BSK ¡ NIMK
-
- BION ¡ NI11MK11
 
 ###====================================|====================================###
 ###================================INJEKTOR=================================###

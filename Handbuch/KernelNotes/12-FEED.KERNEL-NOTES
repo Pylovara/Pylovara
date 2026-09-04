@@ -5,7 +5,44 @@
  #              FEED FÜHREND = MEISTER | FEED TRAGEND = SKLAVE               #
 ###===============================STARTPUNKT================================###
 
+MUTTERWABEN-KATEGORIE  KOPFWABE
 
+ KOMPONENTE 
+
+ KOMPONENTEN-ID 
+
+ BION-NR 
+
+ BION-ID 
+
+ MASTER-ID 
+
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡  ⏍ 
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE  MASTERKERNWABE
+
+ WABEN-ID  MK
+
+ BION-NR 
+
+ BION-ID 
+
+ BSK 
+
+ BION 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
 
 
 

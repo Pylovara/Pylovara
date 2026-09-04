@@ -36,6 +36,138 @@ MUTTERWABEN-KATEGORIE KOPFWABE
  klick klick klick klick klick klick klick klick 
   1     2      3     4     5     6     7     8   
 
+
+
+ notiz (  muss aufgeschrieben werden ): 
+
+ die berechnung der übergangs geschwindigkeit muss 
+ eine neue kreisbahn bewegung haben 
+
+ links und rechts , zwei kreise , die sich berühren 
+
+ ähnlich eines unendlichzeichen , nur runder 
+
+ links hoch , rechts runter , beide seiten zeitliche 
+ eingeteilt , wie eine gleichmäßiger schnitt durch einen kuchen 
+ oder pizza etc ... 
+
+ über einen reflex benchmarkt wird der starpunkt pro 
+ komponente bestimmt ... 
+
+ an dem punkt wo beide kreise sich am nächsten sin muss eine weitere drehscheibe 
+ rein . 
+
+ diese wird bei drehung auf der vertikalen achse den tackt 
+ angeben - die takt rate 
+
+ diese wird als syncronisation genutzt 
+
+ somit stellt sich nicht mehr die frage wie der takt 
+ grundsätzlich aussieht , sondern die vertikale position 
+ ist der punkt wo beide zeit achsen syncron laufen 
+
+ ich dachte erst ein differenzial wäre die lösung 
+ aber das ist ein irrtum , es erzeugt assyncronität 
+
+ eine reflex schaltung hat keine asyncronität 
+
+ das heißt der startpunkt auf der jeweiligen scheibe bestimmt 
+ ob sich komponenten bei start punkt genau an der scheibe treffen 
+ die scheiben drehung erzeugt den spin 
+
+ der spin erzeugt den takt 
+
+ der takt erzeugt die syncronität 
+
+ ähnlich wie ein dj device 
+
+ nur das die eine schaltplatte vorwärts und die andere rückwärst läuft 
+ aber rückwärscth kein rückwärts ist sondern vorwärts in anderer richtung 
+ quasi spiegelverkehrt 
+
+ der punkt wo beide impulse sich treffen lässt den takt drehen 
+ der nur durch eine gerade linie , ähnlich einer drehtür 
+ dann in eine position den takt angibt 
+
+ der takt ist die syncronisationschleife 
+
+ damit wäre der impuls eine zeitachsen start bedingung auf der 
+ jeweiligen scheibe , nach benchmark reflex test 
+
+ und die syncronisation wird naturell vorgegeben 
+
+ dadurch enstehen keine wartezeiten auf zwang , sondern nach ankunft 
+ was wiederum den fluss auf natürliche weise in bewegung hält .. 
+
+ und das drehbrett mit mitte achse das vertikal siganlisiert was der takt 
+ ist ... ist der wabenimpuls ( dmalaig achttaktrythmus )
+
+ das würde bedeuten ich kann in nahtlos von soft auf hardware 
+ übertragen und somit wäre ich dann wieder beim bmc 3.0 ...
+
+ also kein differenzial , weil er verschnellert und verlangsamt 
+ sondern ein startpunkt bestimmter start auf kreisbahnen mit berührungsmuster 
+
+
+ wenn ich das auf gatter schaltung auf transistoren denke , wäre das 
+ der datenimpuls jedes zukünftigen und auch schon gebauten geräts 
+ das gebaut wurde .. 
+
+ das wäre dann die zeit wären der clock pause ... 
+ 
+
+
+#######################
+
+ kurz vor dem einschlafen kam mir der gedanke .. 
+ wi9chtige roh fassung des gedanken selbst .. 
+ 
+
+
+
+ kurze optische ki erzeugte logik abbildung :
+
+ +-------------------------------------------------------------------------------+
+|                       DOPPEL-KREISBAHN (WABENIMPULS WI055)                    |
++-------------------------------------------------------------------------------+
+|                                                                               |
+|       ( KREIS LINKS )           [ DREHTÜR ]           ( KREIS RECHTS )        |
+|      Spiegelverkehrt A         Vertikale Achse       Spiegelverkehrt B        |
+|           (CW)                  (Takt-Sync)                 (CCW)             |
+|             \                        |                        /               |
+|              \                       |                       /                |
+|               ---> [Ankunft] ---> |  |  | <--- [Ankunft] <---                 |
+|                                   |  |  |                                     |
+|                                 ( SPIN )                                      |
++-------------------------------------------------------------------------------+
+| REFLEX-BENCHMARK: Bestimmt den Off-Set Startpunkt auf den Scheiben            |
+| CLOCK-PAUSE:      Nutzung der Totzeit für nativen Datenfluss                  |
++-------------------------------------------------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###====================================|====================================###
 ###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
  #  

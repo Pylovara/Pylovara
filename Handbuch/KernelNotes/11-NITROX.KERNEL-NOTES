@@ -26,7 +26,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢁⠘ KOPFWABE
  # AXIOM | KOMPONENTEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⢁⠢ ⧓ ⠆⡠⢁⠤ Ξ ⠆⡠⢁⠨
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⢁⠨ ⧑ 
+ AXIOM ¡ ⠆⡠⢁⠨ ⧑ ⠆⡠⡐⢁
  # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
 
 ###====================================|====================================###
@@ -35,27 +35,62 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢁⡁ MASTERKERNWABE
 
  WABEN-ID ⠆⡠⡐⡄ MK
 
- BION-NR ⠆⡠⡐⡈
+ BION-NR ⠆⡠⡐⡈ 011
 
- BION-ID ⠆⡠⡐⢁
+ BION-ID ⠆⡠⡐⢁ MK011
 
- BSK ⠆⡠⡐⢂
+ BSK ⠆⡠⡐⢂ NIMK
 
- BION ⠆⡠⡐⢄
+ BION ⠆⡠⡐⢄ NI011MK011
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⡐⡄ ⧓ ⠆⡠⡐⡈ Ξ ⠆⡠⡐⢁
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⡐⢁ ⧑ 
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE  HAUPTWABE 
+
+ PROGRAMM 
+
+ WABEN-ID  HT
+
+ BION-NR 
+
+ BION-ID 
+
+ BSK 
+
+ BION 
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡  ⧓  Ξ 
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡  ⧑ 
 
-###====================================|====================================###
 
 
 
 
+MUTTERWABEN-KATEGORIE  HAUPTWABE 
 
+ PROGRAMM 
 
+ WABEN-ID  HT
 
+ BION-NR 
+
+ BION-ID 
+
+ BSK 
+
+ BION 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡  ⧓  Ξ 
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡  ⧑ 
 
 
 

@@ -52,6 +52,27 @@
 
  hmm ... 
 
+ nicht vergessen !!! : 
+
+ stell in control den source noch auf trigger um , sonnst wird 
+ der source die shell blockieren .. 
+
+ im bereich HYPRLAND .. der ansatz zum tilling desktop .. 
+ mach dir eine liste von den programmen die du liefern willst 
+ und such erstmal einen offenen compositor .. 
+
+ der suchpfad zum userland muss raus geschrieben werden .. 
+ wenn wayland das nicht macht weil geschlossenen codes 
+ dann such mal sway usw ab , irgend ein compositor wird offen sein .. 
+
+ die dinger sind auch ziemlich primitiv gebaut , ein nachbau 
+ eines gescheiten compositor , kann ich bei fertig stellung vom tws 
+ selbst bewerkstelligen , da mcs dann lauffähig ist .. 
+
+ davor muss ich auf die primitiven c bions von wayland zugreifen .. 
+ 
+
+
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

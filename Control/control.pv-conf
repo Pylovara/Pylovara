@@ -8,7 +8,15 @@
 MASTER_DIR="/Pylovara/Control"
 CONTROL_DIR="/Pylovara"
 Shell_DIR="/Pylovara/System/Shell/DNA"
+Hyprland_DIR="/Pylovara/System/Shell/HYPRLAND"
 MCS_DIR="/Pylovara/System/Kernel/MCS"
+
+##############################################################################
+### HYPRLAND DOTFILES OPTIONAL 
+
+## Super + M = Menü Ansicht 
+# source "Hyprland_DIR/navigation.sh"
+
 
 ##############################################################################
 ### Main Directory

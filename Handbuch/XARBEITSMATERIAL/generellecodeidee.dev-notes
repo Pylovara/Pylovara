@@ -43,18 +43,30 @@
 
  das wollte ich im vorfeld nur gesagt haben . 
 
+######################### GENERELLE PACKET NUTZUNG ############################
 
-###############################################################################
-
-
-
-
-
-
+ sudo pacman -S --needed base-devel git wget
+ sudo pacman -S hyprland kitty waybar wofi hyprpaper swaync polkit-gnome 
+ sudo pacman -S xdg-desktop-portal-hyprland wl-clipboard pipewire wireplumber 
+ sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts-emoji qt5-wayland qt6-wayland
 
 
 
 
+######################### GENERELLE CONFIG SCHMIEDE ###########################
+
+
+
+
+
+
+
+
+
+
+
+
+######################## GENERELLE FUNKTIONS SCHMIEDE #########################
 
 
 

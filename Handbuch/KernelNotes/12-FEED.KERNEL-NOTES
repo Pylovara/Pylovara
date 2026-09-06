@@ -106,32 +106,38 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  SYMBOLE ⠆⡠⡁⡐ :
  SYMBOLE ⠆⡠⡁⢁ —
 
- PRÄFIX ⠆⡠⡂⣀ FE-FÜHREND-
- PRÄFIX ⠆⡠⡁⠰ FE-FÜHREND-
- PRÄFIX ⠆⡠⡁⡂ FE-FÜHREND-
+ PRÄFIX ⠆⡠⡂⣀ FE-FÜHREND-START
+ PRÄFIX ⠆⡠⡁⠰ FE-FÜHREND-BIND
+ PRÄFIX ⠆⡠⡁⡂ FE-FÜHREND-ENDE
 
  # PRODUKT
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  Ξ  
+ AXIOM ¡ ⠆⡠⡄⡈ ⦻ ⠆⡠⡄⡐ ⦻ ⠆⡠⡂⢂ Ξ ⠆⡠⡂⠑
+ AXIOM ¡ ⠆⡠⡄⡐ ⦻ ⠆⡠⡂⢄ Ξ ⠆⡠⡂⠒
+ AXIOM ¡ ⠆⡠⡄⡐ ⦻ ⠆⡠⡂⢈ Ξ ⠆⡠⡁⠘
+ AXIOM ¡ ⠆⡠⡄⡐ ⦻ ⠆⡠⡂⢠ Ξ ⠆⡠⡁⡐
+ AXIOM ¡ ⠆⡠⡄⡈ ⦻ ⠆⡠⡄⡐ ⦻ ⠆⡠⡂⢐ Ξ ⠆⡠⡁⢁
+ AXIOM ¡ ⠆⡠⡂⠑ ⧓ ⠆⡠⡁⢁ ⧓ ⠆⡠⡂⠒ Ξ ⠆⡠⡄⠃
+ AXIOM ¡ ⠆⡠⡁⠘ ⧓ ⠆⡠⡁⡐ Ξ ⠆⡠⡁⠡
+ AXIOM ¡ ⠆⡠⡁⡐ ⧓ ⠆⡠⡂⠑ Ξ ⠆⡠⡁⠢
 
  PRODUKT ⠆⡠⡄⠃ Ø—(
  PRODUKT ⠆⡠⡁⠡ ):
  PRODUKT ⠆⡠⡁⠢ :Ø
 
  # TAGGEN PRÄFIX
- AXIOM ¡  ⥓ 
- AXIOM ¡  ⥓ 
- AXIOM ¡  ⥓ 
+ AXIOM ¡ ⠆⡠⡄⠃ ⥓ ⠆⡠⡂⣀
+ AXIOM ¡ ⠆⡠⡁⠡ ⥓ ⠆⡠⡁⠰
+ AXIOM ¡ ⠆⡠⡁⠢ ⥓ ⠆⡠⡁⡂
 
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍠ 
- AXIOM ¡  ⥗  ⍠ 
- AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡ ⠆⡠⡄⠃ ⥗ ⠆⡠⡂⣀ ⍠ ⠆⡠⡄⠅
+ AXIOM ¡ ⠆⡠⡁⠡ ⥗ ⠆⡠⡁⠰ ⍠ ⠆⡠⡁⠤
+ AXIOM ¡ ⠆⡠⡁⠢ ⥗ ⠆⡠⡁⡂ ⍠ ⠆⡠⡁⠨
 
  # EINHEIT | RAM
- EINHEIT ⠆⡠⡄⠅
- EINHEIT ⠆⡠⡁⠤
- EINHEIT ⠆⡠⡁⠨
+ EINHEIT ⠆⡠⡄⠅ Ø—( FE-FÜHREND-START
+ EINHEIT ⠆⡠⡁⠤ ): FE-FÜHREND-BIND
+ EINHEIT ⠆⡠⡁⠨ :Ø FE-FÜHREND-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ ⠆⡠⡄⠰ ⦳ 
@@ -198,31 +204,38 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡄⠉ STARTWABE
  SYMBOLE ⠆⡠⡁⡄ :
  SYMBOLE ⠆⡠⡁⡈ —
 
- PRÄFIX ⠆⡠⡂⡐ FE-TRAGEND-
- PRÄFIX ⠆⡠⡂⢁ FE-TRAGEND-
- PRÄFIX ⠆⡠⡁⢄ FE-TRAGEND-
+ PRÄFIX ⠆⡠⡂⡐ FE-TRAGEND-START
+ PRÄFIX ⠆⡠⡂⢁ FE-TRAGEND-BIND
+ PRÄFIX ⠆⡠⡁⢄ FE-TRAGEND-ENDE
 
  # PRODUKT
- AXIOM ¡ ⠆⡠⡂⠢ ⦻ ⠆⡠⡂⠤ ⦻ ⠆⡠⡂⠨ Ξ
- AXIOM ¡  ⦻  Ξ
- AXIOM ¡  ⦻  Ξ
-
- AXIOM ¡  Ξ  
+ AXIOM ¡ ⠆⡠⡂⠢ ⦻ ⠆⡠⡂⠤ ⦻ ⠆⡠⡂⠨ Ξ ⠆⡠⡂⡁
+ AXIOM ¡ ⠆⡠⡂⠤ ⦻ ⠆⡠⡂⠰ Ξ ⠆⡠⡂⡄
+ AXIOM ¡ ⠆⡠⡂⠤ ⦻ ⠆⡠⡂⠉ Ξ ⠆⡠⡂⡈
+ AXIOM ¡ ⠆⡠⡂⠤ ⦻ ⠆⡠⡂⠌ Ξ ⠆⡠⡁⡄
+ AXIOM ¡ ⠆⡠⡂⠢ ⦻ ⠆⡠⡂⠤ ⦻ ⠆⡠⡂⠊ Ξ ⠆⡠⡁⡈
+ AXIOM ¡ ⠆⡠⡂⡁ ⧓ ⠆⡠⡁⡄ Ξ ⠆⡠⡁⢈ 
+ AXIOM ¡ ⠆⡠⡁⡄ ⧓ ⠆⡠⡂⡄ Ξ ⠆⡠⡁⢐
+ AXIOM ¡ ⠆⡠⡂⡈ ⧓ ⠆⡠⡁⡈ ⧓ ⠆⡠⡂⡁ Ξ ⠆⡠⡁⢠
 
  PRODUKT ⠆⡠⡁⢈ Ø:
  PRODUKT ⠆⡠⡁⢐ :(
  PRODUKT ⠆⡠⡁⢠ )—Ø
 
  # TAGGEN PRÄFIX
- AXIOM ¡  ⥓ 
+ AXIOM ¡ ⠆⡠⡁⢈ ⥓ ⠆⡠⡂⡐
+ AXIOM ¡ ⠆⡠⡁⢐ ⥓ ⠆⡠⡂⢁
+ AXIOM ¡ ⠆⡠⡁⢠ ⥓ ⠆⡠⡁⢄
 
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡ ⠆⡠⡁⢈ ⥗ ⠆⡠⡂⡐ ⍠ ⠆⡠⡁⣀
+ AXIOM ¡ ⠆⡠⡁⢐ ⥗ ⠆⡠⡂⢁ ⍠ ⠆⡠⡂⠃
+ AXIOM ¡ ⠆⡠⡁⢠ ⥗ ⠆⡠⡁⢄ ⍠ ⠆⡠⡂⠅
 
  # EINHEIT | RAM
- EINHEIT ⠆⡠⡁⣀
- EINHEIT ⠆⡠⡂⠃
- EINHEIT ⠆⡠⡂⠅
+ EINHEIT ⠆⡠⡁⣀ Ø: FE-TRAGEND-START
+ EINHEIT ⠆⡠⡂⠃ :( FE-TRAGEND-BIND
+ EINHEIT ⠆⡠⡂⠅ )—Ø FE-TRAGEND-ENDE
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ ⠆⡠⡂⠔ ⦳ 

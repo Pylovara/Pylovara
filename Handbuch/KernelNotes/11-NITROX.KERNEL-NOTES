@@ -89,43 +89,42 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡐⢐ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⡐⣀ ⧓ ⠆⡠⢁⠃ Ξ ⠆⡠⢁⠅
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⢁⠅ ⧑ 
+ AXIOM ¡ ⠆⡠⢁⠅ ⧑ ⠆⡠⡈⠡
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE  STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⡈⠑ STARTWABE 
 
- PROGRAMM 
+ PROGRAMM ⠆⡠⡈⠒ INJEKTOR
 
- WABEN-ID  ST
+ WABEN-ID ⠆⡠⡈⠔ ST
 
- BION-NR  022 
+ BION-NR ⠆⡠⡈⠘ 022 
 
- BION-ID 
+ BION-ID ⠆⡠⡈⠡ ST022
 
- BSK 
+ BSK ⠆⡠⡈⠢ NIMKHTST-INJEKTOR
 
- BION 
+ BION ⠆⡠⡈⠤ NI011MK011HT022ST022
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⡈⠔ ⧓ ⠆⡠⡈⠘ Ξ ⠆⡠⡈⠡
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⡠⡈⠡ ⧑ 
 
- TASTENCODE 
- TASTENCODE 
- TASTENCODE 
- TASTENCODE 
+ TASTENCODE ⠆⡠⡈⠨ ALTGR
+ TASTENCODE ⠆⡠⡈⡁ SHIFT
+ TASTENCODE ⠆⡠⡈⡂ 9
 
- SYMBOLE 
+ SYMBOLE ⠆⡠⡈⡄ ±
 
- PRÄFIX 
+ PRÄFIX ⠆⡠⡄⢁ NI-INJEKTOR
 
  # PRODUKT
  AXIOM ¡  ⦻  Ξ 
  AXIOM ¡  Ξ  
 
- PRODUKT 
+ PRODUKT ⠆⡠⡄⢂
 
  # TAGGEN PRÄFIX
  AXIOM ¡  ⥓ 
@@ -134,10 +133,10 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  AXIOM ¡  ⥗  ⍠ 
 
  # EINHEIT | RAM
- EINHEIT 
+ EINHEIT ⠆⡠⡄⢄
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ⦳ 
+ AXIOM ¡ ⠆⡠⡈⠡ ⦳ 
 
 ###====================================|====================================###
 
@@ -180,43 +179,42 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡐⠑ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⡐⠔ ⧓ ⠆⡠⡐⠘ Ξ ⠆⡠⡐⠡
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⡐⠡ ⧑ 
+ AXIOM ¡ ⠆⡠⡐⠡ ⧑ ⠆⡠⡄⣀
 
 ###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE  STARTWABE 
 
- PROGRAMM 
+ PROGRAMM ⠆⡠⡄⢈ EXTRAKTOR
 
- WABEN-ID  ST
+ WABEN-ID ⠆⡠⡄⢐ ST
 
- BION-NR  023
+ BION-NR ⠆⡠⡄⢠ 023
 
- BION-ID 
+ BION-ID ⠆⡠⡄⣀ ST023
 
- BSK 
+ BSK ⠆⡠⡈⠃ NIMKHTST-EXTRAKTOR
 
- BION 
+ BION ⠆⡠⡈⠅ NI011MK011HT023ST023
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⡄⢐ ⧓ ⠆⡠⡄⢠ Ξ ⠆⡠⡄⣀
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⡠⡄⣀ ⧑ 
 
- TASTENCODE 
- TASTENCODE 
- TASTENCODE 
- TASTENCODE 
+ TASTENCODE ⠆⡠⡈⠉ ALTGR
+ TASTENCODE ⠆⡠⡈⠊ SHIFT
+ TASTENCODE ⠆⡠⡈⠌ .
 
- SYMBOLE 
+ SYMBOLE ⠆⡠⡄⠒ ÷
 
- PRÄFIX 
+ PRÄFIX ⠆⡠⡄⠔ NI-EXTRAKTOR
 
  # PRODUKT
  AXIOM ¡  ⦻  Ξ 
  AXIOM ¡  Ξ  
 
- PRODUKT 
+ PRODUKT ⠆⡠⡄⠘
 
  # TAGGEN PRÄFIX
  AXIOM ¡  ⥓ 
@@ -225,10 +223,10 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  AXIOM ¡  ⥗  ⍠ 
 
  # EINHEIT | RAM
- EINHEIT 
+ EINHEIT ⠆⡠⡄⠡
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ⦳ 
+ AXIOM ¡ ⠆⡠⡐⠡ ⦳ 
 
 ###====================================|====================================###
 

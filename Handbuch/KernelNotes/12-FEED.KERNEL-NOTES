@@ -100,9 +100,11 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  TASTENCODE ⠆⡠⡂⢐ -
  TASTENCODE ⠆⡠⡂⢠ .
 
- SYMBOLE ⠆⡠⡂⠑ Ø—(
- SYMBOLE ⠆⡠⡂⠒ ):
- SYMBOLE ⠆⡠⡁⠘ :Ø
+ SYMBOLE ⠆⡠⡂⠑ Ø
+ SYMBOLE ⠆⡠⡂⠒ (
+ SYMBOLE ⠆⡠⡁⠘ )
+ SYMBOLE ⠆⡠⡁⡐ :
+ SYMBOLE ⠆⡠⡁⢁ —
 
  PRÄFIX ⠆⡠⡂⣀ FE-FÜHREND-
  PRÄFIX ⠆⡠⡁⠰ FE-FÜHREND-
@@ -112,14 +114,18 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  AXIOM ¡  ⦻  Ξ 
  AXIOM ¡  Ξ  
 
- PRODUKT ⠆⡠⡄⠃
- PRODUKT ⠆⡠⡁⠡
- PRODUKT ⠆⡠⡁⠢
+ PRODUKT ⠆⡠⡄⠃ Ø—(
+ PRODUKT ⠆⡠⡁⠡ ):
+ PRODUKT ⠆⡠⡁⠢ :Ø
 
  # TAGGEN PRÄFIX
  AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
 
  # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
  AXIOM ¡  ⥗  ⍠ 
 
  # EINHEIT | RAM
@@ -186,21 +192,26 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡄⠉ STARTWABE
  TASTENCODE ⠆⡠⡂⠊ -
  TASTENCODE ⠆⡠⡂⠌ .
 
- SYMBOLE ⠆⡠⡂⡁ Ø:
- SYMBOLE ⠆⡠⡂⡄ :(
- SYMBOLE ⠆⡠⡂⡈ )—Ø
+ SYMBOLE ⠆⡠⡂⡁ Ø
+ SYMBOLE ⠆⡠⡂⡄ (
+ SYMBOLE ⠆⡠⡂⡈ )
+ SYMBOLE ⠆⡠⡁⡄ :
+ SYMBOLE ⠆⡠⡁⡈ —
 
  PRÄFIX ⠆⡠⡂⡐ FE-TRAGEND-
  PRÄFIX ⠆⡠⡂⢁ FE-TRAGEND-
  PRÄFIX ⠆⡠⡁⢄ FE-TRAGEND-
 
  # PRODUKT
- AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡ ⠆⡠⡂⠢ ⦻ ⠆⡠⡂⠤ ⦻ ⠆⡠⡂⠨ Ξ
+ AXIOM ¡  ⦻  Ξ
+ AXIOM ¡  ⦻  Ξ
+
  AXIOM ¡  Ξ  
 
- PRODUKT ⠆⡠⡁⢈
- PRODUKT ⠆⡠⡁⢐
- PRODUKT ⠆⡠⡁⢠
+ PRODUKT ⠆⡠⡁⢈ Ø:
+ PRODUKT ⠆⡠⡁⢐ :(
+ PRODUKT ⠆⡠⡁⢠ )—Ø
 
  # TAGGEN PRÄFIX
  AXIOM ¡  ⥓ 

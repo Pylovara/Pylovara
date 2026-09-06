@@ -100,17 +100,21 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  TASTENCODE ⠆⡠⡂⢐ -
  TASTENCODE ⠆⡠⡂⢠ .
 
- SYMBOLE  (
- SYMBOLE  )—Ø:
- SYMBOLE  :Ø
+ SYMBOLE ⠆⡠⡂⠑ Ø—(
+ SYMBOLE ⠆⡠⡂⠒ ):
+ SYMBOLE ⠆⡠⡁⠘ :Ø
 
- PRÄFIX ⠆⡠⡂⣀
+ PRÄFIX ⠆⡠⡂⣀ FE-FÜHREND-
+ PRÄFIX ⠆⡠⡁⠰ FE-FÜHREND-
+ PRÄFIX ⠆⡠⡁⡂ FE-FÜHREND-
 
  # PRODUKT
  AXIOM ¡  ⦻  Ξ 
  AXIOM ¡  Ξ  
 
  PRODUKT ⠆⡠⡄⠃
+ PRODUKT ⠆⡠⡁⠡
+ PRODUKT ⠆⡠⡁⠢
 
  # TAGGEN PRÄFIX
  AXIOM ¡  ⥓ 
@@ -120,6 +124,8 @@ MUTTERWABEN-KATEGORIE  STARTWABE
 
  # EINHEIT | RAM
  EINHEIT ⠆⡠⡄⠅
+ EINHEIT ⠆⡠⡁⠤
+ EINHEIT ⠆⡠⡁⠨
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ ⠆⡠⡄⠰ ⦳ 
@@ -149,43 +155,52 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡈⢄ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⡈⢐ ⧓ ⠆⡠⡈⢠ Ξ ⠆⡠⡈⣀
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⡈⣀ ⧑ 
+ AXIOM ¡ ⠆⡠⡈⣀ ⧑ ⠆⡠⡂⠔
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE  STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⡄⠉ STARTWABE 
 
- PROGRAMM 
+ PROGRAMM ⠆⡠⡄⠊ TRAGEND
 
- WABEN-ID  ST
+ WABEN-ID ⠆⡠⡄⠌ ST
 
- BION-NR 025
+ BION-NR ⠆⡠⡄⠑ 025
 
- BION-ID 
+ BION-ID ⠆⡠⡂⠔ ST025
 
- BSK 
+ BSK ⠆⡠⡂⠘ FEMKHTST-TRAGEND
 
- BION 
+ BION ⠆⡠⡂⠡ FE012MK012HT025ST025
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⡄⠌ ⧓ ⠆⡠⡄⠑ Ξ ⠆⡠⡂⠔
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⡠⡂⠔ ⧑ 
 
- TASTENCODE 
- TASTENCODE 
- TASTENCODE 
- TASTENCODE 
+ TASTENCODE ⠆⡠⡂⠢ ALTGR
+ TASTENCODE ⠆⡠⡂⠤ SHIFT
+ TASTENCODE ⠆⡠⡂⠨ O
+ TASTENCODE ⠆⡠⡂⠰ 8
+ TASTENCODE ⠆⡠⡂⠉ 9
+ TASTENCODE ⠆⡠⡂⠊ -
+ TASTENCODE ⠆⡠⡂⠌ .
 
- SYMBOLE 
+ SYMBOLE ⠆⡠⡂⡁ Ø:
+ SYMBOLE ⠆⡠⡂⡄ :(
+ SYMBOLE ⠆⡠⡂⡈ )—Ø
 
- PRÄFIX 
+ PRÄFIX ⠆⡠⡂⡐ FE-TRAGEND-
+ PRÄFIX ⠆⡠⡂⢁ FE-TRAGEND-
+ PRÄFIX ⠆⡠⡁⢄ FE-TRAGEND-
 
  # PRODUKT
  AXIOM ¡  ⦻  Ξ 
  AXIOM ¡  Ξ  
 
- PRODUKT 
+ PRODUKT ⠆⡠⡁⢈
+ PRODUKT ⠆⡠⡁⢐
+ PRODUKT ⠆⡠⡁⢠
 
  # TAGGEN PRÄFIX
  AXIOM ¡  ⥓ 
@@ -194,10 +209,12 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  AXIOM ¡  ⥗  ⍠ 
 
  # EINHEIT | RAM
- EINHEIT 
+ EINHEIT ⠆⡠⡁⣀
+ EINHEIT ⠆⡠⡂⠃
+ EINHEIT ⠆⡠⡂⠅
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ⦳ 
+ AXIOM ¡ ⠆⡠⡂⠔ ⦳ 
 
 ###====================================|====================================###
 

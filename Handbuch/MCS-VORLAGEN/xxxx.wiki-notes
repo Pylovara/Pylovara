@@ -96,3 +96,41 @@ int main() {
  göleichbleibenden logik dann ×× usw ... 
 
  das könnte der sweetspot sein nach dem ich gesucht habe ... 
+
+ um das jetzt nicht vollständig durch zu schreiben aber als rücklage zu 
+ besitzen 
+
+ // BIBLIOTHEK: STANDARD.mcs
+
+// Vergleichsfunktionen
+¢! —[¥: IST_GLEICH :¥]— ... !¢
+¢! —[¥: IST_GROESSER :¥]— ... !¢
+¢! —[¥: IST_KLEINER :¥]— ... !¢
+
+// Mathematische Funktionen
+¢! —[¥: QUADRAT :¥]— ... !¢
+¢! —[¥: WURZEL :¥]— ... !¢
+¢! —[¥: POTENZ :¥]— ... !¢
+
+// Textfunktionen
+¢! —[¥: TEXT_VERKETTEN :¥]— ... !¢
+¢! —[¥: TEXT_LAENGE :¥]— ... !¢
+¢! —[¥: TEXT_VERGLEICH :¥]— ... !¢
+
+// Systemfunktionen
+¢! —[¥: AUSGABE :¥]— ... !¢
+¢! —[¥: EINGABE :¥]— ... !¢
+¢! —[¥: DATEI_LESEN :¥]— ... !¢
+
+werden jetzt stumpf falsch die funktionen erstmal dokumentiert .. 
+
+alle müssen im transaktionsrahmen selbst natürlich angepasst werden 
+da sie getrennte transaktionsrahmen haben .. 
+
+aber als listen ansich für den aufbau der späteren bibliothek ist das 
+okey .. 
+
+nur mit dem unterschied das c nicht die primäre übersetzung ist 
+sondern direkt assembly , damit ich nur eine baustelle habe die ich 
+im unter bau des tws systems beseitigen muss und nicht 2 .. 
+

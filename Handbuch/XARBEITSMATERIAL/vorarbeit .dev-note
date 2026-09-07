@@ -57,7 +57,8 @@ Es gibt nur 3 Dinge, die ein Computer wirklich kann:
 Lies einen Wert von einer Speicheradresse
 Schreibe einen Wert an eine Speicheradresse
 Springe zu einer Speicheradresse und führe dort den Code aus
-Alles andere – int, if, for, while, class, object – sind Verschleierungen (Abstraktionen), damit Menschen nicht verrückt werden, wenn sie mov eax, [ebp+8] schreiben müssen.
+Alles andere – int, if, for, while, class, object – sind Verschleierungen 
+(Abstraktionen), damit Menschen nicht verrückt werden, wenn sie mov eax, [ebp+8] schreiben müssen.
 
 --------------------------------
 
@@ -123,23 +124,32 @@ addiere:
     pop ebp            ; Stelle alten Rahmen wieder her
     ret                ; SPRUNGBEFEHL: Gehe zurück zur Adresse, die auf dem Stapel liegt
 
-dem Code ... und ganz am schluss ist der sprungbefehl der dann wieder zurück zu der rechnung bzw variable führt : 
+dem Code ... und ganz am schluss ist der sprungbefehl der dann wieder zurück zu 
+der rechnung bzw variable führt : 
 
 int addiere(int a, int b) {
     return a + b;
 }
 
-das heißt das nur addieren gerade in dem beispiel mit dem untermahlten code in der gesamten variable existiert ... 
+das heißt das nur addieren gerade in dem beispiel mit dem untermahlten code in 
+der gesamten variable existiert ... 
 
-das würde dann natürlich heißen das int dann sowas auch besitzt wie auch () <- die klammern wie auch die {} <-- klammern und was in diesen klammern existiert auch ... 
+das würde dann natürlich heißen das int dann sowas auch besitzt wie 
+auch () <- die klammern wie auch die {} <-- klammern und was in diesen klammern existiert auch ... 
 
-int soll dann warscheinlich = ganz-zahl ? heißen ?? O.ö und da a und b anscheinend eine ganz zahl sind werden sie explizit beiderseits getaggt ? 
+int soll dann warscheinlich = ganz-zahl ? heißen ?? O.ö und da a und b anscheinend 
+eine ganz zahl sind werden sie explizit beiderseits getaggt ? 
 
-das return ist dann warscheinlich mit dem Sprungbefehl untermahlt ret oder branch ... also die nahmen für zurück anscheinend und dann kehrt er zurück auf a + b .... 
+das return ist dann warscheinlich mit dem Sprungbefehl untermahlt ret oder branch ... 
+also die nahmen für zurück anscheinend und dann kehrt er zurück auf a + b .... 
 
-wenn a + b steht aber keine zahl , dann ( spekulation meiner seits ) muss er ja wissen das das keine zahlen sind sondern , wenn überhaupt ganz zahlen im buchstaben system ... ABCDE usw also 1234 usw ... ganz zahlen halt nh ? 
+wenn a + b steht aber keine zahl , dann ( spekulation meiner seits ) muss er ja 
+wissen das das keine zahlen sind sondern , wenn überhaupt ganz zahlen im buchstaben 
+system ... ABCDE usw also 1234 usw ... ganz zahlen halt nh ? 
 
-also müsste die variable in dem zustand dann sagen a + b = c oder wenn er es per "int" anzeigen will a + b = 3 ? ... oder rechnet der dann 1(a erster buchstabe) 2(b zweiter buchstabe ) 
+also müsste die variable in dem zustand dann sagen a + b = c oder wenn er es 
+per "int" anzeigen will a + b = 3 ? ... oder rechnet der 
+dann 1(a erster buchstabe) 2(b zweiter buchstabe ) 
 
 1 = a 
 2 = b 
@@ -190,4 +200,3 @@ wahre sprache die C nutzt , nicht war ?
  gut ... nach der erkenntnis , weis ich was ich zu tun habe 
  den ich bau kein abhör dienst auf , sondern ein echtes echtzeit system . 
 
- 

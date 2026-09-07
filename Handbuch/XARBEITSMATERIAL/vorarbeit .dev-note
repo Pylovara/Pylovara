@@ -1,0 +1,50 @@
+### grundlegender sammelkasten für den firstboot 
+
+
+dieser abschnitt sammel die daten um mcs 
+später in assembly aufzubauen ... 
+
+er dient für das kurze verständnis , um sppäter 
+alle operatoren vollständig zu ersetzen . 
+
+sie sind eine verständnis frage , weniger eine dauerlösung
+und dienen lediglich dazu die logik von deren erbauer 
+zu verstehen . 
+
+nichts von hier wird auf lange sicht übernommen in deren 
+schreibweise oder deren aufbau varianten 
+
+alles von dem dient nur dazu das ich verstehe , wie die 
+von damals gedanklich an die technik gegangen sind 
+um sie vollständig zu ersetzen , nach dem der tws über den 
+assembly im unterbau , gestartet wurde und dann folgerichtig 
+im unterbau den assembly im tws zu intergrieren ... 
+
+aber auf pylovara-system weise und nicht auf u.s.a denken oder 
+deren institute  mit deren informatik lehren . 
+
+alles davon wird logisch auseinander genommen , ordentlich auf 
+deutscher logik korrigiert und schluss endlich ersetzt . 
+
+
+
+
+
+# elementar funktionen 
+push ebp    ; "Merk dir, wo ich gerade bin"
+pop ebp     ; "Hol die gemerkte Adresse zurück"
+ret         ; "Springe zurück zu der Adresse, die gemerkt wurde"
+
+# 
+
+Assembler-Befehl	Was er tut
+push	            Lege Wert auf den Stapel (Stack)
+pop	                Hole Wert vom Stapel
+mov	                Bewege Wert von A nach B
+add	                Addiere zwei Werte
+sub	                Subtrahiere
+cmp	                Vergleiche zwei Werte
+jmp	                Springe zu Adresse (unbedingt)
+je	                Springe wenn gleich (bedingter Sprung)
+call	            Rufe Funktion auf (merke Rücksprungadresse)
+ret	                Kehre zurück

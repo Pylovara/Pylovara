@@ -1,0 +1,98 @@
+»—[¥: A :¥]—« 
+
+wäre dann : 
+
+int a; 
+
+Definiert ein Target (Speicherplatz) namens A
+
+«««~: ADD <Register|Speicherplatz|Konstante> « 
+
+ wäre dann : 
+
+a = <zahl>;
+
+ Weist einen Wert zu ( brauch aber den sprungbefehl für die nummer) 
+
+ ÷ Ø—(1): A :Ø 
+
+ wäre dann in assembly cirka : 
+
+ mov eax, [ebp+<zahl>] ; "Lade den Wert, der bei Adresse (ebp+<zahl>) liegt, in das Rechenwerk"
+ add eax, [ebp+<zahl>] ; "Addiere den Wert bei Adresse (ebp+<zahl>) zum Wert im Rechenwerk"
+
+ 
+
+
+ der baumodus ( in c auch funktion genannt) 
+
+ ¢!
+ —[¥: RECHNUNGSVARIABLE :¥]—
+    // Definition der Funktion
+ !¢
+
+ ¢!
+ —[¥: MAIN :¥]—
+    // Hier ruft man die RECHNUNGSVARIABLE auf
+    // erstelle einen neuen Rahmen (Boxi) für den Aufruf
+ !¢ 
+
+---------------------------------------------------------------------
+
+ ¢!
+ —[¥: RECHNUNGSVARIABLE :¥]—
+ ¬· »—[¥: A :¥]—«««~: ADD <2> :~«
+     ÷ Ø—(1): A :Ø
+ ¬· »—[¥: B :¥]—«««~: ADD <2> :~«
+     ÷ Ø—(2): B :Ø
+    // Vergleich und Ergebnis
+    ¬·¤¤ [×: <ERGEBNIS> :×]
+ !¢
+
+¢!
+ —[¥: MAIN :¥]—
+    // NEUER RAHMEN für Aufruf
+    ¬· »—[¥: AUFRUF :¥]—«««~: CALL <RECHNUNGSVARIABLE> :~«
+        ÷ Ø—(3): AUFRUF :Ø
+    // Jetzt müsste das Ergebnis in AUFRUF stehen 
+ !¢
+
+ das wäre in c cirka : 
+
+ int rechne() {
+    int a = 2;
+    int b = 2;
+    return a + b;
+}
+
+int main() {
+    int ergebnis = rechne();  // Aufruf mit neuem Rahmen
+}
+
+ das heißt ich müsste in der eingabe boxi selbst ein plusimpuls (argument zum mcd) 
+ setzen das das wort als funktion bindet im transaktions rahmen und 
+ zusätzlich diese platzhalter als eingabe definieren für die jeweilige zahl .. 
+
+ danach kann ich die funktion in jedem weiteren transaktionsrahmen aufrufen 
+ und die zahlen nehmen dann den mechanismus der funktion die ich geschrieben habe 
+
+ und aufgrund lage dessen , baut man dann eine ganze funktion bibliothek auf 
+ die dann nichts anderes tut wie verschiedene berechnungen möglich zu machen 
+ 
+
+ das würde bedeuten das ich berechnungs symbole wie - + ÷ · dann 
+ auch in assembly definieren müsste und diese aber dann selbst bestimmen kann 
+ weil einige der symbole in mcs eine ganz andere nutzung haben .. 
+
+ am besten wäre dann zusatz targets von nöten um berechnungs symbole von mcs 
+ symbole zu trennen 
+
+ das wäre im grunde die kleinste sache .. 
+
+ aus einem + wie dann ++ aus einem minus wird ein -- aus einem geteilt wird ein 
+ ÷÷ ... beim mal wird es knifflig da er im ictus genutzt wird , das hieße 
+ ich müsste es altmodisch machen ×× da der rahmen bei der boxis anders definiert 
+ wurde mit ×: :×  kann ein × dann genutzt werden .. aber zum willen der stumpfen 
+ göleichbleibenden logik dann ×× usw ... 
+
+ das könnte der sweetspot sein nach dem ich gesucht habe ... 

@@ -14,36 +14,117 @@
  1. userland cache 2. systemcache 
  ( ohne feed arbeiten werden nur anfänger , berücksichtigen )
 
- bevor ich jetzt daran gehe , den rolle fertig zusammen bauen 
- und hoffen das dass scheiß ding endlich macht was es soll .. 
+ roller repariert , probe fahrt .. 
 
- ich will nicht mehr laufen , ich will nicht mehr ... 
+ dann wieder leistungsverlust ab 60kmh vollgas ... 
+ standart düse ohne nachbearbeitung .. 
 
- wenn ich heute ein erfolgserlebnis haben darf 
- und ich hoffe so inständig das dass der fall ist . 
+ ich hab ein neuen steuerregler rein ..
+ eine neue cdi ...
+ neuer vergasser 
+ neue 48v regler für den eletrostarter 
 
- dann kauf ich mir heute nach etlichen unzähligen monaten 
- ein BIER ... und wehe die polizei macht theater ... 
+ die kiste ist wunderbar gelaufen in anbetracht das 
+ sie noch gedrosselt fährt ... maximal 60kmh , ist okey
+ in dem zustand .. 
 
- ich bin ein besserer fahrer als 99% im ganzen land !
+ danach ab einer gewissen fahrzeit wieder leistungsverlust 
+ und mit angst weiter gefahren , also halb gas .... 
 
- und ich kauf mir ein gramm cannabis ! 
+ ich kann es mir jetzt einfach nicht mehr anders vorstellen 
+ es muss explizit an der lichtmaschine liegen ... 
 
- dann fahr ich wieder zurück .. 
+ wenn alle teile inklusive baterrie neu sind ... 
+ und selbst ein multimeter zeigt das er nur bis 12,50 cirka läd 
+ , also wenn ich ihn im stand seitlich nehme und einmal 
+ gas gebe , dann kann es nur noch an der lichtmaschine selbst liegen .. 
 
- dann prügel ich mich selber schreiend in wutgebrülle hoch : 
 
- „ du machst heute den verfickten nitrox start klar und wehe du 
- brauchst dafür tage du wichser ! “
+ ich kann wärender fahrt nicht messen .... im stand und im stand mit 
+ vollgas seitlich , zeigt er keine tedenz zur überladung .. 
 
- und wenn ich mich selbe in grund und boden beleidigt habe 
- und die moral da ist , schreibe ich das scheiß teil endlich runter !
+ wenn er aber wärender fahrt dann leistungsverlust erleidet .. 
+ dann muss die lichtmaschine das steuerelement zu hart ran nehmen 
+ und das heritzt sich ... 
 
- genug theorie ... ich weis wie ich es baue .. 
+ dadurch kommt es dann zum leistungs verlust weil das steuerelement 
+ dann die baterrie zu hoch läd ... warscheins über 14,8 max .. 
 
- wird zeit das ich den weltweiten ersten echten und besten 
- cache speicher in mcs integriere , die jeden amerikanischen 
- entwickler wie ein sonderschüler aussehen lässt ... AHU 
+ da ich das wären der fahrt nicht messen kann weis ich es jetzt nicht 
+ und kann nur darauf spekulieren ... klingt aber nach dem 
+ logischsten senario ... 
+
+ also kann es nur meine schuld sein , insofern man ein poolrad 
+ überhaupt falsch rum einbauen kann ... 
+
+ oder es war wirklich defekt und ich hab das defekte teil nach sicht prüfung 
+ und zahnbürsten reinigung , damit nichts verkratzt , falsch rum 
+ eingebaut ... 
+
+ egal was der überltäter ist aber es muss dann daran liegen .. 
+
+ das ich mich auch noch um das kümmern muss macht mich irre, 
+ ausgerechnet die elektronik wofür ich kein wirkliches werkzeug besitze 
+ sondern nur raten kann , aufgrund lage des standortes und darauf 
+ keine werkstatt bauen dürfen ... eigentlich bräuchst ich 
+ auf längerer sicht nh garage .... mit allem was man benötigt 
+ um zu wissen wo der schuhe drückt ... 
+
+ ich muss also jetzt darauf achten das ich im niedrigen bereich bleibe 
+ bis ich den kasten aufschrauben kann .... zeitlich ... 
+
+ und dann heraus bekomme wieviele winklungen das poolrad hat , um wenigstens 
+ keinen bullshit zu kaufen und gleich das richtige zu ordern .. 
+
+ wenn ich das jetzt nochmal nicht mache dann zerreisst es mir die gesamte 
+ elektronik nochmal und ich sitzt wieder da und darf monate auf die reperatur sparen ... 
+
+ und wieder zu fuß den strom holen ..... 
+
+ das mich das immer erwichtt , ich will nicht mehr * piensen auf hohem niveau * 
+
+
+
+ na immer hin hatte ich genug zeit dfabei über die sysstemwabe nach zu denken 
+ .... der vorfahl mit dem roller zeigt mir einfach es es wichtig ist 
+ das alles seinen platz hat .. 
+
+
+ der eingabehalt mechanismus muss gewährleistet sein ... 
+ er dient zwar nur f+r den abgleich aber hätte eine native 
+ mitgebrachte debugg funktion inklusive im live modus also gerade passiert .. 
+
+ ich denke ich wabe sie so mal ein .... das layout sieht gut aus .. 
+ und macht sinn ... 
+
+ ab dem tws 0.4 wären dann auch noch die axiomatische vor programmierungen 
+ drann , sie einen tick zu verbessern .. 
+
+ und ich kann dann immer nochmal entscheiden ob eine kurze eingabehalt funktion 
+ sinn macht .... spätestens bei der beta sehe und werde ich hören ob es 
+ damit sicherheits probleme gibt ... was ich nicht glaube .. 
+
+ wenn ja , raus damit ... wenn nein , im auge behalten .. 
+
+ ich barf jetzt nicht so penibel werden und gleich jedes element bis auf die unendliche wurzel der 
+ problem findung durch denken ... das wäre eine gedankenschleife die keinen ernsthaften 
+ platz in der phase haben darf .... grobe logische ja , tiefgreifenden umfangreichere nein .. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -166,6 +247,8 @@ FUNKTIONEN BEI C WIE main() in das MCD REGISTER PACKEN
  PRINT BOXIS EIN , ALS BAUMANSICHT ... FÜR DIE EINEN DEKORATION FÜR DIE 
  ANDEREN EINE NACHVOLLZIEHBARKEITSFRAGE , DA SIE SICH ERSTMAL REIN DENKEN 
  MÜSSEN .
+
+ 
 
  
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###

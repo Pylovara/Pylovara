@@ -235,7 +235,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠘⡐ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⠘⢂ ⧓ ⠆⡠⠘⢄ Ξ ⠆⡠⠘⢈
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⠘⢈ ⧑ 
+ AXIOM ¡ ⠆⡠⠘⢈ ⧑ ⠆⡠⠘⡁
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⡠⠡⠨ ⍠ ⠆⡠⠡⠰
@@ -288,46 +288,46 @@ KINDERWABEN-KATEGORIE ⠆⡠⠘⠑ SYSTEMWABE
  EINHEIT ⠆⡠⠘⠡ Ø—(<NR>): <SPEICHER> FE-FÜHREND-RAM-SPEICHER
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⠘⢈ ⦳ #
+ AXIOM ¡ ⠆⡠⠘⢈ ⦳ ⠆⡠⠘⡁
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # ENDWABE
+MUTTERWABEN-KATEGORIE ⠆⡠⠘⠢ ENDWABE
 
- PROGRAMM # TRAGEND
+ PROGRAMM ⠆⡠⠘⠤ FÜHREND
 
- WABEN-ID # ED
+ WABEN-ID ⠆⡠⠘⠨ ED
 
- BION-NR # 034
+ BION-NR ⠆⡠⠘⠰ 034
 
- BION-ID # ED034
+ BION-ID ⠆⡠⠘⡁ ED034
 
- BSK # 
+ BSK ⠆⡠⠔⡄ FEMKHTSTBABAED-FÜHREND
 
- BION # 
+ BION ⠆⡠⠔⡈ FE012MK012HT024ST024BA049BA050ED034
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ # 
+ AXIOM ¡ ⠆⡠⠘⠨ ⧓ ⠆⡠⠘⠰ Ξ ⠆⡠⠘⡁ 
  # BION-ID FOLGESCHLUSS
- AXIOM ¡ # ͼ 
+ AXIOM ¡ ⠆⡠⠘⡁ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⠘⠡ ⍠ ⠆⡠⠔⡐
+ AXIOM ¡ ⠆⡠⡁⠨ ⍠ ⠆⡠⠔⢁
 
- EINHEIT # 
- EINHEIT # 
+ EINHEIT ⠆⡠⠔⡐ Ø—(<NR>): <SPEICHER> FE-FÜHREND-RAM-SPEICHER 
+ EINHEIT ⠆⡠⠔⢁ :Ø FE-FÜHREND-RAM-RAUS
 
-TOCHTERWABEN-KATEGORIE # AUSFÜHRUNGSLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠔⢂ AUSFÜHRUNGSLINKWABE
 
  # PROZESS LINK
- LINKPROZESS # NIMK
+ LINKPROZESS ⠆⡠⠔⢄ NIMK
 
  # AXIOM | VORBAU 
  AXIOM ¡ # ⧓ # Ξ #
 
  # AXIOM | PROZESSLINK
- AXIOM ¡ # ⑅ ⠆⡠⡐⢁ ⧑ # ⧑ # ⧑ # ⧑ # 
+ AXIOM ¡ ⠆⡠⠔⢄ ⑅ ⠆⡠⡐⢁ ⧑ # ⧑ # ⧑ # ⧑ # 
 
  # NAME SETZEN  
  PRÄFIX # 

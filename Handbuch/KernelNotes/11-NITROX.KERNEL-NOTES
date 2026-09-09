@@ -336,7 +336,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠢⠑ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⠢⠔ ⧓ ⠆⡠⠢⠘ Ξ ⠆⡠⠢⠡
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⠢⠡ ⧑ #
+ AXIOM ¡ ⠆⡠⠢⠡ ⧑ ⠆⡠⠔⠡
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⡠⡄⠡ ⍠ ⠆⡠⠡⡁
@@ -356,7 +356,7 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠡⡂ COMBOLINKWABE
  EINHEIT ⠆⡠⠔⣀ Ø—(<NR>): <SPEICHER> :Ø FE-FÜHREND-RAM-RAUS
 
  # AXIOM | NAME SETZEN  
- PRÄFIX ⠆⡠⠘⠃ NI-INJEKTOR-RAM-REIN-FÜHREND
+ PRÄFIX ⠆⡠⠘⠃ NI-EXTRAKTOR-RAM-RAUS-FÜHREND
 
  # AXIOM | COMBINIERE  
  AXIOM ¡ ⠆⡠⠡⡁ ⧓ ⠆⡠⠔⣀ Ξ ⠆⡠⠘⠅
@@ -365,50 +365,50 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠡⡂ COMBOLINKWABE
  AXIOM ¡ ⠆⡠⠘⠅ ⥓ ⠆⡠⠘⠃ ⍠ ⠆⡠⠔⠊
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT ⠆⡠⠔⠊ Ø—(<NR>): <SPEICHER> :Ø NI-INJEKTOR-RAM-REIN-FÜHREND
+ EINHEIT ⠆⡠⠔⠊ Ø—(<NR>): <SPEICHER> :Ø NI-EXTRAKTOR-RAM-RAUS-FÜHREND
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⠢⠡ ⦳ #
+ AXIOM ¡ ⠆⡠⠢⠡ ⦳ ⠆⡠⠔⠡
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # ENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⠔⠌ ENDWABE 
 
- PROGRAMM #
+ PROGRAMM ⠆⡠⠔⠑ EXTRAKTOR
 
- WABEN-ID # ED
+ WABEN-ID ⠆⡠⠔⠒ ED
 
- BION-NR #
+ BION-NR ⠆⡠⠔⠘ 035
 
- BION-ID #
+ BION-ID ⠆⡠⠔⠡ ED035
 
- BSK #
+ BSK ⠆⡠⠔⠢ NIMKHTSTBAED-EXTRAKTOR
 
- BION # 
+ BION ⠆⡠⠔⠤ NI011MK011HT023ST023BA051ED035
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠔⠒ ⧓ ⠆⡠⠔⠘ Ξ ⠆⡠⠔⠡
  # BION-ID FOLGESCHLUSS
- AXIOM ¡ # ͼ 
+ AXIOM ¡ ⠆⡠⠔⠡ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⠔⠊ ⍠ ⠆⡠⠔⠨
 
- EINHEIT # 
+ EINHEIT ⠆⡠⠔⠨ Ø—(<NR>): <SPEICHER> :Ø NI-EXTRAKTOR-RAM-RAUS-FÜHREND
 
-TOCHTERWABEN-KATEGORIE # AUSFÜHRUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠔⠰ AUSFÜHRUNGSWABE
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # NI-INJEKTOR-RAM-REIN-EXTRATOR-RAUS
+ PRÄFIX ⠆⡠⠔⡁ NI-EXTRAKTOR-RAM-RAUS-FÜHREND-REIN
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ # 
+ AXIOM ¡ ⠆⡠⠔⠨ ⥓ ⠆⡠⠔⡁ ⍠ ⠆⡠⠔⡂ 
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # 
+ EINHEIT ⠆⡠⠔⡂ Ø—(<NR>): <SPEICHER> :Ø NI-EXTRAKTOR-RAM-RAUS-FÜHREND-REIN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦱ 
+ AXIOM ¡ ⠆⡠⠔⠡ ⦱ 
 
 ###====================================|====================================###
 ###===========================KOMPAKTE-WABEN-PFADE==========================###

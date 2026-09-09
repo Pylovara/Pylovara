@@ -14,187 +14,21 @@
  1. userland cache 2. systemcache 
  ( ohne feed arbeiten werden nur anfänger , berücksichtigen )
 
- roller repariert , probe fahrt .. 
+ so , erstmal nitrox und feed verschmolzen , nitrox geht dann 
+ über die pipeline und dort baut sich der on-pipe 
+ anschluss nahtlos auf ... 
 
- dann wieder leistungsverlust ab 60kmh vollgas ... 
- standart düse ohne nachbearbeitung .. 
+ rex bis status und alu noch offen aber fast fertig 
+ ictus noch bauwabe warscheins , muss nochmal gucken .. 
 
- ich hab ein neuen steuerregler rein ..
- eine neue cdi ...
- neuer vergasser 
- neue 48v regler für den eletrostarter 
+ und dann könnt ich eigentlich zum sentiator rüber schlawinern 
+ hmm ... 
 
- die kiste ist wunderbar gelaufen in anbetracht das 
- sie noch gedrosselt fährt ... maximal 60kmh , ist okey
- in dem zustand .. 
+ klingt nach arbeit nach morgen ... ich gehe die logik im kopf 
+ heute noch durch ... und dann ... erstmal zufrieden nitrox und feed 
+ eingewabt , nachkontrolle kommt dann wenn alle fertig sind .. 
 
- danach ab einer gewissen fahrzeit wieder leistungsverlust 
- und mit angst weiter gefahren , also halb gas .... 
-
- ich kann es mir jetzt einfach nicht mehr anders vorstellen 
- es muss explizit an der lichtmaschine liegen ... 
-
- wenn alle teile inklusive baterrie neu sind ... 
- und selbst ein multimeter zeigt das er nur bis 12,50 cirka läd 
- , also wenn ich ihn im stand seitlich nehme und einmal 
- gas gebe , dann kann es nur noch an der lichtmaschine selbst liegen .. 
-
-
- ich kann wärender fahrt nicht messen .... im stand und im stand mit 
- vollgas seitlich , zeigt er keine tedenz zur überladung .. 
-
- wenn er aber wärender fahrt dann leistungsverlust erleidet .. 
- dann muss die lichtmaschine das steuerelement zu hart ran nehmen 
- und das heritzt sich ... 
-
- dadurch kommt es dann zum leistungs verlust weil das steuerelement 
- dann die baterrie zu hoch läd ... warscheins über 14,8 max .. 
-
- da ich das wären der fahrt nicht messen kann weis ich es jetzt nicht 
- und kann nur darauf spekulieren ... klingt aber nach dem 
- logischsten senario ... 
-
- also kann es nur meine schuld sein , insofern man ein poolrad 
- überhaupt falsch rum einbauen kann ... 
-
- oder es war wirklich defekt und ich hab das defekte teil nach sicht prüfung 
- und zahnbürsten reinigung , damit nichts verkratzt , falsch rum 
- eingebaut ... 
-
- egal was der überltäter ist aber es muss dann daran liegen .. 
-
- das ich mich auch noch um das kümmern muss macht mich irre, 
- ausgerechnet die elektronik wofür ich kein wirkliches werkzeug besitze 
- sondern nur raten kann , aufgrund lage des standortes und darauf 
- keine werkstatt bauen dürfen ... eigentlich bräuchte ich 
- auf längerer sicht nh garage .... mit allem was man benötigt 
- um zu wissen wo der schuhe drückt ... 
-
- ich muss also jetzt darauf achten das ich im niedrigen bereich bleibe 
- bis ich den kasten auf schrauben kann .... zeitlich ... 
-
- und dann heraus bekomme wieviele wicklungen das poolrad hat , um wenigstens 
- keinen bullshit zu kaufen und gleich das richtige zu ordern .. 
-
- wenn ich das jetzt nochmal nicht mache dann zerreisst es mir die gesamte 
- elektronik nochmal und ich sitzt wieder da und darf monate auf die reperatur sparen ... 
-
- und wieder zu fuß den strom holen ..... 
-
- das mich das immer erwichtt , ich will nicht mehr * piensen auf hohem niveau * 
-
-
-
- na immer hin hatte ich genug zeit dabei über die sysstemwabe nach zu denken 
- .... der vorfahl mit dem roller hat mir zeigt , das es wichtig ist 
- das alles seinen platz hat .. 
-
-
- der eingabehalt mechanismus muss gewährleistet sein ... 
- er dient zwar nur f+r den abgleich aber hätte eine native 
- mitgebrachte debugg funktion inklusive im live modus also gerade passiert .. 
-
- ich denke ich wabe sie so mal ein .... das layout sieht gut aus .. 
- und macht sinn ... 
-
- ab dem tws 0.4 wären dann auch noch die axiomatische vor programmierungen 
- drann , sie einen tick zu verbessern und die bsk auf den letzten besten 
- stand zurück zu patchen ..... 
-
- und ich kann dann immer nochmal entscheiden ob eine kurze eingabehalt funktion 
- sinn macht .... spätestens bei der beta sehe und werde ich hören ob es 
- damit sicherheits probleme gibt ... was ich nicht glaube .. 
-
- wenn ja , raus damit ... wenn nein , im auge behalten .. 
-
- ich barf jetzt nicht so penibel werden und gleich jedes element bis auf die unendliche wurzel der 
- problem findung durch denken ... das wäre eine gedankenschleife die keinen ernsthaften 
- platz in der phase haben darf .... grobe logische ja , tiefgreifenden umfangreichere nein .. 
-
-
-
- also baue ich die feed impliziten speicher pro f und t ein und verdrahte die 
- führenden nur mit dem in kanal und die tragenden nur mit dem out kanal 
- damit dann nitrox genau da die daten in die on-pipes einspeißen kann . 
-
- wenn ich dann später noch das mcd register bearbeite und dort die speicher 
- art manifestiere , hätte ich die erste vorlage von mcs als rechnungsvariable 
- vollständig lauffähig gemacht .. 
-
- danach muss ich dann zum sentiator gehen und dort werde ich zwei explizite 
- neue waben bauen .... 
-
- intern zeigt er nur den datenkanal an der nicht funktioniert mit der 
- datei die ärger macht .. 
-
- extern kann man dann den code nachkontrollieren und später wenn ich den kasten 
- zum laufen gebracht habe , kann ich auch gleich in mcs den vatron mit liefern der 
- dann automatisiert suchen kann wo genau die mcs geschrieben transaktion einen bugg hat 
- den buggs werden nur aufgrundlage von spalten fehlern ... 
-
- oder weil eine fremde datei wie eine *.dll von windows dann falsch oder 
- generell fehlehaft ist aber das ist ein windows problem und von dem jennigen 
- der die datei benutzt habt .... nh .... hat ja nix mit dem primären bereich zu tun 
- den für microsoft mach ich kein debugging für fremdcode ... 
-
- aber ich denke so ist das aktzeptabel .... programme stoppen nicht aber wenn ein kanal 
- fehlt dann ist das jeweilige element nicht nutzbar .. 
-
- und wenn es fremde dateiquellen sind , muss das auch in deren sektor passieren mit 
- der fehler suche ... 
-
- ich werde nur mcs debugging mit liefern , der rest ist fremdsoftware gedöns 
- damit hab ich nichts zu tun ... aber ich denke das wird jeder verstehen .. 
-
- bin ja nicht das debugging amt für das was ich ausrotten will :-D 
-
- früher oder später wenn der baumodus steht , und nativ geschrieben wird 
- dann gehe ich stark davon aus das solche triviale dinge sehr sehr sehr sehr 
- selten passieren wird ...
-
- und selbst wenn dann wäre immer noch der general verdacht im raum von der 
- eigenen schuld frage .... 
-
- aber man sieht ja was man downloadet .... die verantwortung muss jeder 
- schon selber tragen , man ist ja nicht der papa ... 
-
- ich garantiere nur das mcs fehlerfrei debuggbar im tws wie standart bibliotheken 
- vorliegen .... das sollte mich als einzigstes jucken .. 
-
- ich mein .... ich werde mir das recht heraus nehmen das ich als entwickler 
- des systems , einmal Enemy Territory , also die idTech 3 vollständig in mcs übertrage 
- und Enemy Territory , die enginhe einschränkungen in den datenpacketen , vollständig 
- heraus operieren werde .. 
-
- weitere spiele werde ich nicht übertragen in reinem mcs , das ist aufgabe von 
- den entwickler die nachziehen werden und sich mit mcs befassen . 
-
- ich liefere im besten falle dann nur ein leitfaden , wie man pk3 dateinen 
- ( also zips im grunde ) , sauber mit allen daten zusätzen , in mcs schreiben kann . 
-
- der rest ist entwickler sache .... ich mein : 
-
- „ Ein Vater bringt seinem kind Malen bei in dem er den sinn des Stiftes zeigt 
-   aber sobald der Stift verstanden wird , lässt er sein Kind Fröhlich darauf 
-   los malen  “
-
- so sehe ich das ... auch wenn ich nicht der papa bin aber der erbauer .. 
- ein vorreiter brauch immer einen nachzügler ... 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ soweit so gut ... 
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 

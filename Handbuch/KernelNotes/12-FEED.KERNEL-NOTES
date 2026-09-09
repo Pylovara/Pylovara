@@ -180,22 +180,43 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠡⠉ EINGABEWABE
  # AXIOM | VORBAU 
  AXIOM ¡ ⠆⡠⠡⢠ ⧓ ⠆⡠⠡⠊ Ξ ⠆⡠⠡⠌
 
- PRODUKT ⠆⡠⠡⠌ Ø—(<NR> 
+ PRODUKT ⠆⡠⠡⠌ Ø—(<NR> FE-FÜHREND-RAM-BIND
 
  # AXIOM | RAM 
  AXIOM ¡ ⠆⡠⠡⠌ ⍠ ⠆⡠⠡⠑
 
- EINHEIT ⠆⡠⠡⠑ Ø—(<NR>
+ EINHEIT ⠆⡠⠡⠑ Ø—(<NR> FE-FÜHREND-RAM-BIND
 
  # AXIOM | (EINGABE COPIE)
  AXIOM ¡ ⠆⡠⠡⠊ Ξ ⠆⡠⠡⠒
  
  EINGABEHALTEN ⠆⡠⠡⠒ <NR>
 
-KINDERWABEN-KATEGORIE ⠆⡠⠡⠔
+KINDERWABEN-KATEGORIE ⠆⡠⠡⠔ SYSTEMWABE
 
+ HONIGTROPFEN ⠆⡠⠡⠘ <ZUSTAND>
 
+ # AXIOM | (EINGABE ABGLEICHEN)
+ AXIOM ¡ ⠆⡠⠡⠒ ⟗ ⧖⧖ ⠆⡠⠡⠘ Ξ ⠆⡠⠡⠢
 
+ # AXIOM | ABGLEICH BEENDET | AUSGABE
+ AXIOM ¡ ⠆⡠⠡⠢ ⧑ ⠆⡠⠡⠑ ⍠ ⠆⡠⠡⠤
+
+ AUSGABE ⠆⡠⠡⠤ <NR> FE-FÜHREND-RAM-BIND
+
+ # AXIOM | EINGABEBEHALTEN LÖSCHEN
+ AXIOM ¡ ⠆⡠⠡⠒ ⎚
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⡠⠡⠤ ⍠ ⠆⡠⠡⠨
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⡠⠡⠨ Ø—(<NR> FE-FÜHREND-RAM-BIND
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⡠⠡⢄ ⦳ #
+
+###====================================|====================================###
 
  # WEITER
 

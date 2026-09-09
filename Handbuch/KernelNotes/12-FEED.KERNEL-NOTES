@@ -385,50 +385,50 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠨⡁ BAUWABE
  EINHEIT ⠆⡠⠨⢐ :( FE-TRAGEND-RAM-BIND
  EINHEIT ⠆⡠⠨⢠ )—Ø FE-TRAGEND-RAM-RAUS 
 
-TOCHTERWABEN-KATEGORIE  EINGABEWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠨⢄ EINGABEWABE
 
- EINGABE  <NR>
+ EINGABE ⠆⡠⠨⢈ <NR>
 
  # AXIOM | VORBAU 
- AXIOM ¡  ⧖⧖ ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⠨⠰ ⧓ ⠆⡠⠨⢐ ⧖⧖ ⧓ ⠆⡠⠨⢈ Ξ ⠆⡠⠤⢠
 
- PRODUKT  Ø: <NR> :( 
+ PRODUKT ⠆⡠⠤⢠ Ø: <AKTUALISIEREN> :(<NR> 
 
  # AXIOM | RAM 
- AXIOM ¡  ⍠ 
+ AXIOM ¡ ⠆⡠⠤⢠ ⍠ ⠆⡠⠤⣀
 
- EINHEIT  Ø: <NR> 
+ EINHEIT ⠆⡠⠤⣀ Ø: <AKTUALISIEREN> :(<NR> FE-TRAGEND-RAM-BIND
 
  # AXIOM | (EINGABE COPIE)
- AXIOM ¡  Ξ 
+ AXIOM ¡ ⠆⡠⠨⢈ Ξ ⠆⡠⠨⠃
  
- EINGABEHALTEN  <NR>
+ EINGABEHALTEN ⠆⡠⠨⠃ <NR>
 
-KINDERWABEN-KATEGORIE  SYSTEMWABE
+KINDERWABEN-KATEGORIE ⠆⡠⠨⠅ SYSTEMWABE
 
- HONIGTROPFEN  <ZUSTAND>
+ HONIGTROPFEN ⠆⡠⠨⠉ <ZUSTAND>
 
  # AXIOM | (EINGABE ABGLEICHEN)
- AXIOM ¡  ⟗ ⧖⧖  Ξ 
+ AXIOM ¡ ⠆⡠⠨⠃ ⟗ ⧖⧖ ⠆⡠⠨⠉ Ξ ⠆⡠⠨⠊
 
  # AXIOM | ABGLEICH BEENDET | AUSGABE
- AXIOM ¡  ⧑ 
+ AXIOM ¡ ⠆⡠⠨⠊ ⧑ ⠆⡠⠨⠌
 
- AUSGABE  <NR>
+ AUSGABE ⠆⡠⠨⠌ <NR>
 
  # AXIOM | EINGABEBEHALTEN LÖSCHEN
- AXIOM ¡  ⎚
+ AXIOM ¡ ⠆⡠⠨⠃ ⎚
 
  # AXIOM | RAM 
- AXIOM ¡  ⍠ 
+ AXIOM ¡ ⠆⡠⠤⣀ ⍠ ⠆⡠⠨⠑
 
  # RAM GEBAUTE EINHEIT
- EINHEIT  Ø: <NR> 
+ EINHEIT ⠆⡠⠨⠑ Ø: <AKTUALISIEREN> :(<NR> FE-TRAGEND-RAM-BIND 
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡  ⦳ #
+ AXIOM ¡ ⠆⡠⠨⡐ ⦳ #
 
-
+###====================================|====================================###
 
 
 

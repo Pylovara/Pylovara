@@ -290,15 +290,56 @@ KINDERWABEN-KATEGORIE ⠆⡠⠘⠑ SYSTEMWABE
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ ⠆⡠⠘⢈ ⦳ #
 
+###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE # ENDWABE
 
+ PROGRAMM # TRAGEND
 
+ WABEN-ID # ED
 
+ BION-NR # 034
 
+ BION-ID # ED034
 
+ BSK # 
 
+ BION # 
 
- # WEITER
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ # 
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ # ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+ AXIOM ¡ # ⍠ #
+
+ EINHEIT # 
+ EINHEIT # 
+
+TOCHTERWABEN-KATEGORIE # AUSFÜHRUNGSLINKWABE
+
+ # PROZESS LINK
+ LINKPROZESS # NIMK
+
+ # AXIOM | VORBAU 
+ AXIOM ¡ # ⧓ # Ξ #
+
+ # AXIOM | PROZESSLINK
+ AXIOM ¡ # ⑅ ⠆⡠⡐⢁ ⧑ # ⧑ # ⧑ # ⧑ # 
+
+ # NAME SETZEN  
+ PRÄFIX # 
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍠ #
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT #  
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⑅ # ⦱
 
 ###====================================|====================================###
 ###================================FE-TRAGEND===============================###
@@ -591,11 +632,7 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠤⢄ AUSFÜHRUNGSLINKWABE
  EINHEIT ⠆⡠⠤⢁ Ø: <AKTUALISIEREN> :(<NR>)—Ø FE-TRAGEND-RAM-RAUS-INJEKTOR 
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⠤⢈ ⑅ ⠆⡠⠤⢈ ⦱
-
-###====================================|====================================###
-
-
+ AXIOM ¡ ⠆⡠⠤⠨ ⑅ ⠆⡠⠤⢈ ⦱
 
 ###====================================|====================================###
 ###===========================KOMPAKTE-WABEN-PFADE==========================###

@@ -110,7 +110,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡈⠑ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⡈⠔ ⧓ ⠆⡠⡈⠘ Ξ ⠆⡠⡈⠡
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⡈⠡ ⧑ 
+ AXIOM ¡ ⠆⡠⡈⠡ ⧑ ⠆⡠⠤⠑
 
  TASTENCODE ⠆⡠⡈⠨ ALTGR
  TASTENCODE ⠆⡠⡈⡁ SHIFT
@@ -136,66 +136,62 @@ MUTTERWABEN-KATEGORIE ⠆⡠⡈⠑ STARTWABE
  EINHEIT ⠆⡠⡄⢄ ± NI-INJEKTOR
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⡈⠡ ⦳ 
+ AXIOM ¡ ⠆⡠⡈⠡ ⦳ ⠆⡠⠤⠑
 
 ###====================================|====================================###
 
 MUTTERWABEN-KATEGORIE ⠆⡠⠤⠅ BAUWABE 
 
- PROGRAMM #
+ PROGRAMM ⠆⡠⠤⠉
 
- WABEN-ID # BA
+ WABEN-ID ⠆⡠⠤⠊ BA
 
- BION-NR # 
+ BION-NR ⠆⡠⠤⠌ 
 
- BION-ID # 
+ BION-ID ⠆⡠⠤⠑ 
 
- BSK # 
+ BSK ⠆⡠⠤⠒ NIMKHTSTBA-INJEKTOR
 
- BION # 
+ BION ⠆⡠⠤⠔ NI011MK011HT022ST022
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠤⠊ ⧓ ⠆⡠⠤⠌ Ξ ⠆⡠⠤⠑
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ 
+ AXIOM ¡ ⠆⡠⠤⠑ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⡄⢄ ⍠ ⠆⡠⠤⠘
 
  # EINHEIT | RAM
- EINHEIT # 
+ EINHEIT ⠆⡠⠤⠘ ± NI-INJEKTOR
 
-TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠤⠢ COMBOLINKWABE
 
  # LINK KOMPONENTE | MASTERKERNWABE 
- LINK # 
- LINK #
- LINK #
+ LINK ⠆⡠⠤⠡ FEMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ ⑅ ⧑ ⍠
- AXIOM ¡
- AXIOM ¡
+ AXIOM ¡ ⠆⡠⠤⠡ ⑅ ⠆⡠⢁⠑ ⧑ ⠆⡠⡈⣀ ⧑ ⠆⡠⡂⠔ ⧑ ⠆⡠⠰⠨ ⧑ ⠆⡠⠨⡐ ⧑ ⠆⡠⠤⠨ ⍠ ⠆⡠⠢⠰
 
  # AXIOM | RAM 
- EINHEIT #
+ EINHEIT ⠆⡠⠢⠰ Ø: <AKTUALISIEREN> :(<NR>)—Ø FE-TRAGEND-RAM-RAUS-INJEKTOR 
 
  # AXIOM | NAME SETZEN  
- PRÄFIX #
+ PRÄFIX ⠆⡠⠢⡁ NI-INJEKTOR-RAM-REIN-TRAGEND
 
  # AXIOM | COMBINIERE  
- AXIOM ¡ # ⧓ # ⧓ # ⧓ Ξ 
+ AXIOM ¡ ⠆⡠⠤⠘ ⧓ ⠆⡠⠢⠰ Ξ ⠆⡠⠢⡄
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡠⠢⡄ ⥓ ⠆⡠⠢⡁ ⍠ #
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT #
+ EINHEIT ⠆⡠⠢⡂ ± Ø: <AKTUALISIEREN> :(<NR>)—Ø NI-INJEKTOR-RAM-REIN-TRAGEND
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡠⠤⠑ ⦳ #
 
-
+###====================================|====================================###
 
 
 

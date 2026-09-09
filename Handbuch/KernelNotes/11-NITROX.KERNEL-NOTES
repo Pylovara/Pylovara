@@ -193,9 +193,45 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠤⠢ COMBOLINKWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE # ENDWABE 
 
+ PROGRAMM # INJEKTOR
 
+ WABEN-ID # ED
 
+ BION-NR # 033
+
+ BION-ID # ED033
+
+ BSK # NIMKHTSTBAED-INJEKTOR 
+
+ BION # NI011MK011HT022ST022BA048ED033
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGESCHLUSS
+ AXIOM ¡ # ͼ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+
+ EINHEIT # 
+
+TOCHTERWABEN-KATEGORIE # AUSFÜHRUNGSWABE
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX #
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍠ # 
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡  ⦱ 
+
+###====================================|====================================###
 
 
 

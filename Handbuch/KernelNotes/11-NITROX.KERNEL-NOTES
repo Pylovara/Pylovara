@@ -325,13 +325,13 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠢⠑ BAUWABE
 
  WABEN-ID ⠆⡠⠢⠔ BA
 
- BION-NR ⠆⡠⠢⠘
+ BION-NR ⠆⡠⠢⠘ 051
 
- BION-ID ⠆⡠⠢⠡
+ BION-ID ⠆⡠⠢⠡ BA051
 
- BSK ⠆⡠⠢⠤
+ BSK ⠆⡠⠢⠤ NIMKHTSTBA-EXTRAKTOR
 
- BION ⠆⡠⠢⠨
+ BION ⠆⡠⠢⠨ NI011MK011HT023ST023BA051
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⠢⠔ ⧓ ⠆⡠⠢⠘ Ξ ⠆⡠⠢⠡
@@ -350,25 +350,25 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠡⡂ COMBOLINKWABE
  LINK ⠆⡠⠡⡄ FEMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ ⠆⡠⠡⡄ ⑅ ⠆⡠⢁⠑ ⧑ # ⧑ # ⧑ # ⧑ # ⧑ # ⍠ #
+ AXIOM ¡ ⠆⡠⠡⡄ ⑅ ⠆⡠⢁⠑ ⧑ ⠆⡠⡈⡐ ⧑ ⠆⡠⡄⠰ ⧑ ⠆⡠⠡⢄ ⧑ ⠆⡠⠘⢈ ⧑ ⠆⡠⠘⡁ ⍠ ⠆⡠⠔⣀
 
  # AXIOM | RAM 
- EINHEIT #
+ EINHEIT ⠆⡠⠔⣀ Ø—(<NR>): <SPEICHER> :Ø FE-FÜHREND-RAM-RAUS
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # NI-INJEKTOR-RAM-REIN-FÜHREND
+ PRÄFIX ⠆⡠⠘⠃ NI-INJEKTOR-RAM-REIN-FÜHREND
 
  # AXIOM | COMBINIERE  
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠡⡁ ⧓ ⠆⡠⠔⣀ Ξ ⠆⡠⠘⠅
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡠⠘⠅ ⥓ ⠆⡠⠘⠃ ⍠ ⠆⡠⠔⠊
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # 
+ EINHEIT ⠆⡠⠔⠊ Ø—(<NR>): <SPEICHER> :Ø NI-INJEKTOR-RAM-REIN-FÜHREND
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡠⠢⠡ ⦳ #
 
 ###====================================|====================================###
 

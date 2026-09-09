@@ -90,7 +90,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠰⢈ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⡄⠤ ⧓ ⠆⡠⡄⠨ Ξ ⠆⡠⡄⠰
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⡄⠰ ⧑ 
+ AXIOM ¡ ⠆⡠⡄⠰ ⧑ ⠆⡠⠡⢄
 
  TASTENCODE ⠆⡠⡄⡈ ALTGR
  TASTENCODE ⠆⡠⡄⡐ SHIFT
@@ -106,9 +106,9 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠰⢈ STARTWABE
  SYMBOLE ⠆⡠⡁⡐ :
  SYMBOLE ⠆⡠⡁⢁ —
 
- PRÄFIX ⠆⡠⡂⣀ FE-FÜHREND-START
- PRÄFIX ⠆⡠⡁⠰ FE-FÜHREND-BIND
- PRÄFIX ⠆⡠⡁⡂ FE-FÜHREND-ENDE
+ PRÄFIX ⠆⡠⡂⣀ FE-FÜHREND-RAM-SPEICHER
+ PRÄFIX ⠆⡠⡁⠰ FE-FÜHREND-RAM-BIND
+ PRÄFIX ⠆⡠⡁⡂ FE-FÜHREND-RAM-RAUS
 
  # PRODUKT
  AXIOM ¡ ⠆⡠⡄⡈ ⦻ ⠆⡠⡄⡐ ⦻ ⠆⡠⡂⢂ Ξ ⠆⡠⡂⠑
@@ -135,49 +135,45 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠰⢈ STARTWABE
  AXIOM ¡ ⠆⡠⡁⠢ ⥗ ⠆⡠⡁⡂ ⍠ ⠆⡠⡁⠨
 
  # EINHEIT | RAM
- EINHEIT ⠆⡠⡄⠅ Ø—( FE-FÜHREND-START
- EINHEIT ⠆⡠⡁⠤ ): FE-FÜHREND-BIND
- EINHEIT ⠆⡠⡁⠨ :Ø FE-FÜHREND-ENDE
+ EINHEIT ⠆⡠⡄⠅ Ø—( FE-FÜHREND-RAM-SPEICHER
+ EINHEIT ⠆⡠⡁⠤ ): FE-FÜHREND-RAM-BIND
+ EINHEIT ⠆⡠⡁⠨ :Ø FE-FÜHREND-RAM-RAUS
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⡄⠰ ⦳ 
+ AXIOM ¡ ⠆⡠⡄⠰ ⦳ ⠆⡠⠡⢄
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE ⠆⡠⠰⢐ BAUWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⠡⡈ BAUWABE 
 
- PROGRAMM #
+ PROGRAMM ⠆⡠⠡⡐ FÜHREND
 
- WABEN-ID # BA
+ WABEN-ID ⠆⡠⠡⢁ BA
 
- BION-NR # 
+ BION-NR ⠆⡠⠡⢂ 049
 
- BION-ID # 
+ BION-ID ⠆⡠⠡⢄ BA049
 
- BSK # 
+ BSK ⠆⡠⠡⢈ FEMKHTSTBA-FÜHREND
 
- BION # 
+ BION ⠆⡠⠡⢐ FE012MK012HT024ST024BA049
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ 
+ AXIOM ¡ ⠆⡠⠡⢁ ⧓ ⠆⡠⠡⢂ Ξ ⠆⡠⠡⢄
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ 
+ AXIOM ¡ ⠆⡠⠡⢄ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⡄⠅ ⍠ ⠆⡠⠡⢠
+ AXIOM ¡ ⠆⡠⡁⠤ ⍠ ⠆⡠⠡⣀
+ AXIOM ¡ ⠆⡠⡁⠨ ⍠ ⠆⡠⠡⠅
 
  # EINHEIT | RAM
- EINHEIT # 
+ EINHEIT ⠆⡠⠡⢠ Ø—( FE-FÜHREND-RAM-SPEICHER
+ EINHEIT ⠆⡠⠡⣀ ): FE-FÜHREND-RAM-BIND
+ EINHEIT ⠆⡠⠡⠅ :Ø FE-FÜHREND-RAM-RAUS
 
-TOCHTERWABEN-KATEGORIE # 
-
-
-
-
-
-
-
-
+TOCHTERWABEN-KATEGORIE ⠆⡠⠡⠉ 
 
 
 

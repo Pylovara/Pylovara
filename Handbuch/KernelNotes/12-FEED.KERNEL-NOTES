@@ -373,7 +373,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠨⡁ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⠨⡄ ⧓ ⠆⡠⠨⡈ Ξ ⠆⡠⠨⡐
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⠨⡐ ⧑ 
+ AXIOM ¡ ⠆⡠⠨⡐ ⧑ ⠆⡠⠤⠨
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⡠⠨⠤ ⍠ ⠆⡠⠨⠰
@@ -426,59 +426,56 @@ KINDERWABEN-KATEGORIE ⠆⡠⠨⠅ SYSTEMWABE
  EINHEIT ⠆⡠⠨⠑ Ø: <AKTUALISIEREN> :(<NR> FE-TRAGEND-RAM-BIND 
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⠨⡐ ⦳ #
+ AXIOM ¡ ⠆⡠⠨⡐ ⦳ ⠆⡠⠤⠨
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE ENDWABE
+MUTTERWABEN-KATEGORIE ⠆⡠⠨⠒ ENDWABE
 
- PROGRAMM 
+ PROGRAMM ⠆⡠⠨⠔ TRAGEND
 
- WABEN-ID  ED
+ WABEN-ID ⠆⡠⠨⠘ ED
 
- BION-NR  
+ BION-NR ⠆⡠⠨⠡ 032
 
- BION-ID  
+ BION-ID ⠆⡠⠤⠨ ED032 
 
- BSK 
+ BSK ⠆⡠⠤⠰ FEMKHTSTBABAED-TRAGEND
 
- BION 
+ BION ⠆⡠⠤⡁ FE012MK012HT025ST025BA046BA047ED032
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⠨⠘ ⧓ ⠆⡠⠨⠡ Ξ ⠆⡠⠤⠨ 
  # BION-ID FOLGESCHLUSS
- AXIOM ¡  ͼ 
+ AXIOM ¡ ⠆⡠⠤⠨ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⍠
- AXIOM ¡ ⍠
- AXIOM ¡ ⍠
+ AXIOM ¡ ⠆⡠⠨⠑ ⍠ ⠆⡠⠤⡂
+ AXIOM ¡ ⠆⡠⡂⠅ ⍠ ⠆⡠⠤⡄
 
- EINHEIT 
- EINHEIT 
- EINHEIT 
+ EINHEIT ⠆⡠⠤⡂ Ø: <AKTUALISIEREN> :(<NR> FE-TRAGEND-RAM-BIND
+ EINHEIT ⠆⡠⠤⡄ )—Ø FE-TRAGEND-RAM-RAUS
 
-TOCHTERWABEN-KATEGORIE AUSFÜHRUNGSLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠤⢄ AUSFÜHRUNGSLINKWABE
 
  # PROZESS LINK
- LINKPROZESS # 
-
- # AXIOM | PROZESSLINK
- AXIOM ¡ # ⑅ # ⧑ # ⍠ #  
- AXIOM ¡   
- AXIOM ¡   
+ LINKPROZESS ⠆⡠⠤⢈ NITROX | INJEKTOR 
+-------------------------------------------------
+ # AXIOM | VORBAU | PROZESSLINK
+ AXIOM ¡ ⠆⡠⠤⡂ ⧓ ⠆⡠⠤⡄ Ξ ⠆⡠⠤⡐
+ AXIOM ¡ ⠆⡠⠤⢈ ⑅ ⧑ ⠆⡠⠤⡐ ⍠ ⠆⡠⠤⢁  
 
  # NAME SETZEN  
- PRÄFIX # 
+ PRÄFIX ⠆⡠⠤⢂ FE-TRAGEND-RAM-RAUS-INJEKTOR
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡠⠤⡐ ⥓ ⠆⡠⠤⢂ ⍠ ⠆⡠⠤⢁
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT #
+ EINHEIT ⠆⡠⠤⢁ Ø: <AKTUALISIEREN> :(<NR>)—Ø FE-TRAGEND-RAM-RAUS-INJEKTOR 
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⑅ #(LINKPROZESS) 
+ AXIOM ¡ # ⑅ ⠆⡠⠤⢈ 
 
 
 

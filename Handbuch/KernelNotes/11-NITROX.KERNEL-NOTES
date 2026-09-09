@@ -289,7 +289,7 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⡄⢐ ⧓ ⠆⡠⡄⢠ Ξ ⠆⡠⡄⣀
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⡄⣀ ⧑ 
+ AXIOM ¡ ⠆⡠⡄⣀ ⧑ ⠆⡠⠢⠡
 
  TASTENCODE ⠆⡠⡈⠉ ALTGR
  TASTENCODE ⠆⡠⡈⠊ SHIFT
@@ -315,42 +315,42 @@ MUTTERWABEN-KATEGORIE  STARTWABE
  EINHEIT ⠆⡠⡄⠡ ÷ NI-EXTRAKTOR
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⡐⠡ ⦳ 
+ AXIOM ¡ ⠆⡠⡐⠡ ⦳ ⠆⡠⠢⠡
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # BAUWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⠢⠑ BAUWABE 
 
- PROGRAMM # EXTRAKTOR
+ PROGRAMM ⠆⡠⠢⠒ EXTRAKTOR
 
- WABEN-ID # BA
+ WABEN-ID ⠆⡠⠢⠔ BA
 
- BION-NR #
+ BION-NR ⠆⡠⠢⠘
 
- BION-ID #
+ BION-ID ⠆⡠⠢⠡
 
- BSK #
+ BSK ⠆⡠⠢⠤
 
- BION #
+ BION ⠆⡠⠢⠨
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠢⠔ ⧓ ⠆⡠⠢⠘ Ξ ⠆⡠⠢⠡
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡠⠢⠡ ⧑ #
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⡄⠡ ⍠ ⠆⡠⠡⡁
 
  # EINHEIT | RAM
- EINHEIT # ÷ NI-EXTRAKTOR
+ EINHEIT ⠆⡠⠡⡁ ÷ NI-EXTRAKTOR
 
-TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠡⡂ COMBOLINKWABE
 
  # LINK KOMPONENTE | MASTERKERNWABE 
- LINK # FEMK
+ LINK ⠆⡠⠡⡄ FEMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ # ⑅ ⠆⡠⢁⠑ ⧑ # ⧑ # ⧑ # ⧑ # ⧑ # ⍠ #
+ AXIOM ¡ ⠆⡠⠡⡄ ⑅ ⠆⡠⢁⠑ ⧑ # ⧑ # ⧑ # ⧑ # ⧑ # ⍠ #
 
  # AXIOM | RAM 
  EINHEIT #
@@ -676,11 +676,17 @@ WABEN-KATEGORIE Ð ENDWABE
  FINISH ¡ ± [F—(<NR>)—FØ: <CACHE> :Ø] = NI-EXTRATOR-DATEN
 
 ###====================================|====================================###
-###=====================KOMPONENTEN-GENERAL-SCHALTUNG=======================###
- # MASTERWORT = 
- # BION-ID-PFAD  → 
- # BION-ID-PFAD  → 
- # BION-ID-VPFAD → 
- # BION-ID-RPFAD → 
+###===========================KOMPAKTE-WABEN-PFADE==========================###
+
+ PFAD-PROGRAMM   = 
+ PFAD-SYSTEM-ID  =  
+ PFAD-BION-ID    = 
+ PFAD-BION       = 
+
+ PFAD-PROGRAMM   = 
+ PFAD-SYSTEM-ID  = 
+ PFAD-BION-ID    = 
+ PFAD-BION       = 
+
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###
 ###================================ENDPUNKT=================================###

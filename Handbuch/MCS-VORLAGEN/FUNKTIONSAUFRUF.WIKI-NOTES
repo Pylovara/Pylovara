@@ -1,0 +1,23 @@
+# unfertig ... basic aufrufe für plus rechnungen als funktions aufruf 
+# so könnte aber eine alu schaltung in mcs aussehen 
+
+ ¢!
+ »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHERN EINGANG :~«
+  ¬· »—[¥: <A> + <B> :¥]—«
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): <B> :Ø
+
+         ± Ø: <A> :(1)—Ø
+         ± Ø: <B> :(2)—Ø
+     ¬· »—[×: (1) + (2) :×]—«
+         ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHERN AUSGANG :~«
+ !¢    
+
+
+
+ ¢!
+ 
+ »—[¥: 5 + 3 :¥]—«
+  ¬· »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION AUFRUF ~:«
+      ¬·¤ [×: <ERGEBNIS> :×] 
+ !¢

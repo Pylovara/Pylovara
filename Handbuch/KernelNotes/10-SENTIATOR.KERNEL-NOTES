@@ -6,6 +6,57 @@
  #    SPEZIALISIERTE FEHLER BEHANDLUNGSMETHODEN GEKOPPELT.                   #
 ###===============================STARTPUNKT================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡠⠒⡈ KOPFWABE
+
+ KOMPONENTE ⠆⡠⠒⡐ SENTIATOR
+
+ KOMPONENTEN-ID ⠆⡠⠒⢁ SE
+
+ BION-NR ⠆⡠⠒⢂ 010
+
+ BION-ID ⠆⡠⠒⢄ SE010
+
+ MASTER-ID ⠆⡠⠒⢈ MA046SU010
+
+ # AXIOM | KOMPONENTEN NAMEN
+ AXIOM ¡ ⠆⡠⠒⡐ ⏍ ⠆⡠⠒⡐
+ # AXIOM | KOMPONENTEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⠒⢁ ⧓ ⠆⡠⠒⢂ Ξ ⠆⡠⠒⢄
+ # BION-ID FOLGESCHALTUNG 
+ AXIOM ¡ ⠆⡠⠒⢄ ⧑ ⠆⡠⠔⠃
+ # AXIOM ¡ MASTER-ID : (MASTERKERNWABE MIT SUPERREGISTER MIT KOMPONENTE  ⠆⢄⡠⠡)
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE ⠆⡠⠒⢐ MASTERKERNWABE
+
+ WABEN-ID ⠆⡠⠒⢠ MK
+
+ BION-NR ⠆⡠⠒⣀ 010
+
+ BION-ID ⠆⡠⠔⠃ MK010
+
+ BSK ⠆⡠⠔⠅ SEMK
+
+ BION ⠆⡠⠔⠉ SE010MK010
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ ⠆⡠⠒⢠ ⧓ ⠆⡠⠒⣀ Ξ ⠆⡠⠔⠃
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ ⠆⡠⠔⠃ ⧑ 
+
+###====================================|====================================###
+
+ # WEITER 
+
+ NÄCHSTE BAUSTELLE .
+
+
+###====================================|====================================###
+
+!!!!!!!!!!!! alter bereich ↓↓↓↓
+
+
 WABEN-KATEGORIE Ð KOPFWABE
 
  KOMPONENTE ¡ SENTIATOR

@@ -134,3 +134,57 @@ nur mit dem unterschied das c nicht die primäre übersetzung ist
 sondern direkt assembly , damit ich nur eine baustelle habe die ich 
 im unter bau des tws systems beseitigen muss und nicht 2 .. 
 
+ VERMERK FÜR SPÄTER : 
+
+ DIE NAMENS TARGETS DER FUNKTIONEN WERDE ICH MENÜ TECHNISCH AUFBAUEN 
+
+ STATTS IST_GLEICH IST_GRÖẞER TEXT_VERKETTUNG 
+
+ WERDE ICH FÜR DIESE PUNKTE DANN IM MCD REGISTER EINE FEINE SEKTION 
+ MACHEN DAS MAN SAUBER SCHREIBEN KANN ... 
+
+ SAUBER SCHREIBEN IN PYLOVARA SYSTEM HEIẞT :
+
+ - GENERELL GROẞDRUCKBUCHSTABEN - WEIL KEINE SEMANTIK BENÖTIGT WIRD 
+ - PUNKT FÜR PUNKT BESTIMMUNG , ALSO :
+
+ ~: IST GLEICH :~
+ ~: IST KLEINER :~
+ ~: IST GRÖẞER :~
+ ~: TEXT KOPIEREN :~
+ ~: TEXT AUSSCHNEIDEN :~
+ ~: TEXT FARBE :~
+ ~: TEXT <WEITERES> :~
+
+ UM GLEICH VON VORNE HEREIN KLAR ZU MACHEN , DAS WIR HIER NICHT 
+ BEI JAVA SIND ODER ANDEREN FREAKS, DIE SO EINEN MIST PRODUZIEREN WIE 
+
+ Ist_kleiner ODER onWindowsChance ! 
+
+ ich muss von vorne herein klar machen das das mcd register nicht einer 
+ mode folgt sondern nach präzision . 
+
+ Quantität und Qualität vor Informatik gelehrten Bullshit und dazugehörigen 
+ verkomplizierungsdenken . 
+
+ ein befehl muss klar nach abfolge fungieren und auch kopf gerechtes logisches 
+ denken absolut wiederspiegeln . 
+
+ das mcd register wird echt ein dicker ( und zwar extrem dicker ) schinken 
+ aber er wird jeden befehl von jedem system , gnadenlos eindeutig und in abfolge 
+ beherbergen ... 
+
+ alleine nur für das mcd register werde ich bestimmt , nach einer lauffähigen 
+ stabilen erstversion des TWS, ein jahr daran rum schreiben müssen , bis auch 
+ wirklich die aller letzte sache möglich ist - den MCS lässt alles zu ! 
+
+ ich denke der gewünschte ziel faktor für step eins wären basis funktionen 
+ die von ctl starts stops etc bis hin zu text und speicher technisch alles 
+ abdecken .. 
+
+ hmmm ... 
+
+ ich sollte viellecht alles code technisch hier in die vorlagen hineinlegen 
+ damit jeder sehen kann wie sowas von statten geht und das sie auch optisch für 
+ neulinge , zu sehen sind ... damit sie besser verstehen können wie sie code 
+ technisch arbeiten können .. 

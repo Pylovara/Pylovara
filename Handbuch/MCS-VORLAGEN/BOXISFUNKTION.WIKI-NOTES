@@ -1,6 +1,17 @@
 
  ¢! 
  —[": BAUMODUS FUNKTION FÜR EINGABE MIT DIREKTER SHELL AUSGABE ÜBER ECHO :"]— 
- ¬· »—[¥: <EINGABE> :¥]—«««~: BAUMODUS ADD V1 :~«
-     ¬· »[': echo "<AUSGABE>" :']«
+ ¬· »—[¥: SHELL AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+     ¬· »—[¥: <SHELL> <AUSGABE> :¥]—«
+         ÷ Ø—(1): <SHELL> :Ø
+         ÷ Ø—(2): <AUSGABE> :Ø
+
+         ± Ø: <SHELL> :(1)—Ø
+     ¬· »—[~: (1) ++ BXMKHT-SHELL :~]—«
+         ± Ø—(3): (1) ++ BXMKHT-SHELL :Ø
+
+         ± Ø: (1) ++ BXMKHT-SHELL :(3)—Ø
+         ± Ø: <AUSGABE> :(2)—Ø
+     ¬· »—[×: (3) ++ (2) :×]—«
+         ¬·¤¤ »[': echo "<AUSGABE>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
  !¢

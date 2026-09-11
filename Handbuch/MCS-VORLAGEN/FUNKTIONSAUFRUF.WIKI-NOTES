@@ -3,13 +3,13 @@
 
  ¢!
  »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
-  ¬· »—[¥: <A> + <B> :¥]—«
+  ¬· »—[¥: <A> ++ <B> :¥]—«
       ÷ Ø—(1): <A> :Ø
       ÷ Ø—(2): <B> :Ø
 
          ± Ø: <A> :(1)—Ø
          ± Ø: <B> :(2)—Ø
-     ¬· »—[×: (1) + (2) :×]—«
+     ¬· »—[×: (1) ++ (2) :×]—«
          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
  !¢ 
 
@@ -17,7 +17,7 @@
 
  ¢!
  
- »—[¥: 5 + 3 :¥]—«
+ »—[¥: 5 ++ 3 :¥]—«
   ¬· »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION AUFRUF ~:«
       ¬·¤ [×: <ERGEBNIS> :×] 
  !¢

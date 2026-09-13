@@ -55,6 +55,12 @@ if [ -f "$TARGET_DIR/dwl" ]; then
     mkdir -p "$Vara_Dir"
     cp "$TARGET_DIR/dwl" "$BINARY_DEST"
     chmod +x "$BINARY_DEST"
+
+    # Installiere SDDM / Wayland Session Eintrag
+    if [ -f "/Pylovara/Setup/Pylovara-System/pylovara-desktop.session" ]; then
+        sudo cp /Pylovara/Setup/Pylovara-System/pylovara-desktop.session /usr/share/wayland-sessions/pylovara.desktop 2>/dev/null
+    fi
+
     echo "✅ [PYLO-OK] Pylovara Compositor erfolgreich kompiliert & abgelegt unter: $BINARY_DEST"
 else
     echo "❌ [PYLO-ERROR] Kompilierung fehlgeschlagen."

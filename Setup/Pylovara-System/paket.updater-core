@@ -6,8 +6,6 @@ Vara_Dir="/Pylovara/System/Shell/Vara"
 mkdir -p "$Vara_Dir"
 
 # Liste der Tools, die du in Vara brauchst
-# Beispiel: fzf, find, sed, etc.
-# find und sed sind normalerweise coreutils bzw. util-linux, nur fzf oft nicht installiert
 TOOLS=(
   fzf
   find
@@ -43,15 +41,16 @@ TOOLS=(
   tree
   wc
   xz
-  wich
-
+  which    
+  waybar
+  rofi
 )
 
-# Paketnamen (sofern abweichend) - Du kannst hier anpassen
+# Paketnamen (sofern abweichend)
 declare -A PKG_OVERRIDE=(
   [fzf]="fzf"
   [find]="findutils"
-  [sed]="gnu-sed"
+  [sed]="sed"
   [awk]="gawk"
   [basename]="coreutils"
   [bc]="bc"
@@ -83,6 +82,9 @@ declare -A PKG_OVERRIDE=(
   [tree]="tree"
   [wc]="coreutils"
   [xz]="xz"
+  [which]="which"
+  [waybar]="waybar"
+  [rofi]="rofi"
 )
 
 # Installiere Pakete falls nicht vorhanden
@@ -99,8 +101,8 @@ done
 PKGS_TO_INSTALL=()
 for tool in "${TOOLS[@]}"; do
   if [[ ${INSTALLED[$tool]} -eq 0 ]]; then
-    pkg="${PKG_OVERRIDE[$tool]}"
-    [[ -z "$pkg" ]] && pkg="$tool"
+    # Sichere Abfrage mit Default-Fallback (verhindert 'nounset'-Fehler)
+    pkg="${PKG_OVERRIDE[$tool]:-$tool}"
     PKGS_TO_INSTALL+=("$pkg")
   fi
 done
@@ -124,5 +126,6 @@ for tool in "${TOOLS[@]}"; do
     echo "Warnung: Tool '$tool' nicht gefunden oder nicht ausführbar."
   fi
 done
+
 
 echo "Fertig. Alle Tools sind unter $Vara_Dir mit .vara Endung verfügbar."

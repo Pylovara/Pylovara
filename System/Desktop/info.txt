@@ -65,6 +65,25 @@ config.rasi (Gesteuert über Pylovara-Pfade)
  create mode 120000 System/Shell/Vara/terminal.vara
  create mode 120000 System/Shell/Vara/waybar.vara
  = dazu kommende vara packete 
+ ! ich werde die vara packete so ansätzen das alle programme 
+   die auf dem reinen linux kernel laufen ( oder den zen )
+   packetmagaer übergreifend rein laden kann .. 
+
+   so könnt ich mir die zukünftige schnittstelle aufbauen 
+   die anbieter übergreifend zieht ... primär klar pacman arch 
+
+   sekundär dann cannonical , suse , fedora ... bauen alle 
+   auf klemmbausteine auf ... flat , snap , appimages .. usw .. 
+
+   die vara packete werden nur die intern wichtigsten daten beherbergen 
+   damit das setup unabhängig läuft .. 
+
+   der einzige faktor wo es dann nicht läuft sind die momente 
+   wo ich die vara packete update und dann die bugfixes gleich 
+   bearbeite ... das bekommt der enduser dann auch nicht mit 
+   und wird mit dem unötigen manualen änderungs käse nicht belastet . 
+
+   super tasten bleiben dann user sache oder configs unicate auch .. 
 
  create mode 100755 System/Startsequenz/desktop.autostart-core
  = sddm startet wie sie alle haben , von kde bis gnome bis sonnst was 

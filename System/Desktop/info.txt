@@ -40,22 +40,34 @@ config.rasi (Gesteuert über Pylovara-Pfade)
 
 [main 3dd6ef9] 2026-09-13 16:24:04
  18 files changed, 278 insertions(+), 14 deletions(-)
+
  create mode 100644 Control/supertasten.conf
+ = zukünftige super tasten 
+
  create mode 100755 Setup/Pylovara-System/desktop.install-core
+ = zukünftiges desktop install 
+
  create mode 160000 System/Desktop/Compositor/src
+ = arbeitsfläche , das latenzfreieste build überhaupt 
+
  create mode 100644 System/Desktop/Programmconfigs/rofi/config.rasi
+ = rofi.vara bekommt seine config seperat 
+
  create mode 100644 System/Desktop/Programmconfigs/waybar/config.jsonc
  create mode 100644 System/Desktop/Programmconfigs/waybar/style.css
+ = waybar.vara bekommt seine ebenfalls seperat 
+
  create mode 100644 System/Desktop/info.txt
- delete mode 100755 System/Module/Pylovara/Magic/GitPlaceHolder.Struktur
- delete mode 100755 System/Module/Pylovara/Micro/GitPlaceHolder.Struktur
- delete mode 100755 System/Module/Pylovara/Needle/GitPlaceHolder.Struktur
- delete mode 100755 System/Module/Pylovara/Node/GitPlaceHolder.Struktur
+ = diese blatt
+
  create mode 100755 System/Shell/Vara/dwl.vara
  create mode 120000 System/Shell/Vara/rofi.vara
  create mode 120000 System/Shell/Vara/terminal.vara
  create mode 120000 System/Shell/Vara/waybar.vara
+ = dazu kommende vara packete 
+
  create mode 100755 System/Startsequenz/desktop.autostart-core
+ = sddm startet wie sie alle haben , von kde bis gnome bis sonnst was 
 
 ------------------------------------------------------------------------
 

@@ -18,6 +18,13 @@
 
 # programm pyramiden node
 
+info : nodes sind die tragenden spitzen , die unterhalb die gesamte einstellung 
+       der dateien bündeln . 
+
+       unter der mechanik lassen sich dann dateitypen zusammen stellen als 
+       programm , das fein granular in jedem aspekt austauschbar sind .
+
+
 2-1      *.*-node
 2-1-1    *.*-vid
 2-1-2    *.*-sound
@@ -25,6 +32,12 @@
 2-1-4    *.*-
 
 # programm pyramiden nano
+
+info : unterhalb der nodes befinden sich optionale dateitypen träger 
+       die je nach beanspruchung, angehängt werden können.
+       in dem fall nach node , nano .
+
+       nano trägt den datenstrang für den aufbau der dateien selbst.
 
 2-2      *.*-nano
 2-2-1-1  *.*-mp4
@@ -38,12 +51,44 @@
 
 # programm pyramiden micro
 
-2-3      *.*-micro
+info : micros sind optionale träger die zwischen nano und needles existieren 
+       um vielleicht saound dateien aufzusplitten oder anders berechnet zu werden .
 
+2-3      *.*-micro
 
 # programm pyramiden needles
 
+info : needles tragen hauptsächlich die bindungen zur hardware um damit 
+       sauber in der kette den start bzw einspeißungs und aufnahme punkt 
+       der hardware , sauber in diedateietn aufzulisten und anzusteuern .
+
+       needles binden an hardware selbst .
+
 2-4      *.*-needles
+
+
+
+
+
+vermerk ... 
+
+ die reihenfolge selbst wird noch ausgearbeitet .. 
+
+ im grunde soll das dateitypen system die hardware suchen und binden 
+ wie auch später per proton versorgen . 
+
+ die anschlüsse dazu werden dann weiter gereicht , um die dateitypen 
+ daran zu binden die benutzt werden sollen ... 
+
+ dann sollten diese dateitypen die benutzt werden sollen dann 
+ wie in einer verteilungs config auf mcs basis , dann gebündel, syncronisiert 
+ werden etc .. 
+
+ danach soll der datensatz zur node gehen , wo sie granular als datenstrang 
+ zusammenhängen .. 
+
+ und diese werden dann durch man ( manager ) dateitypen dann in den core 
+ gespeißt, um das programm zu öffnen .. 
 
 
 ########################### ALTER BEREICH ##################################

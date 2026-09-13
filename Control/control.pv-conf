@@ -12,13 +12,6 @@ Hyprland_DIR="/Pylovara/System/Shell/HYPRLAND"
 MCS_DIR="/Pylovara/System/Kernel/MCS"
 
 ##############################################################################
-### HYPRLAND DOTFILES OPTIONAL 
-
-## Super + M = Menü Ansicht 
-# source "Hyprland_DIR/navigation.sh"
-
-
-##############################################################################
 ### Main Directory
 
 export PV_DIR="/Pylovara/"
@@ -37,33 +30,29 @@ alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 ##############################################################################
 ### Master-Input - control.pv-conf
 source "$MASTER_DIR/shell.conf"
-source "$MASTER_DIR/navigator.conf"
-source "$MASTER_DIR/callme.conf"
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
 parse_conf "$MASTER_DIR/datatypes.conf"
 
 ##############################################################################
-### SYSTEMALIASE Sektion | wird bald ausgelagert
+### SYSTEMALIASE Sektion
 
+to() {
+    source "$Shell_DIR/to.to-dna"
+    to "$@"
+}
 helpme() {
     source "$Shell_DIR/helpme.cut-dna" "$@"
-}
-helpmex() {
-    source "$Shell_DIR/helpmex.deluxe-dna" "$@"
 }
 kernel() {
     source "$Shell_DIR/kernel.cut-dna" "$@"
 }
-kernelx() {
-    source "$Shell_DIR/kernelx.deluxe-dna" "$@"
+waben() {
+    source "$Shell_DIR/waben.cut-dna" "$@"
 }
-wabe() {
-    source "$Shell_DIR/kernel.cut-dna" "$@"
-}
-dev() {
-    source "$Shell_DIR/dev.cut-dna" "$@"
+mcs() {
+    source "$Shell_DIR/mcs.cut-dna" "$@"
 }
 info() {
     source "$Shell_DIR/info.kernel-dna" "$@"
@@ -71,6 +60,15 @@ info() {
 p() {
     source "$Shell_DIR/p.tree-dna" "$@"
 }
+callme() {
+    source "$Shell_DIR/callme.basename-dna"
+    callme "$@"
+}
+
+##############################################################################
+# DEV BEREICH :
+alias pylokate='kate --new-instance --config ~/Pylovara/Arbeitsfläche/arbeitsconfigs/katescript.sh'
+
 ### Kommentar: pylo bugt 2025-Juni-16
 pylo() {
     source "$Shell_DIR/pylo.tool-dna" "$@"
@@ -89,7 +87,3 @@ function record() {
     script -q -t 2>"/tmp/terminal-${TIMESTAMP}.timing" "$FILENAME"
     echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
 }
-
-##############################################################################
-# DEV BEREICH :
-alias pylokate='kate --new-instance --config ~/Pylovara/Arbeitsfläche/arbeitsconfigs/katescript.sh'

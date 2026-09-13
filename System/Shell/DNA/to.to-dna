@@ -29,7 +29,7 @@ to() {
   fi
 
   # Verzeichnis wechseln, bei Fehler abbrechen
-  if ! cd "$target_dir"; then
+  if ! builtin cd "$target_dir"; then
     echo "to: Verzeichnis nicht gefunden: $target_dir" >&2
     return 1
   fi

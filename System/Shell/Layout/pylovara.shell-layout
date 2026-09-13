@@ -1,7 +1,7 @@
 #!/bin/bash
 # pylovara.shell-layout – Standart Pylovara Brand Layout
 
-Vara_Dir="/Pylovara/System/Shell/Vara --color=auto --exclude-"
+Vara_Dir="/Pylovara/System/Shell/Vara"
 
 # Farbcodes definieren ANSI-Farbcodes im 256-Farben-Modus
 export PV_COLOR_RESET='\e[0m'

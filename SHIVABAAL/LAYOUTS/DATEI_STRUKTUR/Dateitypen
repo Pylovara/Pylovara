@@ -91,6 +91,27 @@ vermerk ...
  gespeißt, um das programm zu öffnen .. 
 
 
+
+ das wäre dann naturell gesehen auch die anschluss möglichkeit von drittanbieter 
+ dateitypen, die durch deren genutzten compiler dann lauffähig werden .. 
+
+ ein emuliertes system , egal was wäre dann 
+
+
+ MUSTERNAME.<notiz>-core
+
+ SPIELEXE.<notiz>-node 
+ compiler.<notiz>-nano 
+ spieldateien.<notiz>-micro
+ hardware.<notiz>-needles 
+
+ darüber können dann granular alle dateitypen wie im wurzelverzeichnis 
+ angehangt werden und in mcs geschriebenen transaktionsrahmen verbunden werden .
+
+ also emulation von haus aus .... kein fremdkörper 
+
+
+
 ########################### ALTER BEREICH ##################################
 ## VERERBUNGSPRINZIP :
 

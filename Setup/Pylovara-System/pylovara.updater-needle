@@ -1,5 +1,5 @@
 #!/bin/bash
-# updater 0.3 version
+# updater 0.4 version
 
 # 💡 Pylovara Updater (Reinstaller)
 # Führt einen kompletten Update-Vorgang durch:
@@ -19,6 +19,7 @@ echo "🛠️  alles außer der wrapper wird rekrusiv neuinstaliert"
 # 1. Root-Prüfung
 if [ "$EUID" -ne 0 ]; then
   echo "❌ Dieses Skript muss mit sudo ausgeführt werden! = sudo ./pylovara.updater-needle"
+  echo "❌ Du kannst aber auch das Repo Manual Ziehen und im Gesamten einmal austauschen oder drüber kopieren"
   exit 1
 fi
 

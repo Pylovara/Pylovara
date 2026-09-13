@@ -19,8 +19,7 @@ export PROMPT_COMMAND='
     PV_CURRENT_DIR="${PWD/#$HOME/\~}"
     export PS1="
 $PV_COLOR_SYMBOL—[\"$PV_COLOR_PV: ᴹᶜˢ Pʏʟᴏᴠᴀʀᴀ ˢʰᵉˡˡ :$PV_COLOR_SYMBOL\"]—
-$PV_COLOR_SYMBOL¬· —[\"$PV_COLOR_USER: SYSTEM :$PV_COLOR_SYMBOL\"]—
-$PV_COLOR_SYMBOL   ¬·¤ [\"$PV_COLOR_USER: $PV_KERNEL :$PV_COLOR_SYMBOL\"]
+$PV_COLOR_SYMBOL¬· [\"$PV_COLOR_USER: $PV_KERNEL :$PV_COLOR_SYMBOL\"]
 $PV_COLOR_SYMBOL¬· —[\$: $PV_COLOR_PATH\$PV_CURRENT_DIR $PV_COLOR_SYMBOL:\$]—
 $PV_COLOR_SYMBOL   ¬· [¥: $PV_COLOR_RESET"
 '
@@ -30,9 +29,8 @@ if [[ -r /usr/share/bash-completion/bash_completion ]]; then
 fi
 
 ###############################################################################
-# —[": PYLOVARA-SHELL :"]—
-# ¬· —[": SYSTEM :"]—
-#    ¬·¤ [": <kernelversion> :"]
+# —[": ᴹᶜˢ Pʏʟᴏᴠᴀʀᴀ ˢʰᵉˡˡ :"]—
+# ¬· [": <kernelversion> :"]
 # ¬· —[$: <VERZEICHNIS> :$]—
 #    ¬· [¥: <EINGABE> :¥]
 ###############################################################################

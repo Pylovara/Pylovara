@@ -11,6 +11,9 @@ export PV_COLOR_PV='\[\e[38;5;208m\]'      # Pylovara Brand
 export PV_COLOR_PATH='\[\e[38;5;202m\]'    # Pfad
 export PV_COLOR_SYMBOL='\[\e[38;5;231m\]'  # Symbole
 
+# Kernel-Version einmalig beim Laden bestimmen
+PV_KERNEL="$(uname -r)"
+
 # Dynamisches Prompt über PROMPT_COMMAND
 export PROMPT_COMMAND='
     PV_CURRENT_DIR="${PWD/#$HOME/\~}"
@@ -30,15 +33,11 @@ if [[ -r /usr/share/bash-completion/bash_completion ]]; then
 fi
 ###############################################################################
 # —[": PYLOVARA-SHELL :"]—
-# |
-# ¬· —[": SYSTEMUSER :"]—
-# |  |
+# ¬· —[": SYSTEM :"]—
 # |  ¬·¤ [": <USER> <NAME> :"]
+# |  ¬·¤ [": <kernelversion> :"]
 # |
 # ¬· —[$: <VERZEICHNIS> :$]—
 #    |
 #    ¬· [¥: <EINGABE> :¥]
-#
-# das :¥] lässt sich auch dazu schreiben ;-)
-#
 ###############################################################################

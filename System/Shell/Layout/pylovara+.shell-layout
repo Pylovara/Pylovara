@@ -39,3 +39,23 @@ $PV_COLOR_SYMBOL   ¬· [¥: $PV_COLOR_RESET"
 if [[ -r /usr/share/bash-completion/bash_completion ]]; then
   . /usr/share/bash-completion/bash_completion
 fi
+
+###############################################################################
+# —[": PYLOVARA-SHELL :"]—
+# ¬· —[": SYSTEM :"]—
+# |  ¬·¤ [": <USER> <NAME> :"]
+# |  ¬·¤ [": <kernelversion> :"]
+# |
+# ¬· —[": LEXIKONS :"]—
+# |  ¬·¤ [": kernel lex | waben lex | mcs lex :"]
+# |
+# ¬· —[": WERKZEUGE :"]—
+# |  ¬·¤ [": to | p | pylo | callme :"]
+# |
+# ¬· —[": BETA-TEST :"]—
+# |  ¬·¤ [": pylo-desktop :"]
+# |
+# ¬· —[$: <VERZEICHNIS> :$]—
+#    |
+#    ¬· [¥: <EINGABE> :¥]
+###############################################################################

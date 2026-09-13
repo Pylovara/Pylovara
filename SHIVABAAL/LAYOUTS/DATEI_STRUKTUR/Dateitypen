@@ -1,3 +1,52 @@
+############################## VERERBUNGSPRINZIP ############################## 
+
+ IM AUFBAU 
+
+# kernel intern
+
+0       *.*-tws
+0       *.*-kernel
+
+# programm pyramiden hauptdateien
+
+1        *.*-core
+2        *.*-man
+2-1      *.*-node 
+2-2      *.*-nano
+2-3      *.*-micro 
+2-4      *.*-needles
+
+# programm pyramiden node
+
+2-1      *.*-node
+2-1-1    *.*-vid
+2-1-2    *.*-sound
+2-1-3    *.*-input
+2-1-4    *.*-
+
+# programm pyramiden nano
+
+2-2      *.*-nano
+2-2-1-1  *.*-mp4
+2-2-1-2  *.*-mpeg
+
+2-2-1-3  *.*-mp3
+2-2-1-4  *.*-wave
+
+2-2-1-5  *.*-usb
+2-2-1-6  *.*-bluetooth
+
+# programm pyramiden micro
+
+2-3      *.*-micro
+
+
+# programm pyramiden needles
+
+2-4      *.*-needles
+
+
+########################### ALTER BEREICH ##################################
 ## VERERBUNGSPRINZIP :
 
  die Kettenbildungenmechanismen sind bei einem Veerbungsprinzip

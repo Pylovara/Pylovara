@@ -1,0 +1,20 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["clock", "custom/pylo"],
+    "modules-right": ["cpu", "memory"],
+    "clock": {
+        "format": "🕒 {:%H:%M:%S | %d.%m.%Y}"
+    },
+    "custom/pylo": {
+        "format": " ᴾʸˡᵒᵛᵃʳᵃ ⠆⢄⡠ ",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "⚙️ {usage}%"
+    },
+    "memory": {
+        "format": "🧠 {percentage}%"
+    }
+}

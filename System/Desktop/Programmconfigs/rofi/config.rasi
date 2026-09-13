@@ -1,0 +1,12 @@
+configuration {
+    modi: "drun,run";
+    font: "monospace 12";
+    show-icons: false;
+    terminal: "/Pylovara/System/Shell/Vara/terminal.vara";
+}
+
+* {
+    background-color: #1a1a24;
+    text-color: #ffffff;
+    border-color: #ff6600;
+}

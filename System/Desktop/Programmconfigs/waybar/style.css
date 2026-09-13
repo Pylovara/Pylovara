@@ -1,0 +1,18 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #1a1a24;
+    color: #ffffff;
+    border-bottom: 2px solid #ff6600;
+}
+
+#clock, #cpu, #memory, #custom-pylo {
+    padding: 0 12px;
+    color: #ff6600;
+}

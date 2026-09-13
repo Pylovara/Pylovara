@@ -1,0 +1,68 @@
+###### Compositor aufbau 
+
+ da der dwl strang der latenzfreiheste ist , wird auf grundlage 
+ dessen aufgebaut . 
+
+ kann beides ... x11/wayland ... scheiß egal ... 
+
+ grundskizze : 
+
+ COMPOSITOR NAME = PYLOVARA-COMPOSITOR
+ SUPERTASTEN = /Pylovara/Control/supertasten.conf
+
+###### Programme | frische vara packete :
+
+dwl.vara (Tiling Compositor)
+waybar.vara (Pylovara Statusleiste)
+rofi.vara (Dein App-Launcher / Menü)
+terminal.vara (Pylovara Terminal)
+
+! werden nicht bei sudo pacman -Sy aktualisiert sondern manual !
+
+
+###### Programmconfigs | waybar und rufi gesondert ! 
+
+~/.config/ sind nicht mehr gültig und werden in zukunft da abgerufen 
+wo sie hingehören :
+
+- Programmconfigs/waybar/
+config.jsonc (Pylovara-Uhrzeit, CPU/RAM, Waben-Branding)
+style.css (Dracula / Pylovara-Orange Design)
+
+- Programmconfigs/rofi/
+config.rasi (Gesteuert über Pylovara-Pfade)
+
+
+
+ compilierung : /Pylovara/Setup/Pylovara-System/desktop.install-core
+
+ Notiz : 
+
+ erstmal die daten durchlesen vernümpftig ... 
+ sobald ich den dwl vollständig durchleuchtet habe , dann punkt genaue 
+ änderungen einfügen .. 
+
+ auf dauer lass ich zwar hyprland install drinne für alle 
+
+ aber alternativ dann 3 zur auswahl : 
+
+ - Hyprland 
+ - SARBS
+ - PYLOVARA-COMPOSITOR 
+
+ den kann ich dann später bei tws start auch sauber von c zu mcs übertragen .. 
+ also keine doppelte arbeit , sondern nur einmalige vorarbeit .. 
+
+ ein sauberes arbeits tilling window auf modernem stand , das nahtlos auch 
+ als daddel kiste mit animations dekorationen dienen kann , ohne permanente 
+ desktop zerstörungen .. 
+
+ ich biete die änderungen einfach gleich mit an , warum den leuten mit 
+ manualitäten auf die eier gehen , wenns schneller vorgearbeitet ist . 
+
+ die vara und pylovara-compositor updates werden dann separat getriggert .. 
+ ich nutz zwar den pacman aber ich trigger in dafür anders an .. 
+
+ wenn ich das so mache habe ich 100% kontrolle darüber, ob ein desktop 
+ zusammelstürzt oder nicht ... ich hol mir von arch quasi die rechte 
+ einfach rüber .... doppel kontrolle .. viel besser ...

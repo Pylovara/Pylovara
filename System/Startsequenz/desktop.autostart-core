@@ -1,0 +1,30 @@
+#!/bin/bash
+# ==============================================================================
+# desktop.autostart-core – Pylovara Desktop System Startsequenz
+# ==============================================================================
+# Ort   : /Pylovara/System/Startsequenz/desktop.autostart-core
+# Zweck : Systemweiter Autostart beim Starten des Pylovara Compositors
+# ==============================================================================
+
+if [ -f "/Pylovara/Control/control.pv-conf" ]; then
+    source "/Pylovara/Control/control.pv-conf"
+fi
+
+WAYBAR_BIN="/Pylovara/System/Shell/Vara/waybar.vara"
+WAYBAR_CONF="/Pylovara/System/Desktop/Programmconfigs/waybar/config.jsonc"
+WAYBAR_CSS="/Pylovara/System/Desktop/Programmconfigs/waybar/style.css"
+TERMINAL_BIN="/Pylovara/System/Shell/Vara/terminal.vara"
+
+# Starte Pylovara Statusleiste (Waybar) mit isolierter Config
+if [ -x "$WAYBAR_BIN" ] && [ -f "$WAYBAR_CONF" ]; then
+    "$WAYBAR_BIN" -c "$WAYBAR_CONF" -s "$WAYBAR_CSS" &
+elif command -v waybar >/dev/null 2>&1; then
+    waybar &
+fi
+
+# Starte Pylovara Terminal beim Systemstart
+if [ -x "$TERMINAL_BIN" ]; then
+    "$TERMINAL_BIN" &
+elif command -v kitty >/dev/null 2>&1; then
+    kitty &
+fi

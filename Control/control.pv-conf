@@ -3,6 +3,9 @@
 ### Alle Conf Sourcen - Komplette Kontrolle
 ### Quelle ~> /Pylovara/Control/
 ##############################################################################
+### Main Directory
+export PV_DIR="/Pylovara/"
+
 ### BASIC CONTROL
 
 MASTER_DIR="/Pylovara/Control"
@@ -12,10 +15,10 @@ Hyprland_DIR="/Pylovara/System/Shell/HYPRLAND"
 MCS_DIR="/Pylovara/System/Kernel/MCS"
 
 ##############################################################################
-### Main Directory
-
-export PV_DIR="/Pylovara/"
-
+### Desktop aufbau | dev status 
+# PYLOVARA COMPOSITOR AUFBAU = /Pylovara/System/Shell/Vara/dwl.vara
+# terminal : pylo-desktop
+# NEU COMPILIERUNG = /Pylovara/Setup/Pylovara-System/desktop.install-core
 ##############################################################################
 ### Alle internen Bin-Pfade ollama
 
@@ -30,6 +33,8 @@ alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
 ##############################################################################
 ### Master-Input - control.pv-conf
 source "$MASTER_DIR/shell.conf"
+source "$MASTER_DIR/desktop.conf"
+source "$MASTER_DIR/supertasten.conf"
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
@@ -87,3 +92,21 @@ function record() {
     script -q -t 2>"/tmp/terminal-${TIMESTAMP}.timing" "$FILENAME"
     echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
 }
+
+pylo-desktop() {
+    local autostart="/Pylovara/System/Startsequenz/desktop.autostart-core"
+    local startup_arg=()
+    if [ $# -eq 0 ] && [ -x "$autostart" ]; then
+        startup_arg=(-s "$autostart")
+    fi
+
+    if [ -x "/Pylovara/System/Shell/Vara/dwl.vara" ]; then
+        /Pylovara/System/Shell/Vara/dwl.vara "${startup_arg[@]}" "$@"
+    elif [ -x "/Pylovara/System/Desktop/Compositor/src/dwl" ]; then
+        /Pylovara/System/Desktop/Compositor/src/dwl "${startup_arg[@]}" "$@"
+    else
+        echo "❌ Pylovara Desktop Compositor nicht gefunden."
+        echo "💡 Bitte führe den Installer aus: /Pylovara/Setup/Pylovara-System/desktop.install-core"
+    fi
+}
+

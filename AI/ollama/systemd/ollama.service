@@ -10,7 +10,7 @@ Environment=LD_LIBRARY_PATH=/Pylovara/AI/ollama/lib/ollama:$LD_LIBRARY_PATH
 Restart=on-failure
 
 # Her must you Use konto write 
-User=bandino
+User= <acc>
 
 [Install]
 WantedBy=multi-user.target

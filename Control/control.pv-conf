@@ -14,11 +14,6 @@ Hyprland_DIR="/Pylovara/System/Shell/HYPRLAND"
 MCS_DIR="/Pylovara/System/Kernel/MCS"
 
 ##############################################################################
-### Desktop aufbau | dev status 
-# PYLOVARA COMPOSITOR AUFBAU = /Pylovara/System/Shell/Vara/dwl.vara
-# terminal : pylo-desktop
-# NEU COMPILIERUNG = /Pylovara/Setup/Pylovara-System/desktop.install-core
-##############################################################################
 ### Alle internen Bin-Pfade ollama
 
 export PATH=/Pylovara/AI/ollama:$PATH
@@ -70,6 +65,8 @@ callme() {
 }
 
 ##############################################################################
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+##############################################################################
 # DEV BEREICH :
 alias pylokate='kate --new-instance --config ~/Pylovara/Arbeitsfläche/arbeitsconfigs/katescript.sh'
 
@@ -109,3 +106,8 @@ pylo-desktop() {
     fi
 }
 
+##############################################################################
+### Desktop aufbau | dev status 
+# PYLOVARA COMPOSITOR AUFBAU = /Pylovara/System/Shell/Vara/dwl.vara
+# terminal : pylo-desktop
+# NEU COMPILIERUNG = /Pylovara/Setup/Pylovara-System/desktop.install-core

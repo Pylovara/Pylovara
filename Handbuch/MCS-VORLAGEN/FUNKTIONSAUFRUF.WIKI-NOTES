@@ -1,9 +1,7 @@
-######################### FUNKTIONSAUFRUF
-
-
-
-
+### FUNKTIONSAUFRUF.WIKI-NOTES
+###############################################################################
 ### FUNKTION AUFBAU EINGANG AUSGANG
+
 ¢!
  »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
   ¬· »—[¥: <A> ++ <B> :¥]—«
@@ -15,6 +13,8 @@
      ¬· »—[×: (1) ++ (2) :×]—«
          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢ 
+
+---
 
 ¢!
  —[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
@@ -28,10 +28,7 @@
          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢
 
-
-
-#########################################################################
-
+###############################################################################
 ### FUNKTION AUFBAU AUFRUF 
 
 ¢!
@@ -41,12 +38,67 @@
       ¬·¤ [×: <ERGEBNIS> :×] 
 !¢
 
-#########################################################################
+---
 
+¢!
+ »—[¥: <PARAMETER-1> ++ <PARAMETER-2> :¥]—«
+  ¬· »—[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION AUFRUF :~«
+      ¬·¤ [×: <ERGEBNIS> :×]
+!¢
 
-# vermerk BAUMODUS : 
-
+###############################################################################
+### VERMERK BAUMODUS MCD BEFEHLE : 
 
    ~: BAUMODUS FUNKTION SPEICHER EINGANG :~
    ~: BAUMODUS FUNKTION SPEICHER AUSGANG :~ 
    ~: BAUMODUS FUNKTION SPEICHER AUFRUF :~
+
+###############################################################################
+### MÖGLICHE ERKLÄRUNG : 
+
+
+Jede Funktion hat DREI MCD-Anker:
+
+ 1. EINGANG – Beginn der Definition
+ 2. AUSGANG – Ende der Definition
+ 3. AUFRUF – Benutzung der Funktion
+
+-------------------------------------------------------------------------------
+
+ BEISPIEL :
+
+ 1. »—[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+
+ Markiert den Beginn einer Funktionsdefinition
+
+ NUTZUNG :
+
+ - Nur einmal pro Funktion
+ - Am Anfang der Funktion
+ - Immer bei der Definition
+
+-------------------------------------------------------------------------------
+
+ 2. »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ Markiert das Ende einer Funktionsdefinition
+
+ NUTZUNG :
+
+ - Nur einmal pro Funktion
+ - Am Ende der Funktion
+ - Immer bei der Definition
+
+-------------------------------------------------------------------------------
+
+ 3. »[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~« 
+
+ Markiert den Aufruf einer Funktion
+
+ NUTZUNG : 
+
+ - Jedes Mal beim Aufruf einer Funktion
+ - Immer wenn eine Funktion benutzt wird
+ - Im Code (Baumodus) oder in der Shell (Nutzer)
+
+###############################################################################

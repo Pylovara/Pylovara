@@ -15,7 +15,7 @@
       ↓   ↓
       ¬· »—[×: (1) ++ (2) :×]—«
           ↓
-          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+          ¬·¤¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢ 
 
 ---
@@ -29,7 +29,7 @@
          ± Ø: (1) :(1)—Ø
          ± Ø: (2) :(2)—Ø
      ¬· »—[×: <OPERATION> :×]—«
-         ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+         ¬·¤¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢
 
 ###############################################################################
@@ -39,7 +39,7 @@
  
  »—[×: 5 ++ 3 :×]—«
   ¬· »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION AUFRUF ~:«
-      ¬·¤ [×: <ERGEBNIS> :×] 
+      ¬·¤¤ [×: <ERGEBNIS> :×] 
 !¢
 
 ---
@@ -47,7 +47,7 @@
 ¢!
  »—[×: <PARAMETER-1> ++ <PARAMETER-2> :×]—«
   ¬· »—[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION AUFRUF :~«
-      ¬·¤ [×: <ERGEBNIS> :×]
+      ¬·¤¤ [×: <ERGEBNIS> :×]
 !¢
 
 ###############################################################################
@@ -109,37 +109,6 @@ Jede Funktion hat DREI MCD-Anker:
 
 NOTIZ : 
 
- Warscheins noch eine kleinere fehler korrektur 
- den die eingabe  
-
-   ¬· »—[¥: <A> ++ <B> :¥]—« # hier 
-      ÷ Ø—(1): <A> :Ø
-      ÷ Ø—(2): <B> :Ø 
-
-einspricht nicht der alu ... 
-
-  
-       ± Ø: <A> :(1)—Ø
-       ± Ø: <B> :(2)—Ø
-   ¬· »—[×: (1) ++ (2) :×]—«
-
- das obrige muss auch alu sein nicht eingabe .. 
-
- die alu wird im input durch rex gefüttert .. 
- im output durch ¤¤ zusatz ... status ¤ .. alu ¤¤ 
- ausgabe ... 
-
- ob das jetzt so relevant ist die kanäle zu splitten wäre 
- jetzt denk ich eine philosophische frage ... 
-
- aber so der datenweg ... gatter getreu ... 
-
-
-
-
-
-
-
 ¢!
  »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
   ¬· »—[×: <A> ++ <B> :×]—«
@@ -149,7 +118,7 @@ einspricht nicht der alu ...
          ± Ø: <A> :(1)—Ø
          ± Ø: <B> :(2)—Ø
      ¬· »—[×: (1) ++ (2) :×]—«
-         ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+         ¬·¤¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢ 
 
 
@@ -179,9 +148,17 @@ einspricht nicht der alu ...
      hier :
 
          ¬· »—[
-             ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ¬·¤¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
       
       wird das ergebnis ausgespuckt mit dem rex operator ¤ oder besser wäre ¤¤ 
-      da ¤ nur status meldungen macht und ¤¤ alu auswertungen .. 
 
-      
+NOTIZ 2 : 
+
+ Wenn ich später das in stein meisel , muss ich klar machen das 
+ der rex nicht irgendwo benutzt wird , sondern immer in der pipeline 
+
+ zeile versetzt gleich error , weil kein datenkanal .. 
+
+ text zeilen und spalten müssen original getreu im system verankert sein . 
+
+ eine dahingewichste c code zeile 5.000 scheiße , wird hier nicht aufgebaut 

@@ -4,21 +4,25 @@
 
 ¢!
  »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
-  ¬· »—[¥: <A> ++ <B> :¥]—«
+  ↓
+  ¬· »—[×: <A> ++ <B> :×]—«
+      ↓
       ÷ Ø—(1): <A> :Ø
       ÷ Ø—(2): <B> :Ø
-
-         ± Ø: <A> :(1)—Ø
-         ± Ø: <B> :(2)—Ø
-     ¬· »—[×: (1) ++ (2) :×]—«
-         ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+      ↓
+      ↓   ± Ø: <A> :(1)—Ø
+      ↓   ± Ø: <B> :(2)—Ø
+      ↓   ↓
+      ¬· »—[×: (1) ++ (2) :×]—«
+          ↓
+          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢ 
 
 ---
 
 ¢!
  —[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
- ¬· »—[¥: <PARAMETER> :¥]—«
+ ¬· »—[×: <PARAMETER> :×]—«
      ÷ Ø—(1): <PARAMETER-1> :Ø
      ÷ Ø—(2): <PARAMETER-2> :Ø
 
@@ -33,7 +37,7 @@
 
 ¢!
  
- »—[¥: 5 ++ 3 :¥]—«
+ »—[×: 5 ++ 3 :×]—«
   ¬· »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION AUFRUF ~:«
       ¬·¤ [×: <ERGEBNIS> :×] 
 !¢
@@ -41,7 +45,7 @@
 ---
 
 ¢!
- »—[¥: <PARAMETER-1> ++ <PARAMETER-2> :¥]—«
+ »—[×: <PARAMETER-1> ++ <PARAMETER-2> :×]—«
   ¬· »—[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION AUFRUF :~«
       ¬·¤ [×: <ERGEBNIS> :×]
 !¢
@@ -102,3 +106,82 @@ Jede Funktion hat DREI MCD-Anker:
  - Im Code (Baumodus) oder in der Shell (Nutzer)
 
 ###############################################################################
+
+NOTIZ : 
+
+ Warscheins noch eine kleinere fehler korrektur 
+ den die eingabe  
+
+   ¬· »—[¥: <A> ++ <B> :¥]—« # hier 
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): <B> :Ø 
+
+einspricht nicht der alu ... 
+
+  
+       ± Ø: <A> :(1)—Ø
+       ± Ø: <B> :(2)—Ø
+   ¬· »—[×: (1) ++ (2) :×]—«
+
+ das obrige muss auch alu sein nicht eingabe .. 
+
+ die alu wird im input durch rex gefüttert .. 
+ im output durch ¤¤ zusatz ... status ¤ .. alu ¤¤ 
+ ausgabe ... 
+
+ ob das jetzt so relevant ist die kanäle zu splitten wäre 
+ jetzt denk ich eine philosophische frage ... 
+
+ aber so der datenweg ... gatter getreu ... 
+
+
+
+
+
+
+
+¢!
+ »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ¬· »—[×: <A> ++ <B> :×]—«
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): <B> :Ø
+
+         ± Ø: <A> :(1)—Ø
+         ± Ø: <B> :(2)—Ø
+     ¬· »—[×: (1) ++ (2) :×]—«
+         ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢ 
+
+
+ hier :
+ ¬· »—[×: <A> ++ <B> :×]—« 
+
+ bekommt die alu die rechen operation und die kennungen vorgeworfen , noch inhaltslos 
+ wenn sie nicht als funktion definiert sind ... 
+
+
+ hier : 
+      —[ 
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): <B> :Ø
+
+ werden die leeren halter in ram nummeriert 
+
+ hier : 
+
+         ± Ø: <A> :(1)—Ø
+         ± Ø: <B> :(2)—Ø
+     ¬· »—[×: (1) ++ (2) :×]—« 
+
+     werden die ram einheiten a und b zur alu hinzugeführt aber mit ram 
+     nummer kennungen der tragenden ram feeds .. 
+
+     hier :
+
+         ¬· »—[
+             ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+      
+      wird das ergebnis ausgespuckt mit dem rex operator ¤ oder besser wäre ¤¤ 
+      da ¤ nur status meldungen macht und ¤¤ alu auswertungen .. 
+
+      

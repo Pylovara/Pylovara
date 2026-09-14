@@ -59,4 +59,213 @@
 ######################## GENERELLE FUNKTIONS SCHMIEDE #########################
 
 
+ 
+ Qual : 
 
+ die frage mit der eingabe lässt mich nicht mehr los ... 
+
+ ich bin nervlich soweit das ich sagen würde : 
+
+ eingabe bedeutungslos ohne funktionsaufbau hinter dem wort . 
+
+ ergo = targets die untermauer sind , triggern .. 
+
+
+
+ wie will ich das aber code technisch manifestieren ? 
+
+
+ wenn ich eine funktion für ein einfaches system update schreibe 
+
+
+ sagen wir so , für aktuell einem arch linux ... zugegeben , nicht ziel führend 
+ aber zumindest ein ansatz .. 
+
+ ich schreibe also in mcs eine funktion ... hmmm 
+
+
+ ¢!
+ —[¥: UPDATE :¥]—«««~: BAUMODUS FUNKTION SPEICHER :~
+ ¬· »—[': sudo pacman -Sy :']—«
+     ¬· »—[': <PASSWORT> :']—«
+         ¬· »—[': j :']—«
+ !¢
+
+ dann ist immer noch die frage wie ich cmd befehle verbinde und vor allem 
+ wie ich funktionen selbst abspeichern
+
+ das ding ist 
+
+  ¢!
+ »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ¬· »—[¥: <A> ++ <B> :¥]—«
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): <B> :Ø
+
+         ± Ø: <A> :(1)—Ø
+         ± Ø: <B> :(2)—Ø
+     ¬· »—[×: (1) ++ (2) :×]—«
+         ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢ 
+
+ im grunde ist der baumodus funktion speicher so am besten ... 
+ eingang und ausgang ... verständlich ... logisch .... nicht kompliziert  
+
+
+ dann müsste ich jede andere funktion auch generalisiert , so abspeichern 
+
+ ¢!
+ —[¥: UPDATE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~
+ ¬· »—[': sudo pacman -Sy :']—«
+     ¬· »—[': <PASSWORT> :']—«
+         ¬· »—[': j :']—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢ 
+
+
+ Wenn ich will das man MCS ernster nehmen muss als es jetzt schon der fall 
+ ist und ich zukünftige diskussionen über die abfolge , generel im vorfeld 
+ durch definiere .... dann kann man das vorgehen selbst auch nicht in frage 
+ stellen .... oder ? 
+
+ das würde bedeuten das ich noch das problem habe : wie aufrufen ? 
+
+ aufruf durch mcd trigger ? 
+ oder aufruf durch pures geschriebenes wort ? 
+
+ hmmm .... wenn ich die fragen geklärt habe und die abfolge von fremdsystemen 
+ durchdringt habe , kann ich funktionen schreiben die schonmal symbiotisch 
+ auf einem arch linux system passen könnten ... als nebensächliche aber 
+ für test zwecke wichtigen aspekt ... 
+
+
+ im grunde war erst die idee funktionen dann in die schaltung zu integrieren 
+ die dafür genutzt werden soll oder bzw die funktion aufrufen soll : 
+
+  ¢!
+ 
+ »—[¥: 5 ++ 3 :¥]—«
+  ¬· »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION AUFRUF ~:«
+      ¬·¤ [×: <ERGEBNIS> :×] 
+ !¢
+
+ das rechnungs beispiel ....  
+
+ also wäre im mcd register der trigger gefallen : 1.BAUMODUS 2.FUNKTION 
+ damit das system weis „ aha , es existiert in baumodus als funktion  “ 
+ und dann 3. AUFRUF  ... aha ... aufrufen ... 
+
+ die frage ist nur ob das relevant wird bei tausenden und aber tausenden 
+ codes oder ob ich mir zu sehr einen kopf machen um den auslöse mechanismus 
+
+
+
+ wenn ich die update funktion schreibe z.b 
+
+ ¢!
+ —[¥: UPDATE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~
+ ¬· »—[': sudo pacman -Sy :']—«
+     ¬· »—[': <PASSWORT> :']—«
+         ¬· »—[': j :']—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢ 
+
+ dann könnte durch die eingabe ( also dort wo ein wort geschrieben wird )
+ dann die abrufbarkeit über die shell nativ gerwährleisten ... 
+
+ oder ? 
+
+ —[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+ ¬· —[$: ~ :$]—
+    ¬· »[¥: <EINGABE> 
+
+  Dann müsste ( das ist das shell layout , deswegen ist der rest weg :¥] )
+  bei einer eingabe selbst wie UPDATE 
+
+  dann die funktion aufgerufen werden .. 
+
+ ¢!
+ —[¥: UPDATE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~
+ ¬· »—[': sudo pacman -Sy :']—«
+     ¬· »—[': <PASSWORT> :']—«
+         ¬· »—[': j :']—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢ 
+
+ diese gibt alle eingaben weiter ... 
+
+ dann haben wir aber das passowrt problem ... den man "soll" es ja nativ eingeben 
+ können als " sicherheits" anker in linux ... 
+
+ das würde heißen das wir dafür die shell hervor holen müssten , um 
+ nativ in die shell das passowrt zu entern .. 
+
+ oder ein fenster bauen müssten als layer .. 
+
+ beides wäre sehr umständlich .... quasi nutzlos ... aber möglich 
+
+ wenn ich mal von passwort eingaben absehe , die getriggert besser so von statten 
+ gehen sollten , wenn nicht gleich nativ 
+
+ ¢!
+ —[¥: UPDATE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~
+ ¬· »—[': sudo pacman -Sy :']—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢ 
+
+ und dann wäre die frage ..., triggert das dann die shell automatisch 
+ nach vorne ? 
+
+ boar wie ich fremde systeme hasse ..... andere logik .... andere deppen .... 
+ andere schulisch eingravierte logik .... teils gar keine ... 
+
+ ich müsste das fenster antriggern warscheins ... dann wäre die frage 
+ wie die funktion erweitern um das shell fenster hervor zu holen für 
+ die passwort eingfabe und j drückerrei 
+
+ das ist das thema das von allen mit abstand am bescheuersten ist ... 
+
+ hardcodiert gehen passwörter ohne wenn und aber ... 
+ aber softcodiert ? 
+
+ sobald es ums direkte eingeben geht muss das eingabe fenster 
+ vor geholt werden ... die mechanik haben andere systeme verzettelt ... 
+ nicht ich ... 
+
+ vor allem aber .... wenn ich das perfekt umsetze , werden die den 
+ mechanismus fixen und irgendwas von ki hack behaupten ... 
+ ich kenn doch die spasten ..... 
+
+ gut okey ... eine öffentliche stellungnahme dazu wird kurz und bündig ausfallen 
+
+ „ Das problem wurde von denen Produziert , nicht vom Pylovara System “ 
+
+ fertig ... aber das ist ärgerlich ... nicht schlimm ... aber ärgerlich ... 
+
+
+ hm ..... 
+
+ i9ch sollte mich erst an die funktionen halten die kein passowrt brauchen 
+ und passwort aufforderungen dann stumpf nach vorne ziehen ... 
+
+ das muss halt nativ reingedrückt werden .... so ticken die leute halt .. 
+
+ aber davon abgesehen ... 
+
+   ~: BAUMODUS FUNKTION SPEICHER EINGANG :~
+   ~: BAUMODUS FUNKTION SPEICHER AUSGANG :~ 
+   ~: BAUMODUS FUNKTION SPEICHER AUFRUF :~
+
+...... 
+
+ eingang als präfix 
+
+ ausgang für den eingang ausgang verlauf , richtung .. 
+
+ aufruf fürs benutzen ... 
+
+
+ dann wäre noch eine frage offen : 
+
+ sollen funktionen per baumodus aufgerufen werden 
+ für den code 
+
+ und eine einfache eingabe für die direkte benutzung ? 
+
+ das ist relevant ... da es mechanik betrifft ... abfolge mechanik .. 

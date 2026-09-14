@@ -1,7 +1,10 @@
-# unfertig ... basic aufrufe für plus rechnungen als alu aufruf 
-# der erste weltweit der überhaupt eine alu abbilden kann mit MCS  
+######################### FUNKTIONSAUFRUF
 
- ¢!
+
+
+
+### FUNKTION AUFBAU EINGANG AUSGANG
+¢!
  »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
   ¬· »—[¥: <A> ++ <B> :¥]—«
       ÷ Ø—(1): <A> :Ø
@@ -11,34 +14,39 @@
          ± Ø: <B> :(2)—Ø
      ¬· »—[×: (1) ++ (2) :×]—«
          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
- !¢ 
+!¢ 
+
+¢!
+ —[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: <PARAMETER> :¥]—«
+     ÷ Ø—(1): <PARAMETER-1> :Ø
+     ÷ Ø—(2): <PARAMETER-2> :Ø
+
+         ± Ø: (1) :(1)—Ø
+         ± Ø: (2) :(2)—Ø
+     ¬· »—[×: <OPERATION> :×]—«
+         ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
 
 
 
- ¢!
+#########################################################################
+
+### FUNKTION AUFBAU AUFRUF 
+
+¢!
  
  »—[¥: 5 ++ 3 :¥]—«
   ¬· »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION AUFRUF ~:«
       ¬·¤ [×: <ERGEBNIS> :×] 
- !¢
+!¢
 
 #########################################################################
 
-# vermerk : 
 
- etabliere ich als standart logik für alu ! 
+# vermerk BAUMODUS : 
 
- wenn ich das gescheit hochbaue kann ich das mcd register 
- extrem sauber aufbauen und genau so wiederspiegeln und zwar 100% 
 
- wenn das sitzt , ist der rest nativ .... nativ alu .... 
-
- für was bau ich den tws ? ... als Compiler ? 
-
- ich glaub ich bau lieber gleich auf den kernel zu ohne zwischen schritt 
-
- wenn ich die alu in mcs abbilden kann , für was brauch ich dan assembly ? 
-
- ich kann den eigenen tws auf mcs in der alu programmieren .. 
-
- das muss ich erstmal verdauen ... 
+   ~: BAUMODUS FUNKTION SPEICHER EINGANG :~
+   ~: BAUMODUS FUNKTION SPEICHER AUSGANG :~ 
+   ~: BAUMODUS FUNKTION SPEICHER AUFRUF :~

@@ -117,8 +117,8 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡄⠔ STARTWABE
  SYMBOLE ⠆⢁⡂⢂ ¤
 
  PRÄFIX ⠆⢁⡂⢈ RX-MANAGER
- PRÄFIX ⠆⢁⡂⢐ RX-STATUS
- PRÄFIX ⠆⢁⡂⢠ RX-ALU
+ PRÄFIX ⠆⢁⡂⢐ RX-AUSGABE-INTERN
+ PRÄFIX ⠆⢁⡂⢠ RX-AUSGABE-EXTERN
 
  # PRODUKT
  AXIOM ¡ ⠆⢁⡄⠰ ⦻ ⠆⢁⡄⡁ Ξ ⠆⢁⡂⡠
@@ -143,8 +143,8 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡄⠔ STARTWABE
 
  # EINHEIT | RAM
  EINHEIT ⠆⢁⡄⠉ ¬ RX-MANAGER
- EINHEIT ⠆⢁⡄⠊ ¤ RX-ALU
- EINHEIT ⠆⢁⡂⠑ ¤¤ RX-STATUS
+ EINHEIT ⠆⢁⡄⠊ ¤ RX-AUSGABE-INTERN
+ EINHEIT ⠆⢁⡂⠑ ¤¤ RX-AUSGABE-EXTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  # BAU35
@@ -186,8 +186,8 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡂⠒ BAUWABE
 
  # EINHEIT | RAM
  EINHEIT ⠆⢁⡂⠰ ¬ RX-MANAGER
- EINHEIT ⠆⢁⡂⡁ ¤ RX-ALU
- EINHEIT ⠆⢁⡂⡄ ¤¤ RX-STATUS
+ EINHEIT ⠆⢁⡂⡁ ¤ RX-AUSGABE-INTERN
+ EINHEIT ⠆⢁⡂⡄ ¤¤ RX-AUSGABE-EXTERN
 
 TOCHTERWABEN-KATEGORIE ⠆⢁⡂⡈ COMBOLINKWABE
 
@@ -281,8 +281,8 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⠃⠘ AUSFÜHRUNGSDIREKTLINKWABE
 
  aufsplittung : 
 
- ¤ extern
- ¤¤ intern
+ ¤ INTERN
+ ¤¤ EXTERN
 
 ###====================================|====================================###
 ###================================REX-ICTUS-2==============================###
@@ -314,8 +314,8 @@ MUTTERWABEN-KATEGORIE ⠆⢁⠢⡂ BAUWABE
 
  # EINHEIT | RAM
  EINHEIT ⠆⢁⠢⢈ ¬ RX-MANAGER
- EINHEIT ⠆⢁⠡⢠ ¤ RX-ALU
- EINHEIT ⠆⢁⠡⣀ ¤¤ RX-STATUS
+ EINHEIT ⠆⢁⠡⢠ ¤ RX-AUSGABE-INTERN
+ EINHEIT ⠆⢁⠡⣀ ¤¤ RX-AUSGABE-EXTERN
 
 TOCHTERWABEN-KATEGORIE ⠆⢁⠢⠃ COMBOLINKWABE
 
@@ -410,8 +410,8 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⢠⢈ AUSFÜHRUNGSDIREKTLINKWABE
 
  aufsplittung : 
 
- ¤ extern
- ¤¤ intern
+ ¤ INTERN
+ ¤¤ EXTERN
 
 ###====================================|====================================###
 ###================================REX-ICTUS-3==============================###
@@ -443,8 +443,8 @@ MUTTERWABEN-KATEGORIE ⠆⢁⠢⠔ BAUWABE
 
  # EINHEIT | RAM
  EINHEIT ⠆⢁⠢⠒ ¬ RX-MANAGER
- EINHEIT ⠆⢁⠡⡄ ¤ RX-ALU
- EINHEIT ⠆⢁⠡⡈ ¤¤ RX-STATUS
+ EINHEIT ⠆⢁⠡⡄ ¤ RX-AUSGABE-INTERN
+ EINHEIT ⠆⢁⠡⡈ ¤¤ RX-AUSGABE-EXTERN
 
 TOCHTERWABEN-KATEGORIE ⠆⢁⠡⡐ COMBOLINKWABE
 
@@ -539,8 +539,8 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⢠⠨ AUSFÜHRUNGSDIREKTLINKWABE
 
  aufsplittung : 
 
- ¤ extern
- ¤¤ intern
+ ¤ INTERN
+ ¤¤ EXTERN
 
 ###====================================|====================================###
 ###================================REX-ICTUS-4==============================###
@@ -572,8 +572,8 @@ MUTTERWABEN-KATEGORIE ⠆⢁⠘⣀ BAUWABE
 
  # EINHEIT | RAM
  EINHEIT ⠆⢁⠡⠒ ¬ RX-MANAGER
- EINHEIT ⠆⢁⠡⠔ ¤ RX-ALU
- EINHEIT ⠆⢁⠡⠘ ¤¤ RX-STATUS
+ EINHEIT ⠆⢁⠡⠔ ¤ RX-AUSGABE-INTERN
+ EINHEIT ⠆⢁⠡⠘ ¤¤ RX-AUSGABE-EXTERN
 
 TOCHTERWABEN-KATEGORIE ⠆⢁⠡⠢ COMBOLINKWABE
 
@@ -667,8 +667,8 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⢠⢄ AUSFÜHRUNGSDIREKTLINKWABE
 
  aufsplittung : 
 
- ¤ extern
- ¤¤ intern
+ ¤ INTERN
+ ¤¤ EXTERN
 
 ###====================================|====================================###
 

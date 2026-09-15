@@ -1,0 +1,70 @@
+### ARBEITSBLATT ALU OPERATOREN FÜR FUNKTIONEN 
+###############################################################################
+# SCHMIERBEREICH :
+
+Was definitiv geklärt sein sollte wäre : 
+
+ „ wie spreche ich die alu richtig an für die operationen  “
+
+was ich denke die wichtigsten mathe und operatoren sind ..
+
+Arithmetik (Ganzzahl): ADD, SUB, INC, DEC
+Logik (Bitweise): AND, OR, XOR, NOT, NAND
+Schieben: SLL, SLR
+Vergleichen: CMP, TEST
+
+gut ... dann sortieren wir mal aus was was ist und was überhaupt gebraucht wird
+und gleichen das gleich mal ab und vor allem aber auch - um . 
+
+###############################################################################
+### Arithmetik (Ganzzahl): ADD, SUB, INC, DEC
+
+kurze logik brücke von den anderen hersteller : 
+
+ADD = + (Addition)
+Nimmt zwei Werte und addiert sie. A + B
+
+ »—[×: <A> ++ <B> :×]—«
+
+SUB = - (Subtraktion)
+Nimmt zwei Werte und zieht den zweiten vom ersten ab. A - B
+
+ »—[×: <A> -- <B> :×]—«
+
+----------------------------------------------------------------------------
+
+ # BEIDES WURDE SYSTEMATISCH ELEMENIERT , UNBRAUCHBAR WEIL BEIDES NATIV 
+   IN MCS GESCHRIEBEN WERDEN KÖNNEN .
+
+ ! BLEIBT DENNOCH MAL DRINNE , KÖNNEN STATTS RECHNUNGEN VILLEICHT DIE JUMP 
+   BEFEHLE DER BIENEN KÖNNIGIN STEUERN ... FREMDNUTZUNG ABER EGAL .. 
+
+INC = + 1 (Inkrement / Erhöhen)
+Das ist ein Hardware-Shortcut. Es addiert immer exakt 1 auf einen Wert. A + 1
+
+ »—[×: <A> ++ 1 :×]—«
+
+DEC = - 1 (Dekrement / Verringern)
+Das ist der Gegenpart. Es zieht immer exakt 1 von einem Wert ab. A - 1
+
+ »—[×: <A> -- 1 :×]—«
+
+ wichtige sache : beide laufen auf einem taktzyklus , statts zwei.... 
+ das heißt mit bedacht einsetzen ... durchbrennen könnte möglich sein .. 
+ weil zu schnell ... außer sie wären stickstoff gekühlt oder so .. 
+ aber zu schnelle taktrate .... aufpassen ... 
+
+ wenn dann nur der jumper ... 
+
+ der jumper addet eine zahl dazu ... die +1 schleife und -1 schleife 
+ rechne ich dann lieber nativ in mcs statts über die dec und inc lösung 
+
+###############################################################################
+### RECHEN OPERATOREN 
+
+MCS | PLUS    = ++ | ASSEMBLER ADD
+MCS | MINUS   = -- | ASSEMBLER SUB ODER ADD MIT INVERTIERTEM WERT
+MCS | MAL     = ×× | ASSEMBLER MUL ODER SCHLEIFE AUS ADD UND SHL 
+MCS | GETEILT = ÷÷ | ASSEMBLER DIV ( WOBEI ... CA 40 ZYKLEN )
+
+###############################################################################

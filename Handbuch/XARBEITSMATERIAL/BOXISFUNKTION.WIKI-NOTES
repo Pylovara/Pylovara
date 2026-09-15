@@ -1,0 +1,78 @@
+### BOXISAUFRUF.WIKI-NOTES
+###############################################################################
+### FUNKTION AUFBAU EINGANG AUSGANG
+
+###############################################################################
+### FUNKTION AUFBAU AUFRUF 
+
+###############################################################################
+### VERMERK BAUMODUS MCD BEFEHLE : 
+
+###############################################################################
+### MÖGLICHE ERKLÄRUNG : 
+
+###############################################################################
+###############################################################################
+## DATENSTROM MIT BOXIS VERSCHALTEN PER BAUMODUS FUNKTION 
+
+
+arbeitsfläche :
+
+ ¢! 
+ —[": BAUMODUS FUNKTION FÜR EINGABE MIT DIREKTER SHELL AUSGABE ÜBER ECHO :"]— 
+ ¬· »—[¥: SHELL AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+     ¬· »—[×: <SHELL> <AUSGABE> :×]—«
+         ÷ Ø—(1): <SHELL> :Ø
+         ÷ Ø—(2): <AUSGABE> :Ø
+
+         ± Ø: <SHELL> :(1)—Ø
+     ¬· »—[×: (1) ++ BXMKHT-SHELL :×]—«
+         ± Ø—(3): (1) = PROGRAMM START SHELL :Ø
+
+         ± Ø: (1) ++ BXMKHT-SHELL :(3)—Ø
+         ± Ø: <AUSGABE> :(2)—Ø
+     ¬· »—[×: (3 (2)) :×]—«
+         ¬·¤¤ »[': echo "<AUSGABE>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢
+
+
+ ###############################
+### notizen 
+ ich werde die programme die gestartet werden sollen dann als mcd befehl 
+
+ kennzeichnen ... statts BXMK-SHELL wird dann PROGRAMM START SHELL 
+
+ und bei dem programm trigger SHELL wird dann die boxis bsk vom tws gestartet 
+ ... wäre eleganter .. 
+
+
+¢!
+—[": KOORDINATIONS-RAHMEN :"]—
+¬· »—[¥: WACHSTUMS-TRIGGER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+    
+    ¬· —[": Prüft, ob der aktuelle Rahmen voll ist oder neue BOXIS braucht :"]—
+       ¬· »—[×: <STATUS> == <VOLL> :×]—«
+    
+    # Wenn ja, züchte eine neue Wabe und binde sie ein
+    ¶ ¬· »—[~: ZÜCHTE NEUE WABE VOM TYP <BOXIS> :~]—«
+        ¬·¤ »[×: <NEUE BION-ID> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
+
+
+
+
+
+
+
+¢! ## schmierbreich kritzel | unlogisch .. 
+—[": FUNKTION DEFINITION :"]—
+¬· »—[¥: MEINE_FUNKTION :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+    ¬· »—[×: <DATEN> <AKTION> :×]—«
+        ÷ Ø—(1): <DATEN> :Ø
+        ÷ Ø—(2): <AKTION> :Ø
+        
+        ± Ø: <DATEN> :(1)—Ø
+    ¬· »—[×: (1) ++ PROGRAMM START SHELL :×]—«
+        ¬·¤¤ »[': echo "<DATEN>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢

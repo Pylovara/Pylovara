@@ -68,6 +68,96 @@
 
  damit steigt der wert von mcs imenz .... und zwar imenz !
 
+
+
+##### REX LÖSUNG 
+
+ REX KANÄLE INPUT .. 
+ OUTPUT AUF AUSGANG STATT ALU UND STATUS 
+
+ AUSGANG AUF 3 
+
+ - INTERN 
+ - EINBLENDUNG ( WOBEI DAS FENSTER VOM SYSTEM SELBST GEÖFFNET WIRD )
+ - EXTERN 
+
+ 
+
+ Hab mir lange um den mechanismus gedanken gemacht , schluss endlich 
+ ist es so das jeder status und alu ausgang ( jetzt dann AUSGANG) 
+ so oder so verschaltet fungiert , dadurch muss ich keine expliziten 
+ ausgänge zaubern sondern einen generalisierungten der per schaltungs 
+ weg dann ausspuckt .. 
+
+ da man code schreibt , schreibt man auch in welcher boxi es ausgegeben 
+ werden soll/muss und damit schließt sich der kreis des problems für den 
+ rex 
+
+ ich werde dann ( gut heute wieder 30° , dumm gelaufen ... bei warmwetter 
+ mach ich gar nichts , nicht mal denken oder furzen )
+
+ anfangen ... morgen .... den rex fertig zu stellen .... 
+
+ dann nochmal beim nitrox das rein raus gekritzel professioneller aber 
+ dennoch flach deutsch umzubenennen ... 
+
+ und dann vor dem sentiator die pipeline zu ende zu denken und aufzubauen . 
+
+
+
+ sentiator , wichtig ( einfall beim grübeln nachts um 3 , beim gegen die wand gucken ) :
+
+ ich baue eine signal wabe .... rex kanal signal registrierung .. 
+
+ im grunde „ wurde es oder wurde es nicht bearbeitet “ 
+
+ was bearbeitet wurde , wird beim sentiator selbst nicht programmiert , das 
+ hat in einem besseren schnelleren if else konstrukt nichts zu suchen , genauso
+ wenig die andock logik von c und forks .. 
+
+ was bearbeitet wurde wird vorgeschaltet zum vatron später ... 
+ da er eh der die system firewall darstellt , kann er auch gleichzeitig 
+ einen viren scanner includiert haben ... wäre sinnvoll 
+
+ für fremd compilierte datenpackete von fremden sprachen wiederum 
+ bin ich nicht verantwortlich .. 
+
+ native mcs dateien werden haus üblich bei fehler meldungen per popup editor 
+ eingeblendet bei der dann folgenden ide ... oder im betrieb selbst ... 
+
+ für debugging aber auf leicht gemacht , wie es sich gehört ... 
+
+
+
+ BAUMODUS ===================================
+
+ Ich bin ein guten schritt voran gekommen , wie der baumodus für 
+ funktionen zu handhaben ist .. 
+
+ ich lege den nagel noch nicht fest , ich schreib erst ein paar einfache 
+ rechen funktionen , die man bequem dann einbinden kann ... 
+
+ auf der grundlage entscheide ich dann wie fest ich den karren 
+ zurre um später neulingen das falsch machen , so schwer wie nur 
+ möglich zu machen :-D
+
+ vor allem denke ich das ich im MCS  Lexikon den Punkt BAUMODUS 
+ dann extrem erklärend und ausschweifend , aufschreiben werde .. 
+
+ ich bin mir sehr sicher das selbst eingeeichte programmierer die 
+ 40 jahre plus in dem beruf arbeiten , an dem neu denken von 
+ Funktionsaufbauten, ihre hellste freude haben werden .. 
+
+ da MCS kein C fork ist und nichts mit Java Kotlin Grandle oder sonnstigen 
+ gedöns zu tun hat ... 
+
+ werde ich unter garantie den einen oder anderen damit rum spielen sehen .. 
+ darauf freue ich mich am meisten ... 
+
+
+
+
+
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
 
  - MCS LEXIKON 

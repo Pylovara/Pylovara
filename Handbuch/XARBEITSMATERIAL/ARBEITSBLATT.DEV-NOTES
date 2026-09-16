@@ -68,9 +68,7 @@
 
  damit steigt der wert von mcs imenz .... und zwar imenz !
 
-
-
-##### REX LÖSUNG 
+##### REX LÖSUNG ===============================================================
 
  REX KANÄLE INPUT .. 
  OUTPUT AUF AUSGANG STATT ALU UND STATUS 
@@ -80,8 +78,6 @@
  - INTERN 
  - EINBLENDUNG ( WOBEI DAS FENSTER VOM SYSTEM SELBST GEÖFFNET WIRD )
  - EXTERN 
-
- 
 
  Hab mir lange um den mechanismus gedanken gemacht , schluss endlich 
  ist es so das jeder status und alu ausgang ( jetzt dann AUSGANG) 
@@ -104,6 +100,153 @@
  und dann vor dem sentiator die pipeline zu ende zu denken und aufzubauen . 
 
 
+ NEUE EINTRAG : 
+
+ Ich kann den Rex so nicht lassen .... 
+
+ ich muss erst die pipeline bauen für das on-pipe protein 
+ und danach warscheinlich den rex nicht als gesamt programm sondern aufgeteiltes 
+ programm behandeln .. 
+
+ der input und der output kann ich nicht in einem programm definieren ... 
+ es fühlt sich nach stunden über stunden des nachdenkens grundsätzlich falsch an .. 
+
+ vor allem aber würde der output direkt im programm selbst mit der rex IN verbindung 
+ zusammen laufen und das ist grundlegend falsch .. 
+
+ ¬· —[<BXMK>]— 
+ ↑  ↑
+ in ↑
+    OUT ¬·¤ 
+
+ ICH MÜSSTE DEN OUT  auch am wabenhärter anschließen können .. 
+
+ ich kann zwar eine weggabelung einbauen , wäre dann aber eine komplexe 
+ endwaben geschichte die eher wie eine bauwabe aussieht und dann als kinderwaben 
+ modul als ausgang definiert wird .. 
+
+ da alle boxis grundsätzlich einzelne programme sind , weil schneller und 
+ performanter inklusive genauer und stabiler ... 
+
+ muss ich mich bei beim rex für eine daten verarbeitungs linie entscheiden 
+
+ die meisten prozessoren verarbeiten vorwärts ... rückwärts ist zwar möglich 
+ aber blockiert das gatter ... 
+
+ wenn ich sage 
+
+ »—[ SPIEL START ]—«
+ 
+ BRAUCH ICH DIE IN KANÄLE für den datenstrom ... 
+
+ auch bei funktionen ... egal was ... 
+
+ davon abgesehen bräuchte ich für funktionen dann einen knoten punkt 
+
+
+
+ —[×: 1 :×]—
+ ¬· —[¥: PLUS-EINS :¥]—
+    ¬·¤¤
+     ↑
+     extern ... der interne ist in der funktion ... 
+     das heißt ich brauch den übergang zum internen zum externen kanal 
+     damit die 1 + 1 auch berechnet werden kann 
+
+     hmm ... spiegelung .... 
+
+
+
+ ¢!
+ »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ↓
+  ¬· »—[×: <A> ++ 1 :×]—«
+      ↓
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): 1 :Ø
+      ↓
+      ↓   ± Ø: <A> :(1)—Ø
+      ↓   ± Ø: 1 :(2)—Ø
+      ↓   ↓
+      ¬· »—[×: (1) ++ (2) :×]—«
+          ↓
+          ¬·¤¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢     
+
+ ICH müsste mich entscheiden ... oder die funktion der ausgabe anpassen 
+
+ will ich intern funktionen dan extern auf ausgabe aufrufen ... 
+
+ oder gleich schalten ... 
+
+ wenn ich interne ¤ zur weitergabe nutze ... müssen sie auch extra 
+ programmiert sein ... sonnst kann ich das schlecht an der pipeline 
+ anbinden ... 
+
+ gehen würde es schon , wäre nur sinnfrei ... overhead ist keine option .. 
+
+
+
+
+ ich sollte im flow bauen ....
+
+ ¬·
+ ¬··
+ ¬···
+ ¬···· 
+
+ alles ein programm ... 
+
+ ¬·¤
+ ¬··¤
+ ¬···¤
+ ¬····¤
+
+ alles ein programm 
+
+ ¬·¤¤
+ ¬··¤¤
+ ¬···¤¤
+ ¬····¤¤
+
+ alles ein programm  
+
+ alles anschließbar per wabenhärter ... 
+
+ on-pipe datenkanal nächste rein on oder off pipe 
+
+ wäre die direkteste möglichkeit ohne dabei unötigen 
+ balast mit ein zu schleppen .. 
+
+ overhead ist keine option , overhead ist gift ... 
+ performance ist ein natur gesetzt .. 
+
+ ich sollte mich an den slogan halten ... 
+
+ gut okey .... 
+
+ dann muss ich die pipeline vorher bauen .. 
+
+ dann den rex neu schreiben ... 
+ dann sehe ich im flow wo was hingehört .. 
+
+ ich geh das nochmal ein oder zwei tage im kopf durch .. 
+
+ danach mach ich schicht im schacht .. 
+
+ das ist entscheident auch für den sentiator output 
+
+
+ aktueller stand heute wetter ... 
+ soll die tage endgültig aufhören mit über 25 grad und sonne 
+
+ daran mach ich es fest ... heute ist so ein kühler sonniger tag .. 
+ zuviel licht ... moral null ... brauchs trübe .. 
+
+ warten auf die verdammte regenzeit .. 
+
+
+ SENTIATOR ========================================
 
  sentiator , wichtig ( einfall beim grübeln nachts um 3 , beim gegen die wand gucken ) :
 

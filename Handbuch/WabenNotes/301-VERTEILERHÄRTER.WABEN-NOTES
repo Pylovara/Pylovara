@@ -2,22 +2,24 @@
 ###============================PYLOVARA-SYSTEM==============================###
 ###==============================HÄRTERMODUL================================###
 
-HÄRTERMODUL ⠆⢁⠰⡂ VERTEILERHÄRTER
+WABENHÄRTER # VERTEILERHÄRTER
+
+ # AXIOM | VERTEILERHÄRTER TRAGENDE SYSTEM-ID ÜBERGREIFEND
+ AXIOM ¡ ⍿ ⠆⢁⠰⡂ 
 
  # AXIOM | ANSCHLUSS MASTERKERNWABE
- AXIOM ¡ ⍿ 
+ AXIOM ¡ ⍿ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID>
 
- # PIPLINE-LINK
- TEIL-LINK ¡  ⍠ 
-
- # PIPELINE CONNECTOR
- AXIOM ¡ 
-
- # AXIOM WABEN SYSTEM-ID 
- AXIOM ¡  ⑀ 
+ # AXIOM | VERTEILERHÄRTER ID PORT ZU VERBINDUNGSWABE BION-ID 
+ AXIOM ¡ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID> ⑀ ⠆⢁⠰⡂
 
 ###==============================INFORMATIONEN==============================###
  
+ DER VERTEILERHÄRTER IST MIT DER PIPELINE VERBUNDEN UND TRÄGT DIE VERBINDUNGS 
+ ID ZUR WABE : <MUSS NOCH EINGETRAGEN WERDEN > 
+
+ <VERTEILERHÄRTER-SYSTEM-ID> = ⠆⢁⠰⡂
+
 ###==========================VERWENDETE-WABEN===============================###
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

@@ -48,6 +48,19 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡈⠢ MASTERKERNWABE
  AXIOM ¡ ⠆⢄⡄⡁ ⧑ ⠆⢁⠘⢐
 
 ###====================================|====================================###
+
+WABENHÄRTER # VERTEILERHÄRTER
+
+ # AXIOM | VERTEILERHÄRTER TRAGENDE SYSTEM-ID ÜBERGREIFEND
+ AXIOM ¡ ⍿ ⠆⢁⠰⡂ 
+
+ # AXIOM | ANSCHLUSS MASTERKERNWABE
+ AXIOM ¡ ⍿ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID>
+
+ # AXIOM | VERTEILERHÄRTER ID PORT ZU VERBINDUNGSWABE BION-ID 
+ AXIOM ¡ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID> ⑀ ⠆⢁⠰⡂
+
+###====================================|====================================###
 ###===============================ON-PIPE-PROTEIN===========================###
 ###====================================|====================================###
 
@@ -133,22 +146,6 @@ MUTTERWABEN-KATEGORIE ⠆⢄⡂⠤ STARTWABE
  AXIOM ¡ ⠆⢄⡁⡈ ⦳ ⠆⢁⢈⠑       
  # BOXIS TRENNBEFEHL PROTON 
  AXIOM ¡ ⠆⢄⡁⡈ ⦳ ⠆⢁⢄⠅
-
-###====================================|====================================###
-# BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
-WABENHÄRTER ⠆⢁⢈⣀ VERTEILERHÄRTER
-
- # AXIOM | ANSCHLUSS MASTERKERNWABE
- AXIOM ¡ ⍿ ⠆⢄⡄⡁
-
- # PIPLINE-LINK
- TEIL-LINK ¡ ⠆⢄⡁⠒ ⍠ ⠆⢁⢐⠃
-
- # PIPELINE CONNECTOR
- AXIOM ¡ 
-
- # AXIOM WABEN SYSTEM-ID 
- AXIOM ¡ ⠆⢄⡁⡈ ⑀ ⠆⢁⢐⡠
 
 ###====================================|====================================###
 ###==========================ON-PIPE-PROTEIN-BOXIS==========================###

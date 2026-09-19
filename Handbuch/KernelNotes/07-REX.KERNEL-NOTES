@@ -41,8 +41,57 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡄⡈ MASTERKERNWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⡄⡐ ⧓ ⠆⢁⡄⡠ Ξ ⠆⢁⡄⢂
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⢁⡄⢂ ⧑ ⠆⢁⡈⠅
+ # NORMAL 
+ AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
+ # INTERN 
+ AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
+ # EXTERN 
+ AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
+
 ###====================================|====================================###
+
+WABENHÄRTER # VERTEILERHÄRTER
+
+ # AXIOM | VERTEILERHÄRTER TRAGENDE SYSTEM-ID ÜBERGREIFEND
+ AXIOM ¡ ⍿ ⠆⢁⠰⡂ 
+
+ # AXIOM | ANSCHLUSS MASTERKERNWABE
+ AXIOM ¡ ⍿ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID>
+
+ # AXIOM | VERTEILERHÄRTER ID PORT ZU VERBINDUNGSWABE BION-ID 
+ AXIOM ¡ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID> ⑀ ⠆⢁⠰⡂
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # 
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # 
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # 
+
+###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################################
+
+
 # VORPLANUNG 
 
  1 - NORMAL 
@@ -57,16 +106,17 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡄⡈ MASTERKERNWABE
 
 ###====================================|====================================###
 
-
 !!!!!!!!!!! ALTER BEREICH 
 
-
 ###====================================|====================================###
-# BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
+
 WABENHÄRTER  VERTEILERHÄRTER
 
+ # AXIOM | VERTEILERHÄRTER TRAGENDE SYSTEM-ID ÜBERGREIFEND
+ AXIOM ¡ ⍿ ⠆⢁⠰⡂ 
+
  # AXIOM | ANSCHLUSS MASTERKERNWABE
- AXIOM ¡ ⍿ ⠆⢁⡄⢂
+ AXIOM ¡ ⍿ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID>
 
  # PIPLINE-LINK
  TEIL-LINK ¡  ⍠ 

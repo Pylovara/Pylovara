@@ -62,35 +62,273 @@ WABENHÄRTER # VERTEILERHÄRTER
  AXIOM ¡ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID> ⑀ ⠆⢁⠰⡂
 
 ###====================================|====================================###
+###============================= REX-ICTUS-KERN ============================###
+###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # 
+MUTTERWABEN-KATEGORIE # HAUPTWABE 
+
+ PROGRAMM # 
+
+ WABEN-ID # HT
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # 
+MUTTERWABEN-KATEGORIE # STARTWABE 
+
+ PROGRAMM # 
+
+ WABEN-ID # ST
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK #
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
+
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+
+ PRÄFIX #
+ PRÄFIX #
+ PRÄFIX #
+ PRÄFIX #
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+
+ PRODUKT #
+ PRODUKT #
+ PRODUKT #
+ PRODUKT #
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # 
+ # WEITER REX-ICTUS-KERN/E ¬ / ····
+
+###====================================|====================================###
+###========================= REX-ICTUS-KERN-INTERN =========================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # HAUPTWABE 
+
+ PROGRAMM # 
+
+ WABEN-ID # HT
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE # STARTWABE 
 
+ PROGRAMM # 
 
+ WABEN-ID # ST
 
+ BION-NR # 
 
+ BION-ID # 
 
+ BSK #
 
+ BION # 
 
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
 
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
 
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
 
+ PRÄFIX #
+ PRÄFIX #
+ PRÄFIX #
+ PRÄFIX #
 
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
 
+ PRODUKT #
+ PRODUKT #
+ PRODUKT #
+ PRODUKT #
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
+
+###====================================|====================================###
+
+ # WEITER REX-ICTUS-KERN/E-INTERN ¬ / ···· / ¤
+
+###====================================|====================================###
+###========================= REX-ICTUS-KERN-EXTERN =========================###
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # HAUPTWABE 
+
+ PROGRAMM # 
+
+ WABEN-ID # HT
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # STARTWABE 
+
+ PROGRAMM # 
+
+ WABEN-ID # ST
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK #
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
+
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+
+ PRÄFIX #
+ PRÄFIX #
+ PRÄFIX #
+ PRÄFIX #
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+
+ PRODUKT #
+ PRODUKT #
+ PRODUKT #
+ PRODUKT #
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
+
+###====================================|====================================###
+
+ # WEITER REX-ICTUS-KERN/E-EXTERN ¬ / ···· / ¤¤
+
+###====================================|====================================###
 
 
 ###############################################################################
-
 
 # VORPLANUNG 
 
@@ -103,6 +341,26 @@ MUTTERWABEN-KATEGORIE #
  2 - INTERN
 
  3 - EXTERN
+
+
+ VORBEREITUNGEN ... 
+
+ ESELSBRÜCKE BIS FERTIG STELLUNG = 
+
+ WABENHÄRTER DIREKT IN DIE MUTTERWABEN MODULE BINDEN MIT EVENTUELLER FOLGE SCHALTUNG 
+
+ BEI DER ERSTEN WABENHÄRTER MODUL BINDUNG VERTEILERHÄTER FÜR DIE PIPELINE 
+ DIREKTE VERKNOTUNG 
+
+ IN DER PIPELINE SELBST DIE SCHALTUNG BAUEN DANN DIE GEBAUTE SCHALTUNG 
+ ABLEGEN PER NEUER SYSTEM-ID 
+
+ DIESE WIEDERUM FÜR WEITERES VERWENDEN 
+
+ DUALITÄTSARBEIT : REX - PIPELINE - PIPELINE MUTTER TOCHTER KIND BINDUNG 
+ DEFINIEREN ... 
+
+ ERST AUFBAUEN , DANN AUFTEILEN ( SICHT KONTROLLE )
 
 ###====================================|====================================###
 

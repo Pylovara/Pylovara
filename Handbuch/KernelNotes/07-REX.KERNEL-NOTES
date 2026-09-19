@@ -147,7 +147,98 @@ MUTTERWABEN-KATEGORIE # STARTWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⢁⡂⠒ BAUWABE 
+
+ PROGRAMM # MANAGER
+
+ WABEN-ID # BA
+
+ BION-NR # 
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+
+ # EINHEIT | RAM
+ EINHEIT # ¬ RX-MANAGER
+
+TOCHTERWABEN-KATEGORIE ⠆⢁⡂⡈ COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK # ICMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⍠ #
+
+ # AXIOM | RAM 
+ EINHEIT # · IC-KERN-1
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX # RX-MANAGER-KERN-1
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ # ⧓ # Ξ #
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍠ #
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT # ¬· RX-MANAGER-KERN-1
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ 
+
+
+ ICH BAU DAS FÜR ALLE 4 SEPERAT ... ALSO 4 X DAS GLEICHE FÜR  ICTUS KERNE 
+ DAMIT WÄRE ES PRÄZISE ANSTEUERBAR ... 
+
+ DAS HEIẞT ABER AUCH 4 ENDWABEN ... DER BEREICH WIRD LANG .. 
+
+###====================================|====================================###
+
  # WEITER REX-ICTUS-KERN/E ¬ / ····
+
+ BAUWABE - COMBOLINKWABE FÜR ICTUS KERNE 1 BIS 4 
+
+
+
+ ENDWABE - AUSFÜHRUNGSDIREKTLINKWABE
+
+ Hier muss ich darauf achten das die verschaltung nicht der pipeline wiederspricht 
+ das heißt ich darf hier nur den off-pipe protein direkt linken aber 
+ die on-pipes für den weiter gebrauch nur auf den wabenhärter beziehen 
+
+ damit der wabenhärter selbst den weiteren on-pipe linkt .. 
+
+ dazu muss ich wohl oder über optionale punkte in den verteiler einbauen 
+ die mir erlauben eine direkt verschaltung zurück auf die pipeline zu fühen 
+ damit die verkettung auch hinhaut ... 
+
+ gut .... gerade noch zu warm draußen ... ich warte bis abends dann mach ich weiter 
+
+ aber das wäre der weg 
+
+ offpipes direkt verlinken , weil sie keine pipe haben .. endzustand der kette 
+ wenn benötigt .... optional aber elementar .. 
+
+ on-pipe auf den verteiler beziehen ... 
+
+ —[]—
+ ¬· —[]— 
+    ¬· []
+
+ damit die kette stimmt , um die programmierfreiheit zu gewährleisten .. 
+ 
 
 ###====================================|====================================###
 ###========================= REX-ICTUS-KERN-INTERN =========================###

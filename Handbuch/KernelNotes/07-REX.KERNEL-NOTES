@@ -56,10 +56,10 @@ WABENHÄRTER # VERTEILERHÄRTER
  AXIOM ¡ ⍿ ⠆⢁⠰⡂ 
 
  # AXIOM | ANSCHLUSS MASTERKERNWABE
- AXIOM ¡ ⍿ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID>
+ AXIOM ¡ ⍿ ⠆⢁⡄⢂
 
  # AXIOM | VERTEILERHÄRTER ID PORT ZU VERBINDUNGSWABE BION-ID 
- AXIOM ¡ <KOMPONENTE-MASTERKERNWABE-SYSTEM-ID> ⑀ ⠆⢁⠰⡂
+ AXIOM ¡ ⠆⢁⡄⢂ ⑀ ⠆⢁⠰⡂
 
 ###====================================|====================================###
 ###============================= REX-ICTUS-KERN ============================###
@@ -210,35 +210,56 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⡂⡈ COMBOLINKWABE
 
  BAUWABE - COMBOLINKWABE FÜR ICTUS KERNE 1 BIS 4 
 
+ ENDWABE - AUSFÜHRUNGWABE  
 
+ SCHMIERBEREICH : 
 
- ENDWABE - AUSFÜHRUNGSDIREKTLINKWABE
+ ich mach es anders .... smarter aber dafür punktueller 
+ ich bau hier ohne verlinkung zu on oder off pipes .. 
 
- Hier muss ich darauf achten das die verschaltung nicht der pipeline wiederspricht 
- das heißt ich darf hier nur den off-pipe protein direkt linken aber 
- die on-pipes für den weiter gebrauch nur auf den wabenhärter beziehen 
+ ich bau das in der pipeline ... 
 
- damit der wabenhärter selbst den weiteren on-pipe linkt .. 
+ das wird zwar die pipeline etwas mehr code bescheren aber dafür 
+ hab ich das dann präziser am ort wo ich es brauche .. 
 
- dazu muss ich wohl oder über optionale punkte in den verteiler einbauen 
- die mir erlauben eine direkt verschaltung zurück auf die pipeline zu fühen 
- damit die verkettung auch hinhaut ... 
+ die off pipes ebenfalls ... 
 
- gut .... gerade noch zu warm draußen ... ich warte bis abends dann mach ich weiter 
+ hab nochmal lange dafür gegrübel heute sekundär ... 
 
- aber das wäre der weg 
+ ich fang also erst gar nicht an etwas vom fuß ab weiter zu verlinken 
+ sondern bau die pipeline als traktor auf .. wie vorgesehen war .. 
 
- offpipes direkt verlinken , weil sie keine pipe haben .. endzustand der kette 
- wenn benötigt .... optional aber elementar .. 
+ dann komm ich aus dem ausbau dilemma von der on-pipe heraus , weil die 
+ pipeline vom on pipe mit getragen wurde , und kann nach den ausbau zur eigenständigen 
+ komponente dafür sorgen das es denoch ein gebündeltes teil bleibt ... 
 
- on-pipe auf den verteiler beziehen ... 
+ der hand nerv der durch die verdammte rüttel maschine entzündet ist , lässt langsam 
+ vom schmerzfaktor nach .... kann zwar den unterarm nicht lange auf dem tisch liegen 
+ haben aber der couldown geht richtung , erträglich ... ohne ibus zu schlucken .. 
 
- —[]—
- ¬· —[]— 
-    ¬· []
+ ich würde behaupten , heute war wieder zu hell , bis vor 22 uhr zu warm unter blech dach .. 
+ ich lass den abend jetzt noch ausklingen und gehe dann morgen an die arbeit .. 
 
- damit die kette stimmt , um die programmierfreiheit zu gewährleisten .. 
- 
+ soweit ich das sehe nimmt die panik auf dem gesamten markt zu ... keiner hat 
+ auch nur ansatzweise eine gescheite lösung ... mich zu copieren wäre lizenz bruch 
+
+ also muss ich so langsam in die gänge kommen .... 
+
+ sobald ich den rex auf pipeline abgestimmt habe und die pipeline vernümpftig 
+ gebaut ist , gehe ich dann gleich zum register über 046 ... und beende 
+ das durcheinander in den kopf verbindungen ... und setze die auch noch gescheit 
+
+ da die ganze welt mit dem schrott der alten welt rum hantiert und nichts davon 
+ wirklich gut ist , sollte ich den fertigungs termin für die 00-83 auf den dezember 
+ wirklich festnageln ... damit ich dann auf den januar die patches für 0.4 lostreten 
+ kann , die nicht lange dauern ... 
+
+ und ich danach dann die honig tropfen und arbeiter bienen hochziehe .. für den 
+ first boot ... 
+
+ aber jetzt erstmal auf das einwaben vom neuen system durchziehen und dann weiter 
+ denken .... davor ma chts kein sinn ... 
+
 ###====================================|====================================###
 ###========================= REX-ICTUS-KERN-INTERN =========================###
 ###====================================|====================================###

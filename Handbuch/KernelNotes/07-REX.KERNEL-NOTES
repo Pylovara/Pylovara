@@ -551,7 +551,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠅⡈ STARTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⠅⢁ ⧓ ⠆⡠⠅⢂ Ξ ⠆⡠⠅⢄
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⠅⢄ ⧑ #
+ AXIOM ¡ ⠆⡠⠅⢄ ⧑ ⠆⡠⠃⡐
 
  TASTENCODE ⠆⡠⠃⣀ ALTGR
  TASTENCODE ⠆⡠⠅⠃ 6
@@ -586,60 +586,60 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠅⡈ STARTWABE
  EINHEIT ⠆⡠⠃⠨ ¤ RX-INTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⠅⢄ ⦳ #
+ AXIOM ¡ ⠆⡠⠅⢄ ⦳ ⠆⡠⠃⡐
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # BAUWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⠃⡁ BAUWABE 
 
- PROGRAMM #
+ PROGRAMM ⠆⡠⠃⡂ DATENKANALINTERN
 
- WABEN-ID # BA
+ WABEN-ID ⠆⡠⠃⡄ BA
 
- BION-NR # 052
+ BION-NR ⠆⡠⠃⡈ 052
 
- BION-ID # 
+ BION-ID ⠆⡠⠃⡐ BA052
 
- BSK # 
+ BSK ⠆⡠⠃⢂ RXMKHTSTBA-DATENKANALINTERN
 
- BION # 
+ BION ⠆⡠⠃⢄ RX007MK007HT026ST026BA052
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠃⡄ ⧓ ⠆⡠⠃⡈ Ξ ⠆⡠⠃⡐
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ 
+ AXIOM ¡ ⠆⡠⠃⡐ ⧑ #
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⠃⠤ ⍠ ⠆⡠⠃⢈
 
  # EINHEIT | RAM
- EINHEIT # 
+ EINHEIT ⠆⡠⠃⢈ ¬ RX-DATENKANAL
 
-TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡐⣀⢐ COMBOLINKWABE
 
  # LINK KOMPONENTE | MASTERKERNWABE 
- LINK # ICMK
+ LINK ⠆⡐⣀⢠ ICMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⍠ #
+ AXIOM ¡ ⠆⡐⣀⢠ ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠨⢂ ⍠ ⠆⡠⠃⠅
 
  # AXIOM | RAM 
- EINHEIT # · IC-KERN-1
+ EINHEIT ⠆⡠⠃⠅ · IC-KERN-1
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # RX-DATENKANAL-IC-KERN-1
+ PRÄFIX ⠆⡠⠃⠉ RX-DATENKANAL-IC-KERN-1
 
  # AXIOM | COMBINIERE  
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠃⢈ ⧓ ⠆⡠⠃⠅ Ξ ⠆⡠⠃⠊
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡠⠃⠊ ⥓ ⠆⡠⠃⠉ ⍠ ⠆⡠⠃⠌
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # ¬· RX-DATENKANAL-IC-KERN-1
+ EINHEIT ⠆⡠⠃⠌ ¬· RX-DATENKANAL-IC-KERN-1
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡠⠃⡐ ⦳ #
 
 ###====================================|====================================###
 

@@ -180,6 +180,112 @@ gut ... so dann gehe ich nochmal die logik durch bevor ich jetzt den rex ausetze
  hmm ... 
 
 
+ könnte man mit arbeit , sieht auf jedenfall sauber aus und lässt sich 
+ gehirn gerecht jedem kind beibringen oder jugendlichen ... 
+
+ also das was mcs als alleiniges merkmal besitzt : Menschengerechte  logik 
+ aber ohne verseuchte overhead logik und verseuchte target und wirrwarr 
+ symbolik 
+
+
+ dann wäre noch die einordnung selbst eine frage  
+
+ »—[×: 1 :×]—«
+       ↑
+        zu   ↓
+  ¬· »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤¤ [× <ERGEBNIS> :×]
+
+ weil in der funktion position A gefixt werden müsste 
+
+¢!
+ »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ↓
+  ¬· »—[×: <A> ++ 1 :×]—« <--- hier 
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): 1 :Ø
+
+          ± Ø: <A> :(1)—Ø
+          ± Ø: 1 :(2)—Ø
+      ¬· »—[×: (1) ++ (2) :×]—«
+          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢  
+
+den ohne anker wird das ru7nter geschickte 1 in die alu , erstmal 
+nur sagen „ ja gut .. A ist nicht besetzt also drück ich die 1 in A 
+            also 1 ++ 1 = 2 “
+
+ das heißt ich hab in dem punkt zwei möglichkeiten : 
+
+ - entweder lass ich in dem einen speziellen punkt die alu raten ..
+   was in anbetracht des restlichen systems , nichts ist in vergleich zu dem 
+   was andere systeme machen mit ihren rate spielen auf dauer schleife 
+
+ oder 
+
+ - ich veranker das .. 
+
+
+ wie aber verankern ? hmm ... 
+
+ »—[×: 1 ++ ? :×]—«
+
+ würde heißen ein fragezeichen ist in einer alu in pylovara system 
+ das schon benannte gegenstück ... und die zahl der freie platz 
+ in den fall <A> 
+
+ würde auch heißen bei komplexeren rechnungen das immer ein fragezeichen 
+ dazu geschrieben werden müsste ... was nervig sein kann ... aber präzise .. 
+
+
+ oder ich schreib später sobald der baumodus läuft einfach die funktion selbst 
+ für die platz bestimmungs angabe und muss nur eine regel aufstellen .. 
+
+ eine regel die besagt das vom ABC immer von links nach rechts bearbeitet wird 
+ und wenn A und B frei sind aber C eine nummer Trägt ... dann A vor B 
+ systematisch genommen wird und folge richtig B 
+
+ würde glaub sogar schulisch passen ... hmmm ... 
+
+
+ wenn ich meine grundlage für den baumodus , in meine wissenden gesprächspartner 
+ über logik abgleiche einfüttere ... 
+
+ merke ich im grunde nur eine geordnete rückgabe meiner arbeit die hier skizziert 
+ wird : 
+
+ ki geordneten out put : 
+
+### FUNKTION AUFBAU EINGANG AUSGANG
+- EINGANG: Empfängt Datenströme und weist sie freien Variablen (A, B, C...) zu.
+- AUSGANG: Legt das verarbeitete Ergebnis am Traktor zur Pipeline (Wabe 052) an.
+
+###############################################################################
+### FUNKTION AUFBAU AUFRUF 
+- ABRUF: Koppelt externe MCS-Transaktionen an bestehende Baumodus-Waben.
+- Keine Re-Evaluation von Code: Direkter Schaltkreis-Zugriff ohne Overhead.
+
+###############################################################################
+### VERMERK BAUMODUS MCD BEFEHLE : 
+- Kaskaden-Prinzip: Eingabe-Parameter füllen unbesetzte Stellen von links 
+  nach rechts (A -> B -> C).
+- Nitrox-Abfangung (÷ Ø): Ermöglicht das Anzapfen von Zwischenergebnissen 
+  in Zytron-Schleifen ohne Stack-Aufbau.
+
+###############################################################################
+### MÖGLICHE ERKLÄRUNG : 
+- Das System baut im Baumodus feste funktionale Hardware-Logiken (INTERN).
+- Der spätere Abruf (EXTERN) ist ein reiner Signal-Durchfluss über den On-Pipe 
+  Konnektor. Keinerlei Parsing oder Laufzeit-Raten erforderlich.
+
+
+ könnte ich als grundlage der sortierten gedanken und entscheidungen 
+ ding fest machen ... 
+
+ gut okey , also die zytron logik selbst ist jetzt halt ein bonus in der erklärung 
+ selbst ... aber das beschreibt den zusammen hang sehr gut .... gebündelt ..
+
+
 
 
 

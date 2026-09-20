@@ -24,233 +24,92 @@
  VON DER PIPELINE , DA DIE WABENHÄRTER MAL EINEN 
  PORT KANAL BRAUCHEN .. 
 
- 
- die baumodus entwicklung nimmt fahrt an , ich denke zu glauben das ich 
- die lösung für lizenz regelwerk gefunden habe ... 
-
- die baumodus definition wäre universall gültig und ausnahmslos 
- gleich .. 
-
- ob externe funktionen oder explizite , spiel dabei keine rolle mehr .. 
-
- die eingabe fungiert als target anker , existiert das target nicht , 
- gibts keine funktion . 
-
- weiter blickend wäre jedes target in einer ide session beim schreiben 
- sofort per popup eiblendbar und die fragen wie was funktioniert 
- sind sofort ersichtlich und erkennbar .
-
- icvh denke das ich mich nach dieser richtlinie in allen zukünftigen 
- funktionen halten werde und das vereinfacht den aufbau der basis 
- bibliothek imenz .. 
-
- zusätzlich lässt sich das ganze sehr gut erklären ... 
-
- wenn ich das auf den mark umünze wäre das auf einschlag 
- das obsolet machen aller programmiersprachen die c forks sind 
-
- was qwuasi 99% vom gesamt markt sind , nur mit eigenen kennungen .. 
-
- das umrüsten auf diese logik kann zwar jeder konzern versuchen , wird 
- aber alleine im aufbau der programmiersprache selbst scheitern , aufgrundlage 
- der mandala logik , die sie übernommen haben von c .. 
-
- die frage ob low oder high level plus speicher probleme , wäre hiermit 
- dann auch obsolet , ein relikt der vergangenheit ... 
-
- zumindest der c vergangenheit , worauf mcs nicht beruht . 
-
- das heißt bei der umsetzung halte ich weltweit , ungelogen : 
-
- die ei9nzige echte programmiersprache in den händen die wirklich 
- die probleme der vergangenheit löst , inklusive können funktionen 
- niemals legacy werden , da sie einer goldenen regel folgen .. 
-
- damit steigt der wert von mcs imenz .... und zwar imenz !
-
 ##### REX LÖSUNG ===============================================================
 
  REX KANÄLE INPUT .. 
  OUTPUT AUF AUSGANG STATT ALU UND STATUS 
 
+ KURZE GEDANKEN ... ICH BRAUCH 3 AUSGÄNGE .. 
+ ICH KOMM NICHT DRUM HERUM ... 
+
+ WENN JEMMAND NATIV KURZ DEN AUSGANG WILL 
+ BRAUCHS DEN STATUS FÜR POP UP FENSTER ODER SHELL 
+ ETC 
+
+ DER INTERN UND EXTERN KANAL FÜR DEN BAUMODUS 
+
+
  AUSGANG AUF 3 
 
- - INTERN 
- - EINBLENDUNG ( WOBEI DAS FENSTER VOM SYSTEM SELBST GEÖFFNET WIRD )
- - EXTERN 
+ - AUSGABE # NORMALER OUTPUT KANAL 
 
- Hab mir lange um den mechanismus gedanken gemacht , schluss endlich 
- ist es so das jeder status und alu ausgang ( jetzt dann AUSGANG) 
- so oder so verschaltet fungiert , dadurch muss ich keine expliziten 
- ausgänge zaubern sondern einen generalisierungten der per schaltungs 
- weg dann ausspuckt .. 
-
- da man code schreibt , schreibt man auch in welcher boxi es ausgegeben 
- werden soll/muss und damit schließt sich der kreis des problems für den 
- rex 
-
- ich werde dann ( gut heute wieder 30° , dumm gelaufen ... bei warmwetter 
- mach ich gar nichts , nicht mal denken oder furzen )
-
- anfangen ... morgen .... den rex fertig zu stellen .... 
-
- dann nochmal beim nitrox das rein raus gekritzel professioneller aber 
- dennoch flach deutsch umzubenennen ... 
-
- und dann vor dem sentiator die pipeline zu ende zu denken und aufzubauen . 
+ - INTERN  # BAUMODUS FUNKTION OUTPUT KANAL
+ - EXTERN  # BAUMODUS FUNKTION OUTPUT AUFNAHME KANAL 
 
 
- NEUE EINTRAG : 
-
- Ich kann den Rex so nicht lassen .... 
-
- ich muss erst die pipeline bauen für das on-pipe protein 
- und danach warscheinlich den rex nicht als gesamt programm sondern aufgeteiltes 
- programm behandeln .. 
-
- der input und der output kann ich nicht in einem programm definieren ... 
- es fühlt sich nach stunden über stunden des nachdenkens grundsätzlich falsch an .. 
-
- vor allem aber würde der output direkt im programm selbst mit der rex IN verbindung 
- zusammen laufen und das ist grundlegend falsch .. 
-
- ¬· —[<BXMK>]— 
- ↑  ↑
- in ↑
-    OUT ¬·¤ 
-
- ICH MÜSSTE DEN OUT  auch am wabenhärter anschließen können .. 
-
- ich kann zwar eine weggabelung einbauen , wäre dann aber eine komplexe 
- endwaben geschichte die eher wie eine bauwabe aussieht und dann als kinderwaben 
- modul als ausgang definiert wird .. 
-
- da alle boxis grundsätzlich einzelne programme sind , weil schneller und 
- performanter inklusive genauer und stabiler ... 
-
- muss ich mich bei beim rex für eine daten verarbeitungs linie entscheiden 
-
- die meisten prozessoren verarbeiten vorwärts ... rückwärts ist zwar möglich 
- aber blockiert das gatter ... 
-
- wenn ich sage 
-
- »—[ SPIEL START ]—«
- 
- BRAUCH ICH DIE IN KANÄLE für den datenstrom ... 
-
- auch bei funktionen ... egal was ... 
-
- davon abgesehen bräuchte ich für funktionen dann einen knoten punkt 
-
-
-
- —[×: 1 :×]—
- ¬· —[¥: PLUS-EINS :¥]—
-    ¬·¤¤
-     ↑
-     extern ... der interne ist in der funktion ... 
-     das heißt ich brauch den übergang zum internen zum externen kanal 
-     damit die 1 + 1 auch berechnet werden kann 
-
-     hmm ... spiegelung .... 
-
-
-
-¢!
- »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
-  ↓
-  ¬· »—[×: <A> ++ 1 :×]—«
-      ↓
-      ÷ Ø—(1): <A> :Ø
-      ÷ Ø—(2): 1 :Ø
-      ↓
-      ↓   ± Ø: <A> :(1)—Ø
-      ↓   ± Ø: 1 :(2)—Ø
-      ↓   ↓
-      ¬· »—[×: (1) ++ (2) :×]—«
-          ↓
-          ¬·¤¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-!¢     
-
- ICH müsste mich entscheiden ... oder die funktion der ausgabe anpassen 
-
- will ich intern funktionen dan extern auf ausgabe aufrufen ... 
-
- oder gleich schalten ... 
-
- wenn ich interne ¤ zur weitergabe nutze ... müssen sie auch extra 
- programmiert sein ... sonnst kann ich das schlecht an der pipeline 
- anbinden ... 
-
- gehen würde es schon , wäre nur sinnfrei ... overhead ist keine option .. 
-
-
-
-
- ich sollte im flow bauen ....
-
+ DATENKANAL
  ¬·
  ¬··
  ¬···
  ¬···· 
 
- alles ein programm ... 
-
+ AUSGABE
  ¬·¤
  ¬··¤
  ¬···¤
  ¬····¤
 
- alles ein programm 
-
- ¬·¤¤
+ INTERN
+ ¬·
  ¬··¤¤
  ¬···¤¤
  ¬····¤¤
 
- alles ein programm  
+ EXTERN
+ ¬·¤¤¤
+ ¬··¤¤¤
+ ¬···¤¤¤
+ ¬····¤¤¤
 
- alles anschließbar per wabenhärter ... 
+ KANN ICH DEN LEUTEN DREI GLEICHE ZEICHEN ZUTRAUEN ? 
+ ODER SOLL ICH DAS UMSTELLEN ? 
 
- on-pipe datenkanal nächste rein on oder off pipe 
+ ES GEHT DABEI UM ALLE AUSGÄNGE , DAS IST DAS DING .. 
 
- wäre die direkteste möglichkeit ohne dabei unötigen 
- balast mit ein zu schleppen .. 
+ eigentlich , wenn ich das mal durch denke .. 
 
- overhead ist keine option , overhead ist gift ... 
- performance ist ein natur gesetzt .. 
+ warum verknote ich intern extern nicht gleich in eins .. ? 
 
- ich sollte mich an den slogan halten ... 
+ dann gehts nur um den traktor schaltweg ? * hmm * 
 
- gut okey .... 
+ ich mein alle boxis sind I/O Kompaktibel ... 
 
- dann muss ich die pipeline vorher bauen .. 
+ ich muss im grunde nur die vorgeschaltete on-pipe 
+ an in kanal für den out kanal verwendet .. 
 
- dann den rex neu schreiben ... 
- dann sehe ich im flow wo was hingehört .. 
+ in der on-pipe selbst ist die boxi ja verbaut mit dem 
+ datensatz ... egal was ... ziel gerichtet ... 
 
- ich geh das nochmal ein oder zwei tage im kopf durch .. 
+ warte mal ... ich geh das jetzt nochmal durch .. 
 
- danach mach ich schicht im schacht .. 
+ ich werde definitiv keine spekulation einbauen sondern fakten 
+ und ich hab sie schon lange geschrieben .. 
 
- das ist entscheident auch für den sentiator output 
+ also raus holen ... boxis .... grmpf ... zeitfresser 
+
+ diese eine elende sache ... und ich werd das nix unix typisch 
+ hinklatschen ... wenns ähnelt von mir aus ... aber nur auf meiner basis 
 
 
- aktueller stand heute wetter ... 
- soll die tage endgültig aufhören mit über 25 grad und sonne 
 
- daran mach ich es fest ... heute ist so ein kühler sonniger tag .. 
- zuviel licht ... moral null ... brauchs trübe .. 
 
- warten auf die verdammte regenzeit .. 
 
- ICH MUSS DEN KNOTEN BEI DEM AUSBAU DER PIELINE VOM ON-PIPE PROTEIN 
- ZUR EIGESTÄNDIGEN KOMPONENTE PLATZEN LASSEN ... 
 
- DER REST IST DANN GLASKLAR ... 
 
- ERST DIE PIPELINE ... DANN DEN REX ... DANN SENTIATOR 
+
+
+
+
 
 
  SENTIATOR ========================================

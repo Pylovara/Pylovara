@@ -262,7 +262,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠌⠡ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⠌⠤ ⧓ ⠆⡠⠌⠨ Ξ ⠆⡠⠌⠰
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⠌⠰ ⧑ 
+ AXIOM ¡ ⠆⡠⠌⠰ ⧑ ⠆⡠⠉⡂
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⡠⠑⣀ ⍠ ⠆⡠⠌⡄
@@ -294,7 +294,7 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠌⡈ COMBOLINKWABE
  EINHEIT ⠆⡠⠊⢈ ¬··· RX-DATENKANAL-IC-KERN-3
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡠⠌⠰ ⦳ 
+ AXIOM ¡ ⠆⡠⠌⠰ ⦳ ⠆⡠⠉⡂
 
 ###====================================|====================================###
 
@@ -431,43 +431,43 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠊⠔ AUSFÜHRUNGSWABE
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # ENDWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⠉⠤ ENDWABE 
 
- PROGRAMM #
+ PROGRAMM ⠆⡠⠉⠨ DATENKANAL
 
- WABEN-ID # ED
+ WABEN-ID ⠆⡠⠉⠰ ED
 
- BION-NR # 028
+ BION-NR ⠆⡠⠉⡁ 028
 
- BION-ID # 
+ BION-ID ⠆⡠⠉⡂ ED028
 
- BSK #
+ BSK ⠆⡠⠉⡄ RXMKHTSTBAED-DATENKANAL
 
- BION # RX007MK007HT018ST018BA037ED028
+ BION ⠆⡠⠉⡈ RX007MK007HT018ST018BA037ED028
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠉⠰ ⧓ ⠆⡠⠉⡁ Ξ ⠆⡠⠉⡂
  # BION-ID FOLGESCHLUSS
- AXIOM ¡ # ͼ 
+ AXIOM ¡ ⠆⡠⠉⡂ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⡠⠊⢈ ⍠ #
+ AXIOM ¡ ⠆⡠⠊⢈ ⍠ ⠆⡠⠉⡐
 
- EINHEIT # ¬··· RX-DATENKANAL-IC-KERN-3
+ EINHEIT ⠆⡠⠉⡐ ¬··· RX-DATENKANAL-IC-KERN-3
 
-TOCHTERWABEN-KATEGORIE # AUSFÜHRUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠉⢁ AUSFÜHRUNGSWABE
 
  # AXIOM | NAME SETZEN  
- PRÄFIX #
+ PRÄFIX ⠆⡠⠉⢂ RX-DATENKANAL-IC-KERN-3
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ # 
+ AXIOM ¡ ⠆⡠⠉⡐ ⥓ ⠆⡠⠉⢂ ⍠ ⠆⡠⠅⢈ 
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # ¬··· RX-DATENKANAL-IC-KERN-3
+ EINHEIT ⠆⡠⠅⢈ ¬··· RX-DATENKANAL-IC-KERN-3
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦱ 
+ AXIOM ¡ ⠆⡠⠉⡂ ⦱ 
 
 ###====================================|====================================###
 

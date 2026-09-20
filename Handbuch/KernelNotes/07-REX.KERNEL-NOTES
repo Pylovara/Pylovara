@@ -553,45 +553,40 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠅⡈ STARTWABE
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⡠⠅⢄ ⧑ #
 
- TASTENCODE #
- TASTENCODE #
- TASTENCODE #
- TASTENCODE #
+ TASTENCODE ⠆⡠⠃⣀ ALTGR
+ TASTENCODE ⠆⡠⠅⠃ 6
+ TASTENCODE ⠆⡠⠅⠉ SHIFT
+ TASTENCODE ⠆⡠⠅⠊ 4
 
- SYMBOLE #
- SYMBOLE #
- SYMBOLE #
- SYMBOLE #
+ SYMBOLE ⠆⡠⠅⠌ ¬
+ SYMBOLE ⠆⡠⠅⠑ ¤
 
- PRÄFIX #
- PRÄFIX #
- PRÄFIX #
- PRÄFIX #
+ PRÄFIX ⠆⡠⠅⠒ RX-DATENKANAL
+ PRÄFIX ⠆⡠⠅⠔ RX-INTERN
 
  # PRODUKT
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⧓  Ξ 
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡠⠃⣀ ⦻ ⠆⡠⠅⠃ Ξ ⠆⡠⠅⠌
+ AXIOM ¡ ⠆⡠⠃⣀ ⦻ ⠆⡠⠅⠉ ⦻ ⠆⡠⠅⠊ Ξ ⠆⡠⠅⠑
+ AXIOM ¡ ⠆⡠⠅⠌ Ξ ⠆⡠⠅⠘
+ AXIOM ¡ ⠆⡠⠅⠑ Ξ ⠆⡠⠅⠡
 
- PRODUKT #
- PRODUKT #
- PRODUKT #
- PRODUKT #
+ PRODUKT ⠆⡠⠅⠘ ¬ 
+ PRODUKT ⠆⡠⠅⠡ ¤
 
  # TAGGEN PRÄFIX
- AXIOM ¡  ⥓ 
- AXIOM ¡  ⥓ 
+ AXIOM ¡ ⠆⡠⠅⠘ ⥓ ⠆⡠⠅⠒
+ AXIOM ¡ ⠆⡠⠅⠡ ⥓ ⠆⡠⠅⠔
 
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍠ 
- AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡ ⠆⡠⠅⠘ ⥗ ⠆⡠⠅⠒ ⍠ ⠆⡠⠃⠤
+ AXIOM ¡ ⠆⡠⠅⠡ ⥗ ⠆⡠⠅⠔ ⍠ ⠆⡠⠃⠨
 
  # EINHEIT | RAM
- EINHEIT #
+ EINHEIT ⠆⡠⠃⠤ ¬ RX-DATENKANAL
+ EINHEIT ⠆⡠⠃⠨ ¤ RX-INTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡠⠅⢄ ⦳ #
 
 ###====================================|====================================###
 

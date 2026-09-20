@@ -41,11 +41,11 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡄⡈ MASTERKERNWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⢁⡄⡐ ⧓ ⠆⢁⡄⡠ Ξ ⠆⢁⡄⢂
  # BION-ID FOLGEVERBINDUNG
- # NORMAL 
+ # DATENKANAL 
  AXIOM ¡ ⠆⢁⡄⢂ ⧑ ⠆⡠⠒⠡
- # INTERN 
- AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
- # EXTERN 
+ # DATENKANALINTERN 
+ AXIOM ¡ ⠆⢁⡄⢂ ⧑ ⠆⡠⠅⢄
+ # !EXTERN 
  AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
 
 ###====================================|====================================###
@@ -530,28 +530,28 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠅⠢ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡠⠅⠨ ⧓ ⠆⡠⠅⠰ Ξ ⠆⡠⠅⡁
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡠⠅⡁ ⧑ #
+ AXIOM ¡ ⠆⡠⠅⡁ ⧑ ⠆⡠⠅⢄
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⠅⡈ STARTWABE 
 
- PROGRAMM # 
+ PROGRAMM ⠆⡠⠅⡐ DATENKANALINTERN
 
- WABEN-ID # ST
+ WABEN-ID ⠆⡠⠅⢁ ST
 
- BION-NR # 
+ BION-NR ⠆⡠⠅⢂ 026 
 
- BION-ID # 
+ BION-ID ⠆⡠⠅⢄ ST026 
 
- BSK #
+ BSK ⠆⡠⠃⢐ RXMKHTST-DATENKANALINTERN
 
- BION # 
+ BION ⠆⡠⠃⢠ RX007MK007HT026ST026 
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠅⢁ ⧓ ⠆⡠⠅⢂ Ξ ⠆⡠⠅⢄
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡠⠅⢄ ⧑ #
 
  TASTENCODE #
  TASTENCODE #

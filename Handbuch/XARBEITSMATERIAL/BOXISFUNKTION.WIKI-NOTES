@@ -36,6 +36,277 @@ arbeitsfläche :
  !¢
 
 
+
+gut ... so dann gehe ich nochmal die logik durch bevor ich jetzt den rex ausetze  
+
+
+ —[": BAUMODUS FUNKTION FÜR EINGABE MIT DIREKTER SHELL AUSGABE ÜBER ECHO :"]— 
+ ¬· »—[¥: SHELL AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ 
+ so oder durch die on pipe 
+
+ —[
+ 
+ egal ob man eine unauführbare print boxi als kommentar davor setzt oder 
+ ob die funktion direkt darin definiert wird 
+
+ —[": BAUMODUS FUNKTION FÜR EINGABE MIT DIREKTER SHELL AUSGABE ÜBER ECHO :"]— 
+ ¬· »—[×: SHELL AUSGABE :×]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ 
+»—[¥: SHELL AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· 
+
+ muss klar sein das egal was angeschlossen wird , grundsätzlich 
+ am connector passiert und ein connector besitzt nur der on pipe ! 
+
+ also muss Rex generell dann in 54 pipeline so angeschlossen werden .. 
+
+ das heißt im arbeits verlauf beim rex selbst, das ich erstmal den rex selbst 
+ aufbaue und ihn dann in der pipeline definiere , wie die schaltung verläuft . 
+
+ gut ... 
+
+
+ aber dann der wichtige punkt 
+
+         ± Ø: (1) ++ BXMKHT-SHELL :(3)—Ø
+         ± Ø: <AUSGABE> :(2)—Ø
+     ¬· »—[×: (3 (2)) :×]—«
+         ¬·¤¤ »[': echo "<AUSGABE>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+           ↑↑ 
+
+           intern und extern .. 
+
+ ich muss jetzt klar sagen was der interne macht und was der externe macht 
+
+
+ ich würde sagen nachdem ich den rex runter gebaut habe bis zu den programm 
+ intern und extern ... 
+
+ das der anschluss überlauf jetzt sitzen muss .. 
+
+ intern für funktionen ? 
+ extern für die funktions benutzung in anderen mcs transaktionen ? 
+
+ im grunde ist es egal was ich da als beispiel heran ziehe , der übergang muss klar sein .. 
+
+
+ sagen wir ich bau eine einfache + 1 schleife ass funktion 
+
+ ¢!
+ »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ↓
+  ¬· »—[×: <A> ++ 1 :×]—«
+      ↓
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): 1 :Ø
+      ↓
+      ↓   ± Ø: <A> :(1)—Ø
+      ↓   ± Ø: 1 :(2)—Ø
+      ↓   ↓
+      ¬· »—[×: (1) ++ (2) :×]—«
+          ↓
+          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢  
+
+ und wenn die funktion gebaut ist ist sie abrufbar in der eingabe mit 
+
+  PLUS-EINS 
+
+  da der output im rex ictus kern <nr> intern , als ergebnis gelegt wird 
+
+
+  dann müssen wir das ergebnis abrufen können 
+
+
+ also bauen wir erst bzw schreiben wir erst den rahmen 
+ 
+ 
+ »—[¥:  :¥]—«««~:  :~«
+ 
+ 
+ für das eingabe boxi 
+ plus die abrufe funktion ... wenn wir es brauchen IM MCD  
+
+»—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+
+ damit haben wir dann die gebaute funktion auf abruf im code 
+
+ wenn ich also einen taschen rechner bauen will ... 
+ muss ich dann den ensprechenden rahmen dazu liefern .. 
+
+ sagen wir : 
+
+ »—[×: 1 :×]—«
+  ¬· »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤¤ [× <ERGEBNIS> :×]
+
+ wenn ich daraus eine schleife machen will dann später zytron 
+
+
+¢!
+ »—[×: 1 :×]—«
+
+      £‹1
+  ¬· »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤¤ »—[× <ERGEBNIS> :×]—« 
+            £›1
+!¢
+
+ will ich das regbenis abfangen bevor die schleife neu anfängt , dann 
+ klemm ich nitrox dazwischen ... , wenn ich das ergebnis für irgendwas später brauche 
+
+
+¢!
+ »—[×: 1 :×]—«
+
+      £‹1
+  ¬· »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤¤ »—[× <ERGEBNIS> :×]—« 
+            ÷ Ø—(23): <ABFANGEN> :Ø
+            £›1
+!¢
+
+ dann würde sich der ram speicher 23 im führenden feed aktualisieren und ich kann 
+ ihn ohne mühen an irgen etwas anderem einspeißen .. 
+
+ also muss ich darauf achten das der REX-ICTUS-KERN-<NR>-INTERN zum EXTERN 
+ in und output passt ... auf grundölage des on pipe darüber als direkter 
+ output ohne große mechanismen logiken um den overhead der alten Langs 
+ aus zu löschen und auf den baumodus hin zu arbeiten .. 
+
+ den der baumodus wäre der aufbau des system selbst ... 
+ hmm ... 
+
+
+
+
+
+################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################################
+
  ###############################
 ### notizen 
  ich werde die programme die gestartet werden sollen dann als mcd befehl 

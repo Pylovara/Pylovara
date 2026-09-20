@@ -135,7 +135,7 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠒⠨ STARTWABE
  # BA037 KERN 3
  AXIOM ¡ ⠆⡠⠒⡄ ⦳ ⠆⡠⠌⠰
  # BAUWABE KERN 4
- AXIOM ¡ ⠆⡠⠒⡄ ⦳
+ AXIOM ¡ ⠆⡠⠒⡄ ⦳ ⠆⡠⠌⠅
 
 ###====================================|====================================###
 
@@ -298,61 +298,58 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠌⡈ COMBOLINKWABE
 
 ###====================================|====================================###
 
- # NÄCHSTER KERN 4 SYSTEM-ID ICMK ERNEUERT
+MUTTERWABEN-KATEGORIE ⠆⡠⠊⢐ BAUWABE 
 
+ PROGRAMM ⠆⡠⠊⢠ DATENKANAL
 
-MUTTERWABEN-KATEGORIE # BAUWABE 
+ WABEN-ID ⠆⡠⠊⣀ BA
 
- PROGRAMM # DATENKANAL
+ BION-NR ⠆⡠⠌⠃ 038
 
- WABEN-ID # BA
+ BION-ID ⠆⡠⠌⠅ BA038
 
- BION-NR # 0
+ BSK ⠆⡠⠌⠉ RXMKHTSTBA-DATENKANAL
 
- BION-ID # BA0
-
- BSK # RXMKHTSTBA-DATENKANAL
-
- BION # RX007MK007HT018ST018BA0
+ BION ⠆⡠⠌⠊ RX007MK007HT018ST018BA038
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠊⣀ ⧓ ⠆⡠⠌⠃ Ξ ⠆⡠⠌⠅
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ 
+ AXIOM ¡ ⠆⡠⠌⠅ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡠⠑⣀ ⍠ ⠆⡠⠌⠑
 
  # EINHEIT | RAM
- EINHEIT # ¬ RX-DATENKANAL
+ EINHEIT ⠆⡠⠌⠑ ¬ RX-DATENKANAL
 
-TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡠⠌⠒ COMBOLINKWABE
 
  # LINK KOMPONENTE | MASTERKERNWABE 
  LINK ⠆⡠⠌⢁ ICMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ ⠆⡠⠌⢁ ⑅ # ⧑ # ⧑ # ⧑ # ⍠ #
+ AXIOM ¡ ⠆⡠⠌⢁ ⑅ # ⧑ # ⧑ # ⧑ # ⍠ ⠆⡠⠊⠘
 
  # AXIOM | RAM 
- EINHEIT # ···· IC-KERN-4
+ EINHEIT ⠆⡠⠊⠘ ···· IC-KERN-4
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # RX-DATENKANAL-IC-KERN-4
+ PRÄFIX ⠆⡠⠊⠡ RX-DATENKANAL-IC-KERN-4
 
  # AXIOM | COMBINIERE  
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠌⠑ ⧓ ⠆⡠⠊⠘ Ξ ⠆⡠⠊⠢
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡠⠊⠢ ⥓ ⠆⡠⠊⠡ ⍠ ⠆⡠⠊⠤
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # ¬···· RX-DATENKANAL-IC-KERN-4
+ EINHEIT ⠆⡠⠊⠤ ¬···· RX-DATENKANAL-IC-KERN-4
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ 
+ AXIOM ¡ ⠆⡠⠌⠅ ⦳ 
 
-
+###====================================|====================================###
 
 
 

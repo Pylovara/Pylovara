@@ -510,24 +510,6 @@ TOCHTERWABEN-KATEGORIE ⠆⡠⠉⠒ AUSFÜHRUNGSWABE
  AXIOM ¡ ⠆⡠⠉⠅ ⦱ 
 
 ###====================================|====================================###
-
- # WEITER REX-ICTUS-KERN/E ¬ / ····
-
- FERTIG = BAUWABE - COMBOLINKWABE FÜR ICTUS KERNE 1 BIS 4 
-
- FERTIG = ENDWABE - AUSFÜHRUNGWABE  
-
- BYTOWAY NOTIZ = SCHEIẞE ... ALTER ... MEIN VERFAHREN IST 
- FAST SO SCHNELL WIE EINE KI PER HAND UND SCHABLONEN DIE ENTWICKELT WURDEN .. 
-
- ICH GLAUB SO SCHNELL HAT NOCH NIE EINER EINE GANZE SEKTIONS DURCH PROGRAMMIERT 
-
- LACH ... WENN DER TWS ERSTMAL IN DIE 0.4 GEHT , WIRD DAS NOCH GEILER 
-
- AUSFÜHRUNGSWABE BYTOWAY KEINE ÜBERSCHREIBUNGEN MEHR IN DER 
- NÄCHSTEN VERSION ... UNÖTIG .. 
-
-###====================================|====================================###
 ###========================= REX-ICTUS-KERN-INTERN =========================###
 ###====================================|====================================###
 
@@ -614,6 +596,23 @@ MUTTERWABEN-KATEGORIE # STARTWABE
 ###====================================|====================================###
 
  # WEITER REX-ICTUS-KERN/E-INTERN ¬ / ···· / ¤
+
+
+ HAUPTWABE - STARTWABE - BAUWABE + COMBOLINKWABE - BAUWABE + INTERNWABE
+
+ INTERNWABE BAUEN ... INTERN MUSS EXTERN RUFEN ... WENN EINGEBAUT 
+
+ FÜR DEN BAUMODUS ... 
+
+ DIE EXTERN NIMMT DEN RUF AUF , SOLLTE ABER AUCH WENN GEBRAUCHT AUF 
+ FENSTER ZUGREIFEN ODER ZEILEN ... FÜR SPÄTERE SHELL INTEGRATION .. 
+
+ ICH BAU DAS ERST OHNE , DIE IMPLEMENTIERUNG BEI EXTERN FÜR FENSTER OUTPUT 
+ WÄRE TRIVIAL NACHGEREICHT .
+
+
+ ENDWABE - <NOCH OFFEN> 
+
 
 ###====================================|====================================###
 ###========================= REX-ICTUS-KERN-EXTERN =========================###

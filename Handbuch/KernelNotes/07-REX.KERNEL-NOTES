@@ -42,7 +42,7 @@ MUTTERWABEN-KATEGORIE ⠆⢁⡄⡈ MASTERKERNWABE
  AXIOM ¡ ⠆⢁⡄⡐ ⧓ ⠆⢁⡄⡠ Ξ ⠆⢁⡄⢂
  # BION-ID FOLGEVERBINDUNG
  # NORMAL 
- AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
+ AXIOM ¡ ⠆⢁⡄⢂ ⧑ ⠆⡠⠒⠡
  # INTERN 
  AXIOM ¡ ⠆⢁⡄⢂ ⧑ 
  # EXTERN 
@@ -65,24 +65,24 @@ WABENHÄRTER # VERTEILERHÄRTER
 ###============================= REX-ICTUS-KERN ============================###
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # HAUPTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡠⠒⠌ HAUPTWABE 
 
- PROGRAMM # 
+ PROGRAMM ⠆⡠⠒⠑ DATENKANAL
 
- WABEN-ID # HT
+ WABEN-ID ⠆⡠⠒⠔ HT
 
- BION-NR # 
+ BION-NR ⠆⡠⠒⠘ 018
 
- BION-ID # 
+ BION-ID ⠆⡠⠒⠡ HT018
 
- BSK # 
+ BSK ⠆⡠⠒⠢ RXMKHT-DATENKANAL
 
- BION # 
+ BION ⠆⡠⠒⠤ RX007MK007HT018
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡠⠒⠔ ⧓ ⠆⡠⠒⠘ Ξ ⠆⡠⠒⠡
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡠⠒⠡ ⧑ #
 
 ###====================================|====================================###
 
@@ -198,11 +198,56 @@ TOCHTERWABEN-KATEGORIE ⠆⢁⡂⡈ COMBOLINKWABE
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ # ⦳ 
 
+###====================================|====================================###
 
- ICH BAU DAS FÜR ALLE 4 SEPERAT ... ALSO 4 X DAS GLEICHE FÜR  ICTUS KERNE 
- DAMIT WÄRE ES PRÄZISE ANSTEUERBAR ... 
 
- DAS HEIẞT ABER AUCH 4 ENDWABEN ... DER BEREICH WIRD LANG .. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###====================================|====================================###
 

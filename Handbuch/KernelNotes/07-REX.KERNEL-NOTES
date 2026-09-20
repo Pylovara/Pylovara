@@ -590,6 +590,94 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠅⡈ STARTWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE # BAUWABE 
+
+ PROGRAMM #
+
+ WABEN-ID # BA
+
+ BION-NR # 052
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+
+ # EINHEIT | RAM
+ EINHEIT # 
+
+TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
+
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK # ICMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⍠ #
+
+ # AXIOM | RAM 
+ EINHEIT # · IC-KERN-1
+
+ # AXIOM | NAME SETZEN  
+ PRÄFIX # RX-DATENKANAL-IC-KERN-1
+
+ # AXIOM | COMBINIERE  
+ AXIOM ¡ # ⧓ # Ξ #
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⥓ # ⍠ #
+
+ # EINHEIT | RAM | VERLINKT FERTIG
+ EINHEIT # ¬· RX-DATENKANAL-IC-KERN-1
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # BAUWABE 
+
+ PROGRAMM #
+
+ WABEN-ID # BA
+
+ BION-NR # 053
+
+ BION-ID # 
+
+ BSK # 
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+
+ # EINHEIT | RAM
+ EINHEIT # 
+
+TOCHTERWABEN-KATEGORIE # <INTERNWABE-BAUEN>
+
+###====================================|====================================###
+
+
+###====================================|====================================###
+
+
+###====================================|====================================###
+
  # WEITER REX-ICTUS-KERN/E-INTERN ¬ / ···· / ¤
 
 

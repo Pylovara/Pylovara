@@ -2,21 +2,89 @@
 ###============================PYLOVARA-SYSTEM==============================###
 ###==============================KINDERMODUL================================###
 
-KINDERMODUL # EXTERNWABE
+ BAUSTELLE !!!!!!!!!!!!!!
 
- HONIGTROPFEN # <CORE-ART>
+KINDERMODUL # INTERNWABE
 
- # AXIOM | 
- AXIOM ¡ 
+ HONIGTROPFEN # <AUSGABE>
+
+ # LINK KOMPONENTE | MASTERKERNWABE | INPUT
+ LINK # PIMK
+
+ # AXIOM | LINK FOLGE | ON-PIPE-BXMK
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⧑ # Ξ #
+
+ # LINK KOMPONENTE | MASTERKERNWABE | OUTPUT
+ LINK # PIMK
+
+ # AXIOM | LINK FOLGE | ON & OFFPIPE-BXMK
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⧑ # Ξ #
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⧑ # Ξ #
+
+ # AXIOM | AUSGABE ÜBERGEBEN
+ AXIOM ¡ # ⟗ # ⧖⧖ #
+
+ AUSGABE # <AUSGABE>
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⍠ #
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT # 
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦱ 
+ AXIOM ¡ # ⦳ #
+
+---------------------------------------------------------------
+
+KINDERMODUL # EXTERNWABE
+
+ HONIGTROPFEN # <AUSGABE>
+
+ # INTERN | AUSGABE ABGREIFEN 
+ INTERN #
+ INTERN #
+ INTERN #
+ INTERN #
+
+ # AXIOM | INTERN | AUSGABE RÜBERHOLEN
+ AXIOM ¡ # Ξ #
+ AXIOM ¡ # Ξ #
+ AXIOM ¡ # Ξ #
+ AXIOM ¡ # Ξ #
+
+ # LINK KOMPONENTE | MASTERKERNWABE | INPUT
+ LINK # PIMK
+
+ # AXIOM | LINK FOLGE | ON-PIPE-BXMK
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⧑ # Ξ #
+
+ # LINK KOMPONENTE | MASTERKERNWABE | OUTPUT
+ LINK # PIMK
+
+ # AXIOM | LINK FOLGE | ON & OFFPIPE-BXMK
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⧑ # Ξ #
+ AXIOM ¡ # ⑅ # ⧑ # ⧑ # ⧑ # ⧑ # Ξ #
+
+ # AXIOM | AUSGABE ÜBERGEBEN
+ AXIOM ¡ # ⟗ # ⧖⧖ #INTERN# ⧖⧖ #AUSGABE#
+
+ AUSGABE # <AUSGABE>
+
+ # AXIOM | RAM 
+ AXIOM ¡ # ⍠ #
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT # 
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
 
 ###==============================INFORMATIONEN==============================###
 
 ###==========================VERWENDETE-WABEN===============================###
 ###===================ENTWICKLER-PROGRAMMIERUNGSBEREICH=====================###
 
- HONIGTROPFEN: CORE = 
+ HONIGTROPFEN: CORE = AUSGABE
 
 ###=====================INDUSTRIE-STANDARD-DER-ZUKUNFT======================###

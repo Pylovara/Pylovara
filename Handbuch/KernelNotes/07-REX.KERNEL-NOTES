@@ -686,10 +686,46 @@ TOCHTERWABEN-KATEGORIE ⠆⡐⣀⠰ COMBOPLUSWABE
 
 KINDERWABEN-KATEGORIE ⠆⡐⣀⡠ INTERNWABE
 
- HONIGTROPFEN ⠆⡐⣀⢁ < I/O >
+ HONIGTROPFEN ⠆⡐⣀⢁ <AUSGABE>
 
- # AXIOM | I/O
- AXIOM ¡ ⠆⡐⣀⡈ 
+ # LINK KOMPONENTE | MASTERKERNWABE 
+ LINK # PIMK
+
+ # AXIOM | LINK COMBINATOR  
+ AXIOM ¡ # ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ ⍠ #
+ AXIOM ¡ # ⑅ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂ ⍠ #
+
+######################################################
+
+
+ # AXIOM | AUSGABE INTERN ABHOLUNG ON-PIPE-BXHT-*
+ AXIOM ¡  
+
+ # AXIOM | AUSGABE HOLEN 
+ AXIOM ¡ # ⟗ ⧖⧖ # Ξ ⠆⡐⣀⢂
+
+ AUSGABE ⠆⡐⣀⢂ <AUSGABE>
+
+ # AXIOM | RAM 
+ AXIOM ¡ ⠆⡐⣀⡈ ⍠ ⠆⡐⣀⢄
+
+ # RAM GEBAUTE EINHEIT
+ EINHEIT ⠆⡐⣀⢄ ¬·¤ RX-RX-DATENKANAL-IC-KERN-1-RX-INTERN
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ ⠆⡠⠃⠡ ⦳ #
+
+
+
+
+
+
+
+
+
+
+
+
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  AXIOM ¡ # ⦳ #

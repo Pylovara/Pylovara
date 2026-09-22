@@ -1131,6 +1131,16 @@ KINDERWABEN-KATEGORIE ⠆⡐⢄⠡ INTERNWABE
 ###====================================|====================================###
 ###====================================|====================================###
 
+
+###====================================|====================================###
+
+ # WEITER REX-ICTUS-KERN/E-INTERN ¬ / ···· / ¤
+
+
+ FERTIG = HAUPTWABE - STARTWABE - BAUWABE + COMBOLINKWABE - BAUWABE + combopluswabe + INTERNWABE
+ 
+ OFFEN = ENDWABE + AUSFÜHRUNGSWABE 
+
  ESELSBRÜCKEN NOTIZ : 
 
  NACH DEM LANGE DENKEN BIN ICH DER MEINUNG DAS DIES DIE BESTE MÖGLICHKEIT IST UM 
@@ -1196,22 +1206,7 @@ KINDERWABEN-KATEGORIE ⠆⡐⢄⠡ INTERNWABE
  dann säubern ... sonnst überschneiden sich ältere logiken mit der 
  eigentlichen implementierung 
 
-
-
-
 ###====================================|====================================###
-
-
-###====================================|====================================###
-
- # WEITER REX-ICTUS-KERN/E-INTERN ¬ / ···· / ¤
-
-
- HAUPTWABE - STARTWABE - BAUWABE + COMBOLINKWABE - BAUWABE + combopluswabe + INTERNWABE
- = kern 1 fertig | offen 2-4
-
- ENDWABE - <NOCH OFFEN> 
-
 
 ###====================================|====================================###
 ###========================= REX-ICTUS-KERN-EXTERN =========================###

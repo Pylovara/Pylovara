@@ -688,21 +688,20 @@ KINDERWABEN-KATEGORIE ⠆⡐⣀⡠ INTERNWABE
 
  HONIGTROPFEN ⠆⡐⣀⢁ <AUSGABE>
 
- # LINK KOMPONENTE | MASTERKERNWABE 
- LINK # PIMK
+ # LINK KOMPONENTE | MASTERKERNWABE | INPUT
+ LINK ⠆⡐⣀⢈ PIMK
 
- # AXIOM | LINK COMBINATOR  
- AXIOM ¡ # ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ ⍠ #
- AXIOM ¡ # ⑅ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂ ⍠ #
+ # AXIOM | LINK FOLGE 
+ AXIOM ¡ ⠆⡐⣀⢈ ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ ⠆⡐⣀⠃
 
-######################################################
+ # LINK KOMPONENTE | MASTERKERNWABE | OUTPUT
+ LINK ⠆⡐⢠⣀ PIMK
 
+ # AXIOM | LINK FOLGE 
+ AXIOM ¡ ⠆⡐⢠⣀ ⑅ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂ Ξ ⠆⡐⣀⠅
 
- # AXIOM | AUSGABE INTERN ABHOLUNG ON-PIPE-BXHT-*
- AXIOM ¡  
-
- # AXIOM | AUSGABE HOLEN 
- AXIOM ¡ # ⟗ ⧖⧖ # Ξ ⠆⡐⣀⢂
+ # AXIOM | AUSGABE ÜBERGEBEN
+ AXIOM ¡ ⠆⡐⣀⠃ ⟗ ⠆⡐⣀⠅ ⧖⧖ ⠆⡐⣀⢂
 
  AUSGABE ⠆⡐⣀⢂ <AUSGABE>
 

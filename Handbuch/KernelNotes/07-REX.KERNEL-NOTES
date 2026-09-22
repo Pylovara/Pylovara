@@ -971,141 +971,132 @@ KINDERWABEN-KATEGORIE ⠆⡐⢈⢂ INTERNWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡐⢈⠌ BAUWABE 
 
+ PROGRAMM ⠆⡐⢈⠑ DATENKANALINTERN
 
+ WABEN-ID ⠆⡐⢈⠒ BA
 
+ BION-NR ⠆⡐⢈⠔ 058
 
+ BION-ID ⠆⡐⢈⠤ BA058
 
+ BSK ⠆⡐⢈⠡ RXMKHTSTBA-DATENKANALINTERN
 
-
-
-
-MUTTERWABEN-KATEGORIE # BAUWABE 
-
- PROGRAMM # DATENKANALINTERN
-
- WABEN-ID # BA
-
- BION-NR # 058
-
- BION-ID # BA058
-
- BSK # RXMKHTSTBA-DATENKANALINTERN
-
- BION # RX007MK007HT026ST026BA058
+ BION ⠆⡐⢈⠢ RX007MK007HT026ST026BA058
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⢈⠒ ⧓ ⠆⡐⢈⠔ Ξ ⠆⡐⢈⠤
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⢈⠤ ⧑ ⠆⡐⢄⣀
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ ⠆⡠⠃⠤ ⍠ #
+ AXIOM ¡ ⠆⡠⠃⠤ ⍠ ⠆⡐⢈⠨
 
  # EINHEIT | RAM
- EINHEIT # ¬ RX-DATENKANAL
+ EINHEIT ⠆⡐⢈⠨ ¬ RX-DATENKANAL
 
-TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡐⢈⠰ COMBOLINKWABE
 
  # LINK KOMPONENTE | MASTERKERNWABE 
- LINK # ICMK
+ LINK ⠆⡐⢄⡂ ICMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ # ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠤⠑ ⍠ #
+ AXIOM ¡ ⠆⡐⢄⡂ ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠤⠑ ⍠ ⠆⡐⢄⡄
 
  # AXIOM | RAM 
- EINHEIT # ···· IC-KERN-4
+ EINHEIT ⠆⡐⢄⡄ ···· IC-KERN-4
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # RX-DATENKANAL-IC-KERN-4
+ PRÄFIX ⠆⡐⢄⡈ RX-DATENKANAL-IC-KERN-4
 
  # AXIOM | COMBINIERE  
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⢈⠨ ⧓ ⠆⡐⢄⡄ Ξ ⠆⡐⢄⡠
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡐⢄⡠ ⥓ ⠆⡐⢄⡈ ⍠ ⠆⡐⢄⢁
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # ¬···· RX-DATENKANAL-IC-KERN-4
+ EINHEIT ⠆⡐⢄⢁ ¬···· RX-DATENKANAL-IC-KERN-4
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡐⢈⠤ ⦳ ⠆⡐⢄⣀
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # BAUWABE 
+MUTTERWABEN-KATEGORIE ⠆⡐⢄⢂ BAUWABE 
 
- PROGRAMM # DATENKANALINTERN
+ PROGRAMM ⠆⡐⢄⢈ DATENKANALINTERN
 
- WABEN-ID # BA
+ WABEN-ID ⠆⡐⢄⢐ BA
 
- BION-NR # 059
+ BION-NR ⠆⡐⢄⢠ 059
 
- BION-ID # BA059
+ BION-ID ⠆⡐⢄⣀ BA059
 
- BSK # RXMKHTSTBA-DATENKANALINTERN
+ BSK ⠆⡐⢈⠃ RXMKHTSTBA-DATENKANALINTERN
 
- BION # RX007MK007HT026ST026BA058BA059
+ BION ⠆⡐⢈⠅ RX007MK007HT026ST026BA058BA059
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⢄⢐ ⧓ ⠆⡐⢄⢠ Ξ ⠆⡐⢄⣀
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⢄⣀ ⧑ #
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
- AXIOM ¡ ⠆⡠⠃⠨ ⍠ #
+ AXIOM ¡ ⠆⡐⢄⢁ ⍠ ⠆⡐⢄⠊
+ AXIOM ¡ ⠆⡠⠃⠨ ⍠ ⠆⡐⢄⠌
 
  # EINHEIT | RAM
- EINHEIT # ¬···· RX-DATENKANAL-IC-KERN-4
- EINHEIT # ¤ RX-INTERN
+ EINHEIT ⠆⡐⢄⠊ ¬···· RX-DATENKANAL-IC-KERN-4
+ EINHEIT ⠆⡐⢄⠌ ¤ RX-INTERN
 
-TOCHTERWABEN-KATEGORIE # COMBOPLUSWABE
+TOCHTERWABEN-KATEGORIE ⠆⡐⢄⠑ COMBOPLUSWABE
 
  # AXIOM | KOMPONENTE BAUEN  
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⢄⠊ ⧓ ⠆⡐⢄⠌ Ξ ⠆⡐⢄⠒
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # RX-RX-DATENKANAL-IC-KERN-4-RX-INTERN
+ PRÄFIX ⠆⡐⢄⠔ RX-RX-DATENKANAL-IC-KERN-4-RX-INTERN
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡐⢄⠒ ⥓ ⠆⡐⢄⠔ ⍠ ⠆⡐⢄⠘
 
  # EINHEIT | RAM
- EINHEIT # ¬····¤ RX-RX-DATENKANAL-IC-KERN-4-RX-INTERN
+ EINHEIT ⠆⡐⢄⠘ ¬····¤ RX-RX-DATENKANAL-IC-KERN-4-RX-INTERN
 
-KINDERWABEN-KATEGORIE # INTERNWABE
+KINDERWABEN-KATEGORIE ⠆⡐⢄⠡ INTERNWABE
 
- HONIGTROPFEN # <AUSGABE>
+ HONIGTROPFEN ⠆⡐⢄⠢ <AUSGABE>
 
  # LINK KOMPONENTE | MASTERKERNWABE | INPUT
- LINK # PIMK
+ LINK ⠆⡐⢄⠤ PIMK
 
  # AXIOM | LINK FOLGE | ON-PIPE-BXMK
- AXIOM ¡ # ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ #
+ AXIOM ¡ ⠆⡐⢄⠤ ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ ⠆⡐⢄⠰
 
  # LINK KOMPONENTE | MASTERKERNWABE | OUTPUT
- LINK # PIMK
+ LINK ⠆⡐⢄⠨ PIMK
 
  # AXIOM | LINK FOLGE | ON & OFFPIPE-BXMK
- AXIOM ¡ # ⑅ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂ Ξ #
- AXIOM ¡ # ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ #
+ AXIOM ¡ ⠆⡐⢄⠨ ⑅ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂ Ξ ⠆⡐⢄⡁
+ AXIOM ¡ ⠆⡐⢄⠨ ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ ⠆⡐⢄⡁
 
  # AXIOM | AUSGABE ÜBERGEBEN
- AXIOM ¡ # ⟗ # ⧖⧖ #
+ AXIOM ¡ ⠆⡐⢄⠰ ⟗ ⠆⡐⢄⡁ ⧖⧖ ⠆⡐⢂⡄
 
- AUSGABE # <AUSGABE>
+ AUSGABE ⠆⡐⢂⡄ <AUSGABE>
 
  # AXIOM | RAM 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡐⢄⠘ ⍠ ⠆⡐⢂⡈
 
  # RAM GEBAUTE EINHEIT
- EINHEIT # ¬····¤ RX-RX-DATENKANAL-IC-KERN-4-RX-INTERN
+ EINHEIT ⠆⡐⢂⡈ ¬····¤ RX-RX-DATENKANAL-IC-KERN-4-RX-INTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡐⢄⣀ ⦳ #
 
-
+###====================================|====================================###
 
 
 

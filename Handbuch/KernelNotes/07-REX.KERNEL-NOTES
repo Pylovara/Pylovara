@@ -1342,12 +1342,12 @@ MUTTERWABEN-KATEGORIE ⠆⡐⡠⢠ STARTWABE
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
  # BA060
  AXIOM ¡ ⠆⡐⢁⠉ ⦳ ⠆⡐⡈⢠
- # BA0
- AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
- # BA0
- AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
- # BA0
- AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
+ # BA062
+ AXIOM ¡ ⠆⡐⢁⠉ ⦳ ⠆⡐⡄⠰
+ # BA064
+ AXIOM ¡ ⠆⡐⢁⠉ ⦳ ⠆⡐⡂⢐
+ # BA066
+ AXIOM ¡ ⠆⡐⢁⠉ ⦳ ⠆⡐⡂⢈
 
 ###====================================|====================================###
 
@@ -1485,159 +1485,139 @@ KINDERWABEN-KATEGORIE ⠆⡐⡄⣀ EXTERNWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡐⡄⠡ BAUWABE
 
+ PROGRAMM ⠆⡐⡄⠢ DATENKANALEXTERN
 
+ WABEN-ID ⠆⡐⡄⠤ BA 
 
+ WABEN-NR ⠆⡐⡄⠨ 062
 
+ BION-ID ⠆⡐⡄⠰ BA062
 
+ BSK ⠆⡐⡄⡁ RXMKHTSTBA-DATENKANALEXTERN
 
-
-
-
-
-
-
-
-
-
-
- !!!! vorbau 
-
-
-
-
-MUTTERWABEN-KATEGORIE # BAUWABE
-
- PROGRAMM #
-
- WABEN-ID # BA 
-
- WABEN-NR # 062
-
- BION-ID # BA062
-
- BSK # RXMKHTSTBA-DATENKANALEXTERN
-
- BION # RX007MK007HT027ST027BA062
+ BION ⠆⡐⡄⡂ RX007MK007HT027ST027BA062
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⡄⠤ ⧓ ⠆⡐⡄⠨ Ξ ⠆⡐⡄⠰
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ 
+ AXIOM ¡ ⠆⡐⡄⠰ ⧑ ⠆⡐⡂⢠
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡐⡠⡄ ⍠ ⠆⡐⡄⡈
 
  # EINHEIT | RAM
- EINHEIT # 
+ EINHEIT ⠆⡐⡄⡈ ¬ RX-DATENKANAL
 
-TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
+TOCHTERWABEN-KATEGORIE ⠆⡐⡄⡠ COMBOLINKWABE
 
  # LINK KOMPONENTE | MASTERKERNWABE 
- LINK # ICMK
+ LINK ⠆⡐⡄⢁ ICMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ # ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ # ⍠ #
+ AXIOM ¡ ⠆⡐⡄⢁ ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠨⠒ ⍠ ⠆⡐⡄⢂
 
  # AXIOM | RAM 
- EINHEIT # ·· IC-KERN-2
+ EINHEIT ⠆⡐⡄⢂ ·· IC-KERN-2
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # RX-DATENKANAL-IC-KERN-2
+ PRÄFIX ⠆⡐⡂⣀ RX-DATENKANAL-IC-KERN-2
 
  # AXIOM | COMBINIERE  
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⡄⡈ ⧓ ⠆⡐⡄⢂ Ξ ⠆⡐⡄⠃
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡐⡄⠃ ⥓ ⠆⡐⡂⣀ ⍠ ⠆⡐⡄⠅
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # ¬·· RX-DATENKANAL-IC-KERN-2
+ EINHEIT ⠆⡐⡄⠅ ¬·· RX-DATENKANAL-IC-KERN-2
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡐⡄⠰ ⦳ ⠆⡐⡂⢠
 
+###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡐⡄⠉ BAUWABE
 
-MUTTERWABEN-KATEGORIE # BAUWABE
+ PROGRAMM ⠆⡐⡄⠊ DATENKANALEXTERN
 
- PROGRAMM #
+ WABEN-ID ⠆⡐⡄⠌ BA 
 
- WABEN-ID # BA 
+ WABEN-NR ⠆⡐⡄⠑ 063
 
- WABEN-NR # 063
+ BION-ID ⠆⡐⡂⢠ BA063
 
- BION-ID # BA063
+ BSK ⠆⡐⡄⠒ RXMKHTSTBA-DATENKANALEXTERN
 
- BSK # RXMKHTSTBA-DATENKANALEXTERN
-
- BION # RX007MK007HT027ST027BA062BA063
+ BION ⠆⡐⡄⠔ RX007MK007HT027ST027BA062BA063
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⡄⠌ ⧓ ⠆⡐⡄⠑ Ξ ⠆⡐⡂⢠
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ 
+ AXIOM ¡ ⠆⡐⡂⢠ ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡐⡄⠅ ⍠ ⠆⡐⡂⠡
+ AXIOM ¡ ⠆⡐⡠⡈ ⍠ ⠆⡐⡂⠢
 
  # EINHEIT | RAM
- EINHEIT # 
- EINHEIT # 
+ EINHEIT ⠆⡐⡂⠡ ¬·· RX-DATENKANAL-IC-KERN-2
+ EINHEIT ⠆⡐⡂⠢ ¤¤ RX-EXTERN
 
-TOCHTERWABEN-KATEGORIE # COMBOPLUSWABE
+TOCHTERWABEN-KATEGORIE ⠆⡐⡂⠤ COMBOPLUSWABE
 
  # AXIOM | KOMPONENTE BAUEN  
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⡂⠡ ⧓ ⠆⡐⡂⠢ Ξ ⠆⡐⡂⠨
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # RX-DATENKANAL-IC-KERN-2-RX-EXTERN
+ PRÄFIX ⠆⡐⡂⠰ RX-DATENKANAL-IC-KERN-2-RX-EXTERN
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ #
+ AXIOM ¡ ⠆⡐⡂⠨ ⥓ ⠆⡐⡂⠰ ⍠ ⠆⡐⡂⡁
 
  # EINHEIT | RAM
- EINHEIT # ¬··¤¤ RX-DATENKANAL-IC-KERN-2-RX-EXTERN
+ EINHEIT ⠆⡐⡂⡁ ¬··¤¤ RX-DATENKANAL-IC-KERN-2-RX-EXTERN
 
-KINDERWABEN-KATEGORIE # EXTERNWABE
+KINDERWABEN-KATEGORIE ⠆⡐⡂⡄ EXTERNWABE
 
- HONIGTROPFEN # <AUSGABE>
+ HONIGTROPFEN ⠆⡐⡂⡈ <AUSGABE>
 
  # INTERN | AUSGABE ABGREIFEN | IDENTISCHE INTERNWABE-AUSGABEN-SYSTEM-ID
- INTERN #
+ # SYSTEM-ID PORT VON RX-DATENKANAL-IC-KERN-2-RX-INTERN | BA055 
+ INTERN ⠆⡐⢐⡁
 
  # AXIOM | INTERN | AUSGABE RÜBERHOLEN
- AXIOM ¡ # ⑀ #
+ AXIOM ¡ ⠆⡐⢐⡁ ⑀ ⠆⡐⡂⡠
 
  # LINK KOMPONENTE | MASTERKERNWABE | INPUT
- LINK # PIMK
+ LINK ⠆⡐⡂⢂ PIMK
 
  # AXIOM | LINK FOLGE | ON-PIPE-BXMK
- AXIOM ¡ # ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ #
+ AXIOM ¡ ⠆⡐⡂⢂ ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ ⠆⡐⡂⢄
 
  # LINK KOMPONENTE | MASTERKERNWABE | OUTPUT
- LINK # PIMK
+ LINK ⠆⡐⡁⢐ PIMK
 
  # AXIOM | LINK FOLGE | ON & OFFPIPE-BXMK
- AXIOM ¡ # ⑅ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂ Ξ #
- AXIOM ¡ # ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ #
+ AXIOM ¡ ⠆⡐⡁⢐ ⑅ ⠆⢁⠘⢐ ⧑ ⠆⢁⠘⠑ ⧑ ⠆⢁⠔⠊ ⧑ ⠆⢁⠒⠑ ⧑ ⠆⢁⠑⢂ Ξ ⠆⡐⡁⢠
+ AXIOM ¡ ⠆⡐⡁⢐ ⑅ ⠆⢄⡂⠘ ⧑ ⠆⢄⡁⡈ ⧑ ⠆⢁⢈⠰ ⧑ ⠆⢁⢂⠔ ⧑ ⠆⢁⡐⢠ Ξ ⠆⡐⡁⢠
 
  # AXIOM | AUSGABE ÜBERGEBEN
- AXIOM ¡ # ⟗ # ⧖⧖ #INTERN# ⧖⧖ #AUSGABE#
+ AXIOM ¡ ⠆⡐⡂⢄ ⟗ ⠆⡐⡁⢠ ⧖⧖ ⠆⡐⢐⡁ ⧖⧖ ⠆⡐⡂⡠
 
- AUSGABE # <AUSGABE>
+ AUSGABE ⠆⡐⡂⡠ <AUSGABE>
 
  # AXIOM | RAM 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡐⡂⡁ ⍠ ⠆⡐⡂⢁
 
  # RAM GEBAUTE EINHEIT
- EINHEIT # 
+ EINHEIT ⠆⡐⡂⢁ ¬··¤¤ RX-DATENKANAL-IC-KERN-2-RX-EXTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡐⡂⢠ ⦳ #
 
-
+###====================================|====================================###
 
 
 
@@ -1652,7 +1632,7 @@ MUTTERWABEN-KATEGORIE # BAUWABE
 
  WABEN-NR # 064
 
- BION-ID # BA064
+ BION-ID ⠆⡐⡂⢐ BA064
 
  BSK # RXMKHTSTBA-DATENKANALEXTERN
 
@@ -1664,7 +1644,7 @@ MUTTERWABEN-KATEGORIE # BAUWABE
  AXIOM ¡ # ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡐⡠⡄ ⍠ #
 
  # EINHEIT | RAM
  EINHEIT # 
@@ -1675,7 +1655,7 @@ TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
  LINK # ICMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ # ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ # ⍠ #
+ AXIOM ¡ # ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠤⡠ ⍠ #
 
  # AXIOM | RAM 
  EINHEIT # ··· IC-KERN-3
@@ -1793,7 +1773,7 @@ MUTTERWABEN-KATEGORIE # BAUWABE
 
  WABEN-NR # 066
 
- BION-ID # BA066
+ BION-ID ⠆⡐⡂⢈ BA066
 
  BSK # RXMKHTSTBA-DATENKANALEXTERN
 
@@ -1805,7 +1785,7 @@ MUTTERWABEN-KATEGORIE # BAUWABE
  AXIOM ¡ # ⧑ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡐⡠⡄ ⍠ #
 
  # EINHEIT | RAM
  EINHEIT # 
@@ -1816,7 +1796,7 @@ TOCHTERWABEN-KATEGORIE # COMBOLINKWABE
  LINK # ICMK
 
  # AXIOM | LINK COMBINATOR  
- AXIOM ¡ # ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ # ⍠ #
+ AXIOM ¡ # ⑅ ⠆⢁⡂⠉ ⧑ ⠆⢁⡁⠢ ⧑ ⠆⢁⡁⡐ ⧑ ⠆⢁⠤⠑ ⍠ #
 
  # AXIOM | RAM 
  EINHEIT # ···· IC-KERN-4

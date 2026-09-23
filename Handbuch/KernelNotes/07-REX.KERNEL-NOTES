@@ -1284,68 +1284,85 @@ MUTTERWABEN-KATEGORIE ⠆⡐⢁⡂ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡐⡠⢁ ⧓ ⠆⡐⡠⢂ Ξ ⠆⡐⡠⢄
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡐⡠⢄ ⧑ #
+ AXIOM ¡ ⠆⡐⡠⢄ ⧑ ⠆⡐⢁⠉
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡐⡠⢠ STARTWABE 
 
- PROGRAMM # 
+ PROGRAMM ⠆⡐⡠⣀ DATENKANALEXTERN
 
- WABEN-ID # ST
+ WABEN-ID ⠆⡐⢁⠃ ST
 
- BION-NR # 027
+ BION-NR ⠆⡐⢁⠅ 027
 
- BION-ID # 
+ BION-ID ⠆⡐⢁⠉ ST027
 
- BSK #
+ BSK ⠆⡐⢁⠊ RXMKHTST-DATENKANALEXTERN
 
- BION # 
+ BION ⠆⡐⢁⠌ RX007MK007HT027ST027
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⢁⠃ ⧓ ⠆⡐⢁⠅ Ξ ⠆⡐⢁⠉
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⢁⠉ ⧑ #
 
- TASTENCODE # ALTGR
- TASTENCODE # 6
- TASTENCODE # SHIFT
- TASTENCODE # 4
+ TASTENCODE ⠆⡐⡠⠒ ALTGR
+ TASTENCODE ⠆⡐⡠⠔ 6
+ TASTENCODE ⠆⡐⡠⠘ SHIFT
+ TASTENCODE ⠆⡐⡠⠡ 4
 
- SYMBOLE # ¬
- SYMBOLE # ¤
+ SYMBOLE ⠆⡐⡠⠢ ¬
+ SYMBOLE ⠆⡐⡠⠤ ¤
 
- PRÄFIX # RX-DATENKANAL
- PRÄFIX # RX-EXTERN
+ PRÄFIX ⠆⡐⡠⠨ RX-DATENKANAL
+ PRÄFIX ⠆⡐⡠⠰ RX-EXTERN
 
  # PRODUKT
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⧓  Ξ 
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡐⡠⠒ ⦻ ⠆⡐⡠⠔ Ξ ⠆⡐⡠⠢
+ AXIOM ¡ ⠆⡐⡠⠒ ⦻ ⠆⡐⡠⠘ ⦻ ⠆⡐⡠⠡ Ξ ⠆⡐⡠⠤
+ AXIOM ¡ ⠆⡐⡠⠢ Ξ ⠆⡐⡠⡁
+ AXIOM ¡ ⠆⡐⡠⠤ ⧓ ⠆⡐⡠⠤ Ξ ⠆⡐⡠⡂
 
- PRODUKT # ¬
- PRODUKT # ¤
+ PRODUKT ⠆⡐⡠⡁ ¬
+ PRODUKT ⠆⡐⡠⡂ ¤¤
 
  # TAGGEN PRÄFIX
- AXIOM ¡  ⥓ 
- AXIOM ¡  ⥓ 
+ AXIOM ¡ ⠆⡐⡠⡁ ⥓ ⠆⡐⡠⠨
+ AXIOM ¡ ⠆⡐⡠⡂ ⥓ ⠆⡐⡠⡂
 
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍠ 
- AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡ ⠆⡐⡠⡁ ⥗ ⠆⡐⡠⠨ ⍠ ⠆⡐⡠⡄
+ AXIOM ¡ ⠆⡐⡠⡂ ⥗ ⠆⡐⡠⡂ ⍠ ⠆⡐⡠⡈
 
  # EINHEIT | RAM
- EINHEIT #
+ EINHEIT ⠆⡐⡠⡄ ¬ RX-DATENKANAL
+ EINHEIT ⠆⡐⡠⡈ ¤¤ RX-EXTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
-
+ # BA0
+ AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
+ # BA0
+ AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
+ # BA0
+ AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
+ # BA0
+ AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
+ 
 ###====================================|====================================###
 
- # WEITER REX-ICTUS-KERN/E-EXTERN ¬ / ···· / ¤¤
 
-###====================================|====================================###
+
+
+
+
+
+
+
+
+
+
+
 
  
 

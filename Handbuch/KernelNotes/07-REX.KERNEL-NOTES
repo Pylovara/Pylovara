@@ -1340,7 +1340,7 @@ MUTTERWABEN-KATEGORIE ⠆⡐⡠⢠ STARTWABE
  EINHEIT ⠆⡐⡠⡈ ¤¤ RX-EXTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- # BA0
+ # BA060
  AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
  # BA0
  AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
@@ -1348,8 +1348,82 @@ MUTTERWABEN-KATEGORIE ⠆⡐⡠⢠ STARTWABE
  AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
  # BA0
  AXIOM ¡ ⠆⡐⢁⠉ ⦳ #
- 
+
 ###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # BAUWABE
+
+ PROGRAMM #
+
+ WABEN-ID # BA 
+
+ WABEN-NR # 060 
+
+ BION-ID # BA060
+
+ BSK # RXMKHTSTBA-DATENKANALEXTERN
+
+ BION # RX007MK007HT027ST027BA60
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ 
+
+ # AXIOM | HOLE RAM EINHEIT 
+ AXIOM ¡ # ⍠ #
+
+ # EINHEIT | RAM
+ EINHEIT # 
+
+TOCHTERWABEN-KATEGORIE # 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

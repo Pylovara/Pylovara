@@ -76,15 +76,115 @@
 
  gut ... genug gequasselt .... erstmal sicht verschaffen ... 
 
- 
+
+ erstmal durch gehen , was genauer ist 
+
+ ¢!
+ »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ↓
+  ¬· »—[×: <A> ++ <B> :×]—«
+      ↓
+      ÷ Ø—(1): <A> :Ø
+      ÷ Ø—(2): <B> :Ø
+      ↓
+      ↓   ± Ø: <A> :(1)—Ø
+      ↓   ± Ø: <B> :(2)—Ø
+      ↓   ↓
+      ¬· »—[×: (1) ++ (2) :×]—«
+          ↓
+          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢ 
+
+
+ ¢!
+ —[": RECHNUNGSVARIABLE :"]—
+
+ ¬· »—[¥: A :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ Ø—(1): A :Ø
+
+ ¬· »—[¥: B :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ Ø—(2): B :Ø
+
+ ¬· »—[¥: 2 :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ Ø—(3): 2 :Ø
+
+ ¬· »—[¥: 2 :¥]—«««~: ADD <Register|Speicherplatz|Konstante> :~«
+     ÷ Ø—(4): 2 :Ø
+
+      ± Ø: A :(1)—Ø
+      ± Ø: 2 :(3)—Ø
+ ¶ ¬· —[×: (1) = (3) :×]—
+      ÷ Ø—(5): (1) = (3) :Ø
+
+         ± Ø: B :(2)—Ø
+         ± Ø: 2 :(4)—Ø
+      ¬· —[×: (2) = (4) :×]—
+         ÷ Ø—(6): (2) = (4) :Ø
+
+           ± Ø: (1) = (3) :(5)—Ø
+           ± Ø: (2) = (4) :(6)—Ø
+      ¶ ¬· —[×: (5) ++ (6) :×]—
+           ¬·¤ [×: <ERGEBNIS> :×]
+ !¢
 
 
 
 
+ moment ... erstmal eins : 
+
+==============================================================
+Architektur : x86-64  (Intel / AMD – Windows, Linux, Xbox)
+==============================================================
+Symbol  |  Opcode (häufigste Form)
+--------+------------------------------------------
+  ++    |  01 /r          oder  03 /r
+  --    |  29 /r          oder  2B /r
+  ××    |  0F AF /r       (IMUL)   oder  F7 /4
+  ÷÷    |  F7 /6          (DIV)    oder  F7 /7 (IDIV)
 
 
+==============================================================
+Architektur : ARM64  (Apple M1/M2/M3, Android, Server)
+==============================================================
+Symbol  |  Opcode (häufigste Form)
+--------+------------------------------------------
+  ++    |  8B xx xx xx     (ADD Xd, Xn, Xm)
+  --    |  CB xx xx xx     (SUB Xd, Xn, Xm)
+  ××    |  9B xx xx xx     (MUL Xd, Xn, Xm)
+  ÷÷    |  9A xx xx xx     (UDIV / SDIV)
 
 
+==============================================================
+Architektur : RISC-V  (Linux, Embedded, Zukunft)
+==============================================================
+Symbol  |  Opcode (häufigste Form)
+--------+------------------------------------------
+  ++    |  0110011  + funct3=000  (ADD)
+  --    |  0110011  + funct3=000  + funct7=0100000  (SUB)
+  ××    |  0110011  + funct3=000  + funct7=0000001  (MUL)
+  ÷÷    |  0110011  + funct3=100  + funct7=0000001  (DIV)
+
+
+ symbole sind für mich visuell erstmal ... die opcodes sollten stimmen .. 
+
+ tabelle kommt von grok ... wenn der nicht weis welche isa was hat .. 
+ dann fress ich ein besen ... 
+ ich wüsste aus dem standgreif nicht und ich müsste jetzt stunden lang rum gucken ...
+ keiner der hersteller hat einen offen kernel ... alles nur spaghetti code 
+ da findste selbst mit einem endcoder hack , null ... 
+
+ wenn ich mir deren kernel anschaue , kotz ich eh im strahl ... 
+ unsauberer kann man kaum arbeiten ... liegt aber auch an den Langs .. 
+
+ sieht aus wie dahingewichst ... 
+
+
+ gut ich hab was ich brauch .... das heißt ... ich schreib die 
+ mathe bibliothek gleich nativ für alle architekturen ... 
+
+ in so fern sie mit vor liegen ... also die opcodes ... 
+
+ gut jetzt einen kalten kaafe *.* dannn gehts los 
 
 
 

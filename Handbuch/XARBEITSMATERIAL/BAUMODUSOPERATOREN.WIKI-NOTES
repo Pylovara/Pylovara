@@ -70,4 +70,26 @@ MCS | MINUS   = -- | ASSEMBLER SUB ODER ADD MIT INVERTIERTEM WERT
 MCS | MAL     = ×× | ASSEMBLER MUL ODER SCHLEIFE AUS ADD UND SHL 
 MCS | GETEILT = ÷÷ | ASSEMBLER DIV ( WOBEI ... CA 40 ZYKLEN )
 
+mhhh .... ich bin mit der logik unzufrieden .. 
+
+liegt wohl daran das ich die bienenkönigin anders geplant habe ..
+
+ich kann das ja im hinterkopf behalten aber so bauen .. 
+
+ wobei mich geteilt stört .... 40 zyklen ... unfassbar .. 
+
+ dec und inc werden so oder so als jump genutzt .. 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 ###############################################################################

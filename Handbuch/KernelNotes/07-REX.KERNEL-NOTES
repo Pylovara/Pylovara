@@ -1710,7 +1710,7 @@ MUTTERWABEN-KATEGORIE ⠆⡐⡁⡂ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡐⡁⡈ ⧓ ⠆⡐⡁⡠ Ξ ⠆⡐⡁⢁
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡐⡁⢁ ⧑ 
+ AXIOM ¡ ⠆⡐⡁⢁ ⧑ ⠆⡐⠤⠅
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⡐⡁⠤ ⍠ ⠆⡐⡁⠨
@@ -1770,7 +1770,7 @@ KINDERWABEN-KATEGORIE ⠆⡐⡁⠅ EXTERNWABE
  EINHEIT ⠆⡐⡁⠘ ¬···¤¤ RX-DATENKANAL-IC-KERN-3-RX-EXTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡐⡁⢁ ⦳ #
+ AXIOM ¡ ⠆⡐⡁⢁ ⦳ ⠆⡐⠤⠅
 
 ###====================================|====================================###
 
@@ -1844,7 +1844,7 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠨⡂ BAUWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡐⠨⡈ ⧓ ⠆⡐⠨⡠ Ξ ⠆⡐⠨⢁
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡐⠨⢁ ⧑ 
+ AXIOM ¡ ⠆⡐⠨⢁ ⧑ ⠆⡐⠢⡄
 
  # AXIOM | HOLE RAM EINHEIT 
  AXIOM ¡ ⠆⡐⠰⢐ ⍠ ⠆⡐⠨⣀
@@ -1904,7 +1904,7 @@ KINDERWABEN-KATEGORIE ⠆⡐⠰⠑ EXTERNWABE
  EINHEIT ⠆⡐⠨⡁ ¬····¤¤ RX-DATENKANAL-IC-KERN-4-RX-EXTERN
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ ⠆⡐⠨⢁ ⦳ #
+ AXIOM ¡ ⠆⡐⠨⢁ ⦳ ⠆⡐⠢⡄
 
 ###====================================|====================================###
 
@@ -2028,49 +2028,47 @@ TOCHTERWABEN-KATEGORIE ⠆⡐⠤⠔ AUSFÜHRUNGSWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡐⠤⠢ ENDWABE 
 
+ PROGRAMM ⠆⡐⠤⠨ DATENKANALEXTERN
 
-MUTTERWABEN-KATEGORIE # ENDWABE 
+ WABEN-ID ⠆⡐⠤⠰ ED 
 
- PROGRAMM # DATENKANALEXTERN
+ BION-NR ⠆⡐⠢⡂ 043
 
- WABEN-ID # ED 
+ BION-ID ⠆⡐⠢⡄ ED043
 
- BION-NR # 043
+ BSK ⠆⡐⠢⡈ RXMKHTSTBABAED-DATENKANALEXTERN
 
- BION-ID #
-
- BSK # RXMKHTSTBABAED-DATENKANALEXTERN
-
- BION #
+ BION ⠆⡐⠢⡠ RX007MK007HT027ST027BA066BA067ED043
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⠤⠰ ⧓ ⠆⡐⠢⡂ Ξ ⠆⡐⠢⡄
  # BION-ID FOLGESCHLUSS
- AXIOM ¡ # ͼ 
+ AXIOM ¡ ⠆⡐⠢⡄ ͼ 
 
  # AXIOM | HOLE RAM EINHEIT 
- AXIOM ¡ # ⍠ #
+ AXIOM ¡ ⠆⡐⠨⡁ ⍠ ⠆⡐⠢⢁
 
- EINHEIT # ¬····¤ RX-DATENKANAL-IC-KERN-4-RX-EXTERN
+ EINHEIT ⠆⡐⠢⢁ ¬····¤¤ RX-DATENKANAL-IC-KERN-4-RX-EXTERN
 
-TOCHTERWABEN-KATEGORIE # AUSFÜHRUNGSWABE
+TOCHTERWABEN-KATEGORIE ⠆⡐⠢⢂ AUSFÜHRUNGSWABE
 
  # AXIOM | NAME SETZEN  
- PRÄFIX # ¬····¤ RX-DATENKANAL-IC-KERN-4-RX-EXTERN
+ PRÄFIX ⠆⡐⠢⢄ RX-DATENKANAL-IC-KERN-4-RX-EXTERN
 
  # AXIOM | RAM 
- AXIOM ¡ # ⥓ # ⍠ # 
+ AXIOM ¡ ⠆⡐⠢⢁ ⥓ ⠆⡐⠢⢄ ⍠ ⠆⡐⠢⢈ 
 
  # EINHEIT | RAM | VERLINKT FERTIG
- EINHEIT # ¬····¤ RX-DATENKANAL-IC-KERN-4-RX-EXTERN 
+ EINHEIT ⠆⡐⠢⢈ ¬····¤¤ RX-DATENKANAL-IC-KERN-4-RX-EXTERN 
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦱ 
+ AXIOM ¡ ⠆⡐⠢⡄ ⦱ 
 
+###====================================|====================================###
 
-
-
+ SO ... O'ZAPFT IS !
 
 
 
@@ -2098,7 +2096,7 @@ TOCHTERWABEN-KATEGORIE # AUSFÜHRUNGSWABE
 
  FERTIG = HAUPTWABE + STARTWABE + BAUWABE - COMBOLINKWABE + BAUWABE - COMBOPLUSWABE - EXTERNWABE
  
- OFFEN = ENDWABE - AUSFÜHRUNGSWABE 
+ FERTIG = ENDWABE - AUSFÜHRUNGSWABE 
 
 -----------------------------
 

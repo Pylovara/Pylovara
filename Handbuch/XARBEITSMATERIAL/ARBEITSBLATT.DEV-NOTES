@@ -11,10 +11,84 @@
  BEIBEHALTUNG VON DER UPDATE NOTIZ BEREICHEN.
  MCS GRUNDRECHEN FUNKTIONEN GEMÜTLICH VORBAUEN.
 
- GUCKEN OB ICH NOCH WAS ZU NASCHEN HAB ....
- HEUTE HÄT ICH BOCK WAS ZU RAUCHEN ... 
+ Ich hab jetzt erstmal angefangen die system basis bibliothek in MCS 
+ aufzubauen und hab einige kleine vorgehensweisen etabliert .. 
 
- GANZ WICHTIG : WO IST DIE TAFEL SCHOCKOLADE !
+ da ich den entwickler auch die 1 als ram feed speicher 
+ von grund auf ermöglichen will ... habe ich beschlossen 
+ selbst 3x1 system ids als ram adressierung zu nehmen .. 
+
+ da es funktionen sind , werden funktionen per namen in 
+ die eingabe boxi geaddet und abgerufen ... 
+
+ daher sieht man das nicht , vorrausgesetzt man schaut nach 
+ und selbst wenn man nachschaut ist die verknüpfung mit 
+ einem einfach drauf klicken direkt sichtbar .. 
+
+ ob das jemmand ankreiden will waage ich zu bezweifeln 
+ den die cpu kann patter aus dem FF ... 
+
+ ich bin mit dem ersten prototyp entwurf in der hinsicht 
+ heute zufrieden und bau das aus .. 
+
+ es wäre ansich vielleicht gar nicht mal so schlecht 
+ eine boxi zu bauen die anordnungen zulässt, dann 
+ muss ich die anordnung selbst nicht auf der alu bauen , sondern die alu 
+ bekommt die komplette schaltung direkt .. 
+
+ wobei mehr genauichkeit fast schon unmöglich ist , bis auf 
+ den einen punkt den ich noch verfolge : 
+
+ den heiligen gral der informatik : 
+
+ „ eine funktion die sich selbst erklärt  “
+
+ im grunde kann ich alle ebenen in eine schreiben statts aufrufe 
+ rein zu schreiben ... hab ich aber nicht gemacht weil 
+ ich irgendwie im urin habe das es so dann bausteintechnisch besser 
+ in der endbenutzung ist ... 
+
+ platzhalter sind somit immer leer und können als leere in neuen 
+ funktionen genommen werden und diese können grundsätzlich 
+ von a bis z und darüber hinaus , aufgebaut werden ... 
+
+ bis zu dem punkt wo man neue buchstaben die nicht existieren 
+ erschafft ... also das was ich schon damals herausgearbeitet habe 
+ mit den undendlichen buchstaben für funktionen in kette , was 
+ die ki anscheinend für sich selbst auch nutzt ... 
+
+ mal von der token buchstaben und wort gatter logik abgesehen .. 
+
+ ich würde ja zugern mit den hexagrammen anfangen zu arbeiten .. 
+ ich muss aber erst die last soweit minimalisieren das hexagramme 
+ in der bit größe selbst , kaum eine rolle spielen .. 
+
+ dann kann ich das besser handhaben und die bienen königin extrem 
+ präzise hochziehen , bis hin zu ineinander verschachteltelte 
+ zahlen die insich verschachtel berechnet werden können ... 
+
+ der schlüssel für mein mathematisches Destilations prinzip .. 
+
+ ich bin mit der alten rechen verarbeitungsweise , nicht zufrieden .. 
+
+ sie liest sich nicht nur falsch aufgebaut , sondern sieht auch falsch 
+ aufgebaut aus ... 
+
+ alleine das die hardwareseitig , shortcuts als inc und dec einbauen mussten 
+ sagt schon alles über die fehlerhafte software logik .. 
+
+ das kannste auch nicht mit gatter operatoren ausgleichen ... 
+
+ ich bin mir sicher das bei schnell bearbeitetend rechenwege 
+ viele fehler hervor gerufen werden , alleine wegen der optimierungungs
+ geschwindigkeit über die bit produktion selbst ... 
+
+ aber gut ... gedanke abharken .... bin zufrieden für heute ... 
+ jetzt erstmal ausruhen ... heute abend weiter .. 
+
+ mal gucken was genau ... vielleicht erst   die anderen rechen funktionen 
+ oder eine komponente anpacken die noch nicht auf dem tws 0.3 stand ist .. 
+
 
  NITROX ===========================================
 

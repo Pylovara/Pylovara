@@ -188,13 +188,66 @@ Symbol  |  Opcode (häufigste Form)
 
 
 
+hmmmm .. wäre eine möglichkeit ... 
+durch eine kurze optionale möglichkeit über ein gespräch .. 
 
+könnte ... muss aber nicht ... als core funktion für die alu 
+dienen .... wobei der rahmen schlecht gebaut ist ist aber was will ich erwarten 
+der dude weis ja nicht wie wo und vor allem was hingehört .. 
 
+verwenden kann ich das so nicht .... zu unsauber 
 
+aber zumindest wird verstanden das nitrox für die ram 
+plazierung der daten eine rolle spielt .. 
 
+wobei der abgriff da nicht sonderlich gut ist ...
+ich hab die von der gleichen reihne unten raus geschnitten .. 
 
+ich lass mir da was besseres einfallen .. 
 
+ich schreib erstmal die einzelnen selbst ... weil wichtig .. 
 
+danach kann ich immer noch entscheiden ob ich überhaupt 
+eine core-alu funktion schreibe .. 
+
+die 3x1 system ids werden in der standart bibliothek 
+verbaut , damit die entwickler alle zahlen für sich frei haben  
+und nichts zusammen crasht ... 
+
+außerdem sind 6 bit wesentlich schneller ... 
+und wenn überhaupt irgendwer auf dem planeten 
+die standart bibliothek anfasst , dann ich .. 
+
+der rest sind dann firmen eigene erweiterungen .. 
+und diese tragen dann warscheins nummern .. 
+
+deren sache ... nicht meine angelegenheit .. 
+
+ich sorg nur für 0,0 überschneidungen ... und 
+funktionierende BIONS ....
+
+¢!
+»—[¥: CORE-ALU-MAP :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+   ¬· »—[×: ++ :×]—« 
+       ÷ Ø—(⠀⠾⡾): ADD :Ø  
+
+   ¬· »—[×: -- :×]—« 
+       ÷ Ø—(⠀⠾⡻): SUB :Ø  
+
+   ¬· »—[×: ** :×]—« 
+       ÷ Ø—(⠀⠾⡺): MUL :Ø  
+
+   ¬· »—[×: // :×]—« 
+       ÷ Ø—(⠀⠾⡹): DIV :Ø 
+
+¬·¤ »—[×: (⠀⠾⡾) (⠀⠾⡻) (⠀⠾⡺) (⠀⠾⡹) :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~
+!¢
+
+######## w#ren dann die tragenden schnittstellen im ram 
+± Ø: ++ :(⠀⠾⡾)—Ø
+± Ø: -- :(⠀⠾⡻)—Ø
+± Ø: ** :(⠀⠾⡺)—Ø
+± Ø: // :(⠀⠾⡹)—Ø
 
 
 

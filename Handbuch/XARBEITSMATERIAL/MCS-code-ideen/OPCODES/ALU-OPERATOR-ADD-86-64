@@ -1,0 +1,76 @@
+
+
+
+
+
+¢!
+»—[¥: ALU-OPERATOR-ADD :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· —[": ARCHITEKTUR X86-64 :"]—
+    ¬· »—[": ADD :"]—«
+        ÷ Ø—(⠀⠾⡻): ADD :Ø
+
+        ¬· »—[º: 01 /r :º]—«
+            ÷ Ø—(⠀⠾⡺): 01 /r :Ø
+
+        ¬· »—[º: 03 /r :º]—«
+            ÷ Ø—(⠀⠾⡹): 03 /r :Ø
+
+        ¬· »—[º: MODRM_REX_RESOLVER :º]—«
+            ÷ Ø—(⠀⠾⡸): MODRM_REX_RESOLVER :Ø
+
+            ± Ø: 01 /r :(⠀⠾⡺)—Ø
+            ± Ø: 03 /r :(⠀⠾⡹)—Ø
+            ± Ø: MODRM_REX_RESOLVER :(⠀⠾⡸)—Ø
+        ¬· »—[º: EMIT_OPCODE_STREAM :º]—«
+        
+                 ± Ø: ADD :(⠀⠾⡻)—Ø
+            ¬·¤ »—[×: <BINARY_EMIT_STREAM> :×]—«
+!¢
+
+
+nein .... 
+
+ich könnte mit viel grips den fremdcode sauber 
+in mcs würgen ..... dann wäre das mal geordnet 
+
+
+aber nein .... 
+
+
+fremde code logik geht mir nicht ins haus .. 
+
+wenn nur als dateityp datei ... als pfad call 
+für deren compiler für emulationen für den output selbst 
+
+ich fang erst gar nicht an , deren laden bei mir aufzuräumen 
+
+wäre sinnfrei ... werd ja nicht mal dafür bezahlt ... 
+
+die haben nur grütze hoch gezogen .... 
+
+soll der schrott weg sterben .... 
+
+werde ich keinem meiner mcs entwickler je antun 
+
+ich werde von vorne herein klar machen das 
+
+fremdcode in emulations transaktionsrahmen genutzt werden oder 
+in dateitypen hinzu geaddet werden und das nur wenn 
+sie bereit sind auch den jeweiligen compiler mit zu binden .. 
+
+für was soll ich die arbeit von intel und amd erledigen ... 
+auf meiner stirn steht nicht „ kostenloser mitarbeiter “
+
+ich ziehe die operatoren selbst hoch ... 
+
+was an unterbauter logik fehlt wird dann später noch 
+hinein gepackt ... aber native logik und kein fremder schrott .. 
+
+umso mehr ich mich mit amerikanischer logik konfrontiert fühle 
+umso mehr wird mir klar das das neandertaler sind , die mit 
+extrem viel glück - technik zum laufen bekommen haben .. 
+
+
+nichts davon ist gut .... nicht mal die layer ... 
+
+über kürzel lässt sich streiten ... aber über layer nicht ... 

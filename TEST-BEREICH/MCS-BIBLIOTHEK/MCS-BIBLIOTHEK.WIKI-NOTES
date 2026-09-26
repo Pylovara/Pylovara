@@ -5,7 +5,7 @@
  # FÜR EINE SAUBERE ENTWICKLUNG MIT GEFÜHRT. DIESER BEREICH DIENT FÜR JEDEN  # 
  # DER SIE SIEHT, ALS CODE REFERENZ UND EINSCHÄTZUNG.                        # 
 ###==================================PRÄFIX=================================###
- # ELEMENT | ABSICHT |        |        |   NR    |   R    |        |         #
+ # ELEMENT | ABSICHT |        |        |   NR    |   R    |   E    |         #
  #         |         |        |   -    |         |        |        |         #
 ###====================================|====================================###
 ###================================PARAMETER================================###
@@ -21,3 +21,161 @@
  # PROGRAMMIERSPRACHE ⠆⢄⡠⡂ MCS 7.5 | MASCHINEN-CODE-SPEECH                   #
  # LIZENZEN ⠆⢄⡠⢐ LV 1.5 LIZENZVERTRAG                                        #
 ###===============================LEXIKON-ENDE==============================###
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: xtree
+.
+├── MATHEMATIK
+│   ├── PLATZHALTER
+│   │   ├── ABSICHT
+│   │   │   └── RECHNUNGS-ABSICHT
+│   │   ├── AUSWAHL
+│   │   │   └── AUSWAHL
+│   │   ├── PARAMETER
+│   │   │   └── RECHNUNGS-PARAMETER
+│   │   └── PRÄFIX
+│   │       ├── -
+│   │       ├── E
+│   │       ├── ELEMENT
+│   │       ├── NR
+│   │       └── R
+│   ├── RECHEN-ARTEN
+│   │   ├── 86_64
+│   │   │   ├── GETEILT
+│   │   │   ├── MAL
+│   │   │   ├── MINUS
+│   │   │   └── PLUS
+│   │   │       └── ++
+│   │   ├── ARM64
+│   │   │   ├── GETEILT
+│   │   │   ├── MAL
+│   │   │   ├── MINUS
+│   │   │   └── PLUS
+│   │   │       └── ++
+│   │   └── RISC-V
+│   │       ├── GETEILT
+│   │       ├── MAL
+│   │       ├── MINUS
+│   │       └── PLUS
+│   │           └── ++
+│   ├── RECHEN-OPERATOR
+│   │   ├── ADD
+│   │   ├── DIV
+│   │   ├── MUL
+│   │   ├── SDIV
+│   │   ├── SUB
+│   │   └── UDIV
+│   └── RECHEN-SYMBOLE
+│       ├── GETEILT
+│       │   └── ÷÷
+│       ├── MAL
+│       │   └── ××
+│       ├── MINUS
+│       │   └── --
+│       └── PLUS
+│           └── ++
+└── MCS-BIBLIOTHEK.WIKI-NOTES
+
+29 directories, 22 files
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/-
+¢!
+»—[¥: - :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/E
+¢!
+»—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/ELEMENT
+¢!
+»—[¥: ELEMENT :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/NR
+¢!
+»—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/R
+¢!
+»—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/ABSICHT/RECHNUNGS-ABSICHT
+¢!
+»—[¥: RECHNUNGS-ABSICHT :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[¥: RECHNUNGS-PARAMETER :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡰): ** :Ø
+
+ ¬· »—[¥: - :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡳): * :Ø
+
+ ¬· »—[¥: ELEMENT :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡨): * :Ø
+
+     ± Ø: ** :(⠀⠾⡰)—Ø
+     ± Ø: * :(⠀⠾⡳)—Ø
+     ± Ø: * :(⠀⠾⡨)—Ø
+ ¬· »—[×: (⠀⠾⡰)(⠀⠾⡳)(⠀⠾⡨) :×]—«
+
+     ¬·¤ »[": *** :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-ARTEN/RISC-V/PLUS/++
+¢!
+»—[¥: PLUS-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡾): ++ :Ø
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡩): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡪): * :Ø
+
+     ± Ø: * :(⠀⠾⡩)—Ø
+     ± Ø: * :(⠀⠾⡪)—Ø
+ ¬· »—[×: (⠀⠾⡩)(⠀⠾⡪) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡫): ** :Ø
+
+     ± Ø: * :(⠀⠾⡩)—Ø
+     ± Ø: * :(⠀⠾⡪)—Ø
+ ¬· »—[×: (⠀⠾⡩)(⠀⠾⡪) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡬): ** :Ø
+
+     ± Ø: ++ :(⠀⠾⡾)—Ø
+     ± Ø: ** :(⠀⠾⡫)—Ø
+     ± Ø: ** :(⠀⠾⡬)—Ø
+ ¬· »—[×: (⠀⠾⡫) (⠀⠾⡾) (⠀⠾⡬) :×]—«
+     ¬·¤ »[×: * * * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+

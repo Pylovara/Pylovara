@@ -3,15 +3,27 @@
  ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
      ÷ Ø—(⠀⠾⡾): ++ :Ø
 
- ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-     ÷ Ø—(⠀⠾⡽): A :Ø
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡩): * :Ø
 
- ¬· »—[¥: B :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-     ÷ Ø—(⠀⠾⡼): B :Ø
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡪): * :Ø
 
-     ± Ø: A :(⠀⠾⡽)—Ø
+     ± Ø: * :(⠀⠾⡩)—Ø
+     ± Ø: * :(⠀⠾⡪)—Ø
+ ¬· »—[×: (⠀⠾⡩)(⠀⠾⡪) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡫): ** :Ø
+
+     ± Ø: * :(⠀⠾⡩)—Ø
+     ± Ø: * :(⠀⠾⡪)—Ø
+ ¬· »—[×: (⠀⠾⡩)(⠀⠾⡪) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡬): ** :Ø
+
      ± Ø: ++ :(⠀⠾⡾)—Ø
-     ± Ø: B :(⠀⠾⡼)—Ø
- ¬· »—[×: (⠀⠾⡽) (⠀⠾⡾) (⠀⠾⡼) :×]—«
-     ¬·¤ »[×: <A> ++ <B> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+     ± Ø: ** :(⠀⠾⡫)—Ø
+     ± Ø: ** :(⠀⠾⡬)—Ø
+ ¬· »—[×: (⠀⠾⡫) (⠀⠾⡾) (⠀⠾⡬) :×]—«
+     ¬·¤ »[×: * * * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢

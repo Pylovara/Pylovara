@@ -27,3 +27,285 @@
  # PROGRAMMIERSPRACHE ⠆⢄⡠⡂ MCS 7.5 | MASCHINEN-CODE-SPEECH                   #
  # LIZENZEN ⠆⢄⡠⢐ LV 1.5 LIZENZVERTRAG                                        #
 ###===============================LEXIKON-ENDE==============================###
+
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: xtree
+.
+├── PLATZHALTER
+│   ├── ABSICHT
+│   │   └── ABSICHT
+│   ├── AUSWAHL
+│   │   └── AUSWAHL
+│   ├── NUMMER
+│   │   └── NR
+│   ├── PARAMETER
+│   │   └── RECHNUNGS-PARAMETER
+│   └── PRÄFIX
+│       ├── -
+│       ├── ELEMENT
+│       └── R
+├── RECHEN-ARTEN
+│   ├── 86_64
+│   │   ├── GETEILT
+│   │   ├── MAL
+│   │   ├── MINUS
+│   │   └── PLUS
+│   │       └── ++
+│   ├── ARM64
+│   │   ├── GETEILT
+│   │   ├── MAL
+│   │   ├── MINUS
+│   │   └── PLUS
+│   │       └── ++
+│   └── RISC-V
+│       ├── GETEILT
+│       ├── MAL
+│       ├── MINUS
+│       └── PLUS
+│           └── ++
+├── RECHEN-OPERATOR
+│   ├── ADD
+│   ├── DIV
+│   ├── MUL
+│   ├── SDIV
+│   ├── SUB
+│   └── UDIV
+└── RECHEN-SYMBOLE
+    ├── GETEILT
+    │   └── ÷÷
+    ├── MAL
+    │   └── ××
+    ├── MINUS
+    │   └── --
+    └── PLUS
+        └── ++
+
+29 directories, 20 files
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/-
+¢!
+»—[¥: - :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/ELEMENT
+¢!
+»—[¥: ELEMENT :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/R
+¢!
+»—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/NUMMER/NR
+¢!
+»—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PARAMETER/RECHNUNGS-PARAMETER
+¢!
+»—[¥: RECHNUNGS-PARAMETER :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡲): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡱): * :Ø
+
+     ± Ø: * :(⠀⠾⡲)—Ø
+     ± Ø: * :(⠀⠾⡱)—Ø
+ ¬· »—[×: (⠀⠾⡲)(⠀⠾⡱) :×]—«
+
+     ¬·¤ »[": ** :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/ABSICHT/ABSICHT
+¢!
+»—[¥: ABSICHT :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[¥: RECHNUNGS-PARAMETER :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡰): ** :Ø
+
+ ¬· »—[¥: - :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡳): * :Ø
+
+ ¬· »—[¥: ELEMENT :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡨): * :Ø
+
+     ± Ø: ** :(⠀⠾⡰)—Ø
+     ± Ø: * :(⠀⠾⡳)—Ø
+     ± Ø: * :(⠀⠾⡨)—Ø
+ ¬· »—[×: (⠀⠾⡰)(⠀⠾⡳)(⠀⠾⡨) :×]—«
+
+     ¬·¤ »[": *** :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: 
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: cat /Pylovara/Handbuch/MCSNotes/21-PLATZHALTER-GRAMMATIK.MCS-NOTES
+@mcs-nr: 21 ==================LEXIKON NAVIGATION TERMINAL ======= mcs <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###==============================MCS-ERKLÄRUNG==============================###
+
+ DIESE SIETE IST EIN PROTOTYP 
+ —————————————————————————————
+
+ PLATZHALTER DIENEN FÜR LEERE FELDER DIE GEFÜLLT WERDEN MÜSSEN .
+ SIE HABEN NUR EINE FUNKTION .
+
+ DIE GRAMMATIK DAZU DIENT FÜR DIE ARBEITSWEISE, AUCH GENANNT WORKFLOW.
+
+ DIE GRAMMATIK IST SEKUNDÄR ZU BETRACHTEN UND HAT DEN SINN AUF DAUER 
+ FOKUSIERTER AUF SEINEN CODE EINGEHEN ZU KÖNNEN . 
+
+ DIE PLATZHALTER SIND FÜR SICH GESEHEN KEIN ARGUMENT IM KLASSISCHEN SINNE 
+ UND AUCH KEINE VARIABLE .
+
+ WIR VERSUCHEN ES GRUPPIERT ZU BETRACHTEN UND DAZU ZIEHEN WIR DIE TABELLE 
+ HINZU. 
+
+
+ BESCHREIBUNG : PYLOVARA PLATZHALTER GRAMMATIK 
+
+ PLATZHALTER : 
+
+ PRÄFIX  NR   BAUSTEIN       
+   R    <NR>  RECHNUNGS-PARAMETER  
+   E    <NR>  EINGABE-PARAMETER
+   A    <NR>  AUSGABE-PARAMETER
+   T    <NR>  TEXT-PARAMETER
+   S    <NR>  SPEICHER-PARAMETER
+
+ ABSICHT :
+
+ PRÄFIX          BAUSTEIN 
+ R<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ E<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ A<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ T<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ S<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+
+ BEGRIFFE : 
+
+ PLATZHALTER       : PLATZHALTER
+ ARGUMENT          : ELEMENT  
+ ABSICHT           : ABSICHT 
+ RECHENEINHEIT     : OPERATOR           
+ SPEKULANT         : SPEKULANT 
+ WIRKKRAFT         : WIRKKRAFT
+ ERGEBNIS          : SYMBIOSE 
+
+ LOGIK : 
+
+ PLATZHALTER + NUMMER + ELEMENT = ABSICHT 
+ ABSICHT OPERATOR ABSICHT = SPEKULANT 
+ SPEKULANT OPERATOR WIRKKRAFT = ZUKUNFT 
+ ZUKUNFT = ERGEBNIS 
+ ERGEBNIS = RESULTAT 
+
+ WAS WAS ERSETZT : 
+
+ PLATZHALTER = int, char, float
+ ELEMENT     = 1, 100, Hallo 
+ ABSICHT     = Zins, kapital 
+ OPERATOR    = ++ -- ÷÷ ×× 
+ SPEKULANT   = Zwischenergebnis, temp 
+ WIKRKRAFT   = Einwirkung Multiplikator , etc 
+ SYMBIOSE    = Das zusammenspiel 
+ ERGEBNIS    = RESULTAT
+
+
+ WENN WIR EINE C VARIABLE BETRACHTEN , DANN WISSEN WIR DAS EINE C VARIABLE 
+ EINE COMBINATION DARSTELLT . EINE KOMBINATION IST IN C EINE VARIABLE - PUNKT .
+
+ C BLOCK : 
+
+ int a = 2;
+ int b = 100;
+ int c = a + b;
+
+ ABER WAS IST A ? WAS IST B ? WAS IST C ? 
+
+ WAS SIND DIE BUCHSTABEN WERT ? HABEN SIE ÜBERHAUPT IRGEND EINEN WERT ? 
+ SIND SIE ZU UNGENAU ? SIND SIE PLATZHALTER ? SIE SIND SIE DAS WAS SIE SIND ?
+
+ MAN NENNT DAS : VARIABLE 
+
+ DEN A IST EINE VARIABLE
+ DEN B IST EINE VARIABLE
+ DEN C IST EINE VARIABLE
+
+ ABER MAN DEFINIERT DEN REINEN BUCHSTABEN NUR ALS VARIABLE , WEIL SIE 
+ MEHRERE WÖRTER UND SONDERZEICHEN IN FOLGE VERBINDET . 
+
+ INT <-- UNTERBAUTE FUNKTION 
+ = <-- UNTERBAUTE FUNKTION 
+ ; <-- UNTERBAUTE FUNKTION 
+ + <-- UNTERBAUTE FUNKTION 
+ A & B & C DIE TRÄGER DER VERSCHACHTELUNG 
+
+
+ WIR MERKEN UNS : 
+
+ C SAGT „ EIN ARGUMENT IST EIN WERT, DER AN EINE FUNKTION ÜBERGEBEN WIRD “
+
+ MCS SAGT „ EIN PLATZHALTER IST WERTLOS BIS ER MIT WERT GEFÜLLT WIRD UND 
+            IN EINER FUNKTION PLATZIERT WIRD “
+
+ DER UNTERSCHIED IST DIE BEDEUTUNG
+
+
+ IN MCS ( OHNE SCHALTUNG ) BENENNEN WIR KEINE VARIABLEN , DAS WORT ANSICH 
+ UND DEREN DEUTUNGSHOHEIT , GIBT ES NICHT MEHR ... 
+
+ WIR ELEMINIEREN IN MCS DIE C VERSCHACHTELUNG DIE NICHT OFFENSICHTLICH 
+ VORLIEGT UND REINE COMPILER MAGIE TRÄGT, DIE DANN MIT NAMEN TARGETS 
+ UND SYMBOL TARGETS , ZU DER VARIABLE SELBST FÜHRT ... 
+
+ EINE VARIABLE IST ALSO NICHT DER NATIVE CODE, ES IST DER VERSCHLEIERTE 
+ GESAMTE FUNKTIONS ALGORYTHMUS.
+
+ MCS GRAMMATIK ( OHNE SCHALTUNG ): 
+
+ R1-ZINS ++ R2-KAPITAL = SPEKULANT
+ SPEKULANT ++ R3-WIRKKRAFT = ZUKUNFT
+ ZUKUNFT = SYMBIOSE
+ SYMBIOSE = RESULTAT
+
+ Was ist R1-ZINS? Was ist R2-KAPITAL? Was ist SPEKULANT?
+
+ R1-ZINS ist der Rechnungsparameter 1: Zins.
+ R2-KAPITAL ist der Rechnungsparameter 2: Kapital.
+
+ SPEKULANT ist das Zwischenergebnis.
+
+
+
+
+
+
+
+
+###================================ENDPUNKT=================================###
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK :$]—
+   ¬· »[¥: 

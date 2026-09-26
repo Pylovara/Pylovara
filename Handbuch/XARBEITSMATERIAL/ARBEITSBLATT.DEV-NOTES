@@ -14,84 +14,56 @@
 
  TAGES NARICHT FÜR MICH : 
 
- So .. neue nacht ... neues Glück ... was nun ... 
- erstmal akku tausch , sonnst wird das nichts ...
- also zuerst kaffe, wachwerden, akku holen - dann weiter ..
-
- was aber weiter ? hmm ... 
-
- vielleicht erst die anderen MCS Codes , hab aktuell nur für Plus ..
- der bereich für die umsetzung der symbole, wurde schon angelegt ...  
-
- ja ... warum nicht ... gemütliche nacht ... 
-
- ich entscheide heute sponatn wo es weiter geht ... 
- man muss nicht immer alles haargenau planen , wenn man 
- sich die ecke raus suchen kann .. 
-
- ich denke das wochenende wird mehr im fokus stehen 
- das ich wie ein irrer wissenschaftler die hütte hoch und runter 
- laufe und mit mir selbst diskutierer über die sinnhaftigkeit meiner 
- eigenen gedanken und die umsetzung wie reienfolge .. 
-
- man muss auch mal bekloppt sein um produktiv zu sein .... punkt 
-
- vielleicht wirds witzig , vielleicht anstregend ... mal gucken .. 
-
- lach 
-
- Ich bin mit der platzhalter logik nicht zufrieden ... 
- was bringt es den buchstaben als platz halter zu fixieren 
- wenn ich so oder so mit mcs in der lage bin den platzhalter 
- punktgenau zu füllen ? 
-
- a und b dann c und d ... 
-
- wieviele platz halter will ich per buchstaben den füllen ? 
-
- ich brauch ein besseres system .... 
-
- &1 &2 ĸ1 ĸ2 ĸ3 
-
- nein .... ich hasse dieser verfickte steinzeit tastatur !!!
- okey .... drüber nachdenken ... ich brauch was besseres ... 
+------------------------------------------------------------------
 
 
-Präfix  NR   Bedeutung          
-  R    <NR>  Rechnungs-Parameter  
-  E    <NR>  Eingabe-Parameter
-  A    <NR>  Ausgabe-Parameter
-  T    <NR>  Text-Parameter
-  S    <NR>  Speicher-Parameter
+ PLATZHALTER : 
 
- Hmmm .... die ram adressierung in der haus eigenen standart bibliothek 
- geht so oder so durch 3x1 patter ... fremd funktionen durch warscheins 
- normale nummern ... 
+ PRÄFIX  NR   BAUSTEIN       
+   R    <NR>  RECHNUNGS-PARAMETER  
+   E    <NR>  EINGABE-PARAMETER
+   A    <NR>  AUSGABE-PARAMETER
+   T    <NR>  TEXT-PARAMETER
+   S    <NR>  SPEICHER-PARAMETER
 
- in einigen systemen spricht man von " argumenten" a0 a1 a2 a3 
- ... bullshit .... das sind platzhalter ... keine argumente .. 
 
- seit wann gibt man einem platzhalter ein argument zum rumstehen ? 
- wer hat sich die suppe ausgedacht ? 
+ ABSICHT :
 
- ein argument ist ein baseballschläger ... nicht der platzhalter dafür 
- ... sondern das wofür der platz gehalten wird ... 
+   PRÄFIX        BAUSTEIN 
+ R<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ E<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ A<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ T<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
+ S<NR>-ELEMENT   <PLATZHALTER><NR>-<ELEMENT>
 
- hmm ... weiter denken ... 
 
- also ich würde fast sagen , mit meiner ghetto sprache von der windelzeit .. 
+ LOGIK : 
 
-----------------------------------------------
- ein Platzhalter Hält für die absicht .. 
+ PLATZHALTER + NUMMER + ELEMENT = ABSICHT 
 
- Die absicht hat ein argument 
+ ABSICHT + ABSICHT = SPEKULANT 
 
- und ein argument hat eine auswirkung ... 
-------------------------------------------------
 
- nachdenken .... 
+ 
 
- wenn ich sage 
+ NOTIZ : 
+
+ PLATZHALTER       : PLATZHALTER
+ ARGUMENT          : ELEMENT  
+ ABSICHT           : ABSICHT 
+
+ ABSICHT ABSICHT   : SPEKULANT 
+ ERGEBNIS          : SYMBIOSE 
+
+
+
+
+
+
+
+
+
+
 
  R ist Rechnungs-parameter 
  und 1 ist die Nummer 
@@ -99,23 +71,16 @@ Präfix  NR   Bedeutung
  die absicht RechnungsParameter-1
 
  dann brauch die absicht ein argument 
-
  also bekommt die absicht ein argument 
-
  die absicht hat das argument Zins 
-
  also PlatzhalterParameter-1-Zins 
-
  dazu adden wir ein zweiten , sagen wir 
-
  PlatzhalterParameter-2-Kapital 
-
  das wird berechnet ... hmmm 
 
  R1-Zins ++ R2-Kapital .. 
 
  dann ist das die auswirkung ... 
-
  und die auswirkung hat eine zukunft .... 
 
  R1-Zins ++ R2-Kapital ×× 2 = 
@@ -124,153 +89,9 @@ Präfix  NR   Bedeutung
 
  ------------------------------------------
 
- mhhh ... im grunde wäre das egal .. 
 
- in mcs kann man alles explizit schreiben 
- und combinieren ... 
 
- dann platzieren und durchrattern lassen ... 
 
- im grunde brauch ich eher eine art  zeilenplatz schieber 
- für buchstaben sortierungen .. 
-
- die rechen operationen für nummern ... 
-
- darüber hinaus regelt sehr viel die nitrox feed logik 
-
- dazu kommt ja noch zytron und synaptor .. 
-
- ich müsste nicht mal halb so komplex sein ... 
-
- soweit ich das sehen sind andere sprachen aus zwang auf solche 
- logiken angewiesen ... ich habs sie vollständig heraus gearbeitet .. 
-
- man setzt sie selbst zusammen ... das ist von natur aus so ... 
-
- ich hab zwei möglichkeiten ... 
-
- entwdere stumpf a b c d e f g h usw .. 
-
- oder plan b 
-
-
-
- hmmm ..... nach denken ... 
-
-
- ich mach das anders ... 
-
- ich setz mich morgen nacht hin und mach die direkte gegenüberstellung .. 
-
- plan a : stumpf 
-
- plan b : Geschichte 
-
- mal schauen was gewinnt ... 
-
- aber heute merk ich selber das die gerhinzellen nicht sonderlich aktiv sind ... 
- das ist so ein tag wo der prozessor im sparmodus aggiert ... 
-
- auf zwang jetzt eine entscheidung zu treffen die extreme auswirkungen 
- auf die schreibweise und handhabung hat , wäre nicht sonderlich gut .. 
-
- genauso ungut wie der c entwickler ... ( einem platzhalter die definition argument geben , lach )
- ... nene .... so nicht .... unlogisch mach ich hier nichts ... 
-
-
- ich nehme mir die auszeit die man kopf verlangt ... 
-
-
-
- nennen dich doch wirklich platzhalter argumente ... 
-
- ich hab auch ein argument für meinen waffenschrank ... 
-
- aber mein waffenschrank hat einen platz ... 
-
- und der platz hab ich freigehalten für den waffenschrank 
-
- platz frei halten = Platzhalter 
- Waffenschrank = Argument 
- Waffe im waffenschrank = absicht oder argument zwei  
-
- waffenschrank argument = dient der sicherheit 
- Waffe = Dient zum töden | dient zum schutz 
-
- beides brauch einen Platz ... 
-
- man kann jetzt höchstens noch einen drauf setzen und sagen 
-
- aber das argument ist verschachtelt ... das würde ich gelten lassen 
-
- aber seid wann ist eine stelle für etwas ein argument ???? 
-
- da kann man gleich die Nichts Schleife durch diskutieren ... 
-
-
- „ Wenn nichts nichts ist , warum ist dann etwas im Nichts .... 
-   aber wenn etwas im Nichts ist , dann kann nichts nichts sein ? 
-   wenn aber nichts nichts ist , dann ist nichts ein wert ?  “
-
-   und so weiter und sofort ... im grunde der brüller bei jeder 
-   klugscheißer party .. 
-
-
-   ich muss darüber nach denken ... ich wichs nichts hin was ich später 
-   wieder abschrubben darf , weil ich den wichs fleck bereue .. 
-
-   in den fall ... systematisch ... 
-
-   gut okey ... der platz hat eine absicht die absicht ist ein schrank 
-   der schrank trägt etwas insich .... das darin hat eine auswirkung .. 
-
-
-   meine idee : „ der kreislauf der kette “
-
-   ABSICHT    : PLATZHALTER
-   ARGUMENT   : ELEMENT    
-   AUSWIRKUNG : VERSCHMELZUNG 
-   ZUKUNFT    : SPEKULANT 
-   ERGEBNIS   : PRODUKT 
-
-   Hmm ... morgen nochmal durch lesen ... 
-
-   ich denke daraus wird ein schuh ... 
-
- 
-
- ich denke ich sollte das thema , bündeln .... 
- die bibliothek nochmal verschieben ... 
-
- den tws weiter schreiben ... 
-
- weil ich den modulator und das mcd register später brauche 
- für einige kleinere sachen ... 
-
- und dann erst weiter an den codes arbeiten ... 
-
- ich bin an der falschen stelle .... auch wenn ich bock drauf hab ... 
- aber ich bin an der falschen stelle .... 
-
- ich brauch den tws .... mcd/modulator/absolulator 
- und die komponenten erneuert in der besseren struktur .. 
-
- alles andere was ich gern machen will , muss danach folgen ... 
-
- die frage wie die absichten bzw platzhalter später 
-
- aufgebaut werden .... ist eine frage die jetzt noch gar nicht relevant ist .. 
- sie muss nach der überarbeitung kommen .... nicht davor ... 
-
- ich bündel die grundlage morgen semantisch ... 
- schreib die idee dazu bzw umsetzungs variante .. 
-
- lege es sauber in die tws 0.4 update liste ... 
-
- und gehe dann wieder zurück zu dem was ich brauche um das sauber 
- in der bibliothek hochzuziehen ... 
-
- alles andere wäre zu verstreut ... 
 
 
  NITROX ===========================================

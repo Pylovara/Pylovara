@@ -16,6 +16,8 @@
 
 ------------------------------------------------------------------
 
+ BESCHREIBUNG : PYLOVARA PLATZHALTER GRAMMATIK 
+
 
  PLATZHALTER : 
 
@@ -49,10 +51,52 @@
  LOGIK : 
 
  PLATZHALTER + NUMMER + ELEMENT = ABSICHT 
-
  ABSICHT OPERATOR ABSICHT = SPEKULANT 
-
  SPEKULANT OPERATOR WIRKKRAFT = ZUKUNFT 
+ ZUKUNFT = ERGEBNIS 
+ ERGEBNIS = RESULTAT 
+
+
+ WAS WAS ERSETZT : 
+
+ PLATZHALTER = int, char, float
+ ELEMENT     = 1, 100, Hallo 
+ ABSICHT     = Zins, kapital 
+ OPERATOR    = ++ -- ÷÷ ×× 
+ SPEKULANT   = Zwischenergebnis, temp 
+ WIKRKRAFT   = Einwirkung Multiplikator , etc 
+ SYMBIOSE    = Das zusammenspiel 
+ ERGEBNIS    = RESULTAT
+
+
+ ERKLÄRUNGSVERSUCH  : 
+
+C BLOCK : 
+
+int a = 2;
+int b = 100;
+int c = a + b;
+Was ist a? Was ist b? Was ist c?
+
+ a ist eine Variable.
+ b ist eine Variable.
+ c ist eine Variable.
+
+ MCS GRAMMATIK ( OHNE SCHALTUNG ): 
+
+ R1-ZINS ++ R2-KAPITAL = SPEKULANT
+ SPEKULANT ++ R3-WIRKKRAFT = ZUKUNFT
+ ZUKUNFT = SYMBIOSE
+ SYMBIOSE = RESULTAT
+
+ Was ist R1-ZINS? Was ist R2-KAPITAL? Was ist SPEKULANT?
+
+ R1-ZINS ist der Rechnungsparameter 1: Zins.
+ R2-KAPITAL ist der Rechnungsparameter 2: Kapital.
+
+ SPEKULANT ist das Zwischenergebnis.
+
+
 
 
 

@@ -10,6 +10,7 @@
  # PYLOVARA-SYSTEM SPÄTER MITGELIEFERT IM KERNEL INTEGRIERT ND KÖNNEN        #
  # GENUTZT WERDEN . DIE RICHTIGKEIT DER FUNKTIONEN WERDEN VON HAUS AUS       #
  # GEPRÜFT. BUCHSTABEN UND ZAHLEN SIND FÜR ENTWICKLER FREIGEGEBEN.           #
+ # DIE FUNKTIONEN SIND GENERISCHER NATUR, DA ICH MICH NICHT FESTLEGEN WOLLTE #
 ###==================================PRÄFIX=================================###
  # ELEMENT | ABSICHT |        |        |   NR    |   R    |   E    |         #
  #         |         |        |   -    |         |        |        |         #
@@ -19,13 +20,11 @@
  #                                     |                                     # 
 ###====================================|====================================###
 ###===============================OPERATOREN================================###
- #    ++   |         |        |        |         |        |        |         #
+ #    ++   |    --   |        |        |         |        |        |         #
 ###====================================|====================================###
 ###===============================FUNKTIONEN================================###
- #   PLUS-RECHNEN    |                 |                  |                  # 
+ #    PLUS-RECHNEN   |  MINUS-RECHNEN  |                  |                  # 
 ###===============================VERSIONSDATEN=============================###
  # PROGRAMMIERSPRACHE ⠆⢄⡠⡂ MCS 7.5 | MASCHINEN-CODE-SPEECH                   #
  # LIZENZEN ⠆⢄⡠⢐ LV 1.5 LIZENZVERTRAG                                        #
 ###===============================LEXIKON-ENDE==============================###
-
-

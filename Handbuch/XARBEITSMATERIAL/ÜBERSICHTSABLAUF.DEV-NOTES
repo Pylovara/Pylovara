@@ -1,70 +1,70 @@
 
 —[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
-¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
    ¬· »[¥: xtree
 .
-├── MATHEMATIK
-│   ├── PLATZHALTER
-│   │   ├── ABSICHT
-│   │   │   └── RECHNUNGS-ABSICHT
-│   │   ├── AUSWAHL
-│   │   │   └── AUSWAHL
-│   │   ├── PARAMETER
-│   │   │   └── RECHNUNGS-PARAMETER
-│   │   └── PRÄFIX
-│   │       ├── -
-│   │       ├── E
-│   │       ├── ELEMENT
-│   │       ├── NR
-│   │       └── R
-│   ├── RECHEN-ARTEN
-│   │   ├── 86_64
-│   │   │   ├── GETEILT
-│   │   │   ├── MAL
-│   │   │   ├── MINUS
-│   │   │       └── MINUS-RECHNEN
-│   │   │   └── PLUS
-│   │   │       └── PLUS-RECHNEN
-│   │   ├── ARM64
-│   │   │   ├── GETEILT
-│   │   │   ├── MAL
-│   │   │   ├── MINUS
-│   │   │   └── PLUS
-│   │   │       └── PLUS-RECHNEN
-│   │   └── RISC-V
-│   │       ├── GETEILT
-│   │       ├── MAL
-│   │       ├── MINUS
-│   │       └── PLUS
-│   │           └── PLUS-RECHNEN
-│   ├── RECHEN-OPERATOR
-│   │   ├── ADD
-│   │   ├── DIV
-│   │   ├── MUL
-│   │   ├── SDIV
-│   │   ├── SUB
-│   │   └── UDIV
-│   └── RECHEN-SYMBOLE
-│       ├── GETEILT
-│       │   └── ÷÷
-│       ├── MAL
-│       │   └── ××
-│       ├── MINUS
-│       │   └── --
-│       └── PLUS
-│           └── ++
-└── MCS-BIBLIOTHEK.WIKI-NOTES
+└── MCS-BIBLIOTHEK
+    ├── MATHEMATIK
+    │   ├── PLATZHALTER
+    │   │   ├── ABSICHT
+    │   │   │   └── RECHNUNGS-ABSICHT
+    │   │   ├── AUSWAHL
+    │   │   │   └── AUSWAHL
+    │   │   ├── PARAMETER
+    │   │   │   └── RECHNUNGS-PARAMETER
+    │   │   └── PRÄFIX
+    │   │       ├── -
+    │   │       ├── E
+    │   │       ├── ELEMENT
+    │   │       ├── NR
+    │   │       └── R
+    │   ├── RECHEN-ARTEN
+    │   │   ├── 86_64
+    │   │   │   ├── GETEILT
+    │   │   │   │   └── GETEILT-RECHNEN
+    │   │   │   ├── MAL
+    │   │   │   │   └── MAL-RECHNEN
+    │   │   │   ├── MINUS
+    │   │   │   │   └── MINUS-RECHNEN
+    │   │   │   └── PLUS
+    │   │   │       └── PLUS-RECHNEN
+    │   │   ├── ARM64
+    │   │   │   ├── GETEILT
+    │   │   │   │   └── GETEILT-RECHNEN
+    │   │   │   ├── MAL
+    │   │   │   │   └── MAL-RECHNEN
+    │   │   │   ├── MINUS
+    │   │   │   │   └── MINUS-RECHNEN
+    │   │   │   └── PLUS
+    │   │   │       └── PLUS-RECHNEN
+    │   │   └── RISC-V
+    │   │       ├── GETEILT
+    │   │       │   └── GETEILT-RECHNEN
+    │   │       ├── MAL
+    │   │       │   └── MAL-RECHNEN
+    │   │       ├── MINUS
+    │   │       │   └── MINUS-RECHNEN
+    │   │       └── PLUS
+    │   │           └── PLUS-RECHNEN
+    │   ├── RECHEN-OPERATOR
+    │   │   ├── ADD
+    │   │   ├── DIV
+    │   │   ├── MUL
+    │   │   ├── SDIV
+    │   │   ├── SUB
+    │   │   └── UDIV
+    │   └── RECHEN-SYMBOLE
+    │       ├── GETEILT
+    │       │   └── ÷÷
+    │       ├── MAL
+    │       │   └── ××
+    │       ├── MINUS
+    │       │   └── --
+    │       └── PLUS
+    │           └── ++
+    └── MCS-BIBLIOTHEK.WIKI-NOTES
 
-29 directories, 22 files
-
-—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
-¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
-   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/PRÄFIX/-
-¢!
-»—[¥: - :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
- ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
-!¢
+30 directories, 31 files
 
 —[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
 ¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
@@ -103,30 +103,172 @@
 !¢
 
 —[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
-¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
-   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/PLATZHALTER/ABSICHT/RECHNUNGS-ABSICHT
-¢!
-»—[¥: RECHNUNGS-ABSICHT :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
- ¬· »—[¥: RECHNUNGS-PARAMETER :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-     ÷ Ø—(⠀⠾⡰): ** :Ø
-
- ¬· »—[¥: - :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-     ÷ Ø—(⠀⠾⡳): * :Ø
-
- ¬· »—[¥: ELEMENT :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-     ÷ Ø—(⠀⠾⡨): * :Ø
-
-     ± Ø: ** :(⠀⠾⡰)—Ø
-     ± Ø: * :(⠀⠾⡳)—Ø
-     ± Ø: * :(⠀⠾⡨)—Ø
- ¬· »—[×: (⠀⠾⡰)(⠀⠾⡳)(⠀⠾⡨) :×]—«
-
-     ¬·¤ »[": *** :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-SYMBOLE/GETEILT/÷÷
+¢! 
+»—[¥: ÷÷ :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«  
+ ¬· »—[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-OPERATOR/SUB :$]—«
+     ¬· »—[×: ÷÷ :×]—«
+         ÷ Ø—(⠀⠾⡓): ÷÷ :Ø
+ 
+         ± Ø: ÷÷ :(⠀⠾⡓)—Ø
+     ¬· »—[×: (⠀⠾⡓) :×]« 
+         ¬·¤ »[": ÷÷ :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢
 
 —[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
-¬· —[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK :$]—
-   ¬· »[¥: cat /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-ARTEN/RISC-V/PLUS/++
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-SYMBOLE/MAL/××
+¢! 
+»—[¥: ×× :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«  
+ ¬· »—[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-OPERATOR/MUL :$]—«
+     ¬· »—[×: ×× :×]—«
+         ÷ Ø—(⠀⠾⡒): ×× :Ø
+ 
+         ± Ø: ×× :(⠀⠾⡒)—Ø
+     ¬· »—[×: (⠀⠾⡒) :×]« 
+         ¬·¤ »[": ×× :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-SYMBOLE/MINUS/--
+¢! 
+»—[¥: -- :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«  
+ ¬· »—[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-OPERATOR/DIV :$]—«
+     ¬· »—[×: -- :×]—«
+         ÷ Ø—(⠀⠾⡑): -- :Ø
+ 
+         ± Ø: -- :(⠀⠾⡑)—Ø
+     ¬· »—[×: (⠀⠾⡑) :×]« 
+         ¬·¤ »[": -- :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-SYMBOLE/PLUS/++
+¢! 
+»—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«  
+ ¬· »—[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-OPERATOR/ADD :$]—«
+     ¬· »—[×: ++ :×]—«
+         ÷ Ø—(⠀⠾⡿): ++ :Ø
+ 
+         ± Ø: ++ :(⠀⠾⡿)—Ø
+     ¬· »—[×: (⠀⠾⡿) :×]« 
+         ¬·¤ »[×: ++ :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-ARTEN/86_64/GETEILT/GETEILT-RECHNEN
+¢!
+»—[¥: GETEILT-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: ÷÷ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡥): ÷÷ :Ø
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡦): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡧): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡘): * :Ø
+
+     ± Ø: * :(⠀⠾⡦)—Ø
+     ± Ø: * :(⠀⠾⡧)—Ø
+ ¬· »—[×: (⠀⠾⡦)(⠀⠾⡧) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡙): ** :Ø
+
+     ± Ø: * :(⠀⠾⡦)—Ø
+     ± Ø: * :(⠀⠾⡘)—Ø
+ ¬· »—[×: (⠀⠾⡦)(⠀⠾⡘) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡚): ** :Ø
+
+     ± Ø: ÷÷ :(⠀⠾⡥)—Ø
+     ± Ø: ** :(⠀⠾⡙)—Ø
+     ± Ø: ** :(⠀⠾⡚)—Ø
+ ¬· »—[×: (⠀⠾⡙) (⠀⠾⡥) (⠀⠾⡚) :×]—«
+     ¬·¤ »[×: * ÷÷ * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-ARTEN/86_64/MAL/MAL-RECHNEN
+¢!
+»—[¥: MAL-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: ×× :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡛): ×× :Ø
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡜): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡝): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡞): * :Ø
+
+     ± Ø: * :(⠀⠾⡜)—Ø
+     ± Ø: * :(⠀⠾⡝)—Ø
+ ¬· »—[×: (⠀⠾⡜)(⠀⠾⡝) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡟): ** :Ø
+
+     ± Ø: * :(⠀⠾⡜)—Ø
+     ± Ø: * :(⠀⠾⡞)—Ø
+ ¬· »—[×: (⠀⠾⡜)(⠀⠾⡞) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡐): ** :Ø
+
+     ± Ø: ×× :(⠀⠾⡛)—Ø
+     ± Ø: ** :(⠀⠾⡟)—Ø
+     ± Ø: ** :(⠀⠾⡐)—Ø
+ ¬· »—[×: (⠀⠾⡟) (⠀⠾⡛) (⠀⠾⡐) :×]—«
+     ¬·¤ »[×: * ×× * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-ARTEN/86_64/MINUS/MINUS-RECHNEN
+¢!
+»—[¥: MINUS-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: -- :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡭): -- :Ø
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡮): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡯): * :Ø
+
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡢): * :Ø
+
+     ± Ø: * :(⠀⠾⡮)—Ø
+     ± Ø: * :(⠀⠾⡯)—Ø
+ ¬· »—[×: (⠀⠾⡮)(⠀⠾⡯) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡠): ** :Ø
+
+     ± Ø: * :(⠀⠾⡮)—Ø
+     ± Ø: * :(⠀⠾⡢)—Ø
+ ¬· »—[×: (⠀⠾⡮)(⠀⠾⡢) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡣): ** :Ø
+
+     ± Ø: -- :(⠀⠾⡭)—Ø
+     ± Ø: ** :(⠀⠾⡠)—Ø
+     ± Ø: ** :(⠀⠾⡣)—Ø
+ ¬· »—[×: (⠀⠾⡠) (⠀⠾⡭) (⠀⠾⡣) :×]—«
+     ¬·¤ »[×: * -- * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /Pylovara/TEST-BEREICH :$]—
+   ¬· »[¥: cat /Pyl/Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-ARTEN/86_64/PLUS/PLUS-RECHNEN
 ¢!
 »—[¥: PLUS-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
  ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
@@ -138,6 +280,9 @@
  ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
      ÷ Ø—(⠀⠾⡪): * :Ø
 
+ ¬· »—[¥: NR :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡤): * :Ø
+
      ± Ø: * :(⠀⠾⡩)—Ø
      ± Ø: * :(⠀⠾⡪)—Ø
  ¬· »—[×: (⠀⠾⡩)(⠀⠾⡪) :×]—«
@@ -145,8 +290,8 @@
           ÷ Ø—(⠀⠾⡫): ** :Ø
 
      ± Ø: * :(⠀⠾⡩)—Ø
-     ± Ø: * :(⠀⠾⡪)—Ø
- ¬· »—[×: (⠀⠾⡩)(⠀⠾⡪) :×]—«
+     ± Ø: * :(⠀⠾⡤)—Ø
+ ¬· »—[×: (⠀⠾⡩)(⠀⠾⡤) :×]—«
      ¬·¤ »—[×: ** :×]—«
           ÷ Ø—(⠀⠾⡬): ** :Ø
 
@@ -154,5 +299,24 @@
      ± Ø: ** :(⠀⠾⡫)—Ø
      ± Ø: ** :(⠀⠾⡬)—Ø
  ¬· »—[×: (⠀⠾⡫) (⠀⠾⡾) (⠀⠾⡬) :×]—«
-     ¬·¤ »[×: * * * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+     ¬·¤ »[×: * ++ * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 !¢
+
+
+bei den teilt rahmen muss ich einiges berücksichtigen ... 
+
+ da will jede isa anders an die 40 zyklen ran gehen ... 
+
+ auserdem brauch ich prositive zahlen und negative zahlen 
+
+ div idiv usw 
+
+ das muss ich bei allen so durch gehen ... 
+
+ also sind die funktionen noch nicht richtig 
+
+
+ ich lege für jede art einen eigene funktion an , so wie es sich gehört 
+
+
+ aber gleich .... keine eile ... erst noch ip man ... ahu ... sonntag 

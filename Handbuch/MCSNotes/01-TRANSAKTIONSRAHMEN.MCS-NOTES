@@ -87,22 +87,12 @@
 
  BEISPIEL : 
 
-# MCS
-¢!
-  —[": BION-ID BILDEN :"]—
-  ¬· —[": HOLE NAME :"]—
-     ¬· »—[×: MOV RAX, [NAME] :×]—«
-  ¬· —[": HOLE NUMMER :"]—
-     ¬· »—[×: ADD RAX, [NR] :×]—«
-  ¬· —[": SPEICHERE BION-ID :"]—
-     ¬· »—[×: MOV [BION-ID], RAX :×]—«
-!¢
-
-¢!
+ ¢!
  —[": RECHNUNGSBEISPIEL :"]—
  ¬· »—[×: 1 + 0 :×]—«
-     ¬·¤ [": 1 :"]
-!¢
+     ¬· »—[¥ PLUS-RECHNEN ¥]—«««
+         ¬·¤ [": 1 :"]
+ !¢
 
  TA = TRANSAKTIONSRAHMEN SIND FREIGABE UND BLOCK REGISTRIERUNG 
  UND KÖNNEN, JE NACH EINSATZGEBIET, IN VERSCHIEDENEN DATEIEN 

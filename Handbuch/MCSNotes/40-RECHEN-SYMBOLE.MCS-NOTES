@@ -126,66 +126,31 @@
 
  SAUBER ... JETZT HABEN WIR ERSTMAL DEN OPERATOR DEFINIERT ! 
 
+ JETZT GEHEN WIR ZU LEKTION 2 ÜBER : RECHEN-ARTEN !
 
+ ######## ÜBERSICHTSKARTE :
 
+ JEDE ISA/ 
+ ++ : ADD
+ -- : SUB
+ ×× : MUL
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-######### SPÄTER 
-
- LOGIK :
-
+ LOGIK/
  + MIT-VORZEICHEN 
  - OHNE-VORZEICHEN 
 
- 
+ GETEILT/
+ ÷÷  Der Standard (x86_64: DIV)
+ X÷+ x86_64: (IDIV)
+ X÷- x86_64: (DIV)
 
-GETEILT/
-÷÷  Der Standard (x86_64: DIV)
-X÷+ x86_64: signed (IDIV)
-X÷- x86_64: unsigned (DIV)
+ A÷+ ARM64: (SDIV)
+ A÷- ARM64: (UDIV)
 
-A÷+ ARM64: signed (SDIV)
-A÷- ARM64: unsigned (UDIV)
+ R÷+ RISC-V: (DIV)
+ R÷- RISC-V: (DIVU)
 
-R÷+ RISC-V: signed (DIV)
-R÷- RISC-V: unsigned (DIVU)
-
-RR÷+  RISC-V: signed Rest (REM)
-RR÷-  RISC-V: unsigned Rest (REMU)
-
-
-
- 
-
+ RR÷+  RISC-V: (REM)
+ RR÷-  RISC-V: (REMU)
 
 ###================================ENDPUNKT=================================###

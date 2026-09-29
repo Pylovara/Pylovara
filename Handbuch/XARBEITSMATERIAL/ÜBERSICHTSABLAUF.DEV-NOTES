@@ -138,3 +138,137 @@
      ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
 !¢
 
+
+
+
+
+
+
+
+ausgangspunkt :
+
+¢!
+»—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬· »—[×: * :×]—«
+         ÷ Ø—(⠀⠾⡎): * :Ø
+
+         ± Ø: * :(⠀⠾⡎)—Ø
+     ¬· »—[×: (⠀⠾⡎) :×]—«
+         ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+¢!
+»—[¥: 2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬· »—[×: * :×]—«
+         ÷ Ø—(⠀⠾⡁): * :Ø
+
+         ± Ø: * :(⠀⠾⡁)—Ø
+     ¬· »—[×: (⠀⠾⡁) :×]—«
+         ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+¢!
+»—[¥: 1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬· »—[×: * :×]—«
+         ÷ Ø—(⠀⠾⡀): R :Ø
+
+         ± Ø: * :(⠀⠾⡀)—Ø
+     ¬· »—[×: (⠀⠾⡀) :×]—«
+         ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG:~«
+!¢
+
+--------------------------------------------------------------------
+
+alte version auf grundlage des ausgangspunkt :
+
+¢!
+»—[¥: PLUS-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡾): ++ :Ø
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡩): * :Ø
+
+ ¬· »—[¥: 1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡪): * :Ø
+
+ ¬· »—[¥: 2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡤): * :Ø
+
+     ± Ø: * :(⠀⠾⡩)—Ø
+     ± Ø: * :(⠀⠾⡪)—Ø
+ ¬· »—[×: (⠀⠾⡩)(⠀⠾⡪) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡫): ** :Ø
+
+     ± Ø: * :(⠀⠾⡩)—Ø
+     ± Ø: * :(⠀⠾⡤)—Ø
+ ¬· »—[×: (⠀⠾⡩)(⠀⠾⡤) :×]—«
+     ¬·¤ »—[×: ** :×]—«
+          ÷ Ø—(⠀⠾⡬): ** :Ø
+
+     ± Ø: ++ :(⠀⠾⡾)—Ø
+     ± Ø: ** :(⠀⠾⡫)—Ø
+     ± Ø: ** :(⠀⠾⡬)—Ø
+ ¬· »—[×: (⠀⠾⡫) (⠀⠾⡾) (⠀⠾⡬) :×]—«
+     ¬·¤ »[×: * ++ * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+----------------------------------------------------------------
+
+ ausgangspunkt neu : 
+
+¢!
+»—[¥: R2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+     ÷ Ø—(⠀⠾⡃): * :Ø
+
+ ¬· »—[¥: 2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+     ÷ Ø—(⠀⠾⡄): * :Ø 
+
+     ± Ø: * :(⠀⠾⡃)—Ø
+     ± Ø: * :(⠀⠾⡄)—Ø
+ ¬· »—[×: (⠀⠾⡃)(⠀⠾⡄) :×]—«
+     ¬·¤ »[×: ** :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+¢!
+»—[¥: R1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+     ÷ Ø—(⠀⠾⡅): * :Ø
+
+ ¬· »—[¥: 1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+     ÷ Ø—(⠀⠾⡆): * :Ø 
+
+     ± Ø: * :(⠀⠾⡅)—Ø
+     ± Ø: * :(⠀⠾⡆)—Ø
+ ¬· »—[×: (⠀⠾⡅)(⠀⠾⡆) :×]—«
+     ¬·¤ »[×: ** :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+----------------------------------------------------------------
+
+ neue version auf grundlage von ausgangspunkt neu :
+
+¢!
+»—[¥: PLUS-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⡇): ++ :Ø
+
+ ¬· »—[¥: R1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⠸): ** :Ø
+
+ ¬· »—[¥: R2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+     ÷ Ø—(⠀⠾⠹): ** :Ø
+
+     ± Ø: ++ :(⠀⠾⡇)—Ø
+     ± Ø: ** :(⠀⠾⠸)—Ø
+     ± Ø: ** :(⠀⠾⠹)—Ø
+ ¬· »—[×: (⠀⠾⠸) (⠀⠾⡇) (⠀⠾⠹) :×]—«
+     ¬·¤ »[×: * ++ * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢

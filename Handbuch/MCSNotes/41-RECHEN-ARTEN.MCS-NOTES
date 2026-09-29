@@ -154,9 +154,45 @@
  RICHTIG ? 
 
  GUT ... DAS SIND 4 BASIS FUNKTIONEN !
- DAMIT BAUEN WIR JETZT DIE PLUS-RECHNEN FUNKTION AUF .
+ DAMIT BAUEN WIR JETZT DIE PLUS-RECHNEN - FUNKTION AUF .
+
+ DEN UM UNSERE 1 + 1 ÜBERHAUPT BERECHNEN ZU KÖNNEN, BRAUCHEN WIR 
+ ERST DIE SETZUNG KETTE DIE ALLES VEREINT, DAMIT WIR DIESE FUNKTION 
+ AUCH NUTZEN KÖNNEN. 
 
 
+ ¢!
+ »—[¥: PLUS-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+      ÷ Ø—(1): ++ :Ø
+
+  ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+      ÷ Ø—(2): * :Ø
+
+  ¬· »—[¥: 1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+      ÷ Ø—(3): * :Ø
+
+  ¬· »—[¥: 2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
+      ÷ Ø—(4): * :Ø
+
+      ± Ø: * :(2)—Ø
+      ± Ø: * :(3)—Ø
+  ¬· »—[×: (2)(3) :×]—«
+      ¬·¤ »—[×: ** :×]—«
+           ÷ Ø—(5): ** :Ø
+
+      ± Ø: * :(2)—Ø
+      ± Ø: * :(4)—Ø
+  ¬· »—[×: (2)(4) :×]—«
+      ¬·¤ »—[×: ** :×]—«
+           ÷ Ø—(6): ** :Ø
+
+      ± Ø: ++ :(1)—Ø
+      ± Ø: ** :(5)—Ø
+      ± Ø: ** :(6)—Ø
+  ¬· »—[×: (5) (1) (6) :×]—«
+      ¬·¤ »[×: * ++ * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢
 
 
 

@@ -53,20 +53,17 @@ MUTTERWABEN-KATEGORIE ⠆⡠⢁⡁ MASTERKERNWABE
  AXIOM ¡ ⠆⡠⡐⢁ ⧑ ⠆⡠⡐⠡
 
 ###====================================|====================================###
-# BAUBEREICH | SPÄTER | NACH DEM ERNEUERN | HIER ANSCHLIEẞEN |
+
 WABENHÄRTER # VERTEILERHÄRTER
 
+ # AXIOM | VERTEILERHÄRTER TRAGENDE SYSTEM-ID ÜBERGREIFEND
+ AXIOM ¡ ⍿ ⠆⢁⠰⡂ 
+
  # AXIOM | ANSCHLUSS MASTERKERNWABE
- AXIOM ¡ ⍿ #
+ AXIOM ¡ ⍿ ⠆⡠⡐⢁
 
- # PIPLINE-LINK
- TEIL-LINK ¡ # ⍠ #
-
- # PIPELINE CONNECTOR
- AXIOM ¡ 
-
- # AXIOM WABEN SYSTEM-ID 
- AXIOM ¡ # ⑀ #
+ # AXIOM | VERTEILERHÄRTER ID PORT ZU VERBINDUNGSWABE BION-ID 
+ AXIOM ¡ ⠆⡠⡐⢁ ⑀ ⠆⢁⠰⡂
 
 ###====================================|====================================###
 ###===============================NI-INJEKTOR===============================###

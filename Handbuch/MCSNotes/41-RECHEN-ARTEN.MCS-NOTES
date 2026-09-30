@@ -14,7 +14,7 @@
  ERKLÄRUNG :
 
  RECHEN-ARTEN SIND DIE NÄCHSTE EBENE DER FUNKTIONSKETTE, DIE AUF DEN 
- BAUSTEINEN AUFSETZT, DIE WIR BENÖTIGEN.
+ BAUSTEIN/EN AUFSETZT, DIE WIR BENÖTIGEN.
  
  DIE ERSTE EBENE EINER FUNKTIONSKETTE/FUNKTIONS-VERSCHACHTELUNG - ÜBERHAUPT !
 
@@ -33,11 +33,11 @@
  WIR WISSEN DAS WIR BASIS FUNKTIONEN AUFBAUEN MÜSSEN.
 
  
- WIR HABEN EINE BASIS FUNKTION AUFGEBAUT DIE :
+ WIR HABEN EINE BASISFUNKTION AUFGEBAUT DIE :
 
  ¢! 
  »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«  
-  ¬· »—[$: /Pylovara/TEST-BEREICH/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-OPERATOR/ADD :$]—«
+  ¬· »—[$: /Pylovara/…/MCS-BIBLIOTHEK/MATHEMATIK/RECHEN-OPERATOR/ADD :$]—«
       ¬· »—[×: ++ :×]—«
           ÷ Ø—(1): ++ :Ø
  
@@ -57,7 +57,7 @@
  ALSO BAUEN WIR UNS ERSTMAL DIE PLATZHALTER GRAMMATIK ZUSAMMEN !
 
 
- DA WIR DAVON AUSGEHEN KÖNNEN, DAS EINE EINS KEINE EINS IST !
+ DA WIR DAVON AUSGEHEN KÖNNEN, DAS EIN´E EINS KEINE EINS IST !
 
  KURZER WITZ AM RAND : 
 
@@ -134,7 +134,7 @@
  ALSO BAUEN WIR ZUERST DIE ELEMENTE AUF, DIE WIR, FÜR DEN LEHRGANG BENÖTIGEN :
 
  ¢!
- »—[¥: 1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ »—[¥: 1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
   ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
       ¬· »—[×: * :×]—«
           ÷ Ø—(3): R :Ø
@@ -145,7 +145,7 @@
  !¢
 
  ¢!
- »—[¥: 2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ »—[¥: 2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
   ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
       ¬· »—[×: * :×]—«
           ÷ Ø—(4): R :Ø
@@ -180,14 +180,14 @@
  »—[¥: R1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
 
   ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
-      ÷ Ø—(⠀⠾⡅): * :Ø
+      ÷ Ø—(2): * :Ø
 
   ¬· »—[¥: 1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
-      ÷ Ø—(⠀⠾⡆): * :Ø 
+      ÷ Ø—(3): * :Ø 
 
-      ± Ø: * :(⠀⠾⡅)—Ø
-      ± Ø: * :(⠀⠾⡆)—Ø
-  ¬· »—[×: (⠀⠾⡅)(⠀⠾⡆) :×]—«
+      ± Ø: * :(2)—Ø
+      ± Ø: * :(3)—Ø
+  ¬· »—[×: (2)(3) :×]—«
       ¬·¤ »[×: ** :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
  !¢
 
@@ -196,14 +196,14 @@
  »—[¥: R2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
 
   ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
-      ÷ Ø—(⠀⠾⡃): * :Ø
+      ÷ Ø—(2): * :Ø
 
   ¬· »—[¥: 2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
-      ÷ Ø—(⠀⠾⡄): * :Ø 
+      ÷ Ø—(4): * :Ø 
 
-      ± Ø: * :(⠀⠾⡃)—Ø
-      ± Ø: * :(⠀⠾⡄)—Ø
-  ¬· »—[×: (⠀⠾⡃)(⠀⠾⡄) :×]—«
+      ± Ø: * :(2)—Ø
+      ± Ø: * :(4)—Ø
+  ¬· »—[×: (1)(4) :×]—«
       ¬·¤ »[×: ** :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
  !¢
 
@@ -219,19 +219,19 @@
 
  ¢!
  »—[¥: PLUS-RECHNEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
-  ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-      ÷ Ø—(⠀⠾⡇): ++ :Ø
+  ¬· »—[¥: ++ :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+      ÷ Ø—(1): ++ :Ø
 
-  ¬· »—[¥: R1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-      ÷ Ø—(⠀⠾⠸): ** :Ø
+  ¬· »—[¥: R1 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+      ÷ Ø—(5): ** :Ø
 
-  ¬· »—[¥: R2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF:~«
-      ÷ Ø—(⠀⠾⠹): ** :Ø
+  ¬· »—[¥: R2 :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+      ÷ Ø—(6): ** :Ø
 
-      ± Ø: ++ :(⠀⠾⡇)—Ø
-      ± Ø: ** :(⠀⠾⠸)—Ø
-      ± Ø: ** :(⠀⠾⠹)—Ø
-  ¬· »—[×: (⠀⠾⠸) (⠀⠾⡇) (⠀⠾⠹) :×]—«
+      ± Ø: ++ :(1)—Ø
+      ± Ø: ** :(5)—Ø
+      ± Ø: ** :(6)—Ø
+  ¬· »—[×: (5) (1) (6) :×]—«
       ¬·¤ »[×: * ++ * :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
  !¢
 
@@ -257,11 +257,11 @@
  DA WIR FUNKTIONEN AUFRUFEN UND KEINE NEUE SCHREIBEN, BENUTZEN WIR KEINEN 
  BAUMODUS , KEINEN EINGANG UND KEINEN AUSGANG - WIR RUFEN NUR AUF WAS WIR HABEN.
 
- HERZLICHEN GLÜCKWUNSCH, NACH DEM GANZEN LERN PROZESS - TRINK ERSTMAL EIN TEE <3
+ HERZLICHEN GLÜCKWUNSCH, NACH DEM GANZEN LERNPROZESS - TRINK ERSTMAL EIN TEE <3
 
  WER MÖCHTE : 
 
- JETZT KÖNNT IHR VERSUCHEN ALS TROCKEN ÜBUNG, EINE EIGENE FUNKTION AUFZUBAUEN.
+ JETZT KÖNNT IHR VERSUCHEN ALS TROCKENÜBUNG, EINE EIGENE FUNKTION AUFZUBAUEN.
  ( KLEINER GEHEIM TIPP : BAUT DEN PLATZHALTER <RESULTAT> )
 
 ###================================ENDPUNKT=================================###

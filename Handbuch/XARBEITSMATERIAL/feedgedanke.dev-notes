@@ -1,0 +1,106 @@
+
+ 1. BAUMODUS 
+ 2.           AUSWAHL
+ 3.                    KOMPONENTE 
+ 4.                               <EINHEIT-PRÄFIX>
+ 5.                                                 ERSTELLEN
+
+mich lässt ein gedanke einfach nicht mehr los ... 
+
+ich denke auf dauer wäre ablout sinnvoll , feed setzungen 
+einzubringen 
+
+wenn ich zum beispiel 
+
+ (1)(2) 
+
+ mache , ist das die standart option für die alu setzung 
+
+ was ist aber wenn ich der alu zum beispiel eine 
+ boxis geben will mkit inhalt ... 
+
+ sagen wir ich will die setzung auf das hier legen 
+
+ ": ICH KENNE KEINE GRENZEN :"
+
+ und ich will die boxi dann erzeugen und den inhalt von einem print in 
+ ein neues setzen 
+
+ dann müsste ich verschachtelte setzungen vor denken 
+
+ sagen wir, DA BX-MCD AUCH NATIV GENUTZT WERDEN KANN, INKLUSIVE PLUSIMPULS
+
+
+##############################################################################
+
+ GRUND FUNKTION :
+
+¢!
+»—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-PRINT ERSTELLEN :~]—« 
+     ÷ Ø—(1): <BX-PRINT> :Ø 
+
+     ± Ø: <BX-PRINT> :(1)—Ø
+ ¬· »—[×: (1):×]—«
+     ¬·¤ »—[":  :"]–«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+!¢
+
+
+ GRUND FUNKTION :
+
+¢!
+»—[¥: * :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬· »—[×: * :×]—«
+         ÷ Ø—(2): R :Ø
+
+         ± Ø: * :(2)—Ø
+     ¬· »—[×: (2) :×]—«
+         ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+##############################################################################
+
+
+ BASIS FUNKTION :
+
+¢!
+»—[¥: TEXT-ÜBERTRAGEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+
+ ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+     ÷ Ø—(1): ":  :" :Ø
+
+ ¬· »—[¥: * :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+     ÷ Ø—(2): * :Ø
+
+
+     ± Ø: * :(1)—Ø
+     ± Ø: * :(2)—Ø
+ ¬· »—[×: (1(2)) :×]—«
+     ¬·¤ »[": * :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+ Ich muss heute abend umbedingt recherchieren in wie weit die alu 
+ außerhalb der rechen logik , direkte schablonen aufnehmen kann 
+ und ob ich die aufnahme logik , wenn sie konstant bleibt  nutzen kann 
+ wie ich es für richtig halte 
+
+ denn wenn das ginge hab ich .... dann hab ich .... 
+
+ weltweit ... die erste programmiersprache die sich selbst erklärt 
+ und zwar zwar pure alu ... 
+
+ wenn das geht ... dann bau ich die basis bibliothek weiter auf ...
+ den kurzen zwischen stop im tws ... kann ich defintiv machen .. 
+
+ wenn ich das mit nasm kompiniere , oder die liste der abi möglichken 
+ logiken durch gehe .... wäre das ( bis auf die mcs schaltung selbst im tws )
+
+ dann der komplette durchbruch .... 
+
+
+
+
+
+
+

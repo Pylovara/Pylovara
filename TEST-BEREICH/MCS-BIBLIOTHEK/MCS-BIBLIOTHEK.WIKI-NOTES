@@ -12,18 +12,30 @@
  # GEPRÜFT. BUCHSTABEN UND ZAHLEN SIND FÜR ENTWICKLER FREIGEGEBEN.           #
  # DIE FUNKTIONEN SIND GENERISCHER NATUR, DA ICH MICH NICHT FESTLEGEN WOLLTE #
 ###==================================PRÄFIX=================================###
- # ELEMENT | ABSICHT |        |        |   NR    |   R    |   E    |         #
- #         |         |        |   -    |         |        |        |         #
+ #    R    |    E    |        |        |         |        |        |         #
+ #    *    |         |        |        |         |        |        |         #
 ###====================================|====================================###
-###================================PARAMETER================================###
- #        RECHNUNGS-PARAMETER          |                                     # 
- #                                     |                                     # 
+###=================================ELEMENT=================================###
+ #    1    |    2    |   3    |        |         |        |        |         #
+ #         |         |        |        |         |        |        |         #
+###====================================|====================================###
+###==================================BASIS==================================###
+ #    R1   |    R2   |        |        |         |        |        |         #
+ #         |         |        |        |         |        |        |         #
 ###====================================|====================================###
 ###===============================OPERATOREN================================###
- #    ++   |    --   |        |        |         |        |        |         #
+ #    ++   |    --   |   ÷÷   |   ××   |    R÷+  |   R÷-  |  RR÷+  |  RR÷-   #
+ #         |         |        |        |    X÷+  |   X÷-  |   A÷+  |   A÷-   #
 ###====================================|====================================###
-###===============================FUNKTIONEN================================###
- #    PLUS-RECHNEN   |  MINUS-RECHNEN  |                  |                  # 
+###==========================RECHEN-ARTEN-ALLE-ISA==========================###
+ #    PLUS-RECHNEN   |  MINUS-RECHNEN  |   MAL-RECHNEN    |                  # 
+###========================RECHEN-ARTEN-ISA-X86-64==========================###
+ #    GETEILT-RECHNEN-MIT-VORZEICHEN   |   GETEILT-RECHNEN-OHNE-VORZEICHEN   #
+###=========================RECHEN-ARTEN-ISA-ARM64==========================###
+ #    GETEILT-RECHNEN-MIT-VORZEICHEN   |   GETEILT-RECHNEN-OHNE-VORZEICHEN   #
+###========================RECHEN-ARTEN-ISA-RISC-V==========================###
+ #    GETEILT-RECHNEN-MIT-VORZEICHEN   |   GETEILT-RECHNEN-OHNE-VORZEICHEN   #
+ #  GETEILT-RECHNEN-MIT-VORZEICHEN-REM |GETEILT-RECHNEN-OHNE-VORZEICHEN-REMU #
 ###====================================|====================================###
 
  INFO ZUR FUNKTIONSNUTZUNG : 

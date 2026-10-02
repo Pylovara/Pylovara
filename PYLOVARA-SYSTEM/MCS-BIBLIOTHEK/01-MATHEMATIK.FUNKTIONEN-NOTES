@@ -1,0 +1,47 @@
+@bion-nr: 01 =============== BIBLIOTHEK NAVIGATOR TERMINAL ===== bion <NR> =###
+###=========================MCS-CODE-BIBLIOTHEK=============================###
+###==================================PRÄFIX=================================###
+ #    R    |         |        |        |         |        |        |         #
+ #    *    |         |        |        |         |        |        |         #
+###====================================|====================================###
+###=================================ELEMENT=================================###
+ #    1    |    2    |   3    |        |         |        |        |         #
+ #         |         |        |        |         |        |        |         #
+###====================================|====================================###
+###==================================BASIS==================================###
+ #    R1   |    R2   |        |        |         |        |        |         #
+ #         |         |        |        |         |        |        |         #
+###====================================|====================================###
+###===============================OPERATOREN================================###
+ #    ++   |    --   |   ÷÷   |   ××   |    R÷+  |   R÷-  |  RR÷+  |  RR÷-   #
+ #         |         |        |        |    X÷+  |   X÷-  |   A÷+  |   A÷-   #
+###====================================|====================================###
+###==========================RECHEN-ARTEN-ALLE-ISA==========================###
+ #    PLUS-RECHNEN   |  MINUS-RECHNEN  |   MAL-RECHNEN    |                  # 
+###========================RECHEN-ARTEN-ISA-X86-64==========================###
+ #    GETEILT-RECHNEN-MIT-VORZEICHEN   |   GETEILT-RECHNEN-OHNE-VORZEICHEN   #
+###=========================RECHEN-ARTEN-ISA-ARM64==========================###
+ #    GETEILT-RECHNEN-MIT-VORZEICHEN   |   GETEILT-RECHNEN-OHNE-VORZEICHEN   #
+###========================RECHEN-ARTEN-ISA-RISC-V==========================###
+ #    GETEILT-RECHNEN-MIT-VORZEICHEN   |   GETEILT-RECHNEN-OHNE-VORZEICHEN   #
+ #  GETEILT-RECHNEN-MIT-VORZEICHEN-REM |GETEILT-RECHNEN-OHNE-VORZEICHEN-REMU #
+###====================================|====================================###
+
+ INFO ZUR FUNKTIONSNUTZUNG : 
+
+¢!
+ »—[×: 5 ++ 3 :×]—«
+  ¬· »—[¥: PLUS-RECHNER :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF ~:«
+      ¬·¤¤ [×: <ERGEBNIS|SYMBIOSE> :×]
+!¢
+
+¢!
+ »—[×: <R1> ++ <R2> :×]—«
+  ¬· »—[¥: <FUNKTIONSNAME> :¥]—«««~: BAUMODUS FUNKTION SPEICHER AUFRUF :~«
+      ¬·¤¤ [×: <ERGEBNIS|SYMBIOSE> :×]
+!¢
+
+###===============================VERSIONSDATEN=============================###
+ # PROGRAMMIERSPRACHE ⠆⢄⡠⡂ MCS 7.5 | MASCHINEN-CODE-SPEECH                   #
+ # LIZENZEN ⠆⢄⡠⢐ LV 1.5 LIZENZVERTRAG                                        #
+###===============================LEXIKON-ENDE==============================###

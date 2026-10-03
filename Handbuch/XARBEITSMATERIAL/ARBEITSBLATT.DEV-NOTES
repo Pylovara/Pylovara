@@ -358,9 +358,117 @@ FUNKTIONEN BEI C WIE main() in das MCD REGISTER PACKEN
 
  
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+### HALLO WELT - PRÄZISIONSARBEIT - DIREKTE FUNKTIONSKETTEN 
+
+          ICH GLAUB DAS RAHM ICH MIR EIN, 
+                          SELTEN SO EIN SAUBERES STÜCK CODE GESEHEN !
+
+¢!
+»—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+
+ ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(8): * :Ø
+
+             ± Ø: * :(8)—Ø
+         ¬· »—[ (8) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(8): * :Ø
+
+ ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(1): * :Ø
+
+             ± Ø: * :(1)—Ø
+         ¬· »—[ (1) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(1): * :Ø
+
+ ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(12): * :Ø
+
+             ± Ø: * :(12)—Ø
+         ¬· »—[ (12) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(12): * :Ø
+
+ ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(15): * :Ø
+
+             ± Ø: * :(15)—Ø
+         ¬· »—[ (15) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(15): * :Ø
+
+ ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(23): * :Ø
+
+             ± Ø: * :(23)—Ø
+         ¬· »—[ (23) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(23): * :Ø
+
+ ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(5): * :Ø
+
+             ± Ø: * :(5)—Ø
+         ¬· »—[ (5) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(5): * :Ø
+
+ ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(20): * :Ø
+
+             ± Ø: * :(20)—Ø
+         ¬· »—[ (20) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(20): * :Ø
+
+ ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-PRINT ERSTELLEN :~]—« 
+         ¬·¤ »—[":  :"]—«
+              ÷ Ø—(45): ":  :" :Ø 
+
+     ± Ø: ":  :" :(45)—Ø
+ ¬· »—[(45)]—«
+     ¬·¤ »—[":  :"]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+          ÷ Ø—(45): ":  :" :Ø
+
+     ± Ø: * :(8)—Ø
+     ± Ø: * :(1)—Ø
+     ± Ø: * :(12)—Ø
+     ± Ø: * :(15)—Ø
+     ± Ø: * :(23)—Ø
+     ± Ø: * :(5)—Ø
+     ± Ø: * :(20)—Ø
+     ± Ø: ":  :" :(45)—Ø     
+ ¬· »—[(45 (8)(1)(12)(12)(15) (23)(5)(12)(20) )]—«
+     ¬·¤ »[": HALLO WELT :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-### HALLO WELT 
+### HALLO WELT - FUNKTIONSAUFBAU
           ICH GLAUB DAS RAHM ICH MIR EIN, 
                           SELTEN SO EIN SAUBERES STÜCK CODE GESEHEN !
 
@@ -418,7 +526,9 @@ FUNKTIONEN BEI C WIE main() in das MCD REGISTER PACKEN
  DIE HALB-NATIV KANIDATEN (SCHMUNZEL) ,
 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-¢!
+ - FUNKTIONSVERWENDUNG :
+
+ ¢!
  »—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
   ¬·¤¤ »[": HALLO WELT :"]«
  !¢
@@ -427,6 +537,8 @@ FUNKTIONEN BEI C WIE main() in das MCD REGISTER PACKEN
  UND FÜR DIE GANZ FAULEN UNTER UNS ( SMILE) , 
  DIE KURZE VERSION :
  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+- NATIVE ÜBERSETZUNGSGARANTIE ,WEIL MUTTERSPRACHE MCS !
 
  ¢!
  »[": HALLO WELT :"]«

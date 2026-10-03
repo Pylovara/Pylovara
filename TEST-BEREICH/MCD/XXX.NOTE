@@ -1,0 +1,302 @@
+### MCS - MCD BEFEHL ERSTELLEN 
+
+     „ JAMJAM ………………… “
+
+MAL DIE LANGEVERSION ZUERST ;-) ::
+
+¢!
+
+»—[¥: MCD :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-MCD ERSTELLEN :~]—« 
+     ¬·¤ »—[~:  :~]«
+          ÷ Ø—(1): ~:  :~ :Ø 
+
+     ± Ø: ~:  :~ :(1)—Ø
+ ¬· »—[(1)]—«
+     ¬·¤ »—[~:  :~]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
+
+¢!
+
+»—[¥: BAUMODUS :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-MCD ERSTELLEN :~]—« 
+     ¬·¤ »—[~:  :~]«
+          ÷ Ø—(1): ~:  :~ :Ø 
+
+ ¬· »—[¥: B :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(2): * :Ø
+
+             ± Ø: * :(2)—Ø
+         ¬· »—[ (2) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(3): * :Ø
+
+             ± Ø: * :(3)—Ø
+         ¬· »—[ (3) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: U :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(4): * :Ø
+
+             ± Ø: * :(4)—Ø
+         ¬· »—[ (4) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: M :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+     ¬· »—[ * ]—«
+         ÷ Ø—(5): * :Ø
+
+         ± Ø: * :(5)—Ø
+     ¬· »—[ (5) ]—«
+         ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(6): * :Ø
+
+             ± Ø: * :(6)—Ø
+         ¬· »—[ (6) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: D :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(7): * :Ø
+
+             ± Ø: * :(7)—Ø
+         ¬· »—[ (7) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: S :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(8): * :Ø
+
+             ± Ø: * :(8)—Ø
+         ¬· »—[ (8) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+     ± Ø: * :(2)—Ø
+     ± Ø: * :(3)—Ø
+     ± Ø: * :(4)—Ø
+     ± Ø: * :(5)—Ø
+     ± Ø: * :(6)—Ø
+     ± Ø: * :(7)—Ø
+     ± Ø: * :(8)—Ø
+     ± Ø: ~:  :~ :(1)—Ø
+ ¬· »—[(1 (2(3(4(5(6(7(4(8)))))))) )]—«
+     ¬·¤ »—[~: BAUMODUS :~]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
+
+ ICH KÖNNTE DAS MCD NATIV MÖGLICH MACHEN .... 
+
+ DAS MÜSSTE NUR NOCH IN DEN BAUMODUS FÜR DEN WEITEREN SEKTOR FUNKTION 
+ FOLGEN , BIS HIN ZUM SPEICHER UND ABRUF UND EINGANG WIE AUSGANG REGELUNGEN .. 
+
+
+¢!
+»—[¥: BAUMODUS FUNKTION :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: BAUMDODUS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF:~«
+     ¬·¤¤ »—[~: BAUMODUS :~]–«
+           ÷ Ø—(8): ~: BAUMODUS :~ :Ø
+ 
+ ¬· »—[¥: F :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(1): * :Ø
+
+             ± Ø: * :(1)—Ø
+         ¬· »—[ (1) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: U :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(2): * :Ø
+
+             ± Ø: * :(2)—Ø
+         ¬· »—[ (2) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: N :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(3): * :Ø
+
+             ± Ø: * :(3)—Ø
+         ¬· »—[ (3) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: K :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(4): * :Ø
+
+             ± Ø: * :(4)—Ø
+         ¬· »—[ (4) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(5): * :Ø
+
+             ± Ø: * :(5)—Ø
+         ¬· »—[ (5) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: I :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(6): * :Ø
+
+             ± Ø: * :(6)—Ø
+         ¬· »—[ (6) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(7): * :Ø
+
+             ± Ø: * :(7)—Ø
+         ¬· »—[ (7) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ 
+
+     ± Ø: * :(1)—Ø
+     ± Ø: * :(2)—Ø
+     ± Ø: * :(3)—Ø
+     ± Ø: * :(4)—Ø
+     ± Ø: * :(5)—Ø
+     ± Ø: * :(6)—Ø
+     ± Ø: * :(7)—Ø
+     ± Ø: ~:  :~ :(8)—Ø
+ ¬· »—[(8 (1(2(3(4(5(6(7(3)))))))) )]—«
+     ¬·¤ »—[~: BAUMODUS FUNKTION :~]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
+
+
+ LOGISCHERWEISE MÜSSTE MAN JEDEN PUNKT BIS JETZT DANN NOCH KATEGORISIEREN 
+ ABER DIE VERSCHACHTELUNG IST EINDEUTIG ... 
+
+
+¢!
+»—[¥: BAUMODUS FUNKTION :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: BAUMDODUS FUNKTION :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF:~«
+     ¬·¤¤ »—[~: BAUMODUS FUNKTION :~]–«
+           ÷ Ø—(8): ~: BAUMODUS FUNKTION :~ :Ø
+
+ ¬· »—[¥: S :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(1): * :Ø
+
+             ± Ø: * :(1)—Ø
+         ¬· »—[ (1) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: P :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(2): * :Ø
+
+             ± Ø: * :(2)—Ø
+         ¬· »—[ (2) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(3): * :Ø
+
+             ± Ø: * :(3)—Ø
+         ¬· »—[ (3) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: I :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(4): * :Ø
+
+             ± Ø: * :(4)—Ø
+         ¬· »—[ (4) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: C :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(5): * :Ø
+
+             ± Ø: * :(5)—Ø
+         ¬· »—[ (5) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(6): * :Ø
+
+             ± Ø: * :(6)—Ø
+         ¬· »—[ (6) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(7): * :Ø
+
+             ± Ø: * :(7)—Ø
+         ¬· »—[ (7) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+
+     ± Ø: * :(1)—Ø
+     ± Ø: * :(2)—Ø
+     ± Ø: * :(3)—Ø
+     ± Ø: * :(4)—Ø
+     ± Ø: * :(5)—Ø
+     ± Ø: * :(6)—Ø
+     ± Ø: * :(7)—Ø
+     ± Ø: ~: BAUMODUS FUNKTION :~ :(8)—Ø
+ ¬· »—[(8 (1(2(3(4(5(6(2(7)))))))) )]—«
+     ¬·¤ »—[~: BAUMODUS FUNKTION :~]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢
+
+
+ JETZT KÖNNTE MAN DIE EINGANG|AUSGANG|ABRUF TA RAHMEN SCHREIBEN ....Z.B 
+
+
+ UND JEDER CODE IST ERWEITERBAR TRIGGERBAR .. 
+ BIS ZUM SELF HOSTING ANSICH ... 
+
+ ICH KÖNNTE SPÄTER SOGAR NOCH ARBEITERBIENEN DATEIEN RAN HÄNGEN ETC .. 
+ DIE MÖGLICHKEITEN SIND IMENZ ... MEHR ALS DAS ... 
+
+ JEDES REGISTER , SELBST EIN KOMMANDO LINE REGISTER , IST EIN REGISTER 
+ UND JEDES REGISTER KANN EINGEORDNET WERDEN .. 
+
+ .... DAMIT BAUT MAN SICH REGELRECHT SEINE EIEGENEN DUDEN FÜR ALLES AUF 
+ UND ICH DENKE, DER TWS WIRD DAS LEISTEN , PUNKT . 
+
+ ES MACHT EXTREM VIEL SPAẞ, SAUBEREN CODE SCHREIBEN ZU KÖNNEN, WO NOCH 
+ SO VIELE MÖGLICHKEITEN AUFKOMMEN WERDEN .. 
+
+ AMEN .....
+
+
+

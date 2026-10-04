@@ -32,8 +32,8 @@ MAL DIE LANGE-VERSION ZUERST ........
 
 »—[¥: BAUMODUS :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
  ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-MCD ERSTELLEN :~]—« 
-     ¬·¤ »—[~:  :~]«
-          ÷ Ø—(1): ~:  :~ :Ø 
+     ¬·¤¤ »—[~:  :~]«
+           ÷ Ø—(1): ~:  :~ :Ø 
 
  ¬· »—[¥: B :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
@@ -42,7 +42,9 @@ MAL DIE LANGE-VERSION ZUERST ........
 
              ± Ø: * :(2)—Ø
          ¬· »—[ (2) ]—«
-             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬··¤¤ »—[ * ]—«
+                         ÷ Ø—(2): * :Ø
 
  ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
@@ -51,7 +53,9 @@ MAL DIE LANGE-VERSION ZUERST ........
 
              ± Ø: * :(3)—Ø
          ¬· »—[ (3) ]—«
-             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬··¤¤ »—[ * ]—«
+                         ÷ Ø—(3): * :Ø
 
  ¬· »—[¥: U :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
@@ -60,16 +64,20 @@ MAL DIE LANGE-VERSION ZUERST ........
 
              ± Ø: * :(4)—Ø
          ¬· »—[ (4) ]—«
-             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬··¤¤ »—[ * ]—«
+                         ÷ Ø—(4): * :Ø
 
  ¬· »—[¥: M :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
- ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-     ¬· »—[ * ]—«
-         ÷ Ø—(5): * :Ø
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(5): * :Ø
 
-         ± Ø: * :(5)—Ø
-     ¬· »—[ (5) ]—«
-         ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ± Ø: * :(5)—Ø
+         ¬· »—[ (5) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬··¤¤ »—[ * ]—«
+                         ÷ Ø—(5): * :Ø
 
  ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
@@ -78,7 +86,9 @@ MAL DIE LANGE-VERSION ZUERST ........
 
              ± Ø: * :(6)—Ø
          ¬· »—[ (6) ]—«
-             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬··¤¤ »—[ * ]—«
+                         ÷ Ø—(6): * :Ø
 
  ¬· »—[¥: D :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
@@ -87,7 +97,9 @@ MAL DIE LANGE-VERSION ZUERST ........
 
              ± Ø: * :(7)—Ø
          ¬· »—[ (7) ]—«
-             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬··¤¤ »—[ * ]—«
+                         ÷ Ø—(7): * :Ø 
 
  ¬· »—[¥: S :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
@@ -96,7 +108,9 @@ MAL DIE LANGE-VERSION ZUERST ........
 
              ± Ø: * :(8)—Ø
          ¬· »—[ (8) ]—«
-             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬··¤¤ »—[ * ]—«
+                         ÷ Ø—(8): * :Ø
 
      ± Ø: * :(2)—Ø
      ± Ø: * :(3)—Ø

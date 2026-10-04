@@ -100,25 +100,27 @@
                              ÷ Ø—(5): * :Ø
 
   ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-          ¬· »—[ * ]—«
-              ÷ Ø—(20): * :Ø
+      ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+          ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+              ¬· »—[ * ]—«
+                  ÷ Ø—(20): * :Ø
 
-              ± Ø: * :(20)—Ø
-          ¬· »—[ (20) ]—«
-              ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                   ¬·¤¤ »—[ * ]—«
-                         ÷ Ø—(20): * :Ø
+                  ± Ø: * :(20)—Ø
+              ¬· »—[ (20) ]—«
+                  ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                       ¬·¤¤ »—[ * ]—«
+                             ÷ Ø—(20): * :Ø
 
   ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
       ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-PRINT ERSTELLEN :~]—« 
           ¬·¤ »—[":  :"]—«
                ÷ Ø—(45): ":  :" :Ø 
 
-      ± Ø: ":  :" :(45)—Ø
-  ¬· »—[(45)]—«
-      ¬·¤ »—[":  :"]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-           ÷ Ø—(45): ":  :" :Ø
+              ± Ø: ":  :" :(45)—Ø
+          ¬· »—[(45)]—«
+              ¬·¤ »—[":  :"]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                   ¬·¤¤ »—[":  :"]–«
+                         ÷ Ø—(45): ":  :" :Ø
 
       ± Ø: * :(8)—Ø
       ± Ø: * :(1)—Ø
@@ -139,9 +141,12 @@
  NATÜRLICH SAGT DER IMPULS OB JA ODER NEIN ABER WIR NAHMEN EIN SENARIO
  AN WO JA ERSTMAL OKEY KLINGT .
 
- 
+ DAS HALLO WELT WIRD INTERN AUSGEGEBEN , DA WIR IN DER TEST FUNKTION NUR 
+ DIE DURCH VERVOLLSTÄNDIGTE FUNKTION ABRUFEN , DIE VOLLSTÄNDIG ALLES ZEIGT .
 
+ „ DAS KANN MAN MIT GUTEM GEWISSEN DEN HEILIGEN GRAL DER INFORMATIK NENNEN “
 
+  
 
 
 

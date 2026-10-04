@@ -1,0 +1,148 @@
+@mcs-nr: 41 ==================LEXIKON NAVIGATION TERMINAL ======= mcs <NR> =###
+###============================PYLOVARA-SYSTEM==============================###
+###==============================MCS-ERKLÄRUNG==============================###
+
+ WICHTIGE INFORMATION : DIESE SEITE IST EIN PROTOTYP UND KANN FEHLER HABEN
+
+ <S-ID> BUCHSTABEN-NUTZUNG
+ —————————————————————
+
+ STANDART-BIBLIOTHEK : COMBI-FUNKTIONEN 
+
+ BESCHREIBUNG : BUCHSTABEN-NUTZUNG 
+
+ ERKLÄRUNG :
+
+ UM ZU VERSTEHEN WAS BUCHSTABEN BEWIRKEN KÖNNEN, MUSS DEMONSTRIERT WERDEN 
+ WIE EINE FUNKTION ZUSTANDE KOMMT , DIE WÖRTER VERBINDET.
+
+ MAN GEHT ZUERST MAL HER UND BAUT EINE COMBI FUNKTION AUF DIE ALLE 
+ BASIS FUNKTIONEN MIT BRINGEN WÜRDEN - FÜR DAS VERSTÄNDNIS HOCHGRADIG 
+ WICHTIG .
+
+ WIR ZEIGEN EINMAL DEN GESAMTEN CODE VERLAUF UND ZEICHEN EXPLIZIT WAS ABGERUFEN
+ WIRD, FÜR DIE PRÄZISION DES VERSTÄNDNISES .
+
+ EINMAL DER EINBLICK :
+
+ ¢!
+ »—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+          ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+              ¬· »—[ * ]—«
+                  ÷ Ø—(8): * :Ø
+
+                  ± Ø: * :(8)—Ø
+              ¬· »—[ (8) ]—«
+                  ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                       ¬·¤¤ »—[ * ]—«
+                             ÷ Ø—(8): * :Ø
+
+  ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+          ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+              ¬· »—[ * ]—«
+                  ÷ Ø—(1): * :Ø
+
+                  ± Ø: * :(1)—Ø
+              ¬· »—[ (1) ]—«
+                  ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                       ¬·¤¤ »—[ * ]—«
+                             ÷ Ø—(1): * :Ø
+
+  ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+          ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+              ¬· »—[ * ]—«
+                  ÷ Ø—(12): * :Ø
+
+                  ± Ø: * :(12)—Ø
+              ¬· »—[ (12) ]—«
+                  ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                       ¬·¤¤ »—[ * ]—«
+                             ÷ Ø—(12): * :Ø
+
+  ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+          ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+              ¬· »—[ * ]—«
+                  ÷ Ø—(15): * :Ø
+
+                  ± Ø: * :(15)—Ø
+              ¬· »—[ (15) ]—«
+                  ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                       ¬·¤¤ »—[ * ]—«
+                             ÷ Ø—(15): * :Ø
+
+  ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+          ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+              ¬· »—[ * ]—«
+                  ÷ Ø—(23): * :Ø
+
+                  ± Ø: * :(23)—Ø
+              ¬· »—[ (23) ]—«
+                  ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                       ¬·¤¤ »—[ * ]—«
+                             ÷ Ø—(23): * :Ø
+ 
+  ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+          ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+              ¬· »—[ * ]—«
+                  ÷ Ø—(5): * :Ø
+
+                  ± Ø: * :(5)—Ø
+              ¬· »—[ (5) ]—«
+                  ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                       ¬·¤¤ »—[ * ]—«
+                             ÷ Ø—(5): * :Ø
+
+  ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+          ¬· »—[ * ]—«
+              ÷ Ø—(20): * :Ø
+
+              ± Ø: * :(20)—Ø
+          ¬· »—[ (20) ]—«
+              ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                   ¬·¤¤ »—[ * ]—«
+                         ÷ Ø—(20): * :Ø
+
+  ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-PRINT ERSTELLEN :~]—« 
+          ¬·¤ »—[":  :"]—«
+               ÷ Ø—(45): ":  :" :Ø 
+
+      ± Ø: ":  :" :(45)—Ø
+  ¬· »—[(45)]—«
+      ¬·¤ »—[":  :"]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+           ÷ Ø—(45): ":  :" :Ø
+
+      ± Ø: * :(8)—Ø
+      ± Ø: * :(1)—Ø
+      ± Ø: * :(12)—Ø
+      ± Ø: * :(15)—Ø
+      ± Ø: * :(23)—Ø
+      ± Ø: * :(5)—Ø
+      ± Ø: * :(20)—Ø
+      ± Ø: ":  :" :(45)—Ø     
+  ¬· »—[(45 (8)(1)(12)(12)(15) (23)(5)(12)(20) )]—«
+      ¬·¤ »[": HALLO WELT :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
+
+ DAS WÄRE EINE NATIVE, NACHVOLLZIEHBARE MCS SCHALTUNG, GEKOPPELT AN DAS 
+ WAS ES TUN SOLL : PRINT ( DRUCK ) : HALLO WELT . 
+
+ NATÜRLICH SAGT DER IMPULS OB JA ODER NEIN ABER WIR NAHMEN EIN SENARIO
+ AN WO JA ERSTMAL OKEY KLINGT .
+
+ 
+
+
+
+
+
+###================================ENDPUNKT=================================###

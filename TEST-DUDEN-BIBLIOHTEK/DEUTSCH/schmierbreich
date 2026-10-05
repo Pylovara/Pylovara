@@ -1,0 +1,107 @@
+gut ... ich hab jetzt ein system das die tastencodes 
+direkt in die richtigen buchstaben und zahlen umwandelt 
+die für wörter gebraucht werden ... 
+
+es reicht aber nicht ein print hallo welt 
+mit der übelstens vor und rückläufigen 
+computer sprache , durch zu erklären .. 
+
+das ist , obwohl es ein paar tage herr ist , immer noch 
+ein unfassbarer durchbruch der arbeit ... 
+
+
+was ich jetzt brauch ... ist .... ist im grunde .. 
+erstmal eine menschliche sprache ... 
+
+das system versteht nur tastencodes momentan 
+und die setzung selbst .... 
+
+es brauch aber jetzt erstmal für jedes beschissene wort 
+das existiert , einen rahmen dafür ... 
+
+ohne boxis .... den die wörter dienen als grundlage ... 
+
+jedes wort kann dann für irgend eine boxi verwendet werden ..
+vorausgesetzt ich hab sie auch für die fremd systeme mit 
+kleinbuchstaben wörter hochgezogen ... 
+
+sonnst bekommt man so einen bullshit wie bei java mit 
+
+ onWindowsChance 
+
+import javax.swing.JFrame;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class WindowChangeExample {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Fenster-Erkennung");
+        
+        // Reagiert auf Fokus- oder Zustandsänderungen des Fensters
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowIconified(WindowEvent e) {
+                System.out.println("Fenster wurde minimiert.");
+            }
+
+            @Override
+            public void windowDeiconified(WindowEvent e) {
+                System.out.println("Fenster wurde wiederhergestellt.");
+            }
+
+            @Override
+            public void windowActivated(WindowEvent e) {
+                System.out.println("Fenster ist jetzt aktiv (im Vordergrund).");
+            }
+        });
+
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}
+
+geschichten , gar nicht unter kontrolle ... 
+
+die duden müssen auch auf english übergreifen ... 
+omg .... english ..... die rückwärtsgedachteste sprache 
+die ich eh gesprochen , umdenken - gemüsst habe .... ever 
+
+wenn die rahjmen nicht existieren ... dann schreibt man in 
+luft leeren raum .... 
+
+buchstaben erkennen sind die eine sache ... 
+
+aber ganze wörter erkennen , eine ganz andere ... 
+
+die frage ist dabei : wie extrem sollte man ein wörterbuch auffassen ? 
+
+und bin ich dazu überhaupt der richtige ? 
+
+ich mein ... 
+
+ wen ma misch läst , donn schreiw isch gonz onnerscht , als man des eigentlisch 
+ will ? 
+
+ mit der monnema schlappgosch brauch ich erst garnicht anfangen ... 
+
+ wenn dann muss grundsatz gelten : hoch deutsch ... 
+
+ uffff .... 
+
+ in was für einem zeitalter sind wir jetzt ? 
+
+ scheiße | scheisse oder oder doch eher scheissse ?
+
+ schiffahrt oder schifffahrt oder spricht man das eher dann 
+ schiffsfahrt aus ? 
+
+ ich denke an der sache werde ich etwas knappern ... 
+
+ aber davon abgesehen ... ein deutsch duden ist wichtig 
+ weil die wörter später verwendbar sind für die instruktionen .. 
+
+ hmmmm ..... 
+
+ 
+

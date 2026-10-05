@@ -1,0 +1,499 @@
+### BOXISAUFRUF.WIKI-NOTES
+###############################################################################
+### FUNKTION AUFBAU EINGANG AUSGANG
+
+###############################################################################
+### FUNKTION AUFBAU AUFRUF 
+
+###############################################################################
+### VERMERK BAUMODUS MCD BEFEHLE : 
+
+###############################################################################
+### MÖGLICHE ERKLÄRUNG : 
+
+###############################################################################
+###############################################################################
+## DATENSTROM MIT BOXIS VERSCHALTEN PER BAUMODUS FUNKTION 
+
+
+arbeitsfläche :
+
+ ¢! 
+ —[": BAUMODUS FUNKTION FÜR EINGABE MIT DIREKTER SHELL AUSGABE ÜBER ECHO :"]— 
+ ¬· »—[¥: SHELL AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+     ¬· »—[×: <SHELL> <AUSGABE> :×]—«
+         ÷ Ø—(1): <SHELL> :Ø
+         ÷ Ø—(2): <AUSGABE> :Ø
+
+         ± Ø: <SHELL> :(1)—Ø
+     ¬· »—[×: (1) ++ BXMKHT-SHELL :×]—«
+         ± Ø—(3): (1) = PROGRAMM START SHELL :Ø
+
+         ± Ø: (1) ++ BXMKHT-SHELL :(3)—Ø
+         ± Ø: <AUSGABE> :(2)—Ø
+     ¬· »—[×: (3 (2)) :×]—«
+         ¬·¤¤ »[': echo "<AUSGABE>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+ !¢
+
+
+ aber dann der wichtige punkt 
+
+         ± Ø: (1) ++ BXMKHT-SHELL :(3)—Ø
+         ± Ø: <AUSGABE> :(2)—Ø
+     ¬· »—[×: (3 (2)) :×]—«
+         ¬·¤¤ »[': echo "<AUSGABE>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+           ↑↑ 
+
+           intern und extern .. 
+
+ ¢!
+ »—[¥: PLUS-EINS :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ↓
+  ¬· »—[×: <R1> ++ 1 :×]—«
+      ↓
+      ÷ Ø—(1): <R1> :Ø
+      ÷ Ø—(2): 1 :Ø
+      ↓
+      ↓   ± Ø: <R1> :(1)—Ø
+      ↓   ± Ø: 1 :(2)—Ø
+      ↓   ↓
+      ¬· »—[×: (1) ++ (2) :×]—«
+          ↓
+          ¬·¤ »[×: <ERGEBNIS> :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢  
+
+
+################################################################################
+######################### GENERELLE SYNTAX SCHMIEDE ###########################
+
+
+################################## ENTSCHIEDEN ################################
+
+ # NITROX FEED NUTZUNG 
+
+ ¢!
+ ± Ø: <SPEICHER> :(<NR>)—Ø 
+ —[<BXMK>]—
+ ÷ Ø—(<NR>): <SPEICHER> :Ø
+ !¢
+
+######################## GENERELLE FUNKTIONS SCHMIEDE #########################
+
+==============================================================
+Architektur : x86-64  (Intel / AMD – Windows, Linux, Xbox)
+==============================================================
+Symbol  |  Opcode (häufigste Form)
+--------+------------------------------------------
+  ++    |  01 /r          oder  03 /r
+  --    |  29 /r          oder  2B /r
+  ××    |  0F AF /r       (IMUL)   oder  F7 /4
+  ÷÷    |  F7 /6          (DIV)    oder  F7 /7 (IDIV)
+==============================================================
+Architektur : ARM64  (Apple M1/M2/M3, Android, Server)
+==============================================================
+Symbol  |  Opcode (häufigste Form)
+--------+------------------------------------------
+  ++    |  8B xx xx xx     (ADD Xd, Xn, Xm)
+  --    |  CB xx xx xx     (SUB Xd, Xn, Xm)
+  ××    |  9B xx xx xx     (MUL Xd, Xn, Xm)
+  ÷÷    |  9A xx xx xx     (UDIV / SDIV)
+==============================================================
+Architektur : RISC-V  (Linux, Embedded, Zukunft)
+==============================================================
+Symbol  |  Opcode (häufigste Form)
+--------+------------------------------------------
+  ++    |  0110011  + funct3=000  (ADD)
+  --    |  0110011  + funct3=000  + funct7=0100000  (SUB)
+  ××    |  0110011  + funct3=000  + funct7=0000001  (MUL)
+  ÷÷    |  0110011  + funct3=100  + funct7=0000001  (DIV)
+
+¢!
+»—[¥: ALU-BION :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+   ¬· »—[×: ++ :×]—« 
+       ÷ Ø—(⠀⠾⡾): ADD :Ø  
+
+   ¬· »—[×: -- :×]—« 
+       ÷ Ø—(⠀⠾⡻): SUB :Ø  
+
+   ¬· »—[×: ** :×]—« 
+       ÷ Ø—(⠀⠾⡺): MUL :Ø  
+
+   ¬· »—[×: // :×]—« 
+       ÷ Ø—(⠀⠾⡹): DIV :Ø 
+
+¬·¤ »—[×: (⠀⠾⡾) (⠀⠾⡻) (⠀⠾⡺) (⠀⠾⡹) :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~
+!¢
+
+################################################################ 
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+# INFONOTIZ 
+
+ GANZ AMSCHLUSS FÜGE ICH NOCH EXPLIZITE EINFACHE MCS TRANSAKTIONSRAHMEN MIT 
+ PRINT BOXIS EIN , ALS BAUMANSICHT ... FÜR DIE EINEN DEKORATION FÜR DIE 
+ ANDEREN EINE NACHVOLLZIEHBARKEITSFRAGE , DA SIE SICH ERSTMAL REIN DENKEN 
+ MÜSSEN .
+
+ 
+
+ 
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+### HALLO WELT - PRÄZISIONSARBEIT - DIREKTE FUNKTIONSKETTEN 
+
+          ICH GLAUB DAS RAHM ICH MIR EIN, 
+                          SELTEN SO EIN SAUBERES STÜCK CODE GESEHEN !
+
+¢!
+»—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+
+ ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(8): * :Ø
+
+             ± Ø: * :(8)—Ø
+         ¬· »—[ (8) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(8): * :Ø
+
+ ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(1): * :Ø
+
+             ± Ø: * :(1)—Ø
+         ¬· »—[ (1) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(1): * :Ø
+
+ ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(12): * :Ø
+
+             ± Ø: * :(12)—Ø
+         ¬· »—[ (12) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(12): * :Ø
+
+ ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(15): * :Ø
+
+             ± Ø: * :(15)—Ø
+         ¬· »—[ (15) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(15): * :Ø
+
+ ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(23): * :Ø
+
+             ± Ø: * :(23)—Ø
+         ¬· »—[ (23) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(23): * :Ø
+
+ ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(5): * :Ø
+
+             ± Ø: * :(5)—Ø
+         ¬· »—[ (5) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(5): * :Ø
+
+ ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(20): * :Ø
+
+             ± Ø: * :(20)—Ø
+         ¬· »—[ (20) ]—«
+             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ * ]—«
+                        ÷ Ø—(20): * :Ø
+
+ ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-PRINT ERSTELLEN :~]—« 
+         ¬·¤ »—[":  :"]—«
+              ÷ Ø—(45): ":  :" :Ø 
+
+     ± Ø: ":  :" :(45)—Ø
+ ¬· »—[(45)]—«
+     ¬·¤ »—[":  :"]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+          ÷ Ø—(45): ":  :" :Ø
+
+     ± Ø: * :(8)—Ø
+     ± Ø: * :(1)—Ø
+     ± Ø: * :(12)—Ø
+     ± Ø: * :(15)—Ø
+     ± Ø: * :(23)—Ø
+     ± Ø: * :(5)—Ø
+     ± Ø: * :(20)—Ø
+     ± Ø: ":  :" :(45)—Ø     
+ ¬· »—[(45 (8)(1)(12)(12)(15) (23)(5)(12)(20) )]—«
+     ¬·¤ »[": HALLO WELT :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+### HALLO WELT - FUNKTIONSAUFBAU |           ICH GLAUB DAS RAHM ICH MIR EIN, 
+                          SELTEN SO EIN SAUBERES STÜCK CODE GESEHEN !
+
+¢!
+»—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(8): * :Ø
+
+ ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(1): * :Ø
+
+ ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(12): * :Ø
+
+ ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(15): * :Ø
+
+ ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(23): * :Ø
+
+ ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(5): * :Ø
+
+ ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(20): * :Ø
+
+ ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[":  :"]—«
+           ÷ Ø—(45): ":  :" :Ø
+
+     ± Ø: * :(8)—Ø
+     ± Ø: * :(1)—Ø
+     ± Ø: * :(12)—Ø
+     ± Ø: * :(15)—Ø
+     ± Ø: * :(23)—Ø
+     ± Ø: * :(5)—Ø
+     ± Ø: * :(20)—Ø
+     ± Ø: ":  :" :(45)—Ø     
+ ¬· »—[(45 (8)(1)(12)(12)(15) (23)(5)(12)(20) )]—«
+     ¬·¤ »[": HALLO WELT :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+!¢
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 
+ DAS IST DIE LANGE „ KLUGSCHEIẞER VERSION EINE LOGISCHE DIREKT SCHALTUNGS ARCHITEKTUR  “
+ Direct Logic Execution Architecture
+--------------------------------------------------
+ DIE HALB-NATIV KANIDATEN (SCHMUNZEL) ,
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+ - FUNKTIONSVERWENDUNG :
+
+ ¢!
+ »—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+  ¬·¤¤ »[": HALLO WELT :"]«
+ !¢
+ 
+ --------------------------------------------------
+ UND FÜR DIE GANZ FAULEN UNTER UNS ( SMILE) , 
+ DIE KURZE VERSION :
+ ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+- NATIVE ÜBERSETZUNGSGARANTIE ,WEIL MUTTERSPRACHE MCS !
+
+ ¢!
+ »[": HALLO WELT :"]«
+ !¢
+
+
+######################################################################
+######################################################################
+######################################################################
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+### VERALTET ABER ALS IDEEN WERK FÜR DEN BAUMODUS ENTHALTEN : 
+### EXTREM VERALTETER BEREICH, WIRD NOCH AUF DEN JETZIGEN STAND DER DINGE 
+### UMGEMÜNZT . 
+ 
+ 
+ ¢! # konrette idee
+
+ »—[ BAU TISCH ]«
+
+  ¬· »—[ GEOMETRIE = WINKEL ]«
+
+      ¬· »—[ PLATTE = H10 + L60 + B60 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
+
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
+
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
+
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
+
+      ¬· »—[ BEIN = H60 + L5 + B5 ]«««3D
+          ¬· »[ KOORDINATEN = X* + Y* ]«««2D
+
+ !¢
+
+ ¢! # generische idee
+
+ »—[ BAU <DAS> ]«
+
+  ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
+
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+ !¢
+
+¢! masstyp idee
+
+ »—[ BAU <DAS> ]«
+
+  ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
+      ¬· »—[ MASSENTYP = <AUSWAHL> ]«
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
+              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+
+!¢
+
+¢! masstyp idee
+
+»—[ GEOMETRIE = <AUSWAHL> ]«««~ BAUMODUS-START && VERBINDE ~«
+ ¬· »—[ MASSENTYP = <AUSWAHL> ]«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+
+!¢
+
+ ««~ PHYSIK-KOLLISION-RIGIDBODY ~«
+ ««~ MATERIAL-MESSUNG-HOLZ ~«
+
+¢!
+
+»[ OBJEKT = ICH ]« 
+ ¬· »[ DEF __INIT__(ICH, GRASS, TABAK, PAPER, FEUERZEUG): ]« 
+         ¿¹
+     ¬· »[ ICH.GRASS = GRASS ]« 
+         ¿¹
+     ¬· »[ ICH.TABAK = TABAK ]« 
+         ¿¹
+     ¬· »[ ICH.PAPER = PAPER ]« 
+         ¿¹
+     ¬· »[ ICH.FEUERZEUG = FEUERZEUG ]« 
+     
+         ¶ ¬· »[ DEF ANZÜNDEN(ICH) ]« 
+
+               ¬· »[ ICH.ANZÜNDEN +=HIGH ]« 
+
+               ¶ ¬· »[ __NAME__ ]« 
+                     ¬·¤= »[ "__MAIN__": ]« 
+                           ¬· »[ MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) ]« 
+                           ¬· »[ ICH-BEKIFFT.ANZÜNDEN() ]«
+
+
+
+
+         ¶¶ ¬· »[~ RETURN __INIT__ ]«
+
+!¢ 
+
+¢!
+»—["TRANSAKTIONSRAHMEN"]«
+
+ ¬· »—[" ¢! "]«
+     ± »[(1)—Ø ¥ ¢! ¥ Ø]«
+
+         ÷ »[Ø <IO> Ø—(1)]«
+     ¬· »—[, RAM_REG ,]«
+         ¬· »—[" THEORETISCH NUMMER "]«
+             ± »[(10)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
+
+ ¬· »—[" !¢ "]«
+     ± »[(2)—Ø !¢ Ø]«
+
+         ÷ »[Ø <IO> Ø—(2)]«
+     ¬· »—[, RAM_REG ,]«
+         ¬· »—[" THEORETISCH NUMMER "]«
+             ± »[(11)—Ø <RAM-ZUWEISUNGS-NUMMER> Ø]«
+!¢
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
+
+EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - Loop/Pipe)
+ ─────────────────────────      ────────────────────────      ───────────────────────────
+          ¿¹ ─────────────────> »—[ BAU AKTION ]«««V1
+          ↓                               ↓
+          ¿¹ ───────────────────>   £1 OUTPUT ───────────────┐ (Daten-Auskopplung)
+          ↓                               ↓                  │
+          ¿¹ ─────────────────> »—[ OBJEKT = ... ]«          │
+          ↓                               ↓                  │
+          ¿¹ ─────────────────>   ¶ ¬·¤: [" Output "]        │
+          ↓                               ↓                  │
+          ¿  ─────────────────>  ¶¶ »—[ OBJEKT = ... ]«      │
+                                          ↓                  │
+                                     ¬·¤: [" Output "]       │
+                                          ↓                  │
+                                     £1 INPUT <──────────────┘ (Wiedereinspeisung)
+
+###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###

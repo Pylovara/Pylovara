@@ -1,23 +1,9 @@
 ################################################################################
 ####################### DAS MANIFEST DER ENTSTEHUNG SELBST #####################
 
- LERNMATERIAL FÜR SPÄTER ... ABER ES WIRD ALS DUDEN LERNMATERIAL 
- AUFGEBAUT ... 
-
- ICH DENKE DAS MCD REGISTER BEISPIEL WIRD , EXTREM VIELE INS STAUNEN 
- BRINGEN ... DAS DAZUGEHANGTE HALLO WELT , IST DA NUR NOCH DAS GIPFELCHEN 
- AUF DER SAHNENCREMTORTE :-) ::
-
-
-
- ICH MACH DAS NOCH SCHLAUER ... ICH GEH JETZT ALLE DURCH UND BAU ÜBERALL 
- DEN KLUGSCHEIẞER MODUS REIN ... DAMIT DAS PASST ... 
-
- UND ZEIGE IHNEN DANN DIE GEMÜTLICHE SYSTEM VARIANTE ALS ENTWICKLER SELBST ..
-
- KOORDINATIONEN BERECHNUNGEN KOMMEN DANN NATÜRLICH AUCH REIN , DIE SIND 
- VORGEMERKT .. 
-
+ HIER WIRD DAS SELBST AUSFÜHREN VON BEFEHLEN GEZEIGT .
+ KEINE LEICHTE LEKTÜRE ABER VOR DIE EWIGKEIT .
+ ICH KANN DAS ERSTMAL KOMPLETT AUFSCHREIBEN .
 
 ### MCS - MCD BEFEHL ERSTELLEN 
 
@@ -345,208 +331,15 @@ MAL DIE LANGE-VERSION ZUERST ........
 
  EINGANG | AUSGANG | ABRUF | LÖSCHEN | ETC 
 
- UND JEDER CODE IST ERWEITERBAR TRIGGERBAR .. 
- BIS ZUM SELF HOSTING ANSICH ... 
-
- ICH KÖNNTE SPÄTER SOGAR NOCH ARBEITERBIENEN DATEIEN RAN HÄNGEN ETC .. 
- DIE MÖGLICHKEITEN SIND IMENZ ... MEHR ALS DAS ... 
-
- JEDES REGISTER , SELBST EIN KOMMANDO LINE REGISTER , IST EIN REGISTER 
- UND JEDES REGISTER KANN EINGEORDNET WERDEN .. 
-
- .... DAMIT BAUT MAN SICH REGELRECHT SEINE EIGENEN DUDEN FÜR ALLES AUF 
- UND ICH DENKE, DER TWS WIRD DAS LEISTEN , PUNKT . 
-
- ES MACHT EXTREM VIEL SPAẞ, SAUBEREN CODE SCHREIBEN ZU KÖNNEN, WO NOCH 
- SO VIELE MÖGLICHKEITEN AUFKOMMEN WERDEN .. 
-
- AMEN .....
 
 
-### HALLO WELT - PRÄZISIONSARBEIT - DIREKTE FUNKTIONSKETTEN 
 
-          ICH GLAUB DAS RAHM ICH MIR EIN, 
-                          SELTEN SO EIN SAUBERES STÜCK CODE GESEHEN !
 
-¢!
-»—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
- ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
 
- ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
-     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-         ¬· »—[ * ]—«
-             ÷ Ø—(8): * :Ø
 
-             ± Ø: * :(8)—Ø
-         ¬· »—[ (8) ]—«
-             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                  ¬·¤¤ »—[ * ]—«
-                        ÷ Ø—(8): * :Ø
 
- ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-         ¬· »—[ * ]—«
-             ÷ Ø—(1): * :Ø
 
-             ± Ø: * :(1)—Ø
-         ¬· »—[ (1) ]—«
-             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                  ¬·¤¤ »—[ * ]—«
-                        ÷ Ø—(1): * :Ø
 
- ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-         ¬· »—[ * ]—«
-             ÷ Ø—(12): * :Ø
-
-             ± Ø: * :(12)—Ø
-         ¬· »—[ (12) ]—«
-             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                  ¬·¤¤ »—[ * ]—«
-                        ÷ Ø—(12): * :Ø
-
- ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-         ¬· »—[ * ]—«
-             ÷ Ø—(15): * :Ø
-
-             ± Ø: * :(15)—Ø
-         ¬· »—[ (15) ]—«
-             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                  ¬·¤¤ »—[ * ]—«
-                        ÷ Ø—(15): * :Ø
-
- ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-         ¬· »—[ * ]—«
-             ÷ Ø—(23): * :Ø
-
-             ± Ø: * :(23)—Ø
-         ¬· »—[ (23) ]—«
-             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                  ¬·¤¤ »—[ * ]—«
-                        ÷ Ø—(23): * :Ø
-
- ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-         ¬· »—[ * ]—«
-             ÷ Ø—(5): * :Ø
-
-             ± Ø: * :(5)—Ø
-         ¬· »—[ (5) ]—«
-             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                  ¬·¤¤ »—[ * ]—«
-                        ÷ Ø—(5): * :Ø
-
- ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
-         ¬· »—[ * ]—«
-             ÷ Ø—(20): * :Ø
-
-             ± Ø: * :(20)—Ø
-         ¬· »—[ (20) ]—«
-             ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-                  ¬·¤¤ »—[ * ]—«
-                        ÷ Ø—(20): * :Ø
-
- ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬· »—[~: BAUMODUS AUSWAHL KOMPONENTE BX-PRINT ERSTELLEN :~]—« 
-         ¬·¤ »—[":  :"]—«
-              ÷ Ø—(45): ":  :" :Ø 
-
-     ± Ø: ":  :" :(45)—Ø
- ¬· »—[(45)]—«
-     ¬·¤ »—[":  :"]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-          ÷ Ø—(45): ":  :" :Ø
-
-     ± Ø: * :(8)—Ø
-     ± Ø: * :(1)—Ø
-     ± Ø: * :(12)—Ø
-     ± Ø: * :(15)—Ø
-     ± Ø: * :(23)—Ø
-     ± Ø: * :(5)—Ø
-     ± Ø: * :(20)—Ø
-     ± Ø: ":  :" :(45)—Ø     
- ¬· »—[(45 (8)(1)(12)(12)(15) (23)(5)(12)(20) )]—«
-     ¬·¤ »[": HALLO WELT :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-
-!¢
-
-###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
-### HALLO WELT - FUNKTIONSAUFBAU |           ICH GLAUB DAS RAHM ICH MIR EIN, 
-                          SELTEN SO EIN SAUBERES STÜCK CODE GESEHEN !
-
-¢!
-»—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
- ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[ * ]—«
-           ÷ Ø—(8): * :Ø
-
- ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[ * ]—«
-           ÷ Ø—(1): * :Ø
-
- ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[ * ]—«
-           ÷ Ø—(12): * :Ø
-
- ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[ * ]—«
-           ÷ Ø—(15): * :Ø
-
- ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[ * ]—«
-           ÷ Ø—(23): * :Ø
-
- ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[ * ]—«
-           ÷ Ø—(5): * :Ø
-
- ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[ * ]—«
-           ÷ Ø—(20): * :Ø
-
- ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤¤ »—[":  :"]—«
-           ÷ Ø—(45): ":  :" :Ø
-
-     ± Ø: * :(8)—Ø
-     ± Ø: * :(1)—Ø
-     ± Ø: * :(12)—Ø
-     ± Ø: * :(15)—Ø
-     ± Ø: * :(23)—Ø
-     ± Ø: * :(5)—Ø
-     ± Ø: * :(20)—Ø
-     ± Ø: ":  :" :(45)—Ø     
- ¬· »—[(45 (8)(1)(12)(12)(15) (23)(5)(12)(20) )]—«
-     ¬·¤ »[": HALLO WELT :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-
-!¢
-
-↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 
- DAS IST DIE LANGE „ KLUGSCHEIẞER VERSION EINE LOGISCHE DIREKT SCHALTUNGS ARCHITEKTUR  “
- Direct Logic Execution Architecture
---------------------------------------------------
- DIE HALB-NATIV KANIDATEN (SCHMUNZEL) ,
-↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-
- - FUNKTIONSVERWENDUNG :
-
- ¢!
- »—[¥: TEST :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-  ¬·¤¤ »[": HALLO WELT :"]«
- !¢
- 
- --------------------------------------------------
- UND FÜR DIE GANZ FAULEN UNTER UNS ( SMILE) , 
- DIE KURZE VERSION :
- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-
-- NATIVE ÜBERSETZUNGSGARANTIE ,WEIL MUTTERSPRACHE MCS !
-
- ¢!
- »[": HALLO WELT :"]«
- !¢
 
 ################################################################################
 ###############################ENDE DES MANIFEST################################

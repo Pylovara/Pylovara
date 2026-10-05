@@ -184,6 +184,11 @@
     pop ebp            ; Stelle alten Rahmen wieder her
     ret                ; SPRUNGBEFEHL: Gehe zurück zur Adresse, die auf dem Stapel liegt
 
+   Arithmetik (Ganzzahl): ADD, SUB, INC, DEC
+   Logik (Bitweise): AND, OR, XOR, NOT, NAND
+   Schieben: SLL, SLR
+   Vergleichen: CMP, TEST
+
  - BSK|PROGRAMM 
    DIE BSK LOGIK WIRD AUF 00-78/00-79 ZURÜCK 
    ENTWICKELT, DER PROGRAMM NAME BLEIBT DURCHWEG 

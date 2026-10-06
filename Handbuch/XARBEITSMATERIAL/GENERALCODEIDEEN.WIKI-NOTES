@@ -321,7 +321,7 @@ Symbol  |  Opcode (häufigste Form)
 ### UMGEMÜNZT . 
  
  
- ¢! # konrette idee
+ ¢! # konrette idee | ALT AUSGANGSPUNKT
 
  »—[ BAU TISCH ]«
 
@@ -344,50 +344,54 @@ Symbol  |  Opcode (häufigste Form)
 
  !¢
 
- ¢! # generische idee
+ ¢! # GENERISCHE IDEE |
 
- »—[ BAU <DAS> ]«
+ »—[¥: <DAS> :¥]«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
 
   ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-          ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+
+  ¶ ¬· »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
  !¢
 
-¢! masstyp idee
+¢! MASSTYP IDEE |
 
- »—[ BAU <DAS> ]«
+ »—[¥: <DAS> :¥]«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
 
   ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
       ¬· »—[ MASSENTYP = <AUSWAHL> ]«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««<RAUMDIMENSION>
-              ¬· »[ KOORDINATEN = X* + Y* ]«««<RAUMDIMENSION>
+          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+
+  ¶ ¬· »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
 !¢
 

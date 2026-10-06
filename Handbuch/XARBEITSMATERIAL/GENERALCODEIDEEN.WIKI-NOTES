@@ -91,20 +91,28 @@ Symbol  |  Opcode (häufigste Form)
   ÷÷    |  0110011  + funct3=100  + funct7=0000001  (DIV)
 
 ¢!
-»—[¥: ALU-BION :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
-   ¬· »—[×: ++ :×]—« 
-       ÷ Ø—(⠀⠾⡾): ADD :Ø  
+»—[¥: ALU-BION-86-64 :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ Ω ¬· »—[ ++ ]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+       ¬·¤¤ »—[ ++ ]—«
+            ÷ Ø—(⠀⠾⡾): ADD :Ø
 
-   ¬· »—[×: -- :×]—« 
-       ÷ Ø—(⠀⠾⡻): SUB :Ø  
+ Ω ¬· »—[ -- ]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+       ¬·¤¤ »—[ ++ ]—«
+             ÷ Ø—(⠀⠾⡻): SUB :Ø
 
-   ¬· »—[×: ** :×]—« 
-       ÷ Ø—(⠀⠾⡺): MUL :Ø  
+ Ω ¬· »—[ ×× ]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+       ¬·¤¤ »—[ ++ ]—« 
+             ÷ Ø—(⠀⠾⡺): MUL :Ø
 
-   ¬· »—[×: // :×]—« 
-       ÷ Ø—(⠀⠾⡹): DIV :Ø 
+ Ω ¬· »—[ ×× ]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+       ¬·¤¤ »—[ ++ ]—«
+             ÷ Ø—(⠀⠾⡹): DIV :Ø 
 
-¬·¤ »—[×: (⠀⠾⡾) (⠀⠾⡻) (⠀⠾⡺) (⠀⠾⡹) :×]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~
+      ± Ø: ADD :(⠀⠾⡾)—Ø
+      ± Ø: SUB :(⠀⠾⡻)—Ø
+      ± Ø: MUL :(⠀⠾⡺)—Ø
+      ± Ø: DIV :(⠀⠾⡹)—Ø
+ ¬·¤ »—[ (⠀⠾⡾) (⠀⠾⡻) (⠀⠾⡺) (⠀⠾⡹) ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~
 !¢
 
 ###==##==###======#####====PYLOVARA-SYSTEM=====#####======###==##==###
@@ -383,30 +391,32 @@ Symbol  |  Opcode (häufigste Form)
 
 !¢
 
-¢! masstyp idee
+¢! MASSTYP IDEE | 
 
-»—[ GEOMETRIE = <AUSWAHL> ]«««~ BAUMODUS-START && VERBINDE ~«
+»—[ GEOMETRIE = <AUSWAHL> ]«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
  ¬· »—[ MASSENTYP = <AUSWAHL> ]«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ DIMENSION <RAUMDIMENSION> ~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~ DIMENSION <RAUMDIMENSION> ~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~ BAUMODUS-DIMENSION <RAUMDIMENSION> ~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+
+ ¶ »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
 !¢
 
- ««~ PHYSIK-KOLLISION-RIGIDBODY ~«
- ««~ MATERIAL-MESSUNG-HOLZ ~«
+ ««~: PHYSIK KOLLISION RIGIDBODY :~«
+ ««~: MATERIAL MESSUNG HOLZ :~«
 
 ¢!
 

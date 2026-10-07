@@ -348,26 +348,56 @@ Symbol  |  Opcode (häufigste Form)
 
  »—[¥: <DAS> :¥]«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
 
-  ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
+  ¬· »—[ GEOMETRIE  ]—«
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+      Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+            ¬·¤ »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«
+                 ÷ Ø—():  :Ø
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+            ¬· »—[ KOORDINATEN = X* + Y* ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+                ¬·¤ »—[ KOORDINATEN = X* + Y* ]—«
+                     ÷ Ø—():  :Ø
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+      Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+            ¬·¤ »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«
+                 ÷ Ø—():  :Ø
 
-      ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-          ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+            ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+                ¬·¤ »—[ KOORDINATEN = X* + Y* ]—«
+                     ÷ Ø—():  :Ø
 
-  ¶ ¬· »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+      Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+            ¬·¤ »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«
+                 ÷ Ø—():  :Ø
+
+            ¬· »—[ KOORDINATEN = X* + Y* ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+                ¬·¤ »—[ KOORDINATEN = X* + Y* ]—«
+                     ÷ Ø—():  :Ø
+
+
+      Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+            ¬·¤ »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«
+                 ÷ Ø—():  :Ø
+
+            ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+                ¬·¤ »—[ KOORDINATEN = X* + Y* ]—«
+                     ÷ Ø—():  :Ø
+
+
+            ± Ø: :()—Ø
+            ± Ø: :()—Ø
+            ± Ø: :()—Ø
+            ± Ø: :()—Ø
+      ¶ ¬· »—[  ]—«
+            ¬·¤ »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+
+      ¶¶ ¬· »[": KEINE AUSWAHL GEFUNDEN :"]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
  !¢
+
+ICH KOMM UM EIN WÖRTERBUCH NICHT DRUM HERUM ... 
 
 ¢! MASSTYP IDEE |
 
@@ -696,4 +726,3 @@ EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - L
   BEI ¶ UND ¶¶ DURCHLAUF SIGNAL 
   BEI Ω UND ΩΩ DER TEXT SCAN RASTER 
 
-  

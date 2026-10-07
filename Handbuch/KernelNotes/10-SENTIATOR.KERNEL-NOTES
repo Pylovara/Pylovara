@@ -100,9 +100,9 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠢⠔ HAUPTWABE
 
  BION-ID ⠆⡐⠢⠨ HT029
 
- BSK # SEMKHT-PROZESS-FEHLER
+ BSK ⠆⡐⠢⠰ SEMKHT-PROZESS-FEHLER
 
- BION # SE010MK010HT029
+ BION ⠆⡐⠢⡁ SE010MK010HT029
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡐⠢⠡ ⧓ ⠆⡐⠢⠤ Ξ ⠆⡐⠢⠨
@@ -115,25 +115,24 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠢⠔ HAUPTWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡐⠡⡄ HAUPTWABE 
 
-MUTTERWABEN-KATEGORIE # HAUPTWABE 
+ PROGRAMM ⠆⡐⠡⡈ WENN-KANN
 
- PROGRAMM # 
+ WABEN-ID ⠆⡐⠡⡠ HT
 
- WABEN-ID # HT
+ BION-NR ⠆⡐⠡⢁ 030
 
- BION-NR # 028
+ BION-ID ⠆⡐⠡⢂ HT030
 
- BION-ID # 
+ BSK ⠆⡐⠡⢄ SEMKHT-WENN-KANN
 
- BSK # 
-
- BION # 
+ BION ⠆⡐⠡⢈ SE010MK010HT030 
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⠡⡠ ⧓ ⠆⡐⠡⢁ Ξ ⠆⡐⠡⢂
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⠡⢂ ⧑ #
 
 
 ###====================================|====================================###
@@ -142,25 +141,24 @@ MUTTERWABEN-KATEGORIE # HAUPTWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE ⠆⡐⠡⢐ HAUPTWABE 
 
-MUTTERWABEN-KATEGORIE # HAUPTWABE 
+ PROGRAMM ⠆⡐⠡⢠ WENN-NICHT 
 
- PROGRAMM # 
+ WABEN-ID ⠆⡐⠡⣀ HT
 
- WABEN-ID # HT
+ BION-NR ⠆⡐⠢⠃ 031
 
- BION-NR # 028
+ BION-ID ⠆⡐⠢⠅ HT031 
 
- BION-ID # 
+ BSK ⠆⡐⠡⠊ SEMKHT-WENN-NICHT 
 
- BSK # 
-
- BION # 
+ BION ⠆⡐⠡⠌ SE010MK010HT031 
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⠡⣀ ⧓ ⠆⡐⠢⠃ Ξ ⠆⡐⠢⠅
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⠢⠅ ⧑ #
 
 ###====================================|====================================###
 

@@ -397,22 +397,22 @@ Symbol  |  Opcode (häufigste Form)
 
 ¢! MASSTYP IDEE | 
 
-»—[ GEOMETRIE = <AUSWAHL> ]«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
- ¬· »—[ MASSENTYP = <AUSWAHL> ]«
+»—[ GEOMETRIE = <AUSWAHL> ]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[ MASSENTYP = <AUSWAHL> ]—«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
      ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~ DIMENSION <RAUMDIMENSION> ~«
-
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~ DIMENSION <RAUMDIMENSION> ~«
-
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
      ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+
+ ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
      ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
  ¶ »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
@@ -424,30 +424,27 @@ Symbol  |  Opcode (häufigste Form)
 
 ¢!
 
-»[PY: OBJEKT = ICH :PY]« 
- ¬· »[PY: DEF __INIT__(ICH, GRASS, TABAK, PAPER, FEUERZEUG): :PY]« 
+»—[PY: OBJEKT = ICH :PY]—« 
+ ¬· »—[PY: DEF __INIT__(ICH, GRASS, TABAK, PAPER, FEUERZEUG): :PY]—« 
          ¿¹
-     ¬· »[PY: ICH.GRASS = GRASS :PY]« 
+     ¬· »—[PY: ICH.GRASS = GRASS :PY]—« 
          ¿¹
-     ¬· »[PY: ICH.TABAK = TABAK :PY]« 
+     ¬· »—[PY: ICH.TABAK = TABAK :PY]—« 
          ¿¹
-     ¬· »[PY: ICH.PAPER = PAPER :PY]« 
+     ¬· »—[PY: ICH.PAPER = PAPER :PY]—« 
          ¿¹
-     ¬· »[PY: ICH.FEUERZEUG = FEUERZEUG :PY]« 
+     ¬· »—[PY: ICH.FEUERZEUG = FEUERZEUG :PY]—« 
      
-         ¶ ¬· »[PY: DEF ANZÜNDEN(ICH) :PY]« 
+     ¶ ¬· »—[PY: DEF ANZÜNDEN(ICH) :PY]—« 
 
-               ¬· »[PY: ICH.ANZÜNDEN +=HIGH :PY]« 
+           ¬· »—[PY: ICH.ANZÜNDEN +=HIGH :PY]—« 
 
-               ¶ ¬· »[PY: __NAME__ :PY]« 
-                     ¬·¤= »[PY: "__MAIN__": :PY]« 
-                           ¬· »[PY: MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) :PY]« 
-                           ¬· »[PY: ICH-BEKIFFT.ANZÜNDEN() :PY]«
+               ¬· »—[PY: __NAME__ :PY]—« 
+                   ¬·¤ »—[PY: "__MAIN__": :PY]—« 
+                        ¬· »[PY: MARIOBART = ICH-BEKIFFT(HIGH, HIGHER , ULTRAHIGH) :PY]« 
+                        ¬· »[PY: ICH-BEKIFFT.ANZÜNDEN() :PY]«
 
-
-
-
-         ¶¶ ¬· »[PY: RETURN __INIT__ :PY]«
+     ¶¶ ¬· »[PY: RETURN __INIT__ :PY]«
 
 !¢ 
 
@@ -521,11 +518,11 @@ EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - L
 
  SENTIATOREN ERWEITERUNG :
 
- ¶  # WENN-PROZESSE-AUSWAHL
- ¶¶ # WENN-FEHLER-PROZESS-AUSWAHL
+ ¶  # PROZESS-WEITER
+ ¶¶ # PROZESS-FEHLER
 
- Ω  # WENN-AUSWAHL
- ΩΩ # WENN-NICHT-AUSWAHL
+ Ω  # WENN-KANN
+ ΩΩ # WENN-NICHT
 
  datei    : raster.kernel-driver
  laufzeit : bei bedarf | ON Prozess
@@ -573,7 +570,6 @@ EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - L
           ¶¶ ¬· »—[": ES WURDE KEIN WORT ERKANNT :"]—«««~: ZYTRON ZYKLUS 1 :~«
                  £›1
 
-         £‹1
      ¬· »—[¥: RASTER ANGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
          ¬· »—[¥: <  > :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
              ¬·¤¤ »—[ <  > ]—«
@@ -696,11 +692,8 @@ EBENE 1 (SYNAPTOR - Sync)      EBENE 2 (PROZESS-STRANG)      EBENE 3 (ZYTRON - L
 
 … 
 
- mir ist bewusst das die entscheidungspfade hier nicht wirklich gelten , sie 
- sollten nur prüfen ob prozess fertig wenn nicht ... usw .. 
+ ↑↑↑↑↑↑↑↑↑↑↑↑↑ EINRASTPUNKT MIT IN DER PIPELINE ABER REX PRÜFEND 
+  BEI ¶ UND ¶¶ DURCHLAUF SIGNAL 
+  BEI Ω UND ΩΩ DER TEXT SCAN RASTER 
 
- baut man aber in der sentiator abteilung noch weitere programme auf ... 
-
- wie wort scanner ... satz scanner ... längen scanner ... usw 
-
- lässt sich damit extrem granular arbeiten ... !
+  

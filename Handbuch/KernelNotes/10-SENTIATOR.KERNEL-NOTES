@@ -49,8 +49,8 @@ MUTTERWABEN-KATEGORIE ⠆⡠⠒⢐ MASTERKERNWABE
  AXIOM ¡ ⠆⡠⠔⠃ ⧑ ⠆⡐⠢⠨
  # SEMKHT-WENN-KANN
  AXIOM ¡ ⠆⡠⠔⠃ ⧑ ⠆⡐⠡⢂
- # SEMKHT-
- AXIOM ¡ ⠆⡠⠔⠃ ⧑ 
+ # SEMKHT-WENN-NICHT
+ AXIOM ¡ ⠆⡠⠔⠃ ⧑ ⠆⡐⠢⠅
 
 ###====================================|====================================###
 
@@ -298,65 +298,54 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠡⢐ HAUPTWABE
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡐⠡⣀ ⧓ ⠆⡐⠢⠃ Ξ ⠆⡐⠢⠅
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ ⠆⡐⠢⠅ ⧑ #
+ AXIOM ¡ ⠆⡐⠢⠅ ⧑ ⠆⡐⠘⠉
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # STARTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡐⠔⢠ STARTWABE 
 
- PROGRAMM # WENN-NICHT
+ PROGRAMM ⠆⡐⠔⣀ WENN-NICHT
 
- WABEN-ID # ST
+ WABEN-ID ⠆⡐⠘⠃ ST
 
- BION-NR # 031
+ BION-NR ⠆⡐⠘⠅ 031
 
- BION-ID # 
+ BION-ID ⠆⡐⠘⠉ ST031 
 
- BSK #
+ BSK ⠆⡐⠘⠊ SEMKHTST-WENN-NICHT
 
- BION # 
+ BION ⠆⡐⠔⠑ SE010MK010HT031ST031 
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⠘⠃ ⧓ ⠆⡐⠘⠅ Ξ ⠆⡐⠘⠉
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⠘⠉ ⧑ #
 
- TASTENCODE #
- TASTENCODE #
- TASTENCODE #
- TASTENCODE #
+ TASTENCODE ⠆⡐⠔⠒ ALTGR
+ TASTENCODE ⠆⡐⠔⠘ SHIFT
+ TASTENCODE ⠆⡐⠔⠡ Q
 
- SYMBOLE #
- SYMBOLE #
- SYMBOLE #
- SYMBOLE #
+ SYMBOLE ⠆⡐⠔⠢ Ω
 
- PRÄFIX #
- PRÄFIX #
+ PRÄFIX ⠆⡐⠔⠰ SE-WENN-NICHT
 
  # PRODUKT
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⦻  Ξ 
- AXIOM ¡  ⧓  Ξ 
- AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡ ⠆⡐⠔⠒ ⦻ ⠆⡐⠔⠘ ⦻ ⠆⡐⠔⠡ Ξ ⠆⡐⠔⠢
+ AXIOM ¡ ⠆⡐⠔⠢ ⧓ ⠆⡐⠔⠢ Ξ ⠆⡐⠔⠨
 
- PRODUKT #
- PRODUKT #
+ PRODUKT ⠆⡐⠔⠨ ΩΩ
 
  # TAGGEN PRÄFIX
- AXIOM ¡  ⥓ 
- AXIOM ¡  ⥓ 
+ AXIOM ¡ ⠆⡐⠔⠨ ⥓ ⠆⡐⠔⠰
 
  # RAM AXIOM 
- AXIOM ¡  ⥗  ⍠ 
- AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡ ⠆⡐⠔⠨ ⥗ ⠆⡐⠔⠰ ⍠ ⠆⡐⠔⡁
 
  # EINHEIT | RAM
- EINHEIT #
- EINHEIT #
+ EINHEIT ⠆⡐⠔⡁ ΩΩ SE-WENN-NICHT
 
  # AXIOM WABEN SYSTEM-ID | PROZESS STOP
- AXIOM ¡ # ⦳ #
+ AXIOM ¡ ⠆⡐⠘⠉ ⦳ #
 
 ###====================================|====================================###
 

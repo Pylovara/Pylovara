@@ -86,6 +86,64 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠢⣀ HAUPTWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE # STARTWABE 
+
+ PROGRAMM # PROZESS-WEITER
+
+ WABEN-ID # ST
+
+ BION-NR # 028
+
+ BION-ID # 
+
+ BSK #
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
+
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+
+ PRÄFIX #
+ PRÄFIX #
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+
+ PRODUKT #
+ PRODUKT #
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT #
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
+
+###====================================|====================================###
+
  ¶ WEITER
 
 ###====================================|====================================###
@@ -108,6 +166,64 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠢⠔ HAUPTWABE
  AXIOM ¡ ⠆⡐⠢⠡ ⧓ ⠆⡐⠢⠤ Ξ ⠆⡐⠢⠨
  # BION-ID FOLGEVERBINDUNG
  AXIOM ¡ ⠆⡐⠢⠨ ⧑ #
+
+###====================================|====================================###
+
+MUTTERWABEN-KATEGORIE # STARTWABE 
+
+ PROGRAMM # PROZESS-FEHLER
+
+ WABEN-ID # ST
+
+ BION-NR # 029
+
+ BION-ID # 
+
+ BSK #
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
+
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+
+ PRÄFIX #
+ PRÄFIX #
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+
+ PRODUKT #
+ PRODUKT #
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT #
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
 
 ###====================================|====================================###
 
@@ -137,6 +253,64 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠡⡄ HAUPTWABE
 
 ###====================================|====================================###
 
+MUTTERWABEN-KATEGORIE # STARTWABE 
+
+ PROGRAMM # WENN-KANN
+
+ WABEN-ID # ST
+
+ BION-NR # 030
+
+ BION-ID # 
+
+ BSK #
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
+
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+
+ PRÄFIX #
+ PRÄFIX #
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+
+ PRODUKT #
+ PRODUKT #
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT #
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
+
+###====================================|====================================###
+
  Ω WEITER
 
 ###====================================|====================================###
@@ -162,10 +336,67 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠡⢐ HAUPTWABE
 
 ###====================================|====================================###
 
- ΩΩ WEITER
+MUTTERWABEN-KATEGORIE # STARTWABE 
+
+ PROGRAMM # WENN-NICHT
+
+ WABEN-ID # ST
+
+ BION-NR # 031
+
+ BION-ID # 
+
+ BSK #
+
+ BION # 
+
+ # AXIOM | WABEN+NUR=BION-ID
+ AXIOM ¡ # ⧓ # Ξ #
+ # BION-ID FOLGEVERBINDUNG
+ AXIOM ¡ # ⧑ #
+
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+ TASTENCODE #
+
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+ SYMBOLE #
+
+ PRÄFIX #
+ PRÄFIX #
+
+ # PRODUKT
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⦻  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+ AXIOM ¡  ⧓  Ξ 
+
+ PRODUKT #
+ PRODUKT #
+
+ # TAGGEN PRÄFIX
+ AXIOM ¡  ⥓ 
+ AXIOM ¡  ⥓ 
+
+ # RAM AXIOM 
+ AXIOM ¡  ⥗  ⍠ 
+ AXIOM ¡  ⥗  ⍠ 
+
+ # EINHEIT | RAM
+ EINHEIT #
+ EINHEIT #
+
+ # AXIOM WABEN SYSTEM-ID | PROZESS STOP
+ AXIOM ¡ # ⦳ #
 
 ###====================================|====================================###
 
+ ΩΩ WEITER
+
+###====================================|====================================###
 
  NEUE NOTIZ : 
 

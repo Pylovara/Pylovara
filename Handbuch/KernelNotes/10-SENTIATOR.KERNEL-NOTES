@@ -67,7 +67,7 @@ WABENHÄRTER # VERTEILERHÄRTER
 
 MUTTERWABEN-KATEGORIE ⠆⡐⠢⣀ HAUPTWABE 
 
- PROGRAMM ⠆⡐⠤⠃  
+ PROGRAMM ⠆⡐⠤⠃ PROZESS-WEITER
 
  WABEN-ID ⠆⡐⠢⠉ HT
 
@@ -75,14 +75,14 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠢⣀ HAUPTWABE
 
  BION-ID ⠆⡐⠢⠌ HT028
 
- BSK ⠆⡐⠢⠑ SEMKHT-
+ BSK ⠆⡐⠢⠑ SEMKHT-PROZESS-WEITER
 
  BION ⠆⡐⠢⠒ SE010MK010HT028 
 
  # AXIOM | WABEN+NUR=BION-ID
  AXIOM ¡ ⠆⡐⠢⠉ ⧓ ⠆⡐⠢⠊ Ξ ⠆⡐⠢⠌
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⠢⠌ ⧑ #
 
 ###====================================|====================================###
 
@@ -90,24 +90,24 @@ MUTTERWABEN-KATEGORIE ⠆⡐⠢⣀ HAUPTWABE
 
 ###====================================|====================================###
 
-MUTTERWABEN-KATEGORIE # HAUPTWABE 
+MUTTERWABEN-KATEGORIE ⠆⡐⠢⠔ HAUPTWABE 
 
- PROGRAMM # 
+ PROGRAMM ⠆⡐⠢⠘ PROZESS-FEHLER
 
- WABEN-ID # HT
+ WABEN-ID ⠆⡐⠢⠡ HT
 
- BION-NR # 028
+ BION-NR ⠆⡐⠢⠤ 029
 
- BION-ID # 
+ BION-ID ⠆⡐⠢⠨ HT029
 
- BSK # 
+ BSK # SEMKHT-PROZESS-FEHLER
 
- BION # 
+ BION # SE010MK010HT029
 
  # AXIOM | WABEN+NUR=BION-ID
- AXIOM ¡ # ⧓ # Ξ #
+ AXIOM ¡ ⠆⡐⠢⠡ ⧓ ⠆⡐⠢⠤ Ξ ⠆⡐⠢⠨
  # BION-ID FOLGEVERBINDUNG
- AXIOM ¡ # ⧑ #
+ AXIOM ¡ ⠆⡐⠢⠨ ⧑ #
 
 ###====================================|====================================###
 

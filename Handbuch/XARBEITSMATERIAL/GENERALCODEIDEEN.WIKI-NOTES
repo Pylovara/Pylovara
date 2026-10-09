@@ -19,33 +19,41 @@
 arbeitsfläche :
 
  ¢! 
- —[": BAUMODUS FUNKTION FÜR EINGABE MIT DIREKTER SHELL AUSGABE ÜBER ECHO :"]— 
- ¬· »—[¥: SHELL AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
-     ¬· »—[×: <SHELL> <AUSGABE> :×]—«
-         ÷ Ø—(1): <SHELL> :Ø
-         ÷ Ø—(2): <AUSGABE> :Ø
+ —[¥: SHELL AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG:~«
+ ¬· »—[¥: SHELL :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF:~«
+     ¬· »—[':  :']—«
+         ÷ Ø—(1): ':  :' :Ø
 
          ± Ø: <SHELL> :(1)—Ø
-     ¬· »—[×: (1) ++ BXMKHT-SHELL :×]—«
-         ± Ø—(3): (1) = PROGRAMM START SHELL :Ø
+     ¬· »—[ (1) ]—«
+         ¬·¤ »—[':  :']—«
+              ÷ Ø—(3): ':  :' :Ø
 
-         ± Ø: (1) ++ BXMKHT-SHELL :(3)—Ø
+ ¬· »—[¥: AUSGABE :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF:~«
+     ¬· »—[ <AUSGABE> ]—«
+         ÷ Ø—(2): <AUSGABE> :Ø
+
          ± Ø: <AUSGABE> :(2)—Ø
-     ¬· »—[×: (3 (2)) :×]—«
-         ¬·¤¤ »[': echo "<AUSGABE>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+     ¬· »—[ (2) ]—«
+         ¬·¤ »—[ <AUSGABE> ]—«
+              ÷ Ø—(4): <AUSGABE> :Ø
+
+ ¬· »—[¥: echo :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF:~«
+     ¬· »—[ echo ]—«
+         ÷ Ø—(5): echo :Ø
+
+         ± Ø: echo :(5)—Ø
+     ¬· »—[ (5) ]—«
+         ¬·¤ »—[ echo ]—«
+              ÷ Ø—(5): echo :Ø
+
+         ± Ø: ':  :' :(3)—Ø
+         ± Ø: echo :(5)—Ø
+         ± Ø: <AUSGABE> :(4)—Ø
+     ¬· »—[(3 (5) (4) )]—«
+         ¬·¤¤ »[': echo <AUSGABE> :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
  !¢
-
-
- aber dann der wichtige punkt 
-
-         ± Ø: (1) ++ BXMKHT-SHELL :(3)—Ø
-         ± Ø: <AUSGABE> :(2)—Ø
-     ¬· »—[×: (3 (2)) :×]—«
-         ¬·¤¤ »[': echo "<AUSGABE>" :']«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-
-           ↑↑ 
-
-           intern und extern .. 
+ 
 
 ################################################################################
 ######################### GENERELLE SYNTAX SCHMIEDE ###########################
@@ -406,20 +414,14 @@ ICH KOMM UM EIN WÖRTERBUCH NICHT DRUM HERUM ...
   ¬· »—[ GEOMETRIE = <AUSWAHL> ]«
       ¬· »—[ MASSENTYP = <AUSWAHL> ]«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          Ω ¬· »—[ <OBJEKT> = H<CM> ++ L<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+                ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          Ω ¬· »—[ <OBJEKT> = H<CM> ++ L<CM> ++ B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+                ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
-
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
-
-          ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
-              ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+          Ω ¬· »—[ <OBJEKT> = H<CM> ++ T<CM> ++ L<CM> ++ B<CM> ]«««~: DIMENSION <RAUMDIMENSION> :~«
+                ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
   ¶ ¬· »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
@@ -430,20 +432,20 @@ ICH KOMM UM EIN WÖRTERBUCH NICHT DRUM HERUM ...
 »—[ GEOMETRIE = <AUSWAHL> ]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
  ¬· »—[ MASSENTYP = <AUSWAHL> ]—«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+           ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+           ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+           ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+           ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
- ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
-     ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
+     Ω ¬· »—[ <OBJEKT> = H<CM> + L<CM> + B<CM> ]—«««~: DIMENSION <RAUMDIMENSION> :~«
+           ¬· »[ KOORDINATEN = X* + Y* ]«««~: DIMENSION <RAUMDIMENSION> :~«
 
  ¶ »[ <ANGABEN> ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 

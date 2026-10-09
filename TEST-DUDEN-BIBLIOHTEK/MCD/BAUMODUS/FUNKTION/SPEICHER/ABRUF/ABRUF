@@ -1,0 +1,60 @@
+¢!
+»—[¥: BAUMODUS FUNKTION SPEICHER ABRUF :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ ¬· »—[¥: BAUMDODUS FUNKTION SPEICHER :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF:~«
+     ¬·¤¤ »—[~: BAUMODUS FUNKTION SPEICHER :~]–«
+           ÷ Ø—(8): ~: BAUMODUS FUNKTION SPEICHER :~ :Ø
+
+ ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(1): * :Ø
+
+             ± Ø: * :(1)—Ø
+         ¬· »—[ (1) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: B :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(2): * :Ø
+
+             ± Ø: * :(2)—Ø
+         ¬· »—[ (2) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: R :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(3): * :Ø
+
+             ± Ø: * :(3)—Ø
+         ¬· »—[ (3) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: U :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(4): * :Ø
+
+             ± Ø: * :(4)—Ø
+         ¬· »—[ (4) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+ ¬· »—[¥: F :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+     ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+         ¬· »—[ * ]—«
+             ÷ Ø—(5): * :Ø
+
+             ± Ø: * :(5)—Ø
+         ¬· »—[ (5) ]—«
+             ¬·¤ »[ * ]«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+
+     ± Ø: * :(1)—Ø
+     ± Ø: * :(2)—Ø
+     ± Ø: * :(3)—Ø
+     ± Ø: * :(4)—Ø
+     ± Ø: * :(5)—Ø
+     ± Ø: ~: BAUMODUS FUNKTION SPEICHER :~ :(8)—Ø
+ ¬· »—[(8 (1(2(3(4(5()))))) )]—«
+     ¬·¤ »—[~: BAUMODUS FUNKTION SPEICHER ABRUF :~]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+!¢

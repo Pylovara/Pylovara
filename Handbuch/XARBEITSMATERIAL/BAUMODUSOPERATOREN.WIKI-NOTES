@@ -41,9 +41,48 @@
 ### SCHMIERZEILE 
  ¢!
  »—[]—«
- »[]« 
+ »[]«
+ »« 
  «««~: BAUMODUS FUNKTION SPEICHER # :~«
-
+ ¬· 
+ ¥: :¥
 
 
  ¢! 
+ »—[¥: OBJEKT :¥]—««««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+
+  ¬· »—[¥: ICH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤ »—[ ICH ]—«
+           ÷ Ø—(1): ICH :Ø
+
+  ¬· »—[¥: CANNABIS :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤ »—[ CANNABIS ]—«
+           ÷ Ø—(2): CANNABIS :Ø
+
+  ¬· »—[¥: TABAK :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤ »—[ TABAK ]—«
+           ÷ Ø—(3): TABAK :Ø
+
+  ¬· »—[¥: PAPER :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤ »—[ PAPER ]—«
+           ÷ Ø—(4): PAPER :Ø
+
+  ¬· »—[¥: FEUERZEUG :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤ »—[ FEUERZEUG ]—«
+           ÷ Ø—(5): FEUERZEUG :Ø
+
+  ¬· »—[¥: TISCH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+      ¬·¤ »—[ TISCH ]—«
+           ÷ Ø—(6): TISCH :Ø
+
+  ¶ »—[¥: ANZÜNDEN :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤ »—[ ANZÜNDEN ]—«
+          ÷ Ø—(5): ANZÜNDEN :Ø
+
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(5)—Ø
+     Ω »—[ (1 (5)) ]—«
+        ¬·¤ »—[ ICH ANZÜNDEN ]—«
+          ÷ Ø—(5): ICH ANZÜNDEN :Ø
+
+     

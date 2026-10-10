@@ -52,79 +52,88 @@
 ######################## MEIN AUSZEIT BEREICH ##################################
 
  ¢! 
- »—[¥: OBJEKT :¥]—««««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ »—[¥: GENERAL :¥]—««««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+  ¬· —[": FUNKTIONEN LADEN :"]—
+     ¬· —[": AVATAR LADEN :"]—
 
-  ¬· »—[¥: ICH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ ICH ]—«
-           ÷ Ø—(1): ICH :Ø
+        ¬· »—[¥: ICH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ ICH ]—«
+                 ÷ Ø—(1): ICH :Ø
 
-  ¶ »—[¥: ANZÜNDEN :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤ »—[ ANZÜNDEN ]—«
-          ÷ Ø—(2): ANZÜNDEN :Ø
+        ¬· »—[¥: ANZÜNDEN :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ ANZÜNDEN ]—«
+                 ÷ Ø—(2): ANZÜNDEN :Ø
 
-  ¬· »—[¥: TISCH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ TISCH ]—«
-           ÷ Ø—(3): TISCH :Ø
+     ¬· —[": OBJEKTE LADEN :"]—
 
-  ¬· »—[¥: STUHL :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ STUHL ]—«
-           ÷ Ø—(4): STUHL :Ø
+        ¬· »—[¥: TISCH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ TISCH ]—«
+                 ÷ Ø—(3): TISCH :Ø
 
-  ¬· »—[¥: PAPER :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ PAPER ]—«
-           ÷ Ø—(5): PAPER :Ø
+        ¬· »—[¥: STUHL :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ STUHL ]—«
+                 ÷ Ø—(4): STUHL :Ø
 
-  ¬· »—[¥: TABAK :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ TABAK ]—«
-           ÷ Ø—(6): TABAK :Ø
+     ¬· —[": NUTZGEGENSTÄNDE LADEN :"]—
 
-  ¬· »—[¥: CANNABIS :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ CANNABIS ]—«
-           ÷ Ø—(7): CANNABIS :Ø
+        ¬· »—[¥: PAPER :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ PAPER ]—«
+                 ÷ Ø—(5): PAPER :Ø
 
-  ¬· »—[¥: FEUERZEUG :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ FEUERZEUG ]—«
-           ÷ Ø—(8): FEUERZEUG :Ø
+        ¬· »—[¥: TABAK :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ TABAK ]—«
+                 ÷ Ø—(6): TABAK :Ø
 
-  ¬· »—[¥: RAUM-2X6 :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-      ¬·¤ »—[ ## ## ## ## ## ## ]—«
-           ÷ Ø—(9): ## ## ## ## ## ## :Ø
+        ¬· »—[¥: CANNABIS :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ CANNABIS ]—«
+                 ÷ Ø—(7): CANNABIS :Ø
 
-         ± Ø: ICH :(1)—Ø
-         ± Ø: ANZÜNDEN :(2)—Ø
-         ± Ø: ## ## ## ## ## ## :(9)—Ø
-      Ω »—[ (9 ## (1)(2) ## ## ## ##) ]—«
-         ¬·¤ »—[ ICH ANZÜNDEN ]—«
-              ÷ Ø—(10): ICH ANZÜNDEN :Ø
+        ¬· »—[¥: FEUERZEUG :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ FEUERZEUG ]—«
+                 ÷ Ø—(8): FEUERZEUG :Ø
 
-         ± Ø: ICH :(1)—Ø
-         ± Ø: ANZÜNDEN :(2)—Ø
-         ± Ø: STUHL :(8)—Ø
-         ± Ø: ## ## ## ## ## ## :(9)—Ø
-      Ω »—[ (9 (8) (1)(2) ## ## ## ##) ]—«
-         ¬·¤ »—[ STUHL ICH ANZÜNDEN ]—«
-              ÷ Ø—(10): STUHL ICH ANZÜNDEN :Ø
+     ¬· —[": RAUM LADEN :"]—
+        ¬· »—[¥: RAUM-2X6 :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+            ¬·¤ »—[ ## ## ## ## ## ## ]—«
+                 ÷ Ø—(9): ## ## ## ## ## ## :Ø
 
-         ± Ø: ICH :(1)—Ø
-         ± Ø: ANZÜNDEN :(2)—Ø
-         ± Ø: STUHL :(8)—Ø
-         ± Ø: TISCH :(3)—Ø
-         ± Ø: ## ## ## ## ## ## :(9)—Ø
-      Ω »—[ (9 (8) (1)(2) (3) ## ## ##) ]—«
-         ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH ]—«
-              ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH :Ø
+  ¬· —[": FUNKTIONEN DEFINIEREN :"]—
 
-         ± Ø: ICH :(1)—Ø
-         ± Ø: ANZÜNDEN :(2)—Ø
-         ± Ø: STUHL :(8)—Ø
-         ± Ø: TISCH :(3)—Ø
-         ± Ø: PAPER :(5)—Ø
-         ± Ø: TABAK :(6)—Ø
-         ± Ø: CANNABIS :(7)—Ø
-         ± Ø: ## ## ## ## ## ## :(9)—Ø
-      Ω »—[ (9 (8) (1)(2) (3) (5) (6) (7)) ]—«
-         ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH PAPER TABAK CANNABIS ]—«
-              ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH PAPER TABAK CANNABIS :Ø
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(2)—Ø
+        ± Ø: ## ## ## ## ## ## :(9)—Ø
+     Ω »—[ (9 ## (1)(2) ## ## ## ##) ]—«
+        ¬·¤ »—[ ICH ANZÜNDEN ]—«
+             ÷ Ø—(10): ICH ANZÜNDEN :Ø
+
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(2)—Ø
+        ± Ø: STUHL :(8)—Ø
+        ± Ø: ## ## ## ## ## ## :(9)—Ø
+     Ω »—[ (9 (8) (1)(2) ## ## ## ##) ]—«
+        ¬·¤ »—[ STUHL ICH ANZÜNDEN ]—«
+             ÷ Ø—(10): STUHL ICH ANZÜNDEN :Ø
+
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(2)—Ø
+        ± Ø: STUHL :(8)—Ø
+        ± Ø: TISCH :(3)—Ø
+        ± Ø: ## ## ## ## ## ## :(9)—Ø
+     Ω »—[ (9 (8) (1)(2) (3) ## ## ##) ]—«
+        ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH ]—«
+             ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH :Ø
+
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(2)—Ø
+        ± Ø: STUHL :(8)—Ø
+        ± Ø: TISCH :(3)—Ø
+        ± Ø: PAPER :(5)—Ø
+        ± Ø: TABAK :(6)—Ø
+        ± Ø: CANNABIS :(7)—Ø
+        ± Ø: ## ## ## ## ## ## :(9)—Ø
+     Ω »—[ (9 (8) (1)(2) (3) (5) (6) (7)) ]—«
+        ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH PAPER TABAK CANNABIS ]—«
+             ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH PAPER TABAK CANNABIS :Ø
 
 
 

@@ -48,12 +48,25 @@
  ¥: :¥
 
 
+
+######################## MEIN AUSZEIT BEREICH ##################################
+
  ¢! 
  »—[¥: OBJEKT :¥]—««««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
 
   ¬· »—[¥: ICH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
       ¬·¤ »—[ ICH ]—«
            ÷ Ø—(1): ICH :Ø
+
+  ¶ »—[¥: ANZÜNDEN :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤ »—[ ANZÜNDEN ]—«
+          ÷ Ø—(5): ANZÜNDEN :Ø
+
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(5)—Ø
+     Ω »—[ (1 (5)) ]—«
+        ¬·¤ »—[ ICH ANZÜNDEN ]—«
+          ÷ Ø—(5): ICH ANZÜNDEN :Ø
 
   ¬· »—[¥: CANNABIS :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
       ¬·¤ »—[ CANNABIS ]—«
@@ -75,14 +88,22 @@
       ¬·¤ »—[ TISCH ]—«
            ÷ Ø—(6): TISCH :Ø
 
-  ¶ »—[¥: ANZÜNDEN :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-     ¬·¤ »—[ ANZÜNDEN ]—«
-          ÷ Ø—(5): ANZÜNDEN :Ø
+        ± Ø: TISCH :(5)—Ø
+        ± Ø: CANNABIS :(2)—Ø
+        ± Ø: TABAK :(3)—Ø
+        ± Ø: PAPER :(4)—Ø
+     Ω »—[ (5 (4 (3 (2)))) ]—«
+        ¬·¤ »—[ TISCH PAPER TABAK CANNABIS  ]—«
+          ÷ Ø—(5): TISCH PAPER TABAK CANNABIS :Ø
 
-        ± Ø: ICH :(1)—Ø
-        ± Ø: ANZÜNDEN :(5)—Ø
-     Ω »—[ (1 (5)) ]—«
-        ¬·¤ »—[ ICH ANZÜNDEN ]—«
-          ÷ Ø—(5): ICH ANZÜNDEN :Ø
 
-     
+
+
+
+
+
+
+
+
+######################## MEIN AUSZEIT BEREICH ##################################
+

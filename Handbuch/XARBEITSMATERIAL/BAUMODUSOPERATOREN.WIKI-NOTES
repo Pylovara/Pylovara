@@ -235,3 +235,88 @@
 
 ######################## MEIN AUSZEIT BEREICH ##################################
 
+### SCHMIERZEILE 
+
+ # BAUSTEINE
+
+ ¢!
+ —[]—
+ []
+ »« 
+ «««~: # :~«
+ ÷
+ ±
+ Ø—( ):  :Ø
+ Ø:  :( )—Ø
+ ¬ 
+ ·
+ ¤
+ ¤¤
+ Ω
+ ¶
+ ":  :"
+ ~:  :~
+ ¥:  :¥
+ !¢
+
+ # CODE
+
+¢!
+»—[¥: MCD SPEICHERN :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+ ¬· —[": SPEICHER :"]–
+    ¬· »—[¥: MCD :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬·¤ »—[~:  :~]–«
+             ÷ Ø—(1): ~:  :~ :Ø
+
+    ¬· »—[¥: BAUMODUS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬·¤ »—[ BAUMODUS ]–«
+             ÷ Ø—(3): BAUMODUS :Ø
+
+    ¬· »—[¥: FUNKTION :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬·¤ »—[ FUNKTION ]–«
+             ÷ Ø—(4): FUNKTION :Ø
+
+    ¬· »—[¥: SPEICHER :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬·¤ »—[ SPEICHER ]–«
+             ÷ Ø—(5): SPEICHER :Ø
+
+ ¬· —[": SPEICHER SUCHEN :"]–
+    ¬· »—[¥: PFAD :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ÷ Ø—(2): $:  :$ :Ø
+
+    ¬· »—[ /Pylovara/PYLOVARA-SYSTEM/MCS-BIBLIOTHEK ]—«
+        ÷ Ø—(6): /Pylovara/PYLOVARA-SYSTEM/MCS-BIBLIOTHEK :Ø
+
+        ± Ø: $:  :$ :(2)—Ø
+        ± Ø: /Pylovara/PYLOVARA-SYSTEM/MCS-BIBLIOTHEK :(6)—Ø
+    ¬· »—[(2 (6) )]—«
+        ¬·¤ »—[$: /Pylovara/PYLOVARA-SYSTEM/MCS-BIBLIOTHEK :$]–«
+             ÷ Ø—(2): $: /Pylovara/PYLOVARA-SYSTEM/MCS-BIBLIOTHEK :$ :Ø
+
+ ¬· —[": AUSLÖSER :"]–
+
+        ± Ø: ~:  :~ :(1)—Ø
+        ± Ø: BAUMODUS :(2)—Ø
+        ± Ø: FUNKTION :(3)—Ø
+        ± Ø: SPEICHER :(4)—Ø
+        # [ eingang | ausgang | abruf ]
+    ¬· »—[(1 (2(3(4))) )]—«
+        ¬·¤ »—[~: BAUMODUS FUNKTION SPEICHER ]—«
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

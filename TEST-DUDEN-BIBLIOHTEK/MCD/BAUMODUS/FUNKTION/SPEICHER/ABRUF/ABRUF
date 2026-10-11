@@ -24,6 +24,10 @@
      ¬·¤¤ »—[ * ]—«
            ÷ Ø—(5): * :Ø
 
+ ¬· »—[¥: + :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤¤ »—[ * ]—«
+           ÷ Ø—(6): * :Ø
+
      ± Ø: * :(1)—Ø
      ± Ø: * :(2)—Ø
      ± Ø: * :(3)—Ø
@@ -31,6 +35,23 @@
      ± Ø: * :(5)—Ø
      ± Ø: ~: BAUMODUS FUNKTION SPEICHER :~ :(8)—Ø
  ¬· »—[(8 (1(2(3(4(5))))) )]—«
-     ¬·¤ »—[~: BAUMODUS FUNKTION SPEICHER ABRUF :~]–«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+     ¬·¤ »—[~: BAUMODUS FUNKTION SPEICHER ABRUF :~]–«
+ 
+ ¬· »—[¥: ABI :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+     ¬·¤ »—[Ħ:  :Ħ]—«
+          ÷ Ø—(21): Ħ:  :Ħ :Ø
+
+     ¬· »—[ EFI_SIMPLE_FILE_SYSTEM_PROTOCOL ]—«
+         ÷ Ø—(22): EFI_SIMPLE_FILE_SYSTEM_PROTOCOL :Ø
+ 
+     ¬· »—[ EFI_FILE_PROTOCOL ]—«
+         ÷ Ø—(23): EFI_FILE_PROTOCOL :Ø
+ 
+     ± Ø: Ħ:  :Ħ :(21)—Ø
+     ± Ø: EFI_SIMPLE_FILE_SYSTEM_PROTOCOL :(22)—Ø
+     ± Ø: * :(6)—Ø
+     ± Ø: EFI_FILE_PROTOCOL :(23)—Ø
+ ¬· »—[(21 (22 (6) (23)) )]—«
+     ¬·¤ »—[Ħ: EFI_SIMPLE_FILE_SYSTEM_PROTOCOL + EFI_FILE_PROTOCOL :Ħ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
 !¢

@@ -41,17 +41,17 @@
      ¬·¤ »—[Ħ:  :Ħ]—«
           ÷ Ø—(21): Ħ:  :Ħ :Ø
 
-     ¬· »—[ EFI_SIMPLE_FILE_SYSTEM_PROTOCOL ]—«
-         ÷ Ø—(22): EFI_SIMPLE_FILE_SYSTEM_PROTOCOL :Ø
+     ¬· »—[ LoadImage() ]—«
+         ÷ Ø—(22): LoadImage() :Ø
  
-     ¬· »—[ EFI_FILE_PROTOCOL ]—«
-         ÷ Ø—(23): EFI_FILE_PROTOCOL :Ø
- 
+     ¬· »—[ StartImage() ]—«
+         ÷ Ø—(23): StartImage() :Ø
+
      ± Ø: Ħ:  :Ħ :(21)—Ø
-     ± Ø: EFI_SIMPLE_FILE_SYSTEM_PROTOCOL :(22)—Ø
+     ± Ø: LoadImage() :(22)—Ø
      ± Ø: * :(6)—Ø
-     ± Ø: EFI_FILE_PROTOCOL :(23)—Ø
+     ± Ø: StartImage() :(23)—Ø
  ¬· »—[(21 (22 (6) (23)) )]—«
-     ¬·¤ »—[Ħ: EFI_SIMPLE_FILE_SYSTEM_PROTOCOL + EFI_FILE_PROTOCOL :Ħ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+     ¬·¤ »—[Ħ: LoadImage() + StartImage() :Ħ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
 !¢

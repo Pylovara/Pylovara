@@ -101,16 +101,9 @@
 
         ± Ø: ICH :(1)—Ø
         ± Ø: ANZÜNDEN :(2)—Ø
-        ± Ø: ## ## ## ## ## ## :(9)—Ø
-     Ω »—[ (9 ## (1)(2) ## ## ## ##) ]—«
-        ¬·¤ »—[ ICH ANZÜNDEN ]—«
-             ÷ Ø—(10): ICH ANZÜNDEN :Ø
-
-        ± Ø: ICH :(1)—Ø
-        ± Ø: ANZÜNDEN :(2)—Ø
         ± Ø: STUHL :(8)—Ø
         ± Ø: ## ## ## ## ## ## :(9)—Ø
-     Ω »—[ (9 (8) (1)(2) ## ## ## ##) ]—«
+     Ω »—[ (9 (8#) (1(2)) ## ## ## ##) ]—«
         ¬·¤ »—[ STUHL ICH ANZÜNDEN ]—«
              ÷ Ø—(10): STUHL ICH ANZÜNDEN :Ø
 
@@ -119,7 +112,7 @@
         ± Ø: STUHL :(8)—Ø
         ± Ø: TISCH :(3)—Ø
         ± Ø: ## ## ## ## ## ## :(9)—Ø
-     Ω »—[ (9 (8) (1)(2) (3 ## ## ##)) ]—«
+     Ω »—[ (9 (8#) (1(2)) (3 ## ## ##)) ]—«
         ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH ]—«
              ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH :Ø
 
@@ -160,11 +153,11 @@
 
      Ω ¬· »—[¥: STUHL TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
            ¬·¤ »—[ ICH SOLLTE MICH MAL AUF DEN STUHL SETZEN ]—«
-                ÷ Ø—(21):  :Ø
+                ÷ Ø—(21): ICH SOLLTE MICH MAL AUF DEN STUHL SETZEN :Ø
 
      Ω ¬· »—[¥: ANZÜNDEN TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
            ¬·¤ »—[ HMM ..... MAL NACHDENKEN ]—«
-                ÷ Ø—(22):  :Ø
+                ÷ Ø—(22): HMM ..... MAL NACHDENKEN :Ø
 
      Ω ¬· »—[¥: TISCH TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
            ¬·¤ »—[ *WAS IST EIGENTLICH MIT DEM TISCH* ]—«
@@ -180,7 +173,27 @@
 
            Ω ¬· »—[¥: CANNABIS TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
                  ¬·¤ »—[ ES GIBT CANNABIS ]—«
-                      ÷ Ø—(): ES GIBT CANNABIS :Ø
+                      ÷ Ø—(25): ES GIBT CANNABIS :Ø
+
+  ¬· —[": TEXT UND OBJEKTE VERBINDEN :"]—
+
+     ¬· »—[ TEXT ABFOLGE ]—«
+         
+         ¬· »—[¥: PRINT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[":  :"]—«
+                   ÷ Ø—(30): :Ø
+
+                         ± Ø: STUHL ICH ANZÜNDEN :(10)—Ø
+                         ± Ø: ICH SOLLTE MICH MAL AUF DEN STUHL SETZEN :(21)—Ø
+                         ± Ø: ":  :" :(30)—Ø    
+                   Ω ¬· »—[ (10 (30(21))) ]—«
+                         ¶ ¬· »—[ (21) ]—«
+                               ¬·¤ »—[": ICH SOLLTE MICH MAL AUF DEN STUHL SETZEN :"]—«
+
+
+
+
+
 
 
 

@@ -52,48 +52,48 @@
 ######################## MEIN AUSZEIT BEREICH ##################################
 
  ¢! 
- »—[¥: GENERAL :¥]—««««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
+ »—[¥: GENERAL :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
   ¬· —[": FUNKTIONEN LADEN :"]—
      ¬· —[": AVATAR LADEN :"]—
 
-        ¬· »—[¥: ICH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: ICH :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ ICH ]—«
                  ÷ Ø—(1): ICH :Ø
 
-        ¬· »—[¥: ANZÜNDEN :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: ANZÜNDEN :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ ANZÜNDEN ]—«
                  ÷ Ø—(2): ANZÜNDEN :Ø
 
      ¬· —[": OBJEKTE LADEN :"]—
 
-        ¬· »—[¥: TISCH :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: TISCH :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ TISCH ]—«
                  ÷ Ø—(3): TISCH :Ø
 
-        ¬· »—[¥: STUHL :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: STUHL :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ STUHL ]—«
                  ÷ Ø—(4): STUHL :Ø
 
      ¬· —[": NUTZGEGENSTÄNDE LADEN :"]—
 
-        ¬· »—[¥: PAPER :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: PAPER :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ PAPER ]—«
                  ÷ Ø—(5): PAPER :Ø
 
-        ¬· »—[¥: TABAK :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: TABAK :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ TABAK ]—«
                  ÷ Ø—(6): TABAK :Ø
 
-        ¬· »—[¥: CANNABIS :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: CANNABIS :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ CANNABIS ]—«
                  ÷ Ø—(7): CANNABIS :Ø
 
-        ¬· »—[¥: FEUERZEUG :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: FEUERZEUG :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ FEUERZEUG ]—«
                  ÷ Ø—(8): FEUERZEUG :Ø
 
      ¬· —[": RAUM LADEN :"]—
-        ¬· »—[¥: RAUM-2X6 :¥]—««««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+        ¬· »—[¥: RAUM-2X6 :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
             ¬·¤ »—[ ## ## ## ## ## ## ]—«
                  ÷ Ø—(9): ## ## ## ## ## ## :Ø
 
@@ -119,9 +119,30 @@
         ± Ø: STUHL :(8)—Ø
         ± Ø: TISCH :(3)—Ø
         ± Ø: ## ## ## ## ## ## :(9)—Ø
-     Ω »—[ (9 (8) (1)(2) (3) ## ## ##) ]—«
+     Ω »—[ (9 (8) (1)(2) (3 ## ## ##)) ]—«
         ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH ]—«
              ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH :Ø
+
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(2)—Ø
+        ± Ø: STUHL :(8)—Ø
+        ± Ø: TISCH :(3)—Ø
+        ± Ø: PAPER :(5)—Ø
+        ± Ø: ## ## ## ## ## ## :(9)—Ø
+     Ω »—[ (9 (8) (1)(2) (3 (5) ## ##)) ]—«
+        ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH PAPER ]—«
+             ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH PAPER :Ø
+
+        ± Ø: ICH :(1)—Ø
+        ± Ø: ANZÜNDEN :(2)—Ø
+        ± Ø: STUHL :(8)—Ø
+        ± Ø: TISCH :(3)—Ø
+        ± Ø: PAPER :(5)—Ø
+        ± Ø: TABAK :(6)—Ø
+        ± Ø: ## ## ## ## ## ## :(9)—Ø
+     Ω »—[ (9 (8) (1)(2) (3 (5) (6) ##)) ]—«
+        ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH PAPER TABAK ]—«
+             ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH PAPER TABAK :Ø
 
         ± Ø: ICH :(1)—Ø
         ± Ø: ANZÜNDEN :(2)—Ø
@@ -131,23 +152,35 @@
         ± Ø: TABAK :(6)—Ø
         ± Ø: CANNABIS :(7)—Ø
         ± Ø: ## ## ## ## ## ## :(9)—Ø
-     Ω »—[ (9 (8) (1)(2) (3) (5) (6) (7)) ]—«
+     Ω »—[ (9 (8) (1)(2) (3 (5) (6) (7))) ]—«
         ¬·¤ »—[ STUHL ICH ANZÜNDEN TISCH PAPER TABAK CANNABIS ]—«
              ÷ Ø—(11): STUHL ICH ANZÜNDEN TISCH PAPER TABAK CANNABIS :Ø
 
+  ¬· —[": TEXT AUSGABE :"]—
 
+     Ω ¬· »—[¥: STUHL TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+           ¬·¤ »—[ ICH SOLLTE MICH MAL AUF DEN STUHL SETZEN ]—«
+                ÷ Ø—(21):  :Ø
 
+     Ω ¬· »—[¥: ANZÜNDEN TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+           ¬·¤ »—[ HMM ..... MAL NACHDENKEN ]—«
+                ÷ Ø—(22):  :Ø
 
+     Ω ¬· »—[¥: TISCH TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+           ¬·¤ »—[ *WAS IST EIGENTLICH MIT DEM TISCH* ]—«
+                ÷ Ø—(23): *WAS IST EIGENTLICH MIT DEM TISCH* :Ø
 
+           Ω ¬· »—[¥: PAPER TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+                 ¬·¤ »—[ ES GIBT PAPER ]—«
+                      ÷ Ø—(24): ES GIBT PAPER :Ø
 
+           Ω ¬· »—[¥: TABAK TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+                 ¬·¤ »—[ ES GIBT TABAK ]—«
+                      ÷ Ø—(25): ES GIBT TABAK :Ø
 
-
-
-
-
-
-
-
+           Ω ¬· »—[¥: CANNABIS TEXT  :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+                 ¬·¤ »—[ ES GIBT CANNABIS ]—«
+                      ÷ Ø—(): ES GIBT CANNABIS :Ø
 
 
 

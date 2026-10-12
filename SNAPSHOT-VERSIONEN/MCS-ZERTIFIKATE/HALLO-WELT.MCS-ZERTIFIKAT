@@ -21,6 +21,10 @@
  HIER WERDEN ALLE FUNKTIONEN AUFGESCHRIEBEN, DIE FÜR DEN ZERTIFIKAT MODUS 
  NOTWENDIG SIND. 
 
+ AUS DEM GRUND HERAUS WERDEN ALLE MCD SPEICHER EINGÄNGE ALS ABRUF 
+ VOLLSTÄNDIG AUFGEZEIGT, UM EINE SAUBERE STRUKTUR OHNE VERSCHACHTELUNG 
+ VORZUWEISEN.
+
  DIES ZEIGT DEN KENNTNISSTAND MEINER REFERENZ DES VERSTÄNDNIS, GEGENÜBER DEM 
  EIGENEN SYSTEM.
 
@@ -31,14 +35,59 @@
 
  ¢!
 
+ »—[¥: HALLO WELT :¥]—«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«
 
+  ¬· —[": WÖRTERBUCH BASIS :"]—
 
+     ¬· »—[¥: HALLO :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
 
+         ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(1): * :Ø
 
+         ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(2): * :Ø
 
+         ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(3): * :Ø
 
+         ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(4): * :Ø
 
+             ± Ø: * :(1)—Ø
+             ± Ø: * :(2)—Ø
+             ± Ø: * :(3)—Ø
+             ± Ø: * :(4)—Ø
+         ¬· »—[ (1(2(3(4())))) ]—«
+             ¬·¤ »—[ HALLO ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
+     ¬· »—[¥: WELT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+
+         ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(5): * :Ø
+
+         ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(6): * :Ø
+
+         ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(7): * :Ø
+
+         ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+             ¬·¤¤ »—[ * ]—«
+                   ÷ Ø—(8): * :Ø
+
+             ± Ø: * :(5)—Ø
+             ± Ø: * :(6)—Ø
+             ± Ø: * :(7)—Ø
+             ± Ø: * :(8)—Ø
+         ¬· »—[ (5(6(7(8)))) ]—«
+             ¬·¤ »—[ WELT ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
 
 
 

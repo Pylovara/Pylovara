@@ -42,20 +42,48 @@
      ¬· »—[¥: HALLO :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
 
          ¬· »—[¥: H :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(1): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(20): * :Ø
+
+                 ± Ø: * :(20)—Ø
+             ¬· »—[ (20) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(1): * :Ø
 
          ¬· »—[¥: A :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(2): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(21): * :Ø
+
+                 ± Ø: * :(21)—Ø
+             ¬· »—[ (21) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(2): * :Ø
 
          ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(3): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(22): * :Ø
+
+                 ± Ø: * :(22)—Ø
+             ¬· »—[ (22) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(3): * :Ø
 
          ¬· »—[¥: O :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(4): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(23): * :Ø
+
+                 ± Ø: * :(23)—Ø
+             ¬· »—[ (23) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(4): * :Ø
 
              ± Ø: * :(1)—Ø
              ± Ø: * :(2)—Ø
@@ -63,32 +91,63 @@
              ± Ø: * :(4)—Ø
          ¬· »—[ (1(2(3(4())))) ]—«
              ¬·¤ »—[ HALLO ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                  ¬·¤¤ »—[ HALLO ]—«
+                        ÷ Ø—(5): HALLO :Ø
 
      ¬· »—[¥: WELT :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
 
          ¬· »—[¥: W :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(5): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(24): * :Ø
+
+                 ± Ø: * :(24)—Ø
+             ¬· »—[ (24) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(6): * :Ø
 
          ¬· »—[¥: E :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(6): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(25): * :Ø
+
+                 ± Ø: * :(25)—Ø
+             ¬· »—[ (25) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(7): * :Ø
 
          ¬· »—[¥: L :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(7): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(26): * :Ø
+
+                 ± Ø: * :(26)—Ø
+             ¬· »—[ (26) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(8): * :Ø
 
          ¬· »—[¥: T :¥]—«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
-             ¬·¤¤ »—[ * ]—«
-                   ÷ Ø—(8): * :Ø
+             ¬· »—[Ħ: EFI_SIMPLE_TEXT_INPUT_PROTOCOL.ReadKeyStroke() :Ħ]—«
+                 ¬· »—[ * ]—«
+                     ÷ Ø—(27): * :Ø
 
-             ± Ø: * :(5)—Ø
+                 ± Ø: * :(27)—Ø
+             ¬· »—[ (27) ]—«
+                 ¬·¤ »—[ * ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
+                      ¬·¤¤ »—[ * ]—«
+                            ÷ Ø—(9): * :Ø
+
              ± Ø: * :(6)—Ø
              ± Ø: * :(7)—Ø
              ± Ø: * :(8)—Ø
-         ¬· »—[ (5(6(7(8)))) ]—«
+             ± Ø: * :(9)—Ø
+         ¬· »—[ (6(7(8(9)))) ]—«
              ¬·¤ »—[ WELT ]—«««~: BAUMODUS FUNKTION SPEICHER AUSGANG :~«
-
+                  ¬·¤¤ »—[ WELT ]—«
+                        ÷ Ø—(10): WELT :Ø
 
 
 

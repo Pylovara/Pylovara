@@ -35,6 +35,12 @@ hätte...
   £<NR> =
   ¿<NR> =
 
+
+ # bei dem dach symbol bin ich am überlegen ob das der platzhalter für 
+   kommende daten ist im allgemeinen ... der hier text einfüg halter ...
+   wäre dann sogar utf technisch überall gerecht .... selbst bei den rtl 
+   volksschriften ...
+
    §: ^ :§  =
    $: ^ :$  = 
    ': ^ :'  =
@@ -116,21 +122,62 @@ hätte...
  # UND DIESE DANN SOGAR AN EIN UNTERGEORNETES EINKLICK-SYSTEM ... 
 
 ################################################################################
+### ÜBERLEGUNG
 
- # LOGISCHE WEITER ENTWICKLUNG VOM REX 
 
- —:—[ = ON-PIPE PROTEIN/E
- ↓:↑  = PIPELINE I/O
- —:—@ = REX 2.0
+ # NEU 
+ <SYMBOL-OFEN>   = REX 
+
+ # NEU 
+ —*—*  = STECKSCHLÜSSEL 
+ —***  = STECKSCHLÜSSEL 
+
+ # NEU | PIPELINE FÜR ON-PIPES | OPTIONAL 
+ —:—  = PIPELINE 
+ —©—  = OPTIONAL PIPELINE 
+ —®—  = OPTIONAL PIPELINE  
+ —ĸ—  = OPTIONAL PIPELINE  
+ —#—  = OPTIONAL PIPELINE  
+ —¡—  = OPTIONAL PIPELINE  
+ —!—  = OPTIONAL PIPELINE  
+ —)—  = OPTIONAL PIPELINE  
+
+ # SENTIATOREN : OPERATOREN
+ —¶— = PROZESS-WEITER
+ —¶¶ = PROZESS-FEHLER
+ —Ω— = WENN-KANN
+ —ΩΩ = WENN-NICHT
+
+ # NEU | PIPELINE I/O | DATENSTROMANGABE
+ ↓:↑  =
+ ↓:↓  =
+ ↑:↑  =
+ ↑:↓  =
+ ↓:   =
+ ↑:   =
+ ←: 
+ →:
+  :↓  =
+  :↑  =
+  :←  =
+  :→  =
+
+ # PROBE AST 
 
  —:—[¥: 
  ↓:↑
  —:—@· »—!—[¥:
-        ↓:↑
-        —:—@· »—!—[¥:
-        ↓:↑
-        —:—@· »—!—[¥:
+ ↓:↑    ↓:↑
+ ↓:↑    —:—@· »—!—[¥:
+ ↓:↑    ↓:↑
+ ↓:↑    —¶—@· »—!—[¥:
+        
 
+ WÜRDE HEIẞEN DIE SENTIATOREN BRÄUCHTEN EINEN NEUEN ORT BEI 
+ DER ÜBERGABE DER PIPELINE UND REX BRAUCH AUCH NOCHMAL EINE 
+ SYMBOL ÄNDERUNGEN. 
+
+ KÖNNT ICH DANN AB DEM TWS 0.4 BERÜCKSICHTIGEN .... 
 
 
 

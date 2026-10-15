@@ -3,10 +3,11 @@
 ### ALLE CONF SOURCEN - KOMPLETTE KONTROLLE
 ### QUELLE  = /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/PLATZHALTER
 ###====================================|====================================###
+### HAUPT-PFAD 
+#export PV_DIR="/PYLOVARA-SYSTEM/"
 
-
-
-
+### CONTROL-PFAD
+#MASTER_DIR="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/PLATZHALTER"
 
 
 
@@ -16,8 +17,8 @@
 
 !!! BAUSTELLE
 
-### Main Directory
 export PV_DIR="/Pylovara/"
+
 ### BASIC CONTROL
 
 MASTER_DIR="/Pylovara/Control"

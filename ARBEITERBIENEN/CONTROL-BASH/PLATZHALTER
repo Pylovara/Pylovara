@@ -21,22 +21,44 @@ source "$MASTER_DIR/DESKTOP.CONF
 source "$MASTER_DIR/SUPERTASTEN.CONF
 
 ###====================================|====================================###
+### ALIAS SEKTOR 
+
+# ! | alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
+
+###====================================|====================================###
+### ALIAS SEKTOR 
+
+to() {
+    source "$Shell_DIR/to.to-dna"
+    to "$@"
+}
+helpme() {
+    source "$Shell_DIR/helpme.cut-dna" "$@"
+}
+kernel() {
+    source "$Shell_DIR/kernel.cut-dna" "$@"
+}
+waben() {
+    source "$Shell_DIR/waben.cut-dna" "$@"
+}
+mcs() {
+    source "$Shell_DIR/mcs.cut-dna" "$@"
+}
+info() {
+    source "$Shell_DIR/info.kernel-dna" "$@"
+}
+p() {
+    source "$Shell_DIR/p.tree-dna" "$@"
+}
+callme() {
+    source "$Shell_DIR/callme.basename-dna"
+    callme "$@"
+}
 
 
 
 
 !!! BAUSTELLE
-
-###====================================|====================================###
-### alias Sektion
-
-alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
-
-###====================================|====================================###
-### Master-Input - control.pv-conf
-source "$MASTER_DIR/shell.conf"
-source "$MASTER_DIR/desktop.conf"
-source "$MASTER_DIR/supertasten.conf"
 
 ### DatenTypen !!
 source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"

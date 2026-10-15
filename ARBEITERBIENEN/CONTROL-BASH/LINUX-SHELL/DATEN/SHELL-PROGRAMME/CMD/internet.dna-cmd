@@ -4,10 +4,10 @@
 DNA_EXEC() {
     if command -v ip >/dev/null 2>&1; then
         echo "🧬 DNA internet: Zeige Netzwerkinformationen (ip addr)"
-        ip addr | /Pylovara/System/Shell/Vara/less.vara
+        ip addr | /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/VARA/less.vara
     elif command -v ifconfig >/dev/null 2>&1; then
         echo "🧬 DNA internet: Zeige Netzwerkinformationen (ifconfig)"
-        ifconfig | /Pylovara/System/Shell/Vara/less.vara
+        ifconfig | /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/VARA/less.vara
     else
         echo "❌ Fehler: Weder 'ip' noch 'ifconfig' ist installiert (z.B. 'pacman -S net-tools' oder 'iproute2')" >&2
         return 1

@@ -1,7 +1,7 @@
 ###====================================|====================================###
 ### PYLOVARA-CONFIG   = LINUX-BASH-CONTROL
 ### ALLE CONF SOURCEN - KOMPLETTE KONTROLLE
-### QUELLE  = /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/PLATZHALTER
+### QUELLE  = /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/CONTROL.PV-CONF
 ###====================================|====================================###
 ### HAUPT-PFAD 
 export PV_DIR="/PYLOVARA-SYSTEM/"
@@ -12,79 +12,40 @@ MASTER_DIR="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/"
 ### SHELL-PROGRAMME
 Shell_Dir="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/"
 
-###====================================|====================================###
-### MASTER INPUT - PLATZHALTER
+### DatenTypen !!
+# ! source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
+# ! parse_conf "$MASTER_DIR/datatypes.conf"
 
-source "$MASTER_DIR/PLATZHALTER"
+###====================================|====================================###
+### MASTER INPUT 
+
+source "$MASTER_DIR/CONTROL.PV-CONF"
 source "$MASTER_DIR/SHELL.CONF
-source "$MASTER_DIR/DESKTOP.CONF
 source "$MASTER_DIR/SUPERTASTEN.CONF
 
 ###====================================|====================================###
 ### ALIAS SEKTOR 
 
-# ! | alias dna='/Pylovara/System/Shell/DNA/dna.shell-dna'
+# alias dna='/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/DNA/dna.shell-dna'
 
 ###====================================|====================================###
 ### ALIAS SEKTOR 
 
 to() {
-    source "$Shell_DIR/to.to-dna"
+    source "$Shell_DIR/DNA/to.to-dna"
     to "$@"
 }
 helpme() {
-    source "$Shell_DIR/helpme.cut-dna" "$@"
+    source "$Shell_DIR/DNA/helpme.cut-dna" "$@"
 }
 kernel() {
-    source "$Shell_DIR/kernel.cut-dna" "$@"
+    source "$Shell_DIR/DNA/kernel.cut-dna" "$@"
 }
 waben() {
-    source "$Shell_DIR/waben.cut-dna" "$@"
+    source "$Shell_DIR/DNA/waben.cut-dna" "$@"
 }
 mcs() {
-    source "$Shell_DIR/mcs.cut-dna" "$@"
-}
-info() {
-    source "$Shell_DIR/info.kernel-dna" "$@"
-}
-p() {
-    source "$Shell_DIR/p.tree-dna" "$@"
-}
-callme() {
-    source "$Shell_DIR/callme.basename-dna"
-    callme "$@"
-}
-
-
-
-
-!!! BAUSTELLE
-
-### DatenTypen !!
-source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
-parse_conf "$MASTER_DIR/datatypes.conf"
-
-###====================================|====================================###
-### SYSTEMALIASE Sektion
-
-to() {
-    source "$Shell_DIR/to.to-dna"
-    to "$@"
-}
-helpme() {
-    source "$Shell_DIR/helpme.cut-dna" "$@"
-}
-kernel() {
-    source "$Shell_DIR/kernel.cut-dna" "$@"
-}
-waben() {
-    source "$Shell_DIR/waben.cut-dna" "$@"
-}
-mcs() {
-    source "$Shell_DIR/mcs.cut-dna" "$@"
-}
-info() {
-    source "$Shell_DIR/info.kernel-dna" "$@"
+    source "$Shell_DIR/DNA/mcs.cut-dna" "$@"
 }
 p() {
     source "$Shell_DIR/p.tree-dna" "$@"
@@ -95,47 +56,3 @@ callme() {
 }
 
 ###====================================|====================================###
-# DEV BEREICH :
-alias pylokate='kate --new-instance --config ~/Pylovara/Arbeitsfläche/arbeitsconfigs/katescript.sh'
-
-### Kommentar: pylo bugt 2025-Juni-16
-pylo() {
-    source "$Shell_DIR/pylo.tool-dna" "$@"
-}
-
-# Lade DNA-Dispatcher einmalig
-if [ -f "$Shell_DIR/dna.trigger-dna" ]; then
-    source "$Shell_DIR/dna.trigger-dna"
-fi
-
-function record() {
-    source "$Shell_DIR/terminal.record-dna" "$@"
-    TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-    FILENAME="${TIMESTAMP}.terminal-note"
-    echo "🎬 Terminalaufzeichnung gestartet. Alles wird in '$FILENAME' gespeichert und Stop per exit befehl"
-    script -q -t 2>"/tmp/terminal-${TIMESTAMP}.timing" "$FILENAME"
-    echo "🛑 Aufzeichnung beendet. Gespeichert in: $FILENAME"
-}
-
-pylo-desktop() {
-    local autostart="/Pylovara/System/Startsequenz/desktop.autostart-core"
-    local startup_arg=()
-    if [ $# -eq 0 ] && [ -x "$autostart" ]; then
-        startup_arg=(-s "$autostart")
-    fi
-
-    if [ -x "/Pylovara/System/Shell/Vara/dwl.vara" ]; then
-        /Pylovara/System/Shell/Vara/dwl.vara "${startup_arg[@]}" "$@"
-    elif [ -x "/Pylovara/System/Desktop/Compositor/src/dwl" ]; then
-        /Pylovara/System/Desktop/Compositor/src/dwl "${startup_arg[@]}" "$@"
-    else
-        echo "❌ Pylovara Desktop Compositor nicht gefunden."
-        echo "💡 Bitte führe den Installer aus: /Pylovara/Setup/Pylovara-System/desktop.install-core"
-    fi
-}
-
-###====================================|====================================###
-### Desktop aufbau | dev status 
-# PYLOVARA COMPOSITOR AUFBAU = /Pylovara/System/Shell/Vara/dwl.vara
-# terminal : pylo-desktop
-# NEU COMPILIERUNG = /Pylovara/Setup/Pylovara-System/desktop.install-core

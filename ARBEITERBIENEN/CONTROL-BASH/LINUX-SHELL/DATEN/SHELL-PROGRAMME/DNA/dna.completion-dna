@@ -2,7 +2,7 @@
 # dna-completion – Bash Tab-Vervollständigung für DNA-Kommandos
 # main.core-dna sucht shell cmd .cmd-dna
 
-Vara_Dir="/Pylovara/System/Shell/Vara"
+Vara_Dir="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/VARA"
 
 _dna_completions() {
     local cur

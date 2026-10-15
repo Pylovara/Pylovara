@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOGDIR="/Pylovara/Logs/Security"
+LOGDIR="/PYLOVARA-SYSTEM/PROBLEME"
 mkdir -p "$LOGDIR"
 
 COUNT=0

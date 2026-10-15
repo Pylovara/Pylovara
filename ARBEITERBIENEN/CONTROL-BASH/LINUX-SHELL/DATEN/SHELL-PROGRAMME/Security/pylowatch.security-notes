@@ -10,8 +10,8 @@ ls /Pylovara/System/Shell/Security/
 
  aktivieren:
 
-chmod +x /Pylovara/System/Shell/Security/pylowatchd.sh
-sudo systemctl enable --now /Pylovara/System/Shell/Security/pylowatchd.service
+chmod +x /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/Security/pylowatchd.sh
+# sudo systemctl enable --now /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/Security/pylowatchd.service
 
 Und die Logs gehen sauber :
 

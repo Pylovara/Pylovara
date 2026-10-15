@@ -1,11 +1,11 @@
-# /Pylovara/System/Shell/Security/pylowatchd.service
+# /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/Security/pylowatchdog.conf
 [Unit]
 Description=Pylovara Rootbypass-Watcher (pylowatchd)
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/Pylovara/System/Shell/Security/pylowatchd.sh
+ExecStart=/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/Security/pylowatchd.sh
 Restart=always
 RestartSec=10
 Nice=19
@@ -17,7 +17,7 @@ PrivateTmp=true
 CapabilityBoundingSet=
 RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
 ProtectKernelModules=yes
-ReadWritePaths=/Pylovara/Logs/Security/
+ReadWritePaths=/PYLOVARA-SYSTEM/PROBLEME
 
 [Install]
 WantedBy=multi-user.target

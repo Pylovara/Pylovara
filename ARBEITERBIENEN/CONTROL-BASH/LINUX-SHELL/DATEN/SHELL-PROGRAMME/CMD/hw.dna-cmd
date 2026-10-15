@@ -1,0 +1,7 @@
+# hw.dna-cmd
+# Zeigt vollständige Hardware-Informationen (via lshw)
+
+
+DNA_EXEC() {
+/Pylovara/System/Shell/Vara/lshw.vara
+}

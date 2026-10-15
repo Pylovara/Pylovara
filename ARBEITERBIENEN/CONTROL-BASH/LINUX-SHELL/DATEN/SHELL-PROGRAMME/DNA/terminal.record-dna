@@ -1,0 +1,13 @@
+function record() {
+    RECORD_DIR="$HOME/Dokumente"  # Zielverzeichnis
+    mkdir -p "$RECORD_DIR"        # erstellt es automatisch, falls nicht vorhanden
+
+    TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+    FILENAME="${TIMESTAMP}.terminal-note"
+    OUTPUT_PATH="${RECORD_DIR}/${FILENAME}"
+
+    echo "🎬 Terminalaufzeichnung gestartet. Alles wird in '$OUTPUT_PATH' gespeichert."
+    script -q -t 2>"/tmp/terminal-${TIMESTAMP}.timing" "$OUTPUT_PATH"
+    echo "🛑 Aufzeichnung beendet. Gespeichert in: $OUTPUT_PATH"
+    echo="By Finish key = exit + enter"
+}

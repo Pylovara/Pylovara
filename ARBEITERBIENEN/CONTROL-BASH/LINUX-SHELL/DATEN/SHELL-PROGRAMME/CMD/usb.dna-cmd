@@ -1,0 +1,11 @@
+# usb.dna-cmd
+# Zeigt USB-Geräteinformationen (via lsusb)
+
+DNA_EXEC() {
+    if ! command -v /Pylovara/System/Shell/Vara/lsusb.vara >/dev/null 2>&1; then
+        echo "❌ Fehler: 'lsusb' ist nicht installiert (z.B. 'pacman -S usbutils')" >&2
+        return 1
+    fi
+    echo "🧬 DNA usb: Zeige USB-Geräte (lsusb)"
+    /Pylovara/System/Shell/Vara/lsusb.vara | /Pylovara/System/Shell/Vara/less.vara
+}

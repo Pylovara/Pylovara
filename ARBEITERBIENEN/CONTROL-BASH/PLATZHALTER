@@ -4,34 +4,28 @@
 ### QUELLE  = /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/PLATZHALTER
 ###====================================|====================================###
 ### HAUPT-PFAD 
-#export PV_DIR="/PYLOVARA-SYSTEM/"
+export PV_DIR="/PYLOVARA-SYSTEM/"
 
 ### CONTROL-PFAD
-#MASTER_DIR="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/PLATZHALTER"
+MASTER_DIR="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/"
 
 ### SHELL-PROGRAMME
 Shell_Dir="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/"
+
+###====================================|====================================###
+### MASTER INPUT - PLATZHALTER
+
+source "$MASTER_DIR/PLATZHALTER"
+source "$MASTER_DIR/SHELL.CONF
+source "$MASTER_DIR/DESKTOP.CONF
+source "$MASTER_DIR/SUPERTASTEN.CONF
+
+###====================================|====================================###
 
 
 
 
 !!! BAUSTELLE
-
-export PV_DIR="/Pylovara/"
-
-### BASIC CONTROL
-
-MASTER_DIR="/Pylovara/Control"
-CONTROL_DIR="/Pylovara"
-Shell_DIR="/Pylovara/System/Shell/DNA"
-Hyprland_DIR="/Pylovara/System/Shell/HYPRLAND"
-MCS_DIR="/Pylovara/System/Kernel/MCS"
-
-###====================================|====================================###
-### Alle internen Bin-Pfade ollama
-
-export PATH=/Pylovara/AI/ollama:$PATH
-export PATH="$PV_DIR/AI/ollama/bin:$PATH"
 
 ###====================================|====================================###
 ### alias Sektion

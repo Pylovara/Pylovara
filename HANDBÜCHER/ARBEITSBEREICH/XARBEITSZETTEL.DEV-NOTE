@@ -464,14 +464,103 @@ bash: /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGR
 !!!! - moment .... noch der mcs trigger geht nicht .. 
 geht garnicht 
 
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: dna taski
+🧬 Prozessliste (Top 10 nach RAM)
+----------------------------------------
+  PID   %MEM COMMAND
+ 7357    5.0 /opt/vscodium-bin/codium
+ 3183    3.9 /usr/bin/antigravity
+ 7249    3.8 /opt/vscodium-bin/codium
+ 3381    3.6 /opt/Antigravity/antigravity
+  909    3.0 Hyprland
+ 3354    2.9 /opt/Antigravity/resources/bin/language_server
+ 7490    2.4 /opt/vscodium-bin/codium
+ 7392    2.4 /opt/vscodium-bin/codium
+ 3288    2.2 /opt/Antigravity/antigravity
+ 7305    2.2 /opt/vscodium-bin/codium
+
+🧬 Speicherauslastung
+----------------------------------------
+              gesamt       benutzt     frei      gemns.  Puffer/Cache verfügbar
+Speicher:      6,7Gi       2,8Gi       1,6Gi        79Mi       2,7Gi       3,9Gi
+Swap:          3,3Gi          0B       3,3Gi
+
+💡 Tipps:
+- dna taski kill <pid>        => Beendet einen spezifischen Prozess
+- dna taski killall <name>   => Töte alle Prozesse dieses Namens
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: 
+
+ so funktioniert wieder .... auch waben lex ... 
+
+ helme hab ich raus , gab keine wiki-notes diesbezüglich mehr .. 
+
+ der dna … trigger kann ausgebaut werden und auch mal saniert ... 
+
+ die ordner struktur ist jetzt einwandfrei .. 
+ na gut etwas länger aber dafür stabil ... 
+
+ alles was jetzt linux bash shell angeht liegt quasi in der arbeiterbienen 
+ abteilung und haben einen master ordner ... CONTROL-BASH 
+
+ die restlichen pfade sind anscheinend schon aktualisiert ... dna ... cmd 
+ und soweit ... 
+
+ die install setups geh ich nochmal durch ... 
+ danach wäre das erledigt und wieder einsatzbereit .. 
+
+ ollama lass ich mal raus ... 
+
+ ich glaub das hat eh nie einer gebraucht .. 
+
+ wenn doch bekomm ich mecker post *lach* 
+ kommt dann halt zurück ... bis dahin weg damit .. 
+
+ sieht nur scheiße aus ... 
+
+ gut ... 
 
 
+ also 
+
+ - ORDNER STRUKTUR = UP TO DATE 
+ - MCS-SHELL = UP TO DATE 
+ - LEXIKONS = HEADER EINGEPFLEGT 
+ 
+ ! NACH KONTROLLE ALLER SETUPS 
+
+ = DANACH PAUSE , KAFFE , KURZ MAL FAMILIE NERVEN GEHEN ... 
 
 
+ und dann dürfte eigentlich alles ready sein für die saubere 
+ neu schreibung der 00-83 .. 
+
+ themen sind aufgesplittet ... 
+
+ kernel hat seinen bereich 
+ waben infos haben ihren bereich 
+ mcs languale hat seinen bereich 
+ visionen ihren .. 
+
+ die lizenzen sind jetzt GLOBAL eingefügt ... macht mehr sinn ... 
 
 
+ in der readme.wiki-notes steht klar was phase ist ... 
+
+ vielleicht noch den install code hineinlegen ... gemütlicher ...
+
+ die destop empfehlung noch durch gehen ... wird sich auch die 
+ directorys geändert haben ... 
 
 
+ aber dann finish als basis diamant ... 
+
+ dann nur noch die frage klären ... 
+ welches likon fass ich zuerst an ... 
 
 ###====================================|====================================###
 

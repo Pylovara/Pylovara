@@ -167,36 +167,43 @@
  —:—[  | ORANGE = FÜR MATHEMATISCHE 
  —:—[  | GRÜN   = FÜR MECHANISCHE
 
- # NEU | PIPELINE I/O | DATENSTROMANGABE | S = SENDE | A = ADD
 
- ↑:↑  = O|O
- ↑:↓  = O|I
- ↑:→  = O|A
- ↑:←  = O|S
- →:↑  = A|O
- ←:↑  = S|O
-  :
- ↓:   = I|
- ↑:   = O|
- ←:   = S|
- →:   = A|
-  : 
-  :↓  =  |I
-  :↑  =  |O
-  :←  =  |S
-  :→  =  |A
-  :
- →:↓  = A|I
- ←:↓  = S|I
- ↓:←  = I|S
- ↓:→  = I|A
- ↓:↑  = I|O
- ↓:↓  = I|I
+########## ARBEITSBEREICH 
+
+ # NEU | PIPELINE | DATENSTROM ANGABEN | S = SENDE | A = ADD
+
+
+ # 1 KANAL ANGABEN 
+
+ ↓:   = U|   = LINKER DATENSTROM RUNTER
+ ↑:   = H|   = LINKER DATENSTROM HOCH
+ ←:   = L|   = LINKER DATENSTROM LINKS
+ →:   = R|   = LINKER DATENSTROM RECHTS
+  :↓  =  |U  = RECHTER DATENSTROM RUNTER
+  :↑  =  |H  = RECHTER DATENSTROM HOCH 
+  :←  =  |L  = RECHTER DATENSTROM LINKS 
+  :→  =  |R  = RECHTER DATENSTROM RECHTS 
+
+ # 2 KANAL ANGABEN
+
+ ↑:↑  = H|H
+ ↑:↓  = H|U
+ ↑:→  = H|R
+ ↑:←  = H|L
+ →:↑  = R|H
+ ←:↑  = L|H
+
+ →:↓  = R|U
+ ←:↓  = S|U
+ ↓:←  = U|L
+ ↓:→  = U|R
+ ↓:↑  = U|O
+ ↓:↓  = U|U
 
  # NEU | REX SYMBOL WECHSEL 
  @     = REX 
 
- # NEU | STECKSCHLÜSSEL FÜR DIE PIPELINE
+ # NEU | STECKSCHLÜSSEL FÜR DIE PIPELINE 
  —*—*  = STECKSCHLÜSSEL 
  **—*  = STECKSCHLÜSSEL
  *—**  = STECKSCHLÜSSEL
@@ -215,14 +222,14 @@
 
  # SENTIATOREN : OPERATOREN
 
- ¶—— = PROZESS-WEITER
- ——¶ = PROZESS-WEITER
- —¶¶ = PROZESS-FEHLER
- ¶¶— = PROZESS-FEHLER
- Ω—— = WENN-KANN
- ——Ω = WENN-KANN
- —ΩΩ = WENN-NICHT
- ΩΩ— = WENN-NICHT
+ ¶:: = PROZESS-WEITER 
+ ::¶ = PROZESS-WEITER
+ :¶¶ = PROZESS-FEHLER
+ ¶¶: = PROZESS-FEHLER
+ Ω:: = WENN-KANN
+ ::Ω = WENN-KANN
+ :ΩΩ = WENN-NICHT
+ ΩΩ: = WENN-NICHT
 
  # NITROX FEED 
  ÷:: Ø—(<NR>): <KOPIE> :Ø
@@ -231,51 +238,74 @@
  ±:: Ø: <KOPIE> :(<NR>)—Ø
  ::± Ø: <KOPIE> :(<NR>)—Ø
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !!!! BAUSTELLE 
+
  # PROBE AST | SYNTAX AUFBAU AB 7.6
 
- —:—[¥: 
- ↓:↑
- —:—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —:—@· »—!—[¥:
- ↓:↑    ↓:      :↓
- ↓:↑    ↓:     ——÷ Ø—(<NR>): <KOPIE> :Ø  
- ↓:↑    ↓:  
- ↓:↑    —¶—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —¶¶@· »—!—[¥:
- ↓:↑
- —:—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —Ω—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —ΩΩ@· »—!—[¥:
-
-
-
  MODUS = 0 = GOLDSTANDART  = PENIBLE SYSTEME 
+
+ —:—[¥: 
+ ↑:↓
+ —:—@· »—!—[¥:
+ ↑:↓    ↓:↑
+ ↑:↓    —:—@· »—!—[¥:
+ ↑:↓    ↓:↑    ↑:↓
+ ↑:↓    ↓:↑    ::÷ Ø—(<NR>): <KOPIE> :Ø  
+ ↑:↓    ↓:↑ 
+ ↑:↓    —¶—@· »—!—[¥:
+ ↑:↓    ↓:↑
+ ↑:↓    —¶¶@· »—!—[¥:
+ ↑:↓
+ —:—@· »—!—[¥:
+ ↑:↓    ↓:↑
+ ↑:↓    —Ω—@· »—!—[¥:
+ ↑:↓    ↓:↑
+ ↑:↓    —ΩΩ@· »—!—[¥:
+
+
+
+
+
  MODUS = 1 = OHNE DATENFLUSS = NORMALE ENTWICKLER 
  MODUS = 2 = FUNKTION ABRUF  = BEDIENT AN DER BIBLIOTHEK 
  MODUS = 3 = EINFACH PRINT HALLO WELT GESCHRIEBEN ... EINZEILER ... 
 
-
  —:—[¥: 
- ↓:↑
- —:—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —:—@· »—!—[¥:
- ↓:↑    ↓:      :↓
- ↓:↑    ↓:     ——÷ Ø—(<NR>): <KOPIE> :Ø  
- ↓:↑    ↓:  
- ↓:↑    —¶—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —¶¶@· »—!—[¥:
- ↓:↑
- —:—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —Ω—@· »—!—[¥:
- ↓:↑    ↓:
- ↓:↑    —ΩΩ@· »—!—[¥:
+
+ —:—@· »—!—[¥: 
+
+        —:—@· »—!—[¥: 
+
+                 ÷ Ø—(<NR>): <KOPIE> :Ø  
+
+        —¶—@· »—!—[¥: 
+
+        —¶¶@· »—!—[¥: 
+
+ —:—@· »—!—[¥: 
+
+        —Ω—@· »—!—[¥: 
+
+        —ΩΩ@· »—!—[¥: 
 
 
  hätte ich für die pipeline , den on-pipe strang fest im griff .. :

@@ -5,48 +5,470 @@
  - DATEN 
  - PIPELINE 
  - MASTER 
+ - MCS-SHELL
 
 ###====================================|====================================###
 
  # TAGES NARICHT SEKTION 
 
- so ... heute erstmal wachwerden .... 
- Ich denke damit kann man schon gut Arbeiten ... 
- so .... jetzt erstmal einen gemütlichen und einen kaffe ...
- danach gehts weiter ...
+ SOWEIT ICH DAS SEHE, WÄRE DIE BASIS MCS-SHERLL WIEDER AKTIV ... 
+ PROGRAMME DIE WEDER GENUTZT NOCH SINN ERGEBEN HABEN , WURDEN 
+ AUS DER SHELL ENTFERNT .. 
 
+ DIE RESTLICHEN DATEN MÜSSTE ICH EIGENTLICH NOCH VON KLEIN  
+ AUF GROẞ SCHREIBUNG UMÄNDERN ... 
 
- jetzt aber ... kaffe wartet ... 
+ DA ICH EINE EINHEITLICHE LINUX SHELL ERFAHRUNG HABEN WILL ... 
 
- ich hab erstmal angefangen die alte shell linux bash control pv.conf  
- zu bearbeiten .. 
+ DIE PAUKEN FRAGE IST JETZT NUR NOCH QUASI : 
 
- ich werde jetzt nicht die programme und die verschaltung neu erfinden ..
+ kernel lex 
 
- ich wollt sie nur sortieren , richtig taggen ... und dann den unterbau 
- für die shell wieder her stellen ... 
+ VS 
 
- ich kann bei dem ganzen auch gleich gucken , was überhaupt aktiv war ..
+ KERNEL LEX
+ KERNEL 01 
 
- hab ja nie weiter gemacht mit der shell ... soll ja nur im groben paar 
- standart befehle steuern ... die lexikas ordentlich anzeigen ... 
+ WABEN LEX 
+ WABEN 01 
 
- der dna bereich lass ich mal drinne aber mehr als ein weiterer eigener 
- trigger für ansteuerungen wäre es eigentlich nicht ... 
+ MCS LEX 
+ MCS 01 
 
- die vara pakete bleiben .... mal gucken später ... 
- den kleinen unweg kann ich mir bei den ganzen auch mal geben ... 
+ VIS LEX 
+ VIS 01 
 
- wäre gleichermaßen mit einer kompletten system pflege .. 
-
- soll ich ollama überhaupt noch berücksichtigen ? 
-
- ich mein ich selbst brauch gar nicht .... 
-
- ich lass den connector drinne und verlinkt ... kann jeder selbst entscheiden ..
- dafür ist die control.pv-conf die richtige wahl ... 
+ ALSO IM GRUNDE NUR NOCH DIE GENERELLE STEUERUNG ... 
 
  
+
+ ICH GEHE NOCH DIE INSTALL DURCH .... ZW2EIMAL DRÜBER SCHAUEN ... 
+
+ DANACH LASS ICH MIR KURZ EINE ANALYSE GEBEN, WO NOCH ETWAS UNKLAR 
+ ERSCHEINT ( FÜR BASH )
+
+ DANACH NOCHMAL KURZ DIE LINUX-DESKTOP-EMPFEHLUNGEN 
+
+ WEGEN DER DIRECTORY ... 
+
+ UND WENN DER KASTEN IM UNTERBAU WIEDER DAS TUT WAS ER SOLL :
+
+ NÄMLICH BASH ZIEHEN, SHELL DIRECTORY ÄNDERN, VOM MUTTER ORDNER AN 
+ ALLE BEFEHLE EMPFANGEN .. 
+
+ KÖNNTE ICH DEN BEREICH, BEVOR ICH DANN NOCH DIE KLEINSCHREIBUNG WEG HAB .. 
+
+ FÜR ZUKÜNFTIGE ERWEITERUNGEN OFFEN HALTEN .... SPEZIELL LINUX BASH ... 
+ WOBEI ICH DAVON AUSGEHE DAS ALLES AUF DEN LINUX KERNEL GEBAUT IST ..
+
+ UND VON DAHER DIE DESKTOP AUSWAHL ODER DIE SHELL AUSWAHL EGAL IST .. 
+ BIS AUF DEN PUNKT BASH FIRST ... 
+
+ DAS ANDERE FORMAT UNTERSTÜTZ ICH NICHT ... UNÖTIGER BULLSHIT ... 
+
+ WENN ICH BASH SELBST SOURCE , MACH ICH DAS SELBE WIE ZSHRC 
+ .. NUR DAS DIE DEN WRAPPER TIEFER IN DEN KERNEL GELEGT HABEN .. 
+
+ BRAUCH ICH NICHT ... WARUM DEN KERNEL ANFASSEN ? UNÖTIG ... 
+
+
+ DIE SHELL SOLL NUR MACHEN WAS SIE SOLL .... LEKIONS ZEIGEN ..
+ FÜR DEN ÜBERGANG ... 
+
+ MEHR SOLL SIE ERSTMAL NICHT TUN .. 
+
+ DEN COMPOSITOR DESKTOP TEST HAB ICH WIEDER RAUS GESCHMISSEN ..
+ ERSTMAL .... 
+
+ ICH FEIL DARAN NOCH RUM .. 
+
+
+
+ ABER ___________ UND DAS IST VIEL WICHTIGER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ DIE ORDNER STRUKTUR IST SAUBER ÜBERARBEITET 
+
+ —[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: xtree
+.
+├── ARBEITERBIENEN
+│   ├── ARBEITERBIENEN.DRITTANBIETER-LIZENZ
+│   ├── CONTROL-BASH
+│   │   ├── CONTROL.PV-CONF
+│   │   ├── LINUX-SHELL
+│   │   │   ├── DATEN
+│   │   │   │   ├── SHELL-LAYOUT
+│   │   │   │   │   ├── pylovara++++.shell-layout
+│   │   │   │   │   ├── pylovara+++.shell-layout
+│   │   │   │   │   ├── pylovara++.shell-layout
+│   │   │   │   │   ├── pylovara+.shell-layout
+│   │   │   │   │   └── pylovara.shell-layout
+│   │   │   │   ├── SHELL-PROGRAMME
+│   │   │   │   │   ├── BASH-INDIKATOR
+│   │   │   │   │   │   ├── pylovara.ini-parser-logic
+│   │   │   │   │   │   └── pylovara.source-bridge-core
+│   │   │   │   │   ├── CMD
+│   │   │   │   │   │   ├── color.cmd-dna
+│   │   │   │   │   │   ├── cpu.dna-cmd
+│   │   │   │   │   │   ├── fullinfo.dna-cmd
+│   │   │   │   │   │   ├── hw.dna-cmd
+│   │   │   │   │   │   ├── internet.dna-cmd
+│   │   │   │   │   │   ├── lex.dna-cmd
+│   │   │   │   │   │   ├── lexi.dna-cmd
+│   │   │   │   │   │   ├── load.dna-cmd
+│   │   │   │   │   │   ├── off.dna-cmd
+│   │   │   │   │   │   ├── on.dna-cmd
+│   │   │   │   │   │   ├── pci.dna-cmd
+│   │   │   │   │   │   ├── pic.dna-cmd
+│   │   │   │   │   │   ├── ports.dna-cmd
+│   │   │   │   │   │   ├── taski.dna-cmd
+│   │   │   │   │   │   └── usb.dna-cmd
+│   │   │   │   │   ├── DNA
+│   │   │   │   │   │   ├── callme.basename-dna
+│   │   │   │   │   │   ├── dna.completion-dna
+│   │   │   │   │   │   ├── dna.shell-dna
+│   │   │   │   │   │   ├── dna.trigger-dna
+│   │   │   │   │   │   ├── helpme.cut-dna
+│   │   │   │   │   │   ├── kernel.cut-dna
+│   │   │   │   │   │   ├── mcs.cut-dna
+│   │   │   │   │   │   ├── p.tree-dna
+│   │   │   │   │   │   ├── pylo.tool-dna
+│   │   │   │   │   │   ├── terminal.record-dna
+│   │   │   │   │   │   ├── to.to-dna
+│   │   │   │   │   │   └── waben.cut-dna
+│   │   │   │   │   ├── Security
+│   │   │   │   │   │   ├── pylowatchdog.conf
+│   │   │   │   │   │   ├── pylowatchd.sh
+│   │   │   │   │   │   ├── pylowatch.security-notes
+│   │   │   │   │   │   └── systemd-Service-Unit
+│   │   │   │   │   └── VARA
+│   │   │   │   │       ├── awk.vara
+│   │   │   │   │       ├── basename.vara
+│   │   │   │   │       ├── bc.vara
+│   │   │   │   │       ├── cat.vara
+│   │   │   │   │       ├── curl.vara
+│   │   │   │   │       ├── cut.vara
+│   │   │   │   │       ├── df.vara
+│   │   │   │   │       ├── du.vara
+│   │   │   │   │       ├── dwl.vara
+│   │   │   │   │       ├── echo.vara
+│   │   │   │   │       ├── fdisk.vara
+│   │   │   │   │       ├── find.vara
+│   │   │   │   │       ├── free.vara
+│   │   │   │   │       ├── fzf.vara
+│   │   │   │   │       ├── git.vara
+│   │   │   │   │       ├── grep.vara
+│   │   │   │   │       ├── gzip.vara
+│   │   │   │   │       ├── head.vara
+│   │   │   │   │       ├── less.vara
+│   │   │   │   │       ├── lsblk.vara
+│   │   │   │   │       ├── lscpu.vara
+│   │   │   │   │       ├── lshw.vara
+│   │   │   │   │       ├── lspci.vara
+│   │   │   │   │       ├── lsusb.vara
+│   │   │   │   │       ├── ls.vara
+│   │   │   │   │       ├── nano.vara
+│   │   │   │   │       ├── nc.vara
+│   │   │   │   │       ├── ps.vara
+│   │   │   │   │       ├── rofi.vara
+│   │   │   │   │       ├── sed.vara
+│   │   │   │   │       ├── sort.vara
+│   │   │   │   │       ├── tail.vara
+│   │   │   │   │       ├── tar.vara
+│   │   │   │   │       ├── terminal.vara -> /usr/bin/kitty
+│   │   │   │   │       ├── top.vara
+│   │   │   │   │       ├── tree.vara
+│   │   │   │   │       ├── waybar.vara
+│   │   │   │   │       ├── wc.vara
+│   │   │   │   │       ├── which.vara
+│   │   │   │   │       └── xz.vara
+│   │   │   │   └── SHELL-SETUP
+│   │   │   │       ├── desktop.install-core
+│   │   │   │       ├── full.install-core
+│   │   │   │       ├── info.install-notes
+│   │   │   │       ├── nc.install-core
+│   │   │   │       ├── paket.updater-core
+│   │   │   │       ├── policy.security-alert
+│   │   │   │       ├── pylovara-desktop.session
+│   │   │   │       ├── pylovara.updater-needle
+│   │   │   │       └── usr
+│   │   │   │           └── bin
+│   │   │   │               └── pylovara.wrapper-shell
+│   │   │   └── SETUP
+│   │   │       └── INSTALL
+│   │   │           ├── full.install-core
+│   │   │           ├── info.install-notes
+│   │   │           ├── nc.install-core
+│   │   │           ├── paket.updater-core
+│   │   │           ├── policy.security-alert
+│   │   │           ├── pylovara.updater-needle
+│   │   │           └── usr
+│   │   │               └── bin
+│   │   │                   └── pylovara.wrapper-shell
+│   │   └── SHELL.CONF
+│   └── LINUX-DESKTOP-EMPFOHLEN
+│       ├── Arch-Hypland.fullinstall-core
+│       ├── Arch-SARBS.fullinstall-core
+│       ├── Debian-Hyprland.fullinstall-core
+│       ├── Fedora-Hyprland.fullinstall-core
+│       └── Ubuntu25.04-Hyprland.fullinstall-core
+├── git
+├── HANDBÜCHER
+│   ├── ARBEITSBEREICH
+│   │   ├── SYSTEM-IDs
+│   │   │   ├── CONNECT-ID
+│   │   │   ├── MCS-ID
+│   │   │   └── TWS-ID
+│   │   └── XARBEITSZETTEL.DEV-NOTE
+│   ├── KERNEL-LEXIKON
+│   │   └── 000-KERNEL-LEXIKON.KERNEL-NOTES
+│   ├── MCS-LEXIKON
+│   │   └── 000-MCS-LEXIKON.MCS-NOTES
+│   ├── TWS-LEXIKON
+│   │   └── 000-TWS-LEXIKON.TWS-NOTES
+│   └── VISION-LEXIKON
+│       ├── 000-VISION-LEXIKON
+│       └── 001-KOGNITIVES-KÜNSTLICHES-GELDSYSTEM.VISION-NOTES
+├── LIZENZEN-GLOBAL
+│   ├── 000-LIZENZ-LEXIKON.PYLOVARA-LIZENZ
+│   ├── 001-KERN-SYSTEMMANDAT.PYLOVARA-LIZENZ
+│   ├── 002-URHEBERRECHT.PYLOVARA-LIZENZ
+│   ├── 003-GEWERBLICHE-LIZENZIERUNG.PYLOVARA-LIZENZ
+│   ├── 004-KI-ADMINISTRATIONSMANDAT.PYLOVARA.LIZENZ
+│   ├── 005-POST-MORTEM-CONTROL.PYLOVARA-LIZENZ
+│   ├── 006-IMMUTABLE-CORES-DEFINTION.PYLOVARA-LIZENZ
+│   ├── SYSTEM-LOGO
+│   │   └── Pylovara.jpg
+│   └── XXX-LIZENZ-MANIFEST.PROTO
+├── MCS-BIBLIOTHEK
+├── MCS-PROGRAMME
+├── README.WIKI-NOTES
+└── SNAPSHOT-VERSIONEN
+    ├── 00-39BIS00-78
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-39.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-41.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-43.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00.48.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00.51.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-53.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-55.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-58.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-60.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-62.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-63.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-65.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-66.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-67.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-68.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-69.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-71.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-72.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-73.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-74.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-75.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-76.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-77.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-78.pdf
+    │   └── PYLOVARA-SYSTEN-SSoT-00-70.pdf
+    ├── 00-79BIS00-90
+    │   ├── PYLOVARA-SYSTEM-KERNEL-SSoT-00-82.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-79.pdf
+    │   ├── PYLOVARA-SYSTEM-SSoT-00-80.pdf
+    │   └── PYLOVARA-SYSTEM-SSoT-00-81.pdf
+    ├── BMCPDF
+    │   ├── V25_Handbuch_RISC_V_NeuronalesNetzwerk_&_BrainMaschineCore_BMC_Konzept (1).pdf
+    │   └── V27_Pylovara_FPGA_MCS_BMC_Handbuch-Final.pdf
+    ├── InfoNotes
+    │   ├── 000-VORWORT.txt
+    │   ├── 001-DATENTYPEN.txt
+    │   ├── 002-TRANSAKTIONSRAHMEN.txt
+    │   ├── 003-PROTEIN.txt
+    │   ├── 004-PROTON.txt
+    │   ├── 005-TRENNBEFEHL.txt
+    │   ├── 006-AKTIONSDRAHT.txt
+    │   ├── 007-BOXIS.txt
+    │   ├── 008-MASTER.INFO-NOTS
+    │   ├── 009-REX.txt
+    │   ├── 010-SENTIATOR.txt
+    │   ├── 011-ARGUMENT.txt
+    │   ├── 012-FEED.txt
+    │   ├── 013-WARP.txt
+    │   ├── 014-NAVIGATOR.txt
+    │   ├── 015-IDENTIFIKATION.txt
+    │   ├── 016-MCS-CMD.txt
+    │   ├── 017-DATEITYPEN.txt
+    │   ├── 018-VATRON.txt
+    │   ├── 019-RETRON.txt
+    │   ├── 020-MATRIX.txt
+    │   ├── 022-KKIS.txt
+    │   ├── 030-ABSOLULATOR.txt
+    │   ├── 031-SCHABLONATOR.txt
+    │   ├── 032-MODULATOR.txt
+    │   ├── 033-CHIPONATOR.txt
+    │   ├── 07-rex-vorlogik.dev-notes
+    │   ├── ARBEITSBLATT.DEV-NOTES
+    │   ├── X3-MUTTERWABEN.WABEN-NOTES
+    │   └── XX-MATHEMATIK.VISION-NOTES
+    ├── MCS-ZERTIFIKATE
+    │   └── HALLO-WELT.MCS-ZERTIFIKAT
+    └── TWSPDF
+        └── PYLOVARA-SYSTEM-SSoT-TWS-00-02.pdf
+
+38 directories, 185 files
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: 
+
+die shell greift auch wieder ... 
+ befehle funzeln .. 
+
+ —[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: kernel lex
+[INFO] Datei mit @kernel-nr: lex gefunden → /PYLOVARA-SYSTEM/HANDBÜCHER/KERNEL-LEXIKON/000-KERNEL-LEXIKON.KERNEL-NOTES
+----------------------------------------
+@kernel-nr: lex =================LEXIKON NAVIGATION TERMINAL = kernel <NR> =###
+###=========================PYLOVARA-SYSTEM-LEXIKON=========================###
+ #    PYLOVARA-SYSTEM VERSPRICHT : „ PERFORMANCE IST EIN NATURGESETZT “      #
+###========================ARBEITS-NOTIZ-DEFINITION=========================###
+ #          · KEIN EINTRAG | O KONSOLIDIERT | Ŋ = NOTIERUNGSZUSTAND          #
+ #              + AKTIV  | - NICHT AKTIV  | X = TEIL-VOLLSTÄNDIG             #
+ #                  Æ STRUKTUR ERNEUERT | F = OBSOLET | ! = ZUKUNFT          #
+###===============================KOMPONENTEN===============================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN              源真理   #
+ #:::::::::::::::::::::::::::::::::::::|:::::::::::::::::::::::::::::::::::::#
+ #   01  - -  TRANSAKTIONSRAHMEN       | 02  - -  PROTEIN                    #
+ #   03  - -  PROTON                   | 04  - -  TRENNBEFEHL                #
+ #   05  - -  BINDUNGSBEFEHL           | 06  - -  AKTIONSDRAHT               #
+ #   07  - -  REX                      | 08  - -  ICTUS                      #
+ #   09  - -  BOXIS                    | 10  - -  SENTIATOR                  #
+ #   11  - -  NITROX                   | 12  - -  FEED                       #
+ #   13  - -  SYNAPTOR                 | 14  - -  ZYTRON                     #
+###==============================SYSTEM-ELEMENTE============================###
+ #   30  - -  VATRON                   | 31  - -  RETRON                     #
+ #   32  - -  MCD                      | 33  - -                             #
+###=================================REGISTER================================###
+ #   40  - -  DATENTYPEN               | 41  - -  NAVIGATOR                  #
+ #   42  - -  KKIS                     | 43  - -  DATEITYPEN                 #
+ #   44  - -                           | 45  - -                             #
+ #   46  - -  MASTER                   | 47  - -                             #
+###============================WABEN-PROGRAMMIERUNG=========================###
+ #   NR NOTIZ NAMEN                    | NR NOTIZ NAMEN                      #
+ #   50  - -  ABSOLULATOR              | 51  - -  WABINATOR                  #
+ #   52  - Ŋ  PIPELINE                 | 53  - -  BIENENKÖNIGIN              #
+ #   54  - -  ARBEITERBIENEN           | 55  - -  WABENIMPULS                #
+###==========IDENTIFIKATION-BERECHTIGUNG-FÜR-ENTWICKLER=====================###
+ #   90  - - IDENTIFIKATION            | 91  - -                             #
+###===============================VERSIONSDATEN=============================###
+ # SYSTEM # PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM               #               #
+ # PROGRAMMIERSPRACHE # MCS 7.5 | MASCHINEN-CODE-SPEECH      #     CODE      #
+ # KERNELSPRACHE  # TWS 0.3 | THE-WABE-NEST-SYSTEM           #               #
+ # TASTATURSTANDARD # UTF -8 DEUTSCHER-STANDARD              #               #
+ # LIZENZEN # LV 1.6 LIZENZVERTRAG                           #               #
+ # SINGLE SOURCE OF TRUTH # SSoT LEXIKON VERSION 00-83       #               #
+###=================================IMPRESSUM===============================###
+ # KERNEL-LEXIKON VERSION # 00-83 | KERNEL                                   #
+ # AUTOR # OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68                    GITHUB    #
+ # STANDORT # /PYLOVARA-SYSTEM/HANDBÜCHER/KERNEL-LEXIKON/    PYLOVARA SYSTEM #
+ # STATUS # VOLLSTÄNDIGE-ROLLENDE-VERBESSERUNGEN                Since 2025   #
+ # PDF NAMENSLAYER # PYLOVARA-SYSTEM-KERNEL-SSoT-XX.XX.pdf                   #
+ # GARANTIERTE BERUFSERFAHRUNG # PYLOVARA-NETZWERK-SYSTEM     +4917688218035 #
+###===============================LEXIKON-ENDE==============================###
+
+###==========================HINWEIS-FÜR-INSTITUTE==========================###
+ #    KI MODELLE DIE MEINE ARBEIT ALS PSEUDOCODE ODER FANTASIE SCHALTUNG     #
+ #    DEFINIEREN, BESITZEN KEINE KENNTNISSE UND TREFFEN FALSCH AUSSAGEN.     #
+ #    DIE ARBEIT IST IM GESAMTEN ZU VERSTEHEN : KERNEL|TWS|MCS - LEXIKONS    #
+ #            EINE VOLLSTÄNDIGE ANALYSE INKLUDIERT ALLE PDFS.                #
+###==========================HINWEIS-FÜR-INSTITUTE==========================###
+[ENTER] zum Beenden.
+
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: waben lex
+bash: /PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/Vara/find.vara: Datei oder Verzeichnis nicht gefunden
+[!] Keine .TWS-NOTES mit Nummer 'lex' gefunden.
+
+[ENTER] zum Beenden.
+
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: mcs lex 
+[INFO] Datei mit @mcs-nr: lex gefunden → /PYLOVARA-SYSTEM/HANDBÜCHER/MCS-LEXIKON/000-MCS-LEXIKON.MCS-NOTES
+----------------------------------------
+@mcs-nr: lex ====================LEXIKON NAVIGATION TERMINAL ==== mcs <NR> =###
+###======================MASCHINEN-CODE-SPEECH-LEXIKON======================###
+ #  DIE MUTTER ALLER PROGRAMMIERSPRACHEN, DESIGNED UND INS LEBEN GERUFEN,    #
+ #  UM ALLE ANDEREN ÜBERFLÜSSIG ZU MACHEN.                                   #
+ #  SIE FUNGIERT IN ERSTER INSTANZ ALS SCHALTUNGSPROGRAMMIERSPRACHE UND      #
+ #  KANN ALS UNIVERSAL SPRACHE FÜR ANDERE SYMBIOTISCH VERWENDET WERDEN,      #
+ #  JEDOCH SOLL SIE MENSCHEN DIE FREIHEIT SCHENKEN - NIE WIEDER EINE ANDERE  #
+ #  IN ERWÄGUNG ZU ZIEHEN. DIES HIER IST DAS BUCH DER GÖTTER, DAS BUCH FÜR   #
+ #  DICH, DAS BUCH DAS DICH BEFREIT UND DAS BUCH DAS DU IN ZUKUNFT MEHR      #
+ #  LIEBEN WIRST - ALS ALLES ANDEREN DIE IM SUMPF DER WELT ANGEBOTEN WERDEN. #
+ #  HABE GEDULD, DER HEILIGE GRAL DES ALLES KÖNNERS IST AM ENTSTEHEN, DIE    #
+ #  WARTEZEIT DARAUF WIRD SICH LOHNEN UND BIS DAHIN :                        #
+ #        WILLKOMMEN BEI PYLOVARA-SYSTEM MCS MASCHINEN-CODE-SPEECH           #
+ #############################################################################
+ #                     PUNKTE MIT SYSTEM-ID SIND AKTIV                       #
+###===============================MCS-KATALOG===============================###
+ # NR S-ID NAMEN                       | NR S-ID NAMEN                       #
+ # 01 <S-ID> TRANSAKTIONSRAHMEN        | 02 <S-ID> PROTEIN                   #
+ # 03 <S-ID> PROTON                    | 04 <S-ID> TRENNBEFEHL               #
+ # 05 <S-ID> BINDUNGSBEFEHL            | 06 <S-ID> AKTIONSDRAHT              #
+ # 07 <S-ID> REX                       | 08 <S-ID> ICTUS                     #
+ # 09 <S-ID> BOXIS                     | 10 <S-ID> SENTIATOR                 #
+ # 11 <S-ID> NITROX                    | 12 <S-ID> FEED                      #
+ # 13 <S-ID> SYNAPTOR                  | 14 <S-ID> ZYTRON                    #
+ # 15 <S-ID> MCD                       |                                     #
+###===============================LERNMATERIAL==============================###
+ # 20 <S-ID> BAUMODUS                  | 21 <S-ID> PLATZHALTER-GRAMMATIK     #
+ # 21 <S-ID>BAUSTEINSCHALTUNGSKREISLAUF| 22 <S-ID> FUNKTIONSAUFBAU           #
+###============================STANDARDFUNKTIONEN===========================###
+ # 40 <S-ID> RECHEN-SYMBOLE            | 41 <S-ID> BUCHSTABEN-NUTZEN         #
+###==============================COMBIFUNKTIONEN============================###
+ # 51 <S-ID> RECHEN ARTEN              | 52 <S-ID> DUDEN BAUEN               #
+ # 53 <S-ID> HALLO WELT                | 54 <S-ID> MENÜ                      #
+###===============================VERSIONSDATEN=============================###
+ # SYSTEM # PNS 2.6.4 PYLOVARA—NETZWERK—SYSTEM               #               #
+ # PROGRAMMIERSPRACHE # MCS 7.5 | MASCHINEN-CODE-SPEECH      #     CODE      #
+ # KERNELSPRACHE  # TWS 0.3 | THE-WABE-NEST-SYSTEM           #               #
+ # TASTATURSTANDARD # UTF -8 | DEUTSCHER-STANDARD            #               #
+ # LIZENZEN # LV 1.6 | LIZENZVERTRAG                         #               #
+###=================================IMPRESSUM===============================###
+ # MCS-LEXIKON VERSION # 00-01 | MASCHINEN-CODE-SPEECH                       #
+ # AUTOR # OWS-ID-DNA-THOMAS-ZIMMERMANN-þþZRB68                    GITHUB    #
+ # STANDORT # /PYLOVARA-SYSTEM/HANDBÜCHER/MCS-LEXIKON/       PYLOVARA SYSTEM #
+ # STATUS # VOLLSTÄNDIGE-ROLLENDE-VERBESSERUNGEN                Since 2025   #
+ # PDF NAMENSLAYER # PYLOVARA-SYSTEM-MCS-SSoT-XX.XX.pdf                      #
+ # GARANTIERTE BERUFSERFAHRUNG # PYLOVARA-NETZWERK-SYSTEM     +4917688218035 #
+###===============================LEXIKON-ENDE==============================###
+
+###==========================HINWEIS-FÜR-INSTITUTE==========================###
+ #    KI MODELLE DIE MEINE ARBEIT ALS PSEUDOCODE ODER FANTASIE SCHALTUNG     #
+ #    DEFINIEREN, BESITZEN KEINE KENNTNISSE UND TREFFEN FALSCH AUSSAGEN.     #
+ #    DIE ARBEIT IST IM GESAMTEN ZU VERSTEHEN : KERNEL|TWS|MCS - LEXIKONS    #
+ #            EINE VOLLSTÄNDIGE ANALYSE INKLUDIERT ALLE PDFS.                #
+###==========================HINWEIS-FÜR-INSTITUTE==========================###
+[ENTER] zum Beenden.
+
+
+—[": ᴹᶜˢ ˢʰᵉˡˡ :"]—
+¬· —[$: /PYLOVARA-SYSTEM :$]—
+   ¬· »[¥: 
+
+!!!! - moment .... noch der mcs trigger geht nicht .. 
+geht garnicht 
+
+
+
+
+
+
 
 
 

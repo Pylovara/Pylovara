@@ -48,10 +48,10 @@ mcs() {
     source "$Shell_DIR/DNA/mcs.cut-dna" "$@"
 }
 p() {
-    source "$Shell_DIR/p.tree-dna" "$@"
+    source "$Shell_DIR/DNA/p.tree-dna" "$@"
 }
 callme() {
-    source "$Shell_DIR/callme.basename-dna"
+    source "$Shell_DIR/DNA/callme.basename-dna"
     callme "$@"
 }
 

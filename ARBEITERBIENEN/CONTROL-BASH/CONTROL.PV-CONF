@@ -10,7 +10,7 @@ export PV_DIR="/PYLOVARA-SYSTEM/"
 MASTER_DIR="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/"
 
 ### SHELL-PROGRAMME
-Shell_Dir="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/"
+SHELL_DIR="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/"
 
 ### DatenTypen !!
 # ! source "/Pylovara/System/Module/Pylovara/Logic/pylovara.ini-parser-logic"
@@ -30,26 +30,26 @@ source "$MASTER_DIR/SHELL.CONF
 ### ALIAS SEKTOR 
 
 to() {
-    source "$Shell_DIR/DNA/to.to-dna"
+    source "$SHELL_DIR/DNA/to.to-dna"
     to "$@"
 }
 helpme() {
-    source "$Shell_DIR/DNA/helpme.cut-dna" "$@"
+    source "$SHELL_DIR/DNA/helpme.cut-dna" "$@"
 }
 kernel() {
-    source "$Shell_DIR/DNA/kernel.cut-dna" "$@"
+    source "$SHELL_DIR/DNA/kernel.cut-dna" "$@"
 }
 waben() {
-    source "$Shell_DIR/DNA/waben.cut-dna" "$@"
+    source "$SHELL_DIR/DNA/waben.cut-dna" "$@"
 }
 mcs() {
-    source "$Shell_DIR/DNA/mcs.cut-dna" "$@"
+    source "$SHELL_DIR/DNA/mcs.cut-dna" "$@"
 }
 p() {
-    source "$Shell_DIR/DNA/p.tree-dna" "$@"
+    source "$SHELL_DIR/DNA/p.tree-dna" "$@"
 }
 callme() {
-    source "$Shell_DIR/DNA/callme.basename-dna"
+    source "$SHELL_DIR/DNA/callme.basename-dna"
     callme "$@"
 }
 

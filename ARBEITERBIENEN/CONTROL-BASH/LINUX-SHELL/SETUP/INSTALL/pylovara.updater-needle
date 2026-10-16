@@ -7,14 +7,13 @@
 
 set -e
 REPO_URL="https://github.com/Pylovara/Pylovara.git"
-PV_DIR="/Pylovara"
+PV_DIR="/PYLOVARA-SYSTEM"
 WRAPPER_NAME="pylovara.wrapper-shell"
 WRAPPER_PATH="/usr/local/bin/$WRAPPER_NAME"
 TMP_DIR="/tmp/pylovara-latest"
 
 echo "🛠️  Starte Pylovara-Update-Vorgang..."
 echo "🛠️  alles außer der wrapper wird rekrusiv neuinstaliert"
-
 
 # 1. Root-Prüfung
 if [ "$EUID" -ne 0 ]; then
@@ -26,7 +25,7 @@ fi
 # 2. Alte Installationen löschen
 echo "🧹 Entferne alte Installationen..."
 rm -rf "$PV_DIR"
-rm -rf "/home/"*/Pylovara 2>/dev/null || true
+rm -rf "/home/"*/PYLOVARA-SYSTEM 2>/dev/null || true
 
 # 3. TMP-Verzeichnis vorbereiten
 rm -rf "$TMP_DIR"

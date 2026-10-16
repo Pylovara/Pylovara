@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ziel-Datei für Vara
-VARA_TARGET="/Pylovara/System/Shell/Vara/nc.vara"
+VARA_TARGET="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/VARA/nc.vara"
 
 # Prüfen ob nc bereits existiert
 if [[ -f "$VARA_TARGET" ]]; then

@@ -45,6 +45,9 @@ waben() {
 mcs() {
     source "$SHELL_DIR/DNA/mcs.cut-dna" "$@"
 }
+vision() {
+    source "$SHELL_DIR/DNA/vision.cut-dna" "$@"
+}
 p() {
     source "$SHELL_DIR/DNA/p.tree-dna" "$@"
 }

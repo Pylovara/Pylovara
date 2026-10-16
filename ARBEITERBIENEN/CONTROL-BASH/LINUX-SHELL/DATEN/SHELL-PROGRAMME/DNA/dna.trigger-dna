@@ -9,7 +9,7 @@ DNA() {
     shift
 
     # Pfad zum .dna-cmd-Modul
-    local dnafile="/Pylovara/System/Shell/CMD/${cmd}.dna-cmd"
+    local dnafile="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-PROGRAMME/CMD/${cmd}.dna-cmd"
 
     if [[ -f "$dnafile" ]]; then
         source "$dnafile"

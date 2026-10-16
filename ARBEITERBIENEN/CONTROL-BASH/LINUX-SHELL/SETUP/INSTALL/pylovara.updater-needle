@@ -14,6 +14,7 @@ TMP_DIR="/tmp/pylovara-latest"
 
 echo "🛠️  Starte Pylovara-Update-Vorgang..."
 echo "🛠️  alles außer der wrapper wird rekrusiv neuinstaliert"
+echo "🔁  bei Problemen mit sudo ausführen | oder github issue"
 
 # 1. Root-Prüfung
 if [ "$EUID" -ne 0 ]; then

@@ -1,30 +1,20 @@
 # … !/bin/bash
-# v0.3
+# v0.4
 # Pylovara Root-Installer
 # führe aus mit: sudo ./installer.pylovara
 # Quelle : /Pylovara/Setup/Pylovara-System/full.install-core
 
-
-
-
-!!! BAUSTELLE
-
-
-
-
-
-
 set -e
-PV_DIR="/Pylovara"
+PV_DIR="/PYLOVARA-SYSTEM"
 REPO_URL="https://github.com/Pylovara/Pylovara.git"
 WRAPPER_NAME="pylovara.wrapper-shell"
 WRAPPER_PATH="/usr/local/bin/$WRAPPER_NAME"
 
-echo "📦 Starte Pylovara Setup..."
+echo "📦 STARTET DEN SHELL VORGANG UND ÜBERTRÄGT DAS VERZEICHNIS..."
 
 # 1. Root-Prüfung
 if [ "$EUID" -ne 0 ]; then
-  echo "❌ Dieses Skript muss als root laufen (sudo)"
+  echo "❌ Dieses Skript muss als root laufen | führe aus mit: sudo ./installer.pylovara"
   exit 1
 fi
 
@@ -38,11 +28,11 @@ echo "⬇️ Klone Repository..."
 git clone "$REPO_URL" "$PV_DIR"
 
 # 3. Wrapper setzen
-if [ -f "$PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME" ]; then
-  cp "$PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
+if [ -f "$PV_DIR/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/SETUP/INSTALL/usr/bin/pylovara.wrapper-shell/$WRAPPER_NAME" ]; then
+  cp "$PV_DIR/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/SETUP/INSTALL/usr/bin/$WRAPPER_NAME" "$WRAPPER_PATH"
   chmod +x "$WRAPPER_PATH"
 else
-  echo "❌ Wrapper nicht gefunden: $PV_DIR/Setup/Pylovara-System/usr/bin/$WRAPPER_NAME"
+  echo "❌ Wrapper nicht gefunden: $PV_DIR/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/SETUP/INSTALL/usr/bin/$WRAPPER_NAME"
   exit 1
 fi
 
@@ -60,16 +50,16 @@ chsh -s "$WRAPPER_PATH" "$REAL_USER" || {
 # 6. Optional .bashrc/.zshrc ergänzen
 USER_HOME=$(eval echo "~$REAL_USER")
 if [ -f "$USER_HOME/.bashrc" ]; then
-  grep -q "source $PV_DIR/Control/control.pv-conf" "$USER_HOME/.bashrc" || \
-    echo "source $PV_DIR/Control/control.pv-conf" >> "$USER_HOME/.bashrc"
+  grep -q "source $PV_DIR/ARBEITERBIENEN/CONTROL-BASH/control.pv-conf" "$USER_HOME/.bashrc" || \
+    echo "source $PV_DIR/ARBEITERBIENEN/CONTROL-BASH/control.pv-conf" >> "$USER_HOME/.bashrc"
 fi
 
 if [ -f "$USER_HOME/.zshrc" ]; then
-  grep -q "source $PV_DIR/Control/control.pv-conf" "$USER_HOME/.zshrc" || \
-    echo "source $PV_DIR/Control/control.pv-conf" >> "$USER_HOME/.zshrc"
+  grep -q "source $PV_DIR/ARBEITERBIENEN/CONTROL-BASH/control.pv-conf" "$USER_HOME/.zshrc" || \
+    echo "source $PV_DIR/ARBEITERBIENEN/CONTROL-BASH/control.pv-conf" >> "$USER_HOME/.zshrc"
 fi
 
 echo ""
-echo "✅ Pylovara erfolgreich installiert."
+echo "✅ PYLOVARA LINUX SHELL, erfolgreich installiert."
 echo "🔄 Bitte neu anmelden oder Shell neu starten:"
 echo "exec $WRAPPER_PATH <- SystemBrigde"

@@ -3,29 +3,22 @@
 ####################################################################
 
 # Neu Angelegter Sektor
-/Pylovara/Kernel
-/Pylovara/Kernel/*.*-*
-/Pylovara/Kernel/*.*-*
-/Pylovara/Kernel/DevNotes
+/PYLOVARA-SYSTEM/EXTRAS/Kernel
+/PYLOVARA-SYSTEM/EXTRAS/*.*-*
+/PYLOVARA-SYSTEM/EXTRAS/*.*-*
+/PYLOVARA-SYSTEM/EXTRAS/DevNotes
 
 # Unveröffentlicher Sektor
-/Pylovara/Lernbücher/*
-/Pylovara/Lernbücher/*/*
-/Pylovara/Lernbücher/*/*/*
-/Pylovara/Lernbücher/*/*/*/*
-
-# Pylovara Hochsensibler Bereich (Handbuch & DevNotes)
-# Diese Regel verhindert das Tracken des kompletten DevNotes-Verzeichnisses
-/Pylovara/Handbuch/DevNotes/
-/Pylovara/Handbuch/Archiv/
-/Pylovara/Handbuch/WikiNotes/
-/Pylovara(Handbuch/Arbeitsbereich/
+/PYLOVARA-SYSTEM/EXTRAS/Lernbücher/*
+/PYLOVARA-SYSTEM/EXTRAS/Lernbücher/*/*
+/PYLOVARA-SYSTEM/EXTRAS/Lernbücher/*/*/*
+/PYLOVARA-SYSTEM/EXTRAS/Lernbücher/*/*/*/*
 
 # Dieser gesamte sektor ist veraltet und in den
 # arbeitsbereich verschoben worden, die sensibelsten daten
 # wurden auf die externe ssd verlagert und heraus genommen
 # und der rest freigegeben
-/Pylovara/AI/
+/PYLOVARA-SYSTEM/EXTRAS/AI/
 # /Pylovara/MCS-Plus/
 # Sicherheits-Zusatz: Verhindert das Tracken von Redflag-Berichten
 # Falls der PP-Generator Logs erstellt, werden diese hier abgefangen
@@ -38,7 +31,7 @@
 # Sicherheits-Zusatz: Verhindert das Tracken von temporären Cache-Dateien
 # basierend auf Kernel 88 (*.cache)
 *.cache
-/Pylovara/**/cache/
+/PYLOVARA-SYSTEM/EXTRAS/*/cache/
 
 # Ausschluss von verschlüsselten þ-Schatten-Referenzen
 # Falls lokale Key-Files für den Generator angelegt werden
@@ -50,12 +43,11 @@
 # EINGESETZT UM NACHVOLLZIEHBARKEIT DER GESAMT ARBEIT ZU
 # ERSCHWEREN . DIE EIGENTLICHE HISTORISCHE AUFZEICHNUNG
 # FINDET IM DARKWEB STATT - NICHT AUF GIT
-/Pylovara/shredder.mcs-redpush
-
+/PYLOVARA-SYSTEM/EXTRAS/SHREDDER/shredder.mcs-redpush
 
 # Unerlaubter Sektor !
-/Pylovara/PKS-00-64.system-kernel
-/Pylovara/PKS-00-80.system-kernel
+/PYLOVARA-SYSTEM/EXTRAS/BETA/PKS-00-64.system-kernel
+/PYLOVARA-SYSTEM/EXTRAS/BETA/PKS-00-80.system-kernel
 
 ####################################################################
 # HINWEIS: Falls der Ordner bereits im Git-Index ist:

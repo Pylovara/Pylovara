@@ -80,13 +80,7 @@
 
  ### TWS 0.4 NOTIZ ZETTEL ( DINGE DIE MIR AUFFALLEN )
 
- - MCS TASTATUR EBENE : MCS - PROGRAMMIERUNG
-
-  {    =
-  ;    =
-  }    =
-
-  |    = 
+ - MCS TASTATUR EBENE : MCS - PROGRAMMIERUNG | STANDART ANSTEUERUNG
 
   @    = REX
   ·    = KERN-1
@@ -104,7 +98,7 @@
   £<NR> = RETURN MEHRFACH VERKABELUNG
   ¿<NR> = PARALELLISIERUNGS PRIORISIERER 
 
- # NEU | DACH TEXT ANHALTSPUNKT | FIXPUNKT 
+ # NEU | DACH = TEXTMITTELS-ANHALTSPUNKT-FÜR RTL-LTR | FIXPUNKT 
 
   §: ^ :§  =
   $: ^ :$  = 
@@ -124,39 +118,24 @@
  # WEITERENTWICKLUNGEN DER PROTEIN CONTAINER FÜR MEHR FLERXIBILITÄT
 
  —:—[   =
-
  —©—[   = 
-
  —®—[   = 
-
  —ĸ—[   = 
-
  —#—[   = 
-
  —¡—[   = 
-
  —!—[   = 
-
  —)—[   = 
 
  # DANN NOCH FARBSPEKTREN
 
  —:—[  | FARBE =
-
  —©—[  | FARBE = 
- 
  —®—[  | FARBE = 
-
  —ĸ—[  | FARBE = 
- 
  —#—[  | FARBE= 
-
  —¡—[  | FARBE = 
-
  —!—[  | FARBE = 
-
  —)—[  | FARBE = 
-
 
  ]     | GLEICH PROTEIN-ENDE 
 
@@ -168,21 +147,20 @@
  —:—[  | GRÜN   = FÜR MECHANISCHE
 
 
-########## ARBEITSBEREICH 
+############################################## ARBEITSBEREICH 
 
- # NEU | PIPELINE | DATENSTROM ANGABEN | S = SENDE | A = ADD
-
+### NEU | PIPELINE | DATENSTROM ANGABEN | S = SENDE | A = ADD
 
  # 1 KANAL ANGABEN 
 
- ↓:   = U|   = LINKER DATENSTROM RUNTER
- ↑:   = H|   = LINKER DATENSTROM HOCH
- ←:   = L|   = LINKER DATENSTROM LINKS
- →:   = R|   = LINKER DATENSTROM RECHTS
-  :↓  =  |U  = RECHTER DATENSTROM RUNTER
-  :↑  =  |H  = RECHTER DATENSTROM HOCH 
-  :←  =  |L  = RECHTER DATENSTROM LINKS 
-  :→  =  |R  = RECHTER DATENSTROM RECHTS 
+ ↓:   = U|   = LINKER DATENSTROM = RUNTER
+ ↑:   = H|   = LINKER DATENSTROM = HOCH
+ ←:   = L|   = LINKER DATENSTROM = LINKS
+ →:   = R|   = LINKER DATENSTROM = RECHTS
+  :↓  =  |U  = RECHTER DATENSTROM = RUNTER
+  :↑  =  |H  = RECHTER DATENSTROM = HOCH 
+  :←  =  |L  = RECHTER DATENSTROM = LINKS 
+  :→  =  |R  = RECHTER DATENSTROM = RECHTS 
 
  # 2 KANAL ANGABEN
 
@@ -200,17 +178,17 @@
  ↓:↑  = U|O
  ↓:↓  = U|U
 
- # NEU | REX SYMBOL WECHSEL 
- @     = REX 
+ # 3 KANAL ANGABEN BLEIBEN VORERST WEG, 
+ #     MITTE BLEIBT AUF STATUS : NOCH NICHT VERWENDET | VORERST = KEINE FUNKTION
 
- # NEU | STECKSCHLÜSSEL FÜR DIE PIPELINE 
- —*—*  = STECKSCHLÜSSEL 
- **—*  = STECKSCHLÜSSEL
- *—**  = STECKSCHLÜSSEL
- —***  = STECKSCHLÜSSEL 
+ # NEU | REX SYMBOL WECHSEL ( DESIGNE ENTSCHEIDUNG )
+ VON ¬ ZU @  = REX ( DAS ZEICHEN ¬ PASST NICHT GUT ZUM STECKSCHLÜSSEL —¬ ÜBERGANG )
+
+ # NEU | STECKSCHLÜSSEL FÜR DIE PIPELINE  
+
  ****  = STECKSCHLÜSSEL
 
- # NEU | PIPELINE OPTIONALE AUSWAHL 
+ # NEU | PIPELINE OPTIONALE AUSWAHL | REINE VORLIEBEN FUNKTION | INDIVIDUEL
  —:—  = PIPELINE STANDART
  —©—  = OPTIONAL PIPELINE 
  —®—  = OPTIONAL PIPELINE  
@@ -220,7 +198,17 @@
  —!—  = OPTIONAL PIPELINE  
  —)—  = OPTIONAL PIPELINE  
 
- # SENTIATOREN : OPERATOREN
+ BEISPIEL | OFFPIPE PROTEINE FALLEN WEG |  
+
+ —)—[<BXMK>]
+ —©—[<BXMK>]
+ —ĸ—[<BXMK>]
+ —:—[<BXMK>]
+
+ !- SÄMTLICHE PIPELINE SKINS, HABEN DIE SELBE FUNKTION = IN UND OUT KANAL | AUSWÄHLBAR UND SCHLICHT 
+ !- UND DA DIE OFF-PIPE PROTEINE WEG FALLEN , WERDEN DIE UNKOMPLIZIERTEREN GENOMMEN .
+
+ # SENTIATOREN : OPERATOREN | KOMPAKTIBEL MIT 1 WIE 2 KANAL |
 
  ¶:: = PROZESS-WEITER 
  ::¶ = PROZESS-WEITER
@@ -231,7 +219,8 @@
  :ΩΩ = WENN-NICHT
  ΩΩ: = WENN-NICHT
 
- # NITROX FEED 
+ # NITROX FEED | KOMPAKTIBEL MIT 1 UND 2 KANAL 
+
  ÷:: Ø—(<NR>): <KOPIE> :Ø
  ::÷ Ø—(<NR>): <KOPIE> :Ø
 
@@ -239,27 +228,8 @@
  ::± Ø: <KOPIE> :(<NR>)—Ø
 
 
+ # schlussfolgernde schaltungsverbesserung 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- !!!! BAUSTELLE 
-
- # PROBE AST | SYNTAX AUFBAU AB 7.6
 
  MODUS = 0 = GOLDSTANDART  = PENIBLE SYSTEME 
 
@@ -271,70 +241,72 @@
  ↑:↓    ↓:↑    ↑:↓
  ↑:↓    ↓:↑    ::÷ Ø—(<NR>): <KOPIE> :Ø  
  ↑:↓    ↓:↑ 
- ↑:↓    —¶—@· »—!—[¥:
+ ↑:↓    ¶::@· »—!—[¥:
  ↑:↓    ↓:↑
- ↑:↓    —¶¶@· »—!—[¥:
+ ↑:↓    :¶¶@· »—!—[¥:
  ↑:↓
  —:—@· »—!—[¥:
  ↑:↓    ↓:↑
- ↑:↓    —Ω—@· »—!—[¥:
+ ↑:↓    Ω::@· »—!—[¥:
  ↑:↓    ↓:↑
- ↑:↓    —ΩΩ@· »—!—[¥:
-
-
-
-
+ ↑:↓    :ΩΩ@· »—!—[¥:
 
  MODUS = 1 = OHNE DATENFLUSS = NORMALE ENTWICKLER 
- MODUS = 2 = FUNKTION ABRUF  = BEDIENT AN DER BIBLIOTHEK 
- MODUS = 3 = EINFACH PRINT HALLO WELT GESCHRIEBEN ... EINZEILER ... 
 
- —:—[¥: 
+ —:—[¥:  
+ —:—@· »—!—[¥:
 
- —:—@· »—!—[¥: 
-
-        —:—@· »—!—[¥: 
-
+        —:—@· »—!—[¥:
                  ÷ Ø—(<NR>): <KOPIE> :Ø  
 
-        —¶—@· »—!—[¥: 
+          ¶@· »—!—[¥:
 
-        —¶¶@· »—!—[¥: 
+         ¶¶@· »—!—[¥:
 
- —:—@· »—!—[¥: 
+ —:—@· »—!—[¥:
 
-        —Ω—@· »—!—[¥: 
+          Ω@· »—!—[¥:
 
-        —ΩΩ@· »—!—[¥: 
+         ΩΩ@· »—!—[¥:
 
 
- hätte ich für die pipeline , den on-pipe strang fest im griff .. :
+ # PROTO ( MEHR BOXIS PROTEINE )
 
-  —:—  = PIPELINE STANDART
-  —©—  = OPTIONAL PIPELINE 
-  —®—  = OPTIONAL PIPELINE  
-  —ĸ—  = OPTIONAL PIPELINE  
-  —#—  = OPTIONAL PIPELINE  
-  —¡—  = OPTIONAL PIPELINE  
-  —!—  = OPTIONAL PIPELINE  
-  —)—  = OPTIONAL PIPELINE  
-  —(—  = OPTIONAL PIPELINE
-  —<—  = OPTIONAL PIPELINE
-  —>—  = OPTIONAL PIPELINE
+ »—©—[×: 0 ++ 1 <SYMBOLE> 1 << 2  :×|¥: PRINT :¥|": ^ :"]«
+   :↓
+   :Ω@·¤ »—:—[×: 1  :×|¥: FUNKTIONIERT :¥|": FUNKTIONIERT :"]«
+   :↓ 
+   :↓     
+   ΩΩ@·¤¤ »—:—[×: *  :×|¥: FEHLER :¥|": FEHLER :"]«
 
- und ab da , schreibt sich der tws quasi von alleine ... 
 
---------------------
- —:—[ ]—
+
+ MODUS = 2 = FUNKTION ABRUF  = BEDIENT AN DER BIBLIOTHEK 
+
+
+ »—:—[¥: MUSTER :¥]«««~: BAUMODUS FUNKTION SPEICHER ABRUF :~«
+
+  —:—@· »—!—[
+
+
+ MODUS = 3 = EINFACH PRINT HALLO WELT GESCHRIEBEN ... EINZEILER ... 
+
+ »—:—[": HALLO WELT :"]«
+
+
+ #--------------------
+
+ —:—[ ]
  ↓:↑
- —:—[ ]—
+ —:—[ ]
  ↓:↑
  —:—@· —:—[ ]
  ↓:↑
- —:—[ ]—
---------------------
+ —:—[ ]
 
- ### "7.6" MCS 
+ #--------------------
+
+ ### 7.5 MCS ( VERBESSERUNG BEVOR 7.5 ÜBERHAUPT FERTIG WAR - KANN DIREKT EINGEBAUT WERDEN )
 
  ¢!
  »—©—[¥: HALLO WELT :¥]«««~: BAUMODUS FUNKTION SPEICHER EINGANG :~«

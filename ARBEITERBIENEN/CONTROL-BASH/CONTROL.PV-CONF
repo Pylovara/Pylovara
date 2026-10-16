@@ -19,9 +19,7 @@ Shell_Dir="/PYLOVARA-SYSTEM/ARBEITERBIENEN/CONTROL-BASH/LINUX-SHELL/DATEN/SHELL-
 ###====================================|====================================###
 ### MASTER INPUT 
 
-source "$MASTER_DIR/CONTROL.PV-CONF"
 source "$MASTER_DIR/SHELL.CONF
-source "$MASTER_DIR/SUPERTASTEN.CONF
 
 ###====================================|====================================###
 ### ALIAS SEKTOR 
